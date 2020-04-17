@@ -18,8 +18,8 @@
 # -- Project information -----------------------------------------------------
 
 project = 'KoBoToolbox'
-copyright = '2020, Tino Kreutzer'
-author = 'Tino Kreutzer'
+copyright = '2020, KoBoToolbox'
+author = 'KoBoToolbox'
 
 # The full version, including alpha/beta/rc tags
 release = '1'
