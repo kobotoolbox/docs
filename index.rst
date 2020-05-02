@@ -3,18 +3,18 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to KoBoToolbox's documentation!
+Welcome to the official KoBoToolbox documentation!
 =======================================
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+KoBoToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries. Our teams of developers and researchers are based in Cambridge, MA and many other places around the world.
+
+This documentation is a work in progress while we transition over from our existing platform at `support.kobotoolbox.org <https://support.kobotoolbox.org>`_
+Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account and to access our tools. 
 
 
-Indices and tables
-==================
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+
