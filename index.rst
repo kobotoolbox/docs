@@ -6,11 +6,8 @@
 Welcome to the official KoBoToolbox documentation!
 =======================================
 
-.. image:: /kobologo_positive_dark.png
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+.. image:: /images/index/kobotoolbox_logo.png
+   :width: 350
 
 KoBoToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries. Our teams of developers and researchers are based in Cambridge, MA and many other places around the world.
 
@@ -18,6 +15,6 @@ KoBoToolbox is a suite of tools for field data collection for use in challenging
 This documentation is a work in progress while we transition over from our existing platform at `support.kobotoolbox.org <https://support.kobotoolbox.org>`_
 Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account and to access our tools. 
 
-
-
-
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
