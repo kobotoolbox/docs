@@ -6,6 +6,8 @@
 Welcome to the official KoBoToolbox documentation!
 =======================================
 
+.. image:: /images/kobologo_positive_dark.png
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
