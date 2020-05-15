@@ -16,8 +16,9 @@ This documentation is a work in progress while we transition over from our exist
 Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account and to access our tools. 
 
 .. toctree::
-  :maxdepth: 1
   :hidden:
+  :maxdepth: 1
+  :caption: Collect
 
-  getting-started
+ data-collection-tool
   
