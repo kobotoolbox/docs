@@ -27,4 +27,12 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :caption: Data Collection
 
  data-collection-tool
+ 
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Creating Forms
+
+  collecting-signatures
+  adding-another-language
   
