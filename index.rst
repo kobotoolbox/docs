@@ -18,3 +18,98 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+   
+   .. toctree::
+  :maxdepth: 1
+  :hidden:
+
+  getting-started
+
+.. toctree::
+  :hidden:
+  :maxdepth: 1
+  :caption: Collect
+
+  collect-intro
+  collect-setup
+  collect-using
+  collect-best-practices
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Aggregate
+
+  aggregate-intro
+  aggregate-setup
+  aggregate-use
+  aggregate-best-practices
+  aggregate-app-engine-legacy
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Briefcase
+
+  briefcase-intro
+  briefcase-install
+  briefcase-using
+  briefcase-and-aggregate
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Central
+
+  central-intro
+  central-setup
+  central-using
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Form Building
+
+  form-design-intro
+  xlsform
+  form-question-types
+  form-logic
+  form-styling
+  form-language
+  form-operators-functions
+  form-audit-log
+  launch-apps-from-collect
+  form-tools
+  form-best-practices
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Contributing
+
+  contributing
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Developing with ODK
+
+  openrosa
+  javarosa
+  launch-collect-from-app
+  briefcase-api
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Integration
+
+  encrypted-forms
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Reference
+
+  security-privacy
+  glossary
