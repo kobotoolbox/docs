@@ -26,7 +26,7 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :maxdepth: 1
   :caption: Data Collection
   
-  data-collection-tool
+  overview-on-data-collection-tools
  
 .. toctree::
   :hidden:
