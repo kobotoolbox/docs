@@ -1,7 +1,8 @@
 .. KoBoToolbox documentation master file, created by
    sphinx-quickstart on Fri Apr 17 15:57:08 2020.
    You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+   contain the root `toctree` directive. 
+   
 
 Welcome to the official KoBoToolbox documentation!
 =======================================
@@ -24,15 +25,13 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 .. toctree::
   :hidden:
   :maxdepth: 1
-  :caption: Data Collection
   
   data-collection-tools
  
 .. toctree::
   :hidden:
   :maxdepth: 1
-  :caption: Creating Forms
 
   collecting-signatures
-
   
+.. :caption: Creating Forms
