@@ -1,7 +1,7 @@
 Getting Started 
 =========================
 
-.. _getting-started-welcome:
+.. .. _getting-started-welcome:
 
 Welcome to KoboToolbox
 ---------------------
