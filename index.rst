@@ -19,20 +19,22 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :maxdepth: 1
   :hidden:
 
-  getting-started
+  Getting-Started
   
 .. toctree::
   :hidden:
   :maxdepth: 1
   :caption: Data Collection
 
- data-collection-tool
+ Overview-on-Data-Collection-Tools
+ 
+ Recording-Entire-Interviews
  
 .. toctree::
   :hidden:
   :maxdepth: 1
 
-  collecting-signatures
+  Collecting-Signatures
  
   
   
