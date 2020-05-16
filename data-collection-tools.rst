@@ -19,7 +19,7 @@ After deploying a project, you can go to **Form - Collect data**, and then selec
 
 .. image:: images/data_collect_tool/KoboCollect.gif
 
-For details on how to set up KoBoCollect on any Android devices, read this `article <https://intercom.help/kobotoolbox/en/articles/592395-collecting-data-with-kobocollect-on-android/>`_.
+**For details on how to set up KoBoCollect on any Android devices, read this `article <https://intercom.help/kobotoolbox/en/articles/592395-collecting-data-with-kobocollect-on-android/>`_.**
 
 
 **Collecting Data using the Enketo Webform**
