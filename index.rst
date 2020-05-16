@@ -25,14 +25,14 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :hidden:
   :maxdepth: 1
   :caption: Data Collection
-
- data-collection-tool
+  
+  data-collection-tool
  
 .. toctree::
   :hidden:
-  :maxdepth: 2
+  :maxdepth: 1
   :caption: Creating Forms
 
   collecting-signatures
-  adding-another-language
+
   
