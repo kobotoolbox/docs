@@ -28,5 +28,11 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 
  data-collection-tool
  
+.. toctree::
+  :hidden:
+  :maxdepth: 1
+
+  collecting-signatures
+ 
   
   
