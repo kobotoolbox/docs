@@ -22,7 +22,9 @@ After deploying a project, you can go to **Form - Collect data**, and then selec
 **For details on how to set up KoBoCollect on any Android devices, `read this article <https://intercom.help/kobotoolbox/en/articles/592395-collecting-data-with-kobocollect-on-android/>`_**.
 
 **Collecting Data using the Enketo Webform**
+
 To use the webform, after deploying a project, you can go to **Form - Collect data**, multiple options (online or offline, single or multiple submissions) are available. The default option is **Online-Offline (multiple submission)**.
+
 .. image:: images/data_collect_tool/Webform.gif
 
 Web Forms, also known as Enketo, are used by KoBoToolbox to preview your forms and to enter data directly on your computer. But you can use web forms also for collecting data on your mobile devices - even if you're offline at the time of data collection. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device.
