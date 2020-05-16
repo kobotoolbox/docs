@@ -10,10 +10,13 @@ For any other devices (including iPhones, iPads, or any laptop or computer), we 
 **A quick rundown on the differences between the two options**
 
 Based on your needs, you can either use KoBoCollect or the Web Forms.
+
 .. image:: images/data_collect_tool/overview.png
 
 **Collecting data using KoBoCollect**
+
 After deploying a project, you can go to **Form - Collect data**, and then select the Android application.
+
 .. image:: images/data_collect_tool/KoboCollect.gif
 
 **For details on how to set up KoBoCollect on any Android devices, `read this article <https://intercom.help/kobotoolbox/en/articles/592395-collecting-data-with-kobocollect-on-android/>`_**.
