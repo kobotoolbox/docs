@@ -8,6 +8,7 @@ For Android devices, we recommend using KoBoCollect app, which can be downloaded
 For any other devices (including iPhones, iPads, or any laptop or computer), we recommend using the webform (Enketo) for collecting data.
 
 **A quick rundown on the differences between the two options**
+
 Based on your needs, you can either use KoBoCollect or the Web Forms.
 .. image:: images/data_collect_tool/overview.png
 
