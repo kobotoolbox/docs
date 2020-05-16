@@ -31,8 +31,8 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 .. toctree::
   :hidden:
   :maxdepth: 2
-  :caption: Creating Forms
 
   collecting-signatures
   adding-another-language
+  
   
