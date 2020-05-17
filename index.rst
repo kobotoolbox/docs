@@ -106,4 +106,9 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   validation_criteria
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  user_specified_other
+  
 .. :caption: Creating Forms
