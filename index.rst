@@ -80,6 +80,12 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :hidden:
   :maxdepth: 1 
   
-  troubleshooting_webforms.rst
+  troubleshooting_webforms
+
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  manual_upload
   
 .. :caption: Creating Forms
