@@ -52,4 +52,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   data-offline
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1
+  
+  kobocollect-android
+  
 .. :caption: Creating Forms
