@@ -20,5 +20,3 @@ NOTE: If using KoBoCollect app for data collection it's important not to display
 4. Lastly, preview your form to ensure it behaves as expected.
 
 .. image:: /images/user_specified_other/preview.png
-
-.. image:: /images/user_specified_other/preview_1.png
