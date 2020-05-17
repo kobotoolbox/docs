@@ -80,4 +80,4 @@ By default the form refreshes for the next entry once the data has been submitte
 
 **Troubleshooting Web Forms**
 
-Always use the latest version of the browser. We recommend users to use Chrome as their browser while working with web forms. For other details on troubleshooting web forms, please visit our support article (Troubleshooting Enketo Web Forms) `here<https://support.kobotoolbox.org/en/articles/592384-troubleshooting-enketo-web-forms/>`_. 
+Always use the latest version of the browser. We recommend users to use Chrome as their browser while working with web forms. For other details on troubleshooting web forms, please visit our support article (Troubleshooting Enketo Web Forms) `here <https://support.kobotoolbox.org/en/articles/592384-troubleshooting-enketo-web-forms>`_. 
