@@ -94,4 +94,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   collect_gps
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  question_options
+  
 .. :caption: Creating Forms
