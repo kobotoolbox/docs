@@ -63,4 +63,13 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :maxdepth: 1 
   
   devices_for_data_collection
+
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  hipaa_compliance
+  
+  
+  
 .. :caption: Creating Forms
