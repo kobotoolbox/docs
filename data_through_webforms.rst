@@ -70,6 +70,7 @@ Follow the steps outlined below to save a form and collect data in a web form us
 6. You will now see a KoBoToolbox web form shortcut icon on your device, similar to the what is shown below:
 
 .. image:: /images/data_through_webforms/kobo_icon.png
+   :align: center
 
 7. Select the shortcut icon to start collecting data for your survey project.
 
@@ -77,7 +78,6 @@ Forwarding upon submission
 By default the form refreshes for the next entry once the data has been submitted. If users are only supposed to enter one entry (e.g. in an online survey) you can send them to another website upon submission. To use this feature you need to 1) use the Online-Only form of the form, and 2) add *returnURL=https://www.somewebsite.com* to your URL. 
 
 .. image:: /images/data_through_webforms/url.png
-   :align: center
 
 **Troubleshooting Web Forms**
 
