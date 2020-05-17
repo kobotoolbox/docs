@@ -88,4 +88,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   manual_upload
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  collect_gps
+  
 .. :caption: Creating Forms
