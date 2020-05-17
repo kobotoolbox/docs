@@ -33,5 +33,11 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :maxdepth: 1
 
   collecting-signatures
+
+.. toctree::
+  :hidden:
+  :maxdepth: 1
+  
+  recording-interviews
   
 .. :caption: Creating Forms
