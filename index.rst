@@ -109,6 +109,13 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 .. toctree::
   :hidden:
   :maxdepth: 1 
+  
   user_specified_other
+  
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  rating_ranking
   
 .. :caption: Creating Forms
