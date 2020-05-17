@@ -58,4 +58,9 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   kobocollect-android
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  devices_for_data_collection
 .. :caption: Creating Forms
