@@ -124,4 +124,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   lower_file_size
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  add_logo
+  
 .. :caption: Creating Forms
