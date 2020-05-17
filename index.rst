@@ -70,6 +70,11 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   hipaa_compliance
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  troubleshooting_kobocollect
   
   
 .. :caption: Creating Forms
