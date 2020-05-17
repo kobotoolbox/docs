@@ -46,4 +46,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   data_through_webforms
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1
+  
+  data-offline
+  
 .. :caption: Creating Forms
