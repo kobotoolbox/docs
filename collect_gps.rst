@@ -9,11 +9,11 @@ To collect a GPS coordinate during the data collection process simply add a GPS 
 
 - When using the **form builder** these question types can be found when one taps the add question button as illustrated below.
 
-.. images:: /images/collect_gps/form_builder.jpg
+.. image:: /images/collect_gps/form_builder.jpg
 
 - When using **XLSForm** design, you have to define the question types as below to get the question you desire.
 
-.. images:: /images/collect_gps/xls.png
+.. image:: /images/collect_gps/xls.png
 
 **Collecting Data Using the GPS Questions**
 
@@ -25,15 +25,15 @@ The form will have various collection options including
 
 **1. Manual Collection:** Simply tap any point(s) on the map to collect the location coordinates or you may type in the latitude and longitude coordinates if they're known. 
 
-.. images:: /images/collect_gps/point_manual.png
+.. image:: /images/collect_gps/point_manual.png
 
 **2. Pasting KML points:** Paste KML coordinates on the text box prompt that comes up. 
 
-.. images:: /images/collect_gps/kml.png
+.. image:: /images/collect_gps/kml.png
 
 **3. Detect Current Location:** Simply click the button shown below to collect the current GPS coordinates for the location of the device.
 
-.. images:: /images/collect_gps/current_location.jpg
+.. image:: /images/collect_gps/current_location.jpg
 
 **Collecting Data Using KoBoCollect**
 
@@ -43,27 +43,27 @@ The interviewer will see various options depending on the GPS question type
 
 - *The enumerator will see this screen which they can tap on the Start GeoPoint.*
 
-.. images:: /images/collect_gps/geopoint.jpg
+.. image:: /images/collect_gps/geopoint.jpg
 
 - *If enumerators taps the Start Geopoint they will see the location loading and the accuracy achieved. If the question had not been set to pick a specific accuracy level, it will wait for the enumerator to save the GeoPoint as illustrated below.*
 
-.. images:: /images/collect_gps/autopoint.jpg
+.. image:: /images/collect_gps/autopoint.jpg
 
 **2. GPS Line**
 
 - *The enumerators will see the following option for the line question*
 
-.. images:: /images/collect_gps/line.jpg
+.. image:: /images/collect_gps/line.jpg
 
 - *If they tap the Start GeoTrace button they will see an option to either collect the trace manually or automatically as shown below*
 
-.. images:: /images/collect_gps/trace_mode.jpg
+.. image:: /images/collect_gps/trace_mode.jpg
 
 - *If the enumerators select manual mode for collecting data then they will be able to select the points manually by pressing the points on the map. The enumerator will have to select at least two coordinates to make a line trace.*
 
 - *If the enumerators select the automatic mode, then they will see an option for how long the system should take before collecting different points as shown in the figure below.*
 
-.. images:: /images/collect_gps/automodes.jpg
+.. image:: /images/collect_gps/automodes.jpg
 
 **3. GPS Area**
 
