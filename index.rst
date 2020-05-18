@@ -142,4 +142,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   video_question_type
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  unique_serial_numbers
+  
 .. :caption: Creating Forms
