@@ -135,5 +135,11 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :maxdepth: 1 
   
   p_codes
+
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  video_question_type
   
 .. :caption: Creating Forms
