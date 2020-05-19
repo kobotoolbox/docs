@@ -160,4 +160,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   custom_format_web
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  responses_inside_question
+  
 .. :caption: Creating Forms
