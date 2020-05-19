@@ -7,8 +7,8 @@ When using web forms (Enketo) as your data collection method you have the option
 
 To format your note text use one of these options:
 
-- *emphasize words* by wrapping them inside _these_ or *these characters*
-- **strongly emphasize** words by wrapping them inside __these_characters_  or **these**
+- *emphasize words* by wrapping them inside _these_ or these characters
+- **strongly emphasize** words by wrapping them inside __these characters_  or these
 a link can be added by using [a link] (https://www.kobotoolbox.org)
 This formatting will not work in KoBoCollect, which will just show the _ or * characters along with the text.
 
