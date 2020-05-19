@@ -148,4 +148,11 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   unique_serial_numbers
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  pull_data_kobotoolbox
+  
+  
 .. :caption: Creating Forms
