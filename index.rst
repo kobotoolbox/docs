@@ -154,5 +154,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   pull_data_kobotoolbox
   
+.. toctree::
+  :hidden:
+  :maxdepth: 1 
+  
+  custom_format_web
   
 .. :caption: Creating Forms
