@@ -5,8 +5,9 @@
 # from the environment for the first two.
 SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
-SOURCEDIR     = .
+SOURCEDIR     = source
 BUILDDIR      = _build
+COMPILEDIR    = docs
 
 # Put it first so that "make" without argument is like "make help".
 help:
@@ -18,3 +19,14 @@ help:
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
+
+# copy html to docs folder for GitHub
+github:
+	@make html
+	@cp -a _build/html/. docs
+	@touch docs/.nojekyll
+
+# remove build folders
+clean:
+	rm -rf $(COMPILEDIR)
+	rm -rf $(BUILDDIR)	

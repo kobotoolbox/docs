@@ -14,6 +14,8 @@ Prerequisites:
 
 1. Open terminal
 1. Clone repository: `git clone https://github.com/kobotoolbox/docs.git`
-1. Change nto the cloned directory: `cd docs` 
+1. Change into the cloned directory: `cd docs` 
 1. Create a virtual environment: `python -m venv koboenv`
 1. Activate the virtual environment `source koboenv/bin/activate`
+1. Build the html files: `make html`
+1. Open the index page in the browser: `open _build/html/index.html`
