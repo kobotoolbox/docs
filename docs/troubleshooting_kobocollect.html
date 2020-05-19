@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Troubleshooting KoBoCollect Android Application &#8212; KoBoToolbox 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Troubleshooting Enketo Web Forms" href="troubleshooting_webforms.html" />
+    <link rel="prev" title="HIPAA Compliance" href="hipaa_compliance.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="troubleshooting-kobocollect-android-application">
+<h1>Troubleshooting KoBoCollect Android Application<a class="headerlink" href="#troubleshooting-kobocollect-android-application" title="Permalink to this headline">¶</a></h1>
+<p>– Kindly report any uncovered issue on our <a class="reference external" href="https://community.kobotoolbox.org/">community forum</a> –</p>
+<p><em>Common error messages with troubleshooting guides:</em></p>
+<p><strong>Error: Message ‘Error getting form list’ after selecting ‘Get blank forms’</strong></p>
+<p><strong>Troubleshooting:</strong> The most likely solutions for this problem is either</p>
+<ol class="arabic simple">
+<li><p>Check your URL, you most likely have a small typo in the URL you entered into the settings. Refer to this <a class="reference external" href="https://kobotoolbox-documentation.readthedocs.io/en/latest/kobocollect-android.html">article</a> on setting up your  android phone/tablet for data collection.</p></li>
+<li><p>Another possible explanation is that your phone wasn’t connected to the Internet when you selected Get blank forms, for example when you are connected to a WiFi network in a public place that requires you to sign in through your browser. This <a class="reference external" href="https://kobotoolbox-documentation.readthedocs.io/en/latest/kobocollect-android.html">article</a> discusses in greater detail how to connect your device with your account.</p></li>
+</ol>
+<p><strong>Error: Generic Exception: No peer certificate or Form listing failed. Error: javx.net.ssl.SSLPeerUnverifiedException…</strong></p>
+<p>This error appears when KoBoCollect tries to communicate with the server but can’t establish a secure (SSL/HTTPS) connection.</p>
+<p><strong>Troubleshooting:</strong></p>
+<ol class="arabic simple">
+<li><p>Highly likely your device is using the wrong date. Check that the date is correct, then try again. <em>Please refer to your phone/tablet manual on how to set the date</em>. Android devices reset their dates to 2000 or another year if ever the battery goes to 0%, which is why this error can appear frequently if your team has a tendency to drain the battery all the way.</p></li>
+<li><p>You may also see this error message if you are using a WiFi hotspot that requires you to sign in after connecting.</p></li>
+</ol>
+<p><strong>Error: KoBoCollect has crashed</strong></p>
+<p><strong>Troubleshooting:</strong></p>
+<ol class="arabic simple">
+<li><p>If this <strong>occurs</strong> while you are trying to <strong>upload submissions or download a new form</strong>, then your device has a significant interruption in its Internet connection. Although it sounds alarming, it is harmless: Simply repeat the upload or download process.</p></li>
+<li><p>If this <strong>occurs</strong> while you are trying to <strong>open a new form</strong> in your phone, then the following possible reasons could help you resolve:</p></li>
+</ol>
+<ul class="simple">
+<li><p>The form you are trying to open has errors either in the calculate, constraints or skip routines. This is rare since the system would have already checked for the errors.</p></li>
+<li><p>The form your are trying to open is either too large or has numerous actions (calculations, large list of responses or other complex procedures) which cannot be handled by the memory capacity of your device. Kindly refer to this <a class="reference external" href="https://kobotoolbox-documentation.readthedocs.io/en/latest/devices_for_data_collection.html">article</a> on recommended devices.</p></li>
+</ul>
+<p><strong>Error: Unable to edit this blank form because the corresponding blank form is not present or was deleted</strong></p>
+<p><strong>Troubleshooting:</strong></p>
+<p>This type of error message occurs when you try to edit your saved form when the corresponding blank form is not present or was deleted.</p>
+<p>If this occurs, retrieve the corresponding blank form from your KoBoToolbox account by clicking <strong>Get Blank Form</strong> on the home screen and then select the particular form which requires amendments.</p>
+<p><strong>Error: Unable to install KoBoCollect android app in a device. Shows the following error message (can’t create directory/storage/sdcard0/odk)</strong></p>
+<p><strong>Troubleshooting:</strong></p>
+<p>You see this error message when your device is out of storage space. To overcome this issue, free your device by uninstalling some unnecessary app and then try installing KoBoCollect.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collecting-signatures.html">Collecting Signatures</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting KoBoCollect Android Application</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="hipaa_compliance.html" title="previous chapter">HIPAA Compliance</a></li>
+      <li>Next: <a href="troubleshooting_webforms.html" title="next chapter">Troubleshooting Enketo Web Forms</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, KoBoToolbox.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/troubleshooting_kobocollect.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

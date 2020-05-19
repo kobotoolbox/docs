@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Manually Uploading Submissions &#8212; KoBoToolbox 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Collecting GPS Locations" href="collect_gps.html" />
+    <link rel="prev" title="Troubleshooting Enketo Web Forms" href="troubleshooting_webforms.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="manually-uploading-submissions">
+<h1>Manually Uploading Submissions<a class="headerlink" href="#manually-uploading-submissions" title="Permalink to this headline">¶</a></h1>
+<p>[Warning: This is still an experimental feature, and it does not prevent you from creating duplicate submissions.]</p>
+<p>In some situations, you might not be able to use the standard uploading option after collecting data with KoBoCollect or Enketo Web Forms. For example, your mobile device might be partially broken (e.g. screen is shattered), or your devices are in a remote location without Internet access. It is possible to download the submissions to your local computer first and then uploading them to the server. In remote locations, this might be a good option because you may have access to a computer to download the files but need to physically travel to a different location where you can access the Internet.</p>
+<p><strong>Exporting data from Web Forms</strong></p>
+<ol class="arabic simple">
+<li><p>In your offline-enabled Web Form open the “drawer” by clicking on the bracket on the left.</p></li>
+</ol>
+<img alt="_images/export_data.png" src="_images/export_data.png" />
+<ol class="arabic simple" start="2">
+<li><p>Click on the Export button. A downloadable file has now been prepared and will be saved to your computer immediately, otherwise click the Export button again. For some browsers this may not work and you will need to click the “alternative download - online” link, which will require an Internet connection.</p></li>
+<li><p>Follow the import steps shown below.</p></li>
+</ol>
+<p><strong>Exporting data from KoBoCollect</strong></p>
+<ol class="arabic simple">
+<li><p>Connect the device to your computer</p></li>
+<li><p>Open the device’s internal storage on your computer. (For Windows the drivers will install automatically and the device can be opened on My Computer. On iOS you will need <a class="reference external" href="https://www.android.com/intl/en_us/filetransfer/">Android File Transfer</a> from Google to access the device’s files.</p></li>
+<li><p>On your device open the ‘odk’ folder.</p></li>
+<li><p>Copy the ‘instances’ folder and paste it somewhere on your computer.</p></li>
+<li><p>If you have more than one device repeat the above steps and rename each of the ‘instances’ folders to a unique name or number.</p></li>
+<li><p>Create a ZIP file of the folder.</p></li>
+<li><p>Follow the import steps shown below.</p></li>
+</ol>
+<p><strong>Importing a data ZIP file to KoBoToolbox</strong></p>
+<ol class="arabic simple">
+<li><p>Login to your KoBoToolbox account, then visit</p></li>
+</ol>
+<p><a class="reference external" href="https://kc.humanitarianresponse.info/your_username/bulk-submission-form">https://kc.humanitarianresponse.info/your_username/bulk-submission-form</a> <em>OR</em></p>
+<p><a class="reference external" href="https://kc.kobotoolbox.org/your_username/bulk-submission-form">https://kc.kobotoolbox.org/your_username/bulk-submission-form</a></p>
+<p>(depending on where you signed up), and replace ‘your_username’ with your own username.</p>
+<ol class="arabic simple" start="2">
+<li><p>Select and upload the ZIP file created/downloaded earlier. All records will be parsed and added to the database, assuming that they correspond to an existing form.</p></li>
+</ol>
+<p>Once all instances have been parsed and added to the database you will see a confirmation message for each record. In the event you are seeing a timeout message, it only means that a large number of records were added; it doesn’t mean that the import was unsuccessful. It is advisable in this case to upload multiple smaller ZIP files with fewer records. Uploading the same records twice is not an issue since duplicate records will be rejected.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collecting-signatures.html">Collecting Signatures</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Manually Uploading Submissions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="troubleshooting_webforms.html" title="previous chapter">Troubleshooting Enketo Web Forms</a></li>
+      <li>Next: <a href="collect_gps.html" title="next chapter">Collecting GPS Locations</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, KoBoToolbox.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/manual_upload.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

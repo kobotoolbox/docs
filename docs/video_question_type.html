@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>How to Use the ‘Video’ Question Type &#8212; KoBoToolbox 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to Create Unique Serial Numbers in Forms" href="unique_serial_numbers.html" />
+    <link rel="prev" title="How to Include P-Codes in the Output Data" href="p_codes.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="how-to-use-the-video-question-type">
+<h1>How to Use the ‘Video’ Question Type<a class="headerlink" href="#how-to-use-the-video-question-type" title="Permalink to this headline">¶</a></h1>
+<p>The question type “video” prompts a user to record a video as an answer to a question (e.g. “Please record a video of the head of household saying his full name”). That video then gets saved along with the form data.</p>
+<p><strong>Advanced</strong></p>
+<p>Including a video as a part of the question is more advanced and can’t be done directly in the KoBoToolbox interface. To do this, you need to add a line to your XML form ( here is <a class="reference external" href="https://drive.google.com/file/d/1hntTE1WbAwigcsbOFGgEbO1vEWJPs6uS/view">an example</a>).</p>
+<p>In this example, the question, line 9 is the addition that adds a video to the label of the question, so that the user sees both the question label (‘Sample video’) and the video itself. Note that it references a video file name that needs to refer to an actual file that is located in a folder ‘video’ inside your /sdcard/odk/forms folder, and is called ‘sample.3gp’.</p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collecting-signatures.html">Collecting Signatures</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to Use the ‘Video’ Question Type</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="p_codes.html" title="previous chapter">How to Include P-Codes in the Output Data</a></li>
+      <li>Next: <a href="unique_serial_numbers.html" title="next chapter">How to Create Unique Serial Numbers in Forms</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, KoBoToolbox.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/video_question_type.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

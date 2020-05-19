@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>How to Include P-Codes in the Output Data &#8212; KoBoToolbox 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to Use the ‘Video’ Question Type" href="video_question_type.html" />
+    <link rel="prev" title="Adding a Custom Logo to Your Form" href="add_logo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="how-to-include-p-codes-in-the-output-data">
+<h1>How to Include P-Codes in the Output Data<a class="headerlink" href="#how-to-include-p-codes-in-the-output-data" title="Permalink to this headline">¶</a></h1>
+<p>If using cascading lists, please <a class="reference external" href="https://support.kobotoolbox.org/en/articles/592422-adding-cascading-select-questions">follow the instructions</a> for cascading selects.</p>
+<p>Normally, only the “Name” and NOT the “Label” will appear in your exported Excel file, which means that only the P-code OR the name of the location will appear.</p>
+<p>In order to get <strong>both P-code and name</strong> as part of your exported data, do the following:</p>
+<ol class="arabic">
+<li><p>In all “Name” columns of your exported form, use the P-code of the location</p></li>
+<li><p>In all “Label’ columns of your exported form, use the name of the location</p></li>
+<li><p>For each Admin level you use, add a question with type “calculate”, using the syntax:</p>
+<blockquote>
+<div><p>if(string-length(${name_of_pcode_column}) !=  0,jr:choice-name(${name_of_pcode_column},’${name_of_pcode_column}’),’(unspecified  name_of_pcode_column)’)</p>
+</div></blockquote>
+</li>
+</ol>
+<p>This formula will extract the “Label” (i.e. the name of the location) of the entry, and you will in your exported results get both the name and the p-code.</p>
+<p><strong>Example with 3 admin levels, using cascading lists</strong></p>
+<img alt="_images/example_1.png" src="_images/example_1.png" />
+<img alt="_images/example_2.png" src="_images/example_2.png" />
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collecting-signatures.html">Collecting Signatures</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">How to Include P-Codes in the Output Data</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="add_logo.html" title="previous chapter">Adding a Custom Logo to Your Form</a></li>
+      <li>Next: <a href="video_question_type.html" title="next chapter">How to Use the ‘Video’ Question Type</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, KoBoToolbox.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/p_codes.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Collecting GPS Locations &#8212; KoBoToolbox 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Question Options" href="question_options.html" />
+    <link rel="prev" title="Manually Uploading Submissions" href="manual_upload.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="collecting-gps-locations">
+<h1>Collecting GPS Locations<a class="headerlink" href="#collecting-gps-locations" title="Permalink to this headline">¶</a></h1>
+<p>Location coordinates can be collected easily in all forms with the ‘GPS’ response types.</p>
+<p><strong>Creating the Different Types of GPS Questions</strong></p>
+<p>To collect a GPS coordinate during the data collection process simply add a GPS question to your form. There are three types of GPS questions: <strong>Point</strong>, <strong>Line</strong> and <strong>Area</strong></p>
+<ul class="simple">
+<li><p>When using the <strong>form builder</strong> these question types can be found when one taps the add question button as illustrated below.</p></li>
+</ul>
+<img alt="_images/form_builder.jpg" src="_images/form_builder.jpg" />
+<ul class="simple">
+<li><p>When using <strong>XLSForm</strong> design, you have to define the question types as below to get the question you desire.</p></li>
+</ul>
+<img alt="_images/xls1.png" src="_images/xls1.png" />
+<p><strong>Collecting Data Using the GPS Questions</strong></p>
+<p>During data entry the enumerator will see different options for collecting the coordinates, which are dependent on the type of data collection device and approach.</p>
+<p><strong>Collecting Data Using Enketo Webforms</strong></p>
+<p>The form will have various collection options including</p>
+<p><strong>1. Manual Collection:</strong> Simply tap any point(s) on the map to collect the location coordinates or you may type in the latitude and longitude coordinates if they’re known.</p>
+<img alt="_images/point_manual.png" src="_images/point_manual.png" />
+<p><strong>2. Pasting KML points:</strong> Paste KML coordinates on the text box prompt that comes up.</p>
+<img alt="_images/kml.png" src="_images/kml.png" />
+<p><strong>3. Detect Current Location:</strong> Simply click the button shown below to collect the current GPS coordinates for the location of the device.</p>
+<img alt="_images/current_location.jpg" src="_images/current_location.jpg" />
+<p><strong>Collecting Data Using KoBoCollect</strong></p>
+<p>The interviewer will see various options depending on the GPS question type</p>
+<p><strong>1. Single GPS point coordinate</strong></p>
+<ul class="simple">
+<li><p><em>The enumerator will see this screen which they can tap on the Start GeoPoint.</em></p></li>
+</ul>
+<img alt="_images/geopoint.jpg" src="_images/geopoint.jpg" />
+<ul class="simple">
+<li><p><em>If enumerators taps the Start Geopoint they will see the location loading and the accuracy achieved. If the question had not been set to pick a specific accuracy level, it will wait for the enumerator to save the GeoPoint as illustrated below.</em></p></li>
+</ul>
+<img alt="_images/autopoint.jpg" src="_images/autopoint.jpg" />
+<p><strong>2. GPS Line</strong></p>
+<ul class="simple">
+<li><p><em>The enumerators will see the following option for the line question</em></p></li>
+</ul>
+<img alt="_images/line.jpg" src="_images/line.jpg" />
+<ul class="simple">
+<li><p><em>If they tap the Start GeoTrace button they will see an option to either collect the trace manually or automatically as shown below</em></p></li>
+</ul>
+<img alt="_images/trace_mode.jpg" src="_images/trace_mode.jpg" />
+<ul class="simple">
+<li><p><em>If the enumerators select manual mode for collecting data then they will be able to select the points manually by pressing the points on the map. The enumerator will have to select at least two coordinates to make a line trace.</em></p></li>
+<li><p><em>If the enumerators select the automatic mode, then they will see an option for how long the system should take before collecting different points as shown in the figure below.</em></p></li>
+</ul>
+<img alt="_images/automodes.jpg" src="_images/automodes.jpg" />
+<p><strong>3. GPS Area</strong></p>
+<p><em>The GPS area allows you to manually collect GPS area based on manual mode by pressing the map to select the points that create the polygon; the enumerators would need to collect at least three points to create a polygon.</em></p>
+<p><strong>Accuracy of the Collected GPS Coordinates</strong></p>
+<p>The accuracy of the collected GPS is dependent on various factors</p>
+<p><strong>Absence of GPS sensor or GPS disabled</strong></p>
+<p>When collecting GPS coordinate and their device doesn’t have a GPS sensor or GPS is disabled, a location might be determined using other means, which might not be as accurate. Location services are controlled by the device, and not all devices are equipped with a GPS sensor. GPS may also be turned off, or the device may be set to use WiFi and cellular networks to establish a location rather than using satellite navigation systems.</p>
+<p><strong>The time it takes for a device to determine its GPS coordinates varies strongly and may depend on:</strong></p>
+<ul class="simple">
+<li><p>The quality of the GPS sensor</p></li>
+<li><p>The last time since the device had last determined its GPS location</p></li>
+<li><p>Cloud cover</p></li>
+<li><p>Buildings or other structures obstructing view of the sky</p></li>
+</ul>
+<p><strong>To obtain a GPS signal you should be outdoors with good visibility of the sky. To get a strong GPS signal:</strong></p>
+<ul class="simple">
+<li><p>Stand as far from buildings, trees, or other structures as possible</p></li>
+<li><p>Make sure your body isn’t obstructing view of the sky</p></li>
+<li><p>Get an initial GPS location at the beginning of the day before starting to collect points in the field</p></li>
+<li><p>Enable A-GPS (data-network assisted) on your device</p></li>
+</ul>
+<p><em>Note: GPS in this context does not exclusively refer to the Global Positioning System but also to other satellite navigation systems used by mobile devices, such as GLONASS.</em></p>
+<p><strong>Troubleshooting</strong></p>
+<p>If you are unable to get a GPS location with the GPS response type, please check these options:</p>
+<ul class="simple">
+<li><p>Check the location settings on your device to ensure GPS is enabled</p></li>
+<li><p>Install a free app that uses GPS to see if you can get a GPS location that way (e.g. <a class="reference external" href="https://play.google.com/store/apps/details?id=com.eclipsim.gpsstatus2">GPS Status for Android</a> or <a class="reference external" href="https://apps.apple.com/ca/app/gps-status/id378085995">GPS Status for iPhones</a>)</p></li>
+<li><p>Check your phone settings/manufacturer manual to see if the device has GPS available</p></li>
+<li><p>If your collected GPS points are pointing to the wrong location, it’s possible your device is set to collecting its location from a network tower that was bought second hand and has not properly been reset with the new hard-coded location. You can avoid this issue by turning off network location as an option within the Android system settings, forcing Collect to wait for the actual GPS location.</p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collecting-signatures.html">Collecting Signatures</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting GPS Locations</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="manual_upload.html" title="previous chapter">Manually Uploading Submissions</a></li>
+      <li>Next: <a href="question_options.html" title="next chapter">Question Options</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, KoBoToolbox.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/collect_gps.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

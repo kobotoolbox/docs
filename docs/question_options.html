@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Question Options &#8212; KoBoToolbox 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Limiting Responses with Validation Criteria" href="validation_criteria.html" />
+    <link rel="prev" title="Collecting GPS Locations" href="collect_gps.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="question-options">
+<h1>Question Options<a class="headerlink" href="#question-options" title="Permalink to this headline">¶</a></h1>
+<p>The Question Options screen contains some very useful features to get the most out of your form.</p>
+<img alt="_images/options.png" src="_images/options.png" />
+<p><strong>Name</strong></p>
+<p>The <strong>Name</strong> is the unique identifier (ID) of your question.</p>
+<p>This field is mandatory for every question. Only letters, numbers, and underscores are allowed in this field, and the field must start with a letter or an underscore. KoBoToolbox will automatically give every questions a default name to begin with (such as how_old_are_you), but you can change it to anything you like, such as age or A01.</p>
+<p>The name (ID) is important because it is used in the column headers of tables and spreadsheets after your data has been collected. If you want your spreadsheet to follow a specific naming convention, you should specify the name for each of your questions before deploying the form as a data collection project.</p>
+<p>Note that the automatic naming of questions is based on Latin characters only. If your question labels don’t use any Latin characters, your automatic names would be just underscores and numbers.</p>
+<p><strong>Hint (optional)</strong></p>
+<p><strong>Hints</strong> are help texts that will be displayed underneath your questions on the form.</p>
+<p>Hints are optional. The hint text is often used to provide additional instructions to your interviewer staff. For example, your question label might be How old are you? and your hint might be If respondent doesn’t know, enter 999.</p>
+<p><strong>Required</strong></p>
+<p>If a question is <strong>required</strong>, the interviewer needs to provide an answer in order to finalize the form.</p>
+<p>‘Read a Note’ questions can’t be made required because the interviewer can’t actually give a response to it (notes only consist of a label - see Response Options.</p>
+<p><strong>Default (optional)</strong></p>
+<p>This allows specifying a default response that the interviewer can accept or change.</p>
+<p>In most studies this would not be recommended as it might create an accidental bias, but it may be useful for date or time questions where the responses tend to be around a certain known point. For date questions, the default response needs to be written in the format YYYY-MM-DD e.g. 1974-12-31). For Select One or Select Many questions the response needs to be written using the unique Value - not the label (e.g. first_grade rather than First grade).</p>
+<p><strong>Appearance (optional)</strong></p>
+<p>This advanced setting allows displaying the question in a modified way. Certain appearance options will only be available depending on the <a class="reference external" href="https://support.kobotoolbox.org/en/articles/592418-list-of-question-types">Question Type</a>.</p>
+<p>For a full list of appearance values, visit <a class="reference external" href="http://xlsform.org/en/#appearance">ODK’s appearance documentation</a></p>
+<img alt="_images/appearance.png" src="_images/appearance.png" />
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collecting-signatures.html">Collecting Signatures</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Question Options</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="collect_gps.html" title="previous chapter">Collecting GPS Locations</a></li>
+      <li>Next: <a href="validation_criteria.html" title="next chapter">Limiting Responses with Validation Criteria</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, KoBoToolbox.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/question_options.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
