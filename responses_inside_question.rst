@@ -9,7 +9,7 @@ Referencing other questions in another question requires giving them a fixed nam
 
 Simply include the reference to the other question among the other words of your label. For example, you can add a new question with the label
 
-Are you sure you are ${age} years old? 
+ Are you sure you are ${age} years old? 
 
 and create a skip logic for this question so that it is only asked whenever the age response was lower than 18.
 
