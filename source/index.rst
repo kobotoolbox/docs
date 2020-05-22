@@ -31,7 +31,8 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 
   getting-started
   
-.. toctree::
+
+.. .. toctree::
   :hidden:
   :maxdepth: 1
   
@@ -43,7 +44,7 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 
   collecting-signatures
 
-.. toctree::
+.. .. toctree::
   :hidden:
   :maxdepth: 1
   
