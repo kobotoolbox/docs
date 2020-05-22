@@ -17,6 +17,15 @@ This documentation is a work in progress while we transition over from our exist
 Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account and to access our tools. 
 
 .. toctree::
+  :hidden:
+  :maxdepth: 1
+  :caption: Collecting-Data
+  
+  collecting-data-data-collection-tools
+  collecting-data-recording-interviews
+
+
+.. toctree::
   :maxdepth: 1
   :hidden:
 
