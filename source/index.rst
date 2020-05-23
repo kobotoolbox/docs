@@ -18,7 +18,7 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 
 .. toctree::
   :hidden:
-  :maxdepth: 1
+  :maxdepth: 2
   :caption: Collecting Data
 
   data-collection-tools
@@ -35,7 +35,7 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 
 .. toctree::
   :hidden:
-  :maxdepth: 1
+  :maxdepth: 2
   :caption: Creating Forms
 
   question_options
