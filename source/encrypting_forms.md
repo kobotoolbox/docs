@@ -17,4 +17,4 @@ KoBoCollect supports the ability to encrypt the content of a form the moment it 
 
 (Please see image below for reference)
 
-![image](/images/encrypting_forms/column.png)
+![image](/source/images/encrypting_forms/column.png)
