@@ -6,6 +6,7 @@ You can create a new project in two different ways. When you click on the New bu
 - **Start from Scratch**
   
   Create a new form from scratch, using our Form Builder 
+  
 
 - **Upload XLS Form**
   
@@ -18,6 +19,7 @@ Downloads are possible in two different formats:
 - **XLS**
   
   Allowing you to share it with others through the XLSForm format, or edit it in a spreadsheet program such as Excel
+  
 
 - **XML**
   
