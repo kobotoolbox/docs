@@ -12,7 +12,7 @@ KoBoCollect supports the ability to encrypt the content of a form the moment it 
 
 1. Create your form in KoBoToolbox as always. Download the form from the drafts list as an XLS file.
 2. In the downloaded file go to the 'settings' sheet.
-3. Add a column _submission_url_ and type https://kc.kobotoolbox.org/yourusername/submission or https://kc.humanitarianresponse.info/yourusername/submission (depending upon the server you are using). Please note that yourusername is your KoBoToolbox user account. 
+3. Add a column _submission_url_ and type `https://kc.kobotoolbox.org/yourusername/submission` or `https://kc.humanitarianresponse.info/yourusername/submission` (depending upon the server you are using). Please note that yourusername is your KoBoToolbox user account. 
 4. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your compatible public key. 
 
 (Please see image below for reference)
