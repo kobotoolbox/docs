@@ -40,6 +40,60 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 2. Specify a **Storage Location** under the **Settings** tab.
 3. Open the **Pull** tab and click **Configure**. 
 
-![image](/images/encrypting_forms/configure.png)
+![image](/source/images/encrypting_forms/configure.png)
 
+4. Then enter the following: 
 
+* `https://kc.kobotoolbox.org/yourusername` OR `https://kc.humanitarianresponse.info/yourusername`(depending on which server you use)
+* Your username
+* Your password
+* Press **Connect** when done
+
+![image](/source/images/encrypting_forms/connect.png)
+
+5. A list of projects is displayed. Select a project that you wish to pull and press **Pull**. You will receive a message **Success** under the **Pull Status**.
+6. Now go to **Export** tab.
+7. Press the **Edit Default Configuration** to ensure that you have the **PEM private key** at the **PEM file location**. 
+
+![image](/source/images/encrypting_forms/private_key.png)
+
+If it’s not there, select the **PEM private key** from the folder you had secured safely. (_Note: You will also see all the projects here that has been successfully pulled._)
+
+8. Now check the project that you would wish to export and press **Export**.
+9. Data is exported as a CSV file, you can now view the unencrypted data.
+
+### Generating RSA Encryption Keys
+
+To generate the RSA public-private key pairs you can use the OpenSSL software package, which is pre-installed on OSX and Linux. On Windows you have to download and install the OpenSSL software package from this [site](http://slproweb.com/products/Win32OpenSSL.html). (_Note: install the Win64 OpenSSL v1.1.1c in **C**: rather than the default location **C:\Program Files**_)
+
+**How to generate RSA key for use with encrypted forms on KoBoToolbox**
+
+_Note: We strongly recommend using OpenSSL as documented below for creating your public/private key pair as other methods may not be supported by the software._ 
+
+1. Open a Windows 'cmd' window.
+2. Type the following command: cd C:\OpenSSL-Win32\bin to change to the /bin directory in the OpenSSL directory. 
+
+![image](/source/images/encrypting_forms/openssl_1.png)
+
+3. Create a 2048-bit private key and write it to the **MyPrivateKey.pem** file by typing the following command, then press **Enter**: `openssl genpkey -out MyPrivateKey.pem -outform PEM -algorithm RSA -pkeyopt rsa_keygen_bits:2048`
+
+![image](/source/images/encrypting_forms/openssl_2.png)
+
+4. Then, extract the public key for the above private key. Type the following command then press **Enter**: `openssl rsa -in MyPrivateKey.pem -inform PEM -out MyPublicKey.pem -outform PEM -pubout`
+
+5. You have now generated two files that is:
+
+* **MyPrivateKey.pem** - your private key that you need to move to a secure location.
+* **MyPublicKey.pem** - your public key, that you can share with anyone you want to share information securely
+
+6. Open the **MyPublicKey.pem** with Notepad or another text edit, your public key is the uninterrupted very long string of characters, 
+
+`e.g.:Tjhfur1K9+BRQ2USezIPbtyahbfuNqviI5Suhm8maA3JoELRHj9psjf/oNWoG87aFtKNbLrRaCEDPoFMDC9NEzWlv5L49BygeieMu/wg/rtMT0M0kgDbKxw5weJJgyb9P41aMsrqAAAAB3NzaC1yc2EAAAADAQABAAABAQDfNoFX7bh3bfdW6lGfDht1Ea8PUBLKYjugbHN5jS7j5fHV6dexM+kzvITVgoyjhhKPXeCbaT62vD/saTqJFXJzlysnZ24fqxNkjreO5K5EQ9c3ggwqML06+AKrFUSP5jpnyJJH8btNwKl6D5pG4ZseHwDUKzZtaextPTNQz67kdYIKdtCkCsQHVsy4xvy/A0jzfK3xyOkG6j+L`
+
+This string is what you will need to paste under the public_key field in your settings sheet on your XLS file. 
+
+**IMPORTANT**: make sure that you paste only the public key string and no blank spaces or line breaks!
+
+**MyPrivateKey.pem** is the file you will use when exporting the submissions using ODK Briefcase.
+
+Note: When trying to edit a form that has been encrypted, you receive a message “This form cannot be edited once it has been marked as finalized. It may by encrypted”.
