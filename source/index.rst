@@ -19,167 +19,35 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 .. toctree::
   :hidden:
   :maxdepth: 1
-  :caption: Collecting-Data
-  
-  collecting-data-data-collection-tools
-  collecting-data-recording-interviews
+  :caption: Collecting Data
 
-
-.. toctree::
-  :maxdepth: 1
-  :hidden:
-
-  getting-started
-  
-
-.. .. toctree::
-  :hidden:
-  :maxdepth: 1
-  
   data-collection-tools
- 
-.. toctree::
-  :hidden:
-  :maxdepth: 1
-
-  collecting-signatures
-
-.. .. toctree::
-  :hidden:
-  :maxdepth: 1
-  
   recording-interviews
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1
-  
   data_through_webforms
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1
-  
   data-offline
-  
+  kobocollect-android
+  devices_for_data_collection
+  hipaa_compliance
+  troubleshooting_kobocollect
+  troubleshooting_webforms
+  manual_upload
+  collect_gps
+
 .. toctree::
   :hidden:
   :maxdepth: 1
-  
-  kobocollect-android
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
-  devices_for_data_collection
+  :caption: Creating Forms
 
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
-  hipaa_compliance
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
-  troubleshooting_kobocollect
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
-  troubleshooting_webforms
-
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
-  manual_upload
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
-  collect_gps
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   question_options
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   validation_criteria
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   user_specified_other
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   rating_ranking
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   lower_file_size
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   add_logo
-
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   p_codes
-
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   video_question_type
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   unique_serial_numbers
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   pull_data_kobotoolbox
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   custom_format_web
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   responses_inside_question
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 1 
-  
   form_meta
-  
-.. :caption: Creating Forms
