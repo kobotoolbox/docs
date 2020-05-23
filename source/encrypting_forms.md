@@ -82,7 +82,7 @@ _Note: We strongly recommend using OpenSSL as documented below for creating your
 4. Then, extract the public key for the above private key. Type the following command then press **Enter**: `openssl rsa -in MyPrivateKey.pem -inform PEM -out MyPublicKey.pem -outform PEM -pubout`
 
 ![image](/source/images/encrypting_forms/openssl_3.png)
-<img align="center" src="https://github.com/kobotoolbox/docs/blob/master/source/images/encrypting_forms/openssl_3.png">
+<img align="right" src="https://github.com/kobotoolbox/docs/blob/master/source/images/encrypting_forms/openssl_3.png">
 
 5. You have now generated two files that is:
 
