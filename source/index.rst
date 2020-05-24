@@ -56,3 +56,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   number_text_responses
   cascading_select
   calculate_questions
+  audit_logging
