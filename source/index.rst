@@ -55,3 +55,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   encrypting_forms
   number_text_responses
   cascading_select
+  calculate_questions
