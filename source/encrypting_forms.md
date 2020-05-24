@@ -40,7 +40,7 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 2. Specify a **Storage Location** under the **Settings** tab.
 3. Open the **Pull** tab and click **Configure**. 
 
-![image](/source/images/encrypting_forms/configure.png)
+![image]/images/encrypting_forms/configure.png)
 <img align="center" src="https://github.com/kobotoolbox/docs/blob/master/source/images/encrypting_forms/configure.png">
 
 4. Then enter the following: 
@@ -50,13 +50,13 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 * Your password
 * Press **Connect** when done
 
-![image](/source/images/encrypting_forms/connect.png)
+![image](/images/encrypting_forms/connect.png)
 
 5. A list of projects is displayed. Select a project that you wish to pull and press **Pull**. You will receive a message **Success** under the **Pull Status**.
 6. Now go to **Export** tab.
 7. Press the **Edit Default Configuration** to ensure that you have the **PEM private key** at the **PEM file location**. 
 
-![image](/source/images/encrypting_forms/private_key.png)
+![image](/images/encrypting_forms/private_key.png)
 
 If it’s not there, select the **PEM private key** from the folder you had secured safely. (_Note: You will also see all the projects here that has been successfully pulled._)
 
@@ -78,11 +78,11 @@ _Note: We strongly recommend using OpenSSL as documented below for creating your
 
 3. Create a 2048-bit private key and write it to the **MyPrivateKey.pem** file by typing the following command, then press **Enter**: `openssl genpkey -out MyPrivateKey.pem -outform PEM -algorithm RSA -pkeyopt rsa_keygen_bits:2048`
 
-![image](/source/images/encrypting_forms/openssl_2.png)
+![image](/images/encrypting_forms/openssl_2.png)
 
 4. Then, extract the public key for the above private key. Type the following command then press **Enter**: `openssl rsa -in MyPrivateKey.pem -inform PEM -out MyPublicKey.pem -outform PEM -pubout`
 
-![image](/source/images/encrypting_forms/openssl_3.png)
+![image](/images/encrypting_forms/openssl_3.png)
 
 5. You have now generated two files that is:
 
