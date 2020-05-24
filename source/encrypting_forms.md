@@ -31,8 +31,8 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 2. Navigate into the extracted directory tree and copy the local_policy.jar and US_export_policy.jarfiles to the lib\security directory
 3. Paste these files inside the installation directory of the Java Runtime Enviornment (JRE) of your computer, replacing earlier versions of these files.
 
-  * On **Windows**, the JRE is usually installed here: C:\Program Files\Java\jre7\lib\securityOn OSX the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
-  * On **OSX** the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
+   * On **Windows**, the JRE is usually installed here: C:\Program Files\Java\jre7\lib\securityOn OSX the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
+   * On **OSX** the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
 
 **To decrypt your forms:**
 
@@ -40,16 +40,16 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 2. Specify a **Storage Location** under the **Settings** tab.
 3. Open the **Pull** tab and click **Configure**. 
 
-![image]/images/encrypting_forms/configure.png)
+   ![image]/images/encrypting_forms/configure.png)
 
 4. Then enter the following: 
 
-* `https://kc.kobotoolbox.org/yourusername` OR `https://kc.humanitarianresponse.info/yourusername`(depending on which server you use)
-* Your username
-* Your password
-* Press **Connect** when done
+   * `https://kc.kobotoolbox.org/yourusername` OR `https://kc.humanitarianresponse.info/yourusername`(depending on which server you use)
+   * Your username
+   * Your password
+   * Press **Connect** when done
 
-![image](/images/encrypting_forms/connect.png)
+   ![image](/images/encrypting_forms/connect.png)
 
 5. A list of projects is displayed. Select a project that you wish to pull and press **Pull**. You will receive a message **Success** under the **Pull Status**.
 6. Now go to **Export** tab.
