@@ -1,5 +1,4 @@
 # Audit Logging Meta Question Type
-## Using the audit meta question type to log enumerator behavior
 
 Audit Logging can be a useful tool to monitor enumerator behavior and discover which questions are taking longer to answer, better understand how the enumerators are navigating a certain form, and see which enumerators are generally taking quicker or longer periods of time to submit answers. This feature requires manually analyzing CSV files and is only meant for advanced users. This feature is also not supported in the Form Builder and requires you to use an [XLSForm](https://support.kobotoolbox.org/en/articles/592430-editing-forms-in-excel-using-xlsform). 
 
@@ -7,11 +6,11 @@ The audit log meta question is a question type that is only supported by using t
 
 To add an audit meta question type to a form and view the finalized data, please follow the steps below: 
 
-1. In an XLSForm file, add 'audit' in the same fashion as you would any other meta questions. Then upload the form file to your project and deploy the form.\ 
+1. In an XLSForm file, add 'audit' in the same fashion as you would any other meta questions. Then upload the form file to your project and deploy the form.
 
     ![image](/images/audit_logging/xls.png)  
 
-2. Collect data using the [KoBoCollect app](data_through_webforms.html) and send the finalized forms back to the server. Collect saves the audit logs for each submission in a CSV file that are saved and uploaded to the server just as an attached photo would be.\  
+2. Collect data using the [KoBoCollect app](data_through_webforms.html) and send the finalized forms back to the server. Collect saves the audit logs for each submission in a CSV file that are saved and uploaded to the server just as an attached photo would be.
 
 3. After the data has been submitted, open your project in the browser and go to _DATA_, then _Downloads_. Select Media Attachments (ZIP) as the export type and then click on New Export. Once the download is done pending, click on the file to download it to your computer. 
 
