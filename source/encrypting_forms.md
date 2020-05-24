@@ -15,9 +15,9 @@ KoBoCollect supports the ability to encrypt the content of a form the moment it 
   3. Add a column _submission_url_ and type `https://kc.kobotoolbox.org/yourusername/submission` or `https://kc.humanitarianresponse.info/yourusername/submission` (depending upon the server you are using). Please note that yourusername is your KoBoToolbox user account. 
   4. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your compatible public key. 
 
-(Please see image below for reference)
+  (Please see image below for reference)
 
-![image](/images/encrypting_forms/column.png)
+  ![image](/images/encrypting_forms/column.png)
 
   5. Upload the XLS file back to KoBoToolbox. You can either import it back to the Form Drafts list and then deploy it as a new survey project, or import it directly to your deployed Projects list. Once deployed you should see a label with the text "encrypted" next to your form name.
 
@@ -31,8 +31,8 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 2. Navigate into the extracted directory tree and copy the local_policy.jar and US_export_policy.jarfiles to the lib\security directory
 3. Paste these files inside the installation directory of the Java Runtime Enviornment (JRE) of your computer, replacing earlier versions of these files.
 
-* On **Windows**, the JRE is usually installed here: C:\Program Files\Java\jre7\lib\securityOn OSX the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
-* On **OSX** the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
+  * On **Windows**, the JRE is usually installed here: C:\Program Files\Java\jre7\lib\securityOn OSX the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
+  * On **OSX** the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
 
 **To decrypt your forms:**
 
@@ -41,7 +41,6 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 3. Open the **Pull** tab and click **Configure**. 
 
 ![image]/images/encrypting_forms/configure.png)
-<img align="center" src="https://github.com/kobotoolbox/docs/blob/master/source/images/encrypting_forms/configure.png">
 
 4. Then enter the following: 
 
