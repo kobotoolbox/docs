@@ -57,7 +57,7 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 6. Now go to **Export** tab.
 
 7. Press the **Edit Default Configuration** to ensure that you have the **PEM private key** at the **PEM file location**.   
-    ![image](/images/encrypting_forms/private_key.png)
+    ![image](/images/encrypting_forms/private_key.png)  
     If it’s not there, select the **PEM private key** from the folder you had secured safely. (_Note: You will also see all the projects here that has been successfully pulled._)
 
 8. Now check the project that you would wish to export and press **Export**.
@@ -89,13 +89,13 @@ _Note: We strongly recommend using OpenSSL as documented below for creating your
 
 6. Open the **MyPublicKey.pem** with Notepad or another text edit, your public key is the uninterrupted very long string of characters, 
 
-`e.g.:Tjhfur1K9+BRQ2USezIPbtyahbfuNqviI5Suhm8maA3JoELRHj9psjf/oNWoG87aFtKNbLrRaCEDP
-oFMDC9NEzWlv5L49BygeieMu/wg/rtMT0M0kgDbKxw5weJJgyb9P41aMsrqAAAAB3NzaC1yc2EAAAADAQAB
-AAABAQDfNoFX7bh3bfdW6lGfDht1Ea8PUBLKYjugbHN5jS7j5fHV6dexM+kzvITVgoyjhhKPXeCbaT62vD/
-saTqJFXJzlysnZ24fqxNkjreO5K5EQ9c3ggwqML06+AKrFUSP5jpnyJJH8btNwKl6D5pG4ZseHwDUKzZta
-extPTNQz67kdYIKdtCkCsQHVsy4xvy/A0jzfK3xyOkG6j+L`
+    > e.g.:Tjhfur1K9+BRQ2USezIPbtyahbfuNqviI5Suhm8maA3JoELRHj9psjf/oNWoG87aFtKNbLrRaCEDP
+    > oFMDC9NEzWlv5L49BygeieMu/wg/rtMT0M0kgDbKxw5weJJgyb9P41aMsrqAAAAB3NzaC1yc2EAAAADAQAB
+    > AAABAQDfNoFX7bh3bfdW6lGfDht1Ea8PUBLKYjugbHN5jS7j5fHV6dexM+kzvITVgoyjhhKPXeCbaT62vD/
+    > saTqJFXJzlysnZ24fqxNkjreO5K5EQ9c3ggwqML06+AKrFUSP5jpnyJJH8btNwKl6D5pG4ZseHwDUKzZta
+    > extPTNQz67kdYIKdtCkCsQHVsy4xvy/A0jzfK3xyOkG6j+L  
 
-This string is what you will need to paste under the public_key field in your settings sheet on your XLS file. 
+    This string is what you will need to paste under the public_key field in your settings sheet on your XLS file. 
 
 **IMPORTANT**: make sure that you paste only the public key string and no blank spaces or line breaks!
 
