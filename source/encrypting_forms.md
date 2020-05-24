@@ -17,7 +17,7 @@ KoBoCollect supports the ability to encrypt the content of a form the moment it 
 3. Add a column _submission_url_ and type `https://kc.kobotoolbox.org/yourusername/submission` or `https://kc.humanitarianresponse.info/yourusername/submission` (depending upon the server you are using). Please note that yourusername is your KoBoToolbox user account. 
 
 4. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your compatible public key.  
-    (Please see image below for reference)  
+    (Please see image below for reference)    
     ![image](/images/encrypting_forms/column.png)
     
 5. Upload the XLS file back to KoBoToolbox. You can either import it back to the Form Drafts list and then deploy it as a new survey project, or import it directly to your deployed Projects list. Once deployed you should see a label with the text "encrypted" next to your form name.
@@ -42,14 +42,14 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 
 2. Specify a **Storage Location** under the **Settings** tab.
 
-3. Open the **Pull** tab and click **Configure**. 
+3. Open the **Pull** tab and click **Configure**.   
     ![image](/images/encrypting_forms/configure.png)
 
 4. Then enter the following: 
     * `https://kc.kobotoolbox.org/yourusername` OR `https://kc.humanitarianresponse.info/yourusername`(depending on which server you use)
     * Your username
     * Your password
-    * Press **Connect** when done
+    * Press **Connect** when done  
     ![image](/images/encrypting_forms/connect.png)
 
 5. A list of projects is displayed. Select a project that you wish to pull and press **Pull**. You will receive a message **Success** under the **Pull Status**.
@@ -74,14 +74,13 @@ _Note: We strongly recommend using OpenSSL as documented below for creating your
 
 1. Open a Windows 'cmd' window.
 
-2. Type the following command: cd C:\OpenSSL-Win32\bin to change to the /bin directory in the OpenSSL directory. 
+2. Type the following command: cd C:\OpenSSL-Win32\bin to change to the /bin directory in the OpenSSL directory.   
     ![image](/images/encrypting_forms/openssl_1.png)
 
-3. Create a 2048-bit private key and write it to the **MyPrivateKey.pem** file by typing the following command, then press **Enter**: `openssl genpkey -out MyPrivateKey.pem -outform PEM -algorithm RSA -pkeyopt rsa_keygen_bits:2048`
+3. Create a 2048-bit private key and write it to the **MyPrivateKey.pem** file by typing the following command, then press **Enter**: `openssl genpkey -out MyPrivateKey.pem -outform PEM -algorithm RSA -pkeyopt rsa_keygen_bits:2048`  
     ![image](/images/encrypting_forms/openssl_2.png)
 
-4. Then, extract the public key for the above private key. Type the following command then press **Enter**: `openssl rsa -in MyPrivateKey.pem -inform PEM -out MyPublicKey.pem -outform PEM -pubout`
-
+4. Then, extract the public key for the above private key. Type the following command then press **Enter**: `openssl rsa -in MyPrivateKey.pem -inform PEM -out MyPublicKey.pem -outform PEM -pubout`  
     ![image](/images/encrypting_forms/openssl_3.png)
 
 5. You have now generated two files that is:
