@@ -56,7 +56,7 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 
 6. Now go to **Export** tab.
 
-7. Press the **Edit Default Configuration** to ensure that you have the **PEM private key** at the **PEM file location**. 
+7. Press the **Edit Default Configuration** to ensure that you have the **PEM private key** at the **PEM file location**.   
     ![image](/images/encrypting_forms/private_key.png)
     If it’s not there, select the **PEM private key** from the folder you had secured safely. (_Note: You will also see all the projects here that has been successfully pulled._)
 
