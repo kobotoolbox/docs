@@ -10,16 +10,13 @@ KoBoCollect supports the ability to encrypt the content of a form the moment it 
 
 #### How to encrypt XLS forms
 
-  1. Create your form in KoBoToolbox as always. Download the form from the drafts list as an XLS file.
-  2. In the downloaded file go to the 'settings' sheet.
-  3. Add a column _submission_url_ and type `https://kc.kobotoolbox.org/yourusername/submission` or `https://kc.humanitarianresponse.info/yourusername/submission` (depending upon the server you are using). Please note that yourusername is your KoBoToolbox user account. 
-  4. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your compatible public key. 
-
-  (Please see image below for reference)
-
-  ![image](/images/encrypting_forms/column.png)
-
-  5. Upload the XLS file back to KoBoToolbox. You can either import it back to the Form Drafts list and then deploy it as a new survey project, or import it directly to your deployed Projects list. Once deployed you should see a label with the text "encrypted" next to your form name.
+1. Create your form in KoBoToolbox as always. Download the form from the drafts list as an XLS file.
+2. In the downloaded file go to the 'settings' sheet.
+3. Add a column _submission_url_ and type `https://kc.kobotoolbox.org/yourusername/submission` or `https://kc.humanitarianresponse.info/yourusername/submission` (depending upon the server you are using). Please note that yourusername is your KoBoToolbox user account. 
+4. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your compatible public key.  
+(Please see image below for reference)  
+![image](/images/encrypting_forms/column.png)  
+5. Upload the XLS file back to KoBoToolbox. You can either import it back to the Form Drafts list and then deploy it as a new survey project, or import it directly to your deployed Projects list. Once deployed you should see a label with the text "encrypted" next to your form name.
 
 #### How to decrypt forms
 
@@ -40,7 +37,7 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 2. Specify a **Storage Location** under the **Settings** tab.
 3. Open the **Pull** tab and click **Configure**. 
 
-   ![image]/images/encrypting_forms/configure.png)
+   ![image](/images/encrypting_forms/configure.png)
 
 4. Then enter the following: 
 
