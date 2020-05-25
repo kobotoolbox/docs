@@ -48,7 +48,7 @@ In addition to the examples and tips provided below, please visit this [website]
 * **\w**: Matches any word character (i.e. a to z or A to Z or 0 to 9 or _). 
 * **\W**: Matches anything other than what \w matches (i.e. it matches wild cards and spaces).
 * **?**: A question mark (?) used just behind a character matches or skips (if not required) a character match. 
-* *: An asterisk symbol '*' used just behind a character matches zero or more consecutive character. 
+* `*`: An asterisk symbol `*` used just behind a character matches zero or more consecutive character. 
 * **+**: The plus symbol (+) used just behind a character matches one or more consecutive character.
 * **{x}**: Matches exactly 'x' consecutive characters. 
 * **{x,}**: Matches at least 'x' consecutive characters (or more).
