@@ -59,3 +59,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   audit_logging
   question_types
   language_xls
+  restrict_responses
