@@ -58,3 +58,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   calculate_questions
   audit_logging
   question_types
+  language_xls
