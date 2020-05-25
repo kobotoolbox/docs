@@ -38,8 +38,8 @@ In addition to the examples and tips provided below, please visit this [website]
 * **[^abc]**: Matches any character except a, b or c if the caret symbol (^) is used inside [ ]. 
 * **[^A-Z]**: Matches any characters except those in the range A to Z if the caret symbol (^) is used inside [ ]. 
 * **(apple)**: The grouping character ( ) matches anything that is within the parenthesis. Here, (apple) matches the characters apple literally (case sensitive).
-* |: A vertical bar also known as Boolean matches any element separated by the vertical bar.
-* \: A back slash is used to match the literal value of any metacharacter (e.g. try using \. or \@ or \$ while building regex).
+* **|**: A vertical bar also known as Boolean matches any element separated by the vertical bar.
+* **\**: A back slash is used to match the literal value of any metacharacter (e.g. try using \. or \@ or \$ while building regex).
 * **\number**: Matches the same character as most recently matched by the nth (number used) capturing group.
 * **\s**: Matches any space or tab.
 * **\b**: Matches, without consuming any characters immediately between a character matched by \w and a character not matched by \w (in either order). \b is also known as the word boundary.
@@ -48,7 +48,7 @@ In addition to the examples and tips provided below, please visit this [website]
 * **\w**: Matches any word character (i.e. a to z or A to Z or 0 to 9 or _). 
 * **\W**: Matches anything other than what \w matches (i.e. it matches wild cards and spaces).
 * **?**: A question mark (?) used just behind a character matches or skips (if not required) a character match. 
-* *****: An asterisk symbol (*) used just behind a character matches zero or more consecutive character. 
+* * : An asterisk symbol (*) used just behind a character matches zero or more consecutive character. 
 * **+**: The plus symbol (+) used just behind a character matches one or more consecutive character.
 * **{x}**: Matches exactly 'x' consecutive characters. 
 * **{x,}**: Matches at least 'x' consecutive characters (or more).
