@@ -28,7 +28,7 @@ To use a regex in KoboToolbox, follow these steps:
 In addition to the examples and tips provided below, please visit this [website](http://www.regexr.com) for more help and examples.
 
 * Regex in KoBoToolbox should always be written in-between the apostrophes **regex(., ' ')** as shown in the examples. 
-* ^: The caret symbol (^) matches the start of a string without consuming any character.
+* **^**: The caret symbol (^) matches the start of a string without consuming any character.
 * **$**: The dollar symbol ($) matches the end of a string without consuming any character.
 * **[abc]**: Matches either a, b or c from within the [ ]. 
 * **[a-z]**: Matches any lowercase character from a to z.
@@ -48,7 +48,7 @@ In addition to the examples and tips provided below, please visit this [website]
 * **\w**: Matches any word character (i.e. a to z or A to Z or 0 to 9 or _). 
 * **\W**: Matches anything other than what \w matches (i.e. it matches wild cards and spaces).
 * **?**: A question mark (?) used just behind a character matches or skips (if not required) a character match. 
-* * : An asterisk symbol (*) used just behind a character matches zero or more consecutive character. 
+* *: An asterisk symbol (*) used just behind a character matches zero or more consecutive character. 
 * **+**: The plus symbol (+) used just behind a character matches one or more consecutive character.
 * **{x}**: Matches exactly 'x' consecutive characters. 
 * **{x,}**: Matches at least 'x' consecutive characters (or more).
