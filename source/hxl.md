@@ -10,7 +10,7 @@ When authoring an XLSForm, simply insert one extra column in any existing spread
 
 ![image](/images/hxl/xls.png)
 
-**How to use the HXL feature in the Formbuilder**
+**How to use the HXL feature in the Formbuilder**  
 _Credits:  David Megginson (http://www.megginson.com)_
 
 _Link to step-by-step [slide show guide](https://docs.google.com/presentation/d/123bHSkNh4T30CNq0i37IxOLfrqSC-3V_Khtkf6bIdg0/edit#slide=id.p)_ 
