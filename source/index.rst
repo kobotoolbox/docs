@@ -61,3 +61,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   language_xls
   restrict_responses
   language_dashboard
+  hxl
