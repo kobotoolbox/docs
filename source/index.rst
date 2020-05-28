@@ -64,3 +64,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   hxl
   formbuilder
   xls_url
+  media
