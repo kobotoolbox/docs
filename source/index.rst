@@ -104,4 +104,12 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   project_summary
   record_validation
   delete_project
+  stuck_in_pending
+  
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Managing your Project's Data
+  
+  stuck_in_pending
 
