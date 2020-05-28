@@ -15,3 +15,17 @@ To add this to your form:
 Digital signatures also work on Enketo web forms, where you have the additional option to use a draw widget to collect signatures. In your XLSForm just add “signature” or “draw” under the appearance column for an image-type question.
 
 See the below example on how to add these to your form:
+
+![image](/images/collecting_signatures/example.png)
+
+[Follow this link](https://enke.to/draw) to test the difference between the the draw and signature widgets.
+
+**Create a Signature question type in the Formbuilder**
+
+1. Create a new question and select Photo as the question type.  
+
+    ![image](/images/collecting_signatures/new_question.jpg)
+
+2. In the Settings under Question Options, click on the Appearance drop down and select Signature.  
+
+    ![image](/images/collecting_signatures/signature.jpg)
