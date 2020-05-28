@@ -85,3 +85,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   quick_start
   reset_password
   activation_link
+  server
