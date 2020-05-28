@@ -73,3 +73,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   alternative_enketo
   group_repeat
   collecting_signatures
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Getting Started
+  
+  training_arabic
