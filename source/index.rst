@@ -86,3 +86,11 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   reset_password
   activation_link
   server
+  
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: KoBoToolbox on Your Computer or Server
+  
+  software_architecture
+
