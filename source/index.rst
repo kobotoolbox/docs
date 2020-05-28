@@ -95,4 +95,11 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   software_architecture
   kobo_local_computer
   kobo_your_servers
+  
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Managing Projects
+  
+  project_summary
 
