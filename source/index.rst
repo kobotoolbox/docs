@@ -102,4 +102,5 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :caption: Managing Projects
   
   project_summary
+  record_validation
 
