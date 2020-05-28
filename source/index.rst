@@ -70,3 +70,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   edit_forms_excel
   matrix_response
   advanced_calculate
+  alternative_enketo
