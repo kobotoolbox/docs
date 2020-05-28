@@ -72,3 +72,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   advanced_calculate
   alternative_enketo
   group_repeat
+  collecting_signatures
