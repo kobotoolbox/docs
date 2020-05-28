@@ -93,4 +93,5 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :caption: KoBoToolbox on Your Computer or Server
   
   software_architecture
+  kobo_local_computer
 
