@@ -68,3 +68,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   deploy_form_new_project
   skip_logic
   edit_forms_excel
+  matrix_response
