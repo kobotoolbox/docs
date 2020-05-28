@@ -112,4 +112,5 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :caption: Managing your Project's Data
   
   stuck_in_pending
+  export_download
 
