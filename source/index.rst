@@ -66,3 +66,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   xls_url
   media
   deploy_form_new_project
+  skip_logic
