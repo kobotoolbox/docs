@@ -69,3 +69,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   skip_logic
   edit_forms_excel
   matrix_response
+  advanced_calculate
