@@ -18,6 +18,7 @@ KoBoToolbox is funded entirely through generous grants and donations from [our p
 KoboToolbox was built for human rights and humanitarian aid professionals but can be used to suit any of your research needs. Currently, our users range from city and state government officials, search and rescue teams, UN agencies, large and small NGOs, to business consulting and accounting firms. 
 
 **How much does KoboToolbox cost?**
+
 It's completely free, forever. There are absolutely no hidden fees, no tiered plans, no premium features. From the moment you create an account, all users have access to the full suite of features available on our platform.
 
 We believe that organizations, regardless of their ability to pay, should be able to collect data in a reliable, timely manner. Quickly collecting reliable information in a humanitarian crisis – especially following a natural disaster such as a large earthquake or a typhoon taking place in a poor country – is the critical link to saving the lives of the most vulnerable. 
