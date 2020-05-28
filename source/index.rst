@@ -62,3 +62,4 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   restrict_responses
   language_dashboard
   hxl
+  formbuilder
