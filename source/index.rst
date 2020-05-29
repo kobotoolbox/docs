@@ -113,4 +113,7 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   
   stuck_in_pending
   export_download
+  archiving_projects
+  rest_services
+  managing_permissions
 
