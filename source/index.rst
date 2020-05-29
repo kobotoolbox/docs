@@ -116,4 +116,13 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   archiving_projects
   rest_services
   managing_permissions
+  export_gps
+  is_my_data_safe
+  pulling_data_into_excelquery
+  howto_edit_single_submissions
+  photo_download
+  recovering_previous_formdata
+  converting_to_spss_and_stata
+  excel_analyzer_guide
+  pulling_data_into_powerbi
 
