@@ -4,7 +4,7 @@ Your project may include a one or more GPS questions in its form. KoBoToolbox wi
 
 #### Viewing your GPS points
 
-![image](/images/export_download/view_gps.jpg)
+![image](/images/export_gis/view_gps.jpg)
 
 Both of the following options only appear if your form has any GPS questions and has submissions with GPS coordinates.
 
@@ -21,7 +21,7 @@ Click on the button **View on Map**, which leads to the online map view. This vi
 
 Click on the button **Download GPS Points**. This will start a new export process with the latest data. Previous exports will be listed by their creation date, allowing you do see snapshots of GPS coordinates at various points in time. KML files can be imported in a variety of software, including Google Earth, Google Maps, or professional GIS software, such as ArcMap.
 
-![image](/images/export_download/kml_exports.jpg)
+![image](/images/export_gis/kml_exports.jpg)
 
 Note: In case your form uses more than one GPS question, only the first one will be used on the map.
 
