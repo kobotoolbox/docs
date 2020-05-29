@@ -8,19 +8,19 @@ The following explains other options for downloading and accessing your collecte
 1. Download your data to XLS and open the file
 2. In a new column next to the one that contains the filenames of your images, enter the following formula: 
 
-**If using the KoBoToolbox server**: 
-=HYPERLINK("https://kc.kobotoolbox.org/attachment/original?media_file=username/attachments/"&A2")   
-**If using OCHA's server**: 
-=HYPERLINK("https://kc.humanitarianresponse.info/attachment/original?media_file=username/attachments/"&A2")
+    **If using the KoBoToolbox server**: 
+    =HYPERLINK("https://kc.kobotoolbox.org/attachment/original?media_file=username/attachments/"&A2")   
+    **If using OCHA's server**: 
+    =HYPERLINK("https://kc.humanitarianresponse.info/attachment/original?media_file=username/attachments/"&A2")
 
 3. In the formula replace 'username' with your own username and 'A2' with the first cell reference that contains the file name of your photo. Then copy the formula down for all your records. 
 4. You can then click on each of the links to open the media file. Note: This will only work if you are signed in to your user account in your default browser. 
 
-The result will look like this:
+    The result will look like this:
 
-![image](/images/photo_download/excel_hyperlinks.jpg)
+    ![image](/images/photo_download/excel_hyperlinks.jpg)
 
-#### For slow connections or very large projects: Using DownThemAll to download media files
+**For slow connections or very large projects: Using DownThemAll to download media files**
 
 The ZIP download method will always include all of your project's media files. This can take a long time to download in case of a large number of collected images or videos or in case of a slow connection. Here is a workaround to download all (or a selection of) media using the popular DownThemAll download manager (only supported by the Firefox browser):
 
