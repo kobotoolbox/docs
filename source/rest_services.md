@@ -12,19 +12,19 @@ Note that your data is sent to the external server only on creation. Nothing is 
 
 Here are some tutorial videos for using REST Services: 
 
-1) Creation
+1. Creation
 
-[![Creation](/images/rest_services/thumbnail_1.jpg)](https://fast.wistia.net/embed/iframe/6i2hw2gcr1 "Creation")
+    [![Creation](/images/rest_services/thumbnail_1.jpg)](https://fast.wistia.net/embed/iframe/6i2hw2gcr1 "Creation")
 
-2) Subset of fields (Fields are added by pressing “Enter” or “Tab”)
+2. Subset of fields (Fields are added by pressing “Enter” or “Tab”)
 
-[![Subset of fields](/images/rest_services/thumbnail_2.jpg)](https://fast.wistia.net/embed/iframe/u6su0atm2w "Subset of fields")
+    [![Subset of fields](/images/rest_services/thumbnail_2.jpg)](https://fast.wistia.net/embed/iframe/u6su0atm2w "Subset of fields")
 
-3) Failure / Retry
+3. Failure / Retry
 
-[![Failure / Retry](/images/rest_services/thumbnail_3.jpg)](https://fast.wistia.net/embed/iframe/7my5eab5lm "Failure / Retry")
+    [![Failure / Retry](/images/rest_services/thumbnail_3.jpg)](https://fast.wistia.net/embed/iframe/7my5eab5lm "Failure / Retry")
 
 
-4) Custom Wrapper (Only available with JSON format)
+4. Custom Wrapper (Only available with JSON format)
 
-[![Custom Wrapper](/images/rest_services/thumbnail_4.jpg)](https://fast.wistia.net/embed/iframe/pd0czyksbx "Custom Wrapper")
+    [![Custom Wrapper](/images/rest_services/thumbnail_4.jpg)](https://fast.wistia.net/embed/iframe/pd0czyksbx "Custom Wrapper")
