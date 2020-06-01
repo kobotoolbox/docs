@@ -1,5 +1,4 @@
-Collecting Data Offline
-===================
+# Collecting Data Offline
 
 **All data collection can take place offline, both with KoBoCollect and with Web Forms.** 
 
@@ -11,6 +10,6 @@ Web Forms uses the browser's HTML5 offline storage to store survey responses as 
  
 **What do I do if I have NO access to the internet?**
 
-If it is not possible to connect a handset to the Internet at all (the interviewers can't move into an area where a connection is available), then it is also possible to transfer survey data from KoBoCollect through an external tool (`ODK Briefcase <https://docs.getodk.org/briefcase-intro/>`_) and by connecting the mobile devices by USB cable to a local computer. For more details about how to use ODK Briefcase to transfer data, read this `post <https://blog.cartong.org/2016/03/11/migration-odk-platforms/>`_. After this is it possible to upload the survey data from a centralized computer to the KoBoToolbox server, using the same tool.
+If it is not possible to connect a handset to the Internet at all (the interviewers can't move into an area where a connection is available), then it is also possible to transfer survey data from KoBoCollect through an external tool [ODK Briefcase](https://docs.getodk.org/briefcase-intro)) and by connecting the mobile devices by USB cable to a local computer. For more details about how to use ODK Briefcase to transfer data, [read this post](https://blog.cartong.org/2016/03/11/migration-odk-platforms). After this is it possible to upload the survey data from a centralized computer to the KoBoToolbox server, using the same tool.
  
-Finally, it is also possible to install KoBoToolbox on a local computer, e.g. a laptop, and then connect local mobile devices through a local WiFi to the computer. This WiFi does not need to be connected to the Internet as there would be a direct connection between the mobile devices and the local computer. See `here <https://intercom.help/kobotoolbox/en/articles/592393-installing-on-a-local-computer>`_ for finding out how to install KoBoToolbox on your computer.
+Finally, it is also possible to install KoBoToolbox on a local computer, e.g. a laptop, and then connect local mobile devices through a local WiFi to the computer. This WiFi does not need to be connected to the Internet as there would be a direct connection between the mobile devices and the local computer. [See here](https://intercom.help/kobotoolbox/en/articles/592393-installing-on-a-local-computer) for finding out how to install KoBoToolbox on your computer.
