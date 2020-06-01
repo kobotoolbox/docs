@@ -1,5 +1,4 @@
-Troubleshooting KoBoCollect Android Application
-===================
+# Troubleshooting KoBoCollect Android Application
 
 -- Kindly report any uncovered issue on our `community forum <https://community.kobotoolbox.org/>`_ --
 
