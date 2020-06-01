@@ -99,4 +99,4 @@ It’s sometimes necessary to hide buttons within KoBoCollect to limit the activ
 
 2. At the bottom you will see the **User Access Control** which includes **Main Menu Settings**, **User Settings** and **Form Entry Settings**.
 
-3. Select the buttons you would like to hide from the different screens. If you set an admin password, your enumerators won't be able to access the **Admin Settings** to change access to these buttons
+3. Select the buttons you would like to hide from the different screens. If you set an admin password, your enumerators won't be able to access the **Admin Settings** to change access to these buttons.
