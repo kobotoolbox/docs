@@ -19,6 +19,19 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 .. toctree::
   :hidden:
   :maxdepth: 2
+  :caption: Getting Started
+  
+  training_arabic
+  gdpr
+  welcome
+  quick_start
+  reset_password
+  activation_link
+  server
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
   :caption: Collecting Data
 
   data-collection-tools
@@ -73,19 +86,6 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   alternative_enketo
   group_repeat
   collecting_signatures
-
-.. toctree::
-  :hidden:
-  :maxdepth: 2
-  :caption: Getting Started
-  
-  training_arabic
-  gdpr
-  welcome
-  quick_start
-  reset_password
-  activation_link
-  server
   
 .. toctree::
   :hidden:
