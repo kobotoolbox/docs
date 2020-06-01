@@ -1,5 +1,4 @@
-Form Settings and Meta Questions
-================================
+# Form Settings and Meta Questions
 
 Form settings are optional advanced configurations of your form.
 
