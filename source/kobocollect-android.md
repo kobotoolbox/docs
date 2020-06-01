@@ -1,5 +1,4 @@
-Collecting Data with KoBoCollect on Android
-===================
+# Collecting Data with KoBoCollect on Android
 
 KoBoCollect is KoBoToolbox's data collection app and can be installed on any Android phone or tablet through the Google Play Store. To install the app on your Android device, click `here <https://play.google.com/store/apps/details?id=org.koboc.collect.android>`_.
 
