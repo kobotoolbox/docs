@@ -1,9 +1,8 @@
-Collecting Data through Web Forms
-===================
+# Collecting Data through Web Forms
 
 **What are web forms?**
 
-`Enketo <https://enketo.org/>`_ web forms are used by KoBoToolbox to preview your forms and to enter data directly on your computer. You can also use web forms for collecting data on your mobile devices - even if you're offline at the time of data collection. It works on virtually any device, including iPhones, iPads, or any other smartphone, tablet, or computer. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device.
+[Enketo](https://enketo.org) web forms are used by KoBoToolbox to preview your forms and to enter data directly on your computer. You can also use web forms for collecting data on your mobile devices - even if you're offline at the time of data collection. It works on virtually any device, including iPhones, iPads, or any other smartphone, tablet, or computer. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device.
 
 **Why do I need web forms instead of KoBoCollect Android App?**
 
@@ -15,7 +14,7 @@ You'll always use Enketo web forms if you're not using the KoBoCollect app on an
 
 To start collecting data, you will need to deploy your project first. Once your project is deployed you will see a screen as shown below with options on how to **Collect data**. 
 
-.. image:: /images/data_through_webforms/collection_settings.png
+![image](/images/data_through_webforms/collection_settings.png)
 
 In the drop down menu under **Collect data**, you have several options available for Web Forms:
 
@@ -35,7 +34,7 @@ In the drop down menu under **Collect data**, you have several options available
 
 Select an appropriate drop down option from **Collect data** and then press COPY to copy the survey link to share with others or press OPEN to open the survey form to a new tab in your browser. Once the form is opened, you should see a screen like the one shown in the image below:
 
-.. image:: /images/data_through_webforms/data_collection.jpg
+![image](/images/data_through_webforms/data_collection.jpg)
 
 **1. Signal Bars:** The signal bars indicate whether the form can be launched offline or not. Web forms are built to be able to collect data while you are offline, however, it is essential to visit the form URL with an internet connection before going offline. Once your form has been loaded and cached, you'll see the offline availability icon (empty "signal bars" and a check mark) in the top-left corner indicating that you can now access the form offline.
 
@@ -49,7 +48,7 @@ Select an appropriate drop down option from **Collect data** and then press COPY
 
 **6. Queued Records Counter:** The Queued Records Counter shows you the total number of records submitted and waiting to be uploaded to a server. The queued records are uploaded automatically in the background every 5 minutes when the web page is open and an internet connection is available.
 
-**7. Queue Records Pane:** Clicking the side button shows you the records that are available as drafts (which can still be edited) and finalized submitted records queued to be either uploaded to your server with an internet connection or exported as zip file as outlined in the support article `here <https://support.kobotoolbox.org/en/articles/592375-manually-uploading-submissions/>`_.
+**7. Queue Records Pane:** Clicking the side button shows you the records that are available as drafts (which can still be edited) and finalized submitted records queued to be either uploaded to your server with an internet connection or exported as zip file as outlined in the [support article here](https://support.kobotoolbox.org/en/articles/592375-manually-uploading-submissions).
 
 **How do I save an offline web form on a mobile device?**
 
@@ -61,7 +60,7 @@ Follow the steps outlined below to save a form and collect data in a web form us
 
 3. Type or paste the URL of your web form to open a form page that resembles the one shown below:
 
-.. image:: /images/data_through_webforms/offline_webform.jpg
+    ![image](/images/data_through_webforms/offline_webform.jpg)
 
 4. Click the 3 DOTS icon at the top right (circled in the image above) and select ADD TO HOME SCREEN to create a shortcut to your device.
 
@@ -69,16 +68,16 @@ Follow the steps outlined below to save a form and collect data in a web form us
 
 6. You will now see a KoBoToolbox web form shortcut icon on your device, similar to the what is shown below:
 
-.. image:: /images/data_through_webforms/kobo_icon.png
-   :align: center
+    ![image](/images/data_through_webforms/kobo_icon.png)
 
 7. Select the shortcut icon to start collecting data for your survey project.
 
-Forwarding upon submission
-By default the form refreshes for the next entry once the data has been submitted. If users are only supposed to enter one entry (e.g. in an online survey) you can send them to another website upon submission. To use this feature you need to 1) use the Online-Only form of the form, and 2) add *returnURL=https://www.somewebsite.com* to your URL. 
+**Forwarding upon submission**
 
-.. image:: /images/data_through_webforms/url.png
+By default the form refreshes for the next entry once the data has been submitted. If users are only supposed to enter one entry (e.g. in an online survey) you can send them to another website upon submission. To use this feature you need to 1) use the Online-Only form of the form, and 2) add `returnURL=https://www.somewebsite.com` to your URL. 
+
+![image](/images/data_through_webforms/url.png)
 
 **Troubleshooting Web Forms**
 
-Always use the latest version of the browser. We recommend users to use Chrome as their browser while working with web forms. For other details on troubleshooting web forms, please visit our support article (Troubleshooting Enketo Web Forms) `here <https://support.kobotoolbox.org/en/articles/592384-troubleshooting-enketo-web-forms>`_. 
+Always use the latest version of the browser. We recommend users to use Chrome as their browser while working with web forms. For other details on troubleshooting web forms, please visit our [support article (Troubleshooting Enketo Web Forms) here](https://support.kobotoolbox.org/en/articles/592384-troubleshooting-enketo-web-forms). 
