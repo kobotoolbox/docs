@@ -2,7 +2,7 @@
 
 **What are web forms?**
 
-[Enketo](https://enketo.org) web forms are used by KoBoToolbox to preview your forms and to enter data directly on your computer. You can also use web forms for collecting data on your mobile devices - even if you're offline at the time of data collection. It works on virtually any device, including iPhones, iPads, or any other smartphone, tablet, or computer. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device.
+[Enketo web forms](https://enketo.org) are used by KoBoToolbox to preview your forms and to enter data directly on your computer. You can also use web forms for collecting data on your mobile devices - even if you're offline at the time of data collection. It works on virtually any device, including iPhones, iPads, or any other smartphone, tablet, or computer. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device.
 
 **Why do I need web forms instead of KoBoCollect Android App?**
 
