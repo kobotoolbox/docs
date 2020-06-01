@@ -16,7 +16,7 @@ After installing KoBoCollect, you need to configure it so that it can be used to
 
 2. Find **General Settings** by clicking on the three dot icon on the upper right side of the screen, then click on Server.
 
-3. In the Server Settings, under URL, enter the server URL (https://kc.kobotoolbox.org) or (https://kc.humanitarianresponse.info) (depending on which server you use)
+3. In the Server Settings, under URL, enter the server URL https://kc.kobotoolbox.org or https://kc.humanitarianresponse.info (depending on which server you use)
 
 4. Then enter your username and password
 
