@@ -1,5 +1,4 @@
-Rating vs Ranking Question Types
-================================
+# Rating vs Ranking Question Types
 
 **Difference between rating and ranking questions?**
 
