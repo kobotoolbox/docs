@@ -1,5 +1,4 @@
-Recording Entire Interviews
-===================
+# Recording Entire Interviews
 
 KoboToolbox's audio questions are designed to be used in sequence with other questions in your form.
  
