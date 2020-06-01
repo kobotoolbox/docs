@@ -1,5 +1,4 @@
-Question Options
-================
+# Question Options
 
 The Question Options screen contains some very useful features to get the most out of your form.
 
