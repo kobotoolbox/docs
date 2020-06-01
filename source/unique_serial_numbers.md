@@ -7,17 +7,15 @@ There are times you may want to generate a unique serial number for each and eve
 This method works best with Enketo web forms. It uses a calculation function to create a unique serial number based on the date and time to the first millisecond. Although this method may not meet all your needs, it should give you an illustration of how much you can stretch calculate functions to achieve your needs. 
 
 1. Create a calculate question type in either the formbuilder or XLSForm and use the formula below. *Please note the same formula can work as an integer question when working in an XLSForm.*
+    `concat(substr(today(),0,4),substr(today(),7,5),substr(today(),10,8),substr(now(),13,11),substr(now(),16,14),substr(now(),19,17))`
          
-         concat(substr(today(),0,4),substr(today(),7,5),substr(today(),10,8),
-         substr(now(),13,11),substr(now(),16,14),substr(now(),19,17))
-         
-Example:
+    Example:
 
-.. image:: /images/unique_serial_numbers/calculate_example.png
+    ![image](/images/unique_serial_numbers/calculate_example.png)
 
-In the example, when you preview the deployed form in Enketo, you should be able to see the serial number within the note question as shown in the image below: 
+    In the example, when you preview the deployed form in Enketo, you should be able to see the serial number within the note question as shown in the image below: 
 
-.. image:: /images/unique_serial_numbers/preview_form.png
+    ![image](/images/unique_serial_numbers/preview_form.png)
 
 **Creating Unique Serial Numbers from Selected Variables**
 
@@ -25,8 +23,8 @@ This example shows how to create unique serial numbers from existing, already de
 
 Example:
 
-.. image:: /images/unique_serial_numbers/xls.jpg
+![image](/images/unique_serial_numbers/xls.jpg)
 
 When you preview the example in Enketo web forms, the serial number will be presented within the note question as shown in the image below: 
 
-.. image:: /images/unique_serial_numbers/preview_uniqueid.png
+![image](/images/unique_serial_numbers/preview_uniqueid.png)
