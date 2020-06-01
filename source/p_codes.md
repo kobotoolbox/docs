@@ -1,5 +1,4 @@
-How to Include P-Codes in the Output Data
-=========================================
+# How to Include P-Codes in the Output Data
 
 If using cascading lists, please `follow the instructions <https://support.kobotoolbox.org/en/articles/592422-adding-cascading-select-questions>`_ for cascading selects.
 
