@@ -1,5 +1,4 @@
-Limiting Responses with Validation Criteria
-===========================================
+# Limiting Responses with Validation Criteria
 
 This feature allows you to avoid accidental or invalid answers, especially in numeric questions (Integer or Decimal response types). However, validation can be used on any question. Validation criteria are also sometimes referred to as constraints.
 
