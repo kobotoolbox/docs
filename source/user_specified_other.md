@@ -1,5 +1,4 @@
-User-Specified "Other" Responses For Multiple-Choice Questions
-==============================================================
+# User-Specified "Other" Responses For Multiple-Choice Questions
 
 Creating user-specified "Other" responses for multiple choice questions in one step is a feature that is currently on KoBo Toolbox's development roadmap. In the meantime, here's how to create them in your form manually using skip logic.
 
