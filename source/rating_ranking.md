@@ -12,52 +12,52 @@ The choice of ranking or rating should be purely informed on the mode of analysi
 
 1. Add a question to the survey:
 
-.. image:: /images/rating_ranking/add_question.png
+    ![image](/images/rating_ranking/add_question.png)
 
 2. Select "ranking question"
 
-.. image:: /images/rating_ranking/ranking.png
+    ![image](/images/rating_ranking/ranking.png)
 
 3. Now you have a chance to add the different elements. 
 
-.. image:: /images/rating_ranking/elements.png
+    ![image](/images/rating_ranking/elements.png)
 
-Example:
+    Example:
 
-.. image:: /images/rating_ranking/example.png
+    ![image](/images/rating_ranking/example.png)
 
 4. When you preview your form, the question will look like this:
 
-.. image:: /images/rating_ranking/preview_question.png
+    ![image](/images/rating_ranking/preview_question.png)
 
-Each choice will now offer all of the previous defined response options
+    Each choice will now offer all of the previous defined response options
 
-.. image:: /images/rating_ranking/preview_options.png
+    ![image](/images/rating_ranking/preview_options.png)
 
-However, respondents can only select each response option once.
+    However, respondents can only select each response option once.
 
-.. image:: /images/rating_ranking/preview_response.png
+    ![image](/images/rating_ranking/preview_response.png)
 
 **How to add a Rating Question**
 
 You will need to create a question using the same process above
 
-.. image:: /images/rating_ranking/create_question.png
+![image](/images/rating_ranking/create_question.png)
 
 Select the option for Rating question and you will see the interface below
 
-.. image:: /images/rating_ranking/rating.png
+![image](/images/rating_ranking/rating.png)
 
 You can then type your questions and response options. You can add more of the same using the + button provided on the same
 
-.. image:: /images/rating_ranking/more_questions.png
+![image](/images/rating_ranking/more_questions.png)
 
-Kindly note you can change the values of your response options and questions to reflect what you want. You change them by replacing the grey text written automatic
+Kindly note you can change the values of your response options and questions to reflect what you want. You change them by replacing the grey text written automatic.
 
-.. image:: /images/rating_ranking/change_values.png
+![image](/images/rating_ranking/change_values.png)
 
 You can save your form and preview the same to see the effect.
 
-.. image:: /images/rating_ranking/preview_rating.png
+![image](/images/rating_ranking/preview_rating.png)
 
 If you have any questions or feedback on this article, please post about it on our community forum! 
