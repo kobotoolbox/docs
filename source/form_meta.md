@@ -6,6 +6,6 @@ The Form ID is a unique name that every form must have to be valid. Later when d
 
 Meta questions are hidden questions that can help you with your analysis later on. Each of the meta questions will be included if ticked here. In detail, here is what they stand for:
 
-.. image:: /images/form_meta/meta_question.png
+![image](/images/form_meta/meta_question.png)
 
-*Note: These meta questions are relevant only to cell phones with a SIM card that have a phone number.*
+_Note: These meta questions are relevant only to cell phones with a SIM card that have a phone number._
