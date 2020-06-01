@@ -1,5 +1,4 @@
-Manually Uploading Submissions
-===================
+# Manually Uploading Submissions
 
 [Warning: This is still an experimental feature, and it does not prevent you from creating duplicate submissions.]
 
