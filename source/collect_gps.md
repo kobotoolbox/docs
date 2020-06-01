@@ -24,15 +24,15 @@ The form will have various collection options including
 
 **1. Manual Collection:** Simply tap any point(s) on the map to collect the location coordinates or you may type in the latitude and longitude coordinates if they're known. 
 
-    ![image](/images/collect_gps/point_manual.png)
+   ![image](/images/collect_gps/point_manual.png)
 
 **2. Pasting KML points:** Paste KML coordinates on the text box prompt that comes up. 
 
-    ![image](/images/collect_gps/kml.png)
+   ![image](/images/collect_gps/kml.png)
 
 **3. Detect Current Location:** Simply click the button shown below to collect the current GPS coordinates for the location of the device.
 
-    ![image](/images/collect_gps/current_location.jpg)
+   ![image](/images/collect_gps/current_location.jpg)
 
 **Collecting Data Using KoBoCollect**
 
