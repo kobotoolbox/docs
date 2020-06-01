@@ -1,8 +1,8 @@
 # Collecting Data with KoBoCollect on Android
 
-KoBoCollect is KoBoToolbox's data collection app and can be installed on any Android phone or tablet through the Google Play Store. To install the app on your Android device, click `here <https://play.google.com/store/apps/details?id=org.koboc.collect.android>`_.
+KoBoCollect is KoBoToolbox's data collection app and can be installed on any Android phone or tablet through the Google Play Store. To install the app on your Android device, [click here](https://play.google.com/store/apps/details?id=org.koboc.collect.android).
 
-To get help troubleshooting common issues, please refer to this `article <https://support.kobotoolbox.org/en/articles/592367-troubleshooting-kobocollect-android-application>`_.
+To get help troubleshooting common issues, please refer to [this article](https://support.kobotoolbox.org/en/articles/592367-troubleshooting-kobocollect-android-application).
 
 To learn how to get started with KoBoCollect, follow the steps and tips below:
 
@@ -10,13 +10,13 @@ To learn how to get started with KoBoCollect, follow the steps and tips below:
 
 After installing KoBoCollect, you need to configure it so that it can be used together with your KoBoToolbox account for data collection.
 
-.. image:: /images/kobocollect_android/server_url.jpg
+![image](/images/kobocollect_android/server_url.jpg)
 
 1. Open KoBoCollect on your device.
 
 2. Find **General Settings** by clicking on the three dot icon on the upper right side of the screen, then click on Server.
 
-3. In the Server Settings, under URL, enter the server URL https://kc.kobotoolbox.org or https://kc.humanitarianresponse.info (depending on which server you use)
+3. In the Server Settings, under URL, enter the server URL (https://kc.kobotoolbox.org) or (https://kc.humanitarianresponse.info) (depending on which server you use)
 
 4. Then enter your username and password
 
