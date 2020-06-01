@@ -1,13 +1,12 @@
-Custom Formatting in Web Forms
-==============================
+# Custom Formatting in Web Forms
 
-*Please note: Custom formatting does work on the KoBoCollect android application*
+_Please note: Custom formatting does work on the KoBoCollect android application._
 
 When using web forms (Enketo) as your data collection method you have the option to format your question labels in several ways.
 
 To format your note text use one of these options:
 
-- *emphasize words* by wrapping them inside _these_ or these characters
+* _emphasize words_ by wrapping them inside _these_ or these characters
 - **strongly emphasize** words by wrapping them inside __these characters_  or these
 a link can be added by using [a link] (https://www.kobotoolbox.org)
 This formatting will not work in KoBoCollect, which will just show the _ or * characters along with the text.
