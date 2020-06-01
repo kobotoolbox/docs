@@ -1,5 +1,4 @@
-Troubleshooting Enketo Web Forms
-===================
+# Troubleshooting Enketo Web Forms
 
 Enketo web forms work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all modern browsers; see `here <https://github.com/kobotoolbox/enketo-express#browser-support>`_ for more details on browsers working with Enketo.
 
