@@ -6,7 +6,7 @@ To begin:
 
 1. Start by creating your logo image file and save it with a short file name.
 
-2. In your XLSForm, make the first question a Note question type, leave the label blank, and add a column titled media::image with your logo file name in the cell. As shown below:
+2. In your XLSForm, make the first question a Note question type, leave the label blank, and add a column titled `media::image` with your logo file name in the cell. As shown below:
 
     ![image](/images/add_logo/xls.png)
 
