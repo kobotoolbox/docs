@@ -1,6 +1,7 @@
 # Advanced Use of Calculate Questions
 
-Advanced Use of Calculate Questions
+#### Advanced Use of Calculate Questions
+
 Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a **Calculation**, and writing the mathematical expression into the question label field. 
 
 This article provides step-by-step instructions on how to add calculations while using the form builder or by downloading and adding it directly to the XLSform. 
@@ -48,7 +49,7 @@ XLS forms allow for use of calculate function on different types of question typ
 1. You cannot use both numeric and string calculations within the same question  
 2. Your numeric calculations will follow the BODMAS rule in applying calculations i.e. the order of executing the calculations will be Brackets, Divisions, Multiplications, Additions then Subtractions (Always remember this when ordering a question)  
 3. Calculate questions that reference other questions should not be placed on the same group as the reference questions since the calculate will not appear unless you move from the group  
-4. When referencing a question in a calculation you need to indicate it as ${Question} where question is the name of the question  
+4. When referencing a question in a calculation you need to indicate it as `${Question}` where question is the name of the question  
 5. You can "force" a calculation to evaluate by setting 'required' to TRUE  
 
 #### List of tested calculate functions
@@ -67,14 +68,14 @@ _Recommended for advanced users_
 
 **Workaround 1: Creating Dummy Questions for Calculation of Final Score in a Series of Questions**
 
-Let's say you have a question like  QN1 Do you have a question? Answers Yes=1 No=2 Don’t Know=999
+Let's say you have a question like  `QN1 Do you have a question?` Answers `Yes=1 No=2 Don’t Know=999`
 
 In this case you may want to create a dummy QN1 right after QN1 to account for the differences in coding and define the mathematical equivalent. So you will create a calculate question QN1d (_note this is my own naming convention d stands for dummy) and define the default value as 0 but write the formula as **If (${QN1}=1,1,0**_) 
 
 Notice in my test form I managed to create the situation and the data appears as coded for Q1N and as calculated for mathematical meaning for Q1Nd. This should be meaning that is meant by your score. _You can do this for calculations such as wealth where Yes and No could mean a different value in different countries._
 
 Once you do this for all your questions you can add a calculate question that sums up all the dummies as:  
-${QN1d}+${QN2d}+ etc
+`${QN1d}+${QN2d}+ etc`
     
 
 
