@@ -1,8 +1,8 @@
 # Audit Logging Meta Question Type
 
-Audit Logging can be a useful tool to monitor enumerator behavior and discover which questions are taking longer to answer, better understand how the enumerators are navigating a certain form, and see which enumerators are generally taking quicker or longer periods of time to submit answers. This feature requires manually analyzing CSV files and is only meant for advanced users. This feature is also not supported in the Form Builder and requires you to use an [XLSForm](https://support.kobotoolbox.org/en/articles/592430-editing-forms-in-excel-using-xlsform). 
+Audit Logging can be a useful tool to monitor enumerator behavior and discover which questions are taking longer to answer, better understand how the enumerators are navigating a certain form, and see which enumerators are generally taking quicker or longer periods of time to submit answers. This feature requires manually analyzing CSV files and is only meant for advanced users. This feature is also not supported in the Form Builder and requires you to use an [XLSForm](edit_forms_excel.html). 
 
-The audit log meta question is a question type that is only supported by using the [KoBoCollect](data_through_webforms.html) app. 
+The audit log meta question is a question type that is only supported by using the [KoBoCollect app](data_through_webforms.html). 
 
 To add an audit meta question type to a form and view the finalized data, please follow the steps below: 
 
