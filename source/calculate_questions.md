@@ -10,7 +10,7 @@ Referencing other questions in your calculation requires giving them a fixed nam
 
 If for example, you wanted to convert the answer to a question about someone's income into another currency (such as Rwandan Francs to US Dollars), you would write `${income} / 688`
 
-You can now use the answer to this Calculate question for other purposes, such as building your skip logic (for example only ask a follow-up question above a certain income threshold) or by displaying it inside a Note (see [here](responses_inside_question.html) for help on how to display the response to one question in the label of another question).
+You can now use the answer to this Calculate question for other purposes, such as building your skip logic (for example only ask a follow-up question above a certain income threshold) or by displaying it inside a Note ([see here](responses_inside_question.html) for help on how to display the response to one question in the label of another question).
 
 #### List of available functions
 
