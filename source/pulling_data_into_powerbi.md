@@ -4,8 +4,8 @@
 
 First, you need to find the unique URL that allows you to access your project data via the API. If you already know how to find this, skip to the next section. 
 
-1. The unique URL has the following structure: https://[kobocat-URL]/api/v1/data/[unique-kc-ID]. 
-2. To find this URL, go to https://[kobocat-URL]/api/v1/data/ and find the project in the list at the bottom, the copy the value for 'url' (without the quotation marks). For example: 
+1. The unique URL has the following structure: `https://[kobocat-URL]/api/v1/data/[unique-kc-ID]`. 
+2. To find this URL, go to [https://[kobocat-URL]/api/v1/data/](https://[kobocat-URL]/api/v1/data/) and find the project in the list at the bottom, the copy the value for 'url' (without the quotation marks). For example: 
 
     ![image](/images/pulling_data_powerbi/kobo.jpg)
 
