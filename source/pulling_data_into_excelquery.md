@@ -19,7 +19,7 @@ For seamless data analysis, you can leverage the KoBo API to pull your data into
 5. This action will download a text file to your computer called "data".   
 
 6. Next, locate your project's data structure inside the data file. It will be in the following format: description,id,id_string,title,url  
-    _For example:_ 
+    _For example:_  
     MIRA_DO,1314,MIRA_DO,MIRA_DO,https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls
 
 7. To pull the data, take the form URL (in bold in the above example) and replace “?format=xls” to “.xls”. For our example, the URL should now be:  
