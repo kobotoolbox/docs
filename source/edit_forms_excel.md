@@ -8,4 +8,4 @@ Editing a form in Excel can be an easy way to quickly make several changes to a 
 
 The XLSForm format is wonderfully documented [here](xlsform.org).
 
-When using XLSForm you can create complex calculations as referenced in [this article](https://support.kobotoolbox.org/en/articles/1913851-advanced-use-of-calculate-questions).
+When using XLSForm you can create complex calculations as referenced in [this article](advanced_calculate.html).
