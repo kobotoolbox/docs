@@ -68,7 +68,7 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 
 #### Generating RSA Encryption Keys
 
-To generate the RSA public-private key pairs you can use the OpenSSL software package, which is pre-installed on OSX and Linux. On Windows you have to download and install the OpenSSL software package from this [site](http://slproweb.com/products/Win32OpenSSL.html). (_Note: install the Win64 OpenSSL v1.1.1c in **C**: rather than the default location **C:\Program Files**_)
+To generate the RSA public-private key pairs you can use the OpenSSL software package, which is pre-installed on OSX and Linux. On Windows you have to download and install the OpenSSL software package from [this site](http://slproweb.com/products/Win32OpenSSL.html). (_Note: install the Win64 OpenSSL v1.1.1c in **C**: rather than the default location **C:\Program Files**_)
 
 **How to generate RSA key for use with encrypted forms on KoBoToolbox**
 
@@ -91,11 +91,7 @@ _Note: We strongly recommend using OpenSSL as documented below for creating your
 
 6. Open the **MyPublicKey.pem** with Notepad or another text edit, your public key is the uninterrupted very long string of characters, 
 
-    > e.g.:Tjhfur1K9+BRQ2USezIPbtyahbfuNqviI5Suhm8maA3JoELRHj9psjf/oNWoG87aFtKNbLrRaCEDP
-    > oFMDC9NEzWlv5L49BygeieMu/wg/rtMT0M0kgDbKxw5weJJgyb9P41aMsrqAAAAB3NzaC1yc2EAAAADAQAB
-    > AAABAQDfNoFX7bh3bfdW6lGfDht1Ea8PUBLKYjugbHN5jS7j5fHV6dexM+kzvITVgoyjhhKPXeCbaT62vD/
-    > saTqJFXJzlysnZ24fqxNkjreO5K5EQ9c3ggwqML06+AKrFUSP5jpnyJJH8btNwKl6D5pG4ZseHwDUKzZta
-    > extPTNQz67kdYIKdtCkCsQHVsy4xvy/A0jzfK3xyOkG6j+L  
+  `e.g.:Tjhfur1K9+BRQ2USezIPbtyahbfuNqviI5Suhm8maA3JoELRHj9psjf/oNWoG87aFtKNbLrRaCEDPoFMDC9NEzWlv5L49BygeieMu/wg/rtMT0M0kgDbKxw5weJJgyb9P41aMsrqAAAAB3NzaC1yc2EAAAADAQABAAABAQDfNoFX7bh3bfdW6lGfDht1Ea8PUBLKYjugbHN5jS7j5fHV6dexM+kzvITVgoyjhhKPXeCbaT62vD/saTqJFXJzlysnZ24fqxNkjreO5K5EQ9c3ggwqML06+AKrFUSP5jpnyJJH8btNwKl6D5pG4ZseHwDUKzZtaextPTNQz67kdYIKdtCkCsQHVsy4xvy/A0jzfK3xyOkG6j+L`  
 
     This string is what you will need to paste under the public_key field in your settings sheet on your XLS file. 
 
