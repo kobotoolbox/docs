@@ -125,4 +125,5 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   converting_to_spss_and_stata
   excel_analyzer_guide
   pulling_data_into_powerbi
+  upload_to_gis
 
