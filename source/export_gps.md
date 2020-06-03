@@ -27,7 +27,7 @@ Note: In case your form uses more than one GPS question, only the first one will
 
 #### Option 3 - Export data as CSV and upload to GIS software.
 
-As an alternative to exporting your GPS data as a KML file, its possible and easy to export and upload your data as a CSV file (which will include all attributes) directly into GIS software as a shapefile. For a step-by-step guide, refer to this [help article.](https://support.kobotoolbox.org/en/articles/3162111-exporting-your-data-to-gis)
+As an alternative to exporting your GPS data as a KML file, its possible and easy to export and upload your data as a CSV file (which will include all attributes) directly into GIS software as a shapefile. For a step-by-step guide, refer to this [help article.](upload_to_gis.html)
 
 #### How to share map data
 
