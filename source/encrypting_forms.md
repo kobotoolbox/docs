@@ -6,7 +6,7 @@ Encrypted forms work by encrypting the data on the phone the moment it is saved.
 
 #### How it Works
 
-KoBoCollect supports the ability to encrypt the content of a form the moment it is marked as completed and ready for submission on the phone. To take advantage of this requires the use of a public encryption key which you include in the XLSForm and a private key (which you never share) that is used by ODK Briefcase to decrypt the data locally after you've downloaded it from KoBoToolbox. The public key is used to encrypt data while the private key decrypts it. Only a person who has the private key, can decrypt the data encrypted with the public key. To understand more about public and private key infrastructure see [here](https://en.wikipedia.org/wiki/Public-key_cryptography).
+KoBoCollect supports the ability to encrypt the content of a form the moment it is marked as completed and ready for submission on the phone. To take advantage of this requires the use of a public encryption key which you include in the XLSForm and a private key (which you never share) that is used by ODK Briefcase to decrypt the data locally after you've downloaded it from KoBoToolbox. The public key is used to encrypt data while the private key decrypts it. Only a person who has the private key, can decrypt the data encrypted with the public key. To understand more about public and private key infrastructure [see here](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
 #### How to encrypt XLS forms
 
