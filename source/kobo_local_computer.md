@@ -2,7 +2,7 @@
 
 The best way to use KoBoToolbox is on one of the two free public instances - kobo.humanitarianresponse.info (if you work for a humanitarian organization) and kf.kobotoolbox.org (for non-humanitarian users). **There is no software to be installed on your computer when using these free public servers.** For more help deciding which server to use, [check this article](server.html).
 
-Installing KoBoToolbox on your own computer is **not necessary** and is only recommended if 1) you are a developer looking to contribute code to our [open source repositories](https://github.com/kobotoolbox), or 2) if you are an advanced user and work in an environment with absolutely no Internet access or if security circumstances prevent using a cloud server. To learn about installing the software on your own servers, click [here](https://support.kobotoolbox.org/en/articles/592378-install-kobotoolbox-on-your-own-servers).
+Installing KoBoToolbox on your own computer is **not necessary** and is only recommended if 1) you are a developer looking to contribute code to our [open source repositories](https://github.com/kobotoolbox), or 2) if you are an advanced user and work in an environment with absolutely no Internet access or if security circumstances prevent using a cloud server. To learn about installing the software on your own servers, [click here](kobo_your_servers.html).
 
 **Installing KoBoToolbox with Docker and kobo-install**
 
