@@ -2,7 +2,7 @@
 
 KoBoCollect is KoBoToolbox's data collection app and can be installed on any Android phone or tablet through the Google Play Store. To install the app on your Android device, [click here](https://play.google.com/store/apps/details?id=org.koboc.collect.android).
 
-To get help troubleshooting common issues, please refer to [this article](https://support.kobotoolbox.org/en/articles/592367-troubleshooting-kobocollect-android-application).
+To get help troubleshooting common issues, please refer to [this article](troubleshooting_kobocollect.html).
 
 To learn how to get started with KoBoCollect, follow the steps and tips below:
 
@@ -46,7 +46,8 @@ At this point, you no longer need an internet connection. The blank forms and th
 
 3. Now you may go through and start answering all the questions (swiping your finger from right to left)
 
-4. When you reach the end of the form click on **Save Form and Exit** (making sure the form is marked as 'finalized')
+4. When you reach the end of the form click on **Save Form and Exit** (making sure the form is marked as 'finalized')  
+
     ![image](/images/kobocollect_android/save_exit.jpg)
 
 #### **4. Uploading finalized data to the server**
