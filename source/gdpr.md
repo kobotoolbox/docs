@@ -10,7 +10,7 @@ At KoBoToolbox, we take the security and privacy of our user's information very 
 
 We are constantly monitoring and improving KoBoToolbox to create a robust security framework that allows us to meet the growing needs of the industry.
 
-You can learn more about security at KoBoToolbox in [this support article](https://support.kobotoolbox.org/en/articles/592433-is-my-data-safe-on-your-server), or you can send a message to our Support team in the chat bubble.
+You can learn more about security at KoBoToolbox in [this support article](is_my_data_safe.html), or you can send a message to our Support team in the chat bubble.
 
 Our team will never access your data unless you have given us explicit access to it. However, to have complete control and ownership of your data, you are also free to install your own instance of KoBoToolbox on your own server.
 
