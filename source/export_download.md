@@ -21,8 +21,7 @@ XLS and CSV (non legacy) export types have additional, one-time options that all
 * After setting up the format and type of data, click the Export button. 
 * Each new export can take a few seconds to be created and will be shown below in the Exports section of the page. 
 * Each export is retained as a unique snapshot in the system, so it is possible to go back to previous non-deleted exports. 
-
-![image](/images/export_download/export.jpg)
+    ![image](/images/export_download/export.jpg)
 
 #### Solving exports stuck in pending state
 
