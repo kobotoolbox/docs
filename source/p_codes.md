@@ -1,6 +1,6 @@
 # How to Include P-Codes in the Output Data
 
-If using cascading lists, please [follow the instructions](https://support.kobotoolbox.org/en/articles/592422-adding-cascading-select-questions) for cascading selects.
+If using cascading lists, please [follow the instructions](cascading_select.html) for cascading selects.
 
 Normally, only the "Name" and NOT the "Label" will appear in your exported Excel file, which means that only the P-code OR the name of the location will appear.
 
