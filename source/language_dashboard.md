@@ -35,6 +35,7 @@ Here are detailed instructions on how you can add and manage another language in
 9. Repeat steps for any additional languages.
 
     **Additional Tips**:
+    
     **Changing the default language**
 
     The default language should be the most common language used during data collection. To change the default language, click on 'Manage Translations' and then click on the icon that appears to the right of the intended language when your mouse hovers over it. 
