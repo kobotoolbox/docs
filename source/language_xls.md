@@ -1,6 +1,6 @@
 # Adding Another Language to your XLS Form
 
-There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online [Project Dashboard](https://support.kobotoolbox.org/en/articles/2647526-adding-another-language-to-your-form-in-the-project-dashboard) or you can add them in an XLS Form and upload it to KoBo. 
+There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online [Project Dashboard](language_dashboard.html) or you can add them in an XLS Form and upload it to KoBo. 
 
 Here are detailed instructions on how you can add another language to your form:
 
@@ -8,7 +8,7 @@ Here are detailed instructions on how you can add another language to your form:
 
 2. Export the form to XLS.
 
-3. Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all work) (If you're in Excel it's possible you have to take the file out of Protected View first. See [here](https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&ui=en-US&rs=en-US&ad=US).) Your spreadsheet will have three sheets (see the little tabs at the bottom): survey, choices, settings. Stay in the survey sheet for now.
+3. Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all work) (If you're in Excel it's possible you have to take the file out of Protected View first. [See here](https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&ui=en-US&rs=en-US&ad=US).) Your spreadsheet will have three sheets (see the little tabs at the bottom): survey, choices, settings. Stay in the survey sheet for now.
 
 4. Find the column called 'label'. This is where your original question labels are stored. Insert another column to the right of label. In the header (first row) of this new column, write `label::language`, for example `label::Français`  or  `label::English`. Note: you can change the size of your columns, add colors or change the font size, none of these will affect your form.
 
@@ -42,7 +42,7 @@ Here are detailed instructions on how you can add another language to your form:
 
 When translating to non-Latin scripts, such as Tamil, Nepali, Hindi, etc, please make sure you do not use a so-called pseudo font. When writing in these languages make sure you only use the proper Unicode characters. To write proper Unicode characters you don't have to install any particular fonts. Instead, you (or your translator) need to set your keyboard to use the respective script (Tamil, Nepali, etc.) and then write normally. The correct keyboard setting will produce the actual script letters in Unicode instead of some Latin phonetic equivalents. (This would also be the same way as writing these languages into an email, KoBoToolbox, or any other Web application.
 
-For help with adding the correct system keyboard, check [this link](https://support.microsoft.com/en-us/help/17424/windows-change-keyboard-layout) (Windows only).
+For help with adding the correct system keyboard, [check this link](https://support.microsoft.com/en-us/help/17424/windows-change-keyboard-layout) (Windows only).
 
 Pseudo fonts allow writing in these scripts and are commonly used in many countries, particularly in South Asia. But while they work on the computer that has a specific font installed, they will not work on any other computer that doesn't use that particular font. That is because these fonts just disguise regular Latin characters and symbols and make them appear in a different shape. For example, when writing "Hello" with the Nepali pseudo font 'Preeti', it will look like this: हेल्लो. But what is really written there remains the letters H e l l o. For some people using these fonts which often use phonetic equivalents to English, may be easier. Another reason they are being used widely is that many computers used to not have support for these scripts and thus needed pseudo fonts as a "hack". Either way, Unicode characters are the best way to go - and the only way for use in KoBoToolbox.
 
