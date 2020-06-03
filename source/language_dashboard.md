@@ -14,7 +14,7 @@ Here are detailed instructions on how you can add and manage another language in
     
 4. Before adding additional languages, first set your default language by clicking on the pencil icon and filling in the 'Language name' and 'Language code (language + subtag)' fields.
 
-    **Tip**: If you're unsure of what your language code is, you can search through the entire list of language codes at [here](www.iana.org). If you cannot find your language, its possible it has been labeled as something else and is worth searching online for alternative names.
+    **Tip**: If you're unsure of what your language code is, you can search through the entire list of language codes [at here](www.iana.org). If you cannot find your language, its possible it has been labeled as something else and is worth searching online for alternative names.
 
     Examples: English (en), German (de), Arabic (ar), etc. 
     
