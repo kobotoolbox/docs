@@ -2,7 +2,7 @@
 
 For seamless data analysis, you can leverage the KoBo API to pull your data into other tools for data analysis. This article covers how to connect to the API to pull your data into Excel Power Query. 
 
-**KoBo API  
+**KoBo API**  
 
 1. Login to your account.  
 
@@ -37,7 +37,7 @@ For seamless data analysis, you can leverage the KoBo API to pull your data into
 
     ![image](/images/pulling_data_excelquery/excel.jpg)
 
-**Updating Data in Microsoft Excel
+**Updating Data in Microsoft Excel**
 
 Once you have synced your KoBoToolbox with your Microsoft Excel through Excel Power Query, you should be able to have the dataset in Microsoft Excel. However, when the KoBoToolbox server is updated (i.e. through new submissions, deletion, amendments) your Microsoft Excel dataset does not get updated automatically. You could do this by refreshing the Excel document. For this you will need to click the **Data** and then select **Refresh All**. Any changes made in the KoBoToolbox server will now be manually updated in your Excel dataset. (Please follow this whenever you require an update with your Microsoft Excel dataset)
 
