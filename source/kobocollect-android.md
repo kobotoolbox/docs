@@ -6,7 +6,7 @@ To get help troubleshooting common issues, please refer to [this article](troubl
 
 To learn how to get started with KoBoCollect, follow the steps and tips below:
 
-#### **1. Setup server URL on KoBoCollect**
+**1. Setup server URL on KoBoCollect**
 
 After installing KoBoCollect, you need to configure it so that it can be used together with your KoBoToolbox account for data collection.
 
@@ -24,7 +24,7 @@ After installing KoBoCollect, you need to configure it so that it can be used to
 
 _Note: Sometimes devices will have trouble connecting to the server if the device date and time is not correct._
 
-#### **2. Download blank forms from your account**
+**2. Download blank forms from your account**
 
 To download forms from your account and start data collection, follow these steps:
 
@@ -36,7 +36,7 @@ To download forms from your account and start data collection, follow these step
 
     ![image](/images/kobocollect_android/blank_form.jpg)
 
-#### **3. Collect data through filling blank forms**
+**3. Collect data through filling blank forms**
 
 At this point, you no longer need an internet connection. The blank forms and the following submissions will stay on your device until you regain internet connection and send the data submissions to the server. 
 
@@ -50,7 +50,7 @@ At this point, you no longer need an internet connection. The blank forms and th
 
     ![image](/images/kobocollect_android/save_exit.jpg)
 
-#### **4. Uploading finalized data to the server**
+**4. Uploading finalized data to the server**
 
 After you have completed forms, follow these steps to upload the collected data to your KoBoToolbox account and server. 
 
@@ -64,7 +64,7 @@ After you have completed forms, follow these steps to upload the collected data 
 
 **Additional Tips:**
 
-#### **Editing data in KoBoCollect**
+**Editing data in KoBoCollect**
 
 Once you have completed filling out forms, its possible to edit and make corrections to the submitted data in KoBoCollect before sending them to the server. 
 
@@ -76,11 +76,11 @@ Once you have completed filling out forms, its possible to edit and make correct
 
 4. Repeat the process if you wish to make corrections to multiple Saved Forms. 
 
-#### **Deleting Forms in KoBoCollect**
+**Deleting Forms in KoBoCollect**
 
 Once you have completed all of your data collection for a specific project and have submitted all the saved forms to your KoBoToolbox server, it's recommend to delete the Blank Forms and Saved Forms from KoBoCollect so that enumerators will not get mixed up when collecting data for other projects. To do this, select **Delete Saved Form** from the home screen. 
 
-#### **Resetting View Sent Forms in KoBoCollect**
+**Resetting View Sent Forms in KoBoCollect**
 
 When you've submit completed forms from KoBoCollect to the KoBoToolbox server by clicking **Send Finalized Form**, you should be able to confirm that your submitted forms have reached the server by seeing them in the **View Sent Form** page. It can be nice to have them there until the end of data collection for a specific project, as it gives you the reference of how many data submissions have been sent to the server form that particular device. However, once the data collection for the project is over, it is recommended to reset **View Sent Form** from KoBoCollect as it may create confusion with the total number of completed submissions sent to the server in future projects. 
 
@@ -92,7 +92,7 @@ To reset **View Sent Form** from KoBoCollect follow these steps:
 
 3. Check the box for **Saved forms (instances folder,instances database)** and then press **RESET**. When you see **Saved forms::Success**, then press OK.
 
-#### **Hiding buttons and options within KoBoCollect**
+**Hiding buttons and options within KoBoCollect**
 
 It’s sometimes necessary to hide buttons within KoBoCollect to limit the activity and capabilities of enumerators in the app. You're able to hide many of the buttons available in KoBoCollect through the Admin Settings.
 
