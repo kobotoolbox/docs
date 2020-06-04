@@ -1,6 +1,6 @@
 # Exporting and uploading your data to GIS software
 
-#### Simple step-by-step process to export and upload your data as a shapefile into GIS software, such as ArcMap.
+**Simple step-by-step process to export and upload your data as a shapefile into GIS software, such as ArcMap.**
 
 There are multiple ways to import location-based data collected through KoBoToolbox into GIS software. This article will outline a recommended procedure to download data from KoBoToolbox as a CSV file and upload it into ArcMap as a shapefile. While this example uses ArcMap, the process is similar to those in other geospatial softwares, including QGIS (free). 
 
