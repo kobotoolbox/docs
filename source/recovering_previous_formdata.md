@@ -1,6 +1,6 @@
 # Recovering data from previous form versions
 
-**This article shows steps on how to recover data from previous versions of the form in case of question deletions
+**This article shows steps on how to recover data from previous versions of the form in case of question deletions**
 
 Normally when you change a form, the data will be downloaded based on the definition of that new form. As it is if you changed the name of a question or deleted a question, all the data previously collected on that question will not be visible under the new question unless you chose to include data collected from previous versions as explained below. 
 
