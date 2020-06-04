@@ -40,33 +40,33 @@ The interviewer will see various options depending on the GPS question type
 
 **1. Single GPS point coordinate** 
 
-* _The enumerator will see this screen which they can tap on the Start GeoPoint._
+* The enumerator will see this screen which they can tap on the Start GeoPoint.
 
     ![image](/images/collect_gps/geopoint.jpg)
 
-* _If enumerators taps the Start Geopoint they will see the location loading and the accuracy achieved. If the question had not been set to pick a specific accuracy level, it will wait for the enumerator to save the GeoPoint as illustrated below._
+* If enumerators taps the Start Geopoint they will see the location loading and the accuracy achieved. If the question had not been set to pick a specific accuracy level, it will wait for the enumerator to save the GeoPoint as illustrated below.
 
     ![image](/images/collect_gps/autopoint.jpg)
 
 **2. GPS Line**
 
-* _The enumerators will see the following option for the line question._
+* The enumerators will see the following option for the line question.
 
     ![image](/images/collect_gps/line.jpg)
 
-* _If they tap the Start GeoTrace button they will see an option to either collect the trace manually or automatically as shown below._
+* If they tap the Start GeoTrace button they will see an option to either collect the trace manually or automatically as shown below.
 
     ![image](/images/collect_gps/trace_mode.jpg)
 
-* _If the enumerators select manual mode for collecting data then they will be able to select the points manually by pressing the points on the map. The enumerator will have to select at least two coordinates to make a line trace._
+* If the enumerators select manual mode for collecting data then they will be able to select the points manually by pressing the points on the map. The enumerator will have to select at least two coordinates to make a line trace.
 
-* _If the enumerators select the automatic mode, then they will see an option for how long the system should take before collecting different points as shown in the figure below._
+* If the enumerators select the automatic mode, then they will see an option for how long the system should take before collecting different points as shown in the figure below.
 
     ![image](/images/collect_gps/automodes.jpg)
 
 **3. GPS Area**
 
-_The GPS area allows you to manually collect GPS area based on manual mode by pressing the map to select the points that create the polygon; the enumerators would need to collect at least three points to create a polygon._
+The GPS area allows you to manually collect GPS area based on manual mode by pressing the map to select the points that create the polygon; the enumerators would need to collect at least three points to create a polygon.
 
 **Accuracy of the Collected GPS Coordinates**
 
