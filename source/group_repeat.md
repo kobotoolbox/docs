@@ -33,7 +33,7 @@
 
     ![image](/images/group_repeat/remove.png)
     
-#### Creating a Group of Repeating Questions
+**Creating a Group of Repeating Questions
 
 Repeating groups of questions can be answered multiple times. For example, in a household survey you might want to ask the name, age, gender, and education status of every household member, but you don't know in advance how many members there will be.
 
