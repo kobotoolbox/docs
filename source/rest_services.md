@@ -1,6 +1,6 @@
 # REST Services
 
-**How to link your data to other servers or services using REST Serivces
+**How to link your data to other servers or services using REST Serivces**
 
 KoBoToolbox has a number of advanced features built in based on our open source libraries, which include useful add-ons for advanced use cases. 
 
