@@ -4,4 +4,4 @@ After you create your account you will need to click on the link that's sent to 
 
 It's possible you didn't receive the email because you had a typo in your email address. Also, it's recommended to check if the activation email landed in your spam or junk mail folder, as it might have been placed there by your email provider.
 
-If neither of those work and you're still not seeing an activation link email, please email support@kobotoolbox.org
+If neither of those work and you're still not seeing an activation link email, please email [support@kobotoolbox.org](support@kobotoolbox.org).
