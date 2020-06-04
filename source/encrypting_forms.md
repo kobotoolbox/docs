@@ -4,11 +4,11 @@ _This procedure is quite technical and is intended for users who are comfortable
 
 Encrypted forms work by encrypting the data on the phone the moment it is saved. Data sent to KoBoToolbox is encrypted and completely inaccessible to anyone not possessing the private key. In this case, KoBoToolbox serves simply as a storage locker for your encrypted files - a place to upload and then download for later for local decryption ([using ODK Briefcase](http://blog.formhub.org/2013/06/27/formhub-supports-odk-briefcase/)). Since the form submissions are encrypted, it means, however, anything that requires access to the data like the map view or data export won't work within KoBoToolbox. The extra level of security makes using KoBoToolbox in a way to collect sensitive data while meeting certain data protection protocols possible.
 
-#### How it Works
+**How it Works** 
 
 KoBoCollect supports the ability to encrypt the content of a form the moment it is marked as completed and ready for submission on the phone. To take advantage of this requires the use of a public encryption key which you include in the XLSForm and a private key (which you never share) that is used by ODK Briefcase to decrypt the data locally after you've downloaded it from KoBoToolbox. The public key is used to encrypt data while the private key decrypts it. Only a person who has the private key, can decrypt the data encrypted with the public key. To understand more about public and private key infrastructure [see here](https://en.wikipedia.org/wiki/Public-key_cryptography).
 
-#### How to encrypt XLS forms
+**How to encrypt XLS forms**
 
 1. Create your form in KoBoToolbox as always. Download the form from the drafts list as an XLS file.
 
@@ -24,7 +24,7 @@ KoBoCollect supports the ability to encrypt the content of a form the moment it 
     
 5. Upload the XLS file back to KoBoToolbox. You can either import it back to the Form Drafts list and then deploy it as a new survey project, or import it directly to your deployed Projects list. Once deployed you should see a label with the text "encrypted" next to your form name.
 
-#### How to decrypt forms
+**How to decrypt forms**
 
 ODK Briefcase is used to download the encrypted files from KoBoToolbox and decrypt them locally on your computer using a private key ensuring single access to the data. For decryption to be successful with ODK Briefcase make sure you download and install the _Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 6_ from the [Java download site](https://www.oracle.com/java/technologies/javase-downloads.html). This is required for decryption to be successful.
 
@@ -66,7 +66,7 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 
 9. Data is exported as a CSV file, you can now view the unencrypted data.
 
-#### Generating RSA Encryption Keys
+**Generating RSA Encryption Keys**
 
 To generate the RSA public-private key pairs you can use the OpenSSL software package, which is pre-installed on OSX and Linux. On Windows you have to download and install the OpenSSL software package from [this site](http://slproweb.com/products/Win32OpenSSL.html). (_Note: install the Win64 OpenSSL v1.1.1c in **C**: rather than the default location **C:\Program Files**_)
 
@@ -76,13 +76,16 @@ _Note: We strongly recommend using OpenSSL as documented below for creating your
 
 1. Open a Windows 'cmd' window.
 
-2. Type the following command: cd C:\OpenSSL-Win32\bin to change to the /bin directory in the OpenSSL directory.   
+2. Type the following command: `cd C:\OpenSSL-Win32\bi`n to change to the /bin directory in the OpenSSL directory.   
+
     ![image](/images/encrypting_forms/openssl_1.png)
 
 3. Create a 2048-bit private key and write it to the **MyPrivateKey.pem** file by typing the following command, then press **Enter**: `openssl genpkey -out MyPrivateKey.pem -outform PEM -algorithm RSA -pkeyopt rsa_keygen_bits:2048`  
+
     ![image](/images/encrypting_forms/openssl_2.png)
 
 4. Then, extract the public key for the above private key. Type the following command then press **Enter**: `openssl rsa -in MyPrivateKey.pem -inform PEM -out MyPublicKey.pem -outform PEM -pubout`  
+
     ![image](/images/encrypting_forms/openssl_3.png)
 
 5. You have now generated two files that is:
@@ -91,7 +94,11 @@ _Note: We strongly recommend using OpenSSL as documented below for creating your
 
 6. Open the **MyPublicKey.pem** with Notepad or another text edit, your public key is the uninterrupted very long string of characters, 
 
-  `e.g.:Tjhfur1K9+BRQ2USezIPbtyahbfuNqviI5Suhm8maA3JoELRHj9psjf/oNWoG87aFtKNbLrRaCEDPoFMDC9NEzWlv5L49BygeieMu/wg/rtMT0M0kgDbKxw5weJJgyb9P41aMsrqAAAAB3NzaC1yc2EAAAADAQABAAABAQDfNoFX7bh3bfdW6lGfDht1Ea8PUBLKYjugbHN5jS7j5fHV6dexM+kzvITVgoyjhhKPXeCbaT62vD/saTqJFXJzlysnZ24fqxNkjreO5K5EQ9c3ggwqML06+AKrFUSP5jpnyJJH8btNwKl6D5pG4ZseHwDUKzZtaextPTNQz67kdYIKdtCkCsQHVsy4xvy/A0jzfK3xyOkG6j+L`  
+  `e.g.:Tjhfur1K9+BRQ2USezIPbtyahbfuNqviI5Suhm8maA3JoELRHj9psjf/oNWoG87aFtKNbLrRaCEDP
+  oFMDC9NEzWlv5L49BygeieMu/wg/rtMT0M0kgDbKxw5weJJgyb9P41aMsrqAAAAB3NzaC1yc2EAAAADAQAB
+  AAABAQDfNoFX7bh3bfdW6lGfDht1Ea8PUBLKYjugbHN5jS7j5fHV6dexM+kzvITVgoyjhhKPXeCbaT62vD/
+  saTqJFXJzlysnZ24fqxNkjreO5K5EQ9c3ggwqML06+AKrFUSP5jpnyJJH8btNwKl6D5pG4ZseHwDUKzZtae
+  xtPTNQz67kdYIKdtCkCsQHVsy4xvy/A0jzfK3xyOkG6j+L`  
 
   This string is what you will need to paste under the public_key field in your settings sheet on your XLS file. 
 
