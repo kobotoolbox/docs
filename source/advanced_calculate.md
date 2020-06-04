@@ -1,6 +1,6 @@
 # Advanced Use of Calculate Questions
 
-#### Advanced Use of Calculate Questions
+**Advanced Use of Calculate Questions
 
 Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a **Calculation**, and writing the mathematical expression into the question label field. 
 
@@ -8,15 +8,15 @@ This article provides step-by-step instructions on how to add calculations while
 
 To view a complete and detailed list of all functions please visit ODK's excellent [XPath Functions documentation](https://getodk.github.io/xforms-spec).  
 
-#### Approaches towards adding calculate questions:
+**Approaches towards adding calculate questions:
 
 **Using the form builder**
 
-_**Step 1: Add a calculate question**_
+Step 1: Add a calculate question
 
 ![image](/images/advanced_calculate/calculate_question.jpg)
 
-_**Step 2: Type your calculation formulae where you would typically write your question.**_
+Step 2: Type your calculation formulae where you would typically write your question.
 
 ![image](/images/advanced_calculate/formulas.jpg)
 
@@ -42,7 +42,7 @@ XLS forms allow for use of calculate function on different types of question typ
     
     ![image](/images/advanced_calculate/xls.png)
 
-#### Rules when working with calculate questions:
+**Rules when working with calculate questions:
 
 **These rules apply to both the form builder and XLSform**
 
@@ -52,7 +52,7 @@ XLS forms allow for use of calculate function on different types of question typ
 4. When referencing a question in a calculation you need to indicate it as `${Question}` where question is the name of the question  
 5. You can "force" a calculation to evaluate by setting 'required' to TRUE  
 
-#### List of tested calculate functions
+**List of tested calculate functions
 
 _(Please feel free to recommend additional ones and we will update)_
 
@@ -62,7 +62,7 @@ _(Please feel free to recommend additional ones and we will update)_
 
 ![image](/images/advanced_calculate/if_command.png)
 
-#### Work-arounds for calculations 
+**Work-arounds for calculations 
 
 _Recommended for advanced users_
 
@@ -75,6 +75,7 @@ In this case you may want to create a dummy QN1 right after QN1 to account for t
 Notice in my test form I managed to create the situation and the data appears as coded for Q1N and as calculated for mathematical meaning for Q1Nd. This should be meaning that is meant by your score. _You can do this for calculations such as wealth where Yes and No could mean a different value in different countries._
 
 Once you do this for all your questions you can add a calculate question that sums up all the dummies as:  
+
 `${QN1d}+${QN2d}+ etc`
     
 
