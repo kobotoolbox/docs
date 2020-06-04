@@ -7,7 +7,9 @@ There are times you may want to generate a unique serial number for each and eve
 This method works best with Enketo web forms. It uses a calculation function to create a unique serial number based on the date and time to the first millisecond. Although this method may not meet all your needs, it should give you an illustration of how much you can stretch calculate functions to achieve your needs. 
 
 1. Create a calculate question type in either the formbuilder or XLSForm and use the formula below. *Please note the same formula can work as an integer question when working in an XLSForm.*
-    `concat(substr(today(),0,4),substr(today(),7,5),substr(today(),10,8),substr(now(),13,11),substr(now(),16,14),substr(now(),19,17))`
+
+    `concat(substr(today(),0,4),substr(today(),7,5),substr(today(),10,8),
+    `substr(now(),13,11),substr(now(),16,14),substr(now(),19,17))`
          
     Example:
 
