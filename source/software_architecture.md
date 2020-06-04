@@ -13,6 +13,6 @@ High-level server-side overview
 
 ![image](/images/software_architecture/overview.png)
 
-The best way to use KoBoToolbox is on one of the two public instances - http://kobo.humanitarianresponse.info (if you work for a humanitarian organization) and http://kf.kobotoolbox.org (non-humanitarians). There is no software to be installed on your computer. Installing KoBoToolbox on your own computer is not necessary and is only recommended if you work in an environment with absolutely no Internet access.
+The best way to use KoBoToolbox is on one of the two public instances - [http://kobo.humanitarianresponse.info](http://kobo.humanitarianresponse.info) (if you work for a humanitarian organization) and [http://kf.kobotoolbox.org](http://kf.kobotoolbox.org) (non-humanitarians). There is no software to be installed on your computer. Installing KoBoToolbox on your own computer is not necessary and is only recommended if you work in an environment with absolutely no Internet access.
 
-For installing KoBoToolbox on a local computer or server, visit https://github.com/kobotoolbox/kobo-install.
+For installing KoBoToolbox on a local computer or server, visit [https://github.com/kobotoolbox/kobo-install](https://github.com/kobotoolbox/kobo-install).
