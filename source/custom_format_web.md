@@ -8,8 +8,8 @@ To format your note text use one of these options:
 
 * _emphasize words_ by wrapping them inside `_these_` or `*these characters*`
 * **strongly emphasize** words by wrapping them inside `__these characters__` or `**these**`
-* a link can be added by using `[a link](https://www.kobotoolbox.org)`
-* This formatting will not work in KoBoCollect, which will just show the _ or * characters along with the text.
+* [a link](https://www.kobotoolbox.org) can be added by using `[a link](https://www.kobotoolbox.org)`
+* This formatting will not work in KoBoCollect, which will just show the `_` or `*` characters along with the text.
 
 **Combining text and media by 'combining' subsequent notes**
 
