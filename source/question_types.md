@@ -4,7 +4,7 @@ The below table provides a high-level summary of each of the response types avai
 
 ![image](/images/question_types/question_types.png)  
 
-For more information on the response types, please visit [xlsform.org](xlsform.org).
+For more information on the response types, please visit [xlsform.org](http://xlsform.org/).
 
 _Note:_ 
 * _Calculate questions are not displayed in your form, but are executed automatically as your form is being answered._
