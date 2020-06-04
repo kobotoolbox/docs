@@ -16,11 +16,11 @@ To archive a project you need to take the following steps:
 
 * Tap on the settings page and scroll down to find the archive button
 
-    ![image](/images/creating_custom_reports/archive_button.jpg)
+    ![image](/images/archiving_projects/archive_button.jpg)
 
 * You will received a warning that you are about to archive the project. You should accept this by choosing archive
 
-    ![image](/images/creating_custom_reports/archive_popup.jpg)
+    ![image](/images/archiving_projects/archive_popup.jpg)
 
 * If you go back to the list of your projects you will find the project within the archived list
 
@@ -28,6 +28,6 @@ To archive a project you need to take the following steps:
 
 * You will follow the same process by selecting the project, tapping its setting buttons, selecting the unarchiving button
 
-    ![image](/images/creating_custom_reports/unarchive_popup.jpg)
+    ![image](/images/archiving_projects/unarchive_popup.jpg)
 
 * You will ge a similar warning that message which you have to confirm by selecting unarchive
