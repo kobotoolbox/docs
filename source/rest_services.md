@@ -1,6 +1,6 @@
 # REST Services
 
-#### How to link your data to other servers or services using REST Serivces
+**How to link your data to other servers or services using REST Serivces
 
 KoBoToolbox has a number of advanced features built in based on our open source libraries, which include useful add-ons for advanced use cases. 
 
@@ -20,7 +20,7 @@ Here are some tutorial videos for using REST Services:
 
     [![Subset of fields](/images/rest_services/thumbnail_2.jpg)](https://fast.wistia.net/embed/iframe/u6su0atm2w "Subset of fields")
 
-3. Failure / Retry
+3. Failure/Retry
 
     [![Failure / Retry](/images/rest_services/thumbnail_3.jpg)](https://fast.wistia.net/embed/iframe/7my5eab5lm "Failure / Retry")
 
