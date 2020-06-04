@@ -4,7 +4,7 @@ This feature allows you to avoid accidental or invalid answers, especially in nu
 
 For example, if you want to restrict a question about age to numbers between 0 and 130.
 
-#### **How to add validation criteria**
+**How to add validation criteria**
 
 **Form Builder User Interface**
 
