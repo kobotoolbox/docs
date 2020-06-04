@@ -4,7 +4,7 @@ The Question Options screen contains some very useful features to get the most o
 
 ![image](/images/question_options/options.png)
 
-#### **Name**
+**Name**
 
 The **Name** is the unique identifier (ID) of your question.
 
@@ -14,25 +14,25 @@ The name (ID) is important because it is used in the column headers of tables an
 
 Note that the automatic naming of questions is based on Latin characters only. If your question labels don't use any Latin characters, your automatic names would be just underscores and numbers.
 
-#### **Hint (optional)**
+**Hint (optional)**
 
 **Hints** are help texts that will be displayed underneath your questions on the form.
 
 Hints are optional. The hint text is often used to provide additional instructions to your interviewer staff. For example, your question label might be `How old are you?` and your hint might be `If respondent doesn't know, enter 999`.
 
-#### **Required**
+**Required**
 
 If a question is **required**, the interviewer needs to provide an answer in order to finalize the form.
 
 'Read a Note' questions can't be made required because the interviewer can't actually give a response to it (notes only consist of a label - see Response Options.
 
-#### **Default (optional)**
+**Default (optional)**
 
 This allows specifying a default response that the interviewer can accept or change.
 
 In most studies this would not be recommended as it might create an accidental bias, but it may be useful for date or time questions where the responses tend to be around a certain known point. For date questions, the default response needs to be written in the format `YYYY-MM-DD` e.g. `1974-12-31`). For Select One or Select Many questions the response needs to be written using the unique Value - not the label (e.g. `first_grade` rather than `First grade`).
 
-#### **Appearance (optional)**
+**Appearance (optional)**
 
 This advanced setting allows displaying the question in a modified way. Certain appearance options will only be available depending on the [Question Type](question_types.html). 
 
