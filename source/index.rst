@@ -37,23 +37,6 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   software_architecture
   kobo_local_computer
   kobo_your_servers
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 2
-  :caption: Collecting Data
-
-  data-collection-tools
-  recording-interviews
-  data_through_webforms
-  data-offline
-  kobocollect-android
-  devices_for_data_collection
-  hipaa_compliance
-  troubleshooting_kobocollect
-  troubleshooting_webforms
-  manual_upload
-  collect_gps
 
 .. toctree::
   :hidden:
@@ -95,6 +78,23 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   alternative_enketo
   group_repeat
   collecting_signatures
+
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: Collecting Data
+
+  data-collection-tools
+  recording-interviews
+  data_through_webforms
+  data-offline
+  kobocollect-android
+  devices_for_data_collection
+  hipaa_compliance
+  troubleshooting_kobocollect
+  troubleshooting_webforms
+  manual_upload
+  collect_gps
   
 .. toctree::
   :hidden:
