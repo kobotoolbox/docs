@@ -16,7 +16,7 @@ You can **create a new project** in four different ways. When you click on the N
     
 4. **Import an XLSForm via URL**
 
-    Enter a valid XLSForm URL to import an existing form. 
+    Enter a valid XLSForm URL to import an existing form. For instructions, visit [Importing an XLSForm via URL](xls_url.html)
    
 ![image](/images/new_project/create_new.gif)
     
