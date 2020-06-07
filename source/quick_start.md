@@ -2,41 +2,39 @@
 
 Here's how to quickly get started with a **new form**, deploy it as a **survey project**, and **start collecting data** in the field.
 
-#### Sign up and the first login
+**Sign up and the first login**
 
-Visit https://kf.kobotoolbox.org to create a new account. If you work for a humanitarian organization, please sign up at https://kobo.humanitarianresponse.info instead. After activating your account through the emailed link, you can log in to access your account.
+Visit [https://kf.kobotoolbox.org](https://kf.kobotoolbox.org) to create a new account. If you work for a humanitarian organization, please sign up at [https://kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info) instead. After activating your account through the emailed link, you can log in to access your account.
 
-#### Create your first form
+**Create your first form**
 
-1. Create your first form by clicking on New, then choose New Form.
+1. Create your first form by clicking on New, then choose a source for your project and input project details.
 
-    ![image](/images/quick_start/new_form.png)
+    ![image](/images/quick_start/new_form.gif)
     
-2. Click on the + button to add your first question.
+2. Click on the + button to add your first question and choose a [response type](question_types.html).
 
-    ![image](/images/quick_start/add_question.png)
+    ![image](/images/quick_start/add_question.gif)
     
-3. After typing in the question label, click Add Question and choose a [response type](question_types.html).
+3. You can also delete, duplicate, and/or add questions to your library.
 
-    ![image](/images/quick_start/response_type.png)
-    
-4. You can give your form a name by changing the default 'New form' text on top.
+    ![image](/images/quick_start/setting.gif)
 
-5. To add skip logic to a question, click on a questions settings and go to the Skip Logic section.
+4. To add more details to a question, click on a question's Settings. For example, you can add skip logic to a question.
 
-    ![image](/images/quick_start/skip_logic.png)
+    ![image](/images/quick_start/skip_logic.gif)
     
     (See [here](formbuilder.html) for an overview of all formbuilder functions.)
     
-6. Click Preview Form to quickly view your questions and test skip logic.  
+5. Click Preview Form to quickly view your questions and test skip logic.  
 
-7. To save the form click the Create/Save button, then 'X' to close the form.  
+    ![image](/images/quick_start/skip_logic.gif)
 
-    ![image](/images/quick_start/save.png)
+6. To save the form click the Save button, then 'X' to close the form.
 
-8. To start collecting data you need to first [deploy your draft form as a new data collection project](deploy_form_new_project.html). 
+7. To start collecting data you need to first [deploy your draft form as a new data collection project](deploy_form_new_project.html). 
 
-    ![image](/images/quick_start/deploy.png)
+    ![image](/images/quick_start/save.gif)
     
-9. You're ready to collect data! You can enter data [in the browser](data_through_webforms.html) on any device (computer, iPhone, Android) or use our Android application [KoBoCollect](kobocollect-android.html). 
+8. You're ready to collect data! You can enter data [in the browser](data_through_webforms.html) on any device (computer, iPhone, Android) or use our Android application [KoBoCollect](kobocollect-android.html). 
 
