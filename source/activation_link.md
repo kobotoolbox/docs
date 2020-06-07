@@ -1,4 +1,4 @@
-# FAQ: Didn't receive my activation link after signing up
+# FAQ: Didn't Receive My Activation Link After Signing Up
 
 After you create your account you will need to click on the link that's sent to the email address you provided **within 72 hours** of creating the account. If you don't click on the link within three days, you'll have to sign up again for a new account with a different username.
 
