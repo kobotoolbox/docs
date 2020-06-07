@@ -1,6 +1,6 @@
 # Which Server Should I Use?
 
-KoBoToolbox is free and open source software that can be installed on any computer or server. The vast majority of users use one of two options: The Humanitarian Server hosted by UN Office for the Coordination of Humanitarian Affairs (OCHA) ([https://kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info)) or the Non-Humanitarian Server hosted by KoBoToolbox ([https://kf.kobotoolbox.org](https://kf.kobotoolbox.org)). The use of KoBoToolbox on either server is free to everyone, but there are certain differences and limitations you should know:
+KoBoToolbox is free and open source software that can be installed on any computer or server. The vast majority of users use one of the two options: The Humanitarian Server hosted by UN Office for the Coordination of Humanitarian Affairs (OCHA) ([https://kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info)) or the Non-Humanitarian Server hosted by KoBoToolbox ([https://kf.kobotoolbox.org](https://kf.kobotoolbox.org)). The use of KoBoToolbox on either server is free to everyone, but there are certain differences and limitations you should know:
 
    ![image](/images/server/server.png)
 
