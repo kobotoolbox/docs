@@ -28,7 +28,16 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   reset_password
   gdpr
   training_arabic
-
+  
+.. toctree::
+  :hidden:
+  :maxdepth: 2
+  :caption: KoBoToolbox on Your Computer or Server
+  
+  software_architecture
+  kobo_local_computer
+  kobo_your_servers
+  
 .. toctree::
   :hidden:
   :maxdepth: 2
@@ -86,15 +95,6 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   alternative_enketo
   group_repeat
   collecting_signatures
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 2
-  :caption: KoBoToolbox on Your Computer or Server
-  
-  software_architecture
-  kobo_local_computer
-  kobo_your_servers
   
 .. toctree::
   :hidden:
