@@ -1,4 +1,4 @@
-# Resetting passwords
+# Resetting Passwords
 
 KoBoToolbox sends out password reminder emails immediately after you request to reset it. If you have requested to reset your password and you didn't receive an email with the password reminder link, please try the following:
 
