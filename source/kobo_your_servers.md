@@ -1,6 +1,6 @@
 # Install KoBoToolbox on Your Own Servers
 
-**Warning: Installing KoBoToolbox on your own server requires advanced server administration and programming skills. Please understand that you shouldn't use this in a critical environment without having the technical resources in place to troubleshoot if needed. Consider installing KoBo on your local computer instead with [these instructions](kobo_local_computer.html).**
+**Warning:** _Installing KoBoToolbox on your own server requires advanced server administration and programming skills. Please understand that you shouldn't use this in a critical environment without having the technical resources in place to troubleshoot if needed. Consider installing KoBo on your local computer instead with [these instructions](kobo_local_computer.html)._
 
 All of the components of KoBoToolbox can be installed on your own servers. KoBoToolbox is free and open source, and our code can be found on [GitHub](https://github.com/kobotoolbox).
  
