@@ -43,6 +43,8 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :maxdepth: 2
   :caption: Creating Forms
 
+  new_project
+  xls_url
   question_options
   validation_criteria
   user_specified_other
@@ -56,7 +58,6 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   custom_format_web
   responses_inside_question
   form_meta
-  new_project
   encrypting_forms
   number_text_responses
   cascading_select
@@ -68,7 +69,6 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   language_dashboard
   hxl
   formbuilder
-  xls_url
   media
   deploy_form_new_project
   skip_logic
