@@ -7,4 +7,4 @@ KoBoToolbox sends out password reminder emails immediately after you request to 
    
 It is possible you are trying to access the account on the wrong server (there are two separate instances of KoBoToolbox for humanitarians and other users - kobo.humanitarianresponse.info and kf.kobotoolbox.org).
 
-If you still have not received the email with the reset link please send an email to [support@kobotoolbox.org](support@kobotoolbox.org) with your username, the email address you used to sign up, and which server you created your account on ([kf.kobotoolbox.org](kf.kobotoolbox.org) or [kobo.humanitarianresponse.info](kobo.humanitarianresponse.info)).
+If you still have not received the email with the reset link please send an email to [support@kobotoolbox.org](support@kobotoolbox.org) with your username, the email address you used to sign up, and which server you created your account on ([kf.kobotoolbox.org](https://kf.kobotoolbox.org/) or [kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info)).
