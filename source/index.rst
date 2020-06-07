@@ -22,12 +22,12 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :caption: Getting Started
   
   welcome
-  training_arabic
-  gdpr
   quick_start
-  reset_password
-  activation_link
   server
+  activation_link
+  reset_password
+  gdpr
+  training_arabic
 
 .. toctree::
   :hidden:
