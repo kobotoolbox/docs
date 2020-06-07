@@ -21,9 +21,9 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :maxdepth: 2
   :caption: Getting Started
   
+  welcome
   training_arabic
   gdpr
-  welcome
   quick_start
   reset_password
   activation_link
