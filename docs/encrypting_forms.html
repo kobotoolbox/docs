@@ -1,20 +1,23 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Encrypting Forms &#8212; KoBoToolbox 1 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="prev" title="How to Create a New Project" href="new_project.html" />
+    <link rel="next" title="Limits on number and text responses" href="number_text_responses.html" />
+    <link rel="prev" title="Form Settings and Meta Questions" href="form_meta.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -35,100 +38,83 @@
 <h1>Encrypting Forms<a class="headerlink" href="#encrypting-forms" title="Permalink to this headline">¶</a></h1>
 <p><em>This procedure is quite technical and is intended for users who are comfortable with advanced technical instructions and requires strict attention to detail.</em></p>
 <p>Encrypted forms work by encrypting the data on the phone the moment it is saved. Data sent to KoBoToolbox is encrypted and completely inaccessible to anyone not possessing the private key. In this case, KoBoToolbox serves simply as a storage locker for your encrypted files - a place to upload and then download for later for local decryption (<a class="reference external" href="http://blog.formhub.org/2013/06/27/formhub-supports-odk-briefcase/">using ODK Briefcase</a>). Since the form submissions are encrypted, it means, however, anything that requires access to the data like the map view or data export won’t work within KoBoToolbox. The extra level of security makes using KoBoToolbox in a way to collect sensitive data while meeting certain data protection protocols possible.</p>
-<div class="section" id="how-it-works">
-<h2>How it Works<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h2>
-<p>KoBoCollect supports the ability to encrypt the content of a form the moment it is marked as completed and ready for submission on the phone. To take advantage of this requires the use of a public encryption key which you include in the XLSForm and a private key (which you never share) that is used by ODK Briefcase to decrypt the data locally after you’ve downloaded it from KoBoToolbox. The public key is used to encrypt data while the private key decrypts it. Only a person who has the private key, can decrypt the data encrypted with the public key. To understand more about public and private key infrastructure see <a class="reference external" href="https://en.wikipedia.org/wiki/Public-key_cryptography">here</a>.</p>
-</div>
-<div class="section" id="how-to-encrypt-xls-forms">
-<h2>How to encrypt XLS forms<a class="headerlink" href="#how-to-encrypt-xls-forms" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Create your form in KoBoToolbox as always. Download the form from the drafts list as an XLS file.</p></li>
-<li><p>In the downloaded file go to the ‘settings’ sheet.</p></li>
-<li><p>Add a column <em>submission_url</em> and type <code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org/yourusername/submission</span></code> or <code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/yourusername/submission</span></code> (depending upon the server you are using). Please note that yourusername is your KoBoToolbox user account.</p></li>
-<li><p>Add another column <em>public_key</em> (i.e. base64RsaPublicKey). Paste your compatible public key.</p></li>
-</ol>
+<p><strong>How it Works</strong></p>
+<p>KoBoCollect supports the ability to encrypt the content of a form the moment it is marked as completed and ready for submission on the phone. To take advantage of this requires the use of a public encryption key which you include in the XLSForm and a private key (which you never share) that is used by ODK Briefcase to decrypt the data locally after you’ve downloaded it from KoBoToolbox. The public key is used to encrypt data while the private key decrypts it. Only a person who has the private key, can decrypt the data encrypted with the public key. To understand more about public and private key infrastructure <a class="reference external" href="https://en.wikipedia.org/wiki/Public-key_cryptography">see here</a>.</p>
+<p><strong>How to encrypt XLS forms</strong></p>
+<ol>
+<li><p class="first">Create your form in KoBoToolbox as always. Download the form from the drafts list as an XLS file.</p>
+</li>
+<li><p class="first">In the downloaded file go to the ‘settings’ sheet.</p>
+</li>
+<li><p class="first">Add a column <em>submission_url</em> and type <code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org/yourusername/submission</span></code> or <code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/yourusername/submission</span></code> (depending upon the server you are using). Please note that yourusername is your KoBoToolbox user account.</p>
+</li>
+<li><p class="first">Add another column <em>public_key</em> (i.e. base64RsaPublicKey). Paste your compatible public key.</p>
 <p>(Please see image below for reference)</p>
 <p><img alt="image" src="_images/column.png" /></p>
-<ol class="simple">
-<li><p>Upload the XLS file back to KoBoToolbox. You can either import it back to the Form Drafts list and then deploy it as a new survey project, or import it directly to your deployed Projects list. Once deployed you should see a label with the text “encrypted” next to your form name.</p></li>
+</li>
+<li><p class="first">Upload the XLS file back to KoBoToolbox. You can either import it back to the Form Drafts list and then deploy it as a new survey project, or import it directly to your deployed Projects list. Once deployed you should see a label with the text “encrypted” next to your form name.</p>
+</li>
 </ol>
-</div>
-<div class="section" id="how-to-decrypt-forms">
-<h2>How to decrypt forms<a class="headerlink" href="#how-to-decrypt-forms" title="Permalink to this headline">¶</a></h2>
-<p>ODK Briefcase is used to download the encrypted files from KoBoToolbox and decrypt them locally on your computer using a private key ensuring single access to the data. For decryption to be successful with ODK Briefcase make sure you download and install the <em>Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 6</em> from the <a class="reference external" href="https://www.oracle.com/java/technologies/javase-downloads.html">Java download site</a>. This is required for decryption to be successful.</p>
+<p><strong>How to decrypt forms</strong></p>
+<p>ODK Briefcase is used to download the encrypted files from KoBoToolbox and decrypt them locally on your computer using a private key ensuring single access to the data. For decryption to be successful with ODK Briefcase make sure you download and install the <em>Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 6</em> from the <a class="reference external" href="https://www.oracle.com/java/technologies/javase-downloads">Java download site</a>. This is required for decryption to be successful.</p>
 <p><strong>To install the JCE:</strong></p>
 <ol class="simple">
-<li><p>Unzip the downloaded zip archive</p></li>
-<li><p>Navigate into the extracted directory tree and copy the local_policy.jar and US_export_policy.jarfiles to the lib\security directory</p></li>
-<li><p>Paste these files inside the installation directory of the Java Runtime Enviornment (JRE) of your computer, replacing earlier versions of these files.</p></li>
-</ol>
-<ul class="simple">
-<li><p>On <strong>Windows</strong>, the JRE is usually installed here: C:\Program Files\Java\jre7\lib\securityOn OSX the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security</p></li>
-<li><p>On <strong>OSX</strong> the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security</p></li>
+<li>Unzip the downloaded zip archive</li>
+<li>Navigate into the extracted directory tree and copy the local_policy.jar and US_export_policy.jarfiles to the lib\security directory</li>
+<li>Paste these files inside the installation directory of the Java Runtime Enviornment (JRE) of your computer, replacing earlier versions of these files.<ul>
+<li>On <strong>Windows</strong>, the JRE is usually installed here: C:\Program Files\Java\jre7\lib\securityOn OSX the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security</li>
+<li>On <strong>OSX</strong> the location is /Library/Internet Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security</li>
 </ul>
+</li>
+</ol>
 <p><strong>To decrypt your forms:</strong></p>
 <ol class="simple">
-<li><p>Download and open <a class="reference external" href="https://docs.getodk.org/briefcase-intro/">ODK Briefcase</a>.</p></li>
-<li><p>Specify a <strong>Storage Location</strong> under the <strong>Settings</strong> tab.</p></li>
-<li><p>Open the <strong>Pull</strong> tab and click <strong>Configure</strong>.</p></li>
-</ol>
-<p>![image]/images/encrypting_forms/configure.png)</p>
-<ol class="simple">
-<li><p>Then enter the following:</p></li>
-</ol>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org/yourusername</span></code> OR <code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/yourusername</span></code>(depending on which server you use)</p></li>
-<li><p>Your username</p></li>
-<li><p>Your password</p></li>
-<li><p>Press <strong>Connect</strong> when done</p></li>
+<li>Download and open <a class="reference external" href="https://docs.getodk.org/briefcase-intro/">ODK Briefcase</a>.</li>
+<li>Specify a <strong>Storage Location</strong> under the <strong>Settings</strong> tab.</li>
+<li>Open the <strong>Pull</strong> tab and click <strong>Configure</strong>.<br /><img alt="image" src="_images/configure.png" /></li>
+<li>Then enter the following:<ul>
+<li><code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org/yourusername</span></code> OR <code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/yourusername</span></code>(depending on which server you use)</li>
+<li>Your username</li>
+<li>Your password</li>
+<li>Press <strong>Connect</strong> when done<br /><img alt="image" src="_images/connect.png" /></li>
 </ul>
-<p><img alt="image" src="_images/connect.png" /></p>
-<ol class="simple">
-<li><p>A list of projects is displayed. Select a project that you wish to pull and press <strong>Pull</strong>. You will receive a message <strong>Success</strong> under the <strong>Pull Status</strong>.</p></li>
-<li><p>Now go to <strong>Export</strong> tab.</p></li>
-<li><p>Press the <strong>Edit Default Configuration</strong> to ensure that you have the <strong>PEM private key</strong> at the <strong>PEM file location</strong>.</p></li>
+</li>
+<li>A list of projects is displayed. Select a project that you wish to pull and press <strong>Pull</strong>. You will receive a message <strong>Success</strong> under the <strong>Pull Status</strong>.</li>
+<li>Now go to <strong>Export</strong> tab.</li>
+<li>Press the <strong>Edit Default Configuration</strong> to ensure that you have the <strong>PEM private key</strong> at the <strong>PEM file location</strong>.<br /><img alt="image" src="_images/private_key.png" /><br />If it’s not there, select the <strong>PEM private key</strong> from the folder you had secured safely. (<em>Note: You will also see all the projects here that has been successfully pulled.</em>)</li>
+<li>Now check the project that you would wish to export and press <strong>Export</strong>.</li>
+<li>Data is exported as a CSV file, you can now view the unencrypted data.</li>
 </ol>
-<p><img alt="image" src="_images/private_key.png" /></p>
-<p>If it’s not there, select the <strong>PEM private key</strong> from the folder you had secured safely. (<em>Note: You will also see all the projects here that has been successfully pulled.</em>)</p>
-<ol class="simple">
-<li><p>Now check the project that you would wish to export and press <strong>Export</strong>.</p></li>
-<li><p>Data is exported as a CSV file, you can now view the unencrypted data.</p></li>
-</ol>
-</div>
-<div class="section" id="generating-rsa-encryption-keys">
-<h2>Generating RSA Encryption Keys<a class="headerlink" href="#generating-rsa-encryption-keys" title="Permalink to this headline">¶</a></h2>
-<p>To generate the RSA public-private key pairs you can use the OpenSSL software package, which is pre-installed on OSX and Linux. On Windows you have to download and install the OpenSSL software package from this <a class="reference external" href="http://slproweb.com/products/Win32OpenSSL.html">site</a>. (<em>Note: install the Win64 OpenSSL v1.1.1c in <strong>C</strong>: rather than the default location <strong>C:\Program Files</strong></em>)</p>
+<p><strong>Generating RSA Encryption Keys</strong></p>
+<p>To generate the RSA public-private key pairs you can use the OpenSSL software package, which is pre-installed on OSX and Linux. On Windows you have to download and install the OpenSSL software package from <a class="reference external" href="http://slproweb.com/products/Win32OpenSSL">this site</a>. (<em>Note: install the Win64 OpenSSL v1.1.1c in <strong>C</strong>: rather than the default location <strong>C:\Program Files</strong></em>)</p>
 <p><strong>How to generate RSA key for use with encrypted forms on KoBoToolbox</strong></p>
 <p><em>Note: We strongly recommend using OpenSSL as documented below for creating your public/private key pair as other methods may not be supported by the software.</em></p>
-<ol class="simple">
-<li><p>Open a Windows ‘cmd’ window.</p></li>
-<li><p>Type the following command: cd C:\OpenSSL-Win32\bin to change to the /bin directory in the OpenSSL directory.</p></li>
-</ol>
+<ol>
+<li><p class="first">Open a Windows ‘cmd’ window.</p>
+</li>
+<li><p class="first">Type the following command: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">C:\OpenSSL-Win32\bi</span></code>n to change to the /bin directory in the OpenSSL directory.</p>
 <p><img alt="image" src="_images/openssl_1.png" /></p>
-<ol class="simple">
-<li><p>Create a 2048-bit private key and write it to the <strong>MyPrivateKey.pem</strong> file by typing the following command, then press <strong>Enter</strong>: <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">genpkey</span> <span class="pre">-out</span> <span class="pre">MyPrivateKey.pem</span> <span class="pre">-outform</span> <span class="pre">PEM</span> <span class="pre">-algorithm</span> <span class="pre">RSA</span> <span class="pre">-pkeyopt</span> <span class="pre">rsa_keygen_bits:2048</span></code></p></li>
-</ol>
+</li>
+<li><p class="first">Create a 2048-bit private key and write it to the <strong>MyPrivateKey.pem</strong> file by typing the following command, then press <strong>Enter</strong>: <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">genpkey</span> <span class="pre">-out</span> <span class="pre">MyPrivateKey.pem</span> <span class="pre">-outform</span> <span class="pre">PEM</span> <span class="pre">-algorithm</span> <span class="pre">RSA</span> <span class="pre">-pkeyopt</span> <span class="pre">rsa_keygen_bits:2048</span></code></p>
 <p><img alt="image" src="_images/openssl_2.png" /></p>
-<ol class="simple">
-<li><p>Then, extract the public key for the above private key. Type the following command then press <strong>Enter</strong>: <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">rsa</span> <span class="pre">-in</span> <span class="pre">MyPrivateKey.pem</span> <span class="pre">-inform</span> <span class="pre">PEM</span> <span class="pre">-out</span> <span class="pre">MyPublicKey.pem</span> <span class="pre">-outform</span> <span class="pre">PEM</span> <span class="pre">-pubout</span></code></p></li>
-</ol>
+</li>
+<li><p class="first">Then, extract the public key for the above private key. Type the following command then press <strong>Enter</strong>: <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">rsa</span> <span class="pre">-in</span> <span class="pre">MyPrivateKey.pem</span> <span class="pre">-inform</span> <span class="pre">PEM</span> <span class="pre">-out</span> <span class="pre">MyPublicKey.pem</span> <span class="pre">-outform</span> <span class="pre">PEM</span> <span class="pre">-pubout</span></code></p>
 <p><img alt="image" src="_images/openssl_3.png" /></p>
-<ol class="simple">
-<li><p>You have now generated two files that is:</p></li>
-</ol>
+</li>
+<li><p class="first">You have now generated two files that is:</p>
 <ul class="simple">
-<li><p><strong>MyPrivateKey.pem</strong> - your private key that you need to move to a secure location.</p></li>
-<li><p><strong>MyPublicKey.pem</strong> - your public key, that you can share with anyone you want to share information securely</p></li>
+<li><strong>MyPrivateKey.pem</strong> - your private key that you need to move to a secure location.</li>
+<li><strong>MyPublicKey.pem</strong> - your public key, that you can share with anyone you want to share information securely</li>
 </ul>
-<ol class="simple">
-<li><p>Open the <strong>MyPublicKey.pem</strong> with Notepad or another text edit, your public key is the uninterrupted very long string of characters,</p></li>
+</li>
+<li><p class="first">Open the <strong>MyPublicKey.pem</strong> with Notepad or another text edit, your public key is the uninterrupted very long string of characters,</p>
+</li>
 </ol>
-<p><code class="docutils literal notranslate"><span class="pre">e.g.:Tjhfur1K9+BRQ2USezIPbtyahbfuNqviI5Suhm8maA3JoELRHj9psjf/oNWoG87aFtKNbLrRaCEDP</span> <span class="pre">oFMDC9NEzWlv5L49BygeieMu/wg/rtMT0M0kgDbKxw5weJJgyb9P41aMsrqAAAAB3NzaC1yc2EAAAADAQAB</span> <span class="pre">AAABAQDfNoFX7bh3bfdW6lGfDht1Ea8PUBLKYjugbHN5jS7j5fHV6dexM+kzvITVgoyjhhKPXeCbaT62vD/</span> <span class="pre">saTqJFXJzlysnZ24fqxNkjreO5K5EQ9c3ggwqML06+AKrFUSP5jpnyJJH8btNwKl6D5pG4ZseHwDUKzZta</span> <span class="pre">extPTNQz67kdYIKdtCkCsQHVsy4xvy/A0jzfK3xyOkG6j+L</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">e.g.:Tjhfur1K9+BRQ2USezIPbtyahbfuNqviI5Suhm8maA3JoELRHj9psjf/oNWoG87aFtKNbLrRaCEDP</span> <span class="pre">oFMDC9NEzWlv5L49BygeieMu/wg/rtMT0M0kgDbKxw5weJJgyb9P41aMsrqAAAAB3NzaC1yc2EAAAADAQAB</span> <span class="pre">AAABAQDfNoFX7bh3bfdW6lGfDht1Ea8PUBLKYjugbHN5jS7j5fHV6dexM+kzvITVgoyjhhKPXeCbaT62vD/</span> <span class="pre">saTqJFXJzlysnZ24fqxNkjreO5K5EQ9c3ggwqML06+AKrFUSP5jpnyJJH8btNwKl6D5pG4ZseHwDUKzZtae</span> <span class="pre">xtPTNQz67kdYIKdtCkCsQHVsy4xvy/A0jzfK3xyOkG6j+L</span></code></p>
 <p>This string is what you will need to paste under the public_key field in your settings sheet on your XLS file.</p>
 <p><strong>IMPORTANT</strong>: make sure that you paste only the public key string and no blank spaces or line breaks!</p>
 <p><strong>MyPrivateKey.pem</strong> is the file you will use when exporting the submissions using ODK Briefcase.</p>
 <p>Note: When trying to edit a form that has been encrypted, you receive a message “This form cannot be edited once it has been marked as finalized. It may by encrypted”.</p>
-</div>
 </div>
 
 
@@ -148,6 +134,60 @@
 
 
 <h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">FAQ: Didn’t Receive My Activation Link After Signing Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoboToolbox Training Materials in Arabic</a></li>
+</ul>
+<p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing on a Local Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_your_servers.html">Install KoBoToolbox on Your Own Servers</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating Forms</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Encrypting Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on number and text responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language to Your Form in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to your form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+</ul>
 <p class="caption"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
@@ -162,49 +202,53 @@
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Creating Forms</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Encrypting Forms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#how-it-works">How it Works</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-encrypt-xls-forms">How to encrypt XLS forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-decrypt-forms">How to decrypt forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#generating-rsa-encryption-keys">Generating RSA Encryption Keys</a></li>
+<p class="caption"><span class="caption-text">Managing Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a project from your account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
 </ul>
-</li>
+<p class="caption"><span class="caption-text">Managing your Project's Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and Downloading Your Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and unarchiving your projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Managing permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, sharing, and exporting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is my data safe on your server?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling your data into Excel Power Query</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">How to edit or delete a single submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Downloading photos and other media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering data from previous form versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting your Data into SPSS and/or Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="new_project.html" title="previous chapter">How to Create a New Project</a></li>
+      <li>Previous: <a href="form_meta.html" title="previous chapter">Form Settings and Meta Questions</a></li>
+      <li>Next: <a href="number_text_responses.html" title="next chapter">Limits on number and text responses</a></li>
   </ul></li>
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
+  <h3>Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script type="text/javascript">$('#searchbox').show(0);</script>
 
 
 
@@ -221,7 +265,7 @@
       &copy;2020, KoBoToolbox.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |

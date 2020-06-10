@@ -1,0 +1,314 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Restricting text responses with regular expressions &#8212; KoBoToolbox 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Adding Another Language to Your Form in the Project Dashboard" href="language_dashboard.html" />
+    <link rel="prev" title="Adding Another Language to your XLS Form" href="language_xls.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="restricting-text-responses-with-regular-expressions">
+<h1>Restricting text responses with regular expressions<a class="headerlink" href="#restricting-text-responses-with-regular-expressions" title="Permalink to this headline">¶</a></h1>
+<p>A regular expression, or regex, is a search pattern used for matching specific characters and ranges of characters within a string. It is widely used to validate, search, extract, and restrict text in most programming languages. KoBoToolbox supports regex to control the length and character(s) during data entry to a particular question (<em>e.g. controlling the entry of mobile number to exactly 10 digits, controlling the entry of a valid email id etc.</em>)</p>
+<p>To use a regex in KoboToolbox, follow these steps:</p>
+<ol>
+<li><p class="first">Prepare a Text question type.</p>
+</li>
+<li><p class="first">Go to the question’s <strong>Settings</strong>.</p>
+</li>
+<li><p class="first">Go to <strong>Validation Criteria</strong> and choose the <strong>Manually enter your validation logic in XLSForm</strong> code option.</p>
+</li>
+<li><p class="first">In the <strong>Validation Code</strong> box, enter your regex formula between the quotation marks <strong>(‘ ‘)</strong> of the <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'</span> <span class="pre">')</span></code> format. For reference, the period (.) refers to ‘this question’, while the regular expression inside the quotation marks (‘ ‘) needs to conform to the established regex rules.</p>
+</li>
+<li><p class="first">(Optional) Add a custom <strong>Error Message</strong> for the person entering data to see when they don’t meet the regrex criteria.</p>
+<p><img alt="image" src="_images/regrex.jpg" /></p>
+<p>Regex can also be coded in XLSForm by typing the regex code under the constraint column.</p>
+<p><img alt="image" src="_images/xls_constraint.png" /></p>
+<p>Alternatively, there is another way of using regex in KoBoToolbox i.e. by creating a calculate question type and then defining the regex code under the calculation column. You could then use this variable as many times as needed in the survey form.</p>
+<p><img alt="image" src="_images/xls_calculation.png" /></p>
+</li>
+</ol>
+<div class="section" id="how-do-i-build-the-regex-that-i-need">
+<h2>How do I build the regex that I need?<a class="headerlink" href="#how-do-i-build-the-regex-that-i-need" title="Permalink to this headline">¶</a></h2>
+<p>In addition to the examples and tips provided below, please visit this <a class="reference external" href="http://www.regexr.com">website</a> for more help and examples.</p>
+<ul class="simple">
+<li>Regex in KoBoToolbox should always be written in-between the apostrophes <strong>regex(., ‘ ‘)</strong> as shown in the examples.</li>
+<li><strong>^</strong>: The caret symbol (^) matches the start of a string without consuming any character.</li>
+<li><strong>$</strong>: The dollar symbol ($) matches the end of a string without consuming any character.</li>
+<li><strong>[abc]</strong>: Matches either a, b or c from within the [ ].</li>
+<li><strong>[a-z]</strong>: Matches any lowercase character from a to z.</li>
+<li><strong>[A-Z]</strong>: Matches any uppercase character from A to Z.</li>
+<li><strong>[0-9]</strong>: Matches any numbers from 0 to 1.</li>
+<li><strong>[a-zA-Z0-9]</strong>: Matches any character from a to z or A to Z or 0 to 9. You could combine anything required.</li>
+<li><strong>[^abc]</strong>: Matches any character except a, b or c if the caret symbol (^) is used inside [ ].</li>
+<li><strong>[^A-Z]</strong>: Matches any characters except those in the range A to Z if the caret symbol (^) is used inside [ ].</li>
+<li><strong>(apple)</strong>: The grouping character ( ) matches anything that is within the parenthesis. Here, (apple) matches the characters apple literally (case sensitive).</li>
+<li><strong>|</strong>: A vertical bar also known as Boolean matches any element separated by the vertical bar.</li>
+<li>: A back slash is used to match the literal value of any metacharacter (e.g. try using . or &#64; or $ while building regex).</li>
+<li><strong>\number</strong>: Matches the same character as most recently matched by the nth (number used) capturing group.</li>
+<li><strong>\s</strong>: Matches any space or tab.</li>
+<li><strong>\b</strong>: Matches, without consuming any characters immediately between a character matched by \w and a character not matched by \w (in either order). \b is also known as the word boundary.</li>
+<li><strong>\d</strong>: Matches any equivalent numbers (0 to 9).</li>
+<li><strong>\D</strong>: Matches anything other than numbers (0 to 9).</li>
+<li><strong>\w</strong>: Matches any word character (i.e. a to z or A to Z or 0 to 9 or _).</li>
+<li><strong>\W</strong>: Matches anything other than what \w matches (i.e. it matches wild cards and spaces).</li>
+<li><strong>?</strong>: A question mark (?) used just behind a character matches or skips (if not required) a character match.</li>
+<li><code class="docutils literal notranslate"><span class="pre">*</span></code>: An asterisk symbol <code class="docutils literal notranslate"><span class="pre">*</span></code> used just behind a character matches zero or more consecutive character.</li>
+<li><strong>+</strong>: The plus symbol (+) used just behind a character matches one or more consecutive character.</li>
+<li><strong>{x}</strong>: Matches exactly ‘x’ consecutive characters.</li>
+<li><strong>{x,}</strong>: Matches at least ‘x’ consecutive characters (or more).</li>
+<li><strong>{x,y}</strong>: Matches between ‘x’ and ‘y’ consecutive characters.</li>
+</ul>
+</div>
+<div class="section" id="some-commonly-used-regex-formula-examples">
+<h2>Some commonly used regex formula examples:<a class="headerlink" href="#some-commonly-used-regex-formula-examples" title="Permalink to this headline">¶</a></h2>
+<p><em>Examples related to use of numbers (for all text questions that use numbers, do not forget to type <strong>numbers</strong> under the appearance column)</em></p>
+<ul class="simple">
+<li>Restrict mobile number to ten digits : <strong>regex(., ‘^[0-9]{10}$’)</strong> or <strong>regex(., ‘^\d{10}$’)</strong></li>
+<li>Restrict an input to <strong>1234.56.78</strong> format: <strong>regex(., ‘^[0-9]{4}.[0-9]{2}.[0-9]{2}$’)</strong> or <strong>regex(., ‘^\d{4}.\d{2}.\d{2}$’)</strong></li>
+<li>Restrict an input between <strong>01</strong> to <strong>99</strong> digits where input format of a single number (like 1 or 2) is not allowed: <strong>regex(., ‘^[01-99]{2}$’)</strong> and <strong>(. &gt;= 01)</strong></li>
+<li>Restrict an input to only two numbers i.e. either to <strong>12</strong> or <strong>345</strong>: <strong>regex(., ‘^(12|345)$’)</strong></li>
+<li>Restrict an input of nine digits where the first number can’t be <strong>0</strong>: <strong>regex(., ‘^1-9][0-9]{8}$’)</strong> or **regex(., ‘^[^0$]’)</li>
+<li>Restrict an input to one digit in between <strong>0</strong> to <strong>9</strong>: <strong>regex(., ‘^\d$’)</strong></li>
+<li>Restrict an input to five digits in between <strong>0</strong> to <strong>9</strong>: <strong>regex(., ‘^\d{5}$’)</strong></li>
+<li>Restrict an input to two digits and three decimals (e.g. <strong>12.345</strong>): <strong>regex(., ‘\d{2}.\d{3}$’)</strong></li>
+<li>Restrict an input to two digits and three decimals (while the decimals are optional) (e.g. <strong>12</strong> or <strong>12.345</strong>): <strong>regex(., ‘^\d{2}(.\d{3})?$’)</strong></li>
+</ul>
+</div>
+<div class="section" id="examples-related-to-use-of-alphabets-letters">
+<h2>Examples related to use of alphabets letters<a class="headerlink" href="#examples-related-to-use-of-alphabets-letters" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Restrict an input of any characters (up to 6 characters long) consisting lowercase letters: <strong>regex(., ‘^[a-z]{1,6}$’)</strong></li>
+<li>Restrict an input of any characters (up to 10 characters long) consisting uppercase letters: <strong>regex(., ‘^[A-Z]{1,10}$’)</strong></li>
+<li>Restrict an input to only one of the three fruits outlined i.e. either to Apple or Orange or Banana: <strong>regex(., ‘^(Apple|Orange|Banana)$’)</strong></li>
+<li>Restrict an input to only two words i.e. pear or pair: <strong>regex(., ‘^p(ea|ai)r$’)</strong></li>
+<li>Restrict an input to only two words i.e. sun or son: <strong>regex(., ‘^s[ou]n$’)</strong></li>
+<li>Restrict an input with a valid email address: <strong>regex(., ‘^[A-Za-z0-9._%+-]+&#64;[A-Za-z0-9-]+[.][A-Za-z]{2,}$’)</strong></li>
+<li>Restrict an input of the beneficiaries name where the initials of the first name and last name are uppercase e.g. Kobe Bryant: <strong>regex(., ‘^[A-Z]{1}[a-z]{1,}[ ]{1}[A-Z]{1}[a-z]{1,}$’)</strong></li>
+<li>Restrict an input of the beneficiaries name with first name, middle name (if any) and last name e.g. Kobe Bean Bryant: <strong>regex(., ‘^\w{1,}\s(\w{1,})?(\s)?\w{1,}$’)</strong></li>
+<li>Restrict an input of the beneficiaries’ full name where the initials of the names are in uppercase and the name are quite long (often greater than 3 words) e.g. Samayamantri Venkata Rama Naga Butchi Anjaneya Satya Krishna Vijay (this is an example of south Indian names): <strong>regex(., ‘^([A-Z]{1}[a-z]{1,}\s)([A-Z]{1}[a-z]{1,}\s?)+$’)</strong></li>
+<li>Restrict an input of the beneficiaries’ first name (so that you are able to capture the exact spelling) where the enumerators are forced to enter the beneficiaries first name twice e.g. Kobe Bryant Kobe. (This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy): <strong>regex(., ‘^(\D+)\s(\D+)\s?\1$’)</strong></li>
+<li>Restrict an input of the beneficiaries’ last name (so that you are able to capture the exact spelling) where the enumerators are forced to enter the beneficiaries last name twice e.g. Kobe Bryant Bryant. (This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy): <strong>regex(., ‘^(\D+)\s(\D+)\s?\2$’)</strong></li>
+<li>Restrict a character within a word by using the <strong>?</strong> (quantifier) e.g. allow either color or colour as an input: <strong>regex(., ‘^colou?r$’)</strong></li>
+<li>Restrict a character within a word by using the * (quantifier) e.g. allow either <strong>a!</strong> or <strong>ah!</strong> or <strong>ahh!</strong> or <strong>ahhh!</strong> and so on as an input: <em><em>regex(., ‘^ah</em>!$’)</em>*</li>
+<li>Restrict a character within a word by using the + (quantifier) e.g. allow either <strong>ah!</strong> or <strong>ahh!</strong> or <strong>ahhh!</strong> and so on as an input: <strong>regex(., ‘^ah+!$’)</strong></li>
+<li>Restrict an input to a non-digit character (e.g. a or c or ! or # or % etc.): <strong>regex(., ‘^\D$’)</strong></li>
+<li>Restrict an input to five non-digit character (e.g. <strong>aZcB!</strong>#% etc.): <strong>regex(., ‘^\D{5 }$’)</strong></li>
+</ul>
+</div>
+<div class="section" id="examples-related-to-use-of-a-combination-of-alphabets-letters-and-numbers">
+<h2><em>Examples related to use of a combination of alphabets letters and numbers</em><a class="headerlink" href="#examples-related-to-use-of-a-combination-of-alphabets-letters-and-numbers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Restrict one character which matches between a to z or A to Z or 0 to 9 or _ (i.e. match one character from <strong>[a-zA-Z0-9_]</strong>): <strong>regex(., ‘^\w$’)</strong></li>
+<li>Restrict three character which matches between a to z or A to Z or 0 to 9 or _ (i.e. match one character from <strong>[a-zA-Z0-9_]</strong>): <strong>regex(., ‘^\w{3}$’)</strong></li>
+<li>Restrict your beneficiary ID to a specific format e.g. <strong>CAR_PRC_2020_0048</strong>: <strong>regex(., ‘^[A-Z]{3}[<em>][A-Z]{3}[</em>][0-9]{4}[_][0-9]{4}$’)</strong></li>
+<li>Restrict your beneficiary ID to a specific format e.g. <strong>CAR-PRC-2020-0048</strong> (<em>where the enumerators should enter an exact match from <strong>CAR</strong> to - i.e. <strong>CAR-PRC-2020-</strong></em> and can enter any 4 digit serial number): <strong>regex(., ‘^CAR-PRC-2020-[0-9]{4}$’)</strong></li>
+<li>Restrict a currency input of three digits with a currency sign (either dollar or pound) in front (e.g. <strong>$999</strong> or <strong>£500</strong>): <strong>regex(., ‘^[$|\£]\d{3}$’)</strong></li>
+<li>Restrict an exact input of number of words (e.g. to restrict exactly 3 words “<em>I love you.</em>”): <em><em>regex(., ‘^\W</em>(\w+\b\W</em>){3}$’)**</li>
+<li>Restrict an input of number of words (e.g. to restrict a range of words say 3 to 5): <em><em>regex(., ‘^\W</em>(\w+\b\W</em>){3,5}$’)**</li>
+</ul>
+</div>
+<div class="section" id="considerations-when-using-regex">
+<h2>Considerations when using regex<a class="headerlink" href="#considerations-when-using-regex" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>If you wish to use a regex constraint on a number, make sure you ALWAYS type numbers under the appearance. This restricts the display of alphabets, making only numbers visible for inputs.</li>
+<li>Be careful, with the mode of data collection (i.e. KoBoCollect android app or Enketo web forms) you wish, once you have completed designing and deploying your survey forms (using regex). This is because, KoBoCollect android app and Enketo web forms behaves a bit differently with regex. KoBoCollect android app behaves as if you have used the anchors (^ $) around the regex (even if you have not used them), while Enketo requires the anchors as mandatory for an exact match.</li>
+</ul>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">FAQ: Didn’t Receive My Activation Link After Signing Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoboToolbox Training Materials in Arabic</a></li>
+</ul>
+<p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing on a Local Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_your_servers.html">Install KoBoToolbox on Your Own Servers</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating Forms</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on number and text responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Restricting text responses with regular expressions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-do-i-build-the-regex-that-i-need">How do I build the regex that I need?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#some-commonly-used-regex-formula-examples">Some commonly used regex formula examples:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples-related-to-use-of-alphabets-letters">Examples related to use of alphabets letters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples-related-to-use-of-a-combination-of-alphabets-letters-and-numbers"><em>Examples related to use of a combination of alphabets letters and numbers</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#considerations-when-using-regex">Considerations when using regex</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language to Your Form in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to your form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Collecting Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Managing Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a project from your account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Managing your Project's Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and Downloading Your Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and unarchiving your projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Managing permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, sharing, and exporting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is my data safe on your server?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling your data into Excel Power Query</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">How to edit or delete a single submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Downloading photos and other media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering data from previous form versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting your Data into SPSS and/or Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="language_xls.html" title="previous chapter">Adding Another Language to your XLS Form</a></li>
+      <li>Next: <a href="language_dashboard.html" title="next chapter">Adding Another Language to Your Form in the Project Dashboard</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, KoBoToolbox.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/restrict_responses.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

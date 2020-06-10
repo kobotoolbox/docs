@@ -1,0 +1,246 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Grouping Questions and Repeating Groups &#8212; KoBoToolbox 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Collecting signatures" href="collecting_signatures.html" />
+    <link rel="prev" title="Using Alternative Enketo Web Form Styles" href="alternative_enketo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="grouping-questions-and-repeating-groups">
+<h1>Grouping Questions and Repeating Groups<a class="headerlink" href="#grouping-questions-and-repeating-groups" title="Permalink to this headline">¶</a></h1>
+<p><strong>Groups are collection of one or more questions inside a form.</strong> Groups can also be grouped themselves. There are many scenarios when using groups can be useful:</p>
+<ul class="simple">
+<li>A large form can be divided into multiple large sections</li>
+<li>Several questions can be skipped by grouping them and setting a single Skip logic condition</li>
+<li>A set of questions should be repeated indefinitely for every unit, such as members of a household</li>
+<li>A set of questions should be displayed together on the same screen during data entry</li>
+</ul>
+<p><strong>Creating Groups and Displaying Multiple Questions on the Same Screen</strong></p>
+<ol>
+<li><p class="first">To <strong>create a group</strong> just select one question, then click the Group Questions button. Then, drag and drop the other questions in your form that you want included in this group.</p>
+<p><img alt="image" src="_images/create_group.png" /></p>
+</li>
+<li><p class="first">A <strong>group label</strong> can be changed just like question labels. The label will appear above the questions that are within it.</p>
+<p><img alt="image" src="_images/group_label.png" /></p>
+</li>
+<li><p class="first">It is possible to <strong>display all questions on the same screen</strong> when collecting data with KoBoCollect. Click on the group’s settings box and tick ‘<strong>Show all questions in this group on the same screen</strong>’. (When you preview your form, all questions are by default displayed on the same screen so you you can view and test it more quickly, so this setting doesn’t affect your form in the preview.)</p>
+<p><img alt="image" src="_images/all_group.png" /></p>
+</li>
+<li><p class="first">You can <strong>drag questions into a group</strong>, or out of them (there has to remain at least one question in the group though). You can also drag-and-drop the entire group to a different location.</p>
+<p><img alt="image" src="_images/drag.png" /></p>
+</li>
+<li><p class="first">You can also change the internal unique <strong>Name</strong> (ID) of a group. Only letters, numbers, and underscores are allowed as the group Name, and it can’t start with a number. By default, each group receives a unique random name when you create it.</p>
+<p><img alt="image" src="_images/name.png" /></p>
+</li>
+<li><p class="first">To <strong>remove a group</strong>, click the Delete button in the group header. It will only break apart the group; its child questions won’t be affected.</p>
+<p><img alt="image" src="_images/remove.png" /></p>
+</li>
+</ol>
+<p>**Creating a Group of Repeating Questions</p>
+<p>Repeating groups of questions can be answered multiple times. For example, in a household survey you might want to ask the name, age, gender, and education status of every household member, but you don’t know in advance how many members there will be.</p>
+<ol>
+<li><p class="first">To a group of repeating questions, first group the questions that should be repeated</p>
+</li>
+<li><p class="first">Go to the group’s Settings and tick <strong>Repeat this group if necessary</strong>.</p>
+<p><img alt="image" src="_images/repeat.png" /></p>
+</li>
+<li><p class="first">During the interview, the interviewer will be able to enter the details to these questions as many times as required.</p>
+</li>
+</ol>
+<p><strong>Advanced users</strong>: The number of times this repeat group can be answered is by default unlimited. After answering the questions the interviewer is able to add another loop after each time. It is possible to set the number of loops in advance to a specific number. For example, if the form asks ‘Number of household members’ the number of loops can be set to the number given to that question. To specify the number of repeat loops, save your form and export it to XLS format. Inside the file, add a column in the survey sheet called ‘repeat_count’. For the specific repeat group in your file, enter a number into that column. Alternatively, you can specify the question whose number should be used, using the referencing style, such as ${household_members}.</p>
+<p><strong>Including names and other responses from previous repeat groups</strong></p>
+<p>Sometimes you might need to include certain details from a previous repeat group in another repeat group. For example, your first repeat group might ask the names of each household member, while later you would like to ask about the education status for each of these members. While it’s possible to ask about all details in a single repeat group, this may be awkward in a large survey. This can be done using the indexed-repeat() function in a Calculation question.</p>
+<p>To include a response (such as a name) in different repeat groups follow <a class="reference external" href="https://docs.google.com/spreadsheets/d/1Q3XvzONEKxgJdzSF1mPUlWyqSnrcHlQM7ZBHE247qyE/edit">the example in this form</a>. The form in the example uses the indexed-repeat() function in line 10 in the following way:  <code class="docutils literal notranslate"><span class="pre">indexed-repeat(${name},</span> <span class="pre">${demographic},</span> <span class="pre">position(..))</span></code>, whereas ${name} is the question “What is your name?”, ${demographic} refers to the first repeat group that includes the name question, and position(..) specifies the current repeat group instance in the second repeat group. By including <code class="docutils literal notranslate"><span class="pre">${name_individual}</span></code> in the last question the interviewer knows which person the question refers to.</p>
+<p><img alt="image" src="_images/preview_demographic.png" /></p>
+<p><img alt="image" src="_images/preview_education.png" /></p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">FAQ: Didn’t Receive My Activation Link After Signing Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoboToolbox Training Materials in Arabic</a></li>
+</ul>
+<p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing on a Local Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_your_servers.html">Install KoBoToolbox on Your Own Servers</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating Forms</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on number and text responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language to Your Form in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to your form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Collecting Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Managing Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a project from your account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Managing your Project's Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and Downloading Your Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and unarchiving your projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Managing permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, sharing, and exporting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is my data safe on your server?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling your data into Excel Power Query</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">How to edit or delete a single submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Downloading photos and other media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering data from previous form versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting your Data into SPSS and/or Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="alternative_enketo.html" title="previous chapter">Using Alternative Enketo Web Form Styles</a></li>
+      <li>Next: <a href="collecting_signatures.html" title="next chapter">Collecting signatures</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, KoBoToolbox.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/group_repeat.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

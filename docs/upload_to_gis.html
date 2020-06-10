@@ -1,0 +1,220 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Exporting and uploading your data to GIS software &#8212; KoBoToolbox 1 documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Pulling your data into PowerBI" href="pulling_data_into_powerbi.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="exporting-and-uploading-your-data-to-gis-software">
+<h1>Exporting and uploading your data to GIS software<a class="headerlink" href="#exporting-and-uploading-your-data-to-gis-software" title="Permalink to this headline">¶</a></h1>
+<p><strong>Simple step-by-step process to export and upload your data as a shapefile into GIS software, such as ArcMap.</strong></p>
+<p>There are multiple ways to import location-based data collected through KoBoToolbox into GIS software. This article will outline a recommended procedure to download data from KoBoToolbox as a CSV file and upload it into ArcMap as a shapefile. While this example uses ArcMap, the process is similar to those in other geospatial softwares, including QGIS (free).</p>
+<ol>
+<li><p class="first">In the <strong>Downloads</strong> tab of your project page in KoBoToolbox, export and download your data as a CSV file.</p>
+<p><img alt="image" src="_images/saveas_csv.jpg" /></p>
+<p><em>Note: You can edit the data set once its in the GIS software, however it may be easier to first edit in Excel, or similar program. In Excel, use the <a class="reference external" href="https://support.office.com/en-us/article/split-a-cell-f1804d0c-e180-4ed0-a2ae-973a0b7c6a23">Text to Columns.</a> function to split your CSV data into individual cells.</em></p>
+</li>
+<li><p class="first">Open a new or existing project in ArcMap, go to <strong>Add Data</strong>, and then link the folder where your CSV file is saved on your computer.</p>
+<p><img alt="image" src="_images/find_file.jpg" /></p>
+</li>
+<li><p class="first">Open the <strong>Catalog</strong> window and click on <strong>Folder Connections</strong>. Find your CSV file, right click it, then select <strong>Create Feature Class</strong> &gt; <strong>From XY Table</strong>.</p>
+</li>
+<li><p class="first">In the modal, click the <strong>X Field</strong> drop down and chose your GPS question_Longitude option. Also, be sure to choose your <strong>Coordinate System of Input Coordinates</strong>…(WGS 1984 is a good one, if you’re not using one already) and make sure your <strong>Output</strong> is set to the appropriate folder, then click <strong>OK</strong>.</p>
+<p><img alt="image" src="_images/create_feature.jpg" /></p>
+</li>
+<li><p class="first">Back in the <strong>Catalog</strong> window, click and drag your new shapefile into either the <strong>Data View</strong> window or <strong>Table of Contents</strong>.</p>
+</li>
+<li><p class="first">You should now see your points on the screen and if you open the <strong>Attributes Table</strong>, you’ll see all of the associated data with each point. From this point, you can now visualize and run various spatial analyses with your data.</p>
+<p><img alt="image" src="_images/dataview_table.jpg" /></p>
+</li>
+</ol>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">FAQ: Didn’t Receive My Activation Link After Signing Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoboToolbox Training Materials in Arabic</a></li>
+</ul>
+<p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing on a Local Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_your_servers.html">Install KoBoToolbox on Your Own Servers</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating Forms</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on number and text responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language to Your Form in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to your form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Collecting Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Managing Projects</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a project from your account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Managing your Project's Data</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and Downloading Your Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and unarchiving your projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Managing permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, sharing, and exporting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is my data safe on your server?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling your data into Excel Power Query</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">How to edit or delete a single submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Downloading photos and other media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering data from previous form versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting your Data into SPSS and/or Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exporting and uploading your data to GIS software</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="pulling_data_into_powerbi.html" title="previous chapter">Pulling your data into PowerBI</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, KoBoToolbox.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/upload_to_gis.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

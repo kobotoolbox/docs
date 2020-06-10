@@ -1,17 +1,19 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Troubleshooting KoBoCollect Android Application &#8212; KoBoToolbox 1 documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Troubleshooting Enketo Web Forms" href="troubleshooting_webforms.html" />
@@ -34,31 +36,31 @@
             
   <div class="section" id="troubleshooting-kobocollect-android-application">
 <h1>Troubleshooting KoBoCollect Android Application<a class="headerlink" href="#troubleshooting-kobocollect-android-application" title="Permalink to this headline">¶</a></h1>
-<p>– Kindly report any uncovered issue on our <a class="reference external" href="https://community.kobotoolbox.org/">community forum</a> –</p>
+<p><strong>– Kindly report any uncovered issue on our <a class="reference external" href="https://community.kobotoolbox.org/">community forum</a>–</strong></p>
 <p><em>Common error messages with troubleshooting guides:</em></p>
 <p><strong>Error: Message ‘Error getting form list’ after selecting ‘Get blank forms’</strong></p>
 <p><strong>Troubleshooting:</strong> The most likely solutions for this problem is either</p>
-<ol class="arabic simple">
-<li><p>Check your URL, you most likely have a small typo in the URL you entered into the settings. Refer to this <a class="reference external" href="https://kobotoolbox-documentation.readthedocs.io/en/latest/kobocollect-android.html">article</a> on setting up your  android phone/tablet for data collection.</p></li>
-<li><p>Another possible explanation is that your phone wasn’t connected to the Internet when you selected Get blank forms, for example when you are connected to a WiFi network in a public place that requires you to sign in through your browser. This <a class="reference external" href="https://kobotoolbox-documentation.readthedocs.io/en/latest/kobocollect-android.html">article</a> discusses in greater detail how to connect your device with your account.</p></li>
+<ol class="simple">
+<li>Check your URL, you most likely have a small typo in the URL you entered into the settings. Refer to <a class="reference internal" href="kobocollect-android.html"><span class="doc">this article</span></a> on setting up your android phone/tablet for data collection.</li>
+<li>Another possible explanation is that your phone wasn’t connected to the Internet when you selected Get blank forms, for example when you are connected to a WiFi network in a public place that requires you to sign in through your browser. <a class="reference internal" href="kobocollect-android.html"><span class="doc">This article</span></a> discusses in greater detail how to connect your device with your account.</li>
 </ol>
 <p><strong>Error: Generic Exception: No peer certificate or Form listing failed. Error: javx.net.ssl.SSLPeerUnverifiedException…</strong></p>
 <p>This error appears when KoBoCollect tries to communicate with the server but can’t establish a secure (SSL/HTTPS) connection.</p>
 <p><strong>Troubleshooting:</strong></p>
-<ol class="arabic simple">
-<li><p>Highly likely your device is using the wrong date. Check that the date is correct, then try again. <em>Please refer to your phone/tablet manual on how to set the date</em>. Android devices reset their dates to 2000 or another year if ever the battery goes to 0%, which is why this error can appear frequently if your team has a tendency to drain the battery all the way.</p></li>
-<li><p>You may also see this error message if you are using a WiFi hotspot that requires you to sign in after connecting.</p></li>
+<ol class="simple">
+<li>Highly likely your device is using the wrong date. Check that the date is correct, then try again. <em>Please refer to your phone/tablet manual on how to set the date.</em> Android devices reset their dates to 2000 or another year if ever the battery goes to 0%, which is why this error can appear frequently if your team has a tendency to drain the battery all the way.</li>
+<li>You may also see this error message if you are using a WiFi hotspot that requires you to sign in after connecting.</li>
 </ol>
 <p><strong>Error: KoBoCollect has crashed</strong></p>
 <p><strong>Troubleshooting:</strong></p>
-<ol class="arabic simple">
-<li><p>If this <strong>occurs</strong> while you are trying to <strong>upload submissions or download a new form</strong>, then your device has a significant interruption in its Internet connection. Although it sounds alarming, it is harmless: Simply repeat the upload or download process.</p></li>
-<li><p>If this <strong>occurs</strong> while you are trying to <strong>open a new form</strong> in your phone, then the following possible reasons could help you resolve:</p></li>
-</ol>
-<ul class="simple">
-<li><p>The form you are trying to open has errors either in the calculate, constraints or skip routines. This is rare since the system would have already checked for the errors.</p></li>
-<li><p>The form your are trying to open is either too large or has numerous actions (calculations, large list of responses or other complex procedures) which cannot be handled by the memory capacity of your device. Kindly refer to this <a class="reference external" href="https://kobotoolbox-documentation.readthedocs.io/en/latest/devices_for_data_collection.html">article</a> on recommended devices.</p></li>
+<ol class="simple">
+<li>If this <strong>occurs</strong> while you are trying to <strong>upload submissions or download a new form</strong>, then your device has a significant interruption in its Internet connection. Although it sounds alarming, it is harmless: Simply repeat the upload or download process.</li>
+<li>If this <strong>occurs</strong> while you are trying to <strong>open a new form</strong> in your phone, then the following possible reasons could help you resolve:<ul>
+<li>The form you are trying to open has errors either in the calculate, constraints or skip routines. This is rare since the system would have already checked for the errors.</li>
+<li>The form your are trying to open is either too large or has numerous actions (calculations, large list of responses or other complex procedures) which cannot be handled by the memory capacity of your device. Kindly refer to <a class="reference internal" href="devices_for_data_collection.html"><span class="doc">this article</span></a> on recommended devices.</li>
 </ul>
+</li>
+</ol>
 <p><strong>Error: Unable to edit this blank form because the corresponding blank form is not present or was deleted</strong></p>
 <p><strong>Troubleshooting:</strong></p>
 <p>This type of error message occurs when you try to edit your saved form when the corresponding blank form is not present or was deleted.</p>
@@ -85,83 +87,98 @@
 
 
 <h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="getting-started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">FAQ: Didn’t Receive My Activation Link After Signing Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoboToolbox Training Materials in Arabic</a></li>
 </ul>
+<p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing on a Local Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_your_servers.html">Install KoBoToolbox on Your Own Servers</a></li>
 </ul>
+<p class="caption"><span class="caption-text">Creating Forms</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="collecting-signatures.html">Collecting Signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on number and text responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language to Your Form in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to your form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
 </ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
-</ul>
+<p class="caption"><span class="caption-text">Collecting Data</span></p>
 <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting KoBoCollect Android Application</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
-</ul>
-<ul>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
+<p class="caption"><span class="caption-text">Managing Projects</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a project from your account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
 </ul>
+<p class="caption"><span class="caption-text">Managing your Project's Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
-</ul>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and Downloading Your Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and unarchiving your projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Managing permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, sharing, and exporting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is my data safe on your server?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling your data into Excel Power Query</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">How to edit or delete a single submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Downloading photos and other media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering data from previous form versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting your Data into SPSS and/or Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
 </ul>
 
 <div class="relations">
@@ -174,15 +191,17 @@
 </ul>
 </div>
 <div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
+  <h3>Quick search</h3>
     <div class="searchformwrapper">
     <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="text" name="q" />
       <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
     </form>
     </div>
 </div>
-<script>$('#searchbox').show(0);</script>
+<script type="text/javascript">$('#searchbox').show(0);</script>
 
 
 
@@ -199,11 +218,11 @@
       &copy;2020, KoBoToolbox.
       
       |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.0.3</a>
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="_sources/troubleshooting_kobocollect.rst.txt"
+      <a href="_sources/troubleshooting_kobocollect.md.txt"
           rel="nofollow">Page source</a>
     </div>
 
