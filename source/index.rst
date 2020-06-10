@@ -5,7 +5,7 @@
    
 
 Welcome to the official KoBoToolbox documentation!
-=======================================
+==================================================
 
 .. image:: /images/index/kobotoolbox_logo.png
    :width: 350
