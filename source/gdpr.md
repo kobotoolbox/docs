@@ -10,7 +10,7 @@ At KoBoToolbox, we take the security and privacy of our user's information very 
 
 We are constantly monitoring and improving KoBoToolbox to create a robust security framework that allows us to meet the growing needs of the industry.
 
-You can learn more about security at KoBoToolbox in [this support article](is_my_data_safe.md), or you can email our Support Team at [support@kobotoolbox.org](support@kobotoolbox.org).
+You can learn more about security at KoBoToolbox in [this support article](is_my_data_safe.md), or you can email our Support Team at [support@kobotoolbox.org](mailto:support@kobotoolbox.org).
 
 Our team will never access your data unless you have given us explicit access to it. However, to have complete control and ownership of your data, you are also free to install your own instance of KoBoToolbox on your own server.
 
