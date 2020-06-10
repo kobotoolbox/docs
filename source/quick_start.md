@@ -18,7 +18,7 @@ Visit [kf.kobotoolbox.org](https://kf.kobotoolbox.org) to create a new account. 
     
 3. You can also delete, duplicate, and/or add questions to your library.
 
-    ![image](/images/quick_start/setting.gif)
+    ![image](/images/quick_start/settings.gif)
 
 4. To add more details to a question, click on a question's Settings. For example, you can add skip logic to a question.
 
@@ -28,7 +28,7 @@ Visit [kf.kobotoolbox.org](https://kf.kobotoolbox.org) to create a new account. 
     
 5. Click Preview Form to quickly view your questions and test skip logic.  
 
-    ![image](/images/quick_start/skip_logic.gif)
+    ![image](/images/quick_start/preview_form.gif)
 
 6. To save the form click the Save button, then 'X' to close the form.
 
