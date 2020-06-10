@@ -12,7 +12,7 @@ Creating user-specified "Other" responses for multiple choice questions in one s
 
     NOTE: If using KoBoCollect app for data collection it's important not to display the second text question in a group on the same screen as it would not be visible otherwise. That's because Collect only shows questions on the same screen that are relevant at the moment the screen is first displayed. Just make sure to put it outside of the group when choosing to display multiple questions on the same screen. (When using Enketo Webforms this isn't a problem as it dynamically shows questions once they become relevant.) 
 
-3. Add [skip logic](skip_logic.html) to the follow-up question so it's only shown when needed.
+3. Add [skip logic](skip_logic.md) to the follow-up question so it's only shown when needed.
 
     ![image](/images/user_specified_other/skip_logic.png)
 

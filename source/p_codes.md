@@ -1,6 +1,6 @@
 # How to Include P-Codes in the Output Data
 
-If using cascading lists, please [follow the instructions](cascading_select.html) for cascading selects.
+If using cascading lists, please [follow the instructions](cascading_select.md) for cascading selects.
 
 Normally, only the "Name" and NOT the "Label" will appear in your exported Excel file, which means that only the P-code OR the name of the location will appear.
 

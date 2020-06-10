@@ -26,7 +26,7 @@ KoBoCollect supports the ability to encrypt the content of a form the moment it 
 
 **How to decrypt forms**
 
-ODK Briefcase is used to download the encrypted files from KoBoToolbox and decrypt them locally on your computer using a private key ensuring single access to the data. For decryption to be successful with ODK Briefcase make sure you download and install the _Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 6_ from the [Java download site](https://www.oracle.com/java/technologies/javase-downloads.html). This is required for decryption to be successful.
+ODK Briefcase is used to download the encrypted files from KoBoToolbox and decrypt them locally on your computer using a private key ensuring single access to the data. For decryption to be successful with ODK Briefcase make sure you download and install the _Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 6_ from the [Java download site](https://www.oracle.com/java/technologies/javase-downloads.md). This is required for decryption to be successful.
 
 **To install the JCE:**
 
@@ -68,7 +68,7 @@ ODK Briefcase is used to download the encrypted files from KoBoToolbox and decry
 
 **Generating RSA Encryption Keys**
 
-To generate the RSA public-private key pairs you can use the OpenSSL software package, which is pre-installed on OSX and Linux. On Windows you have to download and install the OpenSSL software package from [this site](http://slproweb.com/products/Win32OpenSSL.html). (_Note: install the Win64 OpenSSL v1.1.1c in **C**: rather than the default location **C:\Program Files**_)
+To generate the RSA public-private key pairs you can use the OpenSSL software package, which is pre-installed on OSX and Linux. On Windows you have to download and install the OpenSSL software package from [this site](http://slproweb.com/products/Win32OpenSSL.md). (_Note: install the Win64 OpenSSL v1.1.1c in **C**: rather than the default location **C:\Program Files**_)
 
 **How to generate RSA key for use with encrypted forms on KoBoToolbox**
 

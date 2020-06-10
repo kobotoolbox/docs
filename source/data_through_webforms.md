@@ -48,7 +48,7 @@ Select an appropriate drop down option from **Collect data** and then press COPY
 
 **6. Queued Records Counter:** The Queued Records Counter shows you the total number of records submitted and waiting to be uploaded to a server. The queued records are uploaded automatically in the background every 5 minutes when the web page is open and an internet connection is available.
 
-**7. Queue Records Pane:** Clicking the side button shows you the records that are available as drafts (which can still be edited) and finalized submitted records queued to be either uploaded to your server with an internet connection or exported as zip file as outlined in the [support article here](manual_upload.html).
+**7. Queue Records Pane:** Clicking the side button shows you the records that are available as drafts (which can still be edited) and finalized submitted records queued to be either uploaded to your server with an internet connection or exported as zip file as outlined in the [support article here](manual_upload.md).
 
 **How do I save an offline web form on a mobile device?**
 
@@ -80,4 +80,4 @@ By default the form refreshes for the next entry once the data has been submitte
 
 **Troubleshooting Web Forms**
 
-Always use the latest version of the browser. We recommend users to use Chrome as their browser while working with web forms. For other details on troubleshooting web forms, please visit our [support article (Troubleshooting Enketo Web Forms) here](troubleshooting_webforms.html). 
+Always use the latest version of the browser. We recommend users to use Chrome as their browser while working with web forms. For other details on troubleshooting web forms, please visit our [support article (Troubleshooting Enketo Web Forms) here](troubleshooting_webforms.md). 

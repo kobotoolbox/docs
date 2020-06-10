@@ -8,7 +8,7 @@ The instance hosted by HHI ([kf.kobotoolbox.org](kf.kobotoolbox.org)) is physica
 
 AWS security information can be found on [this page](https://aws.amazon.com/security/). In addition, we do regular database backups to protect against any eventuality. The privacy policy and terms of use are both linked here.
  
-Once your data is received on the server it is stored in accounts protected by usernames and passwords. However, unless it was encrypted on the handset [(see this article)](encrypting_forms.html), it will be stored 'in the clear' on the server filesystem or within its database, which means that our server administrators could potentially access it. 
+Once your data is received on the server it is stored in accounts protected by usernames and passwords. However, unless it was encrypted on the handset [(see this article)](encrypting_forms.md), it will be stored 'in the clear' on the server filesystem or within its database, which means that our server administrators could potentially access it. 
 
 For [kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info/accounts/login/?next=/#/) and [kc.humanitarianresponse.info](https://kobo.humanitarianresponse.info/accounts/login/?next=/kobocat/#/) only the server administrator has technical access to the database, and we will never access your data unless you have given us explicit access to it. However, to have complete control and ownership of your data, you are also free to install an instance of KoBoToolbox on your own server.
 

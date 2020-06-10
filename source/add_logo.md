@@ -1,6 +1,6 @@
 # Adding a Custom Logo to Your Form
 
-Adding a custom logo to the top of your form is a simple process and primarily follows the same steps as [adding media content to your forms](media.html).
+Adding a custom logo to the top of your form is a simple process and primarily follows the same steps as [adding media content to your forms](media.md).
 
 To begin: 
 

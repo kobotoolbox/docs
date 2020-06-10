@@ -21,4 +21,4 @@ After redeploying your form to make the changes live, you will then have access 
 
 **Using KoBoCollect** 
 
-If you are using KoBoCollect on an Android device and you redeploy your form, you will need to delete your old blank form on your device and redo the [get blank form](kobocollect-android.html) process with internet access to update the form to the latest version.  
+If you are using KoBoCollect on an Android device and you redeploy your form, you will need to delete your old blank form on your device and redo the [get blank form](kobocollect-android.md) process with internet access to update the form to the latest version.  

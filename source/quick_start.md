@@ -12,7 +12,7 @@ Visit [kf.kobotoolbox.org](https://kf.kobotoolbox.org) to create a new account. 
 
     ![image](/images/quick_start/new_form.gif)
     
-2. Click on the + button to add your first question and choose a [response type](question_types.html).
+2. Click on the + button to add your first question and choose a [response type](question_types.md).
 
     ![image](/images/quick_start/add_question.gif)
     
@@ -24,7 +24,7 @@ Visit [kf.kobotoolbox.org](https://kf.kobotoolbox.org) to create a new account. 
 
     ![image](/images/quick_start/skip_logic.gif)
     
-    (See [here](formbuilder.html) for an overview of all formbuilder functions.)
+    (See [here](formbuilder.md) for an overview of all formbuilder functions.)
     
 5. Click Preview Form to quickly view your questions and test skip logic.  
 
@@ -32,9 +32,9 @@ Visit [kf.kobotoolbox.org](https://kf.kobotoolbox.org) to create a new account. 
 
 6. To save the form click the Save button, then 'X' to close the form.
 
-7. To start collecting data you need to first [deploy your draft form as a new data collection project](deploy_form_new_project.html). 
+7. To start collecting data you need to first [deploy your draft form as a new data collection project](deploy_form_new_project.md). 
 
     ![image](/images/quick_start/save.gif)
     
-8. You're ready to collect data! You can enter data [in the browser](data_through_webforms.html) on any device (computer, iPhone, Android) or use our Android application [KoBoCollect](kobocollect-android.html). 
+8. You're ready to collect data! You can enter data [in the browser](data_through_webforms.md) on any device (computer, iPhone, Android) or use our Android application [KoBoCollect](kobocollect-android.md). 
 

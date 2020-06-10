@@ -8,9 +8,9 @@ _Common error messages with troubleshooting guides:_
 
 **Troubleshooting:** The most likely solutions for this problem is either
 
-1. Check your URL, you most likely have a small typo in the URL you entered into the settings. Refer to [this article](kobocollect-android.html) on setting up your android phone/tablet for data collection.
+1. Check your URL, you most likely have a small typo in the URL you entered into the settings. Refer to [this article](kobocollect-android.md) on setting up your android phone/tablet for data collection.
 
-2. Another possible explanation is that your phone wasn't connected to the Internet when you selected Get blank forms, for example when you are connected to a WiFi network in a public place that requires you to sign in through your browser. [This article](kobocollect-android.html) discusses in greater detail how to connect your device with your account.
+2. Another possible explanation is that your phone wasn't connected to the Internet when you selected Get blank forms, for example when you are connected to a WiFi network in a public place that requires you to sign in through your browser. [This article](kobocollect-android.md) discusses in greater detail how to connect your device with your account.
 
 **Error: Generic Exception: No peer certificate or Form listing failed. Error: javx.net.ssl.SSLPeerUnverifiedException...**
 
@@ -31,7 +31,7 @@ This error appears when KoBoCollect tries to communicate with the server but can
 2. If this **occurs** while you are trying to **open a new form** in your phone, then the following possible reasons could help you resolve:
 
     * The form you are trying to open has errors either in the calculate, constraints or skip routines. This is rare since the system would have already checked for the errors.
-    * The form your are trying to open is either too large or has numerous actions (calculations, large list of responses or other complex procedures) which cannot be handled by the memory capacity of your device. Kindly refer to [this article](devices_for_data_collection.html) on recommended devices.
+    * The form your are trying to open is either too large or has numerous actions (calculations, large list of responses or other complex procedures) which cannot be handled by the memory capacity of your device. Kindly refer to [this article](devices_for_data_collection.md) on recommended devices.
 
 **Error: Unable to edit this blank form because the corresponding blank form is not present or was deleted**
 

@@ -24,7 +24,7 @@ All your questions and groups can be moved to any position in the form. Just dra
 
 #### Changing question settings
 
-To access advanced features for each question click on the Settings cog in the top-right corner of the question. Here you can modify further details of the question, such as skip logic, validating responses, setting question hints, making a question required, etc. More information on this is available in the respective sections for [Question Options](question_options.html), [Skip Logic](skip_logic.html), and [Validation Criteria](validation_criteria.html).
+To access advanced features for each question click on the Settings cog in the top-right corner of the question. Here you can modify further details of the question, such as skip logic, validating responses, setting question hints, making a question required, etc. More information on this is available in the respective sections for [Question Options](question_options.md), [Skip Logic](skip_logic.md), and [Validation Criteria](validation_criteria.md).
 
 ![image](/images/formbuilder/change_settings.gif)
 

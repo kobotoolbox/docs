@@ -34,7 +34,7 @@ In most studies this would not be recommended as it might create an accidental b
 
 **Appearance (optional)**
 
-This advanced setting allows displaying the question in a modified way. Certain appearance options will only be available depending on the [Question Type](question_types.html). 
+This advanced setting allows displaying the question in a modified way. Certain appearance options will only be available depending on the [Question Type](question_types.md). 
 
 For a full list of appearance values, visit [ODK's appearance documentation](http://xlsform.org/en/#appearance).
 

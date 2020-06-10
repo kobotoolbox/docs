@@ -1,6 +1,6 @@
 # Adding Another Language to Your Form in the Project Dashboard
 
-There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online Project Dashboard or you can add them in an [XLS Form and upload it to KoBo](language_xls.html). 
+There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online Project Dashboard or you can add them in an [XLS Form and upload it to KoBo](language_xls.md). 
 
 Here are detailed instructions on how you can add and manage another language in your form through the online Project Dashboard:
 

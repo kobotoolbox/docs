@@ -60,4 +60,4 @@ Users with this permission can view a record, edit it if necessary, and assign a
     * Approved: The data within this record is accurate.
     * Flagged for Removal: The data within this record should be removed from the data set.
 
-More on "Validate Submissions" can be [found here](record_validation.html).
+More on "Validate Submissions" can be [found here](record_validation.md).
