@@ -6,14 +6,16 @@ Conditions can be added to each question by clicking on Settings inside the ques
 
 **1. Add a condition: Use the skip logic wizard to help you build your conditions**
 
-   ![image](/images/skip_logic/condition.jpg)
+   ![image](/images/skip_logic/condition.gif)
 
    Example
 
    Q1: Are you currently in school?  
-   Q2: Which grade are you in?  
+   Q2: What's your school level?
+   Q3: Which grade are you in?
+   
 
-   You would want to display the second question only if the respondent answers 'Yes' to the first question. The correct skip logic condition should display: 
+   You would want to display the third question only if the respondent answers 'Yes' to the first question. The correct skip logic condition should display: 
 
    Q1: Are you currently in school? = Yes
 
