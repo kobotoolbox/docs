@@ -45,7 +45,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
 
   new_project
   xls_url
+  formbuilder
+  question_types
   question_options
+  skip_logic
   validation_criteria
   user_specified_other
   rating_ranking
@@ -63,15 +66,12 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   cascading_select
   calculate_questions
   audit_logging
-  question_types
   language_xls
   restrict_responses
   language_dashboard
   hxl
-  formbuilder
   media
   deploy_form_new_project
-  skip_logic
   edit_forms_excel
   matrix_response
   advanced_calculate
