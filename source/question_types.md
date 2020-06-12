@@ -8,4 +8,4 @@ For more information on the response types, please visit [xlsform.org](http://xl
 
 _Note:_ 
 * Calculate questions are not displayed in your form, but are executed automatically as your form is being answered.
-* _he Question Matrix type is only supported in Enketo and with the Grid Theme set. 
+* The Question Matrix type is only supported in Enketo and with the Grid Theme set. 
