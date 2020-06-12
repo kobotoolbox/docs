@@ -6,11 +6,12 @@ Some advanced forms may require an internal calculation to take place as part of
 
 A mathematical expression could be as simple as `5 + 1`, but most likely it would include reference to another question.
 
-Referencing other questions in your calculation requires giving them a fixed name through the question settings, such as income. When referencing other questions always use the unique question name (not label) inside the question referencing style: `${question_name}`
+Referencing other questions in your calculation question requires giving other questions fixed names through the question settings, such as `girls` or `income`. When referencing those questions, you should always use the unique question name (not label) - `${girls}` or `${income}`
 
-If for example, you wanted to convert the answer to a question about someone's income into another currency (such as Rwandan Francs to US Dollars), you would write `${income} / 688`
+For example, if you want to convert the answer to a question about someone's income into another currency (such as Rwandan Francs to US Dollars), you should write `${income} / 688`.
 
-You can now use the answer to this Calculate question for other purposes, such as building your skip logic (for example only ask a follow-up question above a certain income threshold) or by displaying it inside a Note ([see here](responses_inside_question.md) for help on how to display the response to one question in the label of another question).
+
+You can also use the answer to this Calculate question for other purposes, such as building your skip logic (for example only ask a follow-up question above a certain income threshold) or by displaying it inside a Note ([see here](responses_inside_question.md) for help on how to display the response to one question in the label of another question).
 
 **List of available functions**
 
