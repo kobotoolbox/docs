@@ -22,7 +22,7 @@ copyright = '2020, KoBoToolbox'
 author = 'KoBoToolbox'
 
 # The full version, including alpha/beta/rc tags
-release = '1'
+# release = '1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -61,7 +61,7 @@ html_static_path = ['_static']
 html_theme_options = {
 
     # Set the name of the project to appear in the navigation.
-    # 'nav_title': 'KoBoToolbox Documentation',
+    'nav_title': 'KoBoToolbox Documentation',
 
     # Set you GA account ID to enable tracking
     # 'google_analytics_account': 'UA-XXXXX',
@@ -71,9 +71,9 @@ html_theme_options = {
     #'base_url': 'https://project.github.io/project',
 
     # Set the color and the accent color
-    'color_primary': '#414453',
-    'color_accent': '#2095f3',
-
+    'color_primary': '414453',
+    'color_accent': '2095f3',
+    'theme_color': '414453',
     # Set the repo location to get a badge with stats
     # 'repo_url': 'https://github.com/kobotoolbox/docs/',
     #'repo_name': 'KoBoToolbox documentation',
@@ -83,7 +83,14 @@ html_theme_options = {
     # If False, expand all TOC entries
     'globaltoc_collapse': False,
     # If True, show hidden TOC entries
-    'globaltoc_includehidden': False,
+    'globaltoc_includehidden': True,
+    
+    'logo_icon': '&#xe869',
+    # 'html_minify': True,
+    # 'css_minify': True,
+    # 'base_url': 'http://bashtage.github.io/sphinx-material/',
+
+
 }
 
 html_sidebars = {
