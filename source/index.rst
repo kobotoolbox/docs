@@ -50,12 +50,12 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   question_options
   skip_logic
   validation_criteria
-  user_specified_other
+  video_question_type
   rating_ranking
+  user_specified_other
   lower_file_size
   add_logo
   p_codes
-  video_question_type
   unique_serial_numbers
   pull_data_kobotoolbox
   custom_format_web
