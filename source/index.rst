@@ -50,8 +50,10 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   question_options
   skip_logic
   validation_criteria
-  video_question_type
   rating_ranking
+  calculate_questions
+  advanced_calculate
+  video_question_type
   user_specified_other
   lower_file_size
   add_logo
@@ -64,7 +66,6 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   encrypting_forms
   number_text_responses
   cascading_select
-  calculate_questions
   audit_logging
   language_xls
   restrict_responses
@@ -74,7 +75,6 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   deploy_form_new_project
   edit_forms_excel
   matrix_response
-  advanced_calculate
   alternative_enketo
   group_repeat
   collecting_signatures
