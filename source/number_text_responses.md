@@ -1,4 +1,4 @@
-# Limits on number and text responses
+# Limits on Number and Text Responses
 
 There are underlying technical constraints to the length of the response in a **Number** or **Text** question.
  
