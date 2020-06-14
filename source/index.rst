@@ -54,24 +54,24 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   calculate_questions
   advanced_calculate
   video_question_type
+  responses_inside_question
+  restrict_responses
+  number_text_responses
   user_specified_other
-  lower_file_size
+  media
   add_logo
+  cascading_select
   p_codes
+  lower_file_size
   unique_serial_numbers
   pull_data_kobotoolbox
   custom_format_web
-  responses_inside_question
   form_meta
   encrypting_forms
-  number_text_responses
-  cascading_select
   audit_logging
   language_xls
-  restrict_responses
   language_dashboard
   hxl
-  media
   deploy_form_new_project
   edit_forms_excel
   matrix_response
