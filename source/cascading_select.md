@@ -8,7 +8,6 @@ Adding sets of cascading select questions to your form can be done by importing 
 
 _(Note: This is only available in the new version of KoBoToolbox)_
 
-![image](/images/cascading_select/cascade_import.gif)  
 
 1. Open Excel or another spreadsheet program and [follow this template as an example](https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit#gid=0) to create your template of questions and responses to be added.  
 
