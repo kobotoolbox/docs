@@ -55,7 +55,6 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   advanced_calculate
   video_question_type
   responses_inside_question
-  restrict_responses
   number_text_responses
   user_specified_other
   media
@@ -71,6 +70,7 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   audit_logging
   language_xls
   language_dashboard
+  restrict_responses
   hxl
   deploy_form_new_project
   edit_forms_excel
