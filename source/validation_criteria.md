@@ -4,9 +4,7 @@ This feature allows you to avoid accidental or invalid answers, especially in nu
 
 For example, if you want to restrict a question about age to numbers between 0 and 130.
 
-**How to add validation criteria**
-
-**Form Builder User Interface**
+**Add validation criteria in Formbuilder**
 
 To add validation criteria for a specific question, go to Settings, then Validation Criteria.
 
@@ -14,7 +12,7 @@ To add validation criteria for a specific question, go to Settings, then Validat
 
 You can directly add a condition or manually enter validation logic in XLSFrom code. The type of restrictions under "**Add a condition**" corresponds to the type of the questions (123 - numbers, text, date) selected. As seen from the example above, the question type is number and the validation criteria restricts the response to be greater than 3 and less than or equal to 30. The **Error Message** (optional) is the message your interviewer sees when they enter an invalid response.
 
-**Validation criteria in XLSForm**
+**Add Validation criteria in XLSForm**
 
 Validation criteria in XLSForm needs to be entered in specific syntax.
 

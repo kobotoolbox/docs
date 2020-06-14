@@ -60,6 +60,8 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   media
   add_logo
   cascading_select
+  language_dashboard
+  language_xls
   p_codes
   lower_file_size
   unique_serial_numbers
@@ -68,8 +70,6 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   form_meta
   encrypting_forms
   audit_logging
-  language_xls
-  language_dashboard
   restrict_responses
   hxl
   deploy_form_new_project
