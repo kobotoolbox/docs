@@ -49,9 +49,12 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 
-import sphinx_kr_theme
-html_theme_path = [sphinx_kr_theme.get_html_theme_path()]
-html_theme = 'kr'
+html_theme = 'alabaster'
+
+html_theme_options = {
+    'globaltoc_collapse': False,
+    'globaltoc_includehidden': True
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -73,5 +76,8 @@ html_logo = '_static/images/kobologo.svg'
 # ]
 
 html_sidebars = {
-    "**": ["globaltoc.html", "localtoc.html", "searchbox.html"]
+    '**': [
+        'navigation.html',
+        'searchbox.html'
+    ]
 }
