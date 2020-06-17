@@ -1,0 +1,15 @@
+@import "variables";
+
+html body div.footer {
+  width: 100%;
+  background: $black;
+  color: $white;
+  margin: 0;
+  padding: 2em 0;
+  font-size: 0.9em;
+  text-align: center;
+
+  a {
+    color: inherit;
+  }
+}

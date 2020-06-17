@@ -51,9 +51,21 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 html_theme = 'alabaster'
 
+html_sidebars = {
+    '**': [
+        'searchbox.html',
+        # 'about.html',
+        'navigation.html',
+    ]
+}
+
 html_theme_options = {
     'globaltoc_collapse': False,
-    'globaltoc_includehidden': True
+    'globaltoc_includehidden': True,
+    # for alabaster about sidebar
+    'logo': 'kobologo.svg',
+    'github_user': 'kobotoolbox',
+    'github_repo': 'docs',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
@@ -61,23 +73,15 @@ html_theme_options = {
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-html_logo = '_static/images/kobologo.svg'
-
 # We override all css
 # html_style = 'css/kobo_theme.css'
 
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
-# html_css_files = [
-#     'css/custom.css',
-# ]
-# html_js_files = [
-#     'js/custom.js',
-# ]
+html_css_files = [
+    'css/kobo_theme.css',
+]
+html_js_files = [
+    'js/custom.js',
+]
 
-html_sidebars = {
-    '**': [
-        'navigation.html',
-        'searchbox.html'
-    ]
-}
