@@ -99,7 +99,7 @@ html body header.main-header h1.main-header__logo {
   margin: 15px 20px;
   padding: 0;
   color: transparent;
-  background: url("../kobologo.svg") no-repeat 0 100%;
+  background: url("../images/kobologo.svg") no-repeat 0 100%;
   background-size: contain;
 }
 
