@@ -1,7 +1,12 @@
 @import "variables";
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
   line-height: 1.25em;
 }
 

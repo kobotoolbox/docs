@@ -1,4 +1,6 @@
 {% extends "!layout.html" %}
+
+<!-- This block is empty in original theme, we use it to display header menu -->
 {% block relbar1 %}
 <header role="banner" class="main-header">
   <h1 class="main-header__logo">
@@ -14,4 +16,13 @@
     </ul>
   </nav>
 </header>
+{% endblock %}
+
+<!-- Copied the original content to remove a wtf "&nbsp;" from it -->
+{%- block relbar_bottom %}
+  {%- if theme_show_relbar_bottom|tobool %}
+    <div class="related bottom">
+      {{- rellink_markup () }}
+    </div>
+  {%- endif %}
 {% endblock %}

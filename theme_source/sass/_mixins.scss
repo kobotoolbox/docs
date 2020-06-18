@@ -33,6 +33,7 @@
   background: $blue;
   color: $white !important;
   text-transform: uppercase;
+  text-align: center;
   padding: 0.5em 1em 0.4em;
   text-decoration: none;
   display: inline-block;
@@ -59,5 +60,34 @@
 
   &::placeholder {
     color: rgba($black, 0.5);
+  }
+}
+
+// "mid" element appears to be above regular box-shadow elements
+// "top" element appears to be above mid box-shadow elements
+@mixin box-shadow($type: normal) {
+  $size: 2px;
+
+  @if $type == mid {
+    $size: 8px;
+  }
+
+  @if $type == top {
+    $size: 12px;
+  }
+
+  box-shadow: 0 0 #{$size} 0 rgba(0, 0, 0, 0.06), 0 #{$size} #{$size} 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+
+@mixin screen-small() {
+  @media screen and (max-width: $alabaster_breakpoint) {
+    @content;
+  }
+}
+
+@mixin screen-big() {
+  @media screen and (min-width: $alabaster_breakpoint + 1px) {
+    @content;
   }
 }

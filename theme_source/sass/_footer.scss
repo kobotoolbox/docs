@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 html body div.footer {
   width: 100%;
@@ -8,6 +9,10 @@ html body div.footer {
   padding: 2em 0;
   font-size: 0.9em;
   text-align: center;
+
+  @include screen-small {
+    display: block;
+  }
 
   a {
     color: inherit;
