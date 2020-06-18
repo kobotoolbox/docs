@@ -22,3 +22,42 @@
     }
   }
 }
+
+@mixin button() {
+  cursor: pointer;
+  font-family: $font_source;
+  font-weight: 600;
+  font-size: inherit;
+  line-height: 1em;
+  height: 2em;
+  background: $blue;
+  color: $white !important;
+  text-transform: uppercase;
+  padding: 0.5em 1em 0.4em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  border: none !important;
+  box-sizing: border-box;
+
+  &:hover {
+    background: darken($blue, 15%);
+    color: $white !important;
+  }
+}
+
+@mixin input() {
+  font-size: inherit;
+  line-height: 1em;
+  height: 2em;
+  background: $white;
+  color: $black;
+  padding: 0.5em 1em 0.4em;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: rgba($black, 0.5);
+  }
+}

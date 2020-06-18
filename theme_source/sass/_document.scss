@@ -1,10 +1,33 @@
 @import "variables";
+@import "mixins";
 
 html body div.document {
   padding-top: $header_height;
   margin: 0 auto;
   width: 100%;
   max-width: $max_width;
+}
+
+div.document {
+  a.reference {
+    border-bottom: none;
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+
+    &:hover {
+      border-bottom: none;
+      text-decoration-style: solid;
+    }
+  }
+
+  a.headerlink {
+    color: rgba($black, 0.5);
+
+    &:hover {
+      color: $blue;
+      background: none;
+    }
+  }
 }
 
 div.document div.body,
@@ -18,9 +41,24 @@ div.document div.sphinxsidebar {
   h1, h2, h3, h4, h5, h6 {
     font-family: $font_source;
     color: inherit;
-    font-size: 1.5em;
     font-weight: initial;
     padding: 0;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.25em;
+  }
+
+  h4 {
+    font-size: 1.125em;
   }
 }
 
@@ -37,7 +75,6 @@ div.document div.body {
   }
 
   h1 {
-    font-size: 2em;
     margin-top: 0;
   }
 }
@@ -70,12 +107,14 @@ div.document div.sphinxsidebar {
     font-family: $font_source;
     text-transform: uppercase;
     font-weight: 600;
+    line-height: 1.25;
   }
 
   ul {
     font-size: 0.8em;
+    list-style: none;
 
-    li:not(:first-of-type) {
+    li:not(:last-of-type) {
       margin-bottom: 0.5em;
     }
 
@@ -85,6 +124,11 @@ div.document div.sphinxsidebar {
         font-size: inherit;
       }
     }
+
+    li.toctree-l2 {
+      list-style: circle;
+      margin-left: 1em;
+    }
   }
 
   #searchbox {
@@ -92,6 +136,19 @@ div.document div.sphinxsidebar {
 
     #searchlabel {
       margin: 0 0 0.5em;
+    }
+
+    form.search {
+      input[type="text"] {
+        @include input();
+        width: 65%;
+      }
+
+      input[type="submit"] {
+        @include button();
+        width: 34%;
+        margin-left: 1%;
+      }
     }
   }
 }

@@ -54,18 +54,19 @@ html_theme = 'alabaster'
 html_sidebars = {
     '**': [
         'searchbox.html',
-        # 'about.html',
+        'about.html',
         'navigation.html',
     ]
 }
 
 html_theme_options = {
-    'globaltoc_collapse': False,
-    'globaltoc_includehidden': True,
-    # for alabaster about sidebar
-    'logo': 'kobologo.svg',
-    'github_user': 'kobotoolbox',
-    'github_repo': 'docs',
+    # 'analytics_id': 'UA-#######-##',
+    'sidebar_collapse': False,
+    'sidebar_includehidden': True,
+    'show_relbar_bottom': True,
+    'github_banner': False,
+    'github_button': False,
+    'travis_button': False,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
