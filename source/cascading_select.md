@@ -4,7 +4,7 @@ Cascading select questions are sets of questions whose options depend on the res
  
 Adding sets of cascading select questions to your form can be done by importing them to a draft form in the formbuilder or adding them manually to an XLS Form and then uploading that file.
 
-**Importing cascading question sets in the formbuilder
+## Importing cascading question sets in the formbuilder
 
 _(Note: This is only available in the new version of KoBoToolbox)_
 
@@ -20,14 +20,14 @@ _(Note: This is only available in the new version of KoBoToolbox)_
 
 5. If you want to add additional responses to the cascading list just delete the imported questions and import a new list from your spreadsheet.  
 
-**Adding cascading question sets in XLS Form (Option 1)
+## Adding cascading question sets in XLS Form (Option 1)
 
 1. (If you have an existing form, download it as XLS to your computer and open it in Excel or another spreadsheet program).
 
 2. In the survey sheet, add new lines for the questions you'd like to add, following [this template](https://docs.google.com/spreadsheets/d/10gpBV6YaYGx1i367hyW-w1Ms9tkUQnCx0V8YsdwYxmk/edit#gid=0).  
 
     ![image](/images/cascading_select/survey.png)  
-    
+
 3. In the same sheet, add a column called choice_filter and add the XLSForm reference to each of the parent items.
 
 4. In the choices sheet of the file add all the options you would like to appear in the different questions, e.g. the lists of states, counties, and cities (follow the above template).  
@@ -39,7 +39,8 @@ _(Note: This is only available in the new version of KoBoToolbox)_
 6. Save your form. In KoBoToolbox open the main menu and click on Projects. From here you can upload and deploy your form directly, including the newly added cascading select questions.
 
     ![image](/images/cascading_select/upload.png)  
-**Adding cascading question sets in XLS Form (Option 2)
+
+## Adding cascading question sets in XLS Form (Option 2)
 
 Sometimes it is so required that a researcher wishes to limit the responses (choices) from the previous question to the subsequent question. For this one could do as follows:
 

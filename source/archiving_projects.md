@@ -2,11 +2,11 @@
 
 **This article describes the purpose and process of archiving and unarchiving a project**
 
-**Purpose of archiving**
+## Purpose of archiving
 
 It is advisable to archive forms that are no longer used for data collection. This prevents data collection using wrong forms especially in large teams of data collectors.
 
-**Process of archiving**
+## Process of archiving
 
 To archive a project you need to take the following steps:
 
@@ -24,10 +24,10 @@ To archive a project you need to take the following steps:
 
 * If you go back to the list of your projects you will find the project within the archived list
 
-**Process of unarchiving**
+## Process of unarchiving
 
 * You will follow the same process by selecting the project, tapping its setting buttons, selecting the unarchiving button
 
     ![image](/images/archiving_projects/unarchive_popup.jpg)
 
-* You will ge a similar warning that message which you have to confirm by selecting unarchive
+* You will get a similar warning that message which you have to confirm by selecting unarchive

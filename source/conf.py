@@ -54,7 +54,7 @@ html_theme = 'alabaster'
 html_sidebars = {
     '**': [
         'searchbox.html',
-        'about.html',
+        'about.html', # NOTE: we override it, see: `source/_templates`
         'navigation.html',
     ]
 }
@@ -67,6 +67,7 @@ html_theme_options = {
     'github_banner': False,
     'github_button': False,
     'travis_button': False,
+    'fixed_sidebar': False,
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,

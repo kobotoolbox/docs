@@ -7,9 +7,9 @@ KoBoToolbox consists of the following components, all of which are open source (
    * [enketo-express](https://github.com/kobotoolbox/enketo-express/) - HTML5 Web app for collecting data, previewing forms, editing data submissions.
    * [kobocollect](https://play.google.com/store/apps/details?id=org.koboc.collect.android) - Android app for collecting data.
 
-KoBoToolbox is based on elements from several other open source tools, most importantly pyxform, formhub/onadata, and the OpenDataKit. As a result, all forms and collected data are compatible with these tools. 
+KoBoToolbox is based on elements from several other open source tools, most importantly pyxform, formhub/onadata, and the OpenDataKit. As a result, all forms and collected data are compatible with these tools.
 
-**High-level server-side overview**
+## High-level server-side overview
 
 ![image](/images/software_architecture/overview.png)
 

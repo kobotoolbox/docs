@@ -16,7 +16,7 @@ If you are building your survey project through an XLSForm, you could do the sam
 
 ![image](/images/alternative_enketo/xls.png)
 
-**List of available styles in XLSForm:**
+## List of available styles in XLSForm:
 
 Default – single page : _(leave blank)_  
 Grid theme : _theme-grid no-text-transform_  

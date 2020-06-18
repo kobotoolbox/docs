@@ -4,7 +4,7 @@ KoBoCollect can run on any Android device, whether tablet or phone, as long as t
 
 Recommending devices for field data collection is difficult due to the large number of available devices, each with different features and advantages. When choosing a device you need to weigh the importance of screen quality, durability, battery capacity, camera (consider whether you'll need front-facing, back-facing, or both), internal storage and memory, internal sensors (GPS, movement), connectivity options (WiFi, cellular, BlueTooth, ...), weight, etc.
 
-**Phones vs. Tablets**
+## Phones vs. Tablets
 
 An important choice early on is whether to choose a phone or a tablet. Phones have the advantage of also having cellular data connectivity, which a lot of tablets don't support. This allows synchronizing data while cell phone service is available and not depending on WiFi networks. Cell phone service is not an option in many remote field settings, of course, though this may be attractive when working in urban locations or areas with high cell phone service coverage.
 
@@ -12,7 +12,7 @@ In general, try to achieve a good balance between acceptable pricing and choosin
 
 When choosing a cell phone, ensure that the chosen model supports the frequencies available in the country of deployment. Choosing phones that are unlocked and that use multiple frequencies (quad band) are ideal for this purpose.
 
-**Pricing**
+## Pricing
 
 Mobile devices for field data collection do not have to be expensive and it is not necessary or recommended to choose latest-generation phones or tablets (which often range above $400 for tablets and over $600 for phones). These devices tend to be equipped with all the latest technology which means that they will not be outdated technologically for a long time. However, their high costs also makes them a bigger inventory risk for potential theft or damages.
 
