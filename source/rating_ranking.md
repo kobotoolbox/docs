@@ -12,7 +12,7 @@ The choice of ranking or rating should be purely informed on the mode of analysi
 
 1. Add a question to the survey and select "ranking"
 
-    ![image](/images/rating_ranking/add_question.png)
+    ![image](/images/rating_ranking/add_question.gif)
 
 2. Now you can add the different elements of the ranking question
 
