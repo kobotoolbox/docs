@@ -1,0 +1,483 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:600");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  line-height: 1.25em;
+}
+
+html {
+  font-size: 14px;
+}
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: calc(14px + 4 * ((100vw - 320px) / 680));
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  color: #414453;
+  background: #f6f7f8;
+}
+
+a {
+  color: #2095f3;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a:hover {
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  color: #0a6dbc;
+}
+
+a.button {
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: inherit;
+  line-height: 1em;
+  height: 2em;
+  background: #2095f3;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5em 1em 0.4em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  border: none !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a.button:hover {
+  background: #0a6dbc;
+  color: #fff !important;
+}
+
+a.button.button--black {
+  background: #414453;
+}
+
+a.button.button--black:hover {
+  background: #1f2128;
+}
+
+img {
+  max-width: 100%;
+}
+
+html body header.main-header {
+  position: fixed;
+  height: 70px;
+  background: #414453;
+  color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 999;
+  top: 0;
+  left: 0;
+}
+
+html body header.main-header h1.main-header__logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 15px 20px;
+  padding: 0;
+  color: transparent;
+  background: url("../images/kobologo.svg") no-repeat 0 100%;
+  background-size: contain;
+}
+
+html body header.main-header h1.main-header__logo a,
+html body header.main-header h1.main-header__logo a:hover {
+  color: transparent;
+  font-size: 1em;
+}
+
+html body header.main-header .main-header__navigation ul {
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  margin: 0;
+  padding: 24px 30px;
+  list-style-type: none;
+  text-transform: uppercase;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+
+html body header.main-header .main-header__navigation ul li {
+  display: inline-block;
+  margin-left: 1.2em;
+  margin-right: 0;
+}
+
+html body header.main-header .main-header__navigation ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+html body header.main-header .main-header__navigation ul li a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (min-width: 769px) {
+  html body header.main-header .main-header__navigation ul li.current a {
+    color: #2095f3;
+  }
+}
+
+@media screen and (max-width: 359px) {
+  html body header.main-header .main-header__navigation ul {
+    padding: 24px 15px;
+  }
+}
+
+html body div.document {
+  padding-top: 70px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+div.document a.reference {
+  border-bottom: none;
+  -webkit-text-decoration-style: dotted;
+          text-decoration-style: dotted;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+div.document a.reference:hover {
+  border-bottom: none;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+}
+
+div.document a.headerlink {
+  color: rgba(65, 68, 83, 0.5);
+}
+
+div.document a.headerlink:hover {
+  color: #2095f3;
+  background: none;
+}
+
+div.document div.body h1,
+div.document div.body h2,
+div.document div.body h3,
+div.document div.sphinxsidebar h1,
+div.document div.sphinxsidebar h2,
+div.document div.sphinxsidebar h3 {
+  font-weight: 600;
+  line-height: 1.25em;
+  text-transform: uppercase;
+}
+
+div.document div.body h1,
+div.document div.body h2,
+div.document div.body h3,
+div.document div.body h4,
+div.document div.body h5,
+div.document div.body h6,
+div.document div.sphinxsidebar h1,
+div.document div.sphinxsidebar h2,
+div.document div.sphinxsidebar h3,
+div.document div.sphinxsidebar h4,
+div.document div.sphinxsidebar h5,
+div.document div.sphinxsidebar h6 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: inherit;
+  font-weight: initial;
+  padding: 0;
+}
+
+div.document div.body h1,
+div.document div.sphinxsidebar h1 {
+  font-size: 2em;
+}
+
+div.document div.body h2,
+div.document div.sphinxsidebar h2 {
+  font-size: 1.5em;
+}
+
+div.document div.body h3,
+div.document div.sphinxsidebar h3 {
+  font-size: 1.25em;
+}
+
+div.document div.body h4,
+div.document div.sphinxsidebar h4 {
+  font-size: 1.125em;
+}
+
+div.document div.body,
+div.document div.sphinxsidebarwrapper {
+  padding: 2.5em 2em 1em;
+}
+
+div.document div.related.bottom {
+  border-top: 1px solid #e8e9ed;
+  padding: 1em;
+  line-height: inherit;
+}
+
+div.document div.related.bottom nav#rellinks {
+  display: block;
+  width: 100%;
+  float: none;
+}
+
+div.document div.related.bottom nav#rellinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+div.document div.related.bottom nav#rellinks ul li:first-of-type {
+  text-align: left;
+}
+
+div.document div.related.bottom nav#rellinks ul li:last-of-type {
+  text-align: right;
+}
+
+div.document div.related.bottom nav#rellinks ul li + li::before {
+  content: none;
+}
+
+div.document div.bodywrapper {
+  -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.06), 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+  background: #fff;
+}
+
+@media screen and (min-width: 876px) {
+  div.document div.bodywrapper {
+    margin-bottom: 2em;
+  }
+}
+
+div.document div.body {
+  color: inherit;
+}
+
+div.document div.body h1,
+div.document div.body h2,
+div.document div.body h3,
+div.document div.body h4,
+div.document div.body h5,
+div.document div.body h6 {
+  margin: 1em 0;
+}
+
+div.document div.body h1 {
+  margin-top: 0;
+}
+
+div.document div.body tt,
+div.document div.body code {
+  background-color: #e8e9ed;
+  color: inherit;
+  border-radius: 2px;
+  padding: 0.2em 0.4em;
+  line-height: 0.8em;
+  font-size: 0.8em;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 876px) {
+  div.document div.sphinxsidebarwrapper {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+  }
+}
+
+div.document div.sphinxsidebar {
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 875px) {
+  div.document div.sphinxsidebar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: initial;
+    color: inherit;
+  }
+}
+
+div.document div.sphinxsidebar h1,
+div.document div.sphinxsidebar h2,
+div.document div.sphinxsidebar h3,
+div.document div.sphinxsidebar h4,
+div.document div.sphinxsidebar h5,
+div.document div.sphinxsidebar h6 {
+  margin: 1em 0 0.5em 0;
+}
+
+div.document div.sphinxsidebar a {
+  color: inherit;
+}
+
+div.document div.sphinxsidebar p.caption,
+div.document div.sphinxsidebar ul {
+  color: inherit;
+  margin: 1em 0;
+  padding: 0;
+}
+
+div.document div.sphinxsidebar p.caption:last-child,
+div.document div.sphinxsidebar ul:last-child {
+  margin-bottom: 0;
+}
+
+div.document div.sphinxsidebar p.caption {
+  font-family: "Source Sans Pro", sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+div.document div.sphinxsidebar ul {
+  font-size: 0.8em;
+  list-style: none;
+}
+
+div.document div.sphinxsidebar ul li:not(:last-of-type) {
+  margin-bottom: 0.5em;
+}
+
+div.document div.sphinxsidebar ul li.toctree-l1 a,
+div.document div.sphinxsidebar ul li.toctree-l2 a {
+  font-size: inherit;
+}
+
+div.document div.sphinxsidebar ul li.toctree-l2 {
+  list-style: circle;
+  margin-left: 1em;
+}
+
+div.document div.sphinxsidebar #searchbox {
+  margin-bottom: 1em;
+}
+
+div.document div.sphinxsidebar #searchbox #searchlabel {
+  margin: 0 0 0.5em;
+}
+
+div.document div.sphinxsidebar #searchbox form.search input[type="text"] {
+  font-size: inherit;
+  line-height: 1em;
+  height: 2em;
+  background: #fff;
+  color: #414453;
+  padding: 0.5em 1em 0.4em;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 65%;
+}
+
+div.document div.sphinxsidebar #searchbox form.search input[type="text"]::-webkit-input-placeholder {
+  color: rgba(65, 68, 83, 0.5);
+}
+
+div.document div.sphinxsidebar #searchbox form.search input[type="text"]::-moz-placeholder {
+  color: rgba(65, 68, 83, 0.5);
+}
+
+div.document div.sphinxsidebar #searchbox form.search input[type="text"]:-ms-input-placeholder {
+  color: rgba(65, 68, 83, 0.5);
+}
+
+div.document div.sphinxsidebar #searchbox form.search input[type="text"]::-ms-input-placeholder {
+  color: rgba(65, 68, 83, 0.5);
+}
+
+div.document div.sphinxsidebar #searchbox form.search input[type="text"]::placeholder {
+  color: rgba(65, 68, 83, 0.5);
+}
+
+div.document div.sphinxsidebar #searchbox form.search input[type="submit"] {
+  cursor: pointer;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: inherit;
+  line-height: 1em;
+  height: 2em;
+  background: #2095f3;
+  color: #fff !important;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5em 1em 0.4em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  border: none !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 34%;
+  margin-left: 1%;
+}
+
+div.document div.sphinxsidebar #searchbox form.search input[type="submit"]:hover {
+  background: #0a6dbc;
+  color: #fff !important;
+}
+
+html body div.footer {
+  width: 100%;
+  background: #414453;
+  color: #fff;
+  margin: 0;
+  padding: 2em 0;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+@media screen and (max-width: 875px) {
+  html body div.footer {
+    display: block;
+  }
+}
+
+html body div.footer a {
+  color: inherit;
+}
+/*# sourceMappingURL=kobo_theme.css.map */

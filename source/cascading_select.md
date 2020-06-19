@@ -4,7 +4,9 @@ Cascading select questions are sets of questions whose options depend on the res
  
 Adding sets of cascading select questions to your form can be done by importing them to a draft form in the formbuilder or adding them manually to an XLS Form and then uploading that file.
 
-**Importing cascading question set in the formbuilder**
+
+## Importing cascading question sets in the formbuilder
+
 
 _(Note: This is only available in the new version of KoBoToolbox)_
 
@@ -25,7 +27,7 @@ _(Note: This is only available in the new version of KoBoToolbox)_
 
     ![image](/images/cascading_select/form_preview.gif)  
 
-**Adding cascading question sets in XLS Form (Option 1)**
+## Adding cascading question sets in XLS Form (Option 1)
 
 (If you have an existing form, download it as XLS to your computer and open it in Excel or another spreadsheet program).
 
@@ -43,7 +45,8 @@ _(Note: This is only available in the new version of KoBoToolbox)_
 
 6. Save your form. In KoBoToolbox open the main menu and click on Projects. From here you can upload and deploy your form directly, including the newly added cascading select questions.
     
-**Adding cascading question sets in XLS Form (Option 2)**
+
+## Adding cascading question sets in XLS Form (Option 2)
 
 Sometimes a researcher wishes to limit the choices of one question based on the responses from a previous question. For this one could do the following:
 

@@ -2,7 +2,7 @@
 
 Location coordinates can be collected easily in all forms with the 'GPS' response types. 
 
-**Creating the Different Types of GPS Questions**
+## Creating the Different Types of GPS Questions
 
 To collect a GPS coordinate during the data collection process simply add a GPS question to your form. There are three types of GPS questions: **Point**, **Line** and **Area** 
 
@@ -14,11 +14,11 @@ To collect a GPS coordinate during the data collection process simply add a GPS 
 
     ![image](/images/collect_gps/xls.png)
 
-**Collecting Data Using the GPS Questions**
+## Collecting Data Using the GPS Questions
 
 During data entry the enumerator will see different options for collecting the coordinates, which are dependent on the type of data collection device and approach.
 
-**Collecting Data Using Enketo Webforms**
+## Collecting Data Using Enketo Webforms
 
 The form will have various collection options including 
 
@@ -34,7 +34,7 @@ The form will have various collection options including
 
    ![image](/images/collect_gps/current_location.jpg)
 
-**Collecting Data Using KoBoCollect**
+## Collecting Data Using KoBoCollect
 
 The interviewer will see various options depending on the GPS question type
 
@@ -68,7 +68,7 @@ The interviewer will see various options depending on the GPS question type
 
 The GPS area allows you to manually collect GPS area based on manual mode by pressing the map to select the points that create the polygon; the enumerators would need to collect at least three points to create a polygon.
 
-**Accuracy of the Collected GPS Coordinates**
+## Accuracy of the Collected GPS Coordinates
 
 The accuracy of the collected GPS is dependent on various factors.
 
@@ -92,7 +92,7 @@ When collecting GPS coordinate and their device doesn't have a GPS sensor or GPS
 
 _Note: GPS in this context does not exclusively refer to the Global Positioning System but also to other satellite navigation systems used by mobile devices, such as GLONASS._
 
-**Troubleshooting**
+## Troubleshooting
 
 If you are unable to get a GPS location with the GPS response type, please check these options:
 

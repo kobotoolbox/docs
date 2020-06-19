@@ -1,0 +1,65 @@
+@import "variables";
+
+html body header.main-header {
+  position: fixed;
+  height: $header_height;
+  background: $black;
+  color: $white;
+  width: 100%;
+  display: flex;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  h1.main-header__logo {
+    flex-grow: 1;
+    margin: 15px 20px;
+    padding: 0;
+    color: transparent;
+    background: url("../images/kobologo.svg") no-repeat 0 100%;
+    background-size: contain;
+
+    a,
+    a:hover {
+      color: transparent;
+      font-size: 1em;
+    }
+  }
+
+  .main-header__navigation {
+    ul {
+      flex-grow: 0;
+      margin: 0;
+      padding: 24px 30px;
+      list-style-type: none;
+      text-transform: uppercase;
+      font-family: "Source Sans Pro", sans-serif;
+      font-weight: 600;
+
+      li {
+        display: inline-block;
+        margin-left: 1.2em;
+        margin-right: 0;
+
+        a {
+          color: $white;
+          text-decoration: none;
+
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+
+        @media screen and (min-width: 769px) {
+          &.current a {
+            color: $blue;
+          }
+        }
+      }
+
+      @media screen and (max-width: 359px) {
+        padding: 24px 15px;
+      }
+    }
+  }
+}

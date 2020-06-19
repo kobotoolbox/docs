@@ -1,20 +1,20 @@
 # How To Lower the File Size of Collected Media
 
-When your form collects more than 1 image - or you are collecting tens of thousands of records -  you could face difficulties when attempting to generate the Media Attachments ZIP if you do not adjust the image quality settings before starting data collection. 
+When your form collects more than 1 image - or you are collecting tens of thousands of records -  you could face difficulties when attempting to generate the Media Attachments ZIP if you do not adjust the image quality settings before starting data collection.
 
 Open Camera is a 3rd party open-source application that can help you do this.
 
-**Instructions**
+## Instructions
 
 [Install Open Camera](https://play.google.com/store/apps/details?id=net.sourceforge.opencamera&hl=en_US) from the Android Play Store.
 
 ![image](/images/lower_file_size/open_cam.png)
 
-**KoBoCollect**
+## KoBoCollect
 
 In KoBoCollect, when you take a photo you will now be asked which app should be used by default: Choose Open Camera and select 'Always' so you are not asked again.
 
-**Open Camera**
+## Open Camera
 
 In the Open Camera settings, go to Photo Settings, then:
 

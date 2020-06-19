@@ -22,7 +22,7 @@ copyright = '2020, KoBoToolbox'
 author = 'KoBoToolbox'
 
 # The full version, including alpha/beta/rc tags
-release = '1'
+# release = '1'
 
 
 # -- General configuration ---------------------------------------------------
@@ -48,10 +48,42 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
-#
+
 html_theme = 'alabaster'
+
+html_sidebars = {
+    '**': [
+        'searchbox.html',
+        'about.html', # NOTE: we override it, see: `source/_templates`
+        'navigation.html',
+    ]
+}
+
+html_theme_options = {
+    # 'analytics_id': 'UA-#######-##',
+    'sidebar_collapse': False,
+    'sidebar_includehidden': True,
+    'show_relbar_bottom': True,
+    'github_banner': False,
+    'github_button': False,
+    'travis_button': False,
+    'fixed_sidebar': False,
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
+
+# We override all css
+# html_style = 'css/kobo_theme.css'
+
+# These paths are either relative to html_static_path
+# or fully qualified paths (eg. https://...)
+html_css_files = [
+    'css/kobo_theme.css',
+]
+html_js_files = [
+    'js/custom.js',
+]
+

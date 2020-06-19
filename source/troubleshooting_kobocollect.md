@@ -14,17 +14,17 @@ _Common error messages with troubleshooting guides:_
 
 **Error: Generic Exception: No peer certificate or Form listing failed. Error: javx.net.ssl.SSLPeerUnverifiedException...**
 
-This error appears when KoBoCollect tries to communicate with the server but can't establish a secure (SSL/HTTPS) connection. 
+This error appears when KoBoCollect tries to communicate with the server but can't establish a secure (SSL/HTTPS) connection.
 
-**Troubleshooting:** 
+**Troubleshooting:**
 
 1. Highly likely your device is using the wrong date. Check that the date is correct, then try again. _Please refer to your phone/tablet manual on how to set the date._ Android devices reset their dates to 2000 or another year if ever the battery goes to 0%, which is why this error can appear frequently if your team has a tendency to drain the battery all the way.
 
-2. You may also see this error message if you are using a WiFi hotspot that requires you to sign in after connecting. 
+2. You may also see this error message if you are using a WiFi hotspot that requires you to sign in after connecting.
 
 **Error: KoBoCollect has crashed**
 
-**Troubleshooting:** 
+**Troubleshooting:**
 
 1. If this **occurs** while you are trying to **upload submissions or download a new form**, then your device has a significant interruption in its Internet connection. Although it sounds alarming, it is harmless: Simply repeat the upload or download process.
 
@@ -35,9 +35,9 @@ This error appears when KoBoCollect tries to communicate with the server but can
 
 **Error: Unable to edit this blank form because the corresponding blank form is not present or was deleted**
 
-**Troubleshooting:** 
+**Troubleshooting:**
 
-This type of error message occurs when you try to edit your saved form when the corresponding blank form is not present or was deleted. 
+This type of error message occurs when you try to edit your saved form when the corresponding blank form is not present or was deleted.
 
 If this occurs, retrieve the corresponding blank form from your KoBoToolbox account by clicking **Get Blank Form** on the home screen and then select the particular form which requires amendments.
 
@@ -45,4 +45,4 @@ If this occurs, retrieve the corresponding blank form from your KoBoToolbox acco
 
 **Troubleshooting:**
 
-You see this error message when your device is out of storage space. To overcome this issue, free your device by uninstalling some unnecessary app and then try installing KoBoCollect. 
+You see this error message when your device is out of storage space. To overcome this issue, free your device by uninstalling some unnecessary app and then try installing KoBoCollect.

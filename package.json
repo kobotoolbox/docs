@@ -1,0 +1,25 @@
+{
+  "name": "kobo_theme",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "_compile": "node-sass --include-path=node_modules --output-style=expanded --source-map=true theme_source/sass/theme.scss source/_static/css/kobo_theme.css",
+    "_prefix": "postcss source/_static/css/kobo_theme.css --use=autoprefixer --map=false --output=source/_static/css/kobo_theme.css",
+    "dev": "npm run _compile -- --watch",
+    "start": "npm run _compile && npm run _prefix"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.7.6",
+    "browserslist": "^4.12.0",
+    "node-sass": "^4.13.1",
+    "postcss": "^7.0.27",
+    "postcss-cli": "^7.1.0"
+  },
+  "browserslist": [
+    "last 4 version"
+  ],
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "dependencies": {}
+}

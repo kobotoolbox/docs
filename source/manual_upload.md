@@ -4,17 +4,17 @@
 
 In some situations, you might not be able to use the standard uploading option after collecting data with KoBoCollect or Enketo Web Forms. For example, your mobile device might be partially broken (e.g. screen is shattered), or your devices are in a remote location without Internet access. It is possible to download the submissions to your local computer first and then uploading them to the server. In remote locations, this might be a good option because you may have access to a computer to download the files but need to physically travel to a different location where you can access the Internet.
 
-**Exporting data from Web Forms**
+## Exporting data from Web Forms
 
-1. In your offline-enabled Web Form open the "drawer" by clicking on the bracket on the left. 
+1. In your offline-enabled Web Form open the "drawer" by clicking on the bracket on the left.
 
     ![image](/images/manual_upload/export_data.png)
 
-2. Click on the Export button. A downloadable file has now been prepared and will be saved to your computer immediately, otherwise click the Export button again. For some browsers this may not work and you will need to click the "alternative download - online" link, which will require an Internet connection. 
+2. Click on the Export button. A downloadable file has now been prepared and will be saved to your computer immediately, otherwise click the Export button again. For some browsers this may not work and you will need to click the "alternative download - online" link, which will require an Internet connection.
 
 3. Follow the import steps shown below.
 
-**Exporting data from KoBoCollect**
+## Exporting data from KoBoCollect
 
 1. Connect the device to your computer
 
@@ -30,13 +30,13 @@ In some situations, you might not be able to use the standard uploading option a
 
 7. Follow the import steps shown below.
 
-**Importing a data ZIP file to KoBoToolbox**
+## Importing a data ZIP file to KoBoToolbox
 
 1. Login to your KoBoToolbox account, then visit:
 
     https://kc.humanitarianresponse.info/your_username/bulk-submission-form *OR*
 
-    https://kc.kobotoolbox.org/your_username/bulk-submission-form 
+    https://kc.kobotoolbox.org/your_username/bulk-submission-form
 
     (depending on where you signed up), and replace 'your_username' with your own username.
 

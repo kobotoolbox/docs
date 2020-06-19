@@ -1,0 +1,46 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+
+  line-height: 1.25em;
+}
+
+body {
+  font-family: $font_roboto;
+  font-size: inherit;
+  margin: 0;
+  padding: 0;
+  color: $black;
+  background: $whitesmoke;
+}
+
+a {
+  color: $blue;
+  transition: $link_transition;
+
+  &:hover {
+    transition: $link_transition;
+    color: darken($blue, 15%);
+  }
+
+  &.button {
+    @include button();
+
+    &.button--black {
+      background: $black;
+
+      &:hover {
+        background: darken($black, 15%);
+      }
+    }
+  }
+}
+
+img {
+  max-width: 100%;
+}

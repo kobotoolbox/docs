@@ -2,7 +2,7 @@
 
 Enketo web forms work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all modern browsers; [see here](https://github.com/kobotoolbox/enketo-express#browser-support) for more details on browsers working with Enketo.
 
-**Known issues with offline forms on iOS**
+## Known issues with offline forms on iOS
 
 iOS (running on iPhones and iPads) devices have several known limitations with using offline-enabled forms due to the Apple operating system platform. We strive to have the latest version of iOS fully supported.
 

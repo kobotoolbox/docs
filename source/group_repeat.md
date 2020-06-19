@@ -7,7 +7,7 @@
 * A set of questions should be repeated indefinitely for every unit, such as members of a household  
 * A set of questions should be displayed together on the same screen during data entry  
 
-**Creating Groups and Displaying Multiple Questions on the Same Screen**
+## Creating Groups and Displaying Multiple Questions on the Same Screen
 
 1. To **create a group** just select one question, then click the Group Questions button. Then, drag and drop the other questions in your form that you want included in this group.
 
@@ -32,8 +32,8 @@
 6. To **remove a group**, click the Delete button in the group header. It will only break apart the group; its child questions won't be affected.
 
     ![image](/images/group_repeat/remove.png)
-    
-**Creating a Group of Repeating Questions
+
+## Creating a Group of Repeating Questions
 
 Repeating groups of questions can be answered multiple times. For example, in a household survey you might want to ask the name, age, gender, and education status of every household member, but you don't know in advance how many members there will be.
 
@@ -46,7 +46,7 @@ Repeating groups of questions can be answered multiple times. For example, in a 
 
 **Advanced users**: The number of times this repeat group can be answered is by default unlimited. After answering the questions the interviewer is able to add another loop after each time. It is possible to set the number of loops in advance to a specific number. For example, if the form asks 'Number of household members' the number of loops can be set to the number given to that question. To specify the number of repeat loops, save your form and export it to XLS format. Inside the file, add a column in the survey sheet called 'repeat_count'. For the specific repeat group in your file, enter a number into that column. Alternatively, you can specify the question whose number should be used, using the referencing style, such as ${household_members}.
 
-**Including names and other responses from previous repeat groups**
+## Including names and other responses from previous repeat groups
 
 Sometimes you might need to include certain details from a previous repeat group in another repeat group. For example, your first repeat group might ask the names of each household member, while later you would like to ask about the education status for each of these members. While it's possible to ask about all details in a single repeat group, this may be awkward in a large survey. This can be done using the indexed-repeat() function in a Calculation question.
 

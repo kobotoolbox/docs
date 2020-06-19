@@ -1,14 +1,14 @@
 # Rating vs Ranking Question Types
 
-**Difference between rating and ranking questions?**
+## Difference between rating and ranking questions?
 
-Often times, people use the terms ranking question and rating question interchangeably, when in fact there is a distinct difference between the two question types. A **rating question** asks survey respondents to compare different items using a common scale (e.g. “Please rate each of the following objects on a rating scale of 1-10, where 1 is ‘not at all important’ and 10 is ‘very important.’”). A **ranking question** on the other hand asks survey respondents to compare a list of different objects to one another (e.g. “Please rank each of the following items in order of importance with #1 being the most important object to #10 being the least important object.”). The ranking question asks respondents to compare items to each other by placing them in order of preference. When analyzing ranking questions, an average ranking is calculated for each answer choice, allowing you to quickly evaluate the most preferred answer choice. 
+Often times, people use the terms ranking question and rating question interchangeably, when in fact there is a distinct difference between the two question types. A **rating question** asks survey respondents to compare different items using a common scale (e.g. “Please rate each of the following objects on a rating scale of 1-10, where 1 is ‘not at all important’ and 10 is ‘very important.’”). A **ranking question** on the other hand asks survey respondents to compare a list of different objects to one another (e.g. “Please rank each of the following items in order of importance with #1 being the most important object to #10 being the least important object.”). The ranking question asks respondents to compare items to each other by placing them in order of preference. When analyzing ranking questions, an average ranking is calculated for each answer choice, allowing you to quickly evaluate the most preferred answer choice.
 
-**When should you use ranking or rating questions?**
+## When should you use ranking or rating questions?
 
 The choice of ranking or rating should be purely informed on the mode of analysis one needs to conduct. Note you can rate different components the same way, however when it comes to ranking you can’t give them the same rank.
 
-**How to add a ranking question in the Formbuilder**
+## How to add a ranking question in the FormBuilder
 
 1. Add a question to the survey and select "ranking"
 
@@ -26,7 +26,7 @@ The choice of ranking or rating should be purely informed on the mode of analysi
 
     ![image](/images/rating_ranking/preview_ranking.gif)
 
-**How to add a Rating Question**
+## How to add a Rating Question
 
 1. You will need to create a question using the same process above.
 
@@ -48,4 +48,4 @@ The choice of ranking or rating should be purely informed on the mode of analysi
 
     ![image](/images/rating_ranking/preview_rating.png)
 
-If you have any questions or feedback on this article, please post about it on our community forum! 
+If you have any questions or feedback on this article, please post about it on our community forum!

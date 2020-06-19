@@ -1,23 +1,23 @@
 # Downloading photos and other media
 
-If your form includes a photo, video, or sound recording question, these files will be uploaded to the server along with your other data. When exporting your dataset to XLS or CSV these files will include references to the filenames of the media attachments, but not the files themselves. To download your media files choose the ZIP option under 'Download data'. 
- 
+If your form includes a photo, video, or sound recording question, these files will be uploaded to the server along with your other data. When exporting your dataset to XLS or CSV these files will include references to the filenames of the media attachments, but not the files themselves. To download your media files choose the ZIP option under 'Download data'.
+
 The following explains other options for downloading and accessing your collected media files.
 
-**Adding direct hyperlinks to collected media in Excel**
+## Adding direct hyperlinks to collected media in Excel
 
 1. Download your data to XLS and open the file
-2. In a new column next to the one that contains the filenames of your images, enter the following formula: 
+2. In a new column next to the one that contains the filenames of your images, enter the following formula:
 
-* **If using the KoBoToolbox server**: 
-    =HYPERLINK("https://kc.kobotoolbox.org/attachment/original?media_file=username/attachments/"&A2")   
-    
-* **If using OCHA's server**: 
+* **If using the KoBoToolbox server**:
+    =HYPERLINK("https://kc.kobotoolbox.org/attachment/original?media_file=username/attachments/"&A2")
+
+* **If using OCHA's server**:
     =HYPERLINK("https://kc.humanitarianresponse.info/attachment/original?media_file=username/attachments/"&A2")
 
-3. In the formula replace 'username' with your own username and 'A2' with the first cell reference that contains the file name of your photo. Then copy the formula down for all your records. 
+3. In the formula replace 'username' with your own username and 'A2' with the first cell reference that contains the file name of your photo. Then copy the formula down for all your records.
 
-4. You can then click on each of the links to open the media file. Note: This will only work if you are signed in to your user account in your default browser. 
+4. You can then click on each of the links to open the media file. Note: This will only work if you are signed in to your user account in your default browser.
 
     The result will look like this:
 

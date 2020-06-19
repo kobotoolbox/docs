@@ -1,5 +1,10 @@
-# macOS
+# NPM
+node_modules
+npm-debug.log
+
+# OS generated
 .DS_Store
+Thumbs.db
 
 # virtual env
 koboenv/

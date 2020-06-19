@@ -1,0 +1,93 @@
+@function strip-unit($value) {
+  @return $value / ($value * 0 + 1);
+}
+
+@mixin fluid-type($min-vw, $max-vw, $min-font-size, $max-font-size) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-font-size);
+  $u4: unit($max-font-size);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      font-size: $min-font-size;
+
+      @media screen and (min-width: $min-vw) {
+        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+
+      @media screen and (min-width: $max-vw) {
+        font-size: $max-font-size;
+      }
+    }
+  }
+}
+
+@mixin button() {
+  cursor: pointer;
+  font-family: $font_source;
+  font-weight: 600;
+  font-size: inherit;
+  line-height: 1em;
+  height: 2em;
+  background: $blue;
+  color: $white !important;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5em 1em 0.4em;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  border: none !important;
+  box-sizing: border-box;
+
+  &:hover {
+    background: darken($blue, 15%);
+    color: $white !important;
+  }
+}
+
+@mixin input() {
+  font-size: inherit;
+  line-height: 1em;
+  height: 2em;
+  background: $white;
+  color: $black;
+  padding: 0.5em 1em 0.4em;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+
+  &::placeholder {
+    color: rgba($black, 0.5);
+  }
+}
+
+// "mid" element appears to be above regular box-shadow elements
+// "top" element appears to be above mid box-shadow elements
+@mixin box-shadow($type: normal) {
+  $size: 2px;
+
+  @if $type == mid {
+    $size: 8px;
+  }
+
+  @if $type == top {
+    $size: 12px;
+  }
+
+  box-shadow: 0 0 #{$size} 0 rgba(0, 0, 0, 0.06), 0 #{$size} #{$size} 0 rgba(0, 0, 0, 0.12);
+  border-radius: 2px;
+}
+
+@mixin screen-small() {
+  @media screen and (max-width: $alabaster_breakpoint) {
+    @content;
+  }
+}
+
+@mixin screen-big() {
+  @media screen and (min-width: $alabaster_breakpoint + 1px) {
+    @content;
+  }
+}
