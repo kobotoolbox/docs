@@ -44,6 +44,7 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :caption: Creating Forms
 
   new_project
+  edit_forms_excel
   xls_url
   formbuilder
   question_types
@@ -54,30 +55,29 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   calculate_questions
   advanced_calculate
   video_question_type
+  matrix_response
   responses_inside_question
   number_text_responses
   user_specified_other
   media
   add_logo
   cascading_select
-  language_dashboard
-  language_xls
+  group_repeat
+  restrict_responses
   p_codes
-  lower_file_size
   unique_serial_numbers
   pull_data_kobotoolbox
-  custom_format_web
+  audit_logging
+  collecting_signatures
+  language_dashboard
+  language_xls
   form_meta
   encrypting_forms
-  audit_logging
-  restrict_responses
-  hxl
-  deploy_form_new_project
-  edit_forms_excel
-  matrix_response
+  custom_format_web
   alternative_enketo
-  group_repeat
-  collecting_signatures
+  hxl
+  lower_file_size
+  deploy_form_new_project
 
 .. toctree::
   :hidden:
