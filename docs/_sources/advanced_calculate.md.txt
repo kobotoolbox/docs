@@ -1,16 +1,14 @@
 # Advanced Use of Calculate Questions
 
-**Advanced Use of Calculate Questions
-
 Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a **Calculation**, and writing the mathematical expression into the question label field. 
 
 This article provides step-by-step instructions on how to add calculations while using the form builder or by downloading and adding it directly to the XLSform. 
 
 To view a complete and detailed list of all functions please visit ODK's excellent [XPath Functions documentation](https://getodk.github.io/xforms-spec).  
 
-**Approaches towards adding calculate questions:
+## Approaches towards adding calculate questions:
 
-**Using the form builder**
+### Using the form builder
 
 Step 1: Add a calculate question
 
@@ -25,7 +23,7 @@ Note:
 * Your calculate question will not be displayed when conducting data entry/collection either on Kobo Collect or Enketo. It will, however, be displayed when looking at the data in the table view or in the downloaded version.  
 * You must follow similar rules as for XLS forms (see our section rules below).  
 
-**Using the XLS forms**
+### Using the XLS forms
 
 We recommend this approach when working with more advanced calculate functions. 
 
@@ -42,9 +40,9 @@ XLS forms allow for use of calculate function on different types of question typ
     
     ![image](/images/advanced_calculate/xls.png)
 
-**Rules when working with calculate questions:
+## Rules when working with calculate questions:
 
-**These rules apply to both the form builder and XLSform**
+### These rules apply to both the form builder and XLSform
 
 1. You cannot use both numeric and string calculations within the same question  
 2. Your numeric calculations will follow the BODMAS rule in applying calculations i.e. the order of executing the calculations will be Brackets, Divisions, Multiplications, Additions then Subtractions (Always remember this when ordering a question)  
@@ -52,21 +50,21 @@ XLS forms allow for use of calculate function on different types of question typ
 4. When referencing a question in a calculation you need to indicate it as `${Question}` where question is the name of the question  
 5. You can "force" a calculation to evaluate by setting 'required' to TRUE  
 
-**List of tested calculate functions
+### List of tested calculate functions
 
 _(Please feel free to recommend additional ones and we will update)_
 
 ![image](/images/advanced_calculate/list.png)
 
-**Working with IF command on calculations**
+### Working with IF command on calculations
 
 ![image](/images/advanced_calculate/if_command.png)
 
-**Work-arounds for calculations 
+### Work-arounds for calculations
 
 _Recommended for advanced users_
 
-**Workaround 1: Creating Dummy Questions for Calculation of Final Score in a Series of Questions**
+#### Workaround 1: Creating Dummy Questions for Calculation of Final Score in a Series of Questions**
 
 Let's say you have a question like  `QN1 Do you have a question?` Answers `Yes=1 No=2 Don’t Know=999`
 
@@ -77,6 +75,3 @@ Notice in my test form I managed to create the situation and the data appears as
 Once you do this for all your questions you can add a calculate question that sums up all the dummies as:  
 
 `${QN1d}+${QN2d}+ etc`
-    
-
-

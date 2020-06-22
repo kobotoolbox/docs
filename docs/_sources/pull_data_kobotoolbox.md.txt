@@ -1,6 +1,6 @@
 # Pull Data () Functionality in Kobotoolbox
 
-This is best done on xls version of the form. 
+This is best done on xls version of the form.
 
 * In the survey side of the form add a calculate field to your survey.
 * Give that field a name that you want

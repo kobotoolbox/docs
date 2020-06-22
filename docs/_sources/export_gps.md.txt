@@ -2,7 +2,7 @@
 
 Your project may include a one or more GPS questions in its form. KoBoToolbox will include the GPS data (latitude, longitude, altitude, precision) in the dataset that can be downloaded as XLS or CSV. It is also possible to view the GPS coordinates on an online map and to download the points as a KML file for use in other applications.
 
-**Viewing your GPS points**
+## Viewing your GPS points
 
 ![image](/images/export_gps/view_gps.jpg)
 
@@ -29,6 +29,6 @@ Note: In case your form uses more than one GPS question, only the first one will
 
 As an alternative to exporting your GPS data as a KML file, its possible and easy to export and upload your data as a CSV file (which will include all attributes) directly into GIS software as a shapefile. For a step-by-step guide, refer to this [help article](upload_to_gis.md).
 
-**How to share map data**
+## How to share map data
 
 You can share a map with others is to go into your Project's Settings and enable Share Data. This means that anyone can view your data - i.e. in map, table, or file download format. They won't be able to edit anything, which would require giving Can Edit permissions to a particular user. After this you can send the URL of the map (see above). 

@@ -1,22 +1,22 @@
 # Pulling your data into PowerBI
 
-**KoBoToolbox**
+## KoBoToolbox
 
-First, you need to find the unique URL that allows you to access your project data via the API. If you already know how to find this, skip to the next section. 
+First, you need to find the unique URL that allows you to access your project data via the API. If you already know how to find this, skip to the next section.
 
-1. The unique URL has the following structure: `https://[kobocat-URL]/api/v1/data/[unique-kc-ID]`. 
+1. The unique URL has the following structure: `https://[kobocat-URL]/api/v1/data/[unique-kc-ID]`.
 
-2. To find this URL, go to [https://[kobocat-URL]/api/v1/data/](https://[kobocat-URL]/api/v1/data/) and find the project in the list at the bottom, the copy the value for 'url' (without the quotation marks). For example: 
+2. To find this URL, go to [https://[kobocat-URL]/api/v1/data/](https://[kobocat-URL]/api/v1/data/) and find the project in the list at the bottom, the copy the value for 'url' (without the quotation marks). For example:
 
     ![image](/images/pulling_data_powerbi/kobo.jpg)
 
-**PowerBI**
+## PowerBI
 
 ![image](/images/pulling_data_powerbi/powerbi.gif)
 
-1. Open the [Power BI file](https://drive.google.com/file/d/1kYUnVjXIU5zFK-Yn43dPqARy-3L8N7xr/view)  
+1. Open the [Power BI file](https://drive.google.com/file/d/1kYUnVjXIU5zFK-Yn43dPqARy-3L8N7xr/view)
 
-2. Click on **Edit Queries** found under the Home ribbon  
+2. Click on **Edit Queries** found under the Home ribbon
 
     ![image](/images/pulling_data_powerbi/edit_queries.jpg)
 

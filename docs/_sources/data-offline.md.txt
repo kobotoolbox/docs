@@ -8,7 +8,7 @@ All synchronization is proofed even against poor Internet connection quality. Sh
  
 Web Forms uses the browser's HTML5 offline storage to store survey responses as well as the form itself. It is important to wait for the small confirmation message in the top-right on the form, which will show a green checkmark once the form has been cached. After this the form can be accessed and data can be entered even without any connection. It is recommended to create a bookmark on the device to easily access specific forms
  
-**What do I do if I have NO access to the internet?**
+## What do I do if I have NO access to the internet?
 
 If it is not possible to connect a handset to the Internet at all (the interviewers can't move into an area where a connection is available), then it is also possible to transfer survey data from KoBoCollect through an external tool [ODK Briefcase](https://docs.getodk.org/briefcase-intro)) and by connecting the mobile devices by USB cable to a local computer. For more details about how to use ODK Briefcase to transfer data, [read this post](https://blog.cartong.org/2016/03/11/migration-odk-platforms). After this is it possible to upload the survey data from a centralized computer to the KoBoToolbox server, using the same tool.
  

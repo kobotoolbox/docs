@@ -6,14 +6,16 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Managing permissions &#8212; KoBoToolbox 1 documentation</title>
+    <title>Managing permissions &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/custom.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Mapping, sharing, and exporting GPS data" href="export_gps.html" />
@@ -25,6 +27,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
+<header role="banner" class="main-header">
+  <h1 class="main-header__logo">
+    <a href="https://kobotoolbox.org/#home">KoBoToolbox</a>
+  </h1>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href="https://kobotoolbox.org/#home">Home</a></li>
+      <li><a href="https://kobotoolbox.org/#features">Features</a></li>
+      <li><a href="https://kobotoolbox.org/#sign-up">Sign Up</a></li>
+      <li><a href="https://kobotoolbox.org/#about">About</a></li>
+      <li><a href="https://kobotoolbox.org/#help">Help</a></li>
+    </ul>
+  </nav>
+</header>
+
   
 
     <div class="document">
@@ -38,11 +55,14 @@
 <h1>Managing permissions<a class="headerlink" href="#managing-permissions" title="Permalink to this headline">¶</a></h1>
 <p><strong>Learn how to grant various permissions for other users to collaborate on your projects</strong></p>
 <p>KoBoToolbox allows giving different permission levels to a data collection project. While most users may only use a single user to manage, access, and enter data for a given project, sometimes more complex scenarios require different levels of access.</p>
-<p><strong>Requiring passwords for accessing forms</strong></p>
+<div class="section" id="requiring-passwords-for-accessing-forms">
+<h2>Requiring passwords for accessing forms<a class="headerlink" href="#requiring-passwords-for-accessing-forms" title="Permalink to this headline">¶</a></h2>
 <p>By default KoBoToolbox only requires a username and password for accessing data and managing your projects. Forms can be accessed by anyone who knows the respective URL. To require users to log in to access your forms, go to Settings inside your online account and check the ‘<strong>Require authentication to see forms and submit data</strong>’ box. (<em>Note: currently requiring authentication can only be set globally for all the projects in your account and not just for individual projects.</em>)</p>
 <p><img alt="image" src="_images/account_settings.jpg" /></p>
 <p><img alt="image" src="_images/user_permissions.jpg" /></p>
-<p><strong>Setting project-specific user permissions</strong></p>
+</div>
+<div class="section" id="setting-project-specific-user-permissions">
+<h2>Setting project-specific user permissions<a class="headerlink" href="#setting-project-specific-user-permissions" title="Permalink to this headline">¶</a></h2>
 <p><img alt="image" src="_images/proj_permissions.jpg" /></p>
 <p>To control project sharing permissions go to the <em>Sharing</em> tab in the <em>Settings</em> page in your data collection project, enter the username of the user who should get new permissions, select the permission level checkbox, then click GRANT PERMISSIONS. The available permissions are:</p>
 <ul class="simple">
@@ -55,21 +75,29 @@
 </ul>
 <p>Some permissions automatically grant other permissions. Example: If a user is granted ‘Add Submissions’ they will also be able to ‘View Form’.</p>
 <p>To copy a team and their associated permissions from another project, click on the link at the bottom of the page. Clicking the link will overwrite any existing settings already defined in the current project.</p>
-<p><strong>Assigning ‘Add Submissions’ rights for specific users</strong></p>
+</div>
+<div class="section" id="assigning-add-submissions-rights-for-specific-users">
+<h2>Assigning ‘Add Submissions’ rights for specific users<a class="headerlink" href="#assigning-add-submissions-rights-for-specific-users" title="Permalink to this headline">¶</a></h2>
 <p>You might want to use one or more users other than your own account to collect data. For example, you created a form and project but have three enumerators in the field, who should only be able to submit data but not access the collected information. Assuming you created your data collection project with username1 and want to share it with username2, username3, and username4:</p>
-<p><strong>In the online platform:</strong></p>
+<div class="section" id="in-the-online-platform">
+<h3>In the online platform:<a class="headerlink" href="#in-the-online-platform" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Sign up with the separate users needed for the field, i.e. username2, username3, and username4. Each one needs to be activated but can all point to the same email address.</li>
 <li>Sign back in to your own account (username1). Go to the Project that you want to allow others to submit to.</li>
 <li>Open the Settings page, and under ADD USER type in ‘username2’, then select ‘Add Submissions’ and click GRANT PERMISSIONS.</li>
 <li>Repeat the last step for each user.</li>
 </ul>
-<p><strong>In KoBoCollect:</strong></p>
+</div>
+<div class="section" id="in-kobocollect">
+<h3>In KoBoCollect:<a class="headerlink" href="#in-kobocollect" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>Under General Settings in the URL field enter <a class="reference external" href="https://kc.kobotoolbox.org">https://kc.kobotoolbox.org</a> or <a class="reference external" href="https://kc.humanitarianresponse.info">https://kc.humanitarianresponse.info</a> as applicable (don’t include the username)</li>
 <li>Then enter the username and password for the user who will use the handset (e.g. username1).</li>
 </ul>
-<p><strong>Advanced View Submissions permission settings</strong></p>
+</div>
+</div>
+<div class="section" id="advanced-view-submissions-permission-settings">
+<h2>Advanced View Submissions permission settings<a class="headerlink" href="#advanced-view-submissions-permission-settings" title="Permalink to this headline">¶</a></h2>
 <p>To set permissions for a user to view only data submitted by a subset of specified users or view data submitted only by themselves, please visit our <a class="reference external" href="https://support.kobotoolbox.org/en/articles/3345421-row-level-permissions">Row-Level Permissions</a> article to learn more.</p>
 <p><strong>A Project owner can give a “Validate Submissions” permission to other users.</strong></p>
 <p>Users with this permission can view a record, edit it if necessary, and assign a status to the record in question. Assigning a status to a particular record/submission raises data collection standards for teams with more than one enumerator.</p>
@@ -83,24 +111,41 @@
 </ul>
 <p>More on “Validate Submissions” can be <a class="reference internal" href="record_validation.html"><span class="doc">found here</span></a>.</p>
 </div>
+</div>
 
 
           </div>
-          
+    <div class="related bottom">
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="rest_services.html" title="Previous document">REST Services</a>
+        </li>
+        <li>
+          <a href="export_gps.html" title="Next document">Mapping, sharing, and exporting GPS data</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+    </div>
+
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
-
-
-
-
-
-
-
-
-<h3>Navigation</h3>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><a class="button button--black" href="index.html">Support Home</a><h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
@@ -120,40 +165,40 @@
 <p class="caption"><span class="caption-text">Creating Forms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use the Calculate Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the Video Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding Media to Your Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on number and text responses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use Calculate Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language to Your Form in the Project Dashboard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to your form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Collecting Data</span></p>
 <ul>
@@ -182,7 +227,13 @@
 <li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and Downloading Your Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and unarchiving your projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Managing permissions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Managing permissions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requiring-passwords-for-accessing-forms">Requiring passwords for accessing forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-project-specific-user-permissions">Setting project-specific user permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assigning-add-submissions-rights-for-specific-users">Assigning ‘Add Submissions’ rights for specific users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-view-submissions-permission-settings">Advanced View Submissions permission settings</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, sharing, and exporting GPS data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is my data safe on your server?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling your data into Excel Power Query</a></li>
@@ -194,34 +245,6 @@
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
 </ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="rest_services.html" title="previous chapter">REST Services</a></li>
-      <li>Next: <a href="export_gps.html" title="next chapter">Mapping, sharing, and exporting GPS data</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-
-
-
-
-
-
 
 
         </div>

@@ -6,14 +6,16 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Manually Uploading Submissions &#8212; KoBoToolbox 1 documentation</title>
+    <title>Manually Uploading Submissions &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/custom.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Collecting GPS Locations" href="collect_gps.html" />
@@ -25,6 +27,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
+<header role="banner" class="main-header">
+  <h1 class="main-header__logo">
+    <a href="https://kobotoolbox.org/#home">KoBoToolbox</a>
+  </h1>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href="https://kobotoolbox.org/#home">Home</a></li>
+      <li><a href="https://kobotoolbox.org/#features">Features</a></li>
+      <li><a href="https://kobotoolbox.org/#sign-up">Sign Up</a></li>
+      <li><a href="https://kobotoolbox.org/#about">About</a></li>
+      <li><a href="https://kobotoolbox.org/#help">Help</a></li>
+    </ul>
+  </nav>
+</header>
+
   
 
     <div class="document">
@@ -38,7 +55,8 @@
 <h1>Manually Uploading Submissions<a class="headerlink" href="#manually-uploading-submissions" title="Permalink to this headline">¶</a></h1>
 <p>[Warning: This is still an experimental feature, and it does not prevent you from creating duplicate submissions.]</p>
 <p>In some situations, you might not be able to use the standard uploading option after collecting data with KoBoCollect or Enketo Web Forms. For example, your mobile device might be partially broken (e.g. screen is shattered), or your devices are in a remote location without Internet access. It is possible to download the submissions to your local computer first and then uploading them to the server. In remote locations, this might be a good option because you may have access to a computer to download the files but need to physically travel to a different location where you can access the Internet.</p>
-<p><strong>Exporting data from Web Forms</strong></p>
+<div class="section" id="exporting-data-from-web-forms">
+<h2>Exporting data from Web Forms<a class="headerlink" href="#exporting-data-from-web-forms" title="Permalink to this headline">¶</a></h2>
 <ol>
 <li><p class="first">In your offline-enabled Web Form open the “drawer” by clicking on the bracket on the left.</p>
 <p><img alt="image" src="_images/export_data.png" /></p>
@@ -48,7 +66,9 @@
 <li><p class="first">Follow the import steps shown below.</p>
 </li>
 </ol>
-<p><strong>Exporting data from KoBoCollect</strong></p>
+</div>
+<div class="section" id="exporting-data-from-kobocollect">
+<h2>Exporting data from KoBoCollect<a class="headerlink" href="#exporting-data-from-kobocollect" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li>Connect the device to your computer</li>
 <li>Open the device’s internal storage on your computer. (For Windows the drivers will install automatically and the device can be opened on My Computer. On iOS you will need <a class="reference external" href="https://www.android.com/intl/en_us/filetransfer">Android File Transfer</a> from Google to access the device’s files.</li>
@@ -58,7 +78,9 @@
 <li>Create a ZIP file of the folder.</li>
 <li>Follow the import steps shown below.</li>
 </ol>
-<p><strong>Importing a data ZIP file to KoBoToolbox</strong></p>
+</div>
+<div class="section" id="importing-a-data-zip-file-to-kobotoolbox">
+<h2>Importing a data ZIP file to KoBoToolbox<a class="headerlink" href="#importing-a-data-zip-file-to-kobotoolbox" title="Permalink to this headline">¶</a></h2>
 <ol>
 <li><p class="first">Login to your KoBoToolbox account, then visit:</p>
 <p>https://kc.humanitarianresponse.info/your_username/bulk-submission-form <em>OR</em></p>
@@ -70,24 +92,41 @@
 </li>
 </ol>
 </div>
+</div>
 
 
           </div>
-          
+    <div class="related bottom">
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="troubleshooting_webforms.html" title="Previous document">Troubleshooting Enketo Web Forms</a>
+        </li>
+        <li>
+          <a href="collect_gps.html" title="Next document">Collecting GPS Locations</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+    </div>
+
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
-
-
-
-
-
-
-
-
-<h3>Navigation</h3>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><a class="button button--black" href="index.html">Support Home</a><h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
@@ -107,40 +146,40 @@
 <p class="caption"><span class="caption-text">Creating Forms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use the Calculate Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the Video Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding Media to Your Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on number and text responses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use Calculate Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language to Your Form in the Project Dashboard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to your form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Collecting Data</span></p>
 <ul class="current">
@@ -153,7 +192,12 @@
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Manually Uploading Submissions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Manually Uploading Submissions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#exporting-data-from-web-forms">Exporting data from Web Forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exporting-data-from-kobocollect">Exporting data from KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importing-a-data-zip-file-to-kobotoolbox">Importing a data ZIP file to KoBoToolbox</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Managing Projects</span></p>
@@ -181,34 +225,6 @@
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
 </ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="troubleshooting_webforms.html" title="previous chapter">Troubleshooting Enketo Web Forms</a></li>
-      <li>Next: <a href="collect_gps.html" title="next chapter">Collecting GPS Locations</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-
-
-
-
-
-
 
 
         </div>

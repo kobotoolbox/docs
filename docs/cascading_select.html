@@ -6,18 +6,20 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Adding Cascading Select Questions &#8212; KoBoToolbox 1 documentation</title>
+    <title>Adding Cascading Select Questions &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/custom.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="How to Use Calculate Questions" href="calculate_questions.html" />
-    <link rel="prev" title="Limits on number and text responses" href="number_text_responses.html" />
+    <link rel="next" title="Grouping Questions and Repeating Groups" href="group_repeat.html" />
+    <link rel="prev" title="Adding a Custom Logo to Your Form" href="add_logo.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -25,6 +27,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
+<header role="banner" class="main-header">
+  <h1 class="main-header__logo">
+    <a href="https://kobotoolbox.org/#home">KoBoToolbox</a>
+  </h1>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href="https://kobotoolbox.org/#home">Home</a></li>
+      <li><a href="https://kobotoolbox.org/#features">Features</a></li>
+      <li><a href="https://kobotoolbox.org/#sign-up">Sign Up</a></li>
+      <li><a href="https://kobotoolbox.org/#about">About</a></li>
+      <li><a href="https://kobotoolbox.org/#help">Help</a></li>
+    </ul>
+  </nav>
+</header>
+
   
 
     <div class="document">
@@ -38,61 +55,94 @@
 <h1>Adding Cascading Select Questions<a class="headerlink" href="#adding-cascading-select-questions" title="Permalink to this headline">¶</a></h1>
 <p>Cascading select questions are sets of questions whose options depend on the response to a previous question. For example, your form may first ask the region where a respondent is from, and then in the next question list only the towns and villages of that region.</p>
 <p>Adding sets of cascading select questions to your form can be done by importing them to a draft form in the formbuilder or adding them manually to an XLS Form and then uploading that file.</p>
-<p>**Importing cascading question sets in the formbuilder</p>
+<div class="section" id="importing-cascading-question-sets-in-the-formbuilder">
+<h2>Importing cascading question sets in the formbuilder<a class="headerlink" href="#importing-cascading-question-sets-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
 <p><em>(Note: This is only available in the new version of KoBoToolbox)</em></p>
-<p><img alt="image" src="_images/cascade_import.gif" /></p>
-<ol class="simple">
-<li>Open Excel or another spreadsheet program and create your template of questions and responses to be added.</li>
-<li><a class="reference external" href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit#gid=0">Follow this template as an example</a> and follow the instructions in the template.</li>
-<li>Select and copy the whole cascading table template, then paste it into the Import Cascade, then click Done to import it. (If there were any mistakes in the formatting you will not be able to import the set - correct any formatting mistakes and make sure you followed the template instructions.)</li>
-<li>You can move the imported questions anywhere in your form and change the labels of both the question and responses and delete responses.</li>
-<li>If you want to add additional responses to the cascading list just delete the imported questions and import a new list from your spreadsheet.</li>
-</ol>
-<p>**Adding cascading question sets in XLS Form (Option 1)</p>
 <ol>
-<li><p class="first">(If you have an existing form, download it as XLS to your computer and open it in Excel or another spreadsheet program).</p>
+<li><p class="first">Open Excel or another spreadsheet program and <a class="reference external" href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit#gid=0">follow this template as an example</a> to create your template of questions and responses to be added.</p>
+<p><img alt="image" src="_images/template.png" /></p>
 </li>
+<li><p class="first">Select and copy the whole cascading table template, then paste it into the Import Cascade, then click Done to import it. (If there were any mistakes in the formatting you will not be able to import the set - correct any formatting mistakes and make sure you followed the template instructions.)</p>
+<p><img alt="image" src="_images/import.gif" /></p>
+</li>
+<li><p class="first">You can move the imported questions anywhere in your form and change the labels of both the question and responses and delete responses.</p>
+</li>
+<li><p class="first">If you want to add additional responses to the cascading list just delete the imported questions and import a new list from your spreadsheet.</p>
+</li>
+<li><p class="first">You can preview the form to test the cascading questions.</p>
+<p><img alt="image" src="_images/form_preview.gif" /></p>
+</li>
+</ol>
+</div>
+<div class="section" id="adding-cascading-question-sets-in-xls-form-option-1">
+<h2>Adding cascading question sets in XLS Form (Option 1)<a class="headerlink" href="#adding-cascading-question-sets-in-xls-form-option-1" title="Permalink to this headline">¶</a></h2>
+<p>(If you have an existing form, download it as XLS to your computer and open it in Excel or another spreadsheet program).</p>
+<ol>
 <li><p class="first">In the survey sheet, add new lines for the questions you’d like to add, following <a class="reference external" href="https://docs.google.com/spreadsheets/d/10gpBV6YaYGx1i367hyW-w1Ms9tkUQnCx0V8YsdwYxmk/edit#gid=0">this template</a>.</p>
 <p><img alt="image" src="_images/survey.png" /></p>
 </li>
-<li><p class="first">In the same sheet, add a column called choice_filter and add the XLSForm reference to each of the parent items.</p>
+<li><p class="first">In the same survey sheet, add a column called <code class="docutils literal notranslate"><span class="pre">choice_filter</span></code> and add the XLSForm reference to each of the parent items.</p>
 </li>
-<li><p class="first">In the choices sheet of the file add all the options you would like to appear in the different questions, e.g. the lists of states, counties, and cities (follow the above template).</p>
+<li><p class="first">In the choices sheet of the file, add all the options you would like to appear in the different questions, e.g. the lists of states, counties, and cities (follow the above template).</p>
 <p><img alt="image" src="_images/choices.png" /></p>
 </li>
-<li><p class="first">Note that for each of the child elements you need to add a column to specify its parent. For example, King and Pierce counties are in Washington state, so you would write ‘washington’ into the ‘state’ column for these two counties.</p>
+<li><p class="first">Note that for each of the child elements you need to add a column to specify its parent. For example, King and Pierce counties are in Washington state, so you need to write ‘washington’ into the ‘state’ column for these two counties.</p>
 </li>
 <li><p class="first">Save your form. In KoBoToolbox open the main menu and click on Projects. From here you can upload and deploy your form directly, including the newly added cascading select questions.</p>
-<p><img alt="image" src="_images/upload.png" /><br />**Adding cascading question sets in XLS Form (Option 2)</p>
 </li>
 </ol>
-<p>Sometimes it is so required that a researcher wishes to limit the responses (choices) from the previous question to the subsequent question. For this one could do as follows:</p>
-<p><strong>In the survey tab of the xlsform:</strong></p>
+</div>
+<div class="section" id="adding-cascading-question-sets-in-xls-form-option-2">
+<h2>Adding cascading question sets in XLS Form (Option 2)<a class="headerlink" href="#adding-cascading-question-sets-in-xls-form-option-2" title="Permalink to this headline">¶</a></h2>
+<p>Sometimes a researcher wishes to limit the choices of one question based on the responses from a previous question. For this one could do the following:</p>
+<ol>
+<li><p class="first">In the survey tab of the xlsform:</p>
 <p><img alt="image" src="_images/survey_1.png" /></p>
-<p><strong>In the choices tab of the xlsform:</strong></p>
+</li>
+<li><p class="first">In the choices tab of the xlsform:</p>
 <p><img alt="image" src="_images/choices_1.png" /></p>
-<p><strong>Screenshot (while collecting data) in Enketo:</strong></p>
+</li>
+<li><p class="first">Preview the data collecting form in Enketo:</p>
 <p><img alt="image" src="_images/preview.png" /></p>
-<p>As seen in the screenshot (above), you will be able to restrict the choices in <strong>Q2</strong> based on the choices that you entered in <strong>Q1</strong>.</p>
+</li>
+</ol>
+<p>As seen above, you will be able to restrict the choices in the second question based on the choices you entered in the first question.</p>
+</div>
 </div>
 
 
           </div>
-          
+    <div class="related bottom">
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="add_logo.html" title="Previous document">Adding a Custom Logo to Your Form</a>
+        </li>
+        <li>
+          <a href="group_repeat.html" title="Next document">Grouping Questions and Repeating Groups</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+    </div>
+
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
-
-
-
-
-
-
-
-
-<h3>Navigation</h3>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><a class="button button--black" href="index.html">Support Home</a><h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
@@ -112,40 +162,45 @@
 <p class="caption"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use the Calculate Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the Video Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding Media to Your Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding Cascading Select Questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#importing-cascading-question-sets-in-the-formbuilder">Importing cascading question sets in the formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-cascading-question-sets-in-xls-form-option-1">Adding cascading question sets in XLS Form (Option 1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-cascading-question-sets-in-xls-form-option-2">Adding cascading question sets in XLS Form (Option 2)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on number and text responses</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding Cascading Select Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use Calculate Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language to Your Form in the Project Dashboard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to your form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Collecting Data</span></p>
 <ul>
@@ -186,34 +241,6 @@
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
 </ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="number_text_responses.html" title="previous chapter">Limits on number and text responses</a></li>
-      <li>Next: <a href="calculate_questions.html" title="next chapter">How to Use Calculate Questions</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-
-
-
-
-
-
 
 
         </div>

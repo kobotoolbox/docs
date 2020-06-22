@@ -6,13 +6,13 @@ For Android devices, we recommend using [KoBoCollect](https://play.google.com/st
 
 For any other devices (including iPhones, iPads, or any laptop or computer), we recommend using the webform (Enketo) for collecting data.
 
-**A quick rundown on the differences between the two options**
+## A quick rundown on the differences between the two options
 
 Based on your needs, you can either use KoBoCollect or the Web Forms.
 
 ![image](/images/data_collection_tool/overview.png)
 
-**Collecting data using KoBoCollect**
+### Collecting data using KoBoCollect
 
 After deploying a project, you can go to **Form - Collect data**, and then select the Android application.
 
@@ -20,7 +20,7 @@ After deploying a project, you can go to **Form - Collect data**, and then selec
 
 For details on how to set up KoBoCollect on any Android devices, [read this article](kobocollect-android.md).
 
-**Collecting Data using the Enketo Webform**
+### Collecting Data using the Enketo Webform
 
 To use the webform, after deploying a project, you can go to **Form - Collect data**, multiple options (online or offline, single or multiple submissions) are available. The default option is **Online-Offline (multiple submission)**.
 

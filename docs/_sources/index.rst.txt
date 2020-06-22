@@ -44,40 +44,40 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   :caption: Creating Forms
 
   new_project
+  edit_forms_excel
   xls_url
+  formbuilder
+  question_types
   question_options
+  skip_logic
   validation_criteria
-  user_specified_other
   rating_ranking
-  lower_file_size
-  add_logo
-  p_codes
+  calculate_questions
+  advanced_calculate
   video_question_type
+  matrix_response
+  responses_inside_question
+  number_text_responses
+  user_specified_other
+  media
+  add_logo
+  cascading_select
+  group_repeat
+  restrict_responses
+  p_codes
   unique_serial_numbers
   pull_data_kobotoolbox
-  custom_format_web
-  responses_inside_question
+  audit_logging
+  collecting_signatures
+  language_dashboard
+  language_xls
   form_meta
   encrypting_forms
-  number_text_responses
-  cascading_select
-  calculate_questions
-  audit_logging
-  question_types
-  language_xls
-  restrict_responses
-  language_dashboard
-  hxl
-  formbuilder
-  media
-  deploy_form_new_project
-  skip_logic
-  edit_forms_excel
-  matrix_response
-  advanced_calculate
+  custom_format_web
   alternative_enketo
-  group_repeat
-  collecting_signatures
+  hxl
+  lower_file_size
+  deploy_form_new_project
 
 .. toctree::
   :hidden:

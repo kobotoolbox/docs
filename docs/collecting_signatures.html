@@ -6,18 +6,20 @@
   <head>
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Collecting signatures &#8212; KoBoToolbox 1 documentation</title>
+    <title>Collecting signatures &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
     <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script type="text/javascript" src="_static/jquery.js"></script>
     <script type="text/javascript" src="_static/underscore.js"></script>
     <script type="text/javascript" src="_static/doctools.js"></script>
     <script type="text/javascript" src="_static/language_data.js"></script>
+    <script type="text/javascript" src="_static/js/custom.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Overview on Data Collection Tools" href="data-collection-tools.html" />
-    <link rel="prev" title="Grouping Questions and Repeating Groups" href="group_repeat.html" />
+    <link rel="next" title="Adding Another Language in the Project Dashboard" href="language_dashboard.html" />
+    <link rel="prev" title="Audit Logging Meta Question Type" href="audit_logging.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -25,6 +27,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
+<header role="banner" class="main-header">
+  <h1 class="main-header__logo">
+    <a href="https://kobotoolbox.org/#home">KoBoToolbox</a>
+  </h1>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href="https://kobotoolbox.org/#home">Home</a></li>
+      <li><a href="https://kobotoolbox.org/#features">Features</a></li>
+      <li><a href="https://kobotoolbox.org/#sign-up">Sign Up</a></li>
+      <li><a href="https://kobotoolbox.org/#about">About</a></li>
+      <li><a href="https://kobotoolbox.org/#help">Help</a></li>
+    </ul>
+  </nav>
+</header>
+
   
 
     <div class="document">
@@ -37,7 +54,8 @@
   <div class="section" id="collecting-signatures">
 <h1>Collecting signatures<a class="headerlink" href="#collecting-signatures" title="Permalink to this headline">¶</a></h1>
 <p>Some forms may require signatures to be included with them. You can use appearance “signature” on both KoboCollect and Enketo. The draw widget is only available when using Enketo for data collection.</p>
-<p><strong>KoboCollect</strong></p>
+<div class="section" id="kobocollect">
+<h2>KoboCollect<a class="headerlink" href="#kobocollect" title="Permalink to this headline">¶</a></h2>
 <p>Kobo Collect allows for a digital signature to be collected directly on the screen of the phone/tablet.</p>
 <p>To add this to your form:</p>
 <ol class="simple">
@@ -45,12 +63,16 @@
 <li>Create the question and set the type as “image”</li>
 <li>Set the appearance to “signature”</li>
 </ol>
-<p><strong>Enketo</strong></p>
+</div>
+<div class="section" id="enketo">
+<h2>Enketo<a class="headerlink" href="#enketo" title="Permalink to this headline">¶</a></h2>
 <p>Digital signatures also work on Enketo web forms, where you have the additional option to use a draw widget to collect signatures. In your XLSForm just add “signature” or “draw” under the appearance column for an image-type question.</p>
 <p>See the below example on how to add these to your form:</p>
 <p><img alt="image" src="_images/example.png" /></p>
 <p><a class="reference external" href="https://enke.to/draw">Follow this link</a> to test the difference between the the draw and signature widgets.</p>
-<p><strong>Create a Signature question type in the Formbuilder</strong></p>
+</div>
+<div class="section" id="create-a-signature-question-type-in-the-formbuilder">
+<h2>Create a Signature question type in the Formbuilder<a class="headerlink" href="#create-a-signature-question-type-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
 <ol>
 <li><p class="first">Create a new question and select Photo as the question type.</p>
 <p><img alt="image" src="_images/new_question.jpg" /></p>
@@ -60,24 +82,41 @@
 </li>
 </ol>
 </div>
+</div>
 
 
           </div>
-          
+    <div class="related bottom">
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="audit_logging.html" title="Previous document">Audit Logging Meta Question Type</a>
+        </li>
+        <li>
+          <a href="language_dashboard.html" title="Next document">Adding Another Language in the Project Dashboard</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+    </div>
+
         </div>
       </div>
       <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
         <div class="sphinxsidebarwrapper">
-<h1 class="logo"><a href="index.html">KoBoToolbox</a></h1>
-
-
-
-
-
-
-
-
-<h3>Navigation</h3>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script><a class="button button--black" href="index.html">Support Home</a><h3>Navigation</h3>
 <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
@@ -97,40 +136,45 @@
 <p class="caption"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses For Multiple-Choice Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use the Calculate Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the Video Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding Media to Your Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the ‘Video’ Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting signatures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#kobocollect">KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#enketo">Enketo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-signature-question-type-in-the-formbuilder">Create a Signature question type in the Formbuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on number and text responses</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use Calculate Questions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language to Your Form in the Project Dashboard</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to your form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Collecting Data</span></p>
 <ul>
@@ -171,34 +215,6 @@
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
 </ul>
-
-<div class="relations">
-<h3>Related Topics</h3>
-<ul>
-  <li><a href="index.html">Documentation overview</a><ul>
-      <li>Previous: <a href="group_repeat.html" title="previous chapter">Grouping Questions and Repeating Groups</a></li>
-      <li>Next: <a href="data-collection-tools.html" title="next chapter">Overview on Data Collection Tools</a></li>
-  </ul></li>
-</ul>
-</div>
-<div id="searchbox" style="display: none" role="search">
-  <h3>Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" />
-      <input type="submit" value="Go" />
-      <input type="hidden" name="check_keywords" value="yes" />
-      <input type="hidden" name="area" value="default" />
-    </form>
-    </div>
-</div>
-<script type="text/javascript">$('#searchbox').show(0);</script>
-
-
-
-
-
-
 
 
         </div>

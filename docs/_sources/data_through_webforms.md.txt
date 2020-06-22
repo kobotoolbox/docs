@@ -1,16 +1,16 @@
 # Collecting Data through Web Forms
 
-**What are web forms?**
+## What are web forms?
 
 [Enketo web forms](https://enketo.org) are used by KoBoToolbox to preview your forms and to enter data directly on your computer. You can also use web forms for collecting data on your mobile devices - even if you're offline at the time of data collection. It works on virtually any device, including iPhones, iPads, or any other smartphone, tablet, or computer. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device.
 
-**Why do I need web forms instead of KoBoCollect Android App?**
+## Why do I need web forms instead of KoBoCollect Android App?
 
 You'll always use Enketo web forms if you're not using the KoBoCollect app on an Android device for data collection. However, there are also some appearance settings viz. likert for select one question type, multiline for text question type etc. and style settings for KoBoToolbox’s Layout & Settings which best works on web forms when compared to the KoBoCollect app. 
 
-**How do I use web forms for data collection?**
+## How do I use web forms for data collection?
 
-**Collection Settings:** 
+### Collection Settings:
 
 To start collecting data, you will need to deploy your project first. Once your project is deployed you will see a screen as shown below with options on how to **Collect data**. 
 
@@ -30,7 +30,7 @@ In the drop down menu under **Collect data**, you have several options available
 
 **Android application:** Use this option to collect data in the field with your Android device.
 
-**Start Data Collection:** 
+### Start Data Collection:
 
 Select an appropriate drop down option from **Collect data** and then press COPY to copy the survey link to share with others or press OPEN to open the survey form to a new tab in your browser. Once the form is opened, you should see a screen like the one shown in the image below:
 
@@ -50,7 +50,7 @@ Select an appropriate drop down option from **Collect data** and then press COPY
 
 **7. Queue Records Pane:** Clicking the side button shows you the records that are available as drafts (which can still be edited) and finalized submitted records queued to be either uploaded to your server with an internet connection or exported as zip file as outlined in the [support article here](manual_upload.md).
 
-**How do I save an offline web form on a mobile device?**
+## How do I save an offline web form on a mobile device?
 
 Follow the steps outlined below to save a form and collect data in a web form using a a mobile device:
 
@@ -72,12 +72,12 @@ Follow the steps outlined below to save a form and collect data in a web form us
 
 7. Select the shortcut icon to start collecting data for your survey project.
 
-**Forwarding upon submission**
+## Forwarding upon submission
 
 By default the form refreshes for the next entry once the data has been submitted. If users are only supposed to enter one entry (e.g. in an online survey) you can send them to another website upon submission. To use this feature you need to 1) use the Online-Only form of the form, and 2) add `returnURL=https://www.somewebsite.com` to your URL. 
 
 ![image](/images/data_through_webforms/url.png)
 
-**Troubleshooting Web Forms**
+## Troubleshooting Web Forms
 
 Always use the latest version of the browser. We recommend users to use Chrome as their browser while working with web forms. For other details on troubleshooting web forms, please visit our [support article (Troubleshooting Enketo Web Forms) here](troubleshooting_webforms.md). 

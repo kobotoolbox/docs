@@ -7,7 +7,7 @@ You can edit your form as many times as you like by clicking on the pencil icon 
 ![image](/images/deploy_form_new_project/deploy.jpg)
 
 
-**Redeploying your form**
+## Redeploying your form
 
 You can save and deploy your project, make edits, and then redeploy your form to make the changes live - as many times as you like. 
 
@@ -19,6 +19,6 @@ After redeploying your form to make the changes live, you will then have access 
 
 ![image](/images/deploy_form_new_project/previous_versions.png)
 
-**Using KoBoCollect** 
+## Using KoBoCollect
 
 If you are using KoBoCollect on an Android device and you redeploy your form, you will need to delete your old blank form on your device and redo the [get blank form](kobocollect-android.md) process with internet access to update the form to the latest version.  

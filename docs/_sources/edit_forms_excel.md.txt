@@ -6,6 +6,6 @@ All forms created with KoBoToolbox can be imported from or exported to XLSForm f
 
 Editing a form in Excel can be an easy way to quickly make several changes to a form (for example for translating an entire form).
 
-The XLSForm format is wonderfully documented [here](xlsform.org).
+The XLSForm format is wonderfully documented [here](http://xlsform.org/en/).
 
-When using XLSForm you can create complex calculations as referenced in [this article](advanced_calculate.md).
+When using XLSForm, you can create complex questions and forms, which are introduced in this site. 

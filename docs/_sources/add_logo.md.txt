@@ -10,13 +10,13 @@ To begin:
 
     ![image](/images/add_logo/xls.png)
 
-3.  When you're done editing the form, upload the XLSForm to either a new or existing project. 
+3. When you're done editing the form, upload the XLSForm to either a new or existing project. 
 
 4. Deploy or redeploy your form, depending on whether it's a new project or it's replacing an existing form. 
 
 5. In your project page go to SETTINGS and click on '+Add Document'. Then chose your logo file and click 'Upload'
 
-**Tips:** 
+## Tips:
 
 * Keep your image small 
 * Your logo image will not appear in the form preview, only when the form is opened. 
