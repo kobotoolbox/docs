@@ -18,6 +18,19 @@ Note that if you reference a question that doesn't exist, it will create an erro
 
 ![image](/images/responses_inside_question/preview.gif)
 
-**Using references is also very useful for creating hidden Calculate questions**
+**You can also reference the response from a Select One/Many question and display the answer instead of the code using hidden Calculate questions**
  
-If you'd like to reference the response to a Select One question and show the response's label (e.g. "Strongly agree") instead of its encoded value (e.g. "5_s_a"), you can create an intermediate Calculate question entering in something like `jr:choice-name(${q3_village_safe}`, `${q3_village_safe}`)" (without the double quotes, and taking care to include the single quotes) and reference this Calculate question instead of the original question.
+If you'd like to reference the response to a Select One/Many question and show the response's answer (e.g. "Strongly Agree") instead of its encoded value (e.g. "strongly_agr"), you can:
+
+1. Create a Select One/Many question, and give the question a fixed reference name through the question settings, such as `instruction`. And create an intermediate Calculate question and enter: `jr:choice-name(${instruction}, ${instruction})`. 
+
+    ![image](/images/responses_inside_question/select.gif)
+
+2. Give this Calculate question a reference name, such as `instruction_calculation`. In your new question, reference this Calculate question instead of the name given to the Select One/Many question. 
+
+    ![image](/images/responses_inside_question/calculate.gif)
+    
+3. Preview and validate the form to make sure everything works as designed.
+
+    ![image](/images/responses_inside_question/preview_calculate.gif)
+
