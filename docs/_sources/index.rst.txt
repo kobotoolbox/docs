@@ -1,45 +1,28 @@
-.. KoBoToolbox documentation master file, created by
-   sphinx-quickstart on Fri Apr 17 15:57:08 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive. 
-   
+What do you need help with?
+===========================
 
-Welcome to the official KoBoToolbox documentation!
-==================================================
+KoBoToolbox is a suite of free and open source tools for field data collection for use in challenging environments. 
 
-.. image:: /images/index/kobotoolbox_logo.png
-   :width: 350
-
-KoBoToolbox is a suite of tools for field data collection for use in challenging environments. Our software is free and open source. Most of our users are people working in humanitarian crises, as well as aid professionals and researchers working in developing countries. Our teams of developers and researchers are based in Cambridge, MA and many other places around the world.
+Search the knowledge base and browse our resources. More questions? Visit the `community forum <https://community.kobotoolbox.org>`_ to post your questions. 
 
 
-This documentation is a work in progress while we transition over from our existing platform at `support.kobotoolbox.org <https://support.kobotoolbox.org>`_
-Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account and to access our tools. 
+Topics
+------
 
 .. toctree::
-  :hidden:
   :maxdepth: 2
   :caption: Getting Started
   
   welcome
   quick_start
   server
+  is_my_data_safe  
   activation_link
   reset_password
   gdpr
   training_arabic
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 2
-  :caption: KoBoToolbox on Your Computer or Server
-  
-  software_architecture
-  kobo_local_computer
-  kobo_your_servers
 
 .. toctree::
-  :hidden:
   :maxdepth: 2
   :caption: Creating Forms
 
@@ -78,9 +61,9 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   hxl
   lower_file_size
   deploy_form_new_project
+  question_library
 
 .. toctree::
-  :hidden:
   :maxdepth: 2
   :caption: Collecting Data
 
@@ -97,27 +80,19 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   collect_gps
   
 .. toctree::
-  :hidden:
   :maxdepth: 2
-  :caption: Managing Projects
+  :caption: Managing Projects and Data
   
   project_summary
   record_validation
   delete_project
   stuck_in_pending
-  
-.. toctree::
-  :hidden:
-  :maxdepth: 2
-  :caption: Managing your Project's Data
-  
-  stuck_in_pending
   export_download
   archiving_projects
   rest_services
   managing_permissions
+  creating_custom_reports
   export_gps
-  is_my_data_safe
   pulling_data_into_excelquery
   howto_edit_single_submissions
   photo_download
@@ -126,4 +101,13 @@ Please visit `kobotoolbox.org <https://kobotoolbox.org>`_ to create an account a
   excel_analyzer_guide
   pulling_data_into_powerbi
   upload_to_gis
+  data_storage
 
+  
+.. toctree::
+  :maxdepth: 2
+  :caption: KoBoToolbox on Your Computer or Server
+  
+  software_architecture
+  kobo_local_computer
+  kobo_your_servers
