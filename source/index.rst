@@ -101,7 +101,8 @@ Topics
   excel_analyzer_guide
   pulling_data_into_powerbi
   upload_to_gis
-  data_storage
+  data_storage 
+  row_level_permissions
 
   
 .. toctree::
