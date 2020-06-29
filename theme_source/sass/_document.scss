@@ -1,8 +1,11 @@
 @import "variables";
 @import "mixins";
 
-html body div.document {
+html body {
   padding-top: $header_height;
+}
+
+html body div.document {
   margin: 0 auto;
   width: 100%;
   max-width: $max_width;
@@ -21,10 +24,10 @@ div.document {
   }
 
   a.headerlink {
-    color: rgba($black, 0.5);
+    color: rgba($c_black, 0.5);
 
     &:hover {
-      color: $blue;
+      color: $c_blue;
       background: none;
     }
   }
@@ -75,7 +78,7 @@ div.document div.sphinxsidebarwrapper {
 }
 
 div.document div.related.bottom {
-  border-top: 1px solid $solitude;
+  border-top: 1px solid $c_solitude;
   padding: 1em;
   line-height: inherit;
 
@@ -112,7 +115,7 @@ div.document div.related.bottom {
 div.document div.bodywrapper {
   @include box-shadow();
 
-  background: $white;
+  background: $c_white;
 
   @include screen-big() {
     margin-bottom: 2em;
@@ -137,7 +140,7 @@ div.document div.body {
 
   tt,
   code {
-    background-color: $solitude;
+    background-color: $c_solitude;
     color: inherit;
     border-radius: 2px;
     padding: 0.2em 0.4em;
@@ -148,6 +151,8 @@ div.document div.body {
 }
 
 div.document div.sphinxsidebarwrapper {
+  padding-top: 0;
+
   @include screen-big() {
     padding-left: 0.5em;
     padding-right: 0.5em;

@@ -55,8 +55,8 @@ html_theme = 'alabaster'
 
 html_sidebars = {
     '**': [
-        'searchbox.html',
-        'about.html', # NOTE: we override it, see: `source/_templates`
+        # 'searchbox.html', # NOTE: moved to `source/_templates/layout.html`
+        # 'about.html',
         'navigation.html',
     ]
 }

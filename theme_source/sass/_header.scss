@@ -3,8 +3,8 @@
 html body header.main-header {
   position: fixed;
   height: $header_height;
-  background: $black;
-  color: $white;
+  background: $c_black;
+  color: $c_white;
   width: 100%;
   display: flex;
   z-index: 999;
@@ -42,7 +42,7 @@ html body header.main-header {
         margin-right: 0;
 
         a {
-          color: $white;
+          color: $c_white;
           text-decoration: none;
 
           &:hover {
@@ -52,7 +52,7 @@ html body header.main-header {
 
         @media screen and (min-width: 769px) {
           &.current a {
-            color: $blue;
+            color: $c_blue;
           }
         }
       }

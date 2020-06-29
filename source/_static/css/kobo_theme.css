@@ -84,6 +84,26 @@ img {
   max-width: 100%;
 }
 
+svg {
+  max-width: 100%;
+  color: inherit;
+  shape-rendering: geometricPrecision;
+  fill: currentColor;
+}
+
+i.icon {
+  display: inline-block;
+  vertical-align: top;
+  color: inherit;
+  line-height: 0;
+}
+
+i.icon svg {
+  color: inherit;
+  shape-rendering: geometricPrecision;
+  fill: currentColor;
+}
+
 html body header.main-header {
   position: fixed;
   height: 70px;
@@ -154,8 +174,138 @@ html body header.main-header .main-header__navigation ul li a:hover {
   }
 }
 
-html body div.document {
+.main-search {
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.main-search.main-search--big {
+  background-image: url("../images/scott-graham-5fNmWej4tAA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: cover;
+}
+
+.main-search.main-search--big .main-search__wrapper {
+  background-color: rgba(0, 74, 141, 0.6);
+}
+
+.main-search .main-search__wrapper {
+  width: 100%;
+  background-color: rgba(0, 74, 141, 0.7);
+}
+
+.main-search:not(.main-search--big) .main-search__header,
+.main-search:not(.main-search--big) .main-search__paragraph,
+.main-search:not(.main-search--big) .main-search__arrow {
+  display: none;
+}
+
+.main-search .main-search__header,
+.main-search .main-search__paragraph {
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.main-search .main-search__header {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
+  font-size: 2.25rem;
+  padding-top: 4rem;
+}
+
+.main-search .main-search__paragraph {
+  font-size: 1.125rem;
+  padding-top: 0.5rem;
+}
+
+.main-search .main-search__arrow {
+  display: block;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 1.5rem;
+}
+
+.main-search .main-search__arrow svg {
+  width: 1.875rem;
+}
+
+.main-search .main-search__form {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1.875rem 0.5rem;
+}
+
+.main-search .main-search__magnifying-glass {
+  position: absolute;
+  top: 1.125rem;
+  left: 1.25rem;
+  color: #8a8fa3;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+  pointer-events: none;
+}
+
+.main-search .main-search__magnifying-glass svg {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+
+.main-search .main-search__text-box-wrapper {
+  position: relative;
+}
+
+.main-search .main-search__text-box {
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  height: 3.75rem;
+  width: 100%;
+  padding: 1.25rem 2rem 1.25rem 4rem;
+  border-radius: 1.875rem;
+  border: 1px solid #cfd5e3;
+  color: #414453;
+  background-color: #fff;
+}
+
+.main-search .main-search__text-box:focus + .main-search__magnifying-glass {
+  color: #414453;
+}
+
+.main-search .main-search__text-box::-webkit-input-placeholder {
+  color: #8a8fa3;
+}
+
+.main-search .main-search__text-box::-moz-placeholder {
+  color: #8a8fa3;
+}
+
+.main-search .main-search__text-box:-ms-input-placeholder {
+  color: #8a8fa3;
+}
+
+.main-search .main-search__text-box::-ms-input-placeholder {
+  color: #8a8fa3;
+}
+
+.main-search .main-search__text-box::placeholder {
+  color: #8a8fa3;
+}
+
+.main-search .main-search__submit-button {
+  visibility: hidden;
+  position: fixed;
+}
+
+html body {
   padding-top: 70px;
+}
+
+html body div.document {
   margin: 0 auto;
   width: 100%;
   max-width: 1000px;
@@ -317,6 +467,10 @@ div.document div.body code {
   line-height: 0.8em;
   font-size: 0.8em;
   vertical-align: middle;
+}
+
+div.document div.sphinxsidebarwrapper {
+  padding-top: 0;
 }
 
 @media screen and (min-width: 876px) {

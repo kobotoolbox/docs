@@ -1,0 +1,12 @@
+i.icon {
+  display: inline-block;
+  vertical-align: top;
+  color: inherit;
+  line-height: 0;
+
+  svg {
+    color: inherit;
+    shape-rendering: geometricPrecision;
+    fill: currentColor;
+  }
+}

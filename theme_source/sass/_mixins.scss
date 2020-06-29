@@ -30,8 +30,8 @@
   font-size: inherit;
   line-height: 1em;
   height: 2em;
-  background: $blue;
-  color: $white !important;
+  background: $c_blue;
+  color: $c_white !important;
   text-transform: uppercase;
   text-align: center;
   padding: 0.5em 1em 0.4em;
@@ -42,8 +42,8 @@
   box-sizing: border-box;
 
   &:hover {
-    background: darken($blue, 15%);
-    color: $white !important;
+    background: darken($c_blue, 15%);
+    color: $c_white !important;
   }
 }
 
@@ -51,15 +51,15 @@
   font-size: inherit;
   line-height: 1em;
   height: 2em;
-  background: $white;
-  color: $black;
+  background: $c_white;
+  color: $c_black;
   padding: 0.5em 1em 0.4em;
   border-radius: 5px;
   border: none;
   box-sizing: border-box;
 
   &::placeholder {
-    color: rgba($black, 0.5);
+    color: rgba($c_black, 0.5);
   }
 }
 
