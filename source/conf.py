@@ -62,7 +62,7 @@ html_sidebars = {
 }
 
 html_theme_options = {
-    # 'analytics_id': 'UA-#######-##',
+    'analytics_id': 'UA-26003863-5',
     'sidebar_collapse': True,
     'sidebar_includehidden': True,
     'show_relbar_bottom': True,
