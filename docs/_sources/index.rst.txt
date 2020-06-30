@@ -57,6 +57,7 @@ Topics
   form_meta
   encrypting_forms
   custom_format_web
+  enketo
   alternative_enketo
   hxl
   lower_file_size
@@ -101,7 +102,8 @@ Topics
   excel_analyzer_guide
   pulling_data_into_powerbi
   upload_to_gis
-  data_storage
+  data_storage 
+  row_level_permissions
 
   
 .. toctree::

@@ -18,6 +18,8 @@
     <script type="text/javascript" src="_static/js/custom.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Software Architecture" href="software_architecture.html" />
+    <link rel="prev" title="Data Storage" href="data_storage.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -83,6 +85,25 @@
             
   <div class="section" id="row-level-permissions">
 <h1>Row-level permissions<a class="headerlink" href="#row-level-permissions" title="Permalink to this headline">¶</a></h1>
+<p>The Row-Level Permissions feature allows owners of a project to create three levels of project permissions for users related to viewing submissions. Those three levels are:</p>
+<ol class="simple">
+<li>User can view all submitted data</li>
+<li>User can view data submitted by a subset of users only</li>
+<li>User can view data submitted by oneself only</li>
+</ol>
+<p><strong>To make use of this feature, please follow the steps below.</strong></p>
+<p>Make sure that your account settings are set to ‘Require authentication to see forms and submitted data’.</p>
+<p><img alt="image" src="_images/setting.jpg" /></p>
+<p>Access the Sharing settings through either the project Summary or Settings tab. For the purposes of this help article, the screenshots show the Sharing Permissions modal that opens from the project Summary tab, but the steps are the same no matter which Sharing settings page you use.</p>
+<p><img alt="image" src="_images/summary1.jpg" /></p>
+<p>In the Sharing Permissions modal, click the <code class="docutils literal notranslate"><span class="pre">ADD</span> <span class="pre">USER</span></code> button.</p>
+<p><img alt="image" src="_images/add_user.jpg" /></p>
+<p>Enter the name of the user you wish to set the <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">submissions</span></code> settings for at the top. Then click the checkbox <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">submissions</span></code> below. If you wish for the user to be able to view all submissions in the project, then no further action is needed. If you wish to restrict the user to view data submitted only by a subset of users, then click the <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">submissions</span> <span class="pre">only</span> <span class="pre">from</span> <span class="pre">specific</span> <span class="pre">users</span></code> checkbox. Enter in the subset of usernames, separated by spaces, in the line below. If you wish for the user to only view data submitted by themselves, then only enter in their username. Once all the desired users are entered, click <code class="docutils literal notranslate"><span class="pre">GRANT</span> <span class="pre">PERMISSIONS</span></code>.</p>
+<p><img alt="image" src="_images/permission.jpg" /></p>
+<p>Example of a user having permission to view submitted data from a subset of users:</p>
+<p><img alt="image" src="_images/example_subset.jpg" /></p>
+<p>Example of a user having permission to view only their own submitted data:</p>
+<p><img alt="image" src="_images/example_own.jpg" /></p>
 </div>
 
 
@@ -90,6 +111,14 @@
     <div class="related bottom">
   <nav id="rellinks">
     <ul>
+        <li>
+          &larr;
+          <a href="data_storage.html" title="Previous document">Data Storage</a>
+        </li>
+        <li>
+          <a href="software_architecture.html" title="Next document">Software Architecture</a>
+          &rarr;
+        </li>
     </ul>
   </nav>
     </div>
@@ -142,6 +171,7 @@
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enketo.html">What are Enketo webforms?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hxl.html">Using Hxl Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
@@ -163,7 +193,7 @@
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Managing Projects and Data</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a project from your account</a></li>
@@ -183,6 +213,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Row-level permissions</a></li>
 </ul>
 <p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
 <ul>
