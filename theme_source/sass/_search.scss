@@ -1,0 +1,110 @@
+.main-search {
+  width: 100%;
+  margin-bottom: 2.5rem;
+
+  &.main-search--big {
+    background-image: url("../images/scott-graham-5fNmWej4tAA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center 25%;
+    background-size: cover;
+
+    .main-search__wrapper {
+      background-color: rgba($c_smalt, 0.6);
+    }
+  }
+
+  .main-search__wrapper {
+    width: 100%;
+    background-color: rgba($c_smalt, 0.7);
+  }
+
+  &:not(.main-search--big) {
+    .main-search__header,
+    .main-search__paragraph,
+    .main-search__arrow {
+      display: none;
+    }
+  }
+
+  .main-search__header,
+  .main-search__paragraph {
+    line-height: 1;
+    color: $c_white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-search__header {
+    font-family: $font_source;
+    font-weight: 700;
+    font-size: 2.25rem;
+    padding-top: 4rem;
+  }
+
+  .main-search__paragraph {
+    font-size: 1.125rem;
+    padding-top: 0.5rem;
+  }
+
+  .main-search__arrow {
+    display: block;
+    text-align: center;
+    color: $c_white;
+    padding-bottom: 1.5rem;
+
+    svg {
+      width: 1.875rem;
+    }
+  }
+
+  .main-search__form {
+    width: 100%;
+    max-width: $max_width;
+    margin: 0 auto;
+    padding: 1.875rem 0.5rem;
+  }
+
+  .main-search__magnifying-glass {
+    position: absolute;
+    top: 1.125rem;
+    left: 1.25rem;
+    color: $c_manatee;
+    transition: $link_transition;
+    pointer-events: none;
+
+    svg {
+      width: 1.875rem;
+      height: 1.875rem;
+    }
+  }
+
+  .main-search__text-box-wrapper {
+    position: relative;
+  }
+
+  .main-search__text-box {
+    font-size: 1.125rem;
+    line-height: 1.25rem;
+    height: 3.75rem;
+    width: 100%;
+    padding: 1.25rem 2rem 1.25rem 4rem;
+    border-radius: 1.875rem;
+    border: 1px solid $c_linkwater;
+    color: $c_black;
+    background-color: $c_white;
+
+    &:focus + .main-search__magnifying-glass {
+      color: $c_black;
+    }
+
+    &::placeholder {
+      color: $c_manatee;
+    }
+  }
+
+  .main-search__submit-button {
+    visibility: hidden;
+    position: fixed;
+  }
+}

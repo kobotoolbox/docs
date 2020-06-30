@@ -2,20 +2,8 @@
 
 <!-- This block is empty in original theme, we use it to display header menu -->
 {% block relbar1 %}
-<header role="banner" class="main-header">
-  <h1 class="main-header__logo">
-    <a href="https://kobotoolbox.org/#home">KoBoToolbox</a>
-  </h1>
-  <nav class="main-header__navigation" role="navigation">
-    <ul>
-      <li><a href="https://kobotoolbox.org/#home">Home</a></li>
-      <li><a href="https://kobotoolbox.org/#features">Features</a></li>
-      <li><a href="https://kobotoolbox.org/#sign-up">Sign Up</a></li>
-      <li><a href="https://kobotoolbox.org/#about">About</a></li>
-      <li><a href="https://kobotoolbox.org/#help">Help</a></li>
-    </ul>
-  </nav>
-</header>
+{% include('./partials/header.html') %}
+{% include('./partials/search.html') %}
 {% endblock %}
 
 <!-- Copied the original content to remove a wtf "&nbsp;" from it -->

@@ -15,27 +15,27 @@ body {
   font-size: inherit;
   margin: 0;
   padding: 0;
-  color: $black;
-  background: $whitesmoke;
+  color: $c_black;
+  background: $c_whitesmoke;
 }
 
 a {
-  color: $blue;
+  color: $c_blue;
   transition: $link_transition;
 
   &:hover {
     transition: $link_transition;
-    color: darken($blue, 15%);
+    color: darken($c_blue, 15%);
   }
 
   &.button {
     @include button();
 
     &.button--black {
-      background: $black;
+      background: $c_black;
 
       &:hover {
-        background: darken($black, 15%);
+        background: darken($c_black, 15%);
       }
     }
   }
@@ -43,4 +43,11 @@ a {
 
 img {
   max-width: 100%;
+}
+
+svg {
+  max-width: 100%;
+  color: inherit;
+  shape-rendering: geometricPrecision;
+  fill: currentColor;
 }

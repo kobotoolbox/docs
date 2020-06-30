@@ -55,14 +55,14 @@ html_theme = 'alabaster'
 
 html_sidebars = {
     '**': [
-        'searchbox.html',
-        'about.html', # NOTE: we override it, see: `source/_templates`
+        # 'searchbox.html', # NOTE: moved to `source/_templates/layout.html`
+        # 'about.html',
         'navigation.html',
     ]
 }
 
 html_theme_options = {
-    # 'analytics_id': 'UA-#######-##',
+    'analytics_id': 'UA-26003863-5',
     'sidebar_collapse': True,
     'sidebar_includehidden': True,
     'show_relbar_bottom': True,
