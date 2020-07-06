@@ -9,6 +9,8 @@ De plus, voici [un guide](https://docs.google.com/presentation/d/1YZU1Vi1uW2-QZh
 **En voici quelques exemples:**
 
 ![image](/images/training_french/example_1.png)
+
 ![image](/images/training_french/example_2.png)
+
 ![image](/images/training_french/example_3.png)
 
