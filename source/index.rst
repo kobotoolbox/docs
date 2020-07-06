@@ -106,6 +106,7 @@ Topics
   data_storage 
   row_level_permissions
   api
+  data_storage
 
   
 .. toctree::
