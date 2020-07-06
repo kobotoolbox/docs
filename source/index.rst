@@ -21,6 +21,7 @@ Topics
   reset_password
   gdpr
   training_arabic
+  training_french
 
 .. toctree::
   :maxdepth: 2
