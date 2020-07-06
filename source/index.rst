@@ -105,6 +105,7 @@ Topics
   upload_to_gis
   data_storage 
   row_level_permissions
+  api
 
   
 .. toctree::
