@@ -2,7 +2,7 @@
 
 #### Learn how to navigate and manage the data in the Reports page.
 
-On the Reports page in the Data section of your project, you can create and configure multiple summary reports with custom graphs, tables, and color schemes. The custom reports are shareable by either printing, saving as a PDF, or storing them on an external cloud service. 
+On the Reports page in the Data section of your project, you can create and configure multiple summary reports with custom graphs, tables, and color schemes. The custom reports are shareable by either printing, saving as a PDF, or storing them on an external cloud service.
 
 ![image](/images/creating_custom_reports/chart.jpg)
 
