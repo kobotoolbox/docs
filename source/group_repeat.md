@@ -1,5 +1,15 @@
 # Grouping Questions and Repeating Groups
 
+KoBoToolbox supports grouping a set/number of questions while designing a survey form. Users may need to group questions due to various reasons. Some maybe as follows: 
+
+* **To make the questionnaire systematic:** Grouping a set of questions makes a questionnaire systematic (e.g. you could group your questions that have special linkage or attributes as Identifier, Section A, Section I or so on).
+
+* **To display a set of questions in a screen:** It’s possible to display a set of questions together on a screen during data collection if (and only if) you have grouped a set of questions. However, this may not be applicable if you are collecting data using Enketo.
+
+* **To skip a group of questions:** Adding a skip to a group could save your time rather than adding skip logics to all the questions individually. This should also keep your survey tool neat and clean.
+
+* **To create roster questions:** Grouping is a must if you wish to create a roster where you wish to repeat a group of questions (e.g. a household roster is a set of questions if you wish to collect information from all the household members dwelling under a same roof). 
+
 **Groups are collection of one or more questions inside a form.** Groups can also be grouped themselves. There are many scenarios when using groups can be useful:
 
 * A large form can be divided into multiple large sections  
