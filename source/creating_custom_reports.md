@@ -39,7 +39,7 @@ You could also store the same to an external cloud storage service like Google D
 
    ![image](/images/creating_custom_reports/destination.png)
  
-**4. Toggle full screen: **
+**4. Toggle full screen:**
 
 You could Press **Toggle full screen** to view the custom reports in a full screen or press back the **Toggle full screen** to view it to in a normal mode.
 
