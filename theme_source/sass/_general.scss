@@ -15,11 +15,13 @@ body {
   font-size: inherit;
   margin: 0;
   padding: 0;
-  color: $c_black;
+  color: $c_rhino;
   background: $c_whitesmoke;
 }
 
-a {
+a,
+.link {
+  cursor: pointer;
   color: $c_blue;
   transition: $link_transition;
 
@@ -32,10 +34,10 @@ a {
     @include button();
 
     &.button--black {
-      background: $c_black;
+      background: $c_rhino;
 
       &:hover {
-        background: darken($c_black, 15%);
+        background: darken($c_rhino, 15%);
       }
     }
   }

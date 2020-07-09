@@ -9,6 +9,7 @@ html body div.document {
   margin: 0 auto;
   width: 100%;
   max-width: $max_width;
+  color: $c_riverbed;
 }
 
 div.document {
@@ -24,7 +25,7 @@ div.document {
   }
 
   a.headerlink {
-    color: rgba($c_black, 0.5);
+    color: rgba($c_rhino, 0.5);
 
     &:hover {
       color: $c_blue;
@@ -74,7 +75,7 @@ div.document div.sphinxsidebar {
 
 div.document div.body,
 div.document div.sphinxsidebarwrapper {
-  padding: 2.5em 2em 1em;
+  padding: rem(50px) rem(30px) rem(30px);
 }
 
 div.document div.related.bottom {
@@ -113,17 +114,18 @@ div.document div.related.bottom {
 }
 
 div.document div.bodywrapper {
-  @include box-shadow();
-
-  background: $c_white;
+  background: none;
 
   @include screen-big() {
-    margin-bottom: 2em;
+    margin-bottom: rem(30px);
   }
 }
 
 div.document div.body {
   color: inherit;
+  background: inherit;
+  min-width: $min_width;
+  max-width: $max_width;
 
   h1,
   h2,
@@ -147,6 +149,12 @@ div.document div.body {
     line-height: 0.8em;
     font-size: 0.8em;
     vertical-align: middle;
+  }
+
+  p,
+  dd,
+  li {
+    line-height: inherit;
   }
 }
 

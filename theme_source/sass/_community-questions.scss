@@ -1,0 +1,30 @@
+.community-questions {
+  @include blue-photo-bg();
+
+  background-position: center 87%;
+
+  .wrapper {
+    padding: rem(72px) rem(16px) rem(96px);
+    text-align: center;
+    color: $c_white;
+    background-color: rgba($c_smalt, 0.6);
+  }
+
+  h1 {
+    font-family: $font_source;
+    font-size: rem(36px);
+    font-weight: 700;
+    margin: 0 auto rem(16px);
+  }
+
+  p {
+    font-size: rem(18px);
+    margin: 0 auto rem(48px);
+  }
+
+  a.button {
+    border-radius: rem(48px);
+    padding-left: rem(32px);
+    padding-right: rem(32px);
+  }
+}

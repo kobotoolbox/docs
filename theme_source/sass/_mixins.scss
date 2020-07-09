@@ -52,14 +52,14 @@
   line-height: 1em;
   height: 2em;
   background: $c_white;
-  color: $c_black;
+  color: $c_rhino;
   padding: 0.5em 1em 0.4em;
   border-radius: 5px;
   border: none;
   box-sizing: border-box;
 
   &::placeholder {
-    color: rgba($c_black, 0.5);
+    color: rgba($c_rhino, 0.5);
   }
 }
 
@@ -89,5 +89,34 @@
 @mixin screen-big() {
   @media screen and (min-width: $alabaster_breakpoint + 1px) {
     @content;
+  }
+}
+
+@mixin blue-photo-bg() {
+  background-image: url("../images/scott-graham-5fNmWej4tAA-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-position: center 25%;
+  background-size: cover;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: rem(36px);
+    opacity: 0.6;
+  }
+
+  &::before {
+    background: linear-gradient(to top, transparent, $c_rhino);
+    top: 0;
+  }
+
+  &::after {
+    background: linear-gradient(to bottom, transparent, $c_rhino);
+    bottom: 0;
   }
 }

@@ -1,17 +1,12 @@
-What do you need help with?
-===========================
-
-KoBoToolbox is a suite of free and open source tools for field data collection for use in challenging environments. 
-
-Search the knowledge base and browse our resources. More questions? Visit the `community forum <https://community.kobotoolbox.org>`_ to post your questions. 
-
-
 Topics
-------
+======
+
+Search the knowledge base, browse our resources and visit our forum for more detail information
 
 .. toctree::
   :maxdepth: 2
   :caption: Getting Started
+  :name: home-page-toc-getting-started
   
   welcome
   quick_start
@@ -25,6 +20,7 @@ Topics
 .. toctree::
   :maxdepth: 2
   :caption: Creating Forms
+  :name: home-page-toc-creating-forms
 
   new_project
   edit_forms_excel
@@ -67,6 +63,7 @@ Topics
 .. toctree::
   :maxdepth: 2
   :caption: Collecting Data
+  :name: home-page-toc-collecting-data
 
   data-collection-tools
   recording-interviews
@@ -83,6 +80,7 @@ Topics
 .. toctree::
   :maxdepth: 2
   :caption: Managing Projects and Data
+  :name: home-page-toc-managing-projects
   
   project_summary
   record_validation
@@ -109,6 +107,7 @@ Topics
 .. toctree::
   :maxdepth: 2
   :caption: KoBoToolbox on Your Computer or Server
+  :name: home-page-toc-computer-server
   
   software_architecture
   kobo_local_computer

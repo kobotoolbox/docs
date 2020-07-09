@@ -1,0 +1,149 @@
+.document#index {
+  .documentwrapper {
+    float: none;
+
+    .bodywrapper {
+      margin-left: 0;
+    }
+  }
+
+  .body {
+    #topics {
+      > h1 {
+        font-family: $font_source;
+        font-weight: 700;
+        font-size: rem(36px);
+        text-transform: none;
+        text-align: center;
+        margin: 0 0 rem(12px);
+      }
+
+      > p {
+        font-size: rem(18px);
+        margin: 0 0 rem(42px);
+        text-align: center;
+        color: $c_manatee;
+      }
+    }
+
+    .headerlink {
+      display: none;
+    }
+  }
+
+  .toctree-wrapper[id^="home-page-toc-"] {
+    background: $c_white;
+    padding: rem(30px);
+
+    @include screen-big() {
+      width: 30%;
+      float: left;
+
+      &:nth-of-type(3n+1),
+      &:nth-of-type(3n+2) {
+        margin-right: rem(30px);
+      }
+
+      &:nth-of-type(n+4) {
+        margin-top: rem(30px);
+      }
+    }
+
+    @include screen-small() {
+      width: 100%;
+
+      &:not(:first-of-type) {
+        margin-top: rem(30px);
+      }
+    }
+
+    .caption {
+      font-weight: 600;
+      font-size: rem(21px);
+      line-height: 1;
+      padding: rem(5px) 0;
+      margin: 0 0 rem(24px);
+      padding-left: rem(50px); // 30px icon size plus 20px spacing
+      background-position: left center;
+      background-repeat: no-repeat;
+      background-size: rem(30px) rem(30px);
+    }
+
+    // any list
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    // nested list
+    ul ul {
+      display: none; // hide it
+    }
+
+    ul li {
+      &:not(:first-child) {
+        margin-top: rem(16px);
+      }
+    }
+
+    a,
+    .link {
+      text-decoration: underline;
+      color: inherit;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    .show-all-button {
+      float: right;
+      margin-top: rem(20px);
+
+      &::after {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: rem(5px);
+        width: rem(5px);
+        height: rem(10px);
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: rem(5px) rem(10px);
+        background-image: url("../icons/custom/toc-chevron-right.svg");
+      }
+    }
+  }
+
+  // styles for custom sections
+  .toctree-wrapper[id="home-page-toc-getting-started"] {
+    .caption {
+      background-image: url("../icons/custom/getting-started.svg");
+    }
+  }
+
+  .toctree-wrapper[id="home-page-toc-creating-forms"] {
+    .caption {
+      background-image: url("../icons/custom/creating-forms.svg");
+    }
+  }
+
+  .toctree-wrapper[id="home-page-toc-collecting-data"] {
+    .caption {
+      background-image: url("../icons/custom/collecting-data.svg");
+    }
+  }
+
+  .toctree-wrapper[id="home-page-toc-managing-projects"] {
+    .caption {
+      background-image: url("../icons/custom/managing-projects.svg");
+    }
+  }
+
+  .toctree-wrapper[id="home-page-toc-computer-server"] {
+    .caption {
+      background-image: url("../icons/custom/computer-server.svg");
+    }
+  }
+}

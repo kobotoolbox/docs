@@ -10,7 +10,6 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-import datetime
 import os
 import sys
 sys.path.insert(0, os.path.abspath('.'))
@@ -18,9 +17,8 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-current_year = str(datetime.datetime.now().year)
 project = 'KoBoToolbox'
-copyright = current_year + ', KoBoToolbox'
+copyright = 'KoBoToolbox'
 author = 'KoBoToolbox'
 
 # The full version, including alpha/beta/rc tags
@@ -86,6 +84,6 @@ html_css_files = [
     'css/kobo_theme.css',
 ]
 html_js_files = [
-    'js/custom.js',
+    'js/home_page_toc.js',
 ]
 
