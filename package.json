@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "_compile": "node-sass --include-path=node_modules --output-style=expanded --source-map=true theme_source/sass/theme.scss source/_static/css/kobo_theme.css",
+    "_compile": "node-sass --include-path=node_modules --output-style=expanded --source-map=true sass_source/sass/theme.scss source/_static/css/kobo_theme.css",
     "_prefix": "postcss source/_static/css/kobo_theme.css --use=autoprefixer --map=false --output=source/_static/css/kobo_theme.css",
     "dev": "npm run _compile -- --watch",
     "start": "npm run _compile && npm run _prefix"
