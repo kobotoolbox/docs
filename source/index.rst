@@ -16,6 +16,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   reset_password
   gdpr
   training_arabic
+  training_french
 
 .. toctree::
   :maxdepth: 2
@@ -59,6 +60,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   lower_file_size
   deploy_form_new_project
   question_library
+  external_file
 
 .. toctree::
   :maxdepth: 2
@@ -100,8 +102,9 @@ Search the knowledge base, browse our resources and visit our forum for more det
   excel_analyzer_guide
   pulling_data_into_powerbi
   upload_to_gis
-  data_storage 
   row_level_permissions
+  api
+  data_storage
 
   
 .. toctree::
