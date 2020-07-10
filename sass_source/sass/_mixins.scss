@@ -120,3 +120,11 @@
     bottom: 0;
   }
 }
+
+@mixin page-wrapper() {
+  width: 100%;
+  max-width: rem($max_width) + 2 * rem(45px);
+  padding-left: rem(45px);
+  padding-right: rem(45px);
+  margin: 0 auto;
+}

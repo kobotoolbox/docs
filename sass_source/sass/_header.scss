@@ -1,6 +1,7 @@
 @import "variables";
 
 html body header.main-header {
+  line-height: 1.25em;
   position: fixed;
   height: $header_height;
   background: $c_rhino;

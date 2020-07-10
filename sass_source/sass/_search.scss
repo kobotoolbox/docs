@@ -55,10 +55,10 @@
   }
 
   .main-search__form {
-    width: 100%;
-    max-width: $max_width;
-    margin: 0 auto;
-    padding: rem(30px) rem(8px);
+    @include page-wrapper();
+
+    padding-top: rem(30px);
+    padding-bottom: rem(30px);
   }
 
   .main-search__magnifying-glass {

@@ -2,26 +2,25 @@
 
 {# Copied this block from Alabaster source and modified heavily #}
 {%- block content %}
-<div class="document" id="{{ pagename }}">
+<div class="page {% if pagename != 'index' %}page--has-sidebar{% endif %}" id="{{ pagename }}">
   {%- block document %}
-    <div class="documentwrapper">
-      <div class="bodywrapper">
-        <div class="body" role="main">
-          {% block body %} {% endblock %}
-          <div class="clearer"></div>
-        </div>
+    <section class="page__content">
+      <section class="page__body" role="main">
+        {% block body %} {% endblock %}
+        <div class="clearer"></div>
+      </section>
 
-        {%- block relbar_bottom %}
-          {%- if theme_show_relbar_bottom|tobool and pagename != "index" %}
-            <div class="related bottom">
-              {{- rellink_markup () }}
-            </div>
-          {%- endif %}
-        {% endblock %}
-      </div>
-    </div>
+      {%- block relbar_bottom %}
+        {%- if theme_show_relbar_bottom|tobool and pagename != "index" %}
+          <section class="page__related">
+            {{- rellink_markup () }}
+          </section>
+        {%- endif %}
+      {% endblock %}
+    </section>
+
     {% if pagename != "index" %}
-      {{ sidebar() }}
+      {% include('./partials/sidebar.html') %}
     {% endif %}
   {%- endblock %}
   <div class="clearer"></div>
@@ -56,4 +55,11 @@
     })();
   </script>
   {% endif %}
+
+  <script>
+    window.docs = {
+      currentPagename: "{{ pagename }}",
+      currentTitle: "{{ title }}",
+    };
+  </script>
 {%- endblock %}

@@ -53,8 +53,6 @@ html_theme = 'alabaster'
 
 html_sidebars = {
     '**': [
-        # 'searchbox.html', # NOTE: moved to `source/_templates/layout.html`
-        # 'about.html',
         'navigation.html',
     ]
 }
@@ -85,5 +83,6 @@ html_css_files = [
 ]
 html_js_files = [
     'js/home_page_toc.js',
+    'js/sidebar_toc.js',
 ]
 

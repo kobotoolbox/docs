@@ -1,0 +1,6 @@
+<aside class="page__sidebar" role="navigation" aria-label="main navigation">
+  {#- new style sidebar: explicitly include/exclude templates #}
+  {%- for sidebartemplate in sidebars %}
+  {%- include sidebartemplate %}
+  {%- endfor %}
+</aside>

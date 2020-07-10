@@ -1,34 +1,24 @@
-.document#index {
-  .documentwrapper {
-    float: none;
+.page#index {
+  #topics {
+    > h1 {
+      font-family: $font_source;
+      font-weight: 700;
+      font-size: rem(36px);
+      text-transform: none;
+      text-align: center;
+      margin: 0 0 rem(12px);
+    }
 
-    .bodywrapper {
-      margin-left: 0;
+    > p {
+      font-size: rem(18px);
+      margin: 0 0 rem(42px);
+      text-align: center;
+      color: $c_manatee;
     }
   }
 
-  .body {
-    #topics {
-      > h1 {
-        font-family: $font_source;
-        font-weight: 700;
-        font-size: rem(36px);
-        text-transform: none;
-        text-align: center;
-        margin: 0 0 rem(12px);
-      }
-
-      > p {
-        font-size: rem(18px);
-        margin: 0 0 rem(42px);
-        text-align: center;
-        color: $c_manatee;
-      }
-    }
-
-    .headerlink {
-      display: none;
-    }
+  .headerlink {
+    display: none;
   }
 
   .toctree-wrapper[id^="home-page-toc-"] {
