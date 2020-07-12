@@ -5,6 +5,14 @@
 <div class="page {% if pagename != 'index' %}page--has-sidebar{% endif %}" id="{{ pagename }}">
   {%- block document %}
     <section class="page__content">
+      {% if pagename != "index" %}
+      <nav class="page__breadcrumbs">
+        <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+          <a href="{{ pathto(master_doc) }}">{% include('../_static/icons/home.svg') %}Home</a>
+        </li></ul>
+      </nav>
+      {% endif %}
+
       <section class="page__body" role="main">
         {% block body %} {% endblock %}
         <div class="clearer"></div>
@@ -60,6 +68,7 @@
     window.docs = {
       currentPagename: "{{ pagename }}",
       currentTitle: "{{ title }}",
+      currentUrl: ("{{ pathto(master_doc) }}").replace("index.html", "{{ pagename }}.html"),
     };
   </script>
 {%- endblock %}

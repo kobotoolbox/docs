@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:600");
 * {
   -webkit-box-sizing: border-box;
@@ -345,6 +346,10 @@ html body header.main-header .main-header__navigation ul li a:hover {
   color: #414453;
 }
 
+.main-search .main-search__text-box:hover + .main-search__magnifying-glass {
+  color: #444d63;
+}
+
 .main-search .main-search__text-box::-webkit-input-placeholder {
   color: #8a8fa3;
 }
@@ -380,8 +385,8 @@ html body {
   padding-left: 2.8125rem;
   padding-right: 2.8125rem;
   margin: 0 auto;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2.8125rem;
+  padding-bottom: 2.8125rem;
 }
 
 @media screen and (min-width: 876px) {
@@ -407,24 +412,19 @@ html body {
 
 .page a.reference {
   border-bottom: none;
-  -webkit-text-decoration-style: dotted;
-          text-decoration-style: dotted;
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
+  text-decoration: none;
 }
 
 .page a.reference:hover {
-  border-bottom: none;
-  -webkit-text-decoration-style: solid;
-          text-decoration-style: solid;
+  text-decoration: underline;
 }
 
 .page a.headerlink {
-  color: rgba(65, 68, 83, 0.5);
+  color: #8a8fa3;
 }
 
 .page a.headerlink:hover {
-  color: #2095f3;
+  color: #0a6dbc;
   background: none;
 }
 
@@ -484,15 +484,55 @@ html body {
   font-size: 1.125rem;
   line-height: 1em;
   border-top: 1px solid #cfd5e3;
-  padding: 0.9375rem 0 1.375rem;
+  padding: 0.9375rem 0.9375rem 0 0;
+  position: relative;
 }
 
 .page .page__sidebar p.caption:not(:first-child) {
-  margin-top: 3rem;
+  margin-top: 2.8125rem;
+}
+
+.page .page__sidebar p.caption.caption--current {
+  pointer-events: none;
+  color: #0a6dbc;
+}
+
+.page .page__sidebar p.caption:not(.caption--current) {
+  cursor: pointer;
+}
+
+.page .page__sidebar p.caption:not(.caption--current):hover {
+  color: #0a6dbc;
+}
+
+.page .page__sidebar p.caption:not(.caption--current):hover::after {
+  opacity: 0.8;
+}
+
+.page .page__sidebar p.caption.caption--opened::after, .page .page__sidebar p.caption.caption--closed::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0.9375rem;
+  right: 0;
+  width: 0.625rem;
+  height: 1em;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 0.625rem 0.3125rem;
+}
+
+.page .page__sidebar p.caption.caption--opened::after {
+  background-image: url("../icons/custom/toc-chevron-up.svg");
+}
+
+.page .page__sidebar p.caption.caption--closed::after {
+  background-image: url("../icons/custom/toc-chevron-down.svg");
 }
 
 .page .page__sidebar ul {
   list-style: none;
+  margin-top: 1.375rem;
 }
 
 .page .page__sidebar ul a {
@@ -532,6 +572,7 @@ html body {
 .page__related {
   border-top: 1px solid #cfd5e3;
   padding: 1.125rem 0;
+  margin: 2.8125rem auto 0;
   line-height: inherit;
 }
 
@@ -571,6 +612,10 @@ html body {
   text-decoration: underline;
 }
 
+.page__related nav#rellinks ul li {
+  color: #2095f3;
+}
+
 .page__related nav#rellinks ul li:first-of-type {
   text-align: left;
 }
@@ -581,6 +626,54 @@ html body {
 
 .page__related nav#rellinks ul li + li::before {
   content: none;
+}
+
+.page__breadcrumbs {
+  font-size: 1.125rem;
+  margin-bottom: 0.75rem;
+}
+
+.page__breadcrumbs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #2095f3;
+}
+
+.page__breadcrumbs ul:not(.activated) {
+  color: #8a8fa3;
+}
+
+.page__breadcrumbs ul li {
+  display: inline-block;
+  color: inherit;
+}
+
+.page__breadcrumbs ul li:not(:first-child) {
+  margin-left: 0.5rem;
+}
+
+.page__breadcrumbs ul li:not(:first-child)::before {
+  content: "›";
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0.75em;
+  margin-right: 0.5rem;
+}
+
+.page__breadcrumbs ul li svg {
+  width: 0.8125rem;
+  height: 0.75rem;
+  margin-right: 0.5rem;
+}
+
+.page__breadcrumbs ul li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page__breadcrumbs ul li a:hover {
+  color: #0a6dbc;
 }
 
 html body div.footer {
@@ -664,18 +757,18 @@ html body div.footer a {
 .community-questions h1 {
   font-size: 2.25rem;
   font-weight: 700;
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.9375rem;
 }
 
 .community-questions p {
   font-size: 1.125rem;
-  margin: 0 auto 3rem;
+  margin: 0 auto 2.8125rem;
 }
 
 .community-questions a.button {
   border-radius: 3rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
 }
 
 .page#index #topics > h1 {
@@ -759,7 +852,7 @@ html body div.footer a {
 
 .page#index .toctree-wrapper[id^="home-page-toc-"] a:hover,
 .page#index .toctree-wrapper[id^="home-page-toc-"] .link:hover {
-  opacity: 0.8;
+  color: #0a6dbc;
 }
 
 .page#index .toctree-wrapper[id^="home-page-toc-"] .show-all-button {

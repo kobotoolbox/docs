@@ -27,7 +27,7 @@ a,
 
   &:hover {
     transition: $link_transition;
-    color: darken($c_blue, 15%);
+    color: $c_denim;
   }
 
   &.button {

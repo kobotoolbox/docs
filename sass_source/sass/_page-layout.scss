@@ -26,20 +26,18 @@ html body {
 
   a.reference {
     border-bottom: none;
-    text-decoration-style: dotted;
-    text-decoration-line: underline;
+    text-decoration: none;
 
     &:hover {
-      border-bottom: none;
-      text-decoration-style: solid;
+      text-decoration: underline;
     }
   }
 
   a.headerlink {
-    color: rgba($c_rhino, 0.5);
+    color: $c_manatee;
 
     &:hover {
-      color: $c_blue;
+      color: $c_denim;
       background: none;
     }
   }
@@ -99,15 +97,56 @@ html body {
       font-size: rem(18px);
       line-height: 1em;
       border-top: 1px solid $c_linkwater;
-      padding: rem(15px) 0 rem(22px);
+      padding: rem(15px) rem(15px) 0 0;
+      position: relative;
 
       &:not(:first-child) {
         margin-top: rem(45px);
+      }
+
+      &.caption--current {
+        pointer-events: none;
+        color: $c_denim;
+      }
+
+      &:not(.caption--current) {
+        cursor: pointer;
+
+        &:hover {
+          color: $c_denim;
+
+          &::after {
+            opacity: 0.8;
+          }
+        }
+      }
+
+      &.caption--opened::after,
+      &.caption--closed::after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: rem(15px);
+        right: 0;
+        width: rem(10px);
+        height: 1em;
+        background-position: right center;
+        background-repeat: no-repeat;
+        background-size: rem(10px) rem(5px);
+      }
+
+      &.caption--opened::after {
+        background-image: url("../icons/custom/toc-chevron-up.svg");
+      }
+
+      &.caption--closed::after {
+        background-image: url("../icons/custom/toc-chevron-down.svg");
       }
     }
 
     ul {
       list-style: none;
+      margin-top: rem(22px);
 
       a {
         color: inherit;
@@ -180,6 +219,8 @@ html body {
       }
 
       li {
+        color: $c_blue;
+
         &:first-of-type {
           text-align: left;
         }
@@ -190,6 +231,54 @@ html body {
 
         & + li::before {
           content: none;
+        }
+      }
+    }
+  }
+}
+
+.page__breadcrumbs {
+  font-size: rem(18px);
+  margin-bottom: rem(12px);
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: $c_blue;
+
+    &:not(.activated) {
+      color: $c_manatee;
+    }
+
+    li {
+      display: inline-block;
+      color: inherit;
+
+      &:not(:first-child) {
+        margin-left: rem(8px);
+
+        &::before {
+          content: "›";
+          display: inline-block;
+          vertical-align: top;
+          font-size: 0.75em;
+          margin-right: rem(8px);
+        }
+      }
+
+      svg {
+        width: rem(13px);
+        height: rem(12px);
+        margin-right: rem(8px);
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+
+        &:hover {
+          color: $c_denim;
         }
       }
     }

@@ -42,7 +42,7 @@
   box-sizing: border-box;
 
   &:hover {
-    background: darken($c_blue, 15%);
+    background: $c_denim;
     color: $c_white !important;
   }
 }

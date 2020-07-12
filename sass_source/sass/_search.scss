@@ -94,6 +94,10 @@
       color: $c_rhino;
     }
 
+    &:hover + .main-search__magnifying-glass {
+      color: $c_riverbed;
+    }
+
     &::placeholder {
       color: $c_manatee;
     }
