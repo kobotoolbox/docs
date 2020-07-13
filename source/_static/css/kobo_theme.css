@@ -31,7 +31,7 @@ body {
   margin: 0;
   padding: 0;
   color: #414453;
-  background: #f6f7f8;
+  background: #fff;
 }
 
 a,
@@ -379,7 +379,7 @@ html body {
   padding-top: 70px;
 }
 
-.page {
+.page .page__wrapper {
   width: 100%;
   max-width: 77.5rem;
   padding-left: 2.8125rem;
@@ -390,7 +390,7 @@ html body {
 }
 
 @media screen and (min-width: 876px) {
-  .page.page--has-sidebar {
+  .page.page--has-sidebar .page__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -769,6 +769,10 @@ html body div.footer a {
   border-radius: 3rem;
   padding-left: 1.875rem;
   padding-right: 1.875rem;
+}
+
+.page#index {
+  background: #f6f7f8;
 }
 
 .page#index #topics > h1 {

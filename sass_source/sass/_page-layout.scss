@@ -3,15 +3,19 @@ html body {
 }
 
 .page {
-  @include page-wrapper();
+  .page__wrapper {
+    @include page-wrapper();
 
-  padding-top: rem(45px);
-  padding-bottom: rem(45px);
+    padding-top: rem(45px);
+    padding-bottom: rem(45px);
+  }
 
   &.page--has-sidebar {
     @include screen-big() {
-      display: flex;
-      flex-direction: row-reverse;
+      .page__wrapper {
+        display: flex;
+        flex-direction: row-reverse;
+      }
 
       .page__content {
         flex: 1;
