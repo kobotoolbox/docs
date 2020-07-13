@@ -54,9 +54,11 @@
     }
   }
 
-  .main-search__form {
+  .main-search__content {
     @include page-wrapper();
+  }
 
+  .main-search__form {
     padding-top: rem(30px);
     padding-bottom: rem(30px);
   }

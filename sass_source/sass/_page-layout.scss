@@ -26,6 +26,12 @@ html body {
         margin-right: rem(45px);
       }
     }
+
+    @include screen-small() {
+      .page__sidebar {
+        margin-top: rem(45px);
+      }
+    }
   }
 
   a.reference {
@@ -214,6 +220,8 @@ html body {
         font-size: inherit;
         border-bottom: none;
         text-decoration: none;
+        display: inline-block;
+        vertical-align: middle;
 
         &:hover {
           color: $c_denim;

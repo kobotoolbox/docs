@@ -1,27 +1,29 @@
 <section class="main-search {% if pagename == 'index' %}main-search--big{% endif %}" role="search">
   <!-- copied and heavily changed content of built-in `searchbox.html` -->
   <div class="wrapper">
-    <h1 class="main-search__header">What do you need help with?</h1>
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
 
-    <p class="main-search__paragraph">Search the knowledge base, browse our resources and visit our forum for more detail information</p>
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources and visit our forum for more detail information</p>
 
-    <form id="searchbox" class="main-search__form" action="search.html" method="get">
-      <div class="main-search__text-box-wrapper">
-        <input
-          class="main-search__text-box"
-          type="search"
-          name="q"
-          aria-labelledby="searchlabel"
-          placeholder="Type here your search"
-        />
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type here your search"
+          />
 
-        <i class="icon main-search__magnifying-glass">
-          {% include('../_static/icons/magnifying-glass.svg') %}
-        </i>
-      </div>
+          <i class="icon main-search__magnifying-glass">
+            {% include('../_static/icons/magnifying-glass.svg') %}
+          </i>
+        </div>
 
-      <input class="main-search__submit-button" type="submit" value="Go">
-    </form>
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
 
     <i class="icon main-search__arrow">
       {% include('../_static/icons/chevron-down.svg') %}

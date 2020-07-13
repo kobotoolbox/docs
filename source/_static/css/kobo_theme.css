@@ -147,7 +147,7 @@ i.icon svg {
 }
 
 html body header.main-header {
-  line-height: 1.25em;
+  line-height: 22px;
   position: fixed;
   height: 70px;
   background: #414453;
@@ -205,15 +205,13 @@ html body header.main-header .main-header__navigation ul li a:hover {
   opacity: 0.8;
 }
 
-@media screen and (min-width: 769px) {
-  html body header.main-header .main-header__navigation ul li.current a {
-    color: #2095f3;
-  }
+html body header.main-header .main-header__navigation ul li.current a {
+  color: #2095f3;
 }
 
-@media screen and (max-width: 359px) {
-  html body header.main-header .main-header__navigation ul {
-    padding: 24px 15px;
+@media screen and (max-width: 875px) {
+  html body header.main-header .main-header__navigation ul li:not(.current) {
+    display: none;
   }
 }
 
@@ -300,12 +298,22 @@ html body header.main-header .main-header__navigation ul li a:hover {
   width: 1.875rem;
 }
 
-.main-search .main-search__form {
+.main-search .main-search__content {
   width: 100%;
   max-width: 77.5rem;
   padding-left: 2.8125rem;
   padding-right: 2.8125rem;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 875px) {
+  .main-search .main-search__content {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
+.main-search .main-search__form {
   padding-top: 1.875rem;
   padding-bottom: 1.875rem;
 }
@@ -389,6 +397,13 @@ html body {
   padding-bottom: 2.8125rem;
 }
 
+@media screen and (max-width: 875px) {
+  .page .page__wrapper {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
 @media screen and (min-width: 876px) {
   .page.page--has-sidebar .page__wrapper {
     display: -webkit-box;
@@ -407,6 +422,12 @@ html body {
   .page.page--has-sidebar .page__sidebar {
     width: 30%;
     margin-right: 2.8125rem;
+  }
+}
+
+@media screen and (max-width: 875px) {
+  .page.page--has-sidebar .page__sidebar {
+    margin-top: 2.8125rem;
   }
 }
 
@@ -604,6 +625,8 @@ html body {
   font-size: inherit;
   border-bottom: none;
   text-decoration: none;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .page__related nav#rellinks ul a:hover {
@@ -696,6 +719,21 @@ html body div.footer a {
   color: inherit;
 }
 
+html body div.footer p {
+  width: 100%;
+  max-width: 77.5rem;
+  padding-left: 2.8125rem;
+  padding-right: 2.8125rem;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 875px) {
+  html body div.footer p {
+    padding-left: 0.9375rem;
+    padding-right: 0.9375rem;
+  }
+}
+
 .community-questions.community-questions--big {
   background-image: url("../images/scott-graham-5fNmWej4tAA-unsplash.jpg");
   background-repeat: no-repeat;
@@ -730,7 +768,7 @@ html body div.footer a {
 }
 
 .community-questions.community-questions--big .wrapper {
-  padding: 4.5rem 1rem 6rem;
+  padding: 4.375rem 0.9375rem 6.25rem;
   text-align: center;
   color: #fff;
   background-color: rgba(0, 74, 141, 0.6);
@@ -766,7 +804,7 @@ html body div.footer a {
 }
 
 .community-questions a.button {
-  border-radius: 3rem;
+  border-radius: 3.125rem;
   padding-left: 1.875rem;
   padding-right: 1.875rem;
 }
@@ -798,6 +836,12 @@ html body div.footer a {
 .page#index .toctree-wrapper[id^="home-page-toc-"] {
   background: #fff;
   padding: 1.875rem;
+}
+
+.page#index .toctree-wrapper[id^="home-page-toc-"]::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 @media screen and (min-width: 876px) {
@@ -895,5 +939,24 @@ html body div.footer a {
 
 .page#index .toctree-wrapper[id="home-page-toc-computer-server"] .caption {
   background-image: url("../icons/custom/computer-server.svg");
+}
+
+.page#search .page__body form {
+  display: none;
+}
+
+.page#search .page__body ul.search {
+  padding: 0;
+  margin: 0.9375rem 0 0 1.25rem;
+  list-style: decimal;
+}
+
+.page#search .page__body ul.search li {
+  padding: 0.3125rem 0;
+  background: none;
+}
+
+.page#search .page__related {
+  display: none;
 }
 /*# sourceMappingURL=kobo_theme.css.map */

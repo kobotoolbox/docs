@@ -1,7 +1,5 @@
-@import "variables";
-
 html body header.main-header {
-  line-height: 1.25em;
+  line-height: 22px;
   position: fixed;
   height: $header_height;
   background: $c_rhino;
@@ -51,15 +49,15 @@ html body header.main-header {
           }
         }
 
-        @media screen and (min-width: 769px) {
-          &.current a {
-            color: $c_blue;
+        &.current a {
+          color: $c_blue;
+        }
+
+        @include screen-small {
+          &:not(.current) {
+            display: none;
           }
         }
-      }
-
-      @media screen and (max-width: 359px) {
-        padding: 24px 15px;
       }
     }
   }

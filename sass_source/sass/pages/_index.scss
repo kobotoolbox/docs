@@ -27,6 +27,8 @@
     background: $c_white;
     padding: rem(30px);
 
+    @include clearfix();
+
     @include screen-big() {
       width: 30%;
       float: left;

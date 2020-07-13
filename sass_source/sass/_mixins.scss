@@ -127,4 +127,17 @@
   padding-left: rem(45px);
   padding-right: rem(45px);
   margin: 0 auto;
+
+  @include screen-small() {
+    padding-left: rem(15px);
+    padding-right: rem(15px);
+  }
+}
+
+@mixin clearfix() {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 }
