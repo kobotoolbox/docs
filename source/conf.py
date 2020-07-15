@@ -82,9 +82,11 @@ html_css_files = [
     'css/kobo_theme.css',
 ]
 html_js_files = [
+    'js/smoothscroll-polyfill.js',
     'js/common.js',
     'js/home_page_toc_activator.js',
     'js/sidebar_toc_activator.js',
     'js/breadcrumbs.js',
+    'js/scrollto.js',
 ]
 

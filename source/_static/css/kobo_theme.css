@@ -253,6 +253,12 @@ html body header.main-header .main-header__navigation ul li.current a {
 
 .main-search.main-search--big .wrapper {
   background-color: rgba(0, 74, 141, 0.6);
+  position: relative;
+  z-index: 1;
+}
+
+.main-search.main-search--big .main-search__form {
+  padding-bottom: 0;
 }
 
 .main-search .wrapper {
@@ -288,14 +294,25 @@ html body header.main-header .main-header__navigation ul li.current a {
 }
 
 .main-search .main-search__arrow {
+  cursor: pointer;
   display: block;
-  text-align: center;
+  width: 1.4375rem;
+  margin: 0 auto;
+  padding: 1.875rem 1.875rem 1.5rem;
   color: #fff;
-  padding-bottom: 1.5rem;
+  text-align: center;
 }
 
 .main-search .main-search__arrow svg {
-  width: 1.875rem;
+  width: 1.4375rem;
+  height: auto;
+  -webkit-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.main-search .main-search__arrow:hover svg {
+  scale: 1.2;
 }
 
 .main-search .main-search__content {

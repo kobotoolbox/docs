@@ -6,6 +6,12 @@
 
     .wrapper {
       background-color: rgba($c_smalt, 0.6);
+      position: relative;
+      z-index: 1;
+    }
+
+    .main-search__form {
+      padding-bottom: 0;
     }
   }
 
@@ -44,13 +50,25 @@
   }
 
   .main-search__arrow {
+    cursor: pointer;
     display: block;
-    text-align: center;
+    box-sizing: content-box;
+    width: rem(23px);
+    margin: 0 auto;
+    padding: rem(30px) rem(30px) rem(24px);
     color: $c_white;
-    padding-bottom: rem(24px);
+    text-align: center;
 
     svg {
-      width: rem(30px);
+      width: rem(23px);
+      height: auto;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      svg {
+        scale: 1.2;
+      }
     }
   }
 
