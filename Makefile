@@ -29,4 +29,4 @@ github:
 # remove build folders
 clean:
 	rm -rf $(COMPILEDIR)
-	rm -rf $(BUILDDIR)	
+	rm -rf $(BUILDDIR)
