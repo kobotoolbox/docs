@@ -1,7 +1,53 @@
 .page.custom-section-page {
   .page__body {
+    > p.caption {
+      font-weight: 700;
+      font-size: rem(36px);
+      line-height: rem(50px);
+    }
+
     > ul {
       display: none;
+    }
+
+    > ul > li > ul {
+      padding-left: rem(30px);
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover {
+        color: $c_denim;
+        text-decoration: underline;
+      }
+    }
+
+    li.toctree-l1 {
+      border-top: 1px solid $c_linkwater;
+      margin-top: rem(16px);
+      padding-top: rem(16px);
+
+      > a {
+        font-size: rem(18px);
+        font-weight: 600;
+      }
+    }
+
+    li.toctree-l2 {
+      margin-top: rem(16px);
+
+      > a {
+        font-size: rem(16px);
+        font-weight: 400;
+      }
     }
   }
 

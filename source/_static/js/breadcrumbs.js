@@ -2,13 +2,29 @@
   const listId = "breadcrumbslist";
   let breadcrumbsCount = 0;
 
-  function addBreadcrumb(title, url) {
+  function findSection(title) {
+    let foundSection = null;
+    if (window.docs && window.docs.sectionsData) {
+      Object.keys(window.docs.sectionsData).forEach((key) => {
+        const item = window.docs.sectionsData[key];
+        if (title === item.title) {
+          foundSection = item;
+        }
+      });
+    }
+    return foundSection;
+  }
+
+  function addBreadcrumb(title) {
     const listEl = document.getElementById(listId);
     const crumb = window.document.createElement("li");
     crumb.classList.add("breadcrumb");
-    if (url) {
+
+    const section = findSection(title);
+
+    if (section) {
       const anchor = window.document.createElement("a");
-      anchor.href = url;
+      anchor.href = window.docs.rootUrl + `${section.name}.html`;
       anchor.insertAdjacentText("beforeend", title);
       crumb.appendChild(anchor);
     } else {

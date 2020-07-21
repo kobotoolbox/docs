@@ -118,7 +118,7 @@ h6 {
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 2.25rem;
 }
 
 h2 {
@@ -469,7 +469,7 @@ html body {
 }
 
 .page .page__body h1 {
-  margin: 0 auto 2.25rem;
+  margin: 1rem auto 2.25rem;
   line-height: 1;
 }
 
@@ -1011,8 +1011,54 @@ html body div.footer p {
   display: none;
 }
 
+.page.custom-section-page .page__body > p.caption {
+  font-weight: 700;
+  font-size: 2.25rem;
+  line-height: 3.125rem;
+}
+
 .page.custom-section-page .page__body > ul {
   display: none;
+}
+
+.page.custom-section-page .page__body > ul > li > ul {
+  padding-left: 1.875rem;
+}
+
+.page.custom-section-page .page__body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.page.custom-section-page .page__body a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page.custom-section-page .page__body a:hover {
+  color: #0a6dbc;
+  text-decoration: underline;
+}
+
+.page.custom-section-page .page__body li.toctree-l1 {
+  border-top: 1px solid #cfd5e3;
+  margin-top: 1rem;
+  padding-top: 1rem;
+}
+
+.page.custom-section-page .page__body li.toctree-l1 > a {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.page.custom-section-page .page__body li.toctree-l2 {
+  margin-top: 1rem;
+}
+
+.page.custom-section-page .page__body li.toctree-l2 > a {
+  font-size: 1rem;
+  font-weight: 400;
 }
 
 .page.custom-section-page#getting-started .page__body > p.caption:not(#getting-started-section-caption) {
