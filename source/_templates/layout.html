@@ -73,6 +73,7 @@
       currentPagename: "{{ pagename }}",
       currentTitle: "{{ title }}",
       currentUrl: ("{{ pathto(master_doc) }}").replace("index.html", "{{ pagename }}.html"),
+      rootUrl: "{{ url_root }}",
       sectionsData: {{ config.sections_data|tojson }},
     };
   </script>

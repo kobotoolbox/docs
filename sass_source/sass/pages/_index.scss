@@ -1,7 +1,17 @@
 .page#index {
   background: $c_whitesmoke;
 
+  .page__related {
+    display: none;
+  }
+
   #topics {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
+
     > h1 {
       font-family: $font_source;
       font-weight: 700;
@@ -9,6 +19,7 @@
       text-transform: none;
       text-align: center;
       margin: 0 0 rem(12px);
+      width: 100%;
     }
 
     > p {
@@ -16,6 +27,7 @@
       margin: 0 0 rem(42px);
       text-align: center;
       color: $c_manatee;
+      width: 100%;
     }
   }
 
@@ -25,14 +37,15 @@
 
   .toctree-wrapper[id^="home-page-toc-"] {
     background: $c_white;
-    padding: rem(30px);
+    padding: rem(30px) rem(30px) rem(30px + 20px + 30px);
+    position: relative;
 
     @include clearfix();
 
     @include screen-big() {
-      width: 30%;
-      float: left;
+      width: calc(33.33% - #{rem(20px)});
 
+      // first and second in the row have margin
       &:nth-of-type(3n+1),
       &:nth-of-type(3n+2) {
         margin-right: rem(30px);
@@ -67,7 +80,6 @@
     ul {
       list-style: none;
       margin: 0;
-      padding: 0;
     }
 
     // nested list
@@ -76,8 +88,15 @@
     }
 
     ul li {
+      line-height: rem(20px);
+
       &:not(:first-child) {
         margin-top: rem(16px);
+      }
+
+      // hide all exceeding items
+      &.toctree-l1:nth-child(n+6) {
+        display: none;
       }
     }
 
@@ -92,8 +111,9 @@
     }
 
     .show-all-button {
-      float: right;
-      margin-top: rem(20px);
+      position: absolute;
+      right: rem(30px);
+      bottom: rem(30px);
 
       &::after {
         content: "";
