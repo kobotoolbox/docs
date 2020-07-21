@@ -36,3 +36,11 @@ To develop the theme:
 1. Build:
   1. To watch for style changes use `npm run dev`
   1. To just build the styles use `npm start`
+
+Useful links:
+
+- (Jinja)[https://jinja.palletsprojects.com/en/2.11.x/] - templating language used in `.html` files
+- (Official Sphinx documentation)[https://www.sphinx-doc.org]
+- (Alabaster theme source code)[https://github.com/bitprophet/alabaster]
+- (Sphinx source code)[https://github.com/sphinx-doc/sphinx]
+- (Basic Sphinx theme source code)[https://github.com/sphinx-doc/sphinx/tree/3.x/sphinx/themes/basic]

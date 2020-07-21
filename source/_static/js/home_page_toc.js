@@ -24,7 +24,7 @@
     const tocs = document.querySelectorAll(".toctree-wrapper[id^='home-page-toc-']");
     if (tocs.length !== 0) {
       tocs.forEach(limitTocDisplay)
-      console.info("Home page TOCs activated.");
+      console.info("home page TOCs ready");
     }
   });
 })();

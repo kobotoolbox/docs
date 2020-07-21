@@ -1,8 +1,10 @@
 {% extends "!layout.html" %}
 
+{% import "_config.html" as config %}
+
 {# Copied this block from Alabaster source and modified heavily #}
 {%- block content %}
-<div class="page {% if pagename != 'index' %}page--has-sidebar{% endif %}" id="{{ pagename }}">
+<div class="page {% if pagename != 'index' %}page--has-sidebar{% endif %} {% block page_classes %}{% endblock %}" id="{{ pagename }}">
   <div class="page__wrapper">
     {%- block document %}
       <section class="page__content">
@@ -20,7 +22,7 @@
         </section>
 
         {%- block relbar_bottom %}
-          {%- if theme_show_relbar_bottom|tobool and pagename != "index" %}
+          {%- if theme_show_relbar_bottom|tobool and next or prev %}
             <section class="page__related">
               {{- rellink_markup () }}
             </section>
@@ -29,7 +31,7 @@
       </section>
 
       {% if pagename != "index" %}
-        {% include('./partials/sidebar.html') %}
+        {% include('partials/sidebar.html') %}
       {% endif %}
     {%- endblock %}
   </div>
@@ -39,12 +41,12 @@
 
 {# This block is empty in original theme, we use it to display header menu #}
 {% block relbar1 %}
-{% include('./partials/header.html') %}
-{% include('./partials/search.html') %}
+{% include('partials/header.html') %}
+{% include('partials/search.html') %}
 {% endblock %}
 
 {%- block footer %}
-  {% if pagename == "index" %}{% include('./partials/community_questions.html') %}{% endif %}
+  {% if pagename == "index" %}{% include('partials/community_questions.html') %}{% endif %}
 
   <div class="footer">
     <p>KoBoToolbox at the Harvard Humanitarian Initiative 14 Story St, Second floor, Cambridge, MA 02138</p>
@@ -71,6 +73,7 @@
       currentPagename: "{{ pagename }}",
       currentTitle: "{{ title }}",
       currentUrl: ("{{ pathto(master_doc) }}").replace("index.html", "{{ pagename }}.html"),
+      sectionsData: {{ config.sections_data|tojson }},
     };
   </script>
 {%- endblock %}

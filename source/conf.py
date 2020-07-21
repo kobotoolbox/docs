@@ -57,6 +57,14 @@ html_sidebars = {
     ]
 }
 
+html_additional_pages = {
+    'getting-started': 'sections/getting-started.html',
+    'creating-forms': 'sections/creating-forms.html',
+    'collecting-data': 'sections/collecting-data.html',
+    'managing-projects': 'sections/managing-projects.html',
+    'computer-server': 'sections/computer-server.html',
+}
+
 html_theme_options = {
     'analytics_id': 'UA-26003863-5',
     'sidebar_collapse': True,
@@ -84,9 +92,10 @@ html_css_files = [
 html_js_files = [
     'js/smoothscroll-polyfill.js',
     'js/common.js',
-    'js/home_page_toc_activator.js',
-    'js/sidebar_toc_activator.js',
+    'js/home_page_toc.js',
+    'js/sidebar_toc.js',
     'js/breadcrumbs.js',
     'js/scrollto.js',
+    'js/custom_sections.js',
 ]
 

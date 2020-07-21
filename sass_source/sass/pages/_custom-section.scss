@@ -1,0 +1,57 @@
+.page.custom-section-page {
+  .page__body {
+    > ul {
+      display: none;
+    }
+  }
+
+  &#getting-started .page__body {
+    > p.caption:not(#getting-started-section-caption) {
+      display: none;
+    }
+
+    p.caption#getting-started-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#creating-forms .page__body {
+    > p.caption:not(#creating-forms-section-caption) {
+      display: none;
+    }
+
+    p.caption#creating-forms-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#collecting-data .page__body {
+    > p.caption:not(#collecting-data-section-caption) {
+      display: none;
+    }
+
+    p.caption#collecting-data-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#managing-projects .page__body {
+    > p.caption:not(#managing-projects-section-caption) {
+      display: none;
+    }
+
+    p.caption#managing-projects-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#computer-server .page__body {
+    > p.caption:not(#computer-server-section-caption) {
+      display: none;
+    }
+
+    p.caption#computer-server-section-caption + ul {
+      display: block;
+    }
+  }
+}

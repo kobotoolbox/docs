@@ -46,7 +46,7 @@
           activateSidebarToc(child, tocs.children[i+1])
         }
       }
-      console.info("Sidebar TOCs activated.");
+      console.info("sidebar TOCs ready");
     }
   });
 })();

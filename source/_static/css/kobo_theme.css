@@ -296,6 +296,8 @@ html body header.main-header .main-header__navigation ul li.current a {
 .main-search .main-search__arrow {
   cursor: pointer;
   display: block;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   width: 1.4375rem;
   margin: 0 auto;
   padding: 1.875rem 1.875rem 1.5rem;
@@ -975,5 +977,49 @@ html body div.footer p {
 
 .page#search .page__related {
   display: none;
+}
+
+.page.custom-section-page .page__body > ul {
+  display: none;
+}
+
+.page.custom-section-page#getting-started .page__body > p.caption:not(#getting-started-section-caption) {
+  display: none;
+}
+
+.page.custom-section-page#getting-started .page__body p.caption#getting-started-section-caption + ul {
+  display: block;
+}
+
+.page.custom-section-page#creating-forms .page__body > p.caption:not(#creating-forms-section-caption) {
+  display: none;
+}
+
+.page.custom-section-page#creating-forms .page__body p.caption#creating-forms-section-caption + ul {
+  display: block;
+}
+
+.page.custom-section-page#collecting-data .page__body > p.caption:not(#collecting-data-section-caption) {
+  display: none;
+}
+
+.page.custom-section-page#collecting-data .page__body p.caption#collecting-data-section-caption + ul {
+  display: block;
+}
+
+.page.custom-section-page#managing-projects .page__body > p.caption:not(#managing-projects-section-caption) {
+  display: none;
+}
+
+.page.custom-section-page#managing-projects .page__body p.caption#managing-projects-section-caption + ul {
+  display: block;
+}
+
+.page.custom-section-page#computer-server .page__body > p.caption:not(#computer-server-section-caption) {
+  display: none;
+}
+
+.page.custom-section-page#computer-server .page__body p.caption#computer-server-section-caption + ul {
+  display: block;
 }
 /*# sourceMappingURL=kobo_theme.css.map */

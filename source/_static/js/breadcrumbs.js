@@ -1,5 +1,6 @@
 (function () {
   const listId = "breadcrumbslist";
+  let breadcrumbsCount = 0;
 
   function addBreadcrumb(title, url) {
     const listEl = document.getElementById(listId);
@@ -14,6 +15,7 @@
       crumb.insertAdjacentText("beforeend", title);
     }
     listEl.appendChild(crumb);
+    breadcrumbsCount++;
   }
 
   window.addEventListener("load", function () {
@@ -27,7 +29,7 @@
       }
       const listEl = document.getElementById(listId);
       listEl.classList.add("activated");
-      console.info("Breadcrumbs created.");
+      console.info("breadcrumbs ready", breadcrumbsCount);
     }
   });
 })();

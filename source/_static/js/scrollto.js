@@ -10,6 +10,7 @@
           behavior: "smooth",
         });
       });
+      console.info("home page scroll arrow ready")
     }
   });
 })();
