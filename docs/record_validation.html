@@ -1,21 +1,25 @@
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
     <title>Record Validation &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-    <script type="text/javascript" src="_static/jquery.js"></script>
-    <script type="text/javascript" src="_static/underscore.js"></script>
-    <script type="text/javascript" src="_static/doctools.js"></script>
-    <script type="text/javascript" src="_static/language_data.js"></script>
-    <script type="text/javascript" src="_static/js/custom.js"></script>
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/js/smoothscroll-polyfill.js"></script>
+    <script src="_static/js/common.js"></script>
+    <script src="_static/js/home_page_toc.js"></script>
+    <script src="_static/js/sidebar_toc.js"></script>
+    <script src="_static/js/breadcrumbs.js"></script>
+    <script src="_static/js/scrollto.js"></script>
+    <script src="_static/js/custom_sections.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Deleting a project from your account" href="delete_project.html" />
@@ -27,7 +31,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
 
   </head><body>
-<header role="banner" class="main-header">
+<header role="banner" class="main-header" id="main-header">
   <h1 class="main-header__logo">
     <a href="https://kobotoolbox.org/#home">KoBoToolbox</a>
   </h1>
@@ -37,36 +41,42 @@
       <li><a href="https://kobotoolbox.org/#features">Features</a></li>
       <li><a href="https://kobotoolbox.org/#sign-up">Sign Up</a></li>
       <li><a href="https://kobotoolbox.org/#about">About</a></li>
-      <li><a href="https://kobotoolbox.org/#help">Help</a></li>
+      <!--
+        NOTE: on kobotoolbox.org HELP scroll-navigates to a lower section, but
+        here we use this link as a support home page url
+      -->
+      <li class="current"><a href="index.html">Help</a></li>
     </ul>
   </nav>
 </header>
-<section class="main-search" role="search">
+<section class="main-search " role="search">
   <!-- copied and heavily changed content of built-in `searchbox.html` -->
-  <div class="main-search__wrapper">
-    <h1 class="main-search__header">What do you need help with?</h1>
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
 
-    <p class="main-search__paragraph">Search the knowledge base, browse our resources and visit our forum for more detail information</p>
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources and visit our forum for more detail information</p>
 
-    <form id="searchbox" class="main-search__form" action="search.html" method="get">
-      <div class="main-search__text-box-wrapper">
-        <input
-          class="main-search__text-box"
-          type="search"
-          name="q"
-          aria-labelledby="searchlabel"
-          placeholder="Type here your search"
-        />
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type here your search"
+          />
 
-        <i class="icon main-search__magnifying-glass">
-          <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
-        </i>
-      </div>
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
 
-      <input class="main-search__submit-button" type="submit" value="Go">
-    </form>
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
 
-    <i class="icon main-search__arrow">
+    <i class="icon main-search__arrow" id="main-search-arrow">
       <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
     </i>
   </div>
@@ -74,15 +84,19 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-  
+<div class="page page--has-sidebar " id="record_validation">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
+        <section class="page__body" role="main">
           
-
-          <div class="body" role="main">
-            
   <div class="section" id="record-validation">
 <h1>Record Validation<a class="headerlink" href="#record-validation" title="Permalink to this headline">¶</a></h1>
 <p>A Project owner can now give a “Can Validate” permission to other users. Users with this permission can view a record, edit it if necessary, and assign a status to the record in question. Assigning a status to a particular record/submission raises data collection standards for teams with more than one enumerator.</p>
@@ -90,21 +104,21 @@
 <h2>What are the statuses that you can assign to a record?<a class="headerlink" href="#what-are-the-statuses-that-you-can-assign-to-a-record" title="Permalink to this headline">¶</a></h2>
 <p>The validation status labels available include:</p>
 <ul class="simple">
-<li><strong>On Hold</strong>: Record is under review.</li>
-<li><strong>Approved</strong>: The data within this record is accurate.</li>
-<li><strong>Flagged for Removal</strong>: The data within this record should be removed from the data set.</li>
+<li><p><strong>On Hold</strong>: Record is under review.</p></li>
+<li><p><strong>Approved</strong>: The data within this record is accurate.</p></li>
+<li><p><strong>Flagged for Removal</strong>: The data within this record should be removed from the data set.</p></li>
 </ul>
 </div>
 <div class="section" id="functionality-overview">
 <h2>Functionality Overview<a class="headerlink" href="#functionality-overview" title="Permalink to this headline">¶</a></h2>
 <ul>
-<li><p class="first">This new permission adds a “Validated” column to your project’s data table.</p>
+<li><p>This new permission adds a “Validated” column to your project’s data table.</p>
 <p><img alt="image" src="_images/validated.png" /></p>
 </li>
-<li><p class="first">Users can filter the table view based on the validation status or any other select-one question. For example, you can use these filters to view the submissions associated with a particular enumerator, in District X. It is possible to use more than one filter at a time.</p>
+<li><p>Users can filter the table view based on the validation status or any other select-one question. For example, you can use these filters to view the submissions associated with a particular enumerator, in District X. It is possible to use more than one filter at a time.</p>
 <p><img alt="image" src="_images/filter.png" /></p>
 </li>
-<li><p class="first">Set a validation status for multiple - or all - records at once.</p>
+<li><p>Set a validation status for multiple - or all - records at once.</p>
 <p>To update multiple records, simply select the records by clicking on the checkbox to the left of the record, and then click on “Update Selected” to select the new status.</p>
 <p>To update all the records on the page, select the checkbox on the top left; or to update all the records in your dataset, select the blue text that says “Select all XXX”. Then, click on “Update Selected” to select the new status.</p>
 <p><img alt="image" src="_images/select.png" /></p>
@@ -114,8 +128,9 @@
 </div>
 
 
-          </div>
-    <div class="related bottom">
+          <div class="clearer"></div>
+        </section>
+            <section class="page__related">
   <nav id="rellinks">
     <ul>
         <li>
@@ -128,22 +143,25 @@
         </li>
     </ul>
   </nav>
-    </div>
+            </section>
+        
+      </section>
 
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper"><h3>Navigation</h3>
-<p class="caption"><span class="caption-text">Getting Started</span></p>
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption"><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoBoToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is my data safe on your server?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">FAQ: Didn’t Receive My Activation Link After Signing Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is My Data Safe on Your Server?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Didn’t Receive Activation Link After Signing Up</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoboToolbox Training Materials in Arabic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoBoToolbox Training Materials in Arabic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_french.html">KoBoToolbox Training Materials in French</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Creating Forms</span></p>
 <ul>
@@ -184,6 +202,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Collecting Data</span></p>
 <ul>
@@ -222,9 +241,10 @@
 <li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting your Data into SPSS and/or Stata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and uploading your data to GIS software</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and Uploading Your Data to GIS Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="row_level_permissions.html">Row-level permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
 <p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
 <ul>
@@ -233,41 +253,60 @@
 <li class="toctree-l1"><a class="reference internal" href="kobo_your_servers.html">Install KoBoToolbox on Your Own Servers</a></li>
 </ul>
 
+</div>
 
-        </div>
-      </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="footer">
-      &copy;2020, KoBoToolbox.
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Questions from the community</h1>
+
+    <p>For issues, questions, ideas, or to read anouncements on new releases, please head to our community forum</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
       
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.8.5</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      Visit our forum
       
-      |
-      <a href="_sources/record_validation.md.txt"
-          rel="nofollow">Page source</a>
-    </div>
+    </a>
+  </div>
+</section>
 
-    
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
 
-    
-    <script type="text/javascript">
+  <div class="footer">
+    <p>KoBoToolbox at the Harvard Humanitarian Initiative 14 Story St, Second floor, Cambridge, MA 02138</p>
+  </div>
 
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-26003863-5']);
-      _gaq.push(['_setDomainName', 'none']);
-      _gaq.push(['_setAllowLinker', true]);
-      _gaq.push(['_trackPageview']);
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26003863-5']);
+    _gaq.push(['_setDomainName', 'none']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
 
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  
 
-    </script>
-    
+  <script>
+    window.docs = {
+      currentPagename: "record_validation",
+      currentTitle: "Record Validation",
+      currentUrl: ("index.html").replace("index.html", "record_validation.html"),
+      rootUrl: "./",
+      sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoBoToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
+    };
+  </script>
   </body>
 </html>

@@ -1,57 +1,185 @@
 # Grouping Questions and Repeating Groups
 
-**Groups are collection of one or more questions inside a form.** Groups can also be grouped themselves. There are many scenarios when using groups can be useful:
+KoBoToolbox supports grouping a set/number of questions while designing a survey form. Users may need to group questions due to various reasons. Some maybe as follows: 
 
-* A large form can be divided into multiple large sections  
-* Several questions can be skipped by grouping them and setting a single Skip logic condition  
-* A set of questions should be repeated indefinitely for every unit, such as members of a household  
-* A set of questions should be displayed together on the same screen during data entry  
+* **To make the questionnaire systematic:** Grouping a set of questions makes a questionnaire systematic (e.g. you could group your questions that have special linkage or attributes as Identifier, Section A, Section I or so on).
 
-## Creating Groups and Displaying Multiple Questions on the Same Screen
+* **To display a set of questions in a screen:** It’s possible to display a set of questions together on a screen during data collection if (and only if) you have grouped a set of questions. However, this may not be applicable if you are collecting data using Enketo.
 
-1. To **create a group** just select one question, then click the Group Questions button. Then, drag and drop the other questions in your form that you want included in this group.
+* **To skip a group of questions:** Adding a skip to a group could save your time rather than adding skip logics to all the questions individually. This should also keep your survey tool neat and clean.
 
-    ![image](/images/group_repeat/create_group.png)
+* **To create roster questions:** Grouping is a must if you wish to create a roster where you wish to repeat a group of questions (e.g. a household roster is a set of questions if you wish to collect information from all the household members dwelling under a same roof). 
+
+#### Grouping a set of questions 
+
+* Draft a set of questions that you would wish to group together. Then press the **CTRL Key** _(It may vary based on the OS used. The instruction here is based on the Windows OS)_ and select **all the questions** _(with the help of your mouse)_ that you wish to group. You should see the questions getting highlighted to blue as shown in the image below:
+
+    ![image](/images/group_repeat/group.png)
     
-2. A **group label** can be changed just like question labels. The label will appear above the questions that are within it.
+* Then press **Create group with selected questions** _(marked under the red box)_ as shown in the image above. You should now be able to see your new group as shown in the image below. It should be slightly different (enclosed within a shaded box) then the normal question you generally see.
 
-    ![image](/images/group_repeat/group_label.png)
+    ![image](/images/group_repeat/selected.png)
     
-3. It is possible to **display all questions on the same screen** when collecting data with KoBoCollect. Click on the group's settings box and tick '**Show all questions in this group on the same screen**'. (When you preview your form, all questions are by default displayed on the same screen so you you can view and test it more quickly, so this setting doesn't affect your form in the preview.)
+* You can change the group label just like you do to change the question labels for other questions in KoBoToolbox Form Builder User Interface. Here I have changed the group label to **Demographic Characteristics** as shown in the image below:
 
-    ![image](/images/group_repeat/all_group.png)
+    ![image](/images/group_repeat/demographics.png)
     
-4. You can **drag questions into a group**, or out of them (there has to remain at least one question in the group though). You can also drag-and-drop the entire group to a different location.
+#### Alternative way of creating a group 
 
-    ![image](/images/group_repeat/drag.png)
+* Draft a question. Select the question that you have drafted. It highlights to blue. At the same time the icon (marked under the red box as shown in the image below) for **Create group with selected questions** also gets activated. 
+
+    ![image](/images/group_repeat/alternative_group.png)
     
-5. You can also change the internal unique **Name** (ID) of a group. Only letters, numbers, and underscores are allowed as the group Name, and it can't start with a number. By default, each group receives a unique random name when you create it.
+* Now click the **Create group with selected questions** (icon) and you should be able to see the question has been grouped (despite the fact that there is only one question at the moment).
 
-    ![image](/images/group_repeat/name.png)
+    ![image](/images/group_repeat/alternative_selected.png)
     
-6. To **remove a group**, click the Delete button in the group header. It will only break apart the group; its child questions won't be affected.
+* Add or modify questions as outlined below.
 
-    ![image](/images/group_repeat/remove.png)
+#### Adding questions within a group 
 
-## Creating a Group of Repeating Questions
+You are able to add a question within a group, whenever you feel like while designing a survey form in KoBoToolbox. For this, follow the instructions outlined below:
 
-Repeating groups of questions can be answered multiple times. For example, in a household survey you might want to ask the name, age, gender, and education status of every household member, but you don't know in advance how many members there will be.
+   * Hover your mouse (anywhere inside the group) where you wish to add a new question. You should see a plus sign (+) under the question. In the image below, I have hovered my mouse over the last question (Hobby). Press the plus sign that is inside the group (marked with a red box) to add a new question. _(Note: If you press the other plus sign (+) which is located outside the group, you will be adding a question outside the group.)_
 
-1. To a group of repeating questions, first group the questions that should be repeated  
-2. Go to the group's Settings and tick **Repeat this group if necessary**.  
+       ![image](/images/group_repeat/add_questions.png)
+    
+   * You should now be able to see **Add Question** as shown in the image below:
+
+       ![image](/images/group_repeat/add_questions_2.png)
+    
+#### Removing question(s) from a group 
+
+* You are able to remove question(s) from a group like you normally do by deleting question(s) in KoBoToolbox Form Builder User Interface. Hover your mouse on top of the question you wish to delete. Press the trash (bin) like icon. At this stage, the color of the question box you wish to delete changes to red. You should also see a text with **Delete Question** on top of the question that you wish to delete. 
+
+    ![image](/images/group_repeat/delete_questions.png)
+    
+* Once you click the delete button, you should get a confirmation dialogue box as shown in the image below. Click OK.
+
+    ![image](/images/group_repeat/confirm_delete.png)
+    
+#### Re-ordering a question within a group
+
+* If you are not satisfied with the ordering of the questions within the group, you could re-order them by simply selecting a question (that is within a group) and dragging them to an appropriate place (either up or down as needed). 
+
+    ![image](/images/group_repeat/reorder.png)
+    
+* If needed, you could also drag them outside the group (to extract a question from a group).
+
+#### Displaying the grouped questions on the same screen
+
+* If you wish to display the grouped questions on the same screen, press the gear like settings icon that has been marked under the red boxed as shown in the image below. Then select Show all questions in this group on the same screen as shown in the image below:
+
+    ![image](/images/group_repeat/display.png)
+    
+Alternatively, you could also group a set of questions and display them on the same screen through xlsform (if you are comfortable with xlsform) using **field-list** under the **appearance** column as outlined in the image below: 
+
+   * In the survey tab of your xlsform:
+       
+       ![image](/images/group_repeat/xls.png)
+       
+   * In the choices tab of your xlsform:
+   
+       ![image](/images/group_repeat/xls_choices.png)
+       
+#### Un-grouping a set of questions 
+
+* If you feel like you do not need a group of questions, you could un-group the grouped questions. For this simply click the trash like **Delete** button from the group header. 
+
+    ![image](/images/group_repeat/ungroup.png)
+    
+* You should then get a dialogue box confirming you wish to split apart the group. Press OK.
+
+    ![image](/images/group_repeat/ungroup_confirm.png)
+    
+* After pressing the OK button, the group will disappear. The questions within the groups does not get deleted. It’s only the group that gets un-grouped as shown in the image below:
+
+    ![image](/images/group_repeat/ungroup_results.png)
+    
+#### Skipping a group of questions 
+
+There are times when you need to skip a lot of questions based on the response from a previous question. You could do this in KoBoToolbox Form Builder User Interface following the instructions outlined below:
+
+   * To skip a group of questions, you should have at least one controlling question on top of the grouped question. Press the settings icon from the grouped question as shown in the image below:
+   
+       ![image](/images/group_repeat/skip.png)
+       
+   * Then select Skip Logic and configure the skip logic as shown in the image below. To learn more on how to use skip logic, please visit our support article [Adding Skip Logic to Your Form](skip_logic.md).
+
+       ![image](/images/group_repeat/skip_logic.png)
+
+Alternatively, you could also do this in xlsform by following the instructions as outlined in the image below:
+
+   * In the survey tab of your xlsform:
+   
+       ![image](/images/group_repeat/skip_xls.png)   
+       
+   * In the choices tab of your xlsform:
+   
+       ![image](/images/group_repeat/skip_xls_choices.png)   
+       
+#### Creating a roster (repeating group of questions) 
+
+Questions within a roster can be answered multiple times. For example, in a household survey you might want to ask the name, age, gender and education status of every household members by creating a household roster. 
+
+* To create a roster, create a group of questions following the instructions that has already been outlined above. Then under the **group settings**, select **Repeat this group if necessary** (marked under the red box as shown in the image below). 
 
     ![image](/images/group_repeat/repeat.png)
     
-3. During the interview, the interviewer will be able to enter the details to these questions as many times as required.  
+* During an interview the enumerators will be able to enter the details to these questions as many times as required _(as this method allows an infinite number of repeat group iterations)_.
 
-**Advanced users**: The number of times this repeat group can be answered is by default unlimited. After answering the questions the interviewer is able to add another loop after each time. It is possible to set the number of loops in advance to a specific number. For example, if the form asks 'Number of household members' the number of loops can be set to the number given to that question. To specify the number of repeat loops, save your form and export it to XLS format. Inside the file, add a column in the survey sheet called 'repeat_count'. For the specific repeat group in your file, enter a number into that column. Alternatively, you can specify the question whose number should be used, using the referencing style, such as ${household_members}.
+_**Please Note:** The structure of data from roster is different than the data you normally see with other variables or even groups. While downloading your data, you should see a different sheet for each roster (i.e. the number of additional sheets should be seen with the number of roster that you have within your survey form)._
 
-## Including names and other responses from previous repeat groups
+#### Controlling the loop of repetition in a roster 
 
-Sometimes you might need to include certain details from a previous repeat group in another repeat group. For example, your first repeat group might ask the names of each household member, while later you would like to ask about the education status for each of these members. While it's possible to ask about all details in a single repeat group, this may be awkward in a large survey. This can be done using the indexed-repeat() function in a Calculation question.
+Sometimes your survey may demand you to control the repeating of questions in a roster with a value of a certain variable. In this case, you should modify your survey form in xlsform as KoBoToolbox Form Builder User Interface at the moment does not support this feature.
 
-To include a response (such as a name) in different repeat groups follow [the example in this form](https://docs.google.com/spreadsheets/d/1Q3XvzONEKxgJdzSF1mPUlWyqSnrcHlQM7ZBHE247qyE/edit). The form in the example uses the indexed-repeat() function in line 10 in the following way:  `indexed-repeat(${name}, ${demographic}, position(..))`, whereas ${name} is the question "What is your name?", ${demographic} refers to the first repeat group that includes the name question, and position(..) specifies the current repeat group instance in the second repeat group. By including `${name_individual}` in the last question the interviewer knows which person the question refers to.
+   * In the survey tab of your xlsform:
+   
+       ![image](/images/group_repeat/roaster_xls.png)
+       
+   * In the choices tab of your xlsform:
 
-![image](/images/group_repeat/preview_demographic.png)
+       ![image](/images/group_repeat/roaster_xls_choices.png)
+       
+_**Please note:** Instead of having an infinite number of repeat group iterations, this method will help you control the questions in the repeat group using **repeat_count**._ 
 
-![image](/images/group_repeat/preview_education.png)
+#### Using information to a roster from a preceding roster
+
+While working with grouping questions and repeating groups, sometimes you might need to include certain details (information) to a roster from a preceding roster. Designing such survey form is possible in KoBoToolbox using an **indexed-repeat** function in the **xlsform**. For example, you could use the name that has been recorded in a roster (previously) to link with other repeating group questions (like education etc.). For this, simply follow the instructions as outlined in the image below:
+
+   * In the survey tab of your xlsform:
+   
+      ![image](/images/group_repeat/preceding_roaster_xls.png)
+      
+   * In the choices tab of your xlsform:
+   
+      ![image](/images/group_repeat/preceding_roaster_xls_choices.png)
+      
+   * Screen seen while collecting data in Enketo:
+   
+      ![image](/images/group_repeat/enketo.png)
+      
+#### Nested Repeat (roster within a roster)
+
+KoBoToolbox also supports a much complex form of designing repeat group known as the nested repeat form design. Here you are able to add a roster within a roster (i.e. a repeat group question within a repeat group question). You could do this by following the instructions outlined in the image below:
+
+   * Design a roster as shown in the image below (with the group name **Demographic Characteristics**) and then place another roster (with the group name **List of Hobbies**) within a roster (**Demographic Characteristics**) by following the steps outlined above under **Creating a roster (repeating group of questions)**. You should then have a nested repeat form as shown in the image below:
+   
+      ![image](/images/group_repeat/nested_repeat.png)
+      
+Alternatively, you could also do this in xlsform by following the instructions as outlined in the image below:
+
+   * In the survey tab of your xlsform:
+      
+      ![image](/images/group_repeat/nested_repeat_xls.png)
+      
+   * In the choices tab of your xlsform:
+   
+      ![image](/images/group_repeat/nested_repeat_xls_choices.png)
+      
+   * Screen seen while collecting data in Enketo:
+   
+      ![image](/images/group_repeat/nested_repeat_enketo.png)
+      
+_**Please Note:** You are able to collect data using the Nested Repeat in both Enketo and KoBoCollect android app. If you are using the KoBoCollect android app, please ensure that you are using the latest version as earlier versions may not function properly._ 
