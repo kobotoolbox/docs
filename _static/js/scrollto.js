@@ -1,5 +1,5 @@
 (function () {
-  window.addEventListener("load", function () {
+  window.addEventListener("DOMContentLoaded", function () {
     const searchArr = document.getElementById("main-search-arrow");
     const page = document.getElementById("index");
     const mainHeader = document.getElementById("main-header");
