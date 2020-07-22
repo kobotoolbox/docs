@@ -22,9 +22,10 @@ Prerequisites:
 1. Install requirements `pip install -r requirements.txt`
 1. Build the html files: `make html`
 1. Open the index page in the browser: `open _build/html/index.html`
-1. Build and copy the html files into the `docs` folder with `make github` (if this is intended as a public update)
 
 Note: if you have Python 3, you might need to use `python3` command instead of `python` (and `pip3` instead of `pip`).
+
+Each commit to `master` is automatically built into production.
 
 ## Custom theme development
 
