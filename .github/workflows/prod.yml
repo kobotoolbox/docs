@@ -37,12 +37,15 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Build public files
-      run: make github
+      run: make html
       
-    # - name: Deploy to gh-pages
-    #   uses: peaceiris/actions-gh-pages@v3
-    #   with:
-    #     github_token: ${{ secrets.GITHUB_TOKEN }}
-    #     publish_dir: ./docs
-    #     publish_branch: gh-pages
-    #     cname: support.kobotoolbox.org
+    - name: Disable Jekyll
+      run: touch _build/html/.nojekyll
+      
+    - name: Deploy to gh-pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./docs
+        publish_branch: gh-pages
+        cname: support.kobotoolbox.org
