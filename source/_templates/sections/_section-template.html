@@ -1,8 +1,0 @@
-{% extends "layout.html" %}
-
-{# Use the "id" of current page provided in layout.html #}
-{% block page_classes %}custom-section-page{% endblock %}
-
-{% block body %}
-{{ toctree(collapse=false, maxdepth=-1) }}
-{% endblock %}

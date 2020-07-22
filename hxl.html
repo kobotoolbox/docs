@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Using Hxl Tags &#8212; KoBoToolbox  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="_static/js/smoothscroll-polyfill.js"></script>
+    <script src="_static/js/common.js"></script>
+    <script src="_static/js/home_page_toc.js"></script>
+    <script src="_static/js/sidebar_toc.js"></script>
+    <script src="_static/js/breadcrumbs.js"></script>
+    <script src="_static/js/scrollto.js"></script>
+    <script src="_static/js/custom_sections.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How To Lower the File Size of Collected Media" href="lower_file_size.html" />
+    <link rel="prev" title="Using Alternative Enketo Web Form Styles" href="alternative_enketo.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <h1 class="main-header__logo">
+    <a href="https://kobotoolbox.org/#home">KoBoToolbox</a>
+  </h1>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href="https://kobotoolbox.org/#home">Home</a></li>
+      <li><a href="https://kobotoolbox.org/#features">Features</a></li>
+      <li><a href="https://kobotoolbox.org/#sign-up">Sign Up</a></li>
+      <li><a href="https://kobotoolbox.org/#about">About</a></li>
+      <!--
+        NOTE: on kobotoolbox.org HELP scroll-navigates to a lower section, but
+        here we use this link as a support home page url
+      -->
+      <li class="current"><a href="index.html">Help</a></li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources and visit our forum for more detail information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type here your search"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="hxl">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <div class="section" id="using-hxl-tags">
+<h1>Using Hxl Tags<a class="headerlink" href="#using-hxl-tags" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-exactly-is-hxl">
+<h2>What exactly is HXL?<a class="headerlink" href="#what-exactly-is-hxl" title="Permalink to this headline">¶</a></h2>
+<p>HXL stands for <strong>Humanitarian Exchange Language</strong>. The goal of HXL is to improve information sharing during a humanitarian crisis by creating a simple way to promote interoperablity of data. It does this by coding the data through hashtags (#) similar to Twitter. For more information on HXL, please <a class="reference external" href="http://hxlstandard.org">visit here</a>.</p>
+</div>
+<div class="section" id="how-to-use-hxl-in-an-xlsform">
+<h2>How to use HXL in an XLSForm<a class="headerlink" href="#how-to-use-hxl-in-an-xlsform" title="Permalink to this headline">¶</a></h2>
+<p>When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column. See screenshot for example.</p>
+<p><img alt="image" src="_images/xls6.png" /></p>
+</div>
+<div class="section" id="how-to-use-the-hxl-feature-in-the-formbuilder">
+<h2>How to use the HXL feature in the Formbuilder<a class="headerlink" href="#how-to-use-the-hxl-feature-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
+<p><em>Credits:  <a class="reference external" href="http://www.megginson.com">David Megginson</a></em>
+<em>Link to step-by-step <a class="reference external" href="https://docs.google.com/presentation/d/123bHSkNh4T30CNq0i37IxOLfrqSC-3V_Khtkf6bIdg0/edit#slide=id.p">slide show guide</a></em></p>
+<ol>
+<li><p>After starting a form and creating a question, go into Question Settings and in the Question Options tab, choose your HXL tag and add attributes.</p>
+<p><img alt="image" src="_images/hxl.jpg" /></p>
+</li>
+<li><p>After the form has been created, the project deployed, and data has been collected, go to the Downloads tab in the Data page. Select the export type as XLS and be sure to select <strong>XML values and headers</strong> for the value and header format. Then Export.</p>
+<p><img alt="image" src="_images/xml_values.jpg" /></p>
+</li>
+<li><p>Once you have exported and downloaded the data to your computer, open up the XLS file to see your HXL tags. It’s okay to have KoBo metadata that doesn’t have HXL hashtags.</p>
+<p><img alt="image" src="_images/xls_affected.jpg" /></p>
+</li>
+</ol>
+<p><em>Note: The hashtag before name is mandatory. Spaces are not allowed.</em></p>
+</div>
+</div>
+
+
+          <div class="clearer"></div>
+        </section>
+            <section class="page__related">
+  <nav id="rellinks">
+    <ul>
+        <li>
+          &larr;
+          <a href="alternative_enketo.html" title="Previous document">Using Alternative Enketo Web Form Styles</a>
+        </li>
+        <li>
+          <a href="lower_file_size.html" title="Next document">How To Lower the File Size of Collected Media</a>
+          &rarr;
+        </li>
+    </ul>
+  </nav>
+            </section>
+        
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoBoToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is My Data Safe on Your Server?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Didn’t Receive Activation Link After Signing Up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoBoToolbox Training Materials in Arabic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_french.html">KoBoToolbox Training Materials in French</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Creating Forms</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="new_project.html">How to Create a New Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of all Formbuilder Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">How to Use the Calculate Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Use of Calculate Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_question_type.html">How to Use the Video Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix response type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Include Responses Inside Another Question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding Media to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo to Your Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting text responses with regular expressions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">How to Include P-Codes in the Output Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">How to Create Unique Serial Numbers in Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data () Functionality in Kobotoolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Collecting signatures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language in the Project Dashboard</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLS Form</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Meta Questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enketo.html">What are Enketo webforms?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using Hxl Tags</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-exactly-is-hxl">What exactly is HXL?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-hxl-in-an-xlsform">How to use HXL in an XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-the-hxl-feature-in-the-formbuilder">How to use the HXL feature in the Formbuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">How To Lower the File Size of Collected Media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">How to Deploy a Form to Start a New Data Collection Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Collecting Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Collecting Data with KoBoCollect on Android</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Managing Projects and Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a project from your account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports stuck in pending state</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and Downloading Your Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and unarchiving your projects</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Managing permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Viewing and Creating Custom Reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, sharing, and exporting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling your data into Excel Power Query</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">How to edit or delete a single submission</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Downloading photos and other media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering data from previous form versions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting your Data into SPSS and/or Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling your data into PowerBI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and Uploading Your Data to GIS Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="row_level_permissions.html">Row-level permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
+</ul>
+<p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing on a Local Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_your_servers.html">Install KoBoToolbox on Your Own Servers</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Questions from the community</h1>
+
+    <p>For issues, questions, ideas, or to read anouncements on new releases, please head to our community forum</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoBoToolbox at the Harvard Humanitarian Initiative 14 Story St, Second floor, Cambridge, MA 02138</p>
+  </div>
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-26003863-5']);
+    _gaq.push(['_setDomainName', 'none']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "hxl",
+      currentTitle: "Using Hxl Tags",
+      currentUrl: ("index.html").replace("index.html", "hxl.html"),
+      rootUrl: "./",
+      sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoBoToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
+    };
+  </script>
+  </body>
+</html>
