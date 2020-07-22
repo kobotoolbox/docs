@@ -1,0 +1,33 @@
+# This workflow builds live website on master commits.
+
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+
+    - name: Install FE dependencies
+      run: npm install
+
+    - name: Build styles
+      run: npm start
+
+    - name: Create virtual environment
+      run: python -m venv koboenv
+
+    - name: Activate virtual environment
+      run: source koboenv/bin/activate
+
+    - name: Install requirements
+      run: pip install -r requirements.txt
+
+    - name: Build public files
+      run: make github
