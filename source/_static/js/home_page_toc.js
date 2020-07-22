@@ -30,7 +30,7 @@
     }
   }
 
-  window.addEventListener("load", function () {
+  window.addEventListener("DOMContentLoaded", function () {
     const tocs = document.querySelectorAll(".toctree-wrapper[id^='home-page-toc-']");
     if (tocs.length !== 0) {
       tocs.forEach(setupToc)

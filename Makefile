@@ -20,12 +20,6 @@ help:
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-# copy html to docs folder for GitHub
-github:
-	@make html
-	@cp -a _build/html/. docs
-	@touch docs/.nojekyll
-
 # remove build folders
 clean:
 	rm -rf $(COMPILEDIR)

@@ -1,5 +1,5 @@
 (function () {
-  window.addEventListener("load", function () {
+  window.addEventListener("DOMContentLoaded", function () {
     const captions = document.querySelectorAll(".custom-section-page .page__body > p.caption");
 
     if (captions.length !== 0) {

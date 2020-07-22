@@ -37,7 +37,7 @@
     }
   }
 
-  window.addEventListener("load", function () {
+  window.addEventListener("DOMContentLoaded", function () {
     const tocs = document.querySelector(".sidebar_tocs");
     if (tocs && tocs.children.length !== 0) {
       for (let i = 0; i < tocs.children.length; i++) {
