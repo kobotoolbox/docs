@@ -1,21 +1,25 @@
-$c_blue: #2095f3;
-$c_black: #414453;
-$c_gray: #a6aaba;
-$c_green: #52c5d0;
-$c_white: #fff;
-$c_solitude: lighten($c_black, 63%);
-$c_whitesmoke: lighten($c_black, 68%);
-$c_smalt: #004a8d;
+$c_rhino: #414453;
+$c_riverbed: #444d63;
 $c_manatee: #8a8fa3;
+$c_gray: #a6aaba;
 $c_linkwater: #cfd5e3;
+$c_solitude: #e8e9ed;
+$c_whitesmoke: #f6f7f8;
+$c_white: #fff;
+
+$c_smalt: #004a8d;
+$c_blue: #2095f3;
+$c_denim: #0a6dbc;
+$c_green: #52c5d0;
 
 $header_height: 70px;
 
 $alabaster_breakpoint: 875px;
 
 $min_width: 320px;
-$max_width: 1000px;
+$max_width: 1150px;
 $min_font: 14px;
+$average_font: 16px; // used for rems
 $max_font: 18px;
 $link_transition: all 0.2s;
 

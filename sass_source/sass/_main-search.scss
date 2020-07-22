@@ -1,19 +1,21 @@
 .main-search {
   width: 100%;
-  margin-bottom: 2.5rem;
 
   &.main-search--big {
-    background-image: url("../images/scott-graham-5fNmWej4tAA-unsplash.jpg");
-    background-repeat: no-repeat;
-    background-position: center 25%;
-    background-size: cover;
+    @include blue-photo-bg();
 
-    .main-search__wrapper {
+    .wrapper {
       background-color: rgba($c_smalt, 0.6);
+      position: relative;
+      z-index: 1;
+    }
+
+    .main-search__form {
+      padding-bottom: 0;
     }
   }
 
-  .main-search__wrapper {
+  .wrapper {
     width: 100%;
     background-color: rgba($c_smalt, 0.7);
   }
@@ -38,44 +40,58 @@
   .main-search__header {
     font-family: $font_source;
     font-weight: 700;
-    font-size: 2.25rem;
-    padding-top: 4rem;
+    font-size: rem(36px);
+    padding-top: rem(64px);
   }
 
   .main-search__paragraph {
-    font-size: 1.125rem;
-    padding-top: 0.5rem;
+    font-size: rem(16px);
+    padding-top: rem(8px);
   }
 
   .main-search__arrow {
+    cursor: pointer;
     display: block;
-    text-align: center;
+    box-sizing: content-box;
+    width: rem(23px);
+    margin: 0 auto;
+    padding: rem(30px) rem(30px) rem(24px);
     color: $c_white;
-    padding-bottom: 1.5rem;
+    text-align: center;
 
     svg {
-      width: 1.875rem;
+      width: rem(23px);
+      height: auto;
+      transition: all 0.2s;
+    }
+
+    &:hover {
+      svg {
+        scale: 1.2;
+      }
     }
   }
 
+  .main-search__content {
+    @include page-wrapper();
+  }
+
   .main-search__form {
-    width: 100%;
-    max-width: $max_width;
-    margin: 0 auto;
-    padding: 1.875rem 0.5rem;
+    padding-top: rem(30px);
+    padding-bottom: rem(30px);
   }
 
   .main-search__magnifying-glass {
     position: absolute;
-    top: 1.125rem;
-    left: 1.25rem;
+    top: rem(18px);
+    left: rem(20px);
     color: $c_manatee;
     transition: $link_transition;
     pointer-events: none;
 
     svg {
-      width: 1.875rem;
-      height: 1.875rem;
+      width: rem(30px);
+      height: rem(30px);
     }
   }
 
@@ -84,18 +100,22 @@
   }
 
   .main-search__text-box {
-    font-size: 1.125rem;
-    line-height: 1.25rem;
-    height: 3.75rem;
+    font-size: rem(18px);
+    line-height: rem(20px);
+    height: rem(60px);
     width: 100%;
-    padding: 1.25rem 2rem 1.25rem 4rem;
-    border-radius: 1.875rem;
+    padding: rem(20px) rem(32px) rem(20px) rem(64px);
+    border-radius: rem(30px);
     border: 1px solid $c_linkwater;
-    color: $c_black;
+    color: $c_rhino;
     background-color: $c_white;
 
     &:focus + .main-search__magnifying-glass {
-      color: $c_black;
+      color: $c_rhino;
+    }
+
+    &:hover + .main-search__magnifying-glass {
+      color: $c_riverbed;
     }
 
     &::placeholder {

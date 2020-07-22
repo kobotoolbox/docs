@@ -1,9 +1,8 @@
-@import "variables";
-
 html body header.main-header {
+  line-height: 22px;
   position: fixed;
   height: $header_height;
-  background: $c_black;
+  background: $c_rhino;
   color: $c_white;
   width: 100%;
   display: flex;
@@ -50,15 +49,15 @@ html body header.main-header {
           }
         }
 
-        @media screen and (min-width: 769px) {
-          &.current a {
-            color: $c_blue;
+        &.current a {
+          color: $c_blue;
+        }
+
+        @include screen-small {
+          &:not(.current) {
+            display: none;
           }
         }
-      }
-
-      @media screen and (max-width: 359px) {
-        padding: 24px 15px;
       }
     }
   }
