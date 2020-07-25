@@ -1,4 +1,4 @@
-# Overview of all Formbuilder Functions
+# Overview of All Formbuilder Functions
 
 ## Adding a Question
 
