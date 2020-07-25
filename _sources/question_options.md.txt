@@ -1,4 +1,4 @@
-# Question Options
+# Using the Question Options
 
 The Question Options screen contains some very useful features to get the most out of your form. You can click Setting to access the Question Options screen.
 
