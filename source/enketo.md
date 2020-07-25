@@ -1,4 +1,4 @@
-# What are Enketo webforms?
+# What Are Enketo Web Forms?
 
 According to [Enketo.org](https://enketo.org), **Enketo** is the name of an open-source project as well as the name of an open-source web application that uses a popular open-source form format. 
 
