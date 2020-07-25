@@ -1,4 +1,4 @@
-# Adding Media to Your Form
+# Adding Various Types of Media
 
 In addition to text questions or responses, you can also include visual or audio media in your forms and have it play or display inside the questionnaire. This works both on the Android app as well as in the Web forms (Enketo). 
 
