@@ -4,12 +4,6 @@
 
 HXL stands for **Humanitarian Exchange Language**. The goal of HXL is to improve information sharing during a humanitarian crisis by creating a simple way to promote interoperablity of data. It does this by coding the data through hashtags (#) similar to Twitter. For more information on HXL, please [visit here](http://hxlstandard.org).
 
-## How to use HXL in an XLSForm
-
-When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column. See screenshot for example.
-
-![image](/images/hxl/xls.png)
-
 ## How to use the HXL feature in the Formbuilder
 
 _Credits:  [David Megginson](http://www.megginson.com)_
@@ -28,3 +22,9 @@ _Link to step-by-step [slide show guide](https://docs.google.com/presentation/d/
     ![image](/images/hxl/xls_affected.jpg)
 
 _Note: The hashtag before name is mandatory. Spaces are not allowed._
+
+## How to use HXL in an XLSForm
+
+When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column. See screenshot for example.
+
+![image](/images/hxl/xls.png)
