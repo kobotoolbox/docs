@@ -1,4 +1,4 @@
-# How to Use the Calculate Question Type
+# Calculate Question Type
 
 Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a Calculation and writing the mathematical expression into the question label field.  
 
