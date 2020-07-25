@@ -1,4 +1,4 @@
-# Adding Another Language to your XLS Form
+# Adding Another Language to your XLSForm
 
 There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online [Project Dashboard](language_dashboard.md) or you can add them in an XLS Form and upload it to KoBo.
 
