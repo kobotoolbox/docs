@@ -1,4 +1,4 @@
-# Using Hxl Tags
+# Using HXL Tags
 
 ## What exactly is HXL?
 
