@@ -1,4 +1,4 @@
-# Exporting and Uploading Your Data to GIS Software
+# Exporting and Uploading Data to GIS Software
 
 **Simple step-by-step process to export and upload your data as a shapefile into GIS software, such as ArcMap.**
 
