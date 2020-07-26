@@ -1,4 +1,4 @@
-# Downloading photos and other media
+# Downloading Photos and Other Media
 
 If your form includes a photo, video, or sound recording question, these files will be uploaded to the server along with your other data. When exporting your dataset to XLS or CSV these files will include references to the filenames of the media attachments, but not the files themselves. To download your media files choose the ZIP option under 'Download data'.
 
