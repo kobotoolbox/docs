@@ -1,4 +1,4 @@
-# Pulling your data into PowerBI
+# Pulling Data Into PowerBI
 
 ## KoBoToolbox
 
