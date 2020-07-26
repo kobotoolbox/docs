@@ -1,4 +1,4 @@
-# Recovering data from previous form versions
+# Recovering Data From Previous Form Versions
 
 **This article shows steps on how to recover data from previous versions of the form in case of question deletions**
 
