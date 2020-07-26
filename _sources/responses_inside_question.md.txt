@@ -1,4 +1,4 @@
-# Include Responses Inside Another Question
+# Including Responses Inside Another Question
 
 You can include the response of one question (such as include the answer of the question 'How old are you?') inside the label of another question. This can be useful for many reasons in advanced forms. For example, you might want to confirm that a response is really correct.
 
