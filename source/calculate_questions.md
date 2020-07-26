@@ -10,7 +10,6 @@ Referencing other questions in your calculation question requires giving other q
 
 For example, if you want to convert the answer to a question about someone's income into another currency (such as Rwandan Francs to US Dollars), you should write `${income} div 688`.
 
-
 You can also use the answer to this Calculate question for other purposes, such as building your skip logic (for example only ask a follow-up question above a certain income threshold) or by displaying it inside a Note ([see here](responses_inside_question.md) for help on how to display the response to one question in the label of another question).
 
 
