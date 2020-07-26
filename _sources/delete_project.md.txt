@@ -1,4 +1,4 @@
-# Deleting a project from your account
+# Deleting a Project
 
 There are two ways to delete a project and all of its data from your account. Please note that once a project has been deleted, **THE ACTION CANNOT BE REVERSED**. We do not store copies of your deleted projects, so make sure that you have the correct project before proceeding and have all the data downloaded first, if needed.
 
