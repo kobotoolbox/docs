@@ -1,4 +1,4 @@
-# Converting your Data into SPSS and/or Stata
+# Converting Data into SPSS and/or Stata
 
 **This article helps you convert your data into SPSS and/or Stata. Please note you need IBM SPSS and Stata which are third party apps**
 
