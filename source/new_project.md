@@ -1,4 +1,4 @@
-# How to Create a New Project
+# Creating a New Project
 
 You can **create a new project** in four different ways. When you click on the New button, your options are:
 
