@@ -1,4 +1,4 @@
-# Install KoBoToolbox on Your Own Servers
+# Installing KoBoToolbox on Your Own Servers
 
 **Warning:** _Installing KoBoToolbox on your own server requires advanced server administration and programming skills. Please understand that you shouldn't use this in a critical environment without having the technical resources in place to troubleshoot if needed. Consider installing KoBo on your local computer instead with [these instructions](kobo_local_computer.md)._
 
