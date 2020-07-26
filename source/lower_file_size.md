@@ -1,4 +1,4 @@
-# How To Lower the File Size of Collected Media
+# Lowering the File Size of Collected Media
 
 When your form collects more than 1 image - or you are collecting tens of thousands of records -  you could face difficulties when attempting to generate the Media Attachments ZIP if you do not adjust the image quality settings before starting data collection.
 
