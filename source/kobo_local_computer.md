@@ -1,4 +1,4 @@
-# Installing on a Local Computer
+# Installing KoBoToolbox on a Local Computer
 
 The best way to use KoBoToolbox is on one of the two free public instances - [kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info/) (if you work for a humanitarian organization) and [kf.kobotoolbox.org](https://kf.kobotoolbox.org/) (for non-humanitarian users). **There is no software to be installed on your computer when using these free public servers.** For more help deciding which server to use, [check this article](server.md).
 
