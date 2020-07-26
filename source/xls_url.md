@@ -1,4 +1,4 @@
-# Importing an XLSForm via URL
+# Importing a XLSForm via URL
 
 When importing an XLSForm via URL, please make sure that the URL points to the XLS file directly and that it is publicly accessible. A quick way to test this is to load the URL in a browser: it should trigger the download of the file. (If it loads a page in the browser, then it's not the right URL.)
 
