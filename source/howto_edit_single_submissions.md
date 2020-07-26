@@ -1,4 +1,4 @@
-# How to edit or delete a single submission
+# Editing or Deleting a Single Submission
 
 To edit or delete a submitted questionnaire, please follow the steps below. 
 
