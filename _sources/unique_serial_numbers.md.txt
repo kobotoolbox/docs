@@ -1,4 +1,4 @@
-# How to Create Unique Serial Numbers in Forms
+# Creating Unique Serial Numbers in Forms
 
 There are times you may want to generate a unique serial number for each and every form in a project. This article discusses how to utilize the calculate question-type to do that by either creating sequential unique serial numbers based on date and time or by creating unique serial numbers from selected variables.
 
