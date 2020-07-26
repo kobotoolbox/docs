@@ -1,4 +1,4 @@
-# Row-level permissions
+# Row-Level Permissions
 
 The Row-Level Permissions feature allows owners of a project to create three levels of project permissions for users related to viewing submissions. Those three levels are:
 
