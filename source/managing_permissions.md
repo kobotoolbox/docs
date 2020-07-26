@@ -1,4 +1,4 @@
-# Managing permissions
+# Managing Permissions
 
 **Learn how to grant various permissions for other users to collaborate on your projects**
 
