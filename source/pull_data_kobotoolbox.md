@@ -1,4 +1,4 @@
-# Pull Data () Functionality in Kobotoolbox
+# Pull Data Functionality in KoBoToolbox
 
 This is best done on xls version of the form.
 
