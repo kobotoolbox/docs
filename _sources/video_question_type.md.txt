@@ -1,4 +1,4 @@
-# Video Question Type
+# How to Use the Video Question Type
 
 The question type "video" prompts a user to record a video as an answer to a question (e.g. "Please record a video of the head of household saying his full name"). That video then gets saved along with the form data. 
 
