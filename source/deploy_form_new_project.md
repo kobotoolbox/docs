@@ -1,4 +1,4 @@
-# How to Deploy a Form to Start a New Data Collection Project
+# Deploying a Form to Start a New Data Collection Project
 
 Once you are ready to begin starting or piloting your data collection for a particular project, click the **Deploy** button to make the form live and allow data collection to begin.
 
