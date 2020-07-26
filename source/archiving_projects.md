@@ -1,4 +1,4 @@
-# Archiving and unarchiving your projects
+# Archiving and Unarchiving Projects
 
 **This article describes the purpose and process of archiving and unarchiving a project**
 
