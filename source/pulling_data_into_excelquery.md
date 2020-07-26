@@ -1,4 +1,4 @@
-# Pulling your data into Excel Power Query
+# Pulling Data Into Excel Power Query
 
 For seamless data analysis, you can leverage the KoBo API to pull your data into other tools for data analysis. This article covers how to connect to the API to pull your data into Excel Power Query.
 
