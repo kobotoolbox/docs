@@ -367,6 +367,14 @@ html body header.main-header .main-header__navigation ul li.current a {
   border: 1px solid #cfd5e3;
   color: #414453;
   background-color: #fff;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+.main-search .main-search__text-box:focus {
+  outline: none;
+  border-color: #a6aaba;
 }
 
 .main-search .main-search__text-box:focus + .main-search__magnifying-glass {

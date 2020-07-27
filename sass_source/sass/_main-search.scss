@@ -109,6 +109,12 @@
     border: 1px solid $c_linkwater;
     color: $c_rhino;
     background-color: $c_white;
+    appearance: none;
+
+    &:focus {
+      outline: none;
+      border-color: $c_riverbed;
+    }
 
     &:focus + .main-search__magnifying-glass {
       color: $c_rhino;
