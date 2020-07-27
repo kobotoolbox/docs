@@ -6,7 +6,7 @@ For seamless data analysis, you can leverage the KoBo API to pull your data into
 
 1. Login to your account.
 
-2. Next, go to the API for your account by going to either  [https://kc.humanitarianresponse.info/api/v1](https://kc.humanitarianresponse.info/api/v1) or [https://kc.kobotoolbox.org/api/v1/](https://kc.humanitarianresponse.info/api/v1). Select the URL for the instance in which your account is located.
+2. Next, go to the API for your account by going to either  [https://kc.humanitarianresponse.info/api/v1](https://kc.humanitarianresponse.info/api/v1) or [https://kc.kobotoolbox.org/api/v1/](https://kc.kobotoolbox.org/api/v1/). Select the URL for the instance in which your account is located.
 
 3. Under the Data heading, click on /api/v1/data
 
