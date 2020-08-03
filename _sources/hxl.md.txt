@@ -11,11 +11,11 @@ _Link to step-by-step [slide show guide](https://docs.google.com/presentation/d/
 
 1. After starting a form and creating a question, go into Question Settings and in the Question Options tab, choose your HXL tag and add attributes.
 
-    ![image](/images/hxl/hxl.jpg)
+    ![image](/images/hxl/hxl.gif)
 
 2. After the form has been created, the project deployed, and data has been collected, go to the Downloads tab in the Data page. Select the export type as XLS and be sure to select **XML values and headers** for the value and header format. Then Export.
 
-    ![image](/images/hxl/xml_values.jpg)
+    ![image](/images/hxl/xml_values.gif)
 
 3. Once you have exported and downloaded the data to your computer, open up the XLS file to see your HXL tags. It's okay to have KoBo metadata that doesn't have HXL hashtags.
 
@@ -25,6 +25,6 @@ _Note: The hashtag before name is mandatory. Spaces are not allowed._
 
 ## How to use HXL in an XLSForm
 
-When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column. See screenshot for example.
+When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column. See below for an example.
 
 ![image](/images/hxl/xls.png)
