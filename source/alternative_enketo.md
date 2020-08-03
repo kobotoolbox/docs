@@ -8,7 +8,7 @@ Enketo web forms can be customized in the way your questions are presented. Ther
  
 It is also possible to use both Multiple Pages and Grid Theme together. To use these styles through the KoBoToolbox form builder user interface, simply refer to the image below:
 
-![image](/images/alternative_enketo/multiple_grid.jpg)
+![image](/images/alternative_enketo/multiple_grid.gif)
 
 _Go to your Form Settings and choose one of the options under the Form Style. This preference is saved along with the form._
 
