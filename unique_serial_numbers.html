@@ -105,7 +105,7 @@
 <p>This method works best with Enketo web forms. It uses a calculation function to create a unique serial number based on the date and time to the first millisecond. Although this method may not meet all your needs, it should give you an illustration of how much you can stretch calculate functions to achieve your needs.</p>
 <ol>
 <li><p>Create a calculate question type in either the formbuilder or XLSForm and use the formula below. <em>Please note the same formula can work as an integer question when working in an XLSForm.</em></p>
-<p><code class="docutils literal notranslate"><span class="pre">concat(substr(today(),0,4),substr(today(),7,5),substr(today(),10,8),</span> </code>substr(now(),13,11),substr(now(),16,14),substr(now(),19,17))`</p>
+<p><code class="docutils literal notranslate"><span class="pre">concat(substr(today(),0,4),substr(today(),7,5),substr(today(),10,8),substr(now(),13,11),substr(now(),16,14),substr(now(),19,17))</span></code></p>
 <p>Example:</p>
 <p><img alt="image" src="_images/calculate_example.png" /></p>
 <p>In the example, when you preview the deployed form in Enketo, you should be able to see the serial number within the note question as shown in the image below:</p>
