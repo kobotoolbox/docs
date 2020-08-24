@@ -27,7 +27,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   :caption: Creating Forms
   :name: home-page-toc-creating-forms
 
-  new_project
+  new_form
   edit_forms_excel
   xls_url
   formbuilder
