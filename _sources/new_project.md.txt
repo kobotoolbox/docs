@@ -1,6 +1,6 @@
-# Creating a New Project
+# Creating a New Form
 
-You can **create a new project** in four different ways. When you click on the New button, your options are:
+You can **create a new form** in four different ways. When you click on the New button, your options are:
 
 1. **Build from scratch**  
     To create a new form from scratch, you can input project details and clik Create Project.  
