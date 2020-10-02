@@ -10,27 +10,27 @@ Here are detailed instructions on how you can add another language to your form:
 
 3. Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all work) (If you're in Excel it's possible you have to take the file out of Protected View first. [See here](https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&ui=en-US&rs=en-US&ad=US).) Your spreadsheet will have three sheets (see the little tabs at the bottom): survey, choices, settings. Stay in the survey sheet for now.
 
-4. Find the column called 'label'. This is where your original question labels are stored. Insert another column to the right of label. In the header (first row) of this new column, write `label::language`, for example `label::Français`  or  `label::English`. Note: you can change the size of your columns, add colors or change the font size, none of these will affect your form.
+4. Find the column called 'label'. This is where your original question labels are stored. Insert another column to the right of label. In the header (first row) of this new column, write `label::language`, for example `label::Français` or `label::English`. Note: you can change the size of your columns, add colors or change the font size, none of these will affect your form.
 
 5. Then, if you have hints in your form, the same needs to apply to that hint column, for example `hint::Français` or `hint::English`.
 
-    ![image](/images/language_xls/hints.png)
+    ![image](/images/language_xls/hints_updated.png)
 
 6. Now add your translations for every row inside the `label::yourlanguage` column. When you are done, make sure you didn't skip any questions (for every field that has text inside the label column there should be text inside the `label::yourlanguage` column).
 
     Tip: Copy-paste the original label column and then make changes to the translations so you don't leave anything blank by accident: It's better to have something showing in the wrong language than not having a blank question in some language. _You can repeat this step and add as many languages as you like, each in their separate columns and with a different name inside `label::yourlanguage`._
 
-    ![image](/images/language_xls/label.png)
+    ![image](/images/language_xls/label_updated.png)
 
 7. Now switch to the 'choices' sheet of your file. (If there is no such sheet in your file -you only have two sheets called survey and settings- then don't worry - your form doesn't use any multiple choice questions -- you're done! Skip the next step.)
 
 8. In the choices sheet you have another column called label. Repeat steps 5 and 6. Make sure that you use the exact same spelling for `label::yourlanguage`. For example, `label::Francais` and `label::Français` are not identical.
 
-    ![image](/images/language_xls/choices_label.png)
+    ![image](/images/language_xls/choices_label_updated.png)
 
 9. In the settings sheet, underneath form_title edit the text of your form's title to something like "My form (English and French)" so you can easily identify it later.
 
-    ![image](/images/language_xls/form_title.png)
+    ![image](/images/language_xls/form_title_updated.png)
 
 10. Save your file and close Excel.
 
