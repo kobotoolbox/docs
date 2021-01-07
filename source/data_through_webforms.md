@@ -22,7 +22,7 @@ In the drop down menu under **Collect data**, you have several options available
 
 **Online-Only (multiple submissions):** This is the best option when entering many records at once on a computer, e.g. for transcribing paper records.
 
-**Online-Only (single submission):** This allows a single submission and can be paired with the ‘returnURL’ parameter (explained below) to redirect the user to a URL of your choice after the form has been submitted.
+**Online-Only (single submission):** This allows a single submission and can be paired with the ‘return_url’ parameter (explained below) to redirect the user to a URL of your choice after the form has been submitted.
 
 **Embeddable web form code:** Use this html5 code snippet to integrate your form on your own website using smaller margins.
 
@@ -74,7 +74,7 @@ Follow the steps outlined below to save a form and collect data in a web form us
 
 ## Forwarding upon submission
 
-By default the form refreshes for the next entry once the data has been submitted. If users are only supposed to enter one entry (e.g. in an online survey) you can send them to another website upon submission. To use this feature you need to 1) use the Online-Only form of the form, and 2) add `returnURL=https://www.somewebsite.com` to your URL. 
+By default the form refreshes for the next entry once the data has been submitted. If users are only supposed to enter one entry (e.g. in an online survey) you can send them to another website upon submission. To use this feature you need to 1) use the Online-Only form of the form, and 2) add `return_url=https://www.somewebsite.com` to your URL.
 
 ![image](/images/data_through_webforms/url.png)
 
