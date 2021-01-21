@@ -22,7 +22,7 @@ You can also use tools like Postman to build and test your API snippets:
 For more details on using the API follow these endpoints (selection only): 
 
 [https://[kpi-url]/api/v2/assets/](https://[kpi-url]/api/v2/assets/) (list of all assets, including forms/projects, questions, blocks, templates, collections; for each asset there are several additional sub-endpoints)
-[https://[kpi-url]/api/v2/{asset_uid}/data/](https://[kpi-url]/api/v2/{asset_uid}/data/) (access submitted data)
+[https://[kpi-url]/api/v2/assets/{asset_uid}/data/](https://[kpi-url]/api/v2/assets/{asset_uid}/data/) (access submitted data)
 [https://[kpi-url]/exports/](https://[kpi-url]/exports/) (create or view data exports)
 
 You can find more examples [in this forum post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
