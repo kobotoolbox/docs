@@ -103,7 +103,6 @@ Search the knowledge base, browse our resources and visit our forum for more det
   photo_download
   recovering_previous_formdata
   converting_to_spss_and_stata
-  excel_analyzer_guide
   pulling_data_into_powerbi
   upload_to_gis
   row_level_permissions
