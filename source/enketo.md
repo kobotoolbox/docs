@@ -24,7 +24,7 @@ Surveys deployed with Enketo:
 
 ### How can I access Enketo when on KoBoToolbox? 
 
-Whenever you open a form on the webform version within KoBoToolbox, you are actually using Enketo. For details, please visit our support article [Collecting Data through Web Forms] (data_through_webforms.md).
+Whenever you open a form on the webform version within KoBoToolbox, you are actually using Enketo. For details, please visit our support article [Collecting Data through Web Forms](data_through_webforms.md).
 
 ### How do I troubleshoot Enketo?
 Enketo web forms work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all modern browsers; [see here for more details on browsers working with Enketo](https://enketo.org/faq/#browsers).  
