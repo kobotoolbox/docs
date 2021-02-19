@@ -38,6 +38,6 @@ iOS (running on iPhones and iPads) devices have several known limitations with u
 * Version 9.3.1 shows "Attempted to assign to readonly property" when loading offline form
 * Version 8.x shows "undefined is not an object (evaluating 'c.resources')". Solution: Update to latest iOS version
 
-If data collection offline is not required and you are seeing an error on iOS, consider using the [online-only version](https://ee.kobotoolbox.org/::ABCD) instead of the offline URL. 
+If data collection offline is not required and you are seeing an error on iOS, consider using the _online-only_ version instead of the offline URL. 
 
 For details on troubleshooting, please visit our support article [Troubleshooting Enketo Web Forms](troubleshooting_webforms.md).
