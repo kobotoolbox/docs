@@ -10,7 +10,7 @@ A regular expression, or regex, is a search pattern used for matching specific c
 
 3. Go to _Validation Criteria_ and choose the _Manually enter your validation logic in XLSForm_ code option.
 
-4. In the _Validation Code_ box, enter your regex formula between the quotation marks **(' ')** of the **regex(., ' ')** format. For reference, the period _(.)_ refers to _'this question'_, while the regular expression inside the quotation marks **(' ')** needs to conform to the established regex rules. 
+4. In the _Validation Code_ box, enter your regex formula between the quotation marks `(' ')` of the **regex(., ' ')** format. For reference, the period _(.)_ refers to _'this question'_, while the regular expression inside the quotation marks **(' ')** needs to conform to the established regex rules. 
 
 5. (Optional) Add a custom _Error Message_ for the person entering data to see when they don't meet the regrex criteria. 
 
