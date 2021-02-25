@@ -26,11 +26,17 @@ To find your API token go to [https://[kpi-url]/token/?format=json](https://[kpi
 
    ![image](/images/api/token2.png)
 
+**Method 3:**
+
+You could use the follwoing curl command:
+
+`curl -u username:password "https:/[kpi-url]/token/?format=json"`
+
 ### Testing your API:
 
 To test it use this command:
 
-curl -X GET https://[kpi-url]/api/v2/assets.json -H "Authorization: Token [your_token_goes_here]"
+`curl -X GET https://[kpi-url]/api/v2/assets.json -H "Authorization: Token [your_token_goes_here]"`
 
 You can also use tools like Postman to build and test your API snippets:
 
@@ -43,4 +49,3 @@ For more details on using the API follow these endpoints (selection only):
 [https://[kpi-url]/exports/](https://[kpi-url]/exports/) (create or view data exports)
 
 You can find more examples [in this forum post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
-
