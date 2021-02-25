@@ -24,7 +24,7 @@ In the drop down menu under **Collect data**, you have several options available
 
 **Online-Only (single submission):** This allows a single submission and can be paired with the ‘return_url’ parameter (explained below) to redirect the user to a URL of your choice after the form has been submitted.
 
-**Online-only (once per respondent):** This allows your web form to only be submitted once per user, using basic protection to prevent the same user (on the same browser & device) from submitting more than once.
+**Online-only (once per respondent):** This allows your web form only to be submitted once per user, using basic protection to prevent the same user (on the same browser & device) from submitting more than once.
 
 **Embeddable web form code:** Use this html5 code snippet to integrate your form on your own website using smaller margins.
 
