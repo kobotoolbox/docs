@@ -6,14 +6,37 @@ KoBoToolbox has two APIs for its primary tools, kpi and kc. Originally kc was th
 
 The base URL depends on the server you are using: for most users it is [kf.kobotoolbox.org](https://kf.kobotoolbox.org) or [kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info). Below we only use [kpi-url] to refer to this base URL.
 
-**API Token:**
+### Getting your API Token:
+
+There are different ways to get your API Token. 
+
+**Method 1:**
+
 To find your API token go to [https://[kpi-url]/token/?format=json](https://[kpi-url]/token/?format=json)
 
    ![image](/images/api/token.png)  
-   
+
+**Method 2:**
+
+* Select ACCOUNT SETTINGS (from where you normally log out) as shown in the image below:
+
+   ![image](/images/api/token1.png)
+
+* Then press the eye like button to view your Token as shown in the image below:
+
+   ![image](/images/api/token2.png)
+
+**Method 3:**
+
+You could use the follwoing curl command:
+
+`curl -u username:password "https:/[kpi-url]/token/?format=json"`
+
+### Testing your API:
+
 To test it use this command:
 
-curl -X GET https://[kpi-url]/api/v2/assets.json -H "Authorization: Token [your_token_goes_here]"
+`curl -X GET https://[kpi-url]/api/v2/assets.json -H "Authorization: Token [your_token_goes_here]"`
 
 You can also use tools like Postman to build and test your API snippets:
 
@@ -26,4 +49,3 @@ For more details on using the API follow these endpoints (selection only):
 [https://[kpi-url]/exports/](https://[kpi-url]/exports/) (create or view data exports)
 
 You can find more examples [in this forum post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
-
