@@ -99,7 +99,7 @@
           
   <div class="section" id="troubleshooting-enketo-web-forms">
 <h1>Troubleshooting Enketo Web Forms<a class="headerlink" href="#troubleshooting-enketo-web-forms" title="Permalink to this headline">¶</a></h1>
-<p>Enketo web forms work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all modern browsers; <a class="reference external" href="https://github.com/kobotoolbox/enketo-express#browser-support">see here</a> for more details on browsers working with Enketo.</p>
+<p><a class="reference internal" href="enketo.html"><span class="doc">Enketo web forms</span></a> work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all <a class="reference external" href="https://enke.to/modern-browsers">modern browsers</a>. You could also visit <a class="reference external" href="https://enketo.org/faq/#browsers">Enketo’s Frequently Asked Questions</a> to learn more about <em>what browsers are supported and recommended</em> by Enketo.</p>
 <div class="section" id="known-issues-with-offline-forms-on-ios">
 <h2>Known issues with offline forms on iOS<a class="headerlink" href="#known-issues-with-offline-forms-on-ios" title="Permalink to this headline">¶</a></h2>
 <p>iOS (running on iPhones and iPads) devices have several known limitations with using offline-enabled forms due to the Apple operating system platform. We strive to have the latest version of iOS fully supported.</p>
@@ -110,6 +110,10 @@
 <li><p>Version 8.x shows “undefined is not an object (evaluating ‘c.resources’)”. Solution: Update to latest iOS version</p></li>
 </ul>
 <p>If data collection offline is not required and you are seeing an error on iOS, consider using the <a class="reference external" href="https://ee.kobotoolbox.org/::ABCD">online-only version</a> instead of the offline URL.</p>
+</div>
+<div class="section" id="data-loss">
+<h2>Data loss<a class="headerlink" href="#data-loss" title="Permalink to this headline">¶</a></h2>
+<p>When collecting data through Enekto, users should never clear the browser’s cache (either manually or using some app). Clearing your browser’s cache (during data collection) will remove all the information stored in the browser and thus your information will not reach your KoBoToolbox server. This data loss is irreversible. Hence we strongly advise users to clear the browser’s cache if and only if you have successfully submitted all your data to your KoBoToolbox server.</p>
 </div>
 </div>
 
@@ -202,6 +206,7 @@
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting Enketo Web Forms</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#known-issues-with-offline-forms-on-ios">Known issues with offline forms on iOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-loss">Data loss</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
