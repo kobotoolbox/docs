@@ -111,8 +111,8 @@
 <p><strong>You can also reference the response from a Select One/Many question and display the answer instead of the code using hidden Calculate questions</strong></p>
 <p>If you’d like to reference the response to a Select One/Many question and show the response’s answer (e.g. “Strongly Agree”) instead of its encoded value (e.g. “strongly_agr”), you can:</p>
 <ol>
-<li><p>Create a Select One/Many question, and give the question a fixed reference name through the question settings, such as <code class="docutils literal notranslate"><span class="pre">instruction</span></code>. And create an intermediate Calculate question and enter: <code class="docutils literal notranslate"><span class="pre">jr:choice-name(${instruction},</span> <span class="pre">${instruction})</span></code>.</p>
-<p><img alt="image" src="_images/select.gif" /></p>
+<li><p>Create a Select One/Many question, and give the question a fixed reference name through the question settings, such as <code class="docutils literal notranslate"><span class="pre">instruction</span></code>. And create an intermediate Calculate question and enter: <code class="docutils literal notranslate"><span class="pre">jr:choice-name(${instruction},</span> <span class="pre">'${instruction}')</span></code>.</p>
+<p><img alt="image" src="_images/select_updated.gif" /></p>
 </li>
 <li><p>Give this Calculate question a reference name, such as <code class="docutils literal notranslate"><span class="pre">instruction_calculation</span></code>. In your new question, reference this Calculate question instead of the name given to the Select One/Many question.</p>
 <p><img alt="image" src="_images/calculate.gif" /></p>
