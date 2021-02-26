@@ -1,6 +1,6 @@
 # Troubleshooting Enketo Web Forms
 
-Enketo web forms work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all modern browsers; [see here](https://github.com/kobotoolbox/enketo-express#browser-support) for more details on browsers working with Enketo.
+[Enketo web forms](enketo.md) work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all [modern browsers](https://enke.to/modern-browsers). You could also visit [Enketo's Frequently Asked Questions](https://enketo.org/faq/#browsers) to learn more about *what browsers are supported and recommended* by Enketo.
 
 ## Known issues with offline forms on iOS
 
@@ -12,3 +12,7 @@ iOS (running on iPhones and iPads) devices have several known limitations with u
 * Version 8.x shows "undefined is not an object (evaluating 'c.resources')". Solution: Update to latest iOS version
 
 If data collection offline is not required and you are seeing an error on iOS, consider using the [online-only version](https://ee.kobotoolbox.org/::ABCD) instead of the offline URL.
+
+## Data loss
+
+When collecting data through Enekto, users should never clear the browser's cache (either manually or using some app). Clearing your browser's cache (during data collection) will remove all the information stored in the browser and thus your information will not reach your KoBoToolbox server. This data loss is irreversible. Hence we strongly advise users to clear the browser's cache if and only if you have successfully submitted all your data to your KoBoToolbox server.
