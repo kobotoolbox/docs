@@ -102,11 +102,29 @@
 <p>KoBoToolbox has a number of advanced features built in based on our open source libraries, which include useful add-ons for advanced use cases. There are many ways to use our API. For some hands-on examples, <a class="reference external" href="https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742">see this post</a>.</p>
 <p>KoBoToolbox has two APIs for its primary tools, kpi and kc. Originally kc was the only api for deploying forms and retrieving data. Now, kpi is the primary API that should be used.</p>
 <p>The base URL depends on the server you are using: for most users it is <a class="reference external" href="https://kf.kobotoolbox.org">kf.kobotoolbox.org</a> or <a class="reference external" href="https://kobo.humanitarianresponse.info">kobo.humanitarianresponse.info</a>. Below we only use [kpi-url] to refer to this base URL.</p>
-<p><strong>API Token:</strong>
-To find your API token go to <a class="reference external" href="https://%5Bkpi-url%5D/token/?format=json">https://[kpi-url]/token/?format=json</a></p>
+<div class="section" id="getting-your-api-token">
+<h2>Getting your API Token:<a class="headerlink" href="#getting-your-api-token" title="Permalink to this headline">¶</a></h2>
+<p>There are different ways to get your API Token.</p>
+<p><strong>Method 1:</strong></p>
+<p>To find your API token go to <a class="reference external" href="https://%5Bkpi-url%5D/token/?format=json">https://[kpi-url]/token/?format=json</a></p>
 <p><img alt="image" src="_images/token.png" /></p>
+<p><strong>Method 2:</strong></p>
+<ul>
+<li><p>Select ACCOUNT SETTINGS (from where you normally log out) as shown in the image below:</p>
+<p><img alt="image" src="_images/token1.png" /></p>
+</li>
+<li><p>Then press the eye like button to view your Token as shown in the image below:</p>
+<p><img alt="image" src="_images/token2.png" /></p>
+</li>
+</ul>
+<p><strong>Method 3:</strong></p>
+<p>You could use the follwoing curl command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-u</span> <span class="pre">username:password</span> <span class="pre">&quot;https:/[kpi-url]/token/?format=json&quot;</span></code></p>
+</div>
+<div class="section" id="testing-your-api">
+<h2>Testing your API:<a class="headerlink" href="#testing-your-api" title="Permalink to this headline">¶</a></h2>
 <p>To test it use this command:</p>
-<p>curl -X GET https://[kpi-url]/api/v2/assets.json -H “Authorization: Token [your_token_goes_here]”</p>
+<p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-X</span> <span class="pre">GET</span> <span class="pre">https://[kpi-url]/api/v2/assets.json</span> <span class="pre">-H</span> <span class="pre">&quot;Authorization:</span> <span class="pre">Token</span> <span class="pre">[your_token_goes_here]&quot;</span></code></p>
 <p>You can also use tools like Postman to build and test your API snippets:</p>
 <p><img alt="image" src="_images/test.png" /></p>
 <p>For more details on using the API follow these endpoints (selection only):</p>
@@ -114,6 +132,7 @@ To find your API token go to <a class="reference external" href="https://%5Bkpi-
 <a class="reference external" href="https://%5Bkpi-url%5D/api/v2/assets/%7Basset_uid%7D/data/">https://[kpi-url]/api/v2/assets/{asset_uid}/data/</a> (access submitted data)
 <a class="reference external" href="https://%5Bkpi-url%5D/exports/">https://[kpi-url]/exports/</a> (create or view data exports)</p>
 <p>You can find more examples <a class="reference external" href="https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742">in this forum post</a>.</p>
+</div>
 </div>
 
 
@@ -228,7 +247,11 @@ To find your API token go to <a class="reference external" href="https://%5Bkpi-
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling Data Into PowerBI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and Uploading Data to GIS Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="row_level_permissions.html">Row-Level Permissions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Using the API</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using the API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-your-api-token">Getting your API Token:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#testing-your-api">Testing your API:</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
 <p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
