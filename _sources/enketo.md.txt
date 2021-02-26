@@ -20,14 +20,14 @@ Surveys deployed with Enketo:
 * have beautiful themes and widgets
 * are printer-friendly
 * can use very powerful skip and validation logic
-* run on any device, mobile or desktop, as long as it has a fairly modern browser
+* run on any device, mobile or desktop, as long as it has a fairly [modern browser](https://enke.to/modern-browsers)
 
 ### How can I access Enketo when on KoBoToolbox? 
 
-Whenever you open a form on the webform version within KoBoToolbox, you are actually using Enketo.
+Whenever you open a form on the webform version within KoBoToolbox, you are actually using Enketo. For details, please visit our support article [Collecting Data through Web Forms](data_through_webforms.md).
 
 ### How do I troubleshoot Enketo?
-Enketo web forms work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all modern browsers; [see here for more details on browsers working with Enketo](https://github.com/kobotoolbox/enketo-express#browser-support). 
+Enketo web forms work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all modern browsers; [see here for more details on browsers working with Enketo](https://enketo.org/faq/#browsers).  
 
 **Known issues with offline forms on iOS**
 
@@ -38,4 +38,6 @@ iOS (running on iPhones and iPads) devices have several known limitations with u
 * Version 9.3.1 shows "Attempted to assign to readonly property" when loading offline form
 * Version 8.x shows "undefined is not an object (evaluating 'c.resources')". Solution: Update to latest iOS version
 
-If data collection offline is not required and you are seeing an error on iOS, consider using the [online-only version](https://ee.kobotoolbox.org/::ABCD) instead of the offline URL. 
+If data collection offline is not required and you are seeing an error on iOS, consider using the _online-only_ version instead of the offline URL. 
+
+For details on troubleshooting, please visit our support article [Troubleshooting Enketo Web Forms](troubleshooting_webforms.md).
