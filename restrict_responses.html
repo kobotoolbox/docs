@@ -102,23 +102,18 @@
 <p>A regular expression, or regex, is a search pattern used for matching specific characters and ranges of characters within a string. It is widely used to validate, search, extract, and restrict text in most programming languages. KoBoToolbox supports regex to control the length and character(s) during data entry to a particular question <em>(e.g. controlling the entry of mobile number to exactly 10 digits, controlling the entry of a valid email id etc.)</em>.</p>
 <div class="section" id="to-use-a-regex-in-kobotoolbox-follow-these-steps">
 <h2>To use a regex in KoboToolbox, follow these steps<a class="headerlink" href="#to-use-a-regex-in-kobotoolbox-follow-these-steps" title="Permalink to this headline">¶</a></h2>
-<ol>
+<ol class="simple">
 <li><p>Prepare a <em>Text</em> question type.</p></li>
 <li><p>Go to the question’s <em>Settings</em>.</p></li>
 <li><p>Go to <em>Validation Criteria</em> and choose the <em>Manually enter your validation logic in XLSForm</em> code option.</p></li>
 <li><p>In the <em>Validation Code</em> box, enter your regex formula between the quotation marks <code class="docutils literal notranslate"><span class="pre">('</span> <span class="pre">')</span></code> of the <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'</span> <span class="pre">')</span></code> format. For reference, the period <code class="docutils literal notranslate"><span class="pre">(.)</span></code> refers to <em>‘this question’</em>, while the regular expression inside the quotation marks <code class="docutils literal notranslate"><span class="pre">('</span> <span class="pre">')</span></code> needs to conform to the established regex rules.</p></li>
-<li><p>(Optional) Add a custom <em>Error Message</em> for the person entering data to see when they don’t meet the regrex criteria.</p>
-<p><img alt="image" src="_images/regrex.jpg" /></p>
-</li>
+<li><p>(Optional) Add a custom <em>Error Message</em> for the person entering data to see when they don’t meet the regrex criteria.</p></li>
 </ol>
+<p><img alt="image" src="_images/regrex.jpg" /></p>
 <p>Regex can also be coded in XLSForm by typing the regex code under the <em>constraint</em> column.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>![image](/images/restrict_responses/xls_constraint.png)  
-</pre></div>
-</div>
+<p><img alt="image" src="_images/xls_constraint.png" /></p>
 <p>Alternatively, there is another way of using regex in KoBoToolbox i.e. by creating a calculate question type and then defining the regex code under the <em>calculation</em> column. You could then use this variable as many times as needed in the survey form.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>![image](/images/restrict_responses/xls_calculation.png) 
-</pre></div>
-</div>
+<p><img alt="image" src="_images/xls_calculation.png" /></p>
 </div>
 <div class="section" id="how-do-i-build-the-regex-that-i-need">
 <h2>How do I build the regex that I need?<a class="headerlink" href="#how-do-i-build-the-regex-that-i-need" title="Permalink to this headline">¶</a></h2>
