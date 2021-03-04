@@ -1,6 +1,6 @@
 # Public Collections Advanced Search
 
-**_Note that the user-friendliness of the advanced search will improve in the
+**_Note that the user-friendliness of advanced searching will improve in the
 coming months._**
 
 ### The Default Search Behaviour
