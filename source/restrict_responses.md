@@ -14,16 +14,16 @@ A regular expression, or regex, is a search pattern used for matching specific c
 
 5. (Optional) Add a custom _Error Message_ for the person entering data to see when they don't meet the regrex criteria. 
 
-    ![image](/images/restrict_responses/regrex.jpg)  
-    
+![image](/images/restrict_responses/regrex.jpg)
+
 Regex can also be coded in XLSForm by typing the regex code under the _constraint_ column. 
-    
-    ![image](/images/restrict_responses/xls_constraint.png)  
-    
+
+![image](/images/restrict_responses/xls_constraint.png)
+
 Alternatively, there is another way of using regex in KoBoToolbox i.e. by creating a calculate question type and then defining the regex code under the _calculation_ column. You could then use this variable as many times as needed in the survey form. 
-    
-    ![image](/images/restrict_responses/xls_calculation.png) 
-    
+
+![image](/images/restrict_responses/xls_calculation.png)
+
 #### How do I build the regex that I need?
 
 In addition to the examples and tips provided below, please visit [this website](http://www.regexr.com) for more help and examples.
