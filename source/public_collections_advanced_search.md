@@ -11,8 +11,7 @@ found in:
 - The name of the survey, collection, question, block, or template;
 - The owner's username;
 - The description;
-- The summary, which contains all question labels; [and maybe other stuff? I
-  don't remember]
+- The summary, which contains all question labels and languages;
 - The name of any assigned tag;
 - The object's UID.
 
