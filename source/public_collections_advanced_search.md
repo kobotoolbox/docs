@@ -1,15 +1,20 @@
 # Public Collections Advanced Search
 
-**_Note that the user-friendliness of the advanced search will improve in the
-coming months._**
+**_Please note that the search capability is a work in progress, and we plan to
+add a more user-friendly syntax in future releases._**
 
 ### The Default Search Behaviour
 
-When you enter a term into the search bar, the following fields are searched by
-default when no explicit field is given (combined with the `OR` operator):
-`name__icontains`, `owner__username__icontains`,
-`settings__description__icontains`, `summary__icontains`,
-`tags__name__icontains`, `uid__icontains`.
+When you enter a term into the search bar without specifying a field, your
+query will return results where that term, regardless of capitalization, can be
+found in:
+- The name of the survey, collection, question, block, or template;
+- The owner's username;
+- The description;
+- The summary, which contains all question labels; [and maybe other stuff? I
+  don't remember]
+- The name of any assigned tag;
+- The object's UID.
 
 For example, a default search with the term: "_examples_", will result in the
 following:
@@ -29,8 +34,10 @@ field, i.e. `__icontains`.
 
 - For _case-sensitive_ **text** searches, the following operators can be used:
   `contains`, `exact`, `startswith`
-- For _case-insensitive_ **text** searches: `icontains`, `iexact`, `istartswith`
-- For **numeric** search, the following operators are valid: `lte`, `gte`
+- For _case-insensitive_ **text** searches: `icontains`, `iexact`,
+  `istartswith`
+- For **numeric** search, the following operators are valid: `exact`, `lt`,
+  `lte`, `gt`, `gte`
 
 Note that by default the `exact` operator is set, therefore `name:foo` is
 equivalent to `name__exact:foo`
