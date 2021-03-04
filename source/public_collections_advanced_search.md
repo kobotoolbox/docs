@@ -68,7 +68,7 @@ For example, if an asset has the following settings:
 }
 ```
 
-The object could be search through the following methods:
+The object could be searched through the following methods:
 
 ```
 settings__country__value:USA
