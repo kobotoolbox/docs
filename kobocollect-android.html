@@ -99,83 +99,110 @@
           
   <div class="section" id="collecting-data-with-kobocollect-on-android">
 <h1>Collecting Data with KoBoCollect on Android<a class="headerlink" href="#collecting-data-with-kobocollect-on-android" title="Permalink to this headline">¶</a></h1>
-<p>KoBoCollect is KoBoToolbox’s data collection app and can be installed on any Android phone or tablet through the Google Play Store. To install the app on your Android device, <a class="reference external" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android">click here</a>.</p>
-<p>To get help troubleshooting common issues, please refer to <a class="reference internal" href="troubleshooting_kobocollect.html"><span class="doc">this article</span></a>.</p>
-<p>To learn how to get started with KoBoCollect, follow the steps and tips below:</p>
-<p><strong>1. Setup server URL on KoBoCollect</strong></p>
-<p>After installing KoBoCollect, you need to configure it so that it can be used together with your KoBoToolbox account for data collection.</p>
-<p><img alt="image" src="_images/server_url.jpg" /></p>
-<ol>
-<li><p>Open KoBoCollect on your device.</p></li>
-<li><p>Find <strong>General Settings</strong> by clicking on the three dot icon on the upper right side of the screen, then click on Server.</p></li>
-<li><p>In the Server Settings, under URL, enter the server URL <a class="reference external" href="https://kc.kobotoolbox.org">https://kc.kobotoolbox.org</a> or <a class="reference external" href="https://kc.humanitarianresponse.info">https://kc.humanitarianresponse.info</a> (depending on which server you use).</p></li>
-<li><p>Then enter your username and password</p>
-<p><img alt="image" src="_images/login.jpg" /></p>
-</li>
-</ol>
-<p><em>Note: Sometimes devices will have trouble connecting to the server if the device date and time is not correct.</em></p>
-<p><strong>2. Download blank forms from your account</strong></p>
-<p>To download forms from your account and start data collection, follow these steps:</p>
-<ol>
-<li><p>Make sure you are connected to the internet on your device and you have deployed at least one project in KoBoToolbox.</p></li>
-<li><p>On the home screen menu of KoBoCollect, select <strong>Get Blank Form</strong></p></li>
-<li><p>A list of all your forms from your different projects will be shown. Click <strong>Select All</strong> (or select the ones you wish to download), then click <strong>Get Selected</strong>.</p>
-<p><img alt="image" src="_images/blank_form.jpg" /></p>
-</li>
-</ol>
-<p><strong>3. Collect data through filling blank forms</strong></p>
-<p>At this point, you no longer need an internet connection. The blank forms and the following submissions will stay on your device until you regain internet connection and send the data submissions to the server.</p>
-<ol>
-<li><p>Back in the main home screen, select <strong>Fill Blank Form</strong>.</p></li>
-<li><p>Select the form you wish to fill out and enter data.</p></li>
-<li><p>Now you may go through and start answering all the questions (swiping your finger from right to left)</p></li>
-<li><p>When you reach the end of the form click on <strong>Save Form and Exit</strong> (making sure the form is marked as ‘finalized’)</p>
-<p><img alt="image" src="_images/save_exit.jpg" /></p>
-</li>
-</ol>
-<p><strong>4. Uploading finalized data to the server</strong></p>
-<p>After you have completed forms, follow these steps to upload the collected data to your KoBoToolbox account and server.</p>
-<ol class="simple">
-<li><p>Make sure you are connected to the internet on your device.</p></li>
-<li><p>From the home screen, click on <strong>Send Finalized Form</strong></p></li>
-<li><p>A list of your most recently collected forms appears.</p></li>
-<li><p>Click <strong>Select All</strong> (or select just the ones you wish to send), then click <strong>Send Selected</strong>.</p></li>
-</ol>
-<div class="section" id="additional-tips">
-<h2>Additional Tips:<a class="headerlink" href="#additional-tips" title="Permalink to this headline">¶</a></h2>
+<p>Data for KoBoToolbox can be collected using two different approaches, viz. <a class="reference internal" href="data_through_webforms.html"><span class="doc">collecting data through web forms (Enketo)</span></a> and <em>collecting data through KoBoCollect</em>. This article describes collecting data with KoBoCollect Android App.</p>
+<p>Any modern Android device should support KoBoCollect. It is free, and the latest version of the app can be installed directly through <a class="reference external" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android">Google Play Store</a>. Alternatively, an appropriate version can be installed compatible with the device’s operating system through our [GitHub repository] (https://github.com/kobotoolbox/collect/releases). We, however, strongly recommend users install the latest version of the app as it should be bugs-free and should also support the latest features compatible with KoBoToolbox.</p>
+<div class="section" id="setup-server-url-on-kobocollect">
+<h2>Setup Server URL on KoBoCollect<a class="headerlink" href="#setup-server-url-on-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>After installing the app on the device, users will need to configure it with the user’s KoBoToolbox account.</p>
+<ul class="simple">
+<li><p>Open <strong>KoBoCollect</strong>.</p></li>
+<li><p>Open <strong>General Settings</strong> (this may be at the top right of your screen, the bottom right, or at the button in the center, depending on your Android version). Then select <strong>Server</strong>.
+<img alt="image" src="_images/kobocollect_android_1.png" /></p></li>
+<li><p>Users are now able to configure the <strong>URL</strong>, <strong>Username</strong>, and <strong>Password</strong> from the <strong>Server Settings</strong>. Under <strong>URL</strong>, enter the server <code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org</span></code> or <code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info</span></code> <em>(depending upon the used server)</em>. Under the <strong>Username</strong>, <em>enter account username</em> and under the <strong>Password</strong>, <em>enter account password</em>.
+<img alt="image" src="_images/kobocollect_android_2.png" />
+<strong>Note:</strong> A device may sometimes have trouble connecting to the server if the device date and time are incorrect. To learn more about troubleshooting, please feel free to go through our support article <a class="reference internal" href="troubleshooting_kobocollect.html"><span class="doc">Troubleshooting KoBoCollect Android Application</span></a>.</p></li>
+</ul>
+</div>
+<div class="section" id="getting-blank-forms-in-kobocollect">
+<h2>Getting Blank Forms in KoBoCollect<a class="headerlink" href="#getting-blank-forms-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>Follow the steps mentioned below to get blank survey forms to the app.</p>
+<ul class="simple">
+<li><p>Make sure that users have successfully deployed at least one project through the user’s KoBoToolbox account.</p></li>
+<li><p>Make sure that users have set up the URL as mentioned above.</p></li>
+<li><p>Make sure that the device is connected to the internet securely.</p></li>
+<li><p>Select <strong>Get Blank Form</strong> from the home menu.
+<img alt="image" src="_images/kobocollect_android_3.jpg" /></p></li>
+<li><p>A list of all the deployed survey forms should appear. Press <strong>Select All</strong> to have all the survey forms to the app or select the ones manually and then press <strong>Select All</strong>. Then press <strong>Get Selected</strong>.
+<img alt="image" src="_images/kobocollect_android_4.jpg" /></p></li>
+</ul>
+</div>
+<div class="section" id="collecting-data-in-kobocollect">
+<h2>Collecting Data in KoBoCollect<a class="headerlink" href="#collecting-data-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>Once the blank forms are in the app, users no longer require an internet connection to collect data. The blank forms and the filled-up forms should stay on the device until they are deleted or submitted to the server.</p>
+<p>Follow the steps mentioned below to start collecting data using the app.</p>
+<ul class="simple">
+<li><p>Press <strong>Fill Blank Form</strong> from the home menu.</p></li>
+<li><p>Select the survey form to start collecting data.</p></li>
+<li><p>Go through all the questions (swiping your finger from right to left).</p></li>
+<li><p>At the end of the survey, press <strong>Save Form and Exit</strong>. <em>Make sure the form is marked as <strong>‘finalized’</strong>. If this is unchecked and still press Save Form and Exit, the filled-up form goes to <strong>Edit Saved Form</strong> while it does not go to <strong>Send Finalized Form</strong>. In such a scenario, go back to <strong>Edit Saved Form</strong>, open the form and then press <strong>Go To End</strong> and press <strong>Save Form and Exit</strong>, making sure the form is marked as <strong>‘finalized’</strong>. Generally, when finished collecting data and when the form is marked as <strong>‘finalized’</strong> and pressed <strong>Save Form and Exit</strong>, the saved form simultaneously goes to <strong>Edit Saved Form</strong> and <strong>Send Finalized Form</strong>.</em>
+<img alt="image" src="_images/kobocollect_android_5.png" />
+Users could also change the name of the saved form to the desired name under <strong>Name this form</strong> if they think data collection has not been completed and requires another visit with the respondent. Changing the completed form’s name would make the enumerator easy to spot which form to edit from the <strong>Edit Saved Form</strong>.</p></li>
+</ul>
+</div>
 <div class="section" id="editing-data-in-kobocollect">
-<h3>Editing data in KoBoCollect<a class="headerlink" href="#editing-data-in-kobocollect" title="Permalink to this headline">¶</a></h3>
-<p>Once you have completed filling out forms, its possible to edit and make corrections to the submitted data in KoBoCollect before sending them to the server.</p>
-<ol class="simple">
-<li><p>Select <strong>Edit Saved Form</strong> on the home screen of KoBoCollect.</p></li>
-<li><p>You will see a list of Saved Forms. Choose the one that you wish to make corrections to.</p></li>
-<li><p>Make changes as needed and then press <strong>Save Form and Exit</strong>.</p></li>
-<li><p>Repeat the process if you wish to make corrections to multiple Saved Forms.</p></li>
-</ol>
+<h2>Editing Data in KoBoCollect<a class="headerlink" href="#editing-data-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>Once users have completed collecting data by pressing <strong>Save Form and Exit</strong>, the saved form automatically goes to <strong>Edit Saved Form</strong>. If users need to edit this saved form, follow the steps outlined below.</p>
+<ul class="simple">
+<li><p>Press <strong>Edit Saved Form</strong> from the home menu.</p></li>
+<li><p>Users should see a list of <strong>Saved Forms</strong>. Choose the one that needs correction.</p></li>
+<li><p>Make changes as needed, and then press <strong>Save Form and Exit</strong>.</p></li>
+<li><p>Repeat the process multiple times if more corrections are required.</p></li>
+</ul>
 </div>
-<div class="section" id="deleting-forms-in-kobocollect">
-<h3>Deleting Forms in KoBoCollect<a class="headerlink" href="#deleting-forms-in-kobocollect" title="Permalink to this headline">¶</a></h3>
-<p>Once you have completed all of your data collection for a specific project and have submitted all the saved forms to your KoBoToolbox server, it’s recommend to delete the Blank Forms and Saved Forms from KoBoCollect so that enumerators will not get mixed up when collecting data for other projects. To do this, select <strong>Delete Saved Form</strong> from the home screen.</p>
+<div class="section" id="uploading-finalized-data-to-the-server">
+<h2>Uploading Finalized Data to the Server<a class="headerlink" href="#uploading-finalized-data-to-the-server" title="Permalink to this headline">¶</a></h2>
+<p>Users should now need an internet connection at this phase to upload their finalized forms to the server. Follow the steps mentioned below to upload the collected data to the KoBoToolbox server (your KoBoToolbox account).</p>
+<ul class="simple">
+<li><p>Ensure the device with the completed forms is securely connected to the internet.</p></li>
+<li><p>From the home screen, press on <strong>Send Finalized Form</strong>.</p></li>
+<li><p>A list of all the collected forms should appear.</p></li>
+<li><p>Press <strong>Select All</strong> (or select the ones you wish to upload) and then press <strong>Send Selected</strong>.</p></li>
+<li><p>To ensure the forms were uploaded successfully, press <strong>View Sent Form</strong>. Users should be able to view all the submitted forms.</p></li>
+</ul>
 </div>
-<div class="section" id="resetting-view-sent-forms-in-kobocollect">
-<h3>Resetting View Sent Forms in KoBoCollect<a class="headerlink" href="#resetting-view-sent-forms-in-kobocollect" title="Permalink to this headline">¶</a></h3>
-<p>When you’ve submit completed forms from KoBoCollect to the KoBoToolbox server by clicking <strong>Send Finalized Form</strong>, you should be able to confirm that your submitted forms have reached the server by seeing them in the <strong>View Sent Form</strong> page. It can be nice to have them there until the end of data collection for a specific project, as it gives you the reference of how many data submissions have been sent to the server form that particular device. However, once the data collection for the project is over, it is recommended to reset <strong>View Sent Form</strong> from KoBoCollect as it may create confusion with the total number of completed submissions sent to the server in future projects.</p>
-<p>To reset <strong>View Sent Form</strong> from KoBoCollect follow these steps:</p>
-<ol class="simple">
-<li><p>Open the <strong>Admin Settings</strong> by clicking on the <strong>three dot icon</strong> on the top right of the screen.</p></li>
-<li><p>Select <strong>Reset application</strong>…</p></li>
-<li><p>Check the box for <strong>Saved forms (instances folder,instances database)</strong> and then press <strong>RESET</strong>. When you see <strong>Saved forms::Success</strong>, then press OK.</p></li>
-</ol>
+<div class="section" id="deleting-saved-forms-in-kobocollect">
+<h2>Deleting Saved Forms in KoBoCollect<a class="headerlink" href="#deleting-saved-forms-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>Once all the filled-up forms are submitted, users could delete <strong>Saved Forms</strong> and <strong>Blank Forms</strong> from the app to not mix up with other ongoing projects or future projects. Follow the steps outlined to delete these forms from the app.</p>
+<ul class="simple">
+<li><p>From the home screen, press on <strong>Delete Saved Form</strong>.</p></li>
+<li><p>Users should now see two tabs. The default is <strong>Saved Forms</strong>. These are the forms that were filled-up while collecting data. Press <strong>Select All</strong> to delete all the <strong>Saved Forms</strong> from the app and then press <strong>Delete Selected</strong>.
+<img alt="image" src="_images/kobocollect_android_6.png" /></p></li>
+<li><p>The next tab is the <strong>Blank Forms</strong>. These are the blank questionnaire or, in other words, the questionnaire to the survey project that a user deployed through their KoBoToolbox account. Press <strong>Select All</strong> to delete all the <strong>Blank Forms</strong> from the app and then press <strong>Delete Selected</strong>.</p></li>
+</ul>
 </div>
-<div class="section" id="hiding-buttons-and-options-within-kobocollect">
-<h3>Hiding buttons and options within KoBoCollect<a class="headerlink" href="#hiding-buttons-and-options-within-kobocollect" title="Permalink to this headline">¶</a></h3>
-<p>It’s sometimes necessary to hide buttons within KoBoCollect to limit the activity and capabilities of enumerators in the app. You’re able to hide many of the buttons available in KoBoCollect through the Admin Settings.</p>
-<ol class="simple">
-<li><p>On the home screen click the <strong>three dot icon</strong> and select <strong>Admin Settings</strong></p></li>
-<li><p>At the bottom you will see the <strong>User Access Control</strong> which includes <strong>Main Menu Settings</strong>, <strong>User Settings</strong> and <strong>Form Entry Settings</strong>.</p></li>
-<li><p>Select the buttons you would like to hide from the different screens. If you set an admin password, your enumerators won’t be able to access the <strong>Admin Settings</strong> to change access to these buttons.</p></li>
-</ol>
+<div class="section" id="resetting-view-sent-form-from-kobocollect">
+<h2>Resetting View Sent Form from KoBoCollect<a class="headerlink" href="#resetting-view-sent-form-from-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>When a user submits all the filled-up forms to the server by pressing <strong>Send Finalized Form</strong>, the user should be able to confirm that the submitted forms have reached the server if they see them in the <strong>View Sent Form</strong> (i.e., once you submit them, they are also seen in the <strong>View Sent Form</strong>). Data managers generally advise users to keep this information until the end of the project as it always provides the user with reference on the total number of collections and submissions.</p>
+<p>However, once the project’s data collection is over, it is advised to reset <strong>View Sent Form</strong> from the app as it may create confusion with the total number of completed cases sent to the server. Hence, to avoid this confusion, please follow the steps to reset <strong>View Sent Form</strong> from the app as follows:</p>
+<ul class="simple">
+<li><p>Open the <strong>Admin Settings</strong> (this may be on the top right, the bottom right, or in the bottom center of your screen, depending on your Android version).
+<img alt="image" src="_images/kobocollect_android_7.png" /></p></li>
+<li><p>Select <strong>Reset application</strong>.</p></li>
+<li><p>Check on <strong>Saved forms (instances folder, instances database)</strong> and then press <strong>RESET</strong>. Users should further see a small dialogue box pop up <strong>Reset results Saved forms::Success</strong>. Then press <strong>OK</strong>.</p></li>
+</ul>
 </div>
+<div class="section" id="hiding-buttons-in-kobocollect">
+<h2>Hiding Buttons in KoBoCollect<a class="headerlink" href="#hiding-buttons-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>It is sometimes necessary to hide some buttons so that enumerators do not manipulate the collected data or play around, which increases the risk of data loss. Hence, to avoid this pitfall follow the instructions outlined below.</p>
+<ul class="simple">
+<li><p>Open the <strong>Admin Settings</strong> (this may be on the top right, the bottom right, or in the bottom center of your screen, depending on your Android version).</p></li>
+<li><p>At the bottom, users should see the <strong>User Access Control</strong>, which includes <strong>Main Menu Settings</strong>, <strong>User Settings</strong>, and <strong>Form Entry Settings</strong>.</p></li>
+<li><p>Select <strong>Main Menu Settings</strong> to hide the button from the main menu.
+<img alt="image" src="_images/kobocollect_android_8.png" /></p></li>
+<li><p>Select <strong>User Settings</strong> to hide the button from the user settings menu.
+<img alt="image" src="_images/kobocollect_android_9.png" /></p></li>
+<li><p>Select <strong>Form Entry Settings</strong> to hide the button from the form menu.
+<img alt="image" src="_images/kobocollect_android_10.png" /></p></li>
+<li><p>After making changes, do not forget to set an <strong>Admin Password</strong> so that enumerators would not access the <strong>Admin Settings</strong>.
+<img alt="image" src="_images/kobocollect_android_11.jpg" /></p></li>
+</ul>
+</div>
+<div class="section" id="differences-between-kobocollect-odk-collect">
+<h2>Differences Between KoBoCollect &amp; ODK Collect<a class="headerlink" href="#differences-between-kobocollect-odk-collect" title="Permalink to this headline">¶</a></h2>
+<p><strong>KoBoCollect</strong> is a fork of the excellent <strong>ODK Collect</strong>. As of today, there are no substantive differences between the two apps. Users are free to use either one for their data collection. KoBoToolbox’s online features are fully compatible with both apps. So technically, there should be no advantage of one over the other.</p>
+<p>We, however, do not recommend having both apps installed concurrently. Installing both apps on the same device could lead to some confusion depending on the Android settings.</p>
+<p>Historically there used to be some significant differences between the two. Back in 2009, KoBoToolbox made several significant changes to <strong>ODK Collect</strong> that became <strong>KoBoCollect</strong>. That included <em>cascading questions</em>, <em>hiding delete and edit buttons</em> for field data collection, and other changes. That was in part because XLSForm was not yet an option, and KoBoToolbox built a form builder for all question types and advanced settings, including cascading questions, which were saved directly as an XML file for the mobile app. These changes were eventually added to <strong>ODK Collect</strong> over the years, along with many other great features. So, in 2014, KoBoToolbox decided to re-fork <strong>KoBoCollect</strong> off <strong>ODK Collect</strong>, keeping only minimal changes. Today these include the <em>KoBoToolbox server in the configuration dropdown</em>, a reference back to <strong>ODK Collect</strong>, and the <em>KoBoToolbox logo and name</em>.</p>
+<p>KoBoToolbox updates <strong>KoBoCollect</strong> periodically. Interested users could find the source code <a class="reference external" href="https://github.com/kobotoolbox/collect/releases">here</a>. There are tens of thousands of <strong>KoBoCollect</strong> users worldwide; hence, KoBoToolbox has not planned to discontinue <strong>KoBoCollect</strong> at this point. Nevertheless, if a user is starting a new project, one could very well start with <strong>ODK Collect</strong>. One advantage in starting with <strong>ODK Collect</strong> is that the app is updated more frequently than <strong>KoBoCollect</strong> hence receiving bug fixes more quickly.</p>
 </div>
 </div>
 
@@ -263,7 +290,15 @@
 <li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting Data with KoBoCollect on Android</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#additional-tips">Additional Tips:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setup-server-url-on-kobocollect">Setup Server URL on KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-blank-forms-in-kobocollect">Getting Blank Forms in KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collecting-data-in-kobocollect">Collecting Data in KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-data-in-kobocollect">Editing Data in KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uploading-finalized-data-to-the-server">Uploading Finalized Data to the Server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deleting-saved-forms-in-kobocollect">Deleting Saved Forms in KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resetting-view-sent-form-from-kobocollect">Resetting View Sent Form from KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hiding-buttons-in-kobocollect">Hiding Buttons in KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#differences-between-kobocollect-odk-collect">Differences Between KoBoCollect &amp; ODK Collect</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
