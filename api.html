@@ -3,7 +3,8 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Using the API &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -97,12 +98,12 @@
 
         <section class="page__body" role="main">
           
-  <div class="section" id="using-the-api">
+  <section id="using-the-api">
 <h1>Using the API<a class="headerlink" href="#using-the-api" title="Permalink to this headline">¶</a></h1>
 <p>KoBoToolbox has a number of advanced features built in based on our open source libraries, which include useful add-ons for advanced use cases. There are many ways to use our API. For some hands-on examples, <a class="reference external" href="https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742">see this post</a>.</p>
 <p>KoBoToolbox has two APIs for its primary tools, kpi and kc. Originally kc was the only api for deploying forms and retrieving data. Now, kpi is the primary API that should be used.</p>
 <p>The base URL depends on the server you are using: for most users it is <a class="reference external" href="https://kf.kobotoolbox.org">kf.kobotoolbox.org</a> or <a class="reference external" href="https://kobo.humanitarianresponse.info">kobo.humanitarianresponse.info</a>. Below we only use [kpi-url] to refer to this base URL.</p>
-<div class="section" id="getting-your-api-token">
+<section id="getting-your-api-token">
 <h2>Getting your API Token:<a class="headerlink" href="#getting-your-api-token" title="Permalink to this headline">¶</a></h2>
 <p>There are different ways to get your API Token.</p>
 <p><strong>Method 1:</strong></p>
@@ -120,8 +121,8 @@
 <p><strong>Method 3:</strong></p>
 <p>You could use the follwoing curl command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-u</span> <span class="pre">username:password</span> <span class="pre">&quot;https:/[kpi-url]/token/?format=json&quot;</span></code></p>
-</div>
-<div class="section" id="testing-your-api">
+</section>
+<section id="testing-your-api">
 <h2>Testing your API:<a class="headerlink" href="#testing-your-api" title="Permalink to this headline">¶</a></h2>
 <p>To test it use this command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-X</span> <span class="pre">GET</span> <span class="pre">https://[kpi-url]/api/v2/assets.json</span> <span class="pre">-H</span> <span class="pre">&quot;Authorization:</span> <span class="pre">Token</span> <span class="pre">[your_token_goes_here]&quot;</span></code></p>
@@ -132,8 +133,8 @@
 <a class="reference external" href="https://%5Bkpi-url%5D/api/v2/assets/%7Basset_uid%7D/data/">https://[kpi-url]/api/v2/assets/{asset_uid}/data/</a> (access submitted data)
 <a class="reference external" href="https://%5Bkpi-url%5D/exports/">https://[kpi-url]/exports/</a> (create or view data exports)</p>
 <p>You can find more examples <a class="reference external" href="https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742">in this forum post</a>.</p>
-</div>
-</div>
+</section>
+</section>
 
 
           <div class="clearer"></div>
@@ -159,7 +160,7 @@
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p class="caption"><span class="caption-text">Getting Started</span></p>
+  <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoBoToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
@@ -171,7 +172,7 @@
 <li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoBoToolbox Training Materials in Arabic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoBoToolbox Training Materials in French</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Creating Forms</span></p>
+<p><span class="caption-text">Creating Forms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -212,7 +213,7 @@
 <li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Collecting Data</span></p>
+<p><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
@@ -226,7 +227,7 @@
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Managing Projects and Data</span></p>
+<p><span class="caption-text">Managing Projects and Data</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -254,7 +255,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
+<p><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoBoToolbox on a Local Computer</a></li>

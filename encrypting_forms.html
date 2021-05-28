@@ -3,7 +3,8 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Encrypting Forms &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -97,15 +98,15 @@
 
         <section class="page__body" role="main">
           
-  <div class="section" id="encrypting-forms">
+  <section id="encrypting-forms">
 <h1>Encrypting Forms<a class="headerlink" href="#encrypting-forms" title="Permalink to this headline">¶</a></h1>
 <p><em>This procedure is quite technical and is intended for users who are comfortable with advanced technical instructions and requires strict attention to detail.</em></p>
 <p>Encrypted forms work by encrypting the data on the phone the moment it is saved. Data sent to KoBoToolbox is encrypted and completely inaccessible to anyone not possessing the private key. In this case, KoBoToolbox serves simply as a storage locker for your encrypted files - a place to upload and then download for later for local decryption (<a class="reference external" href="http://blog.formhub.org/2013/06/27/formhub-supports-odk-briefcase/">using ODK Briefcase</a>). Since the form submissions are encrypted, it means, however, anything that requires access to the data like the map view or data export won’t work within KoBoToolbox. The extra level of security makes using KoBoToolbox in a way to collect sensitive data while meeting certain data protection protocols possible.</p>
-<div class="section" id="how-it-works">
+<section id="how-it-works">
 <h2>How it Works<a class="headerlink" href="#how-it-works" title="Permalink to this headline">¶</a></h2>
 <p>KoBoCollect supports the ability to encrypt the content of a form the moment it is marked as completed and ready for submission on the phone. To take advantage of this requires the use of a public encryption key which you include in the XLSForm and a private key (which you never share) that is used by ODK Briefcase to decrypt the data locally after you’ve downloaded it from KoBoToolbox. The public key is used to encrypt data while the private key decrypts it. Only a person who has the private key, can decrypt the data encrypted with the public key. To understand more about public and private key infrastructure <a class="reference external" href="https://en.wikipedia.org/wiki/Public-key_cryptography">see here</a>.</p>
-</div>
-<div class="section" id="how-to-encrypt-xls-forms">
+</section>
+<section id="how-to-encrypt-xls-forms">
 <h2>How to encrypt XLS forms<a class="headerlink" href="#how-to-encrypt-xls-forms" title="Permalink to this headline">¶</a></h2>
 <ol>
 <li><p>Create your form in KoBoToolbox as always. Download the form from the drafts list as an XLS file.</p></li>
@@ -117,11 +118,11 @@
 </li>
 <li><p>Upload the XLS file back to KoBoToolbox. You can either import it back to the Form Drafts list and then deploy it as a new survey project, or import it directly to your deployed Projects list. Once deployed you should see a label with the text “encrypted” next to your form name.</p></li>
 </ol>
-</div>
-<div class="section" id="how-to-decrypt-forms">
+</section>
+<section id="how-to-decrypt-forms">
 <h2>How to decrypt forms<a class="headerlink" href="#how-to-decrypt-forms" title="Permalink to this headline">¶</a></h2>
 <p>ODK Briefcase is used to download the encrypted files from KoBoToolbox and decrypt them locally on your computer using a private key ensuring single access to the data. For decryption to be successful with ODK Briefcase make sure you download and install the <em>Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 6</em> from the <a class="reference external" href="https://www.oracle.com/java/technologies/javase-downloads">Java download site</a>. This is required for decryption to be successful.</p>
-<div class="section" id="to-install-the-jce">
+<section id="to-install-the-jce">
 <h3>To install the JCE:<a class="headerlink" href="#to-install-the-jce" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>Unzip the downloaded zip archive</p></li>
@@ -133,8 +134,8 @@
 </ul>
 </li>
 </ol>
-</div>
-<div class="section" id="to-decrypt-your-forms">
+</section>
+<section id="to-decrypt-your-forms">
 <h3>To decrypt your forms:<a class="headerlink" href="#to-decrypt-your-forms" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>Download and open <a class="reference external" href="https://docs.getodk.org/briefcase-intro/">ODK Briefcase</a>.</p></li>
@@ -154,12 +155,12 @@
 <li><p>Now check the project that you would wish to export and press <strong>Export</strong>.</p></li>
 <li><p>Data is exported as a CSV file, you can now view the unencrypted data.</p></li>
 </ol>
-</div>
-</div>
-<div class="section" id="generating-rsa-encryption-keys">
+</section>
+</section>
+<section id="generating-rsa-encryption-keys">
 <h2>Generating RSA Encryption Keys<a class="headerlink" href="#generating-rsa-encryption-keys" title="Permalink to this headline">¶</a></h2>
 <p>To generate the RSA public-private key pairs you can use the OpenSSL software package, which is pre-installed on OSX and Linux. On Windows you have to download and install the OpenSSL software package from <a class="reference external" href="http://slproweb.com/products/Win32OpenSSL">this site</a>. (<em>Note: install the Win64 OpenSSL v1.1.1c in <strong>C</strong>: rather than the default location <strong>C:\Program Files</strong></em>)</p>
-<div class="section" id="how-to-generate-rsa-key-for-use-with-encrypted-forms-on-kobotoolbox">
+<section id="how-to-generate-rsa-key-for-use-with-encrypted-forms-on-kobotoolbox">
 <h3>How to generate RSA key for use with encrypted forms on KoBoToolbox<a class="headerlink" href="#how-to-generate-rsa-key-for-use-with-encrypted-forms-on-kobotoolbox" title="Permalink to this headline">¶</a></h3>
 <p><em>Note: We strongly recommend using OpenSSL as documented below for creating your public/private key pair as other methods may not be supported by the software.</em></p>
 <ol>
@@ -186,9 +187,9 @@
 <p><strong>IMPORTANT</strong>: make sure that you paste only the public key string and no blank spaces or line breaks!</p>
 <p><strong>MyPrivateKey.pem</strong> is the file you will use when exporting the submissions using ODK Briefcase.</p>
 <p>Note: When trying to edit a form that has been encrypted, you receive a message “This form cannot be edited once it has been marked as finalized. It may by encrypted”.</p>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
 
 
           <div class="clearer"></div>
@@ -214,7 +215,7 @@
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p class="caption"><span class="caption-text">Getting Started</span></p>
+  <p><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoBoToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
@@ -226,7 +227,7 @@
 <li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoBoToolbox Training Materials in Arabic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoBoToolbox Training Materials in French</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Creating Forms</span></p>
+<p><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -273,7 +274,7 @@
 <li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Collecting Data</span></p>
+<p><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
@@ -287,7 +288,7 @@
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Managing Projects and Data</span></p>
+<p><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -311,7 +312,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
+<p><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoBoToolbox on a Local Computer</a></li>

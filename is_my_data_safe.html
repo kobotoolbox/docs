@@ -3,7 +3,8 @@
 
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Is My Data Safe on Your Server? &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
@@ -97,7 +98,7 @@
 
         <section class="page__body" role="main">
           
-  <div class="section" id="is-my-data-safe-on-your-server">
+  <section id="is-my-data-safe-on-your-server">
 <h1>Is My Data Safe on Your Server?<a class="headerlink" href="#is-my-data-safe-on-your-server" title="Permalink to this headline">¶</a></h1>
 <p>Most users use one of the two server instances that we support: <a class="reference external" href="https://kobo.humanitarianresponse.info/accounts/login/?next=/#/">KoBoToolbox by OCHA</a> (for humanitarian workers) and <a class="reference external" href="https://kf.kobotoolbox.org/accounts/login/?next=/#/">KoBoToolbox by HHI</a> (for everyone else). KoBoToolbox can also be installed on local computers or your own web servers. This article is about the security of your data on one of the two supported servers hosted by HHI and OCHA.</p>
 <p>We take the protection of collected data very seriously. Data from both servers is hosted by Amazon Web Services (AWS). Both servers are administered using best practice tools and mechanisms to keep data safe from intrusion or loss.</p>
@@ -106,7 +107,7 @@
 <p>Once your data is received on the server it is stored in accounts protected by usernames and passwords. However, unless it was encrypted on the handset <a class="reference internal" href="encrypting_forms.html"><span class="doc">(see this article)</span></a>, it will be stored ‘in the clear’ on the server filesystem or within its database, which means that our server administrators could potentially access it.</p>
 <p>For <a class="reference external" href="https://kobo.humanitarianresponse.info/accounts/login/?next=/#/">kobo.humanitarianresponse.info</a> and <a class="reference external" href="https://kobo.humanitarianresponse.info/accounts/login/?next=/kobocat/#/">kc.humanitarianresponse.info</a> only the server administrator has technical access to the database, and we will never access your data unless you have given us explicit access to it. However, to have complete control and ownership of your data, you are also free to install an instance of KoBoToolbox on your own server.</p>
 <p>All user passwords are only stored fully encrypted on the KoBoToolbox server, using the default open source framework provided by Django, which we use for our backend. Django uses the <a class="reference external" href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2 algorithm</a> with a <a class="reference external" href="https://en.wikipedia.org/wiki/SHA-2">SHA256 hash</a>. This approach is considered very secure as such encrypted passwords require enormous amounts of computing power and time to break. Read more about Django’s password encryption process <a class="reference external" href="https://docs.djangoproject.com/en/1.8/topics/auth/passwords/">here</a>.</p>
-</div>
+</section>
 
 
           <div class="clearer"></div>
@@ -132,7 +133,7 @@
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p class="caption"><span class="caption-text">Getting Started</span></p>
+  <p><span class="caption-text">Getting Started</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoBoToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
@@ -144,7 +145,7 @@
 <li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoBoToolbox Training Materials in Arabic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoBoToolbox Training Materials in French</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Creating Forms</span></p>
+<p><span class="caption-text">Creating Forms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -185,7 +186,7 @@
 <li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Collecting Data</span></p>
+<p><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
@@ -199,7 +200,7 @@
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p class="caption"><span class="caption-text">Managing Projects and Data</span></p>
+<p><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -223,7 +224,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p class="caption"><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
+<p><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoBoToolbox on a Local Computer</a></li>
