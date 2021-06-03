@@ -6,14 +6,15 @@ The following explains other options for downloading and accessing your collecte
 
 ## Adding direct hyperlinks to collected media in Excel
 
-1. Download your data to XLS and open the file
+1. Download your data to XLS and open the file.
 2. In a new column next to the one that contains the filenames of your images, enter the following formula:
 
-* **If using the KoBoToolbox server**:
-    =HYPERLINK("https://kc.kobotoolbox.org/attachment/original?media_file=username/attachments/"&A2")
+* **If using the HHI's server**:
+    =CONCATENATE(HYPERLINK("https://kc.kobotoolbox.org/attachment/original?media_file=username/attachments/"),A2)
+    
 
 * **If using OCHA's server**:
-    =HYPERLINK("https://kc.humanitarianresponse.info/attachment/original?media_file=username/attachments/"&A2")
+    =CONCATENATE(HYPERLINK("https://kc.humanitarianresponse.info/attachment/original?media_file=username/attachments/"),A2)
 
 3. In the formula replace 'username' with your own username and 'A2' with the first cell reference that contains the file name of your photo. Then copy the formula down for all your records.
 
@@ -23,7 +24,7 @@ The following explains other options for downloading and accessing your collecte
 
     ![image](/images/photo_dowload/excel_hyperlinks.jpg)
 
-**For slow connections or very large projects: Using DownThemAll to download media files**
+## For slow connections or very large projects: Using DownThemAll to download media files
 
 The ZIP download method will always include all of your project's media files. This can take a long time to download in case of a large number of collected images or videos or in case of a slow connection. Here is a workaround to download all (or a selection of) media using the popular DownThemAll download manager (only supported by the Firefox browser):
 

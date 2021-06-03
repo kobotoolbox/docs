@@ -105,14 +105,14 @@
 <section id="adding-direct-hyperlinks-to-collected-media-in-excel">
 <h2>Adding direct hyperlinks to collected media in Excel<a class="headerlink" href="#adding-direct-hyperlinks-to-collected-media-in-excel" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
-<li><p>Download your data to XLS and open the file</p></li>
+<li><p>Download your data to XLS and open the file.</p></li>
 <li><p>In a new column next to the one that contains the filenames of your images, enter the following formula:</p></li>
 </ol>
 <ul class="simple">
-<li><p><strong>If using the KoBoToolbox server</strong>:
-=HYPERLINK(”https://kc.kobotoolbox.org/attachment/original?media_file=username/attachments/”&amp;A2”)</p></li>
+<li><p><strong>If using the HHI’s server</strong>:
+=CONCATENATE(HYPERLINK(”https://kc.kobotoolbox.org/attachment/original?media_file=username/attachments/”),A2)</p></li>
 <li><p><strong>If using OCHA’s server</strong>:
-=HYPERLINK(”https://kc.humanitarianresponse.info/attachment/original?media_file=username/attachments/”&amp;A2”)</p></li>
+=CONCATENATE(HYPERLINK(”https://kc.humanitarianresponse.info/attachment/original?media_file=username/attachments/”),A2)</p></li>
 </ul>
 <ol>
 <li><p>In the formula replace ‘username’ with your own username and ‘A2’ with the first cell reference that contains the file name of your photo. Then copy the formula down for all your records.</p></li>
@@ -121,7 +121,9 @@
 <p><img alt="image" src="_images/excel_hyperlinks.jpg" /></p>
 </li>
 </ol>
-<p><strong>For slow connections or very large projects: Using DownThemAll to download media files</strong></p>
+</section>
+<section id="for-slow-connections-or-very-large-projects-using-downthemall-to-download-media-files">
+<h2>For slow connections or very large projects: Using DownThemAll to download media files<a class="headerlink" href="#for-slow-connections-or-very-large-projects-using-downthemall-to-download-media-files" title="Permalink to this headline">¶</a></h2>
 <p>The ZIP download method will always include all of your project’s media files. This can take a long time to download in case of a large number of collected images or videos or in case of a slow connection. Here is a workaround to download all (or a selection of) media using the popular DownThemAll download manager (only supported by the Firefox browser):</p>
 <ol class="simple">
 <li><p>Save your Excel file with the added hyperlinks (see instructions above) as an HTML file to your Desktop, using the File &gt; Save as… option (choose ‘Web page’)</p></li>
@@ -245,6 +247,7 @@
 <li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editing or Deleting a Single Submission</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Downloading Photos and Other Media</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#adding-direct-hyperlinks-to-collected-media-in-excel">Adding direct hyperlinks to collected media in Excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#for-slow-connections-or-very-large-projects-using-downthemall-to-download-media-files">For slow connections or very large projects: Using DownThemAll to download media files</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering Data From Previous Form Versions</a></li>
