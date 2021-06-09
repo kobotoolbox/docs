@@ -42,11 +42,18 @@
     if (tocs && tocs.children.length !== 0) {
       for (let i = 0; i < tocs.children.length; i++) {
         let child = tocs.children[i];
+
+        // HACK FIX WTF: sphinx for some reason doesn't add the "caption" class
+        // to the node on the production environment. Let's fix that.
+        if (child.tagName === 'P' && !child.classList.contains(captionClass)) {
+          child.classList.add(captionClass);
+        }
+
         if (child.classList.contains(captionClass)) {
           activateSidebarToc(child, tocs.children[i+1])
         }
       }
-      console.info("sidebar TOCs ready");
+      console.info("Sidebar TOCs ready.");
     }
   });
 })();
