@@ -1,8 +1,6 @@
 # KoBoToolbox user documentation
 
-This documentation is a work in progress while we transition over from our existing platform at [support.kobotoolbox.org](https://support.kobotoolbox.org).
-
-Visit the work-in-progress support site [here](https://kobotoolbox-documentation.readthedocs.io/en/latest/). This page is updated automatically by Read the Docs based on the latest version of this repository.
+This repository contains all the user content of KoBoToolbox's official documentation, available at https://support.kobotoolbox.org/. 
 
 ## Local installation
 
