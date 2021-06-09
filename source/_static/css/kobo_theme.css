@@ -374,7 +374,7 @@ html body header.main-header .main-header__navigation ul li.current a {
 
 .main-search .main-search__text-box:focus {
   outline: none;
-  border-color: #a6aaba;
+  border-color: #444d63;
 }
 
 .main-search .main-search__text-box:focus + .main-search__magnifying-glass {
