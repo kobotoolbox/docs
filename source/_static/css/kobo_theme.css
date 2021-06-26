@@ -492,6 +492,11 @@ html body {
   vertical-align: middle;
 }
 
+.page .page__body video {
+  display: block;
+  width: 100%;
+}
+
 .page .page__body p {
   margin: 0 auto 1.125rem;
   font-weight: 300;
