@@ -10,7 +10,7 @@ At the same time, users should also be able to perform various calculations such
 
 ## Linking a project dynamically through xlsform:
 
-While trying this approach through the xlsform, users will require two xlsform. The first xlsform (also known as <a download href="./_static/files/Round 1.xlsx"> parent form or round 1 form</a>) is generally a normal xlsform that we often design. The second xlsform (also known as <a download href="./_static/files/Round 2.xlsx"> child form or round 2 form</a>) is slightly different from the first xlsform, especially in two aspects, i.e., it has an xml-external question type, and it also has a calculation column that holds the path to the survey project being linked. 
+While trying this approach through the xlsform, users will require two xlsform. The first xlsform (also known as <a download href="./_static/files/dynamic_data_attachment/Round 1.xlsx"> parent form or round 1 form</a>) is generally a normal xlsform that we often design. The second xlsform (also known as <a download href="./_static/files/dynamic_data_attachment/Round 2.xlsx"> child form or round 2 form</a>) is slightly different from the first xlsform, especially in two aspects, i.e., it has an xml-external question type, and it also has a calculation column that holds the path to the survey project being linked.
 
 Users could design their parent project as shown in the image below:
 
@@ -20,7 +20,7 @@ In the same way, users could design their child project as shown in the image be
 
 <Insert image 2 here>
 
-__Note:__ The name used for the _xml-external_ question type in the child project is crucial for linking the project with the parent project. In the above example, it was named survey. You can give it a different name as well _(it can only consist of Latin characters and numbers)_. 
+__Note:__ The name used for the _xml-external_ question type in the child project is crucial for linking the project with the parent project. In the above example, it was named survey. You can give it a different name as well _(it can only consist of Latin characters and numbers)_.
 
 ## Understanding the syntax used under the calculation column of the child project:
 
@@ -58,31 +58,31 @@ Once a user has finalized their projects in an xlsform, they will need to do the
 
 __Step 1:__ Upload and deploy the parent project.
 
-<video controls><source src="./_static/files/1. Uploading and deploying xlsform (round 1 survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/1. Uploading and deploying xlsform (round 1 survey).mp4" type="video/mp4"></video>
 
-__Step 2:__ Go to the parent project’s __SETTINGS>Connect Projects__. By default, data sharing for a project is disabled. To enable sharing the information with the child project, users will have to toggle the __Data sharing button, changing it to Data Sharing enabled__. Upon pressing the __Data sharing disabled__, users will see a dialogue box. Click __ACKNOWLEDGE AND CONTINUE__. Once the __Data sharing enabled__ button is active, users should be able to __Select specific questions to share__. With this button, users should be able to share or restrict variables with the child project. If you wish to share data from all the variables, you could uncheck __Select specific questions__ to share and proceed. 
+__Step 2:__ Go to the parent project’s __SETTINGS>Connect Projects__. By default, data sharing for a project is disabled. To enable sharing the information with the child project, users will have to toggle the __Data sharing button, changing it to Data Sharing enabled__. Upon pressing the __Data sharing disabled__, users will see a dialogue box. Click __ACKNOWLEDGE AND CONTINUE__. Once the __Data sharing enabled__ button is active, users should be able to __Select specific questions to share__. With this button, users should be able to share or restrict variables with the child project. If you wish to share data from all the variables, you could uncheck __Select specific questions__ to share and proceed.
 
-<video controls><source src="./_static/files/2. Connect Projects (round 1 survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/2. Connect Projects (round 1 survey).mp4" type="video/mp4"></video>
 
 __Step 3:__ Upload and deploy the child project.
 
-<video controls><source src="./_static/files/3. Uploading and deploying xlsform (round 2 survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/3. Uploading and deploying xlsform (round 2 survey).mp4" type="video/mp4"></video>
 
-__Step 4:__ Go to the child project’s __SETTINGS>Connect Projects__. Click __Select a different project to import data from__. In the dropdown, you will see the projects that can be linked. __Round 1 Survey__ is listed here because it was made available as outlined in __Step 2__. Once a user selects the available project (_Round 1 Survey_ in my case), a unique name is also provided by the system by default (_round_1_survey_ in my case). Users will now need to be cautious and rename the unique name to the name provided in the _xml-external_ question type while designing the child project. Since I had named it _survey_, I have renamed the unique name from _round_1_survey_ to _survey_. Then press __IMPORT__. Once you press the __IMPORT__ button, you will have an option to share or restrict the variables to your child project. 
+__Step 4:__ Go to the child project’s __SETTINGS>Connect Projects__. Click __Select a different project to import data from__. In the dropdown, you will see the projects that can be linked. __Round 1 Survey__ is listed here because it was made available as outlined in __Step 2__. Once a user selects the available project (_Round 1 Survey_ in my case), a unique name is also provided by the system by default (_round_1_survey_ in my case). Users will now need to be cautious and rename the unique name to the name provided in the _xml-external_ question type while designing the child project. Since I had named it _survey_, I have renamed the unique name from _round_1_survey_ to _survey_. Then press __IMPORT__. Once you press the __IMPORT__ button, you will have an option to share or restrict the variables to your child project.
 
-<video controls><source src="./_static/files/4. Connect Projects (round 2 survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/4. Connect Projects (round 2 survey).mp4" type="video/mp4"></video>
 
 This will now do the magic and link the data from the parent project to the child project. In my case, it will link the data from the _Round 1 Survey_ to the _Round 2 Survey_.
 
 ### Projects Owned by Different Users:
 
-Let’s assume a scenario where __userA__ has a parent project which s/he shares with __userB__. Now that this feature is available, __userB__ should be able to upload a child project from his/her user account and link them dynamically with the parent project shared by __userA__. To achieve this at your end, you could follow the steps outlined below: 
+Let’s assume a scenario where __userA__ has a parent project which s/he shares with __userB__. Now that this feature is available, __userB__ should be able to upload a child project from his/her user account and link them dynamically with the parent project shared by __userA__. To achieve this at your end, you could follow the steps outlined below:
 
 __Step 1:__ __userA__ should follow the exact steps as outlined in __Step 1__ and __Step 2__ (__Both Projects Owned by Same User__) to _upload_, _deploy_ and _configure_ the parent project.
 
 __Step 2:__ __userA__ should then share the parent project with userB as outlined in [this support article](managing_permissions.md). While sharing, __userA__ should provide minimum access (_View form_, _Edit form_, _View submissions_, and _Add submissions_) to __userB__ else, __userB__ shall now be able to link the project dynamically as expected.
 
-__Step 3:__ __userB__ will now have to upload, deploy and configure the child project as outlined in __Step 3__ and __Step 4__ (__Both Projects Owned by Same User__). 
+__Step 3:__ __userB__ will now have to upload, deploy and configure the child project as outlined in __Step 3__ and __Step 4__ (__Both Projects Owned by Same User__).
 
 ## Collecting and managing data with Dynamic Data Attachment:
 
