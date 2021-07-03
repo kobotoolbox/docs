@@ -14,11 +14,11 @@ While trying this approach through the xlsform, users will require two xlsform. 
 
 Users could design their parent project as shown in the image below:
 
-<Insert image 1 here>
+![image](/images/dynamic_data_attachment/Round 1.png)
 
 In the same way, users could design their child project as shown in the image below:
 
-<Insert image 2 here>
+![image](/images/dynamic_data_attachment/Round 2.png)
 
 __Note:__ The name used for the _xml-external_ question type in the child project is crucial for linking the project with the parent project. In the above example, it was named survey. You can give it a different name as well _(it can only consist of Latin characters and numbers)_.
 
@@ -90,8 +90,8 @@ Both __Collect android app__, and __Enketo__ can be used to collect data for thi
 
 As a workaround, please see the screenshot of my __DATA>Table__ where I have made some dummy entries to the _parent project_.
 
-<Insert image 3 here>
+![image](/images/dynamic_data_attachment/Server data.png)
 
 As I now have some dummy entries for my _parent project_, I am ready to use my _child project_. Please see the screenshot of a survey form (_Round 2 Survey_ in my case) where I am trying to fill it through __Enketo__. Here, you should be able to observe that I am entering only two fields, __Enumerators name__, and __Identification Number__, and the rest is being linked automatically with the parent project.
 
-<Insert image 4 here>
+![image](/images/dynamic_data_attachment/Enketo.png)
