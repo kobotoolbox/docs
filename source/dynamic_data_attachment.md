@@ -58,7 +58,7 @@ Once a user has finalized their projects in an xlsform, they will need to do the
 
 __Step 1:__ Upload and deploy the parent project.
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_deploying_xlsform_(round_1_survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_1_survey).mp4" type="video/mp4"></video>
 
 __Step 2:__ Go to the parent project’s __SETTINGS>Connect Projects__. By default, data sharing for a project is disabled. To enable sharing the information with the child project, users will have to toggle the __Data sharing button, changing it to Data Sharing enabled__. Upon pressing the __Data sharing disabled__, users will see a dialogue box. Click __ACKNOWLEDGE AND CONTINUE__. Once the __Data sharing enabled__ button is active, users should be able to __Select specific questions to share__. With this button, users should be able to share or restrict variables with the child project. If you wish to share data from all the variables, you could uncheck __Select specific questions__ to share and proceed.
 
@@ -66,7 +66,7 @@ __Step 2:__ Go to the parent project’s __SETTINGS>Connect Projects__. By defau
 
 __Step 3:__ Upload and deploy the child project.
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_deploying_xlsform_(round_2_survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_2_survey).mp4" type="video/mp4"></video>
 
 __Step 4:__ Go to the child project’s __SETTINGS>Connect Projects__. Click __Select a different project to import data from__. In the dropdown, you will see the projects that can be linked. __Round 1 Survey__ is listed here because it was made available as outlined in __Step 2__. Once a user selects the available project (_Round 1 Survey_ in my case), a unique name is also provided by the system by default (_round_1_survey_ in my case). Users will now need to be cautious and rename the unique name to the name provided in the _xml-external_ question type while designing the child project. Since I had named it _survey_, I have renamed the unique name from _round_1_survey_ to _survey_. Then press __IMPORT__. Once you press the __IMPORT__ button, you will have an option to share or restrict the variables to your child project.
 
