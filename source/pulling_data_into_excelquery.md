@@ -62,6 +62,8 @@ Sometimes, you may not be able to see the dialogue box to input your login crede
 
 * You will now be able to see a dialogue box, `Data source settings`. Here, you will need to press `Clear Permissions`. With this, you should be able to see the dialogue box to input your login credentials.
 
+![image](/images/pulling_data_excelquery/data_source_settings.png)
+
 If you wish to learn more on resetting your Excel's `Data Source Settings` feel free to explore [here](https://docs.microsoft.com/en-us/power-query/connectorauthentication).
 
 ### Updating Data in Microsoft Excel
