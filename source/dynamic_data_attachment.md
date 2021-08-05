@@ -10,7 +10,7 @@ Users can also perform [various calculations](advanced_calculate.md) on linked d
 
 ## Dynamically linking projects in XLSForm
 
-Dynamically linking projects requires a _parent project_ and at least one _child project_. The <a download class="reference" href="./_static/files/dynamic_data_attachment/Round_1.xlsx">_parent project_</a> requires no additional modification from a normal XLSForm; however, the <a download class="reference" href="./_static/files/dynamic_data_attachment/Round_1.xlsx">_child project_</a> involves adding an `xml-external` question type. All subsequent references to the _parent project_ occur in the `calculation` column using the node path.
+Dynamically linking projects requires a _parent project_ and at least one _child project_. The <a download class="reference" href="./_static/files/dynamic_data_attachment/Round_1.xlsx">_parent project_</a> requires no additional modification from a normal XLSForm; however, the <a download class="reference" href="./_static/files/dynamic_data_attachment/Round_2.xlsx">_child project_</a> involves adding an `xml-external` question type. All subsequent references to the _parent project_ occur in the `calculation` column using the node path.
 
 Users could design their _parent project_ as shown in the image below:
 
@@ -72,7 +72,7 @@ Assume a scenario where __userA__ has a _parent project_ shared with __userB__. 
 
 __Step 1:__ __userA__ should follow __Step 1__ and __Step 2__ of __Both Projects Owned by Same User__ to _upload_, _deploy_ and _configure_ the _parent project_.
 
-__Step 2:__ __userA__ should then <a class="reference" href="managing_permissions.html" >share the _parent project_ with __userB__</a> and grant the minimum permissions of: _View form_, _Edit form_, _View submissions_, and _Add submissions_. __userB__ can now dynamically link their _child project_ to the _parent project_ of __userA__.
+__Step 2:__ __userA__ should then <a class="reference" href="managing_permissions.html" >share the _parent project_ with __userB__</a> and grant the minimum permissions of: _View form_ and _View submissions_. __userB__ can now dynamically link their _child project_ to the _parent project_ of __userA__.
 
 __Step 3:__ __userB__ should now _upload_, _deploy_ and _configure_ their _child project_ as outlined in __Step 3__ and __Step 4__ of __Both Projects Owned by Same User__.
 
