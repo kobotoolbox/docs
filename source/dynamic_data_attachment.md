@@ -50,19 +50,19 @@ Follow the steps below to dynamically link projects:
 
 __Step 1:__ Upload and deploy the _parent project_.
 
-<video controls style="width:100%"><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_1_survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_1_survey).mp4" type="video/mp4"></video>
 
 __Step 2:__ Enable data sharing with _child projects_ by toggling the __Data Sharing__ switch in the _parent project_’s __SETTINGS>Connect Projects__ section (disabled by default), and click __ACKNOWLEDGE AND CONTINUE__ in the confirmation modal. Users can then restrict specific variables to share with _child projects_ or share __all__ variables from the table by toggling the __Select specific questions__ switch.
 
-<video controls style="width:100%"><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_1_survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_1_survey).mp4" type="video/mp4"></video>
 
 __Step 3:__ Upload and deploy the _child project_.
 
-<video controls style="width:100%"><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_2_survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_2_survey).mp4" type="video/mp4"></video>
 
 __Step 4:__ In the _child project_'s __SETTINGS>Connect Projects__, click the __Select a different project to import data from__ dropdown menu and select a _parent project_ to link. Rename the linked _parent project_ to the same `xml-external` question name defined in the XLSForm ("survey" in this example) and click __IMPORT__. You can then select specific variables from the _parent project_ to share with the _child project_.
 
-<video controls style="width:100%"><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_2_survey).mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_2_survey).mp4" type="video/mp4"></video>
 
 The _child project_ now has access to data from the _parent project_. In this example, data from the _Round 1 Survey_ is linked to the _Round 2 Survey_.
 
