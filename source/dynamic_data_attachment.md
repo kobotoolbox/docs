@@ -1,97 +1,96 @@
-# Dynamic Data Attachment
+# Dynamic Data Attachments
 
-This support article illustrates how data from one project can be linked dynamically and referenced by another project(s). It also aims to demonstrate some practical examples that this feature supports.
+This support article illustrates how data from one project can be linked dynamically and referenced by other projects. It also aims to demonstrate some practical examples that this feature supports.
 
-Now that this feature is available with KoBoToolbox, users can do everything that a [pulldata function](pull_data_kobotoolbox.md) does without having to maintain a separate CSV file. The data stored in the survey project (that the user intends to link) acts as a source file. Users could keep collecting data for their source files and simultaneously use them in another survey project(s). Thus, this feature should help users create and manage a longitudinal survey project _(longitudinal data is collected through a series of repeated observations of the same subjects over a short or long period)_. The best part of this feature is that it also works with a shared project where the project admin could also restrict specific permissions while sharing.
+Dynamically linking projects allows for the same powerful capabilities as the [`pulldata()` function](pull_data_kobotoolbox.md) but without the need to maintain a separate CSV file since the data stored in a linked project acts as the data source. Users can continue collecting data in the _parent project_ and simultaneously use that data in other linked _child projects_, therefore enable creation and management of longitudinal survey projects (longitudinal data is collected through a series of repeated observations of the same subjects over a short or long period). Users can also dynamically link a _child project_ with a __shared__ _parent project_.
 
-Users can now retrieve any information (such as _text_, _integer_, _decimal_, _select_one response_, _select_multiple response_, _GPS points_) to a child project (aka round 2 project) that has already been collected and stored in a parent project (aka round 1 project). However, media information (such as _image_, _audio_, _video_, _uploaded files_, etc.) cannot be retrieved at the moment.
+Users can retrieve any (non-media) responses (`text`, `integer`, `decimal`, `select_one`, `select_multiple`, etc.) in a linked _child project_ (Round 2 in this example) that has already been collected and stored in the _parent project_ (Round 1 in this example).
 
-At the same time, users should also be able to perform various calculations such as counting responses entered and stored in a parent project directly through the child project. Similarly, users are also able to compute the _sum_, _maximum_, or _minimum_ value of a particular variable collected and stored in a parent project directly through a child project.
+Users can also perform [various calculations](advanced_calculate.md) on linked data in the _child project_, such as counting (`count()`) responses and computing the sum (`sum()`), maximum (`max()`), or minimum (`min()`) value of a particular variable.
 
-## Linking a project dynamically through xlsform:
+## Dynamically linking projects in XLSForm
 
-While trying this approach through the xlsform, users will require two xlsform. The first xlsform (also known as <a download href="./_static/files/dynamic_data_attachment/Round_1.xlsx"> parent form or round 1 form</a>) is generally a normal xlsform that we often design. The second xlsform (also known as <a download href="./_static/files/dynamic_data_attachment/Round_2.xlsx"> child form or round 2 form</a>) is slightly different from the first xlsform, especially in two aspects, i.e., it has an xml-external question type, and it also has a calculation column that holds the path to the survey project being linked.
+Dynamically linking projects requires a _parent project_ and at least one _child project_. The <a download class="reference" href="./_static/files/dynamic_data_attachment/Round_1.xlsx">_parent project_</a> requires no additional modification from a normal XLSForm; however, the <a download class="reference" href="./_static/files/dynamic_data_attachment/Round_1.xlsx">_child project_</a> involves adding an `xml-external` question type. All subsequent references to the _parent project_ occur in the `calculation` column using the node path.
 
-Users could design their parent project as shown in the image below:
+Users could design their _parent project_ as shown in the image below:
 
-![image](/images/dynamic_data_attachment/Round_1.png)
+![Round 1](/images/dynamic_data_attachment/Round_1.png)
 
-In the same way, users could design their child project as shown in the image below:
+In the same way, users could design their _child project_ as shown in the image below:
 
-![image](/images/dynamic_data_attachment/Round_2.png)
+![Round 2](/images/dynamic_data_attachment/Round_2.png)
 
-__Note:__ The name used for the _xml-external_ question type in the child project is crucial for linking the project with the parent project. In the above example, it was named survey. You can give it a different name as well _(it can only consist of Latin characters and numbers)_.
+> __Note:__ The name used for the `xml-external` question type in the _child project_ is crucial for linking with the _parent project_. In the above example, it was named "survey", but it can be any name consisting of Latin characters and numbers.
 
-## Understanding the syntax used under the calculation column of the child project:
+## Understanding the syntax used in the `calculation` column of the _child project_
 
-The _survey_ used in all of the syntaxes explained below is the name provided for the _xml-external_ question type as already outlined above. Hence, if you accidentally give a different name (other than _survey_) here, your calculation syntax should be invalid.
+XLSForm Syntax | Description
+--- | ---
+`count(instance('survey')/root/data[P_Enumerator])` | Return the total count of `P_Enumerator` in the _parent project_.
+`count(instance('survey')/root/data[P_Enumerator = current()/../C_Enumerator])` | Return the total count of where `C_Enumerator` in the _child project_ is equal to `P_Enumerator` in the _parent project_.
+`instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Name` | Return `P_Name` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.
+`instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Age` | Return `P_Age` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.
+`instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Sex` | Return `P_Sex` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.
+`instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Family` | Return `P_Family` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.
+`sum(instance('survey')/root/data/P_Demographic/P_Family)` | Return the sum of `P_Family` (`P_Demographic` group) from the _parent project_.
+`max(instance('survey')/root/data/P_Demographic/P_Family)` | Return the maximum value entered in `P_Family` (`P_Demographic` group) from the _parent project_.
+`min(instance('survey')/root/data/P_Demographic/P_Family)` | Return the minimum value entered in `P_Family` (`P_Demographic` group) from the _parent project_.
+`instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Language` | Return `P_Language` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.
+`instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Location` | Return `P_Location` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.
 
-__count(instance('survey')/root/data[P_Enumerator]):__ Will return users the total count of what was entered in P_Enumerator (parent project).
+## Setting up for dynamic linking
 
-__count(instance('survey')/root/data[P_Enumerator = current()/../C_Enumerator]):__ Will return users the total count of what was entered in C_Enumerator (child project) matching/comparing with what was entered in P_Enumerator (parent project).
+Users can link projects dynamically in two scenarios:
+1. The same user owns both the _parent project_ and _child project_, and
+2. Different users own each of the projects and the _parent project_ is shared
 
-__instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Name:__ Will return users the name (text value) that was entered in P_Name (parent project) located under the P_Demographic group (parent project) when the value entered in C_SN (child project) matches the value entered in P_SN (parent project). The output of this syntax yields the exact result that a pull data function yields.
+### 1. Both projects owned by the same user
 
-__instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Age:__ Will return users the age (integer value) that was entered in P_Age (parent project) located under the P_Demographic group (parent project) when the value entered in C_SN (child project) matches the value entered in P_SN (parent project). The output of this syntax yields the exact result that a pull data function yields.
+Follow the steps below to dynamically link projects:
 
-__instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Sex:__ Will return users the sex (select_one choice) that was entered in P_Sex (parent project) located under the P_Demographic group (parent project) when the value entered in C_SN (child project) matches the value entered in P_SN (parent project). The output of this syntax yields the exact result that a pull data function yields.
+__Step 1:__ Upload and deploy the _parent project_.
 
-__instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Family:__ Will return users the family size (integer value) that was entered in P_Family (parent project) located under the P_Demographic group (parent project) when the value entered in C_SN (child project) matches the value entered in P_SN (parent project). The output of this syntax yields the exact result that a pull data function yields.
+<video controls style="width:100%"><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_1_survey).mp4" type="video/mp4"></video>
 
-__sum(instance('survey')/root/data/P_Demographic/P_Family):__ Will return users the total sum of what was entered in P_Family (parent project) located under the P_Demographic group (parent project).
+__Step 2:__ Enable data sharing with _child projects_ by toggling the __Data Sharing__ switch in the _parent project_’s __SETTINGS>Connect Projects__ section (disabled by default), and click __ACKNOWLEDGE AND CONTINUE__ in the confirmation modal. Users can then restrict specific variables to share with _child projects_ or share __all__ variables from the table by toggling the __Select specific questions__ switch.
 
-__max(instance('survey')/root/data/P_Demographic/P_Family):__ Will return users the maximum value of what was entered in P_Family (parent project) located under the P_Demographic group (parent project).
+<video controls style="width:100%"><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_1_survey).mp4" type="video/mp4"></video>
 
-__min(instance('survey')/root/data/P_Demographic/P_Family):__ Will return users the minimum value of what was entered in P_Family (parent project) located under the P_Demographic group (parent project).
+__Step 3:__ Upload and deploy the _child project_.
 
-__instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Language:__ Will return users the language (select_multiple choice) that was entered in P_Language (parent project) located under the P_Demographic group (parent project) when the value entered in C_SN (child project) matches the value entered in P_SN (parent project). The output of this syntax yields the exact result that a pull data function yields.
+<video controls style="width:100%"><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_2_survey).mp4" type="video/mp4"></video>
 
-__instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Location:__ Will return users the GPS location that was entered in P_Location (parent project) located under the P_Demographic group (parent project) when the value entered in C_SN (child project) matches the value entered in P_SN (parent project). The output of this syntax yields the exact result that a pull data function yields.
+__Step 4:__ In the _child project_'s __SETTINGS>Connect Projects__, click the __Select a different project to import data from__ dropdown menu and select a _parent project_ to link. Rename the linked _parent project_ to the same `xml-external` question name defined in the XLSForm ("survey" in this example) and click __IMPORT__. You can then select specific variables from the _parent project_ to share with the _child project_.
 
-## Setting up projects for Dynamic Data Attachment:
+<video controls style="width:100%"><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_2_survey).mp4" type="video/mp4"></video>
 
-A project can be dynamically attached in two different scenarios i.e. when _both the projects i.e. parent project, as well as child project, are owned by the same user_ and when _projects are owned by different users_.
+The _child project_ now has access to data from the _parent project_. In this example, data from the _Round 1 Survey_ is linked to the _Round 2 Survey_.
 
-### Both Projects Owned by the Same User:
+### 2. Projects owned by different users
 
-Once a user has finalized their projects in an xlsform, they will need to do the following to set it up so that they could link them dynamically:
+Assume a scenario where __userA__ has a _parent project_ shared with __userB__. __userB__ can create a _child project_ and link it dynamically with that project. For example:
 
-__Step 1:__ Upload and deploy the parent project.
+__Step 1:__ __userA__ should follow __Step 1__ and __Step 2__ of __Both Projects Owned by Same User__ to _upload_, _deploy_ and _configure_ the _parent project_.
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_1_survey).mp4" type="video/mp4"></video>
+__Step 2:__ __userA__ should then <a class="reference" href="managing_permissions.html" >share the _parent project_ with __userB__</a> and grant the minimum permissions of: _View form_, _Edit form_, _View submissions_, and _Add submissions_. __userB__ can now dynamically link their _child project_ to the _parent project_ of __userA__.
 
-__Step 2:__ Go to the parent project’s __SETTINGS>Connect Projects__. By default, data sharing for a project is disabled. To enable sharing the information with the child project, users will have to toggle the __Data sharing button, changing it to Data Sharing enabled__. Upon pressing the __Data sharing disabled__, users will see a dialogue box. Click __ACKNOWLEDGE AND CONTINUE__. Once the __Data sharing enabled__ button is active, users should be able to __Select specific questions to share__. With this button, users should be able to share or restrict variables with the child project. If you wish to share data from all the variables, you could uncheck __Select specific questions__ to share and proceed.
+__Step 3:__ __userB__ should now _upload_, _deploy_ and _configure_ their _child project_ as outlined in __Step 3__ and __Step 4__ of __Both Projects Owned by Same User__.
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_1_survey).mp4" type="video/mp4"></video>
+## Collecting and managing data with dynamic linking
 
-__Step 3:__ Upload and deploy the child project.
+Users can collect data for dynamically linked projects on both the <a class="reference" href="kobocollect-android.html">__Collect__ Android app</a> and <a class="reference" href="data_through_webforms.html">__Enketo__ web form</a>.
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_2_survey).mp4" type="video/mp4"></video>
+Please note the following when collecting data:
+- At least one submission must be present in the _parent project_ for the _child project_ to function as expected.
+- There is a five-minute delay syncing the _parent project_'s updated data with the _child project_.
+- Frequently download the _child project_ in __Collect__ or __Enketo__ (when in offline mode) to ensure the data is in sync with the _parent project_*
 
-__Step 4:__ Go to the child project’s __SETTINGS>Connect Projects__. Click __Select a different project to import data from__. In the dropdown, you will see the projects that can be linked. __Round 1 Survey__ is listed here because it was made available as outlined in __Step 2__. Once a user selects the available project (_Round 1 Survey_ in my case), a unique name is also provided by the system by default (_round_1_survey_ in my case). Users will now need to be cautious and rename the unique name to the name provided in the _xml-external_ question type while designing the child project. Since I had named it _survey_, I have renamed the unique name from _round_1_survey_ to _survey_. Then press __IMPORT__. Once you press the __IMPORT__ button, you will have an option to share or restrict the variables to your child project.
+\*One can configure the __Collect__ Android app, with an internet connection, to update the _parent project_'s data automatically in __General Settings>Form management>Blank form update mode>Previously downloaded forms only or Exactly match server__. Note that enabling this setting could drain your device's battery faster than usual.
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_2_survey).mp4" type="video/mp4"></video>
+In this example, some "dummy" entries have been made in the _parent project_.
 
-This will now do the magic and link the data from the parent project to the child project. In my case, it will link the data from the _Round 1 Survey_ to the _Round 2 Survey_.
+![Data](/images/dynamic_data_attachment/Server_data.png)
 
-### Projects Owned by Different Users:
+With some dummy entries in the _parent project_, the _child project_ can now see that data during data collection. In this example _child project_ (_Round 2 Survey_), only the two fields of __Enumerators name__ and __Identification Number__ are entered manually while the rest is linked automatically with the _parent project_.
 
-Let’s assume a scenario where __userA__ has a parent project which s/he shares with __userB__. Now that this feature is available, __userB__ should be able to upload a child project from his/her user account and link them dynamically with the parent project shared by __userA__. To achieve this at your end, you could follow the steps outlined below:
-
-__Step 1:__ __userA__ should follow the exact steps as outlined in __Step 1__ and __Step 2__ (__Both Projects Owned by Same User__) to _upload_, _deploy_ and _configure_ the parent project.
-
-__Step 2:__ __userA__ should then share the parent project with userB as outlined in [this support article](managing_permissions.md). While sharing, __userA__ should provide minimum access (_View form_, _Edit form_, _View submissions_, and _Add submissions_) to __userB__ else, __userB__ shall now be able to link the project dynamically as expected.
-
-__Step 3:__ __userB__ will now have to upload, deploy and configure the child project as outlined in __Step 3__ and __Step 4__ (__Both Projects Owned by Same User__).
-
-## Collecting and managing data with Dynamic Data Attachment:
-
-Both __Collect android app__, and __Enketo__ can be used to collect data for this feature. However, please note that users will need to have at least one submission in the _parent project_ for the _child project_ to function as expected. Similarly, please also be informed that the system takes 5 minutes to sync the parent project's information to the child form. Users if using __Collect android app__ or __Enketo__ (as an offline mode), should frequently download the project to ensure the data is up to date in the _parent project_. If users are using __Collect android app__ and are connected to the internet, the __Collect android app__ could also be configured under the __General Settings>Form management>Blank form update mode>Previously downloaded forms only or Exactly match server__ to automatically update the parent project’s information. This setting could however drain your device’s battery. Hence, be cautious when you are in a situation where you don’t have the option to frequently charge your device.
-
-As a workaround, please see the screenshot of my __DATA>Table__ where I have made some dummy entries to the _parent project_.
-
-![image](/images/dynamic_data_attachment/Server_data.png)
-
-As I now have some dummy entries for my _parent project_, I am ready to use my _child project_. Please see the screenshot of a survey form (_Round 2 Survey_ in my case) where I am trying to fill it through __Enketo__. Here, you should be able to observe that I am entering only two fields, __Enumerators name__, and __Identification Number__, and the rest is being linked automatically with the parent project.
-
-![image](/images/dynamic_data_attachment/Enketo.png)
+![Enketo web form](/images/dynamic_data_attachment/Enketo.png)
