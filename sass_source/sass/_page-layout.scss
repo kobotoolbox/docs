@@ -69,6 +69,11 @@ html body {
       vertical-align: middle;
     }
 
+    video {
+      display: block;
+      width: 100%;
+    }
+
     p {
       margin: 0 auto rem(18px);
       font-weight: 300;
