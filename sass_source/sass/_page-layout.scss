@@ -79,6 +79,13 @@ html body {
       font-weight: 300;
     }
 
+    p.note {
+      display: block;
+      border: 2px solid $c_denim;
+      border-radius: 4px;
+      padding: 1em 0.8em;
+    }
+
     p,
     dd,
     li {
