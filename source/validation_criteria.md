@@ -18,11 +18,11 @@ Validation criteria in XLSForm needs to be entered in specific syntax.
 
 ## Example Validation Criteria
 
-Criteria | Description
----|---
-`. > 17` | Response must be greater than 17
-`. >= 18` | Response must be greater than or equal to 18
-`. > 17 and . < 130` | Response must be between 17 and 130
+| Criteria             | Description                                  |
+| ---                  | ---                                          |
+| `. > 17`             | Response must be greater than 17             |
+| `. >= 18`            | Response must be greater than or equal to 18 |
+| `. > 17 and . < 130` | Response must be between 17 and 130          |
 
 <br/>
 
@@ -30,22 +30,22 @@ In the validation criteria syntax,`.` refers to the current question. `${some_qu
 
 __survey__
 
-type | name | label | constraint | constraint_message
----|---|---|---|---
-integer | Q1 | Please enter your work ID | . > 0 and . < 100 | ID cannot be 0 and must be less than 100
-integer | Q2 | Total number of workers | |
-integer | Q3 | Total number of male workers | . <= ${Q2} | Total number of male workers should not exceed the total number of workers!
-integer | Q4 | Total number of female workers | . <= ${Q2} | Total number of female workers should not exceed the total number of workers!
+| type    | name | label                          | constraint        | constraint_message                                                            |
+| ---     | ---  | ---                            | ---               | ---                                                                           |
+| integer | Q1   | Please enter your work ID      | . > 0 and . < 100 | ID cannot be 0 and must be less than 100                                      |
+| integer | Q2   | Total number of workers        |                   |                                                                               |
+| integer | Q3   | Total number of male workers   | . <= ${Q2}        | Total number of male workers should not exceed the total number of workers!   |
+| integer | Q4   | Total number of female workers | . <= ${Q2}        | Total number of female workers should not exceed the total number of workers! |
 
 <br/>
 
 **Examples of More Advanced Validation Criteria**
 
-Criteria | Description
----|---
-`(. >= 18 and . < 130) or (. = 999)` | Response must be between 17 and 130 or be equal to 999. (The code 999 is often used for non-responses.)
-`not(${in_university} = 'yes' and . < 16)` | When answering 'yes' to the question `in_university`, the current response must be greater than 16.
-`not(selected(., 'none') and (selected(., 'chair') or selected(., 'table')))` | Response 'none' can't be combined with the two other options of this `select_multiple` question
+| Criteria                                                                      | Description                                                                                             |
+| ---                                                                           | ---                                                                                                     |
+| `(. >= 18 and . < 130) or (. = 999)`                                          | Response must be between 17 and 130 or be equal to 999. (The code 999 is often used for non-responses.) |
+| `not(${in_university} = 'yes' and . < 16)`                                    | When answering 'yes' to the question `in_university`, the current response must be greater than 16.     |
+| `not(selected(., 'none') and (selected(., 'chair') or selected(., 'table')))` | Response 'none' can't be combined with the two other options of this `select_multiple` question         |
 
 <br/>
 

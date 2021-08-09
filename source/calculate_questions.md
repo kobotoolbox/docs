@@ -18,21 +18,21 @@ There are a lot of different options available, such as the round() function (e.
 
 ## List of available math operators
 
-Operator | Description
---- | ---
-`+` | Addition
-`-` | Subtraction
-`*` | Multiplication
-`div` | Division
-`=` | Equal
-`!=` | Not equal
-`<` | Less than
-`<=` | Less than or equal to
-`>` | Greater than
-`>=` | Greater than or equal to
-`or` | Or
-`and` | And
-`mod` | Modulus (division remainder)
-`pow([base], [power])` | Power / exponent
+| Operator               | Description                  |
+| ---                    | ---                          |
+| `+`                    | Addition                     |
+| `-`                    | Subtraction                  |
+| `*`                    | Multiplication               |
+| `div`                  | Division                     |
+| `=`                    | Equal                        |
+| `!=`                   | Not equal                    |
+| `<`                    | Less than                    |
+| `<=`                   | Less than or equal to        |
+| `>`                    | Greater than                 |
+| `>=`                   | Greater than or equal to     |
+| `or`                   | Or                           |
+| `and`                  | And                          |
+| `mod`                  | Modulus (division remainder) |
+| `pow([base], [power])` | Power / exponent             |
 
 <br/>
