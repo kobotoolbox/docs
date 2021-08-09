@@ -266,4 +266,4 @@ Screen seen while collecting data in Enketo:
 
 ![image](/images/group_repeat/nested_repeat_enketo.png)
 
-<p class="note">You are able to collect data using nested repeats in both [Enketo](data_through_webforms) and [Collect Android app](kobocollect-android). If you are using the Collect Android app, please ensure that you are using the latest version as earlier versions may not support this.</p>
+<p class="note">You are able to collect data using nested repeats in both <a class="reference" href="data_through_webforms.html">Enketo</a> and the <a class="reference" href="kobocollect-android.html">Collect Android app</a>. If you are using Collect, please ensure that you are using the latest version as earlier versions may not support this.</p>
