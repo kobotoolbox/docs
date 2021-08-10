@@ -383,6 +383,7 @@ html body {
   margin: 0 auto;
   padding-top: 2.8125rem;
   padding-bottom: 2.8125rem;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 875px) {
@@ -399,6 +400,7 @@ html body {
   }
   .page.page--has-sidebar .page__content {
     flex: 1;
+    width: 70%;
   }
   .page.page--has-sidebar .page__sidebar {
     width: 30%;
@@ -444,6 +446,12 @@ html body {
   line-height: 0.8em;
   font-size: 0.8em;
   vertical-align: middle;
+}
+
+.page .page__body pre {
+  background-color: #e8e9ed;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
 }
 
 .page .page__body video {

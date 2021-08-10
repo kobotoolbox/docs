@@ -8,6 +8,7 @@ html body {
 
     padding-top: rem(45px);
     padding-bottom: rem(45px);
+    max-width: 100%;
   }
 
   &.page--has-sidebar {
@@ -19,6 +20,7 @@ html body {
 
       .page__content {
         flex: 1;
+        width: 70%;
       }
 
       .page__sidebar {
@@ -67,6 +69,12 @@ html body {
       line-height: 0.8em;
       font-size: 0.8em;
       vertical-align: middle;
+    }
+
+    pre {
+      background-color: $c_solitude;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
     }
 
     video {
