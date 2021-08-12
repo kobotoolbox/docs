@@ -395,12 +395,13 @@ html body {
 
 @media screen and (min-width: 876px) {
   .page.page--has-sidebar .page__wrapper {
+    max-width: 77.5rem;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
   }
   .page.page--has-sidebar .page__content {
     flex: 1;
-    width: 70%;
   }
   .page.page--has-sidebar .page__sidebar {
     width: 30%;
@@ -446,6 +447,10 @@ html body {
   line-height: 0.8em;
   font-size: 0.8em;
   vertical-align: middle;
+}
+
+.page .page__body table {
+  max-width: 100%;
 }
 
 .page .page__body pre {
