@@ -18,6 +18,4 @@ Meta questions are hidden questions that can help you with your analysis later o
 | SIM Serial*    | SIM serial number                                                            |
 | Subscriber ID* | IMSI (International Mobile Subscriber Identity)                              |
 
-<br/>
-
 <p class="note">These meta questions are relevant only to cell phones with a SIM card that have a phone number.</p>

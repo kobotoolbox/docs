@@ -16,16 +16,12 @@ __survey__
 | select_one sex                  | sex    | What is your sex?             |
 | select_one_from_file fruits.csv | fruits | What is your favourite fruit? |
 
-<br/>
-
 __choices__
 
 | list_name | name | label  |
 | ---       | ---  | ---    |
 | sex       | 1    | Male   |
 | sex       | 2    | Female |
-
-<br/>
 
 <p class="note">The <code>fruits.csv</code> is the file name containing the choices for the question "What is your favorite fruit?".</p>
 
@@ -46,8 +42,6 @@ __fruits.csv__
 | fruits    | 9    | Mango       |
 | fruits    | 10   | Blueberry   |
 | fruits    | 11   | Pomegranate |
-
-<br/>
 
 **3.** Upload and deploy the XLSForm in KoBoToolbox.
 

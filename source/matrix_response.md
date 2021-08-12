@@ -41,8 +41,6 @@ __survey__
 | select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |
 | integer          | Q2   | Q2. Number of assets                 | TRUE     |                   |
 
-<br/>
-
 __choices__
 
 | list_name | name | label |
@@ -53,15 +51,11 @@ __choices__
 | yn        | yes  | Yes   |
 | no        | no   | No    |
 
-<br/>
-
 __settings__
 
 | style                        |
 | ---                          |
 | theme-grid no-text-transform |
-
-<br/>
 
 <p class="note">This method uses <code>begin_kobomatrix</code>, <code>end_kobomatrix</code> and <code>kobo—matrix_list</code>.</p>
 

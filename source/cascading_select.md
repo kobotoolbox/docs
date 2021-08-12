@@ -37,8 +37,6 @@ __survey__
 | select_one counties | Q2   | Which county? | state=${Q1}                  |
 | select_ine cities   | Q3   | Which city?   | state=${Q1} and county=${Q2} |
 
-<br/>
-
 2. In the same survey sheet, add a column called `choice_filter` and add the XLSForm reference to each of the parent items.
 
 3. In the choices sheet of the file, add all the options you would like to appear in the different questions, e.g. the lists of states, counties, and cities (follow the above template).
@@ -62,8 +60,6 @@ __choices__
 | cities    | tacoma      | Tacoma      | washington | pierce  |
 | cities    | puyallup    | Puyallup    | washington | pierce  |
 
-<br/>
-
 4. Note that for each of the child elements you need to add a column to specify its parent. For example, King and Pierce counties are in Washington state, so you need to write 'washington' into the 'state' column for these two counties.
 
 6. Save your form. In KoBoToolbox open the main menu and click on Projects. From here you can upload and deploy your form directly, including the newly added cascading select questions.
@@ -80,8 +76,6 @@ __survey__
 | select_multiple brand  | Q1   | Q1. Which brand comes to mind comes to mind when you think about life insurance? |                       |
 | select_multiple brand  | Q2   | Q2. Which branch would you choose for your future life insurance purchase?       | selected(${Q1}, name) |
 
-<br/>
-
 __choices__
 
 | list_name | name | label              |
@@ -96,8 +90,6 @@ __choices__
 | brand     | 8    | Tata AIA Life      |
 | brand     | 9    | ICICI Prudential   |
 | brand     | 10   | PNB Met Life       |
-
-<br/>
 
 Preview the data collecting form in Enketo:
 

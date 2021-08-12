@@ -24,8 +24,6 @@ Validation criteria in XLSForm needs to be entered in specific syntax.
 | `. >= 18`            | Response must be greater than or equal to 18 |
 | `. > 17 and . < 130` | Response must be between 17 and 130          |
 
-<br/>
-
 In the validation criteria syntax,`.` refers to the current question. `${some_question}` refers to the fixed `name` of a question, which needs to be set in the __Question Options__ and then surrounded by `${}`. See below example:
 
 __survey__
@@ -37,8 +35,6 @@ __survey__
 | integer | Q3   | Total number of male workers   | . <= ${Q2}        | Total number of male workers should not exceed the total number of workers!   |
 | integer | Q4   | Total number of female workers | . <= ${Q2}        | Total number of female workers should not exceed the total number of workers! |
 
-<br/>
-
 **Examples of More Advanced Validation Criteria**
 
 | Criteria                                                                      | Description                                                                                             |
@@ -46,7 +42,5 @@ __survey__
 | `(. >= 18 and . < 130) or (. = 999)`                                          | Response must be between 17 and 130 or be equal to 999. (The code 999 is often used for non-responses.) |
 | `not(${in_university} = 'yes' and . < 16)`                                    | When answering 'yes' to the question `in_university`, the current response must be greater than 16.     |
 | `not(selected(., 'none') and (selected(., 'chair') or selected(., 'table')))` | Response 'none' can't be combined with the two other options of this `select_multiple` question         |
-
-<br/>
 
 There are many other combinations possible, including [advanced mathematical calculations](advanced_calculate.md). [See here](https://docs.getodk.org/form-logic/) for more details.

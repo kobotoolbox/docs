@@ -40,8 +40,6 @@ __survey__
 | calculate | ID      |                                        | concat({Q1_C}, '-', {Q2_C}, '-', {Q3_C}, '-', {Q4_C}, '-', ${Q5}) |
 | note      | note_id | Your Unique ID for this form is: ${ID} |                                                                   |
 
-<br/>
-
 When you preview the example in Enketo web forms, the serial number will be presented within the note question as shown in the image below:
 
 ![image](/images/unique_serial_numbers/preview_uniqueid.png)

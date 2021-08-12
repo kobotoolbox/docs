@@ -22,8 +22,6 @@ Regex can also be coded in XLSForm, under the _constraint_ column:
 | ---  | ---  | ---                         | ---        | ---                   | ---                                |
 | text | q1   | Mobile number of respondent | numbers    | regex(., '^[0-9]{10}$')        | This value must be only 10 digits  |
 
-<br/>
-
 Alternatively, you can create a `calculate` question type and then define the regex code under the _calculation_ column. You could then use this variable as many times as needed in the survey:
 
 | type      | name | label                  | calculation                              | constraint      | constraint_message                  |
@@ -32,8 +30,6 @@ Alternatively, you can create a `calculate` question type and then define the re
 | text      | q1   | Name of the Enumerator |                                          | regex(., ${q0}) | Please use this format: Kobe Bryant |
 | text      | q2   | Name of the Respondent |                                          | regex(., ${q0}) | Please use this format: Kobe Bryant |
 | integer   | q3   | Age of the Respondent  |                                          |                 |                                     |
-
-<br/>
 
 #### How do I build the regex that I need?
 
@@ -69,8 +65,6 @@ In addition to the examples and tips provided below, please visit [this website]
 | `{x,}`              | Matches at least `x` consecutive characters (or more).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 | `{x,y}`             | Matches between `x` and `y` consecutive characters.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
-<br/>
-
 #### Examples related to use of numbers
 
 <p class="note">For all <code>text</code> type questions that use numbers, do not forget to type <code>numbers</code> under the <code>appearance</code> column.</p>
@@ -86,8 +80,6 @@ In addition to the examples and tips provided below, please visit [this website]
 | `regex(., '^\d{5}$')`                                                             | Restrict an input to _five digits_ in between `0` to `9`                                                           |
 | `regex(., '^\d{2}\.\d{3}$')`                                                       | Restrict an input to _two digits and three decimals_ (e.g. `12.345`)                                               |
 | `regex(., '^\d{2}(\.\d{3})?$')`                                                   | Restrict an input to _two digits and three decimals_ (while the decimals are optional) (e.g. `12` or `12.345`)     |
-
-<br/>
 
 #### Examples related to use of letters
 
@@ -109,8 +101,6 @@ In addition to the examples and tips provided below, please visit [this website]
 | `regex(., '^\D$')`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Restrict an input to a _non-digit character_ (e.g. `a` or `c` or `!` or `#` or `%` etc.)                                                                                                                                                                                                                                                                                                                                                                                                |
 | `regex(., '^\D{5 }$')`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      | Restrict an input to _five non-digit character_ (e.g. `aZcB!#%` etc.)                                                                                                                                                                                                                                                                                                                                                                                                                   |
 
-<br/>
-
 #### Examples related to use of a combination of letters and numbers
 
 
@@ -123,8 +113,6 @@ In addition to the examples and tips provided below, please visit [this website]
 | <code>regex(., '^[\$&#x7c;\£]\d{3}$')</code>              | Restrict a currency input of _three digits_ with a currency sign (either `dollar` or `pound`) in front (e.g. `$999` or `£500`)                                                                                                                                                                                                                                                                                                  |
 | `regex(., '^\W*(\w+\b\W*){3}$')`                          | Restrict an exact input of number of words (e.g. to restrict exactly 3 words `I love you.`)                                                                                                                                                                                                                                                                                                                                                                        |
 | `regex(., '^\W*(\w+\b\W*){3,5}$')`                        | Restrict an input of number of words (e.g. to restrict a range of words say `3` to `5`)                                                                                                                                                                                                                                                                                                                                                                            |
-
-<br/>
 
 #### Considerations when using regex
 

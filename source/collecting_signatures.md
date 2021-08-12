@@ -22,8 +22,6 @@ __survey__
 | image | draw      | Draw widget      | draw       | Image type with draw appearance  |
 | image | sign      | Signature widget | signature  | Image type with signature widget |
 
-<br/>
-
 [Follow this link](https://enke.to/draw) to test the difference between the draw and signature widgets.
 
 ## Create a Signature question type in the form-builder

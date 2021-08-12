@@ -19,8 +19,6 @@ __survey__
 | audit | audit |                        |
 | text  | Q1    | Q1. What is your name? |
 
-<br/>
-
 2. Collect data using the [Collect Andoid app](kobocollect-android.md) and send the finalized forms back to the server. Collect saves the audit logs for each submission in a CSV file that are saved and uploaded to the server just as an attached photo would be.
 
 3. After the data has been submitted, open your project in the browser and go to __DATA__, then __Downloads__. Select __Media Attachments (ZIP)__ as the export type and then click on __New Export__. Once the download is done pending, click on the file to download it to your computer.

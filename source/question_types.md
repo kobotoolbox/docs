@@ -31,8 +31,6 @@ The below table provides a high-level summary of each of the response types avai
 | hidden                           | A field with no associated UI element which can be used to store a constant                  |
 | xml-external                     | Adds a reference to an external XML data file                                                |
 
-<br/>
-
 For more information on the response types, please visit [xlsform.org](http://xlsform.org/).
 
 Addtional, KoBoToolBox-specific types can also be used from within the form-builder:
@@ -42,8 +40,6 @@ Addtional, KoBoToolBox-specific types can also be used from within the form-buil
 | Rating                     | Compare different items using a common scale                |
 | Ranking                    | Compare a list of different objects to one another          |
 | Question Matrix            | Create a group of questions that display in a matrix format |
-
-<br/>
 
 <p class="note"><a class="reference" href="/calculate_questions.html">Calculate Questions</a> are not displayed in your form, but are executed automatically as your form is being answered.</p>
 

@@ -20,8 +20,6 @@ __survey__
 | geotrace | line  | Record a line                | This question collects two coordinates to form a line                                |
 | geoshape | area  | Record an area               | This question collects GPS coordinates that mark out a closed loop/area in any shape |
 
-<br/>
-
 ## Collecting Data Using the GPS Questions
 
 During data entry the enumerator will see different options for collecting the coordinates, which are dependent on the type of data collection device and approach.

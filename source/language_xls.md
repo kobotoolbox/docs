@@ -24,8 +24,6 @@ __survey__
 | select_one yesno | children_yesno | Do you have any children?      |                           |
 | integer          | children_count | How many children do you have? | ${children_yesno} = 'yes' |
 
-<br/>
-
 * Now add your translations for every row inside the `label::language (code)` column. When you are done, make sure you didn't skip any questions (for every field that has text inside the label column there should be text inside the `label::language (code)` column). You can find the official 2-character language codes (subtags) [here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
 <p class="note">Tip: Copy-paste the original label column and then make changes to the translations so you don't leave anything blank by accident: It's better to have something showing in the wrong language than not having a blank question in some language. <em>You can repeat this step and add as many languages as you like, each in their separate columns and with a different name inside <code>label::language (code)</code>.</em></p>
@@ -38,8 +36,6 @@ __survey__
 | select_one yesno | children_yesno | Do you have any children?      | Avez-vous des enfants?         |                           |
 | integer          | children_count | How many children do you have? | Combien des enfants avez-vous? | ${children_yesno} = 'yes' |
 
-<br/>
-
 * Now switch to the __choices__ sheet of your file, if you have one.
 
 * In the __choices__ sheet you have another column called `label`. Repeat steps 5 and 6. Make sure that you use the exact same spelling for `label::language (code)`. For example, `label::Francais (fr)` and `label::Français (fr)` are not identical.
@@ -51,8 +47,6 @@ __choices__
 | yesno     | yes  | Yes                 | Oui                  |
 | yesno     | no   | No                  | Non                  |
 
-<br/>
-
 * In the __settings__ sheet, underneath `form_title` edit the text of your form's title to something like "My form (English and French)" so you can easily identify it later.
 
 __settings__
@@ -60,8 +54,6 @@ __settings__
 | form_title                   |
 | ---                          |
 | My form (English and French) |
-
-<br/>
 
 * Save your file and close Excel.
 

@@ -82,16 +82,12 @@ __survey__
 | text           | Hobby | Hobby                       |            |
 | end_group      |       |                             |            |
 
-<br/>
-
 __choices__
 
 | list_name | name | label  |
 | ---       | ---  | ---    |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
-
-<br/>
 
 #### Ungrouping a set of questions
 
@@ -133,8 +129,6 @@ __survey__
 | text           | Hobby | Hobby                                                  |             |
 | end_group      |       |                                                        |             |
 
-<br/>
-
 __choices__
 
 | list_name | name | label  |
@@ -143,8 +137,6 @@ __choices__
 | Q1        | 2    | No     |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
-
-<br/>
 
 #### Creating a roster (repeating group of questions)
 
@@ -174,16 +166,12 @@ __survey__
 | text           | Hobby | Hobby                                                   |              |
 | end_repeat     |       |                                                         |              |
 
-<br/>
-
 __choices__
 
 | list_name | name | label  |
 | ---       | ---  | ---    |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
-
-<br/>
 
 <p class="note">Instead of having an indefinite number of repeat group iterations, this method will control the number of iterations based on the value in the <code>repeat_count</code> column.</p>
 
@@ -208,8 +196,6 @@ __survey__
 | select_one edu_level | edu_level         | What is ${name_individual}'s level of education |                                              |                 |
 | end_repeat           |                   |                                                 |                                              |                 |
 
-<br/>
-
 __choices__
 
 | list_name | name | label                    |
@@ -219,8 +205,6 @@ __choices__
 | edu_level | 1    | Primary                  |
 | edu_level | 2    | Secondary                |
 | edu_level | 3    | Higher Secondary & Above |
-
-<br/>
 
 Screen seen while [collecting data in Enketo](data_through_webforms.md):
 
@@ -251,16 +235,12 @@ __survey__
 | end_repeat           |                                     |                                                 |                                              |                 |
 | end_repeat           |                                     |                                                 |                                              |                 |
 
-<br/>
-
 __choices__
 
 | list_name | name | label  |
 | ---       | ---  | ---    |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
-
-<br/>
 
 Screen seen while collecting data in Enketo:
 

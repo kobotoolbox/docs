@@ -453,6 +453,10 @@ html body {
   margin-left: 1.5em;
 }
 
+.page .page__body table {
+  margin-bottom: 1.5em;
+}
+
 .page .page__body pre {
   background-color: #e8e9ed;
   padding-top: 1.5em;
