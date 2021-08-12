@@ -103,17 +103,181 @@
 <p>If using cascading lists, please <a class="reference internal" href="cascading_select.html"><span class="doc">follow the instructions</span></a> for cascading selects.</p>
 <p>Normally, only the “Name” and NOT the “Label” will appear in your exported Excel file, which means that only the P-code OR the name of the location will appear.</p>
 <p>In order to get <strong>both P-code and name</strong> as part of your exported data, do the following:</p>
-<ol>
+<ol class="simple">
 <li><p>In all “Name” columns of your exported form, use the P-code of the location</p></li>
 <li><p>In all “Label’ columns of your exported form, use the name of the location</p></li>
-<li><p>For each Admin level you use, add a question with type “calculate”, using the syntax:</p>
-<p><code class="docutils literal notranslate"><span class="pre">if(string-length(${name_of_pcode_column})</span> <span class="pre">!=</span>&#160; <span class="pre">0,jr:choice-name(${name_of_pcode_column},'${name_of_pcode_column}'),'(unspecified</span>&#160; <span class="pre">name_of_pcode_column)')</span></code></p>
-<p>This formula will extract the “Label” (i.e. the name of the location) of the entry, and you will in your exported results get both the name and the p-code.</p>
-</li>
+<li><p>For each Admin level you use, add a question with type “calculate”, using the syntax:</p></li>
 </ol>
-<p><strong>Example with 3 admin levels, using cascading lists</strong></p>
-<p><img alt="image" src="_images/example_1.png" /></p>
-<p><img alt="image" src="_images/example_2.png" /></p>
+<p><code class="docutils literal notranslate"><span class="pre">if(string-length(${name_of_pcode_column})</span> <span class="pre">!=</span>&#160; <span class="pre">0,jr:choice-name(${name_of_pcode_column},'${name_of_pcode_column}'),'(unspecified</span>&#160; <span class="pre">name_of_pcode_column)')</span></code></p>
+<p class="note">This formula will extract the "Label" (i.e. the name of the location) of the entry, and you will in your exported results get both the name and the p-code.</p><section id="example-with-3-admin-levels-using-cascading-lists">
+<h2>Example with 3 admin levels, using cascading lists<a class="headerlink" href="#example-with-3-admin-levels-using-cascading-lists" title="Permalink to this headline">¶</a></h2>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>choice_filter</th>
+<th>calculation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>select_one admin1</td>
+<td>pcode_admin1</td>
+<td>Admin 1</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>select_one admin2</td>
+<td>pcode_admin2</td>
+<td>Admin 2</td>
+<td>state=${pcode_admin1}</td>
+<td></td>
+</tr>
+<tr>
+<td>select_one admin3</td>
+<td>pcode_admin3</td>
+<td>Admin 3</td>
+<td>state=${pcode_admin1} and county=${pcode_admin2}</td>
+<td></td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>name_admin1</td>
+<td></td>
+<td></td>
+<td>if(string-length(${pcode_admin1}) != 0, jr:choice-name(${pcode_admin1}, '${pcode_admin1}'), '(unspecified pcode_admin1)')</td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>name_admin2</td>
+<td></td>
+<td></td>
+<td>if(string-length(${pcode_admin2}) != 0, jr:choice-name(${pcode_admin2}, '${pcode_admin2}'), '(unspecified pcode_admin2)')</td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>name_admin3</td>
+<td></td>
+<td></td>
+<td>if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, '${pcode_admin3}'), '(unspecified pcode_admin3)')</td>
+</tr>
+</tbody>
+</table><p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+<th>state</th>
+<th>county</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>admin1</td>
+<td>11</td>
+<td>Texas</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>admin1</td>
+<td>12</td>
+<td>Washington</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>admin2</td>
+<td>13</td>
+<td>King</td>
+<td>11</td>
+<td></td>
+</tr>
+<tr>
+<td>admin2</td>
+<td>14</td>
+<td>Pierce</td>
+<td>11</td>
+<td></td>
+</tr>
+<tr>
+<td>admin2</td>
+<td>15</td>
+<td>Puyallup</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr>
+<td>admin2</td>
+<td>16</td>
+<td>Cameron</td>
+<td>12</td>
+<td></td>
+</tr>
+<tr>
+<td>admin3</td>
+<td>17</td>
+<td>Dumont</td>
+<td>11</td>
+<td>13</td>
+</tr>
+<tr>
+<td>admin3</td>
+<td>18</td>
+<td>Finney</td>
+<td>11</td>
+<td>13</td>
+</tr>
+<tr>
+<td>admin3</td>
+<td>19</td>
+<td>Brownsville</td>
+<td>11</td>
+<td>14</td>
+</tr>
+<tr>
+<td>admin3</td>
+<td>20</td>
+<td>Harlingen</td>
+<td>11</td>
+<td>14</td>
+</tr>
+<tr>
+<td>admin3</td>
+<td>21</td>
+<td>Seattle</td>
+<td>12</td>
+<td>15</td>
+</tr>
+<tr>
+<td>admin3</td>
+<td>22</td>
+<td>Redmond</td>
+<td>12</td>
+<td>15</td>
+</tr>
+<tr>
+<td>admin3</td>
+<td>23</td>
+<td>Tacoma</td>
+<td>12</td>
+<td>16</td>
+</tr>
+<tr>
+<td>admin3</td>
+<td>24</td>
+<td>King</td>
+<td>12</td>
+<td>16</td>
+</tr>
+</tbody>
+</table></section>
 </section>
 
 
@@ -175,7 +339,10 @@
 <li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Including P-Codes in the Output Data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Including P-Codes in the Output Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#example-with-3-admin-levels-using-cascading-lists">Example with 3 admin levels, using cascading lists</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Creating Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data Functionality in KoBoToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>

@@ -101,10 +101,8 @@
   <section id="adding-cascading-select-questions">
 <h1>Adding Cascading Select Questions<a class="headerlink" href="#adding-cascading-select-questions" title="Permalink to this headline">¶</a></h1>
 <p>Cascading select questions are sets of questions whose options depend on the response to a previous question. For example, your form may first ask the region where a respondent is from, and then in the next question list only the towns and villages of that region.</p>
-<p>Adding sets of cascading select questions to your form can be done by importing them to a draft form in the formbuilder or adding them manually to an XLS Form and then uploading that file.</p>
-<section id="importing-cascading-question-sets-in-the-formbuilder">
-<h2>Importing cascading question sets in the formbuilder<a class="headerlink" href="#importing-cascading-question-sets-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
-<p><em>(Note: This is only available in the new version of KoBoToolbox)</em></p>
+<p class="note">Adding sets of cascading select questions to your form can be done by importing them to a draft form in the form-builder or adding them manually to an XLS Form and then uploading that file.</p><section id="importing-cascading-question-sets-in-the-form-builder">
+<h2>Importing cascading question sets in the form-builder<a class="headerlink" href="#importing-cascading-question-sets-in-the-form-builder" title="Permalink to this headline">¶</a></h2>
 <ol>
 <li><p>Open Excel or another spreadsheet program and <a class="reference external" href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit#gid=0">follow this template as an example</a> to create your template of questions and responses to be added.</p>
 <p><img alt="image" src="_images/template.png" /></p>
@@ -119,35 +117,252 @@
 </li>
 </ol>
 </section>
-<section id="adding-cascading-question-sets-in-xls-form-option-1">
-<h2>Adding cascading question sets in XLS Form (Option 1)<a class="headerlink" href="#adding-cascading-question-sets-in-xls-form-option-1" title="Permalink to this headline">¶</a></h2>
+<section id="adding-cascading-question-sets-in-xlsform-option-1">
+<h2>Adding cascading question sets in XLSForm (Option 1)<a class="headerlink" href="#adding-cascading-question-sets-in-xlsform-option-1" title="Permalink to this headline">¶</a></h2>
 <p>(If you have an existing form, download it as XLS to your computer and open it in Excel or another spreadsheet program).</p>
-<ol>
-<li><p>In the survey sheet, add new lines for the questions you’d like to add, following <a class="reference external" href="https://docs.google.com/spreadsheets/d/10gpBV6YaYGx1i367hyW-w1Ms9tkUQnCx0V8YsdwYxmk/edit#gid=0">this template</a>.</p>
-<p><img alt="image" src="_images/survey.png" /></p>
-</li>
+<ol class="simple">
+<li><p>In the survey sheet, add new lines for the questions you’d like to add, following <a class="reference external" href="https://docs.google.com/spreadsheets/d/10gpBV6YaYGx1i367hyW-w1Ms9tkUQnCx0V8YsdwYxmk/edit#gid=0">this template</a>.</p></li>
+</ol>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>choice_filter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>select_one states</td>
+<td>Q1</td>
+<td>Which state?</td>
+<td></td>
+</tr>
+<tr>
+<td>select_one counties</td>
+<td>Q2</td>
+<td>Which county?</td>
+<td>state=${Q1}</td>
+</tr>
+<tr>
+<td>select_ine cities</td>
+<td>Q3</td>
+<td>Which city?</td>
+<td>state=${Q1} and county=${Q2}</td>
+</tr>
+</tbody>
+</table><ol class="simple">
 <li><p>In the same survey sheet, add a column called <code class="docutils literal notranslate"><span class="pre">choice_filter</span></code> and add the XLSForm reference to each of the parent items.</p></li>
-<li><p>In the choices sheet of the file, add all the options you would like to appear in the different questions, e.g. the lists of states, counties, and cities (follow the above template).</p>
-<p><img alt="image" src="_images/choices.png" /></p>
-</li>
+<li><p>In the choices sheet of the file, add all the options you would like to appear in the different questions, e.g. the lists of states, counties, and cities (follow the above template).</p></li>
+</ol>
+<p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+<th>state</th>
+<th>county</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>states</td>
+<td>texas</td>
+<td>Texas</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>states</td>
+<td>washington</td>
+<td>Washington</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>counties</td>
+<td>king</td>
+<td>King</td>
+<td>washington</td>
+<td></td>
+</tr>
+<tr>
+<td>counties</td>
+<td>pierce</td>
+<td>Pierce</td>
+<td>washington</td>
+<td></td>
+</tr>
+<tr>
+<td>counties</td>
+<td>king</td>
+<td>King</td>
+<td>texas</td>
+<td></td>
+</tr>
+<tr>
+<td>counties</td>
+<td>cameron</td>
+<td>Cameron</td>
+<td>texas</td>
+<td></td>
+</tr>
+<tr>
+<td>cities</td>
+<td>dumont</td>
+<td>Dumont</td>
+<td>texas</td>
+<td>king</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>finney</td>
+<td>Finney</td>
+<td>texas</td>
+<td>king</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>brownsville</td>
+<td>Brownsville</td>
+<td>texas</td>
+<td>cameron</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>harlingen</td>
+<td>Harlingen</td>
+<td>texas</td>
+<td>cameron</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>seattle</td>
+<td>Seattle</td>
+<td>washington</td>
+<td>king</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>redmond</td>
+<td>Redmond</td>
+<td>washington</td>
+<td>king</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>tacoma</td>
+<td>Tacoma</td>
+<td>washington</td>
+<td>pierce</td>
+</tr>
+<tr>
+<td>cities</td>
+<td>puyallup</td>
+<td>Puyallup</td>
+<td>washington</td>
+<td>pierce</td>
+</tr>
+</tbody>
+</table><ol class="simple">
 <li><p>Note that for each of the child elements you need to add a column to specify its parent. For example, King and Pierce counties are in Washington state, so you need to write ‘washington’ into the ‘state’ column for these two counties.</p></li>
 <li><p>Save your form. In KoBoToolbox open the main menu and click on Projects. From here you can upload and deploy your form directly, including the newly added cascading select questions.</p></li>
 </ol>
 </section>
-<section id="adding-cascading-question-sets-in-xls-form-option-2">
-<h2>Adding cascading question sets in XLS Form (Option 2)<a class="headerlink" href="#adding-cascading-question-sets-in-xls-form-option-2" title="Permalink to this headline">¶</a></h2>
+<section id="adding-cascading-question-sets-in-xlsform-option-2">
+<h2>Adding cascading question sets in XLSForm (Option 2)<a class="headerlink" href="#adding-cascading-question-sets-in-xlsform-option-2" title="Permalink to this headline">¶</a></h2>
 <p>Sometimes a researcher wishes to limit the choices of one question based on the responses from a previous question. For this one could do the following:</p>
-<ol>
-<li><p>In the survey tab of the xlsform:</p>
-<p><img alt="image" src="_images/survey_1.png" /></p>
-</li>
-<li><p>In the choices tab of the xlsform:</p>
-<p><img alt="image" src="_images/choices_1.png" /></p>
-</li>
-<li><p>Preview the data collecting form in Enketo:</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>choice_filter</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>select_multiple brand</td>
+<td>Q1</td>
+<td>Q1. Which brand comes to mind comes to mind when you think about life insurance?</td>
+<td></td>
+</tr>
+<tr>
+<td>select_multiple brand</td>
+<td>Q2</td>
+<td>Q2. Which branch would you choose for your future life insurance purchase?</td>
+<td>selected(${Q1}, name)</td>
+</tr>
+</tbody>
+</table><p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>brand</td>
+<td>1</td>
+<td>Bajaj Allianz Life</td>
+</tr>
+<tr>
+<td>brand</td>
+<td>2</td>
+<td>HDFC Life</td>
+</tr>
+<tr>
+<td>brand</td>
+<td>3</td>
+<td>Kotak Life</td>
+</tr>
+<tr>
+<td>brand</td>
+<td>4</td>
+<td>LIC</td>
+</tr>
+<tr>
+<td>brand</td>
+<td>5</td>
+<td>Max Life</td>
+</tr>
+<tr>
+<td>brand</td>
+<td>6</td>
+<td>Aegon</td>
+</tr>
+<tr>
+<td>brand</td>
+<td>7</td>
+<td>SBI Life</td>
+</tr>
+<tr>
+<td>brand</td>
+<td>8</td>
+<td>Tata AIA Life</td>
+</tr>
+<tr>
+<td>brand</td>
+<td>9</td>
+<td>ICICI Prudential</td>
+</tr>
+<tr>
+<td>brand</td>
+<td>10</td>
+<td>PNB Met Life</td>
+</tr>
+</tbody>
+</table><p>Preview the data collecting form in Enketo:</p>
 <p><img alt="image" src="_images/preview.png" /></p>
-</li>
-</ol>
 <p>As seen above, you will be able to restrict the choices in the second question based on the choices you entered in the first question.</p>
 </section>
 </section>
@@ -209,9 +424,9 @@
 <li class="toctree-l1"><a class="reference internal" href="media.html">Adding Various Types of Media</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Adding Cascading Select Questions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#importing-cascading-question-sets-in-the-formbuilder">Importing cascading question sets in the formbuilder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-cascading-question-sets-in-xls-form-option-1">Adding cascading question sets in XLS Form (Option 1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-cascading-question-sets-in-xls-form-option-2">Adding cascading question sets in XLS Form (Option 2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importing-cascading-question-sets-in-the-form-builder">Importing cascading question sets in the form-builder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-cascading-question-sets-in-xlsform-option-1">Adding cascading question sets in XLSForm (Option 1)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-cascading-question-sets-in-xlsform-option-2">Adding cascading question sets in XLSForm (Option 2)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>

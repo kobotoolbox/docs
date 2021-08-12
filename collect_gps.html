@@ -103,16 +103,45 @@
 <p>Location coordinates can be collected easily in all forms with the ‘GPS’ response types.</p>
 <section id="creating-the-different-types-of-gps-questions">
 <h2>Creating the Different Types of GPS Questions<a class="headerlink" href="#creating-the-different-types-of-gps-questions" title="Permalink to this headline">¶</a></h2>
-<p>To collect a GPS coordinate during the data collection process simply add a GPS question to your form. There are three types of GPS questions: <strong>Point</strong>, <strong>Line</strong> and <strong>Area</strong></p>
-<ul>
-<li><p>When using the <strong>form builder</strong> these question types can be found when one taps the add question button as illustrated below.</p>
-<p><img alt="image" src="_images/form_builder.jpg" /></p>
-</li>
-<li><p>When using <strong>XLSForm</strong> design, you have to define the question types as below to get the question you desire.</p>
-<p><img alt="image" src="_images/xls4.png" /></p>
-</li>
+<p>To collect GPS coordinates during the data collection process simply add a GPS question to your form. There are three types of GPS questions: <strong>Point</strong>, <strong>Line</strong> and <strong>Area</strong></p>
+<ul class="simple">
+<li><p>When using the <strong>form builder</strong> these question types can be found when one clicks the add question button as illustrated below.</p></li>
 </ul>
-</section>
+<p><img alt="image" src="_images/form_builder.jpg" /></p>
+<ul class="simple">
+<li><p>When using <strong>XLSForm</strong> design, you have to define the question types as below to get the question you desire.</p></li>
+</ul>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>hint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>geopoint</td>
+<td>point</td>
+<td>Record your current location</td>
+<td>This question collects a single GPS coordinate that denotes a single point</td>
+</tr>
+<tr>
+<td>geotrace</td>
+<td>line</td>
+<td>Record a line</td>
+<td>This question collects two coordinates to form a line</td>
+</tr>
+<tr>
+<td>geoshape</td>
+<td>area</td>
+<td>Record an area</td>
+<td>This question collects GPS coordinates that mark out a closed loop/area in any shape</td>
+</tr>
+</tbody>
+</table></section>
 <section id="collecting-data-using-the-gps-questions">
 <h2>Collecting Data Using the GPS Questions<a class="headerlink" href="#collecting-data-using-the-gps-questions" title="Permalink to this headline">¶</a></h2>
 <p>During data entry the enumerator will see different options for collecting the coordinates, which are dependent on the type of data collection device and approach.</p>
@@ -131,27 +160,28 @@
 <h2>Collecting Data Using KoBoCollect<a class="headerlink" href="#collecting-data-using-kobocollect" title="Permalink to this headline">¶</a></h2>
 <p>The interviewer will see various options depending on the GPS question type</p>
 <p><strong>1. Single GPS point coordinate</strong></p>
-<ul>
-<li><p>The enumerator will see this screen which they can tap on the Start GeoPoint.</p>
+<ul class="simple">
+<li><p>The enumerator will see this screen which they can tap on the Start GeoPoint.</p></li>
+</ul>
 <p><img alt="image" src="_images/geopoint.jpg" /></p>
-</li>
-<li><p>If enumerators taps the Start Geopoint they will see the location loading and the accuracy achieved. If the question had not been set to pick a specific accuracy level, it will wait for the enumerator to save the GeoPoint as illustrated below.</p>
+<ul class="simple">
+<li><p>If enumerators taps the Start Geopoint they will see the location loading and the accuracy achieved. If the question had not been set to pick a specific accuracy level, it will wait for the enumerator to save the GeoPoint as illustrated below.</p></li>
+</ul>
 <p><img alt="image" src="_images/autopoint.jpg" /></p>
-</li>
-</ul>
 <p><strong>2. GPS Line</strong></p>
-<ul>
-<li><p>The enumerators will see the following option for the line question.</p>
-<p><img alt="image" src="_images/line.jpg" /></p>
-</li>
-<li><p>If they tap the Start GeoTrace button they will see an option to either collect the trace manually or automatically as shown below.</p>
-<p><img alt="image" src="_images/trace_mode.jpg" /></p>
-</li>
-<li><p>If the enumerators select manual mode for collecting data then they will be able to select the points manually by pressing the points on the map. The enumerator will have to select at least two coordinates to make a line trace.</p></li>
-<li><p>If the enumerators select the automatic mode, then they will see an option for how long the system should take before collecting different points as shown in the figure below.</p>
-<p><img alt="image" src="_images/automodes.jpg" /></p>
-</li>
+<ul class="simple">
+<li><p>The enumerators will see the following option for the line question.</p></li>
 </ul>
+<p><img alt="image" src="_images/line.jpg" /></p>
+<ul class="simple">
+<li><p>If they tap the Start GeoTrace button they will see an option to either collect the trace manually or automatically as shown below.</p></li>
+</ul>
+<p><img alt="image" src="_images/trace_mode.jpg" /></p>
+<ul class="simple">
+<li><p>If the enumerators select manual mode for collecting data then they will be able to select the points manually by pressing the points on the map. The enumerator will have to select at least two coordinates to make a line trace.</p></li>
+<li><p>If the enumerators select the automatic mode, then they will see an option for how long the system should take before collecting different points as shown in the figure below.</p></li>
+</ul>
+<p><img alt="image" src="_images/automodes.jpg" /></p>
 <p><strong>3. GPS Area</strong></p>
 <p>The GPS area allows you to manually collect GPS area based on manual mode by pressing the map to select the points that create the polygon; the enumerators would need to collect at least three points to create a polygon.</p>
 </section>
@@ -174,13 +204,12 @@
 <li><p>Get an initial GPS location at the beginning of the day before starting to collect points in the field</p></li>
 <li><p>Enable A-GPS (data-network assisted) on your device</p></li>
 </ul>
-<p><em>Note: GPS in this context does not exclusively refer to the Global Positioning System but also to other satellite navigation systems used by mobile devices, such as GLONASS.</em></p>
-</section>
+<p class="note">GPS in this context does not exclusively refer to the <a class="reference" href="https://en.wikipedia.org/wiki/Global_Positioning_System">Global Positioning System</a> but also to other satellite navigation systems used by mobile devices, such as <a class="reference" href="https://en.wikipedia.org/wiki/GLONASS">GLONASS</a>.</p></section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
 <p>If you are unable to get a GPS location with the GPS response type, please check these options:</p>
 <ul class="simple">
-<li><p>Check the location settings on your device to ensure GPS is enabled</p></li>
+<li><p>Location settings on your device to ensure GPS is enabled</p></li>
 <li><p>Install a free app that uses GPS to see if you can get a GPS location that way (e.g. <a class="reference external" href="https://play.google.com/store/apps/details?id=com.eclipsim.gpsstatus2">GPS Status for Android</a> or <a class="reference external" href="https://apps.apple.com/ca/app/gps-status/id378085995">GPS Status for iPhones</a></p></li>
 <li><p>Check your phone settings/manufacturer manual to see if the device has GPS available</p></li>
 <li><p>If your collected GPS points are pointing to the wrong location, it’s possible your device is set to collecting its location from a network tower that was bought second hand and has not properly been reset with the new hard-coded location. You can avoid this issue by turning off network location as an option within the Android system settings, forcing Collect to wait for the actual GPS location.</p></li>

@@ -100,14 +100,122 @@
           
   <section id="overview-on-data-collection-tools">
 <h1>Overview on Data Collection Tools<a class="headerlink" href="#overview-on-data-collection-tools" title="Permalink to this headline">¶</a></h1>
-<p>KoBoToolbox allows data collection in multiple ways. Because KoBoToolbox is built on the Xform/ODK technology, our forms are compatible with a number of different tools that can be used for data collection.</p>
-<p>For Android devices, we recommend using <a class="reference external" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android&amp;hl=en_US">KoBoCollect</a> app, which can be downloaded from the Google Play Store and installed on any standard Android phone or tablet. (Note: Unfortunately, KoBoCollect app is currently unavailable on Apple App Store. )</p>
-<p>For any other devices (including iPhones, iPads, or any laptop or computer), we recommend using the webform (Enketo) for collecting data.</p>
+<p>KoBoToolbox allows data collection in multiple ways. Because KoBoToolbox is built on the <a class="reference external" href="https://xlsform.org">Xform/ODK standards</a>, our forms are compatible with <a class="reference external" href="https://xlsform.org/en/#tools-that-support-xlsforms">a number of different tools</a> that can be used for data collection.</p>
+<p>For Android devices, we recommend using <a class="reference external" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android&amp;hl=en_US">Collect Andoid app</a> app, which can be downloaded from the Google Play Store and installed on any standard Android phone or tablet.</p>
+<p>For any other devices (including iPhones, iPads, or any laptop or computer), we recommend using the webform <a class="reference internal" href="data_through_webforms.html"><span class="doc">for collecting data</span></a>.</p>
 <section id="a-quick-rundown-on-the-differences-between-the-two-options">
 <h2>A quick rundown on the differences between the two options<a class="headerlink" href="#a-quick-rundown-on-the-differences-between-the-two-options" title="Permalink to this headline">¶</a></h2>
-<p>Based on your needs, you can either use KoBoCollect or the Web Forms.</p>
-<p><img alt="image" src="_images/overview.png" /></p>
-<section id="collecting-data-using-kobocollect">
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>&nbsp;</th>
+<th>Webforms</th>
+<th>KoBoCollect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Devices</td>
+<td>Any mobile device or computer</td>
+<td>Android only</td>
+</tr>
+<tr>
+<td>Runs in...</td>
+<td>Browser</td>
+<td>Native Android application</td>
+</tr>
+<tr>
+<td>Configurable</td>
+<td>Server-wide</td>
+<td>On each device</td>
+</tr>
+<tr>
+<td>Default form display</td>
+<td>All questions on the same screen</td>
+<td>One question per screen</td>
+</tr>
+<tr>
+<td>Data upload</td>
+<td>Automatically when connection available</td>
+<td>On user request or immediately if connection available</td>
+</tr>
+<tr>
+<td>Phone-specific meta-questions (<code>subscriberid</code>, <code>simserial</code>, <code>phonenumber</code>)</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>barcode</code> question type</td>
+<td>No (except manual entry)</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Different form styles</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Encryption</td>
+<td>Not for storage, but always during transfer</td>
+<td>Can be enabled on-device, always during transfer</td>
+</tr>
+<tr>
+<td><code>hide-input</code> appearance for maps to hide manual GPS inputs</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Advanced map appearance options (<code>streets</code>, <code>terrain</code>, <code>satellite</code>, <code>[other]</code>)</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Text formatting in notes and labels (bold, italics, links)</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Combine subsequent notes into a single note on the screen</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>multiline</code> appearance for <code>text</code> questions</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>horizontal-compact</code> appearance for select-type questions</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>likert</code> scale appearance for select-type questions</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td><code>compact-2</code> appearance for select-type questions</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td><code>no-calendar</code> appearance</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Advanced image appearances (<code>annotate</code>, <code>draw</code>, <code>signature</code>)</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Calculation command <code>repeat_count()</code></td>
+<td>Set a minimum number of repeat groups</td>
+<td>Set an exact number of repeat groups</td>
+</tr>
+</tbody>
+</table><section id="collecting-data-using-kobocollect">
 <h3>Collecting data using KoBoCollect<a class="headerlink" href="#collecting-data-using-kobocollect" title="Permalink to this headline">¶</a></h3>
 <p>After deploying a project, you can go to <strong>Form - Collect data</strong>, and then select the Android application.</p>
 <p><img alt="image" src="_images/KoboCollect.gif" /></p>
@@ -115,10 +223,8 @@
 </section>
 <section id="collecting-data-using-the-enketo-webform">
 <h3>Collecting Data using the Enketo Webform<a class="headerlink" href="#collecting-data-using-the-enketo-webform" title="Permalink to this headline">¶</a></h3>
-<p>To use the webform, after deploying a project, you can go to <strong>Form - Collect data</strong>, multiple options (online or offline, single or multiple submissions) are available. The default option is <strong>Online-Offline (multiple submission)</strong>.</p>
+<p>To <a class="reference internal" href="data_through_webforms.html"><span class="doc">use the webform</span></a>, after deploying a project, you can go to <strong>Form - Collect data</strong>, multiple options (online or offline, single or multiple submissions) are available. The default option is <strong>Online-Offline (multiple submission)</strong>.</p>
 <p><img alt="image" src="_images/Webform.gif" /></p>
-<p>Web Forms, also known as Enketo, are used by KoBoToolbox to preview your forms and to enter data directly on your computer. But you can use web forms also for collecting data on your mobile devices - even if you’re offline at the time of data collection. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device.</p>
-<p>For details on how to use Web Forms (Enketo), <a class="reference internal" href="data_through_webforms.html"><span class="doc">read this article</span></a>.</p>
 </section>
 </section>
 </section>

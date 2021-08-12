@@ -100,184 +100,565 @@
           
   <section id="grouping-questions-and-repeating-groups">
 <h1>Grouping Questions and Repeating Groups<a class="headerlink" href="#grouping-questions-and-repeating-groups" title="Permalink to this headline">¶</a></h1>
-<p>KoBoToolbox supports grouping a set/number of questions while designing a survey form. Users may need to group questions due to various reasons. Some maybe as follows:</p>
+<p>KoBoToolbox supports grouping questions when designing a survey form. Users may need to group questions due to various reasons:</p>
 <ul class="simple">
-<li><p><strong>To make the questionnaire systematic:</strong> Grouping a set of questions makes a questionnaire systematic (e.g. you could group your questions that have special linkage or attributes as Identifier, Section A, Section I or so on).</p></li>
-<li><p><strong>To display a set of questions in a screen:</strong> It’s possible to display a set of questions together on a screen during data collection if (and only if) you have grouped a set of questions. However, this may not be applicable if you are collecting data using Enketo.</p></li>
-<li><p><strong>To skip a group of questions:</strong> Adding a skip to a group could save your time rather than adding skip logics to all the questions individually. This should also keep your survey tool neat and clean.</p></li>
-<li><p><strong>To create roster questions:</strong> Grouping is a must if you wish to create a roster where you wish to repeat a group of questions (e.g. a household roster is a set of questions if you wish to collect information from all the household members dwelling under a same roof).</p></li>
+<li><p><strong>Make the questionnaire systematic:</strong> You could group your questions that have special linkage or attributes as Identifier, Section A, Section I, etc.</p></li>
+<li><p><strong>Display a set of questions per page:</strong> Grouped questions can be displayed on separate pages (or screens) during data collection.</p></li>
+<li><p><strong>Skip a group of questions:</strong> Rather than adding the same skip logic to each individual question, group the questions and add the skip logic to the group instead.</p></li>
+<li><p><strong>Create a roster:</strong> Repeat grouped questions for household surveys, etc.</p></li>
 </ul>
 <section id="grouping-a-set-of-questions">
 <h2>Grouping a set of questions<a class="headerlink" href="#grouping-a-set-of-questions" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>Draft a set of questions that you would wish to group together. Then press the <strong>CTRL Key</strong> <em>(It may vary based on the OS used. The instruction here is based on the Windows OS)</em> and select <strong>all the questions</strong> <em>(with the help of your mouse)</em> that you wish to group. You should see the questions getting highlighted to blue as shown in the image below:</p>
+<p>Draft a set of questions that you would wish to group together. Then press the <strong>CTRL Key</strong> <em>(It may vary based on the OS used. The instruction here is based on the Windows OS)</em> and select <strong>all the questions</strong> <em>(with the help of your mouse)</em> that you wish to group. You should see the questions getting highlighted to blue as shown in the image below:</p>
 <p><img alt="image" src="_images/group.png" /></p>
-</li>
-<li><p>Then press <strong>Create group with selected questions</strong> <em>(marked under the red box)</em> as shown in the image above. You should now be able to see your new group as shown in the image below. It should be slightly different (enclosed within a shaded box) then the normal question you generally see.</p>
+<p>Then press <strong>Create group with selected questions</strong> <em>(marked under the red box)</em> as shown in the image above. You should now be able to see your new group as shown in the image below. It should be slightly different (enclosed within a shaded box) then the normal question you generally see.</p>
 <p><img alt="image" src="_images/selected.png" /></p>
-</li>
-<li><p>You can change the group label just like you do to change the question labels for other questions in KoBoToolbox Form Builder User Interface. Here I have changed the group label to <strong>Demographic Characteristics</strong> as shown in the image below:</p>
+<p>You can also change the group label. Here I have changed the group label to <strong>Demographic Characteristics</strong> as shown in the image below:</p>
 <p><img alt="image" src="_images/demographics.png" /></p>
-</li>
-</ul>
 </section>
 <section id="alternative-way-of-creating-a-group">
 <h2>Alternative way of creating a group<a class="headerlink" href="#alternative-way-of-creating-a-group" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>Draft a question. Select the question that you have drafted. It highlights to blue. At the same time the icon (marked under the red box as shown in the image below) for <strong>Create group with selected questions</strong> also gets activated.</p>
+<p>Draft a question. Select the question that you have drafted. It highlights to blue. At the same time the icon (marked under the red box as shown in the image below) for <strong>Create group with selected questions</strong> also gets activated.</p>
 <p><img alt="image" src="_images/alternative_group.png" /></p>
-</li>
-<li><p>Now click the <strong>Create group with selected questions</strong> (icon) and you should be able to see the question has been grouped (despite the fact that there is only one question at the moment).</p>
+<p>Now click the <strong>Create group with selected questions</strong> (icon) and you should be able to see the question has been grouped (despite the fact that there is only one question at the moment).</p>
 <p><img alt="image" src="_images/alternative_selected.png" /></p>
-</li>
-<li><p>Add or modify questions as outlined below.</p></li>
-</ul>
+<p>Add or modify questions as outlined below.</p>
 </section>
 <section id="adding-questions-within-a-group">
 <h2>Adding questions within a group<a class="headerlink" href="#adding-questions-within-a-group" title="Permalink to this headline">¶</a></h2>
-<p>You are able to add a question within a group, whenever you feel like while designing a survey form in KoBoToolbox. For this, follow the instructions outlined below:</p>
-<ul>
-<li><p>Hover your mouse (anywhere inside the group) where you wish to add a new question. You should see a plus sign (+) under the question. In the image below, I have hovered my mouse over the last question (Hobby). Press the plus sign that is inside the group (marked with a red box) to add a new question. <em>(Note: If you press the other plus sign (+) which is located outside the group, you will be adding a question outside the group.)</em></p>
-<p><img alt="image" src="_images/add_questions.png" /></p>
-</li>
-<li><p>You should now be able to see <strong>Add Question</strong> as shown in the image below:</p>
+<p>Hover your mouse (anywhere inside the group) where you wish to add a new question. You should see a plus sign (+) under the question. In the image below, I have hovered my mouse over the last question (Hobby). Press the plus sign that is inside the group (marked with a red box) to add a new question.</p>
+<p class="note">If you press the other plus sign (+) which is located outside the group, you will be adding a question outside the group.</p><p><img alt="image" src="_images/add_questions.png" /></p>
+<p>You should now be able to see <strong>Add Question</strong> as shown in the image below:</p>
 <p><img alt="image" src="_images/add_questions_2.png" /></p>
-</li>
-</ul>
 </section>
-<section id="removing-question-s-from-a-group">
-<h2>Removing question(s) from a group<a class="headerlink" href="#removing-question-s-from-a-group" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>You are able to remove question(s) from a group like you normally do by deleting question(s) in KoBoToolbox Form Builder User Interface. Hover your mouse on top of the question you wish to delete. Press the trash (bin) like icon. At this stage, the color of the question box you wish to delete changes to red. You should also see a text with <strong>Delete Question</strong> on top of the question that you wish to delete.</p>
+<section id="removing-questions-from-a-group">
+<h2>Removing questions from a group<a class="headerlink" href="#removing-questions-from-a-group" title="Permalink to this headline">¶</a></h2>
+<p>Hover your mouse on top of the question you wish to delete. Press the trash (bin) icon. At this stage, the color of the question box you wish to delete changes to red. You should also see a text with <strong>Delete Question</strong> on top of the question that you wish to delete.</p>
 <p><img alt="image" src="_images/delete_questions.png" /></p>
-</li>
-<li><p>Once you click the delete button, you should get a confirmation dialogue box as shown in the image below. Click OK.</p>
+<p>Once you click the delete button, you should get a confirmation dialogue box as shown in the image below. Click <strong>OK</strong>.</p>
 <p><img alt="image" src="_images/confirm_delete.png" /></p>
-</li>
-</ul>
 </section>
 <section id="re-ordering-a-question-within-a-group">
 <h2>Re-ordering a question within a group<a class="headerlink" href="#re-ordering-a-question-within-a-group" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>If you are not satisfied with the ordering of the questions within the group, you could re-order them by simply selecting a question (that is within a group) and dragging them to an appropriate place (either up or down as needed).</p>
+<p>If you are not satisfied with the ordering of the questions within the group, you could re-order them by simply selecting a question (that is within a group) and dragging them to an appropriate place (either up or down as needed).</p>
 <p><img alt="image" src="_images/reorder.png" /></p>
-</li>
-<li><p>If needed, you could also drag them outside the group (to extract a question from a group).</p></li>
-</ul>
+<p>If needed, you could also drag them outside the group (to extract a question from a group).</p>
 </section>
 <section id="displaying-the-grouped-questions-on-the-same-screen">
 <h2>Displaying the grouped questions on the same screen<a class="headerlink" href="#displaying-the-grouped-questions-on-the-same-screen" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>If you wish to display the grouped questions on the same screen, press the gear like settings icon that has been marked under the red boxed as shown in the image below. Then select Show all questions in this group on the same screen as shown in the image below:</p>
+<p>If you wish to display the grouped questions on the same screen, press the gear like settings icon that has been marked under the red boxed as shown in the image below. Then select <strong>Show all questions in this group on the same screen</strong> as shown in the image below:</p>
 <p><img alt="image" src="_images/display.png" /></p>
-</li>
-</ul>
-<p>Alternatively, you could also group a set of questions and display them on the same screen through xlsform (if you are comfortable with xlsform) using <strong>field-list</strong> under the <strong>appearance</strong> column as outlined in the image below:</p>
-<ul>
-<li><p>In the survey tab of your xlsform:</p>
-<p><img alt="image" src="_images/xls5.png" /></p>
-</li>
-<li><p>In the choices tab of your xlsform:</p>
-<p><img alt="image" src="_images/xls_choices.png" /></p>
-</li>
-</ul>
-</section>
-<section id="un-grouping-a-set-of-questions">
-<h2>Un-grouping a set of questions<a class="headerlink" href="#un-grouping-a-set-of-questions" title="Permalink to this headline">¶</a></h2>
-<ul>
-<li><p>If you feel like you do not need a group of questions, you could un-group the grouped questions. For this simply click the trash like <strong>Delete</strong> button from the group header.</p>
+<p>Alternatively, you could also group a set of questions and display them on the same screen through XLSForm (if you are comfortable with XLSForm) using the <code class="docutils literal notranslate"><span class="pre">field-list</span></code> option under the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column:</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>appearance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>begin_group</td>
+<td>DC</td>
+<td>Demographic Characteristics</td>
+<td>field-list</td>
+</tr>
+<tr>
+<td>text</td>
+<td>Name</td>
+<td>Name</td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Age</td>
+<td>Age</td>
+<td></td>
+</tr>
+<tr>
+<td>select_one Sex</td>
+<td>Sex</td>
+<td>Sex</td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Hobby</td>
+<td>Hobby</td>
+<td></td>
+</tr>
+<tr>
+<td>end_group</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sex</td>
+<td>1</td>
+<td>Male</td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>2</td>
+<td>Female</td>
+</tr>
+</tbody>
+</table></section>
+<section id="ungrouping-a-set-of-questions">
+<h2>Ungrouping a set of questions<a class="headerlink" href="#ungrouping-a-set-of-questions" title="Permalink to this headline">¶</a></h2>
+<p>If you no longer need a group of questions, you could ungroup or delete the grouped questions. For this simply click the <strong>Delete</strong> button from the group header.</p>
 <p><img alt="image" src="_images/ungroup.png" /></p>
-</li>
-<li><p>You should then get a dialogue box confirming you wish to split apart the group. Press OK.</p>
-<p><img alt="image" src="_images/ungroup_confirm.png" /></p>
-</li>
-<li><p>After pressing the OK button, the group will disappear. The questions within the groups does not get deleted. It’s only the group that gets un-grouped as shown in the image below:</p>
+<p>You should then get a dialogue box confirming if you wish to split apart the group or delete everything. Press <strong>UNGROUP</strong>.</p>
+<p><img alt="image" src="_images/ungroup_or_delete_confirm.png" /></p>
+<p>The group disappears but the questions will remain.</p>
 <p><img alt="image" src="_images/ungroup_results.png" /></p>
-</li>
-</ul>
-</section>
+<p class="note">If the <strong>DELETE EVERYTHING</strong> button is pressed, the group and all its questions will be deleted.</section>
 <section id="skipping-a-group-of-questions">
 <h2>Skipping a group of questions<a class="headerlink" href="#skipping-a-group-of-questions" title="Permalink to this headline">¶</a></h2>
-<p>There are times when you need to skip a lot of questions based on the response from a previous question. You could do this in KoBoToolbox Form Builder User Interface following the instructions outlined below:</p>
-<ul>
-<li><p>To skip a group of questions, you should have at least one controlling question on top of the grouped question. Press the settings icon from the grouped question as shown in the image below:</p>
+<p>To skip a group of questions, you should have at least one controlling question on top of the grouped question. Press the settings icon from the grouped question as shown in the image below:</p>
 <p><img alt="image" src="_images/skip.png" /></p>
-</li>
-<li><p>Then select Skip Logic and configure the skip logic as shown in the image below. To learn more on how to use skip logic, please visit our support article <a class="reference internal" href="skip_logic.html"><span class="doc">Adding Skip Logic to Your Form</span></a>.</p>
+<p>Then select <strong>Skip Logic</strong> and <a class="reference external" href="configure">configure</a> as shown in the image below:</p>
 <p><img alt="image" src="_images/skip_logic.png" /></p>
-</li>
-</ul>
-<p>Alternatively, you could also do this in xlsform by following the instructions as outlined in the image below:</p>
-<ul>
-<li><p>In the survey tab of your xlsform:</p>
-<p><img alt="image" src="_images/skip_xls.png" /></p>
-</li>
-<li><p>In the choices tab of your xlsform:</p>
-<p><img alt="image" src="_images/skip_xls_choices.png" /></p>
-</li>
-</ul>
-</section>
+<p>Alternatively, you could also do this in XLSForm:</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>relevant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>select_one Q1</td>
+<td>Q1</td>
+<td>Q1. Are the any eligible respondents in the household?</td>
+<td></td>
+</tr>
+<tr>
+<td>begin_group</td>
+<td>DC</td>
+<td>Details of eligible respondents</td>
+<td>${Q1} = '1'</td>
+</tr>
+<tr>
+<td>text</td>
+<td>Name</td>
+<td>Name</td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Age</td>
+<td>Age</td>
+<td></td>
+</tr>
+<tr>
+<td>select_one Sex</td>
+<td>Sex</td>
+<td>Sex</td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Hobby</td>
+<td>Hobby</td>
+<td></td>
+</tr>
+<tr>
+<td>end_group</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Q1</td>
+<td>1</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Q1</td>
+<td>2</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>1</td>
+<td>Male</td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>2</td>
+<td>Female</td>
+</tr>
+</tbody>
+</table></section>
 <section id="creating-a-roster-repeating-group-of-questions">
 <h2>Creating a roster (repeating group of questions)<a class="headerlink" href="#creating-a-roster-repeating-group-of-questions" title="Permalink to this headline">¶</a></h2>
-<p>Questions within a roster can be answered multiple times. For example, in a household survey you might want to ask the name, age, gender and education status of every household members by creating a household roster.</p>
-<ul>
-<li><p>To create a roster, create a group of questions following the instructions that has already been outlined above. Then under the <strong>group settings</strong>, select <strong>Repeat this group if necessary</strong> (marked under the red box as shown in the image below).</p>
+<p>Questions within a roster can be answered multiple times. For example, in a household survey you might want to ask the name, age, gender and education status of every household member.</p>
+<p>Create a group of questions following the instructions that has already been outlined above. Then under the <strong>group settings</strong>, select <strong>Repeat this group if necessary</strong> (marked under the red box as shown in the image below).</p>
 <p><img alt="image" src="_images/repeat.png" /></p>
-</li>
-<li><p>During an interview the enumerators will be able to enter the details to these questions as many times as required <em>(as this method allows an infinite number of repeat group iterations)</em>.</p></li>
-</ul>
-<p><em><strong>Please Note:</strong> The structure of data from roster is different than the data you normally see with other variables or even groups. While downloading your data, you should see a different sheet for each roster (i.e. the number of additional sheets should be seen with the number of roster that you have within your survey form).</em></p>
-</section>
+<p>During an interview the enumerators will be able to enter the details to these grouped questions as many times as required.</p>
+<p class="note">The resulting data structure from a roster is different from the data you normally see with other variables or groups. When downloading your data, you will see a different sheet for each roster (i.e. the number of additional sheets corresponds with the number of repeating groups that you have within your survey form).</p></section>
 <section id="controlling-the-loop-of-repetition-in-a-roster">
 <h2>Controlling the loop of repetition in a roster<a class="headerlink" href="#controlling-the-loop-of-repetition-in-a-roster" title="Permalink to this headline">¶</a></h2>
-<p>Sometimes your survey may demand you to control the repeating of questions in a roster with a value of a certain variable. In this case, you should modify your survey form in xlsform as KoBoToolbox Form Builder User Interface at the moment does not support this feature.</p>
-<ul>
-<li><p>In the survey tab of your xlsform:</p>
-<p><img alt="image" src="_images/roaster_xls.png" /></p>
-</li>
-<li><p>In the choices tab of your xlsform:</p>
-<p><img alt="image" src="_images/roaster_xls_choices.png" /></p>
-</li>
-</ul>
-<p><em><strong>Please note:</strong> Instead of having an infinite number of repeat group iterations, this method will help you control the questions in the repeat group using <strong>repeat_count</strong>.</em></p>
-</section>
+<p>Sometimes your survey may demand you to control the repeating of questions in a roster with a value of a certain variable. In this case, you should modify your survey in XLSForm as the form-builder does not currently support this feature.</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>repeat_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>Q1</td>
+<td>Total number of family members living in this household</td>
+<td></td>
+</tr>
+<tr>
+<td>begin_repeat</td>
+<td>DC</td>
+<td>Details of eligible respondents</td>
+<td>${Q1}</td>
+</tr>
+<tr>
+<td>text</td>
+<td>Name</td>
+<td>Name</td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Age</td>
+<td>Age</td>
+<td></td>
+</tr>
+<tr>
+<td>select_one Sex</td>
+<td>Sex</td>
+<td>Sex</td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Hobby</td>
+<td>Hobby</td>
+<td></td>
+</tr>
+<tr>
+<td>end_repeat</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sex</td>
+<td>1</td>
+<td>Male</td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>2</td>
+<td>Female</td>
+</tr>
+</tbody>
+</table><p class="note">Instead of having an indefinite number of repeat group iterations, this method will control the number of iterations based on the value in the <code>repeat_count</code> column.</p></section>
 <section id="using-information-to-a-roster-from-a-preceding-roster">
 <h2>Using information to a roster from a preceding roster<a class="headerlink" href="#using-information-to-a-roster-from-a-preceding-roster" title="Permalink to this headline">¶</a></h2>
-<p>While working with grouping questions and repeating groups, sometimes you might need to include certain details (information) to a roster from a preceding roster. Designing such survey form is possible in KoBoToolbox using an <strong>indexed-repeat</strong> function in the <strong>xlsform</strong>. For example, you could use the name that has been recorded in a roster (previously) to link with other repeating group questions (like education etc.). For this, simply follow the instructions as outlined in the image below:</p>
-<ul>
-<li><p>In the survey tab of your xlsform:</p>
-<p><img alt="image" src="_images/preceding_roaster_xls.png" /></p>
-</li>
-<li><p>In the choices tab of your xlsform:</p>
-<p><img alt="image" src="_images/preceding_roaster_xls_choices.png" /></p>
-</li>
-<li><p>Screen seen while collecting data in Enketo:</p>
+<p>While working with grouping questions and repeating groups, sometimes you might need to include certain details to a roster from a preceding roster. Designing such survey form is possible in KoBoToolbox using an <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#indexed-repeat"><code class="docutils literal notranslate"><span class="pre">indexed-repeat()</span></code></a> function in the XLSForm. For example, you could use the name that has been recorded in a roster (previously) to link with other repeating group questions (like education etc.):</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>calculation</th>
+<th>repeat_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>begin_repeat</td>
+<td>DC</td>
+<td>Demographic Characteristics</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Name</td>
+<td>Name</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Age</td>
+<td>Age</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>select_one Sex</td>
+<td>Sex</td>
+<td>Sex</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Hobby</td>
+<td>Hobby</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>end_repeat</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>family_count</td>
+<td></td>
+<td>count(${DC})</td>
+<td></td>
+</tr>
+<tr>
+<td>note</td>
+<td>family_count_note</td>
+<td>Number of family members: ${family_count}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>begin_repeat</td>
+<td>education</td>
+<td>Education information</td>
+<td></td>
+<td>${family_count}</td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>name_individual</td>
+<td></td>
+<td>indexed-repeat(${Name}, ${DC}, position(..))</td>
+<td></td>
+</tr>
+<tr>
+<td>select_one edu_level</td>
+<td>edu_level</td>
+<td>What is ${name_individual}'s level of education</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>end_repeat</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sex</td>
+<td>1</td>
+<td>Male</td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>2</td>
+<td>Female</td>
+</tr>
+<tr>
+<td>edu_level</td>
+<td>1</td>
+<td>Primary</td>
+</tr>
+<tr>
+<td>edu_level</td>
+<td>2</td>
+<td>Secondary</td>
+</tr>
+<tr>
+<td>edu_level</td>
+<td>3</td>
+<td>Higher Secondary &amp; Above</td>
+</tr>
+</tbody>
+</table><p>Screen seen while <a class="reference internal" href="data_through_webforms.html"><span class="doc">collecting data in Enketo</span></a>:</p>
 <p><img alt="image" src="_images/enketo.png" /></p>
-</li>
-</ul>
 </section>
 <section id="nested-repeat-roster-within-a-roster">
 <h2>Nested Repeat (roster within a roster)<a class="headerlink" href="#nested-repeat-roster-within-a-roster" title="Permalink to this headline">¶</a></h2>
-<p>KoBoToolbox also supports a much complex form of designing repeat group known as the nested repeat form design. Here you are able to add a roster within a roster (i.e. a repeat group question within a repeat group question). You could do this by following the instructions outlined in the image below:</p>
-<ul>
-<li><p>Design a roster as shown in the image below (with the group name <strong>Demographic Characteristics</strong>) and then place another roster (with the group name <strong>List of Hobbies</strong>) within a roster (<strong>Demographic Characteristics</strong>) by following the steps outlined above under <strong>Creating a roster (repeating group of questions)</strong>. You should then have a nested repeat form as shown in the image below:</p>
+<p>KoBoToolbox also supports nested repeat form design. Here you are able to add a roster within a roster (i.e. a repeat group question within a repeat group question).</p>
+<p>Design a roster (with the group name <strong>Demographic Characteristics</strong>) and then place another roster (with the group name <strong>List of Hobbies</strong>) within a roster (<strong>Demographic Characteristics</strong>) by following the steps outlined above under <strong>Creating a roster (repeating group of questions)</strong>. You should then have a nested repeat form as shown in the image below:</p>
 <p><img alt="image" src="_images/nested_repeat.png" /></p>
-</li>
-</ul>
-<p>Alternatively, you could also do this in xlsform by following the instructions as outlined in the image below:</p>
-<ul>
-<li><p>In the survey tab of your xlsform:</p>
-<p><img alt="image" src="_images/nested_repeat_xls.png" /></p>
-</li>
-<li><p>In the choices tab of your xlsform:</p>
-<p><img alt="image" src="_images/nested_repeat_xls_choices.png" /></p>
-</li>
-<li><p>Screen seen while collecting data in Enketo:</p>
+<p>Alternatively, you could also do this in XLSForm:</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>calculation</th>
+<th>repeat_count</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>begin_repeat</td>
+<td>DC</td>
+<td>Demographic Characteristics</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Name</td>
+<td>Name</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Age</td>
+<td>Age</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>select_one Sex</td>
+<td>Sex</td>
+<td>Sex</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Hobby</td>
+<td>How many hobbies does ${name} have?</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>name_individual</td>
+<td></td>
+<td>indexed-repeat(${Name}, ${DC}, position(..))</td>
+<td></td>
+</tr>
+<tr>
+<td>begin_repeat</td>
+<td>LH</td>
+<td>List of Hobbies</td>
+<td></td>
+<td>${Hobby}</td>
+</tr>
+<tr>
+<td>text</td>
+<td>Hobbies</td>
+<td>Hobbies of ${name_individual}</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>end_repeat</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>end_repeat</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table><p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Sex</td>
+<td>1</td>
+<td>Male</td>
+</tr>
+<tr>
+<td>Sex</td>
+<td>2</td>
+<td>Female</td>
+</tr>
+</tbody>
+</table><p>Screen seen while collecting data in Enketo:</p>
 <p><img alt="image" src="_images/nested_repeat_enketo.png" /></p>
-</li>
-</ul>
-<p><em><strong>Please Note:</strong> You are able to collect data using the Nested Repeat in both Enketo and KoBoCollect android app. If you are using the KoBoCollect android app, please ensure that you are using the latest version as earlier versions may not function properly.</em></p>
-</section>
+<p class="note">You are able to collect data using nested repeats in both <a class="reference" href="data_through_webforms.html">Enketo</a> and the <a class="reference" href="kobocollect-android.html">Collect Android app</a>. If you are using Collect, please ensure that you are using the latest version as earlier versions may not support this.</p></section>
 </section>
 
 
@@ -341,10 +722,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#grouping-a-set-of-questions">Grouping a set of questions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#alternative-way-of-creating-a-group">Alternative way of creating a group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-questions-within-a-group">Adding questions within a group</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#removing-question-s-from-a-group">Removing question(s) from a group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#removing-questions-from-a-group">Removing questions from a group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#re-ordering-a-question-within-a-group">Re-ordering a question within a group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#displaying-the-grouped-questions-on-the-same-screen">Displaying the grouped questions on the same screen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#un-grouping-a-set-of-questions">Un-grouping a set of questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ungrouping-a-set-of-questions">Ungrouping a set of questions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#skipping-a-group-of-questions">Skipping a group of questions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#creating-a-roster-repeating-group-of-questions">Creating a roster (repeating group of questions)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#controlling-the-loop-of-repetition-in-a-roster">Controlling the loop of repetition in a roster</a></li>

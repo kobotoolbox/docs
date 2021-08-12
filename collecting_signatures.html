@@ -100,34 +100,59 @@
           
   <section id="signature-question-type">
 <h1>Signature Question Type<a class="headerlink" href="#signature-question-type" title="Permalink to this headline">¶</a></h1>
-<p>Some forms may require signatures to be included with them. You can use appearance “signature” on both KoboCollect and Enketo. The draw widget is only available when using Enketo for data collection.</p>
-<section id="kobocollect">
-<h2>KoboCollect<a class="headerlink" href="#kobocollect" title="Permalink to this headline">¶</a></h2>
-<p>Kobo Collect allows for a digital signature to be collected directly on the screen of the phone/tablet.</p>
+<p>Some forms may require signatures to be included with them. You can use appearance <code class="docutils literal notranslate"><span class="pre">signature</span></code> on both Collect Android app and Enketo. The draw widget is only available when using Enketo for data collection.</p>
+<section id="collect-android-app">
+<h2>Collect Android app<a class="headerlink" href="#collect-android-app" title="Permalink to this headline">¶</a></h2>
+<p>Collect allows for a digital signature to be collected directly on the screen of the phone/tablet.</p>
 <p>To add this to your form:</p>
 <ol class="simple">
 <li><p>Open or download the XLS version of your form.</p></li>
-<li><p>Create the question and set the type as “image”</p></li>
-<li><p>Set the appearance to “signature”</p></li>
+<li><p>Create the question and set the type as <code class="docutils literal notranslate"><span class="pre">image</span></code></p></li>
+<li><p>Set the appearance to <code class="docutils literal notranslate"><span class="pre">signature</span></code></p></li>
 </ol>
 </section>
 <section id="enketo">
 <h2>Enketo<a class="headerlink" href="#enketo" title="Permalink to this headline">¶</a></h2>
-<p>Digital signatures also work on Enketo web forms, where you have the additional option to use a draw widget to collect signatures. In your XLSForm just add “signature” or “draw” under the appearance column for an image-type question.</p>
-<p>See the below example on how to add these to your form:</p>
-<p><img alt="image" src="_images/example.png" /></p>
-<p><a class="reference external" href="https://enke.to/draw">Follow this link</a> to test the difference between the the draw and signature widgets.</p>
+<p>Digital signatures also work on Enketo web forms, where you have the additional option to use a draw widget to collect signatures. In your XLSForm just add <code class="docutils literal notranslate"><span class="pre">signature</span></code> or <code class="docutils literal notranslate"><span class="pre">draw</span></code> under the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column for an <code class="docutils literal notranslate"><span class="pre">image</span></code>-type question.</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>appearance</th>
+<th>hint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>image</td>
+<td>draw</td>
+<td>Draw widget</td>
+<td>draw</td>
+<td>Image type with draw appearance</td>
+</tr>
+<tr>
+<td>image</td>
+<td>sign</td>
+<td>Signature widget</td>
+<td>signature</td>
+<td>Image type with signature widget</td>
+</tr>
+</tbody>
+</table><p><a class="reference external" href="https://enke.to/draw">Follow this link</a> to test the difference between the draw and signature widgets.</p>
 </section>
-<section id="create-a-signature-question-type-in-the-formbuilder">
-<h2>Create a Signature question type in the Formbuilder<a class="headerlink" href="#create-a-signature-question-type-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
-<ol>
-<li><p>Create a new question and select Photo as the question type.</p>
-<p><img alt="image" src="_images/new_question.jpg" /></p>
-</li>
-<li><p>In the Settings under Question Options, click on the Appearance drop down and select Signature.</p>
-<p><img alt="image" src="_images/signature.jpg" /></p>
-</li>
+<section id="create-a-signature-question-type-in-the-form-builder">
+<h2>Create a Signature question type in the form-builder<a class="headerlink" href="#create-a-signature-question-type-in-the-form-builder" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Create a new question and select Photo as the question type.</p></li>
 </ol>
+<p><img alt="image" src="_images/new_question.jpg" /></p>
+<ol class="simple">
+<li><p>In the Settings under Question Options, click on the Appearance drop down and select Signature.</p></li>
+</ol>
+<p><img alt="image" src="_images/signature.jpg" /></p>
 </section>
 </section>
 
@@ -195,9 +220,9 @@
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data Functionality in KoBoToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Signature Question Type</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#kobocollect">KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collect-android-app">Collect Android app</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#enketo">Enketo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-a-signature-question-type-in-the-formbuilder">Create a Signature question type in the Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-a-signature-question-type-in-the-form-builder">Create a Signature question type in the form-builder</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language in the Project Dashboard</a></li>

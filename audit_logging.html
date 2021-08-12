@@ -100,21 +100,53 @@
           
   <section id="audit-logging-meta-question-type">
 <h1>Audit Logging Meta Question Type<a class="headerlink" href="#audit-logging-meta-question-type" title="Permalink to this headline">¶</a></h1>
-<p>Audit Logging can be a useful tool to monitor enumerator behavior and discover which questions are taking longer to answer, better understand how the enumerators are navigating a certain form, and see which enumerators are generally taking quicker or longer periods of time to submit answers. This feature requires manually analyzing CSV files and is only meant for advanced users. This feature is also not supported in the Form Builder and requires you to use an <a class="reference internal" href="edit_forms_excel.html"><span class="doc">XLSForm</span></a>.</p>
-<p>The audit log meta question is a question type that is only supported by using the <a class="reference internal" href="data_through_webforms.html"><span class="doc">KoBoCollect app</span></a>.</p>
-<p>To add an audit meta question type to a form and view the finalized data, please follow the steps below:</p>
-<ol>
-<li><p>In an XLSForm file, add ‘audit’ in the same fashion as you would any other meta questions. Then upload the form file to your project and deploy the form.</p>
-<p><img alt="image" src="_images/xls3.png" /></p>
-</li>
-<li><p>Collect data using the <a class="reference internal" href="data_through_webforms.html"><span class="doc">KoBoCollect app</span></a> and send the finalized forms back to the server. Collect saves the audit logs for each submission in a CSV file that are saved and uploaded to the server just as an attached photo would be.</p></li>
-<li><p>After the data has been submitted, open your project in the browser and go to <em>DATA</em>, then <em>Downloads</em>. Select Media Attachments (ZIP) as the export type and then click on New Export. Once the download is done pending, click on the file to download it to your computer.</p>
+<p>Audit Logging can be a useful tool to monitor enumerator behavior and discover which questions are taking longer to answer, better understand how the enumerators are navigating a certain form, and see which enumerators are generally taking longer periods of time to submit answers.</p>
+<p class="note">This feature requires manually analyzing CSV files.</p><p>The audit log meta question is a question type that is only supported by using the <a class="reference internal" href="kobocollect-android.html"><span class="doc">Collect Android app</span></a>.</p>
+<p>To add an <code class="docutils literal notranslate"><span class="pre">audit</span></code> meta question type to a form and view the finalized data, please follow the steps below:</p>
+<ol class="simple">
+<li><p>In an XLSForm file, add <code class="docutils literal notranslate"><span class="pre">audit</span></code> in the same fashion as you would any other meta questions. Then upload the form file to your project and deploy the form.</p></li>
+</ol>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>start</td>
+<td>start</td>
+<td></td>
+</tr>
+<tr>
+<td>end</td>
+<td>end</td>
+<td></td>
+</tr>
+<tr>
+<td>audit</td>
+<td>audit</td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Q1</td>
+<td>Q1. What is your name?</td>
+</tr>
+</tbody>
+</table><ol class="simple">
+<li><p>Collect data using the <a class="reference internal" href="kobocollect-android.html"><span class="doc">Collect Andoid app</span></a> and send the finalized forms back to the server. Collect saves the audit logs for each submission in a CSV file that are saved and uploaded to the server just as an attached photo would be.</p></li>
+<li><p>After the data has been submitted, open your project in the browser and go to <strong>DATA</strong>, then <strong>Downloads</strong>. Select <strong>Media Attachments (ZIP)</strong> as the export type and then click on <strong>New Export</strong>. Once the download is done pending, click on the file to download it to your computer.</p></li>
+</ol>
 <p><img alt="image" src="_images/zip_export.png" /></p>
-</li>
+<ol class="simple">
 <li><p>Once the ZIP file has been extracted and opened, click on the file labeled ‘audit.csv’ to view the audit logs. It’s important to note that the CSV uses <a class="reference external" href="https://www.unixtimestamp.com/index.php">Unix Epoch</a> time so the logs are recorded in milliseconds.</p></li>
 <li><p>Because timestamps are saved for each individual submission, you will probably need to copy the values into a new spreadsheet to do further analysis across all submissions (e.g. by enumerator or by question). Collating many different CSV files into can be done by <a class="reference external" href="https://www.google.com/search?q=merge+many+CSV">many free tools or by writing a script</a>. To read more detailed information regarding log structure and event types, please visit ODK’s great documentation on <a class="reference external" href="https://docs.getodk.org/form-audit-log/#">Logging Enumerator Behavior</a>.</p></li>
 </ol>
-<p>Please feel free post on our <a class="reference external" href="https://community.kobotoolbox.org/">community forum</a> to share your favorite approach or script to use this new feature so others can learn from your example.</p>
+<p>Please feel free post on our <a class="reference external" href="https://community.kobotoolbox.org/">community forum</a> to share your favorite approach or script to use this feature so others can learn from your example.</p>
 </section>
 
 

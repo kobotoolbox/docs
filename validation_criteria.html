@@ -100,11 +100,11 @@
           
   <section id="limiting-responses-with-validation-criteria">
 <h1>Limiting Responses with Validation Criteria<a class="headerlink" href="#limiting-responses-with-validation-criteria" title="Permalink to this headline">¶</a></h1>
-<p>This feature allows you to avoid accidental or invalid answers, especially in numeric questions (Integer or Decimal response types). However, validation can be used on any question. Validation criteria are also sometimes referred to as constraints.</p>
+<p>This feature allows you to avoid accidental or invalid answers, especially in numeric questions (<code class="docutils literal notranslate"><span class="pre">integer</span></code> or <code class="docutils literal notranslate"><span class="pre">decimal</span></code> response types). However, validation can be used on any question. Validation criteria are also sometimes referred to as constraints.</p>
 <p>For example, if you want to restrict a question about age to numbers between 0 and 130.</p>
 <section id="add-validation-criteria-in-formbuilder">
 <h2>Add validation criteria in Formbuilder<a class="headerlink" href="#add-validation-criteria-in-formbuilder" title="Permalink to this headline">¶</a></h2>
-<p>To add validation criteria for a specific question, go to Settings, then Validation Criteria.</p>
+<p>To add validation criteria for a specific question, go to <strong>Settings</strong>, then <strong>Validation Criteria</strong>.</p>
 <p><img alt="image" src="_images/formbuilder.gif" /></p>
 <p>You can directly add a condition or manually enter validation logic in XLSFrom code. The type of restrictions under “<strong>Add a condition</strong>” corresponds to the type of the questions (123 - numbers, text, date) selected. As seen from the example above, the question type is number and the validation criteria restricts the response to be greater than 3 and less than or equal to 30. The <strong>Error Message</strong> (optional) is the message your interviewer sees when they enter an invalid response.</p>
 </section>
@@ -114,12 +114,92 @@
 </section>
 <section id="example-validation-criteria">
 <h2>Example Validation Criteria<a class="headerlink" href="#example-validation-criteria" title="Permalink to this headline">¶</a></h2>
-<p><img alt="image" src="_images/example2.png" /></p>
-<p>In the validation criteria syntax,<code class="docutils literal notranslate"><span class="pre">.</span></code> refers to the current question. ${some_question} refers to the fixed Name of a question, which needs to be set in the Question Options and then surrounded by ${}. See below example:</p>
-<p><img alt="image" src="_images/xls8.png" /></p>
-<p><strong>Examples of More Advanced Validation Criteria</strong></p>
-<p><img alt="image" src="_images/advanced.png" /></p>
-<p>There are many other combinations possible, including advanced mathematical calculations. <a class="reference external" href="https://docs.getodk.org/form-logic/">See here</a> for more details.</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Criteria</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>. &gt; 17</code></td>
+<td>Response must be greater than 17</td>
+</tr>
+<tr>
+<td><code>. &gt;= 18</code></td>
+<td>Response must be greater than or equal to 18</td>
+</tr>
+<tr>
+<td><code>. &gt; 17 and . &lt; 130</code></td>
+<td>Response must be between 17 and 130</td>
+</tr>
+</tbody>
+</table><p>In the validation criteria syntax,<code class="docutils literal notranslate"><span class="pre">.</span></code> refers to the current question. <code class="docutils literal notranslate"><span class="pre">${some_question}</span></code> refers to the fixed <code class="docutils literal notranslate"><span class="pre">name</span></code> of a question, which needs to be set in the <strong>Question Options</strong> and then surrounded by <code class="docutils literal notranslate"><span class="pre">${}</span></code>. See below example:</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>constraint</th>
+<th>constraint_message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>Q1</td>
+<td>Please enter your work ID</td>
+<td>. &gt; 0 and . &lt; 100</td>
+<td>ID cannot be 0 and must be less than 100</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Q2</td>
+<td>Total number of workers</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Q3</td>
+<td>Total number of male workers</td>
+<td>. &lt;= ${Q2}</td>
+<td>Total number of male workers should not exceed the total number of workers!</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Q4</td>
+<td>Total number of female workers</td>
+<td>. &lt;= ${Q2}</td>
+<td>Total number of female workers should not exceed the total number of workers!</td>
+</tr>
+</tbody>
+</table><p><strong>Examples of More Advanced Validation Criteria</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Criteria</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>(. &gt;= 18 and . &lt; 130) or (. = 999)</code></td>
+<td>Response must be between 17 and 130 or be equal to 999. (The code 999 is often used for non-responses.)</td>
+</tr>
+<tr>
+<td><code>not(${in_university} = 'yes' and . &lt; 16)</code></td>
+<td>When answering 'yes' to the question <code>in_university</code>, the current response must be greater than 16.</td>
+</tr>
+<tr>
+<td><code>not(selected(., 'none') and (selected(., 'chair') or selected(., 'table')))</code></td>
+<td>Response 'none' can't be combined with the two other options of this <code>select_multiple</code> question</td>
+</tr>
+</tbody>
+</table><p>There are many other combinations possible, including <a class="reference internal" href="advanced_calculate.html"><span class="doc">advanced mathematical calculations</span></a>. <a class="reference external" href="https://docs.getodk.org/form-logic/">See here</a> for more details.</p>
 </section>
 </section>
 

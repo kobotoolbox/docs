@@ -10,12 +10,39 @@ In order to get **both P-code and name** as part of your exported data, do the f
 2. In all "Label' columns of your exported form, use the name of the location
 3. For each Admin level you use, add a question with type "calculate", using the syntax:
 
-    `if(string-length(${name_of_pcode_column}) !=  0,jr:choice-name(${name_of_pcode_column},'${name_of_pcode_column}'),'(unspecified  name_of_pcode_column)')`
+`if(string-length(${name_of_pcode_column}) !=  0,jr:choice-name(${name_of_pcode_column},'${name_of_pcode_column}'),'(unspecified  name_of_pcode_column)')`
 
-    This formula will extract the "Label" (i.e. the name of the location) of the entry, and you will in your exported results get both the name and the p-code.
+<p class="note">This formula will extract the "Label" (i.e. the name of the location) of the entry, and you will in your exported results get both the name and the p-code.</p>
 
-**Example with 3 admin levels, using cascading lists**
+#### Example with 3 admin levels, using cascading lists
 
-![image](/images/p-codes/example_1.png)
+__survey__
 
-![image](/images/p-codes/example_2.png)
+| type              | name         | label   | choice_filter                                    | calculation                                                                                                               |
+| ---               | ---          | ---     | ---                                              | ---                                                                                                                       |
+| select_one admin1 | pcode_admin1 | Admin 1 |                                                  |                                                                                                                           |
+| select_one admin2 | pcode_admin2 | Admin 2 | state=${pcode_admin1}                            |                                                                                                                           |
+| select_one admin3 | pcode_admin3 | Admin 3 | state=${pcode_admin1} and county=${pcode_admin2} |                                                                                                                           |
+| calculate         | name_admin1  |         |                                                  | if(string-length(${pcode_admin1}) != 0, jr:choice-name(${pcode_admin1}, '${pcode_admin1}'), '(unspecified pcode_admin1)') |
+| calculate         | name_admin2  |         |                                                  | if(string-length(${pcode_admin2}) != 0, jr:choice-name(${pcode_admin2}, '${pcode_admin2}'), '(unspecified pcode_admin2)') |
+| calculate         | name_admin3  |         |                                                  | if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, '${pcode_admin3}'), '(unspecified pcode_admin3)') |
+
+__choices__
+
+| list_name | name | label       | state | county |
+| ---       | ---  | ---         | ---   | ---    |
+| admin1    | 11   | Texas       |       |        |
+| admin1    | 12   | Washington  |       |        |
+| admin2    | 13   | King        | 11    |        |
+| admin2    | 14   | Pierce      | 11    |        |
+| admin2    | 15   | Puyallup    | 12    |        |
+| admin2    | 16   | Cameron     | 12    |        |
+| admin3    | 17   | Dumont      | 11    | 13     |
+| admin3    | 18   | Finney      | 11    | 13     |
+| admin3    | 19   | Brownsville | 11    | 14     |
+| admin3    | 20   | Harlingen   | 11    | 14     |
+| admin3    | 21   | Seattle     | 12    | 15     |
+| admin3    | 22   | Redmond     | 12    | 15     |
+| admin3    | 23   | Tacoma      | 12    | 16     |
+| admin3    | 24   | King        | 12    | 16     |
+

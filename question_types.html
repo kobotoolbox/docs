@@ -101,14 +101,143 @@
   <section id="list-of-question-types">
 <h1>List of Question Types<a class="headerlink" href="#list-of-question-types" title="Permalink to this headline">¶</a></h1>
 <p>The below table provides a high-level summary of each of the response types available to use in your XLSForm and Form Builder:</p>
-<p><img alt="image" src="_images/question_types.png" /></p>
-<p>For more information on the response types, please visit <a class="reference external" href="http://xlsform.org/">xlsform.org</a>.</p>
-<p><em>Note:</em></p>
-<ul class="simple">
-<li><p><a class="reference internal" href="calculate_questions.html"><span class="doc">Calculate Questions</span></a> are not displayed in your form, but are executed automatically as your form is being answered.</p></li>
-<li><p>The <a class="reference internal" href="matrix_response.html"><span class="doc">Question Matrix Type</span></a> is only supported in Enketo and with the Grid Theme set.</p></li>
-</ul>
-</section>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Question type</th>
+<th>Answer input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>integer</td>
+<td>Integer (i.e., whole number) input.</td>
+</tr>
+<tr>
+<td>decimal</td>
+<td>Decimal input.</td>
+</tr>
+<tr>
+<td>range</td>
+<td>Range input (including rating)</td>
+</tr>
+<tr>
+<td>text</td>
+<td>Free text response.</td>
+</tr>
+<tr>
+<td>select_one [options]</td>
+<td>Multiple choice question; only one answer can be selected.</td>
+</tr>
+<tr>
+<td>select_multiple [options]</td>
+<td>Multiple choice question; multiple answers can be selected.</td>
+</tr>
+<tr>
+<td>select_one_from_file [file]</td>
+<td>Multiple choice from file; only one answer can be selected.</td>
+</tr>
+<tr>
+<td>select_multiple_from_file [file]</td>
+<td>Multiple choice from file; multiple answers can be selected.</td>
+</tr>
+<tr>
+<td>rank [options]</td>
+<td>Rank question; order a list.</td>
+</tr>
+<tr>
+<td>note</td>
+<td>Display a note on the screen, takes no input. Shorthand for type=text with readonly=true.</td>
+</tr>
+<tr>
+<td>geopoint</td>
+<td>Collect a single GPS coordinate.</td>
+</tr>
+<tr>
+<td>geotrace</td>
+<td>Record a line of two or more GPS coordinates.</td>
+</tr>
+<tr>
+<td>geoshape</td>
+<td>Record a polygon of multiple GPS coordinates; the last point is the same as the first point.</td>
+</tr>
+<tr>
+<td>date</td>
+<td>Date input.</td>
+</tr>
+<tr>
+<td>time</td>
+<td>Time input.</td>
+</tr>
+<tr>
+<td>dateTime</td>
+<td>Accepts a date and a time input.</td>
+</tr>
+<tr>
+<td>image</td>
+<td>Take a picture or upload an image file.</td>
+</tr>
+<tr>
+<td>audio</td>
+<td>Take an audio recording or upload an audio file.</td>
+</tr>
+<tr>
+<td>background-audio</td>
+<td>Audio is recorded in the background while filling the form.</td>
+</tr>
+<tr>
+<td>video</td>
+<td>Take a video recording or upload a video file.</td>
+</tr>
+<tr>
+<td>file</td>
+<td>Generic file input (txt, pdf, xls, xlsx, doc, docx, rtf, zip)</td>
+</tr>
+<tr>
+<td>barcode</td>
+<td>Scan a barcode, requires the barcode scanner app to be installed.</td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>Perform a calculation; see the Calculation section below.</td>
+</tr>
+<tr>
+<td>acknowledge</td>
+<td>Acknowledge prompt that sets value to "OK" if selected.</td>
+</tr>
+<tr>
+<td>hidden</td>
+<td>A field with no associated UI element which can be used to store a constant</td>
+</tr>
+<tr>
+<td>xml-external</td>
+<td>Adds a reference to an external XML data file</td>
+</tr>
+</tbody>
+</table><p>For more information on the response types, please visit <a class="reference external" href="http://xlsform.org/">xlsform.org</a>.</p>
+<p>Addtional, KoBoToolBox-specific types can also be used from within the form-builder:</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Form-builder Question type</th>
+<th>Answer input</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Rating</td>
+<td>Compare different items using a common scale</td>
+</tr>
+<tr>
+<td>Ranking</td>
+<td>Compare a list of different objects to one another</td>
+</tr>
+<tr>
+<td>Question Matrix</td>
+<td>Create a group of questions that display in a matrix format</td>
+</tr>
+</tbody>
+</table><p class="note"><a class="reference" href="/calculate_questions.html">Calculate Questions</a> are not displayed in your form, but are executed automatically as your form is being answered.</p><p class="note">The <a class="reference" href="matrix_response.html">Question Matrix Type</a> is only supported in Enketo and with the Grid Theme set. </p></section>
 
 
           <div class="clearer"></div>

@@ -422,6 +422,7 @@ html body {
   margin: 0 auto;
   padding-top: 2.8125rem;
   padding-bottom: 2.8125rem;
+  max-width: 100%;
 }
 
 @media screen and (max-width: 875px) {
@@ -433,6 +434,7 @@ html body {
 
 @media screen and (min-width: 876px) {
   .page.page--has-sidebar .page__wrapper {
+    max-width: 77.5rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -440,8 +442,12 @@ html body {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .page.page--has-sidebar .page__content {
+    max-width: 70%;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -492,6 +498,20 @@ html body {
   vertical-align: middle;
 }
 
+.page .page__body ul {
+  margin-left: 1.5em;
+}
+
+.page .page__body table {
+  margin-bottom: 1.5em;
+}
+
+.page .page__body pre {
+  background-color: #e8e9ed;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 .page .page__body video {
   display: block;
   width: 100%;
@@ -500,6 +520,13 @@ html body {
 .page .page__body p {
   margin: 0 auto 1.125rem;
   font-weight: 300;
+}
+
+.page .page__body p.note {
+  display: block;
+  border: 2px solid #0a6dbc;
+  border-radius: 4px;
+  padding: 1em 0.8em;
 }
 
 .page .page__body p,

@@ -103,15 +103,59 @@
 <p>Enketo web forms can be customized in the way your questions are presented. There are two alternative styles that can be selected and even combined: <strong>Multiple Pages</strong> and <strong>Grid Theme</strong>.</p>
 <p><strong>Multiple Pages</strong> mode displays one question at a time per screen, or a group of questions set to display on the same screen. This is the same way <a class="reference internal" href="group_repeat.html"><span class="doc">KoBoCollect works</span></a>.</p>
 <p><strong>Grid Theme</strong> is an alternative display of questions meant to be more compact and more like paper forms where space is often a major concern. theme-grid allows displaying multiple questions per row and flexibly adapts in case of skip logic making a new question appear or disappear. To display multiple questions in a row they need to be part of a group, which by default shows up to four questions next to each other. This theme can be customized by defining the number of questions to be included in each row through the appearance field of each question’s settings. For more details <a class="reference external" href="https://blog.enketo.org/gorgeous-grid">see this post</a>.</p>
-<p>It is also possible to use both Multiple Pages and Grid Theme together. To use these styles through the KoBoToolbox form builder user interface, simply refer to the image below:</p>
+<p>It is also possible to use both <strong>Multiple Pages</strong> and <strong>Grid Theme</strong> together. You can set these styles through the KoBoToolbox form-builder user interface:</p>
 <p><img alt="image" src="_images/multiple_grid.gif" /></p>
-<p><em>Go to your Form Settings and choose one of the options under the Form Style. This preference is saved along with the form.</em></p>
-<p>If you are building your survey project through an XLSForm, you could do the same by mentioning the style under the style at the settings tab as shown in the image below:</p>
-<p><img alt="image" src="_images/xls2.png" /></p>
-<section id="list-of-available-styles-in-xlsform">
-<h2>List of available styles in XLSForm:<a class="headerlink" href="#list-of-available-styles-in-xlsform" title="Permalink to this headline">¶</a></h2>
-<p>Default – single page : <em>(leave blank)</em><br />Grid theme : <em>theme-grid no-text-transform</em><br />Grid theme with headings in ALL CAPS: <em>theme-grid</em><br />Multiple pages: <em>pages</em><br />Grid theme + Multiple pages: <em>theme-grid pages no-text-transform</em><br />Grid theme + Multiple pages + headings in ALL CAPS: <em>theme-grid pages</em></p>
-</section>
+<p>If you are building your survey project through XLSForm, you could do the same by defining the theme under the <code class="docutils literal notranslate"><span class="pre">style</span></code> column in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet:</p>
+<p><strong>settings</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>form_title</th>
+<th>style</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Themed form</td>
+<td>pages</td>
+</tr>
+</tbody>
+</table><section id="available-styles-in-xlsform">
+<h2>Available styles in XLSForm:<a class="headerlink" href="#available-styles-in-xlsform" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>XLSForm Theme</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>(leave blank)</td>
+<td>Default – single page</td>
+</tr>
+<tr>
+<td><code>theme-grid no-text-transform</code></td>
+<td>Grid theme</td>
+</tr>
+<tr>
+<td><code>theme-grid</code></td>
+<td>Grid theme with headings in ALL CAPS</td>
+</tr>
+<tr>
+<td><code>pages</code></td>
+<td>Multiple pages</td>
+</tr>
+<tr>
+<td><code>theme-grid pages no-text-transform</code></td>
+<td>Grid theme + Multiple pages</td>
+</tr>
+<tr>
+<td><code>theme-grid pages</code></td>
+<td>Grid theme + Multiple pages + headings in ALL CAPS</td>
+</tr>
+</tbody>
+</table></section>
 </section>
 
 
@@ -185,7 +229,7 @@
 <li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Using Alternative Enketo Web Form Styles</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#list-of-available-styles-in-xlsform">List of available styles in XLSForm:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#available-styles-in-xlsform">Available styles in XLSForm:</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="hxl.html">Using HXL Tags</a></li>

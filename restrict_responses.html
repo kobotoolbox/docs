@@ -100,107 +100,364 @@
           
   <section id="restricting-text-responses-with-regular-expressions">
 <h1>Restricting Text Responses With Regular Expressions<a class="headerlink" href="#restricting-text-responses-with-regular-expressions" title="Permalink to this headline">¶</a></h1>
-<p>A regular expression, or regex, is a search pattern used for matching specific characters and ranges of characters within a string. It is widely used to validate, search, extract, and restrict text in most programming languages. KoBoToolbox supports regex to control the length and character(s) during data entry to a particular question <em>(e.g. controlling the entry of mobile number to exactly 10 digits, controlling the entry of a valid email id etc.)</em>.</p>
+<p>A regular expression, or regex, is a search pattern used for matching specific characters and ranges of characters within a string. It is widely used to validate, search, extract, and restrict text in most programming languages. KoBoToolbox supports regex to control the length and characters during data entry to a particular question <em>(e.g. controlling the entry of mobile number to exactly 10 digits, controlling the entry of a valid email id etc.)</em>.</p>
 <section id="to-use-a-regex-in-kobotoolbox-follow-these-steps">
-<h2>To use a regex in KoboToolbox, follow these steps<a class="headerlink" href="#to-use-a-regex-in-kobotoolbox-follow-these-steps" title="Permalink to this headline">¶</a></h2>
+<h2>To use a regex in KoBoToolbox, follow these steps<a class="headerlink" href="#to-use-a-regex-in-kobotoolbox-follow-these-steps" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
 <li><p>Prepare a <em>Text</em> question type.</p></li>
 <li><p>Go to the question’s <em>Settings</em>.</p></li>
 <li><p>Go to <em>Validation Criteria</em> and choose the <em>Manually enter your validation logic in XLSForm</em> code option.</p></li>
-<li><p>In the <em>Validation Code</em> box, enter your regex formula between the quotation marks <code class="docutils literal notranslate"><span class="pre">('</span> <span class="pre">')</span></code> of the <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'</span> <span class="pre">')</span></code> format. For reference, the period <code class="docutils literal notranslate"><span class="pre">(.)</span></code> refers to <em>‘this question’</em>, while the regular expression inside the quotation marks <code class="docutils literal notranslate"><span class="pre">('</span> <span class="pre">')</span></code> needs to conform to the established regex rules.</p></li>
-<li><p>(Optional) Add a custom <em>Error Message</em> for the person entering data to see when they don’t meet the regrex criteria.</p></li>
+<li><p>In the <em>Validation Code</em> box, enter your regex formula between the quotation marks <code class="docutils literal notranslate"><span class="pre">('</span> <span class="pre">')</span></code> of the <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'</span> <span class="pre">')</span></code> format. For reference, the period (<code class="docutils literal notranslate"><span class="pre">.</span></code>) refers to <em>‘this question’</em>, while the regular expression inside the quotation marks (<code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code>) needs to conform to the established regex rules.</p></li>
+<li><p>(Optional) Add a custom <em>Error Message</em> for the person entering data to see when they don’t meet the regex criteria.</p></li>
 </ol>
 <p><img alt="image" src="_images/regrex.jpg" /></p>
-<p>Regex can also be coded in XLSForm by typing the regex code under the <em>constraint</em> column.</p>
-<p><img alt="image" src="_images/xls_constraint.png" /></p>
-<p>Alternatively, there is another way of using regex in KoBoToolbox i.e. by creating a calculate question type and then defining the regex code under the <em>calculation</em> column. You could then use this variable as many times as needed in the survey form.</p>
-<p><img alt="image" src="_images/xls_calculation.png" /></p>
-</section>
+<p>Regex can also be coded in XLSForm, under the <em>constraint</em> column:</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>appearance</th>
+<th>constraint</th>
+<th>constraint_message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>q1</td>
+<td>Mobile number of respondent</td>
+<td>numbers</td>
+<td>regex(., '^[0-9]{10}$')</td>
+<td>This value must be only 10 digits</td>
+</tr>
+</tbody>
+</table><p>Alternatively, you can create a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question type and then define the regex code under the <em>calculation</em> column. You could then use this variable as many times as needed in the survey:</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>calculation</th>
+<th>constraint</th>
+<th>constraint_message</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>calculate</td>
+<td>q0</td>
+<td></td>
+<td>'^[A-Z]{1}[a-z]{1,}\s[A-Z]{1}[a-z]{1,}$'</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>q1</td>
+<td>Name of the Enumerator</td>
+<td></td>
+<td>regex(., ${q0})</td>
+<td>Please use this format: Kobe Bryant</td>
+</tr>
+<tr>
+<td>text</td>
+<td>q2</td>
+<td>Name of the Respondent</td>
+<td></td>
+<td>regex(., ${q0})</td>
+<td>Please use this format: Kobe Bryant</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>q3</td>
+<td>Age of the Respondent</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></section>
 <section id="how-do-i-build-the-regex-that-i-need">
 <h2>How do I build the regex that I need?<a class="headerlink" href="#how-do-i-build-the-regex-that-i-need" title="Permalink to this headline">¶</a></h2>
 <p>In addition to the examples and tips provided below, please visit <a class="reference external" href="http://www.regexr.com">this website</a> for more help and examples.</p>
-<ul class="simple">
-<li><p>Regex in KoBoToolbox should always be written in-between the apostrophes <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'</span> <span class="pre">')</span></code> as shown in the examples.</p></li>
-<li><p><strong>^</strong>: The caret symbol <code class="docutils literal notranslate"><span class="pre">(^)</span></code> matches the start of a string without consuming any character.</p></li>
-<li><p><strong>$</strong>: The dollar symbol <code class="docutils literal notranslate"><span class="pre">($)</span></code> matches the end of a string without consuming any character.</p></li>
-<li><p><strong>[abc]</strong>: Matches either <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> or <code class="docutils literal notranslate"><span class="pre">c</span></code> from within the <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>.</p></li>
-<li><p><strong>[a-z]</strong>: Matches any lowercase character from <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code>.</p></li>
-<li><p><strong>[A-Z]</strong>: Matches any uppercase character from <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code>.</p></li>
-<li><p><strong>[0-9]</strong>: Matches any numbers from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code>.</p></li>
-<li><p><strong>[a-zA-Z0-9]</strong>: Matches any character from <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code> or <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code>. You could combine anything required.</p></li>
-<li><p><strong>[^abc]</strong>: Matches any character except <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> or <code class="docutils literal notranslate"><span class="pre">c</span></code> if the caret symbol <code class="docutils literal notranslate"><span class="pre">(^)</span></code> is used inside <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>.</p></li>
-<li><p><strong>[^A-Z]</strong>: Matches any characters except those in the range <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code> if the caret symbol <code class="docutils literal notranslate"><span class="pre">(^)</span></code> is used inside <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>.</p></li>
-<li><p><strong>(apple)</strong>: The grouping character <code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">)</span></code> matches anything that is within the parenthesis. Here, <code class="docutils literal notranslate"><span class="pre">(apple)</span></code> matches the characters apple literally (case sensitive).</p></li>
-<li><p><strong>|</strong>: A vertical bar also known as <em>Boolean</em> matches any element separated by the vertical bar.</p></li>
-<li><p><strong>\</strong>: A back slash is used to match the literal value of any metacharacter (e.g. try using <code class="docutils literal notranslate"><span class="pre">\.</span></code> or <code class="docutils literal notranslate"><span class="pre">\&#64;</span></code> or <code class="docutils literal notranslate"><span class="pre">\$</span></code> while building regex).</p></li>
-<li><p><strong>\number</strong>: Matches the same character as most recently matched by the n<sup>th</sup> (number used) capturing group.</p></li>
-<li><p><strong>\s</strong>: Matches any <em>space</em> or <em>tab</em>.</p></li>
-<li><p><strong>\b</strong>: Matches, without consuming any characters immediately between a character matched by <code class="docutils literal notranslate"><span class="pre">\w</span></code> and a character not matched by <code class="docutils literal notranslate"><span class="pre">\w</span></code> (in either order). <code class="docutils literal notranslate"><span class="pre">\b</span></code> is also known as the <em>word boundary</em>.</p></li>
-<li><p><strong>\d</strong>: Matches any equivalent numbers <code class="docutils literal notranslate"><span class="pre">(0</span> <span class="pre">to</span> <span class="pre">9)</span></code>.</p></li>
-<li><p><strong>\D</strong>: Matches anything other than numbers <code class="docutils literal notranslate"><span class="pre">(0</span> <span class="pre">to</span> <span class="pre">9)</span></code>.</p></li>
-<li><p><strong>\w</strong>: Matches any word character (i.e. <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code> or <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> or <code class="docutils literal notranslate"><span class="pre">_</span></code>).</p></li>
-<li><p><strong>\W</strong>: Matches anything other than what <code class="docutils literal notranslate"><span class="pre">\w</span></code> matches (i.e. it matches wild cards and spaces).</p></li>
-<li><p><strong>?</strong>: A question mark <code class="docutils literal notranslate"><span class="pre">(?)</span></code> used just behind a character matches or skips (if not required) a character match.</p></li>
-<li><p><strong>*</strong>: An asterisk symbol <code class="docutils literal notranslate"><span class="pre">*</span></code> used just behind a character matches zero or more consecutive character.</p></li>
-<li><p><strong>+</strong>: The plus symbol <code class="docutils literal notranslate"><span class="pre">(+)</span></code> used just behind a character matches one or more consecutive character.</p></li>
-<li><p><strong>{x}</strong>: Matches exactly <code class="docutils literal notranslate"><span class="pre">x</span></code> consecutive characters.</p></li>
-<li><p><strong>{x,}</strong>: Matches at least <code class="docutils literal notranslate"><span class="pre">x</span></code> consecutive characters (or more).</p></li>
-<li><p><strong>{x,y}</strong>: Matches between <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> consecutive characters.</p></li>
-</ul>
-</section>
+<p class="note">Regex in KoBoToolbox should always be written in-between the apostrophes <code>regex(., ' ')</code> as shown in the examples.</p><table border="1" class="docutils">
+<thead>
+<tr>
+<th>Regex</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>^</code></td>
+<td>The caret symbol matches the start of a string without consuming any character.</td>
+</tr>
+<tr>
+<td><code>$</code></td>
+<td>The dollar symbol matches the end of a string without consuming any character.</td>
+</tr>
+<tr>
+<td><code>[abc]</code></td>
+<td>Matches either <code>a</code>, <code>b</code> or <code>c</code> from within the square brackets <code>[ ]</code>.</td>
+</tr>
+<tr>
+<td><code>[a-z]</code></td>
+<td>Matches any lowercase character from <code>a</code> to <code>z</code>.</td>
+</tr>
+<tr>
+<td><code>[A-Z]</code></td>
+<td>Matches any uppercase character from <code>A</code> to <code>Z</code>.</td>
+</tr>
+<tr>
+<td><code>[0-9]</code></td>
+<td>Matches any whole numbers from <code>0</code> to <code>9</code>.</td>
+</tr>
+<tr>
+<td><code>[a-zA-Z0-9]</code></td>
+<td>Matches any character from <code>a</code> to <code>z</code> or <code>A</code> to <code>Z</code> or <code>0</code> to <code>9</code>.</td>
+</tr>
+<tr>
+<td><code>[^abc]</code></td>
+<td>Matches any character <em>except</em> <code>a</code>, <code>b</code> or <code>c</code>.</td>
+</tr>
+<tr>
+<td><code>[^A-Z]</code></td>
+<td>Matches any characters <em>except</em> those in the range <code>A</code> to <code>Z</code>.</td>
+</tr>
+<tr>
+<td><code>(apple)</code></td>
+<td>The grouping character <code>( )</code> matches anything that is within the parenthesis.</td>
+</tr>
+<tr>
+<td><code>&#x7c;</code></td>
+<td>A vertical bar matches any element separated.</td>
+</tr>
+<tr>
+<td><code>\</code></td>
+<td>A back slash is used to match the literal value of any metacharacter (e.g. try using <code>\.</code> or <code>\@</code> or <code>\$</code> while building regex).</td>
+</tr>
+<tr>
+<td><code>\number</code></td>
+<td>Matches the same character as most recently matched by the n<sup>th</sup> (number used) capturing group.</td>
+</tr>
+<tr>
+<td><code>\s</code></td>
+<td>Matches any <em>space</em> or <em>tab</em>.</td>
+</tr>
+<tr>
+<td><code>\b</code></td>
+<td>Matches, without consuming any characters immediately between a character matched by <code>\w</code> and a character not matched by <code>\w</code> (in either order). <code>\b</code> is also known as the <em>word boundary</em>.</td>
+</tr>
+<tr>
+<td><code>\d</code></td>
+<td>Matches any equivalent numbers <code>[0-9]</code></td>
+</tr>
+<tr>
+<td><code>\D</code></td>
+<td>Matches anything other than numbers <code>(0 to 9)</code>.</td>
+</tr>
+<tr>
+<td><code>\w</code></td>
+<td>Matches any word character (i.e. <code>a</code> to <code>z</code> or <code>A</code> to <code>Z</code> or <code>0</code> to <code>9</code> or <code>_</code>).</td>
+</tr>
+<tr>
+<td><code>\W</code></td>
+<td>Matches anything other than what <code>\w</code> matches (i.e. it matches wild cards and spaces).</td>
+</tr>
+<tr>
+<td><code>?</code></td>
+<td>A question mark used just behind a character matches or skips (if not required) a character match.</td>
+</tr>
+<tr>
+<td><code>*</code></td>
+<td>An asterisk symbol used just behind a character matches zero or more consecutive character.</td>
+</tr>
+<tr>
+<td><code>+</code></td>
+<td>The plus symbol used just behind a character matches one or more consecutive character.</td>
+</tr>
+<tr>
+<td><code>{x}</code></td>
+<td>Matches exactly <code>x</code> consecutive characters.</td>
+</tr>
+<tr>
+<td><code>{x,}</code></td>
+<td>Matches at least <code>x</code> consecutive characters (or more).</td>
+</tr>
+<tr>
+<td><code>{x,y}</code></td>
+<td>Matches between <code>x</code> and <code>y</code> consecutive characters.</td>
+</tr>
+</tbody>
+</table></section>
 <section id="examples-related-to-use-of-numbers">
 <h2>Examples related to use of numbers<a class="headerlink" href="#examples-related-to-use-of-numbers" title="Permalink to this headline">¶</a></h2>
-<p><em>For all text questions that use numbers, do not forget to type <strong>numbers</strong> under the appearance column.</em></p>
-<ul class="simple">
-<li><p>Restrict mobile number to <em>ten digits</em>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9]{10}$')</span></code> or <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{10}$')</span></code></p></li>
-<li><p>Restrict an input to <code class="docutils literal notranslate"><span class="pre">1234.56.78</span></code> format: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9]{4}.[0-9]{2}.[0-9]{2}$')</span></code> or <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{4}\.\d{2}\.\d{2}$')</span></code></p></li>
-<li><p>Restrict an input between <code class="docutils literal notranslate"><span class="pre">01</span></code> to <code class="docutils literal notranslate"><span class="pre">99</span></code> digits where input format of a <em>single number</em> (like 1 or 2) is not allowed: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[01-99]{2}$')</span> <span class="pre">and</span> <span class="pre">(.</span> <span class="pre">&gt;=</span> <span class="pre">01)</span></code></p></li>
-<li><p>Restrict an input to only <em>two numbers</em> i.e. either to <code class="docutils literal notranslate"><span class="pre">12</span></code> or <code class="docutils literal notranslate"><span class="pre">345</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(12|345)$')</span></code></p></li>
-<li><p>Restrict an input of <em>nine digits</em> where the first number can’t be <code class="docutils literal notranslate"><span class="pre">0</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^1-9][0-9]{8}$')</span></code> or <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[^0$]')</span></code></p></li>
-<li><p>Restrict an input to <em>one digit</em> in between <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d$')</span></code></p></li>
-<li><p>Restrict an input to <em>five digits</em> in between <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{5}$')</span></code></p></li>
-<li><p>Restrict an input to <em>two digits and three decimals</em> (e.g. <code class="docutils literal notranslate"><span class="pre">12.345</span></code>): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'\d{2}\.\d{3}$')</span></code></p></li>
-<li><p>Restrict an input to <em>two digits and three decimals</em> (while the decimals are optional) (e.g. <code class="docutils literal notranslate"><span class="pre">12</span></code> or <code class="docutils literal notranslate"><span class="pre">12.345</span></code>): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{2}(\.\d{3})?$')</span></code></p></li>
-</ul>
-</section>
-<section id="examples-related-to-use-of-alphabets-letters">
-<h2>Examples related to use of alphabets letters<a class="headerlink" href="#examples-related-to-use-of-alphabets-letters" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Restrict an input of any characters (<em>up to 6 characters long</em>) consisting <em>lowercase letters</em>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[a-z]{1,6}$')</span></code></p></li>
-<li><p>Restrict an input of any characters (<em>up to 10 characters long</em>) consisting <em>uppercase letters</em>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z]{1,10}$')</span></code></p></li>
-<li><p>Restrict an input to only <em>one of the three fruits</em> outlined i.e. either to <code class="docutils literal notranslate"><span class="pre">Apple</span></code> or <code class="docutils literal notranslate"><span class="pre">Orange</span></code> or <code class="docutils literal notranslate"><span class="pre">Banana</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(Apple|Orange|Banana)$')</span></code></p></li>
-<li><p>Restrict an input to only <em>two words</em> i.e. <code class="docutils literal notranslate"><span class="pre">pear</span></code> or <code class="docutils literal notranslate"><span class="pre">pair</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^p(ea|ai)r$')</span></code></p></li>
-<li><p>Restrict an input to only <em>two words</em> i.e. <code class="docutils literal notranslate"><span class="pre">sun</span></code> or <code class="docutils literal notranslate"><span class="pre">son</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^s[ou]n$')</span></code></p></li>
-<li><p>Restrict an input with a <em>valid email address</em>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Za-z0-9._%+-]+&#64;[A-Za-z0-9-]+[.][A-Za-z]{2,}$')</span></code></p></li>
-<li><p>Restrict an input of the beneficiaries name where the <em>initials of the first name and last name are uppercase</em> e.g. <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bryant</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z]{1}[a-z]{1,}[</span> <span class="pre">]{1}[A-Z]{1}[a-z]{1,}$')</span></code></p></li>
-<li><p>Restrict an input of the beneficiaries name with <em>first name, middle name (if any) and last name</em> e.g. <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bean</span> <span class="pre">Bryant</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\w{1,}\s(\w{1,})?(\s)?\w{1,}$')</span></code></p></li>
-<li><p>Restrict an input of the beneficiaries’ full name where the <em>initials of the names are in uppercase</em> and the name are quite long (often greater than 3 words) e.g. <code class="docutils literal notranslate"><span class="pre">Samayamantri</span> <span class="pre">Venkata</span> <span class="pre">Rama</span> <span class="pre">Naga</span> <span class="pre">Butchi</span> <span class="pre">Anjaneya</span> <span class="pre">Satya</span> <span class="pre">Krishna</span> <span class="pre">Vijay</span></code> (this is an example of south Indian names): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([A-Z]{1}[a-z]{1,}\s)([A-Z]{1}[a-z]{1,}\s?)+$')</span></code></p></li>
-<li><p>Restrict an input of the beneficiaries’ first name (so that you are able to capture the exact spelling) where the <em>enumerators are forced to enter the beneficiaries first name twice</em> e.g. <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bryant</span> <span class="pre">Kobe</span></code>. (This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(\D+)\s(\D+)\s?\1$')</span></code></p></li>
-<li><p>Restrict an input of the beneficiaries’ last name (so that you are able to capture the exact spelling) where the <em>enumerators are forced to enter the beneficiaries last name twice</em> e.g. <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bryant</span> <span class="pre">Bryant</span></code>. <em>(This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy)</em>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(\D+)\s(\D+)\s?\2$')</span></code></p></li>
-<li><p>Restrict a character within a word by using the <code class="docutils literal notranslate"><span class="pre">?</span></code> (quantifier) e.g. allow either <code class="docutils literal notranslate"><span class="pre">color</span></code> or <code class="docutils literal notranslate"><span class="pre">colour</span></code> as an input: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^colou?r$')</span></code></p></li>
-<li><p>Restrict a character within a word by using the <code class="docutils literal notranslate"><span class="pre">*</span></code> (quantifier) e.g. allow either <code class="docutils literal notranslate"><span class="pre">a!</span></code> or <code class="docutils literal notranslate"><span class="pre">ah!</span></code> or <code class="docutils literal notranslate"><span class="pre">ahh!</span></code> or <code class="docutils literal notranslate"><span class="pre">ahhh!</span></code> and so on as an input: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^ah*!$')</span></code></p></li>
-<li><p>Restrict a character within a word by using the <code class="docutils literal notranslate"><span class="pre">+</span></code> (quantifier) e.g. allow either <code class="docutils literal notranslate"><span class="pre">ah!</span></code> or <code class="docutils literal notranslate"><span class="pre">ahh!</span></code> or <code class="docutils literal notranslate"><span class="pre">ahhh!</span></code> and so on as an input: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^ah+!$')</span></code></p></li>
-<li><p>Restrict an input to a <em>non-digit character</em> (e.g. <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">c</span></code> or <code class="docutils literal notranslate"><span class="pre">!</span></code> or <code class="docutils literal notranslate"><span class="pre">#</span></code> or <code class="docutils literal notranslate"><span class="pre">%</span></code> etc.): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\D$')</span></code></p></li>
-<li><p>Restrict an input to <em>five non-digit character</em> (e.g. <code class="docutils literal notranslate"><span class="pre">aZcB!#%</span></code> etc.): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\D{5</span> <span class="pre">}$')</span></code></p></li>
-</ul>
-</section>
-<section id="examples-related-to-use-of-a-combination-of-alphabets-letters-and-numbers">
-<h2>Examples related to use of a combination of alphabets letters and numbers<a class="headerlink" href="#examples-related-to-use-of-a-combination-of-alphabets-letters-and-numbers" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Restrict one character which matches between <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code> or <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> or <code class="docutils literal notranslate"><span class="pre">_</span></code> (i.e. match one character from <code class="docutils literal notranslate"><span class="pre">[a-zA-Z0-9_]</span></code>): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\w$')</span></code></p></li>
-<li><p>Restrict three character which matches between <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code> or <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> or <code class="docutils literal notranslate"><span class="pre">_</span></code> (i.e. match one character from <code class="docutils literal notranslate"><span class="pre">[a-zA-Z0-9_]</span></code>): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\w{3}$')</span></code></p></li>
-<li><p>Restrict your beneficiary ID to a specific format e.g. <code class="docutils literal notranslate"><span class="pre">CAR_PRC_2020_0048</span></code>: <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z]{3}[_][A-Z]{3}[_][0-9]{4}[_][0-9]{4}$')</span></code></p></li>
-<li><p>Restrict your beneficiary ID to a specific format e.g. <code class="docutils literal notranslate"><span class="pre">CAR-PRC-2020-0048</span></code> (<em>where the enumerators should enter an exact match from <code class="docutils literal notranslate"><span class="pre">CAR</span></code> to <code class="docutils literal notranslate"><span class="pre">-</span></code> i.e. <code class="docutils literal notranslate"><span class="pre">CAR-PRC-2020-</span></code> and can enter any 4 digit serial number</em>): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^CAR-PRC-2020-[0-9]{4}$')</span></code></p></li>
-<li><p>Restrict a currency input of <em>three digits</em> with a currency sign (either <code class="docutils literal notranslate"><span class="pre">dollar</span></code> or <code class="docutils literal notranslate"><span class="pre">pound</span></code>) in front (e.g. <code class="docutils literal notranslate"><span class="pre">$999</span></code> or <code class="docutils literal notranslate"><span class="pre">£500</span></code>): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[\$|\£]\d{3}$')</span></code></p></li>
-<li><p>Restrict an exact input of number of words (e.g. to restrict exactly 3 words <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">love</span> <span class="pre">you.</span></code>): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\W*(\w+\b\W*){3}$')</span></code></p></li>
-<li><p>Restrict an input of number of words (e.g. to restrict a range of words say <code class="docutils literal notranslate"><span class="pre">3</span></code> to <code class="docutils literal notranslate"><span class="pre">5</span></code>): <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\W*(\w+\b\W*){3,5}$')</span></code></p></li>
-</ul>
-</section>
+<p class="note">For all <code>text</code> type questions that use numbers, do not forget to type <code>numbers</code> under the <code>appearance</code> column.</p><table border="1" class="docutils">
+<thead>
+<tr>
+<th>XLSForm Regex</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>regex(., '^[0-9]{10}$')</code> or <code>regex(., '^\d{10}$')</code></td>
+<td>Restrict mobile number to ten digits</td>
+</tr>
+<tr>
+<td><code>regex(., '^[0-9]{4}.[0-9]{2}.[0-9]{2}$')</code> or <code>regex(., '^\d{4}\.\d{2}\.\d{2}$')</code></td>
+<td>Restrict an input to <code>1234.56.78</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^[01-99]{2}$') and (. &gt;= 01)</code></td>
+<td>Restrict an input between <code>01</code> to <code>99</code> digits where input format of a <em>single number</em> (like 1 or 2) is not allowed</td>
+</tr>
+<tr>
+<td><code>regex(., '^(12&#x7c;345)$')</code></td>
+<td>Restrict an input to either to <code>12</code> or <code>345</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^[1-9][0-9]{8}$')</code> or <code>regex(., '^[^0][0-9]{8}$')</code></td>
+<td>Restrict an input of <em>nine digits</em> where the first number can't be <code>0</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^\d$')</code></td>
+<td>Restrict an input to <em>one digit</em> in between <code>0</code> to <code>9</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^\d{5}$')</code></td>
+<td>Restrict an input to <em>five digits</em> in between <code>0</code> to <code>9</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^\d{2}\.\d{3}$')</code></td>
+<td>Restrict an input to <em>two digits and three decimals</em> (e.g. <code>12.345</code>)</td>
+</tr>
+<tr>
+<td><code>regex(., '^\d{2}(\.\d{3})?$')</code></td>
+<td>Restrict an input to <em>two digits and three decimals</em> (while the decimals are optional) (e.g. <code>12</code> or <code>12.345</code>)</td>
+</tr>
+</tbody>
+</table></section>
+<section id="examples-related-to-use-of-letters">
+<h2>Examples related to use of letters<a class="headerlink" href="#examples-related-to-use-of-letters" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>XLSForm Regex</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>regex(., '^[a-z]{1,6}$')</code></td>
+<td>Restrict an input to any lowercase letters (<em>up to 6 characters long</em>)</td>
+</tr>
+<tr>
+<td><code>regex(., '^[A-Z]{1,10}$')</code></td>
+<td>Restrict an input to any uppercase letters (<em>up to 10 characters long</em>)</td>
+</tr>
+<tr>
+<td><code>regex(., '^(Apple&#x7c;Orange&#x7c;Banana)$')</code></td>
+<td>Restrict an input to only either to <code>Apple</code> or <code>Orange</code> or <code>Banana</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^p(ea&#x7c;ai)r$')</code></td>
+<td>Restrict an input to only <code>pear</code> or <code>pair</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z]{2,}$')</code></td>
+<td>Restrict an input with a <em>valid email address</em></td>
+</tr>
+<tr>
+<td><code>regex(., '^[A-Z]{1}[a-z]{1,}[ ]{1}[A-Z]{1}[a-z]{1,}$')</code></td>
+<td>Restrict an input of the beneficiaries name where the <em>initials of the first name and last name are uppercase</em> e.g. <code>Kobe Bryant</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^\w{1,}\s(\w{1,})?(\s)?\w{1,}$')</code></td>
+<td>Restrict an input of the beneficiaries name with <em>first name, middle name (if any) and last name</em> e.g. <code>Kobe Bean Bryant</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^([A-Z]{1}[a-z]{1,}\s)([A-Z]{1}[a-z]{1,}\s?)+$')</code></td>
+<td>Restrict an input of the beneficiaries' full name where the <em>initials of the names are in uppercase</em> and the name are quite long (often greater than 3 words) e.g. <code>Samayamantri Venkata Rama Naga Butchi Anjaneya Satya Krishna Vijay</code> (this is an example of south Indian names)</td>
+</tr>
+<tr>
+<td><code>regex(., '^(\D+)\s(\D+)\s?\1$')</code></td>
+<td>Restrict an input of the beneficiaries' first name (so that you are able to capture the exact spelling) where the <em>enumerators are forced to enter the beneficiaries first name twice</em> e.g. <code>Kobe Bryant Kobe</code>. (This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy)</td>
+</tr>
+<tr>
+<td><code>regex(., '^(\D+)\s(\D+)\s?\2$')</code></td>
+<td>Restrict an input of the beneficiaries' last name (so that you are able to capture the exact spelling) where the <em>enumerators are forced to enter the beneficiaries last name twice</em> e.g. <code>Kobe Bryant Bryant</code>. <em>(This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy)</em></td>
+</tr>
+<tr>
+<td><code>regex(., '^colou?r$')</code></td>
+<td>Restrict a character within a word by using the <code>?</code> (quantifier) e.g. allow either <code>color</code> or <code>colour</code> as an input</td>
+</tr>
+<tr>
+<td><code>regex(., '^ah*!$')</code></td>
+<td>Restrict a character within a word by using the <code>*</code> (quantifier) e.g. allow either <code>a!</code> or <code>ah!</code> or <code>ahh!</code> or <code>ahhh!</code> and so on as an input</td>
+</tr>
+<tr>
+<td><code>regex(., '^ah+!$')</code></td>
+<td>Restrict a character within a word by using the <code>+</code> (quantifier) e.g. allow either <code>ah!</code> or <code>ahh!</code> or <code>ahhh!</code> and so on as an input</td>
+</tr>
+<tr>
+<td><code>regex(., '^\D$')</code></td>
+<td>Restrict an input to a <em>non-digit character</em> (e.g. <code>a</code> or <code>c</code> or <code>!</code> or <code>#</code> or <code>%</code> etc.)</td>
+</tr>
+<tr>
+<td><code>regex(., '^\D{5 }$')</code></td>
+<td>Restrict an input to <em>five non-digit character</em> (e.g. <code>aZcB!#%</code> etc.)</td>
+</tr>
+</tbody>
+</table></section>
+<section id="examples-related-to-use-of-a-combination-of-letters-and-numbers">
+<h2>Examples related to use of a combination of letters and numbers<a class="headerlink" href="#examples-related-to-use-of-a-combination-of-letters-and-numbers" title="Permalink to this headline">¶</a></h2>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>XLSForm Regex</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>regex(., '^\w$')</code></td>
+<td>Restrict one character which matches between <code>a</code> to <code>z</code> or <code>A</code> to <code>Z</code> or <code>0</code> to <code>9</code> or <code>_</code> (i.e. match one character from <code>[a-zA-Z0-9_]</code>)</td>
+</tr>
+<tr>
+<td><code>regex(., '^\w{3}$')</code></td>
+<td>Restrict three character which matches between <code>a</code> to <code>z</code> or <code>A</code> to <code>Z</code> or <code>0</code> to <code>9</code> or <code>_</code> (i.e. match one character from <code>[a-zA-Z0-9_]</code>)</td>
+</tr>
+<tr>
+<td><code>regex(., '^[A-Z]{3}[_][A-Z]{3}[_][0-9]{4}[_][0-9]{4}$')</code></td>
+<td>Restrict your beneficiary ID to a specific format e.g. <code>CAR_PRC_2020_0048</code></td>
+</tr>
+<tr>
+<td><code>regex(., '^CAR-PRC-2020-[0-9]{4}$')</code></td>
+<td>Restrict your beneficiary ID to a specific format e.g. <code>CAR-PRC-2020-0048</code> (<em>where the enumerators should enter an exact match from <code>CAR</code> to <code>-</code> i.e. <code>CAR-PRC-2020-</code> and can enter any 4 digit serial number</em>)</td>
+</tr>
+<tr>
+<td><code>regex(., '^[\$&#x7c;\£]\d{3}$')</code></td>
+<td>Restrict a currency input of <em>three digits</em> with a currency sign (either <code>dollar</code> or <code>pound</code>) in front (e.g. <code>$999</code> or <code>£500</code>)</td>
+</tr>
+<tr>
+<td><code>regex(., '^\W*(\w+\b\W*){3}$')</code></td>
+<td>Restrict an exact input of number of words (e.g. to restrict exactly 3 words <code>I love you.</code>)</td>
+</tr>
+<tr>
+<td><code>regex(., '^\W*(\w+\b\W*){3,5}$')</code></td>
+<td>Restrict an input of number of words (e.g. to restrict a range of words say <code>3</code> to <code>5</code>)</td>
+</tr>
+</tbody>
+</table></section>
 <section id="considerations-when-using-regex">
 <h2>Considerations when using regex<a class="headerlink" href="#considerations-when-using-regex" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>If you wish to use a regex constraint on a number, make sure you <strong>ALWAYS</strong> type <strong>numbers</strong> under the <strong>appearance</strong>. This restricts the display of alphabets, making only numbers visible for inputs.</p></li>
-<li><p>Be careful, with the mode of data collection (i.e. KoBoCollect android app or Enketo web forms) you wish, once you have completed designing and deploying your survey forms (using regex). This is because, KoBoCollect android app and Enketo web forms behaves a bit differently with regex. KoBoCollect android app behaves as if you have used the anchors <code class="docutils literal notranslate"><span class="pre">(^</span> <span class="pre">$)</span></code> around the regex (even if you have not used them), while Enketo requires the anchors as mandatory for an exact match.</p></li>
+<li><p>If you wish to use a regex constraint on a number in a <code class="docutils literal notranslate"><span class="pre">text</span></code> type question, make sure you <em>always</em> have the value <code class="docutils literal notranslate"><span class="pre">numbers</span></code> under the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column. This restricts the display of alphabets, making only numbers visible for inputs.</p></li>
+<li><p>The Collect Android app and Enketo behave differently with their handling of regex expressions. Collect behaves as if you have used the anchors <code class="docutils literal notranslate"><span class="pre">^</span></code> and <code class="docutils literal notranslate"><span class="pre">$</span></code> around the expression (even if you have not used them), while Enketo requires the anchors as mandatory for an exact match.</p></li>
 </ul>
 </section>
 </section>
@@ -264,11 +521,11 @@
 <li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Restricting Text Responses With Regular Expressions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#to-use-a-regex-in-kobotoolbox-follow-these-steps">To use a regex in KoboToolbox, follow these steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#to-use-a-regex-in-kobotoolbox-follow-these-steps">To use a regex in KoBoToolbox, follow these steps</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-do-i-build-the-regex-that-i-need">How do I build the regex that I need?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#examples-related-to-use-of-numbers">Examples related to use of numbers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#examples-related-to-use-of-alphabets-letters">Examples related to use of alphabets letters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#examples-related-to-use-of-a-combination-of-alphabets-letters-and-numbers">Examples related to use of a combination of alphabets letters and numbers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples-related-to-use-of-letters">Examples related to use of letters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#examples-related-to-use-of-a-combination-of-letters-and-numbers">Examples related to use of a combination of letters and numbers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#considerations-when-using-regex">Considerations when using regex</a></li>
 </ul>
 </li>

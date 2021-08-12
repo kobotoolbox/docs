@@ -102,10 +102,10 @@
 <h1>Using HXL Tags<a class="headerlink" href="#using-hxl-tags" title="Permalink to this headline">¶</a></h1>
 <section id="what-exactly-is-hxl">
 <h2>What exactly is HXL?<a class="headerlink" href="#what-exactly-is-hxl" title="Permalink to this headline">¶</a></h2>
-<p>HXL stands for <strong>Humanitarian Exchange Language</strong>. The goal of HXL is to improve information sharing during a humanitarian crisis by creating a simple way to promote interoperablity of data. It does this by coding the data through hashtags (#) similar to Twitter. For more information on HXL, please <a class="reference external" href="http://hxlstandard.org">visit here</a>.</p>
+<p>HXL stands for <strong>Humanitarian Exchange Language</strong>. The goal of HXL is to improve information sharing during a humanitarian crisis by creating a simple way to promote interoperability of data. It does this by coding the data through hashtags (#) similar to Twitter. For more information on HXL, please <a class="reference external" href="https://hxlstandard.org">visit here</a>.</p>
 </section>
-<section id="how-to-use-the-hxl-feature-in-the-formbuilder">
-<h2>How to use the HXL feature in the Formbuilder<a class="headerlink" href="#how-to-use-the-hxl-feature-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
+<section id="how-to-use-the-hxl-feature-in-the-form-builder">
+<h2>How to use the HXL feature in the form-builder<a class="headerlink" href="#how-to-use-the-hxl-feature-in-the-form-builder" title="Permalink to this headline">¶</a></h2>
 <p><em>Credits:  <a class="reference external" href="http://www.megginson.com">David Megginson</a></em>
 <em>Link to step-by-step <a class="reference external" href="https://docs.google.com/presentation/d/123bHSkNh4T30CNq0i37IxOLfrqSC-3V_Khtkf6bIdg0/edit#slide=id.p">slide show guide</a></em></p>
 <ol>
@@ -119,13 +119,59 @@
 <p><img alt="image" src="_images/xls_affected.jpg" /></p>
 </li>
 </ol>
-<p><em>Note: The hashtag before name is mandatory. Spaces are not allowed.</em></p>
-</section>
+<p class="note">The hashtag before name is mandatory and spaces are not allowed.</p></section>
 <section id="how-to-use-hxl-in-an-xlsform">
 <h2>How to use HXL in an XLSForm<a class="headerlink" href="#how-to-use-hxl-in-an-xlsform" title="Permalink to this headline">¶</a></h2>
-<p>When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column. See below for an example.</p>
-<p><img alt="image" src="_images/xls6.png" /></p>
-</section>
+<p>When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column.</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>hxl</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>select_one countries</td>
+<td>country</td>
+<td>Select affected country</td>
+<td>#country</td>
+</tr>
+<tr>
+<td>select_one admin1</td>
+<td>province</td>
+<td>Please select the province</td>
+<td>#adm1+code</td>
+</tr>
+<tr>
+<td>select_one admin2</td>
+<td>county</td>
+<td>Select the county</td>
+<td>#adm2+name</td>
+</tr>
+<tr>
+<td>select_one sector</td>
+<td>cluster</td>
+<td>Cluster</td>
+<td>#sector</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>affected</td>
+<td>Number of people affected</td>
+<td>#affected</td>
+</tr>
+<tr>
+<td>integer</td>
+<td>reached</td>
+<td>Number of people reached to date</td>
+<td>#reached</td>
+</tr>
+</tbody>
+</table></section>
 </section>
 
 
@@ -201,7 +247,7 @@
 <li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Using HXL Tags</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#what-exactly-is-hxl">What exactly is HXL?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-use-the-hxl-feature-in-the-formbuilder">How to use the HXL feature in the Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-use-the-hxl-feature-in-the-form-builder">How to use the HXL feature in the form-builder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-use-hxl-in-an-xlsform">How to use HXL in an XLSForm</a></li>
 </ul>
 </li>

@@ -102,14 +102,32 @@
 <h1>Adding a Custom Logo<a class="headerlink" href="#adding-a-custom-logo" title="Permalink to this headline">¶</a></h1>
 <p>Adding a custom logo to the top of your form is a simple process and primarily follows the same steps as <a class="reference internal" href="media.html"><span class="doc">adding media content to your forms</span></a>.</p>
 <p>To begin:</p>
-<ol>
+<ol class="simple">
 <li><p>Start by creating your logo image file and save it with a short file name.</p></li>
-<li><p>In your XLSForm, make the first question a Note question type, leave the label blank, and add a column titled <code class="docutils literal notranslate"><span class="pre">media::image</span></code> with your logo file name in the cell. As shown below:</p>
-<p><img alt="image" src="_images/xls.png" /></p>
-</li>
+<li><p>In your XLSForm, make the first question a Note question type, leave the label blank, and add a column titled <code class="docutils literal notranslate"><span class="pre">media::image</span></code> with your logo file name in the cell. As shown below:</p></li>
+</ol>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>media::image</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>note</td>
+<td>logo</td>
+<td></td>
+<td>logo.jpg</td>
+</tr>
+</tbody>
+</table><ol class="simple">
 <li><p>When you’re done editing the form, upload the XLSForm to either a new or existing project.</p></li>
 <li><p>Deploy or redeploy your form, depending on whether it’s a new project or it’s replacing an existing form.</p></li>
-<li><p>In your project page go to SETTINGS and click on ‘+Add Document’. Then chose your logo file and click ‘Upload’</p></li>
+<li><p>In your project page go to <strong>SETTINGS&gt;MEDIA</strong> and <a class="reference internal" href="media.html"><span class="doc">upload</span></a> your <code class="docutils literal notranslate"><span class="pre">logo.jpg</span></code> file.</p></li>
 </ol>
 <section id="tips">
 <h2>Tips:<a class="headerlink" href="#tips" title="Permalink to this headline">¶</a></h2>
@@ -117,9 +135,8 @@
 <li><p>Keep your image small.</p></li>
 <li><p>Your logo image will not appear in the form preview, only when the form is opened.</p></li>
 <li><p>Skipping the final step will mean that your form will be displayed without the media files. Make sure the media files are uploaded before downloading the form to your devices when using the Android app.</p></li>
-<li><p>If you open the Formbuilder after deploying your XLSForm with the logo image file, it will automatically give the question a text label and you’ll need to delete it for the automated text not to appear next to your logo in your form.</p></li>
 </ul>
-</section>
+<p class="note">If you open the form-builder after deploying your XLSForm with the logo image file, it will automatically give the question a text label and you'll need to delete it for the automated text not to appear next to your logo in your form.</p></section>
 </section>
 
 

@@ -100,31 +100,132 @@
           
   <section id="adding-another-language-to-your-xlsform">
 <h1>Adding Another Language to your XLSForm<a class="headerlink" href="#adding-another-language-to-your-xlsform" title="Permalink to this headline">¶</a></h1>
-<p>There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online <a class="reference internal" href="language_dashboard.html"><span class="doc">Project Dashboard</span></a> or you can add them in an XLS Form and upload it to KoBo.</p>
+<p>There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online <a class="reference internal" href="language_dashboard.html"><span class="doc">Project Dashboard</span></a> or you can add them in an XLSForm and upload it to KoBo.</p>
 <p>Here are detailed instructions on how you can add another language to your form:</p>
-<ol>
-<li><p>Create your form in the default language. This should be the language that the person responsible for designing the questionnaire is most comfortable with. When you are done, or when a significant portion of the form has been created, save it. You’ll be returned to the draft form’s project dashboard.</p></li>
+<ul class="simple">
+<li><p>Create your form in the default language. This should be the language that the person responsible for designing the questionnaire is most comfortable with. When you are done, or when a portion of the form has been created, save it. You’ll be returned to the draft form’s project dashboard.</p></li>
 <li><p>Export the form to XLS.</p></li>
-<li><p>Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all work) (If you’re in Excel it’s possible you have to take the file out of Protected View first. <a class="reference external" href="https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&amp;CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&amp;ui=en-US&amp;rs=en-US&amp;ad=US">See here</a>.) Your spreadsheet will have three sheets (see the little tabs at the bottom): survey, choices, settings. Stay in the survey sheet for now.</p></li>
-<li><p>Find the column called ‘label’. This is where your original question labels are stored. Insert another column to the right of label. In the header (first row) of this new column, write <code class="docutils literal notranslate"><span class="pre">label::language</span> <span class="pre">(code)</span></code>, for example <code class="docutils literal notranslate"><span class="pre">label::Français</span> <span class="pre">(fr)</span></code> or <code class="docutils literal notranslate"><span class="pre">label::English</span> <span class="pre">(en)</span></code>. Note: you can change the size of your columns, add colors or change the font size, none of these will affect your form.</p></li>
-<li><p>Then, if you have hints in your form, the same needs to apply to that hint column, for example <code class="docutils literal notranslate"><span class="pre">hint::Français</span> <span class="pre">(fr)</span></code> or <code class="docutils literal notranslate"><span class="pre">hint::English</span> <span class="pre">(en)</span></code>.</p>
-<p><img alt="image" src="_images/hints_updated.png" /></p>
-</li>
-<li><p>Now add your translations for every row inside the <code class="docutils literal notranslate"><span class="pre">label::yourlanguage</span> <span class="pre">(code)</span></code> column. When you are done, make sure you didn’t skip any questions (for every field that has text inside the label column there should be text inside the <code class="docutils literal notranslate"><span class="pre">label::yourlanguage</span> <span class="pre">(code)</span></code> column). You can find the official 2-character language codes (subtags) <a class="reference external" href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">here</a>.</p>
-<p>Tip: Copy-paste the original label column and then make changes to the translations so you don’t leave anything blank by accident: It’s better to have something showing in the wrong language than not having a blank question in some language. <em>You can repeat this step and add as many languages as you like, each in their separate columns and with a different name inside <code class="docutils literal notranslate"><span class="pre">label::yourlanguage</span> <span class="pre">(code)</span></code>.</em></p>
-<p><img alt="image" src="_images/label_updated.png" /></p>
-</li>
-<li><p>Now switch to the ‘choices’ sheet of your file. (If there is no such sheet in your file -you only have two sheets called survey and settings- then don’t worry - your form doesn’t use any multiple choice questions – you’re done! Skip the next step.)</p></li>
-<li><p>In the choices sheet you have another column called label. Repeat steps 5 and 6. Make sure that you use the exact same spelling for <code class="docutils literal notranslate"><span class="pre">label::yourlanguage</span> <span class="pre">(code)</span></code>. For example, <code class="docutils literal notranslate"><span class="pre">label::Francais</span> <span class="pre">(fr)</span></code> and <code class="docutils literal notranslate"><span class="pre">label::Français</span> <span class="pre">(fr)</span></code> are not identical.</p>
-<p><img alt="image" src="_images/choices_label_updated.png" /></p>
-</li>
-<li><p>In the settings sheet, underneath form_title edit the text of your form’s title to something like “My form (English and French)” so you can easily identify it later.</p>
-<p><img alt="image" src="_images/form_title_updated.png" /></p>
-</li>
+<li><p>Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all work) (If you’re in Excel it’s possible you have to take the file out of Protected View first. <a class="reference external" href="https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&amp;CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&amp;ui=en-US&amp;rs=en-US&amp;ad=US">See here</a>.) Your spreadsheet will have three sheets (see the little tabs at the bottom): <strong>survey</strong>, <strong>choices</strong>, <strong>settings</strong>. Stay in the <strong>survey</strong> sheet for now.</p></li>
+<li><p>Find the column called <code class="docutils literal notranslate"><span class="pre">label</span></code>. This is where your original question labels are stored. Insert another column to the right of label. In the header (first row) of this new column, write <code class="docutils literal notranslate"><span class="pre">label::language</span> <span class="pre">(code)</span></code>, for example <code class="docutils literal notranslate"><span class="pre">label::Français</span> <span class="pre">(fr)</span></code> or <code class="docutils literal notranslate"><span class="pre">label::English</span> <span class="pre">(en)</span></code>.</p></li>
+</ul>
+<p class="note">You can change the size of your columns, add colors or change the font size, none of these will affect your form.</p><ul class="simple">
+<li><p>Then, if you have hints in your form, the same needs to apply to the <code class="docutils literal notranslate"><span class="pre">hint</span></code> column, for example <code class="docutils literal notranslate"><span class="pre">hint::Français</span> <span class="pre">(fr)</span></code> or <code class="docutils literal notranslate"><span class="pre">hint::English</span> <span class="pre">(en)</span></code>.</p></li>
+</ul>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>relevant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>full_name</td>
+<td>What is your name?</td>
+<td></td>
+</tr>
+<tr>
+<td>select_one yesno</td>
+<td>children_yesno</td>
+<td>Do you have any children?</td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>children_count</td>
+<td>How many children do you have?</td>
+<td>${children_yesno} = 'yes'</td>
+</tr>
+</tbody>
+</table><ul class="simple">
+<li><p>Now add your translations for every row inside the <code class="docutils literal notranslate"><span class="pre">label::language</span> <span class="pre">(code)</span></code> column. When you are done, make sure you didn’t skip any questions (for every field that has text inside the label column there should be text inside the <code class="docutils literal notranslate"><span class="pre">label::language</span> <span class="pre">(code)</span></code> column). You can find the official 2-character language codes (subtags) <a class="reference external" href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">here</a>.</p></li>
+</ul>
+<p class="note">Tip: Copy-paste the original label column and then make changes to the translations so you don't leave anything blank by accident: It's better to have something showing in the wrong language than not having a blank question in some language. <em>You can repeat this step and add as many languages as you like, each in their separate columns and with a different name inside <code>label::language (code)</code>.</em></p><p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label:English (en)</th>
+<th>label::Français (fr)</th>
+<th>relevant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>full_name</td>
+<td>What is your name?</td>
+<td>Quel est votre nom?</td>
+<td></td>
+</tr>
+<tr>
+<td>select_one yesno</td>
+<td>children_yesno</td>
+<td>Do you have any children?</td>
+<td>Avez-vous des enfants?</td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>children_count</td>
+<td>How many children do you have?</td>
+<td>Combien des enfants avez-vous?</td>
+<td>${children_yesno} = 'yes'</td>
+</tr>
+</tbody>
+</table><ul class="simple">
+<li><p>Now switch to the <strong>choices</strong> sheet of your file, if you have one.</p></li>
+<li><p>In the <strong>choices</strong> sheet you have another column called <code class="docutils literal notranslate"><span class="pre">label</span></code>. Repeat steps 5 and 6. Make sure that you use the exact same spelling for <code class="docutils literal notranslate"><span class="pre">label::language</span> <span class="pre">(code)</span></code>. For example, <code class="docutils literal notranslate"><span class="pre">label::Francais</span> <span class="pre">(fr)</span></code> and <code class="docutils literal notranslate"><span class="pre">label::Français</span> <span class="pre">(fr)</span></code> are not identical.</p></li>
+</ul>
+<p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label::English (en)</th>
+<th>label::Français (fr)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>yesno</td>
+<td>yes</td>
+<td>Yes</td>
+<td>Oui</td>
+</tr>
+<tr>
+<td>yesno</td>
+<td>no</td>
+<td>No</td>
+<td>Non</td>
+</tr>
+</tbody>
+</table><ul class="simple">
+<li><p>In the <strong>settings</strong> sheet, underneath <code class="docutils literal notranslate"><span class="pre">form_title</span></code> edit the text of your form’s title to something like “My form (English and French)” so you can easily identify it later.</p></li>
+</ul>
+<p><strong>settings</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>form_title</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>My form (English and French)</td>
+</tr>
+</tbody>
+</table><ul class="simple">
 <li><p>Save your file and close Excel.</p></li>
-<li><p>Return to KoBoToolbox and click on “Replace with XLS”, then upload your updated XLS Form. Choose the file you just finished editing and click OK.</p></li>
-<li><p>Open the form you just uploaded and click on Preview Form. At the top next to Choose Language click on the dropdown. It will have default (your original language) as well as the new language(s) you just added.</p></li>
-</ol>
+<li><p>Return to KoBoToolbox and click on <strong>Replace with XLS</strong>, then upload your updated XLSForm. Choose the file you just finished editing and click <strong>OK</strong>.</p></li>
+<li><p>Open the form you just uploaded and click on <strong>Preview Form</strong>. At the top next to <strong>Choose Language</strong> click on the dropdown. It will have a default (your original language) as well as the new languages you just added.</p></li>
+</ul>
 <section id="translating-to-tamil-nepali-hindi-etc-scripts">
 <h2>Translating to Tamil, Nepali, Hindi, etc. scripts<a class="headerlink" href="#translating-to-tamil-nepali-hindi-etc-scripts" title="Permalink to this headline">¶</a></h2>
 <p>When translating to non-Latin scripts, such as Tamil, Nepali, Hindi, etc, please make sure you do not use a so-called pseudo font. When writing in these languages make sure you only use the proper Unicode characters. To write proper Unicode characters you don’t have to install any particular fonts. Instead, you (or your translator) need to set your keyboard to use the respective script (Tamil, Nepali, etc.) and then write normally. The correct keyboard setting will produce the actual script letters in Unicode instead of some Latin phonetic equivalents. (This would also be the same way as writing these languages into an email, KoBoToolbox, or any other Web application.</p>

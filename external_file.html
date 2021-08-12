@@ -101,28 +101,124 @@
   <section id="select-one-or-many-from-external-file-question-type">
 <h1>Select One or Many From External File Question Type<a class="headerlink" href="#select-one-or-many-from-external-file-question-type" title="Permalink to this headline">¶</a></h1>
 <p>In some cases, it may be desirable to host a list of choice options in an external file, rather than directly in the project XLSForm. For example, a long list of choices (e.g. hundreds or thousands) could slow down the loading and navigation of the form, or adding new choice options after data collection has begun could sometimes be troublesome.</p>
-<p>This article provides a detailed example and method for creating a select one or select many question type with the choice list in a separate external file.</p>
-<p>_Please note:</p>
-<ul class="simple">
-<li><p>At the moment, this feature is only available using XLSForms and the data can only be entered through Enketo and is not supported by ODK or KoBoCollect.</p></li>
-</ul>
-<p>_* There is an <a class="reference external" href="https://github.com/kobotoolbox/kpi/issues/2275">outstanding bug</a> that causes an error when trying to view or download the collected data. For now, you can go around this by using the legacy version of KoBo (<a class="reference external" href="https://kf.kobotoolbox.org/">kc.kobotoolbox.org</a> or <a class="reference external" href="https://kobo.humanitarianresponse.info/">kc.humanitarianresponse.info</a>).</p>
-<p><strong>Step 1:</strong>
-In the XLSForm, the type should be either <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span> <span class="pre">+</span> <span class="pre">(file</span> <span class="pre">name</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">CSV</span> <span class="pre">extension)</span></code> or <code class="docutils literal notranslate"><span class="pre">select_multiple_from_file</span> <span class="pre">+</span> <span class="pre">(file</span> <span class="pre">name</span> <span class="pre">with</span> <span class="pre">a</span> <span class="pre">CSV</span> <span class="pre">extension)</span></code> as shown in the figure below:</p>
-<p><img alt="image" src="_images/select_file.png" /></p>
-<p><em>Please note: The fruits.csv is the file name containing the choices for the question “What is your favorite fruit?”.</em></p>
-<p><strong>Step 2:</strong>
-In the choices sheet of the XLSForm, type the name of the variable (i.e. fruits) under list_name and leave the name and label values as just name and label as shown in the figure below:</p>
-<p><img alt="image" src="_images/list_name.png" /></p>
-<p><strong>Step 3:</strong>
-Create a new csv file and structure it the same as the choices tab in the XLSForm and label the tab the same as the variable you used in the XLSForm. Under the list_name column, type the variable name for each row. Under the name and label columns, create your custom choice options as shown below:</p>
-<p><img alt="image" src="_images/custom_choice.png" /></p>
-<p><strong>Step 4:</strong>
-Upload and deploy the XLSForm in KoBoToolbox.</p>
-<p><strong>Step 5:</strong>
-Upload the external csv file the same way you would add a media file to the form: Click the + Add Document button in the Media tab of the project SETTINGS page. After the file is uploaded and shown above, return to the main SETTINGS page and click the Save Changes button.</p>
-<p><img alt="image" src="_images/upload.jpg" /></p>
-<p><em>Please note: You are only able to upload the CSV file after you have deployed the form.</em></p>
+<p>This article provides a detailed example and method for creating a <code class="docutils literal notranslate"><span class="pre">select_one</span></code> or <code class="docutils literal notranslate"><span class="pre">select_many</span></code> question type with the choice list in a separate, external file. Refer to the <a class="reference external" href="https://xlsform.org/en/#multiple-choice-from-file">XLSForm documentation</a> for more information.</p>
+<p><strong>1.</strong> In the XLSForm, the type should be either <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span> <span class="pre">[filename]</span></code> or <code class="docutils literal notranslate"><span class="pre">select_multiple_from_file</span> <span class="pre">[filename]</span></code>:</p>
+<p class="note">The file-type can be either <code>CSV</code> or <code>XML</code></p><p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>name</td>
+<td>What is your name?</td>
+</tr>
+<tr>
+<td>select_one sex</td>
+<td>sex</td>
+<td>What is your sex?</td>
+</tr>
+<tr>
+<td>select_one_from_file fruits.csv</td>
+<td>fruits</td>
+<td>What is your favourite fruit?</td>
+</tr>
+</tbody>
+</table><p><strong>choices</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sex</td>
+<td>1</td>
+<td>Male</td>
+</tr>
+<tr>
+<td>sex</td>
+<td>2</td>
+<td>Female</td>
+</tr>
+</tbody>
+</table><p class="note">The <code>fruits.csv</code> is the file name containing the choices for the question "What is your favorite fruit?".</p><p><strong>2.</strong> Create a new <code class="docutils literal notranslate"><span class="pre">CSV</span></code> file and structure it the same as the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet in the XLSForm:</p>
+<p><strong>fruits.csv</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>list_name</th>
+<th>name</th>
+<th>label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fruits</td>
+<td>1</td>
+<td>Apple</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>2</td>
+<td>Watermelon</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>3</td>
+<td>Orange</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>4</td>
+<td>Pear</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>5</td>
+<td>Cherry</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>6</td>
+<td>Strawberry</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>7</td>
+<td>Nectarine</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>8</td>
+<td>Grape</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>9</td>
+<td>Mango</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>10</td>
+<td>Blueberry</td>
+</tr>
+<tr>
+<td>fruits</td>
+<td>11</td>
+<td>Pomegranate</td>
+</tr>
+</tbody>
+</table><p><strong>3.</strong> Upload and deploy the XLSForm in KoBoToolbox.</p>
+<p><strong>4.</strong> Upload the <code class="docutils literal notranslate"><span class="pre">CSV</span></code> file the same way you would <a class="reference internal" href="media.html"><span class="doc">add a media file to the form</span></a></p>
 </section>
 
 

@@ -4,9 +4,9 @@ The Question Matrix response type allows users to create a group of questions th
 
 ![image](/images/matrix_response/matrix_example.png)
 
-**NOTE**: This response type **only works when using Enketo**, utilizing the **Grid-theme layout**. Forms are set to single page layout by default -- to change it, find the "layout" button in the formbuilder toolbar, select "grid-theme", save this change, and redeploy your form to make these changes live.
+<p class="note">This response type <strong>only works when using Enketo</strong>, utilizing the <strong>Grid-theme layout</strong>. Forms are set to single page layout by default -- to change it, find the "layout" button in the formbuilder toolbar, select "grid-theme", save this change, and redeploy your form to make these changes live.</p>
 
-**NOTE**: Enketo supports only up to `10` columns.
+<p class='note'>Enketo supports only up to <code>10</code> columns in versions less than <code>2.8.0</code>, up to <code>13</code> including and after <code>2.8.0</code>.</p>
 
 ## Create a Question Matrix in the Formbuilder
 
@@ -33,20 +33,32 @@ The Question Matrix response type allows users to create a group of questions th
 
 Alternatively, you can also build a Matrix Question in a XLSForm by following the instructions as outlined in the images below:
 
-**In the survey tab:**
+__survey__
 
-![image](/images/matrix_response/survey_xls.png)
+| type             | name | label                                | required | kobo--matrix_list |
+| ---              | ---  | ---                                  | ---      | ---               |
+| begin_kobomatrix | M1   | Items                                |          | assets            |
+| select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |
+| integer          | Q2   | Q2. Number of assets                 | TRUE     |                   |
 
-**In the choices tab:**
+__choices__
 
-![image](/images/matrix_response/choices_xls.png)
+| list_name | name | label |
+| ---       | ---  | ---   |
+| assets    | car  | Car   |
+| assets    | bike | Bike  |
+| assets    | tv   | TV    |
+| yn        | yes  | Yes   |
+| no        | no   | No    |
 
-**In the settings tab:**
+__settings__
 
-![image](/images/matrix_response/settings_xls.png)
+| style                        |
+| ---                          |
+| theme-grid no-text-transform |
 
-_Please note: this method uses **begin_kobomatrix**, **end_kobomatrix** and **kobo—matrix_list**._
+<p class="note">This method uses <code>begin_kobomatrix</code>, <code>end_kobomatrix</code> and <code>kobo—matrix_list</code>.</p>
 
-Following the steps above, you should see the question matrix shown in the screenshot below (In Enketo only):
+Following the steps above, you should see the question matrix shown in the screenshot below (In [Enketo](data_through_webforms.md) only):
 
 ![image](/images/matrix_response/preview.png)

@@ -100,26 +100,100 @@
           
   <section id="creating-unique-serial-numbers-in-forms">
 <h1>Creating Unique Serial Numbers in Forms<a class="headerlink" href="#creating-unique-serial-numbers-in-forms" title="Permalink to this headline">¶</a></h1>
-<p>There are times you may want to generate a unique serial number for each and every form in a project. This article discusses how to utilize the calculate question-type to do that by either creating sequential unique serial numbers based on date and time or by creating unique serial numbers from selected variables.</p>
+<p>There are times you may want to generate a unique serial number for each and every form in a project. This article discusses how to utilize the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question-type to do that by either creating sequential unique serial numbers based on date and time or by creating unique serial numbers from selected variables.</p>
 <section id="creating-sequential-unique-serial-numbers-based-on-date-and-time">
 <h2>Creating Sequential Unique Serial Numbers Based on Date and Time:<a class="headerlink" href="#creating-sequential-unique-serial-numbers-based-on-date-and-time" title="Permalink to this headline">¶</a></h2>
-<p>This method works best with Enketo web forms. It uses a calculation function to create a unique serial number based on the date and time to the first millisecond. Although this method may not meet all your needs, it should give you an illustration of how much you can stretch calculate functions to achieve your needs.</p>
-<ol>
-<li><p>Create a calculate question type in either the formbuilder or XLSForm and use the formula below. <em>Please note the same formula can work as an integer question when working in an XLSForm.</em></p>
-<p><code class="docutils literal notranslate"><span class="pre">concat(substr(today(),0,4),substr(today(),7,5),substr(today(),10,8),substr(now(),13,11),substr(now(),16,14),substr(now(),19,17))</span></code></p>
-<p>Example:</p>
-<p><img alt="image" src="_images/calculate_example.png" /></p>
+<p>This method works best with <a class="reference internal" href="data_through_webforms.html"><span class="doc">Enketo web forms</span></a>. It uses a calculation function to create a unique serial number based on the date and time to the first millisecond. Although this method may not meet all your needs, it should give you an illustration of how much you can stretch calculate functions.</p>
+<p>Create a <a class="reference" href="calculate_questions.html"><code>calculate</code> question type</a> in either the form-builder or XLSForm and use the formula below.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">concat</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="n">today</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">today</span><span class="p">(),</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">today</span><span class="p">(),</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">now</span><span class="p">(),</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">now</span><span class="p">(),</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">now</span><span class="p">(),</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">17</span><span class="p">))</span>
+</pre></div>
+</div>
+<p class="note">The same formula can work as an <code>integer</code> question when working in an XLSForm.</p><p><img alt="image" src="_images/calculate_example.png" /></p>
 <p>In the example, when you preview the deployed form in Enketo, you should be able to see the serial number within the note question as shown in the image below:</p>
 <p><img alt="image" src="_images/preview_form.png" /></p>
-</li>
-</ol>
 </section>
 <section id="creating-unique-serial-numbers-from-selected-variables">
 <h2>Creating Unique Serial Numbers from Selected Variables<a class="headerlink" href="#creating-unique-serial-numbers-from-selected-variables" title="Permalink to this headline">¶</a></h2>
-<p>This example shows how to create unique serial numbers from existing, already defined variables in your form by using the concat expression in a calculate question type. The example is shown as an XLSForm, but can just as easily be done within the formbuilder.</p>
-<p>Example:</p>
-<p><img alt="image" src="_images/xls.jpg" /></p>
-<p>When you preview the example in Enketo web forms, the serial number will be presented within the note question as shown in the image below:</p>
+<p>This example shows how to create unique serial numbers from existing, already defined variables in your form by using the <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#concat"><code class="docutils literal notranslate"><span class="pre">concat()</span></code></a> expression in a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question type. The example is shown as an XLSForm, but can just as easily be done within the form-builder.</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>calculation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>text</td>
+<td>Q1</td>
+<td>Region Name</td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Q2</td>
+<td>District Name</td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Q3</td>
+<td>Cluster Name</td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Q4</td>
+<td>Village Name</td>
+<td></td>
+</tr>
+<tr>
+<td>text</td>
+<td>Q5</td>
+<td>Household Serial Number</td>
+<td></td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>Q1_C</td>
+<td></td>
+<td>substr(${Q1}, 0, 3)</td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>Q2_C</td>
+<td></td>
+<td>substr(${Q2}, 0, 3)</td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>Q3_C</td>
+<td></td>
+<td>substr(${Q3}, 0, 3)</td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>Q4_C</td>
+<td></td>
+<td>substr(${Q4}, 0, 3)</td>
+</tr>
+<tr>
+<td>calculate</td>
+<td>ID</td>
+<td></td>
+<td>concat({Q1_C}, '-', {Q2_C}, '-', {Q3_C}, '-', {Q4_C}, '-', ${Q5})</td>
+</tr>
+<tr>
+<td>note</td>
+<td>note_id</td>
+<td>Your Unique ID for this form is: ${ID}</td>
+<td></td>
+</tr>
+</tbody>
+</table><p>When you preview the example in Enketo web forms, the serial number will be presented within the note question as shown in the image below:</p>
 <p><img alt="image" src="_images/preview_uniqueid.png" /></p>
 </section>
 </section>
