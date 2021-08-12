@@ -401,6 +401,7 @@ html body {
     justify-content: center;
   }
   .page.page--has-sidebar .page__content {
+    max-width: 70%;
     flex: 1;
   }
   .page.page--has-sidebar .page__sidebar {
