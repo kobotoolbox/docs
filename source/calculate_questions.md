@@ -35,4 +35,3 @@ There are a lot of different options available, such as the round() function (e.
 | `mod`                  | Modulus (division remainder) |
 | `pow([base], [power])` | Power / exponent             |
 
-<br/>

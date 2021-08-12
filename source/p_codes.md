@@ -46,4 +46,3 @@ __choices__
 | admin3    | 23   | Tacoma      | 12    | 16     |
 | admin3    | 24   | King        | 12    | 16     |
 
-<br/>

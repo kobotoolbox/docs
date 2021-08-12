@@ -30,8 +30,7 @@ For any other devices (including iPhones, iPads, or any laptop or computer), we 
 | `no-calendar` appearance                                                       | No                                          | Yes                                                    |
 | Advanced image appearances (`annotate`, `draw`, `signature`)                   | Yes                                         | Yes                                                    |
 | Calculation command `repeat_count()`                                           | Set a minimum number of repeat groups       | Set an exact number of repeat groups                   |
-
-<br/>
+
 
 ### Collecting data using KoBoCollect
 
