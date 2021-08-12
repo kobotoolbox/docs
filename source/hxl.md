@@ -2,9 +2,9 @@
 
 ## What exactly is HXL?
 
-HXL stands for **Humanitarian Exchange Language**. The goal of HXL is to improve information sharing during a humanitarian crisis by creating a simple way to promote interoperablity of data. It does this by coding the data through hashtags (#) similar to Twitter. For more information on HXL, please [visit here](http://hxlstandard.org).
+HXL stands for **Humanitarian Exchange Language**. The goal of HXL is to improve information sharing during a humanitarian crisis by creating a simple way to promote interoperability of data. It does this by coding the data through hashtags (#) similar to Twitter. For more information on HXL, please [visit here](https://hxlstandard.org).
 
-## How to use the HXL feature in the Formbuilder
+## How to use the HXL feature in the form-builder
 
 _Credits:  [David Megginson](http://www.megginson.com)_
 _Link to step-by-step [slide show guide](https://docs.google.com/presentation/d/123bHSkNh4T30CNq0i37IxOLfrqSC-3V_Khtkf6bIdg0/edit#slide=id.p)_
@@ -21,10 +21,21 @@ _Link to step-by-step [slide show guide](https://docs.google.com/presentation/d/
 
     ![image](/images/hxl/xls_affected.jpg)
 
-_Note: The hashtag before name is mandatory. Spaces are not allowed._
+<p class="note">The hashtag before name is mandatory and spaces are not allowed.</p>
 
 ## How to use HXL in an XLSForm
 
-When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column. See below for an example.
+When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column.
 
-![image](/images/hxl/xls.png)
+__survey__
+
+| type                 | name     | label                            | hxl        |
+| ---                  | ---      | ---                              | ---        |
+| select_one countries | country  | Select affected country          | #country   |
+| select_one admin1    | province | Please select the province       | #adm1+code |
+| select_one admin2    | county   | Select the county                | #adm2+name |
+| select_one sector    | cluster  | Cluster                          | #sector    |
+| integer              | affected | Number of people affected        | #affected  |
+| integer              | reached  | Number of people reached to date | #reached   |
+
+<br/>
