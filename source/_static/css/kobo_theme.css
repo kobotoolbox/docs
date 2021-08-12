@@ -449,8 +449,8 @@ html body {
   vertical-align: middle;
 }
 
-.page .page__body table {
-  max-width: 100%;
+.page .page__body ul {
+  margin-left: 1.5em;
 }
 
 .page .page__body pre {
