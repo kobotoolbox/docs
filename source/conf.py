@@ -99,3 +99,5 @@ html_js_files = [
     'js/custom_sections.js',
 ]
 
+html_favicon = 'images/index/favicon-32x32.png'
+
