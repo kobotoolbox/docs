@@ -21,13 +21,6 @@
           <div class="clearer"></div>
         </section>
 
-        {%- block relbar_bottom %}
-          {%- if theme_show_relbar_bottom|tobool and next or prev %}
-            <section class="page__related">
-              {{- rellink_markup () }}
-            </section>
-          {%- endif %}
-        {% endblock %}
       </section>
 
       {% if pagename != "index" %}

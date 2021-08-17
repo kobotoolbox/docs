@@ -225,60 +225,6 @@ html body {
   }
 }
 
-.page__related {
-  border-top: 1px solid $c_linkwater;
-  padding: rem(18px) 0;
-  margin: rem(45px) auto 0;
-  line-height: inherit;
-
-  nav#rellinks {
-    display: block;
-    width: 100%;
-    float: none;
-
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-
-      a {
-        color: inherit;
-        font-size: inherit;
-        border-bottom: none;
-        text-decoration: none;
-        display: inline-block;
-        vertical-align: middle;
-
-        &:hover {
-          color: $c_denim;
-          border-bottom: none;
-          text-decoration: underline;
-        }
-      }
-
-      li {
-        color: $c_blue;
-
-        &:first-of-type {
-          text-align: left;
-        }
-
-        &:last-of-type {
-          text-align: right;
-        }
-
-        & + li::before {
-          content: none;
-        }
-      }
-    }
-  }
-}
-
 .page__breadcrumbs {
   font-size: rem(18px);
   margin-bottom: rem(12px);
