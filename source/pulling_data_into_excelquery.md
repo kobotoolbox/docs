@@ -16,23 +16,32 @@ For seamless data analysis, you can leverage the KoBo API to pull your data into
 
 ![image](/images/pulling_data_excelquery/api_datalist.jpg)
 
-* This action will download a text file to your computer called __data__. You could open this file with a __Notepad__.
+* This action will download a text file to your computer called `data` which can be opened/viewed a text editor.
 
-* Next, locate your project's data structure inside the `data` file you downloaded. It will be in the following format: `id`, `id_string`, `title`, `description`, `url`. _For example:_
+* Next, locate your project's data structure inside the `data` file you downloaded. It will be in the following format: `id`, `id_string`, `title`, `description`, `url`.
 
-[(`'id'`, `1314`), (`'id_string'`, `'a7tAUbZp9Ad4MkvW7JSrft'`) (`'title'`, `'MIRA_DO'`), (`'description'`, `'MIRA_DO'`), (`'url'`, `'https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls'`)]
+__For example:__
 
-* To pull the data, take the form URL (`https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls`) and replace `?format=xls` to `.xls`. For our example, the URL should now be: [https://kc.humanitarianresponse.info/api/v1/data/1314.xls](https://kc.humanitarianresponse.info/api/v1/data/1314.xls)
+```
+[
+    ("id", "1314"),
+    ("id_string", "a7tAUbZp9Ad4MkvW7JSrft")("title", "MIRA_DO"),
+    ("description", "MIRA_DO"),
+    ("url", "https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls"),
+]
+```
+
+* To pull the data, take the form URL (`https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls`) and replace `?format=xls` with `.xls`. For our example, the URL should now be: `https://kc.humanitarianresponse.info/api/v1/data/1314.xls`
 
 ## Pulling data in Microsoft Excel (by making data public)
 
-Before transitioning over the Excel, make sure that there is at least 1 record stored in your data table in KoboToolbox. Once this is ensured, you could click on **Data** and under **Data** you will need to click on **From Web**. You should now get a dialogue box where you could paste your URL. With this, you should be able to have your data in Microsoft Excel (if you have made your data publicly by checking `Anyone can view submissions made to this form` from **SETTINGS>Sharing**).
+Before transitioning over to Excel, ensure that there is _at least one record_ stored in your data table in KoboToolbox _and_ that you have made your data public by checking __Anyone can view submissions made to this form__ from __SETTINGS>Sharing__. Then click on __Data__, and under __Data__, click on __From Web__. You should now see a dialogue box to paste your URL and start pulling data from the server.
 
 ![image](/images/pulling_data_excelquery/excel_updated.png)
 
 ## Pulling data in Microsoft Excel (without making data public)
 
-There are times when you do not wish to make your data public, instead you wish to use your login credentials to pull your data to Excel. If this is how you wish to pull your data into Excel, you could do the following:
+Rather than exposing your data publicly, you can use your KoBoToolbox login credentials to authenticate your request:
 
 * When you get the dialogue box, paste your URL.
 
@@ -42,7 +51,7 @@ There are times when you do not wish to make your data public, instead you wish 
 
 ![image](/images/pulling_data_excelquery/basic_authentication.png)
 
-* Then select `Basic`. You should be able to see a place where you are able to input your login credentials. Use your KoBoToolbox credentials and that should load your data to Excel.
+* Then select __Basic__. You should be able to see a place where you are able to input your login credentials. Use your KoBoToolbox credentials and that should load your data to Excel.
 
 ![image](/images/pulling_data_excelquery/login_credentials.png)
 
@@ -50,24 +59,24 @@ There are times when you do not wish to make your data public, instead you wish 
 
 ### Reset Excel's Data Source Settings
 
-Sometimes, you may not be able to see the dialogue box to input your login credentials. In such case, you will have to do the following to reset your Excel's `Data Source Settings`.
+Sometimes, you may not be able to see the dialogue box to input your login credentials. In such case, you will have to do the following to reset your Excel's __Data Source Settings__.
 
-* Click on **Data** and under **Data** you will need to click on **Get Data**. 
+* Click on __Data__ and under __Data__ you will need to click on __Get Data__.
 
 ![image](/images/pulling_data_excelquery/home.png)
 
-* Then click on `Data Source Settings`.
+* Then click on __Data Source Settings__.
 
 ![image](/images/pulling_data_excelquery/home_next.png)
 
-* You will now be able to see a dialogue box, `Data source settings`. Here, you will need to press `Clear Permissions`. With this, you should be able to see the dialogue box to input your login credentials.
+* You will now be able to see a dialogue box, __Data source settings__. Here, you will need to press __Clear Permissions__. With this, you should be able to see the dialogue box to input your login credentials.
 
 ![image](/images/pulling_data_excelquery/data_source_settings.png)
 
-If you wish to learn more on resetting your Excel's `Data Source Settings` feel free to explore [here](https://docs.microsoft.com/en-us/power-query/connectorauthentication).
+If you wish to learn more on resetting your Excel's __Data Source Settings__ feel free to explore [here](https://docs.microsoft.com/en-us/power-query/connectorauthentication).
 
 ### Updating Data in Microsoft Excel
 
-Once you have synced your KoBoToolbox with your Microsoft Excel through __Excel Power Query__, you should be able to have the dataset in Microsoft Excel. However, when the KoBoToolbox server is updated (i.e. through new submissions, deletion, amendments) your Microsoft Excel dataset does not get updated automatically. You could do this by refreshing the Excel document. For this you will need to click the **Data** and then select **Refresh All**. Any changes made in the KoBoToolbox server will now be manually updated in your Excel dataset. (Please follow this whenever you require an update with your Microsoft Excel dataset)
+Once you have synced KoBoToolbox with Excel through __Excel Power Query__, you should have the dataset stored locally. However, when the dataset on the server updates (i.e. through new submissions, deletions, amendments), your local dataset does not automatically update. To resync your data, you will need to click the __Data__ button and then __Refresh All__.
 
-_**Thanks to Awais Awan for writing the initial draft of this post.**_
+_Thanks to Awais Awan for writing the initial draft of this post._
