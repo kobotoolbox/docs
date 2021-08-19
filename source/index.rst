@@ -100,6 +100,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   export_gps
   pulling_data_into_excelquery
   howto_edit_single_submissions
+  howto_edit_multiple_submissions
   photo_download
   recovering_previous_formdata
   converting_to_spss_and_stata
@@ -107,6 +108,8 @@ Search the knowledge base, browse our resources and visit our forum for more det
   pulling_data_into_powerbi
   upload_to_gis
   row_level_permissions
+  dynamic_data_attachment
+  public_collections_advanced_search
   api
   data_storage
 

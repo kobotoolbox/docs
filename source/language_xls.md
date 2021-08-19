@@ -1,42 +1,65 @@
 # Adding Another Language to your XLSForm
 
-There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online [Project Dashboard](language_dashboard.md) or you can add them in an XLS Form and upload it to KoBo.
+There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online [Project Dashboard](language_dashboard.md) or you can add them in an XLSForm and upload it to KoBo.
 
 Here are detailed instructions on how you can add another language to your form:
 
-1. Create your form in the default language. This should be the language that the person responsible for designing the questionnaire is most comfortable with. When you are done, or when a significant portion of the form has been created, save it. You'll be returned to the draft form's project dashboard.
+* Create your form in the default language. This should be the language that the person responsible for designing the questionnaire is most comfortable with. When you are done, or when a portion of the form has been created, save it. You'll be returned to the draft form's project dashboard.
 
-2. Export the form to XLS.
+* Export the form to XLS.
 
-3. Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all work) (If you're in Excel it's possible you have to take the file out of Protected View first. [See here](https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&ui=en-US&rs=en-US&ad=US).) Your spreadsheet will have three sheets (see the little tabs at the bottom): survey, choices, settings. Stay in the survey sheet for now.
+* Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all work) (If you're in Excel it's possible you have to take the file out of Protected View first. [See here](https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&ui=en-US&rs=en-US&ad=US).) Your spreadsheet will have three sheets (see the little tabs at the bottom): __survey__, __choices__, __settings__. Stay in the __survey__ sheet for now.
 
-4. Find the column called 'label'. This is where your original question labels are stored. Insert another column to the right of label. In the header (first row) of this new column, write `label::language (code)`, for example `label::Français (fr)` or `label::English (en)`. Note: you can change the size of your columns, add colors or change the font size, none of these will affect your form.
+* Find the column called `label`. This is where your original question labels are stored. Insert another column to the right of label. In the header (first row) of this new column, write `label::language (code)`, for example `label::Français (fr)` or `label::English (en)`.
 
-5. Then, if you have hints in your form, the same needs to apply to that hint column, for example `hint::Français (fr)` or `hint::English (en)`.
+<p class="note">You can change the size of your columns, add colors or change the font size, none of these will affect your form.</p>
 
-    ![image](/images/language_xls/hints_updated.png)
+* Then, if you have hints in your form, the same needs to apply to the `hint` column, for example `hint::Français (fr)` or `hint::English (en)`.
 
-6. Now add your translations for every row inside the `label::yourlanguage (code)` column. When you are done, make sure you didn't skip any questions (for every field that has text inside the label column there should be text inside the `label::yourlanguage (code)` column). You can find the official 2-character language codes (subtags) [here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+__survey__
 
-    Tip: Copy-paste the original label column and then make changes to the translations so you don't leave anything blank by accident: It's better to have something showing in the wrong language than not having a blank question in some language. _You can repeat this step and add as many languages as you like, each in their separate columns and with a different name inside `label::yourlanguage (code)`._
+| type             | name           | label                          | relevant                  |
+| ---              | ---            | ---                            | ---                       |
+| text             | full_name      | What is your name?             |                           |
+| select_one yesno | children_yesno | Do you have any children?      |                           |
+| integer          | children_count | How many children do you have? | ${children_yesno} = 'yes' |
 
-    ![image](/images/language_xls/label_updated.png)
+* Now add your translations for every row inside the `label::language (code)` column. When you are done, make sure you didn't skip any questions (for every field that has text inside the label column there should be text inside the `label::language (code)` column). You can find the official 2-character language codes (subtags) [here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
-7. Now switch to the 'choices' sheet of your file. (If there is no such sheet in your file -you only have two sheets called survey and settings- then don't worry - your form doesn't use any multiple choice questions -- you're done! Skip the next step.)
+<p class="note">Tip: Copy-paste the original label column and then make changes to the translations so you don't leave anything blank by accident: It's better to have something showing in the wrong language than not having a blank question in some language. <em>You can repeat this step and add as many languages as you like, each in their separate columns and with a different name inside <code>label::language (code)</code>.</em></p>
 
-8. In the choices sheet you have another column called label. Repeat steps 5 and 6. Make sure that you use the exact same spelling for `label::yourlanguage (code)`. For example, `label::Francais (fr)` and `label::Français (fr)` are not identical.
+__survey__
 
-    ![image](/images/language_xls/choices_label_updated.png)
+| type             | name           | label:English (en)             | label::Français (fr)           | relevant                  |
+| ---              | ---            | ---                            | ---                            | ---                       |
+| text             | full_name      | What is your name?             | Quel est votre nom?            |                           |
+| select_one yesno | children_yesno | Do you have any children?      | Avez-vous des enfants?         |                           |
+| integer          | children_count | How many children do you have? | Combien des enfants avez-vous? | ${children_yesno} = 'yes' |
 
-9. In the settings sheet, underneath form_title edit the text of your form's title to something like "My form (English and French)" so you can easily identify it later.
+* Now switch to the __choices__ sheet of your file, if you have one.
 
-    ![image](/images/language_xls/form_title_updated.png)
+* In the __choices__ sheet you have another column called `label`. Repeat steps 5 and 6. Make sure that you use the exact same spelling for `label::language (code)`. For example, `label::Francais (fr)` and `label::Français (fr)` are not identical.
 
-10. Save your file and close Excel.
+__choices__
 
-11. Return to KoBoToolbox and click on "Replace with XLS", then upload your updated XLS Form. Choose the file you just finished editing and click OK.
+| list_name | name | label::English (en) | label::Français (fr) |
+| ---       | ---  | ---                 | ---                  |
+| yesno     | yes  | Yes                 | Oui                  |
+| yesno     | no   | No                  | Non                  |
 
-12. Open the form you just uploaded and click on Preview Form. At the top next to Choose Language click on the dropdown. It will have default (your original language) as well as the new language(s) you just added.
+* In the __settings__ sheet, underneath `form_title` edit the text of your form's title to something like "My form (English and French)" so you can easily identify it later.
+
+__settings__
+
+| form_title                   |
+| ---                          |
+| My form (English and French) |
+
+* Save your file and close Excel.
+
+* Return to KoBoToolbox and click on __Replace with XLS__, then upload your updated XLSForm. Choose the file you just finished editing and click __OK__.
+
+* Open the form you just uploaded and click on __Preview Form__. At the top next to __Choose Language__ click on the dropdown. It will have a default (your original language) as well as the new languages you just added.
 
 ## Translating to Tamil, Nepali, Hindi, etc. scripts
 
