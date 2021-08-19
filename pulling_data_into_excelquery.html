@@ -101,41 +101,81 @@
           
   <section id="pulling-data-into-excel-power-query">
 <h1>Pulling Data Into Excel Power Query<a class="headerlink" href="#pulling-data-into-excel-power-query" title="Permalink to this headline">¶</a></h1>
-<p>For seamless data analysis, you can leverage the KoBo API to pull your data into other tools for data analysis. This article covers how to connect to the API to pull your data into Excel Power Query.</p>
-<section id="kobo-api">
-<h2>KoBo API<a class="headerlink" href="#kobo-api" title="Permalink to this headline">¶</a></h2>
-<ol>
+<p>For seamless data analysis, you can leverage the KoBo API to pull your data into other tools for data analysis. This article covers how to connect to the API to pull your data into <strong>Excel Power Query</strong>.</p>
+<section id="getting-kobo-api-for-excel-power-query">
+<h2>Getting KoBo API for Excel Power Query<a class="headerlink" href="#getting-kobo-api-for-excel-power-query" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
 <li><p>Login to your account.</p></li>
-<li><p>Next, go to the API for your account by going to either  <a class="reference external" href="https://kc.humanitarianresponse.info/api/v1">https://kc.humanitarianresponse.info/api/v1</a> or <a class="reference external" href="https://kc.kobotoolbox.org/api/v1/">https://kc.kobotoolbox.org/api/v1/</a>. Select the URL for the instance in which your account is located.</p></li>
-<li><p>Under the Data heading, click on /api/v1/data</p>
+<li><p>Next, go to the API for your account by going to either <a class="reference external" href="https://kc.humanitarianresponse.info/api/v1">https://kc.humanitarianresponse.info/api/v1</a> or <a class="reference external" href="https://kc.kobotoolbox.org/api/v1/">https://kc.kobotoolbox.org/api/v1/</a>. Select the URL for the instance in which your account is located.</p></li>
+<li><p>Under the <strong>Data</strong> heading, click on <code class="docutils literal notranslate"><span class="pre">/api/v1/data</span></code>.</p></li>
+</ul>
 <p><img alt="image" src="_images/api_json.jpg" /></p>
-</li>
-<li><p>Click on “GET” and select “xls”.</p>
+<ul class="simple">
+<li><p>Click on <strong>GET</strong> and select <strong>xls</strong>.</p></li>
+</ul>
 <p><img alt="image" src="_images/api_datalist.jpg" /></p>
-</li>
-<li><p>This action will download a text file to your computer called “data”.</p></li>
-<li><p>Next, locate your project’s data structure inside the data file. It will be in the following format: description,id,id_string,title,url</p>
-<p><em>For example:</em></p>
-<p>MIRA_DO,1314,MIRA_DO,MIRA_DO, <a class="reference external" href="https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls">https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls</a></p>
-</li>
-<li><p>To pull the data, take the form URL (in bold in the above example) and replace “?format=xls” to “.xls”. For our example, the URL should now be:</p>
-<p><a class="reference external" href="https://kc.humanitarianresponse.info/api/v1/data/1314.xls">https://kc.humanitarianresponse.info/api/v1/data/1314.xls</a></p>
-</li>
-<li><p>Before transitioning over the Excel, make sure that there is a) at least 1 record stored in your data table in KoboToolbox and b) under the Project’s settings, set it to “share data publicly”.</p></li>
-</ol>
+<ul class="simple">
+<li><p>This action will download a text file to your computer called <code class="docutils literal notranslate"><span class="pre">data</span></code> which can be opened/viewed a text editor.</p></li>
+<li><p>Next, locate your project’s data structure inside the <code class="docutils literal notranslate"><span class="pre">data</span></code> file you downloaded. It will be in the following format: <code class="docutils literal notranslate"><span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">id_string</span></code>, <code class="docutils literal notranslate"><span class="pre">title</span></code>, <code class="docutils literal notranslate"><span class="pre">description</span></code>, <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p></li>
+</ul>
+<p><strong>For example:</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;1314&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;id_string&quot;</span><span class="p">,</span> <span class="s2">&quot;a7tAUbZp9Ad4MkvW7JSrft&quot;</span><span class="p">)(</span><span class="s2">&quot;title&quot;</span><span class="p">,</span> <span class="s2">&quot;MIRA_DO&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;MIRA_DO&quot;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;url&quot;</span><span class="p">,</span> <span class="s2">&quot;https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls&quot;</span><span class="p">),</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>To pull the data, take the form URL (<code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls</span></code>) and replace <code class="docutils literal notranslate"><span class="pre">?format=xls</span></code> with <code class="docutils literal notranslate"><span class="pre">.xls</span></code>. For our example, the URL should now be: <code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/api/v1/data/1314.xls</span></code></p></li>
+</ul>
 </section>
-<section id="microsoft-excel">
-<h2>Microsoft Excel<a class="headerlink" href="#microsoft-excel" title="Permalink to this headline">¶</a></h2>
-<ol>
-<li><p>In Excel, click on Data &gt; From Other Sources &gt; From Web and paste your URL. You should now be able to have your dataset in Microsoft Excel.</p>
-<p><img alt="image" src="_images/excel.jpg" /></p>
-</li>
-</ol>
+<section id="pulling-data-in-microsoft-excel-by-making-data-public">
+<h2>Pulling data in Microsoft Excel (by making data public)<a class="headerlink" href="#pulling-data-in-microsoft-excel-by-making-data-public" title="Permalink to this headline">¶</a></h2>
+<p>Before transitioning over to Excel, ensure that there is <em>at least one record</em> stored in your data table in KoboToolbox <em>and</em> that you have made your data public by checking <strong>Anyone can view submissions made to this form</strong> from <strong>SETTINGS&gt;Sharing</strong>. Then click on <strong>Data</strong>, and under <strong>Data</strong>, click on <strong>From Web</strong>. You should now see a dialogue box to paste your URL and start pulling data from the server.</p>
+<p><img alt="image" src="_images/excel_updated.png" /></p>
+</section>
+<section id="pulling-data-in-microsoft-excel-without-making-data-public">
+<h2>Pulling data in Microsoft Excel (without making data public)<a class="headerlink" href="#pulling-data-in-microsoft-excel-without-making-data-public" title="Permalink to this headline">¶</a></h2>
+<p>Rather than exposing your data publicly, you can use your KoBoToolbox login credentials to authenticate your request:</p>
+<ul class="simple">
+<li><p>When you get the dialogue box, paste your URL.</p></li>
+</ul>
+<p><img alt="image" src="_images/url1.png" /></p>
+<ul class="simple">
+<li><p>You should now see a new dialogue box as shown in the image below:</p></li>
+</ul>
+<p><img alt="image" src="_images/basic_authentication.png" /></p>
+<ul class="simple">
+<li><p>Then select <strong>Basic</strong>. You should be able to see a place where you are able to input your login credentials. Use your KoBoToolbox credentials and that should load your data to Excel.</p></li>
+</ul>
+<p><img alt="image" src="_images/login_credentials.png" /></p>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<section id="reset-excel-s-data-source-settings">
+<h3>Reset Excel’s Data Source Settings<a class="headerlink" href="#reset-excel-s-data-source-settings" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes, you may not be able to see the dialogue box to input your login credentials. In such case, you will have to do the following to reset your Excel’s <strong>Data Source Settings</strong>.</p>
+<ul class="simple">
+<li><p>Click on <strong>Data</strong> and under <strong>Data</strong> you will need to click on <strong>Get Data</strong>.</p></li>
+</ul>
+<p><img alt="image" src="_images/home.png" /></p>
+<ul class="simple">
+<li><p>Then click on <strong>Data Source Settings</strong>.</p></li>
+</ul>
+<p><img alt="image" src="_images/home_next.png" /></p>
+<ul class="simple">
+<li><p>You will now be able to see a dialogue box, <strong>Data source settings</strong>. Here, you will need to press <strong>Clear Permissions</strong>. With this, you should be able to see the dialogue box to input your login credentials.</p></li>
+</ul>
+<p><img alt="image" src="_images/data_source_settings.png" /></p>
+<p>If you wish to learn more on resetting your Excel’s <strong>Data Source Settings</strong> feel free to explore <a class="reference external" href="https://docs.microsoft.com/en-us/power-query/connectorauthentication">here</a>.</p>
 </section>
 <section id="updating-data-in-microsoft-excel">
-<h2>Updating Data in Microsoft Excel<a class="headerlink" href="#updating-data-in-microsoft-excel" title="Permalink to this headline">¶</a></h2>
-<p>Once you have synced your KoBoToolbox with your Microsoft Excel through Excel Power Query, you should be able to have the dataset in Microsoft Excel. However, when the KoBoToolbox server is updated (i.e. through new submissions, deletion, amendments) your Microsoft Excel dataset does not get updated automatically. You could do this by refreshing the Excel document. For this you will need to click the <strong>Data</strong> and then select <strong>Refresh All</strong>. Any changes made in the KoBoToolbox server will now be manually updated in your Excel dataset. (Please follow this whenever you require an update with your Microsoft Excel dataset)</p>
-<p><em><strong>Thanks to Awais Awan for writing the initial draft of this post.</strong></em></p>
+<h3>Updating Data in Microsoft Excel<a class="headerlink" href="#updating-data-in-microsoft-excel" title="Permalink to this headline">¶</a></h3>
+<p>Once you have synced KoBoToolbox with Excel through <strong>Excel Power Query</strong>, you should have the dataset stored locally. However, when the dataset on the server updates (i.e. through new submissions, deletions, amendments), your local dataset does not automatically update. To resync your data, you will need to click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p>
+<p><em>Thanks to Awais Awan for writing the initial draft of this post.</em></p>
+</section>
 </section>
 </section>
 
@@ -243,9 +283,10 @@
 <li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Viewing and Creating Custom Reports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, Sharing, and Exporting GPS Data</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Pulling Data Into Excel Power Query</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#kobo-api">KoBo API</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#microsoft-excel">Microsoft Excel</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#updating-data-in-microsoft-excel">Updating Data in Microsoft Excel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#getting-kobo-api-for-excel-power-query">Getting KoBo API for Excel Power Query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pulling-data-in-microsoft-excel-by-making-data-public">Pulling data in Microsoft Excel (by making data public)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pulling-data-in-microsoft-excel-without-making-data-public">Pulling data in Microsoft Excel (without making data public)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editing or Deleting a Single Submission</a></li>
