@@ -101,25 +101,84 @@
           
   <section id="row-level-permissions">
 <h1>Row-Level Permissions<a class="headerlink" href="#row-level-permissions" title="Permalink to this headline">¶</a></h1>
-<p>The Row-Level Permissions feature allows owners of a project to create three levels of project permissions for users related to viewing submissions. Those three levels are:</p>
-<ol class="simple">
-<li><p>User can view all submitted data</p></li>
-<li><p>User can view data submitted by a subset of users only</p></li>
-<li><p>User can view data submitted by oneself only</p></li>
-</ol>
-<p><strong>To make use of this feature, please follow the steps below.</strong></p>
-<p>Make sure that your account settings are set to ‘Require authentication to see forms and submitted data’.</p>
-<p><img alt="image" src="_images/setting.jpg" /></p>
-<p>Access the Sharing settings through either the project Summary or Settings tab. For the purposes of this help article, the screenshots show the Sharing Permissions modal that opens from the project Summary tab, but the steps are the same no matter which Sharing settings page you use.</p>
-<p><img alt="image" src="_images/summary1.jpg" /></p>
-<p>In the Sharing Permissions modal, click the <code class="docutils literal notranslate"><span class="pre">ADD</span> <span class="pre">USER</span></code> button.</p>
-<p><img alt="image" src="_images/add_user.jpg" /></p>
-<p>Enter the name of the user you wish to set the <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">submissions</span></code> settings for at the top. Then click the checkbox <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">submissions</span></code> below. If you wish for the user to be able to view all submissions in the project, then no further action is needed. If you wish to restrict the user to view data submitted only by a subset of users, then click the <code class="docutils literal notranslate"><span class="pre">View</span> <span class="pre">submissions</span> <span class="pre">only</span> <span class="pre">from</span> <span class="pre">specific</span> <span class="pre">users</span></code> checkbox. Enter in the subset of usernames, separated by spaces, in the line below. If you wish for the user to only view data submitted by themselves, then only enter in their username. Once all the desired users are entered, click <code class="docutils literal notranslate"><span class="pre">GRANT</span> <span class="pre">PERMISSIONS</span></code>.</p>
-<p><img alt="image" src="_images/permission.jpg" /></p>
-<p>Example of a user having permission to view submitted data from a subset of users:</p>
-<p><img alt="image" src="_images/example_subset.jpg" /></p>
-<p>Example of a user having permission to view only their own submitted data:</p>
-<p><img alt="image" src="_images/example_own.jpg" /></p>
+<p>The <strong>row-level</strong> permissions are an extension of the <a class="reference internal" href="managing_permissions.html"><span class="doc">existing permissions</span></a> features and allow project owners to create four different levels of permissions for a shared project. To find this functionality, simply go to project <strong>SETTINGS</strong> and click on the <strong>Sharing</strong> section. You will see a screen as shown below.</p>
+<p><img alt="image" src="_images/Options.png" /></p>
+<p>As of August 2021, the management of project permissions has been extended to allow for a total of four <strong>row-level</strong> access permissions that include:</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Row-level permission</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>View submissions only from specific users</strong></td>
+<td><em>View data</em> submitted by a subset of defined data entry users.</td>
+</tr>
+<tr>
+<td><strong>Edit submissions only from specific users</strong></td>
+<td><em>Edit data</em> submitted by a subset of defined data entry users.</td>
+</tr>
+<tr>
+<td><strong>Delete submissions only from specific users</strong></td>
+<td><em>Delete data</em> submitted by a subset of defined data entry users.</td>
+</tr>
+<tr>
+<td><strong>Validate submissions only from specific users</strong></td>
+<td><a class="reference" href="record_validation.html"><i>Validate data</i></a> submitted by a subset of defined data entry users.</td>
+</tr>
+</tbody>
+</table><p class="note">Please note that some permissions imply others. For example, if <i>Alice</i> has <strong>Edit submissions only from specific users</strong> only for <i>Bob</i>, then this implies that <i>Alice</i> also has <strong>View submissions only from specific users</strong> for <i>Bob</i>.</p><section id="configure-your-account-settings">
+<h2>Configure your Account Settings:<a class="headerlink" href="#configure-your-account-settings" title="Permalink to this headline">¶</a></h2>
+<p>Before configuring project sharing, you will need to open your <strong>ACCOUNT SETTINGS</strong> and toggle the checkbox <strong>Require authentication to see forms and submitted data</strong>. If this configuration is left unchecked, setting row-level permissions will not work as expected.</p>
+<p><img alt="image" src="_images/Accounts_Settings.png" /></p>
+</section>
+<section id="managing-row-level-permissions">
+<h2>Managing Row Level Permissions:<a class="headerlink" href="#managing-row-level-permissions" title="Permalink to this headline">¶</a></h2>
+<p>In this example, three user accounts are presented to demonstrate how the feature works. <em>kalyan1</em> represents the <em>admin</em> or <em>owner</em> of the survey project (as seen in the previous images). <em>kalyan2</em> and <em>kalyan3</em> represent different users receiving permissions. <strong>Require authentication to see forms and submitted data</strong> has been checked for <em>kalyan1</em>.</p>
+<section id="view-submissions-only-from-specific-users">
+<h3>View submissions only from specific users:<a class="headerlink" href="#view-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
+<p><em>kalyan1</em> can share row-level permissions with <em>kalyan2</em>, where they can <em>view</em> submissions made from <em>kalyan2</em>.</p>
+<p><video controls><source src="./_static/files/row_level_permissions/1_View_submissions_1.mp4" type="video/mp4"></video></p>
+<p>Row-level permissions can also be set for <em>kalyan3</em> such that they can only <em>view</em> submissions made by <em>kalyan2</em>.</p>
+<p><video controls><source src="./_static/files/row_level_permissions/2_View_submissions_2.mp4" type="video/mp4"></video></p>
+</section>
+<section id="edit-submissions-only-from-specific-users">
+<h3>Edit submissions only from specific users:<a class="headerlink" href="#edit-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
+<p>In this case, <em>kalyan1</em> can share row-level permissions with <em>kalyan2</em>, where they can <em>view</em> and <em>edit</em> submissions made from <em>kalyan2</em>.</p>
+<p><video controls><source src="./_static/files/row_level_permissions/3_Edit_Submission_1.mp4" type="video/mp4"></video></p>
+<p>As with view permissions, the same can be done for <em>kalyan3</em> to only <em>view</em> and <em>edit</em> submissions from <em>kalyan2</em>.</p>
+<p><video controls><source src="./_static/files/row_level_permissions/4_Edit_Submission_2.mp4" type="video/mp4"></video></p>
+</section>
+<section id="delete-submissions-only-from-specific-users">
+<h3>Delete submissions only from specific users:<a class="headerlink" href="#delete-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
+<p>In this case, <em>kalyan1</em> can share row-level permissions with <em>kalyan2</em>, where they can <em>view</em> and <em>delete</em> submissions made from <em>kalyan2</em>.</p>
+<p><video controls><source src="./_static/files/row_level_permissions/5_Delete_Submissions_1.mp4" type="video/mp4"></video></p>
+<p>The same can be done for <em>kalyan3</em> to only <em>view</em> and <em>delete</em> submissions from <em>kalyan2</em>.</p>
+<p><video controls><source src="./_static/files/row_level_permissions/6_Delete_Submissions_2.mp4" type="video/mp4"></video></p>
+</section>
+<section id="validate-submissions-only-from-specific-users">
+<h3>Validate submissions only from specific users:<a class="headerlink" href="#validate-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
+<p>In this case, <em>kalyan1</em> can share row-level permissions with <em>kalyan2</em> where they can <em>view</em> and <em>validate</em> submissions made from <em>kalyan2</em>.</p>
+<p><video controls><source src="./_static/files/row_level_permissions/7_Validate_Submissions_1.mp4" type="video/mp4"></video></p>
+<p>The same can be done for <em>kalyan3</em> to only <em>view</em> and <em>validate</em> submissions from <em>kalyan2</em>.</p>
+<p><video controls><source src="./_static/files/row_level_permissions/8_Validate_Submissions_2.mp4" type="video/mp4"></video></p>
+</section>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<section id="scenario-1">
+<h3>Scenario 1:<a class="headerlink" href="#scenario-1" title="Permalink to this headline">¶</a></h3>
+<p>You may come across this dialogue box <em>(as shown in the image below)</em> when submitting data with the <strong>Require authentication to see forms and submitted data</strong> option checked in KoBoToolbox.</p>
+<p><img alt="image" src="_images/Login.png" /></p>
+<p>Enter your KoBoToolbox login credentials and, if the account has <strong>Add submissions</strong> permission, you will be able to submit data to the server.</p>
+<p class="note">Note that it’s advised not to share your admin login credentials when managing your project for data security. You can create multiple enumerator accounts and share those credentials with your team.</p></section>
+<section id="scenario-2">
+<h3>Scenario 2:<a class="headerlink" href="#scenario-2" title="Permalink to this headline">¶</a></h3>
+<p>To set the <em>view</em>, <em>edit</em>, <em>delete</em> and <em>validate</em> row-level permissions correctly on submissions from a subset of users, the <strong>Require authentication to see forms and submitted data</strong> option must be checked <em>before</em> data is collected. Otherwise only data collected after this option is checked will be restricted as expected.</p>
+</section>
+</section>
 </section>
 
 
@@ -234,7 +293,12 @@
 <li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling Data Into PowerBI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and Uploading Data to GIS Software</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Row-Level Permissions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Row-Level Permissions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configure-your-account-settings">Configure your Account Settings:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-row-level-permissions">Managing Row Level Permissions:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting:</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic Data Attachments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Public Collections Advanced Search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
