@@ -26,19 +26,19 @@ This example shows how to create unique serial numbers from existing, already de
 
 __survey__
 
-| type      | name    | label                                  | calculation                                                       |
-| ---       | ---     | ---                                    | ---                                                               |
-| text      | Q1      | Region Name                            |                                                                   |
-| text      | Q2      | District Name                          |                                                                   |
-| text      | Q3      | Cluster Name                           |                                                                   |
-| text      | Q4      | Village Name                           |                                                                   |
-| text      | Q5      | Household Serial Number                |                                                                   |
-| calculate | Q1_C    |                                        | substr(${Q1}, 0, 3)                                               |
-| calculate | Q2_C    |                                        | substr(${Q2}, 0, 3)                                               |
-| calculate | Q3_C    |                                        | substr(${Q3}, 0, 3)                                               |
-| calculate | Q4_C    |                                        | substr(${Q4}, 0, 3)                                               |
-| calculate | ID      |                                        | concat({Q1_C}, '-', {Q2_C}, '-', {Q3_C}, '-', {Q4_C}, '-', ${Q5}) |
-| note      | note_id | Your Unique ID for this form is: ${ID} |                                                                   |
+| type      | name    | label                                  | calculation                                                           |
+| ---       | ---     | ---                                    | ---                                                                   |
+| text      | Q1      | Region Name                            |                                                                       |
+| text      | Q2      | District Name                          |                                                                       |
+| text      | Q3      | Cluster Name                           |                                                                       |
+| text      | Q4      | Village Name                           |                                                                       |
+| text      | Q5      | Household Serial Number                |                                                                       |
+| calculate | Q1_C    |                                        | substr(${Q1}, 0, 3)                                                   |
+| calculate | Q2_C    |                                        | substr(${Q2}, 0, 3)                                                   |
+| calculate | Q3_C    |                                        | substr(${Q3}, 0, 3)                                                   |
+| calculate | Q4_C    |                                        | substr(${Q4}, 0, 3)                                                   |
+| calculate | ID      |                                        | concat(${Q1_C}, '-', ${Q2_C}, '-', ${Q3_C}, '-', ${Q4_C}, '-', ${Q5}) |
+| note      | note_id | Your Unique ID for this form is: ${ID} |                                                                       |
 
 When you preview the example in Enketo web forms, the serial number will be presented within the note question as shown in the image below:
 
