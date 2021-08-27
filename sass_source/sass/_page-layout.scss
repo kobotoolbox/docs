@@ -8,16 +8,20 @@ html body {
 
     padding-top: rem(45px);
     padding-bottom: rem(45px);
+    max-width: 100%;
   }
 
   &.page--has-sidebar {
     @include screen-big() {
       .page__wrapper {
+        max-width: 77.5rem;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
       }
 
       .page__content {
+        max-width: 70%;
         flex: 1;
       }
 
@@ -69,9 +73,35 @@ html body {
       vertical-align: middle;
     }
 
+    ul {
+      margin-left: 1.5em;
+    }
+
+    table {
+      margin-bottom: 1.5em;
+    }
+
+    pre {
+      background-color: $c_solitude;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+    }
+
     p {
       margin: 0 auto rem(18px);
       font-weight: 300;
+    }
+
+    p.note {
+      display: block;
+      border: 2px solid $c_denim;
+      border-radius: 4px;
+      padding: 1em 0.8em;
     }
 
     p,
