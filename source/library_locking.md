@@ -1,6 +1,6 @@
-## Overview
+## Library locking
 
-"Library locking" refers to the feature enabling various aspects of a survey to be "[locked](#locked)" when created from a template containing [locking attributes](#restrictions). All aspects of a form's editing are available to be locked through the assigning of "[locking profiles](#profile)" at the form, question or group level. These locking profiles can be assigned granular "[restrictions](#restriction)" that group together locking functionalities. Alternatively, the form can be fully locked down, preventing editing of all aspects of the form.
+"Library locking" refers to the feature enabling various aspects of a survey to be "[locked](#locked)" when created from a template containing [locking attributes](#restrictions). All aspects of a form's editing are available to be locked through the assigning of "[locking profiles](#profile)" at the form, question or group level. These locking profiles can be assigned granular "[restrictions](#restriction)" that group together locking functionalities. Alternatively, the form can be fully locked down, preventing all aspects of editing.
 
 <p class="note">Currently, only locking set within the XLSForm itself is supported, but will be incorporated into the form-builder at some point in the future.</p>
 
@@ -21,15 +21,17 @@ Additionally, there is a [`kobo--lock_all`](#id1) Boolean that can set in the `s
 
 If `kobo--lock_all` is set to `True`, then all additional granular restrictions are redundant as the form is _fully_ locked down. If it is set to `False` _or_ omitted from the `settings` sheet, then defined locking profiles can be used to control the locked behaviour:
 
+__settings__
+
 | kobo--lock_all |
 |----------------|
 | true           |
 
-The accepted strings for the value of `kobo--lock_all` are the same as in the `survey` sheet that [pyxform supports](https://github.com/XLSForm/pyxform/blob/43ea039250f44cff23b3ad10740fca54dfa12383/pyxform/aliases.py#L127-L142). No error will be thrown if an invalid string is used, only the form will not function as intended from the user's perspective.
+The accepted values for `kobo--lock_all` are the same as in the `survey` sheet that [pyxform supports](https://github.com/XLSForm/pyxform/blob/43ea039250f44cff23b3ad10740fca54dfa12383/pyxform/aliases.py#L127-L142). No error will be thrown if an invalid value is used, only the form will not function as intended from the user's perspective.
 
 <p class="note">Note that the restriction name, such as <code>choice_add</code> below, is <strong>predefined</strong> and only the restrictions listed below are valid options.</p>
 
-### Question-level Restrictions
+### Question-level restrictions
 
 | Name                       | Description                                                        |
 |----------------------------|--------------------------------------------------------------------|
@@ -44,32 +46,32 @@ The accepted strings for the value of `kobo--lock_all` are the same as in the `s
 | `question_skip_logic_edit` | Edit a question's skip logic settings (`relevant`)                 |
 | `question_validation_edit` | Edit a question's validation criteria settings (`constraint`)      |
 
-### Group-level Restrictions
+### Group-level restrictions
 
-| Name                        | Description                                                                                          |
-|-----------------------------|------------------------------------------------------------------------------------------------------|
-| `group_delete`              | Delete group modal "Delete everything" button (or delete group button if paired with `group_split`)  |
-| `group_split`               | Delete group modal "Ungroup questions" button (or delete group button if paired with `group_delete`) |
-| `group_label_edit`          | Edit a group `label`                                                                                 |
-| `group_question_add`        | Adding or cloning questions inside given group (children groups included)                            |
-| `group_question_delete`     | Delete any question from given group (children groups questions included)                            |
-| `group_question_order_edit` | Changing order of questions inside given group (children groups included)                            |
-| `group_settings_edit`       | Changing "All group settings" from given group "Settings"                                            |
-| `group_skip_logic_edit`     | Changing "Skip Logic" from given group "Settings"                                                    |
+| Name                        | Description                                                                                            |
+|-----------------------------|--------------------------------------------------------------------------------------------------------|
+| `group_delete`              | Delete group modal __Delete everything__ button (or delete group button if paired with `group_split`)  |
+| `group_split`               | Delete group modal __Ungroup questions__ button (or delete group button if paired with `group_delete`) |
+| `group_label_edit`          | Edit a group `label`                                                                                   |
+| `group_question_add`        | Adding or cloning questions inside given group (children groups included)                              |
+| `group_question_delete`     | Delete any question from given group (children groups questions included)                              |
+| `group_question_order_edit` | Changing order of questions inside given group (children groups included)                              |
+| `group_settings_edit`       | Changing __All group settings__ from given group __Settings__                                          |
+| `group_skip_logic_edit`     | Changing __Skip Logic__ from given group __Settings__                                                  |
 
-### Form-level Restrictions
+### Form-level restrictions
 
-| Name                  | Description                                                                            |
-|-----------------------|----------------------------------------------------------------------------------------|
-| `form_appearance`     | Changing form appearance from "Layout & Settings"                                      |
-| `form_replace`        | Replacing form using Replace Form modal                                                |
-| `group_add`           | Button for grouping questions                                                          |
-| `question_add`        | Using "Insert cascading select" option and each Add Question and Clone Question button |
-| `question_order_edit` | Changing any questions order                                                           |
-| `language_edit`       | Edit languages in Translations Modal                                                   |
-| `form_meta_edit`      | Edit meta questions from "Layout & Settings"                                           |
+| Name                  | Description                                                                                      |
+|-----------------------|--------------------------------------------------------------------------------------------------|
+| `form_appearance`     | Changing form appearance from __Layout & Settings__                                              |
+| `form_replace`        | Replacing form using __Replace Form__ modal                                                      |
+| `group_add`           | Button for grouping questions                                                                    |
+| `question_add`        | Using __Insert cascading select__ option and each __Add Question__ and __Clone Question__ button |
+| `question_order_edit` | Changing any questions order                                                                     |
+| `language_edit`       | Edit languages in __Translations Modal__                                                         |
+| `form_meta_edit`      | Edit meta questions from __Layout & Settings__                                                   |
 
-## XLSForm Configuration
+## XLSForm configuration
 
 There are three sheets where locking profiles are defined and set: `survey`, `settings` and [`kobo--locking-profiles`](#id2). The sheet of `kobo--locking-profiles` is not officially supported by [pyxform](https://github.com/XLSForm/pyxform) and is KoBoToolbox-specific.
 
@@ -79,7 +81,7 @@ From within the `kobo--locking-profiles` sheet, all the locking profiles are def
 
 __kobo--locking-profiles__
 
-Define the profiles and assign them restrictions.
+Define the profiles and assign them restrictions. There is no limit on the number of profiles that can be defined (`profile_1`, ..., `profile_n`) but there are **only three** colours that differentiate their locking appearance in the form-builder.
 
 | restriction       | profile_1 | profile_2 | profile_3 |
 |-------------------|-----------|-----------|-----------|
@@ -99,7 +101,7 @@ Set form-level restrictions and [`kobo--lock_all`](#id1) Boolean.
 |-----------------------|----------------|
 | profile_3             | false          |
 
-<p class="note">Note that omitting <code>kobo--lock_all</code> from the settings sheet is the equivalent of setting it to <code>False</code>.</p>
+<p class="note">Note that omitting <code>kobo--lock_all</code> from the <code>settings</code> sheet is equivalent to setting it to <code>False</code>.</p>
 
 __survey__
 
@@ -123,15 +125,55 @@ No restrictions can be set in the `choices` sheet.
 | cities    | baltimore | Baltimore                |
 | cities    | boston    | Boston                   |
 
-When the following locked template is used to create a new project, the form-builder will look like the following:
+<i>This example XLSForm can be downloaded <a download class="reference" href="/_static/files/library_locking/library-locking-example.xlsx">here</a>.</i>
 
-XXX
+### Import locked XLSForms
 
-### Form Validation
+Import your XLSForm as a `template` through the KoBoToolbox UI by navigating to your __Library__ and clicking on __NEW__ and then __Upload__. Ensure that you select `template` from the __Choose desired type__ drop-down menu and then import your XLSForm.
+
+![choose template type](/images/library_locking/import-template.png)
+
+The locked template will now show in your library list view with a lock symbol.
+
+![library list](/images/library_locking/library-list-view.png)
+
+### Create project from locked template
+
+Once a locked template has been added to your library -- either directly through importing an XLSForm as a template, creating a template based on a locked survey or adding a locked template from the public collections -- you can create a new project. In the __Projects__ section of the UI, click on __NEW__ and then __Use a template__.
+
+![create project from template](/images/library_locking/create-project-from-template.png)
+
+- Choose the locked template you want to use to create the new project.
+
+![select template](/images/library_locking/select-template-for-new-project.png)
+
+- From there, continue to create the project.
+
+![create project](/images/library_locking/create-project.png)
+
+When this example locked template is used to create a new project, the form-builder will look like the following:
+
+- The grayed out areas are those that have been disabled through the restrictions.
+
+![overview](/images/library_locking/form-builder.png)
+
+- A dialogue box above the first question will show an overview of some of the form's restrictions.
+
+![dialogue box](/images/library_locking/form-builder-dialogue-box.png)
+
+- Each question with locking profiles will display, in its settings, which restrictions have been set.
+
+![question restrictions](/images/library_locking/form-builder-question-settings.png)
+
+- Some form-level settings will also be greyed out.
+
+![form-level restrictions](/images/library_locking/form-style.png)
+
+### Form validation
 
 The following cases will currently throw a `FormPackLibraryLockingError`:
 - If a locking profile name (column header in the `kobo--locking-profiles` sheet) is "locked" (the same as the locking keyword)
-- If a restriction listed in `kobo--locking-profiles` is invalid (not in the list of predefined restrictions)
+- If a restriction listed in `kobo--locking-profiles` is invalid (not in the list of [predefined restrictions](#restrictions))
 - If there is a sheet called `kobo--locking-profiles` but no `restriction` column
 - If no locking profiles are defined (column headers in the `kobo--locking-profiles` sheet)
 
@@ -139,19 +181,17 @@ The following cases will currently throw a `FormPackLibraryLockingError`:
 
 ### Caveats
 
-In some spreadsheet editors, two single dashes (--) are automatically converted to an m-dash (—), therefore making it difficult to type `kobo--` into a cell. We therefore convert all instances of n- and m-dashes into two single dashes (when prefixed with `kobo`). An XLSForm with the sheet name of "kobo—locking-profiles" will be converted to "kobo--locking-profiles" and similarly for the column headers.
+In some spreadsheet editors, two single dashes (`--`) are automatically converted to an m-dash (—), therefore making it difficult to type `kobo--` into a cell. We therefore convert all instances of n- and m-dashes into two single dashes (when prefixed with `kobo`). An XLSForm with the sheet name of "kobo—locking-profiles" will be converted to `kobo--locking-profiles` and similarly for the column headers.
 
-## JSON Representation
+## JSON representation
 
 There are two attributes of the asset where locking information can be accessed and modified: `asset.summary` and `asset.content`.
 
 If [`kobo--locking-profile`](#kobo-locking-profile) is a column name in the `survey` sheet, it will also be listed in the `asset.summary.columns` array.
 
-In the summary, the following two Boolean attributes describe an overview of the form's locking structure (and locking appearance in the list view in the UI):
+In `asset.summary`, the following two Boolean attributes describe an overview of the form's locking structure:
 - `lock_all`, and
 - `lock_any`
-
-XXX
 
 The logic by which each of those Booleans are set is as follows:
 - `lock_all` is `True` _only_ if `kobo--lock_all` is set to `True` in the `settings` sheet, otherwise it's `False`
@@ -175,24 +215,25 @@ In the example above, the following will be present in the `asset.summary`:
 }
 ```
 
-In the content, an attribute of `content.kobo--locking-profiles` exists as an array of JSON objects with the following structure:
+In `asset.content`, an attribute of `content.kobo--locking-profiles` exists as an array of JSON objects with the following structure:
 
-```json
+```
 [
   {
     "name": "profile_1",
     "restrictions": [
       "choice_add",
       "choice_label_edit",
-      "choice_order_edit",
+      "choice_order_edit"
     ]
-  }
+  },
+  ...
 ]
 ```
 
 In `content.settings`, the following will be present in a JSON object:
 
-```json
+```
 {
   "kobo--locking-profile": "profile_3",
   "kobo--lock_all": false
@@ -201,28 +242,31 @@ In `content.settings`, the following will be present in a JSON object:
 
 And finally in `content.survey`, each question that has been assigned a locking profile will have a `kobo--locking-profile` attribute as follows:
 
-```json
+```
 [
   {
     "name": "country",
     "type": "select_one",
+    ...
     "kobo--locking-profile": "profile_1"
   },
   {
     "name": "city",
     "type": "select_one",
+    ...
     "kobo--locking-profile": "profile_2"
-  }
+  },
+  ...
 ]
 ```
 
-## Locking Profiles and Asset Types
+## Locking profiles and asset types
 
 Of the four asset types (`asset`, `template`, `question` and `block`), only `template`s and `survey`s handle library locking features and the locks are enforced _only_ on surveys. Practically, this means the following:
 
 Assume an XLSForm containing valid locking features is imported:
 - If imported as a `block`, then all traces of locking are excluded and/or stripped from the asset. This results in a `block` asset that will be equivalent to the same form uploaded without any locking features;
-- If imported as a `survey` (imported through the Projects section) or `template` then all locks are intact:
+- If imported as a `survey` (imported through the __Projects__ section) or `template` then all locks are intact:
   - If, from within the form-builder:
     - a question is added to the library, then all locks are stripped from the new `question` asset
     - a group of questions is added to the library as a `block`, then all locks are stripped
@@ -247,12 +291,6 @@ Assume an XLSForm containing valid locking features is imported:
 | `question`          | import to `survey`      | not locked               |
 | `question`          | import to `template`    | not locked               |
 | `question`          | `question` to `block`   | not locked               |
-
-### Importing Locked XLSForms
-
-Import as a template through the KoBoToolbox UI as follows:
-
-XXX
 
 ## Terminology
 

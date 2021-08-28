@@ -65,6 +65,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   deploy_form_new_project
   question_library
   external_file
+  library_locking
 
 .. toctree::
   :maxdepth: 2
