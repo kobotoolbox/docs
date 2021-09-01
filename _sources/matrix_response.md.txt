@@ -40,6 +40,7 @@ __survey__
 | begin_kobomatrix | M1   | Items                                |          | assets            |
 | select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |
 | integer          | Q2   | Q2. Number of assets                 | TRUE     |                   |
+| end_kobomatrix   |      |                                      |          |                   |
 
 __choices__
 
@@ -49,7 +50,7 @@ __choices__
 | assets    | bike | Bike  |
 | assets    | tv   | TV    |
 | yn        | yes  | Yes   |
-| no        | no   | No    |
+| yn        | no   | No    |
 
 __settings__
 
@@ -62,3 +63,15 @@ __settings__
 Following the steps above, you should see the question matrix shown in the screenshot below (In [Enketo](data_through_webforms.md) only):
 
 ![image](/images/matrix_response/preview.png)
+
+It is also possible to include `relevant` and `constraint` conditions within the matrix as follows:
+
+__survey__
+
+| type             | name | label                                | required | kobo--matrix_list | relevant      | constraint |
+| ---              | ---  | ---                                  | ---      | ---               | ---           | ---        |
+| begin_kobomatrix | M1   | Items                                |          | assets            |               |            |
+| select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |               |            |
+| integer          | Q2   | Q2. Number of assets                 | TRUE     |                   | ${Q1} = 'yes' | . > 2      |
+| end_kobomatrix   |      |                                      |          |                   |               |            |
+

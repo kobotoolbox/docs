@@ -158,6 +158,13 @@
 <td>TRUE</td>
 <td></td>
 </tr>
+<tr>
+<td>end_kobomatrix</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
 </tbody>
 </table><p><strong>choices</strong></p>
 <table border="1" class="docutils">
@@ -190,7 +197,7 @@
 <td>Yes</td>
 </tr>
 <tr>
-<td>no</td>
+<td>yn</td>
 <td>no</td>
 <td>No</td>
 </tr>
@@ -209,7 +216,59 @@
 </tbody>
 </table><p class="note">This method uses <code>begin_kobomatrix</code>, <code>end_kobomatrix</code> and <code>kobo—matrix_list</code>.</p><p>Following the steps above, you should see the question matrix shown in the screenshot below (In <a class="reference internal" href="data_through_webforms.html"><span class="doc">Enketo</span></a> only):</p>
 <p><img alt="image" src="_images/preview1.png" /></p>
-</section>
+<p>It is also possible to include <code class="docutils literal notranslate"><span class="pre">relevant</span></code> and <code class="docutils literal notranslate"><span class="pre">constraint</span></code> conditions within the matrix as follows:</p>
+<p><strong>survey</strong></p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>type</th>
+<th>name</th>
+<th>label</th>
+<th>required</th>
+<th>kobo--matrix_list</th>
+<th>relevant</th>
+<th>constraint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>begin_kobomatrix</td>
+<td>M1</td>
+<td>Items</td>
+<td></td>
+<td>assets</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>select_one yn</td>
+<td>Q1</td>
+<td>Q1. Which assets do you have at home</td>
+<td>TRUE</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>integer</td>
+<td>Q2</td>
+<td>Q2. Number of assets</td>
+<td>TRUE</td>
+<td></td>
+<td>${Q1} = 'yes'</td>
+<td>. &gt; 2</td>
+</tr>
+<tr>
+<td>end_kobomatrix</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></section>
 </section>
 
 
