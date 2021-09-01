@@ -40,7 +40,7 @@ __survey__
 | begin_kobomatrix | M1   | Items                                |          | assets            |
 | select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |
 | integer          | Q2   | Q2. Number of assets                 | TRUE     |                   |
-| end_matrix       |      |                                      |          |                   |
+| end_kobomatrix   |      |                                      |          |                   |
 
 __choices__
 
