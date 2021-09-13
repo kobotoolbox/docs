@@ -601,60 +601,6 @@ html body {
   margin-top: 4rem;
 }
 
-.page__related {
-  border-top: 1px solid #cfd5e3;
-  padding: 1.125rem 0;
-  margin: 2.8125rem auto 0;
-  line-height: inherit;
-}
-
-.page__related nav#rellinks {
-  display: block;
-  width: 100%;
-  float: none;
-}
-
-.page__related nav#rellinks ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.page__related nav#rellinks ul a {
-  color: inherit;
-  font-size: inherit;
-  border-bottom: none;
-  text-decoration: none;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.page__related nav#rellinks ul a:hover {
-  color: #0a6dbc;
-  border-bottom: none;
-  text-decoration: underline;
-}
-
-.page__related nav#rellinks ul li {
-  color: #2095f3;
-}
-
-.page__related nav#rellinks ul li:first-of-type {
-  text-align: left;
-}
-
-.page__related nav#rellinks ul li:last-of-type {
-  text-align: right;
-}
-
-.page__related nav#rellinks ul li + li::before {
-  content: none;
-}
-
 .page__breadcrumbs {
   font-size: 1.125rem;
   margin-bottom: 0.75rem;
