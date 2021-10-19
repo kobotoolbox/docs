@@ -272,3 +272,31 @@ html body {
     }
   }
 }
+
+.page__feedback {
+  text-align: center;
+  background-color: $c_zumthor;
+  color: $c_denim;
+  padding: rem(30px);
+  margin-top: rem(40px);
+  border-radius: rem(6px);
+
+  h1 {
+    font-weight: 700;
+    font-size: rem(24px);
+    margin: 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  a.feedback-button {
+    display: inline-block;
+    vertical-align: top;
+    padding: rem(4px) rem(16px);
+    border: rem(2px) solid currentColor;
+    border-radius: rem(3px);
+    text-decoration: none;
+  }
+}
