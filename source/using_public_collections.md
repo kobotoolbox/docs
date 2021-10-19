@@ -35,8 +35,7 @@ collection name, number of items within each collection, owner, number of
 subscribers, languages, specified primary sector, and the most recent date it
 was modified.
 
-![Public Collections
-List](/images/using_public_collections/public_collections_list.png)
+![Public Collections List](/images/using_public_collections/public_collections_list.png)
 
 If you are interested in a specific collection, there are several ways to find
 what you need:
@@ -60,8 +59,7 @@ the collection’s detail view. This will then add the collection to the **My
 Library** tab. You can remove the collection from your library by clicking
 **UNSUBSCRIBE**.
 
-![Subscribing to a
-Collection](/images/using_public_collections/subscribing_to_a_collection.gif)
+![Subscribing to a Collection](/images/using_public_collections/subscribing_to_a_collection.gif)
 
 ### b) Using Assets within a Public Collection
 
@@ -99,8 +97,7 @@ You can then
 While you’re in the **Library** section of **KoBoToolbox**, click on the **NEW**
 button and a modal with four options will be displayed, as seen below.
 
-![Create Library
-Item](/images/using_public_collections/create_library_item.png)
+![Create Library Item](/images/using_public_collections/create_library_item.png)
 
 Tap the icon labeled **Collection**. You will then be prompted to enter details,
 including a name for the new collection,which is required. Once complete, click
