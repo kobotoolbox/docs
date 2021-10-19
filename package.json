@@ -3,23 +3,23 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "_compile": "node-sass --include-path=node_modules --output-style=expanded --source-map=true sass_source/sass/theme.scss source/_static/css/kobo_theme.css",
+    "_compile": "sass --load-path=node_modules --style=expanded --source-map sass_source/sass/theme.scss source/_static/css/kobo_theme.css",
     "_prefix": "postcss source/_static/css/kobo_theme.css --use=autoprefixer --map=false --output=source/_static/css/kobo_theme.css",
-    "dev": "npm run _compile -- --watch",
+    "_update_css": "cp source/_static/css/kobo_theme.css _build/html/_static/css/kobo-theme.css",
+    "dev": "sass --load-path=node_modules --watch --style=expanded --source-map sass_source/sass/theme.scss source/_static/css/kobo_theme.css",
     "start": "npm run _compile && npm run _prefix"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.6",
     "browserslist": "^4.16.5",
-    "node-sass": "^4.13.1",
     "postcss": "^8.2.10",
-    "postcss-cli": "^7.1.0"
+    "postcss-cli": "^7.1.0",
+    "sass": "^1.43.2"
   },
   "browserslist": [
     "last 4 version"
   ],
   "engines": {
     "node": ">=0.8.0"
-  },
-  "dependencies": {}
+  }
 }
