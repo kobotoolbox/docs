@@ -110,6 +110,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   upload_to_gis
   row_level_permissions
   dynamic_data_attachment
+  using_public_collections
   public_collections_advanced_search
   api
   data_storage
