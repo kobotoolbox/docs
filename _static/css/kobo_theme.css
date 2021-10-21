@@ -456,6 +456,12 @@ html body {
   display: block;
   width: 100%;
 }
+.page .page__body img {
+  display: block;
+  max-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .page .page__body p {
   margin: 0 auto 1.125rem;
   font-weight: 300;
