@@ -29,7 +29,8 @@ __KoBoCollect__ app to the __KoBoToolbox__ server. This allows you to download
 deployed forms from __KoBoToolbox__ to your mobile device and also send data
 collected through the app back to the server.
 
-The server in __KoBoCollect__ can be configured in two different ways: manually or through a QR code.
+The server in __KoBoCollect__ can be configured in two different ways: manually
+or through a QR code.
 
 ### Setting up the server connection manually:
 
@@ -47,11 +48,11 @@ Humanitarian server (OCHA), the URL is `https://kc.humanitarianresponse.info`.
 ![Server Settings](/images/kobocollect_on_android_basic/server_settings.png)
 
 <p class='note'>Despite setting up the server settings correctly, users may
-have trouble connecting <strong>KoBoCollect</strong> to the server. This could be an issue with
-the device’s incorrect date and time settings. To learn more about
-troubleshooting <strong>KoBoCollect</strong>, please read our support article <a
-href="troubleshooting_kobocollect.html" class="reference">Troubleshooting
-KoBoCollect Android Application</a>.</p>
+have trouble connecting <strong>KoBoCollect</strong> to the server. This could
+be an issue with the device’s incorrect date and time settings. To learn more
+about troubleshooting <strong>KoBoCollect</strong>, please read our support
+article <a href="troubleshooting_kobocollect.html"
+class="reference">Troubleshooting KoBoCollect Android Application</a>.</p>
 
 - After setting up the server, you should now see the following home screen.
 
@@ -145,9 +146,9 @@ server.
 
 ![Get Blank Form Button](/images/kobocollect_on_android_basic/get_blank_form_button.png)
 
-- A list of all your deployed survey forms should appear. Press __Select All__ to
-have all the survey forms sent to the app or select the ones you wish to have
-by selecting them manually. Then click __Get Selected__.
+- A list of all your deployed survey forms should appear. Press __Select All__
+  to have all the survey forms sent to the app or select the ones you wish to
+  have by selecting them manually. Then click __Get Selected__.
 
 ![Get Blank Form List](/images/kobocollect_on_android_basic/get_blank_form_list.jpg)
 
@@ -156,11 +157,14 @@ forms to <strong>KoBoCollect</strong>.</p>
 
 ## Collecting Data in KoBoCollect
 
-Once you have blank form(s) in the app, you will no longer require an internet connection to collect data. The blank forms and the filled in forms will stay on the device until you delete them from the app or submit them to the server.
+Once you have blank form(s) in the app, you will no longer require an internet
+connection to collect data. The blank forms and the filled in forms will stay
+on the device until you delete them from the app or submit them to the server.
 - Open __KoBoCollect__.
 - Select __Fill Blank__ Form from the home menu.
 - Select the survey form that you want to use to start collecting data.
-- Go through all the questions *by swiping your finger from right to left or by selecting the __NEXT__ key after answering the questions*.
+- Go through all the questions *by swiping your finger from right to left or by
+  selecting the __NEXT__ key after answering the questions*.
 - At the end of the survey, select __Save Form and Exit__.
 
 ![Finalise Form](/images/kobocollect_on_android_basic/finalise_form.png)
@@ -181,14 +185,17 @@ form to something easy to keep track of, such as "Incomplete" or "Incomplete:
 
 ## Editing Data in KoBoCollect
 
-Once you have pressed __Save Form and Exit__, the saved form is automatically stored under __Edit Saved Form__.
+Once you have pressed __Save Form and Exit__, the saved form is automatically
+stored under __Edit Saved Form__.
 - Open __KoBoCollect__.
 - Select __Edit Saved Form__ from the home menu.
-- You will see a list of __Saved Forms__. Choose the one that needs edits or updates.
+- You will see a list of __Saved Forms__. Choose the one that needs edits or
+  updates.
 - Make changes as needed, and then select __Save Form and Exit__.
 - Repeat the process multiple times if multiple forms need edits or updates.
 
-<p class='note'>Users do not need an internet connection while editing a saved form in <strong>KoBoCollect</strong>.</p>
+<p class='note'>Users do not need an internet connection while editing a saved
+form in <strong>KoBoCollect</strong>.</p>
 
 ## Uploading Finalized Data to the Server
 
