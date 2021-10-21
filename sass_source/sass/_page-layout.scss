@@ -92,6 +92,13 @@ html body {
       width: 100%;
     }
 
+    img {
+      display: block;
+      max-height: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     p {
       margin: 0 auto rem(18px);
       font-weight: 300;

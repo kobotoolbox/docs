@@ -1,4 +1,4 @@
-# Basic Data Collection on KoBoCollect App
+# Basic Data Collection on KoBoCollect App - Android Versions 7+
 
 __For Android versions 7 and above__
 
