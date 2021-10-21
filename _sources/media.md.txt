@@ -26,18 +26,18 @@ We are going to use the below example to demonstrate the steps.
 
 ![image](/images/media/upload_xls.gif)
 
-**Step 5**: Deploy your form.
-
-![image](/images/media/deploy.gif)
-
-**Step 6**: Go to the Project Settings, then Media. There you can upload all image files referenced in your form.
+**Step 5**: Go to the Project Settings, then Media. There you can upload all image files referenced in your form.
 
 ![image](/images/media/setting.gif)
 
-**Step 7**: Once you uploaded all image files, you don't need to redeploy the project. You can go back to Form, Collect Data, and then click Open to check if the images are properly displayed. 
+**Step 6**: Deploy your form. __You will need to redeploy your form every time you update your image files.__
+
+![image](/images/media/deploy.gif)
+
+**Step 7**: Go back to Form, Collect Data, and then click Open or Preview to check if the images are properly displayed.
 
 ![image](/images/media/upload_image.gif)
 
-**Note: Skipping the final step will mean that your form will be displayed without the media files. Make sure the media files are uploaded before downloading the form to your devices when using the Android app.** 
+**Note: Skipping Step 6 will mean that your form will be displayed without the media files. Make sure the media files are uploaded before downloading the form to your devices when using the Android app.** 
 
 Animated GIF files are not currently supported by Enketo or KoBoCollect.
