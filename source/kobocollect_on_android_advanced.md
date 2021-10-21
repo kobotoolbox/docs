@@ -176,7 +176,7 @@ __ODK Collect__ and __KoBoToolbox__ had built a form builder for all question
 types and advanced settings, including cascading questions, which were saved
 directly as an XML file for the mobile app. These changes were eventually
 incorporated into __ODK Collect__, along with many other great features. In
-2014, __KoBoToolbox__ decided to fork __ODK Collect__ to create the new
-__KoBoCollect__, with minimal changes, including the __KoBoToolbox__ server in
-the configuration dropdown, a reference back to __ODK Collect__, and the
-__KoBoToolbox__ logo and name.
+2014, __KoBoToolbox__ decided to fork __ODK Collect__ to create the [new
+KoBoCollect](https://github.com/kobotoolbox/collect), with minimal changes,
+including the __KoBoToolbox__ server in the configuration dropdown, a reference
+back to __ODK Collect__, and the __KoBoToolbox__ logo and name.
