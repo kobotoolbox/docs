@@ -1,105 +1,356 @@
-# Collecting Data with KoBoCollect on Android
+# Data Collection on KoBoCollect App
 
-Data for KoBoToolbox can be collected using two different approaches, viz. [_collecting data through web forms (Enketo)_](data_through_webforms.md) and _collecting data through KoBoCollect_. This article describes collecting data with KoBoCollect Android App.
+__For Android versions 4.1 to 6__
 
-Any modern Android device should support KoBoCollect. It is free, and the latest version of the app can be installed directly through [Google Play Store]( https://play.google.com/store/apps/details?id=org.koboc.collect.android). Alternatively, an appropriate version can be installed compatible with the device's operating system through our [GitHub repository] (https://github.com/kobotoolbox/collect/releases). We, however, strongly recommend users install the latest version of the app as it should be bugs-free and should also support the latest features compatible with KoBoToolbox. 
+KoBoCollect is an open-source Android app for collecting survey data. It’s one
+of two ways that you can collect data through KoBoToolbox (the other way is
+through [web forms - Enketo](data_through_webforms.md)). It’s free and users
+with Android versions 4.1 to 6 can install an older version of the app through
+the [KoBoToolbox GitHub
+Repository](https://github.com/kobotoolbox/collect/releases).
 
-#### Setup Server URL on KoBoCollect
+If you have Android versions 7 and above, you can download the latest version
+of the KoBoCollect App on the [Google Play
+Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android)
+and refer to our support articles for the latest version of the app: [Basic
+Data Collection on the KoBoCollect App](kobocollect_on_android_basic.md) and
+[Advanced Functions in the KoBoCollect
+App](kobocollect_on_android_advanced.md). We recommend using the latest version
+of the app, if possible, as it includes features and bug fixes that may not be
+available in older versions.
 
-After installing the app on the device, users will need to configure it with the user's KoBoToolbox account. 
+## Setting Up the Server Connection
 
-* Open __KoBoCollect__.
-* Open __General Settings__ (this may be at the top right of your screen, the bottom right, or at the button in the center, depending on your Android version). Then select __Server__.
-![image](/images/kobocollect_android/kobocollect_android_1.png)
-* Users are now able to configure the __URL__, __Username__, and __Password__ from the __Server Settings__. Under __URL__, enter the server `https://kc.kobotoolbox.org` or `https://kc.humanitarianresponse.info` _(depending upon the used server)_. Under the __Username__, _enter account username_ and under the __Password__, _enter account password_.
-![image](/images/kobocollect_android/kobocollect_android_2.png)
-__Note:__ A device may sometimes have trouble connecting to the server if the device date and time are incorrect. To learn more about troubleshooting, please feel free to go through our support article [Troubleshooting KoBoCollect Android Application]( troubleshooting_kobocollect.md).
+The first step after installing __KoBoCollect__ on your device is to set up the
+server __URL__, __Username__, and __Password__, which connects your
+__KoBoCollect__ app to the __KoBoToolbox__ server. This allows you to download
+deployed forms from __KoBoToolbox__ to your mobile device and also send data
+collected through the app back to the server.
 
-#### Getting Blank Forms in KoBoCollect
+The server in __KoBoCollect__ can be configured in two different ways: manually
+or through a QR code.
 
-Follow the steps mentioned below to get blank survey forms to the app. 
+### Setting up server connection manually:
 
-* Make sure that users have successfully deployed at least one project through the user's KoBoToolbox account.
-* Make sure that users have set up the URL as mentioned above.
-* Make sure that the device is connected to the internet securely.
-* Select __Get Blank Form__ from the home menu.
-![image](/images/kobocollect_android/kobocollect_android_3.jpg)
-* A list of all the deployed survey forms should appear. Press __Select All__ to have all the survey forms to the app or select the ones manually and then press __Select All__. Then press __Get Selected__.
-![image](/images/kobocollect_android/kobocollect_android_4.jpg)
+- Open __KoBoCollect__.
+- Select __Main Settings__ (three vertical dots) > __General Settings__ (this
+  may be at the top right, bottom right, or at the bottom in the center of your
+  screen depending on your Android version) > __Server__.
 
-#### Collecting Data in KoBoCollect
+![General Settings](/images/kobocollect_android/general_settings.png)
 
-Once the blank forms are in the app, users no longer require an internet connection to collect data. The blank forms and the filled-up forms should stay on the device until they are deleted or submitted to the server. 
+- You will now be asked to input the __URL__, __Username__, and __Password__,
+  and then select __Add__. For the URL, you must select from the two
+  __KoBoToolbox__ servers. If you created your user account on the general use
+  server, the URL is `https://kc.kobotoolbox.org`. If your user account is on
+  the Humanitarian server (OCHA), the URL is
+  `https://kc.humanitarianresponse.info`.
 
-Follow the steps mentioned below to start collecting data using the app. 
+![Server Settings](/images/kobocollect_android/server_settings.png)
 
-* Press __Fill Blank Form__ from the home menu.
-* Select the survey form to start collecting data.
-* Go through all the questions (swiping your finger from right to left).
-* At the end of the survey, press __Save Form and Exit__. _Make sure the form is marked as **'finalized'**. If this is unchecked and still press Save Form and Exit, the filled-up form goes to **Edit Saved Form** while it does not go to **Send Finalized Form**. In such a scenario, go back to **Edit Saved Form**, open the form and then press **Go To End** and press **Save Form and Exit**, making sure the form is marked as **'finalized'**. Generally, when finished collecting data and when the form is marked as **'finalized'** and pressed **Save Form and Exit**, the saved form simultaneously goes to **Edit Saved Form** and **Send Finalized Form**._ 
-![image](/images/kobocollect_android/kobocollect_android_5.png)
-Users could also change the name of the saved form to the desired name under __Name this form__ if they think data collection has not been completed and requires another visit with the respondent. Changing the completed form's name would make the enumerator easy to spot which form to edit from the __Edit Saved Form__.
+<p class='note'>Despite setting up the server settings correctly, users may
+have trouble connecting <strong>KoBoCollect</strong> to the server. This could
+be an issue with the device’s incorrect date and time settings. To learn more
+about troubleshooting <strong>KoBoCollect</strong>, please read our support
+article <a href="troubleshooting_kobocollect.html"
+class="reference">Troubleshooting KoBoCollect Android Application</a>.</p>
 
-#### Editing Data in KoBoCollect
+- After setting up the server, you should now see the following home screen.
 
-Once users have completed collecting data by pressing __Save Form and Exit__, the saved form automatically goes to __Edit Saved Form__. If users need to edit this saved form, follow the steps outlined below. 
+![Main Menu Comparison](/images/kobocollect_android/main_menu_comparison.png)
 
-* Press __Edit Saved Form__ from the home menu.
-* Users should see a list of __Saved Forms__. Choose the one that needs correction. 
-* Make changes as needed, and then press __Save Form and Exit__. 
-* Repeat the process multiple times if more corrections are required.
+You can use __KoBoCollect__ to get blank forms to your device, collect data
+(fill blank forms), store it in your device, edit the filled in forms (edit
+saved forms), submit saved forms, and delete filled in forms / blank forms.
 
-#### Uploading Finalized Data to the Server
+### Setting up server connection with a QR code
 
-Users should now need an internet connection at this phase to upload their finalized forms to the server. Follow the steps mentioned below to upload the collected data to the KoBoToolbox server (your KoBoToolbox account).
+Oftentimes, users in large projects will need to set up a large number of
+devices under the same server settings (__URL__, __Username__, and
+__Password__, etc.). Setting up all the devices manually would be
+time-consuming and prone to error. To save time, you can configure just one
+device manually and then copy the settings through a QR code generated from the
+first device.
 
-* Ensure the device with the completed forms is securely connected to the internet.
-* From the home screen, press on __Send Finalized Form__.
-* A list of all the collected forms should appear.
-* Press __Select All__ (or select the ones you wish to upload) and then press __Send Selected__.
-* To ensure the forms were uploaded successfully, press __View Sent Form__. Users should be able to view all the submitted forms.
+<p class='note'>To set up a device with a QR Code, you will require at least
+one app that has been set up manually.</p>
 
-#### Deleting Saved Forms in KoBoCollect
+- Open __KoBoCollect__ to the server that has been configured.
+- Select __Main Settings__ (three vertical dots at the top right).
+- Select __Configure via QR code__.
 
-Once all the filled-up forms are submitted, users could delete __Saved Forms__ and __Blank Forms__ from the app to not mix up with other ongoing projects or future projects. Follow the steps outlined to delete these forms from the app. 
+![Settings Drop Down](/images/kobocollect_android/settings_drop_down.png)
 
-* From the home screen, press on __Delete Saved Form__.
-* Users should now see two tabs. The default is __Saved Forms__. These are the forms that were filled-up while collecting data. Press __Select All__ to delete all the __Saved Forms__ from the app and then press __Delete Selected__. 
-![image](/images/kobocollect_android/kobocollect_android_6.png)
-* The next tab is the __Blank Forms__. These are the blank questionnaire or, in other words, the questionnaire to the survey project that a user deployed through their KoBoToolbox account. Press __Select All__ to delete all the __Blank Forms__ from the app and then press __Delete Selected__.
+- Select the __QR CODE__ tab.
 
-#### Resetting View Sent Form from KoBoCollect
+![QR Code](/images/kobocollect_android/qr_code.png)
 
-When a user submits all the filled-up forms to the server by pressing __Send Finalized Form__, the user should be able to confirm that the submitted forms have reached the server if they see them in the __View Sent Form__ (i.e., once you submit them, they are also seen in the __View Sent Form__). Data managers generally advise users to keep this information until the end of the project as it always provides the user with reference on the total number of collections and submissions. 
+- Now open __KoBoCollect__ in another device that you want to configure and
+  navigate to __Main Settings__ > __Configure via QR code__ > __SCAN__.
+- Scan the QR code. If successful, you should hear a beep sound and the app
+  will be automatically configured.
 
-However, once the project's data collection is over, it is advised to reset __View Sent Form__ from the app as it may create confusion with the total number of completed cases sent to the server. Hence, to avoid this confusion, please follow the steps to reset __View Sent Form__ from the app as follows:
+<p class='note'>You can also copy the QR code and share it by email, Whatsapp,
+etc., to set up other devices but be aware that the QR code contains the
+password to your account, allowing others to sign into your account. <strong>It
+is not recommended to share the QR code through electronic means if the same
+account has permissions to view, edit, or delete data</strong>.</p>
 
-* Open the __Admin Settings__ (this may be on the top right, the bottom right, or in the bottom center of your screen, depending on your Android version).
-![image](/images/kobocollect_android/kobocollect_android_7.png)
-* Select __Reset application__.
-* Check on __Saved forms (instances folder, instances database)__ and then press __RESET__. Users should further see a small dialogue box pop up __Reset results Saved forms::Success__. Then press __OK__.
+## Setting Up Blank Forms in KoBoCollect
 
-#### Hiding Buttons in KoBoCollect
+Once you have configured the __URL__, __Username__, and __Password__ in the app
+correctly, you can send blank forms to your device from the __KoBoToolbox__
+server.
+- Open __KoBoCollect__.
+- Make sure that you have at least one project set up in your __KoBoToolbox__
+  user account and that your device is connected to the internet.
+- Select __Get Blank Form__ from the home menu.
 
-It is sometimes necessary to hide some buttons so that enumerators do not manipulate the collected data or play around, which increases the risk of data loss. Hence, to avoid this pitfall follow the instructions outlined below.
+![Get Blank Form Button](/images/kobocollect_android/get_blank_form_button.png)
 
-* Open the __Admin Settings__ (this may be on the top right, the bottom right, or in the bottom center of your screen, depending on your Android version).
-* At the bottom, users should see the __User Access Control__, which includes __Main Menu Settings__, __User Settings__, and __Form Entry Settings__.
-* Select __Main Menu Settings__ to hide the button from the main menu.
-![image](/images/kobocollect_android/kobocollect_android_8.png)
-* Select __User Settings__ to hide the button from the user settings menu.
-![image](/images/kobocollect_android/kobocollect_android_9.png)
-* Select __Form Entry Settings__ to hide the button from the form menu.
-![image](/images/kobocollect_android/kobocollect_android_10.png)
-* After making changes, do not forget to set an __Admin Password__ so that enumerators would not access the __Admin Settings__.
-![image](/images/kobocollect_android/kobocollect_android_11.jpg)
+- A list of all your deployed survey forms should appear. Press __Select All__
+  to have all the survey forms sent to the app or select the ones you wish to
+  have by selecting them manually. Then click __Get Selected__.
 
-#### Differences Between KoBoCollect & ODK Collect
+![Get Blank Form List](/images/kobocollect_android/get_blank_from_list.jpg)
 
-__KoBoCollect__ is a fork of the excellent __ODK Collect__. As of today, there are no substantive differences between the two apps. Users are free to use either one for their data collection. KoBoToolbox's online features are fully compatible with both apps. So technically, there should be no advantage of one over the other. 
+<p class='note'>Users will need an internet connection while sending blank
+forms to <strong>KoBoCollect</strong>.</p>
 
-We, however, do not recommend having both apps installed concurrently. Installing both apps on the same device could lead to some confusion depending on the Android settings. 
+## Collecting Data in KoBoCollect
 
-Historically there used to be some significant differences between the two. Back in 2009, KoBoToolbox made several significant changes to __ODK Collect__ that became __KoBoCollect__. That included _cascading questions_, _hiding delete and edit buttons_ for field data collection, and other changes. That was in part because XLSForm was not yet an option, and KoBoToolbox built a form builder for all question types and advanced settings, including cascading questions, which were saved directly as an XML file for the mobile app. These changes were eventually added to __ODK Collect__ over the years, along with many other great features. So, in 2014, KoBoToolbox decided to re-fork __KoBoCollect__ off __ODK Collect__, keeping only minimal changes. Today these include the _KoBoToolbox server in the configuration dropdown_, a reference back to __ODK Collect__, and the _KoBoToolbox logo and name_. 
+Once you have blank form(s) in the app, you no longer require an internet
+connection to collect data. The blank forms and the filled in forms will stay
+on the device until you delete them from the app or submit them to the server.
+- Open __KoBoCollect__.
+- Select __Fill Blank Form__ from the home menu.
+- Select the survey form that you want to use to start collecting data.
+- Go through all the questions *by swiping your finger from right to left or by
+  selecting the __NEXT__ key after answering the questions.*
+- At the end of the survey, select __Save Form and Exit__.
 
-KoBoToolbox updates __KoBoCollect__ periodically. Interested users could find the source code [here]( https://github.com/kobotoolbox/collect/releases). There are tens of thousands of __KoBoCollect__ users worldwide; hence, KoBoToolbox has not planned to discontinue __KoBoCollect__ at this point. Nevertheless, if a user is starting a new project, one could very well start with __ODK Collect__. One advantage in starting with __ODK Collect__ is that the app is updated more frequently than __KoBoCollect__ hence receiving bug fixes more quickly.
+![Finalise Form](/images/kobocollect_android/finalised_form.png)
+
+<p class='note'>Make sure the form is marked as "<strong>finalized</strong>".
+If this is unchecked but you still select <strong>Save Form and Exit</strong>,
+the filled in form goes to <strong>Edit Saved Form</strong> instead of going to
+<strong>Send Finalized Form</strong>. If this happens, go back to <strong>Edit
+Saved Form</strong>, open the form, and without needing to make any edits, you
+can select <strong>Go To End</strong>. Make sure the form is marked as
+"<strong>finalized</strong>" and then select <strong>Save Form and
+Exit</strong>.<br/>If an interviewer believes that a form has not been
+completed, for example, if the head of the household wasn’t there or children
+weren’t there but are needed for the data collection, they can rename the form
+in order to come back to it more easily. You can change the name of a saved
+form to something easy to keep track of, such as "Incomplete" or "Incomplete:
+(name of respondent)" under <strong>Name this form</strong>.</p>
+
+## Editing Data in KoBoCollect
+
+Once you have pressed __Save Form and Exit__, the saved form is automatically
+stored under __Edit Saved Form__. If you wish to edit this saved form, you can
+follow the steps outlined below.
+- Open __KoBoCollect__.
+- Select __Edit Saved Form__ from the home menu.
+- You will see a list of __Saved Forms__. Choose the one that needs edits or
+  updates.
+- Make changes as needed, and then select __Save Form and Exit__.
+- Repeat the process multiple times if multiple forms need edits or updates.
+
+<p class='note'>Users do not need an internet connection while editing a saved
+form in <strong>KoBoCollect</strong>.</p>
+
+## Uploading Finalized Data to the Server
+
+Once you have collected your data, and made any necessary edits, you can upload
+the forms to the __KoBoToolbox__ server.
+- __Open__ KoBoCollect.
+- Make sure the device is securely connected to the internet.
+- Select __Send Finalized Form__ from the home screen.
+- A list of all the collected forms should appear.
+- Press __Select All__ (or select the ones you wish to upload) and then press
+  __Send Selected__.
+- To ensure the forms were uploaded successfully, select __View Sent Form__.
+  You should now be able to view all the submitted forms.
+
+<p class='note'>Users will need an internet connection while submitting data
+from <strong>KoBoCollect</strong> to the server.</p>
+
+## Deleting Saved Forms in KoBoCollect
+
+Once you have completed data collection for your survey project and all the
+filled in forms have been uploaded to the server, it is recommended to delete
+the forms from the __KoBoCollect__ app. Keeping them in the app can confuse
+interviewers while collecting data for a different project. Follow the steps
+outlined below to delete __Saved Forms__ and __Blank Forms__ from your app.
+- Open __KoBoCollect__.
+- Select __Delete Saved Form__ from the home screen.
+- Users should now see two tabs. The default is __Saved Forms__. These are the
+  forms filled in during data collection. Press __Select All__ to delete all
+  the __Saved Forms__ from the app and then __Delete Selected__.
+
+![Delete Saved Form](/images/kobocollect_android/delete_saved_forms.png)
+
+- The next tab is the __Blank Forms__. Press __Select All__ to delete all the
+  __Blank Forms__ from the app and then __Delete Selected__.
+
+<p class='note'>Users should not require an internet connection to delete saved
+forms in <strong>KoBoCollect</strong>.</p>
+
+## Resetting View Sent Form in KoBoCollect
+
+When you submit all the filled forms to the server by pressing __Send Finalized
+Form__, the successfully submitted forms can be seen in the __View Sent Form__
+section. Data managers generally advise to keep this information until the end
+of the project as it always provides a reference for the total number of
+collections and submissions.
+
+Once the current project’s data collection is over or if you are planning to
+start a new project, it is advised to reset the counter in __View Sent Form__.
+This will help to keep track of the data collection for the new project.
+- Open __KoBoCollect__
+- Select __Main Settings__ (three vertical dots).
+- Select __Admin Settings__ (this may be at the top right, bottom right, or at
+  the bottom in the center of your screen depending on your android version).
+- Select __Reset application__.
+
+![Reset Application](/images/kobocollect_android/reset_application.png)
+
+- Check on __Saved forms (instances folder, instances database)__ and then
+  select __RESET__. You should see a small dialogue box with a pop up a message
+  "*__Reset results Saved forms: Success__*".
+- Select __OK__.
+
+<p class='note'>Users do not need an internet connection to reset <strong>View
+Sent Form</strong> in <strong>KoBoCollect</strong>.</p>
+
+## Hiding buttons in KoBoCollect
+
+In some cases, it is recommended to hide certain buttons in the app from
+interviewers to prevent them from editing or changing collected data,
+decreasing the risk of data loss.
+- Open __KoBoCollect__.
+- Select __Main Settings__ (three vertical dots).
+- Select __Admin Settings__.
+
+![Admin Settings](/images/kobocollect_android/admin_settings.png)
+
+- At the bottom, you should see the __User Access Control__, which includes
+  __Main Menu Settings__, __User Settings__, and __Form Entry Settings__.
+- Select __Main Menu Settings__ to hide the buttons from the main menu.
+
+![Main Menu Settings](/images/kobocollect_android/main_menu_settings.png)
+
+- Do the same for __User Settings__ and __Form Entry Settings__ to hide buttons
+  from those menus as well.
+
+<p class='note'>Users do not need an internet connection to hide buttons in
+<strong>KoBoCollect</strong>.</p>
+
+## Locking KoBoCollect with an Admin Password
+
+If needed, you can set up an admin password in the __KoBoCollect__ app,
+limiting access to the app’s admin settings to only team members with the admin
+password.
+- Open __KoBoCollect__.
+- Select __Main Settings__ (three vertical dots).
+- Select __Admin Settings__.
+- Select __Admin Password__.
+
+![Admin Password](/images/kobocollect_android/admin_password.jpg)
+
+- You will be requested to __Enter New Password__. After entering a new
+  password, select __OK__.
+
+<p class='note'>Users do not need an internet connection to lock
+<strong>KoBoCollect</strong> with an admin password. To remove the admin
+password, leave it blank instead of providing a new password.</p>
+
+## Form management settings in KoBoCollect
+
+There are other form management settings available within __KoBoCollect__ which
+could assist in managing your data collection project:
+
+__Form update__ provides an option to update the survey form manually or
+automatically. If set to automatic, the forms that are redeployed on the
+__KoBoToolbox__ server are automatically updated in the app. Note that keeping
+this feature active will likely drain your device’s battery more quickly.
+
+__Form submission__ provides an option to send submissions to the server
+manually or automatically, with the options of _Wifi only_, _cellular only_,
+and _wifi or cellular_. This setting also gives the option to delete finalized
+forms and media after being successfully sent to the server.
+
+__Form filling__ provides several options for forms and data collection:
+- Option to mark the form as finalized by default.
+- Option to configure the constraint processing (_validate upon forward swipe
+  or defer validation until finalized_).
+- Enable or disable high-resolution video recordings or change the allowed
+  image size when taking videos and images through the app.
+- _Show guidance for questions_ under the form filling to show or hide guidance
+  for questions
+- _Use of an external app for audio recording_ could help to set up an external
+  app for audio recording while collecting data.
+
+Follow the steps outlined below to access the form management settings:
+- Open __KoBoCollect__.
+- Select __Main Settings__ (three vertical dots).
+- Select __General Settings__.
+- Select __Form management__ and select the options relevant for your project.
+
+![Form Management](/images/kobocollect_android/form_management.jpg)
+
+<p class='note'>Users do not need an internet connection to access or change
+the form management settings in <strong>KoBoCollect</strong>.</p>
+
+## Setting Up Metadata in KoBoCollect
+
+Users can set up the collection of metadata like _username_, _phone number_ and
+_email address_ in __KoBoCollect__, providing additional details on who
+submitted the records to the server. These details can be helpful to validate
+the quality of the data collected by the team.
+
+<p class='note'>In order to collect metadata, it must be configured in both the
+<strong>KoBoCollect</strong> app and on the <strong>KoBoToolbox</strong>
+platform for the same project. Please refer to our support article <a
+href="form_meta.html" class="reference">Form Settings and Meta Questions</a>
+for instructions on how to configure set up in
+<strong>KoBoToolbox</strong>.</p>
+
+- Open __KoBoCollect__.
+- Select __Main Settings__ (three vertical dots).
+- Select __General Settings__.
+- Select __User and device identity__.
+- Under the __User and device identity__, select __Form metadata__.
+
+![Form Metadata](/images/kobocollect_android/form_metadata.jpg)
+
+- Enter all the metadata like _username_, _phone number_, and _email address_
+  that you want to collect.
+
+<p class='note'>Users do not need an internet connection to access the metadata
+setting in <strong>KoBoCollect</strong>.</p>
+
+## Differences Between KoBoCollect & ODK Collect
+
+__KoBoCollect__ is a [fork](https://github.com/getodk/collect/network/members)
+of __ODK Collect__. As of today, there are no substantive differences between
+the two apps. Users are free to use either one for data collection. KoBoToolbox
+is fully compatible with both apps.
+
+Please note that it is not recommended to have both apps installed
+simultaneously as this could lead to some confusion depending on the Android
+settings.
+
+Historically, there were several significant differences between the two. Back
+in 2009, __KoBoToolbox__ made several changes to __ODK Collect__, creating
+__KoBoCollect__, such as _cascading questions_, hiding _delete_, and _edit_
+buttons for field data collection. The __XLSForm__ was not yet an option in
+__ODK Collect__ and __KoBoToolbox__ had built a form builder for all question
+types and advanced settings, including cascading questions, which were saved
+directly as an XML file for the mobile app. These changes were eventually
+incorporated into __ODK Collect__, along with many other great features. In
+2014, __KoBoToolbox__ decided to fork __ODK Collect__ to create the [new
+KoBoCollect](https://github.com/kobotoolbox/collect), with minimal changes,
+including the __KoBoToolbox__ server in the configuration dropdown, a reference
+back to __ODK Collect__, and the __KoBoToolbox__ logo and name.
