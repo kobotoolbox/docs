@@ -30,11 +30,11 @@ We are going to use the below example to demonstrate the steps.
 
 ![image](/images/media/setting.gif)
 
-**Step 6**: Deploy your form. You will need to redeploy your form everytime you update your image files.
+**Step 6**: Deploy your form. __You will need to redeploy your form every time you update your image files.__
 
 ![image](/images/media/deploy.gif)
 
-**Step 7**: You can go back to Form, Collect Data, and then click Open to check if the images are properly displayed. 
+**Step 7**: Go back to Form, Collect Data, and then click Open or Preview to check if the images are properly displayed.
 
 ![image](/images/media/upload_image.gif)
 
