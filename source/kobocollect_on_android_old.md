@@ -129,7 +129,7 @@ on the device until you delete them from the app or submit them to the server.
   selecting the __NEXT__ key after answering the questions.*
 - At the end of the survey, select __Save Form and Exit__.
 
-![Finalise Form](/images/kobocollect_on_android_basic/finalise_form.png)
+![Finalise Form](/images/kobocollect_on_android_old/finalised_form.png)
 
 <p class='note'>Make sure the form is marked as "<strong>finalized</strong>".
 If this is unchecked but you still select <strong>Save Form and Exit</strong>,
@@ -294,13 +294,11 @@ forms and media after being successfully sent to the server.
 
 Follow the steps outlined below to access the form management settings:
 - Open __KoBoCollect__.
-- Select the icon (circled in K) that is located at the top right of your
-  screen.
-- Select __Settings__.
-- Under the __Project settings__, select __Form management__ and select the
-  options relevant for your project.
+- Select __Main Settings__ (three vertical dots).
+- Select __General Settings__.
+- Select __Form management__ and select the options relevant for your project.
 
-![Form Management](/images/kobocollect_on_android_advanced/form_management.jpg)
+![Form Management](/images/kobocollect_on_android_old/form_management.jpg)
 
 <p class='note'>Users do not need an internet connection to access or change
 the form management settings in <strong>KoBoCollect</strong>.</p>
@@ -320,13 +318,12 @@ for instructions on how to configure set up in
 <strong>KoBoToolbox</strong>.</p>
 
 - Open __KoBoCollect__.
-- Select the icon (circled in K) that is located at the top right of your
-  screen.
-- Select __Settings__.
-- Under the __Project settings__, select __User and device identity__.
-- Under __User and device identity__, select __Form metadata__.
+- Select __Main Settings__ (three vertical dots).
+- Select __General Settings__.
+- Select __User and device identity__.
+- Under the __User and device identity__, select __Form metadata__.
 
-![Form Metadata](/images/kobocollect_on_android_advanced/form_metadata.jpg)
+![Form Metadata](/images/kobocollect_on_android_old/form_metadata.jpg)
 
 - Enter all the metadata like _username_, _phone number_, and _email address_
   that you want to collect.
