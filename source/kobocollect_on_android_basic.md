@@ -1,6 +1,6 @@
 # Basic Data Collection on KoBoCollect App
 
-**For Android versions 7 and above**
+__For Android versions 7 and above__
 
 __KoBoCollect__ is an open-source Android app for collecting survey data. It’s
 one of two ways that you can collect data through __KoBoToolbox__ (the other

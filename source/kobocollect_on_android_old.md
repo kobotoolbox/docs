@@ -1,6 +1,6 @@
 # Data Collection on KoBoCollect App
 
-**For Android versions 4.1 to 6**
+__For Android versions 4.1 to 6__
 
 KoBoCollect is an open-source Android app for collecting survey data. It’s one
 of two ways that you can collect data through KoBoToolbox (the other way is
@@ -271,17 +271,17 @@ password, leave it blank instead of providing a new password.</p>
 There are other form management settings available within __KoBoCollect__ which
 could assist in managing your data collection project:
 
-**Form update** provides an option to update the survey form manually or
+__Form update__ provides an option to update the survey form manually or
 automatically. If set to automatic, the forms that are redeployed on the
 __KoBoToolbox__ server are automatically updated in the app. Note that keeping
 this feature active will likely drain your device’s battery more quickly.
 
-**Form submission** provides an option to send submissions to the server
+__Form submission__ provides an option to send submissions to the server
 manually or automatically, with the options of _Wifi only_, _cellular only_,
 and _wifi or cellular_. This setting also gives the option to delete finalized
 forms and media after being successfully sent to the server.
 
-**Form filling** provides several options for forms and data collection:
+__Form filling__ provides several options for forms and data collection:
 - Option to mark the form as finalized by default.
 - Option to configure the constraint processing (_validate upon forward swipe
   or defer validation until finalized_).

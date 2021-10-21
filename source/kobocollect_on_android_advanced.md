@@ -1,6 +1,6 @@
 # Advanced Functions on KoBoCollect App
 
-**For Android versions 7 and above**
+__For Android versions 7 and above__
 
 __KoBoCollect__ is an open-source Android app for collecting survey data. It’s
 one of two ways that you can collect data through __KoBoToolbox__ (the other
@@ -23,14 +23,14 @@ app](kobocollect_on_android_basic.md).
 
 ## Resetting View Sent Form in KoBoCollect
 
-When you submit all the filled forms to the server by pressing **Send Finalized
-Form**, the successfully submitted forms can be seen in the **View Sent Form**
+When you submit all the filled forms to the server by pressing __Send Finalized
+Form__, the successfully submitted forms can be seen in the __View Sent Form__
 section. Data managers generally advise to keep this information until the end
 of the project as it always provides a reference for the total number of
 collections and submissions.
 
 Once the current project’s data collection is over or if you are planning to
-start a new project, it is advised to reset the counter in **View Sent Form**.
+start a new project, it is advised to reset the counter in __View Sent Form__.
 This will help to keep track of the data collection for the new project.
 - Open __KoBoCollect__.
 - Select the icon (circled in K) that is located at the top right of your
@@ -39,15 +39,15 @@ This will help to keep track of the data collection for the new project.
 
 ![Select Settings](/images/kobocollect_on_android_advanced/select_settings.jpg)
 
-- Under **Project settings**, select **Project management**.
-- Under **Project management** select __Reset__.
-- Click **Saved forms (instances folder, instances database)** and then select
+- Under __Project settings__, select __Project management__.
+- Under __Project management__ select __Reset__.
+- Click __Saved forms (instances folder, instances database)__ and then select
   __RESET__.
 
 ![Reset](/images/kobocollect_on_android_advanced/reset.jpg)
 
-- You should see a small dialogue box with a pop up a message ***"Reset results
-  Saved forms: Success"***.
+- You should see a small dialogue box with a pop up a message ___"Reset results
+  Saved forms: Success"___.
 - Select __OK__.
 
 <p class='note'>Users do not need an internet connection to reset <strong>View
@@ -62,13 +62,13 @@ decreasing the risk of data loss.
 - Select the icon (circled in K) that is located at the top right of your
   screen.
 - Select __Settings__.
-- Under the **Project settings**, select **Access control**, which includes
-  **Main Menu Settings**, **User Settings**, and **Form Entry Settings**.
-- Select **Main Menu Settings** to hide buttons from the main menu.
+- Under the __Project settings__, select __Access control__, which includes
+  __Main Menu Settings__, __User Settings__, and __Form Entry Settings__.
+- Select __Main Menu Settings__ to hide buttons from the main menu.
 
 ![Main Menu Settings](/images/kobocollect_on_android_advanced/main_menu_settings.jpg)
 
-- Do the same for **User Settings** and **Form Entry Settings** to hide buttons
+- Do the same for __User Settings__ and __Form Entry Settings__ to hide buttons
   from those menus as well.
 
 <p class='note'>Users do not need an internet connection to hide buttons in
@@ -83,8 +83,8 @@ password.
 - Select the icon (circled in K) that is located at the top right of your
   screen.
 - Select __Settings__.
-- Under the **Project settings**, select **Set admin password**.
-- You will be requested to **Enter New Password**. After entering a new
+- Under the __Project settings__, select __Set admin password__.
+- You will be requested to __Enter New Password__. After entering a new
   password, select __OK__.
 
 <p class='note'>Users do not need an internet connection to lock
@@ -96,17 +96,17 @@ password, leave it blank instead of providing a new password.</p>
 There are other form management settings available within __KoBoCollect__ which
 could assist in managing your data collection project:
 
-**Form update** provides an option to update the survey form manually or
+__Form update__ provides an option to update the survey form manually or
 automatically. If set to automatic, the forms that are redeployed on the
 __KoBoToolbox__ server are automatically updated in the app. Note that keeping
 this feature active will likely drain your device’s battery more quickly.
 
-**Form submission** provides an option to send submissions to the server
+__Form submission__ provides an option to send submissions to the server
 manually or automatically, with the options of _Wifi only_, _cellular only_,
 and _wifi or cellular_. This setting also gives the option to delete finalized
 forms and media after being successfully sent to the server.
 
-**Form filling** provides several options for forms and data collection:
+__Form filling__ provides several options for forms and data collection:
 - Option to mark the form as finalized by default.
 - Option to configure the constraint processing (_validate upon forward swipe
   or defer validation until finalized_).
