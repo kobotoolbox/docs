@@ -1,4 +1,4 @@
-# Data Collection on KoBoCollect App
+# Data Collection on KoBoCollect App - Android Versions 4.1 - 6
 
 __For Android versions 4.1 to 6__
 
@@ -57,7 +57,7 @@ class="reference">Troubleshooting KoBoCollect Android Application</a>.</p>
 
 - After setting up the server, you should now see the following home screen.
 
-![Main Menu Comparison](/images/kobocollect_android/main_menu_comparison.png)
+![Main Menu](/images/kobocollect_android/main_menu.jpg)
 
 You can use __KoBoCollect__ to get blank forms to your device, collect data
 (fill blank forms), store it in your device, edit the filled in forms (edit

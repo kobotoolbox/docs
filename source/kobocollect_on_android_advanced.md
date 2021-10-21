@@ -1,4 +1,4 @@
-# Advanced Functions on KoBoCollect App
+# Advanced Data Collection on KoboCollect app - Android Versions 7+
 
 __For Android versions 7 and above__
 
