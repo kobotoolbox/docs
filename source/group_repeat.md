@@ -247,3 +247,25 @@ Screen seen while collecting data in Enketo:
 ![image](/images/group_repeat/nested_repeat_enketo.png)
 
 <p class="note">You are able to collect data using nested repeats in both <a class="reference" href="data_through_webforms.html">Enketo</a> and the <a class="reference" href="kobocollect-android.html">Collect Android app</a>. If you are using Collect, please ensure that you are using the latest version as earlier versions may not support this.</p>
+
+## Downloading Data from Repeat Groups
+
+This section takes you through the process of downloading data from repeat
+groups.
+
+Data from repeat groups are downloaded separately from data outside the repeat
+groups (primary/parent data). The following diagram illustrates the structure
+of how sheets are created in the XLSform.
+
+![Data Structure](/images/group_repeat/data_structure.png)
+
+When you download data from a form (project) with repeat groups included, you
+need to use either the **XLS** or **XLS (legacy)** download options. **CSV**
+download will only give you data from the Primary/Parent Data.
+
+![XLS Download](/images/group_repeat/xls_download.png)
+
+As previously explained, once you have downloaded the data, check for repeat
+group data within the separate sheets. To link the repeat group data to the
+parent data, use the index column from the parent sheet and match it to the
+parent index column in the repeat group sheet.
