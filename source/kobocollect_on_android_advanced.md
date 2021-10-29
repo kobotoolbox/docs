@@ -13,7 +13,7 @@ If you have Android versions 4.1 to 6, you can install an older version of the
 app through the [KoBoToolbox GitHub
 Repository](https://github.com/kobotoolbox/collect/releases). We have a support
 article outlining how to collect data in the older version of __KoBoCollect__
-[here](kobocollect_on_android_old.md). We recommend using the latest version of
+[here](kobocollect-android.md). We recommend using the latest version of
 the app, if possible, as it includes features and bug fixes that may not be
 available in older versions.
 
