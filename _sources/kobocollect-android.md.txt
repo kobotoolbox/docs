@@ -1,16 +1,14 @@
-# Data Collection on KoBoCollect App - Android Versions 4.1 - 6
+# Data Collection on KoBoCollect App - v1.30.1 and below
 
-__For Android versions 4.1 to 6__
-
-KoBoCollect is an open-source Android app for collecting survey data. It’s one
+__KoBoCollect__ is an open-source Android app for collecting survey data. It’s one
 of two ways that you can collect data through KoBoToolbox (the other way is
 through [web forms - Enketo](data_through_webforms.md)). It’s free and users
-with Android versions 4.1 to 6 can install an older version of the app through
+with Android versions below 5 can install an older version of the app through
 the [KoBoToolbox GitHub
 Repository](https://github.com/kobotoolbox/collect/releases).
 
-If you have Android versions 7 and above, you can download the latest version
-of the KoBoCollect App on the [Google Play
+If you have Android versions 5 and above, you can download the latest version
+of the __KoBoCollect__ App on the [Google Play
 Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android)
 and refer to our support articles for the latest version of the app: [Basic
 Data Collection on the KoBoCollect App](kobocollect_on_android_basic.md) and
@@ -164,7 +162,7 @@ form in <strong>KoBoCollect</strong>.</p>
 
 Once you have collected your data, and made any necessary edits, you can upload
 the forms to the __KoBoToolbox__ server.
-- __Open__ KoBoCollect.
+- Open __KoBoCollect__.
 - Make sure the device is securely connected to the internet.
 - Select __Send Finalized Form__ from the home screen.
 - A list of all the collected forms should appear.
