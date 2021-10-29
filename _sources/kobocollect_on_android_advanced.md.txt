@@ -1,15 +1,13 @@
-# Advanced Data Collection on KoboCollect app - Android Versions 7+
-
-__For Android versions 7 and above__
+# Advanced Data Collection on KoboCollect app - v2021.2.4 and above
 
 __KoBoCollect__ is an open-source Android app for collecting survey data. It’s
 one of two ways that you can collect data through __KoBoToolbox__ (the other
 way is through [web forms - Enketo](data_through_webforms.md)). It’s free and
 the latest version of the app can be accessed in the [Google Play
 Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android)
-if you have Android versions 7 and above.
+if you have Android versions 5 and above.
 
-If you have Android versions 4.1 to 6, you can install an older version of the
+If you have an Android version below 5, you can install an older version of the
 app through the [KoBoToolbox GitHub
 Repository](https://github.com/kobotoolbox/collect/releases). We have a support
 article outlining how to collect data in the older version of __KoBoCollect__
