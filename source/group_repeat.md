@@ -111,7 +111,7 @@ To skip a group of questions, you should have at least one controlling question 
 
 ![image](/images/group_repeat/skip.png)
 
-Then select __Skip Logic__ and [configure](configure) as shown in the image below:
+Then select __Skip Logic__ and configure as shown in the image below:
 
 ![image](/images/group_repeat/skip_logic.png)
 
