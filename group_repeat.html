@@ -233,7 +233,7 @@
 <h2>Skipping a group of questions<a class="headerlink" href="#skipping-a-group-of-questions" title="Permalink to this headline">¶</a></h2>
 <p>To skip a group of questions, you should have at least one controlling question on top of the grouped question. Press the settings icon from the grouped question as shown in the image below:</p>
 <p><img alt="image" src="_images/skip.png" /></p>
-<p>Then select <strong>Skip Logic</strong> and <a class="reference external" href="configure">configure</a> as shown in the image below:</p>
+<p>Then select <strong>Skip Logic</strong> and configure as shown in the image below:</p>
 <p><img alt="image" src="_images/skip_logic.png" /></p>
 <p>Alternatively, you could also do this in XLSForm:</p>
 <p><strong>survey</strong></p>
@@ -660,6 +660,23 @@
 </table><p>Screen seen while collecting data in Enketo:</p>
 <p><img alt="image" src="_images/nested_repeat_enketo.png" /></p>
 <p class="note">You are able to collect data using nested repeats in both <a class="reference" href="data_through_webforms.html">Enketo</a> and the <a class="reference" href="kobocollect-android.html">Collect Android app</a>. If you are using Collect, please ensure that you are using the latest version as earlier versions may not support this.</p></section>
+<section id="downloading-data-from-repeat-groups">
+<h2>Downloading Data from Repeat Groups<a class="headerlink" href="#downloading-data-from-repeat-groups" title="Permalink to this headline">¶</a></h2>
+<p>This section takes you through the process of downloading data from repeat
+groups.</p>
+<p>Data from repeat groups are downloaded separately from data outside the repeat
+groups (primary/parent data). The following diagram illustrates the structure
+of how sheets are created in the XLSform.</p>
+<p><img alt="Data Structure" src="_images/data_structure.png" /></p>
+<p>When you download data from a form (project) with repeat groups included, you
+need to use either the <strong>XLS</strong> or <strong>XLS (legacy)</strong> download options. <strong>CSV</strong>
+download will only give you data from the Primary/Parent Data.</p>
+<p><img alt="XLS Download" src="_images/xls_download.png" /></p>
+<p>As previously explained, once you have downloaded the data, check for repeat
+group data within the separate sheets. To link the repeat group data to the
+parent data, use the index column from the parent sheet and match it to the
+parent index column in the repeat group sheet.</p>
+</section>
 </section>
 
 
@@ -732,6 +749,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#controlling-the-loop-of-repetition-in-a-roster">Controlling the loop of repetition in a roster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#using-information-to-a-roster-from-a-preceding-roster">Using information to a roster from a preceding roster</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#nested-repeat-roster-within-a-roster">Nested Repeat (roster within a roster)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-data-from-repeat-groups">Downloading Data from Repeat Groups</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
@@ -765,7 +783,7 @@
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_basic.html">Basic Data Collection on KoBoCollect App - Android Versions 7+</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_basic.html">Basic Data Collection on KoBoCollect App - v2021.2.4 and above</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_advanced.html">Advanced Data Collection on KoboCollect app - Android Versions 7+</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Data Collection on KoBoCollect App - Android Versions 4.1 - 6</a></li>
 <li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
