@@ -103,9 +103,8 @@
 <h1>Library locking<a class="headerlink" href="#library-locking" title="Permalink to this headline">¶</a></h1>
 <p>“Library locking” refers to the feature enabling various aspects of a survey to be “<a class="reference external" href="#locked">locked</a>” when created from a template containing <a class="reference external" href="#restrictions">locking attributes</a>. All aspects of a form’s editing are available to be locked through the assigning of “<a class="reference external" href="#profile">locking profiles</a>” at the form, question or group level. These locking profiles can be assigned granular “<a class="reference external" href="#restriction">restrictions</a>” that group together locking functionalities. Alternatively, the form can be fully locked down, preventing all aspects of editing.</p>
 <p class="note">Currently, only locking set within the XLSForm itself is supported, but will be incorporated into the form-builder at some point in the future.</p><p>This feature may be useful in a large, distributed team setting where a standard template is used, with some locked features, and each team can make necessary local adjustments for their needs. The creator of the template can continue to make updates, but the locks will restrict changes to specified aspects of the form for those who <a class="reference internal" href="new_form.html"><span class="doc">create a project based on the template</span></a>.</p>
-<p class="note">Locking aspects of a form is separate from <a class="reference" href="managing_permissions.html">managing permissions to a project</a> or <a class="reference" href="row_level_permissions.html">row-level access</a>.</section>
-<section id="restrictions">
-<h1>Restrictions<a class="headerlink" href="#restrictions" title="Permalink to this headline">¶</a></h1>
+<p class="note">Locking aspects of a form is separate from <a class="reference" href="managing_permissions.html">managing permissions to a project</a> or <a class="reference" href="row_level_permissions.html">row-level access</a>.<section id="restrictions">
+<h2>Restrictions<a class="headerlink" href="#restrictions" title="Permalink to this headline">¶</a></h2>
 <p>There are three levels of restrictions that can be set:</p>
 <ol class="simple">
 <li><p><a class="reference external" href="#question-level-restrictions">Question</a>,</p></li>
@@ -114,7 +113,7 @@
 </ol>
 <p>Additionally, there is a <a class="reference external" href="#id1"><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code></a> Boolean that can set in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet that will render the survey completely locked.</p>
 <section id="kobo-lock-all">
-<h2><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#kobo-lock-all" title="Permalink to this headline">¶</a></h2>
+<h3><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#kobo-lock-all" title="Permalink to this headline">¶</a></h3>
 <p>If <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, then all additional granular restrictions are redundant as the form is <em>fully</em> locked down. If it is set to <code class="docutils literal notranslate"><span class="pre">False</span></code> <em>or</em> omitted from the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet, then defined locking profiles can be used to control the locked behaviour:</p>
 <p><strong>settings</strong></p>
 <table border="1" class="docutils">
@@ -131,7 +130,7 @@
 </table><p>The accepted values for <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> are the same as in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet that <a class="reference external" href="https://github.com/XLSForm/pyxform/blob/43ea039250f44cff23b3ad10740fca54dfa12383/pyxform/aliases.py#L127-L142">pyxform supports</a>. No error will be thrown if an invalid value is used, only the form will not function as intended from the user’s perspective.</p>
 <p class="note">Note that the restriction name, such as <code>choice_add</code> below, is <strong>predefined</strong> and only the restrictions listed below are valid options.</p></section>
 <section id="question-level-restrictions">
-<h2>Question-level restrictions<a class="headerlink" href="#question-level-restrictions" title="Permalink to this headline">¶</a></h2>
+<h3>Question-level restrictions<a class="headerlink" href="#question-level-restrictions" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -183,7 +182,7 @@
 </tbody>
 </table></section>
 <section id="group-level-restrictions">
-<h2>Group-level restrictions<a class="headerlink" href="#group-level-restrictions" title="Permalink to this headline">¶</a></h2>
+<h3>Group-level restrictions<a class="headerlink" href="#group-level-restrictions" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -227,7 +226,7 @@
 </tbody>
 </table></section>
 <section id="form-level-restrictions">
-<h2>Form-level restrictions<a class="headerlink" href="#form-level-restrictions" title="Permalink to this headline">¶</a></h2>
+<h3>Form-level restrictions<a class="headerlink" href="#form-level-restrictions" title="Permalink to this headline">¶</a></h3>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -268,7 +267,7 @@
 </table></section>
 </section>
 <section id="xlsform-configuration">
-<h1>XLSForm configuration<a class="headerlink" href="#xlsform-configuration" title="Permalink to this headline">¶</a></h1>
+<h2>XLSForm configuration<a class="headerlink" href="#xlsform-configuration" title="Permalink to this headline">¶</a></h2>
 <p>There are three sheets where locking profiles are defined and set: <code class="docutils literal notranslate"><span class="pre">survey</span></code>, <code class="docutils literal notranslate"><span class="pre">settings</span></code> and <a class="reference external" href="#id2"><code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code></a>. The sheet of <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> is not officially supported by <a class="reference external" href="https://github.com/XLSForm/pyxform">pyxform</a> and is KoBoToolbox-specific.</p>
 <p>Form-level restrictions are defined in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet and question and group-level restrictions are defined in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet.</p>
 <p>From within the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> sheet, all the locking profiles are defined in a matrix structure, using the keyword “<a class="reference external" href="#locked">locked</a>” to assign a “<a class="reference external" href="#restriction">restriction</a>” to a specific “<a class="reference external" href="#profile">profile</a>”. For example:</p>
@@ -399,14 +398,14 @@
 </tbody>
 </table><p><i>This example XLSForm can be downloaded <a download class="reference" href="/_static/files/library_locking/library-locking-example.xlsx">here</a>.</i></p>
 <section id="import-locked-xlsforms">
-<h2>Import locked XLSForms<a class="headerlink" href="#import-locked-xlsforms" title="Permalink to this headline">¶</a></h2>
+<h3>Import locked XLSForms<a class="headerlink" href="#import-locked-xlsforms" title="Permalink to this headline">¶</a></h3>
 <p>Import your XLSForm as a <code class="docutils literal notranslate"><span class="pre">template</span></code> through the KoBoToolbox UI by navigating to your <strong>Library</strong> and clicking on <strong>NEW</strong> and then <strong>Upload</strong>. Ensure that you select <code class="docutils literal notranslate"><span class="pre">template</span></code> from the <strong>Choose desired type</strong> drop-down menu and then import your XLSForm.</p>
 <p><img alt="choose template type" src="_images/import-template.png" /></p>
 <p>The locked template will now show in your library list view with a lock symbol.</p>
 <p><img alt="library list" src="_images/library-list-view.png" /></p>
 </section>
 <section id="create-project-from-locked-template">
-<h2>Create project from locked template<a class="headerlink" href="#create-project-from-locked-template" title="Permalink to this headline">¶</a></h2>
+<h3>Create project from locked template<a class="headerlink" href="#create-project-from-locked-template" title="Permalink to this headline">¶</a></h3>
 <p>Once a locked template has been added to your library – either directly through importing an XLSForm as a template, creating a template based on a locked survey or adding a locked template from the public collections – you can create a new project. In the <strong>Projects</strong> section of the UI, click on <strong>NEW</strong> and then <strong>Use a template</strong>.</p>
 <p><img alt="create project from template" src="_images/create-project-from-template.png" /></p>
 <ul class="simple">
@@ -436,7 +435,7 @@
 <p><img alt="form-level restrictions" src="_images/form-style.png" /></p>
 </section>
 <section id="form-validation">
-<h2>Form validation<a class="headerlink" href="#form-validation" title="Permalink to this headline">¶</a></h2>
+<h3>Form validation<a class="headerlink" href="#form-validation" title="Permalink to this headline">¶</a></h3>
 <p>The following cases will currently throw a <code class="docutils literal notranslate"><span class="pre">FormPackLibraryLockingError</span></code>:</p>
 <ul class="simple">
 <li><p>If a locking profile name (column header in the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> sheet) is “locked” (the same as the locking keyword)</p></li>
@@ -446,12 +445,12 @@
 </ul>
 <p class="note">Validation of the XLSForm library locking features will be expanded in the future.</p></section>
 <section id="caveats">
-<h2>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline">¶</a></h2>
+<h3>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline">¶</a></h3>
 <p>In some spreadsheet editors, two single dashes (<code class="docutils literal notranslate"><span class="pre">--</span></code>) are automatically converted to an m-dash (—), therefore making it difficult to type <code class="docutils literal notranslate"><span class="pre">kobo--</span></code> into a cell. We therefore convert all instances of n- and m-dashes into two single dashes (when prefixed with <code class="docutils literal notranslate"><span class="pre">kobo</span></code>). An XLSForm with the sheet name of “kobo—locking-profiles” will be converted to <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> and similarly for the column headers.</p>
 </section>
 </section>
 <section id="json-representation">
-<h1>JSON representation<a class="headerlink" href="#json-representation" title="Permalink to this headline">¶</a></h1>
+<h2>JSON representation<a class="headerlink" href="#json-representation" title="Permalink to this headline">¶</a></h2>
 <p>There are two attributes of the asset where locking information can be accessed and modified: <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code> and <code class="docutils literal notranslate"><span class="pre">asset.content</span></code>.</p>
 <p>If <a class="reference external" href="#kobo-locking-profile"><code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code></a> is a column name in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet, it will also be listed in the <code class="docutils literal notranslate"><span class="pre">asset.summary.columns</span></code> array.</p>
 <p>In <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code>, the following two Boolean attributes describe an overview of the form’s locking structure:</p>
@@ -524,7 +523,7 @@
 </div>
 </section>
 <section id="locking-profiles-and-asset-types">
-<h1>Locking profiles and asset types<a class="headerlink" href="#locking-profiles-and-asset-types" title="Permalink to this headline">¶</a></h1>
+<h2>Locking profiles and asset types<a class="headerlink" href="#locking-profiles-and-asset-types" title="Permalink to this headline">¶</a></h2>
 <p>Of the four asset types (<code class="docutils literal notranslate"><span class="pre">asset</span></code>, <code class="docutils literal notranslate"><span class="pre">template</span></code>, <code class="docutils literal notranslate"><span class="pre">question</span></code> and <code class="docutils literal notranslate"><span class="pre">block</span></code>), only <code class="docutils literal notranslate"><span class="pre">template</span></code>s and <code class="docutils literal notranslate"><span class="pre">survey</span></code>s handle library locking features and the locks are enforced <em>only</em> on surveys. Practically, this means the following:</p>
 <p>Assume an XLSForm containing valid locking features is imported:</p>
 <ul class="simple">
@@ -634,34 +633,35 @@
 </tbody>
 </table></section>
 <section id="terminology">
-<h1>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h1>
+<h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h2>
 <section id="id1">
-<h2><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<h3><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <p>Attribute containing a Boolean value, set in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet and applies all locking restrictions to the form and all questions and groups (rendering granular locking profiles redundant).</p>
 </section>
 <section id="kobo-locking-profile">
-<h2><code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code><a class="headerlink" href="#kobo-locking-profile" title="Permalink to this headline">¶</a></h2>
+<h3><code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code><a class="headerlink" href="#kobo-locking-profile" title="Permalink to this headline">¶</a></h3>
 <p>Column name in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> and <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheets where the locking profile is assigned to a question or group (in <code class="docutils literal notranslate"><span class="pre">survey</span></code>) or to the form (in <code class="docutils literal notranslate"><span class="pre">settings</span></code>).</p>
 </section>
 <section id="kobo-locking-profiles">
-<h2><code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code><a class="headerlink" href="#kobo-locking-profiles" title="Permalink to this headline">¶</a></h2>
+<h3><code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code><a class="headerlink" href="#kobo-locking-profiles" title="Permalink to this headline">¶</a></h3>
 <p>Sheet name where restrictions are assigned to profiles.</p>
 </section>
 <section id="locked">
-<h2><code class="docutils literal notranslate"><span class="pre">locked</span></code><a class="headerlink" href="#locked" title="Permalink to this headline">¶</a></h2>
+<h3><code class="docutils literal notranslate"><span class="pre">locked</span></code><a class="headerlink" href="#locked" title="Permalink to this headline">¶</a></h3>
 <p>Keyword used to assign a restriction to a profile in the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> sheet.</p>
 </section>
 <section id="profile">
-<h2>Profile<a class="headerlink" href="#profile" title="Permalink to this headline">¶</a></h2>
+<h3>Profile<a class="headerlink" href="#profile" title="Permalink to this headline">¶</a></h3>
 <p>The name assigned to a group of restrictions, defined in the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> sheet. It is assigned to questions and groups in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet and to the from in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet.</p>
 </section>
 <section id="restriction">
-<h2>Restriction<a class="headerlink" href="#restriction" title="Permalink to this headline">¶</a></h2>
+<h3>Restriction<a class="headerlink" href="#restriction" title="Permalink to this headline">¶</a></h3>
 <p>A granular locking attribute that can be assigned to a profile and control the locking behaviour at the question, group or form level.</p>
 </section>
 <section id="unlocked">
-<h2>Unlocked<a class="headerlink" href="#unlocked" title="Permalink to this headline">¶</a></h2>
+<h3>Unlocked<a class="headerlink" href="#unlocked" title="Permalink to this headline">¶</a></h3>
 <p>A form containing no locking attributes.</p>
+</section>
 </section>
 </section>
 
@@ -741,31 +741,12 @@
 <li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Library locking</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#restrictions">Restrictions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#kobo-lock-all"><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#question-level-restrictions">Question-level restrictions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#group-level-restrictions">Group-level restrictions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#form-level-restrictions">Form-level restrictions</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#xlsform-configuration">XLSForm configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#import-locked-xlsforms">Import locked XLSForms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-project-from-locked-template">Create project from locked template</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#form-validation">Form validation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#caveats">Caveats</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#json-representation">JSON representation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#locking-profiles-and-asset-types">Locking profiles and asset types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="#terminology">Terminology</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id1"><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#kobo-locking-profile"><code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#kobo-locking-profiles"><code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#locked"><code class="docutils literal notranslate"><span class="pre">locked</span></code></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#profile">Profile</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#restriction">Restriction</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#unlocked">Unlocked</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Library locking</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#restrictions">Restrictions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xlsform-configuration">XLSForm configuration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#json-representation">JSON representation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#locking-profiles-and-asset-types">Locking profiles and asset types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#terminology">Terminology</a></li>
 </ul>
 </li>
 </ul>

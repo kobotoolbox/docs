@@ -1,4 +1,4 @@
-## Library locking
+# Library locking
 
 "Library locking" refers to the feature enabling various aspects of a survey to be "[locked](#locked)" when created from a template containing [locking attributes](#restrictions). All aspects of a form's editing are available to be locked through the assigning of "[locking profiles](#profile)" at the form, question or group level. These locking profiles can be assigned granular "[restrictions](#restriction)" that group together locking functionalities. Alternatively, the form can be fully locked down, preventing all aspects of editing.
 
