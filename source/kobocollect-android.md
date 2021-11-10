@@ -1,4 +1,6 @@
-# Data Collection on KoBoCollect App - v1.30.1 and below
+# Data Collection on KoBoCollect App (Older Version)
+
+<p class='note'>The older version of the KoBoCollect App refers to v1.30.1 and below.</p>
 
 __KoBoCollect__ is an open-source Android app for collecting survey data. It’s one
 of two ways that you can collect data through KoBoToolbox (the other way is
@@ -10,10 +12,7 @@ Repository](https://github.com/kobotoolbox/collect/releases).
 If you have Android versions 5 and above, you can download the latest version
 of the __KoBoCollect__ App on the [Google Play
 Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android)
-and refer to our support articles for the latest version of the app: [Basic
-Data Collection on the KoBoCollect App](kobocollect_on_android_basic.md) and
-[Advanced Functions in the KoBoCollect
-App](kobocollect_on_android_advanced.md). We recommend using the latest version
+and refer to our support articles for the latest version of the app: [Data Collection on KoBoCollect App (Latest Version)](kobocollect_on_android_basic.md). We recommend using the latest version
 of the app, if possible, as it includes features and bug fixes that may not be
 available in older versions.
 
@@ -25,10 +24,10 @@ __KoBoCollect__ app to the __KoBoToolbox__ server. This allows you to download
 deployed forms from __KoBoToolbox__ to your mobile device and also send data
 collected through the app back to the server.
 
-The server in __KoBoCollect__ can be configured in two different ways: manually
-or through a QR code.
+The server in __KoBoCollect__ can be configured in two different ways: _manually_
+or through a _QR code_.
 
-### Setting up server connection manually:
+### Setting up server connection _manually_:
 
 - Open __KoBoCollect__.
 - Select __Main Settings__ (three vertical dots) > __General Settings__ (this
@@ -57,11 +56,11 @@ class="reference">Troubleshooting KoBoCollect Android Application</a>.</p>
 
 ![Main Menu](/images/kobocollect_android/main_menu.jpg)
 
-You can use __KoBoCollect__ to get blank forms to your device, collect data
-(fill blank forms), store it in your device, edit the filled in forms (edit
-saved forms), submit saved forms, and delete filled in forms / blank forms.
+You can use __KoBoCollect__ to _get blank forms to your device_, _collect data
+(fill blank forms)_, _store it in your device_, _edit the filled in forms (edit
+saved forms)_, _submit saved forms_, and _delete filled in forms/blank forms_.
 
-### Setting up server connection with a QR code
+### Setting up server connection with a _QR code_
 
 Oftentimes, users in large projects will need to set up a large number of
 devices under the same server settings (__URL__, __Username__, and
