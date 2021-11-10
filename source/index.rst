@@ -77,7 +77,6 @@ Search the knowledge base, browse our resources and visit our forum for more det
   data_through_webforms
   data-offline
   kobocollect_on_android_basic
-  kobocollect_on_android_advanced
   kobocollect-android
   devices_for_data_collection
   hipaa_compliance
