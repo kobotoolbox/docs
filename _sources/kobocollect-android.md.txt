@@ -12,7 +12,7 @@ Repository](https://github.com/kobotoolbox/collect/releases).
 If you have Android versions 5 and above, you can download the latest version
 of the __KoBoCollect__ App on the [Google Play
 Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android)
-and refer to our support articles for the latest version of the app: [Data Collection on KoBoCollect App (Latest Version)](kobocollect_on_android_basic.md). We recommend using the latest version
+and refer to our support articles for the latest version of the app: [Data Collection on KoBoCollect App (Latest Version)](kobocollect_on_android_latest.md). We recommend using the latest version
 of the app, if possible, as it includes features and bug fixes that may not be
 available in older versions.
 

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Basic Data Collection on KoBoCollect App - v2021.2.4 and above &#8212; KoBoToolbox  documentation</title>
+    <title>Data Collection on KoBoCollect App (Latest Version) &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
@@ -24,7 +24,7 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Advanced Data Collection on KoboCollect app - v2021.2.4 and above" href="kobocollect_on_android_advanced.html" />
+    <link rel="next" title="Data Collection on KoBoCollect App (Older Version)" href="kobocollect-android.html" />
     <link rel="prev" title="Collecting Data Offline" href="data-offline.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -86,7 +86,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="kobocollect_on_android_basic">
+<div class="page page--has-sidebar " id="kobocollect_on_android_latest">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -99,9 +99,9 @@
 
         <section class="page__body" role="main">
           
-  <section id="basic-data-collection-on-kobocollect-app-v2021-2-4-and-above">
-<h1>Basic Data Collection on KoBoCollect App - v2021.2.4 and above<a class="headerlink" href="#basic-data-collection-on-kobocollect-app-v2021-2-4-and-above" title="Permalink to this headline">¶</a></h1>
-<p><strong>KoBoCollect</strong> is an open-source Android app for collecting survey data. It’s
+  <section id="data-collection-on-kobocollect-app-latest-version">
+<h1>Data Collection on KoBoCollect App (Latest Version)<a class="headerlink" href="#data-collection-on-kobocollect-app-latest-version" title="Permalink to this headline">¶</a></h1>
+<p class='note'>The latest version of the KoBoCollect App refers to v2021.2.4 and above.</p><p><strong>KoBoCollect</strong> is an open-source Android app for collecting survey data. It’s
 one of two ways that you can collect data through <strong>KoBoToolbox</strong> (the other
 way is through <a class="reference internal" href="data_through_webforms.html"><span class="doc">web forms - Enketo</span></a>). It’s free and
 the latest version of the app can be accessed in the <a class="reference external" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android">Google Play
@@ -114,9 +114,6 @@ article outlining how to collect data in the older version of <strong>KoBoCollec
 <a class="reference internal" href="kobocollect-android.html"><span class="doc">here</span></a>. We recommend using the latest version of
 the app, if possible, as it includes features and bug fixes that may not be
 available in older versions.</p>
-<p>To review advanced functions on the latest version of the app, see our support
-article <a class="reference internal" href="kobocollect_on_android_advanced.html"><span class="doc">Advanced Functions on KoBoCollect
-app</span></a>.</p>
 <section id="setting-up-the-server-connection">
 <h2>Setting Up the Server Connection<a class="headerlink" href="#setting-up-the-server-connection" title="Permalink to this headline">¶</a></h2>
 <p>The first step after installing <strong>KoBoCollect</strong> on your device is to set up the
@@ -124,20 +121,22 @@ server <strong>URL</strong>, <strong>Username</strong>, and <strong>Password</st
 <strong>KoBoCollect</strong> app to the <strong>KoBoToolbox</strong> server. This allows you to download
 deployed forms from <strong>KoBoToolbox</strong> to your mobile device and also send data
 collected through the app back to the server.</p>
-<p>The server in <strong>KoBoCollect</strong> can be configured in two different ways: manually
-or through a QR code.</p>
+<p>The server in <strong>KoBoCollect</strong> can be configured in two different ways: <em>manually</em>
+or through a <em>QR code</em>.</p>
 <section id="setting-up-the-server-connection-manually">
-<h3>Setting up the server connection manually:<a class="headerlink" href="#setting-up-the-server-connection-manually" title="Permalink to this headline">¶</a></h3>
+<h3>Setting up the server connection <em>manually</em>:<a class="headerlink" href="#setting-up-the-server-connection-manually" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Open <strong>KoBoCollect</strong>.</p></li>
 <li><p>Select <strong>Manually enter project details</strong>.</p></li>
 </ul>
 <p><img alt="Collect Data Anywhere" src="_images/collect_data_anywhere.jpg" /></p>
-<p>You will now be asked to input the <strong>URL</strong>, <strong>Username</strong>, and <strong>Password</strong>, and
+<ul class="simple">
+<li><p>You will now be asked to input the <strong>URL</strong>, <strong>Username</strong>, and <strong>Password</strong>, and
 then select <strong>Add</strong>. For the URL, you must select from the <a class="reference internal" href="server.html"><span class="doc">two KoBoToolbox
 servers</span></a>. If you created your user account on the general use
 server, the URL is <code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org</span></code>. If your user account is on the
-Humanitarian server (OCHA), the URL is <code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info</span></code>.</p>
+Humanitarian server (OCHA), the URL is <code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info</span></code>.</p></li>
+</ul>
 <p><img alt="Server Settings" src="_images/server_settings1.png" /></p>
 <p class='note'>Despite setting up the server settings correctly, users may
 have trouble connecting <strong>KoBoCollect</strong> to the server. This could
@@ -148,13 +147,13 @@ class="reference">Troubleshooting KoBoCollect Android Application</a>.</p><ul cl
 <li><p>After setting up the server, you should now see the following home screen.</p></li>
 </ul>
 <p><img alt="Home Page Comparison" src="_images/home_page_comparison.png" /></p>
-<p>You can use <strong>KoBoCollect</strong> to get blank forms to your device, collect data
-(fill blank forms), store it in your device, edit the filled in forms (edit
-saved forms), submit saved forms, and delete filled in forms/blank forms.</p>
+<p>You can use <strong>KoBoCollect</strong> to <em>get blank forms to your device</em>, <em>collect data
+(fill blank forms)</em>, <em>store it in your device</em>, <em>edit the filled in forms (edit
+saved forms)</em>, <em>submit saved forms</em>, and <em>delete filled in forms/blank forms</em>.</p>
 </section>
 <section id="setting-up-multiple-server-connections-manually">
-<h3>Setting up multiple server connections manually<a class="headerlink" href="#setting-up-multiple-server-connections-manually" title="Permalink to this headline">¶</a></h3>
-<p class='note'>This section is only relevant if you have multiple
+<h3>Setting up multiple server connections <em>manually</em><a class="headerlink" href="#setting-up-multiple-server-connections-manually" title="Permalink to this headline">¶</a></h3>
+<p class='note'>This feature is only available with the latest version of the app and is relevant if you have multiple
 <strong>KoBoToolbox</strong> user accounts.</p><p>Some users have multiple <strong>KoBoToolbox</strong> accounts, either on the same server or
 a different server. With the latest version, users can manage all their
 accounts in the same app and use them in parallel by switching from one account
@@ -186,7 +185,7 @@ see forms for the active account. You can easily switch to your other accounts,
 making them active, by simply selecting them.</p>
 </section>
 <section id="setting-up-the-server-connection-with-a-qr-code">
-<h3>Setting up the server connection with a QR code<a class="headerlink" href="#setting-up-the-server-connection-with-a-qr-code" title="Permalink to this headline">¶</a></h3>
+<h3>Setting up the server connection with a <em>QR code</em><a class="headerlink" href="#setting-up-the-server-connection-with-a-qr-code" title="Permalink to this headline">¶</a></h3>
 <p>Oftentimes, users in large projects will need to set up a large number of
 devices under the same server settings (<strong>URL</strong>, <strong>Username</strong>, and
 <strong>Password</strong>, etc.). Setting up all the devices manually would be
@@ -197,10 +196,13 @@ device.</p>
 one app that has been set up manually.</p><ul class="simple">
 <li><p>Open <strong>KoBoCollect</strong> and choose the project that has been set up.</p></li>
 <li><p>Select the circle K icon that is located at the top right of your screen.</p></li>
-<li><p>Select <strong>Settings</strong>, then <strong>Project Management</strong>.</p></li>
+<li><p>Select <strong>Settings</strong>.</p></li>
 </ul>
-<p><img alt="Project Settings Modal 1" src="_images/project_settings_modal_1.jpg" />
-<img alt="Project Settings" src="_images/project_settings_list.jpg" /></p>
+<p><img alt="Project Settings Modal 1" src="_images/project_settings_modal_1.jpg" /></p>
+<ul class="simple">
+<li><p>Then select <strong>Project Management</strong>.</p></li>
+</ul>
+<p><img alt="Project Settings" src="_images/project_settings_list.jpg" /></p>
 <ul class="simple">
 <li><p>Select <strong>Reconfigure with QR code</strong>.</p></li>
 <li><p>Choose <strong>QR Code</strong> at the top. A QR code will be displayed that contains all
@@ -318,6 +320,135 @@ delete all the <strong>Saved Forms</strong> from the app and then <strong>Delete
 </ul>
 <p class='note'>Users should not require an internet connection to delete saved
 forms in <strong>KoBoCollect</strong>.</p></section>
+<section id="resetting-view-sent-form-in-kobocollect">
+<h2>Resetting View Sent Form in KoBoCollect<a class="headerlink" href="#resetting-view-sent-form-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>When you submit all the filled forms to the server by pressing <strong>Send Finalized
+Form</strong>, the successfully submitted forms can be seen in the <strong>View Sent Form</strong>
+section. Data managers generally advise to keep this information until the end
+of the project as it always provides a reference for the total number of
+collections and submissions.</p>
+<p>Once the current project’s data collection is over or if you are planning to
+start a new project, it is advised to reset the counter in <strong>View Sent Form</strong>.
+This will help to keep track of the data collection for the new project.</p>
+<ul class="simple">
+<li><p>Open <strong>KoBoCollect</strong>.</p></li>
+<li><p>Select the icon (circled in K) that is located at the top right of your
+screen.</p></li>
+<li><p>Select <strong>Settings</strong>.</p></li>
+</ul>
+<p><img alt="Select Settings" src="_images/select_settings.jpg" /></p>
+<ul class="simple">
+<li><p>Under <strong>Project settings</strong>, select <strong>Project management</strong>.</p></li>
+<li><p>Under <strong>Project management</strong> select <strong>Reset</strong>.</p></li>
+<li><p>Click <strong>Saved forms (instances folder, instances database)</strong> and then select
+<strong>RESET</strong>.</p></li>
+</ul>
+<p><img alt="Reset" src="_images/reset.jpg" /></p>
+<ul class="simple">
+<li><p>You should see a small dialogue box with a pop up a message <em><strong>“Reset results
+Saved forms: Success”</strong></em>.</p></li>
+<li><p>Select <strong>OK</strong>.</p></li>
+</ul>
+<p class='note'>Users do not need an internet connection to reset <strong>View
+Sent Form</strong> in <strong>KoBoCollect</strong>.</p></section>
+<section id="hiding-buttons-in-kobocollect">
+<h2>Hiding Buttons in KoBoCollect<a class="headerlink" href="#hiding-buttons-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>In some cases, it is recommended to hide certain buttons in the app from
+interviewers to prevent them from editing or changing collected data,
+decreasing the risk of data loss.</p>
+<ul class="simple">
+<li><p>Open <strong>KoBoCollect</strong>.</p></li>
+<li><p>Select the icon (circled in K) that is located at the top right of your
+screen.</p></li>
+<li><p>Select <strong>Settings</strong>.</p></li>
+<li><p>Under the <strong>Project settings</strong>, select <strong>Access control</strong>, which includes
+<strong>Main Menu Settings</strong>, <strong>User Settings</strong>, and <strong>Form Entry Settings</strong>.</p></li>
+<li><p>Select <strong>Main Menu Settings</strong> to hide buttons from the main menu.</p></li>
+</ul>
+<p><img alt="Main Menu Settings" src="_images/main_menu_settings.jpg" /></p>
+<ul class="simple">
+<li><p>Do the same for <strong>User Settings</strong> and <strong>Form Entry Settings</strong> to hide buttons
+from those menus as well.</p></li>
+</ul>
+<p class='note'>Users do not need an internet connection to hide buttons in
+<strong>KoBoCollect</strong>.</p></section>
+<section id="locking-kobocollect-with-an-admin-password">
+<h2>Locking KoBoCollect with an Admin Password<a class="headerlink" href="#locking-kobocollect-with-an-admin-password" title="Permalink to this headline">¶</a></h2>
+<p>If needed, you can set up an admin password in the <strong>KoBoCollect</strong> app,
+limiting access to the app’s admin settings to only team members with the admin
+password.</p>
+<ul class="simple">
+<li><p>Open <strong>KoBoCollect</strong>.</p></li>
+<li><p>Select the icon (circled in K) that is located at the top right of your
+screen.</p></li>
+<li><p>Select <strong>Settings</strong>.</p></li>
+<li><p>Under the <strong>Project settings</strong>, select <strong>Set admin password</strong>.</p></li>
+<li><p>You will be requested to <strong>Enter New Password</strong>. After entering a new
+password, select <strong>OK</strong>.</p></li>
+</ul>
+<p class='note'>Users do not need an internet connection to lock
+<strong>KoBoCollect</strong> with an admin password. To remove the admin
+password, leave it blank instead of providing a new password.</p></section>
+<section id="form-management-settings-in-kobocollect">
+<h2>Form Management Settings in KoBoCollect<a class="headerlink" href="#form-management-settings-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>There are other form management settings available within <strong>KoBoCollect</strong> which
+could assist in managing your data collection project:</p>
+<p><strong>Form update</strong> provides an option to update the survey form manually or
+automatically. If set to automatic, the forms that are redeployed on the
+<strong>KoBoToolbox</strong> server are automatically updated in the app. Note that keeping
+this feature active will likely drain your device’s battery more quickly.</p>
+<p><strong>Form submission</strong> provides an option to send submissions to the server
+manually or automatically, with the options of <em>Wifi only</em>, <em>cellular only</em>,
+and <em>wifi or cellular</em>. This setting also gives the option to delete finalized
+forms and media after being successfully sent to the server.</p>
+<p><strong>Form filling</strong> provides several options for forms and data collection:</p>
+<ul class="simple">
+<li><p>Option to mark the form as finalized by default.</p></li>
+<li><p>Option to configure the constraint processing (<em>validate upon forward swipe
+or defer validation until finalized</em>).</p></li>
+<li><p>Enable or disable high-resolution video recordings or change the allowed
+image size when taking videos and images through the app.</p></li>
+<li><p><em>Show guidance for questions</em> under the form filling to show or hide guidance
+for questions</p></li>
+<li><p><em>Use of an external app for audio recording</em> could help to set up an external
+app for audio recording while collecting data.</p></li>
+</ul>
+<p>Follow the steps outlined below to access the form management settings:</p>
+<ul class="simple">
+<li><p>Open <strong>KoBoCollect</strong>.</p></li>
+<li><p>Select the icon (circled in K) that is located at the top right of your
+screen.</p></li>
+<li><p>Select <strong>Settings</strong>.</p></li>
+<li><p>Under the <strong>Project settings</strong>, select <strong>Form management</strong> and select the
+options relevant for your project.</p></li>
+</ul>
+<p><img alt="Form Management" src="_images/form_management1.jpg" /></p>
+<p class='note'>Users do not need an internet connection to access or change
+the form management settings in <strong>KoBoCollect</strong>.</p></section>
+<section id="setting-up-metadata-in-kobocollect">
+<h2>Setting Up Metadata in KoBoCollect<a class="headerlink" href="#setting-up-metadata-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p>Users can set up the collection of metadata like <em>username</em>, <em>phone number</em> and
+<em>email address</em> in <strong>KoBoCollect</strong>, providing additional details on who
+submitted the records to the server. These details can be helpful to validate
+the quality of the data collected by the team.</p>
+<p class='note'>In order to collect metadata, it must be configured in both the
+<strong>KoBoCollect</strong> app and on the <strong>KoBoToolbox</strong>
+platform for the same project. Please refer to our support article <a
+href="form_meta.html" class="reference">Form Settings and Meta Questions</a> for
+instructions on how to configure set up in <strong>KoBoToolbox</strong>.</p><ul class="simple">
+<li><p>Open <strong>KoBoCollect</strong>.</p></li>
+<li><p>Select the icon (circled in K) that is located at the top right of your screen.</p></li>
+<li><p>Select <strong>Settings</strong>.</p></li>
+<li><p>Under the <strong>Project settings</strong>, select <strong>User and device identity</strong>.</p></li>
+<li><p>Under <strong>User and device identity</strong>, select <strong>Form metadata</strong>.</p></li>
+</ul>
+<p><img alt="Form Metadata" src="_images/form_metadata1.jpg" /></p>
+<ul class="simple">
+<li><p>Enter all the metadata like <em>username</em>, <em>phone number</em>, and <em>email address</em>
+that you want to collect.</p></li>
+</ul>
+<p class='note'>Users do not need an internet connection to access the metadata
+setting in <strong>KoBoCollect</strong>.</p></section>
 <section id="differences-between-kobocollect-odk-collect">
 <h2>Differences Between KoBoCollect &amp; ODK Collect<a class="headerlink" href="#differences-between-kobocollect-odk-collect" title="Permalink to this headline">¶</a></h2>
 <p><strong>KoBoCollect</strong> is a <a class="reference external" href="https://github.com/getodk/collect/network/members">fork</a>
@@ -353,7 +484,7 @@ back to <strong>ODK Collect</strong>, and the <strong>KoBoToolbox</strong> logo 
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Basic Data Collection on KoBoCollect App - v2021.2.4 and above"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Data Collection on KoBoCollect App (Latest Version)"
               class="feedback-button"
               target="_blank"
             >
@@ -426,17 +557,21 @@ back to <strong>ODK Collect</strong>, and the <strong>KoBoToolbox</strong> logo 
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording Entire Interviews</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic Data Collection on KoBoCollect App - v2021.2.4 and above</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Collection on KoBoCollect App (Latest Version)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#setting-up-the-server-connection">Setting Up the Server Connection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#setting-up-blank-forms-in-kobocollect">Setting Up Blank Forms in KoBoCollect</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#collecting-data-in-kobocollect">Collecting Data in KoBoCollect</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#editing-data-in-kobocollect">Editing Data in KoBoCollect</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#uploading-finalized-data-to-the-server">Uploading Finalized Data to the Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#deleting-saved-forms-in-kobocollect">Deleting Saved Forms in KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resetting-view-sent-form-in-kobocollect">Resetting View Sent Form in KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hiding-buttons-in-kobocollect">Hiding Buttons in KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#locking-kobocollect-with-an-admin-password">Locking KoBoCollect with an Admin Password</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#form-management-settings-in-kobocollect">Form Management Settings in KoBoCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-metadata-in-kobocollect">Setting Up Metadata in KoBoCollect</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#differences-between-kobocollect-odk-collect">Differences Between KoBoCollect &amp; ODK Collect</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_advanced.html">Advanced Data Collection on KoboCollect app - v2021.2.4 and above</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Data Collection on KoBoCollect App (Older Version)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
@@ -528,9 +663,9 @@ back to <strong>ODK Collect</strong>, and the <strong>KoBoToolbox</strong> logo 
 
   <script>
     window.docs = {
-      currentPagename: "kobocollect_on_android_basic",
-      currentTitle: "Basic Data Collection on KoBoCollect App - v2021.2.4 and above",
-      currentUrl: ("index.html").replace("index.html", "kobocollect_on_android_basic.html"),
+      currentPagename: "kobocollect_on_android_latest",
+      currentTitle: "Data Collection on KoBoCollect App (Latest Version)",
+      currentUrl: ("index.html").replace("index.html", "kobocollect_on_android_latest.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoBoToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };

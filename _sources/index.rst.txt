@@ -76,8 +76,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   recording-interviews
   data_through_webforms
   data-offline
-  kobocollect_on_android_basic
-  kobocollect_on_android_advanced
+  kobocollect_on_android_latest
   kobocollect-android
   devices_for_data_collection
   hipaa_compliance
