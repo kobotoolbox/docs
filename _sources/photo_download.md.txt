@@ -1,49 +1,80 @@
 # Downloading Photos and Other Media
 
-If your form includes a photo, video, or sound recording question, these files will be uploaded to the server along with your other data. When exporting your dataset to XLS or CSV these files will include references to the filenames of the media attachments, but not the files themselves. To download your media files choose the ZIP option under 'Download data'.
+If your form [includes](question_types.md) a photo, video, or audio recording
+question, these files will be uploaded to the server along with your other
+data. When exporting your dataset to XLS or CSV these files will include
+references to the filenames of the media attachments, but not the files
+themselves. To download all your media files in bulk, choose the **Media
+Attachments (ZIP)** option under **DATA>Downloads>Select export type**.
 
-The following explains other options for downloading and accessing your collected media files.
+The following explains other options for downloading and accessing your
+collected media files.
 
-## Adding direct hyperlinks to collected media in Excel
+<p class='note'>The ZIP export may fail for very large projects due to a server
+time-out limit of 30 minutes being reached. If that is the case, please follow
+the methods below to extract your media files from the
+<strong>KoBoToolbox</strong> server.</p>
 
-1. Download your data to XLS and open the file.
-2. In a new column next to the one that contains the filenames of your images, enter the following formula:
+## Including direct hyperlinks to collected media in XLS export
 
-* **If using the HHI's server**:
-    =CONCATENATE(HYPERLINK("https://kc.kobotoolbox.org/attachment/original?media_file=username/attachments/"),A2)
-    
+1. Navigate to **DATA>Downloads** and expand the **Advanced options** section
+2. Ensure that the option *Include media URLs* is checked (enabled by default)
 
-* **If using OCHA's server**:
-    =CONCATENATE(HYPERLINK("https://kc.humanitarianresponse.info/attachment/original?media_file=username/attachments/"),A2)
+![Include media URLs](/images/photo_download/include_media_urls.png)
 
-3. In the formula replace 'username' with your own username and 'A2' with the first cell reference that contains the file name of your photo. Then copy the formula down for all your records.
+3. Click **EXPORT**
 
-4. You can then click on each of the links to open the media file. Note: This will only work if you are signed in to your user account in your default browser.
+If your survey had the following question:
 
-    The result will look like this:
+**survey**
 
-    ![image](/images/photo_dowload/excel_hyperlinks.jpg)
+| type  | name    | label           |
+| ---   | ---     | ---             |
+| image | image_1 | Submit an image |
 
-## For slow connections or very large projects: Using DownThemAll to download media files
+And a submission to that question with the filename of "image.jpg", the export
+will have the following result:
 
-The ZIP download method will always include all of your project's media files. This can take a long time to download in case of a large number of collected images or videos or in case of a slow connection. Here is a workaround to download all (or a selection of) media using the popular DownThemAll download manager (only supported by the Firefox browser):
+| image_1   | image_1_URL               |
+| ---       | ---                       |
+| image.jpg | https://link/to/image.jpg |
 
-1. Save your Excel file with the added hyperlinks (see instructions above) as an HTML file to your Desktop, using the File > Save as... option (choose 'Web page')
+## For slow connections or very large projects: Using DownThemAll
 
-2. Log in to your KoBoToolbox account where your photos are hosted using the Firefox browser
+The ZIP download method will always include all of your project's media files.
+This can take a long time to download in case of a large number of collected
+images or videos or in case of a slow connection. Here is a workaround to
+download all (or a selection of) media using the popular **DownThemAll**
+download manager (only supported by the Firefox browser):
 
-3. In Firefox install the DownThemAll extension
+1. Save your Excel file with the added hyperlinks (see instructions above) as
+   an HTML file to your Desktop, using the File > Save as... option (choose
+   'Web page')
 
-4. Still in Firefox, open the HTM web page saved on your Desktop in step 1
+2. Log in to your KoBoToolbox account where your photos are hosted using the
+   Firefox browser
 
-5. Right-click somewhere on that page and choose 'DownThemAll!...', or click the extension button in the Firefox Toolbox
+3. In Firefox install the [DownThemAll
+   extension](https://addons.mozilla.org/en-CA/firefox/addon/downthemall)
 
-6. In the extension window that opens click 'Download'. By default, Firefox will save all files in your computer's Download folder (which can be changed)
+4. Still in Firefox, open the HTML web page saved from **Step 1**
 
-7. Optional: In the window that opens set a download speed limit to avoid using all available bandwidth. The settings also allow you to set the number of attempts that should be made for each file in case of connection issues.
+5. Right-click somewhere on that page and choose *DownThemAll!*, or click the
+   extension button in the Firefox Toolbox
 
-If you have a lot of media files this will take a while to download. But the DownThemAll download manager will make sure you have downloaded all the images and let you know in case any of them were not downloaded so you can try again.
+6. In the extension window that opens click **Download**. By default, Firefox
+   will save all files in your computer's Download folder (which can be
+   changed)
 
-![image](/images/photo_dowload/downthemall_extension.jpg)
+7. Optional: In the window that opens, set a download speed limit to avoid
+   using all available bandwidth. The settings also allow you to set the number
+   of attempts that should be made for each file in case of connection issues.
 
-![image](/images/photo_dowload/downthemall_links.jpg)
+If you have a lot of media files this will take a while to download. But the
+**DownThemAll** download manager will make sure you have downloaded all the
+images and let you know in case any of them were not downloaded so you can try
+again.
+
+![DownThemAll extension](/images/photo_download/downthemall_extension.jpg)
+
+![DownThemAll links](/images/photo_download/downthemall_links.jpg)
