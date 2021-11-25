@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Adding Various Types of Media &#8212; KoBoToolbox  documentation</title>
+    <title>Adding Various Types of Media (image, audio, video) to a Form &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
@@ -99,29 +99,199 @@
 
         <section class="page__body" role="main">
           
-  <section id="adding-various-types-of-media">
-<h1>Adding Various Types of Media<a class="headerlink" href="#adding-various-types-of-media" title="Permalink to this headline">¶</a></h1>
-<p>In addition to text questions or responses, you can also include visual or audio media in your forms and have it play or display inside the questionnaire. This works both on the Android app as well as in the Web forms (Enketo).</p>
-<p>We are going to use the below example to demonstrate the steps.</p>
-<p><img alt="image" src="_images/example1.gif" /></p>
-<p><strong>To add images, videos or audio in your form, you need to make changes in Excel using the XLSForm format.</strong></p>
-<p><strong>Step 1</strong>: If you started your project by creating a new form on KoboCollect or the Web version, you need to export your form to the XLSForm format first.</p>
-<p><img alt="image" src="_images/download_xls.gif" /></p>
-<p><strong>Step 2</strong>: Create the media files and save them with short file names.</p>
-<p><img alt="image" src="_images/media_file.gif" /></p>
-<p><strong>Step 3</strong>: Open the downloaded XLS form and add media columns in both the survey and choices tabs. Depending on if you want the images to be paired with choices or just be displayed under the question, you can then add the image files in the survey or/and choices tabs.</p>
-<p><img alt="image" src="_images/media.gif" /></p>
-<p><strong>Note: The file names added to the XLS form must match the file names you gave to your images.</strong></p>
-<p><strong>Step 4</strong>: Upload your XLS form file into the existing project or create a new project. If you preview the form after uploading the XLS form, you will not see the images because we have not uploaded those yet.</p>
-<p><img alt="image" src="_images/upload_xls.gif" /></p>
-<p><strong>Step 5</strong>: Go to the Project Settings, then Media. There you can upload all image files referenced in your form.</p>
-<p><img alt="image" src="_images/setting.gif" /></p>
-<p><strong>Step 6</strong>: Deploy your form. <strong>You will need to redeploy your form every time you update your image files.</strong></p>
-<p><img alt="image" src="_images/deploy.gif" /></p>
-<p><strong>Step 7</strong>: Go back to Form, Collect Data, and then click Open or Preview to check if the images are properly displayed.</p>
-<p><img alt="image" src="_images/upload_image.gif" /></p>
-<p><strong>Note: Skipping Step 6 will mean that your form will be displayed without the media files. Make sure the media files are uploaded before downloading the form to your devices when using the Android app.</strong></p>
-<p>Animated GIF files are not currently supported by Enketo or KoBoCollect.</p>
+  <section id="adding-various-types-of-media-image-audio-video-to-a-form">
+<h1>Adding Various Types of Media (image, audio, video) to a Form<a class="headerlink" href="#adding-various-types-of-media-image-audio-video-to-a-form" title="Permalink to this headline">¶</a></h1>
+<p>In addition to text questions and text choices, you can also add various types
+of media (such as <em>image</em>, <em>audio</em>, and <em>video</em>) to your forms. Having media in
+a form should sometimes be able to help you express your questions and choices
+in a much better way.</p>
+<p>Media in a form works both on <strong>Collect android app</strong> and <strong>Web forms
+(Enketo)</strong>. These are the media files that are currently supported:</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Media</th>
+<th>Files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Image</td>
+<td>jpeg, png, svg</td>
+</tr>
+<tr>
+<td>Audio</td>
+<td>aac, aacp, flac, mp3, mp4, mpeg, ogg, wav, webm, x-m4a, x-wav</td>
+</tr>
+<tr>
+<td>Video</td>
+<td>3gpp, avi, flv, mov, mp4, ogg, quicktime (qtff), webm, wmv</td>
+</tr>
+</tbody>
+</table><p>This support article aims to illustrate how forms with media can be created with
+<strong>KoBoToolbox</strong>. Follow the instructions outlined below to include media to your
+survey project.</p>
+<section id="step-1-download-form-as-xlsform">
+<h2>Step 1: Download Form as XLSForm<a class="headerlink" href="#step-1-download-form-as-xlsform" title="Permalink to this headline">¶</a></h2>
+<p>Create a survey project in the form-builder UI and then download your form as
+XLS to add media settings to it. The form-builder currently does not support
+adding media to the form directly so you will need to edit the downloaded
+XLSForm to complete this action.</p>
+<p><video controls><source src="./_static/files/media/download_XLSForm.mp4" type="video/mp4"></video></p>
+</section>
+<section id="step-2-add-media-columns-to-your-xlsform">
+<h2>Step 2: Add Media Columns to your XLSForm<a class="headerlink" href="#step-2-add-media-columns-to-your-xlsform" title="Permalink to this headline">¶</a></h2>
+<p class='note'>The file names added to the XLSForm must match the file names you
+gave to your <em>image</em>, <em>audio</em>, and
+<em>video</em> files.</p><section id="adding-image-media-columns">
+<h3>Adding Image Media Columns:<a class="headerlink" href="#adding-image-media-columns" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to add an <strong>image</strong> to a question, then type <code class="docutils literal notranslate"><span class="pre">media::image</span></code> as a
+column header in the <strong>survey</strong> tab of your XLSForm. Type the image file name
+along with an extension to the appropriate question just under the
+<code class="docutils literal notranslate"><span class="pre">media::image</span></code> column header.</p>
+<p>Similarly, if you wish to add an <strong>image</strong> to a choice, then type
+<code class="docutils literal notranslate"><span class="pre">media::image</span></code> as a column header in the <strong>choices</strong> tab of your XLSForm. Once
+again type the image file name along with an extension to the appropriate choice
+just under the <code class="docutils literal notranslate"><span class="pre">media::image</span></code> column header.</p>
+<p><video controls><source src="./_static/files/media/adding_media_image.mp4" type="video/mp4"></video></p>
+</section>
+<section id="adding-audio-media-columns">
+<h3>Adding Audio Media Columns:<a class="headerlink" href="#adding-audio-media-columns" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to add <strong>audio</strong> to a question, then type <code class="docutils literal notranslate"><span class="pre">media::audio</span></code> as a column
+header in the <strong>survey</strong> tab of your XLSForm. Type the audio file name along
+with an extension to the appropriate question just under the
+<code class="docutils literal notranslate"><span class="pre">media::audio</span></code> column header.</p>
+<p>Similarly, if you wish to add <strong>audio</strong> to a choice, then type <code class="docutils literal notranslate"><span class="pre">media::audio</span></code> as
+a column header in the <strong>choices</strong> tab of your XLSForm. Once again type the
+audio file name along with an extension to the appropriate choice just under the
+<code class="docutils literal notranslate"><span class="pre">media::audio</span></code> column header.</p>
+<p><video controls><source src="./_static/files/media/adding_media_audio.mp4" type="video/mp4"></video></p>
+</section>
+<section id="adding-video-media-columns">
+<h3>Adding Video Media Columns:<a class="headerlink" href="#adding-video-media-columns" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to add video to a question, then type <code class="docutils literal notranslate"><span class="pre">media::video</span></code> as a column
+header in the <strong>survey</strong> tab of your XLSForm. Type the video file name along
+with an extension to the appropriate question just under the
+<code class="docutils literal notranslate"><span class="pre">media::video</span></code> column header.</p>
+<p>Similarly, if you wish to add video to a choice, then type <code class="docutils literal notranslate"><span class="pre">media::video</span></code> as a
+column header in the <strong>choices</strong> tab of your XLSForm. Once again type the video
+file name along with an extension to the appropriate choice just under the
+<code class="docutils literal notranslate"><span class="pre">media::video</span></code> column header.</p>
+<p><video controls><source src="./_static/files/media/adding_media_video.mp4" type="video/mp4"></video></p>
+</section>
+</section>
+<section id="step-3-handling-media-columns-for-multiple-languages">
+<h2>Step 3: Handling Media Columns for Multiple Languages<a class="headerlink" href="#step-3-handling-media-columns-for-multiple-languages" title="Permalink to this headline">¶</a></h2>
+<p class='note'>This step is for those who have multiple languages in their survey
+project.</p><p>You may have a survey with multiple languages and want to add various types of
+media relevant to specific languages. In such cases, you could follow the
+illustrations provided below.</p>
+<section id="handling-media-column-for-image-media">
+<h3>Handling Media Column for Image Media:<a class="headerlink" href="#handling-media-column-for-image-media" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to add image to a question, then type <code class="docutils literal notranslate"><span class="pre">media::image</span></code> as a column
+header in the <strong>survey</strong> tab of your XLSForm. Type the image file name along
+with an extension to the appropriate question just under the
+<code class="docutils literal notranslate"><span class="pre">media::image::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> column header.</p>
+<p>Similarly, if you wish to add image to a choice, then type
+<code class="docutils literal notranslate"><span class="pre">media::image::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> as a column header in the <strong>choices</strong>
+tab of your XLSForm. Once again type the image file name along with an extension
+to the appropriate choice just under the
+<code class="docutils literal notranslate"><span class="pre">media::image::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> column header.</p>
+<p><video controls><source src="./_static/files/media/adding_media_image_language.mp4" type="video/mp4"></video></p>
+</section>
+<section id="handling-media-column-for-audio-media">
+<h3>Handling Media Column for Audio Media:<a class="headerlink" href="#handling-media-column-for-audio-media" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to add audio to a question, then type
+<code class="docutils literal notranslate"><span class="pre">media::audio::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> as a column header in the <strong>survey</strong>
+tab of your XLSForm. Type the audio file name along with an extension to the
+appropriate question just under the
+<code class="docutils literal notranslate"><span class="pre">media::audio::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> column header.</p>
+<p>Similarly, if you wish to add audio to a choice, then type
+<code class="docutils literal notranslate"><span class="pre">media::audio::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> as a column header in the <strong>choices</strong>
+tab of your XLSForm. Once again type the audio file name along with an extension
+to the appropriate choice just under the
+<code class="docutils literal notranslate"><span class="pre">media::audio::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> column header.</p>
+<p><video controls><source src="./_static/files/media/adding_media_audio_language.mp4" type="video/mp4"></video></p>
+</section>
+<section id="handling-media-column-for-video-media">
+<h3>Handling Media Column for Video Media:<a class="headerlink" href="#handling-media-column-for-video-media" title="Permalink to this headline">¶</a></h3>
+<p>If you wish to add video to a question, then type
+<code class="docutils literal notranslate"><span class="pre">media::video::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> as a column header in the <strong>survey</strong>
+tab of your XLSForm. Type the video file name along with an extension to the
+appropriate question just under the
+<code class="docutils literal notranslate"><span class="pre">media::video::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> column header.</p>
+<p>Similarly, if you wish to add video to a choice, then type
+<code class="docutils literal notranslate"><span class="pre">media::video::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> as a column header in the <strong>choices</strong>
+tab of your XLSForm. Once again type the video file name along with an extension
+to the appropriate choice just under the
+<code class="docutils literal notranslate"><span class="pre">media::video::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> column header.</p>
+<p><video controls><source src="./_static/files/media/adding_media_video_language.mp4" type="video/mp4"></video></p>
+</section>
+</section>
+<section id="step-4-replace-xlsform">
+<h2>Step 4: Replace XLSForm<a class="headerlink" href="#step-4-replace-xlsform" title="Permalink to this headline">¶</a></h2>
+<p>Upload and replace your XLSForm into the existing project or create a new
+project.</p>
+<p><video controls><source src="./_static/files/media/replacing_XLSForm.mp4" type="video/mp4"></video></p>
+</section>
+<section id="step-5-upload-media-files">
+<h2>Step 5: Upload Media Files<a class="headerlink" href="#step-5-upload-media-files" title="Permalink to this headline">¶</a></h2>
+<p>Go to <strong>SETTINGS&gt;Media</strong>. Upload all media files that have been referenced in
+your form.</p>
+<p><video controls><source src="./_static/files/media/uploading_media.mp4" type="video/mp4"></video></p>
+<p class='note'><strong>Tip:</strong> Collect all media files that you will include in your survey
+project. Provide a short file name for each of the media. File names
+with a space (e.g., "red book") is not supported by the system. Hence,
+you will need to either remove the space in between the names (e.g.,
+"redbook") or use '_' for a space (e.g., "red_book").</p></section>
+<section id="step-6-deploy-form">
+<h2>Step 6: Deploy Form<a class="headerlink" href="#step-6-deploy-form" title="Permalink to this headline">¶</a></h2>
+<p>Once you have replaced the XLSForm and then uploaded all the media files, you
+will need to deploy your survey.</p>
+<p><video controls><source src="./_static/files/media/deploying_form.mp4" type="video/mp4"></video></p>
+<p class='note'>Each time new media files are added or changed, you need to
+<strong>redeploy</strong> your project for the change to take effect.
+You can see your new media when previewing your form
+<em>before</em> redeployment.</p></section>
+<section id="step-7-collect-data">
+<h2>Step 7: Collect Data<a class="headerlink" href="#step-7-collect-data" title="Permalink to this headline">¶</a></h2>
+<p>You can now go back to <strong>Form&gt;Collect Data</strong>, and then click <strong>Open</strong> to check
+if the media are properly displayed.</p>
+<p><video controls><source src="./_static/files/media/collecting_data.mp4" type="video/mp4"></video></p>
+<p class='note'>Animated GIF files are currently not supported by Enketo or
+Collect android app. Aligning media to a desired form location (left
+alignment, center alignment or the right alignment) is also not
+possible.</p></section>
+<section id="tips-tricks">
+<h2>Tips &amp; Tricks<a class="headerlink" href="#tips-tricks" title="Permalink to this headline">¶</a></h2>
+<section id="identifying-the-filename-extension-and-size-of-a-media-file-on-windows">
+<h3>Identifying the filename, extension, and size of a media file on Windows<a class="headerlink" href="#identifying-the-filename-extension-and-size-of-a-media-file-on-windows" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Select a media file (image, audio, or video).</p></li>
+<li><p>Right click your mouse when the media file is still being selected.</p></li>
+</ul>
+<p><img alt="Dropdown select properties" src="_images/dropdown_select_properties.png" /></p>
+<ul class="simple">
+<li><p>Then select <strong>Properties</strong>.</p></li>
+<li><p>You should now be able to see the <em>filename</em> and <em>extension</em> of the media
+file under the <strong>General</strong> tab.</p></li>
+</ul>
+<p><img alt="Image properties" src="_images/image_properties.png" /></p>
+<ul class="simple">
+<li><p>You should also be able to identify the media dimensions and size under the
+<strong>Details</strong> tab. If you wish to have small images in your question or
+choices, you will need to upload media with a smaller dimension, or
+vice-versa.</p></li>
+</ul>
+<p class='note'>The media in an Enketo form will take more time to load if you
+have large files. Try reducing the image, video or audio file sizes
+before uploading them to the server.</p><p><img alt="Image details" src="_images/image_details.png" /></p>
+<p class='note'>You can access the XLSForm <a download class='reference'
+href='./_static/files/media/xlsform-example.xls'>here</a> and the media files <a
+download class='reference'
+href='./_static/files/media/xlsform-example-media.zip'>here</a> that were used
+in this article.</p></section>
+</section>
 </section>
 
 
@@ -135,7 +305,7 @@
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Adding Various Types of Media"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Adding Various Types of Media (image, audio, video) to a Form"
               class="feedback-button"
               target="_blank"
             >
@@ -178,7 +348,17 @@
 <li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Including Responses Inside Another Question</a></li>
 <li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding Various Types of Media</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding Various Types of Media (image, audio, video) to a Form</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-download-form-as-xlsform">Step 1: Download Form as XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-add-media-columns-to-your-xlsform">Step 2: Add Media Columns to your XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-3-handling-media-columns-for-multiple-languages">Step 3: Handling Media Columns for Multiple Languages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-4-replace-xlsform">Step 4: Replace XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-5-upload-media-files">Step 5: Upload Media Files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-6-deploy-form">Step 6: Deploy Form</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-7-collect-data">Step 7: Collect Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tips-tricks">Tips &amp; Tricks</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping Questions and Repeating Groups</a></li>
@@ -301,7 +481,7 @@
   <script>
     window.docs = {
       currentPagename: "media",
-      currentTitle: "Adding Various Types of Media",
+      currentTitle: "Adding Various Types of Media (image, audio, video) to a Form",
       currentUrl: ("index.html").replace("index.html", "media.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoBoToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
