@@ -2,12 +2,12 @@
 
 In addition to text questions and text choices, you can also add various
 types of media (such as *image*, *audio*, and *video*) to your
-survey forms. Having media in a survey form should sometimes be able to
+forms. Having media in a form should sometimes be able to
 help you express your questions and choices in a much better way.
 
-Media in a survey form works both on **Collect android app** and
+Media in a form works both on **Collect android app** and
 **Web forms (Enketo)**. These are the media files that are currently
-supported with KoBoToolbox survey forms:
+supported:
 
 | Media | Files                                                         |
 |-------|---------------------------------------------------------------|
@@ -19,7 +19,7 @@ This support article aims to illustrate how forms with media can be
 created with **KoBoToolbox**. Follow the instructions outlined below
 to include media to your survey project.
 
-## Step 1: Download Survey Form as XLSForm
+## Step 1: Download Form as XLSForm
 
 Create a survey project in the form-builder UI and then download your
 form as XLS to add media settings to
@@ -153,7 +153,7 @@ with a space (e.g., "red book") is not supported by the system. Hence,
 you will need to either remove the space in between the names (e.g.,
 "redbook") or use '_' for a space (e.g., "red_book").</p>
 
-## Step 6: Deploy Survey Form
+## Step 6: Deploy Form
 
 Once you have replaced the XLSForm and then uploaded all the media
 files, you will need to deploy your survey.
@@ -203,7 +203,7 @@ before uploading them to the server.</p>
 
 ![Image details](images/media/image_details.png)
 
-<p class='note'>You could access the XLSForm <a download class='reference'
+<p class='note'>You can access the XLSForm <a download class='reference'
 href='./_static/files/media/xlsform-example.xls'>here</a> and the media files <a
 download class='reference'
 href='./_static/files/media/xlsform-example-media.zip'>here</a> that were used
