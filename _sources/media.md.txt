@@ -25,7 +25,7 @@ XLS to add media settings to it. The form-builder currently does not support
 adding media to the form directly so you will need to edit the downloaded
 XLSForm to complete this action.
 
-<video controls><source src="./_static/files/media/download_XLSForm.mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/media/download_xlsform.mp4" type="video/mp4"></video>
 
 ## Step 2: Add Media Columns to your XLSForm
 
@@ -136,7 +136,7 @@ to the appropriate choice just under the
 Upload and replace your XLSForm into the existing project or create a new
 project.
 
-<video controls><source src="./_static/files/media/replacing_XLSForm.mp4" type="video/mp4"></video>
+<video controls><source src="./_static/files/media/replacing_xlsform.mp4" type="video/mp4"></video>
 
 ## Step 5: Upload Media Files
 
