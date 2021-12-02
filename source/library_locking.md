@@ -2,7 +2,7 @@
 
 "Library locking" refers to the feature enabling various aspects of a survey to be "[locked](#locked)" when created from a template containing [locking attributes](#restrictions). All aspects of a form's editing are available to be locked through the assigning of "[locking profiles](#profile)" at the form, question or group level. These locking profiles can be assigned granular "[restrictions](#restriction)" that group together locking functionalities. Alternatively, the form can be fully locked down, preventing all aspects of editing.
 
-<p class="note">Currently, only locking set within the XLSForm itself is supported, but will be incorporated into the form-builder at some point in the future.</p>
+<p class="note">Currently, only locking set within the XLSForm itself is supported, but will be incorporated into the formbuilder at some point in the future.</p>
 
 This feature may be useful in a large, distributed team setting where a standard template is used, with some locked features, and each team can make necessary local adjustments for their needs. The creator of the template can continue to make updates, but the locks will restrict changes to specified aspects of the form for those who [create a project based on the template](new_form.md).
 
@@ -81,7 +81,7 @@ From within the `kobo--locking-profiles` sheet, all the locking profiles are def
 
 __kobo--locking-profiles__
 
-Define the profiles and assign them restrictions. There is no limit on the number of profiles that can be defined (`profile_1`, ..., `profile_n`) but there are **only three** colours that differentiate their locking appearance in the form-builder.
+Define the profiles and assign them restrictions. There is no limit on the number of profiles that can be defined (`profile_1`, ..., `profile_n`) but there are **only three** colours that differentiate their locking appearance in the formbuilder.
 
 | restriction       | profile_1 | profile_2 | profile_3 |
 |-------------------|-----------|-----------|-----------|
@@ -151,19 +151,19 @@ Once a locked template has been added to your library -- either directly through
 
 ![create project](/images/library_locking/create-project.png)
 
-When this example locked template is used to create a new project, the form-builder will look like the following:
+When this example locked template is used to create a new project, the formbuilder will look like the following:
 
 - The grayed out areas are those that have been disabled through the restrictions.
 
-![overview](/images/library_locking/form-builder.png)
+![overview](/images/library_locking/formbuilder.png)
 
 - A dialogue box above the first question will show an overview of some of the form's restrictions.
 
-![dialogue box](/images/library_locking/form-builder-dialogue-box.png)
+![dialogue box](/images/library_locking/formbuilder-dialogue-box.png)
 
 - Each question with locking profiles will display, in its settings, which restrictions have been set.
 
-![question restrictions](/images/library_locking/form-builder-question-settings.png)
+![question restrictions](/images/library_locking/formbuilder-question-settings.png)
 
 - Some form-level settings will also be greyed out.
 
@@ -267,10 +267,10 @@ Of the four asset types (`asset`, `template`, `question` and `block`), only `tem
 Assume an XLSForm containing valid locking features is imported:
 - If imported as a `block`, then all traces of locking are excluded and/or stripped from the asset. This results in a `block` asset that will be equivalent to the same form uploaded without any locking features;
 - If imported as a `survey` (imported through the __Projects__ section) or `template` then all locks are intact:
-  - If, from within the form-builder:
+  - If, from within the formbuilder:
     - a question is added to the library, then all locks are stripped from the new `question` asset
     - a group of questions is added to the library as a `block`, then all locks are stripped
-  - If a `template` is created _from_ the locked `survey` asset, then that `template` will inherit all the locks the `survey` had (but since it is a template, you are able to edit the contents in the form-builder),
+  - If a `template` is created _from_ the locked `survey` asset, then that `template` will inherit all the locks the `survey` had (but since it is a template, you are able to edit the contents in the formbuilder),
   - If a `survey` is created _from_ a locked `template`, the survey will inherit all the locks that the `template` had
 
 | Original Asset Type | Process                 | Resulting Asset's Status |

@@ -20,8 +20,8 @@ survey project.
 
 ## Step 1: Download Form as XLSForm
 
-Create a survey project in the form-builder UI and then download your form as
-XLS to add media settings to it. The form-builder currently does not support
+Create a survey project in the formbuilder UI and then download your form as
+XLS to add media settings to it. The formbuilder currently does not support
 adding media to the form directly so you will need to edit the downloaded
 XLSForm to complete this action.
 
