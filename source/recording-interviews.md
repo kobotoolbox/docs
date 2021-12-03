@@ -13,18 +13,23 @@ interview.
 Currently, users can record the full interview with the **Collect Android app**
 `v1.30` and above. **Enketo**does not yet support this feature.
 
-<p class="note">If you require an audio recording instead of the full
-background-audio recording, see our support article, <a class="reference"
-href="media.html">Adding Various Types of Media</a>.</p>
+<p class="note">
+  If you require an audio recording instead of the full background-audio
+  recording, see our support article,
+  <a class="reference" href="media.html">Adding Various Types of Media</a>.
+</p>
 
 ## Activating background audio recording in the formbuilder
 
 If you are designing your survey form through the formbuilder and wish to enable
 the background audio recording, follow the steps shown in the video below:
 
-<video controls><source
-src="./_static/files/recording_interviews/activating_background_audio_recording_UI.mp4"
-type="video/mp4"></video>
+<video controls>
+  <source
+    src="./_static/files/recording_interviews/activating_background_audio_recording_UI.mp4"
+    type="video/mp4"
+  />
+</video>
 
 -   Under the **FORM**, select the edit button. _(This step may not be required
     if you are already in the formbuilder)_
@@ -44,9 +49,12 @@ type="video/mp4"></video>
 If you are designing your survey form through the XLSForm and want to include a
 `background-audio` question type, follow the steps shown in the video below:
 
-<video controls><source
-src="./_static/files/recording_interviews/including_background_audio_question_type_xlsform.mp4"
-type="video/mp4"></video>
+<video controls>
+  <source
+    src="./_static/files/recording_interviews/including_background_audio_question_type_xlsform.mp4"
+    type="video/mp4"
+  />
+</video>
 
 In your XLSForm, add `background-audio` under the `type` column of the
 **survey** sheet. This is the question type that will record the audio in the
@@ -60,7 +68,11 @@ will be stored on the server. Keep in mind how much of your total storage space
 you want to use towards your audio files. Refer to the table below when choosing
 the appropriate parameter:
 
-XXX
+| Quality    | Parameters         | Extension | Encoding | Bit rate  | Sample rate | File size    |
+| ---------- | ------------------ | --------- | -------- | --------- | ----------- | ------------ |
+| normal     | quality=normal     | .m4a      | AAC      | 64 kbps   | 32 kHz      | ~ 30 MB/hour |
+| low        | quality=low        | .m4a      | AAC      | 24 kbps   | 32 kHz      | ~ 11 MB/hour |
+| voice-only | quality=voice-only | .amr      | AMR      | 12.2 kbps | 8 kHz       | ~ 5 MB/hour  |
 
 You can leave the column blank to have the parameter set to `voice-only`, which
 will capture audio well in a quiet interview setting. If you are recording audio
@@ -74,9 +86,12 @@ Review our support article,
 [Data Collection on KoBoCollect App](kobocollect_on_android_latest.md), to learn
 in detail about collecting data on the **KoBoCollect Android app**.
 
-<video controls><source
-src="./_static/files/recording_interviews/collecting_data_with_background_audio_in_collect_app.mp4"
-type="video/mp4"></video>
+<video controls>
+  <source
+    src="./_static/files/recording_interviews/collecting_data_with_background_audio_in_collect_app.mp4"
+    type="video/mp4"
+  />
+</video>
 
 While actively recording background audio with the **KoBoCollect Android app**,
 you should be able to see a microphone at the top of your form.
@@ -95,9 +110,12 @@ recorded audio file under the **DATA>Table** as shown in the image below.
 You can download all background audio files as a ZIP file from
 **DATA>Downloads>Media Attachments (ZIP)** as shown in the video below.
 
-<video controls><source
-src="./_static/files/recording_interviews/downloading_audio_files_that_were_recorded_as_background_audio.mp4"
-type="video/mp4"></video>
+<video controls>
+  <source
+    src="./_static/files/recording_interviews/downloading_audio_files_that_were_recorded_as_background_audio.mp4"
+    type="video/mp4"
+  />
+</video>
 
 ## Ethical considerations
 
@@ -105,9 +123,11 @@ When collecting data, it is ethical to have informed consent from survey
 respondents prior to data collection, in this case by recording background
 audio.
 
-<p class="note">We encourage all users to consider ethical implications of their
-data collection and to comply with applicable data protection legislation within
-the jurisdiction of their work.</p>
+<p class="note">
+  We encourage all users to consider ethical implications of their data
+  collection and to comply with applicable data protection legislation within
+  the jurisdiction of their work.
+</p>
 
 ## Troubleshooting
 
