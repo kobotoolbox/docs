@@ -10,7 +10,7 @@ The Question Matrix response type allows users to create a group of questions th
 
 ## Create a Question Matrix in the Formbuilder
 
-1. Go to your Form Builder and click on “Add question”
+1. Go to your formbuilder and click on “Add question”
 2. Select ‘Question Matrix’
 
     ![image](/images/matrix_response/question_matrix.png)

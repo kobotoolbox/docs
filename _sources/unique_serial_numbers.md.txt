@@ -6,7 +6,7 @@ There are times you may want to generate a unique serial number for each and eve
 
 This method works best with [Enketo web forms](data_through_webforms.md). It uses a calculation function to create a unique serial number based on the date and time to the first millisecond. Although this method may not meet all your needs, it should give you an illustration of how much you can stretch calculate functions.
 
-Create a <a class="reference" href="calculate_questions.html"><code>calculate</code> question type</a> in either the form-builder or XLSForm and use the formula below.
+Create a <a class="reference" href="calculate_questions.html"><code>calculate</code> question type</a> in either the formbuilder or XLSForm and use the formula below.
 
 ```
 concat(substr(today(), 0, 4), substr(today(), 7, 5), substr(today(), 10, 8), substr(now(), 13, 11), substr(now(), 16, 14), substr(now(), 19, 17))
@@ -22,7 +22,7 @@ In the example, when you preview the deployed form in Enketo, you should be able
 
 ## Creating Unique Serial Numbers from Selected Variables
 
-This example shows how to create unique serial numbers from existing, already defined variables in your form by using the [`concat()`](https://docs.getodk.org/form-operators-functions/#concat) expression in a `calculate` question type. The example is shown as an XLSForm, but can just as easily be done within the form-builder.
+This example shows how to create unique serial numbers from existing, already defined variables in your form by using the [`concat()`](https://docs.getodk.org/form-operators-functions/#concat) expression in a `calculate` question type. The example is shown as an XLSForm, but can just as easily be done within the formbuilder.
 
 __survey__
 

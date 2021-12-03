@@ -2,9 +2,9 @@
 
 Cascading select questions are sets of questions whose options depend on the response to a previous question. For example, your form may first ask the region where a respondent is from, and then in the next question list only the towns and villages of that region.
 
-<p class="note">Adding sets of cascading select questions to your form can be done by importing them to a draft form in the form-builder or adding them manually to an XLS Form and then uploading that file.</p>
+<p class="note">Adding sets of cascading select questions to your form can be done by importing them to a draft form in the formbuilder or adding them manually to an XLS Form and then uploading that file.</p>
 
-## Importing cascading question sets in the form-builder
+## Importing cascading question sets in the formbuilder
 
 
 1. Open Excel or another spreadsheet program and [follow this template as an example](https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit#gid=0) to create your template of questions and responses to be added.

@@ -102,7 +102,7 @@
   <section id="library-locking">
 <h1>Library locking<a class="headerlink" href="#library-locking" title="Permalink to this headline">¶</a></h1>
 <p>“Library locking” refers to the feature enabling various aspects of a survey to be “<a class="reference external" href="#locked">locked</a>” when created from a template containing <a class="reference external" href="#restrictions">locking attributes</a>. All aspects of a form’s editing are available to be locked through the assigning of “<a class="reference external" href="#profile">locking profiles</a>” at the form, question or group level. These locking profiles can be assigned granular “<a class="reference external" href="#restriction">restrictions</a>” that group together locking functionalities. Alternatively, the form can be fully locked down, preventing all aspects of editing.</p>
-<p class="note">Currently, only locking set within the XLSForm itself is supported, but will be incorporated into the form-builder at some point in the future.</p><p>This feature may be useful in a large, distributed team setting where a standard template is used, with some locked features, and each team can make necessary local adjustments for their needs. The creator of the template can continue to make updates, but the locks will restrict changes to specified aspects of the form for those who <a class="reference internal" href="new_form.html"><span class="doc">create a project based on the template</span></a>.</p>
+<p class="note">Currently, only locking set within the XLSForm itself is supported, but will be incorporated into the formbuilder at some point in the future.</p><p>This feature may be useful in a large, distributed team setting where a standard template is used, with some locked features, and each team can make necessary local adjustments for their needs. The creator of the template can continue to make updates, but the locks will restrict changes to specified aspects of the form for those who <a class="reference internal" href="new_form.html"><span class="doc">create a project based on the template</span></a>.</p>
 <p class="note">Locking aspects of a form is separate from <a class="reference" href="managing_permissions.html">managing permissions to a project</a> or <a class="reference" href="row_level_permissions.html">row-level access</a>.<section id="restrictions">
 <h2>Restrictions<a class="headerlink" href="#restrictions" title="Permalink to this headline">¶</a></h2>
 <p>There are three levels of restrictions that can be set:</p>
@@ -272,7 +272,7 @@
 <p>Form-level restrictions are defined in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet and question and group-level restrictions are defined in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet.</p>
 <p>From within the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> sheet, all the locking profiles are defined in a matrix structure, using the keyword “<a class="reference external" href="#locked">locked</a>” to assign a “<a class="reference external" href="#restriction">restriction</a>” to a specific “<a class="reference external" href="#profile">profile</a>”. For example:</p>
 <p><strong>kobo–locking-profiles</strong></p>
-<p>Define the profiles and assign them restrictions. There is no limit on the number of profiles that can be defined (<code class="docutils literal notranslate"><span class="pre">profile_1</span></code>, …, <code class="docutils literal notranslate"><span class="pre">profile_n</span></code>) but there are <strong>only three</strong> colours that differentiate their locking appearance in the form-builder.</p>
+<p>Define the profiles and assign them restrictions. There is no limit on the number of profiles that can be defined (<code class="docutils literal notranslate"><span class="pre">profile_1</span></code>, …, <code class="docutils literal notranslate"><span class="pre">profile_n</span></code>) but there are <strong>only three</strong> colours that differentiate their locking appearance in the formbuilder.</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
@@ -416,19 +416,19 @@
 <li><p>From there, continue to create the project.</p></li>
 </ul>
 <p><img alt="create project" src="_images/create-project.png" /></p>
-<p>When this example locked template is used to create a new project, the form-builder will look like the following:</p>
+<p>When this example locked template is used to create a new project, the formbuilder will look like the following:</p>
 <ul class="simple">
 <li><p>The grayed out areas are those that have been disabled through the restrictions.</p></li>
 </ul>
-<p><img alt="overview" src="_images/form-builder.png" /></p>
+<p><img alt="overview" src="_images/formbuilder.png" /></p>
 <ul class="simple">
 <li><p>A dialogue box above the first question will show an overview of some of the form’s restrictions.</p></li>
 </ul>
-<p><img alt="dialogue box" src="_images/form-builder-dialogue-box.png" /></p>
+<p><img alt="dialogue box" src="_images/formbuilder-dialogue-box.png" /></p>
 <ul class="simple">
 <li><p>Each question with locking profiles will display, in its settings, which restrictions have been set.</p></li>
 </ul>
-<p><img alt="question restrictions" src="_images/form-builder-question-settings.png" /></p>
+<p><img alt="question restrictions" src="_images/formbuilder-question-settings.png" /></p>
 <ul class="simple">
 <li><p>Some form-level settings will also be greyed out.</p></li>
 </ul>
@@ -530,13 +530,13 @@
 <li><p>If imported as a <code class="docutils literal notranslate"><span class="pre">block</span></code>, then all traces of locking are excluded and/or stripped from the asset. This results in a <code class="docutils literal notranslate"><span class="pre">block</span></code> asset that will be equivalent to the same form uploaded without any locking features;</p></li>
 <li><p>If imported as a <code class="docutils literal notranslate"><span class="pre">survey</span></code> (imported through the <strong>Projects</strong> section) or <code class="docutils literal notranslate"><span class="pre">template</span></code> then all locks are intact:</p>
 <ul>
-<li><p>If, from within the form-builder:</p>
+<li><p>If, from within the formbuilder:</p>
 <ul>
 <li><p>a question is added to the library, then all locks are stripped from the new <code class="docutils literal notranslate"><span class="pre">question</span></code> asset</p></li>
 <li><p>a group of questions is added to the library as a <code class="docutils literal notranslate"><span class="pre">block</span></code>, then all locks are stripped</p></li>
 </ul>
 </li>
-<li><p>If a <code class="docutils literal notranslate"><span class="pre">template</span></code> is created <em>from</em> the locked <code class="docutils literal notranslate"><span class="pre">survey</span></code> asset, then that <code class="docutils literal notranslate"><span class="pre">template</span></code> will inherit all the locks the <code class="docutils literal notranslate"><span class="pre">survey</span></code> had (but since it is a template, you are able to edit the contents in the form-builder),</p></li>
+<li><p>If a <code class="docutils literal notranslate"><span class="pre">template</span></code> is created <em>from</em> the locked <code class="docutils literal notranslate"><span class="pre">survey</span></code> asset, then that <code class="docutils literal notranslate"><span class="pre">template</span></code> will inherit all the locks the <code class="docutils literal notranslate"><span class="pre">survey</span></code> had (but since it is a template, you are able to edit the contents in the formbuilder),</p></li>
 <li><p>If a <code class="docutils literal notranslate"><span class="pre">survey</span></code> is created <em>from</em> a locked <code class="docutils literal notranslate"><span class="pre">template</span></code>, the survey will inherit all the locks that the <code class="docutils literal notranslate"><span class="pre">template</span></code> had</p></li>
 </ul>
 </li>

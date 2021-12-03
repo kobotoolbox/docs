@@ -102,12 +102,12 @@
   <section id="advanced-calculate-question-type">
 <h1>Advanced Calculate Question Type<a class="headerlink" href="#advanced-calculate-question-type" title="Permalink to this headline">¶</a></h1>
 <p>Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a <strong>Calculation</strong>, and writing the mathematical expression into the question label field.</p>
-<p>This article provides step-by-step instructions on how to add calculations while using the form builder or by downloading and adding it directly to the XLSform.</p>
+<p>This article provides step-by-step instructions on how to add calculations while using the formbuilder or by downloading and adding it directly to the XLSform.</p>
 <p>To view a complete and detailed list of all functions please visit ODK’s excellent <a class="reference external" href="https://getodk.github.io/xforms-spec">XPath Functions documentation</a>.</p>
 <section id="approaches-towards-adding-calculate-questions">
 <h2>Approaches towards adding calculate questions:<a class="headerlink" href="#approaches-towards-adding-calculate-questions" title="Permalink to this headline">¶</a></h2>
-<section id="using-the-form-builder">
-<h3>Using the form builder<a class="headerlink" href="#using-the-form-builder" title="Permalink to this headline">¶</a></h3>
+<section id="using-the-formbuilder">
+<h3>Using the formbuilder<a class="headerlink" href="#using-the-formbuilder" title="Permalink to this headline">¶</a></h3>
 <p>Step 1: Add a calculate question</p>
 <p><img alt="image" src="_images/calculate_question.jpg" /></p>
 <p>Step 2: Type your calculation formulae where you would typically write your question.</p>
@@ -123,7 +123,7 @@
 <p>We recommend this approach when working with more advanced calculate functions.</p>
 <p>XLS forms allow for use of calculate function on different types of question types.</p>
 <ul>
-<li><p>You can mimic the approach used in the form builder where the question will not be displayed on data collection by simply defining the question type as ‘calculate’ and then typing your calculation within the calculate column.</p></li>
+<li><p>You can mimic the approach used in the formbuilder where the question will not be displayed on data collection by simply defining the question type as ‘calculate’ and then typing your calculation within the calculate column.</p></li>
 <li><p>You can use ‘calculate’ for different question types, and in this case the question will be displayed during data collection. You can choose to make that question a read-only so that no one can change the entry. The question types we have tested with this approach include:</p>
 <p>a. integer (will only take numeric calculate functions)<br />b. text (will only take string calculate functions)<br />c. note (will take only question referencing and not calculate functions)<br />d. date (will only take date calculate functions)<br />e. time (will only take time calculate functions)</p>
 <p><img alt="image" src="_images/xls.png" /></p>
@@ -133,8 +133,8 @@
 </section>
 <section id="rules-when-working-with-calculate-questions">
 <h2>Rules when working with calculate questions:<a class="headerlink" href="#rules-when-working-with-calculate-questions" title="Permalink to this headline">¶</a></h2>
-<section id="these-rules-apply-to-both-the-form-builder-and-xlsform">
-<h3>These rules apply to both the form builder and XLSform<a class="headerlink" href="#these-rules-apply-to-both-the-form-builder-and-xlsform" title="Permalink to this headline">¶</a></h3>
+<section id="these-rules-apply-to-both-the-formbuilder-and-xlsform">
+<h3>These rules apply to both the formbuilder and XLSform<a class="headerlink" href="#these-rules-apply-to-both-the-formbuilder-and-xlsform" title="Permalink to this headline">¶</a></h3>
 <ol class="simple">
 <li><p>You cannot use both numeric and string calculations within the same question</p></li>
 <li><p>Your numeric calculations will follow the BODMAS rule in applying calculations i.e. the order of executing the calculations will be Brackets, Divisions, Multiplications, Additions then Subtractions (Always remember this when ordering a question)</p></li>

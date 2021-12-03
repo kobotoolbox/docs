@@ -4,7 +4,7 @@
 
 HXL stands for **Humanitarian Exchange Language**. The goal of HXL is to improve information sharing during a humanitarian crisis by creating a simple way to promote interoperability of data. It does this by coding the data through hashtags (#) similar to Twitter. For more information on HXL, please [visit here](https://hxlstandard.org).
 
-## How to use the HXL feature in the form-builder
+## How to use the HXL feature in the formbuilder
 
 _Credits:  [David Megginson](http://www.megginson.com)_
 _Link to step-by-step [slide show guide](https://docs.google.com/presentation/d/123bHSkNh4T30CNq0i37IxOLfrqSC-3V_Khtkf6bIdg0/edit#slide=id.p)_

@@ -24,7 +24,7 @@ __survey__
 
 [Follow this link](https://enke.to/draw) to test the difference between the draw and signature widgets.
 
-## Create a Signature question type in the form-builder
+## Create a Signature question type in the formbuilder
 
 1. Create a new question and select Photo as the question type.
 

@@ -1,6 +1,6 @@
 # List of Question Types
 
-The below table provides a high-level summary of each of the response types available to use in your XLSForm and Form Builder:
+The below table provides a high-level summary of each of the response types available to use in your XLSForm and formbuilder:
 
 | Question type                    | Answer input                                                                                 |
 | ---                              | ---                                                                                          |
@@ -33,9 +33,9 @@ The below table provides a high-level summary of each of the response types avai
 
 For more information on the response types, please visit [xlsform.org](http://xlsform.org/).
 
-Addtional, KoBoToolBox-specific types can also be used from within the form-builder:
+Addtional, KoBoToolBox-specific types can also be used from within the formbuilder:
 
-| Form-builder Question type | Answer input                                                |
+| Formbuilder Question type | Answer input                                                |
 | ---                        | ---                                                         |
 | Rating                     | Compare different items using a common scale                |
 | Ranking                    | Compare a list of different objects to one another          |

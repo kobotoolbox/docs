@@ -4,7 +4,7 @@ There are two methods to adding multiple languages to your form. You can either 
 
 Here are detailed instructions on how you can add and manage another language in your form through the online Project Dashboard:
 
-1. Create your form in the default language either by using the form builder or setting the form up as an XLS file and then upload it directly to KoBoToolbox. The default language should be the language that the person responsible for designing the questionnaire is most comfortable with. 
+1. Create your form in the default language either by using the formbuilder or setting the form up as an XLS file and then upload it directly to KoBoToolbox. The default language should be the language that the person responsible for designing the questionnaire is most comfortable with. 
 
 2. When you are done, or when a significant portion of the form has been created, save it. You'll be returned to the draft form's project dashboard.
 
