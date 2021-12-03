@@ -11,18 +11,20 @@ assurance or if they wish to have a backup recording of the transcribed
 interview.
 
 Currently, users can record the full interview with the **Collect Android app**
-`v1.30` and above. **Enketo**does not yet support this feature.
+`v1.30` and above. **Enketo** does not yet support this feature.
 
 <p class="note">
-  If you require an audio recording instead of the full background-audio
-  recording, see our support article,
-  <a class="reference" href="media.html">Adding Various Types of Media</a>.
+  If you require an audio recording instead of the full
+  <strong>background-audio recording</strong>, see our support article,
+  <a class="reference" href="media.html"
+    >Adding Various Types of Media (image, audio, video) to a Form</a
+  >.
 </p>
 
 ## Activating background audio recording in the formbuilder
 
 If you are designing your survey form through the formbuilder and wish to enable
-the background audio recording, follow the steps shown in the video below:
+the **background audio recording**, follow the steps shown in the video below:
 
 <video controls>
   <source
@@ -31,15 +33,15 @@ the background audio recording, follow the steps shown in the video below:
   />
 </video>
 
--   Under the **FORM**, select the edit button. _(This step may not be required
-    if you are already in the formbuilder)_
+-   Under the **FORM**, select the **Edit** button. _(This step may not be
+    required if you are already in the formbuilder)_
 -   At the top right corner, select **Layout & Settings** and then **Background
     audio** should be visible.
 -   Toggle the **Enable audio recording in the background** button. A
     notification should pop up at the top of the formbuilder.
--   **Voice only** is the default audio quality for the background audio. You
-    can change the audio quality to **Low** or **Normal** as required (see chart
-    below for differences in file size).
+-   **Voice only** is the default audio quality for the **background audio**.
+    You can change the audio quality to **Low** or **Normal** as required (see
+    chart below for differences in file size).
 -   After making all the necessary configurations, select **SAVE** and **Exit**
     in the formbuilder.
 -   **DEPLOY** the form to make it live.
@@ -84,7 +86,7 @@ storage space.
 
 Review our support article,
 [Data Collection on KoBoCollect App](kobocollect_on_android_latest.md), to learn
-in detail about collecting data on the **KoBoCollect Android app**.
+in detail about collecting data on the **Collect Android app**.
 
 <video controls>
   <source
@@ -93,8 +95,8 @@ in detail about collecting data on the **KoBoCollect Android app**.
   />
 </video>
 
-While actively recording background audio with the **KoBoCollect Android app**,
-you should be able to see a microphone at the top of your form.
+While actively recording background audio with the **Collect Android app**, you
+should be able to see a microphone at the top of your form.
 
 ![Background audio screen](/images/recording_interviews/background_audio_screen.jpg)
 
@@ -131,8 +133,9 @@ audio.
 
 ## Troubleshooting
 
--   This feature is supported with **KoBoCollect** `v1.30.0` and above.
--   This feature is currently not supported on **Enketo** web forms
+-   This feature is supported with the **Collect Android app** `v1.30` and
+    above.
+-   This feature is currently not supported in the **Enketo web forms**.
 -   Your device should have a built-in audio recorder to have this feature work
     smoothly. You can download
     [Audio Recorder](https://play.google.com/store/apps/details?id=com.github.axet.audiorecorder)
