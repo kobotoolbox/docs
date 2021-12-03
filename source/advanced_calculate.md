@@ -2,13 +2,13 @@
 
 Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a **Calculation**, and writing the mathematical expression into the question label field. 
 
-This article provides step-by-step instructions on how to add calculations while using the form builder or by downloading and adding it directly to the XLSform. 
+This article provides step-by-step instructions on how to add calculations while using the formbuilder or by downloading and adding it directly to the XLSform. 
 
 To view a complete and detailed list of all functions please visit ODK's excellent [XPath Functions documentation](https://getodk.github.io/xforms-spec).  
 
 ## Approaches towards adding calculate questions:
 
-### Using the form builder
+### Using the formbuilder
 
 Step 1: Add a calculate question
 
@@ -29,7 +29,7 @@ We recommend this approach when working with more advanced calculate functions.
 
 XLS forms allow for use of calculate function on different types of question types. 
 
-* You can mimic the approach used in the form builder where the question will not be displayed on data collection by simply defining the question type as 'calculate' and then typing your calculation within the calculate column. 
+* You can mimic the approach used in the formbuilder where the question will not be displayed on data collection by simply defining the question type as 'calculate' and then typing your calculation within the calculate column. 
 * You can use 'calculate' for different question types, and in this case the question will be displayed during data collection. You can choose to make that question a read-only so that no one can change the entry. The question types we have tested with this approach include:
 
     a. integer (will only take numeric calculate functions)  
@@ -42,7 +42,7 @@ XLS forms allow for use of calculate function on different types of question typ
 
 ## Rules when working with calculate questions:
 
-### These rules apply to both the form builder and XLSform
+### These rules apply to both the formbuilder and XLSform
 
 1. You cannot use both numeric and string calculations within the same question  
 2. Your numeric calculations will follow the BODMAS rule in applying calculations i.e. the order of executing the calculations will be Brackets, Divisions, Multiplications, Additions then Subtractions (Always remember this when ordering a question)  

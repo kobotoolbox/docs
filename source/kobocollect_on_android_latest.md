@@ -394,7 +394,7 @@ Historically, there were several significant differences between the two. Back
 in 2009, __KoBoToolbox__ made several changes to __ODK Collect__, creating
 __KoBoCollect__, such as _cascading questions_, hiding _delete_, and _edit_
 buttons for field data collection. The __XLSForm__ was not yet an option in
-__ODK Collect__ and __KoBoToolbox__ had built a form builder for all question
+__ODK Collect__ and __KoBoToolbox__ had built a formbuilder for all question
 types and advanced settings, including cascading questions, which were saved
 directly as an XML file for the mobile app. These changes were eventually
 incorporated into __ODK Collect__, along with many other great features. In

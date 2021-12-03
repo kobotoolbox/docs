@@ -6,7 +6,7 @@ Enketo web forms can be customized in the way your questions are presented. Ther
 
 **Grid Theme** is an alternative display of questions meant to be more compact and more like paper forms where space is often a major concern. theme-grid allows displaying multiple questions per row and flexibly adapts in case of skip logic making a new question appear or disappear. To display multiple questions in a row they need to be part of a group, which by default shows up to four questions next to each other. This theme can be customized by defining the number of questions to be included in each row through the appearance field of each question's settings. For more details [see this post](https://blog.enketo.org/gorgeous-grid).
 
-It is also possible to use both **Multiple Pages** and **Grid Theme** together. You can set these styles through the KoBoToolbox form-builder user interface:
+It is also possible to use both **Multiple Pages** and **Grid Theme** together. You can set these styles through the KoBoToolbox formbuilder user interface:
 
 ![image](/images/alternative_enketo/multiple_grid.gif)
 

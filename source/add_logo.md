@@ -26,4 +26,4 @@ __survey__
 * Your logo image will not appear in the form preview, only when the form is opened.
 * Skipping the final step will mean that your form will be displayed without the media files. Make sure the media files are uploaded before downloading the form to your devices when using the Android app.
 
-<p class="note">If you open the form-builder after deploying your XLSForm with the logo image file, it will automatically give the question a text label and you'll need to delete it for the automated text not to appear next to your logo in your form.</p>
+<p class="note">If you open the formbuilder after deploying your XLSForm with the logo image file, it will automatically give the question a text label and you'll need to delete it for the automated text not to appear next to your logo in your form.</p>

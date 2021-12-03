@@ -152,7 +152,7 @@ During an interview the enumerators will be able to enter the details to these g
 
 #### Controlling the loop of repetition in a roster
 
-Sometimes your survey may demand you to control the repeating of questions in a roster with a value of a certain variable. In this case, you should modify your survey in XLSForm as the form-builder does not currently support this feature.
+Sometimes your survey may demand you to control the repeating of questions in a roster with a value of a certain variable. In this case, you should modify your survey in XLSForm as the formbuilder does not currently support this feature.
 
 __survey__
 

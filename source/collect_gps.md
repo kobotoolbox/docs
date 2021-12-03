@@ -6,9 +6,9 @@ Location coordinates can be collected easily in all forms with the 'GPS' respons
 
 To collect GPS coordinates during the data collection process simply add a GPS question to your form. There are three types of GPS questions: **Point**, **Line** and **Area**
 
-* When using the **form builder** these question types can be found when one clicks the add question button as illustrated below.
+* When using the **formbuilder** these question types can be found when one clicks the add question button as illustrated below.
 
-![image](/images/collect_gps/form_builder.jpg)
+![image](/images/collect_gps/formbuilder.jpg)
 
 * When using **XLSForm** design, you have to define the question types as below to get the question you desire.
 
