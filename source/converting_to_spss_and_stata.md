@@ -1,38 +1,29 @@
 # Converting Data into SPSS and/or Stata
 
-**This article helps you convert your data into SPSS and/or Stata. Please note you need IBM SPSS and Stata which are third party apps**
+**This article helps you convert your data into SPSS and Stata. Please note you need IBM SPSS and Stata which are third party apps**
 
-KoboToolBox does not provide direct conversion on the system for the two systems so this is a workaround on how to get this done.
+Normally the data from our system can be exported as either XLS or CSV. This article helps you convert your data into SPSS and Stata. Kindly note that you need the third-party applications IBM SPSS and Stata to do this.
 
-The first thing to note is that exports best work with CSV output, however it can work with excel outputs but we recommend working with a saved CSV version from the excel.
+Since KoboToolbox does not export data directly in SPSS or Stata format, this workaround will help you make the conversion.
 
 ## Converting to SPSS
 
-1. The first step involves downloading your data as CSV. You can do this from the DATA tab under downloads
+1. Download your data as XLS using the instructions provided in [this support article](https://support.kobotoolbox.org/export_download.html).  In summary, you can export data from the download tab as illustrated in the image below.
 
-    ![image](/images/converting_to_spss_and_stata/data_csv.jpg)
+    ![image](/images/converting_to_spss_and_stata/Image1_ExportXLS.gif)
 
-2. You will then need to download the value labels for SPSS from the same DATA tab. This will generate a syntax for SPSS (An SPSS equivalent of STATA do files). It will give you a zipped folder which you can unzip to get the syntax.
+2. Download the SPSS labels from the same DATA tab as shown in the image below. This process will generate a zipped folder that contains an SPSS syntax for SPSS.
 
-    ![image](/images/converting_to_spss_and_stata/zipped_folder.jpg)
+    ![image](/images/converting_to_spss_and_stata/Image2_ExportSPSSlabels.gif)
 
-3. You will now need IBM SPSS to import the CSV
+3. You will now need IBM SPSS to import the data in XLS using the following method which is compatible with all versions of SPSS. 
 
-    *You should open the location of the CSV you downloaded*
+   a. Within SPSS, click File -> Open -> Data (as below).
+   b. Once you click the Data tab, you will see a data box that will appear. In the Files of type box, select Excel.
+   c. Navigate to the folder that contains your Excel file, and find the Excel file that contains the data you downloaded.
+   d. Open the file, and you’ll get the Read Excel File dialog box.
 
-    ![image](/images/converting_to_spss_and_stata/location_csv.jpg)
-
-    ![image](/images/converting_to_spss_and_stata/delimited_csv.jpg)
-
-    ![image](/images/converting_to_spss_and_stata/all_cases.jpg)
-
-    *Ensure you check the boxes Comma and Semicolon*
-
-    ![image](/images/converting_to_spss_and_stata/comma_semicolon.jpg)
-
-    *When you finish you should have your data without label*
-
-    ![image](/images/converting_to_spss_and_stata/without_label.jpg)
+    ![image](/images/converting_to_spss_and_stata/Image3_ImportintoSPSS.gif)
 
 4. Now open the syntax you downloaded on step 2 and run the syntax
 
@@ -40,9 +31,9 @@ The first thing to note is that exports best work with CSV output, however it ca
 
 You are now ready to manipulate your data in SPSS
 
-## Getting STATA file
+## Converting the SPSS file into a STATA file
 
-Unfortunately we do not a direct download on the system for an SPSS DO file. So you need to go through the above process then save the final data as a .dta stata data. 
+Unfortunately we do not have an option to directly download an SPSS DO file. You need to go through the above process then save the final data as a .dta stata data. 
 
 Ensure you choose to save all the options you need when saving.
 
