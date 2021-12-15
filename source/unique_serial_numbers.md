@@ -1,8 +1,8 @@
 # Creating Unique Serial Numbers in Forms
 
-There are times you may want to generate a unique serial number for each and every form in a project. This article discusses how to utilize the `calculate` question-type to do that by either creating sequential unique serial numbers based on date and time or by creating unique serial numbers from selected variables.
+There are times you may want to generate a unique serial number for each and every form in a project. This article discusses various workarounds on how to create unique serial numbers using the `calculate` question-type.
 
-## Creating Sequential Unique Serial Numbers Based on Date and Time:
+## Approach 1: Creating Sequential Unique Serial Numbers Based on Date and Time:
 
 This method works best with [Enketo web forms](data_through_webforms.md). It uses a calculation function to create a unique serial number based on the date and time to the first millisecond. Although this method may not meet all your needs, it should give you an illustration of how much you can stretch calculate functions.
 
