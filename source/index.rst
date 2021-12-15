@@ -28,7 +28,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   :name: home-page-toc-creating-forms
 
   new_form
-  technical-training
+  technical_training
   edit_forms_excel
   xls_url
   formbuilder
