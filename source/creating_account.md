@@ -34,9 +34,10 @@ KoboToolbox will send you an email with a link to activate your account. If you 
 * Log in to the email address you used when creating your account. Click the activation link sent to you. This will automatically log you into KoboToolbox
 
 ## Logging back into KoboToolbox
+
 Use the following links to log back into your account:
 
 |Server|URL|
 |------|----|
-| OCHA server | [https://kf.humanitarianresponse.info](https://kf.humanitarianresponse.info)|
+| OCHA server | [https://kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info)|
 | Kobotoolbox server | [https://kf.kobotoolbox.org](https://kf.kobotoolbox.org) |
