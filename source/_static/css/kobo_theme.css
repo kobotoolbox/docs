@@ -137,6 +137,13 @@ i.icon svg {
   fill: currentColor;
 }
 
+.k-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  line-height: 0;
+}
+
 html body header.main-header {
   line-height: 22px;
   position: fixed;
