@@ -142,6 +142,7 @@ i.icon svg {
   vertical-align: middle;
   color: inherit;
   line-height: 0;
+  font-size: 1.25em;
 }
 
 html body header.main-header {

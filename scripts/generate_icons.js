@@ -34,7 +34,9 @@ function generateIconsFromKpiFiles() {
       css: true,
       cssTemplate: `${kpiDirName}/jsapp/k-icons-css-template.hbs`,
       html: true,
-      htmlTemplate: `${kpiDirName}/jsapp/k-icons-html-template.hbs`,
+      // NOTE: we are not using the KPI template here, as the snippet is a tiny
+      // bit different (no JSX).
+      htmlTemplate: `scripts/k-icons-html-template.hbs`,
       types: ['eot', 'svg', 'ttf', 'woff2', 'woff'],
       order: ['woff2', 'woff', 'ttf', 'eot', 'svg'],
       templateOptions: {
