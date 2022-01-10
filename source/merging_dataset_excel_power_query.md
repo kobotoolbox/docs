@@ -27,7 +27,7 @@ a single dataset through **Power Query** in **Excel**.
 Merging _individual data_ and _roster data_ through the system is currently not
 available but it is possible through **Power Query** in **Excel**. Excel was
 chosen over other software because it is a widely used spreadsheet and available
-to almost all the PCs. It is also relatively easy-to-use.
+to almost all PCs. It is also relatively easy-to-use.
 
 ## Differences between individual data and roster data:
 
@@ -81,8 +81,8 @@ So, this example sample dataset has a total of 12 records as its _roster data_.
 ## Merging individual data with roster data:
 
 If you look closely at the images shared above, you can see `_index` column
-_with value 1_ in the first sheet **Repeat Group (Merge)**. Similarly, there is
-also a `_parent_index` column _with value 1_ in the second sheet **CR**.
+with value "1" in the first sheet **Repeat Group (Merge)**. Similarly, there is
+also a `_parent_index` column with value "1" in the second sheet **CR**.
 `_index` and `_parent_index` are additional variables created by the system to
 manage repeat groups. They are matching variables needed to merge _individual
 data_ and _roster data_ together into one.
@@ -96,7 +96,12 @@ the following approaches:
 For the first approach, you must have opened your XLS dataset. For details,
 please see the video below:
 
-<video controls><source src="./_static/files/merging_dataset_excel_power_query/XLS_Dataset_Open.mp4" type="video/mp4"></video>
+<video controls>
+  <source
+    src="./_static/files/merging_dataset_excel_power_query/XLS_Dataset_Open.mp4"
+    type="video/mp4"
+  />
+</video>
 
 -   Open the dataset that has both the _individual data_ and _roster data_.
 
@@ -153,7 +158,12 @@ please see the video below:
 Use the second approach when you have not yet opened your XLS dataset and only
 have opened your new Excel workbook. For details, please see the video below:
 
-<video controls><source src="./_static/files/merging_dataset_excel_power_query/New_Excel_Workbook.mp4" type="video/mp4"></video>
+<video controls>
+  <source
+    src="./_static/files/merging_dataset_excel_power_query/New_Excel_Workbook.mp4"
+    type="video/mp4"
+  />
+</video>
 
 -   Open a new Excel workbook.
 
