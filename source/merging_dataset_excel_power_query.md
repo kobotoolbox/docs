@@ -54,18 +54,18 @@ data used in this support article are hypothetical_.
 Data downloaded in XLS format should also show the difference between an
 _individual data_ and _roster data_ in a picture.
 
-Each record _(as shown in the image below)_, under **Name of the household
-head**, **Sex of the household head**, **Total family members in the
-household**, and **Total school going children (aged 6-16 years) in the
-household** from the first sheet **Repeat Group (Merge)** is an _individual
+Each record _(as shown in the image below)_, under `Name of the household
+head`, `Sex of the household head`, `Total family members in the
+household`, and `Total school going children (aged 6-16 years) in the
+household` from the first sheet **Repeat Group (Merge)** is an _individual
 data_.
 
 ![Individual Data](/images/merging_dataset_excel_power_query/Individual_Data.png)
 
 This example dataset has a total of 7 interviews as its _individual data_.
 
-Similarly, each record _(as shown in the image below)_, under **Name of child**,
-**Age of child**, and **Sex of child** from the second sheet **CR** is a _roster
+Similarly, each record _(as shown in the image below)_, under `Name of child`,
+`Age of child`, and `Sex of child` from the second sheet **CR** is a _roster
 data_.
 
 ![Roster Data](/images/merging_dataset_excel_power_query/Roster_Data.png)
