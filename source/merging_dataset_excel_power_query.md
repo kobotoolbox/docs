@@ -54,11 +54,10 @@ data used in this support article are hypothetical_.
 Data downloaded in XLS format should also show the difference between an
 _individual data_ and _roster data_ in a picture.
 
-Each record _(as shown in the image below)_, under `Name of the household
-head`, `Sex of the household head`, `Total family members in the
-household`, and `Total school going children (aged 6-16 years) in the
-household` from the first sheet **Repeat Group (Merge)** is an _individual
-data_.
+Each record _(as shown in the image below)_, under `Name of the household head`,
+`Sex of the household head`, `Total family members in the household`, and
+`Total school going children (aged 6-16 years) in the household` from the first
+sheet **Repeat Group (Merge)** is an _individual data_.
 
 ![Individual Data](/images/merging_dataset_excel_power_query/Individual_Data.png)
 
@@ -80,12 +79,12 @@ So, this example sample dataset has a total of 12 records as its _roster data_.
 
 ## Merging individual data with roster data:
 
-If you look closely at the images shared above, you can see `_index` column
-with value "1" in the first sheet **Repeat Group (Merge)**. Similarly, there is
-also a `_parent_index` column with value "1" in the second sheet **CR**.
-`_index` and `_parent_index` are additional variables created by the system to
-manage repeat groups. They are matching variables needed to merge _individual
-data_ and _roster data_ together into one.
+If you look closely at the images shared above, you can see `_index` column with
+value "1" in the first sheet **Repeat Group (Merge)**. Similarly, there is also
+a `_parent_index` column with value "1" in the second sheet **CR**. `_index` and
+`_parent_index` are additional variables created by the system to manage repeat
+groups. They are matching variables needed to merge _individual data_ and
+_roster data_ together into one.
 
 There are basically two approaches to merge _individual data_ and _roster data_
 into a single dataset through **Power Query** in **Excel**. You can use any of
