@@ -7,7 +7,7 @@ analyze data from the repeat groups that were collected. When
 [downloading the data from the server (in XLS format)](export_download.md), you
 should see the data in the following structure:
 
-![Dataset Sheets](/images/merging_dataset_excel_power_query/Dataset_Sheets.png)
+![Dataset Sheets](/images/merging_dataset_excel_power_query/dataset_sheets.png)
 
 The first sheet with the sheet name **Repeat Group (Merge)** seen in the image
 above holds the _individual data_ from the survey while the second sheet with
@@ -43,7 +43,7 @@ A filled-up survey form, as shown below, should show in a picture the
 differences between an _individual data_ and _roster data_. _Please note, all
 data used in this support article are hypothetical_.
 
-![Form](/images/merging_dataset_excel_power_query/Form.png)
+![Form](/images/merging_dataset_excel_power_query/form.png)
 
 <p class="note">
   Any data that is collected outside the repeat group is an
@@ -59,7 +59,7 @@ Each record _(as shown in the image below)_, under `Name of the household head`,
 `Total school going children (aged 6-16 years) in the household` from the first
 sheet **Repeat Group (Merge)** is an _individual data_.
 
-![Individual Data](/images/merging_dataset_excel_power_query/Individual_Data.png)
+![Individual Data](/images/merging_dataset_excel_power_query/individual_data.png)
 
 This example dataset has a total of 7 interviews as its _individual data_.
 
@@ -67,7 +67,7 @@ Similarly, each record _(as shown in the image below)_, under `Name of child`,
 `Age of child`, and `Sex of child` from the second sheet **CR** is a _roster
 data_.
 
-![Roster Data](/images/merging_dataset_excel_power_query/Roster_Data.png)
+![Roster Data](/images/merging_dataset_excel_power_query/roster_data.png)
 
 So, this example sample dataset has a total of 12 records as its _roster data_.
 
@@ -97,7 +97,7 @@ please see the video below:
 
 <video controls>
   <source
-    src="./_static/files/merging_dataset_excel_power_query/XLS_Dataset_Open.mp4"
+    src="./_static/files/merging_dataset_excel_power_query/xls_dataset_open.mp4"
     type="video/mp4"
   />
 </video>
@@ -159,7 +159,7 @@ have opened your new Excel workbook. For details, please see the video below:
 
 <video controls>
   <source
-    src="./_static/files/merging_dataset_excel_power_query/New_Excel_Workbook.mp4"
+    src="./_static/files/merging_dataset_excel_power_query/new_excel_workbook.mp4"
     type="video/mp4"
   />
 </video>
@@ -233,14 +233,14 @@ have opened your new Excel workbook. For details, please see the video below:
   <a
     download
     class="reference"
-    href="./_static/files/merging_dataset_excel_power_query/Repeat_Group_(Merge).xls"
+    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge).xls"
     >here</a
   >
   and the example sample dataset
   <a
     download
     class="reference"
-    href="./_static/files/merging_dataset_excel_power_query/Repeat_Group_(Merge)_Dataset.xls"
+    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge)_dataset.xls"
     >here</a
   >
   that were used in this article.
