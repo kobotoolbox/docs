@@ -16,7 +16,7 @@ the sheet name **CR** holds the _roster data_.
 <p class="note">
   For downloaded datasets, you should have one sheet more than the number of
   <em>repeat groups</em>. For example, if you had one
-  <em>repeat groups</em> included in the survey form, you should have two sheets
+  <em>repeat group</em> included in the survey form, you should have two sheets
   in your dataset.
 </p>
 
@@ -217,8 +217,8 @@ have opened your new Excel workbook. For details, please see the video below:
 
 ## Troubleshooting:
 
--   Managing _repeat group_ at the moment is not supported in CSV format. You
-    will need to download the data in XLS format.
+-   Exporting _repeat groups_ is not supported in CSV format. You will need to
+    download the data in XLS format.
 
 -   Microsoft Power Query for Excel is an Excel add-on. You can download it
     through this
