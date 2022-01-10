@@ -1,6 +1,7 @@
 # Merging Individual Data with Roster Data through Power Query in Excel
 
-As illustrated in the support article, **[Grouping Questions and Repeating Groups](group_repeat)**, you can use repeating groups to fulfil certain survey requirements. You may also need to analyze data from the repeat groups that were collected. When **[downloading the data from the server (in XLS format)](export_download.md)**, you should see the data in the following structure:
+As illustrated in the support article, [Grouping Questions and Repeating
+Groups](group_repeat.md), you can use repeating groups to fulfil certain survey requirements. You may also need to analyze data from the repeat groups that were collected. When [downloading the data from the server (in XLS format)](export_download.md), you should see the data in the following structure:
 
 ![Dataset Sheets](/images/merging_dataset_excel_power_query/Dataset_Sheets.png)
 
@@ -40,7 +41,10 @@ So, this example sample dataset has a total of 12 records as its *roster data*.
 
 ## Merging individual data with roster data:
 
-If you look closely at the images shared above, you can see **_index** column *with value 1* in the first sheet **Repeat Group (Merge)**. Similarly, there is also a **_parent_index** column *with value 1* in the second sheet **CR**. **_index** and **_parent_index** are additional variables created by the system to manage repeat groups. They are matching variables needed to merge **individual data** and **roster data** together into one. 
+If you look closely at the images shared above, you can see `_index` column
+*with value 1* in the first sheet **Repeat Group (Merge)**. Similarly, there is
+also a `_parent_index` column *with value 1* in the second sheet **CR**.
+`_index` and `_parent_index` are additional variables created by the system to manage repeat groups. They are matching variables needed to merge **individual data** and **roster data** together into one. 
 
 There are basically two approaches to merge *individual data* and *roster data* into a single dataset through **Power Query** in **Excel**. You can use any of the following approaches: 
 
@@ -74,7 +78,9 @@ For the first approach, you must have opened your XLS dataset. For details, plea
 
 * A dialogue box **Merge** is seen.
 
-* Load both the query tables. Once both the tables are loaded, select the matching variable **_index** from the first table. Similarly, select the matching variable **_parent_index** from the second table. As soon as you select both the matching variables you should be able to see **The selection matches … of … rows from the first table**. The query table should now be merged. 
+* Load both the query tables. Once both the tables are loaded, select the
+  matching variable `_index` from the first table. Similarly, select the
+  matching variable `_parent_index` from the second table. As soon as you select both the matching variables you should be able to see **The selection matches … of … rows from the first table**. The query table should now be merged. 
 
 * To expand the merged table, check all the variables that you wish to have in the merged dataset. You can also uncheck **Use original column name as prefix** to have the original variable name in the merged dataset. When everything is done, select **OK**.
 
@@ -106,7 +112,9 @@ Use the second approach when you have not yet opened your XLS dataset and only h
 
 * A dialogue box **Merge** is seen.
 
-* Load both the query tables. Once both the tables are loaded, select the matching variable **_index** from the first table. Similarly, select the matching variable **_parent_index** from the second table. As soon as you select both the matching variables you should be able to see **The selection matches … of … rows from the first table**. The query table should now be merged. 
+* Load both the query tables. Once both the tables are loaded, select the
+  matching variable `_index` from the first table. Similarly, select the
+  matching variable `_parent_index` from the second table. As soon as you select both the matching variables you should be able to see **The selection matches … of … rows from the first table**. The query table should now be merged. 
 
 * To expand the merged table, check all the variables that you wish to have in the merged dataset. You can also uncheck **Use original column name as prefix** to have the original variable name in the merged dataset. When everything is done, select **OK**.
 
