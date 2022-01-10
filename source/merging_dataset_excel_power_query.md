@@ -28,15 +28,15 @@ Each record *(as shown in the image below)*, under **Name of the household head*
 
 ![Individual Data](/images/merging_dataset_excel_power_query/Individual_Data.png)
 
-This hypothetical dataset has a total of 7 interviews as its *individual data*. 
+This example dataset has a total of 7 interviews as its *individual data*. 
 
 Similarly, each record *(as shown in the image below)*, under **Name of child**, **Age of child**, and **Sex of child** from the second sheet **CR** is a *roster data*. 
 
 ![Roster Data](/images/merging_dataset_excel_power_query/Roster_Data.png)
 
-So, this hypothetical sample dataset has a total of 12 records as its *roster data*. 
+So, this example sample dataset has a total of 12 records as its *roster data*. 
 
-<p class='note'><strong>Note:</strong> While downloading a dataset from the server, you should also be able to see other variables (metadata variables) if they have not been filtered out. They have been removed from this hypothetical dataset for simplicity.</p>
+<p class='note'><strong>Note:</strong> While downloading a dataset from the server, you should also be able to see other variables (metadata variables) if they have not been filtered out. They have been removed from this example dataset for simplicity.</p>
 
 ## Merging individual data with roster data:
 
@@ -125,5 +125,5 @@ Use the second approach when you have not yet opened your XLS dataset and only h
 * Microsoft Power Query for Excel is an Excel add-on. You can download it through this **[Microsoft download site](https://www.microsoft.com/en-us/download/details.aspx?id=39379)**. It should work best on *Excel for Microsoft 365* or *Excel 2021*, *Excel 2019*, *Excel 2016*, *Excel 2013*, and *Excel 2010*. For more details, please check out the **[Microsoft support site](https://support.microsoft.com/en-us/office/about-power-query-in-excel-7104fbee-9e62-4cb9-a02e-5bfb1a6c536a)**.
 
 <p class='note'>For practice, you can access the XLSForm <strong><a download class='reference'
-href='./_static/files/merging_dataset_excel_power_query/Repeat_Group_(Merge).xls'>here</a></strong> and the hypothetical sample dataset <strong><a download class='reference'
+href='./_static/files/merging_dataset_excel_power_query/Repeat_Group_(Merge).xls'>here</a></strong> and the example sample dataset <strong><a download class='reference'
 href='./_static/files/merging_dataset_excel_power_query/Repeat_Group_(Merge)_Dataset.xls'>here</a></strong> that were used in this article.</p>
