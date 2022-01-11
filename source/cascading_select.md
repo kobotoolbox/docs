@@ -35,7 +35,7 @@ __survey__
 | ---                 | ---  | ---           | ---                          |
 | select_one states   | Q1   | Which state?  |                              |
 | select_one counties | Q2   | Which county? | state=${Q1}                  |
-| select_ine cities   | Q3   | Which city?   | state=${Q1} and county=${Q2} |
+| select_one cities   | Q3   | Which city?   | state=${Q1} and county=${Q2} |
 
 2. In the same survey sheet, add a column called `choice_filter` and add the XLSForm reference to each of the parent items.
 
