@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Row-Level Permissions &#8212; KoBoToolbox  documentation</title>
+    <title>The KoBoToolbox Interface &#8212; KoBoToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -25,8 +25,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Dynamic Data Attachments" href="dynamic_data_attachment.html" />
-    <link rel="prev" title="Exporting and Uploading Data to GIS Software" href="upload_to_gis.html" />
+    <link rel="next" title="Quick Start Overview" href="quick_start.html" />
+    <link rel="prev" title="Creating an account on KoBoToolbox" href="creating_account.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -87,7 +87,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="row_level_permissions">
+<div class="page page--has-sidebar " id="kobotoolbox_interface">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -100,85 +100,127 @@
 
         <section class="page__body" role="main">
           
-  <section id="row-level-permissions">
-<h1>Row-Level Permissions<a class="headerlink" href="#row-level-permissions" title="Permalink to this headline">¶</a></h1>
-<p>The <strong>row-level</strong> permissions are an extension of the <a class="reference internal" href="managing_permissions.html"><span class="doc">existing permissions</span></a> features and allow project owners to create four different levels of permissions for a shared project. To find this functionality, simply go to project <strong>SETTINGS</strong> and click on the <strong>Sharing</strong> section. You will see a screen as shown below.</p>
-<p><img alt="image" src="_images/Options.png" /></p>
-<p>As of August 2021, the management of project permissions has been extended to allow for a total of four <strong>row-level</strong> access permissions that include:</p>
+  <section id="the-kobotoolbox-interface">
+<h1>The KoBoToolbox Interface<a class="headerlink" href="#the-kobotoolbox-interface" title="Permalink to this headline">¶</a></h1>
+<p>This article will walk you through the <strong>KoBoToolbox</strong> interface, helping you
+get familiar with the different elements.</p>
+<p>By default, when you log in to your <strong>KoBoToolbox</strong> account, you will be taken
+to the <strong>Projects</strong> screen.</p>
+<p><img alt="KoBoToolbox Interface" src="_images/interface.png" /></p>
+<p>You can switch between the <i class="k-icon k-icon-projects"></i> <strong>Projects</strong>
+and <i class="k-icon k-icon-library"></i> <strong>Library</strong> sections using the buttons
+on the top left of the screen.</p>
+<section id="search-bar">
+<h2>Search bar<a class="headerlink" href="#search-bar" title="Permalink to this headline">¶</a></h2>
+<p>Depending on whether you are on the <strong>Projects</strong> or <strong>Library</strong> section, the
+search bar at the top allows you to quickly filter the items displayed.</p>
+</section>
+<section id="user-profile-options">
+<h2>User profile options<a class="headerlink" href="#user-profile-options" title="Permalink to this headline">¶</a></h2>
+<p>On the far right of the interface is your user account avatar. Clicking it opens
+up a drop-down menu with options to change your account settings (such as
+updating your basic information and changing your password), interface language,
+and to log out.</p>
+<p><img alt="User menu" src="_images/user_actions.png" /></p>
+</section>
+<section id="draft-deployed-and-archived-projects">
+<h2>Draft, deployed and archived projects<a class="headerlink" href="#draft-deployed-and-archived-projects" title="Permalink to this headline">¶</a></h2>
+<p>In the <strong>Projects</strong> section of the interface, your individual projects are
+organized into 3 categories:</p>
+<ol class="simple">
+<li><p><strong>Draft</strong> projects are forms that have been created but not deployed. These
+forms will not appear on <strong>KoBoCollect</strong> for data entry until they have been
+deployed.</p></li>
+<li><p>When a form has been deployed, it will appear under <strong>Deployed</strong>. These forms
+are available for data collection through both <strong>KoBoCollect</strong> and <strong>Enketo</strong>
+web forms.</p></li>
+<li><p>When data collection is complete, you can archive the project. These projects
+will appear under <strong>Archived</strong>.</p></li>
+</ol>
+</section>
+<section id="project-actions">
+<h2>Project actions<a class="headerlink" href="#project-actions" title="Permalink to this headline">¶</a></h2>
+<p>Hover your mouse pointer over an item in the <strong>Projects</strong> screen to reveal the
+following buttons:</p>
 <table border="1" class="docutils">
 <thead>
 <tr>
-<th>Row-level permission</th>
-<th>Description</th>
+<th>Button</th>
+<th>Action</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>View submissions only from specific users</strong></td>
-<td><em>View data</em> submitted by a subset of defined data entry users.</td>
+<td><i class="k-icon k-icon-edit"></i> <strong>Edit</strong></td>
+<td>Go to the formbuilder to edit the form</td>
 </tr>
 <tr>
-<td><strong>Edit submissions only from specific users</strong></td>
-<td><em>Edit data</em> submitted by a subset of defined data entry users.</td>
+<td><i class="k-icon k-icon-tag"></i> <strong>Add Tags to the project</strong></td>
+<td>Create tags to make it easier to find projects in the project list when using the search bar</td>
 </tr>
 <tr>
-<td><strong>Delete submissions only from specific users</strong></td>
-<td><em>Delete data</em> submitted by a subset of defined data entry users.</td>
+<td><i class="k-icon k-icon-user-share"></i> <strong>Share</strong></td>
+<td>Share the project with other <strong>KoBoToolbox</strong> users and customize permissions</td>
 </tr>
 <tr>
-<td><strong>Validate submissions only from specific users</strong></td>
-<td><a class="reference" href="record_validation.html"><i>Validate data</i></a> submitted by a subset of defined data entry users.</td>
+<td><i class="k-icon k-icon-clone"></i> <strong>Clone</strong></td>
+<td>Make a copy of the existing project</td>
+</tr>
+<tr>
+<td><i class="k-icon k-icon-more-vertical"></i> <strong>More actions</strong></td>
+<td>Open up more project actions</td>
 </tr>
 </tbody>
-</table><p class="note">Please note that some permissions imply others. For example, if <i>Alice</i> has <strong>Edit submissions only from specific users</strong> only for <i>Bob</i>, then this implies that <i>Alice</i> also has <strong>View submissions only from specific users</strong> for <i>Bob</i>.</p><section id="configure-your-account-settings">
-<h2>Configure your Account Settings:<a class="headerlink" href="#configure-your-account-settings" title="Permalink to this headline">¶</a></h2>
-<p>Before configuring project sharing, you will need to open your <strong>ACCOUNT SETTINGS</strong> and toggle the checkbox <strong>Require authentication to see forms and submitted data</strong>. If this configuration is left unchecked, setting row-level permissions will not work as expected.</p>
-<p><img alt="image" src="_images/Accounts_Settings.png" /></p>
-</section>
-<section id="managing-row-level-permissions">
-<h2>Managing Row Level Permissions:<a class="headerlink" href="#managing-row-level-permissions" title="Permalink to this headline">¶</a></h2>
-<p>In this example, three user accounts are presented to demonstrate how the feature works. <em>kalyan1</em> represents the <em>admin</em> or <em>owner</em> of the survey project (as seen in the previous images). <em>kalyan2</em> and <em>kalyan3</em> represent different users receiving permissions. <strong>Require authentication to see forms and submitted data</strong> has been checked for <em>kalyan1</em>.</p>
-<section id="view-submissions-only-from-specific-users">
-<h3>View submissions only from specific users:<a class="headerlink" href="#view-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
-<p><em>kalyan1</em> can share row-level permissions with <em>kalyan2</em>, where they can <em>view</em> submissions made from <em>kalyan2</em>.</p>
-<p><video controls><source src="./_static/files/row_level_permissions/1_View_submissions_1.mp4" type="video/mp4"></video></p>
-<p>Row-level permissions can also be set for <em>kalyan3</em> such that they can only <em>view</em> submissions made by <em>kalyan2</em>.</p>
-<p><video controls><source src="./_static/files/row_level_permissions/2_View_submissions_2.mp4" type="video/mp4"></video></p>
-</section>
-<section id="edit-submissions-only-from-specific-users">
-<h3>Edit submissions only from specific users:<a class="headerlink" href="#edit-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
-<p>In this case, <em>kalyan1</em> can share row-level permissions with <em>kalyan2</em>, where they can <em>view</em> and <em>edit</em> submissions made from <em>kalyan2</em>.</p>
-<p><video controls><source src="./_static/files/row_level_permissions/3_Edit_Submission_1.mp4" type="video/mp4"></video></p>
-<p>As with view permissions, the same can be done for <em>kalyan3</em> to only <em>view</em> and <em>edit</em> submissions from <em>kalyan2</em>.</p>
-<p><video controls><source src="./_static/files/row_level_permissions/4_Edit_Submission_2.mp4" type="video/mp4"></video></p>
-</section>
-<section id="delete-submissions-only-from-specific-users">
-<h3>Delete submissions only from specific users:<a class="headerlink" href="#delete-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
-<p>In this case, <em>kalyan1</em> can share row-level permissions with <em>kalyan2</em>, where they can <em>view</em> and <em>delete</em> submissions made from <em>kalyan2</em>.</p>
-<p><video controls><source src="./_static/files/row_level_permissions/5_Delete_Submissions_1.mp4" type="video/mp4"></video></p>
-<p>The same can be done for <em>kalyan3</em> to only <em>view</em> and <em>delete</em> submissions from <em>kalyan2</em>.</p>
-<p><video controls><source src="./_static/files/row_level_permissions/6_Delete_Submissions_2.mp4" type="video/mp4"></video></p>
-</section>
-<section id="validate-submissions-only-from-specific-users">
-<h3>Validate submissions only from specific users:<a class="headerlink" href="#validate-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
-<p>In this case, <em>kalyan1</em> can share row-level permissions with <em>kalyan2</em> where they can <em>view</em> and <em>validate</em> submissions made from <em>kalyan2</em>.</p>
-<p><video controls><source src="./_static/files/row_level_permissions/7_Validate_Submissions_1.mp4" type="video/mp4"></video></p>
-<p>The same can be done for <em>kalyan3</em> to only <em>view</em> and <em>validate</em> submissions from <em>kalyan2</em>.</p>
-<p><video controls><source src="./_static/files/row_level_permissions/8_Validate_Submissions_2.mp4" type="video/mp4"></video></p>
-</section>
-</section>
-<section id="troubleshooting">
-<h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
-<section id="scenario-1">
-<h3>Scenario 1:<a class="headerlink" href="#scenario-1" title="Permalink to this headline">¶</a></h3>
-<p>You may come across this dialogue box <em>(as shown in the image below)</em> when submitting data with the <strong>Require authentication to see forms and submitted data</strong> option checked in KoBoToolbox.</p>
-<p><img alt="image" src="_images/Login.png" /></p>
-<p>Enter your KoBoToolbox login credentials and, if the account has <strong>Add submissions</strong> permission, you will be able to submit data to the server.</p>
-<p class="note">Note that it’s advised not to share your admin login credentials when managing your project for data security. You can create multiple enumerator accounts and share those credentials with your team.</p></section>
-<section id="scenario-2">
-<h3>Scenario 2:<a class="headerlink" href="#scenario-2" title="Permalink to this headline">¶</a></h3>
-<p>To set the <em>view</em>, <em>edit</em>, <em>delete</em> and <em>validate</em> row-level permissions correctly on submissions from a subset of users, the <strong>Require authentication to see forms and submitted data</strong> option must be checked <em>before</em> data is collected. Otherwise only data collected after this option is checked will be restricted as expected.</p>
-</section>
+</table><p>When you click the <i class="k-icon k-icon-more-vertical"></i> <strong>More actions</strong>
+button, you have access to the following options:</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>Button</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i class="k-icon k-icon-replace"></i> <strong>Replace form</strong></td>
+<td>Replace the current form with an <strong>XLSForm</strong></td>
+</tr>
+<tr>
+<td><i class="k-icon k-icon-globe-alt"></i> <strong>Manage translations</strong></td>
+<td>Go to the <strong>Manage Languages</strong> screen where you can define languages and add translations for the form</td>
+</tr>
+<tr>
+<td><i class="k-icon k-icon-xls-file"></i> <strong>Download XLS</strong></td>
+<td>Generate an XLS file in the <strong>XLSForm</strong> standard from the current project. This allows you to continue editing your form using <strong>Excel</strong> and easily collaborate with others</td>
+</tr>
+<tr>
+<td><i class="k-icon k-icon-xml-file"></i> <strong>Download XML</strong></td>
+<td>Generate an XML file from the current project. For advanced users, this lets you explore the form structure that may be needed when integrating with other applications, or to make advanced changes to the form</td>
+</tr>
+<tr>
+<td><i class="k-icon k-icon-archived"></i> <strong>Archive</strong></td>
+<td>Mark your deployed project as archived. This turns off the ability to send more submissions to the project</td>
+</tr>
+<tr>
+<td><i class="k-icon k-icon-template"></i> <strong>Create template</strong></td>
+<td>Save the form as a template in the library section</td>
+</tr>
+<tr>
+<td><i class="k-icon k-icon-trash"></i> <strong>Delete</strong></td>
+<td>Delete the project and the data submitted to it</td>
+</tr>
+</tbody>
+</table></section>
+<section id="help-legacy-interface-and-source-code">
+<h2>Help, legacy interface and source code<a class="headerlink" href="#help-legacy-interface-and-source-code" title="Permalink to this headline">¶</a></h2>
+<p>On the bottom left of the interface, you can access support options including
+links to the support articles site and the community forum by clicking on the <i
+class="k-icon k-icon-help"></i> <strong>Help</strong> button.</p>
+<p>Clicking the <i class="k-icon k-icon-globe"></i> <strong>Projects (legacy)</strong> button
+takes you to the <strong>KoBoToolbox</strong> legacy interface.</p>
+<p>If you are interested in contributing to the development of <strong>KoBoToolbox</strong> or
+in viewing the source code, you can click on the <i class="k-icon
+k-icon-logo-github"></i> <strong>Source</strong> button to visit our GitHub page.</p>
 </section>
 </section>
 
@@ -193,7 +235,7 @@
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Row-Level Permissions"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=The KoBoToolbox Interface"
               class="feedback-button"
               target="_blank"
             >
@@ -207,10 +249,17 @@
 
 <div class="sidebar_tocs">
   <p><span class="caption-text">Getting Started</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoBoToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoBoToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">The KoBoToolbox Interface</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">The KoBoToolbox Interface</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#search-bar">Search bar</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-profile-options">User profile options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#draft-deployed-and-archived-projects">Draft, deployed and archived projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-actions">Project actions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#help-legacy-interface-and-source-code">Help, legacy interface and source code</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Is My Data Safe on Your Server?</a></li>
@@ -278,7 +327,7 @@
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p><span class="caption-text">Managing Projects and Data</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
@@ -299,12 +348,7 @@
 <li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling Data Into PowerBI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and Uploading Data to GIS Software</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Row-Level Permissions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#configure-your-account-settings">Configure your Account Settings:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#managing-row-level-permissions">Managing Row Level Permissions:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting:</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="row_level_permissions.html">Row-Level Permissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic Data Attachments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Using Public Collections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Public Collections Advanced Search</a></li>
@@ -366,9 +410,9 @@
 
   <script>
     window.docs = {
-      currentPagename: "row_level_permissions",
-      currentTitle: "Row-Level Permissions",
-      currentUrl: ("index.html").replace("index.html", "row_level_permissions.html"),
+      currentPagename: "kobotoolbox_interface",
+      currentTitle: "The KoBoToolbox Interface",
+      currentUrl: ("index.html").replace("index.html", "kobotoolbox_interface.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoBoToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
