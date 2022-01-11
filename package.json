@@ -3,18 +3,22 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "postinstall": "npm run generate-icons",
     "_compile": "sass --load-path=node_modules --style=expanded --source-map sass_source/sass/theme.scss source/_static/css/kobo_theme.css",
     "_prefix": "postcss source/_static/css/kobo_theme.css --use=autoprefixer --map=false --output=source/_static/css/kobo_theme.css",
     "_update_css": "cp source/_static/css/kobo_theme.css _build/html/_static/css/kobo-theme.css",
     "dev": "sass --load-path=node_modules --watch --style=expanded --source-map sass_source/sass/theme.scss source/_static/css/kobo_theme.css",
-    "start": "npm run _compile && npm run _prefix"
+    "start": "npm run generate-icons && npm run _compile && npm run _prefix",
+    "generate-icons": "node ./scripts/generate_icons.js"
   },
   "devDependencies": {
+    "@vusion/webfonts-generator": "^0.8.0",
     "autoprefixer": "^9.7.6",
     "browserslist": "^4.16.5",
     "postcss": "^8.2.10",
     "postcss-cli": "^7.1.0",
-    "sass": "^1.43.2"
+    "sass": "^1.43.2",
+    "simple-git": "^2.48.0"
   },
   "browserslist": [
     "last 4 version"

@@ -13,6 +13,8 @@ Search the knowledge base, browse our resources and visit our forum for more det
   :name: home-page-toc-getting-started
   
   welcome
+  creating_account
+  kobotoolbox_interface
   quick_start
   server
   is_my_data_safe  
@@ -104,6 +106,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   howto_edit_single_submissions
   howto_edit_multiple_submissions
   photo_download
+  merging_dataset_excel_power_query
   recovering_previous_formdata
   converting_to_spss_and_stata
   excel_analyzer_guide
