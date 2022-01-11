@@ -1,14 +1,14 @@
 # The KoBoToolbox Interface
 
-This article will walk you through the Kobotoolbox interface, helping you get familiar with the different elements.
+This article will walk you through the KoBoToolbox interface, helping you get familiar with the different elements.
 
 ## Basic elements of the KoBoToolbox interface
 
-By default, when you log in to your Kobotoolbox account, you will be taken to the Projects screen.
+By default, when you log in to your KoBoToolbox account, you will be taken to the Projects screen.
 
 ![KoboToolbox Interface](images/kobotoolbox_interface/interface.png)
 
-You can switch between the ![Projects icon](images/kobotoolbox_interface/forms_icon.png)  Projects interface and the ![Library Icon](images/kobotoolbox_interface/library_icon.png)   Library interface using the buttons on the top left of the screen.
+You can switch between the <i class="k-icon k-icon-projects"></i>  Projects interface and the <i class="k-icon k-icon-library"></i> Library interface using the buttons on the top left of the screen.
 
 ### The search bar
 
@@ -32,35 +32,35 @@ On the projects interface, your projects are organized into 3 categories.
 
 Move your mouse pointer over the name of a project in the Projects screen to reveal the following buttons:
 
-![Edit button](images/kobotoolbox_interface/edit_icon.png) **Edit**. Takes you to the formbuilder to edit the form
+<i class="k-icon k-icon-edit"></i> **Edit**. Takes you to the formbuilder to edit the form
   
-![Tags button](images/kobotoolbox_interface/tag_icon.png) **Add Tags to the project**. Tags help making it easier to find projects in the project list when you search using the search bar
+<i class="k-icon k-icon-tag"></i> **Add Tags to the project**. Tags help making it easier to find projects in the project list when you search using the search bar
   
-![Share button](images/kobotoolbox_interface/user_icon.png) **Share**. Lets you share the project with other Kobotoolbox users and customize permissions
+<i class="k-icon k-icon-user-share"></i> **Share**. Lets you share the project with other KoBoToolbox users and customize permissions
   
-![Clone button](images/kobotoolbox_interface/clone_icon.png) **Clone**. Let’s you make a copy of the existing project
+<i class="k-icon k-icon-clone"></i> **Clone**. Let’s you make a copy of the existing project
   
-![More button](images/kobotoolbox_interface/more_icon.png) **Opens up more project actions**
+<i class="k-icon k-icon-more-vertical"></i> **Opens up more project actions**
 When you click the   More button, you have access to the following actions:
   
-![Replace icon](images/kobotoolbox_interface/replace_icon.png) **Replace form**. Allows you to replace the current form with an XLSForm
+<i class="k-icon k-icon-replace"></i> **Replace form**. Allows you to replace the current form with an XLSForm
   
-![Translations button](images/kobotoolbox_interface/translations_icon.png) **Manage translations**. Takes you to the **Manage Languages** screen where you can define languages and add translations for the form
+<i class="k-icon k-icon-globe-alt"></i> **Manage translations**. Takes you to the **Manage Languages** screen where you can define languages and add translations for the form
   
-![XLS button](images/kobotoolbox_interface/xls_icon.png) **Download XLS**. Generates an XLSform file from the current project. This allows you to continue editing your form using Excel and easily collaborate with others.
+<i class="k-icon k-icon-xls-file"></i> **Download XLS**. Generates an XLSform file from the current project. This allows you to continue editing your form using Excel and easily collaborate with others.
   
-![XML button](images/kobotoolbox_interface/xml_icon.png) **Download XML**. Generates an XML file from the current project. For advanced users, this let’s you explore the form structure that may be needed when integrating with other applications, or to make advanced changes to the form.
+<i class="k-icon k-icon-xml-file"></i> **Download XML**. Generates an XML file from the current project. For advanced users, this let’s you explore the form structure that may be needed when integrating with other applications, or to make advanced changes to the form.
 
-![Archive button](images/kobotoolbox_interface/archive_icon.png) **Archive**. Marks your deployed project as archived. This turns off the ability to send more submissions to the project
+<i class="k-icon k-icon-archived"></i> **Archive**. Marks your deployed project as archived. This turns off the ability to send more submissions to the project
 
-![Template button](images/kobotoolbox_interface/template_icon.png) **Create template**. Saves the form as a template in the library module
+<i class="k-icon k-icon-template"></i> **Create template**. Saves the form as a template in the library module
   
-![Delete button](images/kobotoolbox_interface/delete_icon.png) **Delete**. Allows you to delete the project and the data submitted to it
+<i class="k-icon k-icon-trash"></i> **Delete**. Allows you to delete the project and the data submitted to it
 
 ### Help, legacy interface and source code
 
-On the bottom left of the interface, you can access support options including links to the support articles site and the community forum by clicking on the ![Help button](images/kobotoolbox_interface/help_icon.png)   Help button.
+On the bottom left of the interface, you can access support options including links to the support articles site and the community forum by clicking on the <i class="k-icon k-icon-help"></i> Help button.
 
-Clicking the ![Legacy icon](images/kobotoolbox_interface/legacy_icon.png)  Projects (legacy) button takes you to the now deprecated KoboCat Projects interface.
+Clicking the <i class="k-icon k-icon-globe"></i> Projects (legacy) button takes you to the now deprecated KoboCat Projects interface.
 
-If you are interested in contributing to the development of Kobotoolbox or would like to deploy your own version of the software, you can click on the ![Github logo](images/kobotoolbox_interface/github_icon.png) source button to visit the Github page.
+If you are interested in contributing to the development of KoBoToolbox or would like to deploy your own version of the software, you can click on the <i class="k-icon k-icon-logo-github"></i> source button to visit the Github page.
