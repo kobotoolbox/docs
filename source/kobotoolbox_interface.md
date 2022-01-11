@@ -3,8 +3,6 @@
 This article will walk you through the **KoBoToolbox** interface, helping you
 get familiar with the different elements.
 
-## Basic elements of the KoBoToolbox interface
-
 By default, when you log in to your **KoBoToolbox** account, you will be taken
 to the **Projects** screen.
 
@@ -14,12 +12,12 @@ You can switch between the <i class="k-icon k-icon-projects"></i> **Projects**
 and <i class="k-icon k-icon-library"></i> **Library** sections using the buttons
 on the top left of the screen.
 
-### Search bar
+## Search bar
 
 Depending on whether you are on the **Projects** or **Library** section, the
 search bar at the top allows you to quickly filter the items displayed.
 
-### User profile options
+## User profile options
 
 On the far right of the interface is your user account avatar. Clicking it opens
 up a drop-down menu with options to change your account settings (such as
@@ -28,7 +26,7 @@ and to log out.
 
 ![User menu](images/kobotoolbox_interface/user_actions.png)
 
-### Draft, deployed and archived projects
+## Draft, deployed and archived projects
 
 In the **Projects** section of the interface, your individual projects are
 organized into 3 categories:
@@ -42,7 +40,7 @@ organized into 3 categories:
 3. When data collection is complete, you can archive the project. These projects
    will appear under **Archived**.
 
-### Project actions
+## Project actions
 
 Hover your mouse pointer over an item in the **Projects** screen to reveal the
 following buttons:
@@ -68,7 +66,7 @@ button, you have access to the following options:
 | <i class="k-icon k-icon-template"></i> **Create template**      | Save the form as a template in the library section                                                                                                                                                               |
 | <i class="k-icon k-icon-trash"></i> **Delete**                  | Delete the project and the data submitted to it                                                                                                                                                                  |
 
-### Help, legacy interface and source code
+## Help, legacy interface and source code
 
 On the bottom left of the interface, you can access support options including
 links to the support articles site and the community forum by clicking on the <i
