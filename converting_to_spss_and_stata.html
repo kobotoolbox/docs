@@ -102,40 +102,51 @@
           
   <section id="converting-data-into-spss-and-or-stata">
 <h1>Converting Data into SPSS and/or Stata<a class="headerlink" href="#converting-data-into-spss-and-or-stata" title="Permalink to this headline">¶</a></h1>
-<p><strong>This article helps you convert your data into SPSS and/or Stata. Please note you need IBM SPSS and Stata which are third party apps</strong></p>
-<p>KoboToolBox does not provide direct conversion on the system for the two systems so this is a workaround on how to get this done.</p>
-<p>The first thing to note is that exports best work with CSV output, however it can work with excel outputs but we recommend working with a saved CSV version from the excel.</p>
+<p class="note">
+  This article helps you convert your data into <strong>SPSS</strong> and
+  <strong>Stata</strong>. Please note you that need
+  <strong>IBM SPSS</strong> or <strong>Stata</strong> which are third party
+  applications.
+</p><p>Since <strong>KoBoToolbox</strong> does not export data directly in <strong>SPSS</strong> or <strong>Stata</strong>
+format, this article will be a guide for you to make the conversion.</p>
 <section id="converting-to-spss">
 <h2>Converting to SPSS<a class="headerlink" href="#converting-to-spss" title="Permalink to this headline">¶</a></h2>
 <ol>
-<li><p>The first step involves downloading your data as CSV. You can do this from the DATA tab under downloads</p>
-<p><img alt="image" src="_images/data_csv.jpg" /></p>
+<li><p>Download your data as XLS using the instructions provided in
+<a class="reference internal" href="export_download.html"><span class="doc">this support article</span></a> or as illustrated in the image
+below.</p>
+<p><img alt="Export XLS" src="_images/export_xls.gif" /></p>
 </li>
-<li><p>You will then need to download the value labels for SPSS from the same DATA tab. This will generate a syntax for SPSS (An SPSS equivalent of STATA do files). It will give you a zipped folder which you can unzip to get the syntax.</p>
-<p><img alt="image" src="_images/zipped_folder.jpg" /></p>
+<li><p>Download the <strong>SPSS Labels</strong> from the same <strong>DATA</strong> tab as shown in the image
+below. This process will generate a zipped folder that contains the <strong>SPSS</strong>
+syntax.</p>
+<p><img alt="Export SPSS Labels" src="_images/export_spss_labels.gif" /></p>
 </li>
-<li><p>You will now need IBM SPSS to import the CSV</p>
-<p><em>You should open the location of the CSV you downloaded</em></p>
-<p><img alt="image" src="_images/location_csv.jpg" /></p>
-<p><img alt="image" src="_images/delimited_csv.jpg" /></p>
-<p><img alt="image" src="_images/all_cases.jpg" /></p>
-<p><em>Ensure you check the boxes Comma and Semicolon</em></p>
-<p><img alt="image" src="_images/comma_semicolon.jpg" /></p>
-<p><em>When you finish you should have your data without label</em></p>
-<p><img alt="image" src="_images/without_label.jpg" /></p>
+<li><p>You will now need <strong>IBM SPSS</strong> to import the data in XLS using the following
+method which is compatible with all versions of <strong>SPSS</strong>.</p>
+<ul class="simple">
+<li><p>Within <strong>SPSS</strong>, click <strong>File -&gt; Open -&gt; Data</strong> (as below).</p></li>
+<li><p>Once you click the <strong>Data</strong> tab, you will see a data box that will appear.
+In the <strong>Files</strong> of type box, select <strong>Excel</strong>.</p></li>
+<li><p>Navigate to the folder that contains your <strong>Excel</strong> file, and find the
+<strong>Excel</strong> file that contains the data you downloaded.</p></li>
+<li><p>Open the file, and you’ll get the <strong>Read Excel File</strong> dialogue box.</p></li>
+</ul>
+<p><img alt="Import into SPSS" src="_images/import_into_spss.gif" /></p>
 </li>
-<li><p>Now open the syntax you downloaded on step 2 and run the syntax</p>
-<p><img alt="image" src="_images/run_syntax.jpg" /></p>
+<li><p>Now open the syntax you downloaded in <em>Step 2</em> and run the syntax.</p>
+<p><img alt="Run Syntax" src="_images/run_syntax.jpg" /></p>
 </li>
 </ol>
-<p>You are now ready to manipulate your data in SPSS</p>
+<p>You are now ready to manipulate your data in <strong>SPSS</strong>.</p>
 </section>
-<section id="getting-stata-file">
-<h2>Getting STATA file<a class="headerlink" href="#getting-stata-file" title="Permalink to this headline">¶</a></h2>
-<p>Unfortunately we do not a direct download on the system for an SPSS DO file. So you need to go through the above process then save the final data as a .dta stata data.</p>
+<section id="converting-the-spss-file-into-a-stata-file">
+<h2>Converting the SPSS file into a STATA file<a class="headerlink" href="#converting-the-spss-file-into-a-stata-file" title="Permalink to this headline">¶</a></h2>
+<p>Unfortunately we do not have an option to directly download an <strong>SPSS DO</strong> file.
+You need to go through the above process then save the final data as a <code class="docutils literal notranslate"><span class="pre">.dta</span></code>
+<strong>Stata</strong> data.</p>
 <p>Ensure you choose to save all the options you need when saving.</p>
-<p><img alt="image" src="_images/dta_data.jpg" /></p>
-<p>Wishing you the best with your data management.</p>
+<p><img alt="dta data" src="_images/dta_data.jpg" /></p>
 </section>
 </section>
 
@@ -254,7 +265,7 @@
 <li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering Data From Previous Form Versions</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Converting Data into SPSS and/or Stata</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#converting-to-spss">Converting to SPSS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-stata-file">Getting STATA file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#converting-the-spss-file-into-a-stata-file">Converting the SPSS file into a STATA file</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>

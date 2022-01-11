@@ -102,21 +102,39 @@
           
   <section id="creating-unique-serial-numbers-in-forms">
 <h1>Creating Unique Serial Numbers in Forms<a class="headerlink" href="#creating-unique-serial-numbers-in-forms" title="Permalink to this headline">¶</a></h1>
-<p>There are times you may want to generate a unique serial number for each and every form in a project. This article discusses how to utilize the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question-type to do that by either creating sequential unique serial numbers based on date and time or by creating unique serial numbers from selected variables.</p>
-<section id="creating-sequential-unique-serial-numbers-based-on-date-and-time">
-<h2>Creating Sequential Unique Serial Numbers Based on Date and Time:<a class="headerlink" href="#creating-sequential-unique-serial-numbers-based-on-date-and-time" title="Permalink to this headline">¶</a></h2>
-<p>This method works best with <a class="reference internal" href="data_through_webforms.html"><span class="doc">Enketo web forms</span></a>. It uses a calculation function to create a unique serial number based on the date and time to the first millisecond. Although this method may not meet all your needs, it should give you an illustration of how much you can stretch calculate functions.</p>
-<p>Create a <a class="reference" href="calculate_questions.html"><code>calculate</code> question type</a> in either the formbuilder or XLSForm and use the formula below.</p>
+<p>There are times you may want to generate a unique serial number for each and
+every form in a project. This article discusses various workarounds on how to
+create unique serial numbers using the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question-type.</p>
+<section id="approach-1-creating-sequential-unique-serial-numbers-based-on-date-and-time">
+<h2>Approach 1: Creating Sequential Unique Serial Numbers Based on Date and Time<a class="headerlink" href="#approach-1-creating-sequential-unique-serial-numbers-based-on-date-and-time" title="Permalink to this headline">¶</a></h2>
+<p>This method works best with <a class="reference internal" href="data_through_webforms.html"><span class="doc">Enketo web forms</span></a>. It
+uses a calculation function to create a unique serial number based on the date
+and time to the first millisecond. Although this method may not meet all your
+needs, it should give you an illustration of how much you can stretch calculate
+functions.</p>
+<p>Create a
+<a class="reference" href="calculate_questions.html"><code>calculate</code>
+question type</a> in either the formbuilder or <strong>XLSForm</strong> and use the formula
+below.</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">concat</span><span class="p">(</span><span class="n">substr</span><span class="p">(</span><span class="n">today</span><span class="p">(),</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">today</span><span class="p">(),</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">5</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">today</span><span class="p">(),</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">now</span><span class="p">(),</span> <span class="mi">13</span><span class="p">,</span> <span class="mi">11</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">now</span><span class="p">(),</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">14</span><span class="p">),</span> <span class="n">substr</span><span class="p">(</span><span class="n">now</span><span class="p">(),</span> <span class="mi">19</span><span class="p">,</span> <span class="mi">17</span><span class="p">))</span>
 </pre></div>
 </div>
-<p class="note">The same formula can work as an <code>integer</code> question when working in an XLSForm.</p><p><img alt="image" src="_images/calculate_example.png" /></p>
-<p>In the example, when you preview the deployed form in Enketo, you should be able to see the serial number within the note question as shown in the image below:</p>
-<p><img alt="image" src="_images/preview_form.png" /></p>
+<p class="note">
+  The same formula can work as an <code>integer</code> question when working in
+  an <strong>XLSForm</strong>.
+</p><p><img alt="Calculate example" src="_images/calculate_example.png" /></p>
+<p>In the example, when you preview the deployed form in <strong>Enketo</strong>, you should be
+able to see the serial number within the note question as shown in the image
+below:</p>
+<p><img alt="Preview form" src="_images/preview_form.png" /></p>
 </section>
-<section id="creating-unique-serial-numbers-from-selected-variables">
-<h2>Creating Unique Serial Numbers from Selected Variables<a class="headerlink" href="#creating-unique-serial-numbers-from-selected-variables" title="Permalink to this headline">¶</a></h2>
-<p>This example shows how to create unique serial numbers from existing, already defined variables in your form by using the <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#concat"><code class="docutils literal notranslate"><span class="pre">concat()</span></code></a> expression in a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question type. The example is shown as an XLSForm, but can just as easily be done within the formbuilder.</p>
+<section id="approach-2-creating-unique-serial-numbers-from-selected-variables">
+<h2>Approach 2: Creating Unique Serial Numbers from Selected Variables<a class="headerlink" href="#approach-2-creating-unique-serial-numbers-from-selected-variables" title="Permalink to this headline">¶</a></h2>
+<p>This example shows how to create unique serial numbers from existing, already
+defined variables in your form by using the
+<a class="reference external" href="https://docs.getodk.org/form-operators-functions/#concat"><code class="docutils literal notranslate"><span class="pre">concat()</span></code></a>
+expression in a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question type. The example is shown as an
+<strong>XLSForm</strong>, but can just as easily be done within the formbuilder.</p>
 <p><strong>survey</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -195,8 +213,9 @@
 <td></td>
 </tr>
 </tbody>
-</table><p>When you preview the example in Enketo web forms, the serial number will be presented within the note question as shown in the image below:</p>
-<p><img alt="image" src="_images/preview_uniqueid.png" /></p>
+</table><p>When you preview the example in <strong>Enketo</strong> web forms, the serial number will be
+presented within the note question as shown in the image below:</p>
+<p><img alt="Preview unique id" src="_images/preview_uniqueid.png" /></p>
 </section>
 </section>
 
@@ -263,8 +282,8 @@
 <li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p_codes.html">Including P-Codes in the Output Data</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Creating Unique Serial Numbers in Forms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#creating-sequential-unique-serial-numbers-based-on-date-and-time">Creating Sequential Unique Serial Numbers Based on Date and Time:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#creating-unique-serial-numbers-from-selected-variables">Creating Unique Serial Numbers from Selected Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#approach-1-creating-sequential-unique-serial-numbers-based-on-date-and-time">Approach 1: Creating Sequential Unique Serial Numbers Based on Date and Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#approach-2-creating-unique-serial-numbers-from-selected-variables">Approach 2: Creating Unique Serial Numbers from Selected Variables</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data Functionality in KoBoToolbox</a></li>
