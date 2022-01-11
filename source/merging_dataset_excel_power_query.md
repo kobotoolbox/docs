@@ -34,37 +34,37 @@ to almost all PCs. It is also relatively easy-to-use.
 _Individual data_ are information that are generally captured only once in an
 interview. _Roster data_, on the other hand, are captured more than once _(e.g.,
 details of all family members living within a household)_ from within the same
-individual in an interview. The number of cases in an _individual data_ may
-equal to _roster data_ but can never exceed it, while the number of cases in
-_roster data_ generally exceeds the _individual data_ but sometimes may be equal
-(but never less).
+individual in an interview. The number of cases in _individual data_ may equal
+to _roster data_ but can never exceed it, while the number of cases in _roster
+data_ generally exceeds the _individual data_ but sometimes may be equal (but
+never less).
 
 A filled-up survey form, as shown below, should show in a picture the
-differences between an _individual data_ and _roster data_. _Please note, all
-data used in this support article are hypothetical_.
+differences between _individual data_ and _roster data_. _Please note, all data
+used in this support article are hypothetical_.
 
 ![Form](/images/merging_dataset_excel_power_query/form.png)
 
 <p class="note">
-  Any data that is collected outside the repeat group is an
+  Any data that is collected outside the repeat group is
   <em>individual data</em> and any data that is collected inside a repeat group
   is <em>roster data</em>.
 </p>
 
-Data downloaded in XLS format should also show the difference between an
-_individual data_ and _roster data_ in a picture.
+Data downloaded in XLS format should also show the difference between
+_individual data_ and _roster data_.
 
 Each record _(as shown in the image below)_, under `Name of the household head`,
 `Sex of the household head`, `Total family members in the household`, and
 `Total school going children (aged 6-16 years) in the household` from the first
-sheet **Repeat Group (Merge)** is an _individual data_.
+sheet **Repeat Group (Merge)** is _individual data_.
 
 ![Individual Data](/images/merging_dataset_excel_power_query/individual_data.png)
 
 This example dataset has a total of 7 interviews as its _individual data_.
 
 Similarly, each record _(as shown in the image below)_, under `Name of child`,
-`Age of child`, and `Sex of child` from the second sheet **CR** is a _roster
+`Age of child`, and `Sex of child` from the second sheet, **CR**, is _roster
 data_.
 
 ![Roster Data](/images/merging_dataset_excel_power_query/roster_data.png)
@@ -86,9 +86,9 @@ a `_parent_index` column with value "1" in the second sheet **CR**. `_index` and
 groups. They are matching variables needed to merge _individual data_ and
 _roster data_ together into one.
 
-There are basically two approaches to merge _individual data_ and _roster data_
-into a single dataset through **Power Query** in **Excel**. You can use any of
-the following approaches:
+Below are two approaches to merge _individual data_ and _roster data_ into a
+single dataset through **Power Query** in **Excel**. You can use any of the
+following approaches:
 
 ### First approach: Merging individual data with roster data (when the dataset is already open)
 
