@@ -16,13 +16,13 @@ format, this article will be a guide for you to make the conversion.
    [this support article](export_download.md) or as illustrated in the image
    below.
 
-    ![image](/images/converting_to_spss_and_stata/Image1_ExportXLS.gif)
+    ![Export XLS](/images/converting_to_spss_and_stata/export_xls.gif)
 
 2. Download the **SPSS Labels** from the same **DATA** tab as shown in the image
    below. This process will generate a zipped folder that contains the **SPSS**
    syntax.
 
-    ![image](/images/converting_to_spss_and_stata/Image2_ExportSPSSlabels.gif)
+    ![Export SPSS Labels](/images/converting_to_spss_and_stata/export_spss_labels.gif)
 
 3. You will now need **IBM SPSS** to import the data in XLS using the following
    method which is compatible with all versions of **SPSS**.
@@ -34,11 +34,11 @@ format, this article will be a guide for you to make the conversion.
       **Excel** file that contains the data you downloaded.
     - Open the file, and you’ll get the **Read Excel File** dialogue box.
 
-    ![image](/images/converting_to_spss_and_stata/Image3_ImportintoSPSS.gif)
+    ![Import into SPSS](/images/converting_to_spss_and_stata/import_into_spss.gif)
 
 4. Now open the syntax you downloaded in _Step 2_ and run the syntax.
 
-    ![image](/images/converting_to_spss_and_stata/run_syntax.jpg)
+    ![Run Syntax](/images/converting_to_spss_and_stata/run_syntax.jpg)
 
 You are now ready to manipulate your data in **SPSS**.
 
@@ -50,4 +50,4 @@ You need to go through the above process then save the final data as a `.dta`
 
 Ensure you choose to save all the options you need when saving.
 
-![image](/images/converting_to_spss_and_stata/dta_data.jpg)
+![dta data](/images/converting_to_spss_and_stata/dta_data.jpg)
