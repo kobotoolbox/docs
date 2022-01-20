@@ -35,7 +35,7 @@ __For example:__
 
 ## Pulling data in Microsoft Excel (by making data public)
 
-Before transitioning over to Excel, ensure that there is _at least one record_ stored in your data table in KoboToolbox _and_ that you have made your data public by checking __Anyone can view submissions made to this form__ from __SETTINGS>Sharing__. Then click on __Data__, and under __Data__, click on __From Web__. You should now see a dialogue box to paste your URL and start pulling data from the server.
+Before transitioning over to Excel, ensure that there is _at least one record_ stored in your data table in KoBoToolbox _and_ that you have made your data public by checking __Anyone can view submissions made to this form__ from __SETTINGS>Sharing__. Then click on __Data__, and under __Data__, click on __From Web__. You should now see a dialogue box to paste your URL and start pulling data from the server.
 
 ![image](/images/pulling_data_excelquery/excel_updated.png)
 

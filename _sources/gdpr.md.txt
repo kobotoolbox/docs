@@ -16,4 +16,4 @@ Our team will never access your data unless you have given us explicit access to
 
 ## Requesting to be Forgotten
 
-If you would like us to delete all of your project data, including your KoboToolbox account, please contact the Support Team and mention 'GDPR Request to be Forgotten.'
+If you would like us to delete all of your project data, including your KoBoToolbox account, please contact the Support Team and mention 'GDPR Request to be Forgotten.'
