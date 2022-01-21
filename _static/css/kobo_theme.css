@@ -660,6 +660,16 @@ html body div.footer {
 }
 html body div.footer a {
   color: inherit;
+  opacity: 0.6;
+  text-decoration: none;
+  margin: 0px 10px;
+}
+html body div.footer a.inline {
+  margin: 0;
+}
+html body div.footer a:hover {
+  color: white;
+  opacity: 1;
 }
 html body div.footer p {
   width: 100%;
@@ -667,12 +677,16 @@ html body div.footer p {
   padding-left: 2.8125rem;
   padding-right: 2.8125rem;
   margin: 0 auto;
+  margin: 0.4em 0;
 }
 @media screen and (max-width: 875px) {
   html body div.footer p {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
+}
+html body div.footer p:last-child {
+  margin-top: 1.5em;
 }
 
 .community-questions.community-questions--big {
