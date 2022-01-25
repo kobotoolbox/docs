@@ -480,6 +480,14 @@ html body {
   border-radius: 4px;
   padding: 1em 0.8em;
 }
+
+.page .page__body div.box {
+  display: block;
+  border: 2px solid #0a6dbc;
+  border-radius: 4px;
+  padding: 1em 0.8em;
+  background-color: #e8f4fe;
+}
 .page .page__body p,
 .page .page__body dd,
 .page .page__body li {
