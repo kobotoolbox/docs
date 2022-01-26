@@ -1,4 +1,5 @@
 # Adding Another Language in the Project Dashboard
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/language_dashboard.md" class="reference">2 Dec 2021</a>
 
 There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online Project Dashboard or you can add them in an [XLS Form and upload it to KoBo](language_xls.md). 
 

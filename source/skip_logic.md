@@ -1,4 +1,5 @@
 # Adding Skip Logic
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/dca44bd6726480d038500d88ab4b8d7d39107d79/source/skip_logic.md" class="reference">25 Jul 2020</a>
 
 Skip logic is also sometimes referred to as 'branching' or 'relevant conditions'. By default, all questions are always visible. Skip logic controls which question should be displayed only if a certain condition (or conditions) is fulfilled. Conditions are always applied to the question or group that should be sometimes hidden, sometimes visible. (This is important, as many paper surveys approach the problem from the other direction, writing things like "If yes, go to question 35".)
 

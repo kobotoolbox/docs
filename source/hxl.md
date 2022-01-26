@@ -1,4 +1,5 @@
 # Using HXL Tags
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/hxl.md" class="reference">2 Dec 2021</a>
 
 ## What exactly is HXL?
 

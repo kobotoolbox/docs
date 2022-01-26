@@ -1,4 +1,5 @@
 # Pulling Data Into Excel Power Query
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5c33bf8fbd4550f031cd19567502861063b1d88b/source/pulling_data_into_excelquery.md" class="reference">19 Jan 2022</a>
 
 For seamless data analysis, you can leverage the KoBo API to pull your data into other tools for data analysis. This article covers how to connect to the API to pull your data into __Excel Power Query__.
 

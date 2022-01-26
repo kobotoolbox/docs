@@ -1,4 +1,5 @@
 # Form Settings and Meta Questions
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/form_meta.md" class="reference">12 Aug 2021</a>
 
 Form settings are optional advanced configurations of your form.
 

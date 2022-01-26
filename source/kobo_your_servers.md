@@ -1,4 +1,5 @@
 # Installing KoBoToolbox on Your Own Servers
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c4236e20933ea5350c1822f820a8ee0882344920/source/kobo_your_servers.md" class="reference">26 Jul 2020</a>
 
 **Warning:** _Installing KoBoToolbox on your own server requires advanced server administration and programming skills. Please understand that you shouldn't use this in a critical environment without having the technical resources in place to troubleshoot if needed. Consider installing KoBo on your local computer instead with [these instructions](kobo_local_computer.md)._
 

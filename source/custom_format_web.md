@@ -1,4 +1,5 @@
 # Custom Formatting in Web Forms
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/bec1c31d605f35f306ee83345f9256d40c8793ea/source/custom_format_web.md" class="reference">26 Jul 2020</a>
 
 _Please note: Custom formatting does work on the KoBoCollect android application._
 

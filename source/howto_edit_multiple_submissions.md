@@ -1,4 +1,5 @@
 # Editing Responses in Multiple Submissions
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1dc0631f9c718b69e1f421bed92dff129f58649f/source/howto_edit_multiple_submissions.md" class="reference">3 Mar 2021</a>
 
 Users could always edit submissions as outlined in our support article [Editing or Deleting a Single Submission](howto_edit_single_submissions.md). What if a user has to edit repeated typo errors or update missing responses for all or most of the submissions from a particular survey project? Following the method outlined earlier should consume much time. Hence, KoBoToolbox has developed a feature that should make editing straightforward, saving editing time.
 
