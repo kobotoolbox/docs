@@ -1,4 +1,5 @@
 # Using the API
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0c2e229627b705ddf35be484eaddc787b1ffa0b0/source/api.md" class="reference">25 Feb 2021</a>
 
 KoBoToolbox has a number of advanced features built in based on our open source libraries, which include useful add-ons for advanced use cases. There are many ways to use our API. For some hands-on examples, [see this post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
 

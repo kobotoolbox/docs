@@ -1,4 +1,5 @@
 # Collecting Data Offline
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d5cdd698b4a91c3c45216f5a0f91ff7f0704a495/source/data-offline.md" class="reference">19 Jun 2020</a>
 
 **All data collection can take place offline, both with KoBoCollect and with Web Forms.** 
 

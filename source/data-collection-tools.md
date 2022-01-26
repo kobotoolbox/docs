@@ -1,4 +1,5 @@
 # Overview on Data Collection Tools
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/34ebfb40653508b63d5ac86f2127e05ac970bdbc/source/data-collection-tools.md" class="reference">12 Aug 2021</a>
 
 KoBoToolbox allows data collection in multiple ways. Because KoBoToolbox is built on the [Xform/ODK standards](https://xlsform.org), our forms are compatible with [a number of different tools](https://xlsform.org/en/#tools-that-support-xlsforms) that can be used for data collection.
 
