@@ -1,4 +1,5 @@
 # Calculate Question Type
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b3e7f7e71a74f63cc5f9ba61e9b437f3684457f5/source/calculate_questions.md" class="reference">12 Aug 2021</a>
 
 Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a Calculation and writing the mathematical expression into the question label field.
 

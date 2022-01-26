@@ -1,4 +1,5 @@
 # Data Storage
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a3a760fe8ceadb5b7a8bdf5f30f40776c941b857/source/data_storage.md" class="reference">6 Jul 2020</a>
 
 Whether you're using the humanitarian server supported by [UNOCHA](https://kobo.humanitarianresponse.info/accounts/login/?next=/#/) or the non-humanitarian server supported by [KoBoToolbox](https://kf.kobotoolbox.org/accounts/login/?next=/#/), the data from both servers is stored on Amazon Web Services (AWS) servers. 
 

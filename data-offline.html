@@ -102,6 +102,7 @@
           
   <section id="collecting-data-offline">
 <h1>Collecting Data Offline<a class="headerlink" href="#collecting-data-offline" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d5cdd698b4a91c3c45216f5a0f91ff7f0704a495/source/data-offline.md" class="reference">19 Jun 2020</a></p>
 <p><strong>All data collection can take place offline, both with KoBoCollect and with Web Forms.</strong></p>
 <p>When a user enters data it is stored first on the device. KoBoCollect can be set to attempt sending the information through a network connection immediately or only at a later stage when the interviewer or supervisor wants to upload finalized forms. Web Forms will always attempt to upload data immediately and will retry until a connection has been established again.</p>
 <p>All synchronization is proofed even against poor Internet connection quality. Should a connection time out or be interrupted while a specific form is being transferred, it will be resent with the next upload attempt. The server will not integrate half received data in this case. Only when a record has been uploaded successfully and the server confirms receipt will the survey data be removed from the upload queue.</p>

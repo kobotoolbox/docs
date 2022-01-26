@@ -1,4 +1,5 @@
 # Restricting Text Responses With Regular Expressions
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/restrict_responses.md" class="reference">12 Aug 2021</a>
 
 A regular expression, or regex, is a search pattern used for matching specific characters and ranges of characters within a string. It is widely used to validate, search, extract, and restrict text in most programming languages. KoBoToolbox supports regex to control the length and characters during data entry to a particular question _(e.g. controlling the entry of mobile number to exactly 10 digits, controlling the entry of a valid email id etc.)_.
 
