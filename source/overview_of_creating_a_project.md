@@ -36,38 +36,43 @@ Once the formbuilder opens up, you can start adding your questions.
 2. Type in your question text.
 3. Press ENTER or click the **ADD QUESTION** button.
 ![](images/overview_of_creating_a_project/add_question_button.png)
-4. Finally, select the question type from the list (see the practice example below)
+1. Finally, select the question type from the list (see the practice example below)
 
-<div class="box">
-<p><strong> Practice: Adding questions </strong></p>
-Let’s add the following questions: <br>
-What is your name?<br> How old are you?<br>
-Gender: Male; Female; Nonbinary; Prefer not to say
-<p><strong>Steps:</strong></p>
-<ol>
-<li>Click the <i class="k-icon k-icon-plus"></i> button to add a new question</li>
-<li>Type: What is your name</li>
-<li>Press ENTER or click **ADD QUESTION**</li>
-<li>Choose the **Text** question type</li>
-<li>To add the second question, click the **+** button just below the question you just added</li>
-<image src="_images/add_next_question.png" />
-<li>Type: How old are you?</li>
-<li>Press ENTER or click **ADD QUESTION**</li>
-<li>Choose the **Number** question type</li>
-<li>Finally, click the **+** button just below the second question you added</li>
-<li>Type: Gender</li>
-<li>Press ENTER or click **ADD QUESTION**</li>
-<li>Choose the **Select one** question type</li>
-<li>On Option 1, type: Male. </li>
-<li>On Option 2, type: Female</li>
-<li>Click **Click to add another response** and type Nonbinary</li>
-<li>Click **Click to add another response** and type Prefer not to say</li>
-<li>Click the **SAVE** button at the top right of the formbuilder</li>
-</ol>
-<p>The form will look as follows:</p>
-<image src="_images/questions.png" />
-</div>
+---
 
+### Practice: Adding questions
+
+Let’s add the following questions:
+- What is your name?
+- How old are you?
+- Gender: Male; Female; Nonbinary; Prefer not to say
+
+**Steps:**
+
+- **1.** Click the <i class="k-icon k-icon-plus"></i> button to add a new question
+- **2.** Type: What is your name
+- **3.** Press ENTER or click **ADD QUESTION**
+- **4.** Choose the **Text** question type
+- **5.** To add the second question, click the **+** button just below the question you just added
+  ![Add next question](images/overview_of_creating_a_project/add_next_question.png)
+- **6.** Type: How old are you?
+- **7.** Press ENTER or click **ADD QUESTION**
+- **8.** Choose the **Number** question type
+- **9.** Finally, click the **+** button just below the second question you added
+- **10.** Type: Gender
+- **11.** Press ENTER or click **ADD QUESTION**
+- **12.** Choose the **Select one** question type
+  - On Option 1, type: Male.
+  - On Option 2, type: Female
+- **13.** Click **Click to add another response** and type Nonbinary
+- **14.** Click **Click to add another response** and type Prefer not to say
+- **15.** Click the **SAVE** button at the top right of the formbuilder
+
+The form will look as follows:
+
+![Questions](images/overview_of_creating_a_project/questions.png)
+
+---
 
 ## Previewing the form
 
