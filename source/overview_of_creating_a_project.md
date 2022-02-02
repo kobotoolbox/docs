@@ -1,21 +1,21 @@
-# Overview of creating a project in KoboToolbox
+# Overview of creating a project
 
-Once you’ve logged in to your KoboToolbox account, you can start creating your data collection project right away with our simple-to-use formbuilder. This article gives you a quick overview of how you can create a data collection project, add questions and deploy it for data entry. Use these guidelines as your basic introduction to developing and deploying forms in KoboToolbox, after which you can go through the rest of the articles in this support site to learn in depth about the steps you will learn here.
+Once you’ve logged in to your **KoboToolbox** account, you can start creating your data collection project right away with our simple-to-use formbuilder. This article gives you a quick overview of how you can create a data collection project, add questions and deploy it for data entry. Use these guidelines as your basic introduction to developing and deploying forms in **KoboToolbox**, after which you can go through the rest of the articles in this support site to learn in depth about the steps you will learn here.
 
 ## Creating your first form
 
-* Upon logging in to your account, click the big blue **NEW** button at the top. You will be presented with the “Create a project: choose a source” dialog box.
-  
+* Upon logging in to your account, click the big blue **NEW** button at the top. You will be presented with the “Create a project: choose a source” dialogue box.
+
 ![Choose a source](images/overview_of_creating_a_project/choose_source.png)
 
-* Click “Build from scratch” to start creating your form using the KoboToolbox formbuilder.
+* Click **Build from scratch** to start creating your form using the **KoboToolbox** formbuilder.
 
 <p class="note"><strong>Use a template</strong>: Allows you to build a form using a template that you have in the library module. <a href="https://support.kobotoolbox.org/add_questions_library">Read more about templates on this link</a> <br /><br />
 <strong>Upload XLSForm</strong>: Lets you upload an XLSForm file where you have defined your questions. <a href="https://xlsform.org">Read more about XLSForm on this link</a><br /><br /> 
 <strong>Import an XLSForm via URL</strong>: Lets you upload an XLSForm file from an online source such as Google Drive. <a href="https://support.kobotoolbox.org/xls_url.html">Read more about importing XLSForms via URL on this link</a>
 </p>
 
-* On the Project Details dialog box that opens up, enter the details of your project and then click **CREATE PROJECT**
+* On the Project Details dialogue box that opens up, enter the details of your project and then click **CREATE PROJECT**
 
 ![](images/overview_of_creating_a_project/project_details.png)
 
@@ -24,7 +24,7 @@ Once you’ve logged in to your KoboToolbox account, you can start creating your
 <strong>Description (optional)</strong>: A descriptive paragraph to make it easy to identify your project<br />
 <strong>Sector (optional)</strong>: The sector in which the data collection project is being deployed<br />
 <strong>Country (optional)</strong>: The country where the data collection project will be deployed <br /><br />
-You can check the last option to anonymously share the sector and country information with KoboToolbox. The data is used to help improve the KoboToolbox platform.
+You can check the last option to anonymously share the sector and country information with <strong>KoboToolbox</strong>. The data is used to help improve the <strong>KoboToolbox</strong> platform.
 </p>
 
 ## Adding questions
@@ -40,7 +40,7 @@ Once the formbuilder opens up, you can start adding your questions.
 
 ---
 
-### Practice: Adding questions
+### Try if for yourself
 
 Let’s add the following questions:
 - What is your name?
@@ -89,7 +89,7 @@ The form we created in the Adding Questions practice above will display as follo
 You can press the Escape key (Esc) on the keyboard to return to the formbuilder (or click the close button on the Form Preview window)
 
 <p class="note">
-KoBoToolbox has functionality that allows you to define <a href="skip_logic.html">Skip logic</a>, <a href="validation_criteria.html">validation criteria</a>, <a href="calculate_questions.html">perform calculations</a> and <a href="language_dashboard.html">add translations</a>. Click the linked articles to learn more about how to add these in your form.
+<strong>KoboToolbox</strong> has functionality that allows you to define <a href="skip_logic.html">Skip logic</a>, <a href="validation_criteria.html">validation criteria</a>, <a href="calculate_questions.html">perform calculations</a> and <a href="language_dashboard.html">add translations</a>. Click the linked articles to learn more about how to add these in your form.
 </p>
 
 ## Deploying the form
@@ -106,7 +106,7 @@ If you don’t have any errors, a “deployed form” message will appear at the
 
 Please note that the screen will refresh to show you the current version of the form and options for collecting data using the form.
 
-## Entering data using the web webform
+## Entering data using the webform
 
 To enter data using the web form:
 
