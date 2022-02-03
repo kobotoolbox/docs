@@ -1,4 +1,5 @@
 # Downloading Photos and Other Media
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/befed3028fc84c1bb498ad07da3eb188cd5bd671/source/photo_download.md" class="reference">16 Nov 2021</a>
 
 If your form [includes](question_types.md) a photo, video, or audio recording
 question, these files will be uploaded to the server along with your other

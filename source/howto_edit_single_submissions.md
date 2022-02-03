@@ -1,4 +1,5 @@
 # Editing or Deleting a Single Submission
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6ef4dac6cafabd56d92a72a0ccd04fd29047667f/source/howto_edit_single_submissions.md" class="reference">26 Jul 2020</a>
 
 To edit or delete a submitted questionnaire, please follow the steps below. 
 

@@ -1,4 +1,5 @@
 # Video Question Type
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/be4dbc17706d535fe328b67a126df47f57bf573b/source/video_question_type.md" class="reference">25 Jul 2020</a>
 
 The question type "video" prompts a user to record a video as an answer to a question (e.g. "Please record a video of the head of household saying his full name"). That video then gets saved along with the form data. 
 

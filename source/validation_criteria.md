@@ -1,4 +1,5 @@
 # Limiting Responses with Validation Criteria
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/validation_criteria.md" class="reference">12 Aug 2021</a>
 
 This feature allows you to avoid accidental or invalid answers, especially in numeric questions (`integer` or `decimal` response types). However, validation can be used on any question. Validation criteria are also sometimes referred to as constraints.
 

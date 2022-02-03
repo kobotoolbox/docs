@@ -1,4 +1,5 @@
 # List of Question Types
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/531e3363e769126679697d4a7219e3de3d94f1fa/source/question_types.md" class="reference">6 Jan 2022</a>
 
 The below table provides a high-level summary of each of the response types available to use in your XLSForm and formbuilder:
 

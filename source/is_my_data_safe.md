@@ -1,4 +1,5 @@
 # Is My Data Safe on Your Server?
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b12b2b3dce2d89fca8bd8d64219c682eb2bbae1a/source/is_my_data_safe.md" class="reference">19 Jul 2020</a>
 
 Most users use one of the two server instances that we support: [KoBoToolbox by OCHA](https://kobo.humanitarianresponse.info/accounts/login/?next=/#/) (for humanitarian workers) and [KoBoToolbox by HHI](https://kf.kobotoolbox.org/accounts/login/?next=/#/) (for everyone else). KoBoToolbox can also be installed on local computers or your own web servers. This article is about the security of your data on one of the two supported servers hosted by HHI and OCHA.
  

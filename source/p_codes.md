@@ -1,4 +1,5 @@
 # Including P-Codes in the Output Data
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b3e7f7e71a74f63cc5f9ba61e9b437f3684457f5/source/p_codes.md" class="reference">12 Aug 2021</a>
 
 If using cascading lists, please [follow the instructions](cascading_select.md) for cascading selects.
 

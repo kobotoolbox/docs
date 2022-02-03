@@ -1,4 +1,5 @@
 # Exporting and Downloading Your Data
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c0bd63f559060323f1d99bc744706216bf0e1c8c/source/export_download.md" class="reference">2 Jun 2020</a>
 
 #### Available download formats
 You can download your data in multiple formats. As soon as any data has been collected, the following formats are available for download:
