@@ -15,6 +15,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   welcome
   creating_account
   kobotoolbox_interface
+  overview_of_creating_a_project
   quick_start
   server
   is_my_data_safe  
