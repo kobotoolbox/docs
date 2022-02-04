@@ -1,7 +1,7 @@
 # Resetting Passwords
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7590fa2ddca50cffc82051199410ccce4b3a130e/source/reset_password.md" class="reference">10 Jun 2020</a>
 
-If you have forgotten or lost your account password, KoBoToolbox allows you to reset it easily.
+If you have forgotten or lost your account password, KoboToolbox allows you to reset it easily.
 
 To reset your password:
 
@@ -14,7 +14,7 @@ To reset your password:
 * Enter your email address.
 * Click **Reset Password**.
 
-KoBoToolbox will then send out password reset emails after your request to reset the password. If you didn't receive an email with the password reminder link, please try troubleshooting the following:
+KoboToolbox will then send out password reset emails after your request to reset the password. If you didn't receive an email with the password reminder link, please try troubleshooting the following:
 
 * Check if our password reset email landed in your spam or junk mail folder, as it might have been placed there by your email provider.
 * Check if you created your account with a different email address - simply click on the 'Forgot' link again and enter your alternative email address.
