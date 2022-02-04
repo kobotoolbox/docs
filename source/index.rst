@@ -12,7 +12,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   :caption: Getting Started
   :name: home-page-toc-getting-started
   
-  welcome
+  what_is_kobotoolbox
   creating_account
   kobotoolbox_interface
   overview_of_creating_a_project
