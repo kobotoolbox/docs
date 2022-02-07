@@ -1,18 +1,19 @@
-# Overview of creating a project
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a6e3650b53b74f1fda1b518389a05304b015603c/source/overview_of_creating_a_project.md" class="reference">2 Feb 2022</a>
+# Overview of creating and managing projects in KoboToolbox
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7d513b8500d4abf789e0c42c10827738cfba7059/source/overview_of_creating_a_project.md" class="reference">7 Feb 2022</a>
 
-Once you’ve logged in to your **KoboToolbox** account, you can start creating
-your data collection project right away with our simple-to-use formbuilder. This
+Once you’ve logged in to your KoboToolbox account, you can start building your
+data collection project right away with our easy-to-use formbuilder. This
 article gives you a quick overview of how you can create a data collection
-project, add questions and deploy it for data entry. Use these guidelines as
-your basic introduction to developing and deploying forms in **KoboToolbox**,
-after which you can go through the rest of the articles in this support site to
-go deeper into the introductory steps you will learn here.
+project, add questions and deploy a form for data entry.
+
+These guidelines are a basic introduction to developing and deploying forms in
+KoboToolbox. Visit the articles linked throughout this overview to learn more
+about each of these steps.
 
 ## Creating your first form
 
--   After logging in to your account, click the **NEW** button at the top. You
-    will be presented with the _Create a project: choose a source_ dialogue box.
+Upon logging in to your account, click the big blue **NEW** button at the top.
+You will be presented with the “Create a project: choose a source” dialog box.
 
 ![Choose a source](images/overview_of_creating_a_project/choose_source.png)
 
@@ -25,8 +26,8 @@ go deeper into the introductory steps you will learn here.
 
 -   Click **Build from scratch** to start creating your form using the
     formbuilder.
--   On the _Project Details_ dialogue box that opens up, enter the details of
-    your project and then click **CREATE PROJECT**
+-   On the ‘Project details’ dialog box that opens up, enter the relevant
+    information about your project and then click **CREATE PROJECT**
 
 ![Project details](images/overview_of_creating_a_project/project_details.png)
 
@@ -47,14 +48,22 @@ go deeper into the introductory steps you will learn here.
 
 Once the formbuilder opens up, you can start adding your questions.
 
--   **1.** Click the <i class="k-icon k-icon-plus"></i> button below the message
-    that says “This form is empty”.
-    ![Add new question](images/overview_of_creating_a_project/add_new_question.png)
--   **2.** Type in your question text.
--   **3.** Press **ENTER** or click the **ADD QUESTION** button.
-    ![Add question button](images/overview_of_creating_a_project/add_question_button.png)
--   **4.** Finally, select the [question type](question_types.md) from the list
-    (see the example below)
+**1.** Click the <i class="k-icon k-icon-plus"></i> button below the message
+that says “This form is empty”.
+![Add new question](images/overview_of_creating_a_project/add_new_question.png)
+**2.** Type in your question text.
+
+![Add question button](images/overview_of_creating_a_project/add_question_button.png)
+
+**3.** Press **ENTER** or click the **ADD QUESTION** button.
+
+A list of question types will be shown. To learn more about question types,
+[read the linked article](question_types.md).
+
+![Add question button](images/overview_of_creating_a_project/question_types.png)
+
+**4.** Finally, select the [question type](question_types.md) from the list (see
+the example below)
 
 <p class="note">
   <strong>KoboToolbox</strong> has functionality that allows you to define
@@ -67,7 +76,7 @@ Once the formbuilder opens up, you can start adding your questions.
 
 ---
 
-### Try if for yourself
+### Try it for yourself
 
 Let’s add the following questions:
 
@@ -137,11 +146,10 @@ the _Form Preview_ window).
 Once you have finished developing the form, you need to deploy it to start data
 collection.
 
--   **1.** Make sure you have saved all the changes you have made to the form
-    (If there is a **\*** symbol on the **SAVE** button, you have changes that
-    need to be saved before exiting).
--   **2.** Click the <i class="k-icon k-icon-close"></i> close button next to
-    the **SAVE** button at the top.
+**1.** Make sure you have saved all the changes you have made to the form (If
+there is a **\*** symbol on the **SAVE** button, you have changes that need to
+be saved before exiting). **2.** Click the <i class="k-icon k-icon-close"></i>
+close button next to the **SAVE** button at the top.
 
 ![Close form](images/overview_of_creating_a_project/close_form.png)
 
@@ -205,6 +213,8 @@ While you are on the **DATA** tab:
 You can now open your downloaded file.
 
 <p class="note">
+  Note that clicking on the trash icon <i class="k-icon k-icon-trash"></i> will
+  delete the export with its settings, not the original data. <br />
   Learn more about exporting and downloading your data in
   <a class="reference" href="export_download.html">this support article</a>.
 </p>
