@@ -1,4 +1,5 @@
 # Overview of creating and managing projects in KoboToolbox
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7d513b8500d4abf789e0c42c10827738cfba7059/source/overview_of_creating_a_project.md" class="reference">7 Feb 2022</a>
 
 Once you’ve logged in to your KoboToolbox account, you can start building your
 data collection project right away with our easy-to-use formbuilder. This
