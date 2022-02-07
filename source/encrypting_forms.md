@@ -1,4 +1,5 @@
 # Encrypting Forms
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d5cdd698b4a91c3c45216f5a0f91ff7f0704a495/source/encrypting_forms.md" class="reference">19 Jun 2020</a>
 
 _This procedure is quite technical and is intended for users who are comfortable with advanced technical instructions and requires strict attention to detail._ 
 

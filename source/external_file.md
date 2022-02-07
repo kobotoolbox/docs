@@ -1,4 +1,5 @@
 # Select One or Many From External File Question Type
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/external_file.md" class="reference">12 Aug 2021</a>
 
 In some cases, it may be desirable to host a list of choice options in an external file, rather than directly in the project XLSForm. For example, a long list of choices (e.g. hundreds or thousands) could slow down the loading and navigation of the form, or adding new choice options after data collection has begun could sometimes be troublesome.
 

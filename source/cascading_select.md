@@ -1,4 +1,5 @@
 # Adding Cascading Select Questions
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/fa1ee7c796f7116d6ff075ccb9a9a2f23daa0672/source/cascading_select.md" class="reference">10 Jan 2022</a>
 
 Cascading select questions are sets of questions whose options depend on the response to a previous question. For example, your form may first ask the region where a respondent is from, and then in the next question list only the towns and villages of that region.
 
@@ -35,7 +36,7 @@ __survey__
 | ---                 | ---  | ---           | ---                          |
 | select_one states   | Q1   | Which state?  |                              |
 | select_one counties | Q2   | Which county? | state=${Q1}                  |
-| select_ine cities   | Q3   | Which city?   | state=${Q1} and county=${Q2} |
+| select_one cities   | Q3   | Which city?   | state=${Q1} and county=${Q2} |
 
 2. In the same survey sheet, add a column called `choice_filter` and add the XLSForm reference to each of the parent items.
 

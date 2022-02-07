@@ -1,51 +1,54 @@
 # Converting Data into SPSS and/or Stata
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/269d8188f6da141795334a750ac3cae50f3fa759/source/converting_to_spss_and_stata.md" class="reference">11 Jan 2022</a>
 
-**This article helps you convert your data into SPSS and/or Stata. Please note you need IBM SPSS and Stata which are third party apps**
+<p class="note">
+  This article helps you convert your data into <strong>SPSS</strong> and
+  <strong>Stata</strong>. Please note you that need
+  <strong>IBM SPSS</strong> or <strong>Stata</strong> which are third party
+  applications.
+</p>
 
-KoboToolBox does not provide direct conversion on the system for the two systems so this is a workaround on how to get this done.
-
-The first thing to note is that exports best work with CSV output, however it can work with excel outputs but we recommend working with a saved CSV version from the excel.
+Since **KoBoToolbox** does not export data directly in **SPSS** or **Stata**
+format, this article will be a guide for you to make the conversion.
 
 ## Converting to SPSS
 
-1. The first step involves downloading your data as CSV. You can do this from the DATA tab under downloads
+1. Download your data as XLS using the instructions provided in
+   [this support article](export_download.md) or as illustrated in the image
+   below.
 
-    ![image](/images/converting_to_spss_and_stata/data_csv.jpg)
+    ![Export XLS](/images/converting_to_spss_and_stata/export_xls.gif)
 
-2. You will then need to download the value labels for SPSS from the same DATA tab. This will generate a syntax for SPSS (An SPSS equivalent of STATA do files). It will give you a zipped folder which you can unzip to get the syntax.
+2. Download the **SPSS Labels** from the same **DATA** tab as shown in the image
+   below. This process will generate a zipped folder that contains the **SPSS**
+   syntax.
 
-    ![image](/images/converting_to_spss_and_stata/zipped_folder.jpg)
+    ![Export SPSS Labels](/images/converting_to_spss_and_stata/export_spss_labels.gif)
 
-3. You will now need IBM SPSS to import the CSV
+3. You will now need **IBM SPSS** to import the data in XLS using the following
+   method which is compatible with all versions of **SPSS**.
 
-    *You should open the location of the CSV you downloaded*
+    - Within **SPSS**, click **File -> Open -> Data** (as below).
+    - Once you click the **Data** tab, you will see a data box that will appear.
+      In the **Files** of type box, select **Excel**.
+    - Navigate to the folder that contains your **Excel** file, and find the
+      **Excel** file that contains the data you downloaded.
+    - Open the file, and you’ll get the **Read Excel File** dialogue box.
 
-    ![image](/images/converting_to_spss_and_stata/location_csv.jpg)
+    ![Import into SPSS](/images/converting_to_spss_and_stata/import_into_spss.gif)
 
-    ![image](/images/converting_to_spss_and_stata/delimited_csv.jpg)
+4. Now open the syntax you downloaded in _Step 2_ and run the syntax.
 
-    ![image](/images/converting_to_spss_and_stata/all_cases.jpg)
+    ![Run Syntax](/images/converting_to_spss_and_stata/run_syntax.jpg)
 
-    *Ensure you check the boxes Comma and Semicolon*
+You are now ready to manipulate your data in **SPSS**.
 
-    ![image](/images/converting_to_spss_and_stata/comma_semicolon.jpg)
+## Converting the SPSS file into a STATA file
 
-    *When you finish you should have your data without label*
-
-    ![image](/images/converting_to_spss_and_stata/without_label.jpg)
-
-4. Now open the syntax you downloaded on step 2 and run the syntax
-
-    ![image](/images/converting_to_spss_and_stata/run_syntax.jpg)
-
-You are now ready to manipulate your data in SPSS
-
-## Getting STATA file
-
-Unfortunately we do not a direct download on the system for an SPSS DO file. So you need to go through the above process then save the final data as a .dta stata data. 
+Unfortunately we do not have an option to directly download an **SPSS DO** file.
+You need to go through the above process then save the final data as a `.dta`
+**Stata** data.
 
 Ensure you choose to save all the options you need when saving.
 
-![image](/images/converting_to_spss_and_stata/dta_data.jpg)
-
-Wishing you the best with your data management.
+![dta data](/images/converting_to_spss_and_stata/dta_data.jpg)

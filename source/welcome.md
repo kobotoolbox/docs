@@ -1,4 +1,5 @@
 # Welcome to KoBoToolbox
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cdd867e3c5466d18c5635dffa16cdf2ec894f933/source/welcome.md" class="reference">19 Jul 2020</a>
 
 ## What is KoBoToolbox?
 

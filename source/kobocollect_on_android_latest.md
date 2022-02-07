@@ -1,4 +1,5 @@
 # Data Collection on KoBoCollect App (Latest Version)
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/kobocollect_on_android_latest.md" class="reference">2 Dec 2021</a>
 
 <p class='note'>The latest version of the KoBoCollect App refers to v2021.2.4 and above.</p>
 

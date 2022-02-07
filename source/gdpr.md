@@ -1,4 +1,5 @@
 # General Data Protection Regulation (GDPR)
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5c33bf8fbd4550f031cd19567502861063b1d88b/source/gdpr.md" class="reference">19 Jan 2022</a>
 
 ## What is GDPR?
 
@@ -16,4 +17,4 @@ Our team will never access your data unless you have given us explicit access to
 
 ## Requesting to be Forgotten
 
-If you would like us to delete all of your project data, including your KoboToolbox account, please contact the Support Team and mention 'GDPR Request to be Forgotten.'
+If you would like us to delete all of your project data, including your KoBoToolbox account, please contact the Support Team and mention 'GDPR Request to be Forgotten.'

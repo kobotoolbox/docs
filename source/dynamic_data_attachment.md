@@ -1,4 +1,5 @@
 # Dynamic Data Attachments
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1d7f77a9494f8bbbc0728a28c2e7af03c98f3f7b/source/dynamic_data_attachment.md" class="reference">5 Aug 2021</a>
 
 This support article illustrates how data from one project can be linked dynamically and referenced by other projects. It also aims to demonstrate some practical examples that this feature supports.
 

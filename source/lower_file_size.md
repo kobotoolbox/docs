@@ -1,4 +1,5 @@
 # Lowering the File Size of Collected Media
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/50c84a0d9c03efca0d5b4e305ab68c6a10785669/source/lower_file_size.md" class="reference">2 Aug 2020</a>
 
 When your form collects more than one image or you are collecting tens of thousands of records, you could face difficulties generating the Media Attachments ZIP if you do not adjust the image quality settings before starting data collection.
 

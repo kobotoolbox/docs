@@ -1,4 +1,5 @@
 # Row-Level Permissions
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/70faa26344a634e058fe0471e67d42fa6407a0b0/source/row_level_permissions.md" class="reference">20 Aug 2021</a>
 
 The __row-level__ permissions are an extension of the [existing permissions](managing_permissions.md) features and allow project owners to create four different levels of permissions for a shared project. To find this functionality, simply go to project __SETTINGS__ and click on the __Sharing__ section. You will see a screen as shown below.
 

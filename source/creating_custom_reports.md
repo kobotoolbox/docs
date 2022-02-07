@@ -1,4 +1,5 @@
 # Viewing and Creating Custom Reports
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/878a31bf652a81e467086dc7f6cb471bce92ec82/source/creating_custom_reports.md" class="reference">8 Jul 2020</a>
 
 #### Learn how to navigate and manage the data in the Reports page.
 

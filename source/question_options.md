@@ -1,4 +1,5 @@
 # Using the Question Options
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e341c15a1e4d5391551a195acd36ecec7124062d/source/question_options.md" class="reference">25 Jul 2020</a>
 
 The Question Options screen contains some very useful features to get the most out of your form. You can click Setting to access the Question Options screen.
 

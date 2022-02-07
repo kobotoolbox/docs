@@ -1,4 +1,5 @@
 # Resetting Passwords
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7590fa2ddca50cffc82051199410ccce4b3a130e/source/reset_password.md" class="reference">10 Jun 2020</a>
 
 **Last updated:**
 <a href="https://github.com/kobotoolbox/docs/blob/7590fa2ddca50cffc82051199410ccce4b3a130e/source/reset_password.md" class="reference">10
