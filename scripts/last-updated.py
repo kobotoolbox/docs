@@ -50,6 +50,13 @@ def update_file(path):
     with open(path, 'r') as f:
         fs = f.readlines()
 
+    # if `prettier` has been used, just remove the three lines
+    if 'Last updated' in fs[2]:
+        # if the link is up-to-date, carry on
+        if link in fs[3]:
+            return
+        fs = [fs[0]] + fs[5:]
+
     if 'Last updated' in fs[1]:
         if fs[1] == text:
             return
