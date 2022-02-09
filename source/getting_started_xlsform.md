@@ -17,7 +17,7 @@ When building forms for KoboToolbox, there are 2 main methods you can use. One i
 
 XLSForm is a standard for creating forms in Microsoft Excel. XLSForm makes it easy to create anywhere from basic to advanced forms in a user-friendly format.
 
-When creating forms using the KoboToolbox online formbuilder, the platform automatically creates an XLSForm version for you that can be easily downloaded. Since there are a number of XLSForm functionalities[f][g] that are not yet supported by the formbuilder or might be easier if done in XLSForm directly, the knowledge of XLSForm can be useful and important.
+When creating forms using the KoboToolbox online formbuilder, the platform automatically creates an XLSForm version for you that can be easily downloaded. Since there are a number of XLSForm functionalities that are not yet supported by the formbuilder or might be easier if done in XLSForm directly, the knowledge of XLSForm can be useful and important.
 
 ## What is XLSForm
 
