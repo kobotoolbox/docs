@@ -1,5 +1,4 @@
 # Overview of All Formbuilder Functions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/12c7ebac9ed9a7ad99a88db2598ca7d3e1432948/source/formbuilder.md" class="reference">6 Aug 2021</a>
 
 ## Adding a Question
 
@@ -7,8 +6,15 @@ Questions in your form can be added at any point by clicking on the '+' button t
 
 ![image](/images/formbuilder/add_questions.gif)
 
-<p class="note">Please note that <strong>changing</strong> the question type is currently not supported and may result in unexpected results. If the form has already been deployed, use a question with a different XML name, even if the label remains the same<p/>
+<p class="note">Please note that <strong>changing</strong> the question type is currently not supported and may result in unexpected results. If the form ha2s already been deployed, use a question with a different XML name, even if the label remains the same.<p/>
 
+## Adding a question hint
+A question hint is text that is shown below the question text on the form. You can use it to provide extra instruction on how to answer the question.
+
+To add a question hint, just click __Question hint__ below the question text and type it. 
+
+![image](/images/formbuilder/hint.gif)
+  
 ## Deleting a Question
 
 You can remove a question at any point by clicking on the red trash can. You'll be asked to confirm before it is permanently deleted from your form.
@@ -27,9 +33,14 @@ To access advanced features for each question click on the Settings cog in the t
 
 ![image](/images/formbuilder/change_settings.gif)
 
+## Duplicating a Question
+
+You can duplicate a question at any point by clicking on ‘Duplicate Question’. An exact copy of the question will appear just below the question which you have duplicated.
+
+![image](/images/formbuilder/duplicate_question.gif)
+
 ## Adding Questions to the Library
 
-In order to reuse a question in future forms, you can click on 'Add Question to Library'. It will be saved in your Question Library as a copy, meaning that you can make further changes to the original question in the form or even delete it, without affecting the copy that has been placed in the library. 
+In order to reuse a question in future forms, you can click on 'Add Question to Library'. It will be saved in your Question Library as a copy, meaning that you can make further changes to the original question in the form or even delete it, without affecting the copy that has been placed in the library.
 
 ![image](/images/formbuilder/library.gif)
-
