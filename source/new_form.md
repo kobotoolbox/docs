@@ -1,8 +1,5 @@
 # Creating a New Form
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/be2aedd2b4a503cff5cf59a84b626c113f7704f8/source/new_form.md" class="reference">17
-Aug 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/new_form.md" class="reference">15 Feb 2022</a>
 
 You can **create a new form** in four different ways. When you click on the New
 button, your options are:

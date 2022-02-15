@@ -1,8 +1,5 @@
 # HIPAA Compliance
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/e37d5511692edbf8a7de033d77d39269a4674dfd/source/hipaa_compliance.md" class="reference">18
-Jun 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/hipaa_compliance.md" class="reference">15 Feb 2022</a>
 
 The [public KoboToolbox servers](server.md) were not designed with the specific
 requirements of HIPAA in mind and, as such, carry no guarantee of HIPAA

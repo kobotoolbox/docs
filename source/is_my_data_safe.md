@@ -1,8 +1,5 @@
 # Is My Data Safe on Your Server?
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/is_my_data_safe.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/is_my_data_safe.md" class="reference">15 Feb 2022</a>
 
 Most users use one of the two server instances that we support:
 [KoboToolbox by OCHA](https://kobo.humanitarianresponse.info/accounts/login/?next=/#/)

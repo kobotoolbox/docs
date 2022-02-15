@@ -1,8 +1,5 @@
 # Using the API
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/0c2e229627b705ddf35be484eaddc787b1ffa0b0/source/api.md" class="reference">25
-Feb 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/api.md" class="reference">15 Feb 2022</a>
 
 KoboToolbox has a number of advanced features built in based on our open source
 libraries, which include useful add-ons for advanced use cases. There are many

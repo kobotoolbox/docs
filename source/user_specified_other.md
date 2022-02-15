@@ -1,8 +1,5 @@
 # User-Specified "Other" Responses for Multiple-Choice Questions
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/0dc2b1c2abdbd9df3155210e554f35dc6d1be2ed/source/user_specified_other.md" class="reference">14
-Jun 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/user_specified_other.md" class="reference">15 Feb 2022</a>
 
 Creating user-specified "Other" responses for multiple choice questions in one
 step is a feature that is currently on KoboToolbox's development roadmap. In the

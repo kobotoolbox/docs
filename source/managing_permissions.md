@@ -1,8 +1,5 @@
 # Managing Permissions
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/6118e708825bfe8b4bf221249625b08a233c0342/source/managing_permissions.md" class="reference">26
-Jul 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/managing_permissions.md" class="reference">15 Feb 2022</a>
 
 **Learn how to grant various permissions for other users to collaborate on your
 projects**

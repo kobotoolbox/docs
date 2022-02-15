@@ -1,8 +1,5 @@
 # KoboToolbox Training Materials in Arabic
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/b9d2b12ee5a5a1ce2da780c13f8154c29bd83f72/source/training_arabic.md" class="reference">19
-Jul 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/training_arabic.md" class="reference">15 Feb 2022</a>
 
 _These materials have been generously contributed by Bilal Barakat_
 

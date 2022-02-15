@@ -1,8 +1,5 @@
 # KoboToolbox Training Materials in French
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/04e29388f468b76848f4f1a2a63d400edb2d8685/source/training_french.md" class="reference">6
-Jul 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/training_french.md" class="reference">15 Feb 2022</a>
 
 Ces documents ont été élaborés originalement par le programme GEMS de la Banque
 mondiale.

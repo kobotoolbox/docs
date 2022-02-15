@@ -1,8 +1,5 @@
 # Troubleshooting Enketo Web Forms
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/e2995378ff58eb4a239119fa45490cccd0bd9c27/source/troubleshooting_webforms.md" class="reference">26
-Feb 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/troubleshooting_webforms.md" class="reference">15 Feb 2022</a>
 
 [Enketo web forms](enketo.md) work on all devices since they open in regular web
 browsers and allow data collection online or offline. Generally we strongly

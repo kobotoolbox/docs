@@ -1,8 +1,5 @@
 # Editing Forms in Excel using XLSForm
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/5b752ff824370800284fa3a89f77a1c15234a223/source/edit_forms_excel.md" class="reference">22
-Jun 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/edit_forms_excel.md" class="reference">15 Feb 2022</a>
 
 KoboToolbox is building its forms using a widely shared standard called
 [XLSForm](http://xlsform.org/en/). XLSForm makes it possible to create very

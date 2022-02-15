@@ -1,8 +1,5 @@
 # Video Question Type
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/be4dbc17706d535fe328b67a126df47f57bf573b/source/video_question_type.md" class="reference">25
-Jul 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/video_question_type.md" class="reference">15 Feb 2022</a>
 
 The question type "video" prompts a user to record a video as an answer to a
 question (e.g. "Please record a video of the head of household saying his full

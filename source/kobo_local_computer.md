@@ -1,8 +1,5 @@
 # Installing KoboToolbox on a Local Computer
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/414cd7c0b1c98c3a12358a22ed9bf5475f15eaa0/source/kobo_local_computer.md" class="reference">26
-Jul 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobo_local_computer.md" class="reference">15 Feb 2022</a>
 
 The best way to use KoboToolbox is on one of the two free public instances -
 [kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info/) (if

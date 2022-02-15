@@ -1,8 +1,5 @@
 # Pulling Data Into PowerBI
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/fa795c837113831e27d30295deb0ddbc83647144/source/pulling_data_into_powerbi.md" class="reference">26
-Jul 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/pulling_data_into_powerbi.md" class="reference">15 Feb 2022</a>
 
 ## KoboToolbox
 

@@ -1,8 +1,5 @@
 # Mapping, Sharing, and Exporting GPS Data
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/253077adabad239de4bebeae86f821099db28217/source/export_gps.md" class="reference">26
-Jul 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/export_gps.md" class="reference">15 Feb 2022</a>
 
 Your project may include a one or more GPS questions in its form. KoboToolbox
 will include the GPS data (latitude, longitude, altitude, precision) in the

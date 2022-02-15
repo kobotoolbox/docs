@@ -1,8 +1,5 @@
 # Excel Analyzer User Guide
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/af5515f7d0665fab0a76642aaae7901b2a1aeecf/source/excel_analyzer_guide.md" class="reference">28
-May 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/excel_analyzer_guide.md" class="reference">15 Feb 2022</a>
 
 The Excel Data Analyzer was developed by the United Nations Office for the
 Coordination of Humanitarian Affairs (UNOCHA) in August of 2014. It can be used

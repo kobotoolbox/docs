@@ -1,8 +1,5 @@
 # The KoboToolbox Interface
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/ad22011b20ffadb7a533b0c970cf516ded438e57/source/kobotoolbox_interface.md" class="reference">11
-Jan 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobotoolbox_interface.md" class="reference">15 Feb 2022</a>
 
 This article will walk you through the **KoboToolbox** interface, helping you
 get familiar with the different elements.

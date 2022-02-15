@@ -1,8 +1,5 @@
 # Creating an account on KoboToolbox
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/creating_account.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/creating_account.md" class="reference">15 Feb 2022</a>
 
 The first step for all users when getting started with **KoboToolbox** is to
 create an account. This article will guide you through the steps on creating and
