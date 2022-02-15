@@ -1,8 +1,5 @@
 # Data Storage
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/a3a760fe8ceadb5b7a8bdf5f30f40776c941b857/source/data_storage.md" class="reference">6
-Jul 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/data_storage.md" class="reference">15 Feb 2022</a>
 
 Whether you're using the humanitarian server supported by
 [UNOCHA](https://kobo.humanitarianresponse.info/accounts/login/?next=/#/) or the
