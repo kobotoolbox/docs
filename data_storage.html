@@ -102,11 +102,23 @@
           
   <section id="data-storage">
 <h1>Data Storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/a3a760fe8ceadb5b7a8bdf5f30f40776c941b857/source/data_storage.md" class="reference">6 Jul 2020</a></p>
-<p>Whether you’re using the humanitarian server supported by <a class="reference external" href="https://kobo.humanitarianresponse.info/accounts/login/?next=/#/">UNOCHA</a> or the non-humanitarian server supported by <a class="reference external" href="https://kf.kobotoolbox.org/accounts/login/?next=/#/">KoBoToolbox</a>, the data from both servers is stored on Amazon Web Services (AWS) servers.</p>
-<p>There are 2 kinds of data stored on AWS, the form itself and the attachments related to each submission. The data of the form is saved into the Database (DB) and the attachments are saved into Simple Storage Service (S3). The stored data in the Database is never deleted unless you delete the data yourself. The collected data on S3 is also never deleted, unless you delete it yourself or you end up using more space then you’re allowed according to the <a class="reference internal" href="server.html"><span class="doc">OCHA/HHI policies</span></a>.</p>
-<p>You can keep up to 10 data exports at a time per project. If you create an 11th export, the oldest one is deleted and only the 10 most recent exports are kept.</p>
-<p>For more information on KoBo data security measures, please refer to this other <a class="reference internal" href="is_my_data_safe.html"><span class="doc">help article</span></a>.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/data_storage.md" class="reference">15 Feb 2022</a></p>
+<p>Whether you’re using the humanitarian server supported by
+<a class="reference external" href="https://kobo.humanitarianresponse.info/accounts/login/?next=/#/">UNOCHA</a> or the
+non-humanitarian server supported by
+<a class="reference external" href="https://kf.kobotoolbox.org/accounts/login/?next=/#/">Kobo, Inc.</a>, the data from
+both servers is stored on Amazon Web Services (AWS) servers.</p>
+<p>There are 2 kinds of data stored on AWS, the form itself and the attachments
+related to each submission. The data of the form is saved into the Database (DB)
+and the attachments are saved into Simple Storage Service (S3). The stored data
+in the Database is never deleted unless you delete the data yourself. The
+collected data on S3 is also never deleted, unless you delete it yourself or you
+end up using more space then you’re allowed according to the
+<a class="reference internal" href="server.html"><span class="doc">OCHA/Kobo policies</span></a>.</p>
+<p>You can keep up to 10 data exports at a time per project. If you create an 11th
+export, the oldest one is deleted and only the 10 most recent exports are kept.</p>
+<p>For more information on KoboToolbox data security measures, please refer to this
+other <a class="reference internal" href="is_my_data_safe.html"><span class="doc">help article</span></a>.</p>
 </section>
 
 
