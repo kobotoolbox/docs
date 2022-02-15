@@ -1,5 +1,8 @@
 # Creating an account on KoBoToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/449cf749e5549acaedf4b9ecf586eeb82032d4c6/source/creating_account.md" class="reference">10 Jan 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/449cf749e5549acaedf4b9ecf586eeb82032d4c6/source/creating_account.md" class="reference">10
+Jan 2022</a>
 
 The first step for all users when getting started with **KoBoToolbox** is to
 create an account. This article will guide you through the steps on creating and
@@ -33,7 +36,7 @@ There are two main ways of accessing **KoBoToolbox**:
 ![KoBoToolbox servers](images/creating_account/servers.png)
 
 If you are an individual researcher, aid worker, or a for-profit organization,
-it is recommended to use the server provided by **KoBoToolbox** (_HHI server_).
+it is recommended to use the server provided by **KoBoToolbox** (_Kobo server_).
 
 If you are creating an account for a humanitarian organization, it is
 recommended that you use the server provided by **UN OCHA** (_OCHA server_).
@@ -69,4 +72,4 @@ _username_ and _password_:
 | Server      | URL                                                                                                   |
 | ----------- | ----------------------------------------------------------------------------------------------------- |
 | OCHA server | <a href="https://kobo.humanitarianresponse.info" class="reference">kobo.humanitarianresponse.info</a> |
-| HHI server  | <a href="https://kf.kobotoolbox.org" class="reference">kf.kobotoolbox.org</a>                         |
+| Kobo server | <a href="https://kf.kobotoolbox.org" class="reference">kf.kobotoolbox.org</a>                         |
