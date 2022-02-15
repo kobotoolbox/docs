@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Adding Cascading Select Questions &#8212; KoBoToolbox  documentation</title>
+    <title>Adding Cascading Select Questions &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -36,7 +36,7 @@
   </head><body>
 <header role="banner" class="main-header" id="main-header">
   <h1 class="main-header__logo">
-    <a href="https://kobotoolbox.org/#home">KoBoToolbox</a>
+    <a href="https://kobotoolbox.org/#home">KoboToolbox</a>
   </h1>
   <nav class="main-header__navigation" role="navigation">
     <ul>
@@ -102,19 +102,29 @@
           
   <section id="adding-cascading-select-questions">
 <h1>Adding Cascading Select Questions<a class="headerlink" href="#adding-cascading-select-questions" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/fa1ee7c796f7116d6ff075ccb9a9a2f23daa0672/source/cascading_select.md" class="reference">10 Jan 2022</a></p>
-<p>Cascading select questions are sets of questions whose options depend on the response to a previous question. For example, your form may first ask the region where a respondent is from, and then in the next question list only the towns and villages of that region.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/cascading_select.md" class="reference">15 Feb 2022</a></p>
+<p>Cascading select questions are sets of questions whose options depend on the
+response to a previous question. For example, your form may first ask the region
+where a respondent is from, and then in the next question list only the towns
+and villages of that region.</p>
 <p class="note">Adding sets of cascading select questions to your form can be done by importing them to a draft form in the formbuilder or adding them manually to an XLS Form and then uploading that file.</p><section id="importing-cascading-question-sets-in-the-formbuilder">
 <h2>Importing cascading question sets in the formbuilder<a class="headerlink" href="#importing-cascading-question-sets-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
 <ol>
-<li><p>Open Excel or another spreadsheet program and <a class="reference external" href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit#gid=0">follow this template as an example</a> to create your template of questions and responses to be added.</p>
+<li><p>Open Excel or another spreadsheet program and
+<a class="reference external" href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit#gid=0">follow this template as an example</a>
+to create your template of questions and responses to be added.</p>
 <p><img alt="image" src="_images/template.png" /></p>
 </li>
-<li><p>Select and copy the whole cascading table template, then paste it into the Import Cascade, then click Done to import it. (If there were any mistakes in the formatting you will not be able to import the set - correct any formatting mistakes and make sure you followed the template instructions.)</p>
+<li><p>Select and copy the whole cascading table template, then paste it into the
+Import Cascade, then click Done to import it. (If there were any mistakes in
+the formatting you will not be able to import the set - correct any
+formatting mistakes and make sure you followed the template instructions.)</p>
 <p><img alt="image" src="_images/import.gif" /></p>
 </li>
-<li><p>You can move the imported questions anywhere in your form and change the labels of both the question and responses and delete responses.</p></li>
-<li><p>If you want to add additional responses to the cascading list just delete the imported questions and import a new list from your spreadsheet.</p></li>
+<li><p>You can move the imported questions anywhere in your form and change the
+labels of both the question and responses and delete responses.</p></li>
+<li><p>If you want to add additional responses to the cascading list just delete the
+imported questions and import a new list from your spreadsheet.</p></li>
 <li><p>You can preview the form to test the cascading questions.</p>
 <p><img alt="image" src="_images/form_preview.gif" /></p>
 </li>
@@ -122,9 +132,12 @@
 </section>
 <section id="adding-cascading-question-sets-in-xlsform-option-1">
 <h2>Adding cascading question sets in XLSForm (Option 1)<a class="headerlink" href="#adding-cascading-question-sets-in-xlsform-option-1" title="Permalink to this headline">¶</a></h2>
-<p>(If you have an existing form, download it as XLS to your computer and open it in Excel or another spreadsheet program).</p>
+<p>(If you have an existing form, download it as XLS to your computer and open it
+in Excel or another spreadsheet program).</p>
 <ol class="simple">
-<li><p>In the survey sheet, add new lines for the questions you’d like to add, following <a class="reference external" href="https://docs.google.com/spreadsheets/d/10gpBV6YaYGx1i367hyW-w1Ms9tkUQnCx0V8YsdwYxmk/edit#gid=0">this template</a>.</p></li>
+<li><p>In the survey sheet, add new lines for the questions you’d like to add,
+following
+<a class="reference external" href="https://docs.google.com/spreadsheets/d/10gpBV6YaYGx1i367hyW-w1Ms9tkUQnCx0V8YsdwYxmk/edit#gid=0">this template</a>.</p></li>
 </ol>
 <p><strong>survey</strong></p>
 <table border="1" class="docutils">
@@ -157,8 +170,11 @@
 </tr>
 </tbody>
 </table><ol class="simple">
-<li><p>In the same survey sheet, add a column called <code class="docutils literal notranslate"><span class="pre">choice_filter</span></code> and add the XLSForm reference to each of the parent items.</p></li>
-<li><p>In the choices sheet of the file, add all the options you would like to appear in the different questions, e.g. the lists of states, counties, and cities (follow the above template).</p></li>
+<li><p>In the same survey sheet, add a column called <code class="docutils literal notranslate"><span class="pre">choice_filter</span></code> and add the
+XLSForm reference to each of the parent items.</p></li>
+<li><p>In the choices sheet of the file, add all the options you would like to
+appear in the different questions, e.g. the lists of states, counties, and
+cities (follow the above template).</p></li>
 </ol>
 <p><strong>choices</strong></p>
 <table border="1" class="docutils">
@@ -272,13 +288,19 @@
 </tr>
 </tbody>
 </table><ol class="simple">
-<li><p>Note that for each of the child elements you need to add a column to specify its parent. For example, King and Pierce counties are in Washington state, so you need to write ‘washington’ into the ‘state’ column for these two counties.</p></li>
-<li><p>Save your form. In KoBoToolbox open the main menu and click on Projects. From here you can upload and deploy your form directly, including the newly added cascading select questions.</p></li>
+<li><p>Note that for each of the child elements you need to add a column to specify
+its parent. For example, King and Pierce counties are in Washington state, so
+you need to write ‘washington’ into the ‘state’ column for these two
+counties.</p></li>
+<li><p>Save your form. In KoboToolbox open the main menu and click on Projects. From
+here you can upload and deploy your form directly, including the newly added
+cascading select questions.</p></li>
 </ol>
 </section>
 <section id="adding-cascading-question-sets-in-xlsform-option-2">
 <h2>Adding cascading question sets in XLSForm (Option 2)<a class="headerlink" href="#adding-cascading-question-sets-in-xlsform-option-2" title="Permalink to this headline">¶</a></h2>
-<p>Sometimes a researcher wishes to limit the choices of one question based on the responses from a previous question. For this one could do the following:</p>
+<p>Sometimes a researcher wishes to limit the choices of one question based on the
+responses from a previous question. For this one could do the following:</p>
 <p><strong>survey</strong></p>
 <table border="1" class="docutils">
 <thead>
@@ -366,7 +388,8 @@
 </tbody>
 </table><p>Preview the data collecting form in Enketo:</p>
 <p><img alt="image" src="_images/preview.png" /></p>
-<p>As seen above, you will be able to restrict the choices in the second question based on the choices you entered in the first question.</p>
+<p>As seen above, you will be able to restrict the choices in the second question
+based on the choices you entered in the first question.</p>
 </section>
 </section>
 
@@ -396,9 +419,9 @@
 <div class="sidebar_tocs">
   <p><span class="caption-text">Getting Started</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoBoToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoBoToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">The KoBoToolbox Interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Welcome to KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">The KoboToolbox Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="overview_of_creating_a_project.html">Overview of creating and managing projects in KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
@@ -406,8 +429,8 @@
 <li class="toctree-l1"><a class="reference internal" href="activation_link.html">Didn’t Receive Activation Link After Signing Up</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoBoToolbox Training Materials in Arabic</a></li>
-<li class="toctree-l1"><a class="reference internal" href="training_french.html">KoBoToolbox Training Materials in French</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoboToolbox Training Materials in Arabic</a></li>
+<li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 </ul>
 <p><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
@@ -439,7 +462,7 @@
 <li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="p_codes.html">Including P-Codes in the Output Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Creating Unique Serial Numbers in Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data Functionality in KoBoToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data Functionality in KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Signature Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language in the Project Dashboard</a></li>
@@ -462,11 +485,11 @@
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Data Collection on KoBoCollect App (Latest Version)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Data Collection on KoBoCollect App (Older Version)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Data Collection on KoboCollect App (Latest Version)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Data Collection on KoboCollect App (Older Version)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoBoCollect Android Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
@@ -500,11 +523,11 @@
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoBoToolbox on Your Computer or Server</span></p>
+<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoBoToolbox on a Local Computer</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobo_your_servers.html">Installing KoBoToolbox on Your Own Servers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobo_your_servers.html">Installing KoboToolbox on Your Own Servers</a></li>
 </ul>
 
 </div>
@@ -534,7 +557,7 @@
   
 
   <div class="footer">
-    <p>KoBoToolbox is maintained by <a class="inline" href="https://kobotoolbox.org/kobo">Kobo Inc.</a></p>
+    <p>KoboToolbox is maintained by <a class="inline" href="https://kobotoolbox.org/kobo">Kobo Inc.</a></p>
     <p>
         <a href="https://kobotoolbox.org/terms">Terms of Service</a>
         <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
@@ -563,7 +586,7 @@
       currentTitle: "Adding Cascading Select Questions",
       currentUrl: ("index.html").replace("index.html", "cascading_select.html"),
       rootUrl: "./",
-      sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoBoToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
+      sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>
   </body>
