@@ -1,11 +1,11 @@
 # Is My Data Safe on Your Server?
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/is_my_data_safe.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/is_my_data_safe.md" class="reference">15 Feb 2022</a>
 
 Most users use one of the two server instances that we support:
-[KoBoToolbox by OCHA](https://kobo.humanitarianresponse.info/accounts/login/?next=/#/)
+[KoboToolbox by OCHA](https://kobo.humanitarianresponse.info/accounts/login/?next=/#/)
 (for humanitarian workers) and
-[KoBoToolbox by Kobo](https://kf.kobotoolbox.org/accounts/login/?next=/#/) (for
-everyone else). KoBoToolbox can also be installed on local computers or your own
+[KoboToolbox by Kobo](https://kf.kobotoolbox.org/accounts/login/?next=/#/) (for
+everyone else). KoboToolbox can also be installed on local computers or your own
 web servers. This article is about the security of your data on one of the two
 supported servers hosted by [Kobo, Inc.](https://www.kobotoolbox.org/kobo) and
 OCHA.
@@ -36,9 +36,9 @@ and
 only the server administrator has technical access to the database, and we will
 never access your data unless you have given us explicit access to it. However,
 to have complete control and ownership of your data, you are also free to
-install an instance of KoBoToolbox on your own server.
+install an instance of KoboToolbox on your own server.
 
-All user passwords are only stored fully encrypted on the KoBoToolbox server,
+All user passwords are only stored fully encrypted on the KoboToolbox server,
 using the default open source framework provided by Django, which we use for our
 backend. Django uses the
 [PBKDF2 algorithm](https://en.wikipedia.org/wiki/PBKDF2) with a
