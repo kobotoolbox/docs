@@ -1,17 +1,28 @@
 # REST Services
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/130e64d4d43bd267d7c1a43d870c8a23bbde72c4/source/rest_services.md" class="reference">4 Jun 2020</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/130e64d4d43bd267d7c1a43d870c8a23bbde72c4/source/rest_services.md" class="reference">4
+Jun 2020</a>
 
 **How to link your data to other servers or services using REST Serivces**
 
-KoboToolbox has a number of advanced features built in based on our open source libraries, which include useful add-ons for advanced use cases. 
+KoboToolbox has a number of advanced features built in based on our open source
+libraries, which include useful add-ons for advanced use cases.
 
-You can link your data collected with KoboToolbox to other servers or services you might own through REST Services. REST Services supports JSON or XML formats, and basic authentication. Moreover it’s possible to send only a subset of fields. 
+You can link your data collected with KoboToolbox to other servers or services
+you might own through REST Services. REST Services supports JSON or XML formats,
+and basic authentication. Moreover it’s possible to send only a subset of
+fields.
 
-In case of a failure, the background task will retry 3 times to send the data (first time after 60 seconds, second time after 600 seconds, and third time after 6,000 seconds). Email notifications can be enabled to receive a failure report. 
+In case of a failure, the background task will retry 3 times to send the data
+(first time after 60 seconds, second time after 600 seconds, and third time
+after 6,000 seconds). Email notifications can be enabled to receive a failure
+report.
 
-Note that your data is sent to the external server only on creation. Nothing is sent when data is edited.
+Note that your data is sent to the external server only on creation. Nothing is
+sent when data is edited.
 
-Here are some tutorial videos for using REST Services: 
+Here are some tutorial videos for using REST Services:
 
 1. Creation
 
@@ -24,7 +35,6 @@ Here are some tutorial videos for using REST Services:
 3. Failure/Retry
 
     [![Failure / Retry](/images/rest_services/thumbnail_3.jpg)](https://fast.wistia.net/embed/iframe/7my5eab5lm "Failure / Retry")
-
 
 4. Custom Wrapper (Only available with JSON format)
 

@@ -1,16 +1,27 @@
 # Overview on Data Collection Tools
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/34ebfb40653508b63d5ac86f2127e05ac970bdbc/source/data-collection-tools.md" class="reference">12 Aug 2021</a>
 
-KoboToolbox allows data collection in multiple ways. Because KoboToolbox is built on the [Xform/ODK standards](https://xlsform.org), our forms are compatible with [a number of different tools](https://xlsform.org/en/#tools-that-support-xlsforms) that can be used for data collection.
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/34ebfb40653508b63d5ac86f2127e05ac970bdbc/source/data-collection-tools.md" class="reference">12
+Aug 2021</a>
 
-For Android devices, we recommend using [Collect Andoid app](https://play.google.com/store/apps/details?id=org.koboc.collect.android&hl=en_US) app, which can be downloaded from the Google Play Store and installed on any standard Android phone or tablet.
+KoboToolbox allows data collection in multiple ways. Because KoboToolbox is
+built on the [Xform/ODK standards](https://xlsform.org), our forms are
+compatible with
+[a number of different tools](https://xlsform.org/en/#tools-that-support-xlsforms)
+that can be used for data collection.
 
-For any other devices (including iPhones, iPads, or any laptop or computer), we recommend using the webform [for collecting data](data_through_webforms.md).
+For Android devices, we recommend using
+[Collect Andoid app](https://play.google.com/store/apps/details?id=org.koboc.collect.android&hl=en_US)
+app, which can be downloaded from the Google Play Store and installed on any
+standard Android phone or tablet.
+
+For any other devices (including iPhones, iPads, or any laptop or computer), we
+recommend using the webform [for collecting data](data_through_webforms.md).
 
 ## A quick rundown on the differences between the two options
 
 | &nbsp;                                                                         | Webforms                                    | KoboCollect                                            |
-| ---                                                                            | ---                                         | ---                                                    |
+| ------------------------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------------------ |
 | Devices                                                                        | Any mobile device or computer               | Android only                                           |
 | Runs in...                                                                     | Browser                                     | Native Android application                             |
 | Configurable                                                                   | Server-wide                                 | On each device                                         |
@@ -34,15 +45,19 @@ For any other devices (including iPhones, iPads, or any laptop or computer), we 
 
 ### Collecting data using KoboCollect
 
-After deploying a project, you can go to **Form - Collect data**, and then select the Android application.
+After deploying a project, you can go to **Form - Collect data**, and then
+select the Android application.
 
 ![image](/images/data_collection_tool/KoboCollect.gif)
 
-For details on how to set up KoboCollect on any Android devices, [read this article](kobocollect-android.md).
+For details on how to set up KoboCollect on any Android devices,
+[read this article](kobocollect-android.md).
 
 ### Collecting Data using the Enketo Webform
 
-To [use the webform](data_through_webforms.md), after deploying a project, you can go to **Form - Collect data**, multiple options (online or offline, single or multiple submissions) are available. The default option is **Online-Offline (multiple submission)**.
+To [use the webform](data_through_webforms.md), after deploying a project, you
+can go to **Form - Collect data**, multiple options (online or offline, single
+or multiple submissions) are available. The default option is **Online-Offline
+(multiple submission)**.
 
 ![image](/images/data_collection_tool/Webform.gif)
-

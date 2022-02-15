@@ -1,5 +1,8 @@
 # Adding Various Types of Media (image, audio, video) to a Form
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/media.md" class="reference">2 Dec 2021</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/media.md" class="reference">2
+Dec 2021</a>
 
 In addition to text questions and text choices, you can also add various types
 of media (such as _image_, _audio_, and _video_) to your forms. Having media in
@@ -21,10 +24,10 @@ survey project.
 
 ## Step 1: Download Form as XLSForm
 
-Create a survey project in the formbuilder UI and then download your form as
-XLS to add media settings to it. The formbuilder currently does not support
-adding media to the form directly so you will need to edit the downloaded
-XLSForm to complete this action.
+Create a survey project in the formbuilder UI and then download your form as XLS
+to add media settings to it. The formbuilder currently does not support adding
+media to the form directly so you will need to edit the downloaded XLSForm to
+complete this action.
 
 <video controls><source src="./_static/files/media/download_xlsform.mp4" type="video/mp4"></video>
 
