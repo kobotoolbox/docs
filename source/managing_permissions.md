@@ -3,11 +3,11 @@
 
 **Learn how to grant various permissions for other users to collaborate on your projects**
 
-KoBoToolbox allows giving different permission levels to a data collection project. While most users may only use a single user to manage, access, and enter data for a given project, sometimes more complex scenarios require different levels of access.
+KoboToolbox allows giving different permission levels to a data collection project. While most users may only use a single user to manage, access, and enter data for a given project, sometimes more complex scenarios require different levels of access.
 
 ## Requiring passwords for accessing forms
 
-By default KoBoToolbox only requires a username and password for accessing data and managing your projects. Forms can be accessed by anyone who knows the respective URL. To require users to log in to access your forms, go to Settings inside your online account and check the '**Require authentication to see forms and submit data**' box. (*Note: currently requiring authentication can only be set globally for all the projects in your account and not just for individual projects.*)
+By default KoboToolbox only requires a username and password for accessing data and managing your projects. Forms can be accessed by anyone who knows the respective URL. To require users to log in to access your forms, go to Settings inside your online account and check the '**Require authentication to see forms and submit data**' box. (*Note: currently requiring authentication can only be set globally for all the projects in your account and not just for individual projects.*)
 
 
 ![image](/images/managing_permissions/account_settings.jpg)
@@ -43,7 +43,7 @@ You might want to use one or more users other than your own account to collect d
 * Open the Settings page, and under ADD USER type in 'username2', then select 'Add Submissions' and click GRANT PERMISSIONS.
 * Repeat the last step for each user.
 
-### In KoBoCollect:
+### In KoboCollect:
 
 * Under General Settings in the URL field enter [https://kc.kobotoolbox.org](https://kc.kobotoolbox.org) or [https://kc.humanitarianresponse.info](https://kc.humanitarianresponse.info) as applicable (don't include the username)
 * Then enter the username and password for the user who will use the handset (e.g. username1).

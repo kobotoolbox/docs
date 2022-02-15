@@ -1,11 +1,11 @@
 # Adding Another Language in the Project Dashboard
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/language_dashboard.md" class="reference">2 Dec 2021</a>
 
-There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online Project Dashboard or you can add them in an [XLS Form and upload it to KoBo](language_xls.md). 
+There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online Project Dashboard or you can add them in an [XLS Form and upload it to Kobo](language_xls.md). 
 
 Here are detailed instructions on how you can add and manage another language in your form through the online Project Dashboard:
 
-1. Create your form in the default language either by using the formbuilder or setting the form up as an XLS file and then upload it directly to KoBoToolbox. The default language should be the language that the person responsible for designing the questionnaire is most comfortable with. 
+1. Create your form in the default language either by using the formbuilder or setting the form up as an XLS file and then upload it directly to KoboToolbox. The default language should be the language that the person responsible for designing the questionnaire is most comfortable with. 
 
 2. When you are done, or when a significant portion of the form has been created, save it. You'll be returned to the draft form's project dashboard.
 

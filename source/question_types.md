@@ -34,7 +34,7 @@ The below table provides a high-level summary of each of the response types avai
 
 For more information on the response types, please visit [xlsform.org](http://xlsform.org/).
 
-Addtional, KoBoToolBox-specific types can also be used from within the formbuilder:
+Additionally, KoboToolbox-specific types can also be used from within the formbuilder:
 
 | Formbuilder Question type | Icon | Answer input |
 | --- | --- | --- |

@@ -1,4 +1,4 @@
-# Pull Data Functionality in KoBoToolbox
+# Pull Data Functionality in KoboToolbox
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/pull_data_kobotoolbox.md" class="reference">2 Dec 2021</a>
 
 This is best done on xls version of the form.
@@ -16,7 +16,7 @@ This is best done on xls version of the form.
 
 **Things to note**
 
-* This will work both on KoBoCollect app and Enketo (web form).
+* This will work both on KoboCollect app and Enketo (web form).
 * Compress a large .csv file into a .zip archive before uploading it.
 * Save .csv file in UTF-8 format if pre-loaded data contains non-English fonts or special characters this enables your Android device to render the text correctly.
 * Data fields pulled from a .csv file are considered to be text strings therefore use the int() or number() functions to convert a pre-loaded field into numeric form.

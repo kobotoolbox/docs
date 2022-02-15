@@ -1,7 +1,7 @@
 # Mapping, Sharing, and Exporting GPS Data
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/253077adabad239de4bebeae86f821099db28217/source/export_gps.md" class="reference">26 Jul 2020</a>
 
-Your project may include a one or more GPS questions in its form. KoBoToolbox will include the GPS data (latitude, longitude, altitude, precision) in the dataset that can be downloaded as XLS or CSV. It is also possible to view the GPS coordinates on an online map and to download the points as a KML file for use in other applications.
+Your project may include a one or more GPS questions in its form. KoboToolbox will include the GPS data (latitude, longitude, altitude, precision) in the dataset that can be downloaded as XLS or CSV. It is also possible to view the GPS coordinates on an online map and to download the points as a KML file for use in other applications.
 
 ## Viewing your GPS points
 

@@ -86,7 +86,7 @@ storage space.
 ## Collecting background audio with Collect Android app
 
 Review our support article,
-[Data Collection on KoBoCollect App](kobocollect_on_android_latest.md), to learn
+[Data Collection on KoboCollect App](kobocollect_on_android_latest.md), to learn
 in detail about collecting data on the **Collect Android app**.
 
 <video controls>

@@ -63,7 +63,7 @@ __choices__
 
 4. Note that for each of the child elements you need to add a column to specify its parent. For example, King and Pierce counties are in Washington state, so you need to write 'washington' into the 'state' column for these two counties.
 
-6. Save your form. In KoBoToolbox open the main menu and click on Projects. From here you can upload and deploy your form directly, including the newly added cascading select questions.
+6. Save your form. In KoboToolbox open the main menu and click on Projects. From here you can upload and deploy your form directly, including the newly added cascading select questions.
 
 
 ## Adding cascading question sets in XLSForm (Option 2)

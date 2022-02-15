@@ -70,11 +70,11 @@ The same can be done for _kalyan3_ to only _view_ and _validate_ submissions fro
 
 ### Scenario 1:
 
-You may come across this dialogue box _(as shown in the image below)_ when submitting data with the __Require authentication to see forms and submitted data__ option checked in KoBoToolbox.
+You may come across this dialogue box _(as shown in the image below)_ when submitting data with the __Require authentication to see forms and submitted data__ option checked in KoboToolbox.
 
 ![image](/images/row_level_permissions/Login.png)
 
-Enter your KoBoToolbox login credentials and, if the account has __Add submissions__ permission, you will be able to submit data to the server.
+Enter your KoboToolbox login credentials and, if the account has __Add submissions__ permission, you will be able to submit data to the server.
 
 <p class="note">Note that it’s advised not to share your admin login credentials when managing your project for data security. You can create multiple enumerator accounts and share those credentials with your team.</p>
 

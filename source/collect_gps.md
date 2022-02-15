@@ -41,7 +41,7 @@ The form will have various collection options including
 
 ![image](/images/collect_gps/current_location.jpg)
 
-## Collecting Data Using KoBoCollect
+## Collecting Data Using KoboCollect
 
 The interviewer will see various options depending on the GPS question type
 

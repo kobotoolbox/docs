@@ -3,11 +3,11 @@
 
 ## What are web forms?
 
-[Enketo web forms](enketo.md) are used by KoBoToolbox to preview your forms and to enter data directly on your computer. You can also use web forms for collecting data on your mobile devices - even if you're offline at the time of data collection. It works on virtually any device, including iPhones, iPads, or any other smartphone, tablet, or computer. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device.
+[Enketo web forms](enketo.md) are used by KoboToolbox to preview your forms and to enter data directly on your computer. You can also use web forms for collecting data on your mobile devices - even if you're offline at the time of data collection. It works on virtually any device, including iPhones, iPads, or any other smartphone, tablet, or computer. Some features are still being actively developed for Enketo, so some special questions may not be fully supported yet on every device.
 
-## Why do I need web forms instead of KoBoCollect Android App?
+## Why do I need web forms instead of KoboCollect Android App?
 
-You'll always use Enketo web forms if you're not using the KoBoCollect app on an Android device for data collection. However, there are also some appearance settings viz. likert for select one question type, multiline for text question type etc. and style settings for KoBoToolbox’s Layout & Settings which best works on web forms when compared to the KoBoCollect app. 
+You'll always use Enketo web forms if you're not using the KoboCollect app on an Android device for data collection. However, there are also some appearance settings viz. likert for select one question type, multiline for text question type etc. and style settings for KoboToolbox’s Layout & Settings which best works on web forms when compared to the KoboCollect app. 
 
 ## How do I use web forms for data collection?
 
@@ -45,9 +45,9 @@ Select an appropriate drop down option from **Collect data** and then press COPY
 
 **3. Choose Language:** This feature in the web form gets activated if you have multiple languages for your survey project. You're able to toggle between the default language and other languages present in your survey form.
 
-**4. Save as Draft:** Use this feature to edit or update your records before submitting it to the KoBoToolbox server. Once you have checked Save as Draft you will have an option to Save Draft. The draft record gets queued but does not sync with KoBoToolbox server. To sync it with the server you will have to open the record from the queued list and uncheck Save as Draft and press Submit.
+**4. Save as Draft:** Use this feature to edit or update your records before submitting it to the KoboToolbox server. Once you have checked Save as Draft you will have an option to Save Draft. The draft record gets queued but does not sync with KoboToolbox server. To sync it with the server you will have to open the record from the queued list and uncheck Save as Draft and press Submit.
 
-**5. Submit:** Press the Submit button if you have completed collecting information and wish to send the filled-up form to the KoBoToolbox server. After pressing the Submit button, you will not have an option to edit the records on your device. 
+**5. Submit:** Press the Submit button if you have completed collecting information and wish to send the filled-up form to the KoboToolbox server. After pressing the Submit button, you will not have an option to edit the records on your device. 
 
 **6. Queued Records Counter:** The Queued Records Counter shows you the total number of records submitted and waiting to be uploaded to a server. The queued records are uploaded automatically in the background every 5 minutes when the web page is open and an internet connection is available.
 
@@ -69,7 +69,7 @@ Follow the steps outlined below to save a form and collect data in a web form us
 
 5. A window will appear to type a name for your project shortcut. Name the shortcut and then press ADD.
 
-6. You will now see a KoBoToolbox web form shortcut icon on your device, similar to the what is shown below:
+6. You will now see a KoboToolbox web form shortcut icon on your device, similar to the what is shown below:
 
     ![image](/images/data_through_webforms/kobo_icon.png)
 

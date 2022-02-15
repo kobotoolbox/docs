@@ -74,7 +74,7 @@ The accepted values for `kobo--lock_all` are the same as in the `survey` sheet t
 
 ## XLSForm configuration
 
-There are three sheets where locking profiles are defined and set: `survey`, `settings` and [`kobo--locking-profiles`](#id2). The sheet of `kobo--locking-profiles` is not officially supported by [pyxform](https://github.com/XLSForm/pyxform) and is KoBoToolbox-specific.
+There are three sheets where locking profiles are defined and set: `survey`, `settings` and [`kobo--locking-profiles`](#id2). The sheet of `kobo--locking-profiles` is not officially supported by [pyxform](https://github.com/XLSForm/pyxform) and is KoboToolbox-specific.
 
 Form-level restrictions are defined in the `settings` sheet and question and group-level restrictions are defined in the `survey` sheet.
 
@@ -130,7 +130,7 @@ No restrictions can be set in the `choices` sheet.
 
 ### Import locked XLSForms
 
-Import your XLSForm as a `template` through the KoBoToolbox UI by navigating to your __Library__ and clicking on __NEW__ and then __Upload__. Ensure that you select `template` from the __Choose desired type__ drop-down menu and then import your XLSForm.
+Import your XLSForm as a `template` through the KoboToolbox UI by navigating to your __Library__ and clicking on __NEW__ and then __Upload__. Ensure that you select `template` from the __Choose desired type__ drop-down menu and then import your XLSForm.
 
 ![choose template type](/images/library_locking/import-template.png)
 

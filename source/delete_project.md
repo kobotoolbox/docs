@@ -5,12 +5,12 @@ There are two ways to delete a project and all of its data from your account. Pl
 
 ## Deleting Projects From Your Project Dashboard
 
-In the Project Dashboard page hover over the far right side of the project you wish to delete. Click the three dot icon (circled) that appears and then click Delete. A dialogue box will appear that will require you to read and check a set warnings, before deleting the project from your KoBoToolbox account.
+In the Project Dashboard page hover over the far right side of the project you wish to delete. Click the three dot icon (circled) that appears and then click Delete. A dialogue box will appear that will require you to read and check a set warnings, before deleting the project from your KoboToolbox account.
 
 ![image](/images/delete_project/dashboard.jpg)
 
 ## Deleting Projects From The Project Settings Page
 
-In the General window within the SETTINGS tab of the Project Page, click DELETE PROJECT AND DATA. A dialogue box will appear that will require you to read and check a set warnings, before deleting the project from your KoBoToolbox account.
+In the General window within the SETTINGS tab of the Project Page, click DELETE PROJECT AND DATA. A dialogue box will appear that will require you to read and check a set warnings, before deleting the project from your KoboToolbox account.
 
 ![image](/images/delete_project/settings.jpg)

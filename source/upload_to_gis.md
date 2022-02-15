@@ -3,9 +3,9 @@
 
 **Simple step-by-step process to export and upload your data as a shapefile into GIS software, such as ArcMap.**
 
-There are multiple ways to import location-based data collected through KoBoToolbox into GIS software. This article will outline a recommended procedure to download data from KoBoToolbox as a CSV file and upload it into ArcMap as a shapefile. While this example uses ArcMap, the process is similar to those in other geospatial softwares, including QGIS (free).
+There are multiple ways to import location-based data collected through KoboToolbox into GIS software. This article will outline a recommended procedure to download data from KoboToolbox as a CSV file and upload it into ArcMap as a shapefile. While this example uses ArcMap, the process is similar to those in other geospatial softwares, including QGIS (free).
 
-1. In the **Downloads** tab of your project page in KoBoToolbox, export and download your data as a CSV file.
+1. In the **Downloads** tab of your project page in KoboToolbox, export and download your data as a CSV file.
 
     ![image](/images/upload_to_gis/saveas_csv.jpg)
 

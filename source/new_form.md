@@ -29,7 +29,7 @@ The **Project List View** shows all of the projects that have been created in, a
     Allowing you to share it with others through the XLSForm format, or edit it in a spreadsheet program such as Excel.
 
 2. **XML**
-    Allowing you to manually copy it to an Android device running KoBoCollect (only recommended for advanced users).
+    Allowing you to manually copy it to an Android device running KoboCollect (only recommended for advanced users).
 
 ![image](/images/new_project/download.gif)
 

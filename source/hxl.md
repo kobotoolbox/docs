@@ -18,7 +18,7 @@ _Link to step-by-step [slide show guide](https://docs.google.com/presentation/d/
 
     ![image](/images/hxl/xml_values.gif)
 
-3. Once you have exported and downloaded the data to your computer, open up the XLS file to see your HXL tags. It's okay to have KoBo metadata that doesn't have HXL hashtags.
+3. Once you have exported and downloaded the data to your computer, open up the XLS file to see your HXL tags. It's okay to have Kobo metadata that doesn't have HXL hashtags.
 
     ![image](/images/hxl/xls_affected.jpg)
 

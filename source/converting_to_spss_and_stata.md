@@ -8,7 +8,7 @@
   applications.
 </p>
 
-Since **KoBoToolbox** does not export data directly in **SPSS** or **Stata**
+Since **KoboToolbox** does not export data directly in **SPSS** or **Stata**
 format, this article will be a guide for you to make the conversion.
 
 ## Converting to SPSS

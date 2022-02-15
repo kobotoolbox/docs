@@ -15,7 +15,7 @@ You can also use the answer to this Calculate question for other purposes, such 
 
 ## List of available functions
 
-There are a lot of different options available, such as the round() function (e.g. `round(${int_1} div ${int_2}, 1`) will round the result of a division to a single decimal). For a list of some of the many mathematical expressions that can be used in this field, please see [XForm specifications on calculation functions](https://docs.getodk.org/form-operators-functions/) for the technical background of all the functions available in KoBoToolbox and XLSForms. For advance use of calculations in KoBoToolbox, please refer to [this article](advanced_calculate.md).
+There are a lot of different options available, such as the round() function (e.g. `round(${int_1} div ${int_2}, 1`) will round the result of a division to a single decimal). For a list of some of the many mathematical expressions that can be used in this field, please see [XForm specifications on calculation functions](https://docs.getodk.org/form-operators-functions/) for the technical background of all the functions available in KoboToolbox and XLSForms. For advance use of calculations in KoboToolbox, please refer to [this article](advanced_calculate.md).
 
 ## List of available math operators
 

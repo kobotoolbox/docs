@@ -1,4 +1,4 @@
-# Troubleshooting KoBoCollect Android Application
+# Troubleshooting KoboCollect Android Application
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d5cdd698b4a91c3c45216f5a0f91ff7f0704a495/source/troubleshooting_kobocollect.md" class="reference">19 Jun 2020</a>
 
 **-- Kindly report any uncovered issue on our [community forum](https://community.kobotoolbox.org/)--**
@@ -15,7 +15,7 @@ _Common error messages with troubleshooting guides:_
 
 **Error: Generic Exception: No peer certificate or Form listing failed. Error: javx.net.ssl.SSLPeerUnverifiedException...**
 
-This error appears when KoBoCollect tries to communicate with the server but can't establish a secure (SSL/HTTPS) connection.
+This error appears when KoboCollect tries to communicate with the server but can't establish a secure (SSL/HTTPS) connection.
 
 **Troubleshooting:**
 
@@ -23,7 +23,7 @@ This error appears when KoBoCollect tries to communicate with the server but can
 
 2. You may also see this error message if you are using a WiFi hotspot that requires you to sign in after connecting.
 
-**Error: KoBoCollect has crashed**
+**Error: KoboCollect has crashed**
 
 **Troubleshooting:**
 
@@ -40,10 +40,10 @@ This error appears when KoBoCollect tries to communicate with the server but can
 
 This type of error message occurs when you try to edit your saved form when the corresponding blank form is not present or was deleted.
 
-If this occurs, retrieve the corresponding blank form from your KoBoToolbox account by clicking **Get Blank Form** on the home screen and then select the particular form which requires amendments.
+If this occurs, retrieve the corresponding blank form from your KoboToolbox account by clicking **Get Blank Form** on the home screen and then select the particular form which requires amendments.
 
-**Error: Unable to install KoBoCollect android app in a device. Shows the following error message (can’t create directory/storage/sdcard0/odk)**
+**Error: Unable to install KoboCollect android app in a device. Shows the following error message (can’t create directory/storage/sdcard0/odk)**
 
 **Troubleshooting:**
 
-You see this error message when your device is out of storage space. To overcome this issue, free your device by uninstalling some unnecessary app and then try installing KoBoCollect.
+You see this error message when your device is out of storage space. To overcome this issue, free your device by uninstalling some unnecessary app and then try installing KoboCollect.

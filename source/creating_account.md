@@ -1,39 +1,39 @@
-# Creating an account on KoBoToolbox
+# Creating an account on KoboToolbox
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/creating_account.md" class="reference">15 Feb 2022</a>
 
-The first step for all users when getting started with **KoBoToolbox** is to
+The first step for all users when getting started with **KoboToolbox** is to
 create an account. This article will guide you through the steps on creating and
-accessing your account on one of **KoBoToolbox** servers.
+accessing your account on one of **KoboToolbox** servers.
 
-## How to access KoBoToolbox
+## How to access KoboToolbox
 
-There are two main ways of accessing **KoBoToolbox**:
+There are two main ways of accessing **KoboToolbox**:
 
 1. **Public servers**: For most users, it is recommended to use either of our
-   publicly available **KoBoToolbox** servers listed on the
+   publicly available **KoboToolbox** servers listed on the
    [Get Started page](https://www.kobotoolbox.org/#sign-up). One server is for
    humanitarian organizations and the non-humanitarian server is for everyone
    else. Steps for creating an account are listed below.
 
-2. **Install KoBoToolbox on your own server**: Advanced users can install
-   **KoBoToolbox** on [their own server](kobo_your_servers.md) (or on a
+2. **Install KoboToolbox on your own server**: Advanced users can install
+   **KoboToolbox** on [their own server](kobo_your_servers.md) (or on a
    [local computer or device](kobo_local_computer.md)) using Docker. For more
-   details on how to install your own instance of **KoBoToolbox**,
+   details on how to install your own instance of **KoboToolbox**,
    [visit our kobo-install repository on GitHub](https://github.com/kobotoolbox/kobo-install).
 
 ## Creating an account
 
--   To create a new account on **KoBoToolbox**, go to the
-    [KoBoToolbox homepage](https://kobotoolbox.org) and click **SIGN UP** on the
+-   To create a new account on **KoboToolbox**, go to the
+    [KoboToolbox homepage](https://kobotoolbox.org) and click **SIGN UP** on the
     menu. This will take you to the **GET STARTED** section of the website.
 
 -   Here, you are presented with two different servers where you can create your
     account.
 
-![KoBoToolbox servers](images/creating_account/servers.png)
+![KoboToolbox servers](images/creating_account/servers.png)
 
 If you are an individual researcher, aid worker, or a for-profit organization,
-it is recommended to use the server provided by **KoBoToolbox** (_Kobo server_).
+it is recommended to use the server provided by **KoboToolbox** (_Kobo server_).
 
 If you are creating an account for a humanitarian organization, it is
 recommended that you use the server provided by **UN OCHA** (_OCHA server_).
@@ -52,16 +52,16 @@ recommended that you use the server provided by **UN OCHA** (_OCHA server_).
   The username must be all lowercase letters, without any spaces or symbols.
 </p>
 
-**KoBoToolbox** will send you an email with a link to activate your account. If
+**KoboToolbox** will send you an email with a link to activate your account. If
 you did not get the activation email, check your spam folder. For more help, you
 can also read the support article
 [Didn’t Receive Activation Link After Signing Up](activation_link.md).
 
 -   Log in to the email address you used when creating your account and click
     the activation link sent to you. This will automatically log you into
-    **KoBoToolbox**.
+    **KoboToolbox**.
 
-## Logging back into KoBoToolbox
+## Logging back into KoboToolbox
 
 Use one of the following links to log back into your account with your
 _username_ and _password_:

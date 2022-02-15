@@ -23,7 +23,7 @@ It also allows you to choose different **COLORS** for your charts.
    
    ![image](/images/creating_custom_reports/style_color.png)
 
-You can also group the charts by different categorical variables available in your dataset by selecting **GROUP BY** and selecting a variable from the provided list. _Please note: If a variable has more than 5 choices, KoBoToolbox would create a chart displaying only 5 choices lumping the rest together as …_
+You can also group the charts by different categorical variables available in your dataset by selecting **GROUP BY** and selecting a variable from the provided list. _Please note: If a variable has more than 5 choices, KoboToolbox would create a chart displaying only 5 choices lumping the rest together as …_
 
    ![image](/images/creating_custom_reports/group_by.png)
 

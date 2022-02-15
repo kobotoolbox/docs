@@ -11,7 +11,7 @@ After a year of initial development, it was adopted by [a lab at Columbia Univer
 
 Enketo is part of the OpenRosa/ODK ecosystem which means:
 
-1. Enketo can be combined with other tools to flexibly create a full-fledged information management system. This has resulted in the adoption of Enketo into KoBoToolBox. It also means that the Enketo Project can focus on just data collection and do this in the best way possible.
+1. Enketo can be combined with other tools to flexibly create a full-fledged information management system. This has resulted in the adoption of Enketo into KoboToolbox. It also means that the Enketo Project can focus on just data collection and do this in the best way possible.
 2. Enketo does not require a long-term commitment by the user.
  
 ### What are the general features?
@@ -23,9 +23,9 @@ Surveys deployed with Enketo:
 * can use very powerful skip and validation logic
 * run on any device, mobile or desktop, as long as it has a fairly [modern browser](https://enke.to/modern-browsers)
 
-### How can I access Enketo when on KoBoToolbox? 
+### How can I access Enketo when on KoboToolbox? 
 
-Whenever you open a form on the webform version within KoBoToolbox, you are actually using Enketo. For details, please visit our support article [Collecting Data through Web Forms](data_through_webforms.md).
+Whenever you open a form on the webform version within KoboToolbox, you are actually using Enketo. For details, please visit our support article [Collecting Data through Web Forms](data_through_webforms.md).
 
 ### How do I troubleshoot Enketo?
 Enketo web forms work on all devices since they open in regular web browsers and allow data collection online or offline. Generally we strongly recommend the latest version of all modern browsers; [see here for more details on browsers working with Enketo](https://enketo.org/faq/#browsers).  

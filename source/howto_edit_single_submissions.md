@@ -5,7 +5,7 @@ To edit or delete a submitted questionnaire, please follow the steps below.
 
 Please note: 
 
-* If you're collecting data with the KoBoCollect app, once a form has been submitted to the server it is **not possible** to edit or delete a submission from KoBoCollect.  
+* If you're collecting data with the KoboCollect app, once a form has been submitted to the server it is **not possible** to edit or delete a submission from KoboCollect.  
 * It is **not possible** to do bulk edit or deletions.
 
 

@@ -3,7 +3,7 @@
 
 [Warning: This is still an experimental feature, and it does not prevent you from creating duplicate submissions.]
 
-In some situations, you might not be able to use the standard uploading option after collecting data with KoBoCollect or Enketo Web Forms. For example, your mobile device might be partially broken (e.g. screen is shattered), or your devices are in a remote location without Internet access. It is possible to download the submissions to your local computer first and then uploading them to the server. In remote locations, this might be a good option because you may have access to a computer to download the files but need to physically travel to a different location where you can access the Internet.
+In some situations, you might not be able to use the standard uploading option after collecting data with KoboCollect or Enketo Web Forms. For example, your mobile device might be partially broken (e.g. screen is shattered), or your devices are in a remote location without Internet access. It is possible to download the submissions to your local computer first and then uploading them to the server. In remote locations, this might be a good option because you may have access to a computer to download the files but need to physically travel to a different location where you can access the Internet.
 
 ## Exporting data from Web Forms
 
@@ -15,7 +15,7 @@ In some situations, you might not be able to use the standard uploading option a
 
 3. Follow the import steps shown below.
 
-## Exporting data from KoBoCollect
+## Exporting data from KoboCollect
 
 1. Connect the device to your computer
 
@@ -31,9 +31,9 @@ In some situations, you might not be able to use the standard uploading option a
 
 7. Follow the import steps shown below.
 
-## Importing a data ZIP file to KoBoToolbox
+## Importing a data ZIP file to KoboToolbox
 
-1. Login to your KoBoToolbox account, then visit:
+1. Login to your KoboToolbox account, then visit:
 
     https://kc.humanitarianresponse.info/your_username/bulk-submission-form *OR*
 

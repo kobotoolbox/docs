@@ -16,4 +16,4 @@ If data collection offline is not required and you are seeing an error on iOS, c
 
 ## Data loss
 
-When collecting data through Enekto, users should never clear the browser's cache (either manually or using some app). Clearing your browser's cache (during data collection) will remove all the information stored in the browser and thus your information will not reach your KoBoToolbox server. This data loss is irreversible. Hence we strongly advise users to clear the browser's cache if and only if you have successfully submitted all your data to your KoBoToolbox server.
+When collecting data through Enekto, users should never clear the browser's cache (either manually or using some app). Clearing your browser's cache (during data collection) will remove all the information stored in the browser and thus your information will not reach your KoboToolbox server. This data loss is irreversible. Hence we strongly advise users to clear the browser's cache if and only if you have successfully submitted all your data to your KoboToolbox server.

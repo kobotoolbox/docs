@@ -1,7 +1,7 @@
 # Grouping Questions and Repeating Groups
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/group_repeat.md" class="reference">2 Dec 2021</a>
 
-KoBoToolbox supports grouping questions when designing a survey form. Users may need to group questions due to various reasons:
+KoboToolbox supports grouping questions when designing a survey form. Users may need to group questions due to various reasons:
 
 * **Make the questionnaire systematic:** You could group your questions that have special linkage or attributes as Identifier, Section A, Section I, etc.
 * **Display a set of questions per page:** Grouped questions can be displayed on separate pages (or screens) during data collection.
@@ -178,7 +178,7 @@ __choices__
 
 #### Using information to a roster from a preceding roster
 
-While working with grouping questions and repeating groups, sometimes you might need to include certain details to a roster from a preceding roster. Designing such survey form is possible in KoBoToolbox using an [`indexed-repeat()`](https://docs.getodk.org/form-operators-functions/#indexed-repeat) function in the XLSForm. For example, you could use the name that has been recorded in a roster (previously) to link with other repeating group questions (like education etc.):
+While working with grouping questions and repeating groups, sometimes you might need to include certain details to a roster from a preceding roster. Designing such survey form is possible in KoboToolbox using an [`indexed-repeat()`](https://docs.getodk.org/form-operators-functions/#indexed-repeat) function in the XLSForm. For example, you could use the name that has been recorded in a roster (previously) to link with other repeating group questions (like education etc.):
 
 __survey__
 
@@ -213,7 +213,7 @@ Screen seen while [collecting data in Enketo](data_through_webforms.md):
 
 #### Nested Repeat (roster within a roster)
 
-KoBoToolbox also supports nested repeat form design. Here you are able to add a roster within a roster (i.e. a repeat group question within a repeat group question).
+KoboToolbox also supports nested repeat form design. Here you are able to add a roster within a roster (i.e. a repeat group question within a repeat group question).
 
 Design a roster (with the group name **Demographic Characteristics**) and then place another roster (with the group name **List of Hobbies**) within a roster (**Demographic Characteristics**) by following the steps outlined above under **Creating a roster (repeating group of questions)**. You should then have a nested repeat form as shown in the image below:
 

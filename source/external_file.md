@@ -44,7 +44,7 @@ __fruits.csv__
 | fruits    | 10   | Blueberry   |
 | fruits    | 11   | Pomegranate |
 
-**3.** Upload and deploy the XLSForm in KoBoToolbox.
+**3.** Upload and deploy the XLSForm in KoboToolbox.
 
 **4.** Upload the `CSV` file the same way you would [add a media file to the form](media.md)
 

@@ -1,7 +1,7 @@
 # Overview on Data Collection Tools
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/34ebfb40653508b63d5ac86f2127e05ac970bdbc/source/data-collection-tools.md" class="reference">12 Aug 2021</a>
 
-KoBoToolbox allows data collection in multiple ways. Because KoBoToolbox is built on the [Xform/ODK standards](https://xlsform.org), our forms are compatible with [a number of different tools](https://xlsform.org/en/#tools-that-support-xlsforms) that can be used for data collection.
+KoboToolbox allows data collection in multiple ways. Because KoboToolbox is built on the [Xform/ODK standards](https://xlsform.org), our forms are compatible with [a number of different tools](https://xlsform.org/en/#tools-that-support-xlsforms) that can be used for data collection.
 
 For Android devices, we recommend using [Collect Andoid app](https://play.google.com/store/apps/details?id=org.koboc.collect.android&hl=en_US) app, which can be downloaded from the Google Play Store and installed on any standard Android phone or tablet.
 
@@ -9,7 +9,7 @@ For any other devices (including iPhones, iPads, or any laptop or computer), we 
 
 ## A quick rundown on the differences between the two options
 
-| &nbsp;                                                                         | Webforms                                    | KoBoCollect                                            |
+| &nbsp;                                                                         | Webforms                                    | KoboCollect                                            |
 | ---                                                                            | ---                                         | ---                                                    |
 | Devices                                                                        | Any mobile device or computer               | Android only                                           |
 | Runs in...                                                                     | Browser                                     | Native Android application                             |
@@ -32,13 +32,13 @@ For any other devices (including iPhones, iPads, or any laptop or computer), we 
 | Advanced image appearances (`annotate`, `draw`, `signature`)                   | Yes                                         | Yes                                                    |
 | Calculation command `repeat_count()`                                           | Set a minimum number of repeat groups       | Set an exact number of repeat groups                   |
 
-### Collecting data using KoBoCollect
+### Collecting data using KoboCollect
 
 After deploying a project, you can go to **Form - Collect data**, and then select the Android application.
 
 ![image](/images/data_collection_tool/KoboCollect.gif)
 
-For details on how to set up KoBoCollect on any Android devices, [read this article](kobocollect-android.md).
+For details on how to set up KoboCollect on any Android devices, [read this article](kobocollect-android.md).
 
 ### Collecting Data using the Enketo Webform
 

@@ -11,9 +11,9 @@ Open Camera is a 3rd party open-source application that can help you do this.
 
 ![image](/images/lower_file_size/open_cam.png)
 
-## KoBoCollect
+## KoboCollect
 
-In KoBoCollect, when you take a photo, you will now be asked which app should be used by default: Choose Open Camera and select 'Always' so you are not asked again.
+In KoboCollect, when you take a photo, you will now be asked which app should be used by default: Choose Open Camera and select 'Always' so you are not asked again.
 
 ## Open Camera
 

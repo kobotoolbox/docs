@@ -1,13 +1,14 @@
 # Pulling Data Into PowerBI
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/fa795c837113831e27d30295deb0ddbc83647144/source/pulling_data_into_powerbi.md" class="reference">26 Jul 2020</a>
 
-## KoBoToolbox
+## KoboToolbox
 
 First, you need to find the unique URL that allows you to access your project data via the API. If you already know how to find this, skip to the next section.
 
 1. The unique URL has the following structure: `https://[kobocat-URL]/api/v1/data/[unique-kc-ID]`.
 
-2. To find this URL, go to https://[kobocat-URL/api/v1/data/ and find the project in the list at the bottom, the. copy the value for 'url' (without the quotation marks). For example:
+2. To find this URL, go to https://[kobocat-URL/api/v1/data/ and find the
+   project in the list at the bottom, then copy the value for 'url' (without the quotation marks). For example:
 
     ![image](/images/pulling_data_into_powerbi/kobo_url.png)
 
@@ -25,11 +26,11 @@ First, you need to find the unique URL that allows you to access your project da
 
     ![image](/images/pulling_data_into_powerbi/edit_credentials.jpg)
 
-4. Under the **Basic** tab, enter your KoBo username and password then click connect
+4. Under the **Basic** tab, enter your Kobo username and password then click connect
 
     ![image](/images/pulling_data_into_powerbi/login.jpg)
 
-5. A table should load showing you all available forms which you have **enabled data sharing in your KoBoToolbox account** in addition to the languages (labels) you have designed them in. To connect to any of your forms’ data, copy the CSV link found under the CSV column.
+5. A table should load showing you all available forms which you have **enabled data sharing in your KoboToolbox account** in addition to the languages (labels) you have designed them in. To connect to any of your forms’ data, copy the CSV link found under the CSV column.
 
     ![image](/images/pulling_data_into_powerbi/csv.jpg)
 

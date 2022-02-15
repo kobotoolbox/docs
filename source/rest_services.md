@@ -3,9 +3,9 @@
 
 **How to link your data to other servers or services using REST Serivces**
 
-KoBoToolbox has a number of advanced features built in based on our open source libraries, which include useful add-ons for advanced use cases. 
+KoboToolbox has a number of advanced features built in based on our open source libraries, which include useful add-ons for advanced use cases. 
 
-You can link your data collected with KoBoToolbox to other servers or services you might own through REST Services. REST Services supports JSON or XML formats, and basic authentication. Moreover it’s possible to send only a subset of fields. 
+You can link your data collected with KoboToolbox to other servers or services you might own through REST Services. REST Services supports JSON or XML formats, and basic authentication. Moreover it’s possible to send only a subset of fields. 
 
 In case of a failure, the background task will retry 3 times to send the data (first time after 60 seconds, second time after 600 seconds, and third time after 6,000 seconds). Email notifications can be enabled to receive a failure report. 
 

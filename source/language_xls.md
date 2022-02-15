@@ -1,7 +1,7 @@
 # Adding Another Language to your XLSForm
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/language_xls.md" class="reference">12 Aug 2021</a>
 
-There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online [Project Dashboard](language_dashboard.md) or you can add them in an XLSForm and upload it to KoBo.
+There are two methods to adding multiple languages to your form. You can either add and manage them directly through the online [Project Dashboard](language_dashboard.md) or you can add them in an XLSForm and upload it to Kobo.
 
 Here are detailed instructions on how you can add another language to your form:
 
@@ -58,17 +58,17 @@ __settings__
 
 * Save your file and close Excel.
 
-* Return to KoBoToolbox and click on __Replace with XLS__, then upload your updated XLSForm. Choose the file you just finished editing and click __OK__.
+* Return to KoboToolbox and click on __Replace with XLS__, then upload your updated XLSForm. Choose the file you just finished editing and click __OK__.
 
 * Open the form you just uploaded and click on __Preview Form__. At the top next to __Choose Language__ click on the dropdown. It will have a default (your original language) as well as the new languages you just added.
 
 ## Translating to Tamil, Nepali, Hindi, etc. scripts
 
-When translating to non-Latin scripts, such as Tamil, Nepali, Hindi, etc, please make sure you do not use a so-called pseudo font. When writing in these languages make sure you only use the proper Unicode characters. To write proper Unicode characters you don't have to install any particular fonts. Instead, you (or your translator) need to set your keyboard to use the respective script (Tamil, Nepali, etc.) and then write normally. The correct keyboard setting will produce the actual script letters in Unicode instead of some Latin phonetic equivalents. (This would also be the same way as writing these languages into an email, KoBoToolbox, or any other Web application.
+When translating to non-Latin scripts, such as Tamil, Nepali, Hindi, etc, please make sure you do not use a so-called pseudo font. When writing in these languages make sure you only use the proper Unicode characters. To write proper Unicode characters you don't have to install any particular fonts. Instead, you (or your translator) need to set your keyboard to use the respective script (Tamil, Nepali, etc.) and then write normally. The correct keyboard setting will produce the actual script letters in Unicode instead of some Latin phonetic equivalents. (This would also be the same way as writing these languages into an email, KoboToolbox, or any other Web application.
 
 For help with adding the correct system keyboard, [check this link](https://support.microsoft.com/en-us/help/17424/windows-change-keyboard-layout) (Windows only).
 
-Pseudo fonts allow writing in these scripts and are commonly used in many countries, particularly in South Asia. But while they work on the computer that has a specific font installed, they will not work on any other computer that doesn't use that particular font. That is because these fonts just disguise regular Latin characters and symbols and make them appear in a different shape. For example, when writing "Hello" with the Nepali pseudo font 'Preeti', it will look like this: हेल्लो. But what is really written there remains the letters H e l l o. For some people using these fonts which often use phonetic equivalents to English, may be easier. Another reason they are being used widely is that many computers used to not have support for these scripts and thus needed pseudo fonts as a "hack". Either way, Unicode characters are the best way to go - and the only way for use in KoBoToolbox.
+Pseudo fonts allow writing in these scripts and are commonly used in many countries, particularly in South Asia. But while they work on the computer that has a specific font installed, they will not work on any other computer that doesn't use that particular font. That is because these fonts just disguise regular Latin characters and symbols and make them appear in a different shape. For example, when writing "Hello" with the Nepali pseudo font 'Preeti', it will look like this: हेल्लो. But what is really written there remains the letters H e l l o. For some people using these fonts which often use phonetic equivalents to English, may be easier. Another reason they are being used widely is that many computers used to not have support for these scripts and thus needed pseudo fonts as a "hack". Either way, Unicode characters are the best way to go - and the only way for use in KoboToolbox.
 
 ## Translating right-to-left scripts
 

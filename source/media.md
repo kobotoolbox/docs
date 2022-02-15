@@ -16,7 +16,7 @@ Media in a form works both on **Collect android app** and **Web forms
 | Video | 3gpp, avi, flv, mov, mp4, ogg, quicktime (qtff), webm, wmv    |
 
 This support article aims to illustrate how forms with media can be created with
-**KoBoToolbox**. Follow the instructions outlined below to include media to your
+**KoboToolbox**. Follow the instructions outlined below to include media to your
 survey project.
 
 ## Step 1: Download Form as XLSForm
