@@ -22,6 +22,8 @@ jobs:
           python-version: '3.x'
           # Optional - x64 or x86 architecture, defaults to x64
           architecture: 'x64'
+
+      - name: Update laste updated
         run: python3 scripts/last-updated.py
 
       - name: Prettify code
