@@ -4,10 +4,7 @@
 <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/api.md" class="reference">15
 Feb 2022</a>
 
-KoboToolbox has a number of advanced features built in based on our open source
-libraries, which include useful add-ons for advanced use cases. There are many
-ways to use our API. For some hands-on examples,
-[see this post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
+KoboToolbox has a number of advanced features built in based on our open source libraries, which include useful add-ons for advanced use cases. There are many ways to use our API. For some hands-on examples, [see this post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
 
 KoboToolbox has two APIs for its primary tools, kpi and kc. Originally kc was
 the only api for deploying forms and retrieving data. Now, kpi is the primary
