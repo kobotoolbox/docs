@@ -18,9 +18,10 @@ jobs:
       - name: Prettify code
         uses: creyD/prettier_action@v4.2
         with:
-          prettier_options: --parser markdown \
-            --prose-wrap always \
-            --print-width 80 \
+          prettier_options: |
+            --parser markdown
+            --prose-wrap always
+            --print-width 80
             --write source/*.md
           only_changed: True
           same_commit: True
