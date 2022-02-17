@@ -16,8 +16,7 @@ There are different ways to get your API Token.
 
 **Method 1:**
 
-To find your API token go to
-[https://[kpi-url]/token/?format=json](https://[kpi-url]/token/?format=json)
+To find your API token go to [https://[kpi-url]/token/?format=json](https://[kpi-url]/token/?format=json)
 
 ![image](/images/api/token.png)
 
