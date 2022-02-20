@@ -15,15 +15,16 @@ This article will show you how to:
 </video>
 
 When building forms for KoboToolbox, there are two main methods you can use. One
-is by using the KoboToolbox formbuilder interface, and the other is using
-XLSForm.
+is by using the KoboToolbox formbuilder, and the other is using XLSForm.
 
 XLSForm is a standard for creating forms in Microsoft Excel and makes it
 possible to create basic and advanced forms in a user-friendly format.
 
-<p class="note">There are a number of XLSForm features that are not yet supported by the
-formbuilder and therefore a knowledge of XLSForm can be important for
-more complex forms.</p>
+<p class="note">
+  There are a number of XLSForm features that are not yet supported by the
+  formbuilder and therefore a knowledge of XLSForm can be important for more
+  complex forms.
+</p>
 
 ## What is XLSForm
 
@@ -60,7 +61,7 @@ questions: _What is your name_, _Sex_ and _How old are you?_
 2. Under the `name` column, type "yourname". This will be the variable name of
    our first question. The variable name uniquely identifies each question in
    the form. It’s also the name of the question in the database when we start
-   collecting data. Each question must have a unique name which cannot contain
+   collecting data. Each question must have a unique name and cannot contain
    spaces or symbols (except the underscore).
 3. Under the `label` column, type "What is your name". This label will be shown
    as the question text on the form when we collect data.
@@ -68,12 +69,12 @@ questions: _What is your name_, _Sex_ and _How old are you?_
 For our second question:
 
 1. Still in the **survey** sheet, type `select_one gender` in the `type` column
-   just below the previous question (make sure to put a space between the 2
-   words). `select_one` is the question type that allows us to specify a list of
-   choices where a user will only be allowed to pick one choice. (If a user can
-   select several choices, this would be specified by the `select_multiple`
-   question type.) "sex" is the name of the list of choices which we have to
-   define in the **choices** sheet.
+   below the previous question (make sure to put a space between the 2 words).
+   `select_one` is the question type that allows us to specify a list of choices
+   where a user will only be allowed to pick one choice. (If a user can select
+   several choices, this would be specified by the `select_multiple` question
+   type.) "sex" is the name of the list of choices which we have to define in
+   the **choices** sheet.
 2. Type the `name` and `label` of the question as "sex" and "Sex" respectively.
 
 Add the final question as follows:
@@ -89,7 +90,7 @@ Regardless of the type of multiple choice question (`select_one` or
 **choices** sheet. Each list of choices must have the same `list_name`.
 
 Since we defined one question that has a list of choices ("sex") in the previous
-step, we need to add this list in the choices sheet as follows:
+step, we need to add this list in the **choices** sheet as follows:
 
 1. Switch to the **choices** sheet so that you can add your list of choices for
    the "Sex" question.
@@ -99,15 +100,19 @@ step, we need to add this list in the choices sheet as follows:
    option "Male". Under `label`, type "Male". This is what will be shown for
    this option in the survey.
 3. For the second choice, type "sex" as `list_name`, "female” as the `name`, and
-   “Female" as the `label`.
+   "Female" as the `label`.
 
 ## Adding settings
 
 It is not mandatory to include the **settings** sheet in the XLSForm - any form
 will work just fine without it. However, at minimum, you can define the
-`form_title` (Note: Without the `form_title` in the **settings** sheet,
-KoboToolbox will, by default, use the file name as the name of the project when
-you import the XLSForm).
+`form_title`.
+
+<p class="Notes">
+  Without the `form_title` in the **settings** sheet, KoboToolbox will, by
+  default, use the file name as the name of the project when you import the
+  XLSForm.
+</p>
 
 Below the `form_title` column, type "Practice form" as the title of the form we
 are creating in this article.
@@ -120,13 +125,13 @@ order to preview it.
 1. While you are on the Project List view (the first screen after you have just
    logged in to KoboToolbox), click **NEW**.
 2. Click **Upload an XLSForm** (if you were creating the form using Google
-   sheets, you can either download the file as an Excel file, or
+   Sheets, you can either download the file as an Excel file, or
    [follow the instructions in the linked article](xls_url.md) to import it via
    a URL).
 3. Choose the Excel file you just created and wait until it uploads.
 4. Confirm the project details and click **CREATE PROJECT**.
-5. You can click the **<i class="k-icon k-icon-view"></i> Preview** button to
-   preview the form.
+5. You can then click the **<i class="k-icon k-icon-view"></i> Preview** button
+   to preview your form.
 
 ## Downloading an XLSForm from KoboToolbox
 
@@ -141,6 +146,9 @@ as:
 -   Your computer resources such as your browser or internet connection.
 -   You would like to collaborate on the form with members of your team and you
     prefer sharing the XLSForm.
+-   Manage versioning of your form outside of the KoboToolbox platform.
+-   You are needing assistance from the support team and need to share your form
+    with us.
 
 To download the XLSForm while you are on the Project List view:
 
@@ -151,9 +159,9 @@ To download the XLSForm while you are on the Project List view:
 
 ## Replacing a form with an XLSForm file
 
-You can replace an existing form in formbuilder with an XLSForm (for example,
-after having edited the form in Excel). To do this while you are on the Project
-List view:
+You can replace an existing form with a new version using an XLSForm (for
+example, after having edited the form in Excel). To do this while you are on the
+Project List view:
 
 1. Hover your mouse over the name of the project.
 2. Click the **<i class="k-icon k-icon-more"></i> More** icon.
