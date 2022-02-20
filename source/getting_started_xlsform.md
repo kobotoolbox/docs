@@ -14,6 +14,8 @@ This article will show you how to:
   />
 </video>
 
+<br/>
+
 When building forms for KoboToolbox, there are two main methods you can use. One
 is by using the KoboToolbox formbuilder, and the other is using XLSForm.
 
@@ -108,10 +110,10 @@ It is not mandatory to include the **settings** sheet in the XLSForm - any form
 will work just fine without it. However, at minimum, you can define the
 `form_title`.
 
-<p class="Notes">
-  Without the `form_title` in the **settings** sheet, KoboToolbox will, by
-  default, use the file name as the name of the project when you import the
-  XLSForm.
+<p class="note">
+  Without the <code>form_title</code> in the <strong>settings</strong> sheet,
+  KoboToolbox will, by default, use the file name as the name of the project
+  when you import the XLSForm.
 </p>
 
 Below the `form_title` column, type "Practice form" as the title of the form we
@@ -130,8 +132,8 @@ order to preview it.
    a URL).
 3. Choose the Excel file you just created and wait until it uploads.
 4. Confirm the project details and click **CREATE PROJECT**.
-5. You can then click the **<i class="k-icon k-icon-view"></i> Preview** button
-   to preview your form.
+5. You can then click the <i class="k-icon k-icon-view"></i> _Preview form_
+   button to preview your form.
 
 ## Downloading an XLSForm from KoboToolbox
 
@@ -153,8 +155,8 @@ as:
 To download the XLSForm while you are on the Project List view:
 
 1. Hover your mouse over the name of the project.
-2. Click the **<i class="k-icon k-icon-more"></i> More** icon.
-3. Click **<i class="k-icon k-icon-xls-file"></i> Download XLS**.
+2. Click the <i class="k-icon k-icon-more"></i> _More actions_ icon.
+3. Click <i class="k-icon k-icon-xls-file"></i> _Download XLS_.
 4. Save the file.
 
 ## Replacing a form with an XLSForm file
@@ -164,8 +166,8 @@ example, after having edited the form in Excel). To do this while you are on the
 Project List view:
 
 1. Hover your mouse over the name of the project.
-2. Click the **<i class="k-icon k-icon-more"></i> More** icon.
-3. Click **<i class="k-icon k-icon-replace"></i> Replace form**.
+2. Click the <i class="k-icon k-icon-more"></i> _More actions_ icon.
+3. Click <i class="k-icon k-icon-replace"></i> _Replace form_.
 4. Choose the file.
 
 ## More XLSForm learning resources
@@ -173,4 +175,4 @@ Project List view:
 Go to the following links to learn more about XLSForm:
 
 -   [Official XLSForm documentation at XLSForm.org](https://xlsform.org)
--   [Form building documentation for ODK](https://docs.getodk.org/)
+-   [Detailed form building documentation from ODK](https://docs.getodk.org/)
