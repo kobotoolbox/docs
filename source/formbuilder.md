@@ -2,7 +2,7 @@
 
 ## Adding a Question
 
-Questions in your form can be added at any point by clicking on the '+' button that is below every question. Type in the name of your question, click 'Add Question'. Then, [choose the type that's applicable to your question](question_types.md).
+Questions in your form can be added at any point by clicking on the <i class="k-icon k-icon-plus"></i> button that is below every question. Type in the name of your question, click 'Add Question'. Then, [choose the type that's applicable to your question](question_types.md).
 
 ![image](/images/formbuilder/add_questions.gif)
 
@@ -17,7 +17,7 @@ To add a question hint, just click __Question hint__ below the question text and
   
 ## Deleting a Question
 
-You can remove a question at any point by clicking on the red trash can. You'll be asked to confirm before it is permanently deleted from your form.
+You can remove a question at any point by clicking on the red trash can <i class="k-icon k-icon-trash"></i>. You'll be asked to confirm before it is permanently deleted from your form.
 
 ![image](/images/formbuilder/delete_questions.gif)
 
@@ -29,18 +29,18 @@ All your questions and groups can be moved to any position in the form. Just dra
 
 ## Changing Question Settings
 
-To access advanced features for each question click on the Settings cog in the top-right corner of the question. Here you can modify further details of the question, such as skip logic, validating responses, setting question hints, making a question required, etc. More information on this is available in the respective sections for [Question Options](question_options.md), [Skip Logic](skip_logic.md), and [Validation Criteria](validation_criteria.md).
+To access advanced features for each question click on the Settings cog <i class="k-icon k-icon-settings"></i> in the top-right corner of the question. Here you can modify further details of the question, such as skip logic, validating responses, setting question hints, making a question required, etc. More information on this is available in the respective sections for [Question Options](question_options.md), [Skip Logic](skip_logic.md), and [Validation Criteria](validation_criteria.md).
 
 ![image](/images/formbuilder/change_settings.gif)
 
 ## Duplicating a Question
 
-You can duplicate a question at any point by clicking on ‘Duplicate Question’. An exact copy of the question will appear just below the question which you have duplicated.
+You can duplicate a question at any point by clicking on ‘Duplicate Question’ <i class="k-icon k-icon-clone"></i>. An exact copy of the question will appear just below the question which you have duplicated.
 
 ![image](/images/formbuilder/duplicate_question.gif)
 
 ## Adding Questions to the Library
 
-In order to reuse a question in future forms, you can click on 'Add Question to Library'. It will be saved in your Question Library as a copy, meaning that you can make further changes to the original question in the form or even delete it, without affecting the copy that has been placed in the library.
+In order to reuse a question in future forms, you can click on 'Add Question to Library' <i class="k-icon k-icon-folder-plus"></i>. It will be saved in your Question Library as a copy, meaning that you can make further changes to the original question in the form or even delete it, without affecting the copy that has been placed in the library.
 
 ![image](/images/formbuilder/library.gif)
