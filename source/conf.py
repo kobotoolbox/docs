@@ -17,9 +17,9 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'KoBoToolbox'
-copyright = 'KoBoToolbox'
-author = 'KoBoToolbox'
+project = 'KoboToolbox'
+copyright = 'KoboToolbox'
+author = 'KoboToolbox'
 
 # The full version, including alpha/beta/rc tags
 # release = '1'

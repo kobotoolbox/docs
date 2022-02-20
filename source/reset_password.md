@@ -1,5 +1,5 @@
 # Resetting Passwords
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4cd520847ae98380c5911974572e9339266b03b9/source/reset_password.md" class="reference">7 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/reset_password.md" class="reference">15 Feb 2022</a>
 
 If you have forgotten or lost your account password, KoboToolbox allows you to
 reset it easily.
@@ -9,7 +9,7 @@ To reset your password:
 -   For Humanitarian Organizations using the **UN OCHA server** (unlimited use):
     Go to
     [kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info)
--   For Researchers, Aid Workers, & Everyone Else using the **HHI server**: Go
+-   For Researchers, Aid Workers, & Everyone Else using the **Kobo server**: Go
     to [kf.kobotoolbox.org](https://kf.kobotoolbox.org)
 
 ![KoboToolbox login form](/images/resetting_passwords/login_form.png)
@@ -29,7 +29,7 @@ link, please try troubleshooting with the following:
 -   It might also be that you are requesting to reset your password on the wrong
     server. Check the URL on your address bar to ensure you are on the server
     where you had created your account on,
-    [whether the HHI server](https://kf.kobotoolbox.org) or the
+    [whether the Kobo server](https://kf.kobotoolbox.org) or the
     [UN OCHA server](https://kobo.humanitarianresponse.info]).
 
 If you still have not received the email with the reset link, and you have tried

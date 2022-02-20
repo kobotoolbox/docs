@@ -124,7 +124,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   
 .. toctree::
   :maxdepth: 2
-  :caption: KoBoToolbox on Your Computer or Server
+  :caption: KoboToolbox on Your Computer or Server
   :name: home-page-toc-computer-server
   
   software_architecture
