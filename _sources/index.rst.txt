@@ -32,6 +32,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
 
   new_form
   edit_forms_excel
+  getting_started_xlsform
   xls_url
   formbuilder
   question_types
