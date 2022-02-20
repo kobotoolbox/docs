@@ -6,7 +6,7 @@ Questions in your form can be added at any point by clicking on the '+' button t
 
 ![image](/images/formbuilder/add_questions.gif)
 
-<p class="note">Please note that <strong>changing</strong> the question type is currently not supported and may result in unexpected results. If the form ha2s already been deployed, use a question with a different XML name, even if the label remains the same.<p/>
+<p class="note">Please note that <strong>changing</strong> the question type is currently not supported and may result in unexpected results. If the form has already been deployed, use a question with a different XML name, even if the label remains the same.<p/>
 
 ## Adding a question hint
 A question hint is text that is shown below the question text on the form. You can use it to provide extra instruction on how to answer the question.
