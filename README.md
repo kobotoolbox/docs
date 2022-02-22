@@ -1,6 +1,6 @@
-# KoBoToolbox user documentation
+# KoboToolbox user documentation
 
-This repository contains all the user content of KoBoToolbox's official documentation, available at https://support.kobotoolbox.org/. 
+This repository contains all the user content of KoboToolbox's official documentation, available at https://support.kobotoolbox.org/. 
 
 ## Local installation
 
