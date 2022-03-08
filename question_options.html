@@ -102,34 +102,77 @@
           
   <section id="using-the-question-options">
 <h1>Using the Question Options<a class="headerlink" href="#using-the-question-options" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e341c15a1e4d5391551a195acd36ecec7124062d/source/question_options.md" class="reference">25 Jul 2020</a></p>
-<p>The Question Options screen contains some very useful features to get the most out of your form. You can click Setting to access the Question Options screen.</p>
-<p><img alt="image" src="_images/options.png" /></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/fa75e1fccbcbd8c348bf6ace4b7590d260f745ef/source/question_options.md" class="reference">8 Mar 2022</a></p>
+<p>After adding a question, there are many different customizations you can make to
+it using the question options. To get to the question options screen of a
+question, lick its <i class="k-icon k-icon-settings"></i> Settings button.</p>
+<p><img alt="Question options" src="_images/options2.png" /></p>
 <section id="data-column-name">
 <h2>Data Column Name<a class="headerlink" href="#data-column-name" title="Permalink to this headline">¶</a></h2>
 <p>The <strong>Data Column Name</strong> is the unique identifier (ID) of your question.</p>
-<p>This field is mandatory for every question. Only letters, numbers, and underscores are allowed in this field, and the field must start with a letter or an underscore. You can input anything you like, such as <code class="docutils literal notranslate"><span class="pre">what_is_your_name</span></code> or <code class="docutils literal notranslate"><span class="pre">age</span></code>.</p>
-<p>The Data Column Name (ID) is important because it is used in the column headers of tables and spreadsheets after your data has been collected. If you want your spreadsheet to follow a specific naming convention, you should specify the name for each of your questions before deploying the form as a data collection project.</p>
+<p>This field is mandatory for every question. Only letters, numbers, and
+underscores are allowed in this field, and the field must start with a letter or
+an underscore. You can input anything you like, such as <code class="docutils literal notranslate"><span class="pre">what_is_your_name</span></code> or
+<code class="docutils literal notranslate"><span class="pre">age</span></code>.</p>
+<p>The Data Column Name is important because it is used in the column headers of
+tables and spreadsheets after your data has been collected. If you want your
+spreadsheet to follow a specific naming convention, you should specify the name
+for each of your questions before deploying the form as a data collection
+project.</p>
 </section>
 <section id="guidance-hint-optional">
 <h2>Guidance Hint (optional)<a class="headerlink" href="#guidance-hint-optional" title="Permalink to this headline">¶</a></h2>
-<p><strong>Guidance Hint</strong> are help texts that will be displayed underneath your questions on the form.</p>
-<p>Hints are optional. The hint text is often used to provide additional instructions to your interviewer staff. For example, your question label might be <code class="docutils literal notranslate"><span class="pre">How</span> <span class="pre">old</span> <span class="pre">are</span> <span class="pre">you?</span></code> and your hint might be <code class="docutils literal notranslate"><span class="pre">If</span> <span class="pre">respondent</span> <span class="pre">doesn't</span> <span class="pre">know,</span> <span class="pre">enter</span> <span class="pre">999</span></code>.</p>
+<p><strong>Guidance Hints</strong> are extra instructions that you can add to your questions as
+notes. By default in Enketo web forms, the guidance hints are displayed under an
+accordion which can be expanded and collapsed as shown below.</p>
+<p><img alt="Guidance hint in Enketo Web forms" src="_images/guidance_hint_enketo.gif" /></p>
+<p>On KoboCollect, guidance hints are not displayed by default. You can choose how
+guidance hints should be displayed in your forms by going to Settings -&gt; Form
+Management -&gt; Show guidance for questions. Here you have 3 choices: No, Yes -
+always shown and Yes - always collapsed.</p>
+<p><img alt="Guidance hint in KoboCollect" src="_images/guidance_hint_kobocollect.gif" /></p>
+<p>Guidance hints can be used as internal notes when collaborating with others in
+developing the form. You can also show them on printouts or extra instructions
+during training for enumerators.</p>
 </section>
 <section id="mandatory-response">
 <h2>Mandatory Response<a class="headerlink" href="#mandatory-response" title="Permalink to this headline">¶</a></h2>
-<p>If a question is <strong>mandatory</strong>, the interviewer needs to provide an answer in order to finalize the form.</p>
+<p>This settings allows you to specify whether the question must be responded to at
+all times or not. In XLSForm, this is called <code class="docutils literal notranslate"><span class="pre">required</span></code>.</p>
+<p>In KoboToolbox, there are three options for mandatory response:</p>
+<ol class="simple">
+<li><p>Yes - The question must be answered at all times. If a response is not
+provided, the user will not be able to move to the next question or save the
+form.</p></li>
+<li><p>No - The question is not mandatory and hence can be manually skipped.</p></li>
+<li><p>Custom logic - You can define logic using XLSForm code which will define when
+the question will be mandatory. For example, if you set the following custom
+logic <code class="docutils literal notranslate"><span class="pre">${age}</span> <span class="pre">&gt;</span> <span class="pre">18</span></code>, the question will be mandatory when a preceding question
+with the data column name <code class="docutils literal notranslate"><span class="pre">age</span></code> is greater than 18.</p></li>
+</ol>
 </section>
 <section id="default-response-optional">
 <h2>Default Response (optional)<a class="headerlink" href="#default-response-optional" title="Permalink to this headline">¶</a></h2>
-<p>This allows specifying a default response that the interviewer can accept or change.</p>
-<p>In most studies this would not be recommended as it might create an accidental bias, but it may be useful for date or time questions where the responses tend to be around a certain known point. For date questions, the default response needs to be written in the format <code class="docutils literal notranslate"><span class="pre">YYYY-MM-DD</span></code> e.g. <code class="docutils literal notranslate"><span class="pre">1974-12-31</span></code>). For Select One or Select Many questions the response needs to be written using the unique Value - not the label (e.g. <code class="docutils literal notranslate"><span class="pre">first_grade</span></code> rather than <code class="docutils literal notranslate"><span class="pre">First</span> <span class="pre">grade</span></code>).</p>
+<p>This allows specifying a default response that the interviewer can accept or
+change.</p>
+<p>In most studies this would not be recommended as it might create an accidental
+bias, but it may be useful for date or time questions where the responses tend
+to be around a certain known point.</p>
+<p>For <i class="k-icon k-icon-qt-date"></i> Date questions, the default response
+needs to be written in the format <code class="docutils literal notranslate"><span class="pre">YYYY-MM-DD</span></code> e.g. <code class="docutils literal notranslate"><span class="pre">1974-12-31</span></code>).</p>
+<p>For <i class="k-icon k-icon-qt-select-one"></i> Select One or
+<i class="k-icon k-icon-qt-select-many"></i> Select Many questions the response
+needs to be written using the unique Value (xml value) - not the label (e.g.
+<code class="docutils literal notranslate"><span class="pre">first_grade</span></code> rather than <code class="docutils literal notranslate"><span class="pre">First</span> <span class="pre">grade</span></code>).</p>
 </section>
 <section id="appearance-optional">
 <h2>Appearance (optional)<a class="headerlink" href="#appearance-optional" title="Permalink to this headline">¶</a></h2>
-<p>This advanced setting allows displaying the question in a modified way. Certain appearance options will only be available depending on the <a class="reference internal" href="question_types.html"><span class="doc">Question Type</span></a>.</p>
-<p>For a full list of appearance values, visit <a class="reference external" href="http://xlsform.org/en/#appearance">ODK’s appearance documentation</a>.</p>
-<p><img alt="image" src="_images/appearance.png" /></p>
+<p>This advanced setting allows displaying the question in a modified way. Certain
+appearance options will only be available depending on the
+<a class="reference internal" href="question_types.html"><span class="doc">Question Type</span></a>.</p>
+<p>For a full list of appearance values, visit
+<a class="reference external" href="http://xlsform.org/en/#appearance">ODK’s appearance documentation</a>.</p>
+<p><img alt="Question appearance oprions" src="_images/appearance.png" /></p>
 </section>
 </section>
 
