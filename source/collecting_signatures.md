@@ -1,4 +1,5 @@
 # Signature Question Type
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/collecting_signatures.md" class="reference">2 Dec 2021</a>
 
 Some forms may require signatures to be included with them. You can use appearance `signature` on both Collect Android app and Enketo. The draw widget is only available when using Enketo for data collection.
 

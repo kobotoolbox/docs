@@ -15,6 +15,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   welcome
   creating_account
   kobotoolbox_interface
+  overview_of_creating_a_project
   quick_start
   server
   is_my_data_safe  
@@ -31,6 +32,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
 
   new_form
   edit_forms_excel
+  getting_started_xlsform
   xls_url
   formbuilder
   question_types
@@ -122,7 +124,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   
 .. toctree::
   :maxdepth: 2
-  :caption: KoBoToolbox on Your Computer or Server
+  :caption: KoboToolbox on Your Computer or Server
   :name: home-page-toc-computer-server
   
   software_architecture

@@ -1,4 +1,5 @@
 # Adding Various Types of Media (image, audio, video) to a Form
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15 Feb 2022</a>
 
 In addition to text questions and text choices, you can also add various types
 of media (such as _image_, _audio_, and _video_) to your forms. Having media in
@@ -15,15 +16,15 @@ Media in a form works both on **Collect android app** and **Web forms
 | Video | 3gpp, avi, flv, mov, mp4, ogg, quicktime (qtff), webm, wmv    |
 
 This support article aims to illustrate how forms with media can be created with
-**KoBoToolbox**. Follow the instructions outlined below to include media to your
+**KoboToolbox**. Follow the instructions outlined below to include media to your
 survey project.
 
 ## Step 1: Download Form as XLSForm
 
-Create a survey project in the formbuilder UI and then download your form as
-XLS to add media settings to it. The formbuilder currently does not support
-adding media to the form directly so you will need to edit the downloaded
-XLSForm to complete this action.
+Create a survey project in the formbuilder UI and then download your form as XLS
+to add media settings to it. The formbuilder currently does not support adding
+media to the form directly so you will need to edit the downloaded XLSForm to
+complete this action.
 
 <video controls><source src="./_static/files/media/download_xlsform.mp4" type="video/mp4"></video>
 

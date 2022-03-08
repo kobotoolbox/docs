@@ -1,4 +1,5 @@
 ﻿# Recording an Entire Interview with Background Audio Recording
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/recording-interviews.md" class="reference">15 Feb 2022</a>
 
 **Background audio recording** is a powerful feature that allows users to record
 an interview in the background (when the form is open) and store the recording
@@ -85,7 +86,7 @@ storage space.
 ## Collecting background audio with Collect Android app
 
 Review our support article,
-[Data Collection on KoBoCollect App](kobocollect_on_android_latest.md), to learn
+[Data Collection on KoboCollect App](kobocollect_on_android_latest.md), to learn
 in detail about collecting data on the **Collect Android app**.
 
 <video controls>

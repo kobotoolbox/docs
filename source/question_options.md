@@ -1,4 +1,5 @@
 # Using the Question Options
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e341c15a1e4d5391551a195acd36ecec7124062d/source/question_options.md" class="reference">25 Jul 2020</a>
 
 After adding a question, there are many different customizations you can make to it using the question options. To get to the question ooptions screen of a question, lick its <i class="k-icon k-icon-settings"></i> Settings button.
 

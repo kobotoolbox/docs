@@ -1,8 +1,9 @@
 # Using Public Collections
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/using_public_collections.md" class="reference">15 Feb 2022</a>
 
 Obtaining the right information often depends on asking the right questions.
 **Public Collections** helps us all improve our data collection by making sets
-of predefined survey questions public and easily accessible to the entire KoBo
+of predefined survey questions public and easily accessible to the entire Kobo
 community. Anyone can create, find, and use these collections freely, enabling
 teams and organizations to standardize their surveys as well as allowing them to
 contribute to the work and best practices of others. These collections can
@@ -23,7 +24,7 @@ tool for wealth determination, as well as other standard measures widely used.
 
 ## Locating the Public Collections
 
-To access the **Public Collections** section, login to **KoBoToolbox** and click
+To access the **Public Collections** section, login to **KoboToolbox** and click
 on the **Library** icon in the top-left section of your screen, and then
 navigate to the **Public Collections** tab.
 
@@ -94,7 +95,7 @@ You can then
 
 ### c) Creating a Public Collection
 
-While you’re in the **Library** section of **KoBoToolbox**, click on the **NEW**
+While you’re in the **Library** section of **KoboToolbox**, click on the **NEW**
 button and a modal with four options will be displayed, as seen below.
 
 ![Create Library Item](/images/using_public_collections/create_library_item.png)

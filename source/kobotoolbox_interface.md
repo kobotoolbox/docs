@@ -1,12 +1,13 @@
-# The KoBoToolbox Interface
+# The KoboToolbox Interface
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobotoolbox_interface.md" class="reference">15 Feb 2022</a>
 
-This article will walk you through the **KoBoToolbox** interface, helping you
+This article will walk you through the **KoboToolbox** interface, helping you
 get familiar with the different elements.
 
-By default, when you log in to your **KoBoToolbox** account, you will be taken
+By default, when you log in to your **KoboToolbox** account, you will be taken
 to the **Projects** screen.
 
-![KoBoToolbox Interface](images/kobotoolbox_interface/interface.png)
+![KoboToolbox Interface](images/kobotoolbox_interface/interface.png)
 
 You can switch between the <i class="k-icon k-icon-projects"></i> **Projects**
 and <i class="k-icon k-icon-library"></i> **Library** sections using the buttons
@@ -32,10 +33,10 @@ In the **Projects** section of the interface, your individual projects are
 organized into 3 categories:
 
 1. **Draft** projects are forms that have been created but not deployed. These
-   forms will not appear on **KoBoCollect** for data entry until they have been
+   forms will not appear on **KoboCollect** for data entry until they have been
    deployed.
 2. When a form has been deployed, it will appear under **Deployed**. These forms
-   are available for data collection through both **KoBoCollect** and **Enketo**
+   are available for data collection through both **KoboCollect** and **Enketo**
    web forms.
 3. When data collection is complete, you can archive the project. These projects
    will appear under **Archived**.
@@ -49,7 +50,7 @@ following buttons:
 | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
 | <i class="k-icon k-icon-edit"></i> **Edit**                   | Go to the formbuilder to edit the form                                                       |
 | <i class="k-icon k-icon-tag"></i> **Add Tags to the project** | Create tags to make it easier to find projects in the project list when using the search bar |
-| <i class="k-icon k-icon-user-share"></i> **Share**            | Share the project with other **KoBoToolbox** users and customize permissions                 |
+| <i class="k-icon k-icon-user-share"></i> **Share**            | Share the project with other **KoboToolbox** users and customize permissions                 |
 | <i class="k-icon k-icon-clone"></i> **Clone**                 | Make a copy of the existing project                                                          |
 | <i class="k-icon k-icon-more-vertical"></i> **More actions**  | Open up more project actions                                                                 |
 
@@ -73,8 +74,8 @@ links to the support articles site and the community forum by clicking on the <i
 class="k-icon k-icon-help"></i> **Help** button.
 
 Clicking the <i class="k-icon k-icon-globe"></i> **Projects (legacy)** button
-takes you to the **KoBoToolbox** legacy interface.
+takes you to the **KoboToolbox** legacy interface.
 
-If you are interested in contributing to the development of **KoBoToolbox** or
+If you are interested in contributing to the development of **KoboToolbox** or
 in viewing the source code, you can click on the <i class="k-icon
 k-icon-logo-github"></i> **Source** button to visit our GitHub page.
