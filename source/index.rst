@@ -82,6 +82,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   data-offline
   kobocollect_on_android_latest
   kobocollect-android
+  transferring_forms_data_manually_one_device_another_device
   devices_for_data_collection
   hipaa_compliance
   troubleshooting_kobocollect
