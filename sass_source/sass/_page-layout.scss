@@ -99,8 +99,12 @@ html body {
       margin-right: auto;
     }
 
-    p {
+    p,
+    section.note {
       margin: 0 auto rem(18px);
+    }
+
+    p {
       font-weight: 300;
     }
 
@@ -109,6 +113,21 @@ html body {
       border: 2px solid $c_denim;
       border-radius: 4px;
       padding: 1em 0.8em;
+    }
+
+    section.note {
+      display: block;
+      border: 2px solid $c_denim;
+      border-radius: 4px;
+      padding: 1em 0.8em;
+
+      > *:first-child {
+        margin-top: 0;
+      }
+
+      > *:last-child {
+        margin-bottom: 0;
+      }
     }
 
     p,
