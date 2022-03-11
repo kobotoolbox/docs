@@ -1,6 +1,6 @@
 # KoboToolbox user documentation
 
-This repository contains all the user content of KoboToolbox's official documentation, available at https://support.kobotoolbox.org/. 
+This repository contains all the user content of KoboToolbox's official documentation, available at https://support.kobotoolbox.org/.
 
 ## Local installation
 
@@ -34,7 +34,7 @@ To develop the theme:
 1. Install NPM dependencies: `npm install`
 1. Build:
   1. To watch for style changes use `npm run dev`
-  1. To just build the styles use `npm start`
+  1. To build the styles once use `npm start`
 
 Useful links:
 

@@ -44,6 +44,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   advanced_calculate
   video_question_type
   matrix_response
+  adding_skip_to_matrix
   responses_inside_question
   number_text_responses
   user_specified_other
