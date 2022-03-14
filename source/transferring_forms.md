@@ -3,25 +3,20 @@
 There may be times when you are out in the field without internet connection,
 but you still need to upload the latest version of the forms (i.e., the latest
 deployed forms in the server) to your device. You might also be unable to upload
-form submissions to the server due to a broken phone screen. In both scenarios,
-you will need to manually transfer forms and/or submissions by using another
-device. This support article will show you how to do this.
+form submissions to the server due to a broken screen. In both scenarios, you
+will need to manually transfer forms and/or submissions by using another device.
+This support article will show you how to do this.
 
 You will need the following items to follow the instructions outlined below:
 
--   An Android mobile phone that does have the latest version of the deployed
-    form. (It is recommended to get the latest version of the deployed form to
-    the device by selecting the **Get Blank Form** from your **KoboCollect
-    Android app**.)
--   An Android mobile phone that does not have the latest version of the form
-    (or even no form at all).
--   Both the Android mobile phones should have the KoboCollect app already
-    installed.
+-   An Android device that has the latest version of the deployed form. (It is
+    recommended to get the latest version of the deployed form to the device by
+    selecting the **Get Blank Form** from your **KoboCollect Android app**.)
+-   An Android device that does not have the latest version of the form (or even
+    no form at all).
+-   Both the Android devices should have the KoboCollect app already installed.
 -   Personal computer (desktop or laptop).
--   USB cable that connects the mobile phone and the personal computer.
-
-Now you can follow the steps illustrated below to transfer forms and/or data
-manually from one Android device to another:
+-   USB cable that connects the device and the personal computer.
 
 **Step 1:** Open your personal computer (no internet connection is needed here).
 A PC is necessary at this phase to copy the forms and data from one Android
@@ -62,8 +57,8 @@ using)_, you should see a folder with a similar name (as shown below):
 
 ![Sample image](images/transferring_forms/sample_1_folder.png)
 
-**Step 5:** Get inside this folder and **COPY** everything you see there (as
-shown in the image below):
+**Step 5:** Enter this folder and **COPY** all items (as shown in the image
+below):
 
 ![Sample image of sub folders](images/transferring_forms/sub_folders.png)
 
@@ -95,19 +90,17 @@ using)_, you should see a folder with a similar name (as shown below):
 
 ![Sample image](images/transferring_forms/sample_2_folder.png)
 
-**Step 9:** Get inside this folder and **PASTE** everything that is in your
-clipboard (Note: You may also have to override while pasting.):
+**Step 9:** Enter this folder and **PASTE** the copied items:
 
 ![Sample image of sub folders](images/transferring_forms/sub_folders.png)
 
 Once this is complete, open the **KoboCollect Android app** from the device
-(where you have pasted the forms and data). Everything should be there. You may
-now use this device to continue with data collection and upload the submissions
-to the server.
+(where you have pasted the forms and data). You may now use this device to
+continue with data collection and upload the submissions to the server.
 
 <p class="note">
-  If the forms and data are not visible there, you could restart your device.
-  Restarting the device should make the forms and data visible in the app.
+  If the forms and data are not visible, you can try restarting your device.
+  This might make the forms and data visible in the app.
 </p>
 
 ## Troubleshooting:
@@ -118,12 +111,12 @@ to the server.
     ![Sample image of many folders](images/transferring_forms/sample_many_folders.png)
     This is confusing and makes it challenging to select the correct project you
     wish to copy. Although time consuming, you will need to go through all the
-    folders manually one by one to identify the correct folder with the project
-    you are looking for. You could also delete any other folders that are no
-    longer needed. For instance, if a project has been removed from the app, it
-    may still show up as a folder when the device is accessed through the
-    computer. If you are sure a project is no longer relevant, deleting the
-    folder will eliminate it completely.
+    folders to identify the correct folder with the project you are looking for.
+    You could also delete any other folders that are no longer needed. For
+    instance, if a project has been removed from the app, it may still show up
+    as a folder when the device is accessed through the computer. If you are
+    sure a project is no longer relevant, deleting the folder will remove it
+    completely.
 
 -   Similarly, while connecting the Android mobile phone without the latest
     version of the form (or even no form at all) to the PC, you will sometimes
