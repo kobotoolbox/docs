@@ -129,7 +129,7 @@ def main():
         for path in glob(GLOB_PATTERN):
             if path not in FILES_IGNORE:
                 update_file(path)
-    create_recently_updated()
+        create_recently_updated()
     sys.stdout.write('Done 🎉\n')
 
 
