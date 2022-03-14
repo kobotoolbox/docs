@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Viewing and Creating Custom Reports &#8212; KoboToolbox  documentation</title>
+    <title>Transferring forms and data manually from one android device to another &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -25,8 +25,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Mapping, Sharing, and Exporting GPS Data" href="export_gps.html" />
-    <link rel="prev" title="Managing Permissions" href="managing_permissions.html" />
+    <link rel="next" title="Recommended Devices for Data Collection" href="devices_for_data_collection.html" />
+    <link rel="prev" title="Data Collection on KoboCollect App (Older Version)" href="kobocollect-android.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -87,7 +87,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="creating_custom_reports">
+<div class="page page--has-sidebar " id="transferring_forms">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -100,53 +100,162 @@
 
         <section class="page__body" role="main">
           
-  <section id="viewing-and-creating-custom-reports">
-<h1>Viewing and Creating Custom Reports<a class="headerlink" href="#viewing-and-creating-custom-reports" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/creating_custom_reports.md" class="reference">15 Feb 2022</a></p>
-<section id="learn-how-to-navigate-and-manage-the-data-in-the-reports-page">
-<h2>Learn how to navigate and manage the data in the Reports page.<a class="headerlink" href="#learn-how-to-navigate-and-manage-the-data-in-the-reports-page" title="Permalink to this headline">¶</a></h2>
-<p>On the Reports page in the Data section of your project, you can create and
-configure multiple summary reports with custom graphs, tables, and color
-schemes. The custom reports are shareable by either printing, saving as a PDF,
-or storing them on an external cloud service.</p>
-<p><img alt="image" src="_images/chart.jpg" /></p>
-<p><strong>1. Custom Reports:</strong></p>
-<p>The <strong>CUSTOM REPORTS</strong> allow you to view the <strong>Default Report</strong> based on the
-dataset available in your survey project. It also allows you to <strong>Create New
-Report</strong> (by giving it a unique title and selecting which questions to include
-or exclude) or search through previously created custom reports.</p>
-<p><img alt="image" src="_images/custom_report.jpg" /></p>
-<p><strong>2. Edit Report Style:</strong></p>
-<p>The <strong>Edit Report Style</strong> button allows you to change the <strong>CHART TYPE</strong> to
-Vertical, Donut, Area, Horizontal, Pie and Line.</p>
-<p><img alt="image" src="_images/report_style.png" /></p>
-<p>It also allows you to choose different <strong>COLORS</strong> for your charts.</p>
-<p><img alt="image" src="_images/style_color.png" /></p>
-<p>You can also group the charts by different categorical variables available in
-your dataset by selecting <strong>GROUP BY</strong> and selecting a variable from the
-provided list. <em>Please note: If a variable has more than 5 choices, KoboToolbox
-would create a chart displaying only 5 choices lumping the rest together as …</em></p>
-<p><img alt="image" src="_images/group_by.png" /></p>
-<p>Or you could also change the label of your charts to different languages
-available on your survey project by selecting <strong>TRANSLATION</strong>. <em>(This tab will
-only appear if you have multiple languages in your survey project)</em></p>
-<p><img alt="image" src="_images/translation.png" /></p>
-<p><strong>3. Print:</strong> You could also print the custom report by clicking the <strong>Print</strong>
-icon or save it as PDF by selecting <strong>Save as PDF</strong> under <strong>Destination</strong>.</p>
-<p><img alt="image" src="_images/print.png" /></p>
-<p>You could also store the same to an external cloud storage service like Google
-Drive.</p>
-<p><img alt="image" src="_images/destination.png" /></p>
-<p><strong>4. Toggle full screen:</strong></p>
-<p>You could Press <strong>Toggle full screen</strong> to view the custom reports in a full
-screen or press back the <strong>Toggle full screen</strong> to view it to in a normal mode.</p>
-<p><strong>5. Override Graph Style:</strong></p>
-<p>You could click the <strong>Override Graph Style</strong> <em>(3 dot icon)</em> to customize the
-<strong>CHART TYPE</strong> and <strong>COLORS</strong> of the chart for each variables (questions) within
-your custom reports. This will override the graph style <strong>(for a question)</strong>
-that has been defined by <strong>Edit Report Style</strong> in your custom report that has
-been explained above.</p>
-<p><img alt="image" src="_images/question_style.png" /></p>
+  <section id="transferring-forms-and-data-manually-from-one-android-device-to-another">
+<h1>Transferring forms and data manually from one android device to another<a class="headerlink" href="#transferring-forms-and-data-manually-from-one-android-device-to-another" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7ec7ae3ebc83a6295452ada6cabd91aba2740463/source/transferring_forms.md" class="reference">14 Mar 2022</a></p>
+<p>There may be times when you are out in the field without internet connection,
+but you still need to upload the latest version of the forms (i.e., the latest
+deployed forms in the server) to your device. You might also be unable to upload
+form submissions to the server due to a broken screen. In both scenarios, you
+will need to manually transfer forms and/or submissions by using another device.
+This support article will show you how to do this.</p>
+<p>You will need the following items to follow the instructions outlined below:</p>
+<ul class="simple">
+<li><p>An Android device that has the latest version of the deployed form. (It is
+recommended to get the latest version of the deployed form to the device by
+selecting the <strong>Get Blank Form</strong> from your <strong>KoboCollect Android app</strong>.)</p></li>
+<li><p>An Android device that does not have the latest version of the form (or even
+no form at all).</p></li>
+<li><p>Both the Android devices should have the KoboCollect app already installed.</p></li>
+<li><p>Personal computer (desktop or laptop).</p></li>
+<li><p>USB cable that connects the device and the personal computer.</p></li>
+</ul>
+<p><strong>Step 1:</strong> Open your personal computer (no internet connection is needed here).
+A PC is necessary at this phase to copy the forms and data from one Android
+device with the latest version of the form to another.</p>
+<p><strong>Step 2:</strong> Now, connect the Android device (with the latest form and data you
+wish to transfer) to the PC using the USB cable.</p>
+<p><strong>Step 3:</strong> Then, follow the path illustrated below to extract the required
+folders with the forms and data (depending on which app version is installed):</p>
+<p class="note">
+  In this example, we are connecting Galaxy S10+ (an Android device) to Windows
+  11 that is why you are seeing <strong>This PC</strong> and
+  <strong>Galaxy S10+</strong>. These may differ if you are using another OS and
+  Android device.
+</p><ul class="simple">
+<li><p>For KoboCollect Android app version 2021.2 and greater:</p>
+<ul>
+<li><p>If KoboCollect Android app installed in phone memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\Phone\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
+<li><p>If KoboCollect Android app installed in external memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\sdcard\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
+</ul>
+</li>
+<li><p>For KoboCollect Android app (version greater than v1.26.0):</p>
+<ul>
+<li><p>If KoboCollect Android app installed in phone memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\Phone\Android\data\org.koboc.collect.android\files</span></code></p></li>
+<li><p>If KoboCollect Android app installed in external memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\sdcard\Android\data\org.koboc.collect.android\files</span></code></p></li>
+</ul>
+</li>
+<li><p>For KoboCollect Android app (version less than v1.26.0):</p>
+<ul>
+<li><p>If KoboCollect Android app installed in phone memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\Phone\odk</span></code></p></li>
+<li><p>If KoboCollect Android app installed in external memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\sdcard\odk</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Step 4:</strong> Once you are in the <strong>projects</strong> folder, <strong>files</strong> folder, or the
+<strong>odk</strong> folder <em>(depending on the KoboCollect Android app version you are
+using)</em>, you should see a folder with a similar name (as shown below):</p>
+<p><img alt="Sample image" src="_images/sample_1_folder.png" /></p>
+<p><strong>Step 5:</strong> Enter this folder and <strong>COPY</strong> all items (as shown in the image
+below):</p>
+<p><img alt="Sample image of sub folders" src="_images/sub_folders.png" /></p>
+<p><strong>Step 6:</strong> Now, connect the other Android device that you wish to copy the data
+to with the PC using the USB cable.</p>
+<p><strong>Step 7:</strong> Once again, follow the path illustrated below (depending on which
+app version is installed):</p>
+<ul class="simple">
+<li><p>For KoboCollect Android app version 2021.2 and greater:</p>
+<ul>
+<li><p>If KoboCollect Android app installed in phone memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\Phone\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
+<li><p>If KoboCollect Android app installed in external memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\sdcard\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
+</ul>
+</li>
+<li><p>For KoboCollect Android app (version greater than v1.26.0):</p>
+<ul>
+<li><p>If KoboCollect Android app installed in phone memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\Phone\Android\data\org.koboc.collect.android\files</span></code></p></li>
+<li><p>If KoboCollect Android app installed in external memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\sdcard\Android\data\org.koboc.collect.android\files</span></code></p></li>
+</ul>
+</li>
+<li><p>For KoboCollect Android app (version less than v1.26.0):</p>
+<ul>
+<li><p>If KoboCollect Android app installed in phone memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\Phone\odk</span></code></p></li>
+<li><p>If KoboCollect Android app installed in external memory:
+<code class="docutils literal notranslate"><span class="pre">This</span> <span class="pre">PC\Galaxy</span> <span class="pre">S10+\sdcard\odk</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p><strong>Step 8:</strong> Once you are in the <strong>projects</strong> folder, <strong>files</strong> folder, or the
+<strong>odk</strong> folder <em>(depending on the KoboCollect Android app version you are
+using)</em>, you should see a folder with a similar name (as shown below):</p>
+<p><img alt="Sample image" src="_images/sample_2_folder.png" /></p>
+<p><strong>Step 9:</strong> Enter this folder and <strong>PASTE</strong> the copied items:</p>
+<p><img alt="Sample image of sub folders" src="_images/sub_folders.png" /></p>
+<p>Once this is complete, open the <strong>KoboCollect Android app</strong> from the device
+(where you have pasted the forms and data). You may now use this device to
+continue with data collection and upload the submissions to the server.</p>
+<p class="note">
+  If the forms and data are not visible, you can try restarting your device.
+  This might make the forms and data visible in the app.
+</p><section id="troubleshooting">
+<h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p>While connecting the original Android device with the form and data you wish
+to copy to the PC, you may sometimes see not just one folder, but several
+folders (as shown in the image below):
+<img alt="Sample image of many folders" src="_images/sample_many_folders.png" />
+This is confusing and makes it challenging to select the correct project you
+wish to copy. Although time consuming, you will need to go through all the
+folders to identify the correct folder with the project you are looking for.
+You could also delete any other folders that are no longer needed. For
+instance, if a project has been removed from the app, it may still show up
+as a folder when the device is accessed through the computer. If you are
+sure a project is no longer relevant, deleting the folder will remove it
+completely.</p></li>
+<li><p>Similarly, while connecting the Android mobile phone without the latest
+version of the form (or even no form at all) to the PC, you will sometimes
+see not just one folder but several folders (as shown in the image below):
+<img alt="Sample image of many folders" src="_images/sample_many_folders.png" />
+<em>If the device already has an older form version:</em> You will need to identify
+the correct folder that has the project you are looking for. After
+identifying the correct folder, you should paste all the sub-folders which
+you have copied in here.</p>
+<p><em>If the device does not have any form version at all:</em> If your device does
+not have any form version, but you still see several folders, this could be
+from previous projects that were previously deleted in the app. As described
+earlier, removing a project from the app does not necessarily remove these
+folders. You can delete all unnecessary folders to clean up the space.
+Refresh your view by exiting the folder and returning to it (i.e. project
+folder, or files folder, or the odk folder depending on the KoboCollect
+Android app version you are using). You should now see a single folder. Once
+you have clicked on this folder, you can now paste all of the sub-folders
+that you copied previously (i.e. forms, instances, etc.).</p>
+<p><em>If the KoboCollect app is freshly installed in the device:</em> If you have
+freshly installed KoboCollect app in your device, you may not see any folder
+without first configuring the server settings, as outlined in the support
+article
+<a class="reference internal" href="kobocollect-android.html"><span class="doc">Data Collection on KoboCollect App (Older Version)</span></a>
+and
+<a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc">Data Collection on KoboCollect App (Latest Version)</span></a>.</p>
+</li>
+<li><p>If you have copied the forms and data from one Android device to another and
+are ready to submit the submissions from the device to the server, but still
+have issues submitting them, you can refer to the server configuration
+suggestions that have been outlined in the support articles
+<a class="reference internal" href="kobocollect-android.html"><span class="doc">Data Collection on KoboCollect App (Older Version)</span></a>
+and
+<a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc">Data Collection on KoboCollect App (Latest Version)</span></a>.</p></li>
+</ul>
 </section>
 </section>
 
@@ -161,7 +270,7 @@ been explained above.</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Viewing and Creating Custom Reports"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Transferring forms and data manually from one android device to another"
               class="feedback-button"
               target="_blank"
             >
@@ -234,14 +343,17 @@ been explained above.</p>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
 <p><span class="caption-text">Collecting Data</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Data Collection on KoboCollect App (Latest Version)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect-android.html">Data Collection on KoboCollect App (Older Version)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Transferring forms and data manually from one android device to another</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting:</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">HIPAA Compliance</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
@@ -250,7 +362,7 @@ been explained above.</p>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p><span class="caption-text">Managing Projects and Data</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
@@ -259,10 +371,7 @@ been explained above.</p>
 <li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and Unarchiving Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Managing Permissions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Viewing and Creating Custom Reports</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#learn-how-to-navigate-and-manage-the-data-in-the-reports-page">Learn how to navigate and manage the data in the Reports page.</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Viewing and Creating Custom Reports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, Sharing, and Exporting GPS Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling Data Into Excel Power Query</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editing or Deleting a Single Submission</a></li>
@@ -340,9 +449,9 @@ been explained above.</p>
 
   <script>
     window.docs = {
-      currentPagename: "creating_custom_reports",
-      currentTitle: "Viewing and Creating Custom Reports",
-      currentUrl: ("index.html").replace("index.html", "creating_custom_reports.html"),
+      currentPagename: "transferring_forms",
+      currentTitle: "Transferring forms and data manually from one android device to another",
+      currentUrl: ("index.html").replace("index.html", "transferring_forms.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
