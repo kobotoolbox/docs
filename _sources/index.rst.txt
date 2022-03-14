@@ -24,6 +24,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   gdpr
   training_arabic
   training_french
+  recently_updated
 
 .. toctree::
   :maxdepth: 2

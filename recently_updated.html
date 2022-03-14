@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Exporting and Uploading Data to GIS Software &#8212; KoboToolbox  documentation</title>
+    <title>Recently updated Support Articles &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -25,8 +25,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Row-Level Permissions" href="row_level_permissions.html" />
-    <link rel="prev" title="Pulling Data Into PowerBI" href="pulling_data_into_powerbi.html" />
+    <link rel="next" title="Creating a New Form" href="new_form.html" />
+    <link rel="prev" title="KoboToolbox Training Materials in French" href="training_french.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -87,7 +87,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="upload_to_gis">
+<div class="page page--has-sidebar " id="recently_updated">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -100,46 +100,19 @@
 
         <section class="page__body" role="main">
           
-  <section id="exporting-and-uploading-data-to-gis-software">
-<h1>Exporting and Uploading Data to GIS Software<a class="headerlink" href="#exporting-and-uploading-data-to-gis-software" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/upload_to_gis.md" class="reference">15 Feb 2022</a></p>
-<p><strong>Simple step-by-step process to export and upload your data as a shapefile into
-GIS software, such as ArcMap.</strong></p>
-<p>There are multiple ways to import location-based data collected through
-KoboToolbox into GIS software. This article will outline a recommended procedure
-to download data from KoboToolbox as a CSV file and upload it into ArcMap as a
-shapefile. While this example uses ArcMap, the process is similar to those in
-other geospatial softwares, including QGIS (free).</p>
-<ol>
-<li><p>In the <strong>Downloads</strong> tab of your project page in KoboToolbox, export and
-download your data as a CSV file.</p>
-<p><img alt="image" src="_images/saveas_csv.jpg" /></p>
-<p><em>Note: You can edit the data set once its in the GIS software, however it
-may be easier to first edit in Excel, or similar program. In Excel, use the
-<a class="reference external" href="https://support.office.com/en-us/article/split-a-cell-f1804d0c-e180-4ed0-a2ae-973a0b7c6a23">Text to Columns.</a>
-function to split your CSV data into individual cells.</em></p>
-</li>
-<li><p>Open a new or existing project in ArcMap, go to <strong>Add Data</strong>, and then link
-the folder where your CSV file is saved on your computer.</p>
-<p><img alt="image" src="_images/find_file.jpg" /></p>
-</li>
-<li><p>Open the <strong>Catalog</strong> window and click on <strong>Folder Connections</strong>. Find your
-CSV file, right click it, then select <strong>Create Feature Class</strong> &gt; <strong>From XY
-Table</strong>.</p></li>
-<li><p>In the modal, click the <strong>X Field</strong> drop down and chose your GPS
-question_Longitude option. Also, be sure to choose your <strong>Coordinate System
-of Input Coordinates</strong>…(WGS 1984 is a good one, if you’re not using one
-already) and make sure your <strong>Output</strong> is set to the appropriate folder, then
-click <strong>OK</strong>.</p>
-<p><img alt="image" src="_images/create_feature.jpg" /></p>
-</li>
-<li><p>Back in the <strong>Catalog</strong> window, click and drag your new shapefile into either
-the <strong>Data View</strong> window or <strong>Table of Contents</strong>.</p></li>
-<li><p>You should now see your points on the screen and if you open the <strong>Attributes
-Table</strong>, you’ll see all of the associated data with each point. From this
-point, you can now visualize and run various spatial analyses with your data.</p>
-<p><img alt="image" src="_images/dataview_table.jpg" /></p>
-</li>
+  <section id="recently-updated-support-articles">
+<h1>Recently updated Support Articles<a class="headerlink" href="#recently-updated-support-articles" title="Permalink to this headline">¶</a></h1>
+<!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually--><ol class="simple">
+<li><p><a class="reference internal" href="transferring_forms.html"><span class="doc">﻿Transferring forms and data manually from one android device to another</span></a> (14 Mar 2022)</p></li>
+<li><p><a class="reference internal" href="welcome.html"><span class="doc">What is KoboToolbox</span></a> (14 Mar 2022)</p></li>
+<li><p><a class="reference internal" href="adding_skip_to_matrix.html"><span class="doc">﻿Adding Skip Logic to a Matrix Question</span></a> (11 Mar 2022)</p></li>
+<li><p><a class="reference internal" href="question_options.html"><span class="doc">Using the Question Options</span></a> (08 Mar 2022)</p></li>
+<li><p><a class="reference internal" href="getting_started_xlsform.html"><span class="doc">Getting started with XLSForm</span></a> (19 Feb 2022)</p></li>
+<li><p><a class="reference internal" href="formbuilder.html"><span class="doc">Overview of All Formbuilder Functions</span></a> (19 Feb 2022)</p></li>
+<li><p><a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc">Data Collection on KoboCollect App (Latest Version)</span></a> (15 Feb 2022)</p></li>
+<li><p><a class="reference internal" href="troubleshooting_webforms.html"><span class="doc">Troubleshooting Enketo Web Forms</span></a> (15 Feb 2022)</p></li>
+<li><p><a class="reference internal" href="hipaa_compliance.html"><span class="doc">HIPAA Compliance</span></a> (15 Feb 2022)</p></li>
+<li><p><a class="reference internal" href="is_my_data_safe.html"><span class="doc">Is My Data Safe on Your Server?</span></a> (15 Feb 2022)</p></li>
 </ol>
 </section>
 
@@ -154,7 +127,7 @@ point, you can now visualize and run various spatial analyses with your data.</p
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Exporting and Uploading Data to GIS Software"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Recently updated Support Articles"
               class="feedback-button"
               target="_blank"
             >
@@ -168,7 +141,7 @@ point, you can now visualize and run various spatial analyses with your data.</p
 
 <div class="sidebar_tocs">
   <p><span class="caption-text">Getting Started</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">The KoboToolbox Interface</a></li>
@@ -181,7 +154,7 @@ point, you can now visualize and run various spatial analyses with your data.</p
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="training_arabic.html">KoboToolbox Training Materials in Arabic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Recently updated Support Articles</a></li>
 </ul>
 <p><span class="caption-text">Creating Forms</span></p>
 <ul>
@@ -244,7 +217,7 @@ point, you can now visualize and run various spatial analyses with your data.</p
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p><span class="caption-text">Managing Projects and Data</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
@@ -264,7 +237,7 @@ point, you can now visualize and run various spatial analyses with your data.</p
 <li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting Data into SPSS and/or Stata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling Data Into PowerBI</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Exporting and Uploading Data to GIS Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and Uploading Data to GIS Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="row_level_permissions.html">Row-Level Permissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic Data Attachments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Using Public Collections</a></li>
@@ -331,9 +304,9 @@ point, you can now visualize and run various spatial analyses with your data.</p
 
   <script>
     window.docs = {
-      currentPagename: "upload_to_gis",
-      currentTitle: "Exporting and Uploading Data to GIS Software",
-      currentUrl: ("index.html").replace("index.html", "upload_to_gis.html"),
+      currentPagename: "recently_updated",
+      currentTitle: "Recently updated Support Articles",
+      currentUrl: ("index.html").replace("index.html", "recently_updated.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
