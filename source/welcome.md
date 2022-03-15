@@ -1,5 +1,8 @@
 # What is KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ce92beda123f3286c473373fcf0b69a7b431c46c/source/welcome.md" class="reference">14 Mar 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/ce92beda123f3286c473373fcf0b69a7b431c46c/source/welcome.md" class="reference">14
+Mar 2022</a>
 
 KoboToolbox is a platform for field data collection in challenging environments.
 Our software is [free and open source](https://github.com/kobotoolbox) and
@@ -86,9 +89,9 @@ our [donation page](https://www.kobotoolbox.org/donate/) or reach out to us at
 ## What is the cost of KoboToolbox?
 
 Our platform is open source and entirely free to use for humanitarian
-organizations, and free up to 10,000 submissions for anyone else. We work hard
-to make this possible, and collaborate with many partners to keep KoboToolbox
-available to everyone at no cost.
+organizations, and free up to 10,000 submissions / month and 5GB file storage
+for anyone else . We work hard to make this possible, and collaborate with many
+partners to keep KoboToolbox available to everyone at no cost.
 
 We believe that organizations, particularly those dedicated to research,
 humanitarian efforts or any other social good, should be able to collect data at
