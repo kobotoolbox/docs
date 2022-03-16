@@ -26,10 +26,17 @@ html body header.main-header {
   }
 
   .main-header__navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
     ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
       flex-grow: 0;
       margin: 0;
-      padding: 24px 30px;
+      padding: 0 30px;
       list-style-type: none;
       text-transform: uppercase;
       font-family: "Source Sans Pro", sans-serif;
