@@ -174,12 +174,34 @@ html body header.main-header h1.main-header__logo a:hover {
   color: transparent;
   font-size: 1em;
 }
+html body header.main-header .main-header__navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 html body header.main-header .main-header__navigation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-flex: 0;
       -ms-flex-positive: 0;
           flex-grow: 0;
   margin: 0;
-  padding: 24px 30px;
+  padding: 0 30px;
   list-style-type: none;
   text-transform: uppercase;
   font-family: "Source Sans Pro", sans-serif;
