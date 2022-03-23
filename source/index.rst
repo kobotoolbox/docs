@@ -22,6 +22,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   activation_link
   reset_password
   gdpr
+  data_security_measures
   training_arabic
   training_french
   recently_updated
