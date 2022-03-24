@@ -1,7 +1,7 @@
 # "Select One" and "Select Many" question types
 
-When you have a categorical question with a list of predefined options (choices)
-for respondents to choose from, you have to choose either the "Select One" or
+When you have a categorical question with a list of predefined options for
+respondents to choose from, you have to choose either the "Select One" or
 "Select Many" question type in KoboToolbox. A "Select One" question type, also
 known as a "single response" question, means a respondent can only select a
 single response from a list of options. Similarly, a "Select Many" question type
@@ -25,11 +25,11 @@ include household sources of income or a list of household assets.
 
 ## Setting up the question and choices
 
-Follow the same steps to setting up either a "Select One" or a "Select Many"
+Follow the same steps for setting up either a "Select One" or a "Select Many"
 question:
 
--   In the KoboToolbox formbuilder, click the <i class="k-icon k-icon-plus"></i>
-    button to add a new question.
+-   In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to
+    add a new question.
 -   Type the question label, for example, "What is your marital status?". Then
     click **+ Add Question** (or press **Enter**).
 -   Choose the question type ("Select One" or "Select Many")
@@ -46,7 +46,10 @@ option's label to remove it.
 
 ## Translating question and choice labels
 
-XXX
+For translating select type questions and their labels into other languages
+through the KoboToolbox UI, refer to the support article,
+[Adding Another Language in the Project Dashboard](language_dashboard.md), or
+[here](language_xls.md) if you are creating your form using XLSForm.
 
 ## XML values
 
@@ -55,40 +58,31 @@ choice to specify the XML values or to let KoboToolbox generate them
 automatically.
 
 <p class="note">
-  It is strongly recommended that you specify XML labels for
-  <strong>all questions and choices</strong>, <em>especially</em> if the labels
-  are non-Latin character languages such as Chinese, Arabic or Nepali.
+  It is strongly recommended that you specify XML values for
+  <strong>all questions and choices</strong> before deploying your form,
+  <em>especially</em> if the labels are non-Latin character languages such as
+  Chinese, Arabic or Nepali.
 </p>
 
-XML values are the values that get saved in the database when a user chooses the
-response.
-
-If you would like custom values, such as numbers, to be saved in the database
-when a response is selected (for example, when a respondent chooses "Married" on
-a marital status question, KoboToolbox should save the value 1 in the database).
-In that case, you must type the values where it says "AUTOMATIC" as shown below.
+XML values are the values that get saved in the submission when a user chooses
+the response, not the label. In the formbuilder, type the values where it says
+"AUTOMATIC" as shown below.
 
 ![XML Values](/images/select_one_and_select_many/xml_values.png)
 
-<section class="note">
-  The predefined choices for a "Select One" and "Select Many" questions
-  may sometimes be insufficient in the field while collecting data. Hence, it is
-  advised to keep an option where the enumerators should be able to add the
-  response provided by the respondents to this category. You could create this
-  choice as outlined in our support article <a class="reference"
-  href="user_specified_other.html">User-Specified "Other" Responses
-  for Multiple-Choice Questions</a>.
-</section>
+The predefined choices for a "Select One" and "Select Many" questions may
+sometimes be insufficient while collecting data. It is possible to include the
+option for a text response in that case, as outlined in our support article,
+[User-Specified "Other" Responses for Multiple-Choice Questions](user_specified_other.md).
 
 ## How they are displayed by default on web forms and KoboCollect
 
 ![Comparison of select one and select many on Enketo and KoboCollect](/images/select_one_and_select_many/select_one_select_many_comparison.png)
 
-You can see from the display that you can easily differentiate between a "Select
-One" and a "Select Many" question in a data entry form. The "Select One"
-question has choices with a round button (a dot appears after selecting a
-choice) while the "Select Many" question has a choice with a square button
-(check marks appear after selecting the choices).
+You can easily differentiate between a "Select One" and a "Select Many" question
+in a data entry form. The "Select One" question has choices with a radio button
+(a solid dot appears after selecting an item) while the "Select Many" question
+has choices with a square checkbox (check marks appear after selecting items).
 
 ## Export options
 
@@ -100,26 +94,24 @@ or both. Read more about exporting and downloading data in
 ## Advanced appearances
 
 When adding "Select One" and "Select Many" questions, you can choose from a wide
-range of appearances. Appearances change the way the question is displayed on
-web forms or on KoboCollect.
+range of appearances. Appearances change the way the question is displayed in
+the web forms or KoboCollect.
 
 ![Appearances](/images/select_one_and_select_many/appearances.png)
 
-The following table shows the appearances and how they are displayed both on web
-forms and KoboCollect.
+<p class="note">
+  The option "other" provides you with a space where you can type a different
+  appearance that is not shown on the list.
+</p>
+
+The following table shows the different available appearances and how they are
+displayed both in the web forms and KoboCollect.
 
 ![Appearances](/images/select_one_and_select_many/select_one_select_many_appearances_1.png)
 ![Appearances](/images/select_one_and_select_many/select_one_select_many_appearances_2.png)
 ![Appearances](/images/select_one_and_select_many/select_one_select_many_appearances_3.png)
 
-<section class="note">
-  <p>
-    Note: The option "Other" provides you with a space where you can type a
-    different appearance that is not shown on the list.
-  </p>
-
-  <p>
-    "Quick", "likert" and "quickcompact" are only applicable to "Select One"
-    questions.
-  </p>
-</section>
+<p class="note">
+  The appearances "quick", "likert" and "quickcompact" are only applicable to
+  "Select One" questions.
+</p>
