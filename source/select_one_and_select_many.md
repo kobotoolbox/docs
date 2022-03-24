@@ -1,4 +1,5 @@
 # "Select One" and "Select Many" question types
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a5b8d20271686c6cd30a3a069b8f62d6aa09c1ef/source/select_one_and_select_many.md" class="reference">24 Mar 2022</a>
 
 When you have a categorical question with a list of predefined options for
 respondents to choose from, you have to choose either the "Select One" or
