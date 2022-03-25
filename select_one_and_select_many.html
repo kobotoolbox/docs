@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Data Storage &#8212; KoboToolbox  documentation</title>
+    <title>“Select One” and “Select Many” question types &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -25,8 +25,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Software Architecture" href="software_architecture.html" />
-    <link rel="prev" title="Using the API" href="api.html" />
+    <link rel="next" title="Calculate Question Type" href="calculate_questions.html" />
+    <link rel="prev" title="Rating vs Ranking Question Types" href="rating_ranking.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -90,7 +90,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="data_storage">
+<div class="page page--has-sidebar " id="select_one_and_select_many">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -103,25 +103,107 @@
 
         <section class="page__body" role="main">
           
-  <section id="data-storage">
-<h1>Data Storage<a class="headerlink" href="#data-storage" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/data_storage.md" class="reference">15 Feb 2022</a></p>
-<p>Whether you’re using the humanitarian server supported by
-<a class="reference external" href="https://kobo.humanitarianresponse.info/accounts/login/?next=/#/">UNOCHA</a> or the
-non-humanitarian server supported by
-<a class="reference external" href="https://kf.kobotoolbox.org/accounts/login/?next=/#/">Kobo, Inc.</a>, the data from
-both servers is stored on Amazon Web Services (AWS) servers.</p>
-<p>There are 2 kinds of data stored on AWS, the form itself and the attachments
-related to each submission. The data of the form is saved into the Database (DB)
-and the attachments are saved into Simple Storage Service (S3). The stored data
-in the Database is never deleted unless you delete the data yourself. The
-collected data on S3 is also never deleted, unless you delete it yourself or you
-end up using more space then you’re allowed according to the
-<a class="reference internal" href="server.html"><span class="doc">OCHA/Kobo policies</span></a>.</p>
-<p>You can keep up to 10 data exports at a time per project. If you create an 11th
-export, the oldest one is deleted and only the 10 most recent exports are kept.</p>
-<p>For more information on KoboToolbox data security measures, please refer to this
-other <a class="reference internal" href="is_my_data_safe.html"><span class="doc">help article</span></a>.</p>
+  <section id="select-one-and-select-many-question-types">
+<h1>“Select One” and “Select Many” question types<a class="headerlink" href="#select-one-and-select-many-question-types" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/a5b8d20271686c6cd30a3a069b8f62d6aa09c1ef/source/select_one_and_select_many.md" class="reference">24 Mar 2022</a></p>
+<p>When you have a categorical question with a list of predefined options for
+respondents to choose from, you have to choose either the “Select One” or
+“Select Many” question type in KoboToolbox. A “Select One” question type, also
+known as a “single response” question, means a respondent can only select a
+single response from a list of options. Similarly, a “Select Many” question type
+is also known as a “multiple response” question where a respondent can select
+multiple responses from a list of options.</p>
+<p>“Select One” and “Select Many” question types can be better choices for
+maintaining quality data when the question has a narrow and defined scope. This
+is because, unlike the open-ended nature of the “Text” question type, the two
+select question types limit the user to the options listed.</p>
+<section id="when-to-use-them">
+<h2>When to use them<a class="headerlink" href="#when-to-use-them" title="Permalink to this headline">¶</a></h2>
+<p>Use the “Select One” question type when a question has a list of choices, and
+the respondent is limited to just a single option from the list. Examples
+include marital status, sex, or religion.</p>
+<p>Use the “Select Many” question type if there is a list of choices and the
+respondent may find it appropriate to select more than one choice. Examples
+include household sources of income or a list of household assets.</p>
+</section>
+<section id="setting-up-the-question-and-choices">
+<h2>Setting up the question and choices<a class="headerlink" href="#setting-up-the-question-and-choices" title="Permalink to this headline">¶</a></h2>
+<p>Follow the same steps for setting up either a “Select One” or a “Select Many”
+question:</p>
+<ul class="simple">
+<li><p>In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to
+add a new question.</p></li>
+<li><p>Type the question label, for example, “What is your marital status?”. Then
+click <strong>+ Add Question</strong> (or press <strong>Enter</strong>).</p></li>
+<li><p>Choose the question type (”Select One” or “Select Many”)</p></li>
+<li><p>Type the response labels where there is “Option 1”, “Option 2”. Add more
+choices if necessary.</p></li>
+</ul>
+<p class="note">
+  You can reorder your list of choices by clicking and dragging each item to a
+  new position in the list.
+</p><p>Click the <i class="k-icon k-icon-trash"></i> trash can icon to the left of the
+option’s label to remove it.</p>
+</section>
+<section id="translating-question-and-choice-labels">
+<h2>Translating question and choice labels<a class="headerlink" href="#translating-question-and-choice-labels" title="Permalink to this headline">¶</a></h2>
+<p>For translating select type questions and their labels into other languages
+through the KoboToolbox UI, refer to the support article,
+<a class="reference internal" href="language_dashboard.html"><span class="doc">Adding Another Language in the Project Dashboard</span></a>, or
+<a class="reference internal" href="language_xls.html"><span class="doc">here</span></a> if you are creating your form using XLSForm.</p>
+</section>
+<section id="xml-values">
+<h2>XML values<a class="headerlink" href="#xml-values" title="Permalink to this headline">¶</a></h2>
+<p>When setting up “Select One” and “Select Many” question responses, you have the
+choice to specify the XML values or to let KoboToolbox generate them
+automatically.</p>
+<p class="note">
+  It is strongly recommended that you specify XML values for
+  <strong>all questions and choices</strong> before deploying your form,
+  <em>especially</em> if the labels are non-Latin character languages such as
+  Chinese, Arabic or Nepali.
+</p><p>XML values are the values that get saved in the submission when a user chooses
+the response, not the label. In the formbuilder, type the values where it says
+“AUTOMATIC” as shown below.</p>
+<p><img alt="XML Values" src="_images/xml_values.png" /></p>
+<p>The predefined choices for a “Select One” and “Select Many” questions may
+sometimes be insufficient while collecting data. It is possible to include the
+option for a text response in that case, as outlined in our support article,
+<a class="reference internal" href="user_specified_other.html"><span class="doc">User-Specified “Other” Responses for Multiple-Choice Questions</span></a>.</p>
+</section>
+<section id="how-they-are-displayed-by-default-on-web-forms-and-kobocollect">
+<h2>How they are displayed by default on web forms and KoboCollect<a class="headerlink" href="#how-they-are-displayed-by-default-on-web-forms-and-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Comparison of select one and select many on Enketo and KoboCollect" src="_images/select_one_select_many_comparison.png" /></p>
+<p>You can easily differentiate between a “Select One” and a “Select Many” question
+in a data entry form. The “Select One” question has choices with a radio button
+(a solid dot appears after selecting an item) while the “Select Many” question
+has choices with a square checkbox (check marks appear after selecting items).</p>
+</section>
+<section id="export-options">
+<h2>Export options<a class="headerlink" href="#export-options" title="Permalink to this headline">¶</a></h2>
+<p>When exporting “Select Many” questions, you can choose between exporting all
+selected responses in a single column or having the options in separate columns
+or both. Read more about exporting and downloading data in
+<a class="reference internal" href="export_download.html"><span class="doc">this support article</span></a>.</p>
+</section>
+<section id="advanced-appearances">
+<h2>Advanced appearances<a class="headerlink" href="#advanced-appearances" title="Permalink to this headline">¶</a></h2>
+<p>When adding “Select One” and “Select Many” questions, you can choose from a wide
+range of appearances. Appearances change the way the question is displayed in
+the web forms or KoboCollect.</p>
+<p><img alt="Appearances" src="_images/appearances.png" /></p>
+<p class="note">
+  The option "other" provides you with a space where you can type a different
+  appearance that is not shown on the list.
+</p><p>The following table shows the different available appearances and how they are
+displayed both in the web forms and KoboCollect.</p>
+<p><img alt="Appearances" src="_images/select_one_select_many_appearances_1.png" />
+<img alt="Appearances" src="_images/select_one_select_many_appearances_2.png" />
+<img alt="Appearances" src="_images/select_one_select_many_appearances_3.png" /></p>
+<p class="note">
+  The appearances "quick", "likert" and "quickcompact" are only applicable to
+  "Select One" questions.
+</p></section>
 </section>
 
 
@@ -135,7 +217,7 @@ other <a class="reference internal" href="is_my_data_safe.html"><span class="doc
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Data Storage"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=“Select One” and “Select Many” question types"
               class="feedback-button"
               target="_blank"
             >
@@ -165,7 +247,7 @@ other <a class="reference internal" href="is_my_data_safe.html"><span class="doc
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
 <p><span class="caption-text">Creating Forms</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Getting started with XLSForm</a></li>
@@ -176,7 +258,16 @@ other <a class="reference internal" href="is_my_data_safe.html"><span class="doc
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">“Select One” and “Select Many” question types</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">“Select One” and “Select Many” question types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#when-to-use-them">When to use them</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-the-question-and-choices">Setting up the question and choices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#translating-question-and-choice-labels">Translating question and choice labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xml-values">XML values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-they-are-displayed-by-default-on-web-forms-and-kobocollect">How they are displayed by default on web forms and KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#export-options">Export options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-appearances">Advanced appearances</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Calculate Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Calculate Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="video_question_type.html">Video Question Type</a></li>
@@ -226,7 +317,7 @@ other <a class="reference internal" href="is_my_data_safe.html"><span class="doc
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p><span class="caption-text">Managing Projects and Data</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
@@ -252,7 +343,7 @@ other <a class="reference internal" href="is_my_data_safe.html"><span class="doc
 <li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Using Public Collections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Public Collections Advanced Search</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
 <p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
@@ -313,9 +404,9 @@ other <a class="reference internal" href="is_my_data_safe.html"><span class="doc
 
   <script>
     window.docs = {
-      currentPagename: "data_storage",
-      currentTitle: "Data Storage",
-      currentUrl: ("index.html").replace("index.html", "data_storage.html"),
+      currentPagename: "select_one_and_select_many",
+      currentTitle: "“Select One” and “Select Many” question types",
+      currentUrl: ("index.html").replace("index.html", "select_one_and_select_many.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
