@@ -108,9 +108,7 @@ the web forms or KoboCollect.
 The following table shows the different available appearances and how they are
 displayed both in the web forms and KoboCollect.
 
-![Appearances](/images/select_one_and_select_many/select_one_select_many_appearances_1.png)
-![Appearances](/images/select_one_and_select_many/select_one_select_many_appearances_2.png)
-![Appearances](/images/select_one_and_select_many/select_one_select_many_appearances_3.png)
+![Appearances](/images/select_one_and_select_many/select_one_select_many_table.png)
 
 <p class="note">
   The appearances "quick", "likert" and "quickcompact" are only applicable to
