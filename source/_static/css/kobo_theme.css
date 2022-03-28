@@ -488,7 +488,6 @@ html body {
 }
 .page .page__body img {
   display: block;
-  max-height: 600px;
   margin-left: auto;
   margin-right: auto;
 }
