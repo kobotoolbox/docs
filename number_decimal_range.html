@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Exporting and Uploading Data to GIS Software &#8212; KoboToolbox  documentation</title>
+    <title>Number, Decimal and Range Question Types &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -25,8 +25,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Row-Level Permissions" href="row_level_permissions.html" />
-    <link rel="prev" title="Pulling Data Into PowerBI" href="pulling_data_into_powerbi.html" />
+    <link rel="next" title="Rating vs Ranking Question Types" href="rating_ranking.html" />
+    <link rel="prev" title="Limiting Responses with Validation Criteria" href="validation_criteria.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -90,7 +90,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="upload_to_gis">
+<div class="page page--has-sidebar " id="number_decimal_range">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -103,47 +103,72 @@
 
         <section class="page__body" role="main">
           
-  <section id="exporting-and-uploading-data-to-gis-software">
-<h1>Exporting and Uploading Data to GIS Software<a class="headerlink" href="#exporting-and-uploading-data-to-gis-software" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/upload_to_gis.md" class="reference">15 Feb 2022</a></p>
-<p><strong>Simple step-by-step process to export and upload your data as a shapefile into
-GIS software, such as ArcMap.</strong></p>
-<p>There are multiple ways to import location-based data collected through
-KoboToolbox into GIS software. This article will outline a recommended procedure
-to download data from KoboToolbox as a CSV file and upload it into ArcMap as a
-shapefile. While this example uses ArcMap, the process is similar to those in
-other geospatial softwares, including QGIS (free).</p>
-<ol>
-<li><p>In the <strong>Downloads</strong> tab of your project page in KoboToolbox, export and
-download your data as a CSV file.</p>
-<p><img alt="image" src="_images/saveas_csv.jpg" /></p>
-<p><em>Note: You can edit the data set once its in the GIS software, however it
-may be easier to first edit in Excel, or similar program. In Excel, use the
-<a class="reference external" href="https://support.office.com/en-us/article/split-a-cell-f1804d0c-e180-4ed0-a2ae-973a0b7c6a23">Text to Columns.</a>
-function to split your CSV data into individual cells.</em></p>
-</li>
-<li><p>Open a new or existing project in ArcMap, go to <strong>Add Data</strong>, and then link
-the folder where your CSV file is saved on your computer.</p>
-<p><img alt="image" src="_images/find_file.jpg" /></p>
-</li>
-<li><p>Open the <strong>Catalog</strong> window and click on <strong>Folder Connections</strong>. Find your
-CSV file, right click it, then select <strong>Create Feature Class</strong> &gt; <strong>From XY
-Table</strong>.</p></li>
-<li><p>In the modal, click the <strong>X Field</strong> drop down and chose your GPS
-question_Longitude option. Also, be sure to choose your <strong>Coordinate System
-of Input Coordinates</strong>…(WGS 1984 is a good one, if you’re not using one
-already) and make sure your <strong>Output</strong> is set to the appropriate folder, then
-click <strong>OK</strong>.</p>
-<p><img alt="image" src="_images/create_feature.jpg" /></p>
-</li>
-<li><p>Back in the <strong>Catalog</strong> window, click and drag your new shapefile into either
-the <strong>Data View</strong> window or <strong>Table of Contents</strong>.</p></li>
-<li><p>You should now see your points on the screen and if you open the <strong>Attributes
-Table</strong>, you’ll see all of the associated data with each point. From this
-point, you can now visualize and run various spatial analyses with your data.</p>
-<p><img alt="image" src="_images/dataview_table.jpg" /></p>
-</li>
-</ol>
+  <section id="number-decimal-and-range-question-types">
+<h1>Number, Decimal and Range Question Types<a class="headerlink" href="#number-decimal-and-range-question-types" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/bee2f6203c95d0a965438b4ad7f173902c608dca/source/number_decimal_range.md" class="reference">28 Mar 2022</a></p>
+<p>When creating questions with numeric responses, you can choose between the
+“Number”, “Decimal” and “Range” question types in KoboToolbox.</p>
+<p>This article describes these question types and how to use them.</p>
+<section id="when-to-use-them">
+<h2>When to use them<a class="headerlink" href="#when-to-use-them" title="Permalink to this headline">¶</a></h2>
+<p><strong>Number:</strong> The “Number” question type in the formbuilder is equivalent to the
+<code class="docutils literal notranslate"><span class="pre">integer</span></code> question type in XLSForm. Use the “Number” question type when
+responses to a question will be in the form of whole numbers, such as number of
+children (1, 3, 5, etc.).</p>
+<p><strong>Decimal:</strong> Use the “Decimal” question type when a question’s response will be
+in the form of decimal numbers, such as monthly income (1.2, 34.5, 42.42, etc.).</p>
+<p><strong>Range:</strong> The “Range” question type can collect both integer and decimal
+values. By default, the “Range” question type displays a sliding scale that
+allows users to pick a number. When setting it up, you must define the <code class="docutils literal notranslate"><span class="pre">start</span></code>
+and <code class="docutils literal notranslate"><span class="pre">end</span></code> values of the range as well as the <code class="docutils literal notranslate"><span class="pre">step</span></code> between them.</p>
+</section>
+<section id="how-to-set-them-up">
+<h2>How to set them up<a class="headerlink" href="#how-to-set-them-up" title="Permalink to this headline">¶</a></h2>
+<p>To set up the “Number” and “Decimal” question types:</p>
+<ul class="simple">
+<li><p>In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to
+add a new question.</p></li>
+<li><p>Type the question text. For example, “How many people live in this
+household?”. Then click “<i class="k-icon k-icon-plus"></i> ADD QUESTION”
+(or press Enter).</p></li>
+<li><p>Choose the question type (”Number” or “Decimal”).</p></li>
+</ul>
+<p><img alt="Setting up number questions" src="_images/setup_number_question.gif" /></p>
+<p>To add a “Range” question type:</p>
+<ul class="simple">
+<li><p>In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to
+add a new question.</p></li>
+<li><p>Type the question text. For example, “Rate the effectiveness of the project
+from 1 to 5 (5 being most effective)”. Then click
+“<i class="k-icon k-icon-plus"></i> ADD QUESTION” (or press Enter).</p></li>
+<li><p>Choose the “Range” question type.</p></li>
+<li><p>Type the <code class="docutils literal notranslate"><span class="pre">start</span></code> value (in this example, 1).</p></li>
+<li><p>Type the <code class="docutils literal notranslate"><span class="pre">end</span></code> value (in this example, 5).</p></li>
+<li><p>Type in the <code class="docutils literal notranslate"><span class="pre">step</span></code>, the number of steps from one value to the next. (In this
+example, 1, meaning the options on the sliding scale are 1, 2, 3, 4, 5).</p></li>
+</ul>
+<p><img alt="Setting up range questions" src="_images/setup_range_question.gif" /></p>
+<p class="note">
+  It is strongly recommended that you specify names for
+  <strong>all questions</strong> before deploying your form,
+  <em>especially</em> if the labels are non-Latin character languages such as
+  Chinese, Arabic or Nepali.
+</p></section>
+<section id="translating-question-labels">
+<h2>Translating question labels<a class="headerlink" href="#translating-question-labels" title="Permalink to this headline">¶</a></h2>
+<p>For translating question labels into other languages through the KoboToolbox UI,
+refer to the support article,
+<a class="reference internal" href="language_dashboard.html"><span class="doc">Adding Another Language in the Project Dashboard</span></a>, or
+<a class="reference internal" href="language_xls.html"><span class="doc">here</span></a> if you are creating your form using XLSForm.</p>
+</section>
+<section id="how-they-are-displayed-by-default-on-web-forms-and-kobocollect">
+<h2>How they are displayed by default on web forms and KoboCollect<a class="headerlink" href="#how-they-are-displayed-by-default-on-web-forms-and-kobocollect" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Number, Decimal and Range questions" src="_images/number_decimal_range_default.png" /></p>
+</section>
+<section id="advanced-appearances">
+<h2>Advanced appearances<a class="headerlink" href="#advanced-appearances" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Number, Decimal and Range advanced appearances" src="_images/number_decimal_range_advanced.png" /></p>
+</section>
 </section>
 
 
@@ -157,7 +182,7 @@ point, you can now visualize and run various spatial analyses with your data.</p
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Exporting and Uploading Data to GIS Software"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Number, Decimal and Range Question Types"
               class="feedback-button"
               target="_blank"
             >
@@ -187,7 +212,7 @@ point, you can now visualize and run various spatial analyses with your data.</p
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
 <p><span class="caption-text">Creating Forms</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Getting started with XLSForm</a></li>
@@ -197,7 +222,14 @@ point, you can now visualize and run various spatial analyses with your data.</p
 <li class="toctree-l1"><a class="reference internal" href="question_options.html">Using the Question Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Number, Decimal and Range Question Types</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Number, Decimal and Range Question Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#when-to-use-them">When to use them</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-set-them-up">How to set them up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#translating-question-labels">Translating question labels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-they-are-displayed-by-default-on-web-forms-and-kobocollect">How they are displayed by default on web forms and KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-appearances">Advanced appearances</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">“Select One” and “Select Many” question types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Calculate Question Type</a></li>
@@ -249,7 +281,7 @@ point, you can now visualize and run various spatial analyses with your data.</p
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p><span class="caption-text">Managing Projects and Data</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
@@ -269,7 +301,7 @@ point, you can now visualize and run various spatial analyses with your data.</p
 <li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting Data into SPSS and/or Stata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Pulling Data Into PowerBI</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Exporting and Uploading Data to GIS Software</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and Uploading Data to GIS Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="row_level_permissions.html">Row-Level Permissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic Data Attachments</a></li>
 <li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Using Public Collections</a></li>
@@ -336,9 +368,9 @@ point, you can now visualize and run various spatial analyses with your data.</p
 
   <script>
     window.docs = {
-      currentPagename: "upload_to_gis",
-      currentTitle: "Exporting and Uploading Data to GIS Software",
-      currentUrl: ("index.html").replace("index.html", "upload_to_gis.html"),
+      currentPagename: "number_decimal_range",
+      currentTitle: "Number, Decimal and Range Question Types",
+      currentUrl: ("index.html").replace("index.html", "number_decimal_range.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
