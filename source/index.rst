@@ -42,6 +42,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   skip_logic
   validation_criteria
   rating_ranking
+  select_one_and_select_many
   calculate_questions
   advanced_calculate
   video_question_type
