@@ -234,14 +234,14 @@ have opened your new Excel workbook. For details, please see the video below:
   <a
     download
     class="reference"
-    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge).xls"
+    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge).xlsx"
     >here</a
   >
   and the example sample dataset
   <a
     download
     class="reference"
-    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge)_dataset.xls"
+    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge)_dataset.xlsx"
     >here</a
   >
   that were used in this article.
