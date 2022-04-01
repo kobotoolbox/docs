@@ -18,7 +18,8 @@ GIT_IGNORE_HASH = '74dc12829b7ae2ce0c6c36364c5791b9f94d489d'
 GIT_IGNORE_MSG = 'last updated'
 RECENTLY_UPDATED_FILE = 'source/recently_updated.md'
 FILES_IGNORE = [RECENTLY_UPDATED_FILE]
-DATE_STRING_FMT = '%d %b %Y'
+DATE_STRING_IN_FMT = '%d %b %Y'
+DATE_STRING_OUT_FMT = '%-d %b %Y'
 
 
 files_by_date = []
@@ -57,7 +58,7 @@ def update_file(path):
     files_by_date.append(
         {
             'path': path,
-            'date': datetime.strptime(date, DATE_STRING_FMT),
+            'date': datetime.strptime(date, DATE_STRING_IN_FMT),
         }
     )
 
@@ -96,7 +97,7 @@ def get_recently_updated_item(file):
     return '1. [{title}]({filename}) ({date})\n'.format(
         title=get_title(file['path']),
         filename=os.path.basename(file['path']),
-        date=datetime.strftime(file['date'], DATE_STRING_FMT),
+        date=datetime.strftime(file['date'], DATE_STRING_OUT_FMT),
     )
 
 
