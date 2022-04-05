@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Is My Data Safe on Your Server? &#8212; KoboToolbox  documentation</title>
+    <title>KoboToolbox data security measures: Keeping your data safe &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -103,48 +103,117 @@
 
         <section class="page__body" role="main">
           
-  <section id="is-my-data-safe-on-your-server">
-<h1>Is My Data Safe on Your Server?<a class="headerlink" href="#is-my-data-safe-on-your-server" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/is_my_data_safe.md" class="reference">15 Feb 2022</a></p>
-<p>Most users use one of the two server instances that we support:
-<a class="reference external" href="https://kobo.humanitarianresponse.info/accounts/login/?next=/#/">KoboToolbox by OCHA</a>
-(for humanitarian workers) and
-<a class="reference external" href="https://kf.kobotoolbox.org/accounts/login/?next=/#/">KoboToolbox by Kobo</a> (for
-everyone else). KoboToolbox can also be installed on local computers or your own
-web servers. This article is about the security of your data on one of the two
-supported servers hosted by <a class="reference external" href="https://www.kobotoolbox.org/kobo">Kobo, Inc.</a> and
-OCHA.</p>
-<p>We take the protection of collected data very seriously. Data from both servers
-is hosted by Amazon Web Services (AWS). Both servers are administered using best
-practice tools and mechanisms to keep data safe from intrusion or loss.</p>
-<p>The instance hosted by Kobo (<a class="reference external" href="https://kf.kobotoolbox.org">kf.kobotoolbox.org</a>)
-is physically located in the United States of America. <strong>The humanitarian
-instance financed by OCHA, is hosted at a data center in Ireland.</strong></p>
-<p>AWS security information can be found on
-<a class="reference external" href="https://aws.amazon.com/security/">this page</a>. In addition, we do regular
-database backups to protect against any eventuality. The privacy policy and
-terms of use are both linked here.</p>
-<p>Once your data is received on the server it is stored in accounts protected by
-usernames and passwords. However, unless it was encrypted on the handset
-<a class="reference internal" href="encrypting_forms.html"><span class="doc">(see this article)</span></a>, it will be stored ‘in the clear’ on
-the server filesystem or within its database, which means that our server
-administrators could potentially access it.</p>
-<p>For
-<a class="reference external" href="https://kobo.humanitarianresponse.info/accounts/login/?next=/#/">kobo.humanitarianresponse.info</a>
-and
-<a class="reference external" href="https://kobo.humanitarianresponse.info/accounts/login/?next=/kobocat/#/">kc.humanitarianresponse.info</a>
-only the server administrator has technical access to the database, and we will
-never access your data unless you have given us explicit access to it. However,
-to have complete control and ownership of your data, you are also free to
-install an instance of KoboToolbox on your own server.</p>
-<p>All user passwords are only stored fully encrypted on the KoboToolbox server,
-using the default open source framework provided by Django, which we use for our
-backend. Django uses the
-<a class="reference external" href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2 algorithm</a> with a
-<a class="reference external" href="https://en.wikipedia.org/wiki/SHA-2">SHA256 hash</a>. This approach is considered
-very secure as such encrypted passwords require enormous amounts of computing
-power and time to break. Read more about Django’s password encryption process
-<a class="reference external" href="https://docs.djangoproject.com/en/1.8/topics/auth/passwords/">here</a>.</p>
+  <section id="kobotoolbox-data-security-measures-keeping-your-data-safe">
+<h1>KoboToolbox data security measures: Keeping your data safe<a class="headerlink" href="#kobotoolbox-data-security-measures-keeping-your-data-safe" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8672788dc576b8185853b609420a64793c57b8a0/source/is_my_data_safe.md" class="reference">5 Apr 2022</a></p>
+<p>We take data protection very seriously. Data security means protecting our
+users’ data from any threats that may exist. This article summarizes some of our
+administrative, physical, organizational, and technical measures for enforcing
+data security on the KoboToolbox servers maintained by Kobo, Inc., the
+<a class="reference external" href="https://www.kobotoolbox.org/kobo/">nonprofit organization behind KoboToolbox</a>.</p>
+<p>We are fully compliant with the European Union’s General Data Protection
+Regulation (GDPR). If you are located in the European Union,
+<a class="reference external" href="https://www.digisigner.com/online/showTemplate?linkId=772fa6c1-a184-41bf-8e95-9e6dbf0c866bhttp://">you can sign a data processing agreement (DPA) here</a>.</p>
+<section id="confidentiality">
+<h2>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this headline">¶</a></h2>
+<p><strong>Physical Access Control</strong></p>
+<ul class="simple">
+<li><p>Physical access control measures, amongst others, are implemented by Amazon
+Web Services (AWS), which is used to host our KoboToolbox servers. These
+measures include, for example, video surveillance and physical security of
+server and network facilities, maintaining key card access control, limiting
+access to only authorized personnel. For a full list of details about AWS
+technical and organizational measures for physical access control,
+<a class="reference external" href="http://https://aws.amazon.com/compliance/data-center/controls/.">see this article</a>.</p></li>
+</ul>
+<p><strong>Electronic Access Control</strong></p>
+<ul class="simple">
+<li><p>All KoboToolbox accounts are password-protected. Users are provided visual
+feedback about the complexity of their password, which encourages them to
+select a stronger password when applicable. Only encrypted password hashes
+are stored on the KoboToolbox server, utilizing the default open-source
+framework provided by Django, which uses the
+<a class="reference external" href="http://https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> algorithm
+with a SHA256 hash. Plain text passwords are never saved on the server.</p></li>
+<li><p>All database content is encrypted at rest (disk-level encryption).</p></li>
+<li><p>Data sent to the server is encrypted in transit using SHA-256 with RSA
+encryption.</p></li>
+<li><p>Users can
+<a class="reference external" href="http://https://support.kobotoolbox.org/encrypting_forms.html">choose to also enable encryption of their project data (data-level encryption)</a>
+which renders it inaccessible at all stages of data processing and requires
+a private key to decrypt it locally.</p></li>
+</ul>
+<p><strong>Internal Access Control</strong></p>
+<ul class="simple">
+<li><p>Only authorized system administrators can access the KoboToolbox Server.
+They may only do so for the express purpose of updating installed software
+or maintaining the server infrastructure.</p></li>
+<li><p>System administrators require additional authentication, including SSH
+Public Key authentication, for accessing the KoboToolbox Server and
+two-factor authentication for accessing control panels provided by AWS.</p></li>
+<li><p>AWS provides a log of actions taken in the AWS Console. For SSH connections
+into the individual KoboToolbox Server instances, Kobo collects “system
+access events” by SSH key, which can then be matched to the authorized
+users.</p></li>
+<li><p>SSH is further protected against brute-force attempts and unauthorized
+access by limiting connections at the firewall level to only a small list of
+explicitly-allowed IP addresses.</p></li>
+</ul>
+<p><strong>Data Protection by Design and Default</strong></p>
+<ul class="simple">
+<li><p>Only limited information is required for creating a KoboToolbox user
+account.</p></li>
+<li><p>Kobo staff are required to abide by the rules set out in Kobo’s privacy
+policies.</p></li>
+<li><p>Data processed on behalf of the user is not accessed by Kobo.</p></li>
+<li><p>Users are provided the option of applying advanced encryption. This ensures
+that data is encrypted using a public key before it is submitted to a
+KoboToolbox Server, and that it can only be decrypted with a private key on
+a local computer. KoboToolbox also offers the possibility of removing
+information in bulk once it has been collected, facilitating the
+pseudonymization of Personal Data (through the removal of identifiers).</p></li>
+<li><p>See above sub-section “Electronic Access Control” for details about visual
+feedback on password complexity.</p></li>
+</ul>
+</section>
+<section id="integrity">
+<h2>Integrity<a class="headerlink" href="#integrity" title="Permalink to this headline">¶</a></h2>
+<p><strong>Data Transfer Control</strong></p>
+<ul class="simple">
+<li><p>All data in transit is protected using SHA-256 with RSA encryption. <strong>Data
+Entry Control</strong></p></li>
+<li><p>Users control who has the permission to enter data based on their
+KoboToolbox permissions. HTTP access logs stored on the server include the
+authenticated user for most requests.</p></li>
+</ul>
+</section>
+<section id="availability-and-resilience">
+<h2>Availability and Resilience<a class="headerlink" href="#availability-and-resilience" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Kobo conducts daily backups of all databases to a separate, remote location.
+In case of a critical outage, all user data will be restored from the most
+recent backup as quickly as possible.</p></li>
+<li><p>Firewalls block all external requests except for SSH connections from a
+small list of explicitly allowed IP addresses. Public HTTP and HTTPS traffic
+cannot connect directly to the KoboToolbox Server, instead it is serviced by
+the AWS load balancer, which then forwards it to Kobo’s front-end servers.</p></li>
+<li><p>KoboToolbox Servers are configured to use multiple concurrently running
+server instances and are set to increase the number of such instances to
+avoid the impact of any localized failures. In case of any other failures
+that threaten continuous operation of critical aspects of the KoboToolbox
+software, system administrators stand by to intervene on short notice to
+restore service.</p></li>
+<li><p>Kobo’s reporting procedures include automated alerts, escalation of
+user-reported issues, and self-noticed problems by staff.</p></li>
+<li><p>Contingency plans include the availability of multiple people in multiple
+geographic locations who can respond to emergencies and restore service.</p></li>
+<li><p>KoboToolbox Servers have the demonstrated ability to continue operating in a
+degraded state, receiving submissions while simultaneously recovering lost
+projects/submissions via to-the-minute point-in-time recovery (PITR).</p></li>
+<li><p>Users found to abuse the use of their accounts by overburdening the
+KoboToolbox Server may be suspended or their account may be restricted.</p></li>
+</ul>
+</section>
 </section>
 
 
@@ -158,7 +227,7 @@ power and time to break. Read more about Django’s password encryption process
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Is My Data Safe on Your Server?"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=KoboToolbox data security measures: Keeping your data safe"
               class="feedback-button"
               target="_blank"
             >
@@ -179,7 +248,12 @@ power and time to break. Read more about Django’s password encryption process
 <li class="toctree-l1"><a class="reference internal" href="overview_of_creating_a_project.html">Overview of creating and managing projects in KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Is My Data Safe on Your Server?</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">KoboToolbox data security measures: Keeping your data safe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#confidentiality">Confidentiality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#integrity">Integrity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#availability-and-resilience">Availability and Resilience</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="activation_link.html">Didn’t Receive Activation Link After Signing Up</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">General Data Protection Regulation (GDPR)</a></li>
@@ -338,7 +412,7 @@ power and time to break. Read more about Django’s password encryption process
   <script>
     window.docs = {
       currentPagename: "is_my_data_safe",
-      currentTitle: "Is My Data Safe on Your Server?",
+      currentTitle: "KoboToolbox data security measures: Keeping your data safe",
       currentUrl: ("index.html").replace("index.html", "is_my_data_safe.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
