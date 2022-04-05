@@ -70,3 +70,15 @@ _username_ and _password_:
 | ----------- | ----------------------------------------------------------------------------------------------------- |
 | OCHA server | <a href="https://kobo.humanitarianresponse.info" class="reference">kobo.humanitarianresponse.info</a> |
 | Kobo server | <a href="https://kf.kobotoolbox.org" class="reference">kf.kobotoolbox.org</a>                         |
+
+## Troubleshooting
+
+1. Make sure to follow the guidelines listed below to create a valid username:
+   * The length of a username can range from 2 to 30 characters.
+   * All the characters used in a username should be in lowercase. The use of uppercase letters would make the username invalid, and the system should not accept such username.
+   * A username could be made up of a combination of  lowercase characters, numbers, and underscores. Use of special characters (such as `~`, `!`, `@`, `#`, `$`, `%`, `^`, `&`, `*`, `?`) are not accepted in a username. However, they can be used in the password to make your password strong.
+   * The first character of a username should always be a letter or else the username will be invalid.
+2. You may be suggested to choose another username (despite following all the checklist listed above) if the username you have applied for has already been registered within the system.
+3. Check carefully and ensure you don't have any typos in the registration form (with the `username` and `password`) or otherwise you may end up with a mismatch and the system may not allow you to login. Store your `username` and `password` in a safe place so that you don't lose them and someone else does not access them without your consent.
+4. If you make a typo in the email, while registering your user account, you may not receive the activation link sent by the system. Please verify the information on the registration form once it has been filled out. *(e.g. if you typed a wrong email ID say `example@gmai.com` or `exampl@gmail.com` you may not receive the activation link to your email id `example@gmail.com`)*
+5. Make sure you change your `password` at a regular interval so that your account is safe and secure.
