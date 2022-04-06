@@ -76,8 +76,10 @@ Regulation (GDPR). If you are located in the European Union,
 
 **Data Transfer Control**
 
--   All data in transit is protected using SHA-256 with RSA encryption. **Data
-    Entry Control**
+-   All data in transit is protected using SHA-256 with RSA encryption. 
+
+**Data Entry Control**
+
 -   Users control who has the permission to enter data based on their
     KoboToolbox permissions. HTTP access logs stored on the server include the
     authenticated user for most requests.
