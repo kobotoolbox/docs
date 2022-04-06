@@ -29,7 +29,7 @@ html body div.footer {
 
   p {
     @include page-wrapper();
-    margin: 0.4em 0;
+    margin: 0.4em auto;
 
     &:last-child {
       margin-top: 1.5em;
