@@ -1,5 +1,5 @@
 # KoboToolbox data security measures: Keeping your data safe
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8672788dc576b8185853b609420a64793c57b8a0/source/is_my_data_safe.md" class="reference">5 Apr 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6850d1df2ba932a6cef4107d19fc8be72f3f2347/source/is_my_data_safe.md" class="reference">6 Apr 2022</a>
 
 We take data protection very seriously. Data security means protecting our
 users’ data from any threats that may exist. This article summarizes some of our
@@ -21,7 +21,8 @@ Regulation (GDPR). If you are located in the European Union,
     server and network facilities, maintaining key card access control, limiting
     access to only authorized personnel. For a full list of details about AWS
     technical and organizational measures for physical access control,
-    [see this article](https://aws.amazon.com/compliance/data-center/controls/) on data center controls provided by AWS.
+    [see this article](https://aws.amazon.com/compliance/data-center/controls/)
+    on data center controls provided by AWS.
 
 **Electronic Access Control**
 
@@ -30,13 +31,13 @@ Regulation (GDPR). If you are located in the European Union,
     select a stronger password when applicable. Only encrypted password hashes
     are stored on the KoboToolbox server, utilizing the default open-source
     framework provided by Django, which uses the
-    [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) algorithm
-    with a SHA256 hash. Plain text passwords are never saved on the server.
+    [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) algorithm with a SHA256 hash.
+    Plain text passwords are never saved on the server.
 -   All database content is encrypted at rest (disk-level encryption).
 -   Data sent to the server is encrypted in transit using SHA-256 with RSA
     encryption.
 -   Users can
-    [choose to also enable encryption of their project data (data-level encryption)](https://support.kobotoolbox.org/encrypting_forms.html)
+    [choose to also enable encryption of their project data (data-level encryption)](encrypting_forms.md)
     which renders it inaccessible at all stages of data processing and requires
     a private key to decrypt it locally.
 
@@ -76,7 +77,7 @@ Regulation (GDPR). If you are located in the European Union,
 
 **Data Transfer Control**
 
--   All data in transit is protected using SHA-256 with RSA encryption. 
+-   All data in transit is protected using SHA-256 with RSA encryption.
 
 **Data Entry Control**
 
