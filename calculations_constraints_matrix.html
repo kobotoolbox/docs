@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>The KoboToolbox Interface &#8212; KoboToolbox  documentation</title>
+    <title>Adding Calculations (Column Total &amp; Row Total) and Constraints in a Matrix Question &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -25,8 +25,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Overview of creating and managing projects in KoboToolbox" href="overview_of_creating_a_project.html" />
-    <link rel="prev" title="Creating an account on KoboToolbox" href="creating_account.html" />
+    <link rel="next" title="Including Responses Inside Another Question" href="responses_inside_question.html" />
+    <link rel="prev" title="Adding Skip Logic to a Matrix Question" href="adding_skip_to_matrix.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -90,7 +90,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="kobotoolbox_interface">
+<div class="page page--has-sidebar " id="calculations_constraints_matrix">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -103,128 +103,42 @@
 
         <section class="page__body" role="main">
           
-  <section id="the-kobotoolbox-interface">
-<h1>The KoboToolbox Interface<a class="headerlink" href="#the-kobotoolbox-interface" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobotoolbox_interface.md" class="reference">15 Feb 2022</a></p>
-<p>This article will walk you through the <strong>KoboToolbox</strong> interface, helping you
-get familiar with the different elements.</p>
-<p>By default, when you log in to your <strong>KoboToolbox</strong> account, you will be taken
-to the <strong>Projects</strong> screen.</p>
-<p><img alt="KoboToolbox Interface" src="_images/interface.png" /></p>
-<p>You can switch between the <i class="k-icon k-icon-projects"></i> <strong>Projects</strong>
-and <i class="k-icon k-icon-library"></i> <strong>Library</strong> sections using the buttons
-on the top left of the screen.</p>
-<section id="search-bar">
-<h2>Search bar<a class="headerlink" href="#search-bar" title="Permalink to this headline">¶</a></h2>
-<p>Depending on whether you are on the <strong>Projects</strong> or <strong>Library</strong> section, the
-search bar at the top allows you to quickly filter the items displayed.</p>
+  <section id="adding-calculations-column-total-row-total-and-constraints-in-a-matrix-question">
+<h1>Adding Calculations (Column Total &amp; Row Total) and Constraints in a Matrix Question<a class="headerlink" href="#adding-calculations-column-total-row-total-and-constraints-in-a-matrix-question" title="Permalink to this headline">¶</a></h1>
+<p>When working in the Formbuilder, it is simple to add calculations (see <strong><a class="reference internal" href="calculate_questions.html"><span class="doc">Calculate Question Type</span></a></strong>) or constraints (see <strong><a class="reference internal" href="validation_criteria.html"><span class="doc">Limiting Responses with Validation Criteria</span></a></strong>) to almost any question type. While  Formbuilder does not currently support directly adding these features to matrix question, you can use an XLSForm to do so. The steps listed below in this support article will illustrate how you can add calculations (column total &amp; row total) and constraints to a matrix question using XLSForm.</p>
+<p><strong>Step 1: Create a matrix question in the Formbuilder</strong></p>
+<p>The first step is creating a matrix question in the Formbuilder (as outlined in the support article <strong><a class="reference internal" href="matrix_response.html"><span class="doc">Question Matrix Response Type</span></a></strong>). Simply add rows and columns with the variables necessary for data collection.</p>
+<p><strong>Step 2: Download the form as XLSForm</strong></p>
+<p>Once the matrix question is ready, <strong>SAVE</strong> the form and download it as an XLSForm.</p>
+<p><strong>Step 3: Add all appropriate column headers to your XLSForm</strong></p>
+<p>Open the XLSForm and add <code class="docutils literal notranslate"><span class="pre">calculation</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint</span></code> and <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code> column headers. With these column headers, you will be able to add the <em>column total</em> and <em>row total</em> expressions under the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column header. You can also add appropriate <em>constraints</em> under the <code class="docutils literal notranslate"><span class="pre">constraint</span></code> column header and <em>constraint message</em> under the <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code> header as needed. Additionally, you may also choose to add a <code class="docutils literal notranslate"><span class="pre">read_only</span></code> column header to your XLSForm to restrict enumerators from editing the responses while collecting data to certain questions (for example, the row total and column total that gets auto-calculated).</p>
+<p><img alt="Survey Tab" src="_images/survey_tab.png" /></p>
+<p class="note">In the image above, you may notice that the <b><i>name</i></b> inputs are shorter. In this example, they have been renamed from the ones auto-generated in the formbuilder to capture the entire screenshot of the survey tab. If you choose to rename yours, make sure to use your new variable names in the <b><i>calculation</i></b> and <b><i>constraint</i></b> column headers.</p><p><strong>Step 4: Replace XLSForm</strong></p>
+<p>Upload and replace your XLSForm within the existing project, or create a new project (if needed).</p>
+<p><strong>Step 5: Deploy form</strong></p>
+<p>Once you have replaced the XLSForm (or uploaded the XLSForm as a new project), you will need to deploy your form.</p>
+<p><strong>Step 6: Collect data</strong></p>
+<p>After deploying the form, you can go to <strong>FORM&gt;Collect Data&gt;OPEN</strong> to start collecting data with the web form.</p>
+<section id="data-entry-screen-as-seen-in-enketo-web-form-when-nothing-is-entered">
+<h2>Data entry screen as seen in Enketo (web form): <em>when nothing is entered</em><a class="headerlink" href="#data-entry-screen-as-seen-in-enketo-web-form-when-nothing-is-entered" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Enketo Nothing Entered" src="_images/enketo_nothing_entered.png" /></p>
 </section>
-<section id="user-profile-options">
-<h2>User profile options<a class="headerlink" href="#user-profile-options" title="Permalink to this headline">¶</a></h2>
-<p>On the far right of the interface is your user account avatar. Clicking it opens
-up a drop-down menu with options to change your account settings (such as
-updating your basic information and changing your password), interface language,
-and to log out.</p>
-<p><img alt="User menu" src="_images/user_actions.png" /></p>
+<section id="data-entry-screen-as-seen-in-enketo-web-form-when-an-input-error-is-made">
+<h2>Data entry screen as seen in Enketo (web form): <em>when an input error is made</em><a class="headerlink" href="#data-entry-screen-as-seen-in-enketo-web-form-when-an-input-error-is-made" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Enketo Wrong Inputs Entered" src="_images/enketo_wrong_inputs_entered.png" /></p>
+<p>Here you will see that there are only five total household members. If an enumerator enters 6 for the number of males (0-14 Years), the constraint will show an error message.</p>
 </section>
-<section id="draft-deployed-and-archived-projects">
-<h2>Draft, deployed and archived projects<a class="headerlink" href="#draft-deployed-and-archived-projects" title="Permalink to this headline">¶</a></h2>
-<p>In the <strong>Projects</strong> section of the interface, your individual projects are
-organized into 3 categories:</p>
-<ol class="simple">
-<li><p><strong>Draft</strong> projects are forms that have been created but not deployed. These
-forms will not appear on <strong>KoboCollect</strong> for data entry until they have been
-deployed.</p></li>
-<li><p>When a form has been deployed, it will appear under <strong>Deployed</strong>. These forms
-are available for data collection through both <strong>KoboCollect</strong> and <strong>Enketo</strong>
-web forms.</p></li>
-<li><p>When data collection is complete, you can archive the project. These projects
-will appear under <strong>Archived</strong>.</p></li>
-</ol>
-</section>
-<section id="project-actions">
-<h2>Project actions<a class="headerlink" href="#project-actions" title="Permalink to this headline">¶</a></h2>
-<p>Hover your mouse pointer over an item in the <strong>Projects</strong> screen to reveal the
-following buttons:</p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Button</th>
-<th>Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><i class="k-icon k-icon-edit"></i> <strong>Edit</strong></td>
-<td>Go to the formbuilder to edit the form</td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-tag"></i> <strong>Add Tags to the project</strong></td>
-<td>Create tags to make it easier to find projects in the project list when using the search bar</td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-user-share"></i> <strong>Share</strong></td>
-<td>Share the project with other <strong>KoboToolbox</strong> users and customize permissions</td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-clone"></i> <strong>Clone</strong></td>
-<td>Make a copy of the existing project</td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-more-vertical"></i> <strong>More actions</strong></td>
-<td>Open up more project actions</td>
-</tr>
-</tbody>
-</table><p>When you click the <i class="k-icon k-icon-more-vertical"></i> <strong>More actions</strong>
-button, you have access to the following options:</p>
-<table border="1" class="docutils">
-<thead>
-<tr>
-<th>Button</th>
-<th>Action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><i class="k-icon k-icon-replace"></i> <strong>Replace form</strong></td>
-<td>Replace the current form with an <strong>XLSForm</strong></td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-globe-alt"></i> <strong>Manage translations</strong></td>
-<td>Go to the <strong>Manage Languages</strong> screen where you can define languages and add translations for the form</td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-xls-file"></i> <strong>Download XLS</strong></td>
-<td>Generate an XLS file in the <strong>XLSForm</strong> standard from the current project. This allows you to continue editing your form using <strong>Excel</strong> and easily collaborate with others</td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-xml-file"></i> <strong>Download XML</strong></td>
-<td>Generate an XML file from the current project. For advanced users, this lets you explore the form structure that may be needed when integrating with other applications, or to make advanced changes to the form</td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-archived"></i> <strong>Archive</strong></td>
-<td>Mark your deployed project as archived. This turns off the ability to send more submissions to the project</td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-template"></i> <strong>Create template</strong></td>
-<td>Save the form as a template in the library section</td>
-</tr>
-<tr>
-<td><i class="k-icon k-icon-trash"></i> <strong>Delete</strong></td>
-<td>Delete the project and the data submitted to it</td>
-</tr>
-</tbody>
-</table></section>
-<section id="help-legacy-interface-and-source-code">
-<h2>Help, legacy interface and source code<a class="headerlink" href="#help-legacy-interface-and-source-code" title="Permalink to this headline">¶</a></h2>
-<p>On the bottom left of the interface, you can access support options including
-links to the support articles site and the community forum by clicking on the <i
-class="k-icon k-icon-help"></i> <strong>Help</strong> button.</p>
-<p>Clicking the <i class="k-icon k-icon-globe"></i> <strong>Projects (legacy)</strong> button
-takes you to the <strong>KoboToolbox</strong> legacy interface.</p>
-<p>If you are interested in contributing to the development of <strong>KoboToolbox</strong> or
-in viewing the source code, you can click on the <i class="k-icon
-k-icon-logo-github"></i> <strong>Source</strong> button to visit our GitHub page.</p>
+<section id="data-entry-screen-as-seen-in-enketo-web-form-when-there-are-no-input-errors">
+<h2>Data entry screen as seen in Enketo (web form): <em>when there are no input errors</em><a class="headerlink" href="#data-entry-screen-as-seen-in-enketo-web-form-when-there-are-no-input-errors" title="Permalink to this headline">¶</a></h2>
+<p><img alt="Enketo Correct Inputs Entered" src="_images/enketo_correct_inputs_entered.png" /></p>
+<p>Here, when you enter values in a matrix table, the rows and columns are automatically calculated.</p>
+<p class="note">You can access the XLSForm that was used for this article <b><a download href="./_static/files/calculations_constraints_matrix/calculations_constraints_matrix.xlsx">here</a></b>.</p></section>
+<section id="troubleshooting">
+<h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The matrix question only works with <strong>Enketo</strong>, also known as <strong>web forms</strong>. It is not supported with the <code class="docutils literal notranslate"><span class="pre">KoboCollect</span> <span class="pre">Android</span> <span class="pre">App</span></code>.</p></li>
+<li><p>The matrix table may get distorted if you fail to set the layout to <strong>Grid-theme</strong>. For more details, you refer to one of our other support articles, <strong><a class="reference internal" href="alternative_enketo.html"><span class="doc">Using Alternative Enketo Web Form Styles</span></a></strong>.</p></li>
+</ul>
 </section>
 </section>
 
@@ -239,7 +153,7 @@ k-icon-logo-github"></i> <strong>Source</strong> button to visit our GitHub page
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=The KoboToolbox Interface"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Adding Calculations (Column Total &amp; Row Total) and Constraints in a Matrix Question"
               class="feedback-button"
               target="_blank"
             >
@@ -253,17 +167,10 @@ k-icon-logo-github"></i> <strong>Source</strong> button to visit our GitHub page
 
 <div class="sidebar_tocs">
   <p><span class="caption-text">Getting Started</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">The KoboToolbox Interface</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#search-bar">Search bar</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#user-profile-options">User profile options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#draft-deployed-and-archived-projects">Draft, deployed and archived projects</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#project-actions">Project actions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#help-legacy-interface-and-source-code">Help, legacy interface and source code</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">The KoboToolbox Interface</a></li>
 <li class="toctree-l1"><a class="reference internal" href="overview_of_creating_a_project.html">Overview of creating and managing projects in KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="server.html">Which Server Should I Use?</a></li>
@@ -276,7 +183,7 @@ k-icon-logo-github"></i> <strong>Source</strong> button to visit our GitHub page
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
 <p><span class="caption-text">Creating Forms</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Getting started with XLSForm</a></li>
@@ -294,7 +201,13 @@ k-icon-logo-github"></i> <strong>Source</strong> button to visit our GitHub page
 <li class="toctree-l1"><a class="reference internal" href="video_question_type.html">Video Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix Response Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Adding Skip Logic to a Matrix Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Adding Calculations (Column Total &amp; Row Total) and Constraints in a Matrix Question</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding Calculations (Column Total &amp; Row Total) and Constraints in a Matrix Question</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-entry-screen-as-seen-in-enketo-web-form-when-nothing-is-entered">Data entry screen as seen in Enketo (web form): <em>when nothing is entered</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-entry-screen-as-seen-in-enketo-web-form-when-an-input-error-is-made">Data entry screen as seen in Enketo (web form): <em>when an input error is made</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-entry-screen-as-seen-in-enketo-web-form-when-there-are-no-input-errors">Data entry screen as seen in Enketo (web form): <em>when there are no input errors</em></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting:</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Including Responses Inside Another Question</a></li>
 <li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
@@ -426,9 +339,9 @@ k-icon-logo-github"></i> <strong>Source</strong> button to visit our GitHub page
 
   <script>
     window.docs = {
-      currentPagename: "kobotoolbox_interface",
-      currentTitle: "The KoboToolbox Interface",
-      currentUrl: ("index.html").replace("index.html", "kobotoolbox_interface.html"),
+      currentPagename: "calculations_constraints_matrix",
+      currentTitle: "Adding Calculations (Column Total &amp; Row Total) and Constraints in a Matrix Question",
+      currentUrl: ("index.html").replace("index.html", "calculations_constraints_matrix.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
