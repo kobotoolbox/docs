@@ -713,7 +713,7 @@ html body div.footer p {
   padding-left: 2.8125rem;
   padding-right: 2.8125rem;
   margin: 0 auto;
-  margin: 0.4em 0;
+  margin: 0.4em auto;
 }
 @media screen and (max-width: 875px) {
   html body div.footer p {
