@@ -1,4 +1,5 @@
 # Adding Calculations (Column Total & Row Total) and Constraints in a Matrix Question
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9365be744903eb35c9f2abb3e518733ec1f763e5/source/calculations_constraints_matrix.md" class="reference">6 Apr 2022</a>
 
 When working in the Formbuilder, it is simple to add calculations (see **[Calculate Question Type](calculate_questions.md)**) or constraints (see **[Limiting Responses with Validation Criteria](validation_criteria.md)**) to almost any question type. While  Formbuilder does not currently support directly adding these features to matrix question, you can use an XLSForm to do so. The steps listed below in this support article will illustrate how you can add calculations (column total & row total) and constraints to a matrix question using XLSForm.
 
