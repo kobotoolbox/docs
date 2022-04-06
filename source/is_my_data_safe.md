@@ -5,11 +5,11 @@ We take data protection very seriously. Data security means protecting our
 users’ data from any threats that may exist. This article summarizes some of our
 administrative, physical, organizational, and technical measures for enforcing
 data security on the KoboToolbox servers maintained by Kobo, Inc., the
-[nonprofit organization behind KoboToolbox](https://www.kobotoolbox.org/kobo/ "nonprofit organization behind KoboToolbox").
+[nonprofit organization behind KoboToolbox](https://www.kobotoolbox.org/kobo/).
 
 We are fully compliant with the European Union’s General Data Protection
 Regulation (GDPR). If you are located in the European Union,
-[you can sign a data processing agreement (DPA) here](https://www.digisigner.com/online/showTemplate?linkId=772fa6c1-a184-41bf-8e95-9e6dbf0c866bhttp:// "you can sign a data processing agreement (DPA) here").
+[you can sign a data processing agreement (DPA) here](https://www.digisigner.com/online/showTemplate?linkId=772fa6c1-a184-41bf-8e95-9e6dbf0c866b).
 
 ## Confidentiality
 
@@ -21,7 +21,7 @@ Regulation (GDPR). If you are located in the European Union,
     server and network facilities, maintaining key card access control, limiting
     access to only authorized personnel. For a full list of details about AWS
     technical and organizational measures for physical access control,
-    [see this article](http://https://aws.amazon.com/compliance/data-center/controls/. "see this article on data center controls provided by AWS").
+    [see this article](https://aws.amazon.com/compliance/data-center/controls/) on data center controls provided by AWS.
 
 **Electronic Access Control**
 
@@ -30,13 +30,13 @@ Regulation (GDPR). If you are located in the European Union,
     select a stronger password when applicable. Only encrypted password hashes
     are stored on the KoboToolbox server, utilizing the default open-source
     framework provided by Django, which uses the
-    [PBKDF2](http://https://en.wikipedia.org/wiki/PBKDF2 "PBKDF2") algorithm
+    [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) algorithm
     with a SHA256 hash. Plain text passwords are never saved on the server.
 -   All database content is encrypted at rest (disk-level encryption).
 -   Data sent to the server is encrypted in transit using SHA-256 with RSA
     encryption.
 -   Users can
-    [choose to also enable encryption of their project data (data-level encryption)](http://https://support.kobotoolbox.org/encrypting_forms.html "choose to enable encryption of their project data (data-level encryption)")
+    [choose to also enable encryption of their project data (data-level encryption)](https://support.kobotoolbox.org/encrypting_forms.html)
     which renders it inaccessible at all stages of data processing and requires
     a private key to decrypt it locally.
 
