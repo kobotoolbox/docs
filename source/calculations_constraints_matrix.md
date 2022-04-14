@@ -1,4 +1,5 @@
 # Adding Calculations (Column Total & Row Total) and Constraints in a Matrix Question
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/938f1a16fc473000bf3343365f2d61eaceb45af4/source/calculations_constraints_matrix.md" class="reference">14 Apr 2022</a>
 
 When working in the Formbuilder, it is simple to add calculations (see
 **[Calculate Question Type](calculate_questions.md)**) or constraints (see
