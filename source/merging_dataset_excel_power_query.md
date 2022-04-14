@@ -1,5 +1,5 @@
 # Merging Individual Data with Roster Data through Power Query in Excel
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/73cd59e232218edcdbc7a196b9ab1abd6794eb06/source/merging_dataset_excel_power_query.md" class="reference">6 Apr 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f7397cce0e4dd2538b8d101942de68765e56adb9/source/merging_dataset_excel_power_query.md" class="reference">6 Apr 2022</a>
 
 As illustrated in the support article,
 [Grouping Questions and Repeating Groups](group_repeat.md), you can use
