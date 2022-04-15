@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pulling Data Into Excel Power Query &#8212; KoboToolbox  documentation</title>
+    <title>Adding Calculations and Constraints in a Matrix Question &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -25,8 +25,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Editing or Deleting a Single Submission" href="howto_edit_single_submissions.html" />
-    <link rel="prev" title="Mapping, Sharing, and Exporting GPS Data" href="export_gps.html" />
+    <link rel="next" title="Including Responses Inside Another Question" href="responses_inside_question.html" />
+    <link rel="prev" title="Adding Skip Logic to a Matrix Question" href="adding_skip_to_matrix.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -90,7 +90,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="pulling_data_into_excelquery">
+<div class="page page--has-sidebar " id="calculations_constraints_matrix">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -103,113 +103,85 @@
 
         <section class="page__body" role="main">
           
-  <section id="pulling-data-into-excel-power-query">
-<h1>Pulling Data Into Excel Power Query<a class="headerlink" href="#pulling-data-into-excel-power-query" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/pulling_data_into_excelquery.md" class="reference">15 Feb 2022</a></p>
-<p>For seamless data analysis, you can leverage the Kobo API to pull your data into
-other tools for data analysis. This article covers how to connect to the API to
-pull your data into <strong>Excel Power Query</strong>.</p>
-<section id="getting-kobo-api-for-excel-power-query">
-<h2>Getting Kobo API for Excel Power Query<a class="headerlink" href="#getting-kobo-api-for-excel-power-query" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Login to your account.</p></li>
-<li><p>Next, go to the API for your account by going to either
-<a class="reference external" href="https://kc.humanitarianresponse.info/api/v1">https://kc.humanitarianresponse.info/api/v1</a>
-or <a class="reference external" href="https://kc.kobotoolbox.org/api/v1/">https://kc.kobotoolbox.org/api/v1/</a>.
-Select the URL for the instance in which your account is located.</p></li>
-<li><p>Under the <strong>Data</strong> heading, click on <code class="docutils literal notranslate"><span class="pre">/api/v1/data</span></code>.</p></li>
-</ul>
-<p><img alt="image" src="_images/api_json.jpg" /></p>
-<ul class="simple">
-<li><p>Click on <strong>GET</strong> and select <strong>xls</strong>.</p></li>
-</ul>
-<p><img alt="image" src="_images/api_datalist.jpg" /></p>
-<ul class="simple">
-<li><p>This action will download a text file to your computer called <code class="docutils literal notranslate"><span class="pre">data</span></code> which
-can be opened/viewed a text editor.</p></li>
-<li><p>Next, locate your project’s data structure inside the <code class="docutils literal notranslate"><span class="pre">data</span></code> file you
-downloaded. It will be in the following format: <code class="docutils literal notranslate"><span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">id_string</span></code>, <code class="docutils literal notranslate"><span class="pre">title</span></code>,
-<code class="docutils literal notranslate"><span class="pre">description</span></code>, <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p></li>
-</ul>
-<p><strong>For example:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-    <span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;1314&quot;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">&quot;id_string&quot;</span><span class="p">,</span> <span class="s2">&quot;a7tAUbZp9Ad4MkvW7JSrft&quot;</span><span class="p">)(</span><span class="s2">&quot;title&quot;</span><span class="p">,</span> <span class="s2">&quot;MIRA_DO&quot;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;MIRA_DO&quot;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">&quot;url&quot;</span><span class="p">,</span> <span class="s2">&quot;https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls&quot;</span><span class="p">),</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>To pull the data, take the form URL
-(<code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls</span></code>) and
-replace <code class="docutils literal notranslate"><span class="pre">?format=xls</span></code> with <code class="docutils literal notranslate"><span class="pre">.xls</span></code>. For our example, the URL should now be:
-<code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/api/v1/data/1314.xls</span></code></p></li>
-</ul>
+  <section id="adding-calculations-and-constraints-in-a-matrix-question">
+<h1>Adding Calculations and Constraints in a Matrix Question<a class="headerlink" href="#adding-calculations-and-constraints-in-a-matrix-question" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/aaabdac8ec257d3157ec2ab2ceae65130e8c12d4/source/calculations_constraints_matrix.md" class="reference">14 Apr 2022</a></p>
+<p>When working in the formbuilder, it is simple to
+<a class="reference internal" href="calculate_questions.html"><span class="doc">add calculations</span></a> or
+<a class="reference internal" href="validation_criteria.html"><span class="doc">constraints</span></a> to almost any question type. While the
+formbuilder does not currently support adding these features to a matrix
+question, you can use XLSForm to do so. The steps listed below in this support
+article will illustrate how you can add calculations and constraints to a matrix
+question using XLSForm.</p>
+<section id="setting-up-the-question-and-fields">
+<h2>Setting up the question and fields<a class="headerlink" href="#setting-up-the-question-and-fields" title="Permalink to this headline">¶</a></h2>
+<p><strong>Step 1: Create a matrix question in the formbuilder</strong></p>
+<p>The first step is creating a matrix question in the formbuilder (as outlined in
+the support article <a class="reference internal" href="matrix_response.html"><span class="doc">Question Matrix Response Type</span></a>). Simply
+add rows and columns with the variables necessary for data collection.</p>
+<p><strong>Step 2: Download the form as XLSForm</strong></p>
+<p>Once the matrix question has been created, <strong>SAVE</strong> the form and
+<a class="reference external" href="getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox">download it as an XLSForm</a>.</p>
+<p><strong>Step 3: Add logic to the matrix question</strong></p>
+<p>Open the XLSForm and add <code class="docutils literal notranslate"><span class="pre">calculation</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint</span></code> and <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code>
+column headers. With these column headers, you will be able to add the <em>column
+total</em> and <em>row total</em> expressions under the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column header. You
+can also add appropriate <em>constraints</em> under the <code class="docutils literal notranslate"><span class="pre">constraint</span></code> column header and
+<em>constraint message</em> under the <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code> header as needed.</p>
+<p>Additionally, you may also choose to add a <code class="docutils literal notranslate"><span class="pre">read_only</span></code> column header to restrict
+enumerators from editing the responses while collecting data to certain
+questions (for example, the <em>row total</em> and <em>column total</em> that gets
+calculated).</p>
+<p><img alt="Survey Tab" src="_images/survey_tab.png" /></p>
+<p class="note">
+  In the image above, you may notice that the <code>name</code> inputs are
+  shorter. In this example, they have been renamed from the ones auto-generated
+  in the formbuilder to capture the entire screenshot of the survey tab. If you
+  choose to rename yours, make sure to use your new variable names in the
+  <code>calculation</code> and <code>constraint</code> column headers. If the
+  form has already been deployed and data has been collected, it is recommended
+  that you <em>do not</em> rename the existing variables.
+</p><p><strong>Step 4: Replace form</strong></p>
+<p>Upload and replace your XLSForm within the existing project, or create a new
+project (if needed).</p>
+<p><strong>Step 5: Deploy form</strong></p>
+<p><strong>Step 6: Collect data</strong></p>
+<p>After deploying the form, you can go to <strong>FORM&gt;Collect Data&gt;OPEN</strong> to start
+collecting data with the web form.</p>
 </section>
-<section id="pulling-data-in-microsoft-excel-by-making-data-public">
-<h2>Pulling data in Microsoft Excel (by making data public)<a class="headerlink" href="#pulling-data-in-microsoft-excel-by-making-data-public" title="Permalink to this headline">¶</a></h2>
-<p>Before transitioning over to Excel, ensure that there is <em>at least one record</em>
-stored in your data table in KoboToolbox <em>and</em> that you have made your data
-public by checking <strong>Anyone can view submissions made to this form</strong> from
-<strong>SETTINGS&gt;Sharing</strong>. Then click on <strong>Data</strong>, and under <strong>Data</strong>, click on
-<strong>From Web</strong>. You should now see a dialogue box to paste your URL and start
-pulling data from the server.</p>
-<p><img alt="image" src="_images/excel_updated.png" /></p>
-</section>
-<section id="pulling-data-in-microsoft-excel-without-making-data-public">
-<h2>Pulling data in Microsoft Excel (without making data public)<a class="headerlink" href="#pulling-data-in-microsoft-excel-without-making-data-public" title="Permalink to this headline">¶</a></h2>
-<p>Rather than exposing your data publicly, you can use your KoboToolbox login
-credentials to authenticate your request:</p>
-<ul class="simple">
-<li><p>When you get the dialogue box, paste your URL.</p></li>
-</ul>
-<p><img alt="image" src="_images/url1.png" /></p>
-<ul class="simple">
-<li><p>You should now see a new dialogue box as shown in the image below:</p></li>
-</ul>
-<p><img alt="image" src="_images/basic_authentication.png" /></p>
-<ul class="simple">
-<li><p>Then select <strong>Basic</strong>. You should be able to see a place where you are able
-to input your login credentials. Use your KoboToolbox credentials and that
-should load your data to Excel.</p></li>
-</ul>
-<p><img alt="image" src="_images/login_credentials.png" /></p>
-</section>
+<section id="viewing-the-result">
+<h2>Viewing the result<a class="headerlink" href="#viewing-the-result" title="Permalink to this headline">¶</a></h2>
+<p>The following images illustrate how the form will look and function in the
+Enketo web form after the above steps have been followed:</p>
+<p><strong>No data is entered:</strong></p>
+<p><img alt="Enketo Nothing Entered" src="_images/enketo_nothing_entered.png" /></p>
+<p><strong>An input error is made:</strong></p>
+<p><img alt="Enketo Wrong Inputs Entered" src="_images/enketo_wrong_inputs_entered.png" /></p>
+<p>Here you will see that there are only five total household members. If an
+enumerator enters 6 for the number of males (0-14 Years), the constraint will
+show an error message.</p>
+<p><strong>No input errors:</strong></p>
+<p><img alt="Enketo Correct Inputs Entered" src="_images/enketo_correct_inputs_entered.png" /></p>
+<p>Here, when you enter values in a matrix table, the rows and columns are
+automatically calculated.</p>
+<p class="note">
+  You can download the XLSForm that was used for this article
+  <a
+    download
+    class="reference"
+    href="./_static/files/calculations_constraints_matrix/calculations_constraints_matrix.xlsx"
+    >here</a
+  >.
+</p></section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
-<section id="reset-excel-s-data-source-settings">
-<h3>Reset Excel’s Data Source Settings<a class="headerlink" href="#reset-excel-s-data-source-settings" title="Permalink to this headline">¶</a></h3>
-<p>Sometimes, you may not be able to see the dialogue box to input your login
-credentials. In such case, you will have to do the following to reset your
-Excel’s <strong>Data Source Settings</strong>.</p>
 <ul class="simple">
-<li><p>Click on <strong>Data</strong> and under <strong>Data</strong> you will need to click on <strong>Get Data</strong>.</p></li>
+<li><p>The matrix question only works with <strong>Enketo web forms</strong>. It is not
+supported with the <strong>KoboCollect Android App</strong>.</p></li>
+<li><p>The matrix table will appear distorted if you fail to set the layout to
+<strong>Grid-theme</strong>. For more details on web form appearances, you can refer to
+<a class="reference internal" href="alternative_enketo.html"><span class="doc">Using Alternative Enketo Web Form Styles</span></a>.</p></li>
 </ul>
-<p><img alt="image" src="_images/home.png" /></p>
-<ul class="simple">
-<li><p>Then click on <strong>Data Source Settings</strong>.</p></li>
-</ul>
-<p><img alt="image" src="_images/home_next.png" /></p>
-<ul class="simple">
-<li><p>You will now be able to see a dialogue box, <strong>Data source settings</strong>. Here,
-you will need to press <strong>Clear Permissions</strong>. With this, you should be able
-to see the dialogue box to input your login credentials.</p></li>
-</ul>
-<p><img alt="image" src="_images/data_source_settings.png" /></p>
-<p>If you wish to learn more on resetting your Excel’s <strong>Data Source Settings</strong>
-feel free to explore
-<a class="reference external" href="https://docs.microsoft.com/en-us/power-query/connectorauthentication">here</a>.</p>
-</section>
-<section id="updating-data-in-microsoft-excel">
-<h3>Updating Data in Microsoft Excel<a class="headerlink" href="#updating-data-in-microsoft-excel" title="Permalink to this headline">¶</a></h3>
-<p>Once you have synced KoboToolbox with Excel through <strong>Excel Power Query</strong>, you
-should have the dataset stored locally. However, when the dataset on the server
-updates (i.e. through new submissions, deletions, amendments), your local
-dataset does not automatically update. To resync your data, you will need to
-click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p>
-<p><em>Thanks to Awais Awan for writing the initial draft of this post.</em></p>
-</section>
 </section>
 </section>
 
@@ -224,7 +196,7 @@ click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Pulling Data Into Excel Power Query"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Adding Calculations and Constraints in a Matrix Question"
               class="feedback-button"
               target="_blank"
             >
@@ -254,7 +226,7 @@ click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
 <p><span class="caption-text">Creating Forms</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Getting started with XLSForm</a></li>
@@ -272,7 +244,12 @@ click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p
 <li class="toctree-l1"><a class="reference internal" href="video_question_type.html">Video Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix Response Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Adding Skip Logic to a Matrix Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Adding Calculations and Constraints in a Matrix Question</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding Calculations and Constraints in a Matrix Question</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-the-question-and-fields">Setting up the question and fields</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#viewing-the-result">Viewing the result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Including Responses Inside Another Question</a></li>
 <li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
@@ -317,7 +294,7 @@ click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p><span class="caption-text">Managing Projects and Data</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
@@ -328,13 +305,7 @@ click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p
 <li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Managing Permissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Viewing and Creating Custom Reports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, Sharing, and Exporting GPS Data</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Pulling Data Into Excel Power Query</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#getting-kobo-api-for-excel-power-query">Getting Kobo API for Excel Power Query</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pulling-data-in-microsoft-excel-by-making-data-public">Pulling data in Microsoft Excel (by making data public)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pulling-data-in-microsoft-excel-without-making-data-public">Pulling data in Microsoft Excel (without making data public)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling Data Into Excel Power Query</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editing or Deleting a Single Submission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editing Responses in Multiple Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="photo_download.html">Downloading Photos and Other Media</a></li>
@@ -410,9 +381,9 @@ click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p
 
   <script>
     window.docs = {
-      currentPagename: "pulling_data_into_excelquery",
-      currentTitle: "Pulling Data Into Excel Power Query",
-      currentUrl: ("index.html").replace("index.html", "pulling_data_into_excelquery.html"),
+      currentPagename: "calculations_constraints_matrix",
+      currentTitle: "Adding Calculations and Constraints in a Matrix Question",
+      currentUrl: ("index.html").replace("index.html", "calculations_constraints_matrix.html"),
       rootUrl: "./",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
