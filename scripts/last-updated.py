@@ -13,7 +13,7 @@ GLOB_PATTERN = 'source/*.md'
 COMMIT_PATTERN = (
     r'([a-z0-9]{40}),\s[\w]+,\s([0-9]{1,2}\s[\w]{3}\s[0-9]{4}).*,\s(.*)'
 )
-GIT_CMD = ['git', 'log', '-5', '--oneline', '--pretty="%H, %cD, %s"']
+GIT_CMD = ['git', 'log', '-10', '--oneline', '--pretty="%H, %cD, %s"']
 GIT_IGNORE_HASH = '74dc12829b7ae2ce0c6c36364c5791b9f94d489d'
 GIT_IGNORE_MSG = 'last updated'
 RECENTLY_UPDATED_FILE = 'source/recently_updated.md'
