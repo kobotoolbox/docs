@@ -1,26 +1,18 @@
-﻿# Migrating Projects from One KoboToolbox Server to Another Using ODK Briefcase
+﻿# Migrating Projects Between Servers Using ODK Briefcase
 
-Depending upon the nature of use, KoboToolbox publicly offers two different
-servers: the _humanitarian server_ and the _non-humanitarian server_ (if you’re
-just getting started, you can learn more through
-**[Which Server Should I Use?](server.md)**). These servers are in two different
-parts of the world. The _humanitarian server_ is located in the Ireland while
-the _non-humanitarian server_ in the US. The system does not have a built-in
-feature to migrate a project from one server to the other. However, this
-limitation of migrating a project between servers can be addressed with
-**[ODK Briefcase](https://docs.getodk.org/briefcase-intro/)**.
+Depending upon the nature of your work, KoboToolbox provides
+[two different public servers](server.md), one for humanitarian use
+([OCHA server](https://kobo.humanitarianresponse.info)) and the other for
+non-humanitarian use ([Kobo server](https://kf.kobotoolbox.org)). Data is not
+shared between these servers and therefore you will need to use an intermediate
+application, such as [ODK Briefcase](https://docs.getodk.org/briefcase-intro/),
+if you would like to migrate projects from one to the other. The same is true if
+you wish to migrate data from other compatible data collection services (ODK
+Aggregate, Formhub, ONA, etc.) to the KoboToolbox platform.
 
-This support article aims to illustrate the detailed steps of migrating a
-project from one KoboToolbox server to the other using _ODK Briefcase_. In
-addition, the article should also be helpful to new users wishing to migrate a
-project to KoboToolbox from other data collection platforms that are compatible
-with KoboToolbox (_ODK Aggregate_, _Formhub_, _ONA_, etc.).
-
-The steps outlined below depict the migration of a project from the
-_non-humanitarian server (kf.kobotoolbox.org)_ to the _humanitarian server
-(kobo.humanitarianresponse.info)_. As mentioned above, you can follow these
-steps to migrate a project across either KoboToolbox server or from any platform
-compatible with KoboToolbox.
+The steps outlined below show the migration of a project from the
+_non-humanitarian_ server to the _humanitarian_ server. You can also follow
+these steps to migrate a project from any platform compatible with KoboToolbox.
 
 **Step 1: Confirm the project details from your origin server**
 
@@ -34,8 +26,7 @@ submissions.
 **Step 2: Download the latest version of ODK Briefcase**
 
 Download the latest version of _ODK Briefcase_ (from
-**[here](https://github.com/getodk/briefcase/releases)**) to your personal
-computer.
+[here](https://github.com/getodk/briefcase/releases)) to your personal computer.
 
 **Step 3: Configure the Storage Location of ODK Briefcase**
 
@@ -161,7 +152,10 @@ all photos**, as shown below:
 
 ![Legacy Project](images/migrating_projects_odk_briefcase/legacy_project.png)
 
-<p class="note"><strong>Note:</strong> You should still be able to continue data collection for this project that you have recently migrated to the destination server.</p>
+<p class="note">
+  You should still be able to continue data collection for this project that you
+  have recently migrated to the destination server.
+</p>
 
 ## Limitations:
 
