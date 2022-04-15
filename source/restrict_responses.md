@@ -1,5 +1,8 @@
 # Restricting Text Responses With Regular Expressions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/restrict_responses.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/restrict_responses.md" class="reference">15
+Feb 2022</a>
 
 A regular expression, or regex, is a search pattern used for matching specific
 characters and ranges of characters within a string. It is widely used to
@@ -8,7 +11,7 @@ KoboToolbox supports regex to control the length and characters during data
 entry to a particular question _(e.g. controlling the entry of mobile number to
 exactly 10 digits, controlling the entry of a valid email id etc.)_.
 
-#### To use a regex in KoboToolbox, follow these steps
+## To use a regex in KoboToolbox, follow these steps
 
 1. Prepare a _Text_ question type.
 
@@ -44,7 +47,7 @@ many times as needed in the survey:
 | text      | q2   | Name of the Respondent |                                          | regex(., ${q0}) | Please use this format: Kobe Bryant |
 | integer   | q3   | Age of the Respondent  |                                          |                 |                                     |
 
-#### How do I build the regex that I need?
+## How do I build the regex that I need?
 
 In addition to the examples and tips provided below, please visit
 [this website](http://www.regexr.com) for more help and examples.
@@ -79,7 +82,7 @@ In addition to the examples and tips provided below, please visit
 | `{x,}`              | Matches at least `x` consecutive characters (or more).                                                                                                                                      |
 | `{x,y}`             | Matches between `x` and `y` consecutive characters.                                                                                                                                         |
 
-#### Examples related to use of numbers
+## Examples related to use of numbers
 
 <p class="note">For all <code>text</code> type questions that use numbers, do not forget to type <code>numbers</code> under the <code>appearance</code> column.</p>
 
@@ -95,7 +98,7 @@ In addition to the examples and tips provided below, please visit
 | `regex(., '^\d{2}\.\d{3}$')`                                                      | Restrict an input to _two digits and three decimals_ (e.g. `12.345`)                                               |
 | `regex(., '^\d{2}(\.\d{3})?$')`                                                   | Restrict an input to _two digits and three decimals_ (while the decimals are optional) (e.g. `12` or `12.345`)     |
 
-#### Examples related to use of letters
+## Examples related to use of letters
 
 | XLSForm Regex                                                  | Description                                                                                                                                                                                                                                                                                                                             |
 | -------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -115,7 +118,7 @@ In addition to the examples and tips provided below, please visit
 | `regex(., '^\D$')`                                             | Restrict an input to a _non-digit character_ (e.g. `a` or `c` or `!` or `#` or `%` etc.)                                                                                                                                                                                                                                                |
 | `regex(., '^\D{5 }$')`                                         | Restrict an input to _five non-digit character_ (e.g. `aZcB!#%` etc.)                                                                                                                                                                                                                                                                   |
 
-#### Examples related to use of a combination of letters and numbers
+## Examples related to use of a combination of letters and numbers
 
 | XLSForm Regex                                             | Description                                                                                                                                                                                                     |
 | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -127,7 +130,7 @@ In addition to the examples and tips provided below, please visit
 | `regex(., '^\W*(\w+\b\W*){3}$')`                          | Restrict an exact input of number of words (e.g. to restrict exactly 3 words `I love you.`)                                                                                                                     |
 | `regex(., '^\W*(\w+\b\W*){3,5}$')`                        | Restrict an input of number of words (e.g. to restrict a range of words say `3` to `5`)                                                                                                                         |
 
-#### Considerations when using regex
+## Considerations when using regex
 
 -   If you wish to use a regex constraint on a number in a `text` type question,
     make sure you _always_ have the value `numbers` under the `appearance`

@@ -1,5 +1,8 @@
 # Grouping Questions and Repeating Groups
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/group_repeat.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/group_repeat.md" class="reference">15
+Feb 2022</a>
 
 KoboToolbox supports grouping questions when designing a survey form. Users may
 need to group questions due to various reasons:
@@ -13,7 +16,7 @@ need to group questions due to various reasons:
     group instead.
 -   **Create a roster:** Repeat grouped questions for household surveys, etc.
 
-#### Grouping a set of questions
+## Grouping a set of questions
 
 Draft a set of questions that you would wish to group together. Then press the
 **CTRL Key** _(It may vary based on the OS used. The instruction here is based
@@ -35,7 +38,7 @@ You can also change the group label. Here I have changed the group label to
 
 ![image](/images/group_repeat/demographics.png)
 
-#### Alternative way of creating a group
+## Alternative way of creating a group
 
 Draft a question. Select the question that you have drafted. It highlights to
 blue. At the same time the icon (marked under the red box as shown in the image
@@ -51,7 +54,7 @@ one question at the moment).
 
 Add or modify questions as outlined below.
 
-#### Adding questions within a group
+## Adding questions within a group
 
 Hover your mouse (anywhere inside the group) where you wish to add a new
 question. You should see a plus sign (+) under the question. In the image below,
@@ -66,7 +69,7 @@ You should now be able to see **Add Question** as shown in the image below:
 
 ![image](/images/group_repeat/add_questions_2.png)
 
-#### Removing questions from a group
+## Removing questions from a group
 
 Hover your mouse on top of the question you wish to delete. Press the trash
 (bin) icon. At this stage, the color of the question box you wish to delete
@@ -80,7 +83,7 @@ shown in the image below. Click **OK**.
 
 ![image](/images/group_repeat/confirm_delete.png)
 
-#### Re-ordering a question within a group
+## Re-ordering a question within a group
 
 If you are not satisfied with the ordering of the questions within the group,
 you could re-order them by simply selecting a question (that is within a group)
@@ -91,7 +94,7 @@ and dragging them to an appropriate place (either up or down as needed).
 If needed, you could also drag them outside the group (to extract a question
 from a group).
 
-#### Displaying the grouped questions on the same screen
+## Displaying the grouped questions on the same screen
 
 If you wish to display the grouped questions on the same screen, press the gear
 like settings icon that has been marked under the red boxed as shown in the
@@ -122,7 +125,7 @@ same screen through XLSForm (if you are comfortable with XLSForm) using the
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
 
-#### Ungrouping a set of questions
+## Ungrouping a set of questions
 
 If you no longer need a group of questions, you could ungroup or delete the
 grouped questions. For this simply click the **Delete** button from the group
@@ -141,7 +144,7 @@ The group disappears but the questions will remain.
 
 <p class="note">If the <strong>DELETE EVERYTHING</strong> button is pressed, the group and all its questions will be deleted.
 
-#### Skipping a group of questions
+## Skipping a group of questions
 
 To skip a group of questions, you should have at least one controlling question
 on top of the grouped question. Press the settings icon from the grouped
@@ -176,7 +179,7 @@ Alternatively, you could also do this in XLSForm:
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
 
-#### Creating a roster (repeating group of questions)
+## Creating a roster (repeating group of questions)
 
 Questions within a roster can be answered multiple times. For example, in a
 household survey you might want to ask the name, age, gender and education
@@ -193,7 +196,7 @@ grouped questions as many times as required.
 
 <p class="note">The resulting data structure from a roster is different from the data you normally see with other variables or groups. When downloading your data, you will see a different sheet for each roster (i.e. the number of additional sheets corresponds with the number of repeating groups that you have within your survey form).</p>
 
-#### Controlling the loop of repetition in a roster
+## Controlling the loop of repetition in a roster
 
 Sometimes your survey may demand you to control the repeating of questions in a
 roster with a value of a certain variable. In this case, you should modify your
@@ -220,7 +223,7 @@ survey in XLSForm as the formbuilder does not currently support this feature.
 
 <p class="note">Instead of having an indefinite number of repeat group iterations, this method will control the number of iterations based on the value in the <code>repeat_count</code> column.</p>
 
-#### Using information to a roster from a preceding roster
+## Using information to a roster from a preceding roster
 
 While working with grouping questions and repeating groups, sometimes you might
 need to include certain details to a roster from a preceding roster. Designing
@@ -261,7 +264,7 @@ Screen seen while [collecting data in Enketo](data_through_webforms.md):
 
 ![image](/images/group_repeat/enketo.png)
 
-#### Nested Repeat (roster within a roster)
+## Nested Repeat (roster within a roster)
 
 KoboToolbox also supports nested repeat form design. Here you are able to add a
 roster within a roster (i.e. a repeat group question within a repeat group

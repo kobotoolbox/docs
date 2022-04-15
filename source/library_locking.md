@@ -1,5 +1,8 @@
 # Library locking
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/library_locking.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/library_locking.md" class="reference">15
+Feb 2022</a>
 
 "Library locking" refers to the feature enabling various aspects of a survey to
 be "[locked](#locked)" when created from a template containing
@@ -10,7 +13,10 @@ granular "[restrictions](#restriction)" that group together locking
 functionalities. Alternatively, the form can be fully locked down, preventing
 all aspects of editing.
 
-<p class="note">Currently, only locking set within the XLSForm itself is supported, but will be incorporated into the formbuilder at some point in the future.</p>
+<p class="note">
+  Currently, only locking set within the XLSForm itself is supported, but will
+  be incorporated into the formbuilder at some point in the future.
+</p>
 
 This feature may be useful in a large, distributed team setting where a standard
 template is used, with some locked features, and each team can make necessary
@@ -18,7 +24,14 @@ local adjustments for their needs. The creator of the template can continue to
 make updates, but the locks will restrict changes to specified aspects of the
 form for those who [create a project based on the template](new_form.md).
 
-<p class="note">Locking aspects of a form is separate from <a class="reference" href="managing_permissions.html">managing permissions to a project</a> or <a class="reference" href="row_level_permissions.html">row-level access</a>.
+<p class="note">
+  Locking aspects of a form is separate from
+  <a class="reference" href="managing_permissions.html"
+    >managing permissions to a project</a
+  >
+  or
+  <a class="reference" href="row_level_permissions.html">row-level access</a>.
+</p>
 
 ## Restrictions
 
@@ -28,10 +41,10 @@ There are three levels of restrictions that can be set:
 2. [Group](#group-level-restrictions), and
 3. [Form](#form-level-restrictions)
 
-Additionally, there is a [`kobo--lock_all`](#id1) Boolean that can set in the
-`settings` sheet that will render the survey completely locked.
+Additionally, there is a `kobo--lock_all` boolean that can set in the `settings`
+sheet that will render the survey completely locked.
 
-### `kobo--lock_all`
+### `kobo--lock_all` boolean
 
 If `kobo--lock_all` is set to `True`, then all additional granular restrictions
 are redundant as the form is _fully_ locked down. If it is set to `False` _or_
@@ -50,7 +63,11 @@ that
 No error will be thrown if an invalid value is used, only the form will not
 function as intended from the user's perspective.
 
-<p class="note">Note that the restriction name, such as <code>choice_add</code> below, is <strong>predefined</strong> and only the restrictions listed below are valid options.</p>
+<p class="note">
+  Note that the restriction name, such as <code>choice_add</code> below, is
+  <strong>predefined</strong> and only the restrictions listed below are valid
+  options.
+</p>
 
 ### Question-level restrictions
 
@@ -95,9 +112,9 @@ function as intended from the user's perspective.
 ## XLSForm configuration
 
 There are three sheets where locking profiles are defined and set: `survey`,
-`settings` and [`kobo--locking-profiles`](#id2). The sheet of
-`kobo--locking-profiles` is not officially supported by
-[pyxform](https://github.com/XLSForm/pyxform) and is KoboToolbox-specific.
+`settings` and `kobo--locking-profiles`. The sheet of `kobo--locking-profiles`
+is not officially supported by [pyxform](https://github.com/XLSForm/pyxform) and
+is KoboToolbox-specific.
 
 Form-level restrictions are defined in the `settings` sheet and question and
 group-level restrictions are defined in the `survey` sheet.
@@ -121,17 +138,24 @@ formbuilder.
 | choice_order_edit | locked    | locked    |           |
 | form_appearance   |           |           | locked    |
 
-<p class="note">Note that not all valid restrictions need to be included in the <code>restriction</code> column, but an error will be thrown if an invalid restriction is included.</p>
+<p class="note">
+  Note that not all valid restrictions need to be included in the
+  <code>restriction</code> column, but an error will be thrown if an invalid
+  restriction is included.
+</p>
 
 **settings**
 
-Set form-level restrictions and [`kobo--lock_all`](#id1) Boolean.
+Set form-level restrictions and `kobo--lock_all` boolean.
 
 | kobo--locking-profile | kobo--lock_all |
 | --------------------- | -------------- |
 | profile_3             | false          |
 
-<p class="note">Note that omitting <code>kobo--lock_all</code> from the <code>settings</code> sheet is equivalent to setting it to <code>False</code>.</p>
+<p class="note">
+  Note that omitting <code>kobo--lock_all</code> from the
+  <code>settings</code> sheet is equivalent to setting it to <code>False</code>.
+</p>
 
 **survey**
 
@@ -224,7 +248,10 @@ The following cases will currently throw a `FormPackLibraryLockingError`:
 -   If no locking profiles are defined (column headers in the
     `kobo--locking-profiles` sheet)
 
-<p class="note">Validation of the XLSForm library locking features will be expanded in the future.</p>
+<p class="note">
+  Validation of the XLSForm library locking features will be expanded in the
+  future.
+</p>
 
 ### Caveats
 
@@ -240,8 +267,8 @@ similarly for the column headers.
 There are two attributes of the asset where locking information can be accessed
 and modified: `asset.summary` and `asset.content`.
 
-If [`kobo--locking-profile`](#kobo-locking-profile) is a column name in the
-`survey` sheet, it will also be listed in the `asset.summary.columns` array.
+If `kobo--locking-profile` is a column name in the `survey` sheet, it will also
+be listed in the `asset.summary.columns` array.
 
 In `asset.summary`, the following two Boolean attributes describe an overview of
 the form's locking structure:
@@ -365,37 +392,37 @@ Assume an XLSForm containing valid locking features is imported:
 
 ## Terminology
 
-#### `kobo--lock_all`
+### `kobo--lock_all`
 
 Attribute containing a Boolean value, set in the `settings` sheet and applies
 all locking restrictions to the form and all questions and groups (rendering
 granular locking profiles redundant).
 
-#### `kobo--locking-profile`
+### `kobo--locking-profile`
 
 Column name in the `survey` and `settings` sheets where the locking profile is
 assigned to a question or group (in `survey`) or to the form (in `settings`).
 
-#### `kobo--locking-profiles`
+### `kobo--locking-profiles`
 
 Sheet name where restrictions are assigned to profiles.
 
-#### `locked`
+### `locked`
 
 Keyword used to assign a restriction to a profile in the
 `kobo--locking-profiles` sheet.
 
-#### Profile
+### Profile
 
 The name assigned to a group of restrictions, defined in the
 `kobo--locking-profiles` sheet. It is assigned to questions and groups in the
 `survey` sheet and to the from in the `settings` sheet.
 
-#### Restriction
+### Restriction
 
 A granular locking attribute that can be assigned to a profile and control the
 locking behaviour at the question, group or form level.
 
-#### Unlocked
+### Unlocked
 
 A form containing no locking attributes.
