@@ -1,5 +1,8 @@
 # Using the API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/api.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/api.md" class="reference">15
+Feb 2022</a>
 
 KoboToolbox has a number of advanced features built in based on our open source
 libraries, which include useful add-ons for advanced use cases. There are many
@@ -15,7 +18,7 @@ The base URL depends on the server you are using: for most users it is
 [kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info). Below
 we only use [kpi-url] to refer to this base URL.
 
-### Getting your API Token:
+## Getting your API Token:
 
 There are different ways to get your API Token.
 
@@ -40,11 +43,11 @@ To find your API token go to
 
 **Method 3:**
 
-You could use the follwoing curl command:
+You could use the following curl command:
 
 `curl -u username:password "https:/[kpi-url]/token/?format=json"`
 
-### Testing your API:
+## Testing your API:
 
 To test it use this command:
 

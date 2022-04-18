@@ -1,5 +1,8 @@
 ﻿# Recording an Entire Interview with Background Audio Recording
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/recording-interviews.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/recording-interviews.md" class="reference">15
+Feb 2022</a>
 
 **Background audio recording** is a powerful feature that allows users to record
 an interview in the background (when the form is open) and store the recording
@@ -72,7 +75,7 @@ you want to use towards your audio files. Refer to the table below when choosing
 the appropriate parameter:
 
 | Quality    | Parameters         | Extension | Encoding | Bit rate  | Sample rate | File size    |
-| ---------- | ------------------ | --------- | -------- | --------- | ----------- | ------------ |
+| :--------- | :----------------- | :-------- | :------- | :-------- | :---------- | :----------- |
 | normal     | quality=normal     | .m4a      | AAC      | 64 kbps   | 32 kHz      | ~ 30 MB/hour |
 | low        | quality=low        | .m4a      | AAC      | 24 kbps   | 32 kHz      | ~ 11 MB/hour |
 | voice-only | quality=voice-only | .amr      | AMR      | 12.2 kbps | 8 kHz       | ~ 5 MB/hour  |

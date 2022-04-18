@@ -1,5 +1,8 @@
 # Which Server Should I Use?
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/server.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/server.md" class="reference">15
+Feb 2022</a>
 
 KoboToolbox is free and open source software that can be installed on any
 computer or server. The vast majority of users use one of the two options: The
@@ -10,7 +13,7 @@ use of KoboToolbox on either server is free to everyone, but there are certain
 differences and limitations you should know:
 
 | &nbsp;       | Humanitarian Server        | Non-Humanitarian Server |
-| ------------ | -------------------------- | ----------------------- |
+| :----------- | :------------------------- | :---------------------- |
 | Intended For | Humanitarian Organizations | Everyone Else           |
 | Price        | Free                       | Free                    |
 | Projects     | Unlimited                  | Unlimited               |
@@ -26,4 +29,8 @@ submission or storage limits, please email
 [info@kobotoolbox.org](mailto:info@kobotoolbox.org) to discuss feasibility and
 potential extra costs.
 
-<p class="note">A <strong>very important</strong> thing to keep in mind is that sharing projects and data between the two servers is not possible. This means all users working on a shared project need to be using the same server to do so.</p>
+<p class="note">
+  A <strong>very important</strong> thing to keep in mind is that sharing
+  projects and data between the two servers is not possible. This means all
+  users working on a shared project need to be using the same server to do so.
+</p>

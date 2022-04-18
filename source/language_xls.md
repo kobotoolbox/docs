@@ -1,5 +1,8 @@
 # Adding Another Language to your XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/language_xls.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/language_xls.md" class="reference">15
+Feb 2022</a>
 
 There are two methods to adding multiple languages to your form. You can either
 add and manage them directly through the online
@@ -35,7 +38,7 @@ Here are detailed instructions on how you can add another language to your form:
 **survey**
 
 | type             | name           | label                          | relevant                  |
-| ---------------- | -------------- | ------------------------------ | ------------------------- |
+| :--------------- | :------------- | :----------------------------- | :------------------------ |
 | text             | full_name      | What is your name?             |                           |
 | select_one yesno | children_yesno | Do you have any children?      |                           |
 | integer          | children_count | How many children do you have? | ${children_yesno} = 'yes' |
@@ -52,7 +55,7 @@ Here are detailed instructions on how you can add another language to your form:
 **survey**
 
 | type             | name           | label:English (en)             | label::Français (fr)           | relevant                  |
-| ---------------- | -------------- | ------------------------------ | ------------------------------ | ------------------------- |
+| :--------------- | :------------- | :----------------------------- | :----------------------------- | :------------------------ |
 | text             | full_name      | What is your name?             | Quel est votre nom?            |                           |
 | select_one yesno | children_yesno | Do you have any children?      | Avez-vous des enfants?         |                           |
 | integer          | children_count | How many children do you have? | Combien des enfants avez-vous? | ${children_yesno} = 'yes' |
@@ -67,7 +70,7 @@ Here are detailed instructions on how you can add another language to your form:
 **choices**
 
 | list_name | name | label::English (en) | label::Français (fr) |
-| --------- | ---- | ------------------- | -------------------- |
+| :-------- | :--- | :------------------ | :------------------- |
 | yesno     | yes  | Yes                 | Oui                  |
 | yesno     | no   | No                  | Non                  |
 
@@ -78,7 +81,7 @@ Here are detailed instructions on how you can add another language to your form:
 **settings**
 
 | form_title                   |
-| ---------------------------- |
+| :--------------------------- |
 | My form (English and French) |
 
 -   Save your file and close Excel.

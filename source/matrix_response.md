@@ -1,7 +1,16 @@
 # Question Matrix Response Type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/matrix_response.md" class="reference">2 Dec 2021</a>
 
-The Question Matrix response type allows users to create a group of questions that display in a matrix format, whereby each cell within the matrix represents a separate question. To use this response type, define the number of rows and columns you want in your matrix set and give each row and column a label or name. Each column can be a different question type. In the above screenshot, the first two columns are select-one questions, and the third column is a number question.
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/matrix_response.md" class="reference">2
+Dec 2021</a>
+
+The Question Matrix response type allows users to create a group of questions
+that display in a matrix format, whereby each cell within the matrix represents
+a separate question. To use this response type, define the number of rows and
+columns you want in your matrix set and give each row and column a label or
+name. Each column can be a different question type. In the above screenshot, the
+first two columns are select-one questions, and the third column is a number
+question.
 
 ![image](/images/matrix_response/matrix_example.png)
 
@@ -32,47 +41,49 @@ The Question Matrix response type allows users to create a group of questions th
 
 ## Create a Question Matrix in XLSForm
 
-Alternatively, you can also build a Matrix Question in a XLSForm by following the instructions as outlined in the images below:
+Alternatively, you can also build a Matrix Question in a XLSForm by following
+the instructions as outlined in the images below:
 
-__survey__
+**survey**
 
 | type             | name | label                                | required | kobo--matrix_list |
-| ---              | ---  | ---                                  | ---      | ---               |
+| :--------------- | :--- | :----------------------------------- | :------- | :---------------- |
 | begin_kobomatrix | M1   | Items                                |          | assets            |
 | select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |
 | integer          | Q2   | Q2. Number of assets                 | TRUE     |                   |
 | end_kobomatrix   |      |                                      |          |                   |
 
-__choices__
+**choices**
 
 | list_name | name | label |
-| ---       | ---  | ---   |
+| :-------- | :--- | :---- |
 | assets    | car  | Car   |
 | assets    | bike | Bike  |
 | assets    | tv   | TV    |
 | yn        | yes  | Yes   |
 | yn        | no   | No    |
 
-__settings__
+**settings**
 
 | style                        |
-| ---                          |
+| :--------------------------- |
 | theme-grid no-text-transform |
 
 <p class="note">This method uses <code>begin_kobomatrix</code>, <code>end_kobomatrix</code> and <code>kobo—matrix_list</code>.</p>
 
-Following the steps above, you should see the question matrix shown in the screenshot below (In [Enketo](data_through_webforms.md) only):
+Following the steps above, you should see the question matrix shown in the
+screenshot below (In [Enketo](data_through_webforms.md) only):
 
 ![image](/images/matrix_response/preview.png)
 
-It is also possible to include `relevant` and `constraint` conditions within the matrix as follows:
+It is also possible to include `relevant` and `constraint` conditions within the
+matrix as follows:
 
-__survey__
+**survey**
 
 | type             | name | label                                | required | kobo--matrix_list | relevant      | constraint |
-| ---              | ---  | ---                                  | ---      | ---               | ---           | ---        |
+| :--------------- | :--- | :----------------------------------- | :------- | :---------------- | :------------ | :--------- |
 | begin_kobomatrix | M1   | Items                                |          | assets            |               |            |
 | select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |               |            |
 | integer          | Q2   | Q2. Number of assets                 | TRUE     |                   | ${Q1} = 'yes' | . > 2      |
 | end_kobomatrix   |      |                                      |          |                   |               |            |
-
