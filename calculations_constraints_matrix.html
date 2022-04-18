@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Adding Calculations and Constraints in a Matrix Question &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,10 +105,12 @@
           
   <section id="adding-calculations-and-constraints-in-a-matrix-question">
 <h1>Adding Calculations and Constraints in a Matrix Question<a class="headerlink" href="#adding-calculations-and-constraints-in-a-matrix-question" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/aaabdac8ec257d3157ec2ab2ceae65130e8c12d4/source/calculations_constraints_matrix.md" class="reference">14 Apr 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/aaabdac8ec257d3157ec2ab2ceae65130e8c12d4/source/calculations_constraints_matrix.md" class="reference">14
+Apr 2022</a></p>
 <p>When working in the formbuilder, it is simple to
-<a class="reference internal" href="calculate_questions.html"><span class="doc">add calculations</span></a> or
-<a class="reference internal" href="validation_criteria.html"><span class="doc">constraints</span></a> to almost any question type. While the
+<a class="reference internal" href="calculate_questions.html"><span class="doc std std-doc">add calculations</span></a> or
+<a class="reference internal" href="validation_criteria.html"><span class="doc std std-doc">constraints</span></a> to almost any question type. While the
 formbuilder does not currently support adding these features to a matrix
 question, you can use XLSForm to do so. The steps listed below in this support
 article will illustrate how you can add calculations and constraints to a matrix
@@ -117,11 +119,11 @@ question using XLSForm.</p>
 <h2>Setting up the question and fields<a class="headerlink" href="#setting-up-the-question-and-fields" title="Permalink to this headline">¶</a></h2>
 <p><strong>Step 1: Create a matrix question in the formbuilder</strong></p>
 <p>The first step is creating a matrix question in the formbuilder (as outlined in
-the support article <a class="reference internal" href="matrix_response.html"><span class="doc">Question Matrix Response Type</span></a>). Simply
+the support article <a class="reference internal" href="matrix_response.html"><span class="doc std std-doc">Question Matrix Response Type</span></a>). Simply
 add rows and columns with the variables necessary for data collection.</p>
 <p><strong>Step 2: Download the form as XLSForm</strong></p>
 <p>Once the matrix question has been created, <strong>SAVE</strong> the form and
-<a class="reference external" href="getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox">download it as an XLSForm</a>.</p>
+<a class="reference internal" href="getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox"><span class="std std-doc">download it as an XLSForm</span></a>.</p>
 <p><strong>Step 3: Add logic to the matrix question</strong></p>
 <p>Open the XLSForm and add <code class="docutils literal notranslate"><span class="pre">calculation</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint</span></code> and <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code>
 column headers. With these column headers, you will be able to add the <em>column
@@ -141,7 +143,8 @@ calculated).</p>
   <code>calculation</code> and <code>constraint</code> column headers. If the
   form has already been deployed and data has been collected, it is recommended
   that you <em>do not</em> rename the existing variables.
-</p><p><strong>Step 4: Replace form</strong></p>
+</p>
+<p><strong>Step 4: Replace form</strong></p>
 <p>Upload and replace your XLSForm within the existing project, or create a new
 project (if needed).</p>
 <p><strong>Step 5: Deploy form</strong></p>
@@ -172,7 +175,8 @@ automatically calculated.</p>
     href="./_static/files/calculations_constraints_matrix/calculations_constraints_matrix.xlsx"
     >here</a
   >.
-</p></section>
+</p>
+</section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -180,7 +184,7 @@ automatically calculated.</p>
 supported with the <strong>KoboCollect Android App</strong>.</p></li>
 <li><p>The matrix table will appear distorted if you fail to set the layout to
 <strong>Grid-theme</strong>. For more details on web form appearances, you can refer to
-<a class="reference internal" href="alternative_enketo.html"><span class="doc">Using Alternative Enketo Web Form Styles</span></a>.</p></li>
+<a class="reference internal" href="alternative_enketo.html"><span class="doc std std-doc">Using Alternative Enketo Web Form Styles</span></a>.</p></li>
 </ul>
 </section>
 </section>
@@ -209,7 +213,7 @@ supported with the <strong>KoboCollect Android App</strong>.</p></li>
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -225,7 +229,7 @@ supported with the <strong>KoboCollect Android App</strong>.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -277,7 +281,7 @@ supported with the <strong>KoboCollect Android App</strong>.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -293,7 +297,7 @@ supported with the <strong>KoboCollect Android App</strong>.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -322,7 +326,7 @@ supported with the <strong>KoboCollect Android App</strong>.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -384,7 +388,7 @@ supported with the <strong>KoboCollect Android App</strong>.</p></li>
       currentPagename: "calculations_constraints_matrix",
       currentTitle: "Adding Calculations and Constraints in a Matrix Question",
       currentUrl: ("index.html").replace("index.html", "calculations_constraints_matrix.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

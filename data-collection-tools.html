@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Overview on Data Collection Tools &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,7 +105,9 @@
           
   <section id="overview-on-data-collection-tools">
 <h1>Overview on Data Collection Tools<a class="headerlink" href="#overview-on-data-collection-tools" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/data-collection-tools.md" class="reference">15 Feb 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/data-collection-tools.md" class="reference">15
+Feb 2022</a></p>
 <p>KoboToolbox allows data collection in multiple ways. Because KoboToolbox is
 built on the <a class="reference external" href="https://xlsform.org">Xform/ODK standards</a>, our forms are
 compatible with
@@ -116,130 +118,110 @@ that can be used for data collection.</p>
 app, which can be downloaded from the Google Play Store and installed on any
 standard Android phone or tablet.</p>
 <p>For any other devices (including iPhones, iPads, or any laptop or computer), we
-recommend using the webform <a class="reference internal" href="data_through_webforms.html"><span class="doc">for collecting data</span></a>.</p>
+recommend using the webform <a class="reference internal" href="data_through_webforms.html"><span class="doc std std-doc">for collecting data</span></a>.</p>
 <section id="a-quick-rundown-on-the-differences-between-the-two-options">
 <h2>A quick rundown on the differences between the two options<a class="headerlink" href="#a-quick-rundown-on-the-differences-between-the-two-options" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>&nbsp;</th>
-<th>Webforms</th>
-<th>KoboCollect</th>
+<tr class="row-odd"><th class="text-left head"><p> </p></th>
+<th class="text-left head"><p>Webforms</p></th>
+<th class="text-left head"><p>KoboCollect</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Devices</td>
-<td>Any mobile device or computer</td>
-<td>Android only</td>
+<tr class="row-even"><td class="text-left"><p>Devices</p></td>
+<td class="text-left"><p>Any mobile device or computer</p></td>
+<td class="text-left"><p>Android only</p></td>
 </tr>
-<tr>
-<td>Runs in...</td>
-<td>Browser</td>
-<td>Native Android application</td>
+<tr class="row-odd"><td class="text-left"><p>Runs in…</p></td>
+<td class="text-left"><p>Browser</p></td>
+<td class="text-left"><p>Native Android application</p></td>
 </tr>
-<tr>
-<td>Configurable</td>
-<td>Server-wide</td>
-<td>On each device</td>
+<tr class="row-even"><td class="text-left"><p>Configurable</p></td>
+<td class="text-left"><p>Server-wide</p></td>
+<td class="text-left"><p>On each device</p></td>
 </tr>
-<tr>
-<td>Default form display</td>
-<td>All questions on the same screen</td>
-<td>One question per screen</td>
+<tr class="row-odd"><td class="text-left"><p>Default form display</p></td>
+<td class="text-left"><p>All questions on the same screen</p></td>
+<td class="text-left"><p>One question per screen</p></td>
 </tr>
-<tr>
-<td>Data upload</td>
-<td>Automatically when connection available</td>
-<td>On user request or immediately if connection available</td>
+<tr class="row-even"><td class="text-left"><p>Data upload</p></td>
+<td class="text-left"><p>Automatically when connection available</p></td>
+<td class="text-left"><p>On user request or immediately if connection available</p></td>
 </tr>
-<tr>
-<td>Phone-specific meta-questions (<code>subscriberid</code>, <code>simserial</code>, <code>phonenumber</code>)</td>
-<td>No</td>
-<td>Yes</td>
+<tr class="row-odd"><td class="text-left"><p>Phone-specific meta-questions (<code class="docutils literal notranslate"><span class="pre">subscriberid</span></code>, <code class="docutils literal notranslate"><span class="pre">simserial</span></code>, <code class="docutils literal notranslate"><span class="pre">phonenumber</span></code>)</p></td>
+<td class="text-left"><p>No</p></td>
+<td class="text-left"><p>Yes</p></td>
 </tr>
-<tr>
-<td><code>barcode</code> question type</td>
-<td>No (except manual entry)</td>
-<td>Yes</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">barcode</span></code> question type</p></td>
+<td class="text-left"><p>No (except manual entry)</p></td>
+<td class="text-left"><p>Yes</p></td>
 </tr>
-<tr>
-<td>Different form styles</td>
-<td>Yes</td>
-<td>No</td>
+<tr class="row-odd"><td class="text-left"><p>Different form styles</p></td>
+<td class="text-left"><p>Yes</p></td>
+<td class="text-left"><p>No</p></td>
 </tr>
-<tr>
-<td>Encryption</td>
-<td>Not for storage, but always during transfer</td>
-<td>Can be enabled on-device, always during transfer</td>
+<tr class="row-even"><td class="text-left"><p>Encryption</p></td>
+<td class="text-left"><p>Not for storage, but always during transfer</p></td>
+<td class="text-left"><p>Can be enabled on-device, always during transfer</p></td>
 </tr>
-<tr>
-<td><code>hide-input</code> appearance for maps to hide manual GPS inputs</td>
-<td>Yes</td>
-<td>No</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">hide-input</span></code> appearance for maps to hide manual GPS inputs</p></td>
+<td class="text-left"><p>Yes</p></td>
+<td class="text-left"><p>No</p></td>
 </tr>
-<tr>
-<td>Advanced map appearance options (<code>streets</code>, <code>terrain</code>, <code>satellite</code>, <code>[other]</code>)</td>
-<td>Yes</td>
-<td>No</td>
+<tr class="row-even"><td class="text-left"><p>Advanced map appearance options (<code class="docutils literal notranslate"><span class="pre">streets</span></code>, <code class="docutils literal notranslate"><span class="pre">terrain</span></code>, <code class="docutils literal notranslate"><span class="pre">satellite</span></code>, <code class="docutils literal notranslate"><span class="pre">[other]</span></code>)</p></td>
+<td class="text-left"><p>Yes</p></td>
+<td class="text-left"><p>No</p></td>
 </tr>
-<tr>
-<td>Text formatting in notes and labels (bold, italics, links)</td>
-<td>Yes</td>
-<td>No</td>
+<tr class="row-odd"><td class="text-left"><p>Text formatting in notes and labels (bold, italics, links)</p></td>
+<td class="text-left"><p>Yes</p></td>
+<td class="text-left"><p>No</p></td>
 </tr>
-<tr>
-<td>Combine subsequent notes into a single note on the screen</td>
-<td>Yes</td>
-<td>No</td>
+<tr class="row-even"><td class="text-left"><p>Combine subsequent notes into a single note on the screen</p></td>
+<td class="text-left"><p>Yes</p></td>
+<td class="text-left"><p>No</p></td>
 </tr>
-<tr>
-<td><code>multiline</code> appearance for <code>text</code> questions</td>
-<td>Yes</td>
-<td>No</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">multiline</span></code> appearance for <code class="docutils literal notranslate"><span class="pre">text</span></code> questions</p></td>
+<td class="text-left"><p>Yes</p></td>
+<td class="text-left"><p>No</p></td>
 </tr>
-<tr>
-<td><code>horizontal-compact</code> appearance for select-type questions</td>
-<td>Yes</td>
-<td>No</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal-compact</span></code> appearance for select-type questions</p></td>
+<td class="text-left"><p>Yes</p></td>
+<td class="text-left"><p>No</p></td>
 </tr>
-<tr>
-<td><code>likert</code> scale appearance for select-type questions</td>
-<td>Yes</td>
-<td>No</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">likert</span></code> scale appearance for select-type questions</p></td>
+<td class="text-left"><p>Yes</p></td>
+<td class="text-left"><p>No</p></td>
 </tr>
-<tr>
-<td><code>compact-2</code> appearance for select-type questions</td>
-<td>No</td>
-<td>Yes</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">compact-2</span></code> appearance for select-type questions</p></td>
+<td class="text-left"><p>No</p></td>
+<td class="text-left"><p>Yes</p></td>
 </tr>
-<tr>
-<td><code>no-calendar</code> appearance</td>
-<td>No</td>
-<td>Yes</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">no-calendar</span></code> appearance</p></td>
+<td class="text-left"><p>No</p></td>
+<td class="text-left"><p>Yes</p></td>
 </tr>
-<tr>
-<td>Advanced image appearances (<code>annotate</code>, <code>draw</code>, <code>signature</code>)</td>
-<td>Yes</td>
-<td>Yes</td>
+<tr class="row-even"><td class="text-left"><p>Advanced image appearances (<code class="docutils literal notranslate"><span class="pre">annotate</span></code>, <code class="docutils literal notranslate"><span class="pre">draw</span></code>, <code class="docutils literal notranslate"><span class="pre">signature</span></code>)</p></td>
+<td class="text-left"><p>Yes</p></td>
+<td class="text-left"><p>Yes</p></td>
 </tr>
-<tr>
-<td>Calculation command <code>repeat_count()</code></td>
-<td>Set a minimum number of repeat groups</td>
-<td>Set an exact number of repeat groups</td>
+<tr class="row-odd"><td class="text-left"><p>Calculation command <code class="docutils literal notranslate"><span class="pre">repeat_count()</span></code></p></td>
+<td class="text-left"><p>Set a minimum number of repeat groups</p></td>
+<td class="text-left"><p>Set an exact number of repeat groups</p></td>
 </tr>
 </tbody>
-</table><section id="collecting-data-using-kobocollect">
+</table>
+<section id="collecting-data-using-kobocollect">
 <h3>Collecting data using KoboCollect<a class="headerlink" href="#collecting-data-using-kobocollect" title="Permalink to this headline">¶</a></h3>
 <p>After deploying a project, you can go to <strong>Form - Collect data</strong>, and then
 select the Android application.</p>
 <p><img alt="image" src="_images/KoboCollect.gif" /></p>
 <p>For details on how to set up KoboCollect on any Android devices,
-<a class="reference internal" href="kobocollect-android.html"><span class="doc">read this article</span></a>.</p>
+<a class="reference internal" href="kobocollect-android.html"><span class="doc std std-doc">read this article</span></a>.</p>
 </section>
 <section id="collecting-data-using-the-enketo-webform">
 <h3>Collecting Data using the Enketo Webform<a class="headerlink" href="#collecting-data-using-the-enketo-webform" title="Permalink to this headline">¶</a></h3>
-<p>To <a class="reference internal" href="data_through_webforms.html"><span class="doc">use the webform</span></a>, after deploying a project, you
+<p>To <a class="reference internal" href="data_through_webforms.html"><span class="doc std std-doc">use the webform</span></a>, after deploying a project, you
 can go to <strong>Form - Collect data</strong>, multiple options (online or offline, single
 or multiple submissions) are available. The default option is <strong>Online-Offline
 (multiple submission)</strong>.</p>
@@ -272,7 +254,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -288,7 +270,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -335,7 +317,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Overview on Data Collection Tools</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#a-quick-rundown-on-the-differences-between-the-two-options">A quick rundown on the differences between the two options</a></li>
@@ -354,7 +336,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -383,7 +365,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -445,7 +427,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
       currentPagename: "data-collection-tools",
       currentTitle: "Overview on Data Collection Tools",
       currentUrl: ("index.html").replace("index.html", "data-collection-tools.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

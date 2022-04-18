@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Recording an Entire Interview with Background Audio Recording &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,7 +105,9 @@
           
   <section id="recording-an-entire-interview-with-background-audio-recording">
 <h1>Recording an Entire Interview with Background Audio Recording<a class="headerlink" href="#recording-an-entire-interview-with-background-audio-recording" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/recording-interviews.md" class="reference">15 Feb 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/recording-interviews.md" class="reference">15
+Feb 2022</a></p>
 <p><strong>Background audio recording</strong> is a powerful feature that allows users to record
 an interview in the background (when the form is open) and store the recording
 as audio data. This feature enhances qualitative data collection by allowing for
@@ -122,7 +124,8 @@ interview.</p>
   <a class="reference" href="media.html"
     >Adding Various Types of Media (image, audio, video) to a Form</a
   >.
-</p><section id="activating-background-audio-recording-in-the-formbuilder">
+</p>
+<section id="activating-background-audio-recording-in-the-formbuilder">
 <h2>Activating background audio recording in the formbuilder<a class="headerlink" href="#activating-background-audio-recording-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
 <p>If you are designing your survey form through the formbuilder and wish to enable
 the <strong>background audio recording</strong>, follow the steps shown in the video below:</p>
@@ -131,7 +134,8 @@ the <strong>background audio recording</strong>, follow the steps shown in the v
     src="./_static/files/recording_interviews/activating_background_audio_recording_UI.mp4"
     type="video/mp4"
   />
-</video><ul class="simple">
+</video>
+<ul class="simple">
 <li><p>Under the <strong>FORM</strong>, select the <strong>Edit</strong> button. <em>(This step may not be
 required if you are already in the formbuilder)</em></p></li>
 <li><p>At the top right corner, select <strong>Layout &amp; Settings</strong> and then <strong>Background
@@ -155,7 +159,8 @@ in the formbuilder.</p></li>
     src="./_static/files/recording_interviews/including_background_audio_question_type_xlsform.mp4"
     type="video/mp4"
   />
-</video><p>In your XLSForm, add <code class="docutils literal notranslate"><span class="pre">background-audio</span></code> under the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the
+</video>
+<p>In your XLSForm, add <code class="docutils literal notranslate"><span class="pre">background-audio</span></code> under the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the
 <strong>survey</strong> sheet. This is the question type that will record the audio in the
 background.</p>
 </section>
@@ -166,48 +171,45 @@ appropriate parameter. Audio quality is directly related to the file size that
 will be stored on the server. Keep in mind how much of your total storage space
 you want to use towards your audio files. Refer to the table below when choosing
 the appropriate parameter:</p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Quality</th>
-<th>Parameters</th>
-<th>Extension</th>
-<th>Encoding</th>
-<th>Bit rate</th>
-<th>Sample rate</th>
-<th>File size</th>
+<tr class="row-odd"><th class="text-left head"><p>Quality</p></th>
+<th class="text-left head"><p>Parameters</p></th>
+<th class="text-left head"><p>Extension</p></th>
+<th class="text-left head"><p>Encoding</p></th>
+<th class="text-left head"><p>Bit rate</p></th>
+<th class="text-left head"><p>Sample rate</p></th>
+<th class="text-left head"><p>File size</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>normal</td>
-<td>quality=normal</td>
-<td>.m4a</td>
-<td>AAC</td>
-<td>64 kbps</td>
-<td>32 kHz</td>
-<td>~ 30 MB/hour</td>
+<tr class="row-even"><td class="text-left"><p>normal</p></td>
+<td class="text-left"><p>quality=normal</p></td>
+<td class="text-left"><p>.m4a</p></td>
+<td class="text-left"><p>AAC</p></td>
+<td class="text-left"><p>64 kbps</p></td>
+<td class="text-left"><p>32 kHz</p></td>
+<td class="text-left"><p>~ 30 MB/hour</p></td>
 </tr>
-<tr>
-<td>low</td>
-<td>quality=low</td>
-<td>.m4a</td>
-<td>AAC</td>
-<td>24 kbps</td>
-<td>32 kHz</td>
-<td>~ 11 MB/hour</td>
+<tr class="row-odd"><td class="text-left"><p>low</p></td>
+<td class="text-left"><p>quality=low</p></td>
+<td class="text-left"><p>.m4a</p></td>
+<td class="text-left"><p>AAC</p></td>
+<td class="text-left"><p>24 kbps</p></td>
+<td class="text-left"><p>32 kHz</p></td>
+<td class="text-left"><p>~ 11 MB/hour</p></td>
 </tr>
-<tr>
-<td>voice-only</td>
-<td>quality=voice-only</td>
-<td>.amr</td>
-<td>AMR</td>
-<td>12.2 kbps</td>
-<td>8 kHz</td>
-<td>~ 5 MB/hour</td>
+<tr class="row-even"><td class="text-left"><p>voice-only</p></td>
+<td class="text-left"><p>quality=voice-only</p></td>
+<td class="text-left"><p>.amr</p></td>
+<td class="text-left"><p>AMR</p></td>
+<td class="text-left"><p>12.2 kbps</p></td>
+<td class="text-left"><p>8 kHz</p></td>
+<td class="text-left"><p>~ 5 MB/hour</p></td>
 </tr>
 </tbody>
-</table><p>You can leave the column blank to have the parameter set to <code class="docutils literal notranslate"><span class="pre">voice-only</span></code>, which
+</table>
+<p>You can leave the column blank to have the parameter set to <code class="docutils literal notranslate"><span class="pre">voice-only</span></code>, which
 will capture audio well in a quiet interview setting. If you are recording audio
 where there could be multiple people talking simultaneously, <code class="docutils literal notranslate"><span class="pre">low</span></code> would be more
 suitable. <code class="docutils literal notranslate"><span class="pre">normal</span></code> is the highest quality option and it will use the most
@@ -216,14 +218,15 @@ storage space.</p>
 <section id="collecting-background-audio-with-collect-android-app">
 <h2>Collecting background audio with Collect Android app<a class="headerlink" href="#collecting-background-audio-with-collect-android-app" title="Permalink to this headline">¶</a></h2>
 <p>Review our support article,
-<a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc">Data Collection on KoboCollect App</span></a>, to learn
+<a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc std std-doc">Data Collection on KoboCollect App</span></a>, to learn
 in detail about collecting data on the <strong>Collect Android app</strong>.</p>
 <video controls>
   <source
     src="./_static/files/recording_interviews/collecting_data_with_background_audio_in_collect_app.mp4"
     type="video/mp4"
   />
-</video><p>While actively recording background audio with the <strong>Collect Android app</strong>, you
+</video>
+<p>While actively recording background audio with the <strong>Collect Android app</strong>, you
 should be able to see a microphone at the top of your form.</p>
 <p><img alt="Background audio screen" src="_images/background_audio_screen.jpg" /></p>
 </section>
@@ -242,7 +245,8 @@ recorded audio file under the <strong>DATA&gt;Table</strong> as shown in the ima
     src="./_static/files/recording_interviews/downloading_audio_files_that_were_recorded_as_background_audio.mp4"
     type="video/mp4"
   />
-</video></section>
+</video>
+</section>
 <section id="ethical-considerations">
 <h2>Ethical considerations<a class="headerlink" href="#ethical-considerations" title="Permalink to this headline">¶</a></h2>
 <p>When collecting data, it is ethical to have informed consent from survey
@@ -252,7 +256,8 @@ audio.</p>
   We encourage all users to consider ethical implications of their data
   collection and to comply with applicable data protection legislation within
   the jurisdiction of their work.
-</p></section>
+</p>
+</section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -280,7 +285,7 @@ and ensures that the server remains running well for our users.</p></li>
 <li><p>When you have large and/or long background audio files in your account, you
 may have issues downloading them as <strong>Media Attachments (ZIP)</strong>. In such a
 case, follow our support article
-<a class="reference internal" href="photo_download.html"><span class="doc">Downloading Photos and Other Media</span></a>, which should help
+<a class="reference internal" href="photo_download.html"><span class="doc std std-doc">Downloading Photos and Other Media</span></a>, which should help
 you download large media files from the system.</p></li>
 </ul>
 </section>
@@ -310,7 +315,7 @@ you download large media files from the system.</p></li>
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -326,7 +331,7 @@ you download large media files from the system.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -373,7 +378,7 @@ you download large media files from the system.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Recording an Entire Interview with Background Audio Recording</a><ul>
@@ -399,7 +404,7 @@ you download large media files from the system.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -428,7 +433,7 @@ you download large media files from the system.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -490,7 +495,7 @@ you download large media files from the system.</p></li>
       currentPagename: "recording-interviews",
       currentTitle: "Recording an Entire Interview with Background Audio Recording",
       currentUrl: ("index.html").replace("index.html", "recording-interviews.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Adding Various Types of Media (image, audio, video) to a Form &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,35 +105,34 @@
           
   <section id="adding-various-types-of-media-image-audio-video-to-a-form">
 <h1>Adding Various Types of Media (image, audio, video) to a Form<a class="headerlink" href="#adding-various-types-of-media-image-audio-video-to-a-form" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15 Feb 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15
+Feb 2022</a></p>
 <p>In addition to text questions and text choices, you can also add various types
 of media (such as <em>image</em>, <em>audio</em>, and <em>video</em>) to your forms. Having media in
 a form should sometimes be able to help you express your questions and choices
 in a much better way.</p>
 <p>Media in a form works both on <strong>Collect android app</strong> and <strong>Web forms
 (Enketo)</strong>. These are the media files that are currently supported:</p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Media</th>
-<th>Files</th>
+<tr class="row-odd"><th class="text-left head"><p>Media</p></th>
+<th class="text-left head"><p>Files</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Image</td>
-<td>jpeg, png, svg</td>
+<tr class="row-even"><td class="text-left"><p>Image</p></td>
+<td class="text-left"><p>jpeg, png, svg</p></td>
 </tr>
-<tr>
-<td>Audio</td>
-<td>aac, aacp, flac, mp3, mp4, mpeg, ogg, wav, webm, x-m4a, x-wav</td>
+<tr class="row-odd"><td class="text-left"><p>Audio</p></td>
+<td class="text-left"><p>aac, aacp, flac, mp3, mp4, mpeg, ogg, wav, webm, x-m4a, x-wav</p></td>
 </tr>
-<tr>
-<td>Video</td>
-<td>3gpp, avi, flv, mov, mp4, ogg, quicktime (qtff), webm, wmv</td>
+<tr class="row-even"><td class="text-left"><p>Video</p></td>
+<td class="text-left"><p>3gpp, avi, flv, mov, mp4, ogg, quicktime (qtff), webm, wmv</p></td>
 </tr>
 </tbody>
-</table><p>This support article aims to illustrate how forms with media can be created with
+</table>
+<p>This support article aims to illustrate how forms with media can be created with
 <strong>KoboToolbox</strong>. Follow the instructions outlined below to include media to your
 survey project.</p>
 <section id="step-1-download-form-as-xlsform">
@@ -148,7 +147,8 @@ complete this action.</p>
 <h2>Step 2: Add Media Columns to your XLSForm<a class="headerlink" href="#step-2-add-media-columns-to-your-xlsform" title="Permalink to this headline">¶</a></h2>
 <p class='note'>The file names added to the XLSForm must match the file names you
 gave to your <em>image</em>, <em>audio</em>, and
-<em>video</em> files.</p><section id="adding-image-media-columns">
+<em>video</em> files.</p>
+<section id="adding-image-media-columns">
 <h3>Adding Image Media Columns:<a class="headerlink" href="#adding-image-media-columns" title="Permalink to this headline">¶</a></h3>
 <p>If you wish to add an <strong>image</strong> to a question, then type <code class="docutils literal notranslate"><span class="pre">media::image</span></code> as a
 column header in the <strong>survey</strong> tab of your XLSForm. Type the image file name
@@ -188,7 +188,8 @@ file name along with an extension to the appropriate choice just under the
 <section id="step-3-handling-media-columns-for-multiple-languages">
 <h2>Step 3: Handling Media Columns for Multiple Languages<a class="headerlink" href="#step-3-handling-media-columns-for-multiple-languages" title="Permalink to this headline">¶</a></h2>
 <p class='note'>This step is for those who have multiple languages in their survey
-project.</p><p>You may have a survey with multiple languages and want to add various types of
+project.</p>
+<p>You may have a survey with multiple languages and want to add various types of
 media relevant to specific languages. In such cases, you could follow the
 illustrations provided below.</p>
 <section id="handling-media-column-for-image-media">
@@ -248,7 +249,8 @@ your form.</p>
 project. Provide a short file name for each of the media. File names
 with a space (e.g., "red book") is not supported by the system. Hence,
 you will need to either remove the space in between the names (e.g.,
-"redbook") or use '_' for a space (e.g., "red_book").</p></section>
+"redbook") or use '_' for a space (e.g., "red_book").</p>
+</section>
 <section id="step-6-deploy-form">
 <h2>Step 6: Deploy Form<a class="headerlink" href="#step-6-deploy-form" title="Permalink to this headline">¶</a></h2>
 <p>Once you have replaced the XLSForm and then uploaded all the media files, you
@@ -257,7 +259,8 @@ will need to deploy your survey.</p>
 <p class='note'>Each time new media files are added or changed, you need to
 <strong>redeploy</strong> your project for the change to take effect.
 You can see your new media when previewing your form
-<em>before</em> redeployment.</p></section>
+<em>before</em> redeployment.</p>
+</section>
 <section id="step-7-collect-data">
 <h2>Step 7: Collect Data<a class="headerlink" href="#step-7-collect-data" title="Permalink to this headline">¶</a></h2>
 <p>You can now go back to <strong>Form&gt;Collect Data</strong>, and then click <strong>Open</strong> to check
@@ -266,7 +269,8 @@ if the media are properly displayed.</p>
 <p class='note'>Animated GIF files are currently not supported by Enketo or
 Collect android app. Aligning media to a desired form location (left
 alignment, center alignment or the right alignment) is also not
-possible.</p></section>
+possible.</p>
+</section>
 <section id="tips-tricks">
 <h2>Tips &amp; Tricks<a class="headerlink" href="#tips-tricks" title="Permalink to this headline">¶</a></h2>
 <section id="identifying-the-filename-extension-and-size-of-a-media-file-on-windows">
@@ -290,12 +294,14 @@ vice-versa.</p></li>
 </ul>
 <p class='note'>The media in an Enketo form will take more time to load if you
 have large files. Try reducing the image, video or audio file sizes
-before uploading them to the server.</p><p><img alt="Image details" src="_images/image_details.png" /></p>
+before uploading them to the server.</p>
+<p><img alt="Image details" src="_images/image_details.png" /></p>
 <p class='note'>You can access the XLSForm <a download class='reference'
 href='./_static/files/media/xlsform-example.xls'>here</a> and the media files <a
 download class='reference'
 href='./_static/files/media/xlsform-example-media.zip'>here</a> that were used
-in this article.</p></section>
+in this article.</p>
+</section>
 </section>
 </section>
 
@@ -323,7 +329,7 @@ in this article.</p></section>
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -339,7 +345,7 @@ in this article.</p></section>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -396,7 +402,7 @@ in this article.</p></section>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -412,7 +418,7 @@ in this article.</p></section>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -441,7 +447,7 @@ in this article.</p></section>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -503,7 +509,7 @@ in this article.</p></section>
       currentPagename: "media",
       currentTitle: "Adding Various Types of Media (image, audio, video) to a Form",
       currentUrl: ("index.html").replace("index.html", "media.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

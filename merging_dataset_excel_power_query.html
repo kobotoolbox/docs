@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Merging Individual Data with Roster Data through Power Query in Excel &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -107,10 +107,10 @@
 <h1>Merging Individual Data with Roster Data through Power Query in Excel<a class="headerlink" href="#merging-individual-data-with-roster-data-through-power-query-in-excel" title="Permalink to this headline">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 Apr 2022</a></p>
 <p>As illustrated in the support article,
-<a class="reference internal" href="group_repeat.html"><span class="doc">Grouping Questions and Repeating Groups</span></a>, you can use
+<a class="reference internal" href="group_repeat.html"><span class="doc std std-doc">Grouping Questions and Repeating Groups</span></a>, you can use
 repeating groups to fulfil certain survey requirements. You may also need to
 analyze data from the repeat groups that were collected. When
-<a class="reference internal" href="export_download.html"><span class="doc">downloading the data from the server (in XLS format)</span></a>, you
+<a class="reference internal" href="export_download.html"><span class="doc std std-doc">downloading the data from the server (in XLS format)</span></a>, you
 should see the data in the following structure:</p>
 <p><img alt="Dataset Sheets" src="_images/dataset_sheets.png" /></p>
 <p>The first sheet with the sheet name <strong>Repeat Group (Merge)</strong> seen in the image
@@ -121,7 +121,8 @@ the sheet name <strong>CR</strong> holds the <em>roster data</em>.</p>
   <em>repeat groups</em>. For example, if you had one
   <em>repeat group</em> included in the survey form, you should have two sheets
   in your dataset.
-</p><p>This support article will also illustrate the difference between <em>individual
+</p>
+<p>This support article will also illustrate the difference between <em>individual
 data</em> and <em>roster data</em>. It will then show the steps for how to merge them into
 a single dataset through <strong>Power Query</strong> in <strong>Excel</strong>.</p>
 <p>Merging <em>individual data</em> and <em>roster data</em> through the system is currently not
@@ -145,7 +146,8 @@ used in this support article are hypothetical</em>.</p>
   Any data that is collected outside the repeat group is
   <em>individual data</em> and any data that is collected inside a repeat group
   is <em>roster data</em>.
-</p><p>Data downloaded in XLS format should also show the difference between
+</p>
+<p>Data downloaded in XLS format should also show the difference between
 <em>individual data</em> and <em>roster data</em>.</p>
 <p>Each record <em>(as shown in the image below)</em>, under <code class="docutils literal notranslate"><span class="pre">Name</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">household</span> <span class="pre">head</span></code>,
 <code class="docutils literal notranslate"><span class="pre">Sex</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">household</span> <span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">family</span> <span class="pre">members</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">household</span></code>, and
@@ -162,7 +164,8 @@ data</em>.</p>
   <strong>Note:</strong> While downloading a dataset from the server, you should
   also be able to see other variables (metadata variables) if they have not been
   filtered out. They have been removed from this example dataset for simplicity.
-</p></section>
+</p>
+</section>
 <section id="merging-individual-data-with-roster-data">
 <h2>Merging individual data with roster data:<a class="headerlink" href="#merging-individual-data-with-roster-data" title="Permalink to this headline">¶</a></h2>
 <p>If you look closely at the images shared above, you can see <code class="docutils literal notranslate"><span class="pre">_index</span></code> column with
@@ -183,7 +186,8 @@ please see the video below:</p>
     src="./_static/files/merging_dataset_excel_power_query/xls_dataset_open.mp4"
     type="video/mp4"
   />
-</video><ul class="simple">
+</video>
+<ul class="simple">
 <li><p>Open the dataset that has both the <em>individual data</em> and <em>roster data</em>.</p></li>
 <li><p>Select all data from the first sheet <em>(individual data)</em>.</p></li>
 <li><p>Under the <strong>Data</strong> tab, select <strong>From Table/Range</strong>.</p></li>
@@ -228,7 +232,8 @@ have opened your new Excel workbook. For details, please see the video below:</p
     src="./_static/files/merging_dataset_excel_power_query/new_excel_workbook.mp4"
     type="video/mp4"
   />
-</video><ul class="simple">
+</video>
+<ul class="simple">
 <li><p>Open a new Excel workbook.</p></li>
 <li><p>Under the <strong>Data</strong> tab, select <strong>Get Data</strong>. From there select <strong>From File</strong>
 and then <strong>From Workbook</strong>.</p></li>
@@ -266,7 +271,8 @@ and <strong>Close &amp; Load To …</strong>.</p></li>
   The differences in the two approaches are with loading the query table. Once
   the query tables are loaded, you will need to follow the same steps to merge
   the <em>individual data</em> and <em>roster data</em>.
-</p></section>
+</p>
+</section>
 </section>
 <section id="troubleshooting">
 <h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
@@ -297,7 +303,8 @@ please check out the
     >here</a
   >
   that were used in this article.
-</p></section>
+</p>
+</section>
 </section>
 
 
@@ -324,7 +331,7 @@ please check out the
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -340,7 +347,7 @@ please check out the
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -387,7 +394,7 @@ please check out the
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -403,7 +410,7 @@ please check out the
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -437,7 +444,7 @@ please check out the
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -499,7 +506,7 @@ please check out the
       currentPagename: "merging_dataset_excel_power_query",
       currentTitle: "Merging Individual Data with Roster Data through Power Query in Excel",
       currentUrl: ("index.html").replace("index.html", "merging_dataset_excel_power_query.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

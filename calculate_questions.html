@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Calculate Question Type &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,7 +105,9 @@
           
   <section id="calculate-question-type">
 <h1>Calculate Question Type<a class="headerlink" href="#calculate-question-type" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/calculate_questions.md" class="reference">15 Feb 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/calculate_questions.md" class="reference">15
+Feb 2022</a></p>
 <p>Some advanced forms may require an internal calculation to take place as part of
 the form (rather than afterwards during the analysis). This can be done by
 adding a Calculation and writing the mathematical expression into the question
@@ -123,7 +125,7 @@ write <code class="docutils literal notranslate"><span class="pre">${income}</sp
 <p>You can also use the answer to this Calculate question for other purposes, such
 as building your skip logic (for example only ask a follow-up question above a
 certain income threshold) or by displaying it inside a Note
-(<a class="reference internal" href="responses_inside_question.html"><span class="doc">see here</span></a> for help on how to display the
+(<a class="reference internal" href="responses_inside_question.html"><span class="doc std std-doc">see here</span></a> for help on how to display the
 response to one question in the label of another question).</p>
 <section id="list-of-available-functions">
 <h2>List of available functions<a class="headerlink" href="#list-of-available-functions" title="Permalink to this headline">¶</a></h2>
@@ -134,76 +136,62 @@ can be used in this field, please see
 <a class="reference external" href="https://docs.getodk.org/form-operators-functions/">XForm specifications on calculation functions</a>
 for the technical background of all the functions available in KoboToolbox and
 XLSForms. For advance use of calculations in KoboToolbox, please refer to
-<a class="reference internal" href="advanced_calculate.html"><span class="doc">this article</span></a>.</p>
+<a class="reference internal" href="advanced_calculate.html"><span class="doc std std-doc">this article</span></a>.</p>
 </section>
 <section id="list-of-available-math-operators">
 <h2>List of available math operators<a class="headerlink" href="#list-of-available-math-operators" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Operator</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>Operator</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>+</code></td>
-<td>Addition</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
+<td class="text-left"><p>Addition</p></td>
 </tr>
-<tr>
-<td><code>-</code></td>
-<td>Subtraction</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">-</span></code></p></td>
+<td class="text-left"><p>Subtraction</p></td>
 </tr>
-<tr>
-<td><code>*</code></td>
-<td>Multiplication</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td class="text-left"><p>Multiplication</p></td>
 </tr>
-<tr>
-<td><code>div</code></td>
-<td>Division</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">div</span></code></p></td>
+<td class="text-left"><p>Division</p></td>
 </tr>
-<tr>
-<td><code>=</code></td>
-<td>Equal</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">=</span></code></p></td>
+<td class="text-left"><p>Equal</p></td>
 </tr>
-<tr>
-<td><code>!=</code></td>
-<td>Not equal</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">!=</span></code></p></td>
+<td class="text-left"><p>Not equal</p></td>
 </tr>
-<tr>
-<td><code>&lt;</code></td>
-<td>Less than</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&lt;</span></code></p></td>
+<td class="text-left"><p>Less than</p></td>
 </tr>
-<tr>
-<td><code>&lt;=</code></td>
-<td>Less than or equal to</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&lt;=</span></code></p></td>
+<td class="text-left"><p>Less than or equal to</p></td>
 </tr>
-<tr>
-<td><code>&gt;</code></td>
-<td>Greater than</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&gt;</span></code></p></td>
+<td class="text-left"><p>Greater than</p></td>
 </tr>
-<tr>
-<td><code>&gt;=</code></td>
-<td>Greater than or equal to</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&gt;=</span></code></p></td>
+<td class="text-left"><p>Greater than or equal to</p></td>
 </tr>
-<tr>
-<td><code>or</code></td>
-<td>Or</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">or</span></code></p></td>
+<td class="text-left"><p>Or</p></td>
 </tr>
-<tr>
-<td><code>and</code></td>
-<td>And</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">and</span></code></p></td>
+<td class="text-left"><p>And</p></td>
 </tr>
-<tr>
-<td><code>mod</code></td>
-<td>Modulus (division remainder)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">mod</span></code></p></td>
+<td class="text-left"><p>Modulus (division remainder)</p></td>
 </tr>
-<tr>
-<td><code>pow([base], [power])</code></td>
-<td>Power / exponent</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">pow([base],</span> <span class="pre">[power])</span></code></p></td>
+<td class="text-left"><p>Power / exponent</p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 </section>
 
 
@@ -230,7 +218,7 @@ XLSForms. For advance use of calculations in KoboToolbox, please refer to
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -246,7 +234,7 @@ XLSForms. For advance use of calculations in KoboToolbox, please refer to
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -297,7 +285,7 @@ XLSForms. For advance use of calculations in KoboToolbox, please refer to
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -313,7 +301,7 @@ XLSForms. For advance use of calculations in KoboToolbox, please refer to
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -342,7 +330,7 @@ XLSForms. For advance use of calculations in KoboToolbox, please refer to
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -404,7 +392,7 @@ XLSForms. For advance use of calculations in KoboToolbox, please refer to
       currentPagename: "calculate_questions",
       currentTitle: "Calculate Question Type",
       currentUrl: ("index.html").replace("index.html", "calculate_questions.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

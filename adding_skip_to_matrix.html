@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Adding Skip Logic to a Matrix Question &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,15 +105,17 @@
           
   <section id="adding-skip-logic-to-a-matrix-question">
 <h1>Adding Skip Logic to a Matrix Question<a class="headerlink" href="#adding-skip-logic-to-a-matrix-question" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/83d9dadfcc132d75f99e2705f77c425c2fee6d70/source/adding_skip_to_matrix.md" class="reference">11 Mar 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/83d9dadfcc132d75f99e2705f77c425c2fee6d70/source/adding_skip_to_matrix.md" class="reference">11
+Mar 2022</a></p>
 <p>In most situations, you can add skip logic to any question type as outlined in
-the support article <strong><a class="reference internal" href="skip_logic.html"><span class="doc">Adding Skip Logic</span></a></strong>. However, when
+the support article <strong><a class="reference internal" href="skip_logic.html"><span class="doc std std-doc">Adding Skip Logic</span></a></strong>. However, when
 working within the formbuilder, adding skip logic to a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question is not
 yet possible. Instead, an XLSForm can be used to implement skip logic for this
 question type. This support article illustrates how you can add skip logic to a
 <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question using XLSForm.</p>
 <p>If you have gone through the support article
-<strong><a class="reference internal" href="matrix_response.html"><span class="doc">Question Matrix Response Type</span></a></strong>, you will already know
+<strong><a class="reference internal" href="matrix_response.html"><span class="doc std std-doc">Question Matrix Response Type</span></a></strong>, you will already know
 that there are 2 approaches to create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in KoboToolbox: the
 <em>formbuilder approach</em> and the <em><code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code> approach</em>. This support
 article provides an overview of the necessary steps to add skip logic to a
@@ -123,16 +125,16 @@ article provides an overview of the necessary steps to add skip logic to a
 <p>The approach works with <strong>Enketo</strong>, also known as <strong>web forms</strong>, utilizing the
 <strong>Grid-theme layout</strong>. It may not function as expected if you ignore the
 <strong>Grid-theme layout</strong> settings as outlined in the support article
-<strong><a class="reference internal" href="alternative_enketo.html"><span class="doc">Using Alternative Enketo Web Form Styles</span></a></strong>.</p>
+<strong><a class="reference internal" href="alternative_enketo.html"><span class="doc std std-doc">Using Alternative Enketo Web Form Styles</span></a></strong>.</p>
 <p>Follow the steps outlined below to add skip logic to a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question using
 the formbuilder approach.</p>
 <p><strong>Step 1:</strong> Create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in the formbuilder:</p>
 <p>The first step is to create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in the formbuilder as outlined
-in the support article <strong><a class="reference internal" href="matrix_response.html"><span class="doc">Question Matrix Response Type</span></a></strong>.
+in the support article <strong><a class="reference internal" href="matrix_response.html"><span class="doc std std-doc">Question Matrix Response Type</span></a></strong>.
 Simply add rows and columns with the variables you intend to collect data for.</p>
 <p><strong>Step 2:</strong> Download form as XLSForm:</p>
 <p>Once the <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question is ready, <strong>SAVE</strong> the form and then
-<a class="reference external" href="getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox">download it as an XLSForm</a>.</p>
+<a class="reference internal" href="getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox"><span class="std std-doc">download it as an XLSForm</span></a>.</p>
 <p><strong>Step 3:</strong> Add relevant column header and skip logic to your XLSForm:</p>
 <p>Now open the XLSForm and then add the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column header to the XLSForm.
 Once you have the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column header, you will be able to add skip logic
@@ -180,7 +182,8 @@ used.</p>
     >(adding skip logic to a <code>matrix</code> question using the formbuilder
     approach)</em
   >.
-</p></section>
+</p>
+</section>
 <section id="kobo-matrix-list-approach">
 <h2><code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code> Approach:<a class="headerlink" href="#kobo-matrix-list-approach" title="Permalink to this headline">¶</a></h2>
 <p>Just like with the formbuilder approach, this method of adding skip logic with
@@ -189,7 +192,7 @@ an XLSForm works with <strong>Enketo</strong> using the <strong>Grid-theme layou
 using the <code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code> approach.</p>
 <p><strong>Step 1:</strong> Create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in the XLSForm:</p>
 <p>Create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in the XLSForm, as outlined in the support article
-<strong><a class="reference internal" href="matrix_response.html"><span class="doc">Question Matrix Response Type</span></a></strong>.</p>
+<strong><a class="reference internal" href="matrix_response.html"><span class="doc std std-doc">Question Matrix Response Type</span></a></strong>.</p>
 <p><strong>Step 2:</strong> Add <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column header and skip logic to your XLSForm:</p>
 <p>Once the <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question is ready, you must add the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column header.
 You can now add skip logic to all the questions under the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column
@@ -222,7 +225,8 @@ the <code class="docutils literal notranslate"><span class="pre">matrix</span></
     >(adding skip logic to a <code>matrix</code> question using the
     <code>kobo--matrix_list</code> approach)</em
   >.
-</p></section>
+</p>
+</section>
 </section>
 
 
@@ -249,7 +253,7 @@ the <code class="docutils literal notranslate"><span class="pre">matrix</span></
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -265,7 +269,7 @@ the <code class="docutils literal notranslate"><span class="pre">matrix</span></
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -316,7 +320,7 @@ the <code class="docutils literal notranslate"><span class="pre">matrix</span></
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -332,7 +336,7 @@ the <code class="docutils literal notranslate"><span class="pre">matrix</span></
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -361,7 +365,7 @@ the <code class="docutils literal notranslate"><span class="pre">matrix</span></
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -423,7 +427,7 @@ the <code class="docutils literal notranslate"><span class="pre">matrix</span></
       currentPagename: "adding_skip_to_matrix",
       currentTitle: "Adding Skip Logic to a Matrix Question",
       currentUrl: ("index.html").replace("index.html", "adding_skip_to_matrix.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

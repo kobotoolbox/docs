@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Restricting Text Responses With Regular Expressions &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,7 +105,9 @@
           
   <section id="restricting-text-responses-with-regular-expressions">
 <h1>Restricting Text Responses With Regular Expressions<a class="headerlink" href="#restricting-text-responses-with-regular-expressions" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/restrict_responses.md" class="reference">15 Feb 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/restrict_responses.md" class="reference">15
+Feb 2022</a></p>
 <p>A regular expression, or regex, is a search pattern used for matching specific
 characters and ranges of characters within a string. It is widely used to
 validate, search, extract, and restrict text in most programming languages.
@@ -114,7 +116,7 @@ entry to a particular question <em>(e.g. controlling the entry of mobile number 
 exactly 10 digits, controlling the entry of a valid email id etc.)</em>.</p>
 <section id="to-use-a-regex-in-kobotoolbox-follow-these-steps">
 <h2>To use a regex in KoboToolbox, follow these steps<a class="headerlink" href="#to-use-a-regex-in-kobotoolbox-follow-these-steps" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Prepare a <em>Text</em> question type.</p></li>
 <li><p>Go to the question’s <em>Settings</em>.</p></li>
 <li><p>Go to <em>Validation Criteria</em> and choose the <em>Manually enter your validation
@@ -128,350 +130,291 @@ when they don’t meet the regex criteria.</p></li>
 </ol>
 <p><img alt="image" src="_images/regrex.jpg" /></p>
 <p>Regex can also be coded in XLSForm, under the <em>constraint</em> column:</p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>type</th>
-<th>name</th>
-<th>label</th>
-<th>appearance</th>
-<th>constraint</th>
-<th>constraint_message</th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>appearance</p></th>
+<th class="text-left head"><p>constraint</p></th>
+<th class="text-left head"><p>constraint_message</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>text</td>
-<td>q1</td>
-<td>Mobile number of respondent</td>
-<td>numbers</td>
-<td>regex(., '^[0-9]{10}$')</td>
-<td>This value must be only 10 digits</td>
+<tr class="row-even"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>q1</p></td>
+<td class="text-left"><p>Mobile number of respondent</p></td>
+<td class="text-left"><p>numbers</p></td>
+<td class="text-left"><p>regex(., ‘^[0-9]{10}$’)</p></td>
+<td class="text-left"><p>This value must be only 10 digits</p></td>
 </tr>
 </tbody>
-</table><p>Alternatively, you can create a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question type and then define the
+</table>
+<p>Alternatively, you can create a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question type and then define the
 regex code under the <em>calculation</em> column. You could then use this variable as
 many times as needed in the survey:</p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>type</th>
-<th>name</th>
-<th>label</th>
-<th>calculation</th>
-<th>constraint</th>
-<th>constraint_message</th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>calculation</p></th>
+<th class="text-left head"><p>constraint</p></th>
+<th class="text-left head"><p>constraint_message</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>calculate</td>
-<td>q0</td>
-<td></td>
-<td>'^[A-Z]{1}[a-z]{1,}\s[A-Z]{1}[a-z]{1,}$'</td>
-<td></td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>calculate</p></td>
+<td class="text-left"><p>q0</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>‘^[A-Z]{1}[a-z]{1,}\s[A-Z]{1}[a-z]{1,}$’</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>text</td>
-<td>q1</td>
-<td>Name of the Enumerator</td>
-<td></td>
-<td>regex(., ${q0})</td>
-<td>Please use this format: Kobe Bryant</td>
+<tr class="row-odd"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>q1</p></td>
+<td class="text-left"><p>Name of the Enumerator</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>regex(., ${q0})</p></td>
+<td class="text-left"><p>Please use this format: Kobe Bryant</p></td>
 </tr>
-<tr>
-<td>text</td>
-<td>q2</td>
-<td>Name of the Respondent</td>
-<td></td>
-<td>regex(., ${q0})</td>
-<td>Please use this format: Kobe Bryant</td>
+<tr class="row-even"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>q2</p></td>
+<td class="text-left"><p>Name of the Respondent</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>regex(., ${q0})</p></td>
+<td class="text-left"><p>Please use this format: Kobe Bryant</p></td>
 </tr>
-<tr>
-<td>integer</td>
-<td>q3</td>
-<td>Age of the Respondent</td>
-<td></td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td class="text-left"><p>integer</p></td>
+<td class="text-left"><p>q3</p></td>
+<td class="text-left"><p>Age of the Respondent</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 <section id="how-do-i-build-the-regex-that-i-need">
 <h2>How do I build the regex that I need?<a class="headerlink" href="#how-do-i-build-the-regex-that-i-need" title="Permalink to this headline">¶</a></h2>
 <p>In addition to the examples and tips provided below, please visit
 <a class="reference external" href="http://www.regexr.com">this website</a> for more help and examples.</p>
-<p class="note">Regex in KoboToolbox should always be written in-between the apostrophes <code>regex(., ' ')</code> as shown in the examples.</p><table border="1" class="docutils">
+<p class="note">Regex in KoboToolbox should always be written in-between the apostrophes <code>regex(., ' ')</code> as shown in the examples.</p>
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Regex</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>Regex</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>^</code></td>
-<td>The caret symbol matches the start of a string without consuming any character.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">^</span></code></p></td>
+<td class="text-left"><p>The caret symbol matches the start of a string without consuming any character.</p></td>
 </tr>
-<tr>
-<td><code>$</code></td>
-<td>The dollar symbol matches the end of a string without consuming any character.</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">$</span></code></p></td>
+<td class="text-left"><p>The dollar symbol matches the end of a string without consuming any character.</p></td>
 </tr>
-<tr>
-<td><code>[abc]</code></td>
-<td>Matches either <code>a</code>, <code>b</code> or <code>c</code> from within the square brackets <code>[ ]</code>.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[abc]</span></code></p></td>
+<td class="text-left"><p>Matches either <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> or <code class="docutils literal notranslate"><span class="pre">c</span></code> from within the square brackets <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>.</p></td>
 </tr>
-<tr>
-<td><code>[a-z]</code></td>
-<td>Matches any lowercase character from <code>a</code> to <code>z</code>.</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[a-z]</span></code></p></td>
+<td class="text-left"><p>Matches any lowercase character from <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code>.</p></td>
 </tr>
-<tr>
-<td><code>[A-Z]</code></td>
-<td>Matches any uppercase character from <code>A</code> to <code>Z</code>.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[A-Z]</span></code></p></td>
+<td class="text-left"><p>Matches any uppercase character from <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code>.</p></td>
 </tr>
-<tr>
-<td><code>[0-9]</code></td>
-<td>Matches any whole numbers from <code>0</code> to <code>9</code>.</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[0-9]</span></code></p></td>
+<td class="text-left"><p>Matches any whole numbers from <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code>.</p></td>
 </tr>
-<tr>
-<td><code>[a-zA-Z0-9]</code></td>
-<td>Matches any character from <code>a</code> to <code>z</code> or <code>A</code> to <code>Z</code> or <code>0</code> to <code>9</code>.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[a-zA-Z0-9]</span></code></p></td>
+<td class="text-left"><p>Matches any character from <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code> or <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code>.</p></td>
 </tr>
-<tr>
-<td><code>[^abc]</code></td>
-<td>Matches any character <em>except</em> <code>a</code>, <code>b</code> or <code>c</code>.</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[^abc]</span></code></p></td>
+<td class="text-left"><p>Matches any character <em>except</em> <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> or <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p></td>
 </tr>
-<tr>
-<td><code>[^A-Z]</code></td>
-<td>Matches any characters <em>except</em> those in the range <code>A</code> to <code>Z</code>.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[^A-Z]</span></code></p></td>
+<td class="text-left"><p>Matches any characters <em>except</em> those in the range <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code>.</p></td>
 </tr>
-<tr>
-<td><code>(apple)</code></td>
-<td>The grouping character <code>( )</code> matches anything that is within the parenthesis.</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">(apple)</span></code></p></td>
+<td class="text-left"><p>The grouping character <code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">)</span></code> matches anything that is within the parenthesis.</p></td>
 </tr>
-<tr>
-<td><code>&#x7c;</code></td>
-<td>A vertical bar matches any element separated.</td>
+<tr class="row-even"><td class="text-left"><p><code>|</code></p></td>
+<td class="text-left"><p>A vertical bar matches any element separated.</p></td>
 </tr>
-<tr>
-<td><code>\</code></td>
-<td>A back slash is used to match the literal value of any metacharacter (e.g. try using <code>\.</code> or <code>\@</code> or <code>\$</code> while building regex).</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\</span></code></p></td>
+<td class="text-left"><p>A back slash is used to match the literal value of any metacharacter (e.g. try using <code class="docutils literal notranslate"><span class="pre">\.</span></code> or <code class="docutils literal notranslate"><span class="pre">\&#64;</span></code> or <code class="docutils literal notranslate"><span class="pre">\$</span></code> while building regex).</p></td>
 </tr>
-<tr>
-<td><code>\number</code></td>
-<td>Matches the same character as most recently matched by the n<sup>th</sup> (number used) capturing group.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\number</span></code></p></td>
+<td class="text-left"><p>Matches the same character as most recently matched by the n<sup>th</sup> (number used) capturing group.</p></td>
 </tr>
-<tr>
-<td><code>\s</code></td>
-<td>Matches any <em>space</em> or <em>tab</em>.</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\s</span></code></p></td>
+<td class="text-left"><p>Matches any <em>space</em> or <em>tab</em>.</p></td>
 </tr>
-<tr>
-<td><code>\b</code></td>
-<td>Matches, without consuming any characters immediately between a character matched by <code>\w</code> and a character not matched by <code>\w</code> (in either order). <code>\b</code> is also known as the <em>word boundary</em>.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\b</span></code></p></td>
+<td class="text-left"><p>Matches, without consuming any characters immediately between a character matched by <code class="docutils literal notranslate"><span class="pre">\w</span></code> and a character not matched by <code class="docutils literal notranslate"><span class="pre">\w</span></code> (in either order). <code class="docutils literal notranslate"><span class="pre">\b</span></code> is also known as the <em>word boundary</em>.</p></td>
 </tr>
-<tr>
-<td><code>\d</code></td>
-<td>Matches any equivalent numbers <code>[0-9]</code></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\d</span></code></p></td>
+<td class="text-left"><p>Matches any equivalent numbers <code class="docutils literal notranslate"><span class="pre">[0-9]</span></code></p></td>
 </tr>
-<tr>
-<td><code>\D</code></td>
-<td>Matches anything other than numbers <code>(0 to 9)</code>.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\D</span></code></p></td>
+<td class="text-left"><p>Matches anything other than numbers <code class="docutils literal notranslate"><span class="pre">(0</span> <span class="pre">to</span> <span class="pre">9)</span></code>.</p></td>
 </tr>
-<tr>
-<td><code>\w</code></td>
-<td>Matches any word character (i.e. <code>a</code> to <code>z</code> or <code>A</code> to <code>Z</code> or <code>0</code> to <code>9</code> or <code>_</code>).</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\w</span></code></p></td>
+<td class="text-left"><p>Matches any word character (i.e. <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code> or <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> or <code class="docutils literal notranslate"><span class="pre">_</span></code>).</p></td>
 </tr>
-<tr>
-<td><code>\W</code></td>
-<td>Matches anything other than what <code>\w</code> matches (i.e. it matches wild cards and spaces).</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\W</span></code></p></td>
+<td class="text-left"><p>Matches anything other than what <code class="docutils literal notranslate"><span class="pre">\w</span></code> matches (i.e. it matches wild cards and spaces).</p></td>
 </tr>
-<tr>
-<td><code>?</code></td>
-<td>A question mark used just behind a character matches or skips (if not required) a character match.</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">?</span></code></p></td>
+<td class="text-left"><p>A question mark used just behind a character matches or skips (if not required) a character match.</p></td>
 </tr>
-<tr>
-<td><code>*</code></td>
-<td>An asterisk symbol used just behind a character matches zero or more consecutive character.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
+<td class="text-left"><p>An asterisk symbol used just behind a character matches zero or more consecutive character.</p></td>
 </tr>
-<tr>
-<td><code>+</code></td>
-<td>The plus symbol used just behind a character matches one or more consecutive character.</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
+<td class="text-left"><p>The plus symbol used just behind a character matches one or more consecutive character.</p></td>
 </tr>
-<tr>
-<td><code>{x}</code></td>
-<td>Matches exactly <code>x</code> consecutive characters.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">{x}</span></code></p></td>
+<td class="text-left"><p>Matches exactly <code class="docutils literal notranslate"><span class="pre">x</span></code> consecutive characters.</p></td>
 </tr>
-<tr>
-<td><code>{x,}</code></td>
-<td>Matches at least <code>x</code> consecutive characters (or more).</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">{x,}</span></code></p></td>
+<td class="text-left"><p>Matches at least <code class="docutils literal notranslate"><span class="pre">x</span></code> consecutive characters (or more).</p></td>
 </tr>
-<tr>
-<td><code>{x,y}</code></td>
-<td>Matches between <code>x</code> and <code>y</code> consecutive characters.</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">{x,y}</span></code></p></td>
+<td class="text-left"><p>Matches between <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> consecutive characters.</p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 <section id="examples-related-to-use-of-numbers">
 <h2>Examples related to use of numbers<a class="headerlink" href="#examples-related-to-use-of-numbers" title="Permalink to this headline">¶</a></h2>
-<p class="note">For all <code>text</code> type questions that use numbers, do not forget to type <code>numbers</code> under the <code>appearance</code> column.</p><table border="1" class="docutils">
+<p class="note">For all <code>text</code> type questions that use numbers, do not forget to type <code>numbers</code> under the <code>appearance</code> column.</p>
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>XLSForm Regex</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>XLSForm Regex</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>regex(., '^[0-9]{10}$')</code> or <code>regex(., '^\d{10}$')</code></td>
-<td>Restrict mobile number to ten digits</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9]{10}$')</span></code> or <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{10}$')</span></code></p></td>
+<td class="text-left"><p>Restrict mobile number to ten digits</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^[0-9]{4}.[0-9]{2}.[0-9]{2}$')</code> or <code>regex(., '^\d{4}\.\d{2}\.\d{2}$')</code></td>
-<td>Restrict an input to <code>1234.56.78</code></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9]{4}.[0-9]{2}.[0-9]{2}$')</span></code> or <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{4}\.\d{2}\.\d{2}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input to <code class="docutils literal notranslate"><span class="pre">1234.56.78</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^[01-99]{2}$') and (. &gt;= 01)</code></td>
-<td>Restrict an input between <code>01</code> to <code>99</code> digits where input format of a <em>single number</em> (like 1 or 2) is not allowed</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[01-99]{2}$')</span> <span class="pre">and</span> <span class="pre">(.</span> <span class="pre">&gt;=</span> <span class="pre">01)</span></code></p></td>
+<td class="text-left"><p>Restrict an input between <code class="docutils literal notranslate"><span class="pre">01</span></code> to <code class="docutils literal notranslate"><span class="pre">99</span></code> digits where input format of a <em>single number</em> (like 1 or 2) is not allowed</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^(12&#x7c;345)$')</code></td>
-<td>Restrict an input to either to <code>12</code> or <code>345</code></td>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., ‘^(12|345)$’)</code></p></td>
+<td class="text-left"><p>Restrict an input to either to <code class="docutils literal notranslate"><span class="pre">12</span></code> or <code class="docutils literal notranslate"><span class="pre">345</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^[1-9][0-9]{8}$')</code> or <code>regex(., '^[^0][0-9]{8}$')</code></td>
-<td>Restrict an input of <em>nine digits</em> where the first number can't be <code>0</code></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[1-9][0-9]{8}$')</span></code> or <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[^0][0-9]{8}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input of <em>nine digits</em> where the first number can’t be <code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\d$')</code></td>
-<td>Restrict an input to <em>one digit</em> in between <code>0</code> to <code>9</code></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input to <em>one digit</em> in between <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\d{5}$')</code></td>
-<td>Restrict an input to <em>five digits</em> in between <code>0</code> to <code>9</code></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{5}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input to <em>five digits</em> in between <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\d{2}\.\d{3}$')</code></td>
-<td>Restrict an input to <em>two digits and three decimals</em> (e.g. <code>12.345</code>)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{2}\.\d{3}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input to <em>two digits and three decimals</em> (e.g. <code class="docutils literal notranslate"><span class="pre">12.345</span></code>)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\d{2}(\.\d{3})?$')</code></td>
-<td>Restrict an input to <em>two digits and three decimals</em> (while the decimals are optional) (e.g. <code>12</code> or <code>12.345</code>)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{2}(\.\d{3})?$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input to <em>two digits and three decimals</em> (while the decimals are optional) (e.g. <code class="docutils literal notranslate"><span class="pre">12</span></code> or <code class="docutils literal notranslate"><span class="pre">12.345</span></code>)</p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 <section id="examples-related-to-use-of-letters">
 <h2>Examples related to use of letters<a class="headerlink" href="#examples-related-to-use-of-letters" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>XLSForm Regex</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>XLSForm Regex</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>regex(., '^[a-z]{1,6}$')</code></td>
-<td>Restrict an input to any lowercase letters (<em>up to 6 characters long</em>)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[a-z]{1,6}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input to any lowercase letters (<em>up to 6 characters long</em>)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^[A-Z]{1,10}$')</code></td>
-<td>Restrict an input to any uppercase letters (<em>up to 10 characters long</em>)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z]{1,10}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input to any uppercase letters (<em>up to 10 characters long</em>)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^(Apple&#x7c;Orange&#x7c;Banana)$')</code></td>
-<td>Restrict an input to only either to <code>Apple</code> or <code>Orange</code> or <code>Banana</code></td>
+<tr class="row-even"><td class="text-left"><p><code>regex(., ‘^(Apple|Orange|Banana)$’)</code></p></td>
+<td class="text-left"><p>Restrict an input to only either to <code class="docutils literal notranslate"><span class="pre">Apple</span></code> or <code class="docutils literal notranslate"><span class="pre">Orange</span></code> or <code class="docutils literal notranslate"><span class="pre">Banana</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^p(ea&#x7c;ai)r$')</code></td>
-<td>Restrict an input to only <code>pear</code> or <code>pair</code></td>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., ‘^p(ea|ai)r$’)</code></p></td>
+<td class="text-left"><p>Restrict an input to only <code class="docutils literal notranslate"><span class="pre">pear</span></code> or <code class="docutils literal notranslate"><span class="pre">pair</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z]{2,}$')</code></td>
-<td>Restrict an input with a <em>valid email address</em></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Za-z0-9._%+-]+&#64;[A-Za-z0-9-]+[.][A-Za-z]{2,}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input with a <em>valid email address</em></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^[A-Z]{1}[a-z]{1,}[ ]{1}[A-Z]{1}[a-z]{1,}$')</code></td>
-<td>Restrict an input of the beneficiaries name where the <em>initials of the first name and last name are uppercase</em> e.g. <code>Kobe Bryant</code></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z]{1}[a-z]{1,}[</span> <span class="pre">]{1}[A-Z]{1}[a-z]{1,}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input of the beneficiaries name where the <em>initials of the first name and last name are uppercase</em> e.g. <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bryant</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\w{1,}\s(\w{1,})?(\s)?\w{1,}$')</code></td>
-<td>Restrict an input of the beneficiaries name with <em>first name, middle name (if any) and last name</em> e.g. <code>Kobe Bean Bryant</code></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\w{1,}\s(\w{1,})?(\s)?\w{1,}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input of the beneficiaries name with <em>first name, middle name (if any) and last name</em> e.g. <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bean</span> <span class="pre">Bryant</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^([A-Z]{1}[a-z]{1,}\s)([A-Z]{1}[a-z]{1,}\s?)+$')</code></td>
-<td>Restrict an input of the beneficiaries' full name where the <em>initials of the names are in uppercase</em> and the name are quite long (often greater than 3 words) e.g. <code>Samayamantri Venkata Rama Naga Butchi Anjaneya Satya Krishna Vijay</code> (this is an example of south Indian names)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([A-Z]{1}[a-z]{1,}\s)([A-Z]{1}[a-z]{1,}\s?)+$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input of the beneficiaries’ full name where the <em>initials of the names are in uppercase</em> and the name are quite long (often greater than 3 words) e.g. <code class="docutils literal notranslate"><span class="pre">Samayamantri</span> <span class="pre">Venkata</span> <span class="pre">Rama</span> <span class="pre">Naga</span> <span class="pre">Butchi</span> <span class="pre">Anjaneya</span> <span class="pre">Satya</span> <span class="pre">Krishna</span> <span class="pre">Vijay</span></code> (this is an example of south Indian names)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^(\D+)\s(\D+)\s?\1$')</code></td>
-<td>Restrict an input of the beneficiaries' first name (so that you are able to capture the exact spelling) where the <em>enumerators are forced to enter the beneficiaries first name twice</em> e.g. <code>Kobe Bryant Kobe</code>. (This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(\D+)\s(\D+)\s?\1$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input of the beneficiaries’ first name (so that you are able to capture the exact spelling) where the <em>enumerators are forced to enter the beneficiaries first name twice</em> e.g. <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bryant</span> <span class="pre">Kobe</span></code>. (This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^(\D+)\s(\D+)\s?\2$')</code></td>
-<td>Restrict an input of the beneficiaries' last name (so that you are able to capture the exact spelling) where the <em>enumerators are forced to enter the beneficiaries last name twice</em> e.g. <code>Kobe Bryant Bryant</code>. <em>(This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy)</em></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(\D+)\s(\D+)\s?\2$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input of the beneficiaries’ last name (so that you are able to capture the exact spelling) where the <em>enumerators are forced to enter the beneficiaries last name twice</em> e.g. <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bryant</span> <span class="pre">Bryant</span></code>. <em>(This could be helpful when you are trying to document beneficiaries details where a typo error could cost you heavy)</em></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^colou?r$')</code></td>
-<td>Restrict a character within a word by using the <code>?</code> (quantifier) e.g. allow either <code>color</code> or <code>colour</code> as an input</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^colou?r$')</span></code></p></td>
+<td class="text-left"><p>Restrict a character within a word by using the <code class="docutils literal notranslate"><span class="pre">?</span></code> (quantifier) e.g. allow either <code class="docutils literal notranslate"><span class="pre">color</span></code> or <code class="docutils literal notranslate"><span class="pre">colour</span></code> as an input</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^ah*!$')</code></td>
-<td>Restrict a character within a word by using the <code>*</code> (quantifier) e.g. allow either <code>a!</code> or <code>ah!</code> or <code>ahh!</code> or <code>ahhh!</code> and so on as an input</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^ah*!$')</span></code></p></td>
+<td class="text-left"><p>Restrict a character within a word by using the <code class="docutils literal notranslate"><span class="pre">*</span></code> (quantifier) e.g. allow either <code class="docutils literal notranslate"><span class="pre">a!</span></code> or <code class="docutils literal notranslate"><span class="pre">ah!</span></code> or <code class="docutils literal notranslate"><span class="pre">ahh!</span></code> or <code class="docutils literal notranslate"><span class="pre">ahhh!</span></code> and so on as an input</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^ah+!$')</code></td>
-<td>Restrict a character within a word by using the <code>+</code> (quantifier) e.g. allow either <code>ah!</code> or <code>ahh!</code> or <code>ahhh!</code> and so on as an input</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^ah+!$')</span></code></p></td>
+<td class="text-left"><p>Restrict a character within a word by using the <code class="docutils literal notranslate"><span class="pre">+</span></code> (quantifier) e.g. allow either <code class="docutils literal notranslate"><span class="pre">ah!</span></code> or <code class="docutils literal notranslate"><span class="pre">ahh!</span></code> or <code class="docutils literal notranslate"><span class="pre">ahhh!</span></code> and so on as an input</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\D$')</code></td>
-<td>Restrict an input to a <em>non-digit character</em> (e.g. <code>a</code> or <code>c</code> or <code>!</code> or <code>#</code> or <code>%</code> etc.)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\D$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input to a <em>non-digit character</em> (e.g. <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">c</span></code> or <code class="docutils literal notranslate"><span class="pre">!</span></code> or <code class="docutils literal notranslate"><span class="pre">#</span></code> or <code class="docutils literal notranslate"><span class="pre">%</span></code> etc.)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\D{5 }$')</code></td>
-<td>Restrict an input to <em>five non-digit character</em> (e.g. <code>aZcB!#%</code> etc.)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\D{5</span> <span class="pre">}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input to <em>five non-digit character</em> (e.g. <code class="docutils literal notranslate"><span class="pre">aZcB!#%</span></code> etc.)</p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 <section id="examples-related-to-use-of-a-combination-of-letters-and-numbers">
 <h2>Examples related to use of a combination of letters and numbers<a class="headerlink" href="#examples-related-to-use-of-a-combination-of-letters-and-numbers" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>XLSForm Regex</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>XLSForm Regex</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>regex(., '^\w$')</code></td>
-<td>Restrict one character which matches between <code>a</code> to <code>z</code> or <code>A</code> to <code>Z</code> or <code>0</code> to <code>9</code> or <code>_</code> (i.e. match one character from <code>[a-zA-Z0-9_]</code>)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\w$')</span></code></p></td>
+<td class="text-left"><p>Restrict one character which matches between <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code> or <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> or <code class="docutils literal notranslate"><span class="pre">_</span></code> (i.e. match one character from <code class="docutils literal notranslate"><span class="pre">[a-zA-Z0-9_]</span></code>)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\w{3}$')</code></td>
-<td>Restrict three character which matches between <code>a</code> to <code>z</code> or <code>A</code> to <code>Z</code> or <code>0</code> to <code>9</code> or <code>_</code> (i.e. match one character from <code>[a-zA-Z0-9_]</code>)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\w{3}$')</span></code></p></td>
+<td class="text-left"><p>Restrict three character which matches between <code class="docutils literal notranslate"><span class="pre">a</span></code> to <code class="docutils literal notranslate"><span class="pre">z</span></code> or <code class="docutils literal notranslate"><span class="pre">A</span></code> to <code class="docutils literal notranslate"><span class="pre">Z</span></code> or <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">9</span></code> or <code class="docutils literal notranslate"><span class="pre">_</span></code> (i.e. match one character from <code class="docutils literal notranslate"><span class="pre">[a-zA-Z0-9_]</span></code>)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^[A-Z]{3}[_][A-Z]{3}[_][0-9]{4}[_][0-9]{4}$')</code></td>
-<td>Restrict your beneficiary ID to a specific format e.g. <code>CAR_PRC_2020_0048</code></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z]{3}[_][A-Z]{3}[_][0-9]{4}[_][0-9]{4}$')</span></code></p></td>
+<td class="text-left"><p>Restrict your beneficiary ID to a specific format e.g. <code class="docutils literal notranslate"><span class="pre">CAR_PRC_2020_0048</span></code></p></td>
 </tr>
-<tr>
-<td><code>regex(., '^CAR-PRC-2020-[0-9]{4}$')</code></td>
-<td>Restrict your beneficiary ID to a specific format e.g. <code>CAR-PRC-2020-0048</code> (<em>where the enumerators should enter an exact match from <code>CAR</code> to <code>-</code> i.e. <code>CAR-PRC-2020-</code> and can enter any 4 digit serial number</em>)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^CAR-PRC-2020-[0-9]{4}$')</span></code></p></td>
+<td class="text-left"><p>Restrict your beneficiary ID to a specific format e.g. <code class="docutils literal notranslate"><span class="pre">CAR-PRC-2020-0048</span></code> (<em>where the enumerators should enter an exact match from <code class="docutils literal notranslate"><span class="pre">CAR</span></code> to <code class="docutils literal notranslate"><span class="pre">-</span></code> i.e. <code class="docutils literal notranslate"><span class="pre">CAR-PRC-2020-</span></code> and can enter any 4 digit serial number</em>)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^[\$&#x7c;\£]\d{3}$')</code></td>
-<td>Restrict a currency input of <em>three digits</em> with a currency sign (either <code>dollar</code> or <code>pound</code>) in front (e.g. <code>$999</code> or <code>£500</code>)</td>
+<tr class="row-even"><td class="text-left"><p><code>regex(., ‘^[$|\£]\d{3}$’)</code></p></td>
+<td class="text-left"><p>Restrict a currency input of <em>three digits</em> with a currency sign (either <code class="docutils literal notranslate"><span class="pre">dollar</span></code> or <code class="docutils literal notranslate"><span class="pre">pound</span></code>) in front (e.g. <code class="docutils literal notranslate"><span class="pre">$999</span></code> or <code class="docutils literal notranslate"><span class="pre">£500</span></code>)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\W*(\w+\b\W*){3}$')</code></td>
-<td>Restrict an exact input of number of words (e.g. to restrict exactly 3 words <code>I love you.</code>)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\W*(\w+\b\W*){3}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an exact input of number of words (e.g. to restrict exactly 3 words <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">love</span> <span class="pre">you.</span></code>)</p></td>
 </tr>
-<tr>
-<td><code>regex(., '^\W*(\w+\b\W*){3,5}$')</code></td>
-<td>Restrict an input of number of words (e.g. to restrict a range of words say <code>3</code> to <code>5</code>)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\W*(\w+\b\W*){3,5}$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input of number of words (e.g. to restrict a range of words say <code class="docutils literal notranslate"><span class="pre">3</span></code> to <code class="docutils literal notranslate"><span class="pre">5</span></code>)</p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 <section id="considerations-when-using-regex">
 <h2>Considerations when using regex<a class="headerlink" href="#considerations-when-using-regex" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -511,7 +454,7 @@ requires the anchors as mandatory for an exact match.</p></li>
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -527,7 +470,7 @@ requires the anchors as mandatory for an exact match.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -582,7 +525,7 @@ requires the anchors as mandatory for an exact match.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -598,7 +541,7 @@ requires the anchors as mandatory for an exact match.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -627,7 +570,7 @@ requires the anchors as mandatory for an exact match.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -689,7 +632,7 @@ requires the anchors as mandatory for an exact match.</p></li>
       currentPagename: "restrict_responses",
       currentTitle: "Restricting Text Responses With Regular Expressions",
       currentUrl: ("index.html").replace("index.html", "restrict_responses.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

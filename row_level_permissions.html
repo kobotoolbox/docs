@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Row-Level Permissions &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,41 +105,40 @@
           
   <section id="row-level-permissions">
 <h1>Row-Level Permissions<a class="headerlink" href="#row-level-permissions" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/row_level_permissions.md" class="reference">15 Feb 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/row_level_permissions.md" class="reference">15
+Feb 2022</a></p>
 <p>The <strong>row-level</strong> permissions are an extension of the
-<a class="reference internal" href="managing_permissions.html"><span class="doc">existing permissions</span></a> features and allow project
+<a class="reference internal" href="managing_permissions.html"><span class="doc std std-doc">existing permissions</span></a> features and allow project
 owners to create four different levels of permissions for a shared project. To
 find this functionality, simply go to project <strong>SETTINGS</strong> and click on the
 <strong>Sharing</strong> section. You will see a screen as shown below.</p>
 <p><img alt="image" src="_images/Options.png" /></p>
 <p>As of August 2021, the management of project permissions has been extended to
 allow for a total of four <strong>row-level</strong> access permissions that include:</p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Row-level permission</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>Row-level permission</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><strong>View submissions only from specific users</strong></td>
-<td><em>View data</em> submitted by a subset of defined data entry users.</td>
+<tr class="row-even"><td class="text-left"><p><strong>View submissions only from specific users</strong></p></td>
+<td class="text-left"><p><em>View data</em> submitted by a subset of defined data entry users.</p></td>
 </tr>
-<tr>
-<td><strong>Edit submissions only from specific users</strong></td>
-<td><em>Edit data</em> submitted by a subset of defined data entry users.</td>
+<tr class="row-odd"><td class="text-left"><p><strong>Edit submissions only from specific users</strong></p></td>
+<td class="text-left"><p><em>Edit data</em> submitted by a subset of defined data entry users.</p></td>
 </tr>
-<tr>
-<td><strong>Delete submissions only from specific users</strong></td>
-<td><em>Delete data</em> submitted by a subset of defined data entry users.</td>
+<tr class="row-even"><td class="text-left"><p><strong>Delete submissions only from specific users</strong></p></td>
+<td class="text-left"><p><em>Delete data</em> submitted by a subset of defined data entry users.</p></td>
 </tr>
-<tr>
-<td><strong>Validate submissions only from specific users</strong></td>
-<td><a class="reference" href="record_validation.html"><i>Validate data</i></a> submitted by a subset of defined data entry users.</td>
+<tr class="row-odd"><td class="text-left"><p><strong>Validate submissions only from specific users</strong></p></td>
+<td class="text-left"><p><a class="reference" href="record_validation.html"><i>Validate data</i></a> submitted by a subset of defined data entry users.</p></td>
 </tr>
 </tbody>
-</table><p class="note">Please note that some permissions imply others. For example, if <i>Alice</i> has <strong>Edit submissions only from specific users</strong> only for <i>Bob</i>, then this implies that <i>Alice</i> also has <strong>View submissions only from specific users</strong> for <i>Bob</i>.</p><section id="configure-your-account-settings">
+</table>
+<p class="note">Please note that some permissions imply others. For example, if <i>Alice</i> has <strong>Edit submissions only from specific users</strong> only for <i>Bob</i>, then this implies that <i>Alice</i> also has <strong>View submissions only from specific users</strong> for <i>Bob</i>.</p>
+<section id="configure-your-account-settings">
 <h2>Configure your Account Settings:<a class="headerlink" href="#configure-your-account-settings" title="Permalink to this headline">¶</a></h2>
 <p>Before configuring project sharing, you will need to open your <strong>ACCOUNT
 SETTINGS</strong> and toggle the checkbox <strong>Require authentication to see forms and
@@ -201,7 +200,8 @@ data</strong> option checked in KoboToolbox.</p>
 <p><img alt="image" src="_images/Login.png" /></p>
 <p>Enter your KoboToolbox login credentials and, if the account has <strong>Add
 submissions</strong> permission, you will be able to submit data to the server.</p>
-<p class="note">Note that it’s advised not to share your admin login credentials when managing your project for data security. You can create multiple enumerator accounts and share those credentials with your team.</p></section>
+<p class="note">Note that it’s advised not to share your admin login credentials when managing your project for data security. You can create multiple enumerator accounts and share those credentials with your team.</p>
+</section>
 <section id="scenario-2">
 <h3>Scenario 2:<a class="headerlink" href="#scenario-2" title="Permalink to this headline">¶</a></h3>
 <p>To set the <em>view</em>, <em>edit</em>, <em>delete</em> and <em>validate</em> row-level permissions
@@ -237,7 +237,7 @@ restricted as expected.</p>
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -253,7 +253,7 @@ restricted as expected.</p>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -300,7 +300,7 @@ restricted as expected.</p>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -316,7 +316,7 @@ restricted as expected.</p>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -350,7 +350,7 @@ restricted as expected.</p>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -412,7 +412,7 @@ restricted as expected.</p>
       currentPagename: "row_level_permissions",
       currentTitle: "Row-Level Permissions",
       currentUrl: ("index.html").replace("index.html", "row_level_permissions.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

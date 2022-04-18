@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Signature Question Type &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,13 +105,18 @@
           
   <section id="signature-question-type">
 <h1>Signature Question Type<a class="headerlink" href="#signature-question-type" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/collecting_signatures.md" class="reference">2 Dec 2021</a></p>
-<p>Some forms may require signatures to be included with them. You can use appearance <code class="docutils literal notranslate"><span class="pre">signature</span></code> on both Collect Android app and Enketo. The draw widget is only available when using Enketo for data collection.</p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/collecting_signatures.md" class="reference">2
+Dec 2021</a></p>
+<p>Some forms may require signatures to be included with them. You can use
+appearance <code class="docutils literal notranslate"><span class="pre">signature</span></code> on both Collect Android app and Enketo. The draw widget
+is only available when using Enketo for data collection.</p>
 <section id="collect-android-app">
 <h2>Collect Android app<a class="headerlink" href="#collect-android-app" title="Permalink to this headline">¶</a></h2>
-<p>Collect allows for a digital signature to be collected directly on the screen of the phone/tablet.</p>
+<p>Collect allows for a digital signature to be collected directly on the screen of
+the phone/tablet.</p>
 <p>To add this to your form:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Open or download the XLS version of your form.</p></li>
 <li><p>Create the question and set the type as <code class="docutils literal notranslate"><span class="pre">image</span></code></p></li>
 <li><p>Set the appearance to <code class="docutils literal notranslate"><span class="pre">signature</span></code></p></li>
@@ -119,44 +124,47 @@
 </section>
 <section id="enketo">
 <h2>Enketo<a class="headerlink" href="#enketo" title="Permalink to this headline">¶</a></h2>
-<p>Digital signatures also work on Enketo web forms, where you have the additional option to use a draw widget to collect signatures. In your XLSForm just add <code class="docutils literal notranslate"><span class="pre">signature</span></code> or <code class="docutils literal notranslate"><span class="pre">draw</span></code> under the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column for an <code class="docutils literal notranslate"><span class="pre">image</span></code>-type question.</p>
+<p>Digital signatures also work on Enketo web forms, where you have the additional
+option to use a draw widget to collect signatures. In your XLSForm just add
+<code class="docutils literal notranslate"><span class="pre">signature</span></code> or <code class="docutils literal notranslate"><span class="pre">draw</span></code> under the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column for an <code class="docutils literal notranslate"><span class="pre">image</span></code>-type
+question.</p>
 <p><strong>survey</strong></p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>type</th>
-<th>name</th>
-<th>label</th>
-<th>appearance</th>
-<th>hint</th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>appearance</p></th>
+<th class="text-left head"><p>hint</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>image</td>
-<td>draw</td>
-<td>Draw widget</td>
-<td>draw</td>
-<td>Image type with draw appearance</td>
+<tr class="row-even"><td class="text-left"><p>image</p></td>
+<td class="text-left"><p>draw</p></td>
+<td class="text-left"><p>Draw widget</p></td>
+<td class="text-left"><p>draw</p></td>
+<td class="text-left"><p>Image type with draw appearance</p></td>
 </tr>
-<tr>
-<td>image</td>
-<td>sign</td>
-<td>Signature widget</td>
-<td>signature</td>
-<td>Image type with signature widget</td>
+<tr class="row-odd"><td class="text-left"><p>image</p></td>
+<td class="text-left"><p>sign</p></td>
+<td class="text-left"><p>Signature widget</p></td>
+<td class="text-left"><p>signature</p></td>
+<td class="text-left"><p>Image type with signature widget</p></td>
 </tr>
 </tbody>
-</table><p><a class="reference external" href="https://enke.to/draw">Follow this link</a> to test the difference between the draw and signature widgets.</p>
+</table>
+<p><a class="reference external" href="https://enke.to/draw">Follow this link</a> to test the difference between the draw
+and signature widgets.</p>
 </section>
 <section id="create-a-signature-question-type-in-the-formbuilder">
 <h2>Create a Signature question type in the formbuilder<a class="headerlink" href="#create-a-signature-question-type-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Create a new question and select Photo as the question type.</p></li>
 </ol>
 <p><img alt="image" src="_images/new_question.jpg" /></p>
-<ol class="simple">
-<li><p>In the Settings under Question Options, click on the Appearance drop down and select Signature.</p></li>
+<ol class="arabic simple" start="2">
+<li><p>In the Settings under Question Options, click on the Appearance drop down and
+select Signature.</p></li>
 </ol>
 <p><img alt="image" src="_images/signature.jpg" /></p>
 </section>
@@ -186,7 +194,7 @@
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -202,7 +210,7 @@
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -254,7 +262,7 @@
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -270,7 +278,7 @@
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -299,7 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -361,7 +369,7 @@
       currentPagename: "collecting_signatures",
       currentTitle: "Signature Question Type",
       currentUrl: ("index.html").replace("index.html", "collecting_signatures.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

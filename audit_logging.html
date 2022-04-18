@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Audit Logging Meta Question Type &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,54 +105,78 @@
           
   <section id="audit-logging-meta-question-type">
 <h1>Audit Logging Meta Question Type<a class="headerlink" href="#audit-logging-meta-question-type" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/audit_logging.md" class="reference">12 Aug 2021</a></p>
-<p>Audit Logging can be a useful tool to monitor enumerator behavior and discover which questions are taking longer to answer, better understand how the enumerators are navigating a certain form, and see which enumerators are generally taking longer periods of time to submit answers.</p>
-<p class="note">This feature requires manually analyzing CSV files.</p><p>The audit log meta question is a question type that is only supported by using the <a class="reference internal" href="kobocollect-android.html"><span class="doc">Collect Android app</span></a>.</p>
-<p>To add an <code class="docutils literal notranslate"><span class="pre">audit</span></code> meta question type to a form and view the finalized data, please follow the steps below:</p>
-<ol class="simple">
-<li><p>In an XLSForm file, add <code class="docutils literal notranslate"><span class="pre">audit</span></code> in the same fashion as you would any other meta questions. Then upload the form file to your project and deploy the form.</p></li>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/audit_logging.md" class="reference">12
+Aug 2021</a></p>
+<p>Audit Logging can be a useful tool to monitor enumerator behavior and discover
+which questions are taking longer to answer, better understand how the
+enumerators are navigating a certain form, and see which enumerators are
+generally taking longer periods of time to submit answers.</p>
+<p class="note">This feature requires manually analyzing CSV files.</p>
+<p>The audit log meta question is a question type that is only supported by using
+the <a class="reference internal" href="kobocollect-android.html"><span class="doc std std-doc">Collect Android app</span></a>.</p>
+<p>To add an <code class="docutils literal notranslate"><span class="pre">audit</span></code> meta question type to a form and view the finalized data,
+please follow the steps below:</p>
+<ol class="arabic simple">
+<li><p>In an XLSForm file, add <code class="docutils literal notranslate"><span class="pre">audit</span></code> in the same fashion as you would any other
+meta questions. Then upload the form file to your project and deploy the
+form.</p></li>
 </ol>
 <p><strong>survey</strong></p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>type</th>
-<th>name</th>
-<th>label</th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>start</td>
-<td>start</td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>start</p></td>
+<td class="text-left"><p>start</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>end</td>
-<td>end</td>
-<td></td>
+<tr class="row-odd"><td class="text-left"><p>end</p></td>
+<td class="text-left"><p>end</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>audit</td>
-<td>audit</td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>audit</p></td>
+<td class="text-left"><p>audit</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>text</td>
-<td>Q1</td>
-<td>Q1. What is your name?</td>
+<tr class="row-odd"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>Q1</p></td>
+<td class="text-left"><p>Q1. What is your name?</p></td>
 </tr>
 </tbody>
-</table><ol class="simple">
-<li><p>Collect data using the <a class="reference internal" href="kobocollect-android.html"><span class="doc">Collect Andoid app</span></a> and send the finalized forms back to the server. Collect saves the audit logs for each submission in a CSV file that are saved and uploaded to the server just as an attached photo would be.</p></li>
-<li><p>After the data has been submitted, open your project in the browser and go to <strong>DATA</strong>, then <strong>Downloads</strong>. Select <strong>Media Attachments (ZIP)</strong> as the export type and then click on <strong>New Export</strong>. Once the download is done pending, click on the file to download it to your computer.</p></li>
+</table>
+<ol class="arabic simple" start="2">
+<li><p>Collect data using the <a class="reference internal" href="kobocollect-android.html"><span class="doc std std-doc">Collect Andoid app</span></a> and send
+the finalized forms back to the server. Collect saves the audit logs for each
+submission in a CSV file that are saved and uploaded to the server just as an
+attached photo would be.</p></li>
+<li><p>After the data has been submitted, open your project in the browser and go to
+<strong>DATA</strong>, then <strong>Downloads</strong>. Select <strong>Media Attachments (ZIP)</strong> as the
+export type and then click on <strong>New Export</strong>. Once the download is done
+pending, click on the file to download it to your computer.</p></li>
 </ol>
 <p><img alt="image" src="_images/zip_export.png" /></p>
-<ol class="simple">
-<li><p>Once the ZIP file has been extracted and opened, click on the file labeled ‘audit.csv’ to view the audit logs. It’s important to note that the CSV uses <a class="reference external" href="https://www.unixtimestamp.com/index.php">Unix Epoch</a> time so the logs are recorded in milliseconds.</p></li>
-<li><p>Because timestamps are saved for each individual submission, you will probably need to copy the values into a new spreadsheet to do further analysis across all submissions (e.g. by enumerator or by question). Collating many different CSV files into can be done by <a class="reference external" href="https://www.google.com/search?q=merge+many+CSV">many free tools or by writing a script</a>. To read more detailed information regarding log structure and event types, please visit ODK’s great documentation on <a class="reference external" href="https://docs.getodk.org/form-audit-log/#">Logging Enumerator Behavior</a>.</p></li>
+<ol class="arabic simple" start="4">
+<li><p>Once the ZIP file has been extracted and opened, click on the file labeled
+‘audit.csv’ to view the audit logs. It’s important to note that the CSV uses
+<a class="reference external" href="https://www.unixtimestamp.com/index.php">Unix Epoch</a> time so the logs are
+recorded in milliseconds.</p></li>
+<li><p>Because timestamps are saved for each individual submission, you will
+probably need to copy the values into a new spreadsheet to do further
+analysis across all submissions (e.g. by enumerator or by question).
+Collating many different CSV files into can be done by
+<a class="reference external" href="https://www.google.com/search?q=merge+many+CSV">many free tools or by writing a script</a>.
+To read more detailed information regarding log structure and event types,
+please visit ODK’s great documentation on
+<a class="reference external" href="https://docs.getodk.org/form-audit-log/#">Logging Enumerator Behavior</a>.</p></li>
 </ol>
-<p>Please feel free post on our <a class="reference external" href="https://community.kobotoolbox.org/">community forum</a> to share your favorite approach or script to use this feature so others can learn from your example.</p>
+<p>Please feel free post on our
+<a class="reference external" href="https://community.kobotoolbox.org/">community forum</a> to share your favorite
+approach or script to use this feature so others can learn from your example.</p>
 </section>
 
 
@@ -179,7 +203,7 @@
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -195,7 +219,7 @@
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -242,7 +266,7 @@
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -258,7 +282,7 @@
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -287,7 +311,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -349,7 +373,7 @@
       currentPagename: "audit_logging",
       currentTitle: "Audit Logging Meta Question Type",
       currentUrl: ("index.html").replace("index.html", "audit_logging.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

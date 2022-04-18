@@ -1,5 +1,8 @@
 # Row-Level Permissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/row_level_permissions.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/row_level_permissions.md" class="reference">15
+Feb 2022</a>
 
 The **row-level** permissions are an extension of the
 [existing permissions](managing_permissions.md) features and allow project
@@ -13,7 +16,7 @@ As of August 2021, the management of project permissions has been extended to
 allow for a total of four **row-level** access permissions that include:
 
 | Row-level permission                              | Description                                                                                                                    |
-| ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| :------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------- |
 | **View submissions only from specific users**     | _View data_ submitted by a subset of defined data entry users.                                                                 |
 | **Edit submissions only from specific users**     | _Edit data_ submitted by a subset of defined data entry users.                                                                 |
 | **Delete submissions only from specific users**   | _Delete data_ submitted by a subset of defined data entry users.                                                               |

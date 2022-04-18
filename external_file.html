@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Select One or Many From External File Question Type &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,7 +105,9 @@
           
   <section id="select-one-or-many-from-external-file-question-type">
 <h1>Select One or Many From External File Question Type<a class="headerlink" href="#select-one-or-many-from-external-file-question-type" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/external_file.md" class="reference">15 Feb 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/external_file.md" class="reference">15
+Feb 2022</a></p>
 <p>In some cases, it may be desirable to host a list of choice options in an
 external file, rather than directly in the project XLSForm. For example, a long
 list of choices (e.g. hundreds or thousands) could slow down the loading and
@@ -118,124 +120,110 @@ file. Refer to the
 more information.</p>
 <p><strong>1.</strong> In the XLSForm, the type should be either
 <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span> <span class="pre">[filename]</span></code> or <code class="docutils literal notranslate"><span class="pre">select_multiple_from_file</span> <span class="pre">[filename]</span></code>:</p>
-<p class="note">The file-type can be either <code>CSV</code> or <code>XML</code></p><p><strong>survey</strong></p>
-<table border="1" class="docutils">
+<p class="note">The file-type can be either <code>CSV</code> or <code>XML</code></p>
+<p><strong>survey</strong></p>
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>type</th>
-<th>name</th>
-<th>label</th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>text</td>
-<td>name</td>
-<td>What is your name?</td>
+<tr class="row-even"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>name</p></td>
+<td class="text-left"><p>What is your name?</p></td>
 </tr>
-<tr>
-<td>select_one sex</td>
-<td>sex</td>
-<td>What is your sex?</td>
+<tr class="row-odd"><td class="text-left"><p>select_one sex</p></td>
+<td class="text-left"><p>sex</p></td>
+<td class="text-left"><p>What is your sex?</p></td>
 </tr>
-<tr>
-<td>select_one_from_file fruits.csv</td>
-<td>fruits</td>
-<td>What is your favourite fruit?</td>
+<tr class="row-even"><td class="text-left"><p>select_one_from_file fruits.csv</p></td>
+<td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>What is your favourite fruit?</p></td>
 </tr>
 </tbody>
-</table><p><strong>choices</strong></p>
-<table border="1" class="docutils">
+</table>
+<p><strong>choices</strong></p>
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>list_name</th>
-<th>name</th>
-<th>label</th>
+<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>sex</td>
-<td>1</td>
-<td>Male</td>
+<tr class="row-even"><td class="text-left"><p>sex</p></td>
+<td class="text-left"><p>1</p></td>
+<td class="text-left"><p>Male</p></td>
 </tr>
-<tr>
-<td>sex</td>
-<td>2</td>
-<td>Female</td>
+<tr class="row-odd"><td class="text-left"><p>sex</p></td>
+<td class="text-left"><p>2</p></td>
+<td class="text-left"><p>Female</p></td>
 </tr>
 </tbody>
-</table><p class="note">The <code>fruits.csv</code> is the file name containing the choices for the question "What is your favorite fruit?".</p><p><strong>2.</strong> Create a new <code class="docutils literal notranslate"><span class="pre">CSV</span></code> file and structure it the same as the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet
+</table>
+<p class="note">The <code>fruits.csv</code> is the file name containing the choices for the question "What is your favorite fruit?".</p>
+<p><strong>2.</strong> Create a new <code class="docutils literal notranslate"><span class="pre">CSV</span></code> file and structure it the same as the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet
 in the XLSForm:</p>
 <p><strong>fruits.csv</strong></p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>list_name</th>
-<th>name</th>
-<th>label</th>
+<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>fruits</td>
-<td>1</td>
-<td>Apple</td>
+<tr class="row-even"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>1</p></td>
+<td class="text-left"><p>Apple</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>2</td>
-<td>Watermelon</td>
+<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>2</p></td>
+<td class="text-left"><p>Watermelon</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>3</td>
-<td>Orange</td>
+<tr class="row-even"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>3</p></td>
+<td class="text-left"><p>Orange</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>4</td>
-<td>Pear</td>
+<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>4</p></td>
+<td class="text-left"><p>Pear</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>5</td>
-<td>Cherry</td>
+<tr class="row-even"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>5</p></td>
+<td class="text-left"><p>Cherry</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>6</td>
-<td>Strawberry</td>
+<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>6</p></td>
+<td class="text-left"><p>Strawberry</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>7</td>
-<td>Nectarine</td>
+<tr class="row-even"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>7</p></td>
+<td class="text-left"><p>Nectarine</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>8</td>
-<td>Grape</td>
+<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>8</p></td>
+<td class="text-left"><p>Grape</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>9</td>
-<td>Mango</td>
+<tr class="row-even"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>9</p></td>
+<td class="text-left"><p>Mango</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>10</td>
-<td>Blueberry</td>
+<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>10</p></td>
+<td class="text-left"><p>Blueberry</p></td>
 </tr>
-<tr>
-<td>fruits</td>
-<td>11</td>
-<td>Pomegranate</td>
+<tr class="row-even"><td class="text-left"><p>fruits</p></td>
+<td class="text-left"><p>11</p></td>
+<td class="text-left"><p>Pomegranate</p></td>
 </tr>
 </tbody>
-</table><p><strong>3.</strong> Upload and deploy the XLSForm in KoboToolbox.</p>
+</table>
+<p><strong>3.</strong> Upload and deploy the XLSForm in KoboToolbox.</p>
 <p><strong>4.</strong> Upload the <code class="docutils literal notranslate"><span class="pre">CSV</span></code> file the same way you would
-<a class="reference internal" href="media.html"><span class="doc">add a media file to the form</span></a></p>
+<a class="reference internal" href="media.html"><span class="doc std std-doc">add a media file to the form</span></a></p>
 </section>
 
 
@@ -262,7 +250,7 @@ in the XLSForm:</p>
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -278,7 +266,7 @@ in the XLSForm:</p>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -325,7 +313,7 @@ in the XLSForm:</p>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -341,7 +329,7 @@ in the XLSForm:</p>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -370,7 +358,7 @@ in the XLSForm:</p>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -432,7 +420,7 @@ in the XLSForm:</p>
       currentPagename: "external_file",
       currentTitle: "Select One or Many From External File Question Type",
       currentUrl: ("index.html").replace("index.html", "external_file.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

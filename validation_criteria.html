@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Limiting Responses with Validation Criteria &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,14 +105,27 @@
           
   <section id="limiting-responses-with-validation-criteria">
 <h1>Limiting Responses with Validation Criteria<a class="headerlink" href="#limiting-responses-with-validation-criteria" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/validation_criteria.md" class="reference">12 Aug 2021</a></p>
-<p>This feature allows you to avoid accidental or invalid answers, especially in numeric questions (<code class="docutils literal notranslate"><span class="pre">integer</span></code> or <code class="docutils literal notranslate"><span class="pre">decimal</span></code> response types). However, validation can be used on any question. Validation criteria are also sometimes referred to as constraints.</p>
-<p>For example, if you want to restrict a question about age to numbers between 0 and 130.</p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/validation_criteria.md" class="reference">12
+Aug 2021</a></p>
+<p>This feature allows you to avoid accidental or invalid answers, especially in
+numeric questions (<code class="docutils literal notranslate"><span class="pre">integer</span></code> or <code class="docutils literal notranslate"><span class="pre">decimal</span></code> response types). However, validation
+can be used on any question. Validation criteria are also sometimes referred to
+as constraints.</p>
+<p>For example, if you want to restrict a question about age to numbers between 0
+and 130.</p>
 <section id="add-validation-criteria-in-formbuilder">
 <h2>Add validation criteria in Formbuilder<a class="headerlink" href="#add-validation-criteria-in-formbuilder" title="Permalink to this headline">¶</a></h2>
-<p>To add validation criteria for a specific question, go to <strong>Settings</strong>, then <strong>Validation Criteria</strong>.</p>
+<p>To add validation criteria for a specific question, go to <strong>Settings</strong>, then
+<strong>Validation Criteria</strong>.</p>
 <p><img alt="image" src="_images/formbuilder.gif" /></p>
-<p>You can directly add a condition or manually enter validation logic in XLSFrom code. The type of restrictions under “<strong>Add a condition</strong>” corresponds to the type of the questions (123 - numbers, text, date) selected. As seen from the example above, the question type is number and the validation criteria restricts the response to be greater than 3 and less than or equal to 30. The <strong>Error Message</strong> (optional) is the message your interviewer sees when they enter an invalid response.</p>
+<p>You can directly add a condition or manually enter validation logic in XLSFrom
+code. The type of restrictions under “<strong>Add a condition</strong>” corresponds to the
+type of the questions (123 - numbers, text, date) selected. As seen from the
+example above, the question type is number and the validation criteria restricts
+the response to be greater than 3 and less than or equal to 30. The <strong>Error
+Message</strong> (optional) is the message your interviewer sees when they enter an
+invalid response.</p>
 </section>
 <section id="add-validation-criteria-in-xlsform">
 <h2>Add validation criteria in XLSForm<a class="headerlink" href="#add-validation-criteria-in-xlsform" title="Permalink to this headline">¶</a></h2>
@@ -120,92 +133,86 @@
 </section>
 <section id="example-validation-criteria">
 <h2>Example Validation Criteria<a class="headerlink" href="#example-validation-criteria" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Criteria</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>Criteria</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>. &gt; 17</code></td>
-<td>Response must be greater than 17</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">&gt;</span> <span class="pre">17</span></code></p></td>
+<td class="text-left"><p>Response must be greater than 17</p></td>
 </tr>
-<tr>
-<td><code>. &gt;= 18</code></td>
-<td>Response must be greater than or equal to 18</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">&gt;=</span> <span class="pre">18</span></code></p></td>
+<td class="text-left"><p>Response must be greater than or equal to 18</p></td>
 </tr>
-<tr>
-<td><code>. &gt; 17 and . &lt; 130</code></td>
-<td>Response must be between 17 and 130</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">&gt;</span> <span class="pre">17</span> <span class="pre">and</span> <span class="pre">.</span> <span class="pre">&lt;</span> <span class="pre">130</span></code></p></td>
+<td class="text-left"><p>Response must be between 17 and 130</p></td>
 </tr>
 </tbody>
-</table><p>In the validation criteria syntax,<code class="docutils literal notranslate"><span class="pre">.</span></code> refers to the current question. <code class="docutils literal notranslate"><span class="pre">${some_question}</span></code> refers to the fixed <code class="docutils literal notranslate"><span class="pre">name</span></code> of a question, which needs to be set in the <strong>Question Options</strong> and then surrounded by <code class="docutils literal notranslate"><span class="pre">${}</span></code>. See below example:</p>
+</table>
+<p>In the validation criteria syntax,<code class="docutils literal notranslate"><span class="pre">.</span></code> refers to the current question.
+<code class="docutils literal notranslate"><span class="pre">${some_question}</span></code> refers to the fixed <code class="docutils literal notranslate"><span class="pre">name</span></code> of a question, which needs to be
+set in the <strong>Question Options</strong> and then surrounded by <code class="docutils literal notranslate"><span class="pre">${}</span></code>. See below example:</p>
 <p><strong>survey</strong></p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>type</th>
-<th>name</th>
-<th>label</th>
-<th>constraint</th>
-<th>constraint_message</th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>constraint</p></th>
+<th class="text-left head"><p>constraint_message</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>integer</td>
-<td>Q1</td>
-<td>Please enter your work ID</td>
-<td>. &gt; 0 and . &lt; 100</td>
-<td>ID cannot be 0 and must be less than 100</td>
+<tr class="row-even"><td class="text-left"><p>integer</p></td>
+<td class="text-left"><p>Q1</p></td>
+<td class="text-left"><p>Please enter your work ID</p></td>
+<td class="text-left"><p>. &gt; 0 and . &lt; 100</p></td>
+<td class="text-left"><p>ID cannot be 0 and must be less than 100</p></td>
 </tr>
-<tr>
-<td>integer</td>
-<td>Q2</td>
-<td>Total number of workers</td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td class="text-left"><p>integer</p></td>
+<td class="text-left"><p>Q2</p></td>
+<td class="text-left"><p>Total number of workers</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>integer</td>
-<td>Q3</td>
-<td>Total number of male workers</td>
-<td>. &lt;= ${Q2}</td>
-<td>Total number of male workers should not exceed the total number of workers!</td>
+<tr class="row-even"><td class="text-left"><p>integer</p></td>
+<td class="text-left"><p>Q3</p></td>
+<td class="text-left"><p>Total number of male workers</p></td>
+<td class="text-left"><p>. &lt;= ${Q2}</p></td>
+<td class="text-left"><p>Total number of male workers should not exceed the total number of workers!</p></td>
 </tr>
-<tr>
-<td>integer</td>
-<td>Q4</td>
-<td>Total number of female workers</td>
-<td>. &lt;= ${Q2}</td>
-<td>Total number of female workers should not exceed the total number of workers!</td>
+<tr class="row-odd"><td class="text-left"><p>integer</p></td>
+<td class="text-left"><p>Q4</p></td>
+<td class="text-left"><p>Total number of female workers</p></td>
+<td class="text-left"><p>. &lt;= ${Q2}</p></td>
+<td class="text-left"><p>Total number of female workers should not exceed the total number of workers!</p></td>
 </tr>
 </tbody>
-</table><p><strong>Examples of More Advanced Validation Criteria</strong></p>
-<table border="1" class="docutils">
+</table>
+<p><strong>Examples of More Advanced Validation Criteria</strong></p>
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Criteria</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>Criteria</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>(. &gt;= 18 and . &lt; 130) or (. = 999)</code></td>
-<td>Response must be between 17 and 130 or be equal to 999. (The code 999 is often used for non-responses.)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">(.</span> <span class="pre">&gt;=</span> <span class="pre">18</span> <span class="pre">and</span> <span class="pre">.</span> <span class="pre">&lt;</span> <span class="pre">130)</span> <span class="pre">or</span> <span class="pre">(.</span> <span class="pre">=</span> <span class="pre">999)</span></code></p></td>
+<td class="text-left"><p>Response must be between 17 and 130 or be equal to 999. (The code 999 is often used for non-responses.)</p></td>
 </tr>
-<tr>
-<td><code>not(${in_university} = 'yes' and . &lt; 16)</code></td>
-<td>When answering 'yes' to the question <code>in_university</code>, the current response must be greater than 16.</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">not(${in_university}</span> <span class="pre">=</span> <span class="pre">'yes'</span> <span class="pre">and</span> <span class="pre">.</span> <span class="pre">&lt;</span> <span class="pre">16)</span></code></p></td>
+<td class="text-left"><p>When answering ‘yes’ to the question <code class="docutils literal notranslate"><span class="pre">in_university</span></code>, the current response must be greater than 16.</p></td>
 </tr>
-<tr>
-<td><code>not(selected(., 'none') and (selected(., 'chair') or selected(., 'table')))</code></td>
-<td>Response 'none' can't be combined with the two other options of this <code>select_multiple</code> question</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">not(selected(.,</span> <span class="pre">'none')</span> <span class="pre">and</span> <span class="pre">(selected(.,</span> <span class="pre">'chair')</span> <span class="pre">or</span> <span class="pre">selected(.,</span> <span class="pre">'table')))</span></code></p></td>
+<td class="text-left"><p>Response ‘none’ can’t be combined with the two other options of this <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> question</p></td>
 </tr>
 </tbody>
-</table><p>There are many other combinations possible, including <a class="reference internal" href="advanced_calculate.html"><span class="doc">advanced mathematical calculations</span></a>. <a class="reference external" href="https://docs.getodk.org/form-logic/">See here</a> for more details.</p>
+</table>
+<p>There are many other combinations possible, including
+<a class="reference internal" href="advanced_calculate.html"><span class="doc std std-doc">advanced mathematical calculations</span></a>.
+<a class="reference external" href="https://docs.getodk.org/form-logic/">See here</a> for more details.</p>
 </section>
 </section>
 
@@ -233,7 +240,7 @@
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -249,7 +256,7 @@
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -301,7 +308,7 @@
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -317,7 +324,7 @@
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -346,7 +353,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -408,7 +415,7 @@
       currentPagename: "validation_criteria",
       currentTitle: "Limiting Responses with Validation Criteria",
       currentUrl: ("index.html").replace("index.html", "validation_criteria.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

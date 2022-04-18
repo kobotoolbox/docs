@@ -1,5 +1,8 @@
 # Creating an account on KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b0f369c77dd56f1a5d5cd2a4acc207fe74ed629f/source/creating_account.md" class="reference">14 Apr 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/b0f369c77dd56f1a5d5cd2a4acc207fe74ed629f/source/creating_account.md" class="reference">14
+Apr 2022</a>
 
 The first step for all users when getting started with **KoboToolbox** is to
 create an account. This article will guide you through the steps on creating and
@@ -67,7 +70,7 @@ Use one of the following links to log back into your account with your
 _username_ and _password_:
 
 | Server      | URL                                                                                                   |
-| ----------- | ----------------------------------------------------------------------------------------------------- |
+| :---------- | :---------------------------------------------------------------------------------------------------- |
 | OCHA server | <a href="https://kobo.humanitarianresponse.info" class="reference">kobo.humanitarianresponse.info</a> |
 | Kobo server | <a href="https://kf.kobotoolbox.org" class="reference">kf.kobotoolbox.org</a>                         |
 

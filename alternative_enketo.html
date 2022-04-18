@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Using Alternative Enketo Web Form Styles &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,13 +105,15 @@
           
   <section id="using-alternative-enketo-web-form-styles">
 <h1>Using Alternative Enketo Web Form Styles<a class="headerlink" href="#using-alternative-enketo-web-form-styles" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/alternative_enketo.md" class="reference">15 Feb 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/alternative_enketo.md" class="reference">15
+Feb 2022</a></p>
 <p>Enketo web forms can be customized in the way your questions are presented.
 There are two alternative styles that can be selected and even combined:
 <strong>Multiple Pages</strong> and <strong>Grid Theme</strong>.</p>
 <p><strong>Multiple Pages</strong> mode displays one question at a time per screen, or a group
 of questions set to display on the same screen. This is the same way
-<a class="reference internal" href="group_repeat.html"><span class="doc">KoboCollect works</span></a>.</p>
+<a class="reference internal" href="group_repeat.html"><span class="doc std std-doc">KoboCollect works</span></a>.</p>
 <p><strong>Grid Theme</strong> is an alternative display of questions meant to be more compact
 and more like paper forms where space is often a major concern. theme-grid
 allows displaying multiple questions per row and flexibly adapts in case of skip
@@ -127,55 +129,48 @@ You can set these styles through the KoboToolbox formbuilder user interface:</p>
 <p>If you are building your survey project through XLSForm, you could do the same
 by defining the theme under the <code class="docutils literal notranslate"><span class="pre">style</span></code> column in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet:</p>
 <p><strong>settings</strong></p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>form_title</th>
-<th>style</th>
+<tr class="row-odd"><th class="text-left head"><p>form_title</p></th>
+<th class="text-left head"><p>style</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>Themed form</td>
-<td>pages</td>
+<tr class="row-even"><td class="text-left"><p>Themed form</p></td>
+<td class="text-left"><p>pages</p></td>
 </tr>
 </tbody>
-</table><section id="available-styles-in-xlsform">
+</table>
+<section id="available-styles-in-xlsform">
 <h2>Available styles in XLSForm:<a class="headerlink" href="#available-styles-in-xlsform" title="Permalink to this headline">¶</a></h2>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>XLSForm Theme</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>XLSForm Theme</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>(leave blank)</td>
-<td>Default – single page</td>
+<tr class="row-even"><td class="text-left"><p>(leave blank)</p></td>
+<td class="text-left"><p>Default – single page</p></td>
 </tr>
-<tr>
-<td><code>theme-grid no-text-transform</code></td>
-<td>Grid theme</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span> <span class="pre">no-text-transform</span></code></p></td>
+<td class="text-left"><p>Grid theme</p></td>
 </tr>
-<tr>
-<td><code>theme-grid</code></td>
-<td>Grid theme with headings in ALL CAPS</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span></code></p></td>
+<td class="text-left"><p>Grid theme with headings in ALL CAPS</p></td>
 </tr>
-<tr>
-<td><code>pages</code></td>
-<td>Multiple pages</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">pages</span></code></p></td>
+<td class="text-left"><p>Multiple pages</p></td>
 </tr>
-<tr>
-<td><code>theme-grid pages no-text-transform</code></td>
-<td>Grid theme + Multiple pages</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span> <span class="pre">pages</span> <span class="pre">no-text-transform</span></code></p></td>
+<td class="text-left"><p>Grid theme + Multiple pages</p></td>
 </tr>
-<tr>
-<td><code>theme-grid pages</code></td>
-<td>Grid theme + Multiple pages + headings in ALL CAPS</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span> <span class="pre">pages</span></code></p></td>
+<td class="text-left"><p>Grid theme + Multiple pages + headings in ALL CAPS</p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 </section>
 
 
@@ -202,7 +197,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -218,7 +213,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -268,7 +263,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -284,7 +279,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -313,7 +308,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -375,7 +370,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
       currentPagename: "alternative_enketo",
       currentTitle: "Using Alternative Enketo Web Form Styles",
       currentUrl: ("index.html").replace("index.html", "alternative_enketo.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

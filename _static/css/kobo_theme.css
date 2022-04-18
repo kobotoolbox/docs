@@ -477,6 +477,16 @@ html body {
 .page .page__body table {
   margin-bottom: 1.5em;
 }
+.page .page__body table th p {
+  font-weight: 600;
+  margin: 0 auto;
+}
+.page .page__body table td.text-left {
+  text-align: left;
+}
+.page .page__body table td.text-left p {
+  margin: 0 auto;
+}
 .page .page__body pre {
   background-color: #e8e9ed;
   padding-top: 1.5em;

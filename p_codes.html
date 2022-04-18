@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Including P-Codes in the Output Data &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,185 +105,172 @@
           
   <section id="including-p-codes-in-the-output-data">
 <h1>Including P-Codes in the Output Data<a class="headerlink" href="#including-p-codes-in-the-output-data" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b3e7f7e71a74f63cc5f9ba61e9b437f3684457f5/source/p_codes.md" class="reference">12 Aug 2021</a></p>
-<p>If using cascading lists, please <a class="reference internal" href="cascading_select.html"><span class="doc">follow the instructions</span></a> for cascading selects.</p>
-<p>Normally, only the “Name” and NOT the “Label” will appear in your exported Excel file, which means that only the P-code OR the name of the location will appear.</p>
-<p>In order to get <strong>both P-code and name</strong> as part of your exported data, do the following:</p>
-<ol class="simple">
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/b3e7f7e71a74f63cc5f9ba61e9b437f3684457f5/source/p_codes.md" class="reference">12
+Aug 2021</a></p>
+<p>If using cascading lists, please <a class="reference internal" href="cascading_select.html"><span class="doc std std-doc">follow the instructions</span></a>
+for cascading selects.</p>
+<p>Normally, only the “Name” and NOT the “Label” will appear in your exported Excel
+file, which means that only the P-code OR the name of the location will appear.</p>
+<p>In order to get <strong>both P-code and name</strong> as part of your exported data, do the
+following:</p>
+<ol class="arabic simple">
 <li><p>In all “Name” columns of your exported form, use the P-code of the location</p></li>
 <li><p>In all “Label’ columns of your exported form, use the name of the location</p></li>
-<li><p>For each Admin level you use, add a question with type “calculate”, using the syntax:</p></li>
+<li><p>For each Admin level you use, add a question with type “calculate”, using the
+syntax:</p></li>
 </ol>
-<p><code class="docutils literal notranslate"><span class="pre">if(string-length(${name_of_pcode_column})</span> <span class="pre">!=</span>&#160; <span class="pre">0,jr:choice-name(${name_of_pcode_column},'${name_of_pcode_column}'),'(unspecified</span>&#160; <span class="pre">name_of_pcode_column)')</span></code></p>
-<p class="note">This formula will extract the "Label" (i.e. the name of the location) of the entry, and you will in your exported results get both the name and the p-code.</p><section id="example-with-3-admin-levels-using-cascading-lists">
+<p><code class="docutils literal notranslate"><span class="pre">if(string-length(${name_of_pcode_column})</span> <span class="pre">!=</span> <span class="pre">0,jr:choice-name(${name_of_pcode_column},'${name_of_pcode_column}'),'(unspecified</span> <span class="pre">name_of_pcode_column)')</span></code></p>
+<p class="note">This formula will extract the "Label" (i.e. the name of the location) of the entry, and you will in your exported results get both the name and the p-code.</p>
+<section id="example-with-3-admin-levels-using-cascading-lists">
 <h2>Example with 3 admin levels, using cascading lists<a class="headerlink" href="#example-with-3-admin-levels-using-cascading-lists" title="Permalink to this headline">¶</a></h2>
 <p><strong>survey</strong></p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>type</th>
-<th>name</th>
-<th>label</th>
-<th>choice_filter</th>
-<th>calculation</th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>choice_filter</p></th>
+<th class="text-left head"><p>calculation</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>select_one admin1</td>
-<td>pcode_admin1</td>
-<td>Admin 1</td>
-<td></td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>select_one admin1</p></td>
+<td class="text-left"><p>pcode_admin1</p></td>
+<td class="text-left"><p>Admin 1</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>select_one admin2</td>
-<td>pcode_admin2</td>
-<td>Admin 2</td>
-<td>state=${pcode_admin1}</td>
-<td></td>
+<tr class="row-odd"><td class="text-left"><p>select_one admin2</p></td>
+<td class="text-left"><p>pcode_admin2</p></td>
+<td class="text-left"><p>Admin 2</p></td>
+<td class="text-left"><p>state=${pcode_admin1}</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>select_one admin3</td>
-<td>pcode_admin3</td>
-<td>Admin 3</td>
-<td>state=${pcode_admin1} and county=${pcode_admin2}</td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>select_one admin3</p></td>
+<td class="text-left"><p>pcode_admin3</p></td>
+<td class="text-left"><p>Admin 3</p></td>
+<td class="text-left"><p>state=${pcode_admin1} and county=${pcode_admin2}</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>calculate</td>
-<td>name_admin1</td>
-<td></td>
-<td></td>
-<td>if(string-length(${pcode_admin1}) != 0, jr:choice-name(${pcode_admin1}, '${pcode_admin1}'), '(unspecified pcode_admin1)')</td>
+<tr class="row-odd"><td class="text-left"><p>calculate</p></td>
+<td class="text-left"><p>name_admin1</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>if(string-length(${pcode_admin1}) != 0, jr:choice-name(${pcode_admin1}, ‘${pcode_admin1}’), ‘(unspecified pcode_admin1)’)</p></td>
 </tr>
-<tr>
-<td>calculate</td>
-<td>name_admin2</td>
-<td></td>
-<td></td>
-<td>if(string-length(${pcode_admin2}) != 0, jr:choice-name(${pcode_admin2}, '${pcode_admin2}'), '(unspecified pcode_admin2)')</td>
+<tr class="row-even"><td class="text-left"><p>calculate</p></td>
+<td class="text-left"><p>name_admin2</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>if(string-length(${pcode_admin2}) != 0, jr:choice-name(${pcode_admin2}, ‘${pcode_admin2}’), ‘(unspecified pcode_admin2)’)</p></td>
 </tr>
-<tr>
-<td>calculate</td>
-<td>name_admin3</td>
-<td></td>
-<td></td>
-<td>if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, '${pcode_admin3}'), '(unspecified pcode_admin3)')</td>
+<tr class="row-odd"><td class="text-left"><p>calculate</p></td>
+<td class="text-left"><p>name_admin3</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, ‘${pcode_admin3}’), ‘(unspecified pcode_admin3)’)</p></td>
 </tr>
 </tbody>
-</table><p><strong>choices</strong></p>
-<table border="1" class="docutils">
+</table>
+<p><strong>choices</strong></p>
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>list_name</th>
-<th>name</th>
-<th>label</th>
-<th>state</th>
-<th>county</th>
+<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>state</p></th>
+<th class="text-left head"><p>county</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>admin1</td>
-<td>11</td>
-<td>Texas</td>
-<td></td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>admin1</p></td>
+<td class="text-left"><p>11</p></td>
+<td class="text-left"><p>Texas</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>admin1</td>
-<td>12</td>
-<td>Washington</td>
-<td></td>
-<td></td>
+<tr class="row-odd"><td class="text-left"><p>admin1</p></td>
+<td class="text-left"><p>12</p></td>
+<td class="text-left"><p>Washington</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>admin2</td>
-<td>13</td>
-<td>King</td>
-<td>11</td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>admin2</p></td>
+<td class="text-left"><p>13</p></td>
+<td class="text-left"><p>King</p></td>
+<td class="text-left"><p>11</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>admin2</td>
-<td>14</td>
-<td>Pierce</td>
-<td>11</td>
-<td></td>
+<tr class="row-odd"><td class="text-left"><p>admin2</p></td>
+<td class="text-left"><p>14</p></td>
+<td class="text-left"><p>Pierce</p></td>
+<td class="text-left"><p>11</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>admin2</td>
-<td>15</td>
-<td>Puyallup</td>
-<td>12</td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>admin2</p></td>
+<td class="text-left"><p>15</p></td>
+<td class="text-left"><p>Puyallup</p></td>
+<td class="text-left"><p>12</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>admin2</td>
-<td>16</td>
-<td>Cameron</td>
-<td>12</td>
-<td></td>
+<tr class="row-odd"><td class="text-left"><p>admin2</p></td>
+<td class="text-left"><p>16</p></td>
+<td class="text-left"><p>Cameron</p></td>
+<td class="text-left"><p>12</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>admin3</td>
-<td>17</td>
-<td>Dumont</td>
-<td>11</td>
-<td>13</td>
+<tr class="row-even"><td class="text-left"><p>admin3</p></td>
+<td class="text-left"><p>17</p></td>
+<td class="text-left"><p>Dumont</p></td>
+<td class="text-left"><p>11</p></td>
+<td class="text-left"><p>13</p></td>
 </tr>
-<tr>
-<td>admin3</td>
-<td>18</td>
-<td>Finney</td>
-<td>11</td>
-<td>13</td>
+<tr class="row-odd"><td class="text-left"><p>admin3</p></td>
+<td class="text-left"><p>18</p></td>
+<td class="text-left"><p>Finney</p></td>
+<td class="text-left"><p>11</p></td>
+<td class="text-left"><p>13</p></td>
 </tr>
-<tr>
-<td>admin3</td>
-<td>19</td>
-<td>Brownsville</td>
-<td>11</td>
-<td>14</td>
+<tr class="row-even"><td class="text-left"><p>admin3</p></td>
+<td class="text-left"><p>19</p></td>
+<td class="text-left"><p>Brownsville</p></td>
+<td class="text-left"><p>11</p></td>
+<td class="text-left"><p>14</p></td>
 </tr>
-<tr>
-<td>admin3</td>
-<td>20</td>
-<td>Harlingen</td>
-<td>11</td>
-<td>14</td>
+<tr class="row-odd"><td class="text-left"><p>admin3</p></td>
+<td class="text-left"><p>20</p></td>
+<td class="text-left"><p>Harlingen</p></td>
+<td class="text-left"><p>11</p></td>
+<td class="text-left"><p>14</p></td>
 </tr>
-<tr>
-<td>admin3</td>
-<td>21</td>
-<td>Seattle</td>
-<td>12</td>
-<td>15</td>
+<tr class="row-even"><td class="text-left"><p>admin3</p></td>
+<td class="text-left"><p>21</p></td>
+<td class="text-left"><p>Seattle</p></td>
+<td class="text-left"><p>12</p></td>
+<td class="text-left"><p>15</p></td>
 </tr>
-<tr>
-<td>admin3</td>
-<td>22</td>
-<td>Redmond</td>
-<td>12</td>
-<td>15</td>
+<tr class="row-odd"><td class="text-left"><p>admin3</p></td>
+<td class="text-left"><p>22</p></td>
+<td class="text-left"><p>Redmond</p></td>
+<td class="text-left"><p>12</p></td>
+<td class="text-left"><p>15</p></td>
 </tr>
-<tr>
-<td>admin3</td>
-<td>23</td>
-<td>Tacoma</td>
-<td>12</td>
-<td>16</td>
+<tr class="row-even"><td class="text-left"><p>admin3</p></td>
+<td class="text-left"><p>23</p></td>
+<td class="text-left"><p>Tacoma</p></td>
+<td class="text-left"><p>12</p></td>
+<td class="text-left"><p>16</p></td>
 </tr>
-<tr>
-<td>admin3</td>
-<td>24</td>
-<td>King</td>
-<td>12</td>
-<td>16</td>
+<tr class="row-odd"><td class="text-left"><p>admin3</p></td>
+<td class="text-left"><p>24</p></td>
+<td class="text-left"><p>King</p></td>
+<td class="text-left"><p>12</p></td>
+<td class="text-left"><p>16</p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 </section>
 
 
@@ -310,7 +297,7 @@
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -326,7 +313,7 @@
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -376,7 +363,7 @@
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -392,7 +379,7 @@
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -421,7 +408,7 @@
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -483,7 +470,7 @@
       currentPagename: "p_codes",
       currentTitle: "Including P-Codes in the Output Data",
       currentUrl: ("index.html").replace("index.html", "p_codes.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

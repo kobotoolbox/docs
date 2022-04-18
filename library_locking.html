@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Library locking &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,331 +105,319 @@
           
   <section id="library-locking">
 <h1>Library locking<a class="headerlink" href="#library-locking" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/library_locking.md" class="reference">15 Feb 2022</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/library_locking.md" class="reference">15
+Feb 2022</a></p>
 <p>“Library locking” refers to the feature enabling various aspects of a survey to
-be “<a class="reference external" href="#locked">locked</a>” when created from a template containing
-<a class="reference external" href="#restrictions">locking attributes</a>. All aspects of a form’s editing are
-available to be locked through the assigning of “<a class="reference external" href="#profile">locking profiles</a>”
+be “<a class="reference internal" href="#locked"><span class="std std-doc">locked</span></a>” when created from a template containing
+<a class="reference internal" href="#restrictions"><span class="std std-doc">locking attributes</span></a>. All aspects of a form’s editing are
+available to be locked through the assigning of “<a class="reference internal" href="#profile"><span class="std std-doc">locking profiles</span></a>”
 at the form, question or group level. These locking profiles can be assigned
-granular “<a class="reference external" href="#restriction">restrictions</a>” that group together locking
+granular “<a class="reference internal" href="#restriction"><span class="std std-doc">restrictions</span></a>” that group together locking
 functionalities. Alternatively, the form can be fully locked down, preventing
 all aspects of editing.</p>
-<p class="note">Currently, only locking set within the XLSForm itself is supported, but will be incorporated into the formbuilder at some point in the future.</p><p>This feature may be useful in a large, distributed team setting where a standard
+<p class="note">
+  Currently, only locking set within the XLSForm itself is supported, but will
+  be incorporated into the formbuilder at some point in the future.
+</p>
+<p>This feature may be useful in a large, distributed team setting where a standard
 template is used, with some locked features, and each team can make necessary
 local adjustments for their needs. The creator of the template can continue to
 make updates, but the locks will restrict changes to specified aspects of the
-form for those who <a class="reference internal" href="new_form.html"><span class="doc">create a project based on the template</span></a>.</p>
-<p class="note">Locking aspects of a form is separate from <a class="reference" href="managing_permissions.html">managing permissions to a project</a> or <a class="reference" href="row_level_permissions.html">row-level access</a>.<section id="restrictions">
+form for those who <a class="reference internal" href="new_form.html"><span class="doc std std-doc">create a project based on the template</span></a>.</p>
+<p class="note">
+  Locking aspects of a form is separate from
+  <a class="reference" href="managing_permissions.html"
+    >managing permissions to a project</a
+  >
+  or
+  <a class="reference" href="row_level_permissions.html">row-level access</a>.
+</p>
+<section id="restrictions">
 <h2>Restrictions<a class="headerlink" href="#restrictions" title="Permalink to this headline">¶</a></h2>
 <p>There are three levels of restrictions that can be set:</p>
-<ol class="simple">
-<li><p><a class="reference external" href="#question-level-restrictions">Question</a>,</p></li>
-<li><p><a class="reference external" href="#group-level-restrictions">Group</a>, and</p></li>
-<li><p><a class="reference external" href="#form-level-restrictions">Form</a></p></li>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#question-level-restrictions"><span class="std std-doc">Question</span></a>,</p></li>
+<li><p><a class="reference internal" href="#group-level-restrictions"><span class="std std-doc">Group</span></a>, and</p></li>
+<li><p><a class="reference internal" href="#form-level-restrictions"><span class="std std-doc">Form</span></a></p></li>
 </ol>
-<p>Additionally, there is a <a class="reference external" href="#id1"><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code></a> Boolean that can set in the
-<code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet that will render the survey completely locked.</p>
-<section id="kobo-lock-all">
-<h3><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#kobo-lock-all" title="Permalink to this headline">¶</a></h3>
+<p>Additionally, there is a <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> boolean that can set in the <code class="docutils literal notranslate"><span class="pre">settings</span></code>
+sheet that will render the survey completely locked.</p>
+<section id="kobo-lock-all-boolean">
+<h3><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> boolean<a class="headerlink" href="#kobo-lock-all-boolean" title="Permalink to this headline">¶</a></h3>
 <p>If <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> is set to <code class="docutils literal notranslate"><span class="pre">True</span></code>, then all additional granular restrictions
 are redundant as the form is <em>fully</em> locked down. If it is set to <code class="docutils literal notranslate"><span class="pre">False</span></code> <em>or</em>
 omitted from the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet, then defined locking profiles can be used to
 control the locked behaviour:</p>
 <p><strong>settings</strong></p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>kobo--lock_all</th>
+<tr class="row-odd"><th class="text-left head"><p>kobo–lock_all</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>true</td>
+<tr class="row-even"><td class="text-left"><p>true</p></td>
 </tr>
 </tbody>
-</table><p>The accepted values for <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> are the same as in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet
+</table>
+<p>The accepted values for <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> are the same as in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet
 that
 <a class="reference external" href="https://github.com/XLSForm/pyxform/blob/43ea039250f44cff23b3ad10740fca54dfa12383/pyxform/aliases.py#L127-L142">pyxform supports</a>.
 No error will be thrown if an invalid value is used, only the form will not
 function as intended from the user’s perspective.</p>
-<p class="note">Note that the restriction name, such as <code>choice_add</code> below, is <strong>predefined</strong> and only the restrictions listed below are valid options.</p></section>
+<p class="note">
+  Note that the restriction name, such as <code>choice_add</code> below, is
+  <strong>predefined</strong> and only the restrictions listed below are valid
+  options.
+</p>
+</section>
 <section id="question-level-restrictions">
 <h3>Question-level restrictions<a class="headerlink" href="#question-level-restrictions" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>Name</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>choice_add</code></td>
-<td>Add new choices to a <code>select_*</code> question</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_add</span></code></p></td>
+<td class="text-left"><p>Add new choices to a <code class="docutils literal notranslate"><span class="pre">select_*</span></code> question</p></td>
 </tr>
-<tr>
-<td><code>choice_delete</code></td>
-<td>Remove an existing choice from a <code>select_*</code> question</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_delete</span></code></p></td>
+<td class="text-left"><p>Remove an existing choice from a <code class="docutils literal notranslate"><span class="pre">select_*</span></code> question</p></td>
 </tr>
-<tr>
-<td><code>choice_value_edit</code></td>
-<td>Edit a choice <code>name</code></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_value_edit</span></code></p></td>
+<td class="text-left"><p>Edit a choice <code class="docutils literal notranslate"><span class="pre">name</span></code></p></td>
 </tr>
-<tr>
-<td><code>choice_label_edit</code></td>
-<td>Edit a choice <code>label</code></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_label_edit</span></code></p></td>
+<td class="text-left"><p>Edit a choice <code class="docutils literal notranslate"><span class="pre">label</span></code></p></td>
 </tr>
-<tr>
-<td><code>choice_order_edit</code></td>
-<td>Reorder the choices of a <code>select_*</code> question</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_order_edit</span></code></p></td>
+<td class="text-left"><p>Reorder the choices of a <code class="docutils literal notranslate"><span class="pre">select_*</span></code> question</p></td>
 </tr>
-<tr>
-<td><code>question_delete</code></td>
-<td>Delete a given question</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_delete</span></code></p></td>
+<td class="text-left"><p>Delete a given question</p></td>
 </tr>
-<tr>
-<td><code>question_label_edit</code></td>
-<td>Edit an existing <code>label</code> or <code>hint</code></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_label_edit</span></code></p></td>
+<td class="text-left"><p>Edit an existing <code class="docutils literal notranslate"><span class="pre">label</span></code> or <code class="docutils literal notranslate"><span class="pre">hint</span></code></p></td>
 </tr>
-<tr>
-<td><code>question_settings_edit</code></td>
-<td>Edit a question's settings (other than <code>constraint</code> or <code>relevant</code>)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_settings_edit</span></code></p></td>
+<td class="text-left"><p>Edit a question’s settings (other than <code class="docutils literal notranslate"><span class="pre">constraint</span></code> or <code class="docutils literal notranslate"><span class="pre">relevant</span></code>)</p></td>
 </tr>
-<tr>
-<td><code>question_skip_logic_edit</code></td>
-<td>Edit a question's skip logic settings (<code>relevant</code>)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_skip_logic_edit</span></code></p></td>
+<td class="text-left"><p>Edit a question’s skip logic settings (<code class="docutils literal notranslate"><span class="pre">relevant</span></code>)</p></td>
 </tr>
-<tr>
-<td><code>question_validation_edit</code></td>
-<td>Edit a question's validation criteria settings (<code>constraint</code>)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_validation_edit</span></code></p></td>
+<td class="text-left"><p>Edit a question’s validation criteria settings (<code class="docutils literal notranslate"><span class="pre">constraint</span></code>)</p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 <section id="group-level-restrictions">
 <h3>Group-level restrictions<a class="headerlink" href="#group-level-restrictions" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>Name</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>group_delete</code></td>
-<td>Delete group modal <strong>Delete everything</strong> button (or delete group button if paired with <code>group_split</code>)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_delete</span></code></p></td>
+<td class="text-left"><p>Delete group modal <strong>Delete everything</strong> button (or delete group button if paired with <code class="docutils literal notranslate"><span class="pre">group_split</span></code>)</p></td>
 </tr>
-<tr>
-<td><code>group_split</code></td>
-<td>Delete group modal <strong>Ungroup questions</strong> button (or delete group button if paired with <code>group_delete</code>)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_split</span></code></p></td>
+<td class="text-left"><p>Delete group modal <strong>Ungroup questions</strong> button (or delete group button if paired with <code class="docutils literal notranslate"><span class="pre">group_delete</span></code>)</p></td>
 </tr>
-<tr>
-<td><code>group_label_edit</code></td>
-<td>Edit a group <code>label</code></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_label_edit</span></code></p></td>
+<td class="text-left"><p>Edit a group <code class="docutils literal notranslate"><span class="pre">label</span></code></p></td>
 </tr>
-<tr>
-<td><code>group_question_add</code></td>
-<td>Adding or cloning questions inside given group (children groups included)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_question_add</span></code></p></td>
+<td class="text-left"><p>Adding or cloning questions inside given group (children groups included)</p></td>
 </tr>
-<tr>
-<td><code>group_question_delete</code></td>
-<td>Delete any question from given group (children groups questions included)</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_question_delete</span></code></p></td>
+<td class="text-left"><p>Delete any question from given group (children groups questions included)</p></td>
 </tr>
-<tr>
-<td><code>group_question_order_edit</code></td>
-<td>Changing order of questions inside given group (children groups included)</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_question_order_edit</span></code></p></td>
+<td class="text-left"><p>Changing order of questions inside given group (children groups included)</p></td>
 </tr>
-<tr>
-<td><code>group_settings_edit</code></td>
-<td>Changing <strong>All group settings</strong> from given group <strong>Settings</strong></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_settings_edit</span></code></p></td>
+<td class="text-left"><p>Changing <strong>All group settings</strong> from given group <strong>Settings</strong></p></td>
 </tr>
-<tr>
-<td><code>group_skip_logic_edit</code></td>
-<td>Changing <strong>Skip Logic</strong> from given group <strong>Settings</strong></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_skip_logic_edit</span></code></p></td>
+<td class="text-left"><p>Changing <strong>Skip Logic</strong> from given group <strong>Settings</strong></p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 <section id="form-level-restrictions">
 <h3>Form-level restrictions<a class="headerlink" href="#form-level-restrictions" title="Permalink to this headline">¶</a></h3>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
+<tr class="row-odd"><th class="text-left head"><p>Name</p></th>
+<th class="text-left head"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>form_appearance</code></td>
-<td>Changing form appearance from <strong>Layout &amp; Settings</strong></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">form_appearance</span></code></p></td>
+<td class="text-left"><p>Changing form appearance from <strong>Layout &amp; Settings</strong></p></td>
 </tr>
-<tr>
-<td><code>form_replace</code></td>
-<td>Replacing form using <strong>Replace Form</strong> modal</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">form_replace</span></code></p></td>
+<td class="text-left"><p>Replacing form using <strong>Replace Form</strong> modal</p></td>
 </tr>
-<tr>
-<td><code>group_add</code></td>
-<td>Button for grouping questions</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_add</span></code></p></td>
+<td class="text-left"><p>Button for grouping questions</p></td>
 </tr>
-<tr>
-<td><code>question_add</code></td>
-<td>Using <strong>Insert cascading select</strong> option and each <strong>Add Question</strong> and <strong>Clone Question</strong> button</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_add</span></code></p></td>
+<td class="text-left"><p>Using <strong>Insert cascading select</strong> option and each <strong>Add Question</strong> and <strong>Clone Question</strong> button</p></td>
 </tr>
-<tr>
-<td><code>question_order_edit</code></td>
-<td>Changing any questions order</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_order_edit</span></code></p></td>
+<td class="text-left"><p>Changing any questions order</p></td>
 </tr>
-<tr>
-<td><code>language_edit</code></td>
-<td>Edit languages in <strong>Translations Modal</strong></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">language_edit</span></code></p></td>
+<td class="text-left"><p>Edit languages in <strong>Translations Modal</strong></p></td>
 </tr>
-<tr>
-<td><code>form_meta_edit</code></td>
-<td>Edit meta questions from <strong>Layout &amp; Settings</strong></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">form_meta_edit</span></code></p></td>
+<td class="text-left"><p>Edit meta questions from <strong>Layout &amp; Settings</strong></p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 </section>
 <section id="xlsform-configuration">
 <h2>XLSForm configuration<a class="headerlink" href="#xlsform-configuration" title="Permalink to this headline">¶</a></h2>
 <p>There are three sheets where locking profiles are defined and set: <code class="docutils literal notranslate"><span class="pre">survey</span></code>,
-<code class="docutils literal notranslate"><span class="pre">settings</span></code> and <a class="reference external" href="#id2"><code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code></a>. The sheet of
-<code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> is not officially supported by
-<a class="reference external" href="https://github.com/XLSForm/pyxform">pyxform</a> and is KoboToolbox-specific.</p>
+<code class="docutils literal notranslate"><span class="pre">settings</span></code> and <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>. The sheet of <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>
+is not officially supported by <a class="reference external" href="https://github.com/XLSForm/pyxform">pyxform</a> and
+is KoboToolbox-specific.</p>
 <p>Form-level restrictions are defined in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet and question and
 group-level restrictions are defined in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet.</p>
 <p>From within the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> sheet, all the locking profiles are
-defined in a matrix structure, using the keyword “<a class="reference external" href="#locked">locked</a>” to assign a
-“<a class="reference external" href="#restriction">restriction</a>” to a specific “<a class="reference external" href="#profile">profile</a>”. For example:</p>
+defined in a matrix structure, using the keyword “<a class="reference internal" href="#locked"><span class="std std-doc">locked</span></a>” to assign a
+“<a class="reference internal" href="#restriction"><span class="std std-doc">restriction</span></a>” to a specific “<a class="reference internal" href="#profile"><span class="std std-doc">profile</span></a>”. For example:</p>
 <p><strong>kobo–locking-profiles</strong></p>
 <p>Define the profiles and assign them restrictions. There is no limit on the
 number of profiles that can be defined (<code class="docutils literal notranslate"><span class="pre">profile_1</span></code>, …, <code class="docutils literal notranslate"><span class="pre">profile_n</span></code>) but there
 are <strong>only three</strong> colours that differentiate their locking appearance in the
 formbuilder.</p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>restriction</th>
-<th>profile_1</th>
-<th>profile_2</th>
-<th>profile_3</th>
+<tr class="row-odd"><th class="text-left head"><p>restriction</p></th>
+<th class="text-left head"><p>profile_1</p></th>
+<th class="text-left head"><p>profile_2</p></th>
+<th class="text-left head"><p>profile_3</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>choice_add</td>
-<td>locked</td>
-<td></td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>choice_add</p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>choice_delete</td>
-<td></td>
-<td>locked</td>
-<td></td>
+<tr class="row-odd"><td class="text-left"><p>choice_delete</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>choice_label_edit</td>
-<td>locked</td>
-<td></td>
-<td></td>
+<tr class="row-even"><td class="text-left"><p>choice_label_edit</p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>choice_order_edit</td>
-<td>locked</td>
-<td>locked</td>
-<td></td>
+<tr class="row-odd"><td class="text-left"><p>choice_order_edit</p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr>
-<td>form_appearance</td>
-<td></td>
-<td></td>
-<td>locked</td>
+<tr class="row-even"><td class="text-left"><p>form_appearance</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>locked</p></td>
 </tr>
 </tbody>
-</table><p class="note">Note that not all valid restrictions need to be included in the <code>restriction</code> column, but an error will be thrown if an invalid restriction is included.</p><p><strong>settings</strong></p>
-<p>Set form-level restrictions and <a class="reference external" href="#id1"><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code></a> Boolean.</p>
-<table border="1" class="docutils">
+</table>
+<p class="note">
+  Note that not all valid restrictions need to be included in the
+  <code>restriction</code> column, but an error will be thrown if an invalid
+  restriction is included.
+</p>
+<p><strong>settings</strong></p>
+<p>Set form-level restrictions and <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> boolean.</p>
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>kobo--locking-profile</th>
-<th>kobo--lock_all</th>
+<tr class="row-odd"><th class="text-left head"><p>kobo–locking-profile</p></th>
+<th class="text-left head"><p>kobo–lock_all</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>profile_3</td>
-<td>false</td>
+<tr class="row-even"><td class="text-left"><p>profile_3</p></td>
+<td class="text-left"><p>false</p></td>
 </tr>
 </tbody>
-</table><p class="note">Note that omitting <code>kobo--lock_all</code> from the <code>settings</code> sheet is equivalent to setting it to <code>False</code>.</p><p><strong>survey</strong></p>
+</table>
+<p class="note">
+  Note that omitting <code>kobo--lock_all</code> from the
+  <code>settings</code> sheet is equivalent to setting it to <code>False</code>.
+</p>
+<p><strong>survey</strong></p>
 <p>Set question and group-level restrictions.</p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>type</th>
-<th>name</th>
-<th>label</th>
-<th>kobo--locking-profile</th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>kobo–locking-profile</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>select_one countries</td>
-<td>country</td>
-<td>Select your country</td>
-<td>profile_1</td>
+<tr class="row-even"><td class="text-left"><p>select_one countries</p></td>
+<td class="text-left"><p>country</p></td>
+<td class="text-left"><p>Select your country</p></td>
+<td class="text-left"><p>profile_1</p></td>
 </tr>
-<tr>
-<td>select_one cities</td>
-<td>city</td>
-<td>Select your city</td>
-<td>profile_2</td>
+<tr class="row-odd"><td class="text-left"><p>select_one cities</p></td>
+<td class="text-left"><p>city</p></td>
+<td class="text-left"><p>Select your city</p></td>
+<td class="text-left"><p>profile_2</p></td>
 </tr>
 </tbody>
-</table><p><strong>choices</strong></p>
+</table>
+<p><strong>choices</strong></p>
 <p>No restrictions can be set in the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet.</p>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>list_name</th>
-<th>name</th>
-<th>label</th>
+<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td>countries</td>
-<td>canada</td>
-<td>Canada</td>
+<tr class="row-even"><td class="text-left"><p>countries</p></td>
+<td class="text-left"><p>canada</p></td>
+<td class="text-left"><p>Canada</p></td>
 </tr>
-<tr>
-<td>countries</td>
-<td>usa</td>
-<td>United States of America</td>
+<tr class="row-odd"><td class="text-left"><p>countries</p></td>
+<td class="text-left"><p>usa</p></td>
+<td class="text-left"><p>United States of America</p></td>
 </tr>
-<tr>
-<td>cities</td>
-<td>vancouver</td>
-<td>Vancouver</td>
+<tr class="row-even"><td class="text-left"><p>cities</p></td>
+<td class="text-left"><p>vancouver</p></td>
+<td class="text-left"><p>Vancouver</p></td>
 </tr>
-<tr>
-<td>cities</td>
-<td>toronto</td>
-<td>Toronto</td>
+<tr class="row-odd"><td class="text-left"><p>cities</p></td>
+<td class="text-left"><p>toronto</p></td>
+<td class="text-left"><p>Toronto</p></td>
 </tr>
-<tr>
-<td>cities</td>
-<td>baltimore</td>
-<td>Baltimore</td>
+<tr class="row-even"><td class="text-left"><p>cities</p></td>
+<td class="text-left"><p>baltimore</p></td>
+<td class="text-left"><p>Baltimore</p></td>
 </tr>
-<tr>
-<td>cities</td>
-<td>boston</td>
-<td>Boston</td>
+<tr class="row-odd"><td class="text-left"><p>cities</p></td>
+<td class="text-left"><p>boston</p></td>
+<td class="text-left"><p>Boston</p></td>
 </tr>
 </tbody>
-</table><p><i>This example XLSForm can be downloaded
+</table>
+<p><i>This example XLSForm can be downloaded
 <a download class="reference" href="/_static/files/library_locking/library-locking-example.xlsx">here</a>.</i></p>
 <section id="import-locked-xlsforms">
 <h3>Import locked XLSForms<a class="headerlink" href="#import-locked-xlsforms" title="Permalink to this headline">¶</a></h3>
@@ -486,13 +474,17 @@ restrictions have been set.</p></li>
 <li><p>If a locking profile name (column header in the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>
 sheet) is “locked” (the same as the locking keyword)</p></li>
 <li><p>If a restriction listed in <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> is invalid (not in the
-list of <a class="reference external" href="#restrictions">predefined restrictions</a>)</p></li>
+list of <a class="reference internal" href="#restrictions"><span class="std std-doc">predefined restrictions</span></a>)</p></li>
 <li><p>If there is a sheet called <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> but no <code class="docutils literal notranslate"><span class="pre">restriction</span></code>
 column</p></li>
 <li><p>If no locking profiles are defined (column headers in the
 <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> sheet)</p></li>
 </ul>
-<p class="note">Validation of the XLSForm library locking features will be expanded in the future.</p></section>
+<p class="note">
+  Validation of the XLSForm library locking features will be expanded in the
+  future.
+</p>
+</section>
 <section id="caveats">
 <h3>Caveats<a class="headerlink" href="#caveats" title="Permalink to this headline">¶</a></h3>
 <p>In some spreadsheet editors, two single dashes (<code class="docutils literal notranslate"><span class="pre">--</span></code>) are automatically
@@ -507,8 +499,8 @@ similarly for the column headers.</p>
 <h2>JSON representation<a class="headerlink" href="#json-representation" title="Permalink to this headline">¶</a></h2>
 <p>There are two attributes of the asset where locking information can be accessed
 and modified: <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code> and <code class="docutils literal notranslate"><span class="pre">asset.content</span></code>.</p>
-<p>If <a class="reference external" href="#kobo-locking-profile"><code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code></a> is a column name in the
-<code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet, it will also be listed in the <code class="docutils literal notranslate"><span class="pre">asset.summary.columns</span></code> array.</p>
+<p>If <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> is a column name in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet, it will also
+be listed in the <code class="docutils literal notranslate"><span class="pre">asset.summary.columns</span></code> array.</p>
 <p>In <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code>, the following two Boolean attributes describe an overview of
 the form’s locking structure:</p>
 <ul class="simple">
@@ -611,101 +603,85 @@ inherit all the locks that the <code class="docutils literal notranslate"><span 
 </ul>
 </li>
 </ul>
-<table border="1" class="docutils">
+<table class="colwidths-auto docutils align-default">
 <thead>
-<tr>
-<th>Original Asset Type</th>
-<th>Process</th>
-<th>Resulting Asset's Status</th>
+<tr class="row-odd"><th class="text-left head"><p>Original Asset Type</p></th>
+<th class="text-left head"><p>Process</p></th>
+<th class="text-left head"><p>Resulting Asset’s Status</p></th>
 </tr>
 </thead>
 <tbody>
-<tr>
-<td><code>survey</code></td>
-<td>-</td>
-<td>locked</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>-</p></td>
+<td class="text-left"><p>locked</p></td>
 </tr>
-<tr>
-<td><code>survey</code></td>
-<td><code>survey</code> to <code>template</code></td>
-<td>locked</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code> to <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>locked</p></td>
 </tr>
-<tr>
-<td><code>survey</code></td>
-<td><code>survey</code> to <code>question</code></td>
-<td>not locked</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code> to <code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>survey</code></td>
-<td><code>survey</code> to <code>block</code></td>
-<td>not locked</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code> to <code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>template</code></td>
-<td>-</td>
-<td>locked</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>-</p></td>
+<td class="text-left"><p>locked</p></td>
 </tr>
-<tr>
-<td><code>template</code></td>
-<td><code>template</code> to <code>survey</code></td>
-<td>locked</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code> to <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>locked</p></td>
 </tr>
-<tr>
-<td><code>template</code></td>
-<td><code>template</code> to <code>question</code></td>
-<td>not locked</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code> to <code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>template</code></td>
-<td><code>template</code> to <code>block</code></td>
-<td>not locked</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code> to <code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>block</code></td>
-<td>-</td>
-<td>not locked</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>-</p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>block</code></td>
-<td>import to <code>survey</code></td>
-<td>not locked</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>import to <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>block</code></td>
-<td>import to <code>template</code></td>
-<td>not locked</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>import to <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>block</code></td>
-<td><code>block</code> to <code>question</code></td>
-<td>not locked</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code> to <code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>question</code></td>
-<td>-</td>
-<td>not locked</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>-</p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>question</code></td>
-<td>import to <code>survey</code></td>
-<td>not locked</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>import to <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>question</code></td>
-<td>import to <code>template</code></td>
-<td>not locked</td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>import to <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
-<tr>
-<td><code>question</code></td>
-<td><code>question</code> to <code>block</code></td>
-<td>not locked</td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code> to <code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>not locked</p></td>
 </tr>
 </tbody>
-</table></section>
+</table>
+</section>
 <section id="terminology">
 <h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h2>
-<section id="id1">
-<h3><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<section id="kobo-lock-all">
+<h3><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#kobo-lock-all" title="Permalink to this headline">¶</a></h3>
 <p>Attribute containing a Boolean value, set in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet and applies
 all locking restrictions to the form and all questions and groups (rendering
 granular locking profiles redundant).</p>
@@ -766,7 +742,7 @@ locking behaviour at the question, group or form level.</p>
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -782,7 +758,7 @@ locking behaviour at the question, group or form level.</p>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -836,7 +812,7 @@ locking behaviour at the question, group or form level.</p>
 </ul>
 </li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -852,7 +828,7 @@ locking behaviour at the question, group or form level.</p>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -881,7 +857,7 @@ locking behaviour at the question, group or form level.</p>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -943,7 +919,7 @@ locking behaviour at the question, group or form level.</p>
       currentPagename: "library_locking",
       currentTitle: "Library locking",
       currentUrl: ("index.html").replace("index.html", "library_locking.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>

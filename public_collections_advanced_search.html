@@ -3,18 +3,18 @@
 
 <html>
   <head>
-    <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
     <title>Public Collections Advanced Search &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
-    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
     <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
-    <script src="_static/language_data.js"></script>
     <script src="_static/js/smoothscroll-polyfill.js"></script>
     <script src="_static/js/common.js"></script>
     <script src="_static/js/home_page_toc.js"></script>
@@ -105,14 +105,16 @@
           
   <section id="public-collections-advanced-search">
 <h1>Public Collections Advanced Search<a class="headerlink" href="#public-collections-advanced-search" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/a6ae76d4d566c1139914f03ba8452fdbf122cf11/source/public_collections_advanced_search.md" class="reference">4 Mar 2021</a></p>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/a6ae76d4d566c1139914f03ba8452fdbf122cf11/source/public_collections_advanced_search.md" class="reference">4
+Mar 2021</a></p>
 <p><strong><em>Please note that the search capability is a work in progress, and we plan to
 add a more user-friendly syntax in future releases.</em></strong></p>
 <section id="the-default-search-behaviour">
 <h2>The Default Search Behaviour<a class="headerlink" href="#the-default-search-behaviour" title="Permalink to this headline">¶</a></h2>
-<p>When you enter a term into the search bar without specifying a field, your
-query will return results where that term, regardless of capitalization, can be
-found in:</p>
+<p>When you enter a term into the search bar without specifying a field, your query
+will return results where that term, regardless of capitalization, can be found
+in:</p>
 <ul class="simple">
 <li><p>The name of the survey, collection, question, block, or template;</p></li>
 <li><p>The owner’s username;</p></li>
@@ -147,8 +149,8 @@ equivalent to <code class="docutils literal notranslate"><span class="pre">name_
 </section>
 <section id="understanding-the-search-field-syntax">
 <h2>Understanding the Search Field Syntax<a class="headerlink" href="#understanding-the-search-field-syntax" title="Permalink to this headline">¶</a></h2>
-<p>The double underscore syntax mimics the behaviour of <a class="reference external" href="https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields">Django’s object filtering
-syntax</a>
+<p>The double underscore syntax mimics the behaviour of
+<a class="reference external" href="https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields">Django’s object filtering syntax</a>
 and it allows one to traverse related object relationships and JSON hierarchies,
 such as those seen at the endpoint:</p>
 <p><code class="docutils literal notranslate"><span class="pre">https://kf.kobotoolbox.org/api/v2/assets/</span></code></p>
@@ -180,9 +182,9 @@ such as those seen at the endpoint:</p>
 </section>
 <section id="using-the-query-parser">
 <h2>Using the Query Parser<a class="headerlink" href="#using-the-query-parser" title="Permalink to this headline">¶</a></h2>
-<p>Finally, the search fields described above can be combined using the <a class="reference external" href="https://github.com/kobotoolbox/kpi#searching">query
-parser</a> syntax for more refined
-searches. For example:</p>
+<p>Finally, the search fields described above can be combined using the
+<a class="reference external" href="https://github.com/kobotoolbox/kpi#searching">query parser</a> syntax for more
+refined searches. For example:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">owner__username__icontains</span><span class="p">:</span><span class="n">foo</span> <span class="n">AND</span> <span class="n">tags__name__icontains</span><span class="p">:</span><span class="n">bar</span>
 </pre></div>
 </div>
@@ -218,7 +220,7 @@ searches. For example:</p>
         <aside class="page__sidebar" role="navigation" aria-label="main navigation">
 
 <div class="sidebar_tocs">
-  <p><span class="caption-text">Getting Started</span></p>
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">What is KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
@@ -234,7 +236,7 @@ searches. For example:</p>
 <li class="toctree-l1"><a class="reference internal" href="training_french.html">KoboToolbox Training Materials in French</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
-<p><span class="caption-text">Creating Forms</span></p>
+<p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
@@ -281,7 +283,7 @@ searches. For example:</p>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
-<p><span class="caption-text">Collecting Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording an Entire Interview with Background Audio Recording</a></li>
@@ -297,7 +299,7 @@ searches. For example:</p>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
-<p><span class="caption-text">Managing Projects and Data</span></p>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
@@ -332,7 +334,7 @@ searches. For example:</p>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 </ul>
-<p><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
+<p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="software_architecture.html">Software Architecture</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobo_local_computer.html">Installing KoboToolbox on a Local Computer</a></li>
@@ -394,7 +396,7 @@ searches. For example:</p>
       currentPagename: "public_collections_advanced_search",
       currentTitle: "Public Collections Advanced Search",
       currentUrl: ("index.html").replace("index.html", "public_collections_advanced_search.html"),
-      rootUrl: "./",
+      rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
   </script>
