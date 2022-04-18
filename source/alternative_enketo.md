@@ -1,5 +1,8 @@
 # Using Alternative Enketo Web Form Styles
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/alternative_enketo.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/alternative_enketo.md" class="reference">15
+Feb 2022</a>
 
 Enketo web forms can be customized in the way your questions are presented.
 There are two alternative styles that can be selected and even combined:
@@ -30,13 +33,13 @@ by defining the theme under the `style` column in the `settings` sheet:
 **settings**
 
 | form_title  | style |
-| ----------- | ----- |
+| :---------- | :---- |
 | Themed form | pages |
 
 ## Available styles in XLSForm:
 
 | XLSForm Theme                        | Description                                        |
-| ------------------------------------ | -------------------------------------------------- |
+| :----------------------------------- | :------------------------------------------------- |
 | (leave blank)                        | Default – single page                              |
 | `theme-grid no-text-transform`       | Grid theme                                         |
 | `theme-grid`                         | Grid theme with headings in ALL CAPS               |

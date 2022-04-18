@@ -79,6 +79,18 @@ html body {
 
     table {
       margin-bottom: 1.5em;
+      th {
+        p {
+          font-weight: 600;
+          margin: 0 auto;
+        }
+      }
+      td.text-left {
+        text-align: left;
+        p {
+          margin: 0 auto;
+        }
+      }
     }
 
     pre {

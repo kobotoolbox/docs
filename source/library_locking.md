@@ -54,7 +54,7 @@ control the locked behaviour:
 **settings**
 
 | kobo--lock_all |
-| -------------- |
+| :------------- |
 | true           |
 
 The accepted values for `kobo--lock_all` are the same as in the `survey` sheet
@@ -72,7 +72,7 @@ function as intended from the user's perspective.
 ### Question-level restrictions
 
 | Name                       | Description                                                        |
-| -------------------------- | ------------------------------------------------------------------ |
+| :------------------------- | :----------------------------------------------------------------- |
 | `choice_add`               | Add new choices to a `select_*` question                           |
 | `choice_delete`            | Remove an existing choice from a `select_*` question               |
 | `choice_value_edit`        | Edit a choice `name`                                               |
@@ -87,7 +87,7 @@ function as intended from the user's perspective.
 ### Group-level restrictions
 
 | Name                        | Description                                                                                            |
-| --------------------------- | ------------------------------------------------------------------------------------------------------ |
+| :-------------------------- | :----------------------------------------------------------------------------------------------------- |
 | `group_delete`              | Delete group modal **Delete everything** button (or delete group button if paired with `group_split`)  |
 | `group_split`               | Delete group modal **Ungroup questions** button (or delete group button if paired with `group_delete`) |
 | `group_label_edit`          | Edit a group `label`                                                                                   |
@@ -100,7 +100,7 @@ function as intended from the user's perspective.
 ### Form-level restrictions
 
 | Name                  | Description                                                                                      |
-| --------------------- | ------------------------------------------------------------------------------------------------ |
+| :-------------------- | :----------------------------------------------------------------------------------------------- |
 | `form_appearance`     | Changing form appearance from **Layout & Settings**                                              |
 | `form_replace`        | Replacing form using **Replace Form** modal                                                      |
 | `group_add`           | Button for grouping questions                                                                    |
@@ -131,7 +131,7 @@ are **only three** colours that differentiate their locking appearance in the
 formbuilder.
 
 | restriction       | profile_1 | profile_2 | profile_3 |
-| ----------------- | --------- | --------- | --------- |
+| :---------------- | :-------- | :-------- | :-------- |
 | choice_add        | locked    |           |           |
 | choice_delete     |           | locked    |           |
 | choice_label_edit | locked    |           |           |
@@ -149,7 +149,7 @@ formbuilder.
 Set form-level restrictions and `kobo--lock_all` boolean.
 
 | kobo--locking-profile | kobo--lock_all |
-| --------------------- | -------------- |
+| :-------------------- | :------------- |
 | profile_3             | false          |
 
 <p class="note">
@@ -162,7 +162,7 @@ Set form-level restrictions and `kobo--lock_all` boolean.
 Set question and group-level restrictions.
 
 | type                 | name    | label               | kobo--locking-profile |
-| -------------------- | ------- | ------------------- | --------------------- |
+| :------------------- | :------ | :------------------ | :-------------------- |
 | select_one countries | country | Select your country | profile_1             |
 | select_one cities    | city    | Select your city    | profile_2             |
 
@@ -171,7 +171,7 @@ Set question and group-level restrictions.
 No restrictions can be set in the `choices` sheet.
 
 | list_name | name      | label                    |
-| --------- | --------- | ------------------------ |
+| :-------- | :-------- | :----------------------- |
 | countries | canada    | Canada                   |
 | countries | usa       | United States of America |
 | cities    | vancouver | Vancouver                |
@@ -372,7 +372,7 @@ Assume an XLSForm containing valid locking features is imported:
         inherit all the locks that the `template` had
 
 | Original Asset Type | Process                  | Resulting Asset's Status |
-| ------------------- | ------------------------ | ------------------------ |
+| :------------------ | :----------------------- | :----------------------- |
 | `survey`            | -                        | locked                   |
 | `survey`            | `survey` to `template`   | locked                   |
 | `survey`            | `survey` to `question`   | not locked               |

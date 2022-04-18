@@ -110,7 +110,7 @@ same screen through XLSForm (if you are comfortable with XLSForm) using the
 **survey**
 
 | type           | name  | label                       | appearance |
-| -------------- | ----- | --------------------------- | ---------- |
+| :------------- | :---- | :-------------------------- | :--------- |
 | begin_group    | DC    | Demographic Characteristics | field-list |
 | text           | Name  | Name                        |            |
 | integer        | Age   | Age                         |            |
@@ -121,7 +121,7 @@ same screen through XLSForm (if you are comfortable with XLSForm) using the
 **choices**
 
 | list_name | name | label  |
-| --------- | ---- | ------ |
+| :-------- | :--- | :----- |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
 
@@ -161,7 +161,7 @@ Alternatively, you could also do this in XLSForm:
 **survey**
 
 | type           | name  | label                                                  | relevant    |
-| -------------- | ----- | ------------------------------------------------------ | ----------- |
+| :------------- | :---- | :----------------------------------------------------- | :---------- |
 | select_one Q1  | Q1    | Q1. Are the any eligible respondents in the household? |             |
 | begin_group    | DC    | Details of eligible respondents                        | ${Q1} = '1' |
 | text           | Name  | Name                                                   |             |
@@ -173,7 +173,7 @@ Alternatively, you could also do this in XLSForm:
 **choices**
 
 | list_name | name | label  |
-| --------- | ---- | ------ |
+| :-------- | :--- | :----- |
 | Q1        | 1    | Yes    |
 | Q1        | 2    | No     |
 | Sex       | 1    | Male   |
@@ -205,7 +205,7 @@ survey in XLSForm as the formbuilder does not currently support this feature.
 **survey**
 
 | type           | name  | label                                                   | repeat_count |
-| -------------- | ----- | ------------------------------------------------------- | ------------ |
+| :------------- | :---- | :------------------------------------------------------ | :----------- |
 | integer        | Q1    | Total number of family members living in this household |              |
 | begin_repeat   | DC    | Details of eligible respondents                         | ${Q1}        |
 | text           | Name  | Name                                                    |              |
@@ -217,7 +217,7 @@ survey in XLSForm as the formbuilder does not currently support this feature.
 **choices**
 
 | list_name | name | label  |
-| --------- | ---- | ------ |
+| :-------- | :--- | :----- |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
 
@@ -236,7 +236,7 @@ recorded in a roster (previously) to link with other repeating group questions
 **survey**
 
 | type                 | name              | label                                           | calculation                                  | repeat_count    |
-| -------------------- | ----------------- | ----------------------------------------------- | -------------------------------------------- | --------------- |
+| :------------------- | :---------------- | :---------------------------------------------- | :------------------------------------------- | :-------------- |
 | begin_repeat         | DC                | Demographic Characteristics                     |                                              |                 |
 | text                 | Name              | Name                                            |                                              |                 |
 | integer              | Age               | Age                                             |                                              |                 |
@@ -253,7 +253,7 @@ recorded in a roster (previously) to link with other repeating group questions
 **choices**
 
 | list_name | name | label                    |
-| --------- | ---- | ------------------------ |
+| :-------- | :--- | :----------------------- |
 | Sex       | 1    | Male                     |
 | Sex       | 2    | Female                   |
 | edu_level | 1    | Primary                  |
@@ -283,7 +283,7 @@ Alternatively, you could also do this in XLSForm:
 **survey**
 
 | type           | name            | label                               | calculation                                  | repeat_count |
-| -------------- | --------------- | ----------------------------------- | -------------------------------------------- | ------------ |
+| :------------- | :-------------- | :---------------------------------- | :------------------------------------------- | :----------- |
 | begin_repeat   | DC              | Demographic Characteristics         |                                              |              |
 | text           | Name            | Name                                |                                              |              |
 | integer        | Age             | Age                                 |                                              |              |
@@ -298,7 +298,7 @@ Alternatively, you could also do this in XLSForm:
 **choices**
 
 | list_name | name | label  |
-| --------- | ---- | ------ |
+| :-------- | :--- | :----- |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
 
