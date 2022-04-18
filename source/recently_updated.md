@@ -1,6 +1,7 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
+1. [Acknowledge question type](acknowledge.md) (18 Apr 2022)
 1. [Creating an account on KoboToolbox](creating_account.md) (14 Apr 2022)
 1. [Adding Calculations and Constraints in a Matrix Question](calculations_constraints_matrix.md) (14 Apr 2022)
 1. [KoboToolbox data security measures: Keeping your data safe](is_my_data_safe.md) (6 Apr 2022)
@@ -10,4 +11,3 @@
 1. [﻿Transferring forms and data manually from one android device to another](transferring_forms.md) (14 Mar 2022)
 1. [What is KoboToolbox](welcome.md) (14 Mar 2022)
 1. [﻿Adding Skip Logic to a Matrix Question](adding_skip_to_matrix.md) (11 Mar 2022)
-1. [Using the Question Options](question_options.md) (8 Mar 2022)
