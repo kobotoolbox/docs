@@ -1,5 +1,8 @@
 # Adding Calculations and Constraints in a Matrix Question
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/aaabdac8ec257d3157ec2ab2ceae65130e8c12d4/source/calculations_constraints_matrix.md" class="reference">14 Apr 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/aaabdac8ec257d3157ec2ab2ceae65130e8c12d4/source/calculations_constraints_matrix.md" class="reference">14
+Apr 2022</a>
 
 When working in the formbuilder, it is simple to
 [add calculations](calculate_questions.md) or
@@ -20,7 +23,7 @@ add rows and columns with the variables necessary for data collection.
 **Step 2: Download the form as XLSForm**
 
 Once the matrix question has been created, **SAVE** the form and
-[download it as an XLSForm](getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox).
+[download it as an XLSForm](getting_started_xlsform.md#downloading-an-xlsform-from-kobotoolbox).
 
 **Step 3: Add logic to the matrix question**
 

@@ -1,5 +1,8 @@
 # The KoboToolbox Interface
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobotoolbox_interface.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobotoolbox_interface.md" class="reference">15
+Feb 2022</a>
 
 This article will walk you through the **KoboToolbox** interface, helping you
 get familiar with the different elements.
@@ -47,7 +50,7 @@ Hover your mouse pointer over an item in the **Projects** screen to reveal the
 following buttons:
 
 | Button                                                        | Action                                                                                       |
-| ------------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| :------------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
 | <i class="k-icon k-icon-edit"></i> **Edit**                   | Go to the formbuilder to edit the form                                                       |
 | <i class="k-icon k-icon-tag"></i> **Add Tags to the project** | Create tags to make it easier to find projects in the project list when using the search bar |
 | <i class="k-icon k-icon-user-share"></i> **Share**            | Share the project with other **KoboToolbox** users and customize permissions                 |
@@ -58,7 +61,7 @@ When you click the <i class="k-icon k-icon-more-vertical"></i> **More actions**
 button, you have access to the following options:
 
 | Button                                                          | Action                                                                                                                                                                                                           |
-| --------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| :-------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <i class="k-icon k-icon-replace"></i> **Replace form**          | Replace the current form with an **XLSForm**                                                                                                                                                                     |
 | <i class="k-icon k-icon-globe-alt"></i> **Manage translations** | Go to the **Manage Languages** screen where you can define languages and add translations for the form                                                                                                           |
 | <i class="k-icon k-icon-xls-file"></i> **Download XLS**         | Generate an XLS file in the **XLSForm** standard from the current project. This allows you to continue editing your form using **Excel** and easily collaborate with others                                      |

@@ -1,5 +1,8 @@
 ﻿# Adding Skip Logic to a Matrix Question
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/83d9dadfcc132d75f99e2705f77c425c2fee6d70/source/adding_skip_to_matrix.md" class="reference">11 Mar 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/83d9dadfcc132d75f99e2705f77c425c2fee6d70/source/adding_skip_to_matrix.md" class="reference">11
+Mar 2022</a>
 
 In most situations, you can add skip logic to any question type as outlined in
 the support article **[Adding Skip Logic](skip_logic.md)**. However, when
@@ -34,7 +37,7 @@ Simply add rows and columns with the variables you intend to collect data for.
 **Step 2:** Download form as XLSForm:
 
 Once the `matrix` question is ready, **SAVE** the form and then
-[download it as an XLSForm](getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox).
+[download it as an XLSForm](getting_started_xlsform.md#downloading-an-xlsform-from-kobotoolbox).
 
 **Step 3:** Add relevant column header and skip logic to your XLSForm:
 

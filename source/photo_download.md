@@ -1,5 +1,8 @@
 # Downloading Photos and Other Media
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/photo_download.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/photo_download.md" class="reference">15
+Feb 2022</a>
 
 If your form [includes](question_types.md) a photo, video, or audio recording
 question, these files will be uploaded to the server along with your other data.
@@ -30,14 +33,14 @@ If your survey had the following question:
 **survey**
 
 | type  | name    | label           |
-| ----- | ------- | --------------- |
+| :---- | :------ | :-------------- |
 | image | image_1 | Submit an image |
 
 And a submission to that question with the filename of "image.jpg", the export
 will have the following result:
 
 | image_1   | image_1_URL               |
-| --------- | ------------------------- |
+| :-------- | :------------------------ |
 | image.jpg | https://link/to/image.jpg |
 
 ## For slow connections or very large projects: Using DownThemAll

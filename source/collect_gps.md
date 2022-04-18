@@ -1,5 +1,8 @@
 # Collecting GPS Locations
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/collect_gps.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/collect_gps.md" class="reference">15
+Feb 2022</a>
 
 Location coordinates can be collected easily in all forms with the 'GPS'
 response types.
@@ -21,7 +24,7 @@ question to your form. There are three types of GPS questions: **Point**,
 **survey**
 
 | type     | name  | label                        | hint                                                                                 |
-| -------- | ----- | ---------------------------- | ------------------------------------------------------------------------------------ |
+| :------- | :---- | :--------------------------- | :----------------------------------------------------------------------------------- |
 | geopoint | point | Record your current location | This question collects a single GPS coordinate that denotes a single point           |
 | geotrace | line  | Record a line                | This question collects two coordinates to form a line                                |
 | geoshape | area  | Record an area               | This question collects GPS coordinates that mark out a closed loop/area in any shape |
