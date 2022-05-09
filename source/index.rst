@@ -40,6 +40,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   question_options
   skip_logic
   validation_criteria
+  text_and_note
   acknowledge
   number_decimal_range
   rating_ranking
