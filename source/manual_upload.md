@@ -1,4 +1,5 @@
 # Manually Uploading Submissions
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/488d162653bdaf54b3e1dfe63cd24f8c0c7d133b/source/manual_upload.md" class="reference">24 May 2022</a>
 
 <p class="note">Please note this is still an experimental feature and it does
 not prevent you from creating duplicate submissions.</p>
