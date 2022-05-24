@@ -105,69 +105,72 @@
           
   <section id="manually-uploading-submissions">
 <h1>Manually Uploading Submissions<a class="headerlink" href="#manually-uploading-submissions" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/manual_upload.md" class="reference">15 Feb 2022</a></p>
-<p>[Warning: This is still an experimental feature, and it does not prevent you
-from creating duplicate submissions.]</p>
-<p>In some situations, you might not be able to use the standard uploading option
-after collecting data with KoboCollect or Enketo Web Forms. For example, your
-mobile device might be partially broken (e.g. screen is shattered), or your
-devices are in a remote location without Internet access. It is possible to
-download the submissions to your local computer first and then uploading them to
-the server. In remote locations, this might be a good option because you may
-have access to a computer to download the files but need to physically travel to
-a different location where you can access the Internet.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/488d162653bdaf54b3e1dfe63cd24f8c0c7d133b/source/manual_upload.md" class="reference">24 May 2022</a></p>
+<p class="note">Please note this is still an experimental feature and it does
+not prevent you from creating duplicate submissions.</p>
+<p>In certain situations, you might not be able to use the standard uploading
+option after collecting data with <strong>KoboCollect</strong> or <strong>Enketo Web Forms</strong>. This
+may be as a result of issues with your mobile device being partially broken
+(e.g. screen is shattered), or due to being in a remote location without
+internet access. You may want to download your submissions from the data
+collection device to your local computer and then upload them to the server when
+you have regained internet connectivity.</p>
 <section id="exporting-data-from-web-forms">
 <h2>Exporting data from Web Forms<a class="headerlink" href="#exporting-data-from-web-forms" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p>In your offline-enabled Web Form open the “drawer” by clicking on the bracket
-on the left.</p>
-<p><img alt="image" src="_images/export_data.png" /></p>
-</li>
-<li><p>Click on the Export button. A downloadable file has now been prepared and
-will be saved to your computer immediately, otherwise click the Export button
-again. For some browsers this may not work and you will need to click the
-“alternative download - online” link, which will require an Internet
-connection.</p></li>
-<li><p>Follow the import steps shown below.</p></li>
+<ol class="arabic simple">
+<li><p>In your offline-enabled <strong>Web Form</strong>, open the “Side Panel” by clicking on
+the bracket on the left.</p></li>
+</ol>
+<p><img alt="Side Panel" src="_images/Side_Panel.png" /></p>
+<ol class="arabic simple" start="2">
+<li><p>Click on the <strong>Export</strong> button and ZIP file will be saved to your computer.
+If not, click the <strong>Export</strong> button again. For some browsers this may not
+work and you will need to click the “alternative download - online” link,
+which will require an Internet connection.</p></li>
+</ol>
+<p><img alt="Export" src="_images/Export.png" /></p>
+<ol class="arabic simple" start="3">
+<li><p>Now follow the <a class="reference internal" href="#importing-a-data-zip-file"><span class="std std-doc">instructions outlined below</span></a> for
+importing your submissions.</p></li>
 </ol>
 </section>
 <section id="exporting-data-from-kobocollect">
 <h2>Exporting data from KoboCollect<a class="headerlink" href="#exporting-data-from-kobocollect" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Connect the device to your computer</p></li>
-<li><p>Open the device’s internal storage on your computer. (For Windows the drivers
-will install automatically and the device can be opened on My Computer. On
-iOS you will need
-<a class="reference external" href="https://www.android.com/intl/en_us/filetransfer">Android File Transfer</a> from
-Google to access the device’s files.</p></li>
-<li><p>On your device open the ‘odk’ folder.</p></li>
-<li><p>Copy the ‘instances’ folder and paste it somewhere on your computer.</p></li>
-<li><p>If you have more than one device repeat the above steps and rename each of
-the ‘instances’ folders to a unique name or number.</p></li>
+<ol class="arabic">
+<li><p>Connect the device to your computer through a USB cable.</p></li>
+<li><p>Open the device’s internal storage on your computer. (For <strong>Windows</strong>, the
+drivers will install automatically and the device can be opened on <strong>My
+Computer</strong>. On <strong>MacOS</strong> you will need
+<a class="reference external" href="https://www.android.com/intl/en_us/filetransfer/">Android File Transfer</a>
+from Google to access the device’s files.)</p></li>
+<li><p>On your device, navigate to the <strong>KoboCollect</strong> folder (this can be found on
+the path below):</p>
+<p><code class="docutils literal notranslate"><span class="pre">Phone\Android\data\org.koboc.collect.android\files\projects</span></code></p>
+<p>You can learn more about the device storage path
+<a class="reference internal" href="transferring_forms.html"><span class="doc std std-doc">here</span></a>.</p>
+</li>
+<li><p>Copy the “instances” folder and paste it somewhere on your computer.</p></li>
+<li><p>If you have more than one device, repeat the above steps and rename each of
+the “instances” folders with a unique name or number.</p></li>
 <li><p>Create a ZIP file of the folder.</p></li>
-<li><p>Follow the import steps shown below.</p></li>
+<li><p>Now follow the <a class="reference internal" href="#importing-a-data-zip-file"><span class="std std-doc">instructions outlined below</span></a> for
+importing your submissions.</p></li>
 </ol>
 </section>
-<section id="importing-a-data-zip-file-to-kobotoolbox">
-<h2>Importing a data ZIP file to KoboToolbox<a class="headerlink" href="#importing-a-data-zip-file-to-kobotoolbox" title="Permalink to this headline">¶</a></h2>
-<ol class="arabic">
-<li><p>Login to your KoboToolbox account, then visit:</p>
-<p>https://kc.humanitarianresponse.info/your_username/bulk-submission-form <em>OR</em></p>
-<p>https://kc.kobotoolbox.org/your_username/bulk-submission-form</p>
-<p>(depending on where you signed up), and replace ‘your_username’ with your
-own username.</p>
-</li>
-<li><p>Select and upload the ZIP file created/downloaded earlier. All records will
-be parsed and added to the database, assuming that they correspond to an
-existing form.</p>
-<p>Once all instances have been parsed and added to the database you will see a
-confirmation message for each record. In the event you are seeing a timeout
-message, it only means that a large number of records were added; it doesn’t
-mean that the import was unsuccessful. It is advisable in this case to
-upload multiple smaller ZIP files with fewer records. Uploading the same
-records twice is not an issue since duplicate records will be rejected.</p>
-</li>
+<section id="importing-a-data-zip-file">
+<h2>Importing a data ZIP file<a class="headerlink" href="#importing-a-data-zip-file" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Login to your KoboToolbox account, then visit:
+<code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/your_username/bulk-submission-form</span></code> OR
+<code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org/your_username/bulk-submission-form</span></code> (depending on
+where you signed up), and replace <code class="docutils literal notranslate"><span class="pre">your_username</span></code> with <strong>your own username</strong>.</p></li>
+<li><p>Select and upload the ZIP file. All records will be uploaded to the server,
+assuming that they correspond to an existing form.</p></li>
 </ol>
+<p>Once all instances have been uploaded, you will see a confirmation message for
+each record. If you see a timeout message, you can try uploading multiple
+smaller ZIP files with fewer records. Uploading the same records twice is not an
+issue, since duplicate records will be rejected.</p>
 </section>
 </section>
 
@@ -276,7 +279,7 @@ records twice is not an issue since duplicate records will be rejected.</p>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Manually Uploading Submissions</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#exporting-data-from-web-forms">Exporting data from Web Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#exporting-data-from-kobocollect">Exporting data from KoboCollect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#importing-a-data-zip-file-to-kobotoolbox">Importing a data ZIP file to KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importing-a-data-zip-file">Importing a data ZIP file</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
