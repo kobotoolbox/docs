@@ -1,0 +1,89 @@
+# Date and time question types
+
+There are 3 different date and time question types in KoboToolbox: “Date”,
+“Time” and “Date and time”.
+
+The “Date” question type is for capturing date values, for example on a question
+like “What is your date of birth?” In both KoboCollect and Enketo web forms, a
+calendar-style date picker will be shown for selecting the date.
+
+The “Time” question type is for capturing time values, for example on a question
+like “At what time do you leave for work?” In both KoboCollect and Enketo, a
+time picker is shown where a user can select their response.
+
+The third type “Date and time” is for capturing both date and time responses on
+a single question.
+
+## How to set up Date and Time question types
+
+### Setting up in FormBuilder
+
+Adding “Date”, “Time”, and “Date and Time” questions is simple and does not
+require any extra setup:
+
+-   In the KoboToolbox Formbuilder, click the + button to add a new question
+-   Type the question text, for example “What is your date of birth?”, then
+    click ADD QUESTION or press ENTER on your keyboard
+-   Choose the question type
+
+![Adding the questions](images/date_time/adding.gif)
+
+### Setting up in XLSForm
+
+To add date, time, and date and time questions in the XLSForm, use the date,
+time and dateTime question types as shown in the example below:
+
+In XLSForm, you can set up the following:
+
+| type     | name      | label                                         |
+| :------- | :-------- | :-------------------------------------------- |
+| date     | dob       | On what date were you born?                   |
+| time     | time      | At what time do you you leave for work?       |
+| dateTime | date_time | At what date and time did the training start? |
+
+## Appearance of date and time question types in web forms and KoboCollect
+
+### Default appearance
+
+![Default appearances](images/date_time/default_appearances.png)
+
+### Advanced appearances
+
+When adding the “Date” question type, you can choose from a number of display
+options (under the question settings). Appearances change the way the question
+is displayed on web forms and on KoboCollect.
+
+![Default appearances](images/date_time/advanced_appearance.png)
+
+![Default appearances](images/date_time/advanced_appearances.png)
+
+### Adding custom appearances for date questions in XLSForm
+
+You can specify advanced appearances in XLSForm through the appearance column as
+follows:
+
+| type | name         | label                              | appearance |
+| :--- | :----------- | :--------------------------------- | :--------- |
+| date | rains_start  | When did the planting rains start? | month-year |
+| date | year_migrate | In which year did you migrate?     | year       |
+
+## Using date and time questions in custom logic
+
+When defining custom skip logic (relevant), validation criteria (constraint),
+and mandatory response criteria (required) using xlsform code, date values
+should be included using the `date()` function, and in the format
+`“YYYY-MM-DD”`. For example, if you are creating validation criteria on a date
+question so that all survey responses must be before the date “April 10th,
+2022”, your validation logic will be `.<=date('2022-04-11')`.
+
+To use “Time” questions in xlsform logic, it is always a good idea to convert
+the raw time values into a number representing time as a fraction of a day,
+called the decimal time. You can do this using the `decimal-time()` function.
+Then, you can compare this value with another decimal time value. For example,
+if you would like to limit the time entered on a question to only after 12 noon,
+you can define the following custom validation logic `decimal-time(.)>=0.5`.
+
+To learn more about
+[skip logic](https://support.kobotoolbox.org/skip_logic.html) and
+[validation criteria](https://support.kobotoolbox.org/validation_criteria.html),
+click on the linked articles.
