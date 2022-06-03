@@ -1,5 +1,8 @@
 # Adding Cascading Select Questions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/cascading_select.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/cascading_select.md" class="reference">15
+Feb 2022</a>
 
 Cascading select questions are sets of questions whose options depend on the
 response to a previous question. For example, your form may first ask the region
@@ -45,7 +48,7 @@ in Excel or another spreadsheet program).
 **survey**
 
 | type                | name | label         | choice_filter                |
-| ------------------- | ---- | ------------- | ---------------------------- |
+| :------------------ | :--- | :------------ | :--------------------------- |
 | select_one states   | Q1   | Which state?  |                              |
 | select_one counties | Q2   | Which county? | state=${Q1}                  |
 | select_one cities   | Q3   | Which city?   | state=${Q1} and county=${Q2} |
@@ -60,7 +63,7 @@ in Excel or another spreadsheet program).
 **choices**
 
 | list_name | name        | label       | state      | county  |
-| --------- | ----------- | ----------- | ---------- | ------- |
+| :-------- | :---------- | :---------- | :--------- | :------ |
 | states    | texas       | Texas       |            |         |
 | states    | washington  | Washington  |            |         |
 | counties  | king        | King        | washington |         |
@@ -93,14 +96,14 @@ responses from a previous question. For this one could do the following:
 **survey**
 
 | type                  | name | label                                                                            | choice_filter         |
-| --------------------- | ---- | -------------------------------------------------------------------------------- | --------------------- |
+| :-------------------- | :--- | :------------------------------------------------------------------------------- | :-------------------- |
 | select_multiple brand | Q1   | Q1. Which brand comes to mind comes to mind when you think about life insurance? |                       |
 | select_multiple brand | Q2   | Q2. Which branch would you choose for your future life insurance purchase?       | selected(${Q1}, name) |
 
 **choices**
 
 | list_name | name | label              |
-| --------- | ---- | ------------------ |
+| :-------- | :--- | :----------------- |
 | brand     | 1    | Bajaj Allianz Life |
 | brand     | 2    | HDFC Life          |
 | brand     | 3    | Kotak Life         |

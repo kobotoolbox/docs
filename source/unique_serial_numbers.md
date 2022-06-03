@@ -1,5 +1,8 @@
 # Creating Unique Serial Numbers in Forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e30c115149ba8be02c16447d78193a55103044b7/source/unique_serial_numbers.md" class="reference">11 Jan 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/e30c115149ba8be02c16447d78193a55103044b7/source/unique_serial_numbers.md" class="reference">11
+Jan 2022</a>
 
 There are times you may want to generate a unique serial number for each and
 every form in a project. This article discusses various workarounds on how to
@@ -46,7 +49,7 @@ expression in a `calculate` question type. The example is shown as an
 **survey**
 
 | type      | name    | label                                  | calculation                                                           |
-| --------- | ------- | -------------------------------------- | --------------------------------------------------------------------- |
+| :-------- | :------ | :------------------------------------- | :-------------------------------------------------------------------- |
 | text      | Q1      | Region Name                            |                                                                       |
 | text      | Q2      | District Name                          |                                                                       |
 | text      | Q3      | Cluster Name                           |                                                                       |

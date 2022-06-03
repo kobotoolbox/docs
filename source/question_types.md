@@ -1,11 +1,14 @@
 # List of Question Types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/question_types.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/question_types.md" class="reference">15
+Feb 2022</a>
 
 The below table provides a high-level summary of each of the response types
 available to use in your XLSForm and formbuilder:
 
 | Question type                    | Icon                                          | Answer input                                                                                 |
-| -------------------------------- | --------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| :------------------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------- |
 | integer                          | <i class="k-icon k-icon-qt-number"></i>       | Integer (i.e., whole number) input.                                                          |
 | decimal                          | <i class="k-icon k-icon-qt-decimal"></i>      | Decimal input.                                                                               |
 | range                            | <i class="k-icon k-icon-qt-range"></i>        | Range input (including rating).                                                              |
@@ -40,7 +43,7 @@ Additionally, KoboToolbox-specific types can also be used from within the
 formbuilder:
 
 | Formbuilder Question type | Icon                                             | Answer input                                                 |
-| ------------------------- | ------------------------------------------------ | ------------------------------------------------------------ |
+| :------------------------ | :----------------------------------------------- | :----------------------------------------------------------- |
 | Rating                    | <i class="k-icon k-icon-qt-rating"></i>          | Compare different items using a common scale.                |
 | Ranking                   | <i class="k-icon k-icon-qt-ranking"></i>         | Compare a list of different objects to one another.          |
 | Question Matrix           | <i class="k-icon k-icon-qt-question-matrix"></i> | Create a group of questions that display in a matrix format. |

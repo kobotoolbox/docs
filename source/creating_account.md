@@ -1,5 +1,8 @@
 # Creating an account on KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/creating_account.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/b0f369c77dd56f1a5d5cd2a4acc207fe74ed629f/source/creating_account.md" class="reference">14
+Apr 2022</a>
 
 The first step for all users when getting started with **KoboToolbox** is to
 create an account. This article will guide you through the steps on creating and
@@ -67,6 +70,25 @@ Use one of the following links to log back into your account with your
 _username_ and _password_:
 
 | Server      | URL                                                                                                   |
-| ----------- | ----------------------------------------------------------------------------------------------------- |
+| :---------- | :---------------------------------------------------------------------------------------------------- |
 | OCHA server | <a href="https://kobo.humanitarianresponse.info" class="reference">kobo.humanitarianresponse.info</a> |
 | Kobo server | <a href="https://kf.kobotoolbox.org" class="reference">kf.kobotoolbox.org</a>                         |
+
+## Troubleshooting
+
+1. Make sure to follow the guidelines listed below to create a valid username:
+    - The length of a username can range from 2 to 30 characters.
+    - A username could be made up of a combination of lower-case characters,
+      numbers, and underscores. Use of special characters (such as `~`, `!`,
+      `@`, `#`, `$`, `%`, `^`, `&`, `*`, `?`) are not valid.
+    - The username must start with a lower-case character.
+2. You may be required to choose another username (despite following all the
+   points listed above) if the username has already been registered to another
+   user.
+3. [Choose a strong password](https://support.microsoft.com/en-us/windows/create-and-use-strong-passwords-c5cebb49-8c53-4f5e-2bc4-fe357ca048eb)
+   so that your account and sensitive data is less vulnerable to attack or
+   abuse.
+4. Store your username and password in a safe place, such as a password manager,
+   so that you don't lose access to your account.
+5. Ensure the entered email address is correct otherwise you will not receive
+   the activation link.
