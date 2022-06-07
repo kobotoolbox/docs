@@ -3,8 +3,8 @@
 There are 3 different date and time question types in KoboToolbox: “Date”,
 “Time” and “Date and time”.
 
-The “Date” question type is for capturing date values, for example on a question
-like “What is your date of birth?” In both KoboCollect and Enketo web forms, a
+The “Date” question type is for capturing date values, for example when asking
+for date of birth, etc. In both KoboCollect and Enketo web forms, a
 calendar-style date picker will be shown for selecting the date.
 
 The “Time” question type is for capturing time values, for example on a question
@@ -16,22 +16,22 @@ a single question.
 
 ## How to set up Date and Time question types
 
-### Setting up in FormBuilder
+### Setting up in Formbuilder
 
-Adding “Date”, “Time”, and “Date and Time” questions is simple and does not
-require any extra setup:
+Adding “Date”, “Time”, and “Date and Time” questions is simple:
 
--   In the KoboToolbox Formbuilder, click the + button to add a new question
+-   In the Formbuilder, click the <i class="k-icon k-icon-plus"></i> button to
+    add a new question
 -   Type the question text, for example “What is your date of birth?”, then
-    click ADD QUESTION or press ENTER on your keyboard
+    click **ADD QUESTION** or press ENTER on your keyboard
 -   Choose the question type
 
 ![Adding the questions](images/date_time/adding.gif)
 
 ### Setting up in XLSForm
 
-To add date, time, and date and time questions in the XLSForm, use the date,
-time and dateTime question types as shown in the example below:
+To add "Date", "Time", and "Date and Time" questions in the XLSForm, use the
+`date`, `time` and `dateTime` question types as shown in the example below:
 
 In XLSForm, you can set up the following:
 
@@ -49,41 +49,64 @@ In XLSForm, you can set up the following:
 
 ### Advanced appearances
 
-When adding the “Date” question type, you can choose from a number of display
-options (under the question settings). Appearances change the way the question
-is displayed on web forms and on KoboCollect.
+When adding the “Date” question type in the Formbuilder, you can choose from a
+number of display options (under the question settings). Appearances change the
+way the question is displayed on web forms and on KoboCollect.
 
-![Default appearances](images/date_time/advanced_appearance.png)
+![Adding advanced appearances](images/date_time/advanced_appearance.png)
 
-![Default appearances](images/date_time/advanced_appearances.png)
+To add appearance values that are not listed on the drop-downlist in the
+Formbuilder, choose "other", and type the appearance value in the text field
+that appears.
+
+![Advanced appearances](images/date_time/advanced_appearances.png)
 
 ### Adding custom appearances for date questions in XLSForm
 
 You can specify advanced appearances in XLSForm through the appearance column as
 follows:
 
-| type | name         | label                              | appearance |
-| :--- | :----------- | :--------------------------------- | :--------- |
-| date | rains_start  | When did the planting rains start? | month-year |
-| date | year_migrate | In which year did you migrate?     | year       |
+| type | name                | label                                   | appearance     |
+| :--- | :------------------ | :-------------------------------------- | :------------- |
+| date | rains_start         | When did the planting rains start?      | month-year     |
+| date | year_migrate        | In which year did you migrate?          | year           |
+| date | no-calendar_date    | Date picker without calendar            | no-calendar    |
+| date | coptic_date         | Date picker with Coptic calendar        | coptic         |
+| date | ethiopian_date      | Date picker with Ethiopian calendar     | ethiopian      |
+| date | islamic_date        | Date picker with Islamic calendar       | islamic        |
+| date | bikhram_sambat_date | Date picker with Bikram Sambat calendar | bikhram_sambat |
+| date | myanmar_date        | Date picker with Myanmar calendar       | myanmar        |
+| date | persian_date        | Date picker with Persian calendar       | persian        |
 
 ## Using date and time questions in custom logic
 
 When defining custom skip logic (relevant), validation criteria (constraint),
-and mandatory response criteria (required) using xlsform code, date values
+and mandatory response criteria (required) using XLSForm code, date values
 should be included using the `date()` function, and in the format
 `“YYYY-MM-DD”`. For example, if you are creating validation criteria on a date
 question so that all survey responses must be before the date “April 10th,
-2022”, your validation logic will be `.<=date('2022-04-11')`.
+2022”, your validation logic will be `. < date('2022-04-11')`.
 
-To use “Time” questions in xlsform logic, it is always a good idea to convert
+To use “Time” questions in XLSForm logic, it is always a good idea to convert
 the raw time values into a number representing time as a fraction of a day,
 called the decimal time. You can do this using the `decimal-time()` function.
 Then, you can compare this value with another decimal time value. For example,
 if you would like to limit the time entered on a question to only after 12 noon,
 you can define the following custom validation logic `decimal-time(.)>=0.5`.
 
-To learn more about
-[skip logic](https://support.kobotoolbox.org/skip_logic.html) and
-[validation criteria](https://support.kobotoolbox.org/validation_criteria.html),
-click on the linked articles.
+Learn more about related topics:
+
+-   [Skip logic](skip_logic.md)
+-   [Validation criteria](validation_criteria.md)
+-   [Date and time functions](https://docs.getodk.org/form-operators-functions/#date-and-time)
+    (on the ODK documentation site)
+
+<section class="note">
+  You can download the example XLSForm
+  <a
+    download
+    class="reference"
+    href="./_static/files/date_time/date_time.xlsx"
+    >here <i class="k-icon k-icon-file-xls"></i></a
+  >.
+</section>
