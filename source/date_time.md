@@ -16,11 +16,11 @@ a single question.
 
 ## How to set up Date and Time question types
 
-### Setting up in Formbuilder
+### Setting up in formbuilder
 
 Adding “Date”, “Time”, and “Date and Time” questions is simple:
 
--   In the Formbuilder, click the <i class="k-icon k-icon-plus"></i> button to
+-   In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to
     add a new question
 -   Type the question text, for example “What is your date of birth?”, then
     click **ADD QUESTION** or press ENTER on your keyboard
@@ -49,14 +49,19 @@ In XLSForm, you can set up the following:
 
 ### Advanced appearances
 
-When adding the “Date” question type in the Formbuilder, you can choose from a
+When adding the “Date” question type in the formbuilder, you can choose from a
 number of display options (under the question settings). Appearances change the
 way the question is displayed on web forms and on KoboCollect.
+
+For the "Date" question type, you can control how the default Gregorian calendar
+displays by choosing between the options "month-year", "year" and "no-calendar".
+Apart from these options, you can also change the calendar style to supported
+non-Gregorian calendars.
 
 ![Adding advanced appearances](images/date_time/advanced_appearance.png)
 
 To add appearance values that are not listed on the drop-downlist in the
-Formbuilder, choose "other", and type the appearance value in the text field
+formbuilder, choose "other", and type the appearance value in the text field
 that appears.
 
 ![Advanced appearances](images/date_time/advanced_appearances.png)
@@ -66,11 +71,18 @@ that appears.
 You can specify advanced appearances in XLSForm through the appearance column as
 follows:
 
+#### Date picker appearances
+
+| type | name             | label                              | appearance  |
+| :--- | :--------------- | :--------------------------------- | :---------- |
+| date | rains_start      | When did the planting rains start? | month-year  |
+| date | year_migrate     | In which year did you migrate?     | year        |
+| date | no-calendar_date | Date picker without calendar       | no-calendar |
+
+### Supported non-Gregorian calendars
+
 | type | name                | label                                   | appearance     |
 | :--- | :------------------ | :-------------------------------------- | :------------- |
-| date | rains_start         | When did the planting rains start?      | month-year     |
-| date | year_migrate        | In which year did you migrate?          | year           |
-| date | no-calendar_date    | Date picker without calendar            | no-calendar    |
 | date | coptic_date         | Date picker with Coptic calendar        | coptic         |
 | date | ethiopian_date      | Date picker with Ethiopian calendar     | ethiopian      |
 | date | islamic_date        | Date picker with Islamic calendar       | islamic        |
@@ -82,14 +94,16 @@ follows:
 
 When defining custom skip logic (relevant), validation criteria (constraint),
 and mandatory response criteria (required) using XLSForm code, date values
-should be included using the `date()` function, and in the format
-`“YYYY-MM-DD”`. For example, if you are creating validation criteria on a date
-question so that all survey responses must be before the date “April 10th,
-2022”, your validation logic will be `. < date('2022-04-11')`.
+should be included
+[using the `date()` function](https://docs.getodk.org/form-operators-functions/#date),
+and in the format `“YYYY-MM-DD”`. For example, if you are creating validation
+criteria on a date question so that all survey responses must be before the date
+“April 10th, 2022”, your validation logic will be `. < date('2022-04-11')`.
 
 To use “Time” questions in XLSForm logic, it is always a good idea to convert
 the raw time values into a number representing time as a fraction of a day,
-called the decimal time. You can do this using the `decimal-time()` function.
+called the decimal time. You can do this using
+[the `decimal-time()` function](https://docs.getodk.org/form-operators-functions/#decimal-time).
 Then, you can compare this value with another decimal time value. For example,
 if you would like to limit the time entered on a question to only after 12 noon,
 you can define the following custom validation logic `decimal-time(.)>=0.5`.
