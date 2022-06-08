@@ -36,12 +36,12 @@ Adding media questions on the form is easy and does not require any extra setup:
 
 ### Setting up in XLSForm
 
-To add media questions in xlsform, use the `photo`, `audio`, `video`, and `file`
+To add media questions in xlsform, use the `image`, `audio`, `video`, and `file`
 question types as shown in the following example:
 
 | type  | name        | label                                                       | hint            |
 | :---- | :---------- | :---------------------------------------------------------- | :-------------- |
-| photo | house_photo | Take a photo of the housing unit                            |                 |
+| image | house_photo | Take a photo of the housing unit                            |                 |
 | audio | impact      | What has been the impact of the project on your household?  | Record as audio |
 | video | preparation | Record video of the respondent as they prepare the VitaMeal |                 |
 | file  | CV          | Attach your CV                                              |                 |
@@ -69,9 +69,9 @@ the appearance column as shown in the following example:
 
 | type  | name       | label                      | appearance |
 | :---- | :--------- | :------------------------- | :--------- |
-| photo | sign       | Sign here                  | signature  |
-| photo | drawing    | Draw here                  | draw       |
-| photo | annotation | Take an image and annotate | annotate   |
+| image | sign       | Sign here                  | signature  |
+| image | drawing    | Draw here                  | draw       |
+| image | annotation | Take an image and annotate | annotate   |
 
 ## Background audio recording
 
