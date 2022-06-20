@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Using Alternative Enketo Web Form Styles &#8212; KoboToolbox  documentation</title>
+    <title>Date and time question types &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -25,8 +25,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Using HXL Tags" href="hxl.html" />
-    <link rel="prev" title="What Are Enketo Web Forms?" href="enketo.html" />
+    <link rel="next" title="Rating vs Ranking Question Types" href="rating_ranking.html" />
+    <link rel="prev" title="Number, Decimal and Range Question Types" href="number_decimal_range.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -90,7 +90,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="alternative_enketo">
+<div class="page page--has-sidebar " id="date_time">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -103,73 +103,210 @@
 
         <section class="page__body" role="main">
           
-  <section id="using-alternative-enketo-web-form-styles">
-<h1>Using Alternative Enketo Web Form Styles<a class="headerlink" href="#using-alternative-enketo-web-form-styles" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong>
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/alternative_enketo.md" class="reference">15
-Feb 2022</a></p>
-<p>Enketo web forms can be customized in the way your questions are presented.
-There are two alternative styles that can be selected and even combined:
-<strong>Multiple Pages</strong> and <strong>Grid Theme</strong>.</p>
-<p><strong>Multiple Pages</strong> mode displays one question at a time per screen, or a group
-of questions set to display on the same screen. This is the same way
-<a class="reference internal" href="group_repeat.html"><span class="doc std std-doc">KoboCollect works</span></a>.</p>
-<p><strong>Grid Theme</strong> is an alternative display of questions meant to be more compact
-and more like paper forms where space is often a major concern. theme-grid
-allows displaying multiple questions per row and flexibly adapts in case of skip
-logic making a new question appear or disappear. To display multiple questions
-in a row they need to be part of a group, which by default shows up to four
-questions next to each other. This theme can be customized by defining the
-number of questions to be included in each row through the appearance field of
-each question’s settings. For more details
-<a class="reference external" href="https://blog.enketo.org/gorgeous-grid">see this post</a>.</p>
-<p>It is also possible to use both <strong>Multiple Pages</strong> and <strong>Grid Theme</strong> together.
-You can set these styles through the KoboToolbox formbuilder user interface:</p>
-<p><img alt="image" src="_images/multiple_grid.gif" /></p>
-<p>If you are building your survey project through XLSForm, you could do the same
-by defining the theme under the <code class="docutils literal notranslate"><span class="pre">style</span></code> column in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet:</p>
-<p><strong>settings</strong></p>
+  <section id="date-and-time-question-types">
+<h1>Date and time question types<a class="headerlink" href="#date-and-time-question-types" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/241c501febc0e6bce5f09529287155f41a3d577f/source/date_time.md" class="reference">20 Jun 2022</a></p>
+<p>There are 3 different date and time question types in KoboToolbox: “Date”,
+“Time” and “Date and time”.</p>
+<p>The “Date” question type is for capturing date values, for example when asking
+for date of birth, etc. In both KoboCollect and Enketo web forms, a
+calendar-style date picker will be shown for selecting the date.</p>
+<p>The “Time” question type is for capturing time values, for example on a question
+like “At what time do you leave for work?” In both KoboCollect and Enketo, a
+time picker is shown where a user can select their response.</p>
+<p>The third type “Date and time” is for capturing both date and time responses on
+a single question.</p>
+<section id="how-to-set-up-date-and-time-question-types">
+<h2>How to set up Date and Time question types<a class="headerlink" href="#how-to-set-up-date-and-time-question-types" title="Permalink to this headline">¶</a></h2>
+<section id="setting-up-in-formbuilder">
+<h3>Setting up in formbuilder<a class="headerlink" href="#setting-up-in-formbuilder" title="Permalink to this headline">¶</a></h3>
+<p>Adding “Date”, “Time”, and “Date and Time” questions is simple:</p>
+<ul class="simple">
+<li><p>In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
+a new question</p></li>
+<li><p>Type the question text, for example “What is your date of birth?”, then click
+<strong>ADD QUESTION</strong> or press ENTER on your keyboard</p></li>
+<li><p>Choose the question type</p></li>
+</ul>
+<p><img alt="Adding the questions" src="_images/adding.gif" /></p>
+</section>
+<section id="setting-up-in-xlsform">
+<h3>Setting up in XLSForm<a class="headerlink" href="#setting-up-in-xlsform" title="Permalink to this headline">¶</a></h3>
+<p>To add “Date”, “Time”, and “Date and Time” questions in the XLSForm, use the
+<code class="docutils literal notranslate"><span class="pre">date</span></code>, <code class="docutils literal notranslate"><span class="pre">time</span></code> and <code class="docutils literal notranslate"><span class="pre">dateTime</span></code> question types as shown in the example below:</p>
+<p>In XLSForm, you can set up the following:</p>
 <table class="colwidths-auto docutils align-default">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p>form_title</p></th>
-<th class="text-left head"><p>style</p></th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Themed form</p></td>
-<td class="text-left"><p>pages</p></td>
+<tr class="row-even"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>dob</p></td>
+<td class="text-left"><p>On what date were you born?</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>time</p></td>
+<td class="text-left"><p>time</p></td>
+<td class="text-left"><p>At what time do you you leave for work?</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>dateTime</p></td>
+<td class="text-left"><p>date_time</p></td>
+<td class="text-left"><p>At what date and time did the training start?</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
-<section id="available-styles-in-xlsform">
-<h2>Available styles in XLSForm:<a class="headerlink" href="#available-styles-in-xlsform" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+<section id="appearance-of-date-and-time-question-types-in-web-forms-and-kobocollect">
+<h2>Appearance of date and time question types in web forms and KoboCollect<a class="headerlink" href="#appearance-of-date-and-time-question-types-in-web-forms-and-kobocollect" title="Permalink to this headline">¶</a></h2>
+<section id="default-appearance">
+<h3>Default appearance<a class="headerlink" href="#default-appearance" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Default appearances" src="_images/default_appearances.png" /></p>
+</section>
+<section id="advanced-appearances">
+<h3>Advanced appearances<a class="headerlink" href="#advanced-appearances" title="Permalink to this headline">¶</a></h3>
+<p>When adding the “Date” question type in the formbuilder, you can choose from a
+number of display options (under the question settings). Appearances change the
+way the question is displayed on web forms and on KoboCollect.</p>
+<p>For the “Date” question type, you can control how the default Gregorian calendar
+displays by choosing between the options “month-year”, “year” and “no-calendar”.
+Apart from these options, you can also change the calendar style to supported
+non-Gregorian calendars.</p>
+<p><img alt="Adding advanced appearances" src="_images/advanced_appearance.png" /></p>
+<p>To add appearance values that are not listed on the drop-down list in the
+formbuilder, choose “other”, and type the appearance value in the text field
+that appears.</p>
+<p><img alt="Advanced appearances" src="_images/advanced_appearances.png" /></p>
+<p><em>* These options must be entered manually in the formbuilder after “other” is
+selected.</em></p>
+</section>
+<section id="adding-custom-appearances-for-date-questions-in-xlsform">
+<h3>Adding custom appearances for date questions in XLSForm<a class="headerlink" href="#adding-custom-appearances-for-date-questions-in-xlsform" title="Permalink to this headline">¶</a></h3>
+<p>You can specify advanced appearances in XLSForm through the appearance column as
+follows:</p>
+<section id="date-picker-appearances">
+<h4>Date picker appearances<a class="headerlink" href="#date-picker-appearances" title="Permalink to this headline">¶</a></h4>
 <table class="colwidths-auto docutils align-default">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p>XLSForm Theme</p></th>
-<th class="text-left head"><p>Description</p></th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>appearance</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>(leave blank)</p></td>
-<td class="text-left"><p>Default – single page</p></td>
+<tr class="row-even"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>rains_start</p></td>
+<td class="text-left"><p>When did the planting rains start?</p></td>
+<td class="text-left"><p>month-year</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span> <span class="pre">no-text-transform</span></code></p></td>
-<td class="text-left"><p>Grid theme</p></td>
+<tr class="row-odd"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>year_migrate</p></td>
+<td class="text-left"><p>In which year did you migrate?</p></td>
+<td class="text-left"><p>year</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span></code></p></td>
-<td class="text-left"><p>Grid theme with headings in ALL CAPS</p></td>
+<tr class="row-even"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>no-calendar_date</p></td>
+<td class="text-left"><p>Date picker without calendar</p></td>
+<td class="text-left"><p>no-calendar</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">pages</span></code></p></td>
-<td class="text-left"><p>Multiple pages</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span> <span class="pre">pages</span> <span class="pre">no-text-transform</span></code></p></td>
-<td class="text-left"><p>Grid theme + Multiple pages</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span> <span class="pre">pages</span></code></p></td>
-<td class="text-left"><p>Grid theme + Multiple pages + headings in ALL CAPS</p></td>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
+</section>
+</section>
+<section id="supported-non-gregorian-calendars">
+<h3>Supported non-Gregorian calendars<a class="headerlink" href="#supported-non-gregorian-calendars" title="Permalink to this headline">¶</a></h3>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>appearance</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>coptic_date</p></td>
+<td class="text-left"><p>Date picker with Coptic calendar</p></td>
+<td class="text-left"><p>coptic</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>ethiopian_date</p></td>
+<td class="text-left"><p>Date picker with Ethiopian calendar</p></td>
+<td class="text-left"><p>ethiopian</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>islamic_date</p></td>
+<td class="text-left"><p>Date picker with Islamic calendar</p></td>
+<td class="text-left"><p>islamic</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>bikhram_sambat_date</p></td>
+<td class="text-left"><p>Date picker with Bikram Sambat calendar</p></td>
+<td class="text-left"><p>bikhram_sambat</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>myanmar_date</p></td>
+<td class="text-left"><p>Date picker with Myanmar calendar</p></td>
+<td class="text-left"><p>myanmar</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>date</p></td>
+<td class="text-left"><p>persian_date</p></td>
+<td class="text-left"><p>Date picker with Persian calendar</p></td>
+<td class="text-left"><p>persian</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="using-date-and-time-questions-in-custom-logic">
+<h2>Using date and time questions in custom logic<a class="headerlink" href="#using-date-and-time-questions-in-custom-logic" title="Permalink to this headline">¶</a></h2>
+<p>When defining custom skip logic (relevant), validation criteria (constraint),
+and mandatory response criteria (required) using XLSForm code, date values
+should be included
+<a class="reference external" href="https://docs.getodk.org/form-operators-functions/#date">using the <code class="docutils literal notranslate"><span class="pre">date()</span></code> function</a>,
+and in the format <code class="docutils literal notranslate"><span class="pre">“YYYY-MM-DD”</span></code>. For example, if you are creating validation
+criteria on a date question so that all survey responses must be before the date
+“April 10th, 2022”, your validation logic will be <code class="docutils literal notranslate"><span class="pre">.</span> <span class="pre">&lt;</span> <span class="pre">date('2022-04-11')</span></code>.</p>
+<p>To use “Time” questions in XLSForm logic, it is always a good idea to convert
+the raw time values into a number representing time as a fraction of a day,
+called the decimal time. You can do this using
+<a class="reference external" href="https://docs.getodk.org/form-operators-functions/#decimal-time">the <code class="docutils literal notranslate"><span class="pre">decimal-time()</span></code> function</a>.
+Then, you can compare this value with another decimal time value. For example,
+if you would like to limit the time entered on a question to only after 12 noon,
+you can define the following custom validation logic <code class="docutils literal notranslate"><span class="pre">decimal-time(.)&gt;=0.5</span></code>.</p>
+<p>Learn more about related topics:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="skip_logic.html"><span class="doc std std-doc">Skip logic</span></a></p></li>
+<li><p><a class="reference internal" href="validation_criteria.html"><span class="doc std std-doc">Validation criteria</span></a></p></li>
+<li><p><a class="reference external" href="https://docs.getodk.org/form-operators-functions/#date-and-time">Date and time functions</a>
+(ODK documentation)</p></li>
+</ul>
+<p class="note">
+  You can download the example XLSForm
+  <a
+    download
+    class="reference"
+    href="./_static/files/date_time/date_time.xlsx"
+    >here <i class="k-icon k-icon-file-xls"></i></a
+  >.
+</p>
 </section>
 </section>
 
@@ -184,7 +321,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Using Alternative Enketo Web Form Styles"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Date and time question types"
               class="feedback-button"
               target="_blank"
             >
@@ -227,7 +364,12 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Text and Note question types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Acknowledge question type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Number, Decimal and Range Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time question types</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Date and time question types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-set-up-date-and-time-question-types">How to set up Date and Time question types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#appearance-of-date-and-time-question-types-in-web-forms-and-kobocollect">Appearance of date and time question types in web forms and KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-date-and-time-questions-in-custom-logic">Using date and time questions in custom logic</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">“Select One” and “Select Many” question types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Calculate Question Type</a></li>
@@ -255,10 +397,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Using Alternative Enketo Web Form Styles</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#available-styles-in-xlsform">Available styles in XLSForm:</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hxl.html">Using HXL Tags</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Lowering the File Size of Collected Media</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
@@ -370,9 +509,9 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 
   <script>
     window.docs = {
-      currentPagename: "alternative_enketo",
-      currentTitle: "Using Alternative Enketo Web Form Styles",
-      currentUrl: ("index.html").replace("index.html", "alternative_enketo.html"),
+      currentPagename: "date_time",
+      currentTitle: "Date and time question types",
+      currentUrl: ("index.html").replace("index.html", "date_time.html"),
       rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
