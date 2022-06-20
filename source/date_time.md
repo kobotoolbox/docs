@@ -20,11 +20,11 @@ a single question.
 
 Adding “Date”, “Time”, and “Date and Time” questions is simple:
 
--   In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to
-    add a new question
--   Type the question text, for example “What is your date of birth?”, then
-    click **ADD QUESTION** or press ENTER on your keyboard
--   Choose the question type
+- In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
+  a new question
+- Type the question text, for example “What is your date of birth?”, then click
+  **ADD QUESTION** or press ENTER on your keyboard
+- Choose the question type
 
 ![Adding the questions](images/date_time/adding.gif)
 
@@ -40,6 +40,7 @@ In XLSForm, you can set up the following:
 | date     | dob       | On what date were you born?                   |
 | time     | time      | At what time do you you leave for work?       |
 | dateTime | date_time | At what date and time did the training start? |
+| survey   |
 
 ## Appearance of date and time question types in web forms and KoboCollect
 
@@ -60,11 +61,14 @@ non-Gregorian calendars.
 
 ![Adding advanced appearances](images/date_time/advanced_appearance.png)
 
-To add appearance values that are not listed on the drop-downlist in the
+To add appearance values that are not listed on the drop-down list in the
 formbuilder, choose "other", and type the appearance value in the text field
 that appears.
 
 ![Advanced appearances](images/date_time/advanced_appearances.png)
+
+_\* These options must be entered manually in the formbuilder after "other" is
+selected._
 
 ### Adding custom appearances for date questions in XLSForm
 
@@ -73,22 +77,24 @@ follows:
 
 #### Date picker appearances
 
-| type | name             | label                              | appearance  |
-| :--- | :--------------- | :--------------------------------- | :---------- |
-| date | rains_start      | When did the planting rains start? | month-year  |
-| date | year_migrate     | In which year did you migrate?     | year        |
-| date | no-calendar_date | Date picker without calendar       | no-calendar |
+| type   | name             | label                              | appearance  |
+| :----- | :--------------- | :--------------------------------- | :---------- |
+| date   | rains_start      | When did the planting rains start? | month-year  |
+| date   | year_migrate     | In which year did you migrate?     | year        |
+| date   | no-calendar_date | Date picker without calendar       | no-calendar |
+| survey |
 
 ### Supported non-Gregorian calendars
 
-| type | name                | label                                   | appearance     |
-| :--- | :------------------ | :-------------------------------------- | :------------- |
-| date | coptic_date         | Date picker with Coptic calendar        | coptic         |
-| date | ethiopian_date      | Date picker with Ethiopian calendar     | ethiopian      |
-| date | islamic_date        | Date picker with Islamic calendar       | islamic        |
-| date | bikhram_sambat_date | Date picker with Bikram Sambat calendar | bikhram_sambat |
-| date | myanmar_date        | Date picker with Myanmar calendar       | myanmar        |
-| date | persian_date        | Date picker with Persian calendar       | persian        |
+| type   | name                | label                                   | appearance     |
+| :----- | :------------------ | :-------------------------------------- | :------------- |
+| date   | coptic_date         | Date picker with Coptic calendar        | coptic         |
+| date   | ethiopian_date      | Date picker with Ethiopian calendar     | ethiopian      |
+| date   | islamic_date        | Date picker with Islamic calendar       | islamic        |
+| date   | bikhram_sambat_date | Date picker with Bikram Sambat calendar | bikhram_sambat |
+| date   | myanmar_date        | Date picker with Myanmar calendar       | myanmar        |
+| date   | persian_date        | Date picker with Persian calendar       | persian        |
+| survey |
 
 ## Using date and time questions in custom logic
 
@@ -110,12 +116,12 @@ you can define the following custom validation logic `decimal-time(.)>=0.5`.
 
 Learn more about related topics:
 
--   [Skip logic](skip_logic.md)
--   [Validation criteria](validation_criteria.md)
--   [Date and time functions](https://docs.getodk.org/form-operators-functions/#date-and-time)
-    (on the ODK documentation site)
+- [Skip logic](skip_logic.md)
+- [Validation criteria](validation_criteria.md)
+- [Date and time functions](https://docs.getodk.org/form-operators-functions/#date-and-time)
+  (ODK documentation)
 
-<section class="note">
+<p class="note">
   You can download the example XLSForm
   <a
     download
@@ -123,4 +129,4 @@ Learn more about related topics:
     href="./_static/files/date_time/date_time.xlsx"
     >here <i class="k-icon k-icon-file-xls"></i></a
   >.
-</section>
+</p>
