@@ -1,4 +1,5 @@
 # Date and time question types
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/241c501febc0e6bce5f09529287155f41a3d577f/source/date_time.md" class="reference">20 Jun 2022</a>
 
 There are 3 different date and time question types in KoboToolbox: “Date”,
 “Time” and “Date and time”.
