@@ -43,7 +43,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   text_and_note
   acknowledge
   number_decimal_range
-  photo_audio_video_file
+  date_time
   rating_ranking
   select_one_and_select_many
   calculate_questions

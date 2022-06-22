@@ -1,5 +1,5 @@
 {
-  "name": "kobo_theme",
+  "name": "kobo-theme",
   "version": "1.0.0",
   "private": true,
   "scripts": {
@@ -10,6 +10,9 @@
     "dev": "sass --load-path=node_modules --watch --style=expanded --source-map sass_source/sass/theme.scss source/_static/css/kobo_theme.css",
     "start": "npm run generate-icons && npm run _compile && npm run _prefix",
     "generate-icons": "node ./scripts/generate_icons.js"
+  },
+  "dependencies": {
+    "kobo-common": "github:kobotoolbox/kobo-common#semver:1.19.0"
   },
   "devDependencies": {
     "@vusion/webfonts-generator": "^0.8.0",
