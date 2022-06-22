@@ -94,13 +94,14 @@ html_css_files = [
     'css/kobo_theme.css',
 ]
 html_js_files = [
-    'js/smoothscroll-polyfill.js',
-    'js/common.js',
-    'js/home_page_toc.js',
-    'js/sidebar_toc.js',
     'js/breadcrumbs.js',
-    'js/scrollto.js',
+    'js/common.js',
     'js/custom_sections.js',
+    'js/home_page_toc.js',
+    'js/scrollto.js',
+    'js/sidebar_toc.js',
+    'js/smoothscroll-polyfill.js',
+    'js/table-sheets.js',
 ]
 
 html_favicon = 'images/index/favicon.png'

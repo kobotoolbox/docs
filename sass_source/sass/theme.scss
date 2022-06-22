@@ -1,20 +1,26 @@
 // NOTE: In multiple places we overrule alabaster styles with additional nesting
 
 // configuration
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:600");
-@import "variables";
-@import "rem";
-@import "mixins";
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:600');
+@import 'variables';
+@import 'rem';
+@import 'mixins';
+
 // general styles
-@import "general";
-@import "icons";
+@import 'general';
+@import 'icons';
+
 // layout parts
-@import "header";
-@import "main-search";
-@import "page-layout";
-@import "footer";
-@import "community-questions";
+@import 'header';
+@import 'main-search';
+@import 'page-layout';
+@import 'footer';
+@import 'community-questions';
+
 // custom pages
-@import "pages/index";
-@import "pages/search";
-@import "pages/custom-section";
+@import 'pages/index';
+@import 'pages/search';
+@import 'pages/custom-section';
+
+// plugins
+@import 'table-sheets';
