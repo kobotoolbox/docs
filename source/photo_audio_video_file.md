@@ -1,4 +1,4 @@
-# Photo, audio, video and file question types
+# "Photo", "Audio", "Video" and "File" question types
 
 With KoboToolbox, you can collect different types of media as part of your data
 collection project.
@@ -12,41 +12,39 @@ The latest version of KoboCollect allows you to record audio within the app
 itself without opening a separate app.
 
 With the “Video” question type, you will be able to record a video using the
-device camera or attach a video file. This may be particularly useful when a
-question requires the respondent to demonstrate something.
+device's camera or attach a video file.
 
 If a question requires that you attach a file such as a PDF, you can use the
 “File” question type.
 
-Note: Your device should also have an in-built camera and audio recorder to use
-the "photo", "audio" and "video" question types while collecting data..
+## How to set up "Photo", "Audio", "Video" and "File" question types
 
-## How to set up "photo", "audio", "video" and "file" question types
+### Setting up in formbuilder
 
-### Setting up in FormBuilder
+Adding media questions on the form is straight simple:
 
-Adding media questions on the form is easy and does not require any extra setup:
-
--   In the KoboToolbox Formbuilder, click the + button to add a new question
+-   In the KoboToolbox Formbuilder, click the <i class="k-icon k-icon-plus"></i>
+    button to add a new question
 -   Type the question text, for example “Take a picture of the housing unit”,
-    then click ADD QUESTION or press ENTER on your keyboard
+    then click **ADD QUESTION** or press ENTER on your keyboard
 -   Choose the question type
 
 ![Adding media question](images/photo_audio_video_file/add.gif)
 
 ### Setting up in XLSForm
 
-To add media questions in xlsform, use the `image`, `audio`, `video`, and `file`
+To add media questions in XLSForm, use the `image`, `audio`, `video`, and `file`
 question types as shown in the following example:
 
-| type  | name        | label                                                       | hint            |
-| :---- | :---------- | :---------------------------------------------------------- | :-------------- |
-| image | house_photo | Take a photo of the housing unit                            |                 |
-| audio | impact      | What has been the impact of the project on your household?  | Record as audio |
-| video | preparation | Record video of the respondent as they prepare the VitaMeal |                 |
-| file  | CV          | Attach your CV                                              |                 |
+| type   | name        | label                                                       | hint            |
+| :----- | :---------- | :---------------------------------------------------------- | :-------------- |
+| image  | house_photo | Take a photo of the housing unit                            |                 |
+| audio  | impact      | What has been the impact of the project on your household?  | Record as audio |
+| video  | preparation | Record video of the respondent as they prepare the VitaMeal |                 |
+| file   | CV          | Attach your CV                                              |                 |
+| survey |
 
-## Appearance of Photo, audio, video and file question types in web forms and KoboCollect
+## Appearance of "Photo", "Audio", "Video" and "File" question types in web forms and KoboCollect
 
 ### Default appearance
 
@@ -62,25 +60,25 @@ question is displayed on web forms or on KoboCollect.
 
 ![Advanced appearances](images/photo_audio_video_file/advanced_appearances.png)
 
-### Adding advanced appearances in xlsform
+### Adding advanced appearances in XLSForm
 
-You can specify advanced appearances of the "photo" question in XLSForm under
+You can specify advanced appearances of the "Photo" question in XLSForm under
 the appearance column as shown in the following example:
 
-| type  | name       | label                      | appearance |
-| :---- | :--------- | :------------------------- | :--------- |
-| image | sign       | Sign here                  | signature  |
-| image | drawing    | Draw here                  | draw       |
-| image | annotation | Take an image and annotate | annotate   |
+| type   | name       | label                      | appearance |
+| :----- | :--------- | :------------------------- | :--------- |
+| image  | sign       | Sign here                  | signature  |
+| image  | drawing    | Draw here                  | draw       |
+| image  | annotation | Take an image and annotate | annotate   |
+| survey |
 
 ## Background audio recording
 
-KoboToolbox now allows you to record audio in the background when you open the
-form. This can be useful in scenarios for example when you are collecting data
-through focus group discussions and you need an audio of the whole interview for
-analysis later.
+KoboToolbox allows you to record audio in the background when you open the form
+in KoboCollect. This can be useful in several data collection scenarios
+including focus group discussions and key informant interviews.
 
-You can turn on background audio recording in the Form Builder by clicking on
+You can turn on background audio recording in the formbuilder by clicking on
 Layout & Settings.
 
 ![Backgrouns audio](images/photo_audio_video_file/background_audio.png)
@@ -91,6 +89,7 @@ background-audio meta question type as follows:
 | type             | name             | label |
 | :--------------- | :--------------- | :---- |
 | background-audio | background_audio |       |
+| survey           |
 
 <section class="note">
 
@@ -119,9 +118,10 @@ the formbuilder.
 In XLSForm, you can do the same by adding max-pixels in the parameters column as
 follows:
 
-| type  | name  | label         | parameters     |
-| :---- | :---- | :------------ | :------------- |
-| photo | photo | Capture photo | max-pixels=480 |
+| type   | name  | label         | parameters     |
+| :----- | :---- | :------------ | :------------- |
+| photo  | photo | Capture photo | max-pixels=480 |
+| survey |
 
 In KoboCollect, you can also choose the video quality and photo size through the
 Form Management section of the project settings.
@@ -143,6 +143,10 @@ uploaded, follow the following steps in the Formbuilder:
 
 In XLSForm, you can limit the uploadable file types as follows:
 
-| type | name | label          | body::accept |
-| :--- | :--- | :------------- | :----------- |
-| file | CV   | Attach your CV | .pdf, .doc   |
+| type   | name | label          | body::accept |
+| :----- | :--- | :------------- | :----------- |
+| file   | CV   | Attach your CV | .pdf, .doc   |
+| survey |
+
+<p class='note'>You can access the XLSForm that was used in this article <a download class='reference'
+href='./_static/files/photo_audio_video_file/media_question_types.xlsx'>here.</a> </p>
