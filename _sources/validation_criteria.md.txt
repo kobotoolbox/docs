@@ -51,6 +51,7 @@ set in the **Question Options** and then surrounded by `${}`. See below example:
 | integer | Q2   | Total number of workers        |                   |                                                                               |
 | integer | Q3   | Total number of male workers   | . <= ${Q2}        | Total number of male workers should not exceed the total number of workers!   |
 | integer | Q4   | Total number of female workers | . <= ${Q2}        | Total number of female workers should not exceed the total number of workers! |
+| survey |
 
 **Examples of More Advanced Validation Criteria**
 
