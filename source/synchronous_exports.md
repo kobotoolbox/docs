@@ -1,4 +1,5 @@
 ﻿# Connecting to your data using synchronous exports
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a41c940878a7d7b76a9f915ce3005dd9fb4d0a0a/source/synchronous_exports.md" class="reference">7 Jul 2022</a>
 
 In this article, we'll explore how to use the synchronous exports feature to
 connect your project data to programs such as Microsoft PowerBI, Excel, Google
