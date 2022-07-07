@@ -23,11 +23,11 @@ If a question requires that you attach a file such as a PDF, you can use the
 
 Adding media questions on the form is straight simple:
 
--   In the KoboToolbox Formbuilder, click the <i class="k-icon k-icon-plus"></i>
-    button to add a new question
--   Type the question text, for example “Take a picture of the housing unit”,
-    then click **ADD QUESTION** or press ENTER on your keyboard
--   Choose the question type
+- In the KoboToolbox formbuilder, click the <i class="k-icon k-icon-plus"></i>
+  button to add a new question
+- Type the question text, for example “Take a picture of the housing unit”, then
+  click **ADD QUESTION** or press ENTER on your keyboard
+- Choose the question type
 
 ![Adding media question](images/photo_audio_video_file/add.gif)
 
@@ -81,33 +81,35 @@ including focus group discussions and key informant interviews.
 You can turn on background audio recording in the formbuilder by clicking on
 Layout & Settings.
 
-![Backgrouns audio](images/photo_audio_video_file/background_audio.png)
+![Background audio](images/photo_audio_video_file/background_audio.png)
 
-In XLSForm, you can add the background recording feature by using the
-background-audio meta question type as follows:
+In XLSForm, you can enable background recording with the background-audio
+question type. This is considered a "meta" question type and therefore no
+`label` is required, only a `name`. Audio quality can be configured under the
+`parameters` column, as explained [here](recording_intervews.md).
 
 | type             | name             | label |
 | :--------------- | :--------------- | :---- |
 | background-audio | background_audio |       |
 | survey           |
 
-<section class="note">
+<p class="note">
 
-Note: It is not possible to record audio using “Audio” question type while
-background audio recording is underway on the form. When background audio
-recording is on, all “Audio” question types are deactivated.
+It is not possible to record audio using “Audio” question type while background
+audio recording is underway on the form. When background audio recording is on,
+all “Audio” question types are deactivated.
 
-</section>
+</p>
 
-Read more about background audio recording
-[on the linked article](recording-interviews.md).
+You can read more about background audio recording
+[here](recording-interviews.md).
 
 ## Lowering the file size of collected media
 
-If your form will be collecting a lot of media, you might find it difficult to
-upload them to the KoboToolbox Server or download the media attachments from it.
-This is why it is always a good idea to manage the file sizes of collected media
-files such as images and videos.
+If you are collecting a lot of media in your project, you might have challenges
+trying to uploading them to KoboToolbox depending on the speed of your internet
+connection. This is why it is always a good idea to manage the file sizes of
+collected media files such as images and videos.
 
 You can define the maximum size of images you collect using the “Photo” question
 type by going to the question settings and setting the “max-pixels” setting in
@@ -120,28 +122,28 @@ follows:
 
 | type   | name  | label         | parameters     |
 | :----- | :---- | :------------ | :------------- |
-| photo  | photo | Capture photo | max-pixels=480 |
+| image  | photo | Capture photo | max-pixels=480 |
 | survey |
 
 In KoboCollect, you can also choose the video quality and photo size through the
 Form Management section of the project settings.
 
-Read more about how to lower file sizes in
-[this linked article](lower_file_size.md).
+You can read more about how to lower file sizes [here(lower_file_size.md).
 
 ## Limiting uploadable file types for “File” question type
 
-When you add a “File” question type, any type of file can be uploaded by the
-person entering the data. In order to control the kind of files that can be
-uploaded, follow the following steps in the Formbuilder:
+All file types are accepted by default for the "File" question type. In the
+formbuilderm you can restrict the kind of files that can be uploaded by doing
+the following:
 
--   Go to the settings of the “File” question
--   Under the “Accepted Files” box, enter the file extensions of the files you
-    would like to allow, separated by a comma e.g. .doc, .pdf, .xlsx
+- Go to the settings of the “File” question
+- Under the “Accepted Files” box, enter the file extensions of the files you
+  would like to allow, separated by a comma e.g. .doc, .pdf, .xlsx
 
 ![File types](images/photo_audio_video_file/file_types.png)
 
-In XLSForm, you can limit the uploadable file types as follows:
+In XLSForm, you can limit acepted file types by specifying file extensions: in
+the `body::accept` column as follows:
 
 | type   | name | label          | body::accept |
 | :----- | :--- | :------------- | :----------- |
