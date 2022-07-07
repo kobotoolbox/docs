@@ -44,6 +44,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   acknowledge
   number_decimal_range
   date_time
+  photo_audio_video_file
   rating_ranking
   select_one_and_select_many
   calculate_questions
