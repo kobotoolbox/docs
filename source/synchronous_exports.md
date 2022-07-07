@@ -1,6 +1,6 @@
 ﻿# Connecting to your data using synchronous exports
 
-In this article, we’ll explore how to use the synchronous exports feature to
+In this article, we'll explore how to use the synchronous exports feature to
 connect your project data to programs such as Microsoft PowerBI, Excel, Google
 Sheets, Tableau and others.
 
@@ -54,8 +54,8 @@ data.
 ![Asset UID](/images/synchronous_exports/asset-uid.png)
 
 - Open a new tab in your browser and paste the following URL
-  https://{kf_url}/api/v2/assets/{asset_uid}/export-settings/ Replace
-  {asset_uid} with your project’s asset UID and {kf_url} with the KPI URL of
+  `https://{kf_url}/api/v2/assets/{asset_uid}/export-settings/`. Replace
+  `{asset_uid}` with your project's asset UID and `{kf_url}` with the KPI URL of
   [the server you are using](server.md) (`kf.kobotoolbox.org` for the
   non-humanitarian server or `kobo.humanitarianresponse.info` for the
   humanitarian server).
@@ -63,7 +63,7 @@ data.
 ![Export settings](/images/synchronous_exports/export-settings-url.png)
 
 - Locate the name of the export setting you created in the interface. The two
-  URLs, `data_url_csv` and `data_url_xlsx`, are your project’s synchronous
+  URLs, `data_url_csv` and `data_url_xlsx`, are your project's synchronous
   export links, one for a CSV file and the other for an Excel file.You can
   experiment with each to see which is best suited to your requirements.
 
@@ -148,5 +148,5 @@ that have been placed on the synchronous export feature:
   means that projects with many submissions or projects with many questions will
   need to add a query constraint in the export settings to limit the number of
   submissions included in the synchronous export or filter out questions that
-  aren’t needed. If this is the case for you, please refer to the
+  aren't needed. If this is the case for you, please refer to the
   [forum thread here](https://community.kobotoolbox.org/t/how-to-download-data-between-two-dates-from-date-to-date/25569/4).
