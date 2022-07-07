@@ -114,6 +114,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   managing_permissions
   creating_custom_reports
   export_gps
+  synchronous_exports
   pulling_data_into_excelquery
   howto_edit_single_submissions
   howto_edit_multiple_submissions
