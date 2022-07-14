@@ -52,6 +52,7 @@ Below is the equivalent form logic in XLSForm syntax:
 | text        | name    | What is your name?                                 |                   |
 | integer     | age     | How old are you?                                   |                   |
 | end_group   |         |                                                    |                   |
+| survey      |
 
 <p class="note">
   You can download the example XLSForm
