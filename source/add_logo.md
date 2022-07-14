@@ -17,9 +17,10 @@ To begin:
 
 **survey**
 
-| type | name | label | media::image |
-| :--- | :--- | :---- | :----------- |
-| note | logo |       | logo.jpg     |
+| type   | name | label | media::image |
+| :---   | :--- | :---- | :----------- |
+| note   | logo |       | logo.jpg     |
+| survey |
 
 3. When you're done editing the form, upload the XLSForm to either a new or
    existing project.
