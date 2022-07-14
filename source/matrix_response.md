@@ -23,28 +23,26 @@ question.
 1. Go to your formbuilder and click on “Add question”
 2. Select ‘Question Matrix’
 
-    ![image](/images/matrix_response/question_matrix.png)
+   ![image](/images/matrix_response/question_matrix.png)
 
 3. Click on the gear icon in each column to set the question type.
 
-    ![image](/images/matrix_response/question_type.png)
+   ![image](/images/matrix_response/question_type.png)
 
 4. Select the question type
 
 5. Add the Column label & response label
 
-    ![image](/images/matrix_response/label_response.png)
+   ![image](/images/matrix_response/label_response.png)
 
 6. Select the gear icon within ‘Row’ to define the row label
 
-    ![image](/images/matrix_response/row.png)
+   ![image](/images/matrix_response/row.png)
 
 ## Create a Question Matrix in XLSForm
 
 Alternatively, you can also build a Matrix Question in a XLSForm by following
 the instructions as outlined in the images below:
-
-**survey**
 
 | type             | name | label                                | required | kobo--matrix_list |
 | :--------------- | :--- | :----------------------------------- | :------- | :---------------- |
@@ -52,8 +50,7 @@ the instructions as outlined in the images below:
 | select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |
 | integer          | Q2   | Q2. Number of assets                 | TRUE     |                   |
 | end_kobomatrix   |      |                                      |          |                   |
-
-**choices**
+| survey           |
 
 | list_name | name | label |
 | :-------- | :--- | :---- |
@@ -62,14 +59,17 @@ the instructions as outlined in the images below:
 | assets    | tv   | TV    |
 | yn        | yes  | Yes   |
 | yn        | no   | No    |
-
-**settings**
+| choices   |
 
 | style                        |
 | :--------------------------- |
 | theme-grid no-text-transform |
+| settings                     |
 
-<p class="note">This method uses <code>begin_kobomatrix</code>, <code>end_kobomatrix</code> and <code>kobo—matrix_list</code>.</p>
+<p class="note">
+  This method uses <code>begin_kobomatrix</code>,
+  <code>end_kobomatrix</code> and <code>kobo—matrix_list</code>.
+</p>
 
 Following the steps above, you should see the question matrix shown in the
 screenshot below (In [Enketo](data_through_webforms.md) only):
@@ -79,11 +79,10 @@ screenshot below (In [Enketo](data_through_webforms.md) only):
 It is also possible to include `relevant` and `constraint` conditions within the
 matrix as follows:
 
-**survey**
-
 | type             | name | label                                | required | kobo--matrix_list | relevant      | constraint |
 | :--------------- | :--- | :----------------------------------- | :------- | :---------------- | :------------ | :--------- |
 | begin_kobomatrix | M1   | Items                                |          | assets            |               |            |
 | select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |               |            |
 | integer          | Q2   | Q2. Number of assets                 | TRUE     |                   | ${Q1} = 'yes' | . > 2      |
 | end_kobomatrix   |      |                                      |          |                   |               |            |
+| survey           |

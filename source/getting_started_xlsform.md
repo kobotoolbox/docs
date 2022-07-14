@@ -6,10 +6,10 @@ Feb 2022</a>
 
 This article will show you how to:
 
--   Set up an XLSForm using Microsoft Excel.
--   Upload and preview the XLSForm in KoboToolbox.
--   Download a form you have been creating using the KoboToolbox formbuilder as
-    an XLSForm.
+- Set up an XLSForm using Microsoft Excel.
+- Upload and preview the XLSForm in KoboToolbox.
+- Download a form you have been creating using the KoboToolbox formbuilder as an
+  XLSForm.
 
 <video controls>
   <source
@@ -88,6 +88,7 @@ Add the final question as follows:
 | type    | name | label            |
 | :------ | :--- | :--------------- |
 | integer | age  | How old are you? |
+| survey  |
 
 ## Adding choices
 
@@ -145,16 +146,16 @@ KoboToolbox allows you to download a form you have been creating using the
 formbuilder as an XLSForm file. This might be useful for several reasons such
 as:
 
--   You need to add some advanced features that are not yet supported in the
-    formbuilder.
--   You would like to make changes to the form that might be easier through
-    XLSForm (such as quickly duplicating a large number of questions).
--   Your computer resources such as your browser or internet connection.
--   You would like to collaborate on the form with members of your team and you
-    prefer sharing the XLSForm.
--   Manage versioning of your form outside of the KoboToolbox platform.
--   You are needing assistance from the support team and need to share your form
-    with us.
+- You need to add some advanced features that are not yet supported in the
+  formbuilder.
+- You would like to make changes to the form that might be easier through
+  XLSForm (such as quickly duplicating a large number of questions).
+- Your computer resources such as your browser or internet connection.
+- You would like to collaborate on the form with members of your team and you
+  prefer sharing the XLSForm.
+- Manage versioning of your form outside of the KoboToolbox platform.
+- You are needing assistance from the support team and need to share your form
+  with us.
 
 To download the XLSForm while you are on the Project List view:
 
@@ -178,5 +179,5 @@ Project List view:
 
 Go to the following links to learn more about XLSForm:
 
--   [Official XLSForm documentation at XLSForm.org](https://xlsform.org)
--   [Detailed form building documentation from ODK](https://docs.getodk.org/)
+- [Official XLSForm documentation at XLSForm.org](https://xlsform.org)
+- [Detailed form building documentation from ODK](https://docs.getodk.org/)

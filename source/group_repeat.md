@@ -7,14 +7,14 @@ Feb 2022</a>
 KoboToolbox supports grouping questions when designing a survey form. Users may
 need to group questions due to various reasons:
 
--   **Make the questionnaire systematic:** You could group your questions that
-    have special linkage or attributes as Identifier, Section A, Section I, etc.
--   **Display a set of questions per page:** Grouped questions can be displayed
-    on separate pages (or screens) during data collection.
--   **Skip a group of questions:** Rather than adding the same skip logic to
-    each individual question, group the questions and add the skip logic to the
-    group instead.
--   **Create a roster:** Repeat grouped questions for household surveys, etc.
+- **Make the questionnaire systematic:** You could group your questions that
+  have special linkage or attributes as Identifier, Section A, Section I, etc.
+- **Display a set of questions per page:** Grouped questions can be displayed on
+  separate pages (or screens) during data collection.
+- **Skip a group of questions:** Rather than adding the same skip logic to each
+  individual question, group the questions and add the skip logic to the group
+  instead.
+- **Create a roster:** Repeat grouped questions for household surveys, etc.
 
 ## Grouping a set of questions
 
@@ -61,7 +61,10 @@ question. You should see a plus sign (+) under the question. In the image below,
 I have hovered my mouse over the last question (Hobby). Press the plus sign that
 is inside the group (marked with a red box) to add a new question.
 
-<p class="note">If you press the other plus sign (+) which is located outside the group, you will be adding a question outside the group.</p>
+<p class="note">
+  If you press the other plus sign (+) which is located outside the group, you
+  will be adding a question outside the group.
+</p>
 
 ![image](/images/group_repeat/add_questions.png)
 
@@ -107,8 +110,6 @@ Alternatively, you could also group a set of questions and display them on the
 same screen through XLSForm (if you are comfortable with XLSForm) using the
 `field-list` option under the `appearance` column:
 
-**survey**
-
 | type           | name  | label                       | appearance |
 | :------------- | :---- | :-------------------------- | :--------- |
 | begin_group    | DC    | Demographic Characteristics | field-list |
@@ -117,13 +118,13 @@ same screen through XLSForm (if you are comfortable with XLSForm) using the
 | select_one Sex | Sex   | Sex                         |            |
 | text           | Hobby | Hobby                       |            |
 | end_group      |       |                             |            |
-
-**choices**
+| survey         |
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
+| choices   |
 
 ## Ungrouping a set of questions
 
@@ -142,7 +143,10 @@ The group disappears but the questions will remain.
 
 ![image](/images/group_repeat/ungroup_results.png)
 
-<p class="note">If the <strong>DELETE EVERYTHING</strong> button is pressed, the group and all its questions will be deleted.
+<p class="note">
+  If the <strong>DELETE EVERYTHING</strong> button is pressed, the group and all
+  its questions will be deleted.
+</p>
 
 ## Skipping a group of questions
 
@@ -158,8 +162,6 @@ Then select **Skip Logic** and configure as shown in the image below:
 
 Alternatively, you could also do this in XLSForm:
 
-**survey**
-
 | type           | name  | label                                                  | relevant    |
 | :------------- | :---- | :----------------------------------------------------- | :---------- |
 | select_one Q1  | Q1    | Q1. Are the any eligible respondents in the household? |             |
@@ -169,8 +171,7 @@ Alternatively, you could also do this in XLSForm:
 | select_one Sex | Sex   | Sex                                                    |             |
 | text           | Hobby | Hobby                                                  |             |
 | end_group      |       |                                                        |             |
-
-**choices**
+| survey         |
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |
@@ -178,6 +179,7 @@ Alternatively, you could also do this in XLSForm:
 | Q1        | 2    | No     |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
+| choices   |
 
 ## Creating a roster (repeating group of questions)
 
@@ -194,15 +196,19 @@ necessary** (marked under the red box as shown in the image below).
 During an interview the enumerators will be able to enter the details to these
 grouped questions as many times as required.
 
-<p class="note">The resulting data structure from a roster is different from the data you normally see with other variables or groups. When downloading your data, you will see a different sheet for each roster (i.e. the number of additional sheets corresponds with the number of repeating groups that you have within your survey form).</p>
+<p class="note">
+  The resulting data structure from a roster is different from the data you
+  normally see with other variables or groups. When downloading your data, you
+  will see a different sheet for each roster (i.e. the number of additional
+  sheets corresponds with the number of repeating groups that you have within
+  your survey form).
+</p>
 
 ## Controlling the loop of repetition in a roster
 
 Sometimes your survey may demand you to control the repeating of questions in a
 roster with a value of a certain variable. In this case, you should modify your
 survey in XLSForm as the formbuilder does not currently support this feature.
-
-**survey**
 
 | type           | name  | label                                                   | repeat_count |
 | :------------- | :---- | :------------------------------------------------------ | :----------- |
@@ -213,15 +219,19 @@ survey in XLSForm as the formbuilder does not currently support this feature.
 | select_one Sex | Sex   | Sex                                                     |              |
 | text           | Hobby | Hobby                                                   |              |
 | end_repeat     |       |                                                         |              |
-
-**choices**
+| survey         |
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
+| choices   |
 
-<p class="note">Instead of having an indefinite number of repeat group iterations, this method will control the number of iterations based on the value in the <code>repeat_count</code> column.</p>
+<p class="note">
+  Instead of having an indefinite number of repeat group iterations, this method
+  will control the number of iterations based on the value in the
+  <code>repeat_count</code> column.
+</p>
 
 ## Using information to a roster from a preceding roster
 
@@ -232,8 +242,6 @@ such survey form is possible in KoboToolbox using an
 function in the XLSForm. For example, you could use the name that has been
 recorded in a roster (previously) to link with other repeating group questions
 (like education etc.):
-
-**survey**
 
 | type                 | name              | label                                           | calculation                                  | repeat_count    |
 | :------------------- | :---------------- | :---------------------------------------------- | :------------------------------------------- | :-------------- |
@@ -249,8 +257,7 @@ recorded in a roster (previously) to link with other repeating group questions
 | calculate            | name_individual   |                                                 | indexed-repeat(${Name}, ${DC}, position(..)) |                 |
 | select_one edu_level | edu_level         | What is ${name_individual}'s level of education |                                              |                 |
 | end_repeat           |                   |                                                 |                                              |                 |
-
-**choices**
+| survey               |
 
 | list_name | name | label                    |
 | :-------- | :--- | :----------------------- |
@@ -259,6 +266,7 @@ recorded in a roster (previously) to link with other repeating group questions
 | edu_level | 1    | Primary                  |
 | edu_level | 2    | Secondary                |
 | edu_level | 3    | Higher Secondary & Above |
+| choices   |
 
 Screen seen while [collecting data in Enketo](data_through_webforms.md):
 
@@ -280,8 +288,6 @@ nested repeat form as shown in the image below:
 
 Alternatively, you could also do this in XLSForm:
 
-**survey**
-
 | type           | name            | label                               | calculation                                  | repeat_count |
 | :------------- | :-------------- | :---------------------------------- | :------------------------------------------- | :----------- |
 | begin_repeat   | DC              | Demographic Characteristics         |                                              |              |
@@ -294,19 +300,25 @@ Alternatively, you could also do this in XLSForm:
 | text           | Hobbies         | Hobbies of ${name_individual}       |                                              |              |
 | end_repeat     |                 |                                     |                                              |              |
 | end_repeat     |                 |                                     |                                              |              |
-
-**choices**
+| survey         |
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
+| choices   |
 
 Screen seen while collecting data in Enketo:
 
 ![image](/images/group_repeat/nested_repeat_enketo.png)
 
-<p class="note">You are able to collect data using nested repeats in both <a class="reference" href="data_through_webforms.html">Enketo</a> and the <a class="reference" href="kobocollect-android.html">Collect Android app</a>. If you are using Collect, please ensure that you are using the latest version as earlier versions may not support this.</p>
+<p class="note">
+  You are able to collect data using nested repeats in both
+  <a class="reference" href="data_through_webforms.html">Enketo</a> and the
+  <a class="reference" href="kobocollect-android.html">Collect Android app</a>.
+  If you are using Collect, please ensure that you are using the latest version
+  as earlier versions may not support this.
+</p>
 
 ## Downloading Data from Repeat Groups
 

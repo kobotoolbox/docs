@@ -11,87 +11,96 @@ upload it to Kobo.
 
 Here are detailed instructions on how you can add another language to your form:
 
--   Create your form in the default language. This should be the language that
-    the person responsible for designing the questionnaire is most comfortable
-    with. When you are done, or when a portion of the form has been created,
-    save it. You'll be returned to the draft form's project dashboard.
+- Create your form in the default language. This should be the language that the
+  person responsible for designing the questionnaire is most comfortable with.
+  When you are done, or when a portion of the form has been created, save it.
+  You'll be returned to the draft form's project dashboard.
 
--   Export the form to XLS.
+- Export the form to XLS.
 
--   Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all
-    work) (If you're in Excel it's possible you have to take the file out of
-    Protected View first.
-    [See here](https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&ui=en-US&rs=en-US&ad=US).)
-    Your spreadsheet will have three sheets (see the little tabs at the bottom):
-    **survey**, **choices**, **settings**. Stay in the **survey** sheet for now.
+- Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all
+  work) (If you're in Excel it's possible you have to take the file out of
+  Protected View first.
+  [See here](https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&ui=en-US&rs=en-US&ad=US).)
+  Your spreadsheet will have three sheets (see the little tabs at the bottom):
+  **survey**, **choices**, **settings**. Stay in the **survey** sheet for now.
 
--   Find the column called `label`. This is where your original question labels
-    are stored. Insert another column to the right of label. In the header
-    (first row) of this new column, write `label::language (code)`, for example
-    `label::Français (fr)` or `label::English (en)`.
+- Find the column called `label`. This is where your original question labels
+  are stored. Insert another column to the right of label. In the header (first
+  row) of this new column, write `label::language (code)`, for example
+  `label::Français (fr)` or `label::English (en)`.
 
-<p class="note">You can change the size of your columns, add colors or change the font size, none of these will affect your form.</p>
+<p class="note">
+  You can change the size of your columns, add colors or change the font size,
+  none of these will affect your form.
+</p>
 
--   Then, if you have hints in your form, the same needs to apply to the `hint`
-    column, for example `hint::Français (fr)` or `hint::English (en)`.
-
-**survey**
+- Then, if you have hints in your form, the same needs to apply to the `hint`
+  column, for example `hint::Français (fr)` or `hint::English (en)`.
 
 | type             | name           | label                          | relevant                  |
 | :--------------- | :------------- | :----------------------------- | :------------------------ |
 | text             | full_name      | What is your name?             |                           |
 | select_one yesno | children_yesno | Do you have any children?      |                           |
 | integer          | children_count | How many children do you have? | ${children_yesno} = 'yes' |
+| survey           |
 
--   Now add your translations for every row inside the `label::language (code)`
-    column. When you are done, make sure you didn't skip any questions (for
-    every field that has text inside the label column there should be text
-    inside the `label::language (code)` column). You can find the official
-    2-character language codes (subtags)
-    [here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+- Now add your translations for every row inside the `label::language (code)`
+  column. When you are done, make sure you didn't skip any questions (for every
+  field that has text inside the label column there should be text inside the
+  `label::language (code)` column). You can find the official 2-character
+  language codes (subtags)
+  [here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
 
-<p class="note">Tip: Copy-paste the original label column and then make changes to the translations so you don't leave anything blank by accident: It's better to have something showing in the wrong language than not having a blank question in some language. <em>You can repeat this step and add as many languages as you like, each in their separate columns and with a different name inside <code>label::language (code)</code>.</em></p>
-
-**survey**
+<p class="note">
+  Tip: Copy-paste the original label column and then make changes to the
+  translations so you don't leave anything blank by accident: It's better to
+  have something showing in the wrong language than not having a blank question
+  in some language.
+  <em
+    >You can repeat this step and add as many languages as you like, each in
+    their separate columns and with a different name inside
+    <code>label::language (code)</code>.</em
+  >
+</p>
 
 | type             | name           | label:English (en)             | label::Français (fr)           | relevant                  |
 | :--------------- | :------------- | :----------------------------- | :----------------------------- | :------------------------ |
 | text             | full_name      | What is your name?             | Quel est votre nom?            |                           |
 | select_one yesno | children_yesno | Do you have any children?      | Avez-vous des enfants?         |                           |
 | integer          | children_count | How many children do you have? | Combien des enfants avez-vous? | ${children_yesno} = 'yes' |
+| survey           |
 
--   Now switch to the **choices** sheet of your file, if you have one.
+- Now switch to the **choices** sheet of your file, if you have one.
 
--   In the **choices** sheet you have another column called `label`. Repeat
-    steps 5 and 6. Make sure that you use the exact same spelling for
-    `label::language (code)`. For example, `label::Francais (fr)` and
-    `label::Français (fr)` are not identical.
-
-**choices**
+- In the **choices** sheet you have another column called `label`. Repeat steps
+  5 and 6. Make sure that you use the exact same spelling for
+  `label::language (code)`. For example, `label::Francais (fr)` and
+  `label::Français (fr)` are not identical.
 
 | list_name | name | label::English (en) | label::Français (fr) |
 | :-------- | :--- | :------------------ | :------------------- |
 | yesno     | yes  | Yes                 | Oui                  |
 | yesno     | no   | No                  | Non                  |
+| choices   |
 
--   In the **settings** sheet, underneath `form_title` edit the text of your
-    form's title to something like "My form (English and French)" so you can
-    easily identify it later.
-
-**settings**
+- In the **settings** sheet, underneath `form_title` edit the text of your
+  form's title to something like "My form (English and French)" so you can
+  easily identify it later.
 
 | form_title                   |
 | :--------------------------- |
 | My form (English and French) |
+| settings                     |
 
--   Save your file and close Excel.
+- Save your file and close Excel.
 
--   Return to KoboToolbox and click on **Replace with XLS**, then upload your
-    updated XLSForm. Choose the file you just finished editing and click **OK**.
+- Return to KoboToolbox and click on **Replace with XLS**, then upload your
+  updated XLSForm. Choose the file you just finished editing and click **OK**.
 
--   Open the form you just uploaded and click on **Preview Form**. At the top
-    next to **Choose Language** click on the dropdown. It will have a default
-    (your original language) as well as the new languages you just added.
+- Open the form you just uploaded and click on **Preview Form**. At the top next
+  to **Choose Language** click on the dropdown. It will have a default (your
+  original language) as well as the new languages you just added.
 
 ## Translating to Tamil, Nepali, Hindi, etc. scripts
 

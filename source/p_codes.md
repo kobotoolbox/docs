@@ -20,11 +20,12 @@ following:
 
 `if(string-length(${name_of_pcode_column}) != 0,jr:choice-name(${name_of_pcode_column},'${name_of_pcode_column}'),'(unspecified name_of_pcode_column)')`
 
-<p class="note">This formula will extract the "Label" (i.e. the name of the location) of the entry, and you will in your exported results get both the name and the p-code.</p>
+<p class="note">
+  This formula will extract the "Label" (i.e. the name of the location) of the
+  entry, and you will in your exported results get both the name and the p-code.
+</p>
 
 ## Example with 3 admin levels, using cascading lists
-
-**survey**
 
 | type              | name         | label   | choice_filter                                    | calculation                                                                                                               |
 | :---------------- | :----------- | :------ | :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
@@ -34,8 +35,7 @@ following:
 | calculate         | name_admin1  |         |                                                  | if(string-length(${pcode_admin1}) != 0, jr:choice-name(${pcode_admin1}, '${pcode_admin1}'), '(unspecified pcode_admin1)') |
 | calculate         | name_admin2  |         |                                                  | if(string-length(${pcode_admin2}) != 0, jr:choice-name(${pcode_admin2}, '${pcode_admin2}'), '(unspecified pcode_admin2)') |
 | calculate         | name_admin3  |         |                                                  | if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, '${pcode_admin3}'), '(unspecified pcode_admin3)') |
-
-**choices**
+| survey            |
 
 | list_name | name | label       | state | county |
 | :-------- | :--- | :---------- | :---- | :----- |
@@ -53,3 +53,4 @@ following:
 | admin3    | 22   | Redmond     | 12    | 15     |
 | admin3    | 23   | Tacoma      | 12    | 16     |
 | admin3    | 24   | King        | 12    | 16     |
+| choices   |
