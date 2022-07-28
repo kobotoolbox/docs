@@ -68,3 +68,13 @@ as a whole, such as [sharing settings](managing_permissions.md),
 [connected projects](dynamic_data_attachment.md),
 [REST services](rest_services.md) and [project media](media.md). You can learn
 more about these settings by clicking on the linked articles.
+
+<p class="note">
+  Download an XLSForm with examples from this article
+  <a
+    download
+    class="reference"
+    href="./_static/files/form_meta/form_meta.xlsx"
+    >here</a
+  >.
+</p>
