@@ -1,39 +1,37 @@
 # Creating a New Form
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/new_form.md" class="reference">15 Feb 2022</a>
 
-You can **create a new form** in four different ways. When you click on the New
-button, your options are:
+To create a new form, click the **NEW** button on the **Project List View** (the
+first screen after logging in to KoboToolbox).
 
-1. **Build from scratch** To create a new form from scratch, you can input
-   project details and click **Create Project**.
+You will be presented with 4 different options for creating your new form:
 
-2. **Use a template** To use a template, you need to first go to Library and
-   create one.
+a. **Build from scratch** Choose this option if you want to build your form
+using the formbuilder. After selecting this option, you will be required to
+input the project details. After entering them, click **CREATE PROJECT**.
 
-3. **Upload an XLSForm** Import an existing form from an external file in the
-   [XLSForm format](http://xlsform.org/en), for example when sharing form drafts
-   between colleagues.
+b. **Use a template** Use this option if you have a template in the Library
+section that you would like to build upon using the formbuilder. Learn more
+about the Library section [here](question_library.md)
 
-4. **Import an XLSForm via URL** Enter a valid XLSForm URL to import an existing
-   form. For instructions, visit [Importing an XLSForm via URL](xls_url.md).
+c. **Upload an XLSForm** Import an existing form from an external file in the
+[XLSForm format](http://xlsform.org/en). for example when sharing form drafts
+between colleagues. You can learn more about creating forms using the XLSForm
+standard [here](getting_started_xlsform.md).
+
+d. **Import an XLSForm via URL** Use this option to import an XLSForm file that
+is being hosted online, for example Google Sheets or Dropbox. For instructions,
+visit [Importing an XLSForm via URL](xls_url.md).
 
 ![image](/images/new_project/create_new.gif)
 
-<p class="note">When creating very large forms (1000+ questions and high complexity), there is the possibility of the page hanging due to several reasons that are not limited to the browser, CPU, Internet connectivity, among others. In these cases, we recommend that you use XLSForm which is not constrained by this limitation.<p>
+## The Project List View
 
-The **Project List View** shows all of the projects that have been created in,
-and shared with your account. To open a project, just click on its title. In
-this view, you can also organize your projects (add project tags, archive, or
+The **Project List View** shows all of the projects that you have been created,
+and those shared with your account. To open a project, just click on its title.
+In this view, you can also organize your projects (add project tags, archive, or
 delete), download a project's form, or clone the form to use in a new project.
 
+To open a project for editing in the formbuilder: Move your mouse over the title
+of the project Click the <i class="k-icon k-icon-edit"></i> Edit button.
+
 ![image](/images/new_project/list_view.gif)
-
-**Downloads** are possible in two different formats:
-
-1. **XLS** Allowing you to share it with others through the XLSForm format, or
-   edit it in a spreadsheet program such as Excel.
-
-2. **XML** Allowing you to manually copy it to an Android device running
-   KoboCollect (only recommended for advanced users).
-
-![image](/images/new_project/download.gif)
