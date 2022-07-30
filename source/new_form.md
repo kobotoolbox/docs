@@ -1,4 +1,5 @@
 # Creating a New Form
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/751da2e177614be1430645c2959481a06d7edcea/source/new_form.md" class="reference">30 Jul 2022</a>
 
 To create a new form, click the **NEW** button in the **Projects** tab (the
 first screen after logging in to KoboToolbox).
