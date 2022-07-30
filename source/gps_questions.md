@@ -1,4 +1,5 @@
 # GPS Question types
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/27e85949b3f42b42dcb60701fbfc80aadddbb616/source/gps_questions.md" class="reference">30 Jul 2022</a>
 
 In KoboToolbox, you can collect GPS coordinates as part of your data collection
 form. There are 3 GPS question types you can use, namely "Point", "Line" and
