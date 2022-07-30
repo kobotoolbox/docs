@@ -72,7 +72,7 @@ following example:
 | survey  |
 
 <p class="note">
-Note: When adding a `range` question to an xlsform, the start, end and step parameters are added in the `parameters` column.
+Note: When adding a `range` question to an xlsform, the `start`, `end` and `step` parameters are added in the `parameters` column.
 </p>
 
 ## Translating question labels
@@ -103,7 +103,7 @@ questions in XLSForm under the appearances column as in the following examples:
 | decimal | bearing         | Capture bearing                                          | bearing       |                      |
 | range   | vertical_rating | Rate the effectiveness of the project from 1 to 5        | vertical      | start=1 end=5 step=1 |
 | range   | picker_rating   | Rate the effectiveness of the project from 1 to 5        | picker        | start=1 end=5 step=1 |
-| range   | star_rating     | Rate the effectiveness of the project from 1 to 5        | rating        | tart=1 end=5 step=1  |
+| range   | star_rating     | Rate the effectiveness of the project from 1 to 5        | rating        | start=1 end=5 step=1 |
 | survey  |
 
 ## Limits on “Number” and “Decimal” questions
