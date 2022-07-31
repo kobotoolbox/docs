@@ -1,7 +1,7 @@
 # Number, Decimal and Range Question Types
 
 When creating questions with numeric responses, you can choose between the
-“Number”, “Decimal” and “Range” question types in KoboToolbox.
+"Number", "Decimal" and "Range" question types in KoboToolbox.
 
 This article describes these question types and how to use them.
 
@@ -20,19 +20,15 @@ values. By default, the "Range" question type displays a sliding scale that
 allows users to pick a number. When setting it up, you must define the `start`
 and `end` values of the range as well as the `step` between them.
 
-## How to set them up
+## Setting up in formbuilder
 
 To set up the "Number" and "Decimal" question types:
 
-### Setting up in Formbuilder
-
-To set up the “Number” and “Decimal” question types:
-
 - In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
   a new question.
-- Type the question’s label. For example, “How many people live in this
-  household?”. Then click “+ ADD QUESTION” (or press Enter).
-- Choose the question type (“Number” or “Decimal”).
+- Type the question’s label. For example, "How many people live in this
+  household?". Then click "+ ADD QUESTION" (or press Enter).
+- Choose the question type ("Number" or "Decimal").
 
 ![Setting up number questions](/images/number_decimal_range/setup_number_question.gif)
 
@@ -58,11 +54,10 @@ To add a "Range" question type:
   Chinese, Arabic or Nepali.
 </p>
 
-### Setting up in XLSForm
+## Setting up in XLSForm
 
-In XLSForm, you can add “Number”, “Decimal” and “Range” questions by using
-`integer`, `decimal` and `range` question types, respectively as shown in the
-following example:
+In XLSForm, you can add "Number", "Decimal" and "Range" questions by using
+`integer`, `decimal` and `range` question types respectively:
 
 | type    | name     | label                                             | parameters           |
 | :------ | :------- | :------------------------------------------------ | :------------------- |
@@ -72,17 +67,18 @@ following example:
 | survey  |
 
 <p class="note">
-Note: When adding a `range` question to an xlsform, the `start`, `end` and `step` parameters are added in the `parameters` column.
+  When adding a <code>range</code> question to an XLSForm, the
+  <code>start</code>, <code>end</code> and <code>step</code> parameters are
+  added in the <code>parameters</code> column.
 </p>
 
 ## Translating question labels
 
 For translating question labels into other languages through the KoboToolbox UI,
-refer to the support article,
-[Adding Another Language in the Project Dashboard](language_dashboard.md), or
+refer to the support article, [here](language_dashboard.md), or
 [here](language_xls.md) if you are creating your form using XLSForm.
 
-## How they are displayed by default on web forms and KoboCollect
+## Default appearance in web forms and KoboCollect
 
 ![Number, Decimal and Range questions](/images/number_decimal_range/number_decimal_range_default.png)
 
@@ -106,49 +102,50 @@ questions in XLSForm under the appearances column as in the following examples:
 | range   | star_rating     | Rate the effectiveness of the project from 1 to 5        | rating        | start=1 end=5 step=1 |
 | survey  |
 
-## Limits on “Number” and “Decimal” questions
+## Limits on "Number" and "Decimal" questions
 
-In KoboCollect:
+### KoboCollect
 
-- “Number” question entries are limited to a maximum of 9 characters.
-- “Decimal” question entries are limited to a maximum of 15 characters. Note:
-  Negative signs and decimal points count towards the character limit.
-
-In Enketo:
-
-- “Number” and “Decimal” question entries are limited to a maximum of 16
-  significant figures recorded (regardless of how long the entered number was).
-
-Note: Please refer to examples below to see how this affects positive/negative
-integers and decimal numbers beyond 16 digits.
-
-**Example with Positive or Negative Integer**: If a positive or negative integer
-of 22 significant figures is entered, the form will record a 16 digit number
-with scientific notation.
-
-In this example, the number **±9845284926482357445633** would be recorded as
-**±9.845284926482358e+21**
-
-Example with Decimal: If a decimal number of 22 significant figures is entered,
-the form will record a truncated 16 digit number, rounded to the 16th digit.
-
-In this example, the number **±9845284926.482357445633** will be recorded as
-**±9845284926.482357**
-
-If your survey requires numeric responses that will exceed 15 digits, you can
-use a different approach to bypass the technical limits for “Number” and
-“Decimal” questions listed above.
-
-To set up survey questions with numeric responses that are greater than 15
-digits, follow the steps listed below:
-
-- Instead of using a “Number” question, add a “Text” question to your form.
-- Go to the Appearance setting and select “numbers”. This change will make sure
-  that your “Text” question will display the number keyword, instead of the
-  standard text keyboard.
+The "Number" question type is limited to a maximum of 9 characters and the
+"Decimal" question type is limited to a maximum of 15 characters.
 
 <p class="note">
-  Download an XLSForm with examples from this article
+  Negative signs and decimal points count towards the character limit.
+</p>
+
+### Enketo
+
+Both "Number" and "Decimal" question types are limited to a maximum of 16
+significant figures.
+
+If a positive or negative integer of 22 significant figures is entered, the form
+will record a 16 digit number with scientific notation. For example, the number
+`±9845284926482357445633` would be recorded as `±9.845284926482358e+21`.
+
+If a positive or negative decimal of 22 significant figures is entered, the form
+will record a truncated 16 digit number, rounded to the 16th digit. For example,
+the number `±9845284926.482357445633` will be recorded as `±9845284926.482357`.
+
+### Text question type as number
+
+If your survey requires numeric responses that will exceed 15 digits, you can
+use a workaround with the "Text" question type:
+
+- Add a "Text" question to your form.
+- Go to the **Appearance** setting and select "numbers". A digit keyboard will
+  now appear when filling in this question.
+- Finally, a [`regex()` constraint](restrict_responses.md) can be included to
+  further restrict the input if necessary.
+
+Here is an XLSForm example to illustrate this:
+
+| type   | name   | label               | appearance | constraint            | constraint_message     |
+| ------ | ------ | ------------------- | ---------- | --------------------- | ---------------------- |
+| text   | number | Enter a long number | numbers    | regex(., '^[0-9]\*$') | Value must be a number |
+| survey |
+
+<p class="note">
+  You can download an XLSForm with examples from this article
   <a
     download
     class="reference"
