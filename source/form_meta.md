@@ -6,71 +6,80 @@ button.
 
 ![Form meta](/images/form_meta/form_meta.png)
 
-## Form Style
+## Form style
 
-You can change the way the form appears in Enketo Web Forms by changing the
-**Form Styles**. Learn more about form styles [here](alternative_enketo.md).
+You can change the way the form appears in Enketo web forms, such as multiple
+pages, grid theme, etc., in the **Form Styles** drop-down menu. Learn more about
+the different form styles [here](alternative_enketo.md).
 
-## Form Metadata
+## Form metadata
 
-Metadata are hidden questions that can help you with your analysis later on.
-They are typically captured automatically as data collection progresses. In
-detail, here is what they stand for:
+Metadata are hidden questions that can aid data analysis and can be used for
+auditing and data integrity purposes. The metadata is captured in the background
+during the normal data collection process:
 
-| Metadata       | Description                                                                                                          |
-| :------------- | :------------------------------------------------------------------------------------------------------------------- |
-| Start Time     | Exact start date and time when starting the interview (timestamp)                                                    |
-| End Time       | Exact end date and time when finishing the interview                                                                 |
-| Today          | Day the interview is conducted                                                                                       |
-| Username       | The username of the enumerator if authentication is used for data collection                                         |
-| Audit          | Record an audit log while the survey is being completed. Learn more about the Audit Logging [here](audit_logging.md) |
-| Device ID      | IMEI (International Mobile Equipment Identity)                                                                       |
-| Phone Number\* | The cell phone number                                                                                                |
+| Metadata         | Description                                                                                                                                     |
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Start Time       | Date and time when opening the form (timestamp)                                                                                                 |
+| End Time         | Date and time when finishing the form ("Submit" button pressed)                                                                                 |
+| Today            | The date of the form's submission                                                                                                               |
+| Username         | The username of the enumerator if [authentication is used](managing_permissions.md#requiring-passwords-for-accessing-forms) for data collection |
+| Audit            | Record an audit log while the form is being completed. Learn more about audit logging [here](audit_logging.md)                                  |
+| Background Audio | Record audio in the background (only available in KoboCollect)                                                                                  |
+| Device ID        | IMEI (International Mobile Equipment Identity)                                                                                                  |
+| Phone Number\*   | The cellphone number of the data collection device                                                                                              |
 
 <p class="note">
-Note: The Phone Number is only captured on mobile phones that have a SIM card.
+  The Phone Number meta question is only captured on mobile devices that have a
+  SIM card.
 </p>
 
-### Adding Form Metadata in XLSForm
+### Adding form metadata in XLSForm
 
 If you are building your form in XLSForm, you can add metadata as follows:
 
-| type        | name        |
-| :---------- | :---------- |
-| start       | start       |
-| end         | end         |
-| today       | today       |
-| username    | username    |
-| audit       | audit       |
-| deviceid    | deviceid    |
-| phonenumber | phonenumber |
-| survey      |
+| type             | name             |
+| :--------------- | :--------------- |
+| start            | start            |
+| end              | end              |
+| today            | today            |
+| username         | username         |
+| audit            | audit            |
+| background-audio | background_audio |
+| deviceid         | deviceid         |
+| phonenumber      | phonenumber      |
+| survey           |                  |
+
+<p class="note">
+  No labels are required as the questions are not visible within the form
+  itself during data collection
+</p>
 
 ## Background audio
 
-When the background audio setting is turned on, KoboCollect will be recording
-the audio of the interview everytime you open the form. Learn more about
-background audio recording [here](recording-interviews.md).
+When the "Background audio" setting is turned on, KoboCollect will record audio
+while the form is open and continue recording each time the form is opened
+before submitting. Learn more about background audio recording
+[here](recording-interviews.md).
 
 ## Details
 
-When creating a new project, you have the option to set the description, sector,
-and country for your project. You also can opt in to anonymously share the
-country and sector information with KoboToolbox for the purposes of using the
-data to improve the platform. You can add or change these details from this
-section of the **Layout & Settings** pane.
+When creating a new project, you have the option to set the _description_,
+_sector_, and _country_ for your project. You also can opt in to **anonymously**
+share the country and sector information with KoboToolbox for the purposes of
+improving the platform. You can add or change these details in **Layout &
+Settings** pane within the formbuilder or in the **SETTINGS>General** tab.
 
-## More settings
+## Additional settings
 
-Apart from the form settings found under **Layout & Settings** in the
-formbuilder, you can also change other settings that have to do with the project
-as a whole, such as [sharing settings](managing_permissions.md),
+Apart from options found in the formbuilder's **Layout & Settings** tab, you can
+also change other project-level settings, such as
+[sharing](managing_permissions.md),
 [connected projects](dynamic_data_attachment.md),
-[REST services](rest_services.md) and [project media](media.md). You can learn
-more about these settings by clicking on the linked articles.
+[REST services](rest_services.md) and [media](media.md) and more.
 
 <p class="note">
-  Download an XLSForm with examples from this article
+  You can download an XLSForm with examples from this article
   <a
     download
     class="reference"
