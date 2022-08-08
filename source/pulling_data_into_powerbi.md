@@ -1,52 +1,95 @@
-# Pulling Data Into PowerBI
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/pulling_data_into_powerbi.md" class="reference">15 Feb 2022</a>
+# Connecting KoboToolbox PowerBI
 
-## KoboToolbox
+The KoboToolbox API allows you to connect your project with other data analysis
+tools such as PowerBI, Excel and Google Sheets. Data you collect is shared with
+the external application which can then be used for analysis and visualizations
+and dashboards.
 
-First, you need to find the unique URL that allows you to access your project
-data via the API. If you already know how to find this, skip to the next
-section.
+One of the most popular data analysis and visualization programs you can connect
+to is Microsoft PowerBI.
 
-1. The unique URL has the following structure:
-   `https://[kobocat-URL]/api/v1/data/[unique-kc-ID]`.
+This article walks you through the steps of connecting your project with
+PowerBI. If you would like to connect to Excel, refer to the article
+[here](pulling_data_into_excelquery.md).
 
-2. To find this URL, go to https://[kobocat-URL/api/v1/data/ and find the
-   project in the list at the bottom, then copy the value for 'url' (without the
-   quotation marks). For example:
+## Step 1: Get the synchronous exports URL
 
-    ![image](/images/pulling_data_into_powerbi/kobo_url.png)
+The first step in bringing data into PowerBI is to get the Synchronous Exports
+URL through the KoboToolbox API. A detailed process for doing this is outlined
+[in the article here](synchronous_exports.md).
 
-## PowerBI
+## Step 2: Add the data source
 
-![image](/images/pulling_data_into_powerbi/powerbi.gif)
+Once you have the URL from the KoboToolbox API, you can proceed with the steps
+below in PowerBI:
 
-1. Open the
-   [Power BI file](https://drive.google.com/file/d/1kYUnVjXIU5zFK-Yn43dPqARy-3L8N7xr/view)
+- Click the drop-down arrow on the “Get Data” button
+- Choose “Web”
+- Paste the synchronous export URL you copied and click **OK**
+- Click **Basic** for adding your authentication details
+- Type your KoboToolbox username and password and click **CONNECT**
 
-2. Click on **Edit Queries** found under the Home ribbon
+<p class="note">If you made your project’s data public, you can connect without the need for authentication by choosing “Anonymous” in the “Access Web content” dialog box. Learn more about project permissions [here](https://support.kobotoolbox.org/managing_permissions.html).</p>
 
-    ![image](/images/pulling_data_into_powerbi/edit_queries.jpg)
+A list of the data contained in your project will be displayed in the Navigator.
 
-3. Click on **Edit Credentials**
+- Choose the data you would like to import.
+- Click **Load** to bring the data in or click **Transform Data** to open the
+  Power Query Editor, which you can use to clean up and transform the data
+  before loading it.
 
-    ![image](/images/pulling_data_into_powerbi/edit_credentials.jpg)
+![Get data and Authentication](images/pulling_data_into_powerbi/get_data_auth.gif)
 
-4. Under the **Basic** tab, enter your Kobo username and password then click
-   connect
+The tables will be shown in the **Fields** panel where you can develop your
+dashboards and reports.
 
-    ![image](/images/pulling_data_into_powerbi/login.jpg)
+<section class="note">
 
-5. A table should load showing you all available forms which you have **enabled
-   data sharing in your KoboToolbox account** in addition to the languages
-   (labels) you have designed them in. To connect to any of your forms’ data,
-   copy the CSV link found under the CSV column.
+In PowerBI, you can connect multiple projects. Repeat the process above for each
+project, using their synchronous export URL.
 
-    ![image](/images/pulling_data_into_powerbi/csv.jpg)
+In the case where you have multiple tables (for example if you had repeat
+groups), you might also need to set up table relationships. This is done in the
+**Model View.** Learn more about
+<a href=”https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-create-and-manage-relationships”>how
+to create table relationships here</a>
 
-6. Copy the URL of the dataset you need to connect to, then add it again as a
-   new Web source.
+</section>
 
-    ![image](/images/pulling_data_into_powerbi/url.gif)
+## Updating the data in your reports
 
-**Thanks to Chris Habib for
-[writing the initial draft of this post.](https://groups.google.com/forum/#!searchin/kobo-users/Re$3A$20Connecting$20Power$20BI$20to$20KoBo%7Csort:date/kobo-users/K-Iyo7A914E/qy47nkCJCwAJ)**
+When your project's data is updated on the KoboToolbox server, such as when you
+have new submissions, changed validation statuses, edits, or deletions, you will
+need to synchronize it with your reports.
+
+To do this, click **Refresh** in the “Home” tab.
+
+## Troubleshooting
+
+### Failing to connect to KoboToolbox
+
+Sometimes, even after entering the correct credentials to connect to your
+project, you might get an error. This may happen if PowerBI was configured to
+connect to one account before, and you are now trying to connect using a
+different account from the same KoboToolbox server.
+
+To reset authentication settings:
+
+- Go to **File -> Options and Settings -> Data Source Settings**. Select the
+  existing permissions in the dialog box and click **Clear Permissions**. Close
+  and try adding the new connection again.
+
+![Clear Permissions](images/pulling_data_into_powerbi/data_source_settings.gif)
+
+### Failing to refresh data
+
+If you are getting an error when refreshing data, there could be a number of
+reasons:
+
+- Your authentication details might have changed. You will need to follow the
+  instructions above to change your **Data Source Settings**.
+- One or more fields in your form might have been deleted or renamed.
+  [You will need to edit the query](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-query-overview).
+- There might be a data-type mismatch, especially if you changed the data-type
+  of one or more fields in PowerBI. You can attempt to reset the data-type
+  before refreshing the connection.
