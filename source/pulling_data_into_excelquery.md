@@ -30,7 +30,7 @@ through the KoboToolbox API. The step by step process for doing this is outlined
   authentication details.
 - Enter your KoboToolbox username and password and click **CONNECT**.
 
-![Get data](images/pulling_data_excelquery/authentication.gif)
+![Authentication(images/pulling_data_excelquery/authentication.gif)
 
 <p class="note">If you made your project’s data public, you can connect without authentication
 by choosing “Anonymous” in the “Access Web content” dialog box. Learn more about
@@ -48,7 +48,7 @@ in the Navigator. Ensure that you use the “data_url_xlsx” link as the CSV ex
   Power Query Editor which you can use to clean up and transform the data before
   loading it in.
 
-  ![Get data](images/pulling_data_excelquery/navigator.gif)
+  ![Choosing tables](images/pulling_data_excelquery/navigator.gif)
 
 <section class="note">
 
@@ -81,7 +81,7 @@ PivotCharts.
 - Choose **New Worksheet**
 - Click **Ok**
 
-![Get data](images/pulling_data_excelquery/pivot.gif)
+![Creating a pivot table](images/pulling_data_excelquery/pivot.gif)
 
 The imported tables will be shown in the **PivotTable Fields** side pane where
 you can choose the fields needed to build your pivot table.
@@ -102,7 +102,7 @@ this,, do the following:
 - On the next dialog box, choose **Table** and click **OK**. You may also choose
   the other available options depending on your need.
 
-![Get data](images/pulling_data_excelquery/load_table.gif)
+![Loading a table in Excel](images/pulling_data_excelquery/load_table.gif)
 
 You can do this for all the tables listed in the **Queries and Connections**
 pane.
@@ -132,7 +132,7 @@ To reset authentication settings:
   permissions in the dialog box and click **Clear Permissions**. Close and try
   adding the new connection again.
 
-![Get data](images/pulling_data_excelquery/data_source_settings.gif)
+![Clearing data source settings(images/pulling_data_excelquery/data_source_settings.gif)
 
 ### Failing to refresh data
 
