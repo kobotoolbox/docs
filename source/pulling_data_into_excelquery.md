@@ -1,112 +1,148 @@
-# Pulling Data Into Excel Power Query
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/pulling_data_into_excelquery.md" class="reference">15 Feb 2022</a>
+# Connecting KoboToolbox to Microsoft Excel
 
-For seamless data analysis, you can leverage the Kobo API to pull your data into
-other tools for data analysis. This article covers how to connect to the API to
-pull your data into **Excel Power Query**.
+KoboToolbox lets you connect your data collection project to external programs
+such as Microsoft Excel, Power BI or Google Sheets which is made possible
+through the Application Programming Interface (API).
 
-## Getting Kobo API for Excel Power Query
+This article walks you through the process of connecting your project to Excel.
+If you would like to connect to PowerBI, refer to the article
+[here](pulling_data_into_powerbi.md).
 
--   Login to your account.
+## Step 1: Get the synchronous exports URL
 
--   Next, go to the API for your account by going to either
-    [https://kc.humanitarianresponse.info/api/v1](https://kc.humanitarianresponse.info/api/v1)
-    or [https://kc.kobotoolbox.org/api/v1/](https://kc.kobotoolbox.org/api/v1/).
-    Select the URL for the instance in which your account is located.
+To bring data into Excel, you first need to get the Synchronous Exports URL
+through the KoboToolbox API. The step by step process for doing this is outlined
+[in the article here](synchronous_exports.md).
 
--   Under the **Data** heading, click on `/api/v1/data`.
+## Step 2: Add the data source
 
-![image](/images/pulling_data_excelquery/api_json.jpg)
+<p class="note">These steps only work in Excel 2016 and later.</p>
 
--   Click on **GET** and select **xls**.
+- Open Excel and create a blank workbook. You can also work within an existing
+  workbook, even if it already has data.
+- Click the **Data** tab, choose **Get Data** -> **From Other Sources** ->
+  **From Web**.
+- Paste the synchronous exports URL you copied and click **OK**.
 
-![image](/images/pulling_data_excelquery/api_datalist.jpg)
+![Get data](images/pulling_data_excelquery/get_data.gif)
 
--   This action will download a text file to your computer called `data` which
-    can be opened/viewed a text editor.
+- Within the “Access Web content” dialog box, click **Basic** for adding your
+  authentication details.
+- Enter your KoboToolbox username and password and click **CONNECT**.
 
--   Next, locate your project's data structure inside the `data` file you
-    downloaded. It will be in the following format: `id`, `id_string`, `title`,
-    `description`, `url`.
+![Get data](images/pulling_data_excelquery/authentication.gif)
 
-**For example:**
+<p class="note">If you made your project’s data public, you can connect without authentication
+by choosing “Anonymous” in the “Access Web content” dialog box. Learn more about
+project permissions <a href="https://support.kobotoolbox.org/managing_permissions.html">here.</a></p>
 
-```
-[
-    ("id", "1314"),
-    ("id_string", "a7tAUbZp9Ad4MkvW7JSrft")("title", "MIRA_DO"),
-    ("description", "MIRA_DO"),
-    ("url", "https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls"),
-]
-```
+A list of the data contained in your project will be displayed in the Navigator.
 
--   To pull the data, take the form URL
-    (`https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls`) and
-    replace `?format=xls` with `.xls`. For our example, the URL should now be:
-    `https://kc.humanitarianresponse.info/api/v1/data/1314.xls`
+<p class="note">If your form has repeat groups, each group will show up as a separate worksheet
+in the Navigator. Ensure that you use the “data_url_xlsx” link as the CSV export
+<em>does not</em> include repeat groups.</p>
 
-## Pulling data in Microsoft Excel (by making data public)
+- Choose the data you would like to import. To import multiple tables at one,
+  click “Select multiple items”, then choose the items from the list.
+- Click **Load** to bring the data in or click **Transform Data** to open the
+  Power Query Editor which you can use to clean up and transform the data before
+  loading it in.
 
-Before transitioning over to Excel, ensure that there is _at least one record_
-stored in your data table in KoboToolbox _and_ that you have made your data
-public by checking **Anyone can view submissions made to this form** from
-**SETTINGS>Sharing**. Then click on **Data**, and under **Data**, click on
-**From Web**. You should now see a dialogue box to paste your URL and start
-pulling data from the server.
+  ![Get data](images/pulling_data_excelquery/navigator.gif)
 
-![image](/images/pulling_data_excelquery/excel_updated.png)
+<section class="note">
 
-## Pulling data in Microsoft Excel (without making data public)
+You can connect multiple projects in one Excel workbook. Repeat the process
+above for each project, using their synchronous export URL.
 
-Rather than exposing your data publicly, you can use your KoboToolbox login
-credentials to authenticate your request:
+In most cases where you have multiple tables, it may be necessary to set up
+table relationships before you can use the fields to create reports and
+dashboards. Set up relationships by going to **Data** -> **Data Tools** ->
+**Relationships**. Learn more about
+<a href=”https://support.microsoft.com/en-us/office/create-a-relationship-between-tables-in-excel-fe1b6be7-1d85-4add-a629-8a3848820be3”>creating
+table relationships in Excel here</a>
 
--   When you get the dialogue box, paste your URL.
+</section>
 
-![image](/images/pulling_data_excelquery/url.png)
+### Using the imported data
 
--   You should now see a new dialogue box as shown in the image below:
+Excel gives you several ways to work with the data you have just imported. Here
+are some of the ways:
 
-![image](/images/pulling_data_excelquery/basic_authentication.png)
+#### 1. Create PivotTables and PivotCharts from the Data Model
 
--   Then select **Basic**. You should be able to see a place where you are able
-    to input your login credentials. Use your KoboToolbox credentials and that
-    should load your data to Excel.
+A PivotTable is a powerful tool used to calculate, summarize, and analyze data -
+allowing you to see comparisons, patterns, and trends in the data. Data
+summarized in PivotTables can be visualized in a simple manner using
+PivotCharts.
 
-![image](/images/pulling_data_excelquery/login_credentials.png)
+- Click the **Insert tab**, then click on the drop-down arrow on PivotTable
+- Choose **From Data Model**
+- Choose **New Worksheet**
+- Click **Ok**
+
+![Get data](images/pulling_data_excelquery/pivot.gif)
+
+The imported tables will be shown in the **PivotTable Fields** side pane where
+you can choose the fields needed to build your pivot table.
+
+#### 2. Load data into the worksheet
+
+When you import a single table, such as when your project did not have any
+repeating groups, the data is automatically loaded as a table on the worksheet.
+However, when your data comes as multiple tables, the tables are only listed on
+the **Queries & Connections** panel.
+
+You may want to load this data to view it on the worksheets. To accomplish
+this,, do the following:
+
+- Right-click a table from the Queries and Connections pane and choose **Load
+  To**. (if you don’t see the pane, go to **Data** -> **Queries and
+  Connections**.
+- On the next dialog box, choose **Table** and click **OK**. You may also choose
+  the other available options depending on your need.
+
+![Get data](images/pulling_data_excelquery/load_table.gif)
+
+You can do this for all the tables listed in the **Queries and Connections**
+pane.
+
+## Updating the data in your reports
+
+When your project's data is updated on the KoboToolbox server, such as when you
+have new submissions, changed validation statuses, edits, or deletions, you will
+need to synchronize it with your reports. In Excel:
+
+- Navigate to the **Data** tab
+- Under “Queries and connections”, click **Refresh**
 
 ## Troubleshooting
 
-### Reset Excel's Data Source Settings
+### Failing to connect to KoboToolbox
 
-Sometimes, you may not be able to see the dialogue box to input your login
-credentials. In such case, you will have to do the following to reset your
-Excel's **Data Source Settings**.
+Sometimes, even after entering the correct credentials to connect to your
+project, you might get an error. This may happen if Excel was configured to
+connect to one account before, and you are now trying to connect using a
+different account from the same KoboToolbox server, i.e. both from the
+Humanitarian server.
 
--   Click on **Data** and under **Data** you will need to click on **Get Data**.
+To reset authentication settings:
 
-![image](/images/pulling_data_excelquery/home.png)
+- Go to **Data tab -> Get Data -> Data source settings**. Select the existing
+  permissions in the dialog box and click **Clear Permissions**. Close and try
+  adding the new connection again.
 
--   Then click on **Data Source Settings**.
+![Get data](images/pulling_data_excelquery/data_source_settings.gif)
 
-![image](/images/pulling_data_excelquery/home_next.png)
+### Failing to refresh data
 
--   You will now be able to see a dialogue box, **Data source settings**. Here,
-    you will need to press **Clear Permissions**. With this, you should be able
-    to see the dialogue box to input your login credentials.
+If you are getting an error when refreshing data, there could be a number of
+reasons:
 
-![image](/images/pulling_data_excelquery/data_source_settings.png)
-
-If you wish to learn more on resetting your Excel's **Data Source Settings**
-feel free to explore
-[here](https://docs.microsoft.com/en-us/power-query/connectorauthentication).
-
-### Updating Data in Microsoft Excel
-
-Once you have synced KoboToolbox with Excel through **Excel Power Query**, you
-should have the dataset stored locally. However, when the dataset on the server
-updates (i.e. through new submissions, deletions, amendments), your local
-dataset does not automatically update. To resync your data, you will need to
-click the **Data** button and then **Refresh All**.
-
-_Thanks to Awais Awan for writing the initial draft of this post._
+- Your authentication details might have changed. You will need to follow the
+  instructions above to change your **Data Source Settings**.
+- One or more fields in your form might have been deleted or renamed.
+  [You will need to edit the query in Power Query ](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-query-overview).
+- There might be a data-type mismatch, especially if you changed the data-type
+  of one or more fields in Excel. You can attempt to reset the data-type before
+  refreshing the connection.
