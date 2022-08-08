@@ -140,10 +140,10 @@ use a workaround with the "Text" question type:
 
 Here is an XLSForm example to illustrate this:
 
-| type   | name   | label               | appearance | constraint            | constraint_message     |
-| ------ | ------ | ------------------- | ---------- | --------------------- | ---------------------- |
-| text   | number | Enter a long number | numbers    | regex(., '^[0-9]\*$') | Value must be a number |
-| survey |
+| type    | name    | label                | appearance  | constraint             | constraint_message      |
+| :------ | :------ | :------------------- | :---------- | :--------------------- | :---------------------- |
+| text    | number  | Enter a long number  | numbers     | regex(., '^[0-9]\*$')  | Value must be a number  |
+| survey  |
 
 <p class="note">
   You can download an XLSForm with examples from this article
