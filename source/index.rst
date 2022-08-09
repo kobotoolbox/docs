@@ -60,6 +60,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   media
   add_logo
   cascading_select
+  cascading_select_multiple
   group_repeat
   restrict_responses
   p_codes
