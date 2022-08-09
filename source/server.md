@@ -1,8 +1,5 @@
 # Which Server Should I Use?
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/server.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/49186ffafec35795dbafae54b66d22e449ea1ad8/source/server.md" class="reference">9 Aug 2022</a>
 
 KoboToolbox is free and open source software that can be installed on any
 computer or server. The vast majority of users use one of the two options: The
