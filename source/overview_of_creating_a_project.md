@@ -1,5 +1,8 @@
 # Overview of creating and managing projects in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7d513b8500d4abf789e0c42c10827738cfba7059/source/overview_of_creating_a_project.md" class="reference">7 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/7d513b8500d4abf789e0c42c10827738cfba7059/source/overview_of_creating_a_project.md" class="reference">7
+Feb 2022</a>
 
 Once you’ve logged in to your KoboToolbox account, you can start building your
 data collection project right away with our easy-to-use formbuilder. This
@@ -18,7 +21,7 @@ You will be presented with the “Create a project: choose a source” dialog bo
 ![Choose a source](images/overview_of_creating_a_project/choose_source.png)
 
 | Option                    | Description                                                                                                           |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| :------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
 | Build from scratch        | Build a form using the **KoboToolbox** <a href="formbuilder.html" class="reference">formbuilder</a>                   |
 | Use a template            | Build a form using a template from the <a href="add_questions_library.html" class="reference">question library</a>.   |
 | Upload XLSForm            | Upload an <a href="https://xlsform.org" class="reference">XLSForm</a> file where you have defined your questions.     |
@@ -32,7 +35,7 @@ You will be presented with the “Create a project: choose a source” dialog bo
 ![Project details](images/overview_of_creating_a_project/project_details.png)
 
 | Field                   | Description                                                       |
-| ----------------------- | ----------------------------------------------------------------- |
+| :---------------------- | :---------------------------------------------------------------- |
 | Project Name (required) | The title of your project                                         |
 | Description (optional)  | A descriptive paragraph to make it easy to identify your project  |
 | Sector (optional)       | The sector in which the data collection project is being deployed |

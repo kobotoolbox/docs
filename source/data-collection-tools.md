@@ -1,5 +1,8 @@
 # Overview on Data Collection Tools
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/data-collection-tools.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/data-collection-tools.md" class="reference">15
+Feb 2022</a>
 
 KoboToolbox allows data collection in multiple ways. Because KoboToolbox is
 built on the [Xform/ODK standards](https://xlsform.org), our forms are
@@ -18,7 +21,7 @@ recommend using the webform [for collecting data](data_through_webforms.md).
 ## A quick rundown on the differences between the two options
 
 | &nbsp;                                                                         | Webforms                                    | KoboCollect                                            |
-| ------------------------------------------------------------------------------ | ------------------------------------------- | ------------------------------------------------------ |
+| :----------------------------------------------------------------------------- | :------------------------------------------ | :----------------------------------------------------- |
 | Devices                                                                        | Any mobile device or computer               | Android only                                           |
 | Runs in...                                                                     | Browser                                     | Native Android application                             |
 | Configurable                                                                   | Server-wide                                 | On each device                                         |

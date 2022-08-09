@@ -1,7 +1,10 @@
 # Viewing and Creating Custom Reports
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/creating_custom_reports.md" class="reference">15 Feb 2022</a>
 
-#### Learn how to navigate and manage the data in the Reports page.
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/creating_custom_reports.md" class="reference">15
+Feb 2022</a>
+
+## Learn how to navigate and manage the data in the Reports page.
 
 On the Reports page in the Data section of your project, you can create and
 configure multiple summary reports with custom graphs, tables, and color

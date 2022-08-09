@@ -1,5 +1,5 @@
 # Merging Individual Data with Roster Data through Power Query in Excel
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b35af5b9c351e89c8e5da272d5c918f61323523d/source/merging_dataset_excel_power_query.md" class="reference">10 Jan 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 Apr 2022</a>
 
 As illustrated in the support article,
 [Grouping Questions and Repeating Groups](group_repeat.md), you can use
@@ -234,14 +234,14 @@ have opened your new Excel workbook. For details, please see the video below:
   <a
     download
     class="reference"
-    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge).xls"
+    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge).xlsx"
     >here</a
   >
   and the example sample dataset
   <a
     download
     class="reference"
-    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge)_dataset.xls"
+    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge)_dataset.xlsx"
     >here</a
   >
   that were used in this article.

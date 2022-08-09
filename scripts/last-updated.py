@@ -13,12 +13,17 @@ GLOB_PATTERN = 'source/*.md'
 COMMIT_PATTERN = (
     r'([a-z0-9]{40}),\s[\w]+,\s([0-9]{1,2}\s[\w]{3}\s[0-9]{4}).*,\s(.*)'
 )
-GIT_CMD = ['git', 'log', '-2', '--oneline', '--pretty="%H, %cD, %s"']
-GIT_IGNORE_HASH = '74dc12829b7ae2ce0c6c36364c5791b9f94d489d'
+GIT_CMD = ['git', 'log', '-10', '--oneline', '--pretty="%H, %cD, %s"']
+GIT_IGNORE_HASHES = [
+    '74dc12829b7ae2ce0c6c36364c5791b9f94d489d',
+    'bd2708397b2a21ea9fd7699ff0e50cbc3899ad63',
+    'dead802312349a42727c6f3339d45892db4cabce',
+]
 GIT_IGNORE_MSG = 'last updated'
 RECENTLY_UPDATED_FILE = 'source/recently_updated.md'
 FILES_IGNORE = [RECENTLY_UPDATED_FILE]
-DATE_STRING_FMT = '%d %b %Y'
+DATE_STRING_IN_FMT = '%d %b %Y'
+DATE_STRING_OUT_FMT = '%-d %b %Y'
 
 
 files_by_date = []
@@ -34,17 +39,16 @@ def get_git_data(path):
         .stdout.decode()
         .split('\n')[:-1]
     )
-    if len(stdout) == 1:
-        latest, _next = stdout[0], ''
-    else:
-        latest, _next = stdout
 
-    _hash, date, msg = re.search(COMMIT_PATTERN, latest).groups()
-    if not _hash.startswith(GIT_IGNORE_HASH) and not msg.startswith(
-        GIT_IGNORE_MSG
-    ):
+    def _get_hash_and_date(items):
+        _hash, date, msg = re.search(COMMIT_PATTERN, items[0]).groups()
+        if any(
+            _hash.startswith(h) for h in GIT_IGNORE_HASHES
+        ) or msg.startswith(GIT_IGNORE_MSG):
+            return _get_hash_and_date(items[1:])
         return _hash, date
-    return re.search(COMMIT_PATTERN, _next).groups()[:2]
+
+    return _get_hash_and_date(stdout)
 
 
 def get_text(date, link):
@@ -57,7 +61,7 @@ def update_file(path):
     files_by_date.append(
         {
             'path': path,
-            'date': datetime.strptime(date, DATE_STRING_FMT),
+            'date': datetime.strptime(date, DATE_STRING_IN_FMT),
         }
     )
 
@@ -96,7 +100,7 @@ def get_recently_updated_item(file):
     return '1. [{title}]({filename}) ({date})\n'.format(
         title=get_title(file['path']),
         filename=os.path.basename(file['path']),
-        date=datetime.strftime(file['date'], DATE_STRING_FMT),
+        date=datetime.strftime(file['date'], DATE_STRING_OUT_FMT),
     )
 
 

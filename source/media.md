@@ -1,5 +1,8 @@
 # Adding Various Types of Media (image, audio, video) to a Form
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15 Feb 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15
+Feb 2022</a>
 
 In addition to text questions and text choices, you can also add various types
 of media (such as _image_, _audio_, and _video_) to your forms. Having media in
@@ -10,7 +13,7 @@ Media in a form works both on **Collect android app** and **Web forms
 (Enketo)**. These are the media files that are currently supported:
 
 | Media | Files                                                         |
-| ----- | ------------------------------------------------------------- |
+| :---- | :------------------------------------------------------------ |
 | Image | jpeg, png, svg                                                |
 | Audio | aac, aacp, flac, mp3, mp4, mpeg, ogg, wav, webm, x-m4a, x-wav |
 | Video | 3gpp, avi, flv, mov, mp4, ogg, quicktime (qtff), webm, wmv    |

@@ -40,12 +40,20 @@ Search the knowledge base, browse our resources and visit our forum for more det
   question_options
   skip_logic
   validation_criteria
+  text_and_note
+  acknowledge
+  number_decimal_range
+  date_time
+  photo_audio_video_file
   rating_ranking
+  select_one_and_select_many
+  gps_questions
   calculate_questions
   advanced_calculate
   video_question_type
   matrix_response
   adding_skip_to_matrix
+  calculations_constraints_matrix
   responses_inside_question
   number_text_responses
   user_specified_other
@@ -107,6 +115,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   managing_permissions
   creating_custom_reports
   export_gps
+  synchronous_exports
   pulling_data_into_excelquery
   howto_edit_single_submissions
   howto_edit_multiple_submissions

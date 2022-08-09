@@ -12,18 +12,22 @@ Prerequisites:
 * npm
 
 1. Open terminal
-1. Clone repository: `git clone https://github.com/kobotoolbox/docs.git`
-1. Change into the cloned directory: `cd docs`
-1. Build the theme if you made any changes to it: `npm install && npm start`
-1. Create a virtual environment: `python -m venv koboenv`
-1. Activate the virtual environment `source koboenv/bin/activate`
-1. Install requirements `pip install -r requirements.txt`
-1. Build the html files: `make html`
-1. Open the index page in the browser: `open _build/html/index.html`
+2. Clone repository: `git clone https://github.com/kobotoolbox/docs.git`
+3. Change into the cloned directory: `cd docs`
+4. Build the theme if you made any changes to it: `npm install && npm start`
+5. Create a virtual environment: `python -m venv koboenv`
+6. Activate the virtual environment `source koboenv/bin/activate`
+7. Install requirements `pip install -r requirements.txt`
+8. Build the html files: `make html`
+9. Open the index page in the browser: `open _build/html/index.html`
 
 Note: if you have Python 3, you might need to use `python3` command instead of `python` (and `pip3` instead of `pip`).
 
 Each commit to `master` is automatically built into production.
+
+## Development
+
+When you already did everything from "Local installation" succesfully and just need to come back and work a bit more on the project, please use `dev.sh` script from the root of the project.
 
 ## Custom theme development
 
