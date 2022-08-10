@@ -30,7 +30,7 @@ available to use in your XLSForm and formbuilder:
 | background-audio                 | <i class="k-icon k-icon-background-rec"></i>  | Audio is recorded in the background while filling the form.                                  |
 | video                            | <i class="k-icon k-icon-qt-video"></i>        | Take a video recording or upload a video file.                                               |
 | file                             | <i class="k-icon k-icon-qt-file"></i>         | Generic file input (txt, pdf, xls, xlsx, doc, docx, rtf, zip)                                |
-| barcode                          | <i class="k-icon k-icon-qt-barcode"></i>      | Scan a barcode, requires the barcode scanner app to be installed.                            |
+| barcode                          | <i class="k-icon k-icon-qt-barcode"></i>      | Scan a barcode or QR Code                            |
 | calculate                        | <i class="k-icon k-icon-qt-calculate"></i>    | Perform a calculation; see the Calculation section below.                                    |
 | acknowledge                      | <i class="k-icon k-icon-qt-acknowledge"></i>  | Acknowledge prompt that sets value to "OK" if selected.                                      |
 | hidden                           | <i class="k-icon k-icon-qt-hidden"></i>       | A field with no associated UI element which can be used to store a constant.                 |
