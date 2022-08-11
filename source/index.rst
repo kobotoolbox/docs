@@ -54,6 +54,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   matrix_response
   adding_skip_to_matrix
   calculations_constraints_matrix
+  matrix_question_repeat
   responses_inside_question
   number_text_responses
   user_specified_other
