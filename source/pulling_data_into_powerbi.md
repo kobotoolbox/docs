@@ -1,27 +1,26 @@
-# Connecting KoboToolbox PowerBI
+# Connecting KoboToolbox Power BI
 
 The KoboToolbox API allows you to connect your project with other data analysis
-tools such as PowerBI, Excel and Google Sheets. Data you collect is shared with
+tools such as Power BI, Excel and Google Sheets. Data you collect is shared with
 the external application which can then be used for analysis and visualizations
 and dashboards.
 
 One of the most popular data analysis and visualization programs you can connect
-to is Microsoft PowerBI.
+to is [Microsoft Power BI](https://powerbi.microsoft.com).
 
-This article walks you through the steps of connecting your project with
-PowerBI. If you would like to connect to Excel, refer to the article
+This article walks you through the steps of connecting your project with Power
+BI. If you would like to connect to Excel, refer to the article
 [here](pulling_data_into_excelquery.md).
 
 ## Step 1: Get the synchronous exports URL
 
-The first step in bringing data into PowerBI is to get the Synchronous Exports
+The first step in bringing data into Power BI is to get the synchronous exports
 URL through the KoboToolbox API. A detailed process for doing this is outlined
 in the article [here](synchronous_exports.md).
 
 ## Step 2: Add the data source
 
-Once you have the URL from the KoboToolbox API, you can proceed with the steps
-below in PowerBI:
+Once you have your URL, you can proceed with the steps below in Power BI:
 
 - Click the drop-down arrow on the "Get Data" button
 - Choose "Web"
@@ -30,7 +29,7 @@ below in PowerBI:
 - Type your KoboToolbox username and password and click **CONNECT**
 
 <p class="note">
-  If you made your project’s data public, you can connect without the need for
+  If you made your project's data public, you can connect without the need for
   authentication by choosing "Anonymous" in the "Access Web content" dialogue
   box. Learn more about project permissions
   <a href="managing_permissions.html" class="reference">here</a>.
@@ -49,7 +48,7 @@ The tables will be shown in the **Fields** panel where you can develop your
 dashboards and reports.
 
 <p class="note">
-  In PowerBI, you can connect multiple projects. Repeat the process above for
+  In Power BI you can connect multiple projects. Repeat the process above for
   each project, using their synchronous export URL. In the case where you have
   multiple tables (for example if you had repeat groups), you might also need to
   set up table relationships. This is done in the <strong>Model View</strong>.
@@ -74,7 +73,7 @@ To do this, click **Refresh** in the "Home" tab.
 ### Failing to connect to KoboToolbox
 
 Sometimes, even after entering the correct credentials to connect to your
-project, you might get an error. This may happen if PowerBI was configured to
+project, you might see an error. This may happen if Power BI was configured to
 connect to one account before, and you are now trying to connect using a
 different account from the same KoboToolbox server.
 
@@ -88,8 +87,8 @@ To reset authentication settings:
 
 ### Failing to refresh data
 
-If you are getting an error when refreshing data, there could be a number of
-reasons:
+If you are getting an error when your refreshing data, there could be a number
+of reasons:
 
 - Your authentication details might have changed. You will need to follow the
   instructions above to change your **Data Source Settings**.
@@ -97,5 +96,5 @@ reasons:
   need to
   [edit the query](https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-query-overview).
 - There might be a data-type mismatch, especially if you changed the data-type
-  of one or more fields in PowerBI. You can attempt to reset the data-type
+  of one or more fields in Power BI. You can attempt to reset the data-type
   before refreshing the connection.
