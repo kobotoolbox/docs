@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pulling Data Into PowerBI &#8212; KoboToolbox  documentation</title>
+    <title>Connecting KoboToolbox to Power BI &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -26,8 +26,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Exporting and Uploading Data to GIS Software" href="upload_to_gis.html" />
-    <link rel="prev" title="Excel Analyzer User Guide" href="excel_analyzer_guide.html" />
+    <link rel="next" title="Editing or Deleting a Single Submission" href="howto_edit_single_submissions.html" />
+    <link rel="prev" title="Pulling Data Into Excel Power Query" href="pulling_data_into_excelquery.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -104,53 +104,101 @@
 
         <section class="page__body" role="main">
           
-  <section id="pulling-data-into-powerbi">
-<h1>Pulling Data Into PowerBI<a class="headerlink" href="#pulling-data-into-powerbi" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/pulling_data_into_powerbi.md" class="reference">15 Feb 2022</a></p>
-<section id="kobotoolbox">
-<h2>KoboToolbox<a class="headerlink" href="#kobotoolbox" title="Permalink to this headline">¶</a></h2>
-<p>First, you need to find the unique URL that allows you to access your project
-data via the API. If you already know how to find this, skip to the next
-section.</p>
-<ol class="arabic">
-<li><p>The unique URL has the following structure:
-<code class="docutils literal notranslate"><span class="pre">https://[kobocat-URL]/api/v1/data/[unique-kc-ID]</span></code>.</p></li>
-<li><p>To find this URL, go to https://[kobocat-URL/api/v1/data/ and find the
-project in the list at the bottom, then copy the value for ‘url’ (without the
-quotation marks). For example:</p>
-<p><img alt="image" src="_images/kobo_url.png" /></p>
-</li>
-</ol>
+  <section id="connecting-kobotoolbox-to-power-bi">
+<h1>Connecting KoboToolbox to Power BI<a class="headerlink" href="#connecting-kobotoolbox-to-power-bi" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/ae9e699afd6c0ed484945430ba6722b974b99b49/source/pulling_data_into_powerbi.md" class="reference">22 Aug 2022</a></p>
+<p>The KoboToolbox API allows you to connect your project with other data analysis
+tools such as Power BI, Excel and Google Sheets. Data you collect is shared with
+the external application which can then be used for analysis and visualizations
+and dashboards.</p>
+<p>One of the most popular data analysis and visualization programs you can connect
+to is <a class="reference external" href="https://powerbi.microsoft.com">Microsoft Power BI</a>.</p>
+<p>This article walks you through the steps of connecting your project with Power
+BI. If you would like to connect to Excel, refer to the article
+<a class="reference internal" href="pulling_data_into_excelquery.html"><span class="doc std std-doc">here</span></a>.</p>
+<section id="step-1-get-the-synchronous-exports-url">
+<h2>Step 1: Get the synchronous exports URL<a class="headerlink" href="#step-1-get-the-synchronous-exports-url" title="Permalink to this headline">¶</a></h2>
+<p>The first step in bringing data into Power BI is to get the synchronous exports
+URL through the KoboToolbox API. A detailed process for doing this is outlined
+in the article <a class="reference internal" href="synchronous_exports.html"><span class="doc std std-doc">here</span></a>.</p>
 </section>
-<section id="powerbi">
-<h2>PowerBI<a class="headerlink" href="#powerbi" title="Permalink to this headline">¶</a></h2>
-<p><img alt="image" src="_images/powerbi.gif" /></p>
-<ol class="arabic">
-<li><p>Open the
-<a class="reference external" href="https://drive.google.com/file/d/1kYUnVjXIU5zFK-Yn43dPqARy-3L8N7xr/view">Power BI file</a></p></li>
-<li><p>Click on <strong>Edit Queries</strong> found under the Home ribbon</p>
-<p><img alt="image" src="_images/edit_queries.jpg" /></p>
-</li>
-<li><p>Click on <strong>Edit Credentials</strong></p>
-<p><img alt="image" src="_images/edit_credentials.jpg" /></p>
-</li>
-<li><p>Under the <strong>Basic</strong> tab, enter your Kobo username and password then click
-connect</p>
-<p><img alt="image" src="_images/login.jpg" /></p>
-</li>
-<li><p>A table should load showing you all available forms which you have <strong>enabled
-data sharing in your KoboToolbox account</strong> in addition to the languages
-(labels) you have designed them in. To connect to any of your forms’ data,
-copy the CSV link found under the CSV column.</p>
-<p><img alt="image" src="_images/csv.jpg" /></p>
-</li>
-<li><p>Copy the URL of the dataset you need to connect to, then add it again as a
-new Web source.</p>
-<p><img alt="image" src="_images/url.gif" /></p>
-</li>
-</ol>
-<p><strong>Thanks to Chris Habib for
-<a class="reference external" href="https://groups.google.com/forum/#!searchin/kobo-users/Re$3A$20Connecting$20Power$20BI$20to$20KoBo%7Csort:date/kobo-users/K-Iyo7A914E/qy47nkCJCwAJ">writing the initial draft of this post.</a></strong></p>
+<section id="step-2-add-the-data-source">
+<h2>Step 2: Add the data source<a class="headerlink" href="#step-2-add-the-data-source" title="Permalink to this headline">¶</a></h2>
+<p>Once you have your URL, you can proceed with the steps below in Power BI:</p>
+<ul class="simple">
+<li><p>Click the drop-down arrow on the “Get Data” button</p></li>
+<li><p>Choose “Web”</p></li>
+<li><p>Paste the synchronous export URL you copied and click <strong>OK</strong></p></li>
+<li><p>Click <strong>Basic</strong> for adding your authentication details</p></li>
+<li><p>Type your KoboToolbox username and password and click <strong>CONNECT</strong></p></li>
+</ul>
+<p class="note">
+  If you made your project's data public, you can connect without the need for
+  authentication by choosing "Anonymous" in the "Access Web content" dialogue
+  box. Learn more about project permissions
+  <a href="managing_permissions.html" class="reference">here</a>.
+</p>
+<p>A list of the data contained in your project will be displayed in the Navigator.</p>
+<ul class="simple">
+<li><p>Choose the data you would like to import.</p></li>
+<li><p>Click <strong>Load</strong> to bring the data in or click <strong>Transform Data</strong> to open the
+Power Query Editor, which you can use to clean up and transform the data
+before loading it.</p></li>
+</ul>
+<p><img alt="Get data and Authentication" src="_images/get_data_auth.gif" /></p>
+<p>The tables will be shown in the <strong>Fields</strong> panel where you can develop your
+dashboards and reports.</p>
+<p class="note">
+  In Power BI you can connect multiple projects. Repeat the process above for
+  each project, using their synchronous export URL. In the case where you have
+  multiple tables (for example if you had repeat groups), you might also need to
+  set up table relationships. This is done in the <strong>Model View</strong>.
+  Learn more about how to create table relationships
+  <a
+    href="https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-create-and-manage-relationships"
+    class="reference"
+    >here</a
+  >.
+</p>
+</section>
+<section id="updating-the-data-in-your-reports">
+<h2>Updating the data in your reports<a class="headerlink" href="#updating-the-data-in-your-reports" title="Permalink to this headline">¶</a></h2>
+<p>When your project’s data is updated on the KoboToolbox server, such as when you
+have new submissions, changed validation statuses, edits, or deletions, you will
+need to synchronize it with your reports.</p>
+<p>To do this, click <strong>Refresh</strong> in the “Home” tab.</p>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<section id="failing-to-connect-to-kobotoolbox">
+<h3>Failing to connect to KoboToolbox<a class="headerlink" href="#failing-to-connect-to-kobotoolbox" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes, even after entering the correct credentials to connect to your
+project, you might see an error. This may happen if Power BI was configured to
+connect to one account before, and you are now trying to connect using a
+different account from the same KoboToolbox server.</p>
+<p>To reset authentication settings:</p>
+<ul class="simple">
+<li><p>Go to <strong>File -&gt; Options and Settings -&gt; Data Source Settings</strong>. Select the
+existing permissions in the dialogue box and click <strong>Clear Permissions</strong>.
+Close and try adding the new connection again.</p></li>
+</ul>
+<p><img alt="Clear Permissions" src="_images/data_source_settings.gif" /></p>
+</section>
+<section id="failing-to-refresh-data">
+<h3>Failing to refresh data<a class="headerlink" href="#failing-to-refresh-data" title="Permalink to this headline">¶</a></h3>
+<p>If you are getting an error when your refreshing data, there could be a number
+of reasons:</p>
+<ul class="simple">
+<li><p>Your authentication details might have changed. You will need to follow the
+instructions above to change your <strong>Data Source Settings</strong>.</p></li>
+<li><p>One or more fields in your form might have been deleted or renamed. You will
+need to
+<a class="reference external" href="https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-query-overview">edit the query</a>.</p></li>
+<li><p>There might be a data-type mismatch, especially if you changed the data-type
+of one or more fields in Power BI. You can attempt to reset the data-type
+before refreshing the connection.</p></li>
+</ul>
+</section>
 </section>
 </section>
 
@@ -165,7 +213,7 @@ new Web source.</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Pulling Data Into PowerBI"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Connecting KoboToolbox to Power BI"
               class="feedback-button"
               target="_blank"
             >
@@ -276,6 +324,13 @@ new Web source.</p>
 <li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, Sharing, and Exporting GPS Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Connecting to your data using synchronous exports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Pulling Data Into Excel Power Query</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Connecting KoboToolbox to Power BI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-get-the-synchronous-exports-url">Step 1: Get the synchronous exports URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-add-the-data-source">Step 2: Add the data source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-the-data-in-your-reports">Updating the data in your reports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editing or Deleting a Single Submission</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editing Responses in Multiple Submissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="photo_download.html">Downloading Photos and Other Media</a></li>
@@ -283,11 +338,6 @@ new Web source.</p>
 <li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering Data From Previous Form Versions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting Data into SPSS and/or Stata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="excel_analyzer_guide.html">Excel Analyzer User Guide</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Pulling Data Into PowerBI</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#kobotoolbox">KoboToolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#powerbi">PowerBI</a></li>
-</ul>
-</li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and Uploading Data to GIS Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="row_level_permissions.html">Row-Level Permissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic Data Attachments</a></li>
@@ -356,7 +406,7 @@ new Web source.</p>
   <script>
     window.docs = {
       currentPagename: "pulling_data_into_powerbi",
-      currentTitle: "Pulling Data Into PowerBI",
+      currentTitle: "Connecting KoboToolbox to Power BI",
       currentUrl: ("index.html").replace("index.html", "pulling_data_into_powerbi.html"),
       rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
