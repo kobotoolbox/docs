@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Pulling Data Into Excel Power Query &#8212; KoboToolbox  documentation</title>
+    <title>Connecting KoboToolbox to Microsoft Excel &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -104,112 +104,150 @@
 
         <section class="page__body" role="main">
           
-  <section id="pulling-data-into-excel-power-query">
-<h1>Pulling Data Into Excel Power Query<a class="headerlink" href="#pulling-data-into-excel-power-query" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/pulling_data_into_excelquery.md" class="reference">15 Feb 2022</a></p>
-<p>For seamless data analysis, you can leverage the Kobo API to pull your data into
-other tools for data analysis. This article covers how to connect to the API to
-pull your data into <strong>Excel Power Query</strong>.</p>
-<section id="getting-kobo-api-for-excel-power-query">
-<h2>Getting Kobo API for Excel Power Query<a class="headerlink" href="#getting-kobo-api-for-excel-power-query" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Login to your account.</p></li>
-<li><p>Next, go to the API for your account by going to either
-<a class="reference external" href="https://kc.humanitarianresponse.info/api/v1">https://kc.humanitarianresponse.info/api/v1</a>
-or <a class="reference external" href="https://kc.kobotoolbox.org/api/v1/">https://kc.kobotoolbox.org/api/v1/</a>.
-Select the URL for the instance in which your account is located.</p></li>
-<li><p>Under the <strong>Data</strong> heading, click on <code class="docutils literal notranslate"><span class="pre">/api/v1/data</span></code>.</p></li>
-</ul>
-<p><img alt="image" src="_images/api_json.jpg" /></p>
-<ul class="simple">
-<li><p>Click on <strong>GET</strong> and select <strong>xls</strong>.</p></li>
-</ul>
-<p><img alt="image" src="_images/api_datalist.jpg" /></p>
-<ul class="simple">
-<li><p>This action will download a text file to your computer called <code class="docutils literal notranslate"><span class="pre">data</span></code> which
-can be opened/viewed a text editor.</p></li>
-<li><p>Next, locate your project’s data structure inside the <code class="docutils literal notranslate"><span class="pre">data</span></code> file you
-downloaded. It will be in the following format: <code class="docutils literal notranslate"><span class="pre">id</span></code>, <code class="docutils literal notranslate"><span class="pre">id_string</span></code>, <code class="docutils literal notranslate"><span class="pre">title</span></code>,
-<code class="docutils literal notranslate"><span class="pre">description</span></code>, <code class="docutils literal notranslate"><span class="pre">url</span></code>.</p></li>
-</ul>
-<p><strong>For example:</strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-    <span class="p">(</span><span class="s2">&quot;id&quot;</span><span class="p">,</span> <span class="s2">&quot;1314&quot;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">&quot;id_string&quot;</span><span class="p">,</span> <span class="s2">&quot;a7tAUbZp9Ad4MkvW7JSrft&quot;</span><span class="p">)(</span><span class="s2">&quot;title&quot;</span><span class="p">,</span> <span class="s2">&quot;MIRA_DO&quot;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">&quot;description&quot;</span><span class="p">,</span> <span class="s2">&quot;MIRA_DO&quot;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s2">&quot;url&quot;</span><span class="p">,</span> <span class="s2">&quot;https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls&quot;</span><span class="p">),</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-<ul class="simple">
-<li><p>To pull the data, take the form URL
-(<code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/api/v1/data/1314?format=xls</span></code>) and
-replace <code class="docutils literal notranslate"><span class="pre">?format=xls</span></code> with <code class="docutils literal notranslate"><span class="pre">.xls</span></code>. For our example, the URL should now be:
-<code class="docutils literal notranslate"><span class="pre">https://kc.humanitarianresponse.info/api/v1/data/1314.xls</span></code></p></li>
-</ul>
+  <section id="connecting-kobotoolbox-to-microsoft-excel">
+<h1>Connecting KoboToolbox to Microsoft Excel<a class="headerlink" href="#connecting-kobotoolbox-to-microsoft-excel" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/df082614a0ae0bce8543b0c1474a9567fea7293e/source/pulling_data_into_excelquery.md" class="reference">23 Aug 2022</a></p>
+<p>KoboToolbox lets you connect your data collection project to external programs
+such as Microsoft Excel, Power BI or Google Sheets which is made possible
+through the Application Programming Interface (API).</p>
+<p>This article walks you through the process of connecting your project to Excel.
+If you would like to connect to Power BI, refer to the article
+<a class="reference internal" href="pulling_data_into_powerbi.html"><span class="doc std std-doc">here</span></a>.</p>
+<section id="step-1-get-the-synchronous-exports-url">
+<h2>Step 1: Get the synchronous exports URL<a class="headerlink" href="#step-1-get-the-synchronous-exports-url" title="Permalink to this headline">¶</a></h2>
+<p>To bring data into Excel, you first need to get the synchronous exports URL
+through the KoboToolbox API. The step by step process for doing this is outlined
+in the article <a class="reference internal" href="synchronous_exports.html"><span class="doc std std-doc">here</span></a>.</p>
 </section>
-<section id="pulling-data-in-microsoft-excel-by-making-data-public">
-<h2>Pulling data in Microsoft Excel (by making data public)<a class="headerlink" href="#pulling-data-in-microsoft-excel-by-making-data-public" title="Permalink to this headline">¶</a></h2>
-<p>Before transitioning over to Excel, ensure that there is <em>at least one record</em>
-stored in your data table in KoboToolbox <em>and</em> that you have made your data
-public by checking <strong>Anyone can view submissions made to this form</strong> from
-<strong>SETTINGS&gt;Sharing</strong>. Then click on <strong>Data</strong>, and under <strong>Data</strong>, click on
-<strong>From Web</strong>. You should now see a dialogue box to paste your URL and start
-pulling data from the server.</p>
-<p><img alt="image" src="_images/excel_updated.png" /></p>
+<section id="step-2-add-the-data-source">
+<h2>Step 2: Add the data source<a class="headerlink" href="#step-2-add-the-data-source" title="Permalink to this headline">¶</a></h2>
+<p class="note">These steps only work in Excel 2016 and later.</p>
+<ul class="simple">
+<li><p>Open Excel and create a blank workbook. You can also work within an existing
+workbook, even if it already has data.</p></li>
+<li><p>Click the <strong>Data</strong> tab, choose <strong>Get Data -&gt; From Other Sources -&gt; From Web</strong>.</p></li>
+<li><p>Paste the synchronous exports URL you copied and click <strong>OK</strong>.</p></li>
+</ul>
+<p><img alt="Get data" src="_images/get_data.gif" /></p>
+<ul class="simple">
+<li><p>Within the “Access Web content” dialogue box, click <strong>Basic</strong> for adding your
+authentication details.</p></li>
+<li><p>Enter your KoboToolbox username and password and click <strong>CONNECT</strong>.</p></li>
+</ul>
+<p><img alt="Authentication" src="_images/authentication.gif" /></p>
+<p class="note">
+  If you made your project's data public, you can connect without authentication
+  by choosing "Anonymous" in the "Access Web content" dialogue box. Learn more
+  about project permissions
+  <a href="managing_permissions.html" class="reference">here</a>.
+</p>
+<p>A list of the data contained in your project will be displayed in the Navigator.</p>
+<p class="note">
+  If your form has repeat groups, each group will show up as a separate
+  worksheet in the Navigator. Ensure that you use the "data_url_xlsx" link as
+  the CSV export <em>does not</em> include repeat groups.
+</p>
+<ul class="simple">
+<li><p>Choose the data you would like to import. To import multiple tables at once,
+click “Select multiple items”, then choose the items from the list.</p></li>
+<li><p>Click <strong>Load</strong> to bring the data in or click <strong>Transform Data</strong> to open the
+Power Query Editor which you can use to clean up and transform the data before
+loading it in.</p></li>
+</ul>
+<p><img alt="Choosing tables" src="_images/navigator.gif" /></p>
+<p class="note">
+  You can connect multiple projects in one Excel workbook. Repeat the process
+  above for each project, using their synchronous export URL. In most cases
+  where you have multiple tables, it may be necessary to set up table
+  relationships before you can use the fields to create reports and dashboards.
+  Set up relationships by going to
+  <strong>Data -> Data Tools -> Relationships</strong>. Learn more about
+  creating table relationships
+  <a
+    href="https://support.microsoft.com/en-us/office/create-a-relationship-between-tables-in-excel-fe1b6be7-1d85-4add-a629-8a3848820be3"
+    class="reference"
+    >here</a
+  >.
+</p>
+<section id="using-the-imported-data">
+<h3>Using the imported data<a class="headerlink" href="#using-the-imported-data" title="Permalink to this headline">¶</a></h3>
+<p>Excel gives you several ways to work with the data you have just imported.</p>
+<section id="create-pivottables-and-pivotcharts-from-the-data-model">
+<h4>1. Create PivotTables and PivotCharts from the Data Model<a class="headerlink" href="#create-pivottables-and-pivotcharts-from-the-data-model" title="Permalink to this headline">¶</a></h4>
+<p>A PivotTable is a powerful tool used to calculate, summarize, and analyze data -
+allowing you to see comparisons, patterns, and trends in the data. Data
+summarized in PivotTables can be visualized in a simple manner using
+PivotCharts.</p>
+<ul class="simple">
+<li><p>Click the <strong>Insert tab</strong>, then click on the drop-down arrow on PivotTable</p></li>
+<li><p>Choose <strong>From Data Model</strong></p></li>
+<li><p>Choose <strong>New Worksheet</strong></p></li>
+<li><p>Click <strong>OK</strong></p></li>
+</ul>
+<p><img alt="Creating a pivot table" src="_images/pivot.gif" /></p>
+<p>The imported tables will be shown in the <strong>PivotTable Fields</strong> side pane where
+you can choose the needed fields.</p>
 </section>
-<section id="pulling-data-in-microsoft-excel-without-making-data-public">
-<h2>Pulling data in Microsoft Excel (without making data public)<a class="headerlink" href="#pulling-data-in-microsoft-excel-without-making-data-public" title="Permalink to this headline">¶</a></h2>
-<p>Rather than exposing your data publicly, you can use your KoboToolbox login
-credentials to authenticate your request:</p>
+<section id="load-data-into-the-worksheet">
+<h4>2. Load data into the worksheet<a class="headerlink" href="#load-data-into-the-worksheet" title="Permalink to this headline">¶</a></h4>
+<p>When you import a single table, such as when your project did not have any
+repeating groups, the data is automatically loaded as a table on the worksheet.
+However, when your data comes as multiple tables, the tables are listed in the
+<strong>Queries &amp; Connections</strong> panel.</p>
+<p>To load this data into your worksheet:</p>
 <ul class="simple">
-<li><p>When you get the dialogue box, paste your URL.</p></li>
+<li><p>Right-click a table from the <strong>Queries and Connections</strong> pane and choose
+<strong>Load To</strong>. (if you don’t see the pane, go to <strong>Data -&gt; Queries and
+Connections</strong>.</p></li>
+<li><p>On the next dialogue box, choose <strong>Table</strong> and click <strong>OK</strong>. You may also
+choose the other available options depending on your need.</p></li>
 </ul>
-<p><img alt="image" src="_images/url1.png" /></p>
+<p><img alt="Loading a table in Excel" src="_images/load_table.gif" /></p>
+<p>You can do this for all the tables listed in the <strong>Queries and Connections</strong>
+pane.</p>
+</section>
+</section>
+</section>
+<section id="updating-the-data-in-your-reports">
+<h2>Updating the data in your reports<a class="headerlink" href="#updating-the-data-in-your-reports" title="Permalink to this headline">¶</a></h2>
+<p>When your project’s data is updated on the KoboToolbox server, such as when you
+have new submissions, changed validation statuses, edits, or deletions, you will
+need to synchronize it with your reports. In Excel:</p>
 <ul class="simple">
-<li><p>You should now see a new dialogue box as shown in the image below:</p></li>
+<li><p>Navigate to the <strong>Data</strong> tab</p></li>
+<li><p>Under “Queries and connections”, click <strong>Refresh</strong></p></li>
 </ul>
-<p><img alt="image" src="_images/basic_authentication.png" /></p>
-<ul class="simple">
-<li><p>Then select <strong>Basic</strong>. You should be able to see a place where you are able
-to input your login credentials. Use your KoboToolbox credentials and that
-should load your data to Excel.</p></li>
-</ul>
-<p><img alt="image" src="_images/login_credentials.png" /></p>
 </section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
-<section id="reset-excel-s-data-source-settings">
-<h3>Reset Excel’s Data Source Settings<a class="headerlink" href="#reset-excel-s-data-source-settings" title="Permalink to this headline">¶</a></h3>
-<p>Sometimes, you may not be able to see the dialogue box to input your login
-credentials. In such case, you will have to do the following to reset your
-Excel’s <strong>Data Source Settings</strong>.</p>
+<section id="failing-to-connect-to-kobotoolbox">
+<h3>Failing to connect to KoboToolbox<a class="headerlink" href="#failing-to-connect-to-kobotoolbox" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes, even after entering the correct credentials to connect to your
+project, you might get an error. This may happen if Excel was configured to
+connect to one account before, and you are now trying to connect using a
+different account from the same KoboToolbox server, i.e. both from the
+Humanitarian server.</p>
+<p>To reset authentication settings:</p>
 <ul class="simple">
-<li><p>Click on <strong>Data</strong> and under <strong>Data</strong> you will need to click on <strong>Get Data</strong>.</p></li>
+<li><p>Go to <strong>Data tab -&gt; Get Data -&gt; Data source settings</strong>. Select the existing
+permissions in the dialogue box and click <strong>Clear Permissions</strong>. Close and try
+adding the new connection again.</p></li>
 </ul>
-<p><img alt="image" src="_images/home.png" /></p>
-<ul class="simple">
-<li><p>Then click on <strong>Data Source Settings</strong>.</p></li>
-</ul>
-<p><img alt="image" src="_images/home_next.png" /></p>
-<ul class="simple">
-<li><p>You will now be able to see a dialogue box, <strong>Data source settings</strong>. Here,
-you will need to press <strong>Clear Permissions</strong>. With this, you should be able
-to see the dialogue box to input your login credentials.</p></li>
-</ul>
-<p><img alt="image" src="_images/data_source_settings.png" /></p>
-<p>If you wish to learn more on resetting your Excel’s <strong>Data Source Settings</strong>
-feel free to explore
-<a class="reference external" href="https://docs.microsoft.com/en-us/power-query/connectorauthentication">here</a>.</p>
+<p><img alt="Clearing data source settings" src="_images/data_source_settings.gif" /></p>
 </section>
-<section id="updating-data-in-microsoft-excel">
-<h3>Updating Data in Microsoft Excel<a class="headerlink" href="#updating-data-in-microsoft-excel" title="Permalink to this headline">¶</a></h3>
-<p>Once you have synced KoboToolbox with Excel through <strong>Excel Power Query</strong>, you
-should have the dataset stored locally. However, when the dataset on the server
-updates (i.e. through new submissions, deletions, amendments), your local
-dataset does not automatically update. To resync your data, you will need to
-click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p>
-<p><em>Thanks to Awais Awan for writing the initial draft of this post.</em></p>
+<section id="failing-to-refresh-data">
+<h3>Failing to refresh data<a class="headerlink" href="#failing-to-refresh-data" title="Permalink to this headline">¶</a></h3>
+<p>If you are getting an error when refreshing data, there could be a number of
+reasons:</p>
+<ul class="simple">
+<li><p>Your authentication details might have changed. You will need to follow the
+instructions above to change your <strong>Data Source Settings</strong>.</p></li>
+<li><p>One or more fields in your form might have been deleted or renamed.
+<a class="reference external" href="https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-query-overview">You will need to edit the query in Power Query</a>.</p></li>
+<li><p>There might be a data-type mismatch, especially if you changed the data-type
+of one or more fields in Excel. You can attempt to reset the data-type before
+refreshing the connection.</p></li>
+</ul>
 </section>
 </section>
 </section>
@@ -225,7 +263,7 @@ click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Pulling Data Into Excel Power Query"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Connecting KoboToolbox to Microsoft Excel"
               class="feedback-button"
               target="_blank"
             >
@@ -335,10 +373,10 @@ click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p
 <li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Viewing and Creating Custom Reports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, Sharing, and Exporting GPS Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Connecting to your data using synchronous exports</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Pulling Data Into Excel Power Query</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#getting-kobo-api-for-excel-power-query">Getting Kobo API for Excel Power Query</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pulling-data-in-microsoft-excel-by-making-data-public">Pulling data in Microsoft Excel (by making data public)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pulling-data-in-microsoft-excel-without-making-data-public">Pulling data in Microsoft Excel (without making data public)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Connecting KoboToolbox to Microsoft Excel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#step-1-get-the-synchronous-exports-url">Step 1: Get the synchronous exports URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#step-2-add-the-data-source">Step 2: Add the data source</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-the-data-in-your-reports">Updating the data in your reports</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
@@ -418,7 +456,7 @@ click the <strong>Data</strong> button and then <strong>Refresh All</strong>.</p
   <script>
     window.docs = {
       currentPagename: "pulling_data_into_excelquery",
-      currentTitle: "Pulling Data Into Excel Power Query",
+      currentTitle: "Connecting KoboToolbox to Microsoft Excel",
       currentUrl: ("index.html").replace("index.html", "pulling_data_into_excelquery.html"),
       rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
