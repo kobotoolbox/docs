@@ -1,8 +1,5 @@
 # Form Settings and Metadata
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/65f231ab610b64c845214c095ff3ada24e8615d1/source/form_meta.md" class="reference">31
-Jul 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d675e3c3ecffee5a9639a5301b3c2b11769a1a74/source/form_meta.md" class="reference">25 Aug 2022</a>
 
 In the formbuilder, there are a number of optional configurations you can set
 for your project. You can access these by clicking on the **Layout & Settings**
