@@ -1,5 +1,8 @@
 # Form Settings and Metadata
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/65f231ab610b64c845214c095ff3ada24e8615d1/source/form_meta.md" class="reference">31 Jul 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/65f231ab610b64c845214c095ff3ada24e8615d1/source/form_meta.md" class="reference">31
+Jul 2022</a>
 
 In the formbuilder, there are a number of optional configurations you can set
 for your project. You can access these by clicking on the **Layout & Settings**
@@ -19,16 +22,16 @@ Metadata are hidden questions that can aid data analysis and can be used for
 auditing and data integrity purposes. The metadata is captured in the background
 during the normal data collection process:
 
-| Metadata         | Description                                                                                                                                     |
-| :--------------- | :---------------------------------------------------------------------------------------------------------------------------------------------- |
-| Start Time       | Date and time when opening the form (timestamp)                                                                                                 |
-| End Time         | Date and time when finishing the form ("Submit" button pressed)                                                                                 |
-| Today            | The date of the form's submission                                                                                                               |
-| Username         | The username of the enumerator if [authentication is used](managing_permissions.md#requiring-passwords-for-accessing-forms) for data collection |
-| Audit            | Record an audit log while the form is being completed. Learn more about audit logging [here](audit_logging.md)                                  |
-| Background Audio | Record audio in the background (only available in KoboCollect)                                                                                  |
-| Device ID        | IMEI (International Mobile Equipment Identity)                                                                                                  |
-| Phone Number\*   | The cellphone number of the data collection device                                                                                              |
+| Metadata         | Description                                                                                                                                                |
+| :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Start Time       | Date and time when opening the form (timestamp)                                                                                                            |
+| End Time         | Date and time when finishing the form ("Submit" button pressed)                                                                                            |
+| Today            | The date of the form's submission                                                                                                                          |
+| Username         | The username of the enumerator if [authentication is used](managing_permissions.md#requiring-passwords-for-accessing-enketo-web-forms) for data collection |
+| Audit            | Record an audit log while the form is being completed. Learn more about audit logging [here](audit_logging.md)                                             |
+| Background Audio | Record audio in the background (only available in KoboCollect)                                                                                             |
+| Device ID        | IMEI (International Mobile Equipment Identity)                                                                                                             |
+| Phone Number\*   | The cellphone number of the data collection device                                                                                                         |
 
 <p class="note">
   The Phone Number meta question is only captured on mobile devices that have a
