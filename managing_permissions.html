@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Managing Permissions &#8212; KoboToolbox  documentation</title>
+    <title>Sharing Your Project and Managing Permissions &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -104,102 +104,160 @@
 
         <section class="page__body" role="main">
           
-  <section id="managing-permissions">
-<h1>Managing Permissions<a class="headerlink" href="#managing-permissions" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/managing_permissions.md" class="reference">15 Feb 2022</a></p>
-<p><strong>Learn how to grant various permissions for other users to collaborate on your
-projects</strong></p>
-<p>KoboToolbox allows giving different permission levels to a data collection
-project. While most users may only use a single user to manage, access, and
-enter data for a given project, sometimes more complex scenarios require
+  <section id="sharing-your-project-and-managing-permissions">
+<h1>Sharing Your Project and Managing Permissions<a class="headerlink" href="#sharing-your-project-and-managing-permissions" title="Permalink to this headline">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d675e3c3ecffee5a9639a5301b3c2b11769a1a74/source/managing_permissions.md" class="reference">25 Aug 2022</a></p>
+<p>KoboToolbox allows you to give different levels of access to different users by
+setting flexible permission levels within each project. While most users may
+only need to manage a single account to access, enter and review data for a
+given project, sometimes more complex scenarios require multiple users with
 different levels of access.</p>
-<section id="requiring-passwords-for-accessing-forms">
-<h2>Requiring passwords for accessing forms<a class="headerlink" href="#requiring-passwords-for-accessing-forms" title="Permalink to this headline">¶</a></h2>
-<p>By default KoboToolbox only requires a username and password for accessing data
-and managing your projects. Forms can be accessed by anyone who knows the
-respective URL. To require users to log in to access your forms, go to Settings
-inside your online account and check the ‘<strong>Require authentication to see forms
-and submit data</strong>’ box. (<em>Note: currently requiring authentication can only be
-set globally for all the projects in your account and not just for individual
-projects.</em>)</p>
-<p><img alt="image" src="_images/account_settings.jpg" /></p>
-<p><img alt="image" src="_images/user_permissions.jpg" /></p>
-</section>
-<section id="setting-project-specific-user-permissions">
-<h2>Setting project-specific user permissions<a class="headerlink" href="#setting-project-specific-user-permissions" title="Permalink to this headline">¶</a></h2>
-<p><img alt="image" src="_images/proj_permissions.jpg" /></p>
-<p>To control project sharing permissions go to the <em>Sharing</em> tab in the <em>Settings</em>
-page in your data collection project, enter the username of the user who should
-get new permissions, select the permission level checkbox, then click GRANT
-PERMISSIONS. The available permissions are:</p>
+<p>For example, you can share a project with some users and only allow them to
+submit data to the project through their account, and adjust the settings such
+that others can only view or edit the submitted data.</p>
+<p>This article describes how you can grant permissions for other KoboToolbox users
+to collaborate on your projects.</p>
+<section id="requiring-passwords-for-accessing-enketo-web-forms">
+<h2>Requiring passwords for accessing Enketo web forms<a class="headerlink" href="#requiring-passwords-for-accessing-enketo-web-forms" title="Permalink to this headline">¶</a></h2>
+<p>By default, KoboToolbox only requires a username and password for accessing data
+and managing your projects. When a project has been deployed, the Enketo web
+form can be accessed by anyone who knows its URL. In this case, any individual
+with access to the form URL can send submissions to the project.</p>
+<p>In some cases, you may wish to limit data entry to require that individuals be
+logged into their KoboToolbox user accounts.</p>
 <ul class="simple">
-<li><p>View Form</p></li>
-<li><p>Edit Form</p></li>
-<li><p>View submissions</p></li>
-<li><p>Add Submissions</p></li>
-<li><p>Edit and Delete Submissions</p></li>
-<li><p>Validate Submissions</p></li>
+<li><p>Go to <strong>ACCOUNT SETTINGS</strong> inside your KoboToolbox account</p></li>
+<li><p>Check “Require authentication to see forms and submit data”</p></li>
 </ul>
-<p>Some permissions automatically grant other permissions. Example: If a user is
-granted ‘Add Submissions’ they will also be able to ‘View Form’.</p>
-<p>To copy a team and their associated permissions from another project, click on
-the link at the bottom of the page. Clicking the link will overwrite any
-existing settings already defined in the current project.</p>
+<p><img alt="Requiring passwords" src="_images/requiring_passwords.gif" /></p>
+<p class="note">
+  Setting forms to require authentication can only be set globally for all the
+  projects in your account and not for individual projects.
+</p>
+</section>
+<section id="sharing-a-project-with-other-users-and-setting-their-permissions">
+<h2>Sharing a project with other users and setting their permissions<a class="headerlink" href="#sharing-a-project-with-other-users-and-setting-their-permissions" title="Permalink to this headline">¶</a></h2>
+<p>The following steps show how you can share a project with other KoboToolbox
+users and control which users can view, share, or edit your form or submissions.</p>
+<ul class="simple">
+<li><p>Go to the <strong>Sharing</strong> tab in the <strong>SETTINGS</strong> page in your data collection
+project</p></li>
+<li><p>Enter the username of the user who you would like to share the form with</p></li>
+<li><p>Select the desired permission level</p></li>
+<li><p>Click <strong>GRANT PERMISSIONS</strong></p></li>
+</ul>
+<p><img alt="Granting permissions" src="_images/grant_permissions.gif" /></p>
+<section id="available-permissions">
+<h3>Available permissions<a class="headerlink" href="#available-permissions" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>View form</p></li>
+<li><p>Edit form</p></li>
+<li><p>View submissions</p></li>
+<li><p>Add submissions</p></li>
+<li><p>Edit submissions</p></li>
+<li><p>Validate submissions</p></li>
+<li><p>Delete submissions</p></li>
+<li><p>Manage project</p></li>
+</ul>
+<p>Some permissions automatically grant other permissions. For example, if a user
+is granted “Add submissions” they will also be granted “View form.”</p>
+</section>
 </section>
 <section id="assigning-add-submissions-rights-for-specific-users">
-<h2>Assigning ‘Add Submissions’ rights for specific users<a class="headerlink" href="#assigning-add-submissions-rights-for-specific-users" title="Permalink to this headline">¶</a></h2>
-<p>You might want to use one or more users other than your own account to collect
-data. For example, you created a form and project but have three enumerators in
-the field, who should only be able to submit data but not access the collected
-information. Assuming you created your data collection project with username1
-and want to share it with username2, username3, and username4:</p>
-<section id="in-the-online-platform">
-<h3>In the online platform:<a class="headerlink" href="#in-the-online-platform" title="Permalink to this headline">¶</a></h3>
+<h2>Assigning “Add submissions” rights for specific users<a class="headerlink" href="#assigning-add-submissions-rights-for-specific-users" title="Permalink to this headline">¶</a></h2>
+<p>If you have enumerators in the field collecting data, you might want to ensure
+they are not able to see any of the data that has been submitted.</p>
+<p>In this case, instead of configuring KoboCollect with a single account’s
+username and password, you can create separate accounts for each enumerator, and
+share the form with limited permissions.</p>
+<p>In KoboToolbox:</p>
 <ul class="simple">
-<li><p>Sign up with the separate users needed for the field, i.e. username2,
-username3, and username4. Each one needs to be activated but can all point
-to the same email address.</p></li>
-<li><p>Sign back in to your own account (username1). Go to the Project that you
-want to allow others to submit to.</p></li>
-<li><p>Open the Settings page, and under ADD USER type in ‘username2’, then select
-‘Add Submissions’ and click GRANT PERMISSIONS.</p></li>
-<li><p>Repeat the last step for each user.</p></li>
+<li><p>Create an all enumerator accounts on the same server</p></li>
+<li><p>Share the project with each enumerator account using the steps described
+above, only giving them limited permissions (such as “Add Submissions”).</p></li>
+</ul>
+<p>In KoboCollect:</p>
+<ul class="simple">
+<li><p>On each device, configure KoboCollect using the username and password of the
+enumerator who will be using it. You can learn more about how to configure
+KoboCollect <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc std std-doc">here</span></a>.</p></li>
 </ul>
 </section>
-<section id="in-kobocollect">
-<h3>In KoboCollect:<a class="headerlink" href="#in-kobocollect" title="Permalink to this headline">¶</a></h3>
+<section id="row-level-permissions-for-users">
+<h2>Row-level permissions for users<a class="headerlink" href="#row-level-permissions-for-users" title="Permalink to this headline">¶</a></h2>
+<p>You can also set <a class="reference internal" href="row_level_permissions.html"><span class="doc std std-doc">row-level permissions</span></a> for users
+which can be helpful in several scenarios:</p>
 <ul class="simple">
-<li><p>Under General Settings in the URL field enter
-<a class="reference external" href="https://kc.kobotoolbox.org">https://kc.kobotoolbox.org</a> or
-<a class="reference external" href="https://kc.humanitarianresponse.info">https://kc.humanitarianresponse.info</a>
-as applicable (don’t include the username)</p></li>
-<li><p>Then enter the username and password for the user who will use the handset
-(e.g. username1).</p></li>
+<li><p>An organization implementing a project in collaboration with several partner
+organizations may want to give the partners access to only the data collected
+by them.</p></li>
+<li><p>A researcher may want to allow each enumerator access to the data <em>only</em> they
+collected and be able to make edits.</p></li>
+<li><p>In an organization, there may be clear roles of data collectors who may only
+be allowed to submit data, data quality officers who may only be allowed to
+view and validate submissions, and users who may be allowed to view reports
+and download the data.</p></li>
+</ul>
+<p>Setting row-level permissions:</p>
+<ul class="simple">
+<li><p>Share the data collection project using the steps described above</p></li>
+<li><p>Choose from <strong>View Submissions only from specific users</strong>, <strong>Edit Submissions
+only from specific users</strong>, <strong>Validate Submissions only from specific users</strong>,
+or <strong>Delete Submissions only from specific users</strong></p></li>
+<li><p>Add a comma-separated list of usernames with whom you want to share the
+project</p></li>
 </ul>
 </section>
+<section id="copy-permissions-from-another-project">
+<h2>Copy permissions from another project<a class="headerlink" href="#copy-permissions-from-another-project" title="Permalink to this headline">¶</a></h2>
+<p>To copy team permissions from a another project, click on “Copy team from
+another project” located at the bottom of the page and select the project to
+copy from.</p>
+<p class="note">
+  This will overwrite any existing sharing settings already defined on the
+  current project.
+</p>
 </section>
-<section id="advanced-view-submissions-permission-settings">
-<h2>Advanced View Submissions permission settings<a class="headerlink" href="#advanced-view-submissions-permission-settings" title="Permalink to this headline">¶</a></h2>
-<p>To set permissions for a user to view only data submitted by a subset of
-specified users or view data submitted only by themselves, please visit our
-<a class="reference external" href="https://support.kobotoolbox.org/en/articles/3345421-row-level-permissions">Row-Level Permissions</a>
-article to learn more.</p>
-<p><strong>A Project owner can give a “Validate Submissions” permission to other users.</strong></p>
-<p>Users with this permission can view a record, edit it if necessary, and assign a
-status to the record in question. Assigning a status to a particular
-record/submission raises data collection standards for teams with more than one
-enumerator.</p>
+<section id="removing-shared-projects-from-your-account">
+<h2>Removing shared projects from your account<a class="headerlink" href="#removing-shared-projects-from-your-account" title="Permalink to this headline">¶</a></h2>
+<p>To remove projects that were shared with your account by others:</p>
 <ul class="simple">
-<li><p>The validation status labels available include:</p>
-<ul>
-<li><p>On Hold: Record is under review.</p></li>
-<li><p>Approved: The data within this record is accurate.</p></li>
-<li><p>Flagged for Removal: The data within this record should be removed from
-the data set.</p></li>
+<li><p>On the project list, point your mouse on the project name and click the
+<i class="k-icon k-icon-more"></i> <strong>More action</strong> button</p></li>
+<li><p>Click <strong>Remove shared form</strong></p></li>
+<li><p>Click <strong>REMOVE</strong></p></li>
 </ul>
-</li>
+<p><img alt="Remove Sharing" src="_images/remove_permissions.gif" /></p>
+</section>
+<section id="making-your-project-and-data-public">
+<h2>Making your project and data public<a class="headerlink" href="#making-your-project-and-data-public" title="Permalink to this headline">¶</a></h2>
+<p>In addition to sharing your project with specific users, you can also make your
+form and submissions public:</p>
+<ul class="simple">
+<li><p>Go to the <strong>Sharing</strong> tab in the <strong>SETTINGS</strong> page in your data collection
+project.</p></li>
+<li><p>Select the options <strong>Anyone can view this form</strong> or <strong>Anyone can view
+submissions made to this form</strong>.</p></li>
 </ul>
-<p>More on “Validate Submissions” can be <a class="reference internal" href="record_validation.html"><span class="doc std std-doc">found here</span></a>.</p>
+<p><img alt="Making data public" src="_images/make_data_public.png" /></p>
+<p>A URL will be displayed, which you can share with anyone to provide access to
+the form and/or the submission data without logging in. If the form is made
+public, anyone with the link may be able to:</p>
+<ul class="simple">
+<li><p>Preview the form</p></li>
+<li><p>Download the form as XLS or XML</p></li>
+</ul>
+<p>In addition, if the data is also public:</p>
+<ul class="simple">
+<li><p>View the data in the <strong>Table</strong> view</p></li>
+<li><p>View and print <strong>Reports</strong></p></li>
+<li><p>View the <strong>Gallery</strong></p></li>
+<li><p><strong>Download</strong> the data</p></li>
+<li><p>View the data in the <strong>Map</strong> view</p></li>
+</ul>
+<p>Here we can see what parts of the project the public will have access to when
+they open the URL.</p>
+<p><img alt="Public project" src="_images/public_project.gif" /></p>
 </section>
 </section>
 
@@ -214,7 +272,7 @@ the data set.</p></li>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Managing Permissions"
+              href="https://ee.humanitarianresponse.info/single/OPizwor2?d[page]=Sharing Your Project and Managing Permissions"
               class="feedback-button"
               target="_blank"
             >
@@ -320,11 +378,14 @@ the data set.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and Downloading Your Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and Unarchiving Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Managing Permissions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#requiring-passwords-for-accessing-forms">Requiring passwords for accessing forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#setting-project-specific-user-permissions">Setting project-specific user permissions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#assigning-add-submissions-rights-for-specific-users">Assigning ‘Add Submissions’ rights for specific users</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#advanced-view-submissions-permission-settings">Advanced View Submissions permission settings</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Sharing Your Project and Managing Permissions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#requiring-passwords-for-accessing-enketo-web-forms">Requiring passwords for accessing Enketo web forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sharing-a-project-with-other-users-and-setting-their-permissions">Sharing a project with other users and setting their permissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assigning-add-submissions-rights-for-specific-users">Assigning “Add submissions” rights for specific users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#row-level-permissions-for-users">Row-level permissions for users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copy-permissions-from-another-project">Copy permissions from another project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#removing-shared-projects-from-your-account">Removing shared projects from your account</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-your-project-and-data-public">Making your project and data public</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Viewing and Creating Custom Reports</a></li>
@@ -407,7 +468,7 @@ the data set.</p></li>
   <script>
     window.docs = {
       currentPagename: "managing_permissions",
-      currentTitle: "Managing Permissions",
+      currentTitle: "Sharing Your Project and Managing Permissions",
       currentUrl: ("index.html").replace("index.html", "managing_permissions.html"),
       rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
