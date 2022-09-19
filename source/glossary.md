@@ -16,6 +16,7 @@
 - **Project Settings** - The part of the application where User can manage given Project's Permissions, REST Services and Form Settings.
 - **REST Services** - An advanced configuration option of a Project, where User can create and customize an additional endpoint for Submissions to be passed to.
 - **Project Data** - All collected Submissions (and their media files) to a given Project.
+- **Data Table** - The big table that displays Submissions from given Project. It allows filtering, ordering, validating and processing Submissions in various ways.
 - **Submission** - A unique instance of responses to questions from a Project Form. Also contain some metadata and (if applicable) all media files uploaded by User for Question responses.
 - **Enketo** - A third party application that is being used to collect data for given Form and to edit existing Submissions. Enketo is an XForms client.
 - **XForm** - An XML format used for collecting inputs from web forms. Not accessible to Users, part of the behind the scenes functionalities. Used mainly be Enketo.
