@@ -8,16 +8,20 @@ html body {
 
     padding-top: rem(45px);
     padding-bottom: rem(45px);
+    max-width: 100%;
   }
 
   &.page--has-sidebar {
     @include screen-big() {
       .page__wrapper {
+        max-width: 77.5rem;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
       }
 
       .page__content {
+        max-width: 70%;
         flex: 1;
       }
 
@@ -69,9 +73,72 @@ html body {
       vertical-align: middle;
     }
 
-    p {
+    ul {
+      margin-left: 1.5em;
+    }
+
+    table {
+      margin-bottom: 1.5em;
+      th {
+        p {
+          font-weight: 600;
+          margin: 0 auto;
+        }
+      }
+      td.text-left {
+        text-align: left;
+        p {
+          margin: 0 auto;
+        }
+      }
+    }
+
+    pre {
+      background-color: $c_solitude;
+      padding-top: 1.5em;
+      padding-bottom: 1.5em;
+    }
+
+    video {
+      display: block;
+      width: 100%;
+    }
+
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    p,
+    section.note {
       margin: 0 auto rem(18px);
+    }
+
+    p {
       font-weight: 300;
+    }
+
+    p.note {
+      display: block;
+      border: 2px solid $c_denim;
+      border-radius: 4px;
+      padding: 1em 0.8em;
+    }
+
+    section.note {
+      display: block;
+      border: 2px solid $c_denim;
+      border-radius: 4px;
+      padding: 1em 0.8em;
+
+      > *:first-child {
+        margin-top: 0;
+      }
+
+      > *:last-child {
+        margin-bottom: 0;
+      }
     }
 
     p,
@@ -195,60 +262,6 @@ html body {
   }
 }
 
-.page__related {
-  border-top: 1px solid $c_linkwater;
-  padding: rem(18px) 0;
-  margin: rem(45px) auto 0;
-  line-height: inherit;
-
-  nav#rellinks {
-    display: block;
-    width: 100%;
-    float: none;
-
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      width: 100%;
-      margin: 0;
-      padding: 0;
-      list-style: none;
-
-      a {
-        color: inherit;
-        font-size: inherit;
-        border-bottom: none;
-        text-decoration: none;
-        display: inline-block;
-        vertical-align: middle;
-
-        &:hover {
-          color: $c_denim;
-          border-bottom: none;
-          text-decoration: underline;
-        }
-      }
-
-      li {
-        color: $c_blue;
-
-        &:first-of-type {
-          text-align: left;
-        }
-
-        &:last-of-type {
-          text-align: right;
-        }
-
-        & + li::before {
-          content: none;
-        }
-      }
-    }
-  }
-}
-
 .page__breadcrumbs {
   font-size: rem(18px);
   margin-bottom: rem(12px);
@@ -294,5 +307,33 @@ html body {
         }
       }
     }
+  }
+}
+
+.page__feedback {
+  text-align: center;
+  background-color: $c_zumthor;
+  color: $c_denim;
+  padding: rem(30px);
+  margin-top: rem(40px);
+  border-radius: rem(6px);
+
+  h1 {
+    font-weight: 700;
+    font-size: rem(24px);
+    margin: 0;
+  }
+
+  p {
+    margin: 1rem 0;
+  }
+
+  a.feedback-button {
+    display: inline-block;
+    vertical-align: top;
+    padding: rem(4px) rem(16px);
+    border: rem(2px) solid currentColor;
+    border-radius: rem(3px);
+    text-decoration: none;
   }
 }

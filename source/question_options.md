@@ -1,37 +1,86 @@
 # Using the Question Options
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/fa75e1fccbcbd8c348bf6ace4b7590d260f745ef/source/question_options.md" class="reference">8 Mar 2022</a>
 
-The Question Options screen contains some very useful features to get the most out of your form. You can click Setting to access the Question Options screen.
+After adding a question, there are many different customizations you can make to
+it using the question options. To get to the question options screen of a
+question, lick its <i class="k-icon k-icon-settings"></i> Settings button.
 
-![image](/images/question_options/options.png)
+![Question options](/images/question_options/options2.png)
 
 ## Data Column Name
 
 The **Data Column Name** is the unique identifier (ID) of your question.
 
-This field is mandatory for every question. Only letters, numbers, and underscores are allowed in this field, and the field must start with a letter or an underscore. You can input anything you like, such as `what_is_your_name` or `age`.
+This field is mandatory for every question. Only letters, numbers, and
+underscores are allowed in this field, and the field must start with a letter or
+an underscore. You can input anything you like, such as `what_is_your_name` or
+`age`.
 
-The Data Column Name (ID) is important because it is used in the column headers of tables and spreadsheets after your data has been collected. If you want your spreadsheet to follow a specific naming convention, you should specify the name for each of your questions before deploying the form as a data collection project.
+The Data Column Name is important because it is used in the column headers of
+tables and spreadsheets after your data has been collected. If you want your
+spreadsheet to follow a specific naming convention, you should specify the name
+for each of your questions before deploying the form as a data collection
+project.
 
 ## Guidance Hint (optional)
 
-**Guidance Hint** are help texts that will be displayed underneath your questions on the form.
+**Guidance Hints** are extra instructions that you can add to your questions as
+notes. By default in Enketo web forms, the guidance hints are displayed under an
+accordion which can be expanded and collapsed as shown below.
 
-Hints are optional. The hint text is often used to provide additional instructions to your interviewer staff. For example, your question label might be `How old are you?` and your hint might be `If respondent doesn't know, enter 999`.
+![Guidance hint in Enketo Web forms](/images/question_options/guidance_hint_enketo.gif)
+
+On KoboCollect, guidance hints are not displayed by default. You can choose how
+guidance hints should be displayed in your forms by going to Settings -> Form
+Management -> Show guidance for questions. Here you have 3 choices: No, Yes -
+always shown and Yes - always collapsed.
+
+![Guidance hint in KoboCollect](/images/question_options/guidance_hint_kobocollect.gif)
+
+Guidance hints can be used as internal notes when collaborating with others in
+developing the form. You can also show them on printouts or extra instructions
+during training for enumerators.
 
 ## Mandatory Response
 
-If a question is **mandatory**, the interviewer needs to provide an answer in order to finalize the form.
+This settings allows you to specify whether the question must be responded to at
+all times or not. In XLSForm, this is called `required`.
+
+In KoboToolbox, there are three options for mandatory response:
+
+1. Yes - The question must be answered at all times. If a response is not
+   provided, the user will not be able to move to the next question or save the
+   form.
+2. No - The question is not mandatory and hence can be manually skipped.
+3. Custom logic - You can define logic using XLSForm code which will define when
+   the question will be mandatory. For example, if you set the following custom
+   logic `${age} > 18`, the question will be mandatory when a preceding question
+   with the data column name `age` is greater than 18.
 
 ## Default Response (optional)
 
-This allows specifying a default response that the interviewer can accept or change.
+This allows specifying a default response that the interviewer can accept or
+change.
 
-In most studies this would not be recommended as it might create an accidental bias, but it may be useful for date or time questions where the responses tend to be around a certain known point. For date questions, the default response needs to be written in the format `YYYY-MM-DD` e.g. `1974-12-31`). For Select One or Select Many questions the response needs to be written using the unique Value - not the label (e.g. `first_grade` rather than `First grade`).
+In most studies this would not be recommended as it might create an accidental
+bias, but it may be useful for date or time questions where the responses tend
+to be around a certain known point.
+
+For <i class="k-icon k-icon-qt-date"></i> Date questions, the default response
+needs to be written in the format `YYYY-MM-DD` e.g. `1974-12-31`).
+
+For <i class="k-icon k-icon-qt-select-one"></i> Select One or
+<i class="k-icon k-icon-qt-select-many"></i> Select Many questions the response
+needs to be written using the unique Value (xml value) - not the label (e.g.
+`first_grade` rather than `First grade`).
 
 ## Appearance (optional)
 
-This advanced setting allows displaying the question in a modified way. Certain appearance options will only be available depending on the [Question Type](question_types.md).
+This advanced setting allows displaying the question in a modified way. Certain
+appearance options will only be available depending on the
+[Question Type](question_types.md).
 
-For a full list of appearance values, visit [ODK's appearance documentation](http://xlsform.org/en/#appearance).
+For a full list of appearance values, visit
+[ODK's appearance documentation](http://xlsform.org/en/#appearance).
 
-![image](/images/question_options/appearance.png)
+![Question appearance oprions](/images/question_options/appearance.png)

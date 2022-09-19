@@ -1,0 +1,61 @@
+tr.table-sheets {
+  background-color: $c_solitude;
+}
+
+tr.table-sheets td.table-sheets__container {
+  min-width: 285px;
+  padding: 5px;
+
+  &::before {
+    content: '◄   ►';
+    margin: 0 10px 0 5px;
+    color: $c_linkwater;
+  }
+
+  &::after {
+    content: '+';
+    color: $c_linkwater;
+    display: inline-block;
+    margin-left: 15px;
+    width: 14px;
+    height: 14px;
+    line-height: 13px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid $c_linkwater;
+  }
+}
+
+/* mimic the Excel sheet navigation */
+tr.table-sheets .table-sheets__sheet {
+  display: inline-block;
+  min-width: 85px;
+  text-align: center;
+  border-right: 1px solid $c_gray;
+  padding: 0 5px;
+
+  &:first-of-type {
+    border-left: 1px solid $c_gray;
+  }
+
+  &.table-sheets__sheet--active {
+    position: relative;
+    font-weight: bold;
+    color: $c_blue;
+    border-bottom: 2px solid $c_blue;
+    background: white;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: -1px;
+      width: 100%;
+      height: 6px;
+      background-color: $c_white;
+      border-left: 1px solid $c_gray;
+      border-right: 1px solid $c_gray;
+    }
+  }
+}

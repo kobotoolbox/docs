@@ -10,3 +10,13 @@ i.icon {
     fill: currentColor;
   }
 }
+
+// Global styles for icons from KPI
+
+.k-icon {
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  line-height: 0;
+  font-size: 1.25em;
+}

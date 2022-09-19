@@ -13,9 +13,26 @@ html body div.footer {
 
   a {
     color: inherit;
+    opacity: 0.6;
+    text-decoration: none;
+    margin: 0px 10px;
+
+    &.inline {
+      margin: 0;
+    }
+
+    &:hover {
+      color: white;
+      opacity: 1;
+    }
   }
 
   p {
     @include page-wrapper();
+    margin: 0.4em auto;
+
+    &:last-child {
+      margin-top: 1.5em;
+    }
   }
 }

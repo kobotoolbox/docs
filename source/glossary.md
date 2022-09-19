@@ -18,13 +18,13 @@
 - **Project Data** - All collected Submissions (and their media files) to a given Project.
 - **Submission** - A unique instance of responses to questions from a Project Form. Also contain some metadata and (if applicable) all media files uploaded by User for Question responses.
 - **Enketo** - A third party application that is being used to collect data for given Form and to edit existing Submissions. Enketo is an XForms client.
-- **XForms** - An XML format used for collecting inputs from web forms. Not accessible to Users, part of the behind the scenes functionalities. Used mainly be Enketo.
+- **XForm** - An XML format used for collecting inputs from web forms. Not accessible to Users, part of the behind the scenes functionalities. Used mainly be Enketo.
 - **XLSForm** - XLSForm is a form standard created to help simplify the authoring of forms in Excel. XLSForms are simple to get started with but allow for the authoring of complex forms. These are accessible to Users (as outcome of export/import feature) and Power Users, who build their Forms in a spreadsheet application instead of Form Builder.
 - **Question Library** - The part of Project Dashboard where User can manage and create Library Items. It divides into My Library and Public Collections.
 - **My Library** - The part of the Question Library where User can view and manage their own Library Items or the ones they have access - subscribed Public Collections and Library Items shared by other Users.
 - **Public Collection** - A special type of collection that is visible to other Users and one that can be subscribed to. by subscribing to a Public Collection you will be able to import Library Items from that Collection into your Form in the Form Builder.
-- **Form Builder** - The part of the application where Users can create or edit Forms.
-- **Form** - (called **Asset** behind the scenes) The things that constitute what a person would interact with when they are submitting a response. User can create it in Form Builder. It consists of Questions, Choices, Groups, Skip Logic, Validation Criteria, Form Settings and Form Translations. It can be one of multiple Form Types: Survey, Question Block, Template, Collection.
+- **Formbuilder** - The part of the application where Users can create or edit Forms.
+- **Form** - (sometimes called **Asset** behind the scenes) The things that constitute what a person would interact with when they are submitting a response. User can create it in Form Builder. It consists of Questions, Choices, Groups, Skip Logic, Validation Criteria, Form Settings and Form Translations. It can be one of multiple Form Types: Survey, Question Block, Template, Collection.
 - **Form Type** - One of: Survey, Question Block, Template, Collection.
 - **Survey** - A Form containing all necessary requirements for it to be used in Project to collect data.
 - **Question Block** - A reusable small Group of Questions or a single Question that can be imported into other Question Block, Template or Survey.

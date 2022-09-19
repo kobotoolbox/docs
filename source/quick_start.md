@@ -1,18 +1,29 @@
 # Quick Start Overview
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/quick_start.md" class="reference">15 Feb 2022</a>
 
-Here's how to quickly get started with a **new form**, deploy it as a **survey project**, and **start collecting data** in the field.
+Here's how to quickly get started with a **new form**, deploy it as a **survey
+project**, and **start collecting data** in the field.
 
 ## Sign up and Login
 
-KoBoToolbox is a free and open source software. If you work for a humanitarian organization, please sign up at [kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info). If you are an individual or work for any other non-humanitarian organizations, please visit [kf.kobotoolbox.org](https://kf.kobotoolbox.org) to create a new account. After activating your account through the emailed link, you can log in to access your account. To find out more about which server you should use, please visit [here](server.md). 
+KoboToolbox is a free and open source software. If you work for a humanitarian
+organization, please sign up at
+[kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info). If you
+are an individual or work for any other non-humanitarian organizations, please
+visit [kf.kobotoolbox.org](https://kf.kobotoolbox.org) to create a new account.
+After activating your account through the emailed link, you can log in to access
+your account. To find out more about which server you should use, please visit
+[here](server.md).
 
 ## Create your first form
 
-1. Create your first form by clicking on New, then choose a source for your project and input project details.
+1. Create your first form by clicking on New, then choose a source for your
+   project and input project details.
 
     ![image](/images/quick_start/new_form.gif)
 
-2. Click on the + button to add your first question and choose a [response type](question_types.md).
+2. Click on the + button to add your first question and choose a
+   [response type](question_types.md).
 
     ![image](/images/quick_start/add_question.gif)
 
@@ -20,7 +31,8 @@ KoBoToolbox is a free and open source software. If you work for a humanitarian o
 
     ![image](/images/quick_start/settings.gif)
 
-4. To add more details to a question, click on a question's Settings. For example, you can add skip logic to a question.
+4. To add more details to a question, click on a question's Settings. For
+   example, you can add skip logic to a question.
 
     ![image](/images/quick_start/skip_logic.gif)
 
@@ -32,8 +44,12 @@ KoBoToolbox is a free and open source software. If you work for a humanitarian o
 
 6. To save the form click the Save button, then 'X' to close the form.
 
-7. To start collecting data you need to first [deploy your draft form as a new data collection project](deploy_form_new_project.md).
+7. To start collecting data you need to first
+   [deploy your draft form as a new data collection project](deploy_form_new_project.md).
 
     ![image](/images/quick_start/save.gif)
 
-8. You're ready to collect data! You can enter data [in the browser](data_through_webforms.md) on any device (computer, iPhone, Android) or use our Android application [KoBoCollect](kobocollect-android.md).
+8. You're ready to collect data! You can enter data
+   [in the browser](data_through_webforms.md) on any device (computer, iPhone,
+   Android) or use our Android application
+   [KoboCollect](kobocollect-android.md).

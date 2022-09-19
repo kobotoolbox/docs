@@ -3,7 +3,7 @@ Topics
 
 Search the knowledge base, browse our resources and visit our forum for more detail information
 
-.. README: please don't change :name: or :caption: of TOCs - they are used for 
+.. README: please don't change :name: or :caption: of TOCs - they are used for
 .. JavaScript code and for properly building the custom section pages. 
 .. If you need to change them, please contact a developer :-*
 
@@ -13,6 +13,9 @@ Search the knowledge base, browse our resources and visit our forum for more det
   :name: home-page-toc-getting-started
   
   welcome
+  creating_account
+  kobotoolbox_interface
+  overview_of_creating_a_project
   quick_start
   server
   is_my_data_safe  
@@ -22,6 +25,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   training_arabic
   training_french
   glossary
+  recently_updated
 
 .. toctree::
   :maxdepth: 2
@@ -30,17 +34,27 @@ Search the knowledge base, browse our resources and visit our forum for more det
 
   new_form
   edit_forms_excel
+  getting_started_xlsform
   xls_url
   formbuilder
   question_types
   question_options
   skip_logic
   validation_criteria
+  text_and_note
+  acknowledge
+  number_decimal_range
+  date_time
+  photo_audio_video_file
   rating_ranking
+  select_one_and_select_many
+  gps_questions
   calculate_questions
   advanced_calculate
   video_question_type
   matrix_response
+  adding_skip_to_matrix
+  calculations_constraints_matrix
   responses_inside_question
   number_text_responses
   user_specified_other
@@ -66,6 +80,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   deploy_form_new_project
   question_library
   external_file
+  library_locking
 
 .. toctree::
   :maxdepth: 2
@@ -76,7 +91,9 @@ Search the knowledge base, browse our resources and visit our forum for more det
   recording-interviews
   data_through_webforms
   data-offline
+  kobocollect_on_android_latest
   kobocollect-android
+  transferring_forms
   devices_for_data_collection
   hipaa_compliance
   troubleshooting_kobocollect
@@ -99,22 +116,28 @@ Search the knowledge base, browse our resources and visit our forum for more det
   managing_permissions
   creating_custom_reports
   export_gps
+  synchronous_exports
   pulling_data_into_excelquery
+  pulling_data_into_powerbi
   howto_edit_single_submissions
+  howto_edit_multiple_submissions
   photo_download
+  merging_dataset_excel_power_query
   recovering_previous_formdata
   converting_to_spss_and_stata
   excel_analyzer_guide
-  pulling_data_into_powerbi
   upload_to_gis
   row_level_permissions
+  dynamic_data_attachment
+  using_public_collections
+  public_collections_advanced_search
   api
   data_storage
 
   
 .. toctree::
   :maxdepth: 2
-  :caption: KoBoToolbox on Your Computer or Server
+  :caption: KoboToolbox on Your Computer or Server
   :name: home-page-toc-computer-server
   
   software_architecture

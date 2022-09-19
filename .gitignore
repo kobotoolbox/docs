@@ -11,3 +11,8 @@ koboenv/
 
 #temporary builds
 _build/
+temp-kpi-clone
+
+*.sublime-*
+
+.vscode/

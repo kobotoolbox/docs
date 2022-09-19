@@ -17,9 +17,9 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'KoBoToolbox'
-copyright = 'KoBoToolbox'
-author = 'KoBoToolbox'
+project = 'KoboToolbox'
+copyright = 'KoboToolbox'
+author = 'KoboToolbox'
 
 # The full version, including alpha/beta/rc tags
 # release = '1'
@@ -33,7 +33,10 @@ master_doc = 'index'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['recommonmark']
+extensions = ['myst_parser']
+
+# MyST markdown parser configuration
+myst_heading_anchors = 3
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -87,15 +90,19 @@ html_static_path = ['_static']
 # These paths are either relative to html_static_path
 # or fully qualified paths (eg. https://...)
 html_css_files = [
+    'kpi-icons/k-icons.css',
     'css/kobo_theme.css',
 ]
 html_js_files = [
-    'js/smoothscroll-polyfill.js',
-    'js/common.js',
-    'js/home_page_toc.js',
-    'js/sidebar_toc.js',
     'js/breadcrumbs.js',
-    'js/scrollto.js',
+    'js/common.js',
     'js/custom_sections.js',
+    'js/home_page_toc.js',
+    'js/scrollto.js',
+    'js/sidebar_toc.js',
+    'js/smoothscroll-polyfill.js',
+    'js/table-sheets.js',
 ]
+
+html_favicon = 'images/index/favicon.png'
 

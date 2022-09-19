@@ -1,30 +1,55 @@
 # Using HXL Tags
 
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/hxl.md" class="reference">15
+Feb 2022</a>
+
 ## What exactly is HXL?
 
-HXL stands for **Humanitarian Exchange Language**. The goal of HXL is to improve information sharing during a humanitarian crisis by creating a simple way to promote interoperablity of data. It does this by coding the data through hashtags (#) similar to Twitter. For more information on HXL, please [visit here](http://hxlstandard.org).
+HXL stands for **Humanitarian Exchange Language**. The goal of HXL is to improve
+information sharing during a humanitarian crisis by creating a simple way to
+promote interoperability of data. It does this by coding the data through
+hashtags (#) similar to Twitter. For more information on HXL, please
+[visit here](https://hxlstandard.org).
 
-## How to use the HXL feature in the Formbuilder
+## How to use the HXL feature in the formbuilder
 
-_Credits:  [David Megginson](http://www.megginson.com)_
-_Link to step-by-step [slide show guide](https://docs.google.com/presentation/d/123bHSkNh4T30CNq0i37IxOLfrqSC-3V_Khtkf6bIdg0/edit#slide=id.p)_
+_Credits: [David Megginson](http://www.megginson.com)_ _Link to step-by-step
+[slide show guide](https://docs.google.com/presentation/d/123bHSkNh4T30CNq0i37IxOLfrqSC-3V_Khtkf6bIdg0/edit#slide=id.p)_
 
-1. After starting a form and creating a question, go into Question Settings and in the Question Options tab, choose your HXL tag and add attributes.
+1. After starting a form and creating a question, go into Question Settings and
+   in the Question Options tab, choose your HXL tag and add attributes.
 
     ![image](/images/hxl/hxl.gif)
 
-2. After the form has been created, the project deployed, and data has been collected, go to the Downloads tab in the Data page. Select the export type as XLS and be sure to select **XML values and headers** for the value and header format. Then Export.
+2. After the form has been created, the project deployed, and data has been
+   collected, go to the Downloads tab in the Data page. Select the export type
+   as XLS and be sure to select **XML values and headers** for the value and
+   header format. Then Export.
 
     ![image](/images/hxl/xml_values.gif)
 
-3. Once you have exported and downloaded the data to your computer, open up the XLS file to see your HXL tags. It's okay to have KoBo metadata that doesn't have HXL hashtags.
+3. Once you have exported and downloaded the data to your computer, open up the
+   XLS file to see your HXL tags. It's okay to have Kobo metadata that doesn't
+   have HXL hashtags.
 
     ![image](/images/hxl/xls_affected.jpg)
 
-_Note: The hashtag before name is mandatory. Spaces are not allowed._
+<p class="note">The hashtag before name is mandatory and spaces are not allowed.</p>
 
 ## How to use HXL in an XLSForm
 
-When authoring an XLSForm, simply insert one extra column in any existing spreadsheet and fill it with HXL hashtags identifying the type of information in each column. See below for an example.
+When authoring an XLSForm, simply insert one extra column in any existing
+spreadsheet and fill it with HXL hashtags identifying the type of information in
+each column.
 
-![image](/images/hxl/xls.png)
+**survey**
+
+| type                 | name     | label                            | hxl        |
+| :------------------- | :------- | :------------------------------- | :--------- |
+| select_one countries | country  | Select affected country          | #country   |
+| select_one admin1    | province | Please select the province       | #adm1+code |
+| select_one admin2    | county   | Select the county                | #adm2+name |
+| select_one sector    | cluster  | Cluster                          | #sector    |
+| integer              | affected | Number of people affected        | #affected  |
+| integer              | reached  | Number of people reached to date | #reached   |

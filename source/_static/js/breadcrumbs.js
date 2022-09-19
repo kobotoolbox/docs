@@ -45,7 +45,7 @@
       }
       const listEl = document.getElementById(listId);
       listEl.classList.add("activated");
-      console.info("breadcrumbs ready", breadcrumbsCount);
+      console.info("Breadcrumbs ready.", breadcrumbsCount);
     }
   });
 })();

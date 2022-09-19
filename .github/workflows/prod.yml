@@ -28,7 +28,7 @@ jobs:
       run: npm start
 
     - name: Create virtual environment
-      run: python -m venv koboenv
+      run: python3 -m venv koboenv
 
     - name: Activate virtual environment
       run: source koboenv/bin/activate

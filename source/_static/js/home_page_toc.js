@@ -26,7 +26,7 @@
       showAll.href = window.docs.rootUrl + `${section.name}.html`;
       tocEl.appendChild(showAll);
     } else {
-      console.warn("section not found", tocEl)
+      console.warn("Section not found!", tocEl)
     }
   }
 
@@ -34,7 +34,7 @@
     const tocs = document.querySelectorAll(".toctree-wrapper[id^='home-page-toc-']");
     if (tocs.length !== 0) {
       tocs.forEach(setupToc)
-      console.info("home page TOCs ready");
+      console.info("Home page TOCs ready.");
     }
   });
 })();
