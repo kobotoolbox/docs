@@ -106,9 +106,7 @@
           
   <section id="editing-responses-in-multiple-submissions">
 <h1>Editing Responses in Multiple Submissions<a class="headerlink" href="#editing-responses-in-multiple-submissions" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong>
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/howto_edit_multiple_submissions.md" class="reference">15
-Feb 2022</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/509a98dad39e2899a5eff7e870481cf99749f321/source/howto_edit_multiple_submissions.md" class="reference">22 Sep 2022</a></p>
 <p>Users could always edit submissions as outlined in our support article
 <a class="reference internal" href="howto_edit_single_submissions.html"><span class="doc std std-doc">Editing or Deleting a Single Submission</span></a>.
 What if a user has to edit repeated typo errors or update missing responses for
@@ -116,14 +114,30 @@ all or most of the submissions from a particular survey project? Following the
 method outlined earlier should consume much time. Hence, KoboToolbox has
 developed a feature that should make editing straightforward, saving editing
 time.</p>
-<section id="editing-filled-up-responses-for-multiple-submissions">
-<h2>Editing filled-up responses for multiple submissions<a class="headerlink" href="#editing-filled-up-responses-for-multiple-submissions" title="Permalink to this headline">¶</a></h2>
+<section id="limitations-when-editing-responses-for-multiple-submissions">
+<h2>Limitations when editing responses for multiple submissions<a class="headerlink" href="#limitations-when-editing-responses-for-multiple-submissions" title="Permalink to this headline">¶</a></h2>
+<p>There are several limitations when performing the bulk-edit actions described in
+this article. The same is not the case when editing
+<a class="reference internal" href="howto_edit_single_submissions.html"><span class="doc std std-doc">individual submissions</span></a>. When using this
+method:</p>
+<ul class="simple">
+<li><p>Validation logic and calculations within your form are not re-evaluated.</p></li>
+<li><p>Editing questions within repeating groups is not currently supported.</p></li>
+<li><p>Coordinate points must follow pattern: <code class="docutils literal notranslate"><span class="pre">latitude</span> <span class="pre">longitude</span> <span class="pre">altitude</span> <span class="pre">accuracy</span></code>.
+Failure to do so will not cause an error, but may confuse your data analysis.</p></li>
+<li><p>Multiple select responses must consist of the correct <strong>choice names</strong>,
+separated by a space. Failure to do so will not cause an error, but will
+result in labels not being correctly applied when exported.</p></li>
+</ul>
+</section>
+<section id="editing-responses-for-multiple-submissions">
+<h2>Editing responses for multiple submissions<a class="headerlink" href="#editing-responses-for-multiple-submissions" title="Permalink to this headline">¶</a></h2>
 <p>The following is a screen generally seen for <strong>DATA&gt;Table</strong>.</p>
 <p><img alt="image" src="_images/edit_multiple_1.png" /></p>
-<p>The image shared above shows data input variance with the variable/question
-<strong>Country</strong> ranging from <em>America</em>, <em>U.S.A</em>, <em>US</em>, <em>United States of America</em>,
-<em>United States</em>, <em>usa</em> to <em>USA</em>. This section of the support article should
-outline <em>how to change all these varying <strong>Country</strong> names to <strong>USA</strong></em>.</p>
+<p>The image shared above shows data input variance with the question <strong>Country</strong>
+ranging from <em>America</em>, <em>U.S.A</em>, <em>US</em>, <em>United States of America</em>, <em>United
+States</em>, <em>usa</em> to <em>USA</em>. This section of the support article will outline <em>how
+to change all these varying <strong>Country</strong> names to <strong>USA</strong></em>.</p>
 <p><strong>Step 1:</strong></p>
 <p>To start editing responses for multiple submissions, users should either select
 a single record (marked <strong>1</strong>) or select multiple records (marked <strong>2</strong>).
@@ -160,8 +174,8 @@ from <em>America</em>, <em>U.S.A</em>, <em>US</em>, <em>United States of America
 they would see the following dialogue box.</p>
 <p><img alt="image" src="_images/edit_multiple_5.png" /></p>
 <p>Users could now filter the required response by typing it in the search filter
-located just below the <strong>Response</strong> header. This approach is useful when a
-user’s wishes to edit a single record.</p>
+located just below the <strong>Response</strong> header. This approach is useful when a user
+wishes to edit a single record.</p>
 <p><img alt="image" src="_images/edit_multiple_6.png" /></p>
 <p><strong>Step 3:</strong></p>
 <p>Users could press the <strong>EDIT</strong> button once it is known <em>what to edit and where
@@ -338,7 +352,8 @@ successful.</p>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editing or Deleting a Single Submission</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Editing Responses in Multiple Submissions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#editing-filled-up-responses-for-multiple-submissions">Editing filled-up responses for multiple submissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limitations-when-editing-responses-for-multiple-submissions">Limitations when editing responses for multiple submissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-responses-for-multiple-submissions">Editing responses for multiple submissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#editing-blank-responses-for-multiple-submissions">Editing blank responses for multiple submissions</a></li>
 </ul>
 </li>
