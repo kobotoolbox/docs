@@ -12,16 +12,31 @@ method outlined earlier should consume much time. Hence, KoboToolbox has
 developed a feature that should make editing straightforward, saving editing
 time.
 
-## Editing filled-up responses for multiple submissions
+## Limitations when editing responses for multiple submissions
+
+There are several limitations when performing the bulk-edit actions described in
+this article. The same is not the case when editing
+[individual submissions](howto_edit_single_submissions.md). When using this
+method:
+
+- Validation logic and calculations within your form are not re-evaluated.
+- Editing questions within repeating groups is not currently supported.
+- Coordinate points must follow pattern: `latitude longitude altitude accuracy`.
+  Failure to do so will not cause an error, but may confuse your data analysis.
+- Multiple select responses must consist of the correct **choice names**,
+  separated by a space. Failure to do so will not cause an error, but will
+  result in labels not being correctly applied when exported.
+
+## Editing responses for multiple submissions
 
 The following is a screen generally seen for **DATA>Table**.
 
 ![image](/images/howto_edit_multiple_submissions/edit_multiple_1.png)
 
-The image shared above shows data input variance with the variable/question
-**Country** ranging from _America_, _U.S.A_, _US_, _United States of America_,
-_United States_, _usa_ to _USA_. This section of the support article should
-outline _how to change all these varying **Country** names to **USA**_.
+The image shared above shows data input variance with the question **Country**
+ranging from _America_, _U.S.A_, _US_, _United States of America_, _United
+States_, _usa_ to _USA_. This section of the support article will outline _how
+to change all these varying **Country** names to **USA**_.
 
 **Step 1:**
 
@@ -32,19 +47,19 @@ with other features.
 
 ![image](/images/howto_edit_multiple_submissions/edit_multiple_2.png)
 
--   **1.** Users could select multiple records that require bulk editing.
--   **2.** Alternative to approach outlined above (in **1**), users could select
-    _all records_ or _all visible records_ under **DATA>Table**. _All records_
-    refer to the entire records that are present within the survey project while
-    _all visible records_ refer to 30 records that are by default visible under
-    **DATA>Table**. Users should clearly distinguish between the two when there
-    are more than 30 records (submissions) within the survey project.
--   **3.** Shows the total number of records selected for _changing/updating the
-    validation status_, _bulk editing_ or _bulk deletion_.
--   **4.** Users could bulk change the validation status as outlined in our
-    support article [Record Validation](record_validation.md).
--   **5.** Users could bulk edit the responses for multiple submissions.
--   **6.** Users could bulk delete the records.
+- **1.** Users could select multiple records that require bulk editing.
+- **2.** Alternative to approach outlined above (in **1**), users could select
+  _all records_ or _all visible records_ under **DATA>Table**. _All records_
+  refer to the entire records that are present within the survey project while
+  _all visible records_ refer to 30 records that are by default visible under
+  **DATA>Table**. Users should clearly distinguish between the two when there
+  are more than 30 records (submissions) within the survey project.
+- **3.** Shows the total number of records selected for _changing/updating the
+  validation status_, _bulk editing_ or _bulk deletion_.
+- **4.** Users could bulk change the validation status as outlined in our
+  support article [Record Validation](record_validation.md).
+- **5.** Users could bulk edit the responses for multiple submissions.
+- **6.** Users could bulk delete the records.
 
 **Step 2:**
 
@@ -68,8 +83,8 @@ they would see the following dialogue box.
 ![image](/images/howto_edit_multiple_submissions/edit_multiple_5.png)
 
 Users could now filter the required response by typing it in the search filter
-located just below the **Response** header. This approach is useful when a
-user’s wishes to edit a single record.
+located just below the **Response** header. This approach is useful when a user
+wishes to edit a single record.
 
 ![image](/images/howto_edit_multiple_submissions/edit_multiple_6.png)
 
