@@ -1,4 +1,5 @@
 # Exporting and Downloading Your Data
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e21558a7adc19f5065e71c905479a71a67d66a51/source/export_download.md" class="reference">22 Sep 2022</a>
 
 KoboToolbox allows you to download the data you have collected in several
 different formats. There are also a number of customizations you can make to
