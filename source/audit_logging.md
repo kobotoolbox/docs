@@ -21,14 +21,13 @@ please follow the steps below:
    meta questions. Then upload the form file to your project and deploy the
    form.
 
-**survey**
-
-| type  | name  | label                  |
-| :---- | :---- | :--------------------- |
-| start | start |                        |
-| end   | end   |                        |
-| audit | audit |                        |
-| text  | Q1    | Q1. What is your name? |
+| type   | name  | label                  |
+| :----- | :---- | :--------------------- |
+| start  | start |                        |
+| end    | end   |                        |
+| audit  | audit |                        |
+| text   | Q1    | Q1. What is your name? |
+| survey |
 
 2. Collect data using the [Collect Andoid app](kobocollect-android.md) and send
    the finalized forms back to the server. Collect saves the audit logs for each
@@ -42,7 +41,7 @@ please follow the steps below:
 
 ![image](/images/audit_logging/zip_export.png)
 
-4. Once the ZIP file has been extracted and opened, click on the file labeled
+4. Once the ZIP file has been extracted and opened, click on the file labelled
    'audit.csv' to view the audit logs. It's important to note that the CSV uses
    [Unix Epoch](https://www.unixtimestamp.com/index.php) time so the logs are
    recorded in milliseconds.

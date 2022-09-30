@@ -19,24 +19,27 @@ more information.
 **1.** In the XLSForm, the type should be either
 `select_one_from_file [filename]` or `select_multiple_from_file [filename]`:
 
-<p class="note">The file-type can be either <code>CSV</code> or <code>XML</code></p>
-
-**survey**
+<p class="note">
+  The file-type can be either <code>CSV</code> or <code>XML</code>
+</p>
 
 | type                            | name   | label                         |
 | :------------------------------ | :----- | :---------------------------- |
 | text                            | name   | What is your name?            |
 | select_one sex                  | sex    | What is your sex?             |
 | select_one_from_file fruits.csv | fruits | What is your favourite fruit? |
-
-**choices**
+| survey                          |
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |
 | sex       | 1    | Male   |
 | sex       | 2    | Female |
+| choices   |
 
-<p class="note">The <code>fruits.csv</code> is the file name containing the choices for the question "What is your favorite fruit?".</p>
+<p class="note">
+  The <code>fruits.csv</code> is the file name containing the choices for the
+  question "What is your favorite fruit?".
+</p>
 
 **2.** Create a new `CSV` file and structure it the same as the `choices` sheet
 in the XLSForm:
@@ -56,6 +59,7 @@ in the XLSForm:
 | fruits    | 9    | Mango       |
 | fruits    | 10   | Blueberry   |
 | fruits    | 11   | Pomegranate |
+| choices   |
 
 **3.** Upload and deploy the XLSForm in KoboToolbox.
 

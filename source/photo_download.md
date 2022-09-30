@@ -14,10 +14,12 @@ option under **DATA>Downloads>Select export type**.
 The following explains other options for downloading and accessing your
 collected media files.
 
-<p class='note'>The ZIP export may fail for very large projects due to a server
-time-out limit of 30 minutes being reached. If that is the case, please follow
-the methods below to extract your media files from the
-<strong>KoboToolbox</strong> server.</p>
+<p class="note">
+  The ZIP export may fail for very large projects due to a server time-out limit
+  of 30 minutes being reached. If that is the case, please follow the methods
+  below to extract your media files from the
+  <strong>KoboToolbox</strong> server.
+</p>
 
 ## Including direct hyperlinks to collected media in XLS export
 
@@ -30,11 +32,10 @@ the methods below to extract your media files from the
 
 If your survey had the following question:
 
-**survey**
-
-| type  | name    | label           |
-| :---- | :------ | :-------------- |
-| image | image_1 | Submit an image |
+| type   | name    | label           |
+| :----- | :------ | :-------------- |
+| image  | image_1 | Submit an image |
+| survey |
 
 And a submission to that question with the filename of "image.jpg", the export
 will have the following result:
@@ -52,7 +53,7 @@ download all (or a selection of) media using the popular **DownThemAll**
 download manager (only supported by the Firefox browser):
 
 1. Save your Excel file with the added hyperlinks (see instructions above) as an
-   HTML file to your Desktop, using the File > Save as... option (choose 'Web
+   HTML file to your Desktop, using the "File > Save as..." option (choose 'Web
    page')
 
 2. Log in to your KoboToolbox account where your photos are hosted using the

@@ -32,9 +32,10 @@ exactly 10 digits, controlling the entry of a valid email id etc.)_.
 
 Regex can also be coded in XLSForm, under the _constraint_ column:
 
-| type | name | label                       | appearance | constraint              | constraint_message                |
-| :--- | :--- | :-------------------------- | :--------- | :---------------------- | :-------------------------------- |
-| text | q1   | Mobile number of respondent | numbers    | regex(., '^[0-9]{10}$') | This value must be only 10 digits |
+| type   | name | label                       | appearance | constraint              | constraint_message                |
+| :----- | :--- | :-------------------------- | :--------- | :---------------------- | :-------------------------------- |
+| text   | q1   | Mobile number of respondent | numbers    | regex(., '^[0-9]{10}$') | This value must be only 10 digits |
+| survey |
 
 Alternatively, you can create a `calculate` question type and then define the
 regex code under the _calculation_ column. You could then use this variable as
@@ -46,13 +47,17 @@ many times as needed in the survey:
 | text      | q1   | Name of the Enumerator |                                          | regex(., ${q0}) | Please use this format: Kobe Bryant |
 | text      | q2   | Name of the Respondent |                                          | regex(., ${q0}) | Please use this format: Kobe Bryant |
 | integer   | q3   | Age of the Respondent  |                                          |                 |                                     |
+| survey    |
 
 ## How do I build the regex that I need?
 
 In addition to the examples and tips provided below, please visit
 [this website](http://www.regexr.com) for more help and examples.
 
-<p class="note">Regex in KoboToolbox should always be written in-between the apostrophes <code>regex(., ' ')</code> as shown in the examples.</p>
+<p class="note">
+  Regex in KoboToolbox should always be written in-between the apostrophes
+  <code>regex(., ' ')</code> as shown in the examples.
+</p>
 
 | Regex               | Description                                                                                                                                                                                 |
 | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -84,7 +89,10 @@ In addition to the examples and tips provided below, please visit
 
 ## Examples related to use of numbers
 
-<p class="note">For all <code>text</code> type questions that use numbers, do not forget to type <code>numbers</code> under the <code>appearance</code> column.</p>
+<p class="note">
+  For all <code>text</code> type questions that use numbers, do not forget to
+  type <code>numbers</code> under the <code>appearance</code> column.
+</p>
 
 | XLSForm Regex                                                                     | Description                                                                                                        |
 | :-------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------- |
@@ -132,12 +140,12 @@ In addition to the examples and tips provided below, please visit
 
 ## Considerations when using regex
 
--   If you wish to use a regex constraint on a number in a `text` type question,
-    make sure you _always_ have the value `numbers` under the `appearance`
-    column. This restricts the display of alphabets, making only numbers visible
-    for inputs.
+- If you wish to use a regex constraint on a number in a `text` type question,
+  make sure you _always_ have the value `numbers` under the `appearance` column.
+  This restricts the display of alphabets, making only numbers visible for
+  inputs.
 
--   The Collect Android app and Enketo behave differently with their handling of
-    regex expressions. Collect behaves as if you have used the anchors `^` and
-    `$` around the expression (even if you have not used them), while Enketo
-    requires the anchors as mandatory for an exact match.
+- The Collect Android app and Enketo behave differently with their handling of
+  regex expressions. Collect behaves as if you have used the anchors `^` and `$`
+  around the expression (even if you have not used them), while Enketo requires
+  the anchors as mandatory for an exact match.

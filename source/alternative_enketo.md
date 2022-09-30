@@ -13,7 +13,7 @@ of questions set to display on the same screen. This is the same way
 [KoboCollect works](group_repeat.md).
 
 **Grid Theme** is an alternative display of questions meant to be more compact
-and more like paper forms where space is often a major concern. theme-grid
+and more like paper forms where space is often a major concern. `theme-grid`
 allows displaying multiple questions per row and flexibly adapts in case of skip
 logic making a new question appear or disappear. To display multiple questions
 in a row they need to be part of a group, which by default shows up to four
@@ -30,11 +30,10 @@ You can set these styles through the KoboToolbox formbuilder user interface:
 If you are building your survey project through XLSForm, you could do the same
 by defining the theme under the `style` column in the `settings` sheet:
 
-**settings**
-
 | form_title  | style |
 | :---------- | :---- |
 | Themed form | pages |
+| settings    |
 
 ## Available styles in XLSForm:
 

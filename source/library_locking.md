@@ -51,11 +51,10 @@ are redundant as the form is _fully_ locked down. If it is set to `False` _or_
 omitted from the `settings` sheet, then defined locking profiles can be used to
 control the locked behaviour:
 
-**settings**
-
 | kobo--lock_all |
 | :------------- |
 | true           |
+| settings       |
 
 The accepted values for `kobo--lock_all` are the same as in the `survey` sheet
 that
@@ -151,6 +150,7 @@ Set form-level restrictions and `kobo--lock_all` boolean.
 | kobo--locking-profile | kobo--lock_all |
 | :-------------------- | :------------- |
 | profile_3             | false          |
+| settings              |
 
 <p class="note">
   Note that omitting <code>kobo--lock_all</code> from the
@@ -165,6 +165,7 @@ Set question and group-level restrictions.
 | :------------------- | :------ | :------------------ | :-------------------- |
 | select_one countries | country | Select your country | profile_1             |
 | select_one cities    | city    | Select your city    | profile_2             |
+| survey               |
 
 **choices**
 
@@ -178,6 +179,7 @@ No restrictions can be set in the `choices` sheet.
 | cities    | toronto   | Toronto                  |
 | cities    | baltimore | Baltimore                |
 | cities    | boston    | Boston                   |
+| choices   |
 
 <i>This example XLSForm can be downloaded
 <a download class="reference" href="/_static/files/library_locking/library-locking-example.xlsx">here</a>.</i>
@@ -205,33 +207,33 @@ a template**.
 
 ![create project from template](/images/library_locking/create-project-from-template.png)
 
--   Choose the locked template you want to use to create the new project.
+- Choose the locked template you want to use to create the new project.
 
 ![select template](/images/library_locking/select-template-for-new-project.png)
 
--   From there, continue to create the project.
+- From there, continue to create the project.
 
 ![create project](/images/library_locking/create-project.png)
 
 When this example locked template is used to create a new project, the
 formbuilder will look like the following:
 
--   The grayed out areas are those that have been disabled through the
-    restrictions.
+- The grayed out areas are those that have been disabled through the
+  restrictions.
 
 ![overview](/images/library_locking/formbuilder.png)
 
--   A dialogue box above the first question will show an overview of some of the
-    form's restrictions.
+- A dialogue box above the first question will show an overview of some of the
+  form's restrictions.
 
 ![dialogue box](/images/library_locking/formbuilder-dialogue-box.png)
 
--   Each question with locking profiles will display, in its settings, which
-    restrictions have been set.
+- Each question with locking profiles will display, in its settings, which
+  restrictions have been set.
 
 ![question restrictions](/images/library_locking/formbuilder-question-settings.png)
 
--   Some form-level settings will also be greyed out.
+- Some form-level settings will also be greyed out.
 
 ![form-level restrictions](/images/library_locking/form-style.png)
 
@@ -239,14 +241,14 @@ formbuilder will look like the following:
 
 The following cases will currently throw a `FormPackLibraryLockingError`:
 
--   If a locking profile name (column header in the `kobo--locking-profiles`
-    sheet) is "locked" (the same as the locking keyword)
--   If a restriction listed in `kobo--locking-profiles` is invalid (not in the
-    list of [predefined restrictions](#restrictions))
--   If there is a sheet called `kobo--locking-profiles` but no `restriction`
-    column
--   If no locking profiles are defined (column headers in the
-    `kobo--locking-profiles` sheet)
+- If a locking profile name (column header in the `kobo--locking-profiles`
+  sheet) is "locked" (the same as the locking keyword)
+- If a restriction listed in `kobo--locking-profiles` is invalid (not in the
+  list of [predefined restrictions](#restrictions))
+- If there is a sheet called `kobo--locking-profiles` but no `restriction`
+  column
+- If no locking profiles are defined (column headers in the
+  `kobo--locking-profiles` sheet)
 
 <p class="note">
   Validation of the XLSForm library locking features will be expanded in the
@@ -273,17 +275,17 @@ be listed in the `asset.summary.columns` array.
 In `asset.summary`, the following two Boolean attributes describe an overview of
 the form's locking structure:
 
--   `lock_all`, and
--   `lock_any`
+- `lock_all`, and
+- `lock_any`
 
 The logic by which each of those Booleans are set is as follows:
 
--   `lock_all` is `True` _only_ if `kobo--lock_all` is set to `True` in the
-    `settings` sheet, otherwise it's `False`
--   `lock_any` is set to `True` if _any_ of the following cases are `True`:
-    -   `lock_all` is `True`,
-    -   A `kobo--locking-profile` is set in the `settings` sheet, or
-    -   _At least one_ `kobo--locking-profile` is set in the `survey` sheet
+- `lock_all` is `True` _only_ if `kobo--lock_all` is set to `True` in the
+  `settings` sheet, otherwise it's `False`
+- `lock_any` is set to `True` if _any_ of the following cases are `True`:
+  - `lock_all` is `True`,
+  - A `kobo--locking-profile` is set in the `settings` sheet, or
+  - _At least one_ `kobo--locking-profile` is set in the `survey` sheet
 
 In the example above, the following will be present in the `asset.summary`:
 
@@ -355,21 +357,21 @@ enforced _only_ on surveys. Practically, this means the following:
 
 Assume an XLSForm containing valid locking features is imported:
 
--   If imported as a `block`, then all traces of locking are excluded and/or
-    stripped from the asset. This results in a `block` asset that will be
-    equivalent to the same form uploaded without any locking features;
--   If imported as a `survey` (imported through the **Projects** section) or
-    `template` then all locks are intact:
-    -   If, from within the formbuilder:
-        -   a question is added to the library, then all locks are stripped from
-            the new `question` asset
-        -   a group of questions is added to the library as a `block`, then all
-            locks are stripped
-    -   If a `template` is created _from_ the locked `survey` asset, then that
-        `template` will inherit all the locks the `survey` had (but since it is
-        a template, you are able to edit the contents in the formbuilder),
-    -   If a `survey` is created _from_ a locked `template`, the survey will
-        inherit all the locks that the `template` had
+- If imported as a `block`, then all traces of locking are excluded and/or
+  stripped from the asset. This results in a `block` asset that will be
+  equivalent to the same form uploaded without any locking features;
+- If imported as a `survey` (imported through the **Projects** section) or
+  `template` then all locks are intact:
+  - If, from within the formbuilder:
+    - a question is added to the library, then all locks are stripped from the
+      new `question` asset
+    - a group of questions is added to the library as a `block`, then all locks
+      are stripped
+  - If a `template` is created _from_ the locked `survey` asset, then that
+    `template` will inherit all the locks the `survey` had (but since it is a
+    template, you are able to edit the contents in the formbuilder),
+  - If a `survey` is created _from_ a locked `template`, the survey will inherit
+    all the locks that the `template` had
 
 | Original Asset Type | Process                  | Resulting Asset's Status |
 | :------------------ | :----------------------- | :----------------------- |

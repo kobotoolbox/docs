@@ -1,5 +1,8 @@
 # Acknowledge question type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/707308081d5a876429213086c5671f3ee7e750b7/source/acknowledge.md" class="reference">18 Apr 2022</a>
+
+**Last updated:**
+<a href="https://github.com/kobotoolbox/docs/blob/707308081d5a876429213086c5671f3ee7e750b7/source/acknowledge.md" class="reference">18
+Apr 2022</a>
 
 The "Acknowledge" question type displays a single option, to select "OK" on the
 form.
@@ -43,8 +46,6 @@ In the above example, the group "Survey" will only be displayed if the
 
 Below is the equivalent form logic in XLSForm syntax:
 
-**survey**
-
 | type        | name    | label                                              | relevant          |
 | :---------- | :------ | :------------------------------------------------- | :---------------- |
 | acknowledge | consent | If you agree to continue with the survey, click OK |                   |
@@ -52,6 +53,7 @@ Below is the equivalent form logic in XLSForm syntax:
 | text        | name    | What is your name?                                 |                   |
 | integer     | age     | How old are you?                                   |                   |
 | end_group   |         |                                                    |                   |
+| survey      |
 
 <p class="note">
   You can download the example XLSForm
