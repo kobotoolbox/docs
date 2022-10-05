@@ -1,18 +1,16 @@
 # Cascading a Select Multiple Question
 
 There could be times when you wish to cascade a question for a survey project.
-Cascading a select one question is possible through the Formbuilder as outlined
-in the support article
-**[Adding Cascading Select Questions](cascading_select.md)**. However, if you
-wish to cascade a select multiple question, it is still not possible through the
-Formbuilder. This article illustrates how to cascade a select multiple question
-through the XLSForm.
+Creating a cascading "Select One" question is possible through the formbuilder
+as outlined in the support article [here](cascading_select.md). However, if you
+wish to cascade a select multiple question you will need to make use of
+[XLSForm](getting_started_xlsform.md). This article illustrates how to cascade a
+"Select Multiple" question.
 
-## Designing your survey tab:
+## Designing your survey
 
-The first sheet required in your XLSForm is the _survey_ tab. This sheet will
-require six column headers (_type_, _name_, _label_, _required_,
-_choice_filter_, _calculation_).
+The _survey_ sheet in this example will require six column headers: `type`,
+`name`, `label`, `required`, `choice_filter` and `calculation`.
 
 | type               | name | label                               | required | choice_filter                                                      | calculation                                                                                  |
 | ------------------ | ---- | ----------------------------------- | -------- | ------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
@@ -24,13 +22,13 @@ _choice_filter_, _calculation_).
 | select_multiple Q2 | Q2   | Q2. Select all that applies from Q2 | TRUE     | filter1=${C1} or filter2=${C2} or filter3=${C3} or   filter4=${C4} |                                                                                              |
 | survey             |      |                                     |          |                                                                    |                                                                                              |
 
-Here _row 2 and row 7_, are _select multiple_ questions where we will be
+Here _row 2_ and _row 7_, are `select_multiple` questions where we will be
 cascading the choices of Q2 (_row 7_) based on the choices selected in Q1 (_row
-2_). _Row 3 to 6_ are _calculate_ questions that hold the _if function_ to
-create cascading conditions for (_row 7_). The _choice_filter_ used in _row 7_
-then finally cascades the choices of Q2.
+2_). _Row 3_ to _row 6_ are `calculate` questions to create cascading conditions
+for (_row 7_). The _choice_filter_ used in _row 7_ then finally cascades the
+choices of Q2.
 
-## Designing your choices tab:
+## Designing your choices tab
 
 The second sheet your XLSForm requires is the _choices_ tab. This sheet will
 require three mandatory column headers (_list_name_, _name_, _label_) and
@@ -53,7 +51,7 @@ already been used here.
 | Q2        | 6    | Choice 6 for Q2 |            |            | condition3 | condition4 |
 | choices   |      |                 |            |            |            |            |
 
-## Designing your settings tab:
+## Designing your settings tab
 
 The third sheet your XLSForm requires is the _settings_ tab. This sheet will
 require one optional column header (_form_title_).
@@ -63,7 +61,7 @@ require one optional column header (_form_title_).
 | Cascading a Select Multiple Question |
 | settings                             |
 
-## Data entry screen as seen in Enketo:
+## Data entry screen as seen in Enketo
 
 _This is the screen you should see when nothing is selected in Q1._
 
@@ -81,4 +79,13 @@ _This is the screen you should see when all three choices are selected in Q1._
 
 ![Three choices selected](/images/cascading_select_multiple/enketo_three.png)
 
-<p class="note"> You can access the XLSForm <a download href="./_static/files/cascading_select_multiple/Cascading_Select_Multiple_Question.xlsx"><b>here</b></a> that was used in this article.</p>
+<p class="note">
+  You can access the XLSForm
+  <a
+    download
+    href="./_static/files/cascading_select_multiple/Cascading_Select_Multiple_Question.xlsx"
+    class="reference"
+    >here</a
+  >
+  that was used in this article.
+</p>
