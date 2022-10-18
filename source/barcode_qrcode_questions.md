@@ -2,11 +2,11 @@
 
 The "Barcode/QR code" question type is used for scanning, decoding and capturing
 barcodes and QR codes using the device camera. When a code is scanned with the
-camera, the value (whether numbers or text) that the pattern stands for is
-captured.
+camera the value (whether numbers or text) stored in the code is captured.
 
-Please note that Barcode/QR code scanning only works when using KoboCollect on
-mobile devices.
+<p class="note">
+  Barcode/QR code scanning only works when using KoboCollect on mobile devices.
+</p>
 
 A wide range of Barcode and QR code formats are supported, including the
 following:
@@ -29,23 +29,22 @@ following:
 - MaxiCode
 
 "Barcode/QR code" questions can be used in different scenarios including asset
-management or item distribution. For example, you can capture a QR code on a
-beneficiary identity card capturing their ID number. You can then use use the
-`pulldata()` function to automatically populate fields from a csv attached to
-your project or a different form project with information about the beneficiary.
-You can learn more about the `pulldata()` function
-[here](https://xlsform.org/en/#how-to-pull-data-from-csv).
+management or item distribution. For example, you can scan a QR code on a
+beneficiary identity card to capture their ID number. You can then use use the
+`pulldata()` function to automatically populate fields from a CSV attached to
+your project or from a [linked project](dynamic_data_attachment.md) with
+information about the beneficiary. You can learn more about the `pulldata()`
+function [here](https://xlsform.org/en/#how-to-pull-data-from-csv).
 
-## How to set up the “Barcode/QR code” question type
+## How to set up the "Barcode/QR code" question type
 
 ### Setting up in formbuilder
 
 To add a "Barcode/QR code" question:
 
-- In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
-  a new question
-- Type the question text, for example “Collect the beneficiary identification
-  code”, then click **ADD QUESTION** or press ENTER on your keyboard
+- Click the <i class="k-icon k-icon-plus"></i> button to add a new question
+- Type the question text, for example "Collect the beneficiary identification
+  code", then click **ADD QUESTION** or press ENTER on your keyboard
 - Choose the question type
 
 ![Adding Barcode/QRCode questions](images/barcode_qrcode_questions/adding_barcode_qrcode_questions.gif)
@@ -68,21 +67,21 @@ To add a "Barcode/QR code" question in XLSForm, add a question with type
 
 ## Advanced appearance
 
-When adding the “Barcode/QR code” question type, you can change the appearance
+When adding the "Barcode/QR code" question type, you can change the appearance
 settings to switch from using the default (back) camera of the device to using
 the front camera.
 
 ### Changing advanced Appearance in formbuilder
 
-To do this, go to the question settings of the “Barcode/QR code” question, and
-type “front” in the "Appearance(Advanced)" box
+Go to the question settings of the "Barcode/QR code" question, and type "front"
+in the "Appearance (Advanced)" box
 
 ![Changing appearance of Barcode/QRCode questions](images/barcode_qrcode_questions/change_appearance_barcode_qrcode_questions.png)
 
 ### Changing advanced Appearance in XLSForm
 
 In XLSForm, you can set the default camera for capturing the "Barcode/QR code"
-to be the front camera by typing ‘front’ in the "appearance" column as follows:
+to be the front camera by typing 'front' in the `appearance` column as follows:
 
 | type    | name             | label                           | appearance |
 | :------ | :--------------- | :------------------------------ | :--------- |
