@@ -47,6 +47,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   photo_audio_video_file
   rating_ranking
   select_one_and_select_many
+  gps_questions
   calculate_questions
   barcode_qrcode_questions
   advanced_calculate
@@ -117,6 +118,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   export_gps
   synchronous_exports
   pulling_data_into_excelquery
+  pulling_data_into_powerbi
   howto_edit_single_submissions
   howto_edit_multiple_submissions
   photo_download
@@ -124,7 +126,6 @@ Search the knowledge base, browse our resources and visit our forum for more det
   recovering_previous_formdata
   converting_to_spss_and_stata
   excel_analyzer_guide
-  pulling_data_into_powerbi
   upload_to_gis
   row_level_permissions
   dynamic_data_attachment
