@@ -1,5 +1,5 @@
 # Adding Another Language in the Project Dashboard
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/language_dashboard.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a412eff1342fa59da1fe2ffe1e10c1829b2e5e94/source/language_dashboard.md" class="reference">1 Nov 2022</a>
 
 There are two methods to adding multiple languages to your form. You can either
 add and manage them directly through the online Project Dashboard or you can add
@@ -19,20 +19,21 @@ your form through the online Project Dashboard:
 3. Find and click on the 'More Actions' icon (3 dots). In the drop down menu
    that appears, click on 'Manage Translations'.
 
-    ![image](/images/language_dashboard/action.png)
+   ![image](/images/language_dashboard/action.png)
 
 4. Before adding additional languages, first set your default language by
    clicking on the pencil icon and filling in the 'Language name' and 'Language
    code' fields.
 
-    **Tip**: If you're unsure of what your language code is, you can search
-    through the entire list of language codes [at here](https://www.iana.org).
-    If you cannot find your language, its possible it has been labeled as
-    something else and is worth searching online for alternative names.
+   **Tip**: If you're unsure of what your language code is, you can search
+   through the entire list of language codes
+   [here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+   If you cannot find your language, its possible it has been labeled as
+   something else and is worth searching online for alternative names.
 
-    Examples: English (en), German (de), Arabic (ar), etc.
+   Examples: English (en), German (de), Arabic (ar), etc.
 
-    ![image](/images/language_dashboard/example.gif)
+   ![image](/images/language_dashboard/example.gif)
 
 5. Once the default language has been set, click on the 'Add Language' button to
    fill in the language name and code for the new language being added.
@@ -41,20 +42,20 @@ your form through the online Project Dashboard:
    icon (world) to the right of the language title to open up the 'Translations
    Table' for that language.
 
-    ![image](/images/language_dashboard/add_language.gif)
+   ![image](/images/language_dashboard/add_language.gif)
 
 7. Fill in the translations with correct associated original strings in the
    table view and then click 'Save Changes' when finished. Then close out the
    table view by clicking on the 'x' button in the top right of the table.
 
-    ![image](/images/language_dashboard/translation.png)
+   ![image](/images/language_dashboard/translation.png)
 
 8. Back in the project dashboard click on 'Preview' icon (eyeball) to open a
    preview of the form. At the top next to Choose Language click on the
    dropdown. It will have default (your original language) as well as the new
    language(s) you just added.
 
-    ![image](/images/language_dashboard/preview.gif)
+   ![image](/images/language_dashboard/preview.gif)
 
 9. Repeat steps for any additional languages.
 
