@@ -132,6 +132,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   public_collections_advanced_search
   api
   data_storage
+  transcription-translation
 
   
 .. toctree::
