@@ -1,4 +1,5 @@
 # Transcription
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/57f94d5aafac51116fc67e386f5c5f93aeda7e70/source/transcription-translation.md" class="reference">22 Nov 2022</a>
 
 KoboToolbox lets you transcribe audio files that you collect in your surveys.
 Once a audio has been transcribed, you can then translate the transcripts into
