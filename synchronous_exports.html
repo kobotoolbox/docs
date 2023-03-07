@@ -229,14 +229,14 @@ curly braces):</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nv">TOKEN</span><span class="o">=</span>your-secret-token
 
 <span class="c1"># Using curl:</span>
-curl -L https://<span class="o">{</span>kf_url<span class="o">}</span>/api/v2/assets/<span class="o">{</span>asset_uid<span class="o">}</span>/export-settings/<span class="o">{</span>export_settings_uid<span class="o">}</span>/data.csv <span class="se">\</span>
-  -H <span class="s2">&quot;Authorization: Token </span><span class="nv">$TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
-  -o data.csv
+curl<span class="w"> </span>-L<span class="w"> </span>https://<span class="o">{</span>kf_url<span class="o">}</span>/api/v2/assets/<span class="o">{</span>asset_uid<span class="o">}</span>/export-settings/<span class="o">{</span>export_settings_uid<span class="o">}</span>/data.csv<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token </span><span class="nv">$TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-o<span class="w"> </span>data.csv
 
 <span class="c1"># Using wget:</span>
-wget https://<span class="o">{</span>kf_url<span class="o">}</span>/api/v2/assets/<span class="o">{</span>asset_uid<span class="o">}</span>/export-settings/<span class="o">{</span>export_settings_uid<span class="o">}</span>/data.csv <span class="se">\</span>
-  –header <span class="s2">&quot;Authorization: Token </span><span class="nv">$TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
-  -O data.csv
+wget<span class="w"> </span>https://<span class="o">{</span>kf_url<span class="o">}</span>/api/v2/assets/<span class="o">{</span>asset_uid<span class="o">}</span>/export-settings/<span class="o">{</span>export_settings_uid<span class="o">}</span>/data.csv<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>–header<span class="w"> </span><span class="s2">&quot;Authorization: Token </span><span class="nv">$TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-O<span class="w"> </span>data.csv
 </pre></div>
 </div>
 <p>For more information on connecting to PowerBI or Excel with Power Query,

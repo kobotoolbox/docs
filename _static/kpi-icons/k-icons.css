@@ -1,10 +1,10 @@
 @font-face {
   font-family: "k-icons";
-  src: url("./k-icons.woff2?f426ad22e62c1ee544586b30139c9aba") format("woff2"),
-url("./k-icons.woff?f426ad22e62c1ee544586b30139c9aba") format("woff"),
-url("./k-icons.ttf?f426ad22e62c1ee544586b30139c9aba") format("truetype"),
-url("./k-icons.eot?f426ad22e62c1ee544586b30139c9aba?#iefix") format("embedded-opentype"),
-url("./k-icons.svg?f426ad22e62c1ee544586b30139c9aba#k-icons") format("svg");
+  src: url("./k-icons.woff2?838318fb5a5a9e5796c0996291aab6da") format("woff2"),
+url("./k-icons.woff?838318fb5a5a9e5796c0996291aab6da") format("woff"),
+url("./k-icons.ttf?838318fb5a5a9e5796c0996291aab6da") format("truetype"),
+url("./k-icons.eot?838318fb5a5a9e5796c0996291aab6da?#iefix") format("embedded-opentype"),
+url("./k-icons.svg?838318fb5a5a9e5796c0996291aab6da#k-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -201,10 +201,10 @@ url("./k-icons.svg?f426ad22e62c1ee544586b30139c9aba#k-icons") format("svg");
 .k-icon-search::before {content: "\f1a3";}
 .k-icon-settings::before {content: "\f1a4";}
 .k-icon-skip-logic::before {content: "\f1a5";}
-.k-icon-sort-down::before {content: "\f1a6";}
-.k-icon-sort-up::before {content: "\f1a7";}
+.k-icon-sort-ascending::before {content: "\f1a6";}
+.k-icon-sort-descending::before {content: "\f1a7";}
 .k-icon-spinner::before {content: "\f1a8";}
-.k-icon-spreadshet::before {content: "\f1a9";}
+.k-icon-spreadsheet::before {content: "\f1a9";}
 .k-icon-stop::before {content: "\f1aa";}
 .k-icon-subscribe::before {content: "\f1ab";}
 .k-icon-table::before {content: "\f1ac";}
