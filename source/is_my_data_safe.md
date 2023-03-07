@@ -1,5 +1,5 @@
 # KoboToolbox data security measures: Keeping your data safe
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6850d1df2ba932a6cef4107d19fc8be72f3f2347/source/is_my_data_safe.md" class="reference">6 Apr 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6850d1df2ba932a6cef4107d19fc8be72f3f2347/source/is_my_data_safe.md" class="reference">7 Mar 2023</a>
 
 We take data protection very seriously. Data security means protecting our
 users’ data from any threats that may exist. This article summarizes some of our
@@ -9,7 +9,7 @@ data security on the KoboToolbox servers maintained by Kobo, Inc., the
 
 We are fully compliant with the European Union’s General Data Protection
 Regulation (GDPR). If you are located in the European Union,
-[you can sign a data processing agreement (DPA) here](https://www.digisigner.com/online/showTemplate?linkId=772fa6c1-a184-41bf-8e95-9e6dbf0c866b).
+[you can sign a data processing agreement (DPA) here](https://www.digisigner.com/online/showTemplate?linkId=495db186-9c9e-4627-99f7-a943282eeab5).
 
 ## Confidentiality
 
