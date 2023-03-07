@@ -3,7 +3,7 @@
 
 After adding a question, there are many different customizations you can make to
 it using the question options. To get to the question options screen of a
-question, lick its <i class="k-icon k-icon-settings"></i> Settings button.
+question, click its <i class="k-icon k-icon-settings"></i> Settings button.
 
 ![Question options](/images/question_options/options2.png)
 
