@@ -1,5 +1,5 @@
 # Using the Question Options
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/fa75e1fccbcbd8c348bf6ace4b7590d260f745ef/source/question_options.md" class="reference">8 Mar 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/657eb7b77e049205fb47696c32db62ed17b7b981/source/question_options.md" class="reference">7 Mar 2023</a>
 
 After adding a question, there are many different customizations you can make to
 it using the question options. To get to the question options screen of a
