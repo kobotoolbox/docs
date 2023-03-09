@@ -1,6 +1,8 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
+1. [KoboToolbox data security measures: Keeping your data safe](is_my_data_safe.md) (7 Mar 2023)
+1. [Using the Question Options](question_options.md) (7 Mar 2023)
 1. [Transcription](transcription-translation.md) (22 Nov 2022)
 1. [Adding Another Language in the Project Dashboard](language_dashboard.md) (1 Nov 2022)
 1. [Editing Responses in Multiple Submissions](howto_edit_multiple_submissions.md) (22 Sep 2022)
@@ -9,5 +11,3 @@
 1. [Sharing Your Project and Managing Permissions](managing_permissions.md) (25 Aug 2022)
 1. [Connecting KoboToolbox to Microsoft Excel](pulling_data_into_excelquery.md) (23 Aug 2022)
 1. [Connecting KoboToolbox to Power BI](pulling_data_into_powerbi.md) (22 Aug 2022)
-1. [List of Question Types](question_types.md) (10 Aug 2022)
-1. [Which Server Should I Use?](server.md) (9 Aug 2022)
