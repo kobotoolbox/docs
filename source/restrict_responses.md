@@ -84,19 +84,19 @@ In addition to the examples and tips provided below, please visit
 
 ## Characters with accents
 
-| **Regex**         | **Description**                                                                                                |
-|-------------------|----------------------------------------------------------------------------------------------------------------|
-| [A-zÀ-ú]          | Accepts lowercase and uppercase accents characters                                                             |
-| [A-zÀ-ÿ]          | Accepts lowercase and uppercase accents characters but including letters with an umlaut (includes [ ] ^ \ × ÷) |
-| [A-Za-zÀ-ÿ]       | Accepts lowercase and uppercase accents characters but not including [ ] ^ \                                   |
-| [A-Za-zÀ-ÖØ-öø-ÿ] | Accepts lowercase and uppercase accents characters but not including [ ] ^ \ × ÷                               |
+| **Regex**           | **Description**                                                                                                |
+| :------------------ | :------------------------------------------------------------------------------------------------------------- |
+| `[A-zÀ-ú]`          | Accepts lowercase and uppercase accents characters                                                             |
+| `[A-zÀ-ÿ]`          | Accepts lowercase and uppercase accents characters but including letters with an umlaut (includes [ ] ^ \ × ÷) |
+| `[A-Za-zÀ-ÿ]`       | Accepts lowercase and uppercase accents characters but not including [ ] ^ \                                   |
+| `[A-Za-zÀ-ÖØ-öø-ÿ]` | Accepts lowercase and uppercase accents characters but not including [ ] ^ \ × ÷                               |
 
 ## Examples related to use of numbers
 
 <p class="note">For all <code>text</code> type questions that use numbers, do not forget to type <code>numbers</code> under the <code>appearance</code> column.</p>
 
 | **Regex**                                                                                                                                                                                | **Description**                                                                                                  |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------- |
 | `regex(., '^[0-9]{10}$')` or `regex(., '^\d{10}$')`                                                                                                                                      | Restrict mobile number to ten digits                                                                             |
 | `regex(., '^[0-9]{4}.[0-9]{2}.[0-9]{2}$')` or `regex(., '^\d{4}\.\d{2}\.\d{2}$')`                                                                                                        | Restrict an input to `1234.56.78`                                                                                |
 | `regex(., '^[01-99]{2}$') and (. >= 01)`                                                                                                                                                 | Restrict an input between `01` to `99` digits where input format of a single number (like 1 or 2) is not allowed |
@@ -111,7 +111,7 @@ In addition to the examples and tips provided below, please visit
 ## Examples related to use of letters
 
 | **Regex**                                                                                               | **Description**                                                                                                                                                                                                                                                                                                                            |
-|---------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `regex(., '^[a-z]{1,6}$')`                                                                              | Restrict an input to any lowercase letters (_up to 6 characters long_)                                                                                                                                                                                                                                                                     |
 | `regex(., '^[A-Z]{1,10}$')`                                                                             | Restrict an input to any uppercase letters (_up to 10 characters long_)                                                                                                                                                                                                                                                                    |
 | `regex(., '^(Apple\|Orange\|Banana)$')`                                                                 | Restrict an input to only either to `Apple` or `Orange` or `Banana`                                                                                                                                                                                                                                                                        |
@@ -126,10 +126,11 @@ In addition to the examples and tips provided below, please visit
 | `regex(., '^ah+!$')`                                                                                    | Restrict a character within a word by using the `+` (quantifier) e.g. allow either `ah!` or `ahh!` or `ahhh!` and so on as an input                                                                                                                                                                                                        |
 | `regex(., '^\D$')`                                                                                      | Restrict an input to a _non-digit character_ (e.g. `a` or `c` or `!` or `#` or `%` etc.)                                                                                                                                                                                                                                                   |
 | `regex(., '^\D{5 }$')`                                                                                  | Restrict an input to _five non-digit character_ (e.g. `aZcB!#%` etc.)                                                                                                                                                                                                                                                                      |
-| `regex(., '^[A-Z\s]+$')`                                                                                | Restrict all the text input to uppercase, excluding special characters (! @ # $ % ^ & * ( ) . , ? / " ' etc.)                                                                                                                                                                                                                              |
-| `regex(., '^[A-Z\W]+$')`                                                                                | Restrict all the text input to uppercase, including special characters (! @ # $ % ^ & * ( ) . , ? / " ' etc.)                                                                                                                                                                                                                              |
-| `regex(., '^[a-z\s]+$')`                                                                                | Restrict all the text input to lowercase, excluding special characters (! @ # $ % ^ & * ( ) . , ? / " ' etc.)                                                                                                                                                                                                                              |
-| `regex(., '^[a-z\W]+$')`                                                                                | Restrict all the text input to lowercase, including special characters (! @ # $ % ^ & * ( ) . , ? / " ' etc.)                                                                                                                                                                                                                              |
+| `regex(., '^[A-Z\s]+$')`                                                                                | Restrict all the text input to uppercase, excluding special characters (! @ # $ % ^ & \* ( ) . , ? / " ' etc.)                                                                                                                                                                                                                             |
+| `regex(., '^[A-Z\W]+$')`                                                                                | Restrict all the text input to uppercase, including special characters (! @ # $ % ^ & \* ( ) . , ? / " ' etc.)                                                                                                                                                                                                                             |
+| `regex(., '^[a-z\s]+$')`                                                                                | Restrict all the text input to lowercase, excluding special characters (! @ # $ % ^ & \* ( ) . , ? / " ' etc.)                                                                                                                                                                                                                             |
+| `regex(., '^[a-z\W]+$')`                                                                                | Restrict all the text input to lowercase, including special characters (! @ # $ % ^ & \* ( ) . , ? / " ' etc.)                                                                                                                                                                                                                             |
+
 ## Examples related to use of a combination of letters and numbers
 
 | XLSForm Regex                                             | Description                                                                                                                                                                                                     |
@@ -144,26 +145,30 @@ In addition to the examples and tips provided below, please visit
 
 ## Examples related to the restriction of valid email inputs
 
+<p class="note">These examples are purely illustrative and should be adjusted
+for your use-case. Using regex for constraining email addresses does not
+guarantee that they are valid, only that they follow an expected pattern.</p>
+
 | **Regex**                                                                                                          | **Description**                                                          |
-|--------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
+| :----------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
 | `regex(., '^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z]{2,}$')`                                                     | Restrict an input with a valid email address e.g. `example.domin.com`    |
 | `regex(., '^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z.]{2,}$')` or `regex(., '^([\W\d\D]+[@][\D]+[.][\D]{2,})+$')` | Restrict an input with a valid email address e.g. `example.domin.com.np` |
 
 ## Examples related to use of time inputs
 
 | **Regex**                                                | **Description**                           |
-|----------------------------------------------------------|-------------------------------------------|
+| :------------------------------------------------------- | :---------------------------------------- |
 | `regex(., '^([00-23]{0,2}:[00-59]{0,2}:[00-59]{0,2})$')` | Restrict a time input in `24` hour format |
 | `regex(., '^([00-12]{0,2}:[00-59]{0,2}:[00-59]{0,2})$')` | Restrict a time input in `12` hour format |
 
 ## Considerations when using regex
 
--   If you wish to use a regex constraint on a number in a `text` type question,
-    make sure you _always_ have the value `numbers` under the `appearance`
-    column. This restricts the display of alphabets, making only numbers visible
-    for inputs.
+- If you wish to use a regex constraint on a number in a `text` type question,
+  make sure you _always_ have the value `numbers` under the `appearance` column.
+  This restricts the display of alphabets, making only numbers visible for
+  inputs.
 
--   The Collect Android app and Enketo behave differently with their handling of
-    regex expressions. Collect behaves as if you have used the anchors `^` and
-    `$` around the expression (even if you have not used them), while Enketo
-    requires the anchors as mandatory for an exact match.
+- The Collect Android app and Enketo behave differently with their handling of
+  regex expressions. Collect behaves as if you have used the anchors `^` and `$`
+  around the expression (even if you have not used them), while Enketo requires
+  the anchors as mandatory for an exact match.
