@@ -1,5 +1,5 @@
 # General Data Protection Regulation (GDPR)
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/gdpr.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/gdpr.md" class="reference">14 Mar 2023</a>
 
 ## What is GDPR?
 
@@ -7,6 +7,9 @@ GDPR stands for [General Data Protection Regulation](https://gdpr-info.eu) and
 is a new comprehensive data protection law in the EU that replaces existing laws
 to strengthen the protection of personal data and the rights of the individual.
 It is a single set of rules, directly enforceable in each EU member state.
+
+We are fully compliant with the GDPR. If you are located in the European Union,
+[you can sign a data processing agreement (DPA) here](https://www.digisigner.com/online/showTemplate?linkId=495db186-9c9e-4627-99f7-a943282eeab5).
 
 ## Security and Privacy at KoboToolbox
 
