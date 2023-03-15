@@ -1,8 +1,5 @@
 # Question Matrix Response Type
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/matrix_response.md" class="reference">2
-Dec 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e7f863dd178949ac432672c795b603f34ec16550/source/matrix_response.md" class="reference">15 Mar 2023</a>
 
 The Question Matrix response type allows users to create a group of questions
 that display in a matrix format, whereby each cell within the matrix represents
@@ -46,12 +43,12 @@ the instructions as outlined in the images below:
 
 **survey**
 
-| type             | name | label                                | required | kobo--matrix_list |
-| :--------------- | :--- | :----------------------------------- | :------- | :---------------- |
-| begin_kobomatrix | M1   | Items                                |          | assets            |
-| select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |
-| integer          | Q2   | Q2. Number of assets                 | TRUE     |                   |
-| end_kobomatrix   |      |                                      |          |                   |
+| type             | name | label                                | required | `kobo--matrix_list` |
+| :--------------- | :--- | :----------------------------------- | :------- | :----------------   |
+| begin_kobomatrix | M1   | Items                                |          | assets              |
+| select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                     |
+| integer          | Q2   | Q2. Number of assets                 | TRUE     |                     |
+| end_kobomatrix   |      |                                      |          |                     |
 
 **choices**
 
@@ -69,7 +66,8 @@ the instructions as outlined in the images below:
 | :--------------------------- |
 | theme-grid no-text-transform |
 
-<p class="note">This method uses <code>begin_kobomatrix</code>, <code>end_kobomatrix</code> and <code>kobo—matrix_list</code>.</p>
+<p class="note">This method uses <code>begin_kobomatrix</code>,
+<code>end_kobomatrix</code> and <code>kobo--matrix_list</code>.</p>
 
 Following the steps above, you should see the question matrix shown in the
 screenshot below (In [Enketo](data_through_webforms.md) only):
@@ -81,9 +79,9 @@ matrix as follows:
 
 **survey**
 
-| type             | name | label                                | required | kobo--matrix_list | relevant      | constraint |
-| :--------------- | :--- | :----------------------------------- | :------- | :---------------- | :------------ | :--------- |
-| begin_kobomatrix | M1   | Items                                |          | assets            |               |            |
-| select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                   |               |            |
-| integer          | Q2   | Q2. Number of assets                 | TRUE     |                   | ${Q1} = 'yes' | . > 2      |
-| end_kobomatrix   |      |                                      |          |                   |               |            |
+| type             | name | label                                | required | `kobo--matrix_list` | relevant      | constraint |
+| :--------------- | :--- | :----------------------------------- | :------- | :----------------   | :------------ | :--------- |
+| begin_kobomatrix | M1   | Items                                |          | assets              |               |            |
+| select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                     |               |            |
+| integer          | Q2   | Q2. Number of assets                 | TRUE     |                     | ${Q1} = 'yes' | . > 2      |
+| end_kobomatrix   |      |                                      |          |                     |               |            |
