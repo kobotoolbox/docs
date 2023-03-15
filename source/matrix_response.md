@@ -1,8 +1,5 @@
 # Question Matrix Response Type
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/matrix_response.md" class="reference">2
-Dec 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e7f863dd178949ac432672c795b603f34ec16550/source/matrix_response.md" class="reference">15 Mar 2023</a>
 
 The Question Matrix response type allows users to create a group of questions
 that display in a matrix format, whereby each cell within the matrix represents
