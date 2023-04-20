@@ -148,8 +148,7 @@ guarantee that they are valid, only that they follow an expected pattern.</p>
 
 | **Regex**                                                                                                          | **Description**                                                          |
 | :----------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| `regex(., '^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z]{2,}$')`                                                     | Restrict an input with a valid email address e.g. `example.domin.com`    |
-| `regex(., '^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z.]{2,}$')` or `regex(., '^([\W\d\D]+[@][\D]+[.][\D]{2,})+$')` | Restrict an input with a valid email address e.g. `example.domin.com.np` |
+| `regex(., '^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z.]{2,}$')` or `regex(., '^([\W\d\D]+[@][\D]+[.][\D]{2,})+$')` | Restrict an input with a valid email address e.g. `example.domain.com` or `example.domain.com.np` |
 
 ## Examples related to use of time inputs
 
