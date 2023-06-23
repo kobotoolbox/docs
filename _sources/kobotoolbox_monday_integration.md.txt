@@ -51,20 +51,37 @@ Note: Any updates made to a form or individual submission in KoboToolbox project
 
 ## FAQ
 **What is the REST Service?**
+
 More information about REST Services could be found in the following [guidance](https://support.kobotoolbox.org/rest_services.html).
+
 **What is the dynamic fields mapping?**
+
 Dynamic fields mapping is a pairing of fields represented on the monday.com board with the appropriate questions from the KoboToolbox project.
+
 **What happens if I change my data in the Kobo account?**
+
 Any updates made to a form or individual submission in KoboToolbox project which is already sent to monday.com board will not be automatically synced at this point.
+
 **What happens if I change my data on the monday.com board?**
-Changes made to data represented on the monday.com board will not be reflected in the KoboToolbox project. 
+
+Changes made to data represented on the monday.com board will not be reflected in the KoboToolbox project.
+
 **What happens if I need to later change the language?**
-Language selection affects only the dynamic fields mapping view on integration recipe configuration step.  Board data will not be translated.
+
+Language selection affects only the dynamic fields mapping view on integration recipe configuration step. Board data will not be translated.
+
 **What happens if I delete the board on Kobo?**
+
 If a project is deleted in Kobo, the integration would not run until the integration recipe is updated with a new project.
+
 **How do multiple select questions on Kobo transfer to monday?**
+
 For multi select questions a column with Dropdown type should be used on monday.com board to have all selected options correctly transferred to the board.
+
 **How do single select questions on Kobo transfer to monday?**
+
 For single select questions columns with Dropdown or Text types can be used to have the selected option correctly transferred to the board.
+
 **What column types from Kobo shift to what column types from monday?**
+
 All column types except File and External XML are supported by monday.com. If you can't find the appropriate column type on monday.com board, use a column with Text type. For the Area Kobo column type, it's better to use the Text column on monday side despite the fact that there is Location column type for this matter.
