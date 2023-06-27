@@ -26,6 +26,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Software Architecture" href="software_architecture.html" />
+    <link rel="prev" title="Transcription" href="transcription-translation.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -104,13 +106,19 @@
           
   <section id="kobotoolbox-integration-on-monday-com">
 <h1>KoboToolbox Integration on monday.com<a class="headerlink" href="#kobotoolbox-integration-on-monday-com" title="Permalink to this headline">¶</a></h1>
-<p>The KoboToolbox Integration allows users to easily synchronize their project data from a KoboToolbox project to a monday.com board.
-In just a few steps you can set up the integration to automatically copy data submissions received in KoboToolbox to any of your monday.com boards. This integration significantly reduces the manual work involved in copy-pasting project data between the two platforms.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8c97f9358780418e9384e2ba5c99f466d6022b8d/source/kobotoolbox_monday_integration.md" class="reference">24 Jun 2023</a></p>
+<p>The KoboToolbox Integration allows users to easily synchronize their project
+data from a KoboToolbox project to a monday.com board. In just a few steps you
+can set up the integration to automatically copy data submissions received in
+KoboToolbox to any of your monday.com boards. This integration significantly
+reduces the manual work involved in copy-pasting project data between the two
+platforms.</p>
 <section id="features">
 <h2>Features<a class="headerlink" href="#features" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Simplified process of connecting KoboToolbox projects with monday.com boards</p></li>
-<li><p>Easy mapping of monday.com fields to KoboToolbox questions using any label language defined in the form</p></li>
+<li><p>Easy mapping of monday.com fields to KoboToolbox questions using any label
+language defined in the form</p></li>
 <li><p>Real-time synchronization of newly created submissions to create new items</p></li>
 </ul>
 </section>
@@ -119,78 +127,123 @@ In just a few steps you can set up the integration to automatically copy data su
 <section id="prerequisites">
 <h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><p>Create an account on KoboToolbox if you don’t have one yet. Use this <a class="reference external" href="https://support.kobotoolbox.org/creating_account.html">guidance</a> to set up your free account.</p></li>
-<li><p>Prepare a monday.com board mirroring the structure of your KoboToolbox project so that all fields from your KoboToolbox project are represented on a monday.com board.</p></li>
-<li><p>During the application setup of the integration, there is a need to authenticate access to your account by providing your KoboToolbox API token. To get your API token, use any of the methods described <a class="reference external" href="https://support.kobotoolbox.org/api.html?highlight=api%20token">here</a>.</p></li>
+<li><p>Create an account on KoboToolbox if you don’t have one yet. Use this
+<a class="reference external" href="https://support.kobotoolbox.org/creating_account.html">guidance</a> to set up
+your free account.</p></li>
+<li><p>Prepare a monday.com board mirroring the structure of your KoboToolbox
+project so that all fields from your KoboToolbox project are represented on
+a monday.com board.</p></li>
+<li><p>During the application setup of the integration, there is a need to
+authenticate access to your account by providing your KoboToolbox API token.
+To get your API token, use any of the methods described
+<a class="reference external" href="https://support.kobotoolbox.org/api.html?highlight=api%20token">here</a>.</p></li>
 </ol>
 </section>
 <section id="installation">
 <h3>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h3>
 <ol class="arabic simple">
-<li><p>Install the KoboToolbox integration from <a class="reference external" href="https://monday.com/marketplace">monday.com apps marketplace</a>.</p></li>
-<li><p>Once installed, go to your previously prepared board to set up the integration.</p></li>
+<li><p>Install the KoboToolbox integration from
+<a class="reference external" href="https://monday.com/marketplace">monday.com apps marketplace</a>.</p></li>
+<li><p>Once installed, go to your previously prepared board to set up the
+integration.</p></li>
 </ol>
 </section>
 <section id="first-time-use">
 <h3>First-time Use<a class="headerlink" href="#first-time-use" title="Permalink to this headline">¶</a></h3>
-<ol class="arabic simple">
+<ol class="arabic">
 <li><p>Go to the integration menu on the top right.
-<img alt="" src="https://lh3.googleusercontent.com/HiYRiisqIzMvR0UFWunDkVOUD7ftah5pB_6UIyC9adS8U5QQV0Wx4xMBPMibVLZGQxxgSv60GJkFjaynZZhjcNTQr5erx4LlZ7_cCf6x7-KMzaikA95EVBnx9Zs43k3xVwC2LmdomOkX7rdNaibGCd0" /></p></li>
+<img alt="monday-board-integrate" src="_images/monday-board-integrate.png" /></p></li>
 <li><p>Find KoboToolbox in the Integrations Center.
-<img alt="" src="https://lh5.googleusercontent.com/BZn80u4DUPYct7M7YnMAicg0DkHZSlJRmMnj2ul8oizSub1rJkc07_4QXohjIQm7zT-L2ZQmRJuuRlv7qWCiRg8pubLJ7hKf2hns-I80coH_bFsmVCZPDo8jrh1_7IIKwkqmStFU_b-6_7s6kcKDHF0" /></p></li>
+<img alt="app-marketplace" src="_images/app-marketplace.png" /></p></li>
 <li><p>Click on the integration and choose the included recipe.
-<img alt="" src="https://lh6.googleusercontent.com/5RB_8n-L-DCDduXA0EzL7zj-9YuXb52_OFz2J7w99Ayu82WuQkIGPCbh0Ytw9VvB85CqVeR2lpLFJ93L1Du24jeo1Y0enEoCFbXPOlLQk8Fu0osZsRFF1IAKeNrXuQwFxBHcX01gerQoUq40mlYpSz4" /></p></li>
+<img alt="kobo-integration" src="_images/kobo-integration.png" /></p></li>
 <li><p>For recipe configuration, set up the following parameters</p>
 <ol class="arabic simple">
 <li><p>Select the appropriate server</p></li>
 <li><p>Provide your API key prepared earlier</p></li>
-<li><p>Choose the appropriate KoboToolbox project from the dropdown. Only deployed projects are available for selection</p></li>
-<li><p>Choose the label language from the dropdown. If your form contains more than one language, select the one that should be used to map questions to columns. The selected language will only be displayed to map KoboToolbox questions with monday.com columns. The data displayed in the monday.com board will always use the underlying XML data structure instead of translated Select One or Select Multiple labels.</p></li>
+<li><p>Choose the appropriate KoboToolbox project from the dropdown. Only
+deployed projects are available for selection</p></li>
+<li><p>Choose the label language from the dropdown. If your form contains more
+than one language, select the one that should be used to map questions
+to columns. The selected language will only be displayed to map
+KoboToolbox questions with monday.com columns. The data displayed in the
+monday.com board will always use the underlying XML data structure
+instead of translated Select One or Select Multiple labels.</p></li>
 <li><p>Click “Item” to set up the mapping of questions to columns .
-<img alt="" src="https://lh3.googleusercontent.com/01WPMqWtTNx8SNcBUK7fQ0mNIKkJm2ZtPN5KQz9PRY2N9LY6sSbqGWRkVv5BYNuSxZidbuSGeHxpgHuwuP0s0Rv3CcTdLOmfDYFxemZgQJHx2LAK02ryXi9cSbHTstEFRwUPldZ9KrXUtTDLwd46EeM" /></p></li>
+<img alt="dynamic-linking" src="_images/dynamic-linking.png" /></p></li>
 </ol>
 </li>
-<li><p>Once you are done with the recipe configuration, click the “Add to Board” button.
-<img alt="" src="https://lh5.googleusercontent.com/95uVH4RyuVDtZ7PQwx7fwPUcy7q1moGPBQC-wlZx3EaEWOS90MJ34QRkGNyWd9kHxpd3Hr5m-6jooj2pz1wQUvSuj4ovfdtK1Ig2kVHIh8dKUYWHquYBJzBbOKe8HVohwo-xA9fFp_AI6J3vbAW0lhs" /></p></li>
-<li><p>Now that you have the integration in place, there is a last step to configure REST Server on the KoboToolbox side. This is required to tell your KoboToolbox project to automatically forward data to monday.com. To do that, execute the following steps:</p>
+<li><p>Once you are done with the recipe configuration, click the “Add to Board”
+button. <img alt="recipe" src="_images/recipe.png" /></p></li>
+<li><p>Now that you have the integration in place, there is a last step to
+configure REST Server on the KoboToolbox side. This is required to tell your
+KoboToolbox project to automatically forward data to monday.com. To do that,
+execute the following steps:</p>
 <ol class="arabic simple">
-<li><p>Copy the integration link from the notification message sent to you on successful integration setup. The same link is added to the board description, so you can get it from there as well.<br />
-<img alt="" src="https://lh5.googleusercontent.com/rbbcjdTQfJaQdLgky3XjbIfYYj3XtskkEbC7cgqdtIFjVI5djVgVpEaSN5NVNsFqPwC7ogIjMJlmpSo81CBU6oMdnZGnCVPsLmB77Vcvsog9XwQ2WXwuhI2qKdDOVrbHafzPUQ5Qc2A_qKrVhV35Joc" /></p></li>
+<li><p>Copy the integration link from the notification message sent to you on
+successful integration setup. The same link is added to the board
+description, so you can get it from there as well.<br />
+<img alt="webhook-url" src="_images/webhook-url.png" /></p></li>
 <li><p>Log into your KoboToolbox account</p></li>
-<li><p>Go to the appropriate project. Then open the Settings tab, chooseREST Services, and click on ‘Register a new service’ button<br />
-<img alt="" src="https://lh5.googleusercontent.com/l6B6B5RZQMiz-wV1U5p_Q8gb6VNI1oNhWv-DqQkOy035R_oVqVkUKwnUl6FEDeYLjVxLI8hv5m3DqFkfvs4M25-HitrfMtcPFv-N6ISkzZ6LTIFd7Zi00yyA76up1dEVPE871C-LL3qkbLdmXAUupEw" /></p></li>
-<li><p>Enter “monday.com integration” as the Service Name and paste the previously copied integration link in the “Endpoint URL” field.</p></li>
-<li><p>In the “Custom HTTP Headers” section, insert the value “webhook-auth” in the “Name” field and put your Kobo API token in the “Value” field.<br />
-<img alt="" src="https://lh5.googleusercontent.com/jpexd8mXdsCx66Yf-qYVslYW7n6mXIaFZiCLjpxpJbrD42jhMkpRcPC4Os3BhestICIUyVYyvitL08bcZM5yGfy53KGgaopYE6XX6z-VxgjXB5MdqJPQwiikgpzcuUM2gZXUSUrXqDmXwLUQgnW6pPY" /></p></li>
+<li><p>Go to the appropriate project. Then open the Settings tab, chooseREST
+Services, and click on ‘Register a new service’ button<br />
+<img alt="create-rest-service" src="_images/create-rest-service.png" /></p></li>
+<li><p>Enter “monday.com integration” as the Service Name and paste the
+previously copied integration link in the “Endpoint URL” field.</p></li>
+<li><p>In the “Custom HTTP Headers” section, insert the value “webhook-auth” in
+the “Name” field and put your Kobo API token in the “Value” field.<br />
+<img alt="rest-service-modal" src="_images/rest-service-modal.png" /></p></li>
 <li><p>Click the ‘Create’ button.</p></li>
 </ol>
 </li>
-<li><p>That’s all! Now each new submission to the KoboToolbox project will be automatically be added to your monday.com board according to your recipe configuration.<br />
-<img alt="" src="https://lh4.googleusercontent.com/DI1U4zkdzMiVuktzaYHLWDtls0tjHV3pEBcd2z7cACnPk_BndZ8AYhNH9BJoOU_vxABfDFY36z4eFYj87V5w_HrEbdHdfh0xlD_DeCx1Uecui5fl4uzKx2e_teQhcx1i_FAxTjlLViKYRTf2PSiA9ZM" />
-Note: Any updates made to a form or individual submission in KoboToolbox project which is already sent to monday.com board will not be automatically synced at this point. Such changes like removing or renaming a question, changing group hierarchy, changing a group to a repeat group, or editing labels in the KoboToolbox form will not affect the items on monday.com board.</p></li>
+<li><p>That’s all! Now each new submission to the KoboToolbox project will be
+automatically be added to your monday.com board according to your recipe
+configuration.\</p>
+<p><img alt="kobo-monday-data" src="_images/kobo-monday-data.png" />
+Note: Any updates made to a form or individual submission in KoboToolbox
+project which is already sent to monday.com board will not be automatically
+synced at this point. Such changes like removing or renaming a question,
+changing group hierarchy, changing a group to a repeat group, or editing
+labels in the KoboToolbox form will not affect the items on monday.com
+board.</p>
+</li>
 </ol>
 </section>
 </section>
 <section id="faq">
 <h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h2>
 <p><strong>What is the REST Service?</strong></p>
-<p>More information about REST Services could be found in the following <a class="reference external" href="https://support.kobotoolbox.org/rest_services.html">guidance</a>.</p>
+<p>More information about REST Services could be found in the following
+<a class="reference external" href="https://support.kobotoolbox.org/rest_services.html">guidance</a>.</p>
 <p><strong>What is the dynamic fields mapping?</strong></p>
-<p>Dynamic fields mapping is a pairing of fields represented on the monday.com board with the appropriate questions from the KoboToolbox project.</p>
+<p>Dynamic fields mapping is a pairing of fields represented on the monday.com
+board with the appropriate questions from the KoboToolbox project.</p>
 <p><strong>What happens if I change my data in the Kobo account?</strong></p>
-<p>Any updates made to a form or individual submission in KoboToolbox project which is already sent to monday.com board will not be automatically synced at this point.</p>
+<p>Any updates made to a form or individual submission in KoboToolbox project which
+is already sent to monday.com board will not be automatically synced at this
+point.</p>
 <p><strong>What happens if I change my data on the monday.com board?</strong></p>
-<p>Changes made to data represented on the monday.com board will not be reflected in the KoboToolbox project.</p>
+<p>Changes made to data represented on the monday.com board will not be reflected
+in the KoboToolbox project.</p>
 <p><strong>What happens if I need to later change the language?</strong></p>
-<p>Language selection affects only the dynamic fields mapping view on integration recipe configuration step. Board data will not be translated.</p>
+<p>Language selection affects only the dynamic fields mapping view on integration
+recipe configuration step. Board data will not be translated.</p>
 <p><strong>What happens if I delete the board on Kobo?</strong></p>
-<p>If a project is deleted in Kobo, the integration would not run until the integration recipe is updated with a new project.</p>
+<p>If a project is deleted in Kobo, the integration would not run until the
+integration recipe is updated with a new project.</p>
 <p><strong>How do multiple select questions on Kobo transfer to monday?</strong></p>
-<p>For multi select questions a column with Dropdown type should be used on monday.com board to have all selected options correctly transferred to the board.</p>
+<p>For multi select questions a column with Dropdown type should be used on
+monday.com board to have all selected options correctly transferred to the
+board.</p>
 <p><strong>How do single select questions on Kobo transfer to monday?</strong></p>
-<p>For single select questions columns with Dropdown or Text types can be used to have the selected option correctly transferred to the board.</p>
+<p>For single select questions columns with Dropdown or Text types can be used to
+have the selected option correctly transferred to the board.</p>
 <p><strong>What column types from Kobo shift to what column types from monday?</strong></p>
-<p>All column types except File and External XML are supported by monday.com. If you can’t find the appropriate column type on monday.com board, use a column with Text type. For the Area Kobo column type, it’s better to use the Text column on monday side despite the fact that there is Location column type for this matter.</p>
+<p>All column types except File and External XML are supported by monday.com. If
+you can’t find the appropriate column type on monday.com board, use a column
+with Text type. For the Area Kobo column type, it’s better to use the Text
+column on monday side despite the fact that there is Location column type for
+this matter.</p>
 </section>
 </section>
 
@@ -303,7 +356,7 @@ Note: Any updates made to a form or individual submission in KoboToolbox project
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
@@ -332,6 +385,12 @@ Note: Any updates made to a form or individual submission in KoboToolbox project
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data Storage</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcription</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">KoboToolbox Integration on monday.com</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#features">Features</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-first-use">Installation &amp; First Use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#faq">FAQ</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">KoboToolbox on Your Computer or Server</span></p>
 <ul>
