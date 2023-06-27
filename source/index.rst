@@ -133,6 +133,7 @@ Search the knowledge base, browse our resources and visit our forum for more det
   api
   data_storage
   transcription-translation
+  kobotoolbox_monday_integration
 
   
 .. toctree::
