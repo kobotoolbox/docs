@@ -221,7 +221,7 @@ submissions to the project.
 You are also able to pull data from one project into another to develop advanced
 projects with [case management capabilities](dynamic_data_attachment.md).
 
-### 6. KoboToolbox API
+### 7. KoboToolbox API
 
 The [API](api.md) enables you to pull data from KoboToolbox directly into other
 applications. This feature allows for easy integration with common software such
