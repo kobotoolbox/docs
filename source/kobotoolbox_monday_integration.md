@@ -46,7 +46,8 @@ platforms.
 3.  Click on the integration and choose the included recipe.
     ![kobo-integration](/images/kobotoolbox_monday_integration/kobo-integration.png)
 4.  For recipe configuration, set up the following parameters
-    1.  Select the appropriate server
+    1.  Select the appropriate server. 
+    There are two servers available: kobo.humanitarianresponse.info is for humanitarian organizations, whereas kf.kobotoolbox.org is for everyone else.
     2.  Provide your API key prepared earlier
     3.  Choose the appropriate KoboToolbox project from the dropdown. Only
         deployed projects are available for selection
