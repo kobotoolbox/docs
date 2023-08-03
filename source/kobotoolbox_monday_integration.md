@@ -36,6 +36,7 @@ platforms.
     [monday.com apps marketplace](https://monday.com/marketplace).
 2.  Once installed, go to your previously prepared board to set up the
     integration.
+    Note: Only one KoboToolbox integration recipe can be established per monday board.
 
 ### First-time Use
 
@@ -142,3 +143,8 @@ you can't find the appropriate column type on monday.com board, use a column
 with Text type. For the Area Kobo column type, it's better to use the Text
 column on monday side despite the fact that there is Location column type for
 this matter.
+
+**Can I sync more than one KoboToolbox project with my monday board?**
+
+No; only one KoboToolbox integration recipe can be established per board. 
+Having more than one recipe will lead to a server error.
