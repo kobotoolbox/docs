@@ -122,7 +122,7 @@ The form will look as follows:
 ## Previewing the form
 
 Previewing periodically while developing the form is helpful to ensure the
-outcome is what you expected and there there are no errors in your form or
+outcome is what you expected and there are no errors in your form or
 calculations before deployment and data collection.
 
 <p class="note">
