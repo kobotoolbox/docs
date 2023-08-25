@@ -1,5 +1,5 @@
 # KoboToolbox Integration on monday.com
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8c97f9358780418e9384e2ba5c99f466d6022b8d/source/kobotoolbox_monday_integration.md" class="reference">24 Jun 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8c97f9358780418e9384e2ba5c99f466d6022b8d/source/kobotoolbox_monday_integration.md" class="reference">25 Aug 2023</a>
 
 The KoboToolbox Integration allows users to easily synchronize their project
 data from a KoboToolbox project to a monday.com board. In just a few steps you
@@ -43,25 +43,27 @@ platforms.
 1.  Go to the integration menu on the top right.
     ![monday-board-integrate](/images/kobotoolbox_monday_integration/monday-board-integrate.png)
 2.  Find KoboToolbox in the Integrations Center.
-    ![app-marketplace](/images/kobotoolbox_monday_integration/app-marketplace.png)
+    ![app-marketplace](/images/kobotoolbox_monday_integration/find-integration.png)
 3.  Click on the integration and choose the included recipe.
-    ![kobo-integration](/images/kobotoolbox_monday_integration/kobo-integration.png)
-4.  For recipe configuration, set up the following parameters
-    1.  Select the appropriate server. 
-    There are two servers available: kobo.humanitarianresponse.info is for humanitarian organizations, whereas kf.kobotoolbox.org is for everyone else.
-    2.  Provide your API key prepared earlier
-    3.  Choose the appropriate KoboToolbox project from the dropdown. Only
+    ![kobo-integration](/images/kobotoolbox_monday_integration/choose-recipe.png)
+4.  On the next step authorize your KoboToolbox app into monday.com platform by providing the following data
+    1. Select the appropriate server
+    There are two KoboToolbox servers available: kobo.humanitarianresponse.info for humanitarian organizations, whereas kf.kobotoolbox.org is for everyone else.
+    2. Provide your API key prepared earlier ![provide-api-key](/images/kobotoolbox_monday_integration/provide-api-key.png)  
+    Note: In order to change the API key after the integration recipe setup, KoboToolbox Integration app should be completely reinstalled or user should delete all integrations installed by this user.
+5. For recipe configuration, set up the following parameters
+    1.  Choose the appropriate KoboToolbox project from the dropdown. Only
         deployed projects are available for selection
-    4.  Choose the label language from the dropdown. If your form contains more
+    2.  Choose the label language from the dropdown. If your form contains more
         than one language, select the one that should be used to map questions
         to columns. The selected language will only be displayed to map
         KoboToolbox questions with monday.com columns. The data displayed in the
         monday.com board will always use the underlying XML data structure
         instead of translated Select One or Select Multiple labels.
-    5.  Click "Item" to set up the mapping of questions to columns .
-        ![dynamic-linking](/images/kobotoolbox_monday_integration/dynamic-linking.png)
+    3.  Click "Item" to set up the mapping of questions to columns .
+        ![dynamic-linking](/images/kobotoolbox_monday_integration/item-mapping.png)
 5.  Once you are done with the recipe configuration, click the "Add to Board"
-    button. ![recipe](/images/kobotoolbox_monday_integration/recipe.png)
+    button. ![recipe](/images/kobotoolbox_monday_integration/recipe-config.png)
 6.  Now that you have the integration in place, there is a last step to
     configure REST Server on the KoboToolbox side. This is required to tell your
     KoboToolbox project to automatically forward data to monday.com. To do that,
@@ -69,9 +71,9 @@ platforms.
     1.  Copy the integration link from the notification message sent to you on
         successful integration setup. The same link is added to the board
         description, so you can get it from there as well.\
-        ![webhook-url](/images/kobotoolbox_monday_integration/webhook-url.png)
+        ![webhook-url](/images/kobotoolbox_monday_integration/description-link.png)
     2.  Log into your KoboToolbox account
-    3.  Go to the appropriate project. Then open the Settings tab, chooseREST
+    3.  Go to the appropriate project. Then open the Settings tab, choose REST
         Services, and click on 'Register a new service' button\
         ![create-rest-service](/images/kobotoolbox_monday_integration/create-rest-service.png)
     4.  Enter "monday.com integration" as the Service Name and paste the
