@@ -1,5 +1,5 @@
 # KoboToolbox Integration on monday.com
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8c97f9358780418e9384e2ba5c99f466d6022b8d/source/kobotoolbox_monday_integration.md" class="reference">25 Aug 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8c97f9358780418e9384e2ba5c99f466d6022b8d/source/kobotoolbox_monday_integration.md" class="reference">28 Aug 2023</a>
 
 The KoboToolbox Integration allows users to easily synchronize their project
 data from a KoboToolbox project to a monday.com board. In just a few steps you
@@ -87,12 +87,17 @@ platforms.
     configuration.\
 
     ![kobo-monday-data](/images/kobotoolbox_monday_integration/kobo-monday-data.png)
-    Note: Any updates made to a form or individual submission in KoboToolbox
+    Notes: 
+    1. Any updates made to a form or individual submission in KoboToolbox
     project which is already sent to monday.com board will not be automatically
     synced at this point. Such changes like removing or renaming a question,
     changing group hierarchy, changing a group to a repeat group, or editing
     labels in the KoboToolbox form will not affect the items on monday.com
     board.
+    2. Due to monday.com limitations there is no way to map a column with Location type in the dynamic fields mapping. To overcome this limitation the following workflow should be established  
+      a. Create two columns on monday.com board for location data to be populated - one of the Text type and second of the Location type. It’s important to name them identically. 
+      b. Use a location column of the Text type in the dynamic fields mapping.  Second column of the Location type would be automatically populated once the first one is filled out.
+
 
 ## FAQ
 
@@ -142,7 +147,7 @@ have the selected option correctly transferred to the board.
 
 All column types except File and External XML are supported by monday.com. If
 you can't find the appropriate column type on monday.com board, use a column
-with Text type. For the Area Kobo column type, it's better to use the Text
+with Text type. For the Point and Area Kobo column type, it's better to use the Text
 column on monday side despite the fact that there is Location column type for
 this matter.
 
