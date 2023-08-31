@@ -6,7 +6,7 @@ Apr 2022</a>
 
 The first step for all users when getting started with **KoboToolbox** is to
 create an account. This article will guide you through the steps for creating an
-account and singing in to your account.
+account and signing in to your account.
 
 ## How to access KoboToolbox
 
