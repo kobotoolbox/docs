@@ -64,7 +64,7 @@ _username_ and _password_:
 | Server      | URL                                                                                                   |
 | :---------- | :---------------------------------------------------------------------------------------------------- |
 | Global KoboToolbox Server | <a href="https://kf.kobotoolbox.org" class="reference">kf.kobotoolbox.org</a> |
-| European Union Server | <a href="https://eu.kobotoolbox.org" class="reference">eu.kobotoolbox.org</a>                         |
+| European Union KoboToolbox Server | <a href="https://eu.kobotoolbox.org" class="reference">eu.kobotoolbox.org</a>                         |
 
 ## Troubleshooting
 
