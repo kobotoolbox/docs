@@ -4,16 +4,13 @@
 Here's how to quickly get started with a **new form**, deploy it as a **survey
 project**, and **start collecting data** in the field.
 
-## Sign up and Login
+## Creating an account and signing in
 
-KoboToolbox is a free and open source software. If you work for a humanitarian
-organization, please sign up at
-[kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info). If you
-are an individual or work for any other non-humanitarian organizations, please
-visit [kf.kobotoolbox.org](https://kf.kobotoolbox.org) to create a new account.
-After activating your account through the emailed link, you can log in to access
-your account. To find out more about which server you should use, please visit
-[here](server.md).
+To get started, go to the [**Sign up page**](https://www.kobotoolbox.org/sign-up/) and create an account on one of our public servers. Most users sign up for an account on our [**Global KoboToolbox Server**](https://kf.kobotoolbox.org/). Users and organizations that require or prefer data hosting in the European Union can sign up for an account on the [**European Union KoboToolbox Server**](https://eu.kobotoolbox.org/). 
+
+Once you have created your account, activate your account using the emailed link. You can then sign in to your account via the server URL or the [**Sign up page**](https://www.kobotoolbox.org/sign-up/).
+
+For more information about signing up for an account, please see the support article [Creating an account on KoboToolbox](creating_account.md).
 
 ## Create your first form
 
