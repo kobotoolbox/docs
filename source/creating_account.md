@@ -28,7 +28,7 @@ There are three ways to access **KoboToolbox**:
 
 -  The two public KoboToolbox servers are listed on this page.
 
-![KoboToolbox servers](images/creating_account/servers.png)
+![KoboToolbox servers](images/creating_account/servers-2023.png)
 
 The **Global KoboToolbox Server** is used by the majority of our users.
 
