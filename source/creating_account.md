@@ -13,8 +13,8 @@ account and signing in to your account.
 There are three ways to access **KoboToolbox**:
 
 1. **Public servers**: Most users access **KoboToolbox** using one of the public servers listed on the [Sign up page](https://www.kobotoolbox.org/sign-up/). The **Global KoboToolbox Server** is used by the majority of our users. The **European Union KoboToolbox Server** is hosted in Ireland and is used by organizations that require or prefer data hosting in the European Union (EU).
-2.**Private servers**: Many large organizations have their own private KoboToolbox server. If your organization has a private server, you can access your account via your organization's server URL.
-3. **Install KoboToolbox on your own server**: Advanced users can install
+1. **Private servers**: Many large organizations have their own private KoboToolbox server. If your organization has a private server, you can access your account via your organization's server URL.
+1. **Install KoboToolbox on your own server**: Advanced users can install
    **KoboToolbox** on [their own server](kobo_your_servers.md) (or on a
    [local computer or device](kobo_local_computer.md)) using Docker. For more
    details on how to install your own instance of **KoboToolbox**,
@@ -24,7 +24,7 @@ There are three ways to access **KoboToolbox**:
 
 -   To create a new account on **KoboToolbox**, go to the
     [KoboToolbox Home page](https://kobotoolbox.org) and click **SIGN UP** on the
-    menu. This will take you to the [**Sign in or create an account page**](https://www.kobotoolbox.org/sign-up/) of the website.
+    menu. This will take you to the [Sign in or create an account page](https://www.kobotoolbox.org/sign-up/) of the website.
 
 -  The two public KoboToolbox servers are listed on this page.
 
