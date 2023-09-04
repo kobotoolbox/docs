@@ -1,7 +1,7 @@
 Topics
 ======
 
-Search the knowledge base, browse our resources and visit our forum for more detail information
+Search the knowledge base, browse our resources, and visit our forum for more detailed information
 
 .. README: please don't change name or caption of TOCs - they are used for 
 .. JavaScript code and for properly building the custom section pages. 
