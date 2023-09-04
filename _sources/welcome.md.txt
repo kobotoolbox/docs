@@ -1,5 +1,5 @@
 # What is KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/181e37a1c731575dc72ffa9fccfc496466082493/source/welcome.md" class="reference">14 Mar 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0ec825e6f4ff6d2a5a034411d8d9cd523777d3ce/source/welcome.md" class="reference">7 Jul 2023</a>
 
 KoboToolbox is a platform for field data collection in challenging environments.
 Our software is [free and open source](https://github.com/kobotoolbox) and
