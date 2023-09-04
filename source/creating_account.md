@@ -1,24 +1,23 @@
 # Creating an account on KoboToolbox
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/b0f369c77dd56f1a5d5cd2a4acc207fe74ed629f/source/creating_account.md" class="reference">14
-Apr 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/fd25e7f07ce63fe02d24f9edc53eb42d3434a910/source/creating_account.md" class="reference">4 Sep 2023</a>
 
 The first step for all users when getting started with **KoboToolbox** is to
-create an account. This article will guide you through the steps on creating and
-accessing your account on one of **KoboToolbox** servers.
+create an account. This article will guide you through the steps for creating an
+account and signing in to your account.
 
 ## How to access KoboToolbox
 
-There are two main ways of accessing **KoboToolbox**:
+There are three ways to access **KoboToolbox**:
 
-1. **Public servers**: For most users, it is recommended to use either of our
-   publicly available **KoboToolbox** servers listed on the
-   [Get Started page](https://www.kobotoolbox.org/#sign-up). One server is for
-   humanitarian organizations and the non-humanitarian server is for everyone
-   else. Steps for creating an account are listed below.
-
-2. **Install KoboToolbox on your own server**: Advanced users can install
+1. **Public servers**: Most users access **KoboToolbox** using one of the public
+   servers listed on the [Sign up page](https://www.kobotoolbox.org/sign-up/).
+   The **Global KoboToolbox Server** is used by the majority of our users. The
+   **European Union KoboToolbox Server** is hosted in Ireland and is used by
+   organizations that require or prefer data hosting in the European Union (EU).
+1. **Private servers**: Many large organizations have their own private
+   KoboToolbox server. If your organization has a private server, you can access
+   your account via your organization's server URL.
+1. **Install KoboToolbox on your own server**: Advanced users can install
    **KoboToolbox** on [their own server](kobo_your_servers.md) (or on a
    [local computer or device](kobo_local_computer.md)) using Docker. For more
    details on how to install your own instance of **KoboToolbox**,
@@ -26,29 +25,28 @@ There are two main ways of accessing **KoboToolbox**:
 
 ## Creating an account
 
--   To create a new account on **KoboToolbox**, go to the
-    [KoboToolbox homepage](https://kobotoolbox.org) and click **SIGN UP** on the
-    menu. This will take you to the **GET STARTED** section of the website.
+- To create a new account on **KoboToolbox**, go to the
+  [KoboToolbox Home page](https://kobotoolbox.org) and click **SIGN UP** on the
+  menu. This will take you to the
+  [Sign in or create an account page](https://www.kobotoolbox.org/sign-up/) of
+  the website.
 
--   Here, you are presented with two different servers where you can create your
-    account.
+- The two public KoboToolbox servers are listed on this page.
 
-![KoboToolbox servers](images/creating_account/servers.png)
+![KoboToolbox servers](images/creating_account/servers-2023.png)
 
-If you are an individual researcher, aid worker, or a for-profit organization,
-it is recommended to use the server provided by **KoboToolbox** (_Kobo server_).
+The **Global KoboToolbox Server** is used by the majority of our users.
 
-If you are creating an account for a humanitarian organization, it is
-recommended that you use the server provided by **UN OCHA** (_OCHA server_).
+The **European Union KoboToolbox Server** is hosted in Ireland and is used by
+organizations that require or prefer data hosting in the EU.
 
 <p class="note">
-  To learn more about the differences between the two servers,
-  <a href="server.html" class="reference">read this support article</a>.
+  <b>Important note</b>: It is not possible to share projects and data between the two servers. This means that all users working on a shared project must use the same server to access the project.
 </p>
 
--   Click **CREATE ACCOUNT** on the server of your choice
--   On the **Create Your Account** page, enter the details on the form and click
-    **Create Account**.
+- Click **CREATE AN ACCOUNT** on the server of your choice.
+- On the **Create an account** page, enter the details on the form and click
+  **CREATE ACCOUNT**.
 
 <p class="note">
   Make sure to keep your password in a safe place to avoid losing it. <br />
@@ -60,28 +58,28 @@ you did not get the activation email, check your spam folder. For more help, you
 can also read the support article
 [Didn’t Receive Activation Link After Signing Up](activation_link.md).
 
--   Log in to the email address you used when creating your account and click
-    the activation link sent to you. This will automatically log you into
-    **KoboToolbox**.
+- Sign in to the email address you used when creating your account and click the
+  activation link sent to you. This will automatically sign you into
+  **KoboToolbox**.
 
-## Logging back into KoboToolbox
+## Signing back in to KoboToolbox
 
-Use one of the following links to log back into your account with your
+Use one of the following links to sign back in to your account with your
 _username_ and _password_:
 
-| Server      | URL                                                                                                   |
-| :---------- | :---------------------------------------------------------------------------------------------------- |
-| OCHA server | <a href="https://kobo.humanitarianresponse.info" class="reference">kobo.humanitarianresponse.info</a> |
-| Kobo server | <a href="https://kf.kobotoolbox.org" class="reference">kf.kobotoolbox.org</a>                         |
+| Server                            | URL                                                                           |
+| :-------------------------------- | :---------------------------------------------------------------------------- |
+| Global KoboToolbox Server         | <a href="https://kf.kobotoolbox.org" class="reference">kf.kobotoolbox.org</a> |
+| European Union KoboToolbox Server | <a href="https://eu.kobotoolbox.org" class="reference">eu.kobotoolbox.org</a> |
 
 ## Troubleshooting
 
 1. Make sure to follow the guidelines listed below to create a valid username:
-    - The length of a username can range from 2 to 30 characters.
-    - A username could be made up of a combination of lower-case characters,
-      numbers, and underscores. Use of special characters (such as `~`, `!`,
-      `@`, `#`, `$`, `%`, `^`, `&`, `*`, `?`) are not valid.
-    - The username must start with a lower-case character.
+   - The length of a username can range from 2 to 30 characters.
+   - A username could be made up of a combination of lower-case characters,
+     numbers, and underscores. Use of special characters (such as `~`, `!`, `@`,
+     `#`, `$`, `%`, `^`, `&`, `*`, `?`) are not valid.
+   - The username must start with a lower-case character.
 2. You may be required to choose another username (despite following all the
    points listed above) if the username has already been registered to another
    user.
