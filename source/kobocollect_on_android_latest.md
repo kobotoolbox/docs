@@ -41,7 +41,7 @@ _manually_ or through a _QR code_.
     [two KoboToolbox servers](creating_account.md). If you created your user account on
     the Global Server, the URL is `https://kc.kobotoolbox.org`. If your
     user account is on the European Union Server, the URL is
-    `https://eu.kobotoolbox.org`.
+    `https://kc-eu.kobotoolbox.org`.
 
 ![Server Settings](/images/kobocollect_on_android_latest/server_settings.png)
 
