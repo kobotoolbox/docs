@@ -1,13 +1,11 @@
 # Installing KoboToolbox on a Local Computer
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobo_local_computer.md" class="reference">15 Feb 2022</a>
 
-The best way to use KoboToolbox is on one of the two free public instances -
-[kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info/) (if
-you work for a humanitarian organization) and
-[kf.kobotoolbox.org](https://kf.kobotoolbox.org/) (for non-humanitarian users).
+The best way to use KoboToolbox is on one of the two public instances -
+[kf.kobotoolbox.org](https://kf.kobotoolbox.org/) (used by the majority of our users) and [eu.kobotoolbox.org](https://eu.kobotoolbox.org/) (used by organizations that require or prefer data hosting in the European Union).
 **There is no software to be installed on your computer when using these free
 public servers.** For more help deciding which server to use,
-[check this article](server.md).
+[check this article](creating_account.md).
 
 Installing KoboToolbox on your own computer is **not necessary** and is only
 recommended if 1) you are a developer looking to contribute code to our
