@@ -60,7 +60,7 @@ you have regained internet connectivity.
 ## Importing a data ZIP file
 
 1. Login to your KoboToolbox account, then visit:
-   `https://kc.humanitarianresponse.info/your_username/bulk-submission-form` OR
+   `https://kc-eu.kobotoolbox.org/your_username/bulk-submission-form` OR
    `https://kc.kobotoolbox.org/your_username/bulk-submission-form` (depending on
    where you signed up), and replace `your_username` with **your own username**.
 
