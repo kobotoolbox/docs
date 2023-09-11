@@ -48,7 +48,8 @@ platforms.
     ![kobo-integration](/images/kobotoolbox_monday_integration/choose-recipe.png)
 4.  On the next step authorize your KoboToolbox app into monday.com platform by providing the following data
     1. Select the appropriate server
-    There are two KoboToolbox servers available: kobo.humanitarianresponse.info for humanitarian organizations, whereas kf.kobotoolbox.org is for everyone else.
+    
+    There are two public KoboToolbox servers: the Global Server at kf.kobotoolbox.org and the European Union Server at eu.kobotoolbox.org.
     2. Provide your API key prepared earlier ![provide-api-key](/images/kobotoolbox_monday_integration/provide-api-key.png)  
     Note: In order to change the API key after the integration recipe setup, KoboToolbox Integration app should be completely reinstalled or user should delete all integrations installed by this user.
 5. For recipe configuration, set up the following parameters
@@ -62,9 +63,9 @@ platforms.
         instead of translated Select One or Select Multiple labels.
     3.  Click "Item" to set up the mapping of questions to columns .
         ![dynamic-linking](/images/kobotoolbox_monday_integration/item-mapping.png)
-5.  Once you are done with the recipe configuration, click the "Add to Board"
+6.  Once you are done with the recipe configuration, click the "Add to Board"
     button. ![recipe](/images/kobotoolbox_monday_integration/recipe-config.png)
-6.  Now that you have the integration in place, there is a last step to
+7.  Now that you have the integration in place, there is a last step to
     configure REST Server on the KoboToolbox side. This is required to tell your
     KoboToolbox project to automatically forward data to monday.com. To do that,
     execute the following steps:
@@ -82,7 +83,7 @@ platforms.
         the "Name" field and put your Kobo API token in the "Value" field.\
         ![rest-service-modal](/images/kobotoolbox_monday_integration/rest-service-modal.png)
     6.  Click the 'Create' button.
-7.  That's all! Now each new submission to the KoboToolbox project will be
+8.  That's all! Now each new submission to the KoboToolbox project will be
     automatically be added to your monday.com board according to your recipe
     configuration.\
 
