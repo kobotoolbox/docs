@@ -57,9 +57,9 @@ data.
 - Open a new tab in your browser and paste the following URL
   `https://{kf_url}/api/v2/assets/{asset_uid}/export-settings/`. Replace
   `{asset_uid}` with your project's asset UID and `{kf_url}` with the KPI URL of
-  [the server you are using](server.md) (`kf.kobotoolbox.org` for the
-  non-humanitarian server or `kobo.humanitarianresponse.info` for the
-  humanitarian server).
+  [the server you are using](creating_account.md) (`kf.kobotoolbox.org` for the
+  Global Server or `eu.kobotoolbox.org` for the
+  European Union Server).
 
 ![Export settings](/images/synchronous_exports/export-settings-url.png)
 
