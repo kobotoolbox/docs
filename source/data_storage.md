@@ -13,7 +13,7 @@ and the attachments are saved into Simple Storage Service (S3). The stored data
 in the Database is never deleted unless you delete the data yourself. The
 collected data on S3 is also never deleted, unless you delete it yourself or you
 end up using more space then you're allowed according to the
-[OCHA/Kobo policies](server.md).
+[Kobo policies](creating_account.md).
 
 You can keep up to 10 data exports at a time per project. If you create an 11th
 export, the oldest one is deleted and only the 10 most recent exports are kept.
