@@ -17,7 +17,7 @@ contribute to the **Public Collections** library.
 
 Users can choose to make their survey questions public, meaning they will be
 included in the **Public Collections** library. All users on the
-[same server instance](server.md) will have access to the same **Public
+[same server instance](creating_account.md) will have access to the same **Public
 Collections**, which may include common questions or groups of questions, such
 as demographic characteristics, DHS (Demographic & Health Surveillance), equity
 tool for wealth determination, as well as other standard measures widely used.
