@@ -1,10 +1,8 @@
 # Data Storage
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/data_storage.md" class="reference">15 Feb 2022</a>
 
-Whether you're using the humanitarian server supported by
-[UNOCHA](https://kobo.humanitarianresponse.info/accounts/login/?next=/#/) or the
-non-humanitarian server supported by
-[Kobo, Inc.](https://kf.kobotoolbox.org/accounts/login/?next=/#/), the data from
+Whether you're using the [Global KoboToolbox Server](https://kf.kobotoolbox.org/) or the
+[European Union KoboToolbox Server](https://eu.kobotoolbox.org/), the data from
 both servers is stored on Amazon Web Services (AWS) servers.
 
 There are 2 kinds of data stored on AWS, the form itself and the attachments
