@@ -96,7 +96,7 @@ scale in a reliable manner. Financial resources should not be a barrier to this
 important work, and to that purpose, we prioritize maintaining free access to
 our tool.
 
-You can learn more about which KoboToolbox server to choose [here](server.md).
+You can learn more about which KoboToolbox server to choose [here](creating_account.md).
 
 ## What languages are supported?
 
