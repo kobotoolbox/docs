@@ -6,11 +6,11 @@ reset it easily.
 
 To reset your password:
 
--   For Humanitarian Organizations using the **UN OCHA server** (unlimited use):
+-   For organizations using the **Global Server**: 
+    Go to [kf.kobotoolbox.org](https://kf.kobotoolbox.org)
+-   For organizations using the **European Union Server**:
     Go to
-    [kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info)
--   For Researchers, Aid Workers, & Everyone Else using the **Kobo server**: Go
-    to [kf.kobotoolbox.org](https://kf.kobotoolbox.org)
+    [eu.kobotoolbox.org](https://eu.kobotoolbox.org/)
 
 ![KoboToolbox login form](/images/resetting_passwords/login_form.png)
 
@@ -29,8 +29,8 @@ link, please try troubleshooting with the following:
 -   It might also be that you are requesting to reset your password on the wrong
     server. Check the URL on your address bar to ensure you are on the server
     where you had created your account on,
-    [whether the Kobo server](https://kf.kobotoolbox.org) or the
-    [UN OCHA server](https://kobo.humanitarianresponse.info]).
+    whether you are using [the Global Server](https://kf.kobotoolbox.org) or the
+    [EU Server](https://eu.kobotoolbox.org/).
 
 If you still have not received the email with the reset link, and you have tried
 all the troubleshooting options provided above, please send an email with the
