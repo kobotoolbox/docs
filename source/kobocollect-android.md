@@ -40,9 +40,9 @@ _manually_ or through a _QR code_.
 
 -   You will now be asked to input the **URL**, **Username**, and **Password**,
     and then select **Add**. For the URL, you must select from the two
-    **KoboToolbox** servers. If you created your user account on the general use
-    server, the URL is `https://kc.kobotoolbox.org`. If your user account is on
-    the Humanitarian server (OCHA), the URL is
+    **KoboToolbox** servers. If you created your user account on the Global 
+    Server, the URL is `https://kc.kobotoolbox.org`. If your user account is on
+    the European Union Server, the URL is
     `https://kc-eu.kobotoolbox.org`.
 
 ![Server Settings](/images/kobocollect_android/server_settings.png)
