@@ -1,5 +1,5 @@
 ﻿# Connecting to your data using synchronous exports
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a41c940878a7d7b76a9f915ce3005dd9fb4d0a0a/source/synchronous_exports.md" class="reference">7 Jul 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4ce917e7129aa1b10f161eafcc56b64943e660c2/source/synchronous_exports.md" class="reference">11 Sep 2023</a>
 
 In this article, we'll explore how to use the synchronous exports feature to
 connect your project data to programs such as Microsoft PowerBI, Excel, Google
@@ -57,9 +57,9 @@ data.
 - Open a new tab in your browser and paste the following URL
   `https://{kf_url}/api/v2/assets/{asset_uid}/export-settings/`. Replace
   `{asset_uid}` with your project's asset UID and `{kf_url}` with the KPI URL of
-  [the server you are using](server.md) (`kf.kobotoolbox.org` for the
-  non-humanitarian server or `kobo.humanitarianresponse.info` for the
-  humanitarian server).
+  [the server you are using](creating_account.md) (`kf.kobotoolbox.org` for the
+  Global Server or `eu.kobotoolbox.org` for the
+  European Union Server).
 
 ![Export settings](/images/synchronous_exports/export-settings-url.png)
 

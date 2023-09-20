@@ -1,5 +1,5 @@
 # Using Public Collections
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/using_public_collections.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8f6b969a2b7812779940875ace1100d741729d70/source/using_public_collections.md" class="reference">11 Sep 2023</a>
 
 Obtaining the right information often depends on asking the right questions.
 **Public Collections** helps us all improve our data collection by making sets
@@ -17,7 +17,7 @@ contribute to the **Public Collections** library.
 
 Users can choose to make their survey questions public, meaning they will be
 included in the **Public Collections** library. All users on the
-[same server instance](server.md) will have access to the same **Public
+[same server instance](creating_account.md) will have access to the same **Public
 Collections**, which may include common questions or groups of questions, such
 as demographic characteristics, DHS (Demographic & Health Surveillance), equity
 tool for wealth determination, as well as other standard measures widely used.

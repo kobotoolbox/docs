@@ -1,5 +1,5 @@
 # "Photo", "Audio", "Video" and "File" question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/454cf0b0764c49cc9f2e0ea199eb7aaacf5751c0/source/photo_audio_video_file.md" class="reference">7 Jul 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/27c3e37a283d79de0cbecebbf3a41d5b6ba6d7df/source/photo_audio_video_file.md" class="reference">11 Sep 2023</a>
 
 With KoboToolbox, you can collect different types of media as part of your data
 collection project.
@@ -111,8 +111,8 @@ You can read more about background audio recording
 
 If you are collecting a lot of media in your project, you might have challenges
 uploading them to KoboToolbox depending on the speed of your internet
-connection. If you are using the [non-humantiarian server](server.md), then you
-are also limited to only 5GB of free storage. It is a good idea to manage the
+connection. If you are using the [Global Server or European Union Server](creating_account.md), then you
+are also limited to only 1GB of free storage. It is a good idea to manage the
 file sizes of collected media files such as images, audio and videos.
 
 You can define the maximum size of images you collect using the "Photo" question

@@ -1,5 +1,5 @@
 # Data Collection on KoboCollect App (Older Version)
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobocollect-android.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/58824cc4014d8957668b280773edc3a00221fc84/source/kobocollect-android.md" class="reference">6 Sep 2023</a>
 
 <p class='note'>The older version of the KoboCollect App refers to v1.30.1 and below.</p>
 
