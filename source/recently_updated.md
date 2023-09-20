@@ -9,5 +9,5 @@
 1. [What is KoboToolbox](welcome.md) (11 Sep 2023)
 1. [Installing KoboToolbox on a Local Computer](kobo_local_computer.md) (11 Sep 2023)
 1. [Using Public Collections](using_public_collections.md) (11 Sep 2023)
-1. [Creating an account on KoboToolbox](creating_account.md) (4 Sep 2023)
-1. [Quick Start Overview](quick_start.md) (4 Sep 2023)
+1. [Manually Uploading Submissions](manual_upload.md) (6 Sep 2023)
+1. [KoboToolbox Integration on monday.com](kobotoolbox_monday_integration.md) (6 Sep 2023)

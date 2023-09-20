@@ -1,5 +1,5 @@
 # KoboToolbox Integration on monday.com
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/793bce0ced2dd143b19b50222fb55f49004d276e/source/kobotoolbox_monday_integration.md" class="reference">28 Aug 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/88636b9deb154f80d83c4da83c8057120ae5d903/source/kobotoolbox_monday_integration.md" class="reference">6 Sep 2023</a>
 
 The KoboToolbox Integration allows users to easily synchronize their project
 data from a KoboToolbox project to a monday.com board. In just a few steps you
