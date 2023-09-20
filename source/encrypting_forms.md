@@ -36,7 +36,7 @@ key. To understand more about public and private key infrastructure
 
 3. Add a column _submission_url_ and type
    `https://kc.kobotoolbox.org/yourusername/submission` or
-   `https://kc.humanitarianresponse.info/yourusername/submission` (depending
+   `https://kc-eu.kobotoolbox.org/yourusername/submission` (depending
    upon the server you are using). Please note that yourusername is your
    KoboToolbox user account.
 
@@ -90,7 +90,7 @@ This is required for decryption to be successful.
 4. Then enter the following:
 
     - `https://kc.kobotoolbox.org/yourusername` OR
-      `https://kc.humanitarianresponse.info/yourusername`(depending on which
+      `https://kc-eu.kobotoolbox.org/yourusername`(depending on which
       server you use)
     - Your username
     - Your password

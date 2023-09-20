@@ -43,7 +43,7 @@ _manually_ or through a _QR code_.
     **KoboToolbox** servers. If you created your user account on the general use
     server, the URL is `https://kc.kobotoolbox.org`. If your user account is on
     the Humanitarian server (OCHA), the URL is
-    `https://kc.humanitarianresponse.info`.
+    `https://kc-eu.kobotoolbox.org`.
 
 ![Server Settings](/images/kobocollect_android/server_settings.png)
 
