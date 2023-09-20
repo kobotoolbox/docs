@@ -1,5 +1,5 @@
 # Installing KoboToolbox on a Local Computer
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobo_local_computer.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e2788bf7cbca4b5c7245293ad7cb9a94dc2fb55f/source/kobo_local_computer.md" class="reference">11 Sep 2023</a>
 
 The best way to use KoboToolbox is on one of the two public instances -
 [kf.kobotoolbox.org](https://kf.kobotoolbox.org/) (used by the majority of our users) and [eu.kobotoolbox.org](https://eu.kobotoolbox.org/) (used by organizations that require or prefer data hosting in the European Union).

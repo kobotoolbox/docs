@@ -1,5 +1,5 @@
 # Data Storage
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e89f5ef3a5fe530fda28f196c8ab88cbcf5586b3/source/data_storage.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/592a15ee470fa144eeac9850c6b6a648c4755306/source/data_storage.md" class="reference">11 Sep 2023</a>
 
 Whether you're using the [Global KoboToolbox Server](https://kf.kobotoolbox.org/) or the
 [European Union KoboToolbox Server](https://eu.kobotoolbox.org/), the data from
