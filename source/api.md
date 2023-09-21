@@ -15,7 +15,7 @@ API that should be used.
 
 The base URL depends on the server you are using: for most users it is
 [kf.kobotoolbox.org](https://kf.kobotoolbox.org) or
-[kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info). Below
+[eu.kobotoolbox.org](https://eu.kobotoolbox.org). Below
 we only use [kpi-url] to refer to this base URL.
 
 ## Getting your API Token:
