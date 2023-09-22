@@ -23,9 +23,8 @@ forms and collected data are compatible with these tools.
 ![image](/images/software_architecture/overview.png)
 
 The best way to use KoboToolbox is on one of the two public instances -
-[kobo.humanitarianresponse.info](http://kobo.humanitarianresponse.info) (if you
-work for a humanitarian organization) and
-[kf.kobotoolbox.org](http://kf.kobotoolbox.org) (non-humanitarians). There is no
+[kf.kobotoolbox.org](https://kf.kobotoolbox.org) and
+[eu.kobotoolbox.org](https://eu.kobotoolbox.org) (for organizations that prefer data hosting in the European Union). There is no
 software to be installed on your computer. Installing KoboToolbox on your own
 computer is not necessary and is only recommended if you work in an environment
 with absolutely no Internet access.
