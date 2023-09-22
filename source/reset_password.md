@@ -9,7 +9,7 @@ To reset your password:
 -   For organizations using the **Global Server**:
     Go to
     [kf.kobotoolbox.org](https://kf.kobotoolbox.org)
--   For organiations using the **European Union Server**: Go
+-   For organizations using the **European Union Server**: Go
     to [eu.kobotoolbox.org](https://eu.kobotoolbox.org)
 
 ![KoboToolbox login form](/images/resetting_passwords/login_form.png)
