@@ -1,8 +1,5 @@
 # Using the API
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/api.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c1ec1ffac3e8a3484605d65c6e3926546c806170/source/api.md" class="reference">21 Sep 2023</a>
 
 KoboToolbox has a number of advanced features built in based on our open source
 libraries, which include useful add-ons for advanced use cases. There are many
@@ -15,7 +12,7 @@ API that should be used.
 
 The base URL depends on the server you are using: for most users it is
 [kf.kobotoolbox.org](https://kf.kobotoolbox.org) or
-[kobo.humanitarianresponse.info](https://kobo.humanitarianresponse.info). Below
+[eu.kobotoolbox.org](https://eu.kobotoolbox.org). Below
 we only use [kpi-url] to refer to this base URL.
 
 ## Getting your API Token:

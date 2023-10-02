@@ -1,5 +1,5 @@
 # Data Collection on KoboCollect App (Older Version)
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/58824cc4014d8957668b280773edc3a00221fc84/source/kobocollect-android.md" class="reference">6 Sep 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7b9f1ffdf3abecfd7796c188b408d6358bc90f34/source/kobocollect-android.md" class="reference">21 Sep 2023</a>
 
 <p class='note'>The older version of the KoboCollect App refers to v1.30.1 and below.</p>
 
@@ -40,9 +40,9 @@ _manually_ or through a _QR code_.
 
 -   You will now be asked to input the **URL**, **Username**, and **Password**,
     and then select **Add**. For the URL, you must select from the two
-    **KoboToolbox** servers. If you created your user account on the general use
-    server, the URL is `https://kc.kobotoolbox.org`. If your user account is on
-    the Humanitarian server (OCHA), the URL is
+    **KoboToolbox** servers. If you created your user account on the Global 
+    Server, the URL is `https://kc.kobotoolbox.org`. If your user account is on
+    the European Union Server, the URL is
     `https://kc-eu.kobotoolbox.org`.
 
 ![Server Settings](/images/kobocollect_android/server_settings.png)
