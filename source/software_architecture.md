@@ -1,5 +1,5 @@
 # Software Architecture
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/software_architecture.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f57c621e04d964a711a55ea6b0969087404e2dd8/source/software_architecture.md" class="reference">21 Sep 2023</a>
 
 KoboToolbox consists of the following components, all of which are open source
 (see links for source code):
