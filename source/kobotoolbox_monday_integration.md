@@ -4,7 +4,9 @@
 <p class="note">
 This article outlines the early release of the integration between KoboToolbox
 and Monday.com. As with any new release, there may be some unexpected bugs. If
-you encounter issues, please contact us immediately so we can address them.
+you encounter issues, please <a
+href="https://www.kobotoolbox.org/contact/?contact_reason=Monday.com%20integration"
+class="reference">contact us</a> immediately so we can address them.
 </br>
 ⚠️ We recommend rigorous testing before deploying this integration for
 mission-critical projects. ⚠️
