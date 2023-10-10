@@ -1,10 +1,12 @@
 # KoboToolbox Integration on monday.com
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6fd6e6e9e1932ed88637b74d148846d806f85d08/source/kobotoolbox_monday_integration.md" class="reference">6 Oct 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0921e75e1daad2dc9d204b9400dcdba642f7d6c0/source/kobotoolbox_monday_integration.md" class="reference">10 Oct 2023</a>
 
 <p class="note">
 This article outlines the early release of the integration between KoboToolbox
 and Monday.com. As with any new release, there may be some unexpected bugs. If
-you encounter issues, please contact us immediately so we can address them.
+you encounter issues, please <a
+href="https://www.kobotoolbox.org/contact/?contact_reason=Monday.com%20integration"
+class="reference">contact us</a> immediately so we can address them.
 </br>
 ⚠️ We recommend rigorous testing before deploying this integration for
 mission-critical projects. ⚠️
