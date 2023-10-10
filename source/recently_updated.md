@@ -1,7 +1,7 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
-1. [KoboToolbox Integration on monday.com](kobotoolbox_monday_integration.md) (6 Oct 2023)
+1. [KoboToolbox Integration on monday.com](kobotoolbox_monday_integration.md) (10 Oct 2023)
 1. [Resetting Passwords](reset_password.md) (22 Sep 2023)
 1. [Using the API](api.md) (21 Sep 2023)
 1. [Software Architecture](software_architecture.md) (21 Sep 2023)
