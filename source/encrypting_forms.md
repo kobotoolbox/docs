@@ -20,7 +20,7 @@ collect sensitive data while meeting certain data protection protocols possible.
 KoboCollect supports the ability to encrypt the content of a form the moment it
 is marked as completed and ready for submission on the phone. To take advantage
 of this requires the use of a public encryption key which you include in the
-XLSForm and a private key (which you never share) that is used by ODK Briefcase
+XLSForm and a private key (which you never share) that is used by ODK Central
 to decrypt the data locally after you've downloaded it from KoboToolbox. The
 public key is used to encrypt data while the private key decrypts it. Only a
 person who has the private key, can decrypt the data encrypted with the public
@@ -54,12 +54,12 @@ key. To understand more about public and private key infrastructure
 
 ## How to decrypt forms
 
-ODK Briefcase is used to download the encrypted files from KoboToolbox and
+ODK Central is used to download the encrypted files from KoboToolbox and
 decrypt them locally on your computer using a private key ensuring single access
-to the data. For decryption to be successful with ODK Briefcase make sure you
+to the data. For decryption to be successful with ODK Central make sure you
 download and install the _Java Cryptography Extension (JCE) Unlimited Strength
 Jurisdiction Policy Files 6_ from the
-[Java download site](https://www.oracle.com/java/technologies/javase-downloads.md).
+[Java download site](https://www.oracle.com/java/technologies/javase-jce-all-downloads.html).
 This is required for decryption to be successful.
 
 ### To install the JCE:
@@ -80,7 +80,7 @@ This is required for decryption to be successful.
 
 ### To decrypt your forms:
 
-1. Download and open [ODK Briefcase](https://docs.getodk.org/briefcase-intro/).
+1. Download and open [ODK Central](https://docs.getodk.org/central-intro/).
 
 2. Specify a **Storage Location** under the **Settings** tab.
 
@@ -166,7 +166,7 @@ settings sheet on your XLS file.
 spaces or line breaks!
 
 **MyPrivateKey.pem** is the file you will use when exporting the submissions
-using ODK Briefcase.
+using ODK Central.
 
 Note: When trying to edit a form that has been encrypted, you receive a message
 “This form cannot be edited once it has been marked as finalized. It may by
