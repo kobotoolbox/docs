@@ -37,7 +37,7 @@ By default, each XLS file will import as a new Collection. If your file only con
 
 Use [this Excel file as a template](http://kobo-support.s3.amazonaws.com/screens/collection%20import%20sample-2.xlsx). The file generally follows the XLSForm format. There a few differences:
 
-* The main sheet containing the questions should be named **survey**.
+* The main sheet containing the questions should be named **library** when uploading multiple blocks.
 * (Optional) Question blocks should be defined in the additional column called **block**, writing the same block title in each row of the table that should be included in the block. The block label has no limitations in terms of characters, but it needs to be the exact same spelling to avoid breaking the block up ('Household questions' is different from 'household questions'). Use a block title that makes it easy to identify the contents later on.
 * Any row in the template sheet that doesn't have a value in the block column will be imported as a separate question.
 * (Optional) Define any tags for the question or block by adding a column **tag:[your tag name]** for each tag, then writing '1' in each row that should use the tag. In the case of blocks, it's enough to write '1' in any of the rows in the block regardless which one. It's enough to mark one of the questions in the block, though it doesn't matter if several questions are tagged.
