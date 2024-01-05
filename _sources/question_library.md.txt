@@ -35,7 +35,7 @@ In addition to creating Collections in the interface, you can also import large 
 
 By default, each XLS file will import as a new Collection. If your file only contains one question or one block, it will import just that one question or one block instead of creating a Collection. The name of the Collection is taken from the file name (duplicates of existing Collections are allowed). But it's easy to rename the Collection after importing it - just click on the Collection name in the left sidebar, then click the settings icon.
 
-Use [this Excel file as a template](http://kobo-support.s3.amazonaws.com/screens/collection%20import%20sample-2.xlsx). The file generally follows the XLSForm format. There a few differences:
+Use [this Excel file as a template](https://kobo-support.s3.amazonaws.com/screens/collection%20import%20sample-2.xlsx). The file generally follows the XLSForm format. There a few differences:
 
 * The main sheet containing the questions should be named **library** when uploading multiple blocks.
 * (Optional) Question blocks should be defined in the additional column called **block**, writing the same block title in each row of the table that should be included in the block. The block label has no limitations in terms of characters, but it needs to be the exact same spelling to avoid breaking the block up ('Household questions' is different from 'household questions'). Use a block title that makes it easy to identify the contents later on.
