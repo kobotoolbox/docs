@@ -24,11 +24,11 @@ In some cases, you may wish to enable data entry from anyone who knows the Enket
 logged into their KoboToolbox user accounts.
 
 - Go to **Collect data** inside your KoboToolbox account
-- Select "Allow web submissions to this form without a username and password"
+- Use the toggle button to enable "Allow submissions to this form without a username and password"
 
 ![Requiring passwords](images/managing_permissions/requiring_passwords.gif)
 
-You can also access this by going to the **Sharing** tab in the **SETTINGS** page in your data collection project and toggling between the default setting to “Allow web submissions to this form without a username and password”.
+You can also make changes to this privacy feature by going to the **Sharing** tab in the **SETTINGS** page in your data collection project and toggling the default setting to enable “Allow submissions to this form without a username and password”, or when accessing your **Sharing Permissions**.
 
 <p class="note">
   Setting forms to require authentication is now available as a per-project setting. This privacy feature replaces the old account setting “Require authentication to see forms and submit data”. With this new update, new projects require authentication by default. Existing projects inherit your old account-level settings as they are at the time of this update. 
