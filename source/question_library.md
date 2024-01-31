@@ -1,5 +1,5 @@
 # Using the Question Library
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d5cdd698b4a91c3c45216f5a0f91ff7f0704a495/source/question_library.md" class="reference">19 Jun 2020</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c2d5a91fe52a459c8c21cd0dea32515940920820/source/question_library.md" class="reference">5 Jan 2024</a>
 
 ## Adding Questions to your Library
 
