@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,7 +105,7 @@
         <section class="page__body" role="main">
           
   <section id="dynamic-data-attachments">
-<h1>Dynamic Data Attachments<a class="headerlink" href="#dynamic-data-attachments" title="Permalink to this headline">¶</a></h1>
+<h1>Dynamic Data Attachments<a class="headerlink" href="#dynamic-data-attachments" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong>
 <a href="https://github.com/kobotoolbox/docs/blob/1d7f77a9494f8bbbc0728a28c2e7af03c98f3f7b/source/dynamic_data_attachment.md" class="reference">5
 Aug 2021</a></p>
@@ -111,7 +113,7 @@ Aug 2021</a></p>
 dynamically and referenced by other projects. It also aims to demonstrate some
 practical examples that this feature supports.</p>
 <p>Dynamically linking projects allows for the same powerful capabilities as the
-<a class="reference internal" href="pull_data_kobotoolbox.html"><span class="doc std std-doc"><code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> function</span></a> but without the need to
+<a class="reference internal" href="pull_data_kobotoolbox.html"><span class="std std-doc"><code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> function</span></a> but without the need to
 maintain a separate CSV file since the data stored in a linked project acts as
 the data source. Users can continue collecting data in the <em>parent project</em> and
 simultaneously use that data in other linked <em>child projects</em>, therefore enable
@@ -123,12 +125,12 @@ short or long period). Users can also dynamically link a <em>child project</em> 
 <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>, etc.) in a linked <em>child project</em> (Round 2 in
 this example) that has already been collected and stored in the <em>parent project</em>
 (Round 1 in this example).</p>
-<p>Users can also perform <a class="reference internal" href="advanced_calculate.html"><span class="doc std std-doc">various calculations</span></a> on linked
+<p>Users can also perform <a class="reference internal" href="advanced_calculate.html"><span class="std std-doc">various calculations</span></a> on linked
 data in the <em>child project</em>, such as counting (<code class="docutils literal notranslate"><span class="pre">count()</span></code>) responses and
 computing the sum (<code class="docutils literal notranslate"><span class="pre">sum()</span></code>), maximum (<code class="docutils literal notranslate"><span class="pre">max()</span></code>), or minimum (<code class="docutils literal notranslate"><span class="pre">min()</span></code>) value of a
 particular variable.</p>
 <section id="dynamically-linking-projects-in-xlsform">
-<h2>Dynamically linking projects in XLSForm<a class="headerlink" href="#dynamically-linking-projects-in-xlsform" title="Permalink to this headline">¶</a></h2>
+<h2>Dynamically linking projects in XLSForm<a class="headerlink" href="#dynamically-linking-projects-in-xlsform" title="Permalink to this heading">¶</a></h2>
 <p>Dynamically linking projects requires a <em>parent project</em> and at least one <em>child
 project</em>. The
 <a download class="reference" href="./_static/files/dynamic_data_attachment/Round_1.xlsx"><em>parent
@@ -151,7 +153,7 @@ characters and numbers.</p>
 </div></blockquote>
 </section>
 <section id="understanding-the-syntax-used-in-the-calculation-column-of-the-child-project">
-<h2>Understanding the syntax used in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column of the <em>child project</em><a class="headerlink" href="#understanding-the-syntax-used-in-the-calculation-column-of-the-child-project" title="Permalink to this headline">¶</a></h2>
+<h2>Understanding the syntax used in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column of the <em>child project</em><a class="headerlink" href="#understanding-the-syntax-used-in-the-calculation-column-of-the-child-project" title="Permalink to this heading">¶</a></h2>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head"><p>XLSForm Syntax</p></th>
@@ -196,14 +198,14 @@ characters and numbers.</p>
 </table>
 </section>
 <section id="setting-up-for-dynamic-linking">
-<h2>Setting up for dynamic linking<a class="headerlink" href="#setting-up-for-dynamic-linking" title="Permalink to this headline">¶</a></h2>
+<h2>Setting up for dynamic linking<a class="headerlink" href="#setting-up-for-dynamic-linking" title="Permalink to this heading">¶</a></h2>
 <p>Users can link projects dynamically in two scenarios:</p>
 <ol class="arabic simple">
 <li><p>The same user owns both the <em>parent project</em> and <em>child project</em>, and</p></li>
 <li><p>Different users own each of the projects and the <em>parent project</em> is shared</p></li>
 </ol>
 <section id="both-projects-owned-by-the-same-user">
-<h3>1. Both projects owned by the same user<a class="headerlink" href="#both-projects-owned-by-the-same-user" title="Permalink to this headline">¶</a></h3>
+<h3>1. Both projects owned by the same user<a class="headerlink" href="#both-projects-owned-by-the-same-user" title="Permalink to this heading">¶</a></h3>
 <p>Follow the steps below to dynamically link projects:</p>
 <p><strong>Step 1:</strong> Upload and deploy the <em>parent project</em>.</p>
 <p><video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_1_survey).mp4" type="video/mp4"></video></p>
@@ -227,7 +229,7 @@ project</em> to share with the <em>child project</em>.</p>
 example, data from the <em>Round 1 Survey</em> is linked to the <em>Round 2 Survey</em>.</p>
 </section>
 <section id="projects-owned-by-different-users">
-<h3>2. Projects owned by different users<a class="headerlink" href="#projects-owned-by-different-users" title="Permalink to this headline">¶</a></h3>
+<h3>2. Projects owned by different users<a class="headerlink" href="#projects-owned-by-different-users" title="Permalink to this heading">¶</a></h3>
 <p>Assume a scenario where <strong>userA</strong> has a <em>parent project</em> shared with <strong>userB</strong>.
 <strong>userB</strong> can create a <em>child project</em> and link it dynamically with that
 project. For example:</p>
@@ -244,7 +246,7 @@ Same User</strong>.</p>
 </section>
 </section>
 <section id="collecting-and-managing-data-with-dynamic-linking">
-<h2>Collecting and managing data with dynamic linking<a class="headerlink" href="#collecting-and-managing-data-with-dynamic-linking" title="Permalink to this headline">¶</a></h2>
+<h2>Collecting and managing data with dynamic linking<a class="headerlink" href="#collecting-and-managing-data-with-dynamic-linking" title="Permalink to this heading">¶</a></h2>
 <p>Users can collect data for dynamically linked projects on both the
 <a class="reference" href="kobocollect-android.html"><strong>Collect</strong> Android app</a>
 and <a class="reference" href="data_through_webforms.html"><strong>Enketo</strong> web

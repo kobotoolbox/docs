@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,7 +105,7 @@
         <section class="page__body" role="main">
           
   <section id="kobotoolbox-data-security-measures-keeping-your-data-safe">
-<h1>KoboToolbox data security measures: Keeping your data safe<a class="headerlink" href="#kobotoolbox-data-security-measures-keeping-your-data-safe" title="Permalink to this headline">¶</a></h1>
+<h1>KoboToolbox data security measures: Keeping your data safe<a class="headerlink" href="#kobotoolbox-data-security-measures-keeping-your-data-safe" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/ede450dc2aabb27eda65076d0334d897949825dd/source/is_my_data_safe.md" class="reference">7 Mar 2023</a></p>
 <p>We take data protection very seriously. Data security means protecting our
 users’ data from any threats that may exist. This article summarizes some of our
@@ -114,7 +116,7 @@ data security on the KoboToolbox servers maintained by Kobo, Inc., the
 Regulation (GDPR). If you are located in the European Union,
 <a class="reference external" href="https://www.digisigner.com/online/showTemplate?linkId=495db186-9c9e-4627-99f7-a943282eeab5">you can sign a data processing agreement (DPA) here</a>.</p>
 <section id="confidentiality">
-<h2>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this headline">¶</a></h2>
+<h2>Confidentiality<a class="headerlink" href="#confidentiality" title="Permalink to this heading">¶</a></h2>
 <p><strong>Physical Access Control</strong></p>
 <ul class="simple">
 <li><p>Physical access control measures, amongst others, are implemented by Amazon
@@ -139,7 +141,7 @@ Plain text passwords are never saved on the server.</p></li>
 <li><p>Data sent to the server is encrypted in transit using SHA-256 with RSA
 encryption.</p></li>
 <li><p>Users can
-<a class="reference internal" href="encrypting_forms.html"><span class="doc std std-doc">choose to also enable encryption of their project data (data-level encryption)</span></a>
+<a class="reference internal" href="encrypting_forms.html"><span class="std std-doc">choose to also enable encryption of their project data (data-level encryption)</span></a>
 which renders it inaccessible at all stages of data processing and requires
 a private key to decrypt it locally.</p></li>
 </ul>
@@ -177,7 +179,7 @@ feedback on password complexity.</p></li>
 </ul>
 </section>
 <section id="integrity">
-<h2>Integrity<a class="headerlink" href="#integrity" title="Permalink to this headline">¶</a></h2>
+<h2>Integrity<a class="headerlink" href="#integrity" title="Permalink to this heading">¶</a></h2>
 <p><strong>Data Transfer Control</strong></p>
 <ul class="simple">
 <li><p>All data in transit is protected using SHA-256 with RSA encryption.</p></li>
@@ -190,7 +192,7 @@ authenticated user for most requests.</p></li>
 </ul>
 </section>
 <section id="availability-and-resilience">
-<h2>Availability and Resilience<a class="headerlink" href="#availability-and-resilience" title="Permalink to this headline">¶</a></h2>
+<h2>Availability and Resilience<a class="headerlink" href="#availability-and-resilience" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Kobo conducts daily backups of all databases to a separate, remote location.
 In case of a critical outage, all user data will be restored from the most

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,37 +105,37 @@
         <section class="page__body" role="main">
           
   <section id="adding-skip-logic-to-a-matrix-question">
-<h1>Adding Skip Logic to a Matrix Question<a class="headerlink" href="#adding-skip-logic-to-a-matrix-question" title="Permalink to this headline">¶</a></h1>
+<h1>Adding Skip Logic to a Matrix Question<a class="headerlink" href="#adding-skip-logic-to-a-matrix-question" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong>
 <a href="https://github.com/kobotoolbox/docs/blob/83d9dadfcc132d75f99e2705f77c425c2fee6d70/source/adding_skip_to_matrix.md" class="reference">11
 Mar 2022</a></p>
 <p>In most situations, you can add skip logic to any question type as outlined in
-the support article <strong><a class="reference internal" href="skip_logic.html"><span class="doc std std-doc">Adding Skip Logic</span></a></strong>. However, when
+the support article <strong><a class="reference internal" href="skip_logic.html"><span class="std std-doc">Adding Skip Logic</span></a></strong>. However, when
 working within the formbuilder, adding skip logic to a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question is not
 yet possible. Instead, an XLSForm can be used to implement skip logic for this
 question type. This support article illustrates how you can add skip logic to a
 <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question using XLSForm.</p>
 <p>If you have gone through the support article
-<strong><a class="reference internal" href="matrix_response.html"><span class="doc std std-doc">Question Matrix Response Type</span></a></strong>, you will already know
+<strong><a class="reference internal" href="matrix_response.html"><span class="std std-doc">Question Matrix Response Type</span></a></strong>, you will already know
 that there are 2 approaches to create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in KoboToolbox: the
 <em>formbuilder approach</em> and the <em><code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code> approach</em>. This support
 article provides an overview of the necessary steps to add skip logic to a
 <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question when using either of these approaches.</p>
 <section id="the-formbuilder-approach">
-<h2>The formbuilder Approach:<a class="headerlink" href="#the-formbuilder-approach" title="Permalink to this headline">¶</a></h2>
+<h2>The formbuilder Approach:<a class="headerlink" href="#the-formbuilder-approach" title="Permalink to this heading">¶</a></h2>
 <p>The approach works with <strong>Enketo</strong>, also known as <strong>web forms</strong>, utilizing the
 <strong>Grid-theme layout</strong>. It may not function as expected if you ignore the
 <strong>Grid-theme layout</strong> settings as outlined in the support article
-<strong><a class="reference internal" href="alternative_enketo.html"><span class="doc std std-doc">Using Alternative Enketo Web Form Styles</span></a></strong>.</p>
+<strong><a class="reference internal" href="alternative_enketo.html"><span class="std std-doc">Using Alternative Enketo Web Form Styles</span></a></strong>.</p>
 <p>Follow the steps outlined below to add skip logic to a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question using
 the formbuilder approach.</p>
 <p><strong>Step 1:</strong> Create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in the formbuilder:</p>
 <p>The first step is to create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in the formbuilder as outlined
-in the support article <strong><a class="reference internal" href="matrix_response.html"><span class="doc std std-doc">Question Matrix Response Type</span></a></strong>.
+in the support article <strong><a class="reference internal" href="matrix_response.html"><span class="std std-doc">Question Matrix Response Type</span></a></strong>.
 Simply add rows and columns with the variables you intend to collect data for.</p>
 <p><strong>Step 2:</strong> Download form as XLSForm:</p>
 <p>Once the <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question is ready, <strong>SAVE</strong> the form and then
-<a class="reference internal" href="getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox"><span class="std std-doc">download it as an XLSForm</span></a>.</p>
+<a class="reference internal" href="getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox"><span class="std std-ref">download it as an XLSForm</span></a>.</p>
 <p><strong>Step 3:</strong> Add relevant column header and skip logic to your XLSForm:</p>
 <p>Now open the XLSForm and then add the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column header to the XLSForm.
 Once you have the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column header, you will be able to add skip logic
@@ -184,14 +186,14 @@ used.</p>
 </p>
 </section>
 <section id="kobo-matrix-list-approach">
-<h2><code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code> Approach:<a class="headerlink" href="#kobo-matrix-list-approach" title="Permalink to this headline">¶</a></h2>
+<h2><code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code> Approach:<a class="headerlink" href="#kobo-matrix-list-approach" title="Permalink to this heading">¶</a></h2>
 <p>Just like with the formbuilder approach, this method of adding skip logic with
 an XLSForm works with <strong>Enketo</strong> using the <strong>Grid-theme layout</strong>.</p>
 <p>Follow the steps below to add skip logic to a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question with an XLSForm
 using the <code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code> approach.</p>
 <p><strong>Step 1:</strong> Create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in the XLSForm:</p>
 <p>Create a <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question in the XLSForm, as outlined in the support article
-<strong><a class="reference internal" href="matrix_response.html"><span class="doc std std-doc">Question Matrix Response Type</span></a></strong>.</p>
+<strong><a class="reference internal" href="matrix_response.html"><span class="std std-doc">Question Matrix Response Type</span></a></strong>.</p>
 <p><strong>Step 2:</strong> Add <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column header and skip logic to your XLSForm:</p>
 <p>Once the <code class="docutils literal notranslate"><span class="pre">matrix</span></code> question is ready, you must add the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column header.
 You can now add skip logic to all the questions under the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column

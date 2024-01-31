@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,7 +105,7 @@
         <section class="page__body" role="main">
           
   <section id="gps-question-types">
-<h1>GPS Question types<a class="headerlink" href="#gps-question-types" title="Permalink to this headline">¶</a></h1>
+<h1>GPS Question types<a class="headerlink" href="#gps-question-types" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/27e85949b3f42b42dcb60701fbfc80aadddbb616/source/gps_questions.md" class="reference">30 Jul 2022</a></p>
 <p>In KoboToolbox, you can collect GPS coordinates as part of your data collection
 form. There are 3 GPS question types you can use, namely “Point”, “Line” and
@@ -118,9 +120,9 @@ such as roads, tracks and rivers.</p>
 the boundaries of a feature. You can use it, for example, to trace the
 boundaries of garden plots in a survey where you are enumerating land holdings.</p>
 <section id="how-to-set-up-the-point-line-and-area-question-types">
-<h2>How to set up the “Point”, “Line” and “Area” question types<a class="headerlink" href="#how-to-set-up-the-point-line-and-area-question-types" title="Permalink to this headline">¶</a></h2>
+<h2>How to set up the “Point”, “Line” and “Area” question types<a class="headerlink" href="#how-to-set-up-the-point-line-and-area-question-types" title="Permalink to this heading">¶</a></h2>
 <section id="setting-up-in-formbuilder">
-<h3>Setting up in formbuilder<a class="headerlink" href="#setting-up-in-formbuilder" title="Permalink to this headline">¶</a></h3>
+<h3>Setting up in formbuilder<a class="headerlink" href="#setting-up-in-formbuilder" title="Permalink to this heading">¶</a></h3>
 <p>Adding GPS questions on the form is simple:</p>
 <ul class="simple">
 <li><p>In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
@@ -132,7 +134,7 @@ unit”, then click <strong>ADD QUESTION</strong> or press ENTER on your keyboar
 <p><img alt="Adding GPS questions" src="_images/adding_gps_questions.gif" /></p>
 </section>
 <section id="setting-up-in-xlsform">
-<h3>Setting up in XLSForm<a class="headerlink" href="#setting-up-in-xlsform" title="Permalink to this headline">¶</a></h3>
+<h3>Setting up in XLSForm<a class="headerlink" href="#setting-up-in-xlsform" title="Permalink to this heading">¶</a></h3>
 <p>You can add “Point”, “Line” and “Area” questions in XLSForm by using <code class="docutils literal notranslate"><span class="pre">geopoint</span></code>,
 <code class="docutils literal notranslate"><span class="pre">geotrace</span></code> and <code class="docutils literal notranslate"><span class="pre">geoshape</span></code> question types respectively as in the following
 example:</p>
@@ -165,26 +167,26 @@ example:</p>
 </section>
 </section>
 <section id="appearance-of-point-line-and-area-question-types-in-web-forms-and-kobocollect">
-<h2>Appearance of “Point”, “Line” and “Area” question types in web forms and KoboCollect<a class="headerlink" href="#appearance-of-point-line-and-area-question-types-in-web-forms-and-kobocollect" title="Permalink to this headline">¶</a></h2>
+<h2>Appearance of “Point”, “Line” and “Area” question types in web forms and KoboCollect<a class="headerlink" href="#appearance-of-point-line-and-area-question-types-in-web-forms-and-kobocollect" title="Permalink to this heading">¶</a></h2>
 <section id="default-appearance">
-<h3>Default appearance<a class="headerlink" href="#default-appearance" title="Permalink to this headline">¶</a></h3>
+<h3>Default appearance<a class="headerlink" href="#default-appearance" title="Permalink to this heading">¶</a></h3>
 <p><img alt="Default appearances of GPS questions" src="_images/gps_default_appearances.png" /></p>
 </section>
 </section>
 <section id="collecting-gps-points-in-the-background">
-<h2>Collecting GPS points in the background<a class="headerlink" href="#collecting-gps-points-in-the-background" title="Permalink to this headline">¶</a></h2>
+<h2>Collecting GPS points in the background<a class="headerlink" href="#collecting-gps-points-in-the-background" title="Permalink to this heading">¶</a></h2>
 <p>Besides including GPS questions in your form, you can also collect GPS
 coordinates in the background while data is being collected. This is possible by
 turning on the “Audit” option in the formbuilder (Layout &amp; Settings -&gt; Meta
 questions) or by adding the <code class="docutils literal notranslate"><span class="pre">audit</span></code> meta question to your XLSForm. Learn more
-about how to do this <a class="reference internal" href="audit_logging.html"><span class="doc std std-doc">here</span></a>.</p>
+about how to do this <a class="reference internal" href="audit_logging.html"><span class="std std-doc">here</span></a>.</p>
 </section>
 <section id="calculating-distance-and-area-with-line-and-area-question-types">
-<h2>Calculating distance and area with “Line” and “Area” question types<a class="headerlink" href="#calculating-distance-and-area-with-line-and-area-question-types" title="Permalink to this headline">¶</a></h2>
+<h2>Calculating distance and area with “Line” and “Area” question types<a class="headerlink" href="#calculating-distance-and-area-with-line-and-area-question-types" title="Permalink to this heading">¶</a></h2>
 <p>As you collect your GPS data, you might need to calculate the distance and area
 from your “Line” and “Area” questions.</p>
 <section id="calculating-distance-from-line-questions">
-<h3>Calculating distance from “Line” questions<a class="headerlink" href="#calculating-distance-from-line-questions" title="Permalink to this headline">¶</a></h3>
+<h3>Calculating distance from “Line” questions<a class="headerlink" href="#calculating-distance-from-line-questions" title="Permalink to this heading">¶</a></h3>
 <p>To calculate the distance from a “Line” question type in the formbuilder, use
 the “Calculate” question type and the
 <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#distance"><code class="docutils literal notranslate"><span class="pre">distance()</span></code></a>
@@ -231,7 +233,7 @@ displaying the calculated distance within the form.</p>
 </table>
 </section>
 <section id="calculating-area-from-area-questions">
-<h3>Calculating area from “Area” questions<a class="headerlink" href="#calculating-area-from-area-questions" title="Permalink to this headline">¶</a></h3>
+<h3>Calculating area from “Area” questions<a class="headerlink" href="#calculating-area-from-area-questions" title="Permalink to this heading">¶</a></h3>
 <p>You can calculate an area using the “Calculate” question type and the
 <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#area"><code class="docutils literal notranslate"><span class="pre">area()</span></code></a> function as
 shown below:</p>

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,19 +105,19 @@
         <section class="page__body" role="main">
           
   <section id="connecting-to-your-data-using-synchronous-exports">
-<h1>Connecting to your data using synchronous exports<a class="headerlink" href="#connecting-to-your-data-using-synchronous-exports" title="Permalink to this headline">¶</a></h1>
+<h1>Connecting to your data using synchronous exports<a class="headerlink" href="#connecting-to-your-data-using-synchronous-exports" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/4ce917e7129aa1b10f161eafcc56b64943e660c2/source/synchronous_exports.md" class="reference">11 Sep 2023</a></p>
 <p>In this article, we’ll explore how to use the synchronous exports feature to
 connect your project data to programs such as Microsoft PowerBI, Excel, Google
 Sheets, Tableau and others.</p>
 <p>Using the KoboToolbox interface, in the <strong>DATA&gt;Downloads</strong> tab of your project,
-is <a class="reference internal" href="export_download.html"><span class="doc std std-doc">the standard method for exporting your data</span></a> into
+is <a class="reference internal" href="export_download.html"><span class="std std-doc">the standard method for exporting your data</span></a> into
 multiple different formats. These exports are created in an “asynchronous”
 fashion, meaning they are created in the background and you will see a
 “Processing…” item in your downloads list until complete. This will generate a
 “snapshot” of your data at the time of exporting. You can then download the
 completed export for analysis outside the application.</p>
-<p>There is also a <a class="reference internal" href="api.html"><span class="doc std std-doc">REST API</span></a> where project data can be queried in JSON or
+<p>There is also a <a class="reference internal" href="api.html"><span class="std std-doc">REST API</span></a> where project data can be queried in JSON or
 XML format depending on your purposes, such as for automated scripts or
 connecting with other applications. However, there are important advantages to
 using the asynchronous exports over the REST API, such as specifying labels,
@@ -127,9 +129,9 @@ settings in standard downloads. An API endpoint can be queried by an external
 application allowing for a dashboard to automatically update with the latest
 data.</p>
 <section id="steps-to-using-the-synchronous-export-feature">
-<h2>Steps to using the synchronous export feature<a class="headerlink" href="#steps-to-using-the-synchronous-export-feature" title="Permalink to this headline">¶</a></h2>
+<h2>Steps to using the synchronous export feature<a class="headerlink" href="#steps-to-using-the-synchronous-export-feature" title="Permalink to this heading">¶</a></h2>
 <section id="step-1-generate-a-named-export">
-<h3>Step 1: Generate a named export<a class="headerlink" href="#step-1-generate-a-named-export" title="Permalink to this headline">¶</a></h3>
+<h3>Step 1: Generate a named export<a class="headerlink" href="#step-1-generate-a-named-export" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>Within your KoboToolbox project, go to the <strong>DATA&gt;Downloads</strong> tab.</p></li>
 <li><p>You can change different settings of your export, such as the “Value and
@@ -150,7 +152,7 @@ just the latest one;</p></li>
 <p><img alt="Create export settings" src="_images/create-export-settings.gif" /></p>
 </section>
 <section id="step-2-retrieve-the-synchronous-export-link">
-<h3>Step 2: Retrieve the synchronous export link<a class="headerlink" href="#step-2-retrieve-the-synchronous-export-link" title="Permalink to this headline">¶</a></h3>
+<h3>Step 2: Retrieve the synchronous export link<a class="headerlink" href="#step-2-retrieve-the-synchronous-export-link" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>Note the asset UID of your project. The asset UID is a unique ID assigned to
 each project in KoboToolbox and you can find it on the URL when you open the
@@ -163,7 +165,7 @@ asset UID is <code class="docutils literal notranslate"><span class="pre">arHt74
 <li><p>Open a new tab in your browser and paste the following URL
 <code class="docutils literal notranslate"><span class="pre">https://{kf_url}/api/v2/assets/{asset_uid}/export-settings/</span></code>. Replace
 <code class="docutils literal notranslate"><span class="pre">{asset_uid}</span></code> with your project’s asset UID and <code class="docutils literal notranslate"><span class="pre">{kf_url}</span></code> with the KPI URL of
-<a class="reference internal" href="creating_account.html"><span class="doc std std-doc">the server you are using</span></a> (<code class="docutils literal notranslate"><span class="pre">kf.kobotoolbox.org</span></code> for the
+<a class="reference internal" href="creating_account.html"><span class="std std-doc">the server you are using</span></a> (<code class="docutils literal notranslate"><span class="pre">kf.kobotoolbox.org</span></code> for the
 Global Server or <code class="docutils literal notranslate"><span class="pre">eu.kobotoolbox.org</span></code> for the
 European Union Server).</p></li>
 </ul>
@@ -183,7 +185,7 @@ not included in the CSV export. Therefore if your project contains repeat
 groups, you should use the <code class="docutils literal notranslate"><span class="pre">data_url_xlsx</span></code> link.</p>
 </section>
 <section id="step-3-connecting-your-data-to-an-external-application">
-<h3>Step 3: Connecting your data to an external application<a class="headerlink" href="#step-3-connecting-your-data-to-an-external-application" title="Permalink to this headline">¶</a></h3>
+<h3>Step 3: Connecting your data to an external application<a class="headerlink" href="#step-3-connecting-your-data-to-an-external-application" title="Permalink to this heading">¶</a></h3>
 <p>There are many external applications that can connect to external data sources,
 generally pulling data in regular intervals. However, not all applications
 support authenticated requests, so your use-case and access to software licenses
@@ -211,7 +213,7 @@ will force Google Sheets to fetch the data again.</p></li>
 </section>
 </section>
 <section id="authentication">
-<h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this headline">¶</a></h2>
+<h2>Authentication<a class="headerlink" href="#authentication" title="Permalink to this heading">¶</a></h2>
 <p>For projects that contain sensitive or private data it is important that the
 option “Anyone can view submissions made to this form” is unchecked in
 <strong>SETTINGS&gt;Sharing</strong>. When using an application that can make authenticated
@@ -238,10 +240,10 @@ wget<span class="w"> </span>https://<span class="o">{</span>kf_url<span class="o
 </pre></div>
 </div>
 <p>For more information on connecting to PowerBI or Excel with Power Query,
-continue reading <a class="reference internal" href="pulling_data_into_excelquery.html"><span class="doc std std-doc">here</span></a>.</p>
+continue reading <a class="reference internal" href="pulling_data_into_excelquery.html"><span class="std std-doc">here</span></a>.</p>
 </section>
 <section id="limitations">
-<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this headline">¶</a></h2>
+<h2>Limitations<a class="headerlink" href="#limitations" title="Permalink to this heading">¶</a></h2>
 <p>In order to protect the reliability of the server, there are some limitations
 that have been placed on the synchronous export feature:</p>
 <ul class="simple">

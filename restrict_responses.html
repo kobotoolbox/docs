@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,8 +105,8 @@
         <section class="page__body" role="main">
           
   <section id="restricting-text-responses-with-regular-expressions">
-<h1>Restricting Text Responses With Regular Expressions<a class="headerlink" href="#restricting-text-responses-with-regular-expressions" title="Permalink to this headline">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8e3556237cfd8cd779e6155c21d74c0db88a9c01/source/restrict_responses.md" class="reference">9 Mar 2023</a></p>
+<h1>Restricting Text Responses With Regular Expressions<a class="headerlink" href="#restricting-text-responses-with-regular-expressions" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/277e107501fe66e6c20530c8d8925541e918a89c/source/restrict_responses.md" class="reference">20 Apr 2023</a></p>
 <p>A regular expression, or regex, is a search pattern used for matching specific
 characters and ranges of characters within a string. It is widely used to
 validate, search, extract, and restrict text in most programming languages.
@@ -112,7 +114,7 @@ KoboToolbox supports regex to control the length and characters during data
 entry to a particular question <em>(e.g. controlling the entry of mobile number to
 exactly 10 digits, controlling the entry of a valid email id etc.)</em>.</p>
 <section id="to-use-a-regex-in-kobotoolbox-follow-these-steps">
-<h2>To use a regex in KoboToolbox, follow these steps<a class="headerlink" href="#to-use-a-regex-in-kobotoolbox-follow-these-steps" title="Permalink to this headline">¶</a></h2>
+<h2>To use a regex in KoboToolbox, follow these steps<a class="headerlink" href="#to-use-a-regex-in-kobotoolbox-follow-these-steps" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic simple">
 <li><p>Prepare a <em>Text</em> question type.</p></li>
 <li><p>Go to the question’s <em>Settings</em>.</p></li>
@@ -193,7 +195,7 @@ many times as needed in the survey:</p>
 </table>
 </section>
 <section id="how-do-i-build-the-regex-that-i-need">
-<h2>How do I build the regex that I need?<a class="headerlink" href="#how-do-i-build-the-regex-that-i-need" title="Permalink to this headline">¶</a></h2>
+<h2>How do I build the regex that I need?<a class="headerlink" href="#how-do-i-build-the-regex-that-i-need" title="Permalink to this heading">¶</a></h2>
 <p>In addition to the examples and tips provided below, please visit
 <a class="reference external" href="http://www.regexr.com">this website</a> for more help and examples.</p>
 <p class="note">Regex in KoboToolbox should always be written in-between the apostrophes <code>regex(., ' ')</code> as shown in the examples.</p>
@@ -283,7 +285,7 @@ many times as needed in the survey:</p>
 </table>
 </section>
 <section id="characters-with-accents">
-<h2>Characters with accents<a class="headerlink" href="#characters-with-accents" title="Permalink to this headline">¶</a></h2>
+<h2>Characters with accents<a class="headerlink" href="#characters-with-accents" title="Permalink to this heading">¶</a></h2>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="text-left head"><p><strong>Regex</strong></p></th>
@@ -307,7 +309,7 @@ many times as needed in the survey:</p>
 </table>
 </section>
 <section id="examples-related-to-use-of-numbers">
-<h2>Examples related to use of numbers<a class="headerlink" href="#examples-related-to-use-of-numbers" title="Permalink to this headline">¶</a></h2>
+<h2>Examples related to use of numbers<a class="headerlink" href="#examples-related-to-use-of-numbers" title="Permalink to this heading">¶</a></h2>
 <p class="note">For all <code>text</code> type questions that use numbers, do not forget to type <code>numbers</code> under the <code>appearance</code> column.</p>
 <table class="colwidths-auto docutils align-default">
 <thead>
@@ -350,7 +352,7 @@ many times as needed in the survey:</p>
 </table>
 </section>
 <section id="examples-related-to-use-of-letters">
-<h2>Examples related to use of letters<a class="headerlink" href="#examples-related-to-use-of-letters" title="Permalink to this headline">¶</a></h2>
+<h2>Examples related to use of letters<a class="headerlink" href="#examples-related-to-use-of-letters" title="Permalink to this heading">¶</a></h2>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="text-left head"><p><strong>Regex</strong></p></th>
@@ -416,7 +418,7 @@ many times as needed in the survey:</p>
 </table>
 </section>
 <section id="examples-related-to-use-of-a-combination-of-letters-and-numbers">
-<h2>Examples related to use of a combination of letters and numbers<a class="headerlink" href="#examples-related-to-use-of-a-combination-of-letters-and-numbers" title="Permalink to this headline">¶</a></h2>
+<h2>Examples related to use of a combination of letters and numbers<a class="headerlink" href="#examples-related-to-use-of-a-combination-of-letters-and-numbers" title="Permalink to this heading">¶</a></h2>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="text-left head"><p>XLSForm Regex</p></th>
@@ -449,7 +451,7 @@ many times as needed in the survey:</p>
 </table>
 </section>
 <section id="examples-related-to-the-restriction-of-valid-email-inputs">
-<h2>Examples related to the restriction of valid email inputs<a class="headerlink" href="#examples-related-to-the-restriction-of-valid-email-inputs" title="Permalink to this headline">¶</a></h2>
+<h2>Examples related to the restriction of valid email inputs<a class="headerlink" href="#examples-related-to-the-restriction-of-valid-email-inputs" title="Permalink to this heading">¶</a></h2>
 <p class="note">These examples are purely illustrative and should be adjusted
 for your use-case. Using regex for constraining email addresses does not
 guarantee that they are valid, only that they follow an expected pattern.</p>
@@ -460,17 +462,14 @@ guarantee that they are valid, only that they follow an expected pattern.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Za-z0-9._%+-]+&#64;[A-Za-z0-9-]+[.][A-Za-z]{2,}$')</span></code></p></td>
-<td class="text-left"><p>Restrict an input with a valid email address e.g. <code class="docutils literal notranslate"><span class="pre">example.domin.com</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Za-z0-9._%+-]+&#64;[A-Za-z0-9-]+[.][A-Za-z.]{2,}$')</span></code> or <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([\W\d\D]+[&#64;][\D]+[.][\D]{2,})+$')</span></code></p></td>
-<td class="text-left"><p>Restrict an input with a valid email address e.g. <code class="docutils literal notranslate"><span class="pre">example.domin.com.np</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Za-z0-9._%+-]+&#64;[A-Za-z0-9-]+[.][A-Za-z.]{2,}$')</span></code> or <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([\W\d\D]+[&#64;][\D]+[.][\D]{2,})+$')</span></code></p></td>
+<td class="text-left"><p>Restrict an input with a valid email address e.g. <code class="docutils literal notranslate"><span class="pre">example.domain.com</span></code> or <code class="docutils literal notranslate"><span class="pre">example.domain.com.np</span></code></p></td>
 </tr>
 </tbody>
 </table>
 </section>
 <section id="examples-related-to-use-of-time-inputs">
-<h2>Examples related to use of time inputs<a class="headerlink" href="#examples-related-to-use-of-time-inputs" title="Permalink to this headline">¶</a></h2>
+<h2>Examples related to use of time inputs<a class="headerlink" href="#examples-related-to-use-of-time-inputs" title="Permalink to this heading">¶</a></h2>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="text-left head"><p><strong>Regex</strong></p></th>
@@ -488,7 +487,7 @@ guarantee that they are valid, only that they follow an expected pattern.</p>
 </table>
 </section>
 <section id="considerations-when-using-regex">
-<h2>Considerations when using regex<a class="headerlink" href="#considerations-when-using-regex" title="Permalink to this headline">¶</a></h2>
+<h2>Considerations when using regex<a class="headerlink" href="#considerations-when-using-regex" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>If you wish to use a regex constraint on a number in a <code class="docutils literal notranslate"><span class="pre">text</span></code> type question,
 make sure you <em>always</em> have the value <code class="docutils literal notranslate"><span class="pre">numbers</span></code> under the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column.

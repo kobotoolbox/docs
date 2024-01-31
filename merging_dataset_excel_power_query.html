@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,13 +105,13 @@
         <section class="page__body" role="main">
           
   <section id="merging-individual-data-with-roster-data-through-power-query-in-excel">
-<h1>Merging Individual Data with Roster Data through Power Query in Excel<a class="headerlink" href="#merging-individual-data-with-roster-data-through-power-query-in-excel" title="Permalink to this headline">¶</a></h1>
+<h1>Merging Individual Data with Roster Data through Power Query in Excel<a class="headerlink" href="#merging-individual-data-with-roster-data-through-power-query-in-excel" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 Apr 2022</a></p>
 <p>As illustrated in the support article,
-<a class="reference internal" href="group_repeat.html"><span class="doc std std-doc">Grouping Questions and Repeating Groups</span></a>, you can use
+<a class="reference internal" href="group_repeat.html"><span class="std std-doc">Grouping Questions and Repeating Groups</span></a>, you can use
 repeating groups to fulfil certain survey requirements. You may also need to
 analyze data from the repeat groups that were collected. When
-<a class="reference internal" href="export_download.html"><span class="doc std std-doc">downloading the data from the server (in XLS format)</span></a>, you
+<a class="reference internal" href="export_download.html"><span class="std std-doc">downloading the data from the server (in XLS format)</span></a>, you
 should see the data in the following structure:</p>
 <p><img alt="Dataset Sheets" src="_images/dataset_sheets.png" /></p>
 <p>The first sheet with the sheet name <strong>Repeat Group (Merge)</strong> seen in the image
@@ -129,7 +131,7 @@ available but it is possible through <strong>Power Query</strong> in <strong>Exc
 chosen over other software because it is a widely used spreadsheet and available
 to almost all PCs. It is also relatively easy-to-use.</p>
 <section id="differences-between-individual-data-and-roster-data">
-<h2>Differences between individual data and roster data:<a class="headerlink" href="#differences-between-individual-data-and-roster-data" title="Permalink to this headline">¶</a></h2>
+<h2>Differences between individual data and roster data:<a class="headerlink" href="#differences-between-individual-data-and-roster-data" title="Permalink to this heading">¶</a></h2>
 <p><em>Individual data</em> are information that are generally captured only once in an
 interview. <em>Roster data</em>, on the other hand, are captured more than once <em>(e.g.,
 details of all family members living within a household)</em> from within the same
@@ -166,7 +168,7 @@ data</em>.</p>
 </p>
 </section>
 <section id="merging-individual-data-with-roster-data">
-<h2>Merging individual data with roster data:<a class="headerlink" href="#merging-individual-data-with-roster-data" title="Permalink to this headline">¶</a></h2>
+<h2>Merging individual data with roster data:<a class="headerlink" href="#merging-individual-data-with-roster-data" title="Permalink to this heading">¶</a></h2>
 <p>If you look closely at the images shared above, you can see <code class="docutils literal notranslate"><span class="pre">_index</span></code> column with
 value “1” in the first sheet <strong>Repeat Group (Merge)</strong>. Similarly, there is also
 a <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> column with value “1” in the second sheet <strong>CR</strong>. <code class="docutils literal notranslate"><span class="pre">_index</span></code> and
@@ -177,7 +179,7 @@ groups. They are matching variables needed to merge <em>individual data</em> and
 single dataset through <strong>Power Query</strong> in <strong>Excel</strong>. You can use any of the
 following approaches:</p>
 <section id="first-approach-merging-individual-data-with-roster-data-when-the-dataset-is-already-open">
-<h3>First approach: Merging individual data with roster data (when the dataset is already open)<a class="headerlink" href="#first-approach-merging-individual-data-with-roster-data-when-the-dataset-is-already-open" title="Permalink to this headline">¶</a></h3>
+<h3>First approach: Merging individual data with roster data (when the dataset is already open)<a class="headerlink" href="#first-approach-merging-individual-data-with-roster-data-when-the-dataset-is-already-open" title="Permalink to this heading">¶</a></h3>
 <p>For the first approach, you must have opened your XLS dataset. For details,
 please see the video below:</p>
 <video controls>
@@ -223,7 +225,7 @@ and <strong>Close &amp; Load To …</strong>.</p></li>
 </ul>
 </section>
 <section id="second-approach-merging-individual-data-with-roster-data-when-the-dataset-is-not-yet-open">
-<h3>Second approach: Merging individual data with roster data (when the dataset is not yet open)<a class="headerlink" href="#second-approach-merging-individual-data-with-roster-data-when-the-dataset-is-not-yet-open" title="Permalink to this headline">¶</a></h3>
+<h3>Second approach: Merging individual data with roster data (when the dataset is not yet open)<a class="headerlink" href="#second-approach-merging-individual-data-with-roster-data-when-the-dataset-is-not-yet-open" title="Permalink to this heading">¶</a></h3>
 <p>Use the second approach when you have not yet opened your XLS dataset and only
 have opened your new Excel workbook. For details, please see the video below:</p>
 <video controls>
@@ -274,7 +276,7 @@ and <strong>Close &amp; Load To …</strong>.</p></li>
 </section>
 </section>
 <section id="troubleshooting">
-<h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Exporting <em>repeat groups</em> is not supported in CSV format. You will need to
 download the data in XLS format.</p></li>

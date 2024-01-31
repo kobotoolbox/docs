@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,15 +105,15 @@
         <section class="page__body" role="main">
           
   <section id="advanced-calculate-question-type">
-<h1>Advanced Calculate Question Type<a class="headerlink" href="#advanced-calculate-question-type" title="Permalink to this headline">¶</a></h1>
+<h1>Advanced Calculate Question Type<a class="headerlink" href="#advanced-calculate-question-type" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/advanced_calculate.md" class="reference">2 Dec 2021</a></p>
 <p>Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a <strong>Calculation</strong>, and writing the mathematical expression into the question label field.</p>
 <p>This article provides step-by-step instructions on how to add calculations while using the formbuilder or by downloading and adding it directly to the XLSform.</p>
 <p>To view a complete and detailed list of all functions please visit ODK’s excellent <a class="reference external" href="https://getodk.github.io/xforms-spec">XPath Functions documentation</a>.</p>
 <section id="approaches-towards-adding-calculate-questions">
-<h2>Approaches towards adding calculate questions:<a class="headerlink" href="#approaches-towards-adding-calculate-questions" title="Permalink to this headline">¶</a></h2>
+<h2>Approaches towards adding calculate questions:<a class="headerlink" href="#approaches-towards-adding-calculate-questions" title="Permalink to this heading">¶</a></h2>
 <section id="using-the-formbuilder">
-<h3>Using the formbuilder<a class="headerlink" href="#using-the-formbuilder" title="Permalink to this headline">¶</a></h3>
+<h3>Using the formbuilder<a class="headerlink" href="#using-the-formbuilder" title="Permalink to this heading">¶</a></h3>
 <p>Step 1: Add a calculate question</p>
 <p><img alt="image" src="_images/calculate_question.jpg" /></p>
 <p>Step 2: Type your calculation formulae where you would typically write your question.</p>
@@ -123,7 +125,7 @@
 </ul>
 </section>
 <section id="using-the-xls-forms">
-<h3>Using the XLS forms<a class="headerlink" href="#using-the-xls-forms" title="Permalink to this headline">¶</a></h3>
+<h3>Using the XLS forms<a class="headerlink" href="#using-the-xls-forms" title="Permalink to this heading">¶</a></h3>
 <p>We recommend this approach when working with more advanced calculate functions.</p>
 <p>XLS forms allow for use of calculate function on different types of question types.</p>
 <ul>
@@ -140,9 +142,9 @@ e. time (will only take time calculate functions)</p>
 </section>
 </section>
 <section id="rules-when-working-with-calculate-questions">
-<h2>Rules when working with calculate questions:<a class="headerlink" href="#rules-when-working-with-calculate-questions" title="Permalink to this headline">¶</a></h2>
+<h2>Rules when working with calculate questions:<a class="headerlink" href="#rules-when-working-with-calculate-questions" title="Permalink to this heading">¶</a></h2>
 <section id="these-rules-apply-to-both-the-formbuilder-and-xlsform">
-<h3>These rules apply to both the formbuilder and XLSform<a class="headerlink" href="#these-rules-apply-to-both-the-formbuilder-and-xlsform" title="Permalink to this headline">¶</a></h3>
+<h3>These rules apply to both the formbuilder and XLSform<a class="headerlink" href="#these-rules-apply-to-both-the-formbuilder-and-xlsform" title="Permalink to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>You cannot use both numeric and string calculations within the same question</p></li>
 <li><p>Your numeric calculations will follow the BODMAS rule in applying calculations i.e. the order of executing the calculations will be Brackets, Divisions, Multiplications, Additions then Subtractions (Always remember this when ordering a question)</p></li>
@@ -152,19 +154,19 @@ e. time (will only take time calculate functions)</p>
 </ol>
 </section>
 <section id="list-of-tested-calculate-functions">
-<h3>List of tested calculate functions<a class="headerlink" href="#list-of-tested-calculate-functions" title="Permalink to this headline">¶</a></h3>
+<h3>List of tested calculate functions<a class="headerlink" href="#list-of-tested-calculate-functions" title="Permalink to this heading">¶</a></h3>
 <p><em>(Please feel free to recommend additional ones and we will update)</em></p>
 <p><img alt="image" src="_images/list.png" /></p>
 </section>
 <section id="working-with-if-command-on-calculations">
-<h3>Working with IF command on calculations<a class="headerlink" href="#working-with-if-command-on-calculations" title="Permalink to this headline">¶</a></h3>
+<h3>Working with IF command on calculations<a class="headerlink" href="#working-with-if-command-on-calculations" title="Permalink to this heading">¶</a></h3>
 <p><img alt="image" src="_images/if_command.png" /></p>
 </section>
 <section id="work-arounds-for-calculations">
-<h3>Work-arounds for calculations<a class="headerlink" href="#work-arounds-for-calculations" title="Permalink to this headline">¶</a></h3>
+<h3>Work-arounds for calculations<a class="headerlink" href="#work-arounds-for-calculations" title="Permalink to this heading">¶</a></h3>
 <p><em>Recommended for advanced users</em></p>
 <section id="workaround-1-creating-dummy-questions-for-calculation-of-final-score-in-a-series-of-questions">
-<h4>Workaround 1: Creating Dummy Questions for Calculation of Final Score in a Series of Questions**<a class="headerlink" href="#workaround-1-creating-dummy-questions-for-calculation-of-final-score-in-a-series-of-questions" title="Permalink to this headline">¶</a></h4>
+<h4>Workaround 1: Creating Dummy Questions for Calculation of Final Score in a Series of Questions**<a class="headerlink" href="#workaround-1-creating-dummy-questions-for-calculation-of-final-score-in-a-series-of-questions" title="Permalink to this heading">¶</a></h4>
 <p>Let’s say you have a question like  <code class="docutils literal notranslate"><span class="pre">QN1</span> <span class="pre">Do</span> <span class="pre">you</span> <span class="pre">have</span> <span class="pre">a</span> <span class="pre">question?</span></code> Answers <code class="docutils literal notranslate"><span class="pre">Yes=1</span> <span class="pre">No=2</span> <span class="pre">Don’t</span> <span class="pre">Know=999</span></code></p>
 <p>In this case you may want to create a dummy QN1 right after QN1 to account for the differences in coding and define the mathematical equivalent. So you will create a calculate question QN1d (<em>note this is my own naming convention d stands for dummy) and define the default value as 0 but write the formula as <strong>If (${QN1}=1,1,0</strong></em>)</p>
 <p>Notice in my test form I managed to create the situation and the data appears as coded for Q1N and as calculated for mathematical meaning for Q1Nd. This should be meaning that is meant by your score. <em>You can do this for calculations such as wealth where Yes and No could mean a different value in different countries.</em></p>

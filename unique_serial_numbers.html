@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,7 +105,7 @@
         <section class="page__body" role="main">
           
   <section id="creating-unique-serial-numbers-in-forms">
-<h1>Creating Unique Serial Numbers in Forms<a class="headerlink" href="#creating-unique-serial-numbers-in-forms" title="Permalink to this headline">¶</a></h1>
+<h1>Creating Unique Serial Numbers in Forms<a class="headerlink" href="#creating-unique-serial-numbers-in-forms" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong>
 <a href="https://github.com/kobotoolbox/docs/blob/e30c115149ba8be02c16447d78193a55103044b7/source/unique_serial_numbers.md" class="reference">11
 Jan 2022</a></p>
@@ -111,8 +113,8 @@ Jan 2022</a></p>
 every form in a project. This article discusses various workarounds on how to
 create unique serial numbers using the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question-type.</p>
 <section id="approach-1-creating-sequential-unique-serial-numbers-based-on-date-and-time">
-<h2>Approach 1: Creating Sequential Unique Serial Numbers Based on Date and Time<a class="headerlink" href="#approach-1-creating-sequential-unique-serial-numbers-based-on-date-and-time" title="Permalink to this headline">¶</a></h2>
-<p>This method works best with <a class="reference internal" href="data_through_webforms.html"><span class="doc std std-doc">Enketo web forms</span></a>. It
+<h2>Approach 1: Creating Sequential Unique Serial Numbers Based on Date and Time<a class="headerlink" href="#approach-1-creating-sequential-unique-serial-numbers-based-on-date-and-time" title="Permalink to this heading">¶</a></h2>
+<p>This method works best with <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">Enketo web forms</span></a>. It
 uses a calculation function to create a unique serial number based on the date
 and time to the first millisecond. Although this method may not meet all your
 needs, it should give you an illustration of how much you can stretch calculate
@@ -135,7 +137,7 @@ below:</p>
 <p><img alt="Preview form" src="_images/preview_form.png" /></p>
 </section>
 <section id="approach-2-creating-unique-serial-numbers-from-selected-variables">
-<h2>Approach 2: Creating Unique Serial Numbers from Selected Variables<a class="headerlink" href="#approach-2-creating-unique-serial-numbers-from-selected-variables" title="Permalink to this headline">¶</a></h2>
+<h2>Approach 2: Creating Unique Serial Numbers from Selected Variables<a class="headerlink" href="#approach-2-creating-unique-serial-numbers-from-selected-variables" title="Permalink to this heading">¶</a></h2>
 <p>This example shows how to create unique serial numbers from existing, already
 defined variables in your form by using the
 <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#concat"><code class="docutils literal notranslate"><span class="pre">concat()</span></code></a>

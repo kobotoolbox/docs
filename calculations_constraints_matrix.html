@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,26 +105,26 @@
         <section class="page__body" role="main">
           
   <section id="adding-calculations-and-constraints-in-a-matrix-question">
-<h1>Adding Calculations and Constraints in a Matrix Question<a class="headerlink" href="#adding-calculations-and-constraints-in-a-matrix-question" title="Permalink to this headline">¶</a></h1>
+<h1>Adding Calculations and Constraints in a Matrix Question<a class="headerlink" href="#adding-calculations-and-constraints-in-a-matrix-question" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong>
 <a href="https://github.com/kobotoolbox/docs/blob/aaabdac8ec257d3157ec2ab2ceae65130e8c12d4/source/calculations_constraints_matrix.md" class="reference">14
 Apr 2022</a></p>
 <p>When working in the formbuilder, it is simple to
-<a class="reference internal" href="calculate_questions.html"><span class="doc std std-doc">add calculations</span></a> or
-<a class="reference internal" href="validation_criteria.html"><span class="doc std std-doc">constraints</span></a> to almost any question type. While the
+<a class="reference internal" href="calculate_questions.html"><span class="std std-doc">add calculations</span></a> or
+<a class="reference internal" href="validation_criteria.html"><span class="std std-doc">constraints</span></a> to almost any question type. While the
 formbuilder does not currently support adding these features to a matrix
 question, you can use XLSForm to do so. The steps listed below in this support
 article will illustrate how you can add calculations and constraints to a matrix
 question using XLSForm.</p>
 <section id="setting-up-the-question-and-fields">
-<h2>Setting up the question and fields<a class="headerlink" href="#setting-up-the-question-and-fields" title="Permalink to this headline">¶</a></h2>
+<h2>Setting up the question and fields<a class="headerlink" href="#setting-up-the-question-and-fields" title="Permalink to this heading">¶</a></h2>
 <p><strong>Step 1: Create a matrix question in the formbuilder</strong></p>
 <p>The first step is creating a matrix question in the formbuilder (as outlined in
-the support article <a class="reference internal" href="matrix_response.html"><span class="doc std std-doc">Question Matrix Response Type</span></a>). Simply
+the support article <a class="reference internal" href="matrix_response.html"><span class="std std-doc">Question Matrix Response Type</span></a>). Simply
 add rows and columns with the variables necessary for data collection.</p>
 <p><strong>Step 2: Download the form as XLSForm</strong></p>
 <p>Once the matrix question has been created, <strong>SAVE</strong> the form and
-<a class="reference internal" href="getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox"><span class="std std-doc">download it as an XLSForm</span></a>.</p>
+<a class="reference internal" href="getting_started_xlsform.html#downloading-an-xlsform-from-kobotoolbox"><span class="std std-ref">download it as an XLSForm</span></a>.</p>
 <p><strong>Step 3: Add logic to the matrix question</strong></p>
 <p>Open the XLSForm and add <code class="docutils literal notranslate"><span class="pre">calculation</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint</span></code> and <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code>
 column headers. With these column headers, you will be able to add the <em>column
@@ -152,7 +154,7 @@ project (if needed).</p>
 collecting data with the web form.</p>
 </section>
 <section id="viewing-the-result">
-<h2>Viewing the result<a class="headerlink" href="#viewing-the-result" title="Permalink to this headline">¶</a></h2>
+<h2>Viewing the result<a class="headerlink" href="#viewing-the-result" title="Permalink to this heading">¶</a></h2>
 <p>The following images illustrate how the form will look and function in the
 Enketo web form after the above steps have been followed:</p>
 <p><strong>No data is entered:</strong></p>
@@ -177,13 +179,13 @@ automatically calculated.</p>
 </p>
 </section>
 <section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>The matrix question only works with <strong>Enketo web forms</strong>. It is not
 supported with the <strong>KoboCollect Android App</strong>.</p></li>
 <li><p>The matrix table will appear distorted if you fail to set the layout to
 <strong>Grid-theme</strong>. For more details on web form appearances, you can refer to
-<a class="reference internal" href="alternative_enketo.html"><span class="doc std std-doc">Using Alternative Enketo Web Form Styles</span></a>.</p></li>
+<a class="reference internal" href="alternative_enketo.html"><span class="std std-doc">Using Alternative Enketo Web Form Styles</span></a>.</p></li>
 </ul>
 </section>
 </section>

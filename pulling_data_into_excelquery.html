@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,22 +105,22 @@
         <section class="page__body" role="main">
           
   <section id="connecting-kobotoolbox-to-microsoft-excel">
-<h1>Connecting KoboToolbox to Microsoft Excel<a class="headerlink" href="#connecting-kobotoolbox-to-microsoft-excel" title="Permalink to this headline">¶</a></h1>
+<h1>Connecting KoboToolbox to Microsoft Excel<a class="headerlink" href="#connecting-kobotoolbox-to-microsoft-excel" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/df082614a0ae0bce8543b0c1474a9567fea7293e/source/pulling_data_into_excelquery.md" class="reference">23 Aug 2022</a></p>
 <p>KoboToolbox lets you connect your data collection project to external programs
 such as Microsoft Excel, Power BI or Google Sheets which is made possible
 through the Application Programming Interface (API).</p>
 <p>This article walks you through the process of connecting your project to Excel.
 If you would like to connect to Power BI, refer to the article
-<a class="reference internal" href="pulling_data_into_powerbi.html"><span class="doc std std-doc">here</span></a>.</p>
+<a class="reference internal" href="pulling_data_into_powerbi.html"><span class="std std-doc">here</span></a>.</p>
 <section id="step-1-get-the-synchronous-exports-url">
-<h2>Step 1: Get the synchronous exports URL<a class="headerlink" href="#step-1-get-the-synchronous-exports-url" title="Permalink to this headline">¶</a></h2>
+<h2>Step 1: Get the synchronous exports URL<a class="headerlink" href="#step-1-get-the-synchronous-exports-url" title="Permalink to this heading">¶</a></h2>
 <p>To bring data into Excel, you first need to get the synchronous exports URL
 through the KoboToolbox API. The step by step process for doing this is outlined
-in the article <a class="reference internal" href="synchronous_exports.html"><span class="doc std std-doc">here</span></a>.</p>
+in the article <a class="reference internal" href="synchronous_exports.html"><span class="std std-doc">here</span></a>.</p>
 </section>
 <section id="step-2-add-the-data-source">
-<h2>Step 2: Add the data source<a class="headerlink" href="#step-2-add-the-data-source" title="Permalink to this headline">¶</a></h2>
+<h2>Step 2: Add the data source<a class="headerlink" href="#step-2-add-the-data-source" title="Permalink to this heading">¶</a></h2>
 <p class="note">These steps only work in Excel 2016 and later.</p>
 <ul class="simple">
 <li><p>Open Excel and create a blank workbook. You can also work within an existing
@@ -168,10 +170,10 @@ loading it in.</p></li>
   >.
 </p>
 <section id="using-the-imported-data">
-<h3>Using the imported data<a class="headerlink" href="#using-the-imported-data" title="Permalink to this headline">¶</a></h3>
+<h3>Using the imported data<a class="headerlink" href="#using-the-imported-data" title="Permalink to this heading">¶</a></h3>
 <p>Excel gives you several ways to work with the data you have just imported.</p>
 <section id="create-pivottables-and-pivotcharts-from-the-data-model">
-<h4>1. Create PivotTables and PivotCharts from the Data Model<a class="headerlink" href="#create-pivottables-and-pivotcharts-from-the-data-model" title="Permalink to this headline">¶</a></h4>
+<h4>1. Create PivotTables and PivotCharts from the Data Model<a class="headerlink" href="#create-pivottables-and-pivotcharts-from-the-data-model" title="Permalink to this heading">¶</a></h4>
 <p>A PivotTable is a powerful tool used to calculate, summarize, and analyze data -
 allowing you to see comparisons, patterns, and trends in the data. Data
 summarized in PivotTables can be visualized in a simple manner using
@@ -187,7 +189,7 @@ PivotCharts.</p>
 you can choose the needed fields.</p>
 </section>
 <section id="load-data-into-the-worksheet">
-<h4>2. Load data into the worksheet<a class="headerlink" href="#load-data-into-the-worksheet" title="Permalink to this headline">¶</a></h4>
+<h4>2. Load data into the worksheet<a class="headerlink" href="#load-data-into-the-worksheet" title="Permalink to this heading">¶</a></h4>
 <p>When you import a single table, such as when your project did not have any
 repeating groups, the data is automatically loaded as a table on the worksheet.
 However, when your data comes as multiple tables, the tables are listed in the
@@ -207,7 +209,7 @@ pane.</p>
 </section>
 </section>
 <section id="updating-the-data-in-your-reports">
-<h2>Updating the data in your reports<a class="headerlink" href="#updating-the-data-in-your-reports" title="Permalink to this headline">¶</a></h2>
+<h2>Updating the data in your reports<a class="headerlink" href="#updating-the-data-in-your-reports" title="Permalink to this heading">¶</a></h2>
 <p>When your project’s data is updated on the KoboToolbox server, such as when you
 have new submissions, changed validation statuses, edits, or deletions, you will
 need to synchronize it with your reports. In Excel:</p>
@@ -217,9 +219,9 @@ need to synchronize it with your reports. In Excel:</p>
 </ul>
 </section>
 <section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
 <section id="failing-to-connect-to-kobotoolbox">
-<h3>Failing to connect to KoboToolbox<a class="headerlink" href="#failing-to-connect-to-kobotoolbox" title="Permalink to this headline">¶</a></h3>
+<h3>Failing to connect to KoboToolbox<a class="headerlink" href="#failing-to-connect-to-kobotoolbox" title="Permalink to this heading">¶</a></h3>
 <p>Sometimes, even after entering the correct credentials to connect to your
 project, you might get an error. This may happen if Excel was configured to
 connect to one account before, and you are now trying to connect using a
@@ -234,7 +236,7 @@ adding the new connection again.</p></li>
 <p><img alt="Clearing data source settings" src="_images/data_source_settings.gif" /></p>
 </section>
 <section id="failing-to-refresh-data">
-<h3>Failing to refresh data<a class="headerlink" href="#failing-to-refresh-data" title="Permalink to this headline">¶</a></h3>
+<h3>Failing to refresh data<a class="headerlink" href="#failing-to-refresh-data" title="Permalink to this heading">¶</a></h3>
 <p>If you are getting an error when refreshing data, there could be a number of
 reasons:</p>
 <ul class="simple">

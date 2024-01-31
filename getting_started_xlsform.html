@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,7 +105,7 @@
         <section class="page__body" role="main">
           
   <section id="getting-started-with-xlsform">
-<h1>Getting started with XLSForm<a class="headerlink" href="#getting-started-with-xlsform" title="Permalink to this headline">¶</a></h1>
+<h1>Getting started with XLSForm<a class="headerlink" href="#getting-started-with-xlsform" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong>
 <a href="https://github.com/kobotoolbox/docs/blob/495951b94c328bc1ae7d6e429c30aac371acec18/source/getting_started_xlsform.md" class="reference">19
 Feb 2022</a></p>
@@ -131,7 +133,7 @@ possible to create basic and advanced forms in a user-friendly format.</p>
   complex forms.
 </p>
 <section id="what-is-xlsform">
-<h2>What is XLSForm<a class="headerlink" href="#what-is-xlsform" title="Permalink to this headline">¶</a></h2>
+<h2>What is XLSForm<a class="headerlink" href="#what-is-xlsform" title="Permalink to this heading">¶</a></h2>
 <p>An XLSForm is simply an Excel file structured in a standardized format that can
 be uploaded to KoboToolbox to generate a data collection form.</p>
 <p>Not only does using XLSForm offer enhanced functionalities, but it can also make
@@ -140,7 +142,7 @@ team can work on building the form in Google Sheets, allowing for real time
 collaboration.</p>
 </section>
 <section id="how-to-set-up-xlsform">
-<h2>How to set up XLSForm<a class="headerlink" href="#how-to-set-up-xlsform" title="Permalink to this headline">¶</a></h2>
+<h2>How to set up XLSForm<a class="headerlink" href="#how-to-set-up-xlsform" title="Permalink to this heading">¶</a></h2>
 <p>To get started with XLSForm, do the following:</p>
 <ol class="arabic simple">
 <li><p>Create a workbook (either in Microsoft Excel or Google Sheets).</p></li>
@@ -155,7 +157,7 @@ respectively (sheet names must all be in lowercase).</p></li>
 </ol>
 </section>
 <section id="adding-questions">
-<h2>Adding questions<a class="headerlink" href="#adding-questions" title="Permalink to this headline">¶</a></h2>
+<h2>Adding questions<a class="headerlink" href="#adding-questions" title="Permalink to this heading">¶</a></h2>
 <p>Questions in XLSForm go in the <strong>survey</strong> sheet. We will practice adding a few
 questions: <em>What is your name</em>, <em>Sex</em> and <em>How old are you?</em></p>
 <ol class="arabic simple">
@@ -198,7 +200,7 @@ the <strong>choices</strong> sheet.</p></li>
 </table>
 </section>
 <section id="adding-choices">
-<h2>Adding choices<a class="headerlink" href="#adding-choices" title="Permalink to this headline">¶</a></h2>
+<h2>Adding choices<a class="headerlink" href="#adding-choices" title="Permalink to this heading">¶</a></h2>
 <p>Regardless of the type of multiple choice question (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> or
 <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>), the next step will be to define the list of choices in the
 <strong>choices</strong> sheet. Each list of choices must have the same <code class="docutils literal notranslate"><span class="pre">list_name</span></code>.</p>
@@ -217,7 +219,7 @@ this option in the survey.</p></li>
 </ol>
 </section>
 <section id="adding-settings">
-<h2>Adding settings<a class="headerlink" href="#adding-settings" title="Permalink to this headline">¶</a></h2>
+<h2>Adding settings<a class="headerlink" href="#adding-settings" title="Permalink to this heading">¶</a></h2>
 <p>It is not mandatory to include the <strong>settings</strong> sheet in the XLSForm - any form
 will work just fine without it. However, at minimum, you can define the
 <code class="docutils literal notranslate"><span class="pre">form_title</span></code>.</p>
@@ -230,7 +232,7 @@ will work just fine without it. However, at minimum, you can define the
 are creating in this article.</p>
 </section>
 <section id="uploading-and-previewing-the-xlsform-in-kobotoolbox">
-<h2>Uploading and previewing the XLSForm in KoboToolbox<a class="headerlink" href="#uploading-and-previewing-the-xlsform-in-kobotoolbox" title="Permalink to this headline">¶</a></h2>
+<h2>Uploading and previewing the XLSForm in KoboToolbox<a class="headerlink" href="#uploading-and-previewing-the-xlsform-in-kobotoolbox" title="Permalink to this heading">¶</a></h2>
 <p>Once you have finished creating the XLSForm you must upload it to KoboToolbox in
 order to preview it.</p>
 <ol class="arabic simple">
@@ -238,7 +240,7 @@ order to preview it.</p>
 logged in to KoboToolbox), click <strong>NEW</strong>.</p></li>
 <li><p>Click <strong>Upload an XLSForm</strong> (if you were creating the form using Google
 Sheets, you can either download the file as an Excel file, or
-<a class="reference internal" href="xls_url.html"><span class="doc std std-doc">follow the instructions in the linked article</span></a> to import it via
+<a class="reference internal" href="xls_url.html"><span class="std std-doc">follow the instructions in the linked article</span></a> to import it via
 a URL).</p></li>
 <li><p>Choose the Excel file you just created and wait until it uploads.</p></li>
 <li><p>Confirm the project details and click <strong>CREATE PROJECT</strong>.</p></li>
@@ -247,7 +249,7 @@ button to preview your form.</p></li>
 </ol>
 </section>
 <section id="downloading-an-xlsform-from-kobotoolbox">
-<h2>Downloading an XLSForm from KoboToolbox<a class="headerlink" href="#downloading-an-xlsform-from-kobotoolbox" title="Permalink to this headline">¶</a></h2>
+<h2>Downloading an XLSForm from KoboToolbox<a class="headerlink" href="#downloading-an-xlsform-from-kobotoolbox" title="Permalink to this heading">¶</a></h2>
 <p>KoboToolbox allows you to download a form you have been creating using the
 formbuilder as an XLSForm file. This might be useful for several reasons such
 as:</p>
@@ -272,7 +274,7 @@ with us.</p></li>
 </ol>
 </section>
 <section id="replacing-a-form-with-an-xlsform-file">
-<h2>Replacing a form with an XLSForm file<a class="headerlink" href="#replacing-a-form-with-an-xlsform-file" title="Permalink to this headline">¶</a></h2>
+<h2>Replacing a form with an XLSForm file<a class="headerlink" href="#replacing-a-form-with-an-xlsform-file" title="Permalink to this heading">¶</a></h2>
 <p>You can replace an existing form with a new version using an XLSForm (for
 example, after having edited the form in Excel). To do this while you are on the
 Project List view:</p>
@@ -284,7 +286,7 @@ Project List view:</p>
 </ol>
 </section>
 <section id="more-xlsform-learning-resources">
-<h2>More XLSForm learning resources<a class="headerlink" href="#more-xlsform-learning-resources" title="Permalink to this headline">¶</a></h2>
+<h2>More XLSForm learning resources<a class="headerlink" href="#more-xlsform-learning-resources" title="Permalink to this heading">¶</a></h2>
 <p>Go to the following links to learn more about XLSForm:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://xlsform.org">Official XLSForm documentation at XLSForm.org</a></p></li>

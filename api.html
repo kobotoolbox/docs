@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,7 +105,7 @@
         <section class="page__body" role="main">
           
   <section id="using-the-api">
-<h1>Using the API<a class="headerlink" href="#using-the-api" title="Permalink to this headline">¶</a></h1>
+<h1>Using the API<a class="headerlink" href="#using-the-api" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c1ec1ffac3e8a3484605d65c6e3926546c806170/source/api.md" class="reference">21 Sep 2023</a></p>
 <p>KoboToolbox has a number of advanced features built in based on our open source
 libraries, which include useful add-ons for advanced use cases. There are many
@@ -117,7 +119,7 @@ API that should be used.</p>
 <a class="reference external" href="https://eu.kobotoolbox.org">eu.kobotoolbox.org</a>. Below
 we only use [kpi-url] to refer to this base URL.</p>
 <section id="getting-your-api-token">
-<h2>Getting your API Token:<a class="headerlink" href="#getting-your-api-token" title="Permalink to this headline">¶</a></h2>
+<h2>Getting your API Token:<a class="headerlink" href="#getting-your-api-token" title="Permalink to this heading">¶</a></h2>
 <p>There are different ways to get your API Token.</p>
 <p><strong>Method 1:</strong></p>
 <p>To find your API token go to
@@ -139,7 +141,7 @@ below:</p>
 <p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-u</span> <span class="pre">username:password</span> <span class="pre">&quot;https:/[kpi-url]/token/?format=json&quot;</span></code></p>
 </section>
 <section id="testing-your-api">
-<h2>Testing your API:<a class="headerlink" href="#testing-your-api" title="Permalink to this headline">¶</a></h2>
+<h2>Testing your API:<a class="headerlink" href="#testing-your-api" title="Permalink to this heading">¶</a></h2>
 <p>To test it use this command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-X</span> <span class="pre">GET</span> <span class="pre">https://[kpi-url]/api/v2/assets.json</span> <span class="pre">-H</span> <span class="pre">&quot;Authorization:</span> <span class="pre">Token</span> <span class="pre">[your_token_goes_here]&quot;</span></code></p>
 <p>You can also use tools like Postman to build and test your API snippets:</p>

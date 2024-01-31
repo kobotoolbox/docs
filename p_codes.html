@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,11 +105,11 @@
         <section class="page__body" role="main">
           
   <section id="including-p-codes-in-the-output-data">
-<h1>Including P-Codes in the Output Data<a class="headerlink" href="#including-p-codes-in-the-output-data" title="Permalink to this headline">¶</a></h1>
+<h1>Including P-Codes in the Output Data<a class="headerlink" href="#including-p-codes-in-the-output-data" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong>
 <a href="https://github.com/kobotoolbox/docs/blob/b3e7f7e71a74f63cc5f9ba61e9b437f3684457f5/source/p_codes.md" class="reference">12
 Aug 2021</a></p>
-<p>If using cascading lists, please <a class="reference internal" href="cascading_select.html"><span class="doc std std-doc">follow the instructions</span></a>
+<p>If using cascading lists, please <a class="reference internal" href="cascading_select.html"><span class="std std-doc">follow the instructions</span></a>
 for cascading selects.</p>
 <p>Normally, only the “Name” and NOT the “Label” will appear in your exported Excel
 file, which means that only the P-code OR the name of the location will appear.</p>
@@ -122,7 +124,7 @@ syntax:</p></li>
 <p><code class="docutils literal notranslate"><span class="pre">if(string-length(${name_of_pcode_column})</span> <span class="pre">!=</span> <span class="pre">0,jr:choice-name(${name_of_pcode_column},'${name_of_pcode_column}'),'(unspecified</span> <span class="pre">name_of_pcode_column)')</span></code></p>
 <p class="note">This formula will extract the "Label" (i.e. the name of the location) of the entry, and you will in your exported results get both the name and the p-code.</p>
 <section id="example-with-3-admin-levels-using-cascading-lists">
-<h2>Example with 3 admin levels, using cascading lists<a class="headerlink" href="#example-with-3-admin-levels-using-cascading-lists" title="Permalink to this headline">¶</a></h2>
+<h2>Example with 3 admin levels, using cascading lists<a class="headerlink" href="#example-with-3-admin-levels-using-cascading-lists" title="Permalink to this heading">¶</a></h2>
 <p><strong>survey</strong></p>
 <table class="colwidths-auto docutils align-default">
 <thead>

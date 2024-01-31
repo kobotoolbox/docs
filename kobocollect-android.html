@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,12 +105,12 @@
         <section class="page__body" role="main">
           
   <section id="data-collection-on-kobocollect-app-older-version">
-<h1>Data Collection on KoboCollect App (Older Version)<a class="headerlink" href="#data-collection-on-kobocollect-app-older-version" title="Permalink to this headline">¶</a></h1>
+<h1>Data Collection on KoboCollect App (Older Version)<a class="headerlink" href="#data-collection-on-kobocollect-app-older-version" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7b9f1ffdf3abecfd7796c188b408d6358bc90f34/source/kobocollect-android.md" class="reference">21 Sep 2023</a></p>
 <p class='note'>The older version of the KoboCollect App refers to v1.30.1 and below.</p>
 <p><strong>KoboCollect</strong> is an open-source Android app for collecting survey data. It’s
 one of two ways that you can collect data through KoboToolbox (the other way is
-through <a class="reference internal" href="data_through_webforms.html"><span class="doc std std-doc">web forms - Enketo</span></a>). It’s free and users
+through <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">web forms - Enketo</span></a>). It’s free and users
 with Android versions below 5 can install an older version of the app through
 the
 <a class="reference external" href="https://github.com/kobotoolbox/collect/releases">KoboToolbox GitHub Repository</a>.</p>
@@ -116,11 +118,11 @@ the
 the <strong>KoboCollect</strong> App on the
 <a class="reference external" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android">Google Play Store</a>
 and refer to our support articles for the latest version of the app:
-<a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc std std-doc">Data Collection on KoboCollect App (Latest Version)</span></a>.
+<a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">Data Collection on KoboCollect App (Latest Version)</span></a>.
 We recommend using the latest version of the app, if possible, as it includes
 features and bug fixes that may not be available in older versions.</p>
 <section id="setting-up-the-server-connection">
-<h2>Setting Up the Server Connection<a class="headerlink" href="#setting-up-the-server-connection" title="Permalink to this headline">¶</a></h2>
+<h2>Setting Up the Server Connection<a class="headerlink" href="#setting-up-the-server-connection" title="Permalink to this heading">¶</a></h2>
 <p>The first step after installing <strong>KoboCollect</strong> on your device is to set up the
 server <strong>URL</strong>, <strong>Username</strong>, and <strong>Password</strong>, which connects your
 <strong>KoboCollect</strong> app to the <strong>KoboToolbox</strong> server. This allows you to download
@@ -129,7 +131,7 @@ collected through the app back to the server.</p>
 <p>The server in <strong>KoboCollect</strong> can be configured in two different ways:
 <em>manually</em> or through a <em>QR code</em>.</p>
 <section id="setting-up-server-connection-manually">
-<h3>Setting up server connection <em>manually</em>:<a class="headerlink" href="#setting-up-server-connection-manually" title="Permalink to this headline">¶</a></h3>
+<h3>Setting up server connection <em>manually</em>:<a class="headerlink" href="#setting-up-server-connection-manually" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>Open <strong>KoboCollect</strong>.</p></li>
 <li><p>Select <strong>Main Settings</strong> (three vertical dots) &gt; <strong>General Settings</strong> (this
@@ -161,7 +163,7 @@ class="reference">Troubleshooting KoboCollect Android Application</a>.</p>
 saved forms)</em>, <em>submit saved forms</em>, and <em>delete filled in forms/blank forms</em>.</p>
 </section>
 <section id="setting-up-server-connection-with-a-qr-code">
-<h3>Setting up server connection with a <em>QR code</em><a class="headerlink" href="#setting-up-server-connection-with-a-qr-code" title="Permalink to this headline">¶</a></h3>
+<h3>Setting up server connection with a <em>QR code</em><a class="headerlink" href="#setting-up-server-connection-with-a-qr-code" title="Permalink to this heading">¶</a></h3>
 <p>Oftentimes, users in large projects will need to set up a large number of
 devices under the same server settings (<strong>URL</strong>, <strong>Username</strong>, and <strong>Password</strong>,
 etc.). Setting up all the devices manually would be time-consuming and prone to
@@ -193,7 +195,7 @@ account has permissions to view, edit, or delete data</strong>.</p>
 </section>
 </section>
 <section id="setting-up-blank-forms-in-kobocollect">
-<h2>Setting Up Blank Forms in KoboCollect<a class="headerlink" href="#setting-up-blank-forms-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<h2>Setting Up Blank Forms in KoboCollect<a class="headerlink" href="#setting-up-blank-forms-in-kobocollect" title="Permalink to this heading">¶</a></h2>
 <p>Once you have configured the <strong>URL</strong>, <strong>Username</strong>, and <strong>Password</strong> in the app
 correctly, you can send blank forms to your device from the <strong>KoboToolbox</strong>
 server.</p>
@@ -214,7 +216,7 @@ have by selecting them manually. Then click <strong>Get Selected</strong>.</p></
 forms to <strong>KoboCollect</strong>.</p>
 </section>
 <section id="collecting-data-in-kobocollect">
-<h2>Collecting Data in KoboCollect<a class="headerlink" href="#collecting-data-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<h2>Collecting Data in KoboCollect<a class="headerlink" href="#collecting-data-in-kobocollect" title="Permalink to this heading">¶</a></h2>
 <p>Once you have blank form(s) in the app, you no longer require an internet
 connection to collect data. The blank forms and the filled in forms will stay on
 the device until you delete them from the app or submit them to the server.</p>
@@ -242,7 +244,7 @@ form to something easy to keep track of, such as "Incomplete" or "Incomplete:
 (name of respondent)" under <strong>Name this form</strong>.</p>
 </section>
 <section id="editing-data-in-kobocollect">
-<h2>Editing Data in KoboCollect<a class="headerlink" href="#editing-data-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<h2>Editing Data in KoboCollect<a class="headerlink" href="#editing-data-in-kobocollect" title="Permalink to this heading">¶</a></h2>
 <p>Once you have pressed <strong>Save Form and Exit</strong>, the saved form is automatically
 stored under <strong>Edit Saved Form</strong>. If you wish to edit this saved form, you can
 follow the steps outlined below.</p>
@@ -258,7 +260,7 @@ updates.</p></li>
 form in <strong>KoboCollect</strong>.</p>
 </section>
 <section id="uploading-finalized-data-to-the-server">
-<h2>Uploading Finalized Data to the Server<a class="headerlink" href="#uploading-finalized-data-to-the-server" title="Permalink to this headline">¶</a></h2>
+<h2>Uploading Finalized Data to the Server<a class="headerlink" href="#uploading-finalized-data-to-the-server" title="Permalink to this heading">¶</a></h2>
 <p>Once you have collected your data, and made any necessary edits, you can upload
 the forms to the <strong>KoboToolbox</strong> server.</p>
 <ul class="simple">
@@ -275,7 +277,7 @@ You should now be able to view all the submitted forms.</p></li>
 from <strong>KoboCollect</strong> to the server.</p>
 </section>
 <section id="deleting-saved-forms-in-kobocollect">
-<h2>Deleting Saved Forms in KoboCollect<a class="headerlink" href="#deleting-saved-forms-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<h2>Deleting Saved Forms in KoboCollect<a class="headerlink" href="#deleting-saved-forms-in-kobocollect" title="Permalink to this heading">¶</a></h2>
 <p>Once you have completed data collection for your survey project and all the
 filled in forms have been uploaded to the server, it is recommended to delete
 the forms from the <strong>KoboCollect</strong> app. Keeping them in the app can confuse
@@ -297,7 +299,7 @@ the <strong>Saved Forms</strong> from the app and then <strong>Delete Selected</
 forms in <strong>KoboCollect</strong>.</p>
 </section>
 <section id="resetting-view-sent-form-in-kobocollect">
-<h2>Resetting View Sent Form in KoboCollect<a class="headerlink" href="#resetting-view-sent-form-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<h2>Resetting View Sent Form in KoboCollect<a class="headerlink" href="#resetting-view-sent-form-in-kobocollect" title="Permalink to this heading">¶</a></h2>
 <p>When you submit all the filled forms to the server by pressing <strong>Send Finalized
 Form</strong>, the successfully submitted forms can be seen in the <strong>View Sent Form</strong>
 section. Data managers generally advise to keep this information until the end
@@ -324,7 +326,7 @@ message “<em><strong>Reset results Saved forms: Success</strong></em>”.</p><
 Sent Form</strong> in <strong>KoboCollect</strong>.</p>
 </section>
 <section id="hiding-buttons-in-kobocollect">
-<h2>Hiding buttons in KoboCollect<a class="headerlink" href="#hiding-buttons-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<h2>Hiding buttons in KoboCollect<a class="headerlink" href="#hiding-buttons-in-kobocollect" title="Permalink to this heading">¶</a></h2>
 <p>In some cases, it is recommended to hide certain buttons in the app from
 interviewers to prevent them from editing or changing collected data, decreasing
 the risk of data loss.</p>
@@ -348,7 +350,7 @@ buttons from those menus as well.</p></li>
 <strong>KoboCollect</strong>.</p>
 </section>
 <section id="locking-kobocollect-with-an-admin-password">
-<h2>Locking KoboCollect with an Admin Password<a class="headerlink" href="#locking-kobocollect-with-an-admin-password" title="Permalink to this headline">¶</a></h2>
+<h2>Locking KoboCollect with an Admin Password<a class="headerlink" href="#locking-kobocollect-with-an-admin-password" title="Permalink to this heading">¶</a></h2>
 <p>If needed, you can set up an admin password in the <strong>KoboCollect</strong> app, limiting
 access to the app’s admin settings to only team members with the admin password.</p>
 <ul class="simple">
@@ -367,7 +369,7 @@ password, select <strong>OK</strong>.</p></li>
 password, leave it blank instead of providing a new password.</p>
 </section>
 <section id="form-management-settings-in-kobocollect">
-<h2>Form management settings in KoboCollect<a class="headerlink" href="#form-management-settings-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<h2>Form management settings in KoboCollect<a class="headerlink" href="#form-management-settings-in-kobocollect" title="Permalink to this heading">¶</a></h2>
 <p>There are other form management settings available within <strong>KoboCollect</strong> which
 could assist in managing your data collection project:</p>
 <p><strong>Form update</strong> provides an option to update the survey form manually or
@@ -402,7 +404,7 @@ external app for audio recording while collecting data.</p></li>
 the form management settings in <strong>KoboCollect</strong>.</p>
 </section>
 <section id="setting-up-metadata-in-kobocollect">
-<h2>Setting Up Metadata in KoboCollect<a class="headerlink" href="#setting-up-metadata-in-kobocollect" title="Permalink to this headline">¶</a></h2>
+<h2>Setting Up Metadata in KoboCollect<a class="headerlink" href="#setting-up-metadata-in-kobocollect" title="Permalink to this heading">¶</a></h2>
 <p>Users can set up the collection of metadata like <em>username</em>, <em>phone number</em> and
 <em>email address</em> in <strong>KoboCollect</strong>, providing additional details on who
 submitted the records to the server. These details can be helpful to validate
@@ -429,7 +431,7 @@ that you want to collect.</p></li>
 setting in <strong>KoboCollect</strong>.</p>
 </section>
 <section id="differences-between-kobocollect-odk-collect">
-<h2>Differences Between KoboCollect &amp; ODK Collect<a class="headerlink" href="#differences-between-kobocollect-odk-collect" title="Permalink to this headline">¶</a></h2>
+<h2>Differences Between KoboCollect &amp; ODK Collect<a class="headerlink" href="#differences-between-kobocollect-odk-collect" title="Permalink to this heading">¶</a></h2>
 <p><strong>KoboCollect</strong> is a <a class="reference external" href="https://github.com/getodk/collect/network/members">fork</a>
 of <strong>ODK Collect</strong>. As of today, there are no substantive differences between
 the two apps. Users are free to use either one for data collection. KoboToolbox

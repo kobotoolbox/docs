@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,12 +105,12 @@
         <section class="page__body" role="main">
           
   <section id="row-level-permissions">
-<h1>Row-Level Permissions<a class="headerlink" href="#row-level-permissions" title="Permalink to this headline">¶</a></h1>
+<h1>Row-Level Permissions<a class="headerlink" href="#row-level-permissions" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong>
 <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/row_level_permissions.md" class="reference">15
 Feb 2022</a></p>
 <p>The <strong>row-level</strong> permissions are an extension of the
-<a class="reference internal" href="managing_permissions.html"><span class="doc std std-doc">existing permissions</span></a> features and allow project
+<a class="reference internal" href="managing_permissions.html"><span class="std std-doc">existing permissions</span></a> features and allow project
 owners to create four different levels of permissions for a shared project. To
 find this functionality, simply go to project <strong>SETTINGS</strong> and click on the
 <strong>Sharing</strong> section. You will see a screen as shown below.</p>
@@ -138,7 +140,7 @@ allow for a total of four <strong>row-level</strong> access permissions that inc
 </table>
 <p class="note">Please note that some permissions imply others. For example, if <i>Alice</i> has <strong>Edit submissions only from specific users</strong> only for <i>Bob</i>, then this implies that <i>Alice</i> also has <strong>View submissions only from specific users</strong> for <i>Bob</i>.</p>
 <section id="configure-your-account-settings">
-<h2>Configure your Account Settings:<a class="headerlink" href="#configure-your-account-settings" title="Permalink to this headline">¶</a></h2>
+<h2>Configure your Account Settings:<a class="headerlink" href="#configure-your-account-settings" title="Permalink to this heading">¶</a></h2>
 <p>Before configuring project sharing, you will need to open your <strong>ACCOUNT
 SETTINGS</strong> and toggle the checkbox <strong>Require authentication to see forms and
 submitted data</strong>. If this configuration is left unchecked, setting row-level
@@ -146,14 +148,14 @@ permissions will not work as expected.</p>
 <p><img alt="image" src="_images/Accounts_Settings.png" /></p>
 </section>
 <section id="managing-row-level-permissions">
-<h2>Managing Row Level Permissions:<a class="headerlink" href="#managing-row-level-permissions" title="Permalink to this headline">¶</a></h2>
+<h2>Managing Row Level Permissions:<a class="headerlink" href="#managing-row-level-permissions" title="Permalink to this heading">¶</a></h2>
 <p>In this example, three user accounts are presented to demonstrate how the
 feature works. <em>kalyan1</em> represents the <em>admin</em> or <em>owner</em> of the survey project
 (as seen in the previous images). <em>kalyan2</em> and <em>kalyan3</em> represent different
 users receiving permissions. <strong>Require authentication to see forms and submitted
 data</strong> has been checked for <em>kalyan1</em>.</p>
 <section id="view-submissions-only-from-specific-users">
-<h3>View submissions only from specific users:<a class="headerlink" href="#view-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
+<h3>View submissions only from specific users:<a class="headerlink" href="#view-submissions-only-from-specific-users" title="Permalink to this heading">¶</a></h3>
 <p><em>kalyan1</em> can share row-level permissions with <em>kalyan2</em>, where they can <em>view</em>
 submissions made from <em>kalyan2</em>.</p>
 <p><video controls><source src="./_static/files/row_level_permissions/1_View_submissions_1.mp4" type="video/mp4"></video></p>
@@ -162,7 +164,7 @@ submissions made from <em>kalyan2</em>.</p>
 <p><video controls><source src="./_static/files/row_level_permissions/2_View_submissions_2.mp4" type="video/mp4"></video></p>
 </section>
 <section id="edit-submissions-only-from-specific-users">
-<h3>Edit submissions only from specific users:<a class="headerlink" href="#edit-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
+<h3>Edit submissions only from specific users:<a class="headerlink" href="#edit-submissions-only-from-specific-users" title="Permalink to this heading">¶</a></h3>
 <p>In this case, <em>kalyan1</em> can share row-level permissions with <em>kalyan2</em>, where
 they can <em>view</em> and <em>edit</em> submissions made from <em>kalyan2</em>.</p>
 <p><video controls><source src="./_static/files/row_level_permissions/3_Edit_Submission_1.mp4" type="video/mp4"></video></p>
@@ -171,7 +173,7 @@ they can <em>view</em> and <em>edit</em> submissions made from <em>kalyan2</em>.
 <p><video controls><source src="./_static/files/row_level_permissions/4_Edit_Submission_2.mp4" type="video/mp4"></video></p>
 </section>
 <section id="delete-submissions-only-from-specific-users">
-<h3>Delete submissions only from specific users:<a class="headerlink" href="#delete-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
+<h3>Delete submissions only from specific users:<a class="headerlink" href="#delete-submissions-only-from-specific-users" title="Permalink to this heading">¶</a></h3>
 <p>In this case, <em>kalyan1</em> can share row-level permissions with <em>kalyan2</em>, where
 they can <em>view</em> and <em>delete</em> submissions made from <em>kalyan2</em>.</p>
 <p><video controls><source src="./_static/files/row_level_permissions/5_Delete_Submissions_1.mp4" type="video/mp4"></video></p>
@@ -180,7 +182,7 @@ they can <em>view</em> and <em>delete</em> submissions made from <em>kalyan2</em
 <p><video controls><source src="./_static/files/row_level_permissions/6_Delete_Submissions_2.mp4" type="video/mp4"></video></p>
 </section>
 <section id="validate-submissions-only-from-specific-users">
-<h3>Validate submissions only from specific users:<a class="headerlink" href="#validate-submissions-only-from-specific-users" title="Permalink to this headline">¶</a></h3>
+<h3>Validate submissions only from specific users:<a class="headerlink" href="#validate-submissions-only-from-specific-users" title="Permalink to this heading">¶</a></h3>
 <p>In this case, <em>kalyan1</em> can share row-level permissions with <em>kalyan2</em> where
 they can <em>view</em> and <em>validate</em> submissions made from <em>kalyan2</em>.</p>
 <p><video controls><source src="./_static/files/row_level_permissions/7_Validate_Submissions_1.mp4" type="video/mp4"></video></p>
@@ -190,9 +192,9 @@ from <em>kalyan2</em>.</p>
 </section>
 </section>
 <section id="troubleshooting">
-<h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this headline">¶</a></h2>
+<h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
 <section id="scenario-1">
-<h3>Scenario 1:<a class="headerlink" href="#scenario-1" title="Permalink to this headline">¶</a></h3>
+<h3>Scenario 1:<a class="headerlink" href="#scenario-1" title="Permalink to this heading">¶</a></h3>
 <p>You may come across this dialogue box <em>(as shown in the image below)</em> when
 submitting data with the <strong>Require authentication to see forms and submitted
 data</strong> option checked in KoboToolbox.</p>
@@ -202,7 +204,7 @@ submissions</strong> permission, you will be able to submit data to the server.<
 <p class="note">Note that it’s advised not to share your admin login credentials when managing your project for data security. You can create multiple enumerator accounts and share those credentials with your team.</p>
 </section>
 <section id="scenario-2">
-<h3>Scenario 2:<a class="headerlink" href="#scenario-2" title="Permalink to this headline">¶</a></h3>
+<h3>Scenario 2:<a class="headerlink" href="#scenario-2" title="Permalink to this heading">¶</a></h3>
 <p>To set the <em>view</em>, <em>edit</em>, <em>delete</em> and <em>validate</em> row-level permissions
 correctly on submissions from a subset of users, the <strong>Require authentication to
 see forms and submitted data</strong> option must be checked <em>before</em> data is

@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,7 +105,7 @@
         <section class="page__body" role="main">
           
   <section id="question-matrix-response-type">
-<h1>Question Matrix Response Type<a class="headerlink" href="#question-matrix-response-type" title="Permalink to this headline">¶</a></h1>
+<h1>Question Matrix Response Type<a class="headerlink" href="#question-matrix-response-type" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e7f863dd178949ac432672c795b603f34ec16550/source/matrix_response.md" class="reference">15 Mar 2023</a></p>
 <p>The Question Matrix response type allows users to create a group of questions
 that display in a matrix format, whereby each cell within the matrix represents
@@ -116,7 +118,7 @@ question.</p>
 <p class="note">This response type <strong>only works when using Enketo</strong>, utilizing the <strong>Grid-theme layout</strong>. Forms are set to single page layout by default -- to change it, find the "layout" button in the formbuilder toolbar, select "grid-theme", save this change, and redeploy your form to make these changes live.</p>
 <p class='note'>Enketo supports only up to <code>10</code> columns in versions less than <code>2.8.0</code>, up to <code>13</code> including and after <code>2.8.0</code>.</p>
 <section id="create-a-question-matrix-in-the-formbuilder">
-<h2>Create a Question Matrix in the Formbuilder<a class="headerlink" href="#create-a-question-matrix-in-the-formbuilder" title="Permalink to this headline">¶</a></h2>
+<h2>Create a Question Matrix in the Formbuilder<a class="headerlink" href="#create-a-question-matrix-in-the-formbuilder" title="Permalink to this heading">¶</a></h2>
 <ol class="arabic">
 <li><p>Go to your formbuilder and click on “Add question”</p></li>
 <li><p>Select ‘Question Matrix’</p>
@@ -135,7 +137,7 @@ question.</p>
 </ol>
 </section>
 <section id="create-a-question-matrix-in-xlsform">
-<h2>Create a Question Matrix in XLSForm<a class="headerlink" href="#create-a-question-matrix-in-xlsform" title="Permalink to this headline">¶</a></h2>
+<h2>Create a Question Matrix in XLSForm<a class="headerlink" href="#create-a-question-matrix-in-xlsform" title="Permalink to this heading">¶</a></h2>
 <p>Alternatively, you can also build a Matrix Question in a XLSForm by following
 the instructions as outlined in the images below:</p>
 <p><strong>survey</strong></p>
@@ -220,7 +222,7 @@ the instructions as outlined in the images below:</p>
 <p class="note">This method uses <code>begin_kobomatrix</code>,
 <code>end_kobomatrix</code> and <code>kobo--matrix_list</code>.</p>
 <p>Following the steps above, you should see the question matrix shown in the
-screenshot below (In <a class="reference internal" href="data_through_webforms.html"><span class="doc std std-doc">Enketo</span></a> only):</p>
+screenshot below (In <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">Enketo</span></a> only):</p>
 <p><img alt="image" src="_images/preview1.png" /></p>
 <p>It is also possible to include <code class="docutils literal notranslate"><span class="pre">relevant</span></code> and <code class="docutils literal notranslate"><span class="pre">constraint</span></code> conditions within the
 matrix as follows:</p>

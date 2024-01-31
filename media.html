@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
@@ -14,6 +14,7 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/js/breadcrumbs.js"></script>
     <script src="_static/js/common.js"></script>
@@ -31,8 +32,9 @@
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
+
   
-  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+  
 
   </head><body>
 <header role="banner" class="main-header" id="main-header">
@@ -103,7 +105,7 @@
         <section class="page__body" role="main">
           
   <section id="adding-various-types-of-media-image-audio-video-to-a-form">
-<h1>Adding Various Types of Media (image, audio, video) to a Form<a class="headerlink" href="#adding-various-types-of-media-image-audio-video-to-a-form" title="Permalink to this headline">¶</a></h1>
+<h1>Adding Various Types of Media (image, audio, video) to a Form<a class="headerlink" href="#adding-various-types-of-media-image-audio-video-to-a-form" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong>
 <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15
 Feb 2022</a></p>
@@ -135,7 +137,7 @@ in a much better way.</p>
 <strong>KoboToolbox</strong>. Follow the instructions outlined below to include media to your
 survey project.</p>
 <section id="step-1-download-form-as-xlsform">
-<h2>Step 1: Download Form as XLSForm<a class="headerlink" href="#step-1-download-form-as-xlsform" title="Permalink to this headline">¶</a></h2>
+<h2>Step 1: Download Form as XLSForm<a class="headerlink" href="#step-1-download-form-as-xlsform" title="Permalink to this heading">¶</a></h2>
 <p>Create a survey project in the formbuilder UI and then download your form as XLS
 to add media settings to it. The formbuilder currently does not support adding
 media to the form directly so you will need to edit the downloaded XLSForm to
@@ -143,12 +145,12 @@ complete this action.</p>
 <p><video controls><source src="./_static/files/media/download_xlsform.mp4" type="video/mp4"></video></p>
 </section>
 <section id="step-2-add-media-columns-to-your-xlsform">
-<h2>Step 2: Add Media Columns to your XLSForm<a class="headerlink" href="#step-2-add-media-columns-to-your-xlsform" title="Permalink to this headline">¶</a></h2>
+<h2>Step 2: Add Media Columns to your XLSForm<a class="headerlink" href="#step-2-add-media-columns-to-your-xlsform" title="Permalink to this heading">¶</a></h2>
 <p class='note'>The file names added to the XLSForm must match the file names you
 gave to your <em>image</em>, <em>audio</em>, and
 <em>video</em> files.</p>
 <section id="adding-image-media-columns">
-<h3>Adding Image Media Columns:<a class="headerlink" href="#adding-image-media-columns" title="Permalink to this headline">¶</a></h3>
+<h3>Adding Image Media Columns:<a class="headerlink" href="#adding-image-media-columns" title="Permalink to this heading">¶</a></h3>
 <p>If you wish to add an <strong>image</strong> to a question, then type <code class="docutils literal notranslate"><span class="pre">media::image</span></code> as a
 column header in the <strong>survey</strong> tab of your XLSForm. Type the image file name
 along with an extension to the appropriate question just under the
@@ -160,7 +162,7 @@ just under the <code class="docutils literal notranslate"><span class="pre">medi
 <p><video controls><source src="./_static/files/media/adding_media_image.mp4" type="video/mp4"></video></p>
 </section>
 <section id="adding-audio-media-columns">
-<h3>Adding Audio Media Columns:<a class="headerlink" href="#adding-audio-media-columns" title="Permalink to this headline">¶</a></h3>
+<h3>Adding Audio Media Columns:<a class="headerlink" href="#adding-audio-media-columns" title="Permalink to this heading">¶</a></h3>
 <p>If you wish to add <strong>audio</strong> to a question, then type <code class="docutils literal notranslate"><span class="pre">media::audio</span></code> as a column
 header in the <strong>survey</strong> tab of your XLSForm. Type the audio file name along
 with an extension to the appropriate question just under the
@@ -172,7 +174,7 @@ audio file name along with an extension to the appropriate choice just under the
 <p><video controls><source src="./_static/files/media/adding_media_audio.mp4" type="video/mp4"></video></p>
 </section>
 <section id="adding-video-media-columns">
-<h3>Adding Video Media Columns:<a class="headerlink" href="#adding-video-media-columns" title="Permalink to this headline">¶</a></h3>
+<h3>Adding Video Media Columns:<a class="headerlink" href="#adding-video-media-columns" title="Permalink to this heading">¶</a></h3>
 <p>If you wish to add video to a question, then type <code class="docutils literal notranslate"><span class="pre">media::video</span></code> as a column
 header in the <strong>survey</strong> tab of your XLSForm. Type the video file name along
 with an extension to the appropriate question just under the
@@ -185,14 +187,14 @@ file name along with an extension to the appropriate choice just under the
 </section>
 </section>
 <section id="step-3-handling-media-columns-for-multiple-languages">
-<h2>Step 3: Handling Media Columns for Multiple Languages<a class="headerlink" href="#step-3-handling-media-columns-for-multiple-languages" title="Permalink to this headline">¶</a></h2>
+<h2>Step 3: Handling Media Columns for Multiple Languages<a class="headerlink" href="#step-3-handling-media-columns-for-multiple-languages" title="Permalink to this heading">¶</a></h2>
 <p class='note'>This step is for those who have multiple languages in their survey
 project.</p>
 <p>You may have a survey with multiple languages and want to add various types of
 media relevant to specific languages. In such cases, you could follow the
 illustrations provided below.</p>
 <section id="handling-media-column-for-image-media">
-<h3>Handling Media Column for Image Media:<a class="headerlink" href="#handling-media-column-for-image-media" title="Permalink to this headline">¶</a></h3>
+<h3>Handling Media Column for Image Media:<a class="headerlink" href="#handling-media-column-for-image-media" title="Permalink to this heading">¶</a></h3>
 <p>If you wish to add image to a question, then type <code class="docutils literal notranslate"><span class="pre">media::image</span></code> as a column
 header in the <strong>survey</strong> tab of your XLSForm. Type the image file name along
 with an extension to the appropriate question just under the
@@ -205,7 +207,7 @@ to the appropriate choice just under the
 <p><video controls><source src="./_static/files/media/adding_media_image_language.mp4" type="video/mp4"></video></p>
 </section>
 <section id="handling-media-column-for-audio-media">
-<h3>Handling Media Column for Audio Media:<a class="headerlink" href="#handling-media-column-for-audio-media" title="Permalink to this headline">¶</a></h3>
+<h3>Handling Media Column for Audio Media:<a class="headerlink" href="#handling-media-column-for-audio-media" title="Permalink to this heading">¶</a></h3>
 <p>If you wish to add audio to a question, then type
 <code class="docutils literal notranslate"><span class="pre">media::audio::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> as a column header in the <strong>survey</strong>
 tab of your XLSForm. Type the audio file name along with an extension to the
@@ -219,7 +221,7 @@ to the appropriate choice just under the
 <p><video controls><source src="./_static/files/media/adding_media_audio_language.mp4" type="video/mp4"></video></p>
 </section>
 <section id="handling-media-column-for-video-media">
-<h3>Handling Media Column for Video Media:<a class="headerlink" href="#handling-media-column-for-video-media" title="Permalink to this headline">¶</a></h3>
+<h3>Handling Media Column for Video Media:<a class="headerlink" href="#handling-media-column-for-video-media" title="Permalink to this heading">¶</a></h3>
 <p>If you wish to add video to a question, then type
 <code class="docutils literal notranslate"><span class="pre">media::video::Language</span> <span class="pre">(language</span> <span class="pre">code)</span></code> as a column header in the <strong>survey</strong>
 tab of your XLSForm. Type the video file name along with an extension to the
@@ -234,13 +236,13 @@ to the appropriate choice just under the
 </section>
 </section>
 <section id="step-4-replace-xlsform">
-<h2>Step 4: Replace XLSForm<a class="headerlink" href="#step-4-replace-xlsform" title="Permalink to this headline">¶</a></h2>
+<h2>Step 4: Replace XLSForm<a class="headerlink" href="#step-4-replace-xlsform" title="Permalink to this heading">¶</a></h2>
 <p>Upload and replace your XLSForm into the existing project or create a new
 project.</p>
 <p><video controls><source src="./_static/files/media/replacing_xlsform.mp4" type="video/mp4"></video></p>
 </section>
 <section id="step-5-upload-media-files">
-<h2>Step 5: Upload Media Files<a class="headerlink" href="#step-5-upload-media-files" title="Permalink to this headline">¶</a></h2>
+<h2>Step 5: Upload Media Files<a class="headerlink" href="#step-5-upload-media-files" title="Permalink to this heading">¶</a></h2>
 <p>Go to <strong>SETTINGS&gt;Media</strong>. Upload all media files that have been referenced in
 your form.</p>
 <p><video controls><source src="./_static/files/media/uploading_media.mp4" type="video/mp4"></video></p>
@@ -251,7 +253,7 @@ you will need to either remove the space in between the names (e.g.,
 "redbook") or use '_' for a space (e.g., "red_book").</p>
 </section>
 <section id="step-6-deploy-form">
-<h2>Step 6: Deploy Form<a class="headerlink" href="#step-6-deploy-form" title="Permalink to this headline">¶</a></h2>
+<h2>Step 6: Deploy Form<a class="headerlink" href="#step-6-deploy-form" title="Permalink to this heading">¶</a></h2>
 <p>Once you have replaced the XLSForm and then uploaded all the media files, you
 will need to deploy your survey.</p>
 <p><video controls><source src="./_static/files/media/deploying_form.mp4" type="video/mp4"></video></p>
@@ -261,7 +263,7 @@ You can see your new media when previewing your form
 <em>before</em> redeployment.</p>
 </section>
 <section id="step-7-collect-data">
-<h2>Step 7: Collect Data<a class="headerlink" href="#step-7-collect-data" title="Permalink to this headline">¶</a></h2>
+<h2>Step 7: Collect Data<a class="headerlink" href="#step-7-collect-data" title="Permalink to this heading">¶</a></h2>
 <p>You can now go back to <strong>Form&gt;Collect Data</strong>, and then click <strong>Open</strong> to check
 if the media are properly displayed.</p>
 <p><video controls><source src="./_static/files/media/collecting_data.mp4" type="video/mp4"></video></p>
@@ -271,9 +273,9 @@ alignment, center alignment or the right alignment) is also not
 possible.</p>
 </section>
 <section id="tips-tricks">
-<h2>Tips &amp; Tricks<a class="headerlink" href="#tips-tricks" title="Permalink to this headline">¶</a></h2>
+<h2>Tips &amp; Tricks<a class="headerlink" href="#tips-tricks" title="Permalink to this heading">¶</a></h2>
 <section id="identifying-the-filename-extension-and-size-of-a-media-file-on-windows">
-<h3>Identifying the filename, extension, and size of a media file on Windows<a class="headerlink" href="#identifying-the-filename-extension-and-size-of-a-media-file-on-windows" title="Permalink to this headline">¶</a></h3>
+<h3>Identifying the filename, extension, and size of a media file on Windows<a class="headerlink" href="#identifying-the-filename-extension-and-size-of-a-media-file-on-windows" title="Permalink to this heading">¶</a></h3>
 <ul class="simple">
 <li><p>Select a media file (image, audio, or video).</p></li>
 <li><p>Right click your mouse when the media file is still being selected.</p></li>
