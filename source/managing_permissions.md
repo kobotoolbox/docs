@@ -23,8 +23,8 @@ form will require authentication for an individual to be able to access the form
 In some cases, you may wish to enable data entry from anyone who knows the Enketo web form URL. In this case, any individual with access to the form URL can send submissions to the project, without them being required to be
 logged into their KoboToolbox user accounts.
 
-- Go to **Collect data** inside your KoboToolbox account
-- Use the toggle button to enable "Allow submissions to this form without a username and password"
+- Open the project in KoboToolbox, and go to the **FORM** section
+- Below the Collect Data section, use the toggle button to enable "Allow submissions to this form without a username and password"
 
 ![Requiring passwords](images/managing_permissions/requiring_passwords.gif)
 
