@@ -30,7 +30,7 @@ By default, the display panel on the right side of the screen will show the reco
 
 <p class="note">If you haven’t transcribed your recording, only the audio recording and submission data will appear on this display.</p>
 
-    ![image](/images/qualitative_analysis/Open-analysis.gif)
+    ![image](/images/qualitative_analysis/Display-settings.gif)
 
 ## Using the analysis features
 
