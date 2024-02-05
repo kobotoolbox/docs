@@ -26,9 +26,11 @@ logged into their KoboToolbox user accounts.
 - Open the project in KoboToolbox, and go to the **FORM** section
 - Below the Collect Data section, use the toggle button to enable "Allow submissions to this form without a username and password"
 
-![Requiring passwords](images/managing_permissions/requiring_passwords.gif)
+![Requiring passwords](images/managing_permissions/allow_submissions.gif)
 
 You can also make changes to this privacy feature by going to the **Sharing** tab in the **SETTINGS** page in your data collection project and toggling the default setting to enable “Allow submissions to this form without a username and password”, or when accessing your **Sharing Permissions**.
+
+![Requiring passwords](images/managing_permissions/allow_submissions_settings.gif)
 
 <p class="note">
   Setting forms to require authentication is now available as a per-project setting. This privacy feature replaces the old account setting “Require authentication to see forms and submit data”. With this new update, new projects require authentication by default. Existing projects inherit your old account-level settings as they are at the time of this update. 
