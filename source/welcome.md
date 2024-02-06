@@ -75,7 +75,7 @@ Learn more about [project sharing and permissions](managing_permissions.md).
 
 Connect project data across different platforms and integrate your KoboToolbox data with other software such as Excel and Power BI.
 
-![Data management](/images/welcome/data_management.png)
+![Data management](/images/welcome/dashboard-development.png)
 
 - **Synchronous exports:** Share data across different applications without downloading any files using [synchronous exports](synchronous_exports.md).
 - **REST services:** Connect your project to external programs using [REST services](rest_services.md).
