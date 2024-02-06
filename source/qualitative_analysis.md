@@ -8,7 +8,7 @@ Qualitative analysis can be crucial for research and emergency response, offerin
 
 The first step is to [collect audio responses](photo_audio_video_file.md) in your form, using the Audio question type. It may be helpful to [transcribe and/or translate](transcription-translation.md) your audio files before you begin the analysis, but it is not required.
 
-<p class="note">The qualitative analysis features are currently only available for audio responses and can not be used for background audio recordings or other question types.</p>
+<p class="note">The qualitative analysis features are currently only available for audio responses and cannot be used for background audio recordings or other question types.</p>
 
 ## Start analyzing your qualitative data
 
@@ -18,7 +18,7 @@ The first step is to [collect audio responses](photo_audio_video_file.md) in you
 
 3. Open the **ANALYSIS** tab to get started.
 
-    ![image](/images/qualitative_analysis/Open-analysis.gif)
+![image](/images/qualitative_analysis/Open-analysis.gif)
 
 ## Change your display settings
 
@@ -30,7 +30,7 @@ By default, the display panel on the right side of the screen will show the reco
 
 <p class="note">If you haven’t transcribed your recording, only the audio recording and submission data will appear on this display.</p>
 
-    ![image](/images/qualitative_analysis/Display-settings.gif)
+![image](/images/qualitative_analysis/Display-settings.gif)
 
 ## Using the analysis features
 
@@ -45,7 +45,7 @@ The following types of data assessment fields can be used:
 - **Multiple choice:** Select one or multiple from a list of options to describe your audio file (e.g., barriers to healthcare mentioned by respondent).
 - **Note:** Add a note to organize your analysis fields or leave instructions to others. Notes will also appear in the ANALYSIS tab for all responses collected for this question on the form.
 
-    ![image](/images/qualitative_analysis/Analyze.gif)
+![image](/images/qualitative_analysis/Analyze.gif)
 
 Each field you add will become a new column in your dataset, which you can download with the rest of your data.
 
@@ -56,6 +56,6 @@ You can only analyze one audio response at a time, but it is easy to switch from
 - To switch to the next data entry, click the arrows to the left of the **DONE** button.
 - To switch to another question within a single data entry, click on the drop-down menu at the top the screen, and select the question you would like to analyze.
 
-    ![image](/images/qualitative_analysis/Change-response.gif)
+![image](/images/qualitative_analysis/Change-response.gif)
   
 When you have finished analyzing your audio files, each data assessment field will be included in your dataset as a new column. You can then download and process the dataset, with these new fields included and ready for further analysis and synthesis.
