@@ -11,7 +11,7 @@ With KoboToolbox’s powerful and intuitive [Formbuilder](formbuilder.md), you c
 
 ![Formbuilder](/images/welcome/formbuilder.png)
 
-- **Question types:** Choose from 25 qualitative and quantitative [question types](](question_types.md)), including text, multiple choice, media, and GPS.
+- **Question types:** Choose from over 25 qualitative and quantitative [question types](](question_types.md)), including text, multiple choice, media, and GPS.
 - **Form logic:** Use skip logic, calculations, and validations for high quality data.
 - **XLSForm:** To create more complex forms, use [XLSForm](https://xlsform.org/en/) in Excel or Google Sheets, upload to KoboToolbox, and edit directly in the KoboToolbox Formbuilder.
 - **Translations:** Easily [add translations](language_dashboard.md) of your forms in hundreds of different languages.
