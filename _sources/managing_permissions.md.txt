@@ -16,22 +16,24 @@ to collaborate on your projects.
 
 ## Requiring passwords for accessing Enketo web forms
 
-By default, KoboToolbox only requires a username and password for accessing data
-and managing your projects. When a project has been deployed, the Enketo web
-form can be accessed by anyone who knows its URL. In this case, any individual
-with access to the form URL can send submissions to the project.
+By default, KoboToolbox requires a username and password for accessing data,
+ managing your projects, and submitting data. When a new project has been deployed, the Enketo web
+form will require authentication for an individual to be able to access the form and send submissions to the project.
 
-In some cases, you may wish to limit data entry to require that individuals be
+In some cases, you may wish to enable data entry from anyone who knows the Enketo web form URL. In this case, any individual with access to the form URL can send submissions to the project, without them being required to be
 logged into their KoboToolbox user accounts.
 
-- Go to **ACCOUNT SETTINGS** inside your KoboToolbox account
-- Check "Require authentication to see forms and submit data"
+- Open the project in KoboToolbox, and go to the **FORM** section
+- Below the Collect Data section, use the toggle button to enable "Allow submissions to this form without a username and password"
 
-![Requiring passwords](images/managing_permissions/requiring_passwords.gif)
+![Requiring passwords](images/managing_permissions/allow_submissions.gif)
+
+You can also make changes to this privacy feature by going to the **Sharing** tab in the **SETTINGS** page in your data collection project and toggling the default setting to enable “Allow submissions to this form without a username and password”, or when accessing your **Sharing Permissions**.
+
+![Requiring passwords](images/managing_permissions/allow_submissions_settings.gif)
 
 <p class="note">
-  Setting forms to require authentication can only be set globally for all the
-  projects in your account and not for individual projects.
+  Setting forms to require authentication is now available as a per-project setting. This privacy feature replaces the old account setting “Require authentication to see forms and submit data”. With this new update, new projects require authentication by default. Existing projects inherit your old account-level settings as they are at the time of this update. 
 </p>
 
 ## Sharing a project with other users and setting their permissions
