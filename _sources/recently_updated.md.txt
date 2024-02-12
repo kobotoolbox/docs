@@ -1,13 +1,13 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
+1. [Basics of KoboToolbox](welcome.md) (6 Feb 2024)
 1. [Sharing Your Project and Managing Permissions](managing_permissions.md) (6 Feb 2024)
 1. [Qualitative Analysis of Audio Responses](qualitative_analysis.md) (6 Feb 2024)
+1. [About KoboToolbox: Accessible data collection for everyone](about_kobotoolbox.md) (6 Feb 2024)
+1. [Restricting Text Responses With Regular Expressions](restrict_responses.md) (6 Feb 2024)
 1. [Using the Question Library](question_library.md) (5 Jan 2024)
 1. [KoboToolbox Integration on monday.com](kobotoolbox_monday_integration.md) (10 Oct 2023)
 1. [Resetting Passwords](reset_password.md) (22 Sep 2023)
 1. [Data Collection on KoboCollect App (Older Version)](kobocollect-android.md) (21 Sep 2023)
 1. [Software Architecture](software_architecture.md) (21 Sep 2023)
-1. [Using the API](api.md) (21 Sep 2023)
-1. [What is KoboToolbox](welcome.md) (11 Sep 2023)
-1. ["Photo", "Audio", "Video" and "File" question types](photo_audio_video_file.md) (11 Sep 2023)

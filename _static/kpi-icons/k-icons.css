@@ -1,10 +1,10 @@
 @font-face {
   font-family: "k-icons";
-  src: url("./k-icons.woff2?96e113042bb0251b36c77ed715a081ce") format("woff2"),
-url("./k-icons.woff?96e113042bb0251b36c77ed715a081ce") format("woff"),
-url("./k-icons.ttf?96e113042bb0251b36c77ed715a081ce") format("truetype"),
-url("./k-icons.eot?96e113042bb0251b36c77ed715a081ce?#iefix") format("embedded-opentype"),
-url("./k-icons.svg?96e113042bb0251b36c77ed715a081ce#k-icons") format("svg");
+  src: url("./k-icons.woff2?478185d15adbe6618bb9ccf2504d673c") format("woff2"),
+url("./k-icons.woff?478185d15adbe6618bb9ccf2504d673c") format("woff"),
+url("./k-icons.ttf?478185d15adbe6618bb9ccf2504d673c") format("truetype"),
+url("./k-icons.eot?478185d15adbe6618bb9ccf2504d673c?#iefix") format("embedded-opentype"),
+url("./k-icons.svg?478185d15adbe6618bb9ccf2504d673c#k-icons") format("svg");
   font-weight: normal;
   font-style: normal;
 }
