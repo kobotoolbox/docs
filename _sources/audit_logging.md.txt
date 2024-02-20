@@ -30,7 +30,7 @@ please follow the steps below:
 | audit | audit |                        |
 | text  | Q1    | Q1. What is your name? |
 
-2. Collect data using the [Collect Andoid app](kobocollect-android.md) and send
+2. Collect data using the [Collect Android app](kobocollect-android.md) and send
    the finalized forms back to the server. Collect saves the audit logs for each
    submission in a CSV file that are saved and uploaded to the server just as an
    attached photo would be.
