@@ -21,4 +21,4 @@ To learn more about how organizations around the world are using KoboToolbox, vi
 
 In addition to the [Help Center](https://support.kobotoolbox.org/), users can visit the [Community Forum](https://community.kobotoolbox.org/) to ask questions and share ideas. For a comprehensive introduction to data collection with KoboToolbox, users can enroll in our online [KoboToolbox Essentials Course](https://academy.kobotoolbox.org/courses/essentials). Online and in-person training sessions are also available for teams. 
 
-Learn more about [our training services→](https://www.kobotoolbox.org/services/training/)
+Learn more about [our training services →](https://www.kobotoolbox.org/services/training/)
