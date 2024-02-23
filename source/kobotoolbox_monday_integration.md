@@ -176,3 +176,7 @@ this matter.
 
 No; only one KoboToolbox integration recipe can be established per board. 
 Having more than one recipe will lead to a server error.
+
+**Why can’t I change an existing recipe created on monday.com by my colleague?**
+
+Only the person who installed the recipe can edit it, all other board members can just open it in read-only mode.
