@@ -48,7 +48,9 @@ platforms.
     [monday.com apps marketplace](https://monday.com/marketplace).
 2.  Once installed, go to your previously prepared board to set up the
     integration.
-    Note: Only one KoboToolbox integration recipe can be established per monday board.
+
+    **Note 1:** Only one KoboToolbox integration recipe can be established per monday board.
+    **Note 2:** Only the person who installed the recipe can edit it, all other board members can just open it in read-only mode.
 
 ### First-time Use
 
@@ -100,16 +102,22 @@ platforms.
     configuration.\
 
     ![kobo-monday-data](/images/kobotoolbox_monday_integration/kobo-monday-data.png)
-    Notes: 
+
+    **Notes:** 
     1. Any updates made to a form or individual submission in KoboToolbox
     project which is already sent to monday.com board will not be automatically
     synced at this point. Such changes like removing or renaming a question,
     changing group hierarchy, changing a group to a repeat group, or editing
     labels in the KoboToolbox form will not affect the items on monday.com
     board.
-    2. Due to monday.com limitations there is no way to map a column with Location type in the dynamic fields mapping. To overcome this limitation the following workflow should be established  
+    2. Due to monday.com limitations there is no way to map a column with Location type in the dynamic fields mapping. To overcome this limitation the following workflow should be established.
       a. Create two columns on monday.com board for location data to be populated - one of the Text type and second of the Location type. It’s important to name them identically. 
       b. Use a location column of the Text type in the dynamic fields mapping.  Second column of the Location type would be automatically populated once the first one is filled out.
+    3. File column is not automatically supported in the dynamic fields mapping. If you wish to transfer files from Kobo to monday.com, the following workflow should be established.
+      a. Add a File column to the monday.com board and name it the same as the appropriate File field is named in your KoboToolbox project, it’s crucial to apply the same names to file columns from both monday.com and KoboToolbox sides. 
+      b. Install integration recipe if not accomplished yet, otherwise go to Integration Center, open the existing recipe and click ‘Update automation’ button to have the latest functional changes applied.
+      c. No other configuration changes needed, now files will be automatically transferred from the KoboToolbox project to the appropriate column on monday.com board based on the column name.
+
 
 
 ## FAQ
@@ -117,7 +125,7 @@ platforms.
 **What is the REST Service?**
 
 More information about REST Services could be found in the following
-[guidance](https://support.kobotoolbox.org/rest_services.html).
+[guidance](rest_services.md).
 
 **What is the dynamic fields mapping?**
 
@@ -158,10 +166,10 @@ have the selected option correctly transferred to the board.
 
 **What column types from Kobo shift to what column types from monday?**
 
-All column types except File and External XML are supported by monday.com. If
+All column types except External XML are supported by monday.com. If
 you can't find the appropriate column type on monday.com board, use a column
 with Text type. For the Point and Area Kobo column type, it's better to use the Text
-column on monday side despite the fact that there is Location column type for
+column on monday.com side despite the fact that there is Location column type for
 this matter.
 
 **Can I sync more than one KoboToolbox project with my monday board?**
