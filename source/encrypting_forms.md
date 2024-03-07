@@ -37,16 +37,20 @@ key. To understand more about public and private key infrastructure
 3. Add a column _submission_url_ and type
    `https://kc.kobotoolbox.org/submission` or
    `https://kc-eu.kobotoolbox.org/submission` (depending
-   upon the server you are using). Please note that the URL for an authenticated user no longer includes **yourusername** per recent updates.
+   upon the server you are using).
 
-4. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your
+   <p class="note">
+  Please note that the URL for an authenticated user no longer includes **yourusername** per recent updates.
+</p>
+
+5. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your
    compatible public key.
 
     (Please see image below for reference)
 
     ![image](/images/encrypting_forms/column.png)
 
-5. Upload the XLS file back to KoboToolbox. You can either import it back to the
+6. Upload the XLS file back to KoboToolbox. You can either import it back to the
    Form Drafts list and then deploy it as a new survey project, or import it
    directly to your deployed Projects list. Once deployed you should see a label
    with the text "encrypted" next to your form name.
