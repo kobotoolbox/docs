@@ -39,10 +39,6 @@ key. To understand more about public and private key infrastructure
    `https://kc-eu.kobotoolbox.org/submission` (depending
    upon the server you are using).
 
-   <p class="note">
-  Please note that the URL for an authenticated user no longer includes **yourusername** per recent updates.
-</p>
-
 5. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your
    compatible public key.
 
@@ -54,6 +50,10 @@ key. To understand more about public and private key infrastructure
    Form Drafts list and then deploy it as a new survey project, or import it
    directly to your deployed Projects list. Once deployed you should see a label
    with the text "encrypted" next to your form name.
+
+<p class="note">
+  Please note that the URL for an authenticated user no longer includes **yourusername** per recent updates. 
+</p>
 
 ## How to decrypt forms
 
