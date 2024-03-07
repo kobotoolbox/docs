@@ -35,10 +35,9 @@ key. To understand more about public and private key infrastructure
 2. In the downloaded file go to the 'settings' sheet.
 
 3. Add a column _submission_url_ and type
-   `https://kc.kobotoolbox.org/yourusername/submission` or
-   `https://kc-eu.kobotoolbox.org/yourusername/submission` (depending
-   upon the server you are using). Please note that yourusername is your
-   KoboToolbox user account.
+   `https://kc.kobotoolbox.org/submission` or
+   `https://kc-eu.kobotoolbox.org/submission` (depending
+   upon the server you are using). Please note that the URL for an authenticated user no longer includes **yourusername** per recent updates.
 
 4. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your
    compatible public key.
