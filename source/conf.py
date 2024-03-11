@@ -33,7 +33,7 @@ master_doc = 'index'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['myst_parser']
+extensions = ['myst_parser', 'sphinx_reredirects']
 
 # MyST markdown parser configuration
 myst_heading_anchors = 3
@@ -106,3 +106,4 @@ html_js_files = [
 
 html_favicon = 'images/index/favicon.png'
 
+redirects = {"server": "creating_account.html"}
