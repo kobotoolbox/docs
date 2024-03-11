@@ -76,8 +76,7 @@ This is required for decryption to be successful.
    Enviornment (JRE) of your computer, replacing earlier versions of these
    files.
     - On **Windows**, the JRE is usually installed here: C:\Program
-      Files\Java\jre7\lib\securityOn OSX the location is /Library/Internet
-      Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
+      Files\Java\jre7\lib\security
     - On **OSX** the location is /Library/Internet
       Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
 
@@ -92,13 +91,17 @@ This is required for decryption to be successful.
 
 4. Then enter the following:
 
-    - `https://kc.kobotoolbox.org/yourusername` OR
-      `https://kc-eu.kobotoolbox.org/yourusername`(depending on which
+    - `https://kc.kobotoolbox.org` OR
+      `https://kc-eu.kobotoolbox.org`(depending on which
       server you use)
     - Your username
     - Your password
     - Press **Connect** when done  
       ![image](/images/encrypting_forms/connect.png)
+
+<p class="note">
+  Please note that the server URLs above no longer need to include **yourusername** per recent updates. 
+</p>
 
 5. A list of projects is displayed. Select a project that you wish to pull and
    press **Pull**. You will receive a message **Success** under the **Pull
@@ -133,7 +136,7 @@ public/private key pair as other methods may not be supported by the software._
 
 1. Open a Windows 'cmd' window.
 
-2. Type the following command: `cd C:\OpenSSL-Win32\bi`n to change to the /bin
+2. Type the following command: `cd C:\OpenSSL-Win32\bin` to change to the /bin
    directory in the OpenSSL directory.
 
     ![image](/images/encrypting_forms/openssl_1.png)
