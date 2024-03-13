@@ -1,8 +1,5 @@
 # Audit Logging Meta Question Type
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/f9bb069f3517cb6d0b581aa7cec180b5ff707d2b/source/audit_logging.md" class="reference">12
-Aug 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4c025cd029fa197f245df6bd394f0ceed21848f5/source/audit_logging.md" class="reference">20 Feb 2024</a>
 
 Audit Logging can be a useful tool to monitor enumerator behavior and discover
 which questions are taking longer to answer, better understand how the
