@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,600|Source+Sans+Pro:600");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500|Source+Sans+Pro:600");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -478,7 +478,7 @@ html body {
   margin-bottom: 1.5em;
 }
 .page .page__body table th p {
-  font-weight: 600;
+  font-weight: 500;
   margin: 0 auto;
 }
 .page .page__body table td.text-left {
@@ -532,7 +532,7 @@ html body {
   line-height: inherit;
 }
 .page .page__body strong {
-  font-weight: 600;
+  font-weight: 500;
 }
 .page .page__sidebar {
   font-size: inherit;
@@ -872,7 +872,7 @@ html body div.footer p:last-child {
   }
 }
 .page#index .toctree-wrapper[id^=home-page-toc-] .caption {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.3125rem;
   line-height: 1;
   padding: 0.3125rem 0;
@@ -987,7 +987,7 @@ html body div.footer p:last-child {
 }
 .page.custom-section-page .page__body li.toctree-l1 > a {
   font-size: 1.125rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 .page.custom-section-page .page__body li.toctree-l2 {
   margin-top: 1rem;
