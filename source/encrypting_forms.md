@@ -1,5 +1,5 @@
 # Encrypting Forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/94c30eb1a317891733baea7ffcaaa7f7d078a2cd/source/encrypting_forms.md" class="reference">6 Sep 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/18b033da521eb4e00b6ae6a75cbdde57ddaa0a33/source/encrypting_forms.md" class="reference">11 Mar 2024</a>
 
 _This procedure is quite technical and is intended for users who are comfortable
 with advanced technical instructions and requires strict attention to detail._
@@ -35,22 +35,25 @@ key. To understand more about public and private key infrastructure
 2. In the downloaded file go to the 'settings' sheet.
 
 3. Add a column _submission_url_ and type
-   `https://kc.kobotoolbox.org/yourusername/submission` or
-   `https://kc-eu.kobotoolbox.org/yourusername/submission` (depending
-   upon the server you are using). Please note that yourusername is your
-   KoboToolbox user account.
+   `https://kc.kobotoolbox.org/submission` or
+   `https://kc-eu.kobotoolbox.org/submission` (depending
+   upon the server you are using).
 
-4. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your
+5. Add another column _public_key_ (i.e. base64RsaPublicKey). Paste your
    compatible public key.
 
     (Please see image below for reference)
 
     ![image](/images/encrypting_forms/column.png)
 
-5. Upload the XLS file back to KoboToolbox. You can either import it back to the
+6. Upload the XLS file back to KoboToolbox. You can either import it back to the
    Form Drafts list and then deploy it as a new survey project, or import it
    directly to your deployed Projects list. Once deployed you should see a label
    with the text "encrypted" next to your form name.
+
+<p class="note">
+  Please note that the URL for an authenticated user no longer includes **yourusername** per recent updates. 
+</p>
 
 ## How to decrypt forms
 
@@ -73,8 +76,7 @@ This is required for decryption to be successful.
    Enviornment (JRE) of your computer, replacing earlier versions of these
    files.
     - On **Windows**, the JRE is usually installed here: C:\Program
-      Files\Java\jre7\lib\securityOn OSX the location is /Library/Internet
-      Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
+      Files\Java\jre7\lib\security
     - On **OSX** the location is /Library/Internet
       Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security
 
@@ -89,13 +91,17 @@ This is required for decryption to be successful.
 
 4. Then enter the following:
 
-    - `https://kc.kobotoolbox.org/yourusername` OR
-      `https://kc-eu.kobotoolbox.org/yourusername`(depending on which
+    - `https://kc.kobotoolbox.org` OR
+      `https://kc-eu.kobotoolbox.org`(depending on which
       server you use)
     - Your username
     - Your password
     - Press **Connect** when done  
       ![image](/images/encrypting_forms/connect.png)
+
+<p class="note">
+  Please note that the server URLs above no longer need to include **yourusername** per recent updates. 
+</p>
 
 5. A list of projects is displayed. Select a project that you wish to pull and
    press **Pull**. You will receive a message **Success** under the **Pull
@@ -130,7 +136,7 @@ public/private key pair as other methods may not be supported by the software._
 
 1. Open a Windows 'cmd' window.
 
-2. Type the following command: `cd C:\OpenSSL-Win32\bi`n to change to the /bin
+2. Type the following command: `cd C:\OpenSSL-Win32\bin` to change to the /bin
    directory in the OpenSSL directory.
 
     ![image](/images/encrypting_forms/openssl_1.png)
