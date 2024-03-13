@@ -1,5 +1,5 @@
 # Restricting Text Responses With Regular Expressions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7f83300443438195a50b1cfea0cdc45926d36fc5/source/restrict_responses.md" class="reference">6 Feb 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/92631e2b6c744c59a0f1637eb76f7f38f1e86bdc/source/restrict_responses.md" class="reference">12 Feb 2024</a>
 
 A regular expression, or regex, is a search pattern used for matching specific
 characters and ranges of characters within a string. It is widely used to

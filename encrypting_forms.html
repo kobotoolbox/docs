@@ -106,7 +106,7 @@
           
   <section id="encrypting-forms">
 <h1>Encrypting Forms<a class="headerlink" href="#encrypting-forms" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/94c30eb1a317891733baea7ffcaaa7f7d078a2cd/source/encrypting_forms.md" class="reference">6 Sep 2023</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/18b033da521eb4e00b6ae6a75cbdde57ddaa0a33/source/encrypting_forms.md" class="reference">11 Mar 2024</a></p>
 <p><em>This procedure is quite technical and is intended for users who are comfortable
 with advanced technical instructions and requires strict attention to detail.</em></p>
 <p>Encrypted forms work by encrypting the data on the phone the moment it is saved.
@@ -138,10 +138,9 @@ key. To understand more about public and private key infrastructure
 list as an XLS file.</p></li>
 <li><p>In the downloaded file go to the ‘settings’ sheet.</p></li>
 <li><p>Add a column <em>submission_url</em> and type
-<code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org/yourusername/submission</span></code> or
-<code class="docutils literal notranslate"><span class="pre">https://kc-eu.kobotoolbox.org/yourusername/submission</span></code> (depending
-upon the server you are using). Please note that yourusername is your
-KoboToolbox user account.</p></li>
+<code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org/submission</span></code> or
+<code class="docutils literal notranslate"><span class="pre">https://kc-eu.kobotoolbox.org/submission</span></code> (depending
+upon the server you are using).</p></li>
 <li><p>Add another column <em>public_key</em> (i.e. base64RsaPublicKey). Paste your
 compatible public key.</p>
 <p>(Please see image below for reference)</p>
@@ -152,6 +151,9 @@ Form Drafts list and then deploy it as a new survey project, or import it
 directly to your deployed Projects list. Once deployed you should see a label
 with the text “encrypted” next to your form name.</p></li>
 </ol>
+<p class="note">
+  Please note that the URL for an authenticated user no longer includes **yourusername** per recent updates. 
+</p>
 </section>
 <section id="how-to-decrypt-forms">
 <h2>How to decrypt forms<a class="headerlink" href="#how-to-decrypt-forms" title="Permalink to this heading">¶</a></h2>
@@ -173,8 +175,7 @@ Enviornment (JRE) of your computer, replacing earlier versions of these
 files.</p>
 <ul class="simple">
 <li><p>On <strong>Windows</strong>, the JRE is usually installed here: C:\Program
-Files\Java\jre7\lib\securityOn OSX the location is /Library/Internet
-Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security</p></li>
+Files\Java\jre7\lib\security</p></li>
 <li><p>On <strong>OSX</strong> the location is /Library/Internet
 Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security</p></li>
 </ul>
@@ -190,8 +191,8 @@ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security</p></li>
 <img alt="image" src="_images/configure.png" /></p></li>
 <li><p>Then enter the following:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org/yourusername</span></code> OR
-<code class="docutils literal notranslate"><span class="pre">https://kc-eu.kobotoolbox.org/yourusername</span></code>(depending on which
+<li><p><code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org</span></code> OR
+<code class="docutils literal notranslate"><span class="pre">https://kc-eu.kobotoolbox.org</span></code>(depending on which
 server you use)</p></li>
 <li><p>Your username</p></li>
 <li><p>Your password</p></li>
@@ -199,6 +200,11 @@ server you use)</p></li>
 <img alt="image" src="_images/connect.png" /></p></li>
 </ul>
 </li>
+</ol>
+<p class="note">
+  Please note that the server URLs above no longer need to include **yourusername** per recent updates. 
+</p>
+<ol class="arabic simple" start="5">
 <li><p>A list of projects is displayed. Select a project that you wish to pull and
 press <strong>Pull</strong>. You will receive a message <strong>Success</strong> under the <strong>Pull
 Status</strong>.</p></li>
@@ -228,7 +234,7 @@ Files</strong></em>)</p>
 public/private key pair as other methods may not be supported by the software.</em></p>
 <ol class="arabic">
 <li><p>Open a Windows ‘cmd’ window.</p></li>
-<li><p>Type the following command: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">C:\OpenSSL-Win32\bi</span></code>n to change to the /bin
+<li><p>Type the following command: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">C:\OpenSSL-Win32\bin</span></code> to change to the /bin
 directory in the OpenSSL directory.</p>
 <p><img alt="image" src="_images/openssl_1.png" /></p>
 </li>
