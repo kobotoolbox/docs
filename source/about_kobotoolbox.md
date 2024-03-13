@@ -1,5 +1,5 @@
 # About KoboToolbox: Accessible data collection for everyone
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/eccdb7afac11e7af0ce548f7025dad6399a85fe2/source/about_kobotoolbox.md" class="reference">6 Feb 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ff9303b09ff1c7d67f13fd3dc0e223fe16d545c3/source/about_kobotoolbox.md" class="reference">28 Feb 2024</a>
 
 KoboToolbox makes high quality data accessible to social impact organizations worldwide. Designed by data collection practitioners specifically for challenging settings, KoboToolbox is easy to use, adaptable, and resource efficient. 
 
