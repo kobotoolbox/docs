@@ -1,7 +1,7 @@
 # About KoboToolbox: Accessible data collection for everyone
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ff9303b09ff1c7d67f13fd3dc0e223fe16d545c3/source/about_kobotoolbox.md" class="reference">28 Feb 2024</a>
 
-[Lire en français](https://support.kobotoolbox.org/about_kobotoolbox.html#%C3%A0-propos-de-kobotoolbox--collecte-de-donn%C3%A9es-accessible-%C3%A0-toutes-et-tous) | [Leer en español](https://support.kobotoolbox.org/about_kobotoolbox.html#acerca-de-kobotoolbox-recolecci%C3%B3n-de-datos-accesible-para-todos) |  (https://support.kobotoolbox.org/about_kobotoolbox.html#%D9%84%D9%85%D8%A7%D8%B0%D8%A7-%D8%AA%D8%B9%D8%AA%D8%A8%D8%B1-%D9%85%D9%86%D8%B5%D8%A9-kobotoolbox-%D9%81%D8%B1%D9%8A%D8%AF%D8%A9-%D9%85%D9%86-%D9%86%D9%88%D8%B9%D9%87%D8%A7)[اقرأ باللغة العربية] 
+[Lire en français](https://support.kobotoolbox.org/about_kobotoolbox.html#%C3%A0-propos-de-kobotoolbox--collecte-de-donn%C3%A9es-accessible-%C3%A0-toutes-et-tous) | [Leer en español](https://support.kobotoolbox.org/about_kobotoolbox.html#acerca-de-kobotoolbox-recolecci%C3%B3n-de-datos-accesible-para-todos)
 
 KoboToolbox makes high quality data accessible to social impact organizations worldwide. Designed by data collection practitioners specifically for challenging settings, KoboToolbox is easy to use, adaptable, and resource efficient. 
 
@@ -73,30 +73,3 @@ Para obtener más información sobre cómo las organizaciones alrededor del mund
 Además del [Centro de ayuda](https://support.kobotoolbox.org/), los usuarios pueden visitar el [Foro comunitario](https://community.kobotoolbox.org/) para hacer preguntas y compartir ideas. Para obtener una introducción completa a la recolección de datos con KoboToolbox, los usuarios pueden inscribirse en nuestro [Curso de formación en línea](https://academy.kobotoolbox.org/courses/essentials). También se ofrecen sesiones de formación en línea y presenciales para equipos. 
 
 Obtenga más información sobre [nuestros servicios de formación](https://www.kobotoolbox.org/services/training/).
-
-# معلومات عن منصة (KoboToolbox): جمع البيانات التي يمكن للجميع الوصول إليها
-
-**آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/ff9303b09ff1c7d67f13fd3dc0e223fe16d545c3/source/about_kobotoolbox.md" class="reference">28 Feb 2024</a>
-
-تجعل منصة (KoboToolbox) البيانات عالية الجودة متاحة للمؤسسات ذات التأثير الاجتماعي على مستوى العالم. فمنصة (KoboToolbox) مُصممة من قبل مختصين في جمع البيانات للتعامل مع الظروف الصعبة بشكل خاص، وهي سهلة الاستخدام، قابلة للتعديل، وفعالة في استخدام الموارد. 
-
-![image](images/about_kobotoolbox/2022-kobotoolbox-users.png)
-
-## لماذا تعتبر منصة (KoboToolbox) فريدة من نوعها 
-
-يتم استضافة منصة (KoboToolbox) وصيانتها من قبل المنظمة الدولية غير الربحية [https://www.kobotoolbox.org/about-us/the-organization)[Kobo). ومهمتنا هي تمكين الأفراد والمؤسسات في جميع أنحاء العالم بأدوات جمع البيانات عالية الجودة لإحداث تأثير اجتماعي قائم على البيانات. 
-
-اقرأ المزيد عن [مهمتنا](/https://www.kobotoolbox.org/about-us/our-mission)
-
-## دعم التأثير العالمي
-
-تُعد منصة (KoboToolbox) أكثر أدوات جمع البيانات استخداماً في مجالات العمل الإنساني، التنمية، بناء السلام، حقوق الإنسان، حماية البيئة، وغيرها من المبادرات ذات التأثير الاجتماعي. ولدعم مستخدمينا غير الربحيين، نقدم أدواتنا مجاناً ضمن 
-[الخطة المجتمعية (https://www.kobotoolbox.org/pricing/#free)[(Community Plan). كما نقدم [خدمات متقدمة](https://www.kobotoolbox.org/services/) و [خطط محسّنة](https://www.kobotoolbox.org/pricing/) للمؤسسات الكبيرة التي لديها حجم كبير واحتياجات معقدة لجمع البيانات.
-
-لمعرفة المزيد حول كيفية استخدام المنظمات في جميع أنحاء العالم لمنصة (KoboToolbox) برجاء زيارة [مدونتنا](https://www.kobotoolbox.org/blog/).
-
-## المزيد من المصادر
-
-بالإضافة إلى [مركز المساعدة](https://support.kobotoolbox.org/)، يمكن للمستخدمين زيارة [المنتديات](https://community.kobotoolbox.org/) لطرح الأسئلة ومشاركة الأفكار. للحصول على مقدمة شاملة لجمع البيانات باستخدام منصة (KoboToolbox) ، يمكن للمستخدمين التسجيل في [الدورة التدريبية عبر الإنترنت](https://academy.kobotoolbox.org/courses/essentials). كما تتوفر جلسات تدريبية عبر الإنترنت للفرق وبالحضور الشخصي. 
-
-تعرف على المزيد حول [خدماتنا التدريبية](https://www.kobotoolbox.org/services/training/).
