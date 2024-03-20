@@ -24,6 +24,7 @@ In addition to the [Help Center](https://support.kobotoolbox.org/), users can vi
 Learn more about [our training services](https://www.kobotoolbox.org/services/training/).
 
 # À propos de KoboToolbox : Collecte de données accessible à toutes et tous
+**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/ff9303b09ff1c7d67f13fd3dc0e223fe16d545c3/source/about_kobotoolbox.md" class="reference">28 Feb 2024</a>
 
 KoboToolbox permet aux organisations à impact social du monde entier d’avoir accès aux données de grande qualité. Conçu par des spécialistes de la collecte de données, en particulier pour des environnements difficiles, KoboToolbox est facile à utiliser, adaptable et permet une utilisation efficace des ressources. 
 
@@ -46,3 +47,54 @@ Pour en savoir plus sur la façon dont les organisations du monde entier utilise
 Outre le [Centre d'aide](https://support.kobotoolbox.org/), les utilisateurs peuvent visiter le [Forum communautaire](https://community.kobotoolbox.org/) pour poser des questions et partager des idées. Pour une introduction complète à la collecte de données avec KoboToolbox, les utilisateurs peuvent s'inscrire à notre [formation en ligne](https://academy.kobotoolbox.org/courses/initiation). Des séances de formation en ligne et en présentiel sont également proposées aux équipes.
 
 En savoir plus sur [nos services de formation](https://www.kobotoolbox.org/services/training/).
+
+# Acerca de KoboToolbox: Recolección de datos accesible para todos
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/ff9303b09ff1c7d67f13fd3dc0e223fe16d545c3/source/about_kobotoolbox.md" class="reference">28 Feb 2024</a>
+
+KoboToolbox permite que los datos de alta calidad sean accesibles para organizaciones de impacto social a nivel mundial. Fue diseñado por profesionales de la recolección de datos específicamente para entornos desafiantes; KoboToolbox es fácil de usar, adaptable y eficiente en cuanto a recursos. 
+
+![image](images/about_kobotoolbox/2022-kobotoolbox-users.png)
+
+## Por qué KoboToolbox es único 
+[Kobo](https://www.kobotoolbox.org/about-us/the-organization/), es una organización internacional sin fines de lucro, que aloja y hace mantenimiento a KoboToolbox. Nuestra misión es empoderar a personas y organizaciones alrededor del mundo con herramientas de recolección de datos de alta calidad para crear un impacto social basado en datos. 
+
+Conocer más sobre [nuestra misión](https://www.kobotoolbox.org/about-us/our-mission/).
+
+## Apoyamos el impacto global
+
+KoboToolbox es la herramienta de recolección de datos más utilizada en la acción humanitaria, el desarrollo, la construcción de paz, los derechos humanos, la protección ambiental y otras iniciativas de impacto social. Para apoyar a nuestros usuarios sin fines de lucro, proporcionamos nuestras herramientas de forma gratuita bajo el [Plan comunitario (Community Plan)](https://www.kobotoolbox.org/pricing/#free). También ofrecemos [servicios avanzados](https://www.kobotoolbox.org/services/) y [actualizaciones](https://www.kobotoolbox.org/pricing/) para las grandes organizaciones con necesidades de recolección de datos complejas y de gran volumen.
+
+Para obtener más información sobre cómo las organizaciones alrededor del mundo utilizan KoboToolbox, visite [nuestro blog](https://www.kobotoolbox.org/blog/).
+
+## Más recursos
+
+Además del [Centro de ayuda](https://support.kobotoolbox.org/), los usuarios pueden visitar el [Foro comunitario](https://community.kobotoolbox.org/) para hacer preguntas y compartir ideas. Para obtener una introducción completa a la recolección de datos con KoboToolbox, los usuarios pueden inscribirse en nuestro [Curso de formación en línea](https://academy.kobotoolbox.org/courses/essentials). También se ofrecen sesiones de formación en línea y presenciales para equipos. 
+
+Obtenga más información sobre [nuestros servicios de formación](https://www.kobotoolbox.org/services/training/).
+
+# معلومات عن منصة (KoboToolbox): جمع البيانات التي يمكن للجميع الوصول إليها
+
+**آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/ff9303b09ff1c7d67f13fd3dc0e223fe16d545c3/source/about_kobotoolbox.md" class="reference">28 Feb 2024</a>
+
+تجعل منصة (KoboToolbox) البيانات عالية الجودة متاحة للمؤسسات ذات التأثير الاجتماعي على مستوى العالم. فمنصة (KoboToolbox) مُصممة من قبل مختصين في جمع البيانات للتعامل مع الظروف الصعبة بشكل خاص، وهي سهلة الاستخدام، قابلة للتعديل، وفعالة في استخدام الموارد. 
+
+![image](images/about_kobotoolbox/2022-kobotoolbox-users.png)
+
+## لماذا تعتبر منصة (KoboToolbox) فريدة من نوعها 
+
+يتم استضافة منصة (KoboToolbox) وصيانتها من قبل المنظمة الدولية غير الربحية [https://www.kobotoolbox.org/about-us/the-organization)[Kobo). ومهمتنا هي تمكين الأفراد والمؤسسات في جميع أنحاء العالم بأدوات جمع البيانات عالية الجودة لإحداث تأثير اجتماعي قائم على البيانات. 
+
+اقرأ المزيد عن [مهمتنا](/https://www.kobotoolbox.org/about-us/our-mission)
+
+## دعم التأثير العالمي
+
+تُعد منصة (KoboToolbox) أكثر أدوات جمع البيانات استخداماً في مجالات العمل الإنساني، التنمية، بناء السلام، حقوق الإنسان، حماية البيئة، وغيرها من المبادرات ذات التأثير الاجتماعي. ولدعم مستخدمينا غير الربحيين، نقدم أدواتنا مجاناً ضمن 
+[الخطة المجتمعية (https://www.kobotoolbox.org/pricing/#free)[(Community Plan). كما نقدم [خدمات متقدمة](https://www.kobotoolbox.org/services/) و [خطط محسّنة](https://www.kobotoolbox.org/pricing/) للمؤسسات الكبيرة التي لديها حجم كبير واحتياجات معقدة لجمع البيانات.
+
+لمعرفة المزيد حول كيفية استخدام المنظمات في جميع أنحاء العالم لمنصة (KoboToolbox) برجاء زيارة [مدونتنا](https://www.kobotoolbox.org/blog/).
+
+## المزيد من المصادر
+
+بالإضافة إلى [مركز المساعدة](https://support.kobotoolbox.org/)، يمكن للمستخدمين زيارة [المنتديات](https://community.kobotoolbox.org/) لطرح الأسئلة ومشاركة الأفكار. للحصول على مقدمة شاملة لجمع البيانات باستخدام منصة (KoboToolbox) ، يمكن للمستخدمين التسجيل في [الدورة التدريبية عبر الإنترنت](https://academy.kobotoolbox.org/courses/essentials). كما تتوفر جلسات تدريبية عبر الإنترنت للفرق وبالحضور الشخصي. 
+
+تعرف على المزيد حول [خدماتنا التدريبية](https://www.kobotoolbox.org/services/training/).
