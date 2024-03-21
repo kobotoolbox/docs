@@ -103,7 +103,7 @@ platforms.
 
     ![kobo-monday-data](/images/kobotoolbox_monday_integration/kobo-monday-data.png)
 
-    **Notes:** 
+    ### Important Notes 
     1. Any updates made to a form or individual submission in KoboToolbox
     project which is already sent to monday.com board will not be automatically
     synced at this point. Such changes like removing or renaming a question,
@@ -117,6 +117,7 @@ platforms.
       a. Add a File column to the monday.com board and name it the same as the appropriate File field is named in your KoboToolbox project, it’s crucial to apply the same names to file columns from both monday.com and KoboToolbox sides. 
       b. Install integration recipe if not accomplished yet, otherwise go to Integration Center, open the existing recipe and click ‘Update automation’ button to have the latest functional changes applied.
       c. No other configuration changes needed, now files will be automatically transferred from the KoboToolbox project to the appropriate column on monday.com board based on the column name.
+    4. monday.com has a limit on the number of columns that can be created. The limit is: 200 columns per board for non-enterprise users and 300 columns per board for enterprise users.
 
 
 
