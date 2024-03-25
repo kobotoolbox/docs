@@ -1,5 +1,5 @@
 # KoboToolbox Integration on monday.com
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/57b5c78049999c091ba10e59ec8be1956caedd50/source/kobotoolbox_monday_integration.md" class="reference">13 Mar 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/638b3fe013458389129c9f94b65a0330ce374414/source/kobotoolbox_monday_integration.md" class="reference">25 Mar 2024</a>
 
 <p class="note">
 This article outlines the early release of the integration between KoboToolbox

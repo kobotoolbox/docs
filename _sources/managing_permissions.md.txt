@@ -1,5 +1,5 @@
 # Sharing Your Project and Managing Permissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/57b5c78049999c091ba10e59ec8be1956caedd50/source/managing_permissions.md" class="reference">13 Mar 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/db6ad5917874a7ca1122c24f674a02d1cbaafa87/source/managing_permissions.md" class="reference">25 Mar 2024</a>
 
 KoboToolbox allows you to give different levels of access to different users by
 setting flexible permission levels within each project. While most users may

@@ -1,5 +1,5 @@
 # About KoboToolbox: Accessible data collection for everyone
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0731fccae2d61cba7ca9b4ed473bbde4bc101a0f/source/about_kobotoolbox.md" class="reference">20 Mar 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/db6ad5917874a7ca1122c24f674a02d1cbaafa87/source/about_kobotoolbox.md" class="reference">25 Mar 2024</a>
 
 [Lire en français](#a-propos-de-kobotoolbox-collecte-de-donnees-accessible-a-toutes-et-tous) | [Leer en español](#acerca-de-kobotoolbox-recoleccion-de-datos-accesible-para-todos)
 
@@ -50,7 +50,6 @@ Outre le [Centre d'aide](https://support.kobotoolbox.org/), les utilisateurs peu
 En savoir plus sur [nos services de formation](https://www.kobotoolbox.org/services/training/).
 
 # Acerca de KoboToolbox: Recolección de datos accesible para todos
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/ff9303b09ff1c7d67f13fd3dc0e223fe16d545c3/source/about_kobotoolbox.md" class="reference">28 Feb 2024</a>
 
 KoboToolbox permite que los datos de alta calidad sean accesibles para organizaciones de impacto social a nivel mundial. Fue diseñado por profesionales de la recolección de datos específicamente para entornos desafiantes; KoboToolbox es fácil de usar, adaptable y eficiente en cuanto a recursos. 
 
