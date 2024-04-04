@@ -13,131 +13,132 @@ mission-critical projects. ⚠️
 </p>
 
 
-The KoboToolbox Integration allows users to easily synchronize their project
-data from a KoboToolbox project to a monday.com board. In just a few steps you
-can set up the integration to automatically copy data submissions received in
+The KoboToolbox integration allows users to easily synchronize their project
+data from a KoboToolbox project to a monday.com board. 
+
+In just a few steps you can set up the integration to automatically copy data submissions received in
 KoboToolbox to any of your monday.com boards. This integration significantly
-reduces the manual work involved in copy-pasting project data between the two
-platforms.
+reduces the manual work involved in copying and pasting project data from KoboToolbox to monday.com.
 
 ## Features
 
-- Simplified process of connecting KoboToolbox projects with monday.com boards
+- Simplified process of connecting KoboToolbox projects with monday.com boards.
 - Easy mapping of monday.com fields to KoboToolbox questions using any label
-  language defined in the form
-- Real-time synchronization of newly created submissions to create new items
+  language defined in the form.
+- Real-time synchronization of newly created submissions to create new items.
 
-## Installation & First Use
+## Installation and first time use
 
-### Prerequisites
+### Before installing the integration
 
-1.  Create an account on KoboToolbox if you don't have one yet. Use this
-    [guidance](https://support.kobotoolbox.org/creating_account.html) to set up
-    your free account.
+1.  Create an account on KoboToolbox if you don't already have one. Learn more about
+    [creating an account](creating_account.md).
 2.  Prepare a monday.com board mirroring the structure of your KoboToolbox
     project so that all fields from your KoboToolbox project are represented on
     a monday.com board.
-3.  During the application setup of the integration, there is a need to
-    authenticate access to your account by providing your KoboToolbox API token.
-    To get your API token, use any of the methods described
-    [here](https://support.kobotoolbox.org/api.html?highlight=api%20token).
+3.  During the integration set up, you will need to
+    authenticate access to your account by providing your KoboToolbox API key.
+   Learn how to get your [API Key](api.md).
+
+<p class="note">
+  **Note:** The API Key is a unique identifier used for authentication. In KoboToolbox, it is referred to as your **API Key**. In monday.com, it is referred to as your **API token**.
+</p>
 
 ### Installation
 
-1.  Install the KoboToolbox integration from
+1.  Install the KoboToolbox integration from the
     [monday.com apps marketplace](https://monday.com/marketplace).
 2.  Once installed, go to your previously prepared board to set up the
     integration.
 
+<p class="note">
     **Note 1:** Only one KoboToolbox integration recipe can be established per monday board.
-    **Note 2:** Only the person who installed the recipe can edit it, all other board members can just open it in read-only mode.
+    **Note 2:** Only the person who installed the recipe can edit it, all other board members can only open it in read-only mode.
+</p>
 
-### First-time Use
+### First time Use
 
-1.  Go to the integration menu on the top right.
+1.  Go to the **Integration** menu on the top right.
     ![monday-board-integrate](/images/kobotoolbox_monday_integration/monday-board-integrate.png)
-2.  Find KoboToolbox in the Integrations Center.
+2.  Find **KoboToolbox** in the Integrations Center.
     ![app-marketplace](/images/kobotoolbox_monday_integration/find-integration.png)
-3.  Click on the integration and choose the included recipe.
+3.  Click on the KoboToolbox integration and choose the included recipe.
     ![kobo-integration](/images/kobotoolbox_monday_integration/choose-recipe.png)
-4.  On the next step authorize your KoboToolbox app into monday.com platform by providing the following data
-    1. Select the appropriate server
-    
-    There are two public KoboToolbox servers: the Global Server at kf.kobotoolbox.org and the European Union Server at eu.kobotoolbox.org.
-    2. Provide your API key prepared earlier ![provide-api-key](/images/kobotoolbox_monday_integration/provide-api-key.png)  
-    Note: In order to change the API key after the integration recipe setup, KoboToolbox Integration app should be completely reinstalled or user should delete all integrations installed by this user.
-5. For recipe configuration, set up the following parameters
-    1.  Choose the appropriate KoboToolbox project from the dropdown. Only
-        deployed projects are available for selection
-    2.  Choose the label language from the dropdown. If your form contains more
-        than one language, select the one that should be used to map questions
+4.  Authorize the KoboToolbox app:
+    - Enter the URL of the KoboToolbox server where you created your account. For the Global KoboToolbox Server, use the server URL [https://kf.kobotoolbox.org](https://kf.kobotoolbox.org). For the European Union KoboToolbox Server, use the server URL [https://eu.kobotoolbox.org](https://eu.kobotoolbox.org).
+    - Enter your KoboToolbox API Key in the "Kobo API token" field
+    ![provide-api-key](/images/kobotoolbox_monday_integration/provide-api-key.png)
+
+<p class="note">
+    **Note:** In order to change the API Key after the integration recipe is set up, the KoboToolbox integration app should be completely reinstalled.
+    </p>
+
+5. For recipe configuration, set up the following parameters:
+    - Choose the appropriate KoboToolbox project that you want to connect to your monday.com board from the drop-down menu. Only deployed projects are available for selection.
+    - Choose the label language from the drop-down menu. If your form contains more
+        than one language, select the language that should be used to map questions
         to columns. The selected language will only be displayed to map
         KoboToolbox questions with monday.com columns. The data displayed in the
         monday.com board will always use the underlying XML data structure
         instead of translated Select One or Select Multiple labels.
-    3.  Click "Item" to set up the mapping of questions to columns .
+    - Click **Item** to set up the mapping of questions to columns.
         ![dynamic-linking](/images/kobotoolbox_monday_integration/item-mapping.png)
-6.  Once you are done with the recipe configuration, click the "Add to Board"
+6.  When you have completed the recipe configuration, click the **Add to Board**
     button. ![recipe](/images/kobotoolbox_monday_integration/recipe-config.png)
-7.  Now that you have the integration in place, there is a last step to
-    configure REST Server on the KoboToolbox side. This is required to tell your
-    KoboToolbox project to automatically forward data to monday.com. To do that,
-    execute the following steps:
-    1.  Copy the integration link from the notification message sent to you on
-        successful integration setup. The same link is added to the board
-        description, so you can get it from there as well.\
+7.  After completing the integration set up, you must configure REST Services on KoboToolbox in order to automatically synchronize your project data with the monday.com board. To configure REST Services on KoboToolbox:
+    - Copy the integration link from the integration set up notification or from the
+        description on your monday.com board.\
         ![webhook-url](/images/kobotoolbox_monday_integration/description-link.png)
-    2.  Log into your KoboToolbox account
-    3.  Go to the appropriate project. Then open the Settings tab, choose REST
-        Services, and click on 'Register a new service' button\
+    - Sign in to your KoboToolbox account.
+    - Go to the project you wish to connect. Open the SETTINGS tab, then choose REST
+        Services, and click on the **REGISTER A NEW SERVICE** button.\
         ![create-rest-service](/images/kobotoolbox_monday_integration/create-rest-service.png)
-    4.  Enter "monday.com integration" as the Service Name and paste the
-        previously copied integration link in the "Endpoint URL" field.
-    5.  In the "Custom HTTP Headers" section, insert the value "webhook-auth" in
-        the "Name" field and put your Kobo API token in the "Value" field.\
+    - Enter "monday.com integration" as the service name and enter the integration link in the "Endpoint URL" field.
+    - In the "Custom HTTP Headers" section, insert the value "webhook-auth" in
+        the "Name" field and enter your KoboToolbox API Key in the "Value" field.\
         ![rest-service-modal](/images/kobotoolbox_monday_integration/rest-service-modal.png)
-    6.  Click the 'Create' button.
-8.  That's all! Now each new submission to the KoboToolbox project will be
+    - Click the **SAVE** button.
+8.  You're all set! Each new submission to your KoboToolbox project will
     automatically be added to your monday.com board according to your recipe
     configuration.\
 
     ![kobo-monday-data](/images/kobotoolbox_monday_integration/kobo-monday-data.png)
 
     ### Important Notes 
-    1. Any updates made to a form or individual submission in KoboToolbox
-    project which is already sent to monday.com board will not be automatically
-    synced at this point. Such changes like removing or renaming a question,
-    changing group hierarchy, changing a group to a repeat group, or editing
-    labels in the KoboToolbox form will not affect the items on monday.com
+    1. Any updates made to a form or individual submission in a KoboToolbox
+    project which has already been added to your monday.com board will not be automatically
+    updated on your monday.com board. Changes like removing or renaming a question,
+    changing a group hierarchy, changing a group to a repeat group, or editing
+    labels in the KoboToolbox form will not affect the items on your monday.com
     board.
-    2. Due to monday.com limitations there is no way to map a column with Location type in the dynamic fields mapping. To overcome this limitation the following workflow should be established.
-      a. Create two columns on monday.com board for location data to be populated - one of the Text type and second of the Location type. It’s important to name them identically. 
-      b. Use a location column of the Text type in the dynamic fields mapping.  Second column of the Location type would be automatically populated once the first one is filled out.
-    3. File column is not automatically supported in the dynamic fields mapping. If you wish to transfer files from Kobo to monday.com, the following workflow should be established.
-      a. Add a File column to the monday.com board and name it the same as the appropriate File field is named in your KoboToolbox project, it’s crucial to apply the same names to file columns from both monday.com and KoboToolbox sides. 
-      b. Install integration recipe if not accomplished yet, otherwise go to Integration Center, open the existing recipe and click ‘Update automation’ button to have the latest functional changes applied.
-      c. No other configuration changes needed, now files will be automatically transferred from the KoboToolbox project to the appropriate column on monday.com board based on the column name.
+    2. Location is not automatically supported in the dynamic fields mapping. To transfer a location or coordinates from Kobotoolbox into a monday.com column:
+      - Create two columns on your monday.com board for location data to be populated: one column that is a Text type and a second column that is a Location type. It’s important to name them identically. 
+      - In the dynamic fields mapping, map the KoboToolbox location into the monday.com Text type column.          - The Location type column will not appear in the dynamic mapping.
+      - The KoboToolbox location submission will automatically be populated into the monday.com Location type column. 
+    3. File column is not automatically supported in the dynamic fields mapping. To transfer files from KoboToolbox to monday.com:
+      - Add a File column to the monday.com board and give it the same name as the name used for the File field in your KoboToolbox project. The same file column name must be used in both monday.com and KoboToolbox. 
+      - If you have not installed the integration recipe, complete the installation process. Once you have completed the installation, go to the Integrations Center, open the existing recipe, and click the **Update automation** button to have the latest functional changes applied.
+      - No other configuration changes are needed. Files will now be automatically transferred from the KoboToolbox project to the appropriate column on your monday.com board based on the column name.
     4. In order to ensure high performance in the monday.com boards, monday.com limits the number of columns per board: 200 columns for non-enterprise accounts and 300 columns for enterprise accounts.
 
 
 
 ## FAQ
 
-**What is the REST Service?**
+**What are the REST Services?**
 
-More information about REST Services could be found in the following
-[guidance](rest_services.md).
+More information about REST Services is available in 
+[this support article](rest_services.md).
 
-**What is the dynamic fields mapping?**
+**What is dynamic fields mapping?**
 
 Dynamic fields mapping is a pairing of fields represented on the monday.com
 board with the appropriate questions from the KoboToolbox project.
 
-**What happens if I change my data in the Kobo account?**
+**What happens if I change my data on the Kobo account?**
 
-Any updates made to a form or individual submission in KoboToolbox project which
-is already sent to monday.com board will not be automatically synced at this
-point.
+Any updates made to a form or individual submission in your KoboToolbox project which
+has already been sent to the monday.com board will not be automatically synchronized.
 
 **What happens if I change my data on the monday.com board?**
 
@@ -146,38 +147,40 @@ in the KoboToolbox project.
 
 **What happens if I need to later change the language?**
 
-Language selection affects only the dynamic fields mapping view on integration
-recipe configuration step. Board data will not be translated.
+Language selection affects only the dynamic fields mapping view of the integration
+recipe configuration. Board data will not be translated.
 
-**What happens if I delete the board on Kobo?**
+**What happens if I delete the project on KoboToolbox?**
 
-If a project is deleted in Kobo, the integration would not run until the
+If a project is deleted in KoboToolbox, the integration will no longer function until the
 integration recipe is updated with a new project.
 
-**How do multiple select questions on Kobo transfer to monday?**
+**What are “column types”?**
 
-For multi select questions a column with Dropdown type should be used on
-monday.com board to have all selected options correctly transferred to the
+A “column type” in monday.com is a question type in KoboToolbox.
+
+**What question types from KoboToolbox can be transferred to monday.com?**
+
+All [question types](question_types.md) except External XML are supported by monday.com. If
+you can't find the appropriate column type on monday.com board, use a Text type column. 
+
+To transfer [Point](gps_questions.md) and [Area](gps_questions.md) question types in KoboToolbox to the Location column type on the monday.com board, use the approach described in [Important Note #2](#important-notes). If it's not crucial to have data transferred to the Location column, then a single Text type column can be used with no additions.
+
+**How do Select Many questions in KoboToolbox transfer to monday.com?**
+
+For [Select Many](select_one_and_select_many.md) questions, a Drop-down type column should be used on
+the monday.com board to have all selected options correctly transferred to the
 board.
 
-**How do single select questions on Kobo transfer to monday?**
+**How do Select One questions in KoboToolbox transfer to monday.com?**
 
-For single select questions columns with Dropdown or Text types can be used to
-have the selected option correctly transferred to the board.
-
-**What column types from Kobo shift to what column types from monday?**
-
-All column types except External XML are supported by monday.com. If
-you can't find the appropriate column type on monday.com board, use a column
-with Text type. For the Point and Area Kobo column type, it's better to use the Text
-column on monday.com side despite the fact that there is Location column type for
-this matter.
+For [Select One](select_one_and_select_many.md) questions, use a Status (limited to 40 label options), Drop-down, or Text type column to have the selected option correctly transferred to the board. 
 
 **Can I sync more than one KoboToolbox project with my monday board?**
 
-No; only one KoboToolbox integration recipe can be established per board. 
+No. Only one KoboToolbox integration recipe can be established per board. 
 Having more than one recipe will lead to a server error.
 
-**Why can’t I change an existing recipe created on monday.com by my colleague?**
+**Why can’t I change a recipe created by another monday.com board member?**
 
-Only the person who installed the recipe can edit it, all other board members can just open it in read-only mode.
+Only the board member who created the recipe can edit it. All other board members can only open it in read-only mode.
