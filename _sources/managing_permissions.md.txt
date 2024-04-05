@@ -171,3 +171,21 @@ If the data is also made public, anyone with the link will be able to:
 ![Public project](images/managing_permissions/public_project.gif)
 
 ## Transferring ownership of a project
+
+You can transfer the ownership of a project from your account to a different user account. Both user accounts must be on the same KoboToolbox server to transfer a project.
+
+To transfer a project from your account to another user account:
+
+- Sign in to your account and open the project you wish to transfer
+- Click **Settings** and then go to the **Sharing** tab
+- In the **Transfer project ownership** section, click **Transfer**
+- Enter the username of the account that you wish to transfer the project to
+- Click **Transfer project**
+
+An email will be sent to the user account receiving the project. To accept the transfer, the recipient must click on the link in the email while they are signed in to their KoboToolbox account. 
+
+When they click on the link in the email, a confirmation dialog box will be displayed. The recipient must click **Accept** for the project transfer to be completed.
+
+<p class="note">
+After accepting the transfer, it may take a few minutes to complete. The new project owner may see the project available in their project list right away, but the data table view may take longer to be updated.
+</p>
