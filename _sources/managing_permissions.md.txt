@@ -7,7 +7,7 @@ only need to access and enter or review data for a
 given project, sometimes more complex scenarios require multiple users to have different levels of project access.
 
 For example, you can share a project with some users and only allow them to
-submit data to the project through their account. You can also adjust the settings so
+submit data to the project through their account. You can also adjust the permission settings so
 that other users can only view or edit the submitted data.
 
 This article explains how you can grant permissions for other KoboToolbox users
@@ -68,8 +68,7 @@ When certain permissions are granted, other permissions are also automatically g
 In some scenarios, you may want to restrict enumerators who are collecting data in the field from being able to view the submitted data. 
 
 In this case, instead of configuring KoboCollect with a single account's
-username and password, you can create separate accounts for each enumerator, and
-share the form with limited permissions.
+username and password, you can create separate accounts for each enumerator, and __share the form with limited permissions.
 
 In KoboToolbox:
 
@@ -132,8 +131,8 @@ You can also remove a project through the **Form** tab:
 
 - Open the project
 - Click on the **Form** tab
-- Click on the <i class="k-icon k-icon-more"></i> **More actions** button
-- Click **Remove shared project**
+- Click on the <i class="k-icon k-icon-more"></i> **More Actions** button
+- Click **Remove Shared Project**
 - Click **REMOVE**
 
 ![Remove Sharing](images/managing_permissions/remove_permissions.gif)
@@ -145,7 +144,7 @@ form and/or submissions public:
 
 - Go to the **Sharing** tab in the **SETTINGS** page in your data collection
   project
-- Select the options **Anyone can view this form** or **Anyone can view
+- Select the options **Anyone can view this form** and/or **Anyone can view
   submissions made to this form**
 
 ![Making data public](images/managing_permissions/make_data_public.png)
