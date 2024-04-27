@@ -4,13 +4,13 @@
 <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/row_level_permissions.md" class="reference">15
 Feb 2022</a>
 
-The **row-level** permissions are an extension of the
-[existing permissions](managing_permissions.md) features and allow project
+Row-level permissions are an extension of the
+[existing permissions feature](managing_permissions.md) in KoboToolbox. The feature allows project
 owners to create four different levels of permissions for a shared project. To
 find this functionality, simply go to project **SETTINGS** and click on the
 **Sharing** section. You will see a screen as shown below.
 
-![image](/images/row_level_permissions/Options.png)
+![image](/images/row_level_permissions/row-level-options.png)
 
 As of August 2021, the management of project permissions has been extended to
 allow for a total of four **row-level** access permissions that include:
@@ -22,14 +22,13 @@ allow for a total of four **row-level** access permissions that include:
 | **Delete submissions only from specific users**   | _Delete data_ submitted by a subset of defined data entry users.                                                               |
 | **Validate submissions only from specific users** | <a class="reference" href="record_validation.html"><i>Validate data</i></a> submitted by a subset of defined data entry users. |
 
-<p class="note">Please note that some permissions imply others. For example, if <i>Alice</i> has <strong>Edit submissions only from specific users</strong> only for <i>Bob</i>, then this implies that <i>Alice</i> also has <strong>View submissions only from specific users</strong> for <i>Bob</i>.</p>
+<p class="note">
+    Please note that some permissions imply others. For example, if <i>Alice</i> has <strong>Edit submissions only from specific users</strong> only for <i>Bob</i>, then this implies that <i>Alice</i> also has <strong>View submissions only from specific users</strong> for <i>Bob</i>.
+</p>
 
 ## Configure your Account Settings:
 
-Before configuring project sharing, you will need to open your **ACCOUNT
-SETTINGS** and toggle the checkbox **Require authentication to see forms and
-submitted data**. If this configuration is left unchecked, setting row-level
-permissions will not work as expected.
+By default, users must be authenticated by entering their KoboToolbox username and password before they can submit data to a deployed form. This is important for row-level permissions to work correctly. To confirm that the form authentication requirement is active, open the project and navigate to the **FORM** tab. Under the **Collect data** section, ensure that the “Allow submissions to this form without a username and password” setting is turned off.
 
 ![image](/images/row_level_permissions/Accounts_Settings.png)
 
