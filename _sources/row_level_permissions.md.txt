@@ -92,21 +92,15 @@ from _kalyan2_.
 
 ### Scenario 1:
 
-You may come across this dialogue box _(as shown in the image below)_ when
-submitting data with the **Require authentication to see forms and submitted
-data** option checked in KoboToolbox.
+When submitting data, a dialogue requesting user credentials will appear if the authentication requirement is active and the **“Allow submissions to this form without a username and password”** setting is turned off.
+
+Enter your KoboToolbox username and password and, if the account has **Add submissions** permission, you will be able to submit data to the server.
 
 ![image](/images/row_level_permissions/Login.png)
 
-Enter your KoboToolbox login credentials and, if the account has **Add
-submissions** permission, you will be able to submit data to the server.
-
-<p class="note">Note that it’s advised not to share your admin login credentials when managing your project for data security. You can create multiple enumerator accounts and share those credentials with your team.</p>
+<p class="note">To ensure data security, it is not advised to share your administrator sign in credentials with other users when managing your project. You can create multiple enumerator accounts and share those credentials with your team.</p>
 
 ### Scenario 2:
 
-To set the _view_, _edit_, _delete_ and _validate_ row-level permissions
-correctly on submissions from a subset of users, the **Require authentication to
-see forms and submitted data** option must be checked _before_ data is
-collected. Otherwise only data collected after this option is checked will be
+Before you can set row-level sharing permissions for your project, the setting “Allow submissions to this form without a username and password” must be turned off _before_ data is collected. Otherwise data collected before this setting is turned off will not be
 restricted as expected.
