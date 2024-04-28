@@ -30,7 +30,7 @@ allow for a total of four **row-level** access permissions that include:
 
 By default, users must be authenticated by entering their KoboToolbox username and password before they can submit data to a deployed form. This is important for row-level permissions to work correctly. To confirm that the form authentication requirement is active, open the project and navigate to the **FORM** tab. Under the **Collect data** section, ensure that the “Allow submissions to this form without a username and password” setting is turned off.
 
-![image](/images/row_level_permissions/Accounts_Settings.png)
+Learn more about [requiring passwords for accessing Enketo web forms](https://support.kobotoolbox.org/managing_permissions.html#requiring-passwords-for-accessing-enketo-web-forms).
 
 ## Managing Row Level Permissions:
 
