@@ -32,6 +32,8 @@ By default, users must be authenticated by entering their KoboToolbox username a
 
 Learn more about [requiring passwords for accessing Enketo web forms](https://support.kobotoolbox.org/managing_permissions.html#requiring-passwords-for-accessing-enketo-web-forms).
 
+![image](/images/row_level_permissions/Allow_submissions_without_ username_password.gif)
+
 ## Managing Row Level Permissions:
 
 In this example, three user accounts are presented to demonstrate how the
