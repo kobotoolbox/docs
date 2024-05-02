@@ -181,6 +181,8 @@ To transfer a project from your account to another user account:
 - Enter the username of the account that you wish to transfer the project to
 - Click **Transfer project**
 
+![Transfer ownership](images/managing_permissions/transfer_ownership.gif)
+
 An email will be sent to the user account receiving the project. To accept the transfer, the recipient must click on the link in the email while they are signed in to their KoboToolbox account. 
 
 ![Transfer ownership](images/managing_permissions/action-required-project-ownership-transfer-email.png)
