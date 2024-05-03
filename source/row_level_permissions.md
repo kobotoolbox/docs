@@ -1,5 +1,5 @@
 # Row-Level Permissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b3921bcd074f0b51219b86e772046a2c751805fb/source/row_level_permissions.md" class="reference">29 Apr 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4a1fad39555fe7ad3605100e834bc0cfac85a321/source/row_level_permissions.md" class="reference">3 May 2024</a>
 
 Row-level permissions are an extension of the
 [existing permissions feature](managing_permissions.md) in KoboToolbox. This feature allows project
