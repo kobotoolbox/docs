@@ -196,7 +196,7 @@ owners to assign eight different levels of permissions for a shared project. The
 </section>
 <section id="user-based-row-level-permissions-example">
 <h3>User-based row-level permissions example<a class="headerlink" href="#user-based-row-level-permissions-example" title="Permalink to this heading">¶</a></h3>
-<p>In the example below, the user <strong>kobocourses</strong> is sharing project data with the user <strong>alex</strong>. User-based permissions have been created so user <strong>alex</strong> can only access project data submitted by <strong>alex</strong> and by the user mario. These permissions allow <strong>alex</strong> to view, edit, and validate only the data submitted by <strong>alex</strong> and <strong>mario</strong>.</p>
+<p>In the example below, the user <strong>kobocourses</strong> is sharing project data with the user <strong>alex</strong>. User-based permissions have been created so user <strong>alex</strong> can only access project data submitted by <strong>alex</strong> and by the user <strong>mario</strong>. These permissions allow <strong>alex</strong> to view, edit, and validate only the data submitted by <strong>alex</strong> and <strong>mario</strong>.</p>
 <p><img alt="image" src="_images/user-based-permission-example.png" /></p>
 </section>
 </section>
@@ -244,10 +244,13 @@ owners to assign eight different levels of permissions for a shared project. The
 <li><p>Click <strong>Grant permissions</strong> to save your row-level permissions settings</p></li>
 </ul>
 <p>Once you have saved your permissions, the user you have shared the project with will be able to view, edit, validate, or delete project data submissions that have the required response to the specified question, depending on which permissions you selected.</p>
-<p class="note">
-    For Date questions, the response value must be written in the format `YYYY-MM-DD` (e.g., `1974-12-31`).
-<p>For Select One and Select Many questions, the response value must be written using the unique XML value, not the label (e.g., <code class="docutils literal notranslate"><span class="pre">first_grade</span></code> rather than <code class="docutils literal notranslate"><span class="pre">First</span> <span class="pre">grade</span></code>).</p>
-</p>
+<section id="important-note">
+<h4>Important note:<a class="headerlink" href="#important-note" title="Permalink to this heading">¶</a></h4>
+<ul class="simple">
+<li><p>For <a class="reference internal" href="date_time.html"><span class="std std-doc">Date</span></a> questions, the response value must be written in the format <code class="docutils literal notranslate"><span class="pre">YYYY-MM-DD</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">1974-12-31</span></code>).</p></li>
+<li><p>For <a class="reference internal" href="select_one_and_select_many.html"><span class="std std-doc">Select One</span></a> and <a class="reference internal" href="select_one_and_select_many.html"><span class="std std-doc">Select Many</span></a> questions, the response value must be written using the unique XML value, not the label (e.g., <code class="docutils literal notranslate"><span class="pre">first_grade</span></code> rather than <code class="docutils literal notranslate"><span class="pre">First</span> <span class="pre">grade</span></code>).</p></li>
+</ul>
+</section>
 </section>
 <section id="condition-based-row-level-permissions-example">
 <h3>Condition-based row-level permissions example<a class="headerlink" href="#condition-based-row-level-permissions-example" title="Permalink to this heading">¶</a></h3>
@@ -266,9 +269,8 @@ owners to assign eight different levels of permissions for a shared project. The
 <p><img alt="image" src="_images/user_authentication.png" /></p>
 <p class="note">To ensure data security, it is not advised to share your administrator sign in credentials with other users when managing your project. You can create multiple enumerator accounts and share those credentials with your team.</p>
 <ol class="arabic simple" start="2">
-<li><p>If your user-based permissions are not functioning as expected, confirm that the form authentication requirement is active. To confirm this setting is active, open the project and navigate to the <strong>FORM</strong> tab. Under the <strong>Collect data</strong> section, ensure that the “Allow submissions to this form without a username and password” setting is turned off.</p></li>
+<li><p>If your user-based permissions are not functioning as expected, confirm that the form authentication requirement is active. To confirm this setting is active, open the project and navigate to the <strong>FORM</strong> tab. Under the <strong>Collect data</strong> section, ensure that the “Allow submissions to this form without a username and password” setting is turned off. User-based permissions will not apply to any submissions collected before the “Allow submissions to this form without a username and password” setting was turned off, because these submissions would not be associated with a username.</p></li>
 </ol>
-<p>User-based permissions will not apply to any submissions collected before the “Allow submissions to this form without a username and password” setting was turned off, because these submissions would not be associated with a username.</p>
 <p class="note">By default, project settings now require users to sign in to collect submissions. Learn more about <a class="reference" href="managing_permissions.html#requiring-passwords-for-accessing-enketo-web-forms">requiring passwords for accessing Enketo web forms</a>.</p>
 </section>
 </section>
