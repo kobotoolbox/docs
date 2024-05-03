@@ -69,7 +69,7 @@ Once you have saved your permissions, the user you have shared the project with 
 
 ### User-based row-level permissions example
 
-In the example below, the user **kobocourses** is sharing project data with the user **alex**. User-based permissions have been created so user **alex** can only access project data submitted by **alex** and by the user mario. These permissions allow **alex** to view, edit, and validate only the data submitted by **alex** and **mario**.
+In the example below, the user **kobocourses** is sharing project data with the user **alex**. User-based permissions have been created so user **alex** can only access project data submitted by **alex** and by the user **mario**. These permissions allow **alex** to view, edit, and validate only the data submitted by **alex** and **mario**.
 
 ![image](/images/row_level_permissions/user-based-permission-example.png)
 
@@ -105,12 +105,9 @@ This can be useful for managing access to data in shared projects. A condition-b
 
 Once you have saved your permissions, the user you have shared the project with will be able to view, edit, validate, or delete project data submissions that have the required response to the specified question, depending on which permissions you selected.
 
-<p class="note">
-    For Date questions, the response value must be written in the format `YYYY-MM-DD` (e.g., `1974-12-31`).
-
-    
-For Select One and Select Many questions, the response value must be written using the unique XML value, not the label (e.g., `first_grade` rather than `First grade`).
-</p>
+#### Important note:
+- For [Date](date_time.md) questions, the response value must be written in the format `YYYY-MM-DD` (e.g., `1974-12-31`).    
+- For [Select One](select_one_and_select_many.md) and [Select Many](select_one_and_select_many.md) questions, the response value must be written using the unique XML value, not the label (e.g., `first_grade` rather than `First grade`).
 
 ### Condition-based row-level permissions example
 
@@ -132,8 +129,6 @@ Enter your KoboToolbox username and password. You will be able to submit data to
 
 <p class="note">To ensure data security, it is not advised to share your administrator sign in credentials with other users when managing your project. You can create multiple enumerator accounts and share those credentials with your team.</p>
 
-2. If your user-based permissions are not functioning as expected, confirm that the form authentication requirement is active. To confirm this setting is active, open the project and navigate to the **FORM** tab. Under the **Collect data** section, ensure that the “Allow submissions to this form without a username and password” setting is turned off.
-
-User-based permissions will not apply to any submissions collected before the “Allow submissions to this form without a username and password” setting was turned off, because these submissions would not be associated with a username.
+2. If your user-based permissions are not functioning as expected, confirm that the form authentication requirement is active. To confirm this setting is active, open the project and navigate to the **FORM** tab. Under the **Collect data** section, ensure that the “Allow submissions to this form without a username and password” setting is turned off. User-based permissions will not apply to any submissions collected before the “Allow submissions to this form without a username and password” setting was turned off, because these submissions would not be associated with a username.
 
 <p class="note">By default, project settings now require users to sign in to collect submissions. Learn more about <a class="reference" href="managing_permissions.html#requiring-passwords-for-accessing-enketo-web-forms">requiring passwords for accessing Enketo web forms</a>.</p>
