@@ -136,4 +136,4 @@ Enter your KoboToolbox username and password. You will be able to submit data to
 
 User-based permissions will not apply to any submissions collected before the “Allow submissions to this form without a username and password” setting was turned off, because these submissions would not be associated with a username.
 
-<p class="note">By default, project settings now require users to sign in to collect submissions. Learn more about [requiring passwords for accessing Enketo web forms](https://support.kobotoolbox.org/managing_permissions.html#requiring-passwords-for-accessing-enketo-web-forms).</p>
+<p class="note">By default, project settings now require users to sign in to collect submissions. Learn more about <a class="reference" href="managing_permissions.html#requiring-passwords-for-accessing-enketo-web-forms">requiring passwords for accessing Enketo web forms</a>.</p>
