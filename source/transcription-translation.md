@@ -68,5 +68,5 @@ Northern Nigeria is listed as Bura-Pabir, but is also known to some people as
 Bourrah, Babir, and other names.
 
 <p class="note">
-  ASR and MT are not yet available to all users. We are currently looking for beta testers of this new feature who will get access to these automatic transcription and translation features. If you’d like to join our beta testing program, please <a class="reference" href="https://www.kobotoolbox.org/contact/?hs_ticket_category=asr_mt_access">send us a message with your username and server</a>, and what you'd like to use these features for. We are very much interested in feedback about these new features so thanks in advance for testing them!
+  The ASR and MT features are not yet available to all users. We are currently seeking beta testers for these features. If you’d like to join the beta testing program, please <a class="reference" href="https://www.kobotoolbox.org/contact/?hs_ticket_category=asr_mt_access">send us a message</a> with your username, the name of the server your account is on, and a brief description of the project you would like to use these features for. We are very interested in hearing user feedback about these new features, so thanks in advance for testing them!
 </p>
