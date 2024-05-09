@@ -1,0 +1,43 @@
+# Glossary of Names
+
+- **Login Screen** - The part of the application where User can log in, register an account or reset password.
+- **User** - A registered account.
+- **Project Dashboard** - The part of the application where User can manage their Projects, Surveys and Project's Submissions.
+- **Projects List** - The part of the Project Dashboard where User can manage the Projects they own and the Projects they have access to.
+- **New Button** - The big blue button that initializes Form creation. It allows Users to start building from scratch, use a template or to upload or import the XLSForm file.
+- **Project Summary** - (AKA **Project Landing Page**) The part of Project Dashboard where User can view and manage a particular single project.
+- **Project** - Consists of a Form (of type Survey), Project Data and configured Permissions. Project can have one of three Project Statuses: Draft, Deployed or Archived.
+- **Draft Project** - Project not ready for data collection.
+- **Deployed Project** - Project ready for data collection.
+- **Archived Project** - Project with data collection closed.
+- **Current Version** - The deployed Form version.
+- **Permission** - Rules that gives some or full access to a part of the project. There are general permissions and Partial Permissions.
+- **Partial Permission** - A Permission that gives access only to data submitted by some particular Users.
+- **Project Settings** - The part of the application where User can manage given Project's Permissions, REST Services and Form Settings.
+- **REST Services** - An advanced configuration option of a Project, where User can create and customize an additional endpoint for Submissions to be passed to.
+- **Project Data** - All collected Submissions (and their media files) to a given Project.
+- **Data Table** - The big table that displays Submissions from given Project. It allows filtering, ordering, validating and processing Submissions in various ways.
+- **Submission** - A unique instance of responses to questions from a Project Form. Also contain some metadata and (if applicable) all media files uploaded by User for Question responses.
+- **Enketo** - A third party application that is being used to collect data for given Form and to edit existing Submissions. Enketo is an XForms client.
+- **XForm** - An XML format used for collecting inputs from web forms. Not accessible to Users, part of the behind the scenes functionalities. Used mainly be Enketo.
+- **XLSForm** - XLSForm is a form standard created to help simplify the authoring of forms in Excel. XLSForms are simple to get started with but allow for the authoring of complex forms. These are accessible to Users (as outcome of export/import feature) and Power Users, who build their Forms in a spreadsheet application instead of Form Builder.
+- **Question Library** - The part of Project Dashboard where User can manage and create Library Items. It divides into My Library and Public Collections.
+- **My Library** - The part of the Question Library where User can view and manage their own Library Items or the ones they have access - subscribed Public Collections and Library Items shared by other Users.
+- **Public Collection** - A special type of collection that is visible to other Users and one that can be subscribed to. by subscribing to a Public Collection you will be able to import Library Items from that Collection into your Form in the Form Builder.
+- **Formbuilder** - The part of the application where Users can create or edit Forms.
+- **Form** - (sometimes called **Asset** behind the scenes) The things that constitute what a person would interact with when they are submitting a response. User can create it in Form Builder. It consists of Questions, Choices, Groups, Skip Logic, Validation Criteria, Form Settings and Form Translations. It can be one of multiple Form Types: Survey, Question Block, Template, Collection.
+- **Form Type** - One of: Survey, Question Block, Template, Collection.
+- **Survey** - A Form containing all necessary requirements for it to be used in Project to collect data.
+- **Question Block** - A reusable small Group of Questions or a single Question that can be imported into other Question Block, Template or Survey.
+- **Template** - A reusable Form that can be turned into a Survey.
+- **Collection** - A special Form type that can include Question Blocks or Templates. Cannot be opened in Form Builder or contain Questions.
+- **Form Settings** - Some optional Form properties describing in more detail who created the Form and for what purposes.
+- **Library Item** - A Form of type Question Block, Template or Collection.
+- **Question** - A basic buliding block of a Form. There are many different Question types, each with different ways to obtain data from a User when they submit a response.
+- **Group** - Can contain other Groups or Questions.
+- **Skip Logic** - An optional set of rules for a Question that dynamically handles Question visibility when User is filling out the Form.
+- **Validation Criteria** - An optional set of rules for a Question that validate the response when User is filling out the Form.
+- **Choices** - A list of predefined answers that some Question types are using.
+- **Form Translations** - Part of a Form. Consists of a list of available Form languages, a default language and a list of translated values of Form Questions properties.
+- **API** - The documented functionality of the application that can be accessed programatically, thus enabling advanced Users to have some custom functionality. Consists of multiple endpoints, each serving a small granular functionality.
+- **Endpoint** - Small part of the API encapsulating a separated small functionality of the application.
