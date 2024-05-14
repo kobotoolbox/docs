@@ -11,7 +11,7 @@ submit data to the project through their account. You can also adjust the permis
 that other users can only view or edit the submitted data.
 
 This article explains how you can grant permissions for other KoboToolbox users
-to collaborate on your projects.
+to collaborate on your projects. Learn more about [sharing your project with other users for data collection](data_through_webforms.md).
 
 ## Requiring passwords for accessing Enketo web forms
 
