@@ -45,13 +45,13 @@ Pour en savoir plus sur la façon dont les organisations du monde entier utilise
 
 ### Plus de ressources
 
-Outre le [Centre d'aide](https://support.kobotoolbox.org/), les utilisateurs peuvent visiter le [Forum communautaire](https://community.kobotoolbox.org/) pour poser des questions et partager des idées. Pour une introduction complète à la collecte de données avec KoboToolbox, les utilisateurs peuvent s'inscrire à notre [formation en ligne](https://academy.kobotoolbox.org/courses/initiation). Des séances de formation en ligne et en présentiel sont également proposées aux équipes.
+Outre le [centre d'aide](https://support.kobotoolbox.org/), les utilisateurs peuvent visiter le [forum communautaire](https://community.kobotoolbox.org/) pour poser des questions et partager des idées. Pour une introduction complète à la collecte de données avec KoboToolbox, les utilisateurs peuvent s'inscrire à notre [formation en ligne](https://academy.kobotoolbox.org/courses/initiation). Des séances de formation en ligne et en présentiel sont également proposées aux équipes.
 
 En savoir plus sur [nos services de formation](https://www.kobotoolbox.org/services/training/).
 
-### Acerca de KoboToolbox: Recolección de datos accesible para todos
+### Acerca de KoboToolbox: Recolección de datos accesible para todas las personas
 
-KoboToolbox permite que los datos de alta calidad sean accesibles para organizaciones de impacto social a nivel mundial. Fue diseñado por profesionales de la recolección de datos específicamente para entornos desafiantes; KoboToolbox es fácil de usar, adaptable y eficiente en cuanto a recursos. 
+KoboToolbox permite que los datos de alta calidad sean accesibles para organizaciones de impacto social a nivel mundial. Fue diseñado por personas profesionales de la recolección de datos específicamente para entornos desafiantes; KoboToolbox es fácil de usar, adaptable y eficiente en cuanto a recursos. 
 
 ![image](images/about_kobotoolbox/2022-kobotoolbox-users.png)
 
@@ -68,6 +68,6 @@ Para obtener más información sobre cómo las organizaciones alrededor del mund
 
 ### Más recursos
 
-Además del [Centro de ayuda](https://support.kobotoolbox.org/), los usuarios pueden visitar el [Foro comunitario](https://community.kobotoolbox.org/) para hacer preguntas y compartir ideas. Para obtener una introducción completa a la recolección de datos con KoboToolbox, los usuarios pueden inscribirse en nuestro [Curso de formación en línea](https://academy.kobotoolbox.org/courses/essentials). También se ofrecen sesiones de formación en línea y presenciales para equipos. 
+Además del [Centro de ayuda](https://support.kobotoolbox.org/), las personas usuarias pueden visitar el [Foro comunitario](https://community.kobotoolbox.org/) para hacer preguntas y compartir ideas. Para obtener una introducción completa a la recolección de datos con KoboToolbox, las personas usuarias pueden inscribirse en nuestro [Curso de formación en línea](https://academy.kobotoolbox.org/courses/essentials). También se ofrecen sesiones de formación en línea y presenciales para equipos. 
 
 Obtenga más información sobre [nuestros servicios de formación](https://www.kobotoolbox.org/services/training/).
