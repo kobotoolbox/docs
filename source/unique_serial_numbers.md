@@ -22,7 +22,7 @@ question type</a> in either the formbuilder or **XLSForm** and use the formula
 below.
 
 ```
-concat(substr(today(), 0, 4), substr(today(), 7, 5), substr(today(), 10, 8), substr(now(), 13, 11), substr(now(), 16, 14), substr(now(), 19, 17))
+concat(substr(today(), 0, 4), substr(today(), 5, 7), substr(today(), 8, 10), substr(now(), 11, 13), substr(now(), 14, 16), substr(now(), 17, 19))
 ```
 
 <p class="note">
