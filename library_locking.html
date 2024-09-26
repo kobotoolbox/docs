@@ -577,7 +577,7 @@ profile will have a <code class="docutils literal notranslate"><span class="pre"
 </section>
 <section id="locking-profiles-and-asset-types">
 <h2>Locking profiles and asset types<a class="headerlink" href="#locking-profiles-and-asset-types" title="Permalink to this heading">¶</a></h2>
-<p>Of the four asset types (<code class="docutils literal notranslate"><span class="pre">asset</span></code>, <code class="docutils literal notranslate"><span class="pre">template</span></code>, <code class="docutils literal notranslate"><span class="pre">question</span></code> and <code class="docutils literal notranslate"><span class="pre">block</span></code>), only
+<p>Of the four asset types (<code class="docutils literal notranslate"><span class="pre">survey</span></code>, <code class="docutils literal notranslate"><span class="pre">template</span></code>, <code class="docutils literal notranslate"><span class="pre">question</span></code> and <code class="docutils literal notranslate"><span class="pre">block</span></code>), only
 <code class="docutils literal notranslate"><span class="pre">template</span></code>s and <code class="docutils literal notranslate"><span class="pre">survey</span></code>s handle library locking features and the locks are
 enforced <em>only</em> on surveys. Practically, this means the following:</p>
 <p>Assume an XLSForm containing valid locking features is imported:</p>
@@ -607,77 +607,78 @@ inherit all the locks that the <code class="docutils literal notranslate"><span 
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="text-left head"><p>Original Asset Type</p></th>
-<th class="text-left head"><p>Process</p></th>
-<th class="text-left head"><p>Resulting Asset’s Status</p></th>
+<th class="text-left head"><p>Process/action</p></th>
+<th class="text-left head"><p>Resulting <code class="docutils literal notranslate"><span class="pre">asset</span></code>’s Status</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p>-</p></td>
+<td class="text-left"><p>import XLSForm file of locked <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
 <td class="text-left"><p>locked</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code> to <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>create <code class="docutils literal notranslate"><span class="pre">template</span></code> from locked <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
 <td class="text-left"><p>locked</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code> to <code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>create <code class="docutils literal notranslate"><span class="pre">question</span></code> from locked <code class="docutils literal notranslate"><span class="pre">survey</span></code>※</p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code> to <code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>create <code class="docutils literal notranslate"><span class="pre">block</span></code> from locked <code class="docutils literal notranslate"><span class="pre">survey</span></code>※</p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p>-</p></td>
+<td class="text-left"><p>import XLSForm file of locked <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
 <td class="text-left"><p>locked</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code> to <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>create <code class="docutils literal notranslate"><span class="pre">survey</span></code> from locked <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
 <td class="text-left"><p>locked</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code> to <code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>create <code class="docutils literal notranslate"><span class="pre">question</span></code> from locked <code class="docutils literal notranslate"><span class="pre">template</span></code>※</p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code> to <code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>create <code class="docutils literal notranslate"><span class="pre">block</span></code> from locked <code class="docutils literal notranslate"><span class="pre">template</span></code>※</p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
-<td class="text-left"><p>-</p></td>
+<td class="text-left"><p>import XLSForm file of locked <code class="docutils literal notranslate"><span class="pre">block</span></code>※</p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
-<td class="text-left"><p>import to <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>add locked <code class="docutils literal notranslate"><span class="pre">block</span></code> from Library into <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
-<td class="text-left"><p>import to <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>add locked <code class="docutils literal notranslate"><span class="pre">block</span></code> from Library into <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
-<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code> to <code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>create <code class="docutils literal notranslate"><span class="pre">question</span></code> from locked <code class="docutils literal notranslate"><span class="pre">block</span></code>※</p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
-<td class="text-left"><p>-</p></td>
+<td class="text-left"><p>import XLSForm file of locked <code class="docutils literal notranslate"><span class="pre">block</span></code>※</p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
-<td class="text-left"><p>import to <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>add locked <code class="docutils literal notranslate"><span class="pre">question</span></code> from Library into <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
-<td class="text-left"><p>import to <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>add locked <code class="docutils literal notranslate"><span class="pre">question</span></code> from Library into <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
-<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code> to <code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>create <code class="docutils literal notranslate"><span class="pre">block</span></code> from locked <code class="docutils literal notranslate"><span class="pre">question</span></code>※</p></td>
 <td class="text-left"><p>not locked</p></td>
 </tr>
 </tbody>
 </table>
+<p>※ These actions are not possible in the UI.</p>
 </section>
 <section id="terminology">
 <h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this heading">¶</a></h2>
