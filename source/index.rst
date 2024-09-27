@@ -60,6 +60,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   add_logo
   cascading_select
   group_repeat
+  repeat_group_as_matrix
   restrict_responses
   p_codes
   unique_serial_numbers
