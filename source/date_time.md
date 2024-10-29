@@ -32,7 +32,7 @@ Adding “Date”, “Time”, and “Date and Time” questions is simple:
 ### Setting up in XLSForm
 
 To add "Date", "Time", and "Date and Time" questions in the XLSForm, use the
-`date`, `time` and `dateTime` question types as shown in the example below:
+`date`, `time` and `datetime` question types as shown in the example below:
 
 In XLSForm, you can set up the following:
 
@@ -40,7 +40,7 @@ In XLSForm, you can set up the following:
 | :------- | :-------- | :-------------------------------------------- |
 | date     | dob       | On what date were you born?                   |
 | time     | time      | At what time do you you leave for work?       |
-| dateTime | date_time | At what date and time did the training start? |
+| datetime | date_time | At what date and time did the training start? |
 | survey   |
 
 ## Appearance of date and time question types in web forms and KoboCollect

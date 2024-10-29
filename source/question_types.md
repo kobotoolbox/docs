@@ -21,7 +21,7 @@ available to use in your XLSForm and formbuilder:
 | geoshape                         | <i class="k-icon k-icon-qt-area"></i>         | Record a polygon of multiple GPS coordinates; the last point is the same as the first point. |
 | date                             | <i class="k-icon k-icon-qt-date"></i>         | Date input.                                                                                  |
 | time                             | <i class="k-icon k-icon-qt-time"></i>         | Time input.                                                                                  |
-| dateTime                         | <i class="k-icon k-icon-qt-date-time"></i>    | Accepts a date and a time input.                                                             |
+| datetime                         | <i class="k-icon k-icon-qt-date-time"></i>    | Accepts a date and a time input.                                                             |
 | image                            | <i class="k-icon k-icon-qt-photo"></i>        | Take a picture or upload an image file.                                                      |
 | audio                            | <i class="k-icon k-icon-qt-audio"></i>        | Take an audio recording or upload an audio file.                                             |
 | background-audio                 | <i class="k-icon k-icon-background-rec"></i>  | Audio is recorded in the background while filling the form.                                  |
