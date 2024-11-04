@@ -1,5 +1,5 @@
 # Installing KoboToolbox on Your Own Servers
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobo_your_servers.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/kobo_your_servers.md" class="reference">3 Oct 2024</a>
 
 **Warning:** _Installing KoboToolbox on your own server requires advanced server
 administration and programming skills. Please understand that you shouldn't use
@@ -13,8 +13,9 @@ KoboToolbox is free and open source, and our code can be found on
 
 We have created a simplified process using Docker called kobo-install, which can
 be found [here](https://github.com/kobotoolbox/kobo-install). This is currently
-only supported on Linux machines (we recommend Ubuntu Server 18.04.3 LTS or
-similar with at least 4GB RAM and at least 20GB storage). We recommend
+only supported on Linux machines. We recommend Ubuntu Server LTS or
+similar with at least 4GB RAM and at least 20GB storage. More resources are 
+strongly recommended if the server is used for high volume data collection. We recommend
 installing the software first on a local machine using the same script since
 server installations require additional configurations for domain names and SSL
 certificates.
