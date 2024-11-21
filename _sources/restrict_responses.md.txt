@@ -147,8 +147,8 @@ for your use-case. Using regex for constraining email addresses does not
 guarantee that they are valid, only that they follow an expected pattern.</p>
 
 | **Regex**                                                                                                          | **Description**                                                          |
-| :----------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| `regex(., '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*(\.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)*\.[a-zA-Z]{2,}$')` | Restrict input to valid email address (e.g., `example.domain.com` or `example.domain.com.np).` |
+| :----------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
+| `regex(., '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*(\.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)*\.[a-zA-Z]{2,}$')` | Restrict input to valid email address (e.g., `example.domain.com` or `example.domain.com.np)`. |
 
 ## Examples related to use of time inputs
 
