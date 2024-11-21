@@ -462,8 +462,8 @@ guarantee that they are valid, only that they follow an expected pattern.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Za-z0-9._%+-]+&#64;[A-Za-z0-9-]+[.][A-Za-z.]{2,}$')</span></code> or <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([\W\d\D]+[&#64;][\D]+[.][\D]{2,})+$')</span></code></p></td>
-<td class="text-left"><p>Restrict an input with a valid email address e.g. <code class="docutils literal notranslate"><span class="pre">example.domain.com</span></code> or <code class="docutils literal notranslate"><span class="pre">example.domain.com.np</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[a-zA-Z0-9._%+-]+&#64;[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*(\.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)*\.[a-zA-Z]{2,}$')</span></code></p></td>
+<td class="text-left"><p>Restrict input to valid email address (e.g., <code class="docutils literal notranslate"><span class="pre">example.domain.com</span></code> or <code class="docutils literal notranslate"><span class="pre">example.domain.com.np).</span></code></p></td>
 </tr>
 </tbody>
 </table>
