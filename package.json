@@ -21,7 +21,7 @@
     "postcss": "^8.2.13",
     "postcss-cli": "^7.1.0",
     "sass": "^1.43.2",
-    "simple-git": "^3.5.0"
+    "simple-git": "^3.16.0"
   },
   "browserslist": [
     "last 4 version"
