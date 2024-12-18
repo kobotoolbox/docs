@@ -2,14 +2,15 @@
 
 **Last updated:**
 <a href="https://github.com/kobotoolbox/docs/blob/495951b94c328bc1ae7d6e429c30aac371acec18/source/getting_started_xlsform.md" class="reference">19
-Feb 2022</a>
+Dec 2024</a>
 
-This article will show you how to:
+When creating survey forms for KoboToolbox, you can build your form with the KoboToolbox Formbuilder or in XLSForm. XLSForm is very effective for creating both basic and advanced forms in a user-friendly format.
 
--   Set up an XLSForm using Microsoft Excel.
--   Upload and preview the XLSForm in KoboToolbox.
--   Download a form you have been creating using the KoboToolbox formbuilder as
-    an XLSForm.
+This article explains how to:
+
+-   Set up an XLSForm using Microsoft Excel
+-   Upload and preview an XLSForm in KoboToolbox
+-   Download a form created with the KoboToolbox Formbuilder as an XLSForm
 
 <video controls>
   <source
@@ -20,35 +21,23 @@ This article will show you how to:
 
 <br/>
 
-When building forms for KoboToolbox, there are two main methods you can use. One
-is by using the KoboToolbox formbuilder, and the other is using XLSForm.
-
-XLSForm is a standard for creating forms in Microsoft Excel and makes it
-possible to create basic and advanced forms in a user-friendly format.
-
 <p class="note">
-  There are a number of XLSForm features that are not yet supported by the
-  formbuilder and therefore a knowledge of XLSForm can be important for more
-  complex forms.
+  **Note:** Some XLSForm features are not currently available in the Formbuilder, but they can be used for form building in XLSForm and then uploaded to KoboToolbox. This can be especially useful for complex forms.
 </p>
 
 ## What is XLSForm
 
-An XLSForm is simply an Excel file structured in a standardized format that can
-be uploaded to KoboToolbox to generate a data collection form.
+XLSForm is a standard for developing forms using Microsoft Excel and other spreadsheet software. XLSForms can then be uploaded to KoboToolbox to generate a data collection form.
 
-Not only does using XLSForm offer enhanced functionalities, but it can also make
-collaborating on form building easier in some case. For example, members of your
-team can work on building the form in Google Sheets, allowing for real time
-collaboration.
+There are many advantages to using XLSForm, especially for building complex forms with more advanced functionalities, including relevance conditions, calculations, and constraints. XLSForm also enables you to collaborate on form building using the same Excel file or in real time using Google Sheets.
 
-## How to set up XLSForm
+## Setting up an XLSForm
 
-To get started with XLSForm, do the following:
+To set up the basic structure of an XLSForm:
 
-1. Create a workbook (either in Microsoft Excel or Google Sheets).
-2. Create three worksheets: **survey**, **choices**, and **settings**
-   respectively (sheet names must all be in lowercase).
+1. Create a workbook in Microsoft Excel or Google Sheets.
+2. Create three worksheets: **survey**, **choices**, and **settings**.
+   - Worksheet names must be all lowercase letters.
 3. In the **survey** worksheet, create three columns with headings: `type`,
    `name`, and `label`.
 4. In the **choices** worksheet, create three columns with headings:
