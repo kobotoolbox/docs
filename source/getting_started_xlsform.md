@@ -22,7 +22,7 @@ This article explains how to:
 <br/>
 
 <p class="note">
-  **Note:** Some XLSForm features are not currently available in the Formbuilder, but they can be used for form building in XLSForm and then uploaded to KoboToolbox. This can be especially useful for complex forms.
+  Note: Some XLSForm features are not currently available in the Formbuilder, but they can be used for form building in XLSForm and then uploaded to KoboToolbox. This can be especially useful for complex forms.
 </p>
 
 ## What is XLSForm
@@ -99,6 +99,7 @@ There are many optional settings that can be added to the settings worksheet in 
 
 Common form settings include:
 
+| Form setting     | Description                            |
 | :--------------- | :------------------------------------- |
 | form_title       | Title displayed at the top of the form |
 | default_language | Default form language                  |
