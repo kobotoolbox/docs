@@ -58,7 +58,7 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 | text | yourname | What is your name? |
 4. For the second question, **What is your baby’s sex?**, enter **select_one sex** in the `type` column of the survey worksheet.
    - **select_one** is the question type that allows users to select only one choice from a list of response choices.
-   - **sex** is the name of the list of response choices, which is defined in the choices worksheet (see [Adding response choices](https://support.kobotoolbox.org/getting_started_xlsform.html#adding-choices) below).
+   - **sex** is the name of the list of response choices, which is defined in the choices worksheet (see [Adding response choices](https://support.kobotoolbox.org/getting_started_xlsform.html#adding-choices)).
 5. In the `name` column, type **baby_sex**.
 6. In the `label` column, type **What is your baby’s sex?**
 
@@ -72,7 +72,7 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 | integer | age  | How old are you? |
 
 <p class="note">
-  Note: To learn more about question types in XLSForm, see [Question types]((https://xlsform.org/en/#question-types) (XLSForm.org).
+  Note: To learn more about question types in XLSForm, see [Question types](https://xlsform.org/en/#question-types) (XLSForm.org).
 </p>
 
 ## Adding response choices
