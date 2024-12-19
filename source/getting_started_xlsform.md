@@ -72,7 +72,7 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 | integer | age  | How old are you? |
 
 <p class="note">
-  **Note:** To learn more about question types in XLSForm, see [Question types (XLSForm.org)](https://xlsform.org/en/#question-types).
+  Note: To learn more about question types in XLSForm, see [Question types]((https://xlsform.org/en/#question-types) (XLSForm.org).
 </p>
 
 ## Adding response choices
@@ -113,7 +113,7 @@ For example, to add a form title:
    - If you do not define a form title in your XLSForm, by default the Excel file name will be used as the project name in KoboToolbox. This can be edited in KoboToolbox.
 
 <p class="note">
-  **Note:** To learn more about the settings worksheet in XLSForm, see [Settings worksheet (XLSForm.org)](https://xlsform.org/en/#settings-worksheet).
+  Note: To learn more about the settings worksheet in XLSForm, see [Settings worksheet](https://xlsform.org/en/#settings-worksheet) (XLSForm.org).
 </p>
 
 ## Adding optional columns to the survey worksheet
