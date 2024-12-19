@@ -52,6 +52,7 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 1. In the `type` column of the survey worksheet, type **text**. This is the question type for the first question, **What is your name?**.
 2. In the `name` column, type **yourname**. This will be the unique name used to identify the first question. Each question must have a unique name and cannot contain spaces or symbols (except the underscore).
 3. In the `label` column, type **What is your name?**. This label will be displayed as the question text on the form during data collection.
+
 | type | name     | label              |
 | :--- | :------- | :----------------- |
 | text | yourname | What is your name? |
@@ -60,10 +61,12 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
    - **sex** is the name of the list of response choices, which is defined in the choices worksheet (see [Adding response choices](https://support.kobotoolbox.org/getting_started_xlsform.html#adding-choices) below).
 5. In the `name` column, type **baby_sex**.
 6. In the `label` column, type **What is your baby’s sex?**
+
 | type           | name     | label                    |
 | :------------- | :------- | :----------------------- |
 | select_one sex | baby_sex | What is your baby’s sex? |
 7. For the question **How old are you?**, follow the same process using **integer** as the question type in the `type` column.
+
 | type    | name | label            |
 | :------ | :--- | :--------------- |
 | integer | age  | How old are you? |
@@ -84,6 +87,7 @@ For select type questions (**select_one** and **select_multiple**), response cho
 3. In the label column, enter the choice label **Male**.
    - The choice label is displayed on the form during data collection.
 4. To add the second choice option for the **baby_sex** question, enter **sex** in the `list_name` column. Enter **female** as the choice name and **Female** as the choice label.
+   
 | list_name | name   | label  |
 | :-------- | :----- | :----- |
 | sex       | male   | Male   |
