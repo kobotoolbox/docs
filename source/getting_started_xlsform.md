@@ -52,57 +52,82 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 1. In the `type` column of the survey worksheet, type **text**. This is the question type for the first question, **What is your name?**.
 2. In the `name` column, type **yourname**. This will be the unique name used to identify the first question. Each question must have a unique name and cannot contain spaces or symbols (except the underscore).
 3. In the `label` column, type **What is your name?**. This label will be displayed as the question text on the form during data collection.
-
-For our second question:
-
-1. Still in the **survey** sheet, type `select_one gender` in the `type` column
-   below the previous question (make sure to put a space between the 2 words).
-   `select_one` is the question type that allows us to specify a list of choices
-   where a user will only be allowed to pick one choice. (If a user can select
-   several choices, this would be specified by the `select_multiple` question
-   type.) "sex" is the name of the list of choices which we have to define in
-   the **choices** sheet.
-2. Type the `name` and `label` of the question as "sex" and "Sex" respectively.
-
-Add the final question as follows:
-
+| type | name     | label              |
+| :--- | :------- | :----------------- |
+| text | yourname | What is your name? |
+4. For the second question, **What is your baby’s sex?**, enter **select_one sex** in the `type` column of the survey worksheet.
+   - **select_one** is the question type that allows users to select only one choice from a list of response choices.
+   - **sex** is the name of the list of response choices, which is defined in the choices worksheet (see [Adding response choices](https://support.kobotoolbox.org/getting_started_xlsform.html#adding-choices) below).
+5. In the `name` column, type **baby_sex**.
+6. In the `label` column, type **What is your baby’s sex?**
+| type           | name     | label                    |
+| :------------- | :------- | :----------------------- |
+| select_one sex | baby_sex | What is your baby’s sex? |
+7. For the question **How old are you?**, follow the same process using **integer** as the question type in the `type` column.
 | type    | name | label            |
 | :------ | :--- | :--------------- |
 | integer | age  | How old are you? |
 
-## Adding choices
+<p class="note">
+  **Note:** To learn more about question types in XLSForm, see [Question types (XLSForm.org)](https://xlsform.org/en/#question-types).
+</p>
 
-Regardless of the type of multiple choice question (`select_one` or
-`select_multiple`), the next step will be to define the list of choices in the
-**choices** sheet. Each list of choices must have the same `list_name`.
+## Adding response choices
 
-Since we defined one question that has a list of choices ("sex") in the previous
-step, we need to add this list in the **choices** sheet as follows:
+For select type questions (**select_one** and **select_multiple**), response choice options are added in the **choices** worksheet. The step-by-step process below explains how to add the choices for the example question: **What is your baby’s sex?**.
 
-1. Switch to the **choices** sheet so that you can add your list of choices for
-   the "Sex" question.
-2. In the cell below `list_name`, type "sex". This is the list name we defined
-   for the "Sex" question in the **survey** sheet. In the cell below `name`,
-   type "male". This is the value that will be stored when the user chooses the
-   option "Male". Under `label`, type "Male". This is what will be shown for
-   this option in the survey.
-3. For the second choice, type "sex" as `list_name`, "female” as the `name`, and
-   "Female" as the `label`.
+1. In the `list_name` column in the choices worksheet, enter the list_name **sex**.
+   - This is the list_name previously defined for the **baby_sex** question in the survey worksheet.
+   - The list_name is the unique identifier for the list of response choice options.
+2. In the name column, add the choice name **male**.
+   - The choice name is the unique identifier for each choice option.
+3. In the label column, enter the choice label **Male**.
+   - The choice label is displayed on the form during data collection.
+4. To add the second choice option for the **baby_sex** question, enter **sex** in the `list_name` column. Enter **female** as the choice name and **Female** as the choice label.
+| list_name | name   | label  |
+| :-------- | :----- | :----- |
+| sex       | male   | Male   |
+| sex       | female | Female |
 
 ## Adding settings
 
-It is not mandatory to include the **settings** sheet in the XLSForm - any form
-will work just fine without it. However, at minimum, you can define the
-`form_title`.
+There are many optional settings that can be added to the settings worksheet in XLSForm.
+
+Common form settings include:
+
+| :--------------- | :------------------------------------- |
+| form_title       | Title displayed at the top of the form |
+| default_language | Default form language                  |
+| style            | Themes for Enketo web forms            |
+| version          | Form version ID                        |
+
+For example, to add a form title:
+
+1. Add a column in the **settings** worksheet named `form_title`.
+2. Enter the form title in the `form_title` column.
+   - If you do not define a form title in your XLSForm, by default the Excel file name will be used as the project name in KoboToolbox. This can be edited in KoboToolbox.
 
 <p class="note">
-  Without the <code>form_title</code> in the <strong>settings</strong> sheet,
-  KoboToolbox will, by default, use the file name as the name of the project
-  when you import the XLSForm.
+  **Note:** To learn more about the settings worksheet in XLSForm, see [Settings worksheet (XLSForm.org)](https://xlsform.org/en/#settings-worksheet).
 </p>
 
-Below the `form_title` column, type "Practice form" as the title of the form we
-are creating in this article.
+## Adding optional columns to the survey worksheet
+
+To further customize your XLSForm, you can add optional columns that include form logic, question options, and advanced settings.
+
+| **Column name**    | **Description**                                |
+| :----------------- | :--------------------------------------------- |
+| hint               | Question hint                                  |
+| guidance_hint      | Guidance hint                                  |
+| required           | Option to make a question mandatory            |
+| relevant           | Skip logic conditions for the question         |
+| constraint         | Validation criteria for the question           |
+| constraint_message | Error message when validation criteria not met |
+| appearance         | Options for how questions are displayed        |
+| choice_filter      | Criteria for cascading select                  |
+| parameters         | Settings for specific question types           |
+| calculation        | Mathematical expression for calculate question |
+| default            | Default response for a question                |
 
 ## Uploading and previewing the XLSForm in KoboToolbox
 
