@@ -38,28 +38,20 @@ To set up the basic structure of an XLSForm:
 1. Create a workbook in Microsoft Excel or Google Sheets.
 2. Create three worksheets: **survey**, **choices**, and **settings**.
    - Worksheet names must be all lowercase letters.
-3. In the **survey** worksheet, create three columns with headings: `type`,
+3. In the **survey** worksheet, create three columns with the headings: `type`,
    `name`, and `label`.
-4. In the **choices** worksheet, create three columns with headings:
-   `list_name`, `name`, `label`.
-5. In the **settings** worksheet, create a column named `form_title` (the
-   **settings** sheet is optional)
+4. In the **choices** worksheet, create three columns with the headings:
+   `list_name`, `name`, and `label`.
+5. The **settings** worksheet is optional. It can be used to include additional form specifications and customizations.
+   - For example: `form_title`, `style`, and `default_language`.
 
 ## Adding questions
 
-Questions in XLSForm go in the **survey** sheet. We will practice adding a few
-questions: _What is your name_, _Sex_ and _How old are you?_
+In XLSForm, questions are added in the **survey** worksheet. The step-by-step process below explains how to add the following example questions: **What is your name?**, **What is your baby’s sex?**, and **How old are you?**.
 
-1. In the **survey** sheet, under the `type` column, type "text". This is the
-   question type for our first question. To learn more about question types in
-   XLSForm, [read this article](https://xlsform.org/en/#question-types).
-2. Under the `name` column, type "yourname". This will be the variable name of
-   our first question. The variable name uniquely identifies each question in
-   the form. It’s also the name of the question in the database when we start
-   collecting data. Each question must have a unique name and cannot contain
-   spaces or symbols (except the underscore).
-3. Under the `label` column, type "What is your name". This label will be shown
-   as the question text on the form when we collect data.
+1. In the `type` column of the survey worksheet, type **text**. This is the question type for the first question, **What is your name?**.
+2. In the `name` column, type **yourname**. This will be the unique name used to identify the first question. Each question must have a unique name and cannot contain spaces or symbols (except the underscore).
+3. In the `label` column, type **What is your name?**. This label will be displayed as the question text on the form during data collection.
 
 For our second question:
 
