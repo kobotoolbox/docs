@@ -95,7 +95,7 @@ For select type questions (**select_one** and **select_multiple**), response cho
 
 ## Adding settings
 
-There are many optional settings that can be added to the settings worksheet in XLSForm.
+There are many optional settings that can be added to the **settings** worksheet in XLSForm.
 
 Common form settings include:
 
