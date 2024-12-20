@@ -108,7 +108,7 @@ Common form settings include:
 
 For example, to add a form title:
 
-1. Add a column in the **settings** worksheet named `form_title`.
+1. Add a column in the settings worksheet named `form_title`.
 2. Enter the form title in the `form_title` column.
    - If you do not define a form title in your XLSForm, by default the Excel file name will be used as the project name in KoboToolbox. This can be edited in KoboToolbox.
 
@@ -157,7 +157,7 @@ Forms created using the KoboToolbox Formbuilder can be easily downloaded as an X
 3. Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
 4. Click <i class="k-icon k-icon-xls-file"></i> **Download XLS**.
 
-Downloading your KoboToolbox form as an XLSForm file can be very useful for many reasons including:
+Downloading your KoboToolbox form as an XLSForm file can be very useful for many reasons, including:
 
 -   Adding advanced features to your form that are not currently supported in the Formbuilder.
 -   Making changes to the form that are more efficient to do in XLSForm (e.g., duplicating a large number of questions or adding translations).
