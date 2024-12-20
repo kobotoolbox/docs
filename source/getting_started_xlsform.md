@@ -22,7 +22,7 @@ This article explains how to:
 <br/>
 
 <p class="note">
-  Note: Some XLSForm features are not currently available in the Formbuilder, but they can be used for form building in XLSForm and then uploaded to KoboToolbox. This can be especially useful for complex forms.
+  <b>Note:</b> Some XLSForm features are not currently available in the Formbuilder, but they can be used for form building in XLSForm and then uploaded to KoboToolbox. This can be especially useful for complex forms.
 </p>
 
 ## What is XLSForm
@@ -72,7 +72,7 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 | integer | age  | How old are you? |
 
 <p class="note">
-  Note: To learn more about question types in XLSForm, see [Question types (XLSForm.org)](https://xlsform.org/en/#question-types).
+  <b>Note:</b> To learn more about question types in XLSForm, see [Question types (XLSForm.org)](https://xlsform.org/en/#question-types).
 </p>
 
 ## Adding response choices
@@ -113,7 +113,7 @@ For example, to add a form title:
    - If you do not define a form title in your XLSForm, by default the Excel file name will be used as the project name in KoboToolbox. This can be edited in KoboToolbox.
 
 <p class="note">
-  Note: To learn more about the settings worksheet in XLSForm, see [Settings worksheet (XLSForm.org)](https://xlsform.org/en/#settings-worksheet).
+  <b>Note:</b> To learn more about the settings worksheet in XLSForm, see [Settings worksheet (XLSForm.org)](https://xlsform.org/en/#settings-worksheet).
 </p>
 
 ## Adding optional columns to the survey worksheet
@@ -136,58 +136,48 @@ To further customize your XLSForm, you can add optional columns that include for
 
 ## Uploading and previewing the XLSForm in KoboToolbox
 
-Once you have finished creating the XLSForm you must upload it to KoboToolbox in
-order to preview it.
+To upload and preview your XLSForm in KoboToolbox:
 
-1. While you are on the Project List view (the first screen after you have just
-   logged in to KoboToolbox), click **NEW**.
-2. Click **Upload an XLSForm** (if you were creating the form using Google
-   Sheets, you can either download the file as an Excel file, or
-   [follow the instructions in the linked article](xls_url.md) to import it via
-   a URL).
-3. Choose the Excel file you just created and wait until it uploads.
-4. Confirm the project details and click **CREATE PROJECT**.
-5. You can then click the <i class="k-icon k-icon-view"></i> _Preview form_
-   button to preview your form.
+1. Go to the **Project List** view in KoboToolbox and click **NEW**.
+2. Select **Upload an XLSForm** and upload your **Excel** file.
+   - If you created your XLSForm in **Google Sheets**, you will need to download the file before uploading it to KoboToolbox. In the Google Sheets menu, click File > Download > Microsoft Excel.
+3. Enter the project details and click **CREATE PROJECT**.
+4. Click the <i class="k-icon k-icon-view"></i> **Preview** button.
+
+<p class="note">
+  <b>Note:</b> To learn how to import your XLSForm via URL, see the support article [Importing a XLSForm via URL](https://support.kobotoolbox.org/xls_url.html).
+</p>
 
 ## Downloading an XLSForm from KoboToolbox
 
-KoboToolbox allows you to download a form you have been creating using the
-formbuilder as an XLSForm file. This might be useful for several reasons such
-as:
+Forms created using the KoboToolbox Formbuilder can be easily downloaded as an XLSForm file.
 
--   You need to add some advanced features that are not yet supported in the
-    formbuilder.
--   You would like to make changes to the form that might be easier through
-    XLSForm (such as quickly duplicating a large number of questions).
--   Your computer resources such as your browser or internet connection.
--   You would like to collaborate on the form with members of your team and you
-    prefer sharing the XLSForm.
--   Manage versioning of your form outside of the KoboToolbox platform.
--   You are needing assistance from the support team and need to share your form
-    with us.
+1. Go to the **Project List** view in KoboToolbox.
+2. Hover your mouse over the name of the project you wish to download.
+3. Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
+4. Click <i class="k-icon k-icon-xls-file"></i> **Download XLS**.
 
-To download the XLSForm while you are on the Project List view:
+Downloading your KoboToolbox form as an XLSForm file can be very useful for many reasons including:
 
-1. Hover your mouse over the name of the project.
-2. Click the <i class="k-icon k-icon-more"></i> _More actions_ icon.
-3. Click <i class="k-icon k-icon-xls-file"></i> _Download XLS_.
-4. Save the file.
+-   Adding advanced features to your form that are not currently supported in the Formbuilder.
+-   Making changes to the form that are more efficient to do in XLSForm (e.g., duplicating a large number of questions or adding translations).
+-   Avoiding slow computer or internet speeds that can affect form building in the Formbuilder (e.g., limited RAM, poor internet connectivity).
+-   Sharing the form as an Excel file for collaboration with team members and managing form versions.
+-   Sharing the form to request assistance from the KoboToolbox support team or in the Community Forum.
 
 ## Replacing a form with an XLSForm file
 
-You can replace an existing form with a new version using an XLSForm (for
-example, after having edited the form in Excel). To do this while you are on the
-Project List view:
+You can replace an existing form in the Formbuilder with a new version using an XLSForm. For example, after editing the form in Excel, you must upload the updated file to KoboToolbox.
 
-1. Hover your mouse over the name of the project.
-2. Click the <i class="k-icon k-icon-more"></i> _More actions_ icon.
-3. Click <i class="k-icon k-icon-replace"></i> _Replace form_.
-4. Choose the file.
+1. Go to the **Project List** view in KoboToolbox.
+2. Hover your mouse over the name of the project you wish to replace with a new file.
+3. Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
+4. Click <i class="k-icon k-icon-replace"></i> **Replace form**.
+5. Choose the file you wish to upload.
 
 ## More XLSForm learning resources
 
-Go to the following links to learn more about XLSForm:
+For more information about using XLSForm, see the following resources:
 
 -   [Official XLSForm documentation at XLSForm.org](https://xlsform.org)
--   [Detailed form building documentation from ODK](https://docs.getodk.org/)
+-   [Form building documentation from ODK](https://docs.getodk.org/)
