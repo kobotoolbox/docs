@@ -47,11 +47,11 @@ To set up the basic structure of an XLSForm:
 
 ## Adding questions
 
-In XLSForm, questions are added in the **survey** worksheet. The step-by-step process below explains how to add the following example questions: **What is your name?**, **What is your baby’s sex?**, and **How old are you?**.
+In XLSForm, questions are added in the **survey** worksheet. The step-by-step process below explains how to add the following example questions: **What is your name?**, **What is your baby’s sex?**, and **How old are you?**
 
-1. In the `type` column of the survey worksheet, type **text**. This is the question type for the first question, **What is your name?**.
+1. In the `type` column of the survey worksheet, type **text**. This is the question type for the first question, **What is your name?**
 2. In the `name` column, type **yourname**. This will be the unique name used to identify the first question. Each question must have a unique name and cannot contain spaces or symbols (except the underscore).
-3. In the `label` column, type **What is your name?**. This label will be displayed as the question text on the form during data collection.
+3. In the `label` column, type **What is your name?** This label will be displayed as the question text on the form during data collection.
 
 | type | name     | label              |
 | :--- | :------- | :----------------- |
@@ -77,7 +77,7 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 
 ## Adding response choices
 
-For select type questions (**select_one** and **select_multiple**), response choice options are added in the **choices** worksheet. The step-by-step process below explains how to add the choices for the example question: **What is your baby’s sex?**.
+For select type questions (**select_one** and **select_multiple**), response choice options are added in the **choices** worksheet. The step-by-step process below explains how to add the choices for the example question: **What is your baby’s sex?**
 
 1. In the `list_name` column in the choices worksheet, enter the list_name **sex**.
    - This is the list_name previously defined for the **baby_sex** question in the survey worksheet.
