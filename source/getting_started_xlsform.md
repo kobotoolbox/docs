@@ -51,7 +51,7 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 
 1. In the `type` column of the survey worksheet, type **text**. This is the question type for the first question, **What is your name?**
 2. In the `name` column, type **yourname**. This will be the unique name used to identify the first question. Each question must have a unique name and cannot contain spaces or symbols (except the underscore).
-3. In the `label` column, type **What is your name?** This label will be displayed as the question text on the form during data collection.
+3. In the `label` column, type **What is your name?**. This label will be displayed as the question text on the form during data collection.
 
 | type | name     | label              |
 | :--- | :------- | :----------------- |
