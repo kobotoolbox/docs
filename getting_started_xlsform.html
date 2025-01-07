@@ -108,13 +108,13 @@
 <h1>Getting started with XLSForm<a class="headerlink" href="#getting-started-with-xlsform" title="Permalink to this heading">¶</a></h1>
 <p><strong>Last updated:</strong>
 <a href="https://github.com/kobotoolbox/docs/blob/495951b94c328bc1ae7d6e429c30aac371acec18/source/getting_started_xlsform.md" class="reference">19
-Feb 2022</a></p>
-<p>This article will show you how to:</p>
+Dec 2024</a></p>
+<p>When creating survey forms for KoboToolbox, you can build your form with the KoboToolbox Formbuilder or in XLSForm. XLSForm is very effective for creating both basic and advanced forms in a user-friendly format.</p>
+<p>This article explains how to:</p>
 <ul class="simple">
-<li><p>Set up an XLSForm using Microsoft Excel.</p></li>
-<li><p>Upload and preview the XLSForm in KoboToolbox.</p></li>
-<li><p>Download a form you have been creating using the KoboToolbox formbuilder as
-an XLSForm.</p></li>
+<li><p>Set up an XLSForm using Microsoft Excel</p></li>
+<li><p>Upload and preview an XLSForm in KoboToolbox</p></li>
+<li><p>Download a form created with the KoboToolbox Formbuilder as an XLSForm</p></li>
 </ul>
 <video controls>
   <source
@@ -123,67 +123,84 @@ an XLSForm.</p></li>
   />
 </video>
 <br/>
-<p>When building forms for KoboToolbox, there are two main methods you can use. One
-is by using the KoboToolbox formbuilder, and the other is using XLSForm.</p>
-<p>XLSForm is a standard for creating forms in Microsoft Excel and makes it
-possible to create basic and advanced forms in a user-friendly format.</p>
 <p class="note">
-  There are a number of XLSForm features that are not yet supported by the
-  formbuilder and therefore a knowledge of XLSForm can be important for more
-  complex forms.
+  <b>Note:</b> Some XLSForm features are not currently available in the Formbuilder, but they can be used for form building in XLSForm and then uploaded to KoboToolbox. This can be especially useful for complex forms.
 </p>
 <section id="what-is-xlsform">
 <h2>What is XLSForm<a class="headerlink" href="#what-is-xlsform" title="Permalink to this heading">¶</a></h2>
-<p>An XLSForm is simply an Excel file structured in a standardized format that can
-be uploaded to KoboToolbox to generate a data collection form.</p>
-<p>Not only does using XLSForm offer enhanced functionalities, but it can also make
-collaborating on form building easier in some case. For example, members of your
-team can work on building the form in Google Sheets, allowing for real time
-collaboration.</p>
+<p>XLSForm is a standard for developing forms using Microsoft Excel and other spreadsheet software. XLSForms can then be uploaded to KoboToolbox to generate a data collection form.</p>
+<p>There are many advantages to using XLSForm, especially for building complex forms with more advanced functionalities, including relevance conditions, calculations, and constraints. XLSForm also enables you to collaborate on form building using the same Excel file or in real time using Google Sheets.</p>
 </section>
-<section id="how-to-set-up-xlsform">
-<h2>How to set up XLSForm<a class="headerlink" href="#how-to-set-up-xlsform" title="Permalink to this heading">¶</a></h2>
-<p>To get started with XLSForm, do the following:</p>
+<section id="setting-up-an-xlsform">
+<h2>Setting up an XLSForm<a class="headerlink" href="#setting-up-an-xlsform" title="Permalink to this heading">¶</a></h2>
+<p>To set up the basic structure of an XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Create a workbook (either in Microsoft Excel or Google Sheets).</p></li>
-<li><p>Create three worksheets: <strong>survey</strong>, <strong>choices</strong>, and <strong>settings</strong>
-respectively (sheet names must all be in lowercase).</p></li>
-<li><p>In the <strong>survey</strong> worksheet, create three columns with headings: <code class="docutils literal notranslate"><span class="pre">type</span></code>,
+<li><p>Create a workbook in Microsoft Excel or Google Sheets.</p></li>
+<li><p>Create three worksheets: <strong>survey</strong>, <strong>choices</strong>, and <strong>settings</strong>.</p>
+<ul class="simple">
+<li><p>Worksheet names must be all lowercase letters.</p></li>
+</ul>
+</li>
+<li><p>In the <strong>survey</strong> worksheet, create three columns with the headings: <code class="docutils literal notranslate"><span class="pre">type</span></code>,
 <code class="docutils literal notranslate"><span class="pre">name</span></code>, and <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p></li>
-<li><p>In the <strong>choices</strong> worksheet, create three columns with headings:
-<code class="docutils literal notranslate"><span class="pre">list_name</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p></li>
-<li><p>In the <strong>settings</strong> worksheet, create a column named <code class="docutils literal notranslate"><span class="pre">form_title</span></code> (the
-<strong>settings</strong> sheet is optional)</p></li>
+<li><p>In the <strong>choices</strong> worksheet, create three columns with the headings:
+<code class="docutils literal notranslate"><span class="pre">list_name</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, and <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p></li>
+<li><p>The <strong>settings</strong> worksheet is optional. It can be used to include additional form specifications and customizations.</p>
+<ul class="simple">
+<li><p>For example: <code class="docutils literal notranslate"><span class="pre">form_title</span></code>, <code class="docutils literal notranslate"><span class="pre">style</span></code>, and <code class="docutils literal notranslate"><span class="pre">default_language</span></code>.</p></li>
+</ul>
+</li>
 </ol>
 </section>
 <section id="adding-questions">
 <h2>Adding questions<a class="headerlink" href="#adding-questions" title="Permalink to this heading">¶</a></h2>
-<p>Questions in XLSForm go in the <strong>survey</strong> sheet. We will practice adding a few
-questions: <em>What is your name</em>, <em>Sex</em> and <em>How old are you?</em></p>
+<p>In XLSForm, questions are added in the <strong>survey</strong> worksheet. The step-by-step process below explains how to add the following example questions: <strong>What is your name?</strong>, <strong>What is your baby’s sex?</strong>, and <strong>How old are you?</strong></p>
 <ol class="arabic simple">
-<li><p>In the <strong>survey</strong> sheet, under the <code class="docutils literal notranslate"><span class="pre">type</span></code> column, type “text”. This is the
-question type for our first question. To learn more about question types in
-XLSForm, <a class="reference external" href="https://xlsform.org/en/#question-types">read this article</a>.</p></li>
-<li><p>Under the <code class="docutils literal notranslate"><span class="pre">name</span></code> column, type “yourname”. This will be the variable name of
-our first question. The variable name uniquely identifies each question in
-the form. It’s also the name of the question in the database when we start
-collecting data. Each question must have a unique name and cannot contain
-spaces or symbols (except the underscore).</p></li>
-<li><p>Under the <code class="docutils literal notranslate"><span class="pre">label</span></code> column, type “What is your name”. This label will be shown
-as the question text on the form when we collect data.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the survey worksheet, type <strong>text</strong>. This is the question type for the first question, <strong>What is your name?</strong></p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column, type <strong>yourname</strong>. This will be the unique name used to identify the first question. Each question must have a unique name and cannot contain spaces or symbols (except the underscore).</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">label</span></code> column, type <strong>What is your name?</strong>. This label will be displayed as the question text on the form during data collection.</p></li>
 </ol>
-<p>For our second question:</p>
-<ol class="arabic simple">
-<li><p>Still in the <strong>survey</strong> sheet, type <code class="docutils literal notranslate"><span class="pre">select_one</span> <span class="pre">gender</span></code> in the <code class="docutils literal notranslate"><span class="pre">type</span></code> column
-below the previous question (make sure to put a space between the 2 words).
-<code class="docutils literal notranslate"><span class="pre">select_one</span></code> is the question type that allows us to specify a list of choices
-where a user will only be allowed to pick one choice. (If a user can select
-several choices, this would be specified by the <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> question
-type.) “sex” is the name of the list of choices which we have to define in
-the <strong>choices</strong> sheet.</p></li>
-<li><p>Type the <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">label</span></code> of the question as “sex” and “Sex” respectively.</p></li>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>yourname</p></td>
+<td class="text-left"><p>What is your name?</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="4">
+<li><p>For the second question, <strong>What is your baby’s sex?</strong>, enter <strong>select_one sex</strong> in the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the survey worksheet.</p>
+<ul class="simple">
+<li><p><strong>select_one</strong> is the question type that allows users to select only one choice from a list of response choices.</p></li>
+<li><p><strong>sex</strong> is the name of the list of response choices, which is defined in the choices worksheet (see <a class="reference external" href="https://support.kobotoolbox.org/getting_started_xlsform.html#adding-choices">Adding response choices</a>).</p></li>
+</ul>
+</li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column, type <strong>baby_sex</strong>.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">label</span></code> column, type <strong>What is your baby’s sex?</strong></p></li>
 </ol>
-<p>Add the final question as follows:</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>select_one sex</p></td>
+<td class="text-left"><p>baby_sex</p></td>
+<td class="text-left"><p>What is your baby’s sex?</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="7">
+<li><p>For the question <strong>How old are you?</strong>, follow the same process using <strong>integer</strong> as the question type in the <code class="docutils literal notranslate"><span class="pre">type</span></code> column.</p></li>
+</ol>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="text-left head"><p>type</p></th>
@@ -198,99 +215,187 @@ the <strong>choices</strong> sheet.</p></li>
 </tr>
 </tbody>
 </table>
+<p class="note">
+  <b>Note:</b> To learn more about question types in XLSForm, see <a class="reference external" href="https://xlsform.org/en/#question-types">Question types (XLSForm.org)</a>.
+</p>
 </section>
-<section id="adding-choices">
-<h2>Adding choices<a class="headerlink" href="#adding-choices" title="Permalink to this heading">¶</a></h2>
-<p>Regardless of the type of multiple choice question (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> or
-<code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>), the next step will be to define the list of choices in the
-<strong>choices</strong> sheet. Each list of choices must have the same <code class="docutils literal notranslate"><span class="pre">list_name</span></code>.</p>
-<p>Since we defined one question that has a list of choices (“sex”) in the previous
-step, we need to add this list in the <strong>choices</strong> sheet as follows:</p>
+<section id="adding-response-choices">
+<h2>Adding response choices<a class="headerlink" href="#adding-response-choices" title="Permalink to this heading">¶</a></h2>
+<p>For select type questions (<strong>select_one</strong> and <strong>select_multiple</strong>), response choice options are added in the <strong>choices</strong> worksheet. The step-by-step process below explains how to add the choices for the example question: <strong>What is your baby’s sex?</strong></p>
 <ol class="arabic simple">
-<li><p>Switch to the <strong>choices</strong> sheet so that you can add your list of choices for
-the “Sex” question.</p></li>
-<li><p>In the cell below <code class="docutils literal notranslate"><span class="pre">list_name</span></code>, type “sex”. This is the list name we defined
-for the “Sex” question in the <strong>survey</strong> sheet. In the cell below <code class="docutils literal notranslate"><span class="pre">name</span></code>,
-type “male”. This is the value that will be stored when the user chooses the
-option “Male”. Under <code class="docutils literal notranslate"><span class="pre">label</span></code>, type “Male”. This is what will be shown for
-this option in the survey.</p></li>
-<li><p>For the second choice, type “sex” as <code class="docutils literal notranslate"><span class="pre">list_name</span></code>, “female” as the <code class="docutils literal notranslate"><span class="pre">name</span></code>, and
-“Female” as the <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">list_name</span></code> column in the choices worksheet, enter the list_name <strong>sex</strong>.</p>
+<ul class="simple">
+<li><p>This is the list_name previously defined for the <strong>baby_sex</strong> question in the survey worksheet.</p></li>
+<li><p>The list_name is the unique identifier for the list of response choice options.</p></li>
+</ul>
+</li>
+<li><p>In the name column, add the choice name <strong>male</strong>.</p>
+<ul class="simple">
+<li><p>The choice name is the unique identifier for each choice option.</p></li>
+</ul>
+</li>
+<li><p>In the label column, enter the choice label <strong>Male</strong>.</p>
+<ul class="simple">
+<li><p>The choice label is displayed on the form during data collection.</p></li>
+</ul>
+</li>
+<li><p>To add the second choice option for the <strong>baby_sex</strong> question, enter <strong>sex</strong> in the <code class="docutils literal notranslate"><span class="pre">list_name</span></code> column. Enter <strong>female</strong> as the choice name and <strong>Female</strong> as the choice label.</p></li>
 </ol>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>sex</p></td>
+<td class="text-left"><p>male</p></td>
+<td class="text-left"><p>Male</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>sex</p></td>
+<td class="text-left"><p>female</p></td>
+<td class="text-left"><p>Female</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="adding-settings">
 <h2>Adding settings<a class="headerlink" href="#adding-settings" title="Permalink to this heading">¶</a></h2>
-<p>It is not mandatory to include the <strong>settings</strong> sheet in the XLSForm - any form
-will work just fine without it. However, at minimum, you can define the
-<code class="docutils literal notranslate"><span class="pre">form_title</span></code>.</p>
+<p>There are many optional settings that can be added to the <strong>settings</strong> worksheet in XLSForm.</p>
+<p>Common form settings include:</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>Form setting</p></th>
+<th class="text-left head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>form_title</p></td>
+<td class="text-left"><p>Title displayed at the top of the form</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>default_language</p></td>
+<td class="text-left"><p>Default form language</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>style</p></td>
+<td class="text-left"><p>Themes for Enketo web forms</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>version</p></td>
+<td class="text-left"><p>Form version ID</p></td>
+</tr>
+</tbody>
+</table>
+<p>For example, to add a form title:</p>
+<ol class="arabic simple">
+<li><p>Add a column in the settings worksheet named <code class="docutils literal notranslate"><span class="pre">form_title</span></code>.</p></li>
+<li><p>Enter the form title in the <code class="docutils literal notranslate"><span class="pre">form_title</span></code> column.</p>
+<ul class="simple">
+<li><p>If you do not define a form title in your XLSForm, by default the Excel file name will be used as the project name in KoboToolbox. This can be edited in KoboToolbox.</p></li>
+</ul>
+</li>
+</ol>
 <p class="note">
-  Without the <code>form_title</code> in the <strong>settings</strong> sheet,
-  KoboToolbox will, by default, use the file name as the name of the project
-  when you import the XLSForm.
+  <b>Note:</b> To learn more about the settings worksheet in XLSForm, see <a class="reference external" href="https://xlsform.org/en/#settings-worksheet">Settings worksheet (XLSForm.org)</a>.
 </p>
-<p>Below the <code class="docutils literal notranslate"><span class="pre">form_title</span></code> column, type “Practice form” as the title of the form we
-are creating in this article.</p>
+</section>
+<section id="adding-optional-columns-to-the-survey-worksheet">
+<h2>Adding optional columns to the survey worksheet<a class="headerlink" href="#adding-optional-columns-to-the-survey-worksheet" title="Permalink to this heading">¶</a></h2>
+<p>To further customize your XLSForm, you can add optional columns that include form logic, question options, and advanced settings.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p><strong>Column name</strong></p></th>
+<th class="text-left head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>hint</p></td>
+<td class="text-left"><p>Question hint</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>guidance_hint</p></td>
+<td class="text-left"><p>Guidance hint</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>required</p></td>
+<td class="text-left"><p>Option to make a question mandatory</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>relevant</p></td>
+<td class="text-left"><p>Skip logic conditions for the question</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>constraint</p></td>
+<td class="text-left"><p>Validation criteria for the question</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>constraint_message</p></td>
+<td class="text-left"><p>Error message when validation criteria not met</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>appearance</p></td>
+<td class="text-left"><p>Options for how questions are displayed</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>choice_filter</p></td>
+<td class="text-left"><p>Criteria for cascading select</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>parameters</p></td>
+<td class="text-left"><p>Settings for specific question types</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>calculation</p></td>
+<td class="text-left"><p>Mathematical expression for calculate question</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>default</p></td>
+<td class="text-left"><p>Default response for a question</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="uploading-and-previewing-the-xlsform-in-kobotoolbox">
 <h2>Uploading and previewing the XLSForm in KoboToolbox<a class="headerlink" href="#uploading-and-previewing-the-xlsform-in-kobotoolbox" title="Permalink to this heading">¶</a></h2>
-<p>Once you have finished creating the XLSForm you must upload it to KoboToolbox in
-order to preview it.</p>
+<p>To upload and preview your XLSForm in KoboToolbox:</p>
 <ol class="arabic simple">
-<li><p>While you are on the Project List view (the first screen after you have just
-logged in to KoboToolbox), click <strong>NEW</strong>.</p></li>
-<li><p>Click <strong>Upload an XLSForm</strong> (if you were creating the form using Google
-Sheets, you can either download the file as an Excel file, or
-<a class="reference internal" href="xls_url.html"><span class="std std-doc">follow the instructions in the linked article</span></a> to import it via
-a URL).</p></li>
-<li><p>Choose the Excel file you just created and wait until it uploads.</p></li>
-<li><p>Confirm the project details and click <strong>CREATE PROJECT</strong>.</p></li>
-<li><p>You can then click the <i class="k-icon k-icon-view"></i> <em>Preview form</em>
-button to preview your form.</p></li>
+<li><p>Go to the <strong>Project List</strong> view in KoboToolbox and click <strong>NEW</strong>.</p></li>
+<li><p>Select <strong>Upload an XLSForm</strong> and upload your <strong>Excel</strong> file.</p>
+<ul class="simple">
+<li><p>If you created your XLSForm in <strong>Google Sheets</strong>, you will need to download the file before uploading it to KoboToolbox. In the Google Sheets menu, click File &gt; Download &gt; Microsoft Excel.</p></li>
+</ul>
+</li>
+<li><p>Enter the project details and click <strong>CREATE PROJECT</strong>.</p></li>
+<li><p>Click the <i class="k-icon k-icon-view"></i> <strong>Preview</strong> button.</p></li>
 </ol>
+<p class="note">
+  <b>Note:</b> To learn how to import your XLSForm via URL, see the support article <a class="reference" href="https://support.kobotoolbox.org/xls_url.html">Importing a XLSForm via URL</a>.
+</p>
 </section>
 <section id="downloading-an-xlsform-from-kobotoolbox">
 <h2>Downloading an XLSForm from KoboToolbox<a class="headerlink" href="#downloading-an-xlsform-from-kobotoolbox" title="Permalink to this heading">¶</a></h2>
-<p>KoboToolbox allows you to download a form you have been creating using the
-formbuilder as an XLSForm file. This might be useful for several reasons such
-as:</p>
-<ul class="simple">
-<li><p>You need to add some advanced features that are not yet supported in the
-formbuilder.</p></li>
-<li><p>You would like to make changes to the form that might be easier through
-XLSForm (such as quickly duplicating a large number of questions).</p></li>
-<li><p>Your computer resources such as your browser or internet connection.</p></li>
-<li><p>You would like to collaborate on the form with members of your team and you
-prefer sharing the XLSForm.</p></li>
-<li><p>Manage versioning of your form outside of the KoboToolbox platform.</p></li>
-<li><p>You are needing assistance from the support team and need to share your form
-with us.</p></li>
-</ul>
-<p>To download the XLSForm while you are on the Project List view:</p>
+<p>Forms created using the KoboToolbox Formbuilder can be easily downloaded as an XLSForm file.</p>
 <ol class="arabic simple">
-<li><p>Hover your mouse over the name of the project.</p></li>
-<li><p>Click the <i class="k-icon k-icon-more"></i> <em>More actions</em> icon.</p></li>
-<li><p>Click <i class="k-icon k-icon-xls-file"></i> <em>Download XLS</em>.</p></li>
-<li><p>Save the file.</p></li>
+<li><p>Go to the <strong>Project List</strong> view in KoboToolbox.</p></li>
+<li><p>Hover your mouse over the name of the project you wish to download.</p></li>
+<li><p>Click the <i class="k-icon k-icon-more"></i> <strong>More actions</strong> icon.</p></li>
+<li><p>Click <i class="k-icon k-icon-xls-file"></i> <strong>Download XLS</strong>.</p></li>
 </ol>
+<p>Downloading your KoboToolbox form as an XLSForm file can be very useful for many reasons, including:</p>
+<ul class="simple">
+<li><p>Adding advanced features to your form that are not currently supported in the Formbuilder.</p></li>
+<li><p>Making changes to the form that are more efficient to do in XLSForm (e.g., duplicating a large number of questions or adding translations).</p></li>
+<li><p>Avoiding slow computer or internet speeds that can affect form building in the Formbuilder (e.g., limited RAM, poor internet connectivity).</p></li>
+<li><p>Sharing the form as an Excel file for collaboration with team members and managing form versions.</p></li>
+<li><p>Sharing the form to request assistance from the KoboToolbox support team or in the Community Forum.</p></li>
+</ul>
 </section>
 <section id="replacing-a-form-with-an-xlsform-file">
 <h2>Replacing a form with an XLSForm file<a class="headerlink" href="#replacing-a-form-with-an-xlsform-file" title="Permalink to this heading">¶</a></h2>
-<p>You can replace an existing form with a new version using an XLSForm (for
-example, after having edited the form in Excel). To do this while you are on the
-Project List view:</p>
+<p>You can replace an existing form in the Formbuilder with a new version using an XLSForm. For example, after editing the form in Excel, you must upload the updated file to KoboToolbox.</p>
 <ol class="arabic simple">
-<li><p>Hover your mouse over the name of the project.</p></li>
-<li><p>Click the <i class="k-icon k-icon-more"></i> <em>More actions</em> icon.</p></li>
-<li><p>Click <i class="k-icon k-icon-replace"></i> <em>Replace form</em>.</p></li>
-<li><p>Choose the file.</p></li>
+<li><p>Go to the <strong>Project List</strong> view in KoboToolbox.</p></li>
+<li><p>Hover your mouse over the name of the project you wish to replace with a new file.</p></li>
+<li><p>Click the <i class="k-icon k-icon-more"></i> <strong>More actions</strong> icon.</p></li>
+<li><p>Click <i class="k-icon k-icon-replace"></i> <strong>Replace form</strong>.</p></li>
+<li><p>Choose the file you wish to upload.</p></li>
 </ol>
 </section>
 <section id="more-xlsform-learning-resources">
 <h2>More XLSForm learning resources<a class="headerlink" href="#more-xlsform-learning-resources" title="Permalink to this heading">¶</a></h2>
-<p>Go to the following links to learn more about XLSForm:</p>
+<p>For more information about using XLSForm, see the following resources:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://xlsform.org">Official XLSForm documentation at XLSForm.org</a></p></li>
-<li><p><a class="reference external" href="https://docs.getodk.org/">Detailed form building documentation from ODK</a></p></li>
+<li><p><a class="reference external" href="https://docs.getodk.org/">Form building documentation from ODK</a></p></li>
 </ul>
 </section>
 </section>
@@ -340,10 +445,11 @@ Project List view:</p>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started with XLSForm</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-xlsform">What is XLSForm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-set-up-xlsform">How to set up XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-an-xlsform">Setting up an XLSForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-questions">Adding questions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-choices">Adding choices</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-response-choices">Adding response choices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-settings">Adding settings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-optional-columns-to-the-survey-worksheet">Adding optional columns to the survey worksheet</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#uploading-and-previewing-the-xlsform-in-kobotoolbox">Uploading and previewing the XLSForm in KoboToolbox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-an-xlsform-from-kobotoolbox">Downloading an XLSForm from KoboToolbox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#replacing-a-form-with-an-xlsform-file">Replacing a form with an XLSForm file</a></li>
