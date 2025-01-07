@@ -72,7 +72,7 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 | integer | age  | How old are you? |
 
 <p class="note">
-  <b>Note:</b> To learn more about question types in XLSForm, see [Question types (XLSForm.org)](https://xlsform.org/en/#question-types).
+  <b>Note:</b> To learn more about question types in XLSForm, see <a class="reference external" href="https://xlsform.org/en/#question-types">Question types (XLSForm.org)</a>.
 </p>
 
 ## Adding response choices
@@ -87,7 +87,7 @@ For select type questions (**select_one** and **select_multiple**), response cho
 3. In the label column, enter the choice label **Male**.
    - The choice label is displayed on the form during data collection.
 4. To add the second choice option for the **baby_sex** question, enter **sex** in the `list_name` column. Enter **female** as the choice name and **Female** as the choice label.
-   
+
 | list_name | name   | label  |
 | :-------- | :----- | :----- |
 | sex       | male   | Male   |
@@ -113,7 +113,7 @@ For example, to add a form title:
    - If you do not define a form title in your XLSForm, by default the Excel file name will be used as the project name in KoboToolbox. This can be edited in KoboToolbox.
 
 <p class="note">
-  <b>Note:</b> To learn more about the settings worksheet in XLSForm, see [Settings worksheet (XLSForm.org)](https://xlsform.org/en/#settings-worksheet).
+  <b>Note:</b> To learn more about the settings worksheet in XLSForm, see <a class="reference external" href="https://xlsform.org/en/#settings-worksheet">Settings worksheet (XLSForm.org)</a>.
 </p>
 
 ## Adding optional columns to the survey worksheet
@@ -145,7 +145,7 @@ To upload and preview your XLSForm in KoboToolbox:
 4. Click the <i class="k-icon k-icon-view"></i> **Preview** button.
 
 <p class="note">
-  <b>Note:</b> To learn how to import your XLSForm via URL, see the support article [Importing a XLSForm via URL](https://support.kobotoolbox.org/xls_url.html).
+  <b>Note:</b> To learn how to import your XLSForm via URL, see the support article <a class="reference" href="https://support.kobotoolbox.org/xls_url.html">Importing a XLSForm via URL</a>.
 </p>
 
 ## Downloading an XLSForm from KoboToolbox
