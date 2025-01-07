@@ -58,7 +58,7 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 | text | yourname | What is your name? |
 4. For the second question, **What is your baby’s sex?**, enter **select_one sex** in the `type` column of the survey worksheet.
    - **select_one** is the question type that allows users to select only one choice from a list of response choices.
-   - **sex** is the name of the list of response choices, which is defined in the choices worksheet (see [Adding response choices](https://support.kobotoolbox.org/getting_started_xlsform.html#adding-choices)).
+   - **sex** is the name of the list of response choices, which is defined in the choices worksheet (see [Adding response choices](https://support.kobotoolbox.org/getting_started_xlsform.html#adding-response-choices)).
 5. In the `name` column, type **baby_sex**.
 6. In the `label` column, type **What is your baby’s sex?**
 
@@ -145,17 +145,16 @@ To upload and preview your XLSForm in KoboToolbox:
 4. Click the <i class="k-icon k-icon-view"></i> **Preview** button.
 
 <p class="note">
-  <b>Note:</b> To learn how to import your XLSForm via URL, see the support article <a class="reference" href="https://support.kobotoolbox.org/xls_url.html">Importing a XLSForm via URL</a>.
+  <b>Note:</b> To learn how to import your XLSForm via URL, see the support article <a class="reference" href="https://support.kobotoolbox.org/xls_url.html">Importing an XLSForm via URL</a>.
 </p>
 
 ## Downloading an XLSForm from KoboToolbox
 
 Forms created using the KoboToolbox Formbuilder can be easily downloaded as an XLSForm file.
 
-1. Go to the **Project List** view in KoboToolbox.
-2. Hover your mouse over the name of the project you wish to download.
-3. Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
-4. Click <i class="k-icon k-icon-xls-file"></i> **Download XLS**.
+1. Go to the **FORM** tab of your project in KoboToolbox.
+2. Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
+3. Click <i class="k-icon k-icon-xls-file"></i>**Download XLS**.
 
 Downloading your KoboToolbox form as an XLSForm file can be very useful for many reasons, including:
 
@@ -169,11 +168,10 @@ Downloading your KoboToolbox form as an XLSForm file can be very useful for many
 
 You can replace an existing form in the Formbuilder with a new version using an XLSForm. For example, after editing the form in Excel, you must upload the updated file to KoboToolbox.
 
-1. Go to the **Project List** view in KoboToolbox.
-2. Hover your mouse over the name of the project you wish to replace with a new file.
-3. Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
-4. Click <i class="k-icon k-icon-replace"></i> **Replace form**.
-5. Choose the file you wish to upload.
+1. Go to the **FORM** tab of your project in KoboToolbox.
+2. Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
+3. Click <i class="k-icon k-icon-replace"></i> **Replace form**.
+4. Choose the file you wish to upload.
 
 ## More XLSForm learning resources
 
