@@ -86,7 +86,7 @@ To invite users to join your Organization:
 
 <br/>
 
-An invitation to join an Organization will expire **14 days** after it is sent. You can **resend the invitation** directly in the <class="k-icon k-icon-more"> **More actions** menu of the **Members** view. You can also **cancel an invitation** using the **Remove invitation** option in the <class="k-icon k-icon-more"> **More actions** menu.
+An invitation to join an Organization will expire **14 days** after it is sent. You can **resend the invitation** directly in the <i class="k-icon k-icon-more"></i> **More actions** menu of the **Members** view. You can also **cancel an invitation** using the **Remove invitation** option in the <i class="k-icon k-icon-more"></i> **More actions** menu.
 
 <video controls>
   <source
@@ -115,7 +115,7 @@ To remove a user from your Organization:
 
 1. Go to your **Account Settings**.
 2. Navigate to the **Members** page under **ORGANIZATION**.
-3. Click the <class="k-icon k-icon-more"> **More actions** icon for the user you wish to remove.
+3. Click the <i class="k-icon k-icon-more"></i> **More actions** icon for the user you wish to remove.
 4. Select **Remove**.
 5. Confirm and complete the action by clicking **Remove member**.
 
