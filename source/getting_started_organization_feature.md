@@ -57,8 +57,8 @@ Organization Members only have access to their personal My Projects view, which 
 
 <video controls>
   <source
-    src="./_static/files/getting_started_xlsform/getting_started_with_xlsform.mp4"
-    type="video/mp4"
+    src="./_static/files/organizations_project_views.gif"
+    type="video/gif"
   />
 </video>
 
@@ -79,8 +79,8 @@ To invite users to join your Organization:
 
 <video controls>
   <source
-    src="./_static/files/getting_started_xlsform/getting_started_with_xlsform.mp4"
-    type="video/mp4"
+    src="./_static/files/organizations_inviting_a_user.gif"
+    type="video/gif"
   />
 </video>
 
@@ -90,8 +90,8 @@ An invitation to join an Organization will expire **14 days** after it is sent. 
 
 <video controls>
   <source
-    src="./_static/files/getting_started_xlsform/getting_started_with_xlsform.mp4"
-    type="video/mp4"
+    src="./_static/files/organizations_resend_invitation.gif"
+    type="video/gif"
   />
 </video>
 
@@ -105,14 +105,7 @@ The Organization Owner and Admins can assign and change the roles of users in th
 
 -   When you change the role of a **Member** to an **Admin**, you will grant them access to the Organization Projects view as well as project and role management permissions. You will also grant them access to manage the Settings and view the Usage page.
 
-<video controls>
-  <source
-    src="./_static/files/getting_started_xlsform/getting_started_with_xlsform.mp4"
-    type="video/mp4"
-  />
-</video>
-
-<br/>
+![image](/images/organizations_changing_roles.png)
 
 ## Removing a user from your Organization
 
@@ -128,8 +121,8 @@ To remove a user from your Organization:
 
 <video controls>
   <source
-    src="./_static/files/getting_started_xlsform/getting_started_with_xlsform.mp4"
-    type="video/mp4"
+    src="./_static/files/organizations_removing_a_member.gif"
+    type="video/gif"
   />
 </video>
 
