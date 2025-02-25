@@ -82,7 +82,9 @@ An invitation to join an Organization will expire **14 days** after it is sent. 
 
 <br/>
 
-Note: If you have existing projects that you do not want to transfer ownership of to your Organization, we recommend that you create a separate account and transfer ownership of those projects to the new account before accepting the invitation to join the Organization.
+<p class="note">
+  <b>Note:</b> If you have existing projects that you do not want to transfer ownership of to your Organization, we recommend that you create a separate account and transfer ownership of those projects to the new account before accepting the invitation to join the Organization.
+</p>
 
 ## Assigning and managing roles
 
