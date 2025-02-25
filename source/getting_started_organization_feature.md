@@ -55,12 +55,7 @@ The Organization Owner and Admins have access to the Organization Projects view 
 
 Organization Members only have access to their personal My Projects view, which includes projects they created and projects shared with them. They do not have access to the Organization Projects view.
 
-<video controls>
-  <source
-    src="./_static/files/organizations_project_views.gif"
-    type="video/gif"
-  />
-</video>
+![image](/images/getting_started_organization_feature/organizations_project_views.gif)
 
 <br/>
 
@@ -77,23 +72,13 @@ To invite users to join your Organization:
 5. The user will receive an email invitation to join the Organization. If the user doesn't already have a KoboToolbox account, they will be invited to create one.
 6. When they accept the invitation, they will gain access to the Organization based on the role assigned to them. All projects previously owned by the user will be transferred to the Organization.
 
-<video controls>
-  <source
-    src="./_static/files/organizations_inviting_a_user.gif"
-    type="video/gif"
-  />
-</video>
+![image](/images/getting_started_organization_feature/organizations_inviting_a_user.gif)
 
 <br/>
 
 An invitation to join an Organization will expire **14 days** after it is sent. You can **resend the invitation** directly in the <i class="k-icon k-icon-more"></i> **More actions** menu of the **Members** view. You can also **cancel an invitation** using the **Remove invitation** option in the <i class="k-icon k-icon-more"></i> **More actions** menu.
 
-<video controls>
-  <source
-    src="./_static/files/organizations_resend_invitation.gif"
-    type="video/gif"
-  />
-</video>
+![image](/images/getting_started_organization_feature/organizations_resend_invitation.gif)
 
 <br/>
 
@@ -105,7 +90,7 @@ The Organization Owner and Admins can assign and change the roles of users in th
 
 -   When you change the role of a **Member** to an **Admin**, you will grant them access to the Organization Projects view as well as project and role management permissions. You will also grant them access to manage the Settings and view the Usage page.
 
-![image](/images/organizations_changing_roles.png)
+![image](images/getting_started_organization_feature/organizations_changing_roles.png)
 
 ## Removing a user from your Organization
 
@@ -119,12 +104,7 @@ To remove a user from your Organization:
 4. Select **Remove**.
 5. Confirm and complete the action by clicking **Remove member**.
 
-<video controls>
-  <source
-    src="./_static/files/organizations_removing_a_member.gif"
-    type="video/gif"
-  />
-</video>
+![image](/images/getting_started_organization_feature/organizations_removing_a_member.gif)
 
 <br/>
 

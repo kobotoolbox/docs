@@ -3,21 +3,21 @@ Topics
 
 Search the knowledge base, browse our resources, and visit our forum for more detailed information
 
-.. README: please don't change name or caption of TOCs - they are used for 
-.. JavaScript code and for properly building the custom section pages. 
+.. README: please don't change name or caption of TOCs - they are used for
+.. JavaScript code and for properly building the custom section pages.
 .. If you need to change them, please contact a developer :-*
 
 .. toctree::
   :maxdepth: 2
   :caption: Getting Started
   :name: home-page-toc-getting-started
-  
+
   welcome
   about_kobotoolbox
   creating_account
   overview_of_creating_a_project
   quick_start
-  is_my_data_safe  
+  is_my_data_safe
   activation_link
   reset_password
   gdpr
@@ -98,12 +98,13 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   troubleshooting_webforms
   manual_upload
   collect_gps
-  
+
 .. toctree::
   :maxdepth: 2
   :caption: Managing Projects and Data
   :name: home-page-toc-managing-projects
-  
+
+  getting_started_organization_feature
   project_summary
   record_validation
   delete_project
@@ -134,12 +135,12 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   transcription-translation
   kobotoolbox_monday_integration
 
-  
+
 .. toctree::
   :maxdepth: 2
   :caption: KoboToolbox on Your Computer or Server
   :name: home-page-toc-computer-server
-  
+
   software_architecture
   kobo_local_computer
   kobo_your_servers
