@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Project Summary &#8212; KoboToolbox  documentation</title>
+    <title>Getting started with the Organizations feature &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Record Validation" href="record_validation.html" />
-    <link rel="prev" title="Getting started with the Organizations feature" href="getting_started_organization_feature.html" />
+    <link rel="next" title="Project Summary" href="project_summary.html" />
+    <link rel="prev" title="Collecting GPS Locations" href="collect_gps.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -91,7 +91,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="project_summary">
+<div class="page page--has-sidebar " id="getting_started_organization_feature">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -104,19 +104,113 @@
 
         <section class="page__body" role="main">
           
-  <section id="project-summary">
-<h1>Project Summary<a class="headerlink" href="#project-summary" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/fe255dc226ea120c8a6e4a6c3a378581d9b10bf3/source/project_summary.md" class="reference">28 May 2020</a></p>
-<p>The Project Summary tab gives you a visual display of all the high-level information related to your project. Depending on whether you’re the project owner or a user with restricted permissions, different information will be shown to you. The Project Summary includes:</p>
+  <section id="getting-started-with-the-organizations-feature">
+<h1>Getting started with the Organizations feature<a class="headerlink" href="#getting-started-with-the-organizations-feature" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong>
+<a href="https://github.com/kobotoolbox/docs/blob/495951b94c328bc1ae7d6e429c30aac371acec18/source/getting_started_organizations_feature.md" class="reference">25
+Feb 2025</a></p>
+<p>The new Organizations feature enables you to centralize project and user management for improved oversight and collaboration across teams. When you add users to an Organization in KoboToolbox, you will have access to view and manage their projects. Users in your Organization will have access to your Teams or Enterprise Plan usage quotas, and ownership of their projects will be transferred to your Organization.</p>
+<p class="note">
+  <b>Note:</b> The Organizations feature is currently in beta-testing. This feature will be available to users on Teams and Enterprise Plans in April 2025.
+</p>
+<p>This article includes:</p>
+<ul class="simple">
+<li><p>Project ownership, roles, and project views for Organizations</p></li>
+<li><p>How to invite users to join your Organization and assign roles</p></li>
+<li><p>How to remove users from your Organization</p></li>
+</ul>
+<section id="project-ownership">
+<h2>Project ownership<a class="headerlink" href="#project-ownership" title="Permalink to this heading">¶</a></h2>
+<p>A key aspect of the Organizations feature is that project ownership is centralized within the Organization.</p>
+<ul class="simple">
+<li><p>Any new project created by a user in the Organization is automatically owned by the Organization.</p></li>
+<li><p>When a user joins an Organization, all projects owned by the user will be transferred to the Organization.</p></li>
+</ul>
+<p>By centralizing project ownership, the Organizations feature gives you more oversight and effective team management.</p>
+</section>
+<section id="organization-roles">
+<h2>Organization roles<a class="headerlink" href="#organization-roles" title="Permalink to this heading">¶</a></h2>
+<p>There are three types of roles within an Organization with specific functions and capabilities.</p>
 <ol class="arabic simple">
-<li><p><strong>Description</strong>: Includes all project metadata.</p></li>
-<li><p><strong>Submissions</strong>: A tally and graph of the submissions (up to the past 31 days).</p></li>
-<li><p><strong>Form details</strong>: Includes last modified, last submission, and number of questions.</p></li>
-<li><p><strong>Quick links</strong>: Useful links related to data collection for the project.</p></li>
-<li><p><strong>Data</strong>: Useful links to information related to submitted data.</p></li>
-<li><p><strong>Team members</strong>: List of users that have access to the project.</p></li>
+<li><p><strong>Organization Owner:</strong> The Owner can view and manage all projects and users in the Organization as well as the Plan and Settings. Each Organization can have only one Owner.</p>
+<ul class="simple">
+<li><p><strong>Project views and management:</strong> The Owner can view all the Organization’s projects and has full project management permissions.</p></li>
+<li><p><strong>Project ownership transfers:</strong> The Owner can transfer ownership of any of the Organization’s projects to a user outside of the Organization. (See the support article on <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html#transferring-ownership-of-a-project">transferring project ownership</a>)</p></li>
+<li><p><strong>Organization member management:</strong> The Owner can add or remove Organization members and assign different roles.</p></li>
+<li><p><strong>Plan and usage management:</strong> The Owner can manage the Organization’s Plan and Settings and view the Usage page.</p></li>
+</ul>
+</li>
+<li><p><strong>Organization Admins:</strong> Admins can view and manage all projects and users in the Organization as well as the Settings. Each Organization can have an unlimited number of Admins.</p>
+<ul class="simple">
+<li><p><strong>Project views and management:</strong> Admins can view all the Organization’s projects and have full project management permissions.</p></li>
+<li><p><strong>Organization member management:</strong> Admins can add or remove Organization members and assign different roles.</p></li>
+<li><p><strong>Plan and usage management:</strong> Admins can manage the Organization’s Settings and view the Usage page.</p></li>
+</ul>
+</li>
+<li><p><strong>Organization Members:</strong> Organization Members continue to have full access to their KoboToolbox account with the benefit of their Organization’s usage quotas. Organizations can have an unlimited number of Members.</p></li>
 </ol>
-<p><img alt="image" src="_images/summary.jpg" /></p>
+<p class="note">
+  <b>Note:</b> Users can only belong to one Organization at a time.
+</p>
+</section>
+<section id="project-views">
+<h2>Project views<a class="headerlink" href="#project-views" title="Permalink to this heading">¶</a></h2>
+<p>The Organization Owner and Admins have access to the Organization Projects view and their own personal My Projects view.</p>
+<ul class="simple">
+<li><p>By default, your <strong>My Projects</strong> view will be displayed. If you toggle the project view drop-down menu, you can switch to your <strong>Organization Projects</strong> view.</p></li>
+<li><p>The <strong>Organization Projects</strong> view includes all the projects of all users in the Organization.</p></li>
+</ul>
+<p>Organization Members only have access to their personal My Projects view, which includes projects they created and projects shared with them. They do not have access to the Organization Projects view.</p>
+<p><img alt="image" src="_images/organizations_project_views.gif" /></p>
+<br/>
+</section>
+<section id="inviting-users-to-join-your-organization">
+<h2>Inviting users to join your Organization<a class="headerlink" href="#inviting-users-to-join-your-organization" title="Permalink to this heading">¶</a></h2>
+<p>The Organization Owner and Admins can invite users to join the Organization, giving them access to the Organization’s usage quotas and centralizing project management.</p>
+<p>To invite users to join your Organization:</p>
+<ol class="arabic simple">
+<li><p>Go to your <strong>Account Settings</strong>.</p></li>
+<li><p>Navigate to the <strong>Members</strong> page under <strong>ORGANIZATION</strong>.</p></li>
+<li><p>Click the <strong>Invite members</strong> button.</p></li>
+<li><p>Enter the <strong>username</strong> or <strong>email address</strong> of the person you want to invite to your Organization and assign them a <strong>Role</strong>. Click <strong>Send invite</strong>.</p></li>
+<li><p>The user will receive an email invitation to join the Organization. If the user doesn’t already have a KoboToolbox account, they will be invited to create one.</p></li>
+<li><p>When they accept the invitation, they will gain access to the Organization based on the role assigned to them. All projects previously owned by the user will be transferred to the Organization.</p></li>
+</ol>
+<p><img alt="image" src="_images/organizations_inviting_a_user.gif" /></p>
+<br/>
+<p>An invitation to join an Organization will expire <strong>14 days</strong> after it is sent. You can <strong>resend the invitation</strong> directly in the <i class="k-icon k-icon-more"></i> <strong>More actions</strong> menu of the <strong>Members</strong> view. You can also <strong>cancel an invitation</strong> using the <strong>Remove invitation</strong> option in the <i class="k-icon k-icon-more"></i> <strong>More actions</strong> menu.</p>
+<p><img alt="image" src="_images/organizations_resend_invitation.gif" /></p>
+<br/>
+<p class="note">
+  <b>Note:</b> If you have existing projects that you do not want to transfer ownership of to your Organization, we recommend that you create a separate account and transfer ownership of those projects to the new account before accepting the invitation to join the Organization.
+</p>
+</section>
+<section id="assigning-and-managing-roles">
+<h2>Assigning and managing roles<a class="headerlink" href="#assigning-and-managing-roles" title="Permalink to this heading">¶</a></h2>
+<p>The Organization Owner and Admins can assign and change the roles of users in their Organization in the <strong>Members</strong> view.</p>
+<ul class="simple">
+<li><p>When you change the role of a <strong>Member</strong> to an <strong>Admin</strong>, you will grant them access to the Organization Projects view as well as project and role management permissions. You will also grant them access to manage the Settings and view the Usage page.</p></li>
+</ul>
+<p><img alt="image" src="_images/organizations_changing_roles.png" /></p>
+</section>
+<section id="removing-a-user-from-your-organization">
+<h2>Removing a user from your Organization<a class="headerlink" href="#removing-a-user-from-your-organization" title="Permalink to this heading">¶</a></h2>
+<p>The Organization Owner and Admins can remove users from the Organization. When a user is removed from your Organization, they will no longer have access to projects owned by the Organization or the Organization’s usage quotas.</p>
+<p>To remove a user from your Organization:</p>
+<ol class="arabic simple">
+<li><p>Go to your <strong>Account Settings</strong>.</p></li>
+<li><p>Navigate to the <strong>Members</strong> page under <strong>ORGANIZATION</strong>.</p></li>
+<li><p>Click the <i class="k-icon k-icon-more"></i> <strong>More actions</strong> icon for the user you wish to remove.</p></li>
+<li><p>Select <strong>Remove</strong>.</p></li>
+<li><p>Confirm and complete the action by clicking <strong>Remove member</strong>.</p></li>
+</ol>
+<p><img alt="image" src="_images/organizations_removing_a_member.gif" /></p>
+<br/>
+</section>
+<section id="transferring-ownership-of-your-organization">
+<h2>Transferring ownership of your Organization<a class="headerlink" href="#transferring-ownership-of-your-organization" title="Permalink to this heading">¶</a></h2>
+<p>Each Organization can have only one Owner. To transfer ownership of your Organization to another user, <a class="reference internal" href="#support&#64;kobotoolbox.org"><span class="xref myst">please contact our support team</span></a>.</p>
+</section>
 </section>
 
 
@@ -130,7 +224,7 @@
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Project Summary"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Getting started with the Organizations feature"
               class="feedback-button"
               target="_blank"
             >
@@ -228,8 +322,17 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Getting started with the Organizations feature</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Project Summary</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started with the Organizations feature</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#project-ownership">Project ownership</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#organization-roles">Organization roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-views">Project views</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#inviting-users-to-join-your-organization">Inviting users to join your Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#assigning-and-managing-roles">Assigning and managing roles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#removing-a-user-from-your-organization">Removing a user from your Organization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transferring-ownership-of-your-organization">Transferring ownership of your Organization</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
@@ -312,9 +415,9 @@
 
   <script>
     window.docs = {
-      currentPagename: "project_summary",
-      currentTitle: "Project Summary",
-      currentUrl: ("index.html").replace("index.html", "project_summary.html"),
+      currentPagename: "getting_started_organization_feature",
+      currentTitle: "Getting started with the Organizations feature",
+      currentUrl: ("index.html").replace("index.html", "getting_started_organization_feature.html"),
       rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };
