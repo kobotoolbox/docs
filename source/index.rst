@@ -133,6 +133,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   api
   data_storage
   transcription-translation
+  qualitative_analysis
   kobotoolbox_monday_integration
 
 
