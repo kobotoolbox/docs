@@ -25,6 +25,10 @@ A key aspect of the Organizations feature is that project ownership is centraliz
 
 By centralizing project ownership, the Organizations feature gives you more oversight and effective team management.
 
+<p class="note">
+  <b>Note:</b> This feature only affects project ownership. It does not affect project sharing permissions. Previously configured sharing permissions will not be affected when project ownership is transferred to the Organization. If you have management permissions for a project, you will continue to have those permissions and will be able to share the project as usual. (See the support article on <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html">project sharing permissions</a>).
+</p>
+
 ## Organization roles
 
 There are three types of roles within an Organization with specific functions and capabilities.
@@ -40,7 +44,7 @@ There are three types of roles within an Organization with specific functions an
    - **Organization member management:** Admins can add or remove Organization members and assign different roles.
    - **Plan and usage management:** Admins can manage the Organization’s Settings and view the Usage page.
 
-3. **Organization Members:** Organization Members continue to have full access to their KoboToolbox account with the benefit of their Organization’s usage quotas. Organizations can have an unlimited number of Members.
+3. **Organization Members:** Organization Members continue to have full access to their KoboToolbox account with the benefit of their Organization’s usage quotas. Members can create new projects and use all KoboToolbox features as before. Organizations can have an unlimited number of Members.
 
 <p class="note">
   <b>Note:</b> Users can only belong to one Organization at a time.
@@ -69,6 +73,7 @@ To invite users to join your Organization:
 2. Navigate to the **Members** page under **ORGANIZATION**.
 3. Click the **Invite members** button.
 4. Enter the **username** or **email address** of the person you want to invite to your Organization and assign them a **Role**. Click **Send invite**.
+   - Invitations are not restricted to users with your organization’s email domain. You can invite users with any valid email address.
 5. The user will receive an email invitation to join the Organization. If the user doesn't already have a KoboToolbox account, they will be invited to create one.
 6. When they accept the invitation, they will gain access to the Organization based on the role assigned to them. All projects previously owned by the user will be transferred to the Organization.
 
@@ -112,4 +117,6 @@ To remove a user from your Organization:
 
 ## Transferring ownership of your Organization
 
-Each Organization can have only one Owner. To transfer ownership of your Organization to another user, [please contact our support team](support@kobotoolbox.org).
+Each Organization can have only one Owner. The Owner was previously determined by your organization when they subscribed for your plan.
+
+To transfer ownership of your Organization to another user, [please contact our support team](support@kobotoolbox.org).
