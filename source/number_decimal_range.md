@@ -1,8 +1,8 @@
-# Number, Decimal and Range Question Types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ae30057448191048eded61e8b9f0ddd088e58938/source/number_decimal_range.md" class="reference">8 Aug 2022</a>
+# Number, Decimal, and Range Question Types
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ae30057448191048eded61e8b9f0ddd088e58938/source/number_decimal_range.md" class="reference">02 April 2025</a>
 
 When creating questions with numeric responses, you can choose between the
-"Number", "Decimal" and "Range" question types in KoboToolbox.
+"Number", "Decimal", and "Range" question types in KoboToolbox.
 
 This article describes these question types and how to use them.
 
@@ -73,17 +73,13 @@ In XLSForm, you can add "Number", "Decimal" and "Range" questions by using
   added in the <code>parameters</code> column.
 </p>
 
-## Translating question labels
-
-For translating question labels into other languages through the KoboToolbox UI,
-refer to the support article, [here](language_dashboard.md), or
-[here](language_xls.md) if you are creating your form using XLSForm.
-
 ## Default appearance in web forms and KoboCollect
 
 ![Number, Decimal and Range questions](/images/number_decimal_range/number_decimal_range_default.png)
 
 ## Advanced appearances
+
+When adding the “number”, “decimal”, and “range” questions, you can specify different appearances (under the question settings). Appearances change the way the question is displayed on web forms or on KoboCollect.
 
 ![Number, Decimal and Range advanced appearances](/images/number_decimal_range/number_decimal_range_advanced_appearance.png)
 
@@ -91,7 +87,7 @@ refer to the support article, [here](language_dashboard.md), or
 
 ### Advanced appearances in XLSForm
 
-You can specify advanced appearances of "Number", "Decimal" and "Range"
+You can specify advanced appearances of "Number", "Decimal", and "Range"
 questions in XLSForm under the appearances column as in the following examples:
 
 | type    | name            | label                                                    | appearance    | parameters           |
