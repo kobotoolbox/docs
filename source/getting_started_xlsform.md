@@ -1,8 +1,6 @@
 # Getting started with XLSForm
 
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/495951b94c328bc1ae7d6e429c30aac371acec18/source/getting_started_xlsform.md" class="reference">19
-Dec 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/495951b94c328bc1ae7d6e429c30aac371acec18/source/getting_started_xlsform.md" class="reference">19 Dec 2024</a>
 
 When creating survey forms for KoboToolbox, you can build your form with the KoboToolbox Formbuilder or in XLSForm. XLSForm is very effective for creating both basic and advanced forms in a user-friendly format.
 
@@ -30,6 +28,10 @@ This article explains how to:
 XLSForm is a standard for developing forms using Microsoft Excel and other spreadsheet software. XLSForms can then be uploaded to KoboToolbox to generate a data collection form.
 
 There are many advantages to using XLSForm, especially for building complex forms with more advanced functionalities, including relevance conditions, calculations, and constraints. XLSForm also enables you to collaborate on form building using the same Excel file or in real time using Google Sheets.
+
+<p class="note">
+  <b>Note:</b> For a comprehensive introduction to form development using XLSForm, we recommend KoboToolbox Academy’s self-paced online <a class="reference" href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
+</p>
 
 ## Setting up an XLSForm
 
@@ -173,7 +175,7 @@ You can replace an existing form in the Formbuilder with a new version using an 
 3. Click <i class="k-icon k-icon-replace"></i> **Replace form**.
 4. Choose the file you wish to upload.
 
-## More XLSForm learning resources
+## More XLSForm resources
 
 For more information about using XLSForm, see the following resources:
 
