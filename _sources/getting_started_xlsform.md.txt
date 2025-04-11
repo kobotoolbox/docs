@@ -9,7 +9,7 @@ This article explains how to:
 
 <video controls>
   <source
-    src="./_static/files/getting_started_xlsform/getting_started_with_xlsform.mp4"
+    src="./_static/files/getting_started_xlsform/getting_started_xlsform_v2.mp4"
     type="video/mp4"
   />
 </video>
