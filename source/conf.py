@@ -66,6 +66,9 @@ html_additional_pages = {
     'collecting-data': 'sections/collecting-data.html',
     'managing-projects': 'sections/managing-projects.html',
     'computer-server': 'sections/computer-server.html',
+    'new-1': 'sections/new-1.html',
+    'new-2': 'sections/new-2.html',
+    'new-3': 'sections/new-3.html',
 }
 
 html_theme_options = {
