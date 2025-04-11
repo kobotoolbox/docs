@@ -100,4 +100,34 @@
       display: block;
     }
   }
+
+  &#new-1 .page__body {
+    > p.caption:not(#new-1-section-caption) {
+      display: none;
+    }
+
+    p.caption#new-1-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#new-2 .page__body {
+    > p.caption:not(#new-2-section-caption) {
+      display: none;
+    }
+
+    p.caption#new-2-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#new-3 .page__body {
+    > p.caption:not(#new-3-section-caption) {
+      display: none;
+    }
+
+    p.caption#new-3-section-caption + ul {
+      display: block;
+    }
+  }
 }

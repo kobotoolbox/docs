@@ -939,6 +939,21 @@ html body div.footer p:last-child {
 .page#index .toctree-wrapper[id=home-page-toc-computer-server] .caption {
   background-image: url("../icons/custom/computer-server.svg");
 }
+.page#index .toctree-wrapper[id=home-page-toc-new-1] .caption {
+  background-image: url("../icons/custom/computer-server.svg");
+}
+.page#index .toctree-wrapper[id=home-page-toc-new-2] .caption {
+  background-image: url("../icons/custom/computer-server.svg");
+}
+.page#index .toctree-wrapper[id=home-page-toc-new-3] .caption {
+  background-image: url("../icons/custom/computer-server.svg");
+}
+.page#index .toctree-wrapper[id=home-page-toc-new-4] .caption {
+  background-image: url("../icons/custom/computer-server.svg");
+}
+.page#index .toctree-wrapper[id=home-page-toc-new-5] .caption {
+  background-image: url("../icons/custom/computer-server.svg");
+}
 
 .page#search .page__body form {
   display: none;
@@ -1024,6 +1039,24 @@ html body div.footer p:last-child {
   display: none;
 }
 .page.custom-section-page#computer-server .page__body p.caption#computer-server-section-caption + ul {
+  display: block;
+}
+.page.custom-section-page#new-1 .page__body > p.caption:not(#new-1-section-caption) {
+  display: none;
+}
+.page.custom-section-page#new-1 .page__body p.caption#new-1-section-caption + ul {
+  display: block;
+}
+.page.custom-section-page#new-2 .page__body > p.caption:not(#new-2-section-caption) {
+  display: none;
+}
+.page.custom-section-page#new-2 .page__body p.caption#new-2-section-caption + ul {
+  display: block;
+}
+.page.custom-section-page#new-3 .page__body > p.caption:not(#new-3-section-caption) {
+  display: none;
+}
+.page.custom-section-page#new-3 .page__body p.caption#new-3-section-caption + ul {
   display: block;
 }
 

@@ -136,7 +136,6 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   qualitative_analysis
   kobotoolbox_monday_integration
 
-
 .. toctree::
   :maxdepth: 2
   :caption: KoboToolbox on Your Computer or Server
@@ -145,3 +144,31 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   software_architecture
   kobo_local_computer
   kobo_your_servers
+
+.. Below categories are just temporary, for dev purposes
+.. toctree::
+  :maxdepth: 2
+  :caption: KoboToolbox new category 1
+  :name: home-page-toc-new-1
+
+  new-1-article-1
+  new-1-article-2
+  new-1-article-3
+
+.. toctree::
+  :maxdepth: 2
+  :caption: KoboToolbox new category 2
+  :name: home-page-toc-new-2
+
+  new-2-article-1
+  new-2-article-2
+  new-2-article-3
+
+.. toctree::
+  :maxdepth: 2
+  :caption: KoboToolbox new category 3
+  :name: home-page-toc-new-3
+
+  new-3-article-1
+  new-3-article-2
+  new-3-article-3
