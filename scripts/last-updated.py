@@ -18,6 +18,7 @@ GIT_IGNORE_HASHES = [
     '74dc12829b7ae2ce0c6c36364c5791b9f94d489d',
     'bd2708397b2a21ea9fd7699ff0e50cbc3899ad63',
     'dead802312349a42727c6f3339d45892db4cabce',
+    '150a514b59fe22d6efd5c4c83960ecad1e69424b',
 ]
 GIT_IGNORE_MSG = 'last updated'
 RECENTLY_UPDATED_FILE = 'source/recently_updated.md'
@@ -47,7 +48,6 @@ def get_git_data(path):
         ) or msg.startswith(GIT_IGNORE_MSG):
             return _get_hash_and_date(items[1:])
         return _hash, date
-
     return _get_hash_and_date(stdout)
 
 
@@ -84,6 +84,8 @@ def update_file(path):
         fs[1] = text
     else:
         fs.insert(1, text)
+
+    sys.stdout.write(text)
 
     with open(path, 'w') as f:
         sys.stdout.write(f'Updating: {path}\n')
