@@ -85,8 +85,6 @@ def update_file(path):
     else:
         fs.insert(1, text)
 
-    sys.stdout.write(text)
-
     with open(path, 'w') as f:
         sys.stdout.write(f'Updating: {path}\n')
         f.write(''.join(fs))
