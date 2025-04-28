@@ -1,5 +1,5 @@
 # Getting started with XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6117fd75d82bf49f8991fc38a0de8f89e4949c50/source/getting_started_xlsform.md" class="reference">5 Apr 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b2261015904850c0538e9b6e122b846ffb740894/source/getting_started_xlsform.md" class="reference">11 Apr 2025</a>
 
 This article explains how to:
 
