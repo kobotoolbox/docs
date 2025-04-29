@@ -52,14 +52,15 @@ jobs:
       - name: Test
         run: echo ${{ needs.update.outputs.update_commit || github.event.pull_request.head.sha }}
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    # - uses: actions/checkout@v4
-    # - name: Set up Python 3.12
-    #   uses: actions/setup-python@v5
-    #   with:
-    #     # Semantic version range syntax or exact version of a Python version
-    #     python-version: '3.12'
-    #     # Optional - x64 or x86 architecture, defaults to x64
-    #     architecture: 'x64'
+      - uses: actions/checkout@v4
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          # Semantic version range syntax or exact version of a Python version
+          python-version: '3.12'
+          # Optional - x64 or x86 architecture, defaults to x64
+          architecture: 'x64'
+          ref: ${{ needs.update.outputs.update_commit }}
 
     # - name: Install FE dependencies
     #   run: npm install
