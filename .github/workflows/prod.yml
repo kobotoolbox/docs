@@ -49,8 +49,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      names: Test
-      run: echo ${{ needs.update.outputs.update_commit || github.event.pull_request.head.sha }}
+      - name: Test
+        run: echo ${{ needs.update.outputs.update_commit || github.event.pull_request.head.sha }}
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     # - uses: actions/checkout@v4
     # - name: Set up Python 3.12
