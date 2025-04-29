@@ -1,5 +1,5 @@
 ﻿# Adding Skip Logic to a Matrix Question
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/96281651ab9fc13d5d0f87fa3eee7905817c40dd/source/adding_skip_to_matrix.md" class="reference">29 Apr 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ffbc74cc3538d51f83b6737a7b7c9a82c29e4eeb/source/adding_skip_to_matrix.md" class="reference">29 Apr 2025</a>
 
 In most situations, you can add skip logic to any question type as outlined in
 the support article **[Adding Skip Logic](skip_logic.md)**. However, when
