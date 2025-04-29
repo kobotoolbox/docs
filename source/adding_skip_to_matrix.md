@@ -10,7 +10,7 @@ question type. This support article illustrates how you can add skip logic to a
 
 If you have gone through the support article
 **[Question Matrix Response Type](matrix_response.md)**, you will already know
-there are 2 approaches to create a `matrix` question in KoboToolbox: the
+that there are 2 approaches to create a `matrix` question in KoboToolbox: the
 _formbuilder approach_ and the _`kobo--matrix_list` approach_. This support
 article provides an overview of the necessary steps to add skip logic to a
 `matrix` question when using either of these approaches.
