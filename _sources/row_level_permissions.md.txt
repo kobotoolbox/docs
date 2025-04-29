@@ -1,11 +1,11 @@
 # Row-Level Permissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9fd89e8da3a82a702802f86f455aabf26fd7faa6/source/row_level_permissions.md" class="reference">28 Apr 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d756d1e9c63873597876b0c5fe7b3eb3d314dc9a/source/row_level_permissions.md" class="reference">29 Apr 2025</a>
 
 Row-level permissions are an extension of the
 [existing permissions feature](managing_permissions.md) in KoboToolbox. This feature allows project
 owners to assign eight different levels of permissions for a shared project. There are two types of row-level permissions: **user-based** and **condition-based**.
 
-Row-level permissions allow you to set controls for shared projects to determine which users can access submissions, which submissions they have access to, and if they can view, edit, or delete submissions. User-based permissions can be combined with condition-based permissions for even more control of users’ access to shared projects and data.
+Row-level permissions allow you to set controls for shared projects to determine which users can access submissions, which submissions they have access to, and whether they can view, edit, or delete submissions. User-based permissions can be combined with condition-based permissions for even more control of users’ access to shared projects and data.
 
 ## Accessing row-level permissions
 
@@ -103,7 +103,7 @@ This can be useful for managing access to data in shared projects. A condition-b
 Once you have saved your permissions, the user you have shared the project with will be able to view, edit, validate, or delete project data submissions that have the required response to the specified question, depending on which permissions you selected.
 
 #### Important note
-- For [Date](date_time.md) questions, the response value must be written in the format `YYYY-MM-DD` (e.g., `1974-12-31`).    
+- For [Date](date_time.md) questions, the response value must be written in the format `YYYY-MM-DD` (e.g., `1974-12-31`).
 - For [Select One](select_one_and_select_many.md) and [Select Many](select_one_and_select_many.md) questions, the response value must be written using the unique XML value, not the label (e.g., `first_grade` rather than `First grade`).
 - The condition-based permissions feature does not support partial response value filtering. For example, if the question `occupation` is used to filter submissions using the response value `developer` and all the responses contain `software developer`, the condition will not be met and no submissions will be returned.
 - The feature does not permit filtering submissions using a question within a repeat group because repeating questions may have different responses within the same submission. For example, if the question `occupation` is used to filter submissions using the response value `software developer`, but the `occupation` question is part of a repeat group and has different responses within the same submission, the condition will not be met and no submissions will be returned. For a workaround solution, please view the Community Forum post [Condition-Based Permissions Using a Repeat Group Value](https://community.kobotoolbox.org/t/condition-based-permissions-from-a-repeat-group-value/59449).

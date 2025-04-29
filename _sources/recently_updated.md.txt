@@ -1,7 +1,7 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
-1. [Row-Level Permissions](row_level_permissions.md) (28 Apr 2025)
+1. [Row-Level Permissions](row_level_permissions.md) (29 Apr 2025)
 1. [Getting started with XLSForm](getting_started_xlsform.md) (11 Apr 2025)
 1. [Number, Decimal, and Range Question Types](number_decimal_range.md) (2 Apr 2025)
 1. [Getting started with the Organizations feature](getting_started_organization_feature.md) (14 Mar 2025)
