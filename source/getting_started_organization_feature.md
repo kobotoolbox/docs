@@ -4,7 +4,7 @@
 The new Organizations feature enables you to centralize project and user management for improved oversight and collaboration across teams. When you add users to an Organization in KoboToolbox, you will have access to view and manage their projects. Users in your Organization will have access to your Teams or Enterprise Plan usage quotas, and ownership of their projects will be transferred to your Organization.
 
 <p class="note">
-  <b>Note:</b> The Organizations feature is currently in beta-testing. This feature will be available to users on Teams and Enterprise Plans in April 2025.
+  <b>Note:</b> The invitation system for this feature will be available in the next release in May 2025.
 </p>
 
 This article includes:
