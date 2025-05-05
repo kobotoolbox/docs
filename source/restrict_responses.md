@@ -1,5 +1,5 @@
 # Restricting Text Responses With Regular Expressions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/20d7a5266c63a76770ff020a62ac5517ca0e7274/source/restrict_responses.md" class="reference">3 May 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/99459d787563eb003603481e97ed2866f81e135c/source/restrict_responses.md" class="reference">21 Nov 2024</a>
 
 A regular expression, or regex, is a search pattern used for matching specific
 characters and ranges of characters within a string. It is widely used to
@@ -147,8 +147,8 @@ for your use-case. Using regex for constraining email addresses does not
 guarantee that they are valid, only that they follow an expected pattern.</p>
 
 | **Regex**                                                                                                          | **Description**                                                          |
-| :----------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
-| `regex(., '^[A-Za-z0-9._%+-]+@[A-Za-z0-9-]+[.][A-Za-z.]{2,}$')` or `regex(., '^([\W\d\D]+[@][\D]+[.][\D]{2,})+$')` | Restrict an input with a valid email address e.g. `example.domain.com` or `example.domain.com.np` |
+| :----------------------------------------------------------------------------------------- | :----------------------------------------------------------------------- |
+| `regex(., '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*(\.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)*\.[a-zA-Z]{2,}$')` | Restrict input to valid email address (e.g., `example.domain.com` or `example.domain.com.np)`. |
 
 ## Examples related to use of time inputs
 

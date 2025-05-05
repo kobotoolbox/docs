@@ -1,5 +1,5 @@
 # Encrypting Forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/20d7a5266c63a76770ff020a62ac5517ca0e7274/source/encrypting_forms.md" class="reference">3 May 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/179faeb3c5a17b69406b0243ab9c22f7ca86aa44/source/encrypting_forms.md" class="reference">4 Nov 2024</a>
 
 _This procedure is quite technical and is intended for users who are comfortable
 with advanced technical instructions and requires strict attention to detail._
@@ -62,7 +62,7 @@ decrypt them locally on your computer using a private key ensuring single access
 to the data. For decryption to be successful with ODK Briefcase make sure you
 download and install the _Java Cryptography Extension (JCE) Unlimited Strength
 Jurisdiction Policy Files 6_ from the
-[Java download site](https://www.oracle.com/java/technologies/javase-downloads.md).
+[Java download site](https://www.oracle.com/java/technologies/javase-jce-all-downloads.html).
 This is required for decryption to be successful.
 
 ### To install the JCE:

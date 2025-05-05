@@ -1,5 +1,5 @@
-# Importing a XLSForm via URL
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/efbfc6962171fc98b89a515875df014e05bd7211/source/xls_url.md" class="reference">26 Jul 2020</a>
+# Importing an XLSForm via URL
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d14c3f76675d9085da27e1c5dd4fcf981a6b3a7d/source/xls_url.md" class="reference">7 Jan 2025</a>
 
 When importing an XLSForm via URL, please make sure that the URL points to the XLS file directly and that it is publicly accessible. A quick way to test this is to load the URL in a browser: it should trigger the download of the file. (If it loads a page in the browser, then it's not the right URL.)
 

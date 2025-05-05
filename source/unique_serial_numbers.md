@@ -1,8 +1,5 @@
 # Creating Unique Serial Numbers in Forms
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/e30c115149ba8be02c16447d78193a55103044b7/source/unique_serial_numbers.md" class="reference">11
-Jan 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a6a8c49db039fb239d0cb09105e608288e920d65/source/unique_serial_numbers.md" class="reference">31 May 2024</a>
 
 There are times you may want to generate a unique serial number for each and
 every form in a project. This article discusses various workarounds on how to
@@ -22,7 +19,7 @@ question type</a> in either the formbuilder or **XLSForm** and use the formula
 below.
 
 ```
-concat(substr(today(), 0, 4), substr(today(), 7, 5), substr(today(), 10, 8), substr(now(), 13, 11), substr(now(), 16, 14), substr(now(), 19, 17))
+concat(substr(today(), 0, 4), substr(today(), 5, 7), substr(today(), 8, 10), substr(now(), 11, 13), substr(now(), 14, 16), substr(now(), 17, 19))
 ```
 
 <p class="note">

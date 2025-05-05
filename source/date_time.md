@@ -1,5 +1,5 @@
 # Date and time question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/241c501febc0e6bce5f09529287155f41a3d577f/source/date_time.md" class="reference">20 Jun 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c0db4b85c885da715ece9bd7c77707400b471f80/source/date_time.md" class="reference">28 Oct 2024</a>
 
 There are 3 different date and time question types in KoboToolbox: “Date”,
 “Time” and “Date and time”.
@@ -32,7 +32,7 @@ Adding “Date”, “Time”, and “Date and Time” questions is simple:
 ### Setting up in XLSForm
 
 To add "Date", "Time", and "Date and Time" questions in the XLSForm, use the
-`date`, `time` and `dateTime` question types as shown in the example below:
+`date`, `time` and `datetime` question types as shown in the example below:
 
 In XLSForm, you can set up the following:
 
@@ -40,7 +40,7 @@ In XLSForm, you can set up the following:
 | :------- | :-------- | :-------------------------------------------- |
 | date     | dob       | On what date were you born?                   |
 | time     | time      | At what time do you you leave for work?       |
-| dateTime | date_time | At what date and time did the training start? |
+| datetime | date_time | At what date and time did the training start? |
 | survey   |
 
 ## Appearance of date and time question types in web forms and KoboCollect

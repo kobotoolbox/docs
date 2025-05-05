@@ -1,8 +1,5 @@
 # Library locking
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/library_locking.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2637412d8681357beb512a586262f331e8db49fd/source/library_locking.md" class="reference">8 Aug 2024</a>
 
 "Library locking" refers to the feature enabling various aspects of a survey to
 be "[locked](#locked)" when created from a template containing
@@ -349,7 +346,7 @@ profile will have a `kobo--locking-profile` attribute as follows:
 
 ## Locking profiles and asset types
 
-Of the four asset types (`asset`, `template`, `question` and `block`), only
+Of the four asset types (`survey`, `template`, `question` and `block`), only
 `template`s and `survey`s handle library locking features and the locks are
 enforced _only_ on surveys. Practically, this means the following:
 
@@ -371,24 +368,26 @@ Assume an XLSForm containing valid locking features is imported:
     -   If a `survey` is created _from_ a locked `template`, the survey will
         inherit all the locks that the `template` had
 
-| Original Asset Type | Process                  | Resulting Asset's Status |
-| :------------------ | :----------------------- | :----------------------- |
-| `survey`            | -                        | locked                   |
-| `survey`            | `survey` to `template`   | locked                   |
-| `survey`            | `survey` to `question`   | not locked               |
-| `survey`            | `survey` to `block`      | not locked               |
-| `template`          | -                        | locked                   |
-| `template`          | `template` to `survey`   | locked                   |
-| `template`          | `template` to `question` | not locked               |
-| `template`          | `template` to `block`    | not locked               |
-| `block`             | -                        | not locked               |
-| `block`             | import to `survey`       | not locked               |
-| `block`             | import to `template`     | not locked               |
-| `block`             | `block` to `question`    | not locked               |
-| `question`          | -                        | not locked               |
-| `question`          | import to `survey`       | not locked               |
-| `question`          | import to `template`     | not locked               |
-| `question`          | `question` to `block`    | not locked               |
+| Original Asset Type | Process/action                                     | Resulting `asset`'s Status |
+| :------------------ | :------------------------------------------------- | :------------------------- |
+| `survey`            | import XLSForm file of locked `survey`             | locked                     |
+| `survey`            | create `template` from locked `survey`             | locked                     |
+| `survey`            | create `question` from locked `survey`※            | not locked                 |
+| `survey`            | create `block` from locked `survey`※               | not locked                 |
+| `template`          | import XLSForm file of locked `template`           | locked                     |
+| `template`          | create `survey` from locked `template`             | locked                     |
+| `template`          | create `question` from locked `template`※          | not locked                 |
+| `template`          | create `block` from locked `template`※             | not locked                 |
+| `block`             | import XLSForm file of locked `block`※             | not locked                 |
+| `block`             | add locked `block` from Library into `survey`      | not locked                 |
+| `block`             | add locked `block` from Library into `template`    | not locked                 |
+| `block`             | create `question` from locked `block`※             | not locked                 |
+| `question`          | import XLSForm file of locked `block`※             | not locked                 |
+| `question`          | add locked `question` from Library into `survey`   | not locked                 |
+| `question`          | add locked `question` from Library into `template` | not locked                 |
+| `question`          | create `block` from locked `question`※             | not locked                 |
+
+※ These actions are not possible in the UI.
 
 ## Terminology
 
