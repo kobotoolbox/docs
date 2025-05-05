@@ -1,7 +1,8 @@
 # About KoboToolbox: Accessible data collection for everyone
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e2b07997d03aeb9f17956a9ea486a6de8db581bf/source/about_kobotoolbox.md" class="reference">5 Jun 2024</a>
 
-[Lire en français](#a-propos-de-kobotoolbox-collecte-de-donnees-accessible-a-toutes-et-tous) | [Leer en español](#acerca-de-kobotoolbox-recoleccion-de-datos-accesible-para-todas-las-personas) | [اقرأ باللغة العربية](#-معلومات عن منصة-(KoboToolbox):-جمع-البيانات-التي-يمكن-للجميع-الوصول-إليها)
+[Lire en français](#a-propos-de-kobotoolbox-collecte-de-donnees-accessible-a-toutes-et-tous) | [Leer en español](#acerca-de-kobotoolbox-recoleccion-de-datos-accesible-para-todas-las-personas) | [اقرأ باللغة العربية](#ar)
+
 
 KoboToolbox makes high quality data accessible to social impact organizations worldwide. Designed by data collection practitioners specifically for challenging settings, KoboToolbox is easy to use, adaptable, and resource efficient.
 
@@ -72,6 +73,7 @@ Además del [Centro de ayuda](https://support.kobotoolbox.org/), las personas us
 
 Obtenga más información sobre [nuestros servicios de formación](https://www.kobotoolbox.org/services/training/).
 
+(ar)=
 ### معلومات عن منصة (KoboToolbox): جمع البيانات التي يمكن للجميع الوصول إليها
 
 تجعل منصة (KoboToolbox) البيانات عالية الجودة متاحة للمؤسسات ذات التأثير الاجتماعي على مستوى العالم. فمنصة (KoboToolbox) مُصممة من قبل مختصين في جمع البيانات للتعامل مع الظروف الصعبة بشكل خاص، وهي سهلة الاستخدام، قابلة للتعديل، وفعالة في استخدام الموارد.
@@ -79,11 +81,11 @@ Obtenga más información sobre [nuestros servicios de formación](https://www.k
 ![image](images/about_kobotoolbox/2022-kobotoolbox-users.png)
 
 #### لماذا تعتبر منصة (KoboToolbox) فريدة من نوعها
-يتم استضافة منصة (KoboToolbox) وصيانتها من قبل المنظمة الدولية غير الربحية [https://www.kobotoolbox.org/about-us/the-organization)[Kobo). ومهمتنا هي تمكين الأفراد والمؤسسات في جميع أنحاء العالم بأدوات جمع البيانات عالية الجودة لإحداث تأثير اجتماعي قائم على البيانات.
-اقرأ المزيد عن [مهمتنا](/https://www.kobotoolbox.org/about-us/our-mission)
+يتم استضافة منصة (KoboToolbox) وصيانتها من قبل المنظمة الدولية غير الربحية [Kobo](https://www.kobotoolbox.org/about-us/the-organization). ومهمتنا هي تمكين الأفراد والمؤسسات في جميع أنحاء العالم بأدوات جمع البيانات عالية الجودة لإحداث تأثير اجتماعي قائم على البيانات.
+اقرأ المزيد عن [مهمتنا](https://www.kobotoolbox.org/about-us/our-mission)
 #### دعم التأثير العالمي
 تُعد منصة (KoboToolbox) أكثر أدوات جمع البيانات استخداماً في مجالات العمل الإنساني، التنمية، بناء السلام، حقوق الإنسان، حماية البيئة، وغيرها من المبادرات ذات التأثير الاجتماعي. ولدعم مستخدمينا غير الربحيين، نقدم أدواتنا مجاناً ضمن
-[الخطة المجتمعية (https://www.kobotoolbox.org/pricing/#free)[(Community Plan). كما نقدم [خدمات متقدمة](https://www.kobotoolbox.org/services/) و [خطط محسّنة](https://www.kobotoolbox.org/pricing/) للمؤسسات الكبيرة التي لديها حجم كبير واحتياجات معقدة لجمع البيانات.
+[الخطة المجتمعية [Community Plan](https://www.kobotoolbox.org/pricing/#free)]. كما نقدم [خدمات متقدمة](https://www.kobotoolbox.org/services/) و [خطط محسّنة](https://www.kobotoolbox.org/pricing/) للمؤسسات الكبيرة التي لديها حجم كبير واحتياجات معقدة لجمع البيانات.
 لمعرفة المزيد حول كيفية استخدام المنظمات في جميع أنحاء العالم لمنصة (KoboToolbox) برجاء زيارة [مدونتنا](https://www.kobotoolbox.org/blog/).
 #### المزيد من المصادر
 بالإضافة إلى [مركز المساعدة](https://support.kobotoolbox.org/)، يمكن للمستخدمين زيارة [المنتديات](https://community.kobotoolbox.org/) لطرح الأسئلة ومشاركة الأفكار. للحصول على مقدمة شاملة لجمع البيانات باستخدام منصة (KoboToolbox) ، يمكن للمستخدمين التسجيل في [الدورة التدريبية عبر الإنترنت](https://academy.kobotoolbox.org/courses/essentials). كما تتوفر جلسات تدريبية عبر الإنترنت للفرق وبالحضور الشخصي.
