@@ -36,13 +36,11 @@ a,
   cursor: pointer;
   color: hsl(207deg, 90%, 54%);
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 a:hover,
 .link:hover {
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   color: hsl(207deg, 90%, 39%);
 }
@@ -260,13 +258,11 @@ html body header.main-header .main-header__navigation ul li.current a {
 }
 .main-search.main-search--big::before {
   background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: -o-linear-gradient(bottom, transparent, hsl(230deg, 12%, 29%));
   background: linear-gradient(to top, transparent, hsl(230deg, 12%, 29%));
   top: 0;
 }
 .main-search.main-search--big::after {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: -o-linear-gradient(top, transparent, hsl(230deg, 12%, 29%));
   background: linear-gradient(to bottom, transparent, hsl(230deg, 12%, 29%));
   bottom: 0;
 }
@@ -320,7 +316,6 @@ html body header.main-header .main-header__navigation ul li.current a {
   width: 1.4375rem;
   height: auto;
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .main-search .main-search__arrow:hover svg {
@@ -349,7 +344,6 @@ html body header.main-header .main-header__navigation ul li.current a {
   left: 1.25rem;
   color: hsl(228deg, 12%, 59%);
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   pointer-events: none;
 }
@@ -765,13 +759,11 @@ html body div.footer p:last-child {
 }
 .community-questions.community-questions--big::before {
   background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: -o-linear-gradient(bottom, transparent, hsl(230deg, 12%, 29%));
   background: linear-gradient(to top, transparent, hsl(230deg, 12%, 29%));
   top: 0;
 }
 .community-questions.community-questions--big::after {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: -o-linear-gradient(top, transparent, hsl(230deg, 12%, 29%));
   background: linear-gradient(to bottom, transparent, hsl(230deg, 12%, 29%));
   bottom: 0;
 }
