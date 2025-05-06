@@ -73,20 +73,28 @@ Además del [Centro de ayuda](https://support.kobotoolbox.org/), las personas us
 
 Obtenga más información sobre [nuestros servicios de formación](https://www.kobotoolbox.org/services/training/).
 
-(ar)=
-### معلومات عن منصة (KoboToolbox): جمع البيانات التي يمكن للجميع الوصول إليها
+<section dir="rtl">
+
+<h3 id="ar">معلومات عن منصة (KoboToolbox): جمع البيانات التي يمكن للجميع الوصول إليها</h3>
 
 تجعل منصة (KoboToolbox) البيانات عالية الجودة متاحة للمؤسسات ذات التأثير الاجتماعي على مستوى العالم. فمنصة (KoboToolbox) مُصممة من قبل مختصين في جمع البيانات للتعامل مع الظروف الصعبة بشكل خاص، وهي سهلة الاستخدام، قابلة للتعديل، وفعالة في استخدام الموارد.
 
 ![image](images/about_kobotoolbox/2022-kobotoolbox-users.png)
 
-#### لماذا تعتبر منصة (KoboToolbox) فريدة من نوعها
+<h4>لماذا تعتبر منصة (KoboToolbox) فريدة من نوعها</h4>
+
 يتم استضافة منصة (KoboToolbox) وصيانتها من قبل المنظمة الدولية غير الربحية [Kobo](https://www.kobotoolbox.org/about-us/the-organization). ومهمتنا هي تمكين الأفراد والمؤسسات في جميع أنحاء العالم بأدوات جمع البيانات عالية الجودة لإحداث تأثير اجتماعي قائم على البيانات.
 اقرأ المزيد عن [مهمتنا](https://www.kobotoolbox.org/about-us/our-mission)
-#### دعم التأثير العالمي
+
+<h4>دعم التأثير العالمي</h4>
+
 تُعد منصة (KoboToolbox) أكثر أدوات جمع البيانات استخداماً في مجالات العمل الإنساني، التنمية، بناء السلام، حقوق الإنسان، حماية البيئة، وغيرها من المبادرات ذات التأثير الاجتماعي. ولدعم مستخدمينا غير الربحيين، نقدم أدواتنا مجاناً ضمن
 [الخطة المجتمعية [Community Plan](https://www.kobotoolbox.org/pricing/#free)]. كما نقدم [خدمات متقدمة](https://www.kobotoolbox.org/services/) و [خطط محسّنة](https://www.kobotoolbox.org/pricing/) للمؤسسات الكبيرة التي لديها حجم كبير واحتياجات معقدة لجمع البيانات.
 لمعرفة المزيد حول كيفية استخدام المنظمات في جميع أنحاء العالم لمنصة (KoboToolbox) برجاء زيارة [مدونتنا](https://www.kobotoolbox.org/blog/).
-#### المزيد من المصادر
+
+<h4>المزيد من المصادر</h4>
+
 بالإضافة إلى [مركز المساعدة](https://support.kobotoolbox.org/)، يمكن للمستخدمين زيارة [المنتديات](https://community.kobotoolbox.org/) لطرح الأسئلة ومشاركة الأفكار. للحصول على مقدمة شاملة لجمع البيانات باستخدام منصة (KoboToolbox) ، يمكن للمستخدمين التسجيل في [الدورة التدريبية عبر الإنترنت](https://academy.kobotoolbox.org/courses/essentials). كما تتوفر جلسات تدريبية عبر الإنترنت للفرق وبالحضور الشخصي.
 تعرف على المزيد حول [خدماتنا التدريبية](https://www.kobotoolbox.org/services/training/).
+
+</section>
