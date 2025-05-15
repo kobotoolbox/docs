@@ -21,7 +21,7 @@ KoboToolbox provides two types of activity logs to help you monitor different as
 
 ## Access logs
 
-Access logs record all authentication events (sign-ins) for your KoboToolbox account. They help you monitor account security by showing you when and where your account was accessed. 
+Access logs record all authentication events (sign-ins) for your KoboToolbox account. They help you monitor account security by showing you when and where your account was accessed.
 
 They can be found under the title ‘Recent Account Activity’, which you can reach easily by opening your Account Settings under the section Security.
 
@@ -41,7 +41,7 @@ Note that similar events (authentications) occurring within 60 minutes of each o
 
 This section also allows you to export all your access records by clicking on the ‘Export log data’ button on the top right corner of the table. Clicking this button will trigger the data export process:
 1. The processing of the records into a .csv export file will begin
-2. A modal window will be displayed informing you that the process has started and what the next steps are. 
+2. A modal window will be displayed informing you that the process has started and what the next steps are.
 3. You will receive an email with a link to download the file once it's ready. The amount of data included in your logs will determine how long it may take to receive the email.
 4. Clicking on the URL in the email should immediately start the download of the .csv file, depending on your browser settings.
 
@@ -49,11 +49,11 @@ The export file will include more detailed information of all the authentication
 
 ### Log out of all devices
 
-You can force all devices currently logged into your account to immediately log out by clicking on the ‘Log out of all devices’ link to the left of the data export button. 
+You can force all devices currently logged into your account to immediately log out by clicking on the ‘Log out of all devices’ link to the left of the data export button.
 
 This action will also log you out of your current session.
 
-## Project History Logs 
+## Project History Logs
 
 Project History Logs provide a detailed record of all activities within a specific project. They show every action performed, whether by users or automated processes, giving you complete visibility into your project's history.
 
@@ -61,10 +61,11 @@ To see the logs of a specific project, go to your project’s SETTINGS tab and g
 
 ![image](/images/about_kobotoolbox/Logs-image3.jpg)
 
-In this page you will find a table view with all the project activity, sorted by date. Each unique action is listed along with the user who performed it and the datestamp associated with that activity. 
+In this page you will find a table view with all the project activity, sorted by date. Each unique action is listed along with the user who performed it and the datestamp associated with that activity.
 
 Project History Logs capture almost every possible action that can be performed in a project.
 
+| Category                | Included actions                                                                                                            |
 | :-----------------------| :---------------------------------------------------------------------------------------------------------------------------|
 | Project changes         | Project name updates, Deployments and redeployments, Archiving and unarchiving, Project connections                         |
 | Form changes            | XLSForm uploads, Form edits, Creation of qualitative analysis questions                                                     |
@@ -78,7 +79,7 @@ You can filter the history log by activity type (e.g. deployments, form edits, p
 
 ![image](/images/about_kobotoolbox/Logs-GIF01.gif)
 
-You can also export all your project history data using the export button on the top right corner of your table. 
+You can also export all your project history data using the export button on the top right corner of your table.
 If you need more information about a specific activity, simply click ‘See Details’ for an expanded view of that entry. This will display all the information on that event, revealing what occurred in the backend and any associated metadata.
 
 ## Common Issues with Activity Logs
@@ -89,11 +90,11 @@ If you need more information about a specific activity, simply click ‘See Deta
 -   Note that logs are only available for a period of 60 days. Older logs are deleted and not retrievable. This period can be configured at the admin level for organizations with a private server.
 
 **"I need older log data"**
--   Data beyond the retention period is automatically deleted and not retrievable. If you need to have access to log data older than 60 days and you are using a private server, you can contact your administrator to increase the retention period. 
+-   Data beyond the retention period is automatically deleted and not retrievable. If you need to have access to log data older than 60 days and you are using a private server, you can contact your administrator to increase the retention period.
 
 **"I can’t download the log data export file"**
--   When you click the link you received by email to download the log data export file, it might open a web page with text instead of downloading the csv file. 
--   To download the .csv file from the web page, right click on the page, and select Save Page As…. Keep the format as “Page Source” 
+-   When you click the link you received by email to download the log data export file, it might open a web page with text instead of downloading the csv file.
+-   To download the .csv file from the web page, right click on the page, and select Save Page As…. Keep the format as “Page Source”
 -   If you click on the link and get an error message, such as 403 Forbidden, try opening the link with another browser (e.g., Safari).
 
 ![image](/images/getting_started_organization_feature/organizations_project_views.gif)
