@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Audit Logging Meta Question Type &#8212; KoboToolbox  documentation</title>
+    <title>Activity Logs &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Signature Question Type" href="collecting_signatures.html" />
-    <link rel="prev" title="Pull Data Functionality in KoboToolbox" href="pull_data_kobotoolbox.html" />
+    <link rel="next" title="Project Summary" href="project_summary.html" />
+    <link rel="prev" title="Getting started with the Organizations feature" href="getting_started_organization_feature.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -93,7 +93,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="audit_logging">
+<div class="page page--has-sidebar " id="activity_logs">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -106,78 +106,114 @@
 
         <section class="page__body" role="main">
           
-  <section id="audit-logging-meta-question-type">
-<h1>Audit Logging Meta Question Type<a class="headerlink" href="#audit-logging-meta-question-type" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/audit_logging.md" class="reference">3 May 2024</a></p>
-<p>Audit Logging can be a useful tool to monitor enumerator behavior and discover
-which questions are taking longer to answer, better understand how the
-enumerators are navigating a certain form, and see which enumerators are
-generally taking longer periods of time to submit answers.</p>
-<p class="note">This feature requires manually analyzing CSV files.</p>
-<p>The audit log meta question is a question type that is only supported by using
-the <a class="reference internal" href="kobocollect-android.html"><span class="std std-doc">Collect Android app</span></a>.</p>
-<p>To add an <code class="docutils literal notranslate"><span class="pre">audit</span></code> meta question type to a form and view the finalized data,
-please follow the steps below:</p>
+  <section id="activity-logs">
+<h1>Activity Logs<a class="headerlink" href="#activity-logs" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/2db057c1a183e4e1687b7d999e93b47a0e68840e/source/activity_logs.md" class="reference">15 May 2025</a></p>
+<p>Activity logs are digital records that capture important actions and events in your KoboToolbox account. Activity logs give you a detailed history of account access and project activity.
+These logs can be helpful for:</p>
+<ul class="simple">
+<li><p>Security monitoring: See who accessed your account and from where</p></li>
+<li><p>Tracking changes: Know when project elements were modified</p></li>
+<li><p>Accountability: Identify which team members made specific changes</p></li>
+<li><p>Troubleshooting: Understand when and how issues may have occurred</p></li>
+</ul>
+<p>KoboToolbox provides two types of activity logs to help you monitor different aspects of your work:</p>
+<ul class="simple">
+<li><p><strong>Access Logs:</strong> Support account security by displaying all sign-ins.</p></li>
+<li><p><strong>Project History Logs:</strong> Track all actions and changes made by any user within a specific project and its data.</p></li>
+</ul>
+<p class="note">
+  <b>Note:</b> Activity logs are a relatively recent addition to KoboToolbox. We are actively working to expand these features in the following months and provide an even more detailed account of actions in your accounts and projects.
+</p>
+<section id="access-logs">
+<h2>Access logs<a class="headerlink" href="#access-logs" title="Permalink to this heading">¶</a></h2>
+<p>Access logs record all authentication events (sign-ins) for your KoboToolbox account. They help you monitor account security by showing you when and where your account was accessed.</p>
+<p>They can be found under the title ‘Recent Account Activity’, which you can reach easily by opening your Account Settings under the section Security.</p>
+<p>Access logs display:</p>
+<ul class="simple">
+<li><p>Date and time of each sign-in</p></li>
+<li><p>IP address (location information)</p></li>
+<li><p>Source (device information and browser)</p></li>
+</ul>
+<p><img alt="image" src="_images/Logs-image01.jpg" /></p>
+<p>Note that similar events (authentications) occurring within 60 minutes of each other will be grouped together.</p>
+<section id="exporting-access-logs">
+<h3>Exporting access logs<a class="headerlink" href="#exporting-access-logs" title="Permalink to this heading">¶</a></h3>
+<p><img alt="image" src="_images/Logs-image02.jpg" /></p>
+<p>This section also allows you to export all your access records by clicking on the ‘Export log data’ button on the top right corner of the table. Clicking this button will trigger the data export process:</p>
 <ol class="arabic simple">
-<li><p>In an XLSForm file, add <code class="docutils literal notranslate"><span class="pre">audit</span></code> in the same fashion as you would any other
-meta questions. Then upload the form file to your project and deploy the
-form.</p></li>
+<li><p>The processing of the records into a .csv export file will begin</p></li>
+<li><p>A modal window will be displayed informing you that the process has started and what the next steps are.</p></li>
+<li><p>You will receive an email with a link to download the file once it’s ready. The amount of data included in your logs will determine how long it may take to receive the email.</p></li>
+<li><p>Clicking on the URL in the email should immediately start the download of the .csv file, depending on your browser settings.</p></li>
 </ol>
-<p><strong>survey</strong></p>
+<p>The export file will include more detailed information of all the authentication events, including authentication type and exact timing.</p>
+</section>
+<section id="log-out-of-all-devices">
+<h3>Log out of all devices<a class="headerlink" href="#log-out-of-all-devices" title="Permalink to this heading">¶</a></h3>
+<p>You can force all devices currently logged into your account to immediately log out by clicking on the ‘Log out of all devices’ link to the left of the data export button.</p>
+<p>This action will also log you out of your current session.</p>
+</section>
+</section>
+<section id="project-history-logs">
+<h2>Project History Logs<a class="headerlink" href="#project-history-logs" title="Permalink to this heading">¶</a></h2>
+<p>Project History Logs provide a detailed record of all activities within a specific project. They show every action performed, whether by users or automated processes, giving you complete visibility into your project’s history.</p>
+<p>To see the logs of a specific project, go to your project’s SETTINGS tab and go to the Activity section.</p>
+<p><img alt="image" src="_images/Logs-image3.jpg" /></p>
+<p>In this page you will find a table view with all the project activity, sorted by date. Each unique action is listed along with the user who performed it and the datestamp associated with that activity.</p>
+<p>Project History Logs capture almost every possible action that can be performed in a project.</p>
 <table class="colwidths-auto docutils align-default">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p>type</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
+<tr class="row-odd"><th class="text-left head"><p>Category</p></th>
+<th class="text-left head"><p>Included actions</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>start</p></td>
-<td class="text-left"><p>start</p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-even"><td class="text-left"><p>Project changes</p></td>
+<td class="text-left"><p>Project name updates, Deployments and redeployments, Archiving and unarchiving, Project connections</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>end</p></td>
-<td class="text-left"><p>end</p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-odd"><td class="text-left"><p>Form changes</p></td>
+<td class="text-left"><p>XLSForm uploads, Form edits, Creation of qualitative analysis questions</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>audit</p></td>
-<td class="text-left"><p>audit</p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-even"><td class="text-left"><p>Data Management Changes</p></td>
+<td class="text-left"><p>Data exports, Media attachment modifications, Data sharing settings changes, REST service modifications</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Q1</p></td>
-<td class="text-left"><p>Q1. What is your name?</p></td>
+<tr class="row-odd"><td class="text-left"><p>Permissions</p></td>
+<td class="text-left"><p>User access updates, Public access settings, Ownership transfers</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Submissions</p></td>
+<td class="text-left"><p>User modifies or deletes submissions. Adding submissions is displayed in the logs export, but not the KoboToolbox interface</p></td>
 </tr>
 </tbody>
 </table>
-<ol class="arabic simple" start="2">
-<li><p>Collect data using the <a class="reference internal" href="kobocollect-android.html"><span class="std std-doc">Collect Android app</span></a> and send
-the finalized forms back to the server. Collect saves the audit logs for each
-submission in a CSV file that are saved and uploaded to the server just as an
-attached photo would be.</p></li>
-<li><p>After the data has been submitted, open your project in the browser and go to
-<strong>DATA</strong>, then <strong>Downloads</strong>. Select <strong>Media Attachments (ZIP)</strong> as the
-export type and then click on <strong>New Export</strong>. Once the download is done
-pending, click on the file to download it to your computer.</p></li>
-</ol>
-<p><img alt="image" src="_images/zip_export.png" /></p>
-<ol class="arabic simple" start="4">
-<li><p>Once the ZIP file has been extracted and opened, click on the file labeled
-‘audit.csv’ to view the audit logs. It’s important to note that the CSV uses
-<a class="reference external" href="https://www.unixtimestamp.com/index.php">Unix Epoch</a> time so the logs are
-recorded in milliseconds.</p></li>
-<li><p>Because timestamps are saved for each individual submission, you will
-probably need to copy the values into a new spreadsheet to do further
-analysis across all submissions (e.g. by enumerator or by question).
-Collating many different CSV files into can be done by
-<a class="reference external" href="https://www.google.com/search?q=merge+many+CSV">many free tools or by writing a script</a>.
-To read more detailed information regarding log structure and event types,
-please visit ODK’s great documentation on
-<a class="reference external" href="https://docs.getodk.org/form-audit-log/#">Logging Enumerator Behavior</a>.</p></li>
-</ol>
-<p>Please feel free post on our
-<a class="reference external" href="https://community.kobotoolbox.org/">community forum</a> to share your favorite
-approach or script to use this feature so others can learn from your example.</p>
+<section id="finding-investigating-specific-activities">
+<h3>Finding &amp; investigating specific activities<a class="headerlink" href="#finding-investigating-specific-activities" title="Permalink to this heading">¶</a></h3>
+<p>You can filter the history log by activity type (e.g. deployments, form edits, permissions changes, etc.) using the toggle functionality on the top right corner. This will also allow project owners and managers to track changes/updates on specific aspects of the project quickly.</p>
+<p><img alt="image" src="_images/Logs-GIF01.gif" /></p>
+<p>You can also export all your project history data using the export button on the top right corner of your table.
+If you need more information about a specific activity, simply click ‘See Details’ for an expanded view of that entry. This will display all the information on that event, revealing what occurred in the backend and any associated metadata.</p>
+</section>
+</section>
+<section id="common-issues-with-activity-logs">
+<h2>Common Issues with Activity Logs<a class="headerlink" href="#common-issues-with-activity-logs" title="Permalink to this heading">¶</a></h2>
+<p><strong>“I don’t see recent activities”</strong></p>
+<ul class="simple">
+<li><p>Check that you’re looking at the correct project</p></li>
+<li><p>Make sure you have the right permissions to view logs. Only project owners and users with ‘manage project’ permissions can see the logs.</p></li>
+<li><p>Note that logs are only available for a period of 60 days. Older logs are deleted and not retrievable. This period can be configured at the admin level for organizations with a private server.</p></li>
+</ul>
+<p><strong>“I need older log data”</strong></p>
+<ul class="simple">
+<li><p>Data beyond the retention period is automatically deleted and not retrievable. If you need to have access to log data older than 60 days and you are using a private server, you can contact your administrator to increase the retention period.</p></li>
+</ul>
+<p><strong>“I can’t download the log data export file”</strong></p>
+<ul class="simple">
+<li><p>When you click the link you received by email to download the log data export file, it might open a web page with text instead of downloading the csv file.</p></li>
+<li><p>To download the .csv file from the web page, right click on the page, and select Save Page As…. Keep the format as “Page Source”</p></li>
+<li><p>If you click on the link and get an error message, such as 403 Forbidden, try opening the link with another browser (e.g., Safari).</p></li>
+</ul>
+<p><img alt="image" src="_images/organizations_project_views.gif" /></p>
+</section>
 </section>
 
 
@@ -191,7 +227,7 @@ approach or script to use this feature so others can learn from your example.</p
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Audit Logging Meta Question Type"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Activity Logs"
               class="feedback-button"
               target="_blank"
             >
@@ -220,7 +256,7 @@ approach or script to use this feature so others can learn from your example.</p
 <li class="toctree-l1"><a class="reference internal" href="recently_updated.html">Recently updated Support Articles</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Creating Forms</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="new_form.html">Creating a New Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editing Forms in Excel using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Getting started with XLSForm</a></li>
@@ -255,7 +291,7 @@ approach or script to use this feature so others can learn from your example.</p
 <li class="toctree-l1"><a class="reference internal" href="p_codes.html">Including P-Codes in the Output Data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Creating Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data Functionality in KoboToolbox</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Audit Logging Meta Question Type</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Signature Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding Another Language in the Project Dashboard</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLSForm</a></li>
@@ -288,9 +324,14 @@ approach or script to use this feature so others can learn from your example.</p
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects and Data</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Getting started with the Organizations feature</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Activity Logs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Activity Logs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#access-logs">Access logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-history-logs">Project History Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#common-issues-with-activity-logs">Common Issues with Activity Logs</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
@@ -375,9 +416,9 @@ approach or script to use this feature so others can learn from your example.</p
 
   <script>
     window.docs = {
-      currentPagename: "audit_logging",
-      currentTitle: "Audit Logging Meta Question Type",
-      currentUrl: ("index.html").replace("index.html", "audit_logging.html"),
+      currentPagename: "activity_logs",
+      currentTitle: "Activity Logs",
+      currentUrl: ("index.html").replace("index.html", "activity_logs.html"),
       rootUrl: "",
       sectionsData: {"collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "computer-server": {"name": "computer-server", "title": "KoboToolbox on Your Computer or Server"}, "creating-forms": {"name": "creating-forms", "title": "Creating Forms"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}},
     };

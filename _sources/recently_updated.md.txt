@@ -1,6 +1,7 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
+1. [Activity Logs](activity_logs.md) (15 May 2025)
 1. [About KoboToolbox: Accessible data collection for everyone](about_kobotoolbox.md) (15 May 2025)
 1. [KoboToolbox Training Materials in Arabic](training_arabic.md) (6 May 2025)
 1. [Getting started with the Organizations feature](getting_started_organization_feature.md) (30 Apr 2025)
@@ -10,4 +11,3 @@
 1. [Importing an XLSForm via URL](xls_url.md) (7 Jan 2025)
 1. [Restricting Text Responses With Regular Expressions](restrict_responses.md) (21 Nov 2024)
 1. [Encrypting Forms](encrypting_forms.md) (4 Nov 2024)
-1. [List of Question Types](question_types.md) (28 Oct 2024)
