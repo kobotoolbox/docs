@@ -105,6 +105,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :name: home-page-toc-managing-projects
 
   getting_started_organization_feature
+  activity_logs
   project_summary
   record_validation
   delete_project
