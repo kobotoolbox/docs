@@ -1,5 +1,5 @@
 # Activity Logs
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2be57bc5cbb717ebbbd7d209a8956e571df44706/source/activity_logs.md" class="reference">14 May 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2db057c1a183e4e1687b7d999e93b47a0e68840e/source/activity_logs.md" class="reference">15 May 2025</a>
 
 Activity logs are digital records that capture important actions and events in your KoboToolbox account. Activity logs give you a detailed history of account access and project activity.
 These logs can be helpful for:
