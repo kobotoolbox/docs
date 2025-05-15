@@ -31,13 +31,13 @@ Access logs display:
 -   IP address (location information)
 -   Source (device information and browser)
 
-![image](/images/getting_started_organization_feature/organizations_project_views.gif)
+![image](/images/about_kobotoolbox/Logs-image01.jpg)
 
 Note that similar events (authentications) occurring within 60 minutes of each other will be grouped together.
 
 ### Exporting access logs
 
-![image](/images/getting_started_organization_feature/organizations_project_views.gif)
+![image](images/about_kobotoolbox/Logs-image02.jpg)
 
 This section also allows you to export all your access records by clicking on the ‘Export log data’ button on the top right corner of the table. Clicking this button will trigger the data export process:
 1. The processing of the records into a .csv export file will begin
@@ -59,7 +59,7 @@ Project History Logs provide a detailed record of all activities within a specif
 
 To see the logs of a specific project, go to your project’s SETTINGS tab and go to the Activity section.
 
-![image](/images/getting_started_organization_feature/organizations_project_views.gif)
+![image](/images/about_kobotoolbox/Logs-image3.jpg)
 
 In this page you will find a table view with all the project activity, sorted by date. Each unique action is listed along with the user who performed it and the datestamp associated with that activity. 
 
@@ -76,7 +76,7 @@ Project History Logs capture almost every possible action that can be performed 
 
 You can filter the history log by activity type (e.g. deployments, form edits, permissions changes, etc.) using the toggle functionality on the top right corner. This will also allow project owners and managers to track changes/updates on specific aspects of the project quickly.
 
-![image](/images/getting_started_organization_feature/organizations_project_views.gif)
+![image](/images/about_kobotoolbox/Logs-GIF01.gif)
 
 You can also export all your project history data using the export button on the top right corner of your table. 
 If you need more information about a specific activity, simply click ‘See Details’ for an expanded view of that entry. This will display all the information on that event, revealing what occurred in the backend and any associated metadata.
