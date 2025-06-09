@@ -7,13 +7,13 @@
 
 KoboToolbox makes high quality data accessible to social impact organizations worldwide. Designed by data collection practitioners specifically for challenging settings, KoboToolbox is easy to use, adaptable, and resource efficient.
 
-### Why KoboToolbox is unique
+<h3>Why KoboToolbox is unique</h3>
 
 KoboToolbox is hosted and maintained by the international nonprofit organization [Kobo](https://www.kobotoolbox.org/about-us/the-organization/). Our mission is to empower individuals and organizations around the world with high quality data collection tools for creating data-driven social impact.
 
 Read more about [our mission](https://www.kobotoolbox.org/about-us/our-mission/).
 
-### Supporting global impact
+<h3>Supporting global impact</h3>
 
 KoboToolbox is the most widely used data collection tool for humanitarian action, development, peacebuilding, human rights, environmental protection, and other social impact initiatives. To support our nonprofit users, we provide our tools for free under the [Community Plan](https://www.kobotoolbox.org/pricing/#free). We also offer [advanced services](https://www.kobotoolbox.org/services/) and [upgrades](https://www.kobotoolbox.org/pricing/) for large organizations with high volume and complex data collection needs.
 
@@ -21,7 +21,7 @@ To learn more about how organizations around the world are using KoboToolbox, vi
 
 ![image](images/about_kobotoolbox/usermap.png)
 
-### More resources
+<h3>More resources</h3>
 
 In addition to the [Help Center](https://support.kobotoolbox.org/), users can visit the [Community Forum](https://community.kobotoolbox.org/) to ask questions and share ideas. For a comprehensive introduction to data collection with KoboToolbox, users can enroll in our online [KoboToolbox Essentials Course](https://academy.kobotoolbox.org/courses/essentials). Online and in-person training sessions are also available for teams.
 
