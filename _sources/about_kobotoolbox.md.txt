@@ -1,5 +1,5 @@
 # About KoboToolbox: Accessible data collection for everyone
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f2ea63d6548204f140ccfc2231b3f2bd2939cc38/source/about_kobotoolbox.md" class="reference">4 Jun 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1cbe5ed8fb027c4882b794f4ff8b9bce4b7ae74f/source/about_kobotoolbox.md" class="reference">9 Jun 2025</a>
 
 [Lire en français](#a-propos-de-kobotoolbox-collecte-de-donnees-accessible-a-toutes-et-tous) | [Leer en español](#acerca-de-kobotoolbox-recoleccion-de-datos-accesible-para-todas-las-personas) | [اقرأ باللغة العربية](#ar)
 
@@ -7,13 +7,13 @@
 
 KoboToolbox makes high quality data accessible to social impact organizations worldwide. Designed by data collection practitioners specifically for challenging settings, KoboToolbox is easy to use, adaptable, and resource efficient.
 
-### Why KoboToolbox is unique
+<h3>Why KoboToolbox is unique</h3>
 
 KoboToolbox is hosted and maintained by the international nonprofit organization [Kobo](https://www.kobotoolbox.org/about-us/the-organization/). Our mission is to empower individuals and organizations around the world with high quality data collection tools for creating data-driven social impact.
 
 Read more about [our mission](https://www.kobotoolbox.org/about-us/our-mission/).
 
-### Supporting global impact
+<h3>Supporting global impact</h3>
 
 KoboToolbox is the most widely used data collection tool for humanitarian action, development, peacebuilding, human rights, environmental protection, and other social impact initiatives. To support our nonprofit users, we provide our tools for free under the [Community Plan](https://www.kobotoolbox.org/pricing/#free). We also offer [advanced services](https://www.kobotoolbox.org/services/) and [upgrades](https://www.kobotoolbox.org/pricing/) for large organizations with high volume and complex data collection needs.
 
@@ -21,7 +21,7 @@ To learn more about how organizations around the world are using KoboToolbox, vi
 
 ![image](images/about_kobotoolbox/usermap.png)
 
-### More resources
+<h3>More resources</h3>
 
 In addition to the [Help Center](https://support.kobotoolbox.org/), users can visit the [Community Forum](https://community.kobotoolbox.org/) to ask questions and share ideas. For a comprehensive introduction to data collection with KoboToolbox, users can enroll in our online [KoboToolbox Essentials Course](https://academy.kobotoolbox.org/courses/essentials). Online and in-person training sessions are also available for teams.
 
