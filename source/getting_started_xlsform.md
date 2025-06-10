@@ -1,6 +1,8 @@
 # Getting started with XLSForm
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b2261015904850c0538e9b6e122b846ffb740894/source/getting_started_xlsform.md" class="reference">11 Apr 2025</a>
 
+When creating survey forms for KoboToolbox, you can build your form with the KoboToolbox Formbuilder or in XLSForm. XLSForm is very effective for creating both basic and advanced forms in a user-friendly format.
+
 This article explains how to:
 
 -   Set up an XLSForm using Microsoft Excel
@@ -44,6 +46,19 @@ To set up the basic structure of an XLSForm:
 5. The **settings** worksheet is optional. It can be used to include additional form specifications and customizations.
    - For example: `form_title`, `style`, and `default_language`.
 
+### Mandatory columns in XLSForm
+
+### Survey worksheet
+| type | Defines the question type (e.g., text, integer, select_one)|
+| name | Defines a short, unique name to refer to each question |
+| label | Defines the question text as it will be displayed in the form |
+
+### Choices worksheet
+
+| list_name | Defines the unique identifier for a list of option choices |
+| name | Defines a short, unique name to refer to each option choice |
+| label | Defines the choice text as it will be displayed in the form |
+
 ## Adding questions
 
 In XLSForm, questions are added in the **survey** worksheet. The step-by-step process below explains how to add the following example questions: **What is your name?**, **What is your baby’s sex?**, and **How old are you?**
@@ -55,6 +70,8 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 | type | name     | label              |
 | :--- | :------- | :----------------- |
 | text | yourname | What is your name? |
+| survey |
+
 4. For the second question, **What is your baby’s sex?**, enter **select_one sex** in the `type` column of the survey worksheet.
    - **select_one** is the question type that allows users to select only one choice from a list of response choices.
    - **sex** is the name of the list of response choices, which is defined in the choices worksheet (see [Adding response choices](https://support.kobotoolbox.org/getting_started_xlsform.html#adding-response-choices)).
@@ -64,11 +81,15 @@ In XLSForm, questions are added in the **survey** worksheet. The step-by-step pr
 | type           | name     | label                    |
 | :------------- | :------- | :----------------------- |
 | select_one sex | baby_sex | What is your baby’s sex? |
+| survey |
+
+
 7. For the question **How old are you?**, follow the same process using **integer** as the question type in the `type` column.
 
 | type    | name | label            |
 | :------ | :--- | :--------------- |
 | integer | age  | How old are you? |
+| survey |
 
 <p class="note">
   <b>Note:</b> To learn more about question types in XLSForm, see <a class="reference external" href="https://xlsform.org/en/#question-types">Question types (XLSForm.org)</a>.
@@ -91,6 +112,7 @@ For select type questions (**select_one** and **select_multiple**), response cho
 | :-------- | :----- | :----- |
 | sex       | male   | Male   |
 | sex       | female | Female |
+| choices |
 
 ## Adding settings
 
@@ -104,6 +126,7 @@ Common form settings include:
 | default_language | Default form language                  |
 | style            | Themes for Enketo web forms            |
 | version          | Form version ID                        |
+| settings |
 
 For example, to add a form title:
 
