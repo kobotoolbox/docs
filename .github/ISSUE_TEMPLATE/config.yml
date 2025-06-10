@@ -1,1 +1,8 @@
 blank_issues_enabled: false
+contact_links:
+  - name: "Zulip channel #Kobo support docs"
+    url: https://chat.kobotoolbox.org/#narrow/stream/64-Kobo-support-docs
+    about: For Kobo team members, please post here with requests related to the content of the documentation.
+  - name: KoboToolbox Community Forum
+    url: https://community.kobotoolbox.org/c/support-article/29
+    about: For everyone else, please report your feedback here.
