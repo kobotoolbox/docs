@@ -1,5 +1,5 @@
 # Getting started with XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/20299cde999ce130010bdb288e23375862822a40/source/getting_started_xlsform.md" class="reference">10 Jun 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f3f8444cc021d0443c374b53ddc004b61ec19432/source/getting_started_xlsform.md" class="reference">10 Jun 2025</a>
 
 When creating survey forms for KoboToolbox, you can build your form with the KoboToolbox Formbuilder or in XLSForm. XLSForm is very effective for creating both basic and advanced forms in a user-friendly format.
 
@@ -49,12 +49,17 @@ To set up the basic structure of an XLSForm:
 ### Mandatory columns in XLSForm
 
 ### Survey worksheet
-| type | Defines the question type (e.g., text, integer, select_one)|
+
+| Column name | Description |
+| :--- | :--- |
+| type | Defines the question type (e.g., text, integer, select_one) |
 | name | Defines a short, unique name to refer to each question |
 | label | Defines the question text as it will be displayed in the form |
 
 ### Choices worksheet
 
+| Column name | Description |
+| :--- | :--- |
 | list_name | Defines the unique identifier for a list of option choices |
 | name | Defines a short, unique name to refer to each option choice |
 | label | Defines the choice text as it will be displayed in the form |
