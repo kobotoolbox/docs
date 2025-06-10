@@ -48,7 +48,7 @@ To set up the basic structure of an XLSForm:
 
 ### Mandatory columns in XLSForm
 
-### Survey worksheet
+#### Survey worksheet
 
 | Column name | Description |
 | :--- | :--- |
@@ -56,7 +56,7 @@ To set up the basic structure of an XLSForm:
 | name | Defines a short, unique name to refer to each question |
 | label | Defines the question text as it will be displayed in the form |
 
-### Choices worksheet
+#### Choices worksheet
 
 | Column name | Description |
 | :--- | :--- |
