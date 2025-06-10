@@ -108,7 +108,8 @@
           
   <section id="getting-started-with-xlsform">
 <h1>Getting started with XLSForm<a class="headerlink" href="#getting-started-with-xlsform" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b2261015904850c0538e9b6e122b846ffb740894/source/getting_started_xlsform.md" class="reference">11 Apr 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/20299cde999ce130010bdb288e23375862822a40/source/getting_started_xlsform.md" class="reference">10 Jun 2025</a></p>
+<p>When creating survey forms for KoboToolbox, you can build your form with the KoboToolbox Formbuilder or in XLSForm. XLSForm is very effective for creating both basic and advanced forms in a user-friendly format.</p>
 <p>This article explains how to:</p>
 <ul class="simple">
 <li><p>Set up an XLSForm using Microsoft Excel</p></li>
@@ -153,6 +154,21 @@
 </ul>
 </li>
 </ol>
+<section id="mandatory-columns-in-xlsform">
+<h3>Mandatory columns in XLSForm<a class="headerlink" href="#mandatory-columns-in-xlsform" title="Permalink to this heading">¶</a></h3>
+</section>
+<section id="survey-worksheet">
+<h3>Survey worksheet<a class="headerlink" href="#survey-worksheet" title="Permalink to this heading">¶</a></h3>
+<p>| type | Defines the question type (e.g., text, integer, select_one)|
+| name | Defines a short, unique name to refer to each question |
+| label | Defines the question text as it will be displayed in the form |</p>
+</section>
+<section id="choices-worksheet">
+<h3>Choices worksheet<a class="headerlink" href="#choices-worksheet" title="Permalink to this heading">¶</a></h3>
+<p>| list_name | Defines the unique identifier for a list of option choices |
+| name | Defines a short, unique name to refer to each option choice |
+| label | Defines the choice text as it will be displayed in the form |</p>
+</section>
 </section>
 <section id="adding-questions">
 <h2>Adding questions<a class="headerlink" href="#adding-questions" title="Permalink to this heading">¶</a></h2>
@@ -173,6 +189,10 @@
 <tr class="row-even"><td class="text-left"><p>text</p></td>
 <td class="text-left"><p>yourname</p></td>
 <td class="text-left"><p>What is your name?</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -198,6 +218,10 @@
 <td class="text-left"><p>baby_sex</p></td>
 <td class="text-left"><p>What is your baby’s sex?</p></td>
 </tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
 </tbody>
 </table>
 <ol class="arabic simple" start="7">
@@ -214,6 +238,10 @@
 <tr class="row-even"><td class="text-left"><p>integer</p></td>
 <td class="text-left"><p>age</p></td>
 <td class="text-left"><p>How old are you?</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -259,6 +287,10 @@
 <td class="text-left"><p>female</p></td>
 <td class="text-left"><p>Female</p></td>
 </tr>
+<tr class="row-even"><td class="text-left"><p>choices</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
 </tbody>
 </table>
 </section>
@@ -284,6 +316,9 @@
 </tr>
 <tr class="row-odd"><td class="text-left"><p>version</p></td>
 <td class="text-left"><p>Form version ID</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>settings</p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
