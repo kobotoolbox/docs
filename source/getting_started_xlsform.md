@@ -49,12 +49,17 @@ To set up the basic structure of an XLSForm:
 ### Mandatory columns in XLSForm
 
 ### Survey worksheet
-| type | Defines the question type (e.g., text, integer, select_one)|
+
+| Column name | Description |
+| :--- | :--- |
+| type | Defines the question type (e.g., text, integer, select_one) |
 | name | Defines a short, unique name to refer to each question |
 | label | Defines the question text as it will be displayed in the form |
 
 ### Choices worksheet
 
+| Column name | Description |
+| :--- | :--- |
 | list_name | Defines the unique identifier for a list of option choices |
 | name | Defines a short, unique name to refer to each option choice |
 | label | Defines the choice text as it will be displayed in the form |
