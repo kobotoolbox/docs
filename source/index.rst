@@ -12,11 +12,12 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :caption: Getting Started
   :name: home-page-toc-getting-started
 
+  welcome
   about_kobotoolbox
-  overview_of_creating_a_project
+  creating_account
   new_form
   quick_start
-  welcome
+  
 
 .. toctree::
   :maxdepth: 2
