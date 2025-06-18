@@ -32,6 +32,7 @@ Regex can also be coded in XLSForm, under the _constraint_ column:
 | type | name | label                       | appearance | constraint              | constraint_message                |
 | :--- | :--- | :-------------------------- | :--------- | :---------------------- | :-------------------------------- |
 | text | q1   | Mobile number of respondent | numbers    | regex(., '^[0-9]{10}$') | This value must be only 10 digits |
+| survey |
 
 Alternatively, you can create a `calculate` question type and then define the
 regex code under the _calculation_ column. You could then use this variable as
@@ -43,6 +44,7 @@ many times as needed in the survey:
 | text      | q1   | Name of the Enumerator |                                          | regex(., ${q0}) | Please use this format: Kobe Bryant |
 | text      | q2   | Name of the Respondent |                                          | regex(., ${q0}) | Please use this format: Kobe Bryant |
 | integer   | q3   | Age of the Respondent  |                                          |                 |                                     |
+| survey |
 
 ## How do I build the regex that I need?
 

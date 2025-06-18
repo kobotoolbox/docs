@@ -35,6 +35,7 @@ by defining the theme under the `style` column in the `settings` sheet:
 | form_title  | style |
 | :---------- | :---- |
 | Themed form | pages |
+| settings |
 
 ## Available styles in XLSForm:
 

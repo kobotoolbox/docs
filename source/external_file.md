@@ -28,6 +28,7 @@ more information.
 | text                            | name   | What is your name?            |
 | select_one sex                  | sex    | What is your sex?             |
 | select_one_from_file fruits.csv | fruits | What is your favourite fruit? |
+| survey |
 
 **choices**
 
@@ -35,6 +36,7 @@ more information.
 | :-------- | :--- | :----- |
 | sex       | 1    | Male   |
 | sex       | 2    | Female |
+| choices |
 
 <p class="note">The <code>fruits.csv</code> is the file name containing the choices for the question "What is your favorite fruit?".</p>
 

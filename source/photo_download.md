@@ -35,6 +35,7 @@ If your survey had the following question:
 | type  | name    | label           |
 | :---- | :------ | :-------------- |
 | image | image_1 | Submit an image |
+| survey |
 
 And a submission to that question with the filename of "image.jpg", the export
 will have the following result:

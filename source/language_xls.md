@@ -42,6 +42,7 @@ Here are detailed instructions on how you can add another language to your form:
 | text             | full_name      | What is your name?             |                           |
 | select_one yesno | children_yesno | Do you have any children?      |                           |
 | integer          | children_count | How many children do you have? | ${children_yesno} = 'yes' |
+| survey |
 
 -   Now add your translations for every row inside the `label::language (code)`
     column. When you are done, make sure you didn't skip any questions (for
@@ -59,6 +60,7 @@ Here are detailed instructions on how you can add another language to your form:
 | text             | full_name      | What is your name?             | Quel est votre nom?            |                           |
 | select_one yesno | children_yesno | Do you have any children?      | Avez-vous des enfants?         |                           |
 | integer          | children_count | How many children do you have? | Combien des enfants avez-vous? | ${children_yesno} = 'yes' |
+| survey |
 
 -   Now switch to the **choices** sheet of your file, if you have one.
 
@@ -73,6 +75,7 @@ Here are detailed instructions on how you can add another language to your form:
 | :-------- | :--- | :------------------ | :------------------- |
 | yesno     | yes  | Yes                 | Oui                  |
 | yesno     | no   | No                  | Non                  |
+| choices |
 
 -   In the **settings** sheet, underneath `form_title` edit the text of your
     form's title to something like "My form (English and French)" so you can
@@ -83,6 +86,7 @@ Here are detailed instructions on how you can add another language to your form:
 | form_title                   |
 | :--------------------------- |
 | My form (English and French) |
+| settings |
 
 -   Save your file and close Excel.
 

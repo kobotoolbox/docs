@@ -28,6 +28,7 @@ question to your form. There are three types of GPS questions: **Point**,
 | geopoint | point | Record your current location | This question collects a single GPS coordinate that denotes a single point           |
 | geotrace | line  | Record a line                | This question collects two coordinates to form a line                                |
 | geoshape | area  | Record an area               | This question collects GPS coordinates that mark out a closed loop/area in any shape |
+| survey |
 
 ## Collecting Data Using the GPS Questions
 

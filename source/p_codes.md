@@ -34,6 +34,7 @@ following:
 | calculate         | name_admin1  |         |                                                  | if(string-length(${pcode_admin1}) != 0, jr:choice-name(${pcode_admin1}, '${pcode_admin1}'), '(unspecified pcode_admin1)') |
 | calculate         | name_admin2  |         |                                                  | if(string-length(${pcode_admin2}) != 0, jr:choice-name(${pcode_admin2}, '${pcode_admin2}'), '(unspecified pcode_admin2)') |
 | calculate         | name_admin3  |         |                                                  | if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, '${pcode_admin3}'), '(unspecified pcode_admin3)') |
+| survey |
 
 **choices**
 
@@ -53,3 +54,4 @@ following:
 | admin3    | 22   | Redmond     | 12    | 15     |
 | admin3    | 23   | Tacoma      | 12    | 16     |
 | admin3    | 24   | King        | 12    | 16     |
+| choices |

@@ -52,6 +52,7 @@ in Excel or another spreadsheet program).
 | select_one states   | Q1   | Which state?  |                              |
 | select_one counties | Q2   | Which county? | state=${Q1}                  |
 | select_one cities   | Q3   | Which city?   | state=${Q1} and county=${Q2} |
+| survey |
 
 2. In the same survey sheet, add a column called `choice_filter` and add the
    XLSForm reference to each of the parent items.
@@ -78,6 +79,7 @@ in Excel or another spreadsheet program).
 | cities    | redmond     | Redmond     | washington | king    |
 | cities    | tacoma      | Tacoma      | washington | pierce  |
 | cities    | puyallup    | Puyallup    | washington | pierce  |
+| choices |
 
 4. Note that for each of the child elements you need to add a column to specify
    its parent. For example, King and Pierce counties are in Washington state, so
@@ -99,6 +101,7 @@ responses from a previous question. For this one could do the following:
 | :-------------------- | :--- | :------------------------------------------------------------------------------- | :-------------------- |
 | select_multiple brand | Q1   | Q1. Which brand comes to mind comes to mind when you think about life insurance? |                       |
 | select_multiple brand | Q2   | Q2. Which branch would you choose for your future life insurance purchase?       | selected(${Q1}, name) |
+| survey |
 
 **choices**
 
@@ -114,6 +117,7 @@ responses from a previous question. For this one could do the following:
 | brand     | 8    | Tata AIA Life      |
 | brand     | 9    | ICICI Prudential   |
 | brand     | 10   | PNB Met Life       |
+| choices |
 
 Preview the data collecting form in Enketo:
 
