@@ -26,6 +26,7 @@ please follow the steps below:
 | end   | end   |                        |
 | audit | audit |                        |
 | text  | Q1    | Q1. What is your name? |
+| survey |
 
 2. Collect data using the [Collect Android app](kobocollect-android.md) and send
    the finalized forms back to the server. Collect saves the audit logs for each
