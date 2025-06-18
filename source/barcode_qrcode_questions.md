@@ -64,7 +64,7 @@ To add a "Barcode/QR code" question in XLSForm, add a question with type
 
 ### Default appearance
 
-![Default appearance of Barcode/QRCode questions](images/barcode_qrcode_questions/barcode_qrcode.png)
+![Default appearance of Barcode/QRCode questions](images/barcode_qrcode_questions/barcode_qrcode_default.png)
 
 ### Advanced appearance
 
