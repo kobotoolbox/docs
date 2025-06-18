@@ -53,3 +53,4 @@ each column.
 | select_one sector    | cluster  | Cluster                          | #sector    |
 | integer              | affected | Number of people affected        | #affected  |
 | integer              | reached  | Number of people reached to date | #reached   |
+| survey |
