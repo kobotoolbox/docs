@@ -61,11 +61,11 @@ To add a "Barcode/QR code" question in XLSForm, add a question with type
 
 ## How "Barcode/QR code" questions are displayed on web forms and KoboCollect
 
-## Default appearance
+### Default appearance
 
 ![Default appearance of Barcode/QRCode questions](images/barcode_qrcode_questions/barcode_qrcode_appearance.png)
 
-## Advanced appearance
+### Advanced appearance
 
 When adding the "Barcode/QR code" question type, you can change the appearance
 settings to switch from using the default (back) camera of the device to using
