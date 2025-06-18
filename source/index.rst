@@ -48,6 +48,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   select_one_and_select_many
   gps_questions
   calculate_questions
+  barcode_qrcode_questions
   advanced_calculate
   video_question_type
   matrix_response
