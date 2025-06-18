@@ -53,6 +53,7 @@ control the locked behaviour:
 | kobo--lock_all |
 | :------------- |
 | true           |
+| settings |
 
 The accepted values for `kobo--lock_all` are the same as in the `survey` sheet
 that
@@ -134,6 +135,7 @@ formbuilder.
 | choice_label_edit | locked    |           |           |
 | choice_order_edit | locked    | locked    |           |
 | form_appearance   |           |           | locked    |
+| kobo--locking-profiles |
 
 <p class="note">
   Note that not all valid restrictions need to be included in the
@@ -148,6 +150,7 @@ Set form-level restrictions and `kobo--lock_all` boolean.
 | kobo--locking-profile | kobo--lock_all |
 | :-------------------- | :------------- |
 | profile_3             | false          |
+| settings |
 
 <p class="note">
   Note that omitting <code>kobo--lock_all</code> from the
@@ -162,6 +165,7 @@ Set question and group-level restrictions.
 | :------------------- | :------ | :------------------ | :-------------------- |
 | select_one countries | country | Select your country | profile_1             |
 | select_one cities    | city    | Select your city    | profile_2             |
+| survey |
 
 **choices**
 
@@ -175,6 +179,7 @@ No restrictions can be set in the `choices` sheet.
 | cities    | toronto   | Toronto                  |
 | cities    | baltimore | Baltimore                |
 | cities    | boston    | Boston                   |
+| choices |
 
 <i>This example XLSForm can be downloaded
 <a download class="reference" href="/_static/files/library_locking/library-locking-example.xlsx">here</a>.</i>
