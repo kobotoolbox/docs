@@ -58,6 +58,7 @@ expression in a `calculate` question type. The example is shown as an
 | calculate | Q4_C    |                                        | substr(${Q4}, 0, 3)                                                   |
 | calculate | ID      |                                        | concat(${Q1_C}, '-', ${Q2_C}, '-', ${Q3_C}, '-', ${Q4_C}, '-', ${Q5}) |
 | note      | note_id | Your Unique ID for this form is: ${ID} |                                                                       |
+| survey |
 
 When you preview the example in **Enketo** web forms, the serial number will be
 presented within the note question as shown in the image below:
