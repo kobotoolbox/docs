@@ -1,8 +1,5 @@
 # Signature Question Type
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/collecting_signatures.md" class="reference">2
-Dec 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a7c98e6ab12a2ecd49ec465225c12ca0b0fad2e9/source/collecting_signatures.md" class="reference">18 Jun 2025</a>
 
 Some forms may require signatures to be included with them. You can use
 appearance `signature` on both Collect Android app and Enketo. The draw widget
@@ -32,6 +29,7 @@ question.
 | :---- | :--- | :--------------- | :--------- | :------------------------------- |
 | image | draw | Draw widget      | draw       | Image type with draw appearance  |
 | image | sign | Signature widget | signature  | Image type with signature widget |
+| survey |
 
 [Follow this link](https://enke.to/draw) to test the difference between the draw
 and signature widgets.

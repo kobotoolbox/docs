@@ -1,8 +1,5 @@
 # Select One or Many From External File Question Type
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/external_file.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d2496ff624743390f31884c84594e2d3a32b1c3a/source/external_file.md" class="reference">18 Jun 2025</a>
 
 In some cases, it may be desirable to host a list of choice options in an
 external file, rather than directly in the project XLSForm. For example, a long
@@ -28,6 +25,7 @@ more information.
 | text                            | name   | What is your name?            |
 | select_one sex                  | sex    | What is your sex?             |
 | select_one_from_file fruits.csv | fruits | What is your favourite fruit? |
+| survey |
 
 **choices**
 
@@ -35,6 +33,7 @@ more information.
 | :-------- | :--- | :----- |
 | sex       | 1    | Male   |
 | sex       | 2    | Female |
+| choices |
 
 <p class="note">The <code>fruits.csv</code> is the file name containing the choices for the question "What is your favorite fruit?".</p>
 

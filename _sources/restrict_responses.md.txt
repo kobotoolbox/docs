@@ -1,5 +1,5 @@
 # Restricting Text Responses With Regular Expressions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/99459d787563eb003603481e97ed2866f81e135c/source/restrict_responses.md" class="reference">21 Nov 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9dad90b5017786241e559bc5c9716d1262ab8556/source/restrict_responses.md" class="reference">18 Jun 2025</a>
 
 A regular expression, or regex, is a search pattern used for matching specific
 characters and ranges of characters within a string. It is widely used to
@@ -32,6 +32,7 @@ Regex can also be coded in XLSForm, under the _constraint_ column:
 | type | name | label                       | appearance | constraint              | constraint_message                |
 | :--- | :--- | :-------------------------- | :--------- | :---------------------- | :-------------------------------- |
 | text | q1   | Mobile number of respondent | numbers    | regex(., '^[0-9]{10}$') | This value must be only 10 digits |
+| survey |
 
 Alternatively, you can create a `calculate` question type and then define the
 regex code under the _calculation_ column. You could then use this variable as
@@ -43,6 +44,7 @@ many times as needed in the survey:
 | text      | q1   | Name of the Enumerator |                                          | regex(., ${q0}) | Please use this format: Kobe Bryant |
 | text      | q2   | Name of the Respondent |                                          | regex(., ${q0}) | Please use this format: Kobe Bryant |
 | integer   | q3   | Age of the Respondent  |                                          |                 |                                     |
+| survey |
 
 ## How do I build the regex that I need?
 

@@ -108,9 +108,7 @@
           
   <section id="adding-cascading-select-questions">
 <h1>Adding Cascading Select Questions<a class="headerlink" href="#adding-cascading-select-questions" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong>
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/cascading_select.md" class="reference">15
-Feb 2022</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/ed4ea3abe7b517e0de105b3665e156fe8718fb65/source/cascading_select.md" class="reference">18 Jun 2025</a></p>
 <p>Cascading select questions are sets of questions whose options depend on the
 response to a previous question. For example, your form may first ask the region
 where a respondent is from, and then in the next question list only the towns
@@ -172,6 +170,11 @@ following
 <td class="text-left"><p>Q3</p></td>
 <td class="text-left"><p>Which city?</p></td>
 <td class="text-left"><p>state=${Q1} and county=${Q2}</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -277,6 +280,12 @@ cities (follow the above template).</p></li>
 <td class="text-left"><p>washington</p></td>
 <td class="text-left"><p>pierce</p></td>
 </tr>
+<tr class="row-even"><td class="text-left"><p>choices</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
 </tbody>
 </table>
 <ol class="arabic simple" start="4">
@@ -312,6 +321,11 @@ responses from a previous question. For this one could do the following:</p>
 <td class="text-left"><p>Q2</p></td>
 <td class="text-left"><p>Q2. Which branch would you choose for your future life insurance purchase?</p></td>
 <td class="text-left"><p>selected(${Q1}, name)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
@@ -363,6 +377,10 @@ responses from a previous question. For this one could do the following:</p>
 <tr class="row-odd"><td class="text-left"><p>brand</p></td>
 <td class="text-left"><p>10</p></td>
 <td class="text-left"><p>PNB Met Life</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>choices</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>

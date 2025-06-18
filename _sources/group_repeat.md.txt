@@ -1,8 +1,5 @@
 # Grouping Questions and Repeating Groups
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/group_repeat.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/52881686dd9222c9f1268bf8d9b80474f8a06438/source/group_repeat.md" class="reference">18 Jun 2025</a>
 
 KoboToolbox supports grouping questions when designing a survey form. Users may
 need to group questions due to various reasons:
@@ -117,6 +114,7 @@ same screen through XLSForm (if you are comfortable with XLSForm) using the
 | select_one Sex | Sex   | Sex                         |            |
 | text           | Hobby | Hobby                       |            |
 | end_group      |       |                             |            |
+| survey |
 
 **choices**
 
@@ -124,6 +122,7 @@ same screen through XLSForm (if you are comfortable with XLSForm) using the
 | :-------- | :--- | :----- |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
+| survey |
 
 ## Ungrouping a set of questions
 
@@ -169,6 +168,7 @@ Alternatively, you could also do this in XLSForm:
 | select_one Sex | Sex   | Sex                                                    |             |
 | text           | Hobby | Hobby                                                  |             |
 | end_group      |       |                                                        |             |
+| survey |
 
 **choices**
 
@@ -178,6 +178,7 @@ Alternatively, you could also do this in XLSForm:
 | Q1        | 2    | No     |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
+| choices |
 
 ## Creating a roster (repeating group of questions)
 
@@ -213,6 +214,7 @@ survey in XLSForm as the formbuilder does not currently support this feature.
 | select_one Sex | Sex   | Sex                                                     |              |
 | text           | Hobby | Hobby                                                   |              |
 | end_repeat     |       |                                                         |              |
+| survey |
 
 **choices**
 
@@ -220,6 +222,7 @@ survey in XLSForm as the formbuilder does not currently support this feature.
 | :-------- | :--- | :----- |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
+| choices |
 
 <p class="note">Instead of having an indefinite number of repeat group iterations, this method will control the number of iterations based on the value in the <code>repeat_count</code> column.</p>
 
@@ -249,6 +252,7 @@ recorded in a roster (previously) to link with other repeating group questions
 | calculate            | name_individual   |                                                 | indexed-repeat(${Name}, ${DC}, position(..)) |                 |
 | select_one edu_level | edu_level         | What is ${name_individual}'s level of education |                                              |                 |
 | end_repeat           |                   |                                                 |                                              |                 |
+| survey |
 
 **choices**
 
@@ -259,6 +263,7 @@ recorded in a roster (previously) to link with other repeating group questions
 | edu_level | 1    | Primary                  |
 | edu_level | 2    | Secondary                |
 | edu_level | 3    | Higher Secondary & Above |
+| choices |
 
 Screen seen while [collecting data in Enketo](data_through_webforms.md):
 
@@ -294,6 +299,7 @@ Alternatively, you could also do this in XLSForm:
 | text           | Hobbies         | Hobbies of ${name_individual}       |                                              |              |
 | end_repeat     |                 |                                     |                                              |              |
 | end_repeat     |                 |                                     |                                              |              |
+| survey |
 
 **choices**
 
@@ -301,6 +307,7 @@ Alternatively, you could also do this in XLSForm:
 | :-------- | :--- | :----- |
 | Sex       | 1    | Male   |
 | Sex       | 2    | Female |
+| choices |
 
 Screen seen while collecting data in Enketo:
 
