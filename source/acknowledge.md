@@ -1,5 +1,5 @@
 # Acknowledge question type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/707308081d5a876429213086c5671f3ee7e750b7/source/acknowledge.md" class="reference">18 Apr 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0cb3af433994d6d725b19abac7e4d1e05a3e4f2f/source/acknowledge.md" class="reference">18 Jun 2025</a>
 
 The "Acknowledge" question type displays a single option, to select "OK" on the
 form.

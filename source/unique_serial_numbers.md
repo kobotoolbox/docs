@@ -1,5 +1,5 @@
 # Creating Unique Serial Numbers in Forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a6a8c49db039fb239d0cb09105e608288e920d65/source/unique_serial_numbers.md" class="reference">31 May 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1f742bc0abd5735a450ae91bc8b0a8a472df8151/source/unique_serial_numbers.md" class="reference">18 Jun 2025</a>
 
 There are times you may want to generate a unique serial number for each and
 every form in a project. This article discusses various workarounds on how to

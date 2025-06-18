@@ -1,8 +1,5 @@
 # Select One or Many From External File Question Type
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/external_file.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d2496ff624743390f31884c84594e2d3a32b1c3a/source/external_file.md" class="reference">18 Jun 2025</a>
 
 In some cases, it may be desirable to host a list of choice options in an
 external file, rather than directly in the project XLSForm. For example, a long

@@ -1,8 +1,5 @@
 # Grouping Questions and Repeating Groups
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/group_repeat.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/52881686dd9222c9f1268bf8d9b80474f8a06438/source/group_repeat.md" class="reference">18 Jun 2025</a>
 
 KoboToolbox supports grouping questions when designing a survey form. Users may
 need to group questions due to various reasons:
