@@ -36,14 +36,14 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   formbuilder
   question_types
   text_and_note
+  select_one_and_select_many
   acknowledge
   number_decimal_range
   date_time
   photo_audio_video_file
   video_question_type
-  rating_ranking
-  select_one_and_select_many
   barcode_qrcode_questions
+  rating_ranking
   external_file
   gps_questions
   calculate_questions
