@@ -14,7 +14,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
   welcome
   about_kobotoolbox
-  creating_account
+  overview_of_creating_a_project
   new_form
   quick_start
   
@@ -43,6 +43,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   video_question_type
   rating_ranking
   select_one_and_select_many
+  barcode_qrcode_questions
   external_file
   gps_questions
   calculate_questions
