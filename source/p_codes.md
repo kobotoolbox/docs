@@ -1,8 +1,5 @@
 # Including P-Codes in the Output Data
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/b3e7f7e71a74f63cc5f9ba61e9b437f3684457f5/source/p_codes.md" class="reference">12
-Aug 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c527e78d619b597dab8868ee3c5e55e056c97ec8/source/p_codes.md" class="reference">18 Jun 2025</a>
 
 If using cascading lists, please [follow the instructions](cascading_select.md)
 for cascading selects.
@@ -34,6 +31,7 @@ following:
 | calculate         | name_admin1  |         |                                                  | if(string-length(${pcode_admin1}) != 0, jr:choice-name(${pcode_admin1}, '${pcode_admin1}'), '(unspecified pcode_admin1)') |
 | calculate         | name_admin2  |         |                                                  | if(string-length(${pcode_admin2}) != 0, jr:choice-name(${pcode_admin2}, '${pcode_admin2}'), '(unspecified pcode_admin2)') |
 | calculate         | name_admin3  |         |                                                  | if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, '${pcode_admin3}'), '(unspecified pcode_admin3)') |
+| survey |
 
 **choices**
 
@@ -53,3 +51,4 @@ following:
 | admin3    | 22   | Redmond     | 12    | 15     |
 | admin3    | 23   | Tacoma      | 12    | 16     |
 | admin3    | 24   | King        | 12    | 16     |
+| choices |

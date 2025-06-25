@@ -1,5 +1,5 @@
 # Audit Logging Meta Question Type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/audit_logging.md" class="reference">3 May 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/121d36ac0b18e626b3ca2e1cc407d1673f1eb16d/source/audit_logging.md" class="reference">18 Jun 2025</a>
 
 Audit Logging can be a useful tool to monitor enumerator behavior and discover
 which questions are taking longer to answer, better understand how the
@@ -26,6 +26,7 @@ please follow the steps below:
 | end   | end   |                        |
 | audit | audit |                        |
 | text  | Q1    | Q1. What is your name? |
+| survey |
 
 2. Collect data using the [Collect Android app](kobocollect-android.md) and send
    the finalized forms back to the server. Collect saves the audit logs for each

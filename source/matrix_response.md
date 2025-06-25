@@ -1,5 +1,5 @@
 # Question Matrix Response Type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e7f863dd178949ac432672c795b603f34ec16550/source/matrix_response.md" class="reference">15 Mar 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4e250d5c878e7be6e10edca655079440fc25070c/source/matrix_response.md" class="reference">18 Jun 2025</a>
 
 The Question Matrix response type allows users to create a group of questions
 that display in a matrix format, whereby each cell within the matrix represents
@@ -49,6 +49,7 @@ the instructions as outlined in the images below:
 | select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                     |
 | integer          | Q2   | Q2. Number of assets                 | TRUE     |                     |
 | end_kobomatrix   |      |                                      |          |                     |
+| survey |
 
 **choices**
 
@@ -59,12 +60,14 @@ the instructions as outlined in the images below:
 | assets    | tv   | TV    |
 | yn        | yes  | Yes   |
 | yn        | no   | No    |
+| choices |
 
 **settings**
 
 | style                        |
 | :--------------------------- |
 | theme-grid no-text-transform |
+| settings |
 
 <p class="note">This method uses <code>begin_kobomatrix</code>,
 <code>end_kobomatrix</code> and <code>kobo--matrix_list</code>.</p>
@@ -85,3 +88,4 @@ matrix as follows:
 | select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                     |               |            |
 | integer          | Q2   | Q2. Number of assets                 | TRUE     |                     | ${Q1} = 'yes' | . > 2      |
 | end_kobomatrix   |      |                                      |          |                     |               |            |
+| survey |

@@ -1,8 +1,5 @@
 # Using HXL Tags
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/hxl.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/35fbc71a945de32234b76c9729fdbf939a5b2bcf/source/hxl.md" class="reference">18 Jun 2025</a>
 
 ## What exactly is HXL?
 
@@ -53,3 +50,4 @@ each column.
 | select_one sector    | cluster  | Cluster                          | #sector    |
 | integer              | affected | Number of people affected        | #affected  |
 | integer              | reached  | Number of people reached to date | #reached   |
+| survey |

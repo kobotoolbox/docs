@@ -1,11 +1,11 @@
 # Row-Level Permissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d1ca7aab12cbdbc39042c4d1648c856542b4e716/source/row_level_permissions.md" class="reference">14 Oct 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d756d1e9c63873597876b0c5fe7b3eb3d314dc9a/source/row_level_permissions.md" class="reference">29 Apr 2025</a>
 
 Row-level permissions are an extension of the
 [existing permissions feature](managing_permissions.md) in KoboToolbox. This feature allows project
 owners to assign eight different levels of permissions for a shared project. There are two types of row-level permissions: **user-based** and **condition-based**.
 
-Row-level permissions allow you to set controls for shared projects to determine which users can access submissions, which submissions they have access to, and if they can view, edit, or delete submissions. User-based permissions can be combined with condition-based permissions for even more control of users’ access to shared projects and data.
+Row-level permissions allow you to set controls for shared projects to determine which users can access submissions, which submissions they have access to, and whether they can view, edit, or delete submissions. User-based permissions can be combined with condition-based permissions for even more control of users’ access to shared projects and data.
 
 ## Accessing row-level permissions
 
@@ -47,7 +47,7 @@ This can be useful when you need a user to have access to only the submissions t
 | **Validate submissions only from specific users**   | Users with this permission can <a class="reference" href="record_validation.html"><strong>validate data</strong></a> submitted by specific users                                                               |
 | **Delete submissions only from specific users** | Users with this permission can **delete data** submitted by specific users |
 
-### To add user-based row-level permissions:
+### Adding user-based row-level permissions
 - Open your project and navigate to the **SETTINGS** tab
 - Go to the **Sharing** section
 - Click **Add user** and enter the username of the user you would like to share the project with and set permissions for
@@ -87,7 +87,7 @@ This can be useful for managing access to data in shared projects. A condition-b
     These condition-based row-level permissions are now available for sharing project data. This new feature adds four new levels of permissions to the existing row-level permissions. Previously, row-level permissions only included user-based permissions.
 </p>
 
-### To add condition-based permissions:
+### Adding condition-based permissions
 - Open your project and navigate to the **SETTINGS** tab
 - Go to the **Sharing** section
 - Click **Add user** and enter the username of the user you would like to share the project with and set permissions for
@@ -102,8 +102,8 @@ This can be useful for managing access to data in shared projects. A condition-b
 
 Once you have saved your permissions, the user you have shared the project with will be able to view, edit, validate, or delete project data submissions that have the required response to the specified question, depending on which permissions you selected.
 
-#### Important note:
-- For [Date](date_time.md) questions, the response value must be written in the format `YYYY-MM-DD` (e.g., `1974-12-31`).    
+#### Important note
+- For [Date](date_time.md) questions, the response value must be written in the format `YYYY-MM-DD` (e.g., `1974-12-31`).
 - For [Select One](select_one_and_select_many.md) and [Select Many](select_one_and_select_many.md) questions, the response value must be written using the unique XML value, not the label (e.g., `first_grade` rather than `First grade`).
 - The condition-based permissions feature does not support partial response value filtering. For example, if the question `occupation` is used to filter submissions using the response value `developer` and all the responses contain `software developer`, the condition will not be met and no submissions will be returned.
 - The feature does not permit filtering submissions using a question within a repeat group because repeating questions may have different responses within the same submission. For example, if the question `occupation` is used to filter submissions using the response value `software developer`, but the `occupation` question is part of a repeat group and has different responses within the same submission, the condition will not be met and no submissions will be returned. For a workaround solution, please view the Community Forum post [Condition-Based Permissions Using a Repeat Group Value](https://community.kobotoolbox.org/t/condition-based-permissions-from-a-repeat-group-value/59449).
@@ -118,7 +118,7 @@ These permissions allow **kobosouth** to view, edit, delete, and validate only t
 
 ![image](/images/row_level_permissions/condition-based-region-example-full.png)
 
-## Troubleshooting:
+## Troubleshooting
 
 1. When submitting data, a dialog box requesting user credentials will appear if the authentication requirement is active and the “Allow submissions to this form without a username and password” setting is turned off.
 

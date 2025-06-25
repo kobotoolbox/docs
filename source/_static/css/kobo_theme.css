@@ -36,13 +36,11 @@ a,
   cursor: pointer;
   color: hsl(207deg, 90%, 54%);
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 a:hover,
 .link:hover {
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   color: hsl(207deg, 90%, 39%);
 }
@@ -155,24 +153,35 @@ html body header.main-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   z-index: 999;
   top: 0;
   left: 0;
 }
-html body header.main-header h1.main-header__logo {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  margin: 15px 20px;
-  padding: 0;
-  color: transparent;
-  background: url("../images/kobologo.svg") no-repeat 0 100%;
-  background-size: contain;
+html body header.main-header .main-header__logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 20px;
 }
-html body header.main-header h1.main-header__logo a,
-html body header.main-header h1.main-header__logo a:hover {
-  color: transparent;
-  font-size: 1em;
+html body header.main-header .main-header__logo {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+html body header.main-header .main-header__logo img {
+  display: block;
+  height: 65px;
+  width: 250px;
 }
 html body header.main-header .main-header__navigation {
   display: -webkit-box;
@@ -249,13 +258,11 @@ html body header.main-header .main-header__navigation ul li.current a {
 }
 .main-search.main-search--big::before {
   background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: -o-linear-gradient(bottom, transparent, hsl(230deg, 12%, 29%));
   background: linear-gradient(to top, transparent, hsl(230deg, 12%, 29%));
   top: 0;
 }
 .main-search.main-search--big::after {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: -o-linear-gradient(top, transparent, hsl(230deg, 12%, 29%));
   background: linear-gradient(to bottom, transparent, hsl(230deg, 12%, 29%));
   bottom: 0;
 }
@@ -309,7 +316,6 @@ html body header.main-header .main-header__navigation ul li.current a {
   width: 1.4375rem;
   height: auto;
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
 }
 .main-search .main-search__arrow:hover svg {
@@ -338,7 +344,6 @@ html body header.main-header .main-header__navigation ul li.current a {
   left: 1.25rem;
   color: hsl(228deg, 12%, 59%);
   -webkit-transition: all 0.2s;
-  -o-transition: all 0.2s;
   transition: all 0.2s;
   pointer-events: none;
 }
@@ -754,13 +759,11 @@ html body div.footer p:last-child {
 }
 .community-questions.community-questions--big::before {
   background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: -o-linear-gradient(bottom, transparent, hsl(230deg, 12%, 29%));
   background: linear-gradient(to top, transparent, hsl(230deg, 12%, 29%));
   top: 0;
 }
 .community-questions.community-questions--big::after {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: -o-linear-gradient(top, transparent, hsl(230deg, 12%, 29%));
   background: linear-gradient(to bottom, transparent, hsl(230deg, 12%, 29%));
   bottom: 0;
 }

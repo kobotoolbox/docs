@@ -47,6 +47,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   external_file
   gps_questions
   calculate_questions
+  barcode_qrcode_questions
   advanced_calculate
   collecting_signatures
   matrix_response
