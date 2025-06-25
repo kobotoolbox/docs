@@ -928,19 +928,34 @@ html body div.footer p:last-child {
   background-image: url("../icons/custom/toc-chevron-right.svg");
 }
 .page#index .toctree-wrapper[id=home-page-toc-getting-started] .caption {
-  background-image: url("../icons/custom/getting-started.svg");
+  background-image: url("../icons/custom/getting-started.png");
 }
-.page#index .toctree-wrapper[id=home-page-toc-creating-forms] .caption {
-  background-image: url("../icons/custom/creating-forms.svg");
+.page#index .toctree-wrapper[id=home-page-toc-account-billing] .caption {
+  background-image: url("../icons/custom/account-billing.png");
+}
+.page#index .toctree-wrapper[id=home-page-toc-using-formbuilder] .caption {
+  background-image: url("../icons/custom/using-formbuilder.png");
+}
+.page#index .toctree-wrapper[id=home-page-toc-using-xlsform] .caption {
+  background-image: url("../icons/custom/using-xlsform.png");
 }
 .page#index .toctree-wrapper[id=home-page-toc-collecting-data] .caption {
-  background-image: url("../icons/custom/collecting-data.svg");
+  background-image: url("../icons/custom/collecting-data.png");
 }
 .page#index .toctree-wrapper[id=home-page-toc-managing-projects] .caption {
-  background-image: url("../icons/custom/managing-projects.svg");
+  background-image: url("../icons/custom/managing-projects.png");
 }
-.page#index .toctree-wrapper[id=home-page-toc-computer-server] .caption {
-  background-image: url("../icons/custom/computer-server.svg");
+.page#index .toctree-wrapper[id=home-page-toc-analyzing-data] .caption {
+  background-image: url("../icons/custom/analyzing-data.png");
+}
+.page#index .toctree-wrapper[id=home-page-toc-integrations] .caption {
+  background-image: url("../icons/custom/integrations.png");
+}
+.page#index .toctree-wrapper[id=home-page-toc-data-security-protection] .caption {
+  background-image: url("../icons/custom/data-security-protection.png");
+}
+.page#index .toctree-wrapper[id=home-page-toc-additional-resources] .caption {
+  background-image: url("../icons/custom/additional-resources.png");
 }
 
 .page#search .page__body form {
@@ -1005,10 +1020,22 @@ html body div.footer p:last-child {
 .page.custom-section-page#getting-started .page__body p.caption#getting-started-section-caption + ul {
   display: block;
 }
-.page.custom-section-page#creating-forms .page__body > p.caption:not(#creating-forms-section-caption) {
+.page.custom-section-page#account-billing .page__body > p.caption:not(#account-billing-section-caption) {
   display: none;
 }
-.page.custom-section-page#creating-forms .page__body p.caption#creating-forms-section-caption + ul {
+.page.custom-section-page#account-billing .page__body p.caption#account-billing-section-caption + ul {
+  display: block;
+}
+.page.custom-section-page#using-formbuilder .page__body > p.caption:not(#using-formbuilder-section-caption) {
+  display: none;
+}
+.page.custom-section-page#using-formbuilder .page__body p.caption#using-formbuilder-section-caption + ul {
+  display: block;
+}
+.page.custom-section-page#using-xlsform .page__body > p.caption:not(#using-xlsform-section-caption) {
+  display: none;
+}
+.page.custom-section-page#using-xlsform .page__body p.caption#using-xlsform-section-caption + ul {
   display: block;
 }
 .page.custom-section-page#collecting-data .page__body > p.caption:not(#collecting-data-section-caption) {
@@ -1023,10 +1050,28 @@ html body div.footer p:last-child {
 .page.custom-section-page#managing-projects .page__body p.caption#managing-projects-section-caption + ul {
   display: block;
 }
-.page.custom-section-page#computer-server .page__body > p.caption:not(#computer-server-section-caption) {
+.page.custom-section-page#analyzing-data .page__body > p.caption:not(#analyzing-data-section-caption) {
   display: none;
 }
-.page.custom-section-page#computer-server .page__body p.caption#computer-server-section-caption + ul {
+.page.custom-section-page#analyzing-data .page__body p.caption#analyzing-data-section-caption + ul {
+  display: block;
+}
+.page.custom-section-page#integrations .page__body > p.caption:not(#integrations-section-caption) {
+  display: none;
+}
+.page.custom-section-page#integrations .page__body p.caption#integrations-section-caption + ul {
+  display: block;
+}
+.page.custom-section-page#data-security-protection .page__body > p.caption:not(#data-security-protection-section-caption) {
+  display: none;
+}
+.page.custom-section-page#data-security-protection .page__body p.caption#data-security-protection-section-caption + ul {
+  display: block;
+}
+.page.custom-section-page#additional-resources .page__body > p.caption:not(#additional-resources-section-caption) {
+  display: none;
+}
+.page.custom-section-page#additional-resources .page__body p.caption#additional-resources-section-caption + ul {
   display: block;
 }
 

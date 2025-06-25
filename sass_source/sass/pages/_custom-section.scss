@@ -61,12 +61,32 @@
     }
   }
 
-  &#creating-forms .page__body {
-    > p.caption:not(#creating-forms-section-caption) {
+  &#account-billing .page__body {
+    > p.caption:not(#account-billing-section-caption) {
       display: none;
     }
 
-    p.caption#creating-forms-section-caption + ul {
+    p.caption#account-billing-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#using-formbuilder .page__body {
+    > p.caption:not(#using-formbuilder-section-caption) {
+      display: none;
+    }
+
+    p.caption#using-formbuilder-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#using-xlsform .page__body {
+    > p.caption:not(#using-xlsform-section-caption) {
+      display: none;
+    }
+
+    p.caption#using-xlsform-section-caption + ul {
       display: block;
     }
   }
@@ -91,12 +111,42 @@
     }
   }
 
-  &#computer-server .page__body {
-    > p.caption:not(#computer-server-section-caption) {
+  &#analyzing-data .page__body {
+    > p.caption:not(#analyzing-data-section-caption) {
       display: none;
     }
 
-    p.caption#computer-server-section-caption + ul {
+    p.caption#analyzing-data-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#integrations .page__body {
+    > p.caption:not(#integrations-section-caption) {
+      display: none;
+    }
+
+    p.caption#integrations-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#data-security-protection .page__body {
+    > p.caption:not(#data-security-protection-section-caption) {
+      display: none;
+    }
+
+    p.caption#data-security-protection-section-caption + ul {
+      display: block;
+    }
+  }
+
+  &#additional-resources .page__body {
+    > p.caption:not(#additional-resources-section-caption) {
+      display: none;
+    }
+
+    p.caption#additional-resources-section-caption + ul {
       display: block;
     }
   }
