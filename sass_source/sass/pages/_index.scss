@@ -133,61 +133,61 @@
   // styles for custom sections
   .toctree-wrapper[id="home-page-toc-getting-started"] {
     .caption {
-      background-image: url("../icons/custom/getting-started.svg");
+      background-image: url("../icons/custom/getting-started.png");
     }
   }
 
-  .toctree-wrapper[id="home-page-toc-creating-forms"] {
+  .toctree-wrapper[id="home-page-toc-account-billing"] {
     .caption {
-      background-image: url("../icons/custom/creating-forms.svg");
+      background-image: url("../icons/custom/account-billing.png");
+    }
+  }
+
+  .toctree-wrapper[id="home-page-toc-using-formbuilder"] {
+    .caption {
+      background-image: url("../icons/custom/using-formbuilder.png");
+    }
+  }
+
+  .toctree-wrapper[id="home-page-toc-using-xlsform"] {
+    .caption {
+      background-image: url("../icons/custom/using-xlsform.png");
     }
   }
 
   .toctree-wrapper[id="home-page-toc-collecting-data"] {
     .caption {
-      background-image: url("../icons/custom/collecting-data.svg");
+      background-image: url("../icons/custom/collecting-data.png");
     }
   }
 
   .toctree-wrapper[id="home-page-toc-managing-projects"] {
     .caption {
-      background-image: url("../icons/custom/managing-projects.svg");
+      background-image: url("../icons/custom/managing-projects.png");
     }
   }
 
-  .toctree-wrapper[id="home-page-toc-computer-server"] {
+  .toctree-wrapper[id="home-page-toc-analyzing-data"] {
     .caption {
-      background-image: url("../icons/custom/computer-server.svg");
+      background-image: url("../icons/custom/analyzing-data.png");
     }
   }
 
-  .toctree-wrapper[id="home-page-toc-new-1"] {
+  .toctree-wrapper[id="home-page-toc-integrations"] {
     .caption {
-      background-image: url("../icons/custom/computer-server.svg");
+      background-image: url("../icons/custom/integrations.png");
     }
   }
 
-  .toctree-wrapper[id="home-page-toc-new-2"] {
+  .toctree-wrapper[id="home-page-toc-data-security-protection"] {
     .caption {
-      background-image: url("../icons/custom/computer-server.svg");
+      background-image: url("../icons/custom/data-security-protection.png");
     }
   }
 
-  .toctree-wrapper[id="home-page-toc-new-3"] {
+  .toctree-wrapper[id="home-page-toc-additional-resources"] {
     .caption {
-      background-image: url("../icons/custom/computer-server.svg");
-    }
-  }
-
-  .toctree-wrapper[id="home-page-toc-new-4"] {
-    .caption {
-      background-image: url("../icons/custom/computer-server.svg");
-    }
-  }
-
-  .toctree-wrapper[id="home-page-toc-new-5"] {
-    .caption {
-      background-image: url("../icons/custom/computer-server.svg");
+      background-image: url("../icons/custom/additional-resources.png");
     }
   }
 }

@@ -62,13 +62,15 @@ html_sidebars = {
 
 html_additional_pages = {
     'getting-started': 'sections/getting-started.html',
-    'creating-forms': 'sections/creating-forms.html',
+    'account-billing': 'sections/account-billing.html',
+    'using-formbuilder': 'sections/using-formbuilder.html',
+    'using-xlsform': 'sections/using-xlsform.html',
     'collecting-data': 'sections/collecting-data.html',
     'managing-projects': 'sections/managing-projects.html',
-    'computer-server': 'sections/computer-server.html',
-    'new-1': 'sections/new-1.html',
-    'new-2': 'sections/new-2.html',
-    'new-3': 'sections/new-3.html',
+    'analyzing-data': 'sections/analyzing-data.html',
+    'integrations': 'sections/integrations.html',
+    'data-security-protection': 'sections/data-security-protection.html',
+    'additional-resources': 'sections/additional-resources.html',
 }
 
 html_theme_options = {
