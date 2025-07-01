@@ -41,7 +41,7 @@ tr.table-sheets .table-sheets__sheet {
 
   &.table-sheets__sheet--active {
     position: relative;
-    font-weight: bold;
+    font-weight: normal;
     color: $c_blue;
     border-bottom: 2px solid $c_blue;
     background: white;
