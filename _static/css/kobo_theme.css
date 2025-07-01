@@ -1070,7 +1070,7 @@ tr.table-sheets .table-sheets__sheet:first-of-type {
 }
 tr.table-sheets .table-sheets__sheet.table-sheets__sheet--active {
   position: relative;
-  font-weight: bold;
+  font-weight: normal;
   color: hsl(207deg, 90%, 54%);
   border-bottom: 2px solid hsl(207deg, 90%, 54%);
   background: white;
