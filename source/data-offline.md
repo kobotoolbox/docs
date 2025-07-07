@@ -40,5 +40,5 @@ Finally, it is also possible to install KoboToolbox on a local computer, e.g. a
 laptop, and then connect local mobile devices through a local WiFi to the
 computer. This WiFi does not need to be connected to the Internet as there would
 be a direct connection between the mobile devices and the local computer.
-[See here](kobo_local_computer.md) to find out how to install KoboToolbox on
+[See here](https://github.com/kobotoolbox/kobo-install) to find out how to install KoboToolbox on
 your computer.
