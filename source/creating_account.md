@@ -18,8 +18,7 @@ There are three ways to access **KoboToolbox**:
    KoboToolbox server. If your organization has a private server, you can access
    your account via your organization's server URL.
 1. **Install KoboToolbox on your own server**: Advanced users can install
-   **KoboToolbox** on [their own server](kobo_your_servers.md) (or on a
-   [local computer or device](kobo_local_computer.md)) using Docker. For more
+   **KoboToolbox** on their own server or on a local computer or device using Docker. For more
    details on how to install your own instance of **KoboToolbox**,
    [visit our kobo-install repository on GitHub](https://github.com/kobotoolbox/kobo-install).
 
