@@ -9,7 +9,7 @@ generally taking longer periods of time to submit answers.
 <p class="note">This feature requires manually analyzing CSV files.</p>
 
 The audit log meta question is a question type that is only supported by using
-the [Collect Android app](kobocollect-android.md).
+the [Collect Android app](kobocollect_on_android_latest.md).
 
 To add an `audit` meta question type to a form and view the finalized data,
 please follow the steps below:
@@ -28,7 +28,7 @@ please follow the steps below:
 | text  | Q1    | Q1. What is your name? |
 | survey |
 
-2. Collect data using the [Collect Android app](kobocollect-android.md) and send
+2. Collect data using the [Collect Android app](kobocollect_on_android_latest.md) and send
    the finalized forms back to the server. Collect saves the audit logs for each
    submission in a CSV file that are saved and uploaded to the server just as an
    attached photo would be.
