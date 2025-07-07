@@ -51,7 +51,7 @@ select the Android application.
 ![image](/images/data_collection_tool/KoboCollect.gif)
 
 For details on how to set up KoboCollect on any Android devices,
-[read this article](kobocollect-android.md).
+[read this article](kobocollect_on_android_latest.md).
 
 ### Collecting Data using the Enketo Webform
 
