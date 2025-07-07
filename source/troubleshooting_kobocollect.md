@@ -11,13 +11,13 @@ _Common error messages with troubleshooting guides:_
 **Troubleshooting:** The most likely solutions for this problem is either
 
 1. Check your URL, you most likely have a small typo in the URL you entered into
-   the settings. Refer to [this article](kobocollect-android.md) on setting up
+   the settings. Refer to [this article](kobocollect_on_android_latest.md) on setting up
    your android phone/tablet for data collection.
 
 2. Another possible explanation is that your phone wasn't connected to the
    Internet when you selected Get blank forms, for example when you are
    connected to a WiFi network in a public place that requires you to sign in
-   through your browser. [This article](kobocollect-android.md) discusses in
+   through your browser. [This article](kobocollect_on_android_latest.md) discusses in
    greater detail how to connect your device with your account.
 
 **Error: Generic Exception: No peer certificate or Form listing failed. Error:
