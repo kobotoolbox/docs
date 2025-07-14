@@ -1,13 +1,13 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
-1. [Using the Question Library](question_library.md) (2 Jul 2025)
-1. [Audit Logging Meta Question Type](audit_logging.md) (18 Jun 2025)
-1. [Creating Unique Serial Numbers in Forms](unique_serial_numbers.md) (18 Jun 2025)
-1. [Using HXL Tags](hxl.md) (18 Jun 2025)
-1. [Acknowledge question type](acknowledge.md) (18 Jun 2025)
-1. [Library locking](library_locking.md) (18 Jun 2025)
-1. [Collecting GPS Locations](collect_gps.md) (18 Jun 2025)
-1. [Select One or Many From External File Question Type](external_file.md) (18 Jun 2025)
-1. [Adding Another Language to your XLSForm](language_xls.md) (18 Jun 2025)
-1. [Grouping Questions and Repeating Groups](group_repeat.md) (18 Jun 2025)
+1. [HIPAA Compliance](hipaa_compliance.md) (7 Jul 2025)
+1. [﻿Transferring forms and data manually from one android device to another](transferring_forms.md) (7 Jul 2025)
+1. [Overview on Data Collection Tools](data-collection-tools.md) (7 Jul 2025)
+1. [Collecting Data Offline](data-offline.md) (7 Jul 2025)
+1. [Creating an account on KoboToolbox](creating_account.md) (7 Jul 2025)
+1. [Audit Logging Meta Question Type](audit_logging.md) (7 Jul 2025)
+1. [Deploying a Form to Start a New Data Collection Project](deploy_form_new_project.md) (7 Jul 2025)
+1. [Quick Start Overview](quick_start.md) (7 Jul 2025)
+1. [Data Collection on KoboCollect App (Latest Version)](kobocollect_on_android_latest.md) (7 Jul 2025)
+1. [Troubleshooting KoboCollect Android Application](troubleshooting_kobocollect.md) (7 Jul 2025)

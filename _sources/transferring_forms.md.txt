@@ -1,5 +1,5 @@
 ﻿# Transferring forms and data manually from one android device to another
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7ec7ae3ebc83a6295452ada6cabd91aba2740463/source/transferring_forms.md" class="reference">14 Mar 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/bc50d5ca6c8dae3c9cd55113a23269b8f60daf12/source/transferring_forms.md" class="reference">7 Jul 2025</a>
 
 There may be times when you are out in the field without internet connection,
 but you still need to upload the latest version of the forms (i.e., the latest
@@ -142,15 +142,9 @@ continue with data collection and upload the submissions to the server.
     _If the KoboCollect app is freshly installed in the device:_ If you have
     freshly installed KoboCollect app in your device, you may not see any folder
     without first configuring the server settings, as outlined in the support
-    article
-    [Data Collection on KoboCollect App (Older Version)](kobocollect-android)
-    and
-    [Data Collection on KoboCollect App (Latest Version)](kobocollect_on_android_latest).
+    article [Data Collection on KoboCollect App)](kobocollect_on_android_latest).
 
 -   If you have copied the forms and data from one Android device to another and
     are ready to submit the submissions from the device to the server, but still
     have issues submitting them, you can refer to the server configuration
-    suggestions that have been outlined in the support articles
-    [Data Collection on KoboCollect App (Older Version)](kobocollect-android)
-    and
-    [Data Collection on KoboCollect App (Latest Version)](kobocollect_on_android_latest).
+    suggestions that have been outlined in the support article ["Data Collection on KoboCollect App")](kobocollect_on_android_latest).
