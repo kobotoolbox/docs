@@ -1,5 +1,5 @@
 # Quick Start Overview
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f98a7445fe7665a3c2b8a0b83de1d8e3235fd51/source/quick_start.md" class="reference">4 Sep 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/201fa7575dcc0e9576db3efce8d0a66955e1c27a/source/quick_start.md" class="reference">7 Jul 2025</a>
 
 Here's how to quickly get started with a **new form**, deploy it as a **survey
 project**, and **start collecting data** in the field.
