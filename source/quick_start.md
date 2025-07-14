@@ -58,4 +58,4 @@ article [Creating an account on KoboToolbox](creating_account.md).
 8. You're ready to collect data! You can enter data
    [in the browser](data_through_webforms.md) on any device (computer, iPhone,
    Android) or use our Android application
-   [KoboCollect](kobocollect-android.md).
+   [KoboCollect](kobocollect_on_android_latest.md).

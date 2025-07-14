@@ -31,5 +31,5 @@ projects.
 
 If you are using KoboCollect on an Android device and you redeploy your form,
 you will need to delete your old blank form on your device and redo the
-[get blank form](kobocollect-android.md) process with internet access to update
+[get blank form](kobocollect_on_android_latest.md) process with internet access to update
 the form to the latest version.

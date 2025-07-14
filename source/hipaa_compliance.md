@@ -11,6 +11,6 @@ put in place and monitored to ensure compliance.
 We do not yet have plans to redesign the infrastructure of these public
 instances in accordance with the specific security protocols of HIPAA. Anyone
 willing to operate
-[their own, private instance of KoboToolbox](kobo_your_servers.md) could do so
+[their own, private instance of KoboToolbox](https://github.com/kobotoolbox/kobo-install) could do so
 in a HIPAA compliant way, for example by contracting with a hosting company that
 specializes in HIPAA compliance.

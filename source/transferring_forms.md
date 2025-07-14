@@ -142,15 +142,9 @@ continue with data collection and upload the submissions to the server.
     _If the KoboCollect app is freshly installed in the device:_ If you have
     freshly installed KoboCollect app in your device, you may not see any folder
     without first configuring the server settings, as outlined in the support
-    article
-    [Data Collection on KoboCollect App (Older Version)](kobocollect-android)
-    and
-    [Data Collection on KoboCollect App (Latest Version)](kobocollect_on_android_latest).
+    article [Data Collection on KoboCollect App)](kobocollect_on_android_latest).
 
 -   If you have copied the forms and data from one Android device to another and
     are ready to submit the submissions from the device to the server, but still
     have issues submitting them, you can refer to the server configuration
-    suggestions that have been outlined in the support articles
-    [Data Collection on KoboCollect App (Older Version)](kobocollect-android)
-    and
-    [Data Collection on KoboCollect App (Latest Version)](kobocollect_on_android_latest).
+    suggestions that have been outlined in the support article ["Data Collection on KoboCollect App")](kobocollect_on_android_latest).
