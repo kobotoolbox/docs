@@ -6,7 +6,8 @@ This repository contains all the user content of KoboToolbox's official document
 
 Please note that the purpose of the issue tracker on this repository is to track work on the *technical infrastructure* of the documentation site. For requests related to the content of the documentation, please:
 * Post in Zulip [#Kobo support docs](https://chat.kobotoolbox.org/#narrow/stream/64-Kobo-support-docs) if you are a member of the Kobo team
-* Otherwise, post in the [community forum](https://community.kobotoolbox.org/c/support-article/29)
+* Otherwise, please share your feedback through our [Community Feedback Form](https://ee-eu.kobotoolbox.org/x/OPizwor2)
+* For support requests or bug reports, please post in the [community forum](https://community.kobotoolbox.org/c/support-article/29)
 
 ## Local installation
 
