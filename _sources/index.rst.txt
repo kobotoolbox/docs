@@ -136,12 +136,12 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :caption: Integrations
   :name: home-page-toc-integrations
 
-  rest_services
   api
   synchronous_exports
   pulling_data_into_excelquery
   pulling_data_into_powerbi
   merging_dataset_excel_power_query
+  rest_services
   upload_to_gis
   kobotoolbox_monday_integration
 
