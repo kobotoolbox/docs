@@ -43,7 +43,7 @@ In the above example, the group "Survey" will only be displayed if the
 
 Below is the equivalent form logic in XLSForm syntax:
 
-**survey**
+**survey sheet**
 
 | type        | name    | label                                              | relevant          |
 | :---------- | :------ | :------------------------------------------------- | :---------------- |
