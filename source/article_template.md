@@ -5,13 +5,16 @@ This is where your intro goes. Note above that you need to update the article na
 
 This article includes:
 
--   Bullet 1
--   Bullet 2
--   Bullet 3
+-   [Formatting text in markdown](#this-is-a-header)
+-   [Adding media files](#adding-media-files)
+-   [Adding tables](#adding-tables)
+-   [HTML formatting](#html-formatting)
+-   [Creating a troubleshooting section](#troubleshooting)
+-   [List of icons](#list-of-icons)
 
 For help with markdown or HTML formatting, see [this guide](https://www.markdownguide.org/basic-syntax/).
 
-After creating a new article, don't forget to add it to the index.rst file.
+After creating a new article, don't forget to add it to the [index.rst](https://github.com/kobotoolbox/docs/blob/master/source/index.rst) file.
 
 <br/> 
 
@@ -21,8 +24,8 @@ After creating a new article, don't forget to add it to the index.rst file.
 - This is an unordered list
 - in markdown
 
-1. This is a numbered list
-2. in markdown 
+1. This is a numbered list.
+2. in markdown.
 
 This is some **bold text** in markdown.
 
@@ -30,7 +33,7 @@ This is some *italic text* in markdown.
 
 This is some `monospaced code` in markdown.
 
-> This is a block quote (not used in documentation)
+> This is a block quote (not currently used in documentation)
 
 Embed links: To transfer ownership of your Team to another user, [please contact our support team](support@kobotoolbox.org).
 
@@ -95,7 +98,7 @@ You can also include videos in the following way:
 
 ## Adding tables
 
-#### Normal table (this is an H4 header)
+### Normal table 
 
 | **Column name**    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
@@ -111,7 +114,7 @@ You can also include videos in the following way:
 | calculation        | Mathematical expression for calculate question |
 | default            | Default response for a question                |
 
-#### XLSForm table (this is an H4 header)
+### XLSForm table
 
 | type | name     | label              |
 | :--- | :------- | :----------------- |
@@ -151,14 +154,15 @@ And this is the second line.</p>
 
 Make your text <strong>bold</strong>, <em>italic</em>, or <code>monospaced code</code>.
 
-Add a list:
+Add a numbered list:
 <ol>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
+  <li>First item.</li>
+  <li>Second item.</li>
+  <li>Third item.</li>
+  <li>Fourth item.</li>
 </ol>
 
+Add an unnumbered list:
 <ul>
   <li>First item</li>
   <li>Second item</li>
@@ -173,8 +177,7 @@ Add a list:
 <details>
 <summary><strong>Enketo vs KoboCollect</strong></summary>
 <br>
-The matrix question only works with <strong>Enketo web forms</strong>. It is not
-supported with the <strong>KoboCollect Android App</strong>.
+Use this format to set up <strong>troubleshooting sections</strong> in your support articles. Include a short title that clearly describes the issue, and propose solutions here.
 </details>
 
 <br/> 
