@@ -106,16 +106,19 @@
           
   <section id="article-title">
 <h1>Article title<a class="headerlink" href="#article-title" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b6da2fd0379aee35d53655a5ae4391de19ffe19f/source/article_template.md" class="reference">23 Jul 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7db692347a669e3a8bb68ea735e41e0b9ae4bb5e/source/article_template.md" class="reference">23 Jul 2025</a></p>
 <p>This is where your intro goes. Note above that you need to update the article name in the “Last updated” code. Also, name the file according to the article title, and end the file name with <code class="docutils literal notranslate"><span class="pre">.md</span></code>.</p>
 <p>This article includes:</p>
 <ul class="simple">
-<li><p>Bullet 1</p></li>
-<li><p>Bullet 2</p></li>
-<li><p>Bullet 3</p></li>
+<li><p><a class="reference internal" href="#this-is-a-header">Formatting text in markdown</a></p></li>
+<li><p><a class="reference internal" href="#adding-media-files">Adding media files</a></p></li>
+<li><p><a class="reference internal" href="#adding-tables">Adding tables</a></p></li>
+<li><p><a class="reference internal" href="#html-formatting">HTML formatting</a></p></li>
+<li><p><a class="reference internal" href="#troubleshooting">Creating a troubleshooting section</a></p></li>
+<li><p><a class="reference internal" href="#list-of-icons">List of icons</a></p></li>
 </ul>
 <p>For help with markdown or HTML formatting, see <a class="reference external" href="https://www.markdownguide.org/basic-syntax/">this guide</a>.</p>
-<p>After creating a new article, don’t forget to add it to the index.rst file.</p>
+<p>After creating a new article, don’t forget to add it to the <a class="reference external" href="https://github.com/kobotoolbox/docs/blob/master/source/index.rst">index.rst</a> file.</p>
 <br/> 
 <section id="this-is-a-header">
 <h2>This is a header<a class="headerlink" href="#this-is-a-header" title="Permalink to this heading">¶</a></h2>
@@ -124,14 +127,14 @@
 <li><p>in markdown</p></li>
 </ul>
 <ol class="arabic simple">
-<li><p>This is a numbered list</p></li>
-<li><p>in markdown</p></li>
+<li><p>This is a numbered list.</p></li>
+<li><p>in markdown.</p></li>
 </ol>
 <p>This is some <strong>bold text</strong> in markdown.</p>
 <p>This is some <em>italic text</em> in markdown.</p>
 <p>This is some <code class="docutils literal notranslate"><span class="pre">monospaced</span> <span class="pre">code</span></code> in markdown.</p>
 <blockquote>
-<div><p>This is a block quote (not used in documentation)</p>
+<div><p>This is a block quote (not currently used in documentation)</p>
 </div></blockquote>
 <p>Embed links: To transfer ownership of your Team to another user, <a class="reference internal" href="#support&#64;kobotoolbox.org"><span class="xref myst">please contact our support team</span></a>.</p>
 <p>Learn more about <a class="reference external" href="https://www.kobotoolbox.org/services/training/">our training services</a>.</p>
@@ -176,8 +179,8 @@
 </section>
 <section id="adding-tables">
 <h2>Adding tables<a class="headerlink" href="#adding-tables" title="Permalink to this heading">¶</a></h2>
-<section id="normal-table-this-is-an-h4-header">
-<h3>Normal table (this is an H4 header)<a class="headerlink" href="#normal-table-this-is-an-h4-header" title="Permalink to this heading">¶</a></h3>
+<section id="normal-table">
+<h3>Normal table<a class="headerlink" href="#normal-table" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="text-left head"><p><strong>Column name</strong></p></th>
@@ -221,8 +224,8 @@
 </tbody>
 </table>
 </section>
-<section id="xlsform-table-this-is-an-h4-header">
-<h3>XLSForm table (this is an H4 header)<a class="headerlink" href="#xlsform-table-this-is-an-h4-header" title="Permalink to this heading">¶</a></h3>
+<section id="xlsform-table">
+<h3>XLSForm table<a class="headerlink" href="#xlsform-table" title="Permalink to this heading">¶</a></h3>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="text-left head"><p>type</p></th>
@@ -277,13 +280,14 @@ href='./_static/files/media/xlsform-example-media.zip'>here</a>. The files are s
 <p>This is the first line.<br>
 And this is the second line.</p>
 <p>Make your text <strong>bold</strong>, <em>italic</em>, or <code>monospaced code</code>.</p>
-<p>Add a list:</p>
+<p>Add a numbered list:</p>
 <ol>
-  <li>First item</li>
-  <li>Second item</li>
-  <li>Third item</li>
-  <li>Fourth item</li>
+  <li>First item.</li>
+  <li>Second item.</li>
+  <li>Third item.</li>
+  <li>Fourth item.</li>
 </ol>
+<p>Add an unnumbered list:</p>
 <ul>
   <li>First item</li>
   <li>Second item</li>
@@ -297,8 +301,7 @@ And this is the second line.</p>
 <details>
 <summary><strong>Enketo vs KoboCollect</strong></summary>
 <br>
-The matrix question only works with <strong>Enketo web forms</strong>. It is not
-supported with the <strong>KoboCollect Android App</strong>.
+Use this format to set up <strong>troubleshooting sections</strong> in your support articles. Include a short title that clearly describes the issue, and propose solutions here.
 </details>
 <br/> 
 </section>
