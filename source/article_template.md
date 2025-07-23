@@ -74,7 +74,7 @@ Click the <i class="k-icon k-icon-more"></i> **More actions** icon for the user 
 
 Click <i class="k-icon k-icon-replace"></i> **Replace form**.
 
-For a full list of all icons, see [here](https://support.kobotoolbox.org/article_template.html#list-of-icons).
+For a full list of all icons, see [here](https://support.kobotoolbox.org/article_template.html#list-of-icons) and also [here](https://support.kobotoolbox.org/_static/kpi-icons/k-icons.html).
 
 ### Adding a YouTube video
 
