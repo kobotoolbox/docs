@@ -113,6 +113,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   export_download
   archiving_projects
   managing_permissions
+  project_level_settings
   export_gps
   howto_edit_single_submissions
   howto_edit_multiple_submissions
