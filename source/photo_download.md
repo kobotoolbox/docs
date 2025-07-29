@@ -27,7 +27,7 @@ the methods below to extract your media files from the
 
 If your survey had the following question:
 
-**survey**
+**survey sheet**
 
 | type  | name    | label           |
 | :---- | :------ | :-------------- |
