@@ -42,7 +42,7 @@ in Excel or another spreadsheet program).
    following
    [this template](https://docs.google.com/spreadsheets/d/10gpBV6YaYGx1i367hyW-w1Ms9tkUQnCx0V8YsdwYxmk/edit#gid=0).
 
-**survey**
+**survey sheet**
 
 | type                | name | label         | choice_filter                |
 | :------------------ | :--- | :------------ | :--------------------------- |
@@ -58,7 +58,7 @@ in Excel or another spreadsheet program).
    appear in the different questions, e.g. the lists of states, counties, and
    cities (follow the above template).
 
-**choices**
+**choices sheet**
 
 | list_name | name        | label       | state      | county  |
 | :-------- | :---------- | :---------- | :--------- | :------ |
@@ -92,7 +92,7 @@ in Excel or another spreadsheet program).
 Sometimes a researcher wishes to limit the choices of one question based on the
 responses from a previous question. For this one could do the following:
 
-**survey**
+**survey sheet**
 
 | type                  | name | label                                                                            | choice_filter         |
 | :-------------------- | :--- | :------------------------------------------------------------------------------- | :-------------------- |
@@ -100,7 +100,7 @@ responses from a previous question. For this one could do the following:
 | select_multiple brand | Q2   | Q2. Which branch would you choose for your future life insurance purchase?       | selected(${Q1}, name) |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label              |
 | :-------- | :--- | :----------------- |

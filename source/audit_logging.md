@@ -18,7 +18,7 @@ please follow the steps below:
    meta questions. Then upload the form file to your project and deploy the
    form.
 
-**survey**
+**survey sheet**
 
 | type  | name  | label                  |
 | :---- | :---- | :--------------------- |

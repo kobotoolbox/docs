@@ -27,7 +27,7 @@ You can set these styles through the KoboToolbox formbuilder user interface:
 If you are building your survey project through XLSForm, you could do the same
 by defining the theme under the `style` column in the `settings` sheet:
 
-**settings**
+**settings sheet**
 
 | form_title  | style |
 | :---------- | :---- |

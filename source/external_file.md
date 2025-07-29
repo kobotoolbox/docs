@@ -18,7 +18,7 @@ more information.
 
 <p class="note">The file-type can be either <code>CSV</code> or <code>XML</code></p>
 
-**survey**
+**survey sheet**
 
 | type                            | name   | label                         |
 | :------------------------------ | :----- | :---------------------------- |
@@ -27,7 +27,7 @@ more information.
 | select_one_from_file fruits.csv | fruits | What is your favourite fruit? |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |

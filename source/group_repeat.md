@@ -104,7 +104,7 @@ Alternatively, you could also group a set of questions and display them on the
 same screen through XLSForm (if you are comfortable with XLSForm) using the
 `field-list` option under the `appearance` column:
 
-**survey**
+**survey sheet**
 
 | type           | name  | label                       | appearance |
 | :------------- | :---- | :-------------------------- | :--------- |
@@ -116,7 +116,7 @@ same screen through XLSForm (if you are comfortable with XLSForm) using the
 | end_group      |       |                             |            |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |
@@ -157,7 +157,7 @@ Then select **Skip Logic** and configure as shown in the image below:
 
 Alternatively, you could also do this in XLSForm:
 
-**survey**
+**survey sheet**
 
 | type           | name  | label                                                  | relevant    |
 | :------------- | :---- | :----------------------------------------------------- | :---------- |
@@ -170,7 +170,7 @@ Alternatively, you could also do this in XLSForm:
 | end_group      |       |                                                        |             |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |
@@ -203,7 +203,7 @@ Sometimes your survey may demand you to control the repeating of questions in a
 roster with a value of a certain variable. In this case, you should modify your
 survey in XLSForm as the formbuilder does not currently support this feature.
 
-**survey**
+**survey sheet**
 
 | type           | name  | label                                                   | repeat_count |
 | :------------- | :---- | :------------------------------------------------------ | :----------- |
@@ -216,7 +216,7 @@ survey in XLSForm as the formbuilder does not currently support this feature.
 | end_repeat     |       |                                                         |              |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |
@@ -236,7 +236,7 @@ function in the XLSForm. For example, you could use the name that has been
 recorded in a roster (previously) to link with other repeating group questions
 (like education etc.):
 
-**survey**
+**survey sheet**
 
 | type                 | name              | label                                           | calculation                                  | repeat_count    |
 | :------------------- | :---------------- | :---------------------------------------------- | :------------------------------------------- | :-------------- |
@@ -254,7 +254,7 @@ recorded in a roster (previously) to link with other repeating group questions
 | end_repeat           |                   |                                                 |                                              |                 |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label                    |
 | :-------- | :--- | :----------------------- |
@@ -285,7 +285,7 @@ nested repeat form as shown in the image below:
 
 Alternatively, you could also do this in XLSForm:
 
-**survey**
+**survey sheet**
 
 | type           | name            | label                               | calculation                                  | repeat_count |
 | :------------- | :-------------- | :---------------------------------- | :------------------------------------------- | :----------- |
@@ -301,7 +301,7 @@ Alternatively, you could also do this in XLSForm:
 | end_repeat     |                 |                                     |                                              |              |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label  |
 | :-------- | :--- | :----- |

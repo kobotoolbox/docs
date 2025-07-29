@@ -21,7 +21,7 @@ following:
 
 ## Example with 3 admin levels, using cascading lists
 
-**survey**
+**survey sheet**
 
 | type              | name         | label   | choice_filter                                    | calculation                                                                                                               |
 | :---------------- | :----------- | :------ | :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
@@ -33,7 +33,7 @@ following:
 | calculate         | name_admin3  |         |                                                  | if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, '${pcode_admin3}'), '(unspecified pcode_admin3)') |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label       | state | county |
 | :-------- | :--- | :---------- | :---- | :----- |
