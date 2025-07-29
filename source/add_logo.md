@@ -12,7 +12,7 @@ To begin:
    label blank, and add a column titled `media::image` with your logo file name
    in the cell. As shown below:
 
-**survey**
+**survey sheet**
 
 | type | name | label | media::image |
 | :--- | :--- | :---- | :----------- |
