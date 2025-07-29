@@ -29,6 +29,8 @@ exactly 10 digits, controlling the entry of a valid email id etc.)_.
 
 Regex can also be coded in XLSForm, under the _constraint_ column:
 
+**survey sheet**
+
 | type | name | label                       | appearance | constraint              | constraint_message                |
 | :--- | :--- | :-------------------------- | :--------- | :---------------------- | :-------------------------------- |
 | text | q1   | Mobile number of respondent | numbers    | regex(., '^[0-9]{10}$') | This value must be only 10 digits |
@@ -37,6 +39,8 @@ Regex can also be coded in XLSForm, under the _constraint_ column:
 Alternatively, you can create a `calculate` question type and then define the
 regex code under the _calculation_ column. You could then use this variable as
 many times as needed in the survey:
+
+**survey sheet**
 
 | type      | name | label                  | calculation                              | constraint      | constraint_message                  |
 | :-------- | :--- | :--------------------- | :--------------------------------------- | :-------------- | :---------------------------------- |
