@@ -40,7 +40,7 @@ When authoring an XLSForm, simply insert one extra column in any existing
 spreadsheet and fill it with HXL hashtags identifying the type of information in
 each column.
 
-**survey**
+**survey sheet**
 
 | type                 | name     | label                            | hxl        |
 | :------------------- | :------- | :------------------------------- | :--------- |
