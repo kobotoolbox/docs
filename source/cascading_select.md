@@ -1,5 +1,5 @@
 # Adding Cascading Select Questions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ed4ea3abe7b517e0de105b3665e156fe8718fb65/source/cascading_select.md" class="reference">18 Jun 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/cascading_select.md" class="reference">29 Jul 2025</a>
 
 Cascading select questions are sets of questions whose options depend on the
 response to a previous question. For example, your form may first ask the region
