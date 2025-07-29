@@ -41,7 +41,7 @@ question.
 Alternatively, you can also build a Matrix Question in a XLSForm by following
 the instructions as outlined in the images below:
 
-**survey**
+**survey sheet**
 
 | type             | name | label                                | required | `kobo--matrix_list` |
 | :--------------- | :--- | :----------------------------------- | :------- | :----------------   |
@@ -51,7 +51,7 @@ the instructions as outlined in the images below:
 | end_kobomatrix   |      |                                      |          |                     |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label |
 | :-------- | :--- | :---- |
@@ -62,7 +62,7 @@ the instructions as outlined in the images below:
 | yn        | no   | No    |
 | choices |
 
-**settings**
+**settings sheet**
 
 | style                        |
 | :--------------------------- |
@@ -80,7 +80,7 @@ screenshot below (In [Enketo](data_through_webforms.md) only):
 It is also possible to include `relevant` and `constraint` conditions within the
 matrix as follows:
 
-**survey**
+**survey sheet**
 
 | type             | name | label                                | required | `kobo--matrix_list` | relevant      | constraint |
 | :--------------- | :--- | :----------------------------------- | :------- | :----------------   | :------------ | :--------- |
