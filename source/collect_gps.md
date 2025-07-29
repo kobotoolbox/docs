@@ -18,7 +18,7 @@ question to your form. There are three types of GPS questions: **Point**,
 -   When using **XLSForm** design, you have to define the question types as
     below to get the question you desire.
 
-**survey**
+**survey sheet**
 
 | type     | name  | label                        | hint                                                                                 |
 | :------- | :---- | :--------------------------- | :----------------------------------------------------------------------------------- |
