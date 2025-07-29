@@ -113,13 +113,14 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   export_download
   archiving_projects
   managing_permissions
+  row_level_permissions
   export_gps
   howto_edit_single_submissions
   howto_edit_multiple_submissions
   photo_download
   recovering_previous_formdata
-  row_level_permissions
   getting_started_organization_feature
+  activity_logs
 
 .. toctree::
   :maxdepth: 2
