@@ -48,7 +48,7 @@ are redundant as the form is _fully_ locked down. If it is set to `False` _or_
 omitted from the `settings` sheet, then defined locking profiles can be used to
 control the locked behaviour:
 
-**settings**
+**settings sheet**
 
 | kobo--lock_all |
 | :------------- |
@@ -143,7 +143,7 @@ formbuilder.
   restriction is included.
 </p>
 
-**settings**
+**settings sheet**
 
 Set form-level restrictions and `kobo--lock_all` boolean.
 
@@ -157,7 +157,7 @@ Set form-level restrictions and `kobo--lock_all` boolean.
   <code>settings</code> sheet is equivalent to setting it to <code>False</code>.
 </p>
 
-**survey**
+**survey sheet**
 
 Set question and group-level restrictions.
 
@@ -167,7 +167,7 @@ Set question and group-level restrictions.
 | select_one cities    | city    | Select your city    | profile_2             |
 | survey |
 
-**choices**
+**choices sheet**
 
 No restrictions can be set in the `choices` sheet.
 
