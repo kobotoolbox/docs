@@ -1,5 +1,5 @@
 # Using HXL Tags
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/35fbc71a945de32234b76c9729fdbf939a5b2bcf/source/hxl.md" class="reference">18 Jun 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/hxl.md" class="reference">29 Jul 2025</a>
 
 ## What exactly is HXL?
 
@@ -40,7 +40,7 @@ When authoring an XLSForm, simply insert one extra column in any existing
 spreadsheet and fill it with HXL hashtags identifying the type of information in
 each column.
 
-**survey**
+**survey sheet**
 
 | type                 | name     | label                            | hxl        |
 | :------------------- | :------- | :------------------------------- | :--------- |

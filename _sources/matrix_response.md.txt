@@ -1,5 +1,5 @@
 # Question Matrix Response Type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4e250d5c878e7be6e10edca655079440fc25070c/source/matrix_response.md" class="reference">18 Jun 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/matrix_response.md" class="reference">29 Jul 2025</a>
 
 The Question Matrix response type allows users to create a group of questions
 that display in a matrix format, whereby each cell within the matrix represents
@@ -41,7 +41,7 @@ question.
 Alternatively, you can also build a Matrix Question in a XLSForm by following
 the instructions as outlined in the images below:
 
-**survey**
+**survey sheet**
 
 | type             | name | label                                | required | `kobo--matrix_list` |
 | :--------------- | :--- | :----------------------------------- | :------- | :----------------   |
@@ -51,7 +51,7 @@ the instructions as outlined in the images below:
 | end_kobomatrix   |      |                                      |          |                     |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label |
 | :-------- | :--- | :---- |
@@ -62,7 +62,7 @@ the instructions as outlined in the images below:
 | yn        | no   | No    |
 | choices |
 
-**settings**
+**settings sheet**
 
 | style                        |
 | :--------------------------- |
@@ -80,7 +80,7 @@ screenshot below (In [Enketo](data_through_webforms.md) only):
 It is also possible to include `relevant` and `constraint` conditions within the
 matrix as follows:
 
-**survey**
+**survey sheet**
 
 | type             | name | label                                | required | `kobo--matrix_list` | relevant      | constraint |
 | :--------------- | :--- | :----------------------------------- | :------- | :----------------   | :------------ | :--------- |

@@ -1,5 +1,5 @@
 # Including P-Codes in the Output Data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c527e78d619b597dab8868ee3c5e55e056c97ec8/source/p_codes.md" class="reference">18 Jun 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/p_codes.md" class="reference">29 Jul 2025</a>
 
 If using cascading lists, please [follow the instructions](cascading_select.md)
 for cascading selects.
@@ -21,7 +21,7 @@ following:
 
 ## Example with 3 admin levels, using cascading lists
 
-**survey**
+**survey sheet**
 
 | type              | name         | label   | choice_filter                                    | calculation                                                                                                               |
 | :---------------- | :----------- | :------ | :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
@@ -33,7 +33,7 @@ following:
 | calculate         | name_admin3  |         |                                                  | if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, '${pcode_admin3}'), '(unspecified pcode_admin3)') |
 | survey |
 
-**choices**
+**choices sheet**
 
 | list_name | name | label       | state | county |
 | :-------- | :--- | :---------- | :---- | :----- |

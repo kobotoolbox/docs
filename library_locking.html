@@ -108,7 +108,7 @@
           
   <section id="library-locking">
 <h1>Library locking<a class="headerlink" href="#library-locking" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/0a2cca214879198dcace13b4af5c735d821be4bb/source/library_locking.md" class="reference">18 Jun 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/library_locking.md" class="reference">29 Jul 2025</a></p>
 <p>“Library locking” refers to the feature enabling various aspects of a survey to
 be “<a class="reference internal" href="#locked">locked</a>” when created from a template containing
 <a class="reference internal" href="#restrictions">locking attributes</a>. All aspects of a form’s editing are
@@ -150,7 +150,7 @@ sheet that will render the survey completely locked.</p>
 are redundant as the form is <em>fully</em> locked down. If it is set to <code class="docutils literal notranslate"><span class="pre">False</span></code> <em>or</em>
 omitted from the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet, then defined locking profiles can be used to
 control the locked behaviour:</p>
-<p><strong>settings</strong></p>
+<p><strong>settings sheet</strong></p>
 <table class="colwidths-auto docutils align-default">
 <thead>
 <tr class="row-odd"><th class="text-left head"><p>kobo–lock_all</p></th>
@@ -348,7 +348,7 @@ formbuilder.</p>
   <code>restriction</code> column, but an error will be thrown if an invalid
   restriction is included.
 </p>
-<p><strong>settings</strong></p>
+<p><strong>settings sheet</strong></p>
 <p>Set form-level restrictions and <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> boolean.</p>
 <table class="colwidths-auto docutils align-default">
 <thead>
@@ -369,7 +369,7 @@ formbuilder.</p>
   Note that omitting <code>kobo--lock_all</code> from the
   <code>settings</code> sheet is equivalent to setting it to <code>False</code>.
 </p>
-<p><strong>survey</strong></p>
+<p><strong>survey sheet</strong></p>
 <p>Set question and group-level restrictions.</p>
 <table class="colwidths-auto docutils align-default">
 <thead>
@@ -397,7 +397,7 @@ formbuilder.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>choices</strong></p>
+<p><strong>choices sheet</strong></p>
 <p>No restrictions can be set in the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet.</p>
 <table class="colwidths-auto docutils align-default">
 <thead>

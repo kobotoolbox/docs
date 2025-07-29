@@ -1,5 +1,5 @@
 # Adding a Custom Logo
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/83fefc883cabb63ec8753d9cb2b6e8848630f37c/source/add_logo.md" class="reference">18 Jun 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/add_logo.md" class="reference">29 Jul 2025</a>
 
 Adding a custom logo to the top of your form is a simple process and primarily
 follows the same steps as [adding media content to your forms](media.md).
@@ -12,7 +12,7 @@ To begin:
    label blank, and add a column titled `media::image` with your logo file name
    in the cell. As shown below:
 
-**survey**
+**survey sheet**
 
 | type | name | label | media::image |
 | :--- | :--- | :---- | :----------- |

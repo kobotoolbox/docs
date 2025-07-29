@@ -1,5 +1,5 @@
 # Adding Another Language to your XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cf8076330e7854983eff74815be90555dde3456c/source/language_xls.md" class="reference">18 Jun 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/language_xls.md" class="reference">29 Jul 2025</a>
 
 There are two methods to adding multiple languages to your form. You can either
 add and manage them directly through the online
@@ -32,7 +32,7 @@ Here are detailed instructions on how you can add another language to your form:
 -   Then, if you have hints in your form, the same needs to apply to the `hint`
     column, for example `hint::Français (fr)` or `hint::English (en)`.
 
-**survey**
+**survey sheet**
 
 | type             | name           | label                          | relevant                  |
 | :--------------- | :------------- | :----------------------------- | :------------------------ |
@@ -50,7 +50,7 @@ Here are detailed instructions on how you can add another language to your form:
 
 <p class="note">Tip: Copy-paste the original label column and then make changes to the translations so you don't leave anything blank by accident: It's better to have something showing in the wrong language than not having a blank question in some language. <em>You can repeat this step and add as many languages as you like, each in their separate columns and with a different name inside <code>label::language (code)</code>.</em></p>
 
-**survey**
+**survey sheet**
 
 | type             | name           | label:English (en)             | label::Français (fr)           | relevant                  |
 | :--------------- | :------------- | :----------------------------- | :----------------------------- | :------------------------ |
@@ -66,7 +66,7 @@ Here are detailed instructions on how you can add another language to your form:
     `label::language (code)`. For example, `label::Francais (fr)` and
     `label::Français (fr)` are not identical.
 
-**choices**
+**choices sheet**
 
 | list_name | name | label::English (en) | label::Français (fr) |
 | :-------- | :--- | :------------------ | :------------------- |
@@ -78,7 +78,7 @@ Here are detailed instructions on how you can add another language to your form:
     form's title to something like "My form (English and French)" so you can
     easily identify it later.
 
-**settings**
+**settings sheet**
 
 | form_title                   |
 | :--------------------------- |
