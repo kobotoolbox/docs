@@ -43,7 +43,7 @@ defined variables in your form by using the
 expression in a `calculate` question type. The example is shown as an
 **XLSForm**, but can just as easily be done within the formbuilder.
 
-**survey**
+**survey sheet**
 
 | type      | name    | label                                  | calculation                                                           |
 | :-------- | :------ | :------------------------------------- | :-------------------------------------------------------------------- |
