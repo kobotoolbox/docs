@@ -23,7 +23,7 @@ option to use a draw widget to collect signatures. In your XLSForm just add
 `signature` or `draw` under the `appearance` column for an `image`-type
 question.
 
-**survey**
+**survey sheet**
 
 | type  | name | label            | appearance | hint                             |
 | :---- | :--- | :--------------- | :--------- | :------------------------------- |
