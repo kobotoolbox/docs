@@ -41,7 +41,6 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   number_decimal_range
   date_time
   photo_audio_video_file
-  video_question_type
   barcode_qrcode_questions
   rating_ranking
   external_file
