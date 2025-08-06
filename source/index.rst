@@ -145,6 +145,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   rest_services
   upload_to_gis
   kobotoolbox_monday_integration
+  migrating_api
 
 .. toctree::
   :maxdepth: 2
