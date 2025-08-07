@@ -301,7 +301,7 @@ In `v2`, the fields `public`, `public_data`, and `require_auth` are no longer ex
 The following mappings apply:
 - `public: true` → the `AnonymousUser` has the `view_asset` permission  
 - `public_data: true` → the `AnonymousUser` has the `view_submissions` permission  
-- `require_auth: true` → the `AnonymousUser` has the `add_submissions` permission  
+- `require_auth: false` → the `AnonymousUser` has the `add_submissions` permission  
 
 
 <details>
