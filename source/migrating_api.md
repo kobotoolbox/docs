@@ -80,7 +80,7 @@ These endpoints retrieve all submission data for a specific project or a single 
 | `v1` Endpoint    | `v2` Equivalent        |
 | ------------- | ---------------------- |
 | `/api/v1/data/<pk>`   | `/api/v2/assets/{uid}/data/` |
-| `/api/v1/data/<pk>/<dataid>`       | `/api/v2/assets/{uid}/data/{submission_id}`                 |
+| `/api/v1/data/<pk>/<dataid>`       | `/api/v2/assets/{uid}/data/{submission_id}/`                 |
 
 Based on the `url` you get from the `data` property in the asset endpoint, you can fetch the submission data in `v2` using. 
 
@@ -167,7 +167,7 @@ These endpoints return detailed attributes of all forms shared with you or about
   
 ```json
 {
-  "url": "https://kf.kobotoolbox.org/api/v1/forms/474.json",
+  "url": "https://kf.kobotoolbox.org/api/v1/forms/474",
   "formid": 474,
   "metadata": [],
   "owner": "project_owner",
@@ -213,7 +213,7 @@ These endpoints return detailed attributes of all forms shared with you or about
 
 ```json
 {
-  "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq.json",
+  "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/",
   "owner__username": "project_owner",
   "files": [],
   "summary": {
@@ -231,50 +231,50 @@ These endpoints return detailed attributes of all forms shared with you or about
   "permissions": [
     {
       "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pQnggGHaPGGmJtPCbCCVpU/",
-      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner.json",
-      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/add_submissions.json",
+      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner/",
+      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/add_submissions/",
       "label": "Add submissions"
     },
     {
       "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pcn2g8ezroevNsP7CuCkrf/",
-      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner.json",
-      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/change_asset.json",
+      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner/",
+      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/change_asset/",
       "label": "Edit form"
     },
     {
       "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pVMKQ4bDSn5SCAgefzMRLX/",
-      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner.json",
-      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/change_submissions.json",
+      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner/",
+      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/change_submissions/",
       "label": "Edit submissions"
     },
     {
       "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pwoCoBBLmyWsdF2dXPBaHt/",
-      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner.json",
-      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/delete_submissions.json",
+      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner/",
+      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/delete_submissions/",
       "label": "Delete submissions"
     },
     {
       "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pqDGr7M7au4NsFiuKkEeTr/",
-      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner.json",
-      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/manage_asset.json",
+      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner/",
+      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/manage_asset/",
       "label": "Manage project"
     },
     {
       "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/p3dFAXPvHX3ib93twD7rPG/",
-      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner.json",
-      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/validate_submissions.json",
+      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner/",
+      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/validate_submissions/",
       "label": "Validate submissions"
     },
     {
       "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pE38Wi89CavBvNHGqQ2WZj/",
-      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner.json",
-      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/view_asset.json",
+      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner/",
+      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/view_asset/",
       "label": "View form"
     },
     {
       "url": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pWeJkdjjFk9cQVFvLnr6cS/",
-      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner.json",
-      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/view_submissions.json",
+      "user": "https://kf.kobotoolbox.org/api/v2/users/project_owner/",
+      "permission": "https://kf.kobotoolbox.org/api/v2/permissions/view_submissions/",
       "label": "View submissions"
     }
   ]
@@ -284,6 +284,7 @@ These endpoints return detailed attributes of all forms shared with you or about
 
 <br>
 
+<a id="tags"></a>
 **Tags**
 
 Tags in `v1` and `v2` do not share the same underlying database. As a result, tags from `v1` **will not be automatically migrated** to `v2`. If you need to preserve them, you must reapply the tags manually using a `PATCH` request to `/api/v2/assets/{uid}/`.
@@ -338,7 +339,7 @@ The following mappings apply:
 ### Label endpoint
 The `/api/v1/forms/<pk>/labels` endpoint from `v1` returns a dictionary mapping each field name in the form to its corresponding label, enabling more user-friendly display of form data.
 
-This endpoint has not been ported to `v2`, but it is still possible to **label** or **tag** a project, as described above.
+This endpoint has not been ported to `v2`, but it is still possible to **label** or **tag** a project, as described [above](#tags).
 
 ---
 
@@ -350,7 +351,7 @@ These endpoints return a flat list of all media files associated with the curren
 | `v1` Endpoint    | `v2` Equivalent        |
 | ------------- | ---------------------- |
 | `/api/v1/metadata`   | `/api/v2/assets/{asset_uid}/files/` |
-| `/api/v1/metadata/<pk>`       | `/api/v2/assets/{asset_uid}/files/{file_uid}`                 |
+| `/api/v1/metadata/<pk>`       | `/api/v2/assets/{asset_uid}/files/{file_uid}/`                 |
 
 
 <p class="note">
@@ -396,7 +397,7 @@ These endpoints return a flat list of all media files associated with the curren
 ```
 {
   "uid": "afoeCcF3AcGNpWUoM6bvKj9",
-  "asset": "http://kf.kobo.localhost/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq.json",
+  "asset": "http://kf.kobo.localhost/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/",
   "file_type": "form_media",
   "content": "http://kf.kobo.localhost/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/content/",
   "metadata": {
