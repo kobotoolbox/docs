@@ -33,7 +33,7 @@ Your new group will appear enclosed within a shaded box, distinguishing it from 
 Hover your mouse anywhere inside the group where you want to add a new question. Click on a **plus sign** <i class="k-icon-plus"></i> inside the group to add a new question.
 
 <p class="note">
-    <b>Note:</b> If you click the **plus sign** <i class="k-icon-plus"></i> that is located outside the group, you will be adding a question outside the group.
+    <b>Note:</b> If you click the <b>plus sign</b> <i class="k-icon-plus"></i> that is located outside the group, you will be adding a question outside the group.
 </p>
 
 You also drag and drop any existing question into a question group.
