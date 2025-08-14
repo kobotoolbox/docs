@@ -59,10 +59,9 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   restrict_responses
   language_dashboard
   form_meta
-  custom_format_web
   audit_logging
+  custom_format_web
   alternative_enketo
-  lower_file_size
   question_library
   using_public_collections
   public_collections_advanced_search
@@ -164,8 +163,10 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   p_codes
   unique_serial_numbers
   user_specified_other
+  lower_file_size
   calculations_constraints_matrix
   adding_skip_to_matrix
   add_logo
   stuck_in_pending
   manual_upload
+
