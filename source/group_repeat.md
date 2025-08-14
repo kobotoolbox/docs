@@ -1,4 +1,4 @@
-# Grouping Questions and Repeating Groups
+# Grouping questions and repeating groups
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/group_repeat.md" class="reference">29 Jul 2025</a>
 
 Grouping questions helps organize related questions into sections, adds structure to your form, and makes it easier to navigate. For example, all demographic questions can be grouped together in one section of the form.
@@ -30,10 +30,10 @@ Your new group will appear enclosed within a shaded box, distinguishing it from 
 
 ### Adding questions within a group
 
-Hover your mouse anywhere inside the group where you want to add a new question. Click on a plus sign <i class="k-icon-plus"></i> inside the group to add a new question.
+Hover your mouse anywhere inside the group where you want to add a new question. Click on a **plus sign** <i class="k-icon-plus"></i> inside the group to add a new question.
 
 <p class="note">
-    <b>Note:</b> If you click the plus sign <i class="k-icon-plus"></i> that is located outside the group, you will be adding a question outside the group.
+    <b>Note:</b> If you click the **plus sign** <i class="k-icon-plus"></i> that is located outside the group, you will be adding a question outside the group.
 </p>
 
 You also drag and drop any existing question into a question group.
@@ -74,7 +74,7 @@ In KoboCollect, questions appear one at a time by default. In Enketo web forms, 
 To display questions by group on the same screen during data collection, click the **Settings**<i class="k-icon-settings"></i> icon to the right of the group name. Then, under **Appearance (Advanced)**, select **field-list** (Show all questions in this group on the same screen).
 
 <p class="note">
-    <b>Note:</b> If you plan to collect data using Enketo web forms, you will also need to enable the **Multiple pages** theme in the **Form style** menu (**Layout & Settings**). For more information on Enketo web for styles, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Using alternative Enketo web form styles</a>.
+    <b>Note:</b> If you plan to collect data using Enketo web forms, you will also need to enable the <b>Multiple pages</b> theme in the <b>Form style</b> menu (<b>Layout & Settings</b>). For more information on Enketo web form styles, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Using alternative Enketo web form styles</a>.
 </p>
 
 ### Skipping a question group
@@ -98,5 +98,5 @@ During data collection, enumerators will be able to enter responses for these gr
 ### Advanced settings for repeat groups
 Additional settings and functionalities for repeat groups are available through XLSForm, but not directly within the Formbuilder. These include setting a fixed or dynamic number of repetitions, and using information from repeat groups elsewhere in your form.
 
-For more information about advanced settings for repeat groups, see [Groups and repeat groups in XLSForm](https://docs.getodk.org/form-logic/#controlling-the-number-of-repetitions).  
+For more information about advanced settings for repeat groups, see [XLSForm documentation](https://docs.getodk.org/form-logic/#controlling-the-number-of-repetitions).  
 
