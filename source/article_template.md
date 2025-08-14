@@ -39,6 +39,8 @@ Embed links: To transfer ownership of your Team to another user, [please contact
 
 Learn more about [our training services](https://www.kobotoolbox.org/services/training/).
 
+**Links to other articles:** For more information, see [row-level permissions](row_level_permissions.md)
+
 Link to [another section](#adding-media-files) within the article. Note: just one # for all heading sizes, no space between # and anchor name, anchor tag names must be lowercase, and delimited by dashes if multi-word.
 
 To quickly turn a URL or email address into a link, enclose it in angle brackets.
@@ -131,6 +133,10 @@ Inside noteboxes and tables, **use HTML** to format your text. For example:
 
 <p class="note">
   <b>Important note</b>: It is not possible to share projects and data between the two servers. This means that all users working on a shared project must use the same server to access the project. <a href="https://www.kobotoolbox.org/about-us">Add a link in HTML like this.</a></li>
+</p>
+
+<p class="note">
+  <b>Note:</b> To learn more about row-level permissions, see <a class="reference" href="row_level_permissions.html">row-level access</a>.
 </p>
 
 <p class="note">
