@@ -1,0 +1,39 @@
+name: Test Build
+
+on: workflow_call
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          # Semantic version range syntax or exact version of a Python version
+          python-version: '3.12'
+          # Optional - x64 or x86 architecture, defaults to x64
+          architecture: 'x64'
+
+      - name: Install FE dependencies
+        run: npm install
+
+      - name: Build styles
+        run: npm start
+
+      - name: Create virtual environment
+        run: python3 -m venv koboenv
+
+      - name: Activate virtual environment
+        run: source koboenv/bin/activate
+
+      - name: Install requirements
+        run: pip install -r requirements.txt
+
+      - name: Build public files
+        run: make html
+
+      - name: Disable Jekyll
+        run: touch _build/html/.nojekyll

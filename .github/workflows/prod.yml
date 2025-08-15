@@ -49,44 +49,45 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-    - uses: actions/checkout@v4
-      with:
-        # Use "last updated" commit from update job if created
-        ref: ${{ needs.update.outputs.update_commit }}
-    - name: Set up Python 3.12
-      uses: actions/setup-python@v5
-      with:
-        # Semantic version range syntax or exact version of a Python version
-        python-version: '3.12'
-        # Optional - x64 or x86 architecture, defaults to x64
-        architecture: 'x64'
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        with:
+          # Use "last updated" commit from update job if created
+          ref: ${{ needs.update.outputs.update_commit }}
 
-    - name: Install FE dependencies
-      run: npm install
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          # Semantic version range syntax or exact version of a Python version
+          python-version: '3.12'
+          # Optional - x64 or x86 architecture, defaults to x64
+          architecture: 'x64'
 
-    - name: Build styles
-      run: npm start
+      - name: Install FE dependencies
+        run: npm install
 
-    - name: Create virtual environment
-      run: python3 -m venv koboenv
+      - name: Build styles
+        run: npm start
 
-    - name: Activate virtual environment
-      run: source koboenv/bin/activate
+      - name: Create virtual environment
+        run: python3 -m venv koboenv
 
-    - name: Install requirements
-      run: pip install -r requirements.txt
+      - name: Activate virtual environment
+        run: source koboenv/bin/activate
 
-    - name: Build public files
-      run: make html
+      - name: Install requirements
+        run: pip install -r requirements.txt
 
-    - name: Disable Jekyll
-      run: touch _build/html/.nojekyll
+      - name: Build public files
+        run: make html
 
-    - name: Deploy to gh-pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_build/html
-        publish_branch: gh-pages
-        cname: support.kobotoolbox.org
+      - name: Disable Jekyll
+        run: touch _build/html/.nojekyll
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_build/html
+          publish_branch: gh-pages
+          cname: support.kobotoolbox.org

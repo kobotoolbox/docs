@@ -1,0 +1,7 @@
+name: CI of a PR
+
+on: pull_request
+
+jobs:
+  test-build:
+    uses: ./.github/workflows/test-build.yml

@@ -9,7 +9,7 @@ insert_final_newline = true
 trim_trailing_whitespace = true
 
 # only apply to frontend files
-[*.{es6,js,coffee,scss,css,html}]
+[*.{es6,js,coffee,scss,css,html,yml}]
 charset = utf-8
 end_of_line = lf
 indent_size = 2
