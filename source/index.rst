@@ -56,6 +56,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   number_text_responses
   cascading_select
   group_repeat
+  repeat_group_as_matrix
   restrict_responses
   language_dashboard
   form_meta
