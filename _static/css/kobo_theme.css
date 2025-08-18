@@ -13,7 +13,7 @@ html {
 }
 @media screen and (min-width: 320px) {
   html {
-    font-size: calc(14px + 4 * ((100vw - 320px) / 830));
+    font-size: calc(14px + 4 * (100vw - 320px) / 830);
   }
 }
 @media screen and (min-width: 1150px) {
@@ -27,14 +27,14 @@ body {
   font-size: inherit;
   margin: 0;
   padding: 0;
-  color: hsl(230deg, 12%, 29%);
-  background: hsl(0deg, 0%, 100%);
+  color: hsl(230, 12%, 29%);
+  background: hsl(0, 0%, 100%);
 }
 
 a,
 .link {
   cursor: pointer;
-  color: hsl(207deg, 90%, 54%);
+  color: hsl(207, 90%, 54%);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
 }
@@ -42,7 +42,7 @@ a:hover,
 .link:hover {
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
-  color: hsl(207deg, 90%, 39%);
+  color: hsl(207, 90%, 39%);
 }
 a.button,
 .link.button {
@@ -52,8 +52,8 @@ a.button,
   font-size: inherit;
   line-height: 1em;
   height: 2em;
-  background: hsl(207deg, 90%, 54%);
-  color: hsl(0deg, 0%, 100%) !important;
+  background: hsl(207, 90%, 54%);
+  color: hsl(0, 0%, 100%) !important;
   text-transform: uppercase;
   text-align: center;
   padding: 0.5em 1em 0.4em;
@@ -66,16 +66,16 @@ a.button,
 }
 a.button:hover,
 .link.button:hover {
-  background: hsl(207deg, 90%, 39%);
-  color: hsl(0deg, 0%, 100%) !important;
+  background: hsl(207, 90%, 39%);
+  color: hsl(0, 0%, 100%) !important;
 }
 a.button.button--black,
 .link.button.button--black {
-  background: hsl(230deg, 12%, 29%);
+  background: hsl(230, 12%, 29%);
 }
 a.button.button--black:hover,
 .link.button.button--black:hover {
-  background: #1f2128;
+  background: hsl(230, 12%, 14%);
 }
 
 img {
@@ -147,8 +147,8 @@ html body header.main-header {
   line-height: 22px;
   position: fixed;
   height: 70px;
-  background: hsl(230deg, 12%, 29%);
-  color: hsl(0deg, 0%, 100%);
+  background: hsl(230, 12%, 29%);
+  color: hsl(0, 0%, 100%);
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -222,14 +222,14 @@ html body header.main-header .main-header__navigation ul li {
   margin-right: 0;
 }
 html body header.main-header .main-header__navigation ul li a {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
 html body header.main-header .main-header__navigation ul li a:hover {
   opacity: 0.8;
 }
 html body header.main-header .main-header__navigation ul li.current a {
-  color: hsl(207deg, 90%, 54%);
+  color: hsl(207, 90%, 54%);
 }
 @media screen and (max-width: 875px) {
   html body header.main-header .main-header__navigation ul li:not(.current) {
@@ -257,17 +257,17 @@ html body header.main-header .main-header__navigation ul li.current a {
   opacity: 0.6;
 }
 .main-search.main-search--big::before {
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: linear-gradient(to top, transparent, hsl(230deg, 12%, 29%));
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(hsl(230, 12%, 29%)));
+  background: linear-gradient(to top, transparent, hsl(230, 12%, 29%));
   top: 0;
 }
 .main-search.main-search--big::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: linear-gradient(to bottom, transparent, hsl(230deg, 12%, 29%));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(230, 12%, 29%)));
+  background: linear-gradient(to bottom, transparent, hsl(230, 12%, 29%));
   bottom: 0;
 }
 .main-search.main-search--big .wrapper {
-  background-color: rgba(0, 74, 143, 0.6);
+  background-color: rgba(0, 73.78, 142.8, 0.6);
   position: relative;
   z-index: 1;
 }
@@ -276,7 +276,7 @@ html body header.main-header .main-header__navigation ul li.current a {
 }
 .main-search .wrapper {
   width: 100%;
-  background-color: rgba(0, 74, 143, 0.7);
+  background-color: rgba(0, 73.78, 142.8, 0.7);
 }
 .main-search:not(.main-search--big) .main-search__header,
 .main-search:not(.main-search--big) .main-search__paragraph,
@@ -286,7 +286,7 @@ html body header.main-header .main-header__navigation ul li.current a {
 .main-search .main-search__header,
 .main-search .main-search__paragraph {
   line-height: 1;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   text-align: center;
   margin: 0;
   padding: 0;
@@ -309,7 +309,7 @@ html body header.main-header .main-header__navigation ul li.current a {
   width: 1.4375rem;
   margin: 0 auto;
   padding: 1.875rem 1.875rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   text-align: center;
 }
 .main-search .main-search__arrow svg {
@@ -342,7 +342,7 @@ html body header.main-header .main-header__navigation ul li.current a {
   position: absolute;
   top: 1.125rem;
   left: 1.25rem;
-  color: hsl(228deg, 12%, 59%);
+  color: hsl(228, 12%, 59%);
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   pointer-events: none;
@@ -361,37 +361,37 @@ html body header.main-header .main-header__navigation ul li.current a {
   width: 100%;
   padding: 1.25rem 2rem 1.25rem 4rem;
   border-radius: 1.875rem;
-  border: 1px solid hsl(222deg, 26%, 85%);
-  color: hsl(230deg, 12%, 29%);
-  background-color: hsl(0deg, 0%, 100%);
+  border: 1px solid hsl(222, 26%, 85%);
+  color: hsl(230, 12%, 29%);
+  background-color: hsl(0, 0%, 100%);
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
 }
 .main-search .main-search__text-box:focus {
   outline: none;
-  border-color: hsl(223deg, 19%, 33%);
+  border-color: hsl(223, 19%, 33%);
 }
 .main-search .main-search__text-box:focus + .main-search__magnifying-glass {
-  color: hsl(230deg, 12%, 29%);
+  color: hsl(230, 12%, 29%);
 }
 .main-search .main-search__text-box:hover + .main-search__magnifying-glass {
-  color: hsl(223deg, 19%, 33%);
+  color: hsl(223, 19%, 33%);
 }
 .main-search .main-search__text-box::-webkit-input-placeholder {
-  color: hsl(228deg, 12%, 59%);
+  color: hsl(228, 12%, 59%);
 }
 .main-search .main-search__text-box::-moz-placeholder {
-  color: hsl(228deg, 12%, 59%);
+  color: hsl(228, 12%, 59%);
 }
 .main-search .main-search__text-box:-ms-input-placeholder {
-  color: hsl(228deg, 12%, 59%);
+  color: hsl(228, 12%, 59%);
 }
 .main-search .main-search__text-box::-ms-input-placeholder {
-  color: hsl(228deg, 12%, 59%);
+  color: hsl(228, 12%, 59%);
 }
 .main-search .main-search__text-box::placeholder {
-  color: hsl(228deg, 12%, 59%);
+  color: hsl(228, 12%, 59%);
 }
 .main-search .main-search__submit-button {
   visibility: hidden;
@@ -456,10 +456,10 @@ html body {
   text-decoration: underline;
 }
 .page a.headerlink {
-  color: hsl(228deg, 12%, 59%);
+  color: hsl(228, 12%, 59%);
 }
 .page a.headerlink:hover {
-  color: hsl(207deg, 90%, 39%);
+  color: hsl(207, 90%, 39%);
   background: none;
 }
 .page .page__body h1 {
@@ -468,7 +468,7 @@ html body {
 }
 .page .page__body tt,
 .page .page__body code {
-  background-color: hsl(228deg, 12%, 92%);
+  background-color: hsl(228, 12%, 92%);
   color: inherit;
   border-radius: 2px;
   padding: 0.2em 0.4em;
@@ -493,7 +493,7 @@ html body {
   margin: 0 auto;
 }
 .page .page__body pre {
-  background-color: hsl(228deg, 12%, 92%);
+  background-color: hsl(228, 12%, 92%);
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
@@ -515,13 +515,13 @@ html body {
 }
 .page .page__body p.note {
   display: block;
-  border: 2px solid hsl(207deg, 90%, 39%);
+  border: 2px solid hsl(207, 90%, 39%);
   border-radius: 4px;
   padding: 1em 0.8em;
 }
 .page .page__body section.note {
   display: block;
-  border: 2px solid hsl(207deg, 90%, 39%);
+  border: 2px solid hsl(207, 90%, 39%);
   border-radius: 4px;
   padding: 1em 0.8em;
 }
@@ -560,7 +560,7 @@ html body {
   font-weight: 600;
   font-size: 1.125rem;
   line-height: 1em;
-  border-top: 1px solid hsl(222deg, 26%, 85%);
+  border-top: 1px solid hsl(222, 26%, 85%);
   padding: 0.9375rem 0.9375rem 0 0;
   position: relative;
 }
@@ -569,13 +569,13 @@ html body {
 }
 .page .page__sidebar p.caption.caption--current {
   pointer-events: none;
-  color: hsl(207deg, 90%, 39%);
+  color: hsl(207, 90%, 39%);
 }
 .page .page__sidebar p.caption:not(.caption--current) {
   cursor: pointer;
 }
 .page .page__sidebar p.caption:not(.caption--current):hover {
-  color: hsl(207deg, 90%, 39%);
+  color: hsl(207, 90%, 39%);
 }
 .page .page__sidebar p.caption:not(.caption--current):hover::after {
   opacity: 0.8;
@@ -609,12 +609,12 @@ html body {
   text-decoration: none;
 }
 .page .page__sidebar ul a:hover {
-  color: hsl(207deg, 90%, 39%);
+  color: hsl(207, 90%, 39%);
   border-bottom: none;
   text-decoration: underline;
 }
 .page .page__sidebar ul li.current a {
-  color: hsl(207deg, 90%, 39%);
+  color: hsl(207, 90%, 39%);
 }
 .page .page__sidebar ul li:not(:last-of-type) {
   margin-bottom: 1.125rem;
@@ -638,10 +638,10 @@ html body {
   list-style: none;
   margin: 0;
   padding: 0;
-  color: hsl(207deg, 90%, 54%);
+  color: hsl(207, 90%, 54%);
 }
 .page__breadcrumbs ul:not(.activated) {
-  color: hsl(228deg, 12%, 59%);
+  color: hsl(228, 12%, 59%);
 }
 .page__breadcrumbs ul li {
   display: inline-block;
@@ -667,13 +667,13 @@ html body {
   text-decoration: none;
 }
 .page__breadcrumbs ul li a:hover {
-  color: hsl(207deg, 90%, 39%);
+  color: hsl(207, 90%, 39%);
 }
 
 .page__feedback {
   text-align: center;
-  background-color: hsl(207deg, 92%, 95%);
-  color: hsl(207deg, 90%, 39%);
+  background-color: hsl(207, 92%, 95%);
+  color: hsl(207, 90%, 39%);
   padding: 1.875rem;
   margin-top: 2.5rem;
   border-radius: 0.375rem;
@@ -697,8 +697,8 @@ html body {
 
 html body div.footer {
   width: 100%;
-  background: hsl(230deg, 12%, 29%);
-  color: hsl(0deg, 0%, 100%);
+  background: hsl(230, 12%, 29%);
+  color: hsl(0, 0%, 100%);
   margin: 0;
   padding: 2em 0;
   font-size: 0.9em;
@@ -758,20 +758,20 @@ html body div.footer p:last-child {
   opacity: 0.6;
 }
 .community-questions.community-questions--big::before {
-  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: linear-gradient(to top, transparent, hsl(230deg, 12%, 29%));
+  background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(hsl(230, 12%, 29%)));
+  background: linear-gradient(to top, transparent, hsl(230, 12%, 29%));
   top: 0;
 }
 .community-questions.community-questions--big::after {
-  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(230deg, 12%, 29%)));
-  background: linear-gradient(to bottom, transparent, hsl(230deg, 12%, 29%));
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(230, 12%, 29%)));
+  background: linear-gradient(to bottom, transparent, hsl(230, 12%, 29%));
   bottom: 0;
 }
 .community-questions.community-questions--big .wrapper {
   padding: 4.375rem 0.9375rem 6.25rem;
   text-align: center;
-  color: hsl(0deg, 0%, 100%);
-  background-color: rgba(0, 74, 143, 0.6);
+  color: hsl(0, 0%, 100%);
+  background-color: rgba(0, 73.78, 142.8, 0.6);
 }
 .community-questions.community-questions--sidebar::before {
   content: "";
@@ -779,7 +779,7 @@ html body div.footer p:last-child {
   width: 23%;
   height: 0.375rem;
   margin-bottom: 1.875rem;
-  background: hsl(185deg, 57%, 57%);
+  background: hsl(185, 57%, 57%);
 }
 .community-questions.community-questions--sidebar h1 {
   font-size: 1.75rem;
@@ -804,7 +804,7 @@ html body div.footer p:last-child {
 }
 
 .page#index {
-  background: hsl(210deg, 12%, 97%);
+  background: hsl(210, 12%, 97%);
 }
 .page#index .page__related {
   display: none;
@@ -839,14 +839,14 @@ html body div.footer p:last-child {
   font-size: 1.125rem;
   margin: 0 0 2.625rem;
   text-align: center;
-  color: hsl(228deg, 12%, 59%);
+  color: hsl(228, 12%, 59%);
   width: 100%;
 }
 .page#index .headerlink {
   display: none;
 }
 .page#index .toctree-wrapper[id^=home-page-toc-] {
-  background: hsl(0deg, 0%, 100%);
+  background: hsl(0, 0%, 100%);
   padding: 1.875rem 1.875rem 5rem;
   position: relative;
 }
@@ -908,7 +908,7 @@ html body div.footer p:last-child {
 }
 .page#index .toctree-wrapper[id^=home-page-toc-] a:hover,
 .page#index .toctree-wrapper[id^=home-page-toc-] .link:hover {
-  color: hsl(207deg, 90%, 39%);
+  color: hsl(207, 90%, 39%);
 }
 .page#index .toctree-wrapper[id^=home-page-toc-] .show-all-button {
   position: absolute;
@@ -995,11 +995,11 @@ html body div.footer p:last-child {
   text-decoration: none;
 }
 .page.custom-section-page .page__body a:hover {
-  color: hsl(207deg, 90%, 39%);
+  color: hsl(207, 90%, 39%);
   text-decoration: underline;
 }
 .page.custom-section-page .page__body li.toctree-l1 {
-  border-top: 1px solid hsl(222deg, 26%, 85%);
+  border-top: 1px solid hsl(222, 26%, 85%);
   margin-top: 1rem;
   padding-top: 1rem;
 }
@@ -1076,7 +1076,7 @@ html body div.footer p:last-child {
 }
 
 tr.table-sheets {
-  background-color: hsl(228deg, 12%, 92%);
+  background-color: hsl(228, 12%, 92%);
 }
 
 tr.table-sheets td.table-sheets__container {
@@ -1086,11 +1086,11 @@ tr.table-sheets td.table-sheets__container {
 tr.table-sheets td.table-sheets__container::before {
   content: "◄   ►";
   margin: 0 10px 0 5px;
-  color: hsl(222deg, 26%, 85%);
+  color: hsl(222, 26%, 85%);
 }
 tr.table-sheets td.table-sheets__container::after {
   content: "+";
-  color: hsl(222deg, 26%, 85%);
+  color: hsl(222, 26%, 85%);
   display: inline-block;
   margin-left: 15px;
   width: 14px;
@@ -1099,7 +1099,7 @@ tr.table-sheets td.table-sheets__container::after {
   border-radius: 50%;
   text-align: center;
   vertical-align: middle;
-  border: 2px solid hsl(222deg, 26%, 85%);
+  border: 2px solid hsl(222, 26%, 85%);
 }
 
 /* mimic the Excel sheet navigation */
@@ -1107,17 +1107,17 @@ tr.table-sheets .table-sheets__sheet {
   display: inline-block;
   min-width: 85px;
   text-align: center;
-  border-right: 1px solid hsl(228deg, 13%, 69%);
+  border-right: 1px solid hsl(228, 13%, 69%);
   padding: 0 5px;
 }
 tr.table-sheets .table-sheets__sheet:first-of-type {
-  border-left: 1px solid hsl(228deg, 13%, 69%);
+  border-left: 1px solid hsl(228, 13%, 69%);
 }
 tr.table-sheets .table-sheets__sheet.table-sheets__sheet--active {
   position: relative;
   font-weight: normal;
-  color: hsl(207deg, 90%, 54%);
-  border-bottom: 2px solid hsl(207deg, 90%, 54%);
+  color: hsl(207, 90%, 54%);
+  border-bottom: 2px solid hsl(207, 90%, 54%);
   background: white;
 }
 tr.table-sheets .table-sheets__sheet.table-sheets__sheet--active::before {
@@ -1127,9 +1127,9 @@ tr.table-sheets .table-sheets__sheet.table-sheets__sheet--active::before {
   left: -1px;
   width: 100%;
   height: 6px;
-  background-color: hsl(0deg, 0%, 100%);
-  border-left: 1px solid hsl(228deg, 13%, 69%);
-  border-right: 1px solid hsl(228deg, 13%, 69%);
+  background-color: hsl(0, 0%, 100%);
+  border-left: 1px solid hsl(228, 13%, 69%);
+  border-right: 1px solid hsl(228, 13%, 69%);
 }
 
 /*# sourceMappingURL=kobo_theme.css.map */
