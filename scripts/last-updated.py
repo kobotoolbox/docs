@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 
+# TODO: please describe what this file does :)
+
 import argparse
 import os
 import re
