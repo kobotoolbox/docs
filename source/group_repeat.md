@@ -10,6 +10,8 @@ Grouping questions helps organize related questions into sections, adds structur
 
 This article covers how to create and manage question groups and repeat groups in the KoboToolbox Formbuilder.
 
+<iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Creating and managing question groups
 
 The Formbuilder makes it easy to group questions, add questions to groups, remove questions from groups, and re-order questions within a group.
