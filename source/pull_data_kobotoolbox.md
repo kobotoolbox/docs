@@ -34,3 +34,4 @@ This is best done on xls version of the form.
 -   If the .csv file contains sensitive data that you may not want to upload to
     the server, upload a blank .csv file as part of your form, then replace it
     with the real .csv file by hand-copying the file onto each of your devices.
+-   If you are facing error messages when using this feature, try changing the file name to remove any underscores or symbols.
