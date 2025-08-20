@@ -118,6 +118,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   recovering_previous_formdata
   getting_started_organization_feature
   activity_logs
+  managing_repeat_groups
 
 .. toctree::
   :maxdepth: 2
