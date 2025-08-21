@@ -45,10 +45,7 @@ You also drag and drop any existing question into a question group.
 
 To remove a question from a group but keep it in the form, select the question and drag it outside of the group.
 
-To delete a question completely:
-1. Hover your mouse over the question you wish to delete.
-2. Press the <i class="k-icon-trash"></i> **trash icon**. The question box will turn red, and **Delete Question** will appear above it.
-3. After clicking the delete button, a confirmation dialog box will appear. Click **OK**. 
+To permanently delete a question from the form, click <i class="k-icon-trash"></i> **Delete Question** from the question menu on the right, then click **OK**.
 
 ### Re-ordering a question within a group
 
