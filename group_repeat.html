@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Grouping Questions and Repeating Groups &#8212; KoboToolbox  documentation</title>
+    <title>Grouping questions and repeating groups &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -107,634 +107,103 @@
         <section class="page__body" role="main">
           
   <section id="grouping-questions-and-repeating-groups">
-<h1>Grouping Questions and Repeating Groups<a class="headerlink" href="#grouping-questions-and-repeating-groups" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/group_repeat.md" class="reference">29 Jul 2025</a></p>
-<p>KoboToolbox supports grouping questions when designing a survey form. Users may
-need to group questions due to various reasons:</p>
+<h1>Grouping questions and repeating groups<a class="headerlink" href="#grouping-questions-and-repeating-groups" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/ab66fa7a5728aee26e920381e41a2e8334895040/source/group_repeat.md" class="reference">21 Aug 2025</a></p>
+<p>Grouping questions helps organize related questions into sections, adds structure to your form, and makes it easier to navigate. For example, all demographic questions can be grouped together in one section of the form.</p>
 <ul class="simple">
-<li><p><strong>Make the questionnaire systematic:</strong> You could group your questions that
-have special linkage or attributes as Identifier, Section A, Section I, etc.</p></li>
-<li><p><strong>Display a set of questions per page:</strong> Grouped questions can be displayed
-on separate pages (or screens) during data collection.</p></li>
-<li><p><strong>Skip a group of questions:</strong> Rather than adding the same skip logic to
-each individual question, group the questions and add the skip logic to the
-group instead.</p></li>
-<li><p><strong>Create a roster:</strong> Repeat grouped questions for household surveys, etc.</p></li>
+<li><p><strong>Structuring the questionnaire:</strong> Questions with common themes or attributes can be grouped together in a single section.</p></li>
+<li><p><strong>Displaying a set of questions per page:</strong> Grouped questions can be displayed on separate pages or screens during data collection.</p></li>
+<li><p><strong>Skipping a group of questions:</strong> Skip logic can be added to the whole group instead of adding it to each individual question.</p></li>
+<li><p><strong>Create a roster:</strong> Question groups can be repeated, for example for household surveys or indicator tracking.</p></li>
 </ul>
+<p>This article covers how to create and manage question groups and repeat groups in the KoboToolbox Formbuilder.</p>
+<iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<section id="creating-and-managing-question-groups">
+<h2>Creating and managing question groups<a class="headerlink" href="#creating-and-managing-question-groups" title="Permalink to this heading">¶</a></h2>
+<p>The Formbuilder makes it easy to group questions, add questions to groups, remove questions from groups, and re-order questions within a group.</p>
 <section id="grouping-a-set-of-questions">
-<h2>Grouping a set of questions<a class="headerlink" href="#grouping-a-set-of-questions" title="Permalink to this heading">¶</a></h2>
-<p>Draft a set of questions that you would wish to group together. Then press the
-<strong>CTRL Key</strong> <em>(It may vary based on the OS used. The instruction here is based
-on the Windows OS)</em> and select <strong>all the questions</strong> <em>(with the help of your
-mouse)</em> that you wish to group. You should see the questions getting highlighted
-to blue as shown in the image below:</p>
-<p><img alt="image" src="_images/group.png" /></p>
-<p>Then press <strong>Create group with selected questions</strong> <em>(marked under the red box)</em>
-as shown in the image above. You should now be able to see your new group as
-shown in the image below. It should be slightly different (enclosed within a
-shaded box) then the normal question you generally see.</p>
-<p><img alt="image" src="_images/selected.png" /></p>
-<p>You can also change the group label. Here I have changed the group label to
-<strong>Demographic Characteristics</strong> as shown in the image below:</p>
-<p><img alt="image" src="_images/demographics.png" /></p>
-</section>
-<section id="alternative-way-of-creating-a-group">
-<h2>Alternative way of creating a group<a class="headerlink" href="#alternative-way-of-creating-a-group" title="Permalink to this heading">¶</a></h2>
-<p>Draft a question. Select the question that you have drafted. It highlights to
-blue. At the same time the icon (marked under the red box as shown in the image
-below) for <strong>Create group with selected questions</strong> also gets activated.</p>
-<p><img alt="image" src="_images/alternative_group.png" /></p>
-<p>Now click the <strong>Create group with selected questions</strong> (icon) and you should be
-able to see the question has been grouped (despite the fact that there is only
-one question at the moment).</p>
-<p><img alt="image" src="_images/alternative_selected.png" /></p>
-<p>Add or modify questions as outlined below.</p>
+<h3>Grouping a set of questions<a class="headerlink" href="#grouping-a-set-of-questions" title="Permalink to this heading">¶</a></h3>
+<p>To create a question group, follow the steps below:</p>
+<ol class="arabic simple">
+<li><p>Draft a set of questions that you would like to group together.</p></li>
+<li><p>Select the questions using the <strong>CTRL</strong> key (Windows) or the <strong>Command</strong> key (Mac).</p></li>
+<li><p>Click on <strong>Create group</strong> with selected questions in the top left menu bar.</p></li>
+</ol>
+<p>Your new group will appear enclosed within a shaded box, distinguishing it from standard questions. You can also change the group label, which will display at the top of the group in the form.</p>
+<p class="note">
+    <b>Note:</b> Alternatively, you can create a single question, select the question, and click on <b>Create group</b>. Then, you can add more questions within the group, as outlined below.
+</p>
 </section>
 <section id="adding-questions-within-a-group">
-<h2>Adding questions within a group<a class="headerlink" href="#adding-questions-within-a-group" title="Permalink to this heading">¶</a></h2>
-<p>Hover your mouse (anywhere inside the group) where you wish to add a new
-question. You should see a plus sign (+) under the question. In the image below,
-I have hovered my mouse over the last question (Hobby). Press the plus sign that
-is inside the group (marked with a red box) to add a new question.</p>
-<p class="note">If you press the other plus sign (+) which is located outside the group, you will be adding a question outside the group.</p>
-<p><img alt="image" src="_images/add_questions.png" /></p>
-<p>You should now be able to see <strong>Add Question</strong> as shown in the image below:</p>
-<p><img alt="image" src="_images/add_questions_2.png" /></p>
+<h3>Adding questions within a group<a class="headerlink" href="#adding-questions-within-a-group" title="Permalink to this heading">¶</a></h3>
+<p>Hover your mouse anywhere inside the group where you want to add a new question. Click on a <strong>plus sign</strong> <i class="k-icon-plus"></i> inside the group to add a new question.</p>
+<p class="note">
+    <b>Note:</b> If you click the <b>plus sign</b> <i class="k-icon-plus"></i> that is located outside the group, you will be adding a question outside the group.
+</p>
+<p>You also drag and drop any existing question into a question group.</p>
 </section>
 <section id="removing-questions-from-a-group">
-<h2>Removing questions from a group<a class="headerlink" href="#removing-questions-from-a-group" title="Permalink to this heading">¶</a></h2>
-<p>Hover your mouse on top of the question you wish to delete. Press the trash
-(bin) icon. At this stage, the color of the question box you wish to delete
-changes to red. You should also see a text with <strong>Delete Question</strong> on top of
-the question that you wish to delete.</p>
-<p><img alt="image" src="_images/delete_questions.png" /></p>
-<p>Once you click the delete button, you should get a confirmation dialogue box as
-shown in the image below. Click <strong>OK</strong>.</p>
-<p><img alt="image" src="_images/confirm_delete.png" /></p>
+<h3>Removing questions from a group<a class="headerlink" href="#removing-questions-from-a-group" title="Permalink to this heading">¶</a></h3>
+<p>To remove a question from a group but keep it in the form, select the question and drag it outside of the group.</p>
+<p>To delete a question completely:</p>
+<ol class="arabic simple">
+<li><p>Hover your mouse over the question you wish to delete.</p></li>
+<li><p>Press the <strong>trash icon</strong><i class="k-icon-trash"></i>. The question box will turn red, and <strong>Delete Question</strong> will appear above it.</p></li>
+<li><p>After clicking the delete button, a confirmation dialog box will appear. Click <strong>OK</strong>.</p></li>
+</ol>
 </section>
 <section id="re-ordering-a-question-within-a-group">
-<h2>Re-ordering a question within a group<a class="headerlink" href="#re-ordering-a-question-within-a-group" title="Permalink to this heading">¶</a></h2>
-<p>If you are not satisfied with the ordering of the questions within the group,
-you could re-order them by simply selecting a question (that is within a group)
-and dragging them to an appropriate place (either up or down as needed).</p>
-<p><img alt="image" src="_images/reorder.png" /></p>
-<p>If needed, you could also drag them outside the group (to extract a question
-from a group).</p>
+<h3>Re-ordering a question within a group<a class="headerlink" href="#re-ordering-a-question-within-a-group" title="Permalink to this heading">¶</a></h3>
+<p>You can reorder questions within a group by selecting the question and dragging it to the desired position (up or down).</p>
 </section>
-<section id="displaying-the-grouped-questions-on-the-same-screen">
-<h2>Displaying the grouped questions on the same screen<a class="headerlink" href="#displaying-the-grouped-questions-on-the-same-screen" title="Permalink to this heading">¶</a></h2>
-<p>If you wish to display the grouped questions on the same screen, press the gear
-like settings icon that has been marked under the red boxed as shown in the
-image below. Then select <strong>Show all questions in this group on the same screen</strong>
-as shown in the image below:</p>
-<p><img alt="image" src="_images/display.png" /></p>
-<p>Alternatively, you could also group a set of questions and display them on the
-same screen through XLSForm (if you are comfortable with XLSForm) using the
-<code class="docutils literal notranslate"><span class="pre">field-list</span></code> option under the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column:</p>
-<p><strong>survey sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>type</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-<th class="text-left head"><p>appearance</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>begin_group</p></td>
-<td class="text-left"><p>DC</p></td>
-<td class="text-left"><p>Demographic Characteristics</p></td>
-<td class="text-left"><p>field-list</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>select_one Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Hobby</p></td>
-<td class="text-left"><p>Hobby</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>end_group</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>choices sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Male</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>Female</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
+<section id="removing-a-question-group">
+<h3>Removing a question group<a class="headerlink" href="#removing-a-question-group" title="Permalink to this heading">¶</a></h3>
+<p>If you no longer need a group of questions, you can either ungroup them or delete the entire group. To do this, click the <strong>Delete</strong><i class="k-icon-trash"></i> button from the group header.</p>
+<p>A dialog box will appear asking you to confirm if you wish to split apart the group or delete everything.</p>
+<ul class="simple">
+<li><p>Click <strong>UNGROUP</strong> to remove the group while keeping the questions in the form.</p></li>
+<li><p>Click <strong>DELETE EVERYTHING</strong> to delete both the group and all its questions.</p></li>
+</ul>
 </section>
-<section id="ungrouping-a-set-of-questions">
-<h2>Ungrouping a set of questions<a class="headerlink" href="#ungrouping-a-set-of-questions" title="Permalink to this heading">¶</a></h2>
-<p>If you no longer need a group of questions, you could ungroup or delete the
-grouped questions. For this simply click the <strong>Delete</strong> button from the group
-header.</p>
-<p><img alt="image" src="_images/ungroup.png" /></p>
-<p>You should then get a dialogue box confirming if you wish to split apart the
-group or delete everything. Press <strong>UNGROUP</strong>.</p>
-<p><img alt="image" src="_images/ungroup_or_delete_confirm.png" /></p>
-<p>The group disappears but the questions will remain.</p>
-<p><img alt="image" src="_images/ungroup_results.png" /></p>
-<p class="note">If the <strong>DELETE EVERYTHING</strong> button is pressed, the group and all its questions will be deleted.
+<section id="nested-groups">
+<h3>Nested groups<a class="headerlink" href="#nested-groups" title="Permalink to this heading">¶</a></h3>
+<p>A group of questions can be created or placed inside another group. This is known as <strong>nested groups</strong>. <a class="reference internal" href="#repeating-a-question-group">Repeat groups</a> can also be nested.</p>
 </section>
-<section id="skipping-a-group-of-questions">
-<h2>Skipping a group of questions<a class="headerlink" href="#skipping-a-group-of-questions" title="Permalink to this heading">¶</a></h2>
-<p>To skip a group of questions, you should have at least one controlling question
-on top of the grouped question. Press the settings icon from the grouped
-question as shown in the image below:</p>
-<p><img alt="image" src="_images/skip.png" /></p>
-<p>Then select <strong>Skip Logic</strong> and configure as shown in the image below:</p>
-<p><img alt="image" src="_images/skip_logic.png" /></p>
-<p>Alternatively, you could also do this in XLSForm:</p>
-<p><strong>survey sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>type</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-<th class="text-left head"><p>relevant</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>select_one Q1</p></td>
-<td class="text-left"><p>Q1</p></td>
-<td class="text-left"><p>Q1. Are the any eligible respondents in the household?</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>begin_group</p></td>
-<td class="text-left"><p>DC</p></td>
-<td class="text-left"><p>Details of eligible respondents</p></td>
-<td class="text-left"><p>${Q1} = ‘1’</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>select_one Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Hobby</p></td>
-<td class="text-left"><p>Hobby</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>end_group</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>choices sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>Q1</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Yes</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Q1</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Male</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>Female</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>choices</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
 </section>
-<section id="creating-a-roster-repeating-group-of-questions">
-<h2>Creating a roster (repeating group of questions)<a class="headerlink" href="#creating-a-roster-repeating-group-of-questions" title="Permalink to this heading">¶</a></h2>
-<p>Questions within a roster can be answered multiple times. For example, in a
-household survey you might want to ask the name, age, gender and education
-status of every household member.</p>
-<p>Create a group of questions following the instructions that has already been
-outlined above. Then under the <strong>group settings</strong>, select <strong>Repeat this group if
-necessary</strong> (marked under the red box as shown in the image below).</p>
-<p><img alt="image" src="_images/repeat.png" /></p>
-<p>During an interview the enumerators will be able to enter the details to these
-grouped questions as many times as required.</p>
-<p class="note">The resulting data structure from a roster is different from the data you normally see with other variables or groups. When downloading your data, you will see a different sheet for each roster (i.e. the number of additional sheets corresponds with the number of repeating groups that you have within your survey form).</p>
+<section id="question-group-settings">
+<h2>Question group settings<a class="headerlink" href="#question-group-settings" title="Permalink to this heading">¶</a></h2>
+<p>After creating a question group, you can customize its behavior and appearance. For example, you can display all questions in the group on the same screen, apply skip logic to the entire group, or set the group to repeat.</p>
+<section id="displaying-grouped-questions-on-the-same-screen">
+<h3>Displaying grouped questions on the same screen<a class="headerlink" href="#displaying-grouped-questions-on-the-same-screen" title="Permalink to this heading">¶</a></h3>
+<p>In KoboCollect, questions appear one at a time by default. In Enketo web forms, all questions appear on the same screen.</p>
+<p>To display questions by group on the same screen during data collection, click the <strong>Settings</strong><i class="k-icon-settings"></i> icon to the right of the group name. Then, under <strong>Appearance (Advanced)</strong>, select <strong>field-list</strong> (Show all questions in this group on the same screen).</p>
+<p class="note">
+    <b>Note:</b> If you plan to collect data using Enketo web forms, you will also need to enable the <b>Multiple pages</b> theme in the <b>Form style</b> menu (<b>Layout & Settings</b>). For more information on Enketo web form styles, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Using alternative Enketo web form styles</a>.
+</p>
 </section>
-<section id="controlling-the-loop-of-repetition-in-a-roster">
-<h2>Controlling the loop of repetition in a roster<a class="headerlink" href="#controlling-the-loop-of-repetition-in-a-roster" title="Permalink to this heading">¶</a></h2>
-<p>Sometimes your survey may demand you to control the repeating of questions in a
-roster with a value of a certain variable. In this case, you should modify your
-survey in XLSForm as the formbuilder does not currently support this feature.</p>
-<p><strong>survey sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>type</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-<th class="text-left head"><p>repeat_count</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>Q1</p></td>
-<td class="text-left"><p>Total number of family members living in this household</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>begin_repeat</p></td>
-<td class="text-left"><p>DC</p></td>
-<td class="text-left"><p>Details of eligible respondents</p></td>
-<td class="text-left"><p>${Q1}</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>select_one Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Hobby</p></td>
-<td class="text-left"><p>Hobby</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>end_repeat</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>choices sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Male</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>Female</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>choices</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p class="note">Instead of having an indefinite number of repeat group iterations, this method will control the number of iterations based on the value in the <code>repeat_count</code> column.</p>
+<section id="skipping-a-question-group">
+<h3>Skipping a question group<a class="headerlink" href="#skipping-a-question-group" title="Permalink to this heading">¶</a></h3>
+<p>To skip a group of questions, ensure you have at least one controlling question positioned before the grouped questions. Click the <strong>Settings</strong><i class="k-icon-settings"></i> icon for the grouped question, then select <strong>Skip Logic</strong> and configure the skip logic conditions as you would for an individual question.</p>
+<p>To learn more about adding skip logic conditions, see <a class="reference external" href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>.</p>
 </section>
-<section id="using-information-to-a-roster-from-a-preceding-roster">
-<h2>Using information to a roster from a preceding roster<a class="headerlink" href="#using-information-to-a-roster-from-a-preceding-roster" title="Permalink to this heading">¶</a></h2>
-<p>While working with grouping questions and repeating groups, sometimes you might
-need to include certain details to a roster from a preceding roster. Designing
-such survey form is possible in KoboToolbox using an
-<a class="reference external" href="https://docs.getodk.org/form-operators-functions/#indexed-repeat"><code class="docutils literal notranslate"><span class="pre">indexed-repeat()</span></code></a>
-function in the XLSForm. For example, you could use the name that has been
-recorded in a roster (previously) to link with other repeating group questions
-(like education etc.):</p>
-<p><strong>survey sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>type</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-<th class="text-left head"><p>calculation</p></th>
-<th class="text-left head"><p>repeat_count</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>begin_repeat</p></td>
-<td class="text-left"><p>DC</p></td>
-<td class="text-left"><p>Demographic Characteristics</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>select_one Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Hobby</p></td>
-<td class="text-left"><p>Hobby</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>end_repeat</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>calculate</p></td>
-<td class="text-left"><p>family_count</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>count(${DC})</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>note</p></td>
-<td class="text-left"><p>family_count_note</p></td>
-<td class="text-left"><p>Number of family members: ${family_count}</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>begin_repeat</p></td>
-<td class="text-left"><p>education</p></td>
-<td class="text-left"><p>Education information</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>${family_count}</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>calculate</p></td>
-<td class="text-left"><p>name_individual</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>indexed-repeat(${Name}, ${DC}, position(..))</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>select_one edu_level</p></td>
-<td class="text-left"><p>edu_level</p></td>
-<td class="text-left"><p>What is ${name_individual}’s level of education</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>end_repeat</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>choices sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Male</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>Female</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>edu_level</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Primary</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>edu_level</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>Secondary</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>edu_level</p></td>
-<td class="text-left"><p>3</p></td>
-<td class="text-left"><p>Higher Secondary &amp; Above</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>choices</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p>Screen seen while <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">collecting data in Enketo</span></a>:</p>
-<p><img alt="image" src="_images/enketo.png" /></p>
+<section id="repeating-a-question-group">
+<h3>Repeating a question group<a class="headerlink" href="#repeating-a-question-group" title="Permalink to this heading">¶</a></h3>
+<p>A repeat group allows a set of questions to be answered multiple times within a form. For example, in a household survey, you could use a repeat group to collect the name, age, gender, and education status for every household member.</p>
+<p>To create a question group:</p>
+<ol class="arabic simple">
+<li><p>Create all the questions you wish to include, then group them.</p></li>
+<li><p>In the group <strong>Settings</strong><i class="k-icon-settings"></i>, turn on the option to <strong>Repeat this group if necessary</strong>.</p></li>
+</ol>
+<p>During data collection, enumerators will be able to enter responses for these grouped questions as many times as needed.</p>
+<p class="note">
+    <b>Note:</b> Adding repeat groups to your form creates a different data structure compared to standard variables or groups. When you download your data in .xlsx format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
+</p>
 </section>
-<section id="nested-repeat-roster-within-a-roster">
-<h2>Nested Repeat (roster within a roster)<a class="headerlink" href="#nested-repeat-roster-within-a-roster" title="Permalink to this heading">¶</a></h2>
-<p>KoboToolbox also supports nested repeat form design. Here you are able to add a
-roster within a roster (i.e. a repeat group question within a repeat group
-question).</p>
-<p>Design a roster (with the group name <strong>Demographic Characteristics</strong>) and then
-place another roster (with the group name <strong>List of Hobbies</strong>) within a roster
-(<strong>Demographic Characteristics</strong>) by following the steps outlined above under
-<strong>Creating a roster (repeating group of questions)</strong>. You should then have a
-nested repeat form as shown in the image below:</p>
-<p><img alt="image" src="_images/nested_repeat.png" /></p>
-<p>Alternatively, you could also do this in XLSForm:</p>
-<p><strong>survey sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>type</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-<th class="text-left head"><p>calculation</p></th>
-<th class="text-left head"><p>repeat_count</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>begin_repeat</p></td>
-<td class="text-left"><p>DC</p></td>
-<td class="text-left"><p>Demographic Characteristics</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p>Name</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p>Age</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>select_one Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>Hobby</p></td>
-<td class="text-left"><p>How many hobbies does ${name} have?</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>calculate</p></td>
-<td class="text-left"><p>name_individual</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>indexed-repeat(${Name}, ${DC}, position(..))</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>begin_repeat</p></td>
-<td class="text-left"><p>LH</p></td>
-<td class="text-left"><p>List of Hobbies</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>${Hobby}</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>Hobbies</p></td>
-<td class="text-left"><p>Hobbies of ${name_individual}</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>end_repeat</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>end_repeat</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>choices sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Male</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Sex</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>Female</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>choices</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p>Screen seen while collecting data in Enketo:</p>
-<p><img alt="image" src="_images/nested_repeat_enketo.png" /></p>
-<p class="note">You are able to collect data using nested repeats in both <a class="reference" href="data_through_webforms.html">Enketo</a> and the <a class="reference" href="kobocollect-android.html">Collect Android app</a>. If you are using Collect, please ensure that you are using the latest version as earlier versions may not support this.</p>
+<section id="advanced-settings-for-repeat-groups">
+<h3>Advanced settings for repeat groups<a class="headerlink" href="#advanced-settings-for-repeat-groups" title="Permalink to this heading">¶</a></h3>
+<p>Additional settings and functionalities for repeat groups are available through XLSForm, but not directly within the Formbuilder. These include setting a fixed or dynamic number of repetitions, and using information from repeat groups elsewhere in your form.</p>
+<p>For more information about advanced settings for repeat groups, see <a class="reference external" href="https://docs.getodk.org/form-logic/#controlling-the-number-of-repetitions">XLSForm documentation</a>.</p>
 </section>
-<section id="downloading-data-from-repeat-groups">
-<h2>Downloading Data from Repeat Groups<a class="headerlink" href="#downloading-data-from-repeat-groups" title="Permalink to this heading">¶</a></h2>
-<p>This section takes you through the process of downloading data from repeat
-groups.</p>
-<p>Data from repeat groups are downloaded separately from data outside the repeat
-groups (primary/parent data). The following diagram illustrates the structure of
-how sheets are created in the XLSform.</p>
-<p><img alt="Data Structure" src="_images/data_structure.png" /></p>
-<p>When you download data from a form (project) with repeat groups included, you
-need to use either the <strong>XLS</strong> or <strong>XLS (legacy)</strong> download options. <strong>CSV</strong>
-download will only give you data from the Primary/Parent Data.</p>
-<p><img alt="XLS Download" src="_images/xls_download.png" /></p>
-<p>As previously explained, once you have downloaded the data, check for repeat
-group data within the separate sheets. To link the repeat group data to the
-parent data, use the index column from the parent sheet and match it to the
-parent index column in the repeat group sheet.</p>
 </section>
 </section>
 
@@ -749,7 +218,7 @@ parent index column in the repeat group sheet.</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Grouping Questions and Repeating Groups"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Grouping questions and repeating groups"
               class="feedback-button"
               target="_blank"
             >
@@ -800,20 +269,9 @@ parent index column in the repeat group sheet.</p>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
 <li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Grouping Questions and Repeating Groups</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#grouping-a-set-of-questions">Grouping a set of questions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#alternative-way-of-creating-a-group">Alternative way of creating a group</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-questions-within-a-group">Adding questions within a group</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#removing-questions-from-a-group">Removing questions from a group</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#re-ordering-a-question-within-a-group">Re-ordering a question within a group</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#displaying-the-grouped-questions-on-the-same-screen">Displaying the grouped questions on the same screen</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ungrouping-a-set-of-questions">Ungrouping a set of questions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#skipping-a-group-of-questions">Skipping a group of questions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#creating-a-roster-repeating-group-of-questions">Creating a roster (repeating group of questions)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#controlling-the-loop-of-repetition-in-a-roster">Controlling the loop of repetition in a roster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#using-information-to-a-roster-from-a-preceding-roster">Using information to a roster from a preceding roster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#nested-repeat-roster-within-a-roster">Nested Repeat (roster within a roster)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#downloading-data-from-repeat-groups">Downloading Data from Repeat Groups</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Grouping questions and repeating groups</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-and-managing-question-groups">Creating and managing question groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#question-group-settings">Question group settings</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
@@ -958,7 +416,7 @@ parent index column in the repeat group sheet.</p>
   <script>
     window.docs = {
       currentPagename: "group_repeat",
-      currentTitle: "Grouping Questions and Repeating Groups",
+      currentTitle: "Grouping questions and repeating groups",
       currentUrl: ("index.html").replace("index.html", "group_repeat.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

@@ -1,338 +1,104 @@
-# Grouping Questions and Repeating Groups
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/group_repeat.md" class="reference">29 Jul 2025</a>
+# Grouping questions and repeating groups
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ab66fa7a5728aee26e920381e41a2e8334895040/source/group_repeat.md" class="reference">21 Aug 2025</a>
 
-KoboToolbox supports grouping questions when designing a survey form. Users may
-need to group questions due to various reasons:
+Grouping questions helps organize related questions into sections, adds structure to your form, and makes it easier to navigate. For example, all demographic questions can be grouped together in one section of the form.
 
--   **Make the questionnaire systematic:** You could group your questions that
-    have special linkage or attributes as Identifier, Section A, Section I, etc.
--   **Display a set of questions per page:** Grouped questions can be displayed
-    on separate pages (or screens) during data collection.
--   **Skip a group of questions:** Rather than adding the same skip logic to
-    each individual question, group the questions and add the skip logic to the
-    group instead.
--   **Create a roster:** Repeat grouped questions for household surveys, etc.
+-   **Structuring the questionnaire:** Questions with common themes or attributes can be grouped together in a single section.
+-   **Displaying a set of questions per page:** Grouped questions can be displayed on separate pages or screens during data collection.
+-   **Skipping a group of questions:** Skip logic can be added to the whole group instead of adding it to each individual question.
+-   **Create a roster:** Question groups can be repeated, for example for household surveys or indicator tracking.
 
-## Grouping a set of questions
+This article covers how to create and manage question groups and repeat groups in the KoboToolbox Formbuilder.
 
-Draft a set of questions that you would wish to group together. Then press the
-**CTRL Key** _(It may vary based on the OS used. The instruction here is based
-on the Windows OS)_ and select **all the questions** _(with the help of your
-mouse)_ that you wish to group. You should see the questions getting highlighted
-to blue as shown in the image below:
+<iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-![image](/images/group_repeat/group.png)
+## Creating and managing question groups
 
-Then press **Create group with selected questions** _(marked under the red box)_
-as shown in the image above. You should now be able to see your new group as
-shown in the image below. It should be slightly different (enclosed within a
-shaded box) then the normal question you generally see.
+The Formbuilder makes it easy to group questions, add questions to groups, remove questions from groups, and re-order questions within a group.
 
-![image](/images/group_repeat/selected.png)
+### Grouping a set of questions
 
-You can also change the group label. Here I have changed the group label to
-**Demographic Characteristics** as shown in the image below:
+To create a question group, follow the steps below:
 
-![image](/images/group_repeat/demographics.png)
+1. Draft a set of questions that you would like to group together.
+2. Select the questions using the **CTRL** key (Windows) or the **Command** key (Mac).
+3. Click on **Create group** with selected questions in the top left menu bar.
 
-## Alternative way of creating a group
+Your new group will appear enclosed within a shaded box, distinguishing it from standard questions. You can also change the group label, which will display at the top of the group in the form.
 
-Draft a question. Select the question that you have drafted. It highlights to
-blue. At the same time the icon (marked under the red box as shown in the image
-below) for **Create group with selected questions** also gets activated.
+<p class="note">
+    <b>Note:</b> Alternatively, you can create a single question, select the question, and click on <b>Create group</b>. Then, you can add more questions within the group, as outlined below.
+</p>
 
-![image](/images/group_repeat/alternative_group.png)
+### Adding questions within a group
 
-Now click the **Create group with selected questions** (icon) and you should be
-able to see the question has been grouped (despite the fact that there is only
-one question at the moment).
+Hover your mouse anywhere inside the group where you want to add a new question. Click on a **plus sign** <i class="k-icon-plus"></i> inside the group to add a new question.
 
-![image](/images/group_repeat/alternative_selected.png)
+<p class="note">
+    <b>Note:</b> If you click the <b>plus sign</b> <i class="k-icon-plus"></i> that is located outside the group, you will be adding a question outside the group.
+</p>
 
-Add or modify questions as outlined below.
+You also drag and drop any existing question into a question group.
 
-## Adding questions within a group
+### Removing questions from a group
 
-Hover your mouse (anywhere inside the group) where you wish to add a new
-question. You should see a plus sign (+) under the question. In the image below,
-I have hovered my mouse over the last question (Hobby). Press the plus sign that
-is inside the group (marked with a red box) to add a new question.
+To remove a question from a group but keep it in the form, select the question and drag it outside of the group.
 
-<p class="note">If you press the other plus sign (+) which is located outside the group, you will be adding a question outside the group.</p>
+To delete a question completely:
+1. Hover your mouse over the question you wish to delete.
+2. Press the **trash icon**<i class="k-icon-trash"></i>. The question box will turn red, and **Delete Question** will appear above it.
+3. After clicking the delete button, a confirmation dialog box will appear. Click **OK**. 
 
-![image](/images/group_repeat/add_questions.png)
+### Re-ordering a question within a group
 
-You should now be able to see **Add Question** as shown in the image below:
+You can reorder questions within a group by selecting the question and dragging it to the desired position (up or down).
 
-![image](/images/group_repeat/add_questions_2.png)
+### Removing a question group 
+If you no longer need a group of questions, you can either ungroup them or delete the entire group. To do this, click the **Delete**<i class="k-icon-trash"></i> button from the group header.
 
-## Removing questions from a group
+A dialog box will appear asking you to confirm if you wish to split apart the group or delete everything.
 
-Hover your mouse on top of the question you wish to delete. Press the trash
-(bin) icon. At this stage, the color of the question box you wish to delete
-changes to red. You should also see a text with **Delete Question** on top of
-the question that you wish to delete.
+- Click **UNGROUP** to remove the group while keeping the questions in the form.
+- Click **DELETE EVERYTHING** to delete both the group and all its questions.
 
-![image](/images/group_repeat/delete_questions.png)
+### Nested groups
 
-Once you click the delete button, you should get a confirmation dialogue box as
-shown in the image below. Click **OK**.
+A group of questions can be created or placed inside another group. This is known as **nested groups**. [Repeat groups](#repeating-a-question-group) can also be nested. 
 
-![image](/images/group_repeat/confirm_delete.png)
+## Question group settings
 
-## Re-ordering a question within a group
+After creating a question group, you can customize its behavior and appearance. For example, you can display all questions in the group on the same screen, apply skip logic to the entire group, or set the group to repeat.
 
-If you are not satisfied with the ordering of the questions within the group,
-you could re-order them by simply selecting a question (that is within a group)
-and dragging them to an appropriate place (either up or down as needed).
+### Displaying grouped questions on the same screen
 
-![image](/images/group_repeat/reorder.png)
+In KoboCollect, questions appear one at a time by default. In Enketo web forms, all questions appear on the same screen.
 
-If needed, you could also drag them outside the group (to extract a question
-from a group).
+To display questions by group on the same screen during data collection, click the **Settings**<i class="k-icon-settings"></i> icon to the right of the group name. Then, under **Appearance (Advanced)**, select **field-list** (Show all questions in this group on the same screen).
 
-## Displaying the grouped questions on the same screen
+<p class="note">
+    <b>Note:</b> If you plan to collect data using Enketo web forms, you will also need to enable the <b>Multiple pages</b> theme in the <b>Form style</b> menu (<b>Layout & Settings</b>). For more information on Enketo web form styles, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Using alternative Enketo web form styles</a>.
+</p>
 
-If you wish to display the grouped questions on the same screen, press the gear
-like settings icon that has been marked under the red boxed as shown in the
-image below. Then select **Show all questions in this group on the same screen**
-as shown in the image below:
+### Skipping a question group
+To skip a group of questions, ensure you have at least one controlling question positioned before the grouped questions. Click the **Settings**<i class="k-icon-settings"></i> icon for the grouped question, then select **Skip Logic** and configure the skip logic conditions as you would for an individual question.
 
-![image](/images/group_repeat/display.png)
+To learn more about adding skip logic conditions, see [Adding skip logic in the Formbuilder](https://support.kobotoolbox.org/skip_logic.html).
 
-Alternatively, you could also group a set of questions and display them on the
-same screen through XLSForm (if you are comfortable with XLSForm) using the
-`field-list` option under the `appearance` column:
+### Repeating a question group
+A repeat group allows a set of questions to be answered multiple times within a form. For example, in a household survey, you could use a repeat group to collect the name, age, gender, and education status for every household member. 
 
-**survey sheet**
+To create a question group:
+1. Create all the questions you wish to include, then group them.
+2. In the group **Settings**<i class="k-icon-settings"></i>, turn on the option to **Repeat this group if necessary**.
 
-| type           | name  | label                       | appearance |
-| :------------- | :---- | :-------------------------- | :--------- |
-| begin_group    | DC    | Demographic Characteristics | field-list |
-| text           | Name  | Name                        |            |
-| integer        | Age   | Age                         |            |
-| select_one Sex | Sex   | Sex                         |            |
-| text           | Hobby | Hobby                       |            |
-| end_group      |       |                             |            |
-| survey |
+During data collection, enumerators will be able to enter responses for these grouped questions as many times as needed.
 
-**choices sheet**
+<p class="note">
+    <b>Note:</b> Adding repeat groups to your form creates a different data structure compared to standard variables or groups. When you download your data in .xlsx format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
+</p>
 
-| list_name | name | label  |
-| :-------- | :--- | :----- |
-| Sex       | 1    | Male   |
-| Sex       | 2    | Female |
-| survey |
+### Advanced settings for repeat groups
+Additional settings and functionalities for repeat groups are available through XLSForm, but not directly within the Formbuilder. These include setting a fixed or dynamic number of repetitions, and using information from repeat groups elsewhere in your form.
 
-## Ungrouping a set of questions
+For more information about advanced settings for repeat groups, see [XLSForm documentation](https://docs.getodk.org/form-logic/#controlling-the-number-of-repetitions).  
 
-If you no longer need a group of questions, you could ungroup or delete the
-grouped questions. For this simply click the **Delete** button from the group
-header.
-
-![image](/images/group_repeat/ungroup.png)
-
-You should then get a dialogue box confirming if you wish to split apart the
-group or delete everything. Press **UNGROUP**.
-
-![image](/images/group_repeat/ungroup_or_delete_confirm.png)
-
-The group disappears but the questions will remain.
-
-![image](/images/group_repeat/ungroup_results.png)
-
-<p class="note">If the <strong>DELETE EVERYTHING</strong> button is pressed, the group and all its questions will be deleted.
-
-## Skipping a group of questions
-
-To skip a group of questions, you should have at least one controlling question
-on top of the grouped question. Press the settings icon from the grouped
-question as shown in the image below:
-
-![image](/images/group_repeat/skip.png)
-
-Then select **Skip Logic** and configure as shown in the image below:
-
-![image](/images/group_repeat/skip_logic.png)
-
-Alternatively, you could also do this in XLSForm:
-
-**survey sheet**
-
-| type           | name  | label                                                  | relevant    |
-| :------------- | :---- | :----------------------------------------------------- | :---------- |
-| select_one Q1  | Q1    | Q1. Are the any eligible respondents in the household? |             |
-| begin_group    | DC    | Details of eligible respondents                        | ${Q1} = '1' |
-| text           | Name  | Name                                                   |             |
-| integer        | Age   | Age                                                    |             |
-| select_one Sex | Sex   | Sex                                                    |             |
-| text           | Hobby | Hobby                                                  |             |
-| end_group      |       |                                                        |             |
-| survey |
-
-**choices sheet**
-
-| list_name | name | label  |
-| :-------- | :--- | :----- |
-| Q1        | 1    | Yes    |
-| Q1        | 2    | No     |
-| Sex       | 1    | Male   |
-| Sex       | 2    | Female |
-| choices |
-
-## Creating a roster (repeating group of questions)
-
-Questions within a roster can be answered multiple times. For example, in a
-household survey you might want to ask the name, age, gender and education
-status of every household member.
-
-Create a group of questions following the instructions that has already been
-outlined above. Then under the **group settings**, select **Repeat this group if
-necessary** (marked under the red box as shown in the image below).
-
-![image](/images/group_repeat/repeat.png)
-
-During an interview the enumerators will be able to enter the details to these
-grouped questions as many times as required.
-
-<p class="note">The resulting data structure from a roster is different from the data you normally see with other variables or groups. When downloading your data, you will see a different sheet for each roster (i.e. the number of additional sheets corresponds with the number of repeating groups that you have within your survey form).</p>
-
-## Controlling the loop of repetition in a roster
-
-Sometimes your survey may demand you to control the repeating of questions in a
-roster with a value of a certain variable. In this case, you should modify your
-survey in XLSForm as the formbuilder does not currently support this feature.
-
-**survey sheet**
-
-| type           | name  | label                                                   | repeat_count |
-| :------------- | :---- | :------------------------------------------------------ | :----------- |
-| integer        | Q1    | Total number of family members living in this household |              |
-| begin_repeat   | DC    | Details of eligible respondents                         | ${Q1}        |
-| text           | Name  | Name                                                    |              |
-| integer        | Age   | Age                                                     |              |
-| select_one Sex | Sex   | Sex                                                     |              |
-| text           | Hobby | Hobby                                                   |              |
-| end_repeat     |       |                                                         |              |
-| survey |
-
-**choices sheet**
-
-| list_name | name | label  |
-| :-------- | :--- | :----- |
-| Sex       | 1    | Male   |
-| Sex       | 2    | Female |
-| choices |
-
-<p class="note">Instead of having an indefinite number of repeat group iterations, this method will control the number of iterations based on the value in the <code>repeat_count</code> column.</p>
-
-## Using information to a roster from a preceding roster
-
-While working with grouping questions and repeating groups, sometimes you might
-need to include certain details to a roster from a preceding roster. Designing
-such survey form is possible in KoboToolbox using an
-[`indexed-repeat()`](https://docs.getodk.org/form-operators-functions/#indexed-repeat)
-function in the XLSForm. For example, you could use the name that has been
-recorded in a roster (previously) to link with other repeating group questions
-(like education etc.):
-
-**survey sheet**
-
-| type                 | name              | label                                           | calculation                                  | repeat_count    |
-| :------------------- | :---------------- | :---------------------------------------------- | :------------------------------------------- | :-------------- |
-| begin_repeat         | DC                | Demographic Characteristics                     |                                              |                 |
-| text                 | Name              | Name                                            |                                              |                 |
-| integer              | Age               | Age                                             |                                              |                 |
-| select_one Sex       | Sex               | Sex                                             |                                              |                 |
-| text                 | Hobby             | Hobby                                           |                                              |                 |
-| end_repeat           |                   |                                                 |                                              |                 |
-| calculate            | family_count      |                                                 | count(${DC})                                 |                 |
-| note                 | family_count_note | Number of family members: ${family_count}       |                                              |                 |
-| begin_repeat         | education         | Education information                           |                                              | ${family_count} |
-| calculate            | name_individual   |                                                 | indexed-repeat(${Name}, ${DC}, position(..)) |                 |
-| select_one edu_level | edu_level         | What is ${name_individual}'s level of education |                                              |                 |
-| end_repeat           |                   |                                                 |                                              |                 |
-| survey |
-
-**choices sheet**
-
-| list_name | name | label                    |
-| :-------- | :--- | :----------------------- |
-| Sex       | 1    | Male                     |
-| Sex       | 2    | Female                   |
-| edu_level | 1    | Primary                  |
-| edu_level | 2    | Secondary                |
-| edu_level | 3    | Higher Secondary & Above |
-| choices |
-
-Screen seen while [collecting data in Enketo](data_through_webforms.md):
-
-![image](/images/group_repeat/enketo.png)
-
-## Nested Repeat (roster within a roster)
-
-KoboToolbox also supports nested repeat form design. Here you are able to add a
-roster within a roster (i.e. a repeat group question within a repeat group
-question).
-
-Design a roster (with the group name **Demographic Characteristics**) and then
-place another roster (with the group name **List of Hobbies**) within a roster
-(**Demographic Characteristics**) by following the steps outlined above under
-**Creating a roster (repeating group of questions)**. You should then have a
-nested repeat form as shown in the image below:
-
-![image](/images/group_repeat/nested_repeat.png)
-
-Alternatively, you could also do this in XLSForm:
-
-**survey sheet**
-
-| type           | name            | label                               | calculation                                  | repeat_count |
-| :------------- | :-------------- | :---------------------------------- | :------------------------------------------- | :----------- |
-| begin_repeat   | DC              | Demographic Characteristics         |                                              |              |
-| text           | Name            | Name                                |                                              |              |
-| integer        | Age             | Age                                 |                                              |              |
-| select_one Sex | Sex             | Sex                                 |                                              |              |
-| integer        | Hobby           | How many hobbies does ${name} have? |                                              |              |
-| calculate      | name_individual |                                     | indexed-repeat(${Name}, ${DC}, position(..)) |              |
-| begin_repeat   | LH              | List of Hobbies                     |                                              | ${Hobby}     |
-| text           | Hobbies         | Hobbies of ${name_individual}       |                                              |              |
-| end_repeat     |                 |                                     |                                              |              |
-| end_repeat     |                 |                                     |                                              |              |
-| survey |
-
-**choices sheet**
-
-| list_name | name | label  |
-| :-------- | :--- | :----- |
-| Sex       | 1    | Male   |
-| Sex       | 2    | Female |
-| choices |
-
-Screen seen while collecting data in Enketo:
-
-![image](/images/group_repeat/nested_repeat_enketo.png)
-
-<p class="note">You are able to collect data using nested repeats in both <a class="reference" href="data_through_webforms.html">Enketo</a> and the <a class="reference" href="kobocollect-android.html">Collect Android app</a>. If you are using Collect, please ensure that you are using the latest version as earlier versions may not support this.</p>
-
-## Downloading Data from Repeat Groups
-
-This section takes you through the process of downloading data from repeat
-groups.
-
-Data from repeat groups are downloaded separately from data outside the repeat
-groups (primary/parent data). The following diagram illustrates the structure of
-how sheets are created in the XLSform.
-
-![Data Structure](/images/group_repeat/data_structure.png)
-
-When you download data from a form (project) with repeat groups included, you
-need to use either the **XLS** or **XLS (legacy)** download options. **CSV**
-download will only give you data from the Primary/Parent Data.
-
-![XLS Download](/images/group_repeat/xls_download.png)
-
-As previously explained, once you have downloaded the data, check for repeat
-group data within the separate sheets. To link the repeat group data to the
-parent data, use the index column from the parent sheet and match it to the
-parent index column in the repeat group sheet.
