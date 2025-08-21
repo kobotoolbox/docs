@@ -26,7 +26,7 @@ To export data from a form with repeat groups, you must download your data in **
 ![image](/images/managing_repeat_groups/download.png)
 
 <p class="note"> 
-    To learn more about exporting your data, see [Exporting and downloading your data](https://support.kobotoolbox.org/export_download.html).
+    To learn more about exporting your data, see <a href="https://support.kobotoolbox.org/export_download.html">Exporting and downloading your data</a>.
 </p>
 
 ## Linking repeat group data
