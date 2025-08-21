@@ -25,10 +25,13 @@ To export data from a form with repeat groups, you must download your data in **
 
 ![image](/images/managing_repeat_groups/download.png)
 
-To learn more about exporting your data, see [Exporting and downloading your data](https://support.kobotoolbox.org/export_download.html).
+<p class="note"> 
+    To learn more about exporting your data, see [Exporting and downloading your data](https://support.kobotoolbox.org/export_download.html).
+</p>
 
 ## Linking repeat group data
 In exported XLS files, repeat group data is stored **in a separate sheet**. The first sheet of the XLS file contains the main response data, and each repeat group's data is stored in its own sheet. Nested repeat groups are also stored in separate sheets. 
+
 Data from repeat groups can be linked to the main data using the **_index** column from the main data sheet and the **_parent_index** column from the repeat group data sheet.
 
 In the example below, the first sheet includes an **_index** column, in green, which identifies the first submission. The second sheet, shown in the second image, contains a **_parent_index** column, also highlighted in green, which links back to the first sheet. In this example, both rows from the repeated data come from the first data submission.
