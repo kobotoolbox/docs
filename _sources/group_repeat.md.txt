@@ -1,5 +1,5 @@
 # Grouping questions and repeating groups
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/35f08d60f364a0db1305020a585f98cd2d7303a7/source/group_repeat.md" class="reference">21 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3b8dc591c56f10dfdb0d2526b8c0e2e0eb35aaf1/source/group_repeat.md" class="reference">21 Aug 2025</a>
 
 <iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -45,10 +45,7 @@ You also drag and drop any existing question into a question group.
 
 To remove a question from a group but keep it in the form, select the question and drag it outside of the group.
 
-To delete a question completely:
-1. Hover your mouse over the question you wish to delete.
-2. Press the <i class="k-icon-trash"></i> **trash icon**. The question box will turn red, and **Delete Question** will appear above it.
-3. After clicking the delete button, a confirmation dialog box will appear. Click **OK**. 
+To permanently delete a question from the form, click <i class="k-icon-trash"></i> **Delete Question** from the question menu on the right, then click **OK**.
 
 ### Re-ordering a question within a group
 
