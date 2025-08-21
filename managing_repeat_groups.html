@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Merging Individual Data with Roster Data through Power Query in Excel &#8212; KoboToolbox  documentation</title>
+    <title>Article title &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="REST Services" href="rest_services.html" />
-    <link rel="prev" title="Connecting KoboToolbox to Power BI" href="pulling_data_into_powerbi.html" />
+    <link rel="next" title="Archiving and Unarchiving Projects" href="archiving_projects.html" />
+    <link rel="prev" title="Exporting and Downloading Your Data" href="export_download.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -93,7 +93,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="merging_dataset_excel_power_query">
+<div class="page page--has-sidebar " id="managing_repeat_groups">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -106,206 +106,45 @@
 
         <section class="page__body" role="main">
           
-  <section id="merging-individual-data-with-roster-data-through-power-query-in-excel">
-<h1>Merging Individual Data with Roster Data through Power Query in Excel<a class="headerlink" href="#merging-individual-data-with-roster-data-through-power-query-in-excel" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 Apr 2022</a></p>
-<p>As illustrated in the support article,
-<a class="reference internal" href="group_repeat.html"><span class="std std-doc">Grouping Questions and Repeating Groups</span></a>, you can use
-repeating groups to fulfil certain survey requirements. You may also need to
-analyze data from the repeat groups that were collected. When
-<a class="reference internal" href="export_download.html"><span class="std std-doc">downloading the data from the server (in XLS format)</span></a>, you
-should see the data in the following structure:</p>
-<p><img alt="Dataset Sheets" src="_images/dataset_sheets.png" /></p>
-<p>The first sheet with the sheet name <strong>Repeat Group (Merge)</strong> seen in the image
-above holds the <em>individual data</em> from the survey while the second sheet with
-the sheet name <strong>CR</strong> holds the <em>roster data</em>.</p>
+  <section id="article-title">
+<h1>Article title<a class="headerlink" href="#article-title" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f631f26d4b2c1179da86b9e7e221c21c9c48df48/source/managing_repeat_groups.md" class="reference">21 Aug 2025</a></p>
+<p>KoboToolbox allows you to collect repeated data within a form, for example, when conducting a household survey where all members are asked the same questions. This article explains how to view, edit, and export repeat group data, and how to link repeat group data to the main data.</p>
 <p class="note">
-  For downloaded datasets, you should have one sheet more than the number of
-  <em>repeat groups</em>. For example, if you had one
-  <em>repeat group</em> included in the survey form, you should have two sheets
-  in your dataset.
+  To learn more about setting up repeat groups in your forms, see <a     href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups</a>.
 </p>
-<p>This support article will also illustrate the difference between <em>individual
-data</em> and <em>roster data</em>. It will then show the steps for how to merge them into
-a single dataset through <strong>Power Query</strong> in <strong>Excel</strong>.</p>
-<p>Merging <em>individual data</em> and <em>roster data</em> through the system is currently not
-available but it is possible through <strong>Power Query</strong> in <strong>Excel</strong>. Excel was
-chosen over other software because it is a widely used spreadsheet and available
-to almost all PCs. It is also relatively easy-to-use.</p>
-<section id="differences-between-individual-data-and-roster-data">
-<h2>Differences between individual data and roster data:<a class="headerlink" href="#differences-between-individual-data-and-roster-data" title="Permalink to this heading">¶</a></h2>
-<p><em>Individual data</em> are information that are generally captured only once in an
-interview. <em>Roster data</em>, on the other hand, are captured more than once <em>(e.g.,
-details of all family members living within a household)</em> from within the same
-individual in an interview. The number of cases in <em>individual data</em> may equal
-to <em>roster data</em> but can never exceed it, while the number of cases in <em>roster
-data</em> generally exceeds the <em>individual data</em> but sometimes may be equal (but
-never less).</p>
-<p>A filled-up survey form, as shown below, should show in a picture the
-differences between <em>individual data</em> and <em>roster data</em>. <em>Please note, all data
-used in this support article are hypothetical</em>.</p>
-<p><img alt="Form" src="_images/form.png" /></p>
+<section id="viewing-and-editing-repeat-group-data">
+<h2>Viewing and editing repeat group data<a class="headerlink" href="#viewing-and-editing-repeat-group-data" title="Permalink to this heading">¶</a></h2>
+<p>You can view repeated data in the data table, which you can find in the <strong>Table</strong> view of the <strong>DATA</strong> tab in the KoboToolbox project interface. Responses to repeated questions appear in a single column per question, with responses separated by a comma, as shown below.</p>
+<p><img alt="image" src="_images/data_table.png" /></p>
+<p>You can also view the complete data for any given submission, including each repetition of repeat groups, by clicking the <i class="k-icon-view"></i><strong>Open</strong> button to the left of each submission.</p>
+<p>To edit repeat group data, click the <i class="k-icon-edit"></i><strong>Edit</strong> button. This will open up the form and allow you to <a class="reference external" href="https://support.kobotoolbox.org/howto_edit_single_submissions.html">edit the form data</a> before resubmitting. <a class="reference external" href="https://support.kobotoolbox.org/howto_edit_multiple_submissions.html">Bulk editing</a> repeat group data is not currently supported.</p>
 <p class="note">
-  Any data that is collected outside the repeat group is
-  <em>individual data</em> and any data that is collected inside a repeat group
-  is <em>roster data</em>.
-</p>
-<p>Data downloaded in XLS format should also show the difference between
-<em>individual data</em> and <em>roster data</em>.</p>
-<p>Each record <em>(as shown in the image below)</em>, under <code class="docutils literal notranslate"><span class="pre">Name</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">household</span> <span class="pre">head</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Sex</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">household</span> <span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">family</span> <span class="pre">members</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">household</span></code>, and
-<code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">school</span> <span class="pre">going</span> <span class="pre">children</span> <span class="pre">(aged</span> <span class="pre">6-16</span> <span class="pre">years)</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">household</span></code> from the first
-sheet <strong>Repeat Group (Merge)</strong> is <em>individual data</em>.</p>
-<p><img alt="Individual Data" src="_images/individual_data.png" /></p>
-<p>This example dataset has a total of 7 interviews as its <em>individual data</em>.</p>
-<p>Similarly, each record <em>(as shown in the image below)</em>, under <code class="docutils literal notranslate"><span class="pre">Name</span> <span class="pre">of</span> <span class="pre">child</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Age</span> <span class="pre">of</span> <span class="pre">child</span></code>, and <code class="docutils literal notranslate"><span class="pre">Sex</span> <span class="pre">of</span> <span class="pre">child</span></code> from the second sheet, <strong>CR</strong>, is <em>roster
-data</em>.</p>
-<p><img alt="Roster Data" src="_images/roster_data.png" /></p>
-<p>So, this example sample dataset has a total of 12 records as its <em>roster data</em>.</p>
-<p class="note">
-  <strong>Note:</strong> While downloading a dataset from the server, you should
-  also be able to see other variables (metadata variables) if they have not been
-  filtered out. They have been removed from this example dataset for simplicity.
+  <b>Note</b>: Repeat group data cannot be displayed in the <b>Reports</b> or <b>Map</b> views due to the data structure of repeat groups.
 </p>
 </section>
-<section id="merging-individual-data-with-roster-data">
-<h2>Merging individual data with roster data:<a class="headerlink" href="#merging-individual-data-with-roster-data" title="Permalink to this heading">¶</a></h2>
-<p>If you look closely at the images shared above, you can see <code class="docutils literal notranslate"><span class="pre">_index</span></code> column with
-value “1” in the first sheet <strong>Repeat Group (Merge)</strong>. Similarly, there is also
-a <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> column with value “1” in the second sheet <strong>CR</strong>. <code class="docutils literal notranslate"><span class="pre">_index</span></code> and
-<code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> are additional variables created by the system to manage repeat
-groups. They are matching variables needed to merge <em>individual data</em> and
-<em>roster data</em> together into one.</p>
-<p>Below are two approaches to merge <em>individual data</em> and <em>roster data</em> into a
-single dataset through <strong>Power Query</strong> in <strong>Excel</strong>. You can use any of the
-following approaches:</p>
-<section id="first-approach-merging-individual-data-with-roster-data-when-the-dataset-is-already-open">
-<h3>First approach: Merging individual data with roster data (when the dataset is already open)<a class="headerlink" href="#first-approach-merging-individual-data-with-roster-data-when-the-dataset-is-already-open" title="Permalink to this heading">¶</a></h3>
-<p>For the first approach, you must have opened your XLS dataset. For details,
-please see the video below:</p>
-<video controls>
-  <source
-    src="./_static/files/merging_dataset_excel_power_query/xls_dataset_open.mp4"
-    type="video/mp4"
-  />
-</video>
-<ul class="simple">
-<li><p>Open the dataset that has both the <em>individual data</em> and <em>roster data</em>.</p></li>
-<li><p>Select all data from the first sheet <em>(individual data)</em>.</p></li>
-<li><p>Under the <strong>Data</strong> tab, select <strong>From Table/Range</strong>.</p></li>
-<li><p>A dialogue box <strong>(Create Table)</strong> will pop-up. Select <strong>OK</strong>.</p></li>
-<li><p>Select the <strong>Close &amp; Load</strong> icon that is located at the top left corner of
-the screen. You should now see two dropdown options: <strong>Close &amp; Load</strong> and
-<strong>Close &amp; Load To …</strong>.</p></li>
-<li><p>Select <strong>Close &amp; Load To …</strong>.</p></li>
-<li><p>A dialogue box <strong>(Import Data)</strong> will pop-up. Select <strong>Only Create
-Connection</strong> and then press <strong>OK</strong>.</p></li>
-<li><p>You have now created a query table for the <em>(individual data)</em>.</p></li>
-<li><p>You can now go to the second sheet, <em>(roster data)</em>, and follow the exact
-steps you have performed above.</p></li>
-<li><p>With this you have created a query table for the <em>(roster data)</em>.</p></li>
-<li><p>Under the <strong>Data</strong> tab, select <strong>Get Data</strong>. From there, select <strong>Combine
-Queries</strong> and then <strong>Merge</strong>.</p></li>
-<li><p>A dialogue box <strong>Merge</strong> is seen.</p></li>
-<li><p>Load both the query tables. Once both the tables are loaded, select the
-matching variable <code class="docutils literal notranslate"><span class="pre">_index</span></code> from the first table. Similarly, select the
-matching variable <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> from the second table. As soon as you
-select both the matching variables you should be able to see <strong>The selection
-matches … of … rows from the first table</strong>. The query table should now be
-merged.</p></li>
-<li><p>To expand the merged table, check all the variables that you wish to have in
-the merged dataset. You can also uncheck <strong>Use original column name as
-prefix</strong> to have the original variable name in the merged dataset. When
-everything is done, select <strong>OK</strong>.</p></li>
-<li><p>You should now have the final merged dataset.</p></li>
-<li><p>Once again, select the <strong>Close &amp; Load</strong> icon that is located at the top left
-corner of the screen. You should see two dropdown options: <strong>Close &amp; Load</strong>
-and <strong>Close &amp; Load To …</strong>.</p></li>
-<li><p>Select <strong>Close &amp; Load</strong>. With this final click you have merged your
-<em>individual data</em> and <em>roster data</em> into a single dataset.</p></li>
-</ul>
-</section>
-<section id="second-approach-merging-individual-data-with-roster-data-when-the-dataset-is-not-yet-open">
-<h3>Second approach: Merging individual data with roster data (when the dataset is not yet open)<a class="headerlink" href="#second-approach-merging-individual-data-with-roster-data-when-the-dataset-is-not-yet-open" title="Permalink to this heading">¶</a></h3>
-<p>Use the second approach when you have not yet opened your XLS dataset and only
-have opened your new Excel workbook. For details, please see the video below:</p>
-<video controls>
-  <source
-    src="./_static/files/merging_dataset_excel_power_query/new_excel_workbook.mp4"
-    type="video/mp4"
-  />
-</video>
-<ul class="simple">
-<li><p>Open a new Excel workbook.</p></li>
-<li><p>Under the <strong>Data</strong> tab, select <strong>Get Data</strong>. From there select <strong>From File</strong>
-and then <strong>From Workbook</strong>.</p></li>
-<li><p>Search the file from your PC. Once you see it, select the file and then
-press <strong>Import</strong>.</p></li>
-<li><p>A dialogue box <strong>Navigator</strong> is seen. Here, check <strong>Select multiple items</strong>
-and the sheet names <strong>CR</strong> and <strong>Repeat Group (Merge)</strong> that are visible.
-Once they are checked the <strong>Load</strong> button at the bottom of the dialogue box
-gets activated.</p></li>
-<li><p>Select the <strong>Load</strong> button. You should see two dropdown options: <strong>Load</strong>
-and <strong>Load To …</strong>. Select <strong>Load</strong>.</p></li>
-<li><p>With this, you have created query tables for the <em>(individual data)</em> and the
-<em>(roster data)</em>.</p></li>
-<li><p>Under the <strong>Data</strong> tab, select <strong>Get Data</strong>. From there, select <strong>Combine
-Queries</strong> and then select <strong>Merge</strong>.</p></li>
-<li><p>A dialogue box <strong>Merge</strong> is seen.</p></li>
-<li><p>Load both the query tables. Once both the tables are loaded, select the
-matching variable <code class="docutils literal notranslate"><span class="pre">_index</span></code> from the first table. Similarly, select the
-matching variable <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> from the second table. As soon as you
-select both the matching variables you should be able to see <strong>The selection
-matches … of … rows from the first table</strong>. The query table should now be
-merged.</p></li>
-<li><p>To expand the merged table, check all the variables that you wish to have in
-the merged dataset. You can also uncheck <strong>Use original column name as
-prefix</strong> to have the original variable name in the merged dataset. When
-everything is done, select <strong>OK</strong>.</p></li>
-<li><p>You should now have the final merged dataset.</p></li>
-<li><p>Once again, select the <strong>Close &amp; Load</strong> icon that is located at the top left
-corner of the screen. You should see two dropdown options: <strong>Close &amp; Load</strong>
-and <strong>Close &amp; Load To …</strong>.</p></li>
-<li><p>Select <strong>Close &amp; Load</strong>. With this final click you have merged your
-<em>individual data</em> and <em>roster data</em> into a single dataset.</p></li>
-</ul>
-<p class="note">
-  The differences in the two approaches are with loading the query table. Once
-  the query tables are loaded, you will need to follow the same steps to merge
-  the <em>individual data</em> and <em>roster data</em>.
+<section id="exporting-repeat-group-data">
+<h2>Exporting repeat group data<a class="headerlink" href="#exporting-repeat-group-data" title="Permalink to this heading">¶</a></h2>
+<p>To export data from a form with repeat groups, you must download your data in <strong>XLS format</strong>. Each repeat group will be exported <strong>as a separate sheet</strong> in the exported file. CSV download will only provide data from the primary data.</p>
+<p><img alt="image" src="_images/download1.png" /></p>
+<p class="note"> 
+    To learn more about exporting your data, see <a href="https://support.kobotoolbox.org/export_download.html">Exporting and downloading your data</a>.
 </p>
 </section>
-</section>
-<section id="troubleshooting">
-<h2>Troubleshooting:<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>Exporting <em>repeat groups</em> is not supported in CSV format. You will need to
-download the data in XLS format.</p></li>
-<li><p>Microsoft Power Query for Excel is an Excel add-on. You can download it
-through this
-<a class="reference external" href="https://www.microsoft.com/en-us/download/details.aspx?id=39379">Microsoft download site</a>.
-It should work best on <em>Excel for Microsoft 365</em> or <em>Excel 2021</em>, <em>Excel
-2019</em>, <em>Excel 2016</em>, <em>Excel 2013</em>, and <em>Excel 2010</em>. For more details,
-please check out the
-<a class="reference external" href="https://support.microsoft.com/en-us/office/about-power-query-in-excel-7104fbee-9e62-4cb9-a02e-5bfb1a6c536a">Microsoft support site</a>.</p></li>
-</ul>
+<section id="linking-repeat-group-data">
+<h2>Linking repeat group data<a class="headerlink" href="#linking-repeat-group-data" title="Permalink to this heading">¶</a></h2>
+<p>In exported XLS files, repeat group data is stored <strong>in a separate sheet</strong>. The first sheet of the XLS file contains the main response data, and each repeat group’s data is stored in its own sheet. Nested repeat groups are also stored in separate sheets.</p>
+<p>Data from repeat groups can be linked to the main data using the <strong>_index</strong> column from the main data sheet and the <strong>_parent_index</strong> column from the repeat group data sheet.</p>
+<p>In the example below, the first sheet includes an <strong>_index</strong> column, in green, which identifies the first submission. The second sheet, shown in the second image, contains a <strong>_parent_index</strong> column, also highlighted in green, which links back to the first sheet. In this example, both rows from the repeated data come from the first data submission.</p>
+<p><img alt="image" src="_images/main_data.png" /></p>
+<p><img alt="image" src="_images/repeat_group_data.png" /></p>
 <p class="note">
-  For practice, you can access the XLSForm
-  <a
-    download
-    class="reference"
-    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge).xlsx"
-    >here</a
-  >
-  and the example sample dataset
-  <a
-    download
-    class="reference"
-    href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge)_dataset.xlsx"
-    >here</a
-  >
-  that were used in this article.
+  <b>Note</b>: The repeat group data sheet also includes an <b>_index column</b>. This column is used to link to <b>nested repeat groups</b>, following the same setup as described above, with the repeat group as the main data and the nested repeat group as the linked data.
+</p>
+<p>Repeat group data can be merged with the main data using different tools for data analysis. For example, in Excel and Power BI, you can use <a class="reference external" href="https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query">Power Query</a> or <a class="reference external" href="https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1">VLOOKUP()</a> to merge data. In SQL, R, SAS, and other database management languages, you can combine the datasets using a <a class="reference external" href="https://learn.microsoft.com/en-us/sql/relational-databases/performance/joins?view=sql-server-ver17">left join</a>.</p>
+<p class="note">
+  To learn more about merging repeat group data using Power Query, see <a href="https://support.kobotoolbox.org/merging_dataset_excel_power_query.html?highlight=power+query">Merging Individual Data with Roster Data through Power Query in Excel</a>.
+<p>To learn more about combining datasets in R, see <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">Mutating joins</a>.</p>
 </p>
 </section>
 </section>
@@ -321,7 +160,7 @@ please check out the
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Merging Individual Data with Roster Data through Power Query in Excel"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Article title"
               class="feedback-button"
               target="_blank"
             >
@@ -411,12 +250,17 @@ please check out the
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and Downloading Your Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Article title</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Article title</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#viewing-and-editing-repeat-group-data">Viewing and editing repeat group data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exporting-repeat-group-data">Exporting repeat group data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#linking-repeat-group-data">Linking repeat group data</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and Unarchiving Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Sharing Your Project and Managing Permissions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="row_level_permissions.html">Row-Level Permissions</a></li>
@@ -436,17 +280,12 @@ please check out the
 <li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting Data into SPSS and/or Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Using the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Connecting to your data using synchronous exports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Merging Individual Data with Roster Data through Power Query in Excel</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#differences-between-individual-data-and-roster-data">Differences between individual data and roster data:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#merging-individual-data-with-roster-data">Merging individual data with roster data:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting:</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Merging Individual Data with Roster Data through Power Query in Excel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rest_services.html">REST Services</a></li>
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporting and Uploading Data to GIS Software</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">KoboToolbox Integration on monday.com</a></li>
@@ -519,9 +358,9 @@ please check out the
 
   <script>
     window.docs = {
-      currentPagename: "merging_dataset_excel_power_query",
-      currentTitle: "Merging Individual Data with Roster Data through Power Query in Excel",
-      currentUrl: ("index.html").replace("index.html", "merging_dataset_excel_power_query.html"),
+      currentPagename: "managing_repeat_groups",
+      currentTitle: "Article title",
+      currentUrl: ("index.html").replace("index.html", "managing_repeat_groups.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
     };
