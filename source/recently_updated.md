@@ -1,7 +1,7 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
-1. [Article title](managing_repeat_groups.md) (21 Aug 2025)
+1. [Managing repeat group data](managing_repeat_groups.md) (21 Aug 2025)
 1. [Pull Data Functionality in KoboToolbox](pull_data_kobotoolbox.md) (18 Aug 2025)
 1. [Article title](article_template.md) (14 Aug 2025)
 1. [Migrating from v1 to v2 API](migrating_api.md) (7 Aug 2025)
