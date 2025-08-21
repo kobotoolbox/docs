@@ -47,7 +47,7 @@ In the example below, the first sheet includes an **_index** column, in green, w
 Repeat group data can be merged with the main data using different tools for data analysis. For example, in Excel and Power BI, you can use [Power Query](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query) or [VLOOKUP()](https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1) to merge data. In SQL, R, SAS, and other database management languages, you can combine the datasets using a [left join](https://learn.microsoft.com/en-us/sql/relational-databases/performance/joins?view=sql-server-ver17).
 
 <p class="note">
-  To learn more about merging repeat group data using Power Query, see <a href="https://support.kobotoolbox.org/merging_dataset_excel_power_query.html?highlight=power+query">Merging Individual Data with Roster Data through Power Query in Excel</a>.<br>To learn more about combining datasets in R, see <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">Mutating joins</a>.
+  To learn more about merging repeat group data using Power Query, see <a href="https://support.kobotoolbox.org/merging_dataset_excel_power_query.html?highlight=power+query">Merging Individual Data with Roster Data through Power Query in Excel</a>.<br><br>To learn more about combining datasets in R, see <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">Mutating joins</a>.
 </p>
 
 
