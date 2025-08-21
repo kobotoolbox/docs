@@ -1,5 +1,5 @@
 # Grouping questions and repeating groups
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f3782b480814b3a3c5dd6b3f030f5286f24489e2/source/group_repeat.md" class="reference">21 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/35f08d60f364a0db1305020a585f98cd2d7303a7/source/group_repeat.md" class="reference">21 Aug 2025</a>
 
 <iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
