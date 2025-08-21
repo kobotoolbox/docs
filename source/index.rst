@@ -108,6 +108,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   record_validation
   delete_project
   export_download
+  managing_repeat_groups
   archiving_projects
   managing_permissions
   row_level_permissions
@@ -118,6 +119,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   recovering_previous_formdata
   getting_started_organization_feature
   activity_logs
+  
 
 .. toctree::
   :maxdepth: 2
