@@ -94,7 +94,7 @@ To create a question group:
 During data collection, enumerators will be able to enter responses for these grouped questions as many times as needed.
 
 <p class="note">
-    <b>Note:</b> Adding repeat groups to your form creates a different data structure compared to standard variables or groups. Data from repeat groups does not appear in the data table in the KoboToolbox platform. When you download your data in .xlsx format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
+    <b>Note:</b> Adding repeat groups to your form creates a different data structure compared to standard variables or groups. When you download your data in .xlsx format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
 </p>
 
 ### Advanced settings for repeat groups
