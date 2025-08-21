@@ -1,5 +1,7 @@
 # Grouping questions and repeating groups
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f3782b480814b3a3c5dd6b3f030f5286f24489e2/source/group_repeat.md" class="reference">21 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/35f08d60f364a0db1305020a585f98cd2d7303a7/source/group_repeat.md" class="reference">21 Aug 2025</a>
+
+<iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Grouping questions helps organize related questions into sections, adds structure to your form, and makes it easier to navigate. For example, all demographic questions can be grouped together in one section of the form.
 
@@ -10,8 +12,6 @@ Users may need to group questions for various reasons:
 -   **Create a roster:** Question groups can be repeated, for example for household surveys or indicator tracking.
 
 This article covers how to create and manage question groups and repeat groups in the KoboToolbox Formbuilder.
-
-<iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Creating and managing question groups
 
@@ -33,10 +33,10 @@ Your new group will appear enclosed within a shaded box, distinguishing it from 
 
 ### Adding questions within a group
 
-Hover your mouse anywhere inside the group where you want to add a new question. Click on a **plus sign** <i class="k-icon-plus"></i> inside the group to add a new question.
+Hover your mouse anywhere inside the group where you want to add a new question. Click on a <i class="k-icon-plus"></i> **sign** inside the group to add a new question.
 
 <p class="note">
-    <b>Note:</b> If you click the <b>plus sign</b> <i class="k-icon-plus"></i> that is located outside the group, you will be adding a question outside the group.
+    <b>Note:</b> If you click the <i class="k-icon-plus"> </i><b>sign</b> that is located outside the group, you will be adding a question outside the group.
 </p>
 
 You also drag and drop any existing question into a question group.
@@ -47,7 +47,7 @@ To remove a question from a group but keep it in the form, select the question a
 
 To delete a question completely:
 1. Hover your mouse over the question you wish to delete.
-2. Press the **trash icon**<i class="k-icon-trash"></i>. The question box will turn red, and **Delete Question** will appear above it.
+2. Press the <i class="k-icon-trash"></i> **trash icon**. The question box will turn red, and **Delete Question** will appear above it.
 3. After clicking the delete button, a confirmation dialog box will appear. Click **OK**. 
 
 ### Re-ordering a question within a group
@@ -55,7 +55,7 @@ To delete a question completely:
 You can reorder questions within a group by selecting the question and dragging it to the desired position (up or down).
 
 ### Removing a question group 
-If you no longer need a group of questions, you can either ungroup them or delete the entire group. To do this, click the **Delete**<i class="k-icon-trash"></i> button from the group header.
+If you no longer need a group of questions, you can either ungroup them or delete the entire group. To do this, click the <i class="k-icon-trash"></i> **Delete** button from the group header.
 
 A dialog box will appear asking you to confirm if you wish to split apart the group or delete everything.
 
@@ -74,14 +74,14 @@ After creating a question group, you can customize its behavior and appearance. 
 
 In KoboCollect, questions appear one at a time by default. In Enketo web forms, all questions appear on the same screen.
 
-To display questions by group on the same screen during data collection, click the **Settings**<i class="k-icon-settings"></i> icon to the right of the group name. Then, under **Appearance (Advanced)**, select **field-list** (Show all questions in this group on the same screen).
+To display questions by group on the same screen during data collection, click the <i class="k-icon-settings"></i> **Settings** icon to the right of the group name. Then, under **Appearance (Advanced)**, select **field-list** (Show all questions in this group on the same screen).
 
 <p class="note">
     <b>Note:</b> If you plan to collect data using Enketo web forms, you will also need to enable the <b>Multiple pages</b> theme in the <b>Form style</b> menu (<b>Layout & Settings</b>). For more information on Enketo web form styles, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Using alternative Enketo web form styles</a>.
 </p>
 
 ### Skipping a question group
-To skip a group of questions, ensure you have at least one controlling question positioned before the grouped questions. Click the **Settings**<i class="k-icon-settings"></i> icon for the grouped question, then select **Skip Logic** and configure the skip logic conditions as you would for an individual question.
+To skip a group of questions, ensure you have at least one controlling question positioned before the grouped questions. Click the <i class="k-icon-settings"></i> **Settings** icon for the grouped question, then select **Skip Logic** and configure the skip logic conditions as you would for an individual question.
 
 <p class="note">
     To learn more about adding skip logic conditions, see <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>.
@@ -92,7 +92,7 @@ A repeat group allows a set of questions to be answered multiple times within a 
 
 To create a question group:
 1. Create all the questions you wish to include, then group them.
-2. In the group **Settings**<i class="k-icon-settings"></i>, turn on the option to **Repeat this group if necessary**.
+2. In the group <i class="k-icon-settings"></i> **Settings**, turn on the option to **Repeat this group if necessary**.
 
 During data collection, enumerators will be able to enter responses for these grouped questions as many times as needed.
 
