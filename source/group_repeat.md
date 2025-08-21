@@ -3,6 +3,7 @@
 
 Grouping questions helps organize related questions into sections, adds structure to your form, and makes it easier to navigate. For example, all demographic questions can be grouped together in one section of the form.
 
+Users may need to group questions for various reasons:
 -   **Structuring the questionnaire:** Questions with common themes or attributes can be grouped together in a single section.
 -   **Displaying a set of questions per page:** Grouped questions can be displayed on separate pages or screens during data collection.
 -   **Skipping a group of questions:** Skip logic can be added to the whole group instead of adding it to each individual question.
@@ -82,7 +83,9 @@ To display questions by group on the same screen during data collection, click t
 ### Skipping a question group
 To skip a group of questions, ensure you have at least one controlling question positioned before the grouped questions. Click the **Settings**<i class="k-icon-settings"></i> icon for the grouped question, then select **Skip Logic** and configure the skip logic conditions as you would for an individual question.
 
-To learn more about adding skip logic conditions, see [Adding skip logic in the Formbuilder](https://support.kobotoolbox.org/skip_logic.html).
+<p class="note">
+    To learn more about adding skip logic conditions, see <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>.
+</p>
 
 ### Repeating a question group
 A repeat group allows a set of questions to be answered multiple times within a form. For example, in a household survey, you could use a repeat group to collect the name, age, gender, and education status for every household member. 
@@ -100,5 +103,7 @@ During data collection, enumerators will be able to enter responses for these gr
 ### Advanced settings for repeat groups
 Additional settings and functionalities for repeat groups are available through XLSForm, but not directly within the Formbuilder. These include setting a fixed or dynamic number of repetitions, and using information from repeat groups elsewhere in your form.
 
-For more information about advanced settings for repeat groups, see [XLSForm documentation](https://docs.getodk.org/form-logic/#controlling-the-number-of-repetitions).  
+<p class="note">
+    For more information about advanced settings for repeat groups, see <a href="https://docs.getodk.org/form-logic/#controlling-the-number-of-repetitions">XLSForm documentation</a>.  
+</p>
 
