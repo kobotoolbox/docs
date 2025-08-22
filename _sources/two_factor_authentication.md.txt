@@ -1,5 +1,5 @@
 # Setting up two-factor authentication in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/33e29445d98b93409343779c0f3b118574d6de42/source/two_factor_authentication.md" class="reference">22 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/441f38b8c38fc0d0ae25823afd4b75cdf790cdbb/source/two_factor_authentication.md" class="reference">22 Aug 2025</a>
 
 <iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -11,8 +11,6 @@ KoboToolbox supports **Two-Factor Authentication (2FA)** to improve account secu
 
 A compatible authenticator app on your mobile device is required to set up 2FA for your KoboToolbox account. This article uses Google Authenticator, available on the [Google Play Store](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2) and [Apple App Store](https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB), but other authenticator apps can also work.
 
-<br>
-
 ## Setting up 2FA in KoboToolbox
 
 2FA in KoboToolbox can be configured using two different approaches: the **QR Code** approach and the **Manual Key** approach. To get started with either approach:
@@ -23,8 +21,6 @@ A compatible authenticator app on your mobile device is required to set up 2FA f
 4. Go to the **Security** tab.
 5. In the **Two-factor authentication section**, enable 2FA by toggling the **Disabled** button.
 6. Open your authenticator app and follow the steps for one of the two approaches below.
-
-<br>
 
 ### Setting up 2FA with a QR code
 
@@ -45,8 +41,6 @@ To set up 2FA with a QR Code:
 
 You have now successfully configured 2FA in your KoboToolbox account via the **QR Code Approach**. 
 
-<br>
-
 ### Setting up 2FA with a manual key
 
 The second approach is the **Manual Key approach**, which does not require your device’s camera to configure 2FA for your KoboToolbox account.
@@ -63,8 +57,6 @@ To set up 2FA with a Manual Key:
 
 You have now successfully configured 2FA in your KoboToolbox account via the **Manual Key Approach**.
 
-<br>
-
 ## Disabling 2FA
 
 To disable 2FA from your KoboToolbox account:
@@ -78,8 +70,6 @@ To disable 2FA from your KoboToolbox account:
 
 ![image](/images/two_factor_authentication/Deactivate_2FA.png) 
 
-<br>
-
 ## Reconfiguring 2FA
 
 To reconfigure 2FA for your KoboToolbox account (e.g., to configure a new smartphone):
@@ -90,8 +80,6 @@ To reconfigure 2FA for your KoboToolbox account (e.g., to configure a new smartp
 4. In the **Two-factor authentication section**, next to **Authenticator app**, press the **Reconfigure** button to begin reconfiguring 2FA. This process follows the same steps as setting up 2FA.
    
 When you reconfigure 2FA for your account, the previous setup will be automatically deleted. Any tokens or recovery codes from the old setup will no longer be valid. After your current 2FA has been deactivated, you will be prompted to configure it again. If you cannot complete the process, 2FA will remain disabled for your account. In this case, you can enable it again at any time through the usual process, as shared above.
-
-<br>
 
 ## Troubleshooting
 <details>
