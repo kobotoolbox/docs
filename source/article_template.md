@@ -186,6 +186,12 @@ Add an unnumbered list:
 Use this format to set up <strong>troubleshooting sections</strong> in your support articles. Include a short title that clearly describes the issue, and propose solutions here.
 </details>
 
+<details>
+<summary><strong>Enketo vs KoboCollect</strong></summary>
+<br>
+Use this format to set up <strong>troubleshooting sections</strong> in your support articles. Include a short title that clearly describes the issue, and propose solutions here.
+</details>
+
 <br/> 
 
 ## List of icons
