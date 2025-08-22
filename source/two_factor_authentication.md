@@ -84,12 +84,12 @@ When you reconfigure 2FA for your account, the previous setup will be automatica
 <summary><b>Generating new recovery codes</b></summary>
 If you have misplaced your recovery codes or believe they have been compromised, you can generate new recovery codes for 2FA by pressing the **Generate new** button next to **Recovery codes**.
 </details>
-<br>
+
 <details>
 <summary><b>Unable to access KoboToolbox account</b></summary>
 If you are unable to access your KoboToolbox account with 2FA enabled (for example, if you reset your smartphone and uninstalled the authenticator app, or you misplaced your recovery codes), you can contact [support@kobotoolbox.org](support@kobotoolbox.org). Please use the email address registered to your account to request that 2FA be disabled.
 </details>
-<br>
+
 <details>
 <summary><b>Feature not available</b></summary>
 This feature is currently unavailable for users on the Community Plan. However, 2FA will be extended to all users in the coming months, regardless of their plan.
