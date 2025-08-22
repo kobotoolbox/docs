@@ -103,6 +103,7 @@ h5,
 h6 {
   font-family: "Source Sans Pro", sans-serif;
   color: inherit;
+  margin-top: 1.5em;
   font-weight: initial;
   padding: 0;
 }
@@ -477,7 +478,32 @@ html body {
   vertical-align: middle;
 }
 .page .page__body ul {
-  margin-left: 1.5em;
+  margin-left: 2.5em;
+  margin-bottom: 1.5em;
+}
+.page .page__body ul li p,
+.page .page__body ul li *:first-child,
+.page .page__body ul li *:last-child {
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+.page .page__body ul li + li {
+  margin-top: 0.25em; 
+  margin-bottom: 0.25em; 
+}
+.page .page__body ol {
+  margin-left: 2.5em;
+  margin-bottom: 1.5em;
+}
+.page .page__body ol li p,
+.page .page__body ol li *:first-child,
+.page .page__body ol li *:last-child {
+  margin-top: 0;
+  margin-bottom: 0; 
+}
+.page .page__body ol li + li {
+  margin-top: 0.25em; 
+  margin-bottom: 0.25em; 
 }
 .page .page__body table {
   margin-bottom: 1.5em;
