@@ -3,6 +3,8 @@
 
 <iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+<br>
+
 KoboToolbox supports **Two-Factor Authentication (2FA)** to improve account security. With 2FA, you will need to enter your account password and a code from a smartphone app to access your KoboToolbox account.
 
 2FA minimizes the risks of a compromised password. Even if your password is hacked, phished, or guessed, 2FA prevents unauthorized access to your account by adding an additional layer of security beyond **Single-Factor Authentication (SFA)**.
@@ -66,7 +68,7 @@ To disable 2FA from your KoboToolbox account:
 5. Open the authenticator app on your smartphone, get the 6-digit code, and enter it. Press **Next**.
 6. After entering the 6-digit code, the system will disable 2FA from your account. 
 
-![image](/images/two_factor_authentication/deactivate_2FA.png) 
+![image](/images/two_factor_authentication/Deactivate_2FA.png) 
 
 ## Reconfiguring 2FA
 
@@ -85,10 +87,14 @@ When you reconfigure 2FA for your account, the previous setup will be automatica
 If you have misplaced your recovery codes or believe they have been compromised, you can generate new recovery codes for 2FA by pressing the <b>Generate new</b> button next to <b>Recovery codes</b>.
 </details>
 
+<br>
+
 <details>
 <summary><b>Unable to access KoboToolbox account</b></summary>
 If you are unable to access your KoboToolbox account with 2FA enabled (for example, if you reset your smartphone and uninstalled the authenticator app, or you misplaced your recovery codes), you can contact [support@kobotoolbox.org](support@kobotoolbox.org). Please use the email address registered to your account to request that 2FA be disabled.
 </details>
+
+<br>
 
 <details>
 <summary><b>Feature not available</b></summary>
