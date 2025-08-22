@@ -82,7 +82,7 @@ When you reconfigure 2FA for your account, the previous setup will be automatica
 ## Troubleshooting
 <details>
 <summary><b>Generating new recovery codes</b></summary>
-If you have misplaced your recovery codes or believe they have been compromised, you can generate new recovery codes for 2FA by pressing the **Generate new** button next to **Recovery codes**.
+If you have misplaced your recovery codes or believe they have been compromised, you can generate new recovery codes for 2FA by pressing the <b>Generate new</b> button next to <b>Recovery codes</b>.
 </details>
 
 <details>
