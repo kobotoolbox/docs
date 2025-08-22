@@ -27,6 +27,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   creating_account
   activation_link
   reset_password
+  two_factor_authentication
 
 .. toctree::
   :maxdepth: 2

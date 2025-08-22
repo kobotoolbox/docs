@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Limits on Number and Text Responses &#8212; KoboToolbox  documentation</title>
+    <title>Setting up two-factor authentication in KoboToolbox &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Adding Cascading Select Questions" href="cascading_select.html" />
-    <link rel="prev" title="Limiting Responses with Validation Criteria" href="validation_criteria.html" />
+    <link rel="next" title="Overview of All Formbuilder Functions" href="formbuilder.html" />
+    <link rel="prev" title="Resetting Passwords" href="reset_password.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -93,7 +93,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="number_text_responses">
+<div class="page page--has-sidebar " id="two_factor_authentication">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -106,13 +106,96 @@
 
         <section class="page__body" role="main">
           
-  <section id="limits-on-number-and-text-responses">
-<h1>Limits on Number and Text Responses<a class="headerlink" href="#limits-on-number-and-text-responses" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/0c5dd6987a26369bd16e779f6ee2ad77e2243b26/source/number_text_responses.md" class="reference">21 Jun 2020</a></p>
-<p>There are underlying technical constraints to the length of the response in a <strong>Number</strong> or <strong>Text</strong> question.</p>
-<p><strong>Number questions</strong> can save up to 17 digits (positive or negative number). To be exact, the largest number that can be entered is 2147483647 and the smallest -2147483648.</p>
-<p>If you want a numeric response but need a number with more than 9 digits (i.e. larger than the one given above) - e.g. for long phone numbers in some countries - you can do this with a trick. Instead of a Number question, add a Text question to your form. Then in the Appearance setting of the question, set it to numbers. This will show the number keyboard instead of the standard text keyboard.</p>
-<p><strong>Text questions</strong> (as well as Barcode questions) are almost unlimited in terms of the characters that can be entered. (The total length of text needs to be less than 1MB in size, which is more than 300 pages of text - more than can ever be expected in a response to a question.</p>
+  <section id="setting-up-two-factor-authentication-in-kobotoolbox">
+<h1>Setting up two-factor authentication in KoboToolbox<a class="headerlink" href="#setting-up-two-factor-authentication-in-kobotoolbox" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3f64e492be199cc4b3437251530f15f876a5fb6f/source/two_factor_authentication.md" class="reference">22 Aug 2025</a></p>
+<iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>KoboToolbox supports <strong>Two-Factor Authentication (2FA)</strong> to improve account security. With 2FA, you will need to enter your account password and a code from a smartphone app to access your KoboToolbox account.</p>
+<p>2FA minimizes the risks of a compromised password. Even if your password is hacked, phished, or guessed, 2FA prevents unauthorized access to your account by adding an additional layer of security beyond <strong>Single-Factor Authentication (SFA)</strong>.</p>
+<p>A compatible authenticator app on your mobile device is required to set up 2FA for your KoboToolbox account. This article uses Google Authenticator, available on the <a class="reference external" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Play Store</a> and <a class="reference external" href="https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB">Apple App Store</a>, but other authenticator apps can also work.</p>
+<section id="setting-up-2fa-in-kobotoolbox">
+<h2>Setting up 2FA in KoboToolbox<a class="headerlink" href="#setting-up-2fa-in-kobotoolbox" title="Permalink to this heading">¶</a></h2>
+<p>2FA in KoboToolbox can be configured using two different approaches: the <strong>QR Code</strong> approach and the <strong>Manual Key</strong> approach. To get started with either approach:</p>
+<ol class="arabic simple">
+<li><p>Log in to your KoboToolbox account.</p></li>
+<li><p>Click your profile icon in the top right corner.</p></li>
+<li><p>Select <strong>ACCOUNT SETTINGS</strong>.</p></li>
+<li><p>Go to the <strong>Security</strong> tab.</p></li>
+<li><p>In the <strong>Two-factor authentication section</strong>, enable 2FA by toggling the <strong>Disabled</strong> button.</p></li>
+<li><p>Open your authenticator app and follow the steps for one of the two approaches below.</p></li>
+</ol>
+<section id="setting-up-2fa-with-a-qr-code">
+<h3>Setting up 2FA with a QR code<a class="headerlink" href="#setting-up-2fa-with-a-qr-code" title="Permalink to this heading">¶</a></h3>
+<p>The first method is the <strong>QR Code</strong> approach, which uses your device’s camera to scan a QR Code to configure 2FA for your account.</p>
+<p class="note">
+  <b>Note</b>: The steps below describe the process using the Google Authenticator app. The process should be similar with other authenticator apps, but there may be some differences.
+</p>
+<p>To set up 2FA with a QR Code:</p>
+<ol class="arabic simple">
+<li><p>Open your authenticator app and press <strong>Get started</strong>.</p></li>
+<li><p>Select <strong>Scan a QR code</strong>. Your device’s camera should now be active.</p></li>
+<li><p>Scan the QR Code visible on your monitor.</p></li>
+<li><p>Enter the 6-digit PIN from the authenticator app into your KoboToolbox account to configure 2FA, then press <strong>Next</strong>.</p></li>
+<li><p>Recovery codes will be displayed to help you access your account if your authenticator app fails. Download the codes by selecting <strong>Download codes</strong> and store them in a safe place.</p></li>
+<li><p>Proceed by selecting <strong>I saved my codes</strong>.</p></li>
+</ol>
+<p>You have now successfully configured 2FA in your KoboToolbox account via the <strong>QR Code Approach</strong>.</p>
+</section>
+<section id="setting-up-2fa-with-a-manual-key">
+<h3>Setting up 2FA with a manual key<a class="headerlink" href="#setting-up-2fa-with-a-manual-key" title="Permalink to this heading">¶</a></h3>
+<p>The second approach is the <strong>Manual Key approach</strong>, which does not require your device’s camera to configure 2FA for your KoboToolbox account.</p>
+<p>To set up 2FA with a Manual Key:</p>
+<ol class="arabic simple">
+<li><p>At the bottom of the 2FA window in KoboToolbox, click <strong>No QR code? Enter key manually</strong>. A 32-character key will be displayed.</p></li>
+<li><p>Open your authenticator app and press <strong>Get started</strong>.</p></li>
+<li><p>Select <strong>Enter a setup key</strong>.</p></li>
+<li><p>Enter the Account name (e.g., “KoboToolbox”) and the 32-character key in the app, then press <strong>Add</strong>.</p></li>
+<li><p>Enter the 6-digit PIN from your authenticator app into your KoboToolbox account to configure 2FA, then press <strong>Next</strong>.</p></li>
+<li><p>Recovery codes will be displayed to help you access your account if your authenticator app fails. <strong>Download the codes</strong> by selecting Download codes and store them in a safe place.</p></li>
+<li><p>Proceed by selecting <strong>I saved my codes</strong>.</p></li>
+</ol>
+<p>You have now successfully configured 2FA in your KoboToolbox account via the <strong>Manual Key Approach</strong>.</p>
+</section>
+</section>
+<section id="disabling-2fa">
+<h2>Disabling 2FA<a class="headerlink" href="#disabling-2fa" title="Permalink to this heading">¶</a></h2>
+<p>To disable 2FA from your KoboToolbox account:</p>
+<ol class="arabic simple">
+<li><p>Click your profile icon in the top right corner.</p></li>
+<li><p>Select <strong>ACCOUNT SETTINGS</strong>.</p></li>
+<li><p>Go to the <strong>Security</strong> tab.</p></li>
+<li><p>In the <strong>Two-factor authentication section</strong>, disable 2FA by toggling the <strong>Enabled</strong> button.</p></li>
+<li><p>Open the authenticator app on your smartphone, get the 6-digit code, and enter it. Press <strong>Next</strong>.</p></li>
+<li><p>After entering the 6-digit code, the system will disable 2FA from your account.</p></li>
+</ol>
+<p><img alt="image" src="images/two_factor_authentication/deactivate_2FA.png" /></p>
+</section>
+<section id="reconfiguring-2fa">
+<h2>Reconfiguring 2FA<a class="headerlink" href="#reconfiguring-2fa" title="Permalink to this heading">¶</a></h2>
+<p>To reconfigure 2FA for your KoboToolbox account (e.g., to configure a new smartphone):</p>
+<ol class="arabic simple">
+<li><p>Click your profile icon in the top right corner.</p></li>
+<li><p>Select <strong>ACCOUNT SETTINGS</strong>.</p></li>
+<li><p>Go to the <strong>Security tab</strong>.</p></li>
+<li><p>In the <strong>Two-factor authentication section</strong>, next to <strong>Authenticator app</strong>, press the <strong>Reconfigure</strong> button to begin reconfiguring 2FA. This process follows the same steps as setting up 2FA.</p></li>
+</ol>
+<p>When you reconfigure 2FA for your account, the previous setup will be automatically deleted. Any tokens or recovery codes from the old setup will no longer be valid. After your current 2FA has been deactivated, you will be prompted to configure it again. If you cannot complete the process, 2FA will remain disabled for your account. In this case, you can enable it again at any time through the usual process, as shared above.</p>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
+<details>
+<summary><b>Generating new recovery codes</b></summary>
+If you have misplaced your recovery codes or believe they have been compromised, you can generate new recovery codes for 2FA by pressing the <b>Generate new</b> button next to <b>Recovery codes</b>.
+</details>
+<details>
+<summary><b>Unable to access KoboToolbox account</b></summary>
+If you are unable to access your KoboToolbox account with 2FA enabled (for example, if you reset your smartphone and uninstalled the authenticator app, or you misplaced your recovery codes), you can contact [support@kobotoolbox.org](support@kobotoolbox.org). Please use the email address registered to your account to request that 2FA be disabled.
+</details>
+<details>
+<summary><b>Feature not available</b></summary>
+This feature is currently unavailable for users on the Community Plan. However, 2FA will be extended to all users in the coming months, regardless of their plan.
+</details>
+</section>
 </section>
 
 
@@ -126,7 +209,7 @@
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Limits on Number and Text Responses"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Setting up two-factor authentication in KoboToolbox"
               class="feedback-button"
               target="_blank"
             >
@@ -148,14 +231,20 @@
 <li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quick Start Overview</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Account &amp; Billing</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating an account on KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="activation_link.html">Didn’t Receive Activation Link After Signing Up</a></li>
 <li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting Passwords</a></li>
-<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Setting up two-factor authentication in KoboToolbox</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Setting up two-factor authentication in KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-2fa-in-kobotoolbox">Setting up 2FA in KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#disabling-2fa">Disabling 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reconfiguring-2fa">Reconfiguring 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Using the Formbuilder</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Overview of All Formbuilder Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Text and Note question types</a></li>
@@ -176,7 +265,7 @@
 <li class="toctree-l1"><a class="reference internal" href="question_options.html">Using the Question Options</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding Cascading Select Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups</a></li>
 <li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
@@ -320,9 +409,9 @@
 
   <script>
     window.docs = {
-      currentPagename: "number_text_responses",
-      currentTitle: "Limits on Number and Text Responses",
-      currentUrl: ("index.html").replace("index.html", "number_text_responses.html"),
+      currentPagename: "two_factor_authentication",
+      currentTitle: "Setting up two-factor authentication in KoboToolbox",
+      currentUrl: ("index.html").replace("index.html", "two_factor_authentication.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects and Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
     };
