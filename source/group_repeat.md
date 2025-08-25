@@ -23,7 +23,7 @@ To create a question group, follow the steps below:
 
 1. Draft a set of questions that you would like to group together.
 2. Select the questions using the **CTRL** key (Windows) or the **Command** key (Mac).
-3. Click on **Create group** with selected questions in the top left menu bar.
+3. Click on <i class="k-icon-group"></i> **Create group with selected questions** in the top left menu bar.
 
 Your new group will appear enclosed within a shaded box, distinguishing it from standard questions. You can also change the group label, which will display at the top of the group in the form.
 
