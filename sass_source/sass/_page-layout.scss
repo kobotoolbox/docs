@@ -75,10 +75,36 @@ html body {
 
     ul {
       margin-left: 2.5em;
+      margin-bottom: 1.5em;
+    }
+
+    ul li p,
+    ul li *:first-child,
+    ul li *:last-child {
+      margin-top: 0;
+      margin-bottom: 0; 
+    }
+
+    ul li + li {
+      margin-top: 0.25em; 
+      margin-bottom: 0.25em; 
     }
 
     ol {
       margin-left: 2.5em;
+      margin-bottom: 1.5em;
+    }
+
+    ol li p,
+    ol li *:first-child,
+    ol li *:last-child {
+      margin-top: 0;
+      margin-bottom: 0; 
+    }
+
+    ol li + li {
+      margin-top: 0.25em; 
+      margin-bottom: 0.25em; 
     }
 
     table {
