@@ -478,7 +478,10 @@ html body {
   vertical-align: middle;
 }
 .page .page__body ul {
-  margin-left: 1.5em;
+  margin-left: 2.5em;
+}
+.page .page__body ol {
+  margin-left: 2.5em;
 }
 .page .page__body table {
   margin-bottom: 1.5em;
