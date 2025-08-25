@@ -23,7 +23,9 @@ To create a question group, follow the steps below:
 
 1. Draft a set of questions that you would like to group together.
 2. Select the questions using the **CTRL** key (Windows) or the **Command** key (Mac).
-3. Click on **Create group** with selected questions in the top left menu bar.
+3. Click on <i class="k-icon-group"></i> **Create group with selected questions** in the top left menu bar.
+
+![image](/images/group_repeat/grouping_questions.png)
 
 Your new group will appear enclosed within a shaded box, distinguishing it from standard questions. You can also change the group label, which will display at the top of the group in the form.
 
@@ -90,6 +92,8 @@ A repeat group allows a set of questions to be answered multiple times within a 
 To create a question group:
 1. Create all the questions you wish to include, then group them.
 2. In the group <i class="k-icon-settings"></i> **Settings**, turn on the option to **Repeat this group if necessary**.
+
+![image](/images/group_repeat/repeating_groups.png)
 
 During data collection, enumerators will be able to enter responses for these grouped questions as many times as needed.
 
