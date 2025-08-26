@@ -26,6 +26,7 @@ After creating a new article, don't forget to add it to the [index.rst](https://
 
 1. This is a numbered list.
 2. in markdown.
+    - With a sub bullet.
 
 This is some **bold text** in markdown.
 
