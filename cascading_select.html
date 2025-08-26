@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Adding Cascading Select Questions &#8212; KoboToolbox  documentation</title>
+    <title>Adding cascading select questions in the Formbuilder &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -106,288 +106,84 @@
 
         <section class="page__body" role="main">
           
-  <section id="adding-cascading-select-questions">
-<h1>Adding Cascading Select Questions<a class="headerlink" href="#adding-cascading-select-questions" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/cascading_select.md" class="reference">29 Jul 2025</a></p>
-<p>Cascading select questions are sets of questions whose options depend on the
-response to a previous question. For example, your form may first ask the region
-where a respondent is from, and then in the next question list only the towns
-and villages of that region.</p>
-<p class="note">Adding sets of cascading select questions to your form can be done by importing them to a draft form in the formbuilder or adding them manually to an XLS Form and then uploading that file.</p>
-<section id="importing-cascading-question-sets-in-the-formbuilder">
-<h2>Importing cascading question sets in the formbuilder<a class="headerlink" href="#importing-cascading-question-sets-in-the-formbuilder" title="Permalink to this heading">¶</a></h2>
-<ol class="arabic">
-<li><p>Open Excel or another spreadsheet program and
-<a class="reference external" href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit#gid=0">follow this template as an example</a>
-to create your template of questions and responses to be added.</p>
-<p><img alt="image" src="_images/template.png" /></p>
-</li>
-<li><p>Select and copy the whole cascading table template, then paste it into the
-Import Cascade, then click Done to import it. (If there were any mistakes in
-the formatting you will not be able to import the set - correct any
-formatting mistakes and make sure you followed the template instructions.)</p>
-<p><img alt="image" src="_images/import.gif" /></p>
-</li>
-<li><p>You can move the imported questions anywhere in your form and change the
-labels of both the question and responses and delete responses.</p></li>
-<li><p>If you want to add additional responses to the cascading list just delete the
-imported questions and import a new list from your spreadsheet.</p></li>
-<li><p>You can preview the form to test the cascading questions.</p>
-<p><img alt="image" src="_images/form_preview.gif" /></p>
-</li>
-</ol>
+  <section id="adding-cascading-select-questions-in-the-formbuilder">
+<h1>Adding cascading select questions in the Formbuilder<a class="headerlink" href="#adding-cascading-select-questions-in-the-formbuilder" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/67caa0eb1d34428face41110b4ee374d43fe7a12/source/cascading_select.md" class="reference">26 Aug 2025</a></p>
+<iframe src="https://www.youtube.com/embed/JDDNmErhV7o?si=S2k3G0sadiFJursu" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Cascading select questions allow you to create dynamic forms where the options in one question depend on the answer to a previous question. This feature helps streamline data collection by presenting only relevant choices, improving the efficiency and accuracy of your surveys.</p>
+<p class="note">
+  <strong>Note</strong>: This article focuses on basic cascading select questions using the Formbuilder. To learn more about using XLSForm to create advanced cascading select questions and add choice filters, see <a href="https://xlsform.org/en/#cascading-selects">XLSForm documentation</a>.
+</p>
+<section id="preparing-a-cascading-choice-table">
+<h2>Preparing a cascading choice table<a class="headerlink" href="#preparing-a-cascading-choice-table" title="Permalink to this heading">¶</a></h2>
+<p>To import cascading select questions into the Formbuilder, you first need to prepare your choice list in Excel or another spreadsheet program. You can use this <a href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit?gid=0#gid=0">Cascade Import Template</a> to get started.</p>
+<p>The choice table must include the following columns:</p>
+<ul class="simple">
+<li><p><strong>list_name</strong>: Unique identifier for a question’s list of choices. This will also be the Data Column Name for the created question.</p></li>
+<li><p><strong>name</strong>: Unique identifier for each choice within a list.</p></li>
+<li><p><strong>label</strong>: Text that appears on the form for each choice.</p></li>
+</ul>
+<p class="note">
+  <strong>Note</strong>: When defining a <strong>list_name</strong> or a <strong>name</strong>, do not use symbols such as the em-dash or question mark. Only alphabet letters, underscores, and numbers can be used.
+</p>
+<p>Next, you must add a column for each <strong>parent list</strong>, which is a list that includes a sublist within it. For example, a <strong>parent list</strong> of continents could include a <strong>child list</strong> of countries.</p>
+<p>For each item in the <strong>child list</strong>, indicate in the <strong>parent list</strong> column which parent item the child item belongs to. For example, if the country in the child list is Malawi, then in the continent column, indicate Africa. To refer to an item from the parent list, use the <strong>choice name</strong>, not the choice label.</p>
+<p><img alt="Cascading select sample" src="_images/sample.png" /></p>
 </section>
-<section id="adding-cascading-question-sets-in-xlsform-option-1">
-<h2>Adding cascading question sets in XLSForm (Option 1)<a class="headerlink" href="#adding-cascading-question-sets-in-xlsform-option-1" title="Permalink to this heading">¶</a></h2>
-<p>(If you have an existing form, download it as XLS to your computer and open it
-in Excel or another spreadsheet program).</p>
+<section id="importing-the-table-into-the-formbuilder">
+<h2>Importing the table into the Formbuilder<a class="headerlink" href="#importing-the-table-into-the-formbuilder" title="Permalink to this heading">¶</a></h2>
+<p>Once your choice list is ready, you can import it in the Formbuilder by following these steps:</p>
 <ol class="arabic simple">
-<li><p>In the survey sheet, add new lines for the questions you’d like to add,
-following
-<a class="reference external" href="https://docs.google.com/spreadsheets/d/10gpBV6YaYGx1i367hyW-w1Ms9tkUQnCx0V8YsdwYxmk/edit#gid=0">this template</a>.</p></li>
+<li><p>Copy the entire choice table from your spreadsheet.</p></li>
+<li><p>In the Formbuilder, click <i class="k-icon-cascading"></i> <strong>Insert cascading select</strong>.</p></li>
+<li><p>Paste the copied table into the text box and click <strong>Done</strong> to import. This process will automatically create new questions in your form.</p>
+<ul class="simple">
+<li><p>If there are formatting errors, the import will fail. Correct any mistakes and ensure you followed the template instructions.</p></li>
+</ul>
+</li>
+<li><p>Once imported, you can move the questions within your form, change the question and choice labels, and even delete option choices.</p></li>
+<li><p>To add more choices to the cascading list, delete the existing imported questions and import a new list from your updated spreadsheet, following the same process as above.</p></li>
 </ol>
-<p><strong>survey sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>type</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-<th class="text-left head"><p>choice_filter</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>select_one states</p></td>
-<td class="text-left"><p>Q1</p></td>
-<td class="text-left"><p>Which state?</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>select_one counties</p></td>
-<td class="text-left"><p>Q2</p></td>
-<td class="text-left"><p>Which county?</p></td>
-<td class="text-left"><p>state=${Q1}</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>select_one cities</p></td>
-<td class="text-left"><p>Q3</p></td>
-<td class="text-left"><p>Which city?</p></td>
-<td class="text-left"><p>state=${Q1} and county=${Q2}</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<ol class="arabic simple" start="2">
-<li><p>In the same survey sheet, add a column called <code class="docutils literal notranslate"><span class="pre">choice_filter</span></code> and add the
-XLSForm reference to each of the parent items.</p></li>
-<li><p>In the choices sheet of the file, add all the options you would like to
-appear in the different questions, e.g. the lists of states, counties, and
-cities (follow the above template).</p></li>
-</ol>
-<p><strong>choices sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-<th class="text-left head"><p>state</p></th>
-<th class="text-left head"><p>county</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>states</p></td>
-<td class="text-left"><p>texas</p></td>
-<td class="text-left"><p>Texas</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>states</p></td>
-<td class="text-left"><p>washington</p></td>
-<td class="text-left"><p>Washington</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>counties</p></td>
-<td class="text-left"><p>king</p></td>
-<td class="text-left"><p>King</p></td>
-<td class="text-left"><p>washington</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>counties</p></td>
-<td class="text-left"><p>pierce</p></td>
-<td class="text-left"><p>Pierce</p></td>
-<td class="text-left"><p>washington</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>counties</p></td>
-<td class="text-left"><p>king</p></td>
-<td class="text-left"><p>King</p></td>
-<td class="text-left"><p>texas</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>counties</p></td>
-<td class="text-left"><p>cameron</p></td>
-<td class="text-left"><p>Cameron</p></td>
-<td class="text-left"><p>texas</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>dumont</p></td>
-<td class="text-left"><p>Dumont</p></td>
-<td class="text-left"><p>texas</p></td>
-<td class="text-left"><p>king</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>finney</p></td>
-<td class="text-left"><p>Finney</p></td>
-<td class="text-left"><p>texas</p></td>
-<td class="text-left"><p>king</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>brownsville</p></td>
-<td class="text-left"><p>Brownsville</p></td>
-<td class="text-left"><p>texas</p></td>
-<td class="text-left"><p>cameron</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>harlingen</p></td>
-<td class="text-left"><p>Harlingen</p></td>
-<td class="text-left"><p>texas</p></td>
-<td class="text-left"><p>cameron</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>seattle</p></td>
-<td class="text-left"><p>Seattle</p></td>
-<td class="text-left"><p>washington</p></td>
-<td class="text-left"><p>king</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>redmond</p></td>
-<td class="text-left"><p>Redmond</p></td>
-<td class="text-left"><p>washington</p></td>
-<td class="text-left"><p>king</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>tacoma</p></td>
-<td class="text-left"><p>Tacoma</p></td>
-<td class="text-left"><p>washington</p></td>
-<td class="text-left"><p>pierce</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>puyallup</p></td>
-<td class="text-left"><p>Puyallup</p></td>
-<td class="text-left"><p>washington</p></td>
-<td class="text-left"><p>pierce</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>choices</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<ol class="arabic simple" start="4">
-<li><p>Note that for each of the child elements you need to add a column to specify
-its parent. For example, King and Pierce counties are in Washington state, so
-you need to write ‘washington’ into the ‘state’ column for these two
-counties.</p></li>
-<li><p>Save your form. In KoboToolbox open the main menu and click on Projects. From
-here you can upload and deploy your form directly, including the newly added
-cascading select questions.</p></li>
-</ol>
+<p><img alt="Insert cascading select example" src="_images/insert_cascading_select.png" /></p>
+<p class="note">
+  <strong>Note</strong>: If you change the question label in the Formbuilder, ensure the Data Column Name in its settings still matches the <strong>list_name</strong> from your choice list table.
+</p>
 </section>
-<section id="adding-cascading-question-sets-in-xlsform-option-2">
-<h2>Adding cascading question sets in XLSForm (Option 2)<a class="headerlink" href="#adding-cascading-question-sets-in-xlsform-option-2" title="Permalink to this heading">¶</a></h2>
-<p>Sometimes a researcher wishes to limit the choices of one question based on the
-responses from a previous question. For this one could do the following:</p>
-<p><strong>survey sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>type</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-<th class="text-left head"><p>choice_filter</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>select_multiple brand</p></td>
-<td class="text-left"><p>Q1</p></td>
-<td class="text-left"><p>Q1. Which brand comes to mind comes to mind when you think about life insurance?</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>select_multiple brand</p></td>
-<td class="text-left"><p>Q2</p></td>
-<td class="text-left"><p>Q2. Which branch would you choose for your future life insurance purchase?</p></td>
-<td class="text-left"><p>selected(${Q1}, name)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>choices sheet</strong></p>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>list_name</p></th>
-<th class="text-left head"><p>name</p></th>
-<th class="text-left head"><p>label</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Bajaj Allianz Life</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>HDFC Life</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>3</p></td>
-<td class="text-left"><p>Kotak Life</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>4</p></td>
-<td class="text-left"><p>LIC</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>5</p></td>
-<td class="text-left"><p>Max Life</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>6</p></td>
-<td class="text-left"><p>Aegon</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>7</p></td>
-<td class="text-left"><p>SBI Life</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>8</p></td>
-<td class="text-left"><p>Tata AIA Life</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>9</p></td>
-<td class="text-left"><p>ICICI Prudential</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>brand</p></td>
-<td class="text-left"><p>10</p></td>
-<td class="text-left"><p>PNB Met Life</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>choices</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p>Preview the data collecting form in Enketo:</p>
-<p><img alt="image" src="_images/preview.png" /></p>
-<p>As seen above, you will be able to restrict the choices in the second question
-based on the choices you entered in the first question.</p>
+<section id="advanced-cascading-select-management-using-xlsform">
+<h2>Advanced cascading select management using XLSForm<a class="headerlink" href="#advanced-cascading-select-management-using-xlsform" title="Permalink to this heading">¶</a></h2>
+<p>For greater flexibility in managing and updating your cascading select questions, especially if you anticipate frequent changes to your choice lists, using XLSForm is recommended. This method allows you to directly modify your choice lists, without losing any changes made to the question labels and settings.</p>
+<p>To update your cascading select questions using XLSForm:</p>
+<ol class="arabic simple">
+<li><p>Download your XLSForm by exiting the Formbuilder, clicking on <i class="k-icon-more"></i><strong>More actions</strong> in the <strong>FORM</strong> tab, and selecting <strong>Download XLS</strong>.</p></li>
+<li><p>Navigate to the <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet in the downloaded file and modify your choice list. Maintain the same approach and format as described above for preparing a cascading choice table.</p></li>
+<li><p>Re-upload the updated XLSForm to KoboToolbox by clicking on <strong>Replace form</strong> and uploading your modified file.</p></li>
+</ol>
+<p class="note">
+    To learn more about adding cascading select questions and using choice filters in XLSForm, see <a href="https://xlsform.org/en/#cascading-selects">XLSForm Documentation</a>. For more information about using XLSForm with KoboToolbox, see <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">Getting started with XLSForm</a>. 
+</p>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
+<details>
+<summary><strong>Cascading choice list is blank</strong></summary>
+If the choice list for the child question is empty, the child list is not seeing a match in the parent list. Check that the choice names do not contain any symbols (letters, numbers, or underscores only) and that every parent option has at least one child linked to it.
+</details>
+<br>
+<details>
+<summary><strong>Cascades break after you edit the form</strong></summary>
+Renaming a question or editing choice lists can change the backend code the cascade relies on. When renaming a question, ensure the <strong>Data Column Name</strong> remains the same as the corresponding <strong>list_name</strong>. For large choice list edits, either rebuild the cascade from scratch or download the XLSForm, make your changes there, and upload it back.
+</details>
+<br>
+<details>
+<summary><strong>Cascading select from a Select Many question</strong></summary>
+The cascading select feature in the Formbuilder is designed for <strong>Select One</strong> questions only. Building a cascade that starts from a <strong>Select Many</strong> question requires using XLSForm. 
+To learn more about advanced cascading select using XLSForm, see <a href="https://xlsform.org/en/#cascading-selects">XLSForm documentation</a>.
+</details>
+<br>
+<details>
+<summary><strong>Survey element cannot be found</strong></summary>
+An error indicating a survey element cannot be found typically means the internal code does not match the cascade's expectations. To fix this, open the question's settings, locate the <strong>Data Column Name</strong>, and revert it to the original value (which should match the corresponding <strong>list_name</strong>) before redeploying your form.
+</details>
 </section>
 </section>
 
@@ -402,7 +198,7 @@ based on the choices you entered in the first question.</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Adding Cascading Select Questions"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Adding cascading select questions in the Formbuilder"
               class="feedback-button"
               target="_blank"
             >
@@ -453,10 +249,11 @@ based on the choices you entered in the first question.</p>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding Skip Logic</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Limiting Responses with Validation Criteria</a></li>
 <li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding Cascading Select Questions</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#importing-cascading-question-sets-in-the-formbuilder">Importing cascading question sets in the formbuilder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-cascading-question-sets-in-xlsform-option-1">Adding cascading question sets in XLSForm (Option 1)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-cascading-question-sets-in-xlsform-option-2">Adding cascading question sets in XLSForm (Option 2)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Adding cascading select questions in the Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#preparing-a-cascading-choice-table">Preparing a cascading choice table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importing-the-table-into-the-formbuilder">Importing the table into the Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-cascading-select-management-using-xlsform">Advanced cascading select management using XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups</a></li>
@@ -602,7 +399,7 @@ based on the choices you entered in the first question.</p>
   <script>
     window.docs = {
       currentPagename: "cascading_select",
-      currentTitle: "Adding Cascading Select Questions",
+      currentTitle: "Adding cascading select questions in the Formbuilder",
       currentUrl: ("index.html").replace("index.html", "cascading_select.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
