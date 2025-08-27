@@ -1,11 +1,11 @@
 # Getting started with the KoboToolbox Formbuilder 
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b2c8a64c85ea569a088f61a60f843eb61d8e29f6/source/formbuilder.md" class="reference">19 Feb 2022</a>
 
-<iframe src="ADD VIDEO LINK" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/PFL1_rBB5Q8?si=RkwB2XGHppAK-RRF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Adding a Question
+## Adding a question
 
-To add a question to your form, click the <i class="k-icon k-icon-plus"></i> button that is below every question. Enter your question label and click **Add question**.Then,
+To add a question to your form, click the <i class="k-icon k-icon-plus"></i> button that is below every question. Enter your question label and click **Add question**. Then,
 [choose the question type](question_types.md).
 
 For [Select One or Select Many](https://support.kobotoolbox.org/select_one_and_select_many.html) question types, add the response options below the question.
@@ -36,7 +36,7 @@ To learn more about question settings, see <a href="https://support.kobotoolbox.
 
 ## Adding questions to the library
 
-To save a question for reuse in future forms, click <i class="k-icon k-icon-folder"></i> **Add question to library**. It will be saved as a copy in your [question library](https://support.kobotoolbox.org/question_library.html). You can modify or delete the original question in your form without affecting the copy in the library.
+To save a question for reuse in future forms, click <i class="k-icon-folder-plus"></i> **Add question to library**. It will be saved as a copy in your [question library](https://support.kobotoolbox.org/question_library.html). You can modify or delete the original question in your form without affecting the copy in the library.
 
 ## Grouping your questions
 
@@ -53,7 +53,5 @@ After adding all questions to your form, click <i class="k-icon k-icon-view"></i
 ## Saving your form
 
 As you edit your form, regularly click **SAVE** in the top right corner of your screen to ensure your work is saved. An asterisk (*) will appear next to the **SAVE** button when you have unsaved changes.
-
-
 
 
