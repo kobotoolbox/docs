@@ -1,69 +1,59 @@
-# Overview of All Formbuilder Functions
+# Getting started with the KoboToolbox Formbuilder 
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b2c8a64c85ea569a088f61a60f843eb61d8e29f6/source/formbuilder.md" class="reference">19 Feb 2022</a>
+
+<iframe src="ADD VIDEO LINK" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Adding a Question
 
-Questions in your form can be added at any point by clicking on the
-<i class="k-icon k-icon-plus"></i> button that is below every question. Type in
-the name of your question, click 'Add Question'. Then,
-[choose the type that's applicable to your question](question_types.md).
+To add a question to your form, click the <i class="k-icon k-icon-plus"></i> button that is below every question. Enter your question label and click **Add question**.Then,
+[choose the question type](question_types.md).
 
-![image](/images/formbuilder/add_questions.gif)
+For [Select One or Select Many](https://support.kobotoolbox.org/select_one_and_select_many.html) question types, add the response options below the question.
 
-<p class="note">Please note that <strong>changing</strong> the question type is currently not supported and may result in unexpected results. If the form has already been deployed, use a question with a different XML name, even if the label remains the same.<p/>
+<p class="note">
+<strong>Note</strong>: Once the question type has been selected, it cannot be changed in the Formbuilder. To change the question type of an existing question, delete the question and create a new question with the same label.
+</p>
 
 ## Adding a question hint
 
-A question hint is text that is shown below the question text on the form. You
-can use it to provide extra instruction on how to answer the question.
+A question hint provides additional instructions below the question text in the form. To add a question hint, click on **Question hint** below the question and type in your hint.
 
-To add a question hint, just click **Question hint** below the question text and
-type it.
+## Duplicating a question
 
-![image](/images/formbuilder/hint.gif)
+To duplicate a question, click **Duplicate Question** in the question menu on the right. An exact copy will appear directly below the original.
 
-## Deleting a Question
+## Deleting a question
 
-You can remove a question at any point by clicking on the red trash can
-<i class="k-icon k-icon-trash"></i>. You'll be asked to confirm before it is
-permanently deleted from your form.
+To remove a question, click **Delete question** in the question menu on the right. You will be asked to confirm before it is permanently deleted from your form.
 
-![image](/images/formbuilder/delete_questions.gif)
+## Changing question settings
 
-## Changing the Order of Your Questions
+To access advanced question settings, click on <i class="k-icon-settings"></i> **Settings** in the question menu on the right. Here, you can add skip logic, validation criteria, guidance hints, and make a question required. 
 
-All your questions and groups can be moved to any position in the form. Just
-drag-and-drop it from its current position to where you want it to go, even at
-the very beginning or very end of the form.
+<p class="note">
+To learn more about question settings, see <a href="https://support.kobotoolbox.org/question_options.html">Using the question options</a>, <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>, and <a href="https://support.kobotoolbox.org/validation_criteria.html">Adding validation criteria in the Formbuilder</a>.
+</p>
 
-![image](/images/formbuilder/change_order.gif)
+## Adding questions to the library
 
-## Changing Question Settings
+To save a question for reuse in future forms, click <i class="k-icon k-icon-folder"></i> **Add question to library**. It will be saved as a copy in your [question library](https://support.kobotoolbox.org/question_library.html). You can modify or delete the original question in your form without affecting the copy in the library.
 
-To access advanced features for each question click on the Settings cog
-<i class="k-icon k-icon-settings"></i> in the top-right corner of the question.
-Here you can modify further details of the question, such as skip logic,
-validating responses, setting question hints, making a question required, etc.
-More information on this is available in the respective sections for
-[Question Options](question_options.md), [Skip Logic](skip_logic.md), and
-[Validation Criteria](validation_criteria.md).
+## Grouping your questions
 
-![image](/images/formbuilder/change_settings.gif)
+Questions can be [grouped together](https://support.kobotoolbox.org/group_repeat.html) to organize your form. Select questions using the **CTRL** key (Windows) or **Command** key (Mac), then click <i class="k-icon k-icon-group"></i> **Create group with selected questions** in the top left menu bar.
 
-## Duplicating a Question
+## Changing the order of your questions
 
-You can duplicate a question at any point by clicking on ‘Duplicate Question’
-<i class="k-icon k-icon-clone"></i>. An exact copy of the question will appear
-just below the question which you have duplicated.
+Questions and groups can be moved to any position in the form. Drag-and-drop a question or group from its current position to where you want it to go.
 
-![image](/images/formbuilder/duplicate_question.gif)
+## Previewing your form
 
-## Adding Questions to the Library
+After adding all questions to your form, click <i class="k-icon k-icon-view"></i> **Preview form** to see how it will appear once deployed.
 
-In order to reuse a question in future forms, you can click on 'Add Question to
-Library' <i class="k-icon k-icon-folder-plus"></i>. It will be saved in your
-Question Library as a copy, meaning that you can make further changes to the
-original question in the form or even delete it, without affecting the copy that
-has been placed in the library.
+## Saving your form
 
-![image](/images/formbuilder/library.gif)
+As you edit your form, regularly click **SAVE** in the top right corner of your screen to ensure your work is saved. An asterisk (*) will appear next to the **SAVE** button when you have unsaved changes.
+
+
+
+
