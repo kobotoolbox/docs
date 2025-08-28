@@ -52,7 +52,7 @@ Once you have a completed transcript for your audio response, you can add transl
 
 ## Language list
 
-These natural language processing features integrate ASR and MT capabilities provided by Google Cloud Compute, which currently offers automatic transcription in 72 languages (with 138 regional variants) and automatic translation in 106 languages. For manual transcription or translation, you can select from approximately 7,000 languages based on the ISO 639-3 comprehensive list, maintained by SIL International (filtered for "living languages"). If a language supports ASR or MT, you can choose between **manual** and **automatic** methods. For other languages, only the **manual** method is available.
+These natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers automatic transcription in 72 languages (with 138 regional variants) and automatic translation in 106 languages. For manual transcription or translation, you can select from approximately 7,000 languages based on the ISO 639-3 comprehensive list, maintained by SIL International (filtered for "living languages"). If a language supports ASR or MT, you can choose between **manual** and **automatic** methods. For other languages, only the **manual** method is available.
 
 If you cannot find a language in the list, consider alternative spellings or names. All language names are currently listed using their English names and spelling (e.g., Spanish instead of Español). For languages with fewer speakers, there might be alternative names. For example, the Bura language in Northern Nigeria is listed as Bura-Pabir but is also known as Bourrah or Babir.
 
@@ -63,7 +63,7 @@ If you cannot find a language in the list, consider alternative spellings or nam
 ## Troubleshooting
 
 <details>
-    <summary>Translation not loading</summary>
+    <summary><strong>Translation not loading</strong></summary>
     Sometimes, the second translation may get stuck with a loading icon. If this happens, refresh the page, and the translation should appear. This is an issue we are working to fix.
 </details>
 
