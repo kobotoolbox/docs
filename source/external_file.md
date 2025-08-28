@@ -7,6 +7,10 @@ list of choices (e.g. hundreds or thousands) could slow down the loading and
 navigation of the form, or adding new choice options after data collection has
 begun could sometimes be troublesome.
 
+<p class="note"> <b>Note:</b> This article covers steps for setting up Select One or Many From External File questions in XLSForm. To set up these questions in the Formbuilder, you must first upload the external choice file to KoboToolbox, in the <b>Media</b> tab of the <b>SETTINGS</b> page. Once the file has been uploaded, the Select One or Many From External File question types will appear in the Formbuilder. </p>
+
+![image](/images/external_file/select_from_file.png)
+
 This article provides a detailed example and method for creating a `select_one`
 or `select_many` question type with the choice list in a separate, external
 file. Refer to the
