@@ -1,72 +1,70 @@
-# Transcription
+# Transcription and translation of audio responses
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f3cd7f262afd815e202942bbffda34356fde00a8/source/transcription-translation.md" class="reference">6 May 2024</a>
 
-KoboToolbox lets you transcribe audio files that you collect in your surveys.
-Once a audio has been transcribed, you can then translate the transcripts into
-different languages. The original transcript and all translated text is added as
-new data columns in the data table and [can be downloaded](export_download.md)
-alongside the survey data in the **Downloads** section.
+<iframe src="https://www.youtube.com/embed/gDjMZiVqeD8?si=t1oxlbYDAPeRL5BA" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## How to add transcriptions
+KoboToolbox’s natural language processing tools help you collect, manage, and analyze qualitative data more effectively. These tools include automatic speech-to-text transcription and machine translation, with automated qualitative analysis coming soon. The original transcript for your audio files and all translated text are added as new data columns in the data table and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data.
 
-- Open your project and navigate to **DATA>Table**
-- Click the **Open** button next to the audio response you would like to
-  transcribe.
-
-![Go to Transcription](images/transcription_translation/open_transcript.gif)
-
-- In the _TRANSCRIPT_ tab, click **begin**
-- Select the original language of the audio file
-- Click **transcribe** and begin your transcript
-- While creating the transcript, regularly click the **save** button to ensure
-  your work is safely stored
-- When complete, click **DONE** or navigate to the next submission
-
-![Add transcription](images/transcription_translation/add_transcript.gif)
-
-You will be taken back to the data table view where you will now notice that a
-new column containing the transcript has been added.
-
-## How to add translations
-
-- Open your project and navigate to **DATA>Table**
-- Click the **Open** button next to the audio response you would like to
-  translate.
-- Click the _TRANSLATIONS_ tab and then **begin**
-- Choose the language of the translation
-- Click **translate** and begin your translation
-- While creating the translation, regularly click the **save** button to ensure
-  your work is safely stored
-- When the translation is complete, you can add another translation, move to the
-  next submission or click **DONE** to navigate back to the data table
-
-![Add translation](images/transcription_translation/add_translation.gif)
+To use these features, first [collect audio responses](https://support.kobotoolbox.org/photo_audio_video_file.html) in your form using the **Audio** question type. These features currently work only on audio responses, not on background audio recordings.
 
 <p class="note">
-  Audio files can only contain a single transcript but each transcript may have
-  multiple translations.
+    <strong>Note</strong>: Automatic transcription and translation may not be available for <a href="#language-list">all languages</a>. For these languages, only manual transcription and translation are possible.
+</p>
+
+## Adding automatic transcriptions
+
+![Adding automatic transcriptions example](images/transription-translation/transcription.png)
+
+To start transcribing your audio responses:
+
+1. Open your project and navigate to **DATA > Table**.
+2. Click the **Open** button next to the audio response you would like to transcribe.
+3. In the **TRANSCRIPT** tab, click **begin**.
+    - Select the original language of the audio file and the **automatic** option (the **manual** option will allow you to manually transcribe the audio recording).
+    - Click **create transcript** to begin the automatic transcription.
+4. Once the transcript is complete, you can edit it manually. You can play the audio recording in the top right corner to help check the accuracy of the transcript.
+    - After editing the transcript, click the **Save** button to ensure your work is safely stored.
+5. When complete, either click **DONE** to exit, navigate to the next submission by clicking the arrows next to the **DONE** button, or proceed to the **TRANSLATIONS** tab.
+    - If you click **DONE**, you will be taken back to the data table view, where a new column containing the transcript will have been added.
+
+<p class="note">
+    <strong>Note</strong>: Automatically generated transcripts and translations must be saved to prevent data loss. Navigating away from the page without saving will result in losing the data.
+</p>
+
+## Adding automatic translations
+
+![Adding automatic translations example](images/transcription-translation/translation.png)
+
+Once you have a completed transcript for your audio response, you can add translations into multiple languages:
+
+1. Proceed to the **TRANSLATIONS** tab.
+    - The translation option is only available once a transcript has been completed.
+2. Click **begin** and choose the language of the translation.
+    - Click **automatic** for machine translation (the **manual** option will allow you to manually translate the transcript)
+    - Click **create translation** to begin the automatic translation
+3. Once the translation is complete, you can edit it manually. The original transcript appears on the right of the screen, and the original audio appears underneath. 
+    - After editing the translation, click the **Save** button to ensure your work is safely stored.
+4. When the translation is complete, you can add another translation by clicking <i class="k-icon-plus"></i> **new translation**, move to the next submission by clicking the arrows next to the item number in the top right corner, or click **DONE** to navigate back to the data table.
+
+<p class="note">
+    <strong>Note</strong>: Audio files can only contain a single transcript, but each transcript may have multiple translations.
 </p>
 
 ## Language list
 
-The new software features integrate ASR and MT capability provided by Google
-Cloud Compute, which currently provides 72 languages for transcription
-(including 138 regional variants) and 106 languages for translation. You can
-also choose from a list of about 7,000 languages for doing manual transcription
-or translation. This list was established using the ISO 639-3 comprehensive list
-of languages, which is maintained by SIL International (filtered for "living
-languages"). For any language that has ASR or MT, you are able to choose between
-"manual" and "automatic" transcription or translation; for the remaining
-languages only the manual method is available.
+These natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers automatic transcription in 72 languages (with 138 regional variants) and automatic translation in 106 languages. For manual transcription or translation, you can select from approximately 7,000 languages based on the ISO 639-3 comprehensive list, maintained by SIL International (filtered for "living languages"). If a language supports ASR or MT, you can choose between **manual** and **automatic** methods. For other languages, only the **manual** method is available.
 
-If you are unable to find a language in the list, please consider alternative
-spellings. For now, all language names use their English names and spelling, for
-example, Spanish rather than Español. For other languages, especially those
-spoken by a smaller number of speakers, please consider whether there is an
-alternative name of the language. For example, the Bura language spoken in
-Northern Nigeria is listed as Bura-Pabir, but is also known to some people as
-Bourrah, Babir, and other names.
+If you cannot find a language in the list, consider alternative spellings or names. All language names are currently listed using their English names and spelling (e.g., Spanish instead of Español). For languages with fewer speakers, there might be alternative names. For example, the Bura language in Northern Nigeria is listed as Bura-Pabir but is also known as Bourrah or Babir.
 
 <p class="note">
-  The ASR and MT features are not yet available to all users. We are currently seeking beta testers for these features. If you’d like to join the beta testing program, please <a class="reference" href="https://www.kobotoolbox.org/contact/?hs_ticket_category=asr_mt_access">send us a message</a> with your username, the name of the server your account is on, and a brief description of the project you would like to use these features for. We are very interested in hearing user feedback about these new features, so thanks in advance for testing them!
+    <strong>Note</strong>: When manually transcribing audio responses, it is important to select the correct language. If the manually generated transcript does not accurately match the chosen language or region, subsequent automatic translations using that transcript may be incorrect and produce inaccuracies.
 </p>
+
+## Troubleshooting
+
+<details>
+    <summary><strong>Translation not loading</strong></summary>
+    Sometimes, the second translation may get stuck with a loading icon. If this happens, refresh the page, and the translation should appear. This is an issue we are working to fix.
+</details>
+
+
