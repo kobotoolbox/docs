@@ -3,6 +3,7 @@
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
 1. [Select One or Many From External File Question Type](external_file.md) (28 Aug 2025)
 1. [Collecting Data through Web Forms](data_through_webforms.md) (28 Aug 2025)
+1. [Getting started with the KoboToolbox Formbuilder](formbuilder.md) (28 Aug 2025)
 1. [Article title](article_template.md) (26 Aug 2025)
 1. [Adding cascading select questions in the Formbuilder](cascading_select.md) (26 Aug 2025)
 1. [Grouping questions and repeating groups](group_repeat.md) (25 Aug 2025)
@@ -10,4 +11,3 @@
 1. [Managing repeat group data](managing_repeat_groups.md) (21 Aug 2025)
 1. [Pull Data Functionality in KoboToolbox](pull_data_kobotoolbox.md) (18 Aug 2025)
 1. [Migrating from v1 to v2 API](migrating_api.md) (7 Aug 2025)
-1. [Using HXL Tags](hxl.md) (29 Jul 2025)
