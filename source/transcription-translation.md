@@ -13,7 +13,7 @@ To use these features, first [collect audio responses](https://support.kobotoolb
 
 ## Adding automatic transcriptions
 
-![Adding automatic transcriptions example](source/images/transcription_translation/transcription.png)
+![Adding automatic transcriptions example](images/transcription_translation/transcription.png)
 
 To start transcribing your audio responses:
 
