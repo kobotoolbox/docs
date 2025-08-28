@@ -1,7 +1,7 @@
 # Transcription and translation of audio responses
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f3cd7f262afd815e202942bbffda34356fde00a8/source/transcription-translation.md" class="reference">6 May 2024</a>
 
-<iframe src="" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/gDjMZiVqeD8?si=t1oxlbYDAPeRL5BA" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 KoboToolbox’s natural language processing tools help you collect, manage, and analyze qualitative data more effectively. These tools include automatic speech-to-text transcription and machine translation, with automated qualitative analysis coming soon. The original transcript for your audio files and all translated text are added as new data columns in the data table and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data.
 
@@ -13,7 +13,7 @@ To use these features, first [collect audio responses](https://support.kobotoolb
 
 ## Adding automatic transcriptions
 
-![Adding automatic transcriptions example](images/transription-translation/FILENAME.png)
+![Adding automatic transcriptions example](images/transription-translation/transcription.png)
 
 To start transcribing your audio responses:
 
@@ -33,7 +33,7 @@ To start transcribing your audio responses:
 
 ## Adding automatic translations
 
-![Adding automatic translations example](images/transcription-translation/FILENAME.png)
+![Adding automatic translations example](images/transcription-translation/translation.png)
 
 Once you have a completed transcript for your audio response, you can add translations into multiple languages:
 
