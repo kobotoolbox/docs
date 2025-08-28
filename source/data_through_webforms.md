@@ -1,5 +1,5 @@
 # Collecting Data through Web Forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/data_through_webforms.md" class="reference">3 May 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/af0834987c87ae22e21dbb4c79f1c12e5a100f71/source/data_through_webforms.md" class="reference">28 Aug 2025</a>
 
 ## What are web forms?
 
