@@ -3,9 +3,11 @@
 
 <iframe src="https://www.youtube.com/embed/PFL1_rBB5Q8?si=RkwB2XGHppAK-RRF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+The KoboToolbox Formbuilder is a user-friendly tool for designing and deploying data collection forms. This article provides a basic overview of its functions, from adding and managing questions to organizing your form.
+
 ## Adding a question
 
-To add a question to your form, click the <i class="k-icon k-icon-plus"></i> button that is below every question. Enter your question label and click **Add question**. Then,
+To add a question to your form, click the <i class="k-icon k-icon-plus"></i> button that is below every question. Enter your question label and click **Add Question**. Then,
 [choose the question type](question_types.md).
 
 For [Select One or Select Many](https://support.kobotoolbox.org/select_one_and_select_many.html) question types, add the response options below the question.
@@ -20,11 +22,11 @@ A question hint provides additional instructions below the question text in the 
 
 ## Duplicating a question
 
-To duplicate a question, click **Duplicate Question** in the question menu on the right. An exact copy will appear directly below the original.
+To duplicate a question, click <i class="k-icon-duplicate"></i> **Duplicate Question** in the question menu on the right. An exact copy will appear directly below the original.
 
 ## Deleting a question
 
-To remove a question, click **Delete question** in the question menu on the right. You will be asked to confirm before it is permanently deleted from your form.
+To remove a question, click <i class="k-icon-trash"></i> **Delete Question** in the question menu on the right. You will be asked to confirm before it is permanently deleted from your form.
 
 ## Changing question settings
 
@@ -36,7 +38,7 @@ To learn more about question settings, see <a href="https://support.kobotoolbox.
 
 ## Adding questions to the library
 
-To save a question for reuse in future forms, click <i class="k-icon-folder-plus"></i> **Add question to library**. It will be saved as a copy in your [question library](https://support.kobotoolbox.org/question_library.html). You can modify or delete the original question in your form without affecting the copy in the library.
+To save a question for reuse in future forms, click <i class="k-icon-folder-plus"></i> **Add Question to Library**. It will be saved as a copy in your [question library](https://support.kobotoolbox.org/question_library.html). You can modify or delete the original question in your form without affecting the copy in the library.
 
 ## Grouping your questions
 
