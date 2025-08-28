@@ -1,7 +1,7 @@
 # Transcription and translation of audio responses
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e068893a72dbc3789deb8558eb885a4701f9001b/source/transcription-translation.md" class="reference">28 Aug 2025</a>
 
-<iframe src="https://www.youtube.com/embed/gDjMZiVqeD8?si=t1oxlbYDAPeRL5BA" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 KoboToolbox’s natural language processing tools help you collect, manage, and analyze qualitative data more effectively. These tools include automatic speech-to-text transcription and machine translation, with automated qualitative analysis coming soon. The original transcript for your audio files and all translated text are added as new data columns in the data table and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data.
 
