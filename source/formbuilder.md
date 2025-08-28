@@ -5,6 +5,10 @@
 
 The KoboToolbox Formbuilder is a user-friendly tool for designing and deploying data collection forms. This article provides a basic overview of its functions, from adding and managing questions to organizing your form.
 
+<p class="note">
+    To learn more about creating a new form in KoboToolbox, see the KoboToolbox <a href="https://support.kobotoolbox.org/quick_start.html">Quickstart overview</a>.
+</p>
+
 ## Adding a question
 
 To add a question to your form, click the <i class="k-icon k-icon-plus"></i> button that is below every question. Enter your question label and click **Add Question**. Then,
