@@ -13,7 +13,7 @@ To use these features, first [collect audio responses](https://support.kobotoolb
 
 ## Adding automatic transcriptions
 
-![Adding automatic transcriptions example](images/transription-translation/transcription.png)
+![Adding automatic transcriptions example](source/images/transcription_translation/transcription.png)
 
 To start transcribing your audio responses:
 
@@ -33,7 +33,7 @@ To start transcribing your audio responses:
 
 ## Adding automatic translations
 
-![Adding automatic translations example](images/transcription-translation/translation.png)
+![Adding automatic translations example](images/transcription_translation/translation.png)
 
 Once you have a completed transcript for your audio response, you can add translations into multiple languages:
 
