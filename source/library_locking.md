@@ -23,11 +23,7 @@ form for those who [create a project based on the template](new_form.md).
 
 <p class="note">
   Locking aspects of a form is separate from
-  <a class="reference" href="managing_permissions.html"
-    >managing permissions to a project</a
-  >
-  or
-  <a class="reference" href="row_level_permissions.html">row-level access</a>.
+  <a class="reference" href="https://support.kobotoolbox.org/managing_permissions.html">managing permissions to a       project</a>.
 </p>
 
 ## Restrictions
