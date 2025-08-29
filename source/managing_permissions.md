@@ -1,196 +1,133 @@
-# Sharing Your Project and Managing Permissions
+# Sharing projects with user-level permissions
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9088e269fda5e9fa7d77fc444524e2aaba3c0cb4/source/managing_permissions.md" class="reference">14 May 2024</a>
 
-KoboToolbox allows you to give different levels of access to different users by
-setting flexible permissions for each project. While most users may
-only need to access and enter or review data for a
-given project, sometimes more complex scenarios require multiple users to have different levels of project access.
+<iframe src="https://www.youtube.com/embed/WnCNuxgaMoQ?si=bktZdlug2uBKUyzq" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-For example, you can share a project with some users and only allow them to
-submit data to the project through their account. You can also adjust the permission settings so
-that other users can only view or edit the submitted data.
+KoboToolbox allows you to set different access levels for users on each project. Some users may only need to submit or view data, while others require more advanced access, such as editing forms, validating submissions, or editing data.
 
-This article explains how you can grant permissions for other KoboToolbox users
-to collaborate on your projects. Learn more about [sharing your project with other users for data collection](data_through_webforms.md).
-
-## Requiring passwords for accessing Enketo web forms
-
-By default, KoboToolbox requires a username and password to access data,
- manage projects, and submit data. When a new project has been deployed, the Enketo web
-form will require authentication for an individual to be able to access the form and send submissions to the project.
-
-In some cases, you may wish to enable data entry for anyone with access to the Enketo web form URL. In this case, any individual with access to the form URL can send submissions to the project without being required to sign in to their KoboToolbox account.
-
-To allow data entry for anyone with access to the form URL:
-- Open the project in KoboToolbox, and go to the **FORM** section
-- Below the Collect Data section, use the toggle button to enable "Allow submissions to this form without a username and password"
-
-![Requiring passwords](images/managing_permissions/allow_submissions.gif)
-
-You can also change this permission setting directly in your **Sharing Permissions** or by going to the **Sharing** tab in the **SETTINGS** page in your project and toggling the default setting to enable “Allow submissions to this form without a username and password”.
-
-![Requiring passwords](images/managing_permissions/allow_submissions_settings.gif)
+This article explains how to grant permissions to other KoboToolbox users to collaborate on your projects. It covers user-level permissions, row-level permissions, and copying permissions from another project.
 
 <p class="note">
-  Setting forms to require authentication is now available as a per-project setting. This privacy feature replaces the previous account setting “Require authentication to see forms and submit data”. With this update, new projects require authentication by default. Existing projects inherit your previous account-level settings as they were at the time of this update. 
+To learn more about sharing your project with other users for data collection, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting Data through Web Forms</a>. To learn more about project-level settings for sharing your projects, see <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Sharing projects with project-level settings</a>.
 </p>
 
-## Sharing a project with other users and setting their permissions
+## Setting user-level permissions
 
-The following steps explain how to share a project with other KoboToolbox
-users and control which users can view, share, or edit your form or submissions.
+User-level permissions allow you to share project data with other KoboToolbox users and control their access to your form or submissions. 
 
-- Go to the **Sharing** tab in the **SETTINGS** page in your data collection
-  project
-- Enter the username of the user who you would like to share the form with
-- Select the desired permission level
-- Click **GRANT PERMISSIONS**
+To set up user-level permissions:
+1. Go to the **SETTINGS** page of your data collection project, and click **Sharing**.
+2. Under the list of users with current access, click **Add user**.
+3. Enter the username of the user you want to share the form with.
+4. Select the desired permission level.
+5. Click **GRANT PERMISSIONS**.
 
-![Granting permissions](images/managing_permissions/grant_permissions.gif)
+![Adding a user](images/managing_permissions/add_user.png)
 
-### Available permissions
-
-- View form
-- Edit form
-- View submissions
-- Add submissions
-- Edit submissions
-- Validate submissions
-- Delete submissions
-- Manage project
+The following permissions are available:
+| **Permission**    | **Description**                                |
+| :----------------- | :--------------------------------------------- |
+| View form               | User can preview the form.                                  |
+| Edit form      | User can edit the form.                                  |
+| View submissions           | User can view submitted data.           |
+| Add submissions           | User can submit data using the form.         |
+| Edit submissions         | User can edit submitted data.           |
+| Validate submissions | User can [approve or reject](https://support.kobotoolbox.org/record_validation.html) submitted data. |
+| Delete submissions         | User can delete submitted data.        |
+| Manage project      | User can do all of the above and manage project settings.                  |
 
 <p class="note">
-When certain permissions are granted, other permissions are also automatically granted. For example, if a user is granted "Add submissions" permission, they will also be granted "View form" permission.
+<strong>Note</strong>: When certain permissions are granted, other permissions are also automatically granted. For example, if a user is granted <strong>Add submissions</strong> permission, they will also be granted <strong>View form</strong> permission automatically.
 </p>
 
-## Assigning "Add submissions" permission for specific users
+## Setting row-level permissions
 
-In some scenarios, you may want to restrict enumerators who are collecting data in the field from being able to view the submitted data. 
+Row-level permissions allow you to set viewing, editing, validating, and deleting permissions for submissions based on predefined conditions. These permissions can be:
 
-In this case, instead of configuring KoboCollect with a single account's
-username and password, you can create separate accounts for each enumerator, and __share the form with limited permissions.
+- **Only from specific users**: User-based permissions allow you to share project data with another KoboToolbox user only when submitted by specific users. This can be useful for allowing data collectors to view and edit their own submissions without accessing data from other collectors.
+- **Based on a condition**: Condition-based permissions grant access to project data based on a response to a question on your form. For example, this can be used to share data collected before a certain date or for a specific region.
 
-In KoboToolbox:
+### User-based permissions
 
-- Create all enumerator accounts on the same server
-- Share the project with each enumerator account using the steps described
-  above, and only assign them the desired permissions, for example "Add Submissions".
+To add user-based permissions:
 
-In KoboCollect:
+1. Open your project and navigate to the **SETTINGS** tab.
+2. Go to the **Sharing** section.
+3. Click **Add user** and enter the username of the user you want to share the project with.
+4. Select the user-based permissions you want to allow (**View**, **Edit**, **Delete**, and/or **Validate**).
+5. Below each permission, enter the username(s) for the users whose submissions you are granting the user access to. Usernames should be separated by commas.
+6. Click **Grant permissions** to save your permissions settings.
 
-- On each device, configure KoboCollect using the username and password of the
-  enumerator who will be using it. You can learn more about how to configure
-  KoboCollect [here](kobocollect_on_android_latest.md).
+Once you have saved your permissions, the user you have shared the project with will be able to view, edit, validate, or delete the project data submitted by the specified usernames, depending on the permissions selected.
 
-## Row-level permissions for users
+### Condition-based permissions
 
-You can also set [row-level permissions](row_level_permissions.md) for users.
-This can be helpful in several scenarios, for example:
+To add condition-based permissions:
 
-- An organization implementing a project in collaboration with several partner
-  organizations may want to give the partners access to only the data collected
-  by them.
-- A researcher may want to allow each enumerator to access and edit *only* the data they
-  collected.
-- In an organization, there may be different roles for data collectors who may only
-  be allowed to submit data, data quality officers who may only be allowed to
-  view and validate submissions, and users who may be allowed to view reports
-  and download the data.
+1. Open your project and navigate to the **SETTINGS** tab.
+2. Go to the **Sharing** section.
+3. Click **Add user** and enter the username of the user you want to share the project with.
+4. Select the condition-based permissions you want to allow (**View**, **Edit**, **Delete**, and/or **Validate**).
+5. Open the **Select…** drop-down menu to display the full list of form questions and select the question that should be used to filter which submissions are shared with the user.
+6. On the right side of the equal sign (=), enter the response value that must be met.
+7. Click **Grant permissions** to save your permissions settings.
+   
+Once you have saved your permissions, the user will be able to view, edit, validate, or delete project data submissions that meet the specified condition, depending on the permissions selected.
 
-Setting row-level permissions:
+Response values must follow a specific format for the condition to work:
 
-- Share the data collection project using the steps described above
-- Choose from **View Submissions only from specific users**, **Edit Submissions
-  only from specific users**, **Validate Submissions only from specific users**,
-  or **Delete Submissions only from specific users**
-- Add a comma-separated list of usernames with whom you want to share the
-  project
+| **Question type**    | **Format**                                |
+| :----------------- | :--------------------------------------------- |
+| Date               | <code>YYYY-MM-DD</code> (e.g., <code>1974-12-31</code>)                                  |
+| Select One and Select Many      | XML value/choice name (e.g., <code>first_grade</code> rather than <code>First grade</code>)                                   |
+| Number and Decimal           | A specific integer or decimal number            |
 
-Learn more about [row-level permissions](row_level_permissions.md).
+## Copying permissions from another project
 
-## Copy permissions from another project
+To copy team permissions from another project:
 
-To copy team permissions from a another project, open the **Sharing** tab in the **SETTINGS** page of your project. Click on "Copy team from another project", and then select the project that you with to copy permissions from.
+1. Open the **Sharing** tab in the **SETTINGS** page of your project.
+2. Click on “Copy team from another project”.
+3. Select the project from which you wish to copy permissions.
 
 <p class="note">
-  This will overwrite any existing sharing settings on the project you are adding the permissions to.
+<strong>Note</strong>: This will overwrite any existing sharing settings on the project you are adding the permissions to.
 </p>
 
-## Removing shared projects from your account
+## Troubleshooting
 
-If you wish to remove a project that anohter user shared with you, follow these steps:
+<details>
+<summary>Tracking changes made by other users</summary>
+KoboToolbox keeps Activity Logs that show a complete timeline of account and project actions. Project History Logs record every modification inside a project—uploads, edits, deletions, and submissions—so you can trace changes, assign responsibility, and pinpoint when problems began.
+</details>
+<br>
+<details>
+<summary>Asked for username and password when sending data</summary>
+If a sign-in pop-up appears when you try to submit, the project is set to <a href="https://support.kobotoolbox.org/project_sharing_settings.html">require authentication</a> for data collection. In this case, you can submit data only if your account has Add submissions permission. Enter your KoboToolbox username and password to continue.
+</details>
+<br>
+<details>
+<summary>User-based permissions do not seem to work</summary>
+User-based permissions apply only when <a href="https://support.kobotoolbox.org/project_sharing_settings.html">authentication is required</a> and each submission carries a username. Open the project <strong>FORM</strong> tab and turn off “Allow submissions to this form without a username and password” under <strong>Collect data</strong>.
+</details>
+<br>
+<details>
+<summary>Old records ignore row-level rules</summary>
+Submissions made before the <a href="https://support.kobotoolbox.org/project_sharing_settings.html">authentication was required</a> may not have a username attached, so user-based rules cannot filter them. 
+</details>
+<br>
+<details>
+<summary>Condition-based permissions do not match partial text</summary>
+The filter must include the exact response value. For example, filtering on <code>developer</code> will not match <code>software_developer</code>. Write the full value you expect, or adjust your form so the exact value is captured.
+</details>
+<br>
+<details>
+<summary>Condition-based permissions fail on repeat group questions</summary>
+Filters cannot look inside a repeat group because one submission can hold several different answers. If you need this, see the Community Forum post <a href="https://community.kobotoolbox.org/t/condition-based-permissions-from-a-repeat-group-value/59449">Condition-Based Permissions Using a Repeat Group Value</a> for a spreadsheet workaround.
+</details>
+<br>
+<details>
+<summary>Multiple conditions not supported</summary>
+Condition-based permissions accept only one condition. If you need to set permissions based on multiple conditions, consider creating a condition-based calculation in your form that yields a single value for filtering.
+</details>
 
-- On the project list, select the project you wish to remove
-- Click on the **Sharing** button in the **Team members** section
-- Click the trashcan button to delete your permissions for this project
-- Click **REMOVE**
-
-When you navigate back to the project list, the project will no longer be listed.
-
-You can also remove a project through the **Form** tab:
-
-- Open the project
-- Click on the **Form** tab
-- Click on the <i class="k-icon k-icon-more"></i> **More Actions** button
-- Click **Remove Shared Project**
-- Click **REMOVE**
-
-![Remove Sharing](images/managing_permissions/remove_permissions.gif)
-
-## Making your project and data public
-
-In addition to sharing your project with specific KoboToolbox users, you can also make your
-form and/or submissions public:
-
-- Go to the **Sharing** tab in the **SETTINGS** page in your data collection
-  project
-- Select the options **Anyone can view this form** and/or **Anyone can view
-  submissions made to this form**
-
-![Making data public](images/managing_permissions/make_data_public.png)
-
-A URL will be displayed that you can share with anyone to provide access to
-the form and/or the submission data without requiring them to sign in to a KoboToolbox account. If the form is made public, anyone with the link will be able to:
-
-- Preview the form
-- Download the form as XLS or XML
-
-If the data is also made public, anyone with the link will be able to:
-
-- View the data in the **Table** view
-- View and print **Reports**
-- View the **Gallery**
-- **Download** the data
-- View the data in the **Map** view
-
-<p class="note">
-    When the form and the data are made public, anyone with the URL will be able to access the project as shown in the video below.
-</p>
-
-![Public project](images/managing_permissions/public_project.gif)
-
-## Transferring ownership of a project
-
-You can transfer the ownership of a project from your account to a different user account. Both user accounts must be on the same KoboToolbox server to transfer a project.
-
-To transfer a project from your account to another user account:
-
-- Sign in to your account and open the project you wish to transfer
-- Click **Settings** and then go to the **Sharing** tab
-- In the **Transfer project ownership** section, click **Transfer**
-- Enter the username of the account that you wish to transfer the project to
-- Click **Transfer project**
-
-![Transfer ownership](images/managing_permissions/transfer_ownership.gif)
-
-An email will be sent to the user account receiving the project. To accept the transfer, the recipient must click on the link in the email while they are signed in to their KoboToolbox account. 
-
-![Transfer ownership](images/managing_permissions/action-required-project-ownership-transfer-email.png)
-
-When they click on the link in the email, a confirmation dialog box will be displayed. The recipient must click **Accept** for the project transfer to be completed.
-
-![Transfer ownership](images/managing_permissions/Accept-ownership-transfer.png)
-
-<p class="note">
-After accepting the transfer, it may take a few minutes to complete. The new project owner may see the project available in their project list right away, but the data table view may take longer to be updated.
-</p>
