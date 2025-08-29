@@ -57,7 +57,7 @@ To transfer a project:
 4. Enter the username of the account you wish to transfer the project to.
 5. Click **Transfer project**.
    
-An email will be sent to the user receiving the project. To accept the transfer, the recipient must click on the link in the email while signed in to their KoboToolbox account. When they click on the link, a confirmation dialog box will be displayed. The recipient must click Accept for the project transfer to be completed.
+An email will be sent to the user receiving the project. To accept the transfer, the recipient must click on the link in the email while signed in to their KoboToolbox account. When they click on the link, a confirmation dialog box will be displayed. The recipient must click **Accept** for the project transfer to be completed.
 
 <p class="note">
   <strong>Note</strong>: After accepting the transfer, it may take a few minutes to complete. The new project owner may see the project in their project list right away, but the data table view may take longer to update.
