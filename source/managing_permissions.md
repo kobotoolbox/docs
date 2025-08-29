@@ -98,7 +98,7 @@ To copy team permissions from another project:
 
 <details>
 <summary><strong>Tracking changes made by other users</strong></summary>
-KoboToolbox keeps <a href="https://support.kobotoolbox.org/activity_logs.html">Activity Logs</a> that show a complete timeline of account and project actions. **Project History Logs** record every modification inside a project—uploads, edits, deletions, and submissions—so you can trace changes, assign responsibility, and pinpoint when problems began.
+KoboToolbox keeps <a href="https://support.kobotoolbox.org/activity_logs.html">Activity Logs</a> that show a complete timeline of account and project actions. <strong>Project History Logs</strong> record every modification inside a project—uploads, edits, deletions, and submissions—so you can trace changes, assign responsibility, and pinpoint when problems began.
 </details>
 <br>
 <details>
