@@ -8,7 +8,7 @@ KoboToolbox allows you to set different access levels for users on each project.
 This article explains how to grant permissions to other KoboToolbox users to collaborate on your projects. It covers user-level permissions, row-level permissions, and copying permissions from another project.
 
 <p class="note">
-To learn more about sharing your project with other users for data collection, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting Data through Web Forms</a>. To learn more about project-level settings for sharing your projects, see <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Sharing projects with project-level settings</a>.
+To learn more about sharing your project with others for data collection, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting Data through Web Forms</a>. To learn more about project-level settings for sharing your projects, see <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Sharing projects with project-level settings</a>.
 </p>
 
 ## Setting user-level permissions
@@ -97,37 +97,37 @@ To copy team permissions from another project:
 ## Troubleshooting
 
 <details>
-<summary>Tracking changes made by other users</summary>
-KoboToolbox keeps Activity Logs that show a complete timeline of account and project actions. Project History Logs record every modification inside a project—uploads, edits, deletions, and submissions—so you can trace changes, assign responsibility, and pinpoint when problems began.
+<summary><strong>Tracking changes made by other users</strong></summary>
+KoboToolbox keeps <a href="https://support.kobotoolbox.org/activity_logs.html">Activity Logs</a> that show a complete timeline of account and project actions. **Project History Logs** record every modification inside a project—uploads, edits, deletions, and submissions—so you can trace changes, assign responsibility, and pinpoint when problems began.
 </details>
 <br>
 <details>
-<summary>Asked for username and password when sending data</summary>
+<summary><strong>Asked for username and password when sending data</strong></summary>
 If a sign-in pop-up appears when you try to submit, the project is set to <a href="https://support.kobotoolbox.org/project_sharing_settings.html">require authentication</a> for data collection. In this case, you can submit data only if your account has Add submissions permission. Enter your KoboToolbox username and password to continue.
 </details>
 <br>
 <details>
-<summary>User-based permissions do not seem to work</summary>
+<summary><strong>User-based permissions do not seem to work</strong></summary>
 User-based permissions apply only when <a href="https://support.kobotoolbox.org/project_sharing_settings.html">authentication is required</a> and each submission carries a username. Open the project <strong>FORM</strong> tab and turn off “Allow submissions to this form without a username and password” under <strong>Collect data</strong>.
 </details>
 <br>
 <details>
-<summary>Old records ignore row-level rules</summary>
-Submissions made before the <a href="https://support.kobotoolbox.org/project_sharing_settings.html">authentication was required</a> may not have a username attached, so user-based rules cannot filter them. 
+<summary><strong>Old records ignore row-level rules</strong></summary>
+Submissions made before <a href="https://support.kobotoolbox.org/project_sharing_settings.html">authentication was required</a> may not have a username attached, so user-based rules cannot filter them. 
 </details>
 <br>
 <details>
-<summary>Condition-based permissions do not match partial text</summary>
+<summary><strong>Condition-based permissions do not match partial text</strong></summary>
 The filter must include the exact response value. For example, filtering on <code>developer</code> will not match <code>software_developer</code>. Write the full value you expect, or adjust your form so the exact value is captured.
 </details>
 <br>
 <details>
-<summary>Condition-based permissions fail on repeat group questions</summary>
+<summary><strong>Condition-based permissions fail on repeat group questions</strong></summary>
 Filters cannot look inside a repeat group because one submission can hold several different answers. If you need this, see the Community Forum post <a href="https://community.kobotoolbox.org/t/condition-based-permissions-from-a-repeat-group-value/59449">Condition-Based Permissions Using a Repeat Group Value</a> for a spreadsheet workaround.
 </details>
 <br>
 <details>
-<summary>Multiple conditions not supported</summary>
+<summary><strong>Multiple conditions not supported</strong></summary>
 Condition-based permissions accept only one condition. If you need to set permissions based on multiple conditions, consider creating a condition-based calculation in your form that yields a single value for filtering.
 </details>
 
