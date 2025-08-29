@@ -1,5 +1,5 @@
 # Sharing projects with project-level settings 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/60a026698561c9a120b4ffdf3c34671b455d0bf3/source/article_template.md" class="reference">26 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2d936225c821d33163324c6fe6093fa30da3c5fa/source/project_sharing_settings.md" class="reference">29 Aug 2025</a>
 
 <iframe src="https://www.youtube.com/embed/vRuAan0aSfY?si=FbKeyjF9XitYdUWC" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

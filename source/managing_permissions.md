@@ -1,5 +1,5 @@
 # Sharing projects with user-level permissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9088e269fda5e9fa7d77fc444524e2aaba3c0cb4/source/managing_permissions.md" class="reference">14 May 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2d936225c821d33163324c6fe6093fa30da3c5fa/source/managing_permissions.md" class="reference">29 Aug 2025</a>
 
 <iframe src="https://www.youtube.com/embed/WnCNuxgaMoQ?si=bktZdlug2uBKUyzq" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
