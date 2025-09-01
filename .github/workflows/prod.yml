@@ -12,7 +12,7 @@ jobs:
     outputs:
       update_commit: ${{ steps.commit_changes.outputs.update_commit }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           ref: master
           fetch-depth: 0
@@ -50,7 +50,7 @@ jobs:
 
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           # Use "last updated" commit from update job if created
           ref: ${{ needs.update.outputs.update_commit }}
