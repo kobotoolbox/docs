@@ -10,7 +10,7 @@ KoboToolbox supports **Two-Factor Authentication (2FA)** to improve account secu
 2FA minimizes the risks of a compromised password. Even if your password is hacked, phished, or guessed, 2FA prevents unauthorized access to your account by adding an additional layer of security beyond **Single-Factor Authentication (SFA)**.
 
 <p class="note">
-    <strong>Note</strong>: A compatible authenticator app on your mobile device is required to set up 2FA for your KoboToolbox account. This article uses Google Authenticator, available on the <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Play Store</a> and <a href="https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB">Apple App Store</a>, but other authenticator apps can also work.
+    <strong>Note:</strong> A compatible authenticator app on your mobile device is required to set up 2FA for your KoboToolbox account. This article uses Google Authenticator, available on the <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Play Store</a> and <a href="https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB">Apple App Store</a>, but other authenticator apps can also work.
 </p>
 
 This article covers the following topics:
@@ -35,7 +35,7 @@ This article covers the following topics:
 The first method is the **QR code** approach, which uses your device's camera to scan a QR code to configure 2FA for your account. 
 
 <p class="note">
-  <b>Note</b>: The steps below describe the process using the Google Authenticator app. The process should be similar with other authenticator apps, but there may be some differences.
+  <b>Note:</b> The steps below describe the process using the Google Authenticator app. The process should be similar with other authenticator apps, but there may be some differences.
 </p>
 
 To set up 2FA with a QR code:
