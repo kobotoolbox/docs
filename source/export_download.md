@@ -14,7 +14,7 @@ To download your data:
 3. Click **EXPORT**. This will generate an export which will be shown in a table underneath the export settings.
 4. Click **DOWNLOAD** to download the exported file.
 
-![IMAGE]()
+![Exporting data example](images/export_download/export.png)
 
 <p class="note">
     <strong>Note</strong>: An export can take from a few seconds to several minutes to generate, depending on the number of submissions, form size, and server load. Once created, it will appear in the <strong>Exports</strong> section of the page.
