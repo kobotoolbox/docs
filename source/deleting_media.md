@@ -1,5 +1,5 @@
 # Deleting media files
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/60a026698561c9a120b4ffdf3c34671b455d0bf3/source/article_template.md" class="reference">26 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47e7c749092545bc4d132c604e4dd4335284dbbd/source/deleting_media.md" class="reference">4 Sep 2025</a>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/J0-mh1R6dEs?si=I4Oe8NHX7Ks5rFza" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
