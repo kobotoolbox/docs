@@ -10,7 +10,7 @@ KoboToolbox supports **Two-Factor Authentication (2FA)** to improve account secu
 2FA minimizes the risks of a compromised password. Even if your password is hacked, phished, or guessed, 2FA prevents unauthorized access to your account by adding an additional layer of security beyond **Single-Factor Authentication (SFA)**.
 
 <p class="note">
-    A compatible authenticator app on your mobile device is required to set up 2FA for your KoboToolbox account. This article uses Google Authenticator, available on the <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Play Store</a> and <a href="https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB">Apple App Store</a>, but other authenticator apps can also work.
+    <strong>Note</strong>: A compatible authenticator app on your mobile device is required to set up 2FA for your KoboToolbox account. This article uses Google Authenticator, available on the <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Play Store</a> and <a href="https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB">Apple App Store</a>, but other authenticator apps can also work.
 </p>
 
 This article covers the following topics:
@@ -42,7 +42,7 @@ To set up 2FA with a QR code:
 
 1. Open your authenticator app and press **Get started**.
 2. Select **Scan a QR code**. Your device’s camera should now be active.
-3. Scan the QR Code visible on your monitor.
+3. Scan the QR code visible on your monitor.
 4. Enter the 6-digit PIN from the authenticator app into your KoboToolbox account to configure 2FA, then press **Next**.
 5. Recovery codes will be displayed to help you access your account if your authenticator app fails. Download the codes by selecting **Download codes** and store them in a safe place.
 6. Proceed by selecting **I saved my codes**.
@@ -96,12 +96,12 @@ Two-factor authentication adds a layer of protection to accounts with sensitive 
 To collect data with KoboCollect when 2FA is active, we recommend either of the following approaches:
 
 1. Create a separate KoboToolbox account for data collection and form testing to use with KoboCollect. Share your form(s) with this new account and restrict its [permissions](https://support.kobotoolbox.org/managing_permissions.html) to **Add submissions** for maximum security.
-2. [Enable](https://support.kobotoolbox.org/project_sharing_settings.html) “Allow submissions to this form without a username and password” for your forms, and [connect to KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) using the following credentials:
+2. [Enable](https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication) “Allow submissions to this form without a username and password” for your forms, and [connect to KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) using the following credentials:
     - **URL**: `https://[kobocollect_url]/[username]` 
     - **Username**: (blank)
     - **Password**: (blank)
 
-The second approach allows users to download and submit data to any forms shared with `username` that do not [require authentication](https://support.kobotoolbox.org/kobocollect_on_android_latest.html).
+The second approach allows users to download and submit data to any forms shared with `username` that do not [require authentication](https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication).
 
 ## Troubleshooting
 <details>
