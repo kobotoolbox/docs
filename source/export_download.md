@@ -17,7 +17,7 @@ To download your data:
 ![Exporting data example](images/export_download/export.png)
 
 <p class="note">
-    <strong>Note</strong>: An export can take from a few seconds to several minutes to generate, depending on the number of submissions, form size, and server load. Once created, it will appear in the <strong>Exports</strong> section of the page.
+    <strong>Note:</strong> An export can take from a few seconds to several minutes to generate, depending on the number of submissions, form size, and server load. Once created, it will appear in the <strong>Exports</strong> section of the page.
 </p>
 
 ## Export types
@@ -33,7 +33,7 @@ You can choose from the following export types:
 | GPS Coordinates (KML)               | Generates a KML file for working with your data in GIS software, such as Google Earth.                               |
 | Media Attachments (ZIP)               |  Downloads a ZIP file containing all media collected through the form.                               |
 | XLS (legacy)              | Generates an .xlsx file (Microsoft Excel) using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.                                  |
-| CSV (legacy               | Generates a CSV file using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.                                  |
+| CSV (legacy)               | Generates a CSV file using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.                                  |
 
 ## Value and header format
 
@@ -60,7 +60,7 @@ Export time depends on the number of submissions, form complexity, and current s
 - Avoid creating multiple exports rapidly, as this can overload the server and reduce performance for all users.
 
 <p class="note">
-    <strong>Note</strong>: Exports will time out and show as <strong>failed</strong> after 30 minutes. This server-level limit may require you to filter the number of submissions included in the export to complete within the allowed time. An example of how to do this is discussed in the <a href="https://community.kobotoolbox.org/t/how-to-download-data-between-two-dates-from-date-to-date/25569/4">Community Forum</a>.
+    <strong>Note:</strong> Exports will time out and show as <strong>failed</strong> after 30 minutes. This server-level limit may require you to filter the number of submissions included in the export to complete within the allowed time. An example of how to do this is discussed in the <a href="https://community.kobotoolbox.org/t/how-to-download-data-between-two-dates-from-date-to-date/25569/4">Community Forum</a>.
 </p>
 
 If you continue to experience issues exporting your data, please post in the <a href="https://community.kobotoolbox.org/">Community Forum</a>.
