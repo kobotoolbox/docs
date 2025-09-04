@@ -1,7 +1,7 @@
 # Deleting media files
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/60a026698561c9a120b4ffdf3c34671b455d0bf3/source/article_template.md" class="reference">26 Aug 2025</a>
 
-<iframe src="https://www.youtube.com/embed/oKtMmBAlHho?si=OqS7-rewYMf-Rrw2" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/J0-mh1R6dEs?si=I4Oe8NHX7Ks5rFza" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 You may need to delete media files from your KoboToolbox project for various reasons, such as maintaining confidentiality, managing storage space, or correcting submission errors. This article explains how to delete individual media files or multiple files in bulk, including images, videos, audio files, and document files.
 
