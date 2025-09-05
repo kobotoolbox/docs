@@ -108,15 +108,23 @@
           
   <section id="setting-up-two-factor-authentication-in-kobotoolbox">
 <h1>Setting up two-factor authentication in KoboToolbox<a class="headerlink" href="#setting-up-two-factor-authentication-in-kobotoolbox" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/441f38b8c38fc0d0ae25823afd4b75cdf790cdbb/source/two_factor_authentication.md" class="reference">22 Aug 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e729b336d0278ef0f74302adf0382d5fa7fccde1/source/two_factor_authentication.md" class="reference">5 Sep 2025</a></p>
 <iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br>
 <p>KoboToolbox supports <strong>Two-Factor Authentication (2FA)</strong> to improve account security. With 2FA, you will need to enter your account password and a code from a smartphone app to access your KoboToolbox account.</p>
 <p>2FA minimizes the risks of a compromised password. Even if your password is hacked, phished, or guessed, 2FA prevents unauthorized access to your account by adding an additional layer of security beyond <strong>Single-Factor Authentication (SFA)</strong>.</p>
-<p>A compatible authenticator app on your mobile device is required to set up 2FA for your KoboToolbox account. This article uses Google Authenticator, available on the <a class="reference external" href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Play Store</a> and <a class="reference external" href="https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB">Apple App Store</a>, but other authenticator apps can also work.</p>
+<p class="note">
+    <strong>Note:</strong> A compatible authenticator app on your mobile device is required to set up 2FA for your KoboToolbox account. This article uses Google Authenticator, available on the <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Play Store</a> and <a href="https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB">Apple App Store</a>, but other authenticator apps can also work.
+</p>
+<p>This article covers the following topics:</p>
+<ul class="simple">
+<li><p>Setting up 2FA with a QR code or manual key</p></li>
+<li><p>Disabling and reconfiguring 2FA</p></li>
+<li><p>Using KoboCollect when 2FA is enabled</p></li>
+</ul>
 <section id="setting-up-2fa-in-kobotoolbox">
 <h2>Setting up 2FA in KoboToolbox<a class="headerlink" href="#setting-up-2fa-in-kobotoolbox" title="Permalink to this heading">¶</a></h2>
-<p>2FA in KoboToolbox can be configured using two different approaches: the <strong>QR Code</strong> approach and the <strong>Manual Key</strong> approach. To get started with either approach:</p>
+<p>2FA in KoboToolbox can be configured using two different approaches: the <strong>QR code</strong> approach and the <strong>manual key</strong> approach. To get started with either approach:</p>
 <ol class="arabic simple">
 <li><p>Log in to your KoboToolbox account.</p></li>
 <li><p>Click your profile icon in the top right corner.</p></li>
@@ -127,25 +135,25 @@
 </ol>
 <section id="setting-up-2fa-with-a-qr-code">
 <h3>Setting up 2FA with a QR code<a class="headerlink" href="#setting-up-2fa-with-a-qr-code" title="Permalink to this heading">¶</a></h3>
-<p>The first method is the <strong>QR Code</strong> approach, which uses your device’s camera to scan a QR Code to configure 2FA for your account.</p>
+<p>The first method is the <strong>QR code</strong> approach, which uses your device’s camera to scan a QR code to configure 2FA for your account.</p>
 <p class="note">
-  <b>Note</b>: The steps below describe the process using the Google Authenticator app. The process should be similar with other authenticator apps, but there may be some differences.
+  <b>Note:</b> The steps below describe the process using the Google Authenticator app. The process should be similar with other authenticator apps, but there may be some differences.
 </p>
-<p>To set up 2FA with a QR Code:</p>
+<p>To set up 2FA with a QR code:</p>
 <ol class="arabic simple">
 <li><p>Open your authenticator app and press <strong>Get started</strong>.</p></li>
 <li><p>Select <strong>Scan a QR code</strong>. Your device’s camera should now be active.</p></li>
-<li><p>Scan the QR Code visible on your monitor.</p></li>
+<li><p>Scan the QR code visible on your monitor.</p></li>
 <li><p>Enter the 6-digit PIN from the authenticator app into your KoboToolbox account to configure 2FA, then press <strong>Next</strong>.</p></li>
 <li><p>Recovery codes will be displayed to help you access your account if your authenticator app fails. Download the codes by selecting <strong>Download codes</strong> and store them in a safe place.</p></li>
 <li><p>Proceed by selecting <strong>I saved my codes</strong>.</p></li>
 </ol>
-<p>You have now successfully configured 2FA in your KoboToolbox account via the <strong>QR Code Approach</strong>.</p>
+<p>You have now successfully configured 2FA in your KoboToolbox account via the <strong>QR code approach</strong>.</p>
 </section>
 <section id="setting-up-2fa-with-a-manual-key">
 <h3>Setting up 2FA with a manual key<a class="headerlink" href="#setting-up-2fa-with-a-manual-key" title="Permalink to this heading">¶</a></h3>
-<p>The second approach is the <strong>Manual Key approach</strong>, which does not require your device’s camera to configure 2FA for your KoboToolbox account.</p>
-<p>To set up 2FA with a Manual Key:</p>
+<p>The second approach is the <strong>manual key approach</strong>, which does not require your device’s camera to configure 2FA for your KoboToolbox account.</p>
+<p>To set up 2FA with a manual key:</p>
 <ol class="arabic simple">
 <li><p>At the bottom of the 2FA window in KoboToolbox, click <strong>No QR code? Enter key manually</strong>. A 32-character key will be displayed.</p></li>
 <li><p>Open your authenticator app and press <strong>Get started</strong>.</p></li>
@@ -155,7 +163,7 @@
 <li><p>Recovery codes will be displayed to help you access your account if your authenticator app fails. <strong>Download the codes</strong> by selecting Download codes and store them in a safe place.</p></li>
 <li><p>Proceed by selecting <strong>I saved my codes</strong>.</p></li>
 </ol>
-<p>You have now successfully configured 2FA in your KoboToolbox account via the <strong>Manual Key Approach</strong>.</p>
+<p>You have now successfully configured 2FA in your KoboToolbox account via the <strong>manual key approach</strong>.</p>
 </section>
 </section>
 <section id="disabling-2fa">
@@ -181,6 +189,22 @@
 <li><p>In the <strong>Two-factor authentication section</strong>, next to <strong>Authenticator app</strong>, press the <strong>Reconfigure</strong> button to begin reconfiguring 2FA. This process follows the same steps as setting up 2FA.</p></li>
 </ol>
 <p>When you reconfigure 2FA for your account, the previous setup will be automatically deleted. Any tokens or recovery codes from the old setup will no longer be valid. After your current 2FA has been deactivated, you will be prompted to configure it again. If you cannot complete the process, 2FA will remain disabled for your account. In this case, you can enable it again at any time through the usual process, as shared above.</p>
+</section>
+<section id="using-kobocollect-with-2fa">
+<h2>Using KoboCollect with 2FA<a class="headerlink" href="#using-kobocollect-with-2fa" title="Permalink to this heading">¶</a></h2>
+<p>Two-factor authentication adds a layer of protection to accounts with sensitive data. Using these accounts for data collection could pose significant risks. Therefore, when activating 2FA for your account, you can no longer download forms or submit data to <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> from this account. You will receive an error message when attempting to download new forms inside the app, such as “Server Requires Authentication: Invalid username or password for server”.</p>
+<p>To collect data with KoboCollect when 2FA is active, we recommend either of the following approaches:</p>
+<ol class="arabic simple">
+<li><p>Create a separate KoboToolbox account for data collection and form testing to use with KoboCollect. Share your form(s) with this new account and restrict its <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html">permissions</a> to <strong>Add submissions</strong> for maximum security.</p></li>
+<li><p><a class="reference external" href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">Enable</a> “Allow submissions to this form without a username and password” for your forms, and <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">connect to KoboCollect</a> using the following credentials:</p>
+<ul class="simple">
+<li><p><strong>URL</strong>: <code class="docutils literal notranslate"><span class="pre">https://[kobocollect_url]/[username]</span></code></p></li>
+<li><p><strong>Username</strong>: (blank)</p></li>
+<li><p><strong>Password</strong>: (blank)</p></li>
+</ul>
+</li>
+</ol>
+<p>The second approach allows users to download and submit data to any forms shared with <code class="docutils literal notranslate"><span class="pre">username</span></code> that do not <a class="reference external" href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require authentication</a>.</p>
 </section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
@@ -242,6 +266,7 @@ This feature is currently unavailable for users on the Community Plan. However, 
 <li class="toctree-l2"><a class="reference internal" href="#setting-up-2fa-in-kobotoolbox">Setting up 2FA in KoboToolbox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#disabling-2fa">Disabling 2FA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reconfiguring-2fa">Reconfiguring 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-kobocollect-with-2fa">Using KoboCollect with 2FA</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
