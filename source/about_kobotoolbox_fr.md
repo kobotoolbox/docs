@@ -1,6 +1,8 @@
 # À propos de KoboToolbox : Collecte de données accessible à toutes et tous
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/460b80664ffd6fcbc9a3e358bd13d8b9f4fe3095/source/about_kobotoolbox_fr.md" class="reference">5 Sep 2025</a>
 
+[Read in English](about_kobotoolbox.md) | [Leer en español](about_kobotoolbox_es.md) | [اقرأ باللغة العربية](about_kobotoolbox_ar.md)
+
 <iframe src="https://www.youtube.com/embed/oKtMmBAlHho?si=OqS7-rewYMf-Rrw2" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 KoboToolbox permet aux organisations à impact social du monde entier d’avoir accès aux données de grande qualité. Conçu par des spécialistes de la collecte de données, en particulier pour des environnements difficiles, KoboToolbox est facile à utiliser, adaptable et permet une utilisation efficace des ressources.
