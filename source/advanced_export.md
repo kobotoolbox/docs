@@ -27,7 +27,7 @@ Advanced export options allow you to refine your data download by including data
 | :----------------- | :--------------------------------------------- |
 | Include data from all […] versions | By default, this option is checked. This allows you to download data from all form versions, including deleted questions or choices. If unchecked, only data from the latest deployed form version will be downloaded. |
 | Select questions to be exported | To export data from specific questions, enable this option and select the questions to include. |
-| Data range | To export data submitted within a specific date range, enable this option and select the start and/or end dates. Date filters are based on submission time and use the UTC time zone. Date submitted on the start and end dates are included in the exports. |
+| Data range | To export data submitted within a specific date range, enable this option and select the start and/or end dates. Date filters are based on submission time and use the UTC time zone. Date submitted on the <strong>start</strong> and <strong>end</strong> dates are included in the exports. |
 
 ![How to select data fields](images/advanced_export/select_data_fields.png)
 
@@ -37,7 +37,7 @@ KoboToolbox offers additional data format options to further customize your expo
 
 | **Export setting**    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
-| Include groups in headers | Choose this option to add group names to each question header, as shown in the example below. ![Include groups in headers](source/images/export_download/group_headers2.png) | 
+| Include groups in headers | Choose this option to add group names to each question header, as shown in the example below. ![Include groups in headers](images/advanced_export/group_headers2.png) | 
 | Store date and number responses as text | By default, <strong>Date, Date & Time, Number,</strong> and <strong>Decimal</strong> questions are saved with their corresponding data types when exported to XLS. Check this option if you prefer to export them as text.<br><br><strong>Note:</strong> Excel time formats do not support timezone data; therefore, any timezone data in the response value will be removed during export. To retain this information, check the option to export dates as text values. |
 | Include media URLs | If your form collected media (photos, audio, videos, or files), check this option to ensure your exported file includes links to these media files. |
 
