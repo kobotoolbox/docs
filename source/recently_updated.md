@@ -1,7 +1,7 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
-1. [<section dir="rtl">](about_kobotoolbox_ar.md) (5 Sep 2025)
+1. [](about_kobotoolbox_ar.md) (5 Sep 2025)
 1. [Setting up two-factor authentication in KoboToolbox](two_factor_authentication.md) (5 Sep 2025)
 1. [À propos de KoboToolbox : Collecte de données accessible à toutes et tous](about_kobotoolbox_fr.md) (5 Sep 2025)
 1. [#Acerca de KoboToolbox: Recolección de datos accesible para todas las personas](about_kobotoolbox_es.md) (5 Sep 2025)

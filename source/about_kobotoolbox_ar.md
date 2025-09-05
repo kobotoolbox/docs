@@ -1,5 +1,5 @@
 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c6b4dd60a840925a125d1283fd523c2ad3b9a01c/source/about_kobotoolbox_ar.md" class="reference">5 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/09330e47a06123bb86e294094c2695f4af6e23af/source/about_kobotoolbox_ar.md" class="reference">5 Sep 2025</a>
 
 <section dir="rtl">
 
