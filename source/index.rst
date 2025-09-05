@@ -109,6 +109,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   record_validation
   delete_project
   export_download
+  advanced_export
   managing_repeat_groups
   archiving_projects
   project_sharing_settings
