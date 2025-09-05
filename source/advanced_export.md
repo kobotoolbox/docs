@@ -3,17 +3,20 @@
 
 Advanced options provide greater control and flexibility when downloading and exporting your data. This article will guide you through customizing your data exports, from selecting data fields and handling various question types to setting parameters for different analytical needs.
 
+<p class="note">
+    To learn more about downloading data, including an overview of export types and available formats, see <a href="https://support.kobotoolbox.org/export_download.html?highlight=export">Exporting and downloading your data.</a>
+</p>
+
 ## Export options for multiple select questions
 
 The **Export Select Many questions as…** option allows you to choose how to export data from **Select Many** (also called `select_multiple`) questions. You can choose to export them as:
 
 | **Export option**    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
-| Single and separate columns               | This default setting exports one column with all selected options from <strong>Select Many</strong> questions, plus individual columns for each response, as shown below.                                 |
+| Single and separate columns               | This default setting exports one column with all selected options from <strong>Select Many</strong> questions, plus individual columns for each response, as shown below.<br>![How to select many columns](images/advanced_export/select_many_columns.png)                                 |
 | Separate columns      | Each response to <strong>Select Many</strong> questions will be exported into separate columns.                                  |
 | Single column           | Responses to <strong>Select Many</strong> questions will be exported into a single column.            |
 
-![How to select many columns](images/advanced_export/select_many_columns.png)
 
 <p class="note">
   <strong>Note:</strong> In the separate columns, a value of '1' indicates the option was selected, while '0' means the respondent did not choose that option.
