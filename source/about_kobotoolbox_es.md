@@ -2,7 +2,7 @@
 
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1cbe5ed8fb027c4882b794f4ff8b9bce4b7ae74f/source/about_kobotoolbox.md" class="reference">9 Jun 2025</a>
 
-[Lire en français](#a-propos-de-kobotoolbox-collecte-de-donnees-accessible-a-toutes-et-tous) | [Leer en español](#acerca-de-kobotoolbox-recoleccion-de-datos-accesible-para-todas-las-personas) | [اقرأ باللغة العربية](#ar)
+[Read in English](about_kobotoolbox.md) | [Lire en français](about_kobotoolbox_fr.md) | [اقرأ باللغة العربية](about_kobotoolbox_ar.md)
 
 <iframe src="https://www.youtube.com/embed/oKtMmBAlHho?si=OqS7-rewYMf-Rrw2" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
