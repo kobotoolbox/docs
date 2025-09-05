@@ -6,7 +6,7 @@
 Cascading select questions allow you to create dynamic forms where the options in one question depend on the answer to a previous question. This feature helps streamline data collection by presenting only relevant choices, improving the efficiency and accuracy of your surveys.
 
 <p class="note">
-  <strong>Note</strong>: This article focuses on basic cascading select questions using the Formbuilder. To learn more about using XLSForm to create advanced cascading select questions and add choice filters, see <a href="https://xlsform.org/en/#cascading-selects">XLSForm documentation</a>.
+  <strong>Note:</strong> This article focuses on basic cascading select questions using the Formbuilder. To learn more about using XLSForm to create advanced cascading select questions and add choice filters, see <a href="https://xlsform.org/en/#cascading-selects">XLSForm documentation</a>.
 </p>
 
 ## Preparing a cascading choice table
@@ -19,7 +19,7 @@ The choice table must include the following columns:
 - **label**: Text that appears on the form for each choice.
 
 <p class="note">
-  <strong>Note</strong>: When defining a <strong>list_name</strong> or a <strong>name</strong>, do not use symbols such as the em-dash or question mark. Only alphabet letters, underscores, and numbers can be used.
+  <strong>Note:</strong> When defining a <strong>list_name</strong> or a <strong>name</strong>, do not use symbols such as the em-dash or question mark. Only alphabet letters, underscores, and numbers can be used.
 </p>
 
 Next, you must add a column for each **parent list**, which is a list that includes a sublist within it. For example, a **parent list** of continents could include a **child list** of countries.
@@ -41,7 +41,7 @@ Once your choice list is ready, you can import it in the Formbuilder by followin
 ![Insert cascading select example](images/cascading_select/insert_cascading_select.png)
 
 <p class="note">
-  <strong>Note</strong>: If you change the question label in the Formbuilder, ensure the Data Column Name in its settings still matches the <strong>list_name</strong> from your choice list table.
+  <strong>Note:</strong> If you change the question label in the Formbuilder, ensure the Data Column Name in its settings still matches the <strong>list_name</strong> from your choice list table.
 </p>
 
 ## Advanced cascading select management using XLSForm
