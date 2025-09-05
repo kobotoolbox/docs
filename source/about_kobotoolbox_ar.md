@@ -1,11 +1,10 @@
 <section dir="rtl">
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9f6cde1ed76d8717827af0288f64cd5260b74927/source/about_kobotoolbox_ar.md" class="reference">5 Sep 2025</a>
 
 <h1 id="ar">معلومات عن منصة (KoboToolbox): جمع البيانات التي يمكن للجميع الوصول إليها</h1>
 
-</section>
+<b>Last updated:</b> <a href="https://github.com/kobotoolbox/docs/blob/9f6cde1ed76d8717827af0288f64cd5260b74927/source/about_kobotoolbox_ar.md" class="reference">5 Sep 2025</a>
 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1cbe5ed8fb027c4882b794f4ff8b9bce4b7ae74f/source/about_kobotoolbox.md" class="reference">9 Jun 2025</a>
+</section>
 
 [Read in English](about_kobotoolbox.md) | [Lire en français](about_kobotoolbox_fr.md) | [Leer en español](about_kobotoolbox_es.md) 
 
