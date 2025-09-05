@@ -91,7 +91,7 @@ When you reconfigure 2FA for your account, the previous setup will be automatica
 
 ## Using KoboCollect with 2FA
 
-Two-factor authentication adds a layer of protection to accounts with sensitive data. Using these accounts for data collection could pose significant risks. Therefore, when activating 2FA for your account, you can no longer download forms or submit data to [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) from this account. You will receive an error message when attempting to download new forms inside the app, such as “Server Requires Authentication: Invalid username or password for server”. 
+Two-factor authentication adds a layer of protection to accounts with sensitive data. Using these accounts for data collection could pose significant risks. Therefore, when activating 2FA for your account, you can no longer download forms or submit data to [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) from this account. You will receive an error message when attempting to download new forms inside the app, such as “Server Requires Authentication: Invalid username or password for server.” 
 
 To collect data with KoboCollect when 2FA is active, we recommend either of the following approaches:
 
