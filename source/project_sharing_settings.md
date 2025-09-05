@@ -24,7 +24,7 @@ To allow data entry for anyone with the form URL:
 You can also change this setting by going to the **Sharing** tab in the **SETTINGS** page of your project and toggling the default setting to enable “Allow submissions to this form without a username and password”.
 
 <p class="note">
-  <strong>Note</strong>: Setting forms to require authentication is now available as a per-project setting. This privacy feature replaces the previous account-level setting to “Require authentication to see forms and submit data”. With this update, new projects require authentication by default. Existing projects inherit your previous account-level settings as they were at the time of this update.
+  <strong>Note:</strong> Setting forms to require authentication is now available as a per-project setting. This privacy feature replaces the previous account-level setting to “Require authentication to see forms and submit data”. With this update, new projects require authentication by default. Existing projects inherit your previous account-level settings as they were at the time of this update.
 </p>
 
 ## Making your project public
@@ -36,7 +36,7 @@ In addition to sharing your project with specific KoboToolbox users, you can als
 3. Select the options “Anyone can view this form” and/or “Anyone can view submissions made to this form”
 
 <p class="note">
-  <strong>Note</strong>: When selecting “Anyone can view submissions made to this form”, the “Anyone can view this form” option is also selected by default.
+  <strong>Note:</strong> When selecting “Anyone can view submissions made to this form”, the “Anyone can view this form” option is also selected by default.
 </p>
 
 A URL will be displayed that you can share to provide access to the form and/or project data without requiring a KoboToolbox account sign-in. Users with the link will be able to perform the following actions:
@@ -60,7 +60,7 @@ To transfer a project:
 An email will be sent to the user receiving the project. To accept the transfer, the recipient must click on the link in the email while signed in to their KoboToolbox account. When they click on the link, a confirmation dialog box will be displayed. The recipient must click **Accept** for the project transfer to be completed.
 
 <p class="note">
-  <strong>Note</strong>: After accepting the transfer, it may take a few minutes to complete. The new project owner may see the project in their project list right away, but the data table view may take longer to update.
+  <strong>Note:</strong> After accepting the transfer, it may take a few minutes to complete. The new project owner may see the project in their project list right away, but the data table view may take longer to update.
 </p>
 
 ## Removing shared projects from your account
