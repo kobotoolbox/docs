@@ -94,5 +94,6 @@ For more information about exporting and using repeat group data, see <a href="h
     <summary><strong>Timezone data getting lost in export</strong></summary>
     Excel time formats do not support timezone data. Therefore, any timezone data in the response value will be removed during XLS export. To retain this information, check the option to export dates as text values. 
 
+
 For more information on this setting, see <a href="https://support.kobotoolbox.org/advanced_export.html">Advanced options for exporting data</a>.
 </details>
