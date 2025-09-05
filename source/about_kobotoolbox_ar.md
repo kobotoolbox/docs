@@ -1,4 +1,5 @@
 <section dir="rtl">
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9f6cde1ed76d8717827af0288f64cd5260b74927/source/about_kobotoolbox_ar.md" class="reference">5 Sep 2025</a>
 
 <h1 id="ar">معلومات عن منصة (KoboToolbox): جمع البيانات التي يمكن للجميع الوصول إليها</h1>
 
