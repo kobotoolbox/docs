@@ -14,9 +14,9 @@ Cascading select questions allow you to create dynamic forms where the options i
 To import cascading select questions into the Formbuilder, you first need to prepare your choice list in Excel or another spreadsheet program. You can use this <a href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit?gid=0#gid=0">Cascade Import Template</a> to get started.
 
 The choice table must include the following columns:
-- **list_name**: Unique identifier for a question’s list of choices. This will also be the Data Column Name for the created question.
-- **name**: Unique identifier for each choice within a list.
-- **label**: Text that appears on the form for each choice.
+- **list_name:** Unique identifier for a question’s list of choices. This will also be the Data Column Name for the created question.
+- **name:** Unique identifier for each choice within a list.
+- **label:** Text that appears on the form for each choice.
 
 <p class="note">
   <strong>Note:</strong> When defining a <strong>list_name</strong> or a <strong>name</strong>, do not use symbols such as the em-dash or question mark. Only alphabet letters, underscores, and numbers can be used.
