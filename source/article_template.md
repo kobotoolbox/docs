@@ -71,7 +71,6 @@ To add a full line break, use:
 
 Store the images in the [images folder](https://github.com/kobotoolbox/docs/tree/master/source/images), in a folder named after the support article. Include the folder name and image file name in the filepath above.
 
-
 ### Adding icons
 Click the <i class="k-icon k-icon-more"></i> **More actions** icon for the user you wish to remove.
 
@@ -125,6 +124,16 @@ You can also include videos in the following way:
 | survey |
 
 Note the `| survey |` at the bottom of the table.
+
+
+### Fix table width
+
+If one of the columns is not large enough, add `&emsp;` spaces to make it wider, as below:
+
+| **Export setting** | **Description**                                |
+| :-------------------- | :------------------------------------ |
+| Save selection as… &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| Check this option and enter a name for your export settings. When you click <strong>EXPORT</strong>, these settings will be saved and the name will appear in the <strong>Apply saved export settings</strong> box. | 
+
 
 <br/> 
 
