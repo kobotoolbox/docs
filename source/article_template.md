@@ -184,7 +184,9 @@ Add an unnumbered list:
 <details>
 <summary><strong>Enketo vs KoboCollect</strong></summary>
 <br>
-Use this format to set up <strong>troubleshooting sections</strong> in your support articles. Include a short title that clearly describes the issue, and propose solutions here.
+    Use this format to set up <strong>troubleshooting sections</strong> in your support articles. Include a short title that clearly describes the issue, and propose solutions here.
+    <br><br>
+    To separate lines inside a troubleshooting item, add a double line break.
 </details>
 
 <details>
