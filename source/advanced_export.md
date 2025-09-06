@@ -1,5 +1,5 @@
 # Advanced options for exporting data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/60a026698561c9a120b4ffdf3c34671b455d0bf3/source/article_template.md" class="reference">26 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8a772b24abadb4e8d54f9716b798c5479432f0e6/source/advanced_export.md" class="reference">6 Sep 2025</a>
 
 Advanced options provide greater control and flexibility when downloading and exporting your data. This article will guide you through customizing your data exports, from selecting data fields and handling various question types to setting parameters for different analytical needs.
 
