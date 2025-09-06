@@ -1,5 +1,5 @@
 # Article title
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1cfb71e54e8787603ccdae456f66f665e1eadc78/source/article_template.md" class="reference">6 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2afa3a0c670fe98b296a79b798f33abf248d0273/source/article_template.md" class="reference">6 Sep 2025</a>
 
 This is where your intro goes. Note above that the "Last updated" code will be automatically updated with the correct article name and date when you publish, so not manual change is needed. Remember to name this file according to the article title, and end the file name with `.md`.
 
@@ -71,7 +71,6 @@ To add a full line break, use:
 
 Store the images in the [images folder](https://github.com/kobotoolbox/docs/tree/master/source/images), in a folder named after the support article. Include the folder name and image file name in the filepath above.
 
-
 ### Adding icons
 Click the <i class="k-icon k-icon-more"></i> **More actions** icon for the user you wish to remove.
 
@@ -125,6 +124,16 @@ You can also include videos in the following way:
 | survey |
 
 Note the `| survey |` at the bottom of the table.
+
+
+### Fix table width
+
+If one of the columns is not large enough, add `&emsp;` spaces to make it wider, as below:
+
+| **Export setting** | **Description**                                |
+| :-------------------- | :------------------------------------ |
+| Save selection as… &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| Check this option and enter a name for your export settings. When you click <strong>EXPORT</strong>, these settings will be saved and the name will appear in the <strong>Apply saved export settings</strong> box. | 
+
 
 <br/> 
 
