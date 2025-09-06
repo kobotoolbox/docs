@@ -13,7 +13,7 @@ The **Export Select Many questions as…** option allows you to choose how to ex
 
 | **Export option**    | **Description**                                |
 | :----------------- | :------------------------------------ |
-| Single and separate columns &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;              | This default setting exports one column with all selected options from <strong>Select Many</strong> questions, plus individual columns for each response, as shown below.<br> <img src="images/advanced_export/select_many_columns.png" alt="How to select many columns" width="500"/> |
+| Single and separate columns &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;              | This default setting exports one column with all selected options from <strong>Select Many</strong> questions, plus individual columns for each response, as shown below.<br> ![How to select many columns](images/advanced_export/select_many_columns.png)  |
 | Separate columns &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     | Each response to <strong>Select Many</strong> questions will be exported into separate columns.                                  |
 | Single column  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;         | Responses to <strong>Select Many</strong> questions will be exported into a single column.            |
 
