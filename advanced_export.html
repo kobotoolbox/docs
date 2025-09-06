@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>List of Question Types &#8212; KoboToolbox  documentation</title>
+    <title>Advanced options for exporting data &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Text and Note question types" href="text_and_note.html" />
-    <link rel="prev" title="Getting started with the KoboToolbox Formbuilder" href="formbuilder.html" />
+    <link rel="next" title="Managing repeat group data" href="managing_repeat_groups.html" />
+    <link rel="prev" title="Exporting and downloading your data" href="export_download.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -93,7 +93,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="question_types">
+<div class="page page--has-sidebar " id="advanced_export">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -106,153 +106,94 @@
 
         <section class="page__body" role="main">
           
-  <section id="list-of-question-types">
-<h1>List of Question Types<a class="headerlink" href="#list-of-question-types" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3993133bcf0aafda0b0978709534175cb583e049/source/question_types.md" class="reference">28 Oct 2024</a></p>
-<p>The below table provides a high-level summary of each of the response types
-available to use in your XLSForm and formbuilder:</p>
+  <section id="advanced-options-for-exporting-data">
+<h1>Advanced options for exporting data<a class="headerlink" href="#advanced-options-for-exporting-data" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8a772b24abadb4e8d54f9716b798c5479432f0e6/source/advanced_export.md" class="reference">6 Sep 2025</a></p>
+<p>Advanced options provide greater control and flexibility when downloading and exporting your data. This article will guide you through customizing your data exports, from selecting data fields and handling various question types to setting parameters for different analytical needs.</p>
+<p class="note">
+    To learn more about downloading data, including an overview of export types and available formats, see <a href="https://support.kobotoolbox.org/export_download.html?highlight=export">Exporting and downloading your data.</a>
+</p>
+<section id="export-options-for-multiple-select-questions">
+<h2>Export options for multiple select questions<a class="headerlink" href="#export-options-for-multiple-select-questions" title="Permalink to this heading">¶</a></h2>
+<p>The <strong>Export Select Many questions as…</strong> option allows you to choose how to export data from <strong>Select Many</strong> (also called <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>) questions. You can choose to export them as:</p>
 <table class="colwidths-auto docutils align-default">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p>Question type</p></th>
-<th class="text-left head"><p>Icon</p></th>
-<th class="text-left head"><p>Answer input</p></th>
+<tr class="row-odd"><th class="text-left head"><p><strong>Export option</strong></p></th>
+<th class="text-left head"><p><strong>Description</strong></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-number"></i></p></td>
-<td class="text-left"><p>Integer (i.e., whole number) input.</p></td>
+<tr class="row-even"><td class="text-left"><p>Single and separate columns</p></td>
+<td class="text-left"><p>This default setting exports one column with all selected options from <strong>Select Many</strong> questions, plus individual columns for each response, as shown below.<br><img alt="How to select many columns" src="_images/select_many_columns.png" /></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>decimal</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-decimal"></i></p></td>
-<td class="text-left"><p>Decimal input.</p></td>
+<tr class="row-odd"><td class="text-left"><p>Separate columns</p></td>
+<td class="text-left"><p>Each response to <strong>Select Many</strong> questions will be exported into separate columns.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>range</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-range"></i></p></td>
-<td class="text-left"><p>Range input (including rating).</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-text"></i></p></td>
-<td class="text-left"><p>Free text response.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>select_one [options]</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-select-one"></i></p></td>
-<td class="text-left"><p>Multiple choice question; only one answer can be selected.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>select_multiple [options]</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-select-many"></i></p></td>
-<td class="text-left"><p>Multiple choice question; multiple answers can be selected.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>select_one_from_file [file]</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-select-one"></i></p></td>
-<td class="text-left"><p>Multiple choice from file; only one answer can be selected.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>select_multiple_from_file [file]</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-select-many"></i></p></td>
-<td class="text-left"><p>Multiple choice from file; multiple answers can be selected.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>rank [options]</p></td>
-<td class="text-left"><p>n/a</p></td>
-<td class="text-left"><p>Rank question; order a list.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>note</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-note"></i></p></td>
-<td class="text-left"><p>Display a note on the screen, takes no input. Shorthand for type=text with readonly=true.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>geopoint</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-point"></i></p></td>
-<td class="text-left"><p>Collect a single GPS coordinate.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>geotrace</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-line"></i></p></td>
-<td class="text-left"><p>Record a line of two or more GPS coordinates.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>geoshape</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-area"></i></p></td>
-<td class="text-left"><p>Record a polygon of multiple GPS coordinates; the last point is the same as the first point.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>date</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-date"></i></p></td>
-<td class="text-left"><p>Date input.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>time</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-time"></i></p></td>
-<td class="text-left"><p>Time input.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>datetime</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-date-time"></i></p></td>
-<td class="text-left"><p>Accepts a date and a time input.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>image</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-photo"></i></p></td>
-<td class="text-left"><p>Take a picture or upload an image file.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>audio</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-audio"></i></p></td>
-<td class="text-left"><p>Take an audio recording or upload an audio file.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>background-audio</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-background-rec"></i></p></td>
-<td class="text-left"><p>Audio is recorded in the background while filling the form.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>video</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-video"></i></p></td>
-<td class="text-left"><p>Take a video recording or upload a video file.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>file</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-file"></i></p></td>
-<td class="text-left"><p>Generic file input (txt, pdf, xls, xlsx, doc, docx, rtf, zip)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>barcode</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-barcode"></i></p></td>
-<td class="text-left"><p>Scan a barcode or QR Code</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>calculate</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-calculate"></i></p></td>
-<td class="text-left"><p>Perform a calculation; see the Calculation section below.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>acknowledge</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-acknowledge"></i></p></td>
-<td class="text-left"><p>Acknowledge prompt that sets value to “OK” if selected.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>hidden</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-hidden"></i></p></td>
-<td class="text-left"><p>A field with no associated UI element which can be used to store a constant.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>xml-external</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-external-xml"></i></p></td>
-<td class="text-left"><p>Adds a reference to an external XML data file.</p></td>
+<tr class="row-even"><td class="text-left"><p>Single column</p></td>
+<td class="text-left"><p>Responses to <strong>Select Many</strong> questions will be exported into a single column.</p></td>
 </tr>
 </tbody>
 </table>
-<p>For more information on the response types, please visit
-<a class="reference external" href="http://xlsform.org/">xlsform.org</a>.</p>
-<p>Additionally, KoboToolbox-specific types can also be used from within the
-formbuilder:</p>
+<p class="note">
+  <strong>Note:</strong> In the separate columns, a value of '1' indicates the option was selected, while '0' means the respondent did not choose that option.
+</p>
+</section>
+<section id="selecting-data-fields-for-export">
+<h2>Selecting data fields for export<a class="headerlink" href="#selecting-data-fields-for-export" title="Permalink to this heading">¶</a></h2>
+<p>Advanced export options allow you to refine your data download by including data from all form versions or selecting specific questions to export.</p>
 <table class="colwidths-auto docutils align-default">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p>Formbuilder Question type</p></th>
-<th class="text-left head"><p>Icon</p></th>
-<th class="text-left head"><p>Answer input</p></th>
+<tr class="row-odd"><th class="text-left head"><p><strong>Export setting</strong></p></th>
+<th class="text-left head"><p><strong>Description</strong></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Rating</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-rating"></i></p></td>
-<td class="text-left"><p>Compare different items using a common scale.</p></td>
+<tr class="row-even"><td class="text-left"><p>Include data from all […] versions</p></td>
+<td class="text-left"><p>By default, this option is checked. This allows you to download data from all form versions, including deleted questions or choices. If unchecked, only data from the latest deployed form version will be downloaded.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Ranking</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-ranking"></i></p></td>
-<td class="text-left"><p>Compare a list of different objects to one another.</p></td>
+<tr class="row-odd"><td class="text-left"><p>Select questions to be exported</p></td>
+<td class="text-left"><p>To export data from specific questions, enable this option and select the questions to include.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>Question Matrix</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-question-matrix"></i></p></td>
-<td class="text-left"><p>Create a group of questions that display in a matrix format.</p></td>
+<tr class="row-even"><td class="text-left"><p>Data range</p></td>
+<td class="text-left"><p>To export data submitted within a specific date range, enable this option and select the start and/or end dates. Date filters are based on submission time and use the UTC time zone. Date submitted on the <strong>start</strong> and <strong>end</strong> dates are included in the exports.</p></td>
 </tr>
 </tbody>
 </table>
-<p class="note"><a class="reference" href="/calculate_questions.html">Calculate Questions</a> are not displayed in your form, but are executed automatically as your form is being answered.</p>
-<p class="note">The <a class="reference" href="matrix_response.html">Question Matrix Type</a> is only supported in Enketo and with the Grid Theme set. </p>
+<p><img alt="How to select data fields" src="_images/select_data_fields.png" /></p>
+</section>
+<section id="additional-data-format-options">
+<h2>Additional data format options<a class="headerlink" href="#additional-data-format-options" title="Permalink to this heading">¶</a></h2>
+<p>KoboToolbox offers additional data format options to further customize your exports, such as including group names in headers, storing date and number responses as text, or including media URLs.</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p><strong>Export setting</strong></p></th>
+<th class="text-left head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Include groups in headers</p></td>
+<td class="text-left"><p>Choose this option to add group names to each question header, as shown in the example below. <img alt="Include groups in headers" src="_images/group_headers2.png" /></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Store date and number responses as text</p></td>
+<td class="text-left"><p>By default, <strong>Date, Date &amp; Time, Number,</strong> and <strong>Decimal</strong> questions are saved with their corresponding data types when exported to XLS. Check this option if you prefer to export them as text.<br><br><strong>Note:</strong> Excel time formats do not support timezone data; therefore, any timezone data in the response value will be removed during export. To retain this information, check the option to export dates as text values.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Include media URLs</p></td>
+<td class="text-left"><p>If your form collected media (photos, audio, videos, or files), check this option to ensure your exported file includes links to these media files.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="saving-export-settings">
+<h2>Saving export settings<a class="headerlink" href="#saving-export-settings" title="Permalink to this heading">¶</a></h2>
+<p>You can save your defined export settings for future use or to generate a <a class="reference external" href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous export</a> link for software like PowerBI or Excel.</p>
+<table>
+  <tr>
+    <td>Save selection as…</td>
+    <td>Check this option and enter a name for your export settings. When you click <strong>EXPORT</strong>, these settings will be saved and the name will appear in the <strong>Apply saved export settings</strong> box.</td>
+  </tr>
+</table>
+<p>To use saved export settings, click on the dropdown menu under <strong>Apply saved export settings</strong> and select the named export settings of your choice.</p>
+</section>
 </section>
 
 
@@ -266,7 +207,7 @@ formbuilder:</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=List of Question Types"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Advanced options for exporting data"
               class="feedback-button"
               target="_blank"
             >
@@ -295,9 +236,9 @@ formbuilder:</p>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Setting up two-factor authentication in KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Using the Formbuilder</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Getting started with the KoboToolbox Formbuilder</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">List of Question Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Text and Note question types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">“Select One” and “Select Many” question types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Acknowledge question type</a></li>
@@ -357,12 +298,18 @@ formbuilder:</p>
 <li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS Locations</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
 <li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and downloading your data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Advanced options for exporting data</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Advanced options for exporting data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#export-options-for-multiple-select-questions">Export options for multiple select questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#selecting-data-fields-for-export">Selecting data fields for export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-data-format-options">Additional data format options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#saving-export-settings">Saving export settings</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Managing repeat group data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and Unarchiving Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Sharing projects with project-level settings</a></li>
@@ -462,9 +409,9 @@ formbuilder:</p>
 
   <script>
     window.docs = {
-      currentPagename: "question_types",
-      currentTitle: "List of Question Types",
-      currentUrl: ("index.html").replace("index.html", "question_types.html"),
+      currentPagename: "advanced_export",
+      currentTitle: "Advanced options for exporting data",
+      currentUrl: ("index.html").replace("index.html", "advanced_export.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
     };

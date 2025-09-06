@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Exporting and Downloading Your Data &#8212; KoboToolbox  documentation</title>
+    <title>Exporting and downloading your data &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Managing repeat group data" href="managing_repeat_groups.html" />
+    <link rel="next" title="Advanced options for exporting data" href="advanced_export.html" />
     <link rel="prev" title="Deleting a Project" href="delete_project.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -107,165 +107,126 @@
         <section class="page__body" role="main">
           
   <section id="exporting-and-downloading-your-data">
-<h1>Exporting and Downloading Your Data<a class="headerlink" href="#exporting-and-downloading-your-data" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e21558a7adc19f5065e71c905479a71a67d66a51/source/export_download.md" class="reference">22 Sep 2022</a></p>
-<p>KoboToolbox allows you to download the data you have collected in several
-different formats. There are also a number of customizations you can make to
-your export settings.</p>
+<h1>Exporting and downloading your data<a class="headerlink" href="#exporting-and-downloading-your-data" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8a772b24abadb4e8d54f9716b798c5479432f0e6/source/export_download.md" class="reference">6 Sep 2025</a></p>
+<iframe src="https://www.youtube.com/embed/bXzwvvnhj7U" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>When using KoboToolbox, you can download your collected data in various formats and customize your export settings. This article explains how to download your collected data, including an overview of export types and available formats.</p>
+<section id="downloading-your-data">
+<h2>Downloading your data<a class="headerlink" href="#downloading-your-data" title="Permalink to this heading">¶</a></h2>
 <p>To download your data:</p>
-<ul class="simple">
-<li><p>Open your project and navigate to <strong>DATA -&gt; Downloads</strong>.</p></li>
-</ul>
-<p><img alt="Navigating to the Dowloads screen" src="_images/data_downloads.gif" /></p>
-<ul class="simple">
+<ol class="arabic simple">
+<li><p>Open your project and navigate to <strong>DATA &gt; Downloads</strong>.</p></li>
 <li><p>Choose your export settings (detailed below).</p></li>
-<li><p>Click <strong>EXPORT</strong>. This will generate an export which will be shown in a table
-below.</p></li>
+<li><p>Click <strong>EXPORT</strong>. This will generate an export which will be shown in a table underneath the export settings.</p></li>
 <li><p>Click <strong>DOWNLOAD</strong> to download the exported file.</p></li>
-</ul>
-<p><img alt="Download screen" src="_images/download.png" /></p>
+</ol>
+<p><img alt="Exporting data example" src="_images/export.png" /></p>
 <p class="note">
-  A new export can take between a few seconds and several minutes to be created
-  (depending on the number of submissions, size of the form and current load on
-  the servers) and will be shown below in the <strong>Exports</strong> section
-  of the page.
+    <strong>Note:</strong> An export can take from a few seconds to several minutes to generate, depending on the number of submissions, form size, and server load. Once created, it will appear in the <strong>Exports</strong> section of the page.
 </p>
+</section>
 <section id="export-types">
 <h2>Export types<a class="headerlink" href="#export-types" title="Permalink to this heading">¶</a></h2>
 <p>You can choose from the following export types:</p>
-<p class="note">
-  Only the XLS format supports repeat group data; each repeat group will be
-  exported as a separate sheet in the exported file. If you need to merge the
-  repeat data with the main survey data, follow the instructions
-  <a href="merging_dataset_excel_power_query.html" class="reference">here</a>.
-</p>
-<ul class="simple">
-<li><p><strong>XLS</strong> - Microsoft Excel file (XLSX format)</p></li>
-<li><p><strong>CSV</strong> - Comma Separated Values file. This file type is great for importing
-into almost any data management software, such as databases</p></li>
-<li><p><strong>GeoJSON</strong> - Open standard geospatial data interchange format best for
-integrating with GIS software, such as ArcGIS</p></li>
-<li><p><strong>SPSS Labels</strong> - Generates SPSS syntax file which will apply question labels
-and value labels to variables of KoboToolbox data imported into SPSS when run.
-Learn more about importing data into SPSS (and STATA)
-<a class="reference internal" href="converting_to_spss_and_stata.html"><span class="std std-doc">here</span></a></p></li>
-<li><p><strong>GPS Coordinates (KML)</strong> - Generates a KML file which can be used to work
-with your data in GIS software, such as Google Earth</p></li>
-<li><p><strong>Media Attachments (ZIP)</strong> - Downloads a ZIP file with all the media
-collected through the form</p></li>
-<li><p><strong>XLS (legacy)</strong> - Generates an XLSX (Microsoft Excel) file using a legacy
-interface of KoboToolbox</p></li>
-<li><p><strong>CSV (legacy)</strong> - Generates a CSV file using a legacy interface of
-KoboToolbox</p></li>
-</ul>
-<p class="note">
-  The <strong>legacy</strong> formats for XLS and CSV should only be used if
-  there are occasional issues with the standard XLS and CSV export options. The
-  legacy exports will be removed in a future update.
-</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p><strong>Export type</strong></p></th>
+<th class="text-left head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>XLS</p></td>
+<td class="text-left"><p>Microsoft Excel file (.xlsx format). This file type is recommended when collecting repeat group data.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>CSV</p></td>
+<td class="text-left"><p>Comma Separated Values file. This file type is ideal for importing into most data management software, including databases.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>GeoJSON</p></td>
+<td class="text-left"><p>This is an open standard geospatial data interchange format, best for integrating with GIS software like ArcGIS.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>SPSS Labels</p></td>
+<td class="text-left"><p>Generates an SPSS syntax file that applies question labels and value labels to variables of KoboToolbox data imported into SPSS. For more information, see <a href="https://support.kobotoolbox.org/converting_to_spss_and_stata.html">Converting Data into SPSS and/or Stata</a>.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>GPS Coordinates (KML)</p></td>
+<td class="text-left"><p>Generates a KML file for working with your data in GIS software, such as Google Earth.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Media Attachments (ZIP)</p></td>
+<td class="text-left"><p>Downloads a ZIP file containing all media collected through the form.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>XLS (legacy)</p></td>
+<td class="text-left"><p>Generates an .xlsx file (Microsoft Excel) using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>CSV (legacy)</p></td>
+<td class="text-left"><p>Generates a CSV file using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="value-and-header-format">
 <h2>Value and header format<a class="headerlink" href="#value-and-header-format" title="Permalink to this heading">¶</a></h2>
-<p>When you choose the non-legacy export formats (XLS, CSV, GeoJSON and SPSS
-Labels), you can also select the format of the data values and headers:</p>
-<ul class="simple">
-<li><p><strong>Labels (default)</strong> - The exported file will use the question labels
-(question text) as column headers and value labels for the responses (in the
-case of “Select One” and “Select Many” questions)</p></li>
-<li><p><strong>XML values and headers</strong> - The exported file will use the “Data Column
-Names” (variable names) as column headers and XML values for the responses (in
-the case of “Select One” and “Select Many” questions)</p></li>
-<li><p>Labels in any of the defined languages set within the form.</p></li>
-</ul>
+<p>When using the standard export formats (XLS, CSV, GeoJSON, and SPSS Labels), you can select the format of your data values and headers:</p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p><strong>Format</strong></p></th>
+<th class="text-left head"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Labels (default)</p></td>
+<td class="text-left"><p>The exported file uses <strong>question labels</strong> (question text) as column headers and <strong>choice labels</strong> for responses to Select One and Select Many questions.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>XML values and headers</p></td>
+<td class="text-left"><p>The exported file uses <strong>question names</strong> (Data Column Names) as column headers and <strong>choice names</strong> (XML values) for responses. This export setting is recommended for importing your data into data analysis software.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Labels in any of the defined languages</p></td>
+<td class="text-left"><p>The exported file uses <strong>question and choice labels</strong> in any of the languages set within the form.</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="advanced-options">
 <h2>Advanced options<a class="headerlink" href="#advanced-options" title="Permalink to this heading">¶</a></h2>
-<p>Aside from being able to customize the value and header format, non-legacy
-formats also allow you to customize other aspects of the exported file in the
-<strong>Advanced Options</strong> section:</p>
-<p><img alt="Download Settings" src="_images/download_settings.png" /></p>
-<ul>
-<li><p><strong>Export Select Many questions as …</strong>: This option allows you to choose how
-you want “Select Many” questions to be exported. You can choose to export them
-as:</p>
-<ul>
-<li><p><em>Single and separate columns</em>: This is the default setting that will export
-a column with all the selected options in the “Select Many” question, as
-well as separate columns for each response, as shown below.</p>
-<p><img alt="Download Settings" src="_images/select_many_options.png" /></p>
-</li>
-<li><p><em>Separate columns</em>: Each response in the “Select Many” question will be
-exported into separate columns.</p></li>
-<li><p><em>Single column</em>: Selected responses in the “Select Many” question will be
-exported into a single column.</p></li>
-</ul>
-</li>
-</ul>
-<p class="note">
-  In the separate columns, the value <code>1</code> means the option was
-  selected, while <code>0</code>
-  means the respondent did not pick the option.
-</p>
-<ul>
-<li><p><strong>Include groups in headers</strong>: Choose this option when you want the group
-names to be added to each question header, as shown in the example below.</p>
-<p><img alt="Download Settings" src="_images/group_headers.png" /></p>
-</li>
-<li><p><strong>Store date and number responses as text</strong>: By default, “Date”, “Date &amp;
-Time”, “Number” and “Decimal” questions are saved in their corresponding data
-type when exporting to XLSX format. If you instead want to export them as
-text, check this option.</p></li>
-</ul>
-<p class="note">
-  Since time formats in Excel do not support timezone data, if the
-  response value does include timezone data it will be stripped for the export.
-  If you would like to retain this data, ensure that you check the option for
-  dates to export as text values.
-</p>
-<ul class="simple">
-<li><p><strong>Include data from all … versions</strong>: By default, this option is checked. When
-selected, this option allows you to download the data from all your form
-versions. When unchecked, you will only be able to download the data from the
-latest deployed form version.</p></li>
-<li><p><strong>Include media URLs</strong>: If your form collected media such as <em>photos</em>,
-<em>audio</em>, <em>videos</em> and <em>files</em>, you can turn this option <strong>ON</strong> to ensure that
-your exported file includes links to the files in KoboToolbox.</p></li>
-<li><p><strong>Select questions to be exported</strong>: If you want to export data from only a
-few questions, you can turn this option <strong>ON</strong> and select the questions you
-want to include in the export.</p></li>
-<li><p><strong>Save selection as…</strong>: After defining your export settings, you can turn
-<strong>ON</strong> this option and enter a name for the export settings. When you click
-the <strong>EXPORT</strong> button, the export settings will be saved and the name will
-appear in the “Apply saved export settings” box. This is helpful for when you
-want to use the same settings to create another export at a later date. It is
-also useful when you are
-<a class="reference internal" href="synchronous_exports.html"><span class="std std-doc">generating a synchronous exports link</span></a> you can use to
-pull your data into software such as PowerBI or Excel.</p></li>
-</ul>
+<p>In addition to customizing value and header formats, non-legacy export formats also offer other customization options within the <strong>Advanced Options</strong> section. For more information on advanced options, see <a class="reference external" href="https://support.kobotoolbox.org/advanced_export.html">Advanced options for exporting data</a>.</p>
 </section>
-<section id="exports-stuck-in-pending-state-or-failed">
-<h2>Exports stuck in pending state or failed<a class="headerlink" href="#exports-stuck-in-pending-state-or-failed" title="Permalink to this heading">¶</a></h2>
-<p>As noted earlier, the export time can depend on the number of submissions,
-number of questions in your form and current load on the server. If you have
-exports stuck in the pending state for a long time:</p>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
+<details>
+    <summary><strong>Exports stuck in pending state or failed</strong></summary>
+<p>Export time depends on the number of submissions, form complexity, and current server load. If exports remain in a pending state for an extended period:</p>
 <ul class="simple">
-<li><p>Remove the stuck exports by clicking on the red trash can
-<i class="k-icon k-icon-trash"></i> icon for each one.</p></li>
+<li><p>Remove the stuck exports by clicking the <i class="k-icon-trash"></i> <strong>trash icon.</strong></p></li>
 <li><p>Retry the export by clicking the <strong>EXPORT</strong> button again.</p></li>
+<li><p>Avoid creating multiple exports rapidly, as this can overload the server and reduce performance for all users.</p></li>
 </ul>
 <p class="note">
-  Please do not create multiple exports in quick succession as this can put high
-  load on the server and decrease performance for the rest of the community.
+    <strong>Note:</strong> Exports will time out and show as <strong>failed</strong> after 30 minutes. This server-level limit may require you to filter the number of submissions included in the export to complete within the allowed time. An example of how to do this is discussed in the <a href="https://community.kobotoolbox.org/t/how-to-download-data-between-two-dates-from-date-to-date/25569/4">Community Forum</a>.
 </p>
-<p class="note">
-  Exports will timeout after 30 minutes and show in the list as failed. This is
-  a limit enforced at the server-level and may require that you filter the
-  number of submissions included for the export to succeed in the allowed time.
-  An example of how this can be done is discussed <a href="https://community.kobotoolbox.org/t/how-to-download-data-between-two-dates-from-date-to-date/25569/4">here</a> in the
-  forum.
-</p>
-<p>If you have still issues exporting your data, please don’t hesitate to let us
-know in the <a class="reference external" href="https://community.kobotoolbox.org/">community forum</a>.</p>
+<p>If you continue to experience issues exporting your data, please post in the <a href="https://community.kobotoolbox.org/">Community Forum</a>.</p>
+</details>
+<br>
+<details>
+    <summary><strong>Repeat group data not found</strong></summary>
+Only the <b>XLS format</b> supports repeat group data. Each repeat group will be exported <strong>as a separate sheet</strong> in the exported file. CSV downloads will only provide the main data, without repeat group data. 
+<br><br>
+For more information about exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.    
+</details>
+<br>
+<details>
+    <summary><strong>Some data not being exported</strong></summary>
+    If some of your data is not being exported, check the <a href="https://support.kobotoolbox.org/advanced_export.html">advanced options</a>. For example, ensure that data from all versions of your form are selected for export.
+</details>
+<br>
+<details>
+    <summary><strong>Downloading data from different versions</strong></summary>
+    When downloading data that includes multiple form versions, you may encounter changes in the format of your data files. 
+</details>
+<br>
+<details>
+    <summary><strong>Timezone data getting lost in export</strong></summary>
+    Excel time formats do not support timezone data. Therefore, any timezone data in the response value will be removed during XLS export. To retain this information, check the option to export dates as text values. 
+<br><br>
+For more information on this setting, see <a href="https://support.kobotoolbox.org/advanced_export.html">Advanced options for exporting data</a>.
+</details>
 </section>
 </section>
 
@@ -280,7 +241,7 @@ know in the <a class="reference external" href="https://community.kobotoolbox.or
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Exporting and Downloading Your Data"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Exporting and downloading your data"
               class="feedback-button"
               target="_blank"
             >
@@ -375,13 +336,15 @@ know in the <a class="reference external" href="https://community.kobotoolbox.or
 <li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
 <li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Exporting and Downloading Your Data</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exporting and downloading your data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-your-data">Downloading your data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#export-types">Export types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#value-and-header-format">Value and header format</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#advanced-options">Advanced options</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exports-stuck-in-pending-state-or-failed">Exports stuck in pending state or failed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Advanced options for exporting data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Managing repeat group data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and Unarchiving Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Sharing projects with project-level settings</a></li>
@@ -482,7 +445,7 @@ know in the <a class="reference external" href="https://community.kobotoolbox.or
   <script>
     window.docs = {
       currentPagename: "export_download",
-      currentTitle: "Exporting and Downloading Your Data",
+      currentTitle: "Exporting and downloading your data",
       currentUrl: ("index.html").replace("index.html", "export_download.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
