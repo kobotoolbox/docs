@@ -13,9 +13,9 @@ The **Export Select Many questions as…** option allows you to choose how to ex
 
 | **Export option**    | **Description**                                |
 | :----------------- | :------------------------------------ |
-| Single and separate columns &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;              | This default setting exports one column with all selected options from <strong>Select Many</strong> questions, plus individual columns for each response, as shown below.<br> ![How to select many columns](images/advanced_export/select_many_columns.png)  |
-| Separate columns &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;     | Each response to <strong>Select Many</strong> questions will be exported into separate columns.                                  |
-| Single column  &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;         | Responses to <strong>Select Many</strong> questions will be exported into a single column.            |
+| Single and separate columns &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;              | This default setting exports one column with all selected options from <strong>Select Many</strong> questions, plus individual columns for each response, as shown below.<br> ![How to select many columns](images/advanced_export/select_many_columns.png) |
+| Separate columns  | Each response to <strong>Select Many</strong> questions will be exported into separate columns.|
+| Single column   | Responses to <strong>Select Many</strong> questions will be exported into a single column.            |
 
 
 <p class="note">
@@ -29,8 +29,8 @@ Advanced export options allow you to refine your data download by including data
 | **Export setting**    | **Description**                                |
 | :----------------- | :------------------------------------ |
 | Include data from all […] versions &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | By default, this option is checked. This allows you to download data from all form versions, including deleted questions or choices. If unchecked, only data from the latest deployed form version will be downloaded. |
-| Select questions to be exported &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | To export data from specific questions, enable this option and select the questions to include. |
-| Data range &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| To export data submitted within a specific date range, enable this option and select the start and/or end dates. Date filters are based on submission time and use the UTC time zone. Date submitted on the <strong>start</strong> and <strong>end</strong> dates are included in the exports. |
+| Select questions to be exported | To export data from specific questions, enable this option and select the questions to include. |
+| Data range | To export data submitted within a specific date range, enable this option and select the start and/or end dates. Date filters are based on submission time and use the UTC time zone. Date submitted on the <strong>start</strong> and <strong>end</strong> dates are included in the exports. |
 
 ![How to select data fields](images/advanced_export/select_data_fields.png)
 
@@ -40,9 +40,9 @@ KoboToolbox offers additional data format options to further customize your expo
 
 | **Export setting**    | **Description**                                |
 | :----------------- | :------------------------------------ |
-| Include groups in headers &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | Choose this option to add group names to each question header, as shown in the example below. ![Include groups in headers](images/advanced_export/group_headers2.png) | 
+| Include groups in headers | Choose this option to add group names to each question header, as shown in the example below. ![Include groups in headers](images/advanced_export/group_headers2.png) | 
 | Store date and number responses as text &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | By default, <strong>Date, Date & Time, Number,</strong> and <strong>Decimal</strong> questions are saved with their corresponding data types when exported to XLS. Check this option if you prefer to export them as text.<br><br><strong>Note:</strong> Excel time formats do not support timezone data; therefore, any timezone data in the response value will be removed during export. To retain this information, check the option to export dates as text values. |
-| Include media URLs &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | If your form collected media (photos, audio, videos, or files), check this option to ensure your exported file includes links to these media files. |
+| Include media URLs | If your form collected media (photos, audio, videos, or files), check this option to ensure your exported file includes links to these media files. |
 
 ## Saving export settings
 
