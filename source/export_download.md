@@ -55,7 +55,7 @@ In addition to customizing value and header formats, non-legacy export formats a
     <summary><strong>Exports stuck in pending state or failed</strong></summary>
     
 Export time depends on the number of submissions, form complexity, and current server load. If exports remain in a pending state for an extended period:
-- Remove the stuck exports by clicking the <i class="k-icon-trash"></i> red trash can icon.
+- Remove the stuck exports by clicking the <i class="k-icon-trash"></i> <strong>trash icon.</strong>
 - Retry the export by clicking the <strong>EXPORT</strong> button again.
 - Avoid creating multiple exports rapidly, as this can overload the server and reduce performance for all users.
 
@@ -70,7 +70,8 @@ If you continue to experience issues exporting your data, please post in the <a 
 
 <details>
     <summary><strong>Repeat group data not found</strong></summary>
-Only the XLS format supports repeat group data. Each repeat group will be exported <strong>as a separate sheet</strong> in the exported file. CSV downloads will only provide the main data, without repeat group data. 
+Only the <b>XLS format</b> supports repeat group data. Each repeat group will be exported <strong>as a separate sheet</strong> in the exported file. CSV downloads will only provide the main data, without repeat group data. 
+<br><br>
 For more information about exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.    
 </details>
 
@@ -93,7 +94,6 @@ For more information about exporting and using repeat group data, see <a href="h
 <details>
     <summary><strong>Timezone data getting lost in export</strong></summary>
     Excel time formats do not support timezone data. Therefore, any timezone data in the response value will be removed during XLS export. To retain this information, check the option to export dates as text values. 
-
-
+<br><br>
 For more information on this setting, see <a href="https://support.kobotoolbox.org/advanced_export.html">Advanced options for exporting data</a>.
 </details>
