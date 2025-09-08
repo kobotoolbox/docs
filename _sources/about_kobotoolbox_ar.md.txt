@@ -1,5 +1,5 @@
 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/09330e47a06123bb86e294094c2695f4af6e23af/source/about_kobotoolbox_ar.md" class="reference">5 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b28bdae7a7023634b687654a351a3cc8cd440ad7/source/about_kobotoolbox_ar.md" class="reference">8 Sep 2025</a>
 
 <section dir="rtl">
 
@@ -9,7 +9,7 @@
 
 [Read in English](about_kobotoolbox.md) | [Lire en français](about_kobotoolbox_fr.md) | [Leer en español](about_kobotoolbox_es.md) 
 
-<iframe src="https://www.youtube.com/embed/oKtMmBAlHho?si=OqS7-rewYMf-Rrw2" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/oKtMmBAlHho?si=OqS7-rewYMf-Rrw2&cc_load_policy=1&cc_lang_pref=ar&hl=ar" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <section dir="rtl">
 
