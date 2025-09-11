@@ -32,9 +32,9 @@ recommend using the webform [for collecting data](data_through_webforms.md).
 | Advanced map appearance options (`streets`, `terrain`, `satellite`, `[other]`) | Yes                                         | No                                                     |
 | Text formatting in notes and labels (bold, italics, links)                     | Yes                                         | No                                                     |
 | Combine subsequent notes into a single note on the screen                      | Yes                                         | No                                                     |
-| `multiline` appearance for `text` questions                                    | Yes                                         | No                                                     |
+| `multiline` appearance for `text` questions                                    | Yes                                         | Yes                                                     |
 | `horizontal-compact` appearance for select-type questions                      | Yes                                         | No                                                     |
-| `likert` scale appearance for select-type questions                            | Yes                                         | No                                                     |
+| `likert` scale appearance for select-type questions                            | Yes                                         | Yes                                                     |
 | `compact-2` appearance for select-type questions                               | No                                          | Yes                                                    |
 | `no-calendar` appearance                                                       | No                                          | Yes                                                    |
 | Advanced image appearances (`annotate`, `draw`, `signature`)                   | Yes                                         | Yes                                                    |
