@@ -1,67 +1,88 @@
-# Using the API
+# Getting started with the API
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c1ec1ffac3e8a3484605d65c6e3926546c806170/source/api.md" class="reference">21 Sep 2023</a>
 
-KoboToolbox has a number of advanced features built in based on our open source
-libraries, which include useful add-ons for advanced use cases. There are many
-ways to use our API. For some hands-on examples,
-[see this post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
+An **Application Programming Interface (API)** allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.
 
-KoboToolbox has two APIs for its primary tools, kpi and kc. Originally kc was
-the only api for deploying forms and retrieving data. Now, kpi is the primary
-API that should be used.
+With the KoboToolbox **API**, you can:
 
-The base URL depends on the server you are using: for most users it is
-[kf.kobotoolbox.org](https://kf.kobotoolbox.org) or
-[eu.kobotoolbox.org](https://eu.kobotoolbox.org). Below
-we only use [kpi-url] to refer to this base URL.
+- **Download data** automatically in JSON, CSV, or XLSX.
+- **Generate exports on demand** for dashboards, backups, or analytics.
+- **Submit or edit records** from other data collection tools.
+- **Create or deploy projects** and clone existing ones through code.
+- **Manage users**, permissions, and project activity at scale.
 
-## Getting your API Token:
+Using the KoboToolbox API allows you to automate routine tasks, keep dashboards current, and integrate KoboToolbox with other systems, while reducing manual steps and errors. This article provides an introduction to the KoboToolbox API and covers the following steps:
 
-There are different ways to get your API Token.
+- Retrieving your **server URL**
+- Retrieving your **API Key**
+- Retrieving the project asset UID
+- Exporting your data using the API
+- Advanced API documentation
+
+## Retrieving your server URL
+The **server URL** is the base web address of your KoboToolbox server. It is placed at the start of every API request.
+
+For most users, the server URL is [kf.kobotoolbox.org](https://kf.kobotoolbox.org/) (if you are using the Global server) or [eu.kobotoolbox.org](https://eu.kobotoolbox.org/) (if you are using the European Union server). 
+
+![Retrieve server URL](images/api/server_URL.png) 
+
+## Retrieving your API Key
+Your **API Key** is a personal token that acts like a password, allowing software to access your account through the API. It may be required when a script, dashboard, or external application needs authentication in order to retrieve or send project data through the API. 
+
+There are different ways to get your **API Key**.
 
 **Method 1:**
 
-To find your API token go to
-[https://[kpi-url]/token/?format=json](https://[kpi-url]/token/?format=json)
-
-![image](/images/api/token.png)
-
+1. Click your profile icon in the top right corner.
+2. Select **ACCOUNT SETTINGS**.
+3. Go to the **Security** tab.
+4. Your API Key is hidden by default. Click **Display** to view it.
+   
 **Method 2:**
 
--   Select ACCOUNT SETTINGS (from where you normally log out) as shown in the
-    image below:
-
-    ![image](/images/api/token1.png)
-
--   Then press the eye like button to view your Token as shown in the image
-    below:
-
-    ![image](/images/api/token2.png)
+Navigate to **https://[server-url]/token/?format=json**. Make sure to replace [server-url] with your server URL.
 
 **Method 3:**
 
-You could use the following curl command:
+Use the following curl command:
 
-`curl -u username:password "https:/[kpi-url]/token/?format=json"`
+`curl -u username:password "https:/[server-url]/token/?format=json"`
 
-## Testing your API:
+Make sure to replace [server-url] with your server URL.
 
-To test it use this command:
+## Retrieving your project asset UID
 
-`curl -X GET https://[kpi-url]/api/v2/assets.json -H "Authorization: Token [your_token_goes_here]"`
+The **project asset UID** is a unique code that identifies a specific KoboToolbox project and must be included in API calls to target that project. 
 
-You can also use tools like Postman to build and test your API snippets:
+You can find the **project asset UID** in the URL of your project summary page. It is the string of letters and numbers that appears after “forms/” in the URL, as such: https://[server-url]/#/forms/**[project asset UID]**/summary.
 
-![image](/images/api/test.png)
+![Retrieving project asset UID](images/api/project_UID.png)
 
-For more details on using the API follow these endpoints (selection only):
+## Exporting your data using the API
 
-[https://[kpi-url]/api/v2/assets/](https://[kpi-url]/api/v2/assets/) (list of
-all assets, including forms/projects, questions, blocks, templates, collections;
-for each asset there are several additional sub-endpoints)
-[https://[kpi-url]/api/v2/assets/{asset_uid}/data/](https://[kpi-url]/api/v2/assets/{asset_uid}/data/)
-(access submitted data) [https://[kpi-url]/exports/](https://[kpi-url]/exports/)
-(create or view data exports)
+There are two main approaches to connecting your data using the API with KoboToolbox:
 
-You can find more examples
-[in this forum post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
+- **Synchronous exports:** Returns a ready-made CSV or XLSX file, based on predefined export settings, that external applications (e.g., Power BI or Excel) can load directly.
+- **JSON endpoint:** Sends each record as a raw JSON file. This is best for code-based pipelines, not for direct use in spreadsheet or dashboard tools.
+  
+Each approach requires knowing the server URL and project asset UID to build a custom export URL. Depending on the application, your API Key may be needed for authentication. 
+
+<p class="note">
+    For more information about synchronous exports, see <a href="https://support.kobotoolbox.org/synchronous_exports.html">Connecting to your data using synchronous exports</ahref</a>. 
+
+To learn more about connecting your data to Power BI to create custom dashboards, see <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a>. 
+
+To learn more about connecting your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
+</p>
+
+## Advanced documentation
+
+The API documentation at `https://[server-url]/api/v2/docs/` provides an interactive interface for API endpoints. This page lists all endpoints, shows allowed query parameters, includes a search bar, displays example responses, shows example error responses, and allows direct testing of requests in your browser. Use this documentation for verifying authentication, discovering functions, and copying exact URLs into custom scripts.
+
+You can also download the API documentation schema in XML format at `https://[server-url]/api/v2/schema/`.
+
+<p class="note">
+    <strong>Note:</strong> V1 endpoints are now deprecated and scheduled for decommissioning in January 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
+</p>
+
+For more examples of using the API, see this [Community Forum post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
