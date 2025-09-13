@@ -5,7 +5,8 @@
 
 KoboToolbox’s natural language processing tools help you collect, manage, and analyze qualitative data more effectively. These tools include automatic speech-to-text transcription and machine translation, with automated qualitative analysis coming soon. The original transcript for your audio files and all translated text are added as new data columns in the data table and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data.
 
-To use these features, first [collect audio responses](https://support.kobotoolbox.org/photo_audio_video_file.html) in your form using the **Audio** question type. These features currently work only on audio responses, not on background audio recordings.
+To use these features, first collect audio responses in your form using the [Audio question type](https://support.kobotoolbox.org/photo_audio_video_file.html) or [background audio recordings](https://support.kobotoolbox.org/recording-interviews.html).
+
 
 <p class="note">
     <strong>Note</strong>: Automatic transcription and translation may not be available for <a href="#language-list">all languages</a>. For these languages, only manual transcription and translation are possible.
