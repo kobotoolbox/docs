@@ -1,7 +1,7 @@
 ﻿# Using the API for synchronous exports
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8e6497830b2862f5a1406862412c519112932ea6/source/synchronous_exports.md" class="reference">13 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a4e0388d846fe94926c32f6dacb82b6e34c7f102/source/synchronous_exports.md" class="reference">13 Sep 2025</a>
 
-<iframe src="https://www.youtube.com/embed/1cG79ol5dSg?si=rhVd2qOND6cQtYbX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 KoboToolbox offers two primary methods for accessing your data: asynchronous and synchronous exports. The standard asynchronous method involves [manually downloading data files](https://support.kobotoolbox.org/export_download.html) containing all submissions up to the time of download. In contrast, synchronous exports enable automatic integration of your KoboToolbox data with external applications such as Microsoft Power BI, Excel, or Google Sheets.
 
