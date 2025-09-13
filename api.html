@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Using the API &#8212; KoboToolbox  documentation</title>
+    <title>Getting started with the API &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -27,7 +27,7 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Connecting to your data using synchronous exports" href="synchronous_exports.html" />
+    <link rel="next" title="Using the API for synchronous exports" href="synchronous_exports.html" />
     <link rel="prev" title="Converting Data into SPSS and/or Stata" href="converting_to_spss_and_stata.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
@@ -106,57 +106,80 @@
 
         <section class="page__body" role="main">
           
-  <section id="using-the-api">
-<h1>Using the API<a class="headerlink" href="#using-the-api" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c1ec1ffac3e8a3484605d65c6e3926546c806170/source/api.md" class="reference">21 Sep 2023</a></p>
-<p>KoboToolbox has a number of advanced features built in based on our open source
-libraries, which include useful add-ons for advanced use cases. There are many
-ways to use our API. For some hands-on examples,
-<a class="reference external" href="https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742">see this post</a>.</p>
-<p>KoboToolbox has two APIs for its primary tools, kpi and kc. Originally kc was
-the only api for deploying forms and retrieving data. Now, kpi is the primary
-API that should be used.</p>
-<p>The base URL depends on the server you are using: for most users it is
-<a class="reference external" href="https://kf.kobotoolbox.org">kf.kobotoolbox.org</a> or
-<a class="reference external" href="https://eu.kobotoolbox.org">eu.kobotoolbox.org</a>. Below
-we only use [kpi-url] to refer to this base URL.</p>
-<section id="getting-your-api-token">
-<h2>Getting your API Token:<a class="headerlink" href="#getting-your-api-token" title="Permalink to this heading">¶</a></h2>
-<p>There are different ways to get your API Token.</p>
-<p><strong>Method 1:</strong></p>
-<p>To find your API token go to
-<a class="reference external" href="https://kpi-url/token/?format=json">https://[kpi-url]/token/?format=json</a></p>
-<p><img alt="image" src="_images/token.png" /></p>
-<p><strong>Method 2:</strong></p>
-<ul>
-<li><p>Select ACCOUNT SETTINGS (from where you normally log out) as shown in the
-image below:</p>
-<p><img alt="image" src="_images/token1.png" /></p>
-</li>
-<li><p>Then press the eye like button to view your Token as shown in the image
-below:</p>
-<p><img alt="image" src="_images/token2.png" /></p>
-</li>
+  <section id="getting-started-with-the-api">
+<h1>Getting started with the API<a class="headerlink" href="#getting-started-with-the-api" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8e6497830b2862f5a1406862412c519112932ea6/source/api.md" class="reference">13 Sep 2025</a></p>
+<p>An <strong>Application Programming Interface (API)</strong> allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.</p>
+<p>With the KoboToolbox <strong>API</strong>, you can:</p>
+<ul class="simple">
+<li><p><strong>Download data</strong> automatically in JSON, CSV, or XLSX.</p></li>
+<li><p><strong>Generate exports on demand</strong> for dashboards, backups, or analytics.</p></li>
+<li><p><strong>Submit or edit records</strong> from other data collection tools.</p></li>
+<li><p><strong>Create or deploy projects</strong> and clone existing ones through code.</p></li>
+<li><p><strong>Manage users</strong>, permissions, and project activity at scale.</p></li>
 </ul>
-<p><strong>Method 3:</strong></p>
-<p>You could use the following curl command:</p>
-<p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-u</span> <span class="pre">username:password</span> <span class="pre">&quot;https:/[kpi-url]/token/?format=json&quot;</span></code></p>
+<p>Using the KoboToolbox API allows you to automate routine tasks, keep dashboards current, and integrate KoboToolbox with other systems, while reducing manual steps and errors. This article provides an introduction to the KoboToolbox API and covers the following steps:</p>
+<ul class="simple">
+<li><p>Retrieving your <strong>server URL</strong></p></li>
+<li><p>Retrieving your <strong>API Key</strong></p></li>
+<li><p>Retrieving the project asset UID</p></li>
+<li><p>Exporting your data using the API</p></li>
+<li><p>Advanced API documentation</p></li>
+</ul>
+<section id="retrieving-your-server-url">
+<h2>Retrieving your server URL<a class="headerlink" href="#retrieving-your-server-url" title="Permalink to this heading">¶</a></h2>
+<p>The <strong>server URL</strong> is the base web address of your KoboToolbox server. It is placed at the start of every API request.</p>
+<p>For most users, the server URL is <a class="reference external" href="https://kf.kobotoolbox.org/">kf.kobotoolbox.org</a> (if you are using the Global server) or <a class="reference external" href="https://eu.kobotoolbox.org/">eu.kobotoolbox.org</a> (if you are using the European Union server).</p>
+<p><img alt="Retrieve server URL" src="_images/server_URL.png" /></p>
 </section>
-<section id="testing-your-api">
-<h2>Testing your API:<a class="headerlink" href="#testing-your-api" title="Permalink to this heading">¶</a></h2>
-<p>To test it use this command:</p>
-<p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-X</span> <span class="pre">GET</span> <span class="pre">https://[kpi-url]/api/v2/assets.json</span> <span class="pre">-H</span> <span class="pre">&quot;Authorization:</span> <span class="pre">Token</span> <span class="pre">[your_token_goes_here]&quot;</span></code></p>
-<p>You can also use tools like Postman to build and test your API snippets:</p>
-<p><img alt="image" src="_images/test.png" /></p>
-<p>For more details on using the API follow these endpoints (selection only):</p>
-<p><a class="reference external" href="https://kpi-url/api/v2/assets/">https://[kpi-url]/api/v2/assets/</a> (list of
-all assets, including forms/projects, questions, blocks, templates, collections;
-for each asset there are several additional sub-endpoints)
-<a class="reference external" href="https://kpi-url/api/v2/assets/%7Basset_uid%7D/data/">https://[kpi-url]/api/v2/assets/{asset_uid}/data/</a>
-(access submitted data) <a class="reference external" href="https://kpi-url/exports/">https://[kpi-url]/exports/</a>
-(create or view data exports)</p>
-<p>You can find more examples
-<a class="reference external" href="https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742">in this forum post</a>.</p>
+<section id="retrieving-your-api-key">
+<h2>Retrieving your API Key<a class="headerlink" href="#retrieving-your-api-key" title="Permalink to this heading">¶</a></h2>
+<p>Your <strong>API Key</strong> is a personal token that acts like a password, allowing software to access your account through the API. It may be required when a script, dashboard, or external application needs authentication in order to retrieve or send project data through the API.</p>
+<p>There are different ways to get your <strong>API Key</strong>.</p>
+<p><strong>Method 1:</strong></p>
+<ol class="arabic simple">
+<li><p>Click your profile icon in the top right corner.</p></li>
+<li><p>Select <strong>ACCOUNT SETTINGS</strong>.</p></li>
+<li><p>Go to the <strong>Security</strong> tab.</p></li>
+<li><p>Your API Key is hidden by default. Click <strong>Display</strong> to view it.</p></li>
+</ol>
+<p><strong>Method 2:</strong></p>
+<p>In your web browser, navigate to <code class="docutils literal notranslate"><span class="pre">https://[server-url]/token/?format=json</span></code>. Make sure to replace <code class="docutils literal notranslate"><span class="pre">[server-url]</span></code> with your server URL.</p>
+<p><strong>Method 3:</strong></p>
+<p>In the terminal, use the following curl command:</p>
+<p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-u</span> <span class="pre">username:password</span> <span class="pre">&quot;https:/[server-url]/token/?format=json&quot;</span></code></p>
+<p>Make sure to replace <code class="docutils literal notranslate"><span class="pre">[server-url]</span></code> with your server URL.</p>
+</section>
+<section id="retrieving-your-project-asset-uid">
+<h2>Retrieving your project asset UID<a class="headerlink" href="#retrieving-your-project-asset-uid" title="Permalink to this heading">¶</a></h2>
+<p>The <strong>project asset UID</strong> is a unique code that identifies a specific KoboToolbox project and must be included in API calls to target that project.</p>
+<p>You can find the <strong>project asset UID</strong> in the URL of your project summary page. It is the string of letters and numbers that appears after “forms/” in the URL, as such: <code class="docutils literal notranslate"><span class="pre">https://[server-url]/#/forms/[project</span> <span class="pre">asset</span> <span class="pre">UID]/summary</span></code>.</p>
+<p><img alt="Retrieving project asset UID" src="_images/project_UID.png" /></p>
+</section>
+<section id="exporting-your-data-using-the-api">
+<h2>Exporting your data using the API<a class="headerlink" href="#exporting-your-data-using-the-api" title="Permalink to this heading">¶</a></h2>
+<p>There are two main approaches to connecting your data using the API with KoboToolbox:</p>
+<ul class="simple">
+<li><p><strong>Synchronous exports:</strong> Returns a ready-made CSV or XLSX file, based on predefined export settings, that external applications (e.g., Power BI or Excel) can load directly.</p></li>
+<li><p><strong>JSON endpoint:</strong> Sends each record as a raw JSON file. This is best for code-based pipelines, not for direct use in spreadsheet or dashboard tools.</p></li>
+</ul>
+<p>Each approach requires knowing the server URL and project asset UID to build a custom export URL. Depending on the application, your API Key may be needed for authentication.</p>
+<p class="note">
+    For more information about synchronous exports, see <a href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>. 
+<br><br>
+To learn more about connecting your data to Power BI to create custom dashboards, see <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a>. 
+<br><br>
+To learn more about connecting your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
+</p>
+</section>
+<section id="advanced-documentation">
+<h2>Advanced documentation<a class="headerlink" href="#advanced-documentation" title="Permalink to this heading">¶</a></h2>
+<p>The API documentation at <code class="docutils literal notranslate"><span class="pre">https://[server-url]/api/v2/docs/</span></code> provides an interactive interface for API endpoints. This page lists all endpoints, shows allowed query parameters, includes a search bar, displays example responses, shows example error responses, and allows direct testing of requests in your browser. Use this documentation for verifying authentication, discovering functions, and copying exact URLs into custom scripts.</p>
+<p>You can also download the API documentation schema in XML format at <code class="docutils literal notranslate"><span class="pre">https://[server-url]/api/v2/schema/</span></code>.</p>
+<p class="note">
+    <strong>Note:</strong> V1 endpoints are now deprecated and scheduled for decommissioning in January 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
+</p>
+<p>For more examples of using the API, see this <a class="reference external" href="https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742">Community Forum post</a>.</p>
 </section>
 </section>
 
@@ -171,7 +194,7 @@ for each asset there are several additional sub-endpoints)
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Using the API"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Getting started with the API"
               class="feedback-button"
               target="_blank"
             >
@@ -290,12 +313,15 @@ for each asset there are several additional sub-endpoints)
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Using the API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#getting-your-api-token">Getting your API Token:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#testing-your-api">Testing your API:</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started with the API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#retrieving-your-server-url">Retrieving your server URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#retrieving-your-api-key">Retrieving your API Key</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#retrieving-your-project-asset-uid">Retrieving your project asset UID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exporting-your-data-using-the-api">Exporting your data using the API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-documentation">Advanced documentation</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Connecting to your data using synchronous exports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Using the API for synchronous exports</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Merging Individual Data with Roster Data through Power Query in Excel</a></li>
@@ -372,7 +398,7 @@ for each asset there are several additional sub-endpoints)
   <script>
     window.docs = {
       currentPagename: "api",
-      currentTitle: "Using the API",
+      currentTitle: "Getting started with the API",
       currentUrl: ("index.html").replace("index.html", "api.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
