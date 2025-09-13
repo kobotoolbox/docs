@@ -1,5 +1,5 @@
 ﻿# Using the API for synchronous exports
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4ce917e7129aa1b10f161eafcc56b64943e660c2/source/synchronous_exports.md" class="reference">11 Sep 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8e6497830b2862f5a1406862412c519112932ea6/source/synchronous_exports.md" class="reference">13 Sep 2025</a>
 
 <iframe src="https://www.youtube.com/embed/1cG79ol5dSg?si=rhVd2qOND6cQtYbX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
