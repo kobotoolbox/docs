@@ -11,12 +11,11 @@ With synchronous exports, your data updates automatically as new submissions are
     <strong>Note:</strong> This article focuses on synchronous exports, which is one of two primary ways to use the KoboToolbox API. The other is the JSON API, designed for custom scripts and real-time automations, delivering raw, record-by-record JSON data. Unlike synchronous exports, the JSON API does not include advanced export features such as question labels or support for multiple languages.
 </p>
 
-This article covers the following content:
+This article covers the following steps:
 
-- [Generating a named export](#generating-a-named-export)
-- [Retrieving the synchronous export link](#retrieving-the-synchronous-export-link)
-- [Connecting your data to an external application & authentication](#connecting-your-data-to-an-external-application)
-- [Limitations](#limitations)
+- Generating a named export
+- Retrieving the synchronous export link
+- Connecting your data to an external application & authentication
   
 ## Generating a named export
 
@@ -32,8 +31,8 @@ To generate synchronous exports, you must first create a named export for your p
 
 To retrieve the synchronous export link, you will need the following:
 
-- **Project** asset UID: A unique ID for each KoboToolbox project, found in the project's URL.
-- **Server URL**: The URL of the server you are using (`kf.kobotoolbox.org` for the Global Server,  `eu.kobotoolbox.org` for the European Union Server, or `[your organization].kobotoolbox.org` for private servers)
+- **Project asset UID:** A unique ID for each KoboToolbox project, found in the project's URL.
+- **Server URL:** The URL of the server you are using (`kf.kobotoolbox.org` for the Global Server,  `eu.kobotoolbox.org` for the European Union Server, or `[your organization].kobotoolbox.org` for private servers).
 
 <p class="note">
     For more information about retrieving the server URL and project asset UID, see <a href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
@@ -42,7 +41,7 @@ To retrieve the synchronous export link, you will need the following:
 To retrieve the export link, follow these steps:
 
 1. Open a new browser tab.
-2. Replace your **server URL** and **project asset UID** in the following URL: `https://[server_url]/api/v2/assets/{asset_uid}/export-settings/`
+2. Replace your **server URL** and **project asset UID** in the following URL: `https://[server_url]/api/v2/assets/[project_asset_uid]/export-settings/`.
 3. Open the webpage corresponding to the modified URL.
 4. Scroll to the **CURRENT ENDPOINT** section.
 5. Find the export setting that matches the named export you created in the first step.
@@ -52,7 +51,7 @@ To retrieve the export link, follow these steps:
 ![Retrieving synchronous export link](images/synchronous_exports/export_link.png)
 
 <p class="note">
-    <strong>Note:</strong> Repeat groups are exported as separate sheets in Excel files and are not included in CSV exports. If your project contains repeat groups, use the `data_url_xlsx` link.
+    <strong>Note:</strong> Repeat groups are exported as separate sheets in Excel files and are not included in CSV exports. If your project contains repeat groups, use the <code>data_url_xlsx</code> link.
 </p>
 
 ## Connecting your data to an external application
@@ -60,11 +59,9 @@ To retrieve the export link, follow these steps:
 After retrieving the synchronous export link, you can connect your data to your preferred external application. The method for integrating the synchronous export link will vary by application.
 
 <p class="note">
-    To learn about connecting your data to Power BI to create custom dashboards, see <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a>. 
-</p>
-
-<p class="note">
-    To learn about connecting your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
+    To learn how to connect your data to Power BI to create custom dashboards, see <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a>. 
+    <br><br>
+    To learn how to connect your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
 </p>
 
 ### Authentication
@@ -74,7 +71,7 @@ Many external applications can connect to your KoboToolbox data. However, not al
 To connect your project without authentication (e.g., to Google Sheets), you will need to ensure the "Anyone can view submissions made to this form" setting is checked in **SETTINGS > Sharing**.
 
 <p class="note">
-    For more information about project sharing, see <a href="https://support.kobotoolbox.org/managing_permissions.html">Sharing projects with project-level settings</a>.
+    For more information about project sharing, see <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Sharing projects with project-level settings</a>.
 </p>
 
 For projects with sensitive or private data, the "Anyone can view submissions made to this form" option should remain unchecked. In these cases, consider using only applications that support authenticated requests.
