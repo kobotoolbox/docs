@@ -40,21 +40,21 @@ There are different ways to get your **API Key**.
    
 **Method 2:**
 
-Navigate to **https://[server-url]/token/?format=json**. Make sure to replace [server-url] with your server URL.
+In your web browser, navigate to `https://[server-url]/token/?format=json`. Make sure to replace `[server-url]` with your server URL.
 
 **Method 3:**
 
-Use the following curl command:
+In the terminal, use the following curl command:
 
 `curl -u username:password "https:/[server-url]/token/?format=json"`
 
-Make sure to replace [server-url] with your server URL.
+Make sure to replace `[server-url]` with your server URL.
 
 ## Retrieving your project asset UID
 
 The **project asset UID** is a unique code that identifies a specific KoboToolbox project and must be included in API calls to target that project. 
 
-You can find the **project asset UID** in the URL of your project summary page. It is the string of letters and numbers that appears after “forms/” in the URL, as such: https://[server-url]/#/forms/**[project asset UID]**/summary.
+You can find the **project asset UID** in the URL of your project summary page. It is the string of letters and numbers that appears after “forms/” in the URL, as such: `https://[server-url]/#/forms/[project asset UID]/summary`.
 
 ![Retrieving project asset UID](images/api/project_UID.png)
 
@@ -69,9 +69,9 @@ Each approach requires knowing the server URL and project asset UID to build a c
 
 <p class="note">
     For more information about synchronous exports, see <a href="https://support.kobotoolbox.org/synchronous_exports.html">Connecting to your data using synchronous exports</ahref</a>. 
-
+<br>
 To learn more about connecting your data to Power BI to create custom dashboards, see <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a>. 
-
+<br>
 To learn more about connecting your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
 </p>
 
