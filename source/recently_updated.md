@@ -1,7 +1,7 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
-1. [Getting started with the API](api.md) (13 Sep 2025)
+1. [Getting started with the API](api.md) (15 Sep 2025)
 1. [﻿Using the API for synchronous exports](synchronous_exports.md) (13 Sep 2025)
 1. [Transcription and translation of audio responses](transcription-translation.md) (13 Sep 2025)
 1. [Overview on Data Collection Tools](data-collection-tools.md) (11 Sep 2025)
