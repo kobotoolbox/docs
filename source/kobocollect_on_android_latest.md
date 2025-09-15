@@ -42,7 +42,7 @@ Your KoboCollect URL depends on your account’s server:
 
 You can also find the KoboCollect URL on the KoboToolbox platform. Go to the **FORM** tab of your project and select **Android application** from the **Collect data** drop-down menu. The KoboCollect URL will be listed in step 3.
 
-![Select Android app in browser](images/kobocollect_android_latest/select_android_app_in_browser.png)
+![Select Android app in browser](images/kobocollect_on_android_latest/select_android_app_in_browser.png)
 
 Once you have identified your KoboCollect URL, follow these steps to set up the server connection:
 
