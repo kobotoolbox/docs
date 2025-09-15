@@ -1,5 +1,5 @@
 # Getting started with the API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8e6497830b2862f5a1406862412c519112932ea6/source/api.md" class="reference">13 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/24c740499cf305ed0e9bece1dde237b9b23a05c0/source/api.md" class="reference">15 Sep 2025</a>
 
 An **Application Programming Interface (API)** allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.
 
@@ -17,7 +17,10 @@ Using the KoboToolbox API allows you to automate routine tasks, keep dashboards 
 - Retrieving your **API Key**
 - Retrieving the project asset UID
 - Exporting your data using the API
-- Advanced API documentation
+
+<p class="note">
+    <strong>Note:</strong> V1 endpoints are now deprecated and scheduled for decommissioning in January 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
+</p>
 
 ## Retrieving your server URL
 The **server URL** is the base web address of your KoboToolbox server. It is placed at the start of every API request.
@@ -74,15 +77,3 @@ To learn more about connecting your data to Power BI to create custom dashboards
 <br><br>
 To learn more about connecting your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
 </p>
-
-## Advanced documentation
-
-The API documentation at `https://[server-url]/api/v2/docs/` provides an interactive interface for API endpoints. This page lists all endpoints, shows allowed query parameters, includes a search bar, displays example responses, shows example error responses, and allows direct testing of requests in your browser. Use this documentation for verifying authentication, discovering functions, and copying exact URLs into custom scripts.
-
-You can also download the API documentation schema in XML format at `https://[server-url]/api/v2/schema/`.
-
-<p class="note">
-    <strong>Note:</strong> V1 endpoints are now deprecated and scheduled for decommissioning in January 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
-</p>
-
-For more examples of using the API, see this [Community Forum post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
