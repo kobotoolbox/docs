@@ -94,6 +94,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   data_through_webforms
   data-offline
   kobocollect_on_android_latest
+  data_collection_kobocollect
   kobocollect_settings
   transferring_forms
   devices_for_data_collection
