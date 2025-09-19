@@ -54,7 +54,7 @@ Once you have identified your KoboCollect URL, follow these steps to set up the 
 
 ### Setting up KoboCollect with a QR code
 
-Using a QR code efficiently configures KoboCollect on multiple devices with the **same server settings** (KoboCollect URL, username, password, and <a href="https://support.kobotoolbox.org/kobocollect_settings.html">project configuration settings</a>. This can be useful to avoid repeating manual steps or to configure enumerator devices without sharing account passwords.
+Using a QR code efficiently configures KoboCollect on multiple devices with the **same server settings** (KoboCollect URL, username, password, and <a href="https://support.kobotoolbox.org/kobocollect_settings.html">project configuration settings</a>). This can be useful to avoid repeating manual steps or to configure enumerator devices without sharing account passwords.
 
 <p class="note">
     <strong>Note:</strong> In order to use the QR code method, you must first manually configure one device and then copy the generated QR code to the other devices. 
@@ -96,7 +96,7 @@ To set up additional projects in KoboCollect:
 Additional projects can be added by repeating the same process. The active project will be listed first in the **Projects** menu. To switch to a different project, simply tap its icon. 
 
 <p class="note">
-    To learn more about changing how projects are displayed for easier recognition and switching, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html#project-display-settings">Customizing KoboCollect settings</a>.
+    To learn more about changing how projects are displayed for easier recognition and switching, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html#project-display-settings">Project display settings</a>.
 </p>
 
 ### Setting up a project in KoboCollect without authentication
