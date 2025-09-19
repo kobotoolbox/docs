@@ -13,7 +13,7 @@ KoboCollect is a free, open-source KoboToolbox app designed for data collection 
   
 To access the settings menu:
 
-1. Tap the **Project icon** to open the menu.
+1. Tap the **Project icon** in the top right corner of your screen.
 2. Tap **Settings**.
 
 <p class="note">
@@ -21,7 +21,7 @@ To access the settings menu:
 </p>
 
 ## Project display settings
-In the KoboCollect app, you can [connect to multiple KoboToolbox accounts](https://support.kobotoolbox.org/kobocollect_on_android_latest.html/#Setting-up-multiple-projects-in-KoboCollect). User accounts are called **Projects** in KoboCollect. 
+In the KoboCollect app, you can [connect to multiple KoboToolbox accounts](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-multiple-projects-in-kobocollect). User accounts are called **Projects** in KoboCollect. 
 
 To customize how each project is displayed for easier recognition and switching, you can edit the **project display** settings. These changes only affect how the project appears in the device’s interface and do not affect the data or other devices.
 
@@ -35,7 +35,7 @@ To customize how each project is displayed for easier recognition and switching,
 
 User interface settings allow you to adjust the app's appearance, language, and text size for better readability.
 
-| **Setting**    | **Description**                                |
+| **Setting**    | **Description** |
 | :----------------- | :--------------------------------------------- |
 | Theme               | Choose between light, dark, or system default appearance for the app. |
 | Language      | Set the language for the app interface display. By default, KoboCollect matches the device language.|
@@ -51,7 +51,7 @@ User interface settings allow you to adjust the app's appearance, language, and 
 
 Map settings configure the display and behavior of maps within the app for location-based questions.
 
-| **Setting**    | **Description**                                |
+| **Setting**        | **Description**                                |
 | :----------------- | :--------------------------------------------- |
 | Source               | Define your map source. Choose between Google, OpenStreetMap, USGS or Carto. |
 | Map style      | Define your map style if using Google Maps, USGS, or Carto. |
@@ -61,7 +61,7 @@ Map settings configure the display and behavior of maps within the app for locat
 
 Form management settings control how forms are handled within the app, including form version updates, submissions, and data entry behaviors. 
 
-| **Setting**    | **Description**                                |
+| **Setting**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| **Description**                  |
 | :----------------- | :--------------------------------------------- |
 | Blank form update mode               | Define if you want new versions of the forms to be updated automatically or manually. Options include: <ul><li><strong>Manual</strong>: The default mode, in which enumerators manually manage updating forms.</li><li><strong>Previously downloaded forms only</strong>: Enumerators receive a notification when one or more forms previously downloaded to the device have an update available.</li><li><strong>Exactly match server</strong>: All forms shared with the account are automatically downloaded and updated based on changes to the server.</li></ul> |
 | Automatic update frequency      | Specifies how frequently KoboCollect should check for updates to forms on the server when using **Previously downloaded forms only** or **Exactly match server**. |
@@ -100,9 +100,9 @@ To remove the admin password, click **Set admin password**, leave the field blan
 
 Project management settings provide tools to manage and reset project-related settings on your device, including reconfiguring settings, resetting specific data, or deleting all project data.
 
-| **Setting**    | **Description**                                |
+| **Setting**&emsp;&emsp;&emsp;    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
-|Reconfigure with QR code | Reconfigure your KoboCollect settings by scanning a QR code from another project. Note that this approach will replace the current project with the new one. This is also where you can find the QR code to [set up another device](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) with the same settings. |
+|Reconfigure with QR code | Reconfigure your KoboCollect settings by scanning a QR code from another project. Note that this approach will replace the current project with the new one. This is also where you can find the QR code to [set up another device](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) with the same settings. |
 | Reset | Reset specific settings, such as clearing saved forms, cached data, or map layers, without affecting other parts of the app. |
 | Delete | Delete all data related to the project from the device, including blank forms, submitted data, and settings, which can be helpful when retiring a device or preparing it for a new user. |
 
