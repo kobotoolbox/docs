@@ -23,7 +23,7 @@ To download forms to your device:
 Downloaded forms will appear when you click on **Start new form** from the app main menu.
 
 <p class="note">
-  <strong>Note:</strong> You will need to repeat this process any time an update is made to the form or form media. If you anticipate frequent form updates or are using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, we recommend enabling <a href="https://support.kobotoolbox.org/kobocollect_settings.html/#form-management-settings">automatic form downloads</a>. 
+  <strong>Note:</strong> You will need to repeat this process any time an update is made to the form or form media. If you anticipate frequent form updates or are using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, we recommend enabling <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form downloads</a>. 
 </p>
 
 ## Collecting data
@@ -34,7 +34,7 @@ Once forms are downloaded, you can begin data collection. Note that once you hav
 2. Select the form you wish to collect data with.
 3. To change the form language, tap the <i class="k-icon-more"></i> **three dots icon** in the top right corner of the screen and click **Change Language**.
 4. Navigate through questions by swiping left or clicking **NEXT** after answering.
-5. At the end of the survey, you can choose to **Save as draft**, **Finalize**, or **Send** the form (depending on your [project settings](https://support.kobotoolbox.org/kobocollect_settings.html/#form-management-settings)).
+5. At the end of the survey, you can choose to **Save as draft**, **Finalize**, or **Send** the form (depending on your [project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings)).
 
 | **Option**    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
@@ -42,7 +42,7 @@ Once forms are downloaded, you can begin data collection. Note that once you hav
 | Finalize      | The form will be saved to **Ready to send** and can no longer be edited. This option appears only if the **Auto send** setting is set to **Off**.                                  |
 | Send           | The form will be sent to the server directly or queued until an internet connection is available. It can no longer be edited. This option appears only if the **Auto send** setting is enabled.            |
 
-By default, forms and data remain on the device until manually deleted. If you enable **Delete after send** in the [project settings](https://support.kobotoolbox.org/kobocollect_settings.html/#form-management-settings), forms will be deleted automatically once they have been submitted to the server.
+By default, forms and data remain on the device until manually deleted. If you enable **Delete after send** in the [project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings), forms will be deleted automatically once they have been submitted to the server.
 
 ## Editing drafts
 
@@ -73,7 +73,7 @@ To verify successful upload, go to the main menu and select **Sent**. You will s
 
 ## Deleting saved forms and blank forms
 
-After finalizing data collection and uploading all completed forms to the server, you may want to delete remaining form data from the KoboCollect app, unless automatic deletion is [already enabled](https://support.kobotoolbox.org/kobocollect_settings.html/#form-management-settings) for your device. This helps protect data privacy and prevents confusion when collecting data for a new project.
+After finalizing data collection and uploading all completed forms to the server, you may want to delete remaining form data from the KoboCollect app, unless automatic deletion is [already enabled](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) for your device. This helps protect data privacy and prevents confusion when collecting data for a new project.
 
 There are two types of forms that can be deleted:
 
