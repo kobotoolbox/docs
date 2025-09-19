@@ -1,7 +1,7 @@
 # Customizing KoboCollect settings
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d2bd3dd55b623742b4a476f14eb27c97ca4821fa/source/kobocollect_settings.md" class="reference">19 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1421b6f7197593a17b5a21a72df33c8d55c8d7dd/source/kobocollect_settings.md" class="reference">19 Sep 2025</a>
 
-<iframe src="https://www.youtube.com/embed/liQyHfzdwD0?si=I1fhv2zrdR29tMVi" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Qeky3aomiWI?si=M1l_jorFQEDacX2A" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 KoboCollect is a free, open-source KoboToolbox app designed for data collection on Android mobile devices. Before you get started, [install and configure](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) the KoboCollect app. Once installed and configured, you can customize the app based on your project or user needs. Project settings allow you to:
 
@@ -37,7 +37,7 @@ User interface settings allow you to adjust the app's appearance, language, and 
 
 | **Setting**    | **Description** |
 | :----------------- | :--------------------------------------------- |
-| Theme               | Choose between light, dark, or system default appearance for the app. |
+| Theme    &emsp;&emsp;&emsp;&emsp;           | Choose between light, dark, or system default appearance for the app. |
 | Language      | Set the language for the app interface display. By default, KoboCollect matches the device language.|
 | Text font size           | Adjust the text size for better readability.            |
 | Navigation           | Customize how you move through forms. Choose between horizontal swipes, forward/back buttons, or a combined layout. |
@@ -53,7 +53,7 @@ Map settings configure the display and behavior of maps within the app for locat
 
 | **Setting**        | **Description**                                |
 | :----------------- | :--------------------------------------------- |
-| Source               | Define your map source. Choose between Google, OpenStreetMap, USGS or Carto. |
+| Source   &emsp;&emsp;&emsp;&emsp;            | Define your map source. Choose between Google, OpenStreetMap, USGS or Carto. |
 | Map style      | Define your map style if using Google Maps, USGS, or Carto. |
 | Layer           | Select an offline layer for the maps. You can add options by selecting an MBTiles file from your device. |
 
@@ -61,9 +61,9 @@ Map settings configure the display and behavior of maps within the app for locat
 
 Form management settings control how forms are handled within the app, including form version updates, submissions, and data entry behaviors. 
 
-| **Setting**&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| **Description**                  |
+| **Setting** | **Description**                  |
 | :----------------- | :--------------------------------------------- |
-| Blank form update mode               | Define if you want new versions of the forms to be updated automatically or manually. Options include: <ul><li><strong>Manual</strong>: The default mode, in which enumerators manually manage updating forms.</li><li><strong>Previously downloaded forms only</strong>: Enumerators receive a notification when one or more forms previously downloaded to the device have an update available.</li><li><strong>Exactly match server</strong>: All forms shared with the account are automatically downloaded and updated based on changes to the server.</li></ul> |
+| Blank form update mode &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;              | Define if you want new versions of the forms to be updated automatically or manually. Options include: <ul><li><strong>Manual</strong>: The default mode, in which enumerators manually manage updating forms.</li><li><strong>Previously downloaded forms only</strong>: Enumerators receive a notification when one or more forms previously downloaded to the device have an update available.</li><li><strong>Exactly match server</strong>: All forms shared with the account are automatically downloaded and updated based on changes to the server.</li></ul> |
 | Automatic update frequency      | Specifies how frequently KoboCollect should check for updates to forms on the server when using **Previously downloaded forms only** or **Exactly match server**. |
 | Automatic download | When **Previously downloaded forms only** is selected, you can choose whether forms are updated automatically. Otherwise, users will only be notified of available updates.<br><br>This setting is automatically enabled when **Exactly matching form version** is selected.  |
 | Hide old form versions           | If there are multiple versions of the same form, only the most recently downloaded will be displayed when starting a new form. |
@@ -87,7 +87,7 @@ User and device identity settings allow you to set device metadata for tracking 
 
 | **Setting**    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
-| Form metadata               | Enter a <strong>username</strong>, <strong>phone number</strong>, and <strong>email address</strong>, and view <strong>device id</strong> (defined automatically) to provide additional details on who submitted the records to the server. These details can help validate the quality of the data collected by the team. |
+| Form metadata  &emsp;&emsp;             | Enter a <strong>username</strong>, <strong>phone number</strong>, and <strong>email address</strong>, and view <strong>device id</strong> (defined automatically) to provide additional details on who submitted the records to the server. These details can help validate the quality of the data collected by the team. |
 | Collect anonymous usage data      | Allow the KoboToolbox team to collect anonymous usage data to help us prioritize fixes and features. |
 
 ## Set admin password
@@ -102,7 +102,7 @@ Project management settings provide tools to manage and reset project-related se
 
 | **Setting**&emsp;&emsp;&emsp;    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
-|Reconfigure with QR code | Reconfigure your KoboCollect settings by scanning a QR code from another project. Note that this approach will replace the current project with the new one. This is also where you can find the QR code to [set up another device](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) with the same settings. |
+|Reconfigure with QR code &emsp;&emsp; | Reconfigure your KoboCollect settings by scanning a QR code from another project. Note that this approach will replace the current project with the new one. This is also where you can find the QR code to [set up another device](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) with the same settings. |
 | Reset | Reset specific settings, such as clearing saved forms, cached data, or map layers, without affecting other parts of the app. |
 | Delete | Delete all data related to the project from the device, including blank forms, submitted data, and settings, which can be helpful when retiring a device or preparing it for a new user. |
 
