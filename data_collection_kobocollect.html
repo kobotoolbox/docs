@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Using Alternative Enketo Web Form Styles &#8212; KoboToolbox  documentation</title>
+    <title>Data collection using KoboCollect &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -27,8 +27,8 @@
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Using the Question Library" href="question_library.html" />
-    <link rel="prev" title="Custom Formatting in Web Forms" href="custom_format_web.html" />
+    <link rel="next" title="Transferring forms and data manually from one android device to another" href="transferring_forms.html" />
+    <link rel="prev" title="Customizing KoboCollect settings" href="kobocollect_settings.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -93,7 +93,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="alternative_enketo">
+<div class="page page--has-sidebar " id="data_collection_kobocollect">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -106,74 +106,114 @@
 
         <section class="page__body" role="main">
           
-  <section id="using-alternative-enketo-web-form-styles">
-<h1>Using Alternative Enketo Web Form Styles<a class="headerlink" href="#using-alternative-enketo-web-form-styles" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/alternative_enketo.md" class="reference">29 Jul 2025</a></p>
-<p>Enketo web forms can be customized in the way your questions are presented.
-There are two alternative styles that can be selected and even combined:
-<strong>Multiple Pages</strong> and <strong>Grid Theme</strong>.</p>
-<p><strong>Multiple Pages</strong> mode displays one question at a time per screen, or a group
-of questions set to display on the same screen. This is the same way
-<a class="reference internal" href="group_repeat.html"><span class="std std-doc">KoboCollect works</span></a>.</p>
-<p><strong>Grid Theme</strong> is an alternative display of questions meant to be more compact
-and more like paper forms where space is often a major concern. theme-grid
-allows displaying multiple questions per row and flexibly adapts in case of skip
-logic making a new question appear or disappear. To display multiple questions
-in a row they need to be part of a group, which by default shows up to four
-questions next to each other. This theme can be customized by defining the
-number of questions to be included in each row through the appearance field of
-each question’s settings. For more details
-<a class="reference external" href="https://blog.enketo.org/gorgeous-grid">see this post</a>.</p>
-<p>It is also possible to use both <strong>Multiple Pages</strong> and <strong>Grid Theme</strong> together.
-You can set these styles through the KoboToolbox formbuilder user interface:</p>
-<p><img alt="image" src="_images/multiple_grid.gif" /></p>
-<p>If you are building your survey project through XLSForm, you could do the same
-by defining the theme under the <code class="docutils literal notranslate"><span class="pre">style</span></code> column in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet:</p>
-<p><strong>settings sheet</strong></p>
+  <section id="data-collection-using-kobocollect">
+<h1>Data collection using KoboCollect<a class="headerlink" href="#data-collection-using-kobocollect" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d2bd3dd55b623742b4a476f14eb27c97ca4821fa/source/data_collection_kobocollect.md" class="reference">19 Sep 2025</a></p>
+<iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>KoboCollect is a free, open-source KoboToolbox app designed for data collection on Android mobile devices. Before you get started, <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">install and configure</a> the KoboCollect app.</p>
+<p>Once set up, KoboCollect allows you to fill and submit forms from your mobile device, even offline. This article explains how to use the app to collect data, including accessing forms, saving and editing responses, and sending finalized submissions.</p>
+<section id="downloading-forms">
+<h2>Downloading forms<a class="headerlink" href="#downloading-forms" title="Permalink to this heading">¶</a></h2>
+<p>To begin data collection with KoboCollect, you will need to download the KoboToolbox form(s) to your device. Before downloading, ensure you have:</p>
+<ul class="simple">
+<li><p>At least one <a class="reference external" href="https://support.kobotoolbox.org/deploy_form_new_project.html">deployed form</a> in your KoboToolbox account (either owned by or shared with you).</p></li>
+<li><p>A project (account) <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">set up on KoboCollect</a>.</p></li>
+<li><p>An internet connection on your device.</p></li>
+</ul>
+<p>To download forms to your device:</p>
+<ul class="simple">
+<li><p>From the main menu, click <strong>Download form</strong>.</p></li>
+<li><p>Select the form(s) you wish to download individually by tapping the checkbox next to each form, or tap <strong>Select All</strong> to download all deployed forms.</p></li>
+<li><p>Tap <strong>Get Selected</strong>.</p></li>
+</ul>
+<p>Downloaded forms will appear when you click on <strong>Start new form</strong> from the app main menu.</p>
+<p class="note">
+  <strong>Note:</strong> You will need to repeat this process any time an update is made to the form or form media. If you anticipate frequent form updates or are using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, we recommend enabling <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form downloads</a>. 
+</p>
+</section>
+<section id="collecting-data">
+<h2>Collecting data<a class="headerlink" href="#collecting-data" title="Permalink to this heading">¶</a></h2>
+<p>Once forms are downloaded, you can begin data collection. Note that once you have downloaded the form(s) in the app, you do not need an internet connection to collect data.</p>
+<ol class="arabic simple">
+<li><p>From the main menu, tap <strong>Start new form</strong>.</p></li>
+<li><p>Select the form you wish to collect data with.</p></li>
+<li><p>To change the form language, tap the <i class="k-icon-more"></i> <strong>three dots icon</strong> in the top right corner of the screen and click <strong>Change Language</strong>.</p></li>
+<li><p>Navigate through questions by swiping left or clicking <strong>NEXT</strong> after answering.</p></li>
+<li><p>At the end of the survey, you can choose to <strong>Save as draft</strong>, <strong>Finalize</strong>, or <strong>Send</strong> the form (depending on your <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">project settings</a>).</p></li>
+</ol>
 <table class="colwidths-auto docutils align-default">
 <thead>
-<tr class="row-odd"><th class="text-left head"><p>form_title</p></th>
-<th class="text-left head"><p>style</p></th>
+<tr class="row-odd"><th class="text-left head"><p><strong>Option</strong></p></th>
+<th class="text-left head"><p><strong>Description</strong></p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Themed form</p></td>
-<td class="text-left"><p>pages</p></td>
+<tr class="row-even"><td class="text-left"><p>Save as draft</p></td>
+<td class="text-left"><p>The form will be saved to <strong>Drafts</strong> and can still be edited before finalizing.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>settings</p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-odd"><td class="text-left"><p>Finalize</p></td>
+<td class="text-left"><p>The form will be saved to <strong>Ready to send</strong> and can no longer be edited. This option appears only if the <strong>Auto send</strong> setting is set to <strong>Off</strong>.</p></td>
 </tr>
-</tbody>
-</table>
-<section id="available-styles-in-xlsform">
-<h2>Available styles in XLSForm:<a class="headerlink" href="#available-styles-in-xlsform" title="Permalink to this heading">¶</a></h2>
-<table class="colwidths-auto docutils align-default">
-<thead>
-<tr class="row-odd"><th class="text-left head"><p>XLSForm Theme</p></th>
-<th class="text-left head"><p>Description</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>(leave blank)</p></td>
-<td class="text-left"><p>Default – single page</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span> <span class="pre">no-text-transform</span></code></p></td>
-<td class="text-left"><p>Grid theme</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span></code></p></td>
-<td class="text-left"><p>Grid theme with headings in ALL CAPS</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">pages</span></code></p></td>
-<td class="text-left"><p>Multiple pages</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span> <span class="pre">pages</span> <span class="pre">no-text-transform</span></code></p></td>
-<td class="text-left"><p>Grid theme + Multiple pages</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">theme-grid</span> <span class="pre">pages</span></code></p></td>
-<td class="text-left"><p>Grid theme + Multiple pages + headings in ALL CAPS</p></td>
+<tr class="row-even"><td class="text-left"><p>Send</p></td>
+<td class="text-left"><p>The form will be sent to the server directly or queued until an internet connection is available. It can no longer be edited. This option appears only if the <strong>Auto send</strong> setting is enabled.</p></td>
 </tr>
 </tbody>
 </table>
+<p>By default, forms and data remain on the device until manually deleted. If you enable <strong>Delete after send</strong> in the <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">project settings</a>, forms will be deleted automatically once they have been submitted to the server.</p>
+</section>
+<section id="editing-drafts">
+<h2>Editing drafts<a class="headerlink" href="#editing-drafts" title="Permalink to this heading">¶</a></h2>
+<p>If you saved a survey as a draft, you can edit it before sending it to the server:</p>
+<ol class="arabic simple">
+<li><p>From the main menu, select <strong>Drafts</strong>.</p></li>
+<li><p>A list of saved draft forms will appear. Select the one you want to edit.</p></li>
+<li><p>Make the necessary changes, then tap <strong>Finalize</strong> or <strong>Send</strong>, depending on your workflow.</p></li>
+</ol>
+<p class="note">
+  <strong>Note:</strong> You do not need an internet connection to edit a saved form in KoboCollect.
+</p>
+</section>
+<section id="sending-finalized-forms-to-the-server">
+<h2>Sending finalized forms to the server<a class="headerlink" href="#sending-finalized-forms-to-the-server" title="Permalink to this heading">¶</a></h2>
+<p>After finalizing your forms, you must upload them to the KoboToolbox server. Forms are often completed and finalized offline, then uploaded in bulk once an internet connection is available. To send your forms to the KoboToolbox server:</p>
+<ol class="arabic simple">
+<li><p>Ensure the device has a secure internet connection.</p></li>
+<li><p>From the main menu, tap <strong>Ready to send</strong>. A list of finalized forms will appear.</p></li>
+<li><p>Tap <strong>Select All</strong>, or manually select the forms you want to upload by ticking the checkbox.</p></li>
+<li><p>Tap <strong>Send Selected</strong> to submit the forms to the server.</p></li>
+</ol>
+<p>To verify successful upload, go to the main menu and select <strong>Sent</strong>. You will see all forms sent to the server, along with their synchronization date.</p>
+<p class="note">
+  <strong>Note:</strong> If your project is <strong>set to automatically send finalized forms</strong>, the <strong>Ready to send</strong> page will not appear in the main menu, and you can skip these steps. For more information on project settings in KoboCollect, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Customizing KoboCollect settings</a>.
+</p>
+</section>
+<section id="deleting-saved-forms-and-blank-forms">
+<h2>Deleting saved forms and blank forms<a class="headerlink" href="#deleting-saved-forms-and-blank-forms" title="Permalink to this heading">¶</a></h2>
+<p>After finalizing data collection and uploading all completed forms to the server, you may want to delete remaining form data from the KoboCollect app, unless automatic deletion is <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">already enabled</a> for your device. This helps protect data privacy and prevents confusion when collecting data for a new project.</p>
+<p>There are two types of forms that can be deleted:</p>
+<ul class="simple">
+<li><p><strong>Saved Forms</strong>: These are forms for which data has been filled in, including drafts, finalized forms, and forms that have been sent to the server.</p></li>
+<li><p><strong>Blank Forms</strong>: These are empty data collection forms that have downloaded to the device from the <strong>Download form</strong> page. Only delete these forms once data collection for them has ended.</p></li>
+</ul>
+<p>To delete forms:</p>
+<ol class="arabic simple">
+<li><p>From the main menu, tap <strong>Delete form</strong>. You will see two tabs.</p></li>
+<li><p>Under <strong>Saved Forms</strong>:</p>
+<ul class="simple">
+<li><p>Tap <strong>Select All</strong> to delete all saved forms, or select individual forms.</p></li>
+<li><p>Tap <strong>Delete Selected</strong>.</p></li>
+</ul>
+</li>
+<li><p>Under <strong>Blank Forms</strong>:</p>
+<ul class="simple">
+<li><p>Tap <strong>Select All</strong> to delete all blank forms, or select individual forms.</p></li>
+<li><p>Tap <strong>Delete Selected</strong>.</p></li>
+</ul>
+</li>
+</ol>
+<p class="note">
+  <strong>Note:</strong> You do not need an internet connection to delete saved forms in KoboCollect. However, if blank forms are accidentally deleted offline, an internet connection is required to recover them for continued data collection. To prevent accidental deletion, you can set access controls in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html/#access-control">project settings</a>.
+</p>
 </section>
 </section>
 
@@ -188,7 +228,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Using Alternative Enketo Web Form Styles"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Data collection using KoboCollect"
               class="feedback-button"
               target="_blank"
             >
@@ -217,7 +257,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Setting up two-factor authentication in KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Using the Formbuilder</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Getting started with the KoboToolbox Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Text and Note question types</a></li>
@@ -246,10 +286,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Metadata</a></li>
 <li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
 <li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Using Alternative Enketo Web Form Styles</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#available-styles-in-xlsform">Available styles in XLSForm:</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
 <li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Using Public Collections</a></li>
 <li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Public Collections Advanced Search</a></li>
@@ -267,7 +304,7 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
@@ -276,7 +313,14 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 <li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data collection using KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#downloading-forms">Downloading forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collecting-data">Collecting data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editing-drafts">Editing drafts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sending-finalized-forms-to-the-server">Sending finalized forms to the server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deleting-saved-forms-and-blank-forms">Deleting saved forms and blank forms</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 <li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
@@ -389,9 +433,9 @@ by defining the theme under the <code class="docutils literal notranslate"><span
 
   <script>
     window.docs = {
-      currentPagename: "alternative_enketo",
-      currentTitle: "Using Alternative Enketo Web Form Styles",
-      currentUrl: ("index.html").replace("index.html", "alternative_enketo.html"),
+      currentPagename: "data_collection_kobocollect",
+      currentTitle: "Data collection using KoboCollect",
+      currentUrl: ("index.html").replace("index.html", "data_collection_kobocollect.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
     };

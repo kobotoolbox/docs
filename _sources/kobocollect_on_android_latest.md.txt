@@ -1,397 +1,124 @@
-# Data Collection on KoboCollect App (Latest Version)
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1c72c9d2c69496381bb948bb554ab64f63df0999/source/kobocollect_on_android_latest.md" class="reference">7 Jul 2025</a>
+# Getting started with KoboCollect
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d2bd3dd55b623742b4a476f14eb27c97ca4821fa/source/kobocollect_on_android_latest.md" class="reference">19 Sep 2025</a>
 
-<p class='note'>The latest version of the KoboCollect App refers to v2021.2.4 and above.</p>
+<iframe src="https://www.youtube.com/embed/qC2Bz8jZkIM?si=xSyTOxOMR6nE8tum" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-**KoboCollect** is an open-source Android app for collecting survey data. It’s
-one of two ways that you can collect data through **KoboToolbox** (the other way
-is through [web forms - Enketo](data_through_webforms.md)). It’s free and the
-latest version of the app can be accessed in the
-[Google Play Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android).
+KoboCollect is a free, open-source KoboToolbox app designed for data collection on Android mobile devices. Its offline capabilities and compatibility with most Android devices make it ideal for fieldwork. 
 
-## Setting Up the Server Connection
+Before using KoboCollect, you must [set up a KoboToolbox account](https://support.kobotoolbox.org/creating_account.html) on the KoboToolbox website and [deploy data collection forms](https://support.kobotoolbox.org/quick_start.html). 
 
-The first step after installing **KoboCollect** on your device is to set up the
-server **URL**, **Username**, and **Password**, which connects your
-**KoboCollect** app to the **KoboToolbox** server. This allows you to download
-deployed forms from **KoboToolbox** to your mobile device and also send data
-collected through the app back to the server.
+<p class="note">
+    This article covers how to connect to KoboCollect for data collection. To learn more about configuring KoboCollect settings and collecting data with the app, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Customizing KoboCollect settings</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Data collection using KoboCollect</a>.
+</p>
 
-The server in **KoboCollect** can be configured in two different ways:
-_manually_ or through a _QR code_.
+## Installing the KoboCollect app
 
-### Setting up the server connection _manually_:
+The KoboCollect app can be downloaded from the [Google Play Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android) for Android devices running version 5 or above. 
 
--   Open **KoboCollect**.
--   Select **Manually enter project details**.
+<p class="note">
+    <strong>Note:</strong> We recommend using the latest version of the app (v2025.2), as it includes features and bug fixes not available in older versions.
+</p>
 
-![Collect Data Anywhere](/images/kobocollect_on_android_latest/collect_data_anywhere.jpg)
+## Setting up the KoboCollect app
 
--   You will now be asked to input the **URL**, **Username**, and **Password**,
-    and then select **Add**. For the URL, you must select from the
-    [two KoboToolbox servers](creating_account.md). If you created your user account on
-    the Global Server, the URL is `https://kc.kobotoolbox.org`. If your
-    user account is on the European Union Server, the URL is
-    `https://kc-eu.kobotoolbox.org`.
+To collect data with KoboCollect, you must configure the KoboCollect app on your mobile device to connect to the KoboToolbox server. This enables you to download deployed forms from KoboToolbox and send collected data back to the server.
 
-![Server Settings](/images/kobocollect_on_android_latest/server_settings.png)
+To connect KoboCollect to the KoboToolbox server, you will need your **KoboCollect URL**, your **username**, and your **password**. After the initial manual setup, you can [generate a QR code](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) to configure other devices. 
 
-<p class='note'>Despite setting up the server settings correctly, users may
-have trouble connecting <strong>KoboCollect</strong> to the server. This could
-be an issue with the device’s incorrect date and time settings. To learn more
-about troubleshooting <strong>KoboCollect</strong>, please read our support
-article <a href="troubleshooting_kobocollect.html"
-class="reference">Troubleshooting KoboCollect Android Application</a>.</p>
+<p class="note">
+    <strong>Note:</strong> In the KoboCollect app, user accounts are called <strong>Projects</strong>.
+</p>
 
--   After setting up the server, you should now see the following home screen.
+### Setting up KoboCollect manually 
+To manually set up KoboCollect, you will need to identify your **KoboCollect URL**. This URL is specific to KoboCollect and differs from the URL used to access your KoboToolbox account. 
 
-![Home Page Comparison](/images/kobocollect_on_android_latest/home_page_comparison.png)
+Your KoboCollect URL depends on your account’s server:
 
-You can use **KoboCollect** to _get blank forms to your device_, _collect data
-(fill blank forms)_, _store it in your device_, _edit the filled in forms (edit
-saved forms)_, _submit saved forms_, and _delete filled in forms/blank forms_.
+| **KoboToolbox Server**    | **KoboCollect URL**                     |
+| :----------------- | :--------------------------------------------- |
+| Global KoboToolbox Server               | https://kc.kobotoolbox.org/ |
+| European Union KoboToolbox Server      | https://kc-eu.kobotoolbox.org/ |
+| Private Server           | Unique to each organization            |
 
-### Setting up multiple server connections _manually_
+You can also find the KoboCollect URL on the KoboToolbox platform. Go to the **FORM** tab of your project and select **Android application** from the **Collect data** drop-down menu. The KoboCollect URL will be listed in step 3.
 
-<p class='note'>This feature is only available with the latest version of the app and is relevant if you have multiple
-<strong>KoboToolbox</strong> user accounts.</p>
+![Select Android app in browser](images/kobocollect_on_android_latest/select_android_app_in_browser.png)
 
-Some users have multiple **KoboToolbox** accounts, either on the same server or
-a different server. With the latest version, users can manage all their accounts
-in the same app and use them in parallel by switching from one account to
-another as needed. Follow the steps outlined below to setup multiple server
-connections:
+Once you have identified your KoboCollect URL, follow these steps to set up the server connection:
 
--   After setting up your account in the app (see instructions above), open
-    **KoboCollect**.
--   Select the icon (circled in K) that is located at the top right of your
-    screen.
--   You should see a dialogue box like the one shown below.
+1. Open the KoboCollect app.
+2. Select **Manually enter project details**.
+3. Enter the **KoboCollect URL**, your **username**, and **password**.
+4. Tap **Add**. 
+5. When configuration is complete, the main menu will be displayed.
 
-![Project Settings Modal 1](/images/kobocollect_on_android_latest/project_settings_modal_1.jpg)
+### Setting up KoboCollect with a QR code
 
--   Select **Add project**.
--   Fill in the **URL**, **Username**, and **Password** and then select **Add**.
+Using a QR code efficiently configures KoboCollect on multiple devices with the **same server settings** (KoboCollect URL, username, password, and <a href="https://support.kobotoolbox.org/kobocollect_settings.html">project configuration settings</a>. This can be useful to avoid repeating manual steps or to configure enumerator devices without sharing account passwords.
 
-![Server Settings](/images/kobocollect_on_android_latest/server_settings.png)
+<p class="note">
+    <strong>Note:</strong> In order to use the QR code method, you must first manually configure one device and then copy the generated QR code to the other devices. 
+</p>
 
--   You should now see the home screen. Once again, select the icon (circled in
-    K) at the top right of your screen to ensure your connection was successful.
--   After setting up an additional server, you should see a dialogue box like
-    the one shown below.
+To access your QR code:
 
-![Project Settings Modal 2](/images/kobocollect_on_android_latest/project_settings_modal_2.jpg)
+1. Go to the **Projects** menu and select the project you want to copy.
+2. Tap **Settings**.
+3. Select **Project Management**.
+4. Tap **Reconfigure with QR Code**.
+5. Choose **QR Code**. Your QR code will appear on the screen.
+6. **Take a screenshot** of the QR code to share it for setting up other devices. You can also return to this menu anytime to access the QR code again.
+   
+To configure other devices using the QR code:
 
-Here, you will see two different accounts setup in the app. You can add more
-accounts as needed. The account listed first is the active one and you can only
-see forms for the active account. You can easily switch to your other accounts,
-making them active, by simply selecting them.
+1. Open **KoboCollect** on the device you want to set up.
+2. Tap **Configure with QR Code**.
+3. Scan a QR code with the device's camera, or tap the <i class="k-icon-more"></i> **three dots** in the top right corner and select **Import QR code** to use a screenshot saved to your device.
 
-### Setting up the server connection with a _QR code_
+If the setup is successful, the app will be configured automatically.
 
-Oftentimes, users in large projects will need to set up a large number of
-devices under the same server settings (**URL**, **Username**, and **Password**,
-etc.). Setting up all the devices manually would be time-consuming and prone to
-error. To save time, you can set up one device manually and then copy the
-settings through a QR code generated from the first device.
+<p class="note">
+    <strong>Note:</strong> The QR code contains your account credentials, including your password. Anyone who scans it will have the same access permissions as the account it was generated from. If you only want someone to collect data (e.g., an enumerator), <strong>make sure the account used to generate the QR code does not have permissions to view, edit, or delete data.</strong> To keep your data safe, avoid sharing QR codes from accounts with full access.
+</p>
 
-<p class='note'>To set up a device with a QR Code, you will require at least
-one app that has been set up manually.</p>
+### Setting up multiple projects in KoboCollect
 
--   Open **KoboCollect** and choose the project that has been set up.
--   Select the circle K icon that is located at the top right of your screen.
--   Select **Settings**.
+Users can connect multiple KoboToolbox accounts and easily switch between different projects within the same KoboCollect app, regardless of whether they are on the same or different servers.
 
-![Project Settings Modal 1](/images/kobocollect_on_android_latest/project_settings_modal_1.jpg)
-
--   Then select **Project Management**.
-
-![Project Settings](/images/kobocollect_on_android_latest/project_settings_list.jpg)
-
--   Select **Reconfigure with QR code**.
--   Choose **QR Code** at the top. A QR code will be displayed that contains all
-    of your **KoboCollect** settings, including the _server URL_, _Username_,
-    and _Password_.
+To set up additional projects in KoboCollect:
 
-![QR Code](/images/kobocollect_on_android_latest/qr_code.jpg)
+1. Tap the **Project icon** located in the top right corner.
+2. In the **Projects** menu, tap **Add project**.
+3. Set up a new project using the manual approach or by scanning a QR code.
+4. When configuration is complete, the main menu will be displayed.
+5. Tap the **Project icon** to open the menu. Both projects should now be visible.
 
--   Open **KoboCollect** on another device that you want to set up.
--   Select **Configure with QR code**.
--   Scan the QR code. If successful, you should hear a beep and the app will be
-    automatically configured. Repeat for all other devices you want set up.
-
-<p class='note'>You can also copy the QR code and share it by email, Whatsapp,
-etc., to set up other devices but be aware that the QR code contains the
-password to your account, allowing others to sign into your account. <strong>It
-is not recommended to share the QR code through electronic means if the same
-account has permissions to view, edit, or delete data.</strong></p>
+Additional projects can be added by repeating the same process. The active project will be listed first in the **Projects** menu. To switch to a different project, simply tap its icon. 
 
-## Setting Up Blank Forms in KoboCollect
-
-Once you have configured the **URL**, **Username**, and **Password** in the app
-correctly, you can send blank forms to your device from the **KoboToolbox**
-server.
+<p class="note">
+    To learn more about changing how projects are displayed for easier recognition and switching, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html#project-display-settings">Customizing KoboCollect settings</a>.
+</p>
 
--   Open **KoboCollect**.
--   Make sure that you have at least one project set up in your **KoboToolbox**
-    user account and that your device is connected to the internet.
--   Select **Get Blank Form** from the home menu.
+### Setting up a project in KoboCollect without authentication
 
-![Get Blank Form Button](/images/kobocollect_on_android_latest/get_blank_form_button.png)
+It is also possible to access projects in KoboCollect without a password. This is useful for projects with many enumerators, as it avoids the need to create individual accounts or share credentials.
 
--   A list of all your deployed survey forms should appear. Press **Select All**
-    to have all the survey forms sent to the app or select the ones you wish to
-    have by selecting them manually. Then click **Get Selected**.
+<p class="note">
+    <strong>Note:</strong> This approach requires enabling “Allow submissions to this form without a username and password” for your forms. To learn more about project-level sharing settings, see <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Sharing projects with project-level settings</a>.
+</p>
 
-![Get Blank Form List](/images/kobocollect_on_android_latest/get_blank_form_list.jpg)
+To connect to KoboCollect without authentication:
+1. Enable “Allow submissions to this form without a username and password” for your forms.
+2. [Optional] Create a dedicated KoboToolbox account for data collectors and [share your forms](https://support.kobotoolbox.org/managing_permissions.html) with this account. 
+3. Connect to KoboCollect using the following credentials:
+    - **URL**: KoboCollect URL followed by the account username (`https://[kobocollect_url]/[username]`)
+    - **Username**: (Leave blank)
+    - **Password**: (Leave blank)
 
-<p class='note'>Users will need an internet connection while sending blank
-forms to <strong>KoboCollect</strong>.</p>
-
-## Collecting Data in KoboCollect
+This approach allows users to download and submit data to any forms shared with `username` that do not [require authentication](https://support.kobotoolbox.org/project_sharing_settings.html).
 
-Once you have blank form(s) in the app, you will no longer require an internet
-connection to collect data. The blank forms and the filled in forms will stay on
-the device until you delete them from the app or submit them to the server.
+To differentiate enumerators and track submissions, you can ask enumerators to enter a custom username, phone number, and email address in the [User and device identity settings](https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings).
 
--   Open **KoboCollect**.
--   Select **Fill Blank** Form from the home menu.
--   Select the survey form that you want to use to start collecting data.
--   Go through all the questions _by swiping your finger from right to left or
-    by selecting the **NEXT** key after answering the questions_.
--   At the end of the survey, select **Save Form and Exit**.
-
-![Finalise Form](/images/kobocollect_on_android_latest/finalise_form.png)
-
-<p class='note'>Make sure the form is marked as "<strong>finalized</strong>".
-If this is unchecked but you still select <strong>Save Form and Exit</strong>,
-the filled in form goes to <strong>Edit Saved Form</strong> instead of going to
-<strong>Send Finalized Form</strong>. If this happens, go back to <strong>Edit
-Saved Form</strong>, open the form, and without needing to make any edits, you
-can select <strong>Go To End</strong>. Make sure the form is marked as
-"<strong>finalized</strong>" and then select <strong>Save Form and
-Exit</strong>.<br/>If an interviewer believes that a form has not been
-completed, for example, if the head of the household wasn’t there or children
-weren’t there but are needed for the data collection, they can rename the form
-in order to come back to it more easily. You can change the name of a saved
-form to something easy to keep track of, such as "Incomplete" or "Incomplete:
-(name of respondent)" under <strong>Name this form</strong>.</p>
-
-## Editing Data in KoboCollect
-
-Once you have pressed **Save Form and Exit**, the saved form is automatically
-stored under **Edit Saved Form**.
-
--   Open **KoboCollect**.
--   Select **Edit Saved Form** from the home menu.
--   You will see a list of **Saved Forms**. Choose the one that needs edits or
-    updates.
--   Make changes as needed, and then select **Save Form and Exit**.
--   Repeat the process multiple times if multiple forms need edits or updates.
-
-<p class='note'>Users do not need an internet connection while editing a saved
-form in <strong>KoboCollect</strong>.</p>
-
-## Uploading Finalized Data to the Server
-
-Once you have collected your data, and made any necessary edits, you can upload
-the forms to the **KoboToolbox** server.
-
--   Open **KoboCollect**.
--   Make sure the device is securely connected to the internet.
--   Select **Send Finalized Form** from the home screen.
--   A list of all the collected forms should appear.
--   Press **Select All** (or select the ones you wish to upload) and then press
-    **Send Selected**.
--   To ensure the forms were uploaded successfully, select **View Sent Form**.
-    You should now be able to view all the submitted forms.
-
-<p class='note'>Users will need an internet connection while submitting data
-from <strong>KoboCollect</strong> to the server.</p>
-
-## Deleting Saved Forms in KoboCollect
-
-Once you have completed data collection for your survey project and all the
-filled in forms have been uploaded to the server, it is recommended to delete
-the forms from the **KoboCollect** app. Keeping them in the app can confuse
-interviewers while collecting data for a different project. Follow the steps
-outlined below to delete **Saved Forms** and **Blank Forms** from your app.
-
--   Open **KoboCollect**.
--   Select **Delete Saved Form** from the home screen.
--   Users should now see two tabs. The default is **Saved Forms**. These are the
-    forms that were filled in while collecting data. Press **Select All** to
-    delete all the **Saved Forms** from the app and then **Delete Selected**.
-
-![Delete Saved Form](/images/kobocollect_on_android_latest/delete_saved_form.png)
-
--   The next tab is the **Blank Forms**. Press **Select All** to delete all the
-    **Blank Forms** from the app and then **Delete Selected**.
-
-<p class='note'>Users should not require an internet connection to delete saved
-forms in <strong>KoboCollect</strong>.</p>
-
-## Resetting View Sent Form in KoboCollect
-
-When you submit all the filled forms to the server by pressing **Send Finalized
-Form**, the successfully submitted forms can be seen in the **View Sent Form**
-section. Data managers generally advise to keep this information until the end
-of the project as it always provides a reference for the total number of
-collections and submissions.
-
-Once the current project’s data collection is over or if you are planning to
-start a new project, it is advised to reset the counter in **View Sent Form**.
-This will help to keep track of the data collection for the new project.
-
--   Open **KoboCollect**.
--   Select the icon (circled in K) that is located at the top right of your
-    screen.
--   Select **Settings**.
-
-![Select Settings](/images/kobocollect_on_android_latest/select_settings.jpg)
-
--   Under **Project settings**, select **Project management**.
--   Under **Project management** select **Reset**.
--   Click **Saved forms (instances folder, instances database)** and then select
-    **RESET**.
-
-![Reset](/images/kobocollect_on_android_latest/reset.jpg)
-
--   You should see a small dialogue box with a pop up a message **_"Reset
-    results Saved forms: Success"_**.
--   Select **OK**.
-
-<p class='note'>Users do not need an internet connection to reset <strong>View
-Sent Form</strong> in <strong>KoboCollect</strong>.</p>
-
-## Hiding Buttons in KoboCollect
-
-In some cases, it is recommended to hide certain buttons in the app from
-interviewers to prevent them from editing or changing collected data, decreasing
-the risk of data loss.
-
--   Open **KoboCollect**.
--   Select the icon (circled in K) that is located at the top right of your
-    screen.
--   Select **Settings**.
--   Under the **Project settings**, select **Access control**, which includes
-    **Main Menu Settings**, **User Settings**, and **Form Entry Settings**.
--   Select **Main Menu Settings** to hide buttons from the main menu.
-
-![Main Menu Settings](/images/kobocollect_on_android_latest/main_menu_settings.jpg)
-
--   Do the same for **User Settings** and **Form Entry Settings** to hide
-    buttons from those menus as well.
-
-<p class='note'>Users do not need an internet connection to hide buttons in
-<strong>KoboCollect</strong>.</p>
-
-## Locking KoboCollect with an Admin Password
-
-If needed, you can set up an admin password in the **KoboCollect** app, limiting
-access to the app’s admin settings to only team members with the admin password.
-
--   Open **KoboCollect**.
--   Select the icon (circled in K) that is located at the top right of your
-    screen.
--   Select **Settings**.
--   Under the **Project settings**, select **Set admin password**.
--   You will be requested to **Enter New Password**. After entering a new
-    password, select **OK**.
-
-<p class='note'>Users do not need an internet connection to lock
-<strong>KoboCollect</strong> with an admin password. To remove the admin
-password, leave it blank instead of providing a new password.</p>
-
-## Form Management Settings in KoboCollect
-
-There are other form management settings available within **KoboCollect** which
-could assist in managing your data collection project:
-
-**Form update** provides an option to update the survey form manually or
-automatically. If set to automatic, the forms that are redeployed on the
-**KoboToolbox** server are automatically updated in the app. Note that keeping
-this feature active will likely drain your device’s battery more quickly.
-
-**Form submission** provides an option to send submissions to the server
-manually or automatically, with the options of _Wifi only_, _cellular only_, and
-_wifi or cellular_. This setting also gives the option to delete finalized forms
-and media after being successfully sent to the server.
-
-**Form filling** provides several options for forms and data collection:
-
--   Option to mark the form as finalized by default.
--   Option to configure the constraint processing (_validate upon forward swipe
-    or defer validation until finalized_).
--   Enable or disable high-resolution video recordings or change the allowed
-    image size when taking videos and images through the app.
--   _Show guidance for questions_ under the form filling to show or hide
-    guidance for questions
--   _Use of an external app for audio recording_ could help to set up an
-    external app for audio recording while collecting data.
-
-Follow the steps outlined below to access the form management settings:
-
--   Open **KoboCollect**.
--   Select the icon (circled in K) that is located at the top right of your
-    screen.
--   Select **Settings**.
--   Under the **Project settings**, select **Form management** and select the
-    options relevant for your project.
-
-![Form Management](/images/kobocollect_on_android_latest/form_management.jpg)
-
-<p class='note'>Users do not need an internet connection to access or change
-the form management settings in <strong>KoboCollect</strong>.</p>
-
-## Setting Up Metadata in KoboCollect
-
-Users can set up the collection of metadata like _username_, _phone number_ and
-_email address_ in **KoboCollect**, providing additional details on who
-submitted the records to the server. These details can be helpful to validate
-the quality of the data collected by the team.
-
-<p class='note'>In order to collect metadata, it must be configured in both the
-<strong>KoboCollect</strong> app and on the <strong>KoboToolbox</strong>
-platform for the same project. Please refer to our support article <a
-href="form_meta.html" class="reference">Form Settings and Meta Questions</a> for
-instructions on how to configure set up in <strong>KoboToolbox</strong>.</p>
-
--   Open **KoboCollect**.
--   Select the icon (circled in K) that is located at the top right of your
-    screen.
--   Select **Settings**.
--   Under the **Project settings**, select **User and device identity**.
--   Under **User and device identity**, select **Form metadata**.
-
-![Form Metadata](/images/kobocollect_on_android_latest/form_metadata.jpg)
-
--   Enter all the metadata like _username_, _phone number_, and _email address_
-    that you want to collect.
-
-<p class='note'>Users do not need an internet connection to access the metadata
-setting in <strong>KoboCollect</strong>.</p>
-
-## Differences Between KoboCollect & ODK Collect
-
-**KoboCollect** is a [fork](https://github.com/getodk/collect/network/members)
-of **ODK Collect**. As of today, there are no substantive differences between
-the two apps. Users are free to use either one for data collection. KoboToolbox
-is fully compatible with both apps.
-
-Please note that it is not recommended to have both apps installed
-simultaneously as this could lead to some confusion depending on the Android
-settings.
-
-Historically, there were several significant differences between the two. Back
-in 2009, **KoboToolbox** made several changes to **ODK Collect**, creating
-**KoboCollect**, such as _cascading questions_, hiding _delete_, and _edit_
-buttons for field data collection. The **XLSForm** was not yet an option in
-**ODK Collect** and **KoboToolbox** had built a formbuilder for all question
-types and advanced settings, including cascading questions, which were saved
-directly as an XML file for the mobile app. These changes were eventually
-incorporated into **ODK Collect**, along with many other great features. In
-2014, **KoboToolbox** decided to fork **ODK Collect** to create the
-[new KoboCollect](https://github.com/kobotoolbox/collect), with minimal changes,
-including the **KoboToolbox** server in the configuration dropdown, a reference
-back to **ODK Collect**, and the **KoboToolbox** logo and name.
+<p class="note">
+    <strong>Note:</strong> This approach can be useful when your account uses <a href="https://support.kobotoolbox.org/two_factor_authentication.html">two-factor authentication</a>, as you will not be able to download forms or submit data using the normal approach.
+</p>
