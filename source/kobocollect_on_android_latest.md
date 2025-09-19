@@ -23,7 +23,7 @@ The KoboCollect app can be downloaded from the [Google Play Store](https://play.
 
 To collect data with KoboCollect, you must configure the KoboCollect app on your mobile device to connect to the KoboToolbox server. This enables you to download deployed forms from KoboToolbox and send collected data back to the server.
 
-To connect KoboCollect to the KoboToolbox server, you will need your **KoboCollect URL**, your **username**, and your **password**. After the initial manual setup, you can <i class="k-icon-qt-barcode"></i> generate a QR code to configure other devices. 
+To connect KoboCollect to the KoboToolbox server, you will need your **KoboCollect URL**, your **username**, and your **password**. After the initial manual setup, you can [generate a QR code](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) to configure other devices. 
 
 <p class="note">
     <strong>Note:</strong> In the KoboCollect app, user accounts are called <strong>Projects</strong>.
@@ -93,7 +93,7 @@ To set up additional projects in KoboCollect:
 4. When configuration is complete, the main menu will be displayed.
 5. Tap the **Project icon** to open the menu. Both projects should now be visible.
 
-Additional projects can be added by repeating the same process. The active project will be listed first in the 7. **Projects** menu. To switch to a different project, simply tap its icon. 
+Additional projects can be added by repeating the same process. The active project will be listed first in the **Projects** menu. To switch to a different project, simply tap its icon. 
 
 <p class="note">
     To learn more about changing how projects are displayed for easier recognition and switching, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html#project-display-settings">Customizing KoboCollect settings</a>.
@@ -115,7 +115,7 @@ To connect to KoboCollect without authentication:
     - **Username**: (Leave blank)
     - **Password**: (Leave blank)
 
-This approach allows users to download and submit data to any forms shared with `username` that do not require authentication.
+This approach allows users to download and submit data to any forms shared with `username` that do not [require authentication](https://support.kobotoolbox.org/project_sharing_settings.html).
 
 To differentiate enumerators and track submissions, you can ask enumerators to enter a custom username, phone number, and email address in the [User and device identity settings](https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings).
 
