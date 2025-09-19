@@ -37,7 +37,7 @@ User interface settings allow you to adjust the app's appearance, language, and 
 
 | **Setting**    | **Description** |
 | :----------------- | :--------------------------------------------- |
-| Theme    &emsp;&emsp;&emsp;&emsp;           | Choose between light, dark, or system default appearance for the app. |
+| Theme  | Choose between light, dark, or system default appearance for the app. |
 | Language      | Set the language for the app interface display. By default, KoboCollect matches the device language.|
 | Text font size           | Adjust the text size for better readability.            |
 | Navigation           | Customize how you move through forms. Choose between horizontal swipes, forward/back buttons, or a combined layout. |
