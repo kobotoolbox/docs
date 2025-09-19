@@ -36,9 +36,9 @@ Once forms are downloaded, you can begin data collection. Note that once you hav
 4. Navigate through questions by swiping left or clicking **NEXT** after answering.
 5. At the end of the survey, you can choose to **Save as draft**, **Finalize**, or **Send** the form (depending on your [project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings)).
 
-| **Option**    | **Description**                                |
+| **Option** | **Description**                                |
 | :----------------- | :--------------------------------------------- |
-| Save as draft               | The form will be saved to **Drafts** and can still be edited before finalizing. |
+| Save as draft  &emsp;&emsp;&emsp;        | The form will be saved to **Drafts** and can still be edited before finalizing. |
 | Finalize      | The form will be saved to **Ready to send** and can no longer be edited. This option appears only if the **Auto send** setting is set to **Off**.                                  |
 | Send           | The form will be sent to the server directly or queued until an internet connection is available. It can no longer be edited. This option appears only if the **Auto send** setting is enabled.            |
 
@@ -90,7 +90,7 @@ To delete forms:
     - Tap **Delete Selected**.
 
 <p class="note">
-  <strong>Note:</strong> You do not need an internet connection to delete saved forms in KoboCollect. However, if blank forms are accidentally deleted offline, an internet connection is required to recover them for continued data collection. To prevent accidental deletion, you can set access controls in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html/#access-control">project settings</a>.
+  <strong>Note:</strong> You do not need an internet connection to delete saved forms in KoboCollect. However, if blank forms are accidentally deleted offline, an internet connection is required to recover them for continued data collection. To prevent accidental deletion, you can set access controls in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#access-control">project settings</a>.
 </p>
 
 
