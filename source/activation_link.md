@@ -1,4 +1,4 @@
-# Didn't Receive Activation Link After Signing Up
+# Troubleshooting account activation link 
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2f9c5596959cd5fcd825694a4409f1710b9e6bf9/source/activation_link.md" class="reference">19 Jul 2020</a>
 
 After you create your account, an activation link will be sent to the email address you provided. You must click this link within 72 hours to activate your account.
