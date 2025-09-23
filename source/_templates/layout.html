@@ -2,6 +2,12 @@
 
 {% import "_config.html" as config %}
 
+{# Add Zendesk verification meta tag #}
+{% block extrahead %}
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie">
+  {{ super() }}
+{% endblock %}
+
 {# Copied this block from Alabaster source and modified heavily #}
 {%- block content %}
 <div class="page {% if pagename != 'index' %}page--has-sidebar{% endif %} {% block page_classes %}{% endblock %}" id="{{ pagename }}">
