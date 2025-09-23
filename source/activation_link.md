@@ -9,4 +9,4 @@ If you do not click the link within three days, or if the link has expired:
     * A typo in the email address you entered.
     * Your organization’s email domain blocking our messages.
     * The activation email being placed in your spam or junk folder.
-3. If you still cannot access your account, please contact us at support@kobotoolbox.org.
+3. If you still cannot access your account, please contact us at [support@kobotoolbox.org](support@kobotoolbox.org).
