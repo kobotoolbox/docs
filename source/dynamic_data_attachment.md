@@ -4,8 +4,6 @@
 <a href="https://github.com/kobotoolbox/docs/blob/1d7f77a9494f8bbbc0728a28c2e7af03c98f3f7b/source/dynamic_data_attachment.md" class="reference">5
 Aug 2021</a>
 
-<iframe src="https://www.youtube.com/embed/pBqEsFlxqE4?si=6BPiDgOzO4LPO7zv" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 This article explains how to dynamically link data between KoboToolbox projects. Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. 
 
 <p class="note">
@@ -31,6 +29,6 @@ Dynamically linking projects requires a **parent project** and at least one **ch
     - Use a calculate question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
     - Use text, integer, decimal, select_one, or select_multiple question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
 
-
-
+FOR LATER!!!
+<iframe src="https://www.youtube.com/embed/pBqEsFlxqE4?si=6BPiDgOzO4LPO7zv" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
