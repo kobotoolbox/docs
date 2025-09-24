@@ -6,7 +6,7 @@ barcodes and QR codes using the device camera. When a code is scanned with the
 camera the value (whether numbers or text) stored in the code is captured.
 
 <p class="note">
-  Barcode/QR code scanning only works when using KoboCollect on mobile devices.
+  Barcode/QR code scanning only works when <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">using KoboCollect</a> on mobile devices.
 </p>
 
 A wide range of Barcode and QR code formats are supported, including the
