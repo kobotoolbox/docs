@@ -4,6 +4,11 @@
 **-- Kindly report any uncovered issue on our
 [community forum](https://community.kobotoolbox.org/)--**
 
+<p class="note">
+    To learn more about connecting KoboCollect to your KoboToolbox account, configuring KoboCollect settings, and collecting data with the app, see <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Getting started with KoboCollect</a>, <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Customizing KoboCollect settings</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Data collection using KoboCollect</a>.
+</p>
+
+
 _Common error messages with troubleshooting guides:_
 
 **Error: Message 'Error getting form list' after selecting 'Get blank forms'**
