@@ -1,11 +1,10 @@
 # Collecting Data Offline
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3890a9d036d6dc788040f0e4f8220c792ad86417/source/data-offline.md" class="reference">7 Jul 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7a8a18d56ea285b4b87535e367b407c1b7f54afc/source/data-offline.md" class="reference">24 Sep 2025</a>
 
 **All data collection can take place offline, both with KoboCollect and with Web
 Forms.**
 
-When a user enters data it is stored first on the device. KoboCollect can be set
-to attempt sending the information through a network connection immediately or
+When a user enters data it is stored first on the device. KoboCollect [can be set](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) to attempt sending the information through a network connection immediately or
 only at a later stage when the interviewer or supervisor wants to upload
 finalized forms. Web Forms will always attempt to upload data immediately and
 will retry until a connection has been established again.
