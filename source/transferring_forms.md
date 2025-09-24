@@ -10,9 +10,9 @@ This support article will show you how to do this.
 
 You will need the following items to follow the instructions outlined below:
 
--   An Android device that has the latest version of the deployed form. (It is
-    recommended to get the latest version of the deployed form to the device by
-    selecting the **Get Blank Form** from your **KoboCollect Android app**.)
+-   An Android device that has the [KoboCollect app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) with the latest version of the deployed form. (It is
+    recommended to [get the latest version](https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms) of the deployed form to the device by
+    clicking **Download Form** from your **KoboCollect Android app**.)
 -   An Android device that does not have the latest version of the form (or even
     no form at all).
 -   Both the Android devices should have the KoboCollect app already installed.
