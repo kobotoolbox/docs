@@ -30,8 +30,8 @@ accordion which can be expanded and collapsed as shown below.
 
 ![Guidance hint in Enketo Web forms](/images/question_options/guidance_hint_enketo.gif)
 
-On KoboCollect, guidance hints are not displayed by default. You can choose how
-guidance hints should be displayed in your forms by going to Settings -> Form
+In [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html), guidance hints are not displayed by default. You can [choose how
+guidance hints should be displayed](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) in your forms by going to Settings -> Form
 Management -> Show guidance for questions. Here you have 3 choices: No, Yes -
 always shown and Yes - always collapsed.
 
