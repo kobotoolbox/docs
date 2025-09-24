@@ -26,7 +26,7 @@ during the normal data collection process:
 | Today            | The date of the form's submission                                                                                                                          |
 | Username         | The username of the enumerator if [authentication is used](managing_permissions.md#requiring-passwords-for-accessing-enketo-web-forms) for data collection |
 | Audit            | Record an audit log while the form is being completed. Learn more about audit logging [here](audit_logging.md)                                             |
-| Background Audio | Record audio in the background (only available in KoboCollect)                                                                                             |
+| Background Audio | Record audio in the background                                                                                             |
 | Device ID        | IMEI (International Mobile Equipment Identity)                                                                                                             |
 | Phone Number\*   | The cellphone number of the data collection device                                                                                                         |
 
@@ -58,9 +58,8 @@ If you are building your form in XLSForm, you can add metadata as follows:
 
 ## Background audio
 
-When the "Background audio" setting is turned on, KoboCollect will record audio
-while the form is open and continue recording each time the form is opened
-before submitting. Learn more about background audio recording
+When the "Background audio" setting is turned on, audio will be recorded
+while the form is open. Learn more about background audio recording
 [here](recording-interviews.md).
 
 ## Details
