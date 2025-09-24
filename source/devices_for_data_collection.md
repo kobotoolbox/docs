@@ -14,6 +14,10 @@ durability, battery capacity, camera (consider whether you'll need front-facing,
 back-facing, or both), internal storage and memory, internal sensors (GPS,
 movement), connectivity options (WiFi, cellular, BlueTooth, ...), weight, etc.
 
+<p class="note">
+    To learn more about connecting KoboCollect to your KoboToolbox account, configuring KoboCollect settings, and collecting data with the app, see <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Getting started with KoboCollect</a>, <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Customizing KoboCollect settings</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Data collection using KoboCollect</a>.
+</p>
+
 ## Phones vs. Tablets
 
 An important choice early on is whether to choose a phone or a tablet. Phones
