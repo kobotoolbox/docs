@@ -1,13 +1,13 @@
 # Using Alternative Enketo Web Form Styles
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/alternative_enketo.md" class="reference">29 Jul 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/347a1280aadb22c9aebf88650fd6efa1bcadbcdf/source/alternative_enketo.md" class="reference">24 Sep 2025</a>
 
 Enketo web forms can be customized in the way your questions are presented.
 There are two alternative styles that can be selected and even combined:
 **Multiple Pages** and **Grid Theme**.
 
-**Multiple Pages** mode displays one question at a time per screen, or a group
-of questions set to display on the same screen. This is the same way
-[KoboCollect works](group_repeat.md).
+**Multiple Pages** mode displays one question at a time per screen, or a [group
+of questions](group_repeat.md) set to display on the same screen. This is the same way
+KoboCollect works.
 
 **Grid Theme** is an alternative display of questions meant to be more compact
 and more like paper forms where space is often a major concern. theme-grid
