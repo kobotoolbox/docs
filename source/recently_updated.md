@@ -10,4 +10,4 @@
 1. [Recommended Devices for Data Collection](devices_for_data_collection.md) (24 Sep 2025)
 1. [Collecting Data Offline](data-offline.md) (24 Sep 2025)
 1. [Troubleshooting KoboCollect Android Application](troubleshooting_kobocollect.md) (24 Sep 2025)
-1. [Deploying a Form to Start a New Data Collection Project](deploy_form_new_project.md) (24 Sep 2025)
+1. [Using Alternative Enketo Web Form Styles](alternative_enketo.md) (24 Sep 2025)
