@@ -1,5 +1,5 @@
 # Collecting Data through Web Forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/af0834987c87ae22e21dbb4c79f1c12e5a100f71/source/data_through_webforms.md" class="reference">28 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9153704b013430e55a763ac5c392dd30ae5d6bb9/source/data_through_webforms.md" class="reference">24 Sep 2025</a>
 
 ## What are web forms?
 
@@ -13,7 +13,7 @@ supported yet on every device.
 
 ## Why do I need web forms instead of KoboCollect Android App?
 
-You'll always use Enketo web forms if you're not using the KoboCollect app on an
+You'll always use Enketo web forms if you're not using the [KoboCollect app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) on an
 Android device for data collection. However, there are also some appearance
 settings viz. likert for select one question type, multiline for text question
 type etc. and style settings for KoboToolbox’s Layout & Settings which best
