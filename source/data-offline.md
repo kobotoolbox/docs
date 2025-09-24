@@ -4,8 +4,7 @@
 **All data collection can take place offline, both with KoboCollect and with Web
 Forms.**
 
-When a user enters data it is stored first on the device. KoboCollect can be set
-to attempt sending the information through a network connection immediately or
+When a user enters data it is stored first on the device. KoboCollect [can be set](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) to attempt sending the information through a network connection immediately or
 only at a later stage when the interviewer or supervisor wants to upload
 finalized forms. Web Forms will always attempt to upload data immediately and
 will retry until a connection has been established again.
