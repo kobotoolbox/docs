@@ -13,7 +13,7 @@ supported yet on every device.
 
 ## Why do I need web forms instead of KoboCollect Android App?
 
-You'll always use Enketo web forms if you're not using the KoboCollect app on an
+You'll always use Enketo web forms if you're not using the [KoboCollect app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) on an
 Android device for data collection. However, there are also some appearance
 settings viz. likert for select one question type, multiline for text question
 type etc. and style settings for KoboToolbox’s Layout & Settings which best
