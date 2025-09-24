@@ -11,7 +11,7 @@
 
 _Common error messages with troubleshooting guides:_
 
-**Error: Message 'Error getting form list' after selecting 'Get blank forms'**
+**Error: Message 'Error getting form list' after selecting 'Download form'**
 
 **Troubleshooting:** The most likely solutions for this problem is either
 
@@ -20,7 +20,7 @@ _Common error messages with troubleshooting guides:_
    your android phone/tablet for data collection.
 
 2. Another possible explanation is that your phone wasn't connected to the
-   Internet when you selected Get blank forms, for example when you are
+   Internet when you selected **Download form**, for example when you are
    connected to a WiFi network in a public place that requires you to sign in
    through your browser. [This article](kobocollect_on_android_latest.md) discusses in
    greater detail how to connect your device with your account.
@@ -72,7 +72,7 @@ This type of error message occurs when you try to edit your saved form when the
 corresponding blank form is not present or was deleted.
 
 If this occurs, retrieve the corresponding blank form from your KoboToolbox
-account by clicking **Get Blank Form** on the home screen and then select the
+account by clicking **Download form** on the home screen and then select the
 particular form which requires amendments.
 
 **Error: Unable to install KoboCollect android app in a device. Shows the
