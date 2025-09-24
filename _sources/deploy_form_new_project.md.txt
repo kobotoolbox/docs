@@ -1,5 +1,5 @@
 # Deploying a Form to Start a New Data Collection Project
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7fc2f56af1acc518c3a5af755bf673e9c92c79da/source/deploy_form_new_project.md" class="reference">7 Jul 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a14700f771e43d4c8576ee8081f23d197cdd5110/source/deploy_form_new_project.md" class="reference">24 Sep 2025</a>
 
 Once you are ready to begin starting or piloting your data collection for a
 particular project, click the **Deploy** button to make the form live and allow
@@ -29,7 +29,5 @@ projects.
 
 ## Using KoboCollect
 
-If you are using KoboCollect on an Android device and you redeploy your form,
-you will need to delete your old blank form on your device and redo the
-[get blank form](kobocollect_on_android_latest.md) process with internet access to update
-the form to the latest version.
+If you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) on an Android device and you redeploy your form,
+you will need to [download the latest version](https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms) of the form when connected to the internet to use the updated version.
