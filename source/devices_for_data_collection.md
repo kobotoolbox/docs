@@ -1,5 +1,5 @@
 # Recommended Devices for Data Collection
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/devices_for_data_collection.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a19866f2bcf05d3646beb9350085d33adfe39f89/source/devices_for_data_collection.md" class="reference">24 Sep 2025</a>
 
 KoboCollect can run on any Android device, whether tablet or phone, as long as
 they run Android 2.1 (which was released on January 2010) or above. Web forms
