@@ -59,22 +59,78 @@ For each expression in the table below:
 | **XPath**    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
 | `count(instance('parent')/root/data)` | Returns the total number of rows in the parent project. |
-| `count(instance('parent')/root/data[parent_question])`      | Returns the total number of rows in the parent project where `parent_question` is not empty. |
-| `count(instance('parent')/root/data[parent_question =current()/../child_question])` | Returns the total count of instances where the value of `parent_question` in the parent project is equal to the value of `child_question` in the child project. |
+| `count(instance('parent')/root/data[parent_group/parent_question])`      | Returns the total number of rows in the parent project where `parent_question`  (in `parent_group`) is not empty. |
+| `count(instance('parent')/root/data[parent_group/parent_question =current()/../child_question]` | Returns the total count of instances where the value of `parent_question`  (in `parent_group`) in the parent project is equal to the value of `child_question` in the child project. |
 | `instance('parent')/root/data[parent_index_group/parent_index_question =current()/../child_index_question]/parent_group/parent_question` | Returns the value of `parent_question` (in `parent_group`) from the parent project where `child_index_question` in the child project is equal to `parent_index_question` in the parent project. |
 | `instance('parent')/root/data[parent_index_group/parent_index_question =current()/../child_index_question][position()=1]/parent_group/parent_question` | Same as above, but specifies that only data from the first instance of `parent_index_question` should be returned, using the `[position()=1]` argument. Used in case of possible duplicates in the parent form. |
 | `sum(instance('parent')/root/data/parent_group/parent_question)` | Returns the sum of values from `parent_question` (in `parent_group`) from the parent project. Note that `parent_question must be numeric` |
 | `max(instance('parent')/root/data/parent_group/parent_question)`         | Returns the maximum value entered in `parent_questio`n (in parent_group) from the parent project. Note that `parent_question` must be numeric.     |
 | `min(instance('parent')/root/data/parent_group/parent_question)`      | Returns the minimum value entered in `parent_question` (in `parent_group`) from the parent project. Note that `parent_question` must be numeric.     |
 
+<p class="note">
+    <strong>Note:</strong> If the parent question is not included in any group, omit `parent_group/` from the expression
+</p>
+
 ## Setting up projects for dynamic linking
-
-Once your XLSForms are set up, log into your KoboToolbox account and follow these steps:
-Upload and deploy the parent project, if not already deployed. Ensure the parent project has at least one submission.
-Enable data sharing: 
-In the parent project’s SETTINGS > Connect Projects tab, toggle the Data Sharing switch (disabled by default) and click ACKNOWLEDGE AND CONTINUE in the confirmation window. 
-All data is shared by default, but you can restrict specific variables to share with child projects by clicking “Select specific questions to share”.
-
 
 <iframe src="https://www.youtube.com/embed/pBqEsFlxqE4?si=6BPiDgOzO4LPO7zv" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+Once your XLSForms are set up, log into your KoboToolbox account and follow these steps:
+
+1. Upload and deploy the **parent project**, if not already deployed. Ensure the parent project has at least one submission.
+2. Enable data sharing: 
+    - In the parent project’s **SETTINGS > Connect Projects** tab, toggle the **Data Sharing** switch (disabled by default) and click **ACKNOWLEDGE AND CONTINUE** in the confirmation window. 
+    - All data is shared by default, but you can restrict specific variables to share with child projects by clicking "Select specific questions to share".
+
+<p class="note">
+    <strong>Note:</strong> If projects have different owners, the parent project owner must <a href="https://support.kobotoolbox.org/managing_permissions.html">share the project</a> with the child project owner. The minimum permissions required for dynamic data attachments to work are **View form** and **View submissions**. Note that this allows child project administrators to view all parent project data.
+</p>
+
+3. Upload and deploy the **child project**.
+4. Connect the child project to the parent project: 
+    - In the child project's **SETTINGS > Connect Projects** tab, click the "Select a different project to import data from." A dropdown menu will allow you to select a parent project to link. 
+    - Rename the linked parent project to the `xml-external` question name defined in the XLSForm and click **IMPORT**. 
+    - You can then select specific questions from the parent project to share with the child project, or select all questions.
+5. If you add new fields to the parent form and wish to use them in the child project, re-import the parent project in the child project settings.
+
+<p class="note">
+    <strong>Note:</strong> Forms can only be linked together if they are on the same KoboToolbox server.
+</p>
+
+## Dynamically linking a form to itself
+
+It is possible for a parent and child project to be the same project. The steps are the same as those described above. Examples of use cases include: 
+
+- **Daily Monitoring**: If a form is used to survey the same person over time, you can link it to itself to count previous submissions. This can allow you to display a message (e.g., "monitoring is complete") after a certain number of entries or to inform the enumerator of the number of forms submitted, as shown in the example below.
+
+| type | name     | label              | calculation |
+| :--- | :------- | :----------------- | :----------------- |
+| xml-external | monitoring |               |              |
+| text | participant_id | What is the participant's ID? |  |
+| calculate | count |  | count(instance('monitoring')/root/data[monitoring/participant_id = current()/../participant_id]) |
+| note | monitoring_note | This participant has been surveyed ${count} times. | |
+| survey | 
+
+- **Registration Form**: By linking a registration form to itself, you can check whether a user has already been registered. This can allow you to generate an error message or add a constraint if they are already registered, preventing duplicate registrations, as shown in the example below.
+
+| type | name     | label              | calculation | relevant | 
+| :--- | :------- | :----------------- | :----------------- | :------------ |
+| xml-external | registration |               |              | |
+| text | customer_id | What is the customer's ID number? |  | | 
+| calculate | count |  | count(instance('registration')/root/data[registration/customer_id = current()/../customer_id]) | |
+| note | already_registered | This customer is already registered. Please close this form. | | ${count} > 0 |
+| survey | 
+
+## Collecting and managing data with dynamic linking
+
+Data for dynamically linked projects can be collected using the [KoboCollect Android app](https://support.kobotoolbox.org/kobocollect-android.html) or [Enketo web forms](https://support.kobotoolbox.org/data_through_webforms.html).
+
+When collecting data, note the following:
+
+- The parent project must have at least one submission for the child project to function correctly.
+- When collecting data online, there is a five-minute delay in syncing new parent project data with the child project.
+- In offline mode, frequently download the child project to ensure data synchronization with the parent project.
+
+<p class="note">
+    <strong>Note:</strong> You can configure the KoboCollect Android app to automatically update the parent project's data when an internet connection is available. Go to Settings > Form management > Blank form update mode and select either Previously downloaded forms only or Exactly match server. You can set the automatic download frequency to occur every 15 minutes, every hour, every six hours, or every 24 hours. Note that enabling this setting may increase battery consumption.
+</p>
