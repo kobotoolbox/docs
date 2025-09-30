@@ -11,7 +11,11 @@ This article provides a quick guide to getting started with KoboToolbox. Learn h
 ## Creating an account and signing in
 To get started, go to the [Sign up page](https://www.kobotoolbox.org/sign-up/) and create an account on one of our public servers. Most users sign up for an account on our [Global KoboToolbox Server](https://kf.kobotoolbox.org/). Users and organizations that require or prefer data hosting in the European Union can sign up for an account on the [European Union KoboToolbox Server](https://eu.kobotoolbox.org/).
 
-Activate your account using the emailed link, then sign in via the server URL or the [Sign up page](https://www.kobotoolbox.org/sign-up/). For more information about creating an account, see [Creating an account on KoboToolbox](creating_account.md).
+Activate your account using the emailed link, then sign in via the server URL or the [Sign up page](https://www.kobotoolbox.org/sign-up/). 
+
+<p class="note">
+    For more information about creating an account, see <a href="https://support.kobotoolbox.org/creating_account.html">Creating an account on KoboToolbox</a>.
+</p>
 
 
 ## Creating your first project
@@ -21,7 +25,7 @@ To create your first form:
 
 | Option                    | Description                                                                                                           |
 | :------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
-| Build from scratch        | Build a form using the **KoboToolbox** <a href="formbuilder.html" class="reference">Formbuilder</a>.                   |
+| Build from scratch        | Build a form using the KoboToolbox <a href="formbuilder.html" class="reference">Formbuilder</a>.                   |
 | Use a template            | Build a form using a template from the <a href="add_questions_library.html" class="reference">question library</a>.   |
 | Upload XLSForm            | Upload an <a href="edit_forms_excel.html" class="reference">XLSForm</a> file where you have defined your questions.     |
 | Import an XLSForm via URL | Upload an XLSForm file <a href="xls_url.html" class="reference">from an online source</a> such as Google Drive or Dropbox. |
