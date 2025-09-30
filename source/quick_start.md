@@ -25,7 +25,7 @@ To create your first form:
 | Option                    | Description                                                                                                           |
 | :------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
 | Build from scratch        | Build a form using the KoboToolbox <a href="formbuilder.html" class="reference">Formbuilder</a>.                   |
-| Use a template            | Build a form using a template from the <a href="add_questions_library.html" class="reference">question library</a>.   |
+| Use a template            | Build a form using a template from the <a href="question_library.html" class="reference">question library</a>.   |
 | Upload XLSForm            | Upload an <a href="edit_forms_excel.html" class="reference">XLSForm</a> file where you have defined your questions.     |
 | Import an XLSForm via URL | Upload an XLSForm file <a href="xls_url.html" class="reference">from an online source</a> such as Google Drive or Dropbox. |
 
@@ -35,10 +35,10 @@ To create your first form:
 
 ## Building a form using the Formbuilder
 
-1. Once in the Formbuilder, click the <i class="k-icon-plus"></i> **+** button to add your first question. Enter the question label and choose a [question type](question_types.md).
+1. Once in the Formbuilder, click the <i class="k-icon-plus"></i> button to add your first question. Enter the question label and choose a [question type](question_types.md).
 2. To specify question parameters, click the <i class="k-icon-settings"></i> **Settings** icon. For example, you can make a question required, change its appearance, or add [skip logic](skip_logic.md) conditions.
 3. Click <i class="k-icon-view"></i> **Preview form** to view and test your form.
-4. To save the form, click the **Save** button, then <i class="k-icon-close"></i> to close the form.
+4. To save the form, click **Save** in the top right corner, then click <i class="k-icon-close"></i> to close the form.
 
 <p class="note">
     To learn more about using the Formbuilder, see <a href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the KoboToolbox Formbuilder</a> and <a href="https://support.kobotoolbox.org/question_options.html">Using the question options</a>.
