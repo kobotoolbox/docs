@@ -1,5 +1,5 @@
 # Quickstart guide
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/201fa7575dcc0e9576db3efce8d0a66955e1c27a/source/quick_start.md" class="reference">7 Jul 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/de5e7dcfcec534ba447ee21ff65cf9fff07723f2/source/quick_start.md" class="reference">30 Sep 2025</a>
 
 <iframe src="https://www.youtube.com/embed/CYJ-Ob_7Ql8?si=SDjFjZF4zQBE-thP" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

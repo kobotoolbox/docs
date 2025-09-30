@@ -1,5 +1,5 @@
 # Library locking
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2d936225c821d33163324c6fe6093fa30da3c5fa/source/library_locking.md" class="reference">29 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/de5e7dcfcec534ba447ee21ff65cf9fff07723f2/source/library_locking.md" class="reference">30 Sep 2025</a>
 
 "Library locking" refers to the feature enabling various aspects of a survey to
 be "[locked](#locked)" when created from a template containing
