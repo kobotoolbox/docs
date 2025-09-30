@@ -1,61 +1,62 @@
-# Quick Start Overview
+# Quickstart guide
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/201fa7575dcc0e9576db3efce8d0a66955e1c27a/source/quick_start.md" class="reference">7 Jul 2025</a>
 
-Here's how to quickly get started with a **new form**, deploy it as a **survey
-project**, and **start collecting data** in the field.
+<iframe src="https://www.youtube.com/embed/CYJ-Ob_7Ql8?si=SDjFjZF4zQBE-thP" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+This article provides a quick guide to getting started with KoboToolbox. Learn how to create an account, build and deploy a form, and begin collecting data.
+
+
 
 ## Creating an account and signing in
+To get started, go to the [Sign up page](https://www.kobotoolbox.org/sign-up/) and create an account on one of our public servers. Most users sign up for an account on our [Global KoboToolbox Server](https://kf.kobotoolbox.org/). Users and organizations that require or prefer data hosting in the European Union can sign up for an account on the [European Union KoboToolbox Server](https://eu.kobotoolbox.org/).
 
-To get started, go to the
-[**Sign up page**](https://www.kobotoolbox.org/sign-up/) and create an account
-on one of our public servers. Most users sign up for an account on our
-[**Global KoboToolbox Server**](https://kf.kobotoolbox.org/). Users and
-organizations that require or prefer data hosting in the European Union can sign
-up for an account on the
-[**European Union KoboToolbox Server**](https://eu.kobotoolbox.org/).
+Activate your account using the emailed link, then sign in via the server URL or the [Sign up page](https://www.kobotoolbox.org/sign-up/). 
 
-Once you have created your account, activate your account using the emailed
-link. You can then sign in to your account via the server URL or the
-[**Sign up page**](https://www.kobotoolbox.org/sign-up/).
+<p class="note">
+    For more information about creating an account, see <a href="https://support.kobotoolbox.org/creating_account.html">Creating an account on KoboToolbox</a>.
+</p>
 
-For more information about signing up for an account, please see the support
-article [Creating an account on KoboToolbox](creating_account.md).
 
-## Create your first form
+## Creating your first project
 
-1. Create your first form by clicking on New, then choose a source for your
-   project and input project details.
+To create your first form:
+1. Click on **NEW**. You will be prompted to choose a project source.
 
-   ![image](/images/quick_start/new_form.gif)
+| Option                    | Description                                                                                                           |
+| :------------------------ | :-------------------------------------------------------------------------------------------------------------------- |
+| Build from scratch        | Build a form using the KoboToolbox <a href="formbuilder.html" class="reference">Formbuilder</a>.                   |
+| Use a template            | Build a form using a template from the <a href="add_questions_library.html" class="reference">question library</a>.   |
+| Upload XLSForm            | Upload an <a href="edit_forms_excel.html" class="reference">XLSForm</a> file where you have defined your questions.     |
+| Import an XLSForm via URL | Upload an XLSForm file <a href="xls_url.html" class="reference">from an online source</a> such as Google Drive or Dropbox. |
 
-2. Click on the + button to add your first question and choose a
-   [response type](question_types.md).
 
-   ![image](/images/quick_start/add_question.gif)
+2. Select **Build from scratch** to create a new form using the KoboToolbox Formbuilder.
+3. In the **Project details** dialog box, enter the relevant information about your project and then click **CREATE PROJECT**.
 
-3. You can also delete, duplicate, and/or add questions to your library.
+## Building a form using the Formbuilder
 
-   ![image](/images/quick_start/settings.gif)
+1. Once in the Formbuilder, click the <i class="k-icon-plus"></i> **+** button to add your first question. Enter the question label and choose a [question type](question_types.md).
+2. To specify question parameters, click the <i class="k-icon-settings"></i> **Settings** icon. For example, you can make a question required, change its appearance, or add [skip logic](skip_logic.md) conditions.
+3. Click <i class="k-icon-view"></i> **Preview form** to view and test your form.
+4. To save the form, click the **Save** button, then <i class="k-icon-close"></i> to close the form.
 
-4. To add more details to a question, click on a question's Settings. For
-   example, you can add skip logic to a question.
+<p class="note">
+    To learn more about using the Formbuilder, see <a href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the KoboToolbox Formbuilder</a> and <a href="https://support.kobotoolbox.org/question_options.html">Using the question options</a>.
+</p>
 
-   ![image](/images/quick_start/skip_logic.gif)
 
-   (See [here](formbuilder.md) for an overview of all formbuilder functions.)
+## Deploying your form for data collection
 
-5. Click Preview Form to quickly view your questions and test skip logic.
+1. To start collecting data, click **DEPLOY** in the **FORM** page to [deploy your draft form](deploy_form_new_project.md) as a new data collection project.
+2. Under **Collect data**, click **Copy** to share the form link for data entry [from a browser](data_through_webforms.md) on any device (computer, iPhone, Android).
+3. Alternatively, download and set up the [KoboCollect](kobocollect_on_android_latest.md) Android application for mobile data collection.
 
-   ![image](/images/quick_start/preview_form.gif)
 
-6. To save the form click the Save button, then 'X' to close the form.
+<p class="note">
+    <strong>Note:</strong> To <a href="project_sharing_settings.html">share your form</a> with anyone with the form URL, enable “Allow submissions to this form without a username and password” in the <strong>FORM</strong> page, under <strong>Collect data</strong>.
+</p>
 
-7. To start collecting data you need to first
-   [deploy your draft form as a new data collection project](deploy_form_new_project.md).
 
-   ![image](/images/quick_start/save.gif)
+Once you have collected data, you can view, edit, and download it from the **DATA** page of your project. To learn more about managing your data, see the [Managing Projects & Data](https://support.kobotoolbox.org/managing-projects.html) support section.
 
-8. You're ready to collect data! You can enter data
-   [in the browser](data_through_webforms.md) on any device (computer, iPhone,
-   Android) or use our Android application
-   [KoboCollect](kobocollect_on_android_latest.md).
