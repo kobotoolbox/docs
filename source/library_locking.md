@@ -19,7 +19,7 @@ This feature may be useful in a large, distributed team setting where a standard
 template is used, with some locked features, and each team can make necessary
 local adjustments for their needs. The creator of the template can continue to
 make updates, but the locks will restrict changes to specified aspects of the
-form for those who [create a project based on the template](new_form.md).
+form for those who [create a project based on the template](quick_start.md).
 
 <p class="note">
   Locking aspects of a form is separate from
