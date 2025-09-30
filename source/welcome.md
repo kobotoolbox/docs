@@ -16,7 +16,7 @@ With KoboToolbox’s powerful and intuitive [Formbuilder](formbuilder.md), you c
 - **XLSForm:** To create more complex forms, use [XLSForm](https://xlsform.org/en/) in Excel or Google Sheets, upload to KoboToolbox, and edit directly in the KoboToolbox Formbuilder.
 - **Translations:** Easily [add translations](language_dashboard.md) of your forms in hundreds of different languages.
 
-Learn more about [form building](new_form.md).
+Learn more about [form building](quick_start.md).
 
 ## Using the question library
 
@@ -61,7 +61,7 @@ KoboToolbox makes it easy to identify and share insights with reports, data visu
 
 ## Managing projects and teams
 
-Easily manage one survey or hundreds with KoboToolbox’s [project management](overview_of_creating_a_project.md) features, including project summaries, permissions, and case management.
+Easily manage one survey or hundreds with KoboToolbox’s [project management](managing-projects.md) features, including project summaries, permissions, and case management.
 
 ![Project management](/images/welcome/project_management.png)
 
