@@ -116,6 +116,10 @@ h2 {
   font-size: 1.5em;
 }
 
+section:has(h2:first-child) {
+  scroll-margin-top: 75px;
+}
+
 h3 {
   font-size: 1.25em;
 }
