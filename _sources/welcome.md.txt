@@ -1,5 +1,5 @@
 # Basics of KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/welcome.md" class="reference">3 May 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6d69058d2ffdb6f9b2e9542d9ebf836163d01715/source/welcome.md" class="reference">30 Sep 2025</a>
 
 KoboToolbox is an innovative open source platform for collecting, managing, and visualizing data. It is the mostly widely used data tool for social impact initiatives across the globe. Learn more about [how KoboToolbox supports nonprofit organizations](about_kobotoolbox.md) with access to high quality tools for creating data-driven change.
 
@@ -16,7 +16,7 @@ With KoboToolbox’s powerful and intuitive [Formbuilder](formbuilder.md), you c
 - **XLSForm:** To create more complex forms, use [XLSForm](https://xlsform.org/en/) in Excel or Google Sheets, upload to KoboToolbox, and edit directly in the KoboToolbox Formbuilder.
 - **Translations:** Easily [add translations](language_dashboard.md) of your forms in hundreds of different languages.
 
-Learn more about [form building](new_form.md).
+Learn more about [form building](quick_start.md).
 
 ## Using the question library
 
@@ -61,7 +61,7 @@ KoboToolbox makes it easy to identify and share insights with reports, data visu
 
 ## Managing projects and teams
 
-Easily manage one survey or hundreds with KoboToolbox’s [project management](overview_of_creating_a_project.md) features, including project summaries, permissions, and case management.
+Easily manage one survey or hundreds with KoboToolbox’s [project management](managing-projects.md) features, including project summaries, permissions, and case management.
 
 ![Project management](/images/welcome/project_management.png)
 
