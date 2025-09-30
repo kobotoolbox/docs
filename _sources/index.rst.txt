@@ -14,8 +14,6 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
   welcome
   about_kobotoolbox
-  overview_of_creating_a_project
-  new_form
   quick_start
 
 

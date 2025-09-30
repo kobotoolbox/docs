@@ -1,5 +1,5 @@
 # Library locking
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2d936225c821d33163324c6fe6093fa30da3c5fa/source/library_locking.md" class="reference">29 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/de5e7dcfcec534ba447ee21ff65cf9fff07723f2/source/library_locking.md" class="reference">30 Sep 2025</a>
 
 "Library locking" refers to the feature enabling various aspects of a survey to
 be "[locked](#locked)" when created from a template containing
@@ -19,7 +19,7 @@ This feature may be useful in a large, distributed team setting where a standard
 template is used, with some locked features, and each team can make necessary
 local adjustments for their needs. The creator of the template can continue to
 make updates, but the locks will restrict changes to specified aspects of the
-form for those who [create a project based on the template](new_form.md).
+form for those who [create a project based on the template](quick_start.md).
 
 <p class="note">
   Locking aspects of a form is separate from
