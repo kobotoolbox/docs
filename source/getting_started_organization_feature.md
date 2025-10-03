@@ -10,7 +10,7 @@ This article includes:
 -   How to remove users from your Team
 
 <p class="note">
-  <b>Note:</b> This feature is currently only available to users on Teams and Enterprise Plans.
+  <b>Note:</b> This feature is currently only available to users on <a class="reference external" href="https://www.kobotoolbox.org/teams/">Teams</a> and <a class="reference external" href="https://www.kobotoolbox.org/enterprise/">Enterprise</a> Plans.
 </p>
 
 ## Project ownership
@@ -23,7 +23,7 @@ A key aspect of the Team management feature is that project ownership is central
 By centralizing project ownership, the Team management feature gives you more oversight and effective team management.
 
 <p class="note">
-  <b>Note:</b> This feature only affects project ownership. It does not affect project sharing permissions. Previously configured sharing permissions will not be affected when project ownership is transferred to a Team. If you have management permissions for a project, you will continue to have those permissions and will be able to share the project as usual. (See the support article on <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html">project sharing permissions</a>).
+  <b>Note:</b> This feature only affects project ownership. It does not affect project sharing permissions. Previously configured sharing permissions will not be affected when project ownership is transferred to a Team. If you have management permissions for a project, you will continue to have those permissions and will be able to share the project as usual. For more information, see <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html">Sharing projects with user-level permissions</a>.
 </p>
 
 ## Roles for Teams
@@ -32,7 +32,7 @@ There are three different roles for members in a Team, each with specific functi
 
 1. **Owner:** The Owner can view and manage all projects and users in the Team as well as the Plan and Settings. Each Team in KoboToolbox can have only one Owner.
    - **Project views and management:** The Owner can view all the Team’s projects and has full project management permissions.
-   - **Project ownership transfers:** The Owner can transfer ownership of any of the Team’s projects to a user outside of the Team. (See the support article on [transferring project ownership](https://support.kobotoolbox.org/managing_permissions.html#transferring-ownership-of-a-project))
+   - **Project ownership transfers:** The Owner can [transfer ownership](https://support.kobotoolbox.org/project_sharing_settings.html#transferring-ownership-of-a-project) of any of the Team’s projects to a user outside of the Team.
    - **User management:** The Owner can add or remove Team members and assign different roles.
    - **Plan and usage management:** The Owner can manage the Team’s Plan and Settings and view the Usage page.
 
