@@ -132,5 +132,41 @@ When collecting data, note the following:
 - In offline mode, frequently download the child project to ensure data synchronization with the parent project.
 
 <p class="note">
-    <strong>Note:</strong> You can configure the KoboCollect Android app to automatically update the parent project's data when an internet connection is available. Go to Settings > Form management > Blank form update mode and select either Previously downloaded forms only or Exactly match server. You can set the automatic download frequency to occur every 15 minutes, every hour, every six hours, or every 24 hours. Note that enabling this setting may increase battery consumption.
+    <strong>Note:</strong> You can <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">configure the KoboCollect Android app</a> to automatically update the parent project's data when an internet connection is available. Go to <strong>Settings > Form management > Blank form update mode</strong> and select either <strong>Previously downloaded forms only</strong> or <strong>Exactly match server</strong>. You can set the automatic download frequency to occur every 15 minutes, every hour, every six hours, or every 24 hours. Note that enabling this setting may increase battery consumption.
 </p>
+
+## Troubleshooting
+
+<details>
+<summary><strong>Error or crash when linking forms</strong></summary>
+Dynamic data attachments cannot connect to an empty parent project. Add at least one submission to the parent project first, then link the forms again.
+</details>
+
+<details>
+<summary><strong>Parent data not showing in the child form</strong></summary>
+Check that the calculation syntax in the child form is correct and that the relevant questions are shared in both projects. If your parent question is in a question group, be sure to include the group name in the XPath expression. Note that new parent project data takes up to five minutes to sync when you are online. If you add new fields to the parent form and want to use them in the child project, open the child project settings, re-import the parent project, and redeploy.
+</details>
+
+<details>
+<summary><strong>Child form loads slowly</strong></summary>
+Large dynamic data attachments can slow down form loading. Share only the questions the child form needs instead of the full list of questions, then redeploy and try again.
+</details>
+
+<details>
+<summary><strong>Dynamic data not refreshing in KoboCollect</strong></summary>
+If you are using KoboCollect and collecting data offline, data must first be submitted to the parent project and then downloaded to your data collection device for the dynamic data attachment to work. Both steps require an internet connection. Downloading parent data is similar to downloading a new version of a form, and the KoboCollect app can be configured to [automatically download new data](kobocollect_settings.md) at a set frequency. It is not recommended to rely on dynamic data attachments for data collected offline within a short period of time.
+</details>
+
+<details>
+<summary><strong>Dynamic data attachment not working inside question groups</strong></summary>
+To pull dynamic data from a parent form into a child form with question groups, ensure the index question (e.g., the identification number) in the child form is in the same group as the calculation for the dynamic data. See sample files <a href="https://community.kobotoolbox.org/uploads/short-url/z5RpC1M3wj9716z9qQ8pWx9Pb4V.xlsx">Round 1 (Within Groups).xlsx</a> and <a href="https://community.kobotoolbox.org/uploads/short-url/8JZvWJcrCxzKBllQYglRyAVyk03.xlsx">Round 2 (Within Groups).xlsx</a> for an example of dynamic data attachments within groups.
+</details>
+
+<details>
+<summary><strong>Error evaluation fields in KoboCollect</strong></summary>
+If your parent form contains duplicate submissions, you may receive an error message in KoboCollect stating “Error evaluating field / XPath evaluation: type mismatch /This field is repeated.” To solve this issue and pull data only from the first submission containing a specific index value, use the ´[position()=1]´ argument, as below:
+<br><br>
+´instance('parent')/root/data[parent_index_group/parent_index_question =current()/../child_index_question][position()=1]/parent_group/parent_question´
+
+</details>
+
