@@ -1,4 +1,4 @@
-# Dynamic Data Attachments
+# Dynamic data attachments
 
 **Last updated:**
 <a href="https://github.com/kobotoolbox/docs/blob/1d7f77a9494f8bbbc0728a28c2e7af03c98f3f7b/source/dynamic_data_attachment.md" class="reference">5
@@ -20,7 +20,7 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 1. In the `survey` worksheet of your XLSForm, add a row and set the question type to `xml-external`.
 2. In the `name` column, provide a short name for the parent form. This name can consist of Latin alphabet characters, underscores, and numbers.
 
-**Survey worksheet**
+**survey worksheet**
 
 | type | name     | label              |
 | :--- | :------- | :----------------- |
@@ -32,7 +32,7 @@ Dynamically linking projects requires a **parent project** and at least one **ch
     - Use a **calculate** question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
     - Use **text**, **integer**, **decimal**, **select_one**, or **select_multiple** question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
   
-**Survey worksheet**
+**survey worksheet**
       
 | type | name     | label              | calculation |
 | :--- | :------- | :----------------- | :----------------- |
@@ -107,7 +107,7 @@ It is possible for a parent and child project to be the same project. The steps 
 
 - **Daily Monitoring**: If a form is used to survey the same person over time, you can link it to itself to count previous submissions. This can allow you to display a message (e.g., "monitoring is complete") after a certain number of entries or to inform the enumerator of the number of forms submitted, as shown in the example below.
 
-**Survey worksheet**
+**survey worksheet**
 
 | type | name     | label              | calculation |
 | :--- | :------- | :----------------- | :----------------- |
@@ -119,7 +119,7 @@ It is possible for a parent and child project to be the same project. The steps 
 
 - **Registration Form**: By linking a registration form to itself, you can check whether a user has already been registered. This can allow you to generate an error message or add a constraint if they are already registered, preventing duplicate registrations, as shown in the example below.
 
-**Survey worksheet**
+**survey worksheet**
 
 | type | name     | label              | calculation | relevant | 
 | :--- | :------- | :----------------- | :----------------- | :------------ |
