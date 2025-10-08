@@ -12,7 +12,7 @@ This article explains how to dynamically link data between KoboToolbox projects.
 
 You can retrieve various non-media responses from a parent project and perform calculations on this linked data in a child project. This can be useful for retrieving baseline data, contact information, or health records in cohort studies, or for confirming or verifying previously collected data. 
 
-We recommend using [XLSForm](https://support.kobotoolbox.org/edit_forms_excel.html) to set up dynamic data attachments. For examples of parent and child projects, download sample files [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/Round_1.xlsx) and [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/Round_2.xlsx).
+We recommend using [XLSForm](https://support.kobotoolbox.org/edit_forms_excel.html) to set up dynamic data attachments. For examples of parent and child projects, download sample files [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) and [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx).
 
 ## Dynamically linking projects in XLSForm
 
