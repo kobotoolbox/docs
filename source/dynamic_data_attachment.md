@@ -7,7 +7,7 @@ Aug 2021</a>
 This article explains how to dynamically link data between KoboToolbox projects. Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. 
 
 <p class="note">
-    <strong>Note:</strong> Dynamic data attachments function similarly to the <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">`pulldata()`</a> function but eliminate the need for separate CSV files, since the data from a linked parent project serves as the data source.
+    <strong>Note:</strong> Dynamic data attachments function similarly to the <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a> function but eliminate the need for separate CSV files, since the data from a linked parent project serves as the data source.
 </p>
 
 You can retrieve various non-media responses from a parent project and perform calculations on this linked data in a child project. This can be useful for retrieving baseline data, contact information, or health records in cohort studies, or for confirming or verifying previously collected data. 
@@ -17,8 +17,10 @@ We recommend using [XLSForm](https://support.kobotoolbox.org/edit_forms_excel.ht
 ## Dynamically linking projects in XLSForm
 
 Dynamically linking projects requires a **parent project** and at least one **child project**. The **parent project** requires no modification from a normal XLSForm. However, setting up the **child project(s)** involves the following steps:
-1. Add a row at the beginning of your XLSForm and set the question type to `xml-external`.
+1. In the `survey` worksheet of your XLSForm, add a row and set the question type to `xml-external`.
 2. In the `name` column, provide a short name for the parent form. This name can consist of Latin alphabet characters, underscores, and numbers.
+
+**Survey worksheet**
 
 | type | name     | label              |
 | :--- | :------- | :----------------- |
@@ -26,9 +28,11 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 | survey | 
 
 
-3. Throughout the form, you can retrieve values from the parent project by creating a new question and including the [appropriate expression](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments) in the `calculation` column (see table [below](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). You can use the following question types to retrieve data:
+3. Throughout the form, you can retrieve values from the parent project by creating a new question and including the appropriate expression in the `calculation` column (see table [below](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). You can use the following question types to retrieve data:
     - Use a **calculate** question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
     - Use **text**, **integer**, **decimal**, **select_one**, or **select_multiple** question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
+  
+**Survey worksheet**
       
 | type | name     | label              | calculation |
 | :--- | :------- | :----------------- | :----------------- |
@@ -39,7 +43,7 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 
 <p class="note">
    <strong>Note:</strong> 
-    To display linked data without allowing users to edit the field, use a <strong>calculate</strong> question followed by a <strong>note</strong> question that displays the calculated value. Alternatively, use <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong>, or <strong>select_multiple</strong> questions with the `read_only` column set to `TRUE`.
+    To display linked data without allowing users to edit the field, use a <strong>calculate</strong> question followed by a <strong>note</strong> question that displays the calculated value. Alternatively, use <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong>, or <strong>select_multiple</strong> questions with the <code>read_only</code> column set to <code>TRUE</code>.
 </p>
 
 ## Calculation syntax for dynamic data attachments
@@ -68,7 +72,7 @@ For each expression in the table below:
 | `min(instance('parent')/root/data/parent_group/parent_question)`      | Returns the minimum value entered in `parent_question` (in `parent_group`) from the parent project. Note that `parent_question` must be numeric.     |
 
 <p class="note">
-    <strong>Note:</strong> If the parent question is not included in any group, omit `parent_group/` from the expression
+    <strong>Note:</strong> If the parent question is not included in any group, omit <code>parent_group</code> from the expression
 </p>
 
 ## Setting up projects for dynamic linking
@@ -83,7 +87,7 @@ Once your XLSForms are set up, log into your KoboToolbox account and follow thes
     - All data is shared by default, but you can restrict specific variables to share with child projects by clicking "Select specific questions to share".
 
 <p class="note">
-    <strong>Note:</strong> If projects have different owners, the parent project owner must <a href="https://support.kobotoolbox.org/managing_permissions.html">share the project</a> with the child project owner. The minimum permissions required for dynamic data attachments to work are **View form** and **View submissions**. Note that this allows child project administrators to view all parent project data.
+    <strong>Note:</strong> If projects have different owners, the parent project owner must <a href="https://support.kobotoolbox.org/managing_permissions.html">share the project</a> with the child project owner. The minimum permissions required for dynamic data attachments to work are <strong>View form</strong> and <strong>View submissions</strong>. Note that this allows child project administrators to view all parent project data.
 </p>
 
 3. Upload and deploy the **child project**.
@@ -103,6 +107,8 @@ It is possible for a parent and child project to be the same project. The steps 
 
 - **Daily Monitoring**: If a form is used to survey the same person over time, you can link it to itself to count previous submissions. This can allow you to display a message (e.g., "monitoring is complete") after a certain number of entries or to inform the enumerator of the number of forms submitted, as shown in the example below.
 
+**Survey worksheet**
+
 | type | name     | label              | calculation |
 | :--- | :------- | :----------------- | :----------------- |
 | xml-external | monitoring |               |              |
@@ -112,6 +118,8 @@ It is possible for a parent and child project to be the same project. The steps 
 | survey | 
 
 - **Registration Form**: By linking a registration form to itself, you can check whether a user has already been registered. This can allow you to generate an error message or add a constraint if they are already registered, preventing duplicate registrations, as shown in the example below.
+
+**Survey worksheet**
 
 | type | name     | label              | calculation | relevant | 
 | :--- | :------- | :----------------- | :----------------- | :------------ |
@@ -164,9 +172,9 @@ To pull dynamic data from a parent form into a child form with question groups, 
 
 <details>
 <summary><strong>Error evaluation fields in KoboCollect</strong></summary>
-If your parent form contains duplicate submissions, you may receive an error message in KoboCollect stating “Error evaluating field / XPath evaluation: type mismatch /This field is repeated.” To solve this issue and pull data only from the first submission containing a specific index value, use the ´[position()=1]´ argument, as below:
+If your parent form contains duplicate submissions, you may receive an error message in KoboCollect stating “Error evaluating field / XPath evaluation: type mismatch /This field is repeated.” To solve this issue and pull data only from the first submission containing a specific index value, use the <code>[position()=1]</code> argument, as below:
 <br><br>
-´instance('parent')/root/data[parent_index_group/parent_index_question =current()/../child_index_question][position()=1]/parent_group/parent_question´
+<code>instance('parent')/root/data[parent_index_group/parent_index_question =current()/../child_index_question][position()=1]/parent_group/parent_question</code>
 
 </details>
 
