@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Dynamic Data Attachments &#8212; KoboToolbox  documentation</title>
+    <title>Dynamic data attachments &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
@@ -110,174 +110,297 @@
         <section class="page__body" role="main">
           
   <section id="dynamic-data-attachments">
-<h1>Dynamic Data Attachments<a class="headerlink" href="#dynamic-data-attachments" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong>
-<a href="https://github.com/kobotoolbox/docs/blob/1d7f77a9494f8bbbc0728a28c2e7af03c98f3f7b/source/dynamic_data_attachment.md" class="reference">5
-Aug 2021</a></p>
-<p>This support article illustrates how data from one project can be linked
-dynamically and referenced by other projects. It also aims to demonstrate some
-practical examples that this feature supports.</p>
-<p>Dynamically linking projects allows for the same powerful capabilities as the
-<a class="reference internal" href="pull_data_kobotoolbox.html"><span class="std std-doc"><code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> function</span></a> but without the need to
-maintain a separate CSV file since the data stored in a linked project acts as
-the data source. Users can continue collecting data in the <em>parent project</em> and
-simultaneously use that data in other linked <em>child projects</em>, therefore enable
-creation and management of longitudinal survey projects (longitudinal data is
-collected through a series of repeated observations of the same subjects over a
-short or long period). Users can also dynamically link a <em>child project</em> with a
-<strong>shared</strong> <em>parent project</em>.</p>
-<p>Users can retrieve any (non-media) responses (<code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">decimal</span></code>,
-<code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>, etc.) in a linked <em>child project</em> (Round 2 in
-this example) that has already been collected and stored in the <em>parent project</em>
-(Round 1 in this example).</p>
-<p>Users can also perform <a class="reference internal" href="advanced_calculate.html"><span class="std std-doc">various calculations</span></a> on linked
-data in the <em>child project</em>, such as counting (<code class="docutils literal notranslate"><span class="pre">count()</span></code>) responses and
-computing the sum (<code class="docutils literal notranslate"><span class="pre">sum()</span></code>), maximum (<code class="docutils literal notranslate"><span class="pre">max()</span></code>), or minimum (<code class="docutils literal notranslate"><span class="pre">min()</span></code>) value of a
-particular variable.</p>
+<h1>Dynamic data attachments<a class="headerlink" href="#dynamic-data-attachments" title="Permalink to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/2ef8623db249f11232c53973749d30e6b48c98fe/source/dynamic_data_attachment.md" class="reference">8 Oct 2025</a></p>
+<p>This article explains how to dynamically link data between KoboToolbox projects. Dynamic linking allows you to use data from a <strong>parent project</strong> within <strong>child projects</strong>, simplifying the management of longitudinal data collection.</p>
+<p class="note">
+    <strong>Note:</strong> Dynamic data attachments function similarly to the <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a> function but eliminate the need for separate CSV files, since the data from a linked parent project serves as the data source.
+</p>
+<p>You can retrieve various non-media responses from a parent project and perform calculations on this linked data in a child project. This can be useful for retrieving baseline data, contact information, or health records in cohort studies, or for confirming or verifying previously collected data.</p>
+<p>We recommend using <a class="reference external" href="https://support.kobotoolbox.org/edit_forms_excel.html">XLSForm</a> to set up dynamic data attachments. For examples of parent and child projects, download sample files <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx">here</a> and <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx">here</a>.</p>
 <section id="dynamically-linking-projects-in-xlsform">
 <h2>Dynamically linking projects in XLSForm<a class="headerlink" href="#dynamically-linking-projects-in-xlsform" title="Permalink to this heading">¶</a></h2>
-<p>Dynamically linking projects requires a <em>parent project</em> and at least one <em>child
-project</em>. The
-<a download class="reference" href="./_static/files/dynamic_data_attachment/Round_1.xlsx"><em>parent
-project</em></a> requires no additional modification from a normal XLSForm; however,
-the
-<a download class="reference" href="./_static/files/dynamic_data_attachment/Round_2.xlsx"><em>child
-project</em></a> involves adding an <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> question type. All subsequent
-references to the <em>parent project</em> occur in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column using the
-node path.</p>
-<p>Users could design their <em>parent project</em> as shown in the image below:</p>
-<p><img alt="Round 1" src="_images/Round_1.png" /></p>
-<p>In the same way, users could design their <em>child project</em> as shown in the image
-below:</p>
-<p><img alt="Round 2" src="_images/Round_2.png" /></p>
-<blockquote>
-<div><p><strong>Note:</strong> The name used for the <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> question type in the <em>child
-project</em> is crucial for linking with the <em>parent project</em>. In the above
-example, it was named “survey”, but it can be any name consisting of Latin
-characters and numbers.</p>
-</div></blockquote>
-</section>
-<section id="understanding-the-syntax-used-in-the-calculation-column-of-the-child-project">
-<h2>Understanding the syntax used in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column of the <em>child project</em><a class="headerlink" href="#understanding-the-syntax-used-in-the-calculation-column-of-the-child-project" title="Permalink to this heading">¶</a></h2>
+<p>Dynamically linking projects requires a <strong>parent project</strong> and at least one <strong>child project</strong>. The <strong>parent project</strong> requires no modification from a normal XLSForm. However, setting up the <strong>child project(s)</strong> involves the following steps:</p>
+<ol class="arabic simple">
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet of your XLSForm, add a row and set the question type to <code class="docutils literal notranslate"><span class="pre">xml-external</span></code>.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column, provide a short name for the parent form. This name can consist of Latin alphabet characters, underscores, and numbers.</p></li>
+</ol>
+<p><strong>survey worksheet</strong></p>
 <table class="colwidths-auto docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head"><p>XLSForm Syntax</p></th>
-<th class="text-left head"><p>Description</p></th>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">count(instance('survey')/root/data[P_Enumerator])</span></code></p></td>
-<td class="text-left"><p>Return the total count of <code class="docutils literal notranslate"><span class="pre">P_Enumerator</span></code> in the <em>parent project</em>.</p></td>
+<tr class="row-even"><td class="text-left"><p>xml-external</p></td>
+<td class="text-left"><p>parent</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">count(instance('survey')/root/data[P_Enumerator</span> <span class="pre">=</span> <span class="pre">current()/../C_Enumerator])</span></code></p></td>
-<td class="text-left"><p>Return the total count of where <code class="docutils literal notranslate"><span class="pre">C_Enumerator</span></code> in the <em>child project</em> is equal to <code class="docutils literal notranslate"><span class="pre">P_Enumerator</span></code> in the <em>parent project</em>.</p></td>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">instance('survey')/root/data[P_Demographic/P_SN</span> <span class="pre">=</span> <span class="pre">current()/../C_SN]/P_Demographic/P_Name</span></code></p></td>
-<td class="text-left"><p>Return <code class="docutils literal notranslate"><span class="pre">P_Name</span></code> (<code class="docutils literal notranslate"><span class="pre">P_Demographic</span></code> group) from the <em>parent project</em> where <code class="docutils literal notranslate"><span class="pre">C_SN</span></code> in the <em>child project</em> is equal to <code class="docutils literal notranslate"><span class="pre">P_SN</span></code> in the <em>parent project</em>.</p></td>
+</tbody>
+</table>
+<ol class="arabic simple" start="3">
+<li><p>Throughout the form, you can retrieve values from the parent project by creating a new question and including the appropriate expression in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column (see table <a class="reference external" href="https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments">below</a>). You can use the following question types to retrieve data:</p>
+<ul class="simple">
+<li><p>Use a <strong>calculate</strong> question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).</p></li>
+<li><p>Use <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong>, or <strong>select_multiple</strong> question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>survey worksheet</strong></p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>calculation</p></th>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">instance('survey')/root/data[P_Demographic/P_SN</span> <span class="pre">=</span> <span class="pre">current()/../C_SN]/P_Demographic/P_Age</span></code></p></td>
-<td class="text-left"><p>Return <code class="docutils literal notranslate"><span class="pre">P_Age</span></code> (<code class="docutils literal notranslate"><span class="pre">P_Demographic</span></code> group) from the <em>parent project</em> where <code class="docutils literal notranslate"><span class="pre">C_SN</span></code> in the <em>child project</em> is equal to <code class="docutils literal notranslate"><span class="pre">P_SN</span></code> in the <em>parent project</em>.</p></td>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>xml-external</p></td>
+<td class="text-left"><p>parent</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">instance('survey')/root/data[P_Demographic/P_SN</span> <span class="pre">=</span> <span class="pre">current()/../C_SN]/P_Demographic/P_Sex</span></code></p></td>
-<td class="text-left"><p>Return <code class="docutils literal notranslate"><span class="pre">P_Sex</span></code> (<code class="docutils literal notranslate"><span class="pre">P_Demographic</span></code> group) from the <em>parent project</em> where <code class="docutils literal notranslate"><span class="pre">C_SN</span></code> in the <em>child project</em> is equal to <code class="docutils literal notranslate"><span class="pre">P_SN</span></code> in the <em>parent project</em>.</p></td>
+<tr class="row-odd"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>participant_id</p></td>
+<td class="text-left"><p>What is the participant’s ID?</p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">instance('survey')/root/data[P_Demographic/P_SN</span> <span class="pre">=</span> <span class="pre">current()/../C_SN]/P_Demographic/P_Family</span></code></p></td>
-<td class="text-left"><p>Return <code class="docutils literal notranslate"><span class="pre">P_Family</span></code> (<code class="docutils literal notranslate"><span class="pre">P_Demographic</span></code> group) from the <em>parent project</em> where <code class="docutils literal notranslate"><span class="pre">C_SN</span></code> in the <em>child project</em> is equal to <code class="docutils literal notranslate"><span class="pre">P_SN</span></code> in the <em>parent project</em>.</p></td>
+<tr class="row-even"><td class="text-left"><p>integer</p></td>
+<td class="text-left"><p>age</p></td>
+<td class="text-left"><p>Confirm the participant’s age</p></td>
+<td class="text-left"><p>instance(‘parent’)/root/data[enrollment_id =current()/../participant_id]/age</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">sum(instance('survey')/root/data/P_Demographic/P_Family)</span></code></p></td>
-<td class="text-left"><p>Return the sum of <code class="docutils literal notranslate"><span class="pre">P_Family</span></code> (<code class="docutils literal notranslate"><span class="pre">P_Demographic</span></code> group) from the <em>parent project</em>.</p></td>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">max(instance('survey')/root/data/P_Demographic/P_Family)</span></code></p></td>
-<td class="text-left"><p>Return the maximum value entered in <code class="docutils literal notranslate"><span class="pre">P_Family</span></code> (<code class="docutils literal notranslate"><span class="pre">P_Demographic</span></code> group) from the <em>parent project</em>.</p></td>
+</tbody>
+</table>
+<p class="note">
+   <strong>Note:</strong> 
+    To display linked data without allowing users to edit the field, use a <strong>calculate</strong> question followed by a <strong>note</strong> question that displays the calculated value. Alternatively, use <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong>, or <strong>select_multiple</strong> questions with the <code>read_only</code> column set to <code>TRUE</code>.
+</p>
+</section>
+<section id="calculation-syntax-for-dynamic-data-attachments">
+<h2>Calculation syntax for dynamic data attachments<a class="headerlink" href="#calculation-syntax-for-dynamic-data-attachments" title="Permalink to this heading">¶</a></h2>
+<p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column of the row where linked data will be retrieved, include one of the expressions in the table below. These expressions are called <strong>XPaths</strong>.</p>
+<p>For each expression in the table below:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">parent</span></code> is the unique name assigned to the <strong>parent form</strong> (e.g., in the <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> question of the <strong>child form</strong>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_question</span></code> refers to the <code class="docutils literal notranslate"><span class="pre">name</span></code> of a question from the <strong>parent form</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">child_question</span></code> refers to the <code class="docutils literal notranslate"><span class="pre">name</span></code> of a question from the <strong>child form</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> is the identifying question from the <strong>parent form</strong> that links it to the <strong>child form</strong> (e.g., unique ID, organization name).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">child_index_question</span></code> is the identifying question from the <strong>child form</strong> that links it to the <strong>parent form</strong> (e.g., unique ID, organization name).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_group</span></code> refers to the <code class="docutils literal notranslate"><span class="pre">name</span></code> of the group in the <strong>parent form</strong> in which the <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> is located.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_group</span></code> refers to the <code class="docutils literal notranslate"><span class="pre">name</span></code> of the group in the <strong>parent form</strong> in which the <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> is located.</p></li>
+</ul>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p><strong>XPath</strong></p></th>
+<th class="text-left head"><p><strong>Description</strong></p></th>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">min(instance('survey')/root/data/P_Demographic/P_Family)</span></code></p></td>
-<td class="text-left"><p>Return the minimum value entered in <code class="docutils literal notranslate"><span class="pre">P_Family</span></code> (<code class="docutils literal notranslate"><span class="pre">P_Demographic</span></code> group) from the <em>parent project</em>.</p></td>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/data)</span></code></p></td>
+<td class="text-left"><p>Returns the total number of rows in the parent project.</p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">instance('survey')/root/data[P_Demographic/P_SN</span> <span class="pre">=</span> <span class="pre">current()/../C_SN]/P_Demographic/P_Language</span></code></p></td>
-<td class="text-left"><p>Return <code class="docutils literal notranslate"><span class="pre">P_Language</span></code> (<code class="docutils literal notranslate"><span class="pre">P_Demographic</span></code> group) from the <em>parent project</em> where <code class="docutils literal notranslate"><span class="pre">C_SN</span></code> in the <em>child project</em> is equal to <code class="docutils literal notranslate"><span class="pre">P_SN</span></code> in the <em>parent project</em>.</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/data[parent_group/parent_question])</span></code></p></td>
+<td class="text-left"><p>Returns the total number of rows in the parent project where <code class="docutils literal notranslate"><span class="pre">parent_question</span></code>  (in <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) is not empty.</p></td>
 </tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">instance('survey')/root/data[P_Demographic/P_SN</span> <span class="pre">=</span> <span class="pre">current()/../C_SN]/P_Demographic/P_Location</span></code></p></td>
-<td class="text-left"><p>Return <code class="docutils literal notranslate"><span class="pre">P_Location</span></code> (<code class="docutils literal notranslate"><span class="pre">P_Demographic</span></code> group) from the <em>parent project</em> where <code class="docutils literal notranslate"><span class="pre">C_SN</span></code> in the <em>child project</em> is equal to <code class="docutils literal notranslate"><span class="pre">P_SN</span></code> in the <em>parent project</em>.</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/data[parent_group/parent_question</span> <span class="pre">=current()/../child_question]</span></code></p></td>
+<td class="text-left"><p>Returns the total count of instances where the value of <code class="docutils literal notranslate"><span class="pre">parent_question</span></code>  (in <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) in the parent project is equal to the value of <code class="docutils literal notranslate"><span class="pre">child_question</span></code> in the child project.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">instance('parent')/root/data[parent_index_group/parent_index_question</span> <span class="pre">=current()/../child_index_question]/parent_group/parent_question</span></code></p></td>
+<td class="text-left"><p>Returns the value of <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (in <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) from the parent project where <code class="docutils literal notranslate"><span class="pre">child_index_question</span></code> in the child project is equal to <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> in the parent project.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">instance('parent')/root/data[parent_index_group/parent_index_question</span> <span class="pre">=current()/../child_index_question][position()=1]/parent_group/parent_question</span></code></p></td>
+<td class="text-left"><p>Same as above, but specifies that only data from the first instance of <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> should be returned, using the <code class="docutils literal notranslate"><span class="pre">[position()=1]</span></code> argument. Used in case of possible duplicates in the parent form.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">sum(instance('parent')/root/data/parent_group/parent_question)</span></code></p></td>
+<td class="text-left"><p>Returns the sum of values from <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (in <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) from the parent project. Note that <code class="docutils literal notranslate"><span class="pre">parent_question</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">numeric</span></code></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">max(instance('parent')/root/data/parent_group/parent_question)</span></code></p></td>
+<td class="text-left"><p>Returns the maximum value entered in <code class="docutils literal notranslate"><span class="pre">parent_questio</span></code>n (in parent_group) from the parent project. Note that <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> must be numeric.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">min(instance('parent')/root/data/parent_group/parent_question)</span></code></p></td>
+<td class="text-left"><p>Returns the minimum value entered in <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (in <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) from the parent project. Note that <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> must be numeric.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+    <strong>Note:</strong> If the parent question is not included in any group, omit <code>parent_group</code> from the expression
+</p>
+</section>
+<section id="setting-up-projects-for-dynamic-linking">
+<h2>Setting up projects for dynamic linking<a class="headerlink" href="#setting-up-projects-for-dynamic-linking" title="Permalink to this heading">¶</a></h2>
+<iframe src="https://www.youtube.com/embed/pBqEsFlxqE4?si=6BPiDgOzO4LPO7zv" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Once your XLSForms are set up, log into your KoboToolbox account and follow these steps:</p>
+<ol class="arabic simple">
+<li><p>Upload and deploy the <strong>parent project</strong>, if not already deployed. Ensure the parent project has at least one submission.</p></li>
+<li><p>Enable data sharing:</p>
+<ul class="simple">
+<li><p>In the parent project’s <strong>SETTINGS &gt; Connect Projects</strong> tab, toggle the <strong>Data Sharing</strong> switch (disabled by default) and click <strong>ACKNOWLEDGE AND CONTINUE</strong> in the confirmation window.</p></li>
+<li><p>All data is shared by default, but you can restrict specific variables to share with child projects by clicking “Select specific questions to share”.</p></li>
+</ul>
+</li>
+</ol>
+<p class="note">
+    <strong>Note:</strong> If projects have different owners, the parent project owner must <a href="https://support.kobotoolbox.org/managing_permissions.html">share the project</a> with the child project owner. The minimum permissions required for dynamic data attachments to work are <strong>View form</strong> and <strong>View submissions</strong>. Note that this allows child project administrators to view all parent project data.
+</p>
+<ol class="arabic simple" start="3">
+<li><p>Upload and deploy the <strong>child project</strong>.</p></li>
+<li><p>Connect the child project to the parent project:</p>
+<ul class="simple">
+<li><p>In the child project’s <strong>SETTINGS &gt; Connect Projects</strong> tab, click the “Select a different project to import data from.” A dropdown menu will allow you to select a parent project to link.</p></li>
+<li><p>Rename the linked parent project to the <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> question name defined in the XLSForm and click <strong>IMPORT</strong>.</p></li>
+<li><p>You can then select specific questions from the parent project to share with the child project, or select all questions.</p></li>
+</ul>
+</li>
+<li><p>If you add new fields to the parent form and wish to use them in the child project, re-import the parent project in the child project settings.</p></li>
+</ol>
+<p class="note">
+    <strong>Note:</strong> Forms can only be linked together if they are on the same KoboToolbox server.
+</p>
+</section>
+<section id="dynamically-linking-a-form-to-itself">
+<h2>Dynamically linking a form to itself<a class="headerlink" href="#dynamically-linking-a-form-to-itself" title="Permalink to this heading">¶</a></h2>
+<p>It is possible for a parent and child project to be the same project. The steps are the same as those described above. Examples of use cases include:</p>
+<ul class="simple">
+<li><p><strong>Daily Monitoring</strong>: If a form is used to survey the same person over time, you can link it to itself to count previous submissions. This can allow you to display a message (e.g., “monitoring is complete”) after a certain number of entries or to inform the enumerator of the number of forms submitted, as shown in the example below.</p></li>
+</ul>
+<p><strong>survey worksheet</strong></p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>calculation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>xml-external</p></td>
+<td class="text-left"><p>monitoring</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>participant_id</p></td>
+<td class="text-left"><p>What is the participant’s ID?</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>calculate</p></td>
+<td class="text-left"><p>count</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>count(instance(‘monitoring’)/root/data[monitoring/participant_id = current()/../participant_id])</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>note</p></td>
+<td class="text-left"><p>monitoring_note</p></td>
+<td class="text-left"><p>This participant has been surveyed ${count} times.</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Registration Form</strong>: By linking a registration form to itself, you can check whether a user has already been registered. This can allow you to generate an error message or add a constraint if they are already registered, preventing duplicate registrations, as shown in the example below.</p></li>
+</ul>
+<p><strong>survey worksheet</strong></p>
+<table class="colwidths-auto docutils align-default">
+<thead>
+<tr class="row-odd"><th class="text-left head"><p>type</p></th>
+<th class="text-left head"><p>name</p></th>
+<th class="text-left head"><p>label</p></th>
+<th class="text-left head"><p>calculation</p></th>
+<th class="text-left head"><p>relevant</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>xml-external</p></td>
+<td class="text-left"><p>registration</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>customer_id</p></td>
+<td class="text-left"><p>What is the customer’s ID number?</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>calculate</p></td>
+<td class="text-left"><p>count</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>count(instance(‘registration’)/root/data[registration/customer_id = current()/../customer_id])</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>note</p></td>
+<td class="text-left"><p>already_registered</p></td>
+<td class="text-left"><p>This customer is already registered. Please close this form.</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>${count} &gt; 0</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="setting-up-for-dynamic-linking">
-<h2>Setting up for dynamic linking<a class="headerlink" href="#setting-up-for-dynamic-linking" title="Permalink to this heading">¶</a></h2>
-<p>Users can link projects dynamically in two scenarios:</p>
-<ol class="arabic simple">
-<li><p>The same user owns both the <em>parent project</em> and <em>child project</em>, and</p></li>
-<li><p>Different users own each of the projects and the <em>parent project</em> is shared</p></li>
-</ol>
-<section id="both-projects-owned-by-the-same-user">
-<h3>1. Both projects owned by the same user<a class="headerlink" href="#both-projects-owned-by-the-same-user" title="Permalink to this heading">¶</a></h3>
-<p>Follow the steps below to dynamically link projects:</p>
-<p><strong>Step 1:</strong> Upload and deploy the <em>parent project</em>.</p>
-<p><video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_1_survey).mp4" type="video/mp4"></video></p>
-<p><strong>Step 2:</strong> Enable data sharing with <em>child projects</em> by toggling the <strong>Data
-Sharing</strong> switch in the <em>parent project</em>’s <strong>SETTINGS&gt;Connect Projects</strong> section
-(disabled by default), and click <strong>ACKNOWLEDGE AND CONTINUE</strong> in the
-confirmation modal. Users can then restrict specific variables to share with
-<em>child projects</em> or share <strong>all</strong> variables from the table by toggling the
-<strong>Select specific questions</strong> switch.</p>
-<p><video controls><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_1_survey).mp4" type="video/mp4"></video></p>
-<p><strong>Step 3:</strong> Upload and deploy the <em>child project</em>.</p>
-<p><video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_2_survey).mp4" type="video/mp4"></video></p>
-<p><strong>Step 4:</strong> In the <em>child project</em>’s <strong>SETTINGS&gt;Connect Projects</strong>, click the
-<strong>Select a different project to import data from</strong> dropdown menu and select a
-<em>parent project</em> to link. Rename the linked <em>parent project</em> to the same
-<code class="docutils literal notranslate"><span class="pre">xml-external</span></code> question name defined in the XLSForm (“survey” in this example)
-and click <strong>IMPORT</strong>. You can then select specific variables from the <em>parent
-project</em> to share with the <em>child project</em>.</p>
-<p><video controls><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_2_survey).mp4" type="video/mp4"></video></p>
-<p>The <em>child project</em> now has access to data from the <em>parent project</em>. In this
-example, data from the <em>Round 1 Survey</em> is linked to the <em>Round 2 Survey</em>.</p>
-</section>
-<section id="projects-owned-by-different-users">
-<h3>2. Projects owned by different users<a class="headerlink" href="#projects-owned-by-different-users" title="Permalink to this heading">¶</a></h3>
-<p>Assume a scenario where <strong>userA</strong> has a <em>parent project</em> shared with <strong>userB</strong>.
-<strong>userB</strong> can create a <em>child project</em> and link it dynamically with that
-project. For example:</p>
-<p><strong>Step 1:</strong> <strong>userA</strong> should follow <strong>Step 1</strong> and <strong>Step 2</strong> of <strong>Both Projects
-Owned by Same User</strong> to <em>upload</em>, <em>deploy</em> and <em>configure</em> the <em>parent project</em>.</p>
-<p><strong>Step 2:</strong> <strong>userA</strong> should then
-<a class="reference" href="managing_permissions.html" >share the <em>parent
-project</em> with <strong>userB</strong></a> and grant the minimum permissions of: <em>View form</em>
-and <em>View submissions</em>. <strong>userB</strong> can now dynamically link their <em>child project</em>
-to the <em>parent project</em> of <strong>userA</strong>.</p>
-<p><strong>Step 3:</strong> <strong>userB</strong> should now <em>upload</em>, <em>deploy</em> and <em>configure</em> their <em>child
-project</em> as outlined in <strong>Step 3</strong> and <strong>Step 4</strong> of <strong>Both Projects Owned by
-Same User</strong>.</p>
-</section>
-</section>
 <section id="collecting-and-managing-data-with-dynamic-linking">
 <h2>Collecting and managing data with dynamic linking<a class="headerlink" href="#collecting-and-managing-data-with-dynamic-linking" title="Permalink to this heading">¶</a></h2>
-<p>Users can collect data for dynamically linked projects on both the
-<a class="reference" href="kobocollect-android.html"><strong>Collect</strong> Android app</a>
-and <a class="reference" href="data_through_webforms.html"><strong>Enketo</strong> web
-form</a>.</p>
-<p>Please note the following when collecting data:</p>
+<p>Data for dynamically linked projects can be collected using the <a class="reference external" href="https://support.kobotoolbox.org/kobocollect-android.html">KoboCollect Android app</a> or <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Enketo web forms</a>.</p>
+<p>When collecting data, note the following:</p>
 <ul class="simple">
-<li><p>At least one submission must be present in the <em>parent project</em> for the
-<em>child project</em> to function as expected.</p></li>
-<li><p>There is a five-minute delay syncing the <em>parent project</em>’s updated data
-with the <em>child project</em>.</p></li>
-<li><p>Frequently download the <em>child project</em> in <strong>Collect</strong> or <strong>Enketo</strong> (when
-in offline mode) to ensure the data is in sync with the <em>parent project</em>*</p></li>
+<li><p>The parent project must have at least one submission for the child project to function correctly.</p></li>
+<li><p>When collecting data online, there is a five-minute delay in syncing new parent project data with the child project.</p></li>
+<li><p>In offline mode, frequently download the child project to ensure data synchronization with the parent project.</p></li>
 </ul>
-<p>*One can configure the <strong>Collect</strong> Android app, with an internet connection, to
-update the <em>parent project</em>’s data automatically in <strong>General Settings&gt;Form
-management&gt;Blank form update mode&gt;Previously downloaded forms only or Exactly
-match server</strong>. Note that enabling this setting could drain your device’s
-battery faster than usual.</p>
-<p>In this example, some “dummy” entries have been made in the <em>parent project</em>.</p>
-<p><img alt="Data" src="_images/Server_data.png" /></p>
-<p>With some dummy entries in the <em>parent project</em>, the <em>child project</em> can now see
-that data during data collection. In this example <em>child project</em> (<em>Round 2
-Survey</em>), only the two fields of <strong>Enumerators name</strong> and <strong>Identification
-Number</strong> are entered manually while the rest is linked automatically with the
-<em>parent project</em>.</p>
-<p><img alt="Enketo web form" src="_images/Enketo.png" /></p>
+<p class="note">
+    <strong>Note:</strong> You can <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">configure the KoboCollect Android app</a> to automatically update the parent project's data when an internet connection is available. Go to <strong>Settings > Form management > Blank form update mode</strong> and select either <strong>Previously downloaded forms only</strong> or <strong>Exactly match server</strong>. You can set the automatic download frequency to occur every 15 minutes, every hour, every six hours, or every 24 hours. Note that enabling this setting may increase battery consumption.
+</p>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
+<details>
+<summary><strong>Error or crash when linking forms</strong></summary>
+Dynamic data attachments cannot connect to an empty parent project. Add at least one submission to the parent project first, then link the forms again.
+</details>
+<details>
+<summary><strong>Parent data not showing in the child form</strong></summary>
+Check that the calculation syntax in the child form is correct and that the relevant questions are shared in both projects. If your parent question is in a question group, be sure to include the group name in the XPath expression. Note that new parent project data takes up to five minutes to sync when you are online. If you add new fields to the parent form and want to use them in the child project, open the child project settings, re-import the parent project, and redeploy.
+</details>
+<details>
+<summary><strong>Child form loads slowly</strong></summary>
+Large dynamic data attachments can slow down form loading. Share only the questions the child form needs instead of the full list of questions, then redeploy and try again.
+</details>
+<details>
+<summary><strong>Dynamic data not refreshing in KoboCollect</strong></summary>
+If you are using KoboCollect and collecting data offline, data must first be submitted to the parent project and then downloaded to your data collection device for the dynamic data attachment to work. Both steps require an internet connection. Downloading parent data is similar to downloading a new version of a form, and the KoboCollect app can be configured to [automatically download new data](kobocollect_settings.md) at a set frequency. It is not recommended to rely on dynamic data attachments for data collected offline within a short period of time.
+</details>
+<details>
+<summary><strong>Dynamic data attachment not working inside question groups</strong></summary>
+To pull dynamic data from a parent form into a child form with question groups, ensure the index question (e.g., the identification number) in the child form is in the same group as the calculation for the dynamic data. See sample files <a href="https://community.kobotoolbox.org/uploads/short-url/z5RpC1M3wj9716z9qQ8pWx9Pb4V.xlsx">Round 1 (Within Groups).xlsx</a> and <a href="https://community.kobotoolbox.org/uploads/short-url/8JZvWJcrCxzKBllQYglRyAVyk03.xlsx">Round 2 (Within Groups).xlsx</a> for an example of dynamic data attachments within groups.
+</details>
+<details>
+<summary><strong>Error evaluation fields in KoboCollect</strong></summary>
+If your parent form contains duplicate submissions, you may receive an error message in KoboCollect stating “Error evaluating field / XPath evaluation: type mismatch /This field is repeated.” To solve this issue and pull data only from the first submission containing a specific index value, use the <code>[position()=1]</code> argument, as below:
+<br><br>
+<code>instance('parent')/root/data[parent_index_group/parent_index_question =current()/../child_index_question][position()=1]/parent_group/parent_question</code>
+</details>
 </section>
 </section>
 
@@ -292,7 +415,7 @@ Number</strong> are entered manually while the rest is linked automatically with
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Dynamic Data Attachments"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Dynamic data attachments"
               class="feedback-button"
               target="_blank"
             >
@@ -361,11 +484,13 @@ Number</strong> are entered manually while the rest is linked automatically with
 <li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
 <li class="toctree-l1"><a class="reference internal" href="media.html">Adding Various Types of Media (image, audio, video) to a Form</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLSForm</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Dynamic Data Attachments</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Dynamic data attachments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#dynamically-linking-projects-in-xlsform">Dynamically linking projects in XLSForm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#understanding-the-syntax-used-in-the-calculation-column-of-the-child-project">Understanding the syntax used in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column of the <em>child project</em></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#setting-up-for-dynamic-linking">Setting up for dynamic linking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#calculation-syntax-for-dynamic-data-attachments">Calculation syntax for dynamic data attachments</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-projects-for-dynamic-linking">Setting up projects for dynamic linking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dynamically-linking-a-form-to-itself">Dynamically linking a form to itself</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#collecting-and-managing-data-with-dynamic-linking">Collecting and managing data with dynamic linking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data Functionality in KoboToolbox</a></li>
@@ -495,7 +620,7 @@ Number</strong> are entered manually while the rest is linked automatically with
   <script>
     window.docs = {
       currentPagename: "dynamic_data_attachment",
-      currentTitle: "Dynamic Data Attachments",
+      currentTitle: "Dynamic data attachments",
       currentUrl: ("index.html").replace("index.html", "dynamic_data_attachment.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

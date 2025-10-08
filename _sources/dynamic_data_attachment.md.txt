@@ -1,164 +1,177 @@
-# Dynamic Data Attachments
+# Dynamic data attachments
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2ef8623db249f11232c53973749d30e6b48c98fe/source/dynamic_data_attachment.md" class="reference">8 Oct 2025</a>
 
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/1d7f77a9494f8bbbc0728a28c2e7af03c98f3f7b/source/dynamic_data_attachment.md" class="reference">5
-Aug 2021</a>
+This article explains how to dynamically link data between KoboToolbox projects. Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. 
 
-This support article illustrates how data from one project can be linked
-dynamically and referenced by other projects. It also aims to demonstrate some
-practical examples that this feature supports.
+<p class="note">
+    <strong>Note:</strong> Dynamic data attachments function similarly to the <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a> function but eliminate the need for separate CSV files, since the data from a linked parent project serves as the data source.
+</p>
 
-Dynamically linking projects allows for the same powerful capabilities as the
-[`pulldata()` function](pull_data_kobotoolbox.md) but without the need to
-maintain a separate CSV file since the data stored in a linked project acts as
-the data source. Users can continue collecting data in the _parent project_ and
-simultaneously use that data in other linked _child projects_, therefore enable
-creation and management of longitudinal survey projects (longitudinal data is
-collected through a series of repeated observations of the same subjects over a
-short or long period). Users can also dynamically link a _child project_ with a
-**shared** _parent project_.
+You can retrieve various non-media responses from a parent project and perform calculations on this linked data in a child project. This can be useful for retrieving baseline data, contact information, or health records in cohort studies, or for confirming or verifying previously collected data. 
 
-Users can retrieve any (non-media) responses (`text`, `integer`, `decimal`,
-`select_one`, `select_multiple`, etc.) in a linked _child project_ (Round 2 in
-this example) that has already been collected and stored in the _parent project_
-(Round 1 in this example).
-
-Users can also perform [various calculations](advanced_calculate.md) on linked
-data in the _child project_, such as counting (`count()`) responses and
-computing the sum (`sum()`), maximum (`max()`), or minimum (`min()`) value of a
-particular variable.
+We recommend using [XLSForm](https://support.kobotoolbox.org/edit_forms_excel.html) to set up dynamic data attachments. For examples of parent and child projects, download sample files [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) and [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx).
 
 ## Dynamically linking projects in XLSForm
 
-Dynamically linking projects requires a _parent project_ and at least one _child
-project_. The
-<a download class="reference" href="./_static/files/dynamic_data_attachment/Round_1.xlsx">_parent
-project_</a> requires no additional modification from a normal XLSForm; however,
-the
-<a download class="reference" href="./_static/files/dynamic_data_attachment/Round_2.xlsx">_child
-project_</a> involves adding an `xml-external` question type. All subsequent
-references to the _parent project_ occur in the `calculation` column using the
-node path.
+Dynamically linking projects requires a **parent project** and at least one **child project**. The **parent project** requires no modification from a normal XLSForm. However, setting up the **child project(s)** involves the following steps:
+1. In the `survey` worksheet of your XLSForm, add a row and set the question type to `xml-external`.
+2. In the `name` column, provide a short name for the parent form. This name can consist of Latin alphabet characters, underscores, and numbers.
 
-Users could design their _parent project_ as shown in the image below:
+**survey worksheet**
 
-![Round 1](/images/dynamic_data_attachment/Round_1.png)
+| type | name     | label              |
+| :--- | :------- | :----------------- |
+| xml-external | parent |
+| survey | 
 
-In the same way, users could design their _child project_ as shown in the image
-below:
 
-![Round 2](/images/dynamic_data_attachment/Round_2.png)
+3. Throughout the form, you can retrieve values from the parent project by creating a new question and including the appropriate expression in the `calculation` column (see table [below](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). You can use the following question types to retrieve data:
+    - Use a **calculate** question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
+    - Use **text**, **integer**, **decimal**, **select_one**, or **select_multiple** question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
+  
+**survey worksheet**
+      
+| type | name     | label              | calculation |
+| :--- | :------- | :----------------- | :----------------- |
+| xml-external | parent |               |              |
+| text | participant_id | What is the participant's ID? |  |
+| integer | age | Confirm the participant's age | instance('parent')/root/data[enrollment_id =current()/../participant_id]/age |
+| survey | 
 
-> **Note:** The name used for the `xml-external` question type in the _child
-> project_ is crucial for linking with the _parent project_. In the above
-> example, it was named "survey", but it can be any name consisting of Latin
-> characters and numbers.
+<p class="note">
+   <strong>Note:</strong> 
+    To display linked data without allowing users to edit the field, use a <strong>calculate</strong> question followed by a <strong>note</strong> question that displays the calculated value. Alternatively, use <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong>, or <strong>select_multiple</strong> questions with the <code>read_only</code> column set to <code>TRUE</code>.
+</p>
 
-## Understanding the syntax used in the `calculation` column of the _child project_
+## Calculation syntax for dynamic data attachments
 
-| XLSForm Syntax                                                                                  | Description                                                                                                                                           |
-| ----------------------------------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `count(instance('survey')/root/data[P_Enumerator])`                                             | Return the total count of `P_Enumerator` in the _parent project_.                                                                                     |
-| `count(instance('survey')/root/data[P_Enumerator = current()/../C_Enumerator])`                 | Return the total count of where `C_Enumerator` in the _child project_ is equal to `P_Enumerator` in the _parent project_.                             |
-| `instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Name`     | Return `P_Name` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.     |
-| `instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Age`      | Return `P_Age` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.      |
-| `instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Sex`      | Return `P_Sex` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.      |
-| `instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Family`   | Return `P_Family` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_.   |
-| `sum(instance('survey')/root/data/P_Demographic/P_Family)`                                      | Return the sum of `P_Family` (`P_Demographic` group) from the _parent project_.                                                                       |
-| `max(instance('survey')/root/data/P_Demographic/P_Family)`                                      | Return the maximum value entered in `P_Family` (`P_Demographic` group) from the _parent project_.                                                     |
-| `min(instance('survey')/root/data/P_Demographic/P_Family)`                                      | Return the minimum value entered in `P_Family` (`P_Demographic` group) from the _parent project_.                                                     |
-| `instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Language` | Return `P_Language` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_. |
-| `instance('survey')/root/data[P_Demographic/P_SN = current()/../C_SN]/P_Demographic/P_Location` | Return `P_Location` (`P_Demographic` group) from the _parent project_ where `C_SN` in the _child project_ is equal to `P_SN` in the _parent project_. |
+In the `calculation` column of the row where linked data will be retrieved, include one of the expressions in the table below. These expressions are called **XPaths**. 
 
-## Setting up for dynamic linking
+For each expression in the table below:
 
-Users can link projects dynamically in two scenarios:
+- `parent` is the unique name assigned to the **parent form** (e.g., in the `xml-external` question of the **child form**).
+- `parent_question` refers to the `name` of a question from the **parent form**.
+- `child_question` refers to the `name` of a question from the **child form**.
+- `parent_index_question` is the identifying question from the **parent form** that links it to the **child form** (e.g., unique ID, organization name).
+- `child_index_question` is the identifying question from the **child form** that links it to the **parent form** (e.g., unique ID, organization name).
+- `parent_group` refers to the `name` of the group in the **parent form** in which the `parent_question` is located.
+- `parent_index_group` refers to the `name` of the group in the **parent form** in which the `parent_index_question` is located.
 
-1. The same user owns both the _parent project_ and _child project_, and
-2. Different users own each of the projects and the _parent project_ is shared
+| **XPath**    | **Description**                                |
+| :----------------- | :--------------------------------------------- |
+| `count(instance('parent')/root/data)` | Returns the total number of rows in the parent project. |
+| `count(instance('parent')/root/data[parent_group/parent_question])`      | Returns the total number of rows in the parent project where `parent_question`  (in `parent_group`) is not empty. |
+| `count(instance('parent')/root/data[parent_group/parent_question =current()/../child_question]` | Returns the total count of instances where the value of `parent_question`  (in `parent_group`) in the parent project is equal to the value of `child_question` in the child project. |
+| `instance('parent')/root/data[parent_index_group/parent_index_question =current()/../child_index_question]/parent_group/parent_question` | Returns the value of `parent_question` (in `parent_group`) from the parent project where `child_index_question` in the child project is equal to `parent_index_question` in the parent project. |
+| `instance('parent')/root/data[parent_index_group/parent_index_question =current()/../child_index_question][position()=1]/parent_group/parent_question` | Same as above, but specifies that only data from the first instance of `parent_index_question` should be returned, using the `[position()=1]` argument. Used in case of possible duplicates in the parent form. |
+| `sum(instance('parent')/root/data/parent_group/parent_question)` | Returns the sum of values from `parent_question` (in `parent_group`) from the parent project. Note that `parent_question must be numeric` |
+| `max(instance('parent')/root/data/parent_group/parent_question)`         | Returns the maximum value entered in `parent_questio`n (in parent_group) from the parent project. Note that `parent_question` must be numeric.     |
+| `min(instance('parent')/root/data/parent_group/parent_question)`      | Returns the minimum value entered in `parent_question` (in `parent_group`) from the parent project. Note that `parent_question` must be numeric.     |
 
-### 1. Both projects owned by the same user
+<p class="note">
+    <strong>Note:</strong> If the parent question is not included in any group, omit <code>parent_group</code> from the expression
+</p>
 
-Follow the steps below to dynamically link projects:
+## Setting up projects for dynamic linking
 
-**Step 1:** Upload and deploy the _parent project_.
+<iframe src="https://www.youtube.com/embed/pBqEsFlxqE4?si=6BPiDgOzO4LPO7zv" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_1_survey).mp4" type="video/mp4"></video>
+Once your XLSForms are set up, log into your KoboToolbox account and follow these steps:
 
-**Step 2:** Enable data sharing with _child projects_ by toggling the **Data
-Sharing** switch in the _parent project_’s **SETTINGS>Connect Projects** section
-(disabled by default), and click **ACKNOWLEDGE AND CONTINUE** in the
-confirmation modal. Users can then restrict specific variables to share with
-_child projects_ or share **all** variables from the table by toggling the
-**Select specific questions** switch.
+1. Upload and deploy the **parent project**, if not already deployed. Ensure the parent project has at least one submission.
+2. Enable data sharing: 
+    - In the parent project’s **SETTINGS > Connect Projects** tab, toggle the **Data Sharing** switch (disabled by default) and click **ACKNOWLEDGE AND CONTINUE** in the confirmation window. 
+    - All data is shared by default, but you can restrict specific variables to share with child projects by clicking "Select specific questions to share".
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_1_survey).mp4" type="video/mp4"></video>
+<p class="note">
+    <strong>Note:</strong> If projects have different owners, the parent project owner must <a href="https://support.kobotoolbox.org/managing_permissions.html">share the project</a> with the child project owner. The minimum permissions required for dynamic data attachments to work are <strong>View form</strong> and <strong>View submissions</strong>. Note that this allows child project administrators to view all parent project data.
+</p>
 
-**Step 3:** Upload and deploy the _child project_.
+3. Upload and deploy the **child project**.
+4. Connect the child project to the parent project: 
+    - In the child project's **SETTINGS > Connect Projects** tab, click the "Select a different project to import data from." A dropdown menu will allow you to select a parent project to link. 
+    - Rename the linked parent project to the `xml-external` question name defined in the XLSForm and click **IMPORT**. 
+    - You can then select specific questions from the parent project to share with the child project, or select all questions.
+5. If you add new fields to the parent form and wish to use them in the child project, re-import the parent project in the child project settings.
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Uploading_and_Deploying_xlsform_(round_2_survey).mp4" type="video/mp4"></video>
+<p class="note">
+    <strong>Note:</strong> Forms can only be linked together if they are on the same KoboToolbox server.
+</p>
 
-**Step 4:** In the _child project_'s **SETTINGS>Connect Projects**, click the
-**Select a different project to import data from** dropdown menu and select a
-_parent project_ to link. Rename the linked _parent project_ to the same
-`xml-external` question name defined in the XLSForm ("survey" in this example)
-and click **IMPORT**. You can then select specific variables from the _parent
-project_ to share with the _child project_.
+## Dynamically linking a form to itself
 
-<video controls><source src="./_static/files/dynamic_data_attachment/Connect_Projects_(round_2_survey).mp4" type="video/mp4"></video>
+It is possible for a parent and child project to be the same project. The steps are the same as those described above. Examples of use cases include: 
 
-The _child project_ now has access to data from the _parent project_. In this
-example, data from the _Round 1 Survey_ is linked to the _Round 2 Survey_.
+- **Daily Monitoring**: If a form is used to survey the same person over time, you can link it to itself to count previous submissions. This can allow you to display a message (e.g., "monitoring is complete") after a certain number of entries or to inform the enumerator of the number of forms submitted, as shown in the example below.
 
-### 2. Projects owned by different users
+**survey worksheet**
 
-Assume a scenario where **userA** has a _parent project_ shared with **userB**.
-**userB** can create a _child project_ and link it dynamically with that
-project. For example:
+| type | name     | label              | calculation |
+| :--- | :------- | :----------------- | :----------------- |
+| xml-external | monitoring |               |              |
+| text | participant_id | What is the participant's ID? |  |
+| calculate | count |  | count(instance('monitoring')/root/data[monitoring/participant_id = current()/../participant_id]) |
+| note | monitoring_note | This participant has been surveyed ${count} times. | |
+| survey | 
 
-**Step 1:** **userA** should follow **Step 1** and **Step 2** of **Both Projects
-Owned by Same User** to _upload_, _deploy_ and _configure_ the _parent project_.
+- **Registration Form**: By linking a registration form to itself, you can check whether a user has already been registered. This can allow you to generate an error message or add a constraint if they are already registered, preventing duplicate registrations, as shown in the example below.
 
-**Step 2:** **userA** should then
-<a class="reference" href="managing_permissions.html" >share the _parent
-project_ with **userB**</a> and grant the minimum permissions of: _View form_
-and _View submissions_. **userB** can now dynamically link their _child project_
-to the _parent project_ of **userA**.
+**survey worksheet**
 
-**Step 3:** **userB** should now _upload_, _deploy_ and _configure_ their _child
-project_ as outlined in **Step 3** and **Step 4** of **Both Projects Owned by
-Same User**.
+| type | name     | label              | calculation | relevant | 
+| :--- | :------- | :----------------- | :----------------- | :------------ |
+| xml-external | registration |               |              | |
+| text | customer_id | What is the customer's ID number? |  | | 
+| calculate | count |  | count(instance('registration')/root/data[registration/customer_id = current()/../customer_id]) | |
+| note | already_registered | This customer is already registered. Please close this form. | | ${count} > 0 |
+| survey | 
 
 ## Collecting and managing data with dynamic linking
 
-Users can collect data for dynamically linked projects on both the
-<a class="reference" href="kobocollect-android.html">**Collect** Android app</a>
-and <a class="reference" href="data_through_webforms.html">**Enketo** web
-form</a>.
+Data for dynamically linked projects can be collected using the [KoboCollect Android app](https://support.kobotoolbox.org/kobocollect-android.html) or [Enketo web forms](https://support.kobotoolbox.org/data_through_webforms.html).
 
-Please note the following when collecting data:
+When collecting data, note the following:
 
--   At least one submission must be present in the _parent project_ for the
-    _child project_ to function as expected.
--   There is a five-minute delay syncing the _parent project_'s updated data
-    with the _child project_.
--   Frequently download the _child project_ in **Collect** or **Enketo** (when
-    in offline mode) to ensure the data is in sync with the _parent project_\*
+- The parent project must have at least one submission for the child project to function correctly.
+- When collecting data online, there is a five-minute delay in syncing new parent project data with the child project.
+- In offline mode, frequently download the child project to ensure data synchronization with the parent project.
 
-\*One can configure the **Collect** Android app, with an internet connection, to
-update the _parent project_'s data automatically in **General Settings>Form
-management>Blank form update mode>Previously downloaded forms only or Exactly
-match server**. Note that enabling this setting could drain your device's
-battery faster than usual.
+<p class="note">
+    <strong>Note:</strong> You can <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">configure the KoboCollect Android app</a> to automatically update the parent project's data when an internet connection is available. Go to <strong>Settings > Form management > Blank form update mode</strong> and select either <strong>Previously downloaded forms only</strong> or <strong>Exactly match server</strong>. You can set the automatic download frequency to occur every 15 minutes, every hour, every six hours, or every 24 hours. Note that enabling this setting may increase battery consumption.
+</p>
 
-In this example, some "dummy" entries have been made in the _parent project_.
+## Troubleshooting
 
-![Data](/images/dynamic_data_attachment/Server_data.png)
+<details>
+<summary><strong>Error or crash when linking forms</strong></summary>
+Dynamic data attachments cannot connect to an empty parent project. Add at least one submission to the parent project first, then link the forms again.
+</details>
 
-With some dummy entries in the _parent project_, the _child project_ can now see
-that data during data collection. In this example _child project_ (_Round 2
-Survey_), only the two fields of **Enumerators name** and **Identification
-Number** are entered manually while the rest is linked automatically with the
-_parent project_.
+<details>
+<summary><strong>Parent data not showing in the child form</strong></summary>
+Check that the calculation syntax in the child form is correct and that the relevant questions are shared in both projects. If your parent question is in a question group, be sure to include the group name in the XPath expression. Note that new parent project data takes up to five minutes to sync when you are online. If you add new fields to the parent form and want to use them in the child project, open the child project settings, re-import the parent project, and redeploy.
+</details>
 
-![Enketo web form](/images/dynamic_data_attachment/Enketo.png)
+<details>
+<summary><strong>Child form loads slowly</strong></summary>
+Large dynamic data attachments can slow down form loading. Share only the questions the child form needs instead of the full list of questions, then redeploy and try again.
+</details>
+
+<details>
+<summary><strong>Dynamic data not refreshing in KoboCollect</strong></summary>
+If you are using KoboCollect and collecting data offline, data must first be submitted to the parent project and then downloaded to your data collection device for the dynamic data attachment to work. Both steps require an internet connection. Downloading parent data is similar to downloading a new version of a form, and the KoboCollect app can be configured to [automatically download new data](kobocollect_settings.md) at a set frequency. It is not recommended to rely on dynamic data attachments for data collected offline within a short period of time.
+</details>
+
+<details>
+<summary><strong>Dynamic data attachment not working inside question groups</strong></summary>
+To pull dynamic data from a parent form into a child form with question groups, ensure the index question (e.g., the identification number) in the child form is in the same group as the calculation for the dynamic data. See sample files <a href="https://community.kobotoolbox.org/uploads/short-url/z5RpC1M3wj9716z9qQ8pWx9Pb4V.xlsx">Round 1 (Within Groups).xlsx</a> and <a href="https://community.kobotoolbox.org/uploads/short-url/8JZvWJcrCxzKBllQYglRyAVyk03.xlsx">Round 2 (Within Groups).xlsx</a> for an example of dynamic data attachments within groups.
+</details>
+
+<details>
+<summary><strong>Error evaluation fields in KoboCollect</strong></summary>
+If your parent form contains duplicate submissions, you may receive an error message in KoboCollect stating “Error evaluating field / XPath evaluation: type mismatch /This field is repeated.” To solve this issue and pull data only from the first submission containing a specific index value, use the <code>[position()=1]</code> argument, as below:
+<br><br>
+<code>instance('parent')/root/data[parent_index_group/parent_index_question =current()/../child_index_question][position()=1]/parent_group/parent_question</code>
+
+</details>
+
