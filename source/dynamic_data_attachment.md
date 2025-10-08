@@ -44,7 +44,7 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 
 ## Calculation syntax for dynamic data attachments
 
-In the **calculation** column of the row where linked data will be retrieved, include one of the expressions in the table below. These expressions are called **XPaths**. 
+In the `calculation` column of the row where linked data will be retrieved, include one of the expressions in the table below. These expressions are called **XPaths**. 
 
 For each expression in the table below:
 
