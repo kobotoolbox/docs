@@ -14,6 +14,10 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
   welcome
   quick_start
+  creating_account
+  formbuilder
+  getting_started_xlsform
+
 
 
 .. toctree::
