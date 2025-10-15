@@ -13,7 +13,6 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :name: home-page-toc-getting-started
 
   welcome
-  about_kobotoolbox
   quick_start
 
 
