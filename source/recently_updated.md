@@ -1,8 +1,8 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
+1. [Dynamic data attachments](dynamic_data_attachment.md) (15 Oct 2025)
 1. [KoboToolbox data security measures: Keeping your data safe](is_my_data_safe.md) (9 Oct 2025)
-1. [Dynamic data attachments](dynamic_data_attachment.md) (8 Oct 2025)
 1. [Using the Team management feature](getting_started_organization_feature.md) (3 Oct 2025)
 1. [Adding validation criteria in the Formbuilder](validation_criteria.md) (2 Oct 2025)
 1. [Adding skip logic in the Formbuilder](skip_logic.md) (30 Sep 2025)
