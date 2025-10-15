@@ -7,8 +7,6 @@ KoboToolbox is an innovative open source platform for collecting, managing, and 
 To learn more about how KoboToolbox supports nonprofit organizations in creating data-driven change, see <a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About KoboToolbox: Accessible data collection for everyone</a>. 
 </p>
 
-This article introduces KoboToolbox and highlights its core functionalities. It covers key features including developing forms, using the question library, collecting data, reviewing and analyzing submissions, visualizing and downloading data, managing projects and teams, and connecting KoboToolbox with other platforms.
-
 This article introduces KoboToolbox and highlights its core functionalities. It covers key features including: 
 * Developing forms
 * Using the question library
@@ -82,7 +80,7 @@ Ensure data quality and generate insights using flexible table views and qualita
 
 KoboToolbox makes it easy to identify and share insights with reports, data visualization, and download options.
 
-* **Custom reports:** [Visualize](https://support.kobotoolbox.org/creating_custom_reports.html) data with custom reports and interactive maps.
+* **Custom reports:** Visualize data with [custom reports](https://support.kobotoolbox.org/creating_custom_reports.html) and interactive maps.
 * **Download data:** [Download and export data](https://support.kobotoolbox.org/export_download.html) in multiple formats, including XLS, CSV, KML, ZIP, and GeoJSON.
 
 ![Reports](/images/welcome/reports.png)
