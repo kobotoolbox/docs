@@ -15,7 +15,7 @@ Conocer más sobre [nuestra misión](https://www.kobotoolbox.org/about-us/our-mi
 
 ## Apoyamos el impacto global
 
-KoboToolbox es la herramienta de recolección de datos más utilizada en la acción humanitaria, el desarrollo, la construcción de paz, los derechos humanos, la protección ambiental y otras iniciativas de impacto social. Para apoyar a nuestros usuarios sin fines de lucro, proporcionamos nuestras herramientas de forma gratuita bajo el [Community Plan (Plan comunitario)](https://www.kobotoolbox.org/pricing/#free). También ofrecemos [servicios avanzados](https://www.kobotoolbox.org/services/) y [actualizaciones](https://www.kobotoolbox.org/pricing/) para las grandes organizaciones con necesidades de recolección de datos complejas y de gran volumen.
+KoboToolbox es la herramienta de recolección de datos más utilizada en la acción humanitaria, el desarrollo, la construcción de paz, los derechos humanos, la protección ambiental y otras iniciativas de impacto social. Para apoyar a nuestros usuarios sin fines de lucro, proporcionamos nuestras herramientas de forma gratuita bajo el [plan Community](https://www.kobotoolbox.org/pricing/#free). También ofrecemos [servicios avanzados](https://www.kobotoolbox.org/services/) y [actualizaciones](https://www.kobotoolbox.org/pricing/) para las grandes organizaciones con necesidades de recolección de datos complejas y de gran volumen.
 
 Para obtener más información sobre cómo las organizaciones alrededor del mundo utilizan KoboToolbox, visite [nuestro blog](https://www.kobotoolbox.org/blog/).
 
