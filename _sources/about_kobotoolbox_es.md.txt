@@ -1,5 +1,5 @@
 ## Acerca de KoboToolbox: Recolección de datos accesible para todas las personas
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b28bdae7a7023634b687654a351a3cc8cd440ad7/source/about_kobotoolbox_es.md" class="reference">8 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/about_kobotoolbox_es.md" class="reference">17 Oct 2025</a>
 
 [Read in English](about_kobotoolbox.md) | [Lire en français](about_kobotoolbox_fr.md) | [اقرأ باللغة العربية](about_kobotoolbox_ar.md)
 
@@ -15,7 +15,7 @@ Conocer más sobre [nuestra misión](https://www.kobotoolbox.org/about-us/our-mi
 
 ## Apoyamos el impacto global
 
-KoboToolbox es la herramienta de recolección de datos más utilizada en la acción humanitaria, el desarrollo, la construcción de paz, los derechos humanos, la protección ambiental y otras iniciativas de impacto social. Para apoyar a nuestros usuarios sin fines de lucro, proporcionamos nuestras herramientas de forma gratuita bajo el [Community Plan (Plan comunitario)](https://www.kobotoolbox.org/pricing/#free). También ofrecemos [servicios avanzados](https://www.kobotoolbox.org/services/) y [actualizaciones](https://www.kobotoolbox.org/pricing/) para las grandes organizaciones con necesidades de recolección de datos complejas y de gran volumen.
+KoboToolbox es la herramienta de recolección de datos más utilizada en la acción humanitaria, el desarrollo, la construcción de paz, los derechos humanos, la protección ambiental y otras iniciativas de impacto social. Para apoyar a nuestros usuarios sin fines de lucro, proporcionamos nuestras herramientas de forma gratuita bajo el [plan Community](https://www.kobotoolbox.org/pricing/#free). También ofrecemos [servicios avanzados](https://www.kobotoolbox.org/services/) y [actualizaciones](https://www.kobotoolbox.org/pricing/) para las grandes organizaciones con necesidades de recolección de datos complejas y de gran volumen.
 
 Para obtener más información sobre cómo las organizaciones alrededor del mundo utilizan KoboToolbox, visite [nuestro blog](https://www.kobotoolbox.org/blog/).
 
