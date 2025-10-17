@@ -1,5 +1,5 @@
 # À propos de KoboToolbox : Collecte de données accessible à toutes et tous
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/deb4dee7804661e8219ceb760ff1923cbf105bde/source/about_kobotoolbox_fr.md" class="reference">9 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b3e8f1a01413b267277dbdee7eeba0e3e0358154/source/about_kobotoolbox_fr.md" class="reference">17 Oct 2025</a>
 
 [Read in English](about_kobotoolbox.md) | [Leer en español](about_kobotoolbox_es.md) | [اقرأ باللغة العربية](about_kobotoolbox_ar.md)
 
@@ -15,7 +15,7 @@ En savoir plus sur [notre mission](https://www.kobotoolbox.org/about-us/our-miss
 
 ## Soutenir l'impact à échelle mondiale
 
-KoboToolbox est l'outil de collecte de données le plus utilisé pour l'action humanitaire, le développement, la consolidation de la paix, les droits de l'homme, la protection de l'environnement et d'autres initiatives à impact social. Pour soutenir nos utilisateurs sans but lucratif, nous fournissons nos outils gratuitement dans le cadre du [Community Plan (Plan communautaire)](https://www.kobotoolbox.org/pricing/#free). Nous proposons également des [services plus performants](https://www.kobotoolbox.org/services/) et des [extensions](https://www.kobotoolbox.org/pricing/) pour les grandes organisations ayant des besoins de collecte de données volumineux et complexes.
+KoboToolbox est l'outil de collecte de données le plus utilisé pour l'action humanitaire, le développement, la consolidation de la paix, les droits de l'homme, la protection de l'environnement et d'autres initiatives à impact social. Pour soutenir nos utilisateurs sans but lucratif, nous fournissons nos outils gratuitement dans le cadre du [plan Community](https://www.kobotoolbox.org/pricing/#free). Nous proposons également des [services plus performants](https://www.kobotoolbox.org/services/) et des [extensions](https://www.kobotoolbox.org/pricing/) pour les grandes organisations ayant des besoins de collecte de données volumineux et complexes.
 
 Pour en savoir plus sur la façon dont les organisations du monde entier utilisent KoboToolbox, visitez [notre blog](https://www.kobotoolbox.org/blog/).
 
