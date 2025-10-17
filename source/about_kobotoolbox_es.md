@@ -1,5 +1,5 @@
 ## Acerca de KoboToolbox: Recolección de datos accesible para todas las personas
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b28bdae7a7023634b687654a351a3cc8cd440ad7/source/about_kobotoolbox_es.md" class="reference">8 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/about_kobotoolbox_es.md" class="reference">17 Oct 2025</a>
 
 [Read in English](about_kobotoolbox.md) | [Lire en français](about_kobotoolbox_fr.md) | [اقرأ باللغة العربية](about_kobotoolbox_ar.md)
 

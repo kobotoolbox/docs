@@ -1,6 +1,7 @@
 # Recently updated Support Articles
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
+1. [#Acerca de KoboToolbox: Recolección de datos accesible para todas las personas](about_kobotoolbox_es.md) (17 Oct 2025)
 1. [À propos de KoboToolbox : Collecte de données accessible à toutes et tous](about_kobotoolbox_fr.md) (17 Oct 2025)
 1. [Dynamic data attachments](dynamic_data_attachment.md) (15 Oct 2025)
 1. [Introduction to KoboToolbox](welcome.md) (15 Oct 2025)
@@ -10,4 +11,3 @@
 1. [Adding skip logic in the Formbuilder](skip_logic.md) (30 Sep 2025)
 1. [Quickstart guide](quick_start.md) (30 Sep 2025)
 1. [Library locking](library_locking.md) (30 Sep 2025)
-1. [Collecting Data through Web Forms](data_through_webforms.md) (24 Sep 2025)
