@@ -14,7 +14,7 @@ This article covers the following topics:
 
 <p class="note">
   This article provides an introduction to XLSForm. To get started with building XLSForms, see <a class="reference" href="https://support.kobotoolbox.org/getting_started_xlsform.html">Getting started with XLSForm</a>.
-  <br>
+  <br><br>
   For hands-on practice with form development using XLSForm, see <a class="reference" href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">KoboToolbox Academy’s online XLSForm Fundamentals Course</a>.
 </p>
 
@@ -46,7 +46,7 @@ XLSForm makes it easier to use advanced form building functionalities, such as [
 
 XLSForm seamlessly integrates with KoboToolbox for form building, previewing, editing, and deployment for data collection.
 
-Users can begin in the KoboToolbox Formbuilder by creating a new form and adding questions, then [download their form as an XLSForm](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) for further customization. This provides a structured foundation, which can be useful for new projects or users with less form building experience.
+Users can begin in the KoboToolbox Formbuilder by creating a new form and adding questions, then [download their form](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) as an XLSForm for further customization. This provides a structured foundation, which can be useful for new projects or users with less form building experience.
 
 Forms created in XLSForm can then be uploaded to KoboToolbox for previewing, testing, editing, and deployment. Forms can be reviewed for errors and easily modified in KoboToolbox, such as changing the title or settings.
 
