@@ -14,7 +14,7 @@ This article explains how to set up an XLSForm using Microsoft Excel or other sp
 - Uploading and previewing your XLSForm in KoboToolbox
 
 <p class="note">
-  <bold>Note:</bold> Some XLSForm features are not currently available in the Formbuilder, but KoboToolbox forms can be downloaded, modified in XLSForm, and <a class="reference" href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">uploaded back to KoboToolbox</a>.
+  <b>Note:</b> Some XLSForm features are not currently available in the Formbuilder, but KoboToolbox forms can be downloaded, modified in XLSForm, and <a class="reference" href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">uploaded back to KoboToolbox</a>.
 </p>
 
 
@@ -125,7 +125,7 @@ For example, to add a form title:
 2. Enter the form title in the `form_title` column.
 
 <p class="note">
-<bold>Note:</bold> All form settings are optional. If you do not define a form title in your XLSForm, the Excel file name will be used as the project name in KoboToolbox by default. This can be edited in KoboToolbox.
+<b>Note:</b> All form settings are optional. If you do not define a form title in your XLSForm, the Excel file name will be used as the project name in KoboToolbox by default. This can be edited in KoboToolbox.
 </p>
 
 **settings worksheet**
@@ -161,11 +161,11 @@ To further customize your XLSForm, you can add optional columns to configure for
 To learn more about optional columns in XLSForm, see <a class="reference" href="https://support.kobotoolbox.org/question_options_xls.html">Using question options in XLSForm</a>, <a class="reference" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>, and <a class="reference" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
 </p>
 
-## Uploading and previewing the XLSForm in KoboToolbox
+## Uploading and previewing your XLSForm in KoboToolbox
 
 Once you have finished developing your XLSForm, you can upload and preview it in KoboToolbox:
 
-1. Go to the **Project List** view in KoboToolbox and click **NEW**.
+1. Go to the **Project** home page in KoboToolbox and click **NEW**.
 2. Select **Upload an XLSForm** and upload your XLSForm file.
 3. Enter the project details and click **CREATE PROJECT**.
 4. Click the <class="k-icon k-icon-view"> **Preview** button.
