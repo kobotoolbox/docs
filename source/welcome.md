@@ -103,7 +103,7 @@ Easily manage one survey or hundreds with KoboToolbox’s project management fea
 * **Team management:** Centralize [project and user management](https://support.kobotoolbox.org/getting_started_organization_feature.html) for improved oversight and collaboration across large, distributed teams.
 
 
-![Reports](/images/welcome/projects.png)
+![Permissions](/images/welcome/projects.png)
 
 <p class="note">
 To learn more about managing your projects in KoboToolbox, see <a href="https://support.kobotoolbox.org/managing-projects.html">Managing Projects & Data</a>. 
