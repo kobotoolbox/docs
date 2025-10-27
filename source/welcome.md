@@ -31,11 +31,11 @@ KoboToolbox’s intuitive [Formbuilder](https://support.kobotoolbox.org/formbuil
 * **Translations:** Easily include form [translations](https://support.kobotoolbox.org/language_dashboard.html) in hundreds of different languages.
 * **XLSForm:** To create more complex forms, use [XLSForm](https://support.kobotoolbox.org/getting_started_xlsform.html) in your preferred spreadsheet software, upload to KoboToolbox, and edit directly in the KoboToolbox Formbuilder.
 
+![Formbuilder](/images/welcome/formbuilder.png)
+
 <p class="note">
 To get started with creating forms in KoboToolbox, see <a href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the KoboToolbox Formbuilder</a>. 
 </p>
-
-![Formbuilder](/images/welcome/formbuilder.png)
 
 
 ## Using the question library
@@ -45,11 +45,11 @@ Standardize data and streamline form building by creating form templates and usi
 * **My Library:** Create, organize, and save custom questions and templates in your library.
 * **Public Collections:** Use a question, block of questions, or entire form template from the [Public Collections library](https://support.kobotoolbox.org/using_public_collections.html) in your form and customize it as needed. Questions and templates in the public library are contributed by other users and available to everyone.
 
+![Library](/images/welcome/library.png)
+
 <p class="note">
 For more information about the KoboToolbox question library, see <a href="https://support.kobotoolbox.org/question_library.html">Using the question library</a>. 
 </p>
-
-![Library](/images/welcome/library.png)
 
 ## Collecting data
 
@@ -58,32 +58,39 @@ Collect data offline or online [on any device](https://support.kobotoolbox.org/d
 * **Web forms:** KoboToolbox uses the open source software [Enketo web forms](https://support.kobotoolbox.org/data_through_webforms.html) to collect data from any internet browser. Web forms can be used on laptops, desktops, or mobile devices, online or offline.
 * **KoboCollect:** Use the [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) Android app to collect data on mobile devices. Forms can be downloaded to KoboCollect from a KoboToolbox account for offline data collection. Data collected in KoboCollect can then be uploaded to KoboToolbox. Download the KoboCollect app for free from [Google Play](https://play.google.com/store/apps/details?id=org.koboc.collect.android).
 
+![Enketo](/images/welcome/enketo.png)
+
 <p class="note">
 To learn more about using mobile devices for data collection, see <a href="https://support.kobotoolbox.org/devices_for_data_collection.html">Recommended devices for data collection</a>. 
 </p>
 
-![Enketo](/images/welcome/enketo.png)
 
+## Managing and downloading data
 
-## Managing and analyzing data
-
-Ensure data quality and generate insights using flexible table views and qualitative data features built into the KoboToolbox platform.
+Monitor, review, and export your data using flexible table views and download options.
 
 * **Table views:** Customize views, display data in multiple languages, and [validate submissions](https://support.kobotoolbox.org/record_validation.html) in real time.
+* **Download data:** [Download and export data](https://support.kobotoolbox.org/export_download.html) in multiple formats, including XLS, CSV, KML, ZIP, and GeoJSON.
+
+![image](/images/welcome/Health-Needs-Survey-Desktop.png)
+
+<p class="note">
+To learn more about managing your KoboToolbox data, see <a href="https://support.kobotoolbox.org/managing-projects.html">Managing Projects & Data</a>. 
+</p>
+
+## Visualizing and analyzing data
+
+Identify and share insights with KoboToolbox’s built-in reports, interactive maps, and qualitative data tools.
+
+* **Custom reports:** Visualize data with [custom reports](https://support.kobotoolbox.org/creating_custom_reports.html) and interactive maps.
 * **Automated transcription and translation:** Use automated features to [transcribe and translate](https://support.kobotoolbox.org/transcription-translation.html) audio responses and qualitative data.
 * **Qualitative analysis:** Use [qualitative analysis](https://support.kobotoolbox.org/qualitative_analysis.html) features to identify themes and patterns in audio responses.
 
-![image](/images/qualitative_analysis/Analyze.gif)
-
-
-## Visualizing and downloading data
-
-KoboToolbox makes it easy to identify and share insights with reports, data visualization, and download options.
-
-* **Custom reports:** Visualize data with [custom reports](https://support.kobotoolbox.org/creating_custom_reports.html) and interactive maps.
-* **Download data:** [Download and export data](https://support.kobotoolbox.org/export_download.html) in multiple formats, including XLS, CSV, KML, ZIP, and GeoJSON.
-
 ![Reports](/images/welcome/reports.png)
+
+<p class="note">
+To learn more about analyzing your KoboToolbox data, see <a href="https://support.kobotoolbox.org/analyzing-data.html">Analyzing Data</a>. 
+</p>
 
 
 ## Managing projects and teams
@@ -98,6 +105,10 @@ Easily manage one survey or hundreds with KoboToolbox’s project management fea
 
 ![Reports](/images/welcome/projects.png)
 
+<p class="note">
+To learn more about managing your projects in KoboToolbox, see <a href="https://support.kobotoolbox.org/managing-projects.html">Managing Projects & Data</a>. 
+</p>
+
 ## Connecting KoboToolbox with other platforms
 
 Connect project data across different platforms and integrate KoboToolbox data with other software such as Excel and Power BI.
@@ -107,3 +118,7 @@ Connect project data across different platforms and integrate KoboToolbox data w
 * **REST services:** Connect your project to external programs using [REST services](https://support.kobotoolbox.org/rest_services.html).
 
 ![Data management](/images/welcome/dashboard-development.png)
+
+<p class="note">
+To learn more about connecting KoboToolbox to other platforms, see <a href="https://support.kobotoolbox.org/integrations.html">Integrations</a>. 
+</p>
