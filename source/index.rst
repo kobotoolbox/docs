@@ -76,6 +76,13 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
   edit_forms_excel
   getting_started_xlsform
+  xlsform_with_kobotoolbox
+  question_types_xls
+  option_choices_xls
+  grouping_questions_xls
+  repeat_groups_xls
+  question_options_xls
+  appearances_xls
   xls_url
   media
   language_xls
