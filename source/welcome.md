@@ -72,7 +72,7 @@ Monitor, review, and export your data using flexible table views and download op
 * **Table views:** Customize views, display data in multiple languages, and [validate submissions](https://support.kobotoolbox.org/record_validation.html) in real time.
 * **Download data:** [Download and export data](https://support.kobotoolbox.org/export_download.html) in multiple formats, including XLS, CSV, KML, ZIP, and GeoJSON.
 
-![image](/images/qualitative_analysis/Analyze.gif)
+![image](/images/welcome/Health-Needs-Survey-Desktop.png)
 
 <p class="note">
 To learn more about managing your KoboToolbox data, see <a href="https://support.kobotoolbox.org/managing-projects.html">Managing Projects & Data</a>. 
