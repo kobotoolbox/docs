@@ -93,6 +93,9 @@ To obtain the correct URL for a spreadsheet stored in Dropbox:
 1.  Copy the file link in Dropbox by clicking on <i class="k-icon k-icon-link"></i> **Copy link**.
 2.  At the end of the link, replace the suffix ``dl=0`` with ``dl=1``. This will be the
     URL to import into Kobo Toolbox.
+    
+</details>
+
 
 Once you have retrieved the file URL, you can import your XLSForm to
 KoboToolbox:
@@ -109,7 +112,6 @@ KoboToolbox:
     automatically update in Kobo Toolbox. You must re-import the XLSForm via
     URL and redeploy the form changes.
 </p>
-</details>
 
 ## Testing and validating your XLSForm
 Validating, previewing, and testing your XLSForm is essential to ensuring its
