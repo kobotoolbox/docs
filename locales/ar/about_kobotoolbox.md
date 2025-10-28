@@ -7,7 +7,7 @@
 
 </section>
 
-[Read in English](about_kobotoolbox.md) | [Lire en français](about_kobotoolbox_fr.md) | [Leer en español](about_kobotoolbox_es.md) 
+<a href="../about_kobotoolbox.html">Read in English</a> | <a href="../fr/about_kobotoolbox.html">Lire en français</a> | <a href="../es/about_kobotoolbox.html">Leer en español</a> 
 
 <iframe src="https://www.youtube.com/embed/oKtMmBAlHho?si=OqS7-rewYMf-Rrw2&cc_load_policy=1&cc_lang_pref=ar&hl=ar" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

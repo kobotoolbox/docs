@@ -31,7 +31,7 @@ author = 'KoboToolbox'
 master_doc = 'index'
 
 # Language and internationalization settings
-language = 'en'
+language = 'fr'
 locale_dirs = ['../locales/']
 gettext_compact = False
 
@@ -44,7 +44,7 @@ extensions = ['myst_parser', 'sphinx_reredirects']
 myst_heading_anchors = 3
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates']
+templates_path = ['../../source/_templates']
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -92,7 +92,7 @@ html_theme_options = {
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+html_static_path = ['../../source/_static']
 
 # We override all css
 # html_style = 'css/kobo_theme.css'
@@ -114,6 +114,6 @@ html_js_files = [
     'js/table-sheets.js',
 ]
 
-html_favicon = 'images/index/favicon.png'
+html_favicon = '../../source/images/index/favicon.png'
 
 redirects = {"server": "creating_account.html"}
