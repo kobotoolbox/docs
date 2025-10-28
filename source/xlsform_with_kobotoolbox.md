@@ -31,7 +31,7 @@ Any form created using the KoboToolbox Formbuilder can be downloaded as
 an XLSForm file:
 
 1.  Go to the **FORM** page of your project in KoboToolbox.
-2.  Click the <i class="k-icon k-icon-more"></i> **More actions icon**.
+2.  Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
 3.  Select <i class="k-icon k-icon-xls-file"></i> **Download XLS**.
 
 ![Download XLS menu](images/xlsform_with_kobotoolbox/download_xls.png)
@@ -39,6 +39,7 @@ an XLSForm file:
 ## Uploading an XLSForm to KoboToolbox
 Alternatively, you may need to create a new project from an XLSForm that you
 have created from scratch or that has been shared with you.
+
 To upload and preview an XLSForm to a new project in KoboToolbox:
 
 1.  Go to the **Projects** home page in KoboToolbox and click **NEW**.
@@ -119,9 +120,9 @@ Continuously validating and testing your XLSForm as you make changes will
 simplify troubleshooting and help identify the cause of any issues. It is crucial
 to ensure your form functions as expected before launching data collection.
 
-There are several tools available to test your XLSForm, including the [Kobo Toolbox platform](https://www.kobotoolbox.org/sign-up/), [KoboCollect](https://play.google.com/store/apps/details?id=org.koboc.collect.android), and [ODK's XLSForm Online](https://getodk.org/xlsform/). When
+There are several tools available to test your XLSForm, including the KoboToolbox platform, the [KoboCollect app](https://play.google.com/store/apps/details?id=org.koboc.collect.android), and [ODK's XLSForm Online](https://getodk.org/xlsform/). When
 previewing and testing your form, use the same platform that you will use for
-data collection: [Enketo web forms](https://support.kobotoolbox.org/enketo.html), [KoboCollect](https://support.kobotoolbox.org/enketo.html), or both.
+data collection: [Enketo web forms](https://support.kobotoolbox.org/enketo.html), [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html), or both.
 
 <p class="note">
 To learn more about setting up KoboCollect to preview and test your forms, see
