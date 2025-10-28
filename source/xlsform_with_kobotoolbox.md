@@ -96,6 +96,7 @@ To obtain the correct URL for a spreadsheet stored in Dropbox:
     
 </details>
 
+<br>
 
 Once you have retrieved the file URL, you can import your XLSForm to
 KoboToolbox:
