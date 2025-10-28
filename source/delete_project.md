@@ -1,5 +1,7 @@
 # Deleting a Project
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/delete_project.md" class="reference">28 Oct 2025</a>
+
+<a href="es/delete_project.html">Leer en español</a> | <a href="fr/delete_project.html">Lire en français</a> | <a href="ar/delete_project.html">اقرأ باللغة العربية</a>
 Please note that once a project has been deleted, **THE ACTION CANNOT BE
 REVERSED**. We do not store copies of your deleted projects, so make sure that
 you have the correct project before proceeding and have all the data downloaded

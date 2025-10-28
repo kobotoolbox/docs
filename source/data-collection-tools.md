@@ -1,5 +1,7 @@
 # Overview on Data Collection Tools
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/data-collection-tools.md" class="reference">28 Oct 2025</a>
+
+<a href="es/data-collection-tools.html">Leer en español</a> | <a href="fr/data-collection-tools.html">Lire en français</a> | <a href="ar/data-collection-tools.html">اقرأ باللغة العربية</a>
 built on the [Xform/ODK standards](https://xlsform.org), our forms are
 compatible with
 [a number of different tools](https://xlsform.org/en/#tools-that-support-xlsforms)

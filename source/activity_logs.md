@@ -1,5 +1,7 @@
 # Activity Logs
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/activity_logs.md" class="reference">28 Oct 2025</a>
+
+<a href="es/activity_logs.html">Leer en español</a> | <a href="fr/activity_logs.html">Lire en français</a> | <a href="ar/activity_logs.html">اقرأ باللغة العربية</a>
 These logs can be helpful for:
 
 -   Security monitoring: See who accessed your account and from where

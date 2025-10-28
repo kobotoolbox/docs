@@ -1,5 +1,7 @@
 # Adding a Custom Logo
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/add_logo.md" class="reference">28 Oct 2025</a>
+
+<a href="es/add_logo.html">Leer en español</a> | <a href="fr/add_logo.html">Lire en français</a> | <a href="ar/add_logo.html">اقرأ باللغة العربية</a>
 follows the same steps as [adding media content to your forms](media.md).
 
 To begin:

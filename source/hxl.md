@@ -1,6 +1,8 @@
 # Using HXL Tags
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/hxl.md" class="reference">28 Oct 2025</a>
 
+<a href="es/hxl.html">Leer en español</a> | <a href="fr/hxl.html">Lire en français</a> | <a href="ar/hxl.html">اقرأ باللغة العربية</a>
+
 HXL stands for **Humanitarian Exchange Language**. The goal of HXL is to improve
 information sharing during a humanitarian crisis by creating a simple way to
 promote interoperability of data. It does this by coding the data through

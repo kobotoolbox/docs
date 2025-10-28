@@ -1,6 +1,8 @@
 # Rating vs Ranking Question Types
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/rating_ranking.md" class="reference">28 Oct 2025</a>
 
+<a href="es/rating_ranking.html">Leer en español</a> | <a href="fr/rating_ranking.html">Lire en français</a> | <a href="ar/rating_ranking.html">اقرأ باللغة العربية</a>
+
 Often times, people use the terms ranking question and rating question interchangeably, when in fact there is a distinct difference between the two question types. A **rating question** asks survey respondents to compare different items using a common scale (e.g. “Please rate each of the following objects on a rating scale of 1-10, where 1 is ‘not at all important’ and 10 is ‘very important.’”). A **ranking question** on the other hand asks survey respondents to compare a list of different objects to one another (e.g. “Please rank each of the following items in order of importance with #1 being the most important object to #10 being the least important object.”). The ranking question asks respondents to compare items to each other by placing them in order of preference. When analyzing ranking questions, an average ranking is calculated for each answer choice, allowing you to quickly evaluate the most preferred answer choice.
 
 ## When should you use ranking or rating questions?

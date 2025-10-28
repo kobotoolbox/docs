@@ -1,6 +1,8 @@
 # Customizing KoboCollect settings
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/kobocollect_settings.md" class="reference">28 Oct 2025</a>
 
+<a href="es/kobocollect_settings.html">Leer en español</a> | <a href="fr/kobocollect_settings.html">Lire en français</a> | <a href="ar/kobocollect_settings.html">اقرأ باللغة العربية</a>
+
 KoboCollect is a free, open-source KoboToolbox app designed for data collection on Android mobile devices. Before you get started, [install and configure](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) the KoboCollect app. Once installed and configured, you can customize the app based on your project or user needs. Project settings allow you to:
 
 - Adjust the **user interface** (e.g., language, font size, theme)

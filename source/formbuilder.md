@@ -1,6 +1,8 @@
 # Getting started with the KoboToolbox Formbuilder 
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/formbuilder.md" class="reference">28 Oct 2025</a>
 
+<a href="es/formbuilder.html">Leer en español</a> | <a href="fr/formbuilder.html">Lire en français</a> | <a href="ar/formbuilder.html">اقرأ باللغة العربية</a>
+
 The KoboToolbox Formbuilder is a user-friendly tool for designing and deploying data collection forms. This article provides a basic overview of its functions, from adding and managing questions to organizing your form.
 
 <p class="note">

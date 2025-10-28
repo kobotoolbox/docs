@@ -1,6 +1,8 @@
 # Troubleshooting account activation link 
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/activation_link.md" class="reference">28 Oct 2025</a>
 
+<a href="es/activation_link.html">Leer en español</a> | <a href="fr/activation_link.html">Lire en français</a> | <a href="ar/activation_link.html">اقرأ باللغة العربية</a>
+
 If you do not click the link within three days, or if the link has expired:
 1. Try logging in with the username and password you created. A new activation link should be sent automatically.
 2. If that does not work, the issue may be caused by:

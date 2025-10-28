@@ -1,5 +1,7 @@
 # Barcode/QR code question type
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/barcode_qrcode_questions.md" class="reference">28 Oct 2025</a>
+
+<a href="es/barcode_qrcode_questions.html">Leer en español</a> | <a href="fr/barcode_qrcode_questions.html">Lire en français</a> | <a href="ar/barcode_qrcode_questions.html">اقرأ باللغة العربية</a>
 barcodes and QR codes using the device camera. When a code is scanned with the
 camera the value (whether numbers or text) stored in the code is captured.
 

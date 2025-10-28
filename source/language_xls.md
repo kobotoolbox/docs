@@ -1,5 +1,7 @@
 # Adding Another Language to your XLSForm
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/language_xls.md" class="reference">28 Oct 2025</a>
+
+<a href="es/language_xls.html">Leer en español</a> | <a href="fr/language_xls.html">Lire en français</a> | <a href="ar/language_xls.html">اقرأ باللغة العربية</a>
 add and manage them directly through the online
 [Project Dashboard](language_dashboard.md) or you can add them in an XLSForm and
 upload it to Kobo.

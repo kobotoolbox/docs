@@ -1,5 +1,7 @@
 # Collecting Data Offline
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/data-offline.md" class="reference">28 Oct 2025</a>
+
+<a href="es/data-offline.html">Leer en español</a> | <a href="fr/data-offline.html">Lire en français</a> | <a href="ar/data-offline.html">اقرأ باللغة العربية</a>
 Forms.**
 
 When a user enters data it is stored first on the device. KoboCollect [can be set](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) to attempt sending the information through a network connection immediately or

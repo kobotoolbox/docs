@@ -1,6 +1,8 @@
 # Article title
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/article_template.md" class="reference">28 Oct 2025</a>
 
+<a href="es/article_template.html">Leer en español</a> | <a href="fr/article_template.html">Lire en français</a> | <a href="ar/article_template.html">اقرأ باللغة العربية</a>
+
 This article includes:
 
 -   [Formatting text in markdown](#this-is-a-header)

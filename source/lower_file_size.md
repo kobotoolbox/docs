@@ -1,5 +1,7 @@
 # Lowering the File Size of Collected Media
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/lower_file_size.md" class="reference">28 Oct 2025</a>
+
+<a href="es/lower_file_size.html">Leer en español</a> | <a href="fr/lower_file_size.html">Lire en français</a> | <a href="ar/lower_file_size.html">اقرأ باللغة العربية</a>
 thousands of records, you could face difficulties generating the Media
 Attachments ZIP if you do not adjust the image quality settings before starting
 data collection.

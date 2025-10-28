@@ -1,6 +1,8 @@
 # Advanced Calculate Question Type
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/advanced_calculate.md" class="reference">28 Oct 2025</a>
 
+<a href="es/advanced_calculate.html">Leer en español</a> | <a href="fr/advanced_calculate.html">Lire en français</a> | <a href="ar/advanced_calculate.html">اقرأ باللغة العربية</a>
+
 This article provides step-by-step instructions on how to add calculations while using the formbuilder or by downloading and adding it directly to the XLSform. 
 
 To view a complete and detailed list of all functions please visit ODK's excellent [XPath Functions documentation](https://getodk.github.io/xforms-spec).  

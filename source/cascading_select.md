@@ -1,6 +1,8 @@
 # Adding cascading select questions in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/cascading_select.md" class="reference">28 Oct 2025</a>
 
+<a href="es/cascading_select.html">Leer en español</a> | <a href="fr/cascading_select.html">Lire en français</a> | <a href="ar/cascading_select.html">اقرأ باللغة العربية</a>
+
 Cascading select questions allow you to create dynamic forms where the options in one question depend on the answer to a previous question. This feature helps streamline data collection by presenting only relevant choices, improving the efficiency and accuracy of your surveys.
 
 <p class="note">

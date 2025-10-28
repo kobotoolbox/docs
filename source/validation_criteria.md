@@ -1,6 +1,8 @@
 # Adding validation criteria in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/validation_criteria.md" class="reference">28 Oct 2025</a>
 
+<a href="es/validation_criteria.html">Leer en español</a> | <a href="fr/validation_criteria.html">Lire en français</a> | <a href="ar/validation_criteria.html">اقرأ باللغة العربية</a>
+
 Validation logic, also known as validation criteria or constraints, defines conditions for an acceptable response to a question. This feature helps ensure high-quality data by preventing accidental or invalid answers.
 
 Validation criteria can be applied to any question type. For example, you can use it to ensure that a participant is above a certain age, that a date is within a specific range, or that a text entry matches a certain pattern. 

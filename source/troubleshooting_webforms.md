@@ -1,5 +1,7 @@
 # Troubleshooting Enketo Web Forms
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/troubleshooting_webforms.md" class="reference">28 Oct 2025</a>
+
+<a href="es/troubleshooting_webforms.html">Leer en español</a> | <a href="fr/troubleshooting_webforms.html">Lire en français</a> | <a href="ar/troubleshooting_webforms.html">اقرأ باللغة العربية</a>
 browsers and allow data collection online or offline. Generally we strongly
 recommend the latest version of all
 [modern browsers](https://enke.to/modern-browsers). You could also visit

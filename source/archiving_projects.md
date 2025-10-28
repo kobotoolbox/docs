@@ -1,6 +1,8 @@
 # Archiving and Unarchiving Projects
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/archiving_projects.md" class="reference">28 Oct 2025</a>
 
+<a href="es/archiving_projects.html">Leer en español</a> | <a href="fr/archiving_projects.html">Lire en français</a> | <a href="ar/archiving_projects.html">اقرأ باللغة العربية</a>
+
 ## Purpose of archiving
 
 It is advisable to archive forms that are no longer used for data collection. This prevents data collection using wrong forms especially in large teams of data collectors.

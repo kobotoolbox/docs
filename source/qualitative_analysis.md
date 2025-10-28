@@ -1,6 +1,8 @@
 # Qualitative Analysis of Audio Responses
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/qualitative_analysis.md" class="reference">28 Oct 2025</a>
 
+<a href="es/qualitative_analysis.html">Leer en español</a> | <a href="fr/qualitative_analysis.html">Lire en français</a> | <a href="ar/qualitative_analysis.html">اقرأ باللغة العربية</a>
+
 The first step is to [collect audio responses](photo_audio_video_file.md) in your form, using the Audio question type. It may be helpful to [transcribe and/or translate](transcription-translation.md) your audio files before you begin the analysis, but it is not required.
 
 <p class="note">The qualitative analysis features are currently only available for audio responses and cannot be used for background audio recordings or other question types.</p>

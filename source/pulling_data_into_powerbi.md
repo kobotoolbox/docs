@@ -1,5 +1,7 @@
 # Connecting KoboToolbox to Power BI
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/pulling_data_into_powerbi.md" class="reference">28 Oct 2025</a>
+
+<a href="es/pulling_data_into_powerbi.html">Leer en español</a> | <a href="fr/pulling_data_into_powerbi.html">Lire en français</a> | <a href="ar/pulling_data_into_powerbi.html">اقرأ باللغة العربية</a>
 tools such as Power BI, Excel and Google Sheets. Data you collect is shared with
 the external application which can then be used for analysis and visualizations
 and dashboards.

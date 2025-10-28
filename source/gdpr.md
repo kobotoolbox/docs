@@ -1,6 +1,8 @@
 # General Data Protection Regulation (GDPR)
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/gdpr.md" class="reference">28 Oct 2025</a>
 
+<a href="es/gdpr.html">Leer en español</a> | <a href="fr/gdpr.html">Lire en français</a> | <a href="ar/gdpr.html">اقرأ باللغة العربية</a>
+
 GDPR stands for [General Data Protection Regulation](https://gdpr-info.eu) and
 is a new comprehensive data protection law in the EU that replaces existing laws
 to strengthen the protection of personal data and the rights of the individual.

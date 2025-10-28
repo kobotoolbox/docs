@@ -1,6 +1,8 @@
 # Getting started with XLSForm
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/getting_started_xlsform.md" class="reference">28 Oct 2025</a>
 
+<a href="es/getting_started_xlsform.html">Leer en español</a> | <a href="fr/getting_started_xlsform.html">Lire en français</a> | <a href="ar/getting_started_xlsform.html">اقرأ باللغة العربية</a>
+
 This article explains how to:
 
 -   Set up an XLSForm using Microsoft Excel

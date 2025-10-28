@@ -1,6 +1,8 @@
 # REST Services
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/rest_services.md" class="reference">28 Oct 2025</a>
 
+<a href="es/rest_services.html">Leer en español</a> | <a href="fr/rest_services.html">Lire en français</a> | <a href="ar/rest_services.html">اقرأ باللغة العربية</a>
+
 KoboToolbox has a number of advanced features built in based on our open source
 libraries, which include useful add-ons for advanced use cases.
 

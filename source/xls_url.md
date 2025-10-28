@@ -1,6 +1,8 @@
 # Importing an XLSForm via URL
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/xls_url.md" class="reference">28 Oct 2025</a>
 
+<a href="es/xls_url.html">Leer en español</a> | <a href="fr/xls_url.html">Lire en français</a> | <a href="ar/xls_url.html">اقرأ باللغة العربية</a>
+
 ## Google Sheets
 
 To get the correct link for a Google Sheets spreadsheet, follow these steps:

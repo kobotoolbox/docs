@@ -1,5 +1,7 @@
 # Custom Formatting in Web Forms
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/custom_format_web.md" class="reference">28 Oct 2025</a>
+
+<a href="es/custom_format_web.html">Leer en español</a> | <a href="fr/custom_format_web.html">Lire en français</a> | <a href="ar/custom_format_web.html">اقرأ باللغة العربية</a>
 application._
 
 When using Web Forms (Enketo) as your data collection method, you have the

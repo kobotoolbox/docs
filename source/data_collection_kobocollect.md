@@ -1,6 +1,8 @@
 # Data collection using KoboCollect
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/data_collection_kobocollect.md" class="reference">28 Oct 2025</a>
 
+<a href="es/data_collection_kobocollect.html">Leer en español</a> | <a href="fr/data_collection_kobocollect.html">Lire en français</a> | <a href="ar/data_collection_kobocollect.html">اقرأ باللغة العربية</a>
+
 KoboCollect is a free, open-source KoboToolbox app designed for data collection on Android mobile devices. Before you get started, [install and configure](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) the KoboCollect app. 
 
 Once set up, KoboCollect allows you to fill and submit forms from your mobile device, even offline. This article explains how to use the app to collect data, including accessing forms, saving and editing responses, and sending finalized submissions.

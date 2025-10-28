@@ -1,6 +1,8 @@
 # Getting started with the API
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/api.md" class="reference">28 Oct 2025</a>
 
+<a href="es/api.html">Leer en español</a> | <a href="fr/api.html">Lire en français</a> | <a href="ar/api.html">اقرأ باللغة العربية</a>
+
 With the KoboToolbox **API**, you can:
 
 - **Download data** automatically in JSON, CSV, or XLSX.

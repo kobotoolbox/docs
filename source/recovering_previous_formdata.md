@@ -1,6 +1,8 @@
 # Recovering Data From Previous Form Versions
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recovering_previous_formdata.md" class="reference">28 Oct 2025</a>
 
+<a href="es/recovering_previous_formdata.html">Leer en español</a> | <a href="fr/recovering_previous_formdata.html">Lire en français</a> | <a href="ar/recovering_previous_formdata.html">اقرأ باللغة العربية</a>
+
 Normally when you change a form, the data will be downloaded based on the definition of that new form. As it is if you changed the name of a question or deleted a question, all the data previously collected on that question will not be visible under the new question unless you chose to include data collected from previous versions as explained below. 
 
 Generally, when you edit your survey forms and redeploy it you should be able to download the data that has been submitted to the server in two different ways. For this, first please see the images below for better understanding:

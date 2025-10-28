@@ -1,6 +1,8 @@
 # Using the Question Library
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/question_library.md" class="reference">28 Oct 2025</a>
 
+<a href="es/question_library.html">Leer en español</a> | <a href="fr/question_library.html">Lire en français</a> | <a href="ar/question_library.html">اقرأ باللغة العربية</a>
+
 Questions that have previously been added to your library can be added to any other form by drag-and-dropping them from the Question Library sidebar within the formbuilder.
 
 To access the Question Library sidebar, click the **Add from Library** button in the top right corner of the formbuilder toolbar.

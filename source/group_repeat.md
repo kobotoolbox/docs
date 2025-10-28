@@ -1,6 +1,8 @@
 # Grouping questions and repeating groups
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/group_repeat.md" class="reference">28 Oct 2025</a>
 
+<a href="es/group_repeat.html">Leer en español</a> | <a href="fr/group_repeat.html">Lire en français</a> | <a href="ar/group_repeat.html">اقرأ باللغة العربية</a>
+
 Grouping questions helps organize related questions into sections, adds structure to your form, and makes it easier to navigate. For example, all demographic questions can be grouped together in one section of the form.
 
 Users may need to group questions for various reasons:

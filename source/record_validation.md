@@ -1,6 +1,8 @@
 # Record Validation
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/record_validation.md" class="reference">28 Oct 2025</a>
 
+<a href="es/record_validation.html">Leer en español</a> | <a href="fr/record_validation.html">Lire en français</a> | <a href="ar/record_validation.html">اقرأ باللغة العربية</a>
+
 ## What are the statuses that you can assign to a record?
 
 The validation status labels available include:

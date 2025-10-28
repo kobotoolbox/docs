@@ -1,5 +1,7 @@
 # Text and Note question types
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/text_and_note.md" class="reference">28 Oct 2025</a>
+
+<a href="es/text_and_note.html">Leer en español</a> | <a href="fr/text_and_note.html">Lire en français</a> | <a href="ar/text_and_note.html">اقرأ باللغة العربية</a>
 open-ended responses, such as names, feedback, explanations or descriptions.
 
 The "Note" question type does not allow for a response value, instead they can
