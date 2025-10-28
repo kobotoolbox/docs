@@ -1,5 +1,5 @@
 # Sharing projects with user-level permissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/managing_permissions.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/managing_permissions.md" class="reference">28 Oct 2025</a>
 
 <a href="es/managing_permissions.html">Leer en español</a> | <a href="fr/managing_permissions.html">Lire en français</a> | <a href="ar/managing_permissions.html">اقرأ باللغة العربية</a>
 

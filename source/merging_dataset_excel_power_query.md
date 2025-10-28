@@ -1,5 +1,5 @@
 # Merging Individual Data with Roster Data through Power Query in Excel
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/merging_dataset_excel_power_query.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/merging_dataset_excel_power_query.md" class="reference">28 Oct 2025</a>
 
 <a href="es/merging_dataset_excel_power_query.html">Leer en español</a> | <a href="fr/merging_dataset_excel_power_query.html">Lire en français</a> | <a href="ar/merging_dataset_excel_power_query.html">اقرأ باللغة العربية</a>
 

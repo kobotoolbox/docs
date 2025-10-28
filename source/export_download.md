@@ -1,5 +1,5 @@
 # Exporting and downloading your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/export_download.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/export_download.md" class="reference">28 Oct 2025</a>
 
 <a href="es/export_download.html">Leer en español</a> | <a href="fr/export_download.html">Lire en français</a> | <a href="ar/export_download.html">اقرأ باللغة العربية</a>
 

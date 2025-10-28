@@ -1,5 +1,5 @@
 # Manually Uploading Submissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/manual_upload.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/manual_upload.md" class="reference">28 Oct 2025</a>
 
 <a href="es/manual_upload.html">Leer en español</a> | <a href="fr/manual_upload.html">Lire en français</a> | <a href="ar/manual_upload.html">اقرأ باللغة العربية</a>
 

@@ -1,5 +1,5 @@
 # Editing Responses in Multiple Submissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/howto_edit_multiple_submissions.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/howto_edit_multiple_submissions.md" class="reference">28 Oct 2025</a>
 
 <a href="es/howto_edit_multiple_submissions.html">Leer en español</a> | <a href="fr/howto_edit_multiple_submissions.html">Lire en français</a> | <a href="ar/howto_edit_multiple_submissions.html">اقرأ باللغة العربية</a>
 

@@ -1,5 +1,5 @@
 # "Select One" and "Select Many" question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/select_one_and_select_many.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/select_one_and_select_many.md" class="reference">28 Oct 2025</a>
 
 <a href="es/select_one_and_select_many.html">Leer en español</a> | <a href="fr/select_one_and_select_many.html">Lire en français</a> | <a href="ar/select_one_and_select_many.html">اقرأ باللغة العربية</a>
 

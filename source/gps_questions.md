@@ -1,5 +1,5 @@
 # GPS Question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/gps_questions.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/gps_questions.md" class="reference">28 Oct 2025</a>
 
 <a href="es/gps_questions.html">Leer en español</a> | <a href="fr/gps_questions.html">Lire en français</a> | <a href="ar/gps_questions.html">اقرأ باللغة العربية</a>
 

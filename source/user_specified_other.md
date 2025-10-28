@@ -1,5 +1,5 @@
 # User-Specified "Other" Responses for Multiple-Choice Questions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/user_specified_other.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/user_specified_other.md" class="reference">28 Oct 2025</a>
 
 <a href="es/user_specified_other.html">Leer en español</a> | <a href="fr/user_specified_other.html">Lire en français</a> | <a href="ar/user_specified_other.html">اقرأ باللغة العربية</a>
 

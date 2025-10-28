@@ -1,5 +1,5 @@
 # Using the Team management feature
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/getting_started_organization_feature.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/getting_started_organization_feature.md" class="reference">28 Oct 2025</a>
 
 <a href="es/getting_started_organization_feature.html">Leer en español</a> | <a href="fr/getting_started_organization_feature.html">Lire en français</a> | <a href="ar/getting_started_organization_feature.html">اقرأ باللغة العربية</a>
 

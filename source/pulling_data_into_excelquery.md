@@ -1,5 +1,5 @@
 # Connecting KoboToolbox to Microsoft Excel
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/pulling_data_into_excelquery.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/pulling_data_into_excelquery.md" class="reference">28 Oct 2025</a>
 
 <a href="es/pulling_data_into_excelquery.html">Leer en español</a> | <a href="fr/pulling_data_into_excelquery.html">Lire en français</a> | <a href="ar/pulling_data_into_excelquery.html">اقرأ باللغة العربية</a>
 

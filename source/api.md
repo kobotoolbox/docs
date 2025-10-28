@@ -1,5 +1,5 @@
 # Getting started with the API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/api.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/api.md" class="reference">28 Oct 2025</a>
 
 <a href="es/api.html">Leer en español</a> | <a href="fr/api.html">Lire en français</a> | <a href="ar/api.html">اقرأ باللغة العربية</a>
 
