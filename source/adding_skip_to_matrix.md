@@ -1,4 +1,5 @@
 ﻿# Adding Skip Logic to a Matrix Question
+<a href="fr/adding_skip_to_matrix.html">Lire en français</a> | <a href="es/adding_skip_to_matrix.html">Leer en español</a> | <a href="ar/adding_skip_to_matrix.html">اقرأ باللغة العربية</a>
 
 **Last updated:**
 <a href="https://github.com/kobotoolbox/docs/blob/83d9dadfcc132d75f99e2705f77c425c2fee6d70/source/adding_skip_to_matrix.md" class="reference">11

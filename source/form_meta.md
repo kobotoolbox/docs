@@ -1,4 +1,5 @@
 # Form Settings and Metadata
+<a href="fr/form_meta.html">Lire en français</a> | <a href="es/form_meta.html">Leer en español</a> | <a href="ar/form_meta.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/86f7750dca7b9470d220501253fb365b38924706/source/form_meta.md" class="reference">24 Sep 2025</a>
 
 In the formbuilder, there are a number of optional configurations you can set

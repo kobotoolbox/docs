@@ -1,4 +1,5 @@
 # Using Alternative Enketo Web Form Styles
+<a href="fr/alternative_enketo.html">Lire en français</a> | <a href="es/alternative_enketo.html">Leer en español</a> | <a href="ar/alternative_enketo.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/347a1280aadb22c9aebf88650fd6efa1bcadbcdf/source/alternative_enketo.md" class="reference">24 Sep 2025</a>
 
 Enketo web forms can be customized in the way your questions are presented.

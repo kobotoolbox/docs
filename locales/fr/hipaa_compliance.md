@@ -1,0 +1,7 @@
+# Conformité HIPAA
+<a href="../hipaa_compliance.html">Read in English</a> | <a href="../es/hipaa_compliance.html">Leer en español</a> | <a href="../ar/hipaa_compliance.html">اقرأ باللغة العربية</a>
+**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/b1ec67a2ab986fec9903546ac7db4c1ce91c6517/source/hipaa_compliance.md" class="reference">7 juil. 2025</a>
+
+Les [serveurs publics KoboToolbox](creating_account.md) n'ont pas été conçus avec les exigences spécifiques de la loi HIPAA à l'esprit et, en tant que tels, ne garantissent pas la conformité HIPAA. Les règles HIPAA couvrent la manière dont les serveurs stockent et transfèrent différents types de données, les types de journaux qui doivent être conservés et à quel niveau, ainsi que les accords juridiques, les exigences d'assurance et les règles commerciales spécifiques qui doivent être mises en place et surveillées pour garantir la conformité.
+
+Nous n'avons pas encore de plans pour reconcevoir l'infrastructure de ces instances publiques conformément aux protocoles de sécurité spécifiques de la loi HIPAA. Toute personne souhaitant exploiter [sa propre instance privée de KoboToolbox](https://github.com/kobotoolbox/kobo-install) pourrait le faire de manière conforme à la loi HIPAA, par exemple en contractant avec une société d'hébergement spécialisée dans la conformité HIPAA.

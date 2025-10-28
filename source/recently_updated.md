@@ -1,4 +1,5 @@
 # Recently updated Support Articles
+<a href="fr/recently_updated.html">Lire en français</a> | <a href="es/recently_updated.html">Leer en español</a> | <a href="ar/recently_updated.html">اقرأ باللغة العربية</a>
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
 1. [Quickstart guide](quick_start.md) (27 Oct 2025)

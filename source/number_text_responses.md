@@ -1,4 +1,5 @@
 # Limits on Number and Text Responses
+<a href="fr/number_text_responses.html">Lire en français</a> | <a href="es/number_text_responses.html">Leer en español</a> | <a href="ar/number_text_responses.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0c5dd6987a26369bd16e779f6ee2ad77e2243b26/source/number_text_responses.md" class="reference">21 Jun 2020</a>
 
 There are underlying technical constraints to the length of the response in a **Number** or **Text** question.

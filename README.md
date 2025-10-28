@@ -14,7 +14,7 @@ Please note that the purpose of the issue tracker on this repository is to track
 To build and test this documentation locally follow these steps:
 
 Prerequisites:
-* Python 3
+* Python 3.10 or later (Python 3.13+ supported)
 * git
 * npm
 
@@ -35,6 +35,51 @@ Each commit to `master` is automatically built into production.
 ## Development
 
 When you already did everything from "Local installation" succesfully and just need to come back and work a bit more on the project, please use `dev.sh` script from the root of the project.
+
+## Internationalization
+
+The documentation supports multiple languages. The structure is:
+
+- `source/` - English content (default language)
+- `locales/es/` - Spanish translations
+- `locales/fr/` - French translations
+- `locales/ar/` - Arabic translations
+
+### Building translated documentation
+
+To build documentation in a specific language:
+
+```bash
+# Build English (default)
+make html
+
+# Build Spanish
+sphinx-build -b html locales/es _build/html/es
+
+# Build French
+sphinx-build -b html locales/fr _build/html/fr
+
+# Build Arabic
+sphinx-build -b html locales/ar _build/html/ar
+```
+
+### Adding new translations
+
+1. Create the translated file in `locales/[lang]/` with the same filename as the English version (e.g., `locales/es/new_article.md`)
+2. Add the file to the corresponding `locales/[lang]/index.rst` toctree
+3. Add language switcher links at the top of each version:
+
+**For English files** (`source/article.md`):
+```html
+<a href="fr/article.html">Lire en français</a> | <a href="es/article.html">Leer en español</a> | <a href="ar/article.html">اقرأ باللغة العربية</a>
+```
+
+**For translated files** (`locales/es/article.md`, `locales/fr/article.md`, `locales/ar/article.md`):
+```html
+<a href="../article.html">Read in English</a> | <a href="../fr/article.html">Lire en français</a> | <a href="../es/article.html">Leer en español</a> | <a href="../ar/article.html">اقرأ باللغة العربية</a>
+```
+
+Note: Adjust the links to exclude the current language (e.g., Spanish article doesn't need a link to itself)
 
 ## Custom theme development
 

@@ -1,4 +1,5 @@
 # "Select One" and "Select Many" question types
+<a href="fr/select_one_and_select_many.html">Lire en français</a> | <a href="es/select_one_and_select_many.html">Leer en español</a> | <a href="ar/select_one_and_select_many.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0d49d3448e1794b63e051d20df2421b33f5274fc/source/select_one_and_select_many.md" class="reference">28 Mar 2022</a>
 
 When you have a categorical question with a list of predefined options for

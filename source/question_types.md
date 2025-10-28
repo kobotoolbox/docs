@@ -1,4 +1,5 @@
 # List of Question Types
+<a href="fr/question_types.html">Lire en français</a> | <a href="es/question_types.html">Leer en español</a> | <a href="ar/question_types.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3993133bcf0aafda0b0978709534175cb583e049/source/question_types.md" class="reference">28 Oct 2024</a>
 
 The below table provides a high-level summary of each of the response types

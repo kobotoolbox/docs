@@ -1,4 +1,5 @@
 ﻿# Using the API for synchronous exports
+<a href="fr/synchronous_exports.html">Lire en français</a> | <a href="es/synchronous_exports.html">Leer en español</a> | <a href="ar/synchronous_exports.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a4e0388d846fe94926c32f6dacb82b6e34c7f102/source/synchronous_exports.md" class="reference">13 Sep 2025</a>
 
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

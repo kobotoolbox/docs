@@ -1,4 +1,5 @@
 # Editing Responses in Multiple Submissions
+<a href="fr/howto_edit_multiple_submissions.html">Lire en français</a> | <a href="es/howto_edit_multiple_submissions.html">Leer en español</a> | <a href="ar/howto_edit_multiple_submissions.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/509a98dad39e2899a5eff7e870481cf99749f321/source/howto_edit_multiple_submissions.md" class="reference">22 Sep 2022</a>
 
 Users could always edit submissions as outlined in our support article

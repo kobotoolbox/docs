@@ -1,4 +1,5 @@
 # KoboToolbox data security measures: Keeping your data safe
+<a href="fr/is_my_data_safe.html">Lire en français</a> | <a href="es/is_my_data_safe.html">Leer en español</a> | <a href="ar/is_my_data_safe.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f7c0f5afa58cad4b40bd6075209daef21a83ee6b/source/is_my_data_safe.md" class="reference">9 Oct 2025</a>
 
 We take data protection very seriously. Data security means protecting our

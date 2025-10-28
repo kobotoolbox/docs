@@ -1,4 +1,5 @@
 # Troubleshooting account activation link 
+<a href="fr/activation_link.html">Lire en français</a> | <a href="es/activation_link.html">Leer en español</a> | <a href="ar/activation_link.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0e5a784bc21dd79ac926f958b3cbb238d64ecc53/source/activation_link.md" class="reference">23 Sep 2025</a>
 
 After you create your account, an activation link will be sent to the email address you provided. You must click this link within 72 hours to activate your account.

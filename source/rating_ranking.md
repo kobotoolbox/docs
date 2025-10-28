@@ -1,4 +1,5 @@
 # Rating vs Ranking Question Types
+<a href="fr/rating_ranking.html">Lire en français</a> | <a href="es/rating_ranking.html">Leer en español</a> | <a href="ar/rating_ranking.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/52b766d4117ffc86d840202aa2a51d1daf4cd15d/source/rating_ranking.md" class="reference">19 Jun 2020</a>
 
 ## Difference between rating and ranking questions?

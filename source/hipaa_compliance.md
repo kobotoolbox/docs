@@ -1,4 +1,5 @@
 # HIPAA Compliance
+<a href="fr/hipaa_compliance.html">Lire en français</a> | <a href="es/hipaa_compliance.html">Leer en español</a> | <a href="ar/hipaa_compliance.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b1ec67a2ab986fec9903546ac7db4c1ce91c6517/source/hipaa_compliance.md" class="reference">7 Jul 2025</a>
 
 The [public KoboToolbox servers](creating_account.md) were not designed with the specific

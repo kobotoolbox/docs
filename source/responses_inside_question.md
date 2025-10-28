@@ -1,4 +1,5 @@
 # Including Responses Inside Another Question
+<a href="fr/responses_inside_question.html">Lire en français</a> | <a href="es/responses_inside_question.html">Leer en español</a> | <a href="ar/responses_inside_question.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/aca19282c9a46e952209d16a75fce9e800f6ea1c/source/responses_inside_question.md" class="reference">5 Oct 2020</a>
 
 You can include the response of one question (such as include the answer of the question 'How old are you?') inside the label of another question. This can be useful for many reasons in advanced forms. For example, you might want to confirm that a response is really correct.

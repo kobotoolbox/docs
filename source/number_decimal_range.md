@@ -1,4 +1,5 @@
 # Number, Decimal, and Range Question Types
+<a href="fr/number_decimal_range.html">Lire en français</a> | <a href="es/number_decimal_range.html">Leer en español</a> | <a href="ar/number_decimal_range.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ddc7265c83c14464689447dd16d7ddde9a084f75/source/number_decimal_range.md" class="reference">2 Apr 2025</a>
 
 When creating questions with numeric responses, you can choose between the

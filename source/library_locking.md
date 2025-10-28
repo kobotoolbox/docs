@@ -1,4 +1,5 @@
 # Library locking
+<a href="fr/library_locking.html">Lire en français</a> | <a href="es/library_locking.html">Leer en español</a> | <a href="ar/library_locking.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/de5e7dcfcec534ba447ee21ff65cf9fff07723f2/source/library_locking.md" class="reference">30 Sep 2025</a>
 
 "Library locking" refers to the feature enabling various aspects of a survey to
