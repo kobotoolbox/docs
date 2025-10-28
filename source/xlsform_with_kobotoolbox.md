@@ -68,7 +68,8 @@ initiate a file download when opened in a browser for the import to work.
 XLSForms can also be imported from similar software, such as Excel Web and
 OneDrive.
 
-### Retrieving a link from Google Sheets
+<details><summary><strong>Retrieving a link from Google Sheets</strong></summary>
+
 To obtain the correct URL for a Google Sheets spreadsheet:
 
 1.  Click on **File > Share > Publish to the Web**.
@@ -81,11 +82,16 @@ To obtain the correct URL for a Google Sheets spreadsheet:
 For more information, see <a href="https://support.google.com/docs/answer/183965?hl=en&co=GENIE.Platform%3DDesktop">Google Sheets documentation</a>.
 </p>
 
-### Retrieving a link from Dropbox
+</details>
+
+<br>
+
+<details><summary><strong>Retrieving a link from Dropbox</strong></summary>
+    
 To obtain the correct URL for a spreadsheet stored in Dropbox:
 
 1.  Copy the file link in Dropbox by clicking on <i class="k-icon k-icon-link"></i> **Copy link**.
-2.  At the end of the link, replace the suffix ``$dl=0`` with ``$dl=1``. This will be the
+2.  At the end of the link, replace the suffix ``dl=0`` with ``dl=1``. This will be the
     URL to import into Kobo Toolbox.
 
 Once you have retrieved the file URL, you can import your XLSForm to
@@ -103,6 +109,7 @@ KoboToolbox:
     automatically update in Kobo Toolbox. You must re-import the XLSForm via
     URL and redeploy the form changes.
 </p>
+</details>
 
 ## Testing and validating your XLSForm
 Validating, previewing, and testing your XLSForm is essential to ensuring its
@@ -138,7 +145,6 @@ If your XLSForm contains an error, an error message will appear, usually
 indicating the exact row, question, or expression where the issue is located. After
 correcting the error in your spreadsheet, you will need to upload the file again.
 
-The following table:
 
 | **Common error messages** | **Common explanation** |
 | :--- | :--- |
