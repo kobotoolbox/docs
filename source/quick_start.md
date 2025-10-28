@@ -1,5 +1,5 @@
 # Quickstart guide
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/72921cfe4ac9cd4ad75c1d57664c89478f26c71a/source/quick_start.md" class="reference">30 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97c86ebbe0f538ad62a6a4037cbdcf56365ff1a8/source/quick_start.md" class="reference">27 Oct 2025</a>
 
 This article provides a quick guide to getting started with KoboToolbox. It explains how to create an account, build and deploy a form, and begin collecting data.
 
@@ -57,5 +57,5 @@ To create your first form:
 </p>
 
 
-Once you have collected data, you can view, edit, and download it from the **DATA** page of your project. To learn more about managing your data, see the [Managing Projects & Data](https://support.kobotoolbox.org/managing-projects.html) support section.
+Once you have collected data, you can view, edit, and download it from the **DATA** page of your project. To learn more about managing your data, see [Managing Projects & Data](https://support.kobotoolbox.org/managing-projects.html).
 
