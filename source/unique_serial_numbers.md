@@ -1,8 +1,5 @@
 # Creating Unique Serial Numbers in Forms
-<a href="fr/unique_serial_numbers.html">Lire en français</a> | <a href="es/unique_serial_numbers.html">Leer en español</a> | <a href="ar/unique_serial_numbers.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/unique_serial_numbers.md" class="reference">29 Jul 2025</a>
-
-There are times you may want to generate a unique serial number for each and
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/unique_serial_numbers.md" class="reference">28 Oct 2025</a>
 every form in a project. This article discusses various workarounds on how to
 create unique serial numbers using the `calculate` question-type.
 

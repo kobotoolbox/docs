@@ -1,8 +1,5 @@
 # Exporting and downloading your data
-<a href="fr/export_download.html">Lire en français</a> | <a href="es/export_download.html">Leer en español</a> | <a href="ar/export_download.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8a772b24abadb4e8d54f9716b798c5479432f0e6/source/export_download.md" class="reference">6 Sep 2025</a>
-
-<iframe src="https://www.youtube.com/embed/bXzwvvnhj7U" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/export_download.md" class="reference">28 Oct 2025</a>
 
 When using KoboToolbox, you can download your collected data in various formats and customize your export settings. This article explains how to download your collected data, including an overview of export types and available formats.
 

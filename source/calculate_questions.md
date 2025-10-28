@@ -1,4 +1,5 @@
 # Calculate Question Type
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/calculate_questions.md" class="reference">28 Oct 2025</a>
 <a href="fr/calculate_questions.html">Lire en français</a> | <a href="es/calculate_questions.html">Leer en español</a> | <a href="ar/calculate_questions.html">اقرأ باللغة العربية</a>
 
 **Last updated:**

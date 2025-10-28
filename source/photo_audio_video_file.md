@@ -1,8 +1,5 @@
 # "Photo", "Audio", "Video" and "File" question types
-<a href="fr/photo_audio_video_file.html">Lire en français</a> | <a href="es/photo_audio_video_file.html">Leer en español</a> | <a href="ar/photo_audio_video_file.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/27c3e37a283d79de0cbecebbf3a41d5b6ba6d7df/source/photo_audio_video_file.md" class="reference">11 Sep 2023</a>
-
-With KoboToolbox, you can collect different types of media as part of your data
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/photo_audio_video_file.md" class="reference">28 Oct 2025</a>
 collection project.
 
 When you want to capture images as part of your submissions, use the "Photo"

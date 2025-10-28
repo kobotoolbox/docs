@@ -1,8 +1,5 @@
 # Data Storage
-<a href="fr/data_storage.html">Lire en français</a> | <a href="es/data_storage.html">Leer en español</a> | <a href="ar/data_storage.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/592a15ee470fa144eeac9850c6b6a648c4755306/source/data_storage.md" class="reference">11 Sep 2023</a>
-
-Whether you're using the [Global KoboToolbox Server](https://kf.kobotoolbox.org/) or the
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/data_storage.md" class="reference">28 Oct 2025</a>
 [European Union KoboToolbox Server](https://eu.kobotoolbox.org/), the data from
 both servers is stored on Amazon Web Services (AWS) servers.
 

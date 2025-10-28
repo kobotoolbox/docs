@@ -1,8 +1,5 @@
 # Text and Note question types
-<a href="fr/text_and_note.html">Lire en français</a> | <a href="es/text_and_note.html">Leer en español</a> | <a href="ar/text_and_note.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4d3ba5b4639335723af5b5a376159a536c904323/source/text_and_note.md" class="reference">9 May 2022</a>
-
-The "Text" question type is best used for questions that require undefined or
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/text_and_note.md" class="reference">28 Oct 2025</a>
 open-ended responses, such as names, feedback, explanations or descriptions.
 
 The "Note" question type does not allow for a response value, instead they can

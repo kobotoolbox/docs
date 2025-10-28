@@ -1,8 +1,5 @@
 # Acknowledge question type
-<a href="fr/acknowledge.html">Lire en français</a> | <a href="es/acknowledge.html">Leer en español</a> | <a href="ar/acknowledge.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cbfd264f05913df75ec184d5d9eb002f6e66f905/source/acknowledge.md" class="reference">17 Jul 2025</a>
-
-The "Acknowledge" question type displays a single option, to select "OK" on the
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/acknowledge.md" class="reference">28 Oct 2025</a>
 form.
 
 You can use the "Acknowledge" type for questions that require only 2 states of

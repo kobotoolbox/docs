@@ -1,4 +1,5 @@
 # Viewing and Creating Custom Reports
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/creating_custom_reports.md" class="reference">28 Oct 2025</a>
 <a href="fr/creating_custom_reports.html">Lire en français</a> | <a href="es/creating_custom_reports.html">Leer en español</a> | <a href="ar/creating_custom_reports.html">اقرأ باللغة العربية</a>
 
 **Last updated:**

@@ -1,8 +1,5 @@
 # Archiving and Unarchiving Projects
-<a href="fr/archiving_projects.html">Lire en français</a> | <a href="es/archiving_projects.html">Leer en español</a> | <a href="ar/archiving_projects.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/102fcd123671942ecf7c20504874a5c78d068e9d/source/archiving_projects.md" class="reference">26 Jul 2020</a>
-
-**This article describes the purpose and process of archiving and unarchiving a project**
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/archiving_projects.md" class="reference">28 Oct 2025</a>
 
 ## Purpose of archiving
 

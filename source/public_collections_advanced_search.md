@@ -1,4 +1,5 @@
 # Public Collections Advanced Search
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/public_collections_advanced_search.md" class="reference">28 Oct 2025</a>
 <a href="fr/public_collections_advanced_search.html">Lire en français</a> | <a href="es/public_collections_advanced_search.html">Leer en español</a> | <a href="ar/public_collections_advanced_search.html">اقرأ باللغة العربية</a>
 
 **Last updated:**

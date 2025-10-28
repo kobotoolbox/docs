@@ -1,8 +1,5 @@
 # Restricting Text Responses With Regular Expressions
-<a href="fr/restrict_responses.html">Lire en français</a> | <a href="es/restrict_responses.html">Leer en español</a> | <a href="ar/restrict_responses.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/restrict_responses.md" class="reference">29 Jul 2025</a>
-
-A regular expression, or regex, is a search pattern used for matching specific
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/restrict_responses.md" class="reference">28 Oct 2025</a>
 characters and ranges of characters within a string. It is widely used to
 validate, search, extract, and restrict text in most programming languages.
 KoboToolbox supports regex to control the length and characters during data

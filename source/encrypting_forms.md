@@ -1,8 +1,5 @@
 # Encrypting Forms
-<a href="fr/encrypting_forms.html">Lire en français</a> | <a href="es/encrypting_forms.html">Leer en español</a> | <a href="ar/encrypting_forms.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/179faeb3c5a17b69406b0243ab9c22f7ca86aa44/source/encrypting_forms.md" class="reference">4 Nov 2024</a>
-
-_This procedure is quite technical and is intended for users who are comfortable
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/encrypting_forms.md" class="reference">28 Oct 2025</a>
 with advanced technical instructions and requires strict attention to detail._
 
 Encrypted forms work by encrypting the data on the phone the moment it is saved.

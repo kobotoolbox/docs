@@ -1,8 +1,5 @@
 # Managing repeat group data
-<a href="fr/managing_repeat_groups.html">Lire en français</a> | <a href="es/managing_repeat_groups.html">Leer en español</a> | <a href="ar/managing_repeat_groups.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cb137e68b19147fcd0331a6f7919f5563dcebeca/source/managing_repeat_groups.md" class="reference">21 Aug 2025</a>
-
-KoboToolbox allows you to collect repeated data within a form, for example, when conducting a household survey where all members are asked the same questions. This article explains how to view, edit, and export repeat group data, and how to link repeat group data to the main data.
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/managing_repeat_groups.md" class="reference">28 Oct 2025</a>
 
 <p class="note">
   To learn more about setting up repeat groups in your forms, see <a     href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups</a>.

@@ -1,8 +1,5 @@
 # Date and time question types
-<a href="fr/date_time.html">Lire en français</a> | <a href="es/date_time.html">Leer en español</a> | <a href="ar/date_time.html">اقرأ باللغة العربية</a>
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c0db4b85c885da715ece9bd7c77707400b471f80/source/date_time.md" class="reference">28 Oct 2024</a>
-
-There are 3 different date and time question types in KoboToolbox: “Date”,
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/date_time.md" class="reference">28 Oct 2025</a>
 “Time” and “Date and time”.
 
 The “Date” question type is for capturing date values, for example when asking
