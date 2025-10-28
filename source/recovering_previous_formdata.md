@@ -3,6 +3,8 @@
 
 <a href="es/recovering_previous_formdata.html">Leer en español</a> | <a href="fr/recovering_previous_formdata.html">Lire en français</a> | <a href="ar/recovering_previous_formdata.html">اقرأ باللغة العربية</a>
 
+**This article shows steps on how to recover data from previous versions of the form in case of question deletions**
+
 Normally when you change a form, the data will be downloaded based on the definition of that new form. As it is if you changed the name of a question or deleted a question, all the data previously collected on that question will not be visible under the new question unless you chose to include data collected from previous versions as explained below. 
 
 Generally, when you edit your survey forms and redeploy it you should be able to download the data that has been submitted to the server in two different ways. For this, first please see the images below for better understanding:

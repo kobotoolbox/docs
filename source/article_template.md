@@ -3,6 +3,8 @@
 
 <a href="es/article_template.html">Leer en español</a> | <a href="fr/article_template.html">Lire en français</a> | <a href="ar/article_template.html">اقرأ باللغة العربية</a>
 
+This is where your intro goes. Note above that the "Last updated" code will be automatically updated with the correct article name and date when you publish, so not manual change is needed. Remember to name this file according to the article title, and end the file name with `.md`.
+
 This article includes:
 
 -   [Formatting text in markdown](#this-is-a-header)

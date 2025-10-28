@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/audit_logging.md" class="reference">28 Oct 2025</a>
 
 <a href="es/audit_logging.html">Leer en español</a> | <a href="fr/audit_logging.html">Lire en français</a> | <a href="ar/audit_logging.html">اقرأ باللغة العربية</a>
+
+Audit Logging can be a useful tool to monitor enumerator behavior and discover
 which questions are taking longer to answer, better understand how the
 enumerators are navigating a certain form, and see which enumerators are
 generally taking longer periods of time to submit answers.

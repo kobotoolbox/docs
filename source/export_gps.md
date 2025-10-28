@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/export_gps.md" class="reference">28 Oct 2025</a>
 
 <a href="es/export_gps.html">Leer en español</a> | <a href="fr/export_gps.html">Lire en français</a> | <a href="ar/export_gps.html">اقرأ باللغة العربية</a>
+
+Your project may include a one or more GPS questions in its form. KoboToolbox
 will include the GPS data (latitude, longitude, altitude, precision) in the
 dataset that can be downloaded as XLS or CSV. It is also possible to view the
 GPS coordinates on an online map and to download the points as a KML file for

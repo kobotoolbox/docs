@@ -3,6 +3,8 @@
 
 <a href="es/hxl.html">Leer en español</a> | <a href="fr/hxl.html">Lire en français</a> | <a href="ar/hxl.html">اقرأ باللغة العربية</a>
 
+## What exactly is HXL?
+
 HXL stands for **Humanitarian Exchange Language**. The goal of HXL is to improve
 information sharing during a humanitarian crisis by creating a simple way to
 promote interoperability of data. It does this by coding the data through

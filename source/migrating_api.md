@@ -3,6 +3,8 @@
 
 <a href="es/migrating_api.html">Leer en español</a> | <a href="fr/migrating_api.html">Lire en français</a> | <a href="ar/migrating_api.html">اقرأ باللغة العربية</a>
 
+As part of our ongoing efforts to streamline and modernize the KoboToolbox platform, we are phasing out KPI and KoboCAT `v1` endpoints. All KPI and KoboCAT `v1` endpoints are now deprecated, and will be removed entirely in January 2026. `v1` endpoints are being phased out in favor of the more robust and fully supported KPI `v2` API. 
+
 This article explains how to migrate your API integrations from the `v1` API (KoboCAT and KPI) to the KPI `v2` API. It covers each deprecated `v1` endpoint and its `v2` equivalent to help you transition your workflows.
 
 

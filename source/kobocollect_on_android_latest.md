@@ -3,6 +3,8 @@
 
 <a href="es/kobocollect_on_android_latest.html">Leer en español</a> | <a href="fr/kobocollect_on_android_latest.html">Lire en français</a> | <a href="ar/kobocollect_on_android_latest.html">اقرأ باللغة العربية</a>
 
+<iframe src="https://www.youtube.com/embed/qC2Bz8jZkIM?si=xSyTOxOMR6nE8tum" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 KoboCollect is a free, open-source KoboToolbox app designed for data collection on Android mobile devices. Its offline capabilities and compatibility with most Android devices make it ideal for fieldwork. 
 
 Before using KoboCollect, you must [set up a KoboToolbox account](https://support.kobotoolbox.org/creating_account.html) on the KoboToolbox website and [deploy data collection forms](https://support.kobotoolbox.org/quick_start.html). 

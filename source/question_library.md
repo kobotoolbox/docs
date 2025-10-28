@@ -3,6 +3,8 @@
 
 <a href="es/question_library.html">Leer en español</a> | <a href="fr/question_library.html">Lire en français</a> | <a href="ar/question_library.html">اقرأ باللغة العربية</a>
 
+## Adding Questions to your Library
+
 Questions that have previously been added to your library can be added to any other form by drag-and-dropping them from the Question Library sidebar within the formbuilder.
 
 To access the Question Library sidebar, click the **Add from Library** button in the top right corner of the formbuilder toolbar.

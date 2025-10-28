@@ -3,6 +3,8 @@
 
 <a href="es/responses_inside_question.html">Leer en español</a> | <a href="fr/responses_inside_question.html">Lire en français</a> | <a href="ar/responses_inside_question.html">اقرأ باللغة العربية</a>
 
+You can include the response of one question (such as include the answer of the question 'How old are you?') inside the label of another question. This can be useful for many reasons in advanced forms. For example, you might want to confirm that a response is really correct.
+
 Referencing other questions in another question requires giving them a fixed name through the question settings, such as `age` or `income`. When referencing other questions always use the unique question name inside the question referencing style, such as
 
 `${age}` or `${income}`

@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/select_one_and_select_many.md" class="reference">28 Oct 2025</a>
 
 <a href="es/select_one_and_select_many.html">Leer en español</a> | <a href="fr/select_one_and_select_many.html">Lire en français</a> | <a href="ar/select_one_and_select_many.html">اقرأ باللغة العربية</a>
+
+When you have a categorical question with a list of predefined options for
 respondents to choose from, you have to choose either the "Select One" or
 "Select Many" question type in KoboToolbox. A "Select One" question type, also
 known as a "single response" question, means a respondent can only select a

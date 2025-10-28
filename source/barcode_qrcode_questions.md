@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/barcode_qrcode_questions.md" class="reference">28 Oct 2025</a>
 
 <a href="es/barcode_qrcode_questions.html">Leer en español</a> | <a href="fr/barcode_qrcode_questions.html">Lire en français</a> | <a href="ar/barcode_qrcode_questions.html">اقرأ باللغة العربية</a>
+
+The "Barcode/QR code" question type is used for scanning, decoding and capturing
 barcodes and QR codes using the device camera. When a code is scanned with the
 camera the value (whether numbers or text) stored in the code is captured.
 

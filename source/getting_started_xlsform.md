@@ -3,6 +3,8 @@
 
 <a href="es/getting_started_xlsform.html">Leer en español</a> | <a href="fr/getting_started_xlsform.html">Lire en français</a> | <a href="ar/getting_started_xlsform.html">اقرأ باللغة العربية</a>
 
+When creating survey forms for KoboToolbox, you can build your form with the KoboToolbox Formbuilder or in XLSForm. XLSForm is very effective for creating both basic and advanced forms in a user-friendly format.
+
 This article explains how to:
 
 -   Set up an XLSForm using Microsoft Excel

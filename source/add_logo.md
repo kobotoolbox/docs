@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/add_logo.md" class="reference">28 Oct 2025</a>
 
 <a href="es/add_logo.html">Leer en español</a> | <a href="fr/add_logo.html">Lire en français</a> | <a href="ar/add_logo.html">اقرأ باللغة العربية</a>
+
+Adding a custom logo to the top of your form is a simple process and primarily
 follows the same steps as [adding media content to your forms](media.md).
 
 To begin:

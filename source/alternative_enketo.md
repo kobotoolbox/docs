@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/alternative_enketo.md" class="reference">28 Oct 2025</a>
 
 <a href="es/alternative_enketo.html">Leer en español</a> | <a href="fr/alternative_enketo.html">Lire en français</a> | <a href="ar/alternative_enketo.html">اقرأ باللغة العربية</a>
+
+Enketo web forms can be customized in the way your questions are presented.
 There are two alternative styles that can be selected and even combined:
 **Multiple Pages** and **Grid Theme**.
 

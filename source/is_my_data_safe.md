@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/is_my_data_safe.md" class="reference">28 Oct 2025</a>
 
 <a href="es/is_my_data_safe.html">Leer en español</a> | <a href="fr/is_my_data_safe.html">Lire en français</a> | <a href="ar/is_my_data_safe.html">اقرأ باللغة العربية</a>
+
+We take data protection very seriously. Data security means protecting our
 users’ data from any threats that may exist. This article summarizes some of our
 administrative, physical, organizational, and technical measures for enforcing
 data security on the KoboToolbox servers maintained by Kobo, Inc., the

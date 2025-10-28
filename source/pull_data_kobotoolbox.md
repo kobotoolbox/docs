@@ -3,6 +3,8 @@
 
 <a href="es/pull_data_kobotoolbox.html">Leer en español</a> | <a href="fr/pull_data_kobotoolbox.html">Lire en français</a> | <a href="ar/pull_data_kobotoolbox.html">اقرأ باللغة العربية</a>
 
+This is best done on xls version of the form.
+
 -   In the survey side of the form add a calculate field to your survey.
 -   Give that field a name that you want
 -   Then in its calculation column, call the pulldata() function, indicating

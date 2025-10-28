@@ -3,6 +3,8 @@
 
 <a href="es/data_through_webforms.html">Leer en español</a> | <a href="fr/data_through_webforms.html">Lire en français</a> | <a href="ar/data_through_webforms.html">اقرأ باللغة العربية</a>
 
+## What are web forms?
+
 [Enketo web forms](enketo.md) are used by KoboToolbox to preview your forms and
 to enter data directly on your computer. You can also use web forms for
 collecting data on your mobile devices - even if you're offline at the time of

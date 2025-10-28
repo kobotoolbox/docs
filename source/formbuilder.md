@@ -3,6 +3,8 @@
 
 <a href="es/formbuilder.html">Leer en español</a> | <a href="fr/formbuilder.html">Lire en français</a> | <a href="ar/formbuilder.html">اقرأ باللغة العربية</a>
 
+<iframe src="https://www.youtube.com/embed/PFL1_rBB5Q8?si=RkwB2XGHppAK-RRF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 The KoboToolbox Formbuilder is a user-friendly tool for designing and deploying data collection forms. This article provides a basic overview of its functions, from adding and managing questions to organizing your form.
 
 <p class="note">

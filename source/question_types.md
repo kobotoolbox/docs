@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/question_types.md" class="reference">28 Oct 2025</a>
 
 <a href="es/question_types.html">Leer en español</a> | <a href="fr/question_types.html">Lire en français</a> | <a href="ar/question_types.html">اقرأ باللغة العربية</a>
+
+The below table provides a high-level summary of each of the response types
 available to use in your XLSForm and formbuilder:
 
 | Question type                    | Icon                                          | Answer input                                                                                 |

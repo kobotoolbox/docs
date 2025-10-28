@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/transferring_forms.md" class="reference">28 Oct 2025</a>
 
 <a href="es/transferring_forms.html">Leer en español</a> | <a href="fr/transferring_forms.html">Lire en français</a> | <a href="ar/transferring_forms.html">اقرأ باللغة العربية</a>
+
+There may be times when you are out in the field without internet connection,
 but you still need to upload the latest version of the forms (i.e., the latest
 deployed forms in the server) to your device. You might also be unable to upload
 form submissions to the server due to a broken screen. In both scenarios, you

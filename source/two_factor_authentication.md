@@ -3,6 +3,8 @@
 
 <a href="es/two_factor_authentication.html">Leer en español</a> | <a href="fr/two_factor_authentication.html">Lire en français</a> | <a href="ar/two_factor_authentication.html">اقرأ باللغة العربية</a>
 
+<iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <br>
 
 KoboToolbox supports **Two-Factor Authentication (2FA)** to improve account security. With 2FA, you will need to enter your account password and a code from a smartphone app to access your KoboToolbox account.

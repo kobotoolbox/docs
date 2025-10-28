@@ -3,6 +3,8 @@
 
 <a href="es/archiving_projects.html">Leer en español</a> | <a href="fr/archiving_projects.html">Lire en français</a> | <a href="ar/archiving_projects.html">اقرأ باللغة العربية</a>
 
+**This article describes the purpose and process of archiving and unarchiving a project**
+
 ## Purpose of archiving
 
 It is advisable to archive forms that are no longer used for data collection. This prevents data collection using wrong forms especially in large teams of data collectors.

@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/devices_for_data_collection.md" class="reference">28 Oct 2025</a>
 
 <a href="es/devices_for_data_collection.html">Leer en español</a> | <a href="fr/devices_for_data_collection.html">Lire en français</a> | <a href="ar/devices_for_data_collection.html">اقرأ باللغة العربية</a>
+
+KoboCollect can run on any Android device, whether tablet or phone, as long as
 they run Android 2.1 (which was released on January 2010) or above. Web forms
 will run on any device, including Apple iOS devices and laptops. This article is
 about choosing the right mobile device for field data collection and applies to

@@ -3,6 +3,8 @@
 
 <a href="es/rest_services.html">Leer en español</a> | <a href="fr/rest_services.html">Lire en français</a> | <a href="ar/rest_services.html">اقرأ باللغة العربية</a>
 
+**How to link your data to other servers or services using REST Services**
+
 KoboToolbox has a number of advanced features built in based on our open source
 libraries, which include useful add-ons for advanced use cases.
 

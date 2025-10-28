@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/hipaa_compliance.md" class="reference">28 Oct 2025</a>
 
 <a href="es/hipaa_compliance.html">Leer en español</a> | <a href="fr/hipaa_compliance.html">Lire en français</a> | <a href="ar/hipaa_compliance.html">اقرأ باللغة العربية</a>
+
+The [public KoboToolbox servers](creating_account.md) were not designed with the specific
 requirements of HIPAA in mind and, as such, carry no guarantee of HIPAA
 compliance. HIPAA rules cover how servers store and transfer different kinds of
 data, what kinds of logs need to be kept at what level, as well as legal

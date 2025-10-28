@@ -3,6 +3,8 @@
 
 <a href="es/advanced_calculate.html">Leer en español</a> | <a href="fr/advanced_calculate.html">Lire en français</a> | <a href="ar/advanced_calculate.html">اقرأ باللغة العربية</a>
 
+Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a **Calculation**, and writing the mathematical expression into the question label field. 
+
 This article provides step-by-step instructions on how to add calculations while using the formbuilder or by downloading and adding it directly to the XLSform. 
 
 To view a complete and detailed list of all functions please visit ODK's excellent [XPath Functions documentation](https://getodk.github.io/xforms-spec).  

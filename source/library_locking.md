@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/library_locking.md" class="reference">28 Oct 2025</a>
 
 <a href="es/library_locking.html">Leer en español</a> | <a href="fr/library_locking.html">Lire en français</a> | <a href="ar/library_locking.html">اقرأ باللغة العربية</a>
+
+"Library locking" refers to the feature enabling various aspects of a survey to
 be "[locked](#locked)" when created from a template containing
 [locking attributes](#restrictions). All aspects of a form's editing are
 available to be locked through the assigning of "[locking profiles](#profile)"

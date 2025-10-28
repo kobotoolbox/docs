@@ -3,6 +3,8 @@
 
 <a href="es/project_sharing_settings.html">Leer en español</a> | <a href="fr/project_sharing_settings.html">Lire en français</a> | <a href="ar/project_sharing_settings.html">اقرأ باللغة العربية</a>
 
+<iframe src="https://www.youtube.com/embed/vRuAan0aSfY?si=FbKeyjF9XitYdUWC" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 KoboToolbox allows you to customize sharing settings based on project needs. This article explains KoboToolbox’s **project-level privacy and sharing controls**, including allowing submissions without authentication, making a project public, transferring ownership, and removing shared projects.
 
 <p class="note">

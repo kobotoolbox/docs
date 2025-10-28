@@ -3,6 +3,8 @@
 
 <a href="es/api.html">Leer en español</a> | <a href="fr/api.html">Lire en français</a> | <a href="ar/api.html">اقرأ باللغة العربية</a>
 
+An **Application Programming Interface (API)** allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.
+
 With the KoboToolbox **API**, you can:
 
 - **Download data** automatically in JSON, CSV, or XLSX.

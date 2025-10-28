@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/question_options.md" class="reference">28 Oct 2025</a>
 
 <a href="es/question_options.html">Leer en español</a> | <a href="fr/question_options.html">Lire en français</a> | <a href="ar/question_options.html">اقرأ باللغة العربية</a>
+
+After adding a question, there are many different customizations you can make to
 it using the question options. To get to the question options screen of a
 question, click its <i class="k-icon k-icon-settings"></i> Settings button.
 

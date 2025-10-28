@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/user_specified_other.md" class="reference">28 Oct 2025</a>
 
 <a href="es/user_specified_other.html">Leer en español</a> | <a href="fr/user_specified_other.html">Lire en français</a> | <a href="ar/user_specified_other.html">اقرأ باللغة العربية</a>
+
+Creating user-specified "Other" responses for multiple choice questions in one
 step is a feature that is currently on KoboToolbox's development roadmap. In the
 meantime, here's how to create them in your form manually using skip logic.
 

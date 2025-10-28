@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/number_text_responses.md" class="reference">28 Oct 2025</a>
 
 <a href="es/number_text_responses.html">Leer en español</a> | <a href="fr/number_text_responses.html">Lire en français</a> | <a href="ar/number_text_responses.html">اقرأ باللغة العربية</a>
+
+There are underlying technical constraints to the length of the response in a **Number** or **Text** question.
  
 **Number questions** can save up to 17 digits (positive or negative number). To be exact, the largest number that can be entered is 2147483647 and the smallest -2147483648.
  

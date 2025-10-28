@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/deploy_form_new_project.md" class="reference">28 Oct 2025</a>
 
 <a href="es/deploy_form_new_project.html">Leer en español</a> | <a href="fr/deploy_form_new_project.html">Lire en français</a> | <a href="ar/deploy_form_new_project.html">اقرأ باللغة العربية</a>
+
+Once you are ready to begin starting or piloting your data collection for a
 particular project, click the **Deploy** button to make the form live and allow
 data collection to begin.
 

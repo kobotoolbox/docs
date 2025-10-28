@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/creating_account.md" class="reference">28 Oct 2025</a>
 
 <a href="es/creating_account.html">Leer en español</a> | <a href="fr/creating_account.html">Lire en français</a> | <a href="ar/creating_account.html">اقرأ باللغة العربية</a>
+
+The first step for all users when getting started with **KoboToolbox** is to
 create an account. This article will guide you through the steps for creating an
 account and signing in to your account.
 

@@ -3,6 +3,8 @@
 
 <a href="es/synchronous_exports.html">Leer en español</a> | <a href="fr/synchronous_exports.html">Lire en français</a> | <a href="ar/synchronous_exports.html">اقرأ باللغة العربية</a>
 
+<iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 KoboToolbox offers two primary methods for accessing your data: asynchronous and synchronous exports. The standard asynchronous method involves [manually downloading data files](https://support.kobotoolbox.org/export_download.html) containing all submissions up to the time of download. In contrast, synchronous exports enable automatic integration of your KoboToolbox data with external applications such as Microsoft Power BI, Excel, or Google Sheets.
 
 With synchronous exports, your data updates automatically as new submissions are received, eliminating the need for manual refreshing. This method provides a CSV or XLSX file, configured with your predefined export settings, which can include question labels, languages, filters, and repeat group data. 

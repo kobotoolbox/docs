@@ -3,6 +3,8 @@
 
 <a href="es/howto_edit_single_submissions.html">Leer en español</a> | <a href="fr/howto_edit_single_submissions.html">Lire en français</a> | <a href="ar/howto_edit_single_submissions.html">اقرأ باللغة العربية</a>
 
+To edit or delete a submitted questionnaire, please follow the steps below.
+
 Please note that if you are collecting data with the [KoboCollect app](https://support.kobotoolbox.org/data_collection_kobocollect.html), once a form has been
     submitted to the server it is **not possible** to edit or delete a
     submission from KoboCollect.

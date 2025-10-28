@@ -3,6 +3,8 @@
 
 <a href="es/dynamic_data_attachment.html">Leer en español</a> | <a href="fr/dynamic_data_attachment.html">Lire en français</a> | <a href="ar/dynamic_data_attachment.html">اقرأ باللغة العربية</a>
 
+Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.
+
 <p class="note">
     <strong>Note:</strong> Dynamic data attachments function similarly to the <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a> function but eliminate the need for separate CSV files, since the data from a linked parent project serves as the data source.
 </p>

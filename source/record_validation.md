@@ -3,6 +3,8 @@
 
 <a href="es/record_validation.html">Leer en español</a> | <a href="fr/record_validation.html">Lire en français</a> | <a href="ar/record_validation.html">اقرأ باللغة العربية</a>
 
+A Project owner can now give a “Can Validate” permission to other users. Users with this permission can view a record, edit it if necessary, and assign a status to the record in question. Assigning a status to a particular record/submission raises data collection standards for teams with more than one enumerator.
+
 ## What are the statuses that you can assign to a record?
 
 The validation status labels available include:

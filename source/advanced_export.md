@@ -3,6 +3,8 @@
 
 <a href="es/advanced_export.html">Leer en español</a> | <a href="fr/advanced_export.html">Lire en français</a> | <a href="ar/advanced_export.html">اقرأ باللغة العربية</a>
 
+Advanced options provide greater control and flexibility when downloading and exporting your data. This article will guide you through customizing your data exports, from selecting data fields and handling various question types to setting parameters for different analytical needs.
+
 <p class="note">
     To learn more about downloading data, including an overview of export types and available formats, see <a href="https://support.kobotoolbox.org/export_download.html?highlight=export">Exporting and downloading your data.</a>
 </p>

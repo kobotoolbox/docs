@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/manual_upload.md" class="reference">28 Oct 2025</a>
 
 <a href="es/manual_upload.html">Leer en español</a> | <a href="fr/manual_upload.html">Lire en français</a> | <a href="ar/manual_upload.html">اقرأ باللغة العربية</a>
+
+<p class="note">Please note this is still an experimental feature and it does
 not prevent you from creating duplicate submissions.</p>
 
 In certain situations, you might not be able to use the standard uploading

@@ -2,6 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/language_dashboard.md" class="reference">28 Oct 2025</a>
 
 <a href="es/language_dashboard.html">Leer en español</a> | <a href="fr/language_dashboard.html">Lire en français</a> | <a href="ar/language_dashboard.html">اقرأ باللغة العربية</a>
+
+There are two methods to adding multiple languages to your form. You can either
 add and manage them directly through the online Project Dashboard or you can add
 them in an [XLS Form and upload it to Kobo](language_xls.md).
 

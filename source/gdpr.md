@@ -3,6 +3,8 @@
 
 <a href="es/gdpr.html">Leer en español</a> | <a href="fr/gdpr.html">Lire en français</a> | <a href="ar/gdpr.html">اقرأ باللغة العربية</a>
 
+## What is GDPR?
+
 GDPR stands for [General Data Protection Regulation](https://gdpr-info.eu) and
 is a new comprehensive data protection law in the EU that replaces existing laws
 to strengthen the protection of personal data and the rights of the individual.

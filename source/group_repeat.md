@@ -3,6 +3,8 @@
 
 <a href="es/group_repeat.html">Leer en español</a> | <a href="fr/group_repeat.html">Lire en français</a> | <a href="ar/group_repeat.html">اقرأ باللغة العربية</a>
 
+<iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 Grouping questions helps organize related questions into sections, adds structure to your form, and makes it easier to navigate. For example, all demographic questions can be grouped together in one section of the form.
 
 Users may need to group questions for various reasons:

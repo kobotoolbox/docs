@@ -3,6 +3,8 @@
 
 <a href="es/export_download.html">Leer en español</a> | <a href="fr/export_download.html">Lire en français</a> | <a href="ar/export_download.html">اقرأ باللغة العربية</a>
 
+<iframe src="https://www.youtube.com/embed/bXzwvvnhj7U" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 When using KoboToolbox, you can download your collected data in various formats and customize your export settings. This article explains how to download your collected data, including an overview of export types and available formats.
 
 ## Downloading your data
