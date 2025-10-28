@@ -34,7 +34,7 @@ an XLSForm file:
 2.  Click the <i class="k-icon k-icon-more"></i> **More actions icon**.
 3.  Select <i class="k-icon k-icon-xls-file"></i> **Download XLS**.
 
-![Download XLS menu](/images/xlsform_with_kobotoolbox/download_xls.png)
+![Download XLS menu](images/xlsform_with_kobotoolbox/download_xls.png)
 
 ## Uploading an XLSForm to KoboToolbox
 Alternatively, you may need to create a new project from an XLSForm that you
@@ -47,7 +47,7 @@ To upload and preview an XLSForm to a new project in KoboToolbox:
 4.  Click the <i class="k-icon k-icon-view"></i> **Preview** button to preview
     your form.
 
-![Upload XLSForm dialog](/images/xlsform_with_kobotoolbox/upload_xls.png)
+![Upload XLSForm dialog](images/xlsform_with_kobotoolbox/upload_xls.png)
 
 ## Replacing a form with an XLSForm
 Once a project has been created, you can replace any existing form with an
@@ -58,7 +58,7 @@ updated XLSForm:
     corner.
 3.  Select **Upload an XLSForm** and upload your Excel file.
 
-![Replace form source dialog](/images/xlsform_with_kobotoolbox/replace_form.png)
+![Replace form source dialog](images/xlsform_with_kobotoolbox/replace_form.png)
 
 ## Importing an XLSForm via URL
 If you are using Google Sheets or storing the file in Dropbox, you can import
@@ -95,7 +95,7 @@ KoboToolbox:
 3.  Paste your URL and click **Import**.
 4.  Enter the project details and click **Create project**.
 
-![Import XLSForm via URL dialog](/images/xlsform_with_kobotoolbox/import_via_url.png)
+![Import XLSForm via URL dialog](images/xlsform_with_kobotoolbox/import_via_url.png)
 
 <p class="note">
     <b>Note:</b> Changes made to a file in Dropbox or Google Sheets do not
