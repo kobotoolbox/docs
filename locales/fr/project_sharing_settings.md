@@ -7,12 +7,12 @@
 KoboToolbox vous permet de personnaliser les paramètres de partage en fonction des besoins du projet. Cet article explique les **contrôles de confidentialité et de partage au niveau du projet** de KoboToolbox, notamment la possibilité d'autoriser les soumissions sans authentification, de rendre un projet public, de transférer la propriété et de supprimer des projets partagés.
 
 <p class="note">
-  Pour en savoir plus sur la gestion de ce que des <strong>utilisatrices et utilisateurs spécifiques</strong> peuvent faire dans un projet, consultez <a href="https://support.kobotoolbox.org/managing_permissions.html">Partager votre projet avec des autorisations spécifiques aux utilisatrices et utilisateurs</a>.
+  Pour en savoir plus sur la gestion de ce que des <strong>utilisatrices et utilisateurs spécifiques</strong> peuvent faire dans un projet, consultez <a href="managing_permissions.html">Partager votre projet avec des autorisations spécifiques aux utilisatrices et utilisateurs</a>.
 </p>
 
 ## Autoriser les soumissions sans authentification
 
-Par défaut, KoboToolbox nécessite un nom d'utilisateur et un mot de passe pour soumettre des données, gérer des projets et accéder aux soumissions. Lorsqu'un nouveau projet est déployé, l'authentification est requise pour accéder au formulaire et envoyer des soumissions. Seules les utilisatrices et utilisateurs avec qui vous avez [partagé le formulaire](https://support.kobotoolbox.org/managing_permissions.html) et auxquels vous avez accordé l'autorisation **Ajouter des soumissions** pourront accéder au formulaire et soumettre des données.
+Par défaut, KoboToolbox nécessite un nom d'utilisateur et un mot de passe pour soumettre des données, gérer des projets et accéder aux soumissions. Lorsqu'un nouveau projet est déployé, l'authentification est requise pour accéder au formulaire et envoyer des soumissions. Seules les utilisatrices et utilisateurs avec qui vous avez [partagé le formulaire](managing_permissions.md) et auxquels vous avez accordé l'autorisation **Ajouter des soumissions** pourront accéder au formulaire et soumettre des données.
 
 Dans certains cas, vous pouvez souhaiter activer la saisie de données pour toute personne disposant de l'URL. Cela permet aux personnes disposant de l'URL du formulaire d'envoyer des soumissions sans se connecter à un compte KoboToolbox.
 

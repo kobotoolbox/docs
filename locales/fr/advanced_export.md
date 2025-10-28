@@ -5,7 +5,7 @@
 Les options avancées offrent un meilleur contrôle et une plus grande flexibilité lors du téléchargement et de l'exportation de vos données. Cet article vous guidera dans la personnalisation de vos exportations de données, de la sélection des champs de données et de la gestion de divers types de questions à la définition de paramètres pour différents besoins analytiques.
 
 <p class="note">
-    Pour en savoir plus sur le téléchargement de données, y compris un aperçu des types d'exportation et des formats disponibles, consultez <a href="https://support.kobotoolbox.org/export_download.html?highlight=export">Exporter et télécharger vos données.</a>
+    Pour en savoir plus sur le téléchargement de données, y compris un aperçu des types d'exportation et des formats disponibles, consultez <a href="https://support.kobotoolbox.org/fr/export_download.html?highlight=export">Exporter et télécharger vos données.</a>
 </p>
 
 ## Options d'exportation pour les questions à choix multiples
@@ -47,7 +47,7 @@ KoboToolbox offre des options supplémentaires de format de données pour person
 
 ## Enregistrement des paramètres d'exportation
 
-Vous pouvez enregistrer vos paramètres d'exportation définis pour une utilisation future ou pour générer un lien d'[exportation synchrone](https://support.kobotoolbox.org/synchronous_exports.html) pour des logiciels comme PowerBI ou Excel.
+Vous pouvez enregistrer vos paramètres d'exportation définis pour une utilisation future ou pour générer un lien d'[exportation synchrone](synchronous_exports.md) pour des logiciels comme PowerBI ou Excel.
 
 | **Paramètre d'exportation** | **Description**                                |
 | :-------------------- | :------------------------------------ |

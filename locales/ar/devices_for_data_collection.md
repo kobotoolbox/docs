@@ -7,7 +7,7 @@
 يُعد التوصية بأجهزة لجمع البيانات الميدانية أمرًا صعبًا نظرًا للعدد الكبير من الأجهزة المتاحة، ولكل منها ميزات ومزايا مختلفة. عند اختيار جهاز، تحتاج إلى الموازنة بين أهمية جودة الشاشة والمتانة وسعة البطارية والكاميرا (ضع في اعتبارك ما إذا كنت ستحتاج إلى كاميرا أمامية أو خلفية أو كليهما) والتخزين الداخلي والذاكرة وأجهزة الاستشعار الداخلية (GPS، الحركة) وخيارات الاتصال (WiFi، الشبكة الخلوية، BlueTooth، ...) والوزن، إلخ.
 
 <p class="note">
-    لمعرفة المزيد حول توصيل KoboCollect بحساب KoboToolbox الخاص بك، وتكوين إعدادات KoboCollect، وجمع البيانات باستخدام التطبيق، راجع <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">البدء مع KoboCollect</a>، و<a href="https://support.kobotoolbox.org/kobocollect_settings.html">تخصيص إعدادات KoboCollect</a> و<a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">جمع البيانات باستخدام KoboCollect</a>.
+    لمعرفة المزيد حول توصيل KoboCollect بحساب KoboToolbox الخاص بك، وتكوين إعدادات KoboCollect، وجمع البيانات باستخدام التطبيق، راجع <a href="kobocollect_on_android_latest.html">البدء مع KoboCollect</a>، و<a href="kobocollect_settings.html">تخصيص إعدادات KoboCollect</a> و<a href="data_collection_kobocollect.html">جمع البيانات باستخدام KoboCollect</a>.
 </p>
 
 ## الهواتف مقابل الأجهزة اللوحية

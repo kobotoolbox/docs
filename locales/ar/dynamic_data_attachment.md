@@ -5,12 +5,12 @@
 يتيح لك الربط الديناميكي استخدام البيانات من **مشروع أساسي** داخل **مشاريع فرعية**، مما يبسط إدارة جمع البيانات الطولية. يشرح هذا المقال كيفية ربط البيانات ديناميكيًا بين مشاريع KoboToolbox.
 
 <p class="note">
-    <strong>ملاحظة:</strong> تعمل مرفقات البيانات الديناميكية بشكل مشابه لوظيفة <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a> ولكنها تلغي الحاجة إلى ملفات CSV منفصلة، حيث تعمل البيانات من المشروع الأساسي المرتبط كمصدر للبيانات.
+    <strong>ملاحظة:</strong> تعمل مرفقات البيانات الديناميكية بشكل مشابه لوظيفة <a href="https://support.kobotoolbox.org/ar/pull_data_kobotoolbox.html"><code>pulldata()</code></a> ولكنها تلغي الحاجة إلى ملفات CSV منفصلة، حيث تعمل البيانات من المشروع الأساسي المرتبط كمصدر للبيانات.
 </p>
 
 يمكنك استرداد مختلف **الإجابات غير الإعلامية** من مشروع أساسي وإجراء عمليات حسابية على هذه البيانات المرتبطة في مشروع فرعي. يمكن أن يكون هذا مفيدًا لاسترداد البيانات الأساسية أو معلومات الاتصال أو السجلات الصحية في الدراسات الجماعية، أو لتأكيد أو التحقق من البيانات التي تم جمعها مسبقًا.
 
-نوصي باستخدام [XLSForm](https://support.kobotoolbox.org/edit_forms_excel.html) لإعداد مرفقات البيانات الديناميكية. للحصول على أمثلة للمشاريع الأساسية والفرعية، قم بتنزيل الملفات النموذجية [هنا](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) و[هنا](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx).
+نوصي باستخدام [XLSForm](edit_forms_excel.md) لإعداد مرفقات البيانات الديناميكية. للحصول على أمثلة للمشاريع الأساسية والفرعية، قم بتنزيل الملفات النموذجية [هنا](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) و[هنا](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx).
 
 ## الربط الديناميكي للمشاريع في XLSForm
 
@@ -26,7 +26,7 @@
 | survey | 
 
 
-3. في جميع أنحاء النموذج، يمكنك استرداد القيم من المشروع الأساسي عن طريق إنشاء سؤال جديد وتضمين التعبير المناسب في عمود `calculation` (انظر الجدول [أدناه](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). يمكنك استخدام أنواع الأسئلة التالية لاسترداد البيانات:
+3. في جميع أنحاء النموذج، يمكنك استرداد القيم من المشروع الأساسي عن طريق إنشاء سؤال جديد وتضمين التعبير المناسب في عمود `calculation` (انظر الجدول [أدناه](https://support.kobotoolbox.org/ar/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). يمكنك استخدام أنواع الأسئلة التالية لاسترداد البيانات:
     - استخدم نوع السؤال **calculate** لاسترداد وتخزين القيم للاستخدام المستقبلي داخل النموذج أو مجموعة البيانات (على سبيل المثال، للحسابات أو تسميات الأسئلة الديناميكية).
     - استخدم أنواع الأسئلة **text** أو **integer** أو **decimal** أو **select_one** أو **select_multiple** لتضمين القيم المستردة كإجابات افتراضية في الحقول القابلة للتحرير. لن تؤدي البيانات المحررة في المشروع الفرعي إلى تغيير البيانات الأصلية في المشروع الأساسي.
   
@@ -84,7 +84,7 @@
     - يتم مشاركة جميع البيانات افتراضيًا، ولكن يمكنك تقييد متغيرات معينة لمشاركتها مع المشاريع الفرعية بالنقر على "Select specific questions to share".
 
 <p class="note">
-    <strong>ملاحظة:</strong> إذا كانت المشاريع لها مالكون مختلفون، فيجب على مالك المشروع الأساسي <a href="https://support.kobotoolbox.org/managing_permissions.html">مشاركة المشروع</a> مع مالك المشروع الفرعي. الحد الأدنى من الأذونات المطلوبة لعمل مرفقات البيانات الديناميكية هي <strong>View form</strong> و <strong>View submissions</strong>. لاحظ أن هذا يسمح لمسؤولي المشروع الفرعي بعرض جميع بيانات المشروع الأساسي.
+    <strong>ملاحظة:</strong> إذا كانت المشاريع لها مالكون مختلفون، فيجب على مالك المشروع الأساسي <a href="managing_permissions.html">مشاركة المشروع</a> مع مالك المشروع الفرعي. الحد الأدنى من الأذونات المطلوبة لعمل مرفقات البيانات الديناميكية هي <strong>View form</strong> و <strong>View submissions</strong>. لاحظ أن هذا يسمح لمسؤولي المشروع الفرعي بعرض جميع بيانات المشروع الأساسي.
 </p>
 
 3. قم بتحميل ونشر **المشروع الفرعي**.
@@ -131,7 +131,7 @@
 
 ## جمع وإدارة البيانات مع الربط الديناميكي
 
-يمكن جمع البيانات للمشاريع المرتبطة ديناميكيًا باستخدام [تطبيق Android KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) أو [نماذج Enketo الإلكترونية](https://support.kobotoolbox.org/data_through_webforms.html).
+يمكن جمع البيانات للمشاريع المرتبطة ديناميكيًا باستخدام [تطبيق Android KoboCollect](kobocollect_on_android_latest.md) أو [نماذج Enketo الإلكترونية](data_through_webforms.md).
 
 عند جمع البيانات، لاحظ ما يلي:
 
@@ -140,7 +140,7 @@
 - في وضع عدم الاتصال، قم بتنزيل المشروع الفرعي بشكل متكرر لضمان مزامنة البيانات مع المشروع الأساسي.
 
 <p class="note">
-    <strong>ملاحظة:</strong> يمكنك <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">تكوين تطبيق Android KoboCollect</a> لتحديث بيانات المشروع الأساسي تلقائيًا عند توفر اتصال بالإنترنت. انتقل إلى <strong>Settings > Form management > Blank form update mode</strong> وحدد إما <strong>Previously downloaded forms only</strong> أو <strong>Exactly match server</strong>. يمكنك ضبط تكرار التنزيل التلقائي ليحدث كل 15 دقيقة، أو كل ساعة، أو كل ست ساعات، أو كل 24 ساعة. لاحظ أن تمكين هذا الإعداد قد يزيد من استهلاك البطارية.
+    <strong>ملاحظة:</strong> يمكنك <a href="https://support.kobotoolbox.org/ar/kobocollect_settings.html#form-management-settings">تكوين تطبيق Android KoboCollect</a> لتحديث بيانات المشروع الأساسي تلقائيًا عند توفر اتصال بالإنترنت. انتقل إلى <strong>Settings > Form management > Blank form update mode</strong> وحدد إما <strong>Previously downloaded forms only</strong> أو <strong>Exactly match server</strong>. يمكنك ضبط تكرار التنزيل التلقائي ليحدث كل 15 دقيقة، أو كل ساعة، أو كل ست ساعات، أو كل 24 ساعة. لاحظ أن تمكين هذا الإعداد قد يزيد من استهلاك البطارية.
 </p>
 
 ## استكشاف الأخطاء وإصلاحها
@@ -168,7 +168,7 @@
 
 <details>
 <summary><strong>لا يتم تحديث البيانات الديناميكية في KoboCollect</strong></summary>
-إذا كنت تستخدم KoboCollect وتجمع البيانات دون اتصال بالإنترنت، فيجب أولاً إرسال البيانات إلى المشروع الأساسي ثم تنزيلها إلى جهاز جمع البيانات الخاص بك حتى يعمل مرفق البيانات الديناميكي. تتطلب كلتا الخطوتين اتصالاً بالإنترنت. يشبه تنزيل البيانات الأساسية تنزيل إصدار جديد من النموذج، ويمكن تكوين تطبيق KoboCollect <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">لتنزيل البيانات الجديدة تلقائيًا</a> بتكرار محدد. لا يُنصح بالاعتماد على مرفقات البيانات الديناميكية للبيانات التي يتم جمعها دون اتصال بالإنترنت خلال فترة زمنية قصيرة.
+إذا كنت تستخدم KoboCollect وتجمع البيانات دون اتصال بالإنترنت، فيجب أولاً إرسال البيانات إلى المشروع الأساسي ثم تنزيلها إلى جهاز جمع البيانات الخاص بك حتى يعمل مرفق البيانات الديناميكي. تتطلب كلتا الخطوتين اتصالاً بالإنترنت. يشبه تنزيل البيانات الأساسية تنزيل إصدار جديد من النموذج، ويمكن تكوين تطبيق KoboCollect <a href="https://support.kobotoolbox.org/ar/kobocollect_settings.html#form-management-settings">لتنزيل البيانات الجديدة تلقائيًا</a> بتكرار محدد. لا يُنصح بالاعتماد على مرفقات البيانات الديناميكية للبيانات التي يتم جمعها دون اتصال بالإنترنت خلال فترة زمنية قصيرة.
 </details>
 
 <br>

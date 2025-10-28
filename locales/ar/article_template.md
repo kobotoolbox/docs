@@ -77,7 +77,7 @@
 
 انقر على <i class="k-icon k-icon-replace"></i> **استبدال النموذج**.
 
-للحصول على قائمة كاملة بجميع الأيقونات، راجع [هنا](https://support.kobotoolbox.org/article_template.html#list-of-icons) وأيضًا [هنا](https://support.kobotoolbox.org/_static/kpi-icons/k-icons.html).
+للحصول على قائمة كاملة بجميع الأيقونات، راجع [هنا](https://support.kobotoolbox.org/ar/article_template.html#list-of-icons) وأيضًا [هنا](https://support.kobotoolbox.org/_static/kpi-icons/k-icons.html).
 
 ### إضافة فيديو YouTube
 

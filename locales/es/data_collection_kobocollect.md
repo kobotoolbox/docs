@@ -4,7 +4,7 @@
 
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-KoboCollect es una aplicación gratuita y de código abierto de KoboToolbox diseñada para la recolección de datos en dispositivos móviles Android. Antes de comenzar, [instala y configura](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) la aplicación de Android de KoboCollect.
+KoboCollect es una aplicación gratuita y de código abierto de KoboToolbox diseñada para la recolección de datos en dispositivos móviles Android. Antes de comenzar, [instala y configura](kobocollect_on_android_latest.md) la aplicación de Android de KoboCollect.
 
 Una vez configurada, KoboCollect te permite completar y enviar formularios desde tu dispositivo móvil, incluso sin conexión. Este artículo explica cómo usar la aplicación para recolectar datos, incluyendo el acceso a formularios, guardar y editar respuestas, y enviar envíos finalizados.
 
@@ -12,8 +12,8 @@ Una vez configurada, KoboCollect te permite completar y enviar formularios desde
 
 Para comenzar la recolección de datos con KoboCollect, necesitarás descargar el/los formulario(s) de KoboToolbox a tu dispositivo. Antes de descargar, asegúrate de tener:
 
-- Al menos un [formulario desplegado](https://support.kobotoolbox.org/deploy_form_new_project.html) en tu cuenta de KoboToolbox (ya sea de tu propiedad o compartido contigo).
-- Un proyecto (cuenta) [configurado en KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html).
+- Al menos un [formulario desplegado](deploy_form_new_project.md) en tu cuenta de KoboToolbox (ya sea de tu propiedad o compartido contigo).
+- Un proyecto (cuenta) [configurado en KoboCollect](kobocollect_on_android_latest.md).
 - Una conexión a internet en tu dispositivo.
   
 Para descargar formularios a tu dispositivo:
@@ -24,7 +24,7 @@ Para descargar formularios a tu dispositivo:
 Los formularios descargados aparecerán cuando hagas clic en **Iniciar nuevo formulario** desde el menú principal de la aplicación.
 
 <p class="note">
-  <strong>Nota:</strong> Necesitarás repetir este proceso cada vez que se realice una actualización al formulario o a los archivos multimedia del formulario. Si anticipas actualizaciones frecuentes del formulario o estás usando <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">archivos adjuntos de datos dinámicos</a>, recomendamos habilitar las <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">descargas automáticas de formularios</a>. 
+  <strong>Nota:</strong> Necesitarás repetir este proceso cada vez que se realice una actualización al formulario o a los archivos multimedia del formulario. Si anticipas actualizaciones frecuentes del formulario o estás usando <a href="dynamic_data_attachment.html">archivos adjuntos de datos dinámicos</a>, recomendamos habilitar las <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings">descargas automáticas de formularios</a>. 
 </p>
 
 ## Recolectar datos
@@ -35,7 +35,7 @@ Una vez que los formularios estén descargados, puedes comenzar la recolección 
 2. Selecciona el formulario con el que deseas recolectar datos.
 3. Para cambiar el idioma del formulario, toca el **ícono de tres puntos** <i class="k-icon-more"></i> en la esquina superior derecha de la pantalla y haz clic en **Cambiar idioma**.
 4. Navega a través de las preguntas deslizando hacia la izquierda o haciendo clic en **SIG.** después de responder.
-5. Al final de la encuesta, puedes elegir **Guardar como borrador**, **Finalizar** o **Enviar** el formulario (dependiendo de la [configuración de tu proyecto](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings)).
+5. Al final de la encuesta, puedes elegir **Guardar como borrador**, **Finalizar** o **Enviar** el formulario (dependiendo de la [configuración de tu proyecto](https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings)).
 
 | **Opción** | **Descripción**                                |
 | :----------------- | :--------------------------------------------- |
@@ -43,7 +43,7 @@ Una vez que los formularios estén descargados, puedes comenzar la recolección 
 | Finalizar      | El formulario se guardará en **Listo para enviar** y ya no podrá ser editado. Esta opción aparece solo si la configuración **Envío automático** está establecida en **Desactivado**.                                  |
 | Enviar           | El formulario se enviará al servidor directamente o se pondrá en cola hasta que haya una conexión a internet disponible. Ya no podrá ser editado. Esta opción aparece solo si la configuración **Envío automático** está habilitada.            |
 
-Por defecto, los formularios y datos permanecen en el dispositivo hasta que se eliminen manualmente. Si habilitas **Eliminar después de enviar** en la [configuración del proyecto](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings), los formularios se eliminarán automáticamente una vez que hayan sido enviados al servidor.
+Por defecto, los formularios y datos permanecen en el dispositivo hasta que se eliminen manualmente. Si habilitas **Eliminar después de enviar** en la [configuración del proyecto](https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings), los formularios se eliminarán automáticamente una vez que hayan sido enviados al servidor.
 
 ## Editar borradores
 
@@ -69,12 +69,12 @@ Después de finalizar tus formularios, debes subirlos al servidor de KoboToolbox
 Para verificar la carga exitosa, ve al menú principal y selecciona **Enviado**. Verás todos los formularios enviados al servidor, junto con su fecha de sincronización.
 
 <p class="note">
-  <strong>Nota:</strong> Si tu proyecto está <strong>configurado para enviar automáticamente los formularios finalizados</strong>, la página <strong>Listo para enviar</strong> no aparecerá en el menú principal, y puedes omitir estos pasos. Para obtener más información sobre la configuración del proyecto en KoboCollect, consulta <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Personalizar la configuración de KoboCollect</a>.
+  <strong>Nota:</strong> Si tu proyecto está <strong>configurado para enviar automáticamente los formularios finalizados</strong>, la página <strong>Listo para enviar</strong> no aparecerá en el menú principal, y puedes omitir estos pasos. Para obtener más información sobre la configuración del proyecto en KoboCollect, consulta <a href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a>.
 </p>
 
 ## Eliminar formularios guardados y formularios en blanco
 
-Después de finalizar la recolección de datos y subir todos los formularios completados al servidor, es posible que desees eliminar los datos de formularios restantes de la aplicación KoboCollect, a menos que la eliminación automática ya esté [habilitada](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) para tu dispositivo. Esto ayuda a proteger la privacidad de los datos y previene confusiones al recolectar datos para un nuevo proyecto.
+Después de finalizar la recolección de datos y subir todos los formularios completados al servidor, es posible que desees eliminar los datos de formularios restantes de la aplicación KoboCollect, a menos que la eliminación automática ya esté [habilitada](https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings) para tu dispositivo. Esto ayuda a proteger la privacidad de los datos y previene confusiones al recolectar datos para un nuevo proyecto.
 
 Hay dos tipos de formularios que se pueden eliminar:
 
@@ -91,5 +91,5 @@ Para eliminar formularios:
     - Toca **Eliminar seleccionados**.
 
 <p class="note">
-  <strong>Nota:</strong> No necesitas una conexión a internet para eliminar formularios guardados en KoboCollect. Sin embargo, si los formularios en blanco se eliminan accidentalmente sin conexión, se requiere una conexión a internet para recuperarlos y continuar con la recolección de datos. Para prevenir la eliminación accidental, puedes establecer controles de acceso en la <a href="https://support.kobotoolbox.org/kobocollect_settings.html#access-control">configuración del proyecto</a>.
+  <strong>Nota:</strong> No necesitas una conexión a internet para eliminar formularios guardados en KoboCollect. Sin embargo, si los formularios en blanco se eliminan accidentalmente sin conexión, se requiere una conexión a internet para recuperarlos y continuar con la recolección de datos. Para prevenir la eliminación accidental, puedes establecer controles de acceso en la <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#access-control">configuración del proyecto</a>.
 </p>

@@ -77,7 +77,7 @@ Cliquez sur l'icône <i class="k-icon k-icon-more"></i> **Plus d'actions** pour 
 
 Cliquez sur <i class="k-icon k-icon-replace"></i> **Remplacer le formulaire**.
 
-Pour une liste complète de toutes les icônes, consultez [ici](https://support.kobotoolbox.org/article_template.html#liste-des-icones) et également [ici](https://support.kobotoolbox.org/_static/kpi-icons/k-icons.html).
+Pour une liste complète de toutes les icônes, consultez [ici](https://support.kobotoolbox.org/fr/article_template.html#liste-des-icones) et également [ici](https://support.kobotoolbox.org/_static/kpi-icons/k-icons.html).
 
 ### Ajout d'une vidéo YouTube
 

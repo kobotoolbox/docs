@@ -12,7 +12,7 @@
 
 <p class="note">
   قفل جوانب النموذج منفصل عن
-  <a class="reference" href="https://support.kobotoolbox.org/managing_permissions.html">إدارة أذونات المشروع</a>.
+  <a class="reference" href="https://support.kobotoolbox.org/ar/managing_permissions.html">إدارة أذونات المشروع</a>.
 </p>
 
 ## القيود

@@ -20,7 +20,7 @@ Las **Sugerencias de orientación** son instrucciones adicionales que puedes agr
 
 ![Sugerencia de orientación en formularios web de Enketo](/images/question_options/guidance_hint_enketo.gif)
 
-En [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html), las sugerencias de orientación no se muestran de forma predeterminada. Puedes [elegir cómo deben mostrarse las sugerencias de orientación](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) en tus formularios yendo a Ajustes -> Manejo de formularios -> Mostrar orientación para preguntas. Aquí tienes 3 opciones: No, Sí - siempre mostrado y Sí - siempre contraído.
+En [KoboCollect](kobocollect_on_android_latest.md), las sugerencias de orientación no se muestran de forma predeterminada. Puedes [elegir cómo deben mostrarse las sugerencias de orientación](https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings) en tus formularios yendo a Ajustes -> Manejo de formularios -> Mostrar orientación para preguntas. Aquí tienes 3 opciones: No, Sí - siempre mostrado y Sí - siempre contraído.
 
 ![Sugerencia de orientación en KoboCollect](/images/question_options/guidance_hint_kobocollect.gif)
 

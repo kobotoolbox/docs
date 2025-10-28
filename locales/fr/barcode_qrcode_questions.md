@@ -5,7 +5,7 @@
 Le type de question « Code-barres/Code QR » est utilisé pour scanner, décoder et capturer des codes-barres et des codes QR à l'aide de l'appareil photo de l'appareil. Lorsqu'un code est scanné avec l'appareil photo, la valeur (qu'il s'agisse de chiffres ou de texte) stockée dans le code est capturée.
 
 <p class="note">
-  Le scan de codes-barres/codes QR ne fonctionne que lors de <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">l'utilisation de KoboCollect</a> sur des appareils mobiles.
+  Le scan de codes-barres/codes QR ne fonctionne que lors de <a href="kobocollect_on_android_latest.html">l'utilisation de KoboCollect</a> sur des appareils mobiles.
 </p>
 
 Une large gamme de formats de codes-barres et de codes QR est prise en charge, notamment les suivants :

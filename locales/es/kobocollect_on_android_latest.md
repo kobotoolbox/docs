@@ -6,10 +6,10 @@
 
 KoboCollect es una aplicación gratuita y de código abierto de KoboToolbox diseñada para la recolección de datos en dispositivos móviles Android. Sus capacidades sin conexión y compatibilidad con la mayoría de los dispositivos Android la hacen ideal para el trabajo de campo.
 
-Antes de usar KoboCollect, debes [configurar una cuenta de KoboToolbox](https://support.kobotoolbox.org/creating_account.html) en el sitio web de KoboToolbox y [desplegar formularios de recolección de datos](https://support.kobotoolbox.org/quick_start.html).
+Antes de usar KoboCollect, debes [configurar una cuenta de KoboToolbox](creating_account.md) en el sitio web de KoboToolbox y [desplegar formularios de recolección de datos](https://support.kobotoolbox.org/es/quick_start.html).
 
 <p class="note">
-    Este artículo cubre cómo conectarse a KoboCollect para la recolección de datos. Para aprender más sobre la configuración de ajustes de KoboCollect y la recolección de datos con la aplicación, consulta <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Personalización de ajustes de KoboCollect</a> y <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a>.
+    Este artículo cubre cómo conectarse a KoboCollect para la recolección de datos. Para aprender más sobre la configuración de ajustes de KoboCollect y la recolección de datos con la aplicación, consulta <a href="kobocollect_settings.html">Personalización de ajustes de KoboCollect</a> y <a href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a>.
 </p>
 
 ## Instalación de la aplicación de KoboCollect
@@ -24,7 +24,7 @@ La aplicación de Android de KoboCollect puede descargarse desde [Google Play St
 
 Para recolectar datos con KoboCollect, debes configurar la aplicación de KoboCollect en tu dispositivo móvil para conectarte al servidor de KoboToolbox. Esto te permite descargar formularios desplegados desde KoboToolbox y enviar los datos recolectados de vuelta al servidor.
 
-Para conectar KoboCollect al servidor de KoboToolbox, necesitarás tu **URL de KoboCollect**, tu **nombre de usuario/a** y tu **contraseña**. Después de la configuración manual inicial, puedes [generar un código QR](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) para configurar otros dispositivos.
+Para conectar KoboCollect al servidor de KoboToolbox, necesitarás tu **URL de KoboCollect**, tu **nombre de usuario/a** y tu **contraseña**. Después de la configuración manual inicial, puedes [generar un código QR](https://support.kobotoolbox.org/es/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) para configurar otros dispositivos.
 
 <p class="note">
     <strong>Nota:</strong> En la aplicación de KoboCollect, las cuentas de usuario/a se llaman <strong>Proyectos</strong>.
@@ -55,7 +55,7 @@ Una vez que hayas identificado tu URL de KoboCollect, sigue estos pasos para con
 
 ### Configuración de KoboCollect con un código QR
 
-Usar un código QR configura eficientemente KoboCollect en múltiples dispositivos con los **mismos ajustes de servidor** (URL de KoboCollect, nombre de usuario/a, contraseña y <a href="https://support.kobotoolbox.org/kobocollect_settings.html">ajustes de configuración del proyecto</a>). Esto puede ser útil para evitar repetir pasos manuales o para configurar dispositivos de encuestadores/as sin compartir contraseñas de cuenta.
+Usar un código QR configura eficientemente KoboCollect en múltiples dispositivos con los **mismos ajustes de servidor** (URL de KoboCollect, nombre de usuario/a, contraseña y <a href="kobocollect_settings.html">ajustes de configuración del proyecto</a>). Esto puede ser útil para evitar repetir pasos manuales o para configurar dispositivos de encuestadores/as sin compartir contraseñas de cuenta.
 
 <p class="note">
     <strong>Nota:</strong> Para usar el método de código QR, primero debes configurar manualmente un dispositivo y luego copiar el código QR generado a los otros dispositivos.
@@ -97,7 +97,7 @@ Para configurar proyectos adicionales en KoboCollect:
 Se pueden agregar proyectos adicionales repitiendo el mismo proceso. El proyecto activo se listará primero en el menú **Proyectos**. Para cambiar a un proyecto diferente, simplemente toca su ícono.
 
 <p class="note">
-    Para aprender más sobre cómo cambiar la forma en que se muestran los proyectos para facilitar su reconocimiento y cambio, consulta <a href="https://support.kobotoolbox.org/kobocollect_settings.html#project-display-settings">Ajustes de visualización de proyectos</a>.
+    Para aprender más sobre cómo cambiar la forma en que se muestran los proyectos para facilitar su reconocimiento y cambio, consulta <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#project-display-settings">Ajustes de visualización de proyectos</a>.
 </p>
 
 ### Configuración de un proyecto en KoboCollect sin autenticación
@@ -105,21 +105,21 @@ Se pueden agregar proyectos adicionales repitiendo el mismo proceso. El proyecto
 También es posible acceder a proyectos en KoboCollect sin una contraseña. Esto es útil para proyectos con muchos/as encuestadores/as, ya que evita la necesidad de crear cuentas individuales o compartir credenciales.
 
 <p class="note">
-    <strong>Nota:</strong> Este enfoque requiere habilitar "Permitir envíos a este formulario sin un nombre de usuario/a y contraseña" para tus formularios. Para aprender más sobre los ajustes de compartir a nivel de proyecto, consulta <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Compartir proyectos con ajustes a nivel de proyecto</a>.
+    <strong>Nota:</strong> Este enfoque requiere habilitar "Permitir envíos a este formulario sin un nombre de usuario/a y contraseña" para tus formularios. Para aprender más sobre los ajustes de compartir a nivel de proyecto, consulta <a href="project_sharing_settings.html">Compartir proyectos con ajustes a nivel de proyecto</a>.
 </p>
 
 Para conectarse a KoboCollect sin autenticación:
 1. Habilita "Permitir envíos a este formulario sin un nombre de usuario/a y contraseña" para tus formularios.
-2. [Opcional] Crea una cuenta dedicada de KoboToolbox para recolectores/as de datos y [comparte tus formularios](https://support.kobotoolbox.org/managing_permissions.html) con esta cuenta.
+2. [Opcional] Crea una cuenta dedicada de KoboToolbox para recolectores/as de datos y [comparte tus formularios](managing_permissions.md) con esta cuenta.
 3. Conéctate a KoboCollect usando las siguientes credenciales:
     - **URL**: URL de KoboCollect seguida del nombre de usuario/a de la cuenta (`https://[kobocollect_url]/[username]`)
     - **Nombre de usuario/a**: (Dejar en blanco)
     - **Contraseña**: (Dejar en blanco)
 
-Este enfoque permite a los/as usuarios/as descargar y enviar datos a cualquier formulario compartido con `username` que no [requiera autenticación](https://support.kobotoolbox.org/project_sharing_settings.html).
+Este enfoque permite a los/as usuarios/as descargar y enviar datos a cualquier formulario compartido con `username` que no [requiera autenticación](project_sharing_settings.md).
 
-Para diferenciar encuestadores/as y rastrear envíos, puedes pedir a los/as encuestadores/as que ingresen un nombre de usuario/a personalizado, número de teléfono y dirección de correo electrónico en los [ajustes de identidad de usuario/a y dispositivo](https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings).
+Para diferenciar encuestadores/as y rastrear envíos, puedes pedir a los/as encuestadores/as que ingresen un nombre de usuario/a personalizado, número de teléfono y dirección de correo electrónico en los [ajustes de identidad de usuario/a y dispositivo](https://support.kobotoolbox.org/es/kobocollect_settings.html#user-and-device-identity-settings).
 
 <p class="note">
-    <strong>Nota:</strong> Este enfoque puede ser útil cuando tu cuenta usa <a href="https://support.kobotoolbox.org/two_factor_authentication.html">autenticación de dos factores</a>, ya que no podrás descargar formularios o enviar datos usando el método normal.
+    <strong>Nota:</strong> Este enfoque puede ser útil cuando tu cuenta usa <a href="two_factor_authentication.html">autenticación de dos factores</a>, ya que no podrás descargar formularios o enviar datos usando el método normal.
 </p>

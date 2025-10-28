@@ -20,7 +20,7 @@ Usar la API de KoboToolbox te permite automatizar tareas rutinarias, mantener ac
 - Exportar tus datos usando la API
 
 <p class="note">
-    <strong>Nota:</strong> Los endpoints V1 ahora están obsoletos y programados para ser descontinuados en enero de 2026, en favor de la API KPI v2, más robusta y con soporte completo. Para más información sobre la migración a KPI v2, consulta <a href="https://support.kobotoolbox.org/migrating_api.html">Migrar de la API v1 a v2</a>.
+    <strong>Nota:</strong> Los endpoints V1 ahora están obsoletos y programados para ser descontinuados en enero de 2026, en favor de la API KPI v2, más robusta y con soporte completo. Para más información sobre la migración a KPI v2, consulta <a href="migrating_api.html">Migrar de la API v1 a v2</a>.
 </p>
 
 ## Recuperar tu URL del servidor
@@ -72,9 +72,9 @@ Hay dos enfoques principales para conectar tus datos usando la API con KoboToolb
 Cada enfoque requiere conocer la URL del servidor y el UID del activo del proyecto para construir una URL de exportación personalizada. Dependiendo de la aplicación, tu clave API puede ser necesaria para la autenticación. 
 
 <p class="note">
-    Para más información sobre exportaciones sincrónicas, consulta <a href="https://support.kobotoolbox.org/synchronous_exports.html">Usar la API para exportaciones sincrónicas</a>. 
+    Para más información sobre exportaciones sincrónicas, consulta <a href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a>. 
 <br><br>
-Para aprender más sobre cómo conectar tus datos a Power BI para crear paneles de control personalizados, consulta <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a>. 
+Para aprender más sobre cómo conectar tus datos a Power BI para crear paneles de control personalizados, consulta <a href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a>. 
 <br><br>
-Para aprender más sobre cómo conectar tus datos a Microsoft Excel, consulta <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a>.
+Para aprender más sobre cómo conectar tus datos a Microsoft Excel, consulta <a href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a>.
 </p>

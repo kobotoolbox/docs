@@ -79,14 +79,14 @@ En KoboCollect, las preguntas aparecen de una en una por defecto. En los formula
 Para mostrar preguntas por grupo en la misma pantalla durante la recolección de datos, haz clic en el ícono <i class="k-icon-settings"></i> **Configuración** a la derecha del nombre del grupo. Luego, en **Apariencia (Avanzado)**, selecciona **field-list** (Mostrar todas las preguntas de este grupo en la misma pantalla).
 
 <p class="note">
-    <b>Nota:</b> Si planeas recolectar datos usando formularios web de Enketo, también necesitarás habilitar el tema <b>Múltiples páginas</b> en el menú <b>Estilo del formulario</b> (<b>Diseño y configuración</b>). Para más información sobre los estilos de formularios web de Enketo, consulta <a href="https://support.kobotoolbox.org/alternative_enketo.html">Usar estilos alternativos de formularios web de Enketo</a>.
+    <b>Nota:</b> Si planeas recolectar datos usando formularios web de Enketo, también necesitarás habilitar el tema <b>Múltiples páginas</b> en el menú <b>Estilo del formulario</b> (<b>Diseño y configuración</b>). Para más información sobre los estilos de formularios web de Enketo, consulta <a href="alternative_enketo.html">Usar estilos alternativos de formularios web de Enketo</a>.
 </p>
 
 ### Omitir un grupo de preguntas
 Para omitir un grupo de preguntas, asegúrate de tener al menos una pregunta de control posicionada antes de las preguntas agrupadas. Haz clic en el ícono <i class="k-icon-settings"></i> **Configuración** para la pregunta agrupada, luego selecciona **Lógica de salto** y configura las condiciones de lógica de salto como lo harías para una pregunta individual.
 
 <p class="note">
-    Para aprender más sobre cómo añadir condiciones de lógica de salto, consulta <a href="https://support.kobotoolbox.org/skip_logic.html">Añadir lógica de salto en el editor de formularios</a>.
+    Para aprender más sobre cómo añadir condiciones de lógica de salto, consulta <a href="skip_logic.html">Añadir lógica de salto en el editor de formularios</a>.
 </p>
 
 ### Repetir un grupo de preguntas
@@ -101,7 +101,7 @@ Para crear un grupo de preguntas:
 Durante la recolección de datos, los/as encuestadores/as podrán ingresar respuestas para estas preguntas agrupadas tantas veces como sea necesario.
 
 <p class="note">
-    <b>Nota:</b> Añadir grupos repetidos a tu formulario crea una estructura de datos diferente en comparación con variables o grupos estándar. Cuando descargues tus datos en formato .xlsx, encontrarás una hoja separada para cada grupo repetido. Para más información sobre cómo exportar y usar datos de grupos repetidos, consulta <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Manejar datos de grupos repetidos</a>.
+    <b>Nota:</b> Añadir grupos repetidos a tu formulario crea una estructura de datos diferente en comparación con variables o grupos estándar. Cuando descargues tus datos en formato .xlsx, encontrarás una hoja separada para cada grupo repetido. Para más información sobre cómo exportar y usar datos de grupos repetidos, consulta <a href="managing_repeat_groups.html">Manejar datos de grupos repetidos</a>.
 </p>
 
 ### Configuración avanzada para grupos repetidos

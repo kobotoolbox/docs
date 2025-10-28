@@ -80,7 +80,7 @@ Dans XLSForm, les questions sont ajoutées dans la feuille de calcul **survey**.
 
 4. Pour la deuxième question, **Quel est le sexe de votre bébé ?**, entrez **select_one sex** dans la colonne `type` de la feuille de calcul survey.
    - **select_one** est le type de question qui permet aux utilisatrices et utilisateurs de sélectionner un seul choix parmi une liste d'options de réponse.
-   - **sex** est le nom de la liste d'options de réponse, qui est défini dans la feuille de calcul choices (voir [Ajouter des options de réponse](https://support.kobotoolbox.org/getting_started_xlsform.html#adding-response-choices)).
+   - **sex** est le nom de la liste d'options de réponse, qui est défini dans la feuille de calcul choices (voir [Ajouter des options de réponse](https://support.kobotoolbox.org/fr/getting_started_xlsform.html#adding-response-choices)).
 5. Dans la colonne `name`, tapez **baby_sex**.
 6. Dans la colonne `label`, tapez **Quel est le sexe de votre bébé ?**
 
@@ -173,7 +173,7 @@ Pour importer et prévisualiser votre XLSForm dans KoboToolbox :
 4. Cliquez sur le bouton <i class="k-icon k-icon-view"></i> **Aperçu**.
 
 <p class="note">
-  <b>Remarque :</b> Pour apprendre comment importer votre XLSForm via URL, consultez l'article d'assistance <a class="reference" href="https://support.kobotoolbox.org/xls_url.html">Importer un XLSForm via URL</a>.
+  <b>Remarque :</b> Pour apprendre comment importer votre XLSForm via URL, consultez l'article d'assistance <a class="reference" href="https://support.kobotoolbox.org/fr/xls_url.html">Importer un XLSForm via URL</a>.
 </p>
 
 ## Télécharger un XLSForm depuis KoboToolbox

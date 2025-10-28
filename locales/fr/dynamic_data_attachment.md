@@ -5,12 +5,12 @@
 La liaison dynamique vous permet d'utiliser les données d'un **projet parent** dans des **projets enfants**, simplifiant ainsi la gestion de la collecte de données longitudinales. Cet article explique comment lier dynamiquement des données entre des projets KoboToolbox.
 
 <p class="note">
-    <strong>Remarque :</strong> Les pièces jointes de données dynamiques fonctionnent de manière similaire à la fonction <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a>, mais éliminent le besoin de fichiers CSV séparés, puisque les données d'un projet parent lié servent de source de données.
+    <strong>Remarque :</strong> Les pièces jointes de données dynamiques fonctionnent de manière similaire à la fonction <a href="https://support.kobotoolbox.org/fr/pull_data_kobotoolbox.html"><code>pulldata()</code></a>, mais éliminent le besoin de fichiers CSV séparés, puisque les données d'un projet parent lié servent de source de données.
 </p>
 
 Vous pouvez récupérer diverses **réponses non médiatiques** d'un projet parent et effectuer des calculs sur ces données liées dans un projet enfant. Cela peut être utile pour récupérer des données de référence, des informations de contact ou des dossiers médicaux dans des études de cohorte, ou pour confirmer ou vérifier des données précédemment collectées.
 
-Nous recommandons d'utiliser [XLSForm](https://support.kobotoolbox.org/edit_forms_excel.html) pour configurer les pièces jointes de données dynamiques. Pour des exemples de projets parents et enfants, téléchargez des fichiers d'exemple [ici](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) et [ici](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx).
+Nous recommandons d'utiliser [XLSForm](edit_forms_excel.md) pour configurer les pièces jointes de données dynamiques. Pour des exemples de projets parents et enfants, téléchargez des fichiers d'exemple [ici](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) et [ici](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx).
 
 ## Lier dynamiquement des projets dans XLSForm
 
@@ -26,7 +26,7 @@ La liaison dynamique de projets nécessite un **projet parent** et au moins un *
 | survey | 
 
 
-3. Tout au long du formulaire, vous pouvez récupérer des valeurs du projet parent en créant une nouvelle question et en incluant l'expression appropriée dans la colonne `calculation` (voir le tableau [ci-dessous](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). Vous pouvez utiliser les types de questions suivants pour récupérer des données :
+3. Tout au long du formulaire, vous pouvez récupérer des valeurs du projet parent en créant une nouvelle question et en incluant l'expression appropriée dans la colonne `calculation` (voir le tableau [ci-dessous](https://support.kobotoolbox.org/fr/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). Vous pouvez utiliser les types de questions suivants pour récupérer des données :
     - Utilisez un type de question **calculate** pour récupérer et stocker des valeurs pour une utilisation future dans le formulaire ou l'ensemble de données (par exemple, pour des calculs ou des libellés de questions dynamiques).
     - Utilisez les types de questions **text**, **integer**, **decimal**, **select_one** ou **select_multiple** pour inclure les valeurs récupérées comme réponses par défaut dans des champs modifiables. Les données modifiées dans le projet enfant ne changeront pas les données d'origine dans le projet parent.
   
@@ -84,7 +84,7 @@ Une fois vos XLSForms configurés, connectez-vous à votre compte KoboToolbox et
     - Toutes les données sont partagées par défaut, mais vous pouvez restreindre des variables spécifiques à partager avec les projets enfants en cliquant sur « Sélectionner des questions spécifiques à partager ».
 
 <p class="note">
-    <strong>Remarque :</strong> Si les projets ont des propriétaires différents, le propriétaire du projet parent doit <a href="https://support.kobotoolbox.org/managing_permissions.html">partager le projet</a> avec le propriétaire du projet enfant. Les autorisations minimales requises pour que les pièces jointes de données dynamiques fonctionnent sont <strong>Voir le formulaire</strong> et <strong>Voir les soumissions</strong>. Notez que cela permet aux administratrices et administrateurs du projet enfant de voir toutes les données du projet parent.
+    <strong>Remarque :</strong> Si les projets ont des propriétaires différents, le propriétaire du projet parent doit <a href="managing_permissions.html">partager le projet</a> avec le propriétaire du projet enfant. Les autorisations minimales requises pour que les pièces jointes de données dynamiques fonctionnent sont <strong>Voir le formulaire</strong> et <strong>Voir les soumissions</strong>. Notez que cela permet aux administratrices et administrateurs du projet enfant de voir toutes les données du projet parent.
 </p>
 
 3. Importez et déployez le **projet enfant**.
@@ -131,7 +131,7 @@ Il est possible qu'un projet parent et un projet enfant soient le même projet. 
 
 ## Collecte et gestion des données avec liaison dynamique
 
-Les données des projets liés dynamiquement peuvent être collectées à l'aide de [l'application Android KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) ou des [formulaires web Enketo](https://support.kobotoolbox.org/data_through_webforms.html).
+Les données des projets liés dynamiquement peuvent être collectées à l'aide de [l'application Android KoboCollect](kobocollect_on_android_latest.md) ou des [formulaires web Enketo](data_through_webforms.md).
 
 Lors de la collecte de données, notez ce qui suit :
 
@@ -140,7 +140,7 @@ Lors de la collecte de données, notez ce qui suit :
 - En mode hors ligne, téléchargez fréquemment le projet enfant pour assurer la synchronisation des données avec le projet parent.
 
 <p class="note">
-    <strong>Remarque :</strong> Vous pouvez <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">configurer l'application Android KoboCollect</a> pour mettre à jour automatiquement les données du projet parent lorsqu'une connexion Internet est disponible. Allez dans <strong>Paramètres > Gestion des formulaires > Mode de mise à jour des formulaires vierges</strong> et sélectionnez soit <strong>Formulaires précédemment téléchargés uniquement</strong>, soit <strong>Correspondance exacte avec le serveur</strong>. Vous pouvez définir la fréquence de téléchargement automatique toutes les 15 minutes, toutes les heures, toutes les six heures ou toutes les 24 heures. Notez que l'activation de ce paramètre peut augmenter la consommation de la batterie.
+    <strong>Remarque :</strong> Vous pouvez <a href="https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings">configurer l'application Android KoboCollect</a> pour mettre à jour automatiquement les données du projet parent lorsqu'une connexion Internet est disponible. Allez dans <strong>Paramètres > Gestion des formulaires > Mode de mise à jour des formulaires vierges</strong> et sélectionnez soit <strong>Formulaires précédemment téléchargés uniquement</strong>, soit <strong>Correspondance exacte avec le serveur</strong>. Vous pouvez définir la fréquence de téléchargement automatique toutes les 15 minutes, toutes les heures, toutes les six heures ou toutes les 24 heures. Notez que l'activation de ce paramètre peut augmenter la consommation de la batterie.
 </p>
 
 ## Dépannage
@@ -168,7 +168,7 @@ Les pièces jointes de données dynamiques volumineuses peuvent ralentir le char
 
 <details>
 <summary><strong>Les données dynamiques ne se rafraîchissent pas dans KoboCollect</strong></summary>
-Si vous utilisez KoboCollect et collectez des données hors ligne, les données doivent d'abord être soumises au projet parent, puis téléchargées sur votre appareil de collecte de données pour que la pièce jointe de données dynamiques fonctionne. Les deux étapes nécessitent une connexion Internet. Le téléchargement des données parent est similaire au téléchargement d'une nouvelle version d'un formulaire, et l'application KoboCollect peut être configurée pour <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">télécharger automatiquement de nouvelles données</a> à une fréquence définie. Il n'est pas recommandé de s'appuyer sur les pièces jointes de données dynamiques pour les données collectées hors ligne dans un court laps de temps.
+Si vous utilisez KoboCollect et collectez des données hors ligne, les données doivent d'abord être soumises au projet parent, puis téléchargées sur votre appareil de collecte de données pour que la pièce jointe de données dynamiques fonctionne. Les deux étapes nécessitent une connexion Internet. Le téléchargement des données parent est similaire au téléchargement d'une nouvelle version d'un formulaire, et l'application KoboCollect peut être configurée pour <a href="https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings">télécharger automatiquement de nouvelles données</a> à une fréquence définie. Il n'est pas recommandé de s'appuyer sur les pièces jointes de données dynamiques pour les données collectées hors ligne dans un court laps de temps.
 </details>
 
 <br>

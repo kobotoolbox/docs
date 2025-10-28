@@ -4,7 +4,7 @@
 
 Para editar o eliminar un cuestionario enviado, sigue los pasos a continuación.
 
-Ten en cuenta que si estás recolectando datos con la [aplicación de Android de KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html), una vez que un formulario ha sido enviado al servidor **no es posible** editar o eliminar un envío desde KoboCollect.
+Ten en cuenta que si estás recolectando datos con la [aplicación de Android de KoboCollect](data_collection_kobocollect.md), una vez que un formulario ha sido enviado al servidor **no es posible** editar o eliminar un envío desde KoboCollect.
 
 1. Abre la pestaña _DATOS_ de tu proyecto y luego haz clic en _Tabla_ a la izquierda.
    Verás dos opciones de iconos para **Abrir** o **Editar** un registro en la

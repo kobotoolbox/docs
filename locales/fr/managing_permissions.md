@@ -9,7 +9,7 @@ KoboToolbox vous permet de définir différents niveaux d'accès pour les utilis
 Cet article explique comment accorder des permissions à d'autres utilisatrices et utilisateurs de KoboToolbox pour collaborer sur vos projets. Il couvre les permissions au niveau utilisateur, les permissions au niveau des lignes et la copie de permissions depuis un autre projet.
 
 <p class="note">
-Pour en savoir plus sur le partage de votre projet avec d'autres personnes pour la collecte de données, consultez <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecter des données via des formulaires Web</a>. Pour en savoir plus sur les paramètres au niveau du projet pour partager vos projets, consultez <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Partager des projets avec des paramètres au niveau du projet</a>.
+Pour en savoir plus sur le partage de votre projet avec d'autres personnes pour la collecte de données, consultez <a href="data_through_webforms.html">Collecter des données via des formulaires Web</a>. Pour en savoir plus sur les paramètres au niveau du projet pour partager vos projets, consultez <a href="project_sharing_settings.html">Partager des projets avec des paramètres au niveau du projet</a>.
 </p>
 
 ## Définir des permissions au niveau utilisateur
@@ -33,7 +33,7 @@ Les permissions suivantes sont disponibles :
 | Voir les soumissions           | L'utilisatrice ou l'utilisateur peut consulter les données soumises.           |
 | Ajouter des soumissions           | L'utilisatrice ou l'utilisateur peut soumettre des données en utilisant le formulaire.         |
 | Modifier les soumissions         | L'utilisatrice ou l'utilisateur peut modifier les données soumises.           |
-| Valider les soumissions | L'utilisatrice ou l'utilisateur peut [approuver ou rejeter](https://support.kobotoolbox.org/record_validation.html) les données soumises. |
+| Valider les soumissions | L'utilisatrice ou l'utilisateur peut [approuver ou rejeter](record_validation.md) les données soumises. |
 | Supprimer les soumissions         | L'utilisatrice ou l'utilisateur peut supprimer les données soumises.        |
 | Gérer le projet      | L'utilisatrice ou l'utilisateur peut effectuer toutes les actions ci-dessus et gérer les paramètres du projet.                  |
 
@@ -99,22 +99,22 @@ Pour copier les permissions d'équipe depuis un autre projet :
 
 <details>
 <summary><strong>Suivi des modifications effectuées par d'autres utilisatrices et utilisateurs</strong></summary>
-KoboToolbox conserve des <a href="https://support.kobotoolbox.org/activity_logs.html">Journaux d'activité</a> qui affichent une chronologie complète des actions du compte et du projet. Les <strong>Journaux d'historique du projet</strong> enregistrent chaque modification à l'intérieur d'un projet—importations, modifications, suppressions et soumissions—afin que vous puissiez retracer les changements, attribuer la responsabilité et identifier le moment où les problèmes ont commencé.
+KoboToolbox conserve des <a href="activity_logs.html">Journaux d'activité</a> qui affichent une chronologie complète des actions du compte et du projet. Les <strong>Journaux d'historique du projet</strong> enregistrent chaque modification à l'intérieur d'un projet—importations, modifications, suppressions et soumissions—afin que vous puissiez retracer les changements, attribuer la responsabilité et identifier le moment où les problèmes ont commencé.
 </details>
 <br>
 <details>
 <summary><strong>Demande de nom d'utilisateur et de mot de passe lors de l'envoi de données</strong></summary>
-Si une fenêtre de connexion apparaît lorsque vous essayez de soumettre, le projet est configuré pour <a href="https://support.kobotoolbox.org/project_sharing_settings.html">exiger une authentification</a> pour la collecte de données. Dans ce cas, vous ne pouvez soumettre des données que si votre compte dispose de la permission Ajouter des soumissions. Saisissez votre nom d'utilisateur et votre mot de passe KoboToolbox pour continuer.
+Si une fenêtre de connexion apparaît lorsque vous essayez de soumettre, le projet est configuré pour <a href="project_sharing_settings.html">exiger une authentification</a> pour la collecte de données. Dans ce cas, vous ne pouvez soumettre des données que si votre compte dispose de la permission Ajouter des soumissions. Saisissez votre nom d'utilisateur et votre mot de passe KoboToolbox pour continuer.
 </details>
 <br>
 <details>
 <summary><strong>Les permissions basées sur l'utilisateur ne semblent pas fonctionner</strong></summary>
-Les permissions basées sur l'utilisateur s'appliquent uniquement lorsque <a href="https://support.kobotoolbox.org/project_sharing_settings.html">l'authentification est requise</a> et que chaque soumission porte un nom d'utilisateur. Ouvrez l'onglet <strong>FORMULAIRE</strong> du projet et désactivez « Autoriser les soumissions à ce formulaire sans nom d'utilisateur et mot de passe » sous <strong>Collecter des données</strong>.
+Les permissions basées sur l'utilisateur s'appliquent uniquement lorsque <a href="project_sharing_settings.html">l'authentification est requise</a> et que chaque soumission porte un nom d'utilisateur. Ouvrez l'onglet <strong>FORMULAIRE</strong> du projet et désactivez « Autoriser les soumissions à ce formulaire sans nom d'utilisateur et mot de passe » sous <strong>Collecter des données</strong>.
 </details>
 <br>
 <details>
 <summary><strong>Les anciens enregistrements ignorent les règles au niveau des lignes</strong></summary>
-Les soumissions effectuées avant que <a href="https://support.kobotoolbox.org/project_sharing_settings.html">l'authentification ne soit requise</a> peuvent ne pas avoir de nom d'utilisateur associé, de sorte que les règles basées sur l'utilisateur ne peuvent pas les filtrer.
+Les soumissions effectuées avant que <a href="project_sharing_settings.html">l'authentification ne soit requise</a> peuvent ne pas avoir de nom d'utilisateur associé, de sorte que les règles basées sur l'utilisateur ne peuvent pas les filtrer.
 </details>
 <br>
 <details>

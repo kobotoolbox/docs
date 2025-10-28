@@ -4,7 +4,7 @@
 
 <iframe src="https://www.youtube.com/embed/Qeky3aomiWI?si=M1l_jorFQEDacX2A" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-KoboCollect est une application KoboToolbox gratuite et open source conçue pour la collecte de données sur les appareils mobiles Android. Avant de commencer, [installez et configurez](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) l'application Android KoboCollect. Une fois installée et configurée, vous pouvez personnaliser l'application en fonction de votre projet ou des besoins des utilisatrices et utilisateurs. Les paramètres du projet vous permettent de :
+KoboCollect est une application KoboToolbox gratuite et open source conçue pour la collecte de données sur les appareils mobiles Android. Avant de commencer, [installez et configurez](kobocollect_on_android_latest.md) l'application Android KoboCollect. Une fois installée et configurée, vous pouvez personnaliser l'application en fonction de votre projet ou des besoins des utilisatrices et utilisateurs. Les paramètres du projet vous permettent de :
 
 - Ajuster l'**interface utilisateur** (par exemple, la langue, la taille de la police, le thème)
 - Configurer les **paramètres de carte** pour les questions basées sur la localisation
@@ -22,7 +22,7 @@ Pour accéder au menu des paramètres :
 </p>
 
 ## Paramètres d'affichage du projet
-Dans l'application KoboCollect, vous pouvez [vous connecter à plusieurs comptes KoboToolbox](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-multiple-projects-in-kobocollect). Les comptes utilisateurs sont appelés **Projets** dans KoboCollect. 
+Dans l'application KoboCollect, vous pouvez [vous connecter à plusieurs comptes KoboToolbox](https://support.kobotoolbox.org/fr/kobocollect_on_android_latest.html#setting-up-multiple-projects-in-kobocollect). Les comptes utilisateurs sont appelés **Projets** dans KoboCollect. 
 
 Pour personnaliser la façon dont chaque projet est affiché pour une reconnaissance et un changement plus faciles, vous pouvez modifier les paramètres d'**affichage du projet**. Ces modifications n'affectent que la façon dont le projet apparaît dans l'interface de l'appareil et n'affectent pas les données ou les autres appareils.
 
@@ -45,7 +45,7 @@ Les paramètres de l'interface utilisateur vous permettent d'ajuster l'apparence
 
 
 <p class="note">
-    <strong>Remarque :</strong> Changer la langue définit uniquement la langue de l'interface utilisateur de l'application et non celle du formulaire. Pour les formulaires avec <a href="https://support.kobotoolbox.org/language_dashboard.html">plusieurs langues</a>, la langue du formulaire est définie lors de la saisie des données.
+    <strong>Remarque :</strong> Changer la langue définit uniquement la langue de l'interface utilisateur de l'application et non celle du formulaire. Pour les formulaires avec <a href="language_dashboard.html">plusieurs langues</a>, la langue du formulaire est définie lors de la saisie des données.
 </p>
 
 ## Paramètres des cartes
@@ -73,13 +73,13 @@ Les paramètres de gestion des formulaires contrôlent la façon dont les formul
 | Traitement des contraintes | Lorsque vos formulaires incluent des contraintes (critères de validation), choisissez entre valider les réponses lors du passage à la page suivante ou à la fin du formulaire. |
 | Vidéo haute résolution        | Activez ou désactivez les enregistrements vidéo haute résolution lors de la prise de vidéos via l'application. |
 | Taille de l'image      | Définissez la taille d'image préférée, de très petite à grande. Cela peut aider à économiser l'espace de stockage sur le serveur. |
-| Afficher les conseils pour les questions         | Définissez comment les [conseils d'orientation](https://support.kobotoolbox.org/question_options.html?highlight=guidance+hint#guidance-hint-optional) doivent être affichés dans votre formulaire. |
+| Afficher les conseils pour les questions         | Définissez comment les [conseils d'orientation](https://support.kobotoolbox.org/fr/question_options.html?highlight=guidance+hint#guidance-hint-optional) doivent être affichés dans votre formulaire. |
 | Utiliser une application externe pour l'enregistrement audio        | Par défaut, un enregistreur interne est utilisé pour l'enregistrement audio. Activez ce paramètre pour utiliser une application audio externe à la place. |
 | Finaliser les formulaires lors de l'importation            | Lorsqu'il est activé, les formulaires qui sont importés dans KoboCollect depuis l'extérieur de l'application (par exemple, copiés depuis le stockage de l'appareil ou la carte SD) sont automatiquement marqués comme <strong>Finalisés</strong>, de sorte qu'ils sont prêts à être envoyés sans nécessiter de finalisation manuelle. |
 
 
 <p class="note">
-    <strong>Remarque :</strong> La configuration de projets pour les <strong>mises à jour automatiques de formulaires</strong> est recommandée dans les projets avec des modifications fréquentes de formulaires ou des <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">pièces jointes de données dynamiques</a>. Cela supprime le besoin de télécharger manuellement les mises à jour de formulaires. Cependant, des mises à jour automatiques plus fréquentes épuiseront la batterie de votre appareil plus rapidement.
+    <strong>Remarque :</strong> La configuration de projets pour les <strong>mises à jour automatiques de formulaires</strong> est recommandée dans les projets avec des modifications fréquentes de formulaires ou des <a href="dynamic_data_attachment.html">pièces jointes de données dynamiques</a>. Cela supprime le besoin de télécharger manuellement les mises à jour de formulaires. Cependant, des mises à jour automatiques plus fréquentes épuiseront la batterie de votre appareil plus rapidement.
 </p>
 
 ## Paramètres d'identité de l'utilisatrice ou utilisateur et de l'appareil
@@ -103,7 +103,7 @@ Les paramètres de gestion du projet fournissent des outils pour gérer et réin
 
 | **Paramètre**&emsp;&emsp;&emsp;    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
-|Reconfigurer avec un code QR &emsp;&emsp; | Reconfigurez vos paramètres KoboCollect en scannant un code QR d'un autre projet. Notez que cette approche remplacera le projet actuel par le nouveau. C'est également ici que vous pouvez trouver le code QR pour [configurer un autre appareil](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) avec les mêmes paramètres. |
+|Reconfigurer avec un code QR &emsp;&emsp; | Reconfigurez vos paramètres KoboCollect en scannant un code QR d'un autre projet. Notez que cette approche remplacera le projet actuel par le nouveau. C'est également ici que vous pouvez trouver le code QR pour [configurer un autre appareil](https://support.kobotoolbox.org/fr/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) avec les mêmes paramètres. |
 | Réinitialiser | Réinitialisez des paramètres spécifiques, tels que l'effacement des formulaires enregistrés, des données en cache ou des couches de carte, sans affecter d'autres parties de l'application. |
 | Supprimer | Supprimez toutes les données liées au projet de l'appareil, y compris les formulaires vierges, les données soumises et les paramètres, ce qui peut être utile lors de la mise hors service d'un appareil ou de sa préparation pour une nouvelle utilisatrice ou un nouvel utilisateur. |
 

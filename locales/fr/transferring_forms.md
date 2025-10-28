@@ -6,7 +6,7 @@ Il peut arriver que vous soyez sur le terrain sans connexion Internet, mais que 
 
 Vous aurez besoin des éléments suivants pour suivre les instructions décrites ci-dessous :
 
--   Un appareil Android équipé de [l'application Android KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) avec la dernière version du formulaire déployé. (Il est recommandé d'[obtenir la dernière version](https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms) du formulaire déployé sur l'appareil en cliquant sur **Télécharger formulaire** depuis votre **application Android KoboCollect**.)
+-   Un appareil Android équipé de [l'application Android KoboCollect](kobocollect_on_android_latest.md) avec la dernière version du formulaire déployé. (Il est recommandé d'[obtenir la dernière version](https://support.kobotoolbox.org/fr/data_collection_kobocollect.html#downloading-forms) du formulaire déployé sur l'appareil en cliquant sur **Télécharger formulaire** depuis votre **application Android KoboCollect**.)
 -   Un appareil Android qui n'a pas la dernière version du formulaire (ou même aucun formulaire du tout).
 -   Les deux appareils Android doivent avoir l'application Android KoboCollect déjà installée.
 -   Un ordinateur personnel (de bureau ou portable).

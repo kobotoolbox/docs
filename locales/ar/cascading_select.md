@@ -55,7 +55,7 @@
 3. أعد تحميل XLSForm المحدث إلى KoboToolbox بالنقر على <strong>استبدال النموذج</strong> وتحميل الملف المعدل الخاص بك.
 
 <p class="note">
-    لمعرفة المزيد حول إضافة أسئلة الاختيار المتتالي واستخدام مرشحات الخيارات في XLSForm، راجع <a href="https://xlsform.org/en/#cascading-selects">وثائق XLSForm</a>. لمزيد من المعلومات حول استخدام XLSForm مع KoboToolbox، راجع <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">البدء مع XLSForm</a>. 
+    لمعرفة المزيد حول إضافة أسئلة الاختيار المتتالي واستخدام مرشحات الخيارات في XLSForm، راجع <a href="https://xlsform.org/en/#cascading-selects">وثائق XLSForm</a>. لمزيد من المعلومات حول استخدام XLSForm مع KoboToolbox، راجع <a href="getting_started_xlsform.html">البدء مع XLSForm</a>. 
 </p>
 
 ## استكشاف الأخطاء وإصلاحها

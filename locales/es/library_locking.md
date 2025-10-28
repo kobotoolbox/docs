@@ -21,7 +21,7 @@ formulario para quienes [creen un proyecto basado en la plantilla](quick_start.m
 
 <p class="note">
   Bloquear aspectos de un formulario es independiente de
-  <a class="reference" href="https://support.kobotoolbox.org/managing_permissions.html">manejar permisos del proyecto</a>.
+  <a class="reference" href="https://support.kobotoolbox.org/es/managing_permissions.html">manejar permisos del proyecto</a>.
 </p>
 
 ## Restricciones

@@ -24,7 +24,7 @@ Un aspect clé de la fonctionnalité de gestion d'équipe est que la propriété
 En centralisant la propriété des projets, la fonctionnalité de gestion d'équipe vous offre une meilleure supervision et une gestion d'équipe plus efficace.
 
 <p class="note">
-  <b>Remarque :</b> Cette fonctionnalité affecte uniquement la propriété des projets. Elle n'affecte pas les autorisations de partage de projets. Les autorisations de partage précédemment configurées ne seront pas affectées lorsque la propriété d'un projet sera transférée à une équipe. Si vous disposez d'autorisations de gestion pour un projet, vous continuerez à disposer de ces autorisations et pourrez partager le projet comme d'habitude. Pour plus d'informations, consultez <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html">Partager des projets avec des autorisations au niveau utilisateur</a>.
+  <b>Remarque :</b> Cette fonctionnalité affecte uniquement la propriété des projets. Elle n'affecte pas les autorisations de partage de projets. Les autorisations de partage précédemment configurées ne seront pas affectées lorsque la propriété d'un projet sera transférée à une équipe. Si vous disposez d'autorisations de gestion pour un projet, vous continuerez à disposer de ces autorisations et pourrez partager le projet comme d'habitude. Pour plus d'informations, consultez <a class="reference external" href="https://support.kobotoolbox.org/fr/managing_permissions.html">Partager des projets avec des autorisations au niveau utilisateur</a>.
 </p>
 
 ## Rôles pour les équipes
@@ -33,7 +33,7 @@ Il existe trois rôles différents pour les membres d'une équipe, chacun avec d
 
 1. **Propriétaire :** Le ou la Propriétaire peut visualiser et gérer tous les projets et utilisatrices et utilisateurs de l'équipe ainsi que le plan et les paramètres. Chaque équipe dans KoboToolbox ne peut avoir qu'un seul ou une seule Propriétaire.
    - **Vues et gestion des projets :** Le ou la Propriétaire peut visualiser tous les projets de l'équipe et dispose de toutes les autorisations de gestion de projets.
-   - **Transferts de propriété de projets :** Le ou la Propriétaire peut [transférer la propriété](https://support.kobotoolbox.org/project_sharing_settings.html#transferring-ownership-of-a-project) de n'importe quel projet de l'équipe à une utilisatrice ou un utilisateur extérieur à l'équipe.
+   - **Transferts de propriété de projets :** Le ou la Propriétaire peut [transférer la propriété](https://support.kobotoolbox.org/fr/project_sharing_settings.html#transferring-ownership-of-a-project) de n'importe quel projet de l'équipe à une utilisatrice ou un utilisateur extérieur à l'équipe.
    - **Gestion des utilisatrices et utilisateurs :** Le ou la Propriétaire peut ajouter ou retirer des membres de l'équipe et attribuer différents rôles.
    - **Gestion du plan et de l'utilisation :** Le ou la Propriétaire peut gérer le plan et les paramètres de l'équipe et consulter la page Utilisation.
 

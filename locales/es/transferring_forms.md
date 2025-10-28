@@ -11,8 +11,8 @@ Este artículo de ayuda te mostrará cómo hacerlo.
 
 Necesitarás los siguientes elementos para seguir las instrucciones descritas a continuación:
 
--   Un dispositivo Android que tenga la [aplicación de Android de KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) con la última versión del formulario desplegado. (Se
-    recomienda [obtener la última versión](https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms) del formulario desplegado en el dispositivo
+-   Un dispositivo Android que tenga la [aplicación de Android de KoboCollect](kobocollect_on_android_latest.md) con la última versión del formulario desplegado. (Se
+    recomienda [obtener la última versión](https://support.kobotoolbox.org/es/data_collection_kobocollect.html#downloading-forms) del formulario desplegado en el dispositivo
     haciendo clic en **Descargar formulario** desde tu **aplicación de Android de KoboCollect**.)
 -   Un dispositivo Android que no tenga la última versión del formulario (o incluso
     ningún formulario en absoluto).

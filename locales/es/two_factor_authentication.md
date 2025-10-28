@@ -92,17 +92,17 @@ Cuando reconfigures 2FA para tu cuenta, la configuración anterior se eliminará
 
 ## Usar KoboCollect con 2FA
 
-La autenticación de dos factores agrega una capa de protección a las cuentas con datos sensibles. Usar estas cuentas para la recolección de datos podría representar riesgos significativos. Por lo tanto, al activar 2FA para tu cuenta, ya no puedes descargar formularios ni enviar datos a [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) desde esta cuenta. Recibirás un mensaje de error al intentar descargar nuevos formularios dentro de la aplicación, como "El servidor requiere autenticación: Nombre de usuario o contraseña no válidos para el servidor".
+La autenticación de dos factores agrega una capa de protección a las cuentas con datos sensibles. Usar estas cuentas para la recolección de datos podría representar riesgos significativos. Por lo tanto, al activar 2FA para tu cuenta, ya no puedes descargar formularios ni enviar datos a [KoboCollect](kobocollect_on_android_latest.md) desde esta cuenta. Recibirás un mensaje de error al intentar descargar nuevos formularios dentro de la aplicación, como "El servidor requiere autenticación: Nombre de usuario o contraseña no válidos para el servidor".
 
 Para recolectar datos con KoboCollect cuando 2FA está activo, recomendamos cualquiera de los siguientes enfoques:
 
-1. Crea una cuenta de KoboToolbox separada para la recolección de datos y pruebas de formularios para usar con KoboCollect. Comparte tu(s) formulario(s) con esta nueva cuenta y restringe sus [permisos](https://support.kobotoolbox.org/managing_permissions.html) a **Agregar envíos** para máxima seguridad.
-2. [Habilita](https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication) "Permitir envíos a este formulario sin nombre de usuario y contraseña" para tus formularios, y [conéctate a KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) usando las siguientes credenciales:
+1. Crea una cuenta de KoboToolbox separada para la recolección de datos y pruebas de formularios para usar con KoboCollect. Comparte tu(s) formulario(s) con esta nueva cuenta y restringe sus [permisos](managing_permissions.md) a **Agregar envíos** para máxima seguridad.
+2. [Habilita](https://support.kobotoolbox.org/es/project_sharing_settings.html#allowing-submissions-without-authentication) "Permitir envíos a este formulario sin nombre de usuario y contraseña" para tus formularios, y [conéctate a KoboCollect](kobocollect_on_android_latest.md) usando las siguientes credenciales:
     - **URL**: `https://[kobocollect_url]/[username]`
     - **Nombre de usuario**: (en blanco)
     - **Contraseña**: (en blanco)
 
-El segundo enfoque permite a los/as usuarios/as descargar y enviar datos a cualquier formulario compartido con `username` que no [requiera autenticación](https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication).
+El segundo enfoque permite a los/as usuarios/as descargar y enviar datos a cualquier formulario compartido con `username` que no [requiera autenticación](https://support.kobotoolbox.org/es/project_sharing_settings.html#allowing-submissions-without-authentication).
 
 ## Solución de problemas
 <details>

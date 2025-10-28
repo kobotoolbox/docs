@@ -7,7 +7,7 @@ códigos de barras y códigos QR usando la cámara del dispositivo. Cuando se es
 cámara, se captura el valor (ya sean números o texto) almacenado en el código.
 
 <p class="note">
-  El escaneo de códigos de barras/códigos QR solo funciona cuando <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">usas KoboCollect</a> en dispositivos móviles.
+  El escaneo de códigos de barras/códigos QR solo funciona cuando <a href="kobocollect_on_android_latest.html">usas KoboCollect</a> en dispositivos móviles.
 </p>
 
 Se admite una amplia gama de formatos de códigos de barras y códigos QR, incluyendo los

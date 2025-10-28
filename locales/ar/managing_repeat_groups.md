@@ -5,7 +5,7 @@
 يتيح لك KoboToolbox جمع البيانات المتكررة ضمن نموذج، على سبيل المثال، عند إجراء مسح أسري حيث يُطرح على جميع الأفراد نفس الأسئلة. يشرح هذا المقال كيفية عرض وتحرير وتصدير بيانات المجموعات المتكررة، وكيفية ربط بيانات المجموعات المتكررة بالبيانات الرئيسية.
 
 <p class="note">
-  لمعرفة المزيد حول إعداد المجموعات المتكررة في نماذجك، راجع <a href="https://support.kobotoolbox.org/group_repeat.html">تجميع الأسئلة وتكرار المجموعات</a>.
+  لمعرفة المزيد حول إعداد المجموعات المتكررة في نماذجك، راجع <a href="group_repeat.html">تجميع الأسئلة وتكرار المجموعات</a>.
 </p>
 
 ## عرض وتحرير بيانات المجموعات المتكررة
@@ -15,7 +15,7 @@
 
 يمكنك أيضًا عرض البيانات الكاملة لأي إرسال معين، بما في ذلك كل تكرار للمجموعات المتكررة، من خلال النقر على زر <i class="k-icon-view"></i>**فتح** على يسار كل إرسال.
 
-لتحرير بيانات المجموعات المتكررة، انقر على زر <i class="k-icon-edit"></i>**تحرير**. سيؤدي هذا إلى فتح النموذج والسماح لك [بتحرير بيانات النموذج](https://support.kobotoolbox.org/howto_edit_single_submissions.html) قبل إعادة الإرسال. [التحرير الجماعي](https://support.kobotoolbox.org/howto_edit_multiple_submissions.html) لبيانات المجموعات المتكررة غير مدعوم حاليًا.
+لتحرير بيانات المجموعات المتكررة، انقر على زر <i class="k-icon-edit"></i>**تحرير**. سيؤدي هذا إلى فتح النموذج والسماح لك [بتحرير بيانات النموذج](howto_edit_single_submissions.md) قبل إعادة الإرسال. [التحرير الجماعي](howto_edit_multiple_submissions.md) لبيانات المجموعات المتكررة غير مدعوم حاليًا.
 
 <p class="note">
   <b>ملاحظة</b>: لا يمكن عرض بيانات المجموعات المتكررة في عروض <b>التقارير</b> أو <b>الخريطة</b> بسبب بنية بيانات المجموعات المتكررة.
@@ -27,7 +27,7 @@
 ![image](/images/managing_repeat_groups/download.png)
 
 <p class="note"> 
-    لمعرفة المزيد حول تصدير بياناتك، راجع <a href="https://support.kobotoolbox.org/export_download.html">تصدير وتنزيل بياناتك</a>.
+    لمعرفة المزيد حول تصدير بياناتك، راجع <a href="export_download.html">تصدير وتنزيل بياناتك</a>.
 </p>
 
 ## ربط بيانات المجموعات المتكررة
@@ -48,5 +48,5 @@
 يمكن دمج بيانات المجموعات المتكررة مع البيانات الرئيسية باستخدام أدوات مختلفة لتحليل البيانات. على سبيل المثال، في Excel وPower BI، يمكنك استخدام [Power Query](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query) أو [VLOOKUP()](https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1) لدمج البيانات. في SQL وR وSAS ولغات إدارة قواعد البيانات الأخرى، يمكنك دمج مجموعات البيانات باستخدام [left join](https://learn.microsoft.com/en-us/sql/relational-databases/performance/joins?view=sql-server-ver17).
 
 <p class="note">
-  لمعرفة المزيد حول دمج بيانات المجموعات المتكررة باستخدام Power Query، راجع <a href="https://support.kobotoolbox.org/merging_dataset_excel_power_query.html?highlight=power+query">دمج البيانات الفردية مع بيانات القائمة من خلال Power Query في Excel</a>.<br><br>لمعرفة المزيد حول دمج مجموعات البيانات في R، راجع <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">Mutating joins</a>.
+  لمعرفة المزيد حول دمج بيانات المجموعات المتكررة باستخدام Power Query، راجع <a href="https://support.kobotoolbox.org/ar/merging_dataset_excel_power_query.html?highlight=power+query">دمج البيانات الفردية مع بيانات القائمة من خلال Power Query في Excel</a>.<br><br>لمعرفة المزيد حول دمج مجموعات البيانات في R، راجع <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">Mutating joins</a>.
 </p>

@@ -4,7 +4,7 @@
 
 **Toda la recolección de datos puede realizarse sin conexión, tanto con KoboCollect como con formularios web.**
 
-Cuando un/a usuario/a ingresa datos, estos se almacenan primero en el dispositivo. KoboCollect [puede configurarse](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) para intentar enviar la información a través de una conexión de red inmediatamente o solo en una etapa posterior cuando el/la entrevistador/a o supervisor/a desee cargar formularios finalizados. Los formularios web siempre intentarán cargar los datos inmediatamente y volverán a intentarlo hasta que se haya establecido una conexión nuevamente.
+Cuando un/a usuario/a ingresa datos, estos se almacenan primero en el dispositivo. KoboCollect [puede configurarse](https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings) para intentar enviar la información a través de una conexión de red inmediatamente o solo en una etapa posterior cuando el/la entrevistador/a o supervisor/a desee cargar formularios finalizados. Los formularios web siempre intentarán cargar los datos inmediatamente y volverán a intentarlo hasta que se haya establecido una conexión nuevamente.
 
 Toda la sincronización está protegida incluso contra una mala calidad de conexión a Internet. Si una conexión se agota o se interrumpe mientras se está transfiriendo un formulario específico, se reenviará con el siguiente intento de carga. El servidor no integrará datos recibidos a medias en este caso. Solo cuando un registro se haya cargado exitosamente y el servidor confirme la recepción, los datos de la encuesta se eliminarán de la cola de carga.
 

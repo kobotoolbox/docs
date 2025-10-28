@@ -22,4 +22,4 @@
 
 ## استخدام KoboCollect
 
-إذا كنت تستخدم [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) على جهاز Android وقمت بإعادة نشر النموذج الخاص بك، فستحتاج إلى [تنزيل أحدث إصدار](https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms) من النموذج عند الاتصال بالإنترنت لاستخدام الإصدار المحدث.
+إذا كنت تستخدم [KoboCollect](kobocollect_on_android_latest.md) على جهاز Android وقمت بإعادة نشر النموذج الخاص بك، فستحتاج إلى [تنزيل أحدث إصدار](https://support.kobotoolbox.org/ar/data_collection_kobocollect.html#downloading-forms) من النموذج عند الاتصال بالإنترنت لاستخدام الإصدار المحدث.

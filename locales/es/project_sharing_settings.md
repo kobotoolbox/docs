@@ -7,12 +7,12 @@
 KoboToolbox te permite personalizar la configuración de uso compartido según las necesidades del proyecto. Este artículo explica los **controles de privacidad y uso compartido a nivel de proyecto** de KoboToolbox, incluyendo permitir envíos sin autenticación, hacer público un proyecto, transferir la propiedad y eliminar proyectos compartidos.
 
 <p class="note">
-  Para obtener más información sobre cómo gestionar lo que <strong>usuarios/as específicos/as</strong> pueden hacer dentro de un proyecto, consulta <a href="https://support.kobotoolbox.org/managing_permissions.html">Compartir tu proyecto con permisos específicos de usuario/a</a>.
+  Para obtener más información sobre cómo gestionar lo que <strong>usuarios/as específicos/as</strong> pueden hacer dentro de un proyecto, consulta <a href="managing_permissions.html">Compartir tu proyecto con permisos específicos de usuario/a</a>.
 </p>
 
 ## Permitir envíos sin autenticación
 
-De forma predeterminada, KoboToolbox requiere un nombre de usuario/a y contraseña para enviar datos, gestionar proyectos y acceder a los envíos. Cuando se despliega un nuevo proyecto, se requiere autenticación para acceder al formulario y enviar envíos. Solo los/as usuarios/as con quienes hayas [compartido el formulario](https://support.kobotoolbox.org/managing_permissions.html) y otorgado el permiso **Agregar envíos** podrán acceder al formulario y enviar datos.
+De forma predeterminada, KoboToolbox requiere un nombre de usuario/a y contraseña para enviar datos, gestionar proyectos y acceder a los envíos. Cuando se despliega un nuevo proyecto, se requiere autenticación para acceder al formulario y enviar envíos. Solo los/as usuarios/as con quienes hayas [compartido el formulario](managing_permissions.md) y otorgado el permiso **Agregar envíos** podrán acceder al formulario y enviar datos.
 
 En algunos casos, es posible que desees habilitar la entrada de datos para cualquier persona que tenga la URL. Esto permite que las personas con la URL del formulario envíen envíos sin iniciar sesión en una cuenta de KoboToolbox.
 

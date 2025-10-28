@@ -5,12 +5,12 @@
 La vinculación dinámica te permite usar datos de un **proyecto principal** dentro de **proyectos secundarios**, simplificando el manejo de la recolección de datos longitudinales. Este artículo explica cómo vincular dinámicamente datos entre proyectos de KoboToolbox.
 
 <p class="note">
-    <strong>Nota:</strong> Los adjuntos de datos dinámicos funcionan de manera similar a la función <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a>, pero eliminan la necesidad de archivos CSV separados, ya que los datos de un proyecto principal vinculado sirven como fuente de datos.
+    <strong>Nota:</strong> Los adjuntos de datos dinámicos funcionan de manera similar a la función <a href="https://support.kobotoolbox.org/es/pull_data_kobotoolbox.html"><code>pulldata()</code></a>, pero eliminan la necesidad de archivos CSV separados, ya que los datos de un proyecto principal vinculado sirven como fuente de datos.
 </p>
 
 Puedes recuperar varias **respuestas que no sean multimedia** de un proyecto principal y realizar cálculos sobre estos datos vinculados en un proyecto secundario. Esto puede ser útil para recuperar datos de línea base, información de contacto o registros de salud en estudios de cohorte, o para confirmar o verificar datos recolectados previamente.
 
-Recomendamos usar [XLSForm](https://support.kobotoolbox.org/edit_forms_excel.html) para configurar adjuntos de datos dinámicos. Para ejemplos de proyectos principales y secundarios, descarga archivos de muestra [aquí](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) y [aquí](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx).
+Recomendamos usar [XLSForm](edit_forms_excel.md) para configurar adjuntos de datos dinámicos. Para ejemplos de proyectos principales y secundarios, descarga archivos de muestra [aquí](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) y [aquí](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx).
 
 ## Vincular proyectos dinámicamente en XLSForm
 
@@ -26,7 +26,7 @@ Vincular proyectos dinámicamente requiere un **proyecto principal** y al menos 
 | survey | 
 
 
-3. A lo largo del formulario, puedes recuperar valores del proyecto principal creando una nueva pregunta e incluyendo la expresión apropiada en la columna `calculation` (ver tabla [a continuación](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). Puedes usar los siguientes tipos de pregunta para recuperar datos:
+3. A lo largo del formulario, puedes recuperar valores del proyecto principal creando una nueva pregunta e incluyendo la expresión apropiada en la columna `calculation` (ver tabla [a continuación](https://support.kobotoolbox.org/es/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). Puedes usar los siguientes tipos de pregunta para recuperar datos:
     - Usa un tipo de pregunta **calculate** para recuperar y almacenar valores para uso futuro dentro del formulario o conjunto de datos (por ejemplo, para cálculos o etiquetas de preguntas dinámicas).
     - Usa tipos de pregunta **text**, **integer**, **decimal**, **select_one** o **select_multiple** para incluir valores recuperados como respuestas predeterminadas en campos editables. Los datos editados en el proyecto secundario no cambiarán los datos originales en el proyecto principal.
   
@@ -84,7 +84,7 @@ Una vez que tus XLSForms estén configurados, inicia sesión en tu cuenta de Kob
     - Todos los datos se comparten por defecto, pero puedes restringir variables específicas para compartir con proyectos secundarios haciendo clic en "Select specific questions to share".
 
 <p class="note">
-    <strong>Nota:</strong> Si los proyectos tienen diferentes propietarios/as, el/la propietario/a del proyecto principal debe <a href="https://support.kobotoolbox.org/managing_permissions.html">compartir el proyecto</a> con el/la propietario/a del proyecto secundario. Los permisos mínimos requeridos para que funcionen los adjuntos de datos dinámicos son <strong>View form</strong> y <strong>View submissions</strong>. Ten en cuenta que esto permite a los/as administradores/as del proyecto secundario ver todos los datos del proyecto principal.
+    <strong>Nota:</strong> Si los proyectos tienen diferentes propietarios/as, el/la propietario/a del proyecto principal debe <a href="managing_permissions.html">compartir el proyecto</a> con el/la propietario/a del proyecto secundario. Los permisos mínimos requeridos para que funcionen los adjuntos de datos dinámicos son <strong>View form</strong> y <strong>View submissions</strong>. Ten en cuenta que esto permite a los/as administradores/as del proyecto secundario ver todos los datos del proyecto principal.
 </p>
 
 3. Carga y despliega el **proyecto secundario**.
@@ -131,7 +131,7 @@ Es posible que un proyecto principal y secundario sean el mismo proyecto. Los pa
 
 ## Recolectar y manejar datos con vinculación dinámica
 
-Los datos para proyectos vinculados dinámicamente pueden recolectarse usando la [aplicación de Android de KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) o [formularios web de Enketo](https://support.kobotoolbox.org/data_through_webforms.html).
+Los datos para proyectos vinculados dinámicamente pueden recolectarse usando la [aplicación de Android de KoboCollect](kobocollect_on_android_latest.md) o [formularios web de Enketo](data_through_webforms.md).
 
 Al recolectar datos, ten en cuenta lo siguiente:
 
@@ -140,7 +140,7 @@ Al recolectar datos, ten en cuenta lo siguiente:
 - En modo sin conexión, descarga frecuentemente el proyecto secundario para asegurar la sincronización de datos con el proyecto principal.
 
 <p class="note">
-    <strong>Nota:</strong> Puedes <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">configurar la aplicación de Android de KoboCollect</a> para actualizar automáticamente los datos del proyecto principal cuando haya una conexión a internet disponible. Ve a <strong>Settings > Form management > Blank form update mode</strong> y selecciona <strong>Previously downloaded forms only</strong> o <strong>Exactly match server</strong>. Puedes establecer la frecuencia de descarga automática para que ocurra cada 15 minutos, cada hora, cada seis horas o cada 24 horas. Ten en cuenta que habilitar esta configuración puede aumentar el consumo de batería.
+    <strong>Nota:</strong> Puedes <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings">configurar la aplicación de Android de KoboCollect</a> para actualizar automáticamente los datos del proyecto principal cuando haya una conexión a internet disponible. Ve a <strong>Settings > Form management > Blank form update mode</strong> y selecciona <strong>Previously downloaded forms only</strong> o <strong>Exactly match server</strong>. Puedes establecer la frecuencia de descarga automática para que ocurra cada 15 minutos, cada hora, cada seis horas o cada 24 horas. Ten en cuenta que habilitar esta configuración puede aumentar el consumo de batería.
 </p>
 
 ## Solución de problemas
@@ -168,7 +168,7 @@ Los adjuntos de datos dinámicos grandes pueden ralentizar la carga del formular
 
 <details>
 <summary><strong>Los datos dinámicos no se actualizan en KoboCollect</strong></summary>
-Si estás usando KoboCollect y recolectando datos sin conexión, los datos primero deben enviarse al proyecto principal y luego descargarse a tu dispositivo de recolección de datos para que funcione el adjunto de datos dinámicos. Ambos pasos requieren una conexión a internet. Descargar datos principales es similar a descargar una nueva versión de un formulario, y la aplicación de KoboCollect puede configurarse para <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">descargar automáticamente nuevos datos</a> con una frecuencia establecida. No se recomienda depender de adjuntos de datos dinámicos para datos recolectados sin conexión en un corto período de tiempo.
+Si estás usando KoboCollect y recolectando datos sin conexión, los datos primero deben enviarse al proyecto principal y luego descargarse a tu dispositivo de recolección de datos para que funcione el adjunto de datos dinámicos. Ambos pasos requieren una conexión a internet. Descargar datos principales es similar a descargar una nueva versión de un formulario, y la aplicación de KoboCollect puede configurarse para <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings">descargar automáticamente nuevos datos</a> con una frecuencia establecida. No se recomienda depender de adjuntos de datos dinámicos para datos recolectados sin conexión en un corto período de tiempo.
 </details>
 
 <br>

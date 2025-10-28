@@ -4,7 +4,7 @@
 
 Pour modifier ou supprimer un questionnaire soumis, veuillez suivre les étapes ci-dessous.
 
-Veuillez noter que si vous collectez des données avec [l'application KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html), une fois qu'un formulaire a été soumis au serveur, il n'est **pas possible** de modifier ou de supprimer une soumission depuis KoboCollect.
+Veuillez noter que si vous collectez des données avec [l'application KoboCollect](data_collection_kobocollect.md), une fois qu'un formulaire a été soumis au serveur, il n'est **pas possible** de modifier ou de supprimer une soumission depuis KoboCollect.
 
 1. Ouvrez l'onglet _DONNÉES_ de votre projet, puis cliquez sur _Tableau_ à gauche.
    Vous verrez deux icônes d'options pour **Ouvrir** ou **Modifier** un enregistrement dans la

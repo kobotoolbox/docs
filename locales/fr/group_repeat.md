@@ -79,14 +79,14 @@ Dans KoboCollect, les questions apparaissent une à la fois par défaut. Dans le
 Pour afficher les questions par groupe sur le même écran pendant la collecte de données, cliquez sur l'icône <i class="k-icon-settings"></i> **Paramètres** à droite du nom du groupe. Ensuite, sous **Apparence (Avancé)**, sélectionnez **field-list** (Afficher toutes les questions de ce groupe sur le même écran).
 
 <p class="note">
-    <b>Remarque :</b> Si vous prévoyez de collecter des données à l'aide de formulaires web Enketo, vous devrez également activer le thème <b>Pages multiples</b> dans le menu <b>Style de formulaire</b> (<b>Mise en page et paramètres</b>). Pour plus d'informations sur les styles de formulaires web Enketo, consultez <a href="https://support.kobotoolbox.org/alternative_enketo.html">Utiliser des styles de formulaires web Enketo alternatifs</a>.
+    <b>Remarque :</b> Si vous prévoyez de collecter des données à l'aide de formulaires web Enketo, vous devrez également activer le thème <b>Pages multiples</b> dans le menu <b>Style de formulaire</b> (<b>Mise en page et paramètres</b>). Pour plus d'informations sur les styles de formulaires web Enketo, consultez <a href="alternative_enketo.html">Utiliser des styles de formulaires web Enketo alternatifs</a>.
 </p>
 
 ### Ignorer un groupe de questions
 Pour ignorer un groupe de questions, assurez-vous d'avoir au moins une question de contrôle positionnée avant les questions regroupées. Cliquez sur l'icône <i class="k-icon-settings"></i> **Paramètres** du groupe de questions, puis sélectionnez **Logique de saut** et configurez les conditions de logique de saut comme vous le feriez pour une question individuelle.
 
 <p class="note">
-    Pour en savoir plus sur l'ajout de conditions de logique de saut, consultez <a href="https://support.kobotoolbox.org/skip_logic.html">Ajouter une logique de saut dans l'interface de création de formulaires</a>.
+    Pour en savoir plus sur l'ajout de conditions de logique de saut, consultez <a href="skip_logic.html">Ajouter une logique de saut dans l'interface de création de formulaires</a>.
 </p>
 
 ### Répéter un groupe de questions
@@ -101,7 +101,7 @@ Pour créer un groupe de questions :
 Pendant la collecte de données, les enquêtrices et enquêteurs pourront saisir des réponses pour ces questions regroupées autant de fois que nécessaire.
 
 <p class="note">
-    <b>Remarque :</b> L'ajout de groupes répétés à votre formulaire crée une structure de données différente par rapport aux variables ou groupes standard. Lorsque vous téléchargez vos données au format .xlsx, vous trouverez une feuille distincte pour chaque groupe répété. Pour plus d'informations sur l'exportation et l'utilisation des données de groupes répétés, consultez <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Gérer les données de groupes répétés</a>.
+    <b>Remarque :</b> L'ajout de groupes répétés à votre formulaire crée une structure de données différente par rapport aux variables ou groupes standard. Lorsque vous téléchargez vos données au format .xlsx, vous trouverez une feuille distincte pour chaque groupe répété. Pour plus d'informations sur l'exportation et l'utilisation des données de groupes répétés, consultez <a href="managing_repeat_groups.html">Gérer les données de groupes répétés</a>.
 </p>
 
 ### Paramètres avancés pour les groupes répétés

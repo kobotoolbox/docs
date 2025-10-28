@@ -7,7 +7,7 @@ KoboCollect peut fonctionner sur n'importe quel appareil Android, qu'il s'agisse
 Il est difficile de recommander des appareils pour la collecte de données sur le terrain en raison du grand nombre d'appareils disponibles, chacun avec des fonctionnalités et des avantages différents. Lors du choix d'un appareil, vous devez évaluer l'importance de la qualité de l'écran, de la durabilité, de la capacité de la batterie, de l'appareil photo (déterminez si vous aurez besoin d'un appareil photo frontal, arrière ou les deux), du stockage et de la mémoire internes, des capteurs internes (GPS, mouvement), des options de connectivité (WiFi, cellulaire, Bluetooth, ...), du poids, etc.
 
 <p class="note">
-    Pour en savoir plus sur la connexion de KoboCollect à votre compte KoboToolbox, la configuration des paramètres de KoboCollect et la collecte de données avec l'application, consultez <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Premiers pas avec KoboCollect</a>, <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Personnalisation des paramètres de KoboCollect</a> et <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecte de données avec KoboCollect</a>.
+    Pour en savoir plus sur la connexion de KoboCollect à votre compte KoboToolbox, la configuration des paramètres de KoboCollect et la collecte de données avec l'application, consultez <a href="kobocollect_on_android_latest.html">Premiers pas avec KoboCollect</a>, <a href="kobocollect_settings.html">Personnalisation des paramètres de KoboCollect</a> et <a href="data_collection_kobocollect.html">Collecte de données avec KoboCollect</a>.
 </p>
 
 ## Téléphones vs. tablettes

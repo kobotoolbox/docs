@@ -7,7 +7,7 @@
 L'interface de création de formulaires KoboToolbox est un outil facile à utiliser pour concevoir et déployer des formulaires de collecte de données. Cet article fournit un aperçu de base de ses fonctions, de l'ajout et de la gestion des questions à l'organisation de votre formulaire.
 
 <p class="note">
-    Pour apprendre comment créer un nouveau formulaire dans KoboToolbox, consultez l'<a href="https://support.kobotoolbox.org/quick_start.html">aperçu de démarrage rapide</a> de KoboToolbox.
+    Pour apprendre comment créer un nouveau formulaire dans KoboToolbox, consultez l'<a href="https://support.kobotoolbox.org/fr/quick_start.html">aperçu de démarrage rapide</a> de KoboToolbox.
 </p>
 
 ## Ajouter une question
@@ -15,7 +15,7 @@ L'interface de création de formulaires KoboToolbox est un outil facile à utili
 Pour ajouter une question à votre formulaire, cliquez sur le bouton <i class="k-icon k-icon-plus"></i> qui se trouve sous chaque question. Saisissez l'intitulé de votre question et cliquez sur **Ajouter une question**. Ensuite,
 [choisissez le type de question](question_types.md).
 
-Pour les types de questions [Sélection unique ou Sélection multiple](https://support.kobotoolbox.org/select_one_and_select_many.html), ajoutez les options de réponse sous la question.
+Pour les types de questions [Sélection unique ou Sélection multiple](select_one_and_select_many.md), ajoutez les options de réponse sous la question.
 
 <p class="note">
 <strong>Remarque</strong> : Une fois le type de question sélectionné, il ne peut pas être modifié dans l'interface de création de formulaires. Pour changer le type de question d'une question existante, supprimez la question et créez une nouvelle question avec le même intitulé.
@@ -38,16 +38,16 @@ Pour supprimer une question, cliquez sur <i class="k-icon-trash"></i> **Supprime
 Pour accéder aux paramètres avancés de question, cliquez sur <i class="k-icon-settings"></i> **Paramètres** dans le menu de la question à droite. Ici, vous pouvez ajouter une logique de saut, des critères de validation, des indications d'orientation et rendre une question obligatoire.
 
 <p class="note">
-Pour en savoir plus sur les paramètres de question, consultez <a href="https://support.kobotoolbox.org/question_options.html">Utiliser les options de question</a>, <a href="https://support.kobotoolbox.org/skip_logic.html">Ajouter une logique de saut dans l'interface de création de formulaires</a> et <a href="https://support.kobotoolbox.org/validation_criteria.html">Ajouter des critères de validation dans l'interface de création de formulaires</a>.
+Pour en savoir plus sur les paramètres de question, consultez <a href="question_options.html">Utiliser les options de question</a>, <a href="skip_logic.html">Ajouter une logique de saut dans l'interface de création de formulaires</a> et <a href="validation_criteria.html">Ajouter des critères de validation dans l'interface de création de formulaires</a>.
 </p>
 
 ## Ajouter des questions à la bibliothèque
 
-Pour enregistrer une question en vue de la réutiliser dans de futurs formulaires, cliquez sur <i class="k-icon-folder-plus"></i> **Ajouter la question à la bibliothèque**. Elle sera enregistrée sous forme de copie dans votre [bibliothèque de questions](https://support.kobotoolbox.org/question_library.html). Vous pouvez modifier ou supprimer la question originale dans votre formulaire sans affecter la copie dans la bibliothèque.
+Pour enregistrer une question en vue de la réutiliser dans de futurs formulaires, cliquez sur <i class="k-icon-folder-plus"></i> **Ajouter la question à la bibliothèque**. Elle sera enregistrée sous forme de copie dans votre [bibliothèque de questions](question_library.md). Vous pouvez modifier ou supprimer la question originale dans votre formulaire sans affecter la copie dans la bibliothèque.
 
 ## Regrouper vos questions
 
-Les questions peuvent être [regroupées](https://support.kobotoolbox.org/group_repeat.html) pour organiser votre formulaire. Sélectionnez les questions à l'aide de la touche **CTRL** (Windows) ou **Commande** (Mac), puis cliquez sur <i class="k-icon k-icon-group"></i> **Créer un groupe avec les questions sélectionnées** dans la barre de menu en haut à gauche.
+Les questions peuvent être [regroupées](group_repeat.md) pour organiser votre formulaire. Sélectionnez les questions à l'aide de la touche **CTRL** (Windows) ou **Commande** (Mac), puis cliquez sur <i class="k-icon k-icon-group"></i> **Créer un groupe avec les questions sélectionnées** dans la barre de menu en haut à gauche.
 
 ## Modifier l'ordre de vos questions
 

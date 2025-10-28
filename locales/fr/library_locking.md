@@ -12,7 +12,7 @@ Cette fonctionnalité peut être utile dans un contexte d'équipe importante et 
 
 <p class="note">
   Le verrouillage d'aspects d'un formulaire est distinct de la
-  <a class="reference" href="https://support.kobotoolbox.org/managing_permissions.html">gestion des autorisations de projet</a>.
+  <a class="reference" href="https://support.kobotoolbox.org/fr/managing_permissions.html">gestion des autorisations de projet</a>.
 </p>
 
 ## Restrictions

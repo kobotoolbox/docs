@@ -5,7 +5,7 @@
 Las opciones avanzadas proporcionan mayor control y flexibilidad al descargar y exportar tus datos. Este artículo te guiará a través de la personalización de tus exportaciones de datos, desde la selección de campos de datos y el manejo de varios tipos de preguntas hasta el establecimiento de parámetros para diferentes necesidades analíticas.
 
 <p class="note">
-    Para obtener más información sobre la descarga de datos, incluyendo una descripción general de los tipos de exportación y los formatos disponibles, consulta <a href="https://support.kobotoolbox.org/export_download.html?highlight=export">Exportar y descargar tus datos.</a>
+    Para obtener más información sobre la descarga de datos, incluyendo una descripción general de los tipos de exportación y los formatos disponibles, consulta <a href="https://support.kobotoolbox.org/es/export_download.html?highlight=export">Exportar y descargar tus datos.</a>
 </p>
 
 ## Opciones de exportación para preguntas de selección múltiple
@@ -47,7 +47,7 @@ KoboToolbox ofrece opciones adicionales de formato de datos para personalizar a�
 
 ## Guardar configuraciones de exportación
 
-Puedes guardar tus configuraciones de exportación definidas para uso futuro o para generar un enlace de [exportación sincrónica](https://support.kobotoolbox.org/synchronous_exports.html) para software como PowerBI o Excel.
+Puedes guardar tus configuraciones de exportación definidas para uso futuro o para generar un enlace de [exportación sincrónica](synchronous_exports.md) para software como PowerBI o Excel.
 
 | **Configuración de exportación** | **Descripción**                                |
 | :-------------------- | :------------------------------------ |

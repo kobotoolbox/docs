@@ -6,7 +6,7 @@
 [Forum communautaire](https://community.kobotoolbox.org/)--**
 
 <p class="note">
-    Pour en savoir plus sur la connexion de KoboCollect à votre compte KoboToolbox, la configuration des paramètres de KoboCollect et la collecte de données avec l'application, consultez <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Premiers pas avec KoboCollect</a>, <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Personnalisation des paramètres de KoboCollect</a> et <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecte de données avec KoboCollect</a>.
+    Pour en savoir plus sur la connexion de KoboCollect à votre compte KoboToolbox, la configuration des paramètres de KoboCollect et la collecte de données avec l'application, consultez <a href="kobocollect_on_android_latest.html">Premiers pas avec KoboCollect</a>, <a href="kobocollect_settings.html">Personnalisation des paramètres de KoboCollect</a> et <a href="data_collection_kobocollect.html">Collecte de données avec KoboCollect</a>.
 </p>
 
 

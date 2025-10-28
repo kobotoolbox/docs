@@ -6,7 +6,7 @@
 [منتدى المجتمع](https://community.kobotoolbox.org/) الخاص بنا--**
 
 <p class="note">
-    لمعرفة المزيد حول ربط KoboCollect بحساب KoboToolbox الخاص بك، وتكوين إعدادات KoboCollect، وجمع البيانات باستخدام التطبيق، راجع <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">البدء مع KoboCollect</a>، و<a href="https://support.kobotoolbox.org/kobocollect_settings.html">تخصيص إعدادات KoboCollect</a> و<a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">جمع البيانات باستخدام KoboCollect</a>.
+    لمعرفة المزيد حول ربط KoboCollect بحساب KoboToolbox الخاص بك، وتكوين إعدادات KoboCollect، وجمع البيانات باستخدام التطبيق، راجع <a href="kobocollect_on_android_latest.html">البدء مع KoboCollect</a>، و<a href="kobocollect_settings.html">تخصيص إعدادات KoboCollect</a> و<a href="data_collection_kobocollect.html">جمع البيانات باستخدام KoboCollect</a>.
 </p>
 
 

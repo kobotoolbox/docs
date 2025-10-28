@@ -20,7 +20,7 @@ Les **Indications d'aide** sont des instructions supplémentaires que vous pouve
 
 ![Indication d'aide dans les formulaires web Enketo](/images/question_options/guidance_hint_enketo.gif)
 
-Dans [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html), les indications d'aide ne sont pas affichées par défaut. Vous pouvez [choisir comment les indications d'aide doivent être affichées](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) dans vos formulaires en allant dans Paramètres -> Gestion des formulaires -> Afficher les indications pour les questions. Vous avez ici 3 choix : Non, Oui - toujours affiché et Oui - toujours réduit.
+Dans [KoboCollect](kobocollect_on_android_latest.md), les indications d'aide ne sont pas affichées par défaut. Vous pouvez [choisir comment les indications d'aide doivent être affichées](https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings) dans vos formulaires en allant dans Paramètres -> Gestion des formulaires -> Afficher les indications pour les questions. Vous avez ici 3 choix : Non, Oui - toujours affiché et Oui - toujours réduit.
 
 ![Indication d'aide dans KoboCollect](/images/question_options/guidance_hint_kobocollect.gif)
 

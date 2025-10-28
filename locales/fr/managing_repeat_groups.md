@@ -5,7 +5,7 @@
 KoboToolbox vous permet de collecter des données répétées au sein d'un formulaire, par exemple lors de la réalisation d'une enquête auprès des ménages où les mêmes questions sont posées à tous les membres. Cet article explique comment visualiser, modifier et exporter les données de groupes répétés, et comment lier les données de groupes répétés aux données principales.
 
 <p class="note">
-  Pour en savoir plus sur la configuration des groupes répétés dans vos formulaires, consultez <a href="https://support.kobotoolbox.org/group_repeat.html">Regroupement de questions et groupes répétés</a>.
+  Pour en savoir plus sur la configuration des groupes répétés dans vos formulaires, consultez <a href="group_repeat.html">Regroupement de questions et groupes répétés</a>.
 </p>
 
 ## Visualisation et modification des données de groupes répétés
@@ -15,7 +15,7 @@ Vous pouvez visualiser les données répétées dans le tableau de données, que
 
 Vous pouvez également visualiser les données complètes de toute soumission donnée, y compris chaque répétition des groupes répétés, en cliquant sur le bouton <i class="k-icon-view"></i>**Ouvrir** à gauche de chaque soumission.
 
-Pour modifier les données de groupes répétés, cliquez sur le bouton <i class="k-icon-edit"></i>**Modifier**. Cela ouvrira le formulaire et vous permettra de [modifier les données du formulaire](https://support.kobotoolbox.org/howto_edit_single_submissions.html) avant de le soumettre à nouveau. La [modification en masse](https://support.kobotoolbox.org/howto_edit_multiple_submissions.html) des données de groupes répétés n'est actuellement pas prise en charge.
+Pour modifier les données de groupes répétés, cliquez sur le bouton <i class="k-icon-edit"></i>**Modifier**. Cela ouvrira le formulaire et vous permettra de [modifier les données du formulaire](howto_edit_single_submissions.md) avant de le soumettre à nouveau. La [modification en masse](howto_edit_multiple_submissions.md) des données de groupes répétés n'est actuellement pas prise en charge.
 
 <p class="note">
   <b>Remarque</b> : Les données de groupes répétés ne peuvent pas être affichées dans les modes <b>Rapports</b> ou <b>Carte</b> en raison de la structure des données des groupes répétés.
@@ -27,7 +27,7 @@ Pour exporter les données d'un formulaire avec des groupes répétés, vous dev
 ![image](/images/managing_repeat_groups/download.png)
 
 <p class="note"> 
-    Pour en savoir plus sur l'exportation de vos données, consultez <a href="https://support.kobotoolbox.org/export_download.html">Exportation et téléchargement de vos données</a>.
+    Pour en savoir plus sur l'exportation de vos données, consultez <a href="export_download.html">Exportation et téléchargement de vos données</a>.
 </p>
 
 ## Liaison des données de groupes répétés
@@ -48,5 +48,5 @@ Dans l'exemple ci-dessous, la première feuille comprend une colonne **_index**,
 Les données de groupes répétés peuvent être fusionnées avec les données principales à l'aide de différents outils d'analyse de données. Par exemple, dans Excel et Power BI, vous pouvez utiliser [Power Query](https://learn.microsoft.com/fr-fr/power-query/power-query-what-is-power-query) ou [RECHERCHEV()](https://support.microsoft.com/fr-fr/office/fonction-recherchev-0bbc8083-26fe-4963-8ab8-93a18ad188a1) pour fusionner les données. Dans SQL, R, SAS et d'autres langages de gestion de bases de données, vous pouvez combiner les ensembles de données à l'aide d'une [jointure gauche](https://learn.microsoft.com/fr-fr/sql/relational-databases/performance/joins?view=sql-server-ver17).
 
 <p class="note">
-  Pour en savoir plus sur la fusion des données de groupes répétés à l'aide de Power Query, consultez <a href="https://support.kobotoolbox.org/merging_dataset_excel_power_query.html?highlight=power+query">Fusion de données individuelles avec des données de liste via Power Query dans Excel</a>.<br><br>Pour en savoir plus sur la combinaison d'ensembles de données dans R, consultez <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">Jointures mutantes</a>.
+  Pour en savoir plus sur la fusion des données de groupes répétés à l'aide de Power Query, consultez <a href="https://support.kobotoolbox.org/fr/merging_dataset_excel_power_query.html?highlight=power+query">Fusion de données individuelles avec des données de liste via Power Query dans Excel</a>.<br><br>Pour en savoir plus sur la combinaison d'ensembles de données dans R, consultez <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">Jointures mutantes</a>.
 </p>

@@ -30,7 +30,7 @@ Vous pouvez choisir parmi les types d'export suivants :
 | XLS               | Fichier Microsoft Excel (format .xlsx). Ce type de fichier est recommandé lors de la collecte de données de groupes répétés.                                  |
 | CSV      | Fichier de valeurs séparées par des virgules. Ce type de fichier est idéal pour importer dans la plupart des logiciels de gestion de données, y compris les bases de données.                                  |
 | GeoJSON           | Il s'agit d'un format d'échange de données géospatiales ouvert standard, idéal pour l'intégration avec des logiciels SIG comme ArcGIS.            |
-| SPSS Labels           | Génère un fichier de syntaxe SPSS qui applique des étiquettes de questions et des étiquettes de valeurs aux variables des données KoboToolbox importées dans SPSS. Pour plus d'informations, consultez <a href="https://support.kobotoolbox.org/converting_to_spss_and_stata.html">Convertir les données en SPSS et/ou Stata</a>.         |
+| SPSS Labels           | Génère un fichier de syntaxe SPSS qui applique des étiquettes de questions et des étiquettes de valeurs aux variables des données KoboToolbox importées dans SPSS. Pour plus d'informations, consultez <a href="converting_to_spss_and_stata.html">Convertir les données en SPSS et/ou Stata</a>.         |
 | GPS Coordinates (KML)               | Génère un fichier KML pour travailler avec vos données dans un logiciel SIG, tel que Google Earth.                               |
 | Media Attachments (ZIP)               |  Télécharge un fichier ZIP contenant tous les médias collectés via le formulaire.                               |
 | XLS (legacy)              | Génère un fichier .xlsx (Microsoft Excel) en utilisant une ancienne interface KoboToolbox. N'utilisez cette option qu'en cas de problèmes occasionnels avec les exports XLS et CSV standard, car elle sera supprimée dans une future mise à jour.                                  |
@@ -48,7 +48,7 @@ Lorsque vous utilisez les formats d'export standard (XLS, CSV, GeoJSON et SPSS L
 
 ## Options avancées
 
-En plus de personnaliser les formats de valeurs et d'en-têtes, les formats d'export non hérités offrent également d'autres options de personnalisation dans la section **Options avancées**. Pour plus d'informations sur les options avancées, consultez [Options avancées pour l'export de données](https://support.kobotoolbox.org/advanced_export.html).
+En plus de personnaliser les formats de valeurs et d'en-têtes, les formats d'export non hérités offrent également d'autres options de personnalisation dans la section **Options avancées**. Pour plus d'informations sur les options avancées, consultez [Options avancées pour l'export de données](advanced_export.md).
 
 ## Dépannage
 
@@ -73,14 +73,14 @@ Si vous continuez à rencontrer des problèmes lors de l'export de vos données,
     <summary><strong>Données de groupe répété introuvables</strong></summary>
 Seul le <b>format XLS</b> prend en charge les données de groupe répété. Chaque groupe répété sera exporté <strong>sous forme de feuille séparée</strong> dans le fichier exporté. Les téléchargements CSV ne fourniront que les données principales, sans les données de groupe répété. 
 <br><br>
-Pour plus d'informations sur l'export et l'utilisation des données de groupe répété, consultez <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Gérer les données de groupe répété</a>.    
+Pour plus d'informations sur l'export et l'utilisation des données de groupe répété, consultez <a href="managing_repeat_groups.html">Gérer les données de groupe répété</a>.    
 </details>
 
 <br>
 
 <details>
     <summary><strong>Certaines données ne sont pas exportées</strong></summary>
-    Si certaines de vos données ne sont pas exportées, vérifiez les <a href="https://support.kobotoolbox.org/advanced_export.html">options avancées</a>. Par exemple, assurez-vous que les données de toutes les versions de votre formulaire sont sélectionnées pour l'export.
+    Si certaines de vos données ne sont pas exportées, vérifiez les <a href="advanced_export.html">options avancées</a>. Par exemple, assurez-vous que les données de toutes les versions de votre formulaire sont sélectionnées pour l'export.
 </details>
 
 <br>
@@ -96,5 +96,5 @@ Pour plus d'informations sur l'export et l'utilisation des données de groupe r�
     <summary><strong>Données de fuseau horaire perdues lors de l'export</strong></summary>
     Les formats horaires Excel ne prennent pas en charge les données de fuseau horaire. Par conséquent, toutes les données de fuseau horaire dans la valeur de réponse seront supprimées lors de l'export XLS. Pour conserver ces informations, cochez l'option d'export des dates sous forme de valeurs textuelles. 
 <br><br>
-Pour plus d'informations sur ce paramètre, consultez <a href="https://support.kobotoolbox.org/advanced_export.html">Options avancées pour l'export de données</a>.
+Pour plus d'informations sur ce paramètre, consultez <a href="advanced_export.html">Options avancées pour l'export de données</a>.
 </details>

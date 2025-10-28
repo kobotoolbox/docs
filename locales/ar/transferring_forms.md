@@ -6,7 +6,7 @@
 
 ستحتاج إلى العناصر التالية لاتباع التعليمات الموضحة أدناه:
 
--   جهاز أندرويد يحتوي على [تطبيق KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) مع أحدث إصدار من النموذج المنشور. (يُوصى [بالحصول على أحدث إصدار](https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms) من النموذج المنشور على الجهاز من خلال النقر على **تنزيل النموذج** من **تطبيق Android الخاص بـ KoboCollect**.)
+-   جهاز أندرويد يحتوي على [تطبيق KoboCollect](kobocollect_on_android_latest.md) مع أحدث إصدار من النموذج المنشور. (يُوصى [بالحصول على أحدث إصدار](https://support.kobotoolbox.org/ar/data_collection_kobocollect.html#downloading-forms) من النموذج المنشور على الجهاز من خلال النقر على **تنزيل النموذج** من **تطبيق Android الخاص بـ KoboCollect**.)
 -   جهاز أندرويد لا يحتوي على أحدث إصدار من النموذج (أو حتى لا يحتوي على نموذج على الإطلاق).
 -   يجب أن يكون تطبيق KoboCollect مثبتًا بالفعل على كلا جهازي أندرويد.
 -   جهاز كمبيوتر شخصي (سطح مكتب أو كمبيوتر محمول).

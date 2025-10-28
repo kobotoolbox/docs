@@ -5,7 +5,7 @@
 KoboToolbox هي منصة مبتكرة مفتوحة المصدر لجمع البيانات وإدارتها وتصويرها بصرياً. وهي أداة البيانات الأكثر استخداماً على نطاق واسع لمبادرات الأثر الاجتماعي في جميع أنحاء العالم.
 
 <p class="note">
-لمعرفة المزيد حول كيفية دعم KoboToolbox للمنظمات غير الربحية في إحداث تغيير قائم على البيانات، راجع <a href="https://support.kobotoolbox.org/about_kobotoolbox.html">حول KoboToolbox: جمع بيانات متاح للجميع</a>.
+لمعرفة المزيد حول كيفية دعم KoboToolbox للمنظمات غير الربحية في إحداث تغيير قائم على البيانات، راجع <a href="about_kobotoolbox.html">حول KoboToolbox: جمع بيانات متاح للجميع</a>.
 </p>
 
 يقدم هذا المقال KoboToolbox ويسلط الضوء على وظائفها الأساسية. ويغطي الخصائص الرئيسية بما في ذلك:
@@ -18,7 +18,7 @@ KoboToolbox هي منصة مبتكرة مفتوحة المصدر لجمع الب
 * ربط KoboToolbox بمنصات أخرى
 
 <p class="note">
-للبدء في إنشاء النماذج في KoboToolbox، راجع <a href="https://support.kobotoolbox.org/quick_start.html">دليل البدء السريع</a>.
+للبدء في إنشاء النماذج في KoboToolbox، راجع <a href="https://support.kobotoolbox.org/ar/quick_start.html">دليل البدء السريع</a>.
 </p>
 
 
@@ -27,13 +27,13 @@ KoboToolbox هي منصة مبتكرة مفتوحة المصدر لجمع الب
 
 تتيح واجهة إنشاء النماذج البديهية في KoboToolbox (KoboToolbox Formbuilder) للمستخدمين إنشاء نماذج بأنواع أسئلة مختلفة ومنطق نماذج متقدم وترجمات. يمكن أيضاً إنشاء النماذج وتحميلها باستخدام XLSForm.
 
-* **أنواع الأسئلة:** اختر من بين أكثر من 25 نوعاً من [أنواع الأسئلة](https://support.kobotoolbox.org/question_types.html) النوعية والكمية، بما في ذلك النص والاختيار من متعدد والوسائط ونظام تحديد المواقع العالمي (GPS).
-* **منطق النماذج:** أضف [منطق التخطي](https://support.kobotoolbox.org/skip_logic.html) و[الحسابات](https://support.kobotoolbox.org/calculate_questions.html) و[معايير التحقق](https://support.kobotoolbox.org/validation_criteria.html) للحصول على بيانات عالية الجودة.
-* **الترجمات:** قم بتضمين [ترجمات](https://support.kobotoolbox.org/language_dashboard.html) النماذج بسهولة بمئات اللغات المختلفة.
-* **XLSForm:** لإنشاء نماذج أكثر تعقيداً، استخدم [XLSForm](https://support.kobotoolbox.org/getting_started_xlsform.html) في برنامج جداول البيانات المفضل لديك، وقم بتحميله إلى KoboToolbox، وقم بتحريره مباشرة في واجهة إنشاء النماذج.
+* **أنواع الأسئلة:** اختر من بين أكثر من 25 نوعاً من [أنواع الأسئلة](question_types.md) النوعية والكمية، بما في ذلك النص والاختيار من متعدد والوسائط ونظام تحديد المواقع العالمي (GPS).
+* **منطق النماذج:** أضف [منطق التخطي](skip_logic.md) و[الحسابات](calculate_questions.md) و[معايير التحقق](validation_criteria.md) للحصول على بيانات عالية الجودة.
+* **الترجمات:** قم بتضمين [ترجمات](language_dashboard.md) النماذج بسهولة بمئات اللغات المختلفة.
+* **XLSForm:** لإنشاء نماذج أكثر تعقيداً، استخدم [XLSForm](getting_started_xlsform.md) في برنامج جداول البيانات المفضل لديك، وقم بتحميله إلى KoboToolbox، وقم بتحريره مباشرة في واجهة إنشاء النماذج.
 
 <p class="note">
-للبدء في إنشاء النماذج في KoboToolbox، راجع <a href="https://support.kobotoolbox.org/formbuilder.html">البدء في استخدام واجهة إنشاء النماذج في KoboToolbox</a>.
+للبدء في إنشاء النماذج في KoboToolbox، راجع <a href="formbuilder.html">البدء في استخدام واجهة إنشاء النماذج في KoboToolbox</a>.
 </p>
 
 ![Formbuilder](/images/welcome/formbuilder.png)
@@ -44,23 +44,23 @@ KoboToolbox هي منصة مبتكرة مفتوحة المصدر لجمع الب
 قم بتوحيد البيانات وتبسيط إنشاء النماذج من خلال إنشاء قوالب النماذج واستخدام الأسئلة من مكتبة المجموعات العامة.
 
 * **مكتبتي:** قم بإنشاء وتنظيم وحفظ الأسئلة والقوالب المخصصة في مكتبتك.
-* **المجموعات العامة:** استخدم سؤالاً أو مجموعة من الأسئلة أو قالب نموذج كامل من [مكتبة المجموعات العامة](https://support.kobotoolbox.org/using_public_collections.html) في نموذجك وقم بتخصيصه حسب الحاجة. الأسئلة والقوالب في المكتبة العامة مساهمة من مستخدمين آخرين ومتاحة للجميع.
+* **المجموعات العامة:** استخدم سؤالاً أو مجموعة من الأسئلة أو قالب نموذج كامل من [مكتبة المجموعات العامة](using_public_collections.md) في نموذجك وقم بتخصيصه حسب الحاجة. الأسئلة والقوالب في المكتبة العامة مساهمة من مستخدمين آخرين ومتاحة للجميع.
 
 <p class="note">
-لمزيد من المعلومات حول مكتبة الأسئلة في KoboToolbox، راجع <a href="https://support.kobotoolbox.org/question_library.html">استخدام مكتبة الأسئلة</a>.
+لمزيد من المعلومات حول مكتبة الأسئلة في KoboToolbox، راجع <a href="question_library.html">استخدام مكتبة الأسئلة</a>.
 </p>
 
 ![Library](/images/welcome/library.png)
 
 ## جمع البيانات
 
-اجمع البيانات دون اتصال بالإنترنت أو عبر الإنترنت [على أي جهاز](https://support.kobotoolbox.org/data-collection-tools.html) باستخدام النماذج الإلكترونية وتطبيق KoboCollect.
+اجمع البيانات دون اتصال بالإنترنت أو عبر الإنترنت [على أي جهاز](data-collection-tools.md) باستخدام النماذج الإلكترونية وتطبيق KoboCollect.
 
-* **النماذج الإلكترونية:** يستخدم KoboToolbox برنامج [نماذج Enketo الإلكترونية](https://support.kobotoolbox.org/data_through_webforms.html) مفتوح المصدر لجمع البيانات من أي متصفح إنترنت. يمكن استخدام النماذج الإلكترونية على أجهزة الكمبيوتر المحمولة أو المكتبية أو الأجهزة المحمولة، عبر الإنترنت أو دون اتصال.
-* **KoboCollect:** استخدم تطبيق [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) لنظام Android لجمع البيانات على الأجهزة المحمولة. يمكن تنزيل النماذج إلى KoboCollect من حساب KoboToolbox لجمع البيانات دون اتصال بالإنترنت. يمكن بعد ذلك تحميل البيانات المجمعة في KoboCollect إلى KoboToolbox. قم بتنزيل تطبيق KoboCollect مجاناً من [Google Play](https://play.google.com/store/apps/details?id=org.koboc.collect.android).
+* **النماذج الإلكترونية:** يستخدم KoboToolbox برنامج [نماذج Enketo الإلكترونية](data_through_webforms.md) مفتوح المصدر لجمع البيانات من أي متصفح إنترنت. يمكن استخدام النماذج الإلكترونية على أجهزة الكمبيوتر المحمولة أو المكتبية أو الأجهزة المحمولة، عبر الإنترنت أو دون اتصال.
+* **KoboCollect:** استخدم تطبيق [KoboCollect](kobocollect_on_android_latest.md) لنظام Android لجمع البيانات على الأجهزة المحمولة. يمكن تنزيل النماذج إلى KoboCollect من حساب KoboToolbox لجمع البيانات دون اتصال بالإنترنت. يمكن بعد ذلك تحميل البيانات المجمعة في KoboCollect إلى KoboToolbox. قم بتنزيل تطبيق KoboCollect مجاناً من [Google Play](https://play.google.com/store/apps/details?id=org.koboc.collect.android).
 
 <p class="note">
-لمعرفة المزيد حول استخدام الأجهزة المحمولة لجمع البيانات، راجع <a href="https://support.kobotoolbox.org/devices_for_data_collection.html">الأجهزة الموصى بها لجمع البيانات</a>.
+لمعرفة المزيد حول استخدام الأجهزة المحمولة لجمع البيانات، راجع <a href="devices_for_data_collection.html">الأجهزة الموصى بها لجمع البيانات</a>.
 </p>
 
 ![Enketo](/images/welcome/enketo.png)
@@ -70,9 +70,9 @@ KoboToolbox هي منصة مبتكرة مفتوحة المصدر لجمع الب
 
 تأكد من جودة البيانات واستخلص الرؤى باستخدام طرق عرض الجداول المرنة وخصائص البيانات النوعية المدمجة في منصة KoboToolbox.
 
-* **طرق عرض الجداول:** قم بتخصيص طرق العرض وعرض البيانات بلغات متعددة و[التحقق من صحة البيانات المقدمة](https://support.kobotoolbox.org/record_validation.html) في الوقت الفعلي.
-* **النسخ والترجمة الآلية:** استخدم الخصائص الآلية [للنسخ والترجمة](https://support.kobotoolbox.org/transcription-translation.html) للردود الصوتية والبيانات النوعية.
-* **التحليل النوعي:** استخدم خصائص [التحليل النوعي](https://support.kobotoolbox.org/qualitative_analysis.html) لتحديد المواضيع والأنماط في الردود الصوتية.
+* **طرق عرض الجداول:** قم بتخصيص طرق العرض وعرض البيانات بلغات متعددة و[التحقق من صحة البيانات المقدمة](record_validation.md) في الوقت الفعلي.
+* **النسخ والترجمة الآلية:** استخدم الخصائص الآلية [للنسخ والترجمة](transcription-translation.md) للردود الصوتية والبيانات النوعية.
+* **التحليل النوعي:** استخدم خصائص [التحليل النوعي](qualitative_analysis.md) لتحديد المواضيع والأنماط في الردود الصوتية.
 
 ![image](/images/qualitative_analysis/Analyze.gif)
 
@@ -81,8 +81,8 @@ KoboToolbox هي منصة مبتكرة مفتوحة المصدر لجمع الب
 
 يسهل KoboToolbox تحديد الرؤى ومشاركتها من خلال التقارير وتصوير البيانات بصرياً وخيارات التنزيل.
 
-* **التقارير المخصصة:** قم بتصوير البيانات بصرياً باستخدام [التقارير المخصصة](https://support.kobotoolbox.org/creating_custom_reports.html) والخرائط التفاعلية.
-* **تنزيل البيانات:** [قم بتنزيل وتصدير البيانات](https://support.kobotoolbox.org/export_download.html) بتنسيقات متعددة، بما في ذلك XLS وCSV وKML وZIP وGeoJSON.
+* **التقارير المخصصة:** قم بتصوير البيانات بصرياً باستخدام [التقارير المخصصة](creating_custom_reports.md) والخرائط التفاعلية.
+* **تنزيل البيانات:** [قم بتنزيل وتصدير البيانات](export_download.md) بتنسيقات متعددة، بما في ذلك XLS وCSV وKML وZIP وGeoJSON.
 
 ![Reports](/images/welcome/reports.png)
 
@@ -91,10 +91,10 @@ KoboToolbox هي منصة مبتكرة مفتوحة المصدر لجمع الب
 
 قم بإدارة استطلاع واحد أو مئات الاستطلاعات بسهولة باستخدام خصائص إدارة المشاريع في KoboToolbox، بما في ذلك مراقبة المشاريع وأذونات المشاركة وإدارة الحالات.
 
-* **نظرة عامة على المشروع:** راقب البيانات المقدمة الواردة و[الوصول إلى الحساب](https://support.kobotoolbox.org/activity_logs.html#access-logs) و[نشاط المشروع](https://support.kobotoolbox.org/activity_logs.html#project-history-logs).
-* **أذونات المشاركة:** شارك المشاريع مع أعضاء الفريق وتحكم في من يمكنه تقديم البيانات وعرضها وتحريرها من خلال تعيين [أذونات مختلفة على مستوى المستخدم](https://support.kobotoolbox.org/managing_permissions.html).
-* **إدارة الحالات:** اربط المشاريع باستخدام [مرفقات البيانات الديناميكية](https://support.kobotoolbox.org/dynamic_data_attachment.html) لجمع وإدارة البيانات الطولية.
-* **إدارة الفريق:** قم بمركزة [إدارة المشاريع والمستخدمين](https://support.kobotoolbox.org/getting_started_organization_feature.html) لتحسين الإشراف والتعاون عبر الفرق الكبيرة والموزعة.
+* **نظرة عامة على المشروع:** راقب البيانات المقدمة الواردة و[الوصول إلى الحساب](https://support.kobotoolbox.org/ar/activity_logs.html#access-logs) و[نشاط المشروع](https://support.kobotoolbox.org/ar/activity_logs.html#project-history-logs).
+* **أذونات المشاركة:** شارك المشاريع مع أعضاء الفريق وتحكم في من يمكنه تقديم البيانات وعرضها وتحريرها من خلال تعيين [أذونات مختلفة على مستوى المستخدم](managing_permissions.md).
+* **إدارة الحالات:** اربط المشاريع باستخدام [مرفقات البيانات الديناميكية](dynamic_data_attachment.md) لجمع وإدارة البيانات الطولية.
+* **إدارة الفريق:** قم بمركزة [إدارة المشاريع والمستخدمين](getting_started_organization_feature.md) لتحسين الإشراف والتعاون عبر الفرق الكبيرة والموزعة.
 
 
 ![Reports](/images/welcome/projects.png)
@@ -103,8 +103,8 @@ KoboToolbox هي منصة مبتكرة مفتوحة المصدر لجمع الب
 
 اربط بيانات المشروع عبر منصات مختلفة وادمج بيانات KoboToolbox مع برامج أخرى مثل Excel وPower BI.
 
-* **واجهة برمجة التطبيقات KoboToolbox:** استخدم [واجهة برمجة التطبيقات](https://support.kobotoolbox.org/api.html) (API) لإنشاء لوحات معلومات تفاعلية وتصوير البيانات بصرياً باستخدام برامج أخرى.
-* **الصادرات المتزامنة:** شارك البيانات عبر تطبيقات مختلفة دون تنزيل أي ملفات باستخدام [الصادرات المتزامنة](https://support.kobotoolbox.org/synchronous_exports.html).
-* **خدمات REST:** اربط مشروعك ببرامج خارجية باستخدام [خدمات REST](https://support.kobotoolbox.org/rest_services.html).
+* **واجهة برمجة التطبيقات KoboToolbox:** استخدم [واجهة برمجة التطبيقات](api.md) (API) لإنشاء لوحات معلومات تفاعلية وتصوير البيانات بصرياً باستخدام برامج أخرى.
+* **الصادرات المتزامنة:** شارك البيانات عبر تطبيقات مختلفة دون تنزيل أي ملفات باستخدام [الصادرات المتزامنة](synchronous_exports.md).
+* **خدمات REST:** اربط مشروعك ببرامج خارجية باستخدام [خدمات REST](rest_services.md).
 
 ![Data management](/images/welcome/dashboard-development.png)

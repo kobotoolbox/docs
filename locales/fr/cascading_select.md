@@ -55,7 +55,7 @@ Pour mettre à jour vos questions de sélection en cascade à l'aide de XLSForm 
 3. Importez à nouveau le XLSForm mis à jour dans KoboToolbox en cliquant sur <strong>Remplacer le formulaire</strong> et en important votre fichier modifié.
 
 <p class="note">
-    Pour en savoir plus sur l'ajout de questions de sélection en cascade et l'utilisation de filtres de choix dans XLSForm, consultez la <a href="https://xlsform.org/en/#cascading-selects">documentation XLSForm</a>. Pour plus d'informations sur l'utilisation de XLSForm avec KoboToolbox, consultez <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">Premiers pas avec XLSForm</a>. 
+    Pour en savoir plus sur l'ajout de questions de sélection en cascade et l'utilisation de filtres de choix dans XLSForm, consultez la <a href="https://xlsform.org/en/#cascading-selects">documentation XLSForm</a>. Pour plus d'informations sur l'utilisation de XLSForm avec KoboToolbox, consultez <a href="getting_started_xlsform.html">Premiers pas avec XLSForm</a>. 
 </p>
 
 ## Dépannage

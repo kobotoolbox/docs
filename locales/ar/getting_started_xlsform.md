@@ -78,7 +78,7 @@ XLSForm هو معيار لتطوير النماذج باستخدام Microsoft E
 
 4. بالنسبة للسؤال الثاني، **ما جنس طفلك؟**، أدخل **select_one sex** في عمود `type` من ورقة عمل survey.
    - **select_one** هو نوع السؤال الذي يسمح للمستخدمين باختيار خيار واحد فقط من قائمة خيارات الإجابة.
-   - **sex** هو اسم قائمة خيارات الإجابة، والذي يتم تحديده في ورقة عمل choices (انظر [إضافة خيارات الإجابة](https://support.kobotoolbox.org/getting_started_xlsform.html#adding-response-choices)).
+   - **sex** هو اسم قائمة خيارات الإجابة، والذي يتم تحديده في ورقة عمل choices (انظر [إضافة خيارات الإجابة](https://support.kobotoolbox.org/ar/getting_started_xlsform.html#adding-response-choices)).
 5. في عمود `name`، اكتب **baby_sex**.
 6. في عمود `label`، اكتب **What is your baby's sex?**
 
@@ -171,7 +171,7 @@ XLSForm هو معيار لتطوير النماذج باستخدام Microsoft E
 4. انقر على زر <i class="k-icon k-icon-view"></i> **معاينة**.
 
 <p class="note">
-  <b>ملاحظة:</b> لمعرفة كيفية استيراد XLSForm الخاص بك عبر عنوان URL، راجع مقال الدعم <a class="reference" href="https://support.kobotoolbox.org/xls_url.html">استيراد XLSForm عبر عنوان URL</a>.
+  <b>ملاحظة:</b> لمعرفة كيفية استيراد XLSForm الخاص بك عبر عنوان URL، راجع مقال الدعم <a class="reference" href="https://support.kobotoolbox.org/ar/xls_url.html">استيراد XLSForm عبر عنوان URL</a>.
 </p>
 
 ## تنزيل XLSForm من KoboToolbox

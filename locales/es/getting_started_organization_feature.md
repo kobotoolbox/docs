@@ -24,7 +24,7 @@ Un aspecto clave de la función de manejo de equipos es que la propiedad de proy
 Al centralizar la propiedad de proyectos, la función de manejo de equipos te brinda mayor supervisión y un manejo efectivo del equipo.
 
 <p class="note">
-  <b>Nota:</b> Esta funcionalidad solo afecta la propiedad de proyectos. No afecta los permisos de compartir proyectos. Los permisos de compartir configurados previamente no se verán afectados cuando la propiedad del proyecto sea transferida a un Equipo. Si tienes permisos de manejo para un proyecto, continuarás teniendo esos permisos y podrás compartir el proyecto como de costumbre. Para más información, consulta <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a>.
+  <b>Nota:</b> Esta funcionalidad solo afecta la propiedad de proyectos. No afecta los permisos de compartir proyectos. Los permisos de compartir configurados previamente no se verán afectados cuando la propiedad del proyecto sea transferida a un Equipo. Si tienes permisos de manejo para un proyecto, continuarás teniendo esos permisos y podrás compartir el proyecto como de costumbre. Para más información, consulta <a class="reference external" href="https://support.kobotoolbox.org/es/managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a>.
 </p>
 
 ## Roles para Equipos
@@ -33,7 +33,7 @@ Hay tres roles diferentes para miembros en un Equipo, cada uno con funciones y c
 
 1. **Propietario/a:** El/la Propietario/a puede ver y manejar todos los proyectos y usuarios/as en el Equipo, así como el Plan y la Configuración. Cada Equipo en KoboToolbox puede tener solo un/a Propietario/a.
    - **Vistas y manejo de proyectos:** El/la Propietario/a puede ver todos los proyectos del Equipo y tiene permisos completos de manejo de proyectos.
-   - **Transferencias de propiedad de proyectos:** El/la Propietario/a puede [transferir la propiedad](https://support.kobotoolbox.org/project_sharing_settings.html#transferring-ownership-of-a-project) de cualquiera de los proyectos del Equipo a un/a usuario/a fuera del Equipo.
+   - **Transferencias de propiedad de proyectos:** El/la Propietario/a puede [transferir la propiedad](https://support.kobotoolbox.org/es/project_sharing_settings.html#transferring-ownership-of-a-project) de cualquiera de los proyectos del Equipo a un/a usuario/a fuera del Equipo.
    - **Manejo de usuarios/as:** El/la Propietario/a puede agregar o remover miembros del Equipo y asignar diferentes roles.
    - **Manejo de Plan y uso:** El/la Propietario/a puede manejar el Plan y la Configuración del Equipo y ver la página de Uso.
 

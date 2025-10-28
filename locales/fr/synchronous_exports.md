@@ -4,7 +4,7 @@
 
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-KoboToolbox propose deux méthodes principales pour accéder à vos données : les exports asynchrones et synchrones. La méthode asynchrone standard consiste à [télécharger manuellement des fichiers de données](https://support.kobotoolbox.org/export_download.html) contenant toutes les soumissions jusqu'au moment du téléchargement. En revanche, les exports synchrones permettent l'intégration automatique de vos données KoboToolbox avec des applications externes telles que Microsoft Power BI, Excel ou Google Sheets.
+KoboToolbox propose deux méthodes principales pour accéder à vos données : les exports asynchrones et synchrones. La méthode asynchrone standard consiste à [télécharger manuellement des fichiers de données](export_download.md) contenant toutes les soumissions jusqu'au moment du téléchargement. En revanche, les exports synchrones permettent l'intégration automatique de vos données KoboToolbox avec des applications externes telles que Microsoft Power BI, Excel ou Google Sheets.
 
 Avec les exports synchrones, vos données se mettent à jour automatiquement à mesure que de nouvelles soumissions sont reçues, éliminant ainsi le besoin d'actualisation manuelle. Cette méthode fournit un fichier CSV ou XLSX, configuré avec vos paramètres d'export prédéfinis, qui peuvent inclure les libellés de questions, les langues, les filtres et les données de groupes répétés.
 
@@ -23,8 +23,8 @@ Cet article couvre les étapes suivantes :
 Pour générer des exports synchrones, vous devez d'abord créer un export nommé pour votre projet en suivant ces étapes :
 
 1. Dans votre projet KoboToolbox, accédez à l'onglet **DONNÉES > Téléchargements**.
-2. Ajustez les [paramètres d'export](https://support.kobotoolbox.org/export_download.html) selon vos besoins.
-3. Cliquez sur **Options avancées** pour [personnaliser les données](https://support.kobotoolbox.org/advanced_export.html) à exporter.
+2. Ajustez les [paramètres d'export](export_download.md) selon vos besoins.
+3. Cliquez sur **Options avancées** pour [personnaliser les données](advanced_export.md) à exporter.
 4. Choisissez **Enregistrer la sélection sous…** et fournissez un nom pour votre export.
 5. Cliquez sur **Exporter** pour enregistrer ces paramètres.
 
@@ -36,7 +36,7 @@ Pour récupérer le lien d'export synchrone, vous aurez besoin des éléments su
 - **URL du serveur :** L'URL du serveur que vous utilisez (`kf.kobotoolbox.org` pour Le serveur KoboToolbox mondial, `eu.kobotoolbox.org` pour Le serveur KoboToolbox Union européenne, ou `[votre organisation].kobotoolbox.org` pour les serveurs privés).
 
 <p class="note">
-    Pour plus d'informations sur la récupération de l'URL du serveur et de l'UID de l'actif du projet, consultez <a href="https://support.kobotoolbox.org/api.html">Premiers pas avec l'API</a>.
+    Pour plus d'informations sur la récupération de l'URL du serveur et de l'UID de l'actif du projet, consultez <a href="api.html">Premiers pas avec l'API</a>.
 </p>
 
 Pour récupérer le lien d'export, suivez ces étapes :
@@ -60,9 +60,9 @@ Pour récupérer le lien d'export, suivez ces étapes :
 Après avoir récupéré le lien d'export synchrone, vous pouvez connecter vos données à votre application externe préférée. La méthode d'intégration du lien d'export synchrone variera selon l'application.
 
 <p class="note">
-    Pour apprendre à connecter vos données à Power BI afin de créer des tableaux de bord personnalisés, consultez <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Connexion de KoboToolbox à Power BI</a>. 
+    Pour apprendre à connecter vos données à Power BI afin de créer des tableaux de bord personnalisés, consultez <a href="pulling_data_into_powerbi.html">Connexion de KoboToolbox à Power BI</a>. 
     <br><br>
-    Pour apprendre à connecter vos données à Microsoft Excel, consultez <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connexion de KoboToolbox à Microsoft Excel</a>.
+    Pour apprendre à connecter vos données à Microsoft Excel, consultez <a href="pulling_data_into_excelquery.html">Connexion de KoboToolbox à Microsoft Excel</a>.
 </p>
 
 ### Authentification
@@ -72,7 +72,7 @@ De nombreuses applications externes peuvent se connecter à vos données KoboToo
 Pour connecter votre projet sans authentification (par exemple, à Google Sheets), vous devrez vous assurer que le paramètre « Tout le monde peut voir les soumissions faites à ce formulaire » est coché dans **PARAMÈTRES > Partage**.
 
 <p class="note">
-    Pour plus d'informations sur le partage de projets, consultez <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Partage de projets avec les paramètres au niveau du projet</a>.
+    Pour plus d'informations sur le partage de projets, consultez <a href="project_sharing_settings.html">Partage de projets avec les paramètres au niveau du projet</a>.
 </p>
 
 Pour les projets contenant des données sensibles ou privées, l'option « Tout le monde peut voir les soumissions faites à ce formulaire » doit rester décochée. Dans ces cas, envisagez d'utiliser uniquement des applications prenant en charge les requêtes authentifiées.
@@ -80,7 +80,7 @@ Pour les projets contenant des données sensibles ou privées, l'option « Tout 
 Lors de l'utilisation d'applications prenant en charge les requêtes authentifiées, telles que Power BI, il vous sera demandé une authentification de base avec votre nom d'utilisateur et votre mot de passe ou un jeton (également appelé clé API) pour accéder aux données. Votre clé API se trouve dans vos **PARAMÈTRES DU COMPTE** sous l'onglet **Sécurité**.
 
 <p class="note">
-    Pour plus d'informations sur la clé API, consultez <a href="https://support.kobotoolbox.org/api.html">Premiers pas avec l'API</a>.
+    Pour plus d'informations sur la clé API, consultez <a href="api.html">Premiers pas avec l'API</a>.
 </p>
 
 ## Limitations

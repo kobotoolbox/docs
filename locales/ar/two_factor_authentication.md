@@ -92,17 +92,17 @@
 
 ## استخدام KoboCollect مع المصادقة الثنائية
 
-تضيف المصادقة الثنائية طبقة حماية للحسابات التي تحتوي على بيانات حساسة. قد يشكل استخدام هذه الحسابات لجمع البيانات مخاطر كبيرة. لذلك، عند تنشيط المصادقة الثنائية لحسابك، لن تتمكن بعد الآن من تنزيل النماذج أو إرسال البيانات إلى [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) من هذا الحساب. ستتلقى رسالة خطأ عند محاولة تنزيل نماذج جديدة داخل التطبيق، مثل "الخادم يتطلب المصادقة: اسم مستخدم أو كلمة مرور غير صالحة للخادم."
+تضيف المصادقة الثنائية طبقة حماية للحسابات التي تحتوي على بيانات حساسة. قد يشكل استخدام هذه الحسابات لجمع البيانات مخاطر كبيرة. لذلك، عند تنشيط المصادقة الثنائية لحسابك، لن تتمكن بعد الآن من تنزيل النماذج أو إرسال البيانات إلى [KoboCollect](kobocollect_on_android_latest.md) من هذا الحساب. ستتلقى رسالة خطأ عند محاولة تنزيل نماذج جديدة داخل التطبيق، مثل "الخادم يتطلب المصادقة: اسم مستخدم أو كلمة مرور غير صالحة للخادم."
 
 لجمع البيانات باستخدام KoboCollect عند تنشيط المصادقة الثنائية، نوصي بأي من الطرق التالية:
 
-1. إنشاء حساب KoboToolbox منفصل لجمع البيانات واختبار النماذج لاستخدامه مع KoboCollect. شارك نموذجك (نماذجك) مع هذا الحساب الجديد وقيد [أذوناته](https://support.kobotoolbox.org/managing_permissions.html) على **إضافة إرساليات** لتحقيق أقصى قدر من الأمان.
-2. [تمكين](https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication) "السماح بالإرساليات إلى هذا النموذج بدون اسم مستخدم وكلمة مرور" لنماذجك، و[الاتصال بـ KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) باستخدام بيانات الاعتماد التالية:
+1. إنشاء حساب KoboToolbox منفصل لجمع البيانات واختبار النماذج لاستخدامه مع KoboCollect. شارك نموذجك (نماذجك) مع هذا الحساب الجديد وقيد [أذوناته](managing_permissions.md) على **إضافة إرساليات** لتحقيق أقصى قدر من الأمان.
+2. [تمكين](https://support.kobotoolbox.org/ar/project_sharing_settings.html#allowing-submissions-without-authentication) "السماح بالإرساليات إلى هذا النموذج بدون اسم مستخدم وكلمة مرور" لنماذجك، و[الاتصال بـ KoboCollect](kobocollect_on_android_latest.md) باستخدام بيانات الاعتماد التالية:
     - **عنوان URL**: `https://[kobocollect_url]/[username]`
     - **اسم المستخدم**: (فارغ)
     - **كلمة المرور**: (فارغة)
 
-تسمح الطريقة الثانية للمستخدمين بتنزيل وإرسال البيانات إلى أي نماذج مشتركة مع `username` التي لا [تتطلب مصادقة](https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication).
+تسمح الطريقة الثانية للمستخدمين بتنزيل وإرسال البيانات إلى أي نماذج مشتركة مع `username` التي لا [تتطلب مصادقة](https://support.kobotoolbox.org/ar/project_sharing_settings.html#allowing-submissions-without-authentication).
 
 ## استكشاف الأخطاء وإصلاحها
 <details>

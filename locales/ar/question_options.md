@@ -20,7 +20,7 @@
 
 ![التلميح الإرشادي في نماذج Enketo الإلكترونية](/images/question_options/guidance_hint_enketo.gif)
 
-في [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html)، لا تُعرض التلميحات الإرشادية بشكل افتراضي. يمكنك [اختيار كيفية عرض التلميحات الإرشادية](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) في نماذجك بالانتقال إلى الإعدادات -> إدارة النماذج -> إظهار الإرشادات للأسئلة. هنا لديك 3 خيارات: لا، نعم - تُعرض دائمًا، ونعم - مطوية دائمًا.
+في [KoboCollect](kobocollect_on_android_latest.md)، لا تُعرض التلميحات الإرشادية بشكل افتراضي. يمكنك [اختيار كيفية عرض التلميحات الإرشادية](https://support.kobotoolbox.org/ar/kobocollect_settings.html#form-management-settings) في نماذجك بالانتقال إلى الإعدادات -> إدارة النماذج -> إظهار الإرشادات للأسئلة. هنا لديك 3 خيارات: لا، نعم - تُعرض دائمًا، ونعم - مطوية دائمًا.
 
 ![التلميح الإرشادي في KoboCollect](/images/question_options/guidance_hint_kobocollect.gif)
 

@@ -4,9 +4,9 @@
 
 <iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-تساعدك أدوات معالجة اللغة الطبيعية في KoboToolbox على جمع البيانات النوعية وإدارتها وتحليلها بشكل أكثر فعالية. تتضمن هذه الأدوات النسخ التلقائي من الصوت إلى النص والترجمة الآلية، مع التحليل النوعي الآلي القادم قريبًا. يتم إضافة النسخ الأصلي لملفاتك الصوتية وجميع النصوص المترجمة كأعمدة بيانات جديدة في جدول البيانات ويمكن [تنزيلها](https://support.kobotoolbox.org/export_download.html) جنبًا إلى جنب مع بيانات الاستبيان الخاصة بك.
+تساعدك أدوات معالجة اللغة الطبيعية في KoboToolbox على جمع البيانات النوعية وإدارتها وتحليلها بشكل أكثر فعالية. تتضمن هذه الأدوات النسخ التلقائي من الصوت إلى النص والترجمة الآلية، مع التحليل النوعي الآلي القادم قريبًا. يتم إضافة النسخ الأصلي لملفاتك الصوتية وجميع النصوص المترجمة كأعمدة بيانات جديدة في جدول البيانات ويمكن [تنزيلها](export_download.md) جنبًا إلى جنب مع بيانات الاستبيان الخاصة بك.
 
-لاستخدام هذه الميزات، قم أولاً بجمع الردود الصوتية في النموذج الخاص بك باستخدام [نوع سؤال الصوت](https://support.kobotoolbox.org/photo_audio_video_file.html) أو [التسجيلات الصوتية في الخلفية](https://support.kobotoolbox.org/recording-interviews.html).
+لاستخدام هذه الميزات، قم أولاً بجمع الردود الصوتية في النموذج الخاص بك باستخدام [نوع سؤال الصوت](photo_audio_video_file.md) أو [التسجيلات الصوتية في الخلفية](recording-interviews.md).
 
 
 <p class="note">

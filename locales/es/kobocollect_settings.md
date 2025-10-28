@@ -4,7 +4,7 @@
 
 <iframe src="https://www.youtube.com/embed/Qeky3aomiWI?si=M1l_jorFQEDacX2A" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-KoboCollect es una aplicación gratuita y de código abierto de KoboToolbox diseñada para la recolección de datos en dispositivos móviles Android. Antes de comenzar, [instala y configura](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) la aplicación de KoboCollect. Una vez instalada y configurada, puedes personalizar la aplicación según las necesidades de tu proyecto o usuario/a. Los ajustes del proyecto te permiten:
+KoboCollect es una aplicación gratuita y de código abierto de KoboToolbox diseñada para la recolección de datos en dispositivos móviles Android. Antes de comenzar, [instala y configura](kobocollect_on_android_latest.md) la aplicación de KoboCollect. Una vez instalada y configurada, puedes personalizar la aplicación según las necesidades de tu proyecto o usuario/a. Los ajustes del proyecto te permiten:
 
 - Ajustar la **interfaz de usuario/a** (por ejemplo, idioma, tamaño de fuente, tema)
 - Configurar los **ajustes del mapa** para preguntas basadas en ubicación
@@ -22,7 +22,7 @@ Para acceder al menú de ajustes:
 </p>
 
 ## Ajustes de visualización del proyecto
-En la aplicación de KoboCollect, puedes [conectarte a múltiples cuentas de KoboToolbox](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-multiple-projects-in-kobocollect). Las cuentas de usuario/a se llaman **Proyectos** en KoboCollect. 
+En la aplicación de KoboCollect, puedes [conectarte a múltiples cuentas de KoboToolbox](https://support.kobotoolbox.org/es/kobocollect_on_android_latest.html#setting-up-multiple-projects-in-kobocollect). Las cuentas de usuario/a se llaman **Proyectos** en KoboCollect. 
 
 Para personalizar cómo se muestra cada proyecto para facilitar el reconocimiento y el cambio entre ellos, puedes editar los ajustes de **visualización del proyecto**. Estos cambios solo afectan cómo aparece el proyecto en la interfaz del dispositivo y no afectan los datos ni otros dispositivos.
 
@@ -45,7 +45,7 @@ Los ajustes de interfaz de usuario/a te permiten ajustar la apariencia de la apl
 
 
 <p class="note">
-    <strong>Nota:</strong> Cambiar el idioma solo establece el idioma para la interfaz de usuario/a de la aplicación y no para el formulario. Para formularios con <a href="https://support.kobotoolbox.org/language_dashboard.html">múltiples idiomas</a>, el idioma del formulario se establece durante la entrada de datos.
+    <strong>Nota:</strong> Cambiar el idioma solo establece el idioma para la interfaz de usuario/a de la aplicación y no para el formulario. Para formularios con <a href="language_dashboard.html">múltiples idiomas</a>, el idioma del formulario se establece durante la entrada de datos.
 </p>
 
 ## Ajustes de mapas
@@ -73,13 +73,13 @@ Los ajustes de manejo de formularios controlan cómo se manejan los formularios 
 | Procesamiento de restricciones | Cuando tus formularios incluyen restricciones (criterios de validación), elige entre validar respuestas al pasar a la siguiente página o al final del formulario. |
 | Video de alta resolución        | Habilita o deshabilita las grabaciones de video de alta resolución al tomar videos a través de la aplicación. |
 | Tamaño de imagen      | Define el tamaño de imagen preferido, desde muy pequeño hasta grande. Esto puede ayudar a conservar espacio de almacenamiento en el servidor. |
-| Mostrar orientación para preguntas         | Define cómo deben mostrarse las [sugerencias de orientación](https://support.kobotoolbox.org/question_options.html?highlight=guidance+hint#guidance-hint-optional) dentro de tu formulario. |
+| Mostrar orientación para preguntas         | Define cómo deben mostrarse las [sugerencias de orientación](https://support.kobotoolbox.org/es/question_options.html?highlight=guidance+hint#guidance-hint-optional) dentro de tu formulario. |
 | Usar aplicación externa para grabación de audio        | Por defecto, se usa una grabadora interna para la grabación de audio. Habilita este ajuste para usar una aplicación de audio externa en su lugar. |
 | Finalizar formularios al importar            | Cuando está habilitado, los formularios que se traen a KoboCollect desde fuera de la aplicación (por ejemplo, copiados desde el almacenamiento del dispositivo o tarjeta SD) se marcan automáticamente como <strong>Finalizados</strong>, por lo que están listos para enviar sin requerir finalización manual. |
 
 
 <p class="note">
-    <strong>Nota:</strong> Se recomienda configurar proyectos para <strong>actualizaciones automáticas de formularios</strong> en proyectos con ediciones frecuentes de formularios o <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">archivos adjuntos de datos dinámicos</a>. Esto elimina la necesidad de descargar manualmente las actualizaciones de formularios. Sin embargo, las actualizaciones automáticas más frecuentes agotarán la batería de tu dispositivo más rápidamente.
+    <strong>Nota:</strong> Se recomienda configurar proyectos para <strong>actualizaciones automáticas de formularios</strong> en proyectos con ediciones frecuentes de formularios o <a href="dynamic_data_attachment.html">archivos adjuntos de datos dinámicos</a>. Esto elimina la necesidad de descargar manualmente las actualizaciones de formularios. Sin embargo, las actualizaciones automáticas más frecuentes agotarán la batería de tu dispositivo más rápidamente.
 </p>
 
 ## Ajustes de identidad de usuario/a y dispositivo
@@ -103,7 +103,7 @@ Los ajustes de manejo del proyecto proporcionan herramientas para gestionar y re
 
 | **Ajuste**&emsp;&emsp;&emsp;    | **Descripción**                                |
 | :----------------- | :--------------------------------------------- |
-|Reconfigurar con código QR &emsp;&emsp; | Reconfigura tus ajustes de KoboCollect escaneando un código QR de otro proyecto. Ten en cuenta que este enfoque reemplazará el proyecto actual con el nuevo. Aquí también puedes encontrar el código QR para [configurar otro dispositivo](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) con los mismos ajustes. |
+|Reconfigurar con código QR &emsp;&emsp; | Reconfigura tus ajustes de KoboCollect escaneando un código QR de otro proyecto. Ten en cuenta que este enfoque reemplazará el proyecto actual con el nuevo. Aquí también puedes encontrar el código QR para [configurar otro dispositivo](https://support.kobotoolbox.org/es/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) con los mismos ajustes. |
 | Restablecer | Restablece ajustes específicos, como borrar formularios guardados, datos en caché o capas de mapas, sin afectar otras partes de la aplicación. |
 | Eliminar | Elimina todos los datos relacionados con el proyecto del dispositivo, incluyendo formularios en blanco, datos enviados y ajustes, lo cual puede ser útil al retirar un dispositivo o prepararlo para un/a nuevo/a usuario/a. |
 

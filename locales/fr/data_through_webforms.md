@@ -14,7 +14,7 @@ prises en charge sur tous les appareils.
 
 ## Pourquoi ai-je besoin de formulaires Web au lieu de l'application Android KoboCollect ?
 
-Vous utiliserez toujours les formulaires Web Enketo si vous n'utilisez pas [l'application KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) sur un
+Vous utiliserez toujours les formulaires Web Enketo si vous n'utilisez pas [l'application KoboCollect](kobocollect_on_android_latest.md) sur un
 appareil Android pour la collecte de données. Cependant, il existe également certains paramètres d'apparence
 comme likert pour le type de question à choix unique, multiline pour le type de question texte, etc. et des paramètres de style pour la Mise en page et les paramètres de KoboToolbox qui fonctionnent mieux sur les formulaires Web par rapport à l'application KoboCollect.
 

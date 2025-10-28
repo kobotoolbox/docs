@@ -7,7 +7,7 @@
 أداة إنشاء النماذج في KoboToolbox هي أداة سهلة الاستخدام لتصميم ونشر نماذج جمع البيانات. يقدم هذا المقال نظرة عامة أساسية على وظائفها، من إضافة الأسئلة وإدارتها إلى تنظيم النموذج الخاص بك.
 
 <p class="note">
-    لمعرفة كيفية إنشاء نموذج جديد في KoboToolbox، راجع <a href="https://support.kobotoolbox.org/quick_start.html">نظرة عامة على البدء السريع</a> في KoboToolbox.
+    لمعرفة كيفية إنشاء نموذج جديد في KoboToolbox، راجع <a href="https://support.kobotoolbox.org/ar/quick_start.html">نظرة عامة على البدء السريع</a> في KoboToolbox.
 </p>
 
 ## إضافة سؤال
@@ -15,7 +15,7 @@
 لإضافة سؤال إلى النموذج الخاص بك، انقر على زر <i class="k-icon k-icon-plus"></i> الموجود أسفل كل سؤال. أدخل تسمية السؤال الخاص بك وانقر على **Add Question**. ثم،
 [اختر نوع السؤال](question_types.md).
 
-بالنسبة لأنواع الأسئلة [Select One أو Select Many](https://support.kobotoolbox.org/select_one_and_select_many.html)، أضف خيارات الإجابة أسفل السؤال.
+بالنسبة لأنواع الأسئلة [Select One أو Select Many](select_one_and_select_many.md)، أضف خيارات الإجابة أسفل السؤال.
 
 <p class="note">
 <strong>ملاحظة</strong>: بمجرد تحديد نوع السؤال، لا يمكن تغييره في أداة إنشاء النماذج. لتغيير نوع السؤال لسؤال موجود، احذف السؤال وأنشئ سؤالاً جديداً بنفس التسمية.
@@ -38,16 +38,16 @@
 للوصول إلى إعدادات السؤال المتقدمة، انقر على <i class="k-icon-settings"></i> **Settings** في قائمة السؤال على اليمين. هنا، يمكنك إضافة منطق التخطي ومعايير التحقق وتلميحات الإرشاد وجعل السؤال مطلوباً.
 
 <p class="note">
-لمعرفة المزيد حول إعدادات الأسئلة، راجع <a href="https://support.kobotoolbox.org/question_options.html">استخدام خيارات الأسئلة</a>، و<a href="https://support.kobotoolbox.org/skip_logic.html">إضافة منطق التخطي في أداة إنشاء النماذج</a>، و<a href="https://support.kobotoolbox.org/validation_criteria.html">إضافة معايير التحقق في أداة إنشاء النماذج</a>.
+لمعرفة المزيد حول إعدادات الأسئلة، راجع <a href="question_options.html">استخدام خيارات الأسئلة</a>، و<a href="skip_logic.html">إضافة منطق التخطي في أداة إنشاء النماذج</a>، و<a href="validation_criteria.html">إضافة معايير التحقق في أداة إنشاء النماذج</a>.
 </p>
 
 ## إضافة أسئلة إلى المكتبة
 
-لحفظ سؤال لإعادة استخدامه في النماذج المستقبلية، انقر على <i class="k-icon-folder-plus"></i> **Add Question to Library**. سيتم حفظه كنسخة في [مكتبة الأسئلة](https://support.kobotoolbox.org/question_library.html) الخاصة بك. يمكنك تعديل أو حذف السؤال الأصلي في النموذج الخاص بك دون التأثير على النسخة الموجودة في المكتبة.
+لحفظ سؤال لإعادة استخدامه في النماذج المستقبلية، انقر على <i class="k-icon-folder-plus"></i> **Add Question to Library**. سيتم حفظه كنسخة في [مكتبة الأسئلة](question_library.md) الخاصة بك. يمكنك تعديل أو حذف السؤال الأصلي في النموذج الخاص بك دون التأثير على النسخة الموجودة في المكتبة.
 
 ## تجميع الأسئلة
 
-يمكن [تجميع الأسئلة معاً](https://support.kobotoolbox.org/group_repeat.html) لتنظيم النموذج الخاص بك. حدد الأسئلة باستخدام مفتاح **CTRL** (Windows) أو مفتاح **Command** (Mac)، ثم انقر على <i class="k-icon k-icon-group"></i> **Create group with selected questions** في شريط القائمة العلوي الأيسر.
+يمكن [تجميع الأسئلة معاً](group_repeat.md) لتنظيم النموذج الخاص بك. حدد الأسئلة باستخدام مفتاح **CTRL** (Windows) أو مفتاح **Command** (Mac)، ثم انقر على <i class="k-icon k-icon-group"></i> **Create group with selected questions** في شريط القائمة العلوي الأيسر.
 
 ## تغيير ترتيب الأسئلة
 

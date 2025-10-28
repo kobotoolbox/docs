@@ -5,7 +5,7 @@
 KoboToolbox te permite recolectar datos repetidos dentro de un formulario, por ejemplo, al realizar una encuesta de hogares donde se hacen las mismas preguntas a todos/as los/as miembros/as. Este artículo explica cómo visualizar, editar y exportar datos de grupos repetidos, y cómo vincular los datos de grupos repetidos con los datos principales.
 
 <p class="note">
-  Para aprender más sobre cómo configurar grupos repetidos en tus formularios, consulta <a href="https://support.kobotoolbox.org/group_repeat.html">Agrupar preguntas y repetir grupos</a>.
+  Para aprender más sobre cómo configurar grupos repetidos en tus formularios, consulta <a href="group_repeat.html">Agrupar preguntas y repetir grupos</a>.
 </p>
 
 ## Visualizar y editar datos de grupos repetidos
@@ -15,7 +15,7 @@ Puedes visualizar datos repetidos en la tabla de datos, que puedes encontrar en 
 
 También puedes visualizar los datos completos de cualquier envío dado, incluyendo cada repetición de grupos repetidos, haciendo clic en el botón <i class="k-icon-view"></i>**Abrir** a la izquierda de cada envío.
 
-Para editar datos de grupos repetidos, haz clic en el botón <i class="k-icon-edit"></i>**Editar**. Esto abrirá el formulario y te permitirá [editar los datos del formulario](https://support.kobotoolbox.org/howto_edit_single_submissions.html) antes de volver a enviar. La [edición masiva](https://support.kobotoolbox.org/howto_edit_multiple_submissions.html) de datos de grupos repetidos no está actualmente disponible.
+Para editar datos de grupos repetidos, haz clic en el botón <i class="k-icon-edit"></i>**Editar**. Esto abrirá el formulario y te permitirá [editar los datos del formulario](howto_edit_single_submissions.md) antes de volver a enviar. La [edición masiva](howto_edit_multiple_submissions.md) de datos de grupos repetidos no está actualmente disponible.
 
 <p class="note">
   <b>Nota</b>: Los datos de grupos repetidos no se pueden mostrar en las vistas de <b>Informes</b> o <b>Mapa</b> debido a la estructura de datos de los grupos repetidos.
@@ -27,7 +27,7 @@ Para exportar datos de un formulario con grupos repetidos, debes descargar tus d
 ![image](/images/managing_repeat_groups/download.png)
 
 <p class="note"> 
-    Para aprender más sobre cómo exportar tus datos, consulta <a href="https://support.kobotoolbox.org/export_download.html">Exportar y descargar tus datos</a>.
+    Para aprender más sobre cómo exportar tus datos, consulta <a href="export_download.html">Exportar y descargar tus datos</a>.
 </p>
 
 ## Vincular datos de grupos repetidos
@@ -48,5 +48,5 @@ En el ejemplo a continuación, la primera hoja incluye una columna **_index**, e
 Los datos de grupos repetidos se pueden combinar con los datos principales usando diferentes herramientas para análisis de datos. Por ejemplo, en Excel y Power BI, puedes usar [Power Query](https://learn.microsoft.com/en-us/power-query/power-query-what-is-power-query) o [VLOOKUP()](https://support.microsoft.com/en-us/office/vlookup-function-0bbc8083-26fe-4963-8ab8-93a18ad188a1) para combinar datos. En SQL, R, SAS y otros lenguajes de manejo de bases de datos, puedes combinar los conjuntos de datos usando un [left join](https://learn.microsoft.com/en-us/sql/relational-databases/performance/joins?view=sql-server-ver17).
 
 <p class="note">
-  Para aprender más sobre cómo combinar datos de grupos repetidos usando Power Query, consulta <a href="https://support.kobotoolbox.org/merging_dataset_excel_power_query.html?highlight=power+query">Combinar datos individuales con datos de lista a través de Power Query en Excel</a>.<br><br>Para aprender más sobre cómo combinar conjuntos de datos en R, consulta <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">Mutating joins</a>.
+  Para aprender más sobre cómo combinar datos de grupos repetidos usando Power Query, consulta <a href="https://support.kobotoolbox.org/es/merging_dataset_excel_power_query.html?highlight=power+query">Combinar datos individuales con datos de lista a través de Power Query en Excel</a>.<br><br>Para aprender más sobre cómo combinar conjuntos de datos en R, consulta <a href="https://dplyr.tidyverse.org/reference/mutate-joins.html">Mutating joins</a>.
 </p>

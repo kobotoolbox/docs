@@ -20,7 +20,7 @@
 - تصدير بياناتك باستخدام واجهة برمجة التطبيقات
 
 <p class="note">
-    <strong>ملاحظة:</strong> نقاط النهاية V1 أصبحت الآن قديمة ومن المقرر إيقاف تشغيلها في يناير 2026، لصالح واجهة برمجة التطبيقات KPI v2 الأكثر قوة والمدعومة بالكامل. لمزيد من المعلومات حول الترحيل إلى KPI v2، راجع <a href="https://support.kobotoolbox.org/migrating_api.html">الترحيل من واجهة برمجة التطبيقات v1 إلى v2</a>.
+    <strong>ملاحظة:</strong> نقاط النهاية V1 أصبحت الآن قديمة ومن المقرر إيقاف تشغيلها في يناير 2026، لصالح واجهة برمجة التطبيقات KPI v2 الأكثر قوة والمدعومة بالكامل. لمزيد من المعلومات حول الترحيل إلى KPI v2، راجع <a href="migrating_api.html">الترحيل من واجهة برمجة التطبيقات v1 إلى v2</a>.
 </p>
 
 ## استرجاع عنوان URL الخاص بالخادم
@@ -72,9 +72,9 @@
 يتطلب كل نهج معرفة عنوان URL الخاص بالخادم والمعرّف الفريد لأصل المشروع لإنشاء عنوان URL مخصص للتصدير. اعتمادًا على التطبيق، قد تكون هناك حاجة إلى مفتاح واجهة برمجة التطبيقات الخاص بك للمصادقة.
 
 <p class="note">
-    لمزيد من المعلومات حول عمليات التصدير المتزامنة، راجع <a href="https://support.kobotoolbox.org/synchronous_exports.html">استخدام واجهة برمجة التطبيقات لعمليات التصدير المتزامنة</a>.
+    لمزيد من المعلومات حول عمليات التصدير المتزامنة، راجع <a href="synchronous_exports.html">استخدام واجهة برمجة التطبيقات لعمليات التصدير المتزامنة</a>.
 <br><br>
-لمعرفة المزيد حول ربط بياناتك بـ Power BI لإنشاء لوحات معلومات مخصصة، راجع <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">ربط KoboToolbox بـ Power BI</a>.
+لمعرفة المزيد حول ربط بياناتك بـ Power BI لإنشاء لوحات معلومات مخصصة، راجع <a href="pulling_data_into_powerbi.html">ربط KoboToolbox بـ Power BI</a>.
 <br><br>
-لمعرفة المزيد حول ربط بياناتك بـ Microsoft Excel، راجع <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">ربط KoboToolbox بـ Microsoft Excel</a>.
+لمعرفة المزيد حول ربط بياناتك بـ Microsoft Excel، راجع <a href="pulling_data_into_excelquery.html">ربط KoboToolbox بـ Microsoft Excel</a>.
 </p>

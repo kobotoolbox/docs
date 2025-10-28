@@ -30,5 +30,5 @@ projets.
 
 ## Utiliser KoboCollect
 
-Si vous utilisez [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) sur un appareil Android et que vous redéployez votre formulaire,
-vous devrez [télécharger la dernière version](https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms) du formulaire lorsque vous êtes connecté·e à Internet pour utiliser la version mise à jour.
+Si vous utilisez [KoboCollect](kobocollect_on_android_latest.md) sur un appareil Android et que vous redéployez votre formulaire,
+vous devrez [télécharger la dernière version](https://support.kobotoolbox.org/fr/data_collection_kobocollect.html#downloading-forms) du formulaire lorsque vous êtes connecté·e à Internet pour utiliser la version mise à jour.

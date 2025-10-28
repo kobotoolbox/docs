@@ -4,9 +4,9 @@
 
 <iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Les outils de traitement du langage naturel de KoboToolbox vous aident à collecter, gérer et analyser les données qualitatives plus efficacement. Ces outils incluent la transcription automatique de la parole en texte et la traduction automatique, avec une analyse qualitative automatisée à venir prochainement. La transcription originale de vos fichiers audio et tout le texte traduit sont ajoutés comme nouvelles colonnes de données dans le tableau de données et peuvent être [téléchargés](https://support.kobotoolbox.org/export_download.html) avec vos données d'enquête.
+Les outils de traitement du langage naturel de KoboToolbox vous aident à collecter, gérer et analyser les données qualitatives plus efficacement. Ces outils incluent la transcription automatique de la parole en texte et la traduction automatique, avec une analyse qualitative automatisée à venir prochainement. La transcription originale de vos fichiers audio et tout le texte traduit sont ajoutés comme nouvelles colonnes de données dans le tableau de données et peuvent être [téléchargés](export_download.md) avec vos données d'enquête.
 
-Pour utiliser ces fonctionnalités, collectez d'abord des réponses audio dans votre formulaire en utilisant le [type de question Audio](https://support.kobotoolbox.org/photo_audio_video_file.html) ou les [enregistrements audio en arrière-plan](https://support.kobotoolbox.org/recording-interviews.html).
+Pour utiliser ces fonctionnalités, collectez d'abord des réponses audio dans votre formulaire en utilisant le [type de question Audio](photo_audio_video_file.md) ou les [enregistrements audio en arrière-plan](recording-interviews.md).
 
 
 <p class="note">

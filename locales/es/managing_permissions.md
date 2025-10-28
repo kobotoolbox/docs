@@ -9,7 +9,7 @@ KoboToolbox te permite establecer diferentes niveles de acceso para los/as usuar
 Este artículo explica cómo otorgar permisos a otros/as usuarios/as de KoboToolbox para colaborar en tus proyectos. Cubre permisos a nivel de usuario/a, permisos a nivel de fila y cómo copiar permisos de otro proyecto.
 
 <p class="note">
-Para obtener más información sobre cómo compartir tu proyecto con otros/as para la recolección de datos, consulta <a href="https://support.kobotoolbox.org/data_through_webforms.html">Recolectar datos a través de formularios web</a>. Para obtener más información sobre la configuración a nivel de proyecto para compartir tus proyectos, consulta <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Compartir proyectos con configuración a nivel de proyecto</a>.
+Para obtener más información sobre cómo compartir tu proyecto con otros/as para la recolección de datos, consulta <a href="data_through_webforms.html">Recolectar datos a través de formularios web</a>. Para obtener más información sobre la configuración a nivel de proyecto para compartir tus proyectos, consulta <a href="project_sharing_settings.html">Compartir proyectos con configuración a nivel de proyecto</a>.
 </p>
 
 ## Configurar permisos a nivel de usuario/a
@@ -33,7 +33,7 @@ Los siguientes permisos están disponibles:
 | View submissions           | El/la usuario/a puede visualizar los datos enviados.           |
 | Add submissions           | El/la usuario/a puede enviar datos usando el formulario.         |
 | Edit submissions         | El/la usuario/a puede editar los datos enviados.           |
-| Validate submissions | El/la usuario/a puede [aprobar o rechazar](https://support.kobotoolbox.org/record_validation.html) los datos enviados. |
+| Validate submissions | El/la usuario/a puede [aprobar o rechazar](record_validation.md) los datos enviados. |
 | Delete submissions         | El/la usuario/a puede eliminar los datos enviados.        |
 | Manage project      | El/la usuario/a puede hacer todo lo anterior y administrar la configuración del proyecto.                  |
 
@@ -99,22 +99,22 @@ Para copiar permisos de equipo de otro proyecto:
 
 <details>
 <summary><strong>Rastrear cambios realizados por otros/as usuarios/as</strong></summary>
-KoboToolbox mantiene <a href="https://support.kobotoolbox.org/activity_logs.html">Registros de actividad</a> que muestran una línea de tiempo completa de las acciones de la cuenta y del proyecto. Los <strong>Registros de historial del proyecto</strong> registran cada modificación dentro de un proyecto—cargas, ediciones, eliminaciones y envíos—para que puedas rastrear cambios, asignar responsabilidad e identificar cuándo comenzaron los problemas.
+KoboToolbox mantiene <a href="activity_logs.html">Registros de actividad</a> que muestran una línea de tiempo completa de las acciones de la cuenta y del proyecto. Los <strong>Registros de historial del proyecto</strong> registran cada modificación dentro de un proyecto—cargas, ediciones, eliminaciones y envíos—para que puedas rastrear cambios, asignar responsabilidad e identificar cuándo comenzaron los problemas.
 </details>
 <br>
 <details>
 <summary><strong>Se solicita nombre de usuario/a y contraseña al enviar datos</strong></summary>
-Si aparece una ventana emergente de inicio de sesión cuando intentas enviar, el proyecto está configurado para <a href="https://support.kobotoolbox.org/project_sharing_settings.html">requerir autenticación</a> para la recolección de datos. En este caso, puedes enviar datos solo si tu cuenta tiene el permiso Add submissions. Ingresa tu nombre de usuario/a y contraseña de KoboToolbox para continuar.
+Si aparece una ventana emergente de inicio de sesión cuando intentas enviar, el proyecto está configurado para <a href="project_sharing_settings.html">requerir autenticación</a> para la recolección de datos. En este caso, puedes enviar datos solo si tu cuenta tiene el permiso Add submissions. Ingresa tu nombre de usuario/a y contraseña de KoboToolbox para continuar.
 </details>
 <br>
 <details>
 <summary><strong>Los permisos basados en usuarios/as no parecen funcionar</strong></summary>
-Los permisos basados en usuarios/as se aplican solo cuando <a href="https://support.kobotoolbox.org/project_sharing_settings.html">se requiere autenticación</a> y cada envío lleva un nombre de usuario/a. Abre la ventana <strong>FORMULARIO</strong> del proyecto y desactiva "Allow submissions to this form without a username and password" en <strong>Collect data</strong>.
+Los permisos basados en usuarios/as se aplican solo cuando <a href="project_sharing_settings.html">se requiere autenticación</a> y cada envío lleva un nombre de usuario/a. Abre la ventana <strong>FORMULARIO</strong> del proyecto y desactiva "Allow submissions to this form without a username and password" en <strong>Collect data</strong>.
 </details>
 <br>
 <details>
 <summary><strong>Los registros antiguos ignoran las reglas a nivel de fila</strong></summary>
-Los envíos realizados antes de que <a href="https://support.kobotoolbox.org/project_sharing_settings.html">se requiriera autenticación</a> pueden no tener un nombre de usuario/a adjunto, por lo que las reglas basadas en usuarios/as no pueden filtrarlos.
+Los envíos realizados antes de que <a href="project_sharing_settings.html">se requiriera autenticación</a> pueden no tener un nombre de usuario/a adjunto, por lo que las reglas basadas en usuarios/as no pueden filtrarlos.
 </details>
 <br>
 <details>
