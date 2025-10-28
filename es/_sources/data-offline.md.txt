@@ -1,0 +1,17 @@
+# Recolectar datos sin conexión
+<a href="../data-offline.html">Read in English</a> | <a href="../fr/data-offline.html">Lire en français</a> | <a href="../ar/data-offline.html">اقرأ باللغة العربية</a>
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/7a8a18d56ea285b4b87535e367b407c1b7f54afc/source/data-offline.md" class="reference">24 Sep 2025</a>
+
+**Toda la recolección de datos puede realizarse sin conexión, tanto con KoboCollect como con formularios web.**
+
+Cuando un/a usuario/a ingresa datos, estos se almacenan primero en el dispositivo. KoboCollect [puede configurarse](https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings) para intentar enviar la información a través de una conexión de red inmediatamente o solo en una etapa posterior cuando el/la entrevistador/a o supervisor/a desee cargar formularios finalizados. Los formularios web siempre intentarán cargar los datos inmediatamente y volverán a intentarlo hasta que se haya establecido una conexión nuevamente.
+
+Toda la sincronización está protegida incluso contra una mala calidad de conexión a Internet. Si una conexión se agota o se interrumpe mientras se está transfiriendo un formulario específico, se reenviará con el siguiente intento de carga. El servidor no integrará datos recibidos a medias en este caso. Solo cuando un registro se haya cargado exitosamente y el servidor confirme la recepción, los datos de la encuesta se eliminarán de la cola de carga.
+
+Los formularios web utilizan el almacenamiento sin conexión HTML5 del navegador para almacenar las respuestas de la encuesta, así como el formulario en sí. Es importante esperar el pequeño mensaje de confirmación en la parte superior derecha del formulario, que mostrará una marca de verificación verde una vez que el formulario se haya almacenado en caché. Después de esto, se puede acceder al formulario y se pueden ingresar datos incluso sin ninguna conexión. Se recomienda crear un marcador en el dispositivo para acceder fácilmente a formularios específicos.
+
+## ¿Qué hago si NO tengo acceso a Internet?
+
+Si no es posible conectar un dispositivo a Internet en absoluto (los/as entrevistadores/as no pueden moverse a un área donde haya una conexión disponible), también es posible transferir datos de encuestas desde KoboCollect a través de una herramienta externa [ODK Briefcase](https://docs.getodk.org/briefcase-intro)) y conectando los dispositivos móviles mediante un cable USB a una computadora local. Para obtener más detalles sobre cómo usar ODK Briefcase para transferir datos, [lee esta publicación](https://blog.cartong.org/2016/03/11/migration-odk-platforms). Después de esto, es posible cargar los datos de la encuesta desde una computadora centralizada al servidor de KoboToolbox, utilizando la misma herramienta.
+
+Finalmente, también es posible instalar KoboToolbox en una computadora local, por ejemplo, una laptop, y luego conectar dispositivos móviles locales a través de una red WiFi local a la computadora. Esta red WiFi no necesita estar conectada a Internet, ya que habría una conexión directa entre los dispositivos móviles y la computadora local. [Consulta aquí](https://github.com/kobotoolbox/kobo-install) para descubrir cómo instalar KoboToolbox en tu computadora.

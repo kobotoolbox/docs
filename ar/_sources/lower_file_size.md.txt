@@ -1,0 +1,28 @@
+# تقليل حجم ملف الوسائط المجمّعة
+<a href="../lower_file_size.html">Read in English</a> | <a href="../fr/lower_file_size.html">Lire en français</a> | <a href="../es/lower_file_size.html">Leer en español</a>
+**آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/lower_file_size.md" class="reference">15 فبراير 2022</a>
+
+عندما يجمع النموذج الخاص بك أكثر من صورة واحدة أو عندما تجمع عشرات الآلاف من السجلات، قد تواجه صعوبات في إنشاء ملف ZIP لمرفقات الوسائط إذا لم تقم بتعديل إعدادات جودة الصورة قبل بدء جمع البيانات.
+
+Open Camera هو تطبيق مفتوح المصدر من طرف ثالث يمكن أن يساعدك في القيام بذلك.
+
+## التعليمات
+
+[قم بتثبيت Open Camera](https://play.google.com/store/apps/details?id=net.sourceforge.opencamera&hl=en_US)
+من متجر Android Play Store.
+
+![image](/images/lower_file_size/open_cam.png)
+
+## KoboCollect
+
+في KoboCollect، عندما تلتقط صورة، سيُطلب منك الآن اختيار التطبيق الذي يجب استخدامه افتراضيًا: اختر Open Camera وحدد 'دائمًا' حتى لا يُطلب منك ذلك مرة أخرى.
+
+## Open Camera
+
+في إعدادات Open Camera، انتقل إلى إعدادات الصور، ثم:
+
+1. افتح دقة الكاميرا واختر أصغر دقة مقبولة.
+2. افتح جودة الصورة واختر نسبة مئوية: 90% ستبدو مثالية تقريبًا، وأقل من 50% ستصبح الصورة أصعب في التعرف عليها. ابدأ بـ 70% واختبر بعض الصور بمستويات جودة مختلفة للعثور على أصغر حجم مقبول.
+
+يوفر هذا الموقع نظرة عامة على
+[كيفية تقدير](http://fotoforensics.com/tutorial-estq.php) مستوى جودة JPEG الأمثل.

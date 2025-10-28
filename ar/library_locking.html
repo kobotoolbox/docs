@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+<html lang="ar" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>قفل المكتبة &#8212; KoboToolbox  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=bd8ea2bd"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=87cb2081"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="بحث" href="search.html" />
+    <link rel="next" title="نظرة عامة على أدوات جمع البيانات" href="data-collection-tools.html" />
+    <link rel="prev" title="وظيفة Pull Data في KoboToolbox" href="pull_data_kobotoolbox.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://www.kobotoolbox.org/features">Features</a></li>
+      <li><a href="https://www.kobotoolbox.org/services">Services</a></li>
+      <li><a href="https://www.kobotoolbox.org/pricing">Pricing</a></li>
+      <li><a href="https://www.kobotoolbox.org/blog">Blog</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="library_locking">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="id1">
+<h1>قفل المكتبة<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h1>
+<p><a href="../library_locking.html">Read in English</a> | <a href="../fr/library_locking.html">Lire en français</a> | <a href="../es/library_locking.html">Leer en español</a>
+<strong>آخر تحديث:</strong> <a href="https://github.com/kobotoolbox/docs/blob/de5e7dcfcec534ba447ee21ff65cf9fff07723f2/source/library_locking.md" class="reference">30 سبتمبر 2025</a></p>
+<p>يشير &quot;قفل المكتبة&quot; إلى الميزة التي تمكّن من &quot;<a class="reference internal" href="#locked">قفل</a>&quot; جوانب مختلفة من الاستبيان عند إنشائه من قالب يحتوي على <a class="reference internal" href="#restrictions"><span class="xref myst">سمات القفل</span></a>. جميع جوانب تحرير النموذج متاحة للقفل من خلال تعيين &quot;<a class="reference internal" href="#profile"><span class="xref myst">ملفات تعريف القفل</span></a>&quot; على مستوى النموذج أو السؤال أو المجموعة. يمكن تعيين &quot;<a class="reference internal" href="#restriction"><span class="xref myst">قيود</span></a>&quot; دقيقة لملفات تعريف القفل هذه والتي تجمع وظائف القفل معًا. بدلاً من ذلك، يمكن قفل النموذج بالكامل، مما يمنع جميع جوانب التحرير.</p>
+<p class="note">
+  حاليًا، يتم دعم القفل المحدد ضمن XLSForm نفسه فقط، ولكن سيتم دمجه في أداة إنشاء النماذج في وقت ما في المستقبل.
+</p>
+<p>قد تكون هذه الميزة مفيدة في بيئة فريق كبير وموزع حيث يتم استخدام قالب قياسي، مع بعض الميزات المقفلة، ويمكن لكل فريق إجراء التعديلات المحلية اللازمة لاحتياجاته. يمكن لمنشئ القالب الاستمرار في إجراء التحديثات، لكن الأقفال ستقيد التغييرات على جوانب محددة من النموذج لأولئك الذين <a class="reference internal" href="#quick_start.md"><span class="xref myst">ينشئون مشروعًا بناءً على القالب</span></a>.</p>
+<p class="note">
+  قفل جوانب النموذج منفصل عن
+  <a class="reference" href="https://support.kobotoolbox.org/ar/managing_permissions.html">إدارة أذونات المشروع</a>.
+</p>
+<section id="id2">
+<h2>القيود<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
+<p>هناك ثلاثة مستويات من القيود التي يمكن تعيينها:</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#question-level-restrictions"><span class="xref myst">السؤال</span></a>،</p></li>
+<li><p><a class="reference internal" href="#group-level-restrictions"><span class="xref myst">المجموعة</span></a>، و</p></li>
+<li><p><a class="reference internal" href="#form-level-restrictions"><span class="xref myst">النموذج</span></a></p></li>
+</ol>
+<p>بالإضافة إلى ذلك، هناك قيمة منطقية <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> يمكن تعيينها في ورقة <code class="docutils literal notranslate"><span class="pre">settings</span></code> والتي ستجعل الاستبيان مقفلًا بالكامل.</p>
+<section id="kobo-lock-all">
+<h3>القيمة المنطقية <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#kobo-lock-all" title="Link to this heading">¶</a></h3>
+<p>إذا تم تعيين <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> على <code class="docutils literal notranslate"><span class="pre">True</span></code>، فإن جميع القيود الدقيقة الإضافية تكون زائدة عن الحاجة حيث يكون النموذج مقفلًا <em>بالكامل</em>. إذا تم تعيينها على <code class="docutils literal notranslate"><span class="pre">False</span></code> <em>أو</em> تم حذفها من ورقة <code class="docutils literal notranslate"><span class="pre">settings</span></code>، فيمكن استخدام ملفات تعريف القفل المحددة للتحكم في سلوك القفل:</p>
+<p><strong>ورقة settings</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>kobo--lock_all</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>true</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>settings</p></td>
+</tr>
+</tbody>
+</table>
+<p>القيم المقبولة لـ <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> هي نفسها الموجودة في ورقة <code class="docutils literal notranslate"><span class="pre">survey</span></code> التي
+<a class="reference external" href="https://github.com/XLSForm/pyxform/blob/43ea039250f44cff23b3ad10740fca54dfa12383/pyxform/aliases.py#L127-L142">يدعمها pyxform</a>.
+لن يتم طرح خطأ إذا تم استخدام قيمة غير صالحة، فقط لن يعمل النموذج كما هو مقصود من وجهة نظر المستخدم.</p>
+<p class="note">
+  لاحظ أن اسم القيد، مثل <code>choice_add</code> أدناه، هو
+  <strong>محدد مسبقًا</strong> والقيود المدرجة أدناه فقط هي خيارات صالحة.
+</p>
+</section>
+<section id="id3">
+<h3>قيود مستوى السؤال<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>الاسم</p></th>
+<th class="head text-left"><p>الوصف</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_add</span></code></p></td>
+<td class="text-left"><p>إضافة خيارات جديدة إلى سؤال <code class="docutils literal notranslate"><span class="pre">select_*</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_delete</span></code></p></td>
+<td class="text-left"><p>إزالة خيار موجود من سؤال <code class="docutils literal notranslate"><span class="pre">select_*</span></code></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_value_edit</span></code></p></td>
+<td class="text-left"><p>تحرير <code class="docutils literal notranslate"><span class="pre">name</span></code> الخيار</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_label_edit</span></code></p></td>
+<td class="text-left"><p>تحرير <code class="docutils literal notranslate"><span class="pre">label</span></code> الخيار</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_order_edit</span></code></p></td>
+<td class="text-left"><p>إعادة ترتيب خيارات سؤال <code class="docutils literal notranslate"><span class="pre">select_*</span></code></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_delete</span></code></p></td>
+<td class="text-left"><p>حذف سؤال معين</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_label_edit</span></code></p></td>
+<td class="text-left"><p>تحرير <code class="docutils literal notranslate"><span class="pre">label</span></code> أو <code class="docutils literal notranslate"><span class="pre">hint</span></code> موجود</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_settings_edit</span></code></p></td>
+<td class="text-left"><p>تحرير إعدادات السؤال (بخلاف <code class="docutils literal notranslate"><span class="pre">constraint</span></code> أو <code class="docutils literal notranslate"><span class="pre">relevant</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_skip_logic_edit</span></code></p></td>
+<td class="text-left"><p>تحرير إعدادات منطق التخطي للسؤال (<code class="docutils literal notranslate"><span class="pre">relevant</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_validation_edit</span></code></p></td>
+<td class="text-left"><p>تحرير إعدادات معايير التحقق من صحة السؤال (<code class="docutils literal notranslate"><span class="pre">constraint</span></code>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id4">
+<h3>قيود مستوى المجموعة<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>الاسم</p></th>
+<th class="head text-left"><p>الوصف</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_delete</span></code></p></td>
+<td class="text-left"><p>زر <strong>حذف كل شيء</strong> في نافذة حذف المجموعة (أو زر حذف المجموعة إذا تم إقرانه مع <code class="docutils literal notranslate"><span class="pre">group_split</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_split</span></code></p></td>
+<td class="text-left"><p>زر <strong>إلغاء تجميع الأسئلة</strong> في نافذة حذف المجموعة (أو زر حذف المجموعة إذا تم إقرانه مع <code class="docutils literal notranslate"><span class="pre">group_delete</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_label_edit</span></code></p></td>
+<td class="text-left"><p>تحرير <code class="docutils literal notranslate"><span class="pre">label</span></code> المجموعة</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_question_add</span></code></p></td>
+<td class="text-left"><p>إضافة أو استنساخ الأسئلة داخل المجموعة المحددة (بما في ذلك المجموعات الفرعية)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_question_delete</span></code></p></td>
+<td class="text-left"><p>حذف أي سؤال من المجموعة المحددة (بما في ذلك أسئلة المجموعات الفرعية)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_question_order_edit</span></code></p></td>
+<td class="text-left"><p>تغيير ترتيب الأسئلة داخل المجموعة المحددة (بما في ذلك المجموعات الفرعية)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_settings_edit</span></code></p></td>
+<td class="text-left"><p>تغيير <strong>جميع إعدادات المجموعة</strong> من <strong>الإعدادات</strong> للمجموعة المحددة</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_skip_logic_edit</span></code></p></td>
+<td class="text-left"><p>تغيير <strong>منطق التخطي</strong> من <strong>الإعدادات</strong> للمجموعة المحددة</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="id5">
+<h3>قيود مستوى النموذج<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>الاسم</p></th>
+<th class="head text-left"><p>الوصف</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">form_appearance</span></code></p></td>
+<td class="text-left"><p>تغيير مظهر النموذج من <strong>التخطيط والإعدادات</strong></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">form_replace</span></code></p></td>
+<td class="text-left"><p>استبدال النموذج باستخدام نافذة <strong>استبدال النموذج</strong></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_add</span></code></p></td>
+<td class="text-left"><p>زر تجميع الأسئلة</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_add</span></code></p></td>
+<td class="text-left"><p>استخدام خيار <strong>إدراج تحديد متتالي</strong> وكل زر <strong>إضافة سؤال</strong> و <strong>استنساخ سؤال</strong></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_order_edit</span></code></p></td>
+<td class="text-left"><p>تغيير ترتيب أي أسئلة</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">language_edit</span></code></p></td>
+<td class="text-left"><p>تحرير اللغات في <strong>نافذة الترجمات</strong></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">form_meta_edit</span></code></p></td>
+<td class="text-left"><p>تحرير الأسئلة الوصفية من <strong>التخطيط والإعدادات</strong></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="xlsform">
+<h2>تكوين XLSForm<a class="headerlink" href="#xlsform" title="Link to this heading">¶</a></h2>
+<p>هناك ثلاث أوراق حيث يتم تعريف وتعيين ملفات تعريف القفل: <code class="docutils literal notranslate"><span class="pre">survey</span></code> و <code class="docutils literal notranslate"><span class="pre">settings</span></code> و <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>. ورقة <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> غير مدعومة رسميًا بواسطة <a class="reference external" href="https://github.com/XLSForm/pyxform">pyxform</a> وهي خاصة بـ KoboToolbox.</p>
+<p>يتم تعريف قيود مستوى النموذج في ورقة <code class="docutils literal notranslate"><span class="pre">settings</span></code> ويتم تعريف قيود مستوى السؤال والمجموعة في ورقة <code class="docutils literal notranslate"><span class="pre">survey</span></code>.</p>
+<p>من داخل ورقة <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>، يتم تعريف جميع ملفات تعريف القفل في بنية مصفوفة، باستخدام الكلمة الأساسية &quot;<a class="reference internal" href="#locked">locked</a>&quot; لتعيين &quot;<a class="reference internal" href="#restriction"><span class="xref myst">قيد</span></a>&quot; إلى &quot;<a class="reference internal" href="#profile"><span class="xref myst">ملف تعريف</span></a>&quot; محدد. على سبيل المثال:</p>
+<p><strong>kobo--locking-profiles</strong></p>
+<p>حدد ملفات التعريف وعيّن لها القيود. لا يوجد حد لعدد ملفات التعريف التي يمكن تعريفها (<code class="docutils literal notranslate"><span class="pre">profile_1</span></code>، ...، <code class="docutils literal notranslate"><span class="pre">profile_n</span></code>) ولكن هناك <strong>ثلاثة ألوان فقط</strong> تميز مظهر القفل الخاص بها في أداة إنشاء النماذج.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>restriction</p></th>
+<th class="head text-left"><p>profile_1</p></th>
+<th class="head text-left"><p>profile_2</p></th>
+<th class="head text-left"><p>profile_3</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>choice_add</p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>choice_delete</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>choice_label_edit</p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>choice_order_edit</p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>form_appearance</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>locked</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>kobo--locking-profiles</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+  لاحظ أنه ليس من الضروري تضمين جميع القيود الصالحة في عمود
+  <code>restriction</code>، ولكن سيتم طرح خطأ إذا تم تضمين قيد غير صالح.
+</p>
+<p><strong>ورقة settings</strong></p>
+<p>عيّن قيود مستوى النموذج والقيمة المنطقية <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code>.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>kobo--locking-profile</p></th>
+<th class="head text-left"><p>kobo--lock_all</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>profile_3</p></td>
+<td class="text-left"><p>false</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>settings</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+  لاحظ أن حذف <code>kobo--lock_all</code> من ورقة
+  <code>settings</code> يعادل تعيينها على <code>False</code>.
+</p>
+<p><strong>ورقة survey</strong></p>
+<p>عيّن قيود مستوى السؤال والمجموعة.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>type</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+<th class="head text-left"><p>kobo--locking-profile</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>select_one countries</p></td>
+<td class="text-left"><p>country</p></td>
+<td class="text-left"><p>Select your country</p></td>
+<td class="text-left"><p>profile_1</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>select_one cities</p></td>
+<td class="text-left"><p>city</p></td>
+<td class="text-left"><p>Select your city</p></td>
+<td class="text-left"><p>profile_2</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>ورقة choices</strong></p>
+<p>لا يمكن تعيين قيود في ورقة <code class="docutils literal notranslate"><span class="pre">choices</span></code>.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>list_name</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>countries</p></td>
+<td class="text-left"><p>canada</p></td>
+<td class="text-left"><p>Canada</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>countries</p></td>
+<td class="text-left"><p>usa</p></td>
+<td class="text-left"><p>United States of America</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>cities</p></td>
+<td class="text-left"><p>vancouver</p></td>
+<td class="text-left"><p>Vancouver</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>cities</p></td>
+<td class="text-left"><p>toronto</p></td>
+<td class="text-left"><p>Toronto</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>cities</p></td>
+<td class="text-left"><p>baltimore</p></td>
+<td class="text-left"><p>Baltimore</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>cities</p></td>
+<td class="text-left"><p>boston</p></td>
+<td class="text-left"><p>Boston</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>choices</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><i>يمكن تنزيل مثال XLSForm هذا
+<a download class="reference" href="/_static/files/library_locking/library-locking-example.xlsx">من هنا</a>.</i></p>
+<section id="xlsforms">
+<h3>استيراد XLSForms مقفلة<a class="headerlink" href="#xlsforms" title="Link to this heading">¶</a></h3>
+<p>استورد XLSForm الخاص بك كـ <code class="docutils literal notranslate"><span class="pre">template</span></code> من خلال واجهة مستخدم KoboToolbox بالانتقال إلى <strong>المكتبة</strong> الخاصة بك والنقر على <strong>جديد</strong> ثم <strong>رفع</strong>. تأكد من تحديد <code class="docutils literal notranslate"><span class="pre">template</span></code> من القائمة المنسدلة <strong>اختر النوع المطلوب</strong> ثم استورد XLSForm الخاص بك.</p>
+<p><img alt="اختر نوع القالب" src="images/library_locking/import-template.png" /></p>
+<p>سيظهر القالب المقفل الآن في عرض قائمة المكتبة الخاصة بك مع رمز قفل.</p>
+<p><img alt="قائمة المكتبة" src="images/library_locking/library-list-view.png" /></p>
+</section>
+<section id="id6">
+<h3>إنشاء مشروع من قالب مقفل<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<p>بمجرد إضافة قالب مقفل إلى مكتبتك -- إما مباشرة من خلال استيراد XLSForm كقالب، أو إنشاء قالب بناءً على استبيان مقفل أو إضافة قالب مقفل من المجموعات العامة -- يمكنك إنشاء مشروع جديد. في قسم <strong>المشاريع</strong> من واجهة المستخدم، انقر على <strong>جديد</strong> ثم <strong>استخدام قالب</strong>.</p>
+<p><img alt="إنشاء مشروع من قالب" src="images/library_locking/create-project-from-template.png" /></p>
+<ul class="simple">
+<li><p>اختر القالب المقفل الذي تريد استخدامه لإنشاء المشروع الجديد.</p></li>
+</ul>
+<p><img alt="تحديد القالب" src="images/library_locking/select-template-for-new-project.png" /></p>
+<ul class="simple">
+<li><p>من هناك، تابع إنشاء المشروع.</p></li>
+</ul>
+<p><img alt="إنشاء المشروع" src="images/library_locking/create-project.png" /></p>
+<p>عند استخدام هذا القالب المقفل كمثال لإنشاء مشروع جديد، ستبدو أداة إنشاء النماذج كما يلي:</p>
+<ul class="simple">
+<li><p>المناطق الرمادية هي تلك التي تم تعطيلها من خلال القيود.</p></li>
+</ul>
+<p><img alt="نظرة عامة" src="images/library_locking/formbuilder.png" /></p>
+<ul class="simple">
+<li><p>سيعرض مربع حوار فوق السؤال الأول نظرة عامة على بعض قيود النموذج.</p></li>
+</ul>
+<p><img alt="مربع الحوار" src="images/library_locking/formbuilder-dialogue-box.png" /></p>
+<ul class="simple">
+<li><p>سيعرض كل سؤال يحتوي على ملفات تعريف قفل، في إعداداته، القيود التي تم تعيينها.</p></li>
+</ul>
+<p><img alt="قيود السؤال" src="images/library_locking/formbuilder-question-settings.png" /></p>
+<ul class="simple">
+<li><p>ستكون بعض إعدادات مستوى النموذج رمادية أيضًا.</p></li>
+</ul>
+<p><img alt="قيود مستوى النموذج" src="images/library_locking/form-style.png" /></p>
+</section>
+<section id="id7">
+<h3>التحقق من صحة النموذج<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h3>
+<p>الحالات التالية ستطرح حاليًا <code class="docutils literal notranslate"><span class="pre">FormPackLibraryLockingError</span></code>:</p>
+<ul class="simple">
+<li><p>إذا كان اسم ملف تعريف القفل (رأس العمود في ورقة <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>) هو &quot;locked&quot; (نفس الكلمة الأساسية للقفل)</p></li>
+<li><p>إذا كان القيد المدرج في <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> غير صالح (ليس في قائمة <a class="reference internal" href="#restrictions"><span class="xref myst">القيود المحددة مسبقًا</span></a>)</p></li>
+<li><p>إذا كانت هناك ورقة تسمى <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> ولكن لا يوجد عمود <code class="docutils literal notranslate"><span class="pre">restriction</span></code></p></li>
+<li><p>إذا لم يتم تعريف ملفات تعريف القفل (رؤوس الأعمدة في ورقة <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>)</p></li>
+</ul>
+<p class="note">
+  سيتم توسيع التحقق من صحة ميزات قفل مكتبة XLSForm في المستقبل.
+</p>
+</section>
+<section id="id8">
+<h3>تحذيرات<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h3>
+<p>في بعض محررات جداول البيانات، يتم تحويل شرطتين مفردتين (<code class="docutils literal notranslate"><span class="pre">--</span></code>) تلقائيًا إلى شرطة m (—)، مما يجعل من الصعب كتابة <code class="docutils literal notranslate"><span class="pre">kobo--</span></code> في خلية. لذلك نقوم بتحويل جميع حالات شرطات n و m إلى شرطتين مفردتين (عندما تكون مسبوقة بـ <code class="docutils literal notranslate"><span class="pre">kobo</span></code>). سيتم تحويل XLSForm باسم ورقة &quot;kobo—locking-profiles&quot; إلى <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> وبالمثل لرؤوس الأعمدة.</p>
+</section>
+</section>
+<section id="json">
+<h2>تمثيل JSON<a class="headerlink" href="#json" title="Link to this heading">¶</a></h2>
+<p>هناك سمتان للأصل حيث يمكن الوصول إلى معلومات القفل وتعديلها: <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code> و <code class="docutils literal notranslate"><span class="pre">asset.content</span></code>.</p>
+<p>إذا كان <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> اسم عمود في ورقة <code class="docutils literal notranslate"><span class="pre">survey</span></code>، فسيتم إدراجه أيضًا في مصفوفة <code class="docutils literal notranslate"><span class="pre">asset.summary.columns</span></code>.</p>
+<p>في <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code>، تصف السمتان المنطقيتان التاليتان نظرة عامة على بنية قفل النموذج:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">lock_all</span></code>، و</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lock_any</span></code></p></li>
+</ul>
+<p>المنطق الذي يتم من خلاله تعيين كل من هذه القيم المنطقية هو كما يلي:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">lock_all</span></code> هي <code class="docutils literal notranslate"><span class="pre">True</span></code> <em>فقط</em> إذا تم تعيين <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> على <code class="docutils literal notranslate"><span class="pre">True</span></code> في ورقة <code class="docutils literal notranslate"><span class="pre">settings</span></code>، وإلا فهي <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
+<li><p>يتم تعيين <code class="docutils literal notranslate"><span class="pre">lock_any</span></code> على <code class="docutils literal notranslate"><span class="pre">True</span></code> إذا كانت <em>أي</em> من الحالات التالية <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">lock_all</span></code> هي <code class="docutils literal notranslate"><span class="pre">True</span></code>،</p></li>
+<li><p>تم تعيين <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> في ورقة <code class="docutils literal notranslate"><span class="pre">settings</span></code>، أو</p></li>
+<li><p>تم تعيين <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> <em>واحد على الأقل</em> في ورقة <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>في المثال أعلاه، سيكون التالي موجودًا في <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="o">...</span><span class="p">,</span>
+  <span class="s2">&quot;columns&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="o">...</span><span class="p">,</span>
+    <span class="s2">&quot;kobo--locking-profile&quot;</span>
+  <span class="p">],</span>
+  <span class="s2">&quot;lock_all&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
+  <span class="s2">&quot;lock_any&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="o">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>في <code class="docutils literal notranslate"><span class="pre">asset.content</span></code>، توجد سمة <code class="docutils literal notranslate"><span class="pre">content.kobo--locking-profiles</span></code> كمصفوفة من كائنات JSON بالبنية التالية:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;profile_1&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;restrictions&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="s2">&quot;choice_add&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;choice_label_edit&quot;</span><span class="p">,</span>
+      <span class="s2">&quot;choice_order_edit&quot;</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>في <code class="docutils literal notranslate"><span class="pre">content.settings</span></code>، سيكون التالي موجودًا في كائن JSON:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;kobo--locking-profile&quot;</span><span class="p">:</span> <span class="s2">&quot;profile_3&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;kobo--lock_all&quot;</span><span class="p">:</span> <span class="n">false</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>وأخيرًا في <code class="docutils literal notranslate"><span class="pre">content.survey</span></code>، سيكون لكل سؤال تم تعيين ملف تعريف قفل له سمة <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> كما يلي:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;country&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;select_one&quot;</span><span class="p">,</span>
+    <span class="o">...</span>
+    <span class="s2">&quot;kobo--locking-profile&quot;</span><span class="p">:</span> <span class="s2">&quot;profile_1&quot;</span>
+  <span class="p">},</span>
+  <span class="p">{</span>
+    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;select_one&quot;</span><span class="p">,</span>
+    <span class="o">...</span>
+    <span class="s2">&quot;kobo--locking-profile&quot;</span><span class="p">:</span> <span class="s2">&quot;profile_2&quot;</span>
+  <span class="p">},</span>
+  <span class="o">...</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</section>
+<section id="id9">
+<h2>ملفات تعريف القفل وأنواع الأصول<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h2>
+<p>من بين أنواع الأصول الأربعة (<code class="docutils literal notranslate"><span class="pre">survey</span></code> و <code class="docutils literal notranslate"><span class="pre">template</span></code> و <code class="docutils literal notranslate"><span class="pre">question</span></code> و <code class="docutils literal notranslate"><span class="pre">block</span></code>)، فقط <code class="docutils literal notranslate"><span class="pre">template</span></code> و <code class="docutils literal notranslate"><span class="pre">survey</span></code> تتعامل مع ميزات قفل المكتبة ويتم فرض الأقفال <em>فقط</em> على الاستبيانات. عمليًا، هذا يعني ما يلي:</p>
+<p>افترض أنه تم استيراد XLSForm يحتوي على ميزات قفل صالحة:</p>
+<ul class="simple">
+<li><p>إذا تم استيراده كـ <code class="docutils literal notranslate"><span class="pre">block</span></code>، فسيتم استبعاد و/أو إزالة جميع آثار القفل من الأصل. ينتج عن هذا أصل <code class="docutils literal notranslate"><span class="pre">block</span></code> سيكون مكافئًا لنفس النموذج الذي تم رفعه بدون أي ميزات قفل؛</p></li>
+<li><p>إذا تم استيراده كـ <code class="docutils literal notranslate"><span class="pre">survey</span></code> (تم استيراده من خلال قسم <strong>المشاريع</strong>) أو <code class="docutils literal notranslate"><span class="pre">template</span></code> فستكون جميع الأقفال سليمة:</p>
+<ul>
+<li><p>إذا، من داخل أداة إنشاء النماذج:</p>
+<ul>
+<li><p>تمت إضافة سؤال إلى المكتبة، فسيتم إزالة جميع الأقفال من أصل <code class="docutils literal notranslate"><span class="pre">question</span></code> الجديد</p></li>
+<li><p>تمت إضافة مجموعة من الأسئلة إلى المكتبة كـ <code class="docutils literal notranslate"><span class="pre">block</span></code>، فسيتم إزالة جميع الأقفال</p></li>
+</ul>
+</li>
+<li><p>إذا تم إنشاء <code class="docutils literal notranslate"><span class="pre">template</span></code> <em>من</em> أصل <code class="docutils literal notranslate"><span class="pre">survey</span></code> المقفل، فسيرث <code class="docutils literal notranslate"><span class="pre">template</span></code> جميع الأقفال التي كان لدى <code class="docutils literal notranslate"><span class="pre">survey</span></code> (ولكن نظرًا لأنه قالب، يمكنك تحرير المحتويات في أداة إنشاء النماذج)،</p></li>
+<li><p>إذا تم إنشاء <code class="docutils literal notranslate"><span class="pre">survey</span></code> <em>من</em> <code class="docutils literal notranslate"><span class="pre">template</span></code> مقفل، فسيرث الاستبيان جميع الأقفال التي كان لدى <code class="docutils literal notranslate"><span class="pre">template</span></code></p></li>
+</ul>
+</li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>نوع الأصل الأصلي</p></th>
+<th class="head text-left"><p>العملية/الإجراء</p></th>
+<th class="head text-left"><p>حالة <code class="docutils literal notranslate"><span class="pre">asset</span></code> الناتج</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>استيراد ملف XLSForm لـ <code class="docutils literal notranslate"><span class="pre">survey</span></code> مقفل</p></td>
+<td class="text-left"><p>مقفل</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>إنشاء <code class="docutils literal notranslate"><span class="pre">template</span></code> من <code class="docutils literal notranslate"><span class="pre">survey</span></code> مقفل</p></td>
+<td class="text-left"><p>مقفل</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>إنشاء <code class="docutils literal notranslate"><span class="pre">question</span></code> من <code class="docutils literal notranslate"><span class="pre">survey</span></code> مقفل※</p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>إنشاء <code class="docutils literal notranslate"><span class="pre">block</span></code> من <code class="docutils literal notranslate"><span class="pre">survey</span></code> مقفل※</p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>استيراد ملف XLSForm لـ <code class="docutils literal notranslate"><span class="pre">template</span></code> مقفل</p></td>
+<td class="text-left"><p>مقفل</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>إنشاء <code class="docutils literal notranslate"><span class="pre">survey</span></code> من <code class="docutils literal notranslate"><span class="pre">template</span></code> مقفل</p></td>
+<td class="text-left"><p>مقفل</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>إنشاء <code class="docutils literal notranslate"><span class="pre">question</span></code> من <code class="docutils literal notranslate"><span class="pre">template</span></code> مقفل※</p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>إنشاء <code class="docutils literal notranslate"><span class="pre">block</span></code> من <code class="docutils literal notranslate"><span class="pre">template</span></code> مقفل※</p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>استيراد ملف XLSForm لـ <code class="docutils literal notranslate"><span class="pre">block</span></code> مقفل※</p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>إضافة <code class="docutils literal notranslate"><span class="pre">block</span></code> مقفل من المكتبة إلى <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>إضافة <code class="docutils literal notranslate"><span class="pre">block</span></code> مقفل من المكتبة إلى <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
+<td class="text-left"><p>إنشاء <code class="docutils literal notranslate"><span class="pre">question</span></code> من <code class="docutils literal notranslate"><span class="pre">block</span></code> مقفل※</p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>استيراد ملف XLSForm لـ <code class="docutils literal notranslate"><span class="pre">block</span></code> مقفل※</p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>إضافة <code class="docutils literal notranslate"><span class="pre">question</span></code> مقفل من المكتبة إلى <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>إضافة <code class="docutils literal notranslate"><span class="pre">question</span></code> مقفل من المكتبة إلى <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
+<td class="text-left"><p>إنشاء <code class="docutils literal notranslate"><span class="pre">block</span></code> من <code class="docutils literal notranslate"><span class="pre">question</span></code> مقفل※</p></td>
+<td class="text-left"><p>غير مقفل</p></td>
+</tr>
+</tbody>
+</table>
+<p>※ هذه الإجراءات غير ممكنة في واجهة المستخدم.</p>
+</section>
+<section id="id10">
+<h2>المصطلحات<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h2>
+<section id="id11">
+<h3><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#id11" title="Link to this heading">¶</a></h3>
+<p>سمة تحتوي على قيمة منطقية، يتم تعيينها في ورقة <code class="docutils literal notranslate"><span class="pre">settings</span></code> وتطبق جميع قيود القفل على النموذج وجميع الأسئلة والمجموعات (مما يجعل ملفات تعريف القفل الدقيقة زائدة عن الحاجة).</p>
+</section>
+<section id="kobo-locking-profile">
+<h3><code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code><a class="headerlink" href="#kobo-locking-profile" title="Link to this heading">¶</a></h3>
+<p>اسم العمود في أوراق <code class="docutils literal notranslate"><span class="pre">survey</span></code> و <code class="docutils literal notranslate"><span class="pre">settings</span></code> حيث يتم تعيين ملف تعريف القفل لسؤال أو مجموعة (في <code class="docutils literal notranslate"><span class="pre">survey</span></code>) أو للنموذج (في <code class="docutils literal notranslate"><span class="pre">settings</span></code>).</p>
+</section>
+<section id="kobo-locking-profiles">
+<h3><code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code><a class="headerlink" href="#kobo-locking-profiles" title="Link to this heading">¶</a></h3>
+<p>اسم الورقة حيث يتم تعيين القيود لملفات التعريف.</p>
+</section>
+<section id="locked">
+<h3><code class="docutils literal notranslate"><span class="pre">locked</span></code><a class="headerlink" href="#locked" title="Link to this heading">¶</a></h3>
+<p>الكلمة الأساسية المستخدمة لتعيين قيد لملف تعريف في ورقة <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>.</p>
+</section>
+<section id="id12">
+<h3>ملف التعريف<a class="headerlink" href="#id12" title="Link to this heading">¶</a></h3>
+<p>الاسم المعين لمجموعة من القيود، المحددة في ورقة <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>. يتم تعيينه للأسئلة والمجموعات في ورقة <code class="docutils literal notranslate"><span class="pre">survey</span></code> وللنموذج في ورقة <code class="docutils literal notranslate"><span class="pre">settings</span></code>.</p>
+</section>
+<section id="id13">
+<h3>القيد<a class="headerlink" href="#id13" title="Link to this heading">¶</a></h3>
+<p>سمة قفل دقيقة يمكن تعيينها لملف تعريف والتحكم في سلوك القفل على مستوى السؤال أو المجموعة أو النموذج.</p>
+</section>
+<section id="id14">
+<h3>غير مقفل<a class="headerlink" href="#id14" title="Link to this heading">¶</a></h3>
+<p>نموذج لا يحتوي على سمات قفل.</p>
+</section>
+</section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=قفل المكتبة"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">البدء</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">مقدمة إلى KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">إنشاء حساب على KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">البدء في استخدام أداة إنشاء النماذج في KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">البدء مع XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">الحساب والفوترة</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">إنشاء حساب على KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">استكشاف أخطاء رابط تفعيل الحساب وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">إعادة تعيين كلمات المرور</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">إعداد المصادقة الثنائية في KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">استخدام أداة إنشاء النماذج</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">البدء في استخدام أداة إنشاء النماذج في KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">قائمة أنواع الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">أنواع أسئلة النص والملاحظة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">أنواع الأسئلة &quot;اختيار واحد&quot; و&quot;اختيار متعدد&quot;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">نوع سؤال الإقرار</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">أنواع الأسئلة: الرقم، العشري، والنطاق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">أنواع أسئلة التاريخ والوقت</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">أنواع الأسئلة &quot;صورة&quot; و&quot;صوت&quot; و&quot;فيديو&quot; و&quot;ملف&quot;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">نوع سؤال الباركود/رمز الاستجابة السريعة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">أنواع أسئلة التقييم مقابل الترتيب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">نوع سؤال اختيار واحد أو متعدد من ملف خارجي</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">أنواع أسئلة GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">نوع سؤال الحساب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">نوع السؤال المتقدم للحساب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">نوع سؤال التوقيع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">نوع الاستجابة مصفوفة الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">تضمين الإجابات داخل سؤال آخر</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">استخدام خيارات الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">إضافة منطق التخطي في Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">إضافة معايير التحقق في واجهة إنشاء النماذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">القيود على الاستجابات الرقمية والنصية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">إضافة أسئلة الاختيار المتتالي في أداة إنشاء النماذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">تجميع الأسئلة وتكرار المجموعات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">تقييد الإجابات النصية باستخدام التعبيرات النمطية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">إضافة لغة أخرى في لوحة تحكم المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">إعدادات النموذج والبيانات الوصفية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">نوع السؤال الوصفي لتسجيل التدقيق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">التنسيق المخصص في النماذج الإلكترونية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">استخدام أنماط نماذج Enketo البديلة على الويب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">استخدام مكتبة الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">استخدام المجموعات العامة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">البحث المتقدم في المجموعات العامة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">استخدام علامات HXL</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">استخدام XLSForm</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">تحرير النماذج في Excel باستخدام XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">البدء مع XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">استيراد XLSForm عبر رابط URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">إضافة أنواع مختلفة من الوسائط (صورة، صوت، فيديو) إلى النموذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">إضافة لغة أخرى إلى نموذج XLSForm الخاص بك</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">مرفقات البيانات الديناميكية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">وظيفة Pull Data في KoboToolbox</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">قفل المكتبة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id2">القيود</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xlsform">تكوين XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#json">تمثيل JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9">ملفات تعريف القفل وأنواع الأصول</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10">المصطلحات</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">جمع البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">نظرة عامة على أدوات جمع البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enketo.html">ما هي نماذج Enketo الإلكترونية؟</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">نشر نموذج لبدء مشروع جمع بيانات جديد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">تسجيل المقابلة بالكامل باستخدام التسجيل الصوتي في الخلفية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">جمع البيانات من خلال النماذج الإلكترونية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">جمع البيانات دون اتصال بالإنترنت</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">البدء مع KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">تخصيص إعدادات KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">جمع البيانات باستخدام KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">نقل النماذج والبيانات يدويًا من جهاز أندرويد إلى آخر</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">الأجهزة الموصى بها لجمع البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">استكشاف أخطاء تطبيق KoboCollect لنظام Android وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">استكشاف أخطاء نماذج Enketo على الويب وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">جمع المواقع الجغرافية بنظام GPS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">إدارة المشاريع والبيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">ملخص المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">التحقق من صحة السجلات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">حذف مشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">تصدير وتنزيل بياناتك</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">خيارات متقدمة لتصدير البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">إدارة بيانات المجموعات المتكررة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">أرشفة المشاريع وإلغاء أرشفتها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">مشاركة المشاريع باستخدام إعدادات على مستوى المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">مشاركة المشاريع مع أذونات على مستوى المستخدم</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">رسم خرائط بيانات GPS ومشاركتها وتصديرها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">تعديل أو حذف إرسال واحد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">تعديل الإجابات في عدة عمليات إرسال</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">تنزيل الصور والوسائط الأخرى</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">حذف ملفات الوسائط</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">استرداد البيانات من إصدارات النموذج السابقة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">استخدام ميزة إدارة الفريق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">سجلات النشاط</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">تحليل البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">عرض وإنشاء التقارير المخصصة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">النسخ والترجمة للردود الصوتية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">التحليل النوعي للردود الصوتية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">تحويل البيانات إلى SPSS و/أو Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">التكاملات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">البدء باستخدام واجهة برمجة التطبيقات (API)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">استخدام واجهة برمجة التطبيقات (API) للتصديرات المتزامنة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">ربط KoboToolbox بـ Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">ربط KoboToolbox بـ Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">دمج البيانات الفردية مع بيانات القوائم من خلال Power Query في Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">خدمات REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">تصدير البيانات ورفعها إلى برامج نظم المعلومات الجغرافية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">تكامل KoboToolbox على monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">الترحيل من واجهة برمجة التطبيقات v1 إلى v2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">أمن وحماية البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">إجراءات أمان البيانات في KoboToolbox: الحفاظ على أمان بياناتك</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">اللائحة العامة لحماية البيانات (GDPR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">الامتثال لقانون HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">تخزين البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">تشفير النماذج</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">موارد إضافية</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">تضمين الرموز الإدارية (P-Codes) في بيانات المخرجات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">إنشاء أرقام تسلسلية فريدة في النماذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">إجابات &quot;أخرى&quot; يحددها المستخدم لأسئلة الاختيار من متعدد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">تقليل حجم ملف الوسائط المجمّعة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">إضافة العمليات الحسابية والقيود في سؤال المصفوفة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">إضافة منطق التخطي إلى سؤال المصفوفة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">إضافة شعار مخصص</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">التصديرات العالقة في حالة الانتظار</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">رفع البيانات يدويًا</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Questions from the community</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "library_locking",
+      currentTitle: "قفل المكتبة",
+      currentUrl: ("index.html").replace("index.html", "library_locking.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

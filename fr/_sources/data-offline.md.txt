@@ -1,0 +1,17 @@
+# Collecte de données hors ligne
+<a href="../data-offline.html">Read in English</a> | <a href="../es/data-offline.html">Leer en español</a> | <a href="../ar/data-offline.html">اقرأ باللغة العربية</a>
+**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/7a8a18d56ea285b4b87535e367b407c1b7f54afc/source/data-offline.md" class="reference">24 Sep 2025</a>
+
+**Toute collecte de données peut avoir lieu hors ligne, à la fois avec KoboCollect et avec les formulaires Web.**
+
+Lorsqu'une utilisatrice ou un utilisateur saisit des données, celles-ci sont d'abord stockées sur l'appareil. KoboCollect [peut être configuré](https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings) pour tenter d'envoyer les informations via une connexion réseau immédiatement ou seulement à un stade ultérieur lorsque l'enquêtrice ou l'enquêteur ou la superviseure ou le superviseur souhaite importer les formulaires finalisés. Les formulaires Web tenteront toujours d'importer les données immédiatement et réessayeront jusqu'à ce qu'une connexion soit rétablie.
+
+Toute synchronisation est protégée même contre une mauvaise qualité de connexion Internet. Si une connexion expire ou est interrompue pendant le transfert d'un formulaire spécifique, celui-ci sera renvoyé lors de la prochaine tentative d'importation. Le serveur n'intégrera pas les données partiellement reçues dans ce cas. Ce n'est que lorsqu'un enregistrement a été importé avec succès et que le serveur confirme la réception que les données de l'enquête seront supprimées de la file d'attente d'importation.
+
+Les formulaires Web utilisent le stockage hors ligne HTML5 du navigateur pour stocker les réponses de l'enquête ainsi que le formulaire lui-même. Il est important d'attendre le petit message de confirmation en haut à droite du formulaire, qui affichera une coche verte une fois que le formulaire aura été mis en cache. Après cela, le formulaire peut être consulté et les données peuvent être saisies même sans aucune connexion. Il est recommandé de créer un signet sur l'appareil pour accéder facilement à des formulaires spécifiques.
+
+## Que faire si je n'ai AUCUN accès à Internet ?
+
+S'il n'est pas possible de connecter un appareil à Internet du tout (les enquêtrices et enquêteurs ne peuvent pas se déplacer dans une zone où une connexion est disponible), il est également possible de transférer les données d'enquête depuis KoboCollect via un outil externe [ODK Briefcase](https://docs.getodk.org/briefcase-intro)) et en connectant les appareils mobiles par câble USB à un ordinateur local. Pour plus de détails sur la façon d'utiliser ODK Briefcase pour transférer des données, [lisez cet article](https://blog.cartong.org/2016/03/11/migration-odk-platforms). Après cela, il est possible d'importer les données d'enquête depuis un ordinateur centralisé vers le serveur KoboToolbox, en utilisant le même outil.
+
+Enfin, il est également possible d'installer KoboToolbox sur un ordinateur local, par exemple un ordinateur portable, puis de connecter des appareils mobiles locaux via un WiFi local à l'ordinateur. Ce WiFi n'a pas besoin d'être connecté à Internet car il y aurait une connexion directe entre les appareils mobiles et l'ordinateur local. [Voir ici](https://github.com/kobotoolbox/kobo-install) pour savoir comment installer KoboToolbox sur votre ordinateur.

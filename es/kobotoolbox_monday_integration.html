@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+
+<html lang="es" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Integración de KoboToolbox en monday.com &#8212; documentación de KoboToolbox - </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Migración de la API v1 a v2" href="migrating_api.html" />
+    <link rel="prev" title="Exportar y cargar datos en software GIS" href="upload_to_gis.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://www.kobotoolbox.org/features">Features</a></li>
+      <li><a href="https://www.kobotoolbox.org/services">Services</a></li>
+      <li><a href="https://www.kobotoolbox.org/pricing">Pricing</a></li>
+      <li><a href="https://www.kobotoolbox.org/blog">Blog</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="kobotoolbox_monday_integration">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="integracion-de-kobotoolbox-en-monday-com">
+<h1>Integración de KoboToolbox en monday.com<a class="headerlink" href="#integracion-de-kobotoolbox-en-monday-com" title="Link to this heading">¶</a></h1>
+<p><a href="../kobotoolbox_monday_integration.html">Read in English</a> | <a href="../fr/kobotoolbox_monday_integration.html">Lire en français</a> | <a href="../ar/kobotoolbox_monday_integration.html">اقرأ باللغة العربية</a>
+<strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/kobotoolbox_monday_integration.md" class="reference">3 de mayo de 2024</a></p>
+<p class="note">
+Este artículo describe el lanzamiento inicial de la integración entre KoboToolbox
+y Monday.com. Como con cualquier nuevo lanzamiento, puede haber algunos errores inesperados. Si
+encuentras problemas, por favor <a
+href="https://www.kobotoolbox.org/contact/?contact_reason=Monday.com%20integration"
+class="reference">contáctanos</a> inmediatamente para que podamos resolverlos.
+</br>
+⚠️ Recomendamos realizar pruebas rigurosas antes de implementar esta integración para
+proyectos de misión crítica. ⚠️
+</p>
+<p>La integración de KoboToolbox permite a los/as usuarios/as sincronizar fácilmente los datos de su proyecto
+desde un proyecto de KoboToolbox a un tablero de monday.com.</p>
+<p>En solo unos pocos pasos puedes configurar la integración para copiar automáticamente los envíos de datos recibidos en
+KoboToolbox a cualquiera de tus tableros de monday.com. Esta integración reduce significativamente
+el trabajo manual involucrado en copiar y pegar datos del proyecto desde KoboToolbox a monday.com.</p>
+<section id="funcionalidades">
+<h2>Funcionalidades<a class="headerlink" href="#funcionalidades" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Proceso simplificado de conexión de proyectos de KoboToolbox con tableros de monday.com.</p></li>
+<li><p>Mapeo fácil de campos de monday.com a preguntas de KoboToolbox usando cualquier idioma de etiqueta
+definido en el formulario.</p></li>
+<li><p>Sincronización en tiempo real de envíos recién creados para crear nuevos elementos.</p></li>
+</ul>
+</section>
+<section id="instalacion-y-primer-uso">
+<h2>Instalación y primer uso<a class="headerlink" href="#instalacion-y-primer-uso" title="Link to this heading">¶</a></h2>
+<section id="antes-de-instalar-la-integracion">
+<h3>Antes de instalar la integración<a class="headerlink" href="#antes-de-instalar-la-integracion" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Crea una cuenta en KoboToolbox si aún no tienes una. Aprende más sobre
+<a class="reference internal" href="creating_account.html"><span class="std std-doc">crear una cuenta</span></a>.</p></li>
+<li><p>Prepara un tablero de monday.com que refleje la estructura de tu proyecto de KoboToolbox
+para que todos los campos de tu proyecto de KoboToolbox estén representados en
+un tablero de monday.com.</p></li>
+<li><p>Durante la configuración de la integración, necesitarás
+autenticar el acceso a tu cuenta proporcionando tu clave API de KoboToolbox.
+Aprende cómo obtener tu <a class="reference internal" href="api.html"><span class="std std-doc">Clave API</span></a>.</p></li>
+</ol>
+<p class="note">
+  **Nota:** La Clave API es un identificador único utilizado para la autenticación. En KoboToolbox, se denomina tu **Clave API**. En monday.com, se denomina tu **token API**.
+</p>
+</section>
+<section id="instalacion">
+<h3>Instalación<a class="headerlink" href="#instalacion" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Instala la integración de KoboToolbox desde el
+<a class="reference external" href="https://monday.com/marketplace">mercado de aplicaciones de monday.com</a>.</p></li>
+<li><p>Una vez instalada, ve a tu tablero previamente preparado para configurar la
+integración.</p></li>
+</ol>
+<p class="note">
+    **Nota 1:** Solo se puede establecer una receta de integración de KoboToolbox por tablero de monday.
+    **Nota 2:** Solo la persona que instaló la receta puede editarla, todos/as los/as demás miembros/as del tablero solo pueden abrirla en modo de solo lectura.
+</p>
+</section>
+<section id="primer-uso">
+<h3>Primer uso<a class="headerlink" href="#primer-uso" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Ve al menú <strong>Integration</strong> en la parte superior derecha.
+<img alt="monday-board-integrate" src="images/kobotoolbox_monday_integration/monday-board-integrate.png" /></p></li>
+<li><p>Encuentra <strong>KoboToolbox</strong> en el Centro de Integraciones.
+<img alt="app-marketplace" src="images/kobotoolbox_monday_integration/find-integration.png" /></p></li>
+<li><p>Haz clic en la integración de KoboToolbox y elige la receta incluida.
+<img alt="kobo-integration" src="images/kobotoolbox_monday_integration/choose-recipe.png" /></p></li>
+<li><p>Autoriza la aplicación de KoboToolbox:</p>
+<ul class="simple">
+<li><p>Ingresa la URL del servidor de KoboToolbox donde creaste tu cuenta. Para el Servidor Global, usa la URL del servidor <a class="reference external" href="https://kf.kobotoolbox.org">https://kf.kobotoolbox.org</a>. Para el Servidor con sede en la Unión Europea, usa la URL del servidor <a class="reference external" href="https://eu.kobotoolbox.org">https://eu.kobotoolbox.org</a>.</p></li>
+<li><p>Ingresa tu Clave API de KoboToolbox en el campo «Kobo API token»
+<img alt="provide-api-key" src="images/kobotoolbox_monday_integration/provide-api-key.png" /></p></li>
+</ul>
+</li>
+</ol>
+<p class="note">
+    **Nota:** Para cambiar la Clave API después de que la receta de integración esté configurada, la aplicación de integración de KoboToolbox debe reinstalarse completamente.
+    </p>
+<ol class="arabic" start="5">
+<li><p>Para la configuración de la receta, configura los siguientes parámetros:</p>
+<ul class="simple">
+<li><p>Elige el proyecto de KoboToolbox apropiado que deseas conectar a tu tablero de monday.com desde el menú desplegable. Solo los proyectos desplegados están disponibles para selección.</p></li>
+<li><p>Elige el idioma de etiqueta desde el menú desplegable. Si tu formulario contiene más
+de un idioma, selecciona el idioma que debe usarse para mapear preguntas
+a columnas. El idioma seleccionado solo se mostrará para mapear
+preguntas de KoboToolbox con columnas de monday.com. Los datos mostrados en el
+tablero de monday.com siempre usarán la estructura de datos XML subyacente
+en lugar de las etiquetas traducidas de Seleccionar Uno o Seleccionar Múltiple.</p></li>
+<li><p>Haz clic en <strong>Item</strong> para configurar el mapeo de preguntas a columnas.
+<img alt="dynamic-linking" src="images/kobotoolbox_monday_integration/item-mapping.png" /></p></li>
+</ul>
+</li>
+<li><p>Cuando hayas completado la configuración de la receta, haz clic en el botón <strong>Add to Board</strong>.
+<img alt="recipe" src="images/kobotoolbox_monday_integration/recipe-config.png" /></p></li>
+<li><p>Después de completar la configuración de la integración, debes configurar los Servicios REST en KoboToolbox para sincronizar automáticamente los datos de tu proyecto con el tablero de monday.com. Para configurar los Servicios REST en KoboToolbox:</p>
+<ul class="simple">
+<li><p>Copia el enlace de integración de la notificación de configuración de integración o de la
+descripción en tu tablero de monday.com.<br />
+<img alt="webhook-url" src="images/kobotoolbox_monday_integration/description-link.png" /></p></li>
+<li><p>Inicia sesión en tu cuenta de KoboToolbox.</p></li>
+<li><p>Ve al proyecto que deseas conectar. Abre la ventana SETTINGS, luego elige REST
+Services, y haz clic en el botón <strong>REGISTER A NEW SERVICE</strong>.<br />
+<img alt="create-rest-service" src="images/kobotoolbox_monday_integration/create-rest-service.png" /></p></li>
+<li><p>Ingresa «monday.com integration» como el nombre del servicio e ingresa el enlace de integración en el campo «Endpoint URL».</p></li>
+<li><p>En la sección «Custom HTTP Headers», inserta el valor «webhook-auth» en
+el campo «Name» e ingresa tu Clave API de KoboToolbox en el campo «Value».<br />
+<img alt="rest-service-modal" src="images/kobotoolbox_monday_integration/rest-service-modal.png" /></p></li>
+<li><p>Haz clic en el botón <strong>SAVE</strong>.</p></li>
+</ul>
+</li>
+<li><p>¡Todo listo! Cada nuevo envío a tu proyecto de KoboToolbox se
+agregará automáticamente a tu tablero de monday.com según la configuración de tu receta.\</p>
+<p><img alt="kobo-monday-data" src="images/kobotoolbox_monday_integration/kobo-monday-data.png" /></p>
+<p class="rubric" id="notas-importantes">Notas importantes</p>
+<ol class="arabic simple">
+<li><p>Cualquier actualización realizada a un formulario o envío individual en un proyecto de KoboToolbox
+que ya se haya agregado a tu tablero de monday.com no se actualizará automáticamente
+en tu tablero de monday.com. Cambios como eliminar o renombrar una pregunta,
+cambiar una jerarquía de grupo, cambiar un grupo a un grupo repetido, o editar
+etiquetas en el formulario de KoboToolbox no afectarán los elementos en tu tablero de
+monday.com.</p></li>
+<li><p>La ubicación no es compatible automáticamente en el mapeo de campos dinámicos. Para transferir una ubicación o coordenadas desde Kobotoolbox a una columna de monday.com:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Crea dos columnas en tu tablero de monday.com para que se completen los datos de ubicación: una columna que sea de tipo Texto y una segunda columna que sea de tipo Ubicación. Es importante nombrarlas de manera idéntica.</p></li>
+<li><p>En el mapeo de campos dinámicos, mapea la ubicación de KoboToolbox a la columna de tipo Texto de monday.com.</p></li>
+<li><p>La columna de tipo Ubicación no aparecerá en el mapeo dinámico.</p></li>
+<li><p>El envío de ubicación de KoboToolbox se completará automáticamente en la columna de tipo Ubicación de monday.com.</p></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li><p>La columna de archivo no es compatible automáticamente en el mapeo de campos dinámicos. Para transferir archivos desde KoboToolbox a monday.com:</p></li>
+</ol>
+<ul class="simple">
+<li><p>Agrega una columna de Archivo al tablero de monday.com y dale el mismo nombre que el nombre usado para el campo de Archivo en tu proyecto de KoboToolbox. Debe usarse el mismo nombre de columna de archivo tanto en monday.com como en KoboToolbox.</p></li>
+<li><p>Si no has instalado la receta de integración, completa el proceso de instalación. Una vez que hayas completado la instalación, ve al Centro de Integraciones, abre la receta existente y haz clic en el botón <strong>Update automation</strong> para que se apliquen los últimos cambios funcionales.</p></li>
+<li><p>No se necesitan otros cambios de configuración. Los archivos ahora se transferirán automáticamente desde el proyecto de KoboToolbox a la columna apropiada en tu tablero de monday.com según el nombre de la columna.</p></li>
+</ul>
+<ol class="arabic simple" start="4">
+<li><p>Para garantizar un alto rendimiento en los tableros de monday.com, monday.com limita el número de columnas por tablero: 200 columnas para cuentas no empresariales y 300 columnas para cuentas empresariales.</p></li>
+</ol>
+</li>
+</ol>
+</section>
+</section>
+<section id="preguntas-frecuentes">
+<h2>Preguntas frecuentes<a class="headerlink" href="#preguntas-frecuentes" title="Link to this heading">¶</a></h2>
+<p><strong>¿Qué son los Servicios REST?</strong></p>
+<p>Más información sobre los Servicios REST está disponible en
+<a class="reference internal" href="rest_services.html"><span class="std std-doc">este artículo de ayuda</span></a>.</p>
+<p><strong>¿Qué es el mapeo de campos dinámicos?</strong></p>
+<p>El mapeo de campos dinámicos es un emparejamiento de campos representados en el tablero de monday.com
+con las preguntas apropiadas del proyecto de KoboToolbox.</p>
+<p><strong>¿Qué sucede si cambio mis datos en la cuenta de Kobo?</strong></p>
+<p>Cualquier actualización realizada a un formulario o envío individual en tu proyecto de KoboToolbox que
+ya se haya enviado al tablero de monday.com no se sincronizará automáticamente.</p>
+<p><strong>¿Qué sucede si cambio mis datos en el tablero de monday.com?</strong></p>
+<p>Los cambios realizados a los datos representados en el tablero de monday.com no se reflejarán
+en el proyecto de KoboToolbox.</p>
+<p><strong>¿Qué sucede si necesito cambiar el idioma más tarde?</strong></p>
+<p>La selección de idioma afecta solo la vista de mapeo de campos dinámicos de la configuración de la
+receta de integración. Los datos del tablero no se traducirán.</p>
+<p><strong>¿Qué sucede si elimino el proyecto en KoboToolbox?</strong></p>
+<p>Si se elimina un proyecto en KoboToolbox, la integración ya no funcionará hasta que la
+receta de integración se actualice con un nuevo proyecto.</p>
+<p><strong>¿Qué son los «tipos de columna»?</strong></p>
+<p>Un «tipo de columna» en monday.com es un tipo de pregunta en KoboToolbox.</p>
+<p><strong>¿Qué tipos de preguntas de KoboToolbox se pueden transferir a monday.com?</strong></p>
+<p>Todos los <a class="reference internal" href="question_types.html"><span class="std std-doc">tipos de preguntas</span></a> excepto XML Externo son compatibles con monday.com. Si
+no puedes encontrar el tipo de columna apropiado en el tablero de monday.com, usa una columna de tipo Texto.</p>
+<p>Para transferir los tipos de preguntas <a class="reference internal" href="gps_questions.html"><span class="std std-doc">Punto</span></a> y <a class="reference internal" href="gps_questions.html"><span class="std std-doc">Área</span></a> en KoboToolbox al tipo de columna Ubicación en el tablero de monday.com, usa el enfoque descrito en <a class="reference internal" href="#notas-importantes">Nota importante #2</a>. Si no es crucial tener datos transferidos a la columna Ubicación, entonces se puede usar una sola columna de tipo Texto sin adiciones.</p>
+<p><strong>¿Cómo se transfieren las preguntas de Seleccionar Múltiple en KoboToolbox a monday.com?</strong></p>
+<p>Para las preguntas de <a class="reference internal" href="select_one_and_select_many.html"><span class="std std-doc">Seleccionar Múltiple</span></a>, se debe usar una columna de tipo Desplegable en
+el tablero de monday.com para que todas las opciones seleccionadas se transfieran correctamente al
+tablero.</p>
+<p><strong>¿Cómo se transfieren las preguntas de Seleccionar Uno en KoboToolbox a monday.com?</strong></p>
+<p>Para las preguntas de <a class="reference internal" href="select_one_and_select_many.html"><span class="std std-doc">Seleccionar Uno</span></a>, usa una columna de tipo Estado (limitado a 40 opciones de etiqueta), Desplegable o Texto para que la opción seleccionada se transfiera correctamente al tablero.</p>
+<p><strong>¿Puedo sincronizar más de un proyecto de KoboToolbox con mi tablero de monday?</strong></p>
+<p>No. Solo se puede establecer una receta de integración de KoboToolbox por tablero.
+Tener más de una receta generará un error del servidor.</p>
+<p><strong>¿Por qué no puedo cambiar una receta creada por otro/a miembro/a del tablero de monday.com?</strong></p>
+<p>Solo el/la miembro/a del tablero que creó la receta puede editarla. Todos/as los/as demás miembros/as del tablero solo pueden abrirla en modo de solo lectura.</p>
+</section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Integración de KoboToolbox en monday.com"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Integración de KoboToolbox en monday.com</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#funcionalidades">Funcionalidades</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instalacion-y-primer-uso">Instalación y primer uso</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preguntas-frecuentes">Preguntas frecuentes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Questions from the community</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "kobotoolbox_monday_integration",
+      currentTitle: "Integración de KoboToolbox en monday.com",
+      currentUrl: ("index.html").replace("index.html", "kobotoolbox_monday_integration.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

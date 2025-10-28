@@ -1,0 +1,1985 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>k-icons</title>
+  <style>
+    body {
+      font-size: 20px;
+      margin: 2em;
+    }
+    
+    .preview-table {
+      border-collapse: collapse;
+    }
+
+    .preview-table th,
+    .preview-table td {
+      border-bottom: 1px solid hsl(0, 0%, 80%);
+      padding: 0.5em;
+      line-height: 1;
+    }
+
+    .preview-table th {
+      text-align: left;
+      border-bottom-width: 2px;
+    }
+    
+    .preview-table th.icon,
+    .preview-table td.icon {
+      text-align: center;
+    }
+    
+    .preview-table td.icon {
+      font-size: 2em;
+      padding: 0;
+    }
+    
+    .preview-table td.code {
+      font-family: monospace;
+      background: hsl(0, 0%, 90%);
+    }
+    
+    .preview-table pre {
+      margin: 0;
+    }
+    
+    .k-icon {
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    @font-face {
+  font-family: "k-icons";
+  src: url("./k-icons.woff2?f67f25bf128f41976751367577b5a695") format("woff2"),
+url("./k-icons.woff?f67f25bf128f41976751367577b5a695") format("woff"),
+url("./k-icons.ttf?f67f25bf128f41976751367577b5a695") format("truetype"),
+url("./k-icons.eot?f67f25bf128f41976751367577b5a695?#iefix") format("embedded-opentype"),
+url("./k-icons.svg?f67f25bf128f41976751367577b5a695#k-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.k-icon,
+[class^="k-icon-"] {
+  font-family: "k-icons";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.k-icon::before,
+[class^="k-icon-"]::before,
+[class*=" k-icon-"]::before {
+  font-family: "k-icons" !important;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes */
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.k-icon-alert::before {content: "\f101";}
+.k-icon-angle-bar-left::before {content: "\f102";}
+.k-icon-angle-bar-right::before {content: "\f103";}
+.k-icon-angle-down::before {content: "\f104";}
+.k-icon-angle-left::before {content: "\f105";}
+.k-icon-angle-right::before {content: "\f106";}
+.k-icon-angle-up::before {content: "\f107";}
+.k-icon-archived::before {content: "\f108";}
+.k-icon-arrow-down-left::before {content: "\f109";}
+.k-icon-arrow-down-right::before {content: "\f10a";}
+.k-icon-arrow-down::before {content: "\f10b";}
+.k-icon-arrow-left::before {content: "\f10c";}
+.k-icon-arrow-right::before {content: "\f10d";}
+.k-icon-arrow-up-left::before {content: "\f10e";}
+.k-icon-arrow-up-right::before {content: "\f10f";}
+.k-icon-arrow-up::before {content: "\f110";}
+.k-icon-attach::before {content: "\f111";}
+.k-icon-block::before {content: "\f112";}
+.k-icon-caret-down::before {content: "\f113";}
+.k-icon-caret-left::before {content: "\f114";}
+.k-icon-caret-right::before {content: "\f115";}
+.k-icon-caret-up::before {content: "\f116";}
+.k-icon-cascading::before {content: "\f117";}
+.k-icon-check-circle::before {content: "\f118";}
+.k-icon-check::before {content: "\f119";}
+.k-icon-close::before {content: "\f11a";}
+.k-icon-data-sync::before {content: "\f11b";}
+.k-icon-deploy::before {content: "\f11c";}
+.k-icon-document::before {content: "\f11d";}
+.k-icon-download::before {content: "\f11e";}
+.k-icon-drafts::before {content: "\f11f";}
+.k-icon-drag-handle::before {content: "\f120";}
+.k-icon-duplicate::before {content: "\f121";}
+.k-icon-edit::before {content: "\f122";}
+.k-icon-editor::before {content: "\f123";}
+.k-icon-email::before {content: "\f124";}
+.k-icon-expand-arrow::before {content: "\f125";}
+.k-icon-expand-list::before {content: "\f126";}
+.k-icon-expand::before {content: "\f127";}
+.k-icon-file-audio::before {content: "\f128";}
+.k-icon-file-image::before {content: "\f129";}
+.k-icon-file-video::before {content: "\f12a";}
+.k-icon-file-xls::before {content: "\f12b";}
+.k-icon-file-xml::before {content: "\f12c";}
+.k-icon-file::before {content: "\f12d";}
+.k-icon-filter-arrows::before {content: "\f12e";}
+.k-icon-filter::before {content: "\f12f";}
+.k-icon-flows::before {content: "\f130";}
+.k-icon-folder-in::before {content: "\f131";}
+.k-icon-folder-out::before {content: "\f132";}
+.k-icon-folder-plus::before {content: "\f133";}
+.k-icon-folder-public::before {content: "\f134";}
+.k-icon-folder-shared::before {content: "\f135";}
+.k-icon-folder-subscribed::before {content: "\f136";}
+.k-icon-folder::before {content: "\f137";}
+.k-icon-freeze::before {content: "\f138";}
+.k-icon-gallery::before {content: "\f139";}
+.k-icon-globe-alt::before {content: "\f13a";}
+.k-icon-group-split::before {content: "\f13b";}
+.k-icon-group::before {content: "\f13c";}
+.k-icon-heatmap::before {content: "\f13d";}
+.k-icon-help-academy::before {content: "\f13e";}
+.k-icon-help-articles::before {content: "\f13f";}
+.k-icon-help-forum::before {content: "\f140";}
+.k-icon-help::before {content: "\f141";}
+.k-icon-hide::before {content: "\f142";}
+.k-icon-information::before {content: "\f143";}
+.k-icon-intercom::before {content: "\f144";}
+.k-icon-kobo::before {content: "\f145";}
+.k-icon-language-alt::before {content: "\f146";}
+.k-icon-language-default::before {content: "\f147";}
+.k-icon-language-settings::before {content: "\f148";}
+.k-icon-language::before {content: "\f149";}
+.k-icon-layer::before {content: "\f14a";}
+.k-icon-library-public::before {content: "\f14b";}
+.k-icon-library::before {content: "\f14c";}
+.k-icon-link::before {content: "\f14d";}
+.k-icon-lock-alt::before {content: "\f14e";}
+.k-icon-lock::before {content: "\f14f";}
+.k-icon-logo-github::before {content: "\f150";}
+.k-icon-logo-instagram::before {content: "\f151";}
+.k-icon-logo-linkedin::before {content: "\f152";}
+.k-icon-logo-twitter::before {content: "\f153";}
+.k-icon-logout::before {content: "\f154";}
+.k-icon-mail::before {content: "\f155";}
+.k-icon-map-view::before {content: "\f156";}
+.k-icon-media-files::before {content: "\f157";}
+.k-icon-menu::before {content: "\f158";}
+.k-icon-minus::before {content: "\f159";}
+.k-icon-more-vertical::before {content: "\f15a";}
+.k-icon-more::before {content: "\f15b";}
+.k-icon-notification::before {content: "\f15c";}
+.k-icon-pause::before {content: "\f15d";}
+.k-icon-pdf::before {content: "\f15e";}
+.k-icon-pins::before {content: "\f15f";}
+.k-icon-play::before {content: "\f160";}
+.k-icon-plus::before {content: "\f161";}
+.k-icon-print::before {content: "\f162";}
+.k-icon-project-archived::before {content: "\f163";}
+.k-icon-project-deployed::before {content: "\f164";}
+.k-icon-project-draft::before {content: "\f165";}
+.k-icon-project-locked::before {content: "\f166";}
+.k-icon-project-overview::before {content: "\f167";}
+.k-icon-project::before {content: "\f168";}
+.k-icon-projects::before {content: "\f169";}
+.k-icon-qt-acknowledge-lock::before {content: "\f16a";}
+.k-icon-qt-acknowledge::before {content: "\f16b";}
+.k-icon-qt-area-lock::before {content: "\f16c";}
+.k-icon-qt-area::before {content: "\f16d";}
+.k-icon-qt-audio-lock::before {content: "\f16e";}
+.k-icon-qt-audio::before {content: "\f16f";}
+.k-icon-qt-background-audio::before {content: "\f170";}
+.k-icon-qt-barcode-lock::before {content: "\f171";}
+.k-icon-qt-barcode::before {content: "\f172";}
+.k-icon-qt-calculate-lock::before {content: "\f173";}
+.k-icon-qt-calculate::before {content: "\f174";}
+.k-icon-qt-date-lock::before {content: "\f175";}
+.k-icon-qt-date-time-lock::before {content: "\f176";}
+.k-icon-qt-date-time::before {content: "\f177";}
+.k-icon-qt-date::before {content: "\f178";}
+.k-icon-qt-decimal-lock::before {content: "\f179";}
+.k-icon-qt-decimal::before {content: "\f17a";}
+.k-icon-qt-external-xml-lock::before {content: "\f17b";}
+.k-icon-qt-external-xml::before {content: "\f17c";}
+.k-icon-qt-file-lock::before {content: "\f17d";}
+.k-icon-qt-file::before {content: "\f17e";}
+.k-icon-qt-hidden-lock::before {content: "\f17f";}
+.k-icon-qt-hidden::before {content: "\f180";}
+.k-icon-qt-line-lock::before {content: "\f181";}
+.k-icon-qt-line::before {content: "\f182";}
+.k-icon-qt-meta-default::before {content: "\f183";}
+.k-icon-qt-note-lock::before {content: "\f184";}
+.k-icon-qt-note::before {content: "\f185";}
+.k-icon-qt-number-lock::before {content: "\f186";}
+.k-icon-qt-number::before {content: "\f187";}
+.k-icon-qt-photo-lock::before {content: "\f188";}
+.k-icon-qt-photo::before {content: "\f189";}
+.k-icon-qt-point-lock::before {content: "\f18a";}
+.k-icon-qt-point::before {content: "\f18b";}
+.k-icon-qt-question-matrix-lock::before {content: "\f18c";}
+.k-icon-qt-question-matrix::before {content: "\f18d";}
+.k-icon-qt-range-lock::before {content: "\f18e";}
+.k-icon-qt-range::before {content: "\f18f";}
+.k-icon-qt-ranking-lock::before {content: "\f190";}
+.k-icon-qt-ranking::before {content: "\f191";}
+.k-icon-qt-rating-lock::before {content: "\f192";}
+.k-icon-qt-rating::before {content: "\f193";}
+.k-icon-qt-select-many-from-file-lock::before {content: "\f194";}
+.k-icon-qt-select-many-from-file::before {content: "\f195";}
+.k-icon-qt-select-many-lock::before {content: "\f196";}
+.k-icon-qt-select-many::before {content: "\f197";}
+.k-icon-qt-select-one-from-file-lock::before {content: "\f198";}
+.k-icon-qt-select-one-from-file::before {content: "\f199";}
+.k-icon-qt-select-one-lock::before {content: "\f19a";}
+.k-icon-qt-select-one::before {content: "\f19b";}
+.k-icon-qt-text-lock::before {content: "\f19c";}
+.k-icon-qt-text::before {content: "\f19d";}
+.k-icon-qt-time-lock::before {content: "\f19e";}
+.k-icon-qt-time::before {content: "\f19f";}
+.k-icon-qt-video-lock::before {content: "\f1a0";}
+.k-icon-qt-video::before {content: "\f1a1";}
+.k-icon-question::before {content: "\f1a2";}
+.k-icon-replace::before {content: "\f1a3";}
+.k-icon-reports::before {content: "\f1a4";}
+.k-icon-search::before {content: "\f1a5";}
+.k-icon-settings::before {content: "\f1a6";}
+.k-icon-skip-logic::before {content: "\f1a7";}
+.k-icon-sort-ascending::before {content: "\f1a8";}
+.k-icon-sort-default::before {content: "\f1a9";}
+.k-icon-sort-descending::before {content: "\f1aa";}
+.k-icon-spinner::before {content: "\f1ab";}
+.k-icon-spreadsheet::before {content: "\f1ac";}
+.k-icon-stop::before {content: "\f1ad";}
+.k-icon-subscribe::before {content: "\f1ae";}
+.k-icon-table::before {content: "\f1af";}
+.k-icon-tag::before {content: "\f1b0";}
+.k-icon-template-locked::before {content: "\f1b1";}
+.k-icon-template::before {content: "\f1b2";}
+.k-icon-trash::before {content: "\f1b3";}
+.k-icon-unfreeze::before {content: "\f1b4";}
+.k-icon-unsubscribe::before {content: "\f1b5";}
+.k-icon-upload::before {content: "\f1b6";}
+.k-icon-user-share::before {content: "\f1b7";}
+.k-icon-user::before {content: "\f1b8";}
+.k-icon-users::before {content: "\f1b9";}
+.k-icon-view-all::before {content: "\f1ba";}
+.k-icon-view::before {content: "\f1bb";}
+.k-icon-warning::before {content: "\f1bc";}
+
+  </style>
+</head>
+<body>
+  <h1>k-icons</h1>
+
+  <table class="preview-table">
+    <tr>
+      <th>name</th>
+      <th class="icon">icon</th>
+      <th>copy paste snippet</th>
+    </tr>
+    
+    <tr>
+      <td class="name">alert</td>
+      <td class="icon">
+        <i class="k-icon k-icon-alert"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-alert"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">angle-bar-left</td>
+      <td class="icon">
+        <i class="k-icon k-icon-angle-bar-left"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-angle-bar-left"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">angle-bar-right</td>
+      <td class="icon">
+        <i class="k-icon k-icon-angle-bar-right"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-angle-bar-right"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">angle-down</td>
+      <td class="icon">
+        <i class="k-icon k-icon-angle-down"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-angle-down"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">angle-left</td>
+      <td class="icon">
+        <i class="k-icon k-icon-angle-left"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-angle-left"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">angle-right</td>
+      <td class="icon">
+        <i class="k-icon k-icon-angle-right"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-angle-right"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">angle-up</td>
+      <td class="icon">
+        <i class="k-icon k-icon-angle-up"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-angle-up"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">archived</td>
+      <td class="icon">
+        <i class="k-icon k-icon-archived"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-archived"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">arrow-down-left</td>
+      <td class="icon">
+        <i class="k-icon k-icon-arrow-down-left"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-arrow-down-left"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">arrow-down-right</td>
+      <td class="icon">
+        <i class="k-icon k-icon-arrow-down-right"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-arrow-down-right"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">arrow-down</td>
+      <td class="icon">
+        <i class="k-icon k-icon-arrow-down"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-arrow-down"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">arrow-left</td>
+      <td class="icon">
+        <i class="k-icon k-icon-arrow-left"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-arrow-left"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">arrow-right</td>
+      <td class="icon">
+        <i class="k-icon k-icon-arrow-right"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-arrow-right"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">arrow-up-left</td>
+      <td class="icon">
+        <i class="k-icon k-icon-arrow-up-left"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-arrow-up-left"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">arrow-up-right</td>
+      <td class="icon">
+        <i class="k-icon k-icon-arrow-up-right"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-arrow-up-right"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">arrow-up</td>
+      <td class="icon">
+        <i class="k-icon k-icon-arrow-up"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-arrow-up"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">attach</td>
+      <td class="icon">
+        <i class="k-icon k-icon-attach"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-attach"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">block</td>
+      <td class="icon">
+        <i class="k-icon k-icon-block"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-block"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">caret-down</td>
+      <td class="icon">
+        <i class="k-icon k-icon-caret-down"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-caret-down"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">caret-left</td>
+      <td class="icon">
+        <i class="k-icon k-icon-caret-left"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-caret-left"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">caret-right</td>
+      <td class="icon">
+        <i class="k-icon k-icon-caret-right"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-caret-right"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">caret-up</td>
+      <td class="icon">
+        <i class="k-icon k-icon-caret-up"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-caret-up"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">cascading</td>
+      <td class="icon">
+        <i class="k-icon k-icon-cascading"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-cascading"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">check-circle</td>
+      <td class="icon">
+        <i class="k-icon k-icon-check-circle"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-check-circle"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">check</td>
+      <td class="icon">
+        <i class="k-icon k-icon-check"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-check"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">close</td>
+      <td class="icon">
+        <i class="k-icon k-icon-close"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-close"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">data-sync</td>
+      <td class="icon">
+        <i class="k-icon k-icon-data-sync"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-data-sync"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">deploy</td>
+      <td class="icon">
+        <i class="k-icon k-icon-deploy"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-deploy"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">document</td>
+      <td class="icon">
+        <i class="k-icon k-icon-document"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-document"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">download</td>
+      <td class="icon">
+        <i class="k-icon k-icon-download"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-download"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">drafts</td>
+      <td class="icon">
+        <i class="k-icon k-icon-drafts"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-drafts"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">drag-handle</td>
+      <td class="icon">
+        <i class="k-icon k-icon-drag-handle"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-drag-handle"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">duplicate</td>
+      <td class="icon">
+        <i class="k-icon k-icon-duplicate"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-duplicate"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">edit</td>
+      <td class="icon">
+        <i class="k-icon k-icon-edit"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-edit"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">editor</td>
+      <td class="icon">
+        <i class="k-icon k-icon-editor"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-editor"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">email</td>
+      <td class="icon">
+        <i class="k-icon k-icon-email"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-email"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">expand-arrow</td>
+      <td class="icon">
+        <i class="k-icon k-icon-expand-arrow"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-expand-arrow"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">expand-list</td>
+      <td class="icon">
+        <i class="k-icon k-icon-expand-list"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-expand-list"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">expand</td>
+      <td class="icon">
+        <i class="k-icon k-icon-expand"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-expand"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">file-audio</td>
+      <td class="icon">
+        <i class="k-icon k-icon-file-audio"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-file-audio"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">file-image</td>
+      <td class="icon">
+        <i class="k-icon k-icon-file-image"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-file-image"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">file-video</td>
+      <td class="icon">
+        <i class="k-icon k-icon-file-video"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-file-video"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">file-xls</td>
+      <td class="icon">
+        <i class="k-icon k-icon-file-xls"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-file-xls"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">file-xml</td>
+      <td class="icon">
+        <i class="k-icon k-icon-file-xml"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-file-xml"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">file</td>
+      <td class="icon">
+        <i class="k-icon k-icon-file"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-file"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">filter-arrows</td>
+      <td class="icon">
+        <i class="k-icon k-icon-filter-arrows"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-filter-arrows"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">filter</td>
+      <td class="icon">
+        <i class="k-icon k-icon-filter"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-filter"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">flows</td>
+      <td class="icon">
+        <i class="k-icon k-icon-flows"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-flows"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">folder-in</td>
+      <td class="icon">
+        <i class="k-icon k-icon-folder-in"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-folder-in"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">folder-out</td>
+      <td class="icon">
+        <i class="k-icon k-icon-folder-out"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-folder-out"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">folder-plus</td>
+      <td class="icon">
+        <i class="k-icon k-icon-folder-plus"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-folder-plus"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">folder-public</td>
+      <td class="icon">
+        <i class="k-icon k-icon-folder-public"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-folder-public"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">folder-shared</td>
+      <td class="icon">
+        <i class="k-icon k-icon-folder-shared"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-folder-shared"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">folder-subscribed</td>
+      <td class="icon">
+        <i class="k-icon k-icon-folder-subscribed"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-folder-subscribed"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">folder</td>
+      <td class="icon">
+        <i class="k-icon k-icon-folder"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-folder"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">freeze</td>
+      <td class="icon">
+        <i class="k-icon k-icon-freeze"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-freeze"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">gallery</td>
+      <td class="icon">
+        <i class="k-icon k-icon-gallery"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-gallery"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">globe-alt</td>
+      <td class="icon">
+        <i class="k-icon k-icon-globe-alt"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-globe-alt"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">group-split</td>
+      <td class="icon">
+        <i class="k-icon k-icon-group-split"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-group-split"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">group</td>
+      <td class="icon">
+        <i class="k-icon k-icon-group"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-group"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">heatmap</td>
+      <td class="icon">
+        <i class="k-icon k-icon-heatmap"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-heatmap"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">help-academy</td>
+      <td class="icon">
+        <i class="k-icon k-icon-help-academy"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-help-academy"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">help-articles</td>
+      <td class="icon">
+        <i class="k-icon k-icon-help-articles"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-help-articles"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">help-forum</td>
+      <td class="icon">
+        <i class="k-icon k-icon-help-forum"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-help-forum"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">help</td>
+      <td class="icon">
+        <i class="k-icon k-icon-help"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-help"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">hide</td>
+      <td class="icon">
+        <i class="k-icon k-icon-hide"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-hide"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">information</td>
+      <td class="icon">
+        <i class="k-icon k-icon-information"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-information"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">intercom</td>
+      <td class="icon">
+        <i class="k-icon k-icon-intercom"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-intercom"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">kobo</td>
+      <td class="icon">
+        <i class="k-icon k-icon-kobo"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-kobo"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">language-alt</td>
+      <td class="icon">
+        <i class="k-icon k-icon-language-alt"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-language-alt"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">language-default</td>
+      <td class="icon">
+        <i class="k-icon k-icon-language-default"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-language-default"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">language-settings</td>
+      <td class="icon">
+        <i class="k-icon k-icon-language-settings"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-language-settings"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">language</td>
+      <td class="icon">
+        <i class="k-icon k-icon-language"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-language"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">layer</td>
+      <td class="icon">
+        <i class="k-icon k-icon-layer"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-layer"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">library-public</td>
+      <td class="icon">
+        <i class="k-icon k-icon-library-public"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-library-public"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">library</td>
+      <td class="icon">
+        <i class="k-icon k-icon-library"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-library"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">link</td>
+      <td class="icon">
+        <i class="k-icon k-icon-link"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-link"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">lock-alt</td>
+      <td class="icon">
+        <i class="k-icon k-icon-lock-alt"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-lock-alt"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">logo-github</td>
+      <td class="icon">
+        <i class="k-icon k-icon-logo-github"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-logo-github"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">logo-instagram</td>
+      <td class="icon">
+        <i class="k-icon k-icon-logo-instagram"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-logo-instagram"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">logo-linkedin</td>
+      <td class="icon">
+        <i class="k-icon k-icon-logo-linkedin"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-logo-linkedin"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">logo-twitter</td>
+      <td class="icon">
+        <i class="k-icon k-icon-logo-twitter"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-logo-twitter"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">logout</td>
+      <td class="icon">
+        <i class="k-icon k-icon-logout"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-logout"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">mail</td>
+      <td class="icon">
+        <i class="k-icon k-icon-mail"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-mail"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">map-view</td>
+      <td class="icon">
+        <i class="k-icon k-icon-map-view"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-map-view"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">media-files</td>
+      <td class="icon">
+        <i class="k-icon k-icon-media-files"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-media-files"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">menu</td>
+      <td class="icon">
+        <i class="k-icon k-icon-menu"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-menu"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">minus</td>
+      <td class="icon">
+        <i class="k-icon k-icon-minus"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-minus"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">more-vertical</td>
+      <td class="icon">
+        <i class="k-icon k-icon-more-vertical"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-more-vertical"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">more</td>
+      <td class="icon">
+        <i class="k-icon k-icon-more"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-more"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">notification</td>
+      <td class="icon">
+        <i class="k-icon k-icon-notification"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-notification"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">pause</td>
+      <td class="icon">
+        <i class="k-icon k-icon-pause"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-pause"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">pdf</td>
+      <td class="icon">
+        <i class="k-icon k-icon-pdf"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-pdf"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">pins</td>
+      <td class="icon">
+        <i class="k-icon k-icon-pins"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-pins"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">play</td>
+      <td class="icon">
+        <i class="k-icon k-icon-play"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-play"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">plus</td>
+      <td class="icon">
+        <i class="k-icon k-icon-plus"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-plus"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">print</td>
+      <td class="icon">
+        <i class="k-icon k-icon-print"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-print"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">project-archived</td>
+      <td class="icon">
+        <i class="k-icon k-icon-project-archived"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-project-archived"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">project-deployed</td>
+      <td class="icon">
+        <i class="k-icon k-icon-project-deployed"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-project-deployed"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">project-draft</td>
+      <td class="icon">
+        <i class="k-icon k-icon-project-draft"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-project-draft"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">project-locked</td>
+      <td class="icon">
+        <i class="k-icon k-icon-project-locked"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-project-locked"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">project-overview</td>
+      <td class="icon">
+        <i class="k-icon k-icon-project-overview"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-project-overview"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">project</td>
+      <td class="icon">
+        <i class="k-icon k-icon-project"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-project"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">projects</td>
+      <td class="icon">
+        <i class="k-icon k-icon-projects"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-projects"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-acknowledge-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-acknowledge-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-acknowledge-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-acknowledge</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-acknowledge"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-acknowledge"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-area-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-area-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-area-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-area</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-area"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-area"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-audio-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-audio-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-audio-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-audio</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-audio"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-audio"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-background-audio</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-background-audio"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-background-audio"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-barcode-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-barcode-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-barcode-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-barcode</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-barcode"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-barcode"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-calculate-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-calculate-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-calculate-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-calculate</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-calculate"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-calculate"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-date-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-date-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-date-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-date-time-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-date-time-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-date-time-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-date-time</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-date-time"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-date-time"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-date</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-date"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-date"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-decimal-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-decimal-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-decimal-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-decimal</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-decimal"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-decimal"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-external-xml-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-external-xml-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-external-xml-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-external-xml</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-external-xml"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-external-xml"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-file-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-file-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-file-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-file</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-file"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-file"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-hidden-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-hidden-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-hidden-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-hidden</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-hidden"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-hidden"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-line-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-line-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-line-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-line</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-line"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-line"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-meta-default</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-meta-default"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-meta-default"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-note-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-note-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-note-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-note</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-note"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-note"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-number-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-number-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-number-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-number</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-number"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-number"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-photo-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-photo-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-photo-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-photo</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-photo"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-photo"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-point-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-point-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-point-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-point</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-point"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-point"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-question-matrix-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-question-matrix-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-question-matrix-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-question-matrix</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-question-matrix"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-question-matrix"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-range-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-range-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-range-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-range</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-range"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-range"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-ranking-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-ranking-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-ranking-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-ranking</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-ranking"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-ranking"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-rating-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-rating-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-rating-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-rating</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-rating"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-rating"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-select-many-from-file-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-select-many-from-file-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-select-many-from-file-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-select-many-from-file</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-select-many-from-file"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-select-many-from-file"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-select-many-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-select-many-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-select-many-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-select-many</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-select-many"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-select-many"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-select-one-from-file-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-select-one-from-file-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-select-one-from-file-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-select-one-from-file</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-select-one-from-file"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-select-one-from-file"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-select-one-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-select-one-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-select-one-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-select-one</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-select-one"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-select-one"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-text-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-text-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-text-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-text</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-text"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-text"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-time-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-time-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-time-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-time</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-time"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-time"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-video-lock</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-video-lock"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-video-lock"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">qt-video</td>
+      <td class="icon">
+        <i class="k-icon k-icon-qt-video"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-qt-video"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">question</td>
+      <td class="icon">
+        <i class="k-icon k-icon-question"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-question"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">replace</td>
+      <td class="icon">
+        <i class="k-icon k-icon-replace"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-replace"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">reports</td>
+      <td class="icon">
+        <i class="k-icon k-icon-reports"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-reports"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">search</td>
+      <td class="icon">
+        <i class="k-icon k-icon-search"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-search"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">settings</td>
+      <td class="icon">
+        <i class="k-icon k-icon-settings"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-settings"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">skip-logic</td>
+      <td class="icon">
+        <i class="k-icon k-icon-skip-logic"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-skip-logic"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">sort-ascending</td>
+      <td class="icon">
+        <i class="k-icon k-icon-sort-ascending"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-sort-ascending"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">sort-default</td>
+      <td class="icon">
+        <i class="k-icon k-icon-sort-default"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-sort-default"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">sort-descending</td>
+      <td class="icon">
+        <i class="k-icon k-icon-sort-descending"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-sort-descending"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">spinner</td>
+      <td class="icon">
+        <i class="k-icon k-icon-spinner"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-spinner"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">spreadsheet</td>
+      <td class="icon">
+        <i class="k-icon k-icon-spreadsheet"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-spreadsheet"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">stop</td>
+      <td class="icon">
+        <i class="k-icon k-icon-stop"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-stop"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">subscribe</td>
+      <td class="icon">
+        <i class="k-icon k-icon-subscribe"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-subscribe"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">table</td>
+      <td class="icon">
+        <i class="k-icon k-icon-table"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-table"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">tag</td>
+      <td class="icon">
+        <i class="k-icon k-icon-tag"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-tag"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">template-locked</td>
+      <td class="icon">
+        <i class="k-icon k-icon-template-locked"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-template-locked"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">template</td>
+      <td class="icon">
+        <i class="k-icon k-icon-template"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-template"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">trash</td>
+      <td class="icon">
+        <i class="k-icon k-icon-trash"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-trash"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">unfreeze</td>
+      <td class="icon">
+        <i class="k-icon k-icon-unfreeze"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-unfreeze"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">unsubscribe</td>
+      <td class="icon">
+        <i class="k-icon k-icon-unsubscribe"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-unsubscribe"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">upload</td>
+      <td class="icon">
+        <i class="k-icon k-icon-upload"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-upload"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">user-share</td>
+      <td class="icon">
+        <i class="k-icon k-icon-user-share"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-user-share"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">user</td>
+      <td class="icon">
+        <i class="k-icon k-icon-user"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-user"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">users</td>
+      <td class="icon">
+        <i class="k-icon k-icon-users"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-users"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">view-all</td>
+      <td class="icon">
+        <i class="k-icon k-icon-view-all"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-view-all"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">view</td>
+      <td class="icon">
+        <i class="k-icon k-icon-view"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-view"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+    <tr>
+      <td class="name">warning</td>
+      <td class="icon">
+        <i class="k-icon k-icon-warning"></i>
+      </td>
+      <td class="code">
+        <pre><code>&lt;i class="k-icon k-icon-warning"&gt;&lt;/i&gt;</code></pre>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

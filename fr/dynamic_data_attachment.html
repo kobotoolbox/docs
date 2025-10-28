@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Pièces jointes de données dynamiques &#8212; Documentation KoboToolbox </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Fonctionnalité Pull Data dans KoboToolbox" href="pull_data_kobotoolbox.html" />
+    <link rel="prev" title="Ajouter une autre langue à votre XLSForm" href="language_xls.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://www.kobotoolbox.org/features">Features</a></li>
+      <li><a href="https://www.kobotoolbox.org/services">Services</a></li>
+      <li><a href="https://www.kobotoolbox.org/pricing">Pricing</a></li>
+      <li><a href="https://www.kobotoolbox.org/blog">Blog</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="dynamic_data_attachment">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="pieces-jointes-de-donnees-dynamiques">
+<h1>Pièces jointes de données dynamiques<a class="headerlink" href="#pieces-jointes-de-donnees-dynamiques" title="Lien vers cette rubrique">¶</a></h1>
+<p><a href="../dynamic_data_attachment.html">Read in English</a> | <a href="../es/dynamic_data_attachment.html">Leer en español</a> | <a href="../ar/dynamic_data_attachment.html">اقرأ باللغة العربية</a>
+<strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/0c4cbe231491ab3ee9bd1e3a82967d30ac63e2c6/source/dynamic_data_attachment.md" class="reference">15 oct. 2025</a></p>
+<p>La liaison dynamique vous permet d’utiliser les données d’un <strong>projet parent</strong> dans des <strong>projets enfants</strong>, simplifiant ainsi la gestion de la collecte de données longitudinales. Cet article explique comment lier dynamiquement des données entre des projets KoboToolbox.</p>
+<p class="note">
+    <strong>Remarque :</strong> Les pièces jointes de données dynamiques fonctionnent de manière similaire à la fonction <a href="https://support.kobotoolbox.org/fr/pull_data_kobotoolbox.html"><code>pulldata()</code></a>, mais éliminent le besoin de fichiers CSV séparés, puisque les données d'un projet parent lié servent de source de données.
+</p>
+<p>Vous pouvez récupérer diverses <strong>réponses non médiatiques</strong> d’un projet parent et effectuer des calculs sur ces données liées dans un projet enfant. Cela peut être utile pour récupérer des données de référence, des informations de contact ou des dossiers médicaux dans des études de cohorte, ou pour confirmer ou vérifier des données précédemment collectées.</p>
+<p>Nous recommandons d’utiliser <a class="reference internal" href="edit_forms_excel.html"><span class="std std-doc">XLSForm</span></a> pour configurer les pièces jointes de données dynamiques. Pour des exemples de projets parents et enfants, téléchargez des fichiers d’exemple <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx">ici</a> et <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx">ici</a>.</p>
+<section id="lier-dynamiquement-des-projets-dans-xlsform">
+<h2>Lier dynamiquement des projets dans XLSForm<a class="headerlink" href="#lier-dynamiquement-des-projets-dans-xlsform" title="Lien vers cette rubrique">¶</a></h2>
+<p>La liaison dynamique de projets nécessite un <strong>projet parent</strong> et au moins un <strong>projet enfant</strong>. Le <strong>projet parent</strong> ne nécessite aucune modification par rapport à un XLSForm normal. Cependant, la configuration du ou des <strong>projets enfants</strong> implique les étapes suivantes :</p>
+<ol class="arabic simple">
+<li><p>Dans la feuille <code class="docutils literal notranslate"><span class="pre">survey</span></code> de votre XLSForm, ajoutez une ligne et définissez le type de question sur <code class="docutils literal notranslate"><span class="pre">xml-external</span></code>.</p></li>
+<li><p>Dans la colonne <code class="docutils literal notranslate"><span class="pre">name</span></code>, fournissez un nom court pour le formulaire parent. Ce nom peut être composé de caractères de l’alphabet latin, de traits de soulignement et de chiffres.</p></li>
+</ol>
+<p><strong>Feuille survey</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>type</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>xml-external</p></td>
+<td class="text-left"><p>parent</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="3">
+<li><p>Tout au long du formulaire, vous pouvez récupérer des valeurs du projet parent en créant une nouvelle question et en incluant l’expression appropriée dans la colonne <code class="docutils literal notranslate"><span class="pre">calculation</span></code> (voir le tableau <a class="reference external" href="https://support.kobotoolbox.org/fr/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments">ci-dessous</a>). Vous pouvez utiliser les types de questions suivants pour récupérer des données :</p>
+<ul class="simple">
+<li><p>Utilisez un type de question <strong>calculate</strong> pour récupérer et stocker des valeurs pour une utilisation future dans le formulaire ou l’ensemble de données (par exemple, pour des calculs ou des libellés de questions dynamiques).</p></li>
+<li><p>Utilisez les types de questions <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong> ou <strong>select_multiple</strong> pour inclure les valeurs récupérées comme réponses par défaut dans des champs modifiables. Les données modifiées dans le projet enfant ne changeront pas les données d’origine dans le projet parent.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>Feuille survey</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>type</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+<th class="head text-left"><p>calculation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>xml-external</p></td>
+<td class="text-left"><p>parent</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>participant_id</p></td>
+<td class="text-left"><p>Quel est l’identifiant du participant ?</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>integer</p></td>
+<td class="text-left"><p>age</p></td>
+<td class="text-left"><p>Confirmez l’âge du participant</p></td>
+<td class="text-left"><p>instance(“parent”)/root/data[enrollment_id = current()/../participant_id]/age</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+   <strong>Remarque :</strong> 
+    Pour afficher des données liées sans permettre aux utilisatrices et utilisateurs de modifier le champ, utilisez une question <strong>calculate</strong> suivie d'une question <strong>note</strong> qui affiche la valeur calculée. Vous pouvez également utiliser des questions <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong> ou <strong>select_multiple</strong> avec la colonne <code>read_only</code> définie sur <code>TRUE</code>.
+</p>
+</section>
+<section id="syntaxe-de-calcul-pour-les-pieces-jointes-de-donnees-dynamiques">
+<h2>Syntaxe de calcul pour les pièces jointes de données dynamiques<a class="headerlink" href="#syntaxe-de-calcul-pour-les-pieces-jointes-de-donnees-dynamiques" title="Lien vers cette rubrique">¶</a></h2>
+<p>Dans la colonne <code class="docutils literal notranslate"><span class="pre">calculation</span></code> de la ligne où les données liées seront récupérées, incluez l’une des expressions du tableau ci-dessous. Ces expressions sont appelées <strong>XPaths</strong>.</p>
+<p>Pour chaque expression du tableau ci-dessous :</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">parent</span></code> est le nom unique attribué au <strong>formulaire parent</strong> (par exemple, dans la question <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> du <strong>formulaire enfant</strong>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_question</span></code> fait référence au <code class="docutils literal notranslate"><span class="pre">name</span></code> d’une question du <strong>formulaire parent</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">child_question</span></code> fait référence au <code class="docutils literal notranslate"><span class="pre">name</span></code> d’une question du <strong>formulaire enfant</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> est la question d’identification du <strong>formulaire parent</strong> qui le relie au <strong>formulaire enfant</strong> (par exemple, identifiant unique, nom de l’organisation).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">child_index_question</span></code> est la question d’identification du <strong>formulaire enfant</strong> qui le relie au <strong>formulaire parent</strong> (par exemple, identifiant unique, nom de l’organisation).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_group</span></code> fait référence au <code class="docutils literal notranslate"><span class="pre">name</span></code> du groupe dans le <strong>formulaire parent</strong> dans lequel se trouve la <code class="docutils literal notranslate"><span class="pre">parent_question</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_group</span></code> fait référence au <code class="docutils literal notranslate"><span class="pre">name</span></code> du groupe dans le <strong>formulaire parent</strong> dans lequel se trouve la <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code>.</p></li>
+</ul>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p><strong>XPath</strong></p></th>
+<th class="head text-left"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/data)</span></code></p></td>
+<td class="text-left"><p>Renvoie le nombre total de lignes dans le projet parent.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/</span> <span class="pre">data[parent_group/parent_question])</span></code></p></td>
+<td class="text-left"><p>Renvoie le nombre total de lignes dans le projet parent où <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (dans <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) n’est pas vide.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/</span> <span class="pre">data[parent_group/parent_question=</span> <span class="pre">current()/../child_question]</span></code></p></td>
+<td class="text-left"><p>Renvoie le nombre total d’instances où la valeur de <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (dans <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) dans le projet parent est égale à la valeur de <code class="docutils literal notranslate"><span class="pre">child_question</span></code> dans le projet enfant.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">instance('parent')/root/</span> <span class="pre">data[parent_index_group/parent_index_question=</span> <span class="pre">current()/../child_index_question]/parent_group/</span> <span class="pre">parent_question</span></code></p></td>
+<td class="text-left"><p>Renvoie la valeur de <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (dans <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) du projet parent où <code class="docutils literal notranslate"><span class="pre">child_index_question</span></code> dans le projet enfant est égale à <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> dans le projet parent.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">instance('parent')/root/</span> <span class="pre">data[parent_index_group/parent_index_question=</span> <span class="pre">current()/../child_index_question][position()=</span> <span class="pre">1]/parent_group/parent_question</span></code></p></td>
+<td class="text-left"><p>Identique à ce qui précède, mais spécifie que seules les données de la première instance de <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> doivent être renvoyées, en utilisant l’argument <code class="docutils literal notranslate"><span class="pre">[position()</span> <span class="pre">=</span> <span class="pre">1]</span></code>. Utilisé en cas de doublons possibles dans le formulaire parent.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">sum(instance('parent')/root/</span> <span class="pre">data/parent_group/parent_question)</span></code></p></td>
+<td class="text-left"><p>Renvoie la somme des valeurs de <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (dans <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) du projet parent. Notez que <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> doit être numérique.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">max(instance('parent')/root/</span> <span class="pre">data/parent_group/parent_question)</span></code></p></td>
+<td class="text-left"><p>Renvoie la valeur maximale saisie dans <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (dans <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) du projet parent. Notez que <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> doit être numérique.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">min(instance('parent')/root/</span> <span class="pre">data/parent_group/parent_question)</span></code></p></td>
+<td class="text-left"><p>Renvoie la valeur minimale saisie dans <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (dans <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) du projet parent. Notez que <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> doit être numérique.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+    <strong>Remarque :</strong> Si la question parent n'est incluse dans aucun groupe, omettez <code>parent_group</code> de l'expression.
+</p>
+</section>
+<section id="configuration-des-projets-pour-la-liaison-dynamique">
+<h2>Configuration des projets pour la liaison dynamique<a class="headerlink" href="#configuration-des-projets-pour-la-liaison-dynamique" title="Lien vers cette rubrique">¶</a></h2>
+<p>Une fois vos XLSForms configurés, connectez-vous à votre compte KoboToolbox et suivez ces étapes :</p>
+<ol class="arabic simple">
+<li><p>Importez et déployez le <strong>projet parent</strong>, s’il n’est pas déjà déployé. Assurez-vous que le projet parent contient au moins une soumission.</p></li>
+<li><p>Activez le partage de données pour le projet parent :</p>
+<ul class="simple">
+<li><p>Dans l’onglet <strong>PARAMÈTRES &gt; Connecter des projets</strong> du projet parent, activez le bouton <strong>Partage de données</strong> (désactivé par défaut) et cliquez sur <strong>RECONNAÎTRE ET CONTINUER</strong> dans la fenêtre de confirmation.</p></li>
+<li><p>Toutes les données sont partagées par défaut, mais vous pouvez restreindre des variables spécifiques à partager avec les projets enfants en cliquant sur « Sélectionner des questions spécifiques à partager ».</p></li>
+</ul>
+</li>
+</ol>
+<p class="note">
+    <strong>Remarque :</strong> Si les projets ont des propriétaires différents, le propriétaire du projet parent doit <a href="managing_permissions.html">partager le projet</a> avec le propriétaire du projet enfant. Les autorisations minimales requises pour que les pièces jointes de données dynamiques fonctionnent sont <strong>Voir le formulaire</strong> et <strong>Voir les soumissions</strong>. Notez que cela permet aux administratrices et administrateurs du projet enfant de voir toutes les données du projet parent.
+</p>
+<ol class="arabic simple" start="3">
+<li><p>Importez et déployez le <strong>projet enfant</strong>.</p></li>
+<li><p>Connectez le projet enfant au projet parent :</p>
+<ul class="simple">
+<li><p>Dans l’onglet <strong>PARAMÈTRES &gt; Connecter des projets</strong> du projet enfant, cliquez sur « Sélectionner un projet différent pour importer des données ». Un menu déroulant vous permettra de sélectionner un projet parent à lier.</p></li>
+<li><p>Renommez le projet parent lié avec le nom de question <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> défini dans le XLSForm et cliquez sur <strong>IMPORTER</strong>.</p></li>
+<li><p>Vous pouvez ensuite sélectionner des questions spécifiques du projet parent à partager avec le projet enfant, ou sélectionner toutes les questions.</p></li>
+</ul>
+</li>
+<li><p>Si vous ajoutez de nouveaux champs au formulaire parent et souhaitez les utiliser dans le projet enfant, réimportez le projet parent dans les paramètres du projet enfant.</p></li>
+</ol>
+<p class="note">
+    <strong>Remarque :</strong> Les formulaires ne peuvent être liés ensemble que s'ils se trouvent sur le même serveur KoboToolbox.
+</p>
+<iframe src="https://www.youtube.com/embed/pBqEsFlxqE4?si=6BPiDgOzU4LPO7zv" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</section>
+<section id="lier-dynamiquement-un-formulaire-a-lui-meme">
+<h2>Lier dynamiquement un formulaire à lui-même<a class="headerlink" href="#lier-dynamiquement-un-formulaire-a-lui-meme" title="Lien vers cette rubrique">¶</a></h2>
+<p>Il est possible qu’un projet parent et un projet enfant soient le même projet. Les étapes sont les mêmes que celles décrites ci-dessus. Voici des exemples de cas d’utilisation :</p>
+<ul class="simple">
+<li><p><strong>Suivi quotidien</strong> : Si un formulaire est utilisé pour interroger la même personne au fil du temps, vous pouvez le lier à lui-même pour compter les soumissions précédentes. Cela peut vous permettre d’afficher un message (par exemple, « le suivi est terminé ») après un certain nombre d’entrées ou d’informer l’enquêtrice ou l’enquêteur du nombre de formulaires soumis, comme illustré dans l’exemple ci-dessous.</p></li>
+</ul>
+<p><strong>Feuille survey</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>type</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+<th class="head text-left"><p>calculation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>xml-external</p></td>
+<td class="text-left"><p>monitoring</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>participant_id</p></td>
+<td class="text-left"><p>Quel est l’identifiant du participant ?</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>calculate</p></td>
+<td class="text-left"><p>count</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>count(instance(“monitoring”)/root/ data[monitoring/participant_id = current()/../participant_id])</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>note</p></td>
+<td class="text-left"><p>monitoring_note</p></td>
+<td class="text-left"><p>Ce participant a été interrogé ${count} fois.</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p><strong>Formulaire d’inscription</strong> : En liant un formulaire d’inscription à lui-même, vous pouvez vérifier si une utilisatrice ou un utilisateur a déjà été inscrit. Cela peut vous permettre de générer un message d’erreur ou d’ajouter une contrainte s’ils sont déjà inscrits, empêchant ainsi les inscriptions en double, comme illustré dans l’exemple ci-dessous.</p></li>
+</ul>
+<p><strong>Feuille survey</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>type</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+<th class="head text-left"><p>calculation</p></th>
+<th class="head text-left"><p>relevant</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>xml-external</p></td>
+<td class="text-left"><p>registration</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>customer_id</p></td>
+<td class="text-left"><p>Quel est le numéro d’identification du client ?</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>calculate</p></td>
+<td class="text-left"><p>count</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>count(instance(“registration”)/root/ data[registration/customer_id = current()/../customer_id])</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>note</p></td>
+<td class="text-left"><p>already_registered</p></td>
+<td class="text-left"><p>Ce client est déjà inscrit. Veuillez fermer ce formulaire.</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>${count} &gt; 0</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="collecte-et-gestion-des-donnees-avec-liaison-dynamique">
+<h2>Collecte et gestion des données avec liaison dynamique<a class="headerlink" href="#collecte-et-gestion-des-donnees-avec-liaison-dynamique" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les données des projets liés dynamiquement peuvent être collectées à l’aide de <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">l’application Android KoboCollect</span></a> ou des <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">formulaires web Enketo</span></a>.</p>
+<p>Lors de la collecte de données, notez ce qui suit :</p>
+<ul class="simple">
+<li><p>Le projet parent doit avoir au moins une soumission pour que le projet enfant fonctionne correctement.</p></li>
+<li><p>Lors de la collecte de données en ligne, il y a un délai de cinq minutes pour synchroniser les nouvelles données du projet parent avec le projet enfant.</p></li>
+<li><p>En mode hors ligne, téléchargez fréquemment le projet enfant pour assurer la synchronisation des données avec le projet parent.</p></li>
+</ul>
+<p class="note">
+    <strong>Remarque :</strong> Vous pouvez <a href="https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings">configurer l'application Android KoboCollect</a> pour mettre à jour automatiquement les données du projet parent lorsqu'une connexion Internet est disponible. Allez dans <strong>Paramètres > Gestion des formulaires > Mode de mise à jour des formulaires vierges</strong> et sélectionnez soit <strong>Formulaires précédemment téléchargés uniquement</strong>, soit <strong>Correspondance exacte avec le serveur</strong>. Vous pouvez définir la fréquence de téléchargement automatique toutes les 15 minutes, toutes les heures, toutes les six heures ou toutes les 24 heures. Notez que l'activation de ce paramètre peut augmenter la consommation de la batterie.
+</p>
+</section>
+<section id="depannage">
+<h2>Dépannage<a class="headerlink" href="#depannage" title="Lien vers cette rubrique">¶</a></h2>
+<details>
+<summary><strong>Erreur ou plantage lors de la liaison de formulaires</strong></summary>
+Les pièces jointes de données dynamiques ne peuvent pas se connecter à un projet parent vide. Ajoutez d'abord au moins une soumission au projet parent, puis liez à nouveau les formulaires.
+</details>
+<br>
+<details>
+<summary><strong>Les données parent ne s'affichent pas dans le formulaire enfant</strong></summary>
+Vérifiez que la syntaxe de calcul dans le formulaire enfant est correcte et que les questions pertinentes sont partagées dans les deux projets. Si votre question parent se trouve dans un groupe de questions, assurez-vous d'inclure le nom du groupe dans l'expression XPath. Notez que les nouvelles données du projet parent prennent jusqu'à cinq minutes pour se synchroniser lorsque vous êtes en ligne. Si vous ajoutez de nouveaux champs au formulaire parent et souhaitez les utiliser dans le projet enfant, ouvrez les paramètres du projet enfant, réimportez le projet parent et redéployez.
+</details>
+<br>
+<details>
+<summary><strong>Le formulaire enfant se charge lentement</strong></summary>
+Les pièces jointes de données dynamiques volumineuses peuvent ralentir le chargement du formulaire. Partagez uniquement les questions dont le formulaire enfant a besoin au lieu de la liste complète des questions, puis redéployez et réessayez.
+</details>
+<br>
+<details>
+<summary><strong>Les données dynamiques ne se rafraîchissent pas dans KoboCollect</strong></summary>
+Si vous utilisez KoboCollect et collectez des données hors ligne, les données doivent d'abord être soumises au projet parent, puis téléchargées sur votre appareil de collecte de données pour que la pièce jointe de données dynamiques fonctionne. Les deux étapes nécessitent une connexion Internet. Le téléchargement des données parent est similaire au téléchargement d'une nouvelle version d'un formulaire, et l'application KoboCollect peut être configurée pour <a href="https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings">télécharger automatiquement de nouvelles données</a> à une fréquence définie. Il n'est pas recommandé de s'appuyer sur les pièces jointes de données dynamiques pour les données collectées hors ligne dans un court laps de temps.
+</details>
+<br>
+<details>
+<summary><strong>La pièce jointe de données dynamiques ne fonctionne pas dans les groupes de questions</strong></summary>
+Pour extraire des données dynamiques d'un formulaire parent vers un formulaire enfant avec des groupes de questions, assurez-vous que la question d'index (par exemple, le numéro d'identification) dans le formulaire enfant se trouve dans le même groupe que le calcul pour les données dynamiques. Consultez les fichiers d'exemple <a href="https://community.kobotoolbox.org/uploads/short-url/z5RpC1M3wj9716z9qQ8pWx9Pb4V.xlsx">Round 1 (Within Groups).xlsx</a> et <a href="https://community.kobotoolbox.org/uploads/short-url/8JZvWJcrCxzKBllQYglRyAVyk03.xlsx">Round 2 (Within Groups).xlsx</a> pour un exemple de pièces jointes de données dynamiques dans des groupes.
+</details>
+<br>
+<details>
+<summary><strong>Erreur d'évaluation des champs dans KoboCollect</strong></summary>
+Si votre formulaire parent contient des soumissions en double, vous pouvez recevoir un message d'erreur dans KoboCollect indiquant « Erreur d'évaluation du champ / Évaluation XPath : incompatibilité de type / Ce champ est répété ». Pour résoudre ce problème et extraire des données uniquement de la première soumission contenant une valeur d'index spécifique, utilisez l'argument <code>[position()=1]</code>, comme ci-dessous :
+<br><br>
+<code>instance('parent')/root/data[parent_index_group/parent_index_question = current()/../child_index_question][position()=1]/parent_group/parent_question</code>
+</details></section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Pièces jointes de données dynamiques"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">Premiers Pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Introduction à KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte sur KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Premiers pas avec l’interface de création de formulaires KoboToolbox (KoboToolbox Formbuilder)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Débuter avec XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Compte et Facturation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte sur KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Dépannage du lien d’activation de compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Réinitialisation des mots de passe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configuration de l’authentification à deux facteurs dans KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utilisation du Formbuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Premiers pas avec l’interface de création de formulaires KoboToolbox (KoboToolbox Formbuilder)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Liste des types de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Types de questions Texte et Note</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Types de questions « Sélectionner une réponse » et « Sélectionner plusieurs réponses »</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Type de question Acknowledge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Types de questions Nombre, Décimal et Plage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Types de questions Date et Heure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Types de questions « Photo », « Audio », « Vidéo » et « Fichier »</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Type de question Code-barres/Code QR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Types de questions : Évaluation vs Classement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Type de question Sélectionner un ou plusieurs éléments d’un fichier externe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Types de questions GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Type de question Calcul</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Type de question Calcul avancé</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Type de question Signature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Type de réponse Matrice de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Inclure des réponses dans une autre question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Utilisation des options de question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Ajouter une logique de saut dans l’interface de création de formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Ajouter des critères de validation dans l’interface de création de formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limites des réponses numériques et textuelles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Ajouter des questions de sélection en cascade dans l’interface de création de formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Regrouper des questions et répéter des groupes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restreindre les réponses textuelles avec des expressions régulières</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Ajouter une autre langue dans le tableau de bord du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Paramètres et métadonnées du formulaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Type de méta-question Audit Logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formatage personnalisé dans les formulaires Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Utilisation de styles alternatifs pour les formulaires web Enketo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Utiliser La bibliothèque de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Utiliser les Collections publiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Recherche avancée dans les Collections publiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Utilisation des balises HXL</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utilisation de XLSForm</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Modifier des formulaires dans Excel en utilisant XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Débuter avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importer un XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Ajouter différents types de médias (image, audio, vidéo) à un formulaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Ajouter une autre langue à votre XLSForm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Pièces jointes de données dynamiques</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lier-dynamiquement-des-projets-dans-xlsform">Lier dynamiquement des projets dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#syntaxe-de-calcul-pour-les-pieces-jointes-de-donnees-dynamiques">Syntaxe de calcul pour les pièces jointes de données dynamiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuration-des-projets-pour-la-liaison-dynamique">Configuration des projets pour la liaison dynamique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lier-dynamiquement-un-formulaire-a-lui-meme">Lier dynamiquement un formulaire à lui-même</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collecte-et-gestion-des-donnees-avec-liaison-dynamique">Collecte et gestion des données avec liaison dynamique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#depannage">Dépannage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Fonctionnalité Pull Data dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Verrouillage de bibliothèque</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Collecte de Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Aperçu des outils de collecte de données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enketo.html">Que sont les formulaires Web Enketo ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Déployer un formulaire pour démarrer un nouveau projet de collecte de données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Enregistrer une interview complète avec l’enregistrement audio en arrière-plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecte de données via les formulaires Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecte de données hors ligne</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Premiers pas avec KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personnalisation des paramètres de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecte de données avec KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transférer manuellement des formulaires et des données d’un appareil Android à un autre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Appareils recommandés pour la collecte de données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Dépannage de l’application Android KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Dépannage des formulaires web Enketo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecte de localisations GPS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Gestion des Projets et Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Résumé du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validation des enregistrements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Supprimer un projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporter et télécharger vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Options avancées pour l’exportation des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestion des données de groupes répétés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiver et désarchiver des projets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Partager des projets avec des paramètres au niveau du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Partager des projets avec des permissions au niveau utilisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Cartographie, partage et exportation de données GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Modifier ou supprimer une soumission individuelle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Modifier les réponses dans plusieurs soumissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Télécharger des photos et autres médias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Supprimer des fichiers multimédias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Récupération des données des versions précédentes du formulaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Utilisation de la fonctionnalité de gestion d’équipe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Suivi d’activité</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Analyse des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Affichage et création de rapports personnalisés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcription et traduction des réponses audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Analyse qualitative des réponses audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir les données en SPSS et/ou Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Intégrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Premiers pas avec l’API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Utilisation de l’API pour les exports synchrones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connexion de KoboToolbox à Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecter KoboToolbox à Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Fusionner des données individuelles avec des données de liste via Power Query dans Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Services REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporter et importer des données dans un logiciel SIG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Intégration de KoboToolbox sur monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migration de l’API v1 vers v2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sécurité et Protection des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Mesures de sécurité des données KoboToolbox : Protéger vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">Règlement général sur la protection des données (RGPD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Conformité HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Stockage des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Chiffrement des formulaires</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Ressources Supplémentaires</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Inclure les P-Codes dans les données exportées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Créer des numéros de série uniques dans les formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Réponses « Autre » spécifiées par l’utilisatrice ou l’utilisateur pour les questions à choix multiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Réduire la taille des fichiers multimédias collectés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Ajouter des calculs et des contraintes dans une question matricielle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Ajouter une logique de saut à une question matricielle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Ajouter un logo personnalisé</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportations bloquées à l’état En attente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Téléverser manuellement des soumissions</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Questions from the community</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "dynamic_data_attachment",
+      currentTitle: "Pièces jointes de données dynamiques",
+      currentUrl: ("index.html").replace("index.html", "dynamic_data_attachment.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

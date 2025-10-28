@@ -1,0 +1,1186 @@
+<!DOCTYPE html>
+
+<html lang="ar" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Using XLSForm &#8212; KoboToolbox  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=bd8ea2bd"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=87cb2081"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="بحث" href="search.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://www.kobotoolbox.org/features">Features</a></li>
+      <li><a href="https://www.kobotoolbox.org/services">Services</a></li>
+      <li><a href="https://www.kobotoolbox.org/pricing">Pricing</a></li>
+      <li><a href="https://www.kobotoolbox.org/blog">Blog</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar custom-section-page" id="using-xlsform">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+<p class="caption" role="heading"><span class="caption-text">البدء</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">مقدمة إلى KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#id1">تطوير النماذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#id2">استخدام مكتبة الأسئلة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#id3">جمع البيانات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#id4">إدارة وتحليل البيانات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#id5">تصوير البيانات بصرياً وتنزيلها</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#id6">إدارة المشاريع والفرق</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#id7">ربط KoboToolbox بمنصات أخرى</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">إنشاء حساب على KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#id1">كيفية الوصول إلى KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#id2">إنشاء حساب</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#id3">تسجيل الدخول مرة أخرى إلى KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#id4">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">البدء في استخدام أداة إنشاء النماذج في KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id1">إضافة سؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id2">إضافة تلميح للسؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id3">تكرار سؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id4">حذف سؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id5">تغيير إعدادات السؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id6">إضافة أسئلة إلى المكتبة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id7">تجميع الأسئلة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id8">تغيير ترتيب الأسئلة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id9">معاينة النموذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id10">حفظ النموذج</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">البدء مع XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id1">ما هو XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id2">إعداد XLSForm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_xlsform.html#id3">الأعمدة الإلزامية في XLSForm</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="getting_started_xlsform.html#survey">ورقة عمل Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="getting_started_xlsform.html#choices">ورقة عمل Choices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id4">إضافة الأسئلة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id5">إضافة خيارات الإجابة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id6">إضافة الإعدادات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id7">إضافة أعمدة اختيارية إلى ورقة عمل survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#xlsform-kobotoolbox">رفع ومعاينة XLSForm في KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id8">تنزيل XLSForm من KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id9">استبدال نموذج بملف XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id10">المزيد من موارد XLSForm</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">الحساب والفوترة</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">إنشاء حساب على KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#id1">كيفية الوصول إلى KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#id2">إنشاء حساب</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#id3">تسجيل الدخول مرة أخرى إلى KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#id4">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">استكشاف أخطاء رابط تفعيل الحساب وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">إعادة تعيين كلمات المرور</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">إعداد المصادقة الثنائية في KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#id1">إعداد المصادقة الثنائية في KoboToolbox</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="two_factor_authentication.html#qr">إعداد المصادقة الثنائية باستخدام رمز QR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="two_factor_authentication.html#id2">إعداد المصادقة الثنائية باستخدام مفتاح يدوي</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#id3">تعطيل المصادقة الثنائية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#id4">إعادة تكوين المصادقة الثنائية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#kobocollect">استخدام KoboCollect مع المصادقة الثنائية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#id5">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">استخدام أداة إنشاء النماذج</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">البدء في استخدام أداة إنشاء النماذج في KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id1">إضافة سؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id2">إضافة تلميح للسؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id3">تكرار سؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id4">حذف سؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id5">تغيير إعدادات السؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id6">إضافة أسئلة إلى المكتبة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id7">تجميع الأسئلة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id8">تغيير ترتيب الأسئلة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id9">معاينة النموذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#id10">حفظ النموذج</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">قائمة أنواع الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">أنواع أسئلة النص والملاحظة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="text_and_note.html#id2">كيفية إعداد الأسئلة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_and_note.html#kobocollect">المظهر في النماذج الإلكترونية وتطبيق KoboCollect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="text_and_note.html#id3">المظهر الافتراضي</a></li>
+<li class="toctree-l3"><a class="reference internal" href="text_and_note.html#id4">المظاهر المتقدمة</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="text_and_note.html#id5">اعتبارات عند استخدام أسئلة &quot;النص&quot;</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_and_note.html#id6">استخدام منطق الأسئلة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">أنواع الأسئلة &quot;اختيار واحد&quot; و&quot;اختيار متعدد&quot;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#id2">متى يتم استخدامها</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#id3">إعداد السؤال والخيارات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#id4">ترجمة تسميات الأسئلة والخيارات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#xml">قيم XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#kobocollect">كيفية عرضها افتراضياً في النماذج الإلكترونية وتطبيق KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#id5">خيارات التصدير</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#id6">المظاهر المتقدمة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">نوع سؤال الإقرار</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="acknowledge.html#id2">كيفية إعداد السؤال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acknowledge.html#kobocollect">كيفية عرضه في النماذج الإلكترونية وتطبيق KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acknowledge.html#id3">استخدام منطق التخطي ومعايير التحقق</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">أنواع الأسئلة: الرقم، العشري، والنطاق</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#id2">متى تستخدمها</a></li>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#id3">الإعداد في أداة إنشاء النماذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#xlsform">الإعداد في XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#kobocollect">المظهر الافتراضي في النماذج الإلكترونية وتطبيق KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#id4">المظاهر المتقدمة</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="number_decimal_range.html#id5">المظاهر المتقدمة في XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#id6">القيود على أسئلة &quot;الرقم&quot; و&quot;العشري&quot;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="number_decimal_range.html#id7">تطبيق KoboCollect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="number_decimal_range.html#enketo">Enketo</a></li>
+<li class="toctree-l3"><a class="reference internal" href="number_decimal_range.html#id8">نوع السؤال النصي كرقم</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">أنواع أسئلة التاريخ والوقت</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="date_time.html#id2">كيفية إعداد أنواع أسئلة التاريخ والوقت</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="date_time.html#id3">الإعداد في أداة إنشاء النماذج</a></li>
+<li class="toctree-l3"><a class="reference internal" href="date_time.html#xlsform">الإعداد في XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="date_time.html#kobocollect">مظهر أنواع أسئلة التاريخ والوقت في النماذج على الويب وKoboCollect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="date_time.html#id4">المظهر الافتراضي</a></li>
+<li class="toctree-l3"><a class="reference internal" href="date_time.html#id5">المظاهر المتقدمة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="date_time.html#id6">إضافة مظاهر مخصصة لأسئلة التاريخ في XLSForm</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="date_time.html#id7">مظاهر منتقي التاريخ</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="date_time.html#id8">التقاويم غير الميلادية المدعومة</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="date_time.html#id9">استخدام أسئلة التاريخ والوقت في المنطق المخصص</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">أنواع الأسئلة &quot;صورة&quot; و&quot;صوت&quot; و&quot;فيديو&quot; و&quot;ملف&quot;</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#id2">كيفية إعداد أنواع الأسئلة &quot;صورة&quot; و&quot;صوت&quot; و&quot;فيديو&quot; و&quot;ملف&quot;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="photo_audio_video_file.html#id3">الإعداد في أداة إنشاء النماذج</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photo_audio_video_file.html#xlsform">الإعداد في XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#id4">مظهر أنواع الأسئلة &quot;صورة&quot; و&quot;صوت&quot; و&quot;فيديو&quot; و&quot;ملف&quot;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="photo_audio_video_file.html#id5">المظهر الافتراضي</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photo_audio_video_file.html#id6">المظاهر المتقدمة لنوع السؤال &quot;صورة&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="photo_audio_video_file.html#id7">إضافة المظاهر المتقدمة في XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#id8">تسجيل الصوت في الخلفية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#id9">تقليل حجم ملف الوسائط المجمعة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#id10">تحديد أنواع الملفات المقبولة لنوع السؤال &quot;ملف&quot;</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">نوع سؤال الباركود/رمز الاستجابة السريعة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="barcode_qrcode_questions.html#id2">كيفية إعداد نوع السؤال &quot;الباركود/رمز الاستجابة السريعة&quot;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="barcode_qrcode_questions.html#id3">الإعداد في أداة إنشاء النماذج</a></li>
+<li class="toctree-l3"><a class="reference internal" href="barcode_qrcode_questions.html#xlsform">الإعداد في XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="barcode_qrcode_questions.html#kobocollect">كيفية عرض أسئلة &quot;الباركود/رمز الاستجابة السريعة&quot; على النماذج الإلكترونية وتطبيق KoboCollect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="barcode_qrcode_questions.html#id4">المظهر الافتراضي</a></li>
+<li class="toctree-l3"><a class="reference internal" href="barcode_qrcode_questions.html#id5">المظهر المتقدم</a></li>
+<li class="toctree-l3"><a class="reference internal" href="barcode_qrcode_questions.html#id6">تغيير المظهر المتقدم في أداة إنشاء النماذج</a></li>
+<li class="toctree-l3"><a class="reference internal" href="barcode_qrcode_questions.html#id7">تغيير المظهر المتقدم في XLSForm</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">أنواع أسئلة التقييم مقابل الترتيب</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rating_ranking.html#id2">ما الفرق بين أسئلة التقييم والترتيب؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rating_ranking.html#id3">متى يجب استخدام أسئلة الترتيب أو التقييم؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rating_ranking.html#id4">كيفية إضافة سؤال ترتيب في أداة إنشاء النماذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rating_ranking.html#id5">كيفية إضافة سؤال تقييم</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">نوع سؤال اختيار واحد أو متعدد من ملف خارجي</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">أنواع أسئلة GPS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gps_questions.html#id1">كيفية إعداد أنواع الأسئلة &quot;نقطة&quot; و&quot;خط&quot; و&quot;منطقة&quot;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gps_questions.html#id2">الإعداد في أداة إنشاء النماذج</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gps_questions.html#xlsform">الإعداد في XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gps_questions.html#kobocollect">مظهر أنواع الأسئلة &quot;نقطة&quot; و&quot;خط&quot; و&quot;منطقة&quot; في النماذج الإلكترونية وKoboCollect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gps_questions.html#id3">المظهر الافتراضي</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gps_questions.html#id4">جمع نقاط GPS في الخلفية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gps_questions.html#id5">حساب المسافة والمساحة باستخدام أنواع الأسئلة &quot;خط&quot; و&quot;منطقة&quot;</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="gps_questions.html#id6">حساب المسافة من أسئلة &quot;خط&quot;</a></li>
+<li class="toctree-l3"><a class="reference internal" href="gps_questions.html#id7">حساب المساحة من أسئلة &quot;منطقة&quot;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">نوع سؤال الحساب</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="calculate_questions.html#id2">قائمة الدوال المتاحة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculate_questions.html#id3">قائمة العوامل الرياضية المتاحة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">نوع السؤال المتقدم للحساب</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advanced_calculate.html#id2">طرق إضافة أسئلة الحساب:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="advanced_calculate.html#id3">استخدام أداة إنشاء النماذج</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced_calculate.html#xls">استخدام نماذج XLS</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_calculate.html#id4">القواعد عند العمل مع أسئلة الحساب:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="advanced_calculate.html#xlsform">تنطبق هذه القواعد على كل من أداة إنشاء النماذج و XLSForm</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced_calculate.html#id5">قائمة وظائف الحساب المختبرة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced_calculate.html#if">العمل مع أمر IF في الحسابات</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced_calculate.html#id6">حلول بديلة للحسابات</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="advanced_calculate.html#id7">الحل البديل 1: إنشاء أسئلة وهمية لحساب النتيجة النهائية في سلسلة من الأسئلة**</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">نوع سؤال التوقيع</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="collecting_signatures.html#collect-android">تطبيق Collect Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collecting_signatures.html#enketo">Enketo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collecting_signatures.html#id2">إنشاء نوع سؤال التوقيع في أداة إنشاء النماذج</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">نوع الاستجابة مصفوفة الأسئلة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matrix_response.html#id2">إنشاء مصفوفة أسئلة في منشئ النماذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matrix_response.html#xlsform">إنشاء مصفوفة أسئلة في XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">تضمين الإجابات داخل سؤال آخر</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">استخدام خيارات الأسئلة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#id2">اسم عمود البيانات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#id3">تلميح إرشادي (اختياري)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#id4">استجابة إلزامية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#id5">استجابة افتراضية (اختياري)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#id6">المظهر (اختياري)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">إضافة منطق التخطي في Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="skip_logic.html#id1">إضافة شرط</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skip_logic.html#xlsform">إدخال منطق التخطي يدويًا في كود XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">إضافة معايير التحقق في واجهة إنشاء النماذج</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="validation_criteria.html#id2">إضافة شرط</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation_criteria.html#xlsform">إدخال منطق التحقق يدويًا في كود XLSForm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="validation_criteria.html#id3">أمثلة على معايير التحقق</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="validation_criteria.html#id4">رسالة الخطأ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">القيود على الاستجابات الرقمية والنصية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">إضافة أسئلة الاختيار المتتالي في أداة إنشاء النماذج</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cascading_select.html#id2">إعداد جدول الخيارات المتتالية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cascading_select.html#id3">استيراد الجدول إلى أداة إنشاء النماذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cascading_select.html#xlsform">إدارة الاختيار المتتالي المتقدم باستخدام XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cascading_select.html#id4">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">تجميع الأسئلة وتكرار المجموعات</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="group_repeat.html#id2">إنشاء وإدارة مجموعات الأسئلة</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id3">تجميع مجموعة من الأسئلة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id4">إضافة أسئلة داخل مجموعة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id5">إزالة الأسئلة من مجموعة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id6">إعادة ترتيب سؤال داخل مجموعة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id7">إزالة مجموعة أسئلة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id8">المجموعات المتداخلة</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="group_repeat.html#id9">إعدادات مجموعة الأسئلة</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id10">عرض الأسئلة المجمعة على نفس الشاشة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id11">تخطي مجموعة أسئلة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id12">تكرار مجموعة أسئلة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="group_repeat.html#id13">الإعدادات المتقدمة لمجموعات التكرار</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">تقييد الإجابات النصية باستخدام التعبيرات النمطية</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#kobotoolbox">لاستخدام التعبير النمطي في KoboToolbox، اتبع الخطوات التالية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#id2">كيف أبني التعبير النمطي الذي أحتاجه؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#id3">الأحرف ذات العلامات الإضافية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#id4">أمثلة متعلقة باستخدام الأرقام</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#id5">أمثلة متعلقة باستخدام الأحرف</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#id6">أمثلة متعلقة باستخدام مزيج من الأحرف والأرقام</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#id7">أمثلة متعلقة بتقييد إدخالات البريد الإلكتروني الصالحة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#id8">أمثلة متعلقة باستخدام إدخالات الوقت</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#id9">اعتبارات عند استخدام التعبيرات النمطية</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">إضافة لغة أخرى في لوحة تحكم المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">إعدادات النموذج والبيانات الوصفية</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="form_meta.html#id2">نمط النموذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_meta.html#id3">البيانات الوصفية للنموذج</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="form_meta.html#xlsform">إضافة البيانات الوصفية للنموذج في XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="form_meta.html#id4">التسجيل الصوتي في الخلفية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_meta.html#id5">التفاصيل</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_meta.html#id6">إعدادات إضافية</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">نوع السؤال الوصفي لتسجيل التدقيق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">التنسيق المخصص في النماذج الإلكترونية</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="custom_format_web.html#id2">دمج النص والوسائط عن طريق 'دمج' الملاحظات المتتالية</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">استخدام أنماط نماذج Enketo البديلة على الويب</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="alternative_enketo.html#xlsform">الأنماط المتاحة في XLSForm:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">استخدام مكتبة الأسئلة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="question_library.html#id2">إضافة الأسئلة إلى مكتبتك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_library.html#id3">إدارة الأسئلة في مكتبتك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_library.html#id4">استيراد المجموعات</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">استخدام المجموعات العامة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="using_public_collections.html#id2">الغرض من المجموعات العامة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_public_collections.html#id3">تحديد موقع المجموعات العامة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_public_collections.html#id4">استخدام المجموعات العامة</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="using_public_collections.html#id5">أ) الاشتراك في مجموعة عامة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using_public_collections.html#id6">ب) استخدام الأصول داخل مجموعة عامة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="using_public_collections.html#id7">ج) إنشاء مجموعة عامة</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="using_public_collections.html#id8">مقالات ذات صلة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">البحث المتقدم في المجموعات العامة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="public_collections_advanced_search.html#id2">سلوك البحث الافتراضي</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_collections_advanced_search.html#id3">عوامل تشغيل حقول البحث الصالحة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_collections_advanced_search.html#id4">فهم صيغة حقل البحث</a></li>
+<li class="toctree-l2"><a class="reference internal" href="public_collections_advanced_search.html#id5">استخدام محلل الاستعلام</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">استخدام علامات HXL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="hxl.html#id1">ما هي HXL بالضبط؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hxl.html#id2">كيفية استخدام ميزة HXL في أداة إنشاء النماذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="hxl.html#hxl-xlsform">كيفية استخدام HXL في XLSForm</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">استخدام XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">تحرير النماذج في Excel باستخدام XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">البدء مع XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id1">ما هو XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id2">إعداد XLSForm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_xlsform.html#id3">الأعمدة الإلزامية في XLSForm</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="getting_started_xlsform.html#survey">ورقة عمل Survey</a></li>
+<li class="toctree-l4"><a class="reference internal" href="getting_started_xlsform.html#choices">ورقة عمل Choices</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id4">إضافة الأسئلة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id5">إضافة خيارات الإجابة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id6">إضافة الإعدادات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id7">إضافة أعمدة اختيارية إلى ورقة عمل survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#xlsform-kobotoolbox">رفع ومعاينة XLSForm في KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id8">تنزيل XLSForm من KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id9">استبدال نموذج بملف XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#id10">المزيد من موارد XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">استيراد XLSForm عبر رابط URL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xls_url.html#google-sheets">Google Sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xls_url.html#dropbox">Dropbox</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">إضافة أنواع مختلفة من الوسائط (صورة، صوت، فيديو) إلى النموذج</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="media.html#xlsform">الخطوة 1: تنزيل النموذج بصيغة XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#id2">الخطوة 2: إضافة أعمدة الوسائط إلى XLSForm الخاص بك</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="media.html#id3">إضافة أعمدة وسائط الصور:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="media.html#id4">إضافة أعمدة وسائط الصوت:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="media.html#id5">إضافة أعمدة وسائط الفيديو:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#id6">الخطوة 3: التعامل مع أعمدة الوسائط للغات المتعددة</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="media.html#id7">التعامل مع عمود الوسائط لوسائط الصور:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="media.html#id8">التعامل مع عمود الوسائط لوسائط الصوت:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="media.html#id9">التعامل مع عمود الوسائط لوسائط الفيديو:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#id10">الخطوة 4: استبدال XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#id11">الخطوة 5: تحميل ملفات الوسائط</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#id12">الخطوة 6: نشر النموذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#id13">الخطوة 7: جمع البيانات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#id14">نصائح وحيل</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="media.html#windows">تحديد اسم الملف والامتداد وحجم ملف الوسائط على Windows</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">إضافة لغة أخرى إلى نموذج XLSForm الخاص بك</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="language_xls.html#id1">الترجمة إلى التاميلية والنيبالية والهندية وغيرها من الكتابات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language_xls.html#id2">ترجمة الكتابات من اليمين إلى اليسار</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">مرفقات البيانات الديناميكية</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#xlsform">الربط الديناميكي للمشاريع في XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#id2">بناء جملة الحساب لمرفقات البيانات الديناميكية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#id3">إعداد المشاريع للربط الديناميكي</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#id4">الربط الديناميكي لنموذج بنفسه</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#id5">جمع وإدارة البيانات مع الربط الديناميكي</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#id6">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">وظيفة Pull Data في KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">قفل المكتبة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#id2">القيود</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#kobo-lock-all">القيمة المنطقية <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id3">قيود مستوى السؤال</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id4">قيود مستوى المجموعة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id5">قيود مستوى النموذج</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#xlsform">تكوين XLSForm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#xlsforms">استيراد XLSForms مقفلة</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id6">إنشاء مشروع من قالب مقفل</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id7">التحقق من صحة النموذج</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id8">تحذيرات</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#json">تمثيل JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#id9">ملفات تعريف القفل وأنواع الأصول</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#id10">المصطلحات</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id11"><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#kobo-locking-profile"><code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#kobo-locking-profiles"><code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#locked"><code class="docutils literal notranslate"><span class="pre">locked</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id12">ملف التعريف</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id13">القيد</a></li>
+<li class="toctree-l3"><a class="reference internal" href="library_locking.html#id14">غير مقفل</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">جمع البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">نظرة عامة على أدوات جمع البيانات</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-collection-tools.html#id2">نظرة سريعة على الاختلافات بين الخيارين</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data-collection-tools.html#kobocollect">جمع البيانات باستخدام KoboCollect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data-collection-tools.html#enketo">جمع البيانات باستخدام نموذج Enketo الإلكتروني</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="enketo.html">ما هي نماذج Enketo الإلكترونية؟</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="enketo.html#id1">ما هو النظام البيئي الذي يستخدمه Enketo؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enketo.html#id2">ما هي الخصائص العامة؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enketo.html#enketo-kobotoolbox">كيف يمكنني الوصول إلى Enketo عند استخدام KoboToolbox؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enketo.html#id3">كيف يمكنني استكشاف أخطاء Enketo وإصلاحها؟</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">نشر نموذج لبدء مشروع جمع بيانات جديد</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#id2">إعادة نشر النموذج الخاص بك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#kobocollect">استخدام KoboCollect</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">تسجيل المقابلة بالكامل باستخدام التسجيل الصوتي في الخلفية</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#id2">تفعيل التسجيل الصوتي في الخلفية في أداة إنشاء النماذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#xlsform">تضمين نوع سؤال الصوت في الخلفية في XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#id3">تعيين جودة صوت مناسبة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#collect-android">جمع الصوت في الخلفية باستخدام تطبيق Collect Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#id4">عرض الملفات الصوتية التي تم تسجيلها كصوت في الخلفية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#id5">تنزيل الملفات الصوتية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#id6">الاعتبارات الأخلاقية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#id7">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">جمع البيانات من خلال النماذج الإلكترونية</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#id2">ما هي النماذج الإلكترونية؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#kobocollect-android">لماذا أحتاج إلى النماذج الإلكترونية بدلاً من تطبيق KoboCollect Android؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#id3">كيف أستخدم النماذج الإلكترونية لجمع البيانات؟</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_through_webforms.html#id4">إعدادات الجمع:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_through_webforms.html#id5">بدء جمع البيانات:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#id6">كيف أحفظ نموذجًا إلكترونيًا دون اتصال على جهاز محمول؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#id7">إعادة التوجيه عند الإرسال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#id8">استكشاف أخطاء النماذج الإلكترونية وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">جمع البيانات دون اتصال بالإنترنت</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-offline.html#id2">ماذا أفعل إذا لم يكن لدي أي وصول إلى الإنترنت؟</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">البدء مع KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_on_android_latest.html#id1">تثبيت تطبيق KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_on_android_latest.html#id2">إعداد تطبيق KoboCollect</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="kobocollect_on_android_latest.html#id3">إعداد KoboCollect يدوياً</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kobocollect_on_android_latest.html#kobocollect-qr">إعداد KoboCollect باستخدام رمز QR</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kobocollect_on_android_latest.html#id4">إعداد مشاريع متعددة في KoboCollect</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kobocollect_on_android_latest.html#id5">إعداد مشروع في KoboCollect بدون مصادقة</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">تخصيص إعدادات KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#id1">إعدادات عرض المشروع</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#id2">إعدادات واجهة المستخدم</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#id3">إعدادات الخرائط</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#id4">إعدادات إدارة النماذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#id5">إعدادات هوية المستخدم والجهاز</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#id6">تعيين كلمة مرور المسؤول</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#id7">إدارة المشروع</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#id8">التحكم في الوصول</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">جمع البيانات باستخدام KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#id1">تنزيل النماذج</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#id2">جمع البيانات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#id3">تعديل المسودات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#id4">إرسال النماذج النهائية إلى الخادم</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#id5">حذف النماذج المحفوظة والنماذج الفارغة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">نقل النماذج والبيانات يدويًا من جهاز أندرويد إلى آخر</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="transferring_forms.html#id2">استكشاف الأخطاء وإصلاحها:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">الأجهزة الموصى بها لجمع البيانات</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="devices_for_data_collection.html#id2">الهواتف مقابل الأجهزة اللوحية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="devices_for_data_collection.html#id3">التسعير</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">استكشاف أخطاء تطبيق KoboCollect لنظام Android وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">استكشاف أخطاء نماذج Enketo على الويب وإصلاحها</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting_webforms.html#ios">مشكلات معروفة مع النماذج دون اتصال على iOS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="troubleshooting_webforms.html#id1">فقدان البيانات</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">جمع المواقع الجغرافية بنظام GPS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#id1">إنشاء الأنواع المختلفة من أسئلة GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#id2">جمع البيانات باستخدام أسئلة GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#enketo">جمع البيانات باستخدام نماذج Enketo الإلكترونية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#kobocollect-android">جمع البيانات باستخدام تطبيق KoboCollect على Android</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#id3">دقة إحداثيات GPS المجمعة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#id4">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">إدارة المشاريع والبيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">ملخص المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">التحقق من صحة السجلات</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="record_validation.html#id2">ما هي الحالات التي يمكنك تعيينها لسجل؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="record_validation.html#id3">نظرة عامة على الوظائف</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">حذف مشروع</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="delete_project.html#id2">حذف المشاريع من لوحة المشاريع الخاصة بك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="delete_project.html#id3">حذف المشاريع من صفحة إعدادات المشروع</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">تصدير وتنزيل بياناتك</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#id2">تنزيل بياناتك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#id3">أنواع التصدير</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#id4">تنسيق القيم والرؤوس</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#id5">الخيارات المتقدمة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#id6">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">خيارات متقدمة لتصدير البيانات</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advanced_export.html#id2">خيارات التصدير لأسئلة الاختيار المتعدد</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_export.html#id3">اختيار حقول البيانات للتصدير</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_export.html#id4">خيارات إضافية لتنسيق البيانات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_export.html#id5">حفظ إعدادات التصدير</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">إدارة بيانات المجموعات المتكررة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="managing_repeat_groups.html#id2">عرض وتحرير بيانات المجموعات المتكررة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_repeat_groups.html#id3">تصدير بيانات المجموعات المتكررة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_repeat_groups.html#id4">ربط بيانات المجموعات المتكررة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">أرشفة المشاريع وإلغاء أرشفتها</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="archiving_projects.html#id2">الغرض من الأرشفة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="archiving_projects.html#id3">عملية الأرشفة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="archiving_projects.html#id4">عملية إلغاء الأرشفة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">مشاركة المشاريع باستخدام إعدادات على مستوى المشروع</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="project_sharing_settings.html#id2">السماح بالإرسالات دون مصادقة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_sharing_settings.html#id3">جعل مشروعك عامًا</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_sharing_settings.html#id4">نقل ملكية المشروع</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_sharing_settings.html#id5">إزالة المشاريع المشتركة من حسابك</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">مشاركة المشاريع مع أذونات على مستوى المستخدم</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="managing_permissions.html#id2">تعيين الأذونات على مستوى المستخدم</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_permissions.html#id3">تعيين الأذونات على مستوى الصف</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="managing_permissions.html#id4">الأذونات المستندة إلى المستخدم</a></li>
+<li class="toctree-l3"><a class="reference internal" href="managing_permissions.html#id5">الأذونات المستندة إلى الشرط</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="managing_permissions.html#id6">نسخ الأذونات من مشروع آخر</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_permissions.html#id7">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">رسم خرائط بيانات GPS ومشاركتها وتصديرها</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="export_gps.html#id1">عرض نقاط GPS الخاصة بك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_gps.html#id2">كيفية مشاركة بيانات الخريطة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">تعديل أو حذف إرسال واحد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">تعديل الإجابات في عدة عمليات إرسال</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="howto_edit_multiple_submissions.html#id2">القيود عند تعديل الإجابات لعدة عمليات إرسال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto_edit_multiple_submissions.html#id3">تعديل الإجابات لعدة عمليات إرسال</a></li>
+<li class="toctree-l2"><a class="reference internal" href="howto_edit_multiple_submissions.html#id4">تعديل الإجابات الفارغة لعدة عمليات إرسال</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">تنزيل الصور والوسائط الأخرى</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="photo_download.html#xls">تضمين روابط تشعبية مباشرة للوسائط المجمعة في تصدير XLS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photo_download.html#downthemall">للاتصالات البطيئة أو المشاريع الكبيرة جدًا: استخدام DownThemAll</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">حذف ملفات الوسائط</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deleting_media.html#id2">حذف ملفات الوسائط الفردية</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="deleting_media.html#id3">حذف ملفات الوسائط الفردية من جدول البيانات</a></li>
+<li class="toctree-l3"><a class="reference internal" href="deleting_media.html#id4">حذف ملفات الوسائط الفردية في عرض الإرسال</a></li>
+<li class="toctree-l3"><a class="reference internal" href="deleting_media.html#id5">حذف الملفات الصوتية في عرض الأسئلة الصوتية</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="deleting_media.html#id6">حذف ملفات الوسائط بشكل جماعي</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">استرداد البيانات من إصدارات النموذج السابقة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">استخدام ميزة إدارة الفريق</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#id2">ملكية المشروع</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#id3">الأدوار للفرق</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#id4">طرق عرض المشاريع</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#id5">دعوة المستخدمين للانضمام إلى فريقك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#id6">تعيين الأدوار وإدارتها</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#id7">إزالة مستخدم من فريقك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#id8">نقل ملكية فريقك</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">سجلات النشاط</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="activity_logs.html#id2">سجلات الوصول</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity_logs.html#id3">تصدير سجلات الوصول</a></li>
+<li class="toctree-l3"><a class="reference internal" href="activity_logs.html#id4">تسجيل الخروج من جميع الأجهزة</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity_logs.html#id5">سجلات سجل المشروع</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="activity_logs.html#id6">العثور على أنشطة محددة والتحقيق فيها</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="activity_logs.html#id7">المشكلات الشائعة مع سجلات النشاط</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">تحليل البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">عرض وإنشاء التقارير المخصصة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creating_custom_reports.html#id2">تعرف على كيفية التنقل وإدارة البيانات في صفحة التقارير.</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">النسخ والترجمة للردود الصوتية</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="transcription-translation.html#id2">إضافة النسخ التلقائي</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcription-translation.html#id3">إضافة الترجمات التلقائية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcription-translation.html#id4">قائمة اللغات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcription-translation.html#id5">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">التحليل النوعي للردود الصوتية</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="qualitative_analysis.html#id2">ابدأ تحليل بياناتك النوعية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qualitative_analysis.html#id3">تغيير إعدادات العرض</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qualitative_analysis.html#id4">استخدام ميزات التحليل</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qualitative_analysis.html#id5">تحليل ملفات صوتية متعددة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">تحويل البيانات إلى SPSS و/أو Stata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="converting_to_spss_and_stata.html#spss">التحويل إلى SPSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="converting_to_spss_and_stata.html#id1">تحويل ملف SPSS إلى ملف STATA</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">التكاملات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">البدء باستخدام واجهة برمجة التطبيقات (API)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#url">استرجاع عنوان URL الخاص بالخادم</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#api-key">استرجاع مفتاح واجهة برمجة التطبيقات (API Key)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#project-asset-uid">استرجاع المعرّف الفريد لأصل المشروع (project asset UID)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#id1">تصدير بياناتك باستخدام واجهة برمجة التطبيقات</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">استخدام واجهة برمجة التطبيقات (API) للتصديرات المتزامنة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#id1">إنشاء تصدير مُسمى</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#id2">استرجاع رابط التصدير المتزامن</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#id3">ربط بياناتك بتطبيق خارجي</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="synchronous_exports.html#id4">المصادقة</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#id5">القيود</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">ربط KoboToolbox بـ Microsoft Excel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#id1">الخطوة 1: الحصول على رابط التصدير المتزامن</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#id2">الخطوة 2: إضافة مصدر البيانات</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pulling_data_into_excelquery.html#id3">استخدام البيانات المستوردة</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pulling_data_into_excelquery.html#pivottables-pivotcharts-data-model">1. إنشاء PivotTables وPivotCharts من Data Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pulling_data_into_excelquery.html#id4">2. تحميل البيانات في ورقة العمل</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#id5">تحديث البيانات في تقاريرك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#id6">استكشاف الأخطاء وإصلاحها</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pulling_data_into_excelquery.html#kobotoolbox">فشل الاتصال بـ KoboToolbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pulling_data_into_excelquery.html#id7">فشل تحديث البيانات</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">ربط KoboToolbox بـ Power BI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#id1">الخطوة 1: الحصول على رابط التصدير المتزامن</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#id2">الخطوة 2: إضافة مصدر البيانات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#id3">تحديث البيانات في تقاريرك</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#id4">استكشاف الأخطاء وإصلاحها</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pulling_data_into_powerbi.html#kobotoolbox">فشل الاتصال بـ KoboToolbox</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pulling_data_into_powerbi.html#id5">فشل تحديث البيانات</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">دمج البيانات الفردية مع بيانات القوائم من خلال Power Query في Excel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="merging_dataset_excel_power_query.html#id1">الفروق بين البيانات الفردية وبيانات القوائم:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merging_dataset_excel_power_query.html#id2">دمج البيانات الفردية مع بيانات القوائم:</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="merging_dataset_excel_power_query.html#id3">النهج الأول: دمج البيانات الفردية مع بيانات القوائم (عندما تكون مجموعة البيانات مفتوحة بالفعل)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="merging_dataset_excel_power_query.html#id4">النهج الثاني: دمج البيانات الفردية مع بيانات القوائم (عندما لا تكون مجموعة البيانات مفتوحة بعد)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="merging_dataset_excel_power_query.html#id5">استكشاف الأخطاء وإصلاحها:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">خدمات REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">تصدير البيانات ورفعها إلى برامج نظم المعلومات الجغرافية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">تكامل KoboToolbox على monday.com</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_monday_integration.html#id1">الخصائص</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_monday_integration.html#id2">التثبيت والاستخدام لأول مرة</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="kobotoolbox_monday_integration.html#id3">قبل تثبيت التكامل</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kobotoolbox_monday_integration.html#id4">التثبيت</a></li>
+<li class="toctree-l3"><a class="reference internal" href="kobotoolbox_monday_integration.html#id5">الاستخدام لأول مرة</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_monday_integration.html#id7">الأسئلة الشائعة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">الترحيل من واجهة برمجة التطبيقات v1 إلى v2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="migrating_api.html#kpi-v1-kpi-v2">الترحيل من KPI v1 إلى KPI v2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="migrating_api.html#exports">استثناء لنقطة نهاية exports</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="migrating_api.html#kobocat-v1-kpi-v2">الترحيل من KoboCAT v1 إلى KPI v2</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="migrating_api.html#id1">نقاط نهاية البيانات: قائمة المشاريع</a></li>
+<li class="toctree-l3"><a class="reference internal" href="migrating_api.html#id2">نقاط نهاية البيانات: بيانات الإرسال</a></li>
+<li class="toctree-l3"><a class="reference internal" href="migrating_api.html#id3">نقاط نهاية النموذج</a></li>
+<li class="toctree-l3"><a class="reference internal" href="migrating_api.html#id4">نقطة نهاية التسمية</a></li>
+<li class="toctree-l3"><a class="reference internal" href="migrating_api.html#id5">نقاط نهاية البيانات الوصفية</a></li>
+<li class="toctree-l3"><a class="reference internal" href="migrating_api.html#id6">نقاط نهاية المستخدم</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">أمن وحماية البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">إجراءات أمان البيانات في KoboToolbox: الحفاظ على أمان بياناتك</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="is_my_data_safe.html#id1">السرية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_my_data_safe.html#id2">النزاهة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_my_data_safe.html#id3">التوافر والمرونة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">اللائحة العامة لحماية البيانات (GDPR)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gdpr.html#id1">ما هي اللائحة العامة لحماية البيانات (GDPR)؟</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdpr.html#kobotoolbox">الأمان والخصوصية في KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdpr.html#id2">طلب الحذف (الحق في النسيان)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">الامتثال لقانون HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">تخزين البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">تشفير النماذج</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="encrypting_forms.html#id2">كيف يعمل</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encrypting_forms.html#xls">كيفية تشفير نماذج XLS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encrypting_forms.html#id3">كيفية فك تشفير النماذج</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="encrypting_forms.html#jce">لتثبيت JCE:</a></li>
+<li class="toctree-l3"><a class="reference internal" href="encrypting_forms.html#id4">لفك تشفير نماذجك:</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="encrypting_forms.html#rsa">إنشاء مفاتيح تشفير RSA</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="encrypting_forms.html#rsa-kobotoolbox">كيفية إنشاء مفتاح RSA للاستخدام مع النماذج المشفرة على KoboToolbox</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">موارد إضافية</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">تضمين الرموز الإدارية (P-Codes) في بيانات المخرجات</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="p_codes.html#id1">مثال مع 3 مستويات إدارية، باستخدام القوائم المتتالية</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">إنشاء أرقام تسلسلية فريدة في النماذج</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unique_serial_numbers.html#id2">الطريقة الأولى: إنشاء أرقام تسلسلية فريدة متتابعة بناءً على التاريخ والوقت</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unique_serial_numbers.html#id3">الطريقة الثانية: إنشاء أرقام تسلسلية فريدة من متغيرات محددة</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">إجابات &quot;أخرى&quot; يحددها المستخدم لأسئلة الاختيار من متعدد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">تقليل حجم ملف الوسائط المجمّعة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lower_file_size.html#id2">التعليمات</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lower_file_size.html#kobocollect">KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lower_file_size.html#open-camera">Open Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">إضافة العمليات الحسابية والقيود في سؤال المصفوفة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="calculations_constraints_matrix.html#id2">إعداد السؤال والحقول</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculations_constraints_matrix.html#id3">عرض النتيجة</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculations_constraints_matrix.html#id4">استكشاف الأخطاء وإصلاحها</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">إضافة منطق التخطي إلى سؤال المصفوفة</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adding_skip_to_matrix.html#id2">طريقة أداة إنشاء النماذج:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_skip_to_matrix.html#kobo-matrix-list">طريقة <code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code>:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">إضافة شعار مخصص</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_logo.html#id2">نصائح:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">التصديرات العالقة في حالة الانتظار</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">رفع البيانات يدويًا</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual_upload.html#id2">تصدير البيانات من النماذج الإلكترونية</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual_upload.html#kobocollect">تصدير البيانات من KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual_upload.html#zip">استيراد ملف بيانات ZIP</a></li>
+</ul>
+</li>
+</ul>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Using XLSForm"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">البدء</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">مقدمة إلى KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">إنشاء حساب على KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">البدء في استخدام أداة إنشاء النماذج في KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">البدء مع XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">الحساب والفوترة</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">إنشاء حساب على KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">استكشاف أخطاء رابط تفعيل الحساب وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">إعادة تعيين كلمات المرور</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">إعداد المصادقة الثنائية في KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">استخدام أداة إنشاء النماذج</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">البدء في استخدام أداة إنشاء النماذج في KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">قائمة أنواع الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">أنواع أسئلة النص والملاحظة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">أنواع الأسئلة &quot;اختيار واحد&quot; و&quot;اختيار متعدد&quot;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">نوع سؤال الإقرار</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">أنواع الأسئلة: الرقم، العشري، والنطاق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">أنواع أسئلة التاريخ والوقت</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">أنواع الأسئلة &quot;صورة&quot; و&quot;صوت&quot; و&quot;فيديو&quot; و&quot;ملف&quot;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">نوع سؤال الباركود/رمز الاستجابة السريعة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">أنواع أسئلة التقييم مقابل الترتيب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">نوع سؤال اختيار واحد أو متعدد من ملف خارجي</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">أنواع أسئلة GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">نوع سؤال الحساب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">نوع السؤال المتقدم للحساب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">نوع سؤال التوقيع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">نوع الاستجابة مصفوفة الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">تضمين الإجابات داخل سؤال آخر</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">استخدام خيارات الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">إضافة منطق التخطي في Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">إضافة معايير التحقق في واجهة إنشاء النماذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">القيود على الاستجابات الرقمية والنصية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">إضافة أسئلة الاختيار المتتالي في أداة إنشاء النماذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">تجميع الأسئلة وتكرار المجموعات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">تقييد الإجابات النصية باستخدام التعبيرات النمطية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">إضافة لغة أخرى في لوحة تحكم المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">إعدادات النموذج والبيانات الوصفية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">نوع السؤال الوصفي لتسجيل التدقيق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">التنسيق المخصص في النماذج الإلكترونية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">استخدام أنماط نماذج Enketo البديلة على الويب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">استخدام مكتبة الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">استخدام المجموعات العامة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">البحث المتقدم في المجموعات العامة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">استخدام علامات HXL</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">استخدام XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">تحرير النماذج في Excel باستخدام XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">البدء مع XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">استيراد XLSForm عبر رابط URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">إضافة أنواع مختلفة من الوسائط (صورة، صوت، فيديو) إلى النموذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">إضافة لغة أخرى إلى نموذج XLSForm الخاص بك</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">مرفقات البيانات الديناميكية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">وظيفة Pull Data في KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">قفل المكتبة</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">جمع البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">نظرة عامة على أدوات جمع البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enketo.html">ما هي نماذج Enketo الإلكترونية؟</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">نشر نموذج لبدء مشروع جمع بيانات جديد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">تسجيل المقابلة بالكامل باستخدام التسجيل الصوتي في الخلفية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">جمع البيانات من خلال النماذج الإلكترونية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">جمع البيانات دون اتصال بالإنترنت</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">البدء مع KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">تخصيص إعدادات KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">جمع البيانات باستخدام KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">نقل النماذج والبيانات يدويًا من جهاز أندرويد إلى آخر</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">الأجهزة الموصى بها لجمع البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">استكشاف أخطاء تطبيق KoboCollect لنظام Android وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">استكشاف أخطاء نماذج Enketo على الويب وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">جمع المواقع الجغرافية بنظام GPS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">إدارة المشاريع والبيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">ملخص المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">التحقق من صحة السجلات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">حذف مشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">تصدير وتنزيل بياناتك</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">خيارات متقدمة لتصدير البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">إدارة بيانات المجموعات المتكررة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">أرشفة المشاريع وإلغاء أرشفتها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">مشاركة المشاريع باستخدام إعدادات على مستوى المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">مشاركة المشاريع مع أذونات على مستوى المستخدم</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">رسم خرائط بيانات GPS ومشاركتها وتصديرها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">تعديل أو حذف إرسال واحد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">تعديل الإجابات في عدة عمليات إرسال</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">تنزيل الصور والوسائط الأخرى</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">حذف ملفات الوسائط</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">استرداد البيانات من إصدارات النموذج السابقة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">استخدام ميزة إدارة الفريق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">سجلات النشاط</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">تحليل البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">عرض وإنشاء التقارير المخصصة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">النسخ والترجمة للردود الصوتية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">التحليل النوعي للردود الصوتية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">تحويل البيانات إلى SPSS و/أو Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">التكاملات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">البدء باستخدام واجهة برمجة التطبيقات (API)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">استخدام واجهة برمجة التطبيقات (API) للتصديرات المتزامنة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">ربط KoboToolbox بـ Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">ربط KoboToolbox بـ Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">دمج البيانات الفردية مع بيانات القوائم من خلال Power Query في Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">خدمات REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">تصدير البيانات ورفعها إلى برامج نظم المعلومات الجغرافية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">تكامل KoboToolbox على monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">الترحيل من واجهة برمجة التطبيقات v1 إلى v2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">أمن وحماية البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">إجراءات أمان البيانات في KoboToolbox: الحفاظ على أمان بياناتك</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">اللائحة العامة لحماية البيانات (GDPR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">الامتثال لقانون HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">تخزين البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">تشفير النماذج</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">موارد إضافية</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">تضمين الرموز الإدارية (P-Codes) في بيانات المخرجات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">إنشاء أرقام تسلسلية فريدة في النماذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">إجابات &quot;أخرى&quot; يحددها المستخدم لأسئلة الاختيار من متعدد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">تقليل حجم ملف الوسائط المجمّعة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">إضافة العمليات الحسابية والقيود في سؤال المصفوفة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">إضافة منطق التخطي إلى سؤال المصفوفة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">إضافة شعار مخصص</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">التصديرات العالقة في حالة الانتظار</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">رفع البيانات يدويًا</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Questions from the community</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "using-xlsform",
+      currentTitle: "Using XLSForm",
+      currentUrl: ("index.html").replace("index.html", "using-xlsform.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

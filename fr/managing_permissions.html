@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Partager des projets avec des permissions au niveau utilisateur &#8212; Documentation KoboToolbox </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Cartographie, partage et exportation de données GPS" href="export_gps.html" />
+    <link rel="prev" title="Partager des projets avec des paramètres au niveau du projet" href="project_sharing_settings.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://www.kobotoolbox.org/features">Features</a></li>
+      <li><a href="https://www.kobotoolbox.org/services">Services</a></li>
+      <li><a href="https://www.kobotoolbox.org/pricing">Pricing</a></li>
+      <li><a href="https://www.kobotoolbox.org/blog">Blog</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="managing_permissions">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="partager-des-projets-avec-des-permissions-au-niveau-utilisateur">
+<h1>Partager des projets avec des permissions au niveau utilisateur<a class="headerlink" href="#partager-des-projets-avec-des-permissions-au-niveau-utilisateur" title="Lien vers cette rubrique">¶</a></h1>
+<p><a href="../managing_permissions.html">Read in English</a> | <a href="../es/managing_permissions.html">Leer en español</a> | <a href="../ar/managing_permissions.html">اقرأ باللغة العربية</a>
+<strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/2d936225c821d33163324c6fe6093fa30da3c5fa/source/managing_permissions.md" class="reference">29 août 2025</a></p>
+<iframe src="https://www.youtube.com/embed/WnCNuxgaMoQ?si=bktZdlug2uBKUyzq" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>KoboToolbox vous permet de définir différents niveaux d’accès pour les utilisatrices et utilisateurs sur chaque projet. Certaines utilisatrices et certains utilisateurs peuvent avoir besoin uniquement de soumettre ou de consulter des données, tandis que d’autres nécessitent un accès plus avancé, comme la modification de formulaires, la validation de soumissions ou la modification de données.</p>
+<p>Cet article explique comment accorder des permissions à d’autres utilisatrices et utilisateurs de KoboToolbox pour collaborer sur vos projets. Il couvre les permissions au niveau utilisateur, les permissions au niveau des lignes et la copie de permissions depuis un autre projet.</p>
+<p class="note">
+Pour en savoir plus sur le partage de votre projet avec d'autres personnes pour la collecte de données, consultez <a href="data_through_webforms.html">Collecter des données via des formulaires Web</a>. Pour en savoir plus sur les paramètres au niveau du projet pour partager vos projets, consultez <a href="project_sharing_settings.html">Partager des projets avec des paramètres au niveau du projet</a>.
+</p>
+<section id="definir-des-permissions-au-niveau-utilisateur">
+<h2>Définir des permissions au niveau utilisateur<a class="headerlink" href="#definir-des-permissions-au-niveau-utilisateur" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les permissions au niveau utilisateur vous permettent de partager les données d’un projet avec d’autres utilisatrices et utilisateurs de KoboToolbox et de contrôler leur accès à votre formulaire ou à vos soumissions.</p>
+<p>Pour configurer des permissions au niveau utilisateur :</p>
+<ol class="arabic simple">
+<li><p>Accédez à la page <strong>PARAMÈTRES</strong> de votre projet de collecte de données et cliquez sur <strong>Partage</strong>.</p></li>
+<li><p>Sous la liste des utilisatrices et utilisateurs ayant un accès actuel, cliquez sur <strong>Ajouter un utilisateur</strong>.</p></li>
+<li><p>Saisissez le nom d’utilisateur de la personne avec laquelle vous souhaitez partager le formulaire.</p></li>
+<li><p>Sélectionnez le niveau de permission souhaité.</p></li>
+<li><p>Cliquez sur <strong>ACCORDER DES PERMISSIONS</strong>.</p></li>
+</ol>
+<p><img alt="Ajouter un utilisateur" src="images/managing_permissions/add_user.png" /></p>
+<p>Les permissions suivantes sont disponibles :</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p><strong>Permission</strong></p></th>
+<th class="head text-left"><p><strong>Description</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Voir le formulaire</p></td>
+<td class="text-left"><p>L’utilisatrice ou l’utilisateur peut prévisualiser le formulaire.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Modifier le formulaire</p></td>
+<td class="text-left"><p>L’utilisatrice ou l’utilisateur peut modifier le formulaire.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Voir les soumissions</p></td>
+<td class="text-left"><p>L’utilisatrice ou l’utilisateur peut consulter les données soumises.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Ajouter des soumissions</p></td>
+<td class="text-left"><p>L’utilisatrice ou l’utilisateur peut soumettre des données en utilisant le formulaire.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Modifier les soumissions</p></td>
+<td class="text-left"><p>L’utilisatrice ou l’utilisateur peut modifier les données soumises.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Valider les soumissions</p></td>
+<td class="text-left"><p>L’utilisatrice ou l’utilisateur peut <a class="reference internal" href="record_validation.html"><span class="std std-doc">approuver ou rejeter</span></a> les données soumises.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Supprimer les soumissions</p></td>
+<td class="text-left"><p>L’utilisatrice ou l’utilisateur peut supprimer les données soumises.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Gérer le projet</p></td>
+<td class="text-left"><p>L’utilisatrice ou l’utilisateur peut effectuer toutes les actions ci-dessus et gérer les paramètres du projet.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+<strong>Remarque</strong> : Lorsque certaines permissions sont accordées, d'autres permissions sont également accordées automatiquement. Par exemple, si une utilisatrice ou un utilisateur se voit accorder la permission <strong>Ajouter des soumissions</strong>, la permission <strong>Voir le formulaire</strong> lui sera également accordée automatiquement.
+</p>
+</section>
+<section id="definir-des-permissions-au-niveau-des-lignes">
+<h2>Définir des permissions au niveau des lignes<a class="headerlink" href="#definir-des-permissions-au-niveau-des-lignes" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les permissions au niveau des lignes vous permettent de définir des permissions de consultation, de modification, de validation et de suppression pour les soumissions en fonction de conditions prédéfinies. Ces permissions peuvent être :</p>
+<ul class="simple">
+<li><p><strong>Uniquement d’utilisatrices et utilisateurs spécifiques</strong> : Les permissions basées sur l’utilisateur vous permettent de partager les données d’un projet avec une autre utilisatrice ou un autre utilisateur de KoboToolbox uniquement lorsqu’elles sont soumises par des utilisatrices et utilisateurs spécifiques. Cela peut être utile pour permettre aux collectrices et collecteurs de données de consulter et de modifier leurs propres soumissions sans accéder aux données d’autres collectrices et collecteurs.</p></li>
+<li><p><strong>Basées sur une condition</strong> : Les permissions basées sur une condition accordent l’accès aux données du projet en fonction d’une réponse à une question de votre formulaire. Par exemple, cela peut être utilisé pour partager des données collectées avant une certaine date ou pour une région spécifique.</p></li>
+</ul>
+<section id="permissions-basees-sur-l-utilisateur">
+<h3>Permissions basées sur l’utilisateur<a class="headerlink" href="#permissions-basees-sur-l-utilisateur" title="Lien vers cette rubrique">¶</a></h3>
+<p>Pour ajouter des permissions basées sur l’utilisateur :</p>
+<ol class="arabic simple">
+<li><p>Ouvrez votre projet et accédez à l’onglet <strong>PARAMÈTRES</strong>.</p></li>
+<li><p>Accédez à la section <strong>Partage</strong>.</p></li>
+<li><p>Cliquez sur <strong>Ajouter un utilisateur</strong> et saisissez le nom d’utilisateur de la personne avec laquelle vous souhaitez partager le projet.</p></li>
+<li><p>Sélectionnez les permissions basées sur l’utilisateur que vous souhaitez autoriser (<strong>Voir</strong>, <strong>Modifier</strong>, <strong>Supprimer</strong> et/ou <strong>Valider</strong>).</p></li>
+<li><p>Sous chaque permission, saisissez le ou les noms d’utilisateur des personnes dont vous accordez l’accès aux soumissions. Les noms d’utilisateur doivent être séparés par des virgules.</p></li>
+<li><p>Cliquez sur <strong>Accorder des permissions</strong> pour enregistrer vos paramètres de permissions.</p></li>
+</ol>
+<p>Une fois que vous avez enregistré vos permissions, l’utilisatrice ou l’utilisateur avec qui vous avez partagé le projet pourra consulter, modifier, valider ou supprimer les données du projet soumises par les noms d’utilisateur spécifiés, selon les permissions sélectionnées.</p>
+</section>
+<section id="permissions-basees-sur-une-condition">
+<h3>Permissions basées sur une condition<a class="headerlink" href="#permissions-basees-sur-une-condition" title="Lien vers cette rubrique">¶</a></h3>
+<p>Pour ajouter des permissions basées sur une condition :</p>
+<ol class="arabic simple">
+<li><p>Ouvrez votre projet et accédez à l’onglet <strong>PARAMÈTRES</strong>.</p></li>
+<li><p>Accédez à la section <strong>Partage</strong>.</p></li>
+<li><p>Cliquez sur <strong>Ajouter un utilisateur</strong> et saisissez le nom d’utilisateur de la personne avec laquelle vous souhaitez partager le projet.</p></li>
+<li><p>Sélectionnez les permissions basées sur une condition que vous souhaitez autoriser (<strong>Voir</strong>, <strong>Modifier</strong>, <strong>Supprimer</strong> et/ou <strong>Valider</strong>).</p></li>
+<li><p>Ouvrez le menu déroulant <strong>Sélectionner…</strong> pour afficher la liste complète des questions du formulaire et sélectionnez la question qui doit être utilisée pour filtrer les soumissions partagées avec l’utilisatrice ou l’utilisateur.</p></li>
+<li><p>Sur le côté droit du signe égal (=), saisissez la valeur de réponse qui doit être satisfaite.</p></li>
+<li><p>Cliquez sur <strong>Accorder des permissions</strong> pour enregistrer vos paramètres de permissions.</p></li>
+</ol>
+<p>Une fois que vous avez enregistré vos permissions, l’utilisatrice ou l’utilisateur pourra consulter, modifier, valider ou supprimer les soumissions de données du projet qui répondent à la condition spécifiée, selon les permissions sélectionnées.</p>
+<p>Les valeurs de réponse doivent suivre un format spécifique pour que la condition fonctionne :</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p><strong>Type de question</strong></p></th>
+<th class="head text-left"><p><strong>Format</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Date</p></td>
+<td class="text-left"><p><code>AAAA-MM-JJ</code> (par ex., <code>1974-12-31</code>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Sélectionner un et Sélectionner plusieurs</p></td>
+<td class="text-left"><p>Valeur XML/nom du choix (par ex., <code>first_grade</code> plutôt que <code>First grade</code>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Nombre et Décimal</p></td>
+<td class="text-left"><p>Un nombre entier ou décimal spécifique</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="copier-des-permissions-depuis-un-autre-projet">
+<h2>Copier des permissions depuis un autre projet<a class="headerlink" href="#copier-des-permissions-depuis-un-autre-projet" title="Lien vers cette rubrique">¶</a></h2>
+<p>Pour copier les permissions d’équipe depuis un autre projet :</p>
+<ol class="arabic simple">
+<li><p>Ouvrez l’onglet <strong>Partage</strong> dans la page <strong>PARAMÈTRES</strong> de votre projet.</p></li>
+<li><p>Cliquez sur « Copier l’équipe depuis un autre projet ».</p></li>
+<li><p>Sélectionnez le projet depuis lequel vous souhaitez copier les permissions.</p></li>
+</ol>
+<p class="note">
+<strong>Remarque</strong> : Cela écrasera tous les paramètres de partage existants sur le projet auquel vous ajoutez les permissions.
+</p>
+</section>
+<section id="depannage">
+<h2>Dépannage<a class="headerlink" href="#depannage" title="Lien vers cette rubrique">¶</a></h2>
+<details>
+<summary><strong>Suivi des modifications effectuées par d'autres utilisatrices et utilisateurs</strong></summary>
+KoboToolbox conserve des <a href="activity_logs.html">Journaux d'activité</a> qui affichent une chronologie complète des actions du compte et du projet. Les <strong>Journaux d'historique du projet</strong> enregistrent chaque modification à l'intérieur d'un projet—importations, modifications, suppressions et soumissions—afin que vous puissiez retracer les changements, attribuer la responsabilité et identifier le moment où les problèmes ont commencé.
+</details>
+<br>
+<details>
+<summary><strong>Demande de nom d'utilisateur et de mot de passe lors de l'envoi de données</strong></summary>
+Si une fenêtre de connexion apparaît lorsque vous essayez de soumettre, le projet est configuré pour <a href="project_sharing_settings.html">exiger une authentification</a> pour la collecte de données. Dans ce cas, vous ne pouvez soumettre des données que si votre compte dispose de la permission Ajouter des soumissions. Saisissez votre nom d'utilisateur et votre mot de passe KoboToolbox pour continuer.
+</details>
+<br>
+<details>
+<summary><strong>Les permissions basées sur l'utilisateur ne semblent pas fonctionner</strong></summary>
+Les permissions basées sur l'utilisateur s'appliquent uniquement lorsque <a href="project_sharing_settings.html">l'authentification est requise</a> et que chaque soumission porte un nom d'utilisateur. Ouvrez l'onglet <strong>FORMULAIRE</strong> du projet et désactivez « Autoriser les soumissions à ce formulaire sans nom d'utilisateur et mot de passe » sous <strong>Collecter des données</strong>.
+</details>
+<br>
+<details>
+<summary><strong>Les anciens enregistrements ignorent les règles au niveau des lignes</strong></summary>
+Les soumissions effectuées avant que <a href="project_sharing_settings.html">l'authentification ne soit requise</a> peuvent ne pas avoir de nom d'utilisateur associé, de sorte que les règles basées sur l'utilisateur ne peuvent pas les filtrer.
+</details>
+<br>
+<details>
+<summary><strong>Les permissions basées sur une condition ne correspondent pas au texte partiel</strong></summary>
+Le filtre doit inclure la valeur de réponse exacte. Par exemple, filtrer sur <code>developer</code> ne correspondra pas à <code>software_developer</code>. Écrivez la valeur complète que vous attendez, ou ajustez votre formulaire pour que la valeur exacte soit capturée.
+</details>
+<br>
+<details>
+<summary><strong>Les permissions basées sur une condition échouent sur les questions de groupe répété</strong></summary>
+Les filtres ne peuvent pas regarder à l'intérieur d'un groupe répété car une soumission peut contenir plusieurs réponses différentes. Si vous avez besoin de cela, consultez le message du Forum communautaire <a href="https://community.kobotoolbox.org/t/condition-based-permissions-from-a-repeat-group-value/59449">Permissions basées sur une condition utilisant une valeur de groupe répété</a> pour une solution de contournement avec une feuille de calcul.
+</details>
+<br>
+<details>
+<summary><strong>Conditions multiples non prises en charge</strong></summary>
+Les permissions basées sur une condition n'acceptent qu'une seule condition. Si vous devez définir des permissions basées sur plusieurs conditions, envisagez de créer un calcul basé sur une condition dans votre formulaire qui génère une seule valeur pour le filtrage.
+</details></section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Partager des projets avec des permissions au niveau utilisateur"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">Premiers Pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Introduction à KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte sur KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Premiers pas avec l’interface de création de formulaires KoboToolbox (KoboToolbox Formbuilder)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Débuter avec XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Compte et Facturation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte sur KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Dépannage du lien d’activation de compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Réinitialisation des mots de passe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configuration de l’authentification à deux facteurs dans KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utilisation du Formbuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Premiers pas avec l’interface de création de formulaires KoboToolbox (KoboToolbox Formbuilder)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Liste des types de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Types de questions Texte et Note</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Types de questions « Sélectionner une réponse » et « Sélectionner plusieurs réponses »</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Type de question Acknowledge</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Types de questions Nombre, Décimal et Plage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Types de questions Date et Heure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Types de questions « Photo », « Audio », « Vidéo » et « Fichier »</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Type de question Code-barres/Code QR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Types de questions : Évaluation vs Classement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Type de question Sélectionner un ou plusieurs éléments d’un fichier externe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Types de questions GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Type de question Calcul</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Type de question Calcul avancé</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Type de question Signature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Type de réponse Matrice de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Inclure des réponses dans une autre question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Utilisation des options de question</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Ajouter une logique de saut dans l’interface de création de formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Ajouter des critères de validation dans l’interface de création de formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limites des réponses numériques et textuelles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Ajouter des questions de sélection en cascade dans l’interface de création de formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Regrouper des questions et répéter des groupes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restreindre les réponses textuelles avec des expressions régulières</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Ajouter une autre langue dans le tableau de bord du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Paramètres et métadonnées du formulaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Type de méta-question Audit Logging</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formatage personnalisé dans les formulaires Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Utilisation de styles alternatifs pour les formulaires web Enketo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Utiliser La bibliothèque de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Utiliser les Collections publiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Recherche avancée dans les Collections publiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">Utilisation des balises HXL</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utilisation de XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Modifier des formulaires dans Excel en utilisant XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Débuter avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importer un XLSForm via URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Ajouter différents types de médias (image, audio, vidéo) à un formulaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Ajouter une autre langue à votre XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Pièces jointes de données dynamiques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Fonctionnalité Pull Data dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Verrouillage de bibliothèque</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Collecte de Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Aperçu des outils de collecte de données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enketo.html">Que sont les formulaires Web Enketo ?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Déployer un formulaire pour démarrer un nouveau projet de collecte de données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Enregistrer une interview complète avec l’enregistrement audio en arrière-plan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecte de données via les formulaires Web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecte de données hors ligne</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Premiers pas avec KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personnalisation des paramètres de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecte de données avec KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transférer manuellement des formulaires et des données d’un appareil Android à un autre</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Appareils recommandés pour la collecte de données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Dépannage de l’application Android KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Dépannage des formulaires web Enketo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecte de localisations GPS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Gestion des Projets et Données</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Résumé du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validation des enregistrements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Supprimer un projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporter et télécharger vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Options avancées pour l’exportation des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestion des données de groupes répétés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiver et désarchiver des projets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Partager des projets avec des paramètres au niveau du projet</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Partager des projets avec des permissions au niveau utilisateur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#definir-des-permissions-au-niveau-utilisateur">Définir des permissions au niveau utilisateur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#definir-des-permissions-au-niveau-des-lignes">Définir des permissions au niveau des lignes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copier-des-permissions-depuis-un-autre-projet">Copier des permissions depuis un autre projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#depannage">Dépannage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Cartographie, partage et exportation de données GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Modifier ou supprimer une soumission individuelle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Modifier les réponses dans plusieurs soumissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Télécharger des photos et autres médias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Supprimer des fichiers multimédias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Récupération des données des versions précédentes du formulaire</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Utilisation de la fonctionnalité de gestion d’équipe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Suivi d’activité</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Analyse des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Affichage et création de rapports personnalisés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcription et traduction des réponses audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Analyse qualitative des réponses audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir les données en SPSS et/ou Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Intégrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Premiers pas avec l’API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Utilisation de l’API pour les exports synchrones</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connexion de KoboToolbox à Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecter KoboToolbox à Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Fusionner des données individuelles avec des données de liste via Power Query dans Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Services REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporter et importer des données dans un logiciel SIG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Intégration de KoboToolbox sur monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migration de l’API v1 vers v2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sécurité et Protection des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Mesures de sécurité des données KoboToolbox : Protéger vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">Règlement général sur la protection des données (RGPD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Conformité HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Stockage des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Chiffrement des formulaires</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Ressources Supplémentaires</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Inclure les P-Codes dans les données exportées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Créer des numéros de série uniques dans les formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Réponses « Autre » spécifiées par l’utilisatrice ou l’utilisateur pour les questions à choix multiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Réduire la taille des fichiers multimédias collectés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Ajouter des calculs et des contraintes dans une question matricielle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Ajouter une logique de saut à une question matricielle</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Ajouter un logo personnalisé</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportations bloquées à l’état En attente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Téléverser manuellement des soumissions</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Questions from the community</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "managing_permissions",
+      currentTitle: "Partager des projets avec des permissions au niveau utilisateur",
+      currentUrl: ("index.html").replace("index.html", "managing_permissions.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

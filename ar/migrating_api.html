@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+
+<html lang="ar" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>الترحيل من واجهة برمجة التطبيقات v1 إلى v2 &#8212; KoboToolbox  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=bd8ea2bd"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/translations.js?v=87cb2081"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="بحث" href="search.html" />
+    <link rel="next" title="إجراءات أمان البيانات في KoboToolbox: الحفاظ على أمان بياناتك" href="is_my_data_safe.html" />
+    <link rel="prev" title="تكامل KoboToolbox على monday.com" href="kobotoolbox_monday_integration.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://www.kobotoolbox.org/features">Features</a></li>
+      <li><a href="https://www.kobotoolbox.org/services">Services</a></li>
+      <li><a href="https://www.kobotoolbox.org/pricing">Pricing</a></li>
+      <li><a href="https://www.kobotoolbox.org/blog">Blog</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="migrating_api">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="v1-v2">
+<h1>الترحيل من واجهة برمجة التطبيقات v1 إلى v2<a class="headerlink" href="#v1-v2" title="Link to this heading">¶</a></h1>
+<p><a href="../migrating_api.html">Read in English</a> | <a href="../fr/migrating_api.html">Lire en français</a> | <a href="../es/migrating_api.html">Leer en español</a>
+<strong>آخر تحديث:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7a618b1d0f3bc3dffa450c17d9e5063ca4c69770/source/migrating_api.md" class="reference">7 أغسطس 2025</a></p>
+<p>كجزء من جهودنا المستمرة لتبسيط وتحديث منصة KoboToolbox، نقوم بإيقاف نقاط نهاية KPI وKoboCAT <code class="docutils literal notranslate"><span class="pre">v1</span></code> تدريجياً. جميع نقاط نهاية KPI وKoboCAT <code class="docutils literal notranslate"><span class="pre">v1</span></code> أصبحت الآن قديمة، وسيتم إزالتها بالكامل في يناير 2026. يتم إيقاف نقاط نهاية <code class="docutils literal notranslate"><span class="pre">v1</span></code> تدريجياً لصالح واجهة برمجة التطبيقات KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code> الأكثر قوة والمدعومة بالكامل.</p>
+<p>يشرح هذا المقال كيفية ترحيل تكاملات واجهة برمجة التطبيقات الخاصة بك من واجهة برمجة التطبيقات <code class="docutils literal notranslate"><span class="pre">v1</span></code> (KoboCAT وKPI) إلى واجهة برمجة التطبيقات KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code>. ويغطي كل نقطة نهاية <code class="docutils literal notranslate"><span class="pre">v1</span></code> قديمة ومعادلها في <code class="docutils literal notranslate"><span class="pre">v2</span></code> لمساعدتك في نقل سير العمل الخاص بك.</p>
+<section id="kpi-v1-kpi-v2">
+<h2>الترحيل من KPI v1 إلى KPI v2<a class="headerlink" href="#kpi-v1-kpi-v2" title="Link to this heading">¶</a></h2>
+<p>الترحيل من واجهة برمجة التطبيقات KPI القديمة (<code class="docutils literal notranslate"><span class="pre">v1</span></code>) إلى الإصدار الجديد (<code class="docutils literal notranslate"><span class="pre">v2</span></code>) أمر مباشر في معظم الحالات.</p>
+<p>بشكل عام، تحتاج فقط إلى تحديث المسار الأساسي من <code class="docutils literal notranslate"><span class="pre">/endpoint/</span></code> إلى <code class="docutils literal notranslate"><span class="pre">/api/v2/endpoint/</span></code>.</p>
+<section id="exports">
+<h3>استثناء لنقطة نهاية exports<a class="headerlink" href="#exports" title="Link to this heading">¶</a></h3>
+<p>الاستثناء الوحيد للقاعدة أعلاه هو نقطة نهاية <code class="docutils literal notranslate"><span class="pre">/exports/</span></code>. في <code class="docutils literal notranslate"><span class="pre">v1</span></code>، كانت نقطة نهاية <code class="docutils literal notranslate"><span class="pre">/exports/</span></code> تُرجع <strong>جميع الصادرات للمستخدم المصادق عليه</strong> عبر جميع المشاريع.</p>
+<p>في <code class="docutils literal notranslate"><span class="pre">v2</span></code>، لأسباب تتعلق بالأداء، أصبحت الصادرات الآن <strong>محددة النطاق لكل مشروع</strong> ويجب الوصول إليها عبر <code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/exports/</span></code>.</p>
+</section>
+</section>
+<section id="kobocat-v1-kpi-v2">
+<h2>الترحيل من KoboCAT v1 إلى KPI v2<a class="headerlink" href="#kobocat-v1-kpi-v2" title="Link to this heading">¶</a></h2>
+<p>يسرد القسم التالي نقاط النهاية الرئيسية من واجهة برمجة التطبيقات KoboCAT <code class="docutils literal notranslate"><span class="pre">v1</span></code> ويوفر معادلاتها في <code class="docutils literal notranslate"><span class="pre">v2</span></code>.</p>
+<section id="id1">
+<h3>نقاط نهاية البيانات: قائمة المشاريع<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p>تُرجع نقطة النهاية هذه قائمة بالنماذج التي يمكنك الوصول إليها، مع روابط لبيانات الإرسال الخاصة بها، وتعمل كنقطة دخول للوصول إلى الاستجابات أو تنزيلها.</p>
+<p><strong>تعيين نقطة النهاية من <code class="docutils literal notranslate"><span class="pre">v1</span></code> إلى <code class="docutils literal notranslate"><span class="pre">v2</span></code></strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>نقطة نهاية <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>معادل <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/api/v1/data</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/?asset_type=survey</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>تعيين الحقول من <code class="docutils literal notranslate"><span class="pre">v1</span></code> إلى <code class="docutils literal notranslate"><span class="pre">v2</span></code></strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>حقل <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>معادل <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">id</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">uid</span></code><sup>1</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">id_string</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">uid</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">title</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">name</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">description</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">settings.description</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">url</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">data</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> <em>في نقطة نهاية <code class="docutils literal notranslate"><span class="pre">/api/v2/assets</span></code>، لم تعد المعرفات الصحيحة المتسلسلة مستخدمة. يتم تحديد كل إدخال بشكل فريد بواسطة <code class="docutils literal notranslate"><span class="pre">uid</span></code> أبجدي رقمي</em></p>
+<p><strong>مثال على استجابة <code class="docutils literal notranslate"><span class="pre">v1</span></code></strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">474</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;id_string&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pathways Initiative&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pathways Initiative&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/data/474.json&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>استجابة <code class="docutils literal notranslate"><span class="pre">v2</span></code> المعادلة</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pathways Initiative&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;settings&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;A humanitarian project supporting access&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/data/&quot;</span>
+<span class="w">  </span><span class="err">...</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h3>نقاط نهاية البيانات: بيانات الإرسال<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<p>تسترجع نقاط النهاية هذه جميع بيانات الإرسال لمشروع معين أو إرسال واحد من المشروع. <code class="docutils literal notranslate"><span class="pre">{uid}</span></code> هو المعرف الفريد للمشروع و<code class="docutils literal notranslate"><span class="pre">{submission_id}</span></code> هو المعرف الفريد لإرسال النموذج.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>نقطة نهاية <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>معادل <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/api/v1/data/&lt;pk&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{uid}/data/</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/api/v1/data/&lt;pk&gt;/&lt;dataid&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{uid}/data/{submission_id}/</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>بناءً على <code class="docutils literal notranslate"><span class="pre">url</span></code> الذي تحصل عليه من خاصية <code class="docutils literal notranslate"><span class="pre">data</span></code> في نقطة نهاية الأصل، يمكنك جلب بيانات الإرسال في <code class="docutils literal notranslate"><span class="pre">v2</span></code> باستخدام.</p>
+<p class="note">
+  <b>ملاحظة:</b> بنية الاستجابة متشابهة تقريباً، <strong>باستثناء أن <code>v2</code> يقدم ترقيم الصفحات</strong>.
+</p>
+<p><strong>مثال على استجابة <code class="docutils literal notranslate"><span class="pre">v1</span></code></strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">49542</span><span class="p">,</span>
+<span class="w">    </span><span class="err">...</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p><strong>استجابة <code class="docutils literal notranslate"><span class="pre">v2</span></code> المعادلة</strong></p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1200</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;previous&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">49542</span><span class="p">,</span>
+<span class="w">      </span><span class="err">...</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</details>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h3>نقاط نهاية النموذج<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h3>
+<p>تُرجع نقاط النهاية هذه سمات تفصيلية لجميع النماذج المشتركة معك أو حول نموذج معين، حيث <code class="docutils literal notranslate"><span class="pre">{uid}</span></code> هو المعرف الفريد للمشروع.</p>
+<p><strong>تعيين نقطة النهاية</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>نقطة نهاية <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>معادل <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/api/v1/forms</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/?asset_type=survey</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/api/v1/forms/&lt;pk&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+  <b>ملاحظة:</b> تتبع نقطة نهاية <code>v2</code> نفس البنية لكل عنصر كما هو مدرج أدناه، لكنها تقدم ترقيم الصفحات. بعض الخصائص من نقطة نهاية <code>v1</code> غير متاحة مباشرة في نقطة نهاية الأصل <code>v2</code>، لكن لا يزال من الممكن الوصول إليها بشكل مختلف (انظر الشرح أسفل الجدول لمزيد من التفاصيل).
+</p>
+<p><strong>تعيين الحقول</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>حقل <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>معادل <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">formid</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">uid</span></code><sup>1</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">owner</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">owner__username</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">metadata</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">files</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tags</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">tag_string</span></code><sup>2</sup></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">title</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">name</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">public</span></code></p></td>
+<td><p><em>غير متاح</em><sup>3</sup></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">public_data</span></code></p></td>
+<td><p><em>غير متاح</em><sup>3</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">require_auth</span></code></p></td>
+<td><p><em>غير متاح</em><sup>3</sup></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">users</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">permissions</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hash</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">version__content_hash</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">downloadable</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">deployment__active</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">encrypted</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">deployment__encrypted</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">last_submission_time</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">deployment__last_submission_time</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">uuid</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">deployment__uuid</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">instances_with_geopoints</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">summary.geo</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">num_of_submissions</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">deployment__submission_count</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">attachment_storage_bytes</span></code></p></td>
+<td><p><em>غير متاح</em><sup>4</sup></p></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> <em>في نقطة نهاية <code class="docutils literal notranslate"><span class="pre">/api/v2/assets</span></code>، لم تعد المعرفات الصحيحة المتسلسلة مستخدمة. يتم تحديد كل إدخال بشكل فريد بواسطة <code class="docutils literal notranslate"><span class="pre">uid</span></code> أبجدي رقمي</em>.<br />
+<sup>2</sup> <em>في <code class="docutils literal notranslate"><span class="pre">v1</span></code>، تم إرجاع العلامات كمصفوفة؛ في <code class="docutils literal notranslate"><span class="pre">v2</span></code>، يتم إرجاعها كسلسلة مفصولة بفواصل.</em><br />
+<sup>3</sup> <em>لم تعد هذه الحقول معروضة. راجع قسم <strong>الأذونات</strong> أدناه لمزيد من التفاصيل.</em><br />
+<sup>4</sup> <em>غير قابل للوصول مباشرة عبر نقطة نهاية الأصل. استخدم نقطة نهاية <code class="docutils literal notranslate"><span class="pre">/api/v2/asset_usage/</span></code> واسترجع حقل <code class="docutils literal notranslate"><span class="pre">storage_bytes</span></code> للمشروع المقابل.</em></p>
+<details>
+<summary><strong>مثال على استجابة <code>v1</code></strong></summary>
+<br>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v1/forms/474&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;formid&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">474</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">  </span><span class="nt">&quot;owner&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;project_owner&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;public&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;public_data&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;require_auth&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;tags&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;my_tag&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;my_other_tag&quot;</span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pathways Initiative&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;users&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;project_owner&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;permissions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="s2">&quot;add_xform&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;change_xform&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;delete_data_xform&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;delete_xform&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;move_xform&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;report_xform&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;transfer_xform&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;validate_xform&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="s2">&quot;view_xform&quot;</span>
+<span class="w">      </span><span class="p">]</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">],</span>
+<span class="w">  </span><span class="nt">&quot;hash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;md5:65ee54b6412379b0e35b27a97d606c29&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;downloadable&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;encrypted&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;id_string&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;last_submission_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-06-03T15:16:20.838131Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;f739945244514a6bb304dc35d6049880&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;instances_with_geopoints&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;num_of_submissions&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1200</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;attachment_storage_bytes&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">27240767883</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>استجابة <code>v2</code> المعادلة</strong></summary>
+<br>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;owner__username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;project_owner&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;files&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[],</span>
+<span class="w">  </span><span class="nt">&quot;summary&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;geo&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;version__content_hash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;05be1113c6ae66665059fea5943ce90a97d966db&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;deployment__active&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;deployment__submission_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1200</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;deployment__last_submission_time&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-06-03T15:16:20.838131Z&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;deployment__encrypted&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;deployment__uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;f739945244514a6bb304dc35d6049880&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;tag_string&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;my_tag,my_other_tag&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Pathways Initiative&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;permissions&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pQnggGHaPGGmJtPCbCCVpU/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/project_owner/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/add_submissions/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Add submissions&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pcn2g8ezroevNsP7CuCkrf/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/project_owner/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/change_asset/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Edit form&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pVMKQ4bDSn5SCAgefzMRLX/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/project_owner/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/change_submissions/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Edit submissions&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pwoCoBBLmyWsdF2dXPBaHt/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/project_owner/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/delete_submissions/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Delete submissions&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pqDGr7M7au4NsFiuKkEeTr/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/project_owner/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/manage_asset/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Manage project&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/p3dFAXPvHX3ib93twD7rPG/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/project_owner/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/validate_submissions/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Validate submissions&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pE38Wi89CavBvNHGqQ2WZj/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/project_owner/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/view_asset/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;View form&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pWeJkdjjFk9cQVFvLnr6cS/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/project_owner/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/view_submissions/&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;View submissions&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</details>
+<br>
+<p><a id="tags"></a>
+<strong>العلامات</strong></p>
+<p>العلامات في <code class="docutils literal notranslate"><span class="pre">v1</span></code> و<code class="docutils literal notranslate"><span class="pre">v2</span></code> لا تشترك في نفس قاعدة البيانات الأساسية. ونتيجة لذلك، <strong>لن يتم ترحيل</strong> العلامات من <code class="docutils literal notranslate"><span class="pre">v1</span></code> تلقائياً إلى <code class="docutils literal notranslate"><span class="pre">v2</span></code>. إذا كنت بحاجة إلى الاحتفاظ بها، يجب عليك إعادة تطبيق العلامات يدوياً باستخدام طلب <code class="docutils literal notranslate"><span class="pre">PATCH</span></code> إلى <code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{uid}/</span></code>.</p>
+<p>مثال على البيانات:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;tag_string&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tag1,tag2,tag3&quot;</span><span class="w"> </span><span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>الأذونات</strong></p>
+<p>في <code class="docutils literal notranslate"><span class="pre">v2</span></code>، لم تعد الحقول <code class="docutils literal notranslate"><span class="pre">public</span></code> و<code class="docutils literal notranslate"><span class="pre">public_data</span></code> و<code class="docutils literal notranslate"><span class="pre">require_auth</span></code> معروضة كسمات منطقية. بدلاً من ذلك، <strong>يتم التحكم في الوصول المجهول عبر تعيينات أذونات صريحة لـ <code class="docutils literal notranslate"><span class="pre">AnonymousUser</span></code></strong>.</p>
+<p>تنطبق التعيينات التالية:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">public:</span> <span class="pre">true</span></code> ← لدى <code class="docutils literal notranslate"><span class="pre">AnonymousUser</span></code> إذن <code class="docutils literal notranslate"><span class="pre">view_asset</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">public_data:</span> <span class="pre">true</span></code> ← لدى <code class="docutils literal notranslate"><span class="pre">AnonymousUser</span></code> إذن <code class="docutils literal notranslate"><span class="pre">view_submissions</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">require_auth:</span> <span class="pre">false</span></code> ← لدى <code class="docutils literal notranslate"><span class="pre">AnonymousUser</span></code> إذن <code class="docutils literal notranslate"><span class="pre">add_submissions</span></code></p></li>
+</ul>
+<details>
+<summary><strong>مثال: أذونات المستخدم المجهول في <code>v2</code></strong></summary>
+<br>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pqEVtLkmHerjBYcEWBcZPG/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/AnonymousUser/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/add_submissions/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Add submissions&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/phjb8xYQ9CjcLuXfnpZCHu/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/AnonymousUser/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/view_asset/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;View form&quot;</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/pQpqWikpQbjzeVCJgHoubH/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/users/AnonymousUser/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;permission&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/permissions/view_submissions/&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;label&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;View submissions&quot;</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</details>
+<br>
+</section>
+<hr class="docutils" />
+<section id="id4">
+<h3>نقطة نهاية التسمية<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h3>
+<p>تُرجع نقطة نهاية <code class="docutils literal notranslate"><span class="pre">/api/v1/forms/&lt;pk&gt;/labels</span></code> من <code class="docutils literal notranslate"><span class="pre">v1</span></code> قاموساً يربط كل اسم حقل في النموذج بتسميته المقابلة، مما يتيح عرضاً أكثر سهولة لبيانات النموذج.</p>
+<p>لم يتم نقل نقطة النهاية هذه إلى <code class="docutils literal notranslate"><span class="pre">v2</span></code>، لكن لا يزال من الممكن <strong>تسمية</strong> أو <strong>وضع علامة</strong> على مشروع، كما هو موضح <a class="reference internal" href="#tags"><span class="xref myst">أعلاه</span></a>.</p>
+</section>
+<hr class="docutils" />
+<section id="id5">
+<h3>نقاط نهاية البيانات الوصفية<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h3>
+<p>تُرجع نقاط النهاية هذه قائمة مسطحة بجميع ملفات الوسائط المرتبطة بالمستخدم الحالي، عبر جميع المشاريع المنشورة أو مشروع معين. في <code class="docutils literal notranslate"><span class="pre">v2</span></code>، أصبحت ملفات الوسائط الآن محددة النطاق لكل مشروع. كما هو الحال مع نقاط النهاية الأخرى، يقدم <code class="docutils literal notranslate"><span class="pre">v2</span></code> ترقيم الصفحات، بينما يُرجع <code class="docutils literal notranslate"><span class="pre">v1</span></code> جميع النتائج في استجابة واحدة.</p>
+<p><strong>تعيين نقطة النهاية</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>نقطة نهاية <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>معادل <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/api/v1/metadata</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/files/</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/api/v1/metadata/&lt;pk&gt;</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/files/{file_uid}/</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+  <b>ملاحظة:</b> يدعم <code>v2</code> فقط ملفات الوسائط: <code>media</code> من <code>v1</code> يتم تعيينه إلى <code>form_media</code> في <code>v2</code>. <strong>أنواع البيانات الوصفية الأخرى</strong> من <code>v1</code> (مثل <code>doc</code> و<code>mapbox_layer</code> و<code>source</code> إلخ.) لم يتم نقلها إلى <code>v2</code>.
+</p>
+<p><strong>تعيين الحقول</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>حقل <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>معادل <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">id</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">uid</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">data_type</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">file_type</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">xform</span></code></p></td>
+<td><p><em>غير متاح</em><sup>1</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">data_value</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">metadata.filename</span></code> أو <code class="docutils literal notranslate"><span class="pre">metadata.redirect_url</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">data_filename</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">metadata.filename</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">data_file</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">content</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">data_file_type</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">metadata.mimetype</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">file_hash</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">metadata.hash</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">from_kpi</span></code></p></td>
+<td><p><em>غير متاح</em></p></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> <em>في <code class="docutils literal notranslate"><span class="pre">v2</span></code>، يمكن الوصول إلى المشروع ذي الصلة عبر حقل <code class="docutils literal notranslate"><span class="pre">asset</span></code>، الذي يحتوي على عنوان URL كامل بدلاً من معرف صحيح.</em></p>
+<p><strong>مثال على استجابة <code class="docutils literal notranslate"><span class="pre">v1</span></code></strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">271</span><span class="p">,</span>
+  <span class="s2">&quot;xform&quot;</span><span class="p">:</span> <span class="mi">374</span><span class="p">,</span>
+  <span class="s2">&quot;data_value&quot;</span><span class="p">:</span> <span class="s2">&quot;goose.jpg&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;media&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;data_file&quot;</span><span class="p">:</span> <span class="s2">&quot;/project_owner/form-media/b44a7c2cd0f244e6b405821582364657/goose.jpg&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;data_file_type&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;file_hash&quot;</span><span class="p">:</span> <span class="s2">&quot;md5:93fb96bced1e3b392abfc22934afe51a&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/metadata/271?format=json&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;from_kpi&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
+  <span class="s2">&quot;data_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;goose.jpg&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>استجابة <code class="docutils literal notranslate"><span class="pre">v2</span></code> المعادلة</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+  <span class="s2">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;afoeCcF3AcGNpWUoM6bvKj9&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;asset&quot;</span><span class="p">:</span> <span class="s2">&quot;http://kf.kobo.localhost/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;file_type&quot;</span><span class="p">:</span> <span class="s2">&quot;form_media&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;http://kf.kobo.localhost/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/content/&quot;</span><span class="p">,</span>
+  <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;md5:93fb96bced1e3b392abfc22934afe51a&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;goose.jpg&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;mimetype&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span>
+  <span class="p">},</span>
+  <span class="o">...</span>  
+<span class="p">}</span>
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="id6">
+<h3>نقاط نهاية المستخدم<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h3>
+<p>تُرجع نقطة النهاية هذه معلومات الملف الشخصي حول المستخدم المصادق عليه، بما في ذلك هوية الحساب والتفاصيل المرتبطة.</p>
+<p><strong>تعيين نقطة النهاية</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>نقطة نهاية <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>معادل <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/api/v1/user</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/me/</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>تعيين الحقول</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>حقل <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>معادل <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">id</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">extra_details__uid</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">username</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">username</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">email</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">email</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">city</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">extra_details.city</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">country</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">extra_details.country</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">organization</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">extra_details.organization</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">website</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">extra_details.website</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">twitter</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">extra_details.twitter</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">url</span></code></p></td>
+<td><p>غير متاح<sup>1</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">user</span></code></p></td>
+<td><p>غير متاح<sup>1</sup></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">gravatar</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">gravatar</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">require_auth</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">require_auth</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">api_token</span></code></p></td>
+<td><p>غير متاح<sup>2</sup></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">temp_token</span></code></p></td>
+<td><p>غير متاح<sup>1</sup></p></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> <em>لم يتم نقله إلى <code class="docutils literal notranslate"><span class="pre">v2</span></code></em></p>
+<p><sup>2</sup> <em>استخدم https://kf.domain.tld/token بدلاً من ذلك</em></p>
+</section>
+</section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=الترحيل من واجهة برمجة التطبيقات v1 إلى v2"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">البدء</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">مقدمة إلى KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">إنشاء حساب على KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">البدء في استخدام أداة إنشاء النماذج في KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">البدء مع XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">الحساب والفوترة</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">إنشاء حساب على KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">استكشاف أخطاء رابط تفعيل الحساب وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">إعادة تعيين كلمات المرور</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">إعداد المصادقة الثنائية في KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">استخدام أداة إنشاء النماذج</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">البدء في استخدام أداة إنشاء النماذج في KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">قائمة أنواع الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">أنواع أسئلة النص والملاحظة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">أنواع الأسئلة &quot;اختيار واحد&quot; و&quot;اختيار متعدد&quot;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">نوع سؤال الإقرار</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">أنواع الأسئلة: الرقم، العشري، والنطاق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">أنواع أسئلة التاريخ والوقت</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">أنواع الأسئلة &quot;صورة&quot; و&quot;صوت&quot; و&quot;فيديو&quot; و&quot;ملف&quot;</a></li>
+<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">نوع سؤال الباركود/رمز الاستجابة السريعة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">أنواع أسئلة التقييم مقابل الترتيب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">نوع سؤال اختيار واحد أو متعدد من ملف خارجي</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">أنواع أسئلة GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">نوع سؤال الحساب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">نوع السؤال المتقدم للحساب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">نوع سؤال التوقيع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">نوع الاستجابة مصفوفة الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">تضمين الإجابات داخل سؤال آخر</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">استخدام خيارات الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">إضافة منطق التخطي في Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">إضافة معايير التحقق في واجهة إنشاء النماذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">القيود على الاستجابات الرقمية والنصية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">إضافة أسئلة الاختيار المتتالي في أداة إنشاء النماذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">تجميع الأسئلة وتكرار المجموعات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">تقييد الإجابات النصية باستخدام التعبيرات النمطية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">إضافة لغة أخرى في لوحة تحكم المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">إعدادات النموذج والبيانات الوصفية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">نوع السؤال الوصفي لتسجيل التدقيق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">التنسيق المخصص في النماذج الإلكترونية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">استخدام أنماط نماذج Enketo البديلة على الويب</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">استخدام مكتبة الأسئلة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">استخدام المجموعات العامة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">البحث المتقدم في المجموعات العامة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hxl.html">استخدام علامات HXL</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">استخدام XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">تحرير النماذج في Excel باستخدام XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">البدء مع XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xls_url.html">استيراد XLSForm عبر رابط URL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">إضافة أنواع مختلفة من الوسائط (صورة، صوت، فيديو) إلى النموذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">إضافة لغة أخرى إلى نموذج XLSForm الخاص بك</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">مرفقات البيانات الديناميكية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">وظيفة Pull Data في KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">قفل المكتبة</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">جمع البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">نظرة عامة على أدوات جمع البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="enketo.html">ما هي نماذج Enketo الإلكترونية؟</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">نشر نموذج لبدء مشروع جمع بيانات جديد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">تسجيل المقابلة بالكامل باستخدام التسجيل الصوتي في الخلفية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">جمع البيانات من خلال النماذج الإلكترونية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-offline.html">جمع البيانات دون اتصال بالإنترنت</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">البدء مع KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">تخصيص إعدادات KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">جمع البيانات باستخدام KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">نقل النماذج والبيانات يدويًا من جهاز أندرويد إلى آخر</a></li>
+<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">الأجهزة الموصى بها لجمع البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">استكشاف أخطاء تطبيق KoboCollect لنظام Android وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">استكشاف أخطاء نماذج Enketo على الويب وإصلاحها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">جمع المواقع الجغرافية بنظام GPS</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">إدارة المشاريع والبيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="project_summary.html">ملخص المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="record_validation.html">التحقق من صحة السجلات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="delete_project.html">حذف مشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">تصدير وتنزيل بياناتك</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">خيارات متقدمة لتصدير البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">إدارة بيانات المجموعات المتكررة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">أرشفة المشاريع وإلغاء أرشفتها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">مشاركة المشاريع باستخدام إعدادات على مستوى المشروع</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">مشاركة المشاريع مع أذونات على مستوى المستخدم</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_gps.html">رسم خرائط بيانات GPS ومشاركتها وتصديرها</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">تعديل أو حذف إرسال واحد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">تعديل الإجابات في عدة عمليات إرسال</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_download.html">تنزيل الصور والوسائط الأخرى</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">حذف ملفات الوسائط</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">استرداد البيانات من إصدارات النموذج السابقة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">استخدام ميزة إدارة الفريق</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">سجلات النشاط</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">تحليل البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">عرض وإنشاء التقارير المخصصة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">النسخ والترجمة للردود الصوتية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">التحليل النوعي للردود الصوتية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">تحويل البيانات إلى SPSS و/أو Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">التكاملات</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api.html">البدء باستخدام واجهة برمجة التطبيقات (API)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">استخدام واجهة برمجة التطبيقات (API) للتصديرات المتزامنة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">ربط KoboToolbox بـ Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">ربط KoboToolbox بـ Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">دمج البيانات الفردية مع بيانات القوائم من خلال Power Query في Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">خدمات REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">تصدير البيانات ورفعها إلى برامج نظم المعلومات الجغرافية</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">تكامل KoboToolbox على monday.com</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">الترحيل من واجهة برمجة التطبيقات v1 إلى v2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#kpi-v1-kpi-v2">الترحيل من KPI v1 إلى KPI v2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kobocat-v1-kpi-v2">الترحيل من KoboCAT v1 إلى KPI v2</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">أمن وحماية البيانات</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">إجراءات أمان البيانات في KoboToolbox: الحفاظ على أمان بياناتك</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">اللائحة العامة لحماية البيانات (GDPR)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">الامتثال لقانون HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">تخزين البيانات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">تشفير النماذج</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">موارد إضافية</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">تضمين الرموز الإدارية (P-Codes) في بيانات المخرجات</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">إنشاء أرقام تسلسلية فريدة في النماذج</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">إجابات &quot;أخرى&quot; يحددها المستخدم لأسئلة الاختيار من متعدد</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">تقليل حجم ملف الوسائط المجمّعة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">إضافة العمليات الحسابية والقيود في سؤال المصفوفة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">إضافة منطق التخطي إلى سؤال المصفوفة</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">إضافة شعار مخصص</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">التصديرات العالقة في حالة الانتظار</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">رفع البيانات يدويًا</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Questions from the community</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "migrating_api",
+      currentTitle: "الترحيل من واجهة برمجة التطبيقات v1 إلى v2",
+      currentUrl: ("index.html").replace("index.html", "migrating_api.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>
