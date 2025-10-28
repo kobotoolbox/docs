@@ -1,5 +1,5 @@
 # Introduction to KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/79cdbc6e6b1cebfcef7014a119d4f2dcf3f272af/source/welcome.md" class="reference">27 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/welcome.md" class="reference">28 Oct 2025</a>
 
 <a href="es/welcome.html">Leer en español</a> | <a href="fr/welcome.html">Lire en français</a> | <a href="ar/welcome.html">اقرأ باللغة العربية</a>
 

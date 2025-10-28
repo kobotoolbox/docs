@@ -1,5 +1,5 @@
 # Select One or Many From External File Question Type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/external_file.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/external_file.md" class="reference">28 Oct 2025</a>
 
 <a href="es/external_file.html">Leer en español</a> | <a href="fr/external_file.html">Lire en français</a> | <a href="ar/external_file.html">اقرأ باللغة العربية</a>
 external file, rather than directly in the project XLSForm. For example, a long

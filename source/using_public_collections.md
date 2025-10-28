@@ -1,5 +1,5 @@
 # Using Public Collections
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/using_public_collections.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/using_public_collections.md" class="reference">28 Oct 2025</a>
 
 <a href="es/using_public_collections.html">Leer en español</a> | <a href="fr/using_public_collections.html">Lire en français</a> | <a href="ar/using_public_collections.html">اقرأ باللغة العربية</a>
 **Public Collections** helps us all improve our data collection by making sets

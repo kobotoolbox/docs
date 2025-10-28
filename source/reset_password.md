@@ -1,5 +1,5 @@
 # Resetting Passwords
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/reset_password.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/reset_password.md" class="reference">28 Oct 2025</a>
 
 <a href="es/reset_password.html">Leer en español</a> | <a href="fr/reset_password.html">Lire en français</a> | <a href="ar/reset_password.html">اقرأ باللغة العربية</a>
 reset it easily.

@@ -1,5 +1,5 @@
 # Limits on Number and Text Responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/number_text_responses.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c238efa59b04f403f13c150b018e1807c66d5c/source/number_text_responses.md" class="reference">28 Oct 2025</a>
 
 <a href="es/number_text_responses.html">Leer en español</a> | <a href="fr/number_text_responses.html">Lire en français</a> | <a href="ar/number_text_responses.html">اقرأ باللغة العربية</a>
  
