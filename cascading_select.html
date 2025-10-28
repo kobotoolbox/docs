@@ -1,30 +1,28 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Adding cascading select questions in the Formbuilder &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
-    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/js/breadcrumbs.js"></script>
-    <script src="_static/js/common.js"></script>
-    <script src="_static/js/custom_sections.js"></script>
-    <script src="_static/js/home_page_toc.js"></script>
-    <script src="_static/js/scrollto.js"></script>
-    <script src="_static/js/sidebar_toc.js"></script>
-    <script src="_static/js/smoothscroll-polyfill.js"></script>
-    <script src="_static/js/table-sheets.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Grouping questions and repeating groups" href="group_repeat.html" />
@@ -110,15 +108,14 @@
         <section class="page__body" role="main">
           
   <section id="adding-cascading-select-questions-in-the-formbuilder">
-<h1>Adding cascading select questions in the Formbuilder<a class="headerlink" href="#adding-cascading-select-questions-in-the-formbuilder" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d3acfe1ff9024088d8786974939afa969289bf79/source/cascading_select.md" class="reference">5 Sep 2025</a></p>
-<iframe src="https://www.youtube.com/embed/JDDNmErhV7o?si=S2k3G0sadiFJursu" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<h1>Adding cascading select questions in the Formbuilder<a class="headerlink" href="#adding-cascading-select-questions-in-the-formbuilder" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/cascading_select.md" class="reference">28 Oct 2025</a></p>
 <p>Cascading select questions allow you to create dynamic forms where the options in one question depend on the answer to a previous question. This feature helps streamline data collection by presenting only relevant choices, improving the efficiency and accuracy of your surveys.</p>
 <p class="note">
   <strong>Note:</strong> This article focuses on basic cascading select questions using the Formbuilder. To learn more about using XLSForm to create advanced cascading select questions and add choice filters, see <a href="https://xlsform.org/en/#cascading-selects">XLSForm documentation</a>.
 </p>
 <section id="preparing-a-cascading-choice-table">
-<h2>Preparing a cascading choice table<a class="headerlink" href="#preparing-a-cascading-choice-table" title="Permalink to this heading">¶</a></h2>
+<h2>Preparing a cascading choice table<a class="headerlink" href="#preparing-a-cascading-choice-table" title="Link to this heading">¶</a></h2>
 <p>To import cascading select questions into the Formbuilder, you first need to prepare your choice list in Excel or another spreadsheet program. You can use this <a href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit?gid=0#gid=0">Cascade Import Template</a> to get started.</p>
 <p>The choice table must include the following columns:</p>
 <ul class="simple">
@@ -134,7 +131,7 @@
 <p><img alt="Cascading select sample" src="_images/sample.png" /></p>
 </section>
 <section id="importing-the-table-into-the-formbuilder">
-<h2>Importing the table into the Formbuilder<a class="headerlink" href="#importing-the-table-into-the-formbuilder" title="Permalink to this heading">¶</a></h2>
+<h2>Importing the table into the Formbuilder<a class="headerlink" href="#importing-the-table-into-the-formbuilder" title="Link to this heading">¶</a></h2>
 <p>Once your choice list is ready, you can import it in the Formbuilder by following these steps:</p>
 <ol class="arabic simple">
 <li><p>Copy the entire choice table from your spreadsheet.</p></li>
@@ -153,7 +150,7 @@
 </p>
 </section>
 <section id="advanced-cascading-select-management-using-xlsform">
-<h2>Advanced cascading select management using XLSForm<a class="headerlink" href="#advanced-cascading-select-management-using-xlsform" title="Permalink to this heading">¶</a></h2>
+<h2>Advanced cascading select management using XLSForm<a class="headerlink" href="#advanced-cascading-select-management-using-xlsform" title="Link to this heading">¶</a></h2>
 <p>For greater flexibility in managing and updating your cascading select questions, especially if you anticipate frequent changes to your choice lists, using XLSForm is recommended. This method allows you to directly modify your choice lists, without losing any changes made to the question labels and settings.</p>
 <p>To update your cascading select questions using XLSForm:</p>
 <ol class="arabic simple">
@@ -166,7 +163,7 @@
 </p>
 </section>
 <section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permalink to this heading">¶</a></h2>
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
 <details>
 <summary><strong>Cascading choice list is blank</strong></summary>
 If the choice list for the child question is empty, the child list is not seeing a match in the parent list. Check that the choice names do not contain any symbols (letters, numbers, or underscores only) and that every parent option has at least one child linked to it.

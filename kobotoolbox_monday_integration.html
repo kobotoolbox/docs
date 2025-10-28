@@ -1,30 +1,28 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>KoboToolbox Integration on monday.com &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
-    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/js/breadcrumbs.js"></script>
-    <script src="_static/js/common.js"></script>
-    <script src="_static/js/custom_sections.js"></script>
-    <script src="_static/js/home_page_toc.js"></script>
-    <script src="_static/js/scrollto.js"></script>
-    <script src="_static/js/sidebar_toc.js"></script>
-    <script src="_static/js/smoothscroll-polyfill.js"></script>
-    <script src="_static/js/table-sheets.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Migrating from v1 to v2 API" href="migrating_api.html" />
@@ -110,9 +108,8 @@
         <section class="page__body" role="main">
           
   <section id="kobotoolbox-integration-on-monday-com">
-<h1>KoboToolbox Integration on monday.com<a class="headerlink" href="#kobotoolbox-integration-on-monday-com" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/kobotoolbox_monday_integration.md" class="reference">3 May 2024</a></p>
-<p class="note">
+<h1>KoboToolbox Integration on monday.com<a class="headerlink" href="#kobotoolbox-integration-on-monday-com" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/kobotoolbox_monday_integration.md" class="reference">28 Oct 2025</a>
 This article outlines the early release of the integration between KoboToolbox
 and Monday.com. As with any new release, there may be some unexpected bugs. If
 you encounter issues, please <a
@@ -120,7 +117,7 @@ href="https://www.kobotoolbox.org/contact/?contact_reason=Monday.com%20integrati
 class="reference">contact us</a> immediately so we can address them.
 </br>
 ⚠️ We recommend rigorous testing before deploying this integration for
-mission-critical projects. ⚠️
+mission-critical projects. ⚠️</p>
 </p>
 <p>The KoboToolbox integration allows users to easily synchronize their project
 data from a KoboToolbox project to a monday.com board.</p>
@@ -128,7 +125,7 @@ data from a KoboToolbox project to a monday.com board.</p>
 KoboToolbox to any of your monday.com boards. This integration significantly
 reduces the manual work involved in copying and pasting project data from KoboToolbox to monday.com.</p>
 <section id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading">¶</a></h2>
+<h2>Features<a class="headerlink" href="#features" title="Link to this heading">¶</a></h2>
 <ul class="simple">
 <li><p>Simplified process of connecting KoboToolbox projects with monday.com boards.</p></li>
 <li><p>Easy mapping of monday.com fields to KoboToolbox questions using any label
@@ -137,9 +134,9 @@ language defined in the form.</p></li>
 </ul>
 </section>
 <section id="installation-and-first-time-use">
-<h2>Installation and first time use<a class="headerlink" href="#installation-and-first-time-use" title="Permalink to this heading">¶</a></h2>
+<h2>Installation and first time use<a class="headerlink" href="#installation-and-first-time-use" title="Link to this heading">¶</a></h2>
 <section id="before-installing-the-integration">
-<h3>Before installing the integration<a class="headerlink" href="#before-installing-the-integration" title="Permalink to this heading">¶</a></h3>
+<h3>Before installing the integration<a class="headerlink" href="#before-installing-the-integration" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Create an account on KoboToolbox if you don’t already have one. Learn more about
 <a class="reference internal" href="creating_account.html"><span class="std std-doc">creating an account</span></a>.</p></li>
@@ -155,7 +152,7 @@ Learn how to get your <a class="reference internal" href="api.html"><span class=
 </p>
 </section>
 <section id="installation">
-<h3>Installation<a class="headerlink" href="#installation" title="Permalink to this heading">¶</a></h3>
+<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Install the KoboToolbox integration from the
 <a class="reference external" href="https://monday.com/marketplace">monday.com apps marketplace</a>.</p></li>
@@ -168,7 +165,7 @@ integration.</p></li>
 </p>
 </section>
 <section id="first-time-use">
-<h3>First time Use<a class="headerlink" href="#first-time-use" title="Permalink to this heading">¶</a></h3>
+<h3>First time Use<a class="headerlink" href="#first-time-use" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Go to the <strong>Integration</strong> menu on the top right.
 <img alt="monday-board-integrate" src="_images/monday-board-integrate.png" /></p></li>
@@ -223,7 +220,7 @@ the “Name” field and enter your KoboToolbox API Key in the “Value” field
 automatically be added to your monday.com board according to your recipe
 configuration.\</p>
 <p><img alt="kobo-monday-data" src="_images/kobo-monday-data.png" /></p>
-<h3 class="rubric" id="important-notes">Important Notes</h3>
+<p class="rubric" id="important-notes">Important Notes</p>
 <ol class="arabic simple">
 <li><p>Any updates made to a form or individual submission in a KoboToolbox
 project which has already been added to your monday.com board will not be automatically
@@ -254,7 +251,7 @@ board.</p></li>
 </section>
 </section>
 <section id="faq">
-<h2>FAQ<a class="headerlink" href="#faq" title="Permalink to this heading">¶</a></h2>
+<h2>FAQ<a class="headerlink" href="#faq" title="Link to this heading">¶</a></h2>
 <p><strong>What are the REST Services?</strong></p>
 <p>More information about REST Services is available in
 <a class="reference internal" href="rest_services.html"><span class="std std-doc">this support article</span></a>.</p>

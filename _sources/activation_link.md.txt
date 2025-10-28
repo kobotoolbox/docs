@@ -1,7 +1,5 @@
 # Troubleshooting account activation link 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0e5a784bc21dd79ac926f958b3cbb238d64ecc53/source/activation_link.md" class="reference">23 Sep 2025</a>
-
-After you create your account, an activation link will be sent to the email address you provided. You must click this link within 72 hours to activate your account.
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/activation_link.md" class="reference">28 Oct 2025</a>
 
 If you do not click the link within three days, or if the link has expired:
 1. Try logging in with the username and password you created. A new activation link should be sent automatically.

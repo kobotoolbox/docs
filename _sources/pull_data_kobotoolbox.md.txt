@@ -1,7 +1,5 @@
 # Pull Data Functionality in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/202f8e0e134d0695913bf6c5d5b52449c5e61e5d/source/pull_data_kobotoolbox.md" class="reference">18 Aug 2025</a>
-
-This is best done on xls version of the form.
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/pull_data_kobotoolbox.md" class="reference">28 Oct 2025</a>
 
 -   In the survey side of the form add a calculate field to your survey.
 -   Give that field a name that you want

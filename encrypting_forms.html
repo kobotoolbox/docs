@@ -1,30 +1,28 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Encrypting Forms &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
-    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/js/breadcrumbs.js"></script>
-    <script src="_static/js/common.js"></script>
-    <script src="_static/js/custom_sections.js"></script>
-    <script src="_static/js/home_page_toc.js"></script>
-    <script src="_static/js/scrollto.js"></script>
-    <script src="_static/js/sidebar_toc.js"></script>
-    <script src="_static/js/smoothscroll-polyfill.js"></script>
-    <script src="_static/js/table-sheets.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Including P-Codes in the Output Data" href="p_codes.html" />
@@ -110,10 +108,9 @@
         <section class="page__body" role="main">
           
   <section id="encrypting-forms">
-<h1>Encrypting Forms<a class="headerlink" href="#encrypting-forms" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/179faeb3c5a17b69406b0243ab9c22f7ca86aa44/source/encrypting_forms.md" class="reference">4 Nov 2024</a></p>
-<p><em>This procedure is quite technical and is intended for users who are comfortable
-with advanced technical instructions and requires strict attention to detail.</em></p>
+<h1>Encrypting Forms<a class="headerlink" href="#encrypting-forms" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/encrypting_forms.md" class="reference">28 Oct 2025</a>
+with advanced technical instructions and requires strict attention to detail._</p>
 <p>Encrypted forms work by encrypting the data on the phone the moment it is saved.
 Data sent to KoboToolbox is encrypted and completely inaccessible to anyone not
 possessing the private key. In this case, KoboToolbox serves simply as a storage
@@ -125,7 +122,7 @@ requires access to the data like the map view or data export won’t work within
 KoboToolbox. The extra level of security makes using KoboToolbox in a way to
 collect sensitive data while meeting certain data protection protocols possible.</p>
 <section id="how-it-works">
-<h2>How it Works<a class="headerlink" href="#how-it-works" title="Permalink to this heading">¶</a></h2>
+<h2>How it Works<a class="headerlink" href="#how-it-works" title="Link to this heading">¶</a></h2>
 <p>KoboCollect supports the ability to encrypt the content of a form the moment it
 is marked as completed and ready for submission on the phone. To take advantage
 of this requires the use of a public encryption key which you include in the
@@ -137,7 +134,7 @@ key. To understand more about public and private key infrastructure
 <a class="reference external" href="https://en.wikipedia.org/wiki/Public-key_cryptography">see here</a>.</p>
 </section>
 <section id="how-to-encrypt-xls-forms">
-<h2>How to encrypt XLS forms<a class="headerlink" href="#how-to-encrypt-xls-forms" title="Permalink to this heading">¶</a></h2>
+<h2>How to encrypt XLS forms<a class="headerlink" href="#how-to-encrypt-xls-forms" title="Link to this heading">¶</a></h2>
 <ol class="arabic">
 <li><p>Create your form in KoboToolbox as always. Download the form from the drafts
 list as an XLS file.</p></li>
@@ -161,7 +158,7 @@ with the text “encrypted” next to your form name.</p></li>
 </p>
 </section>
 <section id="how-to-decrypt-forms">
-<h2>How to decrypt forms<a class="headerlink" href="#how-to-decrypt-forms" title="Permalink to this heading">¶</a></h2>
+<h2>How to decrypt forms<a class="headerlink" href="#how-to-decrypt-forms" title="Link to this heading">¶</a></h2>
 <p>ODK Briefcase is used to download the encrypted files from KoboToolbox and
 decrypt them locally on your computer using a private key ensuring single access
 to the data. For decryption to be successful with ODK Briefcase make sure you
@@ -170,7 +167,7 @@ Jurisdiction Policy Files 6</em> from the
 <a class="reference external" href="https://www.oracle.com/java/technologies/javase-jce-all-downloads.html">Java download site</a>.
 This is required for decryption to be successful.</p>
 <section id="to-install-the-jce">
-<h3>To install the JCE:<a class="headerlink" href="#to-install-the-jce" title="Permalink to this heading">¶</a></h3>
+<h3>To install the JCE:<a class="headerlink" href="#to-install-the-jce" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Unzip the downloaded zip archive</p></li>
 <li><p>Navigate into the extracted directory tree and copy the local_policy.jar and
@@ -188,7 +185,7 @@ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security</p></li>
 </ol>
 </section>
 <section id="to-decrypt-your-forms">
-<h3>To decrypt your forms:<a class="headerlink" href="#to-decrypt-your-forms" title="Permalink to this heading">¶</a></h3>
+<h3>To decrypt your forms:<a class="headerlink" href="#to-decrypt-your-forms" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Download and open <a class="reference external" href="https://docs.getodk.org/briefcase-intro/">ODK Briefcase</a>.</p></li>
 <li><p>Specify a <strong>Storage Location</strong> under the <strong>Settings</strong> tab.</p></li>
@@ -226,7 +223,7 @@ successfully pulled.</em>)</p></li>
 </section>
 </section>
 <section id="generating-rsa-encryption-keys">
-<h2>Generating RSA Encryption Keys<a class="headerlink" href="#generating-rsa-encryption-keys" title="Permalink to this heading">¶</a></h2>
+<h2>Generating RSA Encryption Keys<a class="headerlink" href="#generating-rsa-encryption-keys" title="Link to this heading">¶</a></h2>
 <p>To generate the RSA public-private key pairs you can use the OpenSSL software
 package, which is pre-installed on OSX and Linux. On Windows you have to
 download and install the OpenSSL software package from
@@ -234,7 +231,7 @@ download and install the OpenSSL software package from
 Win64 OpenSSL v1.1.1c in <strong>C</strong>: rather than the default location <strong>C:\Program
 Files</strong></em>)</p>
 <section id="how-to-generate-rsa-key-for-use-with-encrypted-forms-on-kobotoolbox">
-<h3>How to generate RSA key for use with encrypted forms on KoboToolbox<a class="headerlink" href="#how-to-generate-rsa-key-for-use-with-encrypted-forms-on-kobotoolbox" title="Permalink to this heading">¶</a></h3>
+<h3>How to generate RSA key for use with encrypted forms on KoboToolbox<a class="headerlink" href="#how-to-generate-rsa-key-for-use-with-encrypted-forms-on-kobotoolbox" title="Link to this heading">¶</a></h3>
 <p><em>Note: We strongly recommend using OpenSSL as documented below for creating your
 public/private key pair as other methods may not be supported by the software.</em></p>
 <ol class="arabic">

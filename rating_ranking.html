@@ -1,30 +1,28 @@
-
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en" data-content_root="./">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Rating vs Ranking Question Types &#8212; KoboToolbox  documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
-    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css" />
-    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
-    <script src="_static/doctools.js"></script>
-    <script src="_static/js/breadcrumbs.js"></script>
-    <script src="_static/js/common.js"></script>
-    <script src="_static/js/custom_sections.js"></script>
-    <script src="_static/js/home_page_toc.js"></script>
-    <script src="_static/js/scrollto.js"></script>
-    <script src="_static/js/sidebar_toc.js"></script>
-    <script src="_static/js/smoothscroll-polyfill.js"></script>
-    <script src="_static/js/table-sheets.js"></script>
-    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=f024171e" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=3846aa22" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Select One or Many From External File Question Type" href="external_file.html" />
@@ -110,18 +108,15 @@
         <section class="page__body" role="main">
           
   <section id="rating-vs-ranking-question-types">
-<h1>Rating vs Ranking Question Types<a class="headerlink" href="#rating-vs-ranking-question-types" title="Permalink to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/52b766d4117ffc86d840202aa2a51d1daf4cd15d/source/rating_ranking.md" class="reference">19 Jun 2020</a></p>
-<section id="difference-between-rating-and-ranking-questions">
-<h2>Difference between rating and ranking questions?<a class="headerlink" href="#difference-between-rating-and-ranking-questions" title="Permalink to this heading">¶</a></h2>
+<h1>Rating vs Ranking Question Types<a class="headerlink" href="#rating-vs-ranking-question-types" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/rating_ranking.md" class="reference">28 Oct 2025</a></p>
 <p>Often times, people use the terms ranking question and rating question interchangeably, when in fact there is a distinct difference between the two question types. A <strong>rating question</strong> asks survey respondents to compare different items using a common scale (e.g. “Please rate each of the following objects on a rating scale of 1-10, where 1 is ‘not at all important’ and 10 is ‘very important.’”). A <strong>ranking question</strong> on the other hand asks survey respondents to compare a list of different objects to one another (e.g. “Please rank each of the following items in order of importance with #1 being the most important object to #10 being the least important object.”). The ranking question asks respondents to compare items to each other by placing them in order of preference. When analyzing ranking questions, an average ranking is calculated for each answer choice, allowing you to quickly evaluate the most preferred answer choice.</p>
-</section>
 <section id="when-should-you-use-ranking-or-rating-questions">
-<h2>When should you use ranking or rating questions?<a class="headerlink" href="#when-should-you-use-ranking-or-rating-questions" title="Permalink to this heading">¶</a></h2>
+<h2>When should you use ranking or rating questions?<a class="headerlink" href="#when-should-you-use-ranking-or-rating-questions" title="Link to this heading">¶</a></h2>
 <p>The choice of ranking or rating should be purely informed on the mode of analysis one needs to conduct. Note you can rate different components the same way, however when it comes to ranking you can’t give them the same rank.</p>
 </section>
 <section id="how-to-add-a-ranking-question-in-the-formbuilder">
-<h2>How to add a ranking question in the FormBuilder<a class="headerlink" href="#how-to-add-a-ranking-question-in-the-formbuilder" title="Permalink to this heading">¶</a></h2>
+<h2>How to add a ranking question in the FormBuilder<a class="headerlink" href="#how-to-add-a-ranking-question-in-the-formbuilder" title="Link to this heading">¶</a></h2>
 <ol class="arabic">
 <li><p>Add a question to the survey and select “ranking”</p>
 <p><img alt="image" src="_images/add_question.gif" /></p>
@@ -137,7 +132,7 @@
 </ol>
 </section>
 <section id="how-to-add-a-rating-question">
-<h2>How to add a Rating Question<a class="headerlink" href="#how-to-add-a-rating-question" title="Permalink to this heading">¶</a></h2>
+<h2>How to add a Rating Question<a class="headerlink" href="#how-to-add-a-rating-question" title="Link to this heading">¶</a></h2>
 <ol class="arabic">
 <li><p>You will need to create a question using the same process above.</p>
 <p><img alt="image" src="_images/create_question.png" /></p>
@@ -209,7 +204,6 @@
 <li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">“Photo”, “Audio”, “Video” and “File” question types</a></li>
 <li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Barcode/QR code question type</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Rating vs Ranking Question Types</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#difference-between-rating-and-ranking-questions">Difference between rating and ranking questions?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#when-should-you-use-ranking-or-rating-questions">When should you use ranking or rating questions?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-add-a-ranking-question-in-the-formbuilder">How to add a ranking question in the FormBuilder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-add-a-rating-question">How to add a Rating Question</a></li>
