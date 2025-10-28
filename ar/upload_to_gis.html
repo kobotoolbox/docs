@@ -116,19 +116,19 @@
 <p>هناك طرق متعددة لاستيراد البيانات القائمة على الموقع الجغرافي التي تم جمعها عبر KoboToolbox إلى برامج نظم المعلومات الجغرافية. ستوضح هذه المقالة إجراءً موصى به لتنزيل البيانات من KoboToolbox كملف CSV ورفعه إلى ArcMap كملف shapefile. بينما يستخدم هذا المثال ArcMap، فإن العملية مشابهة لتلك الموجودة في برامج جغرافية مكانية أخرى، بما في ذلك QGIS (مجاني).</p>
 <ol class="arabic">
 <li><p>في تبويب <strong>التنزيلات</strong> الخاص بصفحة مشروعكم في KoboToolbox، قوموا بتصدير وتنزيل بياناتكم كملف CSV.</p>
-<p><img alt="image" src="images/upload_to_gis/saveas_csv.jpg" /></p>
+<p><img alt="image" src="_images/saveas_csv.jpg" /></p>
 <p><em>ملاحظة: يمكنكم تحرير مجموعة البيانات بمجرد وجودها في برنامج نظم المعلومات الجغرافية، ومع ذلك قد يكون من الأسهل التحرير أولاً في Excel أو برنامج مشابه. في Excel، استخدموا وظيفة <a class="reference external" href="https://support.office.com/en-us/article/split-a-cell-f1804d0c-e180-4ed0-a2ae-973a0b7c6a23">Text to Columns</a> لتقسيم بيانات CSV إلى خلايا فردية.</em></p>
 </li>
 <li><p>افتحوا مشروعاً جديداً أو موجوداً في ArcMap، انتقلوا إلى <strong>Add Data</strong>، ثم اربطوا المجلد الذي تم حفظ ملف CSV الخاص بكم فيه على جهاز الكمبيوتر.</p>
-<p><img alt="image" src="images/upload_to_gis/find_file.jpg" /></p>
+<p><img alt="image" src="_images/find_file.jpg" /></p>
 </li>
 <li><p>افتحوا نافذة <strong>Catalog</strong> وانقروا على <strong>Folder Connections</strong>. ابحثوا عن ملف CSV الخاص بكم، انقروا عليه بزر الماوس الأيمن، ثم اختاروا <strong>Create Feature Class</strong> &gt; <strong>From XY Table</strong>.</p></li>
 <li><p>في النافذة المنبثقة، انقروا على القائمة المنسدلة <strong>X Field</strong> واختاروا خيار question_Longitude الخاص بنظام تحديد المواقع GPS. تأكدوا أيضاً من اختيار <strong>Coordinate System of Input Coordinates</strong> الخاص بكم... (WGS 1984 خيار جيد، إذا لم تكونوا تستخدمون نظاماً بالفعل) وتأكدوا من ضبط <strong>Output</strong> على المجلد المناسب، ثم انقروا على <strong>OK</strong>.</p>
-<p><img alt="image" src="images/upload_to_gis/create_feature.jpg" /></p>
+<p><img alt="image" src="_images/create_feature.jpg" /></p>
 </li>
 <li><p>عودة إلى نافذة <strong>Catalog</strong>، انقروا واسحبوا ملف shapefile الجديد الخاص بكم إلى نافذة <strong>Data View</strong> أو <strong>Table of Contents</strong>.</p></li>
 <li><p>يجب أن تروا الآن نقاطكم على الشاشة، وإذا فتحتم <strong>Attributes Table</strong>، سترون جميع البيانات المرتبطة بكل نقطة. من هذه النقطة، يمكنكم الآن تصور وإجراء تحليلات مكانية مختلفة مع بياناتكم.</p>
-<p><img alt="image" src="images/upload_to_gis/dataview_table.jpg" /></p>
+<p><img alt="image" src="_images/dataview_table.jpg" /></p>
 </li>
 </ol>
 </section>

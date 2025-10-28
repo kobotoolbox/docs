@@ -133,7 +133,7 @@ le serveur que vous utilisez).</p></li>
 <li><p>Ajoutez une autre colonne <em>public_key</em> (c’est-à-dire base64RsaPublicKey). Collez votre
 clé publique compatible.</p>
 <p>(Veuillez consulter l’image ci-dessous pour référence)</p>
-<p><img alt="image" src="images/encrypting_forms/column.png" /></p>
+<p><img alt="image" src="_images/column.png" /></p>
 </li>
 <li><p>Importez le fichier XLS dans KoboToolbox. Vous pouvez soit l’importer dans la
 liste des brouillons de formulaires puis le déployer en tant que nouveau projet d’enquête, soit l’importer
@@ -177,7 +177,7 @@ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/lib/security</p></li>
 <li><p>Téléchargez et ouvrez <a class="reference external" href="https://docs.getodk.org/briefcase-intro/">ODK Briefcase</a>.</p></li>
 <li><p>Spécifiez un <strong>Storage Location</strong> sous l’onglet <strong>Settings</strong>.</p></li>
 <li><p>Ouvrez l’onglet <strong>Pull</strong> et cliquez sur <strong>Configure</strong>.<br />
-<img alt="image" src="images/encrypting_forms/configure.png" /></p></li>
+<img alt="image" src="_images/configure.png" /></p></li>
 <li><p>Ensuite, saisissez les informations suivantes :</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org</span></code> OU
@@ -186,7 +186,7 @@ serveur que vous utilisez)</p></li>
 <li><p>Votre nom d’utilisateur</p></li>
 <li><p>Votre mot de passe</p></li>
 <li><p>Appuyez sur <strong>Connect</strong> lorsque vous avez terminé<br />
-<img alt="image" src="images/encrypting_forms/connect.png" /></p></li>
+<img alt="image" src="_images/connect.png" /></p></li>
 </ul>
 </li>
 </ol>
@@ -200,7 +200,7 @@ Status</strong>.</p></li>
 <li><p>Allez maintenant dans l’onglet <strong>Export</strong>.</p></li>
 <li><p>Appuyez sur <strong>Edit Default Configuration</strong> pour vous assurer que vous avez la <strong>PEM
 private key</strong> à l’emplacement <strong>PEM file location</strong>.<br />
-<img alt="image" src="images/encrypting_forms/private_key.png" /><br />
+<img alt="image" src="_images/private_key.png" /><br />
 Si elle n’y est pas, sélectionnez la <strong>PEM private key</strong> dans le dossier que vous aviez
 sécurisé. (<em>Remarque : Vous verrez également tous les projets ici qui ont été
 récupérés avec succès.</em>)</p></li>
@@ -225,17 +225,17 @@ paire de clés publique/privée car d’autres méthodes peuvent ne pas être pr
 <li><p>Ouvrez une fenêtre « cmd » Windows.</p></li>
 <li><p>Tapez la commande suivante : <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">C:\OpenSSL-Win32\bin</span></code> pour passer au répertoire /bin
 dans le répertoire OpenSSL.</p>
-<p><img alt="image" src="images/encrypting_forms/openssl_1.png" /></p>
+<p><img alt="image" src="_images/openssl_1.png" /></p>
 </li>
 <li><p>Créez une clé privée de 2048 bits et écrivez-la dans le fichier <strong>MyPrivateKey.pem</strong>
 en tapant la commande suivante, puis appuyez sur <strong>Entrée</strong> :
 <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">genpkey</span> <span class="pre">-out</span> <span class="pre">MyPrivateKey.pem</span> <span class="pre">-outform</span> <span class="pre">PEM</span> <span class="pre">-algorithm</span> <span class="pre">RSA</span> <span class="pre">-pkeyopt</span> <span class="pre">rsa_keygen_bits:2048</span></code></p>
-<p><img alt="image" src="images/encrypting_forms/openssl_2.png" /></p>
+<p><img alt="image" src="_images/openssl_2.png" /></p>
 </li>
 <li><p>Ensuite, extrayez la clé publique pour la clé privée ci-dessus. Tapez la commande
 suivante puis appuyez sur <strong>Entrée</strong> :
 <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">rsa</span> <span class="pre">-in</span> <span class="pre">MyPrivateKey.pem</span> <span class="pre">-inform</span> <span class="pre">PEM</span> <span class="pre">-out</span> <span class="pre">MyPublicKey.pem</span> <span class="pre">-outform</span> <span class="pre">PEM</span> <span class="pre">-pubout</span></code></p>
-<p><img alt="image" src="images/encrypting_forms/openssl_3.png" /></p>
+<p><img alt="image" src="_images/openssl_3.png" /></p>
 </li>
 <li><p>Vous avez maintenant généré deux fichiers qui sont :</p>
 <ul class="simple">

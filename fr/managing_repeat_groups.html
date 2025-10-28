@@ -119,7 +119,7 @@
 <section id="visualisation-et-modification-des-donnees-de-groupes-repetes">
 <h2>Visualisation et modification des données de groupes répétés<a class="headerlink" href="#visualisation-et-modification-des-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h2>
 <p>Vous pouvez visualiser les données répétées dans le tableau de données, que vous trouverez dans le mode <strong>Tableau</strong> de l’onglet <strong>DONNÉES</strong> de l’interface du projet KoboToolbox. Les réponses aux questions répétées apparaissent dans une seule colonne par question, avec les réponses séparées par une virgule, comme illustré ci-dessous.</p>
-<p><img alt="image" src="images/managing_repeat_groups/data_table.png" /></p>
+<p><img alt="image" src="_images/data_table.png" /></p>
 <p>Vous pouvez également visualiser les données complètes de toute soumission donnée, y compris chaque répétition des groupes répétés, en cliquant sur le bouton <i class="k-icon-view"></i><strong>Ouvrir</strong> à gauche de chaque soumission.</p>
 <p>Pour modifier les données de groupes répétés, cliquez sur le bouton <i class="k-icon-edit"></i><strong>Modifier</strong>. Cela ouvrira le formulaire et vous permettra de <a class="reference internal" href="howto_edit_single_submissions.html"><span class="std std-doc">modifier les données du formulaire</span></a> avant de le soumettre à nouveau. La <a class="reference internal" href="howto_edit_multiple_submissions.html"><span class="std std-doc">modification en masse</span></a> des données de groupes répétés n’est actuellement pas prise en charge.</p>
 <p class="note">
@@ -129,7 +129,7 @@
 <section id="exportation-des-donnees-de-groupes-repetes">
 <h2>Exportation des données de groupes répétés<a class="headerlink" href="#exportation-des-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h2>
 <p>Pour exporter les données d’un formulaire avec des groupes répétés, vous devez télécharger vos données au <strong>format XLS</strong>. Chaque groupe répété sera exporté <strong>sous forme de feuille distincte</strong> dans le fichier exporté. Le téléchargement CSV ne fournira que les données des données principales.</p>
-<p><img alt="image" src="images/managing_repeat_groups/download.png" /></p>
+<p><img alt="image" src="_images/download.png" /></p>
 <p class="note"> 
     Pour en savoir plus sur l'exportation de vos données, consultez <a href="export_download.html">Exportation et téléchargement de vos données</a>.
 </p>
@@ -139,8 +139,8 @@
 <p>Dans les fichiers XLS exportés, les données de groupes répétés sont stockées <strong>dans une feuille distincte</strong>. La première feuille du fichier XLS contient les données de réponse principales, et les données de chaque groupe répété sont stockées dans leur propre feuille. Les groupes répétés imbriqués sont également stockés dans des feuilles distinctes.</p>
 <p>Les données des groupes répétés peuvent être liées aux données principales en utilisant la colonne <strong>_index</strong> de la feuille de données principales et la colonne <strong>_parent_index</strong> de la feuille de données du groupe répété.</p>
 <p>Dans l’exemple ci-dessous, la première feuille comprend une colonne <strong>_index</strong>, en vert, qui identifie la première soumission. La deuxième feuille, illustrée dans la deuxième image, contient une colonne <strong>_parent_index</strong>, également surlignée en vert, qui renvoie à la première feuille. Dans cet exemple, les deux lignes des données répétées proviennent de la première soumission de données.</p>
-<p><img alt="image" src="images/managing_repeat_groups/main_data.png" /></p>
-<p><img alt="image" src="images/managing_repeat_groups/repeat_group_data.png" /></p>
+<p><img alt="image" src="_images/main_data.png" /></p>
+<p><img alt="image" src="_images/repeat_group_data.png" /></p>
 <p class="note">
   <b>Remarque</b> : La feuille de données du groupe répété comprend également une <b>colonne _index</b>. Cette colonne est utilisée pour créer un lien vers les <b>groupes répétés imbriqués</b>, suivant la même configuration que celle décrite ci-dessus, avec le groupe répété comme données principales et le groupe répété imbriqué comme données liées.
 </p>

@@ -126,7 +126,7 @@
 <li><p>Saisissez le texte de la question, par exemple « Capturez l’emplacement de l’unité d’habitation », puis cliquez sur <strong>AJOUTER UNE QUESTION</strong> ou appuyez sur ENTRÉE sur votre clavier</p></li>
 <li><p>Choisissez le type de question (par exemple Point)</p></li>
 </ul>
-<p><img alt="Ajout de questions GPS" src="images/gps_questions/adding_gps_questions.gif" /></p>
+<p><img alt="Ajout de questions GPS" src="_images/adding_gps_questions.gif" /></p>
 </section>
 <section id="configuration-dans-xlsform">
 <h3>Configuration dans XLSForm<a class="headerlink" href="#configuration-dans-xlsform" title="Lien vers cette rubrique">¶</a></h3>
@@ -163,7 +163,7 @@
 <h2>Apparence des types de questions « Point », « Ligne » et « Zone » dans les formulaires web et KoboCollect<a class="headerlink" href="#apparence-des-types-de-questions-point-ligne-et-zone-dans-les-formulaires-web-et-kobocollect" title="Lien vers cette rubrique">¶</a></h2>
 <section id="apparence-par-defaut">
 <h3>Apparence par défaut<a class="headerlink" href="#apparence-par-defaut" title="Lien vers cette rubrique">¶</a></h3>
-<p><img alt="Apparences par défaut des questions GPS" src="images/gps_questions/gps_default_appearances.png" /></p>
+<p><img alt="Apparences par défaut des questions GPS" src="_images/gps_default_appearances.png" /></p>
 </section>
 </section>
 <section id="collecte-de-points-gps-en-arriere-plan">
@@ -176,7 +176,7 @@
 <section id="calcul-de-la-distance-a-partir-des-questions-ligne">
 <h3>Calcul de la distance à partir des questions « Ligne »<a class="headerlink" href="#calcul-de-la-distance-a-partir-des-questions-ligne" title="Lien vers cette rubrique">¶</a></h3>
 <p>Pour calculer la distance à partir d’un type de question « Ligne » dans l’interface de création de formulaires, utilisez le type de question « Calculer » et la fonction <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#distance"><code class="docutils literal notranslate"><span class="pre">distance()</span></code></a> comme indiqué ci-dessous :</p>
-<p><img alt="Calculer la distance" src="images/gps_questions/calculate_distance.png" /></p>
+<p><img alt="Calculer la distance" src="_images/calculate_distance.png" /></p>
 <p>Dans l’exemple ci-dessus, la question « Tracez l’itinéraire de la piste » a été ajoutée en tant que type de question « Ligne ». Le « Nom de la colonne de données » dans les paramètres de la question a été défini sur « track ».</p>
 <p>La question avec le libellé <code class="docutils literal notranslate"><span class="pre">distance(${track})</span></code> est un type de question « Calculer » avec un « Nom de la colonne de données » de « distance ». Le résultat sera en mètres.</p>
 <p>La question « Note » est facultative et a été ajoutée dans le but d’afficher la distance calculée dans le formulaire.</p>
@@ -216,7 +216,7 @@
 <section id="calcul-de-la-surface-a-partir-des-questions-zone">
 <h3>Calcul de la surface à partir des questions « Zone »<a class="headerlink" href="#calcul-de-la-surface-a-partir-des-questions-zone" title="Lien vers cette rubrique">¶</a></h3>
 <p>Vous pouvez calculer une surface en utilisant le type de question « Calculer » et la fonction <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#area"><code class="docutils literal notranslate"><span class="pre">area()</span></code></a> comme indiqué ci-dessous :</p>
-<p><img alt="Calculer la surface" src="images/gps_questions/calculate_area.png" /></p>
+<p><img alt="Calculer la surface" src="_images/calculate_area.png" /></p>
 <p>Dans l’exemple ci-dessus, la question « Tracez les limites » a été ajoutée en tant que type de question « Zone ». Le « Nom de la colonne de données » dans les paramètres de la question a été défini sur « boundary ».</p>
 <p>La question avec le libellé <code class="docutils literal notranslate"><span class="pre">area(${boundary})</span></code> est un type de question « Calculer » avec un Nom de la colonne de données « area ». Le résultat sera en mètres carrés.</p>
 <p>La question « Note » est facultative et a été ajoutée dans le but d’afficher la surface calculée dans le formulaire.</p>

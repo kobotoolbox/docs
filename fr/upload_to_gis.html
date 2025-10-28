@@ -116,19 +116,19 @@
 <p>Il existe plusieurs façons d’importer dans un logiciel SIG des données géolocalisées collectées via KoboToolbox. Cet article décrit une procédure recommandée pour télécharger des données depuis KoboToolbox sous forme de fichier CSV et les importer dans ArcMap sous forme de fichier shapefile. Bien que cet exemple utilise ArcMap, le processus est similaire dans d’autres logiciels géospatiaux, notamment QGIS (gratuit).</p>
 <ol class="arabic">
 <li><p>Dans l’onglet <strong>Téléchargements</strong> de la page de votre projet dans KoboToolbox, exportez et téléchargez vos données sous forme de fichier CSV.</p>
-<p><img alt="image" src="images/upload_to_gis/saveas_csv.jpg" /></p>
+<p><img alt="image" src="_images/saveas_csv.jpg" /></p>
 <p><em>Remarque : Vous pouvez modifier l’ensemble de données une fois qu’il est dans le logiciel SIG, mais il peut être plus facile de le modifier d’abord dans Excel ou un programme similaire. Dans Excel, utilisez la fonction <a class="reference external" href="https://support.office.com/fr-fr/article/split-a-cell-f1804d0c-e180-4ed0-a2ae-973a0b7c6a23">Convertir</a> pour diviser vos données CSV en cellules individuelles.</em></p>
 </li>
 <li><p>Ouvrez un nouveau projet ou un projet existant dans ArcMap, allez dans <strong>Add Data</strong>, puis liez le dossier où votre fichier CSV est enregistré sur votre ordinateur.</p>
-<p><img alt="image" src="images/upload_to_gis/find_file.jpg" /></p>
+<p><img alt="image" src="_images/find_file.jpg" /></p>
 </li>
 <li><p>Ouvrez la fenêtre <strong>Catalog</strong> et cliquez sur <strong>Folder Connections</strong>. Trouvez votre fichier CSV, faites un clic droit dessus, puis sélectionnez <strong>Create Feature Class</strong> &gt; <strong>From XY Table</strong>.</p></li>
 <li><p>Dans la fenêtre modale, cliquez sur le menu déroulant <strong>X Field</strong> et choisissez votre option question_Longitude GPS. Assurez-vous également de choisir votre <strong>Coordinate System of Input Coordinates</strong>… (WGS 1984 est un bon choix, si vous n’en utilisez pas déjà un) et vérifiez que votre <strong>Output</strong> est défini sur le dossier approprié, puis cliquez sur <strong>OK</strong>.</p>
-<p><img alt="image" src="images/upload_to_gis/create_feature.jpg" /></p>
+<p><img alt="image" src="_images/create_feature.jpg" /></p>
 </li>
 <li><p>De retour dans la fenêtre <strong>Catalog</strong>, cliquez et faites glisser votre nouveau fichier shapefile dans la fenêtre <strong>Data View</strong> ou <strong>Table of Contents</strong>.</p></li>
 <li><p>Vous devriez maintenant voir vos points à l’écran et si vous ouvrez la <strong>Attributes Table</strong>, vous verrez toutes les données associées à chaque point. À partir de là, vous pouvez maintenant visualiser et effectuer diverses analyses spatiales avec vos données.</p>
-<p><img alt="image" src="images/upload_to_gis/dataview_table.jpg" /></p>
+<p><img alt="image" src="_images/dataview_table.jpg" /></p>
 </li>
 </ol>
 </section>

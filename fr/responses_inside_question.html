@@ -117,21 +117,21 @@
 <p><code class="docutils literal notranslate"><span class="pre">${age}</span></code> ou <code class="docutils literal notranslate"><span class="pre">${revenu}</span></code></p>
 <p>Incluez simplement la référence à l’autre question parmi les autres mots de votre libellé. Par exemple, vous pouvez ajouter une nouvelle question avec le libellé</p>
 <p><code class="docutils literal notranslate"><span class="pre">Êtes-vous</span> <span class="pre">sûr(e)</span> <span class="pre">d'avoir</span> <span class="pre">${age}</span> <span class="pre">ans</span> <span class="pre">?</span></code></p>
-<p><img alt="image" src="images/responses_inside_question/question_name.gif" /></p>
+<p><img alt="image" src="_images/question_name.gif" /></p>
 <p>Et vous pouvez également créer une logique de saut pour cette question afin qu’elle ne soit posée que lorsque la réponse concernant l’âge est inférieure à 18.</p>
 <p>Notez que si vous référencez une question qui n’existe pas, cela créera une erreur lorsque vous essaierez de déployer votre formulaire. Assurez-vous toujours de référencer les questions avec leur nom exact, qui est également sensible à la casse. Par exemple, si votre question s’appelle <code class="docutils literal notranslate"><span class="pre">age</span></code>, vous ne pouvez pas utiliser <code class="docutils literal notranslate"><span class="pre">${Age}</span></code>. Vous pouvez facilement vérifier votre formulaire en cliquant sur Aperçu à tout moment.</p>
-<p><img alt="image" src="images/responses_inside_question/preview.gif" /></p>
+<p><img alt="image" src="_images/preview1.gif" /></p>
 <p><strong>Vous pouvez également référencer la réponse d’une question à choix unique/multiple et afficher la réponse au lieu du code en utilisant des questions de calcul masquées</strong></p>
 <p>Si vous souhaitez référencer la réponse à une question à choix unique/multiple et afficher la réponse de la réponse (par exemple « Tout à fait d’accord ») au lieu de sa valeur encodée (par exemple « tout_a_fait_daccord »), vous pouvez :</p>
 <ol class="arabic">
 <li><p>Créer une question à choix unique/multiple, et donner à la question un nom de référence fixe via les paramètres de la question, tel que <code class="docutils literal notranslate"><span class="pre">instruction</span></code>. Et créer une question de calcul intermédiaire et saisir : <code class="docutils literal notranslate"><span class="pre">jr:choice-name(${instruction},</span> <span class="pre">'${instruction}')</span></code>.</p>
-<p><img alt="image" src="images/responses_inside_question/select_updated.gif" /></p>
+<p><img alt="image" src="_images/select_updated.gif" /></p>
 </li>
 <li><p>Donner à cette question de calcul un nom de référence, tel que <code class="docutils literal notranslate"><span class="pre">instruction_calcul</span></code>. Dans votre nouvelle question, référencez cette question de calcul au lieu du nom donné à la question à choix unique/multiple.</p>
-<p><img alt="image" src="images/responses_inside_question/calculate.gif" /></p>
+<p><img alt="image" src="_images/calculate.gif" /></p>
 </li>
 <li><p>Prévisualiser et valider le formulaire pour vous assurer que tout fonctionne comme prévu.</p>
-<p><img alt="image" src="images/responses_inside_question/preview_calculate.gif" /></p>
+<p><img alt="image" src="_images/preview_calculate.gif" /></p>
 </li>
 </ol>
 </section>

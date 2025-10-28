@@ -119,7 +119,7 @@
 <section id="id2">
 <h2>عرض وتحرير بيانات المجموعات المتكررة<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h2>
 <p>يمكنك عرض البيانات المتكررة في جدول البيانات، والذي يمكنك العثور عليه في عرض <strong>الجدول</strong> من تبويب <strong>البيانات</strong> في واجهة مشروع KoboToolbox. تظهر الإجابات على الأسئلة المتكررة في عمود واحد لكل سؤال، مع فصل الإجابات بفاصلة، كما هو موضح أدناه.</p>
-<p><img alt="image" src="images/managing_repeat_groups/data_table.png" /></p>
+<p><img alt="image" src="_images/data_table.png" /></p>
 <p>يمكنك أيضًا عرض البيانات الكاملة لأي إرسال معين، بما في ذلك كل تكرار للمجموعات المتكررة، من خلال النقر على زر <i class="k-icon-view"></i><strong>فتح</strong> على يسار كل إرسال.</p>
 <p>لتحرير بيانات المجموعات المتكررة، انقر على زر <i class="k-icon-edit"></i><strong>تحرير</strong>. سيؤدي هذا إلى فتح النموذج والسماح لك <a class="reference internal" href="howto_edit_single_submissions.html"><span class="std std-doc">بتحرير بيانات النموذج</span></a> قبل إعادة الإرسال. <a class="reference internal" href="howto_edit_multiple_submissions.html"><span class="std std-doc">التحرير الجماعي</span></a> لبيانات المجموعات المتكررة غير مدعوم حاليًا.</p>
 <p class="note">
@@ -129,7 +129,7 @@
 <section id="id3">
 <h2>تصدير بيانات المجموعات المتكررة<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h2>
 <p>لتصدير البيانات من نموذج يحتوي على مجموعات متكررة، يجب عليك تنزيل بياناتك <strong>بتنسيق XLS</strong>. سيتم تصدير كل مجموعة متكررة <strong>كورقة منفصلة</strong> في الملف المُصدَّر. سيوفر تنزيل CSV البيانات من البيانات الأساسية فقط.</p>
-<p><img alt="image" src="images/managing_repeat_groups/download.png" /></p>
+<p><img alt="image" src="_images/download.png" /></p>
 <p class="note"> 
     لمعرفة المزيد حول تصدير بياناتك، راجع <a href="export_download.html">تصدير وتنزيل بياناتك</a>.
 </p>
@@ -139,8 +139,8 @@
 <p>في ملفات XLS المُصدَّرة، يتم تخزين بيانات المجموعات المتكررة <strong>في ورقة منفصلة</strong>. تحتوي الورقة الأولى من ملف XLS على بيانات الاستجابة الرئيسية، ويتم تخزين بيانات كل مجموعة متكررة في ورقتها الخاصة. يتم أيضًا تخزين المجموعات المتكررة المتداخلة في أوراق منفصلة.</p>
 <p>يمكن ربط البيانات من المجموعات المتكررة بالبيانات الرئيسية باستخدام عمود <strong>_index</strong> من ورقة البيانات الرئيسية وعمود <strong>_parent_index</strong> من ورقة بيانات المجموعة المتكررة.</p>
 <p>في المثال أدناه، تتضمن الورقة الأولى عمود <strong>_index</strong>، باللون الأخضر، والذي يحدد الإرسال الأول. تحتوي الورقة الثانية، الموضحة في الصورة الثانية، على عمود <strong>_parent_index</strong>، المميز أيضًا باللون الأخضر، والذي يرتبط بالورقة الأولى. في هذا المثال، يأتي كلا الصفين من البيانات المتكررة من إرسال البيانات الأول.</p>
-<p><img alt="image" src="images/managing_repeat_groups/main_data.png" /></p>
-<p><img alt="image" src="images/managing_repeat_groups/repeat_group_data.png" /></p>
+<p><img alt="image" src="_images/main_data.png" /></p>
+<p><img alt="image" src="_images/repeat_group_data.png" /></p>
 <p class="note">
   <b>ملاحظة</b>: تتضمن ورقة بيانات المجموعة المتكررة أيضًا <b>عمود _index</b>. يُستخدم هذا العمود للربط بـ <b>المجموعات المتكررة المتداخلة</b>، باتباع نفس الإعداد الموضح أعلاه، مع المجموعة المتكررة كبيانات رئيسية والمجموعة المتكررة المتداخلة كبيانات مرتبطة.
 </p>

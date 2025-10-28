@@ -128,7 +128,7 @@ interface de création de formulaires ne prenne actuellement pas en charge l’a
 <p><strong>Étape 3 : Ajouter de la logique à la question matricielle</strong></p>
 <p>Ouvrez le XLSForm et ajoutez les en-têtes de colonnes <code class="docutils literal notranslate"><span class="pre">calculation</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint</span></code> et <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code>. Avec ces en-têtes de colonnes, vous pourrez ajouter les expressions de <em>total de colonne</em> et <em>total de ligne</em> sous l’en-tête de colonne <code class="docutils literal notranslate"><span class="pre">calculation</span></code>. Vous pouvez également ajouter des <em>contraintes</em> appropriées sous l’en-tête de colonne <code class="docutils literal notranslate"><span class="pre">constraint</span></code> et un <em>message de contrainte</em> sous l’en-tête <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code> selon les besoins.</p>
 <p>De plus, vous pouvez également choisir d’ajouter un en-tête de colonne <code class="docutils literal notranslate"><span class="pre">read_only</span></code> pour empêcher les enquêtrices et enquêteurs de modifier les réponses lors de la collecte de données pour certaines questions (par exemple, le <em>total de ligne</em> et le <em>total de colonne</em> qui sont calculés).</p>
-<p><img alt="Onglet Survey" src="images/calculations_constraints_matrix/survey_tab.png" /></p>
+<p><img alt="Onglet Survey" src="_images/survey_tab.png" /></p>
 <p class="note">
   Dans l'image ci-dessus, vous remarquerez peut-être que les entrées <code>name</code> sont plus courtes. Dans cet exemple, elles ont été renommées à partir de celles générées automatiquement dans l'interface de création de formulaires pour capturer la capture d'écran complète de l'onglet survey. Si vous choisissez de renommer les vôtres, assurez-vous d'utiliser vos nouveaux noms de variables dans les en-têtes de colonnes <code>calculation</code> et <code>constraint</code>. Si le formulaire a déjà été déployé et que des données ont été collectées, il est recommandé de <em>ne pas</em> renommer les variables existantes.
 </p>
@@ -142,12 +142,12 @@ interface de création de formulaires ne prenne actuellement pas en charge l’a
 <h2>Visualisation du résultat<a class="headerlink" href="#visualisation-du-resultat" title="Lien vers cette rubrique">¶</a></h2>
 <p>Les images suivantes illustrent comment le formulaire apparaîtra et fonctionnera dans le formulaire web Enketo après avoir suivi les étapes ci-dessus :</p>
 <p><strong>Aucune donnée n’est saisie :</strong></p>
-<p><img alt="Enketo rien de saisi" src="images/calculations_constraints_matrix/enketo_nothing_entered.png" /></p>
+<p><img alt="Enketo rien de saisi" src="_images/enketo_nothing_entered.png" /></p>
 <p><strong>Une erreur de saisie est commise :</strong></p>
-<p><img alt="Enketo mauvaises entrées saisies" src="images/calculations_constraints_matrix/enketo_wrong_inputs_entered.png" /></p>
+<p><img alt="Enketo mauvaises entrées saisies" src="_images/enketo_wrong_inputs_entered.png" /></p>
 <p>Ici, vous verrez qu’il y a seulement cinq membres du ménage au total. Si une enquêtrice ou un enquêteur saisit 6 pour le nombre d’hommes (0-14 ans), la contrainte affichera un message d’erreur.</p>
 <p><strong>Aucune erreur de saisie :</strong></p>
-<p><img alt="Enketo entrées correctes saisies" src="images/calculations_constraints_matrix/enketo_correct_inputs_entered.png" /></p>
+<p><img alt="Enketo entrées correctes saisies" src="_images/enketo_correct_inputs_entered.png" /></p>
 <p>Ici, lorsque vous saisissez des valeurs dans un tableau matriciel, les lignes et les colonnes sont automatiquement calculées.</p>
 <p class="note">
   Vous pouvez télécharger le XLSForm qui a été utilisé pour cet article

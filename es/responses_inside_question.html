@@ -117,21 +117,21 @@
 <p><code class="docutils literal notranslate"><span class="pre">${age}</span></code> o <code class="docutils literal notranslate"><span class="pre">${income}</span></code></p>
 <p>Simplemente incluye la referencia a la otra pregunta entre las demás palabras de tu etiqueta. Por ejemplo, puedes agregar una nueva pregunta con la etiqueta</p>
 <p><code class="docutils literal notranslate"><span class="pre">¿Estás</span> <span class="pre">seguro/a</span> <span class="pre">de</span> <span class="pre">que</span> <span class="pre">tienes</span> <span class="pre">${age}</span> <span class="pre">años?</span></code></p>
-<p><img alt="image" src="images/responses_inside_question/question_name.gif" /></p>
+<p><img alt="image" src="_images/question_name.gif" /></p>
 <p>Y también puedes crear una lógica de salto para esta pregunta de modo que solo se pregunte cuando la respuesta de edad sea menor de 18.</p>
 <p>Ten en cuenta que si haces referencia a una pregunta que no existe, se creará un error cuando intentes desplegar tu formulario. Siempre asegúrate de hacer referencia a las preguntas con su nombre exacto, que también distingue entre mayúsculas y minúsculas. Por ejemplo, si tu pregunta se llama <code class="docutils literal notranslate"><span class="pre">age</span></code> no puedes usar <code class="docutils literal notranslate"><span class="pre">${Age}</span></code>. Puedes verificar fácilmente tu formulario haciendo clic en Vista previa en cualquier momento.</p>
-<p><img alt="image" src="images/responses_inside_question/preview.gif" /></p>
+<p><img alt="image" src="_images/preview1.gif" /></p>
 <p><strong>También puedes hacer referencia a la respuesta de una pregunta de Selección Única/Múltiple y mostrar la respuesta en lugar del código usando preguntas de Cálculo ocultas</strong></p>
 <p>Si deseas hacer referencia a la respuesta de una pregunta de Selección Única/Múltiple y mostrar la respuesta de la respuesta (por ejemplo, «Totalmente de acuerdo») en lugar de su valor codificado (por ejemplo, «strongly_agr»), puedes:</p>
 <ol class="arabic">
 <li><p>Crear una pregunta de Selección Única/Múltiple y darle a la pregunta un nombre de referencia fijo a través de la configuración de la pregunta, como <code class="docutils literal notranslate"><span class="pre">instruction</span></code>. Y crear una pregunta de Cálculo intermedia e ingresar: <code class="docutils literal notranslate"><span class="pre">jr:choice-name(${instruction},</span> <span class="pre">'${instruction}')</span></code>.</p>
-<p><img alt="image" src="images/responses_inside_question/select_updated.gif" /></p>
+<p><img alt="image" src="_images/select_updated.gif" /></p>
 </li>
 <li><p>Darle a esta pregunta de Cálculo un nombre de referencia, como <code class="docutils literal notranslate"><span class="pre">instruction_calculation</span></code>. En tu nueva pregunta, haz referencia a esta pregunta de Cálculo en lugar del nombre dado a la pregunta de Selección Única/Múltiple.</p>
-<p><img alt="image" src="images/responses_inside_question/calculate.gif" /></p>
+<p><img alt="image" src="_images/calculate.gif" /></p>
 </li>
 <li><p>Previsualizar y validar el formulario para asegurarte de que todo funcione según lo diseñado.</p>
-<p><img alt="image" src="images/responses_inside_question/preview_calculate.gif" /></p>
+<p><img alt="image" src="_images/preview_calculate.gif" /></p>
 </li>
 </ol>
 </section>

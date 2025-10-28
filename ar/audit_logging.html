@@ -154,7 +154,7 @@
 <li><p>اجمع البيانات باستخدام <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">تطبيق Collect لنظام Android</span></a> وأرسل النماذج النهائية مرة أخرى إلى الخادم. يحفظ Collect سجلات التدقيق لكل إرسال في ملف CSV يتم حفظه وتحميله إلى الخادم تمامًا كما يتم تحميل صورة مرفقة.</p></li>
 <li><p>بعد إرسال البيانات، افتح مشروعك في المتصفح وانتقل إلى <strong>DATA</strong>، ثم <strong>Downloads</strong>. حدد <strong>Media Attachments (ZIP)</strong> كنوع التصدير ثم انقر على <strong>New Export</strong>. بمجرد الانتهاء من التنزيل، انقر على الملف لتنزيله إلى جهاز الكمبيوتر الخاص بك.</p></li>
 </ol>
-<p><img alt="image" src="images/audit_logging/zip_export.png" /></p>
+<p><img alt="image" src="_images/zip_export.png" /></p>
 <ol class="arabic simple" start="4">
 <li><p>بمجرد استخراج ملف ZIP وفتحه، انقر على الملف المسمى 'audit.csv' لعرض سجلات التدقيق. من المهم ملاحظة أن ملف CSV يستخدم توقيت <a class="reference external" href="https://www.unixtimestamp.com/index.php">Unix Epoch</a> لذلك يتم تسجيل السجلات بالميلي ثانية.</p></li>
 <li><p>نظرًا لأنه يتم حفظ الطوابع الزمنية لكل إرسال فردي، فمن المحتمل أن تحتاج إلى نسخ القيم إلى جدول بيانات جديد لإجراء مزيد من التحليل عبر جميع الإرسالات (على سبيل المثال حسب جامع البيانات أو حسب السؤال). يمكن إجراء دمج العديد من ملفات CSV المختلفة بواسطة <a class="reference external" href="https://www.google.com/search?q=merge+many+CSV">العديد من الأدوات المجانية أو عن طريق كتابة نص برمجي</a>. لقراءة معلومات أكثر تفصيلاً حول بنية السجل وأنواع الأحداث، يرجى زيارة وثائق ODK الرائعة حول <a class="reference external" href="https://docs.getodk.org/form-audit-log/#">تسجيل سلوك جامع البيانات</a>.</p></li>

@@ -171,16 +171,16 @@ integración.</p></li>
 <h3>Primer uso<a class="headerlink" href="#primer-uso" title="Link to this heading">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Ve al menú <strong>Integration</strong> en la parte superior derecha.
-<img alt="monday-board-integrate" src="images/kobotoolbox_monday_integration/monday-board-integrate.png" /></p></li>
+<img alt="monday-board-integrate" src="_images/monday-board-integrate.png" /></p></li>
 <li><p>Encuentra <strong>KoboToolbox</strong> en el Centro de Integraciones.
-<img alt="app-marketplace" src="images/kobotoolbox_monday_integration/find-integration.png" /></p></li>
+<img alt="app-marketplace" src="_images/find-integration.png" /></p></li>
 <li><p>Haz clic en la integración de KoboToolbox y elige la receta incluida.
-<img alt="kobo-integration" src="images/kobotoolbox_monday_integration/choose-recipe.png" /></p></li>
+<img alt="kobo-integration" src="_images/choose-recipe.png" /></p></li>
 <li><p>Autoriza la aplicación de KoboToolbox:</p>
 <ul class="simple">
 <li><p>Ingresa la URL del servidor de KoboToolbox donde creaste tu cuenta. Para el Servidor Global, usa la URL del servidor <a class="reference external" href="https://kf.kobotoolbox.org">https://kf.kobotoolbox.org</a>. Para el Servidor con sede en la Unión Europea, usa la URL del servidor <a class="reference external" href="https://eu.kobotoolbox.org">https://eu.kobotoolbox.org</a>.</p></li>
 <li><p>Ingresa tu Clave API de KoboToolbox en el campo «Kobo API token»
-<img alt="provide-api-key" src="images/kobotoolbox_monday_integration/provide-api-key.png" /></p></li>
+<img alt="provide-api-key" src="_images/provide-api-key.png" /></p></li>
 </ul>
 </li>
 </ol>
@@ -198,30 +198,30 @@ preguntas de KoboToolbox con columnas de monday.com. Los datos mostrados en el
 tablero de monday.com siempre usarán la estructura de datos XML subyacente
 en lugar de las etiquetas traducidas de Seleccionar Uno o Seleccionar Múltiple.</p></li>
 <li><p>Haz clic en <strong>Item</strong> para configurar el mapeo de preguntas a columnas.
-<img alt="dynamic-linking" src="images/kobotoolbox_monday_integration/item-mapping.png" /></p></li>
+<img alt="dynamic-linking" src="_images/item-mapping.png" /></p></li>
 </ul>
 </li>
 <li><p>Cuando hayas completado la configuración de la receta, haz clic en el botón <strong>Add to Board</strong>.
-<img alt="recipe" src="images/kobotoolbox_monday_integration/recipe-config.png" /></p></li>
+<img alt="recipe" src="_images/recipe-config.png" /></p></li>
 <li><p>Después de completar la configuración de la integración, debes configurar los Servicios REST en KoboToolbox para sincronizar automáticamente los datos de tu proyecto con el tablero de monday.com. Para configurar los Servicios REST en KoboToolbox:</p>
 <ul class="simple">
 <li><p>Copia el enlace de integración de la notificación de configuración de integración o de la
 descripción en tu tablero de monday.com.<br />
-<img alt="webhook-url" src="images/kobotoolbox_monday_integration/description-link.png" /></p></li>
+<img alt="webhook-url" src="_images/description-link.png" /></p></li>
 <li><p>Inicia sesión en tu cuenta de KoboToolbox.</p></li>
 <li><p>Ve al proyecto que deseas conectar. Abre la ventana SETTINGS, luego elige REST
 Services, y haz clic en el botón <strong>REGISTER A NEW SERVICE</strong>.<br />
-<img alt="create-rest-service" src="images/kobotoolbox_monday_integration/create-rest-service.png" /></p></li>
+<img alt="create-rest-service" src="_images/create-rest-service.png" /></p></li>
 <li><p>Ingresa «monday.com integration» como el nombre del servicio e ingresa el enlace de integración en el campo «Endpoint URL».</p></li>
 <li><p>En la sección «Custom HTTP Headers», inserta el valor «webhook-auth» en
 el campo «Name» e ingresa tu Clave API de KoboToolbox en el campo «Value».<br />
-<img alt="rest-service-modal" src="images/kobotoolbox_monday_integration/rest-service-modal.png" /></p></li>
+<img alt="rest-service-modal" src="_images/rest-service-modal.png" /></p></li>
 <li><p>Haz clic en el botón <strong>SAVE</strong>.</p></li>
 </ul>
 </li>
 <li><p>¡Todo listo! Cada nuevo envío a tu proyecto de KoboToolbox se
 agregará automáticamente a tu tablero de monday.com según la configuración de tu receta.\</p>
-<p><img alt="kobo-monday-data" src="images/kobotoolbox_monday_integration/kobo-monday-data.png" /></p>
+<p><img alt="kobo-monday-data" src="_images/kobo-monday-data.png" /></p>
 <p class="rubric" id="notas-importantes">Notas importantes</p>
 <ol class="arabic simple">
 <li><p>Cualquier actualización realizada a un formulario o envío individual en un proyecto de KoboToolbox

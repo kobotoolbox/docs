@@ -126,7 +126,7 @@
 <li><p>Escribe el texto de la pregunta, por ejemplo «Captura la ubicación de la unidad de vivienda», luego haz clic en <strong>AGREGAR PREGUNTA</strong> o presiona ENTER en tu teclado</p></li>
 <li><p>Elige el tipo de pregunta (por ejemplo, Punto)</p></li>
 </ul>
-<p><img alt="Agregar preguntas GPS" src="images/gps_questions/adding_gps_questions.gif" /></p>
+<p><img alt="Agregar preguntas GPS" src="_images/adding_gps_questions.gif" /></p>
 </section>
 <section id="configuracion-en-xlsform">
 <h3>Configuración en XLSForm<a class="headerlink" href="#configuracion-en-xlsform" title="Link to this heading">¶</a></h3>
@@ -163,7 +163,7 @@
 <h2>Apariencia de los tipos de preguntas «Punto», «Línea» y «Área» en formularios web y KoboCollect<a class="headerlink" href="#apariencia-de-los-tipos-de-preguntas-punto-linea-y-area-en-formularios-web-y-kobocollect" title="Link to this heading">¶</a></h2>
 <section id="apariencia-predeterminada">
 <h3>Apariencia predeterminada<a class="headerlink" href="#apariencia-predeterminada" title="Link to this heading">¶</a></h3>
-<p><img alt="Apariencias predeterminadas de preguntas GPS" src="images/gps_questions/gps_default_appearances.png" /></p>
+<p><img alt="Apariencias predeterminadas de preguntas GPS" src="_images/gps_default_appearances.png" /></p>
 </section>
 </section>
 <section id="recolectar-puntos-gps-en-segundo-plano">
@@ -176,7 +176,7 @@
 <section id="calcular-distancia-de-preguntas-linea">
 <h3>Calcular distancia de preguntas «Línea»<a class="headerlink" href="#calcular-distancia-de-preguntas-linea" title="Link to this heading">¶</a></h3>
 <p>Para calcular la distancia de un tipo de pregunta «Línea» en el editor de formularios, usa el tipo de pregunta «Calcular» y la función <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#distance"><code class="docutils literal notranslate"><span class="pre">distance()</span></code></a> como se muestra a continuación:</p>
-<p><img alt="Calcular distancia" src="images/gps_questions/calculate_distance.png" /></p>
+<p><img alt="Calcular distancia" src="_images/calculate_distance.png" /></p>
 <p>En el ejemplo anterior, la pregunta «Traza la ruta del camino» se ha agregado como un tipo de pregunta «Línea». El «Nombre de la Columna de Datos» en la configuración de la pregunta se ha establecido como «track».</p>
 <p>La pregunta con la etiqueta <code class="docutils literal notranslate"><span class="pre">distance(${track})</span></code> es un tipo de pregunta «Calcular» con un «Nombre de la Columna de Datos» de «distance». El resultado estará en metros.</p>
 <p>La pregunta «Nota» es opcional y se ha agregado con el propósito de mostrar la distancia calculada dentro del formulario.</p>
@@ -216,7 +216,7 @@
 <section id="calcular-area-de-preguntas-area">
 <h3>Calcular área de preguntas «Área»<a class="headerlink" href="#calcular-area-de-preguntas-area" title="Link to this heading">¶</a></h3>
 <p>Puedes calcular un área usando el tipo de pregunta «Calcular» y la función <a class="reference external" href="https://docs.getodk.org/form-operators-functions/#area"><code class="docutils literal notranslate"><span class="pre">area()</span></code></a> como se muestra a continuación:</p>
-<p><img alt="Calcular distancia" src="images/gps_questions/calculate_area.png" /></p>
+<p><img alt="Calcular distancia" src="_images/calculate_area.png" /></p>
 <p>En el ejemplo anterior, la pregunta «Traza los límites» se ha agregado como un tipo de pregunta «Área». El «Nombre de la Columna de Datos» en la configuración de la pregunta se ha establecido como «boundary».</p>
 <p>La pregunta con la etiqueta <code class="docutils literal notranslate"><span class="pre">area(${boundary})</span></code> es un tipo de pregunta «Calcular» con el Nombre de la Columna de Datos «area». El resultado estará en metros cuadrados.</p>
 <p>La pregunta «Nota» es opcional y se ha agregado con el propósito de mostrar el área calculada dentro del formulario.</p>

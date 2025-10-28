@@ -119,7 +119,7 @@
 <section id="visualizar-y-editar-datos-de-grupos-repetidos">
 <h2>Visualizar y editar datos de grupos repetidos<a class="headerlink" href="#visualizar-y-editar-datos-de-grupos-repetidos" title="Link to this heading">¶</a></h2>
 <p>Puedes visualizar datos repetidos en la tabla de datos, que puedes encontrar en la vista <strong>Tabla</strong> de la ventana <strong>DATOS</strong> en la interfaz del proyecto de KoboToolbox. Las respuestas a preguntas repetidas aparecen en una sola columna por pregunta, con respuestas separadas por una coma, como se muestra a continuación.</p>
-<p><img alt="image" src="images/managing_repeat_groups/data_table.png" /></p>
+<p><img alt="image" src="_images/data_table.png" /></p>
 <p>También puedes visualizar los datos completos de cualquier envío dado, incluyendo cada repetición de grupos repetidos, haciendo clic en el botón <i class="k-icon-view"></i><strong>Abrir</strong> a la izquierda de cada envío.</p>
 <p>Para editar datos de grupos repetidos, haz clic en el botón <i class="k-icon-edit"></i><strong>Editar</strong>. Esto abrirá el formulario y te permitirá <a class="reference internal" href="howto_edit_single_submissions.html"><span class="std std-doc">editar los datos del formulario</span></a> antes de volver a enviar. La <a class="reference internal" href="howto_edit_multiple_submissions.html"><span class="std std-doc">edición masiva</span></a> de datos de grupos repetidos no está actualmente disponible.</p>
 <p class="note">
@@ -129,7 +129,7 @@
 <section id="exportar-datos-de-grupos-repetidos">
 <h2>Exportar datos de grupos repetidos<a class="headerlink" href="#exportar-datos-de-grupos-repetidos" title="Link to this heading">¶</a></h2>
 <p>Para exportar datos de un formulario con grupos repetidos, debes descargar tus datos en <strong>formato XLS</strong>. Cada grupo repetido se exportará <strong>como una hoja separada</strong> en el archivo exportado. La descarga en CSV solo proporcionará datos de los datos principales.</p>
-<p><img alt="image" src="images/managing_repeat_groups/download.png" /></p>
+<p><img alt="image" src="_images/download.png" /></p>
 <p class="note"> 
     Para aprender más sobre cómo exportar tus datos, consulta <a href="export_download.html">Exportar y descargar tus datos</a>.
 </p>
@@ -139,8 +139,8 @@
 <p>En archivos XLS exportados, los datos de grupos repetidos se almacenan <strong>en una hoja separada</strong>. La primera hoja del archivo XLS contiene los datos de respuesta principales, y los datos de cada grupo repetido se almacenan en su propia hoja. Los grupos repetidos anidados también se almacenan en hojas separadas.</p>
 <p>Los datos de grupos repetidos se pueden vincular a los datos principales usando la columna <strong>_index</strong> de la hoja de datos principales y la columna <strong>_parent_index</strong> de la hoja de datos del grupo repetido.</p>
 <p>En el ejemplo a continuación, la primera hoja incluye una columna <strong>_index</strong>, en verde, que identifica el primer envío. La segunda hoja, mostrada en la segunda imagen, contiene una columna <strong>_parent_index</strong>, también resaltada en verde, que se vincula de vuelta a la primera hoja. En este ejemplo, ambas filas de los datos repetidos provienen del primer envío de datos.</p>
-<p><img alt="image" src="images/managing_repeat_groups/main_data.png" /></p>
-<p><img alt="image" src="images/managing_repeat_groups/repeat_group_data.png" /></p>
+<p><img alt="image" src="_images/main_data.png" /></p>
+<p><img alt="image" src="_images/repeat_group_data.png" /></p>
 <p class="note">
   <b>Nota</b>: La hoja de datos del grupo repetido también incluye una <b>columna _index</b>. Esta columna se usa para vincular a <b>grupos repetidos anidados</b>, siguiendo la misma configuración descrita anteriormente, con el grupo repetido como los datos principales y el grupo repetido anidado como los datos vinculados.
 </p>

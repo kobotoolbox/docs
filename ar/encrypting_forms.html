@@ -132,7 +132,7 @@
 الخادم الذي تستخدمه).</p></li>
 <li><p>أضف عمودًا آخر <em>public_key</em> (أي base64RsaPublicKey). الصق مفتاحك العام المتوافق.</p>
 <p>(يرجى الاطلاع على الصورة أدناه للمرجع)</p>
-<p><img alt="image" src="images/encrypting_forms/column.png" /></p>
+<p><img alt="image" src="_images/column.png" /></p>
 </li>
 <li><p>قم بتحميل ملف XLS مرة أخرى إلى KoboToolbox. يمكنك إما استيراده مرة أخرى إلى قائمة مسودات النماذج ثم نشره كمشروع استبيان جديد، أو استيراده مباشرة إلى قائمة المشاريع المنشورة. بمجرد النشر، يجب أن ترى تسمية بنص &quot;مشفر&quot; بجوار اسم نموذجك.</p></li>
 </ol>
@@ -164,7 +164,7 @@
 <li><p>قم بتنزيل وفتح <a class="reference external" href="https://docs.getodk.org/briefcase-intro/">ODK Briefcase</a>.</p></li>
 <li><p>حدد <strong>موقع التخزين</strong> ضمن علامة التبويب <strong>الإعدادات</strong>.</p></li>
 <li><p>افتح علامة التبويب <strong>Pull</strong> وانقر على <strong>Configure</strong>.<br />
-<img alt="image" src="images/encrypting_forms/configure.png" /></p></li>
+<img alt="image" src="_images/configure.png" /></p></li>
 <li><p>ثم أدخل ما يلي:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">https://kc.kobotoolbox.org</span></code> أو
@@ -172,7 +172,7 @@
 <li><p>اسم المستخدم الخاص بك</p></li>
 <li><p>كلمة المرور الخاصة بك</p></li>
 <li><p>اضغط على <strong>Connect</strong> عند الانتهاء<br />
-<img alt="image" src="images/encrypting_forms/connect.png" /></p></li>
+<img alt="image" src="_images/connect.png" /></p></li>
 </ul>
 </li>
 </ol>
@@ -183,7 +183,7 @@
 <li><p>يتم عرض قائمة بالمشاريع. حدد مشروعًا ترغب في سحبه واضغط على <strong>Pull</strong>. ستتلقى رسالة <strong>Success</strong> ضمن <strong>Pull Status</strong>.</p></li>
 <li><p>الآن انتقل إلى علامة التبويب <strong>Export</strong>.</p></li>
 <li><p>اضغط على <strong>Edit Default Configuration</strong> للتأكد من أن لديك <strong>مفتاح PEM الخاص</strong> في <strong>موقع ملف PEM</strong>.<br />
-<img alt="image" src="images/encrypting_forms/private_key.png" /><br />
+<img alt="image" src="_images/private_key.png" /><br />
 إذا لم يكن موجودًا، حدد <strong>مفتاح PEM الخاص</strong> من المجلد الذي قمت بتأمينه بشكل آمن. (<em>ملاحظة: سترى أيضًا جميع المشاريع هنا التي تم سحبها بنجاح.</em>)</p></li>
 <li><p>الآن حدد المشروع الذي ترغب في تصديره واضغط على <strong>Export</strong>.</p></li>
 <li><p>يتم تصدير البيانات كملف CSV، يمكنك الآن عرض البيانات غير المشفرة.</p></li>
@@ -200,15 +200,15 @@
 <ol class="arabic">
 <li><p>افتح نافذة 'cmd' في Windows.</p></li>
 <li><p>اكتب الأمر التالي: <code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">C:\OpenSSL-Win32\bin</span></code> للتغيير إلى دليل /bin في دليل OpenSSL.</p>
-<p><img alt="image" src="images/encrypting_forms/openssl_1.png" /></p>
+<p><img alt="image" src="_images/openssl_1.png" /></p>
 </li>
 <li><p>أنشئ مفتاحًا خاصًا بحجم 2048 بت واكتبه في ملف <strong>MyPrivateKey.pem</strong> عن طريق كتابة الأمر التالي، ثم اضغط على <strong>Enter</strong>:
 <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">genpkey</span> <span class="pre">-out</span> <span class="pre">MyPrivateKey.pem</span> <span class="pre">-outform</span> <span class="pre">PEM</span> <span class="pre">-algorithm</span> <span class="pre">RSA</span> <span class="pre">-pkeyopt</span> <span class="pre">rsa_keygen_bits:2048</span></code></p>
-<p><img alt="image" src="images/encrypting_forms/openssl_2.png" /></p>
+<p><img alt="image" src="_images/openssl_2.png" /></p>
 </li>
 <li><p>ثم، استخرج المفتاح العام للمفتاح الخاص أعلاه. اكتب الأمر التالي ثم اضغط على <strong>Enter</strong>:
 <code class="docutils literal notranslate"><span class="pre">openssl</span> <span class="pre">rsa</span> <span class="pre">-in</span> <span class="pre">MyPrivateKey.pem</span> <span class="pre">-inform</span> <span class="pre">PEM</span> <span class="pre">-out</span> <span class="pre">MyPublicKey.pem</span> <span class="pre">-outform</span> <span class="pre">PEM</span> <span class="pre">-pubout</span></code></p>
-<p><img alt="image" src="images/encrypting_forms/openssl_3.png" /></p>
+<p><img alt="image" src="_images/openssl_3.png" /></p>
 </li>
 <li><p>لقد أنشأت الآن ملفين وهما:</p>
 <ul class="simple">

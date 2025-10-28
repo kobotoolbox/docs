@@ -117,21 +117,21 @@
 <p><code class="docutils literal notranslate"><span class="pre">${age}</span></code> أو <code class="docutils literal notranslate"><span class="pre">${income}</span></code></p>
 <p>ببساطة قم بتضمين الإشارة إلى السؤال الآخر بين الكلمات الأخرى في تسميتك. على سبيل المثال، يمكنك إضافة سؤال جديد بالتسمية</p>
 <p><code class="docutils literal notranslate"><span class="pre">هل</span> <span class="pre">أنت</span> <span class="pre">متأكد</span> <span class="pre">أن</span> <span class="pre">عمرك</span> <span class="pre">${age}</span> <span class="pre">سنة؟</span></code></p>
-<p><img alt="image" src="images/responses_inside_question/question_name.gif" /></p>
+<p><img alt="image" src="_images/question_name.gif" /></p>
 <p>ويمكنك أيضاً إنشاء منطق تخطي لهذا السؤال بحيث يُطرح فقط عندما تكون إجابة العمر أقل من 18.</p>
 <p>لاحظ أنه إذا أشرت إلى سؤال غير موجود، فسيؤدي ذلك إلى حدوث خطأ عند محاولة نشر النموذج الخاص بك. تأكد دائماً من الإشارة إلى الأسئلة بأسمائها الدقيقة، والتي تكون أيضاً حساسة لحالة الأحرف. على سبيل المثال، إذا كان سؤالك يسمى <code class="docutils literal notranslate"><span class="pre">age</span></code> فلا يمكنك استخدام <code class="docutils literal notranslate"><span class="pre">${Age}</span></code>. يمكنك التحقق من النموذج الخاص بك بسهولة من خلال النقر على المعاينة في أي وقت.</p>
-<p><img alt="image" src="images/responses_inside_question/preview.gif" /></p>
+<p><img alt="image" src="_images/preview1.gif" /></p>
 <p><strong>يمكنك أيضاً الإشارة إلى الإجابة من سؤال اختيار واحد/متعدد وعرض الإجابة بدلاً من الرمز باستخدام أسئلة الحساب المخفية</strong></p>
 <p>إذا كنت ترغب في الإشارة إلى الإجابة على سؤال اختيار واحد/متعدد وإظهار نص الإجابة (مثل &quot;أوافق بشدة&quot;) بدلاً من قيمتها المشفرة (مثل &quot;strongly_agr&quot;)، يمكنك:</p>
 <ol class="arabic">
 <li><p>إنشاء سؤال اختيار واحد/متعدد، وإعطاء السؤال اسم مرجعي ثابت من خلال إعدادات السؤال، مثل <code class="docutils literal notranslate"><span class="pre">instruction</span></code>. وإنشاء سؤال حساب وسيط وإدخال: <code class="docutils literal notranslate"><span class="pre">jr:choice-name(${instruction},</span> <span class="pre">'${instruction}')</span></code>.</p>
-<p><img alt="image" src="images/responses_inside_question/select_updated.gif" /></p>
+<p><img alt="image" src="_images/select_updated.gif" /></p>
 </li>
 <li><p>إعطاء سؤال الحساب هذا اسماً مرجعياً، مثل <code class="docutils literal notranslate"><span class="pre">instruction_calculation</span></code>. في سؤالك الجديد، أشر إلى سؤال الحساب هذا بدلاً من الاسم المعطى لسؤال الاختيار واحد/متعدد.</p>
-<p><img alt="image" src="images/responses_inside_question/calculate.gif" /></p>
+<p><img alt="image" src="_images/calculate.gif" /></p>
 </li>
 <li><p>معاينة النموذج والتحقق من صحته للتأكد من أن كل شيء يعمل كما هو مصمم.</p>
-<p><img alt="image" src="images/responses_inside_question/preview_calculate.gif" /></p>
+<p><img alt="image" src="_images/preview_calculate.gif" /></p>
 </li>
 </ol>
 </section>

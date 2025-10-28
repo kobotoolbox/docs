@@ -113,7 +113,7 @@
 <p><a href="../matrix_response.html">Read in English</a> | <a href="../es/matrix_response.html">Leer en español</a> | <a href="../ar/matrix_response.html">اقرأ باللغة العربية</a>
 <strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/matrix_response.md" class="reference">29 juil. 2025</a></p>
 <p>Le type de réponse Matrice de questions permet aux utilisatrices et utilisateurs de créer un groupe de questions qui s’affichent dans un format matriciel, où chaque cellule de la matrice représente une question distincte. Pour utiliser ce type de réponse, définissez le nombre de lignes et de colonnes que vous souhaitez dans votre ensemble matriciel et attribuez une étiquette ou un nom à chaque ligne et colonne. Chaque colonne peut être un type de question différent. Dans la capture d’écran ci-dessus, les deux premières colonnes sont des questions à choix unique, et la troisième colonne est une question numérique.</p>
-<p><img alt="image" src="images/matrix_response/matrix_example.png" /></p>
+<p><img alt="image" src="_images/matrix_example.png" /></p>
 <p class="note">Ce type de réponse <strong>fonctionne uniquement avec Enketo</strong>, en utilisant la <strong>mise en page Grid-theme</strong>. Les formulaires sont définis sur une mise en page à page unique par défaut -- pour la modifier, trouvez le bouton « layout » dans la barre d'outils de l'interface de création de formulaires, sélectionnez « grid-theme », enregistrez cette modification et redéployez votre formulaire pour que ces changements soient actifs.</p>
 <p class='note'>Enketo prend en charge uniquement jusqu'à <code>10</code> colonnes dans les versions antérieures à <code>2.8.0</code>, jusqu'à <code>13</code> à partir de la version <code>2.8.0</code> incluse.</p>
 <section id="creer-une-matrice-de-questions-dans-l-interface-de-creation-de-formulaires">
@@ -121,17 +121,17 @@
 <ol class="arabic">
 <li><p>Accédez à votre interface de création de formulaires et cliquez sur « Add question »</p></li>
 <li><p>Sélectionnez « Question Matrix »</p>
-<p><img alt="image" src="images/matrix_response/question_matrix.png" /></p>
+<p><img alt="image" src="_images/question_matrix.png" /></p>
 </li>
 <li><p>Cliquez sur l’icône d’engrenage dans chaque colonne pour définir le type de question.</p>
-<p><img alt="image" src="images/matrix_response/question_type.png" /></p>
+<p><img alt="image" src="_images/question_type.png" /></p>
 </li>
 <li><p>Sélectionnez le type de question</p></li>
 <li><p>Ajoutez l’étiquette de colonne et l’étiquette de réponse</p>
-<p><img alt="image" src="images/matrix_response/label_response.png" /></p>
+<p><img alt="image" src="_images/label_response.png" /></p>
 </li>
 <li><p>Sélectionnez l’icône d’engrenage dans « Row » pour définir l’étiquette de ligne</p>
-<p><img alt="image" src="images/matrix_response/row.png" /></p>
+<p><img alt="image" src="_images/row.png" /></p>
 </li>
 </ol>
 </section>
@@ -232,7 +232,7 @@
 <p class="note">Cette méthode utilise <code>begin_kobomatrix</code>,
 <code>end_kobomatrix</code> et <code>kobo--matrix_list</code>.</p>
 <p>En suivant les étapes ci-dessus, vous devriez voir la matrice de questions illustrée dans la capture d’écran ci-dessous (dans <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">Enketo</span></a> uniquement) :</p>
-<p><img alt="image" src="images/matrix_response/preview.png" /></p>
+<p><img alt="image" src="_images/preview.png" /></p>
 <p>Il est également possible d’inclure des conditions <code class="docutils literal notranslate"><span class="pre">relevant</span></code> et <code class="docutils literal notranslate"><span class="pre">constraint</span></code> dans la matrice comme suit :</p>
 <p><strong>feuille survey</strong></p>
 <table class="docutils align-default">
