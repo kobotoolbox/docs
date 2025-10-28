@@ -9,7 +9,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Getting Started
+  :caption: Premiers Pas
   :name: home-page-toc-getting-started
 
   welcome
@@ -22,7 +22,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Account & Billing
+  :caption: Compte et Facturation
   :name: home-page-toc-account-billing
 
   creating_account
@@ -32,7 +32,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Using the Formbuilder
+  :caption: Utilisation du Formbuilder
   :name: home-page-toc-using-formbuilder
 
   formbuilder
@@ -71,7 +71,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Using XLSForm
+  :caption: Utilisation de XLSForm
   :name: home-page-toc-using-xlsform
 
   edit_forms_excel
@@ -85,7 +85,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Collecting Data
+  :caption: Collecte de Données
   :name: home-page-toc-collecting-data
 
   data-collection-tools
@@ -105,7 +105,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Managing Projects & Data
+  :caption: Gestion des Projets et Données
   :name: home-page-toc-managing-projects
 
   project_summary
@@ -129,7 +129,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Analyzing Data
+  :caption: Analyse des Données
   :name: home-page-toc-analyzing-data
 
   creating_custom_reports
@@ -139,7 +139,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Integrations
+  :caption: Intégrations
   :name: home-page-toc-integrations
 
   api
@@ -154,7 +154,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Data Security & Protection
+  :caption: Sécurité et Protection des Données
   :name: home-page-toc-data-security-protection
 
   is_my_data_safe
@@ -165,7 +165,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
 .. toctree::
   :maxdepth: 2
-  :caption: Additional Resources
+  :caption: Ressources Supplémentaires
   :name: home-page-toc-additional-resources
 
   p_codes
