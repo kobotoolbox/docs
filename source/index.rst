@@ -77,10 +77,17 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   edit_forms_excel
   getting_started_xlsform
   xls_url
-  media
+  xlsform_with_kobotoolbox
+  question_types_xls
+  option_choices_xls
+  grouping_questions_xls
+  repeat_groups_xls
+  question_options_xls
+  appearances_xls
   language_xls
-  dynamic_data_attachment
+  media
   pull_data_kobotoolbox
+  dynamic_data_attachment
   library_locking
 
 .. toctree::
