@@ -1,4 +1,5 @@
 # Overview on Data Collection Tools
+<a href="fr/data-collection-tools.html">Lire en français</a> | <a href="es/data-collection-tools.html">Leer en español</a> | <a href="ar/data-collection-tools.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/53c2e7dae53b8450c51194fb49c7d915fe735012/source/data-collection-tools.md" class="reference">11 Sep 2025</a>
 
 KoboToolbox allows data collection in multiple ways. Because KoboToolbox is

@@ -1,4 +1,5 @@
 # Editing Forms in Excel using XLSForm
+<a href="fr/edit_forms_excel.html">Lire en français</a> | <a href="es/edit_forms_excel.html">Leer en español</a> | <a href="ar/edit_forms_excel.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/edit_forms_excel.md" class="reference">15 Feb 2022</a>
 
 KoboToolbox is building its forms using a widely shared standard called

@@ -1,4 +1,5 @@
 # Connecting KoboToolbox to Microsoft Excel
+<a href="fr/pulling_data_into_excelquery.html">Lire en français</a> | <a href="es/pulling_data_into_excelquery.html">Leer en español</a> | <a href="ar/pulling_data_into_excelquery.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/df082614a0ae0bce8543b0c1474a9567fea7293e/source/pulling_data_into_excelquery.md" class="reference">23 Aug 2022</a>
 
 KoboToolbox lets you connect your data collection project to external programs

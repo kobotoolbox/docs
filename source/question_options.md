@@ -1,4 +1,5 @@
 # Using the Question Options
+<a href="fr/question_options.html">Lire en français</a> | <a href="es/question_options.html">Leer en español</a> | <a href="ar/question_options.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/43a3384fad535287d1c7820457ab2d25a86877fc/source/question_options.md" class="reference">24 Sep 2025</a>
 
 After adding a question, there are many different customizations you can make to

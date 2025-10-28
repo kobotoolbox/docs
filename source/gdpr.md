@@ -1,4 +1,5 @@
 # General Data Protection Regulation (GDPR)
+<a href="fr/gdpr.html">Lire en français</a> | <a href="es/gdpr.html">Leer en español</a> | <a href="ar/gdpr.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2c18fa51ed6877e610d5a81c722f8010df110183/source/gdpr.md" class="reference">14 Mar 2023</a>
 
 ## What is GDPR?

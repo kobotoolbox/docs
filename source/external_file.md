@@ -1,4 +1,5 @@
 # Select One or Many From External File Question Type
+<a href="fr/external_file.html">Lire en français</a> | <a href="es/external_file.html">Leer en español</a> | <a href="ar/external_file.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/87ff8377b846dacb801191e0b619126a563040a9/source/external_file.md" class="reference">28 Aug 2025</a>
 
 In some cases, it may be desirable to host a list of choice options in an

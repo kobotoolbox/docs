@@ -67,7 +67,19 @@ sphinx-build -b html locales/ar _build/html/ar
 
 1. Create the translated file in `locales/[lang]/` with the same filename as the English version (e.g., `locales/es/new_article.md`)
 2. Add the file to the corresponding `locales/[lang]/index.rst` toctree
-3. Update cross-language links in both the English and translated versions
+3. Add language switcher links at the top of each version:
+
+**For English files** (`source/article.md`):
+```html
+<a href="fr/article.html">Lire en français</a> | <a href="es/article.html">Leer en español</a> | <a href="ar/article.html">اقرأ باللغة العربية</a>
+```
+
+**For translated files** (`locales/es/article.md`, `locales/fr/article.md`, `locales/ar/article.md`):
+```html
+<a href="../article.html">Read in English</a> | <a href="../fr/article.html">Lire en français</a> | <a href="../es/article.html">Leer en español</a> | <a href="../ar/article.html">اقرأ باللغة العربية</a>
+```
+
+Note: Adjust the links to exclude the current language (e.g., Spanish article doesn't need a link to itself)
 
 ## Custom theme development
 

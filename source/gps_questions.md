@@ -1,4 +1,5 @@
 # GPS Question types
+<a href="fr/gps_questions.html">Lire en français</a> | <a href="es/gps_questions.html">Leer en español</a> | <a href="ar/gps_questions.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/27e85949b3f42b42dcb60701fbfc80aadddbb616/source/gps_questions.md" class="reference">30 Jul 2022</a>
 
 In KoboToolbox, you can collect GPS coordinates as part of your data collection

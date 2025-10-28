@@ -1,4 +1,5 @@
 # Connecting KoboToolbox to Power BI
+<a href="fr/pulling_data_into_powerbi.html">Lire en français</a> | <a href="es/pulling_data_into_powerbi.html">Leer en español</a> | <a href="ar/pulling_data_into_powerbi.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ae9e699afd6c0ed484945430ba6722b974b99b49/source/pulling_data_into_powerbi.md" class="reference">22 Aug 2022</a>
 
 The KoboToolbox API allows you to connect your project with other data analysis

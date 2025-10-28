@@ -1,0 +1,7 @@
+# Cumplimiento de HIPAA
+<a href="../hipaa_compliance.html">Read in English</a> | <a href="../fr/hipaa_compliance.html">Lire en français</a> | <a href="../ar/hipaa_compliance.html">اقرأ باللغة العربية</a>
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/b1ec67a2ab986fec9903546ac7db4c1ce91c6517/source/hipaa_compliance.md" class="reference">7 Jul 2025</a>
+
+Los [servidores públicos de KoboToolbox](creating_account.md) no fueron diseñados con los requisitos específicos de HIPAA en mente y, como tal, no llevan ninguna garantía de cumplimiento de HIPAA. Las reglas de HIPAA cubren cómo los servidores almacenan y transfieren diferentes tipos de datos, qué tipos de registros deben mantenerse y a qué nivel, así como acuerdos legales, requisitos de seguro y reglas comerciales específicas que deben establecerse y monitorearse para garantizar el cumplimiento.
+
+Aún no tenemos planes para rediseñar la infraestructura de estas instancias públicas de acuerdo con los protocolos de seguridad específicos de HIPAA. Cualquier persona dispuesta a operar [su propia instancia privada de KoboToolbox](https://github.com/kobotoolbox/kobo-install) podría hacerlo de manera compatible con HIPAA, por ejemplo, contratando con una empresa de alojamiento que se especialice en el cumplimiento de HIPAA.

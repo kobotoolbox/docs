@@ -1,4 +1,5 @@
 # KoboToolbox Integration on monday.com
+<a href="fr/kobotoolbox_monday_integration.html">Lire en français</a> | <a href="es/kobotoolbox_monday_integration.html">Leer en español</a> | <a href="ar/kobotoolbox_monday_integration.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/kobotoolbox_monday_integration.md" class="reference">3 May 2024</a>
 
 <p class="note">

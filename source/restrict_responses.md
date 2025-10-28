@@ -1,4 +1,5 @@
 # Restricting Text Responses With Regular Expressions
+<a href="fr/restrict_responses.html">Lire en français</a> | <a href="es/restrict_responses.html">Leer en español</a> | <a href="ar/restrict_responses.html">اقرأ باللغة العربية</a>
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/restrict_responses.md" class="reference">29 Jul 2025</a>
 
 A regular expression, or regex, is a search pattern used for matching specific

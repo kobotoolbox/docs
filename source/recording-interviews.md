@@ -1,4 +1,5 @@
 ﻿# Recording an Entire Interview with Background Audio Recording
+<a href="fr/recording-interviews.html">Lire en français</a> | <a href="es/recording-interviews.html">Leer en español</a> | <a href="ar/recording-interviews.html">اقرأ باللغة العربية</a>
 
 **Last updated:**
 <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/recording-interviews.md" class="reference">15
