@@ -994,6 +994,21 @@ html body div.footer p:last-child {
   background-image: url("../icons/custom/additional-resources.png");
 }
 
+.toc-card .caption {
+  display: block;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.toc-card {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.toc-card ul a {
+  text-decoration: underline !important;
+}
+
 .page#search .page__body form {
   display: none;
 }
