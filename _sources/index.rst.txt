@@ -7,6 +7,10 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 .. JavaScript code and for properly building the custom section pages.
 .. If you need to change them, please contact a developer :-*
 
+.. raw:: html
+
+   <a class="toc-card" href="getting-started.html">
+
 .. toctree::
   :maxdepth: 2
   :caption: Getting Started
@@ -18,7 +22,9 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   formbuilder
   getting_started_xlsform
 
+.. raw:: html
 
+   </a>
 
 .. toctree::
   :maxdepth: 2
