@@ -191,3 +191,18 @@
     }
   }
 }
+
+.toc-card .caption {
+  display: block;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.toc-card {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.toc-card ul a {
+  text-decoration: underline !important;
+}
