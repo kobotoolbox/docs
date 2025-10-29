@@ -727,6 +727,17 @@ html body {
   text-decoration: none;
 }
 
+.page__back-to-top-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1rem;
+}
+
 html body div.footer {
   width: 100%;
   background: hsl(230, 12%, 29%);
