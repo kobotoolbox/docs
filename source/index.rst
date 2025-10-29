@@ -26,6 +26,10 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
    </a>
 
+.. raw:: html
+
+   <a class="toc-card" href="account-billing.html">
+
 .. toctree::
   :maxdepth: 2
   :caption: Account & Billing
@@ -35,6 +39,14 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   activation_link
   reset_password
   two_factor_authentication
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="using-formbuilder.html">
 
 .. toctree::
   :maxdepth: 2
@@ -75,6 +87,14 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   public_collections_advanced_search
   hxl
 
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="using-xlsform.html">
+
 .. toctree::
   :maxdepth: 2
   :caption: Using XLSForm
@@ -88,6 +108,14 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   dynamic_data_attachment
   pull_data_kobotoolbox
   library_locking
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="collecting-data.html">
 
 .. toctree::
   :maxdepth: 2
@@ -108,6 +136,14 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   troubleshooting_kobocollect
   troubleshooting_webforms
   collect_gps
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="managing-projects.html">
 
 .. toctree::
   :maxdepth: 2
@@ -131,7 +167,15 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   recovering_previous_formdata
   getting_started_organization_feature
   activity_logs
-  
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="analyzing-data.html">
+
 
 .. toctree::
   :maxdepth: 2
@@ -142,6 +186,15 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   transcription-translation
   qualitative_analysis
   converting_to_spss_and_stata
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="integrations.html">
+
 
 .. toctree::
   :maxdepth: 2
@@ -158,6 +211,15 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   kobotoolbox_monday_integration
   migrating_api
 
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="data-security-protection.html">
+
+
 .. toctree::
   :maxdepth: 2
   :caption: Data Security & Protection
@@ -168,6 +230,15 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   hipaa_compliance
   data_storage
   encrypting_forms
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="additional-resources.html">
+
 
 .. toctree::
   :maxdepth: 2
@@ -183,4 +254,8 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   add_logo
   stuck_in_pending
   manual_upload
+
+.. raw:: html
+
+   </a>
 
