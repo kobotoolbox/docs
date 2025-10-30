@@ -30,8 +30,25 @@ Select questions allow respondents to choose from predefined options. For `selec
 
 
 <p class="note">
-To learn more about select question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/select_one_and_select_many.html">Select One and Select Many questions</a>, <a href="https://support.kobotoolbox.org/rating_ranking.html">Rating vs Ranking questions</a>, <a href="https://support.kobotoolbox.org/acknowledge.html">Acknowledge questions</a>, and <a href="https://support.kobotoolbox.org/external_file.html">Select One or Many From External File questions</a>.
+To learn more about select question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/select_one_and_select_many.html">Select One and Select Many question types</a>, <a href="https://support.kobotoolbox.org/rating_ranking.html">Rating vs Ranking question types</a>, <a href="https://support.kobotoolbox.org/acknowledge.html">Acknowledge question type</a>, and <a href="https://support.kobotoolbox.org/external_file.html">Select One or Many From External File question types</a>.
 </p>
+
+
+### Numeric question types
+
+Numeric questions are used to collect whole numbers, decimal numbers, or values within a specified range.
+
+| XLSForm type | Description | Formbuilder equivalent |
+| :--- | :--- | :--- |
+| `integer` | Allows respondents to input whole numbers. | Number |
+| `decimal` | Allows respondents to input numbers that may contain decimal points. | Decimal |
+| `range` | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values, <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the **parameters column**. | Range |
+
+
+<p class="note">
+To learn more about numeric question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/number_decimal_range.html">Number, Decimal, and Range question types</a>.
+</p>
+
 
 ### Text and note question types
 
@@ -44,7 +61,7 @@ Text questions allow you to collect open-ended responses, while note questions p
 
 
 <p class="note">
-To learn more about text and note question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/text_and_note.html">Text and Note questions</a>.
+To learn more about text and note question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/text_and_note.html">Text and Note question types</a>.
 </p>
 
 ### Media question types
@@ -62,7 +79,7 @@ Media questions allow users to upload or record images, audio, and video files, 
 
 
 <p class="note">
-To learn more about media question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions</a>, <a href="https://support.kobotoolbox.org/barcode_qrcode_questions.html">Barcode/QR code questions</a>, and <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews using background audio recording</a>.
+To learn more about media question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media question types</a>, <a href="https://support.kobotoolbox.org/barcode_qrcode_questions.html">Barcode/QR code question type</a>, and <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews using background audio recording</a>.
 </p>
 
 ### GPS question types
@@ -77,7 +94,7 @@ GPS questions are used to capture the geographic coordinates of a location, path
 
 
 <p class="note">
-To learn more about GPS question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/gps_questions.html">GPS questions</a>.
+To learn more about GPS question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/gps_questions.html">GPS question types</a>.
 </p>
 
 ### Date and time question types
@@ -92,25 +109,10 @@ Date and time questions are used to capture specific calendar dates, times, or b
 
 
 <p class="note">
-To learn more about date and time questions in KoboToolbox, see <a href="https://support.kobotoolbox.org/date_time.html">Date and Time questions</a>.
+To learn more about date and time questions in KoboToolbox, see <a href="https://support.kobotoolbox.org/date_time.html">Date and Time question types</a>.
 </p>
 
-### Numeric question types
-
-Numeric questions are used to collect whole numbers, decimal numbers, or values within a specified range.
-
-| XLSForm type | Description | Formbuilder equivalent |
-| :--- | :--- | :--- |
-| `integer` | Allows respondents to input whole numbers. | Number |
-| `decimal` | Allows respondents to input numbers that may contain decimal points. | Decimal |
-| `range` | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values, <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the **parameters column**. | Range |
-
-
-<p class="note">
-To learn more about numeric question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/number_decimal_range.html">Number, Decimal, and Range questions</a>.
-</p>
-
-### Calculate and hidden questions
+### Calculate and hidden question types
 
 Calculate and hidden questions are used to perform automatic calculations within a form based on previous responses or to store predefined values.
 
@@ -119,12 +121,7 @@ Calculate and hidden questions are used to perform automatic calculations within
 | `calculate` | Automatically performs calculations within a form based on responses to previous questions. | Calculate |
 | `hidden` | Stores predefined values that are not visible to the respondent. The value is <a href="https://support.kobotoolbox.org/question_options_xls.html#default-responses">stored</a> in the **default** column. | Hidden |
 
-
-<p class="note">
-To learn more about calculations in the Formbuilder, see <a href="https://support.kobotoolbox.org/calculate_questions.html">Calculate questions</a>.
-<br><br>
-To learn more about calculations in XLSForms, see <a href="https://support.kobotoolbox.org/calculations_xls.html">Adding calculations in XLSForm</a>.
-</p>
+To learn more about calculations in the Formbuilder, see <a href="https://support.kobotoolbox.org/calculate_questions.html">Calculate question type</a>. To learn more about calculations in XLSForm, see <a href="https://support.kobotoolbox.org/calculations_xls.html">Adding calculations in XLSForm</a>.
 
 <p class="note">
 For hands-on practice with different question types XLSForm, see <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">KoboToolbox Academy's XLSForm Fundamentals Course</a>.
