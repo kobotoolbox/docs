@@ -1,5 +1,5 @@
 # Record Validation
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/record_validation.md" class="reference">31 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/record_validation.md" class="reference">17 Oct 2025</a>
 
 
 A Project owner can now give a “Can Validate” permission to other users. Users with this permission can view a record, edit it if necessary, and assign a status to the record in question. Assigning a status to a particular record/submission raises data collection standards for teams with more than one enumerator.

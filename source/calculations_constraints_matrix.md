@@ -1,10 +1,5 @@
 # Adding Calculations and Constraints in a Matrix Question
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/calculations_constraints_matrix.md" class="reference">31 Oct 2025</a>
-
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/aaabdac8ec257d3157ec2ab2ceae65130e8c12d4/source/calculations_constraints_matrix.md" class="reference">14
-Apr 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/calculations_constraints_matrix.md" class="reference">17 Oct 2025</a>
 
 When working in the formbuilder, it is simple to
 [add calculations](calculate_questions.md) or

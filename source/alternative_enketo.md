@@ -1,5 +1,5 @@
 # Using Alternative Enketo Web Form Styles
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/alternative_enketo.md" class="reference">31 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/alternative_enketo.md" class="reference">17 Oct 2025</a>
 
 
 Enketo web forms can be customized in the way your questions are presented.

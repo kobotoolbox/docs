@@ -1,10 +1,5 @@
 # Public Collections Advanced Search
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/public_collections_advanced_search.md" class="reference">31 Oct 2025</a>
-
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/a6ae76d4d566c1139914f03ba8452fdbf122cf11/source/public_collections_advanced_search.md" class="reference">4
-Mar 2021</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/public_collections_advanced_search.md" class="reference">17 Oct 2025</a>
 
 **_Please note that the search capability is a work in progress, and we plan to
 add a more user-friendly syntax in future releases._**
