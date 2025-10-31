@@ -1,5 +1,5 @@
 # Date and time question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/date_time.md" class="reference">31 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/date_time.md" class="reference">17 Oct 2025</a>
 
 
 There are 3 different date and time question types in KoboToolbox: “Date”,

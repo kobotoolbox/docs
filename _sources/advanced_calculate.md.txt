@@ -1,5 +1,5 @@
 # Advanced Calculate Question Type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/advanced_calculate.md" class="reference">31 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/advanced_calculate.md" class="reference">17 Oct 2025</a>
 
 
 Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a **Calculation**, and writing the mathematical expression into the question label field. 
