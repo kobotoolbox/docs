@@ -1,5 +1,4 @@
 # Primeros pasos con la recolección de datos
-<a href="../test_simple.html">Read in English</a> | <a href="../fr/test_simple.html">Lire en français</a> | <a href="../ar/test_simple.html">اقرأ باللغة العربية</a>
 
 La recolección de datos es una parte esencial de cualquier proyecto de investigación o encuesta. Esta guía te ayudará a comprender los conceptos básicos de KoboToolbox.
 

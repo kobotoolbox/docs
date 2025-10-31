@@ -1,5 +1,4 @@
 # Tipo de pregunta Código de barras/Código QR
-<a href="../barcode_qrcode_questions.html">Read in English</a> | <a href="../fr/barcode_qrcode_questions.html">Lire en français</a> | <a href="../ar/barcode_qrcode_questions.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/c5889af525a55f27747f919a026f9b7103f5c180/source/barcode_qrcode_questions.md" class="reference">24 Sep 2025</a>
 
 El tipo de pregunta "Código de barras/Código QR" se utiliza para escanear, decodificar y capturar

@@ -1,5 +1,4 @@
 # Uso de estilos alternativos de formularios web de Enketo
-<a href="../alternative_enketo.html">Read in English</a> | <a href="../fr/alternative_enketo.html">Lire en français</a> | <a href="../ar/alternative_enketo.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/347a1280aadb22c9aebf88650fd6efa1bcadbcdf/source/alternative_enketo.md" class="reference">24 Sep 2025</a>
 
 Los formularios web de Enketo se pueden personalizar en la forma en que se presentan tus preguntas.

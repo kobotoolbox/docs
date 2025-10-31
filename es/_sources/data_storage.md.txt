@@ -1,5 +1,4 @@
 # Almacenamiento de datos
-<a href="../data_storage.html">Read in English</a> | <a href="../fr/data_storage.html">Lire en français</a> | <a href="../ar/data_storage.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/592a15ee470fa144eeac9850c6b6a648c4755306/source/data_storage.md" class="reference">11 Sep 2023</a>
 
 Ya sea que estés usando el [Servidor Global](https://kf.kobotoolbox.org/) o el

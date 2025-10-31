@@ -1,5 +1,4 @@
 # Tipo de pregunta Reconocimiento
-<a href="../acknowledge.html">Read in English</a> | <a href="../fr/acknowledge.html">Lire en français</a> | <a href="../ar/acknowledge.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/cbfd264f05913df75ec184d5d9eb002f6e66f905/source/acknowledge.md" class="reference">17 jul 2025</a>
 
 El tipo de pregunta "Reconocimiento" muestra una sola opción, para seleccionar "OK" en el

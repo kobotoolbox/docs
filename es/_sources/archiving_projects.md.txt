@@ -1,5 +1,4 @@
 # Archivar y desarchivar proyectos
-<a href="../archiving_projects.html">Read in English</a> | <a href="../fr/archiving_projects.html">Lire en français</a> | <a href="../ar/archiving_projects.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/102fcd123671942ecf7c20504874a5c78d068e9d/source/archiving_projects.md" class="reference">26 jul 2020</a>
 
 **Este artículo describe el propósito y el proceso de archivar y desarchivar un proyecto**

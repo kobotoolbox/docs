@@ -1,5 +1,4 @@
 # Configuración del formulario y metadatos
-<a href="../form_meta.html">Read in English</a> | <a href="../fr/form_meta.html">Lire en français</a> | <a href="../ar/form_meta.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/86f7750dca7b9470d220501253fb365b38924706/source/form_meta.md" class="reference">24 Sep 2025</a>
 
 En el editor de formularios, hay una serie de configuraciones opcionales que puedes establecer para tu proyecto. Puedes acceder a estas haciendo clic en el botón **Diseño y Configuración**.

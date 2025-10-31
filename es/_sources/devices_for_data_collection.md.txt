@@ -1,5 +1,4 @@
 # Dispositivos recomendados para la recolección de datos
-<a href="../devices_for_data_collection.html">Read in English</a> | <a href="../fr/devices_for_data_collection.html">Lire en français</a> | <a href="../ar/devices_for_data_collection.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/a19866f2bcf05d3646beb9350085d33adfe39f89/source/devices_for_data_collection.md" class="reference">24 Sep 2025</a>
 
 KoboCollect puede ejecutarse en cualquier dispositivo Android, ya sea tableta o teléfono, siempre y cuando ejecuten Android 2.1 (que fue lanzado en enero de 2010) o superior. Los formularios web se ejecutarán en cualquier dispositivo, incluyendo dispositivos Apple iOS y computadoras portátiles. Este artículo trata sobre cómo elegir el dispositivo móvil adecuado para la recolección de datos en campo y se aplica tanto a dispositivos Android como a dispositivos que no son Android.

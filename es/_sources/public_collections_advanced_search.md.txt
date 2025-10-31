@@ -1,5 +1,4 @@
 # Búsqueda Avanzada en Colecciones Públicas
-<a href="../public_collections_advanced_search.html">Read in English</a> | <a href="../fr/public_collections_advanced_search.html">Lire en français</a> | <a href="../ar/public_collections_advanced_search.html">اقرأ باللغة العربية</a>
 
 **Última actualización:**
 <a href="https://github.com/kobotoolbox/docs/blob/a6ae76d4d566c1139914f03ba8452fdbf122cf11/source/public_collections_advanced_search.md" class="reference">4

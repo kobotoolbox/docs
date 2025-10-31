@@ -1,7 +1,6 @@
 # Deleting a Project
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/delete_project.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/delete_project.md" class="reference">31 Oct 2025</a>
 
-<a href="es/delete_project.html">Leer en español</a> | <a href="fr/delete_project.html">Lire en français</a> | <a href="ar/delete_project.html">اقرأ باللغة العربية</a>
 
 There are two ways to delete a project and all of its data from your account.
 Please note that once a project has been deleted, **THE ACTION CANNOT BE

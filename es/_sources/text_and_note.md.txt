@@ -1,5 +1,4 @@
 # Tipos de preguntas Texto y Nota
-<a href="../text_and_note.html">Read in English</a> | <a href="../fr/text_and_note.html">Lire en français</a> | <a href="../ar/text_and_note.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/4d3ba5b4639335723af5b5a376159a536c904323/source/text_and_note.md" class="reference">9 de mayo de 2022</a>
 
 El tipo de pregunta "Texto" se utiliza mejor para preguntas que requieren respuestas indefinidas o abiertas, como nombres, comentarios, explicaciones o descripciones.

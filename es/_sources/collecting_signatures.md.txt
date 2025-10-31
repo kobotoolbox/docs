@@ -1,5 +1,4 @@
 # Tipo de pregunta de firma
-<a href="../collecting_signatures.html">Read in English</a> | <a href="../fr/collecting_signatures.html">Lire en français</a> | <a href="../ar/collecting_signatures.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/collecting_signatures.md" class="reference">29 Jul 2025</a>
 
 Algunos formularios pueden requerir que se incluyan firmas con ellos. Puedes usar

@@ -1,5 +1,4 @@
 # Crear números de serie únicos en formularios
-<a href="../unique_serial_numbers.html">Read in English</a> | <a href="../fr/unique_serial_numbers.html">Lire en français</a> | <a href="../ar/unique_serial_numbers.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/unique_serial_numbers.md" class="reference">29 Jul 2025</a>
 
 Hay ocasiones en las que puedes querer generar un número de serie único para cada

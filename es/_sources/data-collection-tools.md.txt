@@ -1,5 +1,4 @@
 # Descripción general de las herramientas de recolección de datos
-<a href="../data-collection-tools.html">Read in English</a> | <a href="../fr/data-collection-tools.html">Lire en français</a> | <a href="../ar/data-collection-tools.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/53c2e7dae53b8450c51194fb49c7d915fe735012/source/data-collection-tools.md" class="reference">11 Sep 2025</a>
 
 KoboToolbox permite la recolección de datos de múltiples maneras. Debido a que KoboToolbox está

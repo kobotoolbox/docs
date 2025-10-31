@@ -1,5 +1,4 @@
 # Análisis Cualitativo de Respuestas de Audio
-<a href="../qualitative_analysis.html">Read in English</a> | <a href="../fr/qualitative_analysis.html">Lire en français</a> | <a href="../ar/qualitative_analysis.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/qualitative_analysis.md" class="reference">3 de mayo de 2024</a>
 
 El análisis cualitativo puede ser crucial para la investigación y la respuesta a emergencias, ofreciendo información detallada que a menudo se pasa por alto en la recolección de datos cuantitativos. Las herramientas de análisis cualitativo de KoboToolbox ayudan a los/as usuarios/as a procesar y comprender de manera eficiente información compleja de respuestas de audio abiertas. Usando las funcionalidades de análisis cualitativo, puedes agregar nuevos campos de datos para resumir, categorizar y describir respuestas de audio.

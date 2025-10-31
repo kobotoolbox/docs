@@ -1,5 +1,4 @@
 # Tipos de preguntas de Número, Decimal y Rango
-<a href="../number_decimal_range.html">Read in English</a> | <a href="../fr/number_decimal_range.html">Lire en français</a> | <a href="../ar/number_decimal_range.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/ddc7265c83c14464689447dd16d7ddde9a084f75/source/number_decimal_range.md" class="reference">2 de abril de 2025</a>
 
 Al crear preguntas con respuestas numéricas, puedes elegir entre los tipos de preguntas "Número", "Decimal" y "Rango" en KoboToolbox.

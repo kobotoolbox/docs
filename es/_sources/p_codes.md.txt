@@ -1,5 +1,4 @@
 # Incluir códigos P en los datos de salida
-<a href="../p_codes.html">Read in English</a> | <a href="../fr/p_codes.html">Lire en français</a> | <a href="../ar/p_codes.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/p_codes.md" class="reference">29 Jul 2025</a>
 
 Si utilizas listas en cascada, por favor [sigue las instrucciones](cascading_select.md)

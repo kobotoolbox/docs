@@ -1,5 +1,4 @@
 # Lista de Tipos de Preguntas
-<a href="../question_types.html">Read in English</a> | <a href="../fr/question_types.html">Lire en français</a> | <a href="../ar/question_types.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/3993133bcf0aafda0b0978709534175cb583e049/source/question_types.md" class="reference">28 Oct 2024</a>
 
 La siguiente tabla proporciona un resumen de alto nivel de cada uno de los tipos de respuesta

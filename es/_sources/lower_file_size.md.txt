@@ -1,5 +1,4 @@
 # Reducir el tamaño de archivo de los medios recolectados
-<a href="../lower_file_size.html">Read in English</a> | <a href="../fr/lower_file_size.html">Lire en français</a> | <a href="../ar/lower_file_size.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/lower_file_size.md" class="reference">15 Feb 2022</a>
 
 Cuando tu formulario recolecta más de una imagen o estás recolectando decenas de

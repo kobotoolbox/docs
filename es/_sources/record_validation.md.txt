@@ -1,5 +1,4 @@
 # Validación de registros
-<a href="../record_validation.html">Read in English</a> | <a href="../fr/record_validation.html">Lire en français</a> | <a href="../ar/record_validation.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/d5cdd698b4a91c3c45216f5a0f91ff7f0704a495/source/record_validation.md" class="reference">19 Jun 2020</a>
 
 Un/a propietario/a de proyecto ahora puede otorgar un permiso de "Puede validar" a otros/as usuarios/as. Los/as usuarios/as con este permiso pueden ver un registro, editarlo si es necesario y asignar un estado al registro en cuestión. Asignar un estado a un registro/envío en particular eleva los estándares de recolección de datos para equipos con más de un/a encuestador/a.

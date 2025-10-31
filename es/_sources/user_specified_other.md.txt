@@ -1,5 +1,4 @@
 # Respuestas "Otro" especificadas por el/la usuario/a para preguntas de opción múltiple
-<a href="../user_specified_other.html">Read in English</a> | <a href="../fr/user_specified_other.html">Lire en français</a> | <a href="../ar/user_specified_other.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/user_specified_other.md" class="reference">15 Feb 2022</a>
 
 Crear respuestas "Otro" especificadas por el/la usuario/a para preguntas de opción múltiple en un solo paso es una funcionalidad que actualmente se encuentra en la hoja de ruta de desarrollo de KoboToolbox. Mientras tanto, aquí te mostramos cómo crearlas manualmente en tu formulario usando lógica de salto.
