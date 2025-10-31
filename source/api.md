@@ -1,5 +1,5 @@
 # Getting started with the API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/api.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/24c740499cf305ed0e9bece1dde237b9b23a05c0/source/api.md" class="reference">15 Sep 2025</a>
 
 
 An **Application Programming Interface (API)** allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.

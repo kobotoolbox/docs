@@ -1,5 +1,5 @@
 # Article title
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/article_template.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2afa3a0c670fe98b296a79b798f33abf248d0273/source/article_template.md" class="reference">6 Sep 2025</a>
 
 
 This is where your intro goes. Note above that the "Last updated" code will be automatically updated with the correct article name and date when you publish, so not manual change is needed. Remember to name this file according to the article title, and end the file name with `.md`.

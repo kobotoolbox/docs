@@ -1,5 +1,5 @@
 # Using Public Collections
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/using_public_collections.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8f6b969a2b7812779940875ace1100d741729d70/source/using_public_collections.md" class="reference">11 Sep 2023</a>
 
 
 Obtaining the right information often depends on asking the right questions.

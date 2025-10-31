@@ -1,5 +1,5 @@
 # Resetting Passwords
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/reset_password.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/855616c6ac4634f2dc835438697aab6869c7f11a/source/reset_password.md" class="reference">22 Sep 2023</a>
 
 
 If you have forgotten or lost your account password, KoboToolbox allows you to

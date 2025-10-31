@@ -1,5 +1,5 @@
 # Number, Decimal, and Range Question Types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/number_decimal_range.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ddc7265c83c14464689447dd16d7ddde9a084f75/source/number_decimal_range.md" class="reference">2 Apr 2025</a>
 
 
 When creating questions with numeric responses, you can choose between the

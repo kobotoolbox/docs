@@ -15,7 +15,7 @@ GLOB_PATTERN = 'source/*.md'
 COMMIT_PATTERN = (
     r'([a-z0-9]{40}),\s[\w]+,\s([0-9]{1,2}\s[\w]{3}\s[0-9]{4}).*,\s(.*)'
 )
-GIT_CMD = ['git', 'log', '-10', '--pretty=%H, %cD, %s']
+GIT_CMD = ['git', 'log', '-100', '--pretty=%H, %cD, %s']
 GIT_IGNORE_HASHES = [
     '74dc12829b7ae2ce0c6c36364c5791b9f94d489d',
     'bd2708397b2a21ea9fd7699ff0e50cbc3899ad63',
@@ -71,11 +71,12 @@ def get_text(date, link):
 
 
 def update_file(path):
-    _hash, date = get_git_data(path)
     # Only operate on markdown source files
     if not path.endswith('.md'):
         sys.stdout.write(f'Skipping non-markdown file: {path}\n')
         return
+    
+    _hash, date = get_git_data(path)
 
     # If git returned nothing suitable, skip the file instead of crashing
     if not _hash or not date:

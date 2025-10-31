@@ -1,5 +1,5 @@
 # "Select One" and "Select Many" question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/select_one_and_select_many.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0d49d3448e1794b63e051d20df2421b33f5274fc/source/select_one_and_select_many.md" class="reference">28 Mar 2022</a>
 
 
 When you have a categorical question with a list of predefined options for

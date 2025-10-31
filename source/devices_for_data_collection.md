@@ -1,5 +1,5 @@
 # Recommended Devices for Data Collection
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/devices_for_data_collection.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a19866f2bcf05d3646beb9350085d33adfe39f89/source/devices_for_data_collection.md" class="reference">24 Sep 2025</a>
 
 
 KoboCollect can run on any Android device, whether tablet or phone, as long as
