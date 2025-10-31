@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Uso de la API para exportaciones sincrónicas &#8212; documentación de KoboToolbox - </title>
+    <title>Guía de inicio rápido &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Conectar KoboToolbox a Microsoft Excel" href="pulling_data_into_excelquery.html" />
-    <link rel="prev" title="Primeros pasos con la API" href="api.html" />
+    <link rel="next" title="Crear una cuenta en KoboToolbox" href="creating_account.html" />
+    <link rel="prev" title="Introducción a KoboToolbox" href="welcome.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -95,7 +95,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="synchronous_exports">
+<div class="page page--has-sidebar " id="quick_start">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -108,86 +108,74 @@
 
         <section class="page__body" role="main">
           
-  <section id="uso-de-la-api-para-exportaciones-sincronicas">
-<h1>Uso de la API para exportaciones sincrónicas<a class="headerlink" href="#uso-de-la-api-para-exportaciones-sincronicas" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/a4e0388d846fe94926c32f6dacb82b6e34c7f102/source/synchronous_exports.md" class="reference">13 Sep 2025</a></p>
-<iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>KoboToolbox ofrece dos métodos principales para acceder a tus datos: exportaciones asincrónicas y sincrónicas. El método asincrónico estándar implica <a class="reference internal" href="export_download.html"><span class="std std-doc">descargar manualmente archivos de datos</span></a> que contienen todos los envíos hasta el momento de la descarga. En contraste, las exportaciones sincrónicas permiten la integración automática de tus datos de KoboToolbox con aplicaciones externas como Microsoft Power BI, Excel o Google Sheets.</p>
-<p>Con las exportaciones sincrónicas, tus datos se actualizan automáticamente a medida que se reciben nuevos envíos, eliminando la necesidad de actualizar manualmente. Este método proporciona un archivo CSV o XLSX, configurado con tus ajustes de exportación predefinidos, que pueden incluir etiquetas de preguntas, idiomas, filtros y datos de grupos de repetición.</p>
+  <section id="guia-de-inicio-rapido">
+<h1>Guía de inicio rápido<a class="headerlink" href="#guia-de-inicio-rapido" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/72921cfe4ac9cd4ad75c1d57664c89478f26c71a/source/quick_start.md" class="reference">30 Sep 2025</a></p>
+<p>Este artículo proporciona una guía rápida para comenzar con KoboToolbox. Explica cómo crear una cuenta, construir y desplegar un formulario, y comenzar a recolectar datos.</p>
+<iframe src="https://www.youtube.com/embed/CYJ-Ob_7Ql8?si=SDjFjZF4zQBE-thP" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<section id="crear-una-cuenta-e-iniciar-sesion">
+<h2>Crear una cuenta e iniciar sesión<a class="headerlink" href="#crear-una-cuenta-e-iniciar-sesion" title="Link to this heading">¶</a></h2>
+<p>Para comenzar, ve a la <a class="reference external" href="https://www.kobotoolbox.org/sign-up/">página de registro</a> y crea una cuenta en uno de nuestros servidores públicos. La mayoría de los/as usuarios/as se registran en nuestro <a class="reference external" href="https://kf.kobotoolbox.org/">Servidor Global</a>. Los/as usuarios/as y organizaciones que requieren o prefieren el almacenamiento de datos en la Unión Europea pueden registrarse en el <a class="reference external" href="https://eu.kobotoolbox.org/">Servidor con sede en la Unión Europea</a>.</p>
+<p>Activa tu cuenta usando el enlace enviado por correo electrónico, luego inicia sesión a través de la URL del servidor o la <a class="reference external" href="https://www.kobotoolbox.org/sign-up/">página de registro</a>.</p>
 <p class="note">
-    <strong>Nota:</strong> Este artículo se centra en las exportaciones sincrónicas, que es una de las dos formas principales de usar la API de KoboToolbox. La otra es la API JSON, diseñada para scripts personalizados y automatizaciones en tiempo real, que entrega datos JSON sin procesar, registro por registro. A diferencia de las exportaciones sincrónicas, la API JSON no incluye funcionalidades avanzadas de exportación como etiquetas de preguntas o soporte para múltiples idiomas.
+    Para obtener más información sobre cómo crear una cuenta, consulta <a href="https://support.kobotoolbox.org/creating_account.html">Crear una cuenta en KoboToolbox</a>.
 </p>
-<p>Este artículo cubre los siguientes pasos:</p>
-<ul class="simple">
-<li><p>Generar una exportación con nombre</p></li>
-<li><p>Recuperar el enlace de exportación sincrónica</p></li>
-<li><p>Conectar tus datos a una aplicación externa y autenticación</p></li>
-</ul>
-<section id="generar-una-exportacion-con-nombre">
-<h2>Generar una exportación con nombre<a class="headerlink" href="#generar-una-exportacion-con-nombre" title="Link to this heading">¶</a></h2>
-<p>Para generar exportaciones sincrónicas, primero debes crear una exportación con nombre para tu proyecto siguiendo estos pasos:</p>
+</section>
+<section id="crear-tu-primer-proyecto">
+<h2>Crear tu primer proyecto<a class="headerlink" href="#crear-tu-primer-proyecto" title="Link to this heading">¶</a></h2>
+<p>Para crear tu primer formulario:</p>
 <ol class="arabic simple">
-<li><p>En tu proyecto de KoboToolbox, navega a la ventana <strong>DATOS &gt; Descargas</strong>.</p></li>
-<li><p>Ajusta la <a class="reference internal" href="export_download.html"><span class="std std-doc">configuración de exportación</span></a> según sea necesario.</p></li>
-<li><p>Haz clic en <strong>Opciones avanzadas</strong> para <a class="reference internal" href="advanced_export.html"><span class="std std-doc">personalizar los datos</span></a> para la exportación.</p></li>
-<li><p>Elige <strong>Guardar selección como…</strong> y proporciona un nombre para tu exportación.</p></li>
-<li><p>Haz clic en <strong>Exportar</strong> para guardar esta configuración.</p></li>
+<li><p>Haz clic en <strong>NUEVO</strong>. Se te pedirá que elijas una fuente de proyecto.</p></li>
+</ol>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Opción</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Crear desde un borrador</p></td>
+<td class="text-left"><p>Construye un formulario usando el <a href="formbuilder.html" class="reference">editor de formularios de KoboToolbox (Formbuilder)</a>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Usar una plantilla</p></td>
+<td class="text-left"><p>Construye un formulario usando una plantilla de <a href="question_library.html" class="reference">La biblioteca de preguntas</a>.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Cargar XLSForm</p></td>
+<td class="text-left"><p>Carga un archivo <a href="edit_forms_excel.html" class="reference">XLSForm</a> donde hayas definido tus preguntas.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Importar un XLSForm a través de URL</p></td>
+<td class="text-left"><p>Carga un archivo XLSForm <a href="xls_url.html" class="reference">desde una fuente en línea</a> como Google Drive o Dropbox.</p></td>
+</tr>
+</tbody>
+</table>
+<ol class="arabic simple" start="2">
+<li><p>Selecciona <strong>Crear desde un borrador</strong> para crear un nuevo formulario usando el editor de formularios de KoboToolbox.</p></li>
+<li><p>En el cuadro de diálogo <strong>Detalles del proyecto</strong>, ingresa la información relevante sobre tu proyecto y luego haz clic en <strong>CREAR PROYECTO</strong>.</p></li>
 </ol>
 </section>
-<section id="recuperar-el-enlace-de-exportacion-sincronica">
-<h2>Recuperar el enlace de exportación sincrónica<a class="headerlink" href="#recuperar-el-enlace-de-exportacion-sincronica" title="Link to this heading">¶</a></h2>
-<p>Para recuperar el enlace de exportación sincrónica, necesitarás lo siguiente:</p>
-<ul class="simple">
-<li><p><strong>UID del activo del proyecto:</strong> Un ID único para cada proyecto de KoboToolbox, que se encuentra en la URL del proyecto.</p></li>
-<li><p><strong>URL del servidor:</strong> La URL del servidor que estás usando (<code class="docutils literal notranslate"><span class="pre">kf.kobotoolbox.org</span></code> para el Servidor Global, <code class="docutils literal notranslate"><span class="pre">eu.kobotoolbox.org</span></code> para el Servidor con sede en la Unión Europea, o <code class="docutils literal notranslate"><span class="pre">[tu</span> <span class="pre">organización].kobotoolbox.org</span></code> para servidores privados).</p></li>
-</ul>
-<p class="note">
-    Para obtener más información sobre cómo recuperar la URL del servidor y el UID del activo del proyecto, consulta <a href="api.html">Primeros pasos con la API</a>.
-</p>
-<p>Para recuperar el enlace de exportación, sigue estos pasos:</p>
+<section id="construir-un-formulario-usando-el-editor-de-formularios">
+<h2>Construir un formulario usando el editor de formularios<a class="headerlink" href="#construir-un-formulario-usando-el-editor-de-formularios" title="Link to this heading">¶</a></h2>
 <ol class="arabic simple">
-<li><p>Abre una nueva pestaña del navegador.</p></li>
-<li><p>Reemplaza tu <strong>URL del servidor</strong> y <strong>UID del activo del proyecto</strong> en la siguiente URL: <code class="docutils literal notranslate"><span class="pre">https://[server_url]/api/v2/assets/[project_asset_uid]/export-settings/</span></code>.</p></li>
-<li><p>Abre la página web correspondiente a la URL modificada.</p></li>
-<li><p>Desplázate hasta la sección <strong>CURRENT ENDPOINT</strong>.</p></li>
-<li><p>Encuentra la configuración de exportación que coincida con la exportación con nombre que creaste en el primer paso.</p></li>
-<li><p>Localiza los enlaces <code class="docutils literal notranslate"><span class="pre">data_url_csv</span></code> y <code class="docutils literal notranslate"><span class="pre">data_url_xlsx</span></code>, que son los enlaces de exportación sincrónica de tu proyecto.</p></li>
-<li><p>Copia el enlace que mejor se adapte a tus necesidades (archivo CSV o XLSX).</p></li>
+<li><p>Una vez en el editor de formularios, haz clic en el botón <i class="k-icon-plus"></i> para agregar tu primera pregunta. Ingresa la etiqueta de la pregunta y elige un <a class="reference internal" href="question_types.html"><span class="std std-doc">tipo de pregunta</span></a>.</p></li>
+<li><p>Para especificar los parámetros de la pregunta, haz clic en el ícono <i class="k-icon-settings"></i> <strong>Ajustes</strong>. Por ejemplo, puedes hacer que una pregunta sea obligatoria, cambiar su apariencia o agregar condiciones de <a class="reference internal" href="skip_logic.html"><span class="std std-doc">lógica de salto</span></a>.</p></li>
+<li><p>Haz clic en <i class="k-icon-view"></i> <strong>Vista previa del formulario</strong> para ver y probar tu formulario.</p></li>
+<li><p>Para guardar el formulario, haz clic en <strong>Guardar</strong> en la esquina superior derecha, luego haz clic en <i class="k-icon-close"></i> para cerrar el formulario.</p></li>
 </ol>
-<p><img alt="Recuperar enlace de exportación sincrónica" src="_images/export_link.png" /></p>
 <p class="note">
-    <strong>Nota:</strong> Los grupos de repetición se exportan como hojas separadas en archivos de Excel y no se incluyen en las exportaciones CSV. Si tu proyecto contiene grupos de repetición, usa el enlace <code>data_url_xlsx</code>.
+    Para aprender más sobre el uso del editor de formularios, consulta <a href="https://support.kobotoolbox.org/formbuilder.html">Comenzar con el editor de formularios de KoboToolbox</a> y <a href="https://support.kobotoolbox.org/question_options.html">Usar las opciones de pregunta</a>.
 </p>
 </section>
-<section id="conectar-tus-datos-a-una-aplicacion-externa">
-<h2>Conectar tus datos a una aplicación externa<a class="headerlink" href="#conectar-tus-datos-a-una-aplicacion-externa" title="Link to this heading">¶</a></h2>
-<p>Después de recuperar el enlace de exportación sincrónica, puedes conectar tus datos a tu aplicación externa preferida. El método para integrar el enlace de exportación sincrónica variará según la aplicación.</p>
+<section id="desplegar-tu-formulario-para-la-recoleccion-de-datos">
+<h2>Desplegar tu formulario para la recolección de datos<a class="headerlink" href="#desplegar-tu-formulario-para-la-recoleccion-de-datos" title="Link to this heading">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Para comenzar a recolectar datos, haz clic en <strong>DESPLEGAR</strong> en la página <strong>FORMULARIO</strong> para <a class="reference internal" href="deploy_form_new_project.html"><span class="std std-doc">desplegar tu formulario Borrador</span></a> como un nuevo proyecto de recolección de datos.</p></li>
+<li><p>En <strong>Recolectar datos</strong>, haz clic en <strong>Copiar</strong> para compartir el enlace del formulario para la entrada de datos <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">desde un navegador</span></a> en cualquier dispositivo (computadora, iPhone, Android).</p></li>
+<li><p>Alternativamente, descarga y configura la aplicación de Android <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">KoboCollect</span></a> para la recolección de datos móvil.</p></li>
+</ol>
 <p class="note">
-    Para aprender cómo conectar tus datos a Power BI para crear paneles personalizados, consulta <a href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a>. 
-    <br><br>
-    Para aprender cómo conectar tus datos a Microsoft Excel, consulta <a href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a>.
+    <strong>Nota:</strong> Para <a href="project_sharing_settings.html">compartir tu formulario</a> con cualquier persona que tenga la URL del formulario, habilita "Permitir envíos a este formulario sin nombre de usuario/a y contraseña" en la página <strong>FORMULARIO</strong>, en <strong>Recolectar datos</strong>.
 </p>
-<section id="autenticacion">
-<h3>Autenticación<a class="headerlink" href="#autenticacion" title="Link to this heading">¶</a></h3>
-<p>Muchas aplicaciones externas pueden conectarse a tus datos de KoboToolbox. Sin embargo, no todas admiten <strong>solicitudes autenticadas</strong>, que son solicitudes que llevan credenciales (por ejemplo, la clave API o nombre de usuario/a y contraseña) para que el servidor pueda verificar la identidad del/de la solicitante. Si la aplicación externa no admite solicitudes autenticadas, solo podrá acceder a recursos que se hayan hecho <strong>públicamente accesibles</strong> a través de un enlace de exportación anónimo.</p>
-<p>Para conectar tu proyecto sin autenticación (por ejemplo, a Google Sheets), deberás asegurarte de que la opción «Cualquiera puede ver los envíos realizados a este formulario» esté marcada en <strong>CONFIGURACIÓN &gt; Compartir</strong>.</p>
-<p class="note">
-    Para obtener más información sobre cómo compartir proyectos, consulta <a href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a>.
-</p>
-<p>Para proyectos con datos sensibles o privados, la opción «Cualquiera puede ver los envíos realizados a este formulario» debe permanecer sin marcar. En estos casos, considera usar solo aplicaciones que admitan solicitudes autenticadas.</p>
-<p>Cuando uses aplicaciones que admiten solicitudes autenticadas, como Power BI, se te pedirá autenticación básica con tu nombre de usuario/a y contraseña o un token (también llamado clave API) para acceder a los datos. Tu clave API se encuentra en tu <strong>CONFIGURACIÓN DE CUENTA</strong> en la pestaña <strong>Seguridad</strong>.</p>
-<p class="note">
-    Para obtener más información sobre la clave API, consulta <a href="api.html">Primeros pasos con la API</a>.
-</p>
-</section>
-</section>
-<section id="limitaciones">
-<h2>Limitaciones<a class="headerlink" href="#limitaciones" title="Link to this heading">¶</a></h2>
-<p>Para mantener la confiabilidad del servidor, las exportaciones sincrónicas tienen las siguientes limitaciones:</p>
-<ul class="simple">
-<li><p><strong>Intervalo de actualización de datos:</strong> Los datos en las exportaciones sincrónicas se actualizan cada 5 minutos. Las solicitudes de exportación realizadas dentro de esta ventana de 5 minutos no incluirán los datos de nuevos envíos recibidos dentro del intervalo de 5 minutos.</p></li>
-<li><p><strong>Tiempo de finalización de exportación:</strong> Las exportaciones deben completarse en 120 segundos. Los proyectos con un gran número de envíos o preguntas pueden fallar. Para evitar esto, agrega una restricción de consulta en la configuración de exportación para limitar los envíos o filtrar preguntas innecesarias. Consulta esta <a class="reference external" href="https://community.kobotoolbox.org/t/how-to-download-data-between-two-dates-from-date-to-date/25569/4">publicación del Foro de la comunidad</a> para obtener orientación.</p></li>
-</ul>
+<p>Una vez que hayas recolectado datos, puedes verlos, editarlos y descargarlos desde la página <strong>DATOS</strong> de tu proyecto. Para aprender más sobre el manejo de tus datos, consulta la sección de soporte <a class="reference external" href="https://support.kobotoolbox.org/managing-projects.html">Manejo de proyectos y datos</a>.</p>
 </section>
 </section>
 
@@ -207,7 +195,7 @@
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Uso de la API para exportaciones sincrónicas"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Guía de inicio rápido"
               class="feedback-button"
               target="_blank"
             >
@@ -221,9 +209,15 @@
 
 <div class="sidebar_tocs">
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Guía de inicio rápido</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#crear-una-cuenta-e-iniciar-sesion">Crear una cuenta e iniciar sesión</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#crear-tu-primer-proyecto">Crear tu primer proyecto</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#construir-un-formulario-usando-el-editor-de-formularios">Construir un formulario usando el editor de formularios</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#desplegar-tu-formulario-para-la-recoleccion-de-datos">Desplegar tu formulario para la recolección de datos</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
@@ -327,15 +321,9 @@
 <li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Uso de la API para exportaciones sincrónicas</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#generar-una-exportacion-con-nombre">Generar una exportación con nombre</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#recuperar-el-enlace-de-exportacion-sincronica">Recuperar el enlace de exportación sincrónica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#conectar-tus-datos-a-una-aplicacion-externa">Conectar tus datos a una aplicación externa</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#limitaciones">Limitaciones</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
 <li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
@@ -426,9 +414,9 @@
 
   <script>
     window.docs = {
-      currentPagename: "synchronous_exports",
-      currentTitle: "Uso de la API para exportaciones sincrónicas",
-      currentUrl: ("index.html").replace("index.html", "synchronous_exports.html"),
+      currentPagename: "quick_start",
+      currentTitle: "Guía de inicio rápido",
+      currentUrl: ("index.html").replace("index.html", "quick_start.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
     };
