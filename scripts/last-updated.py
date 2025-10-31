@@ -25,7 +25,7 @@ GIT_IGNORE_HASHES = [
     '9a0c5d15e0df2e44e1583add28ca880be7a7014e',
     '01270a828ec846731411368326ba58114adda98e',
     '0050a936217ec4b5b9cf44a66826778898ed29d5',
-    'c8c238efa59b04f403f13c150b018e1807c66d5c'
+    'c8c238efa59b04f403f13c150b018e1807c66d5c',
 ]
 GIT_IGNORE_MSG = 'last updated'
 RECENTLY_UPDATED_FILE = 'source/recently_updated.md'
