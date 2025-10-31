@@ -15,7 +15,7 @@ GLOB_PATTERN = 'source/*.md'
 COMMIT_PATTERN = (
     r'([a-z0-9]{40}),\s[\w]+,\s([0-9]{1,2}\s[\w]{3}\s[0-9]{4}).*,\s(.*)'
 )
-GIT_CMD = ['git', 'log', '-10', '--oneline', '--pretty="%H, %cD, %s"']
+GIT_CMD = ['git', 'log', '-10', '--pretty=%H, %cD, %s']
 GIT_IGNORE_HASHES = [
     '74dc12829b7ae2ce0c6c36364c5791b9f94d489d',
     'bd2708397b2a21ea9fd7699ff0e50cbc3899ad63',
@@ -42,20 +42,28 @@ def get_link(_hash, path):
 
 
 def get_git_data(path):
-    stdout = (
-        subprocess.run(GIT_CMD + [path], capture_output=True)
-        .stdout.decode()
-        .split('\n')[:-1]
-    )
+    # Run git and get output lines. Use splitlines() to be robust.
+    proc = subprocess.run(GIT_CMD + [path], capture_output=True)
+    stdout = proc.stdout.decode().splitlines()
 
-    def _get_hash_and_date(items):
-        _hash, date, msg = re.search(COMMIT_PATTERN, items[0]).groups()
-        if any(
-            _hash.startswith(h) for h in GIT_IGNORE_HASHES
-        ) or msg.startswith(GIT_IGNORE_MSG):
-            return _get_hash_and_date(items[1:])
+    # Iterate lines instead of recursive calls. Be defensive: strip quotes
+    # (the pretty format used to include quotes in some environments) and
+    # skip empty or non-matching lines.
+    for line in stdout:
+        if not line or not line.strip():
+            continue
+        # Remove surrounding double-quotes if present
+        line = line.strip().strip('"')
+        m = re.search(COMMIT_PATTERN, line)
+        if not m:
+            continue
+        _hash, date, msg = m.groups()
+        if any(_hash.startswith(h) for h in GIT_IGNORE_HASHES) or msg.startswith(GIT_IGNORE_MSG):
+            continue
         return _hash, date
-    return _get_hash_and_date(stdout)
+
+    # If nothing matched, return (None, None) so caller can skip updating.
+    return None, None
 
 
 def get_text(date, link):
@@ -64,6 +72,15 @@ def get_text(date, link):
 
 def update_file(path):
     _hash, date = get_git_data(path)
+    # Only operate on markdown source files
+    if not path.endswith('.md'):
+        sys.stdout.write(f'Skipping non-markdown file: {path}\n')
+        return
+
+    # If git returned nothing suitable, skip the file instead of crashing
+    if not _hash or not date:
+        sys.stdout.write(f'No git data for {path}, skipping\n')
+        return
 
     files_by_date.append(
         {
@@ -134,6 +151,10 @@ def main():
     path = args.file_path
     if path:
         if not os.path.exists(path):
+            os.sys.exit()
+        # ensure we only handle markdown files when a single file is passed
+        if not path.endswith('.md'):
+            sys.stdout.write(f'Skipping non-markdown file: {path}\n')
             os.sys.exit()
         update_file(path)
     else:
