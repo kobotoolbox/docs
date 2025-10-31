@@ -1,5 +1,4 @@
 # Recolectar datos sin conexión
-<a href="../data-offline.html">Read in English</a> | <a href="../fr/data-offline.html">Lire en français</a> | <a href="../ar/data-offline.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/7a8a18d56ea285b4b87535e367b407c1b7f54afc/source/data-offline.md" class="reference">24 Sep 2025</a>
 
 **Toda la recolección de datos puede realizarse sin conexión, tanto con KoboCollect como con formularios web.**

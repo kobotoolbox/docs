@@ -1,5 +1,4 @@
 # تخزين البيانات
-<a href="../data_storage.html">Read in English</a> | <a href="../fr/data_storage.html">Lire en français</a> | <a href="../es/data_storage.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/592a15ee470fa144eeac9850c6b6a648c4755306/source/data_storage.md" class="reference">11 سبتمبر 2023</a>
 
 سواء كنت تستخدم [الخادم العالمي لـ KoboToolbox](https://kf.kobotoolbox.org/) أو

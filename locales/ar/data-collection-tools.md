@@ -1,5 +1,4 @@
 # نظرة عامة على أدوات جمع البيانات
-<a href="../data-collection-tools.html">Read in English</a> | <a href="../fr/data-collection-tools.html">Lire en français</a> | <a href="../es/data-collection-tools.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/53c2e7dae53b8450c51194fb49c7d915fe735012/source/data-collection-tools.md" class="reference">11 سبتمبر 2025</a>
 
 يتيح KoboToolbox جمع البيانات بطرق متعددة. نظرًا لأن KoboToolbox مبني على [معايير Xform/ODK](https://xlsform.org)، فإن نماذجنا متوافقة مع [عدد من الأدوات المختلفة](https://xlsform.org/en/#tools-that-support-xlsforms) التي يمكن استخدامها لجمع البيانات.

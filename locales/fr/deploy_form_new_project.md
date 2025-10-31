@@ -1,5 +1,4 @@
 # Déployer un formulaire pour démarrer un nouveau projet de collecte de données
-<a href="../deploy_form_new_project.html">Read in English</a> | <a href="../es/deploy_form_new_project.html">Leer en español</a> | <a href="../ar/deploy_form_new_project.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/a14700f771e43d4c8576ee8081f23d197cdd5110/source/deploy_form_new_project.md" class="reference">24 Sep 2025</a>
 
 Une fois que vous êtes prêt·e à commencer ou à tester votre collecte de données pour un

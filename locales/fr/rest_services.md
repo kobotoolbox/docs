@@ -1,5 +1,4 @@
 # Services REST
-<a href="../rest_services.html">Read in English</a> | <a href="../es/rest_services.html">Leer en español</a> | <a href="../ar/rest_services.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/7ca46b8455887292b012aeb709e7e244245bf6b9/source/rest_services.md" class="reference">7 juil. 2023</a>
 
 **Comment lier vos données à d'autres serveurs ou services à l'aide des Services REST**

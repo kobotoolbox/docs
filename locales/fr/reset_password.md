@@ -1,5 +1,4 @@
 # Réinitialisation des mots de passe
-<a href="../reset_password.html">Read in English</a> | <a href="../es/reset_password.html">Leer en español</a> | <a href="../ar/reset_password.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/855616c6ac4634f2dc835438697aab6869c7f11a/source/reset_password.md" class="reference">22 Sep 2023</a>
 
 Si vous avez oublié ou perdu le mot de passe de votre compte, KoboToolbox vous permet de le réinitialiser facilement.

@@ -1,5 +1,4 @@
 # مقدمة إلى KoboToolbox
-<a href="../welcome.html">Read in English</a> | <a href="../fr/welcome.html">Lire en français</a> | <a href="../es/welcome.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/6b49e25820efe5bf632a3eabc9f1cdea33fda532/source/welcome.md" class="reference">15 أكتوبر 2025</a>
 
 KoboToolbox هي منصة مبتكرة مفتوحة المصدر لجمع البيانات وإدارتها وتصويرها بصرياً. وهي أداة البيانات الأكثر استخداماً على نطاق واسع لمبادرات الأثر الاجتماعي في جميع أنحاء العالم.

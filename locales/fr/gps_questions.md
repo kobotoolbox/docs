@@ -1,5 +1,4 @@
 # Types de questions GPS
-<a href="../gps_questions.html">Read in English</a> | <a href="../es/gps_questions.html">Leer en español</a> | <a href="../ar/gps_questions.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/27e85949b3f42b42dcb60701fbfc80aadddbb616/source/gps_questions.md" class="reference">30 juil. 2022</a>
 
 Dans KoboToolbox, vous pouvez collecter des coordonnées GPS dans le cadre de votre formulaire de collecte de données. Vous pouvez utiliser 3 types de questions GPS, à savoir « Point », « Ligne » et « Zone ».

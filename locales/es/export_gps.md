@@ -1,5 +1,4 @@
 # Mapeo, Compartir y Exportar Datos GPS
-<a href="../export_gps.html">Read in English</a> | <a href="../fr/export_gps.html">Lire en français</a> | <a href="../ar/export_gps.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/export_gps.md" class="reference">15 Feb 2022</a>
 
 Tu proyecto puede incluir una o más preguntas GPS en su formulario. KoboToolbox

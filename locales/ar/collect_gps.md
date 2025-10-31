@@ -1,5 +1,4 @@
 # جمع المواقع الجغرافية بنظام GPS
-<a href="../collect_gps.html">Read in English</a> | <a href="../fr/collect_gps.html">Lire en français</a> | <a href="../es/collect_gps.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/collect_gps.md" class="reference">29 يوليو 2025</a>
 
 يمكن جمع الإحداثيات الجغرافية بسهولة في جميع النماذج باستخدام أنواع الاستجابة 'GPS'.

@@ -1,5 +1,4 @@
 # Agregar un logotipo personalizado
-<a href="../add_logo.html">Read in English</a> | <a href="../fr/add_logo.html">Lire en français</a> | <a href="../ar/add_logo.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/add_logo.md" class="reference">29 Jul 2025</a>
 
 Agregar un logotipo personalizado en la parte superior de tu formulario es un proceso simple y principalmente

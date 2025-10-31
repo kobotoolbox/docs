@@ -1,5 +1,4 @@
 # إضافة منطق التخطي إلى سؤال المصفوفة
-<a href="../adding_skip_to_matrix.html">Read in English</a> | <a href="../fr/adding_skip_to_matrix.html">Lire en français</a> | <a href="../es/adding_skip_to_matrix.html">Leer en español</a>
 
 **آخر تحديث:**
 <a href="https://github.com/kobotoolbox/docs/blob/83d9dadfcc132d75f99e2705f77c425c2fee6d70/source/adding_skip_to_matrix.md" class="reference">11

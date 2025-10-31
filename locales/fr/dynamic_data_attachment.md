@@ -1,5 +1,4 @@
 # Pièces jointes de données dynamiques
-<a href="../dynamic_data_attachment.html">Read in English</a> | <a href="../es/dynamic_data_attachment.html">Leer en español</a> | <a href="../ar/dynamic_data_attachment.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/0c4cbe231491ab3ee9bd1e3a82967d30ac63e2c6/source/dynamic_data_attachment.md" class="reference">15 oct. 2025</a>
 
 La liaison dynamique vous permet d'utiliser les données d'un **projet parent** dans des **projets enfants**, simplifiant ainsi la gestion de la collecte de données longitudinales. Cet article explique comment lier dynamiquement des données entre des projets KoboToolbox.

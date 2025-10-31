@@ -1,5 +1,4 @@
 # Aperçu des outils de collecte de données
-<a href="../data-collection-tools.html">Read in English</a> | <a href="../es/data-collection-tools.html">Leer en español</a> | <a href="../ar/data-collection-tools.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/53c2e7dae53b8450c51194fb49c7d915fe735012/source/data-collection-tools.md" class="reference">11 Sep 2025</a>
 
 KoboToolbox permet la collecte de données de plusieurs façons. Parce que KoboToolbox est

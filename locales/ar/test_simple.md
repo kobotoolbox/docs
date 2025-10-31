@@ -1,5 +1,4 @@
 # البدء في جمع البيانات
-<a href="../test_simple.html">Read in English</a> | <a href="../fr/test_simple.html">Lire en français</a> | <a href="../es/test_simple.html">Leer en español</a>
 
 جمع البيانات جزء أساسي من أي مشروع بحثي أو استطلاعي. سيساعدك هذا الدليل على فهم أساسيات KoboToolbox.
 

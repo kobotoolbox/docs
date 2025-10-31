@@ -1,5 +1,4 @@
 # إدارة بيانات المجموعات المتكررة
-<a href="../managing_repeat_groups.html">Read in English</a> | <a href="../fr/managing_repeat_groups.html">Lire en français</a> | <a href="../es/managing_repeat_groups.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/cb137e68b19147fcd0331a6f7919f5563dcebeca/source/managing_repeat_groups.md" class="reference">21 أغسطس 2025</a>
 
 يتيح لك KoboToolbox جمع البيانات المتكررة ضمن نموذج، على سبيل المثال، عند إجراء مسح أسري حيث يُطرح على جميع الأفراد نفس الأسئلة. يشرح هذا المقال كيفية عرض وتحرير وتصدير بيانات المجموعات المتكررة، وكيفية ربط بيانات المجموعات المتكررة بالبيانات الرئيسية.

@@ -1,5 +1,4 @@
 # عنوان المقالة
-<a href="../article_template.html">Read in English</a> | <a href="../fr/article_template.html">Lire en français</a> | <a href="../es/article_template.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/2afa3a0c670fe98b296a79b798f33abf248d0273/source/article_template.md" class="reference">6 سبتمبر 2025</a>
 
 هنا يتم وضع المقدمة. لاحظ أعلاه أن كود "آخر تحديث" سيتم تحديثه تلقائيًا باسم المقالة والتاريخ الصحيحين عند النشر، لذا لا حاجة لتغيير يدوي. تذكر تسمية هذا الملف وفقًا لعنوان المقالة، وإنهاء اسم الملف بـ `.md`.

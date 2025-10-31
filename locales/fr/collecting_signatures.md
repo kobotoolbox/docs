@@ -1,5 +1,4 @@
 # Type de question Signature
-<a href="../collecting_signatures.html">Read in English</a> | <a href="../es/collecting_signatures.html">Leer en español</a> | <a href="../ar/collecting_signatures.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/collecting_signatures.md" class="reference">29 juil. 2025</a>
 
 Certains formulaires peuvent nécessiter l'inclusion de signatures. Vous pouvez utiliser l'apparence `signature` à la fois sur l'application Android Collect et sur Enketo. Le widget de dessin n'est disponible que lors de l'utilisation d'Enketo pour la collecte de données.

@@ -1,5 +1,4 @@
 # تنزيل الصور والوسائط الأخرى
-<a href="../photo_download.html">Read in English</a> | <a href="../fr/photo_download.html">Lire en français</a> | <a href="../es/photo_download.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/photo_download.md" class="reference">29 يوليو 2025</a>
 
 إذا كان نموذجك [يتضمن](question_types.md) سؤال صورة أو فيديو أو تسجيل صوتي،

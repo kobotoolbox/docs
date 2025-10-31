@@ -1,5 +1,4 @@
 # أرشفة المشاريع وإلغاء أرشفتها
-<a href="../archiving_projects.html">Read in English</a> | <a href="../fr/archiving_projects.html">Lire en français</a> | <a href="../es/archiving_projects.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/102fcd123671942ecf7c20504874a5c78d068e9d/source/archiving_projects.md" class="reference">26 يوليو 2020</a>
 
 **يصف هذا المقال الغرض من أرشفة المشاريع وإلغاء أرشفتها وكيفية القيام بذلك**

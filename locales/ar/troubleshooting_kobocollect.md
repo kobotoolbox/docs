@@ -1,5 +1,4 @@
 # استكشاف أخطاء تطبيق KoboCollect لنظام Android وإصلاحها
-<a href="../troubleshooting_kobocollect.html">Read in English</a> | <a href="../fr/troubleshooting_kobocollect.html">Lire en français</a> | <a href="../es/troubleshooting_kobocollect.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/f6c6ac34b1fe55e7aab87f7b61c26e1607b4306b/source/troubleshooting_kobocollect.md" class="reference">24 سبتمبر 2025</a>
 
 **-- يُرجى الإبلاغ عن أي مشكلة غير مُغطاة على

@@ -1,5 +1,4 @@
 # دمج البيانات الفردية مع بيانات القوائم من خلال Power Query في Excel
-<a href="../merging_dataset_excel_power_query.html">Read in English</a> | <a href="../fr/merging_dataset_excel_power_query.html">Lire en français</a> | <a href="../es/merging_dataset_excel_power_query.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 أبريل 2022</a>
 
 كما هو موضح في مقالة الدعم،

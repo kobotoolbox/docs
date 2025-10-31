@@ -1,5 +1,4 @@
 # تقليل حجم ملف الوسائط المجمّعة
-<a href="../lower_file_size.html">Read in English</a> | <a href="../fr/lower_file_size.html">Lire en français</a> | <a href="../es/lower_file_size.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/lower_file_size.md" class="reference">15 فبراير 2022</a>
 
 عندما يجمع النموذج الخاص بك أكثر من صورة واحدة أو عندما تجمع عشرات الآلاف من السجلات، قد تواجه صعوبات في إنشاء ملف ZIP لمرفقات الوسائط إذا لم تقم بتعديل إعدادات جودة الصورة قبل بدء جمع البيانات.

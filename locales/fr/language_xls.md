@@ -1,5 +1,4 @@
 # Ajouter une autre langue à votre XLSForm
-<a href="../language_xls.html">Read in English</a> | <a href="../es/language_xls.html">Leer en español</a> | <a href="../ar/language_xls.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/language_xls.md" class="reference">29 juil. 2025</a>
 
 Il existe deux méthodes pour ajouter plusieurs langues à votre formulaire. Vous pouvez soit les ajouter et les gérer directement via le [Tableau de bord du projet](language_dashboard.md) en ligne, soit les ajouter dans un XLSForm et l'importer dans Kobo.

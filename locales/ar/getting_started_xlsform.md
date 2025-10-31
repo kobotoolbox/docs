@@ -1,5 +1,4 @@
 # البدء مع XLSForm
-<a href="../getting_started_xlsform.html">Read in English</a> | <a href="../fr/getting_started_xlsform.html">Lire en français</a> | <a href="../es/getting_started_xlsform.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/8d0c50778ae17aa78829bafa85b7bf16ef00c45c/source/getting_started_xlsform.md" class="reference">10 يونيو 2025</a>
 
 عند إنشاء نماذج الاستبيانات في KoboToolbox، يمكنك بناء النموذج باستخدام أداة إنشاء النماذج في KoboToolbox أو باستخدام XLSForm. يُعد XLSForm فعالاً جداً لإنشاء النماذج الأساسية والمتقدمة بتنسيق سهل الاستخدام.

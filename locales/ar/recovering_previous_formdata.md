@@ -1,5 +1,4 @@
 # استرداد البيانات من إصدارات النموذج السابقة
-<a href="../recovering_previous_formdata.html">Read in English</a> | <a href="../fr/recovering_previous_formdata.html">Lire en français</a> | <a href="../es/recovering_previous_formdata.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/6c4fc8e55497e4a00b39095f090a6f43eb01c37b/source/recovering_previous_formdata.md" class="reference">26 يوليو 2020</a>
 
 **يوضح هذا المقال الخطوات اللازمة لاسترداد البيانات من الإصدارات السابقة للنموذج في حالة حذف الأسئلة**

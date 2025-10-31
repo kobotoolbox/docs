@@ -1,5 +1,4 @@
 # تصدير البيانات ورفعها إلى برامج نظم المعلومات الجغرافية
-<a href="../upload_to_gis.html">Read in English</a> | <a href="../fr/upload_to_gis.html">Lire en français</a> | <a href="../es/upload_to_gis.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/upload_to_gis.md" class="reference">15 فبراير 2022</a>
 
 **عملية بسيطة خطوة بخطوة لتصدير ورفع بياناتكم كملف shapefile إلى برامج نظم المعلومات الجغرافية، مثل ArcMap.**

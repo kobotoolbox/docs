@@ -1,5 +1,4 @@
 # مرفقات البيانات الديناميكية
-<a href="../dynamic_data_attachment.html">Read in English</a> | <a href="../fr/dynamic_data_attachment.html">Lire en français</a> | <a href="../es/dynamic_data_attachment.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/0c4cbe231491ab3ee9bd1e3a82967d30ac63e2c6/source/dynamic_data_attachment.md" class="reference">15 أكتوبر 2025</a>
 
 يتيح لك الربط الديناميكي استخدام البيانات من **مشروع أساسي** داخل **مشاريع فرعية**، مما يبسط إدارة جمع البيانات الطولية. يشرح هذا المقال كيفية ربط البيانات ديناميكيًا بين مشاريع KoboToolbox.

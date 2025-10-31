@@ -1,5 +1,4 @@
 # Editar o eliminar un envío individual
-<a href="../howto_edit_single_submissions.html">Read in English</a> | <a href="../fr/howto_edit_single_submissions.html">Lire en français</a> | <a href="../ar/howto_edit_single_submissions.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/f589f03c4b5a79d431edbeaa09ac5f3141431cc4/source/howto_edit_single_submissions.md" class="reference">24 Sep 2025</a>
 
 Para editar o eliminar un cuestionario enviado, sigue los pasos a continuación.

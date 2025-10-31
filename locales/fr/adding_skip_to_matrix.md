@@ -1,5 +1,4 @@
 # Ajouter une logique de saut à une question matricielle
-<a href="../adding_skip_to_matrix.html">Read in English</a> | <a href="../es/adding_skip_to_matrix.html">Leer en español</a> | <a href="../ar/adding_skip_to_matrix.html">اقرأ باللغة العربية</a>
 
 **Dernière mise à jour :**
 <a href="https://github.com/kobotoolbox/docs/blob/83d9dadfcc132d75f99e2705f77c425c2fee6d70/source/adding_skip_to_matrix.md" class="reference">11

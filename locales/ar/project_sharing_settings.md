@@ -1,5 +1,4 @@
 # مشاركة المشاريع باستخدام إعدادات على مستوى المشروع
-<a href="../project_sharing_settings.html">Read in English</a> | <a href="../fr/project_sharing_settings.html">Lire en français</a> | <a href="../es/project_sharing_settings.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/03c0981e6da0be6aec3385dfe68b2ebb0f71b2f8/source/project_sharing_settings.md" class="reference">5 سبتمبر 2025</a>
 
 <iframe src="https://www.youtube.com/embed/vRuAan0aSfY?si=FbKeyjF9XitYdUWC" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

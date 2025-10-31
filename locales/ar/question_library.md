@@ -1,5 +1,4 @@
 # استخدام مكتبة الأسئلة
-<a href="../question_library.html">Read in English</a> | <a href="../fr/question_library.html">Lire en français</a> | <a href="../es/question_library.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/385b471fb227f28575b67a450696cc8e4f4a3779/source/question_library.md" class="reference">2 يوليو 2025</a>
 
 ## إضافة الأسئلة إلى مكتبتك

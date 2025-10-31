@@ -1,5 +1,4 @@
 # إنشاء أرقام تسلسلية فريدة في النماذج
-<a href="../unique_serial_numbers.html">Read in English</a> | <a href="../fr/unique_serial_numbers.html">Lire en français</a> | <a href="../es/unique_serial_numbers.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/unique_serial_numbers.md" class="reference">29 يوليو 2025</a>
 
 هناك أوقات قد ترغب فيها في إنشاء رقم تسلسلي فريد لكل نموذج في مشروع ما. تناقش هذه المقالة حلولاً بديلة مختلفة حول كيفية إنشاء أرقام تسلسلية فريدة باستخدام نوع السؤال `calculate`.

@@ -1,5 +1,4 @@
 # خيارات متقدمة لتصدير البيانات
-<a href="../advanced_export.html">Read in English</a> | <a href="../fr/advanced_export.html">Lire en français</a> | <a href="../es/advanced_export.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/9bc8dc162b89d329fd6161bbe168dd554df770a9/source/advanced_export.md" class="reference">6 سبتمبر 2025</a>
 
 توفر الخيارات المتقدمة مزيدًا من التحكم والمرونة عند تنزيل وتصدير بياناتك. سيرشدك هذا المقال خلال تخصيص عمليات تصدير البيانات، بدءًا من اختيار حقول البيانات والتعامل مع أنواع الأسئلة المختلفة وصولاً إلى تعيين المعاملات لاحتياجات تحليلية مختلفة.

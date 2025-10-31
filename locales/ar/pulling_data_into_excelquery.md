@@ -1,5 +1,4 @@
 # ربط KoboToolbox بـ Microsoft Excel
-<a href="../pulling_data_into_excelquery.html">Read in English</a> | <a href="../fr/pulling_data_into_excelquery.html">Lire en français</a> | <a href="../es/pulling_data_into_excelquery.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/df082614a0ae0bce8543b0c1474a9567fea7293e/source/pulling_data_into_excelquery.md" class="reference">23 آب/أغسطس 2022</a>
 
 يتيح لك KoboToolbox ربط مشروع جمع البيانات الخاص بك ببرامج خارجية

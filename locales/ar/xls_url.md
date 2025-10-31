@@ -1,5 +1,4 @@
 # استيراد XLSForm عبر رابط URL
-<a href="../xls_url.html">Read in English</a> | <a href="../fr/xls_url.html">Lire en français</a> | <a href="../es/xls_url.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/d14c3f76675d9085da27e1c5dd4fcf981a6b3a7d/source/xls_url.md" class="reference">7 يناير 2025</a>
 
 عند استيراد XLSForm عبر رابط URL، يرجى التأكد من أن الرابط يشير إلى ملف XLS مباشرةً وأنه متاح للعامة. طريقة سريعة لاختبار ذلك هي تحميل الرابط في المتصفح: يجب أن يؤدي ذلك إلى تنزيل الملف. (إذا تم تحميل صفحة في المتصفح، فهذا ليس الرابط الصحيح.)

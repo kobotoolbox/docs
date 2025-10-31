@@ -1,5 +1,4 @@
 # نوع سؤال اختيار واحد أو متعدد من ملف خارجي
-<a href="../external_file.html">Read in English</a> | <a href="../fr/external_file.html">Lire en français</a> | <a href="../es/external_file.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/87ff8377b846dacb801191e0b619126a563040a9/source/external_file.md" class="reference">28 أغسطس 2025</a>
 
 في بعض الحالات، قد يكون من المرغوب فيه استضافة قائمة خيارات الاختيار في ملف خارجي، بدلاً من وضعها مباشرة في XLSForm الخاص بالمشروع. على سبيل المثال، قد تؤدي قائمة طويلة من الخيارات (مثل مئات أو آلاف الخيارات) إلى إبطاء تحميل النموذج والتنقل فيه، أو قد يكون إضافة خيارات اختيار جديدة بعد بدء جمع البيانات أمرًا مزعجًا في بعض الأحيان.

@@ -1,5 +1,4 @@
 # إعداد المصادقة الثنائية في KoboToolbox
-<a href="../two_factor_authentication.html">Read in English</a> | <a href="../fr/two_factor_authentication.html">Lire en français</a> | <a href="../es/two_factor_authentication.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/3c86f234242bee25d3d6f91bffee5cb93d808344/source/two_factor_authentication.md" class="reference">5 سبتمبر 2025</a>
 
 <iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -1,5 +1,4 @@
 # Personalizar los ajustes de KoboCollect
-<a href="../kobocollect_settings.html">Read in English</a> | <a href="../fr/kobocollect_settings.html">Lire en français</a> | <a href="../ar/kobocollect_settings.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/5599bf9bc43c6872244104e236df84c6a6ed5f15/source/kobocollect_settings.md" class="reference">19 Sep 2025</a>
 
 <iframe src="https://www.youtube.com/embed/Qeky3aomiWI?si=M1l_jorFQEDacX2A" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -1,5 +1,4 @@
 # نوع سؤال الباركود/رمز الاستجابة السريعة
-<a href="../barcode_qrcode_questions.html">Read in English</a> | <a href="../fr/barcode_qrcode_questions.html">Lire en français</a> | <a href="../es/barcode_qrcode_questions.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/c5889af525a55f27747f919a026f9b7103f5c180/source/barcode_qrcode_questions.md" class="reference">24 سبتمبر 2025</a>
 
 يُستخدم نوع السؤال "الباركود/رمز الاستجابة السريعة" لمسح وفك تشفير والتقاط الباركود ورموز الاستجابة السريعة باستخدام كاميرا الجهاز. عند مسح الرمز بالكاميرا، يتم التقاط القيمة (سواء كانت أرقامًا أو نصًا) المخزنة في الرمز.

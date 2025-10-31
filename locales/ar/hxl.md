@@ -1,5 +1,4 @@
 # استخدام علامات HXL
-<a href="../hxl.html">Read in English</a> | <a href="../fr/hxl.html">Lire en français</a> | <a href="../es/hxl.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/hxl.md" class="reference">29 يوليو 2025</a>
 
 ## ما هي HXL بالضبط؟

@@ -1,7 +1,6 @@
 # REST Services
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/rest_services.md" class="reference">28 Oct 2025</a>
 
-<a href="es/rest_services.html">Leer en español</a> | <a href="fr/rest_services.html">Lire en français</a> | <a href="ar/rest_services.html">اقرأ باللغة العربية</a>
 
 **How to link your data to other servers or services using REST Services**
 

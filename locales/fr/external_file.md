@@ -1,5 +1,4 @@
 # Type de question Sélectionner un ou plusieurs éléments d'un fichier externe
-<a href="../external_file.html">Read in English</a> | <a href="../es/external_file.html">Leer en español</a> | <a href="../ar/external_file.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/87ff8377b846dacb801191e0b619126a563040a9/source/external_file.md" class="reference">28 août 2025</a>
 
 Dans certains cas, il peut être souhaitable d'héberger une liste d'options de choix dans un fichier externe, plutôt que directement dans le XLSForm du projet. Par exemple, une longue liste de choix (par exemple, des centaines ou des milliers) pourrait ralentir le chargement et la navigation du formulaire, ou l'ajout de nouvelles options de choix après le début de la collecte de données pourrait parfois être problématique.

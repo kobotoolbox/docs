@@ -1,5 +1,4 @@
 # استخدام ميزة إدارة الفريق
-<a href="../getting_started_organization_feature.html">Read in English</a> | <a href="../fr/getting_started_organization_feature.html">Lire en français</a> | <a href="../es/getting_started_organization_feature.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/7f800b38e7b07803e7abd456195dd5519b03240e/source/getting_started_organization_feature.md" class="reference">3 أكتوبر 2025</a>
 
 تتيح لك ميزة إدارة الفريق الجديدة مركزية إدارة المشاريع والمستخدمين لتحسين الإشراف والتعاون عبر الفرق الكبيرة والموزعة. عندما تضيف مستخدمين إلى فريقك في KoboToolbox، سيكون لديك إمكانية الوصول لعرض وإدارة مشاريعهم. سيحصل المستخدمون في فريقك على إمكانية الوصول إلى حصص استخدام خطة Teams أو Enterprise الخاصة بك، وسيتم نقل ملكية مشاريعهم إلى فريقك.

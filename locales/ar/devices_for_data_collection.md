@@ -1,5 +1,4 @@
 # الأجهزة الموصى بها لجمع البيانات
-<a href="../devices_for_data_collection.html">Read in English</a> | <a href="../fr/devices_for_data_collection.html">Lire en français</a> | <a href="../es/devices_for_data_collection.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/a19866f2bcf05d3646beb9350085d33adfe39f89/source/devices_for_data_collection.md" class="reference">24 سبتمبر 2025</a>
 
 يمكن تشغيل KoboCollect على أي جهاز Android، سواء كان جهازًا لوحيًا أو هاتفًا، طالما أنه يعمل بنظام Android 2.1 (الذي صدر في يناير 2010) أو أحدث. ستعمل النماذج الإلكترونية على أي جهاز، بما في ذلك أجهزة Apple iOS والحواسيب المحمولة. يتناول هذا المقال اختيار الجهاز المحمول المناسب لجمع البيانات الميدانية وينطبق على كل من أجهزة Android والأجهزة غير العاملة بنظام Android.

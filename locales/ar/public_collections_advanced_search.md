@@ -1,5 +1,4 @@
 # البحث المتقدم في المجموعات العامة
-<a href="../public_collections_advanced_search.html">Read in English</a> | <a href="../fr/public_collections_advanced_search.html">Lire en français</a> | <a href="../es/public_collections_advanced_search.html">Leer en español</a>
 
 **آخر تحديث:**
 <a href="https://github.com/kobotoolbox/docs/blob/a6ae76d4d566c1139914f03ba8452fdbf122cf11/source/public_collections_advanced_search.md" class="reference">4

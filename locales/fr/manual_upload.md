@@ -1,5 +1,4 @@
 # Téléverser manuellement des soumissions
-<a href="../manual_upload.html">Read in English</a> | <a href="../es/manual_upload.html">Leer en español</a> | <a href="../ar/manual_upload.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/20273bf768ef8d800b55bacef5af057845b1559d/source/manual_upload.md" class="reference">6 Sep 2023</a>
 
 <p class="note">Veuillez noter qu'il s'agit encore d'une fonctionnalité expérimentale et qu'elle ne vous empêche pas de créer des soumissions en double.</p>

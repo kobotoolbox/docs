@@ -1,5 +1,4 @@
 # Type de question Calcul
-<a href="../calculate_questions.html">Read in English</a> | <a href="../es/calculate_questions.html">Leer en español</a> | <a href="../ar/calculate_questions.html">اقرأ باللغة العربية</a>
 
 **Dernière mise à jour :**
 <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/calculate_questions.md" class="reference">15

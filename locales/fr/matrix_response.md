@@ -1,5 +1,4 @@
 # Type de réponse Matrice de questions
-<a href="../matrix_response.html">Read in English</a> | <a href="../es/matrix_response.html">Leer en español</a> | <a href="../ar/matrix_response.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/matrix_response.md" class="reference">29 juil. 2025</a>
 
 Le type de réponse Matrice de questions permet aux utilisatrices et utilisateurs de créer un groupe de questions qui s'affichent dans un format matriciel, où chaque cellule de la matrice représente une question distincte. Pour utiliser ce type de réponse, définissez le nombre de lignes et de colonnes que vous souhaitez dans votre ensemble matriciel et attribuez une étiquette ou un nom à chaque ligne et colonne. Chaque colonne peut être un type de question différent. Dans la capture d'écran ci-dessus, les deux premières colonnes sont des questions à choix unique, et la troisième colonne est une question numérique.

@@ -1,5 +1,4 @@
 # أنواع الأسئلة: الرقم، العشري، والنطاق
-<a href="../number_decimal_range.html">Read in English</a> | <a href="../fr/number_decimal_range.html">Lire en français</a> | <a href="../es/number_decimal_range.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/ddc7265c83c14464689447dd16d7ddde9a084f75/source/number_decimal_range.md" class="reference">2 أبريل 2025</a>
 
 عند إنشاء أسئلة ذات إجابات رقمية، يمكنك الاختيار بين أنواع الأسئلة "الرقم" و"العشري" و"النطاق" في KoboToolbox.

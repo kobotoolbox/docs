@@ -1,5 +1,4 @@
 # تضمين الرموز الإدارية (P-Codes) في بيانات المخرجات
-<a href="../p_codes.html">Read in English</a> | <a href="../fr/p_codes.html">Lire en français</a> | <a href="../es/p_codes.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/p_codes.md" class="reference">29 يوليو 2025</a>
 
 إذا كنت تستخدم القوائم المتتالية، يُرجى [اتباع التعليمات](cascading_select.md)

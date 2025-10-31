@@ -1,5 +1,4 @@
 # Funcionalidad de extracción de datos en KoboToolbox
-<a href="../pull_data_kobotoolbox.html">Read in English</a> | <a href="../fr/pull_data_kobotoolbox.html">Lire en français</a> | <a href="../ar/pull_data_kobotoolbox.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/202f8e0e134d0695913bf6c5d5b52449c5e61e5d/source/pull_data_kobotoolbox.md" class="reference">18 ago 2025</a>
 
 Esto se hace mejor en la versión xls del formulario.

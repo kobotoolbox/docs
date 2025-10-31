@@ -1,5 +1,4 @@
 # Tipo de respuesta Matriz de preguntas
-<a href="../matrix_response.html">Read in English</a> | <a href="../fr/matrix_response.html">Lire en français</a> | <a href="../ar/matrix_response.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/matrix_response.md" class="reference">29 Jul 2025</a>
 
 El tipo de respuesta Matriz de preguntas permite a los/as usuarios/as crear un grupo de preguntas que se muestran en formato de matriz, donde cada celda dentro de la matriz representa una pregunta separada. Para usar este tipo de respuesta, define el número de filas y columnas que deseas en tu conjunto de matriz y asigna a cada fila y columna una etiqueta o nombre. Cada columna puede ser un tipo de pregunta diferente. En la captura de pantalla anterior, las primeras dos columnas son preguntas de selección única, y la tercera columna es una pregunta numérica.

@@ -1,5 +1,4 @@
 # Paramètres et métadonnées du formulaire
-<a href="../form_meta.html">Read in English</a> | <a href="../es/form_meta.html">Leer en español</a> | <a href="../ar/form_meta.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/86f7750dca7b9470d220501253fb365b38924706/source/form_meta.md" class="reference">24 Sep 2025</a>
 
 Dans l'interface de création de formulaires, vous pouvez définir un certain nombre de configurations optionnelles pour votre projet. Vous pouvez y accéder en cliquant sur le bouton **Mise en page et paramètres**.

@@ -1,5 +1,4 @@
 # Collecte de données hors ligne
-<a href="../data-offline.html">Read in English</a> | <a href="../es/data-offline.html">Leer en español</a> | <a href="../ar/data-offline.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/7a8a18d56ea285b4b87535e367b407c1b7f54afc/source/data-offline.md" class="reference">24 Sep 2025</a>
 
 **Toute collecte de données peut avoir lieu hors ligne, à la fois avec KoboCollect et avec les formulaires Web.**

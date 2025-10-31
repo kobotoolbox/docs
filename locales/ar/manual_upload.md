@@ -1,5 +1,4 @@
 # رفع البيانات يدويًا
-<a href="../manual_upload.html">Read in English</a> | <a href="../fr/manual_upload.html">Lire en français</a> | <a href="../es/manual_upload.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/20273bf768ef8d800b55bacef5af057845b1559d/source/manual_upload.md" class="reference">6 سبتمبر 2023</a>
 
 <p class="note">يرجى ملاحظة أن هذه الميزة لا تزال تجريبية ولا تمنعك من إنشاء بيانات مكررة.</p>

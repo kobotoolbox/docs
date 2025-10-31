@@ -1,7 +1,6 @@
 # Using the Question Library
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/question_library.md" class="reference">28 Oct 2025</a>
 
-<a href="es/question_library.html">Leer en español</a> | <a href="fr/question_library.html">Lire en français</a> | <a href="ar/question_library.html">اقرأ باللغة العربية</a>
 
 ## Adding Questions to your Library
 

@@ -1,5 +1,4 @@
 # وظيفة Pull Data في KoboToolbox
-<a href="../pull_data_kobotoolbox.html">Read in English</a> | <a href="../fr/pull_data_kobotoolbox.html">Lire en français</a> | <a href="../es/pull_data_kobotoolbox.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/202f8e0e134d0695913bf6c5d5b52449c5e61e5d/source/pull_data_kobotoolbox.md" class="reference">18 أغسطس 2025</a>
 
 من الأفضل القيام بذلك على نسخة xls من النموذج.

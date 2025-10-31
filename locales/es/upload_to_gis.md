@@ -1,5 +1,4 @@
 # Exportar y cargar datos en software GIS
-<a href="../upload_to_gis.html">Read in English</a> | <a href="../fr/upload_to_gis.html">Lire en français</a> | <a href="../ar/upload_to_gis.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/upload_to_gis.md" class="reference">15 Feb 2022</a>
 
 **Proceso simple paso a paso para exportar y cargar tus datos como un shapefile en

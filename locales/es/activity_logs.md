@@ -1,5 +1,4 @@
 # Registros de actividad
-<a href="../activity_logs.html">Read in English</a> | <a href="../fr/activity_logs.html">Lire en français</a> | <a href="../ar/activity_logs.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/d6f09be2d6f022db661e2a4d9da0b962db44633e/source/activity_logs.md" class="reference">15 de mayo de 2025</a>
 
 Los registros de actividad son registros digitales que capturan acciones y eventos importantes en tu cuenta de KoboToolbox. Los registros de actividad te brindan un historial detallado del acceso a la cuenta y la actividad del proyecto.

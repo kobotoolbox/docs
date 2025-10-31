@@ -1,5 +1,4 @@
 # نوع السؤال الوصفي لتسجيل التدقيق
-<a href="../audit_logging.html">Read in English</a> | <a href="../fr/audit_logging.html">Lire en français</a> | <a href="../es/audit_logging.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/audit_logging.md" class="reference">29 يوليو 2025</a>
 
 يمكن أن يكون تسجيل التدقيق أداة مفيدة لمراقبة سلوك جامعي البيانات واكتشاف الأسئلة التي تستغرق وقتًا أطول للإجابة عليها، وفهم أفضل لكيفية تنقل جامعي البيانات في نموذج معين، ومعرفة جامعي البيانات الذين يستغرقون عمومًا فترات زمنية أطول لإرسال الإجابات.

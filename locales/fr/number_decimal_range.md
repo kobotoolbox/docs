@@ -1,5 +1,4 @@
 # Types de questions Nombre, Décimal et Plage
-<a href="../number_decimal_range.html">Read in English</a> | <a href="../es/number_decimal_range.html">Leer en español</a> | <a href="../ar/number_decimal_range.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/ddc7265c83c14464689447dd16d7ddde9a084f75/source/number_decimal_range.md" class="reference">2 avril 2025</a>
 
 Lorsque vous créez des questions avec des réponses numériques, vous pouvez choisir entre les types de questions « Nombre », « Décimal » et « Plage » dans KoboToolbox.

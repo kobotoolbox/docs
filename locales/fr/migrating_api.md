@@ -1,5 +1,4 @@
 # Migration de l'API v1 vers v2
-<a href="../migrating_api.html">Read in English</a> | <a href="../es/migrating_api.html">Leer en español</a> | <a href="../ar/migrating_api.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/7a618b1d0f3bc3dffa450c17d9e5063ca4c69770/source/migrating_api.md" class="reference">7 août 2025</a>
 
 Dans le cadre de nos efforts continus pour rationaliser et moderniser la plateforme KoboToolbox, nous supprimons progressivement les points de terminaison KPI et KoboCAT `v1`. Tous les points de terminaison KPI et KoboCAT `v1` sont désormais obsolètes et seront entièrement supprimés en janvier 2026. Les points de terminaison `v1` sont progressivement supprimés au profit de l'API KPI `v2`, plus robuste et entièrement prise en charge.

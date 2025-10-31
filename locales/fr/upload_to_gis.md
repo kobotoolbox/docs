@@ -1,5 +1,4 @@
 # Exporter et importer des données dans un logiciel SIG
-<a href="../upload_to_gis.html">Read in English</a> | <a href="../es/upload_to_gis.html">Leer en español</a> | <a href="../ar/upload_to_gis.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/upload_to_gis.md" class="reference">15 février 2022</a>
 
 **Processus simple étape par étape pour exporter et importer vos données sous forme de fichier shapefile dans un logiciel SIG, tel qu'ArcMap.**

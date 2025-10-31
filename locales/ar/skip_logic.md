@@ -1,5 +1,4 @@
 # إضافة منطق التخطي في Formbuilder
-<a href="../skip_logic.html">Read in English</a> | <a href="../fr/skip_logic.html">Lire en français</a> | <a href="../es/skip_logic.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/0d832566f7fb9d5e452c73468e52ec242eac992f/source/skip_logic.md" class="reference">30 سبتمبر 2025</a>
 
 <iframe src="https://www.youtube.com/embed/uLSnoG0mqV4?si=63o4YeQUZWOsZmfF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

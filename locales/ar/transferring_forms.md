@@ -1,5 +1,4 @@
 # نقل النماذج والبيانات يدويًا من جهاز أندرويد إلى آخر
-<a href="../transferring_forms.html">Read in English</a> | <a href="../fr/transferring_forms.html">Lire en français</a> | <a href="../es/transferring_forms.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/7def5f54e2441b05b4a2163e682bdd146fa781e1/source/transferring_forms.md" class="reference">24 سبتمبر 2025</a>
 
 قد تكون هناك أوقات تكون فيها في الميدان بدون اتصال بالإنترنت، ولكن لا تزال بحاجة إلى تحميل أحدث إصدار من النماذج (أي أحدث النماذج المنشورة على الخادم) إلى جهازك. قد تكون أيضًا غير قادر على رفع إرسالات النماذج إلى الخادم بسبب شاشة مكسورة. في كلتا الحالتين، ستحتاج إلى نقل النماذج و/أو الإرسالات يدويًا باستخدام جهاز آخر. ستوضح لك هذه المقالة الداعمة كيفية القيام بذلك.

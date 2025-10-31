@@ -1,5 +1,4 @@
 # Limites des réponses numériques et textuelles
-<a href="../number_text_responses.html">Read in English</a> | <a href="../es/number_text_responses.html">Leer en español</a> | <a href="../ar/number_text_responses.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/0c5dd6987a26369bd16e779f6ee2ad77e2243b26/source/number_text_responses.md" class="reference">21 juin 2020</a>
 
 Il existe des contraintes techniques sous-jacentes à la longueur de la réponse dans une question de type **Nombre** ou **Texte**.

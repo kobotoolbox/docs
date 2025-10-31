@@ -1,5 +1,4 @@
 # مشاركة المشاريع مع أذونات على مستوى المستخدم
-<a href="../managing_permissions.html">Read in English</a> | <a href="../fr/managing_permissions.html">Lire en français</a> | <a href="../es/managing_permissions.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/2d936225c821d33163324c6fe6093fa30da3c5fa/source/managing_permissions.md" class="reference">29 أغسطس 2025</a>
 
 <iframe src="https://www.youtube.com/embed/WnCNuxgaMoQ?si=bktZdlug2uBKUyzq" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -1,5 +1,4 @@
 # Adjuntos de datos dinámicos
-<a href="../dynamic_data_attachment.html">Read in English</a> | <a href="../fr/dynamic_data_attachment.html">Lire en français</a> | <a href="../ar/dynamic_data_attachment.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/0c4cbe231491ab3ee9bd1e3a82967d30ac63e2c6/source/dynamic_data_attachment.md" class="reference">15 Oct 2025</a>
 
 La vinculación dinámica te permite usar datos de un **proyecto principal** dentro de **proyectos secundarios**, simplificando el manejo de la recolección de datos longitudinales. Este artículo explica cómo vincular dinámicamente datos entre proyectos de KoboToolbox.

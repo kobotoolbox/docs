@@ -1,5 +1,4 @@
 # إعدادات النموذج والبيانات الوصفية
-<a href="../form_meta.html">Read in English</a> | <a href="../fr/form_meta.html">Lire en français</a> | <a href="../es/form_meta.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/86f7750dca7b9470d220501253fb365b38924706/source/form_meta.md" class="reference">24 سبتمبر 2025</a>
 
 في أداة إنشاء النماذج، هناك عدد من الإعدادات الاختيارية التي يمكنك تعيينها

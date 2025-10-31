@@ -1,5 +1,4 @@
 # عرض وإنشاء التقارير المخصصة
-<a href="../creating_custom_reports.html">Read in English</a> | <a href="../fr/creating_custom_reports.html">Lire en français</a> | <a href="../es/creating_custom_reports.html">Leer en español</a>
 
 **آخر تحديث:**
 <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/creating_custom_reports.md" class="reference">15

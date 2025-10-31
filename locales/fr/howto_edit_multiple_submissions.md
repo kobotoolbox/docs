@@ -1,5 +1,4 @@
 # Modifier les réponses dans plusieurs soumissions
-<a href="../howto_edit_multiple_submissions.html">Read in English</a> | <a href="../es/howto_edit_multiple_submissions.html">Leer en español</a> | <a href="../ar/howto_edit_multiple_submissions.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/509a98dad39e2899a5eff7e870481cf99749f321/source/howto_edit_multiple_submissions.md" class="reference">22 Sep 2022</a>
 
 Les utilisatrices et utilisateurs ont toujours pu modifier les soumissions comme indiqué dans notre article d'assistance

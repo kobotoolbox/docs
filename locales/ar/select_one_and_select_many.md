@@ -1,5 +1,4 @@
 # أنواع الأسئلة "اختيار واحد" و"اختيار متعدد"
-<a href="../select_one_and_select_many.html">Read in English</a> | <a href="../fr/select_one_and_select_many.html">Lire en français</a> | <a href="../es/select_one_and_select_many.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/0d49d3448e1794b63e051d20df2421b33f5274fc/source/select_one_and_select_many.md" class="reference">28 مارس 2022</a>
 
 عندما يكون لديك سؤال فئوي يحتوي على قائمة من الخيارات المحددة مسبقاً للمستجيبين للاختيار من بينها، يجب عليك اختيار إما نوع السؤال "اختيار واحد" أو "اختيار متعدد" في KoboToolbox. نوع السؤال "اختيار واحد"، المعروف أيضاً باسم سؤال "الإجابة الواحدة"، يعني أن المستجيب يمكنه اختيار إجابة واحدة فقط من قائمة الخيارات. وبالمثل، فإن نوع السؤال "اختيار متعدد" يُعرف أيضاً باسم سؤال "الإجابات المتعددة" حيث يمكن للمستجيب اختيار إجابات متعددة من قائمة الخيارات.

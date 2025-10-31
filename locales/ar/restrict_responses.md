@@ -1,5 +1,4 @@
 # تقييد الإجابات النصية باستخدام التعبيرات النمطية
-<a href="../restrict_responses.html">Read in English</a> | <a href="../fr/restrict_responses.html">Lire en français</a> | <a href="../es/restrict_responses.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/restrict_responses.md" class="reference">29 يوليو 2025</a>
 
 التعبير النمطي، أو regex، هو نمط بحث يُستخدم لمطابقة أحرف ونطاقات محددة من الأحرف ضمن سلسلة نصية. يُستخدم على نطاق واسع للتحقق من صحة النصوص والبحث والاستخراج والتقييد في معظم لغات البرمجة. يدعم KoboToolbox التعبيرات النمطية للتحكم في الطول والأحرف أثناء إدخال البيانات لسؤال معين _(مثل التحكم في إدخال رقم الهاتف المحمول ليكون بالضبط 10 أرقام، أو التحكم في إدخال بريد إلكتروني صالح، إلخ)_.

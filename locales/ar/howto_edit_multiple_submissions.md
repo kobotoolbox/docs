@@ -1,5 +1,4 @@
 # تعديل الإجابات في عدة عمليات إرسال
-<a href="../howto_edit_multiple_submissions.html">Read in English</a> | <a href="../fr/howto_edit_multiple_submissions.html">Lire en français</a> | <a href="../es/howto_edit_multiple_submissions.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/509a98dad39e2899a5eff7e870481cf99749f321/source/howto_edit_multiple_submissions.md" class="reference">22 سبتمبر 2022</a>
 
 كان بإمكان المستخدمين دائمًا تعديل عمليات الإرسال كما هو موضح في مقالة الدعم الخاصة بنا

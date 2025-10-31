@@ -1,5 +1,4 @@
 # Combinar datos individuales con datos de lista a través de Power Query en Excel
-<a href="../merging_dataset_excel_power_query.html">Read in English</a> | <a href="../fr/merging_dataset_excel_power_query.html">Lire en français</a> | <a href="../ar/merging_dataset_excel_power_query.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 abr 2022</a>
 
 Como se ilustra en el artículo de ayuda,

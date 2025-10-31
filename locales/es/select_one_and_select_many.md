@@ -1,5 +1,4 @@
 # Tipos de preguntas "Seleccionar Uno" y "Seleccionar Varios"
-<a href="../select_one_and_select_many.html">Read in English</a> | <a href="../fr/select_one_and_select_many.html">Lire en français</a> | <a href="../ar/select_one_and_select_many.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/0d49d3448e1794b63e051d20df2421b33f5274fc/source/select_one_and_select_many.md" class="reference">28 Mar 2022</a>
 
 Cuando tienes una pregunta categórica con una lista de opciones predefinidas para que los/as encuestados/as elijan, debes elegir el tipo de pregunta "Seleccionar Uno" o "Seleccionar Varios" en KoboToolbox. Un tipo de pregunta "Seleccionar Uno", también conocido como pregunta de "respuesta única", significa que un/a encuestado/a solo puede seleccionar una única respuesta de una lista de opciones. De manera similar, un tipo de pregunta "Seleccionar Varios" también se conoce como pregunta de "respuesta múltiple" donde un/a encuestado/a puede seleccionar múltiples respuestas de una lista de opciones.

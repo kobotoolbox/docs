@@ -1,5 +1,4 @@
 # Restablecer contraseñas
-<a href="../reset_password.html">Read in English</a> | <a href="../fr/reset_password.html">Lire en français</a> | <a href="../ar/reset_password.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/855616c6ac4634f2dc835438697aab6869c7f11a/source/reset_password.md" class="reference">22 Sep 2023</a>
 
 Si has olvidado o perdido la contraseña de tu cuenta, KoboToolbox te permite

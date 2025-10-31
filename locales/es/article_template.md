@@ -1,5 +1,4 @@
 # Título del artículo
-<a href="../article_template.html">Read in English</a> | <a href="../fr/article_template.html">Lire en français</a> | <a href="../ar/article_template.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/2afa3a0c670fe98b296a79b798f33abf248d0273/source/article_template.md" class="reference">6 Sep 2025</a>
 
 Aquí va tu introducción. Ten en cuenta que el código "Última actualización" que aparece arriba se actualizará automáticamente con el nombre del artículo y la fecha correctos cuando publiques, por lo que no es necesario realizar ningún cambio manual. Recuerda nombrar este archivo de acuerdo con el título del artículo y terminar el nombre del archivo con `.md`.

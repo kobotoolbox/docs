@@ -1,5 +1,4 @@
 # Collecte de données via les formulaires Web
-<a href="../data_through_webforms.html">Read in English</a> | <a href="../es/data_through_webforms.html">Leer en español</a> | <a href="../ar/data_through_webforms.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/9153704b013430e55a763ac5c392dd30ae5d6bb9/source/data_through_webforms.md" class="reference">24 Sep 2025</a>
 
 ## Que sont les formulaires Web ?

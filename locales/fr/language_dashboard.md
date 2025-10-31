@@ -1,5 +1,4 @@
 # Ajouter une autre langue dans le tableau de bord du projet
-<a href="../language_dashboard.html">Read in English</a> | <a href="../es/language_dashboard.html">Leer en español</a> | <a href="../ar/language_dashboard.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/a412eff1342fa59da1fe2ffe1e10c1829b2e5e94/source/language_dashboard.md" class="reference">1 nov. 2022</a>
 
 Il existe deux méthodes pour ajouter plusieurs langues à votre formulaire. Vous pouvez soit

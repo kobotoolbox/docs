@@ -1,5 +1,4 @@
 # Descargando fotos y otros medios
-<a href="../photo_download.html">Read in English</a> | <a href="../fr/photo_download.html">Lire en français</a> | <a href="../ar/photo_download.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/photo_download.md" class="reference">29 Jul 2025</a>
 
 Si tu formulario [incluye](question_types.md) una pregunta de foto, video o grabación de audio, estos archivos se cargarán al servidor junto con tus otros datos. Al exportar tu conjunto de datos a XLS o CSV, estos archivos incluirán referencias a los nombres de los archivos adjuntos multimedia, pero no los archivos en sí. Para descargar todos tus archivos multimedia en bloque, elige la opción **Archivos adjuntos multimedia (ZIP)** en **DATOS>Descargas>Seleccionar tipo de exportación**.

@@ -1,5 +1,4 @@
 # Fusionner des données individuelles avec des données de liste via Power Query dans Excel
-<a href="../merging_dataset_excel_power_query.html">Read in English</a> | <a href="../es/merging_dataset_excel_power_query.html">Leer en español</a> | <a href="../ar/merging_dataset_excel_power_query.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 avr. 2022</a>
 
 Comme illustré dans l'article d'aide,

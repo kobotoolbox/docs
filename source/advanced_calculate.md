@@ -1,7 +1,6 @@
 # Advanced Calculate Question Type
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/advanced_calculate.md" class="reference">28 Oct 2025</a>
 
-<a href="es/advanced_calculate.html">Leer en español</a> | <a href="fr/advanced_calculate.html">Lire en français</a> | <a href="ar/advanced_calculate.html">اقرأ باللغة العربية</a>
 
 Some advanced forms may require an internal calculation to take place as part of the form (rather than afterwards during the analysis). This can be done by adding a **Calculation**, and writing the mathematical expression into the question label field. 
 

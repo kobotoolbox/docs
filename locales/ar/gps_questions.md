@@ -1,5 +1,4 @@
 # أنواع أسئلة GPS
-<a href="../gps_questions.html">Read in English</a> | <a href="../fr/gps_questions.html">Lire en français</a> | <a href="../es/gps_questions.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/27e85949b3f42b42dcb60701fbfc80aadddbb616/source/gps_questions.md" class="reference">30 يوليو 2022</a>
 
 في KoboToolbox، يمكنك جمع إحداثيات GPS كجزء من نموذج جمع البيانات الخاص بك. هناك 3 أنواع من أسئلة GPS يمكنك استخدامها، وهي "نقطة" و"خط" و"منطقة".

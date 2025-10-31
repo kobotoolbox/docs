@@ -1,5 +1,4 @@
 # التحليل النوعي للردود الصوتية
-<a href="../qualitative_analysis.html">Read in English</a> | <a href="../fr/qualitative_analysis.html">Lire en français</a> | <a href="../es/qualitative_analysis.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/qualitative_analysis.md" class="reference">3 مايو 2024</a>
 
 يمكن أن يكون التحليل النوعي حاسماً للبحث والاستجابة للطوارئ، حيث يقدم رؤى متعمقة غالباً ما يتم تفويتها في جمع البيانات الكمية. تساعد أدوات التحليل النوعي في KoboToolbox المستخدمين على معالجة وفهم المعلومات المعقدة من الردود الصوتية المفتوحة بكفاءة. باستخدام ميزات التحليل النوعي، يمكنك إضافة حقول بيانات جديدة لتلخيص وتصنيف ووصف الردود الصوتية.

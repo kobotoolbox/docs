@@ -1,5 +1,4 @@
 # Restreindre les réponses textuelles avec des expressions régulières
-<a href="../restrict_responses.html">Read in English</a> | <a href="../es/restrict_responses.html">Leer en español</a> | <a href="../ar/restrict_responses.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/restrict_responses.md" class="reference">29 juil. 2025</a>
 
 Une expression régulière, ou regex, est un modèle de recherche utilisé pour faire correspondre des caractères spécifiques et des plages de caractères dans une chaîne. Elle est largement utilisée pour valider, rechercher, extraire et restreindre du texte dans la plupart des langages de programmation. KoboToolbox prend en charge les regex pour contrôler la longueur et les caractères lors de la saisie de données pour une question particulière _(par exemple, contrôler la saisie d'un numéro de téléphone portable à exactement 10 chiffres, contrôler la saisie d'une adresse e-mail valide, etc.)_.

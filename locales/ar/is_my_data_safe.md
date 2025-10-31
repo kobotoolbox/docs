@@ -1,5 +1,4 @@
 # إجراءات أمان البيانات في KoboToolbox: الحفاظ على أمان بياناتك
-<a href="../is_my_data_safe.html">Read in English</a> | <a href="../fr/is_my_data_safe.html">Lire en français</a> | <a href="../es/is_my_data_safe.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/f7c0f5afa58cad4b40bd6075209daef21a83ee6b/source/is_my_data_safe.md" class="reference">9 أكتوبر 2025</a>
 
 نحن نأخذ حماية البيانات على محمل الجد. يعني أمان البيانات حماية بيانات مستخدمينا من أي تهديدات قد تكون موجودة. تلخص هذه المقالة بعض إجراءاتنا الإدارية والمادية والتنظيمية والتقنية لفرض أمان البيانات على خوادم KoboToolbox التي تديرها Kobo, Inc.، [المنظمة غير الربحية وراء KoboToolbox](https://www.kobotoolbox.org/about-us/).

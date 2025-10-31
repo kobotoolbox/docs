@@ -1,5 +1,4 @@
 # Artículos de soporte actualizados recientemente
-<a href="../recently_updated.html">Read in English</a> | <a href="../fr/recently_updated.html">Lire en français</a> | <a href="../ar/recently_updated.html">اقرأ باللغة العربية</a>
 
 <!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
 1. [#Acerca de KoboToolbox: Recolección de datos accesible para todas las personas](about_kobotoolbox_es.md) (17 Oct 2025)

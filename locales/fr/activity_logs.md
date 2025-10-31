@@ -1,5 +1,4 @@
 # Suivi d'activité
-<a href="../activity_logs.html">Read in English</a> | <a href="../es/activity_logs.html">Leer en español</a> | <a href="../ar/activity_logs.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/d6f09be2d6f022db661e2a4d9da0b962db44633e/source/activity_logs.md" class="reference">15 mai 2025</a>
 
 Les journaux de suivi d'activité sont des enregistrements numériques qui capturent les actions et événements importants dans votre compte KoboToolbox. Les journaux de suivi d'activité vous donnent un historique détaillé de l'accès au compte et de l'activité du projet.

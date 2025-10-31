@@ -1,5 +1,4 @@
 # التنسيق المخصص في النماذج الإلكترونية
-<a href="../custom_format_web.html">Read in English</a> | <a href="../fr/custom_format_web.html">Lire en français</a> | <a href="../es/custom_format_web.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/custom_format_web.md" class="reference">15 فبراير 2022</a>
 
 _يرجى ملاحظة: التنسيق المخصص يعمل على تطبيق Android الخاص بـ KoboCollect._

@@ -1,5 +1,4 @@
 # حذف مشروع
-<a href="../delete_project.html">Read in English</a> | <a href="../fr/delete_project.html">Lire en français</a> | <a href="../es/delete_project.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/delete_project.md" class="reference">15 فبراير 2022</a>
 
 هناك طريقتان لحذف مشروع وجميع بياناته من حسابك.

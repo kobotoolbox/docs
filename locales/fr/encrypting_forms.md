@@ -1,5 +1,4 @@
 # Chiffrement des formulaires
-<a href="../encrypting_forms.html">Read in English</a> | <a href="../es/encrypting_forms.html">Leer en español</a> | <a href="../ar/encrypting_forms.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/179faeb3c5a17b69406b0243ab9c22f7ca86aa44/source/encrypting_forms.md" class="reference">4 nov. 2024</a>
 
 _Cette procédure est assez technique et s'adresse aux utilisatrices et utilisateurs qui sont à l'aise avec des instructions techniques avancées et nécessite une attention stricte aux détails._

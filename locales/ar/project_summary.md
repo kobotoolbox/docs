@@ -1,5 +1,4 @@
 # ملخص المشروع
-<a href="../project_summary.html">Read in English</a> | <a href="../fr/project_summary.html">Lire en français</a> | <a href="../es/project_summary.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/fe255dc226ea120c8a6e4a6c3a378581d9b10bf3/source/project_summary.md" class="reference">28 مايو 2020</a>
 
 توفر لك علامة تبويب ملخص المشروع عرضاً مرئياً لجميع المعلومات الرئيسية المتعلقة بمشروعك. اعتماداً على ما إذا كنت مالك المشروع أو مستخدماً لديه صلاحيات محدودة، سيتم عرض معلومات مختلفة لك. يتضمن ملخص المشروع:

@@ -1,5 +1,4 @@
 # Inclure les P-Codes dans les données exportées
-<a href="../p_codes.html">Read in English</a> | <a href="../es/p_codes.html">Leer en español</a> | <a href="../ar/p_codes.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/p_codes.md" class="reference">29 Jul 2025</a>
 
 Si vous utilisez des listes en cascade, veuillez [suivre les instructions](cascading_select.md)

@@ -1,5 +1,4 @@
 # Transferir formularios y datos manualmente de un dispositivo Android a otro
-<a href="../transferring_forms.html">Read in English</a> | <a href="../fr/transferring_forms.html">Lire en français</a> | <a href="../ar/transferring_forms.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/7def5f54e2441b05b4a2163e682bdd146fa781e1/source/transferring_forms.md" class="reference">24 Sep 2025</a>
 
 Puede haber ocasiones en las que estés en el campo sin conexión a internet,

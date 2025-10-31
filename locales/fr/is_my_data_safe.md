@@ -1,5 +1,4 @@
 # Mesures de sécurité des données KoboToolbox : Protéger vos données
-<a href="../is_my_data_safe.html">Read in English</a> | <a href="../es/is_my_data_safe.html">Leer en español</a> | <a href="../ar/is_my_data_safe.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/f7c0f5afa58cad4b40bd6075209daef21a83ee6b/source/is_my_data_safe.md" class="reference">9 oct. 2025</a>
 
 Nous prenons la protection des données très au sérieux. La sécurité des données signifie protéger les données de nos utilisatrices et utilisateurs contre toute menace potentielle. Cet article résume certaines de nos mesures administratives, physiques, organisationnelles et techniques pour garantir la sécurité des données sur les serveurs KoboToolbox maintenus par Kobo, Inc., l'[organisation à but non lucratif derrière KoboToolbox](https://www.kobotoolbox.org/about-us/).

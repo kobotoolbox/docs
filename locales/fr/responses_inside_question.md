@@ -1,5 +1,4 @@
 # Inclure des réponses dans une autre question
-<a href="../responses_inside_question.html">Read in English</a> | <a href="../es/responses_inside_question.html">Leer en español</a> | <a href="../ar/responses_inside_question.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/aca19282c9a46e952209d16a75fce9e800f6ea1c/source/responses_inside_question.md" class="reference">5 oct. 2020</a>
 
 Vous pouvez inclure la réponse d'une question (par exemple, inclure la réponse à la question « Quel âge avez-vous ? ») dans le libellé d'une autre question. Cela peut être utile pour de nombreuses raisons dans les formulaires avancés. Par exemple, vous pourriez vouloir confirmer qu'une réponse est vraiment correcte.

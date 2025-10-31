@@ -1,5 +1,4 @@
 # جمع البيانات دون اتصال بالإنترنت
-<a href="../data-offline.html">Read in English</a> | <a href="../fr/data-offline.html">Lire en français</a> | <a href="../es/data-offline.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/7a8a18d56ea285b4b87535e367b407c1b7f54afc/source/data-offline.md" class="reference">24 سبتمبر 2025</a>
 
 **يمكن جمع جميع البيانات دون اتصال بالإنترنت، سواء باستخدام KoboCollect أو النماذج الإلكترونية.**

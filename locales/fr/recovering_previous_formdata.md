@@ -1,5 +1,4 @@
 # Récupération des données des versions précédentes du formulaire
-<a href="../recovering_previous_formdata.html">Read in English</a> | <a href="../es/recovering_previous_formdata.html">Leer en español</a> | <a href="../ar/recovering_previous_formdata.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/6c4fc8e55497e4a00b39095f090a6f43eb01c37b/source/recovering_previous_formdata.md" class="reference">26 juil. 2020</a>
 
 **Cet article présente les étapes pour récupérer les données des versions précédentes du formulaire en cas de suppression de questions**

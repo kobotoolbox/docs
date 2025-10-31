@@ -1,7 +1,6 @@
 # Getting started with the KoboToolbox Formbuilder 
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/formbuilder.md" class="reference">28 Oct 2025</a>
 
-<a href="es/formbuilder.html">Leer en español</a> | <a href="fr/formbuilder.html">Lire en français</a> | <a href="ar/formbuilder.html">اقرأ باللغة العربية</a>
 
 <iframe src="https://www.youtube.com/embed/PFL1_rBB5Q8?si=RkwB2XGHppAK-RRF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

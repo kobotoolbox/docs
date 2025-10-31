@@ -1,5 +1,4 @@
 # Utilisation des options de question
-<a href="../question_options.html">Read in English</a> | <a href="../es/question_options.html">Leer en español</a> | <a href="../ar/question_options.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/43a3384fad535287d1c7820457ab2d25a86877fc/source/question_options.md" class="reference">24 Sep 2025</a>
 
 Après avoir ajouté une question, vous pouvez effectuer de nombreuses personnalisations en utilisant les options de question. Pour accéder à l'écran des options d'une question, cliquez sur son bouton <i class="k-icon k-icon-settings"></i> Paramètres.

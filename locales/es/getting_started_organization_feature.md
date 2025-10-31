@@ -1,5 +1,4 @@
 # Uso de la función de manejo de equipos
-<a href="../getting_started_organization_feature.html">Read in English</a> | <a href="../fr/getting_started_organization_feature.html">Lire en français</a> | <a href="../ar/getting_started_organization_feature.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/7f800b38e7b07803e7abd456195dd5519b03240e/source/getting_started_organization_feature.md" class="reference">3 oct 2025</a>
 
 La nueva función de manejo de equipos te permite centralizar el manejo de proyectos y usuarios/as para mejorar la supervisión y colaboración en equipos grandes y distribuidos. Cuando agregas usuarios/as a tu Equipo en KoboToolbox, tendrás acceso para ver y manejar sus proyectos. Los/as usuarios/as en tu Equipo tendrán acceso a las cuotas de uso de tu Teams Plan o Enterprise Plan, y la propiedad de sus proyectos será transferida a tu Equipo.

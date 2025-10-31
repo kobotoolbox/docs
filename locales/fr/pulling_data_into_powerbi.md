@@ -1,5 +1,4 @@
 # Connecter KoboToolbox à Power BI
-<a href="../pulling_data_into_powerbi.html">Read in English</a> | <a href="../es/pulling_data_into_powerbi.html">Leer en español</a> | <a href="../ar/pulling_data_into_powerbi.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/ae9e699afd6c0ed484945430ba6722b974b99b49/source/pulling_data_into_powerbi.md" class="reference">22 août 2022</a>
 
 L'API KoboToolbox vous permet de connecter votre projet à d'autres outils d'analyse de données tels que Power BI, Excel et Google Sheets. Les données que vous collectez sont partagées avec l'application externe qui peut ensuite être utilisée pour l'analyse, les visualisations et les tableaux de bord.

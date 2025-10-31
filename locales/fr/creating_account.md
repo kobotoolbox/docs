@@ -1,5 +1,4 @@
 # Créer un compte sur KoboToolbox
-<a href="../creating_account.html">Read in English</a> | <a href="../es/creating_account.html">Leer en español</a> | <a href="../ar/creating_account.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/3f98ef1e3a2fac6bfbeb92b4af9c7fefb28d8d41/source/creating_account.md" class="reference">7 juil. 2025</a>
 
 La première étape pour toutes les utilisatrices et tous les utilisateurs qui débutent avec **KoboToolbox** est de

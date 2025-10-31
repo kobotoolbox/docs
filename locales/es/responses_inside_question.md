@@ -1,5 +1,4 @@
 # Incluir respuestas dentro de otra pregunta
-<a href="../responses_inside_question.html">Read in English</a> | <a href="../fr/responses_inside_question.html">Lire en français</a> | <a href="../ar/responses_inside_question.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/aca19282c9a46e952209d16a75fce9e800f6ea1c/source/responses_inside_question.md" class="reference">5 Oct 2020</a>
 
 Puedes incluir la respuesta de una pregunta (como incluir la respuesta de la pregunta '¿Cuántos años tienes?') dentro de la etiqueta de otra pregunta. Esto puede ser útil por muchas razones en formularios avanzados. Por ejemplo, es posible que desees confirmar que una respuesta es realmente correcta.
