@@ -20,22 +20,8 @@ Option choices are defined in the `choices` worksheet of your XLSForm. The `choi
 
 To define a list of option choices in XLSForm:
 
-1.  Enter the **name of the list of choices** in the `list_name` column of the `choices` worksheet. The `list_name` in the `choices` worksheet should match the `list_name` used in the `type` column of the `survey` worksheet (e.g., `select_one yn`).
-    - The `list_name` in the `choices` worksheet should match the `list_name` used in the `type` column of the `survey` worksheet (e.g., `select_one yn`).
-2.  Enter the `name` and `label` for each option in the `choices` worksheet, using the same `list_name` for all options in the list.
-3.  In the `type` column in the `survey` worksheet, enter the question type followed by a single space and then the `list_name`.
-    - A list of choices can be reused across multiple questions in the `survey` worksheet.
-
-### Example
-A list of choices can be reused across multiple questions in the `survey` worksheet.
-
-**survey worksheet**
-
-| type | name | label |
-| :---------  | :---------  | :---------  |
-| acknowledge | consent | Do you agree to proceed with the interview? |
-| select_one marital_options | marital_status | What is your marital status? |
-| survey |
+1.  In the `choices` worksheet, enter the **name of the list of choices** in the `list_name` column. 
+2.  Enter a short `name` and a `label` for each option, using the same `list_name` for all options in the list.
 
 **choices worksheet**
 
@@ -46,6 +32,17 @@ A list of choices can be reused across multiple questions in the `survey` worksh
 | marital_options | separated_divorced | Separated/Divorced |
 | marital_options | widowed | Widowed |
 | choices |
+
+3.  In the `survey` worksheet, add your survey question. In the `type` column, enter the question type followed by a single space and then the `list_name` for your list of choices.
+    - A list of choices can be reused across multiple questions in the `survey` worksheet.
+
+**survey worksheet**
+
+| type | name | label |
+| :---------  | :---------  | :---------  |
+| acknowledge | consent | Do you agree to proceed with the interview? |
+| select_one marital_options | marital_status | What is your marital status? |
+| survey |
 
  
 ## Best practices for defining choice names
@@ -91,7 +88,7 @@ To learn more about filtering choice lists in XLSForm, see <a href="adding_choic
 
 Within a given list of option choices, **choice names must be unique**. However, the same choice name can be reused across different lists. For instance, a `yes_no` choice list and a `yes_no_maybe` choice list can both include `yes` and `no` choice names.
 
-By default, deploying a form with repeated choice names in the same list will result in an error. However, when using choice filters, you may need to allow duplicate choice names within a list. To enable this, activate the **`allow_choice_duplicates`** setting in your `settings` worksheet.
+By default, deploying a form with repeated choice names in the same list will result in an error. However, when using choice filters, you may need to allow duplicate choice names within a list. To enable this, activate the `allow_choice_duplicates` setting in your `settings` worksheet.
 
 <p class="note">
 For more information, see <a href="form_settings_xls.html">Form settings in XLSForm</a>.
