@@ -1,5 +1,5 @@
 # HIPAA Compliance
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/hipaa_compliance.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b1ec67a2ab986fec9903546ac7db4c1ce91c6517/source/hipaa_compliance.md" class="reference">7 Jul 2025</a>
 
 
 The [public KoboToolbox servers](creating_account.md) were not designed with the specific

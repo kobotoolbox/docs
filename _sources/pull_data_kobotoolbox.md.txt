@@ -1,5 +1,5 @@
 # Pull Data Functionality in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/pull_data_kobotoolbox.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/202f8e0e134d0695913bf6c5d5b52449c5e61e5d/source/pull_data_kobotoolbox.md" class="reference">18 Aug 2025</a>
 
 
 This is best done on xls version of the form.

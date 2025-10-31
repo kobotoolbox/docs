@@ -1,5 +1,5 @@
 # Recovering Data From Previous Form Versions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b70cdbf084f645b5cefa1a9368456f8f37b7245c/source/recovering_previous_formdata.md" class="reference">17 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6c4fc8e55497e4a00b39095f090a6f43eb01c37b/source/recovering_previous_formdata.md" class="reference">26 Jul 2020</a>
 
 
 **This article shows steps on how to recover data from previous versions of the form in case of question deletions**
