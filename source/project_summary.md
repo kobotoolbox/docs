@@ -1,5 +1,5 @@
 # Project Summary
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/project_summary.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/project_summary.md" class="reference">31 Oct 2025</a>
 
 
 The Project Summary tab gives you a visual display of all the high-level information related to your project. Depending on whether you're the project owner or a user with restricted permissions, different information will be shown to you. The Project Summary includes: 

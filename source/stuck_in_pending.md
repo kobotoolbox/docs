@@ -1,5 +1,5 @@
 # Exports Stuck in Pending State
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/stuck_in_pending.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/stuck_in_pending.md" class="reference">31 Oct 2025</a>
 
 
 If you have XLS exports stuck in the pending state, remove the stuck exports by clicking on the red trash can icon for each one. Next, retry the exports by clicking the "New Export" button. Please note that any export stuck in the "Pending" state for longer than an hour will likely never succeed; if you encounter such an export, please feel free to delete it and create a new export.

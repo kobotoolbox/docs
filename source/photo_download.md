@@ -1,5 +1,5 @@
 # Downloading Photos and Other Media
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/photo_download.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/photo_download.md" class="reference">31 Oct 2025</a>
 
 
 If your form [includes](question_types.md) a photo, video, or audio recording

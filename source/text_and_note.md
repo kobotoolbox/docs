@@ -1,5 +1,5 @@
 # Text and Note question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/text_and_note.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0050a936217ec4b5b9cf44a66826778898ed29d5/source/text_and_note.md" class="reference">31 Oct 2025</a>
 
 
 The "Text" question type is best used for questions that require undefined or
