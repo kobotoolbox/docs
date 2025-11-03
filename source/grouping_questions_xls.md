@@ -26,7 +26,7 @@ To create a question group in XLSForm:
 5.  In a new row after the grouped questions, enter **end_group** in the `type` column to indicate the end of the group.
     - In the **end_group** row, leave the `name` and `label` columns blank.
 
-survey worksheet
+**survey worksheet**
 
 | type | name | label |
 | :--- | :--- | :--- |
@@ -43,7 +43,7 @@ Nested groups are groups of questions inside another group of questions. Nested 
 
 When creating multiple groups, ensure that each `begin_group` row has a corresponding `end_group` row. If the number of `begin_group` rows does not match the number of `end_group` rows, the form will generate an error, preventing it from functioning properly during preview or deployment.
 
-survey worksheet
+**survey worksheet**
 
 | type | name | label |
 | :--- | :--- | :--- |
@@ -102,7 +102,7 @@ To display each group of questions on its own page in Enketo web forms:
 
 This applies the **pages** [theme](https://support.kobotoolbox.org/form_style_xls.html) to your Enketo web form, dividing it into separate pages similar to KoboCollect. Each question group will appear on its own page.
 
-survey worksheet
+**survey worksheet**
 
 | type | name | label | appearance |
 | :--- | :--- | :--- | :--- |
@@ -113,7 +113,7 @@ survey worksheet
 | end_group | | | |
 | survey |
 
-settings worksheet
+**settings worksheet**
 
 | style |
 | :--- |
