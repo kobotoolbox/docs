@@ -81,26 +81,35 @@ By default, KoboCollect displays each question on a separate screen. Users must 
 To **display all grouped questions on the same screen** in KoboCollect:
 1.  In the `survey` worksheet, add an **appearance** column.
 2.  In the `appearance` column, enter **field-list** in the `begin_group` row.
+    * Each question group will now appear on its own page.
 
 | type | name | label | appearance |
 | :--- | :--- | :--- | :--- |
-| **begin_group** | personal_info | Section A: Personal Information | **field-list** |
+| begin_group | personal_info | Section A: Personal Information | **field-list** |
 | text | name | What is your name? | |
 | integer | age | How old are you? | |
 | select_one yn | married | Are you married? | |
-| **end_group** | | | |
+| end_group | | | |
 
 ### Using Enketo web forms to collect data
 
 By default, Enketo web forms display all questions on a single page.
 
 To display each group of questions on its own page in Enketo web forms:
-1.  In the `survey` worksheet, add an **appearance** column.
-2.  In the `appearance` column, enter **field-list** in the `begin_group` row.
-3.  In the `settings` worksheet, add a **style** column.
-4.  In the second cell of the `style` column, enter **pages**.
+1.  In the `settings` worksheet, add a **style** column.
+2.  In the second cell of the `style` column, enter **pages**.
+    * This applies the **pages** [theme](https://support.kobotoolbox.org/form_style_xls.html) to your Enketo web form, dividing it into separate pages similar to KoboCollect. 
 
-This applies the **pages** [theme](https://support.kobotoolbox.org/form_style_xls.html) to your Enketo web form, dividing it into separate pages similar to KoboCollect. Each question group will appear on its own page.
+**settings worksheet**
+
+| style |
+| :--- |
+| **pages** |
+| settings |
+
+3.  In the `survey` worksheet, add an **appearance** column.
+4.  In the `appearance` column, enter **field-list** in the `begin_group` row.
+    * Each question group will now appear on its own page.
 
 **survey worksheet**
 
@@ -113,12 +122,6 @@ This applies the **pages** [theme](https://support.kobotoolbox.org/form_style_xl
 | end_group | | | |
 | survey |
 
-**settings worksheet**
-
-| style |
-| :--- |
-| **pages** |
-| settings |
 
 ## Applying skip logic to question groups
 
