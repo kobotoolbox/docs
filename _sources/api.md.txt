@@ -1,5 +1,5 @@
 # Getting started with the API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/54bf585c4b2f82389999c2b08cdea35ff84d8c6a/source/api.md" class="reference">4 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/49aa8541685646b9aa6d3a25be2a0b139c78fa5c/source/api.md" class="reference">4 Nov 2025</a>
 
 
 An **Application Programming Interface (API)** allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.
@@ -82,8 +82,8 @@ The API documentation at `https://[server-url]/api/v2/docs/` provides an interac
 
 | **KoboToolbox Server**    | **API Documentation**                     |
 | :----------------- | :--------------------------------------------- |
-| Global KoboToolbox Server               | https://kf.kobotoolbox.org/api/v2/docs/  |
-| European Union KoboToolbox Server       | https://eu.kobotoolbox.org/api/v2/docs/  |
+| Global KoboToolbox Server               | [https://kf.kobotoolbox.org/api/v2/docs/](https://kf.kobotoolbox.org/api/v2/docs/)  |
+| European Union KoboToolbox Server       | [https://eu.kobotoolbox.org/api/v2/docs/](https://eu.kobotoolbox.org/api/v2/docs/)  |
 
 These advanced documentation pages list all endpoints, show allowed query parameters, include a search bar, display example responses, show example error responses, and allow direct testing of requests in your browser. Use this documentation for verifying authentication, discovering functions, and copying exact URLs into custom scripts.
 
