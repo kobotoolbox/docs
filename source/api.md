@@ -18,10 +18,7 @@ Using the KoboToolbox API allows you to automate routine tasks, keep dashboards 
 - Retrieving your **API Key**
 - Retrieving the project asset UID
 - Exporting your data using the API
-
-<p class="note">
-    <strong>Note:</strong> V1 endpoints are now deprecated and scheduled for decommissioning in January 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
-</p>
+- Advanced API documentation
 
 ## Retrieving your server URL
 The **server URL** is the base web address of your KoboToolbox server. It is placed at the start of every API request.
@@ -78,3 +75,22 @@ To learn more about connecting your data to Power BI to create custom dashboards
 <br><br>
 To learn more about connecting your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
 </p>
+
+## Advanced documentation
+
+The API documentation at `https://[server-url]/api/v2/docs/` provides an interactive interface for API endpoints. It replaces information previously presented in each endpoint. 
+
+| **KoboToolbox Server**    | **API Documentation**                     |
+| :----------------- | :--------------------------------------------- |
+| Global KoboToolbox Server               | https://kf.kobotoolbox.org/api/v2/docs/  |
+| European Union KoboToolbox Server       | https://eu.kobotoolbox.org/api/v2/docs/  |
+
+These advanced documentation pages list all endpoints, show allowed query parameters, include a search bar, display example responses, show example error responses, and allow direct testing of requests in your browser. Use this documentation for verifying authentication, discovering functions, and copying exact URLs into custom scripts.
+
+You can also download the API documentation schema in YAML format at `https://[server-url]/api/v2/schema/` or in JSON format at `https://[server-url]/api/v2/schema/?format=json`.
+
+<p class="note">
+    <strong>Note:</strong> V1 endpoints are now deprecated and scheduled for decommissioning in January 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
+</p>
+
+For more examples of using the API, see this [Community Forum post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
