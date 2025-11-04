@@ -82,8 +82,8 @@ The API documentation at `https://[server-url]/api/v2/docs/` provides an interac
 
 | **KoboToolbox Server**    | **API Documentation**                     |
 | :----------------- | :--------------------------------------------- |
-| Global KoboToolbox Server               | https://kf.kobotoolbox.org/api/v2/docs/  |
-| European Union KoboToolbox Server       | https://eu.kobotoolbox.org/api/v2/docs/  |
+| Global KoboToolbox Server               | [https://kf.kobotoolbox.org/api/v2/docs/](https://kf.kobotoolbox.org/api/v2/docs/)  |
+| European Union KoboToolbox Server       | [https://eu.kobotoolbox.org/api/v2/docs/](https://eu.kobotoolbox.org/api/v2/docs/)  |
 
 These advanced documentation pages list all endpoints, show allowed query parameters, include a search bar, display example responses, show example error responses, and allow direct testing of requests in your browser. Use this documentation for verifying authentication, discovering functions, and copying exact URLs into custom scripts.
 
