@@ -86,7 +86,18 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   appearances_xls
   language_xls
   media
+  form_logic_xls
+  functions_xls
+  skip_logic_xls
+  constraints_xls
+  required_logic_xls
+  choice_filters_xls
+  calculations_xls
+  form_settings_xls
+  metadata_xls
   pull_data_kobotoolbox
+  select_from_file_xls
+  select_from_map_xls
   dynamic_data_attachment
   library_locking
 
