@@ -23,13 +23,13 @@ To create a repeat group in XLSForm:
 3. In the `label` column, enter the title of the group as you want it displayed in the form. The label is optional and can be left blank.
 4. Enter each question of the group in its own row, as you normally would.
 5. In a new row after the repeating questions, enter **end_repeat** in the `type` column to indicate the end of the repeat group. 
-    - In the **end_group** row, leave the name and label columns blank.
+    - In the **end_group** row, leave the `name` and `label` columns blank.
   
 **survey worksheet**
 
 | type | name | label |
 | :--- | :--- | :--- |
-| **begin_repeat** | household_members | Section B: Household Members |
+| **begin_repeat** | household_members | Household Members |
 | text | name | What is the person's name? |
 | integer | age | How old are they? |
 | select_one yn | married | Are they married? |
@@ -43,17 +43,17 @@ Repeat groups function similarly to question groups. With repeat groups, you can
 - Create **nested** repeat groups, where one repeat group is added [inside another](https://support.kobotoolbox.org/grouping_questions_xls.html#nested-groups).
 
 <p class="note">
-  <strong>Note:</strong> Note: Adding repeat groups to your form creates a different data structure compared to standard variables or groups. When you download your data in .xlsx format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
+  <strong>Note:</strong> Adding repeat groups to your form creates a different data structure compared to standard variables or groups. When you download your data in .xlsx format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
 </p>
 
 ## Setting repeat counts
 
 By default, repeat groups can be repeated as many times as needed. To limit the number of times a repeat group is repeated in the form, you can set a repeat count. The **repeat count** can be either a fixed number or dynamically determined based on a previous response.
 
-To define the number of times a repeat group is repeated:
+To set a fixed number of repetitions:
 
 1. Add a **repeat_count** column in the `survey` worksheet. 
-2. To set a fixed number of repetitions, input a number in the **repeat_count** column.
+2. Input a number in the **repeat_count** column.
 
 **survey worksheet**
 
@@ -66,8 +66,11 @@ To define the number of times a repeat group is repeated:
 | end_repeat | | | |
 | survey |
 
-3. To dynamically determine the number of repetitions based on a previous response, enter the question reference in the **repeat_count** column. 
-    - The question referenced must be an `integer` question type.
+To dynamically determine the number of repetitions based on a previous response:
+
+1. Add a **repeat_count** column in the `survey` worksheet.
+2. Enter the question reference in the **repeat_count** column. 
+    - The referenced question must be an `integer` question type.
   
   **survey worksheet**
 
@@ -82,7 +85,7 @@ To define the number of times a repeat group is repeated:
 | survey |
 
 <p class="note">
-  <strong>Note:</strong> Inside the **repeat_count** column, you can also include advanced conditional statements to determine if repetitions will continue. For more information, see <a href="https://docs.getodk.org/form-logic/#repeating-as-long-as-a-condition-is-met">ODK documentation</a>. 
+  <strong>Note:</strong> Inside the <strong>repeat_count</strong> column, you can also include advanced conditional statements to determine if repetitions will continue. For more information, see <a href="https://docs.getodk.org/form-logic/#repeating-as-long-as-a-condition-is-met">ODK documentation</a>. 
 </p>
 
 ## Counting number of repetitions inside a repeat group
@@ -135,7 +138,7 @@ This variable stores the total number of group repetitions. You can use it in ca
 
 Advanced forms often use [question referencing](https://support.kobotoolbox.org/form_logic_xls.html#question-referencing) to include responses from earlier questions in question labels, calculations, or skip logic. You can also use question referencing **within repeat groups** or to refer to repeated data elsewhere in your form.
 
-Within a repeat group, you can use question referencing to refer to a response from another question in the same repetition, as shown below.
+Within a repeat group, you can reference a response from another question in the same repetition using question referencing, as shown below.
 
 **survey worksheet**
 
@@ -152,17 +155,17 @@ Outside a repeat group, you can retrieve data from the repeat group for use in f
 
 1. Add a **calculate** question after your repeat group.
 2. Include one of the formulas listed below in the **calculation** column.
-3. The `calculate` question stores the retrieved value, which you can then use in form logic or question labels.
+3. The **calculate** question stores the retrieved value, which you can then use in form logic or question labels.
 
 **Formulas to retrieve data from repeat groups**
 
 | Formula | Description |
 | :--- | :--- |
-| max(${question-name}) | Retrieves the maximum value entered for one question in the repeat group. |
-| min(${question-name}) | Retrieves the minimum value entered for one question in the repeat group. |
-| sum(${question-name}) | Computes the sum of numerical values entered for one question in the repeat group. |
-| join('; ', ${question-name}) | Lists all responses to a given question inside a repeat group, separated by a semi-colon. |
-| indexed-repeat(${question-name}, ${repeat-name}, n) | Retrieves the value for ${question-name}, in the repeat group called ${repeat-name}, in the n<sup>th</sup> repetition. |
+| `max(${question-name})` | Retrieves the maximum value entered for one question in the repeat group. |
+| `min(${question-name})` | Retrieves the minimum value entered for one question in the repeat group. |
+| `sum(${question-name})` | Computes the sum of numerical values entered for one question in the repeat group. |
+| `join('; ', ${question-name})` | Lists all responses to a given question inside a repeat group, separated by a semi-colon. |
+| `indexed-repeat(${question-name}, ${repeat-name}, n)` | Retrieves the value for `${question-name}`, in the repeat group called `${repeat-name}`, in the n<sup>th</sup> repetition. |
 
 **survey worksheet**
 
