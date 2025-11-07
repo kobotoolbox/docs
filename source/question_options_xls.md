@@ -5,8 +5,8 @@ When designing a form in XLSForm, you can customize questions by adding hints, s
 This article covers the most common question options and how to add them to your XLSForm, including question hints, required questions, default responses, and question parameters.
 
 <p class="note">
-  <strong>Note:</strong> This article focuses on defining question options in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about question options in the KoboToolbox Formbuilder, see <a herf="https://support.kobotoolbox.org/question_options.html">Using the question options</a>.
-<br>
+  <strong>Note:</strong> This article focuses on defining question options in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about question options in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/question_options.html">Using the question options</a>.
+<br><br>
 For hands-on practice with question options in XLSForm, see KoboToolbox Academyâ€™s <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
 </p>
 
@@ -15,6 +15,8 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academyâ
 **Question hints** allow you to add instructions or additional information to your form. There are two types of hints that you can add in XLSForm: 
 - **Regular hints** are used to provide additional information for respondents or enumerators directly in the form. They are always visible and displayed below the question label.
 - **Guidance hints** are used to provide additional information during form development, enumerator training, or data collection. They are not displayed by default.
+
+### Adding question hints in XLSForm
 
 To add a **regular hint** in XLSForm:
 1. Add a **hint** column to the `survey` worksheet.
@@ -65,7 +67,7 @@ To set a question as required in XLSForm:
 If a respondent does not answer a required question, they will not be able to proceed to the next page or submit the form. The default required message "This field is required" will be displayed. 
 
 <p class="note">
-**Note:** Only questions that require an input should be marked as required in your XLSForm. If `note` questions are marked as required, you will not be able to continue or submit the form. 
+<strong>Note:</strong> Only questions that require an input should be marked as required in your XLSForm. If <code>note</code> questions are marked as required, you will not be able to continue or submit the form. 
 </p>
 
 ### Changing the default required message 
@@ -73,16 +75,18 @@ If a respondent does not answer a required question, they will not be able to pr
 You can change the default required message in your XLSForm by following the steps below:
 
 1. Add a **required_message** column to the `survey` worksheet. 
-2. Enter the text you wish to display when users leave a required question blank. 
+2. Enter the text you wish to display when users leave a required question blank.
+
+**survey worksheet**
 
 | type | name | label | required | required_message |
 | :--- | :--- | :--- | :--- | :--- |
-| select_one education_options | education_level | What is the highest level of education you have completed? | TRUE | |
+| select_one education | education_level | What is the highest level of education you have completed? | TRUE | |
 | integer | age | What is your age? | TRUE | Please respond to this question before continuing. |
 | survey | 
 
 <p class="note">
-**Note:** Custom form logic can be used to make a question required or optional based on a previous response. To learn more about condition-based required logic, see <a class="reference" href="https://support.kobotoolbox.org/required_logic_xls.html">Adding required logic in XLSForm</a>. 
+<strong>Note:</strong> Custom form logic can be used to make a question required or optional based on a previous response. To learn more about condition-based required logic, see <a class="reference" href="https://support.kobotoolbox.org/required_logic_xls.html">Adding required logic in XLSForm</a>. 
 </p>
 
 ## Default responses
@@ -92,12 +96,14 @@ A **default response** populates a question with a predefined answer based on a 
 The default response will be recorded as the final answer when the form is submitted **unless modified by the respondent** during data collection.  To prevent respondents from editing a default response, add a **read-only** column and set it to **TRUE**. 
 
 <p class="note">
-**Note:** Although default responses can make data collection more efficient by prepopulating the form with expected or common responses, they also risk introducing bias or errors in the data, and should be used with caution. 
+<strong>Note:</strong> Although default responses can make data collection more efficient by prepopulating the form with expected or common responses, they also risk introducing bias or errors in the data, and should be used with caution. 
 </p>
 
 To set a fixed default response in XLSForm: 
-1. Add a `default` column to the **'survey'** worksheet. 
-2. Enter the default response, following the appropriate format for the question type (see table [below](https://support.kobotoolbox.org/question_options_xls.html#default-response-format)).
+1. Add a **default** column to the `survey` worksheet. 
+2. Enter the default response, following the [appropriate format](https://support.kobotoolbox.org/question_options_xls.html#default-response-format) for the question type.
+
+**survey worksheet**
 
 | type | name | label | default |
 | :--- | :--- | :--- | :--- |
@@ -118,7 +124,7 @@ The format of the default response depends on the question type and the data bei
 | integer | Number |
 | text | Text (without quotation marks) |
 | select_one | Choice **name** (as defined in the choices worksheet) |
-| select_multiple | **Choice name(s)**, separated by a **space** if there are multiple |
+| select_multiple | Choice **name(s)**, separated by a **space** if there are multiple |
 | date | Date in the YYYY-MM-DD format. If needed, prefix the date with a single quote (') in Excel to avoid potential formatting issues. | 
 
 ### Setting dynamic default responses
@@ -144,8 +150,10 @@ Question parameters in XLSForm allow you to fine-tune how your questions behave 
 
 To add question parameters in XLSForm: 
 1. Add a **parameters** column to the `survey` worksheet.
-2. Enter the appropriate parameter for your question type (see examples below). 
-3. Some parameters can be combined and applied to the same question. Combine parameters by entering them in the same cell and separating them with a space. 
+2. Enter the appropriate [parameter](https://support.kobotoolbox.org/question_options_xls.html#common-question-parameters) for your question type. 
+3. Some parameters can be combined and applied to the same question. Combine parameters by entering them in the same cell and separating them with a space.
+
+**survey worksheet**
 
 | type | name | label | parameters |
 | :--- | :--- | :--- | :--- |
@@ -157,7 +165,7 @@ To add question parameters in XLSForm:
 
 Different question types in `XLSForm` have different parameters. The most common parameters are: 
 
-| Parameters | Question type | Description |
+| Parameter | Question type | Description |
 | :--- | :--- | :--- |
 | randomize=true | rank, select_one, select_multiple | Randomizes the order of option choices |
 | start=1 end=5 step=1 | range | Defines the minimum value, maximum value, and interval between numbers |
