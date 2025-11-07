@@ -52,7 +52,7 @@ To learn more about numeric question types in KoboToolbox, see <a href="https://
 
 ### Text and note question types
 
-Text questions allow you to collect open-ended responses, while note questions provide information or give instructions to respondents.
+Text questions are used to collect open-ended responses, while note questions provide information or give instructions to respondents.
 
 | XLSForm type | Description | Formbuilder equivalent |
 | :--- | :--- | :--- |
@@ -66,7 +66,7 @@ To learn more about text and note question types in KoboToolbox, see <a href="ht
 
 ### Media question types
 
-Media questions allow users to upload or record images, audio, and video files, or to scan barcodes directly into their forms.
+Media questions allow respondents to upload or record images, audio, and video files, or to scan barcodes directly into their forms.
 
 | XLSForm type | Description | Formbuilder equivalent |
 | :--- | :--- | :--- |
