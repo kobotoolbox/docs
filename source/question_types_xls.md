@@ -17,7 +17,7 @@ To learn more about building forms in XLSForm, see <a href="https://support.kobo
 
 ### Select question types
 
-Select questions allow respondents to choose from predefined options. For `select_one`, `select_multiple`, and `rank` questions, [option choicea](https://support.kobotoolbox.org/option_choices_xls.html) are defined in the **choices** worksheet of the XLSForm.
+Select questions allow respondents to choose from predefined options. For `select_one`, `select_multiple`, and `rank` questions, [option choices](https://support.kobotoolbox.org/option_choices_xls.html) are defined in the **choices** worksheet of the XLSForm.
 
 | XLSForm type | Description | Formbuilder equivalent |
 | :--- | :--- | :--- |
