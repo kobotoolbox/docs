@@ -185,4 +185,8 @@ XLSForms can include additional columns in the survey worksheet for more advance
 | trigger | The trigger column can be used to run a calculation only when the response to another visible question in the form is changed. For more information, see <a href="https://xlsform.org/en/#trigger">XLSForm documentation</a>. | 
 | body::accept | To limit the accepted file types for `file` questions, specify file extensions in the `body::accept` column, separated by a comma (e.g., .pdf, .doc). | 
 
-Other columns can also be added to incorporate form logic into your XLSForm. To learn more about adding form logic, see [Adding skip logic in XLSForm](https://support.kobotoolbox.org/skip_logic_xls.html), [Adding constraints in XLSForm](https://support.kobotoolbox.org/constraints_xls.html), [Adding required logic in XLSForm](https://support.kobotoolbox.org/required_logic_xls.html), [Adding choice filters in XLSForm](https://support.kobotoolbox.org/choice_filters_xls.html), and [Adding calculations in XLSForm](https://support.kobotoolbox.org/calculations_xls.html).
+Other columns can also be added to incorporate form logic into your XLSForm. 
+
+<p class="note">
+    To learn more about adding form logic, see <a href="https://support.kobotoolbox.org/skip_logic_xls.html">Adding skip logic in XLSForm</a>, <a href="https://support.kobotoolbox.org/constraints_xls.html">Adding constraints in XLSForm</a>, <a href="https://support.kobotoolbox.org/required_logic_xls.html">Adding required logic in XLSForm</a>, <a href="https://support.kobotoolbox.org/choice_filters_xls.html">Adding choice filters in XLSForm</a>, and <a href="https://support.kobotoolbox.org/calculations_xls.html">Adding calculations in XLSForm</a>.
+</p>
