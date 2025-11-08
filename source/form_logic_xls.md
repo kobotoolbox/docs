@@ -33,7 +33,7 @@ If a question reference includes a spelling error or is otherwise incorrect, an 
 **survey worksheet**
 
 | type     | name            | label                                                                 | constraint              |
-|-----------|-----------------|------------------------------------------------------------------------|--------------------------|
+|:-----------|:-----------------|:------------------------------------------------------------------------|:--------------------------|
 | integer   | household_size  | How many people live in your household?                                |                          |
 | integer   | total_under18   | Out of the ${household_size} people, how many are under the age of 18? | . < ${household_size}    |
 | survey | 
@@ -43,7 +43,7 @@ If a question reference includes a spelling error or is otherwise incorrect, an 
 **Mathematical operators** are used to perform arithmetic calculations using numerical values in the form. Mathematical operators in XLSForm include: 
 
 | Operator | Description                     |
-|-----------|---------------------------------|
+|:-----------|:---------------------------------|
 | `+`       | Addition                        |
 | `-`       | Subtraction                     |
 | `*`       | Multiplication                  |
@@ -53,7 +53,7 @@ If a question reference includes a spelling error or is otherwise incorrect, an 
 **Comparison operators** are used to compare values. Comparison operators in XLSForm include: 
 
 | Operator | Description                  |
-|-----------|------------------------------|
+|:-----------|:------------------------------|
 | `=`       | Equal to                     |
 | `>`       | Greater than                 |
 | `<`       | Less than                    |
@@ -71,7 +71,7 @@ If a question reference includes a spelling error or is otherwise incorrect, an 
 **survey worksheet**
 
 | type     | name           | label                                | constraint                         |
-|-----------|----------------|--------------------------------------|------------------------------------|
+|:-----------|:----------------|:--------------------------------------|:------------------------------------|
 | integer   | household_size | How many people live in your household? |                                    |
 | integer   | total_under18  | How many are under the age of 18?    | . < ${household_size} <strong>and</strong> . >= 0   |
 | survey |
