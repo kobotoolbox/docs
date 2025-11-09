@@ -20,7 +20,7 @@ The following functions are some of the most frequently used in XLSForm. They he
 | `count-selected(${question_name})` | Returns the number of options selected in a `select_multiple` question. |
 | `coalesce(${question1}, ${question2})` | Returns the first non-empty value of the two arguments. Returns an empty string if both are empty or non-existent. |
 | `jr:choice-name(choice_name, '${question_name}')` | Returns the label value, in the active language, associated with the `choice_name` in the list of choices for a select type question. To retrieve the label of whichever response was selected, use `jr:choice-name(${question_name}, '${question_name}')`. |
-| `selected-at(${question_name}, n)` | Returns a selected choice in a `select_multiple` question at the nth position. For example, `selected-at(${question_name}, 2)` returns the second choice selected in a `select_multiple` question. |
+| `selected-at(${question_name}, n)` | Returns a selected choice in a `select_multiple` question at the n<sup>th</sup> position. For example, `selected-at(${question_name}, 2)` returns the second choice selected in a `select_multiple` question. |
 | `once(expression)` | Evaluates an expression only once (e.g., to ensure a random number is only generated once, or to store the first value entered for a question even if the response is changed later). |
 | `instance('list_name')/root/item[name = ${question}]/column_name` | Retrieves a value from the choices sheet. Searches the choice list named `list_name`, finds the row where the choice `name` matches the response to `${question}`, and returns the value from the column specified as `column_name`. |
 
@@ -34,12 +34,11 @@ The following functions are used to perform mathematical operations or transform
 | `round(number, places)` | Rounds a decimal value to a predetermined number of decimal places. |
 | `pow(number, power)` | Calculates the power of a number. |
 | `number(x)` | Converts x (a string or boolean expression) to a number value. |
-| `log(number)` | Returns the natural log of a number. |
-| `log10(number)` | Returns the base-10 log of a number. |
+| `log(number)` <br> `log10(number)` | Returns the natural log or base-10 log of a number. |
 | `abs(number)` | Returns the absolute value of a number. |
 | `sin(number)` <br> `asin(number)` <br> `cos(number)` <br> `acos(number)` <br> `tan(number)` <br> `atan(number)` | Returns the sine/arc sine, cosine/arc cosine, or tangent/arc tangent of a number. |
 | `sqrt(number)` | Returns the square root of a number. |
-| `exp(x)` <br> `exp10(x)` | Returns e^x. |
+| `exp(x)` <br> `exp10(x)` | Returns e^x or 10^x. |
 | `pi()` | Returns an approximation of the mathematical constant π. |
 
 <p class="note">
@@ -73,8 +72,8 @@ The following functions are used to record, format, and calculate date and time 
 | `today()` | Returns the current date without a time component. |
 | `now()` | Returns the current date and time in ISO 8601 format, including the timezone. |
 | `date('YYYY-MM-DD')` | Forces dates into the correct date format (especially for dates before 1970). |
-| `format-date(date, format)` | Returns date as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%Y</code>: 4-digit year</li><li><code>%y</code>: 2-digit year</li><li><code>%m</code>: 0-padded month</li><li><code>%n</code>: numeric month</li><li><code>%b</code>: short text month (Jan, Feb, Mar…)</li><li><code>%d</code>: 0-padded day of month</li><li><code>%e</code>: day of month</li><li><code>%a</code>: short text day (Sun, Mon, Tue…)</li></ul> |
-| `format-date-time(dateTime, format)` | Returns dateTime as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%H</code>: 0-padded hour (24-hr time)</li><li><code>%h</code>: hour (24-hr time)</li><li><code>%M</code>: 0-padded minute</li><li><code>%S</code>: 0-padded second</li><li><code>%3</code>: 0-padded millisecond ticks</li></ul> |
+| `format-date(date, format)` | Returns date as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%Y</code>: 4-digit year</li><li><code>%y</code>: 2-digit year</li><li><code>%m</code>: 0-padded month</li><li><code>%n</code>: numeric month</li><li><code>%b</code>: short text month (Jan, Feb, Mar…)</li><li><code>%d</code>: 0-padded day of month</li><li><code>%e</code>: day of month</li><li><code>%a</code>: short text day (Sun, Mon, Tue…).</li></ul> |
+| `format-date-time(dateTime, format)` | Returns dateTime as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%H</code>: 0-padded hour (24-hr time)</li><li><code>%h</code>: hour (24-hr time)</li><li><code>%M</code>: 0-padded minute</li><li><code>%S</code>: 0-padded second</li><li><code>%3</code>: 0-padded millisecond ticks.</li></ul> |
 
 
 ## Functions to manipulate GPS data
