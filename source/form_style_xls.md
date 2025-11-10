@@ -31,10 +31,10 @@ The following themes are available to customize your forms:
 
 | XLSForm theme                | Description                                                                 | Preview |
 |:-----------------------------|:----------------------------------------------------------------------------|:--------|
-| Default style                | Displays questions one after another, on a single page.                     | ![Default style](images/form_style_xls/.png) |
-| <code>pages</code>           | Displays one question per screen or a group of questions together on the same screen, similar to the KoboCollect layout. | ![Pages style](images/form_style_xls/.png) |
-| <code>theme-grid</code>      | An alternative display that is more compact, similar to paper forms, and efficiently uses space, arranging multiple questions per row. Questions are capitalized by default. Requires setting up your XLSForm. | ![Theme-grid](path/to/theme_grid_image.png) |
-| <code>theme-grid no-text-transform</code> | Same as theme-grid, but without automatic capitalization of questions. | ![Theme-grid no-text-transform](images/form_style_xls/.png) |
+| Default style                | Displays questions one after another, on a single page.                     | ![Default style](images/form_style_xls/theme_default.png) |
+| <code>pages</code>           | Displays one question per screen or a group of questions together on the same screen, similar to the KoboCollect layout. | ![Pages style](images/form_style_xls/theme_grid.png) |
+| <code>theme-grid</code>      | An alternative display that is more compact, similar to paper forms, and efficiently uses space, arranging multiple questions per row. Questions are capitalized by default. Requires setting up your XLSForm. | ![Theme-grid](images/form_style_xls/theme_grid_no_text_transform.png) |
+| <code>theme-grid no-text-transform</code> | Same as theme-grid, but without automatic capitalization of questions. | ![Theme-grid no-text-transform](images/form_style_xls/theme_pages.png) |
 
 ### Setting up XLSForm for theme_grid
 
