@@ -68,18 +68,18 @@ You can use Markdown and HTML in XLSForm to style text, add emphasis with bold o
 Text styling features in XLSForm include:
 | Feature        | Formatting |
 |:---------------|:-----------|
-| Italics        | *italics* or _italics_ |
-| Bold           | **bold** or __bold__ |
-| Hyperlink      | [name of link](url) |
+| Italics        | `*italics*` or `_italics_` |
+| Bold           | `**bold**` or `__bold__` |
+| Hyperlink      | `[name of link](url)` |
 | Headers        | # Header 1 (biggest) to ###### Header 6 (smallest) |
 | Bullet lists   | - This is an unordered list<br>- in markdown |
 | Numbered lists | 1. This is a numbered list<br>2. in markdown |
 | Emojis         | For example, 🙂 😐 🙁 😦 😧 😩 😱 |
-| Superscript    | <code>100 m<sup>2</sup></code> turns into 100 m² |
-| Subscript      | <code>H<sub>2</sub>O</code> turns into H₂O |
-| Colored text   | <code><span style="color:#f58a1f">orange</span></code><br><code><span style="color:red">red</span></code> |
-| Font           | <code><span style="font-family:cursive">cursive</span></code><br><code><span style="color:red; font-family:cursive">red and cursive</span></code> |
-| Align center   | <code><p style="text-align:center">Centered label</p></code> |
+| Superscript    | `100 m<sup>2</sup>` turns into 100 m² |
+| Subscript      | `H<sub>2</sub>O` turns into H₂O |
+| Colored text   | `<span style="color:#f58a1f">orange</span>`<br>`<span style="color:red">red</span>` |
+| Font           | `<span style="font-family:cursive">cursive</span>`<br>`<span style="color:red; font-family:cursive">red and cursive</span>`|
+| Align center   | `<p style="text-align:center">Centered label</p>` |
 
 <p class="note">
 <strong>Note:</strong> Use the <code>\</code> character before <code>#</code>, <code>*</code>, <code>_</code>, and <code>\</code> to prevent special styling effects from being triggered by these characters.
