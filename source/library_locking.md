@@ -121,6 +121,7 @@ To define locking profiles in your XLSForm:
 | choice_order_edit   |           | locked    |           |
 | question_delete     | locked    | locked    |           |
 | form_appearance     |           |           | locked    |
+| kobo--locking-profiles |
 
 ### Applying profiles in the survey worksheet
 
