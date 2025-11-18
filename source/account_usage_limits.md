@@ -7,13 +7,14 @@
 - **Storage limit:** The total size of photos, audio, videos, and files collected with your surveys or imported in project **Settings > Media.**
 - **Transcription and translation limit:** The number of [transcription minutes and translation characters](https://support.kobotoolbox.org/transcription-translation.html) available for audio recordings.
 
-f your account exceeds its usage limits, certain features will be temporarily unavailable until you reduce your usage or upgrade your plan. This article explains what happens when you reach account limits and how to resume normal activity.
+If your account exceeds its usage limits, certain features will be temporarily unavailable until you reduce your usage or upgrade your plan. This article explains what happens when you reach account limits and how to resume normal activity.
 
 <p class="note">
   To learn more about KoboToolbox plans and limits, see <a href="https://www.kobotoolbox.org/pricing/">Pricing</a>.
 </p>
 
 ## Account restrictions
+
 When your account exceeds its storage or submission limit, you cannot **receive new submissions, modify submissions,** or **transfer projects** to other users. 
 
 If you attempt to submit data to one of your projects or another user attempts to submit data to one of your projects while your account is over its limits, an error message will be displayed.
