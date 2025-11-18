@@ -43,7 +43,7 @@ To manage your storage usage, you can:
 - Purchase a **File Storage** add-on in **Account Settings > Add-ons.**
 - Delete [media attachments](https://support.kobotoolbox.org/deleting_media.html) from projects you own until your usage is within your plan's limits, starting with larger attachments such as videos.
 
-![Manage storage](source/images/account_usage_limits/Exceeding_storage_and_submission_limits.png)
+![Manage storage](images/account_usage_limits/Exceeding_storage_and_submission_limits.png)
 
 <p class="note">
   <strong>Note:</strong> If your account stays over the storage limit for <strong>more than 28 days</strong>, KoboToolbox will begin deleting media attachments (not submissions), starting with the oldest files. To avoid losing files, download any important media or upgrade your plan before this deadline.
@@ -67,5 +67,5 @@ To manage your transcription and translation quota, you can:
 - Purchase an **NLP Package** add-on in **Account Settings > Add-ons.**
 - Delay transcription and translation until your quota renews at the start of the next billing cycle.
 
-![NLP add-on](source/images/account_usage_limits/NLP_add_on.png) 
+![NLP add-on](images/account_usage_limits/NLP_add_on.png) 
 
