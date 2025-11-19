@@ -17,7 +17,9 @@ For help with markdown or HTML formatting, see [this guide](https://www.markdown
 
 After creating a new article, don't forget to add it to the [index.rst](https://github.com/kobotoolbox/docs/blob/master/source/index.rst) file.
 
-<span style="color:#f58a1f">orange</span>
+`<span style="color:#f58a1f">orange</span>` turns into <span style="color:#f58a1f">orange</span>
+<span style="font-family:cursive">cursive</span>
+<span style="color:red; font-family:cursive">red and cursive</span>
 
 <br/> 
 
