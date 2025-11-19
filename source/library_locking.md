@@ -201,7 +201,7 @@ When you open the project in the Formbuilder:
 </ul>
 </details>
 
-<br>
+<br><br>
 
 <details>
   <summary><strong>Caveats and limitations</strong></summary>
