@@ -17,6 +17,10 @@ This article covers the following steps:
 - Generating a named export
 - Retrieving the synchronous export link
 - Connecting your data to an external application & authentication
+
+<p class="note">
+    For an introduction to the KoboToolbox API, see <a href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
+</p>
   
 ## Generating a named export
 
