@@ -2,6 +2,7 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recently_updated.md" class="reference">28 Oct 2025</a>
 
 1. [Form Settings and Metadata](form_meta.md) (19 Nov 2025)
+1. [Article title](article_template.md) (19 Nov 2025)
 1. [﻿Using the API for synchronous exports](synchronous_exports.md) (19 Nov 2025)
 1. [Getting started with the API](api.md) (4 Nov 2025)
 1. [Quickstart guide](quick_start.md) (27 Oct 2025)
@@ -10,4 +11,3 @@
 1. [KoboToolbox data security measures: Keeping your data safe](is_my_data_safe.md) (9 Oct 2025)
 1. [Using the Team management feature](getting_started_organization_feature.md) (3 Oct 2025)
 1. [Adding validation criteria in the Formbuilder](validation_criteria.md) (2 Oct 2025)
-1. [Adding skip logic in the Formbuilder](skip_logic.md) (30 Sep 2025)
