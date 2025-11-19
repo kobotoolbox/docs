@@ -71,15 +71,15 @@ Text styling features in XLSForm include:
 | Italics        | `*italics*` or `_italics_` |
 | Bold           | `**bold**` or `__bold__` |
 | Hyperlink      | `[name of link](url)` |
-| Headers        | # Header 1 (biggest) to ###### Header 6 (smallest) |
+| Headers        | `# Header 1` (biggest) to `###### Header 6` (smallest) |
 | Bullet lists   | - This is an unordered list<br>- in markdown |
 | Numbered lists | 1. This is a numbered list<br>2. in markdown |
 | Emojis         | For example, 🙂 😐 🙁 😦 😧 😩 😱 |
 | Superscript    | `100 m<sup>2</sup>` turns into 100 m² |
 | Subscript      | `H<sub>2</sub>O` turns into H₂O |
 | Colored text   | `<span style="color:#f58a1f">orange</span>` turns into <span style="color:#f58a1f">orange</span> <br>`<span style="color:red">red</span>` turns into <span style="color:red">red</span> |
-| Font           | `<span style="font-family:cursive">cursive</span>`<br>`<span style="color:red; font-family:cursive">red and cursive</span>`|
-| Align center   | `<p style="text-align:center">Centered label</p>` |
+| Font           | `<span style="font-family:cursive">cursive</span>` turns into <span style="font-family:cursive">cursive</span> <br>`<span style="color:red; font-family:cursive">red and cursive</span>` turns into <span style="color:red; font-family:cursive">red and cursive</span>|
+| Align center   | `<p style="text-align:center">Centered label</p>` centers the text on the screen |
 
 <p class="note">
 <strong>Note:</strong> Use the <code>\</code> character before <code>#</code>, <code>*</code>, <code>_</code>, and <code>\</code> to prevent special styling effects from being triggered by these characters.
