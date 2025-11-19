@@ -136,6 +136,7 @@ Once you have defined locking profiles in the **kobo--locking-profiles** workshe
 |:-------------------------|:--------|:------------------|:--------------------|
 | select_one country        | country | Select your country | profile_1           |
 | select_one city           | city    | Select your city   | profile_2           |
+| survey | 
 
 ### Applying profiles in the settings worksheet
 
