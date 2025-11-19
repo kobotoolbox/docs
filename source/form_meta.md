@@ -1,5 +1,5 @@
 # Form Settings and Metadata
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/95722122b505a99f0697eb0fa8a405ceaae9b829/source/form_meta.md" class="reference">19 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e86e7d8a6cc6528808cea9efbb18b772b0c56df4/source/form_meta.md" class="reference">19 Nov 2025</a>
 
 
 In the formbuilder, there are a number of optional configurations you can set
