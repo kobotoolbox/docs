@@ -77,7 +77,7 @@ Text styling features in XLSForm include:
 | Emojis         | For example, 🙂 😐 🙁 😦 😧 😩 😱 |
 | Superscript    | `100 m<sup>2</sup>` turns into 100 m² |
 | Subscript      | `H<sub>2</sub>O` turns into H₂O |
-| Colored text   | `<span style="color:#f58a1f">orange</span>`<br>`<span style="color:red">red</span>` |
+| Colored text   | `<span style="color:#f58a1f">orange</span>` turns into <span style="color:#f58a1f">orange</span> <br>`<span style="color:red">red</span>` turns into <span style="color:red">red</span> |
 | Font           | `<span style="font-family:cursive">cursive</span>`<br>`<span style="color:red; font-family:cursive">red and cursive</span>`|
 | Align center   | `<p style="text-align:center">Centered label</p>` |
 
