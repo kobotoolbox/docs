@@ -1,7 +1,6 @@
 # "Photo", "Audio", "Video" and "File" question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/photo_audio_video_file.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/27c3e37a283d79de0cbecebbf3a41d5b6ba6d7df/source/photo_audio_video_file.md" class="reference">11 Sep 2023</a>
 
-<a href="es/photo_audio_video_file.html">Leer en español</a> | <a href="fr/photo_audio_video_file.html">Lire en français</a> | <a href="ar/photo_audio_video_file.html">اقرأ باللغة العربية</a>
 
 With KoboToolbox, you can collect different types of media as part of your data
 collection project.

@@ -1,5 +1,4 @@
 # Solución de problemas de formularios web de Enketo
-<a href="../troubleshooting_webforms.html">Read in English</a> | <a href="../fr/troubleshooting_webforms.html">Lire en français</a> | <a href="../ar/troubleshooting_webforms.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/troubleshooting_webforms.md" class="reference">15 Feb 2022</a>
 
 Los [formularios web de Enketo](enketo.md) funcionan en todos los dispositivos ya que se abren en navegadores web regulares y permiten la recolección de datos en línea o sin conexión. En general, recomendamos encarecidamente la última versión de todos los

@@ -1,5 +1,4 @@
 # التحقق من صحة السجلات
-<a href="../record_validation.html">Read in English</a> | <a href="../fr/record_validation.html">Lire en français</a> | <a href="../es/record_validation.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/d5cdd698b4a91c3c45216f5a0f91ff7f0704a495/source/record_validation.md" class="reference">19 يونيو 2020</a>
 
 يمكن لمالك المشروع الآن منح إذن "يمكنه التحقق من الصحة" لمستخدمين آخرين. يمكن للمستخدمين الذين لديهم هذا الإذن عرض السجل وتحريره إذا لزم الأمر وتعيين حالة للسجل المعني. يؤدي تعيين حالة لسجل/إرسال معين إلى رفع معايير جمع البيانات للفرق التي تضم أكثر من عداد واحد.

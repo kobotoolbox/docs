@@ -1,5 +1,4 @@
 # Utilisation de la fonctionnalité de gestion d'équipe
-<a href="../getting_started_organization_feature.html">Read in English</a> | <a href="../es/getting_started_organization_feature.html">Leer en español</a> | <a href="../ar/getting_started_organization_feature.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/7f800b38e7b07803e7abd456195dd5519b03240e/source/getting_started_organization_feature.md" class="reference">3 oct. 2025</a>
 
 La nouvelle fonctionnalité de gestion d'équipe vous permet de centraliser la gestion des projets et des utilisatrices et utilisateurs pour une meilleure supervision et collaboration au sein de grandes équipes distribuées. Lorsque vous ajoutez des utilisatrices et utilisateurs à votre équipe dans KoboToolbox, vous aurez accès à la visualisation et à la gestion de leurs projets. Les utilisatrices et utilisateurs de votre équipe auront accès aux quotas d'utilisation de votre plan Teams ou Enterprise, et la propriété de leurs projets sera transférée à votre équipe.

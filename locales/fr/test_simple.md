@@ -1,5 +1,4 @@
 # Premiers pas avec la collecte de données
-<a href="../test_simple.html">Read in English</a> | <a href="../es/test_simple.html">Leer en español</a> | <a href="../ar/test_simple.html">اقرأ باللغة العربية</a>
 
 La collecte de données est une partie essentielle de tout projet de recherche ou d'enquête. Ce guide vous aidera à comprendre les bases de KoboToolbox.
 

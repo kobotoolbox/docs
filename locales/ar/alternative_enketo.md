@@ -1,5 +1,4 @@
 # استخدام أنماط نماذج Enketo البديلة على الويب
-<a href="../alternative_enketo.html">Read in English</a> | <a href="../fr/alternative_enketo.html">Lire en français</a> | <a href="../es/alternative_enketo.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/347a1280aadb22c9aebf88650fd6efa1bcadbcdf/source/alternative_enketo.md" class="reference">24 سبتمبر 2025</a>
 
 يمكن تخصيص نماذج Enketo على الويب في طريقة عرض أسئلتك.

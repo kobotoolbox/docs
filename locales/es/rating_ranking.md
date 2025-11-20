@@ -1,5 +1,4 @@
 # Tipos de preguntas de calificación vs clasificación
-<a href="../rating_ranking.html">Read in English</a> | <a href="../fr/rating_ranking.html">Lire en français</a> | <a href="../ar/rating_ranking.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/52b766d4117ffc86d840202aa2a51d1daf4cd15d/source/rating_ranking.md" class="reference">19 Jun 2020</a>
 
 ## ¿Cuál es la diferencia entre las preguntas de clasificación y calificación?

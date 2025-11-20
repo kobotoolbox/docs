@@ -1,5 +1,4 @@
 # Tipo de Pregunta Avanzada de Cálculo
-<a href="../advanced_calculate.html">Read in English</a> | <a href="../fr/advanced_calculate.html">Lire en français</a> | <a href="../ar/advanced_calculate.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/advanced_calculate.md" class="reference">2 de diciembre de 2021</a>
 
 Algunos formularios avanzados pueden requerir que se realice un cálculo interno como parte del formulario (en lugar de después durante el análisis). Esto se puede hacer agregando un **Cálculo** y escribiendo la expresión matemática en el campo de etiqueta de la pregunta.

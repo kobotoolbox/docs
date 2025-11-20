@@ -1,7 +1,6 @@
 # Using Public Collections
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/using_public_collections.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8f6b969a2b7812779940875ace1100d741729d70/source/using_public_collections.md" class="reference">11 Sep 2023</a>
 
-<a href="es/using_public_collections.html">Leer en español</a> | <a href="fr/using_public_collections.html">Lire en français</a> | <a href="ar/using_public_collections.html">اقرأ باللغة العربية</a>
 
 Obtaining the right information often depends on asking the right questions.
 **Public Collections** helps us all improve our data collection by making sets

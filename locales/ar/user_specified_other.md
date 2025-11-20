@@ -1,5 +1,4 @@
 # إجابات "أخرى" يحددها المستخدم لأسئلة الاختيار من متعدد
-<a href="../user_specified_other.html">Read in English</a> | <a href="../fr/user_specified_other.html">Lire en français</a> | <a href="../es/user_specified_other.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/user_specified_other.md" class="reference">15 فبراير 2022</a>
 
 إنشاء إجابات "أخرى" يحددها المستخدم لأسئلة الاختيار من متعدد في خطوة واحدة هي ميزة موجودة حالياً في خارطة طريق تطوير KoboToolbox. في هذه الأثناء، إليك كيفية إنشائها في النموذج الخاص بك يدوياً باستخدام منطق التخطي.

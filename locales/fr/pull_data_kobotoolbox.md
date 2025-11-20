@@ -1,5 +1,4 @@
 # Fonctionnalité Pull Data dans KoboToolbox
-<a href="../pull_data_kobotoolbox.html">Read in English</a> | <a href="../es/pull_data_kobotoolbox.html">Leer en español</a> | <a href="../ar/pull_data_kobotoolbox.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/202f8e0e134d0695913bf6c5d5b52449c5e61e5d/source/pull_data_kobotoolbox.md" class="reference">18 août 2025</a>
 
 Cette opération se fait de préférence sur la version xls du formulaire.

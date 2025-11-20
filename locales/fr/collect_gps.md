@@ -1,5 +1,4 @@
 # Collecte de localisations GPS
-<a href="../collect_gps.html">Read in English</a> | <a href="../es/collect_gps.html">Leer en español</a> | <a href="../ar/collect_gps.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/collect_gps.md" class="reference">29 juil. 2025</a>
 
 Les coordonnées de localisation peuvent être collectées facilement dans tous les formulaires avec les types de réponse « GPS ».

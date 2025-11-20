@@ -1,5 +1,4 @@
 # Liste des types de questions
-<a href="../question_types.html">Read in English</a> | <a href="../es/question_types.html">Leer en español</a> | <a href="../ar/question_types.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/3993133bcf0aafda0b0978709534175cb583e049/source/question_types.md" class="reference">28 oct. 2024</a>
 
 Le tableau ci-dessous fournit un résumé général de chacun des types de réponse disponibles pour une utilisation dans votre XLSForm et l'interface de création de formulaires :

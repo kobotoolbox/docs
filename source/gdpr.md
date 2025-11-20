@@ -1,7 +1,6 @@
 # General Data Protection Regulation (GDPR)
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/gdpr.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2c18fa51ed6877e610d5a81c722f8010df110183/source/gdpr.md" class="reference">14 Mar 2023</a>
 
-<a href="es/gdpr.html">Leer en español</a> | <a href="fr/gdpr.html">Lire en français</a> | <a href="ar/gdpr.html">اقرأ باللغة العربية</a>
 
 ## What is GDPR?
 

@@ -1,5 +1,4 @@
 # Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo
-<a href="../external_file.html">Read in English</a> | <a href="../fr/external_file.html">Lire en français</a> | <a href="../ar/external_file.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/87ff8377b846dacb801191e0b619126a563040a9/source/external_file.md" class="reference">28 ago 2025</a>
 
 En algunos casos, puede ser deseable alojar una lista de opciones de respuesta en un

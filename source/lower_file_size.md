@@ -1,7 +1,6 @@
 # Lowering the File Size of Collected Media
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/lower_file_size.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/lower_file_size.md" class="reference">15 Feb 2022</a>
 
-<a href="es/lower_file_size.html">Leer en español</a> | <a href="fr/lower_file_size.html">Lire en français</a> | <a href="ar/lower_file_size.html">اقرأ باللغة العربية</a>
 
 When your form collects more than one image or you are collecting tens of
 thousands of records, you could face difficulties generating the Media

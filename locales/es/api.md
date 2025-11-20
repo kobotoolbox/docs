@@ -1,5 +1,4 @@
 # Primeros pasos con la API
-<a href="../api.html">Read in English</a> | <a href="../fr/api.html">Lire en français</a> | <a href="../ar/api.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/24c740499cf305ed0e9bece1dde237b9b23a05c0/source/api.md" class="reference">15 Sep 2025</a>
 
 Una **interfaz de programación de aplicaciones (API)** permite que dos componentes de software se comuniquen mediante un conjunto de definiciones y protocolos. Con una API, un script o aplicación puede trabajar con KoboToolbox sin usar la interfaz web. Por ejemplo, puedes generar automáticamente exportaciones de datos que se vinculen a fuentes externas como paneles de control o carpetas de respaldo.

@@ -1,7 +1,6 @@
 # Custom Formatting in Web Forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/custom_format_web.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/custom_format_web.md" class="reference">15 Feb 2022</a>
 
-<a href="es/custom_format_web.html">Leer en español</a> | <a href="fr/custom_format_web.html">Lire en français</a> | <a href="ar/custom_format_web.html">اقرأ باللغة العربية</a>
 
 _Please note: Custom formatting does work on the KoboCollect android
 application._

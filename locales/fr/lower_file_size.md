@@ -1,5 +1,4 @@
 # Réduire la taille des fichiers multimédias collectés
-<a href="../lower_file_size.html">Read in English</a> | <a href="../es/lower_file_size.html">Leer en español</a> | <a href="../ar/lower_file_size.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/lower_file_size.md" class="reference">15 fév. 2022</a>
 
 Lorsque votre formulaire collecte plus d'une image ou que vous collectez des dizaines de milliers d'enregistrements, vous pourriez rencontrer des difficultés pour générer le fichier ZIP des pièces jointes multimédias si vous n'ajustez pas les paramètres de qualité d'image avant de commencer la collecte de données.

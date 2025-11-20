@@ -1,5 +1,4 @@
 # استخدام المجموعات العامة
-<a href="../using_public_collections.html">Read in English</a> | <a href="../fr/using_public_collections.html">Lire en français</a> | <a href="../es/using_public_collections.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/8f6b969a2b7812779940875ace1100d741729d70/source/using_public_collections.md" class="reference">11 سبتمبر 2023</a>
 
 غالبًا ما يعتمد الحصول على المعلومات الصحيحة على طرح الأسئلة الصحيحة.

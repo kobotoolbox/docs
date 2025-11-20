@@ -1,5 +1,4 @@
 # إضافة لغة أخرى في لوحة تحكم المشروع
-<a href="../language_dashboard.html">Read in English</a> | <a href="../fr/language_dashboard.html">Lire en français</a> | <a href="../es/language_dashboard.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/a412eff1342fa59da1fe2ffe1e10c1829b2e5e94/source/language_dashboard.md" class="reference">1 نوفمبر 2022</a>
 
 هناك طريقتان لإضافة لغات متعددة إلى النموذج الخاص بك. يمكنك إما إضافتها وإدارتها مباشرة من خلال لوحة تحكم المشروع عبر الإنترنت أو يمكنك إضافتها في [نموذج XLS ورفعه إلى Kobo](language_xls.md).

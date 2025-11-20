@@ -1,5 +1,4 @@
 # البدء في استخدام أداة إنشاء النماذج في KoboToolbox
-<a href="../formbuilder.html">Read in English</a> | <a href="../fr/formbuilder.html">Lire en français</a> | <a href="../es/formbuilder.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/3603101b7e96b31f44788dcc0f9e72115c9a1c4b/source/formbuilder.md" class="reference">28 أغسطس 2025</a>
 
 <iframe src="https://www.youtube.com/embed/PFL1_rBB5Q8?si=RkwB2XGHppAK-RRF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

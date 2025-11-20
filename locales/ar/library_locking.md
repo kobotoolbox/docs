@@ -1,5 +1,4 @@
 # قفل المكتبة
-<a href="../library_locking.html">Read in English</a> | <a href="../fr/library_locking.html">Lire en français</a> | <a href="../es/library_locking.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/de5e7dcfcec534ba447ee21ff65cf9fff07723f2/source/library_locking.md" class="reference">30 سبتمبر 2025</a>
 
 يشير "قفل المكتبة" إلى الميزة التي تمكّن من "[قفل](#locked)" جوانب مختلفة من الاستبيان عند إنشائه من قالب يحتوي على [سمات القفل](#restrictions). جميع جوانب تحرير النموذج متاحة للقفل من خلال تعيين "[ملفات تعريف القفل](#profile)" على مستوى النموذج أو السؤال أو المجموعة. يمكن تعيين "[قيود](#restriction)" دقيقة لملفات تعريف القفل هذه والتي تجمع وظائف القفل معًا. بدلاً من ذلك، يمكن قفل النموذج بالكامل، مما يمنع جميع جوانب التحرير.

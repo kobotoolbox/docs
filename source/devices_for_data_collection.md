@@ -1,5 +1,5 @@
 # Recommended Devices for Data Collection
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/devices_for_data_collection.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a19866f2bcf05d3646beb9350085d33adfe39f89/source/devices_for_data_collection.md" class="reference">24 Sep 2025</a>
 
 KoboCollect works on any Android phone or tablet running Android 5.1 or higher. Starting in 2026, Android 8.0 or higher will be required for new app versions. The last available version for older devices will still be available in the Play Store and on [GitHub](https://github.com/kobotoolbox/collect/releases).
 

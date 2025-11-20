@@ -1,5 +1,4 @@
 # تكامل KoboToolbox على monday.com
-<a href="../kobotoolbox_monday_integration.html">Read in English</a> | <a href="../fr/kobotoolbox_monday_integration.html">Lire en français</a> | <a href="../es/kobotoolbox_monday_integration.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/kobotoolbox_monday_integration.md" class="reference">3 مايو 2024</a>
 
 <p class="note">

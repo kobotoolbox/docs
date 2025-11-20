@@ -1,7 +1,6 @@
 # Form Settings and Metadata
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/form_meta.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e86e7d8a6cc6528808cea9efbb18b772b0c56df4/source/form_meta.md" class="reference">19 Nov 2025</a>
 
-<a href="es/form_meta.html">Leer en español</a> | <a href="fr/form_meta.html">Lire en français</a> | <a href="ar/form_meta.html">اقرأ باللغة العربية</a>
 
 In the formbuilder, there are a number of optional configurations you can set
 for your project. You can access these by clicking on the **Layout & Settings**
@@ -23,19 +22,14 @@ during the normal data collection process:
 
 | Metadata         | Description                                                                                                                                                |
 | :--------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Start Time       | Date and time when opening the form (timestamp)                                                                                                            |
-| End Time         | Date and time when finishing the form ("Submit" button pressed)                                                                                            |
-| Today            | The date of the form's submission                                                                                                                          |
-| Username         | The username of the enumerator if [authentication is used](managing_permissions.md#requiring-passwords-for-accessing-enketo-web-forms) for data collection |
-| Audit            | Record an audit log while the form is being completed. Learn more about audit logging [here](audit_logging.md)                                             |
-| Background Audio | Record audio in the background                                                                                             |
-| Device ID        | IMEI (International Mobile Equipment Identity)                                                                                                             |
-| Phone Number\*   | The cellphone number of the data collection device                                                                                                         |
-
-<p class="note">
-  The Phone Number meta question is only captured on mobile devices that have a
-  SIM card.
-</p>
+| Start Time       | Records the exact time and date when a submission is started.                                                                                              |
+| End Time         | Records the date and time when a submission is finalized.                                                                                                  |
+| Today            | Records the date of the submission.                                                                                                                        |
+| Username         | In KoboCollect, records the username saved in the [KoboCollect app settings](https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings). If no username is set, it records the one used to sign in to the server. In Enketo, records the account username only if [authentication is required](https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication).<br><br>**Note:** Because the username field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the automatically generated `_submitted_by` field. |
+| Audit            | Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo. Learn more about audit logging [here](audit_logging.md)                                             |
+| Background Audio | Records [audio in the background](https://support.kobotoolbox.org/recording-interviews.html) while a form is open.                                                                                                                         |
+| Device ID        | Records the unique identification of the device or browser used to collect data. The device ID is automatically generated and cannot be modified by users.<br><br>**Note:** In KoboCollect, the device ID is updated whenever the app is reinstalled on a device. In Enketo, the device ID resets any time a new browser window is used.                                                                        |
+| Phone Number   | Records the phone number stored in the [KoboCollect app settings](https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings). This metadata question is not supported in Enketo.   |
 
 ### Adding form metadata in XLSForm
 

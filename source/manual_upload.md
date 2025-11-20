@@ -1,7 +1,6 @@
 # Manually Uploading Submissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/manual_upload.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/20273bf768ef8d800b55bacef5af057845b1559d/source/manual_upload.md" class="reference">6 Sep 2023</a>
 
-<a href="es/manual_upload.html">Leer en español</a> | <a href="fr/manual_upload.html">Lire en français</a> | <a href="ar/manual_upload.html">اقرأ باللغة العربية</a>
 
 <p class="note">Please note this is still an experimental feature and it does
 not prevent you from creating duplicate submissions.</p>

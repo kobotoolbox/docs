@@ -1,5 +1,4 @@
 # Créer des numéros de série uniques dans les formulaires
-<a href="../unique_serial_numbers.html">Read in English</a> | <a href="../es/unique_serial_numbers.html">Leer en español</a> | <a href="../ar/unique_serial_numbers.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/unique_serial_numbers.md" class="reference">29 juil. 2025</a>
 
 Il arrive que vous souhaitiez générer un numéro de série unique pour chaque formulaire d'un projet. Cet article présente différentes solutions pour créer des numéros de série uniques en utilisant le type de question `calculate`.

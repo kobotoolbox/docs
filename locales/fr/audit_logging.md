@@ -1,5 +1,4 @@
 # Type de méta-question Audit Logging
-<a href="../audit_logging.html">Read in English</a> | <a href="../es/audit_logging.html">Leer en español</a> | <a href="../ar/audit_logging.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/audit_logging.md" class="reference">29 juil. 2025</a>
 
 L'Audit Logging peut être un outil utile pour surveiller le comportement des enquêtrices et enquêteurs et découvrir quelles questions prennent plus de temps à répondre, mieux comprendre comment les enquêtrices et enquêteurs naviguent dans un certain formulaire, et voir quelles enquêtrices et quels enquêteurs prennent généralement plus de temps pour soumettre des réponses.

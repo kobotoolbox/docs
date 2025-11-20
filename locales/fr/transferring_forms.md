@@ -1,5 +1,4 @@
 # Transférer manuellement des formulaires et des données d'un appareil Android à un autre
-<a href="../transferring_forms.html">Read in English</a> | <a href="../es/transferring_forms.html">Leer en español</a> | <a href="../ar/transferring_forms.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/7def5f54e2441b05b4a2163e682bdd146fa781e1/source/transferring_forms.md" class="reference">24 Sep 2025</a>
 
 Il peut arriver que vous soyez sur le terrain sans connexion Internet, mais que vous ayez quand même besoin d'importer la dernière version des formulaires (c'est-à-dire les derniers formulaires déployés sur le serveur) sur votre appareil. Il se peut également que vous ne puissiez pas importer les soumissions de formulaires sur le serveur en raison d'un écran cassé. Dans les deux scénarios, vous devrez transférer manuellement les formulaires et/ou les soumissions en utilisant un autre appareil. Cet article d'assistance vous montrera comment procéder.

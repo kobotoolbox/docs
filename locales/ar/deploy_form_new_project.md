@@ -1,5 +1,4 @@
 # نشر نموذج لبدء مشروع جمع بيانات جديد
-<a href="../deploy_form_new_project.html">Read in English</a> | <a href="../fr/deploy_form_new_project.html">Lire en français</a> | <a href="../es/deploy_form_new_project.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/a14700f771e43d4c8576ee8081f23d197cdd5110/source/deploy_form_new_project.md" class="reference">24 سبتمبر 2025</a>
 
 بمجرد أن تصبح جاهزًا لبدء أو تجريب جمع البيانات لمشروع معين، انقر على زر **نشر** لجعل النموذج مباشرًا والسماح ببدء جمع البيانات.

@@ -1,7 +1,6 @@
 # KoboToolbox Integration on monday.com
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/kobotoolbox_monday_integration.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/kobotoolbox_monday_integration.md" class="reference">3 May 2024</a>
 
-<a href="es/kobotoolbox_monday_integration.html">Leer en español</a> | <a href="fr/kobotoolbox_monday_integration.html">Lire en français</a> | <a href="ar/kobotoolbox_monday_integration.html">اقرأ باللغة العربية</a>
 
 <p class="note">
 This article outlines the early release of the integration between KoboToolbox

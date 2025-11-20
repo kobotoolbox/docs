@@ -84,11 +84,11 @@ jobs:
       - name: Build Spanish documentation
         run: sphinx-build -b html locales/es _build/html/es
 
-      - name: Build French documentation
-        run: sphinx-build -b html locales/fr _build/html/fr
+      # - name: Build French documentation
+      #   run: sphinx-build -b html locales/fr _build/html/fr
 
-      - name: Build Arabic documentation
-        run: sphinx-build -b html locales/ar _build/html/ar
+      # - name: Build Arabic documentation
+      #   run: sphinx-build -b html locales/ar _build/html/ar
 
       - name: Disable Jekyll
         run: touch _build/html/.nojekyll

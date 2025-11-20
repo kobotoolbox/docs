@@ -1,5 +1,4 @@
 # اللائحة العامة لحماية البيانات (GDPR)
-<a href="../gdpr.html">Read in English</a> | <a href="../fr/gdpr.html">Lire en français</a> | <a href="../es/gdpr.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/2c18fa51ed6877e610d5a81c722f8010df110183/source/gdpr.md" class="reference">14 مارس 2023</a>
 
 ## ما هي اللائحة العامة لحماية البيانات (GDPR)؟

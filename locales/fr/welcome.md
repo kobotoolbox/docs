@@ -1,5 +1,4 @@
 # Introduction à KoboToolbox
-<a href="../welcome.html">Read in English</a> | <a href="../es/welcome.html">Leer en español</a> | <a href="../ar/welcome.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/6b49e25820efe5bf632a3eabc9f1cdea33fda532/source/welcome.md" class="reference">15 Oct 2025</a>
 
 KoboToolbox est une plateforme open source innovante pour collecter, gérer et visualiser des données. C'est l'outil de données le plus largement utilisé pour les initiatives à impact social à travers le monde.

@@ -1,5 +1,4 @@
 # إضافة معايير التحقق في واجهة إنشاء النماذج
-<a href="../validation_criteria.html">Read in English</a> | <a href="../fr/validation_criteria.html">Lire en français</a> | <a href="../es/validation_criteria.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/9c216c0650cac549ce4c2836cb5b8a588a47357a/source/validation_criteria.md" class="reference">2 أكتوبر 2025</a>
 
 <iframe src="https://www.youtube.com/embed/ya9usVpEo9Q?si=-rDzXcCRazcY0Bws" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

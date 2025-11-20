@@ -1,5 +1,4 @@
 # Type de question Code-barres/Code QR
-<a href="../barcode_qrcode_questions.html">Read in English</a> | <a href="../es/barcode_qrcode_questions.html">Leer en español</a> | <a href="../ar/barcode_qrcode_questions.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/c5889af525a55f27747f919a026f9b7103f5c180/source/barcode_qrcode_questions.md" class="reference">24 Sep 2025</a>
 
 Le type de question « Code-barres/Code QR » est utilisé pour scanner, décoder et capturer des codes-barres et des codes QR à l'aide de l'appareil photo de l'appareil. Lorsqu'un code est scanné avec l'appareil photo, la valeur (qu'il s'agisse de chiffres ou de texte) stockée dans le code est capturée.

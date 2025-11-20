@@ -1,5 +1,4 @@
 # Premiers pas avec KoboCollect
-<a href="../kobocollect_on_android_latest.html">Read in English</a> | <a href="../es/kobocollect_on_android_latest.html">Leer en español</a> | <a href="../ar/kobocollect_on_android_latest.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/562abda7896f1c80c1863f158d61432fa915a52f/source/kobocollect_on_android_latest.md" class="reference">19 Sep 2025</a>
 
 <iframe src="https://www.youtube.com/embed/qC2Bz8jZkIM?si=xSyTOxOMR6nE8tum" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

@@ -1,5 +1,4 @@
 # استخدام خيارات الأسئلة
-<a href="../question_options.html">Read in English</a> | <a href="../fr/question_options.html">Lire en français</a> | <a href="../es/question_options.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/43a3384fad535287d1c7820457ab2d25a86877fc/source/question_options.md" class="reference">24 سبتمبر 2025</a>
 
 بعد إضافة سؤال، يمكنك إجراء العديد من التخصيصات المختلفة عليه باستخدام خيارات الأسئلة. للوصول إلى شاشة خيارات السؤال، انقر على زر <i class="k-icon k-icon-settings"></i> الإعدادات الخاص به.

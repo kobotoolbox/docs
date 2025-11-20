@@ -1,5 +1,4 @@
 # Télécharger des photos et autres médias
-<a href="../photo_download.html">Read in English</a> | <a href="../es/photo_download.html">Leer en español</a> | <a href="../ar/photo_download.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/photo_download.md" class="reference">29 Jul 2025</a>
 
 Si votre formulaire [inclut](question_types.md) une question de type photo, vidéo ou enregistrement audio, ces fichiers seront importés sur le serveur avec vos autres données. Lors de l'export de votre ensemble de données vers XLS ou CSV, ces fichiers incluront des références aux noms de fichiers des pièces jointes multimédias, mais pas les fichiers eux-mêmes. Pour télécharger tous vos fichiers multimédias en masse, choisissez l'option **Pièces jointes multimédias (ZIP)** sous **DONNÉES>Téléchargements>Sélectionner le type d'export**.

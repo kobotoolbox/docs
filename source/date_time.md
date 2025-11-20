@@ -1,7 +1,6 @@
 # Date and time question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/date_time.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c0db4b85c885da715ece9bd7c77707400b471f80/source/date_time.md" class="reference">28 Oct 2024</a>
 
-<a href="es/date_time.html">Leer en español</a> | <a href="fr/date_time.html">Lire en français</a> | <a href="ar/date_time.html">اقرأ باللغة العربية</a>
 
 There are 3 different date and time question types in KoboToolbox: “Date”,
 “Time” and “Date and time”.

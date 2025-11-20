@@ -1,5 +1,4 @@
 # سجلات النشاط
-<a href="../activity_logs.html">Read in English</a> | <a href="../fr/activity_logs.html">Lire en français</a> | <a href="../es/activity_logs.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/d6f09be2d6f022db661e2a4d9da0b962db44633e/source/activity_logs.md" class="reference">15 مايو 2025</a>
 
 سجلات النشاط هي سجلات رقمية تلتقط الإجراءات والأحداث المهمة في حساب KoboToolbox الخاص بك. توفر لك سجلات النشاط سجلاً تفصيلياً للوصول إلى الحساب ونشاط المشروع.

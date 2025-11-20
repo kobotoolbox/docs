@@ -1,5 +1,4 @@
 # Ajouter des calculs et des contraintes dans une question matricielle
-<a href="../calculations_constraints_matrix.html">Read in English</a> | <a href="../es/calculations_constraints_matrix.html">Leer en español</a> | <a href="../ar/calculations_constraints_matrix.html">اقرأ باللغة العربية</a>
 
 **Dernière mise à jour :**
 <a href="https://github.com/kobotoolbox/docs/blob/aaabdac8ec257d3157ec2ab2ceae65130e8c12d4/source/calculations_constraints_matrix.md" class="reference">14

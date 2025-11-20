@@ -1,5 +1,4 @@
 # Recolectar ubicaciones GPS
-<a href="../collect_gps.html">Read in English</a> | <a href="../fr/collect_gps.html">Lire en français</a> | <a href="../ar/collect_gps.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/collect_gps.md" class="reference">29 Jul 2025</a>
 
 Las coordenadas de ubicación se pueden recolectar fácilmente en todos los formularios con los tipos de respuesta 'GPS'.

@@ -1,5 +1,4 @@
 # Verrouillage de bibliothèque
-<a href="../library_locking.html">Read in English</a> | <a href="../es/library_locking.html">Leer en español</a> | <a href="../ar/library_locking.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/de5e7dcfcec534ba447ee21ff65cf9fff07723f2/source/library_locking.md" class="reference">30 Sep 2025</a>
 
 Le « verrouillage de bibliothèque » fait référence à la fonctionnalité permettant de « [verrouiller](#locked) » divers aspects d'une enquête lorsqu'elle est créée à partir d'un modèle contenant des [attributs de verrouillage](#restrictions). Tous les aspects de l'édition d'un formulaire peuvent être verrouillés grâce à l'attribution de « [profils de verrouillage](#profile) » au niveau du formulaire, de la question ou du groupe. Ces profils de verrouillage peuvent se voir attribuer des « [restrictions](#restriction) » granulaires qui regroupent les fonctionnalités de verrouillage. Alternativement, le formulaire peut être entièrement verrouillé, empêchant tous les aspects de l'édition.

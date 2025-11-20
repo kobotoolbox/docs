@@ -1,5 +1,4 @@
 # تضمين الإجابات داخل سؤال آخر
-<a href="../responses_inside_question.html">Read in English</a> | <a href="../fr/responses_inside_question.html">Lire en français</a> | <a href="../es/responses_inside_question.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/aca19282c9a46e952209d16a75fce9e800f6ea1c/source/responses_inside_question.md" class="reference">5 أكتوبر 2020</a>
 
 يمكنك تضمين إجابة سؤال معين (مثل تضمين إجابة السؤال "كم عمرك؟") داخل تسمية سؤال آخر. يمكن أن يكون هذا مفيداً لأسباب عديدة في النماذج المتقدمة. على سبيل المثال، قد ترغب في التأكد من أن الإجابة صحيحة فعلاً.

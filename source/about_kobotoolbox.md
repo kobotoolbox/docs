@@ -1,7 +1,6 @@
 # About KoboToolbox: Accessible data collection for everyone
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/about_kobotoolbox.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/deb4dee7804661e8219ceb760ff1923cbf105bde/source/about_kobotoolbox.md" class="reference">9 Sep 2025</a>
 
-<a href="es/about_kobotoolbox.html">Leer en español</a> | <a href="fr/about_kobotoolbox.html">Lire en français</a> | <a href="ar/about_kobotoolbox.html">اقرأ باللغة العربية</a>
 
 
 <iframe src="https://www.youtube.com/embed/oKtMmBAlHho?si=OqS7-rewYMf-Rrw2&cc_load_policy=1&cc_lang_pref=en&hl=en" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

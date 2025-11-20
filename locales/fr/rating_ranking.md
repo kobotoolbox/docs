@@ -1,5 +1,4 @@
 # Types de questions : Évaluation vs Classement
-<a href="../rating_ranking.html">Read in English</a> | <a href="../es/rating_ranking.html">Leer en español</a> | <a href="../ar/rating_ranking.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/52b766d4117ffc86d840202aa2a51d1daf4cd15d/source/rating_ranking.md" class="reference">19 juin 2020</a>
 
 ## Quelle est la différence entre les questions d'évaluation et de classement ?

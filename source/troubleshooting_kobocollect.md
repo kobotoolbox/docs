@@ -1,7 +1,6 @@
 # Troubleshooting KoboCollect Android Application
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/troubleshooting_kobocollect.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f6c6ac34b1fe55e7aab87f7b61c26e1607b4306b/source/troubleshooting_kobocollect.md" class="reference">24 Sep 2025</a>
 
-<a href="es/troubleshooting_kobocollect.html">Leer en español</a> | <a href="fr/troubleshooting_kobocollect.html">Lire en français</a> | <a href="ar/troubleshooting_kobocollect.html">اقرأ باللغة العربية</a>
 
 **-- Kindly report any uncovered issue on our
 [community forum](https://community.kobotoolbox.org/)--**

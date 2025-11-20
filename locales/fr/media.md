@@ -1,5 +1,4 @@
 # Ajouter différents types de médias (image, audio, vidéo) à un formulaire
-<a href="../media.html">Read in English</a> | <a href="../es/media.html">Leer en español</a> | <a href="../ar/media.html">اقرأ باللغة العربية</a>
 
 **Dernière mise à jour :**
 <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15

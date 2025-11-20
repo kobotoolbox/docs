@@ -1,5 +1,4 @@
 # Resumen del proyecto
-<a href="../project_summary.html">Read in English</a> | <a href="../fr/project_summary.html">Lire en français</a> | <a href="../ar/project_summary.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/fe255dc226ea120c8a6e4a6c3a378581d9b10bf3/source/project_summary.md" class="reference">28 de mayo de 2020</a>
 
 La pestaña Resumen del proyecto te ofrece una visualización de toda la información de alto nivel relacionada con tu proyecto. Dependiendo de si eres el/la propietario/a del proyecto o un/a usuario/a con permisos restringidos, se te mostrará información diferente. El Resumen del proyecto incluye:

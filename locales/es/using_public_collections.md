@@ -1,5 +1,4 @@
 # Uso de Colecciones públicas
-<a href="../using_public_collections.html">Read in English</a> | <a href="../fr/using_public_collections.html">Lire en français</a> | <a href="../ar/using_public_collections.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/8f6b969a2b7812779940875ace1100d741729d70/source/using_public_collections.md" class="reference">11 Sep 2023</a>
 
 Obtener la información correcta a menudo depende de hacer las preguntas correctas.

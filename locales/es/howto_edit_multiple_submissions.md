@@ -1,5 +1,4 @@
 # Editar respuestas en múltiples envíos
-<a href="../howto_edit_multiple_submissions.html">Read in English</a> | <a href="../fr/howto_edit_multiple_submissions.html">Lire en français</a> | <a href="../ar/howto_edit_multiple_submissions.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/509a98dad39e2899a5eff7e870481cf99749f321/source/howto_edit_multiple_submissions.md" class="reference">22 Sep 2022</a>
 
 Los/as usuarios/as siempre han podido editar envíos como se describe en nuestro artículo de ayuda

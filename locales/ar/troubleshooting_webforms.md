@@ -1,5 +1,4 @@
 # استكشاف أخطاء نماذج Enketo على الويب وإصلاحها
-<a href="../troubleshooting_webforms.html">Read in English</a> | <a href="../fr/troubleshooting_webforms.html">Lire en français</a> | <a href="../es/troubleshooting_webforms.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/troubleshooting_webforms.md" class="reference">15 فبراير 2022</a>
 
 تعمل [نماذج Enketo على الويب](enketo.md) على جميع الأجهزة حيث تُفتح في متصفحات الويب العادية وتتيح جمع البيانات عبر الإنترنت أو دون اتصال بالإنترنت. بشكل عام، نوصي بشدة باستخدام أحدث إصدار من جميع [المتصفحات الحديثة](https://enke.to/modern-browsers). يمكنك أيضًا زيارة [الأسئلة الشائعة لـ Enketo](https://enketo.org/faq/#browsers) لمعرفة المزيد حول _المتصفحات المدعومة والموصى بها_ من قِبل Enketo.

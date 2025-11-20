@@ -1,5 +1,4 @@
 # Encriptar formularios
-<a href="../encrypting_forms.html">Read in English</a> | <a href="../fr/encrypting_forms.html">Lire en français</a> | <a href="../ar/encrypting_forms.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/179faeb3c5a17b69406b0243ab9c22f7ca86aa44/source/encrypting_forms.md" class="reference">4 Nov 2024</a>
 
 _Este procedimiento es bastante técnico y está destinado a usuarios/as que se sienten cómodos/as

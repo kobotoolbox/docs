@@ -1,5 +1,4 @@
 # قائمة أنواع الأسئلة
-<a href="../question_types.html">Read in English</a> | <a href="../fr/question_types.html">Lire en français</a> | <a href="../es/question_types.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/3993133bcf0aafda0b0978709534175cb583e049/source/question_types.md" class="reference">28 أكتوبر 2024</a>
 
 يقدم الجدول أدناه ملخصًا عامًا لكل نوع من أنواع الإجابات المتاحة للاستخدام في XLSForm وأداة إنشاء النماذج:

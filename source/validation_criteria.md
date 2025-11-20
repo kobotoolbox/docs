@@ -1,7 +1,6 @@
 # Adding validation criteria in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/validation_criteria.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9c216c0650cac549ce4c2836cb5b8a588a47357a/source/validation_criteria.md" class="reference">2 Oct 2025</a>
 
-<a href="es/validation_criteria.html">Leer en español</a> | <a href="fr/validation_criteria.html">Lire en français</a> | <a href="ar/validation_criteria.html">اقرأ باللغة العربية</a>
 
 <iframe src="https://www.youtube.com/embed/ya9usVpEo9Q?si=-rDzXcCRazcY0Bws" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -1,7 +1,6 @@
 # Collecting Data Offline
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/data-offline.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7a8a18d56ea285b4b87535e367b407c1b7f54afc/source/data-offline.md" class="reference">24 Sep 2025</a>
 
-<a href="es/data-offline.html">Leer en español</a> | <a href="fr/data-offline.html">Lire en français</a> | <a href="ar/data-offline.html">اقرأ باللغة العربية</a>
 
 **All data collection can take place offline, both with KoboCollect and with Web
 Forms.**

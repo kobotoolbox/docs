@@ -1,5 +1,4 @@
 # Importar un XLSForm a través de URL
-<a href="../xls_url.html">Read in English</a> | <a href="../fr/xls_url.html">Lire en français</a> | <a href="../ar/xls_url.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/d14c3f76675d9085da27e1c5dd4fcf981a6b3a7d/source/xls_url.md" class="reference">7 ene 2025</a>
 
 Al importar un XLSForm a través de URL, asegúrate de que la URL apunte directamente al archivo XLS y que sea de acceso público. Una forma rápida de probar esto es cargar la URL en un navegador: debería activar la descarga del archivo. (Si carga una página en el navegador, entonces no es la URL correcta.)

@@ -1,7 +1,6 @@
 ﻿# Using the API for synchronous exports
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/synchronous_exports.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7c172c770c74096918880595e04fec7a0f4b4a3e/source/synchronous_exports.md" class="reference">19 Nov 2025</a>
 
-<a href="es/synchronous_exports.html">Leer en español</a> | <a href="fr/synchronous_exports.html">Lire en français</a> | <a href="ar/synchronous_exports.html">اقرأ باللغة العربية</a>
 
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -18,6 +17,10 @@ This article covers the following steps:
 - Generating a named export
 - Retrieving the synchronous export link
 - Connecting your data to an external application & authentication
+
+<p class="note">
+    For an introduction to the KoboToolbox API, see <a href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
+</p>
   
 ## Generating a named export
 

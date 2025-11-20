@@ -1,5 +1,4 @@
 # تحرير النماذج في Excel باستخدام XLSForm
-<a href="../edit_forms_excel.html">Read in English</a> | <a href="../fr/edit_forms_excel.html">Lire en français</a> | <a href="../es/edit_forms_excel.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/edit_forms_excel.md" class="reference">15 فبراير 2022</a>
 
 يقوم KoboToolbox ببناء نماذجه باستخدام معيار مشترك على نطاق واسع يسمى

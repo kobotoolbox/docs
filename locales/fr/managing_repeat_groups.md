@@ -1,5 +1,4 @@
 # Gestion des données de groupes répétés
-<a href="../managing_repeat_groups.html">Read in English</a> | <a href="../es/managing_repeat_groups.html">Leer en español</a> | <a href="../ar/managing_repeat_groups.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/cb137e68b19147fcd0331a6f7919f5563dcebeca/source/managing_repeat_groups.md" class="reference">21 août 2025</a>
 
 KoboToolbox vous permet de collecter des données répétées au sein d'un formulaire, par exemple lors de la réalisation d'une enquête auprès des ménages où les mêmes questions sont posées à tous les membres. Cet article explique comment visualiser, modifier et exporter les données de groupes répétés, et comment lier les données de groupes répétés aux données principales.

@@ -1,7 +1,6 @@
 # Adding Another Language in the Project Dashboard
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/language_dashboard.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a412eff1342fa59da1fe2ffe1e10c1829b2e5e94/source/language_dashboard.md" class="reference">1 Nov 2022</a>
 
-<a href="es/language_dashboard.html">Leer en español</a> | <a href="fr/language_dashboard.html">Lire en français</a> | <a href="ar/language_dashboard.html">اقرأ باللغة العربية</a>
 
 There are two methods to adding multiple languages to your form. You can either
 add and manage them directly through the online Project Dashboard or you can add

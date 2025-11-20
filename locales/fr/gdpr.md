@@ -1,5 +1,4 @@
 # Règlement général sur la protection des données (RGPD)
-<a href="../gdpr.html">Read in English</a> | <a href="../es/gdpr.html">Leer en español</a> | <a href="../ar/gdpr.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/2c18fa51ed6877e610d5a81c722f8010df110183/source/gdpr.md" class="reference">14 mars 2023</a>
 
 ## Qu'est-ce que le RGPD ?

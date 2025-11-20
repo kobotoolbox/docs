@@ -1,5 +1,4 @@
 # Eliminar un proyecto
-<a href="../delete_project.html">Read in English</a> | <a href="../fr/delete_project.html">Lire en français</a> | <a href="../ar/delete_project.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/delete_project.md" class="reference">15 Feb 2022</a>
 
 Hay dos formas de eliminar un proyecto y todos sus datos de tu cuenta.

@@ -1,5 +1,4 @@
 # رسم خرائط بيانات GPS ومشاركتها وتصديرها
-<a href="../export_gps.html">Read in English</a> | <a href="../fr/export_gps.html">Lire en français</a> | <a href="../es/export_gps.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/export_gps.md" class="reference">15 فبراير 2022</a>
 
 قد يتضمن مشروعك سؤالاً واحداً أو أكثر من أسئلة GPS في النموذج الخاص بك. سيُدرج KoboToolbox بيانات GPS (خط العرض، خط الطول، الارتفاع، الدقة) في مجموعة البيانات التي يمكن تنزيلها بصيغة XLS أو CSV. من الممكن أيضاً عرض إحداثيات GPS على خريطة إلكترونية وتنزيل النقاط كملف KML لاستخدامها في تطبيقات أخرى.

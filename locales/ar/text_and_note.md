@@ -1,5 +1,4 @@
 # أنواع أسئلة النص والملاحظة
-<a href="../text_and_note.html">Read in English</a> | <a href="../fr/text_and_note.html">Lire en français</a> | <a href="../es/text_and_note.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/4d3ba5b4639335723af5b5a376159a536c904323/source/text_and_note.md" class="reference">9 مايو 2022</a>
 
 يُستخدم نوع السؤال "نص" بشكل أفضل للأسئلة التي تتطلب إجابات غير محددة أو

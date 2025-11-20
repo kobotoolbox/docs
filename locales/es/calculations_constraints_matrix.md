@@ -1,5 +1,4 @@
 # Añadir Cálculos y Restricciones en una Pregunta de Matriz
-<a href="../calculations_constraints_matrix.html">Read in English</a> | <a href="../fr/calculations_constraints_matrix.html">Lire en français</a> | <a href="../ar/calculations_constraints_matrix.html">اقرأ باللغة العربية</a>
 
 **Última actualización:**
 <a href="https://github.com/kobotoolbox/docs/blob/aaabdac8ec257d3157ec2ab2ceae65130e8c12d4/source/calculations_constraints_matrix.md" class="reference">14

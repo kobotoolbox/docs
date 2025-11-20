@@ -1,5 +1,4 @@
 # نوع الاستجابة مصفوفة الأسئلة
-<a href="../matrix_response.html">Read in English</a> | <a href="../fr/matrix_response.html">Lire en français</a> | <a href="../es/matrix_response.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/matrix_response.md" class="reference">29 يوليو 2025</a>
 
 يتيح نوع الاستجابة مصفوفة الأسئلة للمستخدمين إنشاء مجموعة من الأسئلة

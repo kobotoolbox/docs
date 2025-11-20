@@ -1,5 +1,4 @@
 # إضافة شعار مخصص
-<a href="../add_logo.html">Read in English</a> | <a href="../fr/add_logo.html">Lire en français</a> | <a href="../es/add_logo.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/add_logo.md" class="reference">29 يوليو 2025</a>
 
 إضافة شعار مخصص إلى أعلى النموذج الخاص بك عملية بسيطة وتتبع بشكل أساسي نفس الخطوات المتبعة في [إضافة محتوى الوسائط إلى النماذج الخاصة بك](media.md).

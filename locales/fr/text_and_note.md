@@ -1,5 +1,4 @@
 # Types de questions Texte et Note
-<a href="../text_and_note.html">Read in English</a> | <a href="../es/text_and_note.html">Leer en español</a> | <a href="../ar/text_and_note.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/4d3ba5b4639335723af5b5a376159a536c904323/source/text_and_note.md" class="reference">9 mai 2022</a>
 
 Le type de question « Texte » est particulièrement adapté aux questions nécessitant des réponses ouvertes ou non définies, telles que des noms, des commentaires, des explications ou des descriptions.

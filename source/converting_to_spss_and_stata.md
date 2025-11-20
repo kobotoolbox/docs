@@ -1,7 +1,6 @@
 # Converting Data into SPSS and/or Stata
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/converting_to_spss_and_stata.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/converting_to_spss_and_stata.md" class="reference">15 Feb 2022</a>
 
-<a href="es/converting_to_spss_and_stata.html">Leer en español</a> | <a href="fr/converting_to_spss_and_stata.html">Lire en français</a> | <a href="ar/converting_to_spss_and_stata.html">اقرأ باللغة العربية</a>
 
 <p class="note">
   This article helps you convert your data into <strong>SPSS</strong> and

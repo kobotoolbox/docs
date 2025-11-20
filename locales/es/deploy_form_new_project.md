@@ -1,5 +1,4 @@
 # Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos
-<a href="../deploy_form_new_project.html">Read in English</a> | <a href="../fr/deploy_form_new_project.html">Lire en français</a> | <a href="../ar/deploy_form_new_project.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/a14700f771e43d4c8576ee8081f23d197cdd5110/source/deploy_form_new_project.md" class="reference">24 Sep 2025</a>
 
 Una vez que estés listo/a para comenzar o pilotear tu recolección de datos para un

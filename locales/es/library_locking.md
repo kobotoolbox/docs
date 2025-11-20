@@ -1,5 +1,4 @@
 # Bloqueo de biblioteca
-<a href="../library_locking.html">Read in English</a> | <a href="../fr/library_locking.html">Lire en français</a> | <a href="../ar/library_locking.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/de5e7dcfcec534ba447ee21ff65cf9fff07723f2/source/library_locking.md" class="reference">30 Sep 2025</a>
 
 "Bloqueo de biblioteca" se refiere a la funcionalidad que permite que varios aspectos de una encuesta sean "[bloqueados](#locked)" cuando se crean a partir de una plantilla que contiene

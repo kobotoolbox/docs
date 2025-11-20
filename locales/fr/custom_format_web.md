@@ -1,5 +1,4 @@
 # Formatage personnalisé dans les formulaires Web
-<a href="../custom_format_web.html">Read in English</a> | <a href="../es/custom_format_web.html">Leer en español</a> | <a href="../ar/custom_format_web.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/custom_format_web.md" class="reference">15 février 2022</a>
 
 _Veuillez noter : Le formatage personnalisé fonctionne sur l'application Android KoboCollect._

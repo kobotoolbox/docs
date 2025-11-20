@@ -1,5 +1,4 @@
 # Utilisation des balises HXL
-<a href="../hxl.html">Read in English</a> | <a href="../es/hxl.html">Leer en español</a> | <a href="../ar/hxl.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/hxl.md" class="reference">29 juil. 2025</a>
 
 ## Qu'est-ce que HXL exactement ?

@@ -1,5 +1,4 @@
 # نوع السؤال المتقدم للحساب
-<a href="../advanced_calculate.html">Read in English</a> | <a href="../fr/advanced_calculate.html">Lire en français</a> | <a href="../es/advanced_calculate.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/c2e8c882fdd831549c2f7f4474a9d522bafc181b/source/advanced_calculate.md" class="reference">2 ديسمبر 2021</a>
 
 قد تتطلب بعض النماذج المتقدمة إجراء عملية حسابية داخلية كجزء من النموذج (بدلاً من إجرائها لاحقاً أثناء التحليل). يمكن القيام بذلك عن طريق إضافة **حساب**، وكتابة التعبير الرياضي في حقل تسمية السؤال.

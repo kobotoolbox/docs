@@ -1,5 +1,4 @@
 # Uso de las opciones de preguntas
-<a href="../question_options.html">Read in English</a> | <a href="../fr/question_options.html">Lire en français</a> | <a href="../ar/question_options.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/43a3384fad535287d1c7820457ab2d25a86877fc/source/question_options.md" class="reference">24 Sep 2025</a>
 
 Después de agregar una pregunta, hay muchas personalizaciones diferentes que puedes hacerle usando las opciones de preguntas. Para acceder a la pantalla de opciones de preguntas de una pregunta, haz clic en su botón <i class="k-icon k-icon-settings"></i> Configuración.

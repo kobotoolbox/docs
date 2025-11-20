@@ -1,5 +1,4 @@
 # استكشاف أخطاء رابط تفعيل الحساب وإصلاحها
-<a href="../activation_link.html">Read in English</a> | <a href="../fr/activation_link.html">Lire en français</a> | <a href="../es/activation_link.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/0e5a784bc21dd79ac926f958b3cbb238d64ecc53/source/activation_link.md" class="reference">23 سبتمبر 2025</a>
 
 بعد إنشاء حسابك، سيتم إرسال رابط التفعيل إلى عنوان البريد الإلكتروني الذي قدمته. يجب عليك النقر على هذا الرابط في غضون 72 ساعة لتفعيل حسابك.

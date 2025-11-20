@@ -1,5 +1,4 @@
 # Tipos de preguntas de fecha y hora
-<a href="../date_time.html">Read in English</a> | <a href="../fr/date_time.html">Lire en français</a> | <a href="../ar/date_time.html">اقرأ باللغة العربية</a>
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/c0db4b85c885da715ece9bd7c77707400b471f80/source/date_time.md" class="reference">28 Oct 2024</a>
 
 Hay 3 tipos diferentes de preguntas de fecha y hora en KoboToolbox: "Fecha",

@@ -1,11 +1,5 @@
 # Calculate Question Type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/calculate_questions.md" class="reference">28 Oct 2025</a>
-
-<a href="es/calculate_questions.html">Leer en español</a> | <a href="fr/calculate_questions.html">Lire en français</a> | <a href="ar/calculate_questions.html">اقرأ باللغة العربية</a>
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/calculate_questions.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/calculate_questions.md" class="reference">15 Feb 2022</a>
 
 Some advanced forms may require an internal calculation to take place as part of
 the form (rather than afterwards during the analysis). This can be done by

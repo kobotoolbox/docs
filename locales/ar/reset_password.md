@@ -1,5 +1,4 @@
 # إعادة تعيين كلمات المرور
-<a href="../reset_password.html">Read in English</a> | <a href="../fr/reset_password.html">Lire en français</a> | <a href="../es/reset_password.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/855616c6ac4634f2dc835438697aab6869c7f11a/source/reset_password.md" class="reference">22 سبتمبر 2023</a>
 
 إذا نسيت أو فقدت كلمة مرور حسابك، يتيح لك KoboToolbox إعادة تعيينها بسهولة.

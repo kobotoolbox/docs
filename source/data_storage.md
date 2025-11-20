@@ -1,7 +1,6 @@
 # Data Storage
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/data_storage.md" class="reference">28 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/592a15ee470fa144eeac9850c6b6a648c4755306/source/data_storage.md" class="reference">11 Sep 2023</a>
 
-<a href="es/data_storage.html">Leer en español</a> | <a href="fr/data_storage.html">Lire en français</a> | <a href="ar/data_storage.html">اقرأ باللغة العربية</a>
 
 Whether you're using the [Global KoboToolbox Server](https://kf.kobotoolbox.org/) or the
 [European Union KoboToolbox Server](https://eu.kobotoolbox.org/), the data from

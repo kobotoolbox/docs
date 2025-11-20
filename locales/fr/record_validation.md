@@ -1,5 +1,4 @@
 # Validation des enregistrements
-<a href="../record_validation.html">Read in English</a> | <a href="../es/record_validation.html">Leer en español</a> | <a href="../ar/record_validation.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/d5cdd698b4a91c3c45216f5a0f91ff7f0704a495/source/record_validation.md" class="reference">19 juin 2020</a>
 
 Le propriétaire d'un projet peut désormais accorder une permission « Peut valider » à d'autres utilisatrices et utilisateurs. Les utilisatrices et utilisateurs disposant de cette permission peuvent consulter un enregistrement, le modifier si nécessaire et attribuer un statut à l'enregistrement en question. L'attribution d'un statut à un enregistrement/une soumission particulier améliore les normes de collecte de données pour les équipes comptant plus d'un enquêteur ou d'une enquêtrice.

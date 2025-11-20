@@ -1,5 +1,4 @@
 # تشفير النماذج
-<a href="../encrypting_forms.html">Read in English</a> | <a href="../fr/encrypting_forms.html">Lire en français</a> | <a href="../es/encrypting_forms.html">Leer en español</a>
 **آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/179faeb3c5a17b69406b0243ab9c22f7ca86aa44/source/encrypting_forms.md" class="reference">4 نوفمبر 2024</a>
 
 _هذا الإجراء تقني للغاية وموجه للمستخدمين الذين لديهم خبرة في التعليمات التقنية المتقدمة ويتطلب اهتمامًا دقيقًا بالتفاصيل._

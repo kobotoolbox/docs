@@ -1,5 +1,4 @@
 # Réponses « Autre » spécifiées par l'utilisatrice ou l'utilisateur pour les questions à choix multiples
-<a href="../user_specified_other.html">Read in English</a> | <a href="../es/user_specified_other.html">Leer en español</a> | <a href="../ar/user_specified_other.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/user_specified_other.md" class="reference">15 fév. 2022</a>
 
 La création de réponses « Autre » spécifiées par l'utilisatrice ou l'utilisateur pour les questions à choix multiples en une seule étape est une fonctionnalité qui figure actuellement dans la feuille de route de développement de KoboToolbox. En attendant, voici comment les créer manuellement dans votre formulaire en utilisant la logique de saut.

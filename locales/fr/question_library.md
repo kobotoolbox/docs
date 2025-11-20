@@ -1,5 +1,4 @@
 # Utiliser La bibliothèque de questions
-<a href="../question_library.html">Read in English</a> | <a href="../es/question_library.html">Leer en español</a> | <a href="../ar/question_library.html">اقرأ باللغة العربية</a>
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/385b471fb227f28575b67a450696cc8e4f4a3779/source/question_library.md" class="reference">2 juil. 2025</a>
 
 ## Ajouter des questions à votre bibliothèque

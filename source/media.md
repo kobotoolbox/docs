@@ -1,11 +1,5 @@
 # Adding Various Types of Media (image, audio, video) to a Form
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/01270a828ec846731411368326ba58114adda98e/source/media.md" class="reference">28 Oct 2025</a>
-
-<a href="es/media.html">Leer en español</a> | <a href="fr/media.html">Lire en français</a> | <a href="ar/media.html">اقرأ باللغة العربية</a>
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15 Feb 2022</a>
 
 In addition to text questions and text choices, you can also add various types
 of media (such as _image_, _audio_, and _video_) to your forms. Having media in
