@@ -16,7 +16,7 @@ This article explains how to add required logic conditions in XLSForm, including
 
 ## Adding required logic conditions
 
-Required logic uses <a href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">question referencing</a> to make questions required based on previous answers. The question used to define the relevance logic is referred to as the **reference question.**
+Required logic uses <a href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">question referencing</a> to make questions required based on previous answers. The question used to define the required logic is referred to as the **reference question.**
 
 To add required logic in XLSForm:
 1. Add a **required** column to the `survey` worksheet. 
@@ -36,7 +36,7 @@ If a respondent does not answer a required question, they will not be able to pr
 
 The format of the required logic condition will differ according to the **type** of the reference question, as detailed in the table below.
 
-| Reference question type | Skip logic condition | Example |
+| Reference question type | Required logic condition | Example |
 |:-------------------------|:--------------------|:---------|
 | select_one | `${reference_question} = 'choice_name'` | `${consent} = 'yes'` |
 | select_multiple | `selected(${reference_question}, 'choice_name')` | `selected(${reasons}, 'other')` |
@@ -51,9 +51,9 @@ To learn more about building form logic expressions in XLSForm, see <a href="htt
 
 In addition to setting required logic for a specific response, you can also base it on whether a question was answered or left blank. This is useful when you want to ensure that at least one of two questions is required.
 
-Unanswered questions are treated as empty strings, noted as two single apostrophes (‘’). The following skip logic conditions can be used:
+Unanswered questions are treated as empty strings, noted as two single apostrophes `''`. The following required logic conditions can be used:
 
-| Relevance logic condition | Description |
+| Required logic condition | Description |
 |:---------------------------|:-------------|
 | `${reference_question} != ''` | Require only if `reference_question` is answered (not blank). |
 | `${reference_question} = ''`  | Require only if `reference_question` is unanswered (blank). |
