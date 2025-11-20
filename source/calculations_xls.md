@@ -1,6 +1,6 @@
 # Adding calculations in XLSForm
 
-Calculations can be used inside your form to derive new variables, build advanced form logic, and display results to respondents during collection.
+Calculations can be used inside your form to derive new variables, build advanced form logic, and display results to respondents during data collection.
 
 Calculations are processed within the form, helping save time during data analysis. The results are stored as new columns in the final dataset and can be used throughout the form to apply [skip logic](https://support.kobotoolbox.org/skip_logic_xls.html), set [constraints](https://support.kobotoolbox.org/constraints_xls.html), or display [dynamic content](https://support.kobotoolbox.org/form_logic_xls.html#question-referencing) in question labels and notes.
 
@@ -40,7 +40,7 @@ To refer to the calculation output in the rest of your form (e.g., inside a note
 
 Calculations in XLSForm can range from simple arithmetic calculations to advanced derivation of variables.
 
-Arithmetic **calculations** allow you to perform basic calculations using the following **operators**:
+Arithmetic calculations allow you to perform basic calculations using the following **operators**:
 
 | Operator | Description |
 |:----------|:-------------|
@@ -50,14 +50,16 @@ Arithmetic **calculations** allow you to perform basic calculations using the fo
 | <strong>div</strong> | Division |
 | <strong>mod</strong> | Modulo (calculates the remainder of a division) |
 
-Calculations in XLSForm follow the **BODMAS** rule for the order of mathematical operations: **B**rackets, **O**rder of powers, **D**ivision, **M**ultiplication, **A**ddition, and **S**ubtraction. This means that calculations within brackets are performed first, followed by powers, then divisions, multiplications, and so on. Using brackets (also known as parentheses) correctly ensures that your calculations function as expected. 
+Calculations in XLSForm follow the **BODMAS** rule for the order of mathematical operations: **B**rackets, **O**rder of powers, **D**ivision, **M**ultiplication, **A**ddition, and **S**ubtraction. This means that calculations within brackets (or parentheses) are performed first, followed by powers, then divisions, multiplications, and so on. Using brackets correctly ensures that your calculations function as expected. 
 
 ## Advanced calculations
 
-Advanced calculations in XLSForm often rely on **functions** and **regular expressions** to make calculations more efficient. [Functions](https://support.kobotoolbox.org/functions_xls.html) are predefined operations used to automatically perform complex tasks like rounding values, calculating powers, or extracting the current date. [Regular expressions](https://support.kobotoolbox.org/restrict_responses.html) (regex) are search patterns used to match specific characters within a string of text.
+Advanced calculations in XLSForm often rely on **functions** and **regular expressions** to make calculations more efficient. 
+* **Functions** are predefined operations used to automatically perform complex tasks like rounding values, calculating powers, or extracting the current date.
+* **Regular expressions (regex)** are search patterns used to match specific characters within a string of text.
 
 <p class="note">
-  For a comprehensive list of functions available in XLSForm, see <a href="https://support.kobotoolbox.org/functions_xls.html">Using functions in XLSForm</a>.
+  For a comprehensive list of functions available in XLSForm, see <a href="https://support.kobotoolbox.org/functions_xls.html">Using functions in XLSForm</a>.  To learn more about regular expressions, see <a href="https://support.kobotoolbox.org/restrict_responses.html">Restricting text responses with regular expressions</a>.
 </p>
 
 Examples of more advanced calculations include:
@@ -142,8 +144,5 @@ Expressions are re-evaluated when:
   <li>A repeat group is added or deleted</li>
   <li>A form is saved or finalized</li>
 </ul>
-  To control when an expression is evaluated, set a <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">trigger</a> to evaluate it only when a given question is answered, or the function `once()` to ensure the expression is only evaluated once (e.g., <code>once(random())</code> or <code>once(today())</code>).
+  To control when an expression is evaluated, set a <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">trigger</a> to evaluate it only when a given question is answered, or the function <code>once()</code> to ensure the expression is only evaluated once (e.g., <code>once(random())</code> or <code>once(today())</code>).
 </details>
-
-<br>
-
