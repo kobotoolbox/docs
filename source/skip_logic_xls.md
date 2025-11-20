@@ -74,7 +74,7 @@ Multiple relevance conditions can be combined into a single expression to determ
 
 In addition to adding skip logic based on a specific response, you can add skip logic based on whether a question was answered or left blank. This can be useful to add follow-up questions, or when using [acknowledge questions](https://support.kobotoolbox.org/acknowledge.html) in your form.
 
-Unanswered questions are treated as empty strings, noted as two single apostrophes (‘’). The following skip logic conditions can be used:
+Unanswered questions are treated as empty strings, noted as two single apostrophes `''`. The following skip logic conditions can be used:
 
 | Skip logic condition | Description |
 |:---------------------|:-------------|
