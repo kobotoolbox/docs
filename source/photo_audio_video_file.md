@@ -74,7 +74,7 @@ If your project involves collecting a significant amount of media, you might enc
 
 To define the maximum size of images collected using the **Photo** question type:
 1. Open the question settings by clicking <i class="k-icon-settings"></i> **Settings** to the right of the question. This will take you to the **Question Options** tab.
-2. Set the **max-pixels** parameter to the value of your choice (e.g., 1000)
+2. Set the **max-pixels** parameter to the value of your choice (e.g., 1000).
 
 ![image](images/photo_audio_video_file/parameters.png)
 
@@ -94,7 +94,7 @@ By default, the **File** question type accepts all file types. To restrict the t
 
 <details>
   <summary><strong>Collecting multiple images or media files</strong></summary>
-  Media question types only support uploading one file at a time. To allow users to upload multiple files, you can place the media question within a repeat group, or duplicate the media question in the form as many times as needed. You can use <a href="">skip logic</a> to display subsequent media questions only if the previous one is not blank.
+  Media question types only support uploading one file at a time. To allow users to upload multiple files, you can place the media question within a repeat group, or duplicate the media question in the form as many times as needed. You can use <a href="https://support.kobotoolbox.org/skip_logic.html">skip logic</a> to display subsequent media questions only if the previous one is not blank.
 </details>
 
 <br>
