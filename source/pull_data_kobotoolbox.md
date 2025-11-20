@@ -18,7 +18,7 @@ This article covers the following steps for pulling data from an external CSV:
 
 To use `pulldata()`, first prepare an external CSV file containing the reference data you want to retrieve. Each row should represent a unique record (for example, a participant, location, or item) and the file should include at least two columns. One column must contain the **index variable** that matches the values entered in your form.
 
-The index variable acts as the [primary key](https://en.wikipedia.org/wiki/Primary_key) that links your XLSForm to the external CSV. It should be a unique identifier that exists in both files, such as a participant ID, a district name, or another matching code.
+The **index variable** acts as the [primary key](https://en.wikipedia.org/wiki/Primary_key) that links your XLSForm to the external CSV. It should be a unique identifier that exists in both files, such as a participant ID, a district name, or another matching code.
 
 The remaining columns can include any additional details you want to retrieve, such as names, categories, or descriptions. Ensure the CSV file is clean, consistently formatted, and saved with the `.csv` extension.
 
@@ -28,7 +28,7 @@ Once you have set up your external CSV, configure your XLSForm in the following 
 
 1. Ensure your XLSForm includes a question that serves as the **index variable**.
 2. Add a `calculate` field to your survey. Give the field a `name`.
-3. In the `calculation` column, use the **pulldata()** function to specify which field in the CSV to pull from. Use the following syntax: `pulldata(‘csv’,‘pull_from’, ‘csv_index’, ‘${survey_index}’)`.	
+3. In the `calculation` column, use the **pulldata()** function to specify which field in the CSV to pull from. Use the following syntax: `pulldata('csv','pull_from', 'csv_index', '${survey_index}')`.	
     - `csv` is the name of the CSV file, without the extension.
     - `pull_from` refers to the column in your CSV file that contains the data you want to import into your form.
     - `csv_index` is the column in your CSV file that contains the **index variable.**
@@ -90,7 +90,7 @@ The final step in linking your external CSV file to your form is uploading the f
 
 <details>
   <summary><strong>Pulling dates from external CSV files</strong></summary>
-  If you are storing dates in an external CSV file and want to pull them into a form, ensure they are in the format YYYY-MM-DD. If you are editing your CSV in Excel, add a single quote (') in front of the date to avoid automatic date formatting in Excel.
+  If you are storing dates in an external CSV file and want to pull them into a form, ensure they are in the format YYYY-MM-DD. If you are editing your CSV in Excel, add a single quote <code>'</code> in front of the date to avoid automatic date formatting in Excel.
 </details>
 
 <br>
