@@ -6,13 +6,13 @@ Many data collection projects require more than just quantitative data. KoboTool
 The following media question types are available in the KoboToolbox Formbuilder:
 
 | Question type | Description                     |
-|---------------|---------------------------------|
+|:---------------|:---------------------------------|
 | Photo         | Capture or upload an image      |
 | Audio         | Record or upload an audio file  |
 | Video         | Record or upload a video file   |
 | File          | Attach a file (e.g., .pdf, .docx) |
 
-The method of capturing or uploading media depends on whether you are using [KoboCollect]() or [Enketo web forms]() for data collection. In KoboCollect, you can either upload or record media files directly within the app. With Enketo, you can upload any media file, and record audio directly within the forms.
+The method of capturing or uploading media depends on whether you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [Enketo web forms](https://support.kobotoolbox.org/enketo.html) for data collection. In KoboCollect, you can either upload or record media files directly within the app. With Enketo, you can upload any media file, and record audio directly within the forms.
 
 <p class="note">
 <strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types in KoboCollect are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>. 
@@ -30,7 +30,7 @@ To add media questions:
 2. Type the question text and click **+ ADD QUESTION.**
 3. Choose the desired question type (Photo, Audio, Video, or File).
 
-![image](images/photo_audio_video_file/add.gif)
+![Add a media question to Formbuilder](images/photo_audio_video_file/add.gif)
 
 ## Appearances of media questions
 
@@ -40,12 +40,7 @@ Media questions can display differently depending on whether you are using Enket
 
 The table below shows how media questions are displayed by default in Enketo web forms and KoboCollect.
 
-| Question type | Enketo web forms | KoboCollect |
-|---------------|------------------|-------------|
-| Photo         | ![image](images/images/photo_audio_video_file/.png) | ![image](images/images/photo_audio_video_file/.png) |
-| Audio         | ![image](images/images/photo_audio_video_file/.png) | ![image](images/images/photo_audio_video_file/.png) |
-| Video         | ![image](images/images/photo_audio_video_file/.png) | ![image](images/images/photo_audio_video_file/.png) |
-| File          | ![image](images/images/photo_audio_video_file/.png) | ![image](images/images/photo_audio_video_file/.png) |
+![Default appearances of media questions](images/photo_audio_video_file/table.png)
 
 ### Advanced appearances 
 
@@ -54,7 +49,7 @@ Only the **Photo** question type supports advanced appearances. These appearance
 Available appearances include:
 
 | Appearance   | Description |
-|--------------|-------------|
+|:--------------|:-------------|
 | signature    | Allows the user to capture a signature by signing directly on the device's screen (e.g., for forms that require a digital signature for verification). |
 | draw         | Enables users to sketch or create drawings directly on the device’s screen (e.g., to capture illustrations or hand-drawn maps). |
 | annotate     | Allows the user to annotate an image by drawing or writing on it. |
@@ -64,9 +59,10 @@ Available appearances include:
 To add an advanced appearance:
 1. Open the question settings by clicking <i class="k-icon-settings"></i> **Settings** to the right of the question. This will take you to the **Question Options** tab.
 2. In **Appearance (Advanced)**, choose the desired appearance. 
-        - If the appearance is not listed, select **Other** and type the name of the appearance in the text box, exactly as written above.
+    
+    - If the appearance is not listed, select **Other** and type the name of the appearance in the text box, exactly as written above.
 
-![image](images/photo_audio_video_file/advanced_appearances_photo.png)
+![image](images/photo_audio_video_file/appearances.png)
 
 ## Parameters for media questions
 
@@ -80,7 +76,7 @@ To define the maximum size of images collected using the **Photo** question type
 1. Open the question settings by clicking <i class="k-icon-settings"></i> **Settings** to the right of the question. This will take you to the **Question Options** tab.
 2. Set the **max-pixels** parameter to the value of your choice (e.g., 1000)
 
-![image](images/photo_audio_video_file/max-pixels.png)
+![image](images/photo_audio_video_file/parameters.png)
 
 <p class="note">
 <strong>Note:</strong> You can also configure video resolution and image size in <a href="">KoboCollect settings</a>.
@@ -92,7 +88,7 @@ By default, the **File** question type accepts all file types. To restrict the t
 1. Open the question settings by clicking <i class="k-icon-settings"></i> **Settings** to the right of the question. This will take you to the **Question Options** tab.
 2. In the **Accepted Files** text box, list the file extensions that you would like to allow, separated by a comma (e.g., .doc, .pdf, .xlsx)
 
-![image](images/photo_audio_video_file/.png)
+![image](images/photo_audio_video_file/files.png)
 
 ## Troubleshooting
 
@@ -101,7 +97,7 @@ By default, the **File** question type accepts all file types. To restrict the t
   Media question types only support uploading one file at a time. To allow users to upload multiple files, you can place the media question within a repeat group, or duplicate the media question in the form as many times as needed. You can use <a href="">skip logic</a> to display subsequent media questions only if the previous one is not blank.
 </details>
 
-<br><br>
+<br>
 
 <details>
   <summary><strong>Audio recording in Enketo prevents access to other questions</strong></summary>
