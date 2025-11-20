@@ -93,9 +93,9 @@ The `kobo--lock_all` setting can be added to the **settings** worksheet of your 
 
 **settings worksheet**
 
-|   Name           | Value  |
-|:-----------------|:------|
-| kobo--lock_all   | TRUE  |
+|   kobo--lock_all       |
+|:----------------- |
+|   TRUE  |
 | settings | 
 
 ## Configuring library locking in XLSForm
@@ -121,7 +121,6 @@ To define locking profiles in your XLSForm:
 | choice_order_edit   |           | locked    |           |
 | question_delete     | locked    | locked    |           |
 | form_appearance     |           |           | locked    |
-| kobo--locking-profiles |
 
 ### Applying profiles in the survey worksheet
 
@@ -201,7 +200,7 @@ When you open the project in the Formbuilder:
 </ul>
 </details>
 
-<br><br>
+<br>
 
 <details>
   <summary><strong>Caveats and limitations</strong></summary>
@@ -214,6 +213,5 @@ When you open the project in the Formbuilder:
 
 </details>
 
-<br>
 
 
