@@ -1,6 +1,6 @@
 # Selecting options from a map
 
-With **select_one** and **select_one_from_file** question types, you can configure your XLSForm to let users select a choice directly from a map instead of a list. When the map opens, it displays all available points, lines, or polygons based on the choices provided. Users can then tap a feature on the map to record their selection. This functionality is **available only in KoboCollect.**
+With **select_one** and **select_one_from_file** question types, you can configure your XLSForm to let users select a choice directly from a map instead of a list. When the map opens, it displays all available points, lines, or polygons based on the choices provided. Users can then tap a feature on the map to record their selection. This functionality is available **only in KoboCollect.**
 
 This article explains how to configure your XLSForm to allow selecting options from a map, how to customize styling options such as colors, symbols, and line widths, and how choices are displayed and selected on the map.
 
@@ -70,12 +70,12 @@ Available choice properties include:
 
 | Choice property | Description |
 |:----------------|:------------|
-| info            | Text description of the choice. |
-| marker-color    | HEX color for the geopoint marker. |
-| marker-symbol   | Single character, symbol, or emoji displayed on the geopoint marker. |
-| stroke          | HEX color for the geotrace line or the geoshape polygon outline. |
-| stroke-width    | Width of the geotrace line or the geoshape polygon outline (e.g., 5 or 6.5). |
-| fill            | HEX color for the polygon interior. The fill color is displayed with fixed transparency. |
+| `info`            | Text description of the choice. |
+| `marker-color`    | HEX color for the geopoint marker. |
+| `marker-symbol`   | Single character, symbol, or emoji displayed on the geopoint marker. |
+| `stroke`          | HEX color for the geotrace line or the geoshape polygon outline. |
+| `stroke-width`    | Width of the geotrace line or the geoshape polygon outline (e.g., 5 or 6.5). |
+| `fill`            | HEX color for the polygon interior. The fill color is displayed with fixed transparency. |
 
 To add properties in the `choices` worksheet of your XLSForm:
 
