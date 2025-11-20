@@ -28,7 +28,7 @@ To add static choice filters in XLSForm:
     - This value will act as the filter. It can be any word or number.
 4. In the `survey` worksheet, add a **choice_filter** column. This column will contain the **choice filter expression** used to filter the option choices.
     - The choice filter expression in its most basic form will take the format: **filter = ‘value’.**
-    - For example, **q2 = ‘yes’** will retain all choices with **yes** in the `q2` column.
+    - For example, `q2 = ‘yes’` will retain all choices with **yes** in the `q2` column.
 
 ### Example
 
@@ -68,8 +68,8 @@ To add dynamic choice filters in XLSForm:
     - It can be helpful to name this column the same as the **parent question.**
 3. In the filter column, enter the **name of the choice** from the parent list that each option in the child list corresponds to.
 4. In the `survey` worksheet, add a **choice_filter** column. This column will contain the **choice filter expression** used to filter the option choices.
-    - If the parent question is `select_one`, the choice filter expression will be **filter_column =         ${question_name}**, where `question_name` refers to the parent question.
-    - If the parent question is `select_multiple`, the choice filter expression will be **selected(${question_name}, filter_column).**
+    - If the parent question is `select_one`, the choice filter expression will be `filter_column = ${question_name}`, where `question_name` refers to the parent question.
+    - If the parent question is `select_multiple`, the choice filter expression will be `selected(${question_name}, filter_column)`.
 
 When a respondent selects an option in the parent question, the choice list for the child question will be filtered to only include the corresponding choices.
 
@@ -82,7 +82,7 @@ In the example below, `continent` is the **parent question** and `country` is th
 | type              | name      | label     | choice_filter        |
 |:------------------|:---------|:----------|:--------------------|
 | select_one continent | continent | Continent |                     |
-| select_one country   | country   | Country   | continent = ${continent} |
+| select_one country   | country   | Country   | **continent = ${continent}** |
 | survey | 
 
 **choices worksheet**
@@ -102,7 +102,7 @@ In the example below, `continent` is the **parent question** and `country` is th
 You can create more advanced choice filters by using logical operators, mathematical operators, functions, and regex in your choice filter expressions. This allows for highly customized and precise filtering of options, tailoring the form to specific data collection requirements and respondent characteristics.
 
 <p class="note">
-<strong>Note:</strong> In advanced choice filter expressions, the `name` column of the `choices` spreadsheet can be used as a filter column.
+<strong>Note:</strong> In advanced choice filter expressions, the <code>name</code> column of the <code>choices</code> worksheet can be used as a filter column.
 </p>
 
 Examples of advanced choice filter expressions in XLSForm include:
@@ -161,7 +161,7 @@ In the resulting form, `Q2` will display only the options chosen in `Q1`, as sho
 
 <details>
   <summary><strong>Duplicate option names in a list</strong></summary>
-  If your choice list includes duplicate option names (for example, if the same neighborhood name is present in different cities), <a href="https://support.kobotoolbox.org/form_settings_xls.html">enable choice duplicates</a> in the `settings` worksheet by setting <code>`allow_choice_duplicates`</code> to <code>`yes`</code>.
+  If your choice list includes duplicate option names (for example, if the same neighborhood name is present in different cities), <a href="https://support.kobotoolbox.org/form_settings_xls.html">enable choice duplicates</a> in the <code>settings</code> worksheet by setting <code>allow_choice_duplicates</code> to <code>yes</code>.
 </details>
 
 
