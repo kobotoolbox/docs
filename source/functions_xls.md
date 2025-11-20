@@ -59,9 +59,9 @@ The following functions are used to create, modify, or analyze text strings in X
 | `substr(string, start[, end])` | Returns the substring of `string` beginning at the index start and extending to (but not including) index end (or to the termination of `string`, if end is not provided). |
 | `substring-before(string, target)` | Returns the substring of `string` before the first occurrence of the target substring. If the target is not found, or `string` begins with the target substring, then this will return an empty string. |
 | `substring-after(string, target)` | Returns the substring of `string` after the first occurrence of the target substring. If the target is not found this will return an empty string. |
-| `translate(string, fromchars, tochars)` | Returns a copy of string, where every occurrence of a character in `fromchars` is replaced by the corresponding character in `tochars` (e.g., replacing all lowercase letters with uppercase letters). <br><br> <strong>Note:</strong> If fromchars is longer than tochars, every occurrence of a character in `fromchars` that does not have a corresponding character in `tochars` will be removed. |
+| `translate(string, fromchars, tochars)` | Returns a copy of string, where every occurrence of a character in `fromchars` is replaced by the corresponding character in `tochars` (e.g., replacing all lowercase letters with uppercase letters). <br><br> <strong>Note:</strong> If `fromchars` is longer than `tochars`, every occurrence of a character in `fromchars` that does not have a corresponding character in `tochars` will be removed. |
 | `string-length(string)` | Returns the number of characters in `string` (e.g., to add a word limit to a text question). |
-| `normalize-space(string)` | Returns a string in which any leading and trailing whitespaces in string are removed, and sequences of whitespaces are replaced with a single space. |
+| `normalize-space(string)` | Returns a string in which any leading and trailing whitespaces in the string are removed, and sequences of whitespaces are replaced with a single space. |
 
 ## Functions to manipulate dates
 
@@ -72,8 +72,8 @@ The following functions are used to record, format, and calculate date and time 
 | `today()` | Returns the current date without a time component. |
 | `now()` | Returns the current date and time in ISO 8601 format, including the timezone. |
 | `date('YYYY-MM-DD')` | Forces dates into the correct date format (especially for dates before 1970). |
-| `format-date(date, format)` | Returns date as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%Y</code>: 4-digit year</li><li><code>%y</code>: 2-digit year</li><li><code>%m</code>: 0-padded month</li><li><code>%n</code>: numeric month</li><li><code>%b</code>: short text month (Jan, Feb, Mar…)</li><li><code>%d</code>: 0-padded day of month</li><li><code>%e</code>: day of month</li><li><code>%a</code>: short text day (Sun, Mon, Tue…).</li></ul> |
-| `format-date-time(dateTime, format)` | Returns dateTime as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%H</code>: 0-padded hour (24-hr time)</li><li><code>%h</code>: hour (24-hr time)</li><li><code>%M</code>: 0-padded minute</li><li><code>%S</code>: 0-padded second</li><li><code>%3</code>: 0-padded millisecond ticks.</li></ul> |
+| `format-date(date, format)` | Returns `date` as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%Y</code>: 4-digit year</li><li><code>%y</code>: 2-digit year</li><li><code>%m</code>: 0-padded month</li><li><code>%n</code>: numeric month</li><li><code>%b</code>: short text month (Jan, Feb, Mar…)</li><li><code>%d</code>: 0-padded day of month</li><li><code>%e</code>: day of month</li><li><code>%a</code>: short text day (Sun, Mon, Tue…).</li></ul> |
+| `format-date-time(datetime, format)` | Returns `datetime` as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%H</code>: 0-padded hour (24-hr time)</li><li><code>%h</code>: hour (24-hr time)</li><li><code>%M</code>: 0-padded minute</li><li><code>%S</code>: 0-padded second</li><li><code>%3</code>: 0-padded millisecond ticks.</li></ul> |
 
 
 ## Functions to manipulate GPS data
@@ -83,6 +83,6 @@ The following functions are used to work with geographic data collected through 
 | Function | Description |
 |:---------|:------------|
 | `area(${geoshape})` | Returns the area, in square meters, of a `geoshape` value. |
-| `distance(geo)` | Returns the distance, in meters, of either: <ul><li>the perimeter of a `geoshape`</li><li>the length of a `geotrace` value</li><li>a list of geopoints either specified as strings or references to other fields (including from repeat groups), separated by commas</li></ul> |
-| `geofence(${geopoint}, ${geoshape})` | Returns `True` if the specified ${geopoint} is inside the specified ${geoshape}, `False` otherwise. Supported only in KoboCollect. |
+| `distance(geo)` | Returns the distance, in meters, of either: <ul><li>the perimeter of a `geoshape` value</li><li>the length of a `geotrace` value</li><li>a list of geopoints either specified as strings or references to other fields (including from repeat groups), separated by commas</li></ul> |
+| `geofence(${geopoint}, ${geoshape})` | Returns `TRUE` if the specified ${geopoint} is inside the specified ${geoshape}, `FALSE` otherwise. Supported only in KoboCollect. |
 
