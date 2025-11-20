@@ -27,7 +27,7 @@ Question referencing uses the format **${question_name}**, where 	`question_name
 If a question reference includes a spelling error or is otherwise incorrect, an error message will appear when previewing or submitting the form.
 
 <p class="note">
-  <strong>Note:</strong> When referencing a question within its own logic (i.e., in its own row), a period `.` can be used as a shortcut.
+  <strong>Note:</strong> When referencing a question within its own logic (i.e., in its own row), a period <code>.</code> can be used as a shortcut.
 </p>
 
 **survey worksheet**
