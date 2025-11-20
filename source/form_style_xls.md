@@ -12,6 +12,8 @@ This article covers themes for Enketo web forms as well as styling options for n
 
 Enketo themes allow you to customize the appearance and layout of [Enketo web forms](https://support.kobotoolbox.org/enketo.html). Themes apply only to Enketo web forms and are not visible in KoboCollect.
 
+### Adding themes in XLSForm
+
 To add a theme in XLSForm:
 1. Add a **style** column in your `settings` worksheet.
 2. Specify the theme you want to use, using the exact name shown in the table below.
@@ -27,16 +29,18 @@ To add a theme in XLSForm:
 <strong>Note:</strong> Themes can be combined by entering both themes in the same cell of the <code>style</code> column, separated by a space (e.g., <code>theme-grid pages</code>).
 </p>
 
+### Available themes for Enketo web forms
+
 The following themes are available to customize your forms:
 
 | XLSForm theme                | Description                                                                 | Preview |
 |:-----------------------------|:----------------------------------------------------------------------------|:--------|
-| Default style                | Displays questions one after another, on a single page.                     | ![Default style](images/form_style_xls/theme_default.png) |
+| Default theme                | Displays questions one after another, on a single page.                     | ![Default style](images/form_style_xls/theme_default.png) |
 | <code>pages</code>           | Displays one question per screen or a <a href="https://support.kobotoolbox.org/grouping_questions_xls.html">group of questions</a> together on the same screen, similar to the KoboCollect layout. | ![Pages style](images/form_style_xls/theme_pages.png) |
 | <code>theme-grid</code>      | An alternative display that is more compact, similar to paper forms, and efficiently uses space, arranging multiple questions per row. Questions are capitalized by default. Requires <a href="https://support.kobotoolbox.org/form_style_xls.html#setting-up-XLSForm-with-theme_grid">setting up your XLSForm</a>. | ![Theme-grid](images/form_style_xls/theme_grid.png) |
 | <code>theme-grid no-text-transform</code> | Same as theme-grid, but without automatic capitalization of questions. | ![Theme-grid no-text-transform](images/form_style_xls/theme_grid_no_text_transform.png) |
 
-### Setting up XLSForm for theme_grid
+### Setting up an XLSForm for theme_grid
 
 In Enketo web forms, the `theme_grid` layout allows you to display questions in multiple columns, making your form more compact and visually organized. The set-up of these columns, including how many there are and how wide each one should be, is controlled by assigning `w-values` to each question inside the **appearance** column of your XLSForm.
 
@@ -59,7 +63,7 @@ Rows will always automatically expand to the full width of the page. For example
 
 ## Styling text
 
-You can use Markdown and HTML in XLSForm to style text, add emphasis with bold or italics, create headers of different sizes, change fonts and colors, and add clickable web links. Text styling can be applied to questions, notes, and choice labels.
+You can use Markdown and HTML in XLSForm to **style text**, **add emphasis** with bold or italics, **create headers** of different sizes, **change fonts and colors**, and **add clickable web links**. Text styling can be applied to questions, notes, and choice labels.
 
 <p class="note">
 <strong>Note:</strong> Some styling features may not be supported in KoboCollect or Enketo. It is recommended to preview your forms in your chosen data collection method to confirm that all styling features are fully supported.
