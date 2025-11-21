@@ -15,7 +15,7 @@ This article covers the following topics:
 - Managing background audio data
 
 <p class="note">
-<strong>Note:</strong> To collect only a short audio recording instead of a full background recording, see <a href="https://support.kobotoolbox.org/media.html">Media question types</a>. 
+<strong>Note:</strong> To learn about collecting short audio responses instead of a full background recording, see <a href="https://support.kobotoolbox.org/media.html">Media question types</a>. 
 </p>
 
 ## Enabling background audio recording in the Formbuilder
@@ -42,7 +42,7 @@ If you are designing your survey in [XLSForm](https://support.kobotoolbox.org/ge
 4. If needed, adjust the audio quality in the `parameters` column. 
     - For an overview of audio quality settings, see [Configuring audio quality](#configuring-audio-quality). `voice-only` is the default and lowest audio quality.
       
-**settings worksheet**
+**survey worksheet**
 
 | type             | name       | label | parameters       |
 |:-----------------|:-----------|:------|:----------------|
