@@ -39,6 +39,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   activation_link
   reset_password
   two_factor_authentication
+  account_usage_limits
 
 .. raw:: html
 
