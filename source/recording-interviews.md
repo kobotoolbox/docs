@@ -1,162 +1,130 @@
-﻿# Recording an Entire Interview with Background Audio Recording
+﻿# Recording interviews with background audio recording
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/recording-interviews.md" class="reference">15 Feb 2022</a>
 
-**Background audio recording** is a powerful feature that allows users to record
-an interview in the background (when the form is open) and store the recording
-as audio data. This feature enhances qualitative data collection by allowing for
-nuanced information to be collected in its entirety.
+Background audio recording captures an entire interview in the background while a form is open. The recording is stored as audio data within form submissions.
 
-Background audio recording also allows for supervisors and project managers to
-know how their enumerators conducted the interview in terms of data quality
-assurance or if they wish to have a backup recording of the transcribed
-interview.
+This feature enhances qualitative research by preserving interviews in full detail. Researchers can revisit recordings to capture nuance, validate findings, find exact quotes, and strengthen their analysis.
 
-Currently, users can record the full interview with the **Collect Android app**
-`v1.30` and above. **Enketo** does not yet support this feature.
+Background audio recording also supports data quality assurance. Supervisors and project managers can review recordings to understand how enumerators conducted interviews, monitor adherence to survey protocols, and keep backup copies of conversations used for transcription.
 
-<p class="note">
-  If you require an audio recording instead of the full
-  <strong>background-audio recording</strong>, see our support article,
-  <a class="reference" href="media.html"
-    >Adding Various Types of Media (image, audio, video) to a Form</a
-  >.
-</p>
-
-## Activating background audio recording in the formbuilder
-
-If you are designing your survey form through the formbuilder and wish to enable
-the **background audio recording**, follow the steps shown in the video below:
-
-<video controls>
-  <source
-    src="./_static/files/recording_interviews/activating_background_audio_recording_UI.mp4"
-    type="video/mp4"
-  />
-</video>
-
--   Under the **FORM**, select the **Edit** button. _(This step may not be
-    required if you are already in the formbuilder)_
--   At the top right corner, select **Layout & Settings** and then **Background
-    audio** should be visible.
--   Toggle the **Enable audio recording in the background** button. A
-    notification should pop up at the top of the formbuilder.
--   **Voice only** is the default audio quality for the **background audio**.
-    You can change the audio quality to **Low** or **Normal** as required (see
-    chart below for differences in file size).
--   After making all the necessary configurations, select **SAVE** and **Exit**
-    in the formbuilder.
--   **DEPLOY** the form to make it live.
-
-## Including background audio question type in XLSForm
-
-If you are designing your survey form through the XLSForm and want to include a
-`background-audio` question type, follow the steps shown in the video below:
-
-<video controls>
-  <source
-    src="./_static/files/recording_interviews/including_background_audio_question_type_xlsform.mp4"
-    type="video/mp4"
-  />
-</video>
-
-In your XLSForm, add `background-audio` under the `type` column of the
-**survey** sheet. This is the question type that will record the audio in the
-background.
-
-## Setting an appropriate audio quality
-
-The `parameters` column is optional but it is important to choose the
-appropriate parameter. Audio quality is directly related to the file size that
-will be stored on the server. Keep in mind how much of your total storage space
-you want to use towards your audio files. Refer to the table below when choosing
-the appropriate parameter:
-
-| Quality    | Parameters         | Extension | Encoding | Bit rate  | Sample rate | File size    |
-| :--------- | :----------------- | :-------- | :------- | :-------- | :---------- | :----------- |
-| normal     | quality=normal     | .m4a      | AAC      | 64 kbps   | 32 kHz      | ~ 30 MB/hour |
-| low        | quality=low        | .m4a      | AAC      | 24 kbps   | 32 kHz      | ~ 11 MB/hour |
-| voice-only | quality=voice-only | .amr      | AMR      | 12.2 kbps | 8 kHz       | ~ 5 MB/hour  |
-
-You can leave the column blank to have the parameter set to `voice-only`, which
-will capture audio well in a quiet interview setting. If you are recording audio
-where there could be multiple people talking simultaneously, `low` would be more
-suitable. `normal` is the highest quality option and it will use the most
-storage space.
-
-## Collecting background audio with Collect Android app
-
-Review our support article,
-[Data Collection on KoboCollect App](kobocollect_on_android_latest.md), to learn
-in detail about collecting data on the **Collect Android app**.
-
-<video controls>
-  <source
-    src="./_static/files/recording_interviews/collecting_data_with_background_audio_in_collect_app.mp4"
-    type="video/mp4"
-  />
-</video>
-
-While actively recording background audio with the **Collect Android app**, you
-should be able to see a microphone at the top of your form.
-
-![Background audio screen](/images/recording_interviews/background_audio_screen.jpg)
-
-## Viewing audio files that were recorded as background audio
-
-When you have `background-audio` configured for your project, you can view the
-recorded audio file under the **DATA>Table** as shown in the image below.
-
-![Data table view](/images/recording_interviews/data_table_view.png)
-
-## Downloading audio files
-
-You can download all background audio files as a ZIP file from
-**DATA>Downloads>Media Attachments (ZIP)** as shown in the video below.
-
-<video controls>
-  <source
-    src="./_static/files/recording_interviews/downloading_audio_files_that_were_recorded_as_background_audio.mp4"
-    type="video/mp4"
-  />
-</video>
-
-## Ethical considerations
-
-When collecting data, it is ethical to have informed consent from survey
-respondents prior to data collection, in this case by recording background
-audio.
+This article covers the following topics:
+- Enabling background audio recording in the Formbuilder
+- Implementing background audio recording in XLSForm
+- Configuring audio quality
+- Data collection with background audio recordings
+- Managing background audio data
 
 <p class="note">
-  We encourage all users to consider ethical implications of their data
-  collection and to comply with applicable data protection legislation within
-  the jurisdiction of their work.
+<strong>Note:</strong> To collect only a short audio recording instead of a full background recording, see <a href="https://support.kobotoolbox.org/media.html">Media question types</a>. 
 </p>
+
+## Enabling background audio recording in the Formbuilder
+
+If you are designing your survey in the Formbuilder, follow these steps to enable background audio recording:
+
+1. In the **FORM** page, click <i class="k-icon-edit"></i> **Edit** to open the Formbuilder. 
+2. On the left hand side, click <i class="k-icon-close"></i> **Layout & Settings.**
+3. In the **Background audio** section, click “Enable audio recording in the background.” 
+    - Once enabled, the button text will change to “This survey will be recorded.”
+4. If needed, change the audio quality in the **Audio quality** dropdown menu. 
+    - For an overview of audio quality settings, see [Configuring audio quality](#configuring-audio-quality). **Voice only** is the default and lowest audio quality.
+
+![Enabling backgound audio](images/recording-interviews/background_audio.png)
+
+When recording background audio, consider adding a note to inform respondents or data collectors that the survey will be recorded.
+
+## Implementing background audio recording in XLSForm
+
+If you are designing your survey in [XLSForm](https://support.kobotoolbox.org/getting_started_xlsform.html), follow these steps to enable background audio recording:
+1. In the `type` column of the `survey` worksheet, enter `background-audio`.
+2. In the `name` column, enter a short name. This will be the name of the variable that contains the resulting audio file.  
+3. The `label` is optional for this question, as it is not displayed inside the form.
+4. If needed, adjust the audio quality in the `parameters` column. 
+    - For an overview of audio quality settings, see [Configuring audio quality](#configuring-audio-quality). `voice-only` is the default and lowest audio quality.
+      
+**settings worksheet**
+
+| type             | name       | label | parameters       |
+|:-----------------|:-----------|:------|:----------------|
+| background-audio | recording  |       | quality=normal  |
+| settings | 
+
+## Configuring audio quality
+
+Audio quality affects the size of the file that is stored on the server. Users of the [Community Plan](https://www.kobotoolbox.org/pricing/) are limited to 1GB of free file storage. Therefore, it is advisable to manage the file sizes of the audio files you collect by choosing an appropriate quality setting. The table below provides an overview of audio quality settings and their corresponding file sizes.
+
+| Quality      | XLSForm parameters   | Extension | Encoding | Bit rate    | Sample rate | File size       |
+|:------------ |:------------------ |:---------|:--------|:-----------|:------------|:---------------|
+| Normal       | quality=normal      | .m4a     | AAC     | 64 kbps    | 32 kHz      | ~ 30 MB/hour    |
+| Low          | quality=low         | .m4a     | AAC     | 24 kbps    | 32 kHz      | ~ 11 MB/hour    |
+| Voice only   | quality=voice-only  | .amr     | AMR     | 12.2 kbps  | 8 kHz       | ~ 5 MB/hour     |
+
+The default **Voice only** setting is suitable for quiet interview settings. For recordings with multiple speakers or some background noise, the **Low** quality setting is more appropriate. The **Normal** setting offers the highest audio quality but uses the most storage space.
+
+## Data collection with background audio recordings 
+
+Background audio can be recorded using the [KoboCollect Android app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) as well as in [Enketo web forms](https://support.kobotoolbox.org/enketo.html).
+
+In Enketo, a disclaimer will appear at the beginning of the form informing respondents that background audio is being recorded. In both Enketo and KoboCollect, a microphone icon showing the recording's duration will be visible at the top of the form while background audio is actively recording.
+
+<p class="note">
+<strong>Note:</strong> When background audio recording is active on a form <strong>in KoboCollect</strong>, <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Audio question types</a> are deactivated, as it is not possible to record audio using both features simultaneously in KoboCollect. 
+</p>
+
+### Ethical considerations
+
+When collecting data, it is essential to obtain informed consent from respondents before recording background audio. Users should carefully consider the ethical implications of audio recordings and ensure that participants are aware of how their data will be used, stored, and shared. Kobo strongly encourages compliance with all applicable data protection and privacy regulations in the jurisdiction where data collection takes place.
+
+## Managing background audio data
+
+Background audio recordings are treated very similarly to audio files collected in the survey. This means you can: 
+- View background audio recordings in the data table, under **DATA > Table.**
+- [Transcribe, translate, and analyze](https://support.kobotoolbox.org/transcription-translation.html) background audio files.
+- [Delete](https://support.kobotoolbox.org/deleting_media.html) background audio files.
+- [Download background audio files](https://support.kobotoolbox.org/photo_download.html) as a ZIP file under **DATA > Downloads > Media Attachments (ZIP).**
+
+![Managing audio data](images/recording-interviews/data_table.png)
 
 ## Troubleshooting
 
--   This feature is supported with the **Collect Android app** `v1.30` and
-    above.
--   This feature is currently not supported in the **Enketo web forms**.
--   Your device should have a built-in audio recorder to have this feature work
-    smoothly. You can download
-    [Audio Recorder](https://play.google.com/store/apps/details?id=com.github.axet.audiorecorder)
-    from Google play store if needed.
--   Before starting data collection, ensure that your device has sufficient
-    space to store the background audio recordings.
--   If you edit your audio file under **Edit Saved Form**, you will have both
-    versions (the original audio file and the edited file) in one single file.
-    For example, if you have a background audio of _'Sample testing'_ and you
-    edited the recording, changing it to _'Sample for re-testing'_, when you
-    download your background audio file, it will consist of the combined
-    background audio of _'Sample testing'_ and _'Sample for re-testing'_.
--   If your background audio files take up enough storage space to push your
-    total storage over your allotted amount (5GB for all free accounts), you can
-    request additional space (for a cost) by reaching out to
-    [info@kobotoolbox.org](mailto:info@kobotoolbox.org). The payment is used to
-    cover the additional costs associated with large data collection projects
-    and ensures that the server remains running well for our users.
--   When you have large and/or long background audio files in your account, you
-    may have issues downloading them as **Media Attachments (ZIP)**. In such a
-    case, follow our support article
-    [Downloading Photos and Other Media](photo_download.md), which should help
-    you download large media files from the system.
+<details>
+  <summary><strong>Background audio recording not working</strong></summary>
+  Your device must have a built-in audio recorder for this feature to work. If your device does not include one, you can download <a href="https://play.google.com/store/apps/details?id=com.github.axet.audiorecorder">Audio Recorder</a> from the Google Play Store.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Not enough storage on device</strong></summary>
+  Before starting data collection, make sure your device has enough storage space to save background audio recordings. 
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Editing submissions with background audio recording</strong></summary>
+  If you edit a form that includes background audio from the KoboToolbox platform, the initial recording will not be replaced. A message at the top of the form will say “This submission has a background audio recording.”
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Forms with background audio recording saved as drafts</strong></summary>
+  If a form with background audio recording is saved as a draft in <strong>Enketo</strong>, only the initial recording will be retained. The recording will not resume or be replaced when the draft form is reopened. <br><br>
+If a form with background audio recording is saved as a draft in <strong>KoboCollect</strong>, recording will resume when the draft form is reopened. Both recordings will be stored together in a single file.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Running out of KoboToolbox storage</strong></summary>
+  Background audio files can be large and may cause your account to exceed its storage limit (1 GB for free accounts). If you need more space, you can <a href="https://www.kobotoolbox.org/pricing/">upgrade</a> your plan or purchase a <strong>storage add-on</strong> in <strong>Account Settings > Add-ons.</strong>
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Unable to download large audio files</strong></summary>
+  If large or long audio files fail to download as Media Attachments (ZIP), see <a href="https://support.kobotoolbox.org/photo_download.html">Downloading photos and other media</a> for guidance on retrieving large media files.
+</details>
+
