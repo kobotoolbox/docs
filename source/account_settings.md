@@ -41,7 +41,7 @@ To access your security features, select the <i class="k-icon-lock-alt"></i> **S
 On the **Security** page, you can: 
 - Change your password. 
     - If you know your current password, click **Update.** 
-    - If you have forgotten your current password, click **forgot password** to [reset it](https://support.kobotoolbox.org/reset_password.html).
+    - If you have forgotten your current password, click **Forgot password** to [reset it](https://support.kobotoolbox.org/reset_password.html).
 - Update your email address by clicking **Change** next to **Email address.**
 - Display your **API Key**, which is required for certain types of authentication with the [KoboToolbox API](https://support.kobotoolbox.org/api.html).
 - Enable [two-factor authentication](https://support.kobotoolbox.org/two_factor_authentication.html) (2FA) to protect your account.
@@ -72,7 +72,7 @@ You can monitor the following usage types:
 
 ## Plans
 
-KoboToolbox offers various plans to suit different data collection needs. To view a summary of different plans and upgrade your current plan, select the <i class="k-icon-editor"></i> Plans page in the account settings menu. 
+KoboToolbox offers various plans to suit different data collection needs. To view a summary of different plans and upgrade your current plan, select the <i class="k-icon-editor"></i> **Plans** page in the account settings menu. 
 
 On the **Plans** page, you can:
 - View your current plan, including quotas and feature usage.
