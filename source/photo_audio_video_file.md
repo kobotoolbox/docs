@@ -15,7 +15,7 @@ The following media question types are available in the KoboToolbox Formbuilder:
 The method of capturing or uploading media depends on whether you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [Enketo web forms](https://support.kobotoolbox.org/enketo.html) for data collection. In KoboCollect, you can either upload or record media files directly within the app. With Enketo, you can upload any media file, and record audio directly within the forms.
 
 <p class="note">
-<strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types in KoboCollect are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>. 
+<strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types <strong>in KoboCollect</strong> are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>. 
 </p>
 
 This article covers the following topics:
