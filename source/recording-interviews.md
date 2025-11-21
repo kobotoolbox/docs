@@ -3,9 +3,9 @@
 
 Background audio recording **captures an entire interview in the background** while a form is open. The recording is stored as audio data within form submissions.
 
-This feature enhances qualitative research by **preserving interviews in full detail**. Researchers can revisit recordings to capture nuance, validate findings, find exact quotes, and strengthen their analysis.
+This feature enhances qualitative research by preserving interviews in full detail. Researchers can revisit recordings to capture nuance, validate findings, find exact quotes, and strengthen their analysis.
 
-Background audio recording also supports **data quality assurance**. Supervisors and project managers can review recordings to understand how enumerators conducted interviews, monitor adherence to survey protocols, and keep backup copies of conversations used for transcription.
+Background audio recording also supports data quality assurance. Supervisors and project managers can review recordings to understand how enumerators conducted interviews, monitor adherence to survey protocols, and keep backup copies of conversations used for transcription.
 
 This article covers the following topics:
 - Enabling background audio recording in the Formbuilder
