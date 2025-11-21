@@ -1,11 +1,11 @@
 ﻿# Recording interviews with background audio recording
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/57a28999089cd7e6a50f8c1a3528528bb6fb2578/source/recording-interviews.md" class="reference">21 Nov 2025</a>
 
-Background audio recording captures an entire interview in the background while a form is open. The recording is stored as audio data within form submissions.
+Background audio recording **captures an entire interview in the background** while a form is open. The recording is stored as audio data within form submissions.
 
-This feature enhances qualitative research by preserving interviews in full detail. Researchers can revisit recordings to capture nuance, validate findings, find exact quotes, and strengthen their analysis.
+This feature enhances qualitative research by **preserving interviews in full detail**. Researchers can revisit recordings to capture nuance, validate findings, find exact quotes, and strengthen their analysis.
 
-Background audio recording also supports data quality assurance. Supervisors and project managers can review recordings to understand how enumerators conducted interviews, monitor adherence to survey protocols, and keep backup copies of conversations used for transcription.
+Background audio recording also supports **data quality assurance**. Supervisors and project managers can review recordings to understand how enumerators conducted interviews, monitor adherence to survey protocols, and keep backup copies of conversations used for transcription.
 
 This article covers the following topics:
 - Enabling background audio recording in the Formbuilder
@@ -15,7 +15,7 @@ This article covers the following topics:
 - Managing background audio data
 
 <p class="note">
-<strong>Note:</strong> To learn about collecting short audio responses instead of a full background recording, see <a href="https://support.kobotoolbox.org/media.html">Media question types</a>. 
+<strong>Note:</strong> To learn about collecting short audio responses instead of a full background recording, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media question types</a>. 
 </p>
 
 ## Enabling background audio recording in the Formbuilder
@@ -29,7 +29,7 @@ If you are designing your survey in the Formbuilder, follow these steps to enabl
 4. If needed, change the audio quality in the **Audio quality** dropdown menu. 
     - For an overview of audio quality settings, see [Configuring audio quality](#configuring-audio-quality). **Voice only** is the default and lowest audio quality.
 
-![Enabling backgound audio](images/recording-interviews/background_audio.png)
+![Enabling background audio](images/recording_interviews/background_audio.png)
 
 When recording background audio, consider adding a note to inform respondents or data collectors that the survey will be recorded.
 
@@ -47,7 +47,7 @@ If you are designing your survey in [XLSForm](https://support.kobotoolbox.org/ge
 | type             | name       | label | parameters       |
 |:-----------------|:-----------|:------|:----------------|
 | background-audio | recording  |       | quality=normal  |
-| settings | 
+| survey | 
 
 ## Configuring audio quality
 
@@ -83,13 +83,13 @@ Background audio recordings are treated very similarly to audio files collected 
 - [Delete](https://support.kobotoolbox.org/deleting_media.html) background audio files.
 - [Download background audio files](https://support.kobotoolbox.org/photo_download.html) as a ZIP file under **DATA > Downloads > Media Attachments (ZIP).**
 
-![Managing audio data](images/recording-interviews/data_table.png)
+![Managing audio data](images/recording_interviews/data_table.png)
 
 ## Troubleshooting
 
 <details>
   <summary><strong>Background audio recording not working</strong></summary>
-  Your device must have a built-in audio recorder for this feature to work. If your device does not include one, you can download <a href="https://play.google.com/store/apps/details?id=com.github.axet.audiorecorder">Audio Recorder</a> from the Google Play Store.
+  Your device must have a built-in audio recorder for this feature to work. If your device does not include one, you can download <a href="https://play.google.com/store/apps/details?id=com.media.bestrecorder.audiorecorder&pcampaignid=web_share">Voice Recorder</a> from the Google Play Store.
 </details>
 
 <br>
@@ -118,7 +118,7 @@ If a form with background audio recording is saved as a draft in <strong>KoboCol
 
 <details>
   <summary><strong>Running out of KoboToolbox storage</strong></summary>
-  Background audio files can be large and may cause your account to exceed its storage limit (1 GB for free accounts). If you need more space, you can <a href="https://www.kobotoolbox.org/pricing/">upgrade</a> your plan or purchase a <strong>storage add-on</strong> in <strong>Account Settings > Add-ons.</strong>
+  Background audio files can be large and may cause your account to exceed its storage limit (1 GB for free accounts). If you need more space, you can <a href="https://www.kobotoolbox.org/pricing/">upgrade your plan</a> or purchase a <strong>storage add-on</strong> in <strong>Account Settings > Add-ons.</strong>
 </details>
 
 <br>
