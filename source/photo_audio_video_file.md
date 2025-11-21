@@ -79,7 +79,7 @@ To define the maximum size of images collected using the **Photo** question type
 ![image](images/photo_audio_video_file/parameters.png)
 
 <p class="note">
-<strong>Note:</strong> You can also configure video resolution and image size in <a href="">KoboCollect settings</a>.
+<strong>Note:</strong> You can also configure video resolution and image size in <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">KoboCollect settings</a>.
 </p>
 
 ## Restricting accepted file types
