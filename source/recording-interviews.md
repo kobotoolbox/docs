@@ -1,5 +1,5 @@
 ﻿# Recording interviews with background audio recording
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/05fee71609ccc124f82245e6476ecc5a63d03f15/source/recording-interviews.md" class="reference">21 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5ab7049ece4e334f73dcc7d4d41e7fa6897786d4/source/recording-interviews.md" class="reference">21 Nov 2025</a>
 
 Background audio recording **captures an entire interview in the background** while a form is open. The recording is stored as audio data within form submissions.
 
