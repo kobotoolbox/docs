@@ -77,7 +77,7 @@ To add translations to the `survey` worksheet:
 3. Enter the translations for all form elements in the relevant columns.
 
 <p class="note">
-  To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to an XLSForm</a>.
+  To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to translations</a>.
 </p>
 
 **survey worksheet**
@@ -95,7 +95,7 @@ To add translations to the `choices` worksheet:
 3. If your `choices` worksheet includes media columns, set up the corresponding translation columns using the **column_name::language (code)** format.
 
 <p class="note">
-  <strong>Note:</strong> To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to an XLSForm</a>.
+  <strong>Note:</strong> To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to translations</a>.
 </p>
 
 **choices worksheet**
