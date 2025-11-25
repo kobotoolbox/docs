@@ -73,7 +73,7 @@ To learn more about adding translations in XLSForm, see <a href="language_xls.ht
 In addition to text, option choices in XLSForm can also be **media files**, such as images, audio, or video. This enhances the survey experience by providing visual or auditory cues to respondents.
 
 <p class="note">
-To learn more about using media files as option choices, see <a href="adding_media_xls.html">Adding media to an XLSForm</a>.
+To learn more about using media files as option choices, see <a href="media_xls.html">Adding media to an XLSForm</a>.
 </p>
 
 ### Filtering choice lists
@@ -81,7 +81,7 @@ To learn more about using media files as option choices, see <a href="adding_med
 XLSForm allows you to filter option choice lists based on responses to previous questions. This feature, known as **choice filters**, can be used in various ways. For example, they can be used for **cascading select questions**, where the choice list for a child question (e.g., cities) is filtered based on the response to a parent question (e.g., country). They can also be used for filtering a multiple choice question to display only options selected in a previous question.
 
 <p class="note">
-To learn more about filtering choice lists in XLSForm, see <a href="adding_choice_filters_xls.html">Adding choice filters in XLSForm</a>.
+To learn more about filtering choice lists in XLSForm, see <a href="choice_filters_xls.html">Adding choice filters in XLSForm</a>.
 </p>
 
 ### Duplicating choice names
@@ -99,5 +99,6 @@ For more information, see <a href="form_settings_xls.html">Form settings in XLSF
 For very large choice lists, containing hundreds or thousands of options, it is recommended to use `select_one_from_file` or `select_multiple_from_file` question types, which link a survey question to an **external file** containing the list of choices. This approach is more efficient than manually entering choices inside the XLSForm, helps avoid slow loading times and large XLSForms, and simplifies managing or editing extensive option sets.
 
 <p class="note">
-To learn more about external choice lists in XLSForm, see <a href="selecting_options_external_file.html">Selecting options from an external file</a>.
+To learn more about external choice lists in XLSForm, see <a href="select_from_file_xls.html">Selecting options from an external file</a>.
 </p>
+
