@@ -65,7 +65,7 @@ Using **`list_name`** in XLSForm allows you to easily **reuse choice lists** acr
 XLSForm simplifies the translation of choice lists. You can add multiple labels for different languages, with each translation in a separate **`label`** column. The underlying choice names remain the same, which ensures the exported dataset is consistent across translations and facilitates analysis.
 
 <p class="note">
-To learn more about adding translations in XLSForm, see <a href="adding_translations_xls.html">Adding translations in XLSForm</a>.
+To learn more about adding translations in XLSForm, see <a href="language_xls.html">Adding translations in XLSForm</a>.
 </p>
 
 ### Media files as option choices
