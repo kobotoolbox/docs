@@ -1,132 +1,144 @@
-# Adding Another Language to your XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/language_xls.md" class="reference">29 Jul 2025</a>
+# Adding translations in XLSForm
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2afa3a0c670fe98b296a79b798f33abf248d0273/source/language_xls.md" class="reference">Oct 26, 2025</a>
+
+Adding translations to a form allows users to switch to their preferred language during data collection without creating separate forms. Any number of translations can be added. Both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [Enketo web forms](https://support.kobotoolbox.org/enketo.html) support form translations.
+
+Most elements displayed in the form can be translated, such as **question labels**, **hints**, **choice labels**, **constraint messages**, and **required messages**. Elements used for form structure, like question names, choice names, and list names, cannot be translated and should remain in the language used for form development and data analysis.
+
+When your form includes multiple translations, KoboCollect and Enketo will display a language selector in the **top right corner of the form**, allowing respondents to choose their preferred language.
+
+<p class="note">
+  <strong>Note:</strong> Adding translations in XLSForm is faster and more efficient than <a href="https://support.kobotoolbox.org/language_dashboard.html">using the Formbuilder</a>, especially for longer forms. To learn how to download your form in XLSForm to add translations, see <a href="xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a>.
+<br><br>
+For hands-on practice with adding translations in XLSForm, see KoboToolbox Academy's <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
+</p>
+
+## Language codes in XLSForm
+
+When referring to different languages in XLSForm, you will need to use the format `language (code)` in your column headers. For example, the language reference for English is `English (en)` and the language reference for French is `French (fr)`. Each translation must use the same language name and code consistently throughout your form. 
+
+Language codes can be found in the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">IANA language subtag registry</a>. On the IANA website, the **Description** refers to the language name, and the **Subtag** refers to the language code (e.g., **Description:** French, **Subtag:** fr).
 
 
-There are two methods to adding multiple languages to your form. You can either
-add and manage them directly through the online
-[Project Dashboard](language_dashboard.md) or you can add them in an XLSForm and
-upload it to Kobo.
+## Setting the default form language
 
-Here are detailed instructions on how you can add another language to your form:
+To add translations to an XLSForm, first define the default language. This is the language the form will open to by default.
 
--   Create your form in the default language. This should be the language that
-    the person responsible for designing the questionnaire is most comfortable
-    with. When you are done, or when a portion of the form has been created,
-    save it. You'll be returned to the draft form's project dashboard.
+To define the default language of your form:
+1. In the `settings` worksheet, add a **default_language** column.
+2. In the `default_language` column, enter the default language using the **language (code)** format.
+    - For example: `English (en)`.
 
--   Export the form to XLS.
+**settings worksheet**
 
--   Open the file in Excel (Google Spreadsheet, Open Office Calc, etc will all
-    work) (If you're in Excel it's possible you have to take the file out of
-    Protected View first.
-    [See here](https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&ui=en-US&rs=en-US&ad=US).)
-    Your spreadsheet will have three sheets (see the little tabs at the bottom):
-    **survey**, **choices**, **settings**. Stay in the **survey** sheet for now.
-
--   Find the column called `label`. This is where your original question labels
-    are stored. Insert another column to the right of label. In the header
-    (first row) of this new column, write `label::language (code)`, for example
-    `label::Français (fr)` or `label::English (en)`.
-
-<p class="note">You can change the size of your columns, add colors or change the font size, none of these will affect your form.</p>
-
--   Then, if you have hints in your form, the same needs to apply to the `hint`
-    column, for example `hint::Français (fr)` or `hint::English (en)`.
-
-**survey sheet**
-
-| type             | name           | label                          | relevant                  |
-| :--------------- | :------------- | :----------------------------- | :------------------------ |
-| text             | full_name      | What is your name?             |                           |
-| select_one yesno | children_yesno | Do you have any children?      |                           |
-| integer          | children_count | How many children do you have? | ${children_yesno} = 'yes' |
-| survey |
-
--   Now add your translations for every row inside the `label::language (code)`
-    column. When you are done, make sure you didn't skip any questions (for
-    every field that has text inside the label column there should be text
-    inside the `label::language (code)` column). You can find the official
-    2-character language codes (subtags)
-    [here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
-
-<p class="note">Tip: Copy-paste the original label column and then make changes to the translations so you don't leave anything blank by accident: It's better to have something showing in the wrong language than not having a blank question in some language. <em>You can repeat this step and add as many languages as you like, each in their separate columns and with a different name inside <code>label::language (code)</code>.</em></p>
-
-**survey sheet**
-
-| type             | name           | label:English (en)             | label::Français (fr)           | relevant                  |
-| :--------------- | :------------- | :----------------------------- | :----------------------------- | :------------------------ |
-| text             | full_name      | What is your name?             | Quel est votre nom?            |                           |
-| select_one yesno | children_yesno | Do you have any children?      | Avez-vous des enfants?         |                           |
-| integer          | children_count | How many children do you have? | Combien des enfants avez-vous? | ${children_yesno} = 'yes' |
-| survey |
-
--   Now switch to the **choices** sheet of your file, if you have one.
-
--   In the **choices** sheet you have another column called `label`. Repeat
-    steps 5 and 6. Make sure that you use the exact same spelling for
-    `label::language (code)`. For example, `label::Francais (fr)` and
-    `label::Français (fr)` are not identical.
-
-**choices sheet**
-
-| list_name | name | label::English (en) | label::Français (fr) |
-| :-------- | :--- | :------------------ | :------------------- |
-| yesno     | yes  | Yes                 | Oui                  |
-| yesno     | no   | No                  | Non                  |
-| choices |
-
--   In the **settings** sheet, underneath `form_title` edit the text of your
-    form's title to something like "My form (English and French)" so you can
-    easily identify it later.
-
-**settings sheet**
-
-| form_title                   |
-| :--------------------------- |
-| My form (English and French) |
+| default_language |
+| :---------------- |
+| English (en)      |
 | settings |
 
--   Save your file and close Excel.
+To set up the `survey` worksheet:
 
--   Return to KoboToolbox and click on **Replace with XLS**, then upload your
-    updated XLSForm. Choose the file you just finished editing and click **OK**.
+1. Rename the **label** column using the format **label::language (code)**.
+    - For example: `label::English (en)`.
+2. If your form includes `hint`, `required_message`, `constraint_message`, or `media` columns in the `survey` worksheet, rename the existing columns using the format **column_name::language (code)**.
+    - For example: `hint::English (en)`.
 
--   Open the form you just uploaded and click on **Preview Form**. At the top
-    next to **Choose Language** click on the dropdown. It will have a default
-    (your original language) as well as the new languages you just added.
+**survey worksheet**
 
-## Translating to Tamil, Nepali, Hindi, etc. scripts
+| type | name | label::English (en) | hint::English (en) |
+| :--- | :--- | :------------------ | :----------------- |
+| integer | age | How old are you? | In years |
+| select_one yn | student | Are you currently a student? | |
+| survey |
 
-When translating to non-Latin scripts, such as Tamil, Nepali, Hindi, etc, please
-make sure you do not use a so-called pseudo font. When writing in these
-languages make sure you only use the proper Unicode characters. To write proper
-Unicode characters you don't have to install any particular fonts. Instead, you
-(or your translator) need to set your keyboard to use the respective script
-(Tamil, Nepali, etc.) and then write normally. The correct keyboard setting will
-produce the actual script letters in Unicode instead of some Latin phonetic
-equivalents. (This would also be the same way as writing these languages into an
-email, KoboToolbox, or any other Web application.
+Finally, to set up the `choices` worksheet, rename the **label** column using the format **label::language (code)**.
 
-For help with adding the correct system keyboard,
-[check this link](https://support.microsoft.com/en-us/help/17424/windows-change-keyboard-layout)
-(Windows only).
+**choices worksheet**
 
-Pseudo fonts allow writing in these scripts and are commonly used in many
-countries, particularly in South Asia. But while they work on the computer that
-has a specific font installed, they will not work on any other computer that
-doesn't use that particular font. That is because these fonts just disguise
-regular Latin characters and symbols and make them appear in a different shape.
-For example, when writing "Hello" with the Nepali pseudo font 'Preeti', it will
-look like this: हेल्लो. But what is really written there remains the letters H e
-l l o. For some people using these fonts which often use phonetic equivalents to
-English, may be easier. Another reason they are being used widely is that many
-computers used to not have support for these scripts and thus needed pseudo
-fonts as a "hack". Either way, Unicode characters are the best way to go - and
-the only way for use in KoboToolbox.
+| list_name | name | label::English (en) |
+| :--------- | :--- | :------------------ |
+| yn | yes | Yes |
+| yn | no | No |
+| choices |
+
+## Adding translations
+
+Once you have defined your default language, you can add translations for each visible element of your form. You can add as many translation columns as you like.
+
+<p class="note">
+  <strong>Note:</strong> If you omit text for a translated element, it will appear as a blank field on the form.
+</p>
+
+To add translations to the `survey` worksheet:
+1. Add a new **label** column for each translation language using the format **label::language (code)**.
+    - For example: `label::Spanish (es)`.
+2. If your form includes `hint`, `required_message`, `constraint_message`, or `media` columns in the `survey` worksheet, set up the corresponding translation columns using the **column_name::language (code)** format.
+    - For example: `hint::French (fr)` or `required_message::Chichewa (ny)`.
+3. Enter the translations for all form elements in the relevant columns.
+
+<p class="note">
+  To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to an XLSForm</a>.
+</p>
+
+**survey worksheet**
+
+| type | name | label::English (en) | label::Chichewa (ny) | hint::English (en) | hint::Chichewa (ny) |
+| :--- | :--- | :------------------ | :------------------- | :----------------- | :------------------ |
+| integer | age | How old are you? | Muli ndi zaka zingati? | In years | M'zaka |
+| select_one yn | student | Are you currently a student? | Kodi panopa ndinu wophunzira? | | |
+| survey |
+
+To add translations to the `choices` worksheet:
+1. Add a new **label** column for each translation language using the format **label::language (code)**.
+    - For example: `label::Spanish (es)`.
+2. Enter the translation for each choice label in the relevant translation column.
+3. If your `choices` worksheet includes media columns, set up the corresponding translation columns using the **column_name::language (code)** format.
+
+<p class="note">
+  <strong>Note:</strong> To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to an XLSForm</a>.
+</p>
+
+**choices worksheet**
+
+| list_name | name | label::English (en) | label::Chichewa (ny) |
+| :--------- | :--- | :------------------ | :------------------- |
+| yn | yes | Yes | Inde |
+| yn | no | No | Ayi |
+| choices |
+
+
+## Guidelines for translations
+
+### Using spreadsheet features for bulk translations
+
+XLSForm makes it easy to translate form elements in bulk, instead of entering translations one by one. For example, you can copy an entire column into a translation system for bulk translation, and paste the column back into your XLSForm. If you are using Google Sheets to build your XLSForm, you can use the `GOOGLETRANSLATE()` formula to automate the translation process.
+
+Machine translations should always be reviewed and validated by a fluent speaker to ensure accuracy, cultural appropriateness, and proper context. This step helps maintain the quality and reliability of your translated content.
+
+### Translating to non-Latin scripts
+
+Non-Latin scripts such as Arabic, Cyrillic, Tamil, Nepali, or Hindi are fully supported in KoboToolbox and can be used for default languages or translations.
+
+<p class="note">
+  <strong>Note:</strong> It is recommended to use only Latin characters for question and choice <strong>names</strong>, because non-Latin scripts may cause errors or compatibility issues when exporting data or working with XLSForm, but question and choice <strong>labels</strong> can safely use any script.
+</p>
+
+When adding translations in non-Latin scripts, it is essential to **use proper Unicode characters**. Unicode ensures that text is correctly displayed and understood across all devices and platforms.
+
+To enter Unicode text, you do not need to install any special fonts. Instead, set your system keyboard to the appropriate language or script and type as you normally would. Avoid using pseudo fonts (i.e., special fonts that visually mimic non-Latin scripts by reassigning Latin characters), as these are not compatible with KoboToolbox and can cause serious display and data integrity issues. If you are using Windows and need help setting up your system keyboard, refer to [Microsoft documentation](https://support.microsoft.com/en-us/windows/manage-the-language-and-keyboard-input-layout-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2).
 
 ## Translating right-to-left scripts
 
-When adding a language that uses right-to-left script it is important to use the
-correct language code, however even if the correct code is used, if the first
-question, hint, or note is written in a left-to-right script the form will
-automatically format the rest of the translation to a left-to-right format.
+When adding a language that uses a right-to-left (RTL) script, such as Arabic, Hebrew, or Urdu, it is important to **use the correct language code** and to ensure the **first visible text in the translation** (e.g., a question label, hint, or note) is written in the RTL language. This will ensure that the form's layout does not default to left-to-right (LTR) formatting.
+
+Additionally, when incorporating question references within question labels using RTL scripts, please note that the question reference syntax is reversed (i.e., `{question_name}$`).
+
+**survey worksheet**
+
+| type | name | label::English (en) | label::Arabic (ar) |
+| :--- | :--- | :------------------ | :----------------- |
+| begin\_group | profile | Respondent profile | ملف المستجيب |
+| text | name | Respondent's name | اسم المدعى عليه |
+| integer | age | How old is ${name}? | ؟{name}$ كم عمرك |
+| end\_group | | | |
+| survey |
