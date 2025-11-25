@@ -79,7 +79,8 @@ h2 {
   font-size: 1.5em;
 }
 
-section:has(h2:first-child) {
+section:has(h2:first-child),
+section:has(h3:first-child) {
   scroll-margin-top: 75px;
 }
 
