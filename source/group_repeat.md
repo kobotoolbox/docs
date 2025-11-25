@@ -108,6 +108,6 @@ During data collection, enumerators will be able to enter responses for these gr
 Additional settings and functionalities for repeat groups are available through XLSForm, but not directly within the Formbuilder. These include setting a fixed or dynamic number of repetitions, and using information from repeat groups elsewhere in your form.
 
 <p class="note">
-    For more information about advanced settings for repeat groups, see <a href="https://docs.getodk.org/form-logic/#controlling-the-number-of-repetitions">XLSForm documentation</a>.  
+    For more information about advanced settings for repeat groups, see <a href="https://support.kobotoolbox.org/repeat_groups_xls.html">Repeat groups in XLSForm</a>.  
 </p>
 
