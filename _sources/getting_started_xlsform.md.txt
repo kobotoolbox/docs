@@ -1,5 +1,5 @@
 # Getting started with XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a26961c65d6487b7cbd447780cf251acf950f73a/source/getting_started_xlsform.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9ab44ac0ba959ed3a97fed0849cac15ba4820eb4/source/getting_started_xlsform.md" class="reference">25 Nov 2025</a>
 
 <iframe src="https://www.youtube.com/embed/xpeBCy9p1Ys?si=tP_3G2vMnRC1OgWS" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -172,7 +172,7 @@ Once you have finished developing your XLSForm, you can upload and preview it in
 1. Go to the **Project** home page in KoboToolbox and click **NEW**.
 2. Select **Upload an XLSForm** and upload your XLSForm file.
 3. Enter the project details and click **CREATE PROJECT**.
-4. Click the <i class="k-icon-view"></i> **Preview** button.
+4. Click the <i class="k-icon k-icon-view"></i> **Preview** button.
 
 If your XLSForm contains an error, an error message will appear, usually indicating the exact row, question, or expression where the issue is located. After correcting the error in your XLSForm, you will need to upload the file again.
 
