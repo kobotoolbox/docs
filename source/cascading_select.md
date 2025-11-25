@@ -1,5 +1,5 @@
 # Adding cascading select questions in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4236bb112f9e1bd31140f6f895aa08356c637499/source/cascading_select.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/81d7045e8e9d21afcd7d94ef5c3c0fc97ce36be2/source/cascading_select.md" class="reference">25 Nov 2025</a>
 
 
 <iframe src="https://www.youtube.com/embed/JDDNmErhV7o?si=S2k3G0sadiFJursu" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
