@@ -172,7 +172,7 @@ Once you have finished developing your XLSForm, you can upload and preview it in
 1. Go to the **Project** home page in KoboToolbox and click **NEW**.
 2. Select **Upload an XLSForm** and upload your XLSForm file.
 3. Enter the project details and click **CREATE PROJECT**.
-4. Click the <class="k-icon k-icon-view"> **Preview** button.
+4. Click the <i class="k-icon-view"></i> **Preview** button.
 
 If your XLSForm contains an error, an error message will appear, usually indicating the exact row, question, or expression where the issue is located. After correcting the error in your XLSForm, you will need to upload the file again.
 
