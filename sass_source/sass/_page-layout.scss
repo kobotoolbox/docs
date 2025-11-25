@@ -367,3 +367,10 @@ html body {
     text-decoration: none;
   }
 }
+
+.page__back-to-top-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}

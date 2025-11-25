@@ -1,6 +1,7 @@
 # Recovering Data From Previous Form Versions
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6c4fc8e55497e4a00b39095f090a6f43eb01c37b/source/recovering_previous_formdata.md" class="reference">26 Jul 2020</a>
 
+
 **This article shows steps on how to recover data from previous versions of the form in case of question deletions**
 
 Normally when you change a form, the data will be downloaded based on the definition of that new form. As it is if you changed the name of a question or deleted a question, all the data previously collected on that question will not be visible under the new question unless you chose to include data collected from previous versions as explained below. 

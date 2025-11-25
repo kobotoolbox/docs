@@ -1,6 +1,7 @@
 # Qualitative Analysis of Audio Responses
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3d800e00d14000ecaa30ed97fcbf03a9feee65eb/source/qualitative_analysis.md" class="reference">3 May 2024</a>
 
+
 Qualitative analysis can be crucial for research and emergency response, offering in-depth insights often missed in quantitative data collection. KoboToolbox’s qualitative analysis tools help users to efficiently process and understand complex information from open-ended audio responses. Using the qualitative analysis features, you can add new data fields for summarizing, categorizing, and describing audio responses.
 
 The first step is to [collect audio responses](photo_audio_video_file.md) in your form, using the Audio question type. It may be helpful to [transcribe and/or translate](transcription-translation.md) your audio files before you begin the analysis, but it is not required.

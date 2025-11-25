@@ -1,6 +1,7 @@
 ﻿# Transferring forms and data manually from one android device to another
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7def5f54e2441b05b4a2163e682bdd146fa781e1/source/transferring_forms.md" class="reference">24 Sep 2025</a>
 
+
 There may be times when you are out in the field without internet connection,
 but you still need to upload the latest version of the forms (i.e., the latest
 deployed forms in the server) to your device. You might also be unable to upload

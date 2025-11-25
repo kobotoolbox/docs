@@ -1,6 +1,7 @@
 # Adding skip logic in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0d832566f7fb9d5e452c73468e52ec242eac992f/source/skip_logic.md" class="reference">30 Sep 2025</a>
 
+
 <iframe src="https://www.youtube.com/embed/uLSnoG0mqV4?si=63o4YeQUZWOsZmfF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 Skip logic, also known as branching or relevance conditions, controls which questions are displayed in a form. By default, all questions are visible. Skip logic determines under which condition(s) a question should appear. Skip logic conditions are always applied to the question or group that should be conditionally visible.

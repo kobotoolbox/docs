@@ -1,8 +1,5 @@
 # What Are Enketo Web Forms?
-
-**Last updated:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/enketo.md" class="reference">15
-Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/enketo.md" class="reference">15 Feb 2022</a>
 
 According to [Enketo.org](https://enketo.org), **Enketo** is the name of an
 open-source project as well as the name of an open-source web application that

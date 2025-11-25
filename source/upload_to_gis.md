@@ -1,6 +1,7 @@
 # Exporting and Uploading Data to GIS Software
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/upload_to_gis.md" class="reference">15 Feb 2022</a>
 
+
 **Simple step-by-step process to export and upload your data as a shapefile into
 GIS software, such as ArcMap.**
 

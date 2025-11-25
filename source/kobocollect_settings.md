@@ -1,6 +1,7 @@
 # Customizing KoboCollect settings
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5599bf9bc43c6872244104e236df84c6a6ed5f15/source/kobocollect_settings.md" class="reference">19 Sep 2025</a>
 
+
 <iframe src="https://www.youtube.com/embed/Qeky3aomiWI?si=M1l_jorFQEDacX2A" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 KoboCollect is a free, open-source KoboToolbox app designed for data collection on Android mobile devices. Before you get started, [install and configure](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) the KoboCollect app. Once installed and configured, you can customize the app based on your project or user needs. Project settings allow you to:

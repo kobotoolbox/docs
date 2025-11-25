@@ -1,6 +1,7 @@
 # Using the Team management feature
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7f800b38e7b07803e7abd456195dd5519b03240e/source/getting_started_organization_feature.md" class="reference">3 Oct 2025</a>
 
+
 The new Team management feature enables you to centralize project and user management for improved oversight and collaboration across large, distributed teams. When you add users to your Team in KoboToolbox, you will have access to view and manage their projects. Users in your Team will have access to your Teams or Enterprise Plan usage quotas, and ownership of their projects will be transferred to your Team.
 
 This article includes:

@@ -1,5 +1,6 @@
 # Introduction to KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6b49e25820efe5bf632a3eabc9f1cdea33fda532/source/welcome.md" class="reference">15 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/79cdbc6e6b1cebfcef7014a119d4f2dcf3f272af/source/welcome.md" class="reference">27 Oct 2025</a>
+
 
 KoboToolbox is an innovative open source platform for collecting, managing, and visualizing data. It is the most widely used data tool for social impact initiatives across the globe. 
 

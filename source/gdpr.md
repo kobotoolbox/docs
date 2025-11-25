@@ -1,6 +1,7 @@
 # General Data Protection Regulation (GDPR)
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2c18fa51ed6877e610d5a81c722f8010df110183/source/gdpr.md" class="reference">14 Mar 2023</a>
 
+
 ## What is GDPR?
 
 GDPR stands for [General Data Protection Regulation](https://gdpr-info.eu) and

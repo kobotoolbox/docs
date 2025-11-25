@@ -1,6 +1,7 @@
 # Deploying a Form to Start a New Data Collection Project
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a14700f771e43d4c8576ee8081f23d197cdd5110/source/deploy_form_new_project.md" class="reference">24 Sep 2025</a>
 
+
 Once you are ready to begin starting or piloting your data collection for a
 particular project, click the **Deploy** button to make the form live and allow
 data collection to begin.

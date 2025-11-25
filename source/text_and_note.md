@@ -1,6 +1,7 @@
 # Text and Note question types
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4d3ba5b4639335723af5b5a376159a536c904323/source/text_and_note.md" class="reference">9 May 2022</a>
 
+
 The "Text" question type is best used for questions that require undefined or
 open-ended responses, such as names, feedback, explanations or descriptions.
 

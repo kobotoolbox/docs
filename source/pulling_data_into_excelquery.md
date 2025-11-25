@@ -1,6 +1,7 @@
 # Connecting KoboToolbox to Microsoft Excel
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/df082614a0ae0bce8543b0c1474a9567fea7293e/source/pulling_data_into_excelquery.md" class="reference">23 Aug 2022</a>
 
+
 KoboToolbox lets you connect your data collection project to external programs
 such as Microsoft Excel, Power BI or Google Sheets which is made possible
 through the Application Programming Interface (API).

@@ -1,6 +1,7 @@
 # Troubleshooting KoboCollect Android Application
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f6c6ac34b1fe55e7aab87f7b61c26e1607b4306b/source/troubleshooting_kobocollect.md" class="reference">24 Sep 2025</a>
 
+
 **-- Kindly report any uncovered issue on our
 [community forum](https://community.kobotoolbox.org/)--**
 

@@ -1,6 +1,7 @@
 # Merging Individual Data with Roster Data through Power Query in Excel
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 Apr 2022</a>
 
+
 As illustrated in the support article,
 [Grouping Questions and Repeating Groups](group_repeat.md), you can use
 repeating groups to fulfil certain survey requirements. You may also need to

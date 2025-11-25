@@ -1,6 +1,7 @@
 # Collecting Data through Web Forms
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9153704b013430e55a763ac5c392dd30ae5d6bb9/source/data_through_webforms.md" class="reference">24 Sep 2025</a>
 
+
 ## What are web forms?
 
 [Enketo web forms](enketo.md) are used by KoboToolbox to preview your forms and

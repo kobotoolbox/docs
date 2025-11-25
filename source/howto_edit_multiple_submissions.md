@@ -1,6 +1,7 @@
 # Editing Responses in Multiple Submissions
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/509a98dad39e2899a5eff7e870481cf99749f321/source/howto_edit_multiple_submissions.md" class="reference">22 Sep 2022</a>
 
+
 Users could always edit submissions as outlined in our support article
 [Editing or Deleting a Single Submission](howto_edit_single_submissions.md).
 What if a user has to edit repeated typo errors or update missing responses for

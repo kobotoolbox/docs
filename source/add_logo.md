@@ -1,6 +1,7 @@
 # Adding a Custom Logo
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/add_logo.md" class="reference">29 Jul 2025</a>
 
+
 Adding a custom logo to the top of your form is a simple process and primarily
 follows the same steps as [adding media content to your forms](media.md).
 
