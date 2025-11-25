@@ -38,7 +38,7 @@ The following themes are available to customize your forms:
 |:-----------------------------|:----------------------------------------------------------------------------|:--------|
 | Default theme                | Displays questions one after another, on a single page.                     | ![Default style](images/form_style_xls/theme_default.png) |
 | <code>pages</code>           | Displays one question per screen or a <a href="https://support.kobotoolbox.org/grouping_questions_xls.html">group of questions</a> together on the same screen, similar to the KoboCollect layout. | ![Pages style](images/form_style_xls/theme_pages.png) |
-| <code>theme-grid</code>      | An alternative display that is more compact, similar to paper forms, and efficiently uses space, arranging multiple questions per row. Questions are capitalized by default. Requires <a href="https://support.kobotoolbox.org/form_style_xls.html#setting-up-XLSForm-with-theme_grid">setting up your XLSForm</a>. | ![Theme-grid](images/form_style_xls/theme_grid.png) |
+| <code>theme-grid</code>      | An alternative display that is more compact, similar to paper forms, and efficiently uses space, arranging multiple questions per row. Questions are capitalized by default. Requires <a href="https://support.kobotoolbox.org/form_style_xls.html#setting-up-an-xlsform-for-theme-grid">setting up your XLSForm</a>. | ![Theme-grid](images/form_style_xls/theme_grid.png) |
 | <code>theme-grid no-text-transform</code> | Same as theme-grid, but without automatic capitalization of questions. | ![Theme-grid no-text-transform](images/form_style_xls/theme_grid_no_text_transform.png) |
 
 ### Setting up an XLSForm for theme_grid
