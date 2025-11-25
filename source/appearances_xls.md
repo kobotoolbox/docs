@@ -1,5 +1,5 @@
 # Question appearances in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/appearances_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f7c669c5ba9140c8113876e8deab09ab3df052ea/source/appearances_xls.md" class="reference">25 Nov 2025</a>
 
 Question appearances allow you to customize how questions are displayed in the form and the type of responses they collect. This article explains how to add question appearances in XLSForm and lists common appearances by question type. 
 
