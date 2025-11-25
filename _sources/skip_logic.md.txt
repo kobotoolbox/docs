@@ -1,5 +1,5 @@
 # Adding skip logic in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0d832566f7fb9d5e452c73468e52ec242eac992f/source/skip_logic.md" class="reference">30 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/90a403072b1fc9b6d19036ddf06ed91b050fefad/source/skip_logic.md" class="reference">25 Nov 2025</a>
 
 
 <iframe src="https://www.youtube.com/embed/uLSnoG0mqV4?si=63o4YeQUZWOsZmfF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -41,6 +41,6 @@ To manually enter skip logic in XLSForm code, follow these steps:
 In XLSForm code, questions are referred to by their **question name** (Data Column Name) using the format `${question_name}`. For example, if Q2 should be asked only if the answer to Q1 is "Yes", the skip logic condition for Q2 would be `${Q1} = ‘yes’`.
 
 <p class="note">
-    For more information on XLSForm code and operators, see <a href="https://xlsform.org/en/#relevant">XLSForm documentation</a>.
+    For more information on XLSForm code and operators, see <a href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
 </p>
 
