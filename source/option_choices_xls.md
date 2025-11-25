@@ -73,7 +73,7 @@ To learn more about adding translations in XLSForm, see <a href="language_xls.ht
 In addition to text, option choices in XLSForm can also be **media files**, such as images, audio, or video. This enhances the survey experience by providing visual or auditory cues to respondents.
 
 <p class="note">
-To learn more about using media files as option choices, see <a href="media_xls.html">Adding media to an XLSForm</a>.
+To learn more about using media files as option choices, see <a href="media.html">Adding media to an XLSForm</a>.
 </p>
 
 ### Filtering choice lists
