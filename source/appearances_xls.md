@@ -83,7 +83,7 @@ Text questions allow users to [collect open-ended responses](https://support.kob
 | :--- | :--- | :--- |
 | `numbers` | Displays a numeric keyboard instead of a text keyboard (e.g., to collect phone numbers). | KoboCollect only |
 | `multiline` | Displays a multiline text box for longer text responses. | Enketo and KoboCollect |
-| `url` | Displays a clickable URL under the question text and makes the question read-only. Requires entering a URL in the question's `default` column. Also works with `note` questions. | Enketo and KoboCollect |
+| `url` | Displays a clickable URL under the question text and makes the question read-only. Requires entering a URL in the question's `default` column, or in the `calculation` column if the URL includes dynamic values. Also works with `note` questions. | Enketo and KoboCollect |
 | `masked` | Masks text entered by the respondent (e.g., a password or confidential information). | KoboCollect only |
 
 
