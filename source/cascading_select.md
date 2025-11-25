@@ -55,7 +55,7 @@ To update your cascading select questions using XLSForm:
 3. Re-upload the updated XLSForm to KoboToolbox by clicking on <strong>Replace form</strong> and uploading your modified file.
 
 <p class="note">
-    To learn more about adding cascading select questions and using choice filters in XLSForm, see <a href="https://support.kobotoolbox.org/choice_filters_xls.html">Adding choice filters in XLSForm</a>. For more information about using XLSForm with KoboToolbox, see <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">Getting started with XLSForm</a>. 
+    To learn more about adding cascading select questions and using choice filters in XLSForm, see <a href="https://support.kobotoolbox.org/choice_filters_xls.html">Adding choice filters in XLSForm</a>. For more information about using XLSForm with KoboToolbox, see <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a>. 
 </p>
 
 ## Troubleshooting
