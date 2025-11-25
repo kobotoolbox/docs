@@ -76,7 +76,6 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
   edit_forms_excel
   getting_started_xlsform
-  xls_url
   xlsform_with_kobotoolbox
   question_types_xls
   option_choices_xls
@@ -94,6 +93,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   choice_filters_xls
   calculations_xls
   form_settings_xls
+  form_style_xls.md
   metadata_xls
   pull_data_kobotoolbox
   select_from_file_xls
