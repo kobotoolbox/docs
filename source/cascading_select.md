@@ -55,7 +55,7 @@ To update your cascading select questions using XLSForm:
 3. Re-upload the updated XLSForm to KoboToolbox by clicking on <strong>Replace form</strong> and uploading your modified file.
 
 <p class="note">
-    To learn more about adding cascading select questions and using choice filters in XLSForm, see <a href="https://xlsform.org/en/#cascading-selects">XLSForm Documentation</a>. For more information about using XLSForm with KoboToolbox, see <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">Getting started with XLSForm</a>. 
+    To learn more about adding cascading select questions and using choice filters in XLSForm, see <a href="https://support.kobotoolbox.org/choice_filters_xls.html">Adding choice filters in XLSForm</a>. For more information about using XLSForm with KoboToolbox, see <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">Getting started with XLSForm</a>. 
 </p>
 
 ## Troubleshooting
@@ -72,7 +72,7 @@ Renaming a question or editing choice lists can change the backend code the casc
 <details>
 <summary><strong>Cascading select from a Select Many question</strong></summary>
 The cascading select feature in the Formbuilder is designed for <strong>Select One</strong> questions only. Building a cascade that starts from a <strong>Select Many</strong> question requires using XLSForm. 
-To learn more about advanced cascading select using XLSForm, see <a href="https://xlsform.org/en/#cascading-selects">XLSForm documentation</a>.
+To learn more about advanced cascading select using XLSForm, see <a href="https://support.kobotoolbox.org/choice_filters_xls.html">Adding choice filters in XLSForm</a>.
 </details>
 <br>
 <details>
