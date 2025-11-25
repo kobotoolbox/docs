@@ -1,4 +1,5 @@
 # Introduction to XLSForm
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/edit_forms_excel.md" class="reference">25 Nov 2025</a>
 
 KoboToolbox relies on [XLSForm](http://xlsform.org/en/), a standard for designing electronic forms in Excel or other spreadsheet programs. XLSForm makes it easier to manage complex forms, such as those with long choice lists or multiple translations. While the [KoboToolbox Formbuilder](https://support.kobotoolbox.org/formbuilder.html) offers an intuitive, user-friendly interface, XLSForm is recommended when working with advanced functionalities or complex forms.
 

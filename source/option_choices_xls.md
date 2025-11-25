@@ -1,5 +1,5 @@
 # Managing option choices in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2afa3a0c670fe98b296a79b798f33abf248d0273/source/option_choices_xls.md" class="reference">Oct 10, 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/option_choices_xls.md" class="reference">25 Nov 2025</a>
 
 XLSForm simplifies the creation and management of **option choice lists** for survey forms. This is particularly useful for long or repetitive lists, such as country or city names. Option choices are defined for `select_one`, `select_multiple`, or `rank` [questions](https://support.kobotoolbox.org/question_types_xls.html). 
 

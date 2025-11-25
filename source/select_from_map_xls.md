@@ -1,4 +1,5 @@
 # Selecting options from a map
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/select_from_map_xls.md" class="reference">25 Nov 2025</a>
 
 With **select_one** and **select_one_from_file** question types, you can configure your XLSForm to let users select a choice directly from a map instead of a list. When the map opens, it displays all available points, lines, or polygons based on the choices provided. Users can then tap a feature on the map to record their selection. This functionality is available **only in KoboCollect.**
 

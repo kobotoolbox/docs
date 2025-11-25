@@ -1,4 +1,5 @@
 # Form metadata in XLSForm 
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/metadata_xls.md" class="reference">25 Nov 2025</a>
 
 Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. 
 

@@ -1,4 +1,5 @@
 # Styling your forms using XLSForm
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/form_style_xls.md" class="reference">25 Nov 2025</a>
 
 With KoboToolbox, you can customize the appearance of your forms and questions to highlight key information and adapt the layout to your data collection needs. This includes applying themes to Enketo web forms, adding headers and lists in note questions, and using color or bold formatting for emphasis.
 
