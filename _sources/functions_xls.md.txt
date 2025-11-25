@@ -1,5 +1,5 @@
 # Using functions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/functions_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/197913a14e1b16bafa42ef99ebab937e7721a1f6/source/functions_xls.md" class="reference">25 Nov 2025</a>
 
 Functions are predefined operations used to perform calculations or manipulate data in XLSForm. They are essential for automating tasks and deriving key insights in your forms, allowing you to calculate project indicators, create scoring systems, and manage dates efficiently. 
 
@@ -53,10 +53,10 @@ The following functions are used to create, modify, or analyze text strings in X
 | Function | Description |
 |:---------|:------------|
 | `concat()` | Concatenates one or more arguments (separated by commas) into a single string. |
-| `regex(string, expression)` | Returns `True` if the string is an exact and complete match for a <a href="https://support.kobotoolbox.org/restrict_responses.html">regular expression</a>. |
-| `contains(string, substring)` | Returns `True` if the string contains the substring. |
-| `starts-with(string, substring)` | Returns `True` if the string begins with the substring. |
-| `ends-with(string, substring)` | Returns `True` if the string ends with the substring. |
+| `regex(string, expression)` | Returns `TRUE` if the string is an exact and complete match for a <a href="https://support.kobotoolbox.org/restrict_responses.html">regular expression</a>. |
+| `contains(string, substring)` | Returns `TRUE` if the string contains the substring. |
+| `starts-with(string, substring)` | Returns `TRUE` if the string begins with the substring. |
+| `ends-with(string, substring)` | Returns `TRUE` if the string ends with the substring. |
 | `substr(string, start[, end])` | Returns the substring of `string` beginning at the index start and extending to (but not including) index end (or to the termination of `string`, if end is not provided). |
 | `substring-before(string, target)` | Returns the substring of `string` before the first occurrence of the target substring. If the target is not found, or `string` begins with the target substring, then this will return an empty string. |
 | `substring-after(string, target)` | Returns the substring of `string` after the first occurrence of the target substring. If the target is not found this will return an empty string. |
