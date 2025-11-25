@@ -14,7 +14,7 @@ This article covers the following topics:
 - Adding skip logic to question groups
 
 <p class="note">
-  <strong>Note:</strong> This article focuses on adding skip logic in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding skip logic in the KoboToolbox Formbuilder, see <a href=skip_logic.html">Adding skip logic in the Formbuilder</a>.
+  <strong>Note:</strong> This article focuses on adding skip logic in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding skip logic in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>.
     <br><br>
 For hands-on practice with skip logic in XLSForm, see KoboToolbox Academy’s <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
 </p>
