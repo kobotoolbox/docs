@@ -107,7 +107,7 @@ To display each group of questions on its own page in Enketo web forms:
 
 | style |
 | :--- |
-| **pages** |
+| pages |
 | settings |
 
 3.  In the `survey` worksheet, add an **appearance** column.
