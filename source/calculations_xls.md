@@ -114,7 +114,7 @@ To set a dynamic default response:
   <summary><strong>Calculations not working properly</strong></summary>
   If your calculations are not working, check the following:
   <ul>
-  <li><strong>Syntax:</strong> All opened parentheses are closed, straight quotes are used ('), and commas are included where needed.</li>
+  <li><strong>Syntax:</strong> All opened parentheses are closed, straight quotes <code>'</code> are used), and commas are included where needed.</li>
   <li><strong>References:</strong> Question references correctly match the question name, no spaces or typos, no circular references (i.e., the calculation does not depend on itself).</li>
   <li><strong>Data types:</strong> Numeric and string calculations are not combined within the same question, data types are used correctly.</li>
 </ul>
