@@ -7,7 +7,7 @@
 Cascading select questions allow you to create dynamic forms where the options in one question depend on the answer to a previous question. This feature helps streamline data collection by presenting only relevant choices, improving the efficiency and accuracy of your surveys.
 
 <p class="note">
-  <strong>Note:</strong> This article focuses on basic cascading select questions using the Formbuilder. To learn more about using XLSForm to create advanced cascading select questions and add choice filters, see <a href="https://xlsform.org/en/#cascading-selects">XLSForm documentation</a>.
+  <strong>Note:</strong> This article focuses on basic cascading select questions using the Formbuilder. To learn more about using XLSForm to create advanced cascading select questions and add choice filters, see <a href="https://support.kobotoolbox.org/choice_filters_xls.html">Adding choice filters in XLSForm</a>.
 </p>
 
 ## Preparing a cascading choice table
