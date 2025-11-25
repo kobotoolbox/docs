@@ -85,5 +85,5 @@ The following functions are used to work with geographic data collected through 
 |:---------|:------------|
 | `area(${geoshape})` | Returns the area, in square meters, of a `geoshape` value. |
 | `distance(geo)` | Returns the distance, in meters, of either: <ul><li>the perimeter of a `geoshape` value</li><li>the length of a `geotrace` value</li><li>a list of geopoints either specified as strings or references to other fields (including from repeat groups), separated by commas</li></ul> |
-| `geofence(${geopoint}, ${geoshape})` | Returns `TRUE` if the specified ${geopoint} is inside the specified ${geoshape}, `FALSE` otherwise. Supported only in KoboCollect. |
+| `geofence(${geopoint}, ${geoshape})` | Returns `TRUE` if the specified `${geopoint}` is inside the specified `${geoshape}`, `FALSE` otherwise. Supported only in KoboCollect. |
 
