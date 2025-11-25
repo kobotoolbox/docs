@@ -83,6 +83,8 @@ To **display all grouped questions on the same screen** in KoboCollect:
 2.  In the `appearance` column, enter **field-list** in the `begin_group` row.
     * Each question group will now appear on its own page.
 
+**survey worksheet**
+
 | type | name | label | appearance |
 | :--- | :--- | :--- | :--- |
 | begin_group | personal_info | Section A: Personal Information | **field-list** |
@@ -90,6 +92,7 @@ To **display all grouped questions on the same screen** in KoboCollect:
 | integer | age | How old are you? | |
 | select_one yn | married | Are you married? | |
 | end_group | | | |
+| survey |
 
 ### Using Enketo web forms to collect data
 
