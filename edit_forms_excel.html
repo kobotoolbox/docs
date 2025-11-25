@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Editing Forms in Excel using XLSForm &#8212; KoboToolbox  documentation</title>
+    <title>Introduction to XLSForm &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -25,7 +25,7 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Importing an XLSForm via URL" href="xls_url.html" />
+    <link rel="next" title="Using XLSForm with KoboToolbox" href="xlsform_with_kobotoolbox.html" />
     <link rel="prev" title="Using HXL Tags" href="hxl.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
@@ -107,20 +107,72 @@
 
         <section class="page__body" role="main">
           
-  <section id="editing-forms-in-excel-using-xlsform">
-<h1>Editing Forms in Excel using XLSForm<a class="headerlink" href="#editing-forms-in-excel-using-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/edit_forms_excel.md" class="reference">15 Feb 2022</a></p>
-<p>KoboToolbox is building its forms using a widely shared standard called
-<a class="reference external" href="http://xlsform.org/en/">XLSForm</a>. XLSForm makes it possible to create very
-complex electronic forms in Excel (or any other spreadsheet program).</p>
-<p>All forms created with KoboToolbox can be imported from or exported to XLSForm
-files. This means they are fully compatible with other related tools such as
-<a class="reference external" href="https://opendatakit.org">ODK</a> or <a class="reference external" href="https://formhub.org">Formhub</a>.</p>
-<p>Editing a form in Excel can be an easy way to quickly make several changes to a
-form (for example for translating an entire form).</p>
-<p>The XLSForm format is wonderfully documented <a class="reference external" href="http://xlsform.org/en/">here</a>.</p>
-<p>When using XLSForm, you can create complex questions and forms, which are
-introduced in this site.</p>
+  <section id="introduction-to-xlsform">
+<h1>Introduction to XLSForm<a class="headerlink" href="#introduction-to-xlsform" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/edit_forms_excel.md" class="reference">25 Nov 2025</a></p>
+<p>KoboToolbox relies on <a class="reference external" href="http://xlsform.org/en/">XLSForm</a>, a standard for designing electronic forms in Excel or other spreadsheet programs. XLSForm makes it easier to manage complex forms, such as those with long choice lists or multiple translations. While the <a class="reference external" href="https://support.kobotoolbox.org/formbuilder.html">KoboToolbox Formbuilder</a> offers an intuitive, user-friendly interface, XLSForm is recommended when working with advanced functionalities or complex forms.</p>
+<p>All forms in KoboToolbox are fully compatible with XLSForm. This means you can easily import and export your forms across KoboToolbox and other data collection platforms. XLSForm provides a standardized format for form development using common spreadsheet software, making it a practical option for collaboration and sharing.</p>
+<p>This article covers the following topics:</p>
+<ul class="simple">
+<li><p>Benefits of using XLSForm for form development</p></li>
+<li><p>Overview of using XLSForm with KoboToolbox</p></li>
+<li><p>Additional resources for learning XLSForm</p></li>
+</ul>
+<p><img alt="image" src="_images/sample_xlsform.png" /></p>
+<p class="note">
+  This article provides an introduction to XLSForm. To get started with building XLSForms, see <a class="reference" href="https://support.kobotoolbox.org/getting_started_xlsform.html">Getting started with XLSForm</a>.
+  <br><br>
+  For hands-on practice with form development using XLSForm, see <a class="reference" href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">KoboToolbox Academy’s online XLSForm Fundamentals Course</a>.
+</p>
+<section id="benefits-of-using-xlsform">
+<h2>Benefits of using XLSForm<a class="headerlink" href="#benefits-of-using-xlsform" title="Link to this heading">¶</a></h2>
+<p>XLSForm provides numerous benefits for building both simple and complex data collection forms.</p>
+<section id="efficient-form-building-and-editing">
+<h3>Efficient form building and editing<a class="headerlink" href="#efficient-form-building-and-editing" title="Link to this heading">¶</a></h3>
+<p>XLSForm leverages familiar spreadsheet features for efficient form creation and modification. You can use Excel formulas and functionalities such as copy-pasting, dragging, Find and Replace, sorting, and filtering to quickly build and manage large forms.</p>
+</section>
+<section id="choice-list-management-for-multiple-choice-questions">
+<h3>Choice list management for multiple choice questions<a class="headerlink" href="#choice-list-management-for-multiple-choice-questions" title="Link to this heading">¶</a></h3>
+<p>XLSForm makes it easy to create and manage <a class="reference external" href="https://support.kobotoolbox.org/option_choices_xls.html">choice lists</a>. You can copy long lists directly from external sources, reuse the same options across multiple questions, or duplicate them across forms, saving time, ensuring consistency, and reducing manual errors.</p>
+</section>
+<section id="version-control-and-collaboration">
+<h3>Version control and collaboration<a class="headerlink" href="#version-control-and-collaboration" title="Link to this heading">¶</a></h3>
+<p>XLSForm simplifies sharing and managing form versions. As forms are Excel or Google Sheets files, teams can collaborate on them in real-time, share them for review, and maintain version records.</p>
+</section>
+<section id="form-customization">
+<h3>Form customization<a class="headerlink" href="#form-customization" title="Link to this heading">¶</a></h3>
+<p>XLSForm allows you to fully tailor your forms to different needs. You can add and manage <a class="reference external" href="https://support.kobotoolbox.org/language_xls.html">multiple translations</a> directly in your XLSForm to support multilingual data collection. You can easily set up complex form structures, such as <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html">question groups</a> or <a class="reference external" href="https://support.kobotoolbox.org/repeat_groups_xls.html">repeating sections</a>. Additionally, you can connect your form to <a class="reference external" href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">external data sources</a> and <a class="reference external" href="https://support.kobotoolbox.org/dynamic_data_attachment.html">other KoboToolbox projects</a>.</p>
+</section>
+<section id="advanced-functionalities">
+<h3>Advanced functionalities<a class="headerlink" href="#advanced-functionalities" title="Link to this heading">¶</a></h3>
+<p>XLSForm makes it easier to use advanced form building functionalities, such as <a class="reference external" href="https://support.kobotoolbox.org/skip_logic_xls.html">skip logic</a>, <a class="reference external" href="https://support.kobotoolbox.org/calculations_xls.html">calculations</a>, and <a class="reference external" href="https://support.kobotoolbox.org/constraints_xls.html">constraints</a>. As an open standard, XLSForm also offers access to features that may not yet be supported by the KoboToolbox Formbuilder.</p>
+</section>
+</section>
+<section id="using-xlsform-with-kobotoolbox">
+<h2>Using XLSForm with KoboToolbox<a class="headerlink" href="#using-xlsform-with-kobotoolbox" title="Link to this heading">¶</a></h2>
+<p>XLSForm seamlessly integrates with KoboToolbox for form building, previewing, editing, and deployment for data collection.</p>
+<p>Users can begin in the KoboToolbox Formbuilder by creating a new form and adding questions, then <a class="reference external" href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox">download their form</a> as an XLSForm for further customization. This provides a structured foundation, which can be useful for new projects or users with less form building experience.</p>
+<p>Forms created in XLSForm can then be uploaded to KoboToolbox for previewing, testing, editing, and deployment. Forms can be reviewed for errors and easily modified in KoboToolbox, such as changing the title or settings.</p>
+<p class="note">
+  For more information, see <a class="reference" href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a>.
+</p>
+</section>
+<section id="additional-xlsform-resources">
+<h2>Additional XLSForm resources<a class="headerlink" href="#additional-xlsform-resources" title="Link to this heading">¶</a></h2>
+<p>Numerous resources are available to help learn XLSForm and troubleshoot issues.</p>
+<p>KoboToolbox offers the following resources:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://support.kobotoolbox.org">KoboToolbox Help Center</a>: An extensive documentation library with support articles about KoboToolbox and XLSForm.</p></li>
+<li><p><a class="reference external" href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">KoboToolbox XLSForm Fundamentals Course</a>: An online course developed by our team of experts, which covers a range of skills including creating an XLSForm from scratch, using form logic and calculations, and testing and deploying forms for data collection with KoboToolbox.</p></li>
+<li><p><a class="reference external" href="https://community.kobotoolbox.org">KoboToolbox Community Forum</a>: A space to connect with our global user community, to get help with custom form building or troubleshooting, and to share KoboToolbox resources.</p></li>
+</ul>
+<p>External resources include:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://xlsform.org/en/">XLSForm documentation</a>: An extensive documentation website dedicated to XLSForm.</p></li>
+<li><p><a class="reference external" href="https://xlsform.org/en/ref-table/">XLSForm Reference and Template</a>: A detailed resource for creating and styling forms, including question types, appearances, and optional columns.</p></li>
+<li><p><a class="reference external" href="https://docs.getodk.org/form-reference/">ODK documentation</a>: Another extensive documentation website dedicated to XLSForm.</p></li>
+</ul>
+</section>
 </section>
 
 
@@ -139,7 +191,7 @@ introduced in this site.</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Editing Forms in Excel using XLSForm"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Introduction to XLSForm"
               class="feedback-button"
               target="_blank"
             >
@@ -205,14 +257,37 @@ introduced in this site.</p>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Using XLSForm</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Editing Forms in Excel using XLSForm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#benefits-of-using-xlsform">Benefits of using XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-xlsform-with-kobotoolbox">Using XLSForm with KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#additional-xlsform-resources">Additional XLSForm resources</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Getting started with XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importing an XLSForm via URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Adding Various Types of Media (image, audio, video) to a Form</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding Another Language to your XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Question types in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Managing option choices in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grouping questions in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Repeat groups in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Using question options in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Question appearances in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding translations in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to an XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introduction to form logic in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Using functions in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Adding skip logic in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Adding constraints in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Adding required logic in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Adding choice filters in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Adding calculations in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Form settings in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Styling your forms using XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Form metadata in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pulling data from an external CSV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Selecting options from a map</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pull Data Functionality in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking with XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
@@ -353,7 +428,7 @@ introduced in this site.</p>
   <script>
     window.docs = {
       currentPagename: "edit_forms_excel",
-      currentTitle: "Editing Forms in Excel using XLSForm",
+      currentTitle: "Introduction to XLSForm",
       currentUrl: ("index.html").replace("index.html", "edit_forms_excel.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
