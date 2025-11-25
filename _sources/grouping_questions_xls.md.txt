@@ -1,5 +1,5 @@
 # Grouping questions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/51a5c6e3324893d6fe857b201d4219be3e9cb7eb/source/grouping_questions_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1a6d6ffa07f315904657a20e5f7f06cd9d924f93/source/grouping_questions_xls.md" class="reference">25 Nov 2025</a>
 
 Grouping questions in XLSForm helps organize related content into clear, structured sections, improving form layout and navigation. For example, you can group all demographic questions into one section.
 
@@ -107,7 +107,7 @@ To display each group of questions on its own page in Enketo web forms:
 
 | style |
 | :--- |
-| pages |
+| **pages** |
 | settings |
 
 3.  In the `survey` worksheet, add an **appearance** column.
