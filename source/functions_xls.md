@@ -21,7 +21,7 @@ The following functions are some of the most frequently used in XLSForm. They he
 | `count-selected(${question_name})` | Returns the number of options selected in a `select_multiple` question. |
 | `coalesce(${question1}, ${question2})` | Returns the first non-empty value of the two arguments. Returns an empty string if both are empty or non-existent. |
 | `jr:choice-name(choice_name, '${question_name}')` | Returns the label value, in the active language, associated with the `choice_name` in the list of choices for a select type question. To retrieve the label of whichever response was selected, use `jr:choice-name(${question_name}, '${question_name}')`. |
-| `selected-at(${question_name}, n)` | Returns a selected choice in a `select_multiple` question at the n<sup>th</sup> position. For example, `selected-at(${question_name}, 2)` returns the second choice selected in a `select_multiple` question. |
+| `selected-at(${question_name}, n)` | Returns the selected choice in a `select_multiple` question at position **n+1**. For example, `selected-at(${question_name}, 2)` returns the third choice selected in a `select_multiple` question. |
 | `once(expression)` | Evaluates an expression only once (e.g., to ensure a random number is only generated once, or to store the first value entered for a question even if the response is changed later). |
 | `instance('list_name')/root/item[name = ${question}]/column_name` | Retrieves a value from the choices sheet. Searches the choice list named `list_name`, finds the row where the choice `name` matches the response to `${question}`, and returns the value from the column specified as `column_name`. |
 
