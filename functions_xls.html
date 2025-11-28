@@ -109,7 +109,7 @@
           
   <section id="using-functions-in-xlsform">
 <h1>Using functions in XLSForm<a class="headerlink" href="#using-functions-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/580618d986f3783ca933169d5e0ec3108b490e76/source/functions_xls.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/2e43db0214e7ac4e786b04f8cb1c04b6908325d3/source/functions_xls.md" class="reference">28 Nov 2025</a></p>
 <p>Functions are predefined operations used to perform calculations or manipulate data in XLSForm. They are essential for automating tasks and deriving key insights in your forms, allowing you to calculate project indicators, create scoring systems, and manage dates efficiently.</p>
 <p>This article lists common functions used in XLSForm, including functions to manipulate numbers, strings, dates, and GPS points.</p>
 <p class="note">
@@ -144,7 +144,7 @@
 <td class="text-left"><p>Returns the label value, in the active language, associated with the <code class="docutils literal notranslate"><span class="pre">choice_name</span></code> in the list of choices for a select type question. To retrieve the label of whichever response was selected, use <code class="docutils literal notranslate"><span class="pre">jr:choice-name(${question_name},</span> <span class="pre">'${question_name}')</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">selected-at(${question_name},</span> <span class="pre">n)</span></code></p></td>
-<td class="text-left"><p>Returns a selected choice in a <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> question at the n<sup>th</sup> position. For example, <code class="docutils literal notranslate"><span class="pre">selected-at(${question_name},</span> <span class="pre">2)</span></code> returns the second choice selected in a <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> question.</p></td>
+<td class="text-left"><p>Returns the selected choice in a <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> question at position <strong>n+1</strong>. For example, <code class="docutils literal notranslate"><span class="pre">selected-at(${question_name},</span> <span class="pre">2)</span></code> returns the third choice selected in a <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> question.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">once(expression)</span></code></p></td>
 <td class="text-left"><p>Evaluates an expression only once (e.g., to ensure a random number is only generated once, or to store the first value entered for a question even if the response is changed later).</p></td>
