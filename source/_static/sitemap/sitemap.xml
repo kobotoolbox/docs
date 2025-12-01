@@ -7,585 +7,713 @@
 
 
 <url>
-  <loc>https://support.kobotoolbox.org/</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://support.kobotoolbox.org/</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/welcome.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/about_kobotoolbox.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/about_kobotoolbox.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/getting-started.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/overview_of_creating_a_project.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/welcome.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/new_form.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/quick_start.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/quick_start.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/creating_account.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/creating_account.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/formbuilder.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/activation_link.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/getting_started_xlsform.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/reset_password.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/account-billing.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/two_factor_authentication.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/activation_link.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/formbuilder.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/reset_password.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/question_types.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/two_factor_authentication.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/text_and_note.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/using-formbuilder.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/select_one_and_select_many.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/question_types.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/acknowledge.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/text_and_note.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/number_decimal_range.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/select_one_and_select_many.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/date_time.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/acknowledge.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/photo_audio_video_file.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/number_decimal_range.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/barcode_qrcode_questions.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/date_time.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/rating_ranking.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/photo_audio_video_file.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/external_file.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/barcode_qrcode_questions.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/gps_questions.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/rating_ranking.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/calculate_questions.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/external_file.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/advanced_calculate.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/gps_questions.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/collecting_signatures.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/calculate_questions.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/matrix_response.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/advanced_calculate.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/responses_inside_question.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/collecting_signatures.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/question_options.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/matrix_response.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/skip_logic.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/responses_inside_question.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/validation_criteria.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/question_options.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/number_text_responses.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/skip_logic.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/cascading_select.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/validation_criteria.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/group_repeat.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/number_text_responses.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/restrict_responses.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/cascading_select.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/language_dashboard.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/group_repeat.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/form_meta.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/restrict_responses.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/audit_logging.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/language_dashboard.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/custom_format_web.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/form_meta.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/alternative_enketo.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/audit_logging.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/question_library.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/custom_format_web.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/using_public_collections.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/alternative_enketo.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/public_collections_advanced_search.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/question_library.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/hxl.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/using_public_collections.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/edit_forms_excel.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/public_collections_advanced_search.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/getting_started_xlsform.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/hxl.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/xls_url.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/using-xlsform.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/media.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/edit_forms_excel.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/language_xls.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/dynamic_data_attachment.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/question_types_xls.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/pull_data_kobotoolbox.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/option_choices_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/library_locking.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/grouping_questions_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/data-collection-tools.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/repeat_groups_xls.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/enketo.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/question_options_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/deploy_form_new_project.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/appearances_xls.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/recording-interviews.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/language_xls.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/data_through_webforms.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/media.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/data-offline.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/form_logic_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/kobocollect_on_android_latest.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/functions_xls.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/kobocollect_settings.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/skip_logic_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/data_collection_kobocollect.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/constraints_xls.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/transferring_forms.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/required_logic_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/devices_for_data_collection.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/choice_filters_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/troubleshooting_kobocollect.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/calculations_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/troubleshooting_webforms.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/form_settings_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/collect_gps.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/form_style_xls.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/project_summary.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/metadata_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/record_validation.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/pull_data_kobotoolbox.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/delete_project.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/select_from_file_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/export_download.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/select_from_map_xls.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/advanced_export.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/dynamic_data_attachment.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/managing_repeat_groups.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/library_locking.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/archiving_projects.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/collecting-data.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/project_sharing_settings.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/data-collection-tools.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/managing_permissions.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/enketo.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/export_gps.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/deploy_form_new_project.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/howto_edit_single_submissions.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/recording-interviews.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/howto_edit_multiple_submissions.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/data_through_webforms.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/photo_download.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/data-offline.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/deleting_media.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/kobocollect_on_android_latest.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/recovering_previous_formdata.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/kobocollect_settings.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/getting_started_organization_feature.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/data_collection_kobocollect.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/activity_logs.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/transferring_forms.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/creating_custom_reports.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/devices_for_data_collection.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/transcription-translation.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/troubleshooting_kobocollect.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/qualitative_analysis.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/troubleshooting_webforms.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/converting_to_spss_and_stata.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/collect_gps.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/api.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/managing-projects.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/synchronous_exports.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/project_summary.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/pulling_data_into_excelquery.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/record_validation.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/pulling_data_into_powerbi.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/delete_project.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/merging_dataset_excel_power_query.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/export_download.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/rest_services.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/advanced_export.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/upload_to_gis.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/managing_repeat_groups.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/kobotoolbox_monday_integration.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/archiving_projects.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/migrating_api.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/project_sharing_settings.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/is_my_data_safe.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/managing_permissions.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/gdpr.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/export_gps.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/hipaa_compliance.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/howto_edit_single_submissions.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/data_storage.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/howto_edit_multiple_submissions.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/encrypting_forms.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/photo_download.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/p_codes.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/deleting_media.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/unique_serial_numbers.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/recovering_previous_formdata.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/user_specified_other.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/getting_started_organization_feature.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/lower_file_size.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/activity_logs.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/calculations_constraints_matrix.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/analyzing-data.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/adding_skip_to_matrix.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/creating_custom_reports.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/add_logo.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/transcription-translation.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/stuck_in_pending.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/qualitative_analysis.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/manual_upload.html</loc>
-  <lastmod>2025-09-19T17:48:53+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://support.kobotoolbox.org/converting_to_spss_and_stata.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/index.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://support.kobotoolbox.org/integrations.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/about_kobotoolbox_fr.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://support.kobotoolbox.org/api.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/about_kobotoolbox_es.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://support.kobotoolbox.org/synchronous_exports.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/about_kobotoolbox_ar.html</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://support.kobotoolbox.org/pulling_data_into_excelquery.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/question_options.html?highlight=guidance+hint</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://support.kobotoolbox.org/pulling_data_into_powerbi.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/export_download.html?highlight=export</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://support.kobotoolbox.org/merging_dataset_excel_power_query.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://support.kobotoolbox.org/merging_dataset_excel_power_query.html?highlight=power+query</loc>
-  <lastmod>2025-09-19T17:48:54+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://support.kobotoolbox.org/rest_services.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
 </url>
-
-
+<url>
+<loc>https://support.kobotoolbox.org/upload_to_gis.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/kobotoolbox_monday_integration.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/migrating_api.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/data-security-protection.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/is_my_data_safe.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/gdpr.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/hipaa_compliance.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/data_storage.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/encrypting_forms.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/additional-resources.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/p_codes.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/unique_serial_numbers.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/user_specified_other.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/lower_file_size.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/calculations_constraints_matrix.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/adding_skip_to_matrix.html</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/add_logo.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/stuck_in_pending.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/manual_upload.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/index.html</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/validation_criteria.html?highlight=limiting</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/question_options.html?highlight=custom+logic</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/encrypting_forms.html?highlight=encryption</loc>
+<lastmod>2025-11-28T09:15:32+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/question_options.html?highlight=guidance+hint</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/export_download.html?highlight=export</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://support.kobotoolbox.org/merging_dataset_excel_power_query.html?highlight=power+query</loc>
+<lastmod>2025-11-28T09:15:31+00:00</lastmod>
+<priority>0.64</priority>
+</url>
 </urlset>
