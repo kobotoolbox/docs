@@ -22,6 +22,14 @@ The **index variable** acts as the [primary key](https://en.wikipedia.org/wiki/P
 
 The remaining columns can include any additional details you want to retrieve, such as names, categories, or descriptions. Ensure the CSV file is clean, consistently formatted, and saved with the `.csv` extension.
 
+**Example: eligibility.csv**
+
+| ID           | status          | 
+|:-----------  |:----------------|
+| AH784N       | eligible        |
+| DB839K       | ineligible      | 
+| SH849T       | eligible        |
+
 ## Setting up your XLSForm
 
 Once you have set up your external CSV, configure your XLSForm in the following way:
@@ -40,7 +48,7 @@ Once you have set up your external CSV, configure your XLSForm in the following 
 |:-----------|:------------------|:-------------------------------------------|:-------------|
 | text       | respondent_id      | Respondent ID                              |              |
 | calculate  | eligibility_status |                                            | pulldata('eligibility', 'status', 'ID', 'respondent_id') |
-| note       | eligibility_not    | Respondent is ${eligibility_status} for the study. |              |
+| note       | eligibility_note    | Respondent is ${eligibility_status} for the study. |              |
 | survey | 
 
 In the example above, the calculation retrieves the value from the `status` column of the `eligibility.csv` file, in the row where the `ID` in the CSV matches the ID entered in the `respondent_id` question of your form.
