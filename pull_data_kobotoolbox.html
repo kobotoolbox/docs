@@ -109,7 +109,7 @@
           
   <section id="pulling-data-from-an-external-csv">
 <h1>Pulling data from an external CSV<a class="headerlink" href="#pulling-data-from-an-external-csv" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/pull_data_kobotoolbox.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/bdf046e95ac9a5302be29803281c48f39e961b0c/source/pull_data_kobotoolbox.md" class="reference">8 Dec 2025</a></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> function in XLSForm lets you dynamically retrieve information from an external CSV file while completing a form. This allows you to reference existing datasets and automatically pull in related details, avoiding the need for enumerators to re-enter the same information.</p>
 <p>For example, you can use <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> to:</p>
 <ul class="simple">
@@ -128,6 +128,25 @@
 <p>To use <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code>, first prepare an external CSV file containing the reference data you want to retrieve. Each row should represent a unique record (for example, a participant, location, or item) and the file should include at least two columns. One column must contain the <strong>index variable</strong> that matches the values entered in your form.</p>
 <p>The <strong>index variable</strong> acts as the <a class="reference external" href="https://en.wikipedia.org/wiki/Primary_key">primary key</a> that links your XLSForm to the external CSV. It should be a unique identifier that exists in both files, such as a participant ID, a district name, or another matching code.</p>
 <p>The remaining columns can include any additional details you want to retrieve, such as names, categories, or descriptions. Ensure the CSV file is clean, consistently formatted, and saved with the <code class="docutils literal notranslate"><span class="pre">.csv</span></code> extension.</p>
+<p><strong>Example: eligibility.csv</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>ID</p></th>
+<th class="head text-left"><p>status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>AH784N</p></td>
+<td class="text-left"><p>eligible</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>DB839K</p></td>
+<td class="text-left"><p>ineligible</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>SH849T</p></td>
+<td class="text-left"><p>eligible</p></td>
+</tr>
+</tbody>
+</table>
 </section>
 <section id="setting-up-your-xlsform">
 <h2>Setting up your XLSForm<a class="headerlink" href="#setting-up-your-xlsform" title="Link to this heading">¶</a></h2>
@@ -165,7 +184,7 @@
 <td class="text-left"><p>pulldata(‘eligibility’, ‘status’, ‘ID’, ‘respondent_id’)</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>note</p></td>
-<td class="text-left"><p>eligibility_not</p></td>
+<td class="text-left"><p>eligibility_note</p></td>
 <td class="text-left"><p>Respondent is ${eligibility_status} for the study.</p></td>
 <td class="text-left"><p></p></td>
 </tr>
