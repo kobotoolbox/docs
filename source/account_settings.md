@@ -7,7 +7,7 @@ Your KoboToolbox account settings allow you to manage your profile information, 
 
 To access your account settings:
 1. [Sign in](https://www.kobotoolbox.org/sign-up/) to your KoboToolbox account.
-2. Click on the profile icon in the top right corner. 
+2. Click your profile icon in the top right corner. 
 3. Click on **Account Settings.**
 
 ![Manage account settings](images/account_settings/account_settings.png)
@@ -105,7 +105,7 @@ On the **Add-ons** page, you can:
 
 To change the language of your KoboToolbox interface: 
 1. Go to the **Projects** home page.
-2. Click on the profile icon in the top right corner. 
+2. Click your profile icon in the top right corner. 
 3. Click on <i class="k-icon-language"></i> **Language** and select your preferred language.
 
 ![Language selection](images/account_settings/language.png)
