@@ -46,7 +46,7 @@ Select questions allow respondents to [choose from predefined options](https://s
 | `quick` | Auto-advances the form to the next question after an answer is selected (`select_one` only). | KoboCollect only |
 | `quickcompact` | Displays choices side-by-side with minimal padding and without choice boxes, and auto-advances to the next question after an answer is selected (`select_one` only). | KoboCollect only |
 | `columns` | Displays available choices in 2, 3, 4 or 5 columns depending on screen size. | Enketo and KoboCollect |
-| `columns-pack` | Displays available choices with as many as possible on one line. | Enketo and KoboCollect |
+| `columns-pack` | Displays available choices with as many choices as possible on one line. | Enketo and KoboCollect |
 | `columns-n` | Displays available choices in the specified number (n) of columns. | Enketo and KoboCollect |
 | `map` | Displays a map to select options from. Requires <a href="https://support.kobotoolbox.org/select_from_map_xls.html">defining GPS coordinates</a> in the `choices` sheet (`select_one` only). | KoboCollect only |
 | `quick map` | Displays a map to select options from, automatically recording the first selected location without displaying additional information. Requires <a href="https://support.kobotoolbox.org/select_from_map_xls.html">defining GPS coordinates</a> in the `choices` sheet (`select_one` only). | KoboCollect only |
@@ -82,7 +82,7 @@ Text questions allow users to [collect open-ended responses](https://support.kob
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
 | `numbers` | Displays a numeric keyboard instead of a text keyboard (e.g., to collect phone numbers). | KoboCollect only |
-| `multiline` | Displays a multiline text box for longer text responses. | Enketo and KoboCollect |
+| `multiline` | Displays a larger text box for longer text responses. | Enketo and KoboCollect |
 | `url` | Displays a clickable URL under the question text and makes the question read-only. Requires entering a URL in the question's `default` column, or in the `calculation` column if the URL includes dynamic values. Also works with `note` questions. | Enketo and KoboCollect |
 | `masked` | Masks text entered by the respondent (e.g., a password or confidential information). | KoboCollect only |
 
@@ -114,7 +114,7 @@ GPS questions are used to [capture the geographic coordinates](https://support.k
 | `hide-input` | Shows a larger map and hides other input fields (latitude, longitude, altitude, accuracy). | Enketo only |
 
 
-### Image questions
+### Image question type
 Image questions allow users to [upload or record images](https://support.kobotoolbox.org/question_types_xls.html#media-question-types) directly into their forms.
 
 | Appearance | Description | Compatibility |
@@ -126,7 +126,7 @@ Image questions allow users to [upload or record images](https://support.kobotoo
 | `new-front` | Prompts users to take a new picture using the device's front-facing camera. | KoboCollect only |
 
 
-### Barcode questions
+### Barcode question type
 Barcode questions allow users to [scan a QR code](https://support.kobotoolbox.org/question_types_xls.html#media-question-types) using the device's camera in KoboCollect.
 
 | Appearance | Description | Compatibility |
