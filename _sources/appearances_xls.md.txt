@@ -1,5 +1,5 @@
 # Question appearances in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f7c669c5ba9140c8113876e8deab09ab3df052ea/source/appearances_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f334c40b8cbb4fc8f64be0fe4870ea64944a31dc/source/appearances_xls.md" class="reference">10 Dec 2025</a>
 
 Question appearances allow you to customize how questions are displayed in the form and the type of responses they collect. This article explains how to add question appearances in XLSForm and lists common appearances by question type. 
 
@@ -39,7 +39,7 @@ Select questions allow respondents to [choose from predefined options](https://s
 | `compact` | Displays choices side-by-side with minimal padding and without choice boxes. | Enketo and KoboCollect |
 | `label` | Displays choice labels without the choice boxes. | Enketo and KoboCollect |
 | `list-nolabel` | Displays the answer choice boxes without the labels. | Enketo and KoboCollect |
-| `autocomplete` | Adds a search bar at the top of the option list. | Enketo and KoboCollect (combine with minimal appearance) |
+| `autocomplete` | Adds a search bar at the top of the option list. | Enketo and KoboCollect (combine with `minimal` appearance) |
 | `horizontal` | Displays the answer choices horizontally in columns. | Enketo only |
 | `horizontal-compact` | Displays the answer choices horizontally, with minimal padding and without choice boxes. | Enketo only |
 | `likert` | Displays answer choices as a Likert scale (`select_one` only). | Enketo and KoboCollect  |
