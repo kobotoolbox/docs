@@ -25,6 +25,10 @@ To create a question group in XLSForm:
 4.  Enter each question of the group in its own row, as you normally would.
 5.  In a new row after the grouped questions, enter **end_group** in the `type` column to indicate the end of the group.
     - In the **end_group** row, leave the `name` and `label` columns blank.
+  
+<p class="note">
+<strong>Note:</strong> Group names in the <code>name</code> column must be unique and must not duplicate any question name.
+</p>
 
 **survey worksheet**
 
