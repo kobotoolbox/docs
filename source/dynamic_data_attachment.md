@@ -147,12 +147,12 @@ When collecting data, note the following:
 
 <details>
   <summary><strong>Error or crash when linking forms</strong></summary>
-  <p>If the user interface crashes when you attempt to link forms, check the following:</p>
+If the user interface crashes when you attempt to link forms, check the following:
   <ul>
     <li>Your XLSForm does not include duplicate question or group names in the <code>name</code> column of the <code>survey</code> worksheet.</li>
     <li>Your parent project has at least one submission.</li>
   </ul>
-  <p>If the user interface is still crashing, select only the questions you need to connect the forms, instead of clicking <strong>Select all</strong>.</p>
+If the user interface is still crashing, select only the questions you need to connect the forms, instead of clicking <strong>Select all</strong>.
 </details>
 
 <br>
