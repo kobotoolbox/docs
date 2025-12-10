@@ -47,7 +47,7 @@ Once you have set up your external CSV, configure your XLSForm in the following 
   | type      | name               | label                                      | calculation |
 |:-----------|:------------------|:-------------------------------------------|:-------------|
 | text       | respondent_id      | Respondent ID                              |              |
-| calculate  | eligibility_status |                                            | pulldata('eligibility', 'status', 'ID', 'respondent_id') |
+| calculate  | eligibility_status |                                            | pulldata('eligibility', 'status', 'ID', '${respondent_id}') |
 | note       | eligibility_note    | Respondent is ${eligibility_status} for the study. |              |
 | survey | 
 
