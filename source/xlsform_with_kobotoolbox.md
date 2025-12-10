@@ -167,7 +167,6 @@ correcting the error in your spreadsheet, you will need to upload the file again
 
 <details>
 <summary><strong>Error when trying to import an XLSForm via URL</strong></summary>
-<br>
 Check that the URL you are using is correct. When loaded into a browser, the URL should initiate a file download, not open a webpage.
 </details>
 
@@ -175,6 +174,5 @@ Check that the URL you are using is correct. When loaded into a browser, the URL
 
 <details>
 <summary><strong>Import via URL not loading undeployed version</strong></summary>
-<br>
 If you imported a link and are not seeing the new form version, refresh your browser.
 </details>
