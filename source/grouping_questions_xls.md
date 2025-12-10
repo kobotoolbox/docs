@@ -1,5 +1,5 @@
 # Grouping questions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/51a5c6e3324893d6fe857b201d4219be3e9cb7eb/source/grouping_questions_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/238639f370a90eb7ed468043b9e78edec0fdc691/source/grouping_questions_xls.md" class="reference">10 Dec 2025</a>
 
 Grouping questions in XLSForm helps organize related content into clear, structured sections, improving form layout and navigation. For example, you can group all demographic questions into one section.
 
