@@ -1,5 +1,5 @@
-# Collecting GPS Locations
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/collect_gps.md" class="reference">29 Jul 2025</a>
+# Collecting GPS data
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cb1bef79ba41d9f8deb44c6ff231160337a57196/source/collect_gps.md" class="reference">13 Dec 2025</a>
 
 
 Location coordinates can be collected easily in all forms with the 'GPS'
