@@ -1,5 +1,5 @@
 # Exporting and downloading your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8a772b24abadb4e8d54f9716b798c5479432f0e6/source/export_download.md" class="reference">6 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6422cb755faf1cff740ae9e499e8f97e4fc4c20c/source/export_download.md" class="reference">13 Dec 2025</a>
 
 
 <iframe src="https://www.youtube.com/embed/bXzwvvnhj7U" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -29,9 +29,9 @@ You can choose from the following export types:
 | :----------------- | :--------------------------------------------- |
 | XLS               | Microsoft Excel file (.xlsx format). This file type is recommended when collecting repeat group data.                                  |
 | CSV      | Comma Separated Values file. This file type is ideal for importing into most data management software, including databases.                                  |
-| GeoJSON           | This is an open standard geospatial data interchange format, best for integrating with GIS software like ArcGIS.            |
+| GeoJSON           | This is an open standard geospatial data interchange format, best for integrating with GIS software like ArcGIS. This file type is recommended for analyzing GPS data.            |
 | SPSS Labels           | Generates an SPSS syntax file that applies question labels and value labels to variables of KoboToolbox data imported into SPSS. For more information, see <a href="https://support.kobotoolbox.org/converting_to_spss_and_stata.html">Converting Data into SPSS and/or Stata</a>.         |
-| GPS Coordinates (KML)               | Generates a KML file for working with your data in GIS software, such as Google Earth.                               |
+| GPS Coordinates (KML)               | Generates a KML file for working with your data in GIS software, such as Google Earth. This export format will not be supported in the future. We recommend using one of the other available export types instead. |
 | Media Attachments (ZIP)               |  Downloads a ZIP file containing all media collected through the form.                               |
 | XLS (legacy)              | Generates an .xlsx file (Microsoft Excel) using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.                                  |
 | CSV (legacy)               | Generates a CSV file using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.                                  |
@@ -51,6 +51,13 @@ When using the standard export formats (XLS, CSV, GeoJSON, and SPSS Labels), you
 In addition to customizing value and header formats, non-legacy export formats also offer other customization options within the **Advanced Options** section. For more information on advanced options, see [Advanced options for exporting data](https://support.kobotoolbox.org/advanced_export.html).
 
 ## Troubleshooting
+
+<details>
+    <summary><strong>Exporting GPS data</strong></summary>
+There are several options for downloading GPS data. When you export your data as CSV or XLS, the coordinates appear in multiple columns: one column with the full coordinate set, and additional columns for latitude, longitude, altitude, and precision. To prepare your data for use in GIS software such as ArcGIS, use the GeoJSON export option. The KML export format is limited and will not be supported in the future.    
+</details>
+
+<br>
 
 <details>
     <summary><strong>Exports stuck in pending state or failed</strong></summary>
