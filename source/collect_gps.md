@@ -1,4 +1,4 @@
-# Collecting GPS Locations
+# Collecting GPS data
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/collect_gps.md" class="reference">29 Jul 2025</a>
 
 
