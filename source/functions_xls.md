@@ -1,5 +1,5 @@
 # Using functions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2e43db0214e7ac4e786b04f8cb1c04b6908325d3/source/functions_xls.md" class="reference">28 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3b9d6690d9ae3fbfc12d57fa1df2dd94bba8badb/source/functions_xls.md" class="reference">15 Dec 2025</a>
 
 Functions are predefined operations used to perform calculations or manipulate data in XLSForm. They are essential for automating tasks and deriving key insights in your forms, allowing you to calculate project indicators, create scoring systems, and manage dates efficiently. 
 
