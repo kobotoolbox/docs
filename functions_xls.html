@@ -109,7 +109,7 @@
           
   <section id="using-functions-in-xlsform">
 <h1>Using functions in XLSForm<a class="headerlink" href="#using-functions-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/2e43db0214e7ac4e786b04f8cb1c04b6908325d3/source/functions_xls.md" class="reference">28 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3b9d6690d9ae3fbfc12d57fa1df2dd94bba8badb/source/functions_xls.md" class="reference">15 Dec 2025</a></p>
 <p>Functions are predefined operations used to perform calculations or manipulate data in XLSForm. They are essential for automating tasks and deriving key insights in your forms, allowing you to calculate project indicators, create scoring systems, and manage dates efficiently.</p>
 <p>This article lists common functions used in XLSForm, including functions to manipulate numbers, strings, dates, and GPS points.</p>
 <p class="note">
@@ -226,8 +226,8 @@
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ends-with(string,</span> <span class="pre">substring)</span></code></p></td>
 <td class="text-left"><p>Returns <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> if the string ends with the substring.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">substr(string,</span> <span class="pre">start[,</span> <span class="pre">end])</span></code></p></td>
-<td class="text-left"><p>Returns the substring of <code class="docutils literal notranslate"><span class="pre">string</span></code> beginning at the index start and extending to (but not including) index end (or to the termination of <code class="docutils literal notranslate"><span class="pre">string</span></code>, if end is not provided).</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">substr(string,</span> <span class="pre">start,</span> <span class="pre">end)</span></code></p></td>
+<td class="text-left"><p>Returns the substring of <code class="docutils literal notranslate"><span class="pre">string</span></code> beginning at the index <code class="docutils literal notranslate"><span class="pre">start</span></code> and extending to (but not including) index <code class="docutils literal notranslate"><span class="pre">end</span></code> (or to the termination of <code class="docutils literal notranslate"><span class="pre">string</span></code>, if <code class="docutils literal notranslate"><span class="pre">end</span></code> is not provided).</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">substring-before(string,</span> <span class="pre">target)</span></code></p></td>
 <td class="text-left"><p>Returns the substring of <code class="docutils literal notranslate"><span class="pre">string</span></code> before the first occurrence of the target substring. If the target is not found, or <code class="docutils literal notranslate"><span class="pre">string</span></code> begins with the target substring, then this will return an empty string.</p></td>

@@ -1,5 +1,5 @@
 # Using functions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2e43db0214e7ac4e786b04f8cb1c04b6908325d3/source/functions_xls.md" class="reference">28 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3b9d6690d9ae3fbfc12d57fa1df2dd94bba8badb/source/functions_xls.md" class="reference">15 Dec 2025</a>
 
 Functions are predefined operations used to perform calculations or manipulate data in XLSForm. They are essential for automating tasks and deriving key insights in your forms, allowing you to calculate project indicators, create scoring systems, and manage dates efficiently. 
 
@@ -57,7 +57,7 @@ The following functions are used to create, modify, or analyze text strings in X
 | `contains(string, substring)` | Returns `TRUE` if the string contains the substring. |
 | `starts-with(string, substring)` | Returns `TRUE` if the string begins with the substring. |
 | `ends-with(string, substring)` | Returns `TRUE` if the string ends with the substring. |
-| `substr(string, start[, end])` | Returns the substring of `string` beginning at the index start and extending to (but not including) index end (or to the termination of `string`, if end is not provided). |
+| `substr(string, start, end)` | Returns the substring of `string` beginning at the index `start` and extending to (but not including) index `end` (or to the termination of `string`, if `end` is not provided). |
 | `substring-before(string, target)` | Returns the substring of `string` before the first occurrence of the target substring. If the target is not found, or `string` begins with the target substring, then this will return an empty string. |
 | `substring-after(string, target)` | Returns the substring of `string` after the first occurrence of the target substring. If the target is not found this will return an empty string. |
 | `translate(string, fromchars, tochars)` | Returns a copy of string, where every occurrence of a character in `fromchars` is replaced by the corresponding character in `tochars` (e.g., replacing all lowercase letters with uppercase letters). <br><br> <strong>Note:</strong> If `fromchars` is longer than `tochars`, every occurrence of a character in `fromchars` that does not have a corresponding character in `tochars` will be removed. |
