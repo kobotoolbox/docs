@@ -57,7 +57,7 @@ The following functions are used to create, modify, or analyze text strings in X
 | `contains(string, substring)` | Returns `TRUE` if the string contains the substring. |
 | `starts-with(string, substring)` | Returns `TRUE` if the string begins with the substring. |
 | `ends-with(string, substring)` | Returns `TRUE` if the string ends with the substring. |
-| `substr(string, start[, end])` | Returns the substring of `string` beginning at the index start and extending to (but not including) index end (or to the termination of `string`, if end is not provided). |
+| `substr(string, start, end)` | Returns the substring of `string` beginning at the index `start` and extending to (but not including) index `end` (or to the termination of `string`, if `end` is not provided). |
 | `substring-before(string, target)` | Returns the substring of `string` before the first occurrence of the target substring. If the target is not found, or `string` begins with the target substring, then this will return an empty string. |
 | `substring-after(string, target)` | Returns the substring of `string` after the first occurrence of the target substring. If the target is not found this will return an empty string. |
 | `translate(string, fromchars, tochars)` | Returns a copy of string, where every occurrence of a character in `fromchars` is replaced by the corresponding character in `tochars` (e.g., replacing all lowercase letters with uppercase letters). <br><br> <strong>Note:</strong> If `fromchars` is longer than `tochars`, every occurrence of a character in `fromchars` that does not have a corresponding character in `tochars` will be removed. |
