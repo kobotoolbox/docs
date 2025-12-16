@@ -131,8 +131,8 @@ The retention period can be adjusted at the admin level for organizations using 
 
 <br>
 
-<details>
-  <summary id="web-page"><strong>Log data export file opens as a web page</strong></summary>
+<details id="web-page">
+  <summary><strong>Log data export file opens as a web page</strong></summary>
   When you click the link received by email to download a log data export file, it might open a web page with text instead of downloading the csv file. 
     <br><br>
     To download the .csv file from the web page: 
