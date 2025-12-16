@@ -17,10 +17,9 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :name: home-page-toc-getting-started
 
   welcome
+  creating_account
   quick_start
   glossary
-  creating_account
-  formbuilder
 
 .. raw:: html
 
