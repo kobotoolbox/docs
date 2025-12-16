@@ -182,7 +182,6 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   howto_edit_multiple_submissions
   photo_download
   deleting_media
-  recovering_previous_formdata
   getting_started_organization_feature
   activity_logs
 
