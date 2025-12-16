@@ -1,5 +1,5 @@
 # Monitoring project and account activity
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/95ab019cbab20fb4a01d1251a2ec00d95c088a0a/source/activity_logs.md" class="reference">16 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3bd66258a8d08aa1daafa90640a1fc8e4efe3b23/source/activity_logs.md" class="reference">16 Dec 2025</a>
 
 
 In KoboToolbox, you can monitor project and account activity using **activity logs.** These logs record key actions and events in your account or projects, providing a detailed history of access and activity.
