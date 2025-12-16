@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/57776f8d6d32812738870efdf337acc15c20acc9/source/glossary.md" class="reference">16 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/636dc83a4b725668a2087593df164f66be941fdc/source/glossary.md" class="reference">16 Dec 2025</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
@@ -160,9 +160,9 @@ To publish a form so it becomes active and ready for data collection.
 
 ---
 
-## Deployed project
+## Deployed projects
 
-A project that has been published and is ready for data collection, allowing users to open the form and submit responses.
+Projects that have been published and are ready for data collection, allowing users to open the form and submit responses.
 
 **Related term(s):** [Archived projects](https://support.kobotoolbox.org/glossary.html#archived-projects), [Draft projects](https://support.kobotoolbox.org/glossary.html#draft-projects)
 
@@ -404,6 +404,8 @@ In the KoboCollect app, a project refers to a KoboToolbox account that the app i
 
 A project in KoboToolbox contains a form, its settings, and all data submitted to that form, including any project media.
 
+**Related term(s):** [KoboToolbox](https://support.kobotoolbox.org/glossary.html#kobotoolbox)
+
 ---
 
 ## Project-level permissions
@@ -461,7 +463,7 @@ A feature that allows a form to retrieve values from an external CSV file during
 A set of related questions grouped together in a form to improve structure and organization. Question groups can be displayed on the same screen, skipped as a unit using skip logic, or repeated to collect multiple sets of responses.
 
 <p class="note">
-  For more information, see <a class="reference external" href="">Grouping questions and repeating groups</a> and <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html">Grouping questions in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups</a> and <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html">Grouping questions in XLSForm</a>.
 </p>
 
 **Related term(s):** [Repeat group](https://support.kobotoolbox.org/glossary.html#repeat-group)
@@ -562,7 +564,7 @@ A data export method that updates automatically as new submissions arrive, allow
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>.
 </p>
 
-**Related term(s):** [API](https://support.kobotoolbox.org/glossary.html#application-programming-interface-API)
+**Related term(s):** [API](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api)
 
 ---
 
