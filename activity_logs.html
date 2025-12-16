@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Activity Logs &#8212; KoboToolbox  documentation</title>
+    <title>Monitoring project and account activity &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -107,113 +107,163 @@
 
         <section class="page__body" role="main">
           
-  <section id="activity-logs">
-<h1>Activity Logs<a class="headerlink" href="#activity-logs" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d6f09be2d6f022db661e2a4d9da0b962db44633e/source/activity_logs.md" class="reference">15 May 2025</a></p>
-<p>Activity logs are digital records that capture important actions and events in your KoboToolbox account. Activity logs give you a detailed history of account access and project activity.
-These logs can be helpful for:</p>
+  <section id="monitoring-project-and-account-activity">
+<h1>Monitoring project and account activity<a class="headerlink" href="#monitoring-project-and-account-activity" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/2edd2fec1c53552164a1ad271b7b4c6cce8cd7df/source/activity_logs.md" class="reference">16 Dec 2025</a></p>
+<p>In KoboToolbox, you can monitor project and account activity using <strong>activity logs.</strong> These logs record key actions and events in your account or projects, providing a detailed history of access and activity.</p>
+<p>Activity logs can be helpful for:</p>
 <ul class="simple">
-<li><p>Security monitoring: See who accessed your account and from where</p></li>
-<li><p>Tracking changes: Know when project elements were modified</p></li>
-<li><p>Accountability: Identify which team members made specific changes</p></li>
-<li><p>Troubleshooting: Understand when and how issues may have occurred</p></li>
+<li><p><strong>Security monitoring:</strong> See who accessed your account and from where.</p></li>
+<li><p><strong>Tracking changes:</strong> Know when project elements were modified.</p></li>
+<li><p><strong>Accountability:</strong> Identifying which team members made specific changes.</p></li>
+<li><p><strong>Troubleshooting:</strong> Understand when and how issues may have occurred.</p></li>
 </ul>
 <p>KoboToolbox provides two types of activity logs to help you monitor different aspects of your work:</p>
 <ul class="simple">
-<li><p><strong>Access Logs:</strong> Support account security by displaying all sign-ins.</p></li>
-<li><p><strong>Project History Logs:</strong> Track all actions and changes made by any user within a specific project and its data.</p></li>
+<li><p><strong>Account access logs:</strong> Display all sign-ins to your account.</p></li>
+<li><p><strong>Project history logs:</strong> Track all actions and changes made by any user within a project and its data.</p></li>
 </ul>
-<p class="note">
-  <b>Note:</b> Activity logs are a relatively recent addition to KoboToolbox. We are actively working to expand these features in the following months and provide an even more detailed account of actions in your accounts and projects.
-</p>
-<section id="access-logs">
-<h2>Access logs<a class="headerlink" href="#access-logs" title="Link to this heading">¶</a></h2>
-<p>Access logs record all authentication events (sign-ins) for your KoboToolbox account. They help you monitor account security by showing you when and where your account was accessed.</p>
-<p>They can be found under the title ‘Recent Account Activity’, which you can reach easily by opening your Account Settings under the section Security.</p>
-<p>Access logs display:</p>
+<section id="account-access-logs">
+<h2>Account access logs<a class="headerlink" href="#account-access-logs" title="Link to this heading">¶</a></h2>
+<p>Account access logs record all authentication events (sign-ins) for your KoboToolbox account. They help you monitor account security by showing you when and where your account was accessed.</p>
+<p>To access your account access logs:</p>
+<ol class="arabic simple">
+<li><p><a class="reference external" href="https://www.kobotoolbox.org/sign-up/">Sign in</a> to your KoboToolbox account.</p></li>
+<li><p>Click your profile icon in the top right corner.</p></li>
+<li><p>Click on <strong>Account Settings</strong> and navigate to the <strong>Security</strong> tab.</p></li>
+<li><p>Find your account access logs under <strong>RECENT ACCOUNT ACTIVITY.</strong></p></li>
+</ol>
+<p>Access logs display the following information:</p>
 <ul class="simple">
 <li><p>Date and time of each sign-in</p></li>
 <li><p>IP address (location information)</p></li>
 <li><p>Source (device information and browser)</p></li>
 </ul>
-<p><img alt="image" src="_images/Logs-image01.jpg" /></p>
-<p>Note that similar events (authentications) occurring within 60 minutes of each other will be grouped together.</p>
-<section id="exporting-access-logs">
-<h3>Exporting access logs<a class="headerlink" href="#exporting-access-logs" title="Link to this heading">¶</a></h3>
-<p><img alt="image" src="_images/Logs-image02.jpg" /></p>
-<p>This section also allows you to export all your access records by clicking on the ‘Export log data’ button on the top right corner of the table. Clicking this button will trigger the data export process:</p>
+<p><img alt="Access activity logs under security tab" src="_images/access_logs.png" /></p>
+<p class="note">
+    <strong>Note:</strong> Similar authentications occurring within 60 minutes of each other will be grouped together.
+</p>
+<section id="exporting-account-access-logs">
+<h3>Exporting account access logs<a class="headerlink" href="#exporting-account-access-logs" title="Link to this heading">¶</a></h3>
+<p>From the <strong>RECENT ACCOUNT ACTIVITY</strong> section in <strong>Account Settings &gt; Security</strong>, you can also export all access records. To do so:</p>
 <ol class="arabic simple">
-<li><p>The processing of the records into a .csv export file will begin</p></li>
-<li><p>A modal window will be displayed informing you that the process has started and what the next steps are.</p></li>
-<li><p>You will receive an email with a link to download the file once it’s ready. The amount of data included in your logs will determine how long it may take to receive the email.</p></li>
-<li><p>Clicking on the URL in the email should immediately start the download of the .csv file, depending on your browser settings.</p></li>
+<li><p>Click on <i class="k-icon-download"></i> <strong>Export log data</strong> in the top right corner of the table. This will trigger the data export process.</p></li>
+<li><p>Once the process is complete, you will receive an email with a link to download the file.</p>
+<ul class="simple">
+<li><p>How long it takes to receive the email depends on the size of the log data.</p></li>
+</ul>
+</li>
+<li><p>Clicking the URL in the email starts the download of the CSV file or <a class="reference external" href="https://support.kobotoolbox.org#log-data-export-file-opens-as-a-web-page">opens a new webpage</a>, depending on your browser settings.</p></li>
 </ol>
-<p>The export file will include more detailed information of all the authentication events, including authentication type and exact timing.</p>
+<p class="note">
+    <strong>Note:</strong> The exported file includes more detailed information about the authentication events, including authentication type and exact timing.
+</p>
 </section>
-<section id="log-out-of-all-devices">
-<h3>Log out of all devices<a class="headerlink" href="#log-out-of-all-devices" title="Link to this heading">¶</a></h3>
-<p>You can force all devices currently logged into your account to immediately log out by clicking on the ‘Log out of all devices’ link to the left of the data export button.</p>
-<p>This action will also log you out of your current session.</p>
+<section id="logging-out-of-all-devices">
+<h3>Logging out of all devices<a class="headerlink" href="#logging-out-of-all-devices" title="Link to this heading">¶</a></h3>
+<p>Finally, from the <strong>RECENT ACCOUNT ACTIVITY</strong> section in <strong>Account Settings &gt; Security</strong>, you can force all devices currently logged into your account to immediately log out. To do so:</p>
+<ol class="arabic simple">
+<li><p>Click on <i class="k-icon-logout"></i> <strong>Log out of all devices</strong> in the top right corner of the table.</p></li>
+<li><p>You will be logged out of your current session immediately. Any other devices signed in to your account will also be logged out.</p></li>
+</ol>
 </section>
 </section>
 <section id="project-history-logs">
-<h2>Project History Logs<a class="headerlink" href="#project-history-logs" title="Link to this heading">¶</a></h2>
-<p>Project History Logs provide a detailed record of all activities within a specific project. They show every action performed, whether by users or automated processes, giving you complete visibility into your project’s history.</p>
-<p>To see the logs of a specific project, go to your project’s SETTINGS tab and go to the Activity section.</p>
-<p><img alt="image" src="_images/Logs-image3.jpg" /></p>
-<p>In this page you will find a table view with all the project activity, sorted by date. Each unique action is listed along with the user who performed it and the datestamp associated with that activity.</p>
-<p>Project History Logs capture almost every possible action that can be performed in a project.</p>
+<h2>Project history logs<a class="headerlink" href="#project-history-logs" title="Link to this heading">¶</a></h2>
+<p>Project history logs provide a detailed record of all actions within a project. They show every change made by users or automated processes, giving you full visibility into the project’s activity.</p>
+<p class="note">
+    <strong>Note:</strong> Only project owners and users with <strong>Manage project</strong> <a href="https://support.kobotoolbox.org/managing_permissions.html">permissions</a> can view project history logs.
+</p>
+<p>To access your project’s history logs:</p>
+<ol class="arabic simple">
+<li><p>Open a project and go to the <strong>SETTINGS</strong> page.</p></li>
+<li><p>Go to the <strong>Activity</strong> tab.</p></li>
+<li><p>A table will be displayed with all project activity, sorted by date. Each action is listed with the username of the person who performed it and the timestamp for when it occurred.</p></li>
+</ol>
+<p>If you need more information about an activity, click <strong>See details</strong> for an expanded view. This displays all available information about the event, including backend actions and associated metadata.</p>
+<p><img alt="Recent project activity screen" src="_images/Logs-image3.jpg" /></p>
+<p>The following actions are captured in project history logs:</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Category</p></th>
-<th class="head text-left"><p>Included actions</p></th>
+<th class="head text-left"><p>Actions</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Project changes</p></td>
-<td class="text-left"><p>Project name updates, Deployments and redeployments, Archiving and unarchiving, Project connections</p></td>
+<tr class="row-even"><td class="text-left"><p>Project</p></td>
+<td class="text-left"><p>Project name changes, deployment and redeployment, archiving and unarchiving, REST service updates, and project connections.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Form changes</p></td>
-<td class="text-left"><p>XLSForm uploads, Form edits, Creation of qualitative analysis questions</p></td>
+<tr class="row-odd"><td class="text-left"><p>Form</p></td>
+<td class="text-left"><p>Form edits, XLSForm uploads, creation of <a href="https://support.kobotoolbox.org/qualitative_analysis.html">qualitative analysis questions</a>.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>Data Management Changes</p></td>
-<td class="text-left"><p>Data exports, Media attachment modifications, Data sharing settings changes, REST service modifications</p></td>
+<tr class="row-even"><td class="text-left"><p>Data</p></td>
+<td class="text-left"><p>Data exports, media file changes, deletion or modification of submissions.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Permissions</p></td>
-<td class="text-left"><p>User access updates, Public access settings, Ownership transfers</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Submissions</p></td>
-<td class="text-left"><p>User modifies or deletes submissions. Adding submissions is displayed in the logs export, but not the KoboToolbox interface</p></td>
+<td class="text-left"><p>Changes to user access or public access settings, ownership transfers.</p></td>
 </tr>
 </tbody>
 </table>
-<section id="finding-investigating-specific-activities">
-<h3>Finding &amp; investigating specific activities<a class="headerlink" href="#finding-investigating-specific-activities" title="Link to this heading">¶</a></h3>
-<p>You can filter the history log by activity type (e.g. deployments, form edits, permissions changes, etc.) using the toggle functionality on the top right corner. This will also allow project owners and managers to track changes/updates on specific aspects of the project quickly.</p>
-<p><img alt="image" src="_images/Logs-GIF01.gif" /></p>
-<p>You can also export all your project history data using the export button on the top right corner of your table.
-If you need more information about a specific activity, simply click ‘See Details’ for an expanded view of that entry. This will display all the information on that event, revealing what occurred in the backend and any associated metadata.</p>
+<p class="note">
+    <strong>Note:</strong> Adding submissions appears in exported logs, but not in the KoboToolbox interface. 
+</p>
+<section id="filtering-project-history-logs">
+<h3>Filtering project history logs<a class="headerlink" href="#filtering-project-history-logs" title="Link to this heading">¶</a></h3>
+<p>You can filter the project history log by action to quickly see updates to specific parts of the project.</p>
+<p>To filter your project history logs:</p>
+<ol class="arabic simple">
+<li><p>In the project <strong>SETTINGS &gt; Activity</strong> page, click on <strong>Filter by</strong> above the project history logs table.</p></li>
+<li><p>From the dropdown menu, select an action to filter the table.</p></li>
+</ol>
+</section>
+<section id="exporting-project-history-logs">
+<h3>Exporting project history logs<a class="headerlink" href="#exporting-project-history-logs" title="Link to this heading">¶</a></h3>
+<p>From the project <strong>SETTINGS &gt; Activity</strong> page, you can also export all project history logs. To do so:</p>
+<ol class="arabic simple">
+<li><p>Click on <i class="k-icon-download"></i> <strong>Export all data</strong> in the top right corner of the table. Clicking this button will trigger the data export process.</p></li>
+<li><p>Once the process is complete, you will receive an email with a link to download the file.</p>
+<ul class="simple">
+<li><p>How long it takes to receive the email depends on the size of the log data.</p></li>
+</ul>
+</li>
+<li><p>Clicking the URL in the email starts the download of the CSV file or <a class="reference external" href="https://support.kobotoolbox.org#log-data-export-file-opens-as-a-web-page">opens a new webpage</a>, depending on your browser settings.</p></li>
+</ol>
 </section>
 </section>
-<section id="common-issues-with-activity-logs">
-<h2>Common Issues with Activity Logs<a class="headerlink" href="#common-issues-with-activity-logs" title="Link to this heading">¶</a></h2>
-<p><strong>“I don’t see recent activities”</strong></p>
-<ul class="simple">
-<li><p>Check that you’re looking at the correct project</p></li>
-<li><p>Make sure you have the right permissions to view logs. Only project owners and users with ‘manage project’ permissions can see the logs.</p></li>
-<li><p>Note that logs are only available for a period of 60 days. Older logs are deleted and not retrievable. This period can be configured at the admin level for organizations with a private server.</p></li>
-</ul>
-<p><strong>“I need older log data”</strong></p>
-<ul class="simple">
-<li><p>Data beyond the retention period is automatically deleted and not retrievable. If you need to have access to log data older than 60 days and you are using a private server, you can contact your administrator to increase the retention period.</p></li>
-</ul>
-<p><strong>“I can’t download the log data export file”</strong></p>
-<ul class="simple">
-<li><p>When you click the link you received by email to download the log data export file, it might open a web page with text instead of downloading the csv file.</p></li>
-<li><p>To download the .csv file from the web page, right click on the page, and select Save Page As…. Keep the format as “Page Source”</p></li>
-<li><p>If you click on the link and get an error message, such as 403 Forbidden, try opening the link with another browser (e.g., Safari).</p></li>
-</ul>
-<p><img alt="image" src="_images/organizations_project_views.gif" /></p>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<details>
+  <summary><strong>Recent activities not displayed</strong></summary>
+  If recent activities are not displayed, check the following:
+    <br><br>
+    <ul>
+        <li>You are looking at the correct project.</li>
+        <li>You have the right permissions to view project history logs (i.e., project owner or <strong>Manage project</strong> permissions).</li>
+    </ul>
+</details>
+<br>
+<details>
+  <summary><strong>Older activity logs not available</strong></summary>
+  Logs are retained for a limited period before they are automatically deleted and cannot be recovered.
+    <br><br>
+The retention period can be adjusted at the admin level for organizations using a private server. If you need access to older log data on a <a href="https://www.kobotoolbox.org/enterprise/#comparison-table">private server</a>, contact your administrator to request a longer retention period.
+</details>
+<br>
+<details>
+  <summary><strong>Log data export file opens as a web page</strong></summary>
+  When you click the link received by email to download a log data export file, it might open a web page with text instead of downloading the csv file. 
+    <br><br>
+    To download the .csv file from the web page: 
+    <br><br>
+    <ol>
+<li>Right click on the page and select <strong>Save Page As…</strong>.</li>
+<li>Keep the format as <strong>Page Source</strong> and save the file in the location of your choice.</li>
+</details>
+<br>
+<details>
+  <summary><strong>Error message when clicking on export link</strong></summary>
+  If you click the link and see an error message such as 403 Forbidden or 404 Page not found, try opening the link in a different browser (e.g., Safari). The export link may also have expired. If so, restart the export process to generate a new link.
+</details>
 </section>
 </section>
 
@@ -233,7 +283,7 @@ If you need more information about a specific activity, simply click ‘See Deta
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Activity Logs"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Monitoring project and account activity"
               class="feedback-button"
               target="_blank"
             >
@@ -361,10 +411,10 @@ If you need more information about a specific activity, simply click ‘See Deta
 <li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Deleting media files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recovering Data From Previous Form Versions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Using the Team management feature</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Activity Logs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#access-logs">Access logs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#project-history-logs">Project History Logs</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#common-issues-with-activity-logs">Common Issues with Activity Logs</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Monitoring project and account activity</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#account-access-logs">Account access logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#project-history-logs">Project history logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 </ul>
@@ -470,7 +520,7 @@ If you need more information about a specific activity, simply click ‘See Deta
   <script>
     window.docs = {
       currentPagename: "activity_logs",
-      currentTitle: "Activity Logs",
+      currentTitle: "Monitoring project and account activity",
       currentUrl: ("index.html").replace("index.html", "activity_logs.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
