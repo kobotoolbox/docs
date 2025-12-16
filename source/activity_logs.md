@@ -46,7 +46,7 @@ From the **RECENT ACCOUNT ACTIVITY** section in **Account Settings > Security**,
 1. Click on <i class="k-icon-download"></i> **Export log data** in the top right corner of the table. This will trigger the data export process.
 2. Once the process is complete, you will receive an email with a link to download the file. 
     - How long it takes to receive the email depends on the size of the log data.
-3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org/activity_logs.html#web-page), depending on your browser settings. 
+3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org/activity_logs.html#troubleshooting), depending on your browser settings. 
 
 <p class="note">
     <strong>Note:</strong> The exported file includes more detailed information about the authentication events, including authentication type and exact timing.
@@ -106,7 +106,7 @@ From the project **SETTINGS > Activity** page, you can also export all project h
 1. Click on <i class="k-icon-download"></i> **Export all data** in the top right corner of the table. Clicking this button will trigger the data export process.
 2. Once the process is complete, you will receive an email with a link to download the file. 
     - How long it takes to receive the email depends on the size of the log data.
-3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org/activity_logs.html#web-page), depending on your browser settings. 
+3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org/activity_logs.html#troubleshooting), depending on your browser settings. 
 
 ## Troubleshooting
 
@@ -131,7 +131,7 @@ The retention period can be adjusted at the admin level for organizations using 
 
 <br>
 
-<details id="web-page">
+<details>
   <summary><strong>Log data export file opens as a web page</strong></summary>
   When you click the link received by email to download a log data export file, it might open a web page with text instead of downloading the csv file. 
     <br><br>
