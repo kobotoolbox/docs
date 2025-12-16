@@ -45,8 +45,8 @@ From the **RECENT ACCOUNT ACTIVITY** section in **Account Settings > Security**,
 
 1. Click on <i class="k-icon-download"></i> **Export log data** in the top right corner of the table. This will trigger the data export process.
 2. Once the process is complete, you will receive an email with a link to download the file. 
-        - How long it takes to receive the email depends on the size of the log data.
-3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org/#log-data-export-file-opens-as-a-web-page), depending on your browser settings. 
+    - How long it takes to receive the email depends on the size of the log data.
+3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org#log-data-export-file-opens-as-a-web-page), depending on your browser settings. 
 
 <p class="note">
     <strong>Note:</strong> The exported file includes more detailed information about the authentication events, including authentication type and exact timing.
@@ -61,10 +61,10 @@ Finally, from the **RECENT ACCOUNT ACTIVITY** section in **Account Settings > Se
 
 ## Project history logs
 
-Project History Logs provide a detailed record of all actions within a specific project. They show every change made by users or automated processes, giving you full visibility into the project’s activity.
+Project history logs provide a detailed record of all actions within a project. They show every change made by users or automated processes, giving you full visibility into the project’s activity.
 
 <p class="note">
-    <strong>Note:</strong> Only project owners and users with <strong><a href="https://support.kobotoolbox.org/managing_permissions.html">Manage project permissions</strong></a> can view project history logs.
+    <strong>Note:</strong> Only project owners and users with <strong>Manage project</strong> <a href="https://support.kobotoolbox.org/managing_permissions.html">permissions</a> can view project history logs.
 </p>
 
 To access your project’s history logs:
@@ -99,14 +99,14 @@ To filter your project history logs:
 1. In the project **SETTINGS > Activity** page, click on **Filter by** above the project history logs table.
 2. From the dropdown menu, select an action to filter the table.
 
-## Exporting project history logs
+### Exporting project history logs
 
 From the project **SETTINGS > Activity** page, you can also export all project history logs. To do so:
 
 1. Click on <i class="k-icon-download"></i> **Export all data** in the top right corner of the table. Clicking this button will trigger the data export process.
 2. Once the process is complete, you will receive an email with a link to download the file. 
     - How long it takes to receive the email depends on the size of the log data.
-3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org/#log-data-export-file-opens-as-a-web-page), depending on your browser settings. 
+3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org#log-data-export-file-opens-as-a-web-page), depending on your browser settings. 
 
 ## Troubleshooting
 
