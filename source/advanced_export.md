@@ -55,3 +55,12 @@ You can save your defined export settings for future use or to generate a [synch
 
 To use saved export settings, click on the dropdown menu under **Apply saved export settings** and select the named export settings of your choice.
 
+## Troubleshooting
+
+<details>
+  <summary><strong>Data export missing fields from previous form versions</strong></summary>
+  If data from renamed or deleted questions is missing from data exports after a form is edited and redeployed, ensure <strong>Include fields from all deployed versions</strong> is selected when downloading data. If this option is not selected, only fields from the most recent form version are included. All submissions are always included in the download—this option only affects which fields are included.
+</details>
+
+<br>
+
