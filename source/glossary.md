@@ -23,6 +23,8 @@ Account access logs record all sign-ins for your KoboToolbox account. They help 
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/activity_logs.html">Monitoring project and account activity</a>.
 </p>
 
+**Related term(s):** [Account](https://support.kobotoolbox.org/glossary.html#account), [Project history logs](https://support.kobotoolbox.org/glossary.html#project-history-logs)
+
 ---
 
 ## Application Programming Interface (API)
@@ -427,6 +429,8 @@ Project history logs provide a detailed record of project activity, including fo
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/activity_logs.html">Monitoring project and account activity</a>.
 </p>
+
+**Related term(s):** [Project (KoboToolbox)](https://support.kobotoolbox.org/glossary.html#project-kobotoolbox), [Account access logs](https://support.kobotoolbox.org/glossary.html#account-access-logs)
 
 ---
 
