@@ -13,6 +13,7 @@ A user profile that provides access to KoboToolbox, including the ability to cre
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/creating_account.html">Creating an account on KoboToolbox</a>.
 </p>
 
+
 ---
 
 ## Account access logs
@@ -472,6 +473,8 @@ A set of related questions grouped together in a form to improve structure and o
 
 **Related term(s):** [Repeat group](https://support.kobotoolbox.org/glossary.html#repeat-group)
 
+<br>
+
 ---
 
 ## Question referencing
@@ -483,6 +486,8 @@ Using answers from one question elsewhere in the form, such as displaying a prev
 </p>
 
 **Related term(s):** [Form logic](https://support.kobotoolbox.org/glossary.html#form-logic)
+
+<br>
 
 ---
 
