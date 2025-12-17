@@ -374,3 +374,12 @@ html body {
   justify-content: flex-end;
   margin-top: 1rem;
 }
+
+.page__body {
+  hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 2rem 0 1.5rem;
+  }
+}
