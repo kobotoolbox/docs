@@ -473,8 +473,6 @@ A set of related questions grouped together in a form to improve structure and o
 
 **Related term(s):** [Repeat group](https://support.kobotoolbox.org/glossary.html#repeat-group)
 
-<br>
-
 ---
 
 ## Question referencing
@@ -486,8 +484,6 @@ Using answers from one question elsewhere in the form, such as displaying a prev
 </p>
 
 **Related term(s):** [Form logic](https://support.kobotoolbox.org/glossary.html#form-logic)
-
-<br>
 
 ---
 
