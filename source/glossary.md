@@ -446,7 +446,7 @@ The Projects home page is the main dashboard you see by default when you sign in
 A feature that allows users to share selected form templates or questions from their Library publicly, making them available for anyone to browse and reuse.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/using_public_collections.html">Using public collections</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/using_public_collections.html">Using Public Collections</a>.
 </p>
 
 **Related term(s):** [Library](https://support.kobotoolbox.org/glossary.html#library)
