@@ -360,7 +360,7 @@ A collection of reusable questions or forms that can be added to new projects, h
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_library.html">Using the question library</a>.
 </p>
 
-**Related term(s):** [Public Collections](https://support.kobotoolbox.org/glossary.html#public-collections), [Library locking](https://support.kobotoolbox.org/glossary.html#library-locking)
+**Related term(s):** [Public collections](https://support.kobotoolbox.org/glossary.html#public-collections), [Library locking](https://support.kobotoolbox.org/glossary.html#library-locking)
 
 ---
 
@@ -441,7 +441,7 @@ The Projects home page is the main dashboard you see by default when you sign in
 
 ---
 
-## Public Collections
+## Public collections
 
 A feature that allows users to share selected form templates or questions from their Library publicly, making them available for anyone to browse and reuse.
 
