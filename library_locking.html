@@ -109,8 +109,8 @@
           
   <section id="library-locking-with-xlsform">
 <h1>Library locking with XLSForm<a class="headerlink" href="#library-locking-with-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/library_locking.md" class="reference">25 Nov 2025</a></p>
-<p>The <a class="reference external" href="https://support.kobotoolbox.org/question_library.html">KoboToolbox Library</a> allows you to store and manage templates, questions, and blocks for reuse across multiple projects. Form templates in the <strong>Library</strong> can be shared with team members to ensure consistent form design and reduce duplication of effort.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/2885694527f2b8ce0e6f49925b6b5d3397109769/source/library_locking.md" class="reference">18 Dec 2025</a></p>
+<p>The <a class="reference external" href="https://support.kobotoolbox.org/question_library.html">KoboToolbox library</a> allows you to store and manage templates, questions, and blocks for reuse across multiple projects. <strong>Form templates in the library</strong> can be shared with team members to ensure consistent form design and reduce duplication of effort.</p>
 <p><strong>Library locking</strong> expands on this by allowing you to control how templates can be edited once they are used to create new projects. With locking, you can specify which questions, groups, or form-level settings can be changed. This is especially useful for large teams working from a shared template, where certain elements need to remain fixed while others can be adapted to local needs.</p>
 <p>This article explains how library locking works, the types of restrictions you can apply, how to configure them in XLSForm, and how to upload locked XLSForms to KoboToolbox.</p>
 <p class="note">
@@ -119,9 +119,9 @@
 To learn more about downloading and editing your form as XLSForm, see <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a>.    
 </p>
 <section id="introduction-to-library-locking">
-<h2>Introduction to Library locking<a class="headerlink" href="#introduction-to-library-locking" title="Link to this heading">¶</a></h2>
-<p>Library locking controls how much of a form <strong>can be edited</strong> when a project is created from a Library template. Restrictions are defined in your XLSForm before uploading the form.</p>
-<p>When you create a locked template and share it through your Library:</p>
+<h2>Introduction to library locking<a class="headerlink" href="#introduction-to-library-locking" title="Link to this heading">¶</a></h2>
+<p>Library locking controls how much of a form <strong>can be edited</strong> when a project is created from a library template. Restrictions are defined in your XLSForm before uploading the form.</p>
+<p>When you create a locked template and share it through your library:</p>
 <ul class="simple">
 <li><p>Users can make local adjustments where restrictions allow.</p></li>
 <li><p>Locked elements appear <strong>grayed out</strong> in the Formbuilder.</p></li>
@@ -404,15 +404,15 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
 <h2>Using locked templates in KoboToolbox<a class="headerlink" href="#using-locked-templates-in-kobotoolbox" title="Link to this heading">¶</a></h2>
 <p>Once you have created and uploaded a locked XLSForm as a template, you can use it to build new projects in KoboToolbox.</p>
 <section id="importing-a-locked-xlsform-into-your-library">
-<h3>Importing a locked XLSForm into your Library<a class="headerlink" href="#importing-a-locked-xlsform-into-your-library" title="Link to this heading">¶</a></h3>
-<p>To import a locked XLSForm into your Library:</p>
+<h3>Importing a locked XLSForm into your library<a class="headerlink" href="#importing-a-locked-xlsform-into-your-library" title="Link to this heading">¶</a></h3>
+<p>To import a locked XLSForm into your library:</p>
 <ol class="arabic simple">
-<li><p>Go to your <i class="k-icon k-icon-library"></i> <strong>Library</strong> from the left menu bar in KoboToolbox.</p></li>
+<li><p>Go to the <i class="k-icon k-icon-library"></i> <strong>Library</strong> from the left menu bar in KoboToolbox.</p></li>
 <li><p>Click <strong>NEW</strong>, then select <strong>Upload</strong>.</p></li>
 <li><p>Upload your XLSForm file, and select <strong>Upload as template.</strong></p></li>
 </ol>
 <p><img alt="Upload template" src="_images/upload_template.png" /></p>
-<p>The template will appear in your Library with a <i class="k-icon k-icon-template-locked"></i> <strong>lock symbol</strong>, showing that it contains restrictions.</p>
+<p>The template will appear in your library with a <i class="k-icon k-icon-template-locked"></i> <strong>lock symbol</strong>, showing that it contains restrictions.</p>
 </section>
 <section id="creating-a-project-from-a-locked-template">
 <h3>Creating a project from a locked template<a class="headerlink" href="#creating-a-project-from-a-locked-template" title="Link to this heading">¶</a></h3>
@@ -438,7 +438,7 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
   <summary><strong>Troubleshooting recommendations</strong></summary>
   If library locking does not work as expected, try the following:
     <ul>
-  <li>Make sure the form was uploaded as a <strong>Template in the Library.</strong></li>
+  <li>Make sure the form was uploaded as a <strong>Template</strong> in the library.</li>
   <li>Check the <strong>settings</strong> worksheet in your XLSForm. If <code>kobo--lock_all</code> is set to <code>true</code>, the whole form will be locked.</li>
   <li>Verify that all restriction names in the <code>kobo--locking-profiles</code> worksheet are valid. Only predefined restriction names are supported.</li>
   <li>Ensure that the column <code>kobo--locking-profile</code> exists in the <strong>survey</strong> or <strong>settings</strong> worksheet and that the profile names match those defined in the <code>kobo--locking-profiles</code> worksheet.</li>
@@ -449,7 +449,7 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
   <summary><strong>Caveats and limitations</strong></summary>
   <ul>
   <li>Restrictions are enforced only in the <strong>Formbuilder.</strong> If the XLSForm is downloaded and edited directly in a spreadsheet, restrictions do not prevent changes.</li>
-  <li>Restrictions apply only to projects created from locked templates. Templates and surveys in the Library remain editable.</li>
+  <li>Restrictions apply only to projects created from locked templates. Templates and surveys in the library remain editable.</li>
   <li>Only surveys and templates support locking. If you upload a locked XLSForm as a question or block, the locking is ignored.</li>
   <li>Some spreadsheet editors automatically convert two single dashes <code>--</code> into a long dash (—). Always use two single dashes in names such as <code>kobo--locking-profiles</code>.</li>
 </ul>
@@ -564,7 +564,7 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
 <li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Selecting options from a map</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Library locking with XLSForm</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction-to-library-locking">Introduction to Library locking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#introduction-to-library-locking">Introduction to library locking</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#types-of-restrictions">Types of restrictions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#configuring-library-locking-in-xlsform">Configuring library locking in XLSForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#using-locked-templates-in-kobotoolbox">Using locked templates in KoboToolbox</a></li>
