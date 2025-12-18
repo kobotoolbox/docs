@@ -1,7 +1,7 @@
 # Library locking with XLSForm
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/library_locking.md" class="reference">25 Nov 2025</a>
 
-The [KoboToolbox Library](https://support.kobotoolbox.org/question_library.html) allows you to store and manage templates, questions, and blocks for reuse across multiple projects. Form templates in the **Library** can be shared with team members to ensure consistent form design and reduce duplication of effort.
+The [KoboToolbox library](https://support.kobotoolbox.org/question_library.html) allows you to store and manage templates, questions, and blocks for reuse across multiple projects. **Form templates in the library** can be shared with team members to ensure consistent form design and reduce duplication of effort.
 
 **Library locking** expands on this by allowing you to control how templates can be edited once they are used to create new projects. With locking, you can specify which questions, groups, or form-level settings can be changed. This is especially useful for large teams working from a shared template, where certain elements need to remain fixed while others can be adapted to local needs.
 
@@ -13,11 +13,11 @@ This article explains how library locking works, the types of restrictions you c
 To learn more about downloading and editing your form as XLSForm, see <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a>.    
 </p>
 
-## Introduction to Library locking
+## Introduction to library locking
 
-Library locking controls how much of a form **can be edited** when a project is created from a Library template. Restrictions are defined in your XLSForm before uploading the form.
+Library locking controls how much of a form **can be edited** when a project is created from a library template. Restrictions are defined in your XLSForm before uploading the form.
 
-When you create a locked template and share it through your Library:
+When you create a locked template and share it through your library:
 - Users can make local adjustments where restrictions allow.
 - Locked elements appear **grayed out** in the Formbuilder.
 - A message above the form indicates which restrictions are active.
@@ -160,16 +160,16 @@ To apply a profile to the `settings` worksheet:
 
 Once you have created and uploaded a locked XLSForm as a template, you can use it to build new projects in KoboToolbox.
 
-### Importing a locked XLSForm into your Library
+### Importing a locked XLSForm into your library
 
-To import a locked XLSForm into your Library:
-1. Go to your <i class="k-icon k-icon-library"></i> **Library** from the left menu bar in KoboToolbox.
+To import a locked XLSForm into your library:
+1. Go to the <i class="k-icon k-icon-library"></i> **Library** from the left menu bar in KoboToolbox.
 2. Click **NEW**, then select **Upload**.
 3. Upload your XLSForm file, and select **Upload as template.**
 
 ![Upload template](images/library_locking/upload_template.png)
 
-The template will appear in your Library with a <i class="k-icon k-icon-template-locked"></i> **lock symbol**, showing that it contains restrictions.
+The template will appear in your library with a <i class="k-icon k-icon-template-locked"></i> **lock symbol**, showing that it contains restrictions.
 
 ### Creating a project from a locked template
 
@@ -193,7 +193,7 @@ When you open the project in the Formbuilder:
   <summary><strong>Troubleshooting recommendations</strong></summary>
   If library locking does not work as expected, try the following:
     <ul>
-  <li>Make sure the form was uploaded as a <strong>Template in the Library.</strong></li>
+  <li>Make sure the form was uploaded as a <strong>Template</strong> in the library.</li>
   <li>Check the <strong>settings</strong> worksheet in your XLSForm. If <code>kobo--lock_all</code> is set to <code>true</code>, the whole form will be locked.</li>
   <li>Verify that all restriction names in the <code>kobo--locking-profiles</code> worksheet are valid. Only predefined restriction names are supported.</li>
   <li>Ensure that the column <code>kobo--locking-profile</code> exists in the <strong>survey</strong> or <strong>settings</strong> worksheet and that the profile names match those defined in the <code>kobo--locking-profiles</code> worksheet.</li>
@@ -206,7 +206,7 @@ When you open the project in the Formbuilder:
   <summary><strong>Caveats and limitations</strong></summary>
   <ul>
   <li>Restrictions are enforced only in the <strong>Formbuilder.</strong> If the XLSForm is downloaded and edited directly in a spreadsheet, restrictions do not prevent changes.</li>
-  <li>Restrictions apply only to projects created from locked templates. Templates and surveys in the Library remain editable.</li>
+  <li>Restrictions apply only to projects created from locked templates. Templates and surveys in the library remain editable.</li>
   <li>Only surveys and templates support locking. If you upload a locked XLSForm as a question or block, the locking is ignored.</li>
   <li>Some spreadsheet editors automatically convert two single dashes <code>--</code> into a long dash (—). Always use two single dashes in names such as <code>kobo--locking-profiles</code>.</li>
 </ul>
