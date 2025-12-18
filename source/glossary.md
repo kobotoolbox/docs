@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ef9477652ff406424facef3b9f8478d4c96895e8/source/glossary.md" class="reference">18 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2885694527f2b8ce0e6f49925b6b5d3397109769/source/glossary.md" class="reference">18 Dec 2025</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
