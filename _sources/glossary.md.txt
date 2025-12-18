@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3b2df9d2f458483148aaba51d64541833f7b002f/source/glossary.md" class="reference">17 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ef9477652ff406424facef3b9f8478d4c96895e8/source/glossary.md" class="reference">18 Dec 2025</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
@@ -446,7 +446,7 @@ The Projects home page is the main dashboard you see by default when you sign in
 A feature that allows users to share selected form templates or questions from their Library publicly, making them available for anyone to browse and reuse.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/using_public_collections.html">Using public collections</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/using_public_collections.html">Using Public Collections</a>.
 </p>
 
 **Related term(s):** [Library](https://support.kobotoolbox.org/glossary.html#library)
