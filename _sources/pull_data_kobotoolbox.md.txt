@@ -1,5 +1,5 @@
 # Pulling data from an external CSV 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/bdf046e95ac9a5302be29803281c48f39e961b0c/source/pull_data_kobotoolbox.md" class="reference">8 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/63f77ae354d1e505d78a2b8752b65f21baf01899/source/pull_data_kobotoolbox.md" class="reference">19 Dec 2025</a>
 
 The `pulldata()` function in XLSForm lets you dynamically retrieve information from an external CSV file while completing a form. This allows you to reference existing datasets and automatically pull in related details, avoiding the need for enumerators to re-enter the same information.
 
@@ -36,7 +36,7 @@ Once you have set up your external CSV, configure your XLSForm in the following 
 
 1. Ensure your XLSForm includes a question that serves as the **index variable**.
 2. Add a `calculate` field to your survey. Give the field a `name`.
-3. In the `calculation` column, use the **pulldata()** function to specify which field in the CSV to pull from. Use the following syntax: `pulldata('csv','pull_from', 'csv_index', '${survey_index}')`.	
+3. In the `calculation` column, use the **pulldata()** function to specify which field in the CSV to pull from. Use the following syntax: `pulldata('csv','pull_from', 'csv_index', ${survey_index})`.	
     - `csv` is the name of the CSV file, without the extension.
     - `pull_from` refers to the column in your CSV file that contains the data you want to import into your form.
     - `csv_index` is the column in your CSV file that contains the **index variable.**
@@ -47,7 +47,7 @@ Once you have set up your external CSV, configure your XLSForm in the following 
   | type      | name               | label                                      | calculation |
 |:-----------|:------------------|:-------------------------------------------|:-------------|
 | text       | respondent_id      | Respondent ID                              |              |
-| calculate  | eligibility_status |                                            | pulldata('eligibility', 'status', 'ID', 'respondent_id') |
+| calculate  | eligibility_status |                                            | pulldata('eligibility', 'status', 'ID', ${respondent_id}) |
 | note       | eligibility_note    | Respondent is ${eligibility_status} for the study. |              |
 | survey | 
 

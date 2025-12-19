@@ -109,7 +109,7 @@
           
   <section id="pulling-data-from-an-external-csv">
 <h1>Pulling data from an external CSV<a class="headerlink" href="#pulling-data-from-an-external-csv" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/bdf046e95ac9a5302be29803281c48f39e961b0c/source/pull_data_kobotoolbox.md" class="reference">8 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/63f77ae354d1e505d78a2b8752b65f21baf01899/source/pull_data_kobotoolbox.md" class="reference">19 Dec 2025</a></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> function in XLSForm lets you dynamically retrieve information from an external CSV file while completing a form. This allows you to reference existing datasets and automatically pull in related details, avoiding the need for enumerators to re-enter the same information.</p>
 <p>For example, you can use <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> to:</p>
 <ul class="simple">
@@ -154,7 +154,7 @@
 <ol class="arabic simple">
 <li><p>Ensure your XLSForm includes a question that serves as the <strong>index variable</strong>.</p></li>
 <li><p>Add a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> field to your survey. Give the field a <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column, use the <strong>pulldata()</strong> function to specify which field in the CSV to pull from. Use the following syntax: <code class="docutils literal notranslate"><span class="pre">pulldata('csv','pull_from',</span> <span class="pre">'csv_index',</span> <span class="pre">'${survey_index}')</span></code>.</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column, use the <strong>pulldata()</strong> function to specify which field in the CSV to pull from. Use the following syntax: <code class="docutils literal notranslate"><span class="pre">pulldata('csv','pull_from',</span> <span class="pre">'csv_index',</span> <span class="pre">${survey_index})</span></code>.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">csv</span></code> is the name of the CSV file, without the extension.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pull_from</span></code> refers to the column in your CSV file that contains the data you want to import into your form.</p></li>
@@ -181,7 +181,7 @@
 <tr class="row-odd"><td class="text-left"><p>calculate</p></td>
 <td class="text-left"><p>eligibility_status</p></td>
 <td class="text-left"><p></p></td>
-<td class="text-left"><p>pulldata(‘eligibility’, ‘status’, ‘ID’, ‘respondent_id’)</p></td>
+<td class="text-left"><p>pulldata(‘eligibility’, ‘status’, ‘ID’, ${respondent_id})</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>note</p></td>
 <td class="text-left"><p>eligibility_note</p></td>
