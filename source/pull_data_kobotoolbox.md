@@ -36,7 +36,7 @@ Once you have set up your external CSV, configure your XLSForm in the following 
 
 1. Ensure your XLSForm includes a question that serves as the **index variable**.
 2. Add a `calculate` field to your survey. Give the field a `name`.
-3. In the `calculation` column, use the **pulldata()** function to specify which field in the CSV to pull from. Use the following syntax: `pulldata('csv','pull_from', 'csv_index', '${survey_index}')`.	
+3. In the `calculation` column, use the **pulldata()** function to specify which field in the CSV to pull from. Use the following syntax: `pulldata('csv','pull_from', 'csv_index', ${survey_index})`.	
     - `csv` is the name of the CSV file, without the extension.
     - `pull_from` refers to the column in your CSV file that contains the data you want to import into your form.
     - `csv_index` is the column in your CSV file that contains the **index variable.**
@@ -47,7 +47,7 @@ Once you have set up your external CSV, configure your XLSForm in the following 
   | type      | name               | label                                      | calculation |
 |:-----------|:------------------|:-------------------------------------------|:-------------|
 | text       | respondent_id      | Respondent ID                              |              |
-| calculate  | eligibility_status |                                            | pulldata('eligibility', 'status', 'ID', 'respondent_id') |
+| calculate  | eligibility_status |                                            | pulldata('eligibility', 'status', 'ID', ${respondent_id}) |
 | note       | eligibility_note    | Respondent is ${eligibility_status} for the study. |              |
 | survey | 
 
