@@ -153,6 +153,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   troubleshooting_kobocollect
   troubleshooting_webforms
   collect_gps
+  collecting_data_multiple_languages
 
 .. raw:: html
 
