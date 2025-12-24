@@ -7,7 +7,7 @@ This article provides an overview of the different options for preparing forms w
 
 ## Setting up your forms with translations
 
-You can add translations to your form directly in the KoboToolbox interface or by using XLSForm. KoboToolbox offers an intuitive interface that requires no technical expertise, and allows you to easily add multiple translations to your forms. This approach is useful when working with a small number of questions or when you want to make quick adjustments.
+You can add translations to your form **directly in the KoboToolbox interface** or by using **XLSForm.** KoboToolbox offers an intuitive interface that requires no technical expertise, and allows you to easily add multiple translations to your forms. This approach is useful when working with a small number of questions or when you want to make quick adjustments.
 
 <p class="note">
   To learn more about setting up translations from the KoboToolbox interface, see <a href="https://support.kobotoolbox.org/language_dashboard.html">Adding translations in KoboToolbox</a>.
