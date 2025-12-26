@@ -1,10 +1,39 @@
+{% set lang = language or 'en' %}
+{% set translations = {
+  'en': {
+    'heading': 'What do you need help with?',
+    'description': 'Search the knowledge base, browse our resources, and visit our forum for more detailed information',
+    'placeholder': 'Type your search here',
+    'submit': 'Go',
+  },
+  'es': {
+    'heading': '¿Con qué necesitas ayuda?',
+    'description': 'Busca en la base de conocimientos, explora nuestros recursos y visita nuestro foro para obtener información más detallada',
+    'placeholder': 'Escribe tu búsqueda aquí',
+    'submit': 'Buscar',
+  },
+  'fr': {
+    'heading': 'What do you need help with?',
+    'description': 'Search the knowledge base, browse our resources, and visit our forum for more detailed information',
+    'placeholder': 'Type your search here',
+    'submit': 'Go',
+  },
+  'ar': {
+    'heading': 'What do you need help with?',
+    'description': 'Search the knowledge base, browse our resources, and visit our forum for more detailed information',
+    'placeholder': 'Type your search here',
+    'submit': 'Go',
+  }
+} %}
+{% set t = translations.get(lang, translations['en']) %}
+
 <section class="main-search {% if pagename == 'index' %}main-search--big{% endif %}" role="search">
   <!-- copied and heavily changed content of built-in `searchbox.html` -->
   <div class="wrapper">
     <div class="main-search__content">
-      <h1 class="main-search__header">What do you need help with?</h1>
+      <h1 class="main-search__header">{{ t.heading }}</h1>
 
-      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our forum for more detailed information</p>
+      <p class="main-search__paragraph">{{ t.description }}</p>
 
       <form id="searchbox" class="main-search__form" action="search.html" method="get">
         <div class="main-search__text-box-wrapper">
@@ -13,7 +42,7 @@
             type="search"
             name="q"
             aria-labelledby="searchlabel"
-            placeholder="Type your search here"
+            placeholder="{{ t.placeholder }}"
           />
 
           <i class="icon main-search__magnifying-glass">
@@ -21,7 +50,7 @@
           </i>
         </div>
 
-        <input class="main-search__submit-button" type="submit" value="Go">
+        <input class="main-search__submit-button" type="submit" value="{{ t.submit }}">
       </form>
     </div>
 

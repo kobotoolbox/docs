@@ -1,32 +1,72 @@
+{% set lang = language or 'en' %}
+{% set translations = {
+  'en': {
+    'forum_heading': 'Community Forum',
+    'forum_desc': 'For questions, ideas, and announcements on new releases, please head to our Community Forum.',
+    'forum_btn_home': 'Visit KoboToolbox forum',
+    'forum_btn_other': 'Visit our forum',
+    'academy_heading': 'KoboToolbox Academy',
+    'academy_desc': 'KoboToolbox Academy offers high quality self-paced courses, created by KoboToolbox experts.',
+    'academy_btn': 'Visit the KoboToolbox Academy',
+  },
+  'es': {
+    'forum_heading': 'Foro de la Comunidad',
+    'forum_desc': 'Para preguntas, ideas y anuncios sobre nuevas versiones, visita nuestro Foro de la Comunidad.',
+    'forum_btn_home': 'Visita el foro de KoboToolbox',
+    'forum_btn_other': 'Visita nuestro foro',
+    'academy_heading': 'Academia KoboToolbox',
+    'academy_desc': 'La Academia KoboToolbox ofrece cursos autodidactas de alta calidad creados por expertos de KoboToolbox.',
+    'academy_btn': 'Visita la Academia KoboToolbox',
+  },
+  'fr': {
+    'forum_heading': 'Community Forum',
+    'forum_desc': 'For questions, ideas, and announcements on new releases, please head to our Community Forum.',
+    'forum_btn_home': 'Visit KoboToolbox forum',
+    'forum_btn_other': 'Visit our forum',
+    'academy_heading': 'KoboToolbox Academy',
+    'academy_desc': 'KoboToolbox Academy offers high quality self-paced courses, created by KoboToolbox experts.',
+    'academy_btn': 'Visit the KoboToolbox Academy',
+  },
+  'ar': {
+    'forum_heading': 'Community Forum',
+    'forum_desc': 'For questions, ideas, and announcements on new releases, please head to our Community Forum.',
+    'forum_btn_home': 'Visit KoboToolbox forum',
+    'forum_btn_other': 'Visit our forum',
+    'academy_heading': 'KoboToolbox Academy',
+    'academy_desc': 'KoboToolbox Academy offers high quality self-paced courses, created by KoboToolbox experts.',
+    'academy_btn': 'Visit the KoboToolbox Academy',
+  }
+} %}
+{% set t = translations.get(lang, translations['en']) %}
+
 <section class="community-questions {% if pagename == 'index' %}community-questions--big{% else %}community-questions--sidebar{% endif %}">
   <div class="wrapper">
-    <h1>Community Forum</h1>
+    <h1>{{ t.forum_heading }}</h1>
 
-    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+    <p>{{ t.forum_desc }}</p>
 
     <a class="button" href="https://community.kobotoolbox.org/">
       {% if pagename == 'index' %}
-      Visit KoboToolbox forum
+      {{ t.forum_btn_home }}
       {% else %}
-      Visit our forum
+      {{ t.forum_btn_other }}
       {% endif %}
     </a>
   </div>
 
-   {% if pagename == 'index' %}
-      
-      {% else %}
-        <br><br>
-  
+  {% if pagename == 'index' %}
+    
+  {% else %}
+    <br><br>
 
-  <div class="wrapper">
-    <h1>KoboToolbox Academy</h1>
+    <div class="wrapper">
+      <h1>{{ t.academy_heading }}</h1>
 
-    <p>KoboToolbox Academy offers high quality self-paced courses, created by KoboToolbox experts.</p>
+      <p>{{ t.academy_desc }}</p>
 
-    <a class="button" href="https://academy.kobotoolbox.org">
-      Visit the KoboToolbox Academy
-      {% endif %}
-    </a>
-  </div>
+      <a class="button" href="https://academy.kobotoolbox.org">
+        {{ t.academy_btn }}
+      </a>
+    </div>
+  {% endif %}
 </section>
