@@ -1,3 +1,17 @@
+{% set current_lang = language or 'en' %}
+{% set page_slug = (pagename ~ '.html') if pagename != 'index' else 'index.html' %}
+
+{% if current_lang == 'en' %}
+  {% set english_href = page_slug %}
+  {% set spanish_href = 'es/' ~ page_slug %}
+{% elif current_lang == 'es' %}
+  {% set english_href = '../' ~ page_slug %}
+  {% set spanish_href = page_slug %}
+{% else %}
+  {% set english_href = '../' ~ page_slug %}
+  {% set spanish_href = '../es/' ~ page_slug %}
+{% endif %}
+
 <header role="banner" class="main-header" id="main-header">
   <div class="main-header__logo-container">
     <a href="https://kobotoolbox.org/#home" class="main-header__logo">
@@ -13,6 +27,29 @@
       <li><a href="https://www.kobotoolbox.org/pricing">Pricing</a></li>
       <li><a href="https://www.kobotoolbox.org/blog">Blog</a></li>
       <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li class="language-picker">
+        <!-- <span class="language-picker__label">Language</span> -->
+        <div class="language-picker__options" role="group" aria-label="Language picker">
+          <a
+            class="language-picker__option {% if current_lang == 'en' %}language-picker__option--active{% endif %}"
+            href="{{ english_href }}"
+            lang="en"
+            hreflang="en"
+            {% if current_lang == 'en' %}aria-current="page"{% endif %}
+          >
+            EN
+          </a>
+          <a
+            class="language-picker__option {% if current_lang == 'es' %}language-picker__option--active{% endif %}"
+            href="{{ spanish_href }}"
+            lang="es"
+            hreflang="es"
+            {% if current_lang == 'es' %}aria-current="page"{% endif %}
+          >
+            ES
+          </a>
+        </div>
+      </li>
       <li>
         <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
       </li>

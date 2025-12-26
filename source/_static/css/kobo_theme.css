@@ -227,6 +227,16 @@ html body header.main-header .main-header__navigation ul li {
   margin-left: 1.2em;
   margin-right: 0;
 }
+html body header.main-header .main-header__navigation ul li.language-picker {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.6em;
+  text-transform: none;
+}
 html body header.main-header .main-header__navigation ul li a {
   color: hsl(0, 0%, 100%);
   text-decoration: none;
@@ -241,6 +251,48 @@ html body header.main-header .main-header__navigation ul li.current a {
   html body header.main-header .main-header__navigation ul li:not(.current) {
     display: none;
   }
+  html body header.main-header .main-header__navigation ul li.language-picker {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
+}
+html body header.main-header .main-header__navigation .language-picker__label {
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.8);
+  text-transform: uppercase;
+}
+html body header.main-header .main-header__navigation .language-picker__options {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.06);
+}
+html body header.main-header .main-header__navigation .language-picker__option {
+  padding: 6px 12px;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  line-height: 1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+html body header.main-header .main-header__navigation .language-picker__option:not(:last-child) {
+  border-right: 1px solid rgba(255, 255, 255, 0.25);
+}
+html body header.main-header .main-header__navigation .language-picker__option:hover, html body header.main-header .main-header__navigation .language-picker__option:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  outline: none;
+}
+html body header.main-header .main-header__navigation .language-picker__option.language-picker__option--active {
+  background: hsl(207, 90%, 54%);
+  border-color: hsl(207, 90%, 54%);
 }
 
 .main-search {
@@ -737,6 +789,13 @@ html body {
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 1rem;
+}
+
+.page__body hr {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  margin: 2rem 0 1.5rem;
 }
 
 html body div.footer {

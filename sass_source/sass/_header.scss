@@ -51,6 +51,13 @@ html body header.main-header {
         margin-left: 1.2em;
         margin-right: 0;
 
+        &.language-picker {
+          display: flex;
+          align-items: center;
+          gap: 0.6em;
+          text-transform: none;
+        }
+
         a {
           color: $c_white;
           text-decoration: none;
@@ -68,7 +75,50 @@ html body header.main-header {
           &:not(.current) {
             display: none;
           }
+
+          &.language-picker {
+            display: inline-flex;
+          }
         }
+      }
+    }
+
+    .language-picker__label {
+      font-size: 12px;
+      letter-spacing: 0.04em;
+      color: rgba($c_white, 0.8);
+      text-transform: uppercase;
+    }
+
+    .language-picker__options {
+      display: inline-flex;
+      align-items: stretch;
+      border: 1px solid rgba($c_white, 0.35);
+      border-radius: 999px;
+      overflow: hidden;
+      background: rgba($c_white, 0.06);
+    }
+
+    .language-picker__option {
+      padding: 6px 12px;
+      color: $c_white;
+      text-decoration: none;
+      line-height: 1;
+      transition: $link_transition;
+
+      &:not(:last-child) {
+        border-right: 1px solid rgba($c_white, 0.25);
+      }
+
+      &:hover,
+      &:focus-visible {
+        background: rgba($c_white, 0.12);
+        outline: none;
+      }
+
+      &.language-picker__option--active {
+        background: $c_blue;
+        border-color: $c_blue;
       }
     }
   }
