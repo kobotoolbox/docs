@@ -37,6 +37,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   creating_account
   activation_link
   reset_password
+  account_settings
   two_factor_authentication
 
 .. raw:: html
