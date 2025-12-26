@@ -1,7 +1,9 @@
-Topics
-======
+.. rst-class:: topics-section
 
-Search the knowledge base, browse our resources, and visit our forum for more detailed information
+Temas
+=====
+
+Busca en la base de conocimientos, explora nuestros recursos y visita nuestro foro para obtener información más detallada
 
 .. README: please don't change name or caption of TOCs - they are used for
 .. JavaScript code and for properly building the custom section pages.

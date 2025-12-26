@@ -12,6 +12,50 @@
   {% set spanish_href = '../es/' ~ page_slug %}
 {% endif %}
 
+{% set nav_copy = {
+  'en': {
+    'home': 'Home',
+    'about': 'About us',
+    'features': 'Features',
+    'services': 'Services',
+    'pricing': 'Pricing',
+    'blog': 'Blog',
+    'help': 'Help',
+    'donate': 'Donate',
+  },
+  'es': {
+    'home': 'Inicio',
+    'about': 'Sobre nosotros',
+    'features': 'Funciones',
+    'services': 'Servicios',
+    'pricing': 'Precios',
+    'blog': 'Blog',
+    'help': 'Ayuda',
+    'donate': 'Donar',
+  },
+  'fr': {
+    'home': 'Home',
+    'about': 'About us',
+    'features': 'Features',
+    'services': 'Services',
+    'pricing': 'Pricing',
+    'blog': 'Blog',
+    'help': 'Help',
+    'donate': 'Donate',
+  },
+  'ar': {
+    'home': 'Home',
+    'about': 'About us',
+    'features': 'Features',
+    'services': 'Services',
+    'pricing': 'Pricing',
+    'blog': 'Blog',
+    'help': 'Help',
+    'donate': 'Donate',
+  }
+} %}
+{% set nav = nav_copy.get(current_lang, nav_copy['en']) %}
+
 <header role="banner" class="main-header" id="main-header">
   <div class="main-header__logo-container">
     <a href="https://kobotoolbox.org/#home" class="main-header__logo">
@@ -20,13 +64,13 @@
   </div>
   <nav class="main-header__navigation" role="navigation">
     <ul>
-      <li><a href={{ pathto(master_doc) }}>Home</a></li>
-      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
-      <li><a href="https://www.kobotoolbox.org/features">Features</a></li>
-      <li><a href="https://www.kobotoolbox.org/services">Services</a></li>
-      <li><a href="https://www.kobotoolbox.org/pricing">Pricing</a></li>
-      <li><a href="https://www.kobotoolbox.org/blog">Blog</a></li>
-      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li><a href={{ pathto(master_doc) }}>{{ nav.home }}</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">{{ nav.about }}</a></li>
+      <li><a href="https://www.kobotoolbox.org/features">{{ nav.features }}</a></li>
+      <li><a href="https://www.kobotoolbox.org/services">{{ nav.services }}</a></li>
+      <li><a href="https://www.kobotoolbox.org/pricing">{{ nav.pricing }}</a></li>
+      <li><a href="https://www.kobotoolbox.org/blog">{{ nav.blog }}</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">{{ nav.help }}</a></li>
       <li class="language-picker">
         <!-- <span class="language-picker__label">Language</span> -->
         <div class="language-picker__options" role="group" aria-label="Language picker">
@@ -51,7 +95,7 @@
         </div>
       </li>
       <li>
-        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+        <a class="button" href="https://kobotoolbox.org/donate">{{ nav.donate }}</a>
       </li>
     </ul>
   </nav>
