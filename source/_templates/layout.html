@@ -2,6 +2,39 @@
 
 {% import "_config.html" as config %}
 
+{% set lang = language or 'en' %}
+{% set feedback_translations = {
+  'en': {
+    'home': 'Home',
+    'back_to_top': 'Back to top',
+    'title': 'Was this article useful?',
+    'description': 'Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!',
+    'button': 'Fill out the short survey here &rarr;'
+  },
+  'es': {
+    'home': 'Inicio',
+    'back_to_top': 'Volver arriba',
+    'title': '¿Fue útil este artículo?',
+    'description': '¿Encontraste lo que buscabas? ¿La información fue clara? ¿Faltaba algo?<br>¡Comparte tus comentarios para ayudarnos a mejorar este artículo!',
+    'button': 'Completa la breve encuesta aquí &rarr;'
+  },
+  'fr': {
+    'home': 'Accueil',
+    'back_to_top': 'Haut de page',
+    'title': 'Cet article vous a-t-il été utile ?',
+    'description': 'Avez-vous trouvé ce que vous cherchiez ? Les informations étaient-elles claires ? Manquait-il quelque chose ?<br>Partagez vos commentaires pour nous aider à améliorer cet article !',
+    'button': 'Remplissez le court sondage ici &rarr;'
+  },
+  'ar': {
+    'home': 'Home',
+    'back_to_top': 'Back to top',
+    'title': 'Was this article useful?',
+    'description': 'Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!',
+    'button': 'Fill out the short survey here &rarr;'
+  }
+} %}
+{% set ft = feedback_translations.get(lang, feedback_translations['en']) %}
+
 {# Add Zendesk verification meta tag #}
 {% block extrahead %}
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
@@ -17,7 +50,7 @@
         {% if pagename != "index" %}
         <nav class="page__breadcrumbs">
           <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
-            <a href="{{ pathto(master_doc) }}">{% include('../_static/icons/home.svg') %}Home</a>
+            <a href="{{ pathto(master_doc) }}">{% include('../_static/icons/home.svg') %}{{ ft.home }}</a>
           </li></ul>
         </nav>
         {% endif %}
@@ -30,20 +63,20 @@
         {% if pagename not in ["index", "404", "search"] %}
 
         <div class="page__back-to-top-container">
-          <a href="#top" class="page__back-to-top">Back to top</a>
+          <a href="#top" class="page__back-to-top">{{ ft.back_to_top }}</a>
         </div>
         
           <section class="page__feedback">
-            <h1>Was this article useful?</h1>
+            <h1>{{ ft.title }}</h1>
 
-            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+            <p>{{ ft.description | safe }}</p>
 
             <a
               href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]={{ title }}"
               class="feedback-button"
               target="_blank"
             >
-              Fill out the short survey here &rarr;
+              {{ ft.button | safe }}
             </a>
           </section>
         {%- endif %}
