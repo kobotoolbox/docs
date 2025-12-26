@@ -3,37 +3,49 @@
 {% import "_config.html" as config %}
 
 {% set lang = language or 'en' %}
-{% set feedback_translations = {
+{% set layout_translations = {
   'en': {
     'home': 'Home',
     'back_to_top': 'Back to top',
     'title': 'Was this article useful?',
     'description': 'Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!',
-    'button': 'Fill out the short survey here &rarr;'
+    'button': 'Fill out the short survey here &rarr;',
+    'maintained_by': 'KoboToolbox is maintained by',
+    'terms': 'Terms of Service',
+    'privacy': 'Privacy Policy'
   },
   'es': {
     'home': 'Inicio',
     'back_to_top': 'Volver arriba',
     'title': '¿Fue útil este artículo?',
     'description': '¿Encontraste lo que buscabas? ¿La información fue clara? ¿Faltaba algo?<br>¡Comparte tus comentarios para ayudarnos a mejorar este artículo!',
-    'button': 'Completa la breve encuesta aquí &rarr;'
+    'button': 'Completa la breve encuesta aquí &rarr;',
+    'maintained_by': 'KoboToolbox es mantenido por',
+    'terms': 'Términos de servicio',
+    'privacy': 'Política de privacidad'
   },
   'fr': {
     'home': 'Accueil',
     'back_to_top': 'Haut de page',
     'title': 'Cet article vous a-t-il été utile ?',
     'description': 'Avez-vous trouvé ce que vous cherchiez ? Les informations étaient-elles claires ? Manquait-il quelque chose ?<br>Partagez vos commentaires pour nous aider à améliorer cet article !',
-    'button': 'Remplissez le court sondage ici &rarr;'
+    'button': 'Remplissez le court sondage ici &rarr;',
+    'maintained_by': 'KoboToolbox est maintenu par',
+    'terms': 'Conditions d\'utilisation',
+    'privacy': 'Politique de confidentialité'
   },
   'ar': {
     'home': 'Home',
     'back_to_top': 'Back to top',
     'title': 'Was this article useful?',
     'description': 'Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!',
-    'button': 'Fill out the short survey here &rarr;'
+    'button': 'Fill out the short survey here &rarr;',
+    'maintained_by': 'KoboToolbox is maintained by',
+    'terms': 'Terms of Service',
+    'privacy': 'Privacy Policy'
   }
 } %}
-{% set ft = feedback_translations.get(lang, feedback_translations['en']) %}
+{% set lt = layout_translations.get(lang, layout_translations['en']) %}
 
 {# Add Zendesk verification meta tag #}
 {% block extrahead %}
@@ -50,7 +62,7 @@
         {% if pagename != "index" %}
         <nav class="page__breadcrumbs">
           <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
-            <a href="{{ pathto(master_doc) }}">{% include('../_static/icons/home.svg') %}{{ ft.home }}</a>
+            <a href="{{ pathto(master_doc) }}">{% include('../_static/icons/home.svg') %}{{ lt.home }}</a>
           </li></ul>
         </nav>
         {% endif %}
@@ -63,20 +75,20 @@
         {% if pagename not in ["index", "404", "search"] %}
 
         <div class="page__back-to-top-container">
-          <a href="#top" class="page__back-to-top">{{ ft.back_to_top }}</a>
+          <a href="#top" class="page__back-to-top">{{ lt.back_to_top }}</a>
         </div>
         
           <section class="page__feedback">
-            <h1>{{ ft.title }}</h1>
+            <h1>{{ lt.title }}</h1>
 
-            <p>{{ ft.description | safe }}</p>
+            <p>{{ lt.description | safe }}</p>
 
             <a
               href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]={{ title }}"
               class="feedback-button"
               target="_blank"
             >
-              {{ ft.button | safe }}
+              {{ lt.button | safe }}
             </a>
           </section>
         {%- endif %}
@@ -101,10 +113,10 @@
   {% if pagename == "index" %}{% include('partials/community_questions.html') %}{% endif %}
 
   <div class="footer">
-    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>{{ lt.maintained_by }} <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
     <p>
-        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
-        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+        <a href="https://kobotoolbox.org/terms">{{ lt.terms }}</a>
+        <a href="https://kobotoolbox.org/privacy">{{ lt.privacy }}</a>
     </p>
   </div>
 
