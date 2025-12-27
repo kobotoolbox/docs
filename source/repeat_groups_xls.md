@@ -1,5 +1,5 @@
 # Repeat groups in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/repeat_groups_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/74d5c440788768e99db0d6436414aad40e5e6e4b/source/repeat_groups_xls.md" class="reference">27 Dec 2025</a>
 
 Repeat groups in XLSForm allow you to ask the same set of questions multiple times within a form. This is especially useful when collecting similar information about several people, items, or events. 
 
