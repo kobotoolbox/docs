@@ -24,7 +24,7 @@ To create a repeat group in XLSForm:
 3. In the `label` column, enter the title of the group as you want it displayed in the form. The label is optional and can be left blank.
 4. Enter each question of the group in its own row, as you normally would.
 5. In a new row after the repeating questions, enter **end_repeat** in the `type` column to indicate the end of the repeat group. 
-    - In the **end_group** row, leave the `name` and `label` columns blank.
+    - In the **end_repeat** row, leave the `name` and `label` columns blank.
   
 **survey worksheet**
 
