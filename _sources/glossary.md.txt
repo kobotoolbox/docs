@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2885694527f2b8ce0e6f49925b6b5d3397109769/source/glossary.md" class="reference">18 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/66dd6541d851a79f92a23a971cf44075b0a572ce/source/glossary.md" class="reference">30 Dec 2025</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
@@ -86,6 +86,18 @@ A feature that continuously records audio during an interview while the form is 
 
 ---
 
+## Blank forms (KoboCollect)
+
+Empty data collection forms that have been downloaded to a device in the KoboCollect app. These forms contain no responses yet and are ready for data collection.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a>.
+</p>
+
+**Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect)
+
+---
+
 ## Calculation
 
 An automated expression in a form that generates a value based on other responses or predefined rules, without requiring the respondent to enter the value manually.
@@ -168,6 +180,18 @@ To publish a form so it becomes active and ready for data collection.
 Projects that have been published and are ready for data collection, allowing users to open the form and submit responses.
 
 **Related term(s):** [Archived projects](https://support.kobotoolbox.org/glossary.html#archived-projects), [Draft projects](https://support.kobotoolbox.org/glossary.html#draft-projects)
+
+---
+
+## Drafts
+
+Forms that have been started but not yet sent to the server. Drafts can be reopened, edited, and finalized later. In KoboCollect, drafts are stored in the **Drafts** section of the app. In Enketo, drafts are stored locally in the web browser. 
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Data collection using Enketo web forms</a>.
+</p>
+
+**Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect), [Enketo web forms](https://support.kobotoolbox.org/glossary.html#enketo-web-forms)
 
 ---
 
@@ -540,6 +564,18 @@ A feature that allows KoboToolbox to automatically send data to external systems
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/rest_services.html">Using the REST services</a>.
 </p>
+
+---
+
+## Saved forms (KoboCollect)
+
+Forms that contain data entered on the device. This includes drafts, finalized forms, and forms that have already been sent to the server.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a>.
+</p>
+
+**Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Blank forms](https://support.kobotoolbox.org/glossary.html#blank-forms-kobocollect), [Drafts](https://support.kobotoolbox.org/glossary.html#drafts)
 
 ---
 
