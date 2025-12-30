@@ -569,7 +569,7 @@ A feature that allows KoboToolbox to automatically send data to external systems
 
 ## Saved forms (KoboCollect)
 
-Forms that contain data entered on the device. This includes drafts, finalized forms, and forms that have already been sent to the server.
+Forms that contain data entered from the KoboCollect app. This includes drafts, finalized forms, and forms that have already been sent to the server.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a>.
