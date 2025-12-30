@@ -24,7 +24,7 @@ For hands-on practice with adding constraints in XLSForm, see KoboToolbox Academ
 Constraints are built using [question references](https://support.kobotoolbox.org/form_logic_xls.html#question-referencing), [comparison operators](https://support.kobotoolbox.org/form_logic_xls.html#mathematical-and-comparison-operators), and constants. Constraint conditions must be met to validate or submit a form. Otherwise, an **error message** appears, and users are prevented from moving to the next page or submitting the form.
 
 To add constraints in XLSForm:
-1. Add a **constraint** column to the `survey` worksheet.
+1. Add a `constraint` column to the `survey` worksheet.
 2. In the `constraint` column, define the condition that must be met **for the response to be valid.** 
     - Use a period `.` to reference the question in the row where you are adding a constraint.
     - Use a [comparison operator](https://support.kobotoolbox.org/form_logic_xls.html#mathematical-and-comparison-operators), followed by a reference value, to build a simple constraint. 
@@ -40,7 +40,7 @@ To add constraints in XLSForm:
 | survey | 
 
 ### Formatting reference values
-The reference value in a constraint condition must match the **type** of the question for which you are adding a constraint. The reference value formats for main question types are listed below: 
+The reference value in a constraint condition must match the `type` of the question for which you are adding a constraint. The reference value formats for main question types are listed below: 
 
 | Question type   | Reference value format                                      | Example                      |
 |:----------------|:-----------------------------------------------------------|:------------------------------|
@@ -78,7 +78,7 @@ Multiple constraint conditions can be combined into a single expression to deter
 By default, when a response value in the form does not meet the constraint condition, a “Value not allowed” error message appears. It is recommended to customize this message to inform users why the value is invalid, allowing them to correct their input.
 
 To customize the constraint error message:
-1. Add a **constraint_message** column to the `survey` worksheet.
+1. Add a `constraint_message` column to the `survey` worksheet.
 2. In the `constraint_message` column, enter the text you wish to display as the error message when the constraint conditions are not met.
 
 **survey worksheet**
