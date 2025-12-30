@@ -27,8 +27,8 @@ To add static choice filters in XLSForm:
     - You can name this column anything you choose (e.g., `q2`). 
 3. In the filter column, write any value (e.g., `yes`) next to the choice(s) you want to include in the choice list for your question. 
     - This value will act as the filter. It can be any word or number.
-4. In the `survey` worksheet, add a **choice_filter** column. This column will contain the **choice filter expression** used to filter the option choices.
-    - The choice filter expression in its most basic form will take the format: **filter = ‘value’.**
+4. In the `survey` worksheet, add a `choice_filter` column. This column will contain the **choice filter expression** used to filter the option choices.
+    - The choice filter expression in its most basic form will take the format: `filter = ‘value’`.
     - For example, `q2 = ‘yes’` will retain all choices with **yes** in the `q2` column.
 
 ### Example
@@ -67,8 +67,8 @@ To add dynamic choice filters in XLSForm:
     - These must be `select_one` or `select_multiple` questions.
 2. In the `choices` worksheet, add a filter column. 
     - It can be helpful to name this column the same as the **parent question.**
-3. In the filter column, enter the **name of the choice** from the parent list that each option in the child list corresponds to.
-4. In the `survey` worksheet, add a **choice_filter** column. This column will contain the **choice filter expression** used to filter the option choices.
+3. In the filter column, enter the `name` of the choice from the parent list that each option in the child list corresponds to.
+4. In the `survey` worksheet, add a `choice_filter` column. This column will contain the **choice filter expression** used to filter the option choices.
     - If the parent question is `select_one`, the choice filter expression will be `filter_column = ${question_name}`, where `question_name` refers to the parent question.
     - If the parent question is `select_multiple`, the choice filter expression will be `selected(${question_name}, filter_column)`.
 
