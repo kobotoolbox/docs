@@ -127,7 +127,7 @@ When adding translations in non-Latin scripts, it is essential to **use proper U
 
 To enter Unicode text, you do not need to install any special fonts. Instead, set your system keyboard to the appropriate language or script and type as you normally would. Avoid using pseudo fonts (i.e., special fonts that visually mimic non-Latin scripts by reassigning Latin characters), as these are not compatible with KoboToolbox and can cause serious display and data integrity issues. If you are using Windows and need help setting up your system keyboard, refer to [Microsoft documentation](https://support.microsoft.com/en-us/windows/manage-the-language-and-keyboard-input-layout-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2).
 
-## Translating right-to-left scripts
+### Translating right-to-left scripts
 
 When adding a language that uses a right-to-left (RTL) script, such as Arabic, Hebrew, or Urdu, it is important to **use the correct language code** and to ensure the **first visible text in the translation** (e.g., a question label, hint, or note) is written in the RTL language. This will ensure that the form's layout does not default to left-to-right (LTR) formatting.
 
