@@ -17,7 +17,7 @@ Before using KoboCollect, you must [set up a KoboToolbox account](https://suppor
 The KoboCollect app can be downloaded from the [Google Play Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android) for Android devices running version 5 or above. 
 
 <p class="note">
-    <strong>Note:</strong> We recommend using the latest version of the app (v2025.2), as it includes features and bug fixes not available in older versions.
+    <strong>Note:</strong> We recommend using the latest version of the app (v2025.3.3), as it includes features and bug fixes not available in older versions.
 </p>
 
 ## Setting up the KoboCollect app
