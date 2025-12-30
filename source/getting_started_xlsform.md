@@ -60,7 +60,7 @@ The following columns are mandatory in XLSForm:
 
 ## Adding questions
 
-In XLSForm, questions are added in the **survey** worksheet. To add questions in XLSForm:
+In XLSForm, questions are added in the `survey` worksheet. To add questions in XLSForm:
 
 1. In the `type` column of the `survey` worksheet, enter the [question type](https://support.kobotoolbox.org/question_types_xls.html) of the question you want to add.
 2. In the `name` column, enter a name used to identify the question.
