@@ -1,5 +1,5 @@
 # Adding translations in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b5a24c2c407d593542b2643d8b50f27007be9e68/source/language_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e1bfb2942ae7721c6ebe1a23aa74295ca0ac2bb1/source/language_xls.md" class="reference">30 Dec 2025</a>
 
 Adding translations to a form allows users to switch to their preferred language during data collection without creating separate forms. Any number of translations can be added. Both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [Enketo web forms](https://support.kobotoolbox.org/enketo.html) support form translations.
 
@@ -127,7 +127,7 @@ When adding translations in non-Latin scripts, it is essential to **use proper U
 
 To enter Unicode text, you do not need to install any special fonts. Instead, set your system keyboard to the appropriate language or script and type as you normally would. Avoid using pseudo fonts (i.e., special fonts that visually mimic non-Latin scripts by reassigning Latin characters), as these are not compatible with KoboToolbox and can cause serious display and data integrity issues. If you are using Windows and need help setting up your system keyboard, refer to [Microsoft documentation](https://support.microsoft.com/en-us/windows/manage-the-language-and-keyboard-input-layout-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2).
 
-## Translating right-to-left scripts
+### Translating right-to-left scripts
 
 When adding a language that uses a right-to-left (RTL) script, such as Arabic, Hebrew, or Urdu, it is important to **use the correct language code** and to ensure the **first visible text in the translation** (e.g., a question label, hint, or note) is written in the RTL language. This will ensure that the form's layout does not default to left-to-right (LTR) formatting.
 

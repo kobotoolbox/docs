@@ -109,7 +109,7 @@
           
   <section id="adding-translations-in-xlsform">
 <h1>Adding translations in XLSForm<a class="headerlink" href="#adding-translations-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b5a24c2c407d593542b2643d8b50f27007be9e68/source/language_xls.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e1bfb2942ae7721c6ebe1a23aa74295ca0ac2bb1/source/language_xls.md" class="reference">30 Dec 2025</a></p>
 <p>Adding translations to a form allows users to switch to their preferred language during data collection without creating separate forms. Any number of translations can be added. Both <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> support form translations.</p>
 <p>Most elements displayed in the form can be translated, such as <strong>question labels</strong>, <strong>hints</strong>, <strong>choice labels</strong>, <strong>constraint messages</strong>, and <strong>required messages</strong>. Elements used for form structure, like question names, choice names, and list names, cannot be translated and should remain in the language used for form development and data analysis.</p>
 <p>When your form includes multiple translations, KoboCollect and Enketo will display a language selector in the <strong>top right corner of the form</strong>, allowing respondents to choose their preferred language.</p>
@@ -328,9 +328,8 @@ For hands-on practice with adding translations in XLSForm, see KoboToolbox Acade
 <p>When adding translations in non-Latin scripts, it is essential to <strong>use proper Unicode characters</strong>. Unicode ensures that text is correctly displayed and understood across all devices and platforms.</p>
 <p>To enter Unicode text, you do not need to install any special fonts. Instead, set your system keyboard to the appropriate language or script and type as you normally would. Avoid using pseudo fonts (i.e., special fonts that visually mimic non-Latin scripts by reassigning Latin characters), as these are not compatible with KoboToolbox and can cause serious display and data integrity issues. If you are using Windows and need help setting up your system keyboard, refer to <a class="reference external" href="https://support.microsoft.com/en-us/windows/manage-the-language-and-keyboard-input-layout-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2">Microsoft documentation</a>.</p>
 </section>
-</section>
 <section id="translating-right-to-left-scripts">
-<h2>Translating right-to-left scripts<a class="headerlink" href="#translating-right-to-left-scripts" title="Link to this heading">¶</a></h2>
+<h3>Translating right-to-left scripts<a class="headerlink" href="#translating-right-to-left-scripts" title="Link to this heading">¶</a></h3>
 <p>When adding a language that uses a right-to-left (RTL) script, such as Arabic, Hebrew, or Urdu, it is important to <strong>use the correct language code</strong> and to ensure the <strong>first visible text in the translation</strong> (e.g., a question label, hint, or note) is written in the RTL language. This will ensure that the form’s layout does not default to left-to-right (LTR) formatting.</p>
 <p>Additionally, when incorporating question references within question labels using RTL scripts, please note that the question reference syntax is reversed (i.e., <code class="docutils literal notranslate"><span class="pre">{question_name}$</span></code>).</p>
 <p><strong>survey worksheet</strong></p>
@@ -370,6 +369,7 @@ For hands-on practice with adding translations in XLSForm, see KoboToolbox Acade
 </tr>
 </tbody>
 </table>
+</section>
 </section>
 </section>
 
@@ -468,7 +468,6 @@ For hands-on practice with adding translations in XLSForm, see KoboToolbox Acade
 <li class="toctree-l2"><a class="reference internal" href="#setting-the-default-form-language">Setting the default form language</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-translations">Adding translations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#guidelines-for-translations">Guidelines for translations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#translating-right-to-left-scripts">Translating right-to-left scripts</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to an XLSForm</a></li>
