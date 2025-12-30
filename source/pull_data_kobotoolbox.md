@@ -69,8 +69,8 @@ The final step in linking your external CSV file to your form is uploading the f
 ## Troubleshooting
 
 <details>
-  <summary><strong>Non-English fonts or special characters are not displaying correctly</strong></summary>
-  Save your CSV file in <strong>UTF-8 format</strong>. This ensures that Android devices can render non-English text or special characters properly.
+  <summary><strong>Non-Latin fonts or special characters are not displaying correctly</strong></summary>
+  Save your CSV file in <strong>UTF-8 format</strong>. This ensures that Android devices can render non-Latin text or special characters properly.
 </details>
 
 <br>
