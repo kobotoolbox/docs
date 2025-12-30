@@ -1,5 +1,5 @@
 # Getting started with KoboCollect
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/562abda7896f1c80c1863f158d61432fa915a52f/source/kobocollect_on_android_latest.md" class="reference">19 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ff350995fdbf546a9f306c1128351d40aaf9a258/source/kobocollect_on_android_latest.md" class="reference">30 Dec 2025</a>
 
 
 <iframe src="https://www.youtube.com/embed/qC2Bz8jZkIM?si=xSyTOxOMR6nE8tum" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -17,7 +17,7 @@ Before using KoboCollect, you must [set up a KoboToolbox account](https://suppor
 The KoboCollect app can be downloaded from the [Google Play Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android) for Android devices running version 5 or above. 
 
 <p class="note">
-    <strong>Note:</strong> We recommend using the latest version of the app (v2025.2), as it includes features and bug fixes not available in older versions.
+    <strong>Note:</strong> We recommend using the latest version of the app (v2025.3.3), as it includes features and bug fixes not available in older versions.
 </p>
 
 ## Setting up the KoboCollect app
