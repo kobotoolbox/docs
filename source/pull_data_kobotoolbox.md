@@ -1,5 +1,5 @@
 # Pulling data from an external CSV 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/63f77ae354d1e505d78a2b8752b65f21baf01899/source/pull_data_kobotoolbox.md" class="reference">19 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ee6c39fa624411c56d47b08cad31f8005c0b61ce/source/pull_data_kobotoolbox.md" class="reference">30 Dec 2025</a>
 
 The `pulldata()` function in XLSForm lets you dynamically retrieve information from an external CSV file while completing a form. This allows you to reference existing datasets and automatically pull in related details, avoiding the need for enumerators to re-enter the same information.
 
