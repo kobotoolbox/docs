@@ -109,7 +109,7 @@
           
   <section id="library-locking-with-xlsform">
 <h1>Library locking with XLSForm<a class="headerlink" href="#library-locking-with-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/2885694527f2b8ce0e6f49925b6b5d3397109769/source/library_locking.md" class="reference">18 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d30a03b31adeb304535859e4dd2cb0801138d429/source/library_locking.md" class="reference">30 Dec 2025</a></p>
 <p>The <a class="reference external" href="https://support.kobotoolbox.org/question_library.html">KoboToolbox library</a> allows you to store and manage templates, questions, and blocks for reuse across multiple projects. <strong>Form templates in the library</strong> can be shared with team members to ensure consistent form design and reduce duplication of effort.</p>
 <p><strong>Library locking</strong> expands on this by allowing you to control how templates can be edited once they are used to create new projects. With locking, you can specify which questions, groups, or form-level settings can be changed. This is especially useful for large teams working from a shared template, where certain elements need to remain fixed while others can be adapted to local needs.</p>
 <p>This article explains how library locking works, the types of restrictions you can apply, how to configure them in XLSForm, and how to upload locked XLSForms to KoboToolbox.</p>
@@ -287,7 +287,7 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
 <p>To define locking profiles in your XLSForm:</p>
 <ol class="arabic simple">
 <li><p>Create a new worksheet named <strong>kobo–locking-profiles.</strong></p></li>
-<li><p>Add a <strong>restriction column</strong>, which can include any restrictions from the tables above.</p></li>
+<li><p>Add a <strong>restriction</strong> column, which can include any restrictions from the tables above.</p></li>
 <li><p>Create one column per <strong>profile</strong>  (e.g., <code class="docutils literal notranslate"><span class="pre">profile_1</span></code>, <code class="docutils literal notranslate"><span class="pre">profile_2</span></code>).</p></li>
 <li><p>In the cell corresponding to a <strong>restriction</strong> and a <strong>profile</strong>, include the keyword <code class="docutils literal notranslate"><span class="pre">locked</span></code> to assign a restriction to a profile.</p></li>
 </ol>
