@@ -1,5 +1,5 @@
 # Dynamic data attachments
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/214f03e2cae0bae1c483cee8c7520a1c7ddbccd9/source/dynamic_data_attachment.md" class="reference">10 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/49ab601bfcdc8e69edf9cbd1cba990604e74d1fc/source/dynamic_data_attachment.md" class="reference">30 Dec 2025</a>
 
 
 Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.
@@ -78,7 +78,7 @@ For each expression in the table below:
 
 Once your XLSForms are set up, log into your KoboToolbox account and follow these steps:
 
-1. Upload and deploy the **parent project**, if not already deployed. 
+1. Create and deploy the **parent project**, if not already deployed. 
 2. Enable data sharing for the parent project: 
     - In the **SETTINGS > Connect Projects** tab of the parent project, toggle the **Data sharing** switch (disabled by default) and click **ACKNOWLEDGE AND CONTINUE** in the confirmation window. 
     - All data is shared by default, but you can restrict specific variables to share with child projects by clicking "Select specific questions to share".

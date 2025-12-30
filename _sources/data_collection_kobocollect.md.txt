@@ -1,5 +1,5 @@
 # Data collection using KoboCollect
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/711a8034f16611e23d4ff78183c4e20825abc818/source/data_collection_kobocollect.md" class="reference">19 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b702a7c8f238181be3c4da0d0b8ccbb772cf5926/source/data_collection_kobocollect.md" class="reference">30 Dec 2025</a>
 
 
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
