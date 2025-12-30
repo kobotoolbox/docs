@@ -78,7 +78,7 @@ For each expression in the table below:
 
 Once your XLSForms are set up, log into your KoboToolbox account and follow these steps:
 
-1. Upload and deploy the **parent project**, if not already deployed. 
+1. Create and deploy the **parent project**, if not already deployed. 
 2. Enable data sharing for the parent project: 
     - In the **SETTINGS > Connect Projects** tab of the parent project, toggle the **Data sharing** switch (disabled by default) and click **ACKNOWLEDGE AND CONTINUE** in the confirmation window. 
     - All data is shared by default, but you can restrict specific variables to share with child projects by clicking "Select specific questions to share".
