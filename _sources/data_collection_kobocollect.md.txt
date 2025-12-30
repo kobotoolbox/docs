@@ -1,5 +1,5 @@
 # Data collection using KoboCollect
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/711a8034f16611e23d4ff78183c4e20825abc818/source/data_collection_kobocollect.md" class="reference">19 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b702a7c8f238181be3c4da0d0b8ccbb772cf5926/source/data_collection_kobocollect.md" class="reference">30 Dec 2025</a>
 
 
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -78,8 +78,8 @@ After finalizing data collection and uploading all completed forms to the server
 
 There are two types of forms that can be deleted:
 
-- **Saved Forms**: These are forms for which data has been filled in, including drafts, finalized forms, and forms that have been sent to the server.
-- **Blank Forms**: These are empty data collection forms that have downloaded to the device from the **Download form** page. Only delete these forms once data collection for them has ended.
+- **Saved Forms**: These are [forms for which data has been filled in](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect), including drafts, finalized forms, and forms that have been sent to the server.
+- **Blank Forms**: These are [empty data collection forms](https://support.kobotoolbox.org/glossary.html#blank-forms-kobocollect) that have downloaded to the device from the **Download form** page. Only delete these forms once data collection for them has ended.
   
 To delete forms:
 1. From the main menu, tap **Delete form**. You will see two tabs.
@@ -91,7 +91,7 @@ To delete forms:
     - Tap **Delete Selected**.
 
 <p class="note">
-  <strong>Note:</strong> You do not need an internet connection to delete saved forms in KoboCollect. However, if blank forms are accidentally deleted offline, an internet connection is required to recover them for continued data collection. To prevent accidental deletion, you can set access controls in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#access-control">project settings</a>.
+  <strong>Note:</strong> You do not need an internet connection to delete forms in KoboCollect. However, if blank forms are accidentally deleted offline, an internet connection is required to recover them for continued data collection. To prevent accidental deletion, you can set access controls in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#access-control">project settings</a>.
 </p>
 
 
