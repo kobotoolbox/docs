@@ -188,7 +188,7 @@ Projects that have been published and are ready for data collection, allowing us
 Forms that have been started but not yet sent to the server. Drafts can be reopened, edited, and finalized later. In KoboCollect, drafts are stored in the **Drafts** section of the app. In Enketo, drafts are stored locally in the web browser. 
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Data collection using Enketo web forms</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Data collection using Enketo web forms</a>.
 </p>
 
 **Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect), [Enketo web forms](https://support.kobotoolbox.org/glossary.html#enketo-web-forms)
@@ -227,7 +227,7 @@ A security feature that protects form submissions by encoding the data so it can
 Browser-based forms used to collect data online or offline, offering an alternative to the KoboCollect Android app and compatible with all major devices. 
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Data collection using Enketo web forms</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Data collection using Enketo web forms</a>.
 </p>
 
 **Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect)
