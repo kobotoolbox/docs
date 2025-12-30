@@ -87,7 +87,7 @@ Once your XLSForms are set up, log into your KoboToolbox account and follow thes
     <strong>Note:</strong> If projects have different owners, the parent project owner must <a href="https://support.kobotoolbox.org/managing_permissions.html">share the project</a> with the child project owner. The minimum permissions required for dynamic data attachments to work are <strong>View form</strong> and <strong>View submissions</strong>. Note that this allows child project administrators to view all parent project data.
 </p>
 
-3. Upload and deploy the **child project**.
+3. Create and deploy the **child project**.
 4. Connect the child project to the parent project: 
     - In the **SETTINGS > Connect Projects** tab of the child project, click the "Select a different project to import data from." A dropdown menu will allow you to select a parent project to link. 
     - Rename the linked parent project to the `xml-external` question name defined in the XLSForm and click **IMPORT**. 
