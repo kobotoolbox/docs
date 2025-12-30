@@ -7,7 +7,7 @@
 When creating survey forms with KoboToolbox, you can build your form with the [KoboToolbox Formbuilder](https://support.kobotoolbox.org/formbuilder.html) or using XLSForm. XLSForm is very effective for creating both basic and advanced forms in a user-friendly format.
 
 <p class="note">
-  For more information about XLSForm, see <a class="reference" href="https://support.kobotoolbox.org/edit_forms_excel.html">Introduction to XLSForm</a>. For a comprehensive introduction to form development using XLSForm, we recommend <a class="reference" href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">KoboToolbox Academy’s self-paced online XLSForm Fundamentals Course</a>.
+  For more information about XLSForm, see <a class="reference" href="https://support.kobotoolbox.org/edit_forms_excel.html">Introduction to XLSForm</a>. For a comprehensive introduction to form development using XLSForm, we recommend KoboToolbox Academy’s self-paced online <a class="reference" href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
 </p>
 
 This article explains how to set up an XLSForm using Microsoft Excel or other spreadsheet programs, including:
