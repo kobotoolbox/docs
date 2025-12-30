@@ -88,7 +88,7 @@ A feature that continuously records audio during an interview while the form is 
 
 ## Blank forms (KoboCollect)
 
-Empty data collection forms that have been downloaded to a device in the KoboCollect app. These forms contain no responses yet and are ready for data collection.
+Empty data collection forms that have been downloaded to a device in the KoboCollect app. These forms contain no responses yet and are ready for data collection. Blank forms are also referred to as **form definitions** in the app.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a>.
