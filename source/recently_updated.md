@@ -3,6 +3,7 @@
 
 1. [Getting started with KoboCollect](kobocollect_on_android_latest.md) (30 Dec 2025)
 1. [Glossary of KoboToolbox terms](glossary.md) (30 Dec 2025)
+1. [Dynamic data attachments](dynamic_data_attachment.md) (30 Dec 2025)
 1. [Data collection using KoboCollect](data_collection_kobocollect.md) (30 Dec 2025)
 1. [Customizing KoboCollect settings](kobocollect_settings.md) (30 Dec 2025)
 1. [Repeat groups in XLSForm](repeat_groups_xls.md) (27 Dec 2025)
@@ -10,4 +11,3 @@
 1. [Library locking with XLSForm](library_locking.md) (18 Dec 2025)
 1. [Transcription and translation of audio responses](transcription-translation.md) (16 Dec 2025)
 1. [Advanced options for exporting data](advanced_export.md) (16 Dec 2025)
-1. [Monitoring project and account activity](activity_logs.md) (16 Dec 2025)
