@@ -106,7 +106,7 @@ Locking profiles are **sets of restrictions** that can be applied to questions, 
 
 To define locking profiles in your XLSForm:
 1. Create a new worksheet named **kobo--locking-profiles.**
-2. Add a **restriction column**, which can include any restrictions from the tables above.
+2. Add a **restriction** column, which can include any restrictions from the tables above.
 3. Create one column per **profile**  (e.g., `profile_1`, `profile_2`). 
 4. In the cell corresponding to a **restriction** and a **profile**, include the keyword `locked` to assign a restriction to a profile.
 
