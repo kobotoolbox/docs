@@ -18,14 +18,14 @@ For hands-on practice with calculations in XLSForm, see KoboToolbox Academy’s 
 Calculation expressions are constructed using a combination of [question references](https://support.kobotoolbox.org/form_logic_xls.html#question-referencing), [mathematical operators](https://support.kobotoolbox.org/form_logic_xls.html#mathematical-and-comparison-operators), [functions](https://support.kobotoolbox.org/functions_xls.html), and constants.
 
 To add a calculation in your XLSForm:
-1. In the `type` column of the `survey` worksheet, enter **calculate** to add a `calculate` question type. 
+1. In the `type` column of the survey worksheet, enter `calculate` to add a calculate question type. 
 2. Enter a `name` for the `calculate` question. 
-    - Because the calculation is not displayed in the form, the `calculate` question does not require a **label**.
-3. Add a **calculation** column in the `survey` worksheet.
+    - Because the calculation is not displayed in the form, the `calculate` question **does not require a label**.
+3. Add a `calculation` column in the survey worksheet.
 4. In the `calculation` column, enter the **calculation expression.** 
     - Calculations can range from [basic arithmetic calculations](https://support.kobotoolbox.org/calculations_xls.html#arithmetic-calculations) to [advanced calculations](https://support.kobotoolbox.org/calculations_xls.html#advanced-calculations) using functions and regular expressions.
   
-To refer to the calculation output in the rest of your form (e.g., inside a note question, question label, or form logic), use the [question referencing](https://support.kobotoolbox.org/form_logic_xls.html#question-referencing) format **${question_name}**, where `question_name` is the **name** of the `calculate` question.
+To refer to the calculation output in the rest of your form (e.g., inside a note question, question label, or form logic), use the [question referencing](https://support.kobotoolbox.org/form_logic_xls.html#question-referencing) format `${question_name}`, where `question_name` is the name of the `calculate` question.
 
 **survey worksheet**
 
@@ -114,7 +114,7 @@ To set a dynamic default response:
   <summary><strong>Calculations not working properly</strong></summary>
   If your calculations are not working, check the following:
   <ul>
-  <li><strong>Syntax:</strong> All opened parentheses are closed, straight quotes <code>'</code> are used), and commas are included where needed.</li>
+  <li><strong>Syntax:</strong> All opened parentheses are closed, straight quotes <code>'</code> are used, and commas are included where needed.</li>
   <li><strong>References:</strong> Question references correctly match the question name, no spaces or typos, no circular references (i.e., the calculation does not depend on itself).</li>
   <li><strong>Data types:</strong> Numeric and string calculations are not combined within the same question, data types are used correctly.</li>
 </ul>
