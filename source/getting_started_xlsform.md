@@ -26,7 +26,7 @@ This article explains how to set up an XLSForm using Microsoft Excel or other sp
 
 To set up the basic structure of an XLSForm:
 
-1. Create a workbook in your preferred spreadsheet software.
+1. Open a new spreadsheet in your preferred spreadsheet software.
 2. Create three worksheets: **survey**, **choices**, and **settings**.
    - Worksheet names must be all lowercase letters.
 3. In the **survey** worksheet, create three columns with the headings: `type`, `name`, and `label`.
@@ -125,7 +125,7 @@ Common form settings include:
 
 For example, to add a form title:
 
-1. Add a column in the settings worksheet named `form_title`.
+1. Add a column in the `settings` worksheet named `form_title`.
 2. Enter the form title in the `form_title` column.
 
 <p class="note">
@@ -151,14 +151,14 @@ To further customize your XLSForm, you can add optional columns to configure for
 | --- | --- |
 | hint | Question hint |
 | guidance_hint | Guidance hint |
-| required | Option to make a question mandatory |
+| required | Makes a question mandatory |
 | relevant | Skip logic conditions for the question |
 | constraint | Validation criteria for the question |
 | constraint_message | Error message when validation criteria are not met |
 | appearance | Options for how questions are displayed |
 | choice_filter | Criteria for cascading select |
 | parameters | Settings for specific question types |
-| calculation | Mathematical expression for calculate question |
+| calculation | Mathematical expression for `calculate` question |
 | default | Default response for a question |
 
 <p class="note">
