@@ -14,7 +14,7 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 ## Adding question appearances
 
 To add question appearances in XLSForm:
-1. In the `survey` worksheet, add an **appearance** column.
+1. In the `survey` worksheet, add an `appearance` column.
 2. Enter the name of the appearance in the `appearance` column. Ensure you use the exact spelling and punctuation of the appearance name.
 3. Some appearances can be combined and applied to the same question. Combine appearances by entering them in the same cell and separating them with a space.
 
