@@ -1,18 +1,18 @@
 # Using XLSForm with KoboToolbox
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8c81d11ad2edd605d8835b95777f21e1be748af7/source/xlsform_with_kobotoolbox.md" class="reference">10 Dec 2025</a>
 
-XLSForm integrates smoothly with Kobo Toolbox for creating, previewing,
+XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
-building a form in the Kobo Toolbox Formbuilder, then download it as an
+building a form in the KoboToolbox Formbuilder, then download it as an
 XLSForm for further customization. This provides a structured foundation,
 useful for new projects or users with less form building experience.
 
-Once customized, forms created in XLSForm can be uploaded to Kobo Toolbox
+Once customized, forms created in XLSForm can be uploaded to KoboToolbox
 for review, modification, and deployment.
 
 This article covers the following topics:
--   Downloading an XLSForm from Kobo Toolbox
--   Upload and previewing an XLSForm in Kobo Toolbox
+-   Downloading an XLSForm from KoboToolbox
+-   Upload and previewing an XLSForm in KoboToolbox
 -   Replacing an existing form with an XLSForm
 -   Importing an XLSForm via URL
 -   Testing and validating your XLSForm
@@ -25,7 +25,7 @@ questions, editing large option lists, adding translations, or using advanced
 functionalities not available in the Formbuilder. Additionally, downloading your
 form as an XLSForm allows you to build forms offline, share them as `.xlsx`
 files for collaboration and version management, and share them with the
-Kobo Toolbox support team or in the Community Forum to request assistance. 
+KoboToolbox support team or in the Community Forum to request assistance. 
 
 Any form created using the KoboToolbox Formbuilder can be downloaded as
 an XLSForm file:
@@ -92,7 +92,7 @@ To obtain the correct URL for a spreadsheet stored in Dropbox:
 
 1.  Copy the file link in Dropbox by clicking on <i class="k-icon k-icon-link"></i> **Copy link**.
 2.  At the end of the link, replace the suffix ``dl=0`` with ``dl=1``. This will be the
-    URL to import into Kobo Toolbox.
+    URL to import into KoboToolbox.
     
 </details>
 
@@ -101,7 +101,7 @@ To obtain the correct URL for a spreadsheet stored in Dropbox:
 Once you have retrieved the file URL, you can import your XLSForm to
 KoboToolbox:
 
-1.  Go to the **Projects** homepage in Kobo Toolbox and click **NEW**.
+1.  Go to the **Projects** homepage in KoboToolbox and click **NEW**.
 2.  Select **Import an XLSForm via URL**.
 3.  Paste your URL and click **Import**.
 4.  Enter the project details and click **Create project**.
@@ -110,7 +110,7 @@ KoboToolbox:
 
 <p class="note">
     <b>Note:</b> Changes made to a file in Dropbox or Google Sheets do not
-    automatically update in Kobo Toolbox. You must re-import the XLSForm via
+    automatically update in KoboToolbox. You must re-import the XLSForm via
     URL and redeploy the form changes.
 </p>
 
