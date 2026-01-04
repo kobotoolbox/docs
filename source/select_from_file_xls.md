@@ -54,10 +54,10 @@ To add a select from file question to your XLSForm:
 ### Configuring choice name and label columns
 
 If your external file uses different column names instead of `name` and `label`:
-1. Add a **parameters** column to the `survey` worksheet 
+1. Add a `parameters` column to the `survey` worksheet 
 2. In the select from file question row, specify the custom names with the `value` and `label` parameters.
-    - `value` represents the choice **name**.
-    - `label` represents the choice **label**.
+    - `value` represents the choice `name`.
+    - `label` represents the choice `label`.
 
 **survey worksheet**
 

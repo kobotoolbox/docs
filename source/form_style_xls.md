@@ -16,7 +16,7 @@ Enketo themes allow you to customize the appearance and layout of [Enketo web fo
 ### Adding themes in XLSForm
 
 To add a theme in XLSForm:
-1. Add a **style** column in your `settings` worksheet.
+1. Add a `style` column in your `settings` worksheet.
 2. Specify the theme you want to use, using the exact name shown in the table below.
 
 **settings worksheet**
@@ -43,7 +43,7 @@ The following themes are available to customize your forms:
 
 ### Setting up an XLSForm for theme_grid
 
-In Enketo web forms, the `theme_grid` layout allows you to display questions in multiple columns, making your form more compact and visually organized. The set-up of these columns, including how many there are and how wide each one should be, is controlled by assigning `w-values` to each question inside the **appearance** column of your XLSForm.
+In Enketo web forms, the `theme_grid` layout allows you to display questions in multiple columns, making your form more compact and visually organized. The set-up of these columns, including how many there are and how wide each one should be, is controlled by assigning `w-values` to each question inside the `appearance` column of your XLSForm.
 
 <p class="note">
   For a comprehensive overview of using <code>theme_grid</code> in XLSForm, see this <a href="https://ee.kobotoolbox.org/n41GqUkf">Grid Theme Tutorial</a> and <a href="https://docs.google.com/spreadsheets/d/1qKmxPTA4B0vihU6GsKgi1CJE2Db2FfE7KZpOig4nTEI/edit?gid=0#gid=0">sample XLSForm</a>.
@@ -52,7 +52,7 @@ In Enketo web forms, the `theme_grid` layout allows you to display questions in 
 Before assigning `w-values` to each question, start by placing all questions into [question groups](https://support.kobotoolbox.org/grouping_questions_xls.html). The default width for a group or repeat is four columns (`w4`), so a group with `w4` can hold a maximum of four `w1` questions in a single row. A question's `w-value` is relative to its group's `w-value`. 
 
 To specify the relative width of each question within a row:
-1. Add an **appearance** column in your `survey` worksheet.
+1. Add an `appearance` column in your `survey` worksheet.
 2. For each question, assign appearance values (e.g., `w1`, `w2`, `w3`) to specify its relative width within a row.
 3. Modify the group width if needed using the same approach.
 

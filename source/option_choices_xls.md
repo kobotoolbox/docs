@@ -58,11 +58,11 @@ When defining choice names:
 ## Managing choice lists in XLSForm
 
 ### Reusing choice lists
-Using **`list_name`** in XLSForm allows you to easily **reuse choice lists** across multiple questions, eliminating the need for manual re-entry. For example, you can create a `yes_no` choice list and apply it to all your Yes/No questions. This helps build forms more efficiently and consistently.
+Using `list_name` in XLSForm allows you to easily **reuse choice lists** across multiple questions, eliminating the need for manual re-entry. For example, you can create a `yes_no` choice list and apply it to all your Yes/No questions. This helps build forms more efficiently and consistently.
 
 ### Translating choice lists
 
-XLSForm simplifies the translation of choice lists. You can add multiple labels for different languages, with each translation in a separate **`label`** column. The underlying choice names remain the same, which ensures the exported dataset is consistent across translations and facilitates analysis.
+XLSForm simplifies the translation of choice lists. You can add multiple labels for different languages, with each translation in a separate `label` column. The underlying choice names remain the same, which ensures the exported dataset is consistent across translations and facilitates analysis.
 
 <p class="note">
 To learn more about adding translations in XLSForm, see <a href="language_xls.html">Adding translations in XLSForm</a>.

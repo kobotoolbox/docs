@@ -25,8 +25,8 @@ Language codes can be found in the <a href="https://www.iana.org/assignments/lan
 To add translations to an XLSForm, first define the default language. This is the language the form will open to by default.
 
 To define the default language of your form:
-1. In the `settings` worksheet, add a **default_language** column.
-2. In the `default_language` column, enter the default language using the **language (code)** format.
+1. In the `settings` worksheet, add a `default_language` column.
+2. In the `default_language` column, enter the default language using the `language (code)` format.
     - For example: `English (en)`.
 
 **settings worksheet**
@@ -38,9 +38,9 @@ To define the default language of your form:
 
 To set up the `survey` worksheet:
 
-1. Rename the **label** column using the format **label::language (code)**.
+1. Rename the `label` column using the format `label::language (code)`.
     - For example: `label::English (en)`.
-2. If your form includes `hint`, `required_message`, `constraint_message`, or `media` columns in the `survey` worksheet, rename the existing columns using the format **column_name::language (code)**.
+2. If your form includes `hint`, `required_message`, `constraint_message`, or `media` columns in the `survey` worksheet, rename the existing columns using the format `column_name::language (code)`.
     - For example: `hint::English (en)`.
 
 **survey worksheet**
@@ -51,7 +51,7 @@ To set up the `survey` worksheet:
 | select_one yn | student | Are you currently a student? | |
 | survey |
 
-Finally, to set up the `choices` worksheet, rename the **label** column using the format **label::language (code)**.
+Finally, to set up the `choices` worksheet, rename the `label` column using the format `label::language (code)`.
 
 **choices worksheet**
 
@@ -70,9 +70,9 @@ Once you have defined your default language, you can add translations for each v
 </p>
 
 To add translations to the `survey` worksheet:
-1. Add a new **label** column for each translation language using the format **label::language (code)**.
+1. Add a new `label` column for each translation language using the format `label::language (code)`.
     - For example: `label::Spanish (es)`.
-2. If your form includes `hint`, `required_message`, `constraint_message`, or `media` columns in the `survey` worksheet, set up the corresponding translation columns using the **column_name::language (code)** format.
+2. If your form includes `hint`, `required_message`, `constraint_message`, or `media` columns in the `survey` worksheet, set up the corresponding translation columns using the `column_name::language (code)` format.
     - For example: `hint::French (fr)` or `required_message::Chichewa (ny)`.
 3. Enter the translations for all form elements in the relevant columns.
 
@@ -89,10 +89,10 @@ To add translations to the `survey` worksheet:
 | survey |
 
 To add translations to the `choices` worksheet:
-1. Add a new **label** column for each translation language using the format **label::language (code)**.
+1. Add a new `label` column for each translation language using the format `label::language (code)`.
     - For example: `label::Spanish (es)`.
 2. Enter the translation for each choice label in the relevant translation column.
-3. If your `choices` worksheet includes media columns, set up the corresponding translation columns using the **column_name::language (code)** format.
+3. If your `choices` worksheet includes media columns, set up the corresponding translation columns using the `column_name::language (code)` format.
 
 <p class="note">
   <strong>Note:</strong> To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to translations</a>.
