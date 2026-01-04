@@ -3,7 +3,7 @@
 
 When adding questions to an XLSForm, you'll need to choose the appropriate **question type**. The question type will depend on the kind of information you want to collect: some question types are more suited for text, others for numbers, dates, or multiple choice inputs.
 
-The question type in XLSForm is entered in the **type** column of the **survey** worksheet. Always use the exact spelling and letter case. You can add additional [appearances](https://support.kobotoolbox.org/appearances_xls.html) to most question types to modify their display or functionality.
+The question type in XLSForm is entered in the `type` column of the `survey` worksheet. Always use the exact spelling and letter case. You can add additional [appearances](https://support.kobotoolbox.org/appearances_xls.html) to most question types to modify their display or functionality.
 
 <p class="note">
 <strong>Note:</strong> While XLSForm is fully integrated within KoboToolbox, some question types have different names and functionalities in the <a href="https://support.kobotoolbox.org/formbuilder.html">Formbuilder</a> than they do in XLSForm. 
@@ -17,7 +17,7 @@ To learn more about building forms in XLSForm, see <a href="https://support.kobo
 
 ### Select question types
 
-Select questions allow respondents to choose from predefined options. For `select_one`, `select_multiple`, and `rank` questions, [option choices](https://support.kobotoolbox.org/option_choices_xls.html) are defined in the **choices** worksheet of the XLSForm.
+Select questions allow respondents to choose from predefined options. For `select_one`, `select_multiple`, and `rank` questions, [option choices](https://support.kobotoolbox.org/option_choices_xls.html) are defined in the `choices` worksheet of the XLSForm.
 
 | XLSForm type | Description | Formbuilder equivalent |
 | :--- | :--- | :--- |
@@ -42,7 +42,7 @@ Numeric questions are used to collect whole numbers, decimal numbers, or values 
 | :--- | :--- | :--- |
 | `integer` | Allows respondents to input whole numbers. | Number |
 | `decimal` | Allows respondents to input numbers that may contain decimal points. | Decimal |
-| `range` | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values, <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the **parameters** column. | Range |
+| `range` | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values, <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the `parameters` column. | Range |
 
 
 <p class="note">
@@ -70,10 +70,10 @@ Media questions allow respondents to upload or record images, audio, and video f
 
 | XLSForm type | Description | Formbuilder equivalent |
 | :--- | :--- | :--- |
-| `image` | Allows respondents to upload images or take photos when using the KoboCollect app. The quality of image files can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">adjusted</a> in the **parameters** column. | Photo |
-| `audio` | Allows respondents to upload an audio file or record audio as a response to a specific question. The quality of audio files can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">adjusted</a> in the **parameters** column. | Audio |
+| `image` | Allows respondents to upload images or take photos when using the KoboCollect app. The quality of image files can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">adjusted</a> in the `parameters` column. | Photo |
+| `audio` | Allows respondents to upload an audio file or record audio as a response to a specific question. The quality of audio files can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">adjusted</a> in the `parameters` column. | Audio |
 | `video` | Allows respondents to upload videos or record videos when using the KoboCollect app. | Video |
-| `file` | Allows respondents to upload files, such as text files, spreadsheets, and PDF files. Accepted file types can be <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">restricted</a> by specifying file extensions in the **body::accept** column (e.g., `.pdf, .docx`). | File |
+| `file` | Allows respondents to upload files, such as text files, spreadsheets, and PDF files. Accepted file types can be <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">restricted</a> by specifying file extensions in the `body::accept` column (e.g., `.pdf, .docx`). | File |
 | `barcode` | Scans a QR code to collect embedded information using the device's camera in KoboCollect. | Barcode |
 | `background-audio` | Collects audio continuously while the form is open. Audio recording begins when the form is opened and continues until the form is closed. | Background Audio Recording |
 
@@ -88,7 +88,7 @@ GPS questions are used to capture the geographic coordinates of a location, path
 
 | XLSForm type | Description | Formbuilder equivalent |
 | :--- | :--- | :--- |
-| `geopoint` | Collects a single geographic location, such as the coordinates of a specific school, clinic, or house. Default accuracy and warning accuracy can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the **parameters** column. | Point |
+| `geopoint` | Collects a single geographic location, such as the coordinates of a specific school, clinic, or house. Default accuracy and warning accuracy can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the `parameters` column. | Point |
 | `geotrace` | Records multiple GPS points that form a line, for example to track a path, trace a route, or map a drain. | Line |
 | `geoshape` | Collects points that form an enclosed area, such as a plot of land or a field. | Area |
 
@@ -119,7 +119,7 @@ Calculate and hidden questions are used to perform automatic calculations within
 | XLSForm type | Description | Formbuilder equivalent |
 | :--- | :--- | :--- |
 | `calculate` | Automatically performs calculations within a form based on responses to previous questions. | Calculate |
-| `hidden` | Stores predefined values that are not visible to the respondent. The value is <a href="https://support.kobotoolbox.org/question_options_xls.html#default-responses">stored</a> in the **default** column. | Hidden |
+| `hidden` | Stores predefined values that are not visible to the respondent. The value is <a href="https://support.kobotoolbox.org/question_options_xls.html#default-responses">stored</a> in the `default` column. | Hidden |
 
 To learn more about calculations in the Formbuilder, see <a href="https://support.kobotoolbox.org/calculate_questions.html">Calculate question type</a>. To learn more about calculations in XLSForm, see <a href="https://support.kobotoolbox.org/calculations_xls.html">Adding calculations in XLSForm</a>.
 
