@@ -94,7 +94,7 @@ You can change the default required message in your XLSForm by following the ste
 
 A **default response** populates a question with a predefined answer based on a common or expected response. The default response can be fixed or [dynamically determined](https://support.kobotoolbox.org/question_options_xls.html#setting-dynamic-default-responses) based on the response to a previous question. 
 
-The default response will be recorded as the final answer when the form is submitted **unless modified by the respondent** during data collection.  To prevent respondents from editing a default response, add a `read-only` column and set it to `TRUE`. 
+The default response will be recorded as the final answer when the form is submitted **unless modified by the respondent** during data collection.  To prevent respondents from editing a default response, add a `read_only` column and set it to `TRUE`. 
 
 <p class="note">
 <strong>Note:</strong> Although default responses can make data collection more efficient by prepopulating the form with expected or common responses, they also risk introducing bias or errors in the data, and should be used with caution. 
