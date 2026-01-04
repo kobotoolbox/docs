@@ -3,7 +3,7 @@
 
 Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. 
 
-Metadata questions are not visible to respondents. The information collected in the background can be used for auditing, to ensure data integrity, and to support data analysis.
+Metadata questions are hidden from respondents, and metadata fields cannot be edited in the KoboToolbox data table. This background information supports auditing, helps maintain data integrity, and can be used in data analysis.
 
 <p class="note">
 <strong>Note:</strong> This article focuses on adding metadata questions in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding metadata questions in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/form_meta.html">Form settings and metadata</a>.
