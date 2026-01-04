@@ -13,9 +13,9 @@ Metadata questions are not visible to respondents. The information collected in 
 
 Metadata questions are added to XLSForm in the same way as any other question types:
 
-1. Enter the metadata question **type** in a new row, using the exact name shown [in the table below](https://support.kobotoolbox.org/metadata_xls.html#available-metadata-questions-in-xlsform).
-2. Include a question **name**. 
-3. Question **labels** are not required, as they are not displayed in the form.
+1. Enter the metadata question `type` in a new row, using the exact name shown [in the table below](https://support.kobotoolbox.org/metadata_xls.html#available-metadata-questions-in-xlsform).
+2. Include a question `name`. 
+3. Question labels are not required, as they are not displayed in the form.
 
 **survey worksheet**
 
