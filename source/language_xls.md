@@ -5,12 +5,16 @@ Adding translations to a form allows users to switch to their preferred language
 
 Most elements displayed in the form can be translated, such as **question labels**, **hints**, **choice labels**, **constraint messages**, and **required messages**. Elements used for form structure, like question names, choice names, and list names, cannot be translated and should remain in the language used for form development and data analysis.
 
+<p class="note">
+  <strong>Note:</strong> Adding translations in XLSForm is faster and more efficient than <a href="https://support.kobotoolbox.org/language_dashboard.html">using the KoboToolbox interface</a>, especially for longer forms. To learn how to download your form in XLSForm to add translations, see <a href="xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a>.
+<br><br>
+For hands-on practice with adding translations in XLSForm, see KoboToolbox Academy's <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
+</p>
+
 When your form includes multiple translations, KoboCollect and Enketo will display a language selector in the **top right corner of the form**, allowing respondents to choose their preferred language.
 
 <p class="note">
-  <strong>Note:</strong> Adding translations in XLSForm is faster and more efficient than <a href="https://support.kobotoolbox.org/language_dashboard.html">using the Formbuilder</a>, especially for longer forms. To learn how to download your form in XLSForm to add translations, see <a href="xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a>.
-<br><br>
-For hands-on practice with adding translations in XLSForm, see KoboToolbox Academy's <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
+    To learn more about collecting and managing data from translated forms, see <a href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html">Collecting data in multiple languages</a>.
 </p>
 
 ## Language codes in XLSForm
