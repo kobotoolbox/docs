@@ -1,79 +1,91 @@
-# Adding Another Language in the Project Dashboard
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a412eff1342fa59da1fe2ffe1e10c1829b2e5e94/source/language_dashboard.md" class="reference">1 Nov 2022</a>
+# Adding translations in KoboToolbox
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1710438b3a5cb33b4229492e00cb8d234a569f64/source/language_dashboard.md" class="reference">4 Jan 2026</a>
 
+<iframe src="https://www.youtube.com/embed/3O2K78F7DCA?si=lt-ZlSRoAjFuSMl1" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-There are two methods to adding multiple languages to your form. You can either
-add and manage them directly through the online Project Dashboard or you can add
-them in an [XLS Form and upload it to Kobo](language_xls.md).
+Adding translations to a form allows users to **choose their preferred language** during data collection without creating separate forms. Any number of translations can be added. Both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [Enketo web forms](https://support.kobotoolbox.org/enketo.html) support form translations.
 
-Here are detailed instructions on how you can add and manage another language in
-your form through the online Project Dashboard:
+You can add translations to your form directly in the KoboToolbox interface or by using [XLSForm](https://support.kobotoolbox.org/language_xls.html). KoboToolbox offers an **intuitive interface** that requires no technical expertise, and allows you to easily add multiple translations to your forms. This approach is useful when working with a small number of questions or when you want to make quick adjustments.
 
-1. Create your form in the default language either by using the formbuilder or
-   setting the form up as an XLS file and then upload it directly to
-   KoboToolbox. The default language should be the language that the person
-   responsible for designing the questionnaire is most comfortable with.
+<p class="note">
+   <strong>Note:</strong> For larger or more complex multilingual forms, XLSForm is often the more efficient option. It allows you to manage translations in bulk, which can save time when working with many questions or multiple languages. To learn more about setting up translations in XLSForm, see <a href="https://support.kobotoolbox.org/language_xls.html">Adding translations in XLSForm</a>.
+</p>
 
-2. When you are done, or when a significant portion of the form has been
-   created, save it. You'll be returned to the draft form's project dashboard.
+This article focuses on adding translations from the KoboToolbox platform, and covers the following topics:
+- Setting your form’s default language
+- Adding languages and translations
+- Changing the default language
 
-3. Find and click on the 'More Actions' icon (3 dots). In the drop down menu
-   that appears, click on 'Manage Translations'.
+<p class="note">
+    To learn more about collecting and managing data from translated forms, see <a href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html">Collecting data in multiple languages</a>.
+</p>
 
-   ![image](/images/language_dashboard/action.png)
+## Setting the default language 
 
-4. Before adding additional languages, first set your default language by
-   clicking on the pencil icon and filling in the 'Language name' and 'Language
-   code' fields.
+A form’s default language is usually the language the questionnaire is designed in, and the language the form opens in by default during data collection. A default language only needs to be set if additional translations are added, and is not required when the form is available in only one language.
 
-   **Tip**: If you're unsure of what your language code is, you can search
-   through the entire list of language codes
-   [here](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
-   If you cannot find your language, its possible it has been labeled as
-   something else and is worth searching online for alternative names.
+To set the default language:
 
-   Examples: English (en), German (de), Arabic (ar), etc.
+1. Create your form in the default language. 
+2. Once your form has been created, go to the **FORM** page of your project.
+3. Under the **DEPLOY** or **REDEPLOY** button, click <i class="k-icon-language"></i> **Manage translations.**
+4. Add the language name (e.g., “English”) and language code (e.g., “en”) for your default language.
 
-   ![image](/images/language_dashboard/example.gif)
+![Manage languages](images/language_dashboard/manage_languages.png)
 
-5. Once the default language has been set, click on the 'Add Language' button to
-   fill in the language name and code for the new language being added.
+<p class="note">
+    <strong>Note:</strong> Language codes can be found in the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">IANA language subtag registry</a>. On the IANA website, the <strong>Description</strong> refers to the language name, and the <strong>Subtag</strong> refers to the language code (e.g., <strong>Description</strong>: French, <strong>Subtag</strong>: fr).
+</p>
 
-6. After the new language has been added, click on the 'Update translations'
-   icon (world) to the right of the language title to open up the 'Translations
-   Table' for that language.
+## Adding languages and translations
 
-   ![image](/images/language_dashboard/add_language.gif)
+Once you have set your default language, you can add more languages and translate your form text:
 
-7. Fill in the translations with correct associated original strings in the
-   table view and then click 'Save Changes' when finished. Then close out the
-   table view by clicking on the 'x' button in the top right of the table.
+1. In the <i class="k-icon-language"></i> **Manage translations** window, click **Add language.**
+2. Enter the language name and code, then click **Add.**
+3. Next to the language you added, click <i class="k-icon-language-settings"></i> **Update translations.**
+    - A table will appear with the questions, hints, and choices from your form. Each language has its own translation table.
+4. Enter the translations and click **Save Changes.**
+    - If you omit text for a translated element, it will appear as a blank field in the form.
+5. Close the window and preview your form to verify the translations. 
+6. Deploy or redeploy your form to apply the changes.
 
-   ![image](/images/language_dashboard/translation.png)
+You can return to this window at any time to update existing translations or add new ones. Remember to update translations whenever you add new questions or choice options.
 
-8. Back in the project dashboard click on 'Preview' icon (eyeball) to open a
-   preview of the form. At the top next to Choose Language click on the
-   dropdown. It will have default (your original language) as well as the new
-   language(s) you just added.
+![Add a new language](images/language_dashboard/add_language.png)
 
-   ![image](/images/language_dashboard/preview.gif)
+<p class="note">
+    <strong>Note:</strong> This method allows you to translate questions, choices, and hints. To translate guidance hints, constraint messages, required messages, and other advanced elements, use <a href="https://support.kobotoolbox.org/language_xls.html">XLSForm</a>.
+</p>
 
-9. Repeat steps for any additional languages.
+## Changing the default language 
 
-**Additional Tips**:
+To change the form’s default language:
 
-**Changing the default language**
+1. On the **FORM** page, click <i class="k-icon-language"></i> **Manage translations**.
+2. Click <i class="k-icon-language-default"></i> **Make default** next to the language you want to set as the default.
 
-The default language should be the most common language used during data
-collection. To change the default language, click on 'Manage Translations' and
-then click on the icon that appears to the right of the intended language when
-your mouse hovers over it.
+![Change default language](images/language_dashboard/change_default.png)
 
-![image](/images/language_dashboard/default.gif)
+## Troubleshooting
 
-**Translating right-to-left scripts**
+<details>
+  <summary><strong>Error loading survey: There is an unnamed translation in your form definition</strong></summary>
+  This error means that at least one element in your form (for example, a hint or message) is not assigned to a language.
+<br><br>
+To fix this, two options are available:
 
-When adding a language that uses right-to-left script, it is important to use
-the correct language code, however even if the correct code is used, if the
-first question, hint, or note is written in a left-to-right script, the form
-will automatically format the rest of the translation to a left-to-right format.
+<ul>
+<li>Download your form as an <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">XLSForm</a>, review all elements, find the unassigned element, and <a href="https://support.kobotoolbox.org/language_xls.html">correct it</a>.</li>
+<li>Or, go to <i class="k-icon-language"></i> <strong>Manage translations</strong> and delete the unnamed language. This removes the problematic element from your form entirely (it cannot be recovered).</li> 
+</ul>
+
+To help prevent this issue, always redeploy your form after adding or updating languages.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Issue displaying right-to-left scripts</strong></summary>
+  When adding a language that uses a right-to-left (RTL) script, such as Arabic, Hebrew, or Urdu, it is important to use the <strong>correct language code</strong> and to ensure the <strong>first visible text in the translation</strong> (e.g., a question label, hint, or note) is written in the RTL language. This will ensure that the form's layout does not default to left-to-right (LTR) formatting.
+</details>

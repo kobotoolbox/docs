@@ -1,16 +1,20 @@
 # Adding translations in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/language_xls.md" class="reference">4 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1710438b3a5cb33b4229492e00cb8d234a569f64/source/language_xls.md" class="reference">4 Jan 2026</a>
 
 Adding translations to a form allows users to switch to their preferred language during data collection without creating separate forms. Any number of translations can be added. Both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [Enketo web forms](https://support.kobotoolbox.org/enketo.html) support form translations.
 
 Most elements displayed in the form can be translated, such as **question labels**, **hints**, **choice labels**, **constraint messages**, and **required messages**. Elements used for form structure, like question names, choice names, and list names, cannot be translated and should remain in the language used for form development and data analysis.
 
+<p class="note">
+  <strong>Note:</strong> Adding translations in XLSForm is faster and more efficient than <a href="https://support.kobotoolbox.org/language_dashboard.html">using the KoboToolbox interface</a>, especially for longer forms. To learn how to download your form in XLSForm to add translations, see <a href="xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a>.
+<br><br>
+For hands-on practice with adding translations in XLSForm, see KoboToolbox Academy's <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
+</p>
+
 When your form includes multiple translations, KoboCollect and Enketo will display a language selector in the **top right corner of the form**, allowing respondents to choose their preferred language.
 
 <p class="note">
-  <strong>Note:</strong> Adding translations in XLSForm is faster and more efficient than <a href="https://support.kobotoolbox.org/language_dashboard.html">using the Formbuilder</a>, especially for longer forms. To learn how to download your form in XLSForm to add translations, see <a href="xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a>.
-<br><br>
-For hands-on practice with adding translations in XLSForm, see KoboToolbox Academy's <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
+    To learn more about collecting and managing data from translated forms, see <a href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html">Collecting data in multiple languages</a>.
 </p>
 
 ## Language codes in XLSForm
