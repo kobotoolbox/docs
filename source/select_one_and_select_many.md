@@ -49,9 +49,9 @@ option's label to remove it.
 ## Translating question and choice labels
 
 For translating select type questions and their labels into other languages
-through the KoboToolbox UI, refer to the support article,
-[Adding Another Language in the Project Dashboard](language_dashboard.md), or
-[here](language_xls.md) if you are creating your form using XLSForm.
+through the KoboToolbox UI, refer to the support articles
+[Adding translations in KoboToolbox](language_dashboard.md) or
+[Adding translations in XLSForm](language_xls.md) if you are creating your form using XLSForm.
 
 ## XML values
 
