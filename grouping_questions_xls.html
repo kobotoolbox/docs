@@ -109,7 +109,7 @@
           
   <section id="grouping-questions-in-xlsform">
 <h1>Grouping questions in XLSForm<a class="headerlink" href="#grouping-questions-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/238639f370a90eb7ed468043b9e78edec0fdc691/source/grouping_questions_xls.md" class="reference">10 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/grouping_questions_xls.md" class="reference">4 Jan 2026</a></p>
 <p>Grouping questions in XLSForm helps organize related content into clear, structured sections, improving form layout and navigation. For example, you can group all demographic questions into one section.</p>
 <p>XLSForm makes it easy to create groups and <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#nested-groups">nested groups</a>, and to apply <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#applying-skip-logic-to-question-groups">skip logic</a> to entire question groups. Group-level skip logic streamlines the respondent’s experience by showing only relevant sections based on previous answers.</p>
 <p>This article covers the following topics:</p>
@@ -125,13 +125,13 @@
 <h2>Creating a question group<a class="headerlink" href="#creating-a-question-group" title="Link to this heading">¶</a></h2>
 <p>To create a question group in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, enter <strong>begin_group</strong> to indicate the start of the group.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column of the <strong>begin_group</strong> row, enter the unique identifier for the group.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the survey worksheet, enter <code class="docutils literal notranslate"><span class="pre">begin_group</span></code> to indicate the start of the group.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column of the <code class="docutils literal notranslate"><span class="pre">begin_group</span></code> row, enter the unique identifier for the group.</p></li>
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">label</span></code> column, enter the title of the group as you want it displayed in the form. The label is optional and can be left blank.</p></li>
 <li><p>Enter each question of the group in its own row, as you normally would.</p></li>
-<li><p>In a new row after the grouped questions, enter <strong>end_group</strong> in the <code class="docutils literal notranslate"><span class="pre">type</span></code> column to indicate the end of the group.</p>
+<li><p>In a new row after the grouped questions, enter <code class="docutils literal notranslate"><span class="pre">end_group</span></code> in the <code class="docutils literal notranslate"><span class="pre">type</span></code> column to indicate the end of the group.</p>
 <ul class="simple">
-<li><p>In the <strong>end_group</strong> row, leave the <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">label</span></code> columns blank.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">end_group</span></code> row, leave the <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">label</span></code> columns blank.</p></li>
 </ul>
 </li>
 </ol>
@@ -248,8 +248,8 @@
 <p>By default, KoboCollect displays each question on a separate screen. Users must move manually from one question to the next.</p>
 <p>To <strong>display all grouped questions on the same screen</strong> in KoboCollect:</p>
 <ol class="arabic simple">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, add an <strong>appearance</strong> column.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column, enter <strong>field-list</strong> in the <code class="docutils literal notranslate"><span class="pre">begin_group</span></code> row.</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, add an <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column, enter <code class="docutils literal notranslate"><span class="pre">field-list</span></code> in the <code class="docutils literal notranslate"><span class="pre">begin_group</span></code> row.</p>
 <ul class="simple">
 <li><p>Each question group will now appear on its own page.</p></li>
 </ul>
@@ -303,10 +303,10 @@
 <p>By default, Enketo web forms display all questions on a single page.</p>
 <p>To display each group of questions on its own page in Enketo web forms:</p>
 <ol class="arabic simple">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet, add a <strong>style</strong> column.</p></li>
-<li><p>In the second cell of the <code class="docutils literal notranslate"><span class="pre">style</span></code> column, enter <strong>pages</strong>.</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet, add a <code class="docutils literal notranslate"><span class="pre">style</span></code> column.</p></li>
+<li><p>In the second cell of the <code class="docutils literal notranslate"><span class="pre">style</span></code> column, enter <code class="docutils literal notranslate"><span class="pre">pages</span></code>.</p>
 <ul class="simple">
-<li><p>This applies the <strong>pages</strong> <a class="reference external" href="https://support.kobotoolbox.org/form_style_xls.html">theme</a> to your Enketo web form, dividing it into separate pages similar to KoboCollect.</p></li>
+<li><p>This applies the <a class="reference external" href="https://support.kobotoolbox.org/form_style_xls.html">pages theme</a> to your Enketo web form, dividing it into separate pages similar to KoboCollect.</p></li>
 </ul>
 </li>
 </ol>
@@ -324,8 +324,8 @@
 </tbody>
 </table>
 <ol class="arabic simple" start="3">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, add an <strong>appearance</strong> column.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column, enter <strong>field-list</strong> in the <code class="docutils literal notranslate"><span class="pre">begin_group</span></code> row.</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, add an <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column, enter <code class="docutils literal notranslate"><span class="pre">field-list</span></code> in the <code class="docutils literal notranslate"><span class="pre">begin_group</span></code> row.</p>
 <ul class="simple">
 <li><p>Each question group will now appear on its own page.</p></li>
 </ul>
@@ -380,7 +380,7 @@
 <p>Applying skip logic to question groups ensures that only relevant sections appear based on earlier responses. For example, in a household survey, you can use skip logic to show a group of questions for the head of household only when a previous question identifies the respondent as such. This makes the form easier to navigate and more responsive to user input.</p>
 <p>To <a class="reference external" href="https://support.kobotoolbox.org/skip_logic_xls.html">apply skip logic</a> to question groups in XLSForm, use the same approach as you would for individual questions:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>relevant</strong> column to your <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column to your <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column for the <code class="docutils literal notranslate"><span class="pre">begin_group</span></code> row, enter the condition that determines when the group should be shown.</p></li>
 <li><p>If the condition is met, the entire group will be displayed. If not, the group will be hidden.</p></li>
 </ol>

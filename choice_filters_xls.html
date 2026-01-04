@@ -109,7 +109,7 @@
           
   <section id="adding-choice-filters-in-xlsform">
 <h1>Adding choice filters in XLSForm<a class="headerlink" href="#adding-choice-filters-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/choice_filters_xls.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/choice_filters_xls.md" class="reference">4 Jan 2026</a></p>
 <p>Choice filters create dynamic forms where options in one question depend on the answer to a previous question. This streamlines data collection by presenting only relevant choices, improving survey efficiency and accuracy.</p>
 <p>Choice filters can be used for various applications, including:</p>
 <ul class="simple">
@@ -140,9 +140,9 @@ For hands-on practice with choice filters in XLSForm, see KoboToolbox Academy’
 <li><p>This value will act as the filter. It can be any word or number.</p></li>
 </ul>
 </li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, add a <strong>choice_filter</strong> column. This column will contain the <strong>choice filter expression</strong> used to filter the option choices.</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, add a <code class="docutils literal notranslate"><span class="pre">choice_filter</span></code> column. This column will contain the <strong>choice filter expression</strong> used to filter the option choices.</p>
 <ul class="simple">
-<li><p>The choice filter expression in its most basic form will take the format: <strong>filter = ‘value’.</strong></p></li>
+<li><p>The choice filter expression in its most basic form will take the format: <code class="docutils literal notranslate"><span class="pre">filter</span> <span class="pre">=</span> <span class="pre">‘value’</span></code>.</p></li>
 <li><p>For example, <code class="docutils literal notranslate"><span class="pre">q2</span> <span class="pre">=</span> <span class="pre">‘yes’</span></code> will retain all choices with <strong>yes</strong> in the <code class="docutils literal notranslate"><span class="pre">q2</span></code> column.</p></li>
 </ul>
 </li>
@@ -239,8 +239,8 @@ For an example of an XLSForm using dynamic choice filters, see this <a href="htt
 <li><p>It can be helpful to name this column the same as the <strong>parent question.</strong></p></li>
 </ul>
 </li>
-<li><p>In the filter column, enter the <strong>name of the choice</strong> from the parent list that each option in the child list corresponds to.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, add a <strong>choice_filter</strong> column. This column will contain the <strong>choice filter expression</strong> used to filter the option choices.</p>
+<li><p>In the filter column, enter the <code class="docutils literal notranslate"><span class="pre">name</span></code> of the choice from the parent list that each option in the child list corresponds to.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, add a <code class="docutils literal notranslate"><span class="pre">choice_filter</span></code> column. This column will contain the <strong>choice filter expression</strong> used to filter the option choices.</p>
 <ul class="simple">
 <li><p>If the parent question is <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, the choice filter expression will be <code class="docutils literal notranslate"><span class="pre">filter_column</span> <span class="pre">=</span> <span class="pre">${question_name}</span></code>, where <code class="docutils literal notranslate"><span class="pre">question_name</span></code> refers to the parent question.</p></li>
 <li><p>If the parent question is <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>, the choice filter expression will be <code class="docutils literal notranslate"><span class="pre">selected(${question_name},</span> <span class="pre">filter_column)</span></code>.</p></li>

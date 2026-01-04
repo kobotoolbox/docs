@@ -109,9 +109,9 @@
           
   <section id="question-types-in-xlsform">
 <h1>Question types in XLSForm<a class="headerlink" href="#question-types-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/cd003099a2a71e8e45305951828cc1c0e6069733/source/question_types_xls.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/question_types_xls.md" class="reference">4 Jan 2026</a></p>
 <p>When adding questions to an XLSForm, you’ll need to choose the appropriate <strong>question type</strong>. The question type will depend on the kind of information you want to collect: some question types are more suited for text, others for numbers, dates, or multiple choice inputs.</p>
-<p>The question type in XLSForm is entered in the <strong>type</strong> column of the <strong>survey</strong> worksheet. Always use the exact spelling and letter case. You can add additional <a class="reference external" href="https://support.kobotoolbox.org/appearances_xls.html">appearances</a> to most question types to modify their display or functionality.</p>
+<p>The question type in XLSForm is entered in the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet. Always use the exact spelling and letter case. You can add additional <a class="reference external" href="https://support.kobotoolbox.org/appearances_xls.html">appearances</a> to most question types to modify their display or functionality.</p>
 <p class="note">
 <strong>Note:</strong> While XLSForm is fully integrated within KoboToolbox, some question types have different names and functionalities in the <a href="https://support.kobotoolbox.org/formbuilder.html">Formbuilder</a> than they do in XLSForm. 
 </p>
@@ -121,7 +121,7 @@ To learn more about building forms in XLSForm, see <a href="https://support.kobo
 </p>
 <section id="select-question-types">
 <h2>Select question types<a class="headerlink" href="#select-question-types" title="Link to this heading">¶</a></h2>
-<p>Select questions allow respondents to choose from predefined options. For <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>, and <code class="docutils literal notranslate"><span class="pre">rank</span></code> questions, <a class="reference external" href="https://support.kobotoolbox.org/option_choices_xls.html">option choices</a> are defined in the <strong>choices</strong> worksheet of the XLSForm.</p>
+<p>Select questions allow respondents to choose from predefined options. For <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>, and <code class="docutils literal notranslate"><span class="pre">rank</span></code> questions, <a class="reference external" href="https://support.kobotoolbox.org/option_choices_xls.html">option choices</a> are defined in the <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet of the XLSForm.</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>XLSForm type</p></th>
@@ -180,7 +180,7 @@ To learn more about select question types in KoboToolbox, see <a href="https://s
 <td class="text-left"><p>Decimal</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">range</span></code></p></td>
-<td class="text-left"><p>Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values, <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the <strong>parameters</strong> column.</p></td>
+<td class="text-left"><p>Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values, <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the <code class="docutils literal notranslate"><span class="pre">parameters</span></code> column.</p></td>
 <td class="text-left"><p>Range</p></td>
 </tr>
 </tbody>
@@ -226,11 +226,11 @@ To learn more about text and note question types in KoboToolbox, see <a href="ht
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">image</span></code></p></td>
-<td class="text-left"><p>Allows respondents to upload images or take photos when using the KoboCollect app. The quality of image files can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">adjusted</a> in the <strong>parameters</strong> column.</p></td>
+<td class="text-left"><p>Allows respondents to upload images or take photos when using the KoboCollect app. The quality of image files can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">adjusted</a> in the <code class="docutils literal notranslate"><span class="pre">parameters</span></code> column.</p></td>
 <td class="text-left"><p>Photo</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audio</span></code></p></td>
-<td class="text-left"><p>Allows respondents to upload an audio file or record audio as a response to a specific question. The quality of audio files can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">adjusted</a> in the <strong>parameters</strong> column.</p></td>
+<td class="text-left"><p>Allows respondents to upload an audio file or record audio as a response to a specific question. The quality of audio files can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">adjusted</a> in the <code class="docutils literal notranslate"><span class="pre">parameters</span></code> column.</p></td>
 <td class="text-left"><p>Audio</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">video</span></code></p></td>
@@ -238,7 +238,7 @@ To learn more about text and note question types in KoboToolbox, see <a href="ht
 <td class="text-left"><p>Video</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">file</span></code></p></td>
-<td class="text-left"><p>Allows respondents to upload files, such as text files, spreadsheets, and PDF files. Accepted file types can be <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">restricted</a> by specifying file extensions in the <strong>body::accept</strong> column (e.g., <code class="docutils literal notranslate"><span class="pre">.pdf,</span> <span class="pre">.docx</span></code>).</p></td>
+<td class="text-left"><p>Allows respondents to upload files, such as text files, spreadsheets, and PDF files. Accepted file types can be <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">restricted</a> by specifying file extensions in the <code class="docutils literal notranslate"><span class="pre">body::accept</span></code> column (e.g., <code class="docutils literal notranslate"><span class="pre">.pdf,</span> <span class="pre">.docx</span></code>).</p></td>
 <td class="text-left"><p>File</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">barcode</span></code></p></td>
@@ -267,7 +267,7 @@ To learn more about media question types in KoboToolbox, see <a href="https://su
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geopoint</span></code></p></td>
-<td class="text-left"><p>Collects a single geographic location, such as the coordinates of a specific school, clinic, or house. Default accuracy and warning accuracy can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the <strong>parameters</strong> column.</p></td>
+<td class="text-left"><p>Collects a single geographic location, such as the coordinates of a specific school, clinic, or house. Default accuracy and warning accuracy can be <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the <code class="docutils literal notranslate"><span class="pre">parameters</span></code> column.</p></td>
 <td class="text-left"><p>Point</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geotrace</span></code></p></td>
@@ -329,7 +329,7 @@ To learn more about date and time questions in KoboToolbox, see <a href="https:/
 <td class="text-left"><p>Calculate</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">hidden</span></code></p></td>
-<td class="text-left"><p>Stores predefined values that are not visible to the respondent. The value is <a href="https://support.kobotoolbox.org/question_options_xls.html#default-responses">stored</a> in the <strong>default</strong> column.</p></td>
+<td class="text-left"><p>Stores predefined values that are not visible to the respondent. The value is <a href="https://support.kobotoolbox.org/question_options_xls.html#default-responses">stored</a> in the <code class="docutils literal notranslate"><span class="pre">default</span></code> column.</p></td>
 <td class="text-left"><p>Hidden</p></td>
 </tr>
 </tbody>

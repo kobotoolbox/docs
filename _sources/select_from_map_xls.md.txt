@@ -1,7 +1,7 @@
 # Selecting options from a map
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/select_from_map_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/select_from_map_xls.md" class="reference">4 Jan 2026</a>
 
-With **select_one** and **select_one_from_file** question types, you can configure your XLSForm to let users select a choice directly from a map instead of a list. When the map opens, it displays all available points, lines, or polygons based on the choices provided. Users can then tap a feature on the map to record their selection. This functionality is available **only in KoboCollect.**
+With `select_one` and `select_one_from_file` question types, you can configure your XLSForm to let users select a choice directly from a map instead of a list. When the map opens, it displays all available points, lines, or polygons based on the choices provided. Users can then tap a feature on the map to record their selection. This functionality is available **only in KoboCollect.**
 
 This article explains how to configure your XLSForm to allow selecting options from a map, how to customize styling options such as colors, symbols, and line widths, and how choices are displayed and selected on the map.
 
@@ -16,9 +16,9 @@ This article explains how to configure your XLSForm to allow selecting options f
 To set up a **select from map** question in XLSForm:
 1. In the `survey` worksheet, add a `select_one` or `select_one_from_file` question.
 2. Add an `appearance` column. 
-3. In the `appearance` column of the select question, enter **map** or **quick map.**
-    - The **map** appearance allows respondents to click on different locations and view information about each before confirming their selection.
-    - The **quick map** appearance automatically records the first selected location without displaying additional information.
+3. In the `appearance` column of the select question, enter `map` or `quick map`.
+    - The **map appearance** allows respondents to click on different locations and view information about each before confirming their selection.
+    - The **quick map appearance** automatically records the first selected location without displaying additional information.
 
 **survey worksheet**
 
@@ -28,8 +28,8 @@ To set up a **select from map** question in XLSForm:
 | survey | 
 
 4. In the `choices` worksheet or in your [external list of choices](https://support.kobotoolbox.org/select_from_file_xls.html), enter the choices as you normally would.
-5. Next to your choice list, add a **geometry** column.
-6. For each choice, enter the corresponding GPS coordinates in the **geometry** column.
+5. Next to your choice list, add a `geometry` column.
+6. For each choice, enter the corresponding GPS coordinates in the `geometry` column.
     - This field can include unique or multiple GPS coordinates, to define a point, a line, or a polygon.
 
 **choices worksheet**
@@ -104,14 +104,14 @@ If you are using a GeoJSON file to provide GPS coordinates, follow the [GeoJSON 
 <strong>Note:</strong> Selecting options from a map is <strong>only available in KoboCollect.</strong> In Enketo web forms, the option choices will appear as a normal list of options.
 </p>
 
-In KoboCollect, adding a **select type question** with a **map** or **quick map** appearance allows users to choose an option directly from a map rather than from a list. When the map opens, it centers on the device’s current location. Buttons on the right let users recenter on their location or show all available map points.
+In KoboCollect, adding a **select type question** with a `map` or `quick map` appearance allows users to choose an option directly from a map rather than from a list. When the map opens, it centers on the device’s current location. Buttons on the right let users recenter on their location or show all available map points.
 
 Point choices are shown as map markers. Tapping a marker increases its size.
-Line and polygon choices are displayed as red outlines, with polygons shaded in red. Users can tap a line or polygon to select it. When a location is selected, its [properties](https://support.kobotoolbox.org/select_from_map_xls.html#adding-choice-properties) appear at the bottom of the screen, unless the **quick map** appearance is used. 
+Line and polygon choices are displayed as red outlines, with polygons shaded in red. Users can tap a line or polygon to select it. When a location is selected, its [properties](https://support.kobotoolbox.org/select_from_map_xls.html#adding-choice-properties) appear at the bottom of the screen, unless the `quick map` appearance is used. 
 
-Under the choice label, a **Select** button appears to confirm and save the selected location to the form, unless the **quick map** appearance is used.
+Under the choice label, a **Select** button appears to confirm and save the selected location to the form, unless the `quick map` appearance is used.
 
 <p class="note">
-<strong>Note:</strong> The <strong>map</strong> and <strong>quick map</strong> appearances can be combined with <a href="https://support.kobotoolbox.org/choice_filters_xls.html">choice filters</a> to display options on the map based on a previous selection.
+<strong>Note:</strong> The <code>map</code> and <code>quick map</code> appearances can be combined with <a href="https://support.kobotoolbox.org/choice_filters_xls.html">choice filters</a> to display options on the map based on a previous selection.
 </p>
 

@@ -109,7 +109,7 @@
           
   <section id="getting-started-with-xlsform">
 <h1>Getting started with XLSForm<a class="headerlink" href="#getting-started-with-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8a0380f12591eab6509dc6c51e0451839b3cc4d8/source/getting_started_xlsform.md" class="reference">30 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/getting_started_xlsform.md" class="reference">4 Jan 2026</a></p>
 <iframe src="https://www.youtube.com/embed/xpeBCy9p1Ys?si=tP_3G2vMnRC1OgWS" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>When creating survey forms with KoboToolbox, you can build your form with the <a class="reference external" href="https://support.kobotoolbox.org/formbuilder.html">KoboToolbox Formbuilder</a> or using XLSForm. XLSForm is very effective for creating both basic and advanced forms in a user-friendly format.</p>
 <p class="note">
@@ -130,14 +130,14 @@
 <p>To set up the basic structure of an XLSForm:</p>
 <ol class="arabic simple">
 <li><p>Open a new spreadsheet in your preferred spreadsheet software.</p></li>
-<li><p>Create three worksheets: <strong>survey</strong>, <strong>choices</strong>, and <strong>settings</strong>.</p>
+<li><p>Create three worksheets: <code class="docutils literal notranslate"><span class="pre">survey</span></code>, <code class="docutils literal notranslate"><span class="pre">choices</span></code>, and <code class="docutils literal notranslate"><span class="pre">settings</span></code>.</p>
 <ul class="simple">
 <li><p>Worksheet names must be all lowercase letters.</p></li>
 </ul>
 </li>
-<li><p>In the <strong>survey</strong> worksheet, create three columns with the headings: <code class="docutils literal notranslate"><span class="pre">type</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, and <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p></li>
-<li><p>In the <strong>choices</strong> worksheet, create three columns with the headings: <code class="docutils literal notranslate"><span class="pre">list_name</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, and <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p></li>
-<li><p>The <strong>settings</strong> worksheet is optional. It can be used to include additional form specifications and customizations.</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, create three columns with the headings: <code class="docutils literal notranslate"><span class="pre">type</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, and <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet, create three columns with the headings: <code class="docutils literal notranslate"><span class="pre">list_name</span></code>, <code class="docutils literal notranslate"><span class="pre">name</span></code>, and <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet is optional. It can be used to include additional form specifications and customizations.</p>
 <ul class="simple">
 <li><p>For example: <code class="docutils literal notranslate"><span class="pre">form_title</span></code>, <code class="docutils literal notranslate"><span class="pre">style</span></code>, and <code class="docutils literal notranslate"><span class="pre">default_language</span></code>.</p></li>
 </ul>
@@ -157,13 +157,13 @@ To get started with XLSForm, download a sample XLSForm <a class="reference" href
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>type</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">type</span></code></p></td>
 <td><p>Defines the question type (e.g., text, integer, select_one)</p></td>
 </tr>
-<tr class="row-odd"><td><p>name</p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">name</span></code></p></td>
 <td><p>Defines a short, unique name to refer to each question</p></td>
 </tr>
-<tr class="row-even"><td><p>label</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">label</span></code></p></td>
 <td><p>Defines the question text as it will be displayed in the form</p></td>
 </tr>
 </tbody>
@@ -176,13 +176,13 @@ To get started with XLSForm, download a sample XLSForm <a class="reference" href
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>list_name</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">list_name</span></code></p></td>
 <td><p>Defines the unique identifier for a list of option choices</p></td>
 </tr>
-<tr class="row-odd"><td><p>name</p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">name</span></code></p></td>
 <td><p>Defines a short, unique name to refer to each option choice</p></td>
 </tr>
-<tr class="row-even"><td><p>label</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">label</span></code></p></td>
 <td><p>Defines the choice text as it will be displayed in the form</p></td>
 </tr>
 </tbody>
@@ -191,7 +191,7 @@ To get started with XLSForm, download a sample XLSForm <a class="reference" href
 </section>
 <section id="adding-questions">
 <h2>Adding questions<a class="headerlink" href="#adding-questions" title="Link to this heading">¶</a></h2>
-<p>In XLSForm, questions are added in the <strong>survey</strong> worksheet. To add questions in XLSForm:</p>
+<p>In XLSForm, questions are added in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet. To add questions in XLSForm:</p>
 <ol class="arabic simple">
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, enter the <a class="reference external" href="https://support.kobotoolbox.org/question_types_xls.html">question type</a> of the question you want to add.</p></li>
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column, enter a name used to identify the question.</p>
@@ -252,7 +252,7 @@ To learn more about question types in XLSForm, see <a class="reference" href="ht
 </section>
 <section id="adding-option-choices">
 <h2>Adding option choices<a class="headerlink" href="#adding-option-choices" title="Link to this heading">¶</a></h2>
-<p>For select type questions, option choices are added in the <strong>choices</strong> worksheet. To add option choices in XLSForm:</p>
+<p>For select type questions, option choices are added in the <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet. To add option choices in XLSForm:</p>
 <ol class="arabic simple">
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">list_name</span></code> column of the <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet, enter the name of the <strong>list of option choices</strong>.</p>
 <ul class="simple">
@@ -295,7 +295,7 @@ To learn more about managing option choices in XLSForm, see <a class="reference"
 </section>
 <section id="adding-settings">
 <h2>Adding settings<a class="headerlink" href="#adding-settings" title="Link to this heading">¶</a></h2>
-<p>There are many optional settings that can be added to the <strong>settings</strong> worksheet in XLSForm.</p>
+<p>There are many optional settings that can be added to the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet in XLSForm.</p>
 <p>Common form settings include:</p>
 <table class="docutils align-default">
 <thead>
@@ -304,16 +304,16 @@ To learn more about managing option choices in XLSForm, see <a class="reference"
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>form_title</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">form_title</span></code></p></td>
 <td><p>Title displayed at the top of the form</p></td>
 </tr>
-<tr class="row-odd"><td><p>default_language</p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">default_language</span></code></p></td>
 <td><p>Default form language</p></td>
 </tr>
-<tr class="row-even"><td><p>style</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">style</span></code></p></td>
 <td><p>Themes for Enketo web forms</p></td>
 </tr>
-<tr class="row-odd"><td><p>version</p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">version</span></code></p></td>
 <td><p>Form version ID</p></td>
 </tr>
 </tbody>
@@ -353,37 +353,37 @@ To learn more about the settings worksheet in XLSForm, see <a class="reference" 
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>hint</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">hint</span></code></p></td>
 <td><p>Question hint</p></td>
 </tr>
-<tr class="row-odd"><td><p>guidance_hint</p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">guidance_hint</span></code></p></td>
 <td><p>Guidance hint</p></td>
 </tr>
-<tr class="row-even"><td><p>required</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">required</span></code></p></td>
 <td><p>Makes a question mandatory</p></td>
 </tr>
-<tr class="row-odd"><td><p>relevant</p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">relevant</span></code></p></td>
 <td><p>Skip logic conditions for the question</p></td>
 </tr>
-<tr class="row-even"><td><p>constraint</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">constraint</span></code></p></td>
 <td><p>Validation criteria for the question</p></td>
 </tr>
-<tr class="row-odd"><td><p>constraint_message</p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">constraint_message</span></code></p></td>
 <td><p>Error message when validation criteria are not met</p></td>
 </tr>
-<tr class="row-even"><td><p>appearance</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">appearance</span></code></p></td>
 <td><p>Options for how questions are displayed</p></td>
 </tr>
-<tr class="row-odd"><td><p>choice_filter</p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">choice_filter</span></code></p></td>
 <td><p>Criteria for cascading select</p></td>
 </tr>
-<tr class="row-even"><td><p>parameters</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">parameters</span></code></p></td>
 <td><p>Settings for specific question types</p></td>
 </tr>
-<tr class="row-odd"><td><p>calculation</p></td>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">calculation</span></code></p></td>
 <td><p>Mathematical expression for <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question</p></td>
 </tr>
-<tr class="row-even"><td><p>default</p></td>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">default</span></code></p></td>
 <td><p>Default response for a question</p></td>
 </tr>
 </tbody>

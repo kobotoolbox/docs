@@ -109,7 +109,7 @@
           
   <section id="repeat-groups-in-xlsform">
 <h1>Repeat groups in XLSForm<a class="headerlink" href="#repeat-groups-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/74d5c440788768e99db0d6436414aad40e5e6e4b/source/repeat_groups_xls.md" class="reference">27 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/repeat_groups_xls.md" class="reference">4 Jan 2026</a></p>
 <p>Repeat groups in XLSForm allow you to ask the same set of questions multiple times within a form. This is especially useful when collecting similar information about several people, items, or events.</p>
 <p>For example, if you’re gathering details about each member of a household, you can use a repeat group to ask the same demographic questions for every individual.</p>
 <p>This article covers the following topics:</p>
@@ -126,13 +126,13 @@
 <h2>Creating a repeat group<a class="headerlink" href="#creating-a-repeat-group" title="Link to this heading">¶</a></h2>
 <p>To create a repeat group in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the survey worksheet, enter <strong>begin_repeat</strong> to indicate the start of the repeat group.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column of the <strong>begin_repeat</strong> row, enter the unique identifier for the group.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the survey worksheet, enter <code class="docutils literal notranslate"><span class="pre">begin_repeat</span></code> to indicate the start of the repeat group.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column of the <code class="docutils literal notranslate"><span class="pre">begin_repeat</span></code> row, enter the unique identifier for the group.</p></li>
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">label</span></code> column, enter the title of the group as you want it displayed in the form. The label is optional and can be left blank.</p></li>
 <li><p>Enter each question of the group in its own row, as you normally would.</p></li>
-<li><p>In a new row after the repeating questions, enter <strong>end_repeat</strong> in the <code class="docutils literal notranslate"><span class="pre">type</span></code> column to indicate the end of the repeat group.</p>
+<li><p>In a new row after the repeating questions, enter <code class="docutils literal notranslate"><span class="pre">end_repeat</span></code> in the <code class="docutils literal notranslate"><span class="pre">type</span></code> column to indicate the end of the repeat group.</p>
 <ul class="simple">
-<li><p>In the <strong>end_repeat</strong> row, leave the <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">label</span></code> columns blank.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">end_repeat</span></code> row, leave the <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">label</span></code> columns blank.</p></li>
 </ul>
 </li>
 </ol>
@@ -173,12 +173,12 @@
 </table>
 <p>Repeat groups function similarly to question groups. With repeat groups, you can:</p>
 <ul class="simple">
-<li><p>Use the <strong>field-list</strong> appearance to <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#appearance-settings-for-question-groups">display all questions</a> on the same page.</p></li>
-<li><p>Add <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#applying-skip-logic-to-question-groups">skip logic</a> to repeat groups in the <strong>relevance</strong> column.</p></li>
-<li><p>Create <strong>nested</strong> repeat groups, where one repeat group is added <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#nested-groups">inside another</a>.</p></li>
+<li><p>Use the <code class="docutils literal notranslate"><span class="pre">field-list</span></code> appearance to <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#appearance-settings-for-question-groups">display all questions</a> on the same page.</p></li>
+<li><p>Add <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#applying-skip-logic-to-question-groups">skip logic</a> to repeat groups in the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column.</p></li>
+<li><p>Create <strong>nested repeat groups</strong>, where one repeat group is added <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#nested-groups">inside another</a>.</p></li>
 </ul>
 <p class="note">
-  <strong>Note:</strong> Adding repeat groups to your form creates a different data structure compared to standard variables or groups. When you download your data in .xlsx format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
+  <strong>Note:</strong> Adding repeat groups to your form creates a different data structure compared to standard variables or groups. When you download your data in <code>.xlsx</code> format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
 </p>
 </section>
 <section id="setting-repeat-counts">
@@ -186,8 +186,8 @@
 <p>By default, repeat groups can be repeated as many times as needed. To limit the number of times a repeat group is repeated in the form, you can set a repeat count. The <strong>repeat count</strong> can be either a fixed number or dynamically determined based on a previous response.</p>
 <p>To set a fixed number of repetitions:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>repeat_count</strong> column in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
-<li><p>Input a number in the <strong>repeat_count</strong> column.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">repeat_count</span></code> column in the survey worksheet.</p></li>
+<li><p>Input a number in the <code class="docutils literal notranslate"><span class="pre">repeat_count</span></code> column.</p></li>
 </ol>
 <p><strong>survey worksheet</strong></p>
 <table class="docutils align-default">
@@ -233,8 +233,8 @@
 </table>
 <p>To dynamically determine the number of repetitions based on a previous response:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>repeat_count</strong> column in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
-<li><p>Enter the question reference in the <strong>repeat_count</strong> column.</p>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">repeat_count</span></code> column in the survey worksheet.</p></li>
+<li><p>Enter the question reference in the <code class="docutils literal notranslate"><span class="pre">repeat_count</span></code> column.</p>
 <ul class="simple">
 <li><p>The referenced question must be an <code class="docutils literal notranslate"><span class="pre">integer</span></code> question type.</p></li>
 </ul>
@@ -288,7 +288,7 @@
 </tbody>
 </table>
 <p class="note">
-  <strong>Note:</strong> Inside the <strong>repeat_count</strong> column, you can also include advanced conditional statements to determine if repetitions will continue. For more information, see <a href="https://docs.getodk.org/form-logic/#repeating-as-long-as-a-condition-is-met">ODK documentation</a>. 
+  <strong>Note:</strong> Inside the <code>repeat_count</code> column, you can also include advanced conditional statements to determine if repetitions will continue. For more information, see <a href="https://docs.getodk.org/form-logic/#repeating-as-long-as-a-condition-is-met">ODK documentation</a>. 
 </p>
 </section>
 <section id="counting-number-of-repetitions-inside-a-repeat-group">
@@ -296,8 +296,8 @@
 <p>When using repeat groups, you may need a field that counts how many times the group has been repeated. This can be useful for calculations or form logic. For example, you can apply skip logic after a specific repetition or dynamically include the repeat number in a question label (e.g., Child 1, Child 2).</p>
 <p>To count how many times a repeat group has been repeated:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>calculate</strong> question inside the repeat group.</p></li>
-<li><p>Enter <code class="docutils literal notranslate"><span class="pre">position(..)</span></code> in the <strong>calculation</strong> column.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question inside the repeat group.</p></li>
+<li><p>Write <code class="docutils literal notranslate"><span class="pre">position(..)</span></code> in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column.</p></li>
 </ol>
 <p>This variable stores the current repeat index. You can use it in form logic or to create dynamic question labels.</p>
 <p><strong>survey worksheet</strong></p>
@@ -307,7 +307,7 @@
 <th class="head text-left"><p>name</p></th>
 <th class="head text-left"><p>label</p></th>
 <th class="head text-left"><p>calculation</p></th>
-<th class="head text-left"><p>relevance</p></th>
+<th class="head text-left"><p>relevant</p></th>
 </tr>
 </thead>
 <tbody>
@@ -367,8 +367,8 @@
 <p>You can also add a separate question outside the repeat group to count the total number of repetitions. This is useful, for example, to confirm the number of participants or children listed in the repeat group.</p>
 <p>To count how many times a repeat group was filled in:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>calculate</strong> question after the repeat group.</p></li>
-<li><p>In the <strong>calculation</strong> column, enter <code class="docutils literal notranslate"><span class="pre">count(${repeat_group_name})</span></code>, where <code class="docutils literal notranslate"><span class="pre">repeat_group_name</span></code> is the name of the repeat group.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question after the repeat group.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column, enter <code class="docutils literal notranslate"><span class="pre">count(${repeat_group_name})</span></code>, where <code class="docutils literal notranslate"><span class="pre">repeat_group_name</span></code> is the name of the repeat group.</p></li>
 </ol>
 <p>This variable stores the total number of group repetitions. You can use it in calculations or to create dynamic question labels in your form.</p>
 <p><strong>survey worksheet</strong></p>
@@ -465,9 +465,9 @@
 </table>
 <p>Outside a repeat group, you can retrieve data from the repeat group for use in form logic or question labels:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>calculate</strong> question after your repeat group.</p></li>
-<li><p>Include one of the formulas listed below in the <strong>calculation</strong> column.</p></li>
-<li><p>The <strong>calculate</strong> question stores the retrieved value, which you can then use in form logic or question labels.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question after your repeat group.</p></li>
+<li><p>Include one of the formulas listed below in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question stores the retrieved value, which you can then use in form logic or question labels.</p></li>
 </ol>
 <p><strong>Formulas to retrieve data from repeat groups</strong></p>
 <table class="docutils align-default">

@@ -109,7 +109,7 @@
           
   <section id="adding-calculations-in-xlsform">
 <h1>Adding calculations in XLSForm<a class="headerlink" href="#adding-calculations-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/88ee0c9a0a351ddde7e80a31949b48154db7858f/source/calculations_xls.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/calculations_xls.md" class="reference">4 Jan 2026</a></p>
 <p>Calculations can be used inside your form to derive new variables, build advanced form logic, and display results to respondents during data collection.</p>
 <p>Calculations are processed within the form, helping save time during data analysis. The results are stored as new columns in the final dataset and can be used throughout the form to apply <a class="reference external" href="https://support.kobotoolbox.org/skip_logic_xls.html">skip logic</a>, set <a class="reference external" href="https://support.kobotoolbox.org/constraints_xls.html">constraints</a>, or display <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">dynamic content</a> in question labels and notes.</p>
 <p>This article explains how to add calculations in XLSForm, covering both basic arithmetic and more advanced expressions.</p>
@@ -123,20 +123,20 @@ For hands-on practice with calculations in XLSForm, see KoboToolbox Academy’s 
 <p>Calculation expressions are constructed using a combination of <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">question references</a>, <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html#mathematical-and-comparison-operators">mathematical operators</a>, <a class="reference external" href="https://support.kobotoolbox.org/functions_xls.html">functions</a>, and constants.</p>
 <p>To add a calculation in your XLSForm:</p>
 <ol class="arabic simple">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, enter <strong>calculate</strong> to add a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question type.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the survey worksheet, enter <code class="docutils literal notranslate"><span class="pre">calculate</span></code> to add a calculate question type.</p></li>
 <li><p>Enter a <code class="docutils literal notranslate"><span class="pre">name</span></code> for the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question.</p>
 <ul class="simple">
-<li><p>Because the calculation is not displayed in the form, the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question does not require a <strong>label</strong>.</p></li>
+<li><p>Because the calculation is not displayed in the form, the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question <strong>does not require a label</strong>.</p></li>
 </ul>
 </li>
-<li><p>Add a <strong>calculation</strong> column in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column in the survey worksheet.</p></li>
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column, enter the <strong>calculation expression.</strong></p>
 <ul class="simple">
 <li><p>Calculations can range from <a class="reference external" href="https://support.kobotoolbox.org/calculations_xls.html#arithmetic-calculations">basic arithmetic calculations</a> to <a class="reference external" href="https://support.kobotoolbox.org/calculations_xls.html#advanced-calculations">advanced calculations</a> using functions and regular expressions.</p></li>
 </ul>
 </li>
 </ol>
-<p>To refer to the calculation output in the rest of your form (e.g., inside a note question, question label, or form logic), use the <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">question referencing</a> format <strong>${question_name}</strong>, where <code class="docutils literal notranslate"><span class="pre">question_name</span></code> is the <strong>name</strong> of the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question.</p>
+<p>To refer to the calculation output in the rest of your form (e.g., inside a note question, question label, or form logic), use the <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">question referencing</a> format <code class="docutils literal notranslate"><span class="pre">${question_name}</span></code>, where <code class="docutils literal notranslate"><span class="pre">question_name</span></code> is the name of the <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question.</p>
 <p><strong>survey worksheet</strong></p>
 <table class="docutils align-default">
 <thead>
@@ -323,7 +323,7 @@ For hands-on practice with calculations in XLSForm, see KoboToolbox Academy’s 
   <summary><strong>Calculations not working properly</strong></summary>
   If your calculations are not working, check the following:
   <ul>
-  <li><strong>Syntax:</strong> All opened parentheses are closed, straight quotes <code>'</code> are used), and commas are included where needed.</li>
+  <li><strong>Syntax:</strong> All opened parentheses are closed, straight quotes <code>'</code> are used, and commas are included where needed.</li>
   <li><strong>References:</strong> Question references correctly match the question name, no spaces or typos, no circular references (i.e., the calculation does not depend on itself).</li>
   <li><strong>Data types:</strong> Numeric and string calculations are not combined within the same question, data types are used correctly.</li>
 </ul>

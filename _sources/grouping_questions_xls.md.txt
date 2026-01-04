@@ -1,5 +1,5 @@
 # Grouping questions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/238639f370a90eb7ed468043b9e78edec0fdc691/source/grouping_questions_xls.md" class="reference">10 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/grouping_questions_xls.md" class="reference">4 Jan 2026</a>
 
 Grouping questions in XLSForm helps organize related content into clear, structured sections, improving form layout and navigation. For example, you can group all demographic questions into one section.
 
@@ -19,12 +19,12 @@ This article covers the following topics:
 
 To create a question group in XLSForm:
 
-1.  In the `type` column of the `survey` worksheet, enter **begin_group** to indicate the start of the group.
-2.  In the `name` column of the **begin_group** row, enter the unique identifier for the group.
+1.  In the `type` column of the survey worksheet, enter `begin_group` to indicate the start of the group.
+2.  In the `name` column of the `begin_group` row, enter the unique identifier for the group.
 3.  In the `label` column, enter the title of the group as you want it displayed in the form. The label is optional and can be left blank.
 4.  Enter each question of the group in its own row, as you normally would.
-5.  In a new row after the grouped questions, enter **end_group** in the `type` column to indicate the end of the group.
-    - In the **end_group** row, leave the `name` and `label` columns blank.
+5.  In a new row after the grouped questions, enter `end_group` in the `type` column to indicate the end of the group.
+    - In the `end_group` row, leave the `name` and `label` columns blank.
   
 <p class="note">
 <strong>Note:</strong> Group names in the <code>name</code> column must be unique and must not duplicate any question name.
@@ -83,8 +83,8 @@ A common reason to group questions is to display them together on a single page.
 By default, KoboCollect displays each question on a separate screen. Users must move manually from one question to the next.
 
 To **display all grouped questions on the same screen** in KoboCollect:
-1.  In the `survey` worksheet, add an **appearance** column.
-2.  In the `appearance` column, enter **field-list** in the `begin_group` row.
+1.  In the `survey` worksheet, add an `appearance` column.
+2.  In the `appearance` column, enter `field-list` in the `begin_group` row.
     * Each question group will now appear on its own page.
 
 **survey worksheet**
@@ -103,9 +103,9 @@ To **display all grouped questions on the same screen** in KoboCollect:
 By default, Enketo web forms display all questions on a single page.
 
 To display each group of questions on its own page in Enketo web forms:
-1.  In the `settings` worksheet, add a **style** column.
-2.  In the second cell of the `style` column, enter **pages**.
-    * This applies the **pages** [theme](https://support.kobotoolbox.org/form_style_xls.html) to your Enketo web form, dividing it into separate pages similar to KoboCollect. 
+1.  In the `settings` worksheet, add a `style` column.
+2.  In the second cell of the `style` column, enter `pages`.
+    * This applies the [pages theme](https://support.kobotoolbox.org/form_style_xls.html) to your Enketo web form, dividing it into separate pages similar to KoboCollect. 
 
 **settings worksheet**
 
@@ -114,8 +114,8 @@ To display each group of questions on its own page in Enketo web forms:
 | pages |
 | settings |
 
-3.  In the `survey` worksheet, add an **appearance** column.
-4.  In the `appearance` column, enter **field-list** in the `begin_group` row.
+3.  In the `survey` worksheet, add an `appearance` column.
+4.  In the `appearance` column, enter `field-list` in the `begin_group` row.
     * Each question group will now appear on its own page.
 
 **survey worksheet**
@@ -135,7 +135,7 @@ To display each group of questions on its own page in Enketo web forms:
 Applying skip logic to question groups ensures that only relevant sections appear based on earlier responses. For example, in a household survey, you can use skip logic to show a group of questions for the head of household only when a previous question identifies the respondent as such. This makes the form easier to navigate and more responsive to user input.
 
 To [apply skip logic](https://support.kobotoolbox.org/skip_logic_xls.html) to question groups in XLSForm, use the same approach as you would for individual questions:
-1.  Add a **relevant** column to your `survey` worksheet.
+1.  Add a `relevant` column to your `survey` worksheet.
 2.  In the `relevant` column for the `begin_group` row, enter the condition that determines when the group should be shown.
 3.  If the condition is met, the entire group will be displayed. If not, the group will be hidden.
 

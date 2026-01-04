@@ -109,7 +109,7 @@
           
   <section id="library-locking-with-xlsform">
 <h1>Library locking with XLSForm<a class="headerlink" href="#library-locking-with-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d30a03b31adeb304535859e4dd2cb0801138d429/source/library_locking.md" class="reference">30 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/library_locking.md" class="reference">4 Jan 2026</a></p>
 <p>The <a class="reference external" href="https://support.kobotoolbox.org/question_library.html">KoboToolbox library</a> allows you to store and manage templates, questions, and blocks for reuse across multiple projects. <strong>Form templates in the library</strong> can be shared with team members to ensure consistent form design and reduce duplication of effort.</p>
 <p><strong>Library locking</strong> expands on this by allowing you to control how templates can be edited once they are used to create new projects. With locking, you can specify which questions, groups, or form-level settings can be changed. This is especially useful for large teams working from a shared template, where certain elements need to remain fixed while others can be adapted to local needs.</p>
 <p>This article explains how library locking works, the types of restrictions you can apply, how to configure them in XLSForm, and how to upload locked XLSForms to KoboToolbox.</p>
@@ -259,10 +259,10 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
 </section>
 <section id="locking-an-entire-form">
 <h3>Locking an entire form<a class="headerlink" href="#locking-an-entire-form" title="Link to this heading">¶</a></h3>
-<p>The <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> setting can be added to the <strong>settings</strong> worksheet of your XLSForm.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> setting can be added to the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet of your XLSForm.</p>
 <ul class="simple">
-<li><p>If set to <strong>TRUE</strong>, the entire form is locked and all granular restrictions become redundant.</p></li>
-<li><p>If set to <strong>FALSE</strong> (or omitted), only the restrictions defined in your locking profiles are applied.</p></li>
+<li><p>If set to <code class="docutils literal notranslate"><span class="pre">TRUE</span></code>, the entire form is locked and all granular restrictions become redundant.</p></li>
+<li><p>If set to <code class="docutils literal notranslate"><span class="pre">FALSE</span></code> (or omitted), only the restrictions defined in your locking profiles are applied.</p></li>
 </ul>
 <p><strong>settings worksheet</strong></p>
 <table class="docutils align-default">
@@ -283,11 +283,11 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
 <h2>Configuring library locking in XLSForm<a class="headerlink" href="#configuring-library-locking-in-xlsform" title="Link to this heading">¶</a></h2>
 <section id="defining-locking-profiles">
 <h3>Defining locking profiles<a class="headerlink" href="#defining-locking-profiles" title="Link to this heading">¶</a></h3>
-<p>Locking profiles are <strong>sets of restrictions</strong> that can be applied to questions, groups, or the whole form. They are defined in the <strong>kobo–locking-profiles</strong> worksheet of the XLSForm, and then applied in the <strong>survey</strong> and <strong>settings</strong> worksheets. You can create as many profiles as you need.</p>
+<p>Locking profiles are <strong>sets of restrictions</strong> that can be applied to questions, groups, or the whole form. They are defined in the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> worksheet of the XLSForm, and then applied in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> and <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheets. You can create as many profiles as you need.</p>
 <p>To define locking profiles in your XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Create a new worksheet named <strong>kobo–locking-profiles.</strong></p></li>
-<li><p>Add a <strong>restriction</strong> column, which can include any restrictions from the tables above.</p></li>
+<li><p>Create a new worksheet named <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles.</span></code></p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">restriction</span></code> column, which can include any restrictions from the tables above.</p></li>
 <li><p>Create one column per <strong>profile</strong>  (e.g., <code class="docutils literal notranslate"><span class="pre">profile_1</span></code>, <code class="docutils literal notranslate"><span class="pre">profile_2</span></code>).</p></li>
 <li><p>In the cell corresponding to a <strong>restriction</strong> and a <strong>profile</strong>, include the keyword <code class="docutils literal notranslate"><span class="pre">locked</span></code> to assign a restriction to a profile.</p></li>
 </ol>
@@ -341,9 +341,9 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
 </section>
 <section id="applying-profiles-in-the-survey-worksheet">
 <h3>Applying profiles in the survey worksheet<a class="headerlink" href="#applying-profiles-in-the-survey-worksheet" title="Link to this heading">¶</a></h3>
-<p>Once you have defined locking profiles in the <strong>kobo–locking-profiles</strong> worksheet, you can apply these profiles to specific questions and groups. To apply profiles in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet:</p>
+<p>Once you have defined locking profiles in the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> worksheet, you can apply these profiles to specific questions and groups. To apply profiles in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet:</p>
 <ol class="arabic simple">
-<li><p>Create a column named <strong>kobo–locking-profile</strong> in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet</p></li>
+<li><p>Create a column named <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet</p></li>
 <li><p>For each question or group you want to restrict, define the locking profile in the <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> column.</p></li>
 </ol>
 <p><strong>survey worksheet</strong></p>
@@ -379,7 +379,7 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
 <p>In addition to applying profiles to questions and groups in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, you can also apply a profile with form-level restrictions in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet.</p>
 <p>To apply a profile to the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet:</p>
 <ol class="arabic simple">
-<li><p>Create a <strong>kobo–locking-profile</strong> column in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet.</p></li>
+<li><p>Create a <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> column in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet.</p></li>
 <li><p>Specify the profile that you would like to apply.</p></li>
 </ol>
 <p><strong>settings worksheet</strong></p>
@@ -439,9 +439,9 @@ To learn more about downloading and editing your form as XLSForm, see <a href="h
   If library locking does not work as expected, try the following:
     <ul>
   <li>Make sure the form was uploaded as a <strong>Template</strong> in the library.</li>
-  <li>Check the <strong>settings</strong> worksheet in your XLSForm. If <code>kobo--lock_all</code> is set to <code>true</code>, the whole form will be locked.</li>
+  <li>Check the <code>settings</code> worksheet in your XLSForm. If <code>kobo--lock_all</code> is set to <code>TRUE</code>, the whole form will be locked.</li>
   <li>Verify that all restriction names in the <code>kobo--locking-profiles</code> worksheet are valid. Only predefined restriction names are supported.</li>
-  <li>Ensure that the column <code>kobo--locking-profile</code> exists in the <strong>survey</strong> or <strong>settings</strong> worksheet and that the profile names match those defined in the <code>kobo--locking-profiles</code> worksheet.</li>
+  <li>Ensure that the column <code>kobo--locking-profile</code> exists in the <code>survey</code> or <code>settings</code> worksheet and that the profile names match those defined in the <code>kobo--locking-profiles</code> worksheet.</li>
 </ul>
 </details>
 <br>

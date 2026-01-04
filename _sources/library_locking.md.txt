@@ -1,5 +1,5 @@
 # Library locking with XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d30a03b31adeb304535859e4dd2cb0801138d429/source/library_locking.md" class="reference">30 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/library_locking.md" class="reference">4 Jan 2026</a>
 
 The [KoboToolbox library](https://support.kobotoolbox.org/question_library.html) allows you to store and manage templates, questions, and blocks for reuse across multiple projects. **Form templates in the library** can be shared with team members to ensure consistent form design and reduce duplication of effort.
 
@@ -87,9 +87,9 @@ Form-level restrictions apply to the whole form. You can apply the following res
 
 ### Locking an entire form
 
-The `kobo--lock_all` setting can be added to the **settings** worksheet of your XLSForm.
-- If set to **TRUE**, the entire form is locked and all granular restrictions become redundant.
-- If set to **FALSE** (or omitted), only the restrictions defined in your locking profiles are applied.
+The `kobo--lock_all` setting can be added to the `settings` worksheet of your XLSForm.
+- If set to `TRUE`, the entire form is locked and all granular restrictions become redundant.
+- If set to `FALSE` (or omitted), only the restrictions defined in your locking profiles are applied.
 
 **settings worksheet**
 
@@ -102,11 +102,11 @@ The `kobo--lock_all` setting can be added to the **settings** worksheet of your 
 
 ### Defining locking profiles
 
-Locking profiles are **sets of restrictions** that can be applied to questions, groups, or the whole form. They are defined in the **kobo--locking-profiles** worksheet of the XLSForm, and then applied in the **survey** and **settings** worksheets. You can create as many profiles as you need.
+Locking profiles are **sets of restrictions** that can be applied to questions, groups, or the whole form. They are defined in the `kobo--locking-profiles` worksheet of the XLSForm, and then applied in the `survey` and `settings` worksheets. You can create as many profiles as you need.
 
 To define locking profiles in your XLSForm:
-1. Create a new worksheet named **kobo--locking-profiles.**
-2. Add a **restriction** column, which can include any restrictions from the tables above.
+1. Create a new worksheet named `kobo--locking-profiles.`
+2. Add a `restriction` column, which can include any restrictions from the tables above.
 3. Create one column per **profile**  (e.g., `profile_1`, `profile_2`). 
 4. In the cell corresponding to a **restriction** and a **profile**, include the keyword `locked` to assign a restriction to a profile.
 
@@ -124,9 +124,9 @@ To define locking profiles in your XLSForm:
 
 ### Applying profiles in the survey worksheet
 
-Once you have defined locking profiles in the **kobo--locking-profiles** worksheet, you can apply these profiles to specific questions and groups. To apply profiles in the `survey` worksheet:
+Once you have defined locking profiles in the `kobo--locking-profiles` worksheet, you can apply these profiles to specific questions and groups. To apply profiles in the `survey` worksheet:
 
-1. Create a column named **kobo--locking-profile** in the `survey` worksheet
+1. Create a column named `kobo--locking-profile` in the `survey` worksheet
 2. For each question or group you want to restrict, define the locking profile in the `kobo--locking-profile` column.
 
 **survey worksheet**
@@ -142,7 +142,7 @@ Once you have defined locking profiles in the **kobo--locking-profiles** workshe
 In addition to applying profiles to questions and groups in the `survey` worksheet, you can also apply a profile with form-level restrictions in the `settings` worksheet.
 
 To apply a profile to the `settings` worksheet:
-1. Create a **kobo--locking-profile** column in the `settings` worksheet.
+1. Create a `kobo--locking-profile` column in the `settings` worksheet.
 2. Specify the profile that you would like to apply.
 
 **settings worksheet**
@@ -194,9 +194,9 @@ When you open the project in the Formbuilder:
   If library locking does not work as expected, try the following:
     <ul>
   <li>Make sure the form was uploaded as a <strong>Template</strong> in the library.</li>
-  <li>Check the <strong>settings</strong> worksheet in your XLSForm. If <code>kobo--lock_all</code> is set to <code>true</code>, the whole form will be locked.</li>
+  <li>Check the <code>settings</code> worksheet in your XLSForm. If <code>kobo--lock_all</code> is set to <code>TRUE</code>, the whole form will be locked.</li>
   <li>Verify that all restriction names in the <code>kobo--locking-profiles</code> worksheet are valid. Only predefined restriction names are supported.</li>
-  <li>Ensure that the column <code>kobo--locking-profile</code> exists in the <strong>survey</strong> or <strong>settings</strong> worksheet and that the profile names match those defined in the <code>kobo--locking-profiles</code> worksheet.</li>
+  <li>Ensure that the column <code>kobo--locking-profile</code> exists in the <code>survey</code> or <code>settings</code> worksheet and that the profile names match those defined in the <code>kobo--locking-profiles</code> worksheet.</li>
 </ul>
 </details>
 

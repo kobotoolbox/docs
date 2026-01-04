@@ -109,7 +109,7 @@
           
   <section id="adding-required-logic-in-xlsform">
 <h1>Adding required logic in XLSForm<a class="headerlink" href="#adding-required-logic-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/required_logic_xls.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/required_logic_xls.md" class="reference">4 Jan 2026</a></p>
 <p>Required logic allows you to make a question mandatory if specific conditions are met. For example, you can require a phone number question only if respondents agree to be contacted in the future. This option provides more control than simply marking a question as always required or always optional.</p>
 <p class="note">
   To learn more about required questions and how to customize the message shown to respondents when they leave a required question unanswered, see <a href="https://support.kobotoolbox.org/question_options_xls.html#required-questions">Using question options in XLSForm</a>.
@@ -125,7 +125,7 @@
 <p>Required logic uses <a href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">question referencing</a> to make questions required based on previous answers. The question used to define the required logic is referred to as the <strong>reference question.</strong></p>
 <p>To add required logic in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>required</strong> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">required</span></code> column to the survey worksheet.</p></li>
 <li><p>In the row of the question you wish to set the required logic for, enter the condition that must be met in order <strong>for the question to be mandatory.</strong></p></li>
 </ol>
 <p><strong>survey worksheet</strong></p>
@@ -158,7 +158,7 @@
 <p>If a respondent does not answer a required question, they will not be able to proceed to the next page of the form or submit it.</p>
 <section id="formatting-required-logic-conditions">
 <h3>Formatting required logic conditions<a class="headerlink" href="#formatting-required-logic-conditions" title="Link to this heading">¶</a></h3>
-<p>The format of the required logic condition will differ according to the <strong>type</strong> of the reference question, as detailed in the table below.</p>
+<p>The format of the required logic condition will differ according to the <strong>type of the reference question</strong>, as detailed in the table below.</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Reference question type</p></th>

@@ -1,5 +1,5 @@
 # Getting started with XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8a0380f12591eab6509dc6c51e0451839b3cc4d8/source/getting_started_xlsform.md" class="reference">30 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/getting_started_xlsform.md" class="reference">4 Jan 2026</a>
 
 <iframe src="https://www.youtube.com/embed/xpeBCy9p1Ys?si=tP_3G2vMnRC1OgWS" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -27,11 +27,11 @@ This article explains how to set up an XLSForm using Microsoft Excel or other sp
 To set up the basic structure of an XLSForm:
 
 1. Open a new spreadsheet in your preferred spreadsheet software.
-2. Create three worksheets: **survey**, **choices**, and **settings**.
+2. Create three worksheets: `survey`, `choices`, and `settings`.
    - Worksheet names must be all lowercase letters.
-3. In the **survey** worksheet, create three columns with the headings: `type`, `name`, and `label`.
-4. In the **choices** worksheet, create three columns with the headings: `list_name`, `name`, and `label`.
-5. The **settings** worksheet is optional. It can be used to include additional form specifications and customizations.
+3. In the `survey` worksheet, create three columns with the headings: `type`, `name`, and `label`.
+4. In the `choices` worksheet, create three columns with the headings: `list_name`, `name`, and `label`.
+5. The `settings` worksheet is optional. It can be used to include additional form specifications and customizations.
    - For example: `form_title`, `style`, and `default_language`.
 
 <p class="note">
@@ -46,21 +46,21 @@ The following columns are mandatory in XLSForm:
 
 | Column name | Description |
 | --- | --- |
-| type | Defines the question type (e.g., text, integer, select_one) |
-| name | Defines a short, unique name to refer to each question |
-| label | Defines the question text as it will be displayed in the form |
+| `type` | Defines the question type (e.g., text, integer, select_one) |
+| `name` | Defines a short, unique name to refer to each question |
+| `label` | Defines the question text as it will be displayed in the form |
 
 **choices worksheet**
 
 | Column name | Description |
 | --- | --- |
-| list_name | Defines the unique identifier for a list of option choices |
-| name | Defines a short, unique name to refer to each option choice |
-| label | Defines the choice text as it will be displayed in the form |
+| `list_name` | Defines the unique identifier for a list of option choices |
+| `name` | Defines a short, unique name to refer to each option choice |
+| `label` | Defines the choice text as it will be displayed in the form |
 
 ## Adding questions
 
-In XLSForm, questions are added in the **survey** worksheet. To add questions in XLSForm:
+In XLSForm, questions are added in the `survey` worksheet. To add questions in XLSForm:
 
 1. In the `type` column of the `survey` worksheet, enter the [question type](https://support.kobotoolbox.org/question_types_xls.html) of the question you want to add.
 2. In the `name` column, enter a name used to identify the question.
@@ -90,7 +90,7 @@ To learn more about question types in XLSForm, see <a class="reference" href="ht
 
 ## Adding option choices
 
-For select type questions, option choices are added in the **choices** worksheet. To add option choices in XLSForm:
+For select type questions, option choices are added in the `choices` worksheet. To add option choices in XLSForm:
 
 1. In the `list_name` column of the `choices` worksheet, enter the name of the **list of option choices**.
    - The `list_name` is a unique identifier for a list of option choices. It must match the list name entered in the `type` column of the `survey` worksheet.
@@ -112,16 +112,16 @@ To learn more about managing option choices in XLSForm, see <a class="reference"
 
 ## Adding settings
 
-There are many optional settings that can be added to the **settings** worksheet in XLSForm.
+There are many optional settings that can be added to the `settings` worksheet in XLSForm.
 
 Common form settings include:
 
 | Setting | Description |
 | --- | --- |
-| form_title | Title displayed at the top of the form |
-| default_language | Default form language |
-| style | Themes for Enketo web forms |
-| version | Form version ID |
+| `form_title` | Title displayed at the top of the form |
+| `default_language` | Default form language |
+| `style` | Themes for Enketo web forms |
+| `version` | Form version ID |
 
 For example, to add a form title:
 
@@ -149,17 +149,17 @@ To further customize your XLSForm, you can add optional columns to configure for
 
 | Column name | Description |
 | --- | --- |
-| hint | Question hint |
-| guidance_hint | Guidance hint |
-| required | Makes a question mandatory |
-| relevant | Skip logic conditions for the question |
-| constraint | Validation criteria for the question |
-| constraint_message | Error message when validation criteria are not met |
-| appearance | Options for how questions are displayed |
-| choice_filter | Criteria for cascading select |
-| parameters | Settings for specific question types |
-| calculation | Mathematical expression for `calculate` question |
-| default | Default response for a question |
+| `hint` | Question hint |
+| `guidance_hint` | Guidance hint |
+| `required` | Makes a question mandatory |
+| `relevant` | Skip logic conditions for the question |
+| `constraint` | Validation criteria for the question |
+| `constraint_message` | Error message when validation criteria are not met |
+| `appearance` | Options for how questions are displayed |
+| `choice_filter` | Criteria for cascading select |
+| `parameters` | Settings for specific question types |
+| `calculation` | Mathematical expression for `calculate` question |
+| `default` | Default response for a question |
 
 <p class="note">
 To learn more about optional columns in XLSForm, see <a class="reference" href="https://support.kobotoolbox.org/question_options_xls.html">Using question options in XLSForm</a>, <a class="reference" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>, and <a class="reference" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.

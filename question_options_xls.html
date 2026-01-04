@@ -109,8 +109,8 @@
           
   <section id="using-question-options-in-xlsform">
 <h1>Using question options in XLSForm<a class="headerlink" href="#using-question-options-in-xlsform" title="Link to this heading">¬∂</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/73c93af0ec1e54a26a64da395d94fffcc924344f/source/question_options_xls.md" class="reference">25 Nov 2025</a></p>
-<p>When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the <strong>survey</strong> worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/question_options_xls.md" class="reference">4 Jan 2026</a></p>
+<p>When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required.</p>
 <p>This article covers the most common question options and how to add them to your XLSForm, including question hints, required questions, default responses, and question parameters.</p>
 <p class="note">
   <strong>Note:</strong> This article focuses on defining question options in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about question options in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/question_options.html">Using the question options</a>.
@@ -128,12 +128,12 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 <h3>Adding question hints in XLSForm<a class="headerlink" href="#adding-question-hints-in-xlsform" title="Link to this heading">¬∂</a></h3>
 <p>To add a <strong>regular hint</strong> in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>hint</strong> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">hint</span></code> column to the survey worksheet.</p></li>
 <li><p>In the same row as your question, enter the text that should be displayed as a hint for that question.</p></li>
 </ol>
 <p>To add a <strong>guidance hint</strong> in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>guidance_hint</strong> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">guidance_hint</span></code> column to the survey worksheet.</p></li>
 <li><p>In the same row as your question, enter the text that should be included as additional guidance.</p></li>
 </ol>
 <p><strong>survey worksheet</strong></p>
@@ -188,9 +188,9 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 </p>
 <p>To set a question as required in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Add a <code class="docutils literal notranslate"><span class="pre">required</span></code> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">required</span></code> column, enter any of the following: <strong>TRUE</strong>, <strong>true</strong>, or <strong>yes</strong>.</p></li>
-<li><p>For optional questions, leave the <code class="docutils literal notranslate"><span class="pre">required</span></code> column blank or enter any of the following: <strong>FALSE</strong>, <strong>false</strong>, or <strong>no</strong>.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">required</span></code> column to the survey worksheet.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">required</span></code> column, enter any of the following: <code class="docutils literal notranslate"><span class="pre">TRUE</span></code>, <code class="docutils literal notranslate"><span class="pre">true</span></code>, or <code class="docutils literal notranslate"><span class="pre">yes</span></code>.</p></li>
+<li><p>For optional questions, leave the <code class="docutils literal notranslate"><span class="pre">required</span></code> column blank or enter any of the following: <code class="docutils literal notranslate"><span class="pre">FALSE</span></code>, <code class="docutils literal notranslate"><span class="pre">false</span></code>, or <code class="docutils literal notranslate"><span class="pre">no</span></code>.</p></li>
 </ol>
 <p>If a respondent does not answer a required question, they will not be able to proceed to the next page or submit the form. The default required message ‚ÄúThis field is required‚Äù will be displayed.</p>
 <p class="note">
@@ -200,7 +200,7 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 <h3>Changing the default required message<a class="headerlink" href="#changing-the-default-required-message" title="Link to this heading">¬∂</a></h3>
 <p>You can change the default required message in your XLSForm by following the steps below:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>required_message</strong> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">required_message</span></code> column to the survey worksheet.</p></li>
 <li><p>Enter the text you wish to display when users leave a required question blank.</p></li>
 </ol>
 <p><strong>survey worksheet</strong></p>
@@ -242,13 +242,13 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 <section id="default-responses">
 <h2>Default responses<a class="headerlink" href="#default-responses" title="Link to this heading">¬∂</a></h2>
 <p>A <strong>default response</strong> populates a question with a predefined answer based on a common or expected response. The default response can be fixed or <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html#setting-dynamic-default-responses">dynamically determined</a> based on the response to a previous question.</p>
-<p>The default response will be recorded as the final answer when the form is submitted <strong>unless modified by the respondent</strong> during data collection.  To prevent respondents from editing a default response, add a <strong>read-only</strong> column and set it to <strong>TRUE</strong>.</p>
+<p>The default response will be recorded as the final answer when the form is submitted <strong>unless modified by the respondent</strong> during data collection.  To prevent respondents from editing a default response, add a <code class="docutils literal notranslate"><span class="pre">read_only</span></code> column and set it to <code class="docutils literal notranslate"><span class="pre">TRUE</span></code>.</p>
 <p class="note">
 <strong>Note:</strong> Although default responses can make data collection more efficient by prepopulating the form with expected or common responses, they also risk introducing bias or errors in the data, and should be used with caution. 
 </p>
 <p>To set a fixed default response in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>default</strong> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">default</span></code> column to the survey worksheet.</p></li>
 <li><p>Enter the default response, following the <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html#default-response-format">appropriate format</a> for the question type.</p></li>
 </ol>
 <p><strong>survey worksheet</strong></p>
@@ -308,19 +308,19 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">integer</span></code></p></td>
 <td class="text-left"><p>Number</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">text</span></code></p></td>
 <td class="text-left"><p>Text (without quotation marks)</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>select_one</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">select_one</span></code></p></td>
 <td class="text-left"><p>Choice <strong>name</strong> (as defined in the choices worksheet)</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>select_multiple</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">select_multiple</span></code></p></td>
 <td class="text-left"><p>Choice <strong>name(s)</strong>, separated by a <strong>space</strong> if there are multiple</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>date</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">date</span></code></p></td>
 <td class="text-left"><p>Date in the YYYY-MM-DD format. If needed, prefix the date with a single quote (‚Äô) in Excel to avoid potential formatting issues.</p></td>
 </tr>
 </tbody>
@@ -328,7 +328,7 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 </section>
 <section id="setting-dynamic-default-responses">
 <h3>Setting dynamic default responses<a class="headerlink" href="#setting-dynamic-default-responses" title="Link to this heading">¬∂</a></h3>
-<p>Default responses entered in the <code class="docutils literal notranslate"><span class="pre">default</span></code> field must be fixed values. To set a <strong>dynamic default response</strong> based on a previous answer, use the <strong>calculation</strong> and <strong>trigger</strong> columns instead of the <code class="docutils literal notranslate"><span class="pre">default</span></code> column:</p>
+<p>Default responses entered in the <code class="docutils literal notranslate"><span class="pre">default</span></code> field must be fixed values. To set a <strong>dynamic default response</strong> based on a previous answer, use the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> and <code class="docutils literal notranslate"><span class="pre">trigger</span></code> columns instead of the <code class="docutils literal notranslate"><span class="pre">default</span></code> column:</p>
 <ol class="arabic simple">
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column, enter the <strong>reference to the question</strong> that will dynamically populate the default response.</p></li>
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">trigger</span></code> column, enter the question that will activate the calculation.</p>
@@ -381,7 +381,7 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 <p>Question parameters in XLSForm allow you to fine-tune how your questions behave beyond basic settings.</p>
 <p>To add question parameters in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>parameters</strong> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">parameters</span></code> column to the survey worksheet.</p></li>
 <li><p>Enter the appropriate <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html#common-question-parameters">parameter</a> for your question type.</p></li>
 <li><p>Some parameters can be combined and applied to the same question. Combine parameters by entering them in the same cell and separating them with a space.</p></li>
 </ol>
@@ -414,7 +414,7 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 </table>
 <section id="common-question-parameters">
 <h3>Common question parameters<a class="headerlink" href="#common-question-parameters" title="Link to this heading">¬∂</a></h3>
-<p>Different question types in <code class="docutils literal notranslate"><span class="pre">XLSForm</span></code> have different parameters. The most common parameters are:</p>
+<p>Different question types in XLSForm have different parameters. The most common parameters are:</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Parameter</p></th>
@@ -423,32 +423,32 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>randomize=true</p></td>
-<td class="text-left"><p>rank, select_one, select_multiple</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">randomize=true</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">rank</span></code>, <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code></p></td>
 <td class="text-left"><p>Randomizes the order of option choices</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>start=1 end=5 step=1</p></td>
-<td class="text-left"><p>range</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">start=1</span> <span class="pre">end=5</span> <span class="pre">step=1</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">range</span></code></p></td>
 <td class="text-left"><p>Defines the minimum value, maximum value, and interval between numbers</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>capture-accuracy=20</p></td>
-<td class="text-left"><p>geopoint</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">capture-accuracy=20</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geopoint</span></code></p></td>
 <td class="text-left"><p>Specifies the minimum acceptable GPS accuracy (in meters) for automatically capturing a location</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>warning-accuracy=50</p></td>
-<td class="text-left"><p>geopoint</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">warning-accuracy=50</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geopoint</span></code></p></td>
 <td class="text-left"><p>Triggers a warning message if the GPS accuracy is not within the specified accuracy threshold</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>max-pixels=480</p></td>
-<td class="text-left"><p>image</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">max-pixels=480</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">image</span></code></p></td>
 <td class="text-left"><p>Limits the maximum pixels for a photo, to reduce the image file size and improve upload speed</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>quality=low</p></td>
-<td class="text-left"><p>audio</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=low</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audio</span></code></p></td>
 <td class="text-left"><p>Captures a lower quality audio recording</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>quality=voice-only</p></td>
-<td class="text-left"><p>audio</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=voice-only</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audio</span></code></p></td>
 <td class="text-left"><p>Captures the lowest quality audio recording</p></td>
 </tr>
 </tbody>
@@ -465,13 +465,13 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academy‚
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>read_only</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">read_only</span></code></p></td>
 <td class="text-left"><p>If <code class="docutils literal notranslate"><span class="pre">yes</span></code> is entered in the <code class="docutils literal notranslate"><span class="pre">read_only</span></code> field, the question cannot be edited by the respondent. <code class="docutils literal notranslate"><span class="pre">read_only</span></code> fields can be combined with <code class="docutils literal notranslate"><span class="pre">default</span></code> or <code class="docutils literal notranslate"><span class="pre">calculation</span></code> fields to display information to the respondent.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>trigger</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">trigger</span></code></p></td>
 <td class="text-left"><p>The trigger column can be used to run a calculation only when the response to another visible question in the form is changed. For more information, see <a href="https://xlsform.org/en/#trigger">XLSForm documentation</a>.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>body::accept</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">body::accept</span></code></p></td>
 <td class="text-left"><p>To limit the accepted file types for <code class="docutils literal notranslate"><span class="pre">file</span></code> questions, specify file extensions in the <code class="docutils literal notranslate"><span class="pre">body::accept</span></code> column, separated by a comma (e.g., .pdf, .doc).</p></td>
 </tr>
 </tbody>

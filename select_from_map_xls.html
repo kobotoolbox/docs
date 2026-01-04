@@ -109,8 +109,8 @@
           
   <section id="selecting-options-from-a-map">
 <h1>Selecting options from a map<a class="headerlink" href="#selecting-options-from-a-map" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/select_from_map_xls.md" class="reference">25 Nov 2025</a></p>
-<p>With <strong>select_one</strong> and <strong>select_one_from_file</strong> question types, you can configure your XLSForm to let users select a choice directly from a map instead of a list. When the map opens, it displays all available points, lines, or polygons based on the choices provided. Users can then tap a feature on the map to record their selection. This functionality is available <strong>only in KoboCollect.</strong></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/select_from_map_xls.md" class="reference">4 Jan 2026</a></p>
+<p>With <code class="docutils literal notranslate"><span class="pre">select_one</span></code> and <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span></code> question types, you can configure your XLSForm to let users select a choice directly from a map instead of a list. When the map opens, it displays all available points, lines, or polygons based on the choices provided. Users can then tap a feature on the map to record their selection. This functionality is available <strong>only in KoboCollect.</strong></p>
 <p>This article explains how to configure your XLSForm to allow selecting options from a map, how to customize styling options such as colors, symbols, and line widths, and how choices are displayed and selected on the map.</p>
 <p class="note">
 <strong>Note:</strong> The KoboToolbox Formbuilder does not support map-based selection for the <code>select_one</code> question type. To use this feature, configure it in an XLSForm and upload the form to KoboToolbox. 
@@ -123,10 +123,10 @@
 <ol class="arabic simple">
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, add a <code class="docutils literal notranslate"><span class="pre">select_one</span></code> or <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span></code> question.</p></li>
 <li><p>Add an <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column of the select question, enter <strong>map</strong> or <strong>quick map.</strong></p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column of the select question, enter <code class="docutils literal notranslate"><span class="pre">map</span></code> or <code class="docutils literal notranslate"><span class="pre">quick</span> <span class="pre">map</span></code>.</p>
 <ul class="simple">
-<li><p>The <strong>map</strong> appearance allows respondents to click on different locations and view information about each before confirming their selection.</p></li>
-<li><p>The <strong>quick map</strong> appearance automatically records the first selected location without displaying additional information.</p></li>
+<li><p>The <strong>map appearance</strong> allows respondents to click on different locations and view information about each before confirming their selection.</p></li>
+<li><p>The <strong>quick map appearance</strong> automatically records the first selected location without displaying additional information.</p></li>
 </ul>
 </li>
 </ol>
@@ -154,8 +154,8 @@
 </table>
 <ol class="arabic simple" start="4">
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet or in your <a class="reference external" href="https://support.kobotoolbox.org/select_from_file_xls.html">external list of choices</a>, enter the choices as you normally would.</p></li>
-<li><p>Next to your choice list, add a <strong>geometry</strong> column.</p></li>
-<li><p>For each choice, enter the corresponding GPS coordinates in the <strong>geometry</strong> column.</p>
+<li><p>Next to your choice list, add a <code class="docutils literal notranslate"><span class="pre">geometry</span></code> column.</p></li>
+<li><p>For each choice, enter the corresponding GPS coordinates in the <code class="docutils literal notranslate"><span class="pre">geometry</span></code> column.</p>
 <ul class="simple">
 <li><p>This field can include unique or multiple GPS coordinates, to define a point, a line, or a polygon.</p></li>
 </ul>
@@ -316,12 +316,12 @@
 <p class="note">
 <strong>Note:</strong> Selecting options from a map is <strong>only available in KoboCollect.</strong> In Enketo web forms, the option choices will appear as a normal list of options.
 </p>
-<p>In KoboCollect, adding a <strong>select type question</strong> with a <strong>map</strong> or <strong>quick map</strong> appearance allows users to choose an option directly from a map rather than from a list. When the map opens, it centers on the device’s current location. Buttons on the right let users recenter on their location or show all available map points.</p>
+<p>In KoboCollect, adding a <strong>select type question</strong> with a <code class="docutils literal notranslate"><span class="pre">map</span></code> or <code class="docutils literal notranslate"><span class="pre">quick</span> <span class="pre">map</span></code> appearance allows users to choose an option directly from a map rather than from a list. When the map opens, it centers on the device’s current location. Buttons on the right let users recenter on their location or show all available map points.</p>
 <p>Point choices are shown as map markers. Tapping a marker increases its size.
-Line and polygon choices are displayed as red outlines, with polygons shaded in red. Users can tap a line or polygon to select it. When a location is selected, its <a class="reference external" href="https://support.kobotoolbox.org/select_from_map_xls.html#adding-choice-properties">properties</a> appear at the bottom of the screen, unless the <strong>quick map</strong> appearance is used.</p>
-<p>Under the choice label, a <strong>Select</strong> button appears to confirm and save the selected location to the form, unless the <strong>quick map</strong> appearance is used.</p>
+Line and polygon choices are displayed as red outlines, with polygons shaded in red. Users can tap a line or polygon to select it. When a location is selected, its <a class="reference external" href="https://support.kobotoolbox.org/select_from_map_xls.html#adding-choice-properties">properties</a> appear at the bottom of the screen, unless the <code class="docutils literal notranslate"><span class="pre">quick</span> <span class="pre">map</span></code> appearance is used.</p>
+<p>Under the choice label, a <strong>Select</strong> button appears to confirm and save the selected location to the form, unless the <code class="docutils literal notranslate"><span class="pre">quick</span> <span class="pre">map</span></code> appearance is used.</p>
 <p class="note">
-<strong>Note:</strong> The <strong>map</strong> and <strong>quick map</strong> appearances can be combined with <a href="https://support.kobotoolbox.org/choice_filters_xls.html">choice filters</a> to display options on the map based on a previous selection.
+<strong>Note:</strong> The <code>map</code> and <code>quick map</code> appearances can be combined with <a href="https://support.kobotoolbox.org/choice_filters_xls.html">choice filters</a> to display options on the map based on a previous selection.
 </p>
 </section>
 </section>

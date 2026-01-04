@@ -109,7 +109,7 @@
           
   <section id="selecting-options-from-an-external-file">
 <h1>Selecting options from an external file<a class="headerlink" href="#selecting-options-from-an-external-file" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/select_from_file_xls.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/select_from_file_xls.md" class="reference">4 Jan 2026</a></p>
 <p><strong>Select from file</strong> questions allow you to use a list of choice options stored in an external file instead of defining them directly in your form. There are two types: <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span></code> for selecting a <strong>single choice</strong>, and <code class="docutils literal notranslate"><span class="pre">select_multiple_from_file</span></code> for selecting <strong>multiple choices</strong>.</p>
 <p>Using a separate file for your choice list makes it easier to manage long lists, reuse them across multiple forms, and update options when needed. Supported file formats include CSV, XML, and GeoJSON.</p>
 <p>This article explains how to format your external file, set up your XLSForm to use <strong>select from file</strong> questions, and upload your external file to KoboToolbox.</p>
@@ -183,11 +183,11 @@
 <h3>Configuring choice name and label columns<a class="headerlink" href="#configuring-choice-name-and-label-columns" title="Link to this heading">¶</a></h3>
 <p>If your external file uses different column names instead of <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">label</span></code>:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>parameters</strong> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">parameters</span></code> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet</p></li>
 <li><p>In the select from file question row, specify the custom names with the <code class="docutils literal notranslate"><span class="pre">value</span></code> and <code class="docutils literal notranslate"><span class="pre">label</span></code> parameters.</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">value</span></code> represents the choice <strong>name</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">label</span></code> represents the choice <strong>label</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">value</span></code> represents the choice <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">label</span></code> represents the choice <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p></li>
 </ul>
 </li>
 </ol>

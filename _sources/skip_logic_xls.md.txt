@@ -1,5 +1,5 @@
 # Adding skip logic in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7838e25f3444067743e78eebab6c8ac28d79cfdc/source/skip_logic_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/skip_logic_xls.md" class="reference">4 Jan 2026</a>
 
 Skip logic, also known as relevance logic, allows you to **determine when a question or group of questions will be displayed** in the form based on a previous question or the result of a calculation. For example, you can use it to ask follow-up questions only to a subset of respondents, or to hide entire sections of a form if they are not relevant.
 
@@ -24,7 +24,7 @@ For hands-on practice with skip logic in XLSForm, see KoboToolbox Academy’s <a
 Skip logic uses [question referencing](https://support.kobotoolbox.org/form_logic_xls.html#question-referencing) to only display questions that are relevant to the respondent based on previous answers. The question used to define the relevance logic is referred to as the **reference question**.
 
 To add skip logic in XLSForm:
-1. Add a **relevant** column to the `survey` worksheet. 
+1. Add a `relevant` column to the survey worksheet. 
 2. In the row of the question you wish to display or hide, enter the condition that must be met **for the question to be displayed.**
 
 **survey worksheet**
@@ -39,7 +39,7 @@ In the example above, `${age}` is the reference question, and the answer to `${a
 
 ### Formatting skip logic conditions
 
-The format of the skip logic condition will differ according to the **type** of the reference question, as detailed in the table below.
+The format of the skip logic condition will differ according to the **type of the reference question**, as detailed in the table below.
 
 | Reference question type | Skip logic condition | Example |
 |:-------------------------|:--------------------|:---------|
@@ -54,13 +54,13 @@ The format of the skip logic condition will differ according to the **type** of 
 
 ## Combining multiple skip logic conditions
 
-Multiple relevance conditions can be combined into a single expression to determine when a question is displayed based on a previous response. Conditions can be combined using **and**, **or**, and **not** logical operators:
+Multiple relevance conditions can be combined into a single expression to determine when a question is displayed based on a previous response. Conditions can be combined using `and`, `or`, and `not` logical operators:
 
-- Use **and** when all conditions must be met for a question to be displayed. 
+- Use `and` when all conditions must be met for a question to be displayed. 
     - For example: <code>${age} > 18 <strong>and</strong> ${student} = ‘no’</code>
-- Use **or** when at least one condition must be met for a question to be displayed.
+- Use `or` when at least one condition must be met for a question to be displayed.
     - For example: <code>${age} < 18 <strong>or</strong> ${student} = ‘yes’</code>
-- Use **not** to indicate that a condition or set of conditions must not be met (e.g., when two conditions cannot be true together for a question to be displayed).
+- Use `not` to indicate that a condition or set of conditions must not be met (e.g., when two conditions cannot be true together for a question to be displayed).
     - For example: <code><strong>not</strong>(${age} > 18 <strong>and</strong> ${student} = ‘yes’)</code>
 
 **survey worksheet**
@@ -95,8 +95,8 @@ Unanswered questions are treated as empty strings, noted as two single apostroph
 Skip logic can be applied to question groups as well as individual questions. Applying skip logic to a group will show or hide all questions within that group based on previous responses. 
 
 To add skip logic to question groups:
-1. Add a **relevant** column to the `survey` worksheet. 
-2. In the **begin_group** row of the question group you wish to display or hide, enter the condition that must be met **for the group to be displayed.**
+1. Add a `relevant` column to the survey worksheet. 
+2. In the `begin_group` row of the question group you wish to display or hide, enter the condition that must be met **for the group to be displayed.**
 
 **survey worksheet**
 

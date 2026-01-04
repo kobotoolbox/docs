@@ -1,5 +1,5 @@
 # Dynamic data attachments
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/41f123b1857222e4b35a4dcb26b86d6e019bd81d/source/dynamic_data_attachment.md" class="reference">30 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/dynamic_data_attachment.md" class="reference">4 Jan 2026</a>
 
 
 Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.
@@ -27,8 +27,8 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 
 
 3. Throughout the form, you can retrieve values from the parent project by creating a new question and including the appropriate expression in the `calculation` column (see table [below](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). You can use the following question types to retrieve data:
-    - Use a **calculate** question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
-    - Use **text**, **integer**, **decimal**, **select_one**, or **select_multiple** question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
+    - Use a `calculate` question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
+    - Use `text`, `integer`, `decimal`, `select_one`, or `select_multiple` question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
   
 **survey worksheet**
       
@@ -41,7 +41,7 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 
 <p class="note">
    <strong>Note:</strong> 
-    To display linked data without allowing users to edit the field, use a <strong>calculate</strong> question followed by a <strong>note</strong> question that displays the calculated value. Alternatively, use <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong>, or <strong>select_multiple</strong> questions with the <code>read_only</code> column set to <code>TRUE</code>.
+    To display linked data without allowing users to edit the field, use a <code>calculate</code> question followed by a <code>note</code> question that displays the calculated value. Alternatively, use <code>text</code>, <code>integer</code>, <code>decimal</code>, <code>select_one</code>, or <code>select_multiple</code> questions with the <code>read_only</code> column set to <code>TRUE</code>.
 </p>
 
 ## Calculation syntax for dynamic data attachments

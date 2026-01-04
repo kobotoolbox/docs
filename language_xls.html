@@ -109,7 +109,7 @@
           
   <section id="adding-translations-in-xlsform">
 <h1>Adding translations in XLSForm<a class="headerlink" href="#adding-translations-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e1bfb2942ae7721c6ebe1a23aa74295ca0ac2bb1/source/language_xls.md" class="reference">30 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/language_xls.md" class="reference">4 Jan 2026</a></p>
 <p>Adding translations to a form allows users to switch to their preferred language during data collection without creating separate forms. Any number of translations can be added. Both <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> support form translations.</p>
 <p>Most elements displayed in the form can be translated, such as <strong>question labels</strong>, <strong>hints</strong>, <strong>choice labels</strong>, <strong>constraint messages</strong>, and <strong>required messages</strong>. Elements used for form structure, like question names, choice names, and list names, cannot be translated and should remain in the language used for form development and data analysis.</p>
 <p>When your form includes multiple translations, KoboCollect and Enketo will display a language selector in the <strong>top right corner of the form</strong>, allowing respondents to choose their preferred language.</p>
@@ -128,8 +128,8 @@ For hands-on practice with adding translations in XLSForm, see KoboToolbox Acade
 <p>To add translations to an XLSForm, first define the default language. This is the language the form will open to by default.</p>
 <p>To define the default language of your form:</p>
 <ol class="arabic simple">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet, add a <strong>default_language</strong> column.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">default_language</span></code> column, enter the default language using the <strong>language (code)</strong> format.</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet, add a <code class="docutils literal notranslate"><span class="pre">default_language</span></code> column.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">default_language</span></code> column, enter the default language using the <code class="docutils literal notranslate"><span class="pre">language</span> <span class="pre">(code)</span></code> format.</p>
 <ul class="simple">
 <li><p>For example: <code class="docutils literal notranslate"><span class="pre">English</span> <span class="pre">(en)</span></code>.</p></li>
 </ul>
@@ -150,12 +150,12 @@ For hands-on practice with adding translations in XLSForm, see KoboToolbox Acade
 </table>
 <p>To set up the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet:</p>
 <ol class="arabic simple">
-<li><p>Rename the <strong>label</strong> column using the format <strong>label::language (code)</strong>.</p>
+<li><p>Rename the <code class="docutils literal notranslate"><span class="pre">label</span></code> column using the format <code class="docutils literal notranslate"><span class="pre">label::language</span> <span class="pre">(code)</span></code>.</p>
 <ul class="simple">
 <li><p>For example: <code class="docutils literal notranslate"><span class="pre">label::English</span> <span class="pre">(en)</span></code>.</p></li>
 </ul>
 </li>
-<li><p>If your form includes <code class="docutils literal notranslate"><span class="pre">hint</span></code>, <code class="docutils literal notranslate"><span class="pre">required_message</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code>, or <code class="docutils literal notranslate"><span class="pre">media</span></code> columns in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, rename the existing columns using the format <strong>column_name::language (code)</strong>.</p>
+<li><p>If your form includes <code class="docutils literal notranslate"><span class="pre">hint</span></code>, <code class="docutils literal notranslate"><span class="pre">required_message</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code>, or <code class="docutils literal notranslate"><span class="pre">media</span></code> columns in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, rename the existing columns using the format <code class="docutils literal notranslate"><span class="pre">column_name::language</span> <span class="pre">(code)</span></code>.</p>
 <ul class="simple">
 <li><p>For example: <code class="docutils literal notranslate"><span class="pre">hint::English</span> <span class="pre">(en)</span></code>.</p></li>
 </ul>
@@ -188,7 +188,7 @@ For hands-on practice with adding translations in XLSForm, see KoboToolbox Acade
 </tr>
 </tbody>
 </table>
-<p>Finally, to set up the <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet, rename the <strong>label</strong> column using the format <strong>label::language (code)</strong>.</p>
+<p>Finally, to set up the <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet, rename the <code class="docutils literal notranslate"><span class="pre">label</span></code> column using the format <code class="docutils literal notranslate"><span class="pre">label::language</span> <span class="pre">(code)</span></code>.</p>
 <p><strong>choices worksheet</strong></p>
 <table class="docutils align-default">
 <thead>
@@ -221,12 +221,12 @@ For hands-on practice with adding translations in XLSForm, see KoboToolbox Acade
 </p>
 <p>To add translations to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet:</p>
 <ol class="arabic simple">
-<li><p>Add a new <strong>label</strong> column for each translation language using the format <strong>label::language (code)</strong>.</p>
+<li><p>Add a new <code class="docutils literal notranslate"><span class="pre">label</span></code> column for each translation language using the format <code class="docutils literal notranslate"><span class="pre">label::language</span> <span class="pre">(code)</span></code>.</p>
 <ul class="simple">
 <li><p>For example: <code class="docutils literal notranslate"><span class="pre">label::Spanish</span> <span class="pre">(es)</span></code>.</p></li>
 </ul>
 </li>
-<li><p>If your form includes <code class="docutils literal notranslate"><span class="pre">hint</span></code>, <code class="docutils literal notranslate"><span class="pre">required_message</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code>, or <code class="docutils literal notranslate"><span class="pre">media</span></code> columns in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, set up the corresponding translation columns using the <strong>column_name::language (code)</strong> format.</p>
+<li><p>If your form includes <code class="docutils literal notranslate"><span class="pre">hint</span></code>, <code class="docutils literal notranslate"><span class="pre">required_message</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code>, or <code class="docutils literal notranslate"><span class="pre">media</span></code> columns in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, set up the corresponding translation columns using the <code class="docutils literal notranslate"><span class="pre">column_name::language</span> <span class="pre">(code)</span></code> format.</p>
 <ul class="simple">
 <li><p>For example: <code class="docutils literal notranslate"><span class="pre">hint::French</span> <span class="pre">(fr)</span></code> or <code class="docutils literal notranslate"><span class="pre">required_message::Chichewa</span> <span class="pre">(ny)</span></code>.</p></li>
 </ul>
@@ -273,13 +273,13 @@ For hands-on practice with adding translations in XLSForm, see KoboToolbox Acade
 </table>
 <p>To add translations to the <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet:</p>
 <ol class="arabic simple">
-<li><p>Add a new <strong>label</strong> column for each translation language using the format <strong>label::language (code)</strong>.</p>
+<li><p>Add a new <code class="docutils literal notranslate"><span class="pre">label</span></code> column for each translation language using the format <code class="docutils literal notranslate"><span class="pre">label::language</span> <span class="pre">(code)</span></code>.</p>
 <ul class="simple">
 <li><p>For example: <code class="docutils literal notranslate"><span class="pre">label::Spanish</span> <span class="pre">(es)</span></code>.</p></li>
 </ul>
 </li>
 <li><p>Enter the translation for each choice label in the relevant translation column.</p></li>
-<li><p>If your <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet includes media columns, set up the corresponding translation columns using the <strong>column_name::language (code)</strong> format.</p></li>
+<li><p>If your <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet includes media columns, set up the corresponding translation columns using the <code class="docutils literal notranslate"><span class="pre">column_name::language</span> <span class="pre">(code)</span></code> format.</p></li>
 </ol>
 <p class="note">
   <strong>Note:</strong> To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to translations</a>.

@@ -109,7 +109,7 @@
           
   <section id="adding-constraints-in-xlsform">
 <h1>Adding constraints in XLSForm<a class="headerlink" href="#adding-constraints-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/constraints_xls.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/constraints_xls.md" class="reference">4 Jan 2026</a></p>
 <p>Constraints, also known as validation criteria, are a type of form logic used to <strong>restrict the acceptable responses to a question based on a predefined condition</strong>. If the constraint condition is not met, a customizable error message is displayed, prompting the form user to enter a valid response.</p>
 <p class="note">
   To learn more about form logic in XLSForm, see <a href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
@@ -131,7 +131,7 @@ For hands-on practice with adding constraints in XLSForm, see KoboToolbox Academ
 <p>Constraints are built using <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">question references</a>, <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html#mathematical-and-comparison-operators">comparison operators</a>, and constants. Constraint conditions must be met to validate or submit a form. Otherwise, an <strong>error message</strong> appears, and users are prevented from moving to the next page or submitting the form.</p>
 <p>To add constraints in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>constraint</strong> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">constraint</span></code> column to the survey worksheet.</p></li>
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">constraint</span></code> column, define the condition that must be met <strong>for the response to be valid.</strong></p>
 <ul class="simple">
 <li><p>Use a period <code class="docutils literal notranslate"><span class="pre">.</span></code> to reference the question in the row where you are adding a constraint.</p></li>
@@ -174,7 +174,7 @@ For hands-on practice with adding constraints in XLSForm, see KoboToolbox Academ
 </table>
 <section id="formatting-reference-values">
 <h3>Formatting reference values<a class="headerlink" href="#formatting-reference-values" title="Link to this heading">¶</a></h3>
-<p>The reference value in a constraint condition must match the <strong>type</strong> of the question for which you are adding a constraint. The reference value formats for main question types are listed below:</p>
+<p>The reference value in a constraint condition must match the <code class="docutils literal notranslate"><span class="pre">type</span></code> of the question for which you are adding a constraint. The reference value formats for main question types are listed below:</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Question type</p></th>
@@ -212,19 +212,19 @@ For hands-on practice with adding constraints in XLSForm, see KoboToolbox Academ
 </section>
 <section id="combining-multiple-constraint-conditions">
 <h2>Combining multiple constraint conditions<a class="headerlink" href="#combining-multiple-constraint-conditions" title="Link to this heading">¶</a></h2>
-<p>Multiple constraint conditions can be combined into a single expression to determine whether a response is valid. Conditions can be combined using <strong>and</strong>, <strong>or</strong>, and <strong>not</strong> logical operators:</p>
+<p>Multiple constraint conditions can be combined into a single expression to determine whether a response is valid. Conditions can be combined using <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code>, and <code class="docutils literal notranslate"><span class="pre">not</span></code> logical operators:</p>
 <ul class="simple">
-<li><p>Use <strong>and</strong> when all conditions must be met for a response to be valid.</p>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">and</span></code> when all conditions must be met for a response to be valid.</p>
 <ul>
 <li><p>For example: <code>. &gt; 18 <strong>and</strong> . &lt; 65</code></p></li>
 </ul>
 </li>
-<li><p>Use <strong>or</strong> when at least one condition must be met for a response to be valid.</p>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">or</span></code> when at least one condition must be met for a response to be valid.</p>
 <ul>
 <li><p>For example: <code>. &lt; 18 <strong>or</strong> ${student} = ‘yes’</code></p></li>
 </ul>
 </li>
-<li><p>Use <strong>not</strong> to indicate that a condition or set of conditions must not be met (e.g., when two conditions cannot be true together for a response to be valid).</p>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">not</span></code> to indicate that a condition or set of conditions must not be met (e.g., when two conditions cannot be true together for a response to be valid).</p>
 <ul>
 <li><p>For example: <code><strong>not</strong>(. &lt; 18 <strong>and</strong> ${household_head} = ‘yes’)</code></p></li>
 </ul>
@@ -267,7 +267,7 @@ For hands-on practice with adding constraints in XLSForm, see KoboToolbox Academ
 <p>By default, when a response value in the form does not meet the constraint condition, a “Value not allowed” error message appears. It is recommended to customize this message to inform users why the value is invalid, allowing them to correct their input.</p>
 <p>To customize the constraint error message:</p>
 <ol class="arabic simple">
-<li><p>Add a <strong>constraint_message</strong> column to the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code> column to the survey worksheet.</p></li>
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code> column, enter the text you wish to display as the error message when the constraint conditions are not met.</p></li>
 </ol>
 <p><strong>survey worksheet</strong></p>
