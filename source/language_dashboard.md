@@ -79,7 +79,7 @@ To fix this, two options are available:
 <li>Download your form as an <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">XLSForm</a>, review all elements, find the unassigned element, and <a href="https://support.kobotoolbox.org/language_xls.html">correct it</a>.</li>
 <li>Or, go to <i class="k-icon-language"></i> <strong>Manage translations</strong> and delete the unnamed language. This removes the problematic element from your form entirely (it cannot be recovered).</li> 
 </ul>
-<br>
+
 To help prevent this issue, always redeploy your form after adding or updating languages.
 </details>
 
