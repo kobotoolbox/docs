@@ -1,5 +1,5 @@
 # Adding choice filters in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/485fe4fed42cbb765b4838cb7f8c9665a561d091/source/choice_filters_xls.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/choice_filters_xls.md" class="reference">4 Jan 2026</a>
 
 Choice filters create dynamic forms where options in one question depend on the answer to a previous question. This streamlines data collection by presenting only relevant choices, improving survey efficiency and accuracy. 
 

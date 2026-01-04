@@ -1,5 +1,5 @@
 # Library locking with XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d30a03b31adeb304535859e4dd2cb0801138d429/source/library_locking.md" class="reference">30 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/library_locking.md" class="reference">4 Jan 2026</a>
 
 The [KoboToolbox library](https://support.kobotoolbox.org/question_library.html) allows you to store and manage templates, questions, and blocks for reuse across multiple projects. **Form templates in the library** can be shared with team members to ensure consistent form design and reduce duplication of effort.
 
