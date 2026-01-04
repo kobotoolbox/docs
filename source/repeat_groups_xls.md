@@ -19,12 +19,12 @@ This article covers the following topics:
 
 To create a repeat group in XLSForm:
 
-1. In the `type` column of the survey worksheet, enter **begin_repeat** to indicate the start of the repeat group. 
-2. In the `name` column of the **begin_repeat** row, enter the unique identifier for the group.
+1. In the `type` column of the survey worksheet, enter `begin_repeat` to indicate the start of the repeat group. 
+2. In the `name` column of the `begin_repeat` row, enter the unique identifier for the group.
 3. In the `label` column, enter the title of the group as you want it displayed in the form. The label is optional and can be left blank.
 4. Enter each question of the group in its own row, as you normally would.
-5. In a new row after the repeating questions, enter **end_repeat** in the `type` column to indicate the end of the repeat group. 
-    - In the **end_repeat** row, leave the `name` and `label` columns blank.
+5. In a new row after the repeating questions, enter `end_repeat` in the `type` column to indicate the end of the repeat group. 
+    - In the `end_repeat` row, leave the `name` and `label` columns blank.
   
 **survey worksheet**
 
@@ -39,12 +39,12 @@ To create a repeat group in XLSForm:
 
 Repeat groups function similarly to question groups. With repeat groups, you can:
 
-- Use the **field-list** appearance to [display all questions](https://support.kobotoolbox.org/grouping_questions_xls.html#appearance-settings-for-question-groups) on the same page.
-- Add [skip logic](https://support.kobotoolbox.org/grouping_questions_xls.html#applying-skip-logic-to-question-groups) to repeat groups in the **relevance** column.
-- Create **nested** repeat groups, where one repeat group is added [inside another](https://support.kobotoolbox.org/grouping_questions_xls.html#nested-groups).
+- Use the `field-list` appearance to [display all questions](https://support.kobotoolbox.org/grouping_questions_xls.html#appearance-settings-for-question-groups) on the same page.
+- Add [skip logic](https://support.kobotoolbox.org/grouping_questions_xls.html#applying-skip-logic-to-question-groups) to repeat groups in the `relevant` column.
+- Create **nested repeat groups**, where one repeat group is added [inside another](https://support.kobotoolbox.org/grouping_questions_xls.html#nested-groups).
 
 <p class="note">
-  <strong>Note:</strong> Adding repeat groups to your form creates a different data structure compared to standard variables or groups. When you download your data in .xlsx format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
+  <strong>Note:</strong> Adding repeat groups to your form creates a different data structure compared to standard variables or groups. When you download your data in <code>.xlsx</code> format, you will find a separate sheet for each repeat group. For more information on exporting and using repeat group data, see <a href="https://support.kobotoolbox.org/managing_repeat_groups.html">Managing repeat group data</a>.
 </p>
 
 ## Setting repeat counts
@@ -53,8 +53,8 @@ By default, repeat groups can be repeated as many times as needed. To limit the 
 
 To set a fixed number of repetitions:
 
-1. Add a **repeat_count** column in the `survey` worksheet. 
-2. Input a number in the **repeat_count** column.
+1. Add a `repeat_count` column in the survey worksheet. 
+2. Input a number in the `repeat_count` column.
 
 **survey worksheet**
 
@@ -69,8 +69,8 @@ To set a fixed number of repetitions:
 
 To dynamically determine the number of repetitions based on a previous response:
 
-1. Add a **repeat_count** column in the `survey` worksheet.
-2. Enter the question reference in the **repeat_count** column. 
+1. Add a `repeat_count` column in the survey worksheet.
+2. Enter the question reference in the `repeat_count` column. 
     - The referenced question must be an `integer` question type.
   
   **survey worksheet**
@@ -94,14 +94,14 @@ To dynamically determine the number of repetitions based on a previous response:
 When using repeat groups, you may need a field that counts how many times the group has been repeated. This can be useful for calculations or form logic. For example, you can apply skip logic after a specific repetition or dynamically include the repeat number in a question label (e.g., Child 1, Child 2).
 
 To count how many times a repeat group has been repeated:
-1. Add a **calculate** question inside the repeat group.
-2. Enter `position(..)` in the **calculation** column. 
+1. Add a `calculate` question inside the repeat group.
+2. Write `position(..)` in the `calculation` column. 
 
 This variable stores the current repeat index. You can use it in form logic or to create dynamic question labels.
 
 **survey worksheet**
 
-| type | name | label | calculation | relevance |
+| type | name | label | calculation | relevant |
 | :--- | :--- | :--- | :--- | :--- |
 | begin_repeat | profile | Participant profile | | |
 | calculate | number | | **position(..)** | |
@@ -117,8 +117,8 @@ This variable stores the current repeat index. You can use it in form logic or t
 You can also add a separate question outside the repeat group to count the total number of repetitions. This is useful, for example, to confirm the number of participants or children listed in the repeat group.
 
 To count how many times a repeat group was filled in:
-1. Add a **calculate** question after the repeat group.
-2. In the **calculation** column, enter `count(${repeat_group_name})`, where `repeat_group_name` is the name of the repeat group.
+1. Add a `calculate` question after the repeat group.
+2. In the `calculation` column, enter `count(${repeat_group_name})`, where `repeat_group_name` is the name of the repeat group.
 
 This variable stores the total number of group repetitions. You can use it in calculations or to create dynamic question labels in your form.
 
@@ -154,9 +154,9 @@ type | name | label |
 
 Outside a repeat group, you can retrieve data from the repeat group for use in form logic or question labels:
 
-1. Add a **calculate** question after your repeat group.
-2. Include one of the formulas listed below in the **calculation** column.
-3. The **calculate** question stores the retrieved value, which you can then use in form logic or question labels.
+1. Add a `calculate` question after your repeat group.
+2. Include one of the formulas listed below in the `calculation` column.
+3. The `calculate` question stores the retrieved value, which you can then use in form logic or question labels.
 
 **Formulas to retrieve data from repeat groups**
 
