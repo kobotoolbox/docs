@@ -196,7 +196,7 @@ When you open the project in the Formbuilder:
   <li>Make sure the form was uploaded as a <strong>Template</strong> in the library.</li>
   <li>Check the <code>settings</code> worksheet in your XLSForm. If <code>kobo--lock_all</code> is set to <code>TRUE</code>, the whole form will be locked.</li>
   <li>Verify that all restriction names in the <code>kobo--locking-profiles</code> worksheet are valid. Only predefined restriction names are supported.</li>
-  <li>Ensure that the column <code>kobo--locking-profile</code> exists in the <strong>survey</strong> or <strong>settings</strong> worksheet and that the profile names match those defined in the <code>kobo--locking-profiles</code> worksheet.</li>
+  <li>Ensure that the column <code>kobo--locking-profile</code> exists in the <code>survey</code> or <code>settings</code> worksheet and that the profile names match those defined in the <code>kobo--locking-profiles</code> worksheet.</li>
 </ul>
 </details>
 
