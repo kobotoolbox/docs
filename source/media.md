@@ -29,8 +29,8 @@ For hands-on practice with adding media attachments in XLSForm, see KoboToolbox 
 ## Adding media to questions in XLSForm
 
 To add media files to questions or notes in your XLSForm:
-1. Add a new question in the `survey` worksheet, specifying the **type**, **name**, and **label** (optional).
-    - Use a **note** question type if you want to display the media file without collecting any data (e.g., an organization logo or introduction video).
+1. Add a new question in the survey worksheet, specifying the `type`, `name`, and `label` (optional).
+    - Use a `note` question type if you want to display the media file without collecting any data (e.g., an organization logo or introduction video).
     - Adding a label is optional when including a media file.
 2. Add a column for the media you want to include. Name it `image`, `video`, or `audio`, depending on the media type. 
 3. In the media column, in the row of the question you have added, enter the exact name of the media file **including the extension**.
@@ -60,8 +60,8 @@ To upload the media files to KoboToolbox:
 ## Adding media to choices in XLSForm
 
 To add media files to option choices in your XLSForm:
-1. Add a [select type question](https://support.kobotoolbox.org/question_types_xls.html#select-question-types) in the `survey` worksheet.
-2. In the `choices` worksheet, add a **list_name**, **name**, and **label** (optional) for your choices.
+1. Add a [select type question](https://support.kobotoolbox.org/question_types_xls.html#select-question-types) in the survey worksheet.
+2. In the choices worksheet, add a `list_name`, `name`, and `label` (optional) for your choices.
     - Adding a label is optional when including a media file. If you wish to use the media files as options label, omit the label text.
 3. Add a column for the media you want to include. Name it `image`, `video`, or `audio`, depending on the media type. 
 4. In the media column, in the row of the choices you have added, enter the name of the media file **including the extension**.
@@ -95,13 +95,13 @@ To upload the media files to KoboToolbox:
 
 ## Adding media to translations
 
-In XLSForms that are [translated in multiple languages](https://support.kobotoolbox.org/language_xls.html), you can include different media files for each language by adding new **image**, **audio**, or **video** columns.
+In XLSForms that are [translated in multiple languages](https://support.kobotoolbox.org/language_xls.html), you can include different media files for each language by adding new `image`, `audio`, or `video` columns.
 
 To add media files for different languages in your survey worksheet:
 
-1. Rename your media columns using the format **media_type::language (code)**, where `media_type` is the type of media file and `language` is the default language.
+1. Rename your media columns using the format `media_type::language (code)`, where `media_type` is the type of media file and `language` is the default language.
     - For example: `image::English (en)`
-2. Add a new media column for each translation language using the format **media_type::language (code)**. 
+2. Add a new media column for each translation language using the format `media_type::language (code)`. 
     - For example: `audio::Spanish (es)`
 3. In the media column for each language, enter the name of the media file you wish to include, including the extension.
     - To use the same media file for each language, enter the same file name as the one in the default language column.
