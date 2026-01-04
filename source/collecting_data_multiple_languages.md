@@ -1,5 +1,5 @@
 # Collecting data in multiple languages
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1710438b3a5cb33b4229492e00cb8d234a569f64/source/collecting_data_multiple_languages.md" class="reference">4 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/da1424efc8c980952e8ae58774fb6a81a25b2c9c/source/collecting_data_multiple_languages.md" class="reference">4 Jan 2026</a>
 
 KoboToolbox supports collecting data in **as many languages as you need** within a single form, including languages that use non-Latin scripts. You can design your form with multiple translations, allow respondents to switch to their preferred language during data collection, and later view or export the data in any form language.
 
