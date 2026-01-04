@@ -86,7 +86,7 @@ To dynamically determine the number of repetitions based on a previous response:
 | survey |
 
 <p class="note">
-  <strong>Note:</strong> Inside the <strong>repeat_count</strong> column, you can also include advanced conditional statements to determine if repetitions will continue. For more information, see <a href="https://docs.getodk.org/form-logic/#repeating-as-long-as-a-condition-is-met">ODK documentation</a>. 
+  <strong>Note:</strong> Inside the <code>repeat_count</code> column, you can also include advanced conditional statements to determine if repetitions will continue. For more information, see <a href="https://docs.getodk.org/form-logic/#repeating-as-long-as-a-condition-is-met">ODK documentation</a>. 
 </p>
 
 ## Counting number of repetitions inside a repeat group
