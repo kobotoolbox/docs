@@ -122,11 +122,11 @@ The format of the default response depends on the question type and the data bei
 
 | Question type | Default response format |
 | :--- | :--- |
-| integer | Number |
-| text | Text (without quotation marks) |
-| select_one | Choice **name** (as defined in the choices worksheet) |
-| select_multiple | Choice **name(s)**, separated by a **space** if there are multiple |
-| date | Date in the YYYY-MM-DD format. If needed, prefix the date with a single quote (') in Excel to avoid potential formatting issues. | 
+| `integer` | Number |
+| `text` | Text (without quotation marks) |
+| `select_one` | Choice **name** (as defined in the choices worksheet) |
+| `select_multiple` | Choice **name(s)**, separated by a **space** if there are multiple |
+| `date` | Date in the YYYY-MM-DD format. If needed, prefix the date with a single quote (') in Excel to avoid potential formatting issues. | 
 
 ### Setting dynamic default responses
 
@@ -168,13 +168,13 @@ Different question types in XLSForm have different parameters. The most common p
 
 | Parameter | Question type | Description |
 | :--- | :--- | :--- |
-| randomize=true | rank, select_one, select_multiple | Randomizes the order of option choices |
-| start=1 end=5 step=1 | range | Defines the minimum value, maximum value, and interval between numbers |
-| capture-accuracy=20 | geopoint | Specifies the minimum acceptable GPS accuracy (in meters) for automatically capturing a location |
-| warning-accuracy=50 | geopoint | Triggers a warning message if the GPS accuracy is not within the specified accuracy threshold |
-| max-pixels=480 | image | Limits the maximum pixels for a photo, to reduce the image file size and improve upload speed |
-| quality=low | audio | Captures a lower quality audio recording |
-| quality=voice-only | audio | Captures the lowest quality audio recording |
+| `randomize=true` | `rank`, `select_one`, `select_multiple` | Randomizes the order of option choices |
+| `start=1 end=5 step=1` | `range` | Defines the minimum value, maximum value, and interval between numbers |
+| `capture-accuracy=20` | `geopoint` | Specifies the minimum acceptable GPS accuracy (in meters) for automatically capturing a location |
+| `warning-accuracy=50` | `geopoint` | Triggers a warning message if the GPS accuracy is not within the specified accuracy threshold |
+| `max-pixels=480` | `image` | Limits the maximum pixels for a photo, to reduce the image file size and improve upload speed |
+| `quality=low` | `audio` | Captures a lower quality audio recording |
+| `quality=voice-only` | `audio` | Captures the lowest quality audio recording |
 
 ## Additional question options
 
@@ -182,9 +182,9 @@ XLSForms can include additional columns in the survey worksheet for more advance
 
 | XLSForm column | Description |
 | :--- | :--- |
-| read_only | If `yes` is entered in the `read_only` field, the question cannot be edited by the respondent. `read_only` fields can be combined with `default` or `calculation` fields to display information to the respondent. | 
-| trigger | The trigger column can be used to run a calculation only when the response to another visible question in the form is changed. For more information, see <a href="https://xlsform.org/en/#trigger">XLSForm documentation</a>. | 
-| body::accept | To limit the accepted file types for `file` questions, specify file extensions in the `body::accept` column, separated by a comma (e.g., .pdf, .doc). | 
+| `read_only` | If `yes` is entered in the `read_only` field, the question cannot be edited by the respondent. `read_only` fields can be combined with `default` or `calculation` fields to display information to the respondent. | 
+| `trigger` | The trigger column can be used to run a calculation only when the response to another visible question in the form is changed. For more information, see <a href="https://xlsform.org/en/#trigger">XLSForm documentation</a>. | 
+| `body::accept` | To limit the accepted file types for `file` questions, specify file extensions in the `body::accept` column, separated by a comma (e.g., .pdf, .doc). | 
 
 Other columns can also be added to incorporate form logic into your XLSForm. 
 
