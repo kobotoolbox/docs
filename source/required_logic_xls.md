@@ -20,7 +20,7 @@ This article explains how to add required logic conditions in XLSForm, including
 Required logic uses <a href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">question referencing</a> to make questions required based on previous answers. The question used to define the required logic is referred to as the **reference question.**
 
 To add required logic in XLSForm:
-1. Add a **required** column to the `survey` worksheet. 
+1. Add a `required` column to the survey worksheet. 
 2. In the row of the question you wish to set the required logic for, enter the condition that must be met in order **for the question to be mandatory.**
 
 **survey worksheet**
@@ -35,7 +35,7 @@ If a respondent does not answer a required question, they will not be able to pr
 
 ### Formatting required logic conditions
 
-The format of the required logic condition will differ according to the **type** of the reference question, as detailed in the table below.
+The format of the required logic condition will differ according to the **type of the reference question**, as detailed in the table below.
 
 | Reference question type | Required logic condition | Example |
 |:-------------------------|:--------------------|:---------|
