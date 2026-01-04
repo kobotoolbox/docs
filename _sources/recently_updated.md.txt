@@ -10,4 +10,4 @@
 1. [Question appearances in XLSForm](appearances_xls.md) (4 Jan 2026)
 1. [Repeat groups in XLSForm](repeat_groups_xls.md) (4 Jan 2026)
 1. [Dynamic data attachments](dynamic_data_attachment.md) (4 Jan 2026)
-1. [Adding calculations in XLSForm](calculations_xls.md) (4 Jan 2026)
+1. ["Select One" and "Select Many" question types](select_one_and_select_many.md) (4 Jan 2026)
