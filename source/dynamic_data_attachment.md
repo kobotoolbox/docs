@@ -1,5 +1,5 @@
 # Dynamic data attachments
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0c4cbe231491ab3ee9bd1e3a82967d30ac63e2c6/source/dynamic_data_attachment.md" class="reference">15 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/dynamic_data_attachment.md" class="reference">4 Jan 2026</a>
 
 
 Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.
@@ -27,8 +27,8 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 
 
 3. Throughout the form, you can retrieve values from the parent project by creating a new question and including the appropriate expression in the `calculation` column (see table [below](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). You can use the following question types to retrieve data:
-    - Use a **calculate** question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
-    - Use **text**, **integer**, **decimal**, **select_one**, or **select_multiple** question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
+    - Use a `calculate` question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
+    - Use `text`, `integer`, `decimal`, `select_one`, or `select_multiple` question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
   
 **survey worksheet**
       
@@ -41,7 +41,7 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 
 <p class="note">
    <strong>Note:</strong> 
-    To display linked data without allowing users to edit the field, use a <strong>calculate</strong> question followed by a <strong>note</strong> question that displays the calculated value. Alternatively, use <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong>, or <strong>select_multiple</strong> questions with the <code>read_only</code> column set to <code>TRUE</code>.
+    To display linked data without allowing users to edit the field, use a <code>calculate</code> question followed by a <code>note</code> question that displays the calculated value. Alternatively, use <code>text</code>, <code>integer</code>, <code>decimal</code>, <code>select_one</code>, or <code>select_multiple</code> questions with the <code>read_only</code> column set to <code>TRUE</code>.
 </p>
 
 ## Calculation syntax for dynamic data attachments
@@ -78,7 +78,7 @@ For each expression in the table below:
 
 Once your XLSForms are set up, log into your KoboToolbox account and follow these steps:
 
-1. Upload and deploy the **parent project**, if not already deployed. Ensure the parent project has at least one submission.
+1. Create and deploy the **parent project**, if not already deployed. 
 2. Enable data sharing for the parent project: 
     - In the **SETTINGS > Connect Projects** tab of the parent project, toggle the **Data sharing** switch (disabled by default) and click **ACKNOWLEDGE AND CONTINUE** in the confirmation window. 
     - All data is shared by default, but you can restrict specific variables to share with child projects by clicking "Select specific questions to share".
@@ -87,11 +87,11 @@ Once your XLSForms are set up, log into your KoboToolbox account and follow thes
     <strong>Note:</strong> If projects have different owners, the parent project owner must <a href="https://support.kobotoolbox.org/managing_permissions.html">share the project</a> with the child project owner. The minimum permissions required for dynamic data attachments to work are <strong>View form</strong> and <strong>View submissions</strong>. Note that this allows child project administrators to view all parent project data.
 </p>
 
-3. Upload and deploy the **child project**.
+3. Create and deploy the **child project**.
 4. Connect the child project to the parent project: 
     - In the **SETTINGS > Connect Projects** tab of the child project, click the "Select a different project to import data from." A dropdown menu will allow you to select a parent project to link. 
     - Rename the linked parent project to the `xml-external` question name defined in the XLSForm and click **IMPORT**. 
-    - You can then select specific questions from the parent project to share with the child project, or select all questions.
+    - You can then select specific questions from the parent project to share with the child project (recommended), or select all questions.
 5. If you add new fields to the parent form and wish to use them in the child project, re-import the parent project in the child project settings.
 
 <p class="note">
@@ -146,8 +146,13 @@ When collecting data, note the following:
 ## Troubleshooting
 
 <details>
-<summary><strong>Error or crash when linking forms</strong></summary>
-Dynamic data attachments cannot connect to an empty parent project. Add at least one submission to the parent project first, then link the forms again.
+  <summary><strong>Error or crash when linking forms</strong></summary>
+If the user interface crashes when you attempt to link forms, check the following:
+  <ul>
+    <li>Your XLSForm does not include duplicate question or group names in the <code>name</code> column of the <code>survey</code> worksheet.</li>
+    <li>Your parent project has at least one submission.</li>
+  </ul>
+If the user interface is still crashing, select only the questions you need to connect the forms, instead of clicking <strong>Select all</strong>.
 </details>
 
 <br>

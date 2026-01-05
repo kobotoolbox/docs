@@ -17,10 +17,9 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :name: home-page-toc-getting-started
 
   welcome
-  quick_start
   creating_account
-  formbuilder
-  getting_started_xlsform
+  quick_start
+  glossary
 
 .. raw:: html
 
@@ -38,6 +37,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   creating_account
   activation_link
   reset_password
+  account_settings
   two_factor_authentication
   account_usage_limits
 
@@ -103,11 +103,29 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
   edit_forms_excel
   getting_started_xlsform
-  xls_url
-  media
+  xlsform_with_kobotoolbox
+  question_types_xls
+  option_choices_xls
+  grouping_questions_xls
+  repeat_groups_xls
+  question_options_xls
+  appearances_xls
   language_xls
-  dynamic_data_attachment
+  media
+  form_logic_xls
+  functions_xls
+  skip_logic_xls
+  constraints_xls
+  required_logic_xls
+  choice_filters_xls
+  calculations_xls
+  form_settings_xls
+  form_style_xls.md
+  metadata_xls
   pull_data_kobotoolbox
+  select_from_file_xls
+  select_from_map_xls
+  dynamic_data_attachment
   library_locking
 
 .. raw:: html
@@ -137,6 +155,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   troubleshooting_kobocollect
   troubleshooting_webforms
   collect_gps
+  collecting_data_multiple_languages
 
 .. raw:: html
 
@@ -165,7 +184,6 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   howto_edit_multiple_submissions
   photo_download
   deleting_media
-  recovering_previous_formdata
   getting_started_organization_feature
   activity_logs
 

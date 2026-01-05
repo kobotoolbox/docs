@@ -1,5 +1,5 @@
 # Customizing KoboCollect settings
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5599bf9bc43c6872244104e236df84c6a6ed5f15/source/kobocollect_settings.md" class="reference">19 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8b47546ca1b227824740260c378a592e362b628/source/kobocollect_settings.md" class="reference">30 Dec 2025</a>
 
 
 <iframe src="https://www.youtube.com/embed/Qeky3aomiWI?si=M1l_jorFQEDacX2A" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -104,11 +104,11 @@ Project management settings provide tools to manage and reset project-related se
 | **Setting**&emsp;&emsp;&emsp;    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
 |Reconfigure with QR code &emsp;&emsp; | Reconfigure your KoboCollect settings by scanning a QR code from another project. Note that this approach will replace the current project with the new one. This is also where you can find the QR code to [set up another device](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#setting-up-kobocollect-with-a-qr-code) with the same settings. |
-| Reset | Reset specific settings, such as clearing saved forms, cached data, or map layers, without affecting other parts of the app. |
-| Delete | Delete all data related to the project from the device, including blank forms, submitted data, and settings, which can be helpful when retiring a device or preparing it for a new user. |
+| Reset | Reset specific settings, such as clearing [saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect), cached data, or map layers, without affecting other parts of the app. |
+| Delete | Delete the project and all data related to the project from the device, including [blank forms](https://support.kobotoolbox.org/glossary.html#blank-forms-kobocollect), submitted forms, finalized and draft forms, which can be helpful when retiring a device or preparing it for a new user. |
 
 <p class="note"> 
-    <strong>Note:</strong> Use these options with caution, especially when deleting data, as some actions cannot be undone. Deleting data from the device does not affect the overall KoboToolbox project and does not delete data from the server.
+    <strong>Note:</strong> Use these options with caution, especially when deleting data, as some actions cannot be undone. Deleting data from the device does not affect the overall KoboToolbox project and <strong>does not delete data that has already been submitted to the server</strong>, but it does delete unsent or draft submissions.
 </p>
 
 ## Access control

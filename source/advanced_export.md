@@ -1,5 +1,5 @@
 # Advanced options for exporting data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9bc8dc162b89d329fd6161bbe168dd554df770a9/source/advanced_export.md" class="reference">6 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/857e76d455c0a4c4dad7512d57b2378bc627ac44/source/advanced_export.md" class="reference">16 Dec 2025</a>
 
 
 Advanced options provide greater control and flexibility when downloading and exporting your data. This article will guide you through customizing your data exports, from selecting data fields and handling various question types to setting parameters for different analytical needs.
@@ -54,4 +54,13 @@ You can save your defined export settings for future use or to generate a [synch
 | Save selection as… &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| Check this option and enter a name for your export settings. When you click <strong>EXPORT</strong>, these settings will be saved and the name will appear in the <strong>Apply saved export settings</strong> box. | 
 
 To use saved export settings, click on the dropdown menu under **Apply saved export settings** and select the named export settings of your choice.
+
+## Troubleshooting
+
+<details>
+  <summary><strong>Data export missing fields from previous form versions</strong></summary>
+  If data from renamed or deleted questions is missing from data exports after a form is edited and redeployed, ensure <strong>Include fields from all deployed versions</strong> is selected when downloading data. If this option is not selected, only fields from the most recent form version are included. All submissions are always included in the download—this option only affects which fields are included.
+</details>
+
+<br>
 

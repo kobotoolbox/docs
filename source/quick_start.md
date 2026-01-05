@@ -1,5 +1,5 @@
 # Quickstart guide
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97c86ebbe0f538ad62a6a4037cbdcf56365ff1a8/source/quick_start.md" class="reference">27 Oct 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/baab34ba0bbb3246b6f2b612b46522cc8b239d58/source/quick_start.md" class="reference">25 Nov 2025</a>
 
 This article provides a quick guide to getting started with KoboToolbox. It explains how to create an account, build and deploy a form, and begin collecting data.
 
@@ -27,7 +27,7 @@ To create your first form:
 | Build from scratch        | Build a form using the KoboToolbox <a href="formbuilder.html" class="reference">Formbuilder</a>.                   |
 | Use a template            | Build a form using a template from the <a href="question_library.html" class="reference">question library</a>.   |
 | Upload XLSForm            | Upload an <a href="edit_forms_excel.html" class="reference">XLSForm</a> file where you have defined your questions.     |
-| Import an XLSForm via URL | Upload an XLSForm file <a href="xls_url.html" class="reference">from an online source</a> such as Google Drive or Dropbox. |
+| Import an XLSForm via URL | Upload an XLSForm file <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#importing-an-xlsform-via-url" class="reference">from an online source</a> such as Google Drive or Dropbox. |
 
 
 2. Select **Build from scratch** to create a new form using the KoboToolbox Formbuilder.

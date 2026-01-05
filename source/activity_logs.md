@@ -1,101 +1,150 @@
-# Activity Logs
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d6f09be2d6f022db661e2a4d9da0b962db44633e/source/activity_logs.md" class="reference">15 May 2025</a>
+# Monitoring project and account activity
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3bd66258a8d08aa1daafa90640a1fc8e4efe3b23/source/activity_logs.md" class="reference">16 Dec 2025</a>
 
 
-Activity logs are digital records that capture important actions and events in your KoboToolbox account. Activity logs give you a detailed history of account access and project activity.
-These logs can be helpful for:
+In KoboToolbox, you can monitor project and account activity using **activity logs.** These logs record key actions and events in your account or projects, providing a detailed history of access and activity.
 
--   Security monitoring: See who accessed your account and from where
--   Tracking changes: Know when project elements were modified
--   Accountability: Identify which team members made specific changes
--   Troubleshooting: Understand when and how issues may have occurred
+Activity logs can be helpful for:
+
+-   **Security monitoring:** See who accessed your account and from where.
+-   **Tracking changes:** Know when project elements were modified.
+-   **Accountability:** Identifying which team members made specific changes.
+-   **Troubleshooting:** Understand when and how issues may have occurred.
 
 KoboToolbox provides two types of activity logs to help you monitor different aspects of your work:
 
--   **Access Logs:** Support account security by displaying all sign-ins.
--   **Project History Logs:** Track all actions and changes made by any user within a specific project and its data.
+-   **Account access logs:** Display all sign-ins to your account.
+-   **Project history logs:** Track all actions and changes made by any user within a project and its data.
 
+## Account access logs
 
-<p class="note">
-  <b>Note:</b> Activity logs are a relatively recent addition to KoboToolbox. We are actively working to expand these features in the following months and provide an even more detailed account of actions in your accounts and projects.
-</p>
+Account access logs record all authentication events (sign-ins) for your KoboToolbox account. They help you monitor account security by showing you when and where your account was accessed.
 
-## Access logs
+To access your account access logs:
 
-Access logs record all authentication events (sign-ins) for your KoboToolbox account. They help you monitor account security by showing you when and where your account was accessed.
+1. [Sign in](https://www.kobotoolbox.org/sign-up/) to your KoboToolbox account.
+2. Click your profile icon in the top right corner. 
+3. Click on **Account Settings** and navigate to the **Security** tab.
+4. Find your account access logs under **RECENT ACCOUNT ACTIVITY.**
 
-They can be found under the title ‘Recent Account Activity’, which you can reach easily by opening your Account Settings under the section Security.
-
-Access logs display:
+Access logs display the following information:
 
 -   Date and time of each sign-in
 -   IP address (location information)
 -   Source (device information and browser)
 
-![image](/images/activity_logs/Logs-image01.jpg)
+![Access activity logs under security tab](/images/activity_logs/access_logs.png)
 
-Note that similar events (authentications) occurring within 60 minutes of each other will be grouped together.
+<p class="note">
+    <strong>Note:</strong> Similar authentications occurring within 60 minutes of each other will be grouped together.
+</p>
 
-### Exporting access logs
+### Exporting account access logs
 
-![image](images/activity_logs/Logs-image02.jpg)
+From the **RECENT ACCOUNT ACTIVITY** section in **Account Settings > Security**, you can also export all access records. To do so:
 
-This section also allows you to export all your access records by clicking on the ‘Export log data’ button on the top right corner of the table. Clicking this button will trigger the data export process:
-1. The processing of the records into a .csv export file will begin
-2. A modal window will be displayed informing you that the process has started and what the next steps are.
-3. You will receive an email with a link to download the file once it's ready. The amount of data included in your logs will determine how long it may take to receive the email.
-4. Clicking on the URL in the email should immediately start the download of the .csv file, depending on your browser settings.
+1. Click on <i class="k-icon-download"></i> **Export log data** in the top right corner of the table. This will trigger the data export process.
+2. Once the process is complete, you will receive an email with a link to download the file. 
+    - How long it takes to receive the email depends on the size of the log data.
+3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org/activity_logs.html#troubleshooting), depending on your browser settings. 
 
-The export file will include more detailed information of all the authentication events, including authentication type and exact timing.
+<p class="note">
+    <strong>Note:</strong> The exported file includes more detailed information about the authentication events, including authentication type and exact timing.
+</p>
 
-### Log out of all devices
+### Logging out of all devices
 
-You can force all devices currently logged into your account to immediately log out by clicking on the ‘Log out of all devices’ link to the left of the data export button.
+Finally, from the **RECENT ACCOUNT ACTIVITY** section in **Account Settings > Security**, you can force all devices currently logged into your account to immediately log out. To do so:
 
-This action will also log you out of your current session.
+1. Click on <i class="k-icon-logout"></i> **Log out of all devices** in the top right corner of the table.
+2. You will be logged out of your current session immediately. Any other devices signed in to your account will also be logged out.
 
-## Project History Logs
+## Project history logs
 
-Project History Logs provide a detailed record of all activities within a specific project. They show every action performed, whether by users or automated processes, giving you complete visibility into your project's history.
+Project history logs provide a detailed record of all actions within a project. They show every change made by users or automated processes, giving you full visibility into the project’s activity.
 
-To see the logs of a specific project, go to your project’s SETTINGS tab and go to the Activity section.
+<p class="note">
+    <strong>Note:</strong> Only project owners and users with <strong>Manage project</strong> <a href="https://support.kobotoolbox.org/managing_permissions.html">permissions</a> can view project history logs.
+</p>
 
-![image](/images/activity_logs/Logs-image3.jpg)
+To access your project’s history logs:
 
-In this page you will find a table view with all the project activity, sorted by date. Each unique action is listed along with the user who performed it and the datestamp associated with that activity.
+1. Open a project and go to the **SETTINGS** page.
+2. Go to the **Activity** tab.
+3. A table will be displayed with all project activity, sorted by date. Each action is listed with the username of the person who performed it and the timestamp for when it occurred.
 
-Project History Logs capture almost every possible action that can be performed in a project.
+If you need more information about an activity, click **See details** for an expanded view. This displays all available information about the event, including backend actions and associated metadata.
 
-| Category                | Included actions                                                                                                            |
+![Recent project activity screen](images/activity_logs/Logs-image3.jpg)
+
+The following actions are captured in project history logs: 
+
+| Category                | Actions                                                                                                           |
 | :-----------------------| :---------------------------------------------------------------------------------------------------------------------------|
-| Project changes         | Project name updates, Deployments and redeployments, Archiving and unarchiving, Project connections                         |
-| Form changes            | XLSForm uploads, Form edits, Creation of qualitative analysis questions                                                     |
-| Data Management Changes | Data exports, Media attachment modifications, Data sharing settings changes, REST service modifications                     |
-| Permissions             | User access updates, Public access settings, Ownership transfers                                                            |
-| Submissions             | User modifies or deletes submissions. Adding submissions is displayed in the logs export, but not the KoboToolbox interface |
+| Project         | Project name changes, deployment and redeployment, archiving and unarchiving, REST service updates, and project connections.                        |
+| Form            | Form edits, XLSForm uploads, creation of <a href="https://support.kobotoolbox.org/qualitative_analysis.html">qualitative analysis questions</a>.                                                     |
+| Data | Data exports, media file changes, deletion or modification of submissions.                     |
+| Permissions           | Changes to user access or public access settings, ownership transfers.           |
 
-### Finding & investigating specific activities
+<p class="note">
+    <strong>Note:</strong> Adding submissions appears in exported logs, but not in the KoboToolbox interface. 
+</p>
 
-You can filter the history log by activity type (e.g. deployments, form edits, permissions changes, etc.) using the toggle functionality on the top right corner. This will also allow project owners and managers to track changes/updates on specific aspects of the project quickly.
+### Filtering project history logs
 
-![image](/images/activity_logs/Logs-GIF01.gif)
+You can filter the project history log by action to quickly see updates to specific parts of the project.
 
-You can also export all your project history data using the export button on the top right corner of your table.
-If you need more information about a specific activity, simply click ‘See Details’ for an expanded view of that entry. This will display all the information on that event, revealing what occurred in the backend and any associated metadata.
+To filter your project history logs:
 
-## Common Issues with Activity Logs
+1. In the project **SETTINGS > Activity** page, click on **Filter by** above the project history logs table.
+2. From the dropdown menu, select an action to filter the table.
 
-**"I don't see recent activities"**
--   Check that you're looking at the correct project
--   Make sure you have the right permissions to view logs. Only project owners and users with ‘manage project’ permissions can see the logs.
--   Note that logs are only available for a period of 60 days. Older logs are deleted and not retrievable. This period can be configured at the admin level for organizations with a private server.
+### Exporting project history logs
 
-**"I need older log data"**
--   Data beyond the retention period is automatically deleted and not retrievable. If you need to have access to log data older than 60 days and you are using a private server, you can contact your administrator to increase the retention period.
+From the project **SETTINGS > Activity** page, you can also export all project history logs. To do so:
 
-**"I can’t download the log data export file"**
--   When you click the link you received by email to download the log data export file, it might open a web page with text instead of downloading the csv file.
--   To download the .csv file from the web page, right click on the page, and select Save Page As…. Keep the format as “Page Source”
--   If you click on the link and get an error message, such as 403 Forbidden, try opening the link with another browser (e.g., Safari).
+1. Click on <i class="k-icon-download"></i> **Export all data** in the top right corner of the table. Clicking this button will trigger the data export process.
+2. Once the process is complete, you will receive an email with a link to download the file. 
+    - How long it takes to receive the email depends on the size of the log data.
+3. Clicking the URL in the email starts the download of the CSV file or [opens a new webpage](https://support.kobotoolbox.org/activity_logs.html#troubleshooting), depending on your browser settings. 
 
-![image](/images/getting_started_organization_feature/organizations_project_views.gif)
+## Troubleshooting
+
+<details>
+  <summary><strong>Recent activities not displayed</strong></summary>
+  If recent activities are not displayed, check the following:
+    <br><br>
+    <ul>
+        <li>You are looking at the correct project.</li>
+        <li>You have the right permissions to view project history logs (i.e., project owner or <strong>Manage project</strong> permissions).</li>
+    </ul>
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Older activity logs not available</strong></summary>
+  Logs are retained for a limited period before they are automatically deleted and cannot be recovered.
+    <br><br>
+The retention period can be adjusted at the admin level for organizations using a private server. If you need access to older log data on a <a href="https://www.kobotoolbox.org/enterprise/#comparison-table">private server</a>, contact your administrator to request a longer retention period.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Log data export file opens as a web page</strong></summary>
+  When you click the link received by email to download a log data export file, it might open a web page with text instead of downloading the csv file. 
+    <br><br>
+    To download the .csv file from the web page: 
+    <br><br>
+    <ol>
+<li>Right click on the page and select <strong>Save Page As…</strong>.</li>
+<li>Keep the format as <strong>Page Source</strong> and save the file in the location of your choice.</li>
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Error message when clicking on export link</strong></summary>
+  If you click the link and see an error message such as 403 Forbidden or 404 Page not found, try opening the link in a different browser (e.g., Safari). The export link may also have expired. If so, restart the export process to generate a new link.
+</details>

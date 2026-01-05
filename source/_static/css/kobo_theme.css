@@ -6,9 +6,6 @@
 }
 
 html {
-  line-height: 1.75em;
-}
-html {
   font-size: 14px;
 }
 @media screen and (min-width: 320px) {
@@ -20,6 +17,9 @@ html {
   html {
     font-size: 18px;
   }
+}
+html {
+  line-height: 1.75em;
 }
 
 body {
@@ -116,7 +116,8 @@ h2 {
   font-size: 1.5em;
 }
 
-section:has(h2:first-child) {
+section:has(h2:first-child),
+section:has(h3:first-child) {
   scroll-margin-top: 75px;
 }
 
@@ -413,15 +414,17 @@ html body {
   padding-left: 2.8125rem;
   padding-right: 2.8125rem;
   margin: 0 auto;
-  padding-top: 2.8125rem;
-  padding-bottom: 2.8125rem;
-  max-width: 100%;
 }
 @media screen and (max-width: 875px) {
   .page .page__wrapper {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
+}
+.page .page__wrapper {
+  padding-top: 2.8125rem;
+  padding-bottom: 2.8125rem;
+  max-width: 100%;
 }
 @media screen and (min-width: 876px) {
   .page.page--has-sidebar .page__wrapper {
@@ -725,6 +728,17 @@ html body {
   text-decoration: none;
 }
 
+.page__back-to-top-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 1rem;
+}
+
 html body div.footer {
   width: 100%;
   background: hsl(230, 12%, 29%);
@@ -758,13 +772,15 @@ html body div.footer p {
   padding-left: 2.8125rem;
   padding-right: 2.8125rem;
   margin: 0 auto;
-  margin: 0.4em auto;
 }
 @media screen and (max-width: 875px) {
   html body div.footer p {
     padding-left: 0.9375rem;
     padding-right: 0.9375rem;
   }
+}
+html body div.footer p {
+  margin: 0.4em auto;
 }
 html body div.footer p:last-child {
   margin-top: 1.5em;
@@ -776,7 +792,6 @@ html body div.footer p:last-child {
   background-position: center 25%;
   background-size: cover;
   position: relative;
-  background-position: center 87%;
 }
 .community-questions.community-questions--big::before, .community-questions.community-questions--big::after {
   content: "";
@@ -796,6 +811,9 @@ html body div.footer p:last-child {
   background: -webkit-gradient(linear, left top, left bottom, from(transparent), to(hsl(230, 12%, 29%)));
   background: linear-gradient(to bottom, transparent, hsl(230, 12%, 29%));
   bottom: 0;
+}
+.community-questions.community-questions--big {
+  background-position: center 87%;
 }
 .community-questions.community-questions--big .wrapper {
   padding: 4.375rem 0.9375rem 6.25rem;
@@ -986,6 +1004,21 @@ html body div.footer p:last-child {
 }
 .page#index .toctree-wrapper[id=home-page-toc-additional-resources] .caption {
   background-image: url("../icons/custom/additional-resources.png");
+}
+
+.toc-card .caption {
+  display: block;
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+.toc-card {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.toc-card ul a {
+  text-decoration: underline !important;
 }
 
 .page#search .page__body form {

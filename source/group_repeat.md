@@ -1,5 +1,5 @@
 # Grouping questions and repeating groups
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a4227085bc495cc72c9380430577b0e092d101bb/source/group_repeat.md" class="reference">25 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5eaf21541df87348121017391e0a9b41db5f002c/source/group_repeat.md" class="reference">25 Nov 2025</a>
 
 
 <iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -108,6 +108,6 @@ During data collection, enumerators will be able to enter responses for these gr
 Additional settings and functionalities for repeat groups are available through XLSForm, but not directly within the Formbuilder. These include setting a fixed or dynamic number of repetitions, and using information from repeat groups elsewhere in your form.
 
 <p class="note">
-    For more information about advanced settings for repeat groups, see <a href="https://docs.getodk.org/form-logic/#controlling-the-number-of-repetitions">XLSForm documentation</a>.  
+    For more information about advanced settings for repeat groups, see <a href="https://support.kobotoolbox.org/repeat_groups_xls.html">Repeat groups in XLSForm</a>.  
 </p>
 
