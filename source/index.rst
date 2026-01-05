@@ -180,8 +180,8 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   managing_permissions
   managing_files_media.md
   deleting_media
-  getting_started_organization_feature
   activity_logs
+  getting_started_organization_feature
 
 .. raw:: html
 
