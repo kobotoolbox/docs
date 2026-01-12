@@ -4,7 +4,7 @@
 Required logic allows you to make a question mandatory if specific conditions are met. For example, you can require a phone number question only if respondents agree to be contacted in the future. This option provides more control than simply marking a question as always required or always optional.
 
 <p class="note">
-  To learn more about required questions and how to customize the message shown to respondents when they leave a required question unanswered, see <a href="https://support.kobotoolbox.org/question_options_xls.html#required-questions">Using question options in XLSForm</a>.
+  To learn more about required questions and how to customize the message shown to respondents when they leave a required question unanswered, see <a href="https://support.kobotoolbox.org/question_options_xls.html#required-questions">Question options in XLSForm</a>.
 </p>
 
 This article explains how to add required logic conditions in XLSForm, including making a question required based on whether another question was answered. 
