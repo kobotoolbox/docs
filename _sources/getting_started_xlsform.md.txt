@@ -1,5 +1,5 @@
 # Getting started with XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/getting_started_xlsform.md" class="reference">4 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5c9f0c5e963d76d2f81701257272894d4f3f9405/source/getting_started_xlsform.md" class="reference">12 Jan 2026</a>
 
 <iframe src="https://www.youtube.com/embed/xpeBCy9p1Ys?si=tP_3G2vMnRC1OgWS" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -162,7 +162,7 @@ To further customize your XLSForm, you can add optional columns to configure for
 | `default` | Default response for a question |
 
 <p class="note">
-To learn more about optional columns in XLSForm, see <a class="reference" href="https://support.kobotoolbox.org/question_options_xls.html">Using question options in XLSForm</a>, <a class="reference" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>, and <a class="reference" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
+To learn more about optional columns in XLSForm, see <a class="reference" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>, <a class="reference" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>, and <a class="reference" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
 </p>
 
 ## Uploading and previewing your XLSForm in KoboToolbox
