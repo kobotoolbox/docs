@@ -162,7 +162,7 @@ To further customize your XLSForm, you can add optional columns to configure for
 | `default` | Default response for a question |
 
 <p class="note">
-To learn more about optional columns in XLSForm, see <a class="reference" href="https://support.kobotoolbox.org/question_options_xls.html">Using question options in XLSForm</a>, <a class="reference" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>, and <a class="reference" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
+To learn more about optional columns in XLSForm, see <a class="reference" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>, <a class="reference" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>, and <a class="reference" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
 </p>
 
 ## Uploading and previewing your XLSForm in KoboToolbox
