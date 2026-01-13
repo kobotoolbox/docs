@@ -1,5 +1,5 @@
 # Question options in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5c9f0c5e963d76d2f81701257272894d4f3f9405/source/question_options_xls.md" class="reference">12 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8972139fe64f12089d7e0f44e3ebb5b75980c90f/source/question_options_xls.md" class="reference">13 Jan 2026</a>
 
 When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the `survey` worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required. 
 
@@ -185,6 +185,7 @@ XLSForms can include additional columns in the survey worksheet for more advance
 | `read_only` | If `yes` is entered in the `read_only` field, the question cannot be edited by the respondent. `read_only` fields can be combined with `default` or `calculation` fields to display information to the respondent. | 
 | `trigger` | The trigger column can be used to run a calculation only when the response to another visible question in the form is changed. For more information, see <a href="https://xlsform.org/en/#trigger">XLSForm documentation</a>. | 
 | `body::accept` | To limit the accepted file types for `file` questions, specify file extensions in the `body::accept` column, separated by a comma (e.g., .pdf, .doc). | 
+| `hxl` | To include <a href="https://hxlstandard.org">Humanitarian Exchange Language</a> (HXL) tags in your form, specify the tag (and optional attribute) in the `hxl` column, following the format `#tag` or `#tag+attribute`. | 
 
 Other columns can also be added to incorporate form logic into your XLSForm. 
 

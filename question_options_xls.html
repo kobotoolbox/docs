@@ -109,7 +109,7 @@
           
   <section id="question-options-in-xlsform">
 <h1>Question options in XLSForm<a class="headerlink" href="#question-options-in-xlsform" title="Link to this heading">Â¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/5c9f0c5e963d76d2f81701257272894d4f3f9405/source/question_options_xls.md" class="reference">12 Jan 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8972139fe64f12089d7e0f44e3ebb5b75980c90f/source/question_options_xls.md" class="reference">13 Jan 2026</a></p>
 <p>When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required.</p>
 <p>This article covers the most common question options and how to add them to your XLSForm, including question hints, required questions, default responses, and question parameters.</p>
 <p class="note">
@@ -473,6 +473,9 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academyâ
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">body::accept</span></code></p></td>
 <td class="text-left"><p>To limit the accepted file types for <code class="docutils literal notranslate"><span class="pre">file</span></code> questions, specify file extensions in the <code class="docutils literal notranslate"><span class="pre">body::accept</span></code> column, separated by a comma (e.g., .pdf, .doc).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">hxl</span></code></p></td>
+<td class="text-left"><p>To include <a href="https://hxlstandard.org">Humanitarian Exchange Language</a> (HXL) tags in your form, specify the tag (and optional attribute) in the <code class="docutils literal notranslate"><span class="pre">hxl</span></code> column, following the format <code class="docutils literal notranslate"><span class="pre">#tag</span></code> or <code class="docutils literal notranslate"><span class="pre">#tag+attribute</span></code>.</p></td>
 </tr>
 </tbody>
 </table>
