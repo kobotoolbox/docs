@@ -1,5 +1,5 @@
 # Question options in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5c9f0c5e963d76d2f81701257272894d4f3f9405/source/question_options_xls.md" class="reference">12 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8972139fe64f12089d7e0f44e3ebb5b75980c90f/source/question_options_xls.md" class="reference">13 Jan 2026</a>
 
 When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the `survey` worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required. 
 
