@@ -185,6 +185,7 @@ XLSForms can include additional columns in the survey worksheet for more advance
 | `read_only` | If `yes` is entered in the `read_only` field, the question cannot be edited by the respondent. `read_only` fields can be combined with `default` or `calculation` fields to display information to the respondent. | 
 | `trigger` | The trigger column can be used to run a calculation only when the response to another visible question in the form is changed. For more information, see <a href="https://xlsform.org/en/#trigger">XLSForm documentation</a>. | 
 | `body::accept` | To limit the accepted file types for `file` questions, specify file extensions in the `body::accept` column, separated by a comma (e.g., .pdf, .doc). | 
+| `hxl` | To include <a href="https://hxlstandard.org">Humanitarian Exchange Language</a> (HXL) tags in your form, specify the tag (and optional attribute) in the `hxl` column, following the format `#tag` or `#tag+attribute`. | 
 
 Other columns can also be added to incorporate form logic into your XLSForm. 
 
