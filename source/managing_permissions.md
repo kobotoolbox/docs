@@ -33,7 +33,7 @@ The following permissions are available:
 | View submissions           | User can view submitted data.           |
 | Add submissions           | User can submit data using the form.         |
 | Edit submissions         | User can edit submitted data.           |
-| Validate submissions | User can [approve or reject](https://support.kobotoolbox.org/editing_deleting_data.html) submitted data. |
+| Validate submissions | User can [approve or reject](https://support.kobotoolbox.org/viewing_validating_data.html#validating-your-data) submitted data. |
 | Delete submissions         | User can delete submitted data.        |
 | Manage project      | User can do all of the above and manage project settings.                  |
 
