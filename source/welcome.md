@@ -22,7 +22,6 @@ To get started with form building in KoboToolbox, see our <a href="https://suppo
 </p>
 
 
-
 ## Developing forms
 
 KoboToolbox’s intuitive [Formbuilder](https://support.kobotoolbox.org/formbuilder.html) allows users to create forms with different question types, advanced form logic, and translations. Forms can also be built and uploaded using XLSForm.
@@ -70,7 +69,7 @@ To learn more about using mobile devices for data collection, see <a href="https
 
 Ensure data quality and generate insights using flexible table views and qualitative data features built into the KoboToolbox platform.
 
-* **Table views:** Customize views, display data in multiple languages, and [validate submissions](https://support.kobotoolbox.org/record_validation.html) in real time.
+* **Table views:** Customize views, display data in multiple languages, and [validate submissions](https://support.kobotoolbox.org/viewing_validating_data.html#validating-your-data) in real time.
 * **Automated transcription and translation:** Use automated features to [transcribe and translate](https://support.kobotoolbox.org/transcription-translation.html) audio responses and qualitative data.
 * **Qualitative analysis:** Use [qualitative analysis](https://support.kobotoolbox.org/qualitative_analysis.html) features to identify themes and patterns in audio responses.
 
