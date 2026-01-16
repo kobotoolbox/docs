@@ -57,5 +57,5 @@ To create your first form:
 </p>
 
 
-Once you have collected data, you can view, edit, and download it from the **DATA** page of your project. To learn more about managing your data, see the [Managing Projects & Data](https://support.kobotoolbox.org/managing-projects.html) support section.
+Once you have collected data, you can view, edit, and download it from the **DATA** page of your project. To learn more about managing your data, see [Managing Projects & Data](https://support.kobotoolbox.org/managing-projects.html).
 
