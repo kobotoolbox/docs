@@ -2,7 +2,7 @@
 
 <iframe src="https://www.youtube.com/embed/kefdxYOcgls?si=uY_tijozM5cpMVb3" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-GPS questions in KoboToolbox allow you to collect precise geographic information as single points, or a collection of points representing a path or area during data collection. Each GPS record includes latitude, longitude, altitude, and accuracy, which you can view directly in the data table. KoboToolbox also provides a built-in <strong>Map view</strong> that helps users visualize single GPS points, explore patterns, and better understand where submissions were collected.
+GPS questions in KoboToolbox allow you to collect precise geographic information as single points, or a collection of points representing a path or area during data collection. Each GPS record includes latitude, longitude, altitude, and accuracy, which you can view directly in the data table. KoboToolbox also provides a built-in <strong>Map</strong> view that helps users visualize single GPS points, explore patterns, and better understand where submissions were collected.
 
 This article explains how to view and map GPS data in KoboToolbox and describes the available export formats for using geospatial data in other tools and workflows.
 
