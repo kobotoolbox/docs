@@ -1,5 +1,5 @@
 # Advanced options for exporting data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/857e76d455c0a4c4dad7512d57b2378bc627ac44/source/advanced_export.md" class="reference">16 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7e74acf0541d307d402a35b3ccecf45235258545/source/advanced_export.md" class="reference">19 Jan 2026</a>
 
 
 Advanced options provide greater control and flexibility when downloading and exporting your data. This article will guide you through customizing your data exports, from selecting data fields and handling various question types to setting parameters for different analytical needs.
@@ -31,7 +31,7 @@ Advanced export options allow you to refine your data download by including data
 | :----------------- | :------------------------------------ |
 | Include data from all […] versions &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; | By default, this option is checked. This allows you to download data from all form versions, including deleted questions or choices. If unchecked, only data from the latest deployed form version will be downloaded. |
 | Select questions to be exported | To export data from specific questions, enable this option and select the questions to include. |
-| Data range | To export data submitted within a specific date range, enable this option and select the start and/or end dates. Date filters are based on submission time and use the UTC time zone. Date submitted on the <strong>start</strong> and <strong>end</strong> dates are included in the exports. |
+| Date range | To export data submitted within a specific date range, enable this option and select the **start** and/or **end** dates. Date filters are based on submission time and use the UTC time zone. Date submitted on the start and end dates are included in the exports. |
 
 ![How to select data fields](images/advanced_export/select_data_fields.png)
 
