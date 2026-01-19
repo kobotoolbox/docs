@@ -32,7 +32,7 @@ To open the map:
 2. In the left menu, select <i class="k-icon-map-view"></i> <strong>Map</strong>
 3. If your form includes at least one geopoint question, the collected locations appear on the map.
 
-[A world map with orange geopoints in the United States, Canada, Columbia, Brasil, France, UK, Italy, Russia, Morocco, Nigera, Kenya, Pakistan](images/mapping_gps/map.png)
+![World map with orange geopoints in different countries](images/mapping_gps/map.png)
 
 You can zoom in or out using the <i class="k-icon-plus"></i> and <i class="k-icon-minus"></i> buttons in the top left corner of the map. To view the map in full screen, click <i class="k-icon-expand"></i> <strong>Toggle fullscreen</strong> in the top right corner.
 
@@ -51,7 +51,7 @@ To select a different question:
 1. Click <i class="k-icon-settings"></i> <strong>Map display settings</strong>.
 2. Select a different geopoint question from the list.
 
-[Map settings window for choosing geopoint question](source/images/mapping_gps/select.png) 
+![Map settings window for choosing geopoint question](source/images/mapping_gps/select.png) 
 
 ### Customizing the map
 
@@ -71,7 +71,7 @@ To change the base map layer:
 - Click <i class="k-icon-layer"></i> <strong>Toggle layers</strong> in the top right corner.
 - Select a base layer, such as OpenStreetMap, OpenTopoMap, ESRI World Imagery, or Humanitarian. The default base layer is OpenStreetMap.
 
-[The base layer of the world map](source/images/mapping_gps/base_layer.png)
+![The base layer of the world map](source/images/mapping_gps/base_layer.png)
 
 You can also add additional custom layers on top of your map:
 1. Open <i class="k-icon-settings"></i> <strong>Map display settings</strong>.
@@ -89,7 +89,7 @@ To disaggregate points:
 1. Click <strong>Disaggregate by survey responses</strong> in the bottom left corner of the map.
 2. Select the question you want to use to categorize the points. You can also change the display language.
 
-[World map displaying disaggregated geopoint markers in shades of blue](images/mapping_gps/disaggregate.png)
+![World map displaying disaggregated geopoint markers in shades of blue](images/mapping_gps/disaggregate.png)
 
 To change the color set used for disaggregated points:
 
