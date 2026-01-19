@@ -109,13 +109,16 @@
           
   <section id="pulling-data-from-an-external-csv">
 <h1>Pulling data from an external CSV<a class="headerlink" href="#pulling-data-from-an-external-csv" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/ee6c39fa624411c56d47b08cad31f8005c0b61ce/source/pull_data_kobotoolbox.md" class="reference">30 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8152bf9d3ba47f7c99c19c853f44d633220beb54/source/pull_data_kobotoolbox.md" class="reference">19 Jan 2026</a></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> function in XLSForm lets you dynamically retrieve information from an external CSV file while completing a form. This allows you to reference existing datasets and automatically pull in related details, avoiding the need for enumerators to re-enter the same information.</p>
 <p>For example, you can use <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> to:</p>
 <ul class="simple">
 <li><p><strong>Auto-fill related information:</strong> When an ID, code, or key is entered, automatically retrieve linked details such as a name, category, or description.</p></li>
 <li><p><strong>Preload background data:</strong> Load information from external files so enumerators only need to collect new or updated data.</p></li>
 </ul>
+<p class="note">
+    <strong>Note:</strong> The <code>pulldata()</code> function uses external CSV files as its data source. If you want to reference data from another KoboToolbox project instead of a CSV file, you can use <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>.
+</p>
 <p>Using <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> helps reduce errors, saves time during data collection, and ensures that forms remain consistent with external reference datasets. This function is supported in both the <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect Android app</a> and <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>. We recommend using <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a> to set up the <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> function.</p>
 <p>This article covers the following steps for pulling data from an external CSV:</p>
 <ul class="simple">
