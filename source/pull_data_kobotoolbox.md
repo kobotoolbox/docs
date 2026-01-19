@@ -7,6 +7,10 @@ For example, you can use `pulldata()` to:
 - **Auto-fill related information:** When an ID, code, or key is entered, automatically retrieve linked details such as a name, category, or description.
 - **Preload background data:** Load information from external files so enumerators only need to collect new or updated data.
 
+<p class="note">
+    <strong>Note:</strong> The <code>pulldata()</code> function uses external CSV files as its data source. If you want to reference data from another KoboToolbox project instead of a CSV file, you can use <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>.
+</p>
+
 Using `pulldata()` helps reduce errors, saves time during data collection, and ensures that forms remain consistent with external reference datasets. This function is supported in both the <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect Android app</a> and <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>. We recommend using <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a> to set up the `pulldata()` function.
 
 This article covers the following steps for pulling data from an external CSV:
