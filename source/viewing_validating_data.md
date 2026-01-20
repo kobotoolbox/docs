@@ -54,7 +54,7 @@ You can change how many rows are shown per page using the dropdown at the bottom
 <strong>Note:</strong> Displaying many rows at once can slow down your browser.
 </p>
 
-Use the <i class="k-icon-caret-left"></i> **PREV** and <i class="k-icon-caret-right"></i> **NEXT** arrows, or enter a page number, to move through the data table.
+Use the <i class="k-icon-caret-left"></i> **PREV** and **NEXT** <i class="k-icon-caret-right"></i> arrows, or enter a page number, to move through the data table.
 
 ## Filtering and sorting your data
 
@@ -67,8 +67,8 @@ By default, submissions in KoboToolbox appear in the data table in submission or
 For each column in the data table, you can use the following features:
 
 - **Search:** Use the search bar above text, number, and date fields to filter results. For example, you can search for a unique ID or filter by a specific age.
-- **Filter:** For fields based on select type questions, click Show all in the column header to open a list of answer options. Select an option to filter the responses.
-- **Sort:** Click a column header and choose Sort A → Z or Sort Z → A to change the order of submissions.
+- **Filter:** For fields based on select type questions, click **Show all** in the column header to open a list of answer options. Select an option to filter the responses.
+- **Sort:** Click a column header and choose Sort **A → Z** or **Sort Z → A** to change the order of submissions.
 
 <p class="note">
 <strong>Note:</strong> Sorting the table applies to all users and persists after you leave the <strong>Table</strong> view. Searching and filtering applies only to you while you are in the <strong>Table</strong> view and automatically resets when you leave it.
@@ -101,6 +101,7 @@ Within the single submission view, navigate through submissions using **< Previo
 Record validation helps project teams maintain data quality, track review status, and flag issues that require follow-up. Validation status appears as a dedicated column in the **Table** view, and users with appropriate permissions can update them for individual or multiple submissions.
 
 The available statuses are:
+
 - **Approved:** The submission has been reviewed and confirmed to be complete, accurate, and suitable for use in analysis.
 - **Not approved:** The submission does not meet data quality requirements and should be excluded from analysis or removed from the dataset.
 - **On hold:** The submission requires review. Additional verification or follow-up is needed before the data can be accepted or rejected.
