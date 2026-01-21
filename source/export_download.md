@@ -32,7 +32,7 @@ You can choose from the following export types:
 | GeoJSON           | This is an open standard geospatial data interchange format, best for integrating with GIS software like ArcGIS. This file type is recommended for analyzing GPS data.            |
 | SPSS Labels           | Generates an SPSS syntax file that applies question labels and value labels to variables of KoboToolbox data imported into SPSS. For more information, see <a href="https://support.kobotoolbox.org/converting_to_spss_and_stata.html">Converting Data into SPSS and/or Stata</a>.         |
 | GPS Coordinates (KML)               | Generates a KML file for working with your data in GIS software, such as Google Earth. This export format will not be supported in the future. We recommend using one of the other available export types instead. |
-| Media Attachments (ZIP)               |  Downloads a ZIP file containing all media collected through the form.                               |
+| Media Attachments (ZIP)               |  Downloads a ZIP file containing all <a href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">media collected through the form</a>.                               |
 | XLS (legacy)              | Generates an .xlsx file (Microsoft Excel) using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.                                  |
 | CSV (legacy)               | Generates a CSV file using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.                                  |
 
