@@ -169,17 +169,18 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :caption: Managing Projects & Data
   :name: home-page-toc-managing-projects
 
-  kobotoolbox_interface.md
-  managing_projects.md
-  viewing_validating_data.md
-  editing_deleting_data.md
+  kobotoolbox_interface
+  managing_projects
+  viewing_validating_data
+  editing_deleting_data
   export_download
   advanced_export
   managing_repeat_groups
   project_sharing_settings
   managing_permissions
-  managing_files_media.md
-  deleting_media
+  project_files_media
+  upload_media
+  managing_media_responses
   activity_logs
   getting_started_organization_feature
 
