@@ -109,7 +109,7 @@
           
   <section id="media-question-types">
 <h1>Media question types<a class="headerlink" href="#media-question-types" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/28f369e652f725c3819e193cfb84c18752116385/source/photo_audio_video_file.md" class="reference">22 Jan 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f3c594b314f2e5d7da5cf72e85ce99424eb6caa1/source/photo_audio_video_file.md" class="reference">22 Jan 2026</a></p>
 <p>Many data collection projects require more than just quantitative data. KoboToolbox allows you to capture various media files from respondents, including photos, audio recordings, videos, and files, to provide key qualitative information and add visual and auditory depth to your datasets.</p>
 <p>The following media question types are available in the KoboToolbox Formbuilder:</p>
 <table class="docutils align-default">
@@ -240,6 +240,11 @@
 <details>
   <summary><strong>Audio recording in Enketo prevents access to other questions</strong></summary>
   When a user records an audio question in Enketo, other questions are locked until the recording is complete. This ensures that the audio is fully captured before the user proceeds with the rest of the form.
+</details>
+<br>
+<details>
+  <summary><strong>Collecting EXIF data from uploaded images</strong></summary>
+  When images are uploaded through Enketo or KoboToolbox, EXIF data is not preserved by default. To retain EXIF data, use a <strong>File</strong> question type and set the <strong>Accepted Files</strong> parameter (<code>body::accept</code> in XLSForm) to <code>.jpg, .jpeg, .png</code>.
 </details>
 </section>
 </section>
