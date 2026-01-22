@@ -76,6 +76,10 @@ To update your list of choices, edit the external file as needed, re-upload it t
 
 ![Upload media](images/select_from_file_xls/upload_media.png) 
 
+<p class="note">
+    To learn more about uploading media files, see <a href="https://support.kobotoolbox.org/upload_media.html">Uploading media files to a project</a>.
+</p>
+
 ## Troubleshooting
 
 <details>
