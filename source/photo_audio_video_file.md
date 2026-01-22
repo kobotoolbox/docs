@@ -68,6 +68,10 @@ To add an advanced appearance:
 
 Beyond their basic function, media questions also offer advanced parameters that allow you to manage file sizes and restrict accepted file types.
 
+<p class="note">
+<strong>Note:</strong> Each file uploaded by a respondent can be up to 10 MB in size, with a maximum total of 100 MB per submission.
+</p>
+
 ### Lowering image sizes
 
 If your project involves collecting a significant amount of media, you might encounter difficulties uploading files to KoboToolbox, depending on your internet speed. Users of the [Community Plan](https://www.kobotoolbox.org/pricing/) are also limited to 1GB of free file storage. Therefore, it is advisable to manage the file sizes of the media files you collect.
