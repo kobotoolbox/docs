@@ -1,11 +1,15 @@
 # Pulling data from an external CSV 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ee6c39fa624411c56d47b08cad31f8005c0b61ce/source/pull_data_kobotoolbox.md" class="reference">30 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8152bf9d3ba47f7c99c19c853f44d633220beb54/source/pull_data_kobotoolbox.md" class="reference">19 Jan 2026</a>
 
 The `pulldata()` function in XLSForm lets you dynamically retrieve information from an external CSV file while completing a form. This allows you to reference existing datasets and automatically pull in related details, avoiding the need for enumerators to re-enter the same information.
 
 For example, you can use `pulldata()` to:
 - **Auto-fill related information:** When an ID, code, or key is entered, automatically retrieve linked details such as a name, category, or description.
 - **Preload background data:** Load information from external files so enumerators only need to collect new or updated data.
+
+<p class="note">
+    <strong>Note:</strong> The <code>pulldata()</code> function uses external CSV files as its data source. If you want to reference data from another KoboToolbox project instead of a CSV file, you can use <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>.
+</p>
 
 Using `pulldata()` helps reduce errors, saves time during data collection, and ensures that forms remain consistent with external reference datasets. This function is supported in both the <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect Android app</a> and <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>. We recommend using <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a> to set up the `pulldata()` function.
 

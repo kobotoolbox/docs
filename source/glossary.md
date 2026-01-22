@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d28bde7613c5e19764314b4e88f6b1e31f941e8c/source/glossary.md" class="reference">30 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5c9f0c5e963d76d2f81701257272894d4f3f9405/source/glossary.md" class="reference">12 Jan 2026</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
@@ -158,7 +158,7 @@ The language that displays by default when a form is opened, usually the languag
 A preset answer that automatically appears when a form loads, allowing respondents to keep the value as is or replace it with their own response.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Using question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Using question options in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
 </p>
 
 ---
@@ -317,7 +317,7 @@ The KoboToolbox server hosted in the United States, which users can select for s
 Additional instructions for a question that are hidden behind an expandable section and can be opened by the respondent to view extra guidance during data collection.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Using question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Using question options in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
 </p>
 
 **Related term(s):** [Regular hint](https://support.kobotoolbox.org/glossary.html#regular-hint)
@@ -538,7 +538,7 @@ To update an already deployed form after changes have been made, replacing the p
 Additional information displayed directly below a question label to help respondents or enumerators understand how to answer. Regular hints are always visible in the form.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Using question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Using question options in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
 </p>
 
 **Related term(s):** [Guidance hint](https://support.kobotoolbox.org/glossary.html#guidance-hint)

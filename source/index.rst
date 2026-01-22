@@ -202,6 +202,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   transcription-translation
   qualitative_analysis
   converting_to_spss_and_stata
+  mapping_gps
 
 .. raw:: html
 
