@@ -63,7 +63,7 @@ Supported file formats for these features include CSV, XML, and GeoJSON.
 
 ### Uploading files and media to KoboToolbox
 
-After adding media references or external files to your form, you must upload those files to your project. This is done in your project’s **SETTINGS** page.
+After adding media references or external files to your form, you must upload those files to your project. This is done in your project’s **SETTINGS > Media** page.
 
 <p class="note">
   To learn how to upload files and media to KoboToolbox, see <a href="https://support.kobotoolbox.org/upload_media.html">Uploading media files to a project</a>.
@@ -87,7 +87,7 @@ The following types of files are currently supported for upload to KoboToolbox:
 In addition to including media in your form, you can collect files and media directly from respondents during data collection. This includes **images, audio recordings, videos, and other file types.** Collecting media allows you to capture qualitative information that adds visual or audio context to your data.
 
 <p class="note">
-<strong>Note:</strong> Files uploaded by respondents can be up to 5 MB in size.
+<strong>Note:</strong> Each file uploaded by a respondent can be up to 10 MB in size, with a maximum total of 100 MB per submission.
 </p>
 
 The following media question types are available in KoboToolbox:
