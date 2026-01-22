@@ -1,5 +1,5 @@
 # Media question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/28f369e652f725c3819e193cfb84c18752116385/source/photo_audio_video_file.md" class="reference">22 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f3c594b314f2e5d7da5cf72e85ce99424eb6caa1/source/photo_audio_video_file.md" class="reference">22 Jan 2026</a>
 
 Many data collection projects require more than just quantitative data. KoboToolbox allows you to capture various media files from respondents, including photos, audio recordings, videos, and files, to provide key qualitative information and add visual and auditory depth to your datasets.
 
