@@ -108,4 +108,12 @@ By default, the **File** question type accepts all file types. To restrict the t
   When a user records an audio question in Enketo, other questions are locked until the recording is complete. This ensures that the audio is fully captured before the user proceeds with the rest of the form.
 </details>
 
+<br>
+
+<details>
+  <summary><strong>Collecting EXIF data from uploaded images</strong></summary>
+  When images are uploaded through Enketo or KoboToolbox, EXIF data is not preserved by default. To retain EXIF data, use a <strong>File</strong> question type and set the <strong>Accepted Files</strong> parameter (<code>body::accept</code> in XLSForm) to <code>.jpg, .jpeg, .png</code>.
+
+</details>
+
 
