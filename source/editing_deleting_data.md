@@ -38,7 +38,7 @@ This method opens a submission in Enketo so you can correct responses.
 
 To edit a submission in Enketo:
 
-1. In the submission row, next to the checkbox, click <i class=""></i> **Edit.** The submission opens in an Enketo web form.
+1. In the submission row, next to the checkbox, click <i class="k-icon-edit"></i> **Edit.** The submission opens in an Enketo web form.
 2. Make the necessary changes.
 3. Click **Submit.**
 
@@ -57,7 +57,7 @@ This method lets you bypass form logic and edit stored responses directly withou
 To edit raw data in KoboToolbox:
 
 1. Select the submission using the checkbox.
-2. Click <i class=""></i> **Edit** above the data table.
+2. Click <i class="k-icon-edit"></i> **Edit** above the data table.
 3. In the edit window, click **Edit** next to the field you want to change and enter the new value.
     - For select type questions, enter one or more valid [XML values](https://support.kobotoolbox.org/glossary.html#xml-value), separated by spaces.
 4. Click **Save**, then **Confirm & close.**
@@ -76,7 +76,7 @@ When working with large datasets, you may need to update multiple records at the
 You can edit multiple submissions in bulk using the raw data editing method in KoboToolbox:
 
 1. Select the submissions you want to edit using the checkboxes.
-2. Click <i class=""></i> **Edit** above the table. A window opens showing responses for all selected submissions.
+2. Click <i class="k-icon-edit"></i> **Edit** above the table. A window opens showing responses for all selected submissions.
 3. Click **Edit** next to the field you want to update.
 4. Enter a new value, or click **Select** to apply an existing value across all selected submissions.
 5. Click **Save**, then **Confirm & close.**
@@ -91,7 +91,7 @@ You can edit multiple submissions in bulk using the raw data editing method in K
 
 You can duplicate a submission using the following steps:
 
-1. In the submission row, next to the checkbox, click <i class=""></i> **View.**
+1. In the submission row, next to the checkbox, click <i class="k-icon-view"></i> **View.**
 2. In the top right corner, click **Duplicate.**
 3. The duplicated submission opens in a new window, where you can **Edit** or **Discard** it as needed.
 
@@ -108,7 +108,7 @@ Deleting data permanently removes records from your project and should be done w
 ### Deleting submissions
 
 1. Select the submission(s) you want to delete.
-2. Click <i class=""></i> **Delete** above the data table.
+2. Click <i class="k-icon-trash"></i> **Delete** above the data table.
 3. Confirm the deletion.
 
 Deleted submissions are permanently removed and cannot be recovered.
@@ -126,7 +126,7 @@ In some cases, you may want to remove responses for a single field without delet
 There is no dedicated option to delete a single field value. Instead, you can clear or replace the value using the following approach:
 
 1. Select the submission(s) you want to update.
-2. Click <i class=""></i> **Edit** above the data table.
+2. Click <i class="k-icon-edit"></i> **Edit** above the data table.
 3. Click **Edit** next to the field you want to clear, then enter a space or a replacement value such as “deleted” or “N/A”.
 4. Click **Save**, then **Confirm & close.**
 
