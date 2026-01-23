@@ -166,7 +166,7 @@ In this situation, use raw data editing in KoboToolbox to update the required fi
 
 <details>
   <summary><strong>Coordinate edits fail to save if the required format is not used</strong></summary>
-  When editing coordinates using the raw data editing method, values must follow the exact KoboToolbox format: `latitude longitude altitude accuracy`. For example, the coordinates for Paris would be `48.8566 2.3522 0 0`. <br><br>
+  When editing coordinates using the raw data editing method, values must follow the exact KoboToolbox format: <code>latitude longitude altitude accuracy</code>. For example, the coordinates for Paris would be <code>48.8566 2.3522 0 0</code>. <br><br>
 If any part is missing or incorrectly formatted, the edit may not save or may cause problems during export. Make sure all four values are included and separated by spaces before saving.
 </details>
 
