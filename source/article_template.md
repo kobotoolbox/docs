@@ -1,3 +1,8 @@
+---
+noindex: true
+---
+
+
 # Article title
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f1e655525a6b42d8cd6761878119643fff6200fd/source/article_template.md" class="reference">19 Nov 2025</a>
 
