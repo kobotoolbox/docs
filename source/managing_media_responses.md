@@ -77,7 +77,7 @@ You can delete individual images, videos, and files directly from the data table
 3. Click the <i class="k-icon k-icon-more"></i> **three dots** at the top of the file preview.
 4. Click <i class="k-icon k-icon-trash"></i> **Delete**, then **Delete** again to confirm.
 
-![image](/images/deleting_media/delete_from_table.png)
+![Delete media from table](/images/managing_media_responses/delete_from_table.png)
 
 ### Deleting individual media files in the submission view
 
@@ -89,7 +89,7 @@ You can also delete media files by opening the submission view:
 4. Click the <i class="k-icon k-icon-more"></i> **three dots** to the right of the media file.
 5. Click <i class="k-icon k-icon-trash"></i> **Delete**, then **Delete** again to confirm.
 
-![image](/images/deleting_media/open_submission_view.png)
+![Open submission view](/images/managing_media_responses/open_submission_view.png)
 
 ### Deleting audio files in the audio question view
 
@@ -100,7 +100,7 @@ You can delete audio files by opening the audio question view for transcription,
 3. Click the <i class="k-icon k-icon-more"></i> **three dots** to the right of the audio file.
 4. Click <i class="k-icon k-icon-trash"></i> **Delete**, then **Delete** again to confirm.
 
-![image](/images/deleting_media/delete_audio.png)
+![Delete audio](/images/managing_media_responses/delete_audio.png)
 
 ### Deleting media files in bulk
 
@@ -117,7 +117,7 @@ You may need to delete media files in bulk, for example, to manage storage space
   <strong>Note:</strong> With this approach, all media files from each selected submission will be deleted; it is not currently possible to choose only files for a given question.
 </p>
 
-![image](/images/deleting_media/bulk_delete.png)
+![Bulk delete media files](/images/managing_media_responses/bulk_delete.png)
 
 ## Troubleshooting
 
