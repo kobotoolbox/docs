@@ -75,6 +75,11 @@ def update_file(path):
     if not path.endswith('.md'):
         sys.stdout.write(f'Skipping non-markdown file: {path}\n')
         return
+
+    # Skip the template file
+    if os.path.basename(path) == 'article_template.md':
+        sys.stdout.write(f'Skipping template file: {path}\n')
+        return
     
     _hash, date = get_git_data(path)
 
