@@ -1,13 +1,13 @@
-```{meta}
-:noindex:
-```
+---
+nosearch: true
+---
 
 
 # Article title
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f1e655525a6b42d8cd6761878119643fff6200fd/source/article_template.md" class="reference">19 Nov 2025</a>
 
 
-This is where your intro goes. Note above that the "Last updated" code will be automatically updated with the correct article name and date when you publish, so not manual change is needed. Remember to name this file according to the article title, and end the file name with `.md`.
+This is where your intro goes. Note above that the "Last updated" code will be automatically updated with the correct article name and date when you publish, so no manual change is needed. Remember to name this file according to the article title, and end the file name with `.md`.
 
 This article includes:
 
