@@ -1,6 +1,6 @@
----
-noindex: true
----
+```{meta}
+:noindex:
+```
 
 
 # Article title
