@@ -1,5 +1,4 @@
 ---
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2efcf67df736e459370a369761c6e3df97f8a235/source/article_template.md" class="reference">26 Jan 2026</a>
 noindex: true
 ---
 
