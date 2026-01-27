@@ -1,5 +1,5 @@
 # Editing and deleting your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/editing_deleting_data.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/349ca74456384bec44981df1c806625308b0b7f4/source/editing_deleting_data.md" class="reference">27 Jan 2026</a>
 
 Editing and deleting data helps **maintain data quality** after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including **editing submissions in Enketo, editing raw data directly, and applying bulk updates.** This article explains each method and when to use it.
 
@@ -19,7 +19,7 @@ KoboToolbox offers two editing approaches, each designed for different use cases
 
 The two methods for editing submissions in KoboToolbox are:
 
-- **Editing submissions in Enketo:** Opens the submission in Enketo so you can correct responses and resubmit the form. This method is recommended when form logic needs to be applied.
+- **Editing submissions in Enketo:** Opens the submission in [Enketo](https://support.kobotoolbox.org/glossary.html#enketo-web-forms) so you can correct responses and resubmit the form. This method is recommended when form logic needs to be applied.
 - **Editing raw data directly in KoboToolbox:** Opens a data editor that lets you modify specific responses directly. This method is recommended when you need precise control over edits and do not need form logic to apply.
 
 Each method comes with its advantages and limitations:
@@ -39,7 +39,7 @@ This method opens a submission in Enketo so you can correct responses.
 
 To edit a submission in Enketo:
 
-1. In the submission row, next to the checkbox, click <i class="k-icon-edit"></i> **Edit.** The submission opens in an Enketo web form.
+1. In the submission row, next to the checkbox, click <i class="k-icon-edit"></i> **Edit.** The submission opens in an [Enketo web form](https://support.kobotoolbox.org/glossary.html#enketo-web-forms).
 2. Make the necessary changes.
 3. Click **Submit.**
 
@@ -93,7 +93,7 @@ You can edit multiple submissions in bulk using the raw data editing method in K
 You can duplicate a submission using the following steps:
 
 1. In the submission row, next to the checkbox, click <i class="k-icon-view"></i> **View.**
-2. In the top right corner, click **Duplicate.**
+2. In the top right corner of the submission window, click **Duplicate.**
 3. The duplicated submission opens in a new window, where you can **Edit** or **Discard** it as needed.
 
 ![Duplicate submissions](images/editing_deleting_data/duplicate.png)

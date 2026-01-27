@@ -1,5 +1,5 @@
 # Managing projects in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cb37067407cb84c6546a86fe70799845aaa46cf8/source/managing_projects.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/eb9e81165058741a037d5081a0414e28b59cc180/source/managing_projects.md" class="reference">27 Jan 2026</a>
 
 A **project** in KoboToolbox corresponds to a form, its settings, and all data submitted to that form. Project management begins on the **Projects home page**, where you can view, sort, filter, and organize your projects. You can also create new projects, update existing ones, and manage how they are shared with collaborators.
 
@@ -36,7 +36,7 @@ When you open a project, you can manage it through the tabs at the top of the pa
 * **SUMMARY:** Overview of the project metadata and submissions.
 * **FORM:** Edit the form, deploy changes, and copy the form link.
 * **DATA:** View submitted data in different formats, generate reports, and export data.
-* **SETTINGS:** Update project settings, including [sharing permissions](https://support.kobotoolbox.org/managing_permissions.html), [form media](https://support.kobotoolbox.org/managing_files_media.html), and general configuration.
+* **SETTINGS:** Update project settings, including [sharing permissions](https://support.kobotoolbox.org/managing_permissions.html), [form media](https://support.kobotoolbox.org/upload_media.html), and general configuration.
 
 <p class="note">
   To learn more about managing your data in KoboToolbox, see <a href="https://support.kobotoolbox.org/viewing_validating_data.html">Viewing and validating your data</a> and <a href="https://support.kobotoolbox.org/editing_deleting_data.html">Editing and deleting your data</a>. 
