@@ -1,13 +1,13 @@
 # Recently updated Support Articles
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recently_updated.md" class="reference">28 Oct 2025</a>
 
-1. [Media question types](photo_audio_video_file.md) (22 Jan 2026)
-1. [Mapping your GPS data](mapping_gps.md) (19 Jan 2026)
-1. [Pulling data from an external CSV](pull_data_kobotoolbox.md) (19 Jan 2026)
-1. [Advanced options for exporting data](advanced_export.md) (19 Jan 2026)
-1. [Exporting and downloading your data](export_download.md) (19 Jan 2026)
-1. [Quickstart guide](quick_start.md) (16 Jan 2026)
-1. [Introduction to KoboToolbox](welcome.md) (16 Jan 2026)
-1. [Question options in XLSForm](question_options_xls.md) (13 Jan 2026)
-1. [Glossary of KoboToolbox terms](glossary.md) (12 Jan 2026)
-1. [Adding required logic in XLSForm](required_logic_xls.md) (12 Jan 2026)
+1. [Selecting options from an external file](select_from_file_xls.md) (27 Jan 2026)
+1. [Managing respondent-submitted media](managing_media_responses.md) (27 Jan 2026)
+1. [Viewing and validating your data](viewing_validating_data.md) (27 Jan 2026)
+1. [Project files and media overview](project_files_media.md) (27 Jan 2026)
+1. [Managing repeat group data](managing_repeat_groups.md) (27 Jan 2026)
+1. [Adding media to an XLSForm](media.md) (27 Jan 2026)
+1. [Pulling data from an external CSV](pull_data_kobotoolbox.md) (27 Jan 2026)
+1. [Editing and deleting your data](editing_deleting_data.md) (27 Jan 2026)
+1. [Managing projects in KoboToolbox](managing_projects.md) (27 Jan 2026)
+1. [Overview of the KoboToolbox interface](kobotoolbox_interface.md) (27 Jan 2026)

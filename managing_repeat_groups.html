@@ -25,7 +25,7 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Archiving and Unarchiving Projects" href="archiving_projects.html" />
+    <link rel="next" title="Sharing projects with project-level settings" href="project_sharing_settings.html" />
     <link rel="prev" title="Advanced options for exporting data" href="advanced_export.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
@@ -109,7 +109,7 @@
           
   <section id="managing-repeat-group-data">
 <h1>Managing repeat group data<a class="headerlink" href="#managing-repeat-group-data" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/cb137e68b19147fcd0331a6f7919f5563dcebeca/source/managing_repeat_groups.md" class="reference">21 Aug 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/managing_repeat_groups.md" class="reference">27 Jan 2026</a></p>
 <p>KoboToolbox allows you to collect repeated data within a form, for example, when conducting a household survey where all members are asked the same questions. This article explains how to view, edit, and export repeat group data, and how to link repeat group data to the main data.</p>
 <p class="note">
   To learn more about setting up repeat groups in your forms, see <a     href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups</a>.
@@ -119,7 +119,7 @@
 <p>You can view repeated data in the data table, which you can find in the <strong>Table</strong> view of the <strong>DATA</strong> tab in the KoboToolbox project interface. Responses to repeated questions appear in a single column per question, with responses separated by a comma, as shown below.</p>
 <p><img alt="image" src="_images/data_table.png" /></p>
 <p>You can also view the complete data for any given submission, including each repetition of repeat groups, by clicking the <i class="k-icon-view"></i><strong>Open</strong> button to the left of each submission.</p>
-<p>To edit repeat group data, click the <i class="k-icon-edit"></i><strong>Edit</strong> button. This will open up the form and allow you to <a class="reference external" href="https://support.kobotoolbox.org/howto_edit_single_submissions.html">edit the form data</a> before resubmitting. <a class="reference external" href="https://support.kobotoolbox.org/howto_edit_multiple_submissions.html">Bulk editing</a> repeat group data is not currently supported.</p>
+<p>To edit repeat group data, click the <i class="k-icon-edit"></i><strong>Edit</strong> button. This will open up the form and allow you to <a class="reference external" href="https://support.kobotoolbox.org/editing_deleting_data.html">edit the form data</a> before resubmitting. <a class="reference external" href="https://support.kobotoolbox.org/editing_deleting_data.html#editing-multiple-submissions-in-bulk">Bulk editing</a> repeat group data is not currently supported.</p>
 <p class="note">
   <b>Note</b>: Repeat group data cannot be displayed in the <b>Reports</b> or <b>Map</b> views due to the data structure of repeat groups.
 </p>
@@ -127,7 +127,7 @@
 <section id="exporting-repeat-group-data">
 <h2>Exporting repeat group data<a class="headerlink" href="#exporting-repeat-group-data" title="Link to this heading">¶</a></h2>
 <p>To export data from a form with repeat groups, you must download your data in <strong>XLS format</strong>. Each repeat group will be exported <strong>as a separate sheet</strong> in the exported file. CSV download will only provide data from the primary data.</p>
-<p><img alt="image" src="_images/download.png" /></p>
+<p><img alt="image" src="_images/download1.png" /></p>
 <p class="note"> 
     To learn more about exporting your data, see <a href="https://support.kobotoolbox.org/export_download.html">Exporting and downloading your data</a>.
 </p>
@@ -278,9 +278,10 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Project Summary</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Record Validation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Deleting a Project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Overview of the KoboToolbox interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Managing projects in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Viewing and validating your data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Editing and deleting your data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and downloading your data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Advanced options for exporting data</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Managing repeat group data</a><ul>
@@ -289,16 +290,13 @@
 <li class="toctree-l2"><a class="reference internal" href="#linking-repeat-group-data">Linking repeat group data</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archiving and Unarchiving Projects</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Sharing projects with project-level settings</a></li>
 <li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Sharing projects with user-level permissions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapping, Sharing, and Exporting GPS Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editing or Deleting a Single Submission</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editing Responses in Multiple Submissions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Downloading Photos and Other Media</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Deleting media files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Using the Team management feature</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Project files and media overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Uploading media files to a project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Managing respondent-submitted media</a></li>
 <li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Monitoring project and account activity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Using the Team management feature</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Analyzing Data</span></p>
 <ul>

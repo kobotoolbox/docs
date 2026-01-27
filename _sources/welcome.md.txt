@@ -1,5 +1,5 @@
 # Introduction to KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/43e4b0c0fe32557f6ba564d02b1f5ae8d50f12d3/source/welcome.md" class="reference">16 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/welcome.md" class="reference">27 Jan 2026</a>
 
 KoboToolbox is an innovative open source platform for collecting, managing, and visualizing data. It is the most widely used data tool for social impact initiatives across the globe. 
 
@@ -19,7 +19,6 @@ This article introduces KoboToolbox and highlights its core functionalities. It 
 <p class="note">
 To get started with form building in KoboToolbox, see our <a href="https://support.kobotoolbox.org/quick_start.html">Quickstart guide</a>. 
 </p>
-
 
 
 ## Developing forms
@@ -69,7 +68,7 @@ To learn more about using mobile devices for data collection, see <a href="https
 
 Monitor, review, and export your data using flexible table views and download options.
 
-* **Table views:** Customize views, display data in multiple languages, and [validate submissions](https://support.kobotoolbox.org/record_validation.html) in real time.
+* **Table views:** Customize views, display data in multiple languages, and [validate submissions](https://support.kobotoolbox.org/viewing_validating_data.html#validating-your-data) in real time.
 * **Download data:** [Download and export data](https://support.kobotoolbox.org/export_download.html) in multiple formats, including XLS, CSV, KML, ZIP, and GeoJSON.
 
 ![image](/images/welcome/Health-Needs-Survey-Desktop.png)

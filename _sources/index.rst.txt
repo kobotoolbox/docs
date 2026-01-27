@@ -169,22 +169,20 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :caption: Managing Projects & Data
   :name: home-page-toc-managing-projects
 
-  project_summary
-  record_validation
-  delete_project
+  kobotoolbox_interface
+  managing_projects
+  viewing_validating_data
+  editing_deleting_data
   export_download
   advanced_export
   managing_repeat_groups
-  archiving_projects
   project_sharing_settings
   managing_permissions
-  export_gps
-  howto_edit_single_submissions
-  howto_edit_multiple_submissions
-  photo_download
-  deleting_media
-  getting_started_organization_feature
+  project_files_media
+  upload_media
+  managing_media_responses
   activity_logs
+  getting_started_organization_feature
 
 .. raw:: html
 
