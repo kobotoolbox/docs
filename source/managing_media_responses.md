@@ -42,7 +42,7 @@ To download a single file:
 To download media files in bulk:
 
 1. Go to the **DATA** page.
-2. Open the **Downloads** tab from the left-side menu.
+2. Open the <i class="k-icon-download"></i> **Downloads** tab from the left-side menu.
 3. Under **Select export type**, choose **Media Attachments (ZIP)**.
 4. Click **New Export** and wait for the export to complete.
 5. Download the generated `.zip` file from the table.
