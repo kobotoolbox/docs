@@ -1,5 +1,5 @@
 # Editing and deleting your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/editing_deleting_data.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/349ca74456384bec44981df1c806625308b0b7f4/source/editing_deleting_data.md" class="reference">27 Jan 2026</a>
 
 Editing and deleting data helps **maintain data quality** after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including **editing submissions in Enketo, editing raw data directly, and applying bulk updates.** This article explains each method and when to use it.
 
