@@ -36,7 +36,7 @@ When you open a project, you can manage it through the tabs at the top of the pa
 * **SUMMARY:** Overview of the project metadata and submissions.
 * **FORM:** Edit the form, deploy changes, and copy the form link.
 * **DATA:** View submitted data in different formats, generate reports, and export data.
-* **SETTINGS:** Update project settings, including [sharing permissions](https://support.kobotoolbox.org/managing_permissions.html), [form media](https://support.kobotoolbox.org/managing_files_media.html), and general configuration.
+* **SETTINGS:** Update project settings, including [sharing permissions](https://support.kobotoolbox.org/managing_permissions.html), [form media](https://support.kobotoolbox.org/upload_media.html), and general configuration.
 
 <p class="note">
   To learn more about managing your data in KoboToolbox, see <a href="https://support.kobotoolbox.org/viewing_validating_data.html">Viewing and validating your data</a> and <a href="https://support.kobotoolbox.org/editing_deleting_data.html">Editing and deleting your data</a>. 
