@@ -1,5 +1,5 @@
 # Managing projects in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cb37067407cb84c6546a86fe70799845aaa46cf8/source/managing_projects.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/eb9e81165058741a037d5081a0414e28b59cc180/source/managing_projects.md" class="reference">27 Jan 2026</a>
 
 A **project** in KoboToolbox corresponds to a form, its settings, and all data submitted to that form. Project management begins on the **Projects home page**, where you can view, sort, filter, and organize your projects. You can also create new projects, update existing ones, and manage how they are shared with collaborators.
 
