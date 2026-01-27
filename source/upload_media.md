@@ -1,4 +1,5 @@
 # Uploading media files to a project
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/upload_media.md" class="reference">27 Jan 2026</a>
 
 KoboToolbox allows you to upload media files and external data files for use in forms during data collection. This article describes the supported file types and explains how to upload media and external data files to your project from your local device or via a URL.
 

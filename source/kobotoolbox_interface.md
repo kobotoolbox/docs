@@ -1,4 +1,5 @@
 # Overview of the KoboToolbox interface
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/kobotoolbox_interface.md" class="reference">27 Jan 2026</a>
 
 This article provides an overview of the KoboToolbox interface and explains how to navigate the main pages where you create forms, manage data, and configure project settings. It introduces the **Projects home page** and the four main pages within each project: **SUMMARY**, **FORM**, **DATA**, and **SETTINGS**.
 
