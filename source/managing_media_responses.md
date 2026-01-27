@@ -64,11 +64,11 @@ When you export your data in CSV or XLS format, the exported file also includes 
 
 You may need to delete media files from your KoboToolbox project for various reasons, such as maintaining confidentiality, managing storage space, or correcting submission errors. You can delete media files individually, or delete multiple files in bulk.
 
-## Deleting individual media files
+### Deleting individual media files
 
 There are two ways to delete individual media files: directly from the data table or by opening the submission. Once a file is deleted, it is marked as _Deleted_ in the data table and cannot be recovered.
 
-### Deleting individual media files from the data table
+**Deleting individual media files from the data table**
 
 You can delete individual images, videos, and files directly from the data table, with the following steps:
 
@@ -79,7 +79,7 @@ You can delete individual images, videos, and files directly from the data table
 
 ![Delete media from table](images/managing_media_responses/delete_from_table.png)
 
-### Deleting individual media files in the submission view
+**Deleting individual media files in the submission view**
 
 You can also delete media files by opening the submission view:
 
@@ -91,7 +91,7 @@ You can also delete media files by opening the submission view:
 
 ![Open submission view](images/managing_media_responses/open_submission_view.png)
 
-### Deleting audio files in the audio question view
+**Deleting audio files in the audio question view**
 
 You can delete audio files by opening the audio question view for transcription, translation, and analysis of audio questions:
 
