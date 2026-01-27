@@ -57,6 +57,10 @@ To upload the media files to KoboToolbox:
 
 ![Upload media files](images/media/upload_media.png)
 
+<p class="note">
+    To learn more about uploading media files, see <a href="https://support.kobotoolbox.org/upload_media.html">Uploading media files to a project</a>.
+</p>
+
 ## Adding media to choices in XLSForm
 
 To add media files to option choices in your XLSForm:
@@ -126,7 +130,7 @@ To upload the translated media files to KoboToolbox:
 4. Deploy or redeploy your form to see media changes.
 
 <p class="note">
-    <strong>Note:</strong> To learn more about managing translations in XLSForm, see <a href="https://support.kobotoolbox.org/language_xls.html">Adding translations in XLSForm</a>.
+    To learn more about managing translations in XLSForm, see <a href="https://support.kobotoolbox.org/language_xls.html">Adding translations in XLSForm</a>.
 </p>
 
 ## Troubleshooting

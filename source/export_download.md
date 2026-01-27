@@ -32,9 +32,13 @@ You can choose from the following export types:
 | GeoJSON           | This is an open standard geospatial data interchange format, best for integrating with GIS software like ArcGIS. This file type is recommended for <a href="https://support.kobotoolbox.org/mapping_gps.html#exporting-as-geojson">analyzing GPS data</a>.            |
 | SPSS Labels           | Generates an <a href="https://support.kobotoolbox.org/converting_to_spss_and_stata.html">SPSS syntax file</a> that applies question labels and value labels to variables of KoboToolbox data imported into SPSS.         |
 | GPS Coordinates (KML)               | Generates a <a href="https://support.kobotoolbox.org/mapping_gps.html#exporting-as-kml">KML file</a> for working with your data in GIS software, such as Google Earth. This export format will not be supported in the future. We recommend using one of the other available export types instead. |
-| Media Attachments (ZIP)               |  Downloads a ZIP file containing all media collected through the form.                               |
+| Media Attachments (ZIP)               |  Downloads a ZIP file containing all <a href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">media</a> collected through the form.                               |
 | XLS (legacy)              | Generates an .xlsx file (Microsoft Excel) using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.                                  |
 | CSV (legacy)               | Generates a CSV file using a legacy KoboToolbox interface. Only use this option in case of occasional issues with standard XLS and CSV exports, as it will be removed in a future update.                                  |
+
+<p class="note">
+    To learn more about export types, see <a href="https://support.kobotoolbox.org/mapping_gps.html#exporting-gps-data">Exporting GPS data</a> and <a href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">Downloading media files</a>.
+</p>
 
 ## Value and header format
 

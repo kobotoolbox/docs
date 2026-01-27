@@ -33,7 +33,7 @@ The following permissions are available:
 | View submissions           | User can view submitted data.           |
 | Add submissions           | User can submit data using the form.         |
 | Edit submissions         | User can edit submitted data.           |
-| Validate submissions | User can [approve or reject](https://support.kobotoolbox.org/record_validation.html) submitted data. |
+| Validate submissions | User can [approve or reject](https://support.kobotoolbox.org/viewing_validating_data.html#validating-your-data) submitted data. |
 | Delete submissions         | User can delete submitted data.        |
 | Manage project      | User can do all of the above and manage project settings.                  |
 
@@ -99,7 +99,7 @@ To copy team permissions from another project:
 
 <details>
 <summary><strong>Tracking changes made by other users</strong></summary>
-KoboToolbox keeps <a href="https://support.kobotoolbox.org/activity_logs.html">Activity Logs</a> that show a complete timeline of account and project actions. <strong>Project History Logs</strong> record every modification inside a project—uploads, edits, deletions, and submissions—so you can trace changes, assign responsibility, and pinpoint when problems began.
+KoboToolbox keeps <a href="https://support.kobotoolbox.org/activity_logs.html">activity logs</a> that show a complete timeline of account and project actions. <strong>Project History Logs</strong> record every modification inside a project—uploads, edits, deletions, and submissions—so you can trace changes, assign responsibility, and pinpoint when problems began.
 </details>
 <br>
 <details>

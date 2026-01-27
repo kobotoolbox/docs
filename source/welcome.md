@@ -21,7 +21,6 @@ To get started with form building in KoboToolbox, see our <a href="https://suppo
 </p>
 
 
-
 ## Developing forms
 
 KoboToolbox’s intuitive [Formbuilder](https://support.kobotoolbox.org/formbuilder.html) allows users to create forms with different question types, advanced form logic, and translations. Forms can also be built and uploaded using XLSForm.
@@ -69,7 +68,7 @@ To learn more about using mobile devices for data collection, see <a href="https
 
 Monitor, review, and export your data using flexible table views and download options.
 
-* **Table views:** Customize views, display data in multiple languages, and [validate submissions](https://support.kobotoolbox.org/record_validation.html) in real time.
+* **Table views:** Customize views, display data in multiple languages, and [validate submissions](https://support.kobotoolbox.org/viewing_validating_data.html#validating-your-data) in real time.
 * **Download data:** [Download and export data](https://support.kobotoolbox.org/export_download.html) in multiple formats, including XLS, CSV, KML, ZIP, and GeoJSON.
 
 ![image](/images/welcome/Health-Needs-Survey-Desktop.png)

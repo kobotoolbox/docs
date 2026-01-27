@@ -80,7 +80,7 @@ When collecting data, it is essential to obtain informed consent from respondent
 Background audio recordings are treated very similarly to audio files collected in the survey. This means you can: 
 - View background audio recordings in the data table, under **DATA > Table.**
 - [Transcribe, translate, and analyze](https://support.kobotoolbox.org/transcription-translation.html) background audio files.
-- [Delete](https://support.kobotoolbox.org/deleting_media.html) background audio files.
+- [Delete](https://support.kobotoolbox.org/managing_media_responses.html#deleting-media-files) background audio files.
 - [Download background audio files](https://support.kobotoolbox.org/photo_download.html) as a ZIP file under **DATA > Downloads > Media Attachments (ZIP).**
 
 ![Managing audio data](images/recording_interviews/data_table.png)

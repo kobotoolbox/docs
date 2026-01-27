@@ -70,6 +70,10 @@ The final step in linking your external CSV file to your form is uploading the f
 
 ![Upload media](images/pull_data_kobotoolbox/upload_media.png) 
 
+<p class="note">
+    To learn more about uploading media files, see <a href="https://support.kobotoolbox.org/upload_media.html">Uploading media files to a project</a>.
+</p>
+
 ## Troubleshooting
 
 <details>
