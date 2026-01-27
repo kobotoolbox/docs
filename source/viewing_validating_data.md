@@ -91,7 +91,7 @@ The submission window displays all responses and includes the following options:
 - **Duplicate** the submission.
 - <i class="k-icon-print"></i> **Print** the submission.
 - <i class="k-icon-trash"></i> **Delete** the submission.
-- Assign a **validation status.**
+- Assign a **Validation status.**
 
 ![View submission window](images/viewing_validating_data/view_submission.png)
 
@@ -110,7 +110,7 @@ The available statuses are:
 Validation supports structured data review in collaborative teams. For example, reviewers can filter the table to show only submissions that require review.
 
 <p class="note">
-<strong>Note:</strong> A project owner can grant <strong>Validate submissions</strong> <a href="https://support.kobotoolbox.org/managing_permissions.html#setting-user-level-permissions">permission</a> to other users separately from the <strong>Edit submissions</strong> permission.
+<strong>Note:</strong> A project owner can grant <strong>Validate submissions</strong> <a href="https://support.kobotoolbox.org/managing_permissions.html">permission</a> to other users separately from the <strong>Edit submissions</strong> permission.
 </p>
 
 ### Updating validation status in bulk
