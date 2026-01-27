@@ -1,5 +1,5 @@
 # Project files and media overview
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/project_files_media.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/202a551ac8201c020c26f98c85df716fa80fbe05/source/project_files_media.md" class="reference">27 Jan 2026</a>
 
 A KoboToolbox project may include files and media added at different stages of the data collection process. 
 
@@ -107,7 +107,7 @@ or focus group discussions.
   To learn more about collecting media from respondents, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media question types</a>. To learn more about background audio recording, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>.
 </p>
 
-### Viewing media files
+### Viewing respondent media files
 
 All media files submitted by respondents can be viewed from the data table. Images can also be viewed in the **Gallery** view of your project. 
 
@@ -115,7 +115,7 @@ All media files submitted by respondents can be viewed from the data table. Imag
   To learn more about viewing media from respondents, see <a href="https://support.kobotoolbox.org/managing_media_responses.html#viewing-media-files">Viewing media files</a>.
 </p>
 
-### Downloading media files
+### Downloading respondent media files
 
 You can download media files either individually from the data table, or in bulk from the **Downloads** page.
 
@@ -125,7 +125,7 @@ When you export your data in CSV or XLS format, the exported file also includes 
   To learn more about exporting your media files, see <a href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">Downloading media files</a>.
 </p>
 
-### Deleting media files
+### Deleting respondent media files
 
 Finally, you may need to delete media files to **manage storage, protect confidentiality, or correct submission errors.** Media files can be deleted individually or in bulk.
 
