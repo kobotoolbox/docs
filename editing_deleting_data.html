@@ -109,7 +109,7 @@
           
   <section id="editing-and-deleting-your-data">
 <h1>Editing and deleting your data<a class="headerlink" href="#editing-and-deleting-your-data" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/349ca74456384bec44981df1c806625308b0b7f4/source/editing_deleting_data.md" class="reference">27 Jan 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/efc7c5cbb4a08c0ba90ff7992eec51347bfeb50f/source/editing_deleting_data.md" class="reference">27 Jan 2026</a></p>
 <p>Editing and deleting data helps <strong>maintain data quality</strong> after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including <strong>editing submissions in Enketo, editing raw data directly, and applying bulk updates.</strong> This article explains each method and when to use it.</p>
 <p class="note">
 <strong>Note:</strong> Submissions collected with the <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect app</a> cannot be edited or deleted <strong>in KoboCollect</strong> after they are submitted. All post-submission changes must be made in KoboToolbox.
@@ -127,24 +127,7 @@ To learn more about user-level permissions for editing and deleting data, see <a
 <li><p><strong>Editing raw data directly in KoboToolbox:</strong> Opens a data editor that lets you modify specific responses directly. This method is recommended when you need precise control over edits and do not need form logic to apply.</p></li>
 </ul>
 <p>Each method comes with its advantages and limitations:</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Editing method</p></th>
-<th class="head text-left"><p>Advantages</p></th>
-<th class="head text-left"><p>Limitations</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><strong>Editing in Enketo</strong></p></td>
-<td class="text-left"><p><ul><li><strong>Maintains form logic:</strong> calculations and skip logic are automatically re-evaluated.</li><li><strong>Provides a more intuitive, form-based editing experience:</strong> the submission opens in the same layout and flow used during data collection.</li><li><strong>Minimizes data entry errors</strong> by enforcing choice lists, required questions, and validation rules during editing.</li></ul></p></td>
-<td class="text-left"><p><ul><li>Reopening the form can <strong>unintentionally modify other responses</strong> because all form logic and calculations run again.</li><li><strong>Skip logic may hide or delete existing answers</strong> if they no longer meet the relevance conditions defined in the updated form.</li><li>May require entering responses for newly added questions, and may delete responses to questions that have been removed from the form.</li></ul></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><strong>Editing raw data</strong></p></td>
-<td class="text-left"><p><ul><li><strong>Allows targeted edits</strong> to specific fields without reopening the form.</li><li><strong>Preserves the rest of the submission unchanged</strong>, since no form logic, calculations, or constraints are triggered.</li><li>Allows entering values <strong>not included in choice lists</strong> or <strong>supported by question type</strong> as well as deleting <strong>required responses.</strong></li><li>Allows for <strong>editing multiple submissions</strong> in bulk.</li></ul></p></td>
-<td class="text-left"><p><ul><li><strong>Skip logic and validation rules are ignored</strong>, which may lead to inconsistent values.</li><li><strong>Question types</strong> and <strong>option choices</strong> are not enforced.</li><li>Cannot edit <strong>calculation</strong> results or <strong>metadata.</strong></li><li>Not currently supported for editing questions inside <strong>repeating groups.</strong></li><li>Must manually enter correct XML values for select questions.</li><li>Incorrect response type, choice name, or GPS coordinate formatting can lead to issues in reports or during analysis.</li></ul></p></td>
-</tr>
-</tbody>
-</table>
+<p><img alt="Editing data" src="_images/table.png" /></p>
 <p class="note">
 <strong>Note:</strong> When editing data using either method, the <code>_uuid</code> metadata field is updated each time a change is saved. When editing in Enketo, the <code>end</code> field is also updated. All other metadata fields remain unchanged, including <code>_id</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code>, and <code>_submitted_by</code>.
 </p>
