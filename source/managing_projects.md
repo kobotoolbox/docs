@@ -22,10 +22,10 @@ You can manage your projects using the tools in this page:
 To create a new project in KoboToolbox:
 1. Click **NEW** from the **Projects home page**.
 2. Choose one of the following options:
-    * <i class="k-icon-user-edit"></i> **Build from scratch** to create a form using the [Formbuilder](https://support.kobotoolbox.org/formbuilder.html).
-    * <i class="k-icon-user-template"></i> **Use a template** to select a form template from the [question library](https://support.kobotoolbox.org/question_library.html).
-    * <i class="k-icon-user-upload"></i> **Upload an XLSForm** to upload an existing [XLSForm](https://support.kobotoolbox.org/getting_started_xlsform.html).
-    * <i class="k-icon-link"></i> **Import an XLSForm via URL** to link to an XLSForm [stored online](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#importing-an-xlsform-via-url).
+    - <i class="k-icon-edit"></i> **Build from scratch** to create a form using the [Formbuilder](https://support.kobotoolbox.org/formbuilder.html).
+    - <i class="k-icon-template"></i> **Use a template** to select a form template from the [question library](https://support.kobotoolbox.org/question_library.html).
+    - <i class="k-icon-upload"></i> **Upload an XLSForm** to upload an existing [XLSForm](https://support.kobotoolbox.org/getting_started_xlsform.html).
+    - <i class="k-icon-link"></i> **Import an XLSForm via URL** to link to an XLSForm [stored online](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#importing-an-xlsform-via-url).
 3. Create, test, and preview your form.
 4. Click **DEPLOY** from the **FORM** page of your project to make the form live for data collection.
 
