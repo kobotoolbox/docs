@@ -176,11 +176,11 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   export_download
   advanced_export
   managing_repeat_groups
-  project_sharing_settings
-  managing_permissions
   project_files_media
   upload_media
   managing_media_responses
+  project_sharing_settings
+  managing_permissions
   activity_logs
   getting_started_organization_feature
 
