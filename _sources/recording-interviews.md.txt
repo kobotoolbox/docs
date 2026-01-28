@@ -1,5 +1,5 @@
 ﻿# Recording interviews with background audio recording
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/recording-interviews.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9bfb1ff3173b1066ec53b03456936b53cdd1a068/source/recording-interviews.md" class="reference">28 Jan 2026</a>
 
 Background audio recording **captures an entire interview in the background** while a form is open. The recording is stored as audio data within form submissions.
 
@@ -79,9 +79,9 @@ When collecting data, it is essential to obtain informed consent from respondent
 
 Background audio recordings are treated very similarly to audio files collected in the survey. This means you can: 
 - View background audio recordings in the data table, under **DATA > Table.**
-- [Transcribe, translate, and analyze](https://support.kobotoolbox.org/transcription-translation.html) background audio files.
+- [Transcribe, translate](https://support.kobotoolbox.org/transcription-translation.html), and [analyze](https://support.kobotoolbox.org/qualitative_analysis.html) background audio files.
 - [Delete](https://support.kobotoolbox.org/managing_media_responses.html#deleting-media-files) background audio files.
-- [Download background audio files](https://support.kobotoolbox.org/photo_download.html) as a ZIP file under **DATA > Downloads > Media Attachments (ZIP).**
+- [Download background audio files](https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files) from the data table or as a ZIP file under **DATA > Downloads > Media Attachments (ZIP).**
 
 ![Managing audio data](images/recording_interviews/data_table.png)
 
