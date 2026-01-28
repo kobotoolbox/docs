@@ -15,7 +15,7 @@ You can view repeated data in the data table, which you can find in the **Table*
 
 You can also view the complete data for any given submission, including each repetition of repeat groups, by clicking the <i class="k-icon-view"></i>**Open** button to the left of each submission.
 
-To edit repeat group data, click the <i class="k-icon-edit"></i>**Edit** button. This will open up the form and allow you to [edit the form data](https://support.kobotoolbox.org/editing_deleting_data.html) before resubmitting. [Bulk editing](https://support.kobotoolbox.org/editing_deleting_data.html#editing-multiple-submissions-in-bulk) repeat group data is not currently supported.
+To edit repeat group data, click the <i class="k-icon-edit"></i>**Edit** button. This will open up the form and allow you to [edit the form data](https://support.kobotoolbox.org/editing_deleting_data.html#editing-submissions-in-enketo) before resubmitting. [Bulk editing](https://support.kobotoolbox.org/editing_deleting_data.html#editing-multiple-submissions-in-bulk) repeat group data is not currently supported.
 
 <p class="note">
   <b>Note</b>: Repeat group data cannot be displayed in the <b>Reports</b> or <b>Map</b> views due to the data structure of repeat groups.
