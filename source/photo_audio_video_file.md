@@ -86,7 +86,7 @@ To define the maximum size of images collected using the **Photo** question type
 <strong>Note:</strong> You can also configure video resolution and image size in <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">KoboCollect settings</a>.
 </p>
 
-## Restricting accepted file types
+### Restricting accepted file types
 
 By default, the **File** question type accepts all file types. To restrict the type of files this question accepts:
 1. Open the question settings by clicking <i class="k-icon-settings"></i> **Settings** to the right of the question. This will take you to the **Question Options** tab.
