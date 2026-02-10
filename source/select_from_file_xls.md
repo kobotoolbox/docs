@@ -87,5 +87,12 @@ To update your list of choices, edit the external file as needed, re-upload it t
   Select from file questions do not currently support <a href="https://support.kobotoolbox.org/language_xls.html">translated choice lists</a>. Your external choice file can include only a single <code>label</code> column. Any additional translated <code>label</code> columns will be ignored in Enketo or will cause an error in KoboCollect. For forms that include translations, use internal choice lists instead, or set up multiple <strong>select from file</strong> questions using skip logic to pull from different files depending on the form language.
 </details>
 
+<br>
+
+<details>
+  <summary><strong>CSV not found</strong></summary>
+  If you see an error when opening your form indicating that the CSV file cannot be found, check that the file starts with <code>name</code> and <code>label</code> columns. If the columns have different names, make sure the <code>parameters</code> column includes the <code>value</code> and <code>label</code> settings.
+</details>
+
 
 
