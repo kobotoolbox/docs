@@ -1,5 +1,5 @@
 # Selecting options from an external file
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/select_from_file_xls.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/10a0bca58772931c99d742f16c0e1566caf58347/source/select_from_file_xls.md" class="reference">10 Feb 2026</a>
 
 **Select from file** questions allow you to use a list of choice options stored in an external file instead of defining them directly in your form. There are two types: `select_one_from_file` for selecting a **single choice**, and `select_multiple_from_file` for selecting **multiple choices**. 
 
