@@ -129,7 +129,7 @@ There is no dedicated option to delete a single field value. Instead, you can cl
 4. Click **Save**, then **Confirm & close.**
 
 <p class="note">
-<strong>Note:</strong> You can <strong>delete media attachments</strong> from your data, either individually or in bulk. For more information, see <a href="https://support.kobotoolbox.org/managing_media_responses.html#deleting-media-files">Deleting media files</a>.
+<strong>Note:</strong> You can delete <strong>media attachments</strong> from your data, either individually or in bulk. For more information, see <a href="https://support.kobotoolbox.org/managing_media_responses.html#deleting-media-files">Deleting media files</a>.
 </p>
 
 ## Troubleshooting
