@@ -109,7 +109,7 @@
           
   <section id="selecting-options-from-an-external-file">
 <h1>Selecting options from an external file<a class="headerlink" href="#selecting-options-from-an-external-file" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/select_from_file_xls.md" class="reference">27 Jan 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/10a0bca58772931c99d742f16c0e1566caf58347/source/select_from_file_xls.md" class="reference">10 Feb 2026</a></p>
 <p><strong>Select from file</strong> questions allow you to use a list of choice options stored in an external file instead of defining them directly in your form. There are two types: <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span></code> for selecting a <strong>single choice</strong>, and <code class="docutils literal notranslate"><span class="pre">select_multiple_from_file</span></code> for selecting <strong>multiple choices</strong>.</p>
 <p>Using a separate file for your choice list makes it easier to manage long lists, reuse them across multiple forms, and update options when needed. Supported file formats include CSV, XML, and GeoJSON.</p>
 <p>This article explains how to format your external file, set up your XLSForm to use <strong>select from file</strong> questions, and upload your external file to KoboToolbox.</p>
@@ -233,6 +233,11 @@
 <details>
   <summary><strong>Translated choice lists</strong></summary>
   Select from file questions do not currently support <a href="https://support.kobotoolbox.org/language_xls.html">translated choice lists</a>. Your external choice file can include only a single <code>label</code> column. Any additional translated <code>label</code> columns will be ignored in Enketo or will cause an error in KoboCollect. For forms that include translations, use internal choice lists instead, or set up multiple <strong>select from file</strong> questions using skip logic to pull from different files depending on the form language.
+</details>
+<br>
+<details>
+  <summary><strong>CSV not found</strong></summary>
+  If you see an error when opening your form indicating that the CSV file cannot be found, check that the file starts with <code>name</code> and <code>label</code> columns. If the columns have different names, make sure the <code>parameters</code> column includes the <code>value</code> and <code>label</code> settings.
 </details>
 </section>
 </section>
