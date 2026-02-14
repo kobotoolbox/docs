@@ -25,8 +25,8 @@ Select questions allow respondents to choose from predefined options. For `selec
 | `select_multiple` | Allows respondents to select multiple options from a predefined list. | Select Many |
 | `rank` | Allows respondents to rank items or options in a choice list. | Ranking |
 | `acknowledge` | A single checkbox that respondents can select to acknowledge their agreement with a statement. | Acknowledge |
-| `select_one_from_file` | Allows respondents to select one option from a predefined list, stored in an external CSV file. | Select One From External File |
-| `select_multiple_from_file` | Allows respondents to select multiple options from a predefined list, stored in an external CSV file. | Select Many From External File |
+| `select_one_from_file` | Allows respondents to select one option from a predefined list, stored in an external CSV file. | Select One from File |
+| `select_multiple_from_file` | Allows respondents to select multiple options from a predefined list, stored in an external CSV file. | Select Many from File |
 
 
 <p class="note">
