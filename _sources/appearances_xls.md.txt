@@ -1,5 +1,5 @@
 # Question appearances in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/480edc0fbc41bf57119bed4c8eed734c2203d4ac/source/appearances_xls.md" class="reference">14 Feb 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9bf170359f001a62e46a64c5849675e207c2e5c1/source/appearances_xls.md" class="reference">14 Feb 2026</a>
 
 Question appearances allow you to customize how questions are displayed in the form and the type of responses they collect. This article explains how to add question appearances in XLSForm and lists common appearances by question type. 
 
@@ -73,7 +73,7 @@ Range questions are used to [select values within a specified range](https://sup
 | `vertical` | Changes the orientation of the number line to a vertical line. | Enketo and KoboCollect |
 | `picker` | In KoboCollect, displays a pop-up spinner for selecting values. In Enketo, displays a drop-down menu. | Enketo and KoboCollect |
 | `rating` | Displays stars instead of a number line. | Enketo and KoboCollect |
-| `distress` | Displays a thermometer instead of a number line. | Enketo and KoboCollect  |
+| `distress` | Displays a thermometer instead of a number line. | Enketo only  |
 
 
 ### Text question type
