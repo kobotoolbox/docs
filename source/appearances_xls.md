@@ -73,7 +73,7 @@ Range questions are used to [select values within a specified range](https://sup
 | `vertical` | Changes the orientation of the number line to a vertical line. | Enketo and KoboCollect |
 | `picker` | In KoboCollect, displays a pop-up spinner for selecting values. In Enketo, displays a drop-down menu. | Enketo and KoboCollect |
 | `rating` | Displays stars instead of a number line. | Enketo and KoboCollect |
-| `distress` | Displays a thermometer instead of a number line. | Enketo and KoboCollect  |
+| `distress` | Displays a thermometer instead of a number line. | Enketo only  |
 
 
 ### Text question type
