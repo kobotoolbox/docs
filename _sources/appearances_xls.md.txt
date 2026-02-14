@@ -1,5 +1,5 @@
 # Question appearances in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/689b30ee6dc09832f6d8762ca21a14ae0ed17b6a/source/appearances_xls.md" class="reference">14 Feb 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/480edc0fbc41bf57119bed4c8eed734c2203d4ac/source/appearances_xls.md" class="reference">14 Feb 2026</a>
 
 Question appearances allow you to customize how questions are displayed in the form and the type of responses they collect. This article explains how to add question appearances in XLSForm and lists common appearances by question type. 
 
@@ -61,7 +61,7 @@ Numeric questions are used to [collect whole numbers or decimal numbers](https:/
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
 | `thousands-sep` | Formats large numbers using a comma separator for thousands. | Enketo and KoboCollect |
-| `bearing` | Records a compass reading in degrees (`decimal` only). | KoboCollect only  |
+| `bearing` | Records a compass reading in degrees (`decimal` only), if the device is equipped with an accelerometer or magnetic field sensor. | KoboCollect only  |
 | `counter` | Displays buttons for increasing and decreasing digits (`integer` only). | KoboCollect only |
 
 
