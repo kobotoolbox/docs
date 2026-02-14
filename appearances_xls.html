@@ -109,7 +109,7 @@
           
   <section id="question-appearances-in-xlsform">
 <h1>Question appearances in XLSForm<a class="headerlink" href="#question-appearances-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e5eecfa15d47b8d1cf9ec219bb410602a4cff352/source/appearances_xls.md" class="reference">14 Feb 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/689b30ee6dc09832f6d8762ca21a14ae0ed17b6a/source/appearances_xls.md" class="reference">14 Feb 2026</a></p>
 <p>Question appearances allow you to customize how questions are displayed in the form and the type of responses they collect. This article explains how to add question appearances in XLSForm and lists common appearances by question type.</p>
 <p>It is important to note that some appearances only work in <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>, while others are supported only in <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a>. Consider your data collection method when selecting appearances.</p>
 <p class="note">
@@ -187,37 +187,37 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 <td class="text-left"><p>Adds a search bar at the top of the option list.</p></td>
 <td class="text-left"><p>Enketo and KoboCollect (combine with <code class="docutils literal notranslate"><span class="pre">minimal</span></code> appearance)</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal</span></code></p></td>
-<td class="text-left"><p>Displays the answer choices horizontally in columns.</p></td>
-<td class="text-left"><p>Enketo only</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal-compact</span></code></p></td>
-<td class="text-left"><p>Displays the answer choices horizontally, with minimal padding and with choice boxes.</p></td>
-<td class="text-left"><p>Enketo only. In KoboCollect, appears the same as the <code class="docutils literal notranslate"><span class="pre">compact</span></code> appearance.</p></td>
-</tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">likert</span></code></p></td>
 <td class="text-left"><p>Displays answer choices as a Likert scale (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> only).</p></td>
 <td class="text-left"><p>Enketo and KoboCollect</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quick</span></code></p></td>
-<td class="text-left"><p>Auto-advances the form to the next question after an answer is selected (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> only).</p></td>
-<td class="text-left"><p>KoboCollect only</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal</span></code></p></td>
+<td class="text-left"><p>Displays choices in evenly sized columns, with the same number of choices in each row.</p></td>
+<td class="text-left"><p>Enketo only. Use <code class="docutils literal notranslate"><span class="pre">columns</span></code> instead for compatibility with KoboCollect.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quickcompact</span></code></p></td>
-<td class="text-left"><p>Displays choices side-by-side with minimal padding and without choice boxes, and auto-advances to the next question after an answer is selected (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> only).</p></td>
-<td class="text-left"><p>KoboCollect only</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns</span></code></p></td>
-<td class="text-left"><p>Displays available choices in 2, 3, 4 or 5 columns depending on screen size.</p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns</span></code></p></td>
+<td class="text-left"><p>Displays choices in evenly sized columns, with the same number of choices in each row.</p></td>
 <td class="text-left"><p>Enketo and KoboCollect</p></td>
 </tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal-compact</span></code></p></td>
+<td class="text-left"><p>Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.</p></td>
+<td class="text-left"><p>Enketo only. Use <code class="docutils literal notranslate"><span class="pre">columns-pack</span></code> instead for compatibility with KoboCollect.</p></td>
+</tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns-pack</span></code></p></td>
-<td class="text-left"><p>Displays available choices with as many choices as possible on one line.</p></td>
+<td class="text-left"><p>Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.</p></td>
 <td class="text-left"><p>Enketo and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns-n</span></code></p></td>
 <td class="text-left"><p>Displays available choices in the specified number (n) of columns.</p></td>
 <td class="text-left"><p>Enketo and KoboCollect</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quick</span></code></p></td>
+<td class="text-left"><p>Auto-advances the form to the next question after an answer is selected (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> only).</p></td>
+<td class="text-left"><p>KoboCollect only</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quickcompact</span></code></p></td>
+<td class="text-left"><p>Displays choices side-by-side with minimal padding and without choice boxes, and auto-advances to the next question after an answer is selected (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> only).</p></td>
+<td class="text-left"><p>KoboCollect only</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">map</span></code></p></td>
 <td class="text-left"><p>Displays a map to select options from. Requires <a href="https://support.kobotoolbox.org/select_from_map_xls.html">defining GPS coordinates</a> in the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> only).</p></td>
