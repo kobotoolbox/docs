@@ -41,7 +41,7 @@ Select questions allow respondents to [choose from predefined options](https://s
 | `list-nolabel` | Displays the answer choice boxes without the labels. | Enketo and KoboCollect |
 | `autocomplete` | Adds a search bar at the top of the option list. | Enketo and KoboCollect (combine with `minimal` appearance) |
 | `horizontal` | Displays the answer choices horizontally in columns. | Enketo only |
-| `horizontal-compact` | Displays the answer choices horizontally, with minimal padding and without choice boxes. | Enketo only |
+| `horizontal-compact` | Displays the answer choices horizontally, with minimal padding and with choice boxes. | Enketo only. In KoboCollect, appears the same as the `compact` appearance. |
 | `likert` | Displays answer choices as a Likert scale (`select_one` only). | Enketo and KoboCollect  |
 | `quick` | Auto-advances the form to the next question after an answer is selected (`select_one` only). | KoboCollect only |
 | `quickcompact` | Displays choices side-by-side with minimal padding and without choice boxes, and auto-advances to the next question after an answer is selected (`select_one` only). | KoboCollect only |
