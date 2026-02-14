@@ -61,7 +61,7 @@ Numeric questions are used to [collect whole numbers or decimal numbers](https:/
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
 | `thousands-sep` | Formats large numbers using a comma separator for thousands. | Enketo and KoboCollect |
-| `bearing` | Records a compass reading in degrees (`decimal` only). | KoboCollect only  |
+| `bearing` | Records a compass reading in degrees (`decimal` only), if the device is equipped with an accelerometer or magnetic field sensor. | KoboCollect only  |
 | `counter` | Displays buttons for increasing and decreasing digits (`integer` only). | KoboCollect only |
 
 
