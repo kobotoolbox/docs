@@ -64,7 +64,7 @@ The following functions are used to create, modify, or analyze text strings in X
 | `string-length(string)` | Returns the number of characters in `string` (e.g., to add a word limit to a text question). |
 | `normalize-space(string)` | Returns a string in which any leading and trailing whitespaces in the string are removed, and sequences of whitespaces are replaced with a single space. |
 
-## Functions to manipulate dates
+## Functions to manipulate dates and times
 
 The following functions are used to record, format, and calculate date and time values in XLSForm. They can help capture the current date or time, convert text into date format, or display dates and times in a specific format.
 
@@ -75,6 +75,7 @@ The following functions are used to record, format, and calculate date and time 
 | `date('YYYY-MM-DD')` | Forces dates into the correct date format (especially for dates before 1970). |
 | `format-date(date, format)` | Returns `date` as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%Y</code>: 4-digit year</li><li><code>%y</code>: 2-digit year</li><li><code>%m</code>: 0-padded month</li><li><code>%n</code>: numeric month</li><li><code>%b</code>: short text month (Jan, Feb, Mar…)</li><li><code>%d</code>: 0-padded day of month</li><li><code>%e</code>: day of month</li><li><code>%a</code>: short text day (Sun, Mon, Tue…).</li></ul> |
 | `format-date-time(datetime, format)` | Returns `datetime` as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%H</code>: 0-padded hour (24-hr time)</li><li><code>%h</code>: hour (24-hr time)</li><li><code>%M</code>: 0-padded minute</li><li><code>%S</code>: 0-padded second</li><li><code>%3</code>: 0-padded millisecond ticks.</li></ul> |
+| `decimal-time()` | Converts a time into a decimal value (e.g., 12:00 pm becomes 0.5), facilitating time-based form logic. |
 
 
 ## Functions to manipulate GPS data
