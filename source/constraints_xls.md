@@ -104,5 +104,6 @@ Examples of more advanced validation criteria include:
 | <code>not(selected(., 'none') and count-selected(.)>1)</code> | The ‘none’ option cannot be selected if any other response in a `select_multiple` question is selected. |
 | <code>. < today()</code> | The date entered must be before today’s date. |
 | <code>regex(., '^\d{2}$')</code> | The input is restricted to two numbers (using <a href="https://support.kobotoolbox.org/restrict_responses.html">regular expressions</a>). |
+| <code>decimal-time(.)>=0.5</code> | The time entered must be at or after 12pm.  |
 
 
