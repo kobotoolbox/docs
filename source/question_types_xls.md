@@ -1,5 +1,5 @@
 # Question types in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c53d6fdae788cc8ceb0d3d16e20d21e251b5002a/source/question_types_xls.md" class="reference">14 Feb 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a2ed98f5c8b118cc8d50f755fc912cacbb225f59/source/question_types_xls.md" class="reference">15 Feb 2026</a>
 
 When adding questions to an XLSForm, you'll need to choose the appropriate **question type**. The question type will depend on the kind of information you want to collect: some question types are more suited for text, others for numbers, dates, or multiple choice inputs.
 
