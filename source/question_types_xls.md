@@ -105,7 +105,7 @@ Date and time questions are used to capture specific calendar dates, times, or b
 | :--- | :--- | :--- |
 | `date` | Captures a specific calendar date, typically in the format of day, month, and year. | Date |
 | `time` | Captures a specific time in hours and minutes. | Time |
-| `datetime` | Captures both a date and a time in a single combined response. | Date and Time |
+| `datetime` | Captures both a date and a time in a single combined response. | Date & time |
 
 
 <p class="note">
