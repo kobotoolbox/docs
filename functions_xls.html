@@ -109,7 +109,7 @@
           
   <section id="using-functions-in-xlsform">
 <h1>Using functions in XLSForm<a class="headerlink" href="#using-functions-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3b9d6690d9ae3fbfc12d57fa1df2dd94bba8badb/source/functions_xls.md" class="reference">15 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3e68d0f83165ae0b4339daef4fd4090b2efeeb46/source/functions_xls.md" class="reference">15 Feb 2026</a></p>
 <p>Functions are predefined operations used to perform calculations or manipulate data in XLSForm. They are essential for automating tasks and deriving key insights in your forms, allowing you to calculate project indicators, create scoring systems, and manage dates efficiently.</p>
 <p>This article lists common functions used in XLSForm, including functions to manipulate numbers, strings, dates, and GPS points.</p>
 <p class="note">
@@ -247,8 +247,8 @@
 </tbody>
 </table>
 </section>
-<section id="functions-to-manipulate-dates">
-<h2>Functions to manipulate dates<a class="headerlink" href="#functions-to-manipulate-dates" title="Link to this heading">¶</a></h2>
+<section id="functions-to-manipulate-dates-and-times">
+<h2>Functions to manipulate dates and times<a class="headerlink" href="#functions-to-manipulate-dates-and-times" title="Link to this heading">¶</a></h2>
 <p>The following functions are used to record, format, and calculate date and time values in XLSForm. They can help capture the current date or time, convert text into date format, or display dates and times in a specific format.</p>
 <table class="docutils align-default">
 <thead>
@@ -271,6 +271,9 @@
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">format-date-time(datetime,</span> <span class="pre">format)</span></code></p></td>
 <td class="text-left"><p>Returns <code class="docutils literal notranslate"><span class="pre">datetime</span></code> as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%H</code>: 0-padded hour (24-hr time)</li><li><code>%h</code>: hour (24-hr time)</li><li><code>%M</code>: 0-padded minute</li><li><code>%S</code>: 0-padded second</li><li><code>%3</code>: 0-padded millisecond ticks.</li></ul></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">decimal-time()</span></code></p></td>
+<td class="text-left"><p>Converts a time into a decimal value (e.g., 12:00 pm becomes 0.5), facilitating time-based form logic.</p></td>
 </tr>
 </tbody>
 </table>
@@ -397,7 +400,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#commonly-used-functions-in-xlsform">Commonly used functions in XLSForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#functions-to-manipulate-numbers">Functions to manipulate numbers</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#functions-to-manipulate-strings">Functions to manipulate strings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#functions-to-manipulate-dates">Functions to manipulate dates</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#functions-to-manipulate-dates-and-times">Functions to manipulate dates and times</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#functions-to-manipulate-gps-data">Functions to manipulate GPS data</a></li>
 </ul>
 </li>
