@@ -109,7 +109,7 @@
           
   <section id="adding-constraints-in-xlsform">
 <h1>Adding constraints in XLSForm<a class="headerlink" href="#adding-constraints-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/constraints_xls.md" class="reference">4 Jan 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/11a233abc1b9098041fbf54565078d85e544a32b/source/constraints_xls.md" class="reference">15 Feb 2026</a></p>
 <p>Constraints, also known as validation criteria, are a type of form logic used to <strong>restrict the acceptable responses to a question based on a predefined condition</strong>. If the constraint condition is not met, a customizable error message is displayed, prompting the form user to enter a valid response.</p>
 <p class="note">
   To learn more about form logic in XLSForm, see <a href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
@@ -320,6 +320,9 @@ For hands-on practice with adding constraints in XLSForm, see KoboToolbox Academ
 </tr>
 <tr class="row-even"><td class="text-left"><p><code>regex(., ‘^\d{2}$’)</code></p></td>
 <td class="text-left"><p>The input is restricted to two numbers (using <a href="https://support.kobotoolbox.org/restrict_responses.html">regular expressions</a>).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>decimal-time(.)&gt;=0.5</code></p></td>
+<td class="text-left"><p>The time entered must be at or after 12pm.</p></td>
 </tr>
 </tbody>
 </table>
