@@ -535,7 +535,7 @@ To update an already deployed form after changes have been made, replacing the p
 
 ## Regular hint
 
-Additional information displayed directly below a question label to help respondents or enumerators understand how to answer. Regular hints are always visible in the form.
+Additional information displayed directly below a question label to help respondents or enumerators understand how to answer. Regular hints are always visible in the form. Regular hints are also called **Question hints** in the Formbuilder.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
