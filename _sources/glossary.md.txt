@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3e6379ae3060b3649619618fa96eeae7dfca590e/source/glossary.md" class="reference">16 Feb 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f83b5f95a897da9e0ab8ed1483688ffb33695496/source/glossary.md" class="reference">16 Feb 2026</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
@@ -53,6 +53,10 @@ Setting that changes how a question or group is displayed in a form, such as sho
 ## Archived projects
 
 Projects that have been removed from the active project list and no longer accept new submissions, but are retained for reference or record-keeping.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/managing_projects.html">Managing projects in KoboToolbox</a>.
+</p>
 
 **Related term(s):** [Deployed projects](https://support.kobotoolbox.org/glossary.html#deployed-projects), [Draft projects](https://support.kobotoolbox.org/glossary.html#draft-projects)
 
@@ -179,6 +183,10 @@ To publish a form so it becomes active and ready for data collection.
 
 Projects that have been published and are ready for data collection, allowing users to open the form and submit responses.
 
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/managing_projects.html">Managing projects in KoboToolbox</a>.
+</p>
+
 **Related term(s):** [Archived projects](https://support.kobotoolbox.org/glossary.html#archived-projects), [Draft projects](https://support.kobotoolbox.org/glossary.html#draft-projects)
 
 ---
@@ -198,6 +206,10 @@ Forms that have been started but not yet sent to the server. Drafts can be reope
 ## Draft projects
 
 Projects that are still being developed or edited and are not yet deployed, so they cannot receive submissions.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/managing_projects.html">Managing projects in KoboToolbox</a>.
+</p>
 
 **Related term(s):** [Archived projects](https://support.kobotoolbox.org/glossary.html#archived-projects), [Deployed projects](https://support.kobotoolbox.org/glossary.html#deployed-projects)
 
@@ -431,6 +443,10 @@ In the KoboCollect app, a project refers to a KoboToolbox account that the app i
 
 A project in KoboToolbox contains a form, its settings, and all data submitted to that form, including any project media.
 
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/managing_projects.html">Managing projects in KoboToolbox</a>.
+</p>
+
 **Related term(s):** [KoboToolbox](https://support.kobotoolbox.org/glossary.html#kobotoolbox)
 
 ---
@@ -462,6 +478,10 @@ Project history logs provide a detailed record of project activity, including fo
 ## Projects home page
 
 The Projects home page is the main dashboard you see by default when you sign in to your KoboToolbox account. It lists all your projects and key details such as status, ownership, last modified dates, and submission counts, with quick access to project actions.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/managing_projects.html">Managing projects in KoboToolbox</a>.
+</p>
 
 ---
 
