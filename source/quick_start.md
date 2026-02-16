@@ -41,7 +41,7 @@ To create your first form:
 4. To save the form, click **Save** in the top right corner, then click <i class="k-icon-close"></i> to close the form.
 
 <p class="note">
-    To learn more about using the Formbuilder, see <a href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the KoboToolbox Formbuilder</a> and <a href="https://support.kobotoolbox.org/question_options.html">Using the question options</a>.
+    To learn more about using the Formbuilder, see <a href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the KoboToolbox Formbuilder</a> and <a href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a>.
 </p>
 
 
