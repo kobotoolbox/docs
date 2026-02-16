@@ -55,37 +55,29 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
   formbuilder
   question_types
-  text_and_note
+  text_questions
   select_one_and_select_many
   acknowledge
   number_decimal_range
   date_time
   photo_audio_video_file
-  barcode_qrcode_questions
-  rating_ranking
-  external_file
   gps_questions
-  calculate_questions
-  advanced_calculate
-  collecting_signatures
-  matrix_response
-  responses_inside_question
+  note_questions
   question_options
+  group_repeat
+  matrix_response
+  language_dashboard
+  alternative_enketo
+  form_meta
+  form_logic
   skip_logic
   validation_criteria
-  number_text_responses
+  calculate_questions
   cascading_select
-  group_repeat
-  restrict_responses
-  language_dashboard
-  form_meta
-  audit_logging
-  custom_format_web
-  alternative_enketo
+  external_file
+  dynamic_data_attachment_formbuilder
   question_library
   using_public_collections
-  public_collections_advanced_search
-  hxl
 
 .. raw:: html
 
@@ -113,6 +105,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   media
   form_logic_xls
   functions_xls
+  restrict_responses
   skip_logic_xls
   constraints_xls
   required_logic_xls
