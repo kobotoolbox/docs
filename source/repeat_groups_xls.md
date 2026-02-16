@@ -12,7 +12,7 @@ This article covers the following topics:
 - Retrieving values from repeat groups 
 
 <p class="note"> 
-<strong>Note:</strong> This article focuses on repeating groups in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about repeating groups in the KoboToolbox Formbuilder and to preview repeat groups in action, see <a href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups</a>. 
+<strong>Note:</strong> This article focuses on repeating groups in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about repeating groups in the KoboToolbox Formbuilder and to preview repeat groups in action, see <a href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a>. 
 </p>
 
 ## Creating a repeat group
