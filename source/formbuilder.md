@@ -38,7 +38,7 @@ To remove a question, click <i class="k-icon-trash"></i> **Delete Question** in 
 To access advanced question settings, click on <i class="k-icon-settings"></i> **Settings** in the question menu on the right. Here, you can add skip logic, validation criteria, guidance hints, and make a question required. 
 
 <p class="note">
-To learn more about question settings, see <a href="https://support.kobotoolbox.org/question_options.html">Using the question options</a>, <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>, and <a href="https://support.kobotoolbox.org/validation_criteria.html">Adding validation criteria in the Formbuilder</a>.
+To learn more about question settings, see <a href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a>, <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>, and <a href="https://support.kobotoolbox.org/validation_criteria.html">Adding validation criteria in the Formbuilder</a>.
 </p>
 
 ## Adding questions to the library
