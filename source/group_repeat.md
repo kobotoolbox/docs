@@ -79,7 +79,7 @@ In KoboCollect, questions appear one at a time by default. In Enketo web forms, 
 To display questions by group on the same screen during data collection, click the <i class="k-icon-settings"></i> **Settings** icon to the right of the group name. Then, under **Appearance (Advanced)**, select **field-list** (Show all questions in this group on the same screen).
 
 <p class="note">
-    <b>Note:</b> If you plan to collect data using Enketo web forms, you will also need to enable the <b>Multiple pages</b> theme in the <b>Form style</b> menu (<b>Layout & Settings</b>). For more information on Enketo web form styles, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Using alternative Enketo web form styles</a>.
+    <b>Note:</b> If you plan to collect data using Enketo web forms, you will also need to enable the <b>Multiple pages</b> theme in the <b>Form style</b> menu (<b>Layout & Settings</b>). For more information on Enketo web form styles, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a>.
 </p>
 
 ### Skipping a question group
