@@ -94,7 +94,7 @@ Regex can be used in **constraints** to control the length and characters entere
 In KoboToolbox, regular expressions are evaluated using the function `regex(., ' ')`, where the regex is entered between apostrophes and the period `.` represents the current question.  `regex(., ' ')` returns TRUE if the regular expression is met, and FALSE otherwise.
 
 <p class="note">
-  To learn more about using regex in KoboToolbox, see <a href="https://support.kobotoolbox.org/restrict_responses.html">Restricting text responses with regular expressions</a>.
+  To learn more about using regex in KoboToolbox, see <a href="https://support.kobotoolbox.org/restrict_responses.html">Introduction to regular expressions</a>.
 </p>
 
 
