@@ -70,7 +70,7 @@ The **SETTINGS** page contains configuration options for your project. It is div
 * <i class="k-icon-settings"></i> **General:** Update the project name and description, [archive](https://support.kobotoolbox.org/managing_projects.html#archiving-and-deleting-projects) or delete the project.
 * <i class="k-icon-gallery"></i> **Media:** Upload and manage [project media files](https://support.kobotoolbox.org/upload_media.html).
 * <i class="k-icon-user-share"></i> **Sharing:** Update [sharing permissions](https://support.kobotoolbox.org/managing_permissions.html) for other users.
-* <i class="k-icon-attach"></i> **Connect Projects:** Set up connections for [dynamic data attachments](https://support.kobotoolbox.org/dynamic_data_attachment.html).
+* <i class="k-icon-attach"></i> **Connect Projects:** Set up connections for [dynamic data attachments](https://support.kobotoolbox.org/dynamic_data_attachment_formbuilder.html).
 * <i class="k-icon-data-sync"></i> **REST Services:** Configure [REST services](https://support.kobotoolbox.org/rest_services.html) to automatically send submissions to third-party applications.
 * <i class="k-icon-document"></i> **Activity:** View and export the [project history logs](https://support.kobotoolbox.org/activity_logs.html#project-history-logs), including changes made by other users.
 
