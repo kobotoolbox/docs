@@ -8,7 +8,7 @@ Calculations are processed within the form, helping save time during data analys
 This article explains how to add calculations in XLSForm, covering both basic arithmetic and more advanced expressions.
 
 <p class="note">
-<strong>Note:</strong> This article focuses on adding calculations in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding calculations in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/calculate_questions.html">Calculate question type</a>.
+<strong>Note:</strong> This article focuses on adding calculations in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding calculations in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/calculate_questions.html">Adding calculations in the Formbuilder</a>.
 <br><br>
 For hands-on practice with calculations in XLSForm, see KoboToolbox Academy’s <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
 </p>
@@ -60,7 +60,7 @@ Advanced calculations in XLSForm often rely on **functions** and **regular expre
 * **Regular expressions (regex)** are search patterns used to match specific characters within a string of text.
 
 <p class="note">
-  For a comprehensive list of functions available in XLSForm, see <a href="https://support.kobotoolbox.org/functions_xls.html">Using functions in XLSForm</a>.  To learn more about regular expressions, see <a href="https://support.kobotoolbox.org/restrict_responses.html">Restricting text responses with regular expressions</a>.
+  For a comprehensive list of functions available in XLSForm, see <a href="https://support.kobotoolbox.org/functions_xls.html">Using functions in XLSForm</a>.  To learn more about regular expressions, see <a href="https://support.kobotoolbox.org/restrict_responses.html">Introduction to regular expressions</a>.
 </p>
 
 Examples of more advanced calculations include:
