@@ -1,4 +1,4 @@
-# Dynamic data attachments
+# Dynamic data attachments in XLSForm
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/dynamic_data_attachment.md" class="reference">4 Jan 2026</a>
 
 
@@ -10,7 +10,7 @@ Dynamic linking allows you to use data from a **parent project** within **child 
 
 You can retrieve various **non-media responses** from a parent project and perform calculations on this linked data in a child project. This can be useful for retrieving baseline data, contact information, or health records in cohort studies, or for confirming or verifying previously collected data. 
 
-We recommend using [XLSForm](https://support.kobotoolbox.org/edit_forms_excel.html) to set up dynamic data attachments. For examples of parent and child projects, download sample files [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) and [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx).
+We recommend using [XLSForm](https://support.kobotoolbox.org/edit_forms_excel.html) to set up dynamic data attachments. For examples of parent and child projects, download sample files [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx) and [here](https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx). To learn how to set up dynamic data attachments in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/dynamic_data_attachment_formbuilder.html">Dynamic data attachments using the Formbuilder</a>.
 
 ## Dynamically linking projects in XLSForm
 

@@ -49,7 +49,7 @@ In XLSForm syntax, a dot `.` is used to refer to the current question, and `${qu
 
 
 <p class="note">
-    For more information on XLSForm code and operators, see <a href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
+    For more information on XLSForm code and operators, see <a href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a>.
 </p>
 
 ## Error message

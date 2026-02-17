@@ -73,13 +73,13 @@ Form management settings control how forms are handled within the app, including
 | Constraint processing | When your forms include constraints (validation criteria), choose between validating responses when moving to the next page or at the end of the form. |
 | High res video        | Enable or disable high-resolution video recordings when taking videos through the app. |
 | Image size      | Define the preferred image size, from very small to large. This can help conserve storage space on the server. |
-| Show guidance for questions         | Define how [guidance hints](https://support.kobotoolbox.org/question_options.html?highlight=guidance+hint#guidance-hint-optional) should be displayed within your form. |
+| Show guidance for questions         | Define how [guidance hints](https://support.kobotoolbox.org/question_options.html#guidance-hint) should be displayed within your form. |
 | Use external app for audio recording        | By default, an internal recorder is used for audio recording. Enable this setting to use an external audio application instead. |
 | Finalize forms on import            | When enabled, forms that are brought into KoboCollect from outside the app (e.g. copied from device storage or SD card) are automatically marked as <strong>Finalized</strong>, so they are ready to send without requiring manual finalization. |
 
 
 <p class="note">
-    <strong>Note:</strong> Configuring projects for <strong>automatic form updates</strong> is recommended in projects with frequent form edits or <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>. This removes the need to manually download form updates. However, more frequent automatic updates will drain your device’s battery more quickly.
+    <strong>Note:</strong> Configuring projects for <strong>automatic form updates</strong> is recommended in projects with frequent form edits or <a href="https://support.kobotoolbox.org/dynamic_data_attachment_formbuilder.html">dynamic data attachments</a>. This removes the need to manually download form updates. However, more frequent automatic updates will drain your device’s battery more quickly.
 </p>
 
 ## User and device identity settings

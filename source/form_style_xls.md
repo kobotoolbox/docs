@@ -6,7 +6,7 @@ With KoboToolbox, you can customize the appearance of your forms and questions t
 This article covers themes for Enketo web forms as well as styling options for notes and questions within a form.
 
 <p class="note">
-<strong>Note:</strong> This article focuses on styling forms in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about setting Enketo themes in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Using alternative Enketo web form styles</a>.
+<strong>Note:</strong> This article focuses on styling forms in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about setting Enketo themes in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a>.
 </p>
 
 ## Themes for Enketo web forms

@@ -45,7 +45,7 @@ A set of tools that allows different software systems to communicate with KoboTo
 Setting that changes how a question or group is displayed in a form, such as showing multiple questions on one screen or modifying how response options are presented.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/using-formbuilder.html">Using the Formbuilder</a> support articles and <a class="reference external" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>.
+  For more information, see <a class="reference external" href="[https://support.kobotoolbox.org/using-formbuilder.html](https://support.kobotoolbox.org/question_options.html#appearance-advanced)">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>.
 </p>
 
 ---
@@ -64,7 +64,7 @@ Projects that have been removed from the active project list and no longer accep
 
 ## Audit
 
-A record that tracks specific actions taken during data collection or form completion, such as question timing or location, when audit settings are enabled in a form.
+A record that tracks specific actions taken during data collection or form completion, such as question timing or location, when audit metadata is enabled in a form.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://docs.getodk.org/form-audit-log/#form-audit-log">Form Audit Log (ODK)</a>.
@@ -107,7 +107,7 @@ Empty data collection forms that have been downloaded to a device in the KoboCol
 An automated expression in a form that generates a value based on other responses or predefined rules, without requiring the respondent to enter the value manually.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/calculate_questions.html">Calculate question type</a> and <a class="reference external" href="https://support.kobotoolbox.org/calculations_xls.html">Adding calculations in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/calculate_questions.html">Adding calculations in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/calculations_xls.html">Adding calculations in XLSForm</a>.
 </p>
 
 **Related term(s):** [Functions](https://support.kobotoolbox.org/glossary.html#functions)
@@ -162,7 +162,7 @@ The language that displays by default when a form is opened, usually the languag
 A preset answer that automatically appears when a form loads, allowing respondents to keep the value as is or replace it with their own response.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#default-response">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
 </p>
 
 ---
@@ -217,10 +217,10 @@ Projects that are still being developed or edited and are not yet deployed, so t
 
 ## Dynamic data attachments
 
-A feature that allows a form to access records from another KoboToolbox project, so selected data fields are automatically refreshed and available during data collection.
+A feature that allows a form to access submissions from another KoboToolbox project, so selected data fields are automatically retrieved and available during data collection.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/dynamic_data_attachment.html">Dynamic data attachments</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/dynamic_data_attachment_formbuilder.html">Dynamic data attachments using the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/dynamic_data_attachment.html">Dynamic data attachments in XLSForm</a>.
 </p>
 
 ---
@@ -271,7 +271,7 @@ The KoboToolbox server hosted in the European Union, which users can select for 
 The set of rules and conditions that control how a form behaves, including skip logic, validation criteria, calculations, and other automated actions that respond to user input.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
 </p>
 
 **Related term(s):** [Skip logic](https://support.kobotoolbox.org/glossary.html#skip-logic), [Validation criteria](https://support.kobotoolbox.org/glossary.html#validation-criteria), [Choice filter](https://support.kobotoolbox.org/glossary.html#choice-filter), [Calculation](https://support.kobotoolbox.org/glossary.html#calculation)
@@ -329,7 +329,7 @@ The KoboToolbox server hosted in the United States, which users can select for s
 Additional instructions for a question that are hidden behind an expandable section and can be opened by the respondent to view extra guidance during data collection.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#guidance-hint">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
 </p>
 
 **Related term(s):** [Regular hint](https://support.kobotoolbox.org/glossary.html#regular-hint)
@@ -341,7 +341,7 @@ Additional instructions for a question that are hidden behind an expandable sect
 Standardized hashtags added to datasets to improve interoperability, allowing data to be easily understood, merged, and analyzed across different humanitarian organizations and tools.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/hxl.html">Using HXL tags</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#hxl">Question options in the Formbuilder</a>.
 </p>
 
 ---
@@ -417,7 +417,7 @@ A feature that controls how templates in the library can be edited after they ar
 Information automatically added to a submission that provides context about how or when the data was collected, such as device ID, start and end time, or location.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html">Form settings and metadata in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/metadata_xls.html">Form metadata in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html">Adding form metadata in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/metadata_xls.html">Form metadata in XLSForm</a>.
 </p>
 
 ---
@@ -512,7 +512,7 @@ A feature that allows a form to retrieve values from an external CSV file during
 A set of related questions grouped together in a form to improve structure and organization. Question groups can be displayed on the same screen, skipped as a unit using skip logic, or repeated to collect multiple sets of responses.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups</a> and <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html">Grouping questions in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html">Grouping questions in XLSForm</a>.
 </p>
 
 **Related term(s):** [Repeat group](https://support.kobotoolbox.org/glossary.html#repeat-group)
@@ -524,7 +524,7 @@ A set of related questions grouped together in a form to improve structure and o
 Using answers from one question elsewhere in the form, such as displaying a previous response in later question text or using it in calculations, skip logic, or validation criteria.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#question-referencing">Introduction to form logic in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
 </p>
 
 **Related term(s):** [Form logic](https://support.kobotoolbox.org/glossary.html#form-logic)
@@ -536,7 +536,7 @@ Using answers from one question elsewhere in the form, such as displaying a prev
 The kind of question used in a form, which determines how respondents provide their answers, such as text, number, select one, or rating.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_types.html">Introduction to question types</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_types_xls.html">Question types in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_types.html">Adding questions in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_types_xls.html">Question types in XLSForm</a>.
 </p>
 
 ---
@@ -558,7 +558,7 @@ To update an already deployed form after changes have been made, replacing the p
 Additional information displayed directly below a question label to help respondents or enumerators understand how to answer. Regular hints are always visible in the form. Regular hints are also called **Question hints** in the Formbuilder.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#question-hint">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">Question options in XLSForm</a>.
 </p>
 
 **Related term(s):** [Guidance hint](https://support.kobotoolbox.org/glossary.html#guidance-hint)
@@ -570,7 +570,7 @@ Additional information displayed directly below a question label to help respond
 A set of questions that can be answered multiple times within a form, allowing respondents to enter repeated information such as household members, items, or events.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups</a> and <a class="reference external" href="https://support.kobotoolbox.org/repeat_groups_xls.html">Repeat groups in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/repeat_groups_xls.html">Repeat groups in XLSForm</a>.
 </p>
 
 **Related term(s):** [Question group](https://support.kobotoolbox.org/glossary.html#question-group)
@@ -676,5 +676,9 @@ The XML version of a form generated when a project is deployed, used by data col
 ## XML value
 
 The internal short names assigned to questions and choices that are used to store and reference data in a form. These are also called **Data Column Names** in the Formbuilder, and **question names** or **choice names** in XLSForm. Exporting your data using XML values can facilitate data management and analysis.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_types.html">Adding questions in the Formbuilder</a>.
+</p>
 
 **Related term(s):** [Label](https://support.kobotoolbox.org/glossary.html#label)
