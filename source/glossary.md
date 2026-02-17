@@ -390,7 +390,7 @@ The text shown to respondents for a question or response option during data coll
 
 ## Library
 
-A collection of reusable questions or forms that can be added to new projects, helping you design forms more efficiently. Libraries can also be shared with other users for collaborative use.
+A collection of reusable questions or form templates that can be added to new projects, helping you design forms more efficiently. Libraries can also be shared with other users for collaborative use.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_library.html">Using the question library</a>.
@@ -402,7 +402,7 @@ A collection of reusable questions or forms that can be added to new projects, h
 
 ## Library locking
 
-A feature that controls how templates from the Library can be edited after they are used to create new projects. 
+A feature that controls how templates in the library can be edited after they are used to create new projects. 
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/library_locking.html">Library locking with XLSForm</a>.
@@ -487,7 +487,7 @@ The Projects home page is the main dashboard you see by default when you sign in
 
 ## Public collections
 
-A feature that allows users to share selected form templates or questions from their Library publicly, making them available for anyone to browse and reuse.
+A feature that allows users to share selected form templates or questions from their library publicly, making them available for anyone to browse and reuse.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/using_public_collections.html">Using Public Collections</a>.
