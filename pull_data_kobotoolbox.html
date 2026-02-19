@@ -109,7 +109,7 @@
           
   <section id="pulling-data-from-an-external-csv">
 <h1>Pulling data from an external CSV<a class="headerlink" href="#pulling-data-from-an-external-csv" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/pull_data_kobotoolbox.md" class="reference">27 Jan 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6276ef805e5d60353ee43bfbe65edc8adaba3858/source/pull_data_kobotoolbox.md" class="reference">19 Feb 2026</a></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> function in XLSForm lets you dynamically retrieve information from an external CSV file while completing a form. This allows you to reference existing datasets and automatically pull in related details, avoiding the need for enumerators to re-enter the same information.</p>
 <p>For example, you can use <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> to:</p>
 <ul class="simple">
@@ -136,28 +136,40 @@
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>ID</p></th>
 <th class="head text-left"><p>status</p></th>
+<th class="head text-left"><p>age</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p>AH784N</p></td>
 <td class="text-left"><p>eligible</p></td>
+<td class="text-left"><p>19</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>DB839K</p></td>
 <td class="text-left"><p>ineligible</p></td>
+<td class="text-left"><p>37</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>SH849T</p></td>
 <td class="text-left"><p>eligible</p></td>
+<td class="text-left"><p>42</p></td>
 </tr>
 </tbody>
 </table>
+<p class="note">
+<strong>Note:</strong> To use <code>pulldata()</code> with <code>select_one</code> or <code>select_multiple</code> questions, the value in the external file must match the <strong>choice name</strong>, not the choice label. For <code>select_multiple</code> questions, list multiple choice names separated by a space.
+</p>
 </section>
 <section id="setting-up-your-xlsform">
 <h2>Setting up your XLSForm<a class="headerlink" href="#setting-up-your-xlsform" title="Link to this heading">¶</a></h2>
 <p>Once you have set up your external CSV, configure your XLSForm in the following way:</p>
 <ol class="arabic simple">
 <li><p>Ensure your XLSForm includes a question that serves as the <strong>index variable</strong>.</p></li>
-<li><p>Add a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> field to your survey. Give the field a <code class="docutils literal notranslate"><span class="pre">name</span></code>.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column, use the <strong>pulldata()</strong> function to specify which field in the CSV to pull from. Use the following syntax: <code class="docutils literal notranslate"><span class="pre">pulldata('csv','pull_from',</span> <span class="pre">'csv_index',</span> <span class="pre">${survey_index})</span></code>.</p>
+<li><p>Add a new question to your form to retrieve data from the external file, using one of the two approaches below:</p>
+<ul class="simple">
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question to retrieve and store values for later use in the form or dataset. For example, you can use it to display a value in a note or question label, or to use the value in calculations and skip logic.</p></li>
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">decimal</span></code>, <code class="docutils literal notranslate"><span class="pre">date</span></code>, <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, or <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> question to include retrieved values as default responses in editable fields.</p></li>
+</ul>
+</li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column of your new question, use the <strong>pulldata()</strong> function to specify which field in the CSV to pull from. Use the following syntax: <code class="docutils literal notranslate"><span class="pre">pulldata('csv','pull_from',</span> <span class="pre">'csv_index',</span> <span class="pre">${survey_index})</span></code>.</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">csv</span></code> is the name of the CSV file, without the extension.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">pull_from</span></code> refers to the column in your CSV file that contains the data you want to import into your form.</p></li>
@@ -191,14 +203,19 @@
 <td class="text-left"><p>Respondent is ${eligibility_status} for the study.</p></td>
 <td class="text-left"><p></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<tr class="row-odd"><td class="text-left"><p>integer</p></td>
+<td class="text-left"><p>respondent_age</p></td>
+<td class="text-left"><p>Respondent age</p></td>
+<td class="text-left"><p>pulldata(‘eligibility’, ‘age’, ‘ID’, ${respondent_id})</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>survey</p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
-<p>In the example above, the calculation retrieves the value from the <code class="docutils literal notranslate"><span class="pre">status</span></code> column of the <code class="docutils literal notranslate"><span class="pre">eligibility.csv</span></code> file, in the row where the <code class="docutils literal notranslate"><span class="pre">ID</span></code> in the CSV matches the ID entered in the <code class="docutils literal notranslate"><span class="pre">respondent_id</span></code> question of your form.</p>
+<p>In the example above, the calculation retrieves the value from the <code class="docutils literal notranslate"><span class="pre">status</span></code> column of the <code class="docutils literal notranslate"><span class="pre">eligibility.csv</span></code> file, in the row where the <code class="docutils literal notranslate"><span class="pre">ID</span></code> in the CSV matches the ID entered in the <code class="docutils literal notranslate"><span class="pre">respondent_id</span></code> question of your form. Then, it retrieves and displays the respondent’s age from the <code class="docutils literal notranslate"><span class="pre">age</span></code> column of the <code class="docutils literal notranslate"><span class="pre">eligibility.csv</span></code> file.</p>
 <p class="note">
 <strong>Note:</strong> After using the <code>pulldata()</code> function to retrieve external CSV data, you can reference that field in subsequent skip logic conditions, constraints, and labels, just like any other field or calculation.
 </p>
