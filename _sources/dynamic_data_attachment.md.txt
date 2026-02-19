@@ -1,5 +1,5 @@
 # Dynamic data attachments
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a3cacecb4631b200222c9c43250fdfb191a78633/source/dynamic_data_attachment.md" class="reference">19 Feb 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7e5dbc9284af0e9bdd1d3b59283a9801fa09118a/source/dynamic_data_attachment.md" class="reference">19 Feb 2026</a>
 
 
 Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.
@@ -62,7 +62,7 @@ For each expression in the table below:
 | :----------------- | :--------------------------------------------- |
 | `count(instance('parent')/root/data)` | Returns the total number of rows in the parent project. |
 | `count(instance('parent')/root/ data[parent_group/parent_question])`      | Returns the total number of rows in the parent project where `parent_question`  (in `parent_group`) is not empty. |
-| `count(instance('parent')/root/ data[parent_group/parent_question= current()/../child_question]` | Returns the total count of instances where the value of `parent_question`  (in `parent_group`) in the parent project is equal to the value of `child_question` in the child project. |
+| `count(instance('parent')/root/ data[parent_group/parent_question= current()/../child_question])` | Returns the total count of instances where the value of `parent_question`  (in `parent_group`) in the parent project is equal to the value of `child_question` in the child project. |
 | `instance('parent')/root/ data[parent_index_group/parent_index_question= current()/../child_index_question]/parent_group/ parent_question` | Returns the value of `parent_question` (in `parent_group`) from the parent project where `child_index_question` in the child project is equal to `parent_index_question` in the parent project. |
 | `instance('parent')/root/ data[parent_index_group/parent_index_question= current()/../child_index_question][position()= 1]/parent_group/parent_question` | Same as above, but specifies that only data from the first instance of `parent_index_question` should be returned, using the `[position() = 1]` argument. Used in case of possible duplicates in the parent form. |
 | `sum(instance('parent')/root/ data/parent_group/parent_question)` | Returns the sum of values from `parent_question` (in `parent_group`) from the parent project. Note that `parent_question must be numeric` |
