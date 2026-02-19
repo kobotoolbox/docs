@@ -28,7 +28,7 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 
 3. Throughout the form, you can retrieve values from the parent project by creating a new question and including the appropriate expression in the `calculation` column (see table [below](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). You can use the following question types to retrieve data:
     - Use a `calculate` question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
-    - Use `text`, `integer`, `decimal`, `select_one`, or `select_multiple` question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
+    - Use `text`, `integer`, `decimal`, `date`, `select_one`, or `select_multiple` question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
   
 **survey worksheet**
       
