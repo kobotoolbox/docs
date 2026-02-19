@@ -109,7 +109,7 @@
           
   <section id="dynamic-data-attachments">
 <h1>Dynamic data attachments<a class="headerlink" href="#dynamic-data-attachments" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7e5dbc9284af0e9bdd1d3b59283a9801fa09118a/source/dynamic_data_attachment.md" class="reference">19 Feb 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/78dd2911236a3042a193cbebb2e51eb112dc4342/source/dynamic_data_attachment.md" class="reference">19 Feb 2026</a></p>
 <p>Dynamic linking allows you to use data from a <strong>parent project</strong> within <strong>child projects</strong>, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.</p>
 <p class="note">
     <strong>Note:</strong> Dynamic data attachments function similarly to the <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a> function but eliminate the need for separate CSV files, since the data from a linked parent project serves as the data source.
@@ -404,10 +404,17 @@ To pull dynamic data from a parent form into a child form with question groups, 
 </details>
 <br>
 <details>
-<summary><strong>Error evaluation fields in KoboCollect</strong></summary>
+<summary><strong>Error evaluating fields in KoboCollect</strong></summary>
 If your parent form contains duplicate submissions, you may receive an error message in KoboCollect stating “Error evaluating field / XPath evaluation: type mismatch /This field is repeated.” To solve this issue and pull data only from the first submission containing a specific index value, use the <code>[position()=1]</code> argument, as below:
 <br><br>
 <code>instance('parent')/root/data[parent_index_group/parent_index_question = current()/../child_index_question][position()=1]/parent_group/parent_question</code>
+</details>
+<br>
+<details>
+<summary><strong>Cannot update values retrieved from dynamic data attachments</strong></summary>
+If you are pulling dynamic data into integer, text, or select questions and want these fields to remain editable, add a <code>trigger</code> column to your XLSForm. In the row that contains the dynamic data expression, enter the <code>name</code> of the child index question in the <code>trigger</code> column.
+<br><br>
+This allows the value to be edited manually. The value will update from the parent data only when the response to the index question changes.
 </details>
 </section>
 </section>
