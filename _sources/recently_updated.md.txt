@@ -3,6 +3,7 @@
 
 1. [Pulling data from an external CSV](pull_data_kobotoolbox.md) (19 Feb 2026)
 1. [Dynamic data attachments](dynamic_data_attachment.md) (19 Feb 2026)
+1. [Managing projects in KoboToolbox](managing_projects.md) (19 Feb 2026)
 1. [Glossary of KoboToolbox terms](glossary.md) (17 Feb 2026)
 1. [Adding constraints in XLSForm](constraints_xls.md) (15 Feb 2026)
 1. [Using functions in XLSForm](functions_xls.md) (15 Feb 2026)
@@ -10,4 +11,3 @@
 1. [Question appearances in XLSForm](appearances_xls.md) (14 Feb 2026)
 1. [Editing and deleting your data](editing_deleting_data.md) (10 Feb 2026)
 1. [Selecting options from an external file](select_from_file_xls.md) (10 Feb 2026)
-1. [Media question types](photo_audio_video_file.md) (3 Feb 2026)
