@@ -8,6 +8,11 @@ This article explains how to view and manage projects, create new projects, work
 ## Overview of existing projects
 The **Projects home page** lists all projects you own or that have been shared with you. The **My Projects** table displays key information such as project name, owner, status, and number of submissions.
 
+Projects exist in three states:
+* **Deployed:** Projects that have been published and are ready for data collection, allowing users to open the form and submit responses.
+* **Draft:** Projects that are still being developed or edited and are not yet deployed, so they cannot receive submissions.
+* **Archived:** Projects that have been removed from the active project list and no longer accept new submissions, but are retained for reference or record-keeping.
+
 You can manage your projects using the tools in this page:
 * **Filter:** Click <i class="k-icon-filter"></i> **filter** to filter projects by name, description, status, owner, date last edited, date last modified, date last deployed, sector, countries, and languages.
 * **Select fields:** Click <i class="k-icon-spreadsheet"></i> **fields** to choose which fields are displayed in the **My Projects** table.
