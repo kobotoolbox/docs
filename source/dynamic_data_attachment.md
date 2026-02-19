@@ -186,10 +186,21 @@ To pull dynamic data from a parent form into a child form with question groups, 
 <br>
 
 <details>
-<summary><strong>Error evaluation fields in KoboCollect</strong></summary>
+<summary><strong>Error evaluating fields in KoboCollect</strong></summary>
 If your parent form contains duplicate submissions, you may receive an error message in KoboCollect stating “Error evaluating field / XPath evaluation: type mismatch /This field is repeated.” To solve this issue and pull data only from the first submission containing a specific index value, use the <code>[position()=1]</code> argument, as below:
 <br><br>
 <code>instance('parent')/root/data[parent_index_group/parent_index_question = current()/../child_index_question][position()=1]/parent_group/parent_question</code>
 
 </details>
+
+<br>
+
+<details>
+<summary><strong>Cannot update values retrieved from dynamic data attachments</strong></summary>
+If you are pulling dynamic data into integer, text, or select questions and want these fields to remain editable, add a <code>trigger</code> column to your XLSForm. In the row that contains the dynamic data expression, enter the <code>name</code> of the child index question in the <code>trigger</code> column.
+<br><br>
+This allows the value to be edited manually. The value will update from the parent data only when the response to the index question changes.
+
+</details>
+
 
