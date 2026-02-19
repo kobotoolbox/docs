@@ -1,5 +1,5 @@
 # Dynamic data attachments
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7e5dbc9284af0e9bdd1d3b59283a9801fa09118a/source/dynamic_data_attachment.md" class="reference">19 Feb 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/78dd2911236a3042a193cbebb2e51eb112dc4342/source/dynamic_data_attachment.md" class="reference">19 Feb 2026</a>
 
 
 Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.
