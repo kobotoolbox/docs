@@ -23,7 +23,6 @@ The following media question types are available in the KoboToolbox Formbuilder:
 | File          | Attach a file (e.g., .pdf, .docx) |
 | Barcode / QR Code | Scan barcodes and QR codes using the device camera |
 
-The method of capturing or uploading media depends on whether you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [Enketo web forms](https://support.kobotoolbox.org/enketo.html) for data collection. In KoboCollect, you can either upload or record media files directly within the app. With Enketo, you can upload any media file, and record audio directly within the forms.
 
 <p class="note">
 <strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types <strong>in KoboCollect</strong> are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>. 
@@ -67,17 +66,17 @@ To add an advanced appearance:
   
 ![Question appearances](images/photo_audio_video_file/appearances.png)
 
-Available appearances for Photo questions include:
+Available appearances for **Photo** questions include:
 
 | Appearance   | Description |
 |:--------------|:-------------|
-| signature    | Allows the user to capture a signature by signing directly on the device's screen (e.g., for forms that require a digital signature for verification). |
-| draw         | Enables users to sketch or create drawings directly on the device’s screen (e.g., to capture illustrations or hand-drawn maps). |
-| annotate     | Allows the user to annotate an image by drawing or writing on it. |
+| `signature`    | Allows the user to capture a signature by signing directly on the device's screen (e.g., for forms that require a digital signature for verification). |
+| `draw`         | Enables users to sketch or create drawings directly on the device’s screen (e.g., to capture illustrations or hand-drawn maps). |
+| `annotate`     | Allows the user to annotate an image by drawing or writing on it. |
 | `new` (other)         | Prompts the user to take a new picture using the device camera (only available when using KoboCollect). |
 | `new-front` (other)    | Prompts the user to take a new picture using the device's front-facing camera (only available when using KoboCollect). |
 
-For Barcode / QR Code questions, there is only one advanced appearance available:
+For **Barcode / QR Code** questions, there is only one advanced appearance available:
 
 | Appearance   | Description |
 |:--------------|:-------------|
