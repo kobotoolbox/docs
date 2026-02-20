@@ -35,7 +35,7 @@ After retrieving the parent data in a **Calculate** question, you can reference 
 ![Retrieve data from calculate question](images/dynamic_data_attachment_formbuilder/example.png)
 
 <p class="note">
-<strong>Note:</strong> To learn more about calculations in the Formbuilder, see <a href="https://support.kobotoolbox.org/calculate_questions.html">Adding calculations in the Formbuilder</a>.
+To learn more about calculations in the Formbuilder, see <a href="https://support.kobotoolbox.org/calculate_questions.html">Adding calculations in the Formbuilder</a>.
 </p>
 
 ## Calculation syntax for dynamic data attachments
@@ -47,7 +47,7 @@ For each expression in the table below:
 - `parent` is the unique name assigned to the **parent form** (in the External XML question of the **child form**).
 - `parent_question` refers to the data column name of a question from the **parent form.**
 - `child_question` refers to the data column name of a question from the **child form.**
-- `parent_index_question` is the identifying question from the **parent form**that links it to the **child form** (e.g., unique ID, organization name).
+- `parent_index_question` is the identifying question from the **parent form** that links it to the **child form** (e.g., unique ID, organization name).
 - `child_index_question` is the identifying question from the **child form** that links it to the **parent form** (e.g., unique ID, organization name).
 - `parent_group` refers to the data column name of the group in the **parent form** in which the `parent_question` is located.
 - `parent_index_group` refers to the data column name of the group in the **parent form** in which the `parent_index_question` is located.
