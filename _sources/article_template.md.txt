@@ -643,6 +643,8 @@ k-icon-print 	<i class="k-icon k-icon-print"></i>
 
 k-icon-spreadsheet 	<i class="k-icon k-icon-spreadsheet"></i>
 
+k-icon-tag 	<i class="k-icon k-icon-tag"></i>
+
 </details>
 
 
