@@ -1,51 +1,62 @@
-# List of Question Types
+# Adding questions in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3993133bcf0aafda0b0978709534175cb583e049/source/question_types.md" class="reference">28 Oct 2024</a>
 
 
-The below table provides a high-level summary of each of the response types
-available to use in your XLSForm and formbuilder:
+The KoboToolbox Formbuilder allows you to easily add questions to your form as you build your survey or questionnaire. 
+This article explains how to add questions to your form, define answer choices where applicable, and provides an overview of the available question types in the Formbuilder to support effective form design.
 
-| Question type                    | Icon                                          | Answer input                                                                                 |
-| :------------------------------- | :-------------------------------------------- | :------------------------------------------------------------------------------------------- |
-| integer                          | <i class="k-icon k-icon-qt-number"></i>       | Integer (i.e., whole number) input.                                                          |
-| decimal                          | <i class="k-icon k-icon-qt-decimal"></i>      | Decimal input.                                                                               |
-| range                            | <i class="k-icon k-icon-qt-range"></i>        | Range input (including rating).                                                              |
-| text                             | <i class="k-icon k-icon-qt-text"></i>         | Free text response.                                                                          |
-| select_one [options]             | <i class="k-icon k-icon-qt-select-one"></i>   | Multiple choice question; only one answer can be selected.                                   |
-| select_multiple [options]        | <i class="k-icon k-icon-qt-select-many"></i>  | Multiple choice question; multiple answers can be selected.                                  |
-| select_one_from_file [file]      | <i class="k-icon k-icon-qt-select-one"></i>   | Multiple choice from file; only one answer can be selected.                                  |
-| select_multiple_from_file [file] | <i class="k-icon k-icon-qt-select-many"></i>  | Multiple choice from file; multiple answers can be selected.                                 |
-| rank [options]                   | n/a                                           | Rank question; order a list.                                                                 |
-| note                             | <i class="k-icon k-icon-qt-note"></i>         | Display a note on the screen, takes no input. Shorthand for type=text with readonly=true.    |
-| geopoint                         | <i class="k-icon k-icon-qt-point"></i>        | Collect a single GPS coordinate.                                                             |
-| geotrace                         | <i class="k-icon k-icon-qt-line"></i>         | Record a line of two or more GPS coordinates.                                                |
-| geoshape                         | <i class="k-icon k-icon-qt-area"></i>         | Record a polygon of multiple GPS coordinates; the last point is the same as the first point. |
-| date                             | <i class="k-icon k-icon-qt-date"></i>         | Date input.                                                                                  |
-| time                             | <i class="k-icon k-icon-qt-time"></i>         | Time input.                                                                                  |
-| datetime                         | <i class="k-icon k-icon-qt-date-time"></i>    | Accepts a date and a time input.                                                             |
-| image                            | <i class="k-icon k-icon-qt-photo"></i>        | Take a picture or upload an image file.                                                      |
-| audio                            | <i class="k-icon k-icon-qt-audio"></i>        | Take an audio recording or upload an audio file.                                             |
-| background-audio                 | <i class="k-icon k-icon-background-rec"></i>  | Audio is recorded in the background while filling the form.                                  |
-| video                            | <i class="k-icon k-icon-qt-video"></i>        | Take a video recording or upload a video file.                                               |
-| file                             | <i class="k-icon k-icon-qt-file"></i>         | Generic file input (txt, pdf, xls, xlsx, doc, docx, rtf, zip)                                |
-| barcode                          | <i class="k-icon k-icon-qt-barcode"></i>      | Scan a barcode or QR Code                            |
-| calculate                        | <i class="k-icon k-icon-qt-calculate"></i>    | Perform a calculation; see the Calculation section below.                                    |
-| acknowledge                      | <i class="k-icon k-icon-qt-acknowledge"></i>  | Acknowledge prompt that sets value to "OK" if selected.                                      |
-| hidden                           | <i class="k-icon k-icon-qt-hidden"></i>       | A field with no associated UI element which can be used to store a constant.                 |
-| xml-external                     | <i class="k-icon k-icon-qt-external-xml"></i> | Adds a reference to an external XML data file.                                               |
+## Adding a question
 
-For more information on the response types, please visit
-[xlsform.org](http://xlsform.org/).
+To add a question to your form:
 
-Additionally, KoboToolbox-specific types can also be used from within the
-formbuilder:
+1. Click the <i class="k-icon-plus"></i> button. 
+2. Enter your question label.
+3. Click **+ ADD QUESTION.**
+4. Choose the [question type](#question-types-in-the-formbuilder). 
 
-| Formbuilder Question type | Icon                                             | Answer input                                                 |
-| :------------------------ | :----------------------------------------------- | :----------------------------------------------------------- |
-| Rating                    | <i class="k-icon k-icon-qt-rating"></i>          | Compare different items using a common scale.                |
-| Ranking                   | <i class="k-icon k-icon-qt-ranking"></i>         | Compare a list of different objects to one another.          |
-| Question Matrix           | <i class="k-icon k-icon-qt-question-matrix"></i> | Create a group of questions that display in a matrix format. |
+![Add a question to the Formbuilder](images/question_types/add_question.png)
 
-<p class="note"><a class="reference" href="/calculate_questions.html">Calculate Questions</a> are not displayed in your form, but are executed automatically as your form is being answered.</p>
+<p class="note">
+<strong>Note:</strong> Once the question type has been selected, it cannot be changed in the Formbuilder. To change the question type of an existing question, delete the question and create a new question with the same label.
+</p>
 
-<p class="note">The <a class="reference" href="matrix_response.html">Question Matrix Type</a> is only supported in Enketo and with the Grid Theme set. </p>
+### Setting data column names
+
+After adding a question to your form, it is strongly recommended to define a **Data Column Name** in the question **Settings.** The data column name is used to identify the question throughout the form logic and in the exported dataset. 
+
+By default, KoboToolbox creates the data column name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the data column name will be `respondent_name`.
+
+<p class="note">
+    To learn more about data column names, see <a href="">Question options in the Formbuilder</a>.
+</p>
+
+## Adding option choices
+
+When adding Select One or Select Many questions to your form, you will be prompted to enter option choices. 
+
+- You can enter as many option choices as you want. 
+- To reorder the list of choices, click and drag an item to the desired position.
+- Click the <i class=""></i> trash can icon next to a choice label to delete it.
+
+![Delete choice](images/question_types/delete_choice.png)
+
+<p class="note">
+<strong>Note:</strong> Managing long choice lists in the Formbuilder can be time-consuming. If your form includes many options or the same choice list used in multiple questions, it is often easier to create and manage these lists using XLSForm instead. To learn more, see <a href="https://support.kobotoolbox.org/option_choices_xls.html#">Managing option choices in XLSForm</a>.
+</p>
+
+### Setting XML values for option choices
+
+Next to each choice option, you will see a field labeled **AUTOMATIC.** This field contains the [XML value](https://support.kobotoolbox.org/glossary.html#xml-value) for that option.
+
+The XML value is a short, internal name that KoboToolbox uses to save and identify the selected option in your data. By default, KoboToolbox creates the XML value for you by removing spaces and capital letters from the option label. For example, if the option label is “Option 1”, the XML value will be `option_1`.
+
+In some cases, you may want to set your own XML value. This can be helpful if the option label is very long or if you want to use a clearer or more consistent name. To do this, click **AUTOMATIC** and replace it with your own custom value.
+
+<p class="note">
+<strong>Note:</strong> It is strongly recommended to define XML values for all choices when using non-Latin scripts, such as Chinese, Arabic, or Nepali, to ensure your data is stored and exported correctly.
+</p>
+
+## Question types in the Formbuilder
+
+The following question types are available in the Formbuilder:
+
