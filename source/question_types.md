@@ -3,6 +3,7 @@
 
 
 The KoboToolbox Formbuilder allows you to easily add questions to your form as you build your survey or questionnaire. 
+
 This article explains how to add questions to your form, define answer choices where applicable, and provides an overview of the available question types in the Formbuilder to support effective form design.
 
 ## Adding a question
@@ -27,7 +28,7 @@ After adding a question to your form, it is strongly recommended to define a **D
 By default, KoboToolbox creates the data column name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the data column name will be `respondent_name`.
 
 <p class="note">
-    To learn more about data column names, see <a href="">Question options in the Formbuilder</a>.
+    To learn more about data column names, see <a href="#adding-option-choices">Question options in the Formbuilder</a>.
 </p>
 
 ## Adding option choices
@@ -36,7 +37,7 @@ When adding Select One or Select Many questions to your form, you will be prompt
 
 - You can enter as many option choices as you want. 
 - To reorder the list of choices, click and drag an item to the desired position.
-- Click the <i class=""></i> trash can icon next to a choice label to delete it.
+- Click the <i class="k-icon-trash"></i> trash can icon next to a choice label to delete it.
 
 ![Delete choice](images/question_types/delete_choice.png)
 
@@ -59,4 +60,36 @@ In some cases, you may want to set your own XML value. This can be helpful if th
 ## Question types in the Formbuilder
 
 The following question types are available in the Formbuilder:
+| Question type                                        | Description                                                                                                                                    |
+|:-----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
+| <i class="k-icon-qt-select-one"></i> Select One              | Allows respondents to [select one option](https://support.kobotoolbox.org/select_one_and_select_many.html) from a predefined list.                                                                                |
+| <i class="k-icon-qt-select-many"></i> Select Many             | Allows respondents to [select multiple options](https://support.kobotoolbox.org/select_one_and_select_many.html) from a predefined list.                                                                          |
+| <i class="k-icon-qt-text"></i> Text                    | Provides a [text box](https://support.kobotoolbox.org/text_questions.html) to collect open-ended responses.                                                                                          |
+| <i class="k-icon-qt-number"></i> Number                  | Allows respondents to input [whole numbers](https://support.kobotoolbox.org/number_decimal_range.html).                                                                                                     |
+| <i class="k-icon-qt-decimal"></i> Decimal                 | Allows respondents to [input numbers](https://support.kobotoolbox.org/number_decimal_range.html) that may contain decimal points.                                                                           |
+| <i class="k-icon-qt-date"></i> Date                    | Captures a specific [calendar date](https://support.kobotoolbox.org/date_time.html), including year, month, and day.                                                                             |
+| <i class="k-icon-qt-time"></i> Time                    | Captures a [specific time](https://support.kobotoolbox.org/date_time.html) in hours and minutes.                                                                                                 |
+| <i class="k-icon-qt-date-time"></i> Date & time             | Captures both [a date and a time](https://support.kobotoolbox.org/date_time.html) in a single combined response.                                                                                 |
+| <i class="k-icon-qt-point"></i> Point                   | Records a [single GPS location](https://support.kobotoolbox.org/gps_questions.html).                                                                                                                 |
+| <i class="k-icon-qt-line"></i> Line                    | Records [multiple GPS points](https://support.kobotoolbox.org/gps_questions.html) that form a line.                                                                                                  |
+| <i class="k-icon-qt-area"></i> Area                    | Records [multiple GPS points](https://support.kobotoolbox.org/gps_questions.html) that form an enclosed area.                                                                                        |
+| <i class="k-icon-qt-photo"></i> Photo                   | Allows respondents to [upload images](https://support.kobotoolbox.org/photo_audio_video_file.html) or take photos (when using the [KoboCollect app](https://support.kobotoolbox.org/glossary.html#kobocollect)).                                                           |
+| <i class="k-icon-qt-audio"></i> Audio                   | Allows respondents to [upload an audio file](https://support.kobotoolbox.org/photo_audio_video_file.html) or record audio.                                                                                    |
+| <i class="k-icon-qt-video"></i> Video                   | Allows respondents to [upload videos](https://support.kobotoolbox.org/photo_audio_video_file.html) or record videos (when using the [KoboCollect app](https://support.kobotoolbox.org/glossary.html#kobocollect)).                                                         |
+| <i class="k-icon-qt-barcode"></i> Barcode / QR Code       | Scans a [QR code](https://support.kobotoolbox.org/photo_audio_video_file.html) to collect embedded information using the device's camera (when using the [KoboCollect app](https://support.kobotoolbox.org/glossary.html#kobocollect)).                                    |
+| <i class="k-icon-qt-file"></i> File                    | Allows respondents to [upload files](https://support.kobotoolbox.org/photo_audio_video_file.html), such as text files, spreadsheets, and PDF files.                                                           |
+| <i class="k-icon-qt-note"></i> Note                    | [Provides information](https://support.kobotoolbox.org/note_questions.html) to the respondent without requiring any input.                                                                            |
+| <i class="k-icon-qt-acknowledge"></i> Acknowledge             | A [single checkbox](https://support.kobotoolbox.org/select_one_and_select_many.html) that respondents can select to acknowledge their agreement with a statement.                                                  |
+| <i class="k-icon-qt-rating"></i> Rating                  | Allows respondents to [rate different items](https://support.kobotoolbox.org/select_one_and_select_many.html#setting-up-rating-questions) using a common scale.                                                                               |
+| <i class="k-icon-qt-question-matrix"></i> Question Matrix         | Creates a [group of questions](https://support.kobotoolbox.org/matrix_response.html) that display in a matrix format, whereby each cell within the matrix represents a separate question.               |
+| <i class="k-icon-qt-ranking"></i> Ranking                 | Allows respondents to [rank items](https://support.kobotoolbox.org/select_one_and_select_many.html#setting-up-ranking-questions) in order of preference.                                                                                       |
+| <i class="k-icon-qt-calculate"></i> Calculate               | Automatically performs [calculations](https://support.kobotoolbox.org/calculate_questions.html) within a form based on responses to previous questions.                                                    |
+| <i class="k-icon-qt-hidden"></i> Hidden                  | Stores [predefined values](https://support.kobotoolbox.org/form_logic.html#storing-constants-in-your-form) that are not visible to the respondent.                                                                               |
+| <i class="k-icon-qt-range"></i> Range                   | Allows respondents to [select a numeric value](https://support.kobotoolbox.org/number_decimal_range.html#setting-up-range-questions) within a specified range.                                                                         |
+| <i class="k-icon-qt-external-xml"></i> External XML            | Connects the KoboToolbox project to [other projects](https://support.kobotoolbox.org/dynamic_data_attachment_formbuilder.html) in order to dynamically retrieve data.                                                      |
+| <i class="k-icon-qt-select-one-from-file"></i> Select One from File    | Allows respondents to select one option [from a predefined list](https://support.kobotoolbox.org/external_file.html), stored in an external CSV file.                                                |
+| <i class="k-icon-qt-select-many-from-file"></i> Select Many from File   | Allows respondents to select multiple options [from a predefined list](https://support.kobotoolbox.org/external_file.html), stored in an external CSV file.                                          |
 
+<p class="note">
+<strong>Note:</strong> Select One from File and Select Many from File question types only appear as options in the Formbuilder if an external choice file has been <a href="https://support.kobotoolbox.org/upload_media.html">uploaded</a> to KoboToolbox.
+</p>
