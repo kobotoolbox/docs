@@ -76,7 +76,6 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   number_text_responses
   cascading_select
   group_repeat
-  restrict_responses
   language_dashboard
   form_meta
   audit_logging
@@ -113,6 +112,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   media
   form_logic_xls
   functions_xls
+  restrict_responses
   skip_logic_xls
   constraints_xls
   required_logic_xls
