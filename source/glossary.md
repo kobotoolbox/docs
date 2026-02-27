@@ -381,7 +381,7 @@ The text shown to respondents for a question or response option during data coll
 A collection of reusable questions or forms that can be added to new projects, helping you design forms more efficiently. Libraries can also be shared with other users for collaborative use.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_library.html">Using the question library</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_library.html">Using the KoboToolbox question library</a>.
 </p>
 
 **Related term(s):** [Public collections](https://support.kobotoolbox.org/glossary.html#public-collections), [Library locking](https://support.kobotoolbox.org/glossary.html#library-locking)
