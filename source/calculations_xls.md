@@ -60,7 +60,7 @@ Advanced calculations in XLSForm often rely on **functions** and **regular expre
 * **Regular expressions (regex)** are search patterns used to match specific characters within a string of text.
 
 <p class="note">
-  For a comprehensive list of functions available in XLSForm, see <a href="https://support.kobotoolbox.org/functions_xls.html">Using functions in XLSForm</a>.  To learn more about regular expressions, see <a href="https://support.kobotoolbox.org/restrict_responses.html">Restricting text responses with regular expressions</a>.
+  For a comprehensive list of functions available in XLSForm, see <a href="https://support.kobotoolbox.org/functions_xls.html">Using functions in XLSForm</a>.  To learn more about regular expressions, see <a href="https://support.kobotoolbox.org/restrict_responses.html">Using regular expressions in XLSForm</a>.
 </p>
 
 Examples of more advanced calculations include:
