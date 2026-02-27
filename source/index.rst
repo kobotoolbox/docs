@@ -119,6 +119,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   select_from_map_xls
   dynamic_data_attachment
   library_locking
+  import_collection
 
 .. raw:: html
 
