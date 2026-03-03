@@ -135,6 +135,13 @@ To set a dynamic default response:
 <br>
 
 <details>
+  <summary><strong>Division by zero</strong></summary>
+ If a calculation includes a division and the divisor is equal to zero, the result is handled differently in Enketo and KoboCollect. In Enketo, a division by zero is ignored. In KoboCollect, the calculated value will be <code>Infinity</code>, which can cause issues in data reports and when processing exported data. To prevent this, add skip logic so the calculation does not run when the divisor equals zero, or apply a constraint to prevent the divisor variable from being equal to zero. 
+</details>
+
+<br>
+
+<details>
   <summary><strong>Calculations keep changing in the form</strong></summary>
   Expressions are re-evaluated as an enumerator progresses through a form. This is especially important for <a href="https://support.kobotoolbox.org/functions_xls.html">functions</a> not connected to fields in the form, such as <code>random()</code> or <code>now()</code>, as their values may change under these conditions.
 <br><br>
