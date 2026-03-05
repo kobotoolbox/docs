@@ -167,7 +167,8 @@ correcting the error in your spreadsheet, you will need to upload the file again
 
 <details>
 <summary><strong>Error message: Choice names must be unique for each choice list</strong></summary>
-<img src="images/error-message-invalid-name.png" alt="error message invalid name value">
+    
+![Error message invalid name](images/error-message-invalid-name.png)
     
 This error means you have at least two rows in the same <strong>choices</strong> list that share the same <strong>name</strong> value.
 
@@ -195,7 +196,8 @@ If duplicated `name` values are intentional (e.g., when using [choice filters](h
 
 <details>
 <summary><strong>Error message: List name not in choices sheet</strong></summary>
-<img src="images/error-message-list-name.png" alt="error message list name not in choices">
+
+![Error message list name](images/error-message-list-name.png)
 
 This error occurs when a question uses an option list that does not exist in the `choices` sheet, or the list name in the `list_name` column is misspelled.
 
