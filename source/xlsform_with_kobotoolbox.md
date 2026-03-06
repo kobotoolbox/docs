@@ -218,13 +218,13 @@ To fix the missing or incorrect list name:
 
 <ol>
 <li>Open your XLSForm.</li>
-<li>Go to the `survey` sheet.</li>
-<li>Find the question that uses the list name referenced in the error message (for example, `select_one yes_no`).</li>
-<li>Go to the `choices` sheet and check the `list_name` column for an exact match to the list name referenced in the error message.</li>
+<li>Go to the <code>survey</code> sheet.</li>
+<li>Find the question that uses the list name referenced in the error message (for example, <code>select_one yes_no</code>).</li>
+<li>Go to the <code>choices</code> sheet and check the <code>list_name</code> column for an exact match to the list name referenced in the error message.</li>
 <li>Do one of the following:
   <ul>
-    <li><strong>If the list name is missing:</strong> Add a new list of choices for that question. Ensure the `list_name` is written exactly as it appears in the `survey` sheet.</li>
-    <li><strong>If the list name exists but is spelled differently:</strong> Correct the typo so the list name matches exactly in both the `survey` and `choices` sheets.</li>
+    <li><strong>If the list name is missing:</strong> Add a new list of choices for that question. Ensure the <code>list_name</code> is written exactly as it appears in the <code>survey</code> sheet.</li>
+    <li><strong>If the list name exists but is spelled differently:</strong> Correct the typo so the list name matches exactly in both the <code>survey</code> and <code>choices</code> sheets.</li>
   </ul>
 </li>
 <li>Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.</li>
