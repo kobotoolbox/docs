@@ -1,6 +1,7 @@
 # Recently updated Support Articles
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recently_updated.md" class="reference">28 Oct 2025</a>
 
+1. [Using XLSForm with KoboToolbox](xlsform_with_kobotoolbox.md) (6 Mar 2026)
 1. [Adding calculations in XLSForm](calculations_xls.md) (3 Mar 2026)
 1. [Pulling data from an external CSV](pull_data_kobotoolbox.md) (19 Feb 2026)
 1. [Dynamic data attachments](dynamic_data_attachment.md) (19 Feb 2026)
@@ -10,4 +11,3 @@
 1. [Using functions in XLSForm](functions_xls.md) (15 Feb 2026)
 1. [Question types in XLSForm](question_types_xls.md) (15 Feb 2026)
 1. [Question appearances in XLSForm](appearances_xls.md) (14 Feb 2026)
-1. [Editing and deleting your data](editing_deleting_data.md) (10 Feb 2026)
