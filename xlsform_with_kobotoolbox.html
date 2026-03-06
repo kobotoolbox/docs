@@ -109,7 +109,7 @@
           
   <section id="using-xlsform-with-kobotoolbox">
 <h1>Using XLSForm with KoboToolbox<a class="headerlink" href="#using-xlsform-with-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/582c77cdd65e695d09917f921cff167119bb1012/source/xlsform_with_kobotoolbox.md" class="reference">6 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6aa13c69b74ba734eba50a997208c7b5e259c46d/source/xlsform_with_kobotoolbox.md" class="reference">6 Mar 2026</a></p>
 <p>XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
 building a form in the KoboToolbox Formbuilder, then download it as an
@@ -282,7 +282,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 <td class="text-left"><p>The option list for a question has not been defined, or there is a typo in the <code class="docutils literal notranslate"><span class="pre">list_name</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Choice</span> <span class="pre">names</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">unique</span> <span class="pre">for</span> <span class="pre">each</span> <span class="pre">choice</span> <span class="pre">list.</span> <span class="pre">If</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">intentional,</span> <span class="pre">use</span> <span class="pre">the</span> <span class="pre">setting</span> <span class="pre">'allow_choice_duplicates'.</span></code></p></td>
-<td class="text-left"><p>Duplicate choice names have been used within the same list of options. Remove the duplicated choice name(s), or allow choice duplicates in your <a href="https://support.kobotoolbox.org/form_settings_xls.html">form settings</a>.</p></td>
+<td class="text-left"><p>Duplicate choice names have been used within the same list of options. Remove the duplicated choice name(s), or allow choice duplicates in your <a href="https://support.kobotoolbox.org/form_settings_xls.html#available-form-settings-in-xlsform">form settings</a>.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Unmatched</span> <span class="pre">begin</span> <span class="pre">statement:</span> <span class="pre">group</span> <span class="pre">(group)</span></code></p></td>
 <td class="text-left"><p>Question group is missing its corresponding <code class="docutils literal notranslate"><span class="pre">end_group</span></code> row.</p></td>
@@ -299,6 +299,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 <br>
 <details>
 <summary><strong>Error message: Choice names must be unique for each choice list</strong></summary>
+<br>
 <p><img alt="Error message invalid name" src="_images/error-message-invalid-name.png" /></p>
 <p>This error means you have at least two rows in the same <strong>choices</strong> list that share the same <strong>name</strong> value.</p>
 <p>For example:</p>
@@ -337,11 +338,12 @@ correcting the error in your spreadsheet, you will need to upload the file again
 <li><p>Update the duplicated <code class="docutils literal notranslate"><span class="pre">name</span></code> value so each <code class="docutils literal notranslate"><span class="pre">name</span></code> in the list is unique.</p></li>
 <li><p>Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.</p></li>
 </ol>
-<p>If duplicated <code class="docutils literal notranslate"><span class="pre">name</span></code> values are intentional (e.g., when using <a class="reference external" href="https://support.kobotoolbox.org/choice_filters_xls.html">choice filters</a>), you can allow choice duplicates in your <a class="reference external" href="https://support.kobotoolbox.org/form_settings_xls.html">form settings</a>.</p>
+<p>If duplicated <code class="docutils literal notranslate"><span class="pre">name</span></code> values are intentional (e.g., when using <a class="reference external" href="https://support.kobotoolbox.org/choice_filters_xls.html">choice filters</a>), you can allow choice duplicates in your <a class="reference external" href="https://support.kobotoolbox.org/form_settings_xls.html#available-form-settings-in-xlsform">form settings</a>.</p>
 </details>
 <br>
 <details>
 <summary><strong>Error message: List name not in choices sheet</strong></summary>
+<br>
 <p><img alt="Error message list name" src="_images/error-message-list-name.png" /></p>
 <p>This error occurs when a question uses an option list that does not exist in the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet, or the list name in the <code class="docutils literal notranslate"><span class="pre">list_name</span></code> column is misspelled.</p>
 <p>For example:</p>

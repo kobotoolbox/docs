@@ -1,5 +1,5 @@
 # Using XLSForm with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/582c77cdd65e695d09917f921cff167119bb1012/source/xlsform_with_kobotoolbox.md" class="reference">6 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6aa13c69b74ba734eba50a997208c7b5e259c46d/source/xlsform_with_kobotoolbox.md" class="reference">6 Mar 2026</a>
 
 XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
@@ -157,7 +157,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 | `unable to deploy ODK Validate Errors: >> XForm is invalid` | A form logic expression contains errors, such as incorrect question referencing syntax or a missing parenthesis. |
 | `There has been a problem trying to replace ${question with the XPath to the survey element named 'question'. There is no survey element with this name.` | You are referring to a question in your form that does not exist or is misspelled. Ensure you are using the **exact** question name in your form logic expressions. |
 | `'list_name'`<br>`​​List name not in choices sheet` | The option list for a question has not been defined, or there is a typo in the `list_name`. |
-| `Choice names must be unique for each choice list. If this is intentional, use the setting 'allow_choice_duplicates'.` | Duplicate choice names have been used within the same list of options. Remove the duplicated choice name(s), or allow choice duplicates in your <a href="https://support.kobotoolbox.org/form_settings_xls.html">form settings</a>. |
+| `Choice names must be unique for each choice list. If this is intentional, use the setting 'allow_choice_duplicates'.` | Duplicate choice names have been used within the same list of options. Remove the duplicated choice name(s), or allow choice duplicates in your <a href="https://support.kobotoolbox.org/form_settings_xls.html#available-form-settings-in-xlsform">form settings</a>. |
 | `Unmatched begin statement: group (group)` | Question group is missing its corresponding `end_group` row. |
 | `Can't find external_file.csv` | An <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">external attachment</a> linked to your form (e.g., when using `pulldata()` ) has not been uploaded to KoboToolbox. |
 | `Can't find survey.xml` | <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">Dynamic data attachments</a> have not been properly set up in your project settings. |
@@ -167,6 +167,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 
 <details>
 <summary><strong>Error message: Choice names must be unique for each choice list</strong></summary>
+<br>
     
 ![Error message invalid name](images/xlsform_with_kobotoolbox/error-message-invalid-name.png)
     
@@ -189,7 +190,7 @@ To fix the duplicate choice names:
 5. Update the duplicated `name` value so each `name` in the list is unique.
 5. Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.
 
-If duplicated `name` values are intentional (e.g., when using [choice filters](https://support.kobotoolbox.org/choice_filters_xls.html)), you can allow choice duplicates in your [form settings](https://support.kobotoolbox.org/form_settings_xls.html).
+If duplicated `name` values are intentional (e.g., when using [choice filters](https://support.kobotoolbox.org/choice_filters_xls.html)), you can allow choice duplicates in your [form settings](https://support.kobotoolbox.org/form_settings_xls.html#available-form-settings-in-xlsform).
 
 </details>
 
@@ -197,6 +198,7 @@ If duplicated `name` values are intentional (e.g., when using [choice filters](h
 
 <details>
 <summary><strong>Error message: List name not in choices sheet</strong></summary>
+<br>
 
 ![Error message list name](images/xlsform_with_kobotoolbox/error-message-list-name.png)
 
