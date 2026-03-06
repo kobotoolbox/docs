@@ -149,18 +149,92 @@ indicating the exact row, question, or expression where the issue is located. Af
 correcting the error in your spreadsheet, you will need to upload the file again.
 
 
-| **Common error messages** | **Common explanation** |
+| Common error messages | Common explanation |
 | :--- | :--- |
 | `The survey sheet is either empty or missing important column headers.` | Mandatory column headers are missing or misspelled. |
 | `The survey element named 'name' has no label or hint.` | One of the questions in your form is missing a question label. |
 | `FormLogicError: Could not evaluate: [expression], message: The string did not match the expected pattern.` | A form logic expression contains errors, such as incorrect question referencing syntax or a missing parenthesis. |
 | `unable to deploy ODK Validate Errors: >> XForm is invalid` | A form logic expression contains errors, such as incorrect question referencing syntax or a missing parenthesis. |
 | `There has been a problem trying to replace ${question with the XPath to the survey element named 'question'. There is no survey element with this name.` | You are referring to a question in your form that does not exist or is misspelled. Ensure you are using the **exact** question name in your form logic expressions. |
-| `list_name` | The option list for a question has not been defined, or there is a typo in the `list_name`. |
+| `'list_name'`<br>`​​List name not in choices sheet` | The option list for a question has not been defined, or there is a typo in the `list_name`. |
 | `Choice names must be unique for each choice list. If this is intentional, use the setting 'allow_choice_duplicates'.` | Duplicate choice names have been used within the same list of options. Remove the duplicated choice name(s), or allow choice duplicates in your <a href="https://support.kobotoolbox.org/form_settings_xls.html">form settings</a>. |
 | `Unmatched begin statement: group (group)` | Question group is missing its corresponding `end_group` row. |
 | `Can't find external_file.csv` | An <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">external attachment</a> linked to your form (e.g., when using `pulldata()` ) has not been uploaded to KoboToolbox. |
 | `Can't find survey.xml` | <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">Dynamic data attachments</a> have not been properly set up in your project settings. |
+</details>
+
+<br>
+
+<details>
+<summary><strong>Error message: Choice names must be unique for each choice list</strong></summary>
+    
+![Error message invalid name](images/xlsform_with_kobotoolbox/error-message-invalid-name.png)
+    
+This error means you have at least two rows in the same <strong>choices</strong> list that share the same <strong>name</strong> value.
+
+For example:
+
+| list_name | name | label |
+|:---|:---|:---|
+| yn | yes | Yes, always |
+| yn | yes | Yes, sometimes |
+| yn | no | No, never |
+| choices |
+
+To fix the duplicate choice names:
+1. Open your XLSForm.
+2. Go to the `choices` sheet.
+3. Find the row number referenced in the error message.
+4. Check the `name` column for duplicate values within the same `list_name`.
+5. Update the duplicated `name` value so each `name` in the list is unique.
+5. Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.
+
+If duplicated `name` values are intentional (e.g., when using [choice filters](https://support.kobotoolbox.org/choice_filters_xls.html)), you can allow choice duplicates in your [form settings](https://support.kobotoolbox.org/form_settings_xls.html).
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>Error message: List name not in choices sheet</strong></summary>
+
+![Error message list name](images/xlsform_with_kobotoolbox/error-message-list-name.png)
+
+This error occurs when a question uses an option list that does not exist in the `choices` sheet, or the list name in the `list_name` column is misspelled.
+
+For example:
+
+<strong>survey sheet</strong>
+| type | name | label |
+|:---|:---|:---|
+| select_one yes_no | service | Do you like the service at the supermarket? |
+| survey |
+
+<strong>choices sheet</strong>
+
+| list_name | name | label |
+|:---|:---|:---|
+| yes_n | yes_always | Yes, always |
+| yes_n | yes_sometimes | Yes, sometimes |
+| yes_n | no | No, never |
+| choices |
+
+To fix the missing or incorrect list name:
+
+<ol>
+<li>Open your XLSForm.</li>
+<li>Go to the <code>survey</code> sheet.</li>
+<li>Find the question that uses the list name referenced in the error message (for example, <code>select_one yes_no</code>).</li>
+<li>Go to the <code>choices</code> sheet and check the <code>list_name</code> column for an exact match to the list name referenced in the error message.</li>
+<li>Do one of the following:
+  <ul>
+    <li><strong>If the list name is missing:</strong> Add a new list of choices for that question. Ensure the <code>list_name</code> is written exactly as it appears in the <code>survey</code> sheet.</li>
+    <li><strong>If the list name exists but is spelled differently:</strong> Correct the typo so the list name matches exactly in both the <code>survey</code> and <code>choices</code> sheets.</li>
+  </ul>
+</li>
+<li>Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.</li>
+</ol>
+
 </details>
 
 <br>
