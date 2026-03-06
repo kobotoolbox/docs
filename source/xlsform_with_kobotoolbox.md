@@ -179,6 +179,7 @@ For example:
 | yn | yes | Yes, always |
 | yn | yes | Yes, sometimes |
 | yn | no | No, never |
+| choices |
 
 To fix the duplicate choice names:
 1. Open your XLSForm.
@@ -201,10 +202,13 @@ If duplicated `name` values are intentional (e.g., when using [choice filters](h
 
 This error occurs when a question uses an option list that does not exist in the `choices` sheet, or the list name in the `list_name` column is misspelled.
 
+For example:
+
 <strong>survey sheet</strong>
 | type | name | label |
 |:---|:---|:---|
 | select_one yes_no | service | Do you like the service at the supermarket? |
+| survey |
 
 <strong>choices sheet</strong>
 
@@ -213,6 +217,7 @@ This error occurs when a question uses an option list that does not exist in the
 | yes_n | yes_always | Yes, always |
 | yes_n | yes_sometimes | Yes, sometimes |
 | yes_n | no | No, never |
+| choices |
 
 To fix the missing or incorrect list name:
 
