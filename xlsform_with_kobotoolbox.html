@@ -109,7 +109,7 @@
           
   <section id="using-xlsform-with-kobotoolbox">
 <h1>Using XLSForm with KoboToolbox<a class="headerlink" href="#using-xlsform-with-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/a22d908bc885ecc4e108ce3880dbc6f14a2f2df8/source/xlsform_with_kobotoolbox.md" class="reference">30 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/582c77cdd65e695d09917f921cff167119bb1012/source/xlsform_with_kobotoolbox.md" class="reference">6 Mar 2026</a></p>
 <p>XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
 building a form in the KoboToolbox Formbuilder, then download it as an
@@ -258,8 +258,8 @@ indicating the exact row, question, or expression where the issue is located. Af
 correcting the error in your spreadsheet, you will need to upload the file again.</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p><strong>Common error messages</strong></p></th>
-<th class="head text-left"><p><strong>Common explanation</strong></p></th>
+<tr class="row-odd"><th class="head text-left"><p>Common error messages</p></th>
+<th class="head text-left"><p>Common explanation</p></th>
 </tr>
 </thead>
 <tbody>
@@ -278,7 +278,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">There</span> <span class="pre">has</span> <span class="pre">been</span> <span class="pre">a</span> <span class="pre">problem</span> <span class="pre">trying</span> <span class="pre">to</span> <span class="pre">replace</span> <span class="pre">${question</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">XPath</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">survey</span> <span class="pre">element</span> <span class="pre">named</span> <span class="pre">'question'.</span> <span class="pre">There</span> <span class="pre">is</span> <span class="pre">no</span> <span class="pre">survey</span> <span class="pre">element</span> <span class="pre">with</span> <span class="pre">this</span> <span class="pre">name.</span></code></p></td>
 <td class="text-left"><p>You are referring to a question in your form that does not exist or is misspelled. Ensure you are using the <strong>exact</strong> question name in your form logic expressions.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">list_name</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">'list_name'</span></code><br><code class="docutils literal notranslate"><span class="pre">​​List</span> <span class="pre">name</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">choices</span> <span class="pre">sheet</span></code></p></td>
 <td class="text-left"><p>The option list for a question has not been defined, or there is a typo in the <code class="docutils literal notranslate"><span class="pre">list_name</span></code>.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Choice</span> <span class="pre">names</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">unique</span> <span class="pre">for</span> <span class="pre">each</span> <span class="pre">choice</span> <span class="pre">list.</span> <span class="pre">If</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">intentional,</span> <span class="pre">use</span> <span class="pre">the</span> <span class="pre">setting</span> <span class="pre">'allow_choice_duplicates'.</span></code></p></td>
@@ -295,6 +295,116 @@ correcting the error in your spreadsheet, you will need to upload the file again
 </tr>
 </tbody>
 </table>
+</details>
+<br>
+<details>
+<summary><strong>Error message: Choice names must be unique for each choice list</strong></summary>
+<p><img alt="Error message invalid name" src="_images/error-message-invalid-name.png" /></p>
+<p>This error means you have at least two rows in the same <strong>choices</strong> list that share the same <strong>name</strong> value.</p>
+<p>For example:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>list_name</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>yn</p></td>
+<td class="text-left"><p>yes</p></td>
+<td class="text-left"><p>Yes, always</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>yn</p></td>
+<td class="text-left"><p>yes</p></td>
+<td class="text-left"><p>Yes, sometimes</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>yn</p></td>
+<td class="text-left"><p>no</p></td>
+<td class="text-left"><p>No, never</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>choices</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>To fix the duplicate choice names:</p>
+<ol class="arabic simple">
+<li><p>Open your XLSForm.</p></li>
+<li><p>Go to the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet.</p></li>
+<li><p>Find the row number referenced in the error message.</p></li>
+<li><p>Check the <code class="docutils literal notranslate"><span class="pre">name</span></code> column for duplicate values within the same <code class="docutils literal notranslate"><span class="pre">list_name</span></code>.</p></li>
+<li><p>Update the duplicated <code class="docutils literal notranslate"><span class="pre">name</span></code> value so each <code class="docutils literal notranslate"><span class="pre">name</span></code> in the list is unique.</p></li>
+<li><p>Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.</p></li>
+</ol>
+<p>If duplicated <code class="docutils literal notranslate"><span class="pre">name</span></code> values are intentional (e.g., when using <a class="reference external" href="https://support.kobotoolbox.org/choice_filters_xls.html">choice filters</a>), you can allow choice duplicates in your <a class="reference external" href="https://support.kobotoolbox.org/form_settings_xls.html">form settings</a>.</p>
+</details>
+<br>
+<details>
+<summary><strong>Error message: List name not in choices sheet</strong></summary>
+<p><img alt="Error message list name" src="_images/error-message-list-name.png" /></p>
+<p>This error occurs when a question uses an option list that does not exist in the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet, or the list name in the <code class="docutils literal notranslate"><span class="pre">list_name</span></code> column is misspelled.</p>
+<p>For example:</p>
+<p><strong>survey sheet</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>type</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>select_one yes_no</p></td>
+<td class="text-left"><p>service</p></td>
+<td class="text-left"><p>Do you like the service at the supermarket?</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>choices sheet</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>list_name</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>yes_n</p></td>
+<td class="text-left"><p>yes_always</p></td>
+<td class="text-left"><p>Yes, always</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>yes_n</p></td>
+<td class="text-left"><p>yes_sometimes</p></td>
+<td class="text-left"><p>Yes, sometimes</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>yes_n</p></td>
+<td class="text-left"><p>no</p></td>
+<td class="text-left"><p>No, never</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>choices</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>To fix the missing or incorrect list name:</p>
+<ol>
+<li>Open your XLSForm.</li>
+<li>Go to the <code>survey</code> sheet.</li>
+<li>Find the question that uses the list name referenced in the error message (for example, <code>select_one yes_no</code>).</li>
+<li>Go to the <code>choices</code> sheet and check the <code>list_name</code> column for an exact match to the list name referenced in the error message.</li>
+<li>Do one of the following:
+  <ul>
+    <li><strong>If the list name is missing:</strong> Add a new list of choices for that question. Ensure the <code>list_name</code> is written exactly as it appears in the <code>survey</code> sheet.</li>
+    <li><strong>If the list name exists but is spelled differently:</strong> Correct the typo so the list name matches exactly in both the <code>survey</code> and <code>choices</code> sheets.</li>
+  </ul>
+</li>
+<li>Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.</li>
+</ol>
 </details>
 <br>
 <details>
