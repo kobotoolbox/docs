@@ -57,6 +57,9 @@ You can monitor the following usage types:
 | Transcription minutes | The number of transcription minutes that have been used by your account for [automatic audio file transcription](https://support.kobotoolbox.org/transcription-translation.html). |
 | Translation characters | The number of translation characters that have been used by your account for [automatic translation of audio transcripts](https://support.kobotoolbox.org/transcription-translation.html). |
 
+<p class="note">
+  To learn more about account limits, upgrading your plan, and managing file storage, see <a href="https://support.kobotoolbox.org/account_usage_limits.html">Managing account usage limits</a>.
+</p>
 
 ## Plans
 
