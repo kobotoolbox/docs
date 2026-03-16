@@ -75,6 +75,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   validation_criteria
   number_text_responses
   cascading_select
+  cascading_select_multiple
   group_repeat
   restrict_responses
   language_dashboard
