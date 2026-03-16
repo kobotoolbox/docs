@@ -27,7 +27,7 @@ The following options are available for questions added in the Formbuilder:
 | Default Response | A predefined answer that <a href="https://support.kobotoolbox.org/question_options.html#default-response">automatically populates</a> a question and can be changed during data collection. |
 | Appearance (Advanced) | An optional setting that modifies how a question is <a href="https://support.kobotoolbox.org/question_options.html#appearance-advanced">displayed</a> or behaves in the form. |
 | HXL | A standardized hashtag used to <a href="https://support.kobotoolbox.org/question_options.html#hxl">tag questions</a> according to the Humanitarian Exchange Language (HXL) framework to support data interoperability and processing. |
-| Accepted Files | Specifies which <a href="https://support.kobotoolbox.org/photo_audio_video_file.html#restricting-accepted-file-types">file types</a> can be uploaded for a File question by listing the allowed file extensions, separated by commas. |
+| Accepted Files | Specifies which <a href="https://support.kobotoolbox.org/photo_audio_video_file.html#restricting-accepted-file-types">file types</a> can be uploaded for a **File** question by listing the allowed file extensions, separated by commas. |
 | Parameters | Additional settings available for certain question types that allow you to customize behavior, such as <a href="https://support.kobotoolbox.org/select_one_and_select_many.html#randomizing-option-choices">randomizing answer choices</a> or limiting the <a href="https://support.kobotoolbox.org/photo_audio_video_file.html#lowering-image-sizes">maximum image size</a>. |
 | Choices File | Allows users to select which <a href="https://support.kobotoolbox.org/external_file.html#setting-up-the-question-in-the-formbuilder">external file</a> will be used as the source of options for **Select One from File** and **Select Many from File** questions. |
 
@@ -71,7 +71,7 @@ Data column names must follow these rules:
 
 **Guidance hints** are used to provide additional information during form development, enumerator training, or data collection. They are not displayed by default.
 
-![Guidance hint](images/question_options/guidance_hint.png)
+![Guidance hint](images/question_options/guidance_hint_new.png)
 
 ### Displaying guidance hints in KoboCollect
 
@@ -106,6 +106,8 @@ Custom form logic can be used to make a question required or optional based on a
 
 1. Select **Custom logic** next to **Mandatory Response**
 2. In the text box, enter the XLSForm formula that determines whether the question will be required or not.
+
+![Custom logic](images/question_options/custom_mandatory.png)
 
 <p class="note">
     To learn more about condition-based required logic, see <a href="https://support.kobotoolbox.org/required_logic_xls.html">Adding required logic in XLSForm</a>.
