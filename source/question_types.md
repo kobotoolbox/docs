@@ -1,95 +1,96 @@
-# Adding questions in the Formbuilder
+# Adding form metadata in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3993133bcf0aafda0b0978709534175cb583e049/source/question_types.md" class="reference">28 Oct 2024</a>
 
+Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. 
 
-The KoboToolbox Formbuilder allows you to easily add questions to your form as you build your survey or questionnaire. 
+Metadata questions are **hidden from respondents**, and **metadata fields cannot be edited** in the KoboToolbox data table. This background information supports auditing, helps maintain data integrity, and can be used in data analysis. 
 
-This article explains how to add questions to your form, define answer choices where applicable, and provides an overview of the available question types in the Formbuilder to support effective form design.
+This article explains how to add and manage metadata questions in the Formbuilder, outlines the available metadata options, and describes how audit logging and background audio recording can support data quality and monitoring during data collection.
 
-## Adding a question
+## Adding metadata questions in the Formbuilder
 
-To add a question to your form:
+To add metadata questions in the Formbuilder:
 
-1. Click the <i class="k-icon-plus"></i> button. 
-2. Enter your question label.
-3. Click **+ ADD QUESTION.**
-4. Choose the [question type](#question-types-in-the-formbuilder). 
+1. Click **Layout & Settings** in the top right corner of the screen.
+2. In the **Metadata** section, select the metadata questions you want to include in your form.
 
-![Add a question to the Formbuilder](images/question_types/add_question.png)
+![Form metadata](images/question_types/access.png)
+
+Available metadata questions in the Formbuilder include:
+
+| Metadata | Description |
+|:---|:---|
+| start time | Records the exact time and date when a submission is started. |
+| end time | Records the date and time when a submission is finalized. |
+| today | Records the date of the submission. |
+| audit | Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo.<br><br>To learn more about using the audit question for audit logs and configuring settings, see <a href="https://docs.getodk.org/form-audit-log/">Form Audit Log (ODK)</a>. |
+| username | In KoboCollect, records the username saved in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. If no username is set, it records the one used to sign in to the server.<br>In Enketo, records the account username only if <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.<br><br><strong>Note:</strong> Because the <code>username</code> field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the automatically generated <code>_submitted_by</code> field. |
+| phone number | Records the phone number stored in the <a href="">KoboCollect app settings</a>. This metadata question is not supported in Enketo. |
+| device id | Records the unique identification of the device or browser used to collect data. The device ID is automatically generated and cannot be modified by users.<br><br><strong>Note:</strong> In KoboCollect, the device ID is updated whenever the app is reinstalled on a device. In Enketo, the <code>deviceid</code> resets any time a new browser window is used. |
+| start geopoint early | Captures GPS coordinates when the form is first opened. Can be used to warm up the device GPS so that later GPS questions can reach accurate readings more quickly. |
+
+### Audit metadata question
+
+The audit metadata question records a detailed log of the interview process while a form is being completed in the [KoboCollect Android app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#). It captures information such as when the form was opened and saved, which questions were viewed, how long respondents spent on each screen, and other user actions during data collection.
+
+Audit logging can help:
+
+- Monitor enumerator behavior
+- Identify questions that take longer to answer
+- Understand how enumerators navigate a form
+- Support data quality assurance and validation processes
+
+Audit logs are saved as CSV files and uploaded with each submission. These files can be downloaded as media attachments and analyzed separately. Because the logs use timestamp data, additional processing is typically required for analysis.
 
 <p class="note">
-<strong>Note:</strong> Once the question type has been selected, it cannot be changed in the Formbuilder. To change the question type of an existing question, delete the question and create a new question with the same label.
+    For more information about the exported CSV files, see the full <a href="https://docs.getodk.org/form-audit-log/">ODK audit logging documentation</a>.
 </p>
 
-### Setting data column names
+The audit metadata question is not supported in [Enketo web forms](https://support.kobotoolbox.org/enketo.html). 
 
-After adding a question to your form, it is strongly recommended to define a **Data Column Name** in the question **Settings.** The data column name is used to identify the question throughout the form logic and in the exported dataset. 
+**Audit settings**
 
-By default, KoboToolbox creates the data column name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the data column name will be `respondent_name`.
+Additional optional settings can be configured for the audit metadata question. These include:
+
+- Adding the GPS location of events
+- Enabling change tracking to record answers that are modified after a form is saved and before it is submitted
+- Prompting enumerators to provide a reason for editing a saved form
+- Requiring enumerators to enter their username before filling out or editing a form
+
+Available settings are listed in the [ODK audit logging documentation](https://docs.getodk.org/form-audit-log/) as parameters. In the Formbuilder, enter the optional parameters directly in the **Audit settings** text box.
+
+![Audit settings](images/question_types/audit_settings.png)
+
+### Configuring metadata in KoboCollect 
+
+The user’s default phone number and username can be [configured](https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings) and modified in the KoboCollect app.
+
+To configure user metadata in KoboCollect:
+
+1. Open the KoboCollect app.
+2. Tap the **Project icon** in the top right corner of your screen.
+3. Tap **Settings**.
+4. Scroll down to **User and device identity**, then **Form metadata.**
+5. Enter the username and/or phone number. You can also view the current device ID.
+
+## Enabling background audio recording
+
+Background audio recording allows you to capture an audio recording while a form is open and being completed. The recording is saved as part of the form submission and can later be [downloaded as an audio file](https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files).
+
+![Background audio](images/question_types/background_audio.png)
+
+To enable background audio recording in the Formbuilder:
+
+1. Open the **Layout & Settings** panel. 
+2. Turn on the **Enable audio recording in the background** toggle under **Background audio.**
+3. Once enabled, audio will be recorded in the background in both KoboCollect and Enketo web forms while the form is being filled out.
 
 <p class="note">
-    To learn more about data column names, see <a href="#adding-option-choices">Question options in the Formbuilder</a>.
+For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#">Recording interviews with background audio recording</a>.
 </p>
 
-## Adding option choices
-
-When adding Select One or Select Many questions to your form, you will be prompted to enter option choices. 
-
-- You can enter as many option choices as you want. 
-- To reorder the list of choices, click and drag an item to the desired position.
-- Click the <i class="k-icon-trash"></i> trash can icon next to a choice label to delete it.
-
-![Delete choice](images/question_types/delete_choice.png)
+This feature can support qualitative data collection by capturing detailed interview responses. It can also improve data quality assurance by allowing supervisors to review how interviews were conducted. In addition, it can serve as a backup to written or transcribed responses.
 
 <p class="note">
-<strong>Note:</strong> Managing long choice lists in the Formbuilder can be time-consuming. If your form includes many options or the same choice list used in multiple questions, it is often easier to create and manage these lists using XLSForm instead. To learn more, see <a href="https://support.kobotoolbox.org/option_choices_xls.html#">Managing option choices in XLSForm</a>.
-</p>
-
-### Setting XML values for option choices
-
-Next to each choice option, you will see a field labeled **AUTOMATIC.** This field contains the [XML value](https://support.kobotoolbox.org/glossary.html#xml-value) for that option.
-
-The XML value is a short, internal name that KoboToolbox uses to save and identify the selected option in your data. By default, KoboToolbox creates the XML value for you by removing spaces and capital letters from the option label. For example, if the option label is “Option 1”, the XML value will be `option_1`.
-
-In some cases, you may want to set your own XML value. This can be helpful if the option label is very long or if you want to use a clearer or more consistent name. To do this, click **AUTOMATIC** and replace it with your own custom value.
-
-<p class="note">
-<strong>Note:</strong> It is strongly recommended to define XML values for all choices when using non-Latin scripts, such as Chinese, Arabic, or Nepali, to ensure your data is stored and exported correctly.
-</p>
-
-## Question types in the Formbuilder
-
-The following question types are available in the Formbuilder:
-| Question type                                        | Description                                                                                                                                    |
-|:-----------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|
-| <i class="k-icon-qt-select-one"></i> Select One              | Allows respondents to [select one option](https://support.kobotoolbox.org/select_one_and_select_many.html) from a predefined list.                                                                                |
-| <i class="k-icon-qt-select-many"></i> Select Many             | Allows respondents to [select multiple options](https://support.kobotoolbox.org/select_one_and_select_many.html) from a predefined list.                                                                          |
-| <i class="k-icon-qt-text"></i> Text                    | Provides a [text box](https://support.kobotoolbox.org/text_questions.html) to collect open-ended responses.                                                                                          |
-| <i class="k-icon-qt-number"></i> Number                  | Allows respondents to input [whole numbers](https://support.kobotoolbox.org/number_decimal_range.html).                                                                                                     |
-| <i class="k-icon-qt-decimal"></i> Decimal                 | Allows respondents to [input numbers](https://support.kobotoolbox.org/number_decimal_range.html) that may contain decimal points.                                                                           |
-| <i class="k-icon-qt-date"></i> Date                    | Captures a specific [calendar date](https://support.kobotoolbox.org/date_time.html), including year, month, and day.                                                                             |
-| <i class="k-icon-qt-time"></i> Time                    | Captures a [specific time](https://support.kobotoolbox.org/date_time.html) in hours and minutes.                                                                                                 |
-| <i class="k-icon-qt-date-time"></i> Date & time             | Captures both [a date and a time](https://support.kobotoolbox.org/date_time.html) in a single combined response.                                                                                 |
-| <i class="k-icon-qt-point"></i> Point                   | Records a [single GPS location](https://support.kobotoolbox.org/gps_questions.html).                                                                                                                 |
-| <i class="k-icon-qt-line"></i> Line                    | Records [multiple GPS points](https://support.kobotoolbox.org/gps_questions.html) that form a line.                                                                                                  |
-| <i class="k-icon-qt-area"></i> Area                    | Records [multiple GPS points](https://support.kobotoolbox.org/gps_questions.html) that form an enclosed area.                                                                                        |
-| <i class="k-icon-qt-photo"></i> Photo                   | Allows respondents to [upload images](https://support.kobotoolbox.org/photo_audio_video_file.html) or take photos (when using the [KoboCollect app](https://support.kobotoolbox.org/glossary.html#kobocollect)).                                                           |
-| <i class="k-icon-qt-audio"></i> Audio                   | Allows respondents to [upload an audio file](https://support.kobotoolbox.org/photo_audio_video_file.html) or record audio.                                                                                    |
-| <i class="k-icon-qt-video"></i> Video                   | Allows respondents to [upload videos](https://support.kobotoolbox.org/photo_audio_video_file.html) or record videos (when using the [KoboCollect app](https://support.kobotoolbox.org/glossary.html#kobocollect)).                                                         |
-| <i class="k-icon-qt-barcode"></i> Barcode / QR Code       | Scans a [QR code](https://support.kobotoolbox.org/photo_audio_video_file.html) to collect embedded information using the device's camera (when using the [KoboCollect app](https://support.kobotoolbox.org/glossary.html#kobocollect)).                                    |
-| <i class="k-icon-qt-file"></i> File                    | Allows respondents to [upload files](https://support.kobotoolbox.org/photo_audio_video_file.html), such as text files, spreadsheets, and PDF files.                                                           |
-| <i class="k-icon-qt-note"></i> Note                    | [Provides information](https://support.kobotoolbox.org/note_questions.html) to the respondent without requiring any input.                                                                            |
-| <i class="k-icon-qt-acknowledge"></i> Acknowledge             | A [single checkbox](https://support.kobotoolbox.org/select_one_and_select_many.html) that respondents can select to acknowledge their agreement with a statement.                                                  |
-| <i class="k-icon-qt-rating"></i> Rating                  | Allows respondents to [rate different items](https://support.kobotoolbox.org/select_one_and_select_many.html#setting-up-rating-questions) using a common scale.                                                                               |
-| <i class="k-icon-qt-question-matrix"></i> Question Matrix         | Creates a [group of questions](https://support.kobotoolbox.org/matrix_response.html) that display in a matrix format, whereby each cell within the matrix represents a separate question.               |
-| <i class="k-icon-qt-ranking"></i> Ranking                 | Allows respondents to [rank items](https://support.kobotoolbox.org/select_one_and_select_many.html#setting-up-ranking-questions) in order of preference.                                                                                       |
-| <i class="k-icon-qt-calculate"></i> Calculate               | Automatically performs [calculations](https://support.kobotoolbox.org/calculate_questions.html) within a form based on responses to previous questions.                                                    |
-| <i class="k-icon-qt-hidden"></i> Hidden                  | Stores [predefined values](https://support.kobotoolbox.org/form_logic.html#storing-constants-in-your-form) that are not visible to the respondent.                                                                               |
-| <i class="k-icon-qt-range"></i> Range                   | Allows respondents to [select a numeric value](https://support.kobotoolbox.org/number_decimal_range.html#setting-up-range-questions) within a specified range.                                                                         |
-| <i class="k-icon-qt-external-xml"></i> External XML            | Connects the KoboToolbox project to [other projects](https://support.kobotoolbox.org/dynamic_data_attachment_formbuilder.html) in order to dynamically retrieve data.                                                      |
-| <i class="k-icon-qt-select-one-from-file"></i> Select One from File    | Allows respondents to select one option [from a predefined list](https://support.kobotoolbox.org/external_file.html), stored in an external CSV file.                                                |
-| <i class="k-icon-qt-select-many-from-file"></i> Select Many from File   | Allows respondents to select multiple options [from a predefined list](https://support.kobotoolbox.org/external_file.html), stored in an external CSV file.                                          |
-
-<p class="note">
-<strong>Note:</strong> Select One from File and Select Many from File question types only appear as options in the Formbuilder if an external choice file has been <a href="https://support.kobotoolbox.org/upload_media.html">uploaded</a> to KoboToolbox.
+<strong>Note:</strong> Before using this feature, ensure that your device has sufficient storage space for audio files. You should also obtain <strong>informed consent</strong> from respondents before recording. Always consider ethical implications and comply with applicable data protection laws in your area of work.
 </p>
