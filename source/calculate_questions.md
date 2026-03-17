@@ -1,57 +1,58 @@
-# Calculate Question Type
+# Adding calculations in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/calculate_questions.md" class="reference">15 Feb 2022</a>
 
-Some advanced forms may require an internal calculation to take place as part of
-the form (rather than afterwards during the analysis). This can be done by
-adding a Calculation and writing the mathematical expression into the question
-label field.
+Calculations allow users to derive new variables, build advanced form logic, and display results to respondents during data collection. The **Calculate** question type performs mathematical operations using values entered in previous questions. By default, the result is hidden, but it can be displayed in the form if needed.
 
-![image](/images/calculate_questions/calculation.gif)
+Calculations are processed within the form, which can reduce the need for post-collection data manipulation. The results are stored as new variables in the dataset and can be used throughout the form to apply [skip logic](https://support.kobotoolbox.org/skip_logic.html), define [validation criteria](https://support.kobotoolbox.org/validation_criteria.html), or display [dynamic content](https://support.kobotoolbox.org/form_logic.html#question-referencing) in question labels and notes.
 
-A mathematical expression could be as simple as `5 + 1`, but most likely it
-would include reference to another question.
+This article explains how to add calculations in the Formbuilder, covering basic arithmetic and introducing more advanced expressions.
 
-Referencing other questions in your calculation question requires giving other
-questions fixed names through the question settings, such as `girls` or
-`income`. When referencing those questions, you should always use the unique
-question name (not label) - `${girls}` or `${income}`
+## Adding calculations in the Formbuilder
 
-For example, if you want to convert the answer to a question about someone's
-income into another currency (such as Rwandan Francs to US Dollars), you should
-write `${income} div 688`.
+To add a calculation to your form:
 
-You can also use the answer to this Calculate question for other purposes, such
-as building your skip logic (for example only ask a follow-up question above a
-certain income threshold) or by displaying it inside a Note
-([see here](responses_inside_question.md) for help on how to display the
-response to one question in the label of another question).
+1. Click the <i class="k-icon-plus"></i> button. 
+2. Enter the calculation expression instead of the question label.
+3. Click **+ ADD QUESTION**. 
+4. Choose the <i class="k-icon-qt-calculate"></i> Calculate question type.
 
-## List of available functions
+![Calculate question](images/calculate_questions/calculate.png)
 
-There are a lot of different options available, such as the round() function
-(e.g. `round(${int_1} div ${int_2}, 1`) will round the result of a division to a
-single decimal). For a list of some of the many mathematical expressions that
-can be used in this field, please see
-[XForm specifications on calculation functions](https://docs.getodk.org/form-operators-functions/)
-for the technical background of all the functions available in KoboToolbox and
-XLSForms. For advance use of calculations in KoboToolbox, please refer to
-[this article](advanced_calculate.md).
+Calculation expressions are constructed using a combination of question references, mathematical operators, functions, and constants.
 
-## List of available math operators
+<p class="note">
+To learn more about each of these components, see <a href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a>.
+</p>
 
-| Operator               | Description                  |
-| :--------------------- | :--------------------------- |
-| `+`                    | Addition                     |
-| `-`                    | Subtraction                  |
-| `*`                    | Multiplication               |
-| `div`                  | Division                     |
-| `=`                    | Equal                        |
-| `!=`                   | Not equal                    |
-| `<`                    | Less than                    |
-| `<=`                   | Less than or equal to        |
-| `>`                    | Greater than                 |
-| `>=`                   | Greater than or equal to     |
-| `or`                   | Or                           |
-| `and`                  | And                          |
-| `mod`                  | Modulus (division remainder) |
-| `pow([base], [power])` | Power / exponent             |
+To display the result of the calculation in a note, use the [question referencing](https://support.kobotoolbox.org/form_logic.html#question-referencing) format `${data_column_name}`, replacing `data_column_name` with the [data column name](https://support.kobotoolbox.org/question_options.html#data-column-name) of the Calculate question. You can also use this format to reference the result of the calculation in a question label or in your form’s logic. 
+
+![Question reference](images/calculate_questions/reference.png)
+
+## Arithmetic calculations
+
+Calculations can range from simple arithmetic calculations to advanced derivation of variables.
+
+Arithmetic calculations allow you to perform basic calculations using the following **operators**:
+
+| Operator | Description |
+|:---------:|:------------|
+| <strong>+</strong>        | addition |
+| <strong>-</strong>        | subtraction |
+| <strong>*</strong>        | multiplication |
+| <strong>div</strong>      | division |
+| <strong>mod</strong>      | modulo (calculates the remainder of a division) |
+
+Calculations in XLSForm follow the **BODMAS** rule for the order of mathematical operations: **B**rackets, **O**rder of powers, **D**ivision, **M**ultiplication, **A**ddition, and **S**ubtraction. This means that calculations within brackets (or parentheses) are performed first, followed by powers, then divisions, multiplications, and so on. Using brackets correctly ensures that your calculations function as expected. 
+
+## Advanced calculations
+
+Advanced calculations in KoboToolbox often rely on **functions** and **regular expressions** to make calculations more efficient. 
+
+- **Functions** are [predefined operations](https://support.kobotoolbox.org/functions_xls.html) used to automatically perform complex tasks like rounding values, calculating powers, or extracting the current date. 
+- **Regular expressions (regex)** are [search patterns](https://support.kobotoolbox.org/restrict_responses.html) used to match specific characters within a string of text.
+
+<p class="note">
+  For examples of advanced calculations you can use in your forms and troubleshooting suggestions, see <a href="https://support.kobotoolbox.org/calculations_xls.html#advanced-calculations">Adding calculations in XLSForm</a>.  
+</p>
+
+
