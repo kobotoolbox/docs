@@ -1,47 +1,50 @@
-# Using Alternative Enketo Web Form Styles
+# Styling Enketo web forms in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/347a1280aadb22c9aebf88650fd6efa1bcadbcdf/source/alternative_enketo.md" class="reference">24 Sep 2025</a>
 
+<iframe src="https://www.youtube.com/embed/wLWiw473YSQ?si=tJbKl-VzjZkDPivR" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Enketo web forms can be customized in the way your questions are presented.
-There are two alternative styles that can be selected and even combined:
-**Multiple Pages** and **Grid Theme**.
+You can customize the layout and visual appearance of your [Enketo web forms](https://support.kobotoolbox.org/enketo.html) using built-in themes. These themes allow you to control how questions are displayed, whether on a single page, across multiple pages, or arranged in a compact grid layout.
 
-**Multiple Pages** mode displays one question at a time per screen, or a [group
-of questions](group_repeat.md) set to display on the same screen. This is the same way
-KoboCollect works.
+Form themes apply only to Enketo web forms and are not supported in KoboCollect. This article explains how to apply an Enketo theme in the Formbuilder and how to configure question widths when using the Grid theme.
 
-**Grid Theme** is an alternative display of questions meant to be more compact
-and more like paper forms where space is often a major concern. theme-grid
-allows displaying multiple questions per row and flexibly adapts in case of skip
-logic making a new question appear or disappear. To display multiple questions
-in a row they need to be part of a group, which by default shows up to four
-questions next to each other. This theme can be customized by defining the
-number of questions to be included in each row through the appearance field of
-each question's settings. For more details
-[see this post](https://blog.enketo.org/gorgeous-grid).
+## Adding an Enketo theme in the Formbuilder
 
-It is also possible to use both **Multiple Pages** and **Grid Theme** together.
-You can set these styles through the KoboToolbox formbuilder user interface:
+To add an Enketo theme to your form in the Formbuilder:
 
-![image](/images/alternative_enketo/multiple_grid.gif)
+1. Click **Layout & Settings** in the top right corner of the screen.
+2. In the **Form style** section, select the theme you want to apply to your form.
 
-If you are building your survey project through XLSForm, you could do the same
-by defining the theme under the `style` column in the `settings` sheet:
+![Form style](images/alternative_enketo/access.png)
 
-**settings sheet**
+The following themes are available to customize your forms:
 
-| form_title  | style |
-| :---------- | :---- |
-| Themed form | pages |
-| settings |
+| Theme | Description | Preview |
+|:---|:---|:---|
+| Default - single page | Displays questions one after another, on a single page. | ![Default](images/alternative_enketo/default.png) |
+| Grid theme | An alternative display that is more compact, similar to paper forms, and efficiently uses space, arranging multiple questions per row. | ![Grid](images/alternative_enketo/grid.png) |
+| Grid theme with headings in ALL CAPS | Grid theme with capitalized questions. | ![Grid with all caps headers](images/alternative_enketo/grid_all_caps.png) |
+| Multiple pages | Displays one question per screen or a <a href="https://support.kobotoolbox.org/grouping_questions_xls.html">group of questions</a> together on the same screen, similar to the KoboCollect layout. | ![Mutltiple pages](images/alternative_enketo/multiple_pages.png) |
 
-## Available styles in XLSForm:
+<p class="note">
+<strong>Note:</strong> You can also combine <strong>Multiple pages</strong> and <strong>Grid theme</strong> styles.
+</p>
 
-| XLSForm Theme                        | Description                                        |
-| :----------------------------------- | :------------------------------------------------- |
-| (leave blank)                        | Default – single page                              |
-| `theme-grid no-text-transform`       | Grid theme                                         |
-| `theme-grid`                         | Grid theme with headings in ALL CAPS               |
-| `pages`                              | Multiple pages                                     |
-| `theme-grid pages no-text-transform` | Grid theme + Multiple pages                        |
-| `theme-grid pages`                   | Grid theme + Multiple pages + headings in ALL CAPS |
+## Setting up question widths for the Grid theme
+
+In Enketo web forms, the Grid theme allows you to display questions in multiple columns, making your form more compact and visually organized. The setup of these columns, including how many there are and how wide each one should be, is controlled by assigning `w-values` to each question in its **Appearance (Advanced)** settings. 
+
+<p class="note">
+ For a comprehensive overview of using the Grid theme, see this <a href="https://ee.kobotoolbox.org/n41GqUkf">Grid Theme</a> Tutorial and <a href="https://docs.google.com/spreadsheets/d/1qKmxPTA4B0vihU6GsKgi1CJE2Db2FfE7KZpOig4nTEI/edit?gid=0#gid=0">sample XLSForm</a>.   
+</p>
+
+To specify the relative width of each question within a row:
+
+1. Open the question settings by clicking <i class="k-icon-settings"></i> **Settings** to the right of the question. This will take you to the **Question Options** tab.
+2. In **Appearance (Advanced)**, assign appearance values (e.g., `w1`, `w2`, `w3`) to specify the question’s relative width within a row.
+
+Rows will always automatically expand to the full width of the page. For example, a row containing one question with an appearance value of `w2` and another with `w1` will divide the row into two-thirds and one-third, respectively. 
+
+<p class="note">
+<strong>Note:</strong> The default width for a group or repeat group is four columns (<code>w4</code>), so a group with <code>w4</code> can hold a maximum of four <code>w1</code> questions in a single row. A question's <code>w-value</code> is relative to its group's <code>w-value</code>. Apply <code>w-values</code> only to top-level groups or repeats: although applying them to nested groups or repeats is supported, it may not display well.
+</p>
+
