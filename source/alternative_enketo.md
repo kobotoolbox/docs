@@ -22,7 +22,7 @@ The following themes are available to customize your forms:
 |:---|:---|:---|
 | Default - single page | Displays questions one after another, on a single page. | ![Default](images/alternative_enketo/default.png) |
 | Grid theme | An alternative display that is more compact, similar to paper forms, and efficiently uses space, arranging multiple questions per row. | ![Grid](images/alternative_enketo/grid.png) |
-| Grid theme with headings in ALL CAPS | Grid theme with capitalized questions. | ![Grid with all caps headers](images/alternative_enketo/grid_all_caps.png) |
+| Grid theme with headings in ALL CAPS | Grid theme with capitalized questions. | ![Grid with all caps headers](images/alternative_enketo/grid_allcaps.png) |
 | Multiple pages | Displays one question per screen or a <a href="https://support.kobotoolbox.org/grouping_questions_xls.html">group of questions</a> together on the same screen, similar to the KoboCollect layout. | ![Mutltiple pages](images/alternative_enketo/multiple_pages.png) |
 
 <p class="note">
