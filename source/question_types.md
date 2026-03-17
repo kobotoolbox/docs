@@ -77,7 +77,7 @@ To configure user metadata in KoboCollect:
 
 Background audio recording allows you to capture an audio recording while a form is open and being completed. The recording is saved as part of the form submission and can later be [downloaded as an audio file](https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files).
 
-![Background audio](images/question_types/background_audio.png)
+![Background audio](images/question_types/metadata.png)
 
 To enable background audio recording in the Formbuilder:
 
