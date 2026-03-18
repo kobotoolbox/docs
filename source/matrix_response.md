@@ -50,7 +50,7 @@ To configure each row:
 1. Click the <i class="k-icon-settings"></i> **Settings** icon.
 2. Enter a **Label** for the item.
 3. Enter a **Data Column Prefix.** This prefix will be added to the variable names for all column questions related to this item and must follow the [standard rules for data column names](https://support.kobotoolbox.org/question_options.html#data-column-name).
-4. To add another row, click the <i class="k-icon-plus"></i> + icon below the last row.
+4. To add another row, click the <i class="k-icon-plus"></i> icon below the last row.
 
 ## Collecting data from a question matrix
 
