@@ -1,7 +1,9 @@
-# Selecting options from an external file
+# Selecting options from an external file in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/87ff8377b846dacb801191e0b619126a563040a9/source/external_file.md" class="reference">28 Aug 2025</a>
 
-**Select from file** questions allow you to use a list of choice options stored in an external file instead of defining them directly in your form. There are two types: **Select One from File** for selecting a single choice, and **Select Many from File** for selecting multiple choices. 
+**Select from file** questions allow you to use a list of choice options stored in an external file instead of defining them directly in your form. There are two types: 
+* **Select One from File** for selecting a single choice, and
+* **Select Many from File** for selecting multiple choices. 
 
 Using a separate file for your choice list makes it easier to use and manage long lists in the Formbuilder. Supported file formats include CSV, XML, and GeoJSON.
 
@@ -15,7 +17,9 @@ To get started, create your list of choices in a separate external file. The req
 To learn more about formatting XML or GeoJSON files, see <a href="https://xlsform.org/en/#multiple-choice-from-file">XLSForm</a> and <a href="https://docs.getodk.org/form-datasets/#building-selects-from-geojson-files">ODK</a> documentation. GeoJSON files are primarily used for <a href="https://support.kobotoolbox.org/select_from_map_xls.html">selecting options from a map</a>. 
 </p>
 
-If you are using a CSV file for your option choices, it should contain at least two columns: `name` and `label`. The `name` column represents the [XML value](https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices) for your option choice, and the `label` column represents the choice label as it is displayed in your form. 
+If you are using a CSV file for your option choices, it should contain at least two columns: `name` and `label`. 
+* The `name` column represents the [XML value](https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices) for your option choice.
+* The `label` column represents the choice label as it is displayed in your form. 
 
 **External CSV file**
 
@@ -60,7 +64,7 @@ To add a select from file question:
 ![Select questions](images/external_file/select.png)
 
 <p class="note">
-<strong>Note:</strong> The Select One from File and Select Many from File question types only appear as options in the Formbuilder if an external choice file has been uploaded to KoboToolbox.
+<strong>Note:</strong> The <strong>Select One from File</strong> and <strong>Select Many from File</strong> question types only appear as options in the Formbuilder if an external choice file has been uploaded to KoboToolbox.
 </p>
 
 If only one external file has been uploaded to your project, it will be automatically linked to the question. If multiple files have been uploaded, open the question <i class="k-icon-settings"></i> **Settings** and select the appropriate file from the <i class=""></i> **Choices File** dropdown menu.
