@@ -24,8 +24,8 @@ To add a question matrix to your form:
 
 In your question matrix:
 
-- Each column represents a separate question that will be repeated for every item listed in the rows.
-- Each row represents an item that the column questions will be asked about.
+- Each **column** represents a separate question that will be repeated for every item listed in the rows.
+- Each **row** represents an item that the column questions will be asked about.
 
 ![Question matrix example](images/matrix_response/example.png)
 
@@ -66,9 +66,9 @@ The question matrix is displayed as a table, with each column representing a que
 
 ## Advanced question matrices
 
-You cannot add validation criteria, calculations, or certain advanced question options, such as repeating a question matrix or defining a custom constraint message, directly within a question matrix **in the Formbuilder.**
+You cannot add validation criteria, calculations, or certain advanced question options, such as repeating a question matrix or defining a custom constraint message, directly within a question matrix **using the Formbuilder.**
 
-To apply these settings, [download your form as an XLSForm](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) and add constraints, calculations, and other question options in the Excel file as you normally would when working in XLSForm.
+To apply these settings, [download your form](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) as an XLSForm and add [constraints](https://support.kobotoolbox.org/constraints_xls.html), [calculations](https://support.kobotoolbox.org/calculations_xls.html), and other [question options](https://support.kobotoolbox.org/question_options_xls.html) in the XLSForm directly.
 
 <p class="note">
 For an example of adding constraints and calculations to a question matrix, see this <a href="https://support.kobotoolbox.org/_static/files/calculations_constraints_matrix/calculations_constraints_matrix.xlsx">sample XLSForm</a>. For an example of repeating a question matrix as a repeat group, see this <a href="https://support.kobotoolbox.org/_static/files/calculations_constraints_matrix/repeating_matrix_question.xlsx">sample XLSForm</a>.
@@ -76,9 +76,9 @@ For an example of adding constraints and calculations to a question matrix, see 
 
 ### Adding skip logic to a question matrix
 
-Skip logic can also not be added directly to a question matrix in the Formbuilder. However, you can [download your form as an XLSForm](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) and add skip logic in the Excel file.
+Similarly, skip logic cannot be added directly to a question matrix in the Formbuilder. However, you can [download your form](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) as an XLSForm and add skip logic in the XLSForm directly.
 
-When exported to XLSForm, a question matrix is structured as a group of questions using [w-values](https://support.kobotoolbox.org/form_style_xls.html#setting-up-an-xlsform-for-theme-grid) from the Grid theme. You can apply skip logic to the entire matrix by adding [relevance logic](https://support.kobotoolbox.org/skip_logic_xls.html) to the group, or apply it to individual rows within the matrix.
+When exported to XLSForm, a question matrix is structured as a group of questions using [w-values](https://support.kobotoolbox.org/form_style_xls.html#setting-up-an-xlsform-for-theme-grid) from the Grid theme. You can [apply skip logic](https://support.kobotoolbox.org/skip_logic_xls.html) to the entire matrix by adding it to the entire group, or apply it to individual rows within the matrix.
 
 Be aware that adding skip logic to individual cells may affect the visual layout of the matrix, as hidden questions can disrupt the table structure. To preserve the formatting, consider adding **Note** questions with skip logic that display a message in place of the hidden question, as done in this [sample XLSForm](https://support.kobotoolbox.org/_static/files/adding_skip_to_matrix/adding_skip_to_a_matrix_question.xls). This approach maintains the matrix layout while preventing input in specific cells.
 
