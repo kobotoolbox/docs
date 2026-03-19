@@ -16,7 +16,7 @@ The following question types are available in the Formbuilder for respondents to
 | <i class="k-icon-qt-area"></i> Area | Collects points that form an enclosed area, such as a plot of land or a field. |
 
 <p class="note">
-<strong>Note:</strong> You can also collect location automatically using <a href="https://support.kobotoolbox.org/form_meta.html">metadata questions</a>. The <code>start geopoint early</code> and <code>audit</code> options are available in the Formbuilder, while <code>background-geopoint</code> is available only when building your form <a href="https://support.kobotoolbox.org/metadata_xls.html">in XLSForm</a>.
+<strong>Note:</strong> You can also collect location automatically using <a href="https://support.kobotoolbox.org/form_meta.html">metadata questions</a>. The <strong>start geopoint early</strong> and <strong>audit</strong> options are available in the Formbuilder, while <code>background-geopoint</code> is available only when building your form <a href="https://support.kobotoolbox.org/metadata_xls.html">in XLSForm</a>.
 </p>
 
 ## Adding a GPS question in the Formbuilder
@@ -35,9 +35,9 @@ The table below displays the default appearances for GPS questions:
 
 ![Default appearances of GPS questions](images/gps_questions/table.png)
 
-In Enketo web forms, respondents can select a location directly on the map, search for an address, or manually enter GPS coordinates.
+In **Enketo web forms**, respondents can select a location directly on the map, search for an address, or manually enter GPS coordinates.
 
-In KoboCollect, the device’s current location is recorded automatically, and manual selection or coordinate entry is not available by default.
+In **KoboCollect**, the device’s current location is recorded automatically, and manual selection or coordinate entry is not available by default.
 
 <p class="note">
 <strong>Note:</strong> To learn more about GPS data collection behaviors in Enketo and KoboCollect, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data</a>.
