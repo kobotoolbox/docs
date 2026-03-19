@@ -15,7 +15,7 @@ To add a text question to your form:
 1. Click the <i class="k-icon-plus"></i> button. 
 2. Enter your question label.
 3. Click **+ ADD QUESTION**. 
-4. Choose the <i class="k-icon-qt-text"></i> Text question type. 
+4. Choose the <i class="k-icon-qt-text"></i> **Text** question type. 
 
 ![Select Text question type](images/text_questions/text.png)
 
