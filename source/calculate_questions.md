@@ -18,7 +18,9 @@ To add a calculation to your form:
 
 ![Calculate question](images/calculate_questions/calculate.png)
 
-Calculation expressions are constructed using a combination of question references, mathematical operators, functions, and constants.
+Calculation expressions are constructed using a combination of question references, mathematical operators, functions, and constants. For example:
+* `${usd_cost} * 0.87` converts the value entered in the `usd_cost` question to another currency using a fixed exchange rate.
+* `${total_cost} div ${units_purchased}` divides the total cost by the number of units purchased to calculate the unit cost.
 
 <p class="note">
 To learn more about each of these components, see <a href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a>.
