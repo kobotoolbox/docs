@@ -2,13 +2,13 @@
 
 A **collection** is a group of related questions, question blocks, and templates organized in your [KoboToolbox library](https://support.kobotoolbox.org/question_library.html). Collections help you manage reusable content by project, theme, country, or organization.
 
-You can import multiple questions or question blocks at once as a collection using an [XLSForm](https://support.kobotoolbox.org/getting_started_xlsform.html). This approach is useful when preparing standardized question sets outside the [Formbuilder](https://support.kobotoolbox.org/formbuilder.html) or migrating existing XLSForm content into your library.
+You can import multiple questions or question blocks at once as a collection using an [XLSForm](https://support.kobotoolbox.org/getting_started_xlsform.html). This approach is useful when preparing standardized question sets outside the KoboToolbox Formbuilder or migrating existing XLSForm content into your library.
 
 This article explains how to structure and upload an XLSForm so it is imported as a collection.
 
 ## Setting up your XLSForm
 
-To import successfully into your KoboToolbox question library, your XLSForm must follow a specific structure. Once you have a [working XLSForm](https://support.kobotoolbox.org/getting_started_xlsform.html), you can adapt it to function as a collection by modifying its structure:
+To be imported successfully into your KoboToolbox question library, your XLSForm must follow a specific structure. Once you have a [working XLSForm](https://support.kobotoolbox.org/getting_started_xlsform.html), you can adapt it to function as a collection by modifying its structure:
 
 1. **Rename the main worksheet:** Replace the standard `survey` worksheet with a worksheet named `library`.
     - This sheet should contain the same columns you would normally include in a survey sheet, such as `type`, `name`, `label`, [translated label columns](https://support.kobotoolbox.org/language_xls.html), and any relevant [question options](https://support.kobotoolbox.org/question_options_xls.html).
@@ -17,8 +17,8 @@ To import successfully into your KoboToolbox question library, your XLSForm must
     - Enter the same block title in each row that belongs to that block.
     - Any row without a value in the `block` column will be imported as an individual question.
 4. **Add tags (optional):** To assign tags to a question or block, add a column using the format `tag:[tag name]` (e.g., `tag:wash`).
-    - Enter 1 in each row that should receive the tag.
-    - For blocks, it is sufficient to mark one row within the block, though marking multiple rows will not cause issues.
+    - Enter `1` in each row that should receive the tag.
+    - Within blocks, it is sufficient to mark only one row from the block, though marking multiple rows will not cause issues.
 
 <p class="note">
   For an example of the required structure, see this <a href="https://support.kobotoolbox.org/_static/files/question_library/collection_import_sample.xlsx"> sample XLSForm</a>.
@@ -38,7 +38,7 @@ To upload your XLSForm:
 The file will be imported as a collection in your question library.
 
 <p class="note">
-  To learn more about the KoboToolbox library, see Using the <a href="https://support.kobotoolbox.org/question_library.html">KoboToolbox question library</a>.
+  To learn more about the KoboToolbox library, see <a href="https://support.kobotoolbox.org/question_library.html">Using the KoboToolbox question library</a>.
 </p>
 
 ## Additional considerations
