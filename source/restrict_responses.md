@@ -67,7 +67,7 @@ The following tables describe commonly used regex elements.
 
 ## Common examples
 
-The following examples can be used as [constraints](https://support.kobotoolbox.org/constraints_xls.html) or [validation criteria](https://support.kobotoolbox.org/validation_criteria.html).
+The following examples can be used as [constraints](https://support.kobotoolbox.org/constraints_xls.html) or [validation criteria](https://support.kobotoolbox.org/validation_criteria.html) in your forms.
 
 ### Common regex expressions with numbers
 
