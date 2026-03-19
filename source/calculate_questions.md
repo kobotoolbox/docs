@@ -14,7 +14,7 @@ To add a calculation to your form:
 1. Click the <i class="k-icon-plus"></i> button. 
 2. Enter the calculation expression instead of the question label.
 3. Click **+ ADD QUESTION**. 
-4. Choose the <i class="k-icon-qt-calculate"></i> Calculate question type.
+4. Choose the <i class="k-icon-qt-calculate"></i> **Calculate** question type.
 
 ![Calculate question](images/calculate_questions/calculate.png)
 
