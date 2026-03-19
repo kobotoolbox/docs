@@ -339,6 +339,8 @@ k-icon-qt-date-time 	<i class="k-icon k-icon-qt-date-time"></i>
 
 k-icon-qt-date 	<i class="k-icon k-icon-qt-date"></i>
 
+k-icon-qt-decimal <i class="k-icon k-icon-qt-decimal"></i>
+
 k-icon-qt-decimal-lock 	<i class="k-icon k-icon-qt-decimal-lock"></i>
 
 k-icon-qt-decimal k-icon-qt-external-xml-lock 	<i class="k-icon k-icon-qt-decimal k-icon-qt-external-xml-lock"></i>
@@ -642,6 +644,8 @@ k-icon-pins 	<i class="k-icon k-icon-pins"></i>
 k-icon-print 	<i class="k-icon k-icon-print"></i>
 
 k-icon-spreadsheet 	<i class="k-icon k-icon-spreadsheet"></i>
+
+k-icon-tag 	<i class="k-icon k-icon-tag"></i>
 
 </details>
 

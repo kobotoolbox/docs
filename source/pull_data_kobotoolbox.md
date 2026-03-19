@@ -1,5 +1,5 @@
 # Pulling data from an external CSV 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/pull_data_kobotoolbox.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6276ef805e5d60353ee43bfbe65edc8adaba3858/source/pull_data_kobotoolbox.md" class="reference">19 Feb 2026</a>
 
 The `pulldata()` function in XLSForm lets you dynamically retrieve information from an external CSV file while completing a form. This allows you to reference existing datasets and automatically pull in related details, avoiding the need for enumerators to re-enter the same information.
 
@@ -28,19 +28,25 @@ The remaining columns can include any additional details you want to retrieve, s
 
 **Example: eligibility.csv**
 
-| ID           | status          | 
-|:-----------  |:----------------|
-| AH784N       | eligible        |
-| DB839K       | ineligible      | 
-| SH849T       | eligible        |
+| ID           | status          | age             | 
+|:-----------  |:----------------|:----------------|
+| AH784N       | eligible        | 19              |
+| DB839K       | ineligible      | 37              |
+| SH849T       | eligible        | 42              |
+
+<p class="note">
+<strong>Note:</strong> To use <code>pulldata()</code> with <code>select_one</code> or <code>select_multiple</code> questions, the value in the external file must match the <strong>choice name</strong>, not the choice label. For <code>select_multiple</code> questions, list multiple choice names separated by a space.
+</p>
 
 ## Setting up your XLSForm
 
 Once you have set up your external CSV, configure your XLSForm in the following way:
 
 1. Ensure your XLSForm includes a question that serves as the **index variable**.
-2. Add a `calculate` field to your survey. Give the field a `name`.
-3. In the `calculation` column, use the **pulldata()** function to specify which field in the CSV to pull from. Use the following syntax: `pulldata('csv','pull_from', 'csv_index', ${survey_index})`.	
+2. Add a new question to your form to retrieve data from the external file, using one of the two approaches below:
+    * Add a `calculate` question to retrieve and store values for later use in the form or dataset. For example, you can use it to display a value in a note or question label, or to use the value in calculations and skip logic.
+    * Add a `text`, `integer`, `decimal`, `date`, `select_one`, or `select_multiple` question to include retrieved values as default responses in editable fields.
+3. In the `calculation` column of your new question, use the **pulldata()** function to specify which field in the CSV to pull from. Use the following syntax: `pulldata('csv','pull_from', 'csv_index', ${survey_index})`.	
     - `csv` is the name of the CSV file, without the extension.
     - `pull_from` refers to the column in your CSV file that contains the data you want to import into your form.
     - `csv_index` is the column in your CSV file that contains the **index variable.**
@@ -52,10 +58,11 @@ Once you have set up your external CSV, configure your XLSForm in the following 
 |:-----------|:------------------|:-------------------------------------------|:-------------|
 | text       | respondent_id      | Respondent ID                              |              |
 | calculate  | eligibility_status |                                            | pulldata('eligibility', 'status', 'ID', ${respondent_id}) |
-| note       | eligibility_note    | Respondent is ${eligibility_status} for the study. |              |
+| note       | eligibility_note   | Respondent is ${eligibility_status} for the study. |              |
+| integer    | respondent_age     | Respondent age | pulldata('eligibility', 'age', 'ID', ${respondent_id}) |
 | survey | 
 
-In the example above, the calculation retrieves the value from the `status` column of the `eligibility.csv` file, in the row where the `ID` in the CSV matches the ID entered in the `respondent_id` question of your form.
+In the example above, the calculation retrieves the value from the `status` column of the `eligibility.csv` file, in the row where the `ID` in the CSV matches the ID entered in the `respondent_id` question of your form. Then, it retrieves and displays the respondent’s age from the `age` column of the `eligibility.csv` file.
 
 <p class="note">
 <strong>Note:</strong> After using the <code>pulldata()</code> function to retrieve external CSV data, you can reference that field in subsequent skip logic conditions, constraints, and labels, just like any other field or calculation.

@@ -1,5 +1,5 @@
 # Managing projects in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/eb9e81165058741a037d5081a0414e28b59cc180/source/managing_projects.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d66c12822969e6fa3db776489f574522bf03eebb/source/managing_projects.md" class="reference">19 Feb 2026</a>
 
 A **project** in KoboToolbox corresponds to a form, its settings, and all data submitted to that form. Project management begins on the **Projects home page**, where you can view, sort, filter, and organize your projects. You can also create new projects, update existing ones, and manage how they are shared with collaborators.
 
@@ -7,6 +7,11 @@ This article explains how to view and manage projects, create new projects, work
 
 ## Overview of existing projects
 The **Projects home page** lists all projects you own or that have been shared with you. The **My Projects** table displays key information such as project name, owner, status, and number of submissions.
+
+Projects exist in three states:
+* **Deployed:** Projects that have been published and are ready for data collection, allowing users to open the form and submit responses.
+* **Draft:** Projects that are still being developed or edited and are not yet deployed, so they cannot receive submissions.
+* **Archived:** Projects that have been removed from the active project list and no longer accept new submissions, but are retained for reference or record-keeping.
 
 You can manage your projects using the tools in this page:
 * **Filter:** Click <i class="k-icon-filter"></i> **filter** to filter projects by name, description, status, owner, date last edited, date last modified, date last deployed, sector, countries, and languages.

@@ -1,5 +1,5 @@
 # Setting up two-factor authentication in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3c86f234242bee25d3d6f91bffee5cb93d808344/source/two_factor_authentication.md" class="reference">5 Sep 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0c626c5b08af0402591bb667c3a47d7e1a80d2ff/source/two_factor_authentication.md" class="reference">19 Mar 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -117,9 +117,3 @@ If you have misplaced your recovery codes or believe they have been compromised,
 If you are unable to access your KoboToolbox account with 2FA enabled (for example, if you reset your smartphone and uninstalled the authenticator app, or you misplaced your recovery codes), you can contact <a class="reference external" href="support@kobotoolbox.org">support@kobotoolbox.org</a>. Please use the email address registered to your account to request that 2FA be disabled.
 </details>
 
-<br>
-
-<details>
-<summary><b>Feature not available</b></summary>
-This feature is currently unavailable for users on the Community Plan. However, 2FA will be extended to all users in the coming months, regardless of their plan.
-</details>

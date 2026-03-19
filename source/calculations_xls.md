@@ -1,5 +1,5 @@
 # Adding calculations in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/calculations_xls.md" class="reference">4 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c7dfb3fb158d823328abde8849f83f5f495bfe4f/source/calculations_xls.md" class="reference">3 Mar 2026</a>
 
 Calculations can be used inside your form to derive new variables, build advanced form logic, and display results to respondents during data collection.
 
@@ -130,6 +130,13 @@ To set a dynamic default response:
   <li><code>if(${potentially_empty_value}="", 0, ${potentially_empty_value})</code></li>
 </ul>
   Another option is to set default values for each of the numeric variables to 0 in the <code>default</code> column.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Division by zero</strong></summary>
+ If a calculation includes a division and the divisor is equal to zero, the result is handled differently in Enketo and KoboCollect. In Enketo, a division by zero is ignored. In KoboCollect, the calculated value will be <code>Infinity</code>, which can cause issues in data reports and when processing exported data. To prevent this, add skip logic so the calculation does not run when the divisor equals zero, or apply a constraint to prevent the divisor variable from being equal to zero. 
 </details>
 
 <br>

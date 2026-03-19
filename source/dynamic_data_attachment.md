@@ -28,7 +28,7 @@ Dynamically linking projects requires a **parent project** and at least one **ch
 
 3. Throughout the form, you can retrieve values from the parent project by creating a new question and including the appropriate expression in the `calculation` column (see table [below](https://support.kobotoolbox.org/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments)). You can use the following question types to retrieve data:
     - Use a `calculate` question type to retrieve and store values for future use within the form or dataset (e.g., for calculations or dynamic question labels).
-    - Use `text`, `integer`, `decimal`, `select_one`, or `select_multiple` question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
+    - Use `text`, `integer`, `decimal`, `date`, `select_one`, or `select_multiple` question types to include retrieved values as default responses in editable fields. Data edited in the child project will not change the original data in the parent project.
   
 **survey worksheet**
       
@@ -62,7 +62,7 @@ For each expression in the table below:
 | :----------------- | :--------------------------------------------- |
 | `count(instance('parent')/root/data)` | Returns the total number of rows in the parent project. |
 | `count(instance('parent')/root/ data[parent_group/parent_question])`      | Returns the total number of rows in the parent project where `parent_question`  (in `parent_group`) is not empty. |
-| `count(instance('parent')/root/ data[parent_group/parent_question= current()/../child_question]` | Returns the total count of instances where the value of `parent_question`  (in `parent_group`) in the parent project is equal to the value of `child_question` in the child project. |
+| `count(instance('parent')/root/ data[parent_group/parent_question= current()/../child_question])` | Returns the total count of instances where the value of `parent_question`  (in `parent_group`) in the parent project is equal to the value of `child_question` in the child project. |
 | `instance('parent')/root/ data[parent_index_group/parent_index_question= current()/../child_index_question]/parent_group/ parent_question` | Returns the value of `parent_question` (in `parent_group`) from the parent project where `child_index_question` in the child project is equal to `parent_index_question` in the parent project. |
 | `instance('parent')/root/ data[parent_index_group/parent_index_question= current()/../child_index_question][position()= 1]/parent_group/parent_question` | Same as above, but specifies that only data from the first instance of `parent_index_question` should be returned, using the `[position() = 1]` argument. Used in case of possible duplicates in the parent form. |
 | `sum(instance('parent')/root/ data/parent_group/parent_question)` | Returns the sum of values from `parent_question` (in `parent_group`) from the parent project. Note that `parent_question must be numeric` |
@@ -186,10 +186,21 @@ To pull dynamic data from a parent form into a child form with question groups, 
 <br>
 
 <details>
-<summary><strong>Error evaluation fields in KoboCollect</strong></summary>
+<summary><strong>Error evaluating fields in KoboCollect</strong></summary>
 If your parent form contains duplicate submissions, you may receive an error message in KoboCollect stating “Error evaluating field / XPath evaluation: type mismatch /This field is repeated.” To solve this issue and pull data only from the first submission containing a specific index value, use the <code>[position()=1]</code> argument, as below:
 <br><br>
 <code>instance('parent')/root/data[parent_index_group/parent_index_question = current()/../child_index_question][position()=1]/parent_group/parent_question</code>
 
 </details>
+
+<br>
+
+<details>
+<summary><strong>Cannot update values retrieved from dynamic data attachments</strong></summary>
+If you are pulling dynamic data into integer, text, or select questions and want these fields to remain editable, add a <code>trigger</code> column to your XLSForm. In the row that contains the dynamic data expression, enter the <code>name</code> of the child index question in the <code>trigger</code> column.
+<br><br>
+This allows the value to be edited manually. The value will update from the parent data only when the response to the index question changes.
+
+</details>
+
 
