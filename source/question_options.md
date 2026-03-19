@@ -49,7 +49,7 @@ If you keep the **automatically generated data column name**, it will update aut
 
 If a question’s data column name changes after data collection has begun, KoboToolbox will treat it as a new variable. This will result in two separate columns in your dataset.
 
-For this reason, it is recommended to define and finalize the data column name for each question before deploying your form and collecting data. If you intentionally make substantial changes to a question and want it to function as a new variable, you can update the data column name accordingly.
+For this reason, it is recommended to **define and finalize the data column name for each question before deploying your form** and collecting data. If you intentionally make substantial changes to a question and want it to function as a new variable, you can update the data column name accordingly.
 
 Data column names must follow these rules:
 
@@ -58,7 +58,7 @@ Data column names must follow these rules:
 - Each name must be unique within the form.
 
 <p class="note">
-<strong>Note:</strong> Data column names are used when referencing answers in <a href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a>. For example, you can include a previous response in another question’s label using the format ${data_column_name}. This format is used in labels, skip logic, calculations, and validations. Data column names are case-sensitive.
+<strong>Note:</strong> Data column names are used when referencing answers in <a href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a>. For example, you can include a previous response in another question’s label using the format <code>${data_column_name}</code>. This format is used in labels, skip logic, calculations, and validations. Data column names are case-sensitive.
 </p>
 
 ## Question Hint
@@ -104,7 +104,7 @@ If a respondent does not answer a required question, they will not be able to pr
 
 Custom form logic can be used to make a question required or optional based on a previous response. To implement custom logic for mandatory responses:
 
-1. Select **Custom logic** next to **Mandatory Response**
+1. Select **Custom logic** next to **Mandatory Response**.
 2. In the text box, enter the XLSForm formula that determines whether the question will be required or not.
 
 ![Custom logic](images/question_options/custom_mandatory.png)
