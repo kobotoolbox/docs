@@ -20,13 +20,13 @@ This article introduces the key concepts of form logic in the Formbuilder, inclu
 
 The KoboToolbox Formbuilder includes built-in tools for adding form logic, such as [skip logic](https://support.kobotoolbox.org/skip_logic.html) and [validation criteria](https://support.kobotoolbox.org/https://support.kobotoolbox.org/validation_criteria.html). These tools are suitable for most standard use cases, but they may be limiting when working with more complex conditions.
 
-For skip logic and validation, you can use the visual builders in the Formbuilder or you can manually enter XLSForm expressions. For this second option, it is helpful to understand the basics of XLSForm syntax, including question referencing, constants, mathematical and comparison operators, logical operators for combining conditions, functions, and regular expressions.
-
-If your form requires complex or highly customized logic, it is recommended to [download your form as an XLSForm](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) and make the necessary edits directly in the Excel file.
+For skip logic and validation, you can use the **visual builders in the Formbuilder** or you can **manually enter XLSForm expressions**. For this second option, it is helpful to understand the basics of XLSForm syntax, including question referencing, constants, mathematical and comparison operators, logical operators for combining conditions, functions, and regular expressions.
 
 <p class="note">
   To learn more about form logic in XLSForm, see <a href="https://support.kobotoolbox.org/form_logic_xls.html#">Introduction to form logic in XLSForm</a>.
 </p>
+
+If your form requires complex or highly customized logic, it is recommended to [download your form as an XLSForm](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) and make the necessary edits directly in the Excel file.
 
 ## Question referencing 
 
@@ -35,9 +35,9 @@ Question referencing allows you to incorporate the answer to a previous question
 - **In question labels or hints:** For example, you can include a respondent’s child’s name in later questions about their child.
 - **In form logic:** For example, you can show or hide a question based on a previous response, or validate an answer by comparing it with an earlier one.
 
-Question referencing uses the format **${data_column_name}**. A question’s data column name can be found and modified in the [question settings](https://support.kobotoolbox.org/question_options.html#data-column-name). 
+Question referencing uses the format `${data_column_name}`. A question’s [data column name](https://support.kobotoolbox.org/question_options.html#data-column-name) can be found and modified in the question settings. 
 
-To **display a previous response inside another question label**, insert ${data_column_name} directly into the question label where you want the value to appear.
+To **display a previous response inside another question label**, insert `${data_column_name}` directly into the question label where you want the value to appear.
 
 ![Question referencing](images/form_logic/question_referencing.png)
 
@@ -66,9 +66,7 @@ The value entered in the **Default Response** field will be stored as the consta
 
 ## Mathematical and comparison operators 
 
-**Mathematical operators** are used to perform arithmetic calculations using numerical values in the form. 
-
-Mathematical operators in form logic include: 
+**Mathematical operators** are used to perform arithmetic calculations using numerical values in the form. Mathematical operators in form logic include: 
 
 | Operator | Description |
 |:---|:---|
