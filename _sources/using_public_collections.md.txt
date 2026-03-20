@@ -1,131 +1,183 @@
-# Using Public Collections
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8f6b969a2b7812779940875ace1100d741729d70/source/using_public_collections.md" class="reference">11 Sep 2023</a>
+# Public collections in the KoboToolbox library
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/using_public_collections.md" class="reference">20 Mar 2026</a>
 
+Public collections allow KoboToolbox users to share and reuse predefined survey questions, question blocks, and full templates. When a collection is made public, it becomes available to all users on the same KoboToolbox server. Public collections may include commonly used questions or question groups, such as demographic characteristics or other standard indicators.
 
-Obtaining the right information often depends on asking the right questions.
-**Public Collections** helps us all improve our data collection by making sets
-of predefined survey questions public and easily accessible to the entire Kobo
-community. Anyone can create, find, and use these collections freely, enabling
-teams and organizations to standardize their surveys as well as allowing them to
-contribute to the work and best practices of others. These collections can
-contain individual questions, blocks of questions, or full survey templates that
-are ready to be used.
+By making content public, users contribute to a shared library that helps standardize surveys and promote widely used measures across the Kobo community.
 
-This article describes in detail where to find, how to use, and how to
-contribute to the **Public Collections** library.
+This article explains how to locate, use, and create public collections in the KoboToolbox library. 
 
-## Purpose of the Public Collections
+<p class="note">
+    To learn more about the KoboToolbox library, see <a href="https://support.kobotoolbox.org/question_library.html">Using the KoboToolbox question library</a>.
+</p>
 
-Users can choose to make their survey questions public, meaning they will be
-included in the **Public Collections** library. All users on the
-[same server instance](creating_account.md) will have access to the same **Public
-Collections**, which may include common questions or groups of questions, such
-as demographic characteristics, DHS (Demographic & Health Surveillance), equity
-tool for wealth determination, as well as other standard measures widely used.
+## Accessing public collections
 
-## Locating the Public Collections
+To access public collections from your KoboToolbox account:
 
-To access the **Public Collections** section, login to **KoboToolbox** and click
-on the **Library** icon in the top-left section of your screen, and then
-navigate to the **Public Collections** tab.
+1. Click the <i class="k-icon-library"></i> **Library** icon in the left-side menu.
+2. Open the <i class="k-icon-library-public"></i> **Public Collections** tab.
 
-![Library](/images/using_public_collections/library.png)
+![Public collections tab](images/using_public_collections/public_collections.png)
 
-You will see a list of all public collections available on your respective
-server instance as seen in the example below. The list shows an overview of the
-collection name, number of items within each collection, owner, number of
-subscribers, languages, specified primary sector, and the most recent date it
-was modified.
+You will see a list of all public collections available on your server, as well as the collection owner, number of items, number of subscribers, available languages, primary sector, and date last modified.
 
-![Public Collections List](/images/using_public_collections/public_collections_list.png)
+<p class="note">
+<strong>Note:</strong> Public collections on the <a href="https://support.kobotoolbox.org/glossary.html#global-kobotoolbox-server">Global KoboToolbox Server</a> and the <a href="https://support.kobotoolbox.org/glossary.html#european-union-kobotoolbox-server">European Union KoboToolbox Server</a> may differ. Collections added to one server are only accessible from that same server.
+</p>
 
-If you are interested in a specific collection, there are several ways to find
-what you need:
+To find a specific collection, you can browse the list, sort or filter the results, or use the search bar to enter keywords.
 
--   Browse by scrolling through all the available collections;
--   Use the search bar and type relevant keywords (see below). You can learn
-    more about advanced searching [here](public_collections_advanced_search.md).
+## Creating a public collection
 
-![Search Example](/images/using_public_collections/search_example.gif)
+To create a public collection, you must first create a collection in your question library. From the [question library](https://support.kobotoolbox.org/question_library.html):
 
-## Using the Public Collections
+1. Click **NEW** and select <i class="k-icon-folder"></i> **Collection.**
+2. Enter a name, short description, organization, primary sector, and country. These fields are required to make a collection public.
+3. Click **Create.**
+4. [Add at least one asset](https://support.kobotoolbox.org/question_library.html#adding-items-to-a-collection) from your library to the collection.
+5. Open the collection and click <i class="k-icon-globe-alt"></i> **Make public.**
 
-This section describes how to (a) subscribe to a collection, (b) use assets from
-within a collection, and (c) how to add assets to a collection.
+![Make collection public](images/using_public_collections/make_public.png)
 
-### a) Subscribing to a Public Collection
+<p class="note">
+To learn more about creating collections in your library, see <a href="https://support.kobotoolbox.org/question_library.html#using-collections-in-the-question-library">Using the KoboToolbox question library</a>.    
+</p>
 
-Subscribe to a public collection by either hovering over the list item and
-clicking on the **SUBSCRIBE** button or by clicking on **SUBSCRIBE** from within
-the collection’s detail view. This will then add the collection to the **My
-Library** tab. You can remove the collection from your library by clicking
-**UNSUBSCRIBE**.
+## Using public collections
 
-![Subscribing to a Collection](/images/using_public_collections/subscribing_to_a_collection.gif)
+To use assets from public collections in your own forms or projects, you can subscribe to collections, retrieve individual assets, or create new projects from public templates.
 
-### b) Using Assets within a Public Collection
+### Subscribing to a public collection
 
-Once you have identified the public collection you want to use, view its
-contents by clicking on the list item. In the example below, we will search for
-the word "example" and enter the first collection to see a list of all assets
-available.
+Subscribing to a public collection adds it to **My Library**, allowing you to easily access and use its questions, blocks, or templates in your own forms.
 
-![Example Detail 1](/images/using_public_collections/example_detail_1.gif)
+To subscribe to a public collection:
 
-Select the group of questions you need within the public collection by hovering
-the cursor over that group, which willhighlight it.
+- Hover over the collection and click <i class="k-icon-subscribe"></i> **SUBSCRIBE** on the right, or
+- Open the collection and click **SUBSCRIBE** in the detail view.
 
-![Example Detail 2](/images/using_public_collections/example_detail_2.gif)
+![Subscribe to a public collection](images/using_public_collections/subscribe.png)
 
-Once the asset is highlighted, you will find the icon to clone it on the right.
-If you tap the three dots for more actions, you will see an option to download
-the asset in either XLS or XML format.
+To remove a collection from your library, click <i class="k-icon-close"></i> **UNSUBSCRIBE.**
 
-![Example Detail 3](/images/using_public_collections/example_detail_3.gif)
+### Retrieving individual assets from a public collection
 
-If you need to add these questions to an already developed XLSForm, the best
-approach would be to download the XLS version of the collection. You can then
-manually add the desired questions by copying them over. Read more about
-developing forms using Excel and XLSForm [here](edit_forms_excel.md).
+If you do not want to subscribe to an entire public collection but only need specific assets, you can clone or download them individually. To do so:
 
-Additionally, cloning the questions allows you to add to your personal library.
-You can then
-[add questions to the form within the Formbuilder](question_library.md).
+1. Open the collection that contains the asset you are interested in.
+2. Hover over the asset.
+3. Click <i class="k-icon-duplicate"></i> **Clone** to add it to your library, or select **More actions** to download it as an XLS or XML file.
 
-![Example Detail 4](/images/using_public_collections/example_detail_4.gif)
+### Using questions from a public collection
 
-### c) Creating a Public Collection
+After adding questions from a public collection to your library, either by subscribing to the collection or cloning individual assets, you can reuse them in future forms from the Formbuilder.
 
-While you’re in the **Library** section of **KoboToolbox**, click on the **NEW**
-button and a modal with four options will be displayed, as seen below.
+<p class="note">
+<strong>Note:</strong> Only questions that have been added to <strong>My Library</strong> can be inserted into your forms using the Formbuilder. 
+</p>
 
-![Create Library Item](/images/using_public_collections/create_library_item.png)
+To use questions or question blocks from a public collection in your form:
 
-Tap the icon labeled **Collection**. You will then be prompted to enter details,
-including a name for the new collection,which is required. Once complete, click
-on **CREATE** to continue.
+1. Open the [KoboToolbox Formbuilder](https://support.kobotoolbox.org/formbuilder.html).
+2. Click <i class="k-icon-library"></i> **Add from Library** in the top right corner.
+3. Select the question or question block you want to add, then drag and drop it into the desired location in your form.
+4. If your question library contains many items, you can use the **Search** function to quickly locate the question or block you need.
 
-![Collection Details](/images/using_public_collections/collection_details.png)
+![Add question from library](images/using_public_collections/add_from_library.png)
 
-If you intend to make the collection public, an _Organization_ and _Primary
-Sector_ must also be defined.
+<p class="note">
+<strong>Note:</strong> When you add a question from your question library to a form, any changes you make in the form will not affect the original version saved in the library.
+</p>
 
-Once the collection has been created, you will see the following options:
+### Using templates from a public collection
 
--   Make public, Modify details, Edit tags
--   Share the collection with specific users
--   Delete the collection
+You can also use a template from a public collection to create a new form project, either from your question library or from the **Projects home page.**
 
-![Actions](/images/using_public_collections/actions.gif)
+**From the question library**
 
-Start adding questions to the collection by moving them from the library. Hover
-the cursor over the library assets then tap the three buttons to access more
-options. You will see an option to move the questions to your collection.
+You can create a project from a template in <i class="k-icon-library"></i> **My Library** if you have subscribed to the collection, or directly from <i class="k-icon-library-public"></i> **Public Collections**:
 
-![Move to Collection](/images/using_public_collections/move_to_collection.gif)
+1. Open the public collection.
+2. Hover over the template.
+3. Click <i class="k-icon-projects"></i> **Create project** on the right.
+4. Enter a name for the new project.
 
-## Related Articles
+![Create a project from collection](images/using_public_collections/create_project.png)
 
--   [Using the question library](question_library.md)
--   [Using advanced search within public collections](public_collections_advanced_search.md)
--   [Library locking](library_locking.md)
+<p class="note">
+<strong>Note:</strong> You can create a project from a template in a public collection even if you have not subscribed to the public collection.
+</p>
+
+**From the Projects home page**
+
+You can also create a project from a public template directly from the <i class="k-icon-projects"></i> **Projects home page**, provided you have subscribed to the collection:
+
+1. Click **NEW** and select <i class="k-icon-template"></i> **Use a template.**
+2. Choose a saved template and click **Next.**
+3. Enter the project details and click **Create project.**
+
+In both cases, a new KoboToolbox project will be created that you can edit and deploy.
+
+<p class="note">
+<strong>Note:</strong> Editing a project created from a template does not modify the original template.
+</p>
+
+## Public collections advanced search
+
+Within **Public Collections**, the search bar supports both simple and advanced queries. By default, if you enter a keyword without specifying a field, the system searches across multiple fields, including the name, owner username, description, question labels, tags, and UID. Searches are case-insensitive by default.
+
+![Search public collections](images/using_public_collections/search.png)
+
+### Field-specific advanced search
+
+If you want to narrow your results or search for specific fields within public collections, you can use the advanced search options described below.
+
+Advanced search uses a structured format: `field__subfield__operator:value`.
+
+- The `field` or `field__subfield` prefix defines the field you are searching (e.g., the collection name).
+- The `operator` suffix defines how the value is matched.
+
+<p class="note">
+<strong>Note:</strong> Use a double underscore to separate each element.
+</p>
+
+Examples of prefixes include:
+
+| Prefix | Field being searched |
+|:---|:---|
+| <code>name</code> | Name of the survey, collection, question, block, or template |
+| <code>owner__username</code> | Username of the asset owner |
+| <code>settings__description</code> | Description field |
+| <code>summary</code> | Question labels and available languages |
+| <code>tags__name</code> | Assigned tags |
+| <code>uid</code> | Unique identifier (UID) of the object |
+| <code>settings__country__value</code> | Nested settings field, such as country value |
+
+Examples of suffixes include:
+
+| Suffix | Value type | Description |
+|:---|:---|:---|
+| <code>exact</code> | Text | Exact match (case-sensitive) |
+| <code>contains</code> | Text | Field contains the value (case-sensitive) |
+| <code>startswith</code> | Text | Field starts with the value (case-sensitive) |
+| <code>iexact</code> | Text | Exact match (case-insensitive) |
+| <code>icontains</code> | Text | Contains match (case-sensitive) |
+| <code>istartswith</code> | Text | Starts with match (case-sensitive) |
+| <code>exact</code> | Numeric | Exact number |
+| <code>lt</code> | Numeric | Less than |
+| <code>lte</code> | Numeric | Less than or equal to |
+| <code>gt</code> | Numeric | Greater than |
+| <code>gte</code> | Numeric | Greater than or equal to |
+
+For example, `owner__username__icontains:team` searches for public collections where the owner’s username contains the word “team”, regardless of capitalization.
+
+<p class="note">
+<strong>Note:</strong> If no suffix is added, <code>exact</code> is used by default. Adding <code>i</code> before a text operator makes it case-insensitive.
+</p>
+
+### Combining conditions
+
+You can combine filters using **AND**, **OR**, and **NOT** for more precise results. 
+
+For example, `owner__username__icontains:team AND tags__name__icontains:baseline` searches within the owner username field and the tags field. 

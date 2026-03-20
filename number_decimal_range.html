@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Number, Decimal, and Range Question Types &#8212; KoboToolbox  documentation</title>
+    <title>Numeric questions in KoboToolbox &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -25,8 +25,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Date and time question types" href="date_time.html" />
-    <link rel="prev" title="Acknowledge question type" href="acknowledge.html" />
+    <link rel="next" title="Date and time questions in KoboToolbox" href="date_time.html" />
+    <link rel="prev" title="Select questions in KoboToolbox" href="select_one_and_select_many.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,230 +107,145 @@
 
         <section class="page__body" role="main">
           
-  <section id="number-decimal-and-range-question-types">
-<h1>Number, Decimal, and Range Question Types<a class="headerlink" href="#number-decimal-and-range-question-types" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/ddc7265c83c14464689447dd16d7ddde9a084f75/source/number_decimal_range.md" class="reference">2 Apr 2025</a></p>
-<p>When creating questions with numeric responses, you can choose between the
-“Number”, “Decimal”, and “Range” question types in KoboToolbox.</p>
-<p>This article describes these question types and how to use them.</p>
-<section id="when-to-use-them">
-<h2>When to use them<a class="headerlink" href="#when-to-use-them" title="Link to this heading">¶</a></h2>
-<p><strong>Number:</strong> The “Number” question type in the formbuilder is equivalent to the
-<code class="docutils literal notranslate"><span class="pre">integer</span></code> question type in XLSForm. Use the “Number” question type when
-responses to a question will be in the form of whole numbers, such as number of
-children (1, 3, 5, etc.).</p>
-<p><strong>Decimal:</strong> Use the “Decimal” question type when a question’s response will be
-in the form of decimal numbers, such as monthly income (1.2, 34.5, 42.42, etc.).</p>
-<p><strong>Range:</strong> The “Range” question type can collect both integer and decimal
-values. By default, the “Range” question type displays a sliding scale that
-allows users to pick a number. When setting it up, you must define the <code class="docutils literal notranslate"><span class="pre">start</span></code>
-and <code class="docutils literal notranslate"><span class="pre">end</span></code> values of the range as well as the <code class="docutils literal notranslate"><span class="pre">step</span></code> between them.</p>
-</section>
-<section id="setting-up-in-formbuilder">
-<h2>Setting up in formbuilder<a class="headerlink" href="#setting-up-in-formbuilder" title="Link to this heading">¶</a></h2>
-<p>To set up the “Number” and “Decimal” question types:</p>
-<ul class="simple">
-<li><p>In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
-a new question.</p></li>
-<li><p>Type the question’s label. For example, “How many people live in this
-household?”. Then click “+ ADD QUESTION” (or press Enter).</p></li>
-<li><p>Choose the question type (“Number” or “Decimal”).</p></li>
-</ul>
-<p><img alt="Setting up number questions" src="_images/setup_number_question.gif" /></p>
-<p>To add a “Range” question type:</p>
-<ul class="simple">
-<li><p>In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
-a new question.</p></li>
-<li><p>Type the question text. For example, “Rate the effectiveness of the project
-from 1 to 5 (5 being most effective)”. Then click
-“<i class="k-icon k-icon-plus"></i> ADD QUESTION” (or press Enter).</p></li>
-<li><p>Choose the “Range” question type.</p></li>
-<li><p>Type the <code class="docutils literal notranslate"><span class="pre">start</span></code> value (in this example, 1).</p></li>
-<li><p>Type the <code class="docutils literal notranslate"><span class="pre">end</span></code> value (in this example, 5).</p></li>
-<li><p>Type in the <code class="docutils literal notranslate"><span class="pre">step</span></code>, the number of steps from one value to the next. (In this
-example, 1, meaning the options on the sliding scale are 1, 2, 3, 4, 5).</p></li>
-</ul>
-<p><img alt="Setting up range questions" src="_images/setup_range_question.gif" /></p>
-<p class="note">
-  It is strongly recommended that you specify names for
-  <strong>all questions</strong> before deploying your form,
-  <em>especially</em> if the labels are non-Latin character languages such as
-  Chinese, Arabic or Nepali.
-</p>
-</section>
-<section id="setting-up-in-xlsform">
-<h2>Setting up in XLSForm<a class="headerlink" href="#setting-up-in-xlsform" title="Link to this heading">¶</a></h2>
-<p>In XLSForm, you can add “Number”, “Decimal” and “Range” questions by using
-<code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">decimal</span></code> and <code class="docutils literal notranslate"><span class="pre">range</span></code> question types respectively:</p>
+  <section id="numeric-questions-in-kobotoolbox">
+<h1>Numeric questions in KoboToolbox<a class="headerlink" href="#numeric-questions-in-kobotoolbox" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/number_decimal_range.md" class="reference">20 Mar 2026</a></p>
+<p>Numeric questions are used to collect quantitative data such as counts, measurements, prices, or ratings. They help ensure that responses are entered in a numeric format, which supports accurate calculations, validations, and analysis.</p>
+<p>KoboToolbox provides several numeric question types to accommodate different data collection needs, including <strong>whole numbers, decimal values,</strong> and <strong>responses within a defined range.</strong></p>
+<p>This article explains the available numeric question types, how to add and configure them in the Formbuilder, the appearance options you can apply, and important platform-specific limits to consider when collecting numeric data.</p>
+<section id="numeric-question-types">
+<h2>Numeric question types<a class="headerlink" href="#numeric-question-types" title="Link to this heading">¶</a></h2>
+<p>The following question types are available in the Formbuilder for respondents to input numeric data:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-<th class="head text-left"><p>parameters</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Question type</p></th>
+<th class="head text-left"><p>Description</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>hhsize</p></td>
-<td class="text-left"><p>How many people live in this household?</p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-number"></i> Number</p></td>
+<td class="text-left"><p>Allows respondents to input whole numbers (e.g., age or number of participants).</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>decimal</p></td>
-<td class="text-left"><p>landsize</p></td>
-<td class="text-left"><p>How big is your land? (in hectares)</p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-decimal"></i> Decimal</p></td>
+<td class="text-left"><p>Allows respondents to input numbers that may contain decimal points (e.g., land size, price).</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>range</p></td>
-<td class="text-left"><p>rating</p></td>
-<td class="text-left"><p>Rate the effectiveness of the project from 1 to 5</p></td>
-<td class="text-left"><p>start=1 end=5 step=1</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-range"></i> Range</p></td>
+<td class="text-left"><p>Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values.</p></td>
 </tr>
 </tbody>
 </table>
-<p class="note">
-  When adding a <code>range</code> question to an XLSForm, the
-  <code>start</code>, <code>end</code> and <code>step</code> parameters are
-  added in the <code>parameters</code> column.
-</p>
 </section>
-<section id="default-appearance-in-web-forms-and-kobocollect">
-<h2>Default appearance in web forms and KoboCollect<a class="headerlink" href="#default-appearance-in-web-forms-and-kobocollect" title="Link to this heading">¶</a></h2>
-<p><img alt="Number, Decimal and Range questions" src="_images/number_decimal_range_default.png" /></p>
+<section id="adding-a-numeric-question-in-the-formbuilder">
+<h2>Adding a numeric question in the Formbuilder<a class="headerlink" href="#adding-a-numeric-question-in-the-formbuilder" title="Link to this heading">¶</a></h2>
+<p>To add a numeric question to your form:</p>
+<ol class="arabic simple">
+<li><p>Click the <i class="k-icon-plus"></i> button.</p></li>
+<li><p>Enter your question label.</p></li>
+<li><p>Click <strong>+ ADD QUESTION.</strong></p></li>
+<li><p>Choose the appropriate question type.</p></li>
+</ol>
+<p><img alt="Numeric question types" src="_images/numeric.png" /></p>
+<section id="setting-up-range-questions">
+<h3>Setting up Range questions<a class="headerlink" href="#setting-up-range-questions" title="Link to this heading">¶</a></h3>
+<p><strong>Range</strong> questions are used to collect numeric responses within a defined interval. They display a numbered sliding scale that allows respondents to select values between a minimum and maximum value.</p>
+<p>This question type is useful when collecting scaled responses, such as satisfaction ratings from 1 to 5 or scores within a fixed range.</p>
+<p>After adding a <strong>Range</strong> question in the Formbuilder, configure the following components:</p>
+<ul class="simple">
+<li><p><strong>start</strong>: The minimum numeric value in the range.</p></li>
+<li><p><strong>end</strong>: The maximum numeric value in the range.</p></li>
+<li><p><strong>step</strong>: The interval between each number in the range.</p></li>
+</ul>
+<p><img alt="Range question" src="_images/range.png" /></p>
 </section>
+</section>
+<section id="appearances-of-numeric-questions">
+<h2>Appearances of numeric questions<a class="headerlink" href="#appearances-of-numeric-questions" title="Link to this heading">¶</a></h2>
+<p>The table below displays the default appearances for numeric questions:</p>
+<p><img alt="Numeric question appearances" src="_images/table4.png" /></p>
 <section id="advanced-appearances">
-<h2>Advanced appearances<a class="headerlink" href="#advanced-appearances" title="Link to this heading">¶</a></h2>
-<p>When adding the “number”, “decimal”, and “range” questions, you can specify different appearances (under the question settings). Appearances change the way the question is displayed on web forms or on KoboCollect.</p>
-<p><img alt="Number, Decimal and Range advanced appearances" src="_images/number_decimal_range_advanced_appearance.png" /></p>
-<p><img alt="Number, Decimal and Range advanced appearances" src="_images/number_decimal_range_advanced.png" /></p>
-<section id="advanced-appearances-in-xlsform">
-<h3>Advanced appearances in XLSForm<a class="headerlink" href="#advanced-appearances-in-xlsform" title="Link to this heading">¶</a></h3>
-<p>You can specify advanced appearances of “Number”, “Decimal”, and “Range”
-questions in XLSForm under the appearances column as in the following examples:</p>
+<h3>Advanced appearances<a class="headerlink" href="#advanced-appearances" title="Link to this heading">¶</a></h3>
+<p>You can apply advanced appearances to numeric questions to modify how they display and behave in your form.</p>
+<p>To add an advanced appearance:</p>
+<ol class="arabic simple">
+<li><p>Open the question settings by clicking <i class="k-icon-settings"></i> <strong>Settings</strong> to the right of the question. This will take you to the <strong>Question Options</strong> tab.</p></li>
+<li><p>In <strong>Appearance (Advanced)</strong>, type the name of the appearance in the text box, exactly as written below.</p></li>
+</ol>
+<p><img alt="Question apperance" src="_images/appearance2.png" /></p>
+<p>The following advanced appearances are available for numeric questions:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-<th class="head text-left"><p>appearance</p></th>
-<th class="head text-left"><p>parameters</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Appearance</p></th>
+<th class="head text-left"><p>Description</p></th>
+<th class="head text-left"><p>Compatibility</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>income</p></td>
-<td class="text-left"><p>What was the total income you got in the last 12 months?</p></td>
-<td class="text-left"><p>thousands-sep</p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-even"><td class="text-left"><p><code>thousands-sep</code></p></td>
+<td class="text-left"><p>Formats large numbers using a comma separator for thousands (<strong>Number</strong> and <strong>Decimal</strong> only).<br><img alt="Thousands seperator with commas" src="_images/thousands-sep.png" /></p></td>
+<td class="text-left"><p>Enketo and KoboCollect</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>decimal</p></td>
-<td class="text-left"><p>bearing</p></td>
-<td class="text-left"><p>Capture bearing</p></td>
-<td class="text-left"><p>bearing</p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-odd"><td class="text-left"><p><code>bearing</code></p></td>
+<td class="text-left"><p>Records a compass reading in degrees, if the device is equipped with an accelerometer or magnetic field sensor (<strong>Decimal</strong> only).<br><img alt="Bearing" src="_images/bearing.png" /></p></td>
+<td class="text-left"><p>KoboCollect only</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>range</p></td>
-<td class="text-left"><p>vertical_rating</p></td>
-<td class="text-left"><p>Rate the effectiveness of the project from 1 to 5</p></td>
-<td class="text-left"><p>vertical</p></td>
-<td class="text-left"><p>start=1 end=5 step=1</p></td>
+<tr class="row-even"><td class="text-left"><p><code>counter</code></p></td>
+<td class="text-left"><p>Displays buttons for increasing and decreasing digits (<strong>Number</strong> only).<br><img alt="Counter" src="_images/counter.png" /></p></td>
+<td class="text-left"><p>KoboCollect only</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>range</p></td>
-<td class="text-left"><p>picker_rating</p></td>
-<td class="text-left"><p>Rate the effectiveness of the project from 1 to 5</p></td>
-<td class="text-left"><p>picker</p></td>
-<td class="text-left"><p>start=1 end=5 step=1</p></td>
+<tr class="row-odd"><td class="text-left"><p><code>vertical</code></p></td>
+<td class="text-left"><p>Changes the orientation of the number line to a vertical line.<br><img alt="Vertical" src="_images/vertical.png" /></p></td>
+<td class="text-left"><p>Enketo and KoboCollect</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>range</p></td>
-<td class="text-left"><p>star_rating</p></td>
-<td class="text-left"><p>Rate the effectiveness of the project from 1 to 5</p></td>
-<td class="text-left"><p>rating</p></td>
-<td class="text-left"><p>start=1 end=5 step=1</p></td>
+<tr class="row-even"><td class="text-left"><p><code>picker</code></p></td>
+<td class="text-left"><p>In KoboCollect, displays a pop-up spinner for selecting values. In Enketo, displays a drop-down menu.<br><img alt="Picker" src="_images/picker.png" /></p></td>
+<td class="text-left"><p>Enketo and KoboCollect</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-odd"><td class="text-left"><p><code>rating</code></p></td>
+<td class="text-left"><p>Displays stars instead of a number line.<br><img alt="Rating" src="_images/rating.png" /></p></td>
+<td class="text-left"><p>Enketo and KoboCollect</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>distress</code></p></td>
+<td class="text-left"><p>Displays a thermometer instead of a number line.<br><img alt="Temperature" src="_images/distress.png" /></p></td>
+<td class="text-left"><p>Enketo only</p></td>
 </tr>
 </tbody>
 </table>
 </section>
 </section>
-<section id="limits-on-number-and-decimal-questions">
-<h2>Limits on “Number” and “Decimal” questions<a class="headerlink" href="#limits-on-number-and-decimal-questions" title="Link to this heading">¶</a></h2>
-<section id="kobocollect">
-<h3>KoboCollect<a class="headerlink" href="#kobocollect" title="Link to this heading">¶</a></h3>
-<p>The “Number” question type is limited to a maximum of 9 characters and the
-“Decimal” question type is limited to a maximum of 15 characters.</p>
-<p class="note">
-  Negative signs and decimal points count towards the character limit.
-</p>
-</section>
-<section id="enketo">
-<h3>Enketo<a class="headerlink" href="#enketo" title="Link to this heading">¶</a></h3>
-<p>Both “Number” and “Decimal” question types are limited to a maximum of 16
-significant figures.</p>
-<p>If a positive or negative integer of 22 significant figures is entered, the form
-will record a 16 digit number with scientific notation. For example, the number
-<code class="docutils literal notranslate"><span class="pre">±9845284926482357445633</span></code> would be recorded as <code class="docutils literal notranslate"><span class="pre">±9.845284926482358e+21</span></code>.</p>
-<p>If a positive or negative decimal of 22 significant figures is entered, the form
-will record a truncated 16 digit number, rounded to the 16th digit. For example,
-the number <code class="docutils literal notranslate"><span class="pre">±9845284926.482357445633</span></code> will be recorded as <code class="docutils literal notranslate"><span class="pre">±9845284926.482357</span></code>.</p>
-</section>
-<section id="text-question-type-as-number">
-<h3>Text question type as number<a class="headerlink" href="#text-question-type-as-number" title="Link to this heading">¶</a></h3>
-<p>If your survey requires numeric responses that will exceed 15 digits, you can
-use a workaround with the “Text” question type:</p>
+<section id="limits-for-numeric-questions">
+<h2>Limits for numeric questions<a class="headerlink" href="#limits-for-numeric-questions" title="Link to this heading">¶</a></h2>
+<p>Numeric questions have platform-specific limits that may affect how responses are entered, stored, and exported. It is important to understand these limits when designing your form, especially if you expect large numbers or identification codes.</p>
+<section id="numeric-limits-in-kobocollect">
+<h3>Numeric limits in KoboCollect<a class="headerlink" href="#numeric-limits-in-kobocollect" title="Link to this heading">¶</a></h3>
+<p>In KoboCollect:</p>
 <ul class="simple">
-<li><p>Add a “Text” question to your form.</p></li>
-<li><p>Go to the <strong>Appearance</strong> setting and select “numbers”. A digit keyboard will
-now appear when filling in this question.</p></li>
-<li><p>Finally, a <a class="reference internal" href="restrict_responses.html"><span class="std std-doc"><code class="docutils literal notranslate"><span class="pre">regex()</span></code> constraint</span></a> can be included to
-further restrict the input if necessary.</p></li>
+<li><p><strong>Number</strong> questions are limited to 9 characters.</p></li>
+<li><p><strong>Decimal</strong> questions are limited to 15 characters.</p></li>
+<li><p>Negative signs and decimal points count toward the character limit.</p></li>
 </ul>
-<p>Here is an XLSForm example to illustrate this:</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-<th class="head text-left"><p>appearance</p></th>
-<th class="head text-left"><p>constraint</p></th>
-<th class="head text-left"><p>constraint_message</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>number</p></td>
-<td class="text-left"><p>Enter a long number</p></td>
-<td class="text-left"><p>numbers</p></td>
-<td class="text-left"><p>regex(., ‘^[0-9]*$’)</p></td>
-<td class="text-left"><p>Value must be a number</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p class="note">
-  You can download an XLSForm with examples from this article
-  <a
-    download
-    class="reference"
-    href="./_static/files/number_decimal_range/number_decimal_range_question_types.xlsx"
-    >here</a
-  >.
-</p>
+<p>If a value exceeds these limits, it cannot be entered. This restriction applies at the time of data entry and prevents saving longer numbers.</p>
+</section>
+<section id="numeric-limits-in-enketo-web-forms">
+<h3>Numeric limits in Enketo web forms<a class="headerlink" href="#numeric-limits-in-enketo-web-forms" title="Link to this heading">¶</a></h3>
+<p>Enketo web forms allow respondents to enter longer numbers, but there are limits to how they are stored:</p>
+<ul class="simple">
+<li><p>Up to <strong>17 digits</strong> are recorded completely.</p></li>
+<li><p>From <strong>18 to 21 digits</strong>, additional digits are replaced with zeros, and any decimal portion is removed.</p></li>
+<li><p>At <strong>22 digits or more</strong>, the value is automatically stored in scientific notation.</p></li>
+<li><p>Negative signs do not count toward the digit limit.</p></li>
+</ul>
+</section>
+<section id="collecting-long-numeric-values">
+<h3>Collecting long numeric values<a class="headerlink" href="#collecting-long-numeric-values" title="Link to this heading">¶</a></h3>
+<p>If you need to collect numeric values that exceed these limits, use a <strong>Text</strong> question instead of a Number or Decimal question.</p>
+<p>In the Text question’s <strong>Appearance (Advanced)</strong> settings, select <code class="docutils literal notranslate"><span class="pre">numbers</span></code>. This displays a numeric keypad in KoboCollect during data collection while storing the value as text.</p>
+<p>Use this approach when:</p>
+<ul class="simple">
+<li><p>The number may exceed platform limits</p></li>
+<li><p>The value must not be altered or rounded</p></li>
+<li><p>The number begins with a zero, such as a phone number or bank account number</p></li>
+</ul>
+<p>Storing long numeric values as text ensures that all digits, including leading zeros, are preserved exactly as entered.</p>
 </section>
 </section>
 </section>
@@ -351,7 +266,7 @@ further restrict the input if necessary.</p></li>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Number, Decimal, and Range Question Types"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Numeric questions in KoboToolbox"
               class="feedback-button"
               target="_blank"
             >
@@ -382,46 +297,35 @@ further restrict the input if necessary.</p></li>
 <p class="caption" role="heading"><span class="caption-text">Using the Formbuilder</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Getting started with the KoboToolbox Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Text and Note question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">“Select One” and “Select Many” question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Acknowledge question type</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Number, Decimal, and Range Question Types</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#when-to-use-them">When to use them</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#setting-up-in-formbuilder">Setting up in formbuilder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#setting-up-in-xlsform">Setting up in XLSForm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#default-appearance-in-web-forms-and-kobocollect">Default appearance in web forms and KoboCollect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#advanced-appearances">Advanced appearances</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#limits-on-number-and-decimal-questions">Limits on “Number” and “Decimal” questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Adding questions in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Text questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Select questions in KoboToolbox</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Numeric questions in KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#numeric-question-types">Numeric question types</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-a-numeric-question-in-the-formbuilder">Adding a numeric question in the Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#appearances-of-numeric-questions">Appearances of numeric questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limits-for-numeric-questions">Limits for numeric questions</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Media question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Barcode/QR code question type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">GPS Question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Calculate Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Calculate Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Signature Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix Response Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Including Responses Inside Another Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Using the Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Media questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">GPS questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Note questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question options in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Adding validation criteria in the Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Adding calculations in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding cascading select questions in the Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Using Public Collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Public Collections Advanced Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using HXL Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Selecting options from an external file in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Dynamic data attachments using the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the KoboToolbox question library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Public collections in the KoboToolbox library</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Using XLSForm</span></p>
 <ul>
@@ -438,6 +342,7 @@ further restrict the input if necessary.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to an XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introduction to form logic in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Using functions in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Using regular expressions in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Adding skip logic in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Adding constraints in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Adding required logic in XLSForm</a></li>
@@ -447,10 +352,11 @@ further restrict the input if necessary.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Styling your forms using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Form metadata in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pulling data from an external CSV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Selecting options from a map</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking with XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importing library collections using XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
@@ -521,8 +427,6 @@ further restrict the input if necessary.</p></li>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Creating Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Lowering the File Size of Collected Media</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Adding Calculations and Constraints in a Matrix Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Adding Skip Logic to a Matrix Question</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
@@ -590,7 +494,7 @@ further restrict the input if necessary.</p></li>
   <script>
     window.docs = {
       currentPagename: "number_decimal_range",
-      currentTitle: "Number, Decimal, and Range Question Types",
+      currentTitle: "Numeric questions in KoboToolbox",
       currentUrl: ("index.html").replace("index.html", "number_decimal_range.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

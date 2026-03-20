@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Using Public Collections &#8212; KoboToolbox  documentation</title>
+    <title>Public collections in the KoboToolbox library &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -25,8 +25,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Public Collections Advanced Search" href="public_collections_advanced_search.html" />
-    <link rel="prev" title="Using the Question Library" href="question_library.html" />
+    <link rel="next" title="Introduction to XLSForm" href="edit_forms_excel.html" />
+    <link rel="prev" title="Using the KoboToolbox question library" href="question_library.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,116 +107,224 @@
 
         <section class="page__body" role="main">
           
-  <section id="using-public-collections">
-<h1>Using Public Collections<a class="headerlink" href="#using-public-collections" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8f6b969a2b7812779940875ace1100d741729d70/source/using_public_collections.md" class="reference">11 Sep 2023</a></p>
-<p>Obtaining the right information often depends on asking the right questions.
-<strong>Public Collections</strong> helps us all improve our data collection by making sets
-of predefined survey questions public and easily accessible to the entire Kobo
-community. Anyone can create, find, and use these collections freely, enabling
-teams and organizations to standardize their surveys as well as allowing them to
-contribute to the work and best practices of others. These collections can
-contain individual questions, blocks of questions, or full survey templates that
-are ready to be used.</p>
-<p>This article describes in detail where to find, how to use, and how to
-contribute to the <strong>Public Collections</strong> library.</p>
-<section id="purpose-of-the-public-collections">
-<h2>Purpose of the Public Collections<a class="headerlink" href="#purpose-of-the-public-collections" title="Link to this heading">¶</a></h2>
-<p>Users can choose to make their survey questions public, meaning they will be
-included in the <strong>Public Collections</strong> library. All users on the
-<a class="reference internal" href="creating_account.html"><span class="std std-doc">same server instance</span></a> will have access to the same <strong>Public
-Collections</strong>, which may include common questions or groups of questions, such
-as demographic characteristics, DHS (Demographic &amp; Health Surveillance), equity
-tool for wealth determination, as well as other standard measures widely used.</p>
+  <section id="public-collections-in-the-kobotoolbox-library">
+<h1>Public collections in the KoboToolbox library<a class="headerlink" href="#public-collections-in-the-kobotoolbox-library" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/using_public_collections.md" class="reference">20 Mar 2026</a></p>
+<p>Public collections allow KoboToolbox users to share and reuse predefined survey questions, question blocks, and full templates. When a collection is made public, it becomes available to all users on the same KoboToolbox server. Public collections may include commonly used questions or question groups, such as demographic characteristics or other standard indicators.</p>
+<p>By making content public, users contribute to a shared library that helps standardize surveys and promote widely used measures across the Kobo community.</p>
+<p>This article explains how to locate, use, and create public collections in the KoboToolbox library.</p>
+<p class="note">
+    To learn more about the KoboToolbox library, see <a href="https://support.kobotoolbox.org/question_library.html">Using the KoboToolbox question library</a>.
+</p>
+<section id="accessing-public-collections">
+<h2>Accessing public collections<a class="headerlink" href="#accessing-public-collections" title="Link to this heading">¶</a></h2>
+<p>To access public collections from your KoboToolbox account:</p>
+<ol class="arabic simple">
+<li><p>Click the <i class="k-icon-library"></i> <strong>Library</strong> icon in the left-side menu.</p></li>
+<li><p>Open the <i class="k-icon-library-public"></i> <strong>Public Collections</strong> tab.</p></li>
+</ol>
+<p><img alt="Public collections tab" src="_images/public_collections.png" /></p>
+<p>You will see a list of all public collections available on your server, as well as the collection owner, number of items, number of subscribers, available languages, primary sector, and date last modified.</p>
+<p class="note">
+<strong>Note:</strong> Public collections on the <a href="https://support.kobotoolbox.org/glossary.html#global-kobotoolbox-server">Global KoboToolbox Server</a> and the <a href="https://support.kobotoolbox.org/glossary.html#european-union-kobotoolbox-server">European Union KoboToolbox Server</a> may differ. Collections added to one server are only accessible from that same server.
+</p>
+<p>To find a specific collection, you can browse the list, sort or filter the results, or use the search bar to enter keywords.</p>
 </section>
-<section id="locating-the-public-collections">
-<h2>Locating the Public Collections<a class="headerlink" href="#locating-the-public-collections" title="Link to this heading">¶</a></h2>
-<p>To access the <strong>Public Collections</strong> section, login to <strong>KoboToolbox</strong> and click
-on the <strong>Library</strong> icon in the top-left section of your screen, and then
-navigate to the <strong>Public Collections</strong> tab.</p>
-<p><img alt="Library" src="_images/library.png" /></p>
-<p>You will see a list of all public collections available on your respective
-server instance as seen in the example below. The list shows an overview of the
-collection name, number of items within each collection, owner, number of
-subscribers, languages, specified primary sector, and the most recent date it
-was modified.</p>
-<p><img alt="Public Collections List" src="_images/public_collections_list.png" /></p>
-<p>If you are interested in a specific collection, there are several ways to find
-what you need:</p>
+<section id="creating-a-public-collection">
+<h2>Creating a public collection<a class="headerlink" href="#creating-a-public-collection" title="Link to this heading">¶</a></h2>
+<p>To create a public collection, you must first create a collection in your question library. From the <a class="reference external" href="https://support.kobotoolbox.org/question_library.html">question library</a>:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>NEW</strong> and select <i class="k-icon-folder"></i> <strong>Collection.</strong></p></li>
+<li><p>Enter a name, short description, organization, primary sector, and country. These fields are required to make a collection public.</p></li>
+<li><p>Click <strong>Create.</strong></p></li>
+<li><p><a class="reference external" href="https://support.kobotoolbox.org/question_library.html#adding-items-to-a-collection">Add at least one asset</a> from your library to the collection.</p></li>
+<li><p>Open the collection and click <i class="k-icon-globe-alt"></i> <strong>Make public.</strong></p></li>
+</ol>
+<p><img alt="Make collection public" src="_images/make_public.png" /></p>
+<p class="note">
+To learn more about creating collections in your library, see <a href="https://support.kobotoolbox.org/question_library.html#using-collections-in-the-question-library">Using the KoboToolbox question library</a>.    
+</p>
+</section>
+<section id="using-public-collections">
+<h2>Using public collections<a class="headerlink" href="#using-public-collections" title="Link to this heading">¶</a></h2>
+<p>To use assets from public collections in your own forms or projects, you can subscribe to collections, retrieve individual assets, or create new projects from public templates.</p>
+<section id="subscribing-to-a-public-collection">
+<h3>Subscribing to a public collection<a class="headerlink" href="#subscribing-to-a-public-collection" title="Link to this heading">¶</a></h3>
+<p>Subscribing to a public collection adds it to <strong>My Library</strong>, allowing you to easily access and use its questions, blocks, or templates in your own forms.</p>
+<p>To subscribe to a public collection:</p>
 <ul class="simple">
-<li><p>Browse by scrolling through all the available collections;</p></li>
-<li><p>Use the search bar and type relevant keywords (see below). You can learn
-more about advanced searching <a class="reference internal" href="public_collections_advanced_search.html"><span class="std std-doc">here</span></a>.</p></li>
+<li><p>Hover over the collection and click <i class="k-icon-subscribe"></i> <strong>SUBSCRIBE</strong> on the right, or</p></li>
+<li><p>Open the collection and click <strong>SUBSCRIBE</strong> in the detail view.</p></li>
 </ul>
-<p><img alt="Search Example" src="_images/search_example.gif" /></p>
+<p><img alt="Subscribe to a public collection" src="_images/subscribe.png" /></p>
+<p>To remove a collection from your library, click <i class="k-icon-close"></i> <strong>UNSUBSCRIBE.</strong></p>
 </section>
-<section id="using-the-public-collections">
-<h2>Using the Public Collections<a class="headerlink" href="#using-the-public-collections" title="Link to this heading">¶</a></h2>
-<p>This section describes how to (a) subscribe to a collection, (b) use assets from
-within a collection, and (c) how to add assets to a collection.</p>
-<section id="a-subscribing-to-a-public-collection">
-<h3>a) Subscribing to a Public Collection<a class="headerlink" href="#a-subscribing-to-a-public-collection" title="Link to this heading">¶</a></h3>
-<p>Subscribe to a public collection by either hovering over the list item and
-clicking on the <strong>SUBSCRIBE</strong> button or by clicking on <strong>SUBSCRIBE</strong> from within
-the collection’s detail view. This will then add the collection to the <strong>My
-Library</strong> tab. You can remove the collection from your library by clicking
-<strong>UNSUBSCRIBE</strong>.</p>
-<p><img alt="Subscribing to a Collection" src="_images/subscribing_to_a_collection.gif" /></p>
+<section id="retrieving-individual-assets-from-a-public-collection">
+<h3>Retrieving individual assets from a public collection<a class="headerlink" href="#retrieving-individual-assets-from-a-public-collection" title="Link to this heading">¶</a></h3>
+<p>If you do not want to subscribe to an entire public collection but only need specific assets, you can clone or download them individually. To do so:</p>
+<ol class="arabic simple">
+<li><p>Open the collection that contains the asset you are interested in.</p></li>
+<li><p>Hover over the asset.</p></li>
+<li><p>Click <i class="k-icon-duplicate"></i> <strong>Clone</strong> to add it to your library, or select <strong>More actions</strong> to download it as an XLS or XML file.</p></li>
+</ol>
 </section>
-<section id="b-using-assets-within-a-public-collection">
-<h3>b) Using Assets within a Public Collection<a class="headerlink" href="#b-using-assets-within-a-public-collection" title="Link to this heading">¶</a></h3>
-<p>Once you have identified the public collection you want to use, view its
-contents by clicking on the list item. In the example below, we will search for
-the word “example” and enter the first collection to see a list of all assets
-available.</p>
-<p><img alt="Example Detail 1" src="_images/example_detail_1.gif" /></p>
-<p>Select the group of questions you need within the public collection by hovering
-the cursor over that group, which willhighlight it.</p>
-<p><img alt="Example Detail 2" src="_images/example_detail_2.gif" /></p>
-<p>Once the asset is highlighted, you will find the icon to clone it on the right.
-If you tap the three dots for more actions, you will see an option to download
-the asset in either XLS or XML format.</p>
-<p><img alt="Example Detail 3" src="_images/example_detail_3.gif" /></p>
-<p>If you need to add these questions to an already developed XLSForm, the best
-approach would be to download the XLS version of the collection. You can then
-manually add the desired questions by copying them over. Read more about
-developing forms using Excel and XLSForm <a class="reference internal" href="edit_forms_excel.html"><span class="std std-doc">here</span></a>.</p>
-<p>Additionally, cloning the questions allows you to add to your personal library.
-You can then
-<a class="reference internal" href="question_library.html"><span class="std std-doc">add questions to the form within the Formbuilder</span></a>.</p>
-<p><img alt="Example Detail 4" src="_images/example_detail_4.gif" /></p>
+<section id="using-questions-from-a-public-collection">
+<h3>Using questions from a public collection<a class="headerlink" href="#using-questions-from-a-public-collection" title="Link to this heading">¶</a></h3>
+<p>After adding questions from a public collection to your library, either by subscribing to the collection or cloning individual assets, you can reuse them in future forms from the Formbuilder.</p>
+<p class="note">
+<strong>Note:</strong> Only questions that have been added to <strong>My Library</strong> can be inserted into your forms using the Formbuilder. 
+</p>
+<p>To use questions or question blocks from a public collection in your form:</p>
+<ol class="arabic simple">
+<li><p>Open the <a class="reference external" href="https://support.kobotoolbox.org/formbuilder.html">KoboToolbox Formbuilder</a>.</p></li>
+<li><p>Click <i class="k-icon-library"></i> <strong>Add from Library</strong> in the top right corner.</p></li>
+<li><p>Select the question or question block you want to add, then drag and drop it into the desired location in your form.</p></li>
+<li><p>If your question library contains many items, you can use the <strong>Search</strong> function to quickly locate the question or block you need.</p></li>
+</ol>
+<p><img alt="Add question from library" src="_images/add_from_library.png" /></p>
+<p class="note">
+<strong>Note:</strong> When you add a question from your question library to a form, any changes you make in the form will not affect the original version saved in the library.
+</p>
 </section>
-<section id="c-creating-a-public-collection">
-<h3>c) Creating a Public Collection<a class="headerlink" href="#c-creating-a-public-collection" title="Link to this heading">¶</a></h3>
-<p>While you’re in the <strong>Library</strong> section of <strong>KoboToolbox</strong>, click on the <strong>NEW</strong>
-button and a modal with four options will be displayed, as seen below.</p>
-<p><img alt="Create Library Item" src="_images/create_library_item.png" /></p>
-<p>Tap the icon labeled <strong>Collection</strong>. You will then be prompted to enter details,
-including a name for the new collection,which is required. Once complete, click
-on <strong>CREATE</strong> to continue.</p>
-<p><img alt="Collection Details" src="_images/collection_details.png" /></p>
-<p>If you intend to make the collection public, an <em>Organization</em> and <em>Primary
-Sector</em> must also be defined.</p>
-<p>Once the collection has been created, you will see the following options:</p>
+<section id="using-templates-from-a-public-collection">
+<h3>Using templates from a public collection<a class="headerlink" href="#using-templates-from-a-public-collection" title="Link to this heading">¶</a></h3>
+<p>You can also use a template from a public collection to create a new form project, either from your question library or from the <strong>Projects home page.</strong></p>
+<p><strong>From the question library</strong></p>
+<p>You can create a project from a template in <i class="k-icon-library"></i> <strong>My Library</strong> if you have subscribed to the collection, or directly from <i class="k-icon-library-public"></i> <strong>Public Collections</strong>:</p>
+<ol class="arabic simple">
+<li><p>Open the public collection.</p></li>
+<li><p>Hover over the template.</p></li>
+<li><p>Click <i class="k-icon-projects"></i> <strong>Create project</strong> on the right.</p></li>
+<li><p>Enter a name for the new project.</p></li>
+</ol>
+<p><img alt="Create a project from collection" src="_images/create_project.png" /></p>
+<p class="note">
+<strong>Note:</strong> You can create a project from a template in a public collection even if you have not subscribed to the public collection.
+</p>
+<p><strong>From the Projects home page</strong></p>
+<p>You can also create a project from a public template directly from the <i class="k-icon-projects"></i> <strong>Projects home page</strong>, provided you have subscribed to the collection:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>NEW</strong> and select <i class="k-icon-template"></i> <strong>Use a template.</strong></p></li>
+<li><p>Choose a saved template and click <strong>Next.</strong></p></li>
+<li><p>Enter the project details and click <strong>Create project.</strong></p></li>
+</ol>
+<p>In both cases, a new KoboToolbox project will be created that you can edit and deploy.</p>
+<p class="note">
+<strong>Note:</strong> Editing a project created from a template does not modify the original template.
+</p>
+</section>
+</section>
+<section id="public-collections-advanced-search">
+<h2>Public collections advanced search<a class="headerlink" href="#public-collections-advanced-search" title="Link to this heading">¶</a></h2>
+<p>Within <strong>Public Collections</strong>, the search bar supports both simple and advanced queries. By default, if you enter a keyword without specifying a field, the system searches across multiple fields, including the name, owner username, description, question labels, tags, and UID. Searches are case-insensitive by default.</p>
+<p><img alt="Search public collections" src="_images/search.png" /></p>
+<section id="field-specific-advanced-search">
+<h3>Field-specific advanced search<a class="headerlink" href="#field-specific-advanced-search" title="Link to this heading">¶</a></h3>
+<p>If you want to narrow your results or search for specific fields within public collections, you can use the advanced search options described below.</p>
+<p>Advanced search uses a structured format: <code class="docutils literal notranslate"><span class="pre">field__subfield__operator:value</span></code>.</p>
 <ul class="simple">
-<li><p>Make public, Modify details, Edit tags</p></li>
-<li><p>Share the collection with specific users</p></li>
-<li><p>Delete the collection</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">field</span></code> or <code class="docutils literal notranslate"><span class="pre">field__subfield</span></code> prefix defines the field you are searching (e.g., the collection name).</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">operator</span></code> suffix defines how the value is matched.</p></li>
 </ul>
-<p><img alt="Actions" src="_images/actions.gif" /></p>
-<p>Start adding questions to the collection by moving them from the library. Hover
-the cursor over the library assets then tap the three buttons to access more
-options. You will see an option to move the questions to your collection.</p>
-<p><img alt="Move to Collection" src="_images/move_to_collection.gif" /></p>
+<p class="note">
+<strong>Note:</strong> Use a double underscore to separate each element.
+</p>
+<p>Examples of prefixes include:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Prefix</p></th>
+<th class="head text-left"><p>Field being searched</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>name</code></p></td>
+<td class="text-left"><p>Name of the survey, collection, question, block, or template</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>owner__username</code></p></td>
+<td class="text-left"><p>Username of the asset owner</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>settings__description</code></p></td>
+<td class="text-left"><p>Description field</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>summary</code></p></td>
+<td class="text-left"><p>Question labels and available languages</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>tags__name</code></p></td>
+<td class="text-left"><p>Assigned tags</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>uid</code></p></td>
+<td class="text-left"><p>Unique identifier (UID) of the object</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>settings__country__value</code></p></td>
+<td class="text-left"><p>Nested settings field, such as country value</p></td>
+</tr>
+</tbody>
+</table>
+<p>Examples of suffixes include:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Suffix</p></th>
+<th class="head text-left"><p>Value type</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>exact</code></p></td>
+<td class="text-left"><p>Text</p></td>
+<td class="text-left"><p>Exact match (case-sensitive)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>contains</code></p></td>
+<td class="text-left"><p>Text</p></td>
+<td class="text-left"><p>Field contains the value (case-sensitive)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>startswith</code></p></td>
+<td class="text-left"><p>Text</p></td>
+<td class="text-left"><p>Field starts with the value (case-sensitive)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>iexact</code></p></td>
+<td class="text-left"><p>Text</p></td>
+<td class="text-left"><p>Exact match (case-insensitive)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>icontains</code></p></td>
+<td class="text-left"><p>Text</p></td>
+<td class="text-left"><p>Contains match (case-sensitive)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>istartswith</code></p></td>
+<td class="text-left"><p>Text</p></td>
+<td class="text-left"><p>Starts with match (case-sensitive)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>exact</code></p></td>
+<td class="text-left"><p>Numeric</p></td>
+<td class="text-left"><p>Exact number</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>lt</code></p></td>
+<td class="text-left"><p>Numeric</p></td>
+<td class="text-left"><p>Less than</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>lte</code></p></td>
+<td class="text-left"><p>Numeric</p></td>
+<td class="text-left"><p>Less than or equal to</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>gt</code></p></td>
+<td class="text-left"><p>Numeric</p></td>
+<td class="text-left"><p>Greater than</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>gte</code></p></td>
+<td class="text-left"><p>Numeric</p></td>
+<td class="text-left"><p>Greater than or equal to</p></td>
+</tr>
+</tbody>
+</table>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">owner__username__icontains:team</span></code> searches for public collections where the owner’s username contains the word “team”, regardless of capitalization.</p>
+<p class="note">
+<strong>Note:</strong> If no suffix is added, <code>exact</code> is used by default. Adding <code>i</code> before a text operator makes it case-insensitive.
+</p>
 </section>
+<section id="combining-conditions">
+<h3>Combining conditions<a class="headerlink" href="#combining-conditions" title="Link to this heading">¶</a></h3>
+<p>You can combine filters using <strong>AND</strong>, <strong>OR</strong>, and <strong>NOT</strong> for more precise results.</p>
+<p>For example, <code class="docutils literal notranslate"><span class="pre">owner__username__icontains:team</span> <span class="pre">AND</span> <span class="pre">tags__name__icontains:baseline</span></code> searches within the owner username field and the tags field.</p>
 </section>
-<section id="related-articles">
-<h2>Related Articles<a class="headerlink" href="#related-articles" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="question_library.html"><span class="std std-doc">Using the question library</span></a></p></li>
-<li><p><a class="reference internal" href="public_collections_advanced_search.html"><span class="std std-doc">Using advanced search within public collections</span></a></p></li>
-<li><p><a class="reference internal" href="library_locking.html"><span class="std std-doc">Library locking</span></a></p></li>
-</ul>
 </section>
 </section>
 
@@ -236,7 +344,7 @@ options. You will see an option to move the questions to your collection.</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Using Public Collections"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Public collections in the KoboToolbox library"
               class="feedback-button"
               target="_blank"
             >
@@ -267,44 +375,35 @@ options. You will see an option to move the questions to your collection.</p>
 <p class="caption" role="heading"><span class="caption-text">Using the Formbuilder</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Getting started with the KoboToolbox Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Text and Note question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">“Select One” and “Select Many” question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Acknowledge question type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Number, Decimal, and Range Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Media question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Barcode/QR code question type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">GPS Question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Calculate Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Calculate Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Signature Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix Response Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Including Responses Inside Another Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Using the Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Adding questions in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Text questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Select questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Numeric questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Media questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">GPS questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Note questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question options in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Adding validation criteria in the Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Adding calculations in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding cascading select questions in the Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Using Public Collections</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#purpose-of-the-public-collections">Purpose of the Public Collections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#locating-the-public-collections">Locating the Public Collections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#using-the-public-collections">Using the Public Collections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#related-articles">Related Articles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Selecting options from an external file in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Dynamic data attachments using the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the KoboToolbox question library</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Public collections in the KoboToolbox library</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-public-collections">Accessing public collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-public-collection">Creating a public collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-public-collections">Using public collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#public-collections-advanced-search">Public collections advanced search</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Public Collections Advanced Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using HXL Tags</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Using XLSForm</span></p>
 <ul>
@@ -321,6 +420,7 @@ options. You will see an option to move the questions to your collection.</p>
 <li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to an XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introduction to form logic in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Using functions in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Using regular expressions in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Adding skip logic in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Adding constraints in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Adding required logic in XLSForm</a></li>
@@ -330,10 +430,11 @@ options. You will see an option to move the questions to your collection.</p>
 <li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Styling your forms using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Form metadata in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pulling data from an external CSV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Selecting options from a map</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking with XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importing library collections using XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
@@ -404,8 +505,6 @@ options. You will see an option to move the questions to your collection.</p>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Creating Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Lowering the File Size of Collected Media</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Adding Calculations and Constraints in a Matrix Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Adding Skip Logic to a Matrix Question</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
@@ -473,7 +572,7 @@ options. You will see an option to move the questions to your collection.</p>
   <script>
     window.docs = {
       currentPagename: "using_public_collections",
-      currentTitle: "Using Public Collections",
+      currentTitle: "Public collections in the KoboToolbox library",
       currentUrl: ("index.html").replace("index.html", "using_public_collections.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

@@ -1,5 +1,5 @@
 # Adding validation criteria in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/07c78bced9b862829cfd51df7f565b216d166899/source/validation_criteria.md" class="reference">25 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/validation_criteria.md" class="reference">20 Mar 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/ya9usVpEo9Q?si=-rDzXcCRazcY0Bws" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -49,7 +49,7 @@ In XLSForm syntax, a dot `.` is used to refer to the current question, and `${qu
 
 
 <p class="note">
-    For more information on XLSForm code and operators, see <a href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
+    For more information on XLSForm code and operators, see <a href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a>.
 </p>
 
 ## Error message

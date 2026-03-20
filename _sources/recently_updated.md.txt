@@ -1,13 +1,13 @@
 # Recently updated Support Articles
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recently_updated.md" class="reference">28 Oct 2025</a>
 
-1. [Setting up two-factor authentication in KoboToolbox](two_factor_authentication.md) (19 Mar 2026)
-1. [Using XLSForm with KoboToolbox](xlsform_with_kobotoolbox.md) (6 Mar 2026)
-1. [Adding calculations in XLSForm](calculations_xls.md) (3 Mar 2026)
-1. [Pulling data from an external CSV](pull_data_kobotoolbox.md) (19 Feb 2026)
-1. [Dynamic data attachments](dynamic_data_attachment.md) (19 Feb 2026)
-1. [Managing projects in KoboToolbox](managing_projects.md) (19 Feb 2026)
-1. [Glossary of KoboToolbox terms](glossary.md) (17 Feb 2026)
-1. [Adding constraints in XLSForm](constraints_xls.md) (15 Feb 2026)
-1. [Using functions in XLSForm](functions_xls.md) (15 Feb 2026)
-1. [Question types in XLSForm](question_types_xls.md) (15 Feb 2026)
+1. [Text questions in KoboToolbox](text_questions.md) (20 Mar 2026)
+1. [Getting started with the KoboToolbox Formbuilder](formbuilder.md) (20 Mar 2026)
+1. [Project files and media overview](project_files_media.md) (20 Mar 2026)
+1. [Selecting options from an external file in the Formbuilder](external_file.md) (20 Mar 2026)
+1. [Viewing and validating your data](viewing_validating_data.md) (20 Mar 2026)
+1. [Styling your forms using XLSForm](form_style_xls.md) (20 Mar 2026)
+1. [Adding skip logic in the Formbuilder](skip_logic.md) (20 Mar 2026)
+1. [Using the KoboToolbox question library](question_library.md) (20 Mar 2026)
+1. [Adding skip logic in XLSForm](skip_logic_xls.md) (20 Mar 2026)
+1. [Grouping questions in XLSForm](grouping_questions_xls.md) (20 Mar 2026)

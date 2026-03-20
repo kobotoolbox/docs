@@ -1,92 +1,85 @@
-# Question Matrix Response Type
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/matrix_response.md" class="reference">29 Jul 2025</a>
+# Creating a question matrix in the Formbuilder
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/matrix_response.md" class="reference">20 Mar 2026</a>
 
+The **Question Matrix** question type allows you to create a structured table of questions, where each column represents a question and each row represents an item. Instead of creating multiple separate questions, you can group them into a single matrix to make your form more organized and efficient for data collection.
 
-The Question Matrix response type allows users to create a group of questions
-that display in a matrix format, whereby each cell within the matrix represents
-a separate question. To use this response type, define the number of rows and
-columns you want in your matrix set and give each row and column a label or
-name. Each column can be a different question type. In the above screenshot, the
-first two columns are select-one questions, and the third column is a number
-question.
+This article explains how to add and configure a question matrix in the Formbuilder, how it appears during data collection, and how to apply advanced logic using XLSForm when needed.
 
-![image](/images/matrix_response/matrix_example.png)
+<p class="note">
+<strong>Note:</strong> Question matrices are supported only in <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> with the <a href="https://support.kobotoolbox.org/styling_forms.html">Grid theme</a> enabled. They are not supported in KoboCollect.
+</p>
 
-<p class="note">This response type <strong>only works when using Enketo</strong>, utilizing the <strong>Grid-theme layout</strong>. Forms are set to single page layout by default -- to change it, find the "layout" button in the formbuilder toolbar, select "grid-theme", save this change, and redeploy your form to make these changes live.</p>
+## Adding a question matrix in the Formbuilder
 
-<p class='note'>Enketo supports only up to <code>10</code> columns in versions less than <code>2.8.0</code>, up to <code>13</code> including and after <code>2.8.0</code>.</p>
+To add a question matrix to your form:
 
-## Create a Question Matrix in the Formbuilder
+1. Click the <i class="k-icon-plus"></i> button.
+2. Enter an overarching instruction as the question label.
+3. Click **+ ADD QUESTION.**
+4. Choose the <i class="k-icon-qt-question-matrix"></i> **Question Matrix** question type. 
 
-1. Go to your formbuilder and click on “Add question”
-2. Select ‘Question Matrix’
+![Question matrix](images/matrix_response/matrix.png)
 
-    ![image](/images/matrix_response/question_matrix.png)
+### Configuring the question matrix
 
-3. Click on the gear icon in each column to set the question type.
+In your question matrix:
 
-    ![image](/images/matrix_response/question_type.png)
+- Each **column** represents a separate question that will be repeated for every item listed in the rows.
+- Each **row** represents an item that the column questions will be asked about.
 
-4. Select the question type
+![Question matrix example](images/matrix_response/example.png)
 
-5. Add the Column label & response label
+To configure your question matrix, for each column:
 
-    ![image](/images/matrix_response/label_response.png)
+1. Click the <i class="k-icon-settings"></i> **Settings** icon.
+2. Select the **Response Type.**
+    -  Available types include **Select One**, **Select Many**, **Text**, and **Number.**
+    -  You can use different question types within the same matrix.
+3. Enter a **Question Label.**
+4. Enter a **Data Column Suffix.** This suffix will be appended to the variable names for each item in the rows and must follow the [standard rules for data column names](https://support.kobotoolbox.org/question_options.html#data-column-name).
+5. If using **Select One** or **Select Many**, add the answer choices and their [XML values](https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices).
+6. Set the question as [required](https://support.kobotoolbox.org/question_options.html#mandatory-response), if needed.
+7. To add another column, click the <i class="k-icon-plus"></i> icon to the right of the last column.
 
-6. Select the gear icon within ‘Row’ to define the row label
+<p class="note">
+<strong>Note:</strong> You can add up to 12 columns to a question matrix. However, each additional column reduces the width available for the others, which may affect readability on smaller screens.
+</p>
 
-    ![image](/images/matrix_response/row.png)
+To configure each row:
 
-## Create a Question Matrix in XLSForm
+1. Click the <i class="k-icon-settings"></i> **Settings** icon.
+2. Enter a **Label** for the item.
+3. Enter a **Data Column Prefix.** This prefix will be added to the variable names for all column questions related to this item and must follow the [standard rules for data column names](https://support.kobotoolbox.org/question_options.html#data-column-name).
+4. To add another row, click the <i class="k-icon-plus"></i> icon below the last row.
 
-Alternatively, you can also build a Matrix Question in a XLSForm by following
-the instructions as outlined in the images below:
+## Collecting data from a question matrix
 
-**survey sheet**
+Question matrices are supported only in Enketo web forms and require the [Grid theme](https://support.kobotoolbox.org/styling_forms.html) to be enabled. They are not supported in KoboCollect.
 
-| type             | name | label                                | required | `kobo--matrix_list` |
-| :--------------- | :--- | :----------------------------------- | :------- | :----------------   |
-| begin_kobomatrix | M1   | Items                                |          | assets              |
-| select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                     |
-| integer          | Q2   | Q2. Number of assets                 | TRUE     |                     |
-| end_kobomatrix   |      |                                      |          |                     |
-| survey |
+The question matrix is displayed as a table, with each column representing a question and each row representing an item.
 
-**choices sheet**
+![Question matrix Enketo](images/matrix_response/enketo.png)
 
-| list_name | name | label |
-| :-------- | :--- | :---- |
-| assets    | car  | Car   |
-| assets    | bike | Bike  |
-| assets    | tv   | TV    |
-| yn        | yes  | Yes   |
-| yn        | no   | No    |
-| choices |
+<p class="note">
+<strong>Note:</strong> When exporting data or viewing submissions in the data table, question matrix variables are converted to standard XLSForm structure. Each cell in the matrix becomes an individual variable, and the final variable names are created by combining the row’s <strong>data column prefix</strong> and the column’s <strong>data column suffix</strong>. As a result, the exported variable names may differ slightly from how the matrix appears in the Formbuilder.
+</p>
 
-**settings sheet**
+## Advanced question matrices
 
-| style                        |
-| :--------------------------- |
-| theme-grid no-text-transform |
-| settings |
+You cannot add validation criteria, calculations, or certain advanced question options, such as repeating a question matrix or defining a custom constraint message, directly within a question matrix **using the Formbuilder.**
 
-<p class="note">This method uses <code>begin_kobomatrix</code>,
-<code>end_kobomatrix</code> and <code>kobo--matrix_list</code>.</p>
+To apply these settings, [download your form](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) as an XLSForm and add [constraints](https://support.kobotoolbox.org/constraints_xls.html), [calculations](https://support.kobotoolbox.org/calculations_xls.html), and other [question options](https://support.kobotoolbox.org/question_options_xls.html) in the XLSForm directly.
 
-Following the steps above, you should see the question matrix shown in the
-screenshot below (In [Enketo](data_through_webforms.md) only):
+<p class="note">
+For an example of adding constraints and calculations to a question matrix, see this <a href="https://support.kobotoolbox.org/_static/files/calculations_constraints_matrix/calculations_constraints_matrix.xlsx">sample XLSForm</a>. For an example of repeating a question matrix as a repeat group, see this <a href="https://support.kobotoolbox.org/_static/files/calculations_constraints_matrix/repeating_matrix_question.xlsx">sample XLSForm</a>.
+</p>
 
-![image](/images/matrix_response/preview.png)
+### Adding skip logic to a question matrix
 
-It is also possible to include `relevant` and `constraint` conditions within the
-matrix as follows:
+Similarly, skip logic cannot be added directly to a question matrix in the Formbuilder. However, you can [download your form](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) as an XLSForm and add skip logic in the XLSForm directly.
 
-**survey sheet**
+When exported to XLSForm, a question matrix is structured as a group of questions using [w-values](https://support.kobotoolbox.org/form_style_xls.html#setting-up-an-xlsform-for-theme-grid) from the Grid theme. You can [apply skip logic](https://support.kobotoolbox.org/skip_logic_xls.html) to the entire matrix by adding it to the entire group, or apply it to individual rows within the matrix.
 
-| type             | name | label                                | required | `kobo--matrix_list` | relevant      | constraint |
-| :--------------- | :--- | :----------------------------------- | :------- | :----------------   | :------------ | :--------- |
-| begin_kobomatrix | M1   | Items                                |          | assets              |               |            |
-| select_one yn    | Q1   | Q1. Which assets do you have at home | TRUE     |                     |               |            |
-| integer          | Q2   | Q2. Number of assets                 | TRUE     |                     | ${Q1} = 'yes' | . > 2      |
-| end_kobomatrix   |      |                                      |          |                     |               |            |
-| survey |
+Be aware that adding skip logic to individual cells may affect the visual layout of the matrix, as hidden questions can disrupt the table structure. To preserve the formatting, consider adding **Note** questions with skip logic that display a message in place of the hidden question, as done in this [sample XLSForm](https://support.kobotoolbox.org/_static/files/adding_skip_to_matrix/adding_skip_to_a_matrix_question.xls). This approach maintains the matrix layout while preventing input in specific cells.
+
+![Skip logic in question matrix](images/matrix_response/skip_matrix.png)

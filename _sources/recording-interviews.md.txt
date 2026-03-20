@@ -1,5 +1,5 @@
 ﻿# Recording interviews with background audio recording
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9bfb1ff3173b1066ec53b03456936b53cdd1a068/source/recording-interviews.md" class="reference">28 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/recording-interviews.md" class="reference">20 Mar 2026</a>
 
 Background audio recording **captures an entire interview in the background** while a form is open. The recording is stored as audio data within form submissions.
 
@@ -15,7 +15,7 @@ This article covers the following topics:
 - Managing background audio data
 
 <p class="note">
-<strong>Note:</strong> To learn about collecting short audio responses instead of a full background recording, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media question types</a>. 
+<strong>Note:</strong> To learn about collecting short audio responses instead of a full background recording, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a>. 
 </p>
 
 ## Enabling background audio recording in the Formbuilder
@@ -125,6 +125,6 @@ If a form with background audio recording is saved as a draft in <strong>KoboCol
 
 <details>
   <summary><strong>Unable to download large audio files</strong></summary>
-  If large or long audio files fail to download as Media Attachments (ZIP), see <a href="https://support.kobotoolbox.org/photo_download.html">Downloading photos and other media</a> for guidance on retrieving large media files.
+  If large or long audio files fail to download as Media Attachments (ZIP), see <a href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">Downloading media files</a> for guidance on retrieving large media files.
 </details>
 

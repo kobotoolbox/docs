@@ -1,5 +1,5 @@
 # Getting started with the KoboToolbox Formbuilder 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3603101b7e96b31f44788dcc0f9e72115c9a1c4b/source/formbuilder.md" class="reference">28 Aug 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/formbuilder.md" class="reference">20 Mar 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/PFL1_rBB5Q8?si=RkwB2XGHppAK-RRF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -38,7 +38,7 @@ To remove a question, click <i class="k-icon-trash"></i> **Delete Question** in 
 To access advanced question settings, click on <i class="k-icon-settings"></i> **Settings** in the question menu on the right. Here, you can add skip logic, validation criteria, guidance hints, and make a question required. 
 
 <p class="note">
-To learn more about question settings, see <a href="https://support.kobotoolbox.org/question_options.html">Using the question options</a>, <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>, and <a href="https://support.kobotoolbox.org/validation_criteria.html">Adding validation criteria in the Formbuilder</a>.
+To learn more about question settings, see <a href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a>, <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>, and <a href="https://support.kobotoolbox.org/validation_criteria.html">Adding validation criteria in the Formbuilder</a>.
 </p>
 
 ## Adding questions to the library

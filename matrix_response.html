@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Question Matrix Response Type &#8212; KoboToolbox  documentation</title>
+    <title>Creating a question matrix in the Formbuilder &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -25,8 +25,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Including Responses Inside Another Question" href="responses_inside_question.html" />
-    <link rel="prev" title="Signature Question Type" href="collecting_signatures.html" />
+    <link rel="next" title="Adding translations in KoboToolbox" href="language_dashboard.html" />
+    <link rel="prev" title="Grouping questions and repeating groups in the Formbuilder" href="group_repeat.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,195 +107,82 @@
 
         <section class="page__body" role="main">
           
-  <section id="question-matrix-response-type">
-<h1>Question Matrix Response Type<a class="headerlink" href="#question-matrix-response-type" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/matrix_response.md" class="reference">29 Jul 2025</a></p>
-<p>The Question Matrix response type allows users to create a group of questions
-that display in a matrix format, whereby each cell within the matrix represents
-a separate question. To use this response type, define the number of rows and
-columns you want in your matrix set and give each row and column a label or
-name. Each column can be a different question type. In the above screenshot, the
-first two columns are select-one questions, and the third column is a number
-question.</p>
-<p><img alt="image" src="_images/matrix_example.png" /></p>
-<p class="note">This response type <strong>only works when using Enketo</strong>, utilizing the <strong>Grid-theme layout</strong>. Forms are set to single page layout by default -- to change it, find the "layout" button in the formbuilder toolbar, select "grid-theme", save this change, and redeploy your form to make these changes live.</p>
-<p class='note'>Enketo supports only up to <code>10</code> columns in versions less than <code>2.8.0</code>, up to <code>13</code> including and after <code>2.8.0</code>.</p>
-<section id="create-a-question-matrix-in-the-formbuilder">
-<h2>Create a Question Matrix in the Formbuilder<a class="headerlink" href="#create-a-question-matrix-in-the-formbuilder" title="Link to this heading">¶</a></h2>
-<ol class="arabic">
-<li><p>Go to your formbuilder and click on “Add question”</p></li>
-<li><p>Select ‘Question Matrix’</p>
-<p><img alt="image" src="_images/question_matrix.png" /></p>
+  <section id="creating-a-question-matrix-in-the-formbuilder">
+<h1>Creating a question matrix in the Formbuilder<a class="headerlink" href="#creating-a-question-matrix-in-the-formbuilder" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/matrix_response.md" class="reference">20 Mar 2026</a></p>
+<p>The <strong>Question Matrix</strong> question type allows you to create a structured table of questions, where each column represents a question and each row represents an item. Instead of creating multiple separate questions, you can group them into a single matrix to make your form more organized and efficient for data collection.</p>
+<p>This article explains how to add and configure a question matrix in the Formbuilder, how it appears during data collection, and how to apply advanced logic using XLSForm when needed.</p>
+<p class="note">
+<strong>Note:</strong> Question matrices are supported only in <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> with the <a href="https://support.kobotoolbox.org/styling_forms.html">Grid theme</a> enabled. They are not supported in KoboCollect.
+</p>
+<section id="adding-a-question-matrix-in-the-formbuilder">
+<h2>Adding a question matrix in the Formbuilder<a class="headerlink" href="#adding-a-question-matrix-in-the-formbuilder" title="Link to this heading">¶</a></h2>
+<p>To add a question matrix to your form:</p>
+<ol class="arabic simple">
+<li><p>Click the <i class="k-icon-plus"></i> button.</p></li>
+<li><p>Enter an overarching instruction as the question label.</p></li>
+<li><p>Click <strong>+ ADD QUESTION.</strong></p></li>
+<li><p>Choose the <i class="k-icon-qt-question-matrix"></i> <strong>Question Matrix</strong> question type.</p></li>
+</ol>
+<p><img alt="Question matrix" src="_images/matrix.png" /></p>
+<section id="configuring-the-question-matrix">
+<h3>Configuring the question matrix<a class="headerlink" href="#configuring-the-question-matrix" title="Link to this heading">¶</a></h3>
+<p>In your question matrix:</p>
+<ul class="simple">
+<li><p>Each <strong>column</strong> represents a separate question that will be repeated for every item listed in the rows.</p></li>
+<li><p>Each <strong>row</strong> represents an item that the column questions will be asked about.</p></li>
+</ul>
+<p><img alt="Question matrix example" src="_images/example1.png" /></p>
+<p>To configure your question matrix, for each column:</p>
+<ol class="arabic simple">
+<li><p>Click the <i class="k-icon-settings"></i> <strong>Settings</strong> icon.</p></li>
+<li><p>Select the <strong>Response Type.</strong></p>
+<ul class="simple">
+<li><p>Available types include <strong>Select One</strong>, <strong>Select Many</strong>, <strong>Text</strong>, and <strong>Number.</strong></p></li>
+<li><p>You can use different question types within the same matrix.</p></li>
+</ul>
 </li>
-<li><p>Click on the gear icon in each column to set the question type.</p>
-<p><img alt="image" src="_images/question_type.png" /></p>
-</li>
-<li><p>Select the question type</p></li>
-<li><p>Add the Column label &amp; response label</p>
-<p><img alt="image" src="_images/label_response.png" /></p>
-</li>
-<li><p>Select the gear icon within ‘Row’ to define the row label</p>
-<p><img alt="image" src="_images/row.png" /></p>
-</li>
+<li><p>Enter a <strong>Question Label.</strong></p></li>
+<li><p>Enter a <strong>Data Column Suffix.</strong> This suffix will be appended to the variable names for each item in the rows and must follow the <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">standard rules for data column names</a>.</p></li>
+<li><p>If using <strong>Select One</strong> or <strong>Select Many</strong>, add the answer choices and their <a class="reference external" href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML values</a>.</p></li>
+<li><p>Set the question as <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#mandatory-response">required</a>, if needed.</p></li>
+<li><p>To add another column, click the <i class="k-icon-plus"></i> icon to the right of the last column.</p></li>
+</ol>
+<p class="note">
+<strong>Note:</strong> You can add up to 12 columns to a question matrix. However, each additional column reduces the width available for the others, which may affect readability on smaller screens.
+</p>
+<p>To configure each row:</p>
+<ol class="arabic simple">
+<li><p>Click the <i class="k-icon-settings"></i> <strong>Settings</strong> icon.</p></li>
+<li><p>Enter a <strong>Label</strong> for the item.</p></li>
+<li><p>Enter a <strong>Data Column Prefix.</strong> This prefix will be added to the variable names for all column questions related to this item and must follow the <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">standard rules for data column names</a>.</p></li>
+<li><p>To add another row, click the <i class="k-icon-plus"></i> icon below the last row.</p></li>
 </ol>
 </section>
-<section id="create-a-question-matrix-in-xlsform">
-<h2>Create a Question Matrix in XLSForm<a class="headerlink" href="#create-a-question-matrix-in-xlsform" title="Link to this heading">¶</a></h2>
-<p>Alternatively, you can also build a Matrix Question in a XLSForm by following
-the instructions as outlined in the images below:</p>
-<p><strong>survey sheet</strong></p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-<th class="head text-left"><p>required</p></th>
-<th class="head text-left"><p><code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>begin_kobomatrix</p></td>
-<td class="text-left"><p>M1</p></td>
-<td class="text-left"><p>Items</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>assets</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>select_one yn</p></td>
-<td class="text-left"><p>Q1</p></td>
-<td class="text-left"><p>Q1. Which assets do you have at home</p></td>
-<td class="text-left"><p>TRUE</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>Q2</p></td>
-<td class="text-left"><p>Q2. Number of assets</p></td>
-<td class="text-left"><p>TRUE</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>end_kobomatrix</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>choices sheet</strong></p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>list_name</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>assets</p></td>
-<td class="text-left"><p>car</p></td>
-<td class="text-left"><p>Car</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>assets</p></td>
-<td class="text-left"><p>bike</p></td>
-<td class="text-left"><p>Bike</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>assets</p></td>
-<td class="text-left"><p>tv</p></td>
-<td class="text-left"><p>TV</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>yn</p></td>
-<td class="text-left"><p>yes</p></td>
-<td class="text-left"><p>Yes</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>yn</p></td>
-<td class="text-left"><p>no</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>choices</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>settings sheet</strong></p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>style</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>theme-grid no-text-transform</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>settings</p></td>
-</tr>
-</tbody>
-</table>
-<p class="note">This method uses <code>begin_kobomatrix</code>,
-<code>end_kobomatrix</code> and <code>kobo--matrix_list</code>.</p>
-<p>Following the steps above, you should see the question matrix shown in the
-screenshot below (In <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">Enketo</span></a> only):</p>
-<p><img alt="image" src="_images/preview.png" /></p>
-<p>It is also possible to include <code class="docutils literal notranslate"><span class="pre">relevant</span></code> and <code class="docutils literal notranslate"><span class="pre">constraint</span></code> conditions within the
-matrix as follows:</p>
-<p><strong>survey sheet</strong></p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-<th class="head text-left"><p>required</p></th>
-<th class="head text-left"><p><code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code></p></th>
-<th class="head text-left"><p>relevant</p></th>
-<th class="head text-left"><p>constraint</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>begin_kobomatrix</p></td>
-<td class="text-left"><p>M1</p></td>
-<td class="text-left"><p>Items</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>assets</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>select_one yn</p></td>
-<td class="text-left"><p>Q1</p></td>
-<td class="text-left"><p>Q1. Which assets do you have at home</p></td>
-<td class="text-left"><p>TRUE</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>Q2</p></td>
-<td class="text-left"><p>Q2. Number of assets</p></td>
-<td class="text-left"><p>TRUE</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>${Q1} = ‘yes’</p></td>
-<td class="text-left"><p>. &gt; 2</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>end_kobomatrix</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
+</section>
+<section id="collecting-data-from-a-question-matrix">
+<h2>Collecting data from a question matrix<a class="headerlink" href="#collecting-data-from-a-question-matrix" title="Link to this heading">¶</a></h2>
+<p>Question matrices are supported only in Enketo web forms and require the <a class="reference external" href="https://support.kobotoolbox.org/styling_forms.html">Grid theme</a> to be enabled. They are not supported in KoboCollect.</p>
+<p>The question matrix is displayed as a table, with each column representing a question and each row representing an item.</p>
+<p><img alt="Question matrix Enketo" src="_images/enketo.png" /></p>
+<p class="note">
+<strong>Note:</strong> When exporting data or viewing submissions in the data table, question matrix variables are converted to standard XLSForm structure. Each cell in the matrix becomes an individual variable, and the final variable names are created by combining the row’s <strong>data column prefix</strong> and the column’s <strong>data column suffix</strong>. As a result, the exported variable names may differ slightly from how the matrix appears in the Formbuilder.
+</p>
+</section>
+<section id="advanced-question-matrices">
+<h2>Advanced question matrices<a class="headerlink" href="#advanced-question-matrices" title="Link to this heading">¶</a></h2>
+<p>You cannot add validation criteria, calculations, or certain advanced question options, such as repeating a question matrix or defining a custom constraint message, directly within a question matrix <strong>using the Formbuilder.</strong></p>
+<p>To apply these settings, <a class="reference external" href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox">download your form</a> as an XLSForm and add <a class="reference external" href="https://support.kobotoolbox.org/constraints_xls.html">constraints</a>, <a class="reference external" href="https://support.kobotoolbox.org/calculations_xls.html">calculations</a>, and other <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html">question options</a> in the XLSForm directly.</p>
+<p class="note">
+For an example of adding constraints and calculations to a question matrix, see this <a href="https://support.kobotoolbox.org/_static/files/calculations_constraints_matrix/calculations_constraints_matrix.xlsx">sample XLSForm</a>. For an example of repeating a question matrix as a repeat group, see this <a href="https://support.kobotoolbox.org/_static/files/calculations_constraints_matrix/repeating_matrix_question.xlsx">sample XLSForm</a>.
+</p>
+<section id="adding-skip-logic-to-a-question-matrix">
+<h3>Adding skip logic to a question matrix<a class="headerlink" href="#adding-skip-logic-to-a-question-matrix" title="Link to this heading">¶</a></h3>
+<p>Similarly, skip logic cannot be added directly to a question matrix in the Formbuilder. However, you can <a class="reference external" href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox">download your form</a> as an XLSForm and add skip logic in the XLSForm directly.</p>
+<p>When exported to XLSForm, a question matrix is structured as a group of questions using <a class="reference external" href="https://support.kobotoolbox.org/form_style_xls.html#setting-up-an-xlsform-for-theme-grid">w-values</a> from the Grid theme. You can <a class="reference external" href="https://support.kobotoolbox.org/skip_logic_xls.html">apply skip logic</a> to the entire matrix by adding it to the entire group, or apply it to individual rows within the matrix.</p>
+<p>Be aware that adding skip logic to individual cells may affect the visual layout of the matrix, as hidden questions can disrupt the table structure. To preserve the formatting, consider adding <strong>Note</strong> questions with skip logic that display a message in place of the hidden question, as done in this <a class="reference external" href="https://support.kobotoolbox.org/_static/files/adding_skip_to_matrix/adding_skip_to_a_matrix_question.xls">sample XLSForm</a>. This approach maintains the matrix layout while preventing input in specific cells.</p>
+<p><img alt="Skip logic in question matrix" src="_images/skip_matrix.png" /></p>
+</section>
 </section>
 </section>
 
@@ -315,7 +202,7 @@ matrix as follows:</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Question Matrix Response Type"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Creating a question matrix in the Formbuilder"
               class="feedback-button"
               target="_blank"
             >
@@ -346,42 +233,34 @@ matrix as follows:</p>
 <p class="caption" role="heading"><span class="caption-text">Using the Formbuilder</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Getting started with the KoboToolbox Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Text and Note question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">“Select One” and “Select Many” question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Acknowledge question type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Number, Decimal, and Range Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Media question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Barcode/QR code question type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Select One or Many From External File Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">GPS Question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Calculate Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Calculate Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Signature Question Type</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Question Matrix Response Type</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#create-a-question-matrix-in-the-formbuilder">Create a Question Matrix in the Formbuilder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-a-question-matrix-in-xlsform">Create a Question Matrix in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Adding questions in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Text questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Select questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Numeric questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Media questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">GPS questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Note questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question options in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Creating a question matrix in the Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#adding-a-question-matrix-in-the-formbuilder">Adding a question matrix in the Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collecting-data-from-a-question-matrix">Collecting data from a question matrix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-question-matrices">Advanced question matrices</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Including Responses Inside Another Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Using the Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Adding validation criteria in the Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Adding calculations in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding cascading select questions in the Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Using Public Collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Public Collections Advanced Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using HXL Tags</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Selecting options from an external file in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Dynamic data attachments using the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the KoboToolbox question library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Public collections in the KoboToolbox library</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Using XLSForm</span></p>
 <ul>
@@ -398,6 +277,7 @@ matrix as follows:</p>
 <li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to an XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introduction to form logic in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Using functions in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Using regular expressions in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Adding skip logic in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Adding constraints in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Adding required logic in XLSForm</a></li>
@@ -407,10 +287,11 @@ matrix as follows:</p>
 <li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Styling your forms using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Form metadata in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pulling data from an external CSV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Selecting options from a map</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking with XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importing library collections using XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
@@ -481,8 +362,6 @@ matrix as follows:</p>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Creating Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Lowering the File Size of Collected Media</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Adding Calculations and Constraints in a Matrix Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Adding Skip Logic to a Matrix Question</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
@@ -550,7 +429,7 @@ matrix as follows:</p>
   <script>
     window.docs = {
       currentPagename: "matrix_response",
-      currentTitle: "Question Matrix Response Type",
+      currentTitle: "Creating a question matrix in the Formbuilder",
       currentUrl: ("index.html").replace("index.html", "matrix_response.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

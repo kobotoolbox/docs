@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Select One or Many From External File Question Type &#8212; KoboToolbox  documentation</title>
+    <title>Selecting options from an external file in the Formbuilder &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -25,8 +25,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="GPS Question types" href="gps_questions.html" />
-    <link rel="prev" title="Rating vs Ranking Question Types" href="rating_ranking.html" />
+    <link rel="next" title="Dynamic data attachments using the Formbuilder" href="dynamic_data_attachment_formbuilder.html" />
+    <link rel="prev" title="Adding cascading select questions in the Formbuilder" href="cascading_select.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,135 +107,84 @@
 
         <section class="page__body" role="main">
           
-  <section id="select-one-or-many-from-external-file-question-type">
-<h1>Select One or Many From External File Question Type<a class="headerlink" href="#select-one-or-many-from-external-file-question-type" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/87ff8377b846dacb801191e0b619126a563040a9/source/external_file.md" class="reference">28 Aug 2025</a></p>
-<p>In some cases, it may be desirable to host a list of choice options in an
-external file, rather than directly in the project XLSForm. For example, a long
-list of choices (e.g. hundreds or thousands) could slow down the loading and
-navigation of the form, or adding new choice options after data collection has
-begun could sometimes be troublesome.</p>
-<p class="note"> <b>Note:</b> This article covers steps for setting up Select One or Many From External File questions in XLSForm. To set up these questions in the Formbuilder, you must first upload the external choice file to KoboToolbox, in the <b>Media</b> tab of the <b>SETTINGS</b> page. Once the file has been uploaded, the Select One or Many From External File question types will appear in the Formbuilder. </p>
-<p><img alt="image" src="_images/select_from_file.png" /></p>
-<p>This article provides a detailed example and method for creating a <code class="docutils literal notranslate"><span class="pre">select_one</span></code>
-or <code class="docutils literal notranslate"><span class="pre">select_many</span></code> question type with the choice list in a separate, external
-file. Refer to the
-<a class="reference external" href="https://xlsform.org/en/#multiple-choice-from-file">XLSForm documentation</a> for
-more information.</p>
-<p><strong>1.</strong> In the XLSForm, the type should be either
-<code class="docutils literal notranslate"><span class="pre">select_one_from_file</span> <span class="pre">[filename]</span></code> or <code class="docutils literal notranslate"><span class="pre">select_multiple_from_file</span> <span class="pre">[filename]</span></code>:</p>
-<p class="note">The file-type can be either <code>CSV</code> or <code>XML</code></p>
-<p><strong>survey sheet</strong></p>
+  <section id="selecting-options-from-an-external-file-in-the-formbuilder">
+<h1>Selecting options from an external file in the Formbuilder<a class="headerlink" href="#selecting-options-from-an-external-file-in-the-formbuilder" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/external_file.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Select from file</strong> questions allow you to use a list of choice options stored in an external file instead of defining them directly in your form. There are two types:</p>
+<ul class="simple">
+<li><p><strong>Select One from File</strong> for selecting a single choice, and</p></li>
+<li><p><strong>Select Many from File</strong> for selecting multiple choices.</p></li>
+</ul>
+<p>Using a separate file for your choice list makes it easier to use and manage long lists in the Formbuilder. Supported file formats include CSV, XML, and GeoJSON.</p>
+<p>This article explains how to format your external file, upload it to KoboToolbox, and set up <strong>select from file</strong> questions in the Formbuilder.</p>
+<section id="formatting-external-choice-lists">
+<h2>Formatting external choice lists<a class="headerlink" href="#formatting-external-choice-lists" title="Link to this heading">¶</a></h2>
+<p>To get started, create your list of choices in a separate external file. The required structure of this file depends on the format you choose (CSV, XML, or GeoJSON). Use a separate file for each choice list.</p>
+<p class="note">
+To learn more about formatting XML or GeoJSON files, see <a href="https://xlsform.org/en/#multiple-choice-from-file">XLSForm</a> and <a href="https://docs.getodk.org/form-datasets/#building-selects-from-geojson-files">ODK</a> documentation. GeoJSON files are primarily used for <a href="https://support.kobotoolbox.org/select_from_map_xls.html">selecting options from a map</a>. 
+</p>
+<p>If you are using a CSV file for your option choices, it should contain at least two columns: <code class="docutils literal notranslate"><span class="pre">name</span></code> and <code class="docutils literal notranslate"><span class="pre">label</span></code>.</p>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">name</span></code> column represents the <a class="reference external" href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML value</a> for your option choice.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">label</span></code> column represents the choice label as it is displayed in your form.</p></li>
+</ul>
+<p><strong>External CSV file</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
+<tr class="row-odd"><th class="head text-left"><p>name</p></th>
 <th class="head text-left"><p>label</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>name</p></td>
-<td class="text-left"><p>What is your name?</p></td>
+<tr class="row-even"><td class="text-left"><p>option1</p></td>
+<td class="text-left"><p>Option 1</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>select_one sex</p></td>
-<td class="text-left"><p>sex</p></td>
-<td class="text-left"><p>What is your sex?</p></td>
+<tr class="row-odd"><td class="text-left"><p>option2</p></td>
+<td class="text-left"><p>Option 2</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>select_one_from_file fruits.csv</p></td>
-<td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>What is your favourite fruit?</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-even"><td class="text-left"><p>option3</p></td>
+<td class="text-left"><p>Option 3</p></td>
 </tr>
 </tbody>
 </table>
-<p><strong>choices sheet</strong></p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>list_name</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>sex</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Male</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>sex</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>Female</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>choices</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p class="note">The <code>fruits.csv</code> is the file name containing the choices for the question "What is your favorite fruit?".</p>
-<p><strong>2.</strong> Create a new <code class="docutils literal notranslate"><span class="pre">CSV</span></code> file and structure it the same as the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet
-in the XLSForm:</p>
-<p><strong>fruits.csv</strong></p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>list_name</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>1</p></td>
-<td class="text-left"><p>Apple</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>2</p></td>
-<td class="text-left"><p>Watermelon</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>3</p></td>
-<td class="text-left"><p>Orange</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>4</p></td>
-<td class="text-left"><p>Pear</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>5</p></td>
-<td class="text-left"><p>Cherry</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>6</p></td>
-<td class="text-left"><p>Strawberry</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>7</p></td>
-<td class="text-left"><p>Nectarine</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>8</p></td>
-<td class="text-left"><p>Grape</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>9</p></td>
-<td class="text-left"><p>Mango</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>10</p></td>
-<td class="text-left"><p>Blueberry</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>fruits</p></td>
-<td class="text-left"><p>11</p></td>
-<td class="text-left"><p>Pomegranate</p></td>
-</tr>
-</tbody>
-</table>
-<p><strong>3.</strong> Upload and deploy the XLSForm in KoboToolbox.</p>
-<p><strong>4.</strong> Upload the <code class="docutils literal notranslate"><span class="pre">CSV</span></code> file the same way you would
-<a class="reference internal" href="media.html"><span class="std std-doc">add a media file to the form</span></a></p>
+<p>If your file uses different names for the choice name and label, you can <a class="reference external" href="https://support.kobotoolbox.org/select_from_file_xls.html#configuring-choice-name-and-label-columns">specify this</a> by <a class="reference external" href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox">downloading your file as an XLSForm</a> and adding a <code class="docutils literal notranslate"><span class="pre">parameters</span></code> column.</p>
+<p class="note">
+<strong>Note:</strong> Use short, simple file names for your external files, avoiding spaces or special characters. The file name will be used to link questions to their choice lists. If you use multiple external files, make sure each one has a unique name, even if they use different file types.
+</p>
+</section>
+<section id="uploading-the-external-file-to-kobotoolbox">
+<h2>Uploading the external file to KoboToolbox<a class="headerlink" href="#uploading-the-external-file-to-kobotoolbox" title="Link to this heading">¶</a></h2>
+<p>Before creating a <strong>select from file</strong> question in the Formbuilder, you must upload the external file that contains your list of choices:</p>
+<ol class="arabic simple">
+<li><p>In KoboToolbox, navigate to the project <strong>SETTINGS</strong> page.</p></li>
+<li><p>In the <strong>Media</strong> tab, upload the external file. Ensure the file name matches exactly the file name specified in the XLSForm.</p></li>
+</ol>
+<p>To update your list of choices, edit the external file as needed, re-upload it to KoboToolbox, and redeploy your form.</p>
+<p><img alt="Upload media" src="_images/upload_media.png" /></p>
+<p class="note">
+  To learn more about uploading media files, see <a href="https://support.kobotoolbox.org/upload_media.html">Uploading media files to a project</a>.  
+</p>
+</section>
+<section id="setting-up-the-question-in-the-formbuilder">
+<h2>Setting up the question in the Formbuilder<a class="headerlink" href="#setting-up-the-question-in-the-formbuilder" title="Link to this heading">¶</a></h2>
+<p>After uploading your external CSV file to KoboToolbox, you can add a <strong>Select One from File</strong> or <strong>Select Many from File</strong> question in the Formbuilder.</p>
+<p>To add a select from file question:</p>
+<ol class="arabic simple">
+<li><p>Click the <i class="k-icon-plus"></i> button.</p></li>
+<li><p>Enter your question label.</p></li>
+<li><p>Click <strong>+ ADD QUESTION</strong>.</p></li>
+<li><p>Choose <i class="k-icon-qt-select-one-from-file"></i> <strong>Select One from File</strong> or <i class="k-icon-qt-select-many-from-file"></i> <strong>Select Many from File</strong> as the question type.</p></li>
+</ol>
+<p><img alt="Select questions" src="_images/select.png" /></p>
+<p class="note">
+<strong>Note:</strong> The <strong>Select One from File</strong> and <strong>Select Many from File</strong> question types only appear as options in the Formbuilder if an external choice file has been uploaded to KoboToolbox.
+</p>
+<p>If only one external file has been uploaded to your project, it will be automatically linked to the question. If multiple files have been uploaded, open the question <i class="k-icon-settings"></i> <strong>Settings</strong> and select the appropriate file from the <i class=""></i> <strong>Choices File</strong> dropdown menu.</p>
+<p><img alt="Choices file" src="_images/choices_file.png" /></p>
+<p class="note">
+To learn how to set up select from file questions in XLSForm and for additional troubleshooting support, see <a href="https://support.kobotoolbox.org/select_from_file_xls.html#">Selecting options from an external file in XLSForm</a>.
+</p>
+</section>
 </section>
 
 
@@ -254,7 +203,7 @@ in the XLSForm:</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Select One or Many From External File Question Type"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Selecting options from an external file in the Formbuilder"
               class="feedback-button"
               target="_blank"
             >
@@ -285,38 +234,34 @@ in the XLSForm:</p>
 <p class="caption" role="heading"><span class="caption-text">Using the Formbuilder</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Getting started with the KoboToolbox Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">List of Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Text and Note question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">“Select One” and “Select Many” question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Acknowledge question type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Number, Decimal, and Range Question Types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Media question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Barcode/QR code question type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Rating vs Ranking Question Types</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Select One or Many From External File Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">GPS Question types</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Calculate Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Advanced Calculate Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Signature Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Question Matrix Response Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Including Responses Inside Another Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Using the Question Options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Adding questions in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Text questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Select questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Numeric questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Media questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">GPS questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Note questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question options in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Adding validation criteria in the Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Limits on Number and Text Responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Adding calculations in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding cascading select questions in the Formbuilder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grouping questions and repeating groups</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restricting Text Responses With Regular Expressions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Form Settings and Metadata</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Audit Logging Meta Question Type</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Custom Formatting in Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Using Alternative Enketo Web Form Styles</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the Question Library</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Using Public Collections</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Public Collections Advanced Search</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Using HXL Tags</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Selecting options from an external file in the Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#formatting-external-choice-lists">Formatting external choice lists</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uploading-the-external-file-to-kobotoolbox">Uploading the external file to KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#setting-up-the-question-in-the-formbuilder">Setting up the question in the Formbuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Dynamic data attachments using the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the KoboToolbox question library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Public collections in the KoboToolbox library</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Using XLSForm</span></p>
 <ul>
@@ -333,6 +278,7 @@ in the XLSForm:</p>
 <li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to an XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introduction to form logic in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Using functions in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Using regular expressions in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Adding skip logic in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Adding constraints in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Adding required logic in XLSForm</a></li>
@@ -342,10 +288,11 @@ in the XLSForm:</p>
 <li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Styling your forms using XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Form metadata in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pulling data from an external CSV</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Selecting options from a map</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking with XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importing library collections using XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
@@ -416,8 +363,6 @@ in the XLSForm:</p>
 <li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Creating Unique Serial Numbers in Forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">User-Specified “Other” Responses for Multiple-Choice Questions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Lowering the File Size of Collected Media</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Adding Calculations and Constraints in a Matrix Question</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Adding Skip Logic to a Matrix Question</a></li>
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
@@ -485,7 +430,7 @@ in the XLSForm:</p>
   <script>
     window.docs = {
       currentPagename: "external_file",
-      currentTitle: "Select One or Many From External File Question Type",
+      currentTitle: "Selecting options from an external file in the Formbuilder",
       currentUrl: ("index.html").replace("index.html", "external_file.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
