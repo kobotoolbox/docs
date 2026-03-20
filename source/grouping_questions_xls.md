@@ -12,7 +12,7 @@ This article covers the following topics:
 - Adding skip logic to question groups
 
 <p class="note">
-<strong>Note:</strong> This article focuses on grouping questions in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about grouping questions in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups</a>.
+<strong>Note:</strong> This article focuses on grouping questions in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about grouping questions in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a>.
 </p>
 
 ## Creating a question group

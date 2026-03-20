@@ -59,7 +59,7 @@ There are two main ways to connect your form to external files:
 Supported file formats for these features include CSV, XML, and GeoJSON.
 
 <p class="note">
-  To learn how to attach external datasets to your form, see <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">Pulling data from an external CSV</a> and <a href="https://support.kobotoolbox.org/select_from_file_xls.html">Selecting options from an external file</a>.
+  To learn how to attach external datasets to your form, see <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">Pulling data from an external CSV</a> and <a href="https://support.kobotoolbox.org/external_file.html">Selecting options from external files in the Formbuilder</a>.
 </p>
 
 ### Uploading files and media to KoboToolbox
@@ -104,7 +104,7 @@ KoboToolbox also supports background audio recording for entire interviews
 or focus group discussions. 
 
 <p class="note">
-  To learn more about collecting media from respondents, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media question types</a>. To learn more about background audio recording, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>.
+  To learn more about collecting media from respondents, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a>. To learn more about background audio recording, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>.
 </p>
 
 ### Viewing respondent media files

@@ -1,4 +1,4 @@
-# Selecting options from an external file
+# Selecting options from an external file in XLSForm
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/10a0bca58772931c99d742f16c0e1566caf58347/source/select_from_file_xls.md" class="reference">10 Feb 2026</a>
 
 **Select from file** questions allow you to use a list of choice options stored in an external file instead of defining them directly in your form. There are two types: `select_one_from_file` for selecting a **single choice**, and `select_multiple_from_file` for selecting **multiple choices**. 
@@ -8,7 +8,7 @@ Using a separate file for your choice list makes it easier to manage long lists,
 This article explains how to format your external file, set up your XLSForm to use **select from file** questions, and upload your external file to KoboToolbox.
 
 <p class="note">
-<strong>Note:</strong> This article focuses on adding select from file questions in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding select from file questions in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/external_file.html">Select One or Many From External File Question Type</a>.
+<strong>Note:</strong> This article focuses on adding select from file questions in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding select from file questions in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/external_file.html">Selecting options from external files in the Formbuilder</a>.
 <br><br>
   For hands-on practice with select from file questions in XLSForm, see KoboToolbox Academy’s <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
 </p>

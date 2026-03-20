@@ -1,130 +1,67 @@
-# GPS Question types
+# GPS questions in KoboToolbox
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/27e85949b3f42b42dcb60701fbfc80aadddbb616/source/gps_questions.md" class="reference">30 Jul 2022</a>
 
+GPS questions are used to **collect geographic coordinates and spatial data** during data collection. They allow you to capture precise locations, map routes, or define areas directly within your form. These question types are useful for activities such as mapping infrastructure, tracking field visits, monitoring environmental sites, or recording service locations.
 
-In KoboToolbox, you can collect GPS coordinates as part of your data collection
-form. There are 3 GPS question types you can use, namely "Point", "Line" and
-"Area".
+This article explains the available GPS question types in the Formbuilder, how to add and configure them, the differences in behavior between Enketo web forms and KoboCollect, and the advanced appearance options available for collecting location data.
 
-Use a "Point" question type when you want to record a single GPS coordinate.
-This is perfect for questions where you need to show the location of a single
-feature such as a house, or a borehole.
+## GPS question types
 
-Use a "Line" question type when you want to record multiple GPS points to trace
-a path. This question type can be used for collecting location data on features
-such as roads, tracks and rivers.
+The following question types are available in the Formbuilder for respondents to record GPS data:
 
-The "Area" question type is used for collecting multiple GPS points that form
-the boundaries of a feature. You can use it, for example, to trace the
-boundaries of garden plots in a survey where you are enumerating land holdings.
-
-## How to set up the "Point", "Line" and "Area" question types
-
-### Setting up in formbuilder
-
-Adding GPS questions on the form is simple:
-
-- In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
-  a new question
-- Type the question text, for example "Capture the location of the housing
-  unit", then click **ADD QUESTION** or press ENTER on your keyboard
-- Choose the question type (e.g. Point)
-
-![Adding GPS questions](images/gps_questions/adding_gps_questions.gif)
-
-### Setting up in XLSForm
-
-You can add "Point", "Line" and "Area" questions in XLSForm by using `geopoint`,
-`geotrace` and `geoshape` question types respectively as in the following
-example:
-
-| type     | name   | label                                    |
-| :------- | :----- | :--------------------------------------- |
-| geopoint | point  | Capture the location of the housing unit |
-| geotrace | road   | Trace out the road's route               |
-| geoshape | garden | Trace the boundary of the garden         |
-| survey   |
-
-## Appearance of "Point", "Line" and "Area" question types in web forms and KoboCollect
-
-### Default appearance
-
-![Default appearances of GPS questions](images/gps_questions/gps_default_appearances.png)
-
-## Collecting GPS points in the background
-
-Besides including GPS questions in your form, you can also collect GPS
-coordinates in the background while data is being collected. This is possible by
-turning on the "Audit" option in the formbuilder (Layout & Settings -> Meta
-questions) or by adding the `audit` meta question to your XLSForm. Learn more
-about how to do this [here](audit_logging.md).
-
-## Calculating distance and area with "Line" and "Area" question types
-
-As you collect your GPS data, you might need to calculate the distance and area
-from your "Line" and "Area" questions.
-
-### Calculating distance from "Line" questions
-
-To calculate the distance from a "Line" question type in the formbuilder, use
-the "Calculate" question type and the
-[`distance()`](https://docs.getodk.org/form-operators-functions/#distance)
-function as shown below:
-
-![Calculate distance](images/gps_questions/calculate_distance.png)
-
-In the example above, the question "Trace the route of the track" has been added
-as a "Line" question type. The "Data Column Name" in the question settings has
-been set to "track".
-
-The question with label `distance(${track})` is a "Calculate" question type with
-a "Data Column Name" of "distance". The result will be in meters.
-
-The "Note" question is optional and has been added with the purpose of
-displaying the calculated distance within the form.
-
-In XLSForm, you can do the same as follows:
-
-| type      | name             | label                              | calculation        |
-| :-------- | :--------------- | :--------------------------------- | :----------------- |
-| geotrace  | track            | Trace the route of the track       |                    |
-| calculate | distance         |                                    | distance(${track}) |
-| note      | display_distance | The distance is ${distance} meters |                    |
-| survey    |
-
-### Calculating area from "Area" questions
-
-You can calculate an area using the "Calculate" question type and the
-[`area()`](https://docs.getodk.org/form-operators-functions/#area) function as
-shown below:
-
-![Calculate distance](images/gps_questions/calculate_area.png)
-
-In the example above, the question "Trace the boundaries" has been added as an
-"Area" question type. The "Data Column Name" in the question settings has been
-set to "boundary".
-
-The question with label `area(${boundary})` is a "Calculate" question type with
-Data Column Name "area". The result will be in square meters.
-
-The "Note" question is optional and has been added with the purpose of
-displaying the calculated area within the form.
-
-In XLSForm, you can do the same, as follows:
-
-| type      | name         | label                             | calculation       |
-| :-------- | :----------- | :-------------------------------- | :---------------- |
-| geoshape  | boundary     | Trace the boundaries              |
-| calculate | area         |                                   | area(${boundary}) |
-| note      | display_area | The area is ${area} square meters |                   |
-| survey    |
+| Question type | Description |
+|:---|:---|
+| <i class="k-icon-qt-point"></i> Point | Collects a single geographic location, such as the coordinates of a specific school, clinic, or house. |
+| <i class="k-icon-qt-line"></i> Line | Records multiple GPS points that form a line, for example to track a path, trace a route, or map a drain. |
+| <i class="k-icon-qt-area"></i> Area | Collects points that form an enclosed area, such as a plot of land or a field. |
 
 <p class="note">
-  You can download an XLSForm with examples from this article
-  <a
-    download
-    class="reference"
-    href="./_static/files/gps_questions/gps_questions.xlsx"
-    >here</a
-  >.
+<strong>Note:</strong> You can also collect location automatically using <a href="https://support.kobotoolbox.org/form_meta.html">metadata questions</a>. The <strong>start geopoint early</strong> and <strong>audit</strong> options are available in the Formbuilder, while <code>background-geopoint</code> is available only when building your form <a href="https://support.kobotoolbox.org/metadata_xls.html">in XLSForm</a>.
+</p>
+
+## Adding a GPS question in the Formbuilder
+
+To add a GPS question to your form:
+1. Click the <i class="k-icon-plus"></i> button. 
+2. Enter your question label.
+3. Click **+ ADD QUESTION.**
+4. Choose the appropriate question type.
+
+![GPS question](images/gps_questions/gps.png)
+
+## Appearances of GPS questions
+
+The table below displays the default appearances for GPS questions:
+
+![Default appearances of GPS questions](images/gps_questions/table.png)
+
+In **Enketo web forms**, respondents can select a location directly on the map, search for an address, or manually enter GPS coordinates.
+
+In **KoboCollect**, the device’s current location is recorded automatically, and manual selection or coordinate entry is not available by default.
+
+<p class="note">
+<strong>Note:</strong> To learn more about GPS data collection behaviors in Enketo and KoboCollect, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data</a>.
+</p>
+
+### Advanced appearances 
+
+You can apply advanced appearances to GPS questions to modify how they display and behave in your form.
+
+To add an advanced appearance:
+1. Open the question settings by clicking <i class="k-icon-settings"></i> **Settings** to the right of the question. This will take you to the **Question Options** tab.
+2. In **Appearance (Advanced)**, type the name of the appearance in the text box, exactly as written below.
+
+![Advanced GPS question appearance](images/gps_questions/appearance.png)
+
+The following advanced appearances are available for GPS questions:
+
+
+| Appearance | Description | Compatibility |
+|:---|:---|:---|
+| <code>maps</code> | Displays a map for users to visualize the location that is being automatically recorded (<strong>Point</strong> only). | KoboCollect only (included in default Enketo appearance) |
+| <code>placement-map</code> | Allows for manual selection of a location on a map (<strong>Point</strong> only). | KoboCollect only (included in default Enketo appearance) |
+| <code>hide-input</code> | Shows a larger map and hides other input fields (latitude, longitude, altitude, accuracy).<br>![Hide input advanced appearance](images/gps_questions/hide-input.png) | Enketo only |
+
+<p class="note">
+<strong>Note:</strong> If you are using Enketo and want to record GPS location automatically without allowing respondents to manually select or enter coordinates, consider using the <code>background-geopoint</code> <a href="https://support.kobotoolbox.org/metadata_xls.html">metadata question</a>.
 </p>

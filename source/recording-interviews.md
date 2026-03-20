@@ -15,7 +15,7 @@ This article covers the following topics:
 - Managing background audio data
 
 <p class="note">
-<strong>Note:</strong> To learn about collecting short audio responses instead of a full background recording, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media question types</a>. 
+<strong>Note:</strong> To learn about collecting short audio responses instead of a full background recording, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a>. 
 </p>
 
 ## Enabling background audio recording in the Formbuilder
@@ -125,6 +125,6 @@ If a form with background audio recording is saved as a draft in <strong>KoboCol
 
 <details>
   <summary><strong>Unable to download large audio files</strong></summary>
-  If large or long audio files fail to download as Media Attachments (ZIP), see <a href="https://support.kobotoolbox.org/photo_download.html">Downloading photos and other media</a> for guidance on retrieving large media files.
+  If large or long audio files fail to download as Media Attachments (ZIP), see <a href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">Downloading media files</a> for guidance on retrieving large media files.
 </details>
 

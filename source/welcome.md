@@ -47,7 +47,7 @@ Standardize data and streamline form building by creating form templates and usi
 ![Library](/images/welcome/library.png)
 
 <p class="note">
-For more information about the KoboToolbox question library, see <a href="https://support.kobotoolbox.org/question_library.html">Using the question library</a>. 
+For more information about the KoboToolbox question library, see <a href="https://support.kobotoolbox.org/question_library.html">Using the KoboToolbox question library</a>. 
 </p>
 
 ## Collecting data

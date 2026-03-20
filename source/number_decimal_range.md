@@ -1,153 +1,106 @@
-# Number, Decimal, and Range Question Types
+# Numeric questions in KoboToolbox
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ddc7265c83c14464689447dd16d7ddde9a084f75/source/number_decimal_range.md" class="reference">2 Apr 2025</a>
 
+Numeric questions are used to collect quantitative data such as counts, measurements, prices, or ratings. They help ensure that responses are entered in a numeric format, which supports accurate calculations, validations, and analysis. 
 
-When creating questions with numeric responses, you can choose between the
-"Number", "Decimal", and "Range" question types in KoboToolbox.
+KoboToolbox provides several numeric question types to accommodate different data collection needs, including **whole numbers, decimal values,** and **responses within a defined range.**
 
-This article describes these question types and how to use them.
+This article explains the available numeric question types, how to add and configure them in the Formbuilder, the appearance options you can apply, and important platform-specific limits to consider when collecting numeric data.
 
-## When to use them
+## Numeric question types
 
-**Number:** The "Number" question type in the formbuilder is equivalent to the
-`integer` question type in XLSForm. Use the "Number" question type when
-responses to a question will be in the form of whole numbers, such as number of
-children (1, 3, 5, etc.).
+The following question types are available in the Formbuilder for respondents to input numeric data:
 
-**Decimal:** Use the "Decimal" question type when a question’s response will be
-in the form of decimal numbers, such as monthly income (1.2, 34.5, 42.42, etc.).
+| Question type | Description |
+|:---|:---|
+| <i class="k-icon-qt-number"></i> Number | Allows respondents to input whole numbers (e.g., age or number of participants). |
+| <i class="k-icon-qt-decimal"></i> Decimal | Allows respondents to input numbers that may contain decimal points (e.g., land size, price). |
+| <i class="k-icon-qt-range"></i> Range | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values. |
 
-**Range:** The "Range" question type can collect both integer and decimal
-values. By default, the "Range" question type displays a sliding scale that
-allows users to pick a number. When setting it up, you must define the `start`
-and `end` values of the range as well as the `step` between them.
+## Adding a numeric question in the Formbuilder
 
-## Setting up in formbuilder
+To add a numeric question to your form:
 
-To set up the "Number" and "Decimal" question types:
+1. Click the <i class="k-icon-plus"></i> button. 
+2. Enter your question label.
+4. Click **+ ADD QUESTION.** 
+5. Choose the appropriate question type. 
 
-- In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
-  a new question.
-- Type the question’s label. For example, "How many people live in this
-  household?". Then click "+ ADD QUESTION" (or press Enter).
-- Choose the question type ("Number" or "Decimal").
+![Numeric question types](images/number_decimal_range/numeric.png)
 
-![Setting up number questions](/images/number_decimal_range/setup_number_question.gif)
+### Setting up Range questions
 
-To add a "Range" question type:
+**Range** questions are used to collect numeric responses within a defined interval. They display a numbered sliding scale that allows respondents to select values between a minimum and maximum value.
 
-- In the formbuilder, click the <i class="k-icon k-icon-plus"></i> button to add
-  a new question.
-- Type the question text. For example, "Rate the effectiveness of the project
-  from 1 to 5 (5 being most effective)". Then click
-  "<i class="k-icon k-icon-plus"></i> ADD QUESTION" (or press Enter).
-- Choose the "Range" question type.
-- Type the `start` value (in this example, 1).
-- Type the `end` value (in this example, 5).
-- Type in the `step`, the number of steps from one value to the next. (In this
-  example, 1, meaning the options on the sliding scale are 1, 2, 3, 4, 5).
+This question type is useful when collecting scaled responses, such as satisfaction ratings from 1 to 5 or scores within a fixed range.
 
-![Setting up range questions](/images/number_decimal_range/setup_range_question.gif)
+After adding a **Range** question in the Formbuilder, configure the following components:
+- **start**: The minimum numeric value in the range.
+- **end**: The maximum numeric value in the range.
+- **step**: The interval between each number in the range.
 
-<p class="note">
-  It is strongly recommended that you specify names for
-  <strong>all questions</strong> before deploying your form,
-  <em>especially</em> if the labels are non-Latin character languages such as
-  Chinese, Arabic or Nepali.
-</p>
+![Range question](images/number_decimal_range/range.png)
 
-## Setting up in XLSForm
+## Appearances of numeric questions
 
-In XLSForm, you can add "Number", "Decimal" and "Range" questions by using
-`integer`, `decimal` and `range` question types respectively:
+The table below displays the default appearances for numeric questions:
 
-| type    | name     | label                                             | parameters           |
-| :------ | :------- | :------------------------------------------------ | :------------------- |
-| integer | hhsize   | How many people live in this household?           |                      |
-| decimal | landsize | How big is your land? (in hectares)               |                      |
-| range   | rating   | Rate the effectiveness of the project from 1 to 5 | start=1 end=5 step=1 |
-| survey  |
+![Numeric question appearances](images/number_decimal_range/table.png)
 
-<p class="note">
-  When adding a <code>range</code> question to an XLSForm, the
-  <code>start</code>, <code>end</code> and <code>step</code> parameters are
-  added in the <code>parameters</code> column.
-</p>
+### Advanced appearances 
 
-## Default appearance in web forms and KoboCollect
+You can apply advanced appearances to numeric questions to modify how they display and behave in your form.
 
-![Number, Decimal and Range questions](/images/number_decimal_range/number_decimal_range_default.png)
+To add an advanced appearance:
+1. Open the question settings by clicking <i class="k-icon-settings"></i> **Settings** to the right of the question. This will take you to the **Question Options** tab.
+2. In **Appearance (Advanced)**, type the name of the appearance in the text box, exactly as written below.
 
-## Advanced appearances
+![Question apperance](images/number_decimal_range/appearance.png)
 
-When adding the “number”, “decimal”, and “range” questions, you can specify different appearances (under the question settings). Appearances change the way the question is displayed on web forms or on KoboCollect.
+The following advanced appearances are available for numeric questions:
+| Appearance | Description | Compatibility |
+|:---|:---|:---|
+| <code>thousands-sep</code> | Formats large numbers using a comma separator for thousands (<strong>Number</strong> and <strong>Decimal</strong> only).<br>![Thousands seperator with commas](images/number_decimal_range/thousands-sep.png) | Enketo and KoboCollect |
+| <code>bearing</code> | Records a compass reading in degrees, if the device is equipped with an accelerometer or magnetic field sensor (<strong>Decimal</strong> only).<br>![Bearing](images/number_decimal_range/bearing.png) | KoboCollect only |
+| <code>counter</code> | Displays buttons for increasing and decreasing digits (<strong>Number</strong> only).<br>![Counter](images/number_decimal_range/counter.png) | KoboCollect only |
+| <code>vertical</code> | Changes the orientation of the number line to a vertical line.<br>![Vertical](images/number_decimal_range/vertical.png) | Enketo and KoboCollect |
+| <code>picker</code> | In KoboCollect, displays a pop-up spinner for selecting values. In Enketo, displays a drop-down menu.<br>![Picker](images/number_decimal_range/picker.png) | Enketo and KoboCollect |
+| <code>rating</code> | Displays stars instead of a number line.<br>![Rating](images/number_decimal_range/rating.png) | Enketo and KoboCollect |
+| <code>distress</code> | Displays a thermometer instead of a number line.<br>![Temperature](images/number_decimal_range/distress.png) | Enketo only |
 
-![Number, Decimal and Range advanced appearances](/images/number_decimal_range/number_decimal_range_advanced_appearance.png)
+## Limits for numeric questions
 
-![Number, Decimal and Range advanced appearances](/images/number_decimal_range/number_decimal_range_advanced.png)
+Numeric questions have platform-specific limits that may affect how responses are entered, stored, and exported. It is important to understand these limits when designing your form, especially if you expect large numbers or identification codes.
 
-### Advanced appearances in XLSForm
+### Numeric limits in KoboCollect
 
-You can specify advanced appearances of "Number", "Decimal", and "Range"
-questions in XLSForm under the appearances column as in the following examples:
+In KoboCollect:
 
-| type    | name            | label                                                    | appearance    | parameters           |
-| :------ | :-------------- | :------------------------------------------------------- | :------------ | :------------------- |
-| integer | income          | What was the total income you got in the last 12 months? | thousands-sep |                      |
-| decimal | bearing         | Capture bearing                                          | bearing       |                      |
-| range   | vertical_rating | Rate the effectiveness of the project from 1 to 5        | vertical      | start=1 end=5 step=1 |
-| range   | picker_rating   | Rate the effectiveness of the project from 1 to 5        | picker        | start=1 end=5 step=1 |
-| range   | star_rating     | Rate the effectiveness of the project from 1 to 5        | rating        | start=1 end=5 step=1 |
-| survey  |
+- **Number** questions are limited to 9 characters.
+- **Decimal** questions are limited to 15 characters.
+- Negative signs and decimal points count toward the character limit.
 
-## Limits on "Number" and "Decimal" questions
+If a value exceeds these limits, it cannot be entered. This restriction applies at the time of data entry and prevents saving longer numbers.
 
-### KoboCollect
+### Numeric limits in Enketo web forms
 
-The "Number" question type is limited to a maximum of 9 characters and the
-"Decimal" question type is limited to a maximum of 15 characters.
+Enketo web forms allow respondents to enter longer numbers, but there are limits to how they are stored:
 
-<p class="note">
-  Negative signs and decimal points count towards the character limit.
-</p>
+- Up to **17 digits** are recorded completely.
+- From **18 to 21 digits**, additional digits are replaced with zeros, and any decimal portion is removed.
+- At **22 digits or more**, the value is automatically stored in scientific notation.
+- Negative signs do not count toward the digit limit.
 
-### Enketo
+### Collecting long numeric values
 
-Both "Number" and "Decimal" question types are limited to a maximum of 16
-significant figures.
+If you need to collect numeric values that exceed these limits, use a **Text** question instead of a Number or Decimal question.
 
-If a positive or negative integer of 22 significant figures is entered, the form
-will record a 16 digit number with scientific notation. For example, the number
-`±9845284926482357445633` would be recorded as `±9.845284926482358e+21`.
+In the Text question’s **Appearance (Advanced)** settings, select `numbers`. This displays a numeric keypad in KoboCollect during data collection while storing the value as text.
 
-If a positive or negative decimal of 22 significant figures is entered, the form
-will record a truncated 16 digit number, rounded to the 16th digit. For example,
-the number `±9845284926.482357445633` will be recorded as `±9845284926.482357`.
+Use this approach when:
 
-### Text question type as number
+- The number may exceed platform limits
+- The value must not be altered or rounded
+- The number begins with a zero, such as a phone number or bank account number
 
-If your survey requires numeric responses that will exceed 15 digits, you can
-use a workaround with the "Text" question type:
-
-- Add a "Text" question to your form.
-- Go to the **Appearance** setting and select "numbers". A digit keyboard will
-  now appear when filling in this question.
-- Finally, a [`regex()` constraint](restrict_responses.md) can be included to
-  further restrict the input if necessary.
-
-Here is an XLSForm example to illustrate this:
-
-| type    | name    | label                | appearance  | constraint             | constraint_message      |
-| :------ | :------ | :------------------- | :---------- | :--------------------- | :---------------------- |
-| text    | number  | Enter a long number  | numbers     | regex(., '^[0-9]\*$')  | Value must be a number  |
-| survey  |
-
-<p class="note">
-  You can download an XLSForm with examples from this article
-  <a
-    download
-    class="reference"
-    href="./_static/files/number_decimal_range/number_decimal_range_question_types.xlsx"
-    >here</a
-  >.
-</p>
+Storing long numeric values as text ensures that all digits, including leading zeros, are preserved exactly as entered.

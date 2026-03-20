@@ -39,7 +39,7 @@ Above the data table, you can configure the following settings:
 |:-------------------------------|:---------------------------------------------------------------------------------------------|
 | Display labels or XML values?  | Choose whether to show <a href="https://support.kobotoolbox.org/glossary.html#xml-value">XML values</a> or full question and choice labels in <a href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html">any form language</a> in your table. |
 | Show group names in table headers | Decide whether column headers in the table include the name of the question group (e.g., `demographics / age`). |
-| Show HXL tags                  | Display <a href="https://support.kobotoolbox.org/hxl.html">Humanitarian Exchange Language</a> (HXL) tags if they were added to your form.           |
+| Show HXL tags                  | Display <a href="https://support.kobotoolbox.org/question_options.html#hxl">Humanitarian Exchange Language</a> (HXL) tags if they were added to your form.           |
 
 Within the data table, you can click a column header and select <i class="k-icon-qt-hidden"></i> **Hide field** to remove fields you do not need, or <i class="k-icon-freeze"></i> **Freeze field** to keep frequently used fields visible while you scroll.
 

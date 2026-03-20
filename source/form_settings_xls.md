@@ -6,7 +6,7 @@ XLSForm allows you to configure settings for your forms using the `settings` wor
 This article covers how to add and utilize the available form settings in XLSForm.
 
 <p class="note">
-<strong>Note:</strong> This article focuses on form settings forms in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about configuring form settings in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/form_meta.html">Form settings and metadata</a>.
+<strong>Note:</strong> This article focuses on form settings forms in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about configuring form styles in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a>.
 </p>
 
 ## Adding form settings in XLSForm

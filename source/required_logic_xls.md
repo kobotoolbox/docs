@@ -10,7 +10,7 @@ Required logic allows you to make a question mandatory if specific conditions ar
 This article explains how to add required logic conditions in XLSForm, including making a question required based on whether another question was answered. 
 
 <p class="note">
-  <strong>Note:</strong> This article focuses on adding required logic in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding required logic in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/question_options.html?highlight=custom+logic#mandatory-response">Using the question options</a>.
+  <strong>Note:</strong> This article focuses on adding required logic in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding required logic in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/question_options.html?highlight=custom+logic#mandatory-response">Question options in the Formbuilder</a>.
   <br><br>
   For hands-on practice with required logic in XLSForm, see KoboToolbox Academy’s <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
 </p>

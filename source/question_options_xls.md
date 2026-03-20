@@ -6,7 +6,7 @@ When designing a form in XLSForm, you can customize questions by adding hints, s
 This article covers the most common question options and how to add them to your XLSForm, including question hints, required questions, default responses, and question parameters.
 
 <p class="note">
-  <strong>Note:</strong> This article focuses on defining question options in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about question options in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/question_options.html">Using the question options</a>.
+  <strong>Note:</strong> This article focuses on defining question options in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about question options in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a>.
 <br><br>
 For hands-on practice with question options in XLSForm, see KoboToolbox Academy’s <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">XLSForm Fundamentals Course</a>.
 </p>
