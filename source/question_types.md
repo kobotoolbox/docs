@@ -27,7 +27,7 @@ After adding a question to your form, it is strongly recommended to define a **D
 By default, KoboToolbox creates the data column name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the data column name will be `respondent_name`.
 
 <p class="note">
-    To learn more about data column names, see <a href="#adding-option-choices">Question options in the Formbuilder</a>.
+    To learn more about data column names, see <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
 </p>
 
 ## Adding option choices
