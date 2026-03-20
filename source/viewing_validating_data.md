@@ -1,5 +1,5 @@
 # Viewing and validating your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0b2d322a3346e93f848958e62a49e5b9f0e2e24b/source/viewing_validating_data.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/viewing_validating_data.md" class="reference">20 Mar 2026</a>
 
 <iframe src="https://www.youtube.com/embed/X5W6nv9gYUo?si=n3eniC0Uq_PzFsbT" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -1,5 +1,5 @@
 # Adding questions in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3993133bcf0aafda0b0978709534175cb583e049/source/question_types.md" class="reference">28 Oct 2024</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/question_types.md" class="reference">20 Mar 2026</a>
 
 The KoboToolbox Formbuilder allows you to easily add questions to your form as you build your survey or questionnaire. 
 

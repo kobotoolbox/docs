@@ -1,4 +1,5 @@
 # Importing library collections using XLSForm
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/import_collection.md" class="reference">20 Mar 2026</a>
 
 A **collection** is a group of related questions, question blocks, and templates organized in your [KoboToolbox library](https://support.kobotoolbox.org/question_library.html). Collections help you manage reusable content by project, theme, country, or organization.
 
