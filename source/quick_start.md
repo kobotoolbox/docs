@@ -1,10 +1,14 @@
 # Quickstart guide
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/quick_start.md" class="reference">20 Mar 2026</a>
 
-This article provides a quick guide to getting started with KoboToolbox. It explains how to create an account, build and deploy a form, and begin collecting data.
-
 <iframe src="https://www.youtube.com/embed/CYJ-Ob_7Ql8?si=SDjFjZF4zQBE-thP" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+This article provides a quick guide to getting started with KoboToolbox. It explains how to create an account, build and deploy a form, and begin collecting data.
+
+
+<p class="note">
+    For a comprehensive introduction to form development using KoboToolbox, we recommend KoboToolbox Academy’s self-paced online <a href="https://academy.kobotoolbox.org/courses/essentials">KoboToolbox Essentials Course</a>.
+</p>
 
 
 ## Creating an account and signing in
