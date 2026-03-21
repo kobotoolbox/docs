@@ -106,7 +106,6 @@ The following examples can be used as [constraints](https://support.kobotoolbox.
 | <code>regex(., '^CAR-PRC-2020-\d{4}$')</code> | Limit input to a specific ID format |
 | <code>regex(., '^\W*(\w+\b\W*){3}$')</code> | Limit input to exactly 3 words |
 | <code>regex(., '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+(-[a-zA-Z0-9]+)&#42;(\\&#92;.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)&#42;)&#42;\\&#92;.[a-zA-Z]{2,}$')</code> | Limit input to common email format |
-| <code>regex(., '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+(-[a-zA-Z0-9]+)\*(\\.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)\*)\*\\.[a-zA-Z]{2,}$')</code> | Limit input to common email format |
 
 <p class="note">
   For additional help building and testing patterns, visit: <a href="http://www.regexr.com/">http://www.regexr.com/</a>  
