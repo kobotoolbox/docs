@@ -19,9 +19,9 @@ The following question types are available in the Formbuilder for respondents to
 
 To add date and time questions to your form:
 
-1. Click the + button. 
+1. Click the <i class="k-icon-plus"></i> button. 
 2. Enter your question label.
-3. Click <i class="k-icon-plus"></i> **ADD QUESTION.**
+3. Click **+ ADD QUESTION.**
 4. Choose the appropriate question type. 
 
 ![Date time question](images/date_time/date_time.png)
