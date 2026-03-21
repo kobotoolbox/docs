@@ -13,9 +13,9 @@ The following question types are available in the Formbuilder for respondents to
 
 | Question type | Description |
 |:---|:---|
-| <i class="k-icon-qt-number"></i>Number | Allows respondents to input whole numbers (e.g., age or number of participants). |
-| <i class="k-icon-qt-decimal"></i>Decimal | Allows respondents to input numbers that may contain decimal points (e.g., land size, price). |
-| <i class="k-icon-qt-range"></i>Range | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values. |
+| <i class="k-icon-qt-number"></i> Number &emsp; &emsp; | Allows respondents to input whole numbers (e.g., age or number of participants). |
+| <i class="k-icon-qt-decimal"></i> Decimal | Allows respondents to input numbers that may contain decimal points (e.g., land size, price). |
+| <i class="k-icon-qt-range"></i> Range | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values. |
 
 ## Adding a numeric question in the Formbuilder
 
@@ -58,15 +58,8 @@ To add an advanced appearance:
 ![Question apperance](images/number_decimal_range/appearance.png)
 
 The following advanced appearances are available for numeric questions:
-| Appearance | Description | Compatibility |
-|:---|:---|:---|
-| <code>thousands-sep</code> | Formats large numbers using a comma separator for thousands (<strong>Number</strong> and <strong>Decimal</strong> only).<br>![Thousands seperator with commas](images/number_decimal_range/thousands-sep.png) | Enketo and KoboCollect |
-| <code>bearing</code> | Records a compass reading in degrees, if the device is equipped with an accelerometer or magnetic field sensor (<strong>Decimal</strong> only).<br>![Bearing](images/number_decimal_range/bearing.png) | KoboCollect only |
-| <code>counter</code> | Displays buttons for increasing and decreasing digits (<strong>Number</strong> only).<br>![Counter](images/number_decimal_range/counter.png) | KoboCollect only |
-| <code>vertical</code> | Changes the orientation of the number line to a vertical line.<br>![Vertical](images/number_decimal_range/vertical.png) | Enketo and KoboCollect |
-| <code>picker</code> | In KoboCollect, displays a pop-up spinner for selecting values. In Enketo, displays a drop-down menu.<br>![Picker](images/number_decimal_range/picker.png) | Enketo and KoboCollect |
-| <code>rating</code> | Displays stars instead of a number line.<br>![Rating](images/number_decimal_range/rating.png) | Enketo and KoboCollect |
-| <code>distress</code> | Displays a thermometer instead of a number line.<br>![Temperature](images/number_decimal_range/distress.png) | Enketo only |
+![Question apperance](images/number_decimal_range/table1.png)
+![Question apperance](images/number_decimal_range/table2.png)
 
 ## Limits for numeric questions
 
