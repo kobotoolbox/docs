@@ -40,6 +40,8 @@ This is some *italic text* in markdown.
 
 This is some `monospaced code` in markdown.
 
+Note: when using \`...\` there is no need to use \\ to escape characters, but the code line in a table won't wrap. When using \<code> instead, the line will wrap in the table but you'll need to use \\ to escape characters
+
 > This is a block quote (not currently used in documentation)
 
 Embed links: To transfer ownership of your Team to another user, [please contact our support team](support@kobotoolbox.org).
