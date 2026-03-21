@@ -1,5 +1,5 @@
 # Styling Enketo web forms in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/alternative_enketo.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/da66e4d01d255969b46c9914906624730afe4ac3/source/alternative_enketo.md" class="reference">21 Mar 2026</a>
 
 <iframe src="https://www.youtube.com/embed/wLWiw473YSQ?si=tJbKl-VzjZkDPivR" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -11,7 +11,7 @@ Form themes apply only to Enketo web forms and are not supported in KoboCollect.
 
 To add an Enketo theme to your form in the Formbuilder:
 
-1. Click **Layout & Settings** in the top right corner of the screen.
+1. Click <i class="k-icon-settings"></i> **Layout & Settings** in the top right corner of the screen.
 2. In the **Form style** section, select the theme you want to apply to your form.
 
 ![Form style](images/alternative_enketo/access.png)
