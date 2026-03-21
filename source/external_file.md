@@ -2,8 +2,8 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/external_file.md" class="reference">20 Mar 2026</a>
 
 **Select from file** questions allow you to use a list of choice options stored in an external file instead of defining them directly in your form. There are two types: 
-* **Select One from File** for selecting a single choice, and
-* **Select Many from File** for selecting multiple choices. 
+* **Select One from File** for selecting a single choice
+* **Select Many from File** for selecting multiple choices 
 
 Using a separate file for your choice list makes it easier to use and manage long lists in the Formbuilder. Supported file formats include CSV, XML, and GeoJSON.
 
