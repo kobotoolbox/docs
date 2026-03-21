@@ -1,5 +1,5 @@
 # Question options in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/question_options.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f7a7fa3d5b55b406b4b6cdb7f75cddc7b986067d/source/question_options.md" class="reference">21 Mar 2026</a>
 
 After adding a question to your form, you can customize **how it behaves and appears by adjusting its question options.** These settings allow you to control various question options, from variable naming and required responses to advanced display features and HXL tagging.
 
@@ -132,8 +132,8 @@ The format of the default response depends on the question type and the data bei
 | Number | Number |
 | Text | Text (without quotation marks) |
 | Select One | Choice <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML value</a> |
-| `select_multiple` | Choice <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML values</a>, separated by a space if there are multiple |
-| `date` | Date in the YYYY-MM-DD format. |
+| Select Many | Choice <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML values</a>, separated by a space if there are multiple |
+| Date | Date in the YYYY-MM-DD format. |
 
 ## Appearance (Advanced)
 
