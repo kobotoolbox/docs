@@ -1,5 +1,5 @@
 # Using regular expressions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c52535e939cd2afc5e67ea7d8768a3d1ca2feee8/source/restrict_responses.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8ec5f0004cb227bf5be20aa893d54bf9e197738e/source/restrict_responses.md" class="reference">21 Mar 2026</a>
 
 A **regular expression**, or regex, is a search pattern used to match specific characters or character ranges within text. Regular expressions are commonly used to validate, search, extract, or restrict text input.
 
