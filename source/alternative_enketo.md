@@ -1,5 +1,5 @@
 # Styling Enketo web forms in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/da66e4d01d255969b46c9914906624730afe4ac3/source/alternative_enketo.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f3ac4f05b15482eefe3a5bca9c2c18dc6f42dc3f/source/alternative_enketo.md" class="reference">21 Mar 2026</a>
 
 <iframe src="https://www.youtube.com/embed/wLWiw473YSQ?si=tJbKl-VzjZkDPivR" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
