@@ -9,5 +9,5 @@
 1. [Adding form metadata in the Formbuilder](form_meta.md) (21 Mar 2026)
 1. [Dynamic data attachments using the Formbuilder](dynamic_data_attachment_formbuilder.md) (21 Mar 2026)
 1. [Introduction to form logic in the Formbuilder](form_logic.md) (21 Mar 2026)
+1. [Using regular expressions in XLSForm](restrict_responses.md) (21 Mar 2026)
 1. [Date and time questions in KoboToolbox](date_time.md) (21 Mar 2026)
-1. [Question options in the Formbuilder](question_options.md) (21 Mar 2026)

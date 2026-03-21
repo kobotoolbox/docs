@@ -109,7 +109,7 @@
           
   <section id="using-regular-expressions-in-xlsform">
 <h1>Using regular expressions in XLSForm<a class="headerlink" href="#using-regular-expressions-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/restrict_responses.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/458b7d66707faa5018a73b6367db6f2dbe45a141/source/restrict_responses.md" class="reference">21 Mar 2026</a></p>
 <p>A <strong>regular expression</strong>, or regex, is a search pattern used to match specific characters or character ranges within text. Regular expressions are commonly used to validate, search, extract, or restrict text input.</p>
 <p>In KoboToolbox, regular expressions are typically used to control how users enter data. For example, you can restrict a mobile number to exactly 10 digits, enforce a specific ID format, or limit text to uppercase letters only.</p>
 <p>This article provides an overview of common regular expression components and practical examples you can use to validate and restrict text input in your forms.</p>
@@ -168,10 +168,10 @@
 <tr class="row-even"><td class="text-left"><p><code>[a-zA-Z0-9]</code></p></td>
 <td class="text-left"><p>Matches letters or digits</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code><a href="#id4"><span class="problematic" id="id1">[^abc]</span></a></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code>[^abc]</code></p></td>
 <td class="text-left"><p>Matches any character except a, b, or c</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code><a href="#id5"><span class="problematic" id="id2">[^A-Z]</span></a></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code>[^A-Z]</code></p></td>
 <td class="text-left"><p>Matches any character except uppercase letters</p></td>
 </tr>
 </tbody>
@@ -355,7 +355,7 @@
 <tr class="row-odd"><td class="text-left"><p><code>regex(., ‘^\W*(\w+\b\W*){3}$’)</code></p></td>
 <td class="text-left"><p>Limit input to exactly 3 words</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code>regex(., ‘^[a-zA-Z0-9._%+-]+&#64;[a-zA-Z0-9]+(-[a-zA-Z0-9]+)<em>(.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)</em>)*.[a-zA-Z]{2,}$’)</code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[a-zA-Z0-9._%+-]+&#64;[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*(.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)*\.[a-zA-Z]{2,}$')</span></code></p></td>
 <td class="text-left"><p>Limit input to common email format</p></td>
 </tr>
 </tbody>
