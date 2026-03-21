@@ -10,7 +10,7 @@ This article explains how library locking works, the types of restrictions you c
 <p class="note">
 <strong>Note:</strong> Library locking is not currently supported in the KoboToolbox Formbuilder. To use this feature, you must implement it via XLSForm and then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">upload your XLSForm</a>  to KoboToolbox. 
 <br><br>
-To learn more about  uploading and using templates in KoboToolbox, see <a href="https://support.kobotoolbox.org/question_library.html#">Using the question library</a>.    
+To learn more about  uploading and using templates in KoboToolbox, see <a href="https://support.kobotoolbox.org/question_library.html#">Using the KoboToolbox question library</a>.    
 </p>
 
 ## Introduction to library locking
