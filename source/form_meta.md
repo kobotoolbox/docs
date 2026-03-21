@@ -11,7 +11,7 @@ This article explains how to add and manage metadata questions in the Formbuilde
 
 To add metadata questions in the Formbuilder:
 
-1. Click **Layout & Settings** in the top right corner of the screen.
+1. Click <i class="k-icon-settings"></i> **Layout & Settings** in the top right corner of the screen.
 2. In the **Metadata** section, select the metadata questions you want to include in your form.
 
 ![Form metadata](images/question_types/access.png)
@@ -23,9 +23,9 @@ Available metadata questions in the Formbuilder include:
 | start time | Records the exact time and date when a submission is started. |
 | end time | Records the date and time when a submission is finalized. |
 | today | Records the date of the submission. |
-| audit | Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo.<br><br>To learn more about using the audit question for audit logs and configuring settings, see <a href="https://docs.getodk.org/form-audit-log/">Form Audit Log (ODK)</a>. |
+| audit | Captures a [detailed log](https://support.kobotoolbox.org/form_meta.html#audit-metadata-question) of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo.|
 | username | In KoboCollect, records the username saved in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. If no username is set, it records the one used to sign in to the server.<br>In Enketo, records the account username only if <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.<br><br><strong>Note:</strong> Because the <code>username</code> field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the automatically generated <code>_submitted_by</code> field. |
-| phone number | Records the phone number stored in the <a href="">KoboCollect app settings</a>. This metadata question is not supported in Enketo. |
+| phone number | Records the phone number stored in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in Enketo. |
 | device id | Records the unique identification of the device or browser used to collect data. The device ID is automatically generated and cannot be modified by users.<br><br><strong>Note:</strong> In KoboCollect, the device ID is updated whenever the app is reinstalled on a device. In Enketo, the <code>deviceid</code> resets any time a new browser window is used. |
 | start geopoint early | Captures GPS coordinates when the form is first opened. Can be used to warm up the device GPS so that later GPS questions can reach accurate readings more quickly. |
 
