@@ -13,9 +13,9 @@ The following question types are available in the Formbuilder for respondents to
 
 | Question type | Description |
 |:---|:---|
-| <i class="k-icon-qt-number"></i> Number | Allows respondents to input whole numbers (e.g., age or number of participants). |
-| <i class="k-icon-qt-decimal"></i> Decimal | Allows respondents to input numbers that may contain decimal points (e.g., land size, price). |
-| <i class="k-icon-qt-range"></i> Range | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values. |
+| <i class="k-icon-qt-number"></i>Number | Allows respondents to input whole numbers (e.g., age or number of participants). |
+| <i class="k-icon-qt-decimal"></i>Decimal | Allows respondents to input numbers that may contain decimal points (e.g., land size, price). |
+| <i class="k-icon-qt-range"></i>Range | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values. |
 
 ## Adding a numeric question in the Formbuilder
 
