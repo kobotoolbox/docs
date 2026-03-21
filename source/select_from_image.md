@@ -40,14 +40,14 @@ To allow respondents to select options from your image in XLSForm:
 4. In the `choices` worksheet, add the list of choices.
     - The `name` column must exactly match the `id` values in your SVG file.
 
-survey sheet
+**survey sheet**
 
 | type | name | label | appearance | image |
 |:---|:---|:---|:---|:---|
 | select_one body | body_part | Which body part hurts the most? | image-map | body.svg |
 | survey |
 
-choices sheet
+**choices sheet**
 
 | list_name | name | label |
 |:---|:---|:---|
