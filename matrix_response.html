@@ -109,11 +109,11 @@
           
   <section id="creating-a-question-matrix-in-the-formbuilder">
 <h1>Creating a question matrix in the Formbuilder<a class="headerlink" href="#creating-a-question-matrix-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/matrix_response.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/784c60cd2a63d7a35a80474cd0451b25329534cb/source/matrix_response.md" class="reference">21 Mar 2026</a></p>
 <p>The <strong>Question Matrix</strong> question type allows you to create a structured table of questions, where each column represents a question and each row represents an item. Instead of creating multiple separate questions, you can group them into a single matrix to make your form more organized and efficient for data collection.</p>
 <p>This article explains how to add and configure a question matrix in the Formbuilder, how it appears during data collection, and how to apply advanced logic using XLSForm when needed.</p>
 <p class="note">
-<strong>Note:</strong> Question matrices are supported only in <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> with the <a href="https://support.kobotoolbox.org/styling_forms.html">Grid theme</a> enabled. They are not supported in KoboCollect.
+<strong>Note:</strong> Question matrices are supported only in <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> with the <a href="https://support.kobotoolbox.org/alternative_enketo.html">Grid theme</a> enabled. They are not supported in KoboCollect.
 </p>
 <section id="adding-a-question-matrix-in-the-formbuilder">
 <h2>Adding a question matrix in the Formbuilder<a class="headerlink" href="#adding-a-question-matrix-in-the-formbuilder" title="Link to this heading">¶</a></h2>
@@ -143,7 +143,7 @@
 </ul>
 </li>
 <li><p>Enter a <strong>Question Label.</strong></p></li>
-<li><p>Enter a <strong>Data Column Suffix.</strong> This suffix will be appended to the variable names for each item in the rows and must follow the <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">standard rules for data column names</a>.</p></li>
+<li><p>Enter a <strong>Data Column Suffix.</strong> This suffix will be appended to the variable names for each item in the rows and must follow the <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#important-considerations-for-data-column-names">standard rules for data column names</a>.</p></li>
 <li><p>If using <strong>Select One</strong> or <strong>Select Many</strong>, add the answer choices and their <a class="reference external" href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML values</a>.</p></li>
 <li><p>Set the question as <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#mandatory-response">required</a>, if needed.</p></li>
 <li><p>To add another column, click the <i class="k-icon-plus"></i> icon to the right of the last column.</p></li>
@@ -155,14 +155,14 @@
 <ol class="arabic simple">
 <li><p>Click the <i class="k-icon-settings"></i> <strong>Settings</strong> icon.</p></li>
 <li><p>Enter a <strong>Label</strong> for the item.</p></li>
-<li><p>Enter a <strong>Data Column Prefix.</strong> This prefix will be added to the variable names for all column questions related to this item and must follow the <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">standard rules for data column names</a>.</p></li>
+<li><p>Enter a <strong>Data Column Prefix.</strong> This prefix will be added to the variable names for all column questions related to this item and must follow the <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#important-considerations-for-data-column-names">standard rules for data column names</a>.</p></li>
 <li><p>To add another row, click the <i class="k-icon-plus"></i> icon below the last row.</p></li>
 </ol>
 </section>
 </section>
 <section id="collecting-data-from-a-question-matrix">
 <h2>Collecting data from a question matrix<a class="headerlink" href="#collecting-data-from-a-question-matrix" title="Link to this heading">¶</a></h2>
-<p>Question matrices are supported only in Enketo web forms and require the <a class="reference external" href="https://support.kobotoolbox.org/styling_forms.html">Grid theme</a> to be enabled. They are not supported in KoboCollect.</p>
+<p>Question matrices are supported only in Enketo web forms and require the <a class="reference external" href="https://support.kobotoolbox.org/alternative_enketo.html">Grid theme</a> to be enabled. They are not supported in KoboCollect.</p>
 <p>The question matrix is displayed as a table, with each column representing a question and each row representing an item.</p>
 <p><img alt="Question matrix Enketo" src="_images/enketo.png" /></p>
 <p class="note">
