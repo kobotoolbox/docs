@@ -1,5 +1,5 @@
 # Note questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/note_questions.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/bf1e8a052650254e4a4d1873542bd5368495041f/source/note_questions.md" class="reference">21 Mar 2026</a>
 
 Note questions are used to display information within your form without collecting a response. Although they are listed as a question type, note questions do not store any data. Instead, they are used to **provide instructions, context, or additional details** that help respondents or enumerators understand and complete the form correctly.
 
