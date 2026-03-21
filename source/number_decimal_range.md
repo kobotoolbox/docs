@@ -97,3 +97,7 @@ Use this approach when:
 - The number begins with a zero, such as a phone number or bank account number
 
 Storing long numeric values as text ensures that all digits, including leading zeros, are preserved exactly as entered.
+
+<p class="note">
+   To learn more about using Text questions with the <code>numbers</code> appearance, see <a href="https://support.kobotoolbox.org/text_questions.html#advanced-appearances">Text questions in KoboToolbox</a>. 
+</p>
