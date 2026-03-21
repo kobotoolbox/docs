@@ -47,15 +47,7 @@ To add an advanced appearance:
 
 The following advanced appearances are available for **Date** and **Date & time** questions:
 
-| Appearance | Description | Compatibility |
-|:---|:---|:---|
-| <code>month-year</code> | Captures a month and a year (**Date** questions only).<br>![Month year](images/date_time/month-year.png) | Enketo and KoboCollect |
-| <code>year</code> | Captures only a year (**Date** questions only).<br>![Year](images/date_time/year.png) | Enketo and KoboCollect |
-| <code>no-calendar</code> (other) | Displays a spinner to select the day, month, and year, instead of the default calendar-style picker.<br>![No calendar](images/date_time/no-calendar.png) | KoboCollect only |
-| <code>coptic</code> (other) | Displays the Coptic calendar.<br>![Coptic calendar](images/date_time/coptic.png) | KoboCollect only |
-| <code>ethiopian</code> (other) | Displays the Ethiopian calendar.<br>![Ethiopian calendar](images/date_time/ethiopian.png) | KoboCollect only |
-| <code>islamic</code> (other) | Displays the Islamic calendar.<br>![Islamic calendar](images/date_time/islamic.png) | KoboCollect only |
-| <code>bikram-sambat</code> (other) | Displays the Bikram Sambat calendar.<br>![Bikram-sambat calendar](images/date_time/bikram-sambat.png) | KoboCollect only |
-| <code>myanmar</code> (other) | Displays the Myanmar calendar.<br>![Myanmar calendar](images/date_time/myanmar.png) | KoboCollect only |
-| <code>persian</code> (other) | Displays the Persian calendar.<br>![Persian calendar](images/date_time/persian.png) | KoboCollect only |
-| <code>buddhist</code> (other) | Displays the Buddhist calendar.<br>![Buddhist calendar](images/date_time/buddhist.png) | KoboCollect only |
+![Date time advanced appearances](images/date_time/table1.png)
+![Date time advanced appearances](images/date_time/table2.png)
+![Date time advanced appearances](images/date_time/table3.png)
+
