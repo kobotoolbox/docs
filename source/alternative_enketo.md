@@ -18,12 +18,7 @@ To add an Enketo theme to your form in the Formbuilder:
 
 The following themes are available to customize your forms:
 
-| Theme | Description | Preview |
-|:---|:---|:---|
-| Default - single page | Displays questions one after another, on a single page. | ![Default](images/alternative_enketo/default.png) |
-| Grid theme | An alternative display that is more compact, similar to paper forms, and efficiently uses space, arranging multiple questions per row. | ![Grid](images/alternative_enketo/grid.png) |
-| Grid theme with headings in ALL CAPS | Grid theme with capitalized questions. | ![Grid with all caps headers](images/alternative_enketo/grid_allcaps.png) |
-| Multiple pages | Displays one question per screen or a <a href="https://support.kobotoolbox.org/grouping_questions_xls.html">group of questions</a> together on the same screen, similar to the KoboCollect layout. | ![Mutltiple pages](images/alternative_enketo/multiple_pages.png) |
+![Themes](images/alternative_enketo/preview.png)
 
 <p class="note">
 <strong>Note:</strong> You can also combine <strong>Multiple pages</strong> and <strong>Grid theme</strong> styles.
