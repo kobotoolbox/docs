@@ -2,6 +2,7 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recently_updated.md" class="reference">28 Oct 2025</a>
 
 1. [Selecting options from an external file in the Formbuilder](external_file.md) (21 Mar 2026)
+1. [Selecting options from an image](select_from_image.md) (21 Mar 2026)
 1. [Note questions in KoboToolbox](note_questions.md) (21 Mar 2026)
 1. [Creating a question matrix in the Formbuilder](matrix_response.md) (21 Mar 2026)
 1. [Form settings in XLSForm](form_settings_xls.md) (21 Mar 2026)
@@ -10,4 +11,3 @@
 1. [Dynamic data attachments using the Formbuilder](dynamic_data_attachment_formbuilder.md) (21 Mar 2026)
 1. [Introduction to form logic in the Formbuilder](form_logic.md) (21 Mar 2026)
 1. [Using regular expressions in XLSForm](restrict_responses.md) (21 Mar 2026)
-1. [Date and time questions in KoboToolbox](date_time.md) (21 Mar 2026)
