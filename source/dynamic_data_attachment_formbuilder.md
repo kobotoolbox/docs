@@ -19,7 +19,7 @@ First, add an **External XML** question to your child form. This links the paren
 
 1. Click the <i class="k-icon-plus"></i> button. 
 2. Click **+ ADD QUESTION.**
-3. Choose the <i class="k-icon-qt-external-xml"></i> External XML question type.
+3. Choose the <i class="k-icon-qt-external-xml"></i> **External XML** question type.
 4. Instead of the question label, provide a short name for the parent form. This name can consist of Latin alphabet characters, underscores, and numbers.
 
 ![Select External XML question](images/dynamic_data_attachment_formbuilder/external_xml.png)
@@ -28,7 +28,7 @@ Then, throughout the form, you can retrieve values from the parent project using
 
 1. Click the <i class="k-icon-plus"></i> button. 
 2. Click **+ ADD QUESTION.**
-3. Choose the <i class="k-icon-qt-calculate"></i> Calculate question type.
+3. Choose the <i class="k-icon-qt-calculate"></i> **Calculate** question type.
 4. Instead of the question label, include a calculation expression to retrieve the parent data (see table [below](#calculation-syntax-for-dynamic-data-attachments)).
 
 After retrieving the parent data in a **Calculate** question, you can reference it elsewhere in your form, including in question labels, notes, or form logic, using the standard [question referencing format](https://support.kobotoolbox.org/form_logic.html#question-referencing).
