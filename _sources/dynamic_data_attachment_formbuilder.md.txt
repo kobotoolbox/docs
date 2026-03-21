@@ -1,5 +1,5 @@
 # Dynamic data attachments using the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/dynamic_data_attachment_formbuilder.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b2ad4b6a707ce18955e34cf73d786ac04a0036f2/source/dynamic_data_attachment_formbuilder.md" class="reference">21 Mar 2026</a>
 
 Dynamic linking allows you to retrieve data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. 
 
@@ -19,7 +19,7 @@ First, add an **External XML** question to your child form. This links the paren
 
 1. Click the <i class="k-icon-plus"></i> button. 
 2. Click **+ ADD QUESTION.**
-3. Choose the <i class="k-icon-qt-external-xml"></i> External XML question type.
+3. Choose the <i class="k-icon-qt-external-xml"></i> **External XML** question type.
 4. Instead of the question label, provide a short name for the parent form. This name can consist of Latin alphabet characters, underscores, and numbers.
 
 ![Select External XML question](images/dynamic_data_attachment_formbuilder/external_xml.png)
@@ -28,7 +28,7 @@ Then, throughout the form, you can retrieve values from the parent project using
 
 1. Click the <i class="k-icon-plus"></i> button. 
 2. Click **+ ADD QUESTION.**
-3. Choose the <i class="k-icon-qt-calculate"></i> Calculate question type.
+3. Choose the <i class="k-icon-qt-calculate"></i> **Calculate** question type.
 4. Instead of the question label, include a calculation expression to retrieve the parent data (see table [below](#calculation-syntax-for-dynamic-data-attachments)).
 
 After retrieving the parent data in a **Calculate** question, you can reference it elsewhere in your form, including in question labels, notes, or form logic, using the standard [question referencing format](https://support.kobotoolbox.org/form_logic.html#question-referencing).
