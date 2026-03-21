@@ -109,7 +109,7 @@
           
   <section id="adding-form-metadata-in-the-formbuilder">
 <h1>Adding form metadata in the Formbuilder<a class="headerlink" href="#adding-form-metadata-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/form_meta.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/993d3dc43ba1b0558f51cf282783bb942a11ed4b/source/form_meta.md" class="reference">21 Mar 2026</a></p>
 <p>Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent.</p>
 <p>Metadata questions are <strong>hidden from respondents</strong>, and <strong>metadata fields cannot be edited</strong> in the KoboToolbox data table. This background information supports auditing, helps maintain data integrity, and can be used in data analysis.</p>
 <p>This article explains how to add and manage metadata questions in the Formbuilder, outlines the available metadata options, and describes how audit logging and background audio recording can support data quality and monitoring during data collection.</p>
@@ -117,7 +117,7 @@
 <h2>Adding metadata questions in the Formbuilder<a class="headerlink" href="#adding-metadata-questions-in-the-formbuilder" title="Link to this heading">¶</a></h2>
 <p>To add metadata questions in the Formbuilder:</p>
 <ol class="arabic simple">
-<li><p>Click <strong>Layout &amp; Settings</strong> in the top right corner of the screen.</p></li>
+<li><p>Click <i class="k-icon-settings"></i> <strong>Layout &amp; Settings</strong> in the top right corner of the screen.</p></li>
 <li><p>In the <strong>Metadata</strong> section, select the metadata questions you want to include in your form.</p></li>
 </ol>
 <p><img alt="Form metadata" src="_images/access1.png" /></p>
@@ -139,13 +139,13 @@
 <td class="text-left"><p>Records the date of the submission.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>audit</p></td>
-<td class="text-left"><p>Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo.<br><br>To learn more about using the audit question for audit logs and configuring settings, see <a href="https://docs.getodk.org/form-audit-log/">Form Audit Log (ODK)</a>.</p></td>
+<td class="text-left"><p>Captures a <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html#audit-metadata-question">detailed log</a> of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>username</p></td>
 <td class="text-left"><p>In KoboCollect, records the username saved in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. If no username is set, it records the one used to sign in to the server.<br>In Enketo, records the account username only if <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.<br><br><strong>Note:</strong> Because the <code>username</code> field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the automatically generated <code>_submitted_by</code> field.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>phone number</p></td>
-<td class="text-left"><p>Records the phone number stored in the <a href="">KoboCollect app settings</a>. This metadata question is not supported in Enketo.</p></td>
+<td class="text-left"><p>Records the phone number stored in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in Enketo.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>device id</p></td>
 <td class="text-left"><p>Records the unique identification of the device or browser used to collect data. The device ID is automatically generated and cannot be modified by users.<br><br><strong>Note:</strong> In KoboCollect, the device ID is updated whenever the app is reinstalled on a device. In Enketo, the <code>deviceid</code> resets any time a new browser window is used.</p></td>
