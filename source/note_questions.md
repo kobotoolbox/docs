@@ -14,7 +14,7 @@ To add a note question to your form:
 1. Click the <i class="k-icon-plus"></i> button. 
 2. Enter your question label.
 3. Click **+ ADD QUESTION.** 
-4. Choose the <i class="k-icon-qt-note"> Note question type.
+4. Choose the <i class="k-icon-qt-note"></i> **Note** question type.
 
 ![Choose note question type](images/note_questions/note.png)
 
