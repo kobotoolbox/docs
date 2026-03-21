@@ -1,5 +1,5 @@
 # Date and time questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/77e153e038a82ecf8311314bb2ff68028a5be09a/source/date_time.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6c19e138e4a3a7c7cf2ad45eb7f119632ab31abe/source/date_time.md" class="reference">21 Mar 2026</a>
 
 Date and time questions are used to collect temporal information such as event dates, appointment times, or timestamps. These question types ensure that responses are **captured in a standardized format**, which supports accurate sorting, filtering, calculations, and analysis.
 
