@@ -1,5 +1,5 @@
 # Using regular expressions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/458b7d66707faa5018a73b6367db6f2dbe45a141/source/restrict_responses.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5353171ed7c3c25c90d7c41f8ae10597464ca904/source/restrict_responses.md" class="reference">21 Mar 2026</a>
 
 A **regular expression**, or regex, is a search pattern used to match specific characters or character ranges within text. Regular expressions are commonly used to validate, search, extract, or restrict text input.
 
@@ -48,9 +48,9 @@ The following tables describe commonly used regex elements.
 | <code>\W</code> | Matches any non-word character |
 | <code>\s</code> | Matches a space or tab |
 | <code>\b</code> | Matches a word boundary |
-| <code>\.</code> | Matches a literal dot (<code>.</code>) |
-| <code>\@</code> | Matches a literal <code>@</code> |
-| <code>\$</code> | Matches a literal <code>$</code> |
+| <code>\\.</code> | Matches a literal dot (<code>.</code>) |
+| <code>\\@</code> | Matches a literal <code>@</code> |
+| <code>\\$</code> | Matches a literal <code>$</code> |
 | `\\` | Matches a literal backslash (<code>\\</code>) |
 | <code>\number</code> | Refers to a previously matched group |
 
@@ -79,7 +79,7 @@ The following examples can be used as [constraints](https://support.kobotoolbox.
 | <code>regex(., '^\d{10}$')</code> | Limit input to 10 digits |
 | <code>regex(., '^[1-9][0-9]?$&#124;^100$')</code> | Limit input to a number between 1 and 100 (e.g., for a percentage) |
 | <code>regex(., '^[1-9][0-9]{8}$')</code> | Limit input to 9 digits, first digit cannot be 0 |
-| <code>regex(., '^\d{2}\.\d{3}$')</code> | Limit input to number formatted as 12.345 |
+| <code>regex(., '^\d{2}\\.\d{3}$')</code> | Limit input to number formatted as 12.345 |
 | <code>regex(., '^(\d{10}&#124;\d{13}&#124;\d{17})$')</code> | Limit input to 10, 13, or 17 digits |
 | <code>regex(., '^(12&#124;345)$')</code> | Input must be 12 or 345 |
 
@@ -105,7 +105,7 @@ The following examples can be used as [constraints](https://support.kobotoolbox.
 | <code>regex(., '^[A-Z]{1}[0-9]{8}$')</code> | Limit input to one letter and eight numbers |
 | <code>regex(., '^CAR-PRC-2020-\d{4}$')</code> | Limit input to a specific ID format |
 | <code>regex(., '^\W*(\w+\b\W*){3}$')</code> | Limit input to exactly 3 words |
-| `regex(., '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*(.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)*\.[a-zA-Z]{2,}$')` | Limit input to common email format |
+| <code>regex(., '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9]+(-[a-zA-Z0-9]+)\*(\\.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)\*)\*\\.[a-zA-Z]{2,}$')</code> | Limit input to common email format |
 
 <p class="note">
   For additional help building and testing patterns, visit: <a href="http://www.regexr.com/">http://www.regexr.com/</a>  
