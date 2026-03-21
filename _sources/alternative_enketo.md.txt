@@ -1,5 +1,5 @@
 # Styling Enketo web forms in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/da66e4d01d255969b46c9914906624730afe4ac3/source/alternative_enketo.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f3ac4f05b15482eefe3a5bca9c2c18dc6f42dc3f/source/alternative_enketo.md" class="reference">21 Mar 2026</a>
 
 <iframe src="https://www.youtube.com/embed/wLWiw473YSQ?si=tJbKl-VzjZkDPivR" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -18,12 +18,7 @@ To add an Enketo theme to your form in the Formbuilder:
 
 The following themes are available to customize your forms:
 
-| Theme | Description | Preview |
-|:---|:---|:---|
-| Default - single page | Displays questions one after another, on a single page. | ![Default](images/alternative_enketo/default.png) |
-| Grid theme | An alternative display that is more compact, similar to paper forms, and efficiently uses space, arranging multiple questions per row. | ![Grid](images/alternative_enketo/grid.png) |
-| Grid theme with headings in ALL CAPS | Grid theme with capitalized questions. | ![Grid with all caps headers](images/alternative_enketo/grid_allcaps.png) |
-| Multiple pages | Displays one question per screen or a <a href="https://support.kobotoolbox.org/grouping_questions_xls.html">group of questions</a> together on the same screen, similar to the KoboCollect layout. | ![Mutltiple pages](images/alternative_enketo/multiple_pages.png) |
+![Themes](images/alternative_enketo/preview.png)
 
 <p class="note">
 <strong>Note:</strong> You can also combine <strong>Multiple pages</strong> and <strong>Grid theme</strong> styles.
