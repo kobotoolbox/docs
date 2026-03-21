@@ -6,7 +6,7 @@ The **Question Matrix** question type allows you to create a structured table of
 This article explains how to add and configure a question matrix in the Formbuilder, how it appears during data collection, and how to apply advanced logic using XLSForm when needed.
 
 <p class="note">
-<strong>Note:</strong> Question matrices are supported only in <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> with the <a href="https://support.kobotoolbox.org/styling_forms.html">Grid theme</a> enabled. They are not supported in KoboCollect.
+<strong>Note:</strong> Question matrices are supported only in <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> with the <a href="https://support.kobotoolbox.org/alternative_enketo.html">Grid theme</a> enabled. They are not supported in KoboCollect.
 </p>
 
 ## Adding a question matrix in the Formbuilder
@@ -36,7 +36,7 @@ To configure your question matrix, for each column:
     -  Available types include **Select One**, **Select Many**, **Text**, and **Number.**
     -  You can use different question types within the same matrix.
 3. Enter a **Question Label.**
-4. Enter a **Data Column Suffix.** This suffix will be appended to the variable names for each item in the rows and must follow the [standard rules for data column names](https://support.kobotoolbox.org/question_options.html#data-column-name).
+4. Enter a **Data Column Suffix.** This suffix will be appended to the variable names for each item in the rows and must follow the [standard rules for data column names](https://support.kobotoolbox.org/question_options.html#important-considerations-for-data-column-names).
 5. If using **Select One** or **Select Many**, add the answer choices and their [XML values](https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices).
 6. Set the question as [required](https://support.kobotoolbox.org/question_options.html#mandatory-response), if needed.
 7. To add another column, click the <i class="k-icon-plus"></i> icon to the right of the last column.
@@ -49,12 +49,12 @@ To configure each row:
 
 1. Click the <i class="k-icon-settings"></i> **Settings** icon.
 2. Enter a **Label** for the item.
-3. Enter a **Data Column Prefix.** This prefix will be added to the variable names for all column questions related to this item and must follow the [standard rules for data column names](https://support.kobotoolbox.org/question_options.html#data-column-name).
+3. Enter a **Data Column Prefix.** This prefix will be added to the variable names for all column questions related to this item and must follow the [standard rules for data column names](https://support.kobotoolbox.org/question_options.html#important-considerations-for-data-column-names).
 4. To add another row, click the <i class="k-icon-plus"></i> icon below the last row.
 
 ## Collecting data from a question matrix
 
-Question matrices are supported only in Enketo web forms and require the [Grid theme](https://support.kobotoolbox.org/styling_forms.html) to be enabled. They are not supported in KoboCollect.
+Question matrices are supported only in Enketo web forms and require the [Grid theme](https://support.kobotoolbox.org/alternative_enketo.html) to be enabled. They are not supported in KoboCollect.
 
 The question matrix is displayed as a table, with each column representing a question and each row representing an item.
 
