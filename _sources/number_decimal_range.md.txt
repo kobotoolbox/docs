@@ -1,5 +1,5 @@
 # Numeric questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/21bc79786503c3e59bb37bfbb0f2e3775e286b25/source/number_decimal_range.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b864270945d76de336b9618ba9ad7b74c6645165/source/number_decimal_range.md" class="reference">21 Mar 2026</a>
 
 Numeric questions are used to collect quantitative data such as counts, measurements, prices, or ratings. They help ensure that responses are entered in a numeric format, which supports accurate calculations, validations, and analysis. 
 
@@ -97,3 +97,7 @@ Use this approach when:
 - The number begins with a zero, such as a phone number or bank account number
 
 Storing long numeric values as text ensures that all digits, including leading zeros, are preserved exactly as entered.
+
+<p class="note">
+   To learn more about using Text questions with the <code>numbers</code> appearance, see <a href="https://support.kobotoolbox.org/text_questions.html#advanced-appearances">Text questions in KoboToolbox</a>. 
+</p>
