@@ -12,7 +12,7 @@ Key types of form logic include:
 - **Mandatory response logic:** Defines when a question must be answered.
 
 <p class="note">
-  To learn more about each type of form logic, see support articles on <a href="https://support.kobotoolbox.org/skip_logic.html">skip logic</a>, <a href="https://support.kobotoolbox.org/https://support.kobotoolbox.org/validation_criteria.html">validation criteria</a>, <a href="https://support.kobotoolbox.org/cascading_select.html">cascading selects</a>, <a href="https://support.kobotoolbox.org/question_options.html#mandatory-response">mandatory response logic</a>, and <a href="https://support.kobotoolbox.org/calculate_questions.html">calculations</a> in KoboToolbox.
+  To learn more about each type of form logic, see support articles on <a href="https://support.kobotoolbox.org/skip_logic.html">skip logic</a>, <a href="https://support.kobotoolbox.org/validation_criteria.html">validation criteria</a>, <a href="https://support.kobotoolbox.org/cascading_select.html">cascading selects</a>, <a href="https://support.kobotoolbox.org/question_options.html#setting-custom-logic-for-mandatory-responses">mandatory response logic</a>, and <a href="https://support.kobotoolbox.org/calculate_questions.html">calculations</a> in KoboToolbox.
 </p>
 
 This article introduces the key concepts of form logic in the Formbuilder, including question referencing, constants, operators, functions, and regular expressions, and explains how to use them to build dynamic and responsive forms.
@@ -57,8 +57,8 @@ In the Formbuilder, you can store a constant using the Hidden question type. A *
 To store a constant in your form:
 
 1. Add a new question to your form.
-2. Select the **Hidden** question type.
-3. Open the **Settings** for the question.
+2. Select the <i class="k-icon-qt-hidden"></i> **Hidden** question type.
+3. Open the  <i class="k-icon-settings"></i>**Settings** for the question.
 4. In the **Default Response** field, enter the constant value.
 
 ![Question option hidden](images/form_logic/hidden.png)
