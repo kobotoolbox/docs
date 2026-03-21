@@ -45,7 +45,7 @@ A set of tools that allows different software systems to communicate with KoboTo
 Setting that changes how a question or group is displayed in a form, such as showing multiple questions on one screen or modifying how response options are presented.
 
 <p class="note">
-  For more information, see <a class="reference external" href="[https://support.kobotoolbox.org/using-formbuilder.html](https://support.kobotoolbox.org/question_options.html#appearance-advanced)">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#appearance-advanced">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/appearances_xls.html">Question appearances in XLSForm</a>.
 </p>
 
 ---
@@ -67,7 +67,7 @@ Projects that have been removed from the active project list and no longer accep
 A record that tracks specific actions taken during data collection or form completion, such as question timing or location, when audit metadata is enabled in a form.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://docs.getodk.org/form-audit-log/#form-audit-log">Form Audit Log (ODK)</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html#audit-metadata-question">Audit metadata question</a>.
 </p>
 
 **Related term(s):** [Metadata](https://support.kobotoolbox.org/glossary.html#metadata)
