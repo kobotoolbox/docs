@@ -50,5 +50,5 @@ Text styling features in the Formbuilder include:
 | Align center   | `<p style="text-align:center">Centered label</p>` centers the text on the screen |
 
 <p class="note">
-<strong>Note:</strong> Additional formatting features, such as paragraph support, bullet lists, and numbered lists, are available only when <a href="https://support.kobotoolbox.org/form_style_xls.html#styling-text">building your form in XLSForm</a>.
+<strong>Note:</strong> Additional formatting features, such as line breaks, bullet lists, and numbered lists, are available only when <a href="https://support.kobotoolbox.org/form_style_xls.html#styling-text">building your form in XLSForm</a>.
 </p>
