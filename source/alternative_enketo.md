@@ -11,7 +11,7 @@ Form themes apply only to Enketo web forms and are not supported in KoboCollect.
 
 To add an Enketo theme to your form in the Formbuilder:
 
-1. Click **Layout & Settings** in the top right corner of the screen.
+1. Click <i class="k-icon-settings"></i> **Layout & Settings** in the top right corner of the screen.
 2. In the **Form style** section, select the theme you want to apply to your form.
 
 ![Form style](images/alternative_enketo/access.png)
