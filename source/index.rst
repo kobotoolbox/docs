@@ -117,6 +117,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   pull_data_kobotoolbox
   select_from_file_xls
   select_from_map_xls
+  select_from_image
   dynamic_data_attachment
   library_locking
   import_collection
