@@ -3,6 +3,7 @@
 
 1. [Getting started with the Formbuilder](formbuilder.md) (23 Mar 2026)
 1. [Quickstart guide](quick_start.md) (23 Mar 2026)
+1. [Grouping questions and repeating groups in the Formbuilder](group_repeat.md) (23 Mar 2026)
 1. [Introduction to KoboToolbox](welcome.md) (23 Mar 2026)
 1. [Glossary of KoboToolbox terms](glossary.md) (23 Mar 2026)
 1. [Selecting options from an external file in the Formbuilder](external_file.md) (21 Mar 2026)
@@ -10,4 +11,3 @@
 1. [Note questions in KoboToolbox](note_questions.md) (21 Mar 2026)
 1. [Creating a question matrix in the Formbuilder](matrix_response.md) (21 Mar 2026)
 1. [Form settings in XLSForm](form_settings_xls.md) (21 Mar 2026)
-1. [Numeric questions in KoboToolbox](number_decimal_range.md) (21 Mar 2026)
