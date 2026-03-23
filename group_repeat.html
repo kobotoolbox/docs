@@ -109,7 +109,7 @@
           
   <section id="grouping-questions-and-repeating-groups-in-the-formbuilder">
 <h1>Grouping questions and repeating groups in the Formbuilder<a class="headerlink" href="#grouping-questions-and-repeating-groups-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/group_repeat.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/79c0f9e6aa5b7471168583175ef7a928dc0e4300/source/group_repeat.md" class="reference">23 Mar 2026</a></p>
 <iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>Grouping questions helps organize related questions into sections, adds structure to your form, and makes it easier to navigate. For example, all demographic questions can be grouped together in one section of the form.</p>
 <p>Users may need to group questions for various reasons:</p>
@@ -119,7 +119,12 @@
 <li><p><strong>Skipping a group of questions:</strong> Skip logic can be added to the whole group instead of adding it to each individual question.</p></li>
 <li><p><strong>Create a roster:</strong> Question groups can be repeated, for example for household surveys or indicator tracking.</p></li>
 </ul>
-<p>This article covers how to create and manage question groups and <a class="reference internal" href="#repeating-a-question-group">repeat groups</a> in the KoboToolbox Formbuilder.</p>
+<p>This article covers how to:</p>
+<ul class="simple">
+<li><p>Create, add, remove, and reorder questions in a group from the KoboToolbox Formbuilder</p></li>
+<li><p>Use nested groups and <a class="reference internal" href="#repeating-a-question-group">repeat groups</a></p></li>
+<li><p>Adjust <a class="reference internal" href="#question-group-settings">group settings</a> such as display options and skip logic</p></li>
+</ul>
 <section id="creating-and-managing-question-groups">
 <h2>Creating and managing question groups<a class="headerlink" href="#creating-and-managing-question-groups" title="Link to this heading">¶</a></h2>
 <p>The Formbuilder makes it easy to group questions, add questions to groups, remove questions from groups, and re-order questions within a group.</p>
@@ -162,13 +167,11 @@
 <li><p>Click <strong>UNGROUP</strong> to remove the group while keeping the questions in the form.</p></li>
 <li><p>Click <strong>DELETE EVERYTHING</strong> to delete both the group and all its questions.</p></li>
 </ul>
+<p class="note">
+    <b>Note:</b> A group of questions can be created or placed inside another group. This is known as <b>nested groups</b>. <a href="https://support.kobotoolbox.org/group_repeat.html#repeating-a-question-group">Repeat groups</a> can also be nested.
+</p>
 </section>
-<section id="nested-groups">
-<h3>Nested groups<a class="headerlink" href="#nested-groups" title="Link to this heading">¶</a></h3>
-<p>A group of questions can be created or placed inside another group. This is known as <strong>nested groups</strong>. <a class="reference internal" href="#repeating-a-question-group">Repeat groups</a> can also be nested.</p>
 </section>
-</section>
-<hr class="docutils" />
 <section id="question-group-settings">
 <h2>Question group settings<a class="headerlink" href="#question-group-settings" title="Link to this heading">¶</a></h2>
 <p>After creating a question group, you can customize its behavior and appearance. For example, you can display all questions in the group on the same screen, apply skip logic to the entire group, or set the group to repeat.</p>
@@ -257,7 +260,7 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Using the Formbuilder</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Getting started with the KoboToolbox Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Getting started with the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="question_types.html">Adding questions in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="text_questions.html">Text questions in KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Select questions in KoboToolbox</a></li>
