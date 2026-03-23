@@ -33,7 +33,7 @@ KoboToolbox’s intuitive [Formbuilder](https://support.kobotoolbox.org/formbuil
 ![Formbuilder](/images/welcome/formbuilder.png)
 
 <p class="note">
-To get started with creating forms in KoboToolbox, see <a href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the Formbuilder</a>. 
+To get started with creating forms in KoboToolbox, see <a href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the KoboToolbox Formbuilder</a>. 
 </p>
 
 
