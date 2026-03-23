@@ -12,7 +12,11 @@ Users may need to group questions for various reasons:
 -   **Skipping a group of questions:** Skip logic can be added to the whole group instead of adding it to each individual question.
 -   **Create a roster:** Question groups can be repeated, for example for household surveys or indicator tracking.
 
-This article covers how to create and manage question groups and [repeat groups](#repeating-a-question-group) in the KoboToolbox Formbuilder.
+This article covers how to:
+* Create, add, remove, and reorder questions in a group from the KoboToolbox Formbuilder
+* Use nested groups and [repeat groups](#repeating-a-question-group)
+* Adjust [group settings](#question-group-settings) such as display options and skip logic
+
 
 ## Creating and managing question groups
 
@@ -62,11 +66,9 @@ A dialog box will appear asking you to confirm if you wish to split apart the gr
 - Click **UNGROUP** to remove the group while keeping the questions in the form.
 - Click **DELETE EVERYTHING** to delete both the group and all its questions.
 
-### Nested groups
-
-A group of questions can be created or placed inside another group. This is known as **nested groups**. [Repeat groups](#repeating-a-question-group) can also be nested. 
-
----
+<p class="note">
+    <b>Note:</b> A group of questions can be created or placed inside another group. This is known as <b>nested groups</b>. <a href="https://support.kobotoolbox.org/group_repeat.html#repeating-a-question-group">Repeat groups</a> can also be nested.
+</p>
 
 ## Question group settings
 
