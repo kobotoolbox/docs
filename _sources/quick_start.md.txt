@@ -1,5 +1,5 @@
 # Quickstart guide
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/33b2fac02c0b24432c1cfd9719d4f4e47b23747f/source/quick_start.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5224e960558832c7d31889fafa6cdfba84b58126/source/quick_start.md" class="reference">23 Mar 2026</a>
 
 <iframe src="https://www.youtube.com/embed/CYJ-Ob_7Ql8?si=SDjFjZF4zQBE-thP" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -45,7 +45,7 @@ To create your first form:
 4. To save the form, click **Save** in the top right corner, then click <i class="k-icon-close"></i> to close the form.
 
 <p class="note">
-    To learn more about using the Formbuilder, see <a href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the KoboToolbox Formbuilder</a> and <a href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a>.
+    To learn more about using the Formbuilder, see <a href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the Formbuilder</a> and <a href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a>.
 </p>
 
 
