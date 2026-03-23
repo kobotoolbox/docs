@@ -1,5 +1,5 @@
 # Grouping questions and repeating groups in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/79c0f9e6aa5b7471168583175ef7a928dc0e4300/source/group_repeat.md" class="reference">23 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/group_repeat.md" class="reference">20 Mar 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -12,11 +12,7 @@ Users may need to group questions for various reasons:
 -   **Skipping a group of questions:** Skip logic can be added to the whole group instead of adding it to each individual question.
 -   **Create a roster:** Question groups can be repeated, for example for household surveys or indicator tracking.
 
-This article covers how to:
-* Create, add, remove, and reorder questions in a group from the KoboToolbox Formbuilder
-* Use nested groups and [repeat groups](#repeating-a-question-group)
-* Adjust [group settings](#question-group-settings) such as display options and skip logic
-
+This article covers how to create and manage question groups and [repeat groups](#repeating-a-question-group) in the KoboToolbox Formbuilder.
 
 ## Creating and managing question groups
 
@@ -66,9 +62,11 @@ A dialog box will appear asking you to confirm if you wish to split apart the gr
 - Click **UNGROUP** to remove the group while keeping the questions in the form.
 - Click **DELETE EVERYTHING** to delete both the group and all its questions.
 
-<p class="note">
-    <b>Note:</b> A group of questions can be created or placed inside another group. This is known as <b>nested groups</b>. <a href="https://support.kobotoolbox.org/group_repeat.html#repeating-a-question-group">Repeat groups</a> can also be nested.
-</p>
+### Nested groups
+
+A group of questions can be created or placed inside another group. This is known as **nested groups**. [Repeat groups](#repeating-a-question-group) can also be nested. 
+
+---
 
 ## Question group settings
 
