@@ -283,7 +283,7 @@ The set of rules and conditions that control how a form behaves, including skip 
 A user-friendly tool within the KoboToolbox platform that allows you to create, edit, and organize form questions through a visual interface, without requiring any technical expertise.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the KoboToolbox Formbuilder</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/formbuilder.html">Getting started with the Formbuilder</a>.
 </p>
 
 **Related term(s):** [XLSForm](https://support.kobotoolbox.org/glossary.html#xlsform)
