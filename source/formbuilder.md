@@ -1,4 +1,4 @@
-# Getting started with the KoboToolbox Formbuilder 
+# Getting started with the Formbuilder 
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7bba28b445dd85ef8a834382a1faeecf141cfdda/source/formbuilder.md" class="reference">21 Mar 2026</a>
 
 
