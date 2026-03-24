@@ -1,4 +1,4 @@
-# Grouping questions and repeating groups in the Formbuilder
+# Groups and repeat groups in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/79c0f9e6aa5b7471168583175ef7a928dc0e4300/source/group_repeat.md" class="reference">23 Mar 2026</a>
 
 

@@ -512,7 +512,7 @@ A feature that allows a form to retrieve values from an external CSV file during
 A set of related questions grouped together in a form to improve structure and organization. Question groups can be displayed on the same screen, skipped as a unit using skip logic, or repeated to collect multiple sets of responses.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html">Grouping questions in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">Groups and repeat groups in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html">Grouping questions in XLSForm</a>.
 </p>
 
 **Related term(s):** [Repeat group](https://support.kobotoolbox.org/glossary.html#repeat-group)
@@ -570,7 +570,7 @@ Additional information displayed directly below a question label to help respond
 A set of questions that can be answered multiple times within a form, allowing respondents to enter repeated information such as household members, items, or events.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/repeat_groups_xls.html">Repeat groups in XLSForm</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">Groups and repeat groups in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/repeat_groups_xls.html">Repeat groups in XLSForm</a>.
 </p>
 
 **Related term(s):** [Question group](https://support.kobotoolbox.org/glossary.html#question-group)
