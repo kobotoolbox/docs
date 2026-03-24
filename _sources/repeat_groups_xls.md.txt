@@ -1,5 +1,5 @@
 # Repeat groups in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/repeat_groups_xls.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/86b2c6d34e0187769d2e14a5f4b082a9d15048d0/source/repeat_groups_xls.md" class="reference">24 Mar 2026</a>
 
 Repeat groups in XLSForm allow you to ask the same set of questions multiple times within a form. This is especially useful when collecting similar information about several people, items, or events. 
 
@@ -12,7 +12,7 @@ This article covers the following topics:
 - Retrieving values from repeat groups 
 
 <p class="note"> 
-<strong>Note:</strong> This article focuses on repeating groups in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about repeating groups in the KoboToolbox Formbuilder and to preview repeat groups in action, see <a href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a>. 
+<strong>Note:</strong> This article focuses on repeating groups in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about repeating groups in the KoboToolbox Formbuilder and to preview repeat groups in action, see <a href="https://support.kobotoolbox.org/group_repeat.html">Groups and repeat groups in the Formbuilder</a>. 
 </p>
 
 ## Creating a repeat group

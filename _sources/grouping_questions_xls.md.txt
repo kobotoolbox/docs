@@ -1,5 +1,5 @@
 # Grouping questions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/grouping_questions_xls.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/86b2c6d34e0187769d2e14a5f4b082a9d15048d0/source/grouping_questions_xls.md" class="reference">24 Mar 2026</a>
 
 Grouping questions in XLSForm helps organize related content into clear, structured sections, improving form layout and navigation. For example, you can group all demographic questions into one section.
 
@@ -12,7 +12,7 @@ This article covers the following topics:
 - Adding skip logic to question groups
 
 <p class="note">
-<strong>Note:</strong> This article focuses on grouping questions in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about grouping questions in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/group_repeat.html">Grouping questions and repeating groups in the Formbuilder</a>.
+<strong>Note:</strong> This article focuses on grouping questions in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about grouping questions in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/group_repeat.html">Groups and repeat groups in the Formbuilder</a>.
 </p>
 
 ## Creating a question group
