@@ -59,7 +59,7 @@ For each saved item, you can hover over it to:
 - <i class="k-icon-tag"></i> **Add tags** to help organize and categorize items for easier searching
 - <i class="k-icon-user-share"></i> **Share** it with other users, assigning permissions to view, edit, or manage the item
 - <i class="k-icon-duplicate"></i> **Clone** it to create a duplicate that you can modify independently
-- <i class="k-icon-more"></i> **Click More** actions to manage [translations](https://support.kobotoolbox.org/language_dashboard.html), download the item as XLS or XML, or delete it
+- <i class="k-icon-more"></i> Click **More actions** to manage [translations](https://support.kobotoolbox.org/language_dashboard.html), download the item as XLS or XML, or delete it
 
 ![Manage question library](images/question_library/manage_library.png)
 
@@ -169,8 +169,7 @@ You can add questions, question blocks, or templates to a collection in several 
 
 - From the **collection page:**
     - Click **NEW > <i class="k-icon-block"></i> Question Block** to create a new question or block in the Formbuilder and save it to the collection.
-    - Click **NEW > <i class="k-icon-upload"></i> Question Block** to create a new question or block in the Formbuilder and save it to the collection.
-    - Click **NEW > <i class="k-icon-template"></i> Question Block** to create a new question or block in the Formbuilder and save it to the collection.
+    - Click **NEW > <i class="k-icon-template"></i> Template** to create a template and save it to the collection.
 - From **My Library**, hover over an existing item, click <i class="k-icon-more"></i> **More actions**, and choose the name of your collection under <i class="k-icon-folder-in"></i> **Move to.**
 
 ![Add to collection](images/question_library/add_to_collection.png)
