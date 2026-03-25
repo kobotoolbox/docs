@@ -108,43 +108,171 @@
           
   <section id="using-the-kobotoolbox-question-library">
 <h1>Using the KoboToolbox question library<a class="headerlink" href="#using-the-kobotoolbox-question-library" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/question_library.md" class="reference">20 Mar 2026</a></p>
-<section id="adding-questions-to-your-library">
-<h2>Adding Questions to your Library<a class="headerlink" href="#adding-questions-to-your-library" title="Link to this heading">¶</a></h2>
-<p>Questions that have previously been added to your library can be added to any other form by drag-and-dropping them from the Question Library sidebar within the formbuilder.</p>
-<p>To access the Question Library sidebar, click the <strong>Add from Library</strong> button in the top right corner of the formbuilder toolbar.</p>
-<p><img alt="image" src="_images/library.jpg" /></p>
-<p>If necessary, you can search for the question you are looking for by using the Search function to search by keyword or tag.</p>
-<p>To add the question to your form, <strong>drag-and-drop</strong> it to the desired position. A question can be added multiple times if necessary, for example when reusing a specific scale for different questions.</p>
-</section>
-<section id="managing-questions-in-your-library">
-<h2>Managing Questions in your Library<a class="headerlink" href="#managing-questions-in-your-library" title="Link to this heading">¶</a></h2>
-<p>The question library allows you to save and reuse frequently used questions.</p>
-<p>To manage the Question Library click on the library menu button in the top left sidebar. By default the library will display all your questions. You can <strong>view</strong> or edit each individual question by clicking on collection label.</p>
-<p>To <strong>clone</strong> or <strong>download</strong> the collection, hover the mouse over the collection label and the icons will appear on the right side.</p>
-<p>You can also <strong>add new questions</strong> from within the library. Just click on <strong>New</strong> and you will be able to create a new question that is saved in the library.</p>
-<p>To <strong>delete questions</strong> in your library, simply click <strong>Delete</strong> after clicking on the <strong>More Actions</strong> icon.</p>
-<p><img alt="image" src="_images/delete.jpg" /></p>
-</section>
-<section id="importing-collections">
-<h2>Importing Collections<a class="headerlink" href="#importing-collections" title="Link to this heading">¶</a></h2>
-<p>In addition to creating Collections in the interface, you can also import large sets of questions and blocks from Excel, based on the XLSForm standard. Advanced users will find it more practical to start from existing XLSForms than copying existing question content into the tool one by one.</p>
-<p><img alt="image" src="_images/import_collection.png" /></p>
-<p>By default, each XLS file will import as a new Collection. If your file only contains one question or one block, it will import just that one question or one block instead of creating a Collection. The name of the Collection is taken from the file name (duplicates of existing Collections are allowed). But it’s easy to rename the Collection after importing it - just click on the Collection name in the left sidebar, then click the settings icon.</p>
-<p>Use <a download class="reference" href="./_static/files/question_library/collection_import_sample.xlsx">this Excel file as a template</a>.
-The file generally follows the XLSForm format. There a few differences:</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/26da17c7c8203fb51267183a3c44789ce7576a47/source/question_library.md" class="reference">25 Mar 2026</a></p>
+<p>The KoboToolbox <strong>question library</strong> allows you to save, reuse, and share questions across multiple forms. Instead of recreating commonly used questions and choices, you can store them in the library and quickly insert them into new forms.</p>
+<p>The question library can store <strong>individual questions, question blocks,</strong> and <strong>full form templates.</strong> You can also organize your content using <strong>collections</strong> to group related items by project, theme, country, or organization.</p>
+<p>Using the question library helps maintain consistency across projects, streamlines the form design process, and makes it easier to share standardized content with other members of your team. You can access the question library from the left-side menu of the KoboToolbox website.</p>
+<p><img alt="Access question library" src="_images/access1.png" /></p>
+<p class="note">
+<strong>Note:</strong> The KoboToolbox question library can contain both public and private content. This article focuses on <strong>My Library</strong>, where you can save, organize, reuse, and share your own questions, question blocks, and form templates. To learn more about making library content publicly available, see <a href="https://support.kobotoolbox.org/using_public_collections.html#">Public collections in the KoboToolbox library</a>.
+</p>
+<p>This article covers the following topics:</p>
 <ul class="simple">
-<li><p>The main sheet containing the questions should be named <strong>library</strong> when uploading multiple blocks.</p></li>
-<li><p>(Optional) Question blocks should be defined in the additional column called <strong>block</strong>, writing the same block title in each row of the table that should be included in the block. The block label has no limitations in terms of characters, but it needs to be the exact same spelling to avoid breaking the block up (‘Household questions’ is different from ‘household questions’). Use a block title that makes it easy to identify the contents later on.</p></li>
-<li><p>Any row in the template sheet that doesn’t have a value in the block column will be imported as a separate question.</p></li>
-<li><p>(Optional) Define any tags for the question or block by adding a column <strong>tag:[your tag name]</strong> for each tag, then writing ‘1’ in each row that should use the tag. In the case of blocks, it’s enough to write ‘1’ in any of the rows in the block regardless which one. It’s enough to mark one of the questions in the block, though it doesn’t matter if several questions are tagged.</p></li>
+<li><p>Adding questions to the question library and using them in your forms</p></li>
+<li><p>Adding templates to your question library and creating forms from templates</p></li>
+<li><p>Working with collections to organize your content</p></li>
 </ul>
-<p>Some other suggestions:</p>
+<section id="adding-questions-to-the-question-library">
+<h2>Adding questions to the question library<a class="headerlink" href="#adding-questions-to-the-question-library" title="Link to this heading">¶</a></h2>
+<section id="adding-questions-from-the-formbuilder">
+<h3>Adding questions from the Formbuilder<a class="headerlink" href="#adding-questions-from-the-formbuilder" title="Link to this heading">¶</a></h3>
+<p>When building a form in the <a class="reference external" href="https://support.kobotoolbox.org/formbuilder.html">KoboToolbox Formbuilder</a>, you can save any question to your question library by clicking <i class="k-icon-folder-plus"></i> <strong>Add Question to Library</strong> in the question’s right-side menu.</p>
+<p><img alt="Add question to library" src="_images/add_to_library.png" /></p>
+<p>This approach preserves all components of your question, including answer choices, <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations</a>, <a class="reference external" href="https://support.kobotoolbox.org/question_options.html">question options</a>, <a class="reference external" href="https://support.kobotoolbox.org/skip_logic.html">skip logic</a>, and <a class="reference external" href="https://support.kobotoolbox.org/validation_criteria.html">validation criteria</a>.</p>
+<p class="note">
+<strong>Note:</strong> When adding a question to your library, a copy of the question is saved, and changes made to the original question do not affect the saved version.
+</p>
+<p>You can also add a <a class="reference external" href="https://support.kobotoolbox.org/group_repeat.html">group of multiple questions</a> to the question library by clicking <i class="k-icon-folder-plus"></i> <strong>Add Question to Library</strong> at the group level. The group is saved as a <strong>question block.</strong></p>
+<p><img alt="Add multiple questions to library" src="_images/add_group.png" /></p>
+</section>
+<section id="adding-questions-from-the-library">
+<h3>Adding questions from the library<a class="headerlink" href="#adding-questions-from-the-library" title="Link to this heading">¶</a></h3>
+<p>You can also create library questions directly from the question library:</p>
+<ol class="arabic simple">
+<li><p>Click <i class="k-icon-library"></i> <strong>Library</strong> in the left-side menu to open the library.</p></li>
+<li><p>Click <strong>NEW</strong> in the top left corner.</p></li>
+<li><p>Select <i class="k-icon-block"></i> <strong>Question Block</strong>. This opens the KoboToolbox Formbuilder, where you can add the question or group of questions you want to save.</p></li>
+<li><p>Click <strong>Create</strong> in the top right corner to save the question block to your library.</p></li>
+</ol>
+<p><img alt="Create library item" src="_images/new.png" /></p>
+<p>You can upload questions or question blocks from an <a class="reference external" href="https://support.kobotoolbox.org/edit_forms_excel.html">XLSForm</a> by clicking <i class="k-icon-upload"></i> <strong>Upload</strong> under <strong>Create Library Item</strong> and uploading an XLSForm.</p>
+</section>
+<section id="managing-questions-in-the-question-library">
+<h3>Managing questions in the question library<a class="headerlink" href="#managing-questions-in-the-question-library" title="Link to this heading">¶</a></h3>
+<p>In the <strong>My Library</strong> view, you can see all saved questions and question blocks. For each item, you can view details such as the number of questions included, the owner, available languages, and the date it was last modified.</p>
+<p>For each saved item, you can hover over it to:</p>
 <ul class="simple">
-<li><p>You can include groups in blocks. Just ensure that the ‘begin group’ line has a unique ‘name’ ID (as in all XLSForms) and that the opening (begin group) and closing (end group) are included in the block. Add the block name as the group label might be a good idea so that you see the block label after importing it to the formbuilder.</p></li>
-<li><p>You can include skip logic and validation rules within blocks that you import. That’s very useful when importing entire blocks of questions into new form drafts without having to rebuild these advanced settings.</p></li>
-<li><p>You can add multiple languages to question and response labels with the usual XLSForm syntax (label::English (en), label::Español (es), etc.)</p></li>
+<li><p><i class="k-icon-edit"></i> <strong>Edit</strong> the question(s) in the Formbuilder</p></li>
+<li><p><i class="k-icon-tag"></i> <strong>Add tags</strong> to help organize and categorize items for easier searching</p></li>
+<li><p><i class="k-icon-user-share"></i> <strong>Share</strong> it with other users, assigning permissions to view, edit, or manage the item</p></li>
+<li><p><i class="k-icon-duplicate"></i> <strong>Clone</strong> it to create a duplicate that you can modify independently</p></li>
+<li><p><i class="k-icon-more"></i> Click <strong>More actions</strong> to manage <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations</a>, download the item as XLS or XML, or delete it</p></li>
 </ul>
+<p><img alt="Manage question library" src="_images/manage_library.png" /></p>
+<p>You can also click on any saved item to view its full details, including all questions contained within a question block.</p>
+</section>
+</section>
+<section id="adding-questions-to-a-form-from-the-question-library">
+<h2>Adding questions to a form from the question library<a class="headerlink" href="#adding-questions-to-a-form-from-the-question-library" title="Link to this heading">¶</a></h2>
+<p>Once you have added questions to your library, you can use them in future forms. To use library questions in your form:</p>
+<ol class="arabic simple">
+<li><p>Open your form in the <a class="reference external" href="https://support.kobotoolbox.org/formbuilder.html">KoboToolbox Formbuilder</a>.</p></li>
+<li><p>Click <i class="k-icon-library"></i> <strong>Add from Library</strong> in the top right corner.</p></li>
+<li><p>Select the question or question block you want to add, then drag and drop it into the desired location in your form.</p></li>
+<li><p>If your question library contains many items, you can use the <strong>Search</strong> function to quickly locate the question or block you need.</p></li>
+</ol>
+<p><img alt="Add question to form from library" src="_images/add_from_library.png" /></p>
+<p class="note">
+<strong>Note:</strong> When you add a question from your question library to a form, any changes you make in the form will not affect the original version saved in the library.
+</p>
+</section>
+<section id="adding-templates-to-your-question-library">
+<h2>Adding templates to your question library<a class="headerlink" href="#adding-templates-to-your-question-library" title="Link to this heading">¶</a></h2>
+<iframe src="https://www.youtube.com/embed/k-2jnfd3DrE?si=wR1zkjMjgM2Dq9mT" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>In addition to saving individual questions or question blocks, you can create full form templates that can be converted into KoboToolbox projects. Templates are useful for standardizing complete forms that can be reused across teams, projects, or countries.</p>
+<p class="note">
+<strong>Note:</strong>  A <strong>question block</strong> is a group of questions that can be inserted anywhere in a form, while a <strong>template</strong> contains a full form that can become a project.
+</p>
+<section id="creating-a-template">
+<h3>Creating a template<a class="headerlink" href="#creating-a-template" title="Link to this heading">¶</a></h3>
+<p>You can create a template either from your question library or from an existing KoboToolbox form.</p>
+<p>From your <strong>question library</strong>, you can:</p>
+<ul class="simple">
+<li><p>Click <strong>NEW &gt; <i class="k-icon-template"></i> Template.</strong> You will be taken to the Formbuilder to design the form after entering the template details.</p></li>
+<li><p>Click <strong>NEW &gt; <i class="k-icon-upload"></i> Upload</strong>, upload an XLSForm, and select <strong>Upload as template.</strong></p></li>
+</ul>
+<p><img alt="Upload template to library" src="_images/upload_as_template.png" /></p>
+<p class="note">
+<strong>Note:</strong> If you are using XLSForm, you can create locked templates that restrict other users from editing specific parts of the form. To learn more, see <a href="https://support.kobotoolbox.org/library_locking.html">Library locking with XLSForm</a>.
+</p>
+<p>To create a template from an <strong>existing KoboToolbox form:</strong></p>
+<ol class="arabic simple">
+<li><p>Open the project’s <strong>FORM</strong> page.</p></li>
+<li><p>Click <i class="k-icon-more"></i> <strong>More actions</strong> in the top right corner.</p></li>
+<li><p>Select <i class="k-icon-template"></i> <strong>Create template.</strong></p></li>
+</ol>
+<p><img alt="Create template" src="_images/create_template.png" /></p>
+<p>From the <strong>My Library</strong> page, you can manage templates in the same way as questions or question blocks. You can share them with other users, add tags, edit details, or delete them.</p>
+</section>
+<section id="creating-a-project-from-a-template">
+<h3>Creating a project from a template<a class="headerlink" href="#creating-a-project-from-a-template" title="Link to this heading">¶</a></h3>
+<p>You can use a template to create a new form project from your question library or from your <strong>Projects home page.</strong></p>
+<p>From the <strong>question library:</strong></p>
+<ol class="arabic simple">
+<li><p>Hover over the template and click <i class="k-icon-projects"></i> <strong>Create project</strong> on the right.</p></li>
+<li><p>Enter a name for the new project.</p></li>
+</ol>
+<p><img alt="Create template" src="_images/create_project.png" /></p>
+<p>From the <strong>Projects home page:</strong></p>
+<ol class="arabic simple">
+<li><p>Click <strong>NEW</strong> and select <i class="k-icon-template"></i> <strong>Use a template.</strong></p></li>
+<li><p>Choose a saved template and click <strong>Next.</strong></p></li>
+<li><p>Enter the project details and click <strong>Create project.</strong></p></li>
+</ol>
+<p>In both cases, a new KoboToolbox project will be created that you can edit and deploy.</p>
+<p><img alt="Use a template" src="_images/use_template1.png" /></p>
+<p class="note">
+<strong>Note:</strong> Editing a project created from a template does not modify the original template.
+</p>
+</section>
+</section>
+<section id="using-collections-in-the-question-library">
+<h2>Using collections in the question library<a class="headerlink" href="#using-collections-in-the-question-library" title="Link to this heading">¶</a></h2>
+<iframe src="https://www.youtube.com/embed/EfnyQh-awqk?si=7Hhb499SgsEL9pg4" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>A <strong>collection</strong> is a group of questions, question blocks, and/or templates organized together because they relate to the same project, theme, country, or other shared context. Collections help you structure and manage reusable content in your question library.</p>
+<section id="creating-a-collection">
+<h3>Creating a collection<a class="headerlink" href="#creating-a-collection" title="Link to this heading">¶</a></h3>
+<p>To create a collection:</p>
+<ol class="arabic simple">
+<li><p>From your question library, click <strong>NEW</strong> and select <i class="k-icon-folder"></i> <strong>Collection.</strong></p></li>
+<li><p>Enter a name and, if desired, add a short description, organization, primary sector, and country. These fields are optional.</p></li>
+<li><p>Add tags to help categorize and organize your collection.</p></li>
+<li><p>Click <strong>Create.</strong></p></li>
+</ol>
+<p><img alt="Create collection" src="_images/create_collection.png" /></p>
+<p class="note">
+<strong>Note:</strong> If you want to import a large number of questions or question blocks into your library as a single collection, you can do so using an <a href="https://support.kobotoolbox.org/edit_forms_excel.html">XLSForm</a>. To learn more, see <a href="https://support.kobotoolbox.org/import_collection.html">Importing library collections using XLSForm</a>.
+</p>
+<p>After creating the collection, you will be taken to the collection’s main page, which will display the message: “There are no assets to display.”</p>
+</section>
+<section id="adding-items-to-a-collection">
+<h3>Adding items to a collection<a class="headerlink" href="#adding-items-to-a-collection" title="Link to this heading">¶</a></h3>
+<p>You can add questions, question blocks, or templates to a collection in several ways:</p>
+<ul class="simple">
+<li><p>From the <strong>collection page:</strong></p>
+<ul>
+<li><p>Click <strong>NEW &gt; <i class="k-icon-block"></i> Question Block</strong> to create a new question or block in the Formbuilder and save it to the collection.</p></li>
+<li><p>Click <strong>NEW &gt; <i class="k-icon-template"></i> Template</strong> to create a template and save it to the collection.</p></li>
+</ul>
+</li>
+<li><p>From <strong>My Library</strong>, hover over an existing item, click <i class="k-icon-more"></i> <strong>More actions</strong>, and choose the name of your collection under <i class="k-icon-folder-in"></i> <strong>Move to.</strong></p></li>
+</ul>
+<p><img alt="Add to collection" src="_images/add_to_collection.png" /></p>
+<p class="note">
+<strong>Note:</strong> You cannot create nested collections. If you create a collection while inside another collection, it will be saved as a separate collection.
+</p>
+<p>To remove an item from a collection, click <i class="k-icon-more"></i> <strong>More actions</strong> in the item’s row and select <i class="k-icon-folder-out"></i> <strong>Remove from collection.</strong></p>
+</section>
+<section id="managing-collections">
+<h3>Managing collections<a class="headerlink" href="#managing-collections" title="Link to this heading">¶</a></h3>
+<p>You can manage your collection from the <strong>My Library</strong> page by hovering over it and selecting the available options to <i class="k-icon-edit"></i> modify its details, <i class="k-icon-tag"></i> add tags, <i class="k-icon-user-share"></i> share it with other users, or <i class="k-icon-trash"></i> delete it. You can also perform these actions directly from the collection’s page.</p>
+<p class="note">
+<strong>Note:</strong> Deleting a collection permanently deletes all items contained within it. 
+</p>
+<p>To <strong>make a collection public</strong>, open the collection and click the <i class="k-icon-globe-alt"></i> <strong>Make public</strong> button in the top right corner. Note that the <strong>name, organization,</strong> and <strong>sector</strong> fields must be completed before a collection can be made public.</p>
+<p class="note"> To learn more about public collections, see <a href="https://support.kobotoolbox.org/using_public_collections.html">Public collections in the KoboToolbox library</a>.
+</p>
+</section>
 </section>
 </section>
 
@@ -217,9 +345,10 @@ The file generally follows the XLSForm format. There a few differences:</p>
 <li class="toctree-l1"><a class="reference internal" href="external_file.html">Selecting options from an external file in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Dynamic data attachments using the Formbuilder</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Using the KoboToolbox question library</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#adding-questions-to-your-library">Adding Questions to your Library</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#managing-questions-in-your-library">Managing Questions in your Library</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#importing-collections">Importing Collections</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-questions-to-the-question-library">Adding questions to the question library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-questions-to-a-form-from-the-question-library">Adding questions to a form from the question library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-templates-to-your-question-library">Adding templates to your question library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-collections-in-the-question-library">Using collections in the question library</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Public collections in the KoboToolbox library</a></li>
