@@ -3,8 +3,6 @@
 
 Selecting options from an image allows respondents to tap or click directly on **specific areas of an SVG file** instead of choosing from a text list. This feature works in both Enketo web forms and the KoboCollect Android app.
 
-![](images/select_from_image/select_image.png)
-
 You might use this feature to:
 
 - Select a location from an image of a room or facility
@@ -12,6 +10,9 @@ You might use this feature to:
 - Select damaged areas from a photo of a building after a disaster
 
 This article explains how to create a selectable SVG image and configure your XLSForm so respondents can choose options directly from the image.
+
+![](images/select_from_image/select_image.png)
+
 
 ## Creating your selectable image
 
