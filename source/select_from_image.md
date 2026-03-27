@@ -1,5 +1,5 @@
 # Selecting options from an image
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e9d3dc39c03678b6ae014a7510bff548f4be3248/source/select_from_image.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/05f26f0d56d32e4ce595f0ca6377f6fdfdb85d4b/source/select_from_image.md" class="reference">27 Mar 2026</a>
 
 Selecting options from an image allows respondents to tap or click directly on **specific areas of an SVG file** instead of choosing from a text list. This feature works in both Enketo web forms and the KoboCollect Android app.
 
