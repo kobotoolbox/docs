@@ -29,7 +29,7 @@ Available metadata questions in the Formbuilder include:
 | device id | Records the unique identification of the device or browser used to collect data. The device ID is automatically generated and cannot be modified by users.<br><br><strong>Note:</strong> In KoboCollect, the device ID is updated whenever the app is reinstalled on a device. In Enketo, the <code>deviceid</code> resets any time a new browser window is used. |
 | start geopoint early | Captures GPS coordinates when the form is first opened. Can be used to warm up the device GPS so that later GPS questions can reach accurate readings more quickly. |
 
-### Audit metadata question
+## Audit metadata question
 
 The audit metadata question records a detailed log of the interview process while a form is being completed in the [KoboCollect Android app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#). It captures information such as when the form was opened and saved, which questions were viewed, how long respondents spent on each screen, and other user actions during data collection.
 
@@ -48,7 +48,7 @@ Audit logs are saved as CSV files and uploaded with each submission. These files
 
 The audit metadata question is not supported in [Enketo web forms](https://support.kobotoolbox.org/enketo.html). 
 
-**Audit settings**
+### Audit settings
 
 Additional optional settings can be configured for the audit metadata question. These include:
 
@@ -60,18 +60,6 @@ Additional optional settings can be configured for the audit metadata question. 
 Available settings are listed in the [ODK audit logging documentation](https://docs.getodk.org/form-audit-log/) as parameters. In the Formbuilder, enter the optional parameters directly in the **Audit settings** text box.
 
 ![Audit settings](images/question_types/audit_settings.png)
-
-### Configuring metadata in KoboCollect 
-
-The user’s default phone number and username can be [configured](https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings) and modified in the KoboCollect app.
-
-To configure user metadata in KoboCollect:
-
-1. Open the KoboCollect app.
-2. Tap the **Project icon** in the top right corner of your screen.
-3. Tap **Settings**.
-4. Scroll down to **User and device identity**, then **Form metadata.**
-5. Enter the username and/or phone number. You can also view the current device ID.
 
 ## Enabling background audio recording
 
@@ -95,3 +83,14 @@ This feature can support qualitative data collection by capturing detailed inter
 <strong>Note:</strong> Before using this feature, ensure that your device has sufficient storage space for audio files. You should also obtain <strong>informed consent</strong> from respondents before recording. Always consider ethical implications and comply with applicable data protection laws in your area of work.
 </p>
 
+## Configuring metadata in KoboCollect 
+
+The user’s default phone number and username can be [configured](https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings) and modified in the KoboCollect app.
+
+To configure user metadata in KoboCollect:
+
+1. Open the KoboCollect app.
+2. Tap the **Project icon** in the top right corner of your screen.
+3. Tap **Settings**.
+4. Scroll down to **User and device identity**, then **Form metadata.**
+5. Enter the username and/or phone number. You can also view the current device ID.
