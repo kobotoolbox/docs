@@ -1,5 +1,5 @@
 # Adding form metadata in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/993d3dc43ba1b0558f51cf282783bb942a11ed4b/source/form_meta.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c721217091801f27ac8d7932fd0426240fc45aed/source/form_meta.md" class="reference">1 Apr 2026</a>
 
 Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. 
 
