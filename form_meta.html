@@ -108,7 +108,7 @@
           
   <section id="adding-form-metadata-in-the-formbuilder">
 <h1>Adding form metadata in the Formbuilder<a class="headerlink" href="#adding-form-metadata-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/993d3dc43ba1b0558f51cf282783bb942a11ed4b/source/form_meta.md" class="reference">21 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c721217091801f27ac8d7932fd0426240fc45aed/source/form_meta.md" class="reference">1 Apr 2026</a></p>
 <p>Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent.</p>
 <p>Metadata questions are <strong>hidden from respondents</strong>, and <strong>metadata fields cannot be edited</strong> in the KoboToolbox data table. This background information supports auditing, helps maintain data integrity, and can be used in data analysis.</p>
 <p>This article explains how to add and manage metadata questions in the Formbuilder, outlines the available metadata options, and describes how audit logging and background audio recording can support data quality and monitoring during data collection.</p>
@@ -154,8 +154,9 @@
 </tr>
 </tbody>
 </table>
+</section>
 <section id="audit-metadata-question">
-<h3>Audit metadata question<a class="headerlink" href="#audit-metadata-question" title="Link to this heading">¶</a></h3>
+<h2>Audit metadata question<a class="headerlink" href="#audit-metadata-question" title="Link to this heading">¶</a></h2>
 <p>The audit metadata question records a detailed log of the interview process while a form is being completed in the <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html#">KoboCollect Android app</a>. It captures information such as when the form was opened and saved, which questions were viewed, how long respondents spent on each screen, and other user actions during data collection.</p>
 <p>Audit logging can help:</p>
 <ul class="simple">
@@ -169,7 +170,8 @@
     For more information about the exported CSV files, see the full <a href="https://docs.getodk.org/form-audit-log/">ODK audit logging documentation</a>.
 </p>
 <p>The audit metadata question is not supported in <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>.</p>
-<p><strong>Audit settings</strong></p>
+<section id="audit-settings">
+<h3>Audit settings<a class="headerlink" href="#audit-settings" title="Link to this heading">¶</a></h3>
 <p>Additional optional settings can be configured for the audit metadata question. These include:</p>
 <ul class="simple">
 <li><p>Adding the GPS location of events</p></li>
@@ -179,18 +181,6 @@
 </ul>
 <p>Available settings are listed in the <a class="reference external" href="https://docs.getodk.org/form-audit-log/">ODK audit logging documentation</a> as parameters. In the Formbuilder, enter the optional parameters directly in the <strong>Audit settings</strong> text box.</p>
 <p><img alt="Audit settings" src="_images/audit_settings.png" /></p>
-</section>
-<section id="configuring-metadata-in-kobocollect">
-<h3>Configuring metadata in KoboCollect<a class="headerlink" href="#configuring-metadata-in-kobocollect" title="Link to this heading">¶</a></h3>
-<p>The user’s default phone number and username can be <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">configured</a> and modified in the KoboCollect app.</p>
-<p>To configure user metadata in KoboCollect:</p>
-<ol class="arabic simple">
-<li><p>Open the KoboCollect app.</p></li>
-<li><p>Tap the <strong>Project icon</strong> in the top right corner of your screen.</p></li>
-<li><p>Tap <strong>Settings</strong>.</p></li>
-<li><p>Scroll down to <strong>User and device identity</strong>, then <strong>Form metadata.</strong></p></li>
-<li><p>Enter the username and/or phone number. You can also view the current device ID.</p></li>
-</ol>
 </section>
 </section>
 <section id="enabling-background-audio-recording">
@@ -210,6 +200,18 @@ For more information, see <a href="https://support.kobotoolbox.org/recording-int
 <p class="note">
 <strong>Note:</strong> Before using this feature, ensure that your device has sufficient storage space for audio files. You should also obtain <strong>informed consent</strong> from respondents before recording. Always consider ethical implications and comply with applicable data protection laws in your area of work.
 </p>
+</section>
+<section id="configuring-metadata-in-kobocollect">
+<h2>Configuring metadata in KoboCollect<a class="headerlink" href="#configuring-metadata-in-kobocollect" title="Link to this heading">¶</a></h2>
+<p>The user’s default phone number and username can be <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">configured</a> and modified in the KoboCollect app.</p>
+<p>To configure user metadata in KoboCollect:</p>
+<ol class="arabic simple">
+<li><p>Open the KoboCollect app.</p></li>
+<li><p>Tap the <strong>Project icon</strong> in the top right corner of your screen.</p></li>
+<li><p>Tap <strong>Settings</strong>.</p></li>
+<li><p>Scroll down to <strong>User and device identity</strong>, then <strong>Form metadata.</strong></p></li>
+<li><p>Enter the username and/or phone number. You can also view the current device ID.</p></li>
+</ol>
 </section>
 </section>
 
@@ -275,7 +277,9 @@ For more information, see <a href="https://support.kobotoolbox.org/recording-int
 <li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Adding form metadata in the Formbuilder</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#adding-metadata-questions-in-the-formbuilder">Adding metadata questions in the Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#audit-metadata-question">Audit metadata question</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#enabling-background-audio-recording">Enabling background audio recording</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-metadata-in-kobocollect">Configuring metadata in KoboCollect</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
