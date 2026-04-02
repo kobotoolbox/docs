@@ -3,7 +3,7 @@
 
 <iframe src="https://www.youtube.com/embed/wLWiw473YSQ?si=tJbKl-VzjZkDPivR" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-You can customize the layout and visual appearance of your [web forms](https://support.kobotoolbox.org/enketo.html) using built-in themes. These themes allow you to control how questions are displayed, whether on a single page, across multiple pages, or arranged in a compact grid layout.
+You can customize the layout and visual appearance of your [web forms](https://support.kobotoolbox.org/data_through_webforms.html) using built-in themes. These themes allow you to control how questions are displayed, whether on a single page, across multiple pages, or arranged in a compact grid layout.
 
 Form themes apply only to web forms and are not supported in KoboCollect. This article explains how to apply a web form theme in the Formbuilder and how to configure question widths when using the Grid theme.
 
