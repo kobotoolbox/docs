@@ -363,7 +363,7 @@ The nonprofit organization that develops and maintains KoboToolbox, supporting g
 The KoboToolbox Android app used for mobile data collection, allowing enumerators to download forms, complete them offline, and submit data when connected. It is one of two ways that you can collect data with KoboToolbox, alongside web forms.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Getting started with KoboCollect</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Setting up the KoboCollect app</a>.
 </p>
 
 **Related term(s):** [Web forms](https://support.kobotoolbox.org/glossary.html#web-forms)
@@ -432,7 +432,7 @@ The user who has full control over a KoboToolbox project, including managing its
 In the KoboCollect app, a project refers to a KoboToolbox account that the app is connected to. Each connected account appears as its own project and can contain multiple forms for data collection.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Getting started with KoboCollect</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Setting up the KoboCollect app</a>.
 </p>
 
 **Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect)
