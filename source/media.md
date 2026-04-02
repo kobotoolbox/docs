@@ -6,7 +6,7 @@
 
 KoboToolbox allows you to add media, including **images**, **audio files**, and **videos**, to notes, questions, and choices in your form. Adding media can increase user engagement and make forms more accessible for users with visual impairments or literacy barriers. 
 
-Form media works with both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [Enketo web forms](https://support.kobotoolbox.org/enketo.html). The following types of media files are currently supported:
+Form media works with both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [web forms](https://support.kobotoolbox.org/enketo.html). The following types of media files are currently supported:
 
 | Media | Files |
 | :--- | :--- |
@@ -161,14 +161,14 @@ If media files are not appearing in your deployed form, check the following:
 
 <details>
 <summary><strong>Changing the size of a media file</strong></summary>
-To control the size of images displayed in your questions or choices, you must upload media files with the desired dimensions. Note that using very large files can increase loading times in Enketo forms.
+To control the size of images displayed in your questions or choices, you must upload media files with the desired dimensions. Note that using very large files can increase loading times in web forms.
 </details>
 
 <br>
 
 <details>
 <summary><strong>Form takes a long time to load</strong></summary>
-Enketo forms will load slowly if your media files are large. Reduce the size of image, video, or audio files before uploading them to the server to improve loading times.
+Web forms will load slowly if your media files are large. Reduce the size of image, video, or audio files before uploading them to the server to improve loading times.
 </details>
 
 <br>
@@ -182,7 +182,7 @@ Media in KoboToolbox forms is center-aligned by default, and custom alignment (l
 
 <details>
 <summary><strong>Animated GIF files not supported</strong></summary>
-Animated GIF files are not currently supported by either Enketo web forms or the KoboCollect Android app.
+Animated GIF files are not currently supported by either web forms or the KoboCollect Android app.
 </details>
 
 <br>
