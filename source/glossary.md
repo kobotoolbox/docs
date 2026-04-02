@@ -95,7 +95,7 @@ A feature that continuously records audio during an interview while the form is 
 Empty data collection forms that have been downloaded to a device in the KoboCollect app. These forms contain no responses yet and are ready for data collection. Blank forms are also referred to as **form definitions** in the app.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Collecting data using KoboCollect</a>.
 </p>
 
 **Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect)
@@ -208,7 +208,7 @@ Projects that have been published and are ready for data collection, allowing us
 Forms that have been started but not yet sent to the server. Drafts can be reopened, edited, and finalized later. In KoboCollect, drafts are stored in the **Drafts** section of the app. When using web forms, drafts are stored locally in the web browser. 
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Data collection using web forms</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Collecting data using KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting data using web forms</a>.
 </p>
 
 **Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect), [Web forms](https://support.kobotoolbox.org/glossary.html#web-forms)
@@ -592,7 +592,7 @@ A feature that allows KoboToolbox to automatically send data to external systems
 Forms that contain data entered from the KoboCollect app. This includes drafts, finalized forms, and forms that have already been sent to the server.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Collecting data using KoboCollect</a>.
 </p>
 
 **Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Blank forms](https://support.kobotoolbox.org/glossary.html#blank-forms-kobocollect), [Drafts](https://support.kobotoolbox.org/glossary.html#drafts)
@@ -658,7 +658,7 @@ Rules that define what counts as an acceptable answer for a question, such as re
 Browser-based forms used to collect data online or offline, offering an alternative to the KoboCollect Android app and compatible with all major devices. 
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Data collection using web forms</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting data using web forms</a>.
 </p>
 
 **Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect)
