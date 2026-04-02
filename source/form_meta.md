@@ -23,10 +23,10 @@ Available metadata questions in the Formbuilder include:
 | start time | Records the exact time and date when a submission is started. |
 | end time | Records the date and time when a submission is finalized. |
 | today | Records the date of the submission. |
-| audit | Captures a [detailed log](https://support.kobotoolbox.org/form_meta.html#audit-metadata-question) of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo.|
-| username | In KoboCollect, records the username saved in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. If no username is set, it records the one used to sign in to the server.<br>In Enketo, records the account username only if <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.<br><br><strong>Note:</strong> Because the <code>username</code> field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the automatically generated <code>_submitted_by</code> field. |
-| phone number | Records the phone number stored in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in Enketo. |
-| device id | Records the unique identification of the device or browser used to collect data. The device ID is automatically generated and cannot be modified by users.<br><br><strong>Note:</strong> In KoboCollect, the device ID is updated whenever the app is reinstalled on a device. In Enketo, the <code>deviceid</code> resets any time a new browser window is used. |
+| audit | Captures a [detailed log](https://support.kobotoolbox.org/form_meta.html#audit-metadata-question) of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in web forms.|
+| username | In KoboCollect, records the username saved in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. If no username is set, it records the one used to sign in to the server.<br>When using web forms, the account username is recorded only if <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.<br><br><strong>Note:</strong> Because the <code>username</code> field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the automatically generated <code>_submitted_by</code> field. |
+| phone number | Records the phone number stored in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in web forms. |
+| device id | Records the unique identification of the device or browser used to collect data. The device ID is automatically generated and cannot be modified by users.<br><br><strong>Note:</strong> In KoboCollect, the device ID is updated whenever the app is reinstalled on a device. In web forms, the <code>deviceid</code> resets any time a new browser window is used. |
 | start geopoint early | Captures GPS coordinates when the form is first opened. Can be used to warm up the device GPS so that later GPS questions can reach accurate readings more quickly. |
 
 ## Audit metadata question
@@ -46,7 +46,7 @@ Audit logs are saved as CSV files and uploaded with each submission. These files
     For more information about the exported CSV files, see the full <a href="https://docs.getodk.org/form-audit-log/">ODK audit logging documentation</a>.
 </p>
 
-The audit metadata question is not supported in [Enketo web forms](https://support.kobotoolbox.org/enketo.html). 
+The audit metadata question is not supported in [web forms](https://support.kobotoolbox.org/data_through_webforms.html). 
 
 ### Audit settings
 
@@ -71,7 +71,7 @@ To enable background audio recording in the Formbuilder:
 
 1. Open the **Layout & Settings** panel. 
 2. Turn on the **Enable audio recording in the background** toggle under **Background audio.**
-3. Once enabled, audio will be recorded in the background in both KoboCollect and Enketo web forms while the form is being filled out.
+3. Once enabled, audio will be recorded in the background in both KoboCollect and web forms while the form is being filled out.
 
 <p class="note">
 For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#">Recording interviews with background audio recording</a>.
