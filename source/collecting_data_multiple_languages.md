@@ -21,7 +21,7 @@ For larger or more complex multilingual forms, XLSForm is often the more efficie
   To learn more about setting up translations in XLSForm, see <a href="https://support.kobotoolbox.org/language_xls.html">Adding translations in XLSForm</a>.
 </p>
 
-Most elements displayed to respondents can be translated. These include **question labels, hints, choice labels, constraint messages**, and **required messages.** Elements that define the structure of the form, such as [XML values](https://support.kobotoolbox.org/glossary.html#xml-value), cannot be translated and should remain in the language you use for form development and data analysis.
+Most elements displayed to respondents can be translated. These include **question labels, hints, choice labels, constraint messages**, and **required messages.** Elements that define the structure of the form, such as [data column names](https://support.kobotoolbox.org/glossary.html#data-column-name) and [XML values](https://support.kobotoolbox.org/glossary.html#xml-value), cannot be translated and should remain in the language you use for form development and data analysis.
 
 <p class="note">
   <strong>Note:</strong> XLSForm makes it easy to add translations in bulk using machine translation or online translation tools. Machine translations should always be reviewed by a fluent speaker to ensure accuracy, cultural appropriateness, and correct context. This helps maintain the quality and reliability of your translated content.
