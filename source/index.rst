@@ -136,20 +136,15 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :name: home-page-toc-collecting-data
 
   data-collection-tools
-  enketo
   deploy_form_new_project
-  recording-interviews
   data_through_webforms
-  data-offline
   kobocollect_on_android_latest
-  kobocollect_settings
   data_collection_kobocollect
-  transferring_forms
-  devices_for_data_collection
-  troubleshooting_kobocollect
-  troubleshooting_webforms
+  kobocollect_settings
   collect_gps
+  recording-interviews
   collecting_data_multiple_languages
+
 
 .. raw:: html
 
@@ -266,6 +261,7 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   add_logo
   stuck_in_pending
   manual_upload
+  transferring_forms
 
 .. raw:: html
 
