@@ -1,5 +1,5 @@
 # Using XLSForm with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6aa13c69b74ba734eba50a997208c7b5e259c46d/source/xlsform_with_kobotoolbox.md" class="reference">6 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3d1f40f1b43d2cc91a37eef61c0e3cc6a1ff1ae9/source/xlsform_with_kobotoolbox.md" class="reference">1 Apr 2026</a>
 
 XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
@@ -155,7 +155,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 | `The survey element named 'name' has no label or hint.` | One of the questions in your form is missing a question label. |
 | `FormLogicError: Could not evaluate: [expression], message: The string did not match the expected pattern.` | A form logic expression contains errors, such as incorrect question referencing syntax or a missing parenthesis. |
 | `unable to deploy ODK Validate Errors: >> XForm is invalid` | A form logic expression contains errors, such as incorrect question referencing syntax or a missing parenthesis. |
-| `There has been a problem trying to replace ${question with the XPath to the survey element named 'question'. There is no survey element with this name.` | You are referring to a question in your form that does not exist or is misspelled. Ensure you are using the **exact** question name in your form logic expressions. |
+| `There has been a problem trying to replace ${question} with the XPath to the survey element named 'question'. There is no survey element with this name.` | You are referring to a question in your form that does not exist or is misspelled. Ensure you are using the **exact** question name in your form logic expressions. |
 | `'list_name'`<br>`​​List name not in choices sheet` | The option list for a question has not been defined, or there is a typo in the `list_name`. |
 | `Choice names must be unique for each choice list. If this is intentional, use the setting 'allow_choice_duplicates'.` | Duplicate choice names have been used within the same list of options. Remove the duplicated choice name(s), or allow choice duplicates in your <a href="https://support.kobotoolbox.org/form_settings_xls.html#available-form-settings-in-xlsform">form settings</a>. |
 | `Unmatched begin statement: group (group)` | Question group is missing its corresponding `end_group` row. |
