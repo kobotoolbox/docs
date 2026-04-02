@@ -3,7 +3,7 @@
 
 Question appearances allow you to customize how questions are displayed in the form and the type of responses they collect. This article explains how to add question appearances in XLSForm and lists common appearances by question type. 
 
-It is important to note that some appearances only work in [web forms](https://support.kobotoolbox.org/enketo.html), while others are supported only in [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html). Consider your data collection method when selecting appearances.
+It is important to note that some appearances only work in [web forms](https://support.kobotoolbox.org/data_through_webforms.html), while others are supported only in [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html). Consider your data collection method when selecting appearances.
 
 <p class="note">
   <b>Note:</b> This article focuses on setting question appearances in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about setting appearances in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/using-formbuilder.html">Using the Formbuilder</a> documentation.
