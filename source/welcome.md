@@ -60,7 +60,7 @@ Collect data offline or online [on any device](https://support.kobotoolbox.org/d
 ![Web form](/images/welcome/enketo.png)
 
 <p class="note">
-To learn more about using mobile devices for data collection, see <a href="https://support.kobotoolbox.org/devices_for_data_collection.html">Recommended devices for data collection</a>. 
+To learn more about different options for collecting data with KoboToolbox, see <a href="https://support.kobotoolbox.org/data-collection-tools.html">Data collection with KoboToolbox</a>. 
 </p>
 
 
