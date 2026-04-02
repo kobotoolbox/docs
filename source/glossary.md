@@ -205,13 +205,13 @@ Projects that have been published and are ready for data collection, allowing us
 
 ## Drafts
 
-Forms that have been started but not yet sent to the server. Drafts can be reopened, edited, and finalized later. In KoboCollect, drafts are stored in the **Drafts** section of the app. In Enketo, drafts are stored locally in the web browser. 
+Forms that have been started but not yet sent to the server. Drafts can be reopened, edited, and finalized later. In KoboCollect, drafts are stored in the **Drafts** section of the app. When using web forms, drafts are stored locally in the web browser. 
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Data collection using Enketo web forms</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#">Data collection using KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Data collection using web forms</a>.
 </p>
 
-**Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect), [Enketo web forms](https://support.kobotoolbox.org/glossary.html#enketo-web-forms)
+**Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect), [Web forms](https://support.kobotoolbox.org/glossary.html#web-forms)
 
 ---
 
@@ -246,23 +246,11 @@ A security feature that protects form submissions by encoding the data so it can
 
 ---
 
-## Enketo web forms
-
-Browser-based forms used to collect data online or offline, offering an alternative to the KoboCollect Android app and compatible with all major devices. 
-
-<p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Data collection using Enketo web forms</a>.
-</p>
-
-**Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect)
-
----
-
 ## Enumerator
 
 A person who collects data by completing a form during an interview or field visit, either on a mobile device or through a web form.
 
-**Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Enketo web forms](https://support.kobotoolbox.org/glossary.html#enketo-web-forms)
+**Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Web forms](https://support.kobotoolbox.org/glossary.html#web-forms)
 
 ---
 
@@ -372,13 +360,13 @@ The nonprofit organization that develops and maintains KoboToolbox, supporting g
 
 ## KoboCollect
 
-The KoboToolbox Android app used for mobile data collection, allowing enumerators to download forms, complete them offline, and submit data when connected. It is one of two ways that you can collect data with KoboToolbox, alongside Enketo web forms.
+The KoboToolbox Android app used for mobile data collection, allowing enumerators to download forms, complete them offline, and submit data when connected. It is one of two ways that you can collect data with KoboToolbox, alongside web forms.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Getting started with KoboCollect</a>.
 </p>
 
-**Related term(s):** [Enketo web forms](https://support.kobotoolbox.org/glossary.html#enketo-web-forms)
+**Related term(s):** [Web forms](https://support.kobotoolbox.org/glossary.html#web-forms)
 
 ---
 
@@ -662,6 +650,18 @@ Rules that define what counts as an acceptable answer for a question, such as re
 </p>
 
 **Related term(s):** [Form logic](https://support.kobotoolbox.org/glossary.html#form-logic)
+
+---
+
+## Web forms
+
+Browser-based forms used to collect data online or offline, offering an alternative to the KoboCollect Android app and compatible with all major devices. 
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">Data collection using web forms</a>.
+</p>
+
+**Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect)
 
 ---
 
