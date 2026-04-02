@@ -3,7 +3,7 @@
 
 <iframe src="https://www.youtube.com/embed/3O2K78F7DCA?si=lt-ZlSRoAjFuSMl1" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Adding translations to a form allows users to **choose their preferred language** during data collection without creating separate forms. Any number of translations can be added. Both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [Enketo web forms](https://support.kobotoolbox.org/enketo.html) support form translations.
+Adding translations to a form allows users to **choose their preferred language** during data collection without creating separate forms. Any number of translations can be added. Both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [web forms](https://support.kobotoolbox.org/enketo.html) support form translations.
 
 You can add translations to your form directly in the KoboToolbox interface or by using [XLSForm](https://support.kobotoolbox.org/language_xls.html). KoboToolbox offers an **intuitive interface** that requires no technical expertise, and allows you to easily add multiple translations to your forms. This approach is useful when working with a small number of questions or when you want to make quick adjustments.
 
