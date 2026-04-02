@@ -87,7 +87,7 @@ The submission window displays all responses and includes the following options:
 
 - View data in [any form language](https://support.kobotoolbox.org/collecting_data_multiple_languages.html).
 - Display [XML values](https://support.kobotoolbox.org/glossary.html#xml-value) next to each question.
-- **View** and **Edit** the submission [in Enketo](https://support.kobotoolbox.org/editing_deleting_data.html).
+- **View** and **Edit** the submission as a [web form](https://support.kobotoolbox.org/editing_deleting_data.html).
 - **Duplicate** the submission.
 - <i class="k-icon-print"></i> **Print** the submission.
 - <i class="k-icon-trash"></i> **Delete** the submission.
