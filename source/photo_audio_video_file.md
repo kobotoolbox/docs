@@ -3,7 +3,7 @@
 
 Many data collection projects require more than just quantitative data. KoboToolbox allows you to capture various media files from respondents, including photos, audio recordings, videos, and files, to provide key qualitative information and add visual and auditory depth to your datasets.
 
-The method of capturing or uploading media depends on whether you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [web forms](https://support.kobotoolbox.org/enketo.html) for data collection. In KoboCollect, you can either upload or record media files directly within the app. When using web forms, you can upload any media file, and record audio directly within the forms.
+The method of capturing or uploading media depends on whether you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html) for data collection. In KoboCollect, you can either upload or record media files directly within the app. When using web forms, you can upload any media file, and record audio directly within the forms.
 
 This article covers the following topics:
 - Available media question types in KoboToolbox
@@ -50,7 +50,7 @@ The table below shows how media questions are displayed by default in web forms 
 ![Default appearances of media questions](images/photo_audio_video_file/table_updated.png)
 
 <p class="note">
-<strong>Note:</strong> Barcode / QR Code questions are supported only in <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> on mobile devices. When a code is scanned using the device’s camera, the value encoded in the barcode or QR code is automatically captured. In <a href="https://support.kobotoolbox.org/enketo.html">web forms</a>, this question type appears as a standard text field, where respondents must manually enter the value.
+<strong>Note:</strong> Barcode / QR Code questions are supported only in <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> on mobile devices. When a code is scanned using the device’s camera, the value encoded in the barcode or QR code is automatically captured. In <a href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a>, this question type appears as a standard text field, where respondents must manually enter the value.
 </p>
 
 ### Advanced appearances 
