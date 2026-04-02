@@ -149,7 +149,7 @@ Automated reports in the DATA > Reports view that display your project data in g
 
 ## Data column name
 
-The internal short names assigned to questions that are used to store and reference data in a form. These are also called **question names** in XLSForm, and sometimes referred to as **XML values** or **headers** in the user interface. Exporting your data using XML values and headers can facilitate data management and analysis.
+Internal short names assigned to questions that are used to store and reference data in a form. These are also called **question names** in XLSForm, and sometimes referred to as **XML values** or **headers** in the user interface. Exporting your data using XML values and headers can facilitate data management and analysis.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
@@ -687,7 +687,7 @@ The XML version of a form generated when a project is deployed, used by data col
 
 ## XML value
 
-The internal short names assigned to choices that are used to store and reference data in a form. These are also called **choice names** in XLSForm. Exporting your data using XML values can facilitate data management and analysis.
+Internal short names assigned to choices that are used to store and reference data in a form. These are also called **choice names** in XLSForm. In the user interface, XML value is sometimes used to refer to **data column names**. Exporting your data using XML values can facilitate data management and analysis. 
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">Setting XML values for option choices</a>.
