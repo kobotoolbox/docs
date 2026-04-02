@@ -136,7 +136,7 @@ data collection: [web forms](https://support.kobotoolbox.org/enketo.html), [Kobo
 
 <p class="note">
 To learn more about setting up KoboCollect to preview and test your forms, see
-<a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Getting started with KoboCollect</a>.
+<a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Setting up the KoboCollect app</a>.
 </p>
 
 ## Troubleshooting
