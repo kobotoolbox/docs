@@ -63,9 +63,9 @@ The default **Voice only** setting is suitable for quiet interview settings. For
 
 ## Data collection with background audio recordings 
 
-Background audio can be recorded using the [KoboCollect Android app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) as well as in [Enketo web forms](https://support.kobotoolbox.org/enketo.html).
+Background audio can be recorded using the [KoboCollect Android app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) as well as in [web forms](https://support.kobotoolbox.org/data_through_webforms.html).
 
-In Enketo, a disclaimer will appear at the beginning of the form informing respondents that background audio is being recorded. In both Enketo and KoboCollect, a microphone icon showing the recording's duration will be visible at the top of the form while background audio is actively recording.
+In web forms, a disclaimer will appear at the beginning of the form informing respondents that background audio is being recorded. In both web forms and KoboCollect, a microphone icon showing the recording's duration will be visible at the top of the form while background audio is actively recording.
 
 <p class="note">
 <strong>Note:</strong> When background audio recording is active on a form <strong>in KoboCollect</strong>, <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Audio question types</a> are deactivated, as it is not possible to record audio using both features simultaneously in KoboCollect. 
@@ -110,7 +110,7 @@ Background audio recordings are treated very similarly to audio files collected 
 
 <details>
   <summary><strong>Forms with background audio recording saved as drafts</strong></summary>
-  If a form with background audio recording is saved as a draft in <strong>Enketo</strong>, only the initial recording will be retained. The recording will not resume or be replaced when the draft form is reopened. <br><br>
+  If a form with background audio recording is saved as a draft when using <strong>web forms</strong>, only the initial recording will be retained. The recording will not resume or be replaced when the draft form is reopened. <br><br>
 If a form with background audio recording is saved as a draft in <strong>KoboCollect</strong>, recording will resume when the draft form is reopened. Both recordings will be stored together in a single file.
 </details>
 
