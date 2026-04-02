@@ -3,7 +3,7 @@
 
 Question appearances allow you to customize how questions are displayed in the form and the type of responses they collect. This article explains how to add question appearances in XLSForm and lists common appearances by question type. 
 
-It is important to note that some appearances only work in [Enketo web forms](https://support.kobotoolbox.org/enketo.html), while others are supported only in [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html). Consider your data collection method when selecting appearances.
+It is important to note that some appearances only work in [web forms](https://support.kobotoolbox.org/data_through_webforms.html), while others are supported only in [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html). Consider your data collection method when selecting appearances.
 
 <p class="note">
   <b>Note:</b> This article focuses on setting question appearances in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about setting appearances in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/using-formbuilder.html">Using the Formbuilder</a> documentation.
@@ -28,24 +28,24 @@ To add question appearances in XLSForm:
 
 
 ## Available question appearances in XLSForm
-The tables below list common question appearances by question type and shows which are supported in Enketo web forms and KoboCollect.
+The tables below list common question appearances by question type and shows which are supported in web forms and KoboCollect.
 
 ### Select question types
 Select questions allow respondents to [choose from predefined options](https://support.kobotoolbox.org/question_types_xls.html#select-question-types).
 
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
-| `minimal` | Displays choices in a drop-down menu. | Enketo and KoboCollect |
-| `compact` | Displays choices side-by-side with minimal padding and without choice boxes. | Enketo and KoboCollect |
-| `label` | Displays choice labels without the choice boxes. | Enketo and KoboCollect |
-| `list-nolabel` | Displays the answer choice boxes without the labels. | Enketo and KoboCollect |
-| `autocomplete` | Adds a search bar at the top of the option list. | Enketo and KoboCollect (combine with `minimal` appearance) |
-| `likert` | Displays answer choices as a Likert scale (`select_one` only). | Enketo and KoboCollect  |
-| `horizontal` | Displays choices in evenly sized columns, with the same number of choices in each row. | Enketo only. Use `columns` instead for compatibility with KoboCollect. |
-| `columns` | Displays choices in evenly sized columns, with the same number of choices in each row. | Enketo and KoboCollect |
-| `horizontal-compact` | Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label. | Enketo only. Use `columns-pack` instead for compatibility with KoboCollect. |
-| `columns-pack` | Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label. | Enketo and KoboCollect |
-| `columns-n` | Displays available choices in the specified number (n) of columns. | Enketo and KoboCollect |
+| `minimal` | Displays choices in a drop-down menu. | Web forms and KoboCollect |
+| `compact` | Displays choices side-by-side with minimal padding and without choice boxes. | Web forms and KoboCollect |
+| `label` | Displays choice labels without the choice boxes. | Web forms and KoboCollect |
+| `list-nolabel` | Displays the answer choice boxes without the labels. | Web forms and KoboCollect |
+| `autocomplete` | Adds a search bar at the top of the option list. | Web forms and KoboCollect (combine with `minimal` appearance) |
+| `likert` | Displays answer choices as a Likert scale (`select_one` only). | Web forms and KoboCollect  |
+| `horizontal` | Displays choices in evenly sized columns, with the same number of choices in each row. | Web forms only. Use `columns` instead for compatibility with KoboCollect. |
+| `columns` | Displays choices in evenly sized columns, with the same number of choices in each row. | Web forms and KoboCollect |
+| `horizontal-compact` | Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label. | Web forms only. Use `columns-pack` instead for compatibility with KoboCollect. |
+| `columns-pack` | Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label. | Web forms and KoboCollect |
+| `columns-n` | Displays available choices in the specified number (n) of columns. | Web forms and KoboCollect |
 | `quick` | Auto-advances the form to the next question after an answer is selected (`select_one` only). | KoboCollect only |
 | `quickcompact` | Displays choices side-by-side with minimal padding and without choice boxes, and auto-advances to the next question after an answer is selected (`select_one` only). | KoboCollect only |
 | `map` | Displays a map to select options from. Requires <a href="https://support.kobotoolbox.org/select_from_map_xls.html">defining GPS coordinates</a> in the `choices` sheet (`select_one` only). | KoboCollect only |
@@ -60,7 +60,7 @@ Numeric questions are used to [collect whole numbers or decimal numbers](https:/
 
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
-| `thousands-sep` | Formats large numbers using a comma separator for thousands. | Enketo and KoboCollect |
+| `thousands-sep` | Formats large numbers using a comma separator for thousands. | Web forms and KoboCollect |
 | `bearing` | Records a compass reading in degrees (`decimal` only), if the device is equipped with an accelerometer or magnetic field sensor. | KoboCollect only  |
 | `counter` | Displays buttons for increasing and decreasing digits (`integer` only). | KoboCollect only |
 
@@ -70,10 +70,10 @@ Range questions are used to [select values within a specified range](https://sup
 
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
-| `vertical` | Changes the orientation of the number line to a vertical line. | Enketo and KoboCollect |
-| `picker` | In KoboCollect, displays a pop-up spinner for selecting values. In Enketo, displays a drop-down menu. | Enketo and KoboCollect |
-| `rating` | Displays stars instead of a number line. | Enketo and KoboCollect |
-| `distress` | Displays a thermometer instead of a number line. | Enketo only  |
+| `vertical` | Changes the orientation of the number line to a vertical line. | Web forms and KoboCollect |
+| `picker` | In KoboCollect, displays a pop-up spinner for selecting values. In web forms, displays a drop-down menu. | Web forms and KoboCollect |
+| `rating` | Displays stars instead of a number line. | Web forms and KoboCollect |
+| `distress` | Displays a thermometer instead of a number line. | Web forms only  |
 
 
 ### Text question type
@@ -82,8 +82,8 @@ Text questions allow users to [collect open-ended responses](https://support.kob
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
 | `numbers` | Displays a numeric keyboard instead of a text keyboard (e.g., to collect phone numbers). | KoboCollect only |
-| `multiline` | Displays a larger text box for longer text responses. | Enketo and KoboCollect |
-| `url` | Displays a clickable URL under the question text and makes the question read-only. Requires entering a URL in the question's `default` column, or in the `calculation` column if the URL includes dynamic values. Also works with `note` questions. | Enketo and KoboCollect |
+| `multiline` | Displays a larger text box for longer text responses. | Web forms and KoboCollect |
+| `url` | Displays a clickable URL under the question text and makes the question read-only. Requires entering a URL in the question's `default` column, or in the `calculation` column if the URL includes dynamic values. Also works with `note` questions. | Web forms and KoboCollect |
 | `masked` | Masks text entered by the respondent (e.g., a password or confidential information). | KoboCollect only |
 
 
@@ -92,8 +92,8 @@ Date questions are used to [capture specific calendar dates](https://support.kob
 
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
-| `month-year` | Captures a month and a year. | Enketo and KoboCollect |
-| `year` | Captures only a year. | Enketo and KoboCollect |
+| `month-year` | Captures a month and a year. | Web forms and KoboCollect |
+| `year` | Captures only a year. | Web forms and KoboCollect |
 | `no-calendar` | Displays a spinner to select the day, month, and year, instead of the default calendar-style picker. | KoboCollect only |
 | `coptic` | Displays the Coptic calendar. | KoboCollect only |
 | `ethiopian` | Displays the Ethiopian calendar. | KoboCollect only |
@@ -109,9 +109,9 @@ GPS questions are used to [capture the geographic coordinates](https://support.k
 
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
-| `maps` | Displays a map for users to visualize the location that is being automatically recorded (`geopoint` only). | KoboCollect only (included in default Enketo appearance)  |
-| `placement-map` | Allows for manual selection of a location on a map (`geopoint` only). | KoboCollect only (included in default Enketo appearance)  |
-| `hide-input` | Shows a larger map and hides other input fields (latitude, longitude, altitude, accuracy). | Enketo only |
+| `maps` | Displays a map for users to visualize the location that is being automatically recorded (`geopoint` only). | KoboCollect only (included in default web form appearance)  |
+| `placement-map` | Allows for manual selection of a location on a map (`geopoint` only). | KoboCollect only (included in default web form appearance)  |
+| `hide-input` | Shows a larger map and hides other input fields (latitude, longitude, altitude, accuracy). | Web forms only |
 
 
 ### Image question type
@@ -119,9 +119,9 @@ Image questions allow users to [upload or record images](https://support.kobotoo
 
 | Appearance | Description | Compatibility |
 | :--- | :--- | :--- |
-| `signature` | Allows users to draw their signature. | Enketo and KoboCollect |
-| `draw` | Allows users to sketch or create drawings. | Enketo and KoboCollect |
-| `annotate` | Allows users to annotate an image by drawing or writing on it. | Enketo and KoboCollect |
+| `signature` | Allows users to draw their signature. | Web forms and KoboCollect |
+| `draw` | Allows users to sketch or create drawings. | Web forms and KoboCollect |
+| `annotate` | Allows users to annotate an image by drawing or writing on it. | Web forms and KoboCollect |
 | `new` | Prompts users to take a new picture using the device camera (no file upload). | KoboCollect only |
 | `new-front` | Prompts users to take a new picture using the device's front-facing camera. | KoboCollect only |
 

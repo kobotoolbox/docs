@@ -1,17 +1,17 @@
 # Styling your forms using XLSForm
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/form_style_xls.md" class="reference">20 Mar 2026</a>
 
-With KoboToolbox, you can customize the appearance of your forms and questions to highlight key information and adapt the layout to your data collection needs. This includes applying themes to Enketo web forms, adding headers and lists in note questions, and using color or bold formatting for emphasis.
+With KoboToolbox, you can customize the appearance of your forms and questions to highlight key information and adapt the layout to your data collection needs. This includes applying themes to web forms, adding headers and lists in note questions, and using color or bold formatting for emphasis.
 
-This article covers themes for Enketo web forms as well as styling options for notes and questions within a form.
+This article covers themes for web forms as well as styling options for notes and questions within a form.
 
 <p class="note">
-<strong>Note:</strong> This article focuses on styling forms in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about setting Enketo themes in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a>.
+<strong>Note:</strong> This article focuses on styling forms in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about setting web form themes in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Styling web forms in the Formbuilder</a>.
 </p>
 
-## Themes for Enketo web forms
+## Themes for web forms
 
-Enketo themes allow you to customize the appearance and layout of [Enketo web forms](https://support.kobotoolbox.org/enketo.html). Themes apply only to Enketo web forms and are not visible in KoboCollect.
+Web form themes allow you to customize the appearance and layout of [web forms](https://support.kobotoolbox.org/data_through_webforms.html). Themes apply only to web forms and are not visible in KoboCollect.
 
 ### Adding themes in XLSForm
 
@@ -30,7 +30,7 @@ To add a theme in XLSForm:
 <strong>Note:</strong> Themes can be combined by entering both themes in the same cell of the <code>style</code> column, separated by a space (e.g., <code>theme-grid pages</code>).
 </p>
 
-### Available themes for Enketo web forms
+### Available themes for web forms
 
 The following themes are available to customize your forms:
 
@@ -43,7 +43,7 @@ The following themes are available to customize your forms:
 
 ### Setting up an XLSForm for theme_grid
 
-In Enketo web forms, the `theme_grid` layout allows you to display questions in multiple columns, making your form more compact and visually organized. The set-up of these columns, including how many there are and how wide each one should be, is controlled by assigning `w-values` to each question inside the `appearance` column of your XLSForm.
+In web forms, the `theme_grid` layout allows you to display questions in multiple columns, making your form more compact and visually organized. The set-up of these columns, including how many there are and how wide each one should be, is controlled by assigning `w-values` to each question inside the `appearance` column of your XLSForm.
 
 <p class="note">
   For a comprehensive overview of using <code>theme_grid</code> in XLSForm, see this <a href="https://ee.kobotoolbox.org/n41GqUkf">Grid Theme Tutorial</a> and <a href="https://docs.google.com/spreadsheets/d/1qKmxPTA4B0vihU6GsKgi1CJE2Db2FfE7KZpOig4nTEI/edit?gid=0#gid=0">sample XLSForm</a>.
@@ -67,7 +67,7 @@ Rows will always automatically expand to the full width of the page. For example
 You can use Markdown and HTML in XLSForm to **style text**, **add emphasis** with bold or italics, **create headers** of different sizes, **change fonts and colors**, and **add clickable web links**. Text styling can be applied to questions, notes, and choice labels.
 
 <p class="note">
-<strong>Note:</strong> Some styling features may not be supported in KoboCollect or Enketo. It is recommended to preview your forms in your chosen data collection method to confirm that all styling features are fully supported.
+<strong>Note:</strong> Some styling features may not be supported in KoboCollect or web forms It is recommended to preview your forms in your chosen data collection method to confirm that all styling features are fully supported.
 </p>
 
 Text styling features in XLSForm include:

@@ -95,19 +95,19 @@ The following advanced appearances are available for **Select One, Select Many, 
 
 | Appearance | Description | Compatibility |
 |:---|:---|:---|
-| `minimal` | Displays choices in a drop-down menu.<br>![Minimal appearance](images/select_one_and_select_many/minimal.png) | Enketo and KoboCollect |
-| `autocomplete` | Adds a search bar at the top of the option list.<br> ![Autocomplete appearance](images/select_one_and_select_many/autocomplete.png) | Enketo and KoboCollect (combine with `minimal` appearance) |
-| `likert` | Displays answer choices as a Likert scale (**Select One** only).<br>![Likert scale](images/select_one_and_select_many/likert.png) | Enketo and KoboCollect |
-| `compact` | Displays choices side-by-side with minimal padding and without visible choice boxes. The number of choices per row may vary based on the length of each option label.<br>![Compact appearance](images/select_one_and_select_many/compact.png) | Enketo and KoboCollect |
+| `minimal` | Displays choices in a drop-down menu.<br>![Minimal appearance](images/select_one_and_select_many/minimal.png) | Web forms and KoboCollect |
+| `autocomplete` | Adds a search bar at the top of the option list.<br> ![Autocomplete appearance](images/select_one_and_select_many/autocomplete.png) | Web forms and KoboCollect (combine with `minimal` appearance) |
+| `likert` | Displays answer choices as a Likert scale (**Select One** only).<br>![Likert scale](images/select_one_and_select_many/likert.png) | Web forms and KoboCollect |
+| `compact` | Displays choices side-by-side with minimal padding and without visible choice boxes. The number of choices per row may vary based on the length of each option label.<br>![Compact appearance](images/select_one_and_select_many/compact.png) | Web forms and KoboCollect |
 | `quick` | Auto-advances the form to the next question after an answer is selected (**Select One** only).  | KoboCollect only |
 | `quickcompact` | Displays choices side-by-side with minimal padding and without choice boxes, and auto-advances to the next question after an answer is selected (**Select One** only). <br>![Quick compact appearance](images/select_one_and_select_many/compact.png) | KoboCollect only |
-| `horizontal` | Displays choices in evenly sized columns, with the same number of choices in each row. <br>![Horizontal appearance](images/select_one_and_select_many/horizontal_columns.png) | Enketo only. Use `columns` instead for compatibility with KoboCollect. |
-| `columns` (other) | Displays choices in evenly sized columns, with the same number of choices in each row.<br>![Columns other appearance](images/select_one_and_select_many/horizontal_columns.png)  | Enketo and KoboCollect. |
-| `horizontal-compact` | Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.<br>![Horizontal compact appearance](images/select_one_and_select_many/horizontal-compact_columns-pack.png)  | Enketo only. Use `columns-pack` instead for compatibility with KoboCollect. |
-| `columns-pack` (other) | Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.<br>![Columns pack appearance](images/select_one_and_select_many/horizontal-compact_columns-pack.png) | Enketo and KoboCollect |
-| `columns-n` (other) | Displays available choices in the specified number (n) of columns.<br>![Columns-n appearance](images/select_one_and_select_many/columns_n.png)| Enketo and KoboCollect |
-| `label` | Displays choice labels without the choice boxes. | Enketo and KoboCollect |
-| `list-nolabel` | Displays the answer choice boxes without the labels. | Enketo and KoboCollect |
+| `horizontal` | Displays choices in evenly sized columns, with the same number of choices in each row. <br>![Horizontal appearance](images/select_one_and_select_many/horizontal_columns.png) | Web forms only. Use `columns` instead for compatibility with KoboCollect. |
+| `columns` (other) | Displays choices in evenly sized columns, with the same number of choices in each row.<br>![Columns other appearance](images/select_one_and_select_many/horizontal_columns.png)  | Web forms and KoboCollect. |
+| `horizontal-compact` | Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.<br>![Horizontal compact appearance](images/select_one_and_select_many/horizontal-compact_columns-pack.png)  | Web forms only. Use `columns-pack` instead for compatibility with KoboCollect. |
+| `columns-pack` (other) | Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.<br>![Columns pack appearance](images/select_one_and_select_many/horizontal-compact_columns-pack.png) | Web forms and KoboCollect |
+| `columns-n` (other) | Displays available choices in the specified number (n) of columns.<br>![Columns-n appearance](images/select_one_and_select_many/columns_n.png)| Web forms and KoboCollect |
+| `label` | Displays choice labels without the choice boxes. | Web forms and KoboCollect |
+| `list-nolabel` | Displays the answer choice boxes without the labels. | Web forms and KoboCollect |
 
 ## Best practices for using select questions
 

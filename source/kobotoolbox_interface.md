@@ -49,7 +49,7 @@ In the **Form history** section, you can:
 * Clone previous form versions.
 
 In the **Collect data** section, you can:
-* Choose a [data collection method](https://support.kobotoolbox.org/data_through_webforms.html).
+* Choose a [data collection mode](https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes).
 * Click **Copy** to copy the link or **Open** to open the form in your browser.
 * Allow submissions [without requiring a username and password](https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication).
 

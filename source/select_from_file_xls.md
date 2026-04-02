@@ -84,7 +84,7 @@ To update your list of choices, edit the external file as needed, re-upload it t
 
 <details>
   <summary><strong>Translated choice lists</strong></summary>
-  Select from file questions do not currently support <a href="https://support.kobotoolbox.org/language_xls.html">translated choice lists</a>. Your external choice file can include only a single <code>label</code> column. Any additional translated <code>label</code> columns will be ignored in Enketo or will cause an error in KoboCollect. For forms that include translations, use internal choice lists instead, or set up multiple <strong>select from file</strong> questions using skip logic to pull from different files depending on the form language.
+  Select from file questions do not currently support <a href="https://support.kobotoolbox.org/language_xls.html">translated choice lists</a>. Your external choice file can include only a single <code>label</code> column. Any additional translated <code>label</code> columns will be ignored in web forms or will cause an error in KoboCollect. For forms that include translations, use internal choice lists instead, or set up multiple <strong>select from file</strong> questions using skip logic to pull from different files depending on the form language.
 </details>
 
 <br>

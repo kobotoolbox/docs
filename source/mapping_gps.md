@@ -17,10 +17,10 @@ KoboToolbox allows you to collect three types of GPS data in your forms:
 | Line                      | `geotrace`            | A path made up of multiple points     |
 | Area                      | `geoshape`            | An area made up of multiple points    |
 
-GPS data can be collected using both Enketo web forms and KoboCollect. All GPS responses appear in the data table and are included in data exports. Only single points, referred to as <strong>geopoints</strong> in the user interface, can be displayed in the KoboToolbox <strong>Map</strong> view.
+GPS data can be collected using both web forms and KoboCollect. All GPS responses appear in the data table and are included in data exports. Only single points, referred to as <strong>geopoints</strong> in the user interface, can be displayed in the KoboToolbox <strong>Map</strong> view.
 
 <p class="note">
-To learn more about collecting GPS data in your KoboToolbox forms, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data</a>.
+To learn more about collecting GPS data in your KoboToolbox forms, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data with KoboToolbox</a>.
 </p>
 
 ## Mapping GPS data in KoboToolbox

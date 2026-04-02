@@ -24,10 +24,10 @@ To add a text question to your form:
 
 By default, text questions appear as a single-line text box.
 
-- In [Enketo web forms](https://support.kobotoolbox.org/enketo.html), the text box remains the same size regardless of how much text is entered. It does not support line breaks.
+- In [web forms](https://support.kobotoolbox.org/data_through_webforms.html), the text box remains the same size regardless of how much text is entered. It does not support line breaks.
 - In [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html), the text box expands as you type and supports line breaks, allowing respondents to enter paragraphs.
 
-![Enketo vs KoboCollect text question appearance](images/text_questions/table.png)
+![Web forms vs KoboCollect text question appearance](images/text_questions/table.png)
 
 ### Advanced appearances 
 
@@ -44,9 +44,9 @@ The following appearances are available for text questions:
 
 | Appearance | Description | Compatibility |
 |:---|:---|:---|
-| `multiline` | Displays a larger text box for longer text responses.<br>![Multiline appearance](images/text_questions/multiline.png) | Enketo and KoboCollect |
+| `multiline` | Displays a larger text box for longer text responses.<br>![Multiline appearance](images/text_questions/multiline.png) | Web forms and KoboCollect |
 | `numbers` | Displays a numeric keyboard instead of a text keyboard (e.g., to collect phone numbers).<br>![Number appearance](images/text_questions/numbers.png)  | KoboCollect only |
-| `url` (other) | Displays a clickable URL (Enketo) or **Open URL** button (KoboCollect) under the question text and makes the question read-only. Enter the URL in the question's **Default Response** setting.<br>![URL appearance](images/text_questions/url.png) | Enketo and KoboCollect |
+| `url` (other) | Displays a clickable URL (web forms) or **Open URL** button (KoboCollect) under the question text and makes the question read-only. Enter the URL in the question's **Default Response** setting.<br>![URL appearance](images/text_questions/url.png) | Web forms and KoboCollect |
 | `masked` (other) | Masks text entered by the respondent (e.g., a password or confidential information).<br>![Masked appearance](images/text_questions/masked.png) | KoboCollect only |
 
 <p class="note">

@@ -1,4 +1,4 @@
-# Data collection using KoboCollect
+# Collecting data using KoboCollect
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b702a7c8f238181be3c4da0d0b8ccbb772cf5926/source/data_collection_kobocollect.md" class="reference">30 Dec 2025</a>
 
 

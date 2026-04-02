@@ -120,7 +120,7 @@ Common form settings include:
 | --- | --- |
 | `form_title` | Title displayed at the top of the form |
 | `default_language` | Default form language |
-| `style` | Themes for Enketo web forms |
+| `style` | Themes for web forms |
 | `version` | Form version ID |
 
 For example, to add a form title:

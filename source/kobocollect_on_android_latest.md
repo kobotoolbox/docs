@@ -1,4 +1,4 @@
-# Getting started with KoboCollect
+# Setting up the KoboCollect app
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ff350995fdbf546a9f306c1128351d40aaf9a258/source/kobocollect_on_android_latest.md" class="reference">30 Dec 2025</a>
 
 
@@ -9,7 +9,7 @@ KoboCollect is a free, open-source KoboToolbox app designed for data collection 
 Before using KoboCollect, you must [set up a KoboToolbox account](https://support.kobotoolbox.org/creating_account.html) on the KoboToolbox website and [deploy data collection forms](https://support.kobotoolbox.org/quick_start.html). 
 
 <p class="note">
-    This article covers how to connect to KoboCollect for data collection. To learn more about configuring KoboCollect settings and collecting data with the app, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Customizing KoboCollect settings</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Data collection using KoboCollect</a>.
+    This article covers how to connect to KoboCollect for data collection. To learn more about configuring KoboCollect settings and collecting data with the app, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Customizing KoboCollect settings</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecting data using KoboCollect</a>.
 </p>
 
 ## Installing the KoboCollect app
