@@ -101,7 +101,7 @@ If you are using a GeoJSON file to provide GPS coordinates, follow the [GeoJSON 
 <iframe src="https://www.youtube.com/embed/C7o9rCKmCeo?si=h9y-meFvNwury_mI" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p class="note">
-<strong>Note:</strong> Selecting options from a map is <strong>only available in KoboCollect.</strong> In Enketo web forms, the option choices will appear as a normal list of options.
+<strong>Note:</strong> Selecting options from a map is <strong>only available in KoboCollect.</strong> In web forms, the option choices will appear as a normal list of options.
 </p>
 
 In KoboCollect, adding a **select type question** with a `map` or `quick map` appearance allows users to choose an option directly from a map rather than from a list. When the map opens, it centers on the device’s current location. Buttons on the right let users recenter on their location or show all available map points.
