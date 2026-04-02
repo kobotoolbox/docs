@@ -11,7 +11,7 @@ This article covers themes for web forms as well as styling options for notes an
 
 ## Themes for web forms
 
-Web form themes allow you to customize the appearance and layout of [web forms](https://support.kobotoolbox.org/enketo.html). Themes apply only to web forms and are not visible in KoboCollect.
+Web form themes allow you to customize the appearance and layout of [web forms](https://support.kobotoolbox.org/data_through_webforms.html). Themes apply only to web forms and are not visible in KoboCollect.
 
 ### Adding themes in XLSForm
 
