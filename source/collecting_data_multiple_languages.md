@@ -3,7 +3,7 @@
 
 KoboToolbox supports collecting data in **as many languages as you need** within a single form, including languages that use non-Latin scripts. You can design your form with multiple translations, allow respondents to switch to their preferred language during data collection, and later view or export the data in any form language.
 
-Adding translations to a single form removes the need for creating separate forms for each language, making it easier to manage multilingual projects and **keep your data consistent across languages.** Both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [web forms](https://support.kobotoolbox.org/enketo.html) support form translations.
+Adding translations to a single form removes the need for creating separate forms for each language, making it easier to manage multilingual projects and **keep your data consistent across languages.** Both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [web forms](https://support.kobotoolbox.org/data_through_webforms.html) support form translations.
 
 This article provides an overview of the different options for preparing forms with translations, how to collect data in multiple languages (including setting up language-specific links for web forms), and how to manage and export multilingual data in KoboToolbox.
 
