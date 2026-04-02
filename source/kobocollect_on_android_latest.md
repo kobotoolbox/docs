@@ -1,4 +1,4 @@
-# Getting started with KoboCollect
+# Setting up the KoboCollect app
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ff350995fdbf546a9f306c1128351d40aaf9a258/source/kobocollect_on_android_latest.md" class="reference">30 Dec 2025</a>
 
 
