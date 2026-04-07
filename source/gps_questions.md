@@ -5,6 +5,10 @@ GPS questions are used to **collect geographic coordinates and spatial data** du
 
 This article explains the available GPS question types in the Formbuilder, how to add and configure them, the differences in behavior between Enketo web forms and KoboCollect, and the advanced appearance options available for collecting location data.
 
+<p class="note">
+<strong>Note:</strong> Recording GPS coordinates does not require an internet connection and is compatible with offline data collection.
+</p>
+
 ## GPS question types
 
 The following question types are available in the Formbuilder for respondents to record GPS data:
