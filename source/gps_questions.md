@@ -1,5 +1,5 @@
 # GPS questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/gps_questions.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/13cd671122e40421a3fd42643feff95c82beabc1/source/gps_questions.md" class="reference">7 Apr 2026</a>
 
 GPS questions are used to **collect geographic coordinates and spatial data** during data collection. They allow you to capture precise locations, map routes, or define areas directly within your form. These question types are useful for activities such as mapping infrastructure, tracking field visits, monitoring environmental sites, or recording service locations.
 
