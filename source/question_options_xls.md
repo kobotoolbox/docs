@@ -170,8 +170,8 @@ Different question types in XLSForm have different parameters. The most common p
 | :--- | :--- | :--- |
 | `randomize=true` | `rank`, `select_one`, `select_multiple` | Randomizes the order of option choices |
 | `start=1 end=5 step=1` | `range` | Defines the minimum value, maximum value, and interval between numbers |
-| `capture-accuracy=20` | `geopoint` | Specifies the minimum acceptable GPS accuracy (in meters) for automatically capturing a location |
-| `warning-accuracy=50` | `geopoint` | Triggers a warning message if the GPS accuracy is not within the specified accuracy threshold |
+| `capture-accuracy=20` | `geopoint` | Specifies the minimum acceptable [GPS accuracy](https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates) (in meters) for automatically capturing a location. Defaults to 5m. |
+| `warning-accuracy=50` | `geopoint` | Triggers a warning message if the [GPS accuracy](https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates) (in meters) is not within the specified accuracy threshold. Defaults to 100m. |
 | `max-pixels=480` | `image` | Limits the maximum pixels for a photo, to reduce the image file size and improve upload speed |
 | `quality=low` | `audio` | Captures a lower quality audio recording |
 | `quality=voice-only` | `audio` | Captures the lowest quality audio recording |
