@@ -56,7 +56,7 @@ Map settings configure the display and behavior of maps within the app for locat
 | :----------------- | :--------------------------------------------- |
 | Source   &emsp;&emsp;&emsp;&emsp;            | Define your map source. Choose between Google, OpenStreetMap, USGS or Carto. |
 | Map style      | Define your map style if using Google Maps, USGS, or Carto. |
-| Layer           | Select an offline layer for the maps. You can add options by selecting an MBTiles file from your device. |
+| Layer           | Select an [offline layer](https://docs.getodk.org/collect-offline-maps/) for the maps. You can add options by selecting an MBTiles file from your device. |
 
 ## Form management settings
 
