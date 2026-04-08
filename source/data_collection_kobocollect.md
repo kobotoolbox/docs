@@ -94,4 +94,18 @@ To delete forms:
   <strong>Note:</strong> You do not need an internet connection to delete forms in KoboCollect. However, if blank forms are accidentally deleted offline, an internet connection is required to recover them for continued data collection. To prevent accidental deletion, you can set access controls in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#access-control">project settings</a>.
 </p>
 
+## Troubleshooting
+
+<details>
+  <summary><strong>Download Form takes too long to load</strong></summary>
+  If the <strong>Download Form</strong> page takes a long time to connect to the server or load downloadable forms, your KoboToolbox account may have too many active forms, or your internet connection may be weak.
+Try the following:
+    <ul>
+  <li>Archive forms that are no longer in use to reduce the number of forms KoboCollect needs to load.</li>
+  <li>Check that your internet connection is stable, then try again.</li>
+</ul>
+
+
+</details>
+
 
