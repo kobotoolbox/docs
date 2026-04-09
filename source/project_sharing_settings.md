@@ -18,7 +18,7 @@ In some cases, you may wish to enable data entry for anyone who has the URL. Thi
 
 To allow data entry for anyone with the form URL:
 1. Open the project in KoboToolbox and go to the **FORM** section
-2. Under **Collect Data**, enable "Allow submissions to this form without a username and password".
+2. Under **Collect data**, enable "Allow submissions to this form without a username and password".
 
 ![Require authentication example](images/project_sharing_settings/require_authentication.png)
 
