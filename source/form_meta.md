@@ -65,23 +65,37 @@ Available settings are listed in the [ODK audit logging documentation](https://d
 
 Background audio recording allows you to capture an audio recording while a form is open and being completed. The recording is saved as part of the form submission and can later be [downloaded as an audio file](https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files).
 
-![Background audio](images/question_types/metadata.png)
+<p class="note">
+<strong>Note:</strong> Before using this feature, ensure that your device has sufficient storage space for audio files. You should also obtain <strong>informed consent</strong> from respondents before recording. Always consider ethical implications and comply with applicable data protection laws in your area of work.
+</p>
 
 To enable background audio recording in the Formbuilder:
 
 1. Open the **Layout & Settings** panel. 
-2. Turn on the **Enable audio recording in the background** toggle under **Background audio.**
-3. Once enabled, audio will be recorded in the background in both KoboCollect and web forms while the form is being filled out.
+3. In the **Background audio** section, click “Enable audio recording in the background.” 
+    - Once enabled, the button text will change to “This survey will be recorded.”
+4. If needed, change the audio quality in the **Audio quality** dropdown menu. 
+    - For an overview of audio quality settings, see [Configuring audio quality](#configuring-audio-quality). **Voice only** is the default and lowest audio quality.
+5. Once enabled, audio will be recorded in the background in both KoboCollect and web forms while the form is being filled out.
+
+![Enabling background audio](images/recording_interviews/background_audio.png)
 
 <p class="note">
-For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#">Recording interviews with background audio recording</a>.
+For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>.
 </p>
 
-This feature can support qualitative data collection by capturing detailed interview responses. It can also improve data quality assurance by allowing supervisors to review how interviews were conducted. In addition, it can serve as a backup to written or transcribed responses.
+### Configuring audio quality
 
-<p class="note">
-<strong>Note:</strong> Before using this feature, ensure that your device has sufficient storage space for audio files. You should also obtain <strong>informed consent</strong> from respondents before recording. Always consider ethical implications and comply with applicable data protection laws in your area of work.
-</p>
+Audio quality affects the size of the file that is stored on the server. Users of the [Community Plan](https://www.kobotoolbox.org/pricing/) are limited to 1GB of free file storage. Therefore, it is advisable to manage the file sizes of the audio files you collect by choosing an appropriate quality setting. The table below provides an overview of audio quality settings and their corresponding file sizes.
+
+| Quality      |Extension | Encoding | Bit rate  | Sample rate | File size       |
+|:------------ |:---------|:--------|:-----------|:------------|:---------------|
+| Normal       | .m4a     | AAC     | 64 kbps    | 32 kHz      | ~ 30 MB/hour    |
+| Low          | .m4a     | AAC     | 24 kbps    | 32 kHz      | ~ 11 MB/hour    |
+| Voice only   | .amr     | AMR     | 12.2 kbps  | 8 kHz       | ~ 5 MB/hour     |
+
+The default **Voice only** setting is suitable for quiet interview settings. For recordings with multiple speakers or some background noise, the **Low** quality setting is more appropriate. The **Normal** setting offers the highest audio quality but uses the most storage space.
+
 
 ## Configuring metadata in KoboCollect 
 
