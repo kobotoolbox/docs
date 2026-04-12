@@ -104,7 +104,7 @@ KoboToolbox also supports background audio recording for entire interviews
 or focus group discussions. 
 
 <p class="note">
-  To learn more about collecting media from respondents, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a>. To learn more about background audio recording, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>.
+  To learn more about collecting media from respondents, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a>. To learn more about background audio recording, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
 </p>
 
 ### Viewing respondent media files
