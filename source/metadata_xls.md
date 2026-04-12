@@ -1,7 +1,7 @@
 # Form metadata in XLSForm 
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/metadata_xls.md" class="reference">20 Mar 2026</a>
 
-Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. 
+Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. You can also record audio in the background during data collection.
 
 Metadata questions are hidden from respondents, and metadata fields cannot be edited in the KoboToolbox data table. This background information supports auditing, helps maintain data integrity, and can be used in data analysis.
 
@@ -40,7 +40,7 @@ Available metadata questions in XLSForm include:
 | `email` | Records the email address from the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in web forms. |
 | `start-geopoint` | Captures GPS coordinates when the form is first opened. Can be used to warm up the device GPS so that later GPS questions can reach accurate readings more quickly. |
 | `background-geopoint` | Captures GPS coordinates when a specific question is answered. The question must be specified in the <code>trigger</code> column of the <code>background-geopoint</code> question. |
-| `background-audio` | Records audio in the background while a form is open. To learn more about this feature, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>. | 
+| `background-audio` | Records audio in the background while a form is open. To learn more about this feature, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>. | 
 | `audit` | Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in web forms.<br><br>To learn more about using the audit question for audit logs and configuring settings, see <a href="https://docs.getodk.org/form-audit-log/">Form Audit Log (ODK)</a>. |
 
 ## Configuring metadata in KoboCollect 
@@ -52,3 +52,29 @@ The user’s default email, phone number, and username can be [configured](https
 4. Scroll down to **User and device identity**, then **Form metadata**. 
 5. Enter the username, phone number, and/or email address. You can also view the current device ID.
 
+## Configuring audio quality of background audio recordings
+When recording interviews in the background, audio quality affects the size of the file that is stored on the server. Users of the [Community Plan](https://www.kobotoolbox.org/pricing/) are limited to 1GB of free file storage. Therefore, it is advisable to manage the file sizes of the audio files you collect by choosing an appropriate quality setting. 
+
+To adjust the audio quality of your background audio recording:
+1. Add a `parameters` column to your XLSForm
+2. In the `background-audio` row, enter one of the following:
+    - `quality=normal`
+    - `quality=low`
+    - `quality=voice-only`
+  
+**survey worksheet**
+
+| type             | name       | label | parameters       |
+|:-----------------|:-----------|:------|:----------------|
+| background-audio | recording  |       | quality=normal  |
+| survey | 
+
+The table below provides an overview of audio quality settings and their corresponding file sizes.
+
+| XLSForm parameter   | Extension | Encoding | Bit rate    | Sample rate | File size       |
+|:------------------  |:---------|:--------|:-----------|:------------|:---------------|
+| quality=normal      | .m4a     | AAC     | 64 kbps    | 32 kHz      | ~ 30 MB/hour    |
+| quality=low         | .m4a     | AAC     | 24 kbps    | 32 kHz      | ~ 11 MB/hour    |
+| quality=voice-only  | .amr     | AMR     | 12.2 kbps  | 8 kHz       | ~ 5 MB/hour     |
+
+The default `voice-only` setting is suitable for quiet interview settings. For recordings with multiple speakers or some background noise, the `low` quality setting is more appropriate. The `normal` setting offers the highest audio quality but uses the most storage space.
