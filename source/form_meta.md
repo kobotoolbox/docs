@@ -1,7 +1,7 @@
 # Adding form metadata in the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c721217091801f27ac8d7932fd0426240fc45aed/source/form_meta.md" class="reference">1 Apr 2026</a>
 
-Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. 
+Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. You can also record audio in the background during data collection.
 
 Metadata questions are **hidden from respondents**, and **metadata fields cannot be edited** in the KoboToolbox data table. This background information supports auditing, helps maintain data integrity, and can be used in data analysis. 
 
