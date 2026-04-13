@@ -63,7 +63,7 @@ Each submission in the data table includes system-generated fields that help ide
 
 | Field | Description |
 |:---|:---|
-| <code>__version__</code> | A unique identifier for the version of the form used for the submission. This is useful if your form changed over time and you need to know which version collected the data. |
+| `__version__` | A unique identifier for the version of the form used for the submission. This is useful if your form changed over time and you need to know which version collected the data. |
 | <code>_id</code> | A server-generated ID number for the submission. It is assigned after the submission reaches KoboToolbox and is unique on that KoboToolbox server. |
 | <code>_uuid</code> | An automatically generated identifier for the submission. It can help identify a record, but it may change if the submission is edited, so it is not the most reliable field for long-term tracking. |
 | <code>_submission_time</code> | The date and time the submission was received by the KoboToolbox server. In exports, this value is stored in UTC. In the data table, it is shown in the user's timezone. |
