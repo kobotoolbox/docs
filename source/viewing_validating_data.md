@@ -164,7 +164,7 @@ If you added new questions after data collection began, the fields may remain hi
 
 <details>
   <summary><strong>_submitted_by field is empty</strong></summary>
-  The <code>_submitted_by`</code> field is filled only when a submission is linked to a KoboToolbox username. In KoboCollect, this field is always recorded. In web forms, it is recorded only when the project <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">requires authentication</a>. If the form allows submissions without a username and password, this field will be empty.<br><br>
+  The <code>_submitted_by</code> field is filled only when a submission is linked to a KoboToolbox username. In KoboCollect, this field is always recorded. In web forms, it is recorded only when the project <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">requires authentication</a>. If the form allows submissions without a username and password, this field will be empty.<br><br>
 To record <code>_submitted_by</code> for web form submissions, go to <strong>FORM > Collect data</strong> and turn off “Allow submissions to this form without a username and password”.
 </details>
 
