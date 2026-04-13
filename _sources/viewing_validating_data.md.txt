@@ -1,5 +1,5 @@
 # Viewing and validating your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/viewing_validating_data.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/451366bcabcf8b2f2bfe4b74f7eb1f5526a1daff/source/viewing_validating_data.md" class="reference">13 Apr 2026</a>
 
 <iframe src="https://www.youtube.com/embed/X5W6nv9gYUo?si=n3eniC0Uq_PzFsbT" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -56,6 +56,23 @@ You can change how many rows are shown per page using the dropdown at the bottom
 </p>
 
 Use the <i class="k-icon-caret-left"></i> **PREV** and **NEXT** <i class="k-icon-caret-right"></i> arrows, or enter a page number, to move through the data table.
+
+### System-generated submission fields
+
+Each submission in the data table includes system-generated fields that help identify records and track submission details. These fields appear as separate columns at the end of the table and cannot be edited.
+
+| Field | Description |
+|:---|:---|
+| `__version__` | A unique identifier for the version of the form used for the submission. This is useful if your form changed over time and you need to know which version collected the data. |
+| <code>_id</code> | A server-generated ID number for the submission. It is assigned after the submission reaches KoboToolbox and is unique on that KoboToolbox server. |
+| <code>_uuid</code> | An automatically generated identifier for the submission. It can help identify a record, but it may change if the submission is edited, so it is not the most reliable field for long-term tracking. |
+| <code>_submission_time</code> | The date and time the submission was received by the KoboToolbox server. In exports, this value is stored in UTC. In the data table, it is shown in the user's timezone. |
+| <code>_submitted_by</code> | The username of the person who submitted the data. This is always recorded for KoboCollect submissions, and is recorded for web form submissions only when <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>. |
+| <code>rootUuid</code> | A stable identifier for the submission within the project. It is taken from the submission's original <code>_uuid</code> when the record is first sent, and it does not change when the submission is edited, so it is the most reliable field for tracking a specific submission over time. |
+
+<p class="note">
+<strong>Note:</strong> These fields differ from user-enabled <a href="https://support.kobotoolbox.org/form_meta.html">form metadata</a> because they are automatically generated for each submission. You do not need to add them during form development.
+</p>
 
 ## Filtering and sorting your data
 
@@ -141,6 +158,14 @@ If you added new questions after data collection began, the fields may remain hi
 <details>
   <summary><strong>Search functionality for Hidden question types</strong></summary>
   The <strong>Search</strong> feature is not currently supported for <strong>Hidden</strong> question types. To locate a specific value in a <strong>Hidden</strong> field, sort the table by that field and scroll to the value in alphabetical or numerical order.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>_submitted_by field is empty</strong></summary>
+  The <code>_submitted_by</code> field is filled only when a submission is linked to a KoboToolbox username. In KoboCollect, this field is always recorded. In web forms, it is recorded only when the project <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">requires authentication</a>. If the form allows submissions without a username and password, this field will be empty.<br><br>
+To record <code>_submitted_by</code> for web form submissions, go to <strong>FORM > Collect data</strong> and turn off “Allow submissions to this form without a username and password”.
 </details>
 
 <br>

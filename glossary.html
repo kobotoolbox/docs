@@ -108,7 +108,7 @@
           
   <section id="glossary-of-kobotoolbox-terms">
 <h1>Glossary of KoboToolbox terms<a class="headerlink" href="#glossary-of-kobotoolbox-terms" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/33f7fa86be04cccf5c4b8a3b6cc81d34959314ce/source/glossary.md" class="reference">2 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/451366bcabcf8b2f2bfe4b74f7eb1f5526a1daff/source/glossary.md" class="reference">13 Apr 2026</a></p>
 <p>This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.</p>
 <hr class="docutils" />
 <section id="account">
@@ -434,10 +434,11 @@
 <hr class="docutils" />
 <section id="metadata">
 <h2>Metadata<a class="headerlink" href="#metadata" title="Link to this heading">¶</a></h2>
-<p>Information automatically added to a submission that provides context about how or when the data was collected, such as device ID, start and end time, or location.</p>
+<p>Form metadata is optional information added to a submission that provides context about how or when the data was collected, such as device ID, start and end time, or location. Users must enable these fields in the form for them to be collected.</p>
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html">Adding form metadata in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/metadata_xls.html">Form metadata in XLSForm</a>.
 </p>
+<p><strong>Related term(s):</strong> <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#system-generated-submission-fields">System-generated submission fields</a></p>
 </section>
 <hr class="docutils" />
 <section id="owner">
@@ -599,6 +600,15 @@
 <p><strong>Related term(s):</strong> <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#application-programming-interface-api">API</a></p>
 </section>
 <hr class="docutils" />
+<section id="system-generated-submission-fields">
+<h2>System-generated submission fields<a class="headerlink" href="#system-generated-submission-fields" title="Link to this heading">¶</a></h2>
+<p>Fields that KoboToolbox automatically creates for each submission, such as <code class="docutils literal notranslate"><span class="pre">_id</span></code>, <code class="docutils literal notranslate"><span class="pre">_uuid</span></code>, <code class="docutils literal notranslate"><span class="pre">_index</span></code>, <code class="docutils literal notranslate"><span class="pre">_submission_time</span></code>, <code class="docutils literal notranslate"><span class="pre">_submitted_by</span></code>, and <code class="docutils literal notranslate"><span class="pre">rootUuid</span></code>. These fields help identify records and track submission details, appear automatically in the data table and exports, and cannot be edited by users.</p>
+<p class="note">
+    For more information, see <a href="https://support.kobotoolbox.org/viewing_validating_data.html#system-generated-submission-fields">Viewing and validating your data</a>.
+</p>
+<p><strong>Related term(s):</strong> <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#metadata">Metadata</a></p>
+</section>
+<hr class="docutils" />
 <section id="user-level-permissions">
 <h2>User-level permissions<a class="headerlink" href="#user-level-permissions" title="Link to this heading">¶</a></h2>
 <p>Settings that control what specific users can do within a project, such as viewing the form, adding submissions, editing data, validating submissions, or managing project settings.</p>
@@ -735,6 +745,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#skip-logic">Skip logic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#submission">Submission</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#synchronous-exports">Synchronous exports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#system-generated-submission-fields">System-generated submission fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#user-level-permissions">User-level permissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#validation-criteria">Validation criteria</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#xlsform">XLSForm</a></li>

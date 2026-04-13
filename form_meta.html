@@ -108,7 +108,7 @@
           
   <section id="adding-form-metadata-in-the-formbuilder">
 <h1>Adding form metadata in the Formbuilder<a class="headerlink" href="#adding-form-metadata-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c721217091801f27ac8d7932fd0426240fc45aed/source/form_meta.md" class="reference">1 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/451366bcabcf8b2f2bfe4b74f7eb1f5526a1daff/source/form_meta.md" class="reference">13 Apr 2026</a></p>
 <p>Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent.</p>
 <p>Metadata questions are <strong>hidden from respondents</strong>, and <strong>metadata fields cannot be edited</strong> in the KoboToolbox data table. This background information supports auditing, helps maintain data integrity, and can be used in data analysis.</p>
 <p>This article explains how to add and manage metadata questions in the Formbuilder, outlines the available metadata options, and describes how audit logging and background audio recording can support data quality and monitoring during data collection.</p>
@@ -141,7 +141,7 @@
 <td class="text-left"><p>Captures a <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html#audit-metadata-question">detailed log</a> of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>username</p></td>
-<td class="text-left"><p>In KoboCollect, records the username saved in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. If no username is set, it records the one used to sign in to the server.<br>In Enketo, records the account username only if <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.<br><br><strong>Note:</strong> Because the <code>username</code> field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the automatically generated <code>_submitted_by</code> field.</p></td>
+<td class="text-left"><p>In KoboCollect, records the username saved in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. If no username is set, it records the one used to sign in to the server.<br>In Enketo, records the account username only if <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.<br><br><strong>Note:</strong> Because the <code>username</code> field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the system-generated <code>_submitted_by</code> field.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>phone number</p></td>
 <td class="text-left"><p>Records the phone number stored in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in Enketo.</p></td>
@@ -154,6 +154,9 @@
 </tr>
 </tbody>
 </table>
+<p class="note">
+<strong>Note:</strong> Form metadata is different from <a href="https://support.kobotoolbox.org/viewing_validating_data.html#system-generated-submission-fields">system-generated submission fields</a>. Form metadata must be enabled during form development to be collected, while system-generated submission fields are added automatically for every submission.
+</p>
 </section>
 <section id="audit-metadata-question">
 <h2>Audit metadata question<a class="headerlink" href="#audit-metadata-question" title="Link to this heading">¶</a></h2>
