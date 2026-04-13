@@ -109,3 +109,25 @@ For more information about exporting and using repeat group data, see <a href="h
 <br><br>
 For more information on this setting, see <a href="https://support.kobotoolbox.org/advanced_export.html">Advanced options for exporting data</a>.
 </details>
+
+<br>
+
+<details>
+    <summary><strong>Additional columns added to data export</strong></summary>
+     Your data export may include extra columns that were not added as questions in your form. KoboToolbox includes <a href="https://support.kobotoolbox.org/viewing_validating_data.html#system-generated-submission-fields">system-generated fields</a> for each submission, such as <code>_id</code>, <code>_uuid</code>, <code>_submission_time</code>, <code>_submitted_by</code>, and <code>rootUuid</code>.
+<br><br>
+In addition to the system-generated fields shown in the data table, some extra fields may be added when you export your data. 
+<br><br>
+    
+<ul>
+    <li><code>_validation_status</code>: Shows the submission’s <a href="https://support.kobotoolbox.org/viewing_validating_data.html#validating-your-data">validation status</a>. This helps track whether a submission has been reviewed and whether it is ready to use. Possible values are <strong>Approved</strong>, <strong>Not Approved</strong>, and <strong>On Hold</strong>.</li>
+    <li><code>_index</code>: A sequential row number generated at export time. It is used mainly to link rows between the main sheet and repeat group sheets in multi-sheet exports. Because it is created during export, it should not be used as a stable identifier for a submission.
+</li>
+    <li><code>_status</code>: Shows how the submission was sent. In many exports, this field is not very useful because it may contain the same value for all records.
+    </li>
+    <li>You may also see <code>_notes</code> and <code>_tags</code> in some exports. These fields are deprecated but can still appear in older or existing export workflows.
+    </li>
+</ul>
+
+If you do not need these columns for your analysis, you can remove them from the exported file after download or when configuring <a href="https://support.kobotoolbox.org/advanced_export.html#selecting-data-fields-for-export">export settings</a>. 
+</details>

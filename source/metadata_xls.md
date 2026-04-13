@@ -43,6 +43,12 @@ Available metadata questions in XLSForm include:
 | `background-audio` | Records audio in the background while a form is open. To learn more about this feature, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>. | 
 | `audit` | Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo.<br><br>To learn more about using the audit question for audit logs and configuring settings, see <a href="https://docs.getodk.org/form-audit-log/">Form Audit Log (ODK)</a>. |
 
+<p class="note">
+<strong>Note:</strong>
+    Form metadata is different from <a href="https://support.kobotoolbox.org/viewing_validating_data.html#system-generated-submission-fields">system-generated submission fields</a>. Form metadata must be enabled during form development to be collected, while system-generated submission fields are added automatically for every submission.
+</p>
+
+
 ## Configuring metadata in KoboCollect 
 
 The user’s default email, phone number, and username can be [configured](https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings) and modified in the KoboCollect app:
