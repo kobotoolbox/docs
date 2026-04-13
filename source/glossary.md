@@ -426,11 +426,13 @@ A feature that controls how templates in the library can be edited after they ar
 
 ## Metadata
 
-Information automatically added to a submission that provides context about how or when the data was collected, such as device ID, start and end time, or location.
+Form metadata is optional information added to a submission that provides context about how or when the data was collected, such as device ID, start and end time, or location. Users must enable these fields in the form for them to be collected.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html">Adding form metadata in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/metadata_xls.html">Form metadata in XLSForm</a>.
 </p>
+
+**Related term(s):** System-generated submission fields
 
 ---
 
@@ -638,6 +640,18 @@ A data export method that updates automatically as new submissions arrive, allow
 </p>
 
 **Related term(s):** [API](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api)
+
+---
+
+## System-generated submission fields
+
+Fields that KoboToolbox automatically creates for each submission, such as `_id`, `_uuid`, `_index`, `_submission_time`, `_submitted_by`, and `ootUuid`. These fields help identify records and track submission details, appear automatically in the data table and exports, and cannot be edited by users.
+
+<p class="note">
+    For more information, see <a href="https://support.kobotoolbox.org/viewing_validating_data.html#system-generated-submission-fields">Viewing and validating your data</a>.
+</p>
+
+**Related term(s):** Metadata
 
 ---
 
