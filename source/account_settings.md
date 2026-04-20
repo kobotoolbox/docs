@@ -25,7 +25,8 @@ In the **Profile** page, you can edit the following information:
 
 You can also sign up for the KoboToolbox newsletter to receive occasional updates about KoboToolbox.
 
-In the **Profile** page, you can also **delete your KoboToolbox account.** To delete your account:
+### Deleting your account
+You can **delete your KoboToolbox account** from the **Profile** page. To delete your account:
 1. [Delete](https://support.kobotoolbox.org/managing_projects.html#deleting-projects) or [transfer ownership](https://support.kobotoolbox.org/project_sharing_settings.html#transferring-ownership-of-a-project) of all projects owned by your account.
 2. In **Account Settings > Profile**, click **Delete account.** This button will be disabled if you have not deleted all projects owned by your account.
 3. Type in your username to confirm your account deletion. This action cannot be undone once completed.
