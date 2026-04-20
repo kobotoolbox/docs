@@ -1,5 +1,5 @@
 # Transcription and translation of audio responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/60fe0f692a64b8e4f864db3a5431d1ed61884760/source/transcription-translation.md" class="reference">16 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/32d4c0f2c7be57eee0c8321168dae5663659ee4d/source/transcription-translation.md" class="reference">20 Apr 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -54,7 +54,9 @@ Once you have a completed transcript for your audio response, you can add transl
 
 ## Language list
 
-These natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers automatic transcription in 80 languages (with 145 regional variants) and automatic translation in 129 languages. For manual transcription or translation, you can select from approximately 7,000 languages based on the ISO 639-3 comprehensive list, maintained by SIL International (filtered for "living languages"). If a language supports ASR or MT, you can choose between **manual** and **automatic** methods. For other languages, only the **manual** method is available.
+KoboToolbox's natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers **automatic transcription in 80 languages** (with 145 regional variants) and **automatic translation in 129 languages**. 
+
+For manual transcription or translation, you can select from approximately 7,000 languages based on the ISO 639-3 comprehensive list, maintained by SIL International (filtered for "living languages"). If a language supports ASR or MT, you can choose between **manual** and **automatic** methods. For other languages, only the **manual** method is available.
 
 <p class="note">
     For a full list of supported languages, see <a href="https://docs.google.com/spreadsheets/d/1_QDcORZd9qXgfq1OBb61U6ondYfjwmHXOv4XZPjxVVw/edit?usp=sharing">Languages supported for automatic transcription and translation</a>.
