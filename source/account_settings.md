@@ -1,5 +1,5 @@
 # Account settings
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5b4ff927dc19a33ccc1aba9ed6d88ad627f9bba5/source/account_settings.md" class="reference">20 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0cec0647d2df1f971c58198e92b580930861bcea/source/account_settings.md" class="reference">20 Apr 2026</a>
 
 <iframe src="https://www.youtube.com/embed/QC6eTm7gh-I?si=L0kvHzvY_kFocSZd" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
