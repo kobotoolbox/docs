@@ -54,7 +54,9 @@ Once you have a completed transcript for your audio response, you can add transl
 
 ## Language list
 
-These natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers automatic transcription in 80 languages (with 145 regional variants) and automatic translation in 129 languages. For manual transcription or translation, you can select from approximately 7,000 languages based on the ISO 639-3 comprehensive list, maintained by SIL International (filtered for "living languages"). If a language supports ASR or MT, you can choose between **manual** and **automatic** methods. For other languages, only the **manual** method is available.
+KoboToolbox's natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers **automatic transcription in 80 languages** (with 145 regional variants) and **automatic translation in 129 languages**. 
+
+For manual transcription or translation, you can select from approximately 7,000 languages based on the ISO 639-3 comprehensive list, maintained by SIL International (filtered for "living languages"). If a language supports ASR or MT, you can choose between **manual** and **automatic** methods. For other languages, only the **manual** method is available.
 
 <p class="note">
     For a full list of supported languages, see <a href="https://docs.google.com/spreadsheets/d/1_QDcORZd9qXgfq1OBb61U6ondYfjwmHXOv4XZPjxVVw/edit?usp=sharing">Languages supported for automatic transcription and translation</a>.
