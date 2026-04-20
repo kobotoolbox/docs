@@ -1,5 +1,5 @@
 # Adding translations in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1710438b3a5cb33b4229492e00cb8d234a569f64/source/language_dashboard.md" class="reference">4 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9a0edeae6f91d42cf60666b1e002cae19faecfc9/source/language_dashboard.md" class="reference">20 Apr 2026</a>
 
 <iframe src="https://www.youtube.com/embed/3O2K78F7DCA?si=lt-ZlSRoAjFuSMl1" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -44,7 +44,8 @@ Once you have set your default language, you can add more languages and translat
 1. In the <i class="k-icon-language"></i> **Manage translations** window, click **Add language.**
 2. Enter the language name and code, then click **Add.**
 3. Next to the language you added, click <i class="k-icon-language-settings"></i> **Update translations.**
-    - A table will appear with the questions, hints, and choices from your form. Each language has its own translation table.
+    - A table will appear with all translatable elements in your form, including question labels, group labels, hints, guidance hints, constraint messages, media files, and choice labels.
+    - Each language has its own translation table.
 4. Enter the translations and click **Save Changes.**
     - If you omit text for a translated element, it will appear as a blank field in the form.
 5. Close the window and preview your form to verify the translations. 
@@ -54,9 +55,6 @@ You can return to this window at any time to update existing translations or add
 
 ![Add a new language](images/language_dashboard/add_language.png)
 
-<p class="note">
-    <strong>Note:</strong> This method allows you to translate questions, choices, and hints. To translate guidance hints, constraint messages, required messages, and other advanced elements, use <a href="https://support.kobotoolbox.org/language_xls.html">XLSForm</a>.
-</p>
 
 ## Changing the default language 
 
