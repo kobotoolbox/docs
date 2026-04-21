@@ -72,7 +72,7 @@ In XLSForm, question groups can be repeated to collect the same set of responses
 
 ## Appearance settings for question groups
 
-A common reason to group questions is to display them together on a single page. You can adjust the group's appearance settings to control how grouped questions are shown during data collection. The steps vary depending on whether you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html).
+A common reason to group questions is to display them together on a single page. You can adjust the group's appearance settings to control how grouped questions are shown during data collection. The steps vary depending on whether you are using [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html).
 
 <p class="note">
 <strong>Note:</strong> Appearance settings to display groups on a single page work both for question groups and <a href="https://support.kobotoolbox.org/repeat_groups_xls.html">repeat groups</a>.
