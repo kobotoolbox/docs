@@ -102,6 +102,16 @@ Empty data collection forms that have been downloaded to a device in the KoboCol
 
 ---
 
+## Billing cycle
+
+The period of time before your KoboToolbox plan renews and your usage resets. For **Community Plan** users, the billing cycle is one month and starts on the date the account was created. For paid plans, the billing cycle depends on the subscription type: monthly plans renew every month, and yearly plans renew every year. You can find your account creation date and, if applicable, your plan renewal date in **Account settings > Usage**.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/account_settings.html#usage">Account settings</a>.
+</p>
+
+---
+
 ## Calculation
 
 An automated expression in a form that generates a value based on other responses or predefined rules, without requiring the respondent to enter the value manually.
