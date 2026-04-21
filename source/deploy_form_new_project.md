@@ -6,8 +6,7 @@ Before you can collect data in KoboToolbox, your form must be **deployed**. Depl
 This article explains how to deploy and redeploy forms in KoboToolbox, how updates affect web forms and KoboCollect, what to check before making a form live, and what changes to avoid once data collection has started.
 
 <p class="note">
-<strong>Note:</strong>
-   To learn more about collecting data with KoboToolbox, see <a href="https://support.kobotoolbox.org/data-collection-tools.html">Data collection with KoboToolbox</a>. 
+To learn more about collecting data with KoboToolbox, see <a href="https://support.kobotoolbox.org/data-collection-tools.html">Data collection with KoboToolbox</a>. 
 </p>
 
 ## Deploying a form for data collection
@@ -83,3 +82,38 @@ Changes that can affect your data structure include:
 
 Changes to a form can also affect how older submissions behave when you edit them, because a submission created with an earlier version of the form may no longer match the current version. For example:
 
+- **Adding new required questions**: Older submissions may require new answers before they can be submitted again.
+- **Removing questions or adding skip logic**: Older submissions may lose data previously collected in those questions when they are edited.
+- **Adding new validation rules or constraints**: Older responses may no longer meet the updated rules and may not be submitted again.
+
+## Troubleshooting
+
+<details>
+<summary><strong>Error when deploying: Choice names must be unique for each choice list</strong></summary>
+This error means that two or more choices in the same choice list have the same <a href="https://support.kobotoolbox.org/glossary.html#xml-value">XML value (or choice name)</a>.
+<br><br>
+If you are using the <strong>Formbuilder</strong>, check the <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML values</a> that you have set manually for each option choice to ensure that each XML value is unique within a given choice list.
+<br><br>
+If you cannot identify which choice is causing the problem, <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox">download the form</a> as an <strong>XLSForm</strong> and check the <code>choices</code> sheet to find the duplicate value more easily. The error message will usually provide the row number in the <code>choices</code> sheet that is causing the error.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Error when deploying: Can’t find external_file.csv
+</strong></summary>
+This error means your form refers to an external attachment, such as a file used with <code>pulldata()</code>, but that file has not been uploaded to the project.
+<br><br>
+Upload the missing attachment to the <a href="https://support.kobotoolbox.org/upload_media.html">form’s media</a> settings, then try deploying again.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Error when deploying: Can’t find survey.xml</strong></summary>
+This error usually means that <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a> have not been set up correctly in the project settings.
+<br><br>
+Check that the dynamic data attachments have been added and configured properly, then try deploying the form again.
+</details>
+
+<br>
