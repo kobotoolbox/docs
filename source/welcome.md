@@ -55,7 +55,7 @@ For more information about the KoboToolbox question library, see <a href="https:
 Collect data offline or online [on any device](https://support.kobotoolbox.org/data-collection-tools.html) using web forms and the KoboCollect app.
 
 * **Web forms:** KoboToolbox uses [web forms](https://support.kobotoolbox.org/data_through_webforms.html) to collect data from any internet browser. Web forms can be used on laptops, desktops, or mobile devices, online or offline.
-* **KoboCollect:** Use the [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) Android app to collect data on mobile devices. Forms can be downloaded to KoboCollect from a KoboToolbox account for offline data collection. Data collected in KoboCollect can then be uploaded to KoboToolbox. Download the KoboCollect app for free from [Google Play](https://play.google.com/store/apps/details?id=org.koboc.collect.android).
+* **KoboCollect:** Use the [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) Android app to collect data on mobile devices. Forms can be downloaded to KoboCollect from a KoboToolbox account for offline data collection. Data collected in KoboCollect can then be uploaded to KoboToolbox. Download the KoboCollect app for free from [Google Play](https://play.google.com/store/apps/details?id=org.koboc.collect.android).
 
 ![Web form](/images/welcome/enketo.png)
 
