@@ -6,7 +6,7 @@
 
 KoboToolbox allows you to add media, including **images**, **audio files**, and **videos**, to notes, questions, and choices in your form. Adding media can increase user engagement and make forms more accessible for users with visual impairments or literacy barriers. 
 
-Form media works with both [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) and [web forms](https://support.kobotoolbox.org/data_through_webforms.html). The following types of media files are currently supported:
+Form media works with both [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) and [web forms](https://support.kobotoolbox.org/data_through_webforms.html). The following types of media files are currently supported:
 
 | Media | Files |
 | :--- | :--- |
