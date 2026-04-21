@@ -62,7 +62,7 @@ The Usage page has two tabs:
 You can monitor the following usage types:
 | Usage type | Description |
 | :--- | :--- |
-| Submissions | The total number of survey submissions that have been collected by projects owned by your account in the current billing cycle. |
+| Submissions | The total number of survey submissions that have been collected by projects owned by your account in the current [billing cycle](https://support.kobotoolbox.org/glossary.html#billing-cycle). |
 | File storage | The total size of photos, audio, videos, and files collected with your surveys or imported in project **Settings > Media.** |
 | Transcription minutes | The number of transcription minutes that have been used by your account for [automatic audio file transcription](https://support.kobotoolbox.org/transcription-translation.html). |
 | Translation characters | The number of translation characters that have been used by your account for [automatic translation of audio transcripts](https://support.kobotoolbox.org/transcription-translation.html). |
