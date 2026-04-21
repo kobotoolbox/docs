@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/451366bcabcf8b2f2bfe4b74f7eb1f5526a1daff/source/glossary.md" class="reference">13 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e855e25827097fada43107a375c9d5bc198d6286/source/glossary.md" class="reference">21 Apr 2026</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
@@ -99,6 +99,16 @@ Empty data collection forms that have been downloaded to a device in the KoboCol
 </p>
 
 **Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect)
+
+---
+
+## Billing cycle
+
+The period of time before your KoboToolbox plan renews and your usage resets. For **Community Plan** users, the billing cycle is one month and starts on the date the account was created. For paid plans, the billing cycle depends on the subscription type: monthly plans renew every month, and yearly plans renew every year. You can find your account creation date and, if applicable, your plan renewal date in **Account settings > Usage**.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/account_settings.html#usage">Account settings</a>.
+</p>
 
 ---
 
