@@ -25,7 +25,7 @@ To add a text question to your form:
 By default, text questions appear as a single-line text box.
 
 - In [web forms](https://support.kobotoolbox.org/data_through_webforms.html), the text box remains the same size regardless of how much text is entered. It does not support line breaks.
-- In [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html), the text box expands as you type and supports line breaks, allowing respondents to enter paragraphs.
+- In [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html), the text box expands as you type and supports line breaks, allowing respondents to enter paragraphs.
 
 ![Web forms vs KoboCollect text question appearance](images/text_questions/table.png)
 
