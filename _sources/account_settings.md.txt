@@ -1,5 +1,5 @@
 # Account settings
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0cec0647d2df1f971c58198e92b580930861bcea/source/account_settings.md" class="reference">20 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2be9f093d6a556c1bdbd0e980532a9e9e03cb3fb/source/account_settings.md" class="reference">21 Apr 2026</a>
 
 <iframe src="https://www.youtube.com/embed/QC6eTm7gh-I?si=L0kvHzvY_kFocSZd" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -62,7 +62,7 @@ The Usage page has two tabs:
 You can monitor the following usage types:
 | Usage type | Description |
 | :--- | :--- |
-| Submissions | The total number of survey submissions that have been collected by projects owned by your account in the current billing cycle. |
+| Submissions | The total number of survey submissions that have been collected by projects owned by your account in the current [billing cycle](https://support.kobotoolbox.org/glossary.html#billing-cycle). |
 | File storage | The total size of photos, audio, videos, and files collected with your surveys or imported in project **Settings > Media.** |
 | Transcription minutes | The number of transcription minutes that have been used by your account for [automatic audio file transcription](https://support.kobotoolbox.org/transcription-translation.html). |
 | Translation characters | The number of translation characters that have been used by your account for [automatic translation of audio transcripts](https://support.kobotoolbox.org/transcription-translation.html). |
