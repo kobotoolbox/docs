@@ -3,7 +3,7 @@
 
 KoboToolbox [Community, Professional, and Teams Plans](https://www.kobotoolbox.org/pricing/) have specific usage limits for survey submissions, file storage, and automatic transcription and translation.
 
-- **Submission limit:** The number of survey submissions that can be collected by projects owned by your account per billing cycle (i.e., the period of time covered by one payment, such as a month or a year).
+- **Submission limit:** The number of survey submissions that can be collected by projects owned by your account per [billing cycle](https://support.kobotoolbox.org/glossary.html#billing-cycle).
 - **Storage limit:** The total size of photos, audio, videos, and files collected with your surveys or imported in project **Settings > Media.**
 - **Transcription and translation limit:** The number of [transcription minutes and translation characters](https://support.kobotoolbox.org/transcription-translation.html) available for audio recordings.
 
