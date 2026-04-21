@@ -4,9 +4,15 @@
 
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-KoboCollect is a free, open-source KoboToolbox app designed for data collection on Android mobile devices. Before you get started, [install and configure](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) the KoboCollect app. 
+KoboCollect is a free, open-source KoboToolbox app designed for data collection on mobile devices. It is best suited for field teams of enumerators using Android phones or tablets, especially when data needs to be collected offline.
 
-Once set up, KoboCollect allows you to fill and submit forms from your mobile device, even offline. This article explains how to use the app to collect data, including accessing forms, saving and editing responses, and sending finalized submissions.
+Before getting started, you will need to [install and configure](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) the KoboCollect app. Once set up, KoboCollect allows you to fill and submit forms from your mobile device, even offline. 
+
+This article explains how to use KoboCollect for data collection, including downloading forms, completing and editing submissions, sending finalized forms, deleting saved or blank forms, and troubleshooting common issues.
+
+<p class="note">
+For more information about the KoboCollect app and recommended devices, see <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Setting up the KoboCollect app</a>.
+</p>
 
 ## Downloading forms
 
@@ -94,4 +100,72 @@ To delete forms:
   <strong>Note:</strong> You do not need an internet connection to delete forms in KoboCollect. However, if blank forms are accidentally deleted offline, an internet connection is required to recover them for continued data collection. To prevent accidental deletion, you can set access controls in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#access-control">project settings</a>.
 </p>
 
+## Troubleshooting
 
+<details>
+<summary><strong>Download form takes too long to load</strong></summary>
+If the <strong>Download form</strong> page takes a long time to connect to the server or load downloadable forms, your KoboToolbox account may have too many active forms, or your internet connection may be weak.
+<br><br>
+Try the following:
+<br>
+<ul>
+<li>Archive forms that are no longer in use to reduce the number of forms KoboCollect needs to load.</li>
+<li>Check that your internet connection is stable, then try again.</li>
+</ul>
+</details>
+
+<br>
+
+<details>
+<summary><strong>KoboCollect shows an old version of the form</strong></summary>
+If KoboCollect shows an older version of your form, download the form again to get the latest deployed version. You can also enable <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form updates</a> in KoboCollect so the app checks for newer versions when connecting to the server.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Error evaluating field […] XPath evaluation: type mismatch. This field is repeated</strong></summary>
+This error means that your form is using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, and that the field used to link the parent and child data contains duplicate values in the parent data. The linking field must contain only unique values.
+<br><br>
+To fix this, remove or correct the duplicate values in the linking field of the parent data, or use the <code>[position() = 1]</code> argument in your calculation.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Error getting form list</strong></summary>
+If you see “Error getting form list” after opening <strong>Download form</strong>, first check that the KoboToolbox server URL in KoboCollect is correct. A small typo in the URL is a common cause of this error.
+<br><br>
+Also make sure the device is connected to the internet. In some cases, the device may appear connected to Wi-Fi but still require you to sign in through a browser before internet access is available.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Secure connection errors</strong></summary>
+You may see an error such as “Generic Exception: No peer certificate”, “Form listing failed”, or <code>SSLPeerUnverifiedException</code> when KoboCollect cannot establish a secure connection to the server.
+<br><br>
+The most common cause is that the device date is incorrect. Check the date and time settings on the phone or tablet, then try again. This can happen if the device battery was fully drained and the date reset.
+<br><br>
+This error can also appear when using a Wi-Fi network or hotspot that requires a browser sign-in before allowing internet access.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Unable to edit this blank form because the corresponding blank form is not present or was deleted</strong></summary>
+This error appears when you try to edit a <a href="https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect">saved form</a>, but the original <a href="https://support.kobotoolbox.org/glossary.html#blank-forms-kobocollect">blank form</a> is no longer available on the device. 
+<br><br>
+To fix this, download the blank form again. After that, you should be able to reopen and continue editing the saved form.
+</details>
+
+<br>
+
+<details>
+<summary><strong>No internet access at all</strong></summary>
+If field devices cannot access the internet at any point, KoboCollect submissions can still be transferred manually from the device to a computer using <a href="https://docs.getodk.org/briefcase-intro">external tools</a> and a USB connection. In more advanced setups, it is also possible to <a href="https://github.com/kobotoolbox/kobo-install">run KoboToolbox locally</a> on a computer and connect devices to it over a local network without internet access.
+<br><br>
+These approaches are less common and require additional setup, so they are usually best suited for specialized workflows.
+</details>
+
+<br>
