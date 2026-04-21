@@ -90,6 +90,16 @@ A feature that continuously records audio during an interview while the form is 
 
 ---
 
+## Billing cycle
+
+The period of time before your KoboToolbox plan renews and your usage resets. For **Community Plan** users, the billing cycle is one month and starts on the date the account was created. For paid plans, the billing cycle depends on the subscription type: monthly plans renew every month, and yearly plans renew every year. You can find your account creation date and, if applicable, your plan renewal date in **Account settings > Usage**.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/account_settings.html#usage">Account settings</a>.
+</p>
+
+---
+
 ## Blank forms (KoboCollect)
 
 Empty data collection forms that have been downloaded to a device in the KoboCollect app. These forms contain no responses yet and are ready for data collection. Blank forms are also referred to as **form definitions** in the app.
@@ -99,16 +109,6 @@ Empty data collection forms that have been downloaded to a device in the KoboCol
 </p>
 
 **Related term(s):** [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect), [Saved forms](https://support.kobotoolbox.org/glossary.html#saved-forms-kobocollect)
-
----
-
-## Billing cycle
-
-The period of time before your KoboToolbox plan renews and your usage resets. For **Community Plan** users, the billing cycle is one month and starts on the date the account was created. For paid plans, the billing cycle depends on the subscription type: monthly plans renew every month, and yearly plans renew every year. You can find your account creation date and, if applicable, your plan renewal date in **Account settings > Usage**.
-
-<p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/account_settings.html#usage">Account settings</a>.
-</p>
 
 ---
 
