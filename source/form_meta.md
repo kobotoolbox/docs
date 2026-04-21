@@ -31,7 +31,7 @@ Available metadata questions in the Formbuilder include:
 
 ## Audit metadata question
 
-The audit metadata question records a detailed log of the interview process while a form is being completed in the [KoboCollect Android app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html#). It captures information such as when the form was opened and saved, which questions were viewed, how long respondents spent on each screen, and other user actions during data collection.
+The audit metadata question records a detailed log of the interview process while a form is being completed in the [KoboCollect Android app](https://support.kobotoolbox.org/data_collection_kobocollect.html). It captures information such as when the form was opened and saved, which questions were viewed, how long respondents spent on each screen, and other user actions during data collection.
 
 Audit logging can help:
 
