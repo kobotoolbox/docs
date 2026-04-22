@@ -72,7 +72,7 @@ You can detect the current location of the device by clicking on the <strong>loc
 
 You can use [appearances](https://support.kobotoolbox.org/gps_questions.html#advanced-appearances) to change how the GPS question is displayed in web forms, specifically to hide the input fields for GPS coordinates. However, web forms do not allow you to fully prevent manual location selection. If you want to collect a location automatically without allowing manual selection, use **background-geopoint** instead.
 
-<iframe src="" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/akG0_cESv6U?si=vB9ByYkcP74Neu8x" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 In KoboCollect, GPS data is captured automatically from the device’s current location when the user taps a button. Manual location selection is not enabled by default for point questions, although additional [appearances](https://support.kobotoolbox.org/gps_questions.html#advanced-appearances) can change how GPS questions behave. 
 
@@ -80,9 +80,9 @@ The capture method in KoboCollect differs depending on the question type:
 
 | Question type | GPS data capture |
 | :--- | :--- |
-| Point / `geopoint` | Tap Get point to begin capturing the device’s location. Once the device reaches the default target accuracy of 5 meters or better, the point is recorded automatically. The enumerator can also tap Save to record the current location manually before that accuracy is reached. |
-| Line / `geotrace` | Tap Get line and click <i class="k-icon-qt-point"></i> to choose an input method. The available methods are: <br><br><ul><li>Placement by tapping: The enumerator manually taps points on the map to draw the line.</li><li>Manual location recording: The enumerator moves to each location and taps Record a Point to capture each point from the device’s current position.</li><li>Automatic location recording: The app records points automatically while the enumerator moves, based on a selected time interval and required accuracy.</li></ul><br>A line requires at least two points. After recording your points, click the Save button in the bottom left corner. |
-| Area / `geoshape` | Tap Get polygon and click <i class="k-icon-qt-point"></i> to choose an input method. The same input methods as above are available, but to create an enclosed area instead of a line. An area requires at least three points. |
+| Point / `geopoint` | Tap **Get point** to begin capturing the device’s location. Once the device reaches the default target accuracy of **5 meters or better**, the point is recorded automatically. The enumerator can also tap **Save** to record the current location manually before that accuracy is reached. |
+| Line / `geotrace` | Tap **Get line** and click <i class="k-icon-qt-point"></i> to choose an input method. The available methods are: <br><br><ul><li><strong>Placement by tapping:</strong> The enumerator manually taps points on the map to draw the line.</li><li><strong>Manual location recording:</strong> The enumerator moves to each location and taps Record a Point to capture each point from the device’s current position.</li><li><strong>Automatic location recording:</strong> The app records points automatically while the enumerator moves, based on a selected time interval and required accuracy.</li></ul><br>A line requires at least two points. After recording your points, click the **Save** button in the bottom left corner. |
+| Area / `geoshape` | Tap **Get polygon** and click <i class="k-icon-qt-point"></i> to choose an input method. The same input methods as above are available, but to create an enclosed area instead of a line. An area requires at least three points. |
 
 Beyond the default behavior, you can use [appearances](https://support.kobotoolbox.org/gps_questions.html#advanced-appearances) to change how GPS questions function in KoboCollect. For example, you can use appearances to:
 
@@ -117,6 +117,7 @@ Common parameters include:
 <p class="note">
 <strong>Note:</strong>
 For most workflows, a <strong>capture-accuracy</strong> of around <strong>5 meters</strong> is a practical target. In general, it is not recommended to set the target below <strong>3 meters</strong> unless you are using an external GPS device, because built-in device GPS is often not accurate enough to reach that level reliably.
+</p>
 
 ### Recommendations for improving GPS accuracy
 
@@ -132,5 +133,73 @@ To improve GPS accuracy:
 
 KoboToolbox supports advanced form logic with GPS data in XLSForm. For example, you can use GPS functions in calculations, constraints, and skip logic to measure distance, perimeter, or area, or to check whether a location falls within a defined boundary.
 
+![Calculate route distance](images/collect_gps/calculate.png)
 
+Common GPS functions include:
+
+| Function | Description |
+| :--- | :--- |
+| `area(${geoshape})` | Returns the area, in square meters, of a `geoshape` value. |
+| `distance(geo)` | Returns the distance, in meters, of either: <ul><li>the perimeter of a `geoshape` value</li><li>the length of a `geotrace` value</li><li>a list of geopoints either specified as strings or references to other fields (including from repeat groups), separated by commas</li></ul> |
+| `geofence(${geopoint}, ${geoshape})` | Returns `TRUE` if the specified `${geopoint}` is inside the specified `${geoshape}`, `FALSE` otherwise. Supported only in KoboCollect. |
+
+<p class="note">
+To learn more about functions to manipulate GPS data in XLSForm, see <a href="https://support.kobotoolbox.org/functions_xls.html#functions-to-manipulate-gps-data">Using functions in XLSForm</a>.
 </p>
+
+## Managing GPS data
+
+After collection, GPS data can be reviewed, mapped, and exported in KoboToolbox.
+
+### Viewing GPS data in the data table
+
+GPS responses appear in the data table like other form responses. A single GPS point is stored as four space-separated values in this format: `latitude longitude altitude accuracy`. 
+
+For line and area questions, multiple GPS points are stored in the same format and separated by semicolons. 
+
+<p class="note">
+To learn more about viewing your data in the data table, see <a href="https://support.kobotoolbox.org/viewing_validating_data.html">Viewing and validating your data</a>.
+</p>
+
+### Mapping GPS data in KoboToolbox
+
+KoboToolbox provides a built-in **Map** view for visualizing single GPS points. This makes it easier to review where submissions were collected, explore spatial patterns, and better understand the geographic distribution of your data.
+
+<p class="note">
+To learn more about the <strong>Map</strong> view in KoboToolbox, see <a href="https://support.kobotoolbox.org/mapping_gps.html">Mapping your GPS data</a>.
+</p>
+
+### Exporting GPS data
+
+You can also export GPS data from KoboToolbox for use in external software. Available export formats support different workflows, from data review and cleaning to mapping and geospatial analysis: 
+
+- **CSV and XLS exports** are useful for working with GPS data in spreadsheet software and can also be imported into many GIS tools, though they often require additional setup such as defining coordinate fields or a coordinate reference system.
+- For GIS workflows, **GeoJSON** is generally the recommended format because it is widely supported in tools such as ArcGIS and QGIS.
+- **KML** is mainly intended for visualization in applications such as Google Earth and supports basic map styling, but it is more limited and is best used only when required for a specific workflow.
+
+<p class="note">
+To learn more about exporting your GPS data for external analysis, see <a href="https://support.kobotoolbox.org/mapping_gps.html#exporting-gps-data">Exporting GPS data</a>.
+</p>
+
+## Troubleshooting 
+
+<details>
+<summary><strong>GPS location is not being captured</strong></summary>
+Check that location services and GPS are enabled on the device and that the device has a GPS sensor. You can also test GPS with another app to confirm that the device can determine a location. For better results, move outdoors, wait for a stronger signal, keep away from buildings, trees, and other obstructions, and allow extra time for the device to get its first GPS fix. 
+</details>
+
+<br>
+
+<details>
+<summary><strong>GPS location is incorrect</strong></summary>
+If the recorded location appears to be wrong, the device may be using network-based location instead of satellite-based GPS. In some cases, turning off network location in the device settings can help force KoboCollect to wait for the actual GPS location. 
+</details>
+
+<br>
+
+<details>
+<summary><strong>GPS accuracy does not reach the target threshold</strong></summary>
+ If a point never reaches the desired accuracy, the <code>capture-accuracy</code> threshold may be too strict for the device or field conditions.
+</details>
+
+<br>
