@@ -189,7 +189,7 @@ You can combine multiple parameters in the same link by separating them with <co
 <details>
 <summary><strong>The form does not work offline</strong></summary>
 Before going offline, make sure the form has been fully opened and cached in the browser. Check the offline availability indicator in the form before starting data collection without internet access.<br><br>
-<img src="" alt="signal bars icon">
+<img src="https://github.com/kobotoolbox/docs/blob/Update_data_collection_section/source/images/data_through_webforms/signal_bars.png" alt="signal bars icon">
 </details>
 
 <br>
@@ -204,7 +204,7 @@ If your device restarts, the browser refreshes, or the form closes while you are
 <details>
 <summary><strong>Submissions are not reaching the server</strong></summary>
 If the form was used offline, submissions may still be waiting in the queue. Check the queue counter and make sure the device has reconnected to the internet. Web forms upload queued submissions automatically when a connection is available.<br><br>
-<img src="" alt="Queue counter icon">
+<img src="https://github.com/kobotoolbox/docs/blob/Update_data_collection_section/source/images/data_through_webforms/queue.png" alt="Queue counter icon">
 </details>
 
 <br>
