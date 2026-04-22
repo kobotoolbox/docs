@@ -48,7 +48,7 @@ The following tables describe commonly used regex elements.
 | <code>\W</code> | Matches any non-word character |
 | <code>\s</code> | Matches a space or tab |
 | <code>\b</code> | Matches a word boundary |
-| <code>\\.</code> | Matches a literal dot (<code>.</code>) |
+| `\.` | Matches a literal dot (<code>.</code>) |
 | <code>\\@</code> | Matches a literal <code>@</code> |
 | <code>\\$</code> | Matches a literal <code>$</code> |
 | `\\` | Matches a literal backslash (<code>\\</code>) |
