@@ -82,6 +82,7 @@ The following examples can be used as [constraints](https://support.kobotoolbox.
 | <code>regex(., '^\d{2}\\.\d{3}$')</code> | Limit input to number formatted as 12.345 |
 | <code>regex(., '^(\d{10}&#124;\d{13}&#124;\d{17})$')</code> | Limit input to 10, 13, or 17 digits |
 | <code>regex(., '^(12&#124;345)$')</code> | Input must be 12 or 345 |
+| `regex(., '^[0-9+]{7,15}$')` | Limit input to a phone number (including an optional + sign) |
 
 ### Common regex expressions with letters
 
