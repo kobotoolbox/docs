@@ -1,5 +1,5 @@
 # User-Specified "Other" Responses for Multiple-Choice Questions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/user_specified_other.md" class="reference">15 Feb 2022</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/user_specified_other.md" class="reference">23 Apr 2026</a>
 
 
 Creating user-specified "Other" responses for multiple choice questions in one

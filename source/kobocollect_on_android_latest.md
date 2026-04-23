@@ -1,5 +1,5 @@
 # Setting up the KoboCollect app
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ff350995fdbf546a9f306c1128351d40aaf9a258/source/kobocollect_on_android_latest.md" class="reference">30 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/kobocollect_on_android_latest.md" class="reference">23 Apr 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/qC2Bz8jZkIM?si=xSyTOxOMR6nE8tum" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

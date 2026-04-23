@@ -1,5 +1,5 @@
 # Numeric questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b864270945d76de336b9618ba9ad7b74c6645165/source/number_decimal_range.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/number_decimal_range.md" class="reference">23 Apr 2026</a>
 
 Numeric questions are used to collect quantitative data such as counts, measurements, prices, or ratings. They help ensure that responses are entered in a numeric format, which supports accurate calculations, validations, and analysis. 
 

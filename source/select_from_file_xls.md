@@ -1,5 +1,5 @@
 # Selecting options from an external file in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/select_from_file_xls.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/select_from_file_xls.md" class="reference">23 Apr 2026</a>
 
 **Select from file** questions allow you to use a list of choice options stored in an external file instead of defining them directly in your form. There are two types: `select_one_from_file` for selecting a **single choice**, and `select_multiple_from_file` for selecting **multiple choices**. 
 

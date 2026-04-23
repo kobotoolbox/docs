@@ -1,5 +1,5 @@
 ﻿# Collecting qualitative data with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/recording-interviews.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/recording-interviews.md" class="reference">23 Apr 2026</a>
 
 Qualitative data helps you **understand experiences, priorities, and context** that closed-ended questions can miss. It can reveal why people respond in certain ways, how they describe their needs, and what details matter most in a local context.
 

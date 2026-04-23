@@ -1,5 +1,5 @@
 # Manually Uploading Submissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/20273bf768ef8d800b55bacef5af057845b1559d/source/manual_upload.md" class="reference">6 Sep 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/manual_upload.md" class="reference">23 Apr 2026</a>
 
 
 <p class="note">Please note this is still an experimental feature and it does

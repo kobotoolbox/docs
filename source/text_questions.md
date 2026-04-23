@@ -1,5 +1,5 @@
 # Text questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/text_questions.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/text_questions.md" class="reference">23 Apr 2026</a>
 
 The **Text** question type in KoboToolbox allows respondents to enter open-ended responses in their own words. It is best used when the range of possible answers is not predefined, such as when collecting names, descriptions, explanations, or general feedback. 
 
