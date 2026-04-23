@@ -142,6 +142,17 @@ If one of the columns is not large enough, add `&emsp;` spaces to make it wider,
 | :-------------------- | :------------------------------------ |
 | Save selection as… &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;| Check this option and enter a name for your export settings. When you click <strong>EXPORT</strong>, these settings will be saved and the name will appear in the <strong>Apply saved export settings</strong> box. | 
 
+### Add a bullet list in a table
+
+To add a bullet list or numbered list inside of a table, **use HTML**. Warning: You cannot use any linebreaks between the HTML tags. To render properly, it needs to be all squished together.
+
+| **Column name**    | **Description**                                |
+| :----------------- | :--------------------------------------------- |
+| hint               | <ul><li>Question hint</li><li>Guidance hint</li><li>Option to make a question mandatory</li><li>Skip logic conditions for the question</li></ul>|
+| guidance_hint      | Guidance hint                          |
+| required           | <ol><li>Question hint</li><li>Guidance hint</li><li>Option to make a question mandatory</li><li>Skip logic conditions for the question</li></ol>    |
+| relevant           | Skip logic conditions for the question |
+
 
 <br/> 
 
@@ -204,6 +215,8 @@ Add an unnumbered list:
     Use this format to set up <strong>troubleshooting sections</strong> in your support articles. Include a short title that clearly describes the issue, and propose solutions here.
     <br><br>
     To separate lines inside a troubleshooting item, add a double line break.
+    <br><br>
+    To add a photo, use the normal Markdown format; don't use HTML. For example: ![image](/images/getting_started_organization_feature/organizations_project_views.gif) won't render in the GitHub preview, but will render once the article is published. 
 </details>
 
 <details>
