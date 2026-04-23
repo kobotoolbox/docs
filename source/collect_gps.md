@@ -27,9 +27,6 @@ To learn more about adding GPS questions to your forms, see <a href="https://sup
 
 GPS metadata questions are not visible to respondents. When enabled, they collect GPS data automatically in the background during form completion. The following metadata question types are available in KoboToolbox:
 
-# GPS Question types
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2afa3a0c670fe98b296a79b798f33abf248d0273/source/gps_questions.md" class="reference">22 Apr 2026</a>
-
 | Formbuilder | XLSForm | Description |
 | :--- | :--- | :--- |
 | audit | `audit` | Records detailed GPS location and other audit information during form completion, including location information for each question as the form is filled out. |
@@ -72,6 +69,8 @@ You can detect the current location of the device by clicking on the <strong>loc
 
 You can use [appearances](https://support.kobotoolbox.org/gps_questions.html#advanced-appearances) to change how the GPS question is displayed in web forms, specifically to hide the input fields for GPS coordinates. However, web forms do not allow you to fully prevent manual location selection. If you want to collect a location automatically without allowing manual selection, use **background-geopoint** instead.
 
+### KoboCollect
+
 <iframe src="https://www.youtube.com/embed/akG0_cESv6U?si=vB9ByYkcP74Neu8x" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 In KoboCollect, GPS data is captured automatically from the device’s current location when the user taps a button. Manual location selection is not enabled by default for point questions, although additional [appearances](https://support.kobotoolbox.org/gps_questions.html#advanced-appearances) can change how GPS questions behave. 
@@ -80,8 +79,8 @@ The capture method in KoboCollect differs depending on the question type:
 
 | Question type | GPS data capture |
 | :--- | :--- |
-| Point / `geopoint` | Tap **Get point** to begin capturing the device’s location. Once the device reaches the default target accuracy of **5 meters or better**, the point is recorded automatically. The enumerator can also tap **Save** to record the current location manually before that accuracy is reached. |
-| Line / `geotrace` | Tap **Get line** and click <i class="k-icon-qt-point"></i> to choose an input method. The available methods are: <br><br><ul><li><strong>Placement by tapping:</strong> The enumerator manually taps points on the map to draw the line.</li><li><strong>Manual location recording:</strong> The enumerator moves to each location and taps Record a Point to capture each point from the device’s current position.</li><li><strong>Automatic location recording:</strong> The app records points automatically while the enumerator moves, based on a selected time interval and required accuracy.</li></ul><br>A line requires at least two points. After recording your points, click the **Save** button in the bottom left corner. |
+| Point / `geopoint` | Tap **Get point** to begin capturing the device’s location. <br><br><ul><li>Once the device reaches the default target accuracy of **5 meters or better**, the point is recorded automatically.</li> <li>The enumerator can also tap **Save** to record the current location manually before that accuracy is reached.</li></ul> |
+| Line / `geotrace` | Tap **Get line** and click <i class="k-icon-qt-point"></i> to choose an input method. The available methods are: <br><br><ul><li><strong>Placement by tapping:</strong> The enumerator manually taps points on the map to draw the line.</li><li><strong>Manual location recording:</strong> The enumerator moves to each location and taps Record a Point to capture each point from the device’s current position.</li><li><strong>Automatic location recording:</strong> The app records points automatically while the enumerator moves, based on a selected time interval and required accuracy.</li></ul>A line requires at least two points. After recording your points, click the **Save** button in the bottom left corner. |
 | Area / `geoshape` | Tap **Get polygon** and click <i class="k-icon-qt-point"></i> to choose an input method. The same input methods as above are available, but to create an enclosed area instead of a line. An area requires at least three points. |
 
 Beyond the default behavior, you can use [appearances](https://support.kobotoolbox.org/gps_questions.html#advanced-appearances) to change how GPS questions function in KoboCollect. For example, you can use appearances to:
