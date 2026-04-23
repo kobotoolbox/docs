@@ -75,7 +75,7 @@ Data column names must follow these rules:
 
 ### Displaying guidance hints in KoboCollect
 
-In Enketo web forms, guidance hints appear in a collapsible **More Details** section. In KoboCollect, they are hidden by default, but you can [change your project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) to always display them or show them in a collapsible section. 
+In web forms, guidance hints appear in a collapsible **More Details** section. In KoboCollect, they are hidden by default, but you can [change your project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) to always display them or show them in a collapsible section. 
 
 To display guidance hints in KoboCollect, follow the steps below:
 
@@ -137,7 +137,7 @@ The format of the default response depends on the question type and the data bei
 
 ## Appearance (Advanced)
 
-Question appearances allow you to modify how a question is displayed and, in some cases, how respondents interact with it. Some appearances are supported only in Enketo web forms, while others work only in KoboCollect.
+Question appearances allow you to modify how a question is displayed and, in some cases, how respondents interact with it. Some appearances are supported only in web forms, while others work only in KoboCollect.
 
 ![Advanced appearance](images/question_options/appearance.png)
 
