@@ -108,7 +108,7 @@
           
   <section id="collecting-gps-data-with-kobotoolbox">
 <h1>Collecting GPS data with KoboToolbox<a class="headerlink" href="#collecting-gps-data-with-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/collect_gps.md" class="reference">23 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/75a01d18e539cff0694a03ac2ffe032abb6a14d5/source/collect_gps.md" class="reference">23 Apr 2026</a></p>
 <p>KoboToolbox allows you to collect GPS data in your forms, including when working offline. GPS questions can capture <strong>a single location, a route, or an area</strong> during data collection. This is useful for tasks such as mapping infrastructure, tracking field visits, monitoring environmental sites, or recording service locations. GPS data can be collected using both <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a> and <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a>.</p>
 <p>This article explains how to collect GPS data in KoboToolbox, including the available GPS question types, how GPS data is collected in web forms and KoboCollect, how to use GPS data in advanced form logic, how to manage GPS data in KoboToolbox, and how to troubleshoot common GPS issues.</p>
 <section id="setting-up-your-form-to-collect-gps-data">
@@ -140,7 +140,7 @@
 </tbody>
 </table>
 <p class="note">
-To learn more about adding GPS questions to your forms, see <a href="https://support.kobotoolbox.org/gps_questions.html">GPS questions in KoboToolbox and Question types in XLSForm</a>. 
+To learn more about adding GPS questions to your forms, see <a href="https://support.kobotoolbox.org/gps_questions.html">GPS questions in KoboToolbox</a> and <a href="https://support.kobotoolbox.org/question_types_xls.html#gps-question-types">Question types in XLSForm</a>. 
 </p>
 </section>
 <section id="gps-metadata-questions">
@@ -213,10 +213,10 @@ You can detect the current location of the device by clicking on the <strong>loc
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p>Point / <code class="docutils literal notranslate"><span class="pre">geopoint</span></code></p></td>
-<td class="text-left"><p>Tap <strong>Get point</strong> to begin capturing the device’s location. <br><br><ul><li>Once the device reaches the default target accuracy of <strong>5 meters or better</strong>, the point is recorded automatically.</li> <li>The enumerator can also tap <strong>Save</strong> to record the current location manually before that accuracy is reached.</li></ul></p></td>
+<td class="text-left"><p>Tap <strong>Get point</strong> to begin capturing the device’s location. <br><ul><li>Once the device reaches the default target accuracy of <strong>5 meters or better</strong>, the point is recorded automatically.</li> <li>The enumerator can also tap <strong>Save</strong> to record the current location manually before that accuracy is reached.</li></ul></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Line / <code class="docutils literal notranslate"><span class="pre">geotrace</span></code></p></td>
-<td class="text-left"><p>Tap <strong>Get line</strong> and click <i class="k-icon-qt-point"></i> to choose an input method. The available methods are: <br><br><ul><li><strong>Placement by tapping:</strong> The enumerator manually taps points on the map to draw the line.</li><li><strong>Manual location recording:</strong> The enumerator moves to each location and taps Record a Point to capture each point from the device’s current position.</li><li><strong>Automatic location recording:</strong> The app records points automatically while the enumerator moves, based on a selected time interval and required accuracy.</li></ul>A line requires at least two points. After recording your points, click the <strong>Save</strong> button in the bottom left corner.</p></td>
+<td class="text-left"><p>Tap <strong>Get line</strong> and click <i class="k-icon-qt-point"></i> to choose an input method. The available methods are: <br><ul><li><strong>Placement by tapping:</strong> The enumerator manually taps points on the map to draw the line.</li><li><strong>Manual location recording:</strong> The enumerator moves to each location and taps Record a Point to capture each point from the device’s current position.</li><li><strong>Automatic location recording:</strong> The app records points automatically while the enumerator moves, based on a selected time interval and required accuracy.</li></ul>A line requires at least two points. After recording your points, click the <strong>Save</strong> button in the bottom left corner.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Area / <code class="docutils literal notranslate"><span class="pre">geoshape</span></code></p></td>
 <td class="text-left"><p>Tap <strong>Get polygon</strong> and click <i class="k-icon-qt-point"></i> to choose an input method. The same input methods as above are available, but to create an enclosed area instead of a line. An area requires at least three points.</p></td>
