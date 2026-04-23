@@ -1,5 +1,5 @@
 # Collecting data using web forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/data_through_webforms.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/fbd49dc8b5b271d793f31262a520b76e4c44b698/source/data_through_webforms.md" class="reference">23 Apr 2026</a>
 
 KoboToolbox web forms let you **collect data directly in a web browser**, without installing an app. They are browser-based versions of your form that you can use to preview and test your questionnaire or collect live data on phones, tablets, and computers.
 
@@ -55,7 +55,7 @@ Available web form modes include:
 |:---|:---|
 | Online-Offline (multiple submission) | Allows data collection online or offline and supports multiple submissions from the same device. |
 | Online-Only (multiple submissions) | Supports multiple submissions from the same device, but requires an internet connection for use. |
-| Online-Only (single submission) | Allows one submission at a time from the same device and can be used with a <a href="https://support.kobotoolbox.org/data_through_webforms.html#redirect-users-to-another-webpage-after-submission">redirect link</a> after submission. Users are not prevented from reopening the link to submit data again. |
+| Online-Only (single submission) | Allows one submission at a time from the same device and can be used with a <a href="https://support.kobotoolbox.org/data_through_webforms.html#redirecting-users-to-another-webpage-after-submission">redirect link</a> after submission. Users are not prevented from reopening the link to submit data again. |
 | Online-only (once per respondent) | Prevents the same user on the same browser and device from submitting more than once. |
 | Embeddable web form code | Provides HTML code to embed the form on your own website. |
 | View only | Opens the form for previewing and testing without allowing submissions. |
@@ -157,7 +157,7 @@ For example, you could share different links in different places, and each link 
 
 To share a link that prefills a field in your form:
 
-1. Add the question you want to prefill to your form, then set its [data column name](https://support.kobotoolbox.org/glossary.html#xml-value).
+1. Add the question you want to prefill to your form, then set its [data column name](https://support.kobotoolbox.org/glossary.html#data-column-name).
     - This can be a [Hidden](https://support.kobotoolbox.org/form_logic.html#storing-constants-in-your-form) question if you want to store the value in the background, or any standard question type if you want respondents to see it in the form.
 2. Copy your form link in **FORM > Collect data.**
 3. Add `?d[data_column_name]=value` at the end of the URL, where `data_column_name` is the data column name of the Hidden question and `value` is the prefilled value.
