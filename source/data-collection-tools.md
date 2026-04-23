@@ -39,7 +39,7 @@ Some features work differently depending on the collection method. Keep this in 
 Both web forms and KoboCollect support **offline data collection.**
 
 - When using **web forms**, KoboToolbox can store the form and responses in the browser’s cache so users can continue entering data without an internet connection.
-  - Before going offline, you will need to open the form while connected to the internet and wait for it to fully load and be [cached on the device](https://support.kobotoolbox.org/data_through_webforms.html#offline-data-collection-with-web-forms).
+  - Before going offline, you will need to open the form while connected to the internet and wait for it to fully load and be [cached on the device](https://support.kobotoolbox.org/data_through_webforms.html#offline-data-collection).
   - When the device reconnects, saved submissions will upload automatically.
 - When using **KoboCollect**, enumerators can download blank forms while online, complete them offline, save drafts, finalize submissions, and send them later when internet access becomes available. 
   - KoboCollect can also be [configured](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) to send finalized forms automatically when connected or only when the user chooses to upload them.
