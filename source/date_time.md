@@ -30,7 +30,7 @@ To add date and time questions to your form:
 
 The table below displays the default appearances for date and time questions:
 
-![Date time questions in Enketo vs KoboCollect](images/date_time/table.png)
+![Date time questions in web forms vs KoboCollect](images/date_time/table.png)
 
 ### Advanced appearances
 

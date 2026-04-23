@@ -72,7 +72,7 @@ In XLSForm, question groups can be repeated to collect the same set of responses
 
 ## Appearance settings for question groups
 
-A common reason to group questions is to display them together on a single page. You can adjust the group's appearance settings to control how grouped questions are shown during data collection. The steps vary depending on whether you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [Enketo](https://support.kobotoolbox.org/enketo.html).
+A common reason to group questions is to display them together on a single page. You can adjust the group's appearance settings to control how grouped questions are shown during data collection. The steps vary depending on whether you are using [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html).
 
 <p class="note">
 <strong>Note:</strong> Appearance settings to display groups on a single page work both for question groups and <a href="https://support.kobotoolbox.org/repeat_groups_xls.html">repeat groups</a>.
@@ -98,14 +98,14 @@ To **display all grouped questions on the same screen** in KoboCollect:
 | end_group | | | |
 | survey |
 
-### Using Enketo web forms to collect data
+### Using web forms to collect data
 
-By default, Enketo web forms display all questions on a single page.
+By default, web forms display all questions on a single page.
 
-To display each group of questions on its own page in Enketo web forms:
+To display each group of questions on its own page in web forms:
 1.  In the `settings` worksheet, add a `style` column.
 2.  In the second cell of the `style` column, enter `pages`.
-    * This applies the [pages theme](https://support.kobotoolbox.org/form_style_xls.html) to your Enketo web form, dividing it into separate pages similar to KoboCollect. 
+    * This applies the [pages theme](https://support.kobotoolbox.org/form_style_xls.html) to your web form, dividing it into separate pages similar to KoboCollect. 
 
 **settings worksheet**
 

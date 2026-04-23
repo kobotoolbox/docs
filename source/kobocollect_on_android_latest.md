@@ -1,4 +1,4 @@
-# Getting started with KoboCollect
+# Setting up the KoboCollect app
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ff350995fdbf546a9f306c1128351d40aaf9a258/source/kobocollect_on_android_latest.md" class="reference">30 Dec 2025</a>
 
 
@@ -9,15 +9,33 @@ KoboCollect is a free, open-source KoboToolbox app designed for data collection 
 Before using KoboCollect, you must [set up a KoboToolbox account](https://support.kobotoolbox.org/creating_account.html) on the KoboToolbox website and [deploy data collection forms](https://support.kobotoolbox.org/quick_start.html). 
 
 <p class="note">
-    This article covers how to connect to KoboCollect for data collection. To learn more about configuring KoboCollect settings and collecting data with the app, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Customizing KoboCollect settings</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Data collection using KoboCollect</a>.
+ This article covers how to set up KoboCollect on an Android device and connect it to a KoboToolbox account for data collection. To learn more about configuring KoboCollect settings and collecting data with the app, see <a href="https://support.kobotoolbox.org/kobocollect_settings.html">Customizing KoboCollect settings</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecting data using KoboCollect</a>.
+</p>
+
+## Choosing a device for KoboCollect
+
+KoboCollect works only on **Android phones and tablets.** When choosing a device, consider the following:
+
+- It must run a version of Android supported by KoboCollect. Newer app versions require Android 8.0 or higher.
+- It should be suitable for your field conditions in terms of battery life, screen size, and durability.
+- It should have enough storage for your forms and submissions, especially if you collect photos, audio, video, or store many submissions offline before upload.
+- It should have any hardware your form requires, such as GPS or a camera.
+- It should be able to connect reliably to Wi-Fi or cellular data so forms and submissions can be downloaded and uploaded as needed.
+
+In general, phones may be better for portability, while tablets may be better for longer questionnaires or more complex workflows.
+
+<p class="note">
+<strong>Note:</strong>
+There is no exhaustive list of supported devices for using KoboCollect. However, there is an <a href="https://github.com/getodk/collect#test-devices">official list of devices</a> that the app is tested on, which are the most reliable options.
 </p>
 
 ## Installing the KoboCollect app
 
-The KoboCollect app can be downloaded from the [Google Play Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android) for Android devices running version 5 or above. 
+The KoboCollect app can be downloaded from the [Google Play Store](https://play.google.com/store/apps/details?id=org.koboc.collect.android). We recommend always using the latest version of the app, as it includes features and bug fixes not available in older versions. 
 
 <p class="note">
-    <strong>Note:</strong> We recommend using the latest version of the app (v2025.3.3), as it includes features and bug fixes not available in older versions.
+<strong>Note:</strong>
+While KoboCollect continues to work on any Android phone or tablet running Android 5.1 or higher, Android 8.0 or higher is now required to obtain the newest app versions. The last available version for older devices will still be available in the Play Store and on <a href="https://github.com/kobotoolbox/collect/releases">GitHub</a>.
 </p>
 
 ## Setting up the KoboCollect app

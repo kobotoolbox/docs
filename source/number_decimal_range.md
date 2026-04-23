@@ -75,9 +75,9 @@ In KoboCollect:
 
 If a value exceeds these limits, it cannot be entered. This restriction applies at the time of data entry and prevents saving longer numbers.
 
-### Numeric limits in Enketo web forms
+### Numeric limits in web forms
 
-Enketo web forms allow respondents to enter longer numbers, but there are limits to how they are stored:
+KoboToolbox web forms allow respondents to enter longer numbers, but there are limits to how they are stored:
 
 - Up to **17 digits** are recorded completely.
 - From **18 to 21 digits**, additional digits are replaced with zeros, and any decimal portion is removed.

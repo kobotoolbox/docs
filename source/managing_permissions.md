@@ -9,7 +9,7 @@ KoboToolbox allows you to set different access levels for users on each project.
 This article explains how to grant permissions to other KoboToolbox users to collaborate on your projects. It covers user-level permissions, row-level permissions, and copying permissions from another project.
 
 <p class="note">
-To learn more about sharing your project with others for data collection, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting Data through Web Forms</a>. To learn more about project-level settings for sharing your projects, see <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Sharing projects with project-level settings</a>.
+To learn more about sharing your project with others for data collection, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting data using web forms</a>. To learn more about project-level settings for sharing your projects, see <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Sharing projects with project-level settings</a>.
 </p>
 
 ## Setting user-level permissions

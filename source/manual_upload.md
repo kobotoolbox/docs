@@ -6,7 +6,7 @@
 not prevent you from creating duplicate submissions.</p>
 
 In certain situations, you might not be able to use the standard uploading
-option after collecting data with **KoboCollect** or **Enketo Web Forms**. This
+option after collecting data with **KoboCollect** or **web forms**. This
 may be as a result of issues with your mobile device being partially broken
 (e.g. screen is shattered), or due to being in a remote location without
 internet access. You may want to download your submissions from the data

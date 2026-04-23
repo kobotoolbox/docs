@@ -23,7 +23,7 @@ meantime, here's how to create them in your form manually using skip logic.
     shows questions on the same screen that are relevant at the moment the
     screen is first displayed. Just make sure to put it outside of the group
     when choosing to display multiple questions on the same screen. (When using
-    Enketo Webforms this isn't a problem as it dynamically shows questions once
+    web forms this isn't a problem as it dynamically shows questions once
     they become relevant.)
 
 3. Add a [skip logic](skip_logic.md) to the previous follow-up question so it is

@@ -104,7 +104,7 @@ It is possible for a parent and child project to be the same project. The steps 
 
 ## Collecting and managing data with dynamic linking
 
-Data for dynamically linked projects can be collected using the [KoboCollect Android app](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [Enketo web forms](https://support.kobotoolbox.org/data_through_webforms.html).
+Data for dynamically linked projects can be collected using the [KoboCollect Android app](https://support.kobotoolbox.org/data_collection_kobocollect.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html).
 
 When collecting data, note the following:
 

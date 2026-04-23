@@ -23,10 +23,10 @@ All GPS responses appear in the data table and are included in data exports. Onl
 <strong>Note:</strong> You can also collect location automatically in the background using <a href="https://support.kobotoolbox.org/form_meta.html">GPS metadata</a>. GPS points collected via form metadata cannot be displayed in the <strong>Map</strong> view.
 </p>
 
-GPS data can be collected using both Enketo web forms and KoboCollect. 
+GPS data can be collected using both web forms and KoboCollect. 
 
 <p class="note">
-To learn more about collecting GPS data in your KoboToolbox forms, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data</a>.
+To learn more about collecting GPS data in your KoboToolbox forms, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data with KoboToolbox</a>.
 </p>
 
 ## Mapping GPS data in KoboToolbox

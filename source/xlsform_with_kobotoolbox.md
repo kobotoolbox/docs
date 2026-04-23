@@ -132,11 +132,11 @@ to ensure your form functions as expected before launching data collection.
 
 There are several tools available to test your XLSForm, including the KoboToolbox platform, the [KoboCollect app](https://play.google.com/store/apps/details?id=org.koboc.collect.android), and [ODK's XLSForm Online](https://getodk.org/xlsform/). When
 previewing and testing your form, use the same platform that you will use for
-data collection: [Enketo web forms](https://support.kobotoolbox.org/enketo.html), [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html), or both.
+data collection: [web forms](https://support.kobotoolbox.org/data_through_webforms.html), [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html), or both.
 
 <p class="note">
 To learn more about setting up KoboCollect to preview and test your forms, see
-<a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Getting started with KoboCollect</a>.
+<a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Setting up the KoboCollect app</a>.
 </p>
 
 ## Troubleshooting

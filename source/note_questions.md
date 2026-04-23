@@ -22,9 +22,9 @@ To add a note question to your form:
 
 By default, note questions appear as simple text in your form.
 
-| Enketo web form | KoboCollect |
+| Web forms | KoboCollect |
 |:----------------|:------------|
-| ![Note question in Enketo](images/note_questions/enketo_note.png) | ![Note question in KoboCollect](images/note_questions/kobocollect_note.png) |
+| ![Note question in web forms](images/note_questions/enketo_note.png) | ![Note question in KoboCollect](images/note_questions/kobocollect_note.png) |
 
 ### Advanced appearances 
 

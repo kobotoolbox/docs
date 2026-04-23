@@ -3,7 +3,7 @@
 
 Many data collection projects require more than just quantitative data. KoboToolbox allows you to capture various media files from respondents, including photos, audio recordings, videos, and files, to provide key qualitative information and add visual and auditory depth to your datasets.
 
-The method of capturing or uploading media depends on whether you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [Enketo web forms](https://support.kobotoolbox.org/enketo.html) for data collection. In KoboCollect, you can either upload or record media files directly within the app. With Enketo, you can upload any media file, and record audio directly within the forms.
+The method of capturing or uploading media depends on whether you are using [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html) for data collection. In KoboCollect, you can either upload or record media files directly within the app. When using web forms, you can upload any media file, and record audio directly within the forms.
 
 This article covers the following topics:
 - Available media question types in KoboToolbox
@@ -25,7 +25,7 @@ The following media question types are available in the KoboToolbox Formbuilder:
 
 
 <p class="note">
-<strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types <strong>in KoboCollect</strong> are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>. 
+<strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types <strong>in KoboCollect</strong> are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>. 
 </p>
 
 ## Adding media questions in the Formbuilder
@@ -41,16 +41,16 @@ To add a media question to your form:
 
 ## Appearances of media questions
 
-Media questions can display differently depending on whether you are using Enketo web forms or KoboCollect. You can also change the default appearance of media questions. This section details how each question type appears across both platforms, including default and advanced appearance options.
+Media questions can display differently depending on whether you are using web forms or KoboCollect. You can also change the default appearance of media questions. This section details how each question type appears across both platforms, including default and advanced appearance options.
 
 ### Default appearances
 
-The table below shows how media questions are displayed by default in Enketo web forms and KoboCollect.
+The table below shows how media questions are displayed by default in web forms and KoboCollect.
 
 ![Default appearances of media questions](images/photo_audio_video_file/table_updated.png)
 
 <p class="note">
-<strong>Note:</strong> Barcode / QR Code questions are supported only in <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> on mobile devices. When a code is scanned using the device’s camera, the value encoded in the barcode or QR code is automatically captured. In <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>, this question type appears as a standard text field, where respondents must manually enter the value.
+<strong>Note:</strong> Barcode / QR Code questions are supported only in <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a> on mobile devices. When a code is scanned using the device’s camera, the value encoded in the barcode or QR code is automatically captured. In <a href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a>, this question type appears as a standard text field, where respondents must manually enter the value.
 </p>
 
 ### Advanced appearances 
@@ -124,15 +124,15 @@ By default, the **File** question type accepts all file types. To restrict the t
 <br>
 
 <details>
-  <summary><strong>Audio recording in Enketo prevents access to other questions</strong></summary>
-  When a user records an audio question in Enketo, other questions are locked until the recording is complete. This ensures that the audio is fully captured before the user proceeds with the rest of the form.
+  <summary><strong>Audio recording in web form prevents access to other questions</strong></summary>
+  When a user records an audio question in a web form, other questions are locked until the recording is complete. This ensures that the audio is fully captured before the user proceeds with the rest of the form.
 </details>
 
 <br>
 
 <details>
   <summary><strong>Collecting EXIF data from uploaded images</strong></summary>
-  When images are uploaded through Enketo or KoboToolbox, EXIF data is not preserved by default. To retain EXIF data, use a <strong>File</strong> question type and set the <strong>Accepted Files</strong> parameter (<code>body::accept</code> in XLSForm) to <code>.jpg, .jpeg, .png</code>.
+  When images are uploaded through web forms or KoboToolbox, EXIF data is not preserved by default. To retain EXIF data, use a <strong>File</strong> question type and set the <strong>Accepted Files</strong> parameter (<code>body::accept</code> in XLSForm) to <code>.jpg, .jpeg, .png</code>.
 
 </details>
 

@@ -1,61 +1,72 @@
-# Overview on Data Collection Tools
+# Data collection with KoboToolbox
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/53c2e7dae53b8450c51194fb49c7d915fe735012/source/data-collection-tools.md" class="reference">11 Sep 2025</a>
 
+KoboToolbox supports two primary ways to collect data: **web forms**, which run in a browser, and **KoboCollect**, which is the Android app for mobile data collection. Both methods support offline data collection. 
 
-KoboToolbox allows data collection in multiple ways. Because KoboToolbox is
-built on the [Xform/ODK standards](https://xlsform.org), our forms are
-compatible with
-[a number of different tools](https://xlsform.org/en/#tools-that-support-xlsforms)
-that can be used for data collection.
+This article explains the two data collection methods available in KoboToolbox, how to choose between them, and how to prepare before launching data collection.
 
-For Android devices, we recommend using
-[Collect Andoid app](https://play.google.com/store/apps/details?id=org.koboc.collect.android&hl=en_US)
-app, which can be downloaded from the Google Play Store and installed on any
-standard Android phone or tablet.
+<p class="note">
+To learn more about each data collection method, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting data using web forms</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecting data using KoboCollect</a>.
+</p>
 
-For any other devices (including iPhones, iPads, or any laptop or computer), we
-recommend using the webform [for collecting data](data_through_webforms.md).
+## Data collection methods
 
-## A quick rundown on the differences between the two options
+You can collect data with KoboToolbox in two main ways:
+- **Web forms** are browser-based forms used to collect data through a web page. They are well suited for self-administered surveys and browser-based data entry.
+- **KoboCollect** is an Android app used to collect data on Android devices. It is well suited for field teams with enumerators using Android phones or tablets.
 
-| &nbsp;                                                                         | Webforms                                    | KoboCollect                                            |
-| :----------------------------------------------------------------------------- | :------------------------------------------ | :----------------------------------------------------- |
-| Devices                                                                        | Any mobile device or computer               | Android only                                           |
-| Runs in...                                                                     | Browser                                     | Native Android application                             |
-| Configurable                                                                   | Server-wide                                 | On each device                                         |
-| Default form display                                                           | All questions on the same screen            | One question per screen                                |
-| Data upload                                                                    | Automatically when connection available     | On user request or immediately if connection available |
-| Phone-specific meta-questions (`subscriberid`, `simserial`, `phonenumber`)     | No                                          | Yes                                                    |
-| `barcode` question type                                                        | No (except manual entry)                    | Yes                                                    |
-| Different form styles                                                          | Yes                                         | No                                                     |
-| Encryption                                                                     | Not for storage, but always during transfer | Can be enabled on-device, always during transfer       |
-| `hide-input` appearance for maps to hide manual GPS inputs                     | Yes                                         | No                                                     |
-| Advanced map appearance options (`streets`, `terrain`, `satellite`, `[other]`) | Yes                                         | No                                                     |
-| Text formatting in notes and labels (bold, italics, links)                     | Yes                                         | No                                                     |
-| Combine subsequent notes into a single note on the screen                      | Yes                                         | No                                                     |
-| `multiline` appearance for `text` questions                                    | Yes                                         | Yes                                                     |
-| `horizontal-compact` appearance for select-type questions                      | Yes                                         | No                                                     |
-| `likert` scale appearance for select-type questions                            | Yes                                         | Yes                                                     |
-| `compact-2` appearance for select-type questions                               | No                                          | Yes                                                    |
-| `no-calendar` appearance                                                       | No                                          | Yes                                                    |
-| Advanced image appearances (`annotate`, `draw`, `signature`)                   | Yes                                         | Yes                                                    |
-| Calculation command `repeat_count()`                                           | Set a minimum number of repeat groups       | Set an exact number of repeat groups                   |
+Both methods support [offline data collection](https://support.kobotoolbox.org/data-collection-tools.html#offline-data-collection).
 
-### Collecting data using KoboCollect
+### Choosing a data collection method
 
-After deploying a project, you can go to **Form - Collect data**, and then
-select the Android application.
+The best data collection method depends on how your team will work in practice, and in some cases teams may use both methods within the same project.
 
-![image](/images/data_collection_tool/KoboCollect.gif)
+The table below summarizes when each method is generally the better fit:
 
-For details on how to set up KoboCollect on any Android devices,
-[read this article](kobocollect_on_android_latest.md).
+| Web forms | KoboCollect |
+| :--- | :--- |
+| **Recommended if:** <br> <ul><li>Respondents will submit data directly through a link</li><li>You want a simple way to open and share a form</li><li>Your team is using a mix of device types</li><li>You want to use browser-based data collection without installing an app</li><li>Your form includes features that are only available in web forms, such as the [grid theme](https://support.kobotoolbox.org/alternative_enketo.html) or [question matrices](https://support.kobotoolbox.org/matrix_response.html)</li></ul> | **Recommended if:**<br><ul><li>Much of your data collection is field-based in offline settings</li><li>Data is being collected by a team of enumerators using Android phones or tablets</li><li>Enumerators prefer an app-based workflow (e.g., to save drafts and send finalized submissions later)</li><li>Your project relies on mobile device features such as [barcode scanning or capturing images and videos](https://support.kobotoolbox.org/photo_audio_video_file.html)</li><li>You want more control over form management and automation, such as sending forms, downloading forms, or deleting uploaded data from devices</li></ul> |
 
-### Collecting Data using the Enketo Webform
+When choosing a method, consider how people will access the form, which devices they will use, how often they will need to work offline, and whether your form includes features that are better supported in one method than the other.
 
-To [use the webform](data_through_webforms.md), after deploying a project, you
-can go to **Form - Collect data**, multiple options (online or offline, single
-or multiple submissions) are available. The default option is **Online-Offline
-(multiple submission)**.
+<p class="note">
+<strong>Note:</strong>
+Some features work differently depending on the collection method. Keep this in mind before starting data collection, and always test your form in the method your team will use.
+</p>
 
-![image](/images/data_collection_tool/Webform.gif)
+### Offline data collection
+
+Both web forms and KoboCollect support **offline data collection.**
+
+- When using **web forms**, KoboToolbox can store the form and responses in the browser’s cache so users can continue entering data without an internet connection.
+  - Before going offline, you will need to open the form while connected to the internet and wait for it to fully load and be [cached on the device](https://support.kobotoolbox.org/data_through_webforms.html#offline-data-collection-with-web-forms).
+  - When the device reconnects, saved submissions will upload automatically.
+- When using **KoboCollect**, enumerators can download blank forms while online, complete them offline, save drafts, finalize submissions, and send them later when internet access becomes available. 
+  - KoboCollect can also be [configured](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) to send finalized forms automatically when connected or only when the user chooses to upload them.
+
+## Preparing for data collection
+
+Before you can collect data, you must **deploy your form** to make it active and available for submissions. If you make changes to the form later, you will need to redeploy it.
+
+<p class="note">
+To learn more about deploying your form for data collection, see <a href="https://support.kobotoolbox.org/deploy_form_new_project.html">Deploying forms for data collection</a>.
+</p>
+
+Once your form is deployed, make sure your data collection setup is ready before launching data collection: 
+- Decide which data collection method(s) to use
+- Confirm who can access the form and whether authentication should be required
+- Test the project in a scenario similar to your actual data collection, using the same devices and collection method as your respondents or enumerators
+
+Depending on the collection method you choose, we also recommend the following steps:
+
+
+| Web forms | KoboCollect |
+| :--- | :--- |
+| <ul><li>Decide whether the form should [require authentication](https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication)</li><li>If your form requires authentication, ensure that data collectors have the right [permissions](https://support.kobotoolbox.org/managing_permissions.html) to access your data collection form</li><li>Decide which [web form mode](https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes) to use for data collection</li><li>Share the correct form link with data collectors or respondents</li></ul> | <ul><li>Confirm that data collectors have the right [permissions](https://support.kobotoolbox.org/managing_permissions.html) to access your data collection form</li><li>Ensure each data collector has [installed and set up](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) the KoboCollect app</li><li>Confirm each data collector has [downloaded the form(s)](https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms) before starting fieldwork</li></ul> |
+
+
+<p class="note">
+<strong>Note:</strong>
+Deployed projects are set to <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require authentication</a> by default, which means users must sign in to access a web form or submit data. To allow <strong>anyone with the form link</strong> to submit data, turn off the authentication requirement for the form. If you keep authentication enabled, <a href="https://support.kobotoolbox.org/managing_permissions.html">share the project</a> with specific KoboToolbox users and give them <strong>Add submissions</strong> permission.
+</p>
+
