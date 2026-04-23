@@ -1,9 +1,9 @@
 # GPS questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/13cd671122e40421a3fd42643feff95c82beabc1/source/gps_questions.md" class="reference">7 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/gps_questions.md" class="reference">23 Apr 2026</a>
 
 GPS questions are used to **collect geographic coordinates and spatial data** during data collection. They allow you to capture precise locations, map routes, or define areas directly within your form. These question types are useful for activities such as mapping infrastructure, tracking field visits, monitoring environmental sites, or recording service locations.
 
-This article explains the available GPS question types in the Formbuilder, how to add and configure them, the differences in behavior between Enketo web forms and KoboCollect, and the advanced appearance options available for collecting location data.
+This article explains the available GPS question types in the Formbuilder, how to add and configure them, the differences in behavior between web forms and KoboCollect, and the advanced appearance options available for collecting location data.
 
 <p class="note">
 <strong>Note:</strong> Recording GPS coordinates does not require an internet connection and is compatible with offline data collection.
@@ -39,12 +39,12 @@ The table below displays the default appearances for GPS questions:
 
 ![Default appearances of GPS questions](images/gps_questions/table.png)
 
-In **Enketo web forms**, respondents can select a location directly on the map, search for an address, or manually enter GPS coordinates.
+In **web forms**, respondents can select a location directly on the map, search for an address, or manually enter GPS coordinates.
 
 In **KoboCollect**, the device’s current location is recorded automatically, and manual selection or coordinate entry is not available by default.
 
 <p class="note">
-<strong>Note:</strong> To learn more about GPS data collection behaviors in Enketo and KoboCollect, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data</a>.
+<strong>Note:</strong> To learn more about GPS data collection behaviors in web forms and KoboCollect, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data with KoboToolbox</a>.
 </p>
 
 ### Advanced appearances 
@@ -62,10 +62,10 @@ The following advanced appearances are available for GPS questions:
 
 | Appearance | Description | Compatibility |
 |:---|:---|:---|
-| <code>maps</code> | Displays a map for users to visualize the location that is being automatically recorded (<strong>Point</strong> only). | KoboCollect only (included in default Enketo appearance) |
-| <code>placement-map</code> | Allows for manual selection of a location on a map (<strong>Point</strong> only). | KoboCollect only (included in default Enketo appearance) |
-| <code>hide-input</code> | Shows a larger map and hides other input fields (latitude, longitude, altitude, accuracy).<br>![Hide input advanced appearance](images/gps_questions/hide-input.png) | Enketo only |
+| <code>maps</code> | Displays a map for users to visualize the location that is being automatically recorded (<strong>Point</strong> only). | KoboCollect only (included in default web form appearance) |
+| <code>placement-map</code> | Allows for manual selection of a location on a map (<strong>Point</strong> only). | KoboCollect only (included in default web form appearance) |
+| <code>hide-input</code> | Shows a larger map and hides other input fields (latitude, longitude, altitude, accuracy).<br>![Hide input advanced appearance](images/gps_questions/hide-input.png) | Web forms only |
 
 <p class="note">
-<strong>Note:</strong> If you are using Enketo and want to record GPS location automatically without allowing respondents to manually select or enter coordinates, consider using the <code>background-geopoint</code> <a href="https://support.kobotoolbox.org/metadata_xls.html">metadata question</a>.
+<strong>Note:</strong> If you are using web forms and want to record GPS location automatically without allowing respondents to manually select or enter coordinates, consider using the <code>background-geopoint</code> <a href="https://support.kobotoolbox.org/metadata_xls.html">metadata question</a>.
 </p>

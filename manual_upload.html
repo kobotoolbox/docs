@@ -25,6 +25,7 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Transferring forms and data manually from one android device to another" href="transferring_forms.html" />
     <link rel="prev" title="Exports Stuck in Pending State" href="stuck_in_pending.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
@@ -107,11 +108,11 @@
           
   <section id="manually-uploading-submissions">
 <h1>Manually Uploading Submissions<a class="headerlink" href="#manually-uploading-submissions" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/20273bf768ef8d800b55bacef5af057845b1559d/source/manual_upload.md" class="reference">6 Sep 2023</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/manual_upload.md" class="reference">23 Apr 2026</a></p>
 <p class="note">Please note this is still an experimental feature and it does
 not prevent you from creating duplicate submissions.</p>
 <p>In certain situations, you might not be able to use the standard uploading
-option after collecting data with <strong>KoboCollect</strong> or <strong>Enketo Web Forms</strong>. This
+option after collecting data with <strong>KoboCollect</strong> or <strong>web forms</strong>. This
 may be as a result of issues with your mobile device being partially broken
 (e.g. screen is shattered), or due to being in a remote location without
 internet access. You may want to download your submissions from the data
@@ -235,7 +236,7 @@ issue, since duplicate records will be rejected.</p>
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -281,20 +282,14 @@ issue, since duplicate records will be rejected.</p>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -356,6 +351,7 @@ issue, since duplicate records will be rejected.</p>
 <li class="toctree-l2"><a class="reference internal" href="#importing-a-data-zip-file">Importing a data ZIP file</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

@@ -108,7 +108,7 @@
           
   <section id="grouping-questions-in-xlsform">
 <h1>Grouping questions in XLSForm<a class="headerlink" href="#grouping-questions-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/86b2c6d34e0187769d2e14a5f4b082a9d15048d0/source/grouping_questions_xls.md" class="reference">24 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/grouping_questions_xls.md" class="reference">23 Apr 2026</a></p>
 <p>Grouping questions in XLSForm helps organize related content into clear, structured sections, improving form layout and navigation. For example, you can group all demographic questions into one section.</p>
 <p>XLSForm makes it easy to create groups and <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#nested-groups">nested groups</a>, and to apply <a class="reference external" href="https://support.kobotoolbox.org/grouping_questions_xls.html#applying-skip-logic-to-question-groups">skip logic</a> to entire question groups. Group-level skip logic streamlines the respondent’s experience by showing only relevant sections based on previous answers.</p>
 <p>This article covers the following topics:</p>
@@ -238,7 +238,7 @@
 </section>
 <section id="appearance-settings-for-question-groups">
 <h2>Appearance settings for question groups<a class="headerlink" href="#appearance-settings-for-question-groups" title="Link to this heading">¶</a></h2>
-<p>A common reason to group questions is to display them together on a single page. You can adjust the group’s appearance settings to control how grouped questions are shown during data collection. The steps vary depending on whether you are using <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> or <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo</a>.</p>
+<p>A common reason to group questions is to display them together on a single page. You can adjust the group’s appearance settings to control how grouped questions are shown during data collection. The steps vary depending on whether you are using <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a> or <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a>.</p>
 <p class="note">
 <strong>Note:</strong> Appearance settings to display groups on a single page work both for question groups and <a href="https://support.kobotoolbox.org/repeat_groups_xls.html">repeat groups</a>.
 </p>
@@ -297,15 +297,15 @@
 </tbody>
 </table>
 </section>
-<section id="using-enketo-web-forms-to-collect-data">
-<h3>Using Enketo web forms to collect data<a class="headerlink" href="#using-enketo-web-forms-to-collect-data" title="Link to this heading">¶</a></h3>
-<p>By default, Enketo web forms display all questions on a single page.</p>
-<p>To display each group of questions on its own page in Enketo web forms:</p>
+<section id="using-web-forms-to-collect-data">
+<h3>Using web forms to collect data<a class="headerlink" href="#using-web-forms-to-collect-data" title="Link to this heading">¶</a></h3>
+<p>By default, web forms display all questions on a single page.</p>
+<p>To display each group of questions on its own page in web forms:</p>
 <ol class="arabic simple">
 <li><p>In the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet, add a <code class="docutils literal notranslate"><span class="pre">style</span></code> column.</p></li>
 <li><p>In the second cell of the <code class="docutils literal notranslate"><span class="pre">style</span></code> column, enter <code class="docutils literal notranslate"><span class="pre">pages</span></code>.</p>
 <ul class="simple">
-<li><p>This applies the <a class="reference external" href="https://support.kobotoolbox.org/form_style_xls.html">pages theme</a> to your Enketo web form, dividing it into separate pages similar to KoboCollect.</p></li>
+<li><p>This applies the <a class="reference external" href="https://support.kobotoolbox.org/form_style_xls.html">pages theme</a> to your web form, dividing it into separate pages similar to KoboCollect.</p></li>
 </ul>
 </li>
 </ol>
@@ -449,7 +449,7 @@
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -500,20 +500,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -570,6 +564,7 @@
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

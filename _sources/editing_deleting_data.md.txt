@@ -1,10 +1,10 @@
 # Editing and deleting your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3f35f1c6bc8cd20e8fb1ecf962f0a07006ee1ecf/source/editing_deleting_data.md" class="reference">10 Feb 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/editing_deleting_data.md" class="reference">23 Apr 2026</a>
 
-Editing and deleting data helps **maintain data quality** after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including **editing submissions in Enketo, editing raw data directly, and applying bulk updates.** This article explains each method and when to use it.
+Editing and deleting data helps **maintain data quality** after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including **editing submissions via web form, editing raw data directly, and applying bulk updates.** This article explains each method and when to use it.
 
 <p class="note">
-<strong>Note:</strong> Submissions collected with the <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect app</a> cannot be edited or deleted <strong>in KoboCollect</strong> after they are submitted. All post-submission changes must be made in KoboToolbox.
+<strong>Note:</strong> Submissions collected with the <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect app</a> cannot be edited or deleted <strong>in KoboCollect</strong> after they are submitted. All post-submission changes must be made in KoboToolbox.
 </p>
 
 Project owners can control data access by assigning separate permissions to view, edit, validate, and delete submissions. For example, they can allow some team members to edit data while restricting deletion permissions.
@@ -19,7 +19,7 @@ KoboToolbox offers two editing approaches, each designed for different use cases
 
 The two methods for editing submissions in KoboToolbox are:
 
-- **Editing submissions in Enketo:** Opens the submission in [Enketo](https://support.kobotoolbox.org/glossary.html#enketo-web-forms) so you can correct responses and resubmit the form. This method is recommended when form logic needs to be applied.
+- **Editing submissions via web form:** Opens the submission as a [web form](https://support.kobotoolbox.org/glossary.html#enketo-web-forms) so you can correct responses and resubmit the form. This method is recommended when form logic needs to be applied.
 - **Editing raw data directly in KoboToolbox:** Opens a data editor that lets you modify specific responses directly. This method is recommended when you need precise control over edits and do not need form logic to apply.
 
 Each method comes with its advantages and limitations:
@@ -27,16 +27,16 @@ Each method comes with its advantages and limitations:
 ![Editing data](images/editing_deleting_data/table.png)
 
 <p class="note">
-<strong>Note:</strong> When editing data using either method, the <code>_uuid</code> metadata field is updated each time a change is saved. When editing in Enketo, the <code>end</code> field is also updated. All other metadata fields remain unchanged, including <code>_id</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code>, and <code>_submitted_by</code>.
+<strong>Note:</strong> When editing data using either method, the <code>_uuid</code> metadata field is updated each time a change is saved. When editing via web form, the <code>end</code> field is also updated. All other metadata fields remain unchanged, including <code>_id</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code>, and <code>_submitted_by</code>.
 </p>
 
-### Editing submissions in Enketo
+### Editing submissions via web form
 
-This method opens a submission in Enketo so you can correct responses.
+This method opens a submission as a web form so you can correct responses.
 
-To edit a submission in Enketo:
+To edit a submission via web form:
 
-1. In the submission row, next to the checkbox, click <i class="k-icon-edit"></i> **Edit.** The submission opens in an [Enketo web form](https://support.kobotoolbox.org/glossary.html#enketo-web-forms).
+1. In the submission row, next to the checkbox, click <i class="k-icon-edit"></i> **Edit.** The submission opens as a [web form](https://support.kobotoolbox.org/glossary.html#enketo-web-forms).
 2. Make the necessary changes.
 3. Click **Submit.**
 
@@ -50,7 +50,7 @@ All updates, including recalculated fields and updated metadata, appear in the d
 
 ### Editing raw data in KoboToolbox
 
-This method lets you bypass form logic and edit stored responses directly without reopening the form. It is useful when changes cannot be made in Enketo, for example, if form logic prevents resubmission or newly required questions need responses. 
+This method lets you bypass form logic and edit stored responses directly without reopening the form. It is useful when changes cannot be made via web form, for example, if form logic prevents resubmission or newly required questions need responses. 
 
 To edit raw data in KoboToolbox:
 
@@ -135,15 +135,15 @@ There is no dedicated option to delete a single field value. Instead, you can cl
 ## Troubleshooting
 
 <details>
-  <summary><strong>Editing in Enketo modifies or removes data</strong></summary>
-  When you reopen complex forms in Enketo, fields affected by skip logic, calculations, or dynamic data attachments may change. These behaviors can prevent the form from being resubmitted or remove data that no longer meets logic conditions. If you cannot resubmit the form, you can exit the Enketo form and no changes will be saved. To avoid these effects, edit the raw data directly instead.
+  <summary><strong>Editing via web form modifies or removes data</strong></summary>
+  When you reopen complex forms as a web form, fields affected by skip logic, calculations, or dynamic data attachments may change. These behaviors can prevent the form from being resubmitted or remove data that no longer meets logic conditions. If you cannot resubmit the form, you can exit the web form and no changes will be saved. To avoid these effects, edit the raw data directly instead.
 </details>
 
 <br>
 
 <details>
-  <summary><strong>Editing in Enketo after new questions are added</strong></summary>
-  If you edit an older submission in Enketo after updating and redeploying the form, the submission opens in the latest version of the form. This can cause issues when new required questions have been added, because you must provide valid responses to those questions in order to save your edits to the original submission.
+  <summary><strong>Editing via web form after new questions are added</strong></summary>
+  If you edit an older submission via web form after updating and redeploying the form, the submission opens in the latest version of the form. This can cause issues when new required questions have been added, because you must provide valid responses to those questions in order to save your edits to the original submission.
 </details>
 
 <br>
@@ -158,10 +158,10 @@ To resolve this, uncheck <strong>Include fields from all versions</strong> in th
 <br>
 
 <details>
-  <summary><strong>Self-intersecting geoshapes block edits in Enketo</strong></summary>
-  KoboCollect may record self-intersecting geoshapes when GPS coordinates fluctuate while a data collector is standing still. These polygons can be submitted successfully from KoboCollect, but reopening the same submission in Enketo may trigger a geometry error. Enketo does not allow the form to be saved until the polygon is corrected, which can be difficult to fix manually.
+  <summary><strong>Self-intersecting geoshapes block edits in web forms</strong></summary>
+  KoboCollect may record self-intersecting geoshapes when GPS coordinates fluctuate while a data collector is standing still. These polygons can be submitted successfully from KoboCollect, but reopening the same submission via web form may trigger a geometry error. Web forms do not allow the form to be saved until the polygon is corrected, which can be difficult to fix manually.
     <br><br>
-In this situation, use raw data editing in KoboToolbox to update the required fields without reopening the submission in Enketo. This avoids the geometry validation error.
+In this situation, use raw data editing in KoboToolbox to update the required fields without reopening the submission via web form. This avoids the geometry validation error.
 </details>
 
 <br>
@@ -175,8 +175,8 @@ If any part is missing or incorrectly formatted, the edit may not save or may ca
 <br>
 
 <details>
-  <summary><strong>Form using dynamic data attachments to prevent duplicate submissions cannot be edited in Enketo</strong></summary>
-  If your form uses dynamic data attachments to <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html#dynamically-linking-a-form-to-itself">prevent duplicate submissions</a>, reopening a submission in Enketo will block resubmission because it is detected as a duplicate. In this case, use raw data editing in KoboToolbox instead of editing in Enketo.
+  <summary><strong>Form using dynamic data attachments to prevent duplicate submissions cannot be edited via web form</strong></summary>
+  If your form uses dynamic data attachments to <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html#dynamically-linking-a-form-to-itself">prevent duplicate submissions</a>, reopening a submission via web form will block resubmission because it is detected as a duplicate. In this case, use raw data editing in KoboToolbox instead of editing via web form.
 </details>
 
 <br>

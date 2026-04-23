@@ -108,15 +108,15 @@
           
   <section id="styling-your-forms-using-xlsform">
 <h1>Styling your forms using XLSForm<a class="headerlink" href="#styling-your-forms-using-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/form_style_xls.md" class="reference">20 Mar 2026</a></p>
-<p>With KoboToolbox, you can customize the appearance of your forms and questions to highlight key information and adapt the layout to your data collection needs. This includes applying themes to Enketo web forms, adding headers and lists in note questions, and using color or bold formatting for emphasis.</p>
-<p>This article covers themes for Enketo web forms as well as styling options for notes and questions within a form.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/form_style_xls.md" class="reference">23 Apr 2026</a></p>
+<p>With KoboToolbox, you can customize the appearance of your forms and questions to highlight key information and adapt the layout to your data collection needs. This includes applying themes to web forms, adding headers and lists in note questions, and using color or bold formatting for emphasis.</p>
+<p>This article covers themes for web forms as well as styling options for notes and questions within a form.</p>
 <p class="note">
-<strong>Note:</strong> This article focuses on styling forms in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about setting Enketo themes in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a>.
+<strong>Note:</strong> This article focuses on styling forms in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about setting web form themes in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/alternative_enketo.html">Styling web forms in the Formbuilder</a>.
 </p>
-<section id="themes-for-enketo-web-forms">
-<h2>Themes for Enketo web forms<a class="headerlink" href="#themes-for-enketo-web-forms" title="Link to this heading">¶</a></h2>
-<p>Enketo themes allow you to customize the appearance and layout of <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>. Themes apply only to Enketo web forms and are not visible in KoboCollect.</p>
+<section id="themes-for-web-forms">
+<h2>Themes for web forms<a class="headerlink" href="#themes-for-web-forms" title="Link to this heading">¶</a></h2>
+<p>Web form themes allow you to customize the appearance and layout of <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a>. Themes apply only to web forms and are not visible in KoboCollect.</p>
 <section id="adding-themes-in-xlsform">
 <h3>Adding themes in XLSForm<a class="headerlink" href="#adding-themes-in-xlsform" title="Link to this heading">¶</a></h3>
 <p>To add a theme in XLSForm:</p>
@@ -141,8 +141,8 @@
 <strong>Note:</strong> Themes can be combined by entering both themes in the same cell of the <code>style</code> column, separated by a space (e.g., <code>theme-grid pages</code>).
 </p>
 </section>
-<section id="available-themes-for-enketo-web-forms">
-<h3>Available themes for Enketo web forms<a class="headerlink" href="#available-themes-for-enketo-web-forms" title="Link to this heading">¶</a></h3>
+<section id="available-themes-for-web-forms">
+<h3>Available themes for web forms<a class="headerlink" href="#available-themes-for-web-forms" title="Link to this heading">¶</a></h3>
 <p>The following themes are available to customize your forms:</p>
 <table class="docutils align-default">
 <thead>
@@ -173,7 +173,7 @@
 </section>
 <section id="setting-up-an-xlsform-for-theme-grid">
 <h3>Setting up an XLSForm for theme_grid<a class="headerlink" href="#setting-up-an-xlsform-for-theme-grid" title="Link to this heading">¶</a></h3>
-<p>In Enketo web forms, the <code class="docutils literal notranslate"><span class="pre">theme_grid</span></code> layout allows you to display questions in multiple columns, making your form more compact and visually organized. The set-up of these columns, including how many there are and how wide each one should be, is controlled by assigning <code class="docutils literal notranslate"><span class="pre">w-values</span></code> to each question inside the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column of your XLSForm.</p>
+<p>In web forms, the <code class="docutils literal notranslate"><span class="pre">theme_grid</span></code> layout allows you to display questions in multiple columns, making your form more compact and visually organized. The set-up of these columns, including how many there are and how wide each one should be, is controlled by assigning <code class="docutils literal notranslate"><span class="pre">w-values</span></code> to each question inside the <code class="docutils literal notranslate"><span class="pre">appearance</span></code> column of your XLSForm.</p>
 <p class="note">
   For a comprehensive overview of using <code>theme_grid</code> in XLSForm, see this <a href="https://ee.kobotoolbox.org/n41GqUkf">Grid Theme Tutorial</a> and <a href="https://docs.google.com/spreadsheets/d/1qKmxPTA4B0vihU6GsKgi1CJE2Db2FfE7KZpOig4nTEI/edit?gid=0#gid=0">sample XLSForm</a>.
 </p>
@@ -194,7 +194,7 @@
 <h2>Styling text<a class="headerlink" href="#styling-text" title="Link to this heading">¶</a></h2>
 <p>You can use Markdown and HTML in XLSForm to <strong>style text</strong>, <strong>add emphasis</strong> with bold or italics, <strong>create headers</strong> of different sizes, <strong>change fonts and colors</strong>, and <strong>add clickable web links</strong>. Text styling can be applied to questions, notes, and choice labels.</p>
 <p class="note">
-<strong>Note:</strong> Some styling features may not be supported in KoboCollect or Enketo. It is recommended to preview your forms in your chosen data collection method to confirm that all styling features are fully supported.
+<strong>Note:</strong> Some styling features may not be supported in KoboCollect or web forms It is recommended to preview your forms in your chosen data collection method to confirm that all styling features are fully supported.
 </p>
 <p>Text styling features in XLSForm include:</p>
 <table class="docutils align-default">
@@ -307,7 +307,7 @@
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -342,7 +342,7 @@
 <li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Adding calculations in XLSForm</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Form settings in XLSForm</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Styling your forms using XLSForm</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#themes-for-enketo-web-forms">Themes for Enketo web forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#themes-for-web-forms">Themes for web forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#styling-text">Styling text</a></li>
 </ul>
 </li>
@@ -357,20 +357,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -427,6 +421,7 @@
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

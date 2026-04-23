@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Overview on Data Collection Tools &#8212; KoboToolbox  documentation</title>
+    <title>Data collection with KoboToolbox &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -25,7 +25,7 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="What Are Enketo Web Forms?" href="enketo.html" />
+    <link rel="next" title="Deploying forms for data collection" href="deploy_form_new_project.html" />
     <link rel="prev" title="Importing library collections using XLSForm" href="import_collection.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
@@ -106,128 +106,91 @@
 
         <section class="page__body" role="main">
           
-  <section id="overview-on-data-collection-tools">
-<h1>Overview on Data Collection Tools<a class="headerlink" href="#overview-on-data-collection-tools" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/53c2e7dae53b8450c51194fb49c7d915fe735012/source/data-collection-tools.md" class="reference">11 Sep 2025</a></p>
-<p>KoboToolbox allows data collection in multiple ways. Because KoboToolbox is
-built on the <a class="reference external" href="https://xlsform.org">Xform/ODK standards</a>, our forms are
-compatible with
-<a class="reference external" href="https://xlsform.org/en/#tools-that-support-xlsforms">a number of different tools</a>
-that can be used for data collection.</p>
-<p>For Android devices, we recommend using
-<a class="reference external" href="https://play.google.com/store/apps/details?id=org.koboc.collect.android&amp;amp;hl=en_US">Collect Andoid app</a>
-app, which can be downloaded from the Google Play Store and installed on any
-standard Android phone or tablet.</p>
-<p>For any other devices (including iPhones, iPads, or any laptop or computer), we
-recommend using the webform <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">for collecting data</span></a>.</p>
-<section id="a-quick-rundown-on-the-differences-between-the-two-options">
-<h2>A quick rundown on the differences between the two options<a class="headerlink" href="#a-quick-rundown-on-the-differences-between-the-two-options" title="Link to this heading">¶</a></h2>
+  <section id="data-collection-with-kobotoolbox">
+<h1>Data collection with KoboToolbox<a class="headerlink" href="#data-collection-with-kobotoolbox" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/data-collection-tools.md" class="reference">23 Apr 2026</a></p>
+<p>KoboToolbox supports two primary ways to collect data: <strong>web forms</strong>, which run in a browser, and <strong>KoboCollect</strong>, which is the Android app for mobile data collection. Both methods support offline data collection.</p>
+<p>This article explains the two data collection methods available in KoboToolbox, how to choose between them, and how to prepare before launching data collection.</p>
+<p class="note">
+To learn more about each data collection method, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting data using web forms</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecting data using KoboCollect</a>.
+</p>
+<section id="data-collection-methods">
+<h2>Data collection methods<a class="headerlink" href="#data-collection-methods" title="Link to this heading">¶</a></h2>
+<p>You can collect data with KoboToolbox in two main ways:</p>
+<ul class="simple">
+<li><p><strong>Web forms</strong> are browser-based forms used to collect data through a web page. They are well suited for self-administered surveys and browser-based data entry.</p></li>
+<li><p><strong>KoboCollect</strong> is an Android app used to collect data on Android devices. It is well suited for field teams with enumerators using Android phones or tablets.</p></li>
+</ul>
+<p>Both methods support <a class="reference external" href="https://support.kobotoolbox.org/data-collection-tools.html#offline-data-collection">offline data collection</a>.</p>
+<section id="choosing-a-data-collection-method">
+<h3>Choosing a data collection method<a class="headerlink" href="#choosing-a-data-collection-method" title="Link to this heading">¶</a></h3>
+<p>The best data collection method depends on how your team will work in practice, and in some cases teams may use both methods within the same project.</p>
+<p>The table below summarizes when each method is generally the better fit:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p> </p></th>
-<th class="head text-left"><p>Webforms</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Web forms</p></th>
 <th class="head text-left"><p>KoboCollect</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Devices</p></td>
-<td class="text-left"><p>Any mobile device or computer</p></td>
-<td class="text-left"><p>Android only</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Runs in…</p></td>
-<td class="text-left"><p>Browser</p></td>
-<td class="text-left"><p>Native Android application</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Configurable</p></td>
-<td class="text-left"><p>Server-wide</p></td>
-<td class="text-left"><p>On each device</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Default form display</p></td>
-<td class="text-left"><p>All questions on the same screen</p></td>
-<td class="text-left"><p>One question per screen</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Data upload</p></td>
-<td class="text-left"><p>Automatically when connection available</p></td>
-<td class="text-left"><p>On user request or immediately if connection available</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Phone-specific meta-questions (<code class="docutils literal notranslate"><span class="pre">subscriberid</span></code>, <code class="docutils literal notranslate"><span class="pre">simserial</span></code>, <code class="docutils literal notranslate"><span class="pre">phonenumber</span></code>)</p></td>
-<td class="text-left"><p>No</p></td>
-<td class="text-left"><p>Yes</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">barcode</span></code> question type</p></td>
-<td class="text-left"><p>No (except manual entry)</p></td>
-<td class="text-left"><p>Yes</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Different form styles</p></td>
-<td class="text-left"><p>Yes</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Encryption</p></td>
-<td class="text-left"><p>Not for storage, but always during transfer</p></td>
-<td class="text-left"><p>Can be enabled on-device, always during transfer</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">hide-input</span></code> appearance for maps to hide manual GPS inputs</p></td>
-<td class="text-left"><p>Yes</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Advanced map appearance options (<code class="docutils literal notranslate"><span class="pre">streets</span></code>, <code class="docutils literal notranslate"><span class="pre">terrain</span></code>, <code class="docutils literal notranslate"><span class="pre">satellite</span></code>, <code class="docutils literal notranslate"><span class="pre">[other]</span></code>)</p></td>
-<td class="text-left"><p>Yes</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Text formatting in notes and labels (bold, italics, links)</p></td>
-<td class="text-left"><p>Yes</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Combine subsequent notes into a single note on the screen</p></td>
-<td class="text-left"><p>Yes</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">multiline</span></code> appearance for <code class="docutils literal notranslate"><span class="pre">text</span></code> questions</p></td>
-<td class="text-left"><p>Yes</p></td>
-<td class="text-left"><p>Yes</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal-compact</span></code> appearance for select-type questions</p></td>
-<td class="text-left"><p>Yes</p></td>
-<td class="text-left"><p>No</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">likert</span></code> scale appearance for select-type questions</p></td>
-<td class="text-left"><p>Yes</p></td>
-<td class="text-left"><p>Yes</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">compact-2</span></code> appearance for select-type questions</p></td>
-<td class="text-left"><p>No</p></td>
-<td class="text-left"><p>Yes</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">no-calendar</span></code> appearance</p></td>
-<td class="text-left"><p>No</p></td>
-<td class="text-left"><p>Yes</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Advanced image appearances (<code class="docutils literal notranslate"><span class="pre">annotate</span></code>, <code class="docutils literal notranslate"><span class="pre">draw</span></code>, <code class="docutils literal notranslate"><span class="pre">signature</span></code>)</p></td>
-<td class="text-left"><p>Yes</p></td>
-<td class="text-left"><p>Yes</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Calculation command <code class="docutils literal notranslate"><span class="pre">repeat_count()</span></code></p></td>
-<td class="text-left"><p>Set a minimum number of repeat groups</p></td>
-<td class="text-left"><p>Set an exact number of repeat groups</p></td>
+<tr class="row-even"><td class="text-left"><p><strong>Recommended if:</strong> <br> <ul><li>Respondents will submit data directly through a link</li><li>You want a simple way to open and share a form</li><li>Your team is using a mix of device types</li><li>You want to use browser-based data collection without installing an app</li><li>Your form includes features that are only available in web forms, such as the <a class="reference external" href="https://support.kobotoolbox.org/alternative_enketo.html">grid theme</a> or <a class="reference external" href="https://support.kobotoolbox.org/matrix_response.html">question matrices</a></li></ul></p></td>
+<td class="text-left"><p><strong>Recommended if:</strong><br><ul><li>Much of your data collection is field-based in offline settings</li><li>Data is being collected by a team of enumerators using Android phones or tablets</li><li>Enumerators prefer an app-based workflow (e.g., to save drafts and send finalized submissions later)</li><li>Your project relies on mobile device features such as <a class="reference external" href="https://support.kobotoolbox.org/photo_audio_video_file.html">barcode scanning or capturing images and videos</a></li><li>You want more control over form management and automation, such as sending forms, downloading forms, or deleting uploaded data from devices</li></ul></p></td>
 </tr>
 </tbody>
 </table>
-<section id="collecting-data-using-kobocollect">
-<h3>Collecting data using KoboCollect<a class="headerlink" href="#collecting-data-using-kobocollect" title="Link to this heading">¶</a></h3>
-<p>After deploying a project, you can go to <strong>Form - Collect data</strong>, and then
-select the Android application.</p>
-<p><img alt="image" src="_images/KoboCollect.gif" /></p>
-<p>For details on how to set up KoboCollect on any Android devices,
-<a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">read this article</span></a>.</p>
+<p>When choosing a method, consider how people will access the form, which devices they will use, how often they will need to work offline, and whether your form includes features that are better supported in one method than the other.</p>
+<p class="note">
+<strong>Note:</strong>
+Some features work differently depending on the collection method. Keep this in mind before starting data collection, and always test your form in the method your team will use.
+</p>
 </section>
-<section id="collecting-data-using-the-enketo-webform">
-<h3>Collecting Data using the Enketo Webform<a class="headerlink" href="#collecting-data-using-the-enketo-webform" title="Link to this heading">¶</a></h3>
-<p>To <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">use the webform</span></a>, after deploying a project, you
-can go to <strong>Form - Collect data</strong>, multiple options (online or offline, single
-or multiple submissions) are available. The default option is <strong>Online-Offline
-(multiple submission)</strong>.</p>
-<p><img alt="image" src="_images/Webform.gif" /></p>
+<section id="offline-data-collection">
+<h3>Offline data collection<a class="headerlink" href="#offline-data-collection" title="Link to this heading">¶</a></h3>
+<p>Both web forms and KoboCollect support <strong>offline data collection.</strong></p>
+<ul class="simple">
+<li><p>When using <strong>web forms</strong>, KoboToolbox can store the form and responses in the browser’s cache so users can continue entering data without an internet connection.</p>
+<ul>
+<li><p>Before going offline, you will need to open the form while connected to the internet and wait for it to fully load and be <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html#offline-data-collection-with-web-forms">cached on the device</a>.</p></li>
+<li><p>When the device reconnects, saved submissions will upload automatically.</p></li>
+</ul>
+</li>
+<li><p>When using <strong>KoboCollect</strong>, enumerators can download blank forms while online, complete them offline, save drafts, finalize submissions, and send them later when internet access becomes available.</p>
+<ul>
+<li><p>KoboCollect can also be <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">configured</a> to send finalized forms automatically when connected or only when the user chooses to upload them.</p></li>
+</ul>
+</li>
+</ul>
 </section>
+</section>
+<section id="preparing-for-data-collection">
+<h2>Preparing for data collection<a class="headerlink" href="#preparing-for-data-collection" title="Link to this heading">¶</a></h2>
+<p>Before you can collect data, you must <strong>deploy your form</strong> to make it active and available for submissions. If you make changes to the form later, you will need to redeploy it.</p>
+<p class="note">
+To learn more about deploying your form for data collection, see <a href="https://support.kobotoolbox.org/deploy_form_new_project.html">Deploying forms for data collection</a>.
+</p>
+<p>Once your form is deployed, make sure your data collection setup is ready before launching data collection:</p>
+<ul class="simple">
+<li><p>Decide which data collection method(s) to use</p></li>
+<li><p>Confirm who can access the form and whether authentication should be required</p></li>
+<li><p>Test the project in a scenario similar to your actual data collection, using the same devices and collection method as your respondents or enumerators</p></li>
+</ul>
+<p>Depending on the collection method you choose, we also recommend the following steps:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Web forms</p></th>
+<th class="head text-left"><p>KoboCollect</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><ul><li>Decide whether the form should <a class="reference external" href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require authentication</a></li><li>If your form requires authentication, ensure that data collectors have the right <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html">permissions</a> to access your data collection form</li><li>Decide which <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes">web form mode</a> to use for data collection</li><li>Share the correct form link with data collectors or respondents</li></ul></p></td>
+<td class="text-left"><p><ul><li>Confirm that data collectors have the right <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html">permissions</a> to access your data collection form</li><li>Ensure each data collector has <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">installed and set up</a> the KoboCollect app</li><li>Confirm each data collector has <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms">downloaded the form(s)</a> before starting fieldwork</li></ul></p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+<strong>Note:</strong>
+Deployed projects are set to <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require authentication</a> by default, which means users must sign in to access a web form or submit data. To allow <strong>anyone with the form link</strong> to submit data, turn off the authentication requirement for the form. If you keep authentication enabled, <a href="https://support.kobotoolbox.org/managing_permissions.html">share the project</a> with specific KoboToolbox users and give them <strong>Add submissions</strong> permission.
+</p>
 </section>
 </section>
 
@@ -247,7 +210,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Overview on Data Collection Tools"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Data collection with KoboToolbox"
               class="feedback-button"
               target="_blank"
             >
@@ -290,7 +253,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -336,23 +299,18 @@ or multiple submissions) are available. The default option is <strong>Online-Off
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Overview on Data Collection Tools</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#a-quick-rundown-on-the-differences-between-the-two-options">A quick rundown on the differences between the two options</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data collection with KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-collection-methods">Data collection methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preparing-for-data-collection">Preparing for data collection</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -409,6 +367,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>
@@ -473,7 +432,7 @@ or multiple submissions) are available. The default option is <strong>Online-Off
   <script>
     window.docs = {
       currentPagename: "data-collection-tools",
-      currentTitle: "Overview on Data Collection Tools",
+      currentTitle: "Data collection with KoboToolbox",
       currentUrl: ("index.html").replace("index.html", "data-collection-tools.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

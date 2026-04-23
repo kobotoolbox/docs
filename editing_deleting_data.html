@@ -108,10 +108,10 @@
           
   <section id="editing-and-deleting-your-data">
 <h1>Editing and deleting your data<a class="headerlink" href="#editing-and-deleting-your-data" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3f35f1c6bc8cd20e8fb1ecf962f0a07006ee1ecf/source/editing_deleting_data.md" class="reference">10 Feb 2026</a></p>
-<p>Editing and deleting data helps <strong>maintain data quality</strong> after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including <strong>editing submissions in Enketo, editing raw data directly, and applying bulk updates.</strong> This article explains each method and when to use it.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/editing_deleting_data.md" class="reference">23 Apr 2026</a></p>
+<p>Editing and deleting data helps <strong>maintain data quality</strong> after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including <strong>editing submissions via web form, editing raw data directly, and applying bulk updates.</strong> This article explains each method and when to use it.</p>
 <p class="note">
-<strong>Note:</strong> Submissions collected with the <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect app</a> cannot be edited or deleted <strong>in KoboCollect</strong> after they are submitted. All post-submission changes must be made in KoboToolbox.
+<strong>Note:</strong> Submissions collected with the <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect app</a> cannot be edited or deleted <strong>in KoboCollect</strong> after they are submitted. All post-submission changes must be made in KoboToolbox.
 </p>
 <p>Project owners can control data access by assigning separate permissions to view, edit, validate, and delete submissions. For example, they can allow some team members to edit data while restricting deletion permissions.</p>
 <p class="note">
@@ -122,20 +122,20 @@ To learn more about user-level permissions for editing and deleting data, see <a
 <p>KoboToolbox offers two editing approaches, each designed for different use cases. Understanding how they differ helps you choose the safest and most appropriate method for updating data.</p>
 <p>The two methods for editing submissions in KoboToolbox are:</p>
 <ul class="simple">
-<li><p><strong>Editing submissions in Enketo:</strong> Opens the submission in <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#enketo-web-forms">Enketo</a> so you can correct responses and resubmit the form. This method is recommended when form logic needs to be applied.</p></li>
+<li><p><strong>Editing submissions via web form:</strong> Opens the submission as a <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#enketo-web-forms">web form</a> so you can correct responses and resubmit the form. This method is recommended when form logic needs to be applied.</p></li>
 <li><p><strong>Editing raw data directly in KoboToolbox:</strong> Opens a data editor that lets you modify specific responses directly. This method is recommended when you need precise control over edits and do not need form logic to apply.</p></li>
 </ul>
 <p>Each method comes with its advantages and limitations:</p>
 <p><img alt="Editing data" src="_images/table4.png" /></p>
 <p class="note">
-<strong>Note:</strong> When editing data using either method, the <code>_uuid</code> metadata field is updated each time a change is saved. When editing in Enketo, the <code>end</code> field is also updated. All other metadata fields remain unchanged, including <code>_id</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code>, and <code>_submitted_by</code>.
+<strong>Note:</strong> When editing data using either method, the <code>_uuid</code> metadata field is updated each time a change is saved. When editing via web form, the <code>end</code> field is also updated. All other metadata fields remain unchanged, including <code>_id</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code>, and <code>_submitted_by</code>.
 </p>
-<section id="editing-submissions-in-enketo">
-<h3>Editing submissions in Enketo<a class="headerlink" href="#editing-submissions-in-enketo" title="Link to this heading">¶</a></h3>
-<p>This method opens a submission in Enketo so you can correct responses.</p>
-<p>To edit a submission in Enketo:</p>
+<section id="editing-submissions-via-web-form">
+<h3>Editing submissions via web form<a class="headerlink" href="#editing-submissions-via-web-form" title="Link to this heading">¶</a></h3>
+<p>This method opens a submission as a web form so you can correct responses.</p>
+<p>To edit a submission via web form:</p>
 <ol class="arabic simple">
-<li><p>In the submission row, next to the checkbox, click <i class="k-icon-edit"></i> <strong>Edit.</strong> The submission opens in an <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#enketo-web-forms">Enketo web form</a>.</p></li>
+<li><p>In the submission row, next to the checkbox, click <i class="k-icon-edit"></i> <strong>Edit.</strong> The submission opens as a <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#enketo-web-forms">web form</a>.</p></li>
 <li><p>Make the necessary changes.</p></li>
 <li><p>Click <strong>Submit.</strong></p></li>
 </ol>
@@ -147,7 +147,7 @@ To learn more about user-level permissions for editing and deleting data, see <a
 </section>
 <section id="editing-raw-data-in-kobotoolbox">
 <h3>Editing raw data in KoboToolbox<a class="headerlink" href="#editing-raw-data-in-kobotoolbox" title="Link to this heading">¶</a></h3>
-<p>This method lets you bypass form logic and edit stored responses directly without reopening the form. It is useful when changes cannot be made in Enketo, for example, if form logic prevents resubmission or newly required questions need responses.</p>
+<p>This method lets you bypass form logic and edit stored responses directly without reopening the form. It is useful when changes cannot be made via web form, for example, if form logic prevents resubmission or newly required questions need responses.</p>
 <p>To edit raw data in KoboToolbox:</p>
 <ol class="arabic simple">
 <li><p>Select the submission using the checkbox.</p></li>
@@ -228,13 +228,13 @@ To learn more about user-level permissions for editing and deleting data, see <a
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
 <details>
-  <summary><strong>Editing in Enketo modifies or removes data</strong></summary>
-  When you reopen complex forms in Enketo, fields affected by skip logic, calculations, or dynamic data attachments may change. These behaviors can prevent the form from being resubmitted or remove data that no longer meets logic conditions. If you cannot resubmit the form, you can exit the Enketo form and no changes will be saved. To avoid these effects, edit the raw data directly instead.
+  <summary><strong>Editing via web form modifies or removes data</strong></summary>
+  When you reopen complex forms as a web form, fields affected by skip logic, calculations, or dynamic data attachments may change. These behaviors can prevent the form from being resubmitted or remove data that no longer meets logic conditions. If you cannot resubmit the form, you can exit the web form and no changes will be saved. To avoid these effects, edit the raw data directly instead.
 </details>
 <br>
 <details>
-  <summary><strong>Editing in Enketo after new questions are added</strong></summary>
-  If you edit an older submission in Enketo after updating and redeploying the form, the submission opens in the latest version of the form. This can cause issues when new required questions have been added, because you must provide valid responses to those questions in order to save your edits to the original submission.
+  <summary><strong>Editing via web form after new questions are added</strong></summary>
+  If you edit an older submission via web form after updating and redeploying the form, the submission opens in the latest version of the form. This can cause issues when new required questions have been added, because you must provide valid responses to those questions in order to save your edits to the original submission.
 </details>
 <br>
 <details>
@@ -245,10 +245,10 @@ To resolve this, uncheck <strong>Include fields from all versions</strong> in th
 </details>
 <br>
 <details>
-  <summary><strong>Self-intersecting geoshapes block edits in Enketo</strong></summary>
-  KoboCollect may record self-intersecting geoshapes when GPS coordinates fluctuate while a data collector is standing still. These polygons can be submitted successfully from KoboCollect, but reopening the same submission in Enketo may trigger a geometry error. Enketo does not allow the form to be saved until the polygon is corrected, which can be difficult to fix manually.
+  <summary><strong>Self-intersecting geoshapes block edits in web forms</strong></summary>
+  KoboCollect may record self-intersecting geoshapes when GPS coordinates fluctuate while a data collector is standing still. These polygons can be submitted successfully from KoboCollect, but reopening the same submission via web form may trigger a geometry error. Web forms do not allow the form to be saved until the polygon is corrected, which can be difficult to fix manually.
     <br><br>
-In this situation, use raw data editing in KoboToolbox to update the required fields without reopening the submission in Enketo. This avoids the geometry validation error.
+In this situation, use raw data editing in KoboToolbox to update the required fields without reopening the submission via web form. This avoids the geometry validation error.
 </details>
 <br>
 <details>
@@ -258,8 +258,8 @@ If any part is missing or incorrectly formatted, the edit may not save or may ca
 </details>
 <br>
 <details>
-  <summary><strong>Form using dynamic data attachments to prevent duplicate submissions cannot be edited in Enketo</strong></summary>
-  If your form uses dynamic data attachments to <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html#dynamically-linking-a-form-to-itself">prevent duplicate submissions</a>, reopening a submission in Enketo will block resubmission because it is detected as a duplicate. In this case, use raw data editing in KoboToolbox instead of editing in Enketo.
+  <summary><strong>Form using dynamic data attachments to prevent duplicate submissions cannot be edited via web form</strong></summary>
+  If your form uses dynamic data attachments to <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html#dynamically-linking-a-form-to-itself">prevent duplicate submissions</a>, reopening a submission via web form will block resubmission because it is detected as a duplicate. In this case, use raw data editing in KoboToolbox instead of editing via web form.
 </details>
 <br>
 </section>
@@ -324,7 +324,7 @@ If any part is missing or incorrectly formatted, the edit may not save or may ca
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -370,20 +370,14 @@ If any part is missing or incorrectly formatted, the edit may not save or may ca
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -447,6 +441,7 @@ If any part is missing or incorrectly formatted, the edit may not save or may ca
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

@@ -1,13 +1,13 @@
 # Recently updated Support Articles
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recently_updated.md" class="reference">28 Oct 2025</a>
 
-1. [Using regular expressions in XLSForm](restrict_responses.md) (22 Apr 2026)
-1. [Account settings](account_settings.md) (21 Apr 2026)
-1. [Glossary of KoboToolbox terms](glossary.md) (21 Apr 2026)
-1. [Adding translations in KoboToolbox](language_dashboard.md) (20 Apr 2026)
-1. [Transcription and translation of audio responses](transcription-translation.md) (20 Apr 2026)
-1. [Viewing and validating your data](viewing_validating_data.md) (13 Apr 2026)
-1. [Exporting and downloading your data](export_download.md) (13 Apr 2026)
-1. [Form metadata in XLSForm](metadata_xls.md) (13 Apr 2026)
-1. [Adding form metadata in the Formbuilder](form_meta.md) (13 Apr 2026)
-1. [Sharing projects with project-level settings](project_sharing_settings.md) (9 Apr 2026)
+1. [Collecting data in multiple languages](collecting_data_multiple_languages.md) (23 Apr 2026)
+1. [Selecting options from a map](select_from_map_xls.md) (23 Apr 2026)
+1. [Creating Unique Serial Numbers in Forms](unique_serial_numbers.md) (23 Apr 2026)
+1. [Date and time questions in KoboToolbox](date_time.md) (23 Apr 2026)
+1. [Collecting GPS data with KoboToolbox](collect_gps.md) (23 Apr 2026)
+1. [Deploying forms for data collection](deploy_form_new_project.md) (23 Apr 2026)
+1. [Editing and deleting your data](editing_deleting_data.md) (23 Apr 2026)
+1. [Using XLSForm with KoboToolbox](xlsform_with_kobotoolbox.md) (23 Apr 2026)
+1. [Viewing and validating your data](viewing_validating_data.md) (23 Apr 2026)
+1. [Question appearances in XLSForm](appearances_xls.md) (23 Apr 2026)

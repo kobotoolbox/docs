@@ -108,9 +108,9 @@
           
   <section id="question-appearances-in-xlsform">
 <h1>Question appearances in XLSForm<a class="headerlink" href="#question-appearances-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/9bf170359f001a62e46a64c5849675e207c2e5c1/source/appearances_xls.md" class="reference">14 Feb 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/appearances_xls.md" class="reference">23 Apr 2026</a></p>
 <p>Question appearances allow you to customize how questions are displayed in the form and the type of responses they collect. This article explains how to add question appearances in XLSForm and lists common appearances by question type.</p>
-<p>It is important to note that some appearances only work in <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>, while others are supported only in <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a>. Consider your data collection method when selecting appearances.</p>
+<p>It is important to note that some appearances only work in <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a>, while others are supported only in <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a>. Consider your data collection method when selecting appearances.</p>
 <p class="note">
   <b>Note:</b> This article focuses on setting question appearances in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about setting appearances in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/using-formbuilder.html">Using the Formbuilder</a> documentation.
 <br><br>
@@ -154,7 +154,7 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 </section>
 <section id="available-question-appearances-in-xlsform">
 <h2>Available question appearances in XLSForm<a class="headerlink" href="#available-question-appearances-in-xlsform" title="Link to this heading">¶</a></h2>
-<p>The tables below list common question appearances by question type and shows which are supported in Enketo web forms and KoboCollect.</p>
+<p>The tables below list common question appearances by question type and shows which are supported in web forms and KoboCollect.</p>
 <section id="select-question-types">
 <h3>Select question types<a class="headerlink" href="#select-question-types" title="Link to this heading">¶</a></h3>
 <p>Select questions allow respondents to <a class="reference external" href="https://support.kobotoolbox.org/question_types_xls.html#select-question-types">choose from predefined options</a>.</p>
@@ -168,47 +168,47 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">minimal</span></code></p></td>
 <td class="text-left"><p>Displays choices in a drop-down menu.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">compact</span></code></p></td>
 <td class="text-left"><p>Displays choices side-by-side with minimal padding and without choice boxes.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">label</span></code></p></td>
 <td class="text-left"><p>Displays choice labels without the choice boxes.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">list-nolabel</span></code></p></td>
 <td class="text-left"><p>Displays the answer choice boxes without the labels.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">autocomplete</span></code></p></td>
 <td class="text-left"><p>Adds a search bar at the top of the option list.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect (combine with <code class="docutils literal notranslate"><span class="pre">minimal</span></code> appearance)</p></td>
+<td class="text-left"><p>Web forms and KoboCollect (combine with <code class="docutils literal notranslate"><span class="pre">minimal</span></code> appearance)</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">likert</span></code></p></td>
 <td class="text-left"><p>Displays answer choices as a Likert scale (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> only).</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal</span></code></p></td>
 <td class="text-left"><p>Displays choices in evenly sized columns, with the same number of choices in each row.</p></td>
-<td class="text-left"><p>Enketo only. Use <code class="docutils literal notranslate"><span class="pre">columns</span></code> instead for compatibility with KoboCollect.</p></td>
+<td class="text-left"><p>Web forms only. Use <code class="docutils literal notranslate"><span class="pre">columns</span></code> instead for compatibility with KoboCollect.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns</span></code></p></td>
 <td class="text-left"><p>Displays choices in evenly sized columns, with the same number of choices in each row.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal-compact</span></code></p></td>
 <td class="text-left"><p>Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.</p></td>
-<td class="text-left"><p>Enketo only. Use <code class="docutils literal notranslate"><span class="pre">columns-pack</span></code> instead for compatibility with KoboCollect.</p></td>
+<td class="text-left"><p>Web forms only. Use <code class="docutils literal notranslate"><span class="pre">columns-pack</span></code> instead for compatibility with KoboCollect.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns-pack</span></code></p></td>
 <td class="text-left"><p>Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns-n</span></code></p></td>
 <td class="text-left"><p>Displays available choices in the specified number (n) of columns.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quick</span></code></p></td>
 <td class="text-left"><p>Auto-advances the form to the next question after an answer is selected (<code class="docutils literal notranslate"><span class="pre">select_one</span></code> only).</p></td>
@@ -245,7 +245,7 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">thousands-sep</span></code></p></td>
 <td class="text-left"><p>Formats large numbers using a comma separator for thousands.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">bearing</span></code></p></td>
 <td class="text-left"><p>Records a compass reading in degrees (<code class="docutils literal notranslate"><span class="pre">decimal</span></code> only), if the device is equipped with an accelerometer or magnetic field sensor.</p></td>
@@ -271,19 +271,19 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">vertical</span></code></p></td>
 <td class="text-left"><p>Changes the orientation of the number line to a vertical line.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">picker</span></code></p></td>
-<td class="text-left"><p>In KoboCollect, displays a pop-up spinner for selecting values. In Enketo, displays a drop-down menu.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>In KoboCollect, displays a pop-up spinner for selecting values. In web forms, displays a drop-down menu.</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">rating</span></code></p></td>
 <td class="text-left"><p>Displays stars instead of a number line.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">distress</span></code></p></td>
 <td class="text-left"><p>Displays a thermometer instead of a number line.</p></td>
-<td class="text-left"><p>Enketo only</p></td>
+<td class="text-left"><p>Web forms only</p></td>
 </tr>
 </tbody>
 </table>
@@ -305,11 +305,11 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">multiline</span></code></p></td>
 <td class="text-left"><p>Displays a larger text box for longer text responses.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">url</span></code></p></td>
 <td class="text-left"><p>Displays a clickable URL under the question text and makes the question read-only. Requires entering a URL in the question’s <code class="docutils literal notranslate"><span class="pre">default</span></code> column, or in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column if the URL includes dynamic values. Also works with <code class="docutils literal notranslate"><span class="pre">note</span></code> questions.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">masked</span></code></p></td>
 <td class="text-left"><p>Masks text entered by the respondent (e.g., a password or confidential information).</p></td>
@@ -331,11 +331,11 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">month-year</span></code></p></td>
 <td class="text-left"><p>Captures a month and a year.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">year</span></code></p></td>
 <td class="text-left"><p>Captures only a year.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">no-calendar</span></code></p></td>
 <td class="text-left"><p>Displays a spinner to select the day, month, and year, instead of the default calendar-style picker.</p></td>
@@ -385,15 +385,15 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">maps</span></code></p></td>
 <td class="text-left"><p>Displays a map for users to visualize the location that is being automatically recorded (<code class="docutils literal notranslate"><span class="pre">geopoint</span></code> only).</p></td>
-<td class="text-left"><p>KoboCollect only (included in default Enketo appearance)</p></td>
+<td class="text-left"><p>KoboCollect only (included in default web form appearance)</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">placement-map</span></code></p></td>
 <td class="text-left"><p>Allows for manual selection of a location on a map (<code class="docutils literal notranslate"><span class="pre">geopoint</span></code> only).</p></td>
-<td class="text-left"><p>KoboCollect only (included in default Enketo appearance)</p></td>
+<td class="text-left"><p>KoboCollect only (included in default web form appearance)</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">hide-input</span></code></p></td>
 <td class="text-left"><p>Shows a larger map and hides other input fields (latitude, longitude, altitude, accuracy).</p></td>
-<td class="text-left"><p>Enketo only</p></td>
+<td class="text-left"><p>Web forms only</p></td>
 </tr>
 </tbody>
 </table>
@@ -411,15 +411,15 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">signature</span></code></p></td>
 <td class="text-left"><p>Allows users to draw their signature.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">draw</span></code></p></td>
 <td class="text-left"><p>Allows users to sketch or create drawings.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">annotate</span></code></p></td>
 <td class="text-left"><p>Allows users to annotate an image by drawing or writing on it.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">new</span></code></p></td>
 <td class="text-left"><p>Prompts users to take a new picture using the device camera (no file upload).</p></td>
@@ -512,7 +512,7 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -562,20 +562,14 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -632,6 +626,7 @@ For hands-on practice with question appearances in XLSForm, see KoboToolbox Acad
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

@@ -108,9 +108,9 @@
           
   <section id="media-questions-in-kobotoolbox">
 <h1>Media questions in KoboToolbox<a class="headerlink" href="#media-questions-in-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/photo_audio_video_file.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/photo_audio_video_file.md" class="reference">23 Apr 2026</a></p>
 <p>Many data collection projects require more than just quantitative data. KoboToolbox allows you to capture various media files from respondents, including photos, audio recordings, videos, and files, to provide key qualitative information and add visual and auditory depth to your datasets.</p>
-<p>The method of capturing or uploading media depends on whether you are using <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> or <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> for data collection. In KoboCollect, you can either upload or record media files directly within the app. With Enketo, you can upload any media file, and record audio directly within the forms.</p>
+<p>The method of capturing or uploading media depends on whether you are using <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a> or <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a> for data collection. In KoboCollect, you can either upload or record media files directly within the app. When using web forms, you can upload any media file, and record audio directly within the forms.</p>
 <p>This article covers the following topics:</p>
 <ul class="simple">
 <li><p>Available media question types in KoboToolbox</p></li>
@@ -146,7 +146,7 @@
 </tbody>
 </table>
 <p class="note">
-<strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types <strong>in KoboCollect</strong> are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>. 
+<strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types <strong>in KoboCollect</strong> are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>. 
 </p>
 </section>
 <section id="adding-media-questions-in-the-formbuilder">
@@ -162,13 +162,13 @@
 </section>
 <section id="appearances-of-media-questions">
 <h2>Appearances of media questions<a class="headerlink" href="#appearances-of-media-questions" title="Link to this heading">¶</a></h2>
-<p>Media questions can display differently depending on whether you are using Enketo web forms or KoboCollect. You can also change the default appearance of media questions. This section details how each question type appears across both platforms, including default and advanced appearance options.</p>
+<p>Media questions can display differently depending on whether you are using web forms or KoboCollect. You can also change the default appearance of media questions. This section details how each question type appears across both platforms, including default and advanced appearance options.</p>
 <section id="default-appearances">
 <h3>Default appearances<a class="headerlink" href="#default-appearances" title="Link to this heading">¶</a></h3>
-<p>The table below shows how media questions are displayed by default in Enketo web forms and KoboCollect.</p>
+<p>The table below shows how media questions are displayed by default in web forms and KoboCollect.</p>
 <p><img alt="Default appearances of media questions" src="_images/table_updated.png" /></p>
 <p class="note">
-<strong>Note:</strong> Barcode / QR Code questions are supported only in <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> on mobile devices. When a code is scanned using the device’s camera, the value encoded in the barcode or QR code is automatically captured. In <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>, this question type appears as a standard text field, where respondents must manually enter the value.
+<strong>Note:</strong> Barcode / QR Code questions are supported only in <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a> on mobile devices. When a code is scanned using the device’s camera, the value encoded in the barcode or QR code is automatically captured. In <a href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a>, this question type appears as a standard text field, where respondents must manually enter the value.
 </p>
 </section>
 <section id="advanced-appearances">
@@ -261,13 +261,13 @@
 </details>
 <br>
 <details>
-  <summary><strong>Audio recording in Enketo prevents access to other questions</strong></summary>
-  When a user records an audio question in Enketo, other questions are locked until the recording is complete. This ensures that the audio is fully captured before the user proceeds with the rest of the form.
+  <summary><strong>Audio recording in web form prevents access to other questions</strong></summary>
+  When a user records an audio question in a web form, other questions are locked until the recording is complete. This ensures that the audio is fully captured before the user proceeds with the rest of the form.
 </details>
 <br>
 <details>
   <summary><strong>Collecting EXIF data from uploaded images</strong></summary>
-  When images are uploaded through Enketo or KoboToolbox, EXIF data is not preserved by default. To retain EXIF data, use a <strong>File</strong> question type and set the <strong>Accepted Files</strong> parameter (<code>body::accept</code> in XLSForm) to <code>.jpg, .jpeg, .png</code>.
+  When images are uploaded through web forms or KoboToolbox, EXIF data is not preserved by default. To retain EXIF data, use a <strong>File</strong> question type and set the <strong>Accepted Files</strong> parameter (<code>body::accept</code> in XLSForm) to <code>.jpg, .jpeg, .png</code>.
 </details>
 <br>
 <details>
@@ -343,7 +343,7 @@ KoboCollect supports a wide range of barcode and QR code formats, including UPC-
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -389,20 +389,14 @@ KoboCollect supports a wide range of barcode and QR code formats, including UPC-
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -459,6 +453,7 @@ KoboCollect supports a wide range of barcode and QR code formats, including UPC-
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

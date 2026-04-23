@@ -108,7 +108,7 @@
           
   <section id="select-questions-in-kobotoolbox">
 <h1>Select questions in KoboToolbox<a class="headerlink" href="#select-questions-in-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/select_one_and_select_many.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/select_one_and_select_many.md" class="reference">23 Apr 2026</a></p>
 <p>Select questions allow respondents to <strong>choose from predefined response options.</strong> They are useful for standardizing answers, improving data quality, and making data easier to clean, analyze, and compare.</p>
 <p>Depending on your needs, select questions can be used to choose one or multiple options, acknowledge a statement, rank items in order, rate items using a common scale, or select options from an external file.</p>
 <p>This article lists the different select questions available in KoboToolbox, explains how to add select questions in the Formbuilder, describes the available appearance options, and outlines key considerations when using these question types.</p>
@@ -220,19 +220,19 @@
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">minimal</span></code></p></td>
 <td class="text-left"><p>Displays choices in a drop-down menu.<br><img alt="Minimal appearance" src="_images/minimal.png" /></p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">autocomplete</span></code></p></td>
 <td class="text-left"><p>Adds a search bar at the top of the option list.<br> <img alt="Autocomplete appearance" src="_images/autocomplete.png" /></p></td>
-<td class="text-left"><p>Enketo and KoboCollect (combine with <code class="docutils literal notranslate"><span class="pre">minimal</span></code> appearance)</p></td>
+<td class="text-left"><p>Web forms and KoboCollect (combine with <code class="docutils literal notranslate"><span class="pre">minimal</span></code> appearance)</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">likert</span></code></p></td>
 <td class="text-left"><p>Displays answer choices as a Likert scale (<strong>Select One</strong> only).<br><img alt="Likert scale" src="_images/likert.png" /></p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">compact</span></code></p></td>
 <td class="text-left"><p>Displays choices side-by-side with minimal padding and without visible choice boxes. The number of choices per row may vary based on the length of each option label.<br><img alt="Compact appearance" src="_images/compact.png" /></p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quick</span></code></p></td>
 <td class="text-left"><p>Auto-advances the form to the next question after an answer is selected (<strong>Select One</strong> only).</p></td>
@@ -244,31 +244,31 @@
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal</span></code></p></td>
 <td class="text-left"><p>Displays choices in evenly sized columns, with the same number of choices in each row. <br><img alt="Horizontal appearance" src="_images/horizontal_columns.png" /></p></td>
-<td class="text-left"><p>Enketo only. Use <code class="docutils literal notranslate"><span class="pre">columns</span></code> instead for compatibility with KoboCollect.</p></td>
+<td class="text-left"><p>Web forms only. Use <code class="docutils literal notranslate"><span class="pre">columns</span></code> instead for compatibility with KoboCollect.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns</span></code> (other)</p></td>
 <td class="text-left"><p>Displays choices in evenly sized columns, with the same number of choices in each row.<br><img alt="Columns other appearance" src="_images/horizontal_columns.png" /></p></td>
-<td class="text-left"><p>Enketo and KoboCollect.</p></td>
+<td class="text-left"><p>Web forms and KoboCollect.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">horizontal-compact</span></code></p></td>
 <td class="text-left"><p>Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.<br><img alt="Horizontal compact appearance" src="_images/horizontal-compact_columns-pack.png" /></p></td>
-<td class="text-left"><p>Enketo only. Use <code class="docutils literal notranslate"><span class="pre">columns-pack</span></code> instead for compatibility with KoboCollect.</p></td>
+<td class="text-left"><p>Web forms only. Use <code class="docutils literal notranslate"><span class="pre">columns-pack</span></code> instead for compatibility with KoboCollect.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns-pack</span></code> (other)</p></td>
 <td class="text-left"><p>Displays choices in columns with visible choice boxes. The number of columns may vary by row, depending on the length of each option label.<br><img alt="Columns pack appearance" src="_images/horizontal-compact_columns-pack.png" /></p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">columns-n</span></code> (other)</p></td>
 <td class="text-left"><p>Displays available choices in the specified number (n) of columns.<br><img alt="Columns-n appearance" src="_images/columns_n.png" /></p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">label</span></code></p></td>
 <td class="text-left"><p>Displays choice labels without the choice boxes.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">list-nolabel</span></code></p></td>
 <td class="text-left"><p>Displays the answer choice boxes without the labels.</p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 </tbody>
 </table>
@@ -383,7 +383,7 @@
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -429,20 +429,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -499,6 +493,7 @@
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

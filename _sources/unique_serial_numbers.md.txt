@@ -1,5 +1,5 @@
 # Creating Unique Serial Numbers in Forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/unique_serial_numbers.md" class="reference">29 Jul 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/unique_serial_numbers.md" class="reference">23 Apr 2026</a>
 
 
 There are times you may want to generate a unique serial number for each and
@@ -8,7 +8,7 @@ create unique serial numbers using the `calculate` question-type.
 
 ## Approach 1: Creating Sequential Unique Serial Numbers Based on Date and Time
 
-This method works best with [Enketo web forms](data_through_webforms.md). It
+This method works best with [web forms](data_through_webforms.md). It
 uses a calculation function to create a unique serial number based on the date
 and time to the first millisecond. Although this method may not meet all your
 needs, it should give you an illustration of how much you can stretch calculate
@@ -30,7 +30,7 @@ concat(substr(today(), 0, 4), substr(today(), 5, 7), substr(today(), 8, 10), sub
 
 ![Calculate example](/images/unique_serial_numbers/calculate_example.png)
 
-In the example, when you preview the deployed form in **Enketo**, you should be
+In the example, when you preview the deployed form in **web forms**, you should be
 able to see the serial number within the note question as shown in the image
 below:
 
@@ -61,7 +61,7 @@ expression in a `calculate` question type. The example is shown as an
 | note      | note_id | Your Unique ID for this form is: ${ID} |                                                                       |
 | survey |
 
-When you preview the example in **Enketo** web forms, the serial number will be
+When you preview the example in web forms, the serial number will be
 presented within the note question as shown in the image below:
 
 ![Preview unique id](/images/unique_serial_numbers/preview_uniqueid.png)

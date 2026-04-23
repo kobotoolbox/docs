@@ -1,5 +1,5 @@
 # Selecting options from a map
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/select_from_map_xls.md" class="reference">4 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/select_from_map_xls.md" class="reference">23 Apr 2026</a>
 
 With `select_one` and `select_one_from_file` question types, you can configure your XLSForm to let users select a choice directly from a map instead of a list. When the map opens, it displays all available points, lines, or polygons based on the choices provided. Users can then tap a feature on the map to record their selection. This functionality is available **only in KoboCollect.**
 
@@ -101,7 +101,7 @@ If you are using a GeoJSON file to provide GPS coordinates, follow the [GeoJSON 
 <iframe src="https://www.youtube.com/embed/C7o9rCKmCeo?si=h9y-meFvNwury_mI" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <p class="note">
-<strong>Note:</strong> Selecting options from a map is <strong>only available in KoboCollect.</strong> In Enketo web forms, the option choices will appear as a normal list of options.
+<strong>Note:</strong> Selecting options from a map is <strong>only available in KoboCollect.</strong> In web forms, the option choices will appear as a normal list of options.
 </p>
 
 In KoboCollect, adding a **select type question** with a `map` or `quick map` appearance allows users to choose an option directly from a map rather than from a list. When the map opens, it centers on the device’s current location. Buttons on the right let users recenter on their location or show all available map points.

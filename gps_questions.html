@@ -108,9 +108,9 @@
           
   <section id="gps-questions-in-kobotoolbox">
 <h1>GPS questions in KoboToolbox<a class="headerlink" href="#gps-questions-in-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/13cd671122e40421a3fd42643feff95c82beabc1/source/gps_questions.md" class="reference">7 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/gps_questions.md" class="reference">23 Apr 2026</a></p>
 <p>GPS questions are used to <strong>collect geographic coordinates and spatial data</strong> during data collection. They allow you to capture precise locations, map routes, or define areas directly within your form. These question types are useful for activities such as mapping infrastructure, tracking field visits, monitoring environmental sites, or recording service locations.</p>
-<p>This article explains the available GPS question types in the Formbuilder, how to add and configure them, the differences in behavior between Enketo web forms and KoboCollect, and the advanced appearance options available for collecting location data.</p>
+<p>This article explains the available GPS question types in the Formbuilder, how to add and configure them, the differences in behavior between web forms and KoboCollect, and the advanced appearance options available for collecting location data.</p>
 <p class="note">
 <strong>Note:</strong> Recording GPS coordinates does not require an internet connection and is compatible with offline data collection.
 </p>
@@ -154,10 +154,10 @@
 <h2>Appearances of GPS questions<a class="headerlink" href="#appearances-of-gps-questions" title="Link to this heading">¶</a></h2>
 <p>The table below displays the default appearances for GPS questions:</p>
 <p><img alt="Default appearances of GPS questions" src="_images/table5.png" /></p>
-<p>In <strong>Enketo web forms</strong>, respondents can select a location directly on the map, search for an address, or manually enter GPS coordinates.</p>
+<p>In <strong>web forms</strong>, respondents can select a location directly on the map, search for an address, or manually enter GPS coordinates.</p>
 <p>In <strong>KoboCollect</strong>, the device’s current location is recorded automatically, and manual selection or coordinate entry is not available by default.</p>
 <p class="note">
-<strong>Note:</strong> To learn more about GPS data collection behaviors in Enketo and KoboCollect, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data</a>.
+<strong>Note:</strong> To learn more about GPS data collection behaviors in web forms and KoboCollect, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data with KoboToolbox</a>.
 </p>
 <section id="advanced-appearances">
 <h3>Advanced appearances<a class="headerlink" href="#advanced-appearances" title="Link to this heading">¶</a></h3>
@@ -179,20 +179,20 @@
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code>maps</code></p></td>
 <td class="text-left"><p>Displays a map for users to visualize the location that is being automatically recorded (<strong>Point</strong> only).</p></td>
-<td class="text-left"><p>KoboCollect only (included in default Enketo appearance)</p></td>
+<td class="text-left"><p>KoboCollect only (included in default web form appearance)</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code>placement-map</code></p></td>
 <td class="text-left"><p>Allows for manual selection of a location on a map (<strong>Point</strong> only).</p></td>
-<td class="text-left"><p>KoboCollect only (included in default Enketo appearance)</p></td>
+<td class="text-left"><p>KoboCollect only (included in default web form appearance)</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code>hide-input</code></p></td>
 <td class="text-left"><p>Shows a larger map and hides other input fields (latitude, longitude, altitude, accuracy).<br><img alt="Hide input advanced appearance" src="_images/hide-input.png" /></p></td>
-<td class="text-left"><p>Enketo only</p></td>
+<td class="text-left"><p>Web forms only</p></td>
 </tr>
 </tbody>
 </table>
 <p class="note">
-<strong>Note:</strong> If you are using Enketo and want to record GPS location automatically without allowing respondents to manually select or enter coordinates, consider using the <code>background-geopoint</code> <a href="https://support.kobotoolbox.org/metadata_xls.html">metadata question</a>.
+<strong>Note:</strong> If you are using web forms and want to record GPS location automatically without allowing respondents to manually select or enter coordinates, consider using the <code>background-geopoint</code> <a href="https://support.kobotoolbox.org/metadata_xls.html">metadata question</a>.
 </p>
 </section>
 </section>
@@ -262,7 +262,7 @@
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -308,20 +308,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -378,6 +372,7 @@
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Collecting Data through Web Forms &#8212; KoboToolbox  documentation</title>
+    <title>Collecting data using web forms &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -25,8 +25,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Collecting Data Offline" href="data-offline.html" />
-    <link rel="prev" title="Recording interviews with background audio recording" href="recording-interviews.html" />
+    <link rel="next" title="Setting up the KoboCollect app" href="kobocollect_on_android_latest.html" />
+    <link rel="prev" title="Deploying forms for data collection" href="deploy_form_new_project.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -106,131 +106,246 @@
 
         <section class="page__body" role="main">
           
-  <section id="collecting-data-through-web-forms">
-<h1>Collecting Data through Web Forms<a class="headerlink" href="#collecting-data-through-web-forms" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/9153704b013430e55a763ac5c392dd30ae5d6bb9/source/data_through_webforms.md" class="reference">24 Sep 2025</a></p>
-<section id="what-are-web-forms">
-<h2>What are web forms?<a class="headerlink" href="#what-are-web-forms" title="Link to this heading">¶</a></h2>
-<p><a class="reference internal" href="enketo.html"><span class="std std-doc">Enketo web forms</span></a> are used by KoboToolbox to preview your forms and
-to enter data directly on your computer. You can also use web forms for
-collecting data on your mobile devices - even if you’re offline at the time of
-data collection. It works on virtually any device, including iPhones, iPads, or
-any other smartphone, tablet, or computer. Some features are still being
-actively developed for Enketo, so some special questions may not be fully
-supported yet on every device.</p>
-</section>
-<section id="why-do-i-need-web-forms-instead-of-kobocollect-android-app">
-<h2>Why do I need web forms instead of KoboCollect Android App?<a class="headerlink" href="#why-do-i-need-web-forms-instead-of-kobocollect-android-app" title="Link to this heading">¶</a></h2>
-<p>You’ll always use Enketo web forms if you’re not using the <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect app</a> on an
-Android device for data collection. However, there are also some appearance
-settings viz. likert for select one question type, multiline for text question
-type etc. and style settings for KoboToolbox’s Layout &amp; Settings which best
-works on web forms when compared to the KoboCollect app.</p>
-</section>
-<section id="how-do-i-use-web-forms-for-data-collection">
-<h2>How do I use web forms for data collection?<a class="headerlink" href="#how-do-i-use-web-forms-for-data-collection" title="Link to this heading">¶</a></h2>
-<section id="collection-settings">
-<h3>Collection Settings:<a class="headerlink" href="#collection-settings" title="Link to this heading">¶</a></h3>
-<p>To start collecting data, you will need to deploy your project first. Once your
-project is deployed you will see a screen as shown below with options on how to
-<strong>Collect data</strong>.</p>
-<p><img alt="image" src="_images/collection_settings.png" /></p>
-<p>In the drop down menu under <strong>Collect data</strong>, you have several options available
-for Web Forms:</p>
-<p><strong>Online-Offline (multiple submission):</strong> This allows online and offline
-submissions and is the best option for collecting data in the field.</p>
-<p><strong>Online-Only (multiple submissions):</strong> This is the best option when entering
-many records at once on a computer, e.g. for transcribing paper records.</p>
-<p><strong>Online-Only (single submission):</strong> This allows a single submission and can be
-paired with the ‘return_url’ parameter (explained below) to redirect the user to
-a URL of your choice after the form has been submitted.</p>
-<p><strong>Online-only (once per respondent):</strong> This allows your web form only to be
-submitted once per user, using basic protection to prevent the same user (on the
-same browser &amp; device) from submitting more than once.</p>
-<p><strong>Embeddable web form code:</strong> Use this html5 code snippet to integrate your form
-on your own website using smaller margins.</p>
-<p><strong>View only:</strong> Use this version for testing, getting feedback. Does not allow
-submitting data.</p>
-<p><strong>Android application:</strong> Use this option to collect data in the field with your
-Android device.</p>
-</section>
-<section id="start-data-collection">
-<h3>Start Data Collection:<a class="headerlink" href="#start-data-collection" title="Link to this heading">¶</a></h3>
-<p>Select an appropriate drop down option from <strong>Collect data</strong> and then press COPY
-to copy the survey link to share with others or press OPEN to open the survey
-form to a new tab in your browser. Once the form is opened, you should see a
-screen like the one shown in the image below:</p>
-<p><img alt="image" src="_images/data_collection.jpg" /></p>
-<p><strong>1. Signal Bars:</strong> The signal bars indicate whether the form can be launched
-offline or not. Web forms are built to be able to collect data while you are
-offline, however, it is essential to visit the form URL with an internet
-connection before going offline. Once your form has been loaded and cached,
-you’ll see the offline availability icon (empty “signal bars” and a check mark)
-in the top-left corner indicating that you can now access the form offline.</p>
-<p><strong>2. Printer Icon:</strong> The printer icon provides you access to print your form or
-save it as a PDF version. For this, press the printer icon and then select
-Destination (an appropriate printer connected to your device to print out your
-survey form or Save as PDF to save your survey form as a PDF).</p>
-<p><strong>3. Choose Language:</strong> This feature in the web form gets activated if you have
-multiple languages for your survey project. You’re able to toggle between the
-default language and other languages present in your survey form.</p>
-<p><strong>4. Save as Draft:</strong> Use this feature to edit or update your records before
-submitting it to the KoboToolbox server. Once you have checked Save as Draft you
-will have an option to Save Draft. The draft record gets queued but does not
-sync with KoboToolbox server. To sync it with the server you will have to open
-the record from the queued list and uncheck Save as Draft and press Submit.</p>
-<p><strong>5. Submit:</strong> Press the Submit button if you have completed collecting
-information and wish to send the filled-up form to the KoboToolbox server. After
-pressing the Submit button, you will not have an option to edit the records on
-your device.</p>
-<p><strong>6. Queued Records Counter:</strong> The Queued Records Counter shows you the total
-number of records submitted and waiting to be uploaded to a server. The queued
-records are uploaded automatically in the background every 5 minutes when the
-web page is open and an internet connection is available.</p>
-<p><strong>7. Queue Records Pane:</strong> Clicking the side button shows you the records that
-are available as drafts (which can still be edited) and finalized submitted
-records queued to be either uploaded to your server with an internet connection
-or exported as zip file as outlined in the
-<a class="reference internal" href="manual_upload.html"><span class="std std-doc">support article here</span></a>.</p>
-</section>
-</section>
-<section id="how-do-i-save-an-offline-web-form-on-a-mobile-device">
-<h2>How do I save an offline web form on a mobile device?<a class="headerlink" href="#how-do-i-save-an-offline-web-form-on-a-mobile-device" title="Link to this heading">¶</a></h2>
-<p>Follow the steps outlined below to save a form and collect data in a web form
-using a a mobile device:</p>
-<ol class="arabic">
-<li><p>Connect your device to the internet.</p></li>
-<li><p>Open a web browser available (Chrome preferred) on your mobile device.</p></li>
-<li><p>Type or paste the URL of your web form to open a form page that resembles the
-one shown below:</p>
-<p><img alt="image" src="_images/offline_webform.jpg" /></p>
-</li>
-<li><p>Click the 3 DOTS icon at the top right (circled in the image above) and
-select ADD TO HOME SCREEN to create a shortcut to your device.</p></li>
-<li><p>A window will appear to type a name for your project shortcut. Name the
-shortcut and then press ADD.</p></li>
-<li><p>You will now see a KoboToolbox web form shortcut icon on your device, similar
-to the what is shown below:</p>
-<p><img alt="image" src="_images/kobo_icon.png" /></p>
-</li>
-<li><p>Select the shortcut icon to start collecting data for your survey project.</p></li>
+  <section id="collecting-data-using-web-forms">
+<h1>Collecting data using web forms<a class="headerlink" href="#collecting-data-using-web-forms" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/data_through_webforms.md" class="reference">23 Apr 2026</a></p>
+<p>KoboToolbox web forms let you <strong>collect data directly in a web browser</strong>, without installing an app. They are browser-based versions of your form that you can use to preview and test your questionnaire or collect live data on phones, tablets, and computers.</p>
+<p>Web forms work on most modern devices, including Android devices, iPhones, iPads, laptops, and desktop computers. They are especially useful in projects where respondents complete a form through a shared link, where the data collection team uses different types of devices, or where you want to enter data on a computer instead of through an app.</p>
+<p>Web forms also support <strong>offline data collection</strong> once the form has been opened and cached in the browser. They support all form logic set up in KoboToolbox, including skip logic and validation rules, and their appearance can be customized through different <a class="reference external" href="https://support.kobotoolbox.org/alternative_enketo.html">web form themes</a>.</p>
+<p class="note">
+<strong>Note:</strong>
+ KoboToolbox web forms were previously powered by <a href="https://enketo.org">Enketo</a>, which is why they used to be called Enketo web forms in older documentation.   
+</p>
+<p>This article covers the following:</p>
+<ul class="simple">
+<li><p>Sharing KoboToolbox web forms for data collection</p></li>
+<li><p>Choosing the right web form mode</p></li>
+<li><p>Collecting data and saving drafts in the browser</p></li>
+<li><p>Using web forms offline</p></li>
+<li><p>Customizing web form links for specific use cases</p></li>
+<li><p>Troubleshooting common issues</p></li>
+</ul>
+<section id="sharing-web-forms-for-data-collection">
+<h2>Sharing web forms for data collection<a class="headerlink" href="#sharing-web-forms-for-data-collection" title="Link to this heading">¶</a></h2>
+<p>Once your project is ready for data collection, you can easily share a link with respondents or data collectors to input data.</p>
+<p>To share a link with respondents:</p>
+<ol class="arabic simple">
+<li><p>Open the <strong>FORM</strong> page and ensure your form has been <a class="reference external" href="https://support.kobotoolbox.org/deploy_form_new_project.html">deployed</a>.</p></li>
+<li><p>Under the <strong>Collect data</strong> pane, click <strong>COPY</strong> to copy the link and share it with data collectors or respondents.</p></li>
+<li><p>You can also click <strong>OPEN</strong> to launch the form in a new browser tab.</p></li>
 </ol>
+<p><img alt="Open or copy a form" src="_images/copy_open.png" /></p>
+<section id="authentication-requirement">
+<h3>Authentication requirement<a class="headerlink" href="#authentication-requirement" title="Link to this heading">¶</a></h3>
+<p>By default, deployed projects <a class="reference external" href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require users to sign in</a> before they can open a web form or submit data.</p>
+<ul class="simple">
+<li><p>To keep authentication required, share the project with specific KoboToolbox users and give them <strong>Add submissions</strong> permission.</p></li>
+<li><p>To allow anyone with the link to submit data without a username and password, you can disable the authentication requirement in the <strong>Collect data</strong> pane by toggling the “Allow submissions to this form to this form without a username and password” option.</p></li>
+</ul>
+<p class="note">
+To learn more about form sharing permissions, see <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Sharing projects with project-level settings</a> and <a href="https://support.kobotoolbox.org/managing_permissions.html">Sharing projects with user-level permissions</a>.
+</p>
 </section>
-<section id="forwarding-upon-submission">
-<h2>Forwarding upon submission<a class="headerlink" href="#forwarding-upon-submission" title="Link to this heading">¶</a></h2>
-<p>By default the form refreshes for the next entry once the data has been
-submitted. If users are only supposed to enter one entry (e.g. in an online
-survey) you can send them to another website upon submission. To use this
-feature you need to 1) use the Online-Only form of the form, and 2) add
-<code class="docutils literal notranslate"><span class="pre">?return_url=https://www.somewebsite.com</span></code> to your URL.</p>
-<p><img alt="image" src="_images/url-single.png" /></p>
+<section id="data-collection-modes">
+<h3>Data collection modes<a class="headerlink" href="#data-collection-modes" title="Link to this heading">¶</a></h3>
+<p>KoboToolbox provides several web form link options under the <strong>Collect data</strong> section. These options affect the link you open or share, but they do not change the form itself.</p>
+<p><img alt="Select data collection mode" src="_images/modes.png" /></p>
+<p>Available web form modes include:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Data collection mode</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Online-Offline (multiple submission)</p></td>
+<td class="text-left"><p>Allows data collection online or offline and supports multiple submissions from the same device.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Online-Only (multiple submissions)</p></td>
+<td class="text-left"><p>Supports multiple submissions from the same device, but requires an internet connection for use.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Online-Only (single submission)</p></td>
+<td class="text-left"><p>Allows one submission at a time from the same device and can be used with a <a href="https://support.kobotoolbox.org/data_through_webforms.html#redirect-users-to-another-webpage-after-submission">redirect link</a> after submission. Users are not prevented from reopening the link to submit data again.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Online-only (once per respondent)</p></td>
+<td class="text-left"><p>Prevents the same user on the same browser and device from submitting more than once.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Embeddable web form code</p></td>
+<td class="text-left"><p>Provides HTML code to embed the form on your own website.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>View only</p></td>
+<td class="text-left"><p>Opens the form for previewing and testing without allowing submissions.</p></td>
+</tr>
+</tbody>
+</table>
 </section>
-<section id="troubleshooting-web-forms">
-<h2>Troubleshooting Web Forms<a class="headerlink" href="#troubleshooting-web-forms" title="Link to this heading">¶</a></h2>
-<p>Always use the latest version of the browser. We recommend users to use Chrome
-as their browser while working with web forms. For other details on
-troubleshooting web forms, please visit our
-<a class="reference internal" href="troubleshooting_webforms.html"><span class="std std-doc">support article (Troubleshooting Enketo Web Forms) here</span></a>.</p>
+<section id="printing-a-web-form">
+<h3>Printing a web form<a class="headerlink" href="#printing-a-web-form" title="Link to this heading">¶</a></h3>
+<p>You can also <strong>print a web form</strong> to share it during form development or use it for paper-based data collection. To do so:</p>
+<ol class="arabic simple">
+<li><p>Open your web form.</p></li>
+<li><p>Click the printer button in the top right corner.</p></li>
+</ol>
+<p>The printed version includes all questions and guidance hints, regardless of any form logic.</p>
+<p><img alt="Click print icon to print form" src="_images/print1.png" /></p>
+</section>
+</section>
+<section id="collecting-data-with-web-forms">
+<h2>Collecting data with web forms<a class="headerlink" href="#collecting-data-with-web-forms" title="Link to this heading">¶</a></h2>
+<p>After opening the form, users can complete it directly in their browser. If the form includes <a class="reference external" href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html">multiple languages</a>, users can change the language at the top of the form.</p>
+<p><img alt="Change form language" src="_images/change_language.png" /></p>
+<p>At the end of the form, users can either save their work as a draft or submit it:</p>
+<ul class="simple">
+<li><p><strong>Submit</strong> finalizes the submission and sends it to the server when a connection is available. Once submitted, the entry can no longer be edited in the browser.</p></li>
+<li><p><strong>Save Draft</strong> stores the submission on the device so it can be reopened and completed later.</p></li>
+</ul>
+<p><img alt="Save or submit a form" src="_images/save_submit.png" /></p>
+<section id="managing-draft-submissions">
+<h3>Managing draft submissions<a class="headerlink" href="#managing-draft-submissions" title="Link to this heading">¶</a></h3>
+<p>Saving a draft stores the submission in the browser so it can be reopened and completed later. Drafts are not sent to the KoboToolbox server until they are reopened, finalized, and submitted.</p>
+<p>When you save a form as a draft, you will be asked to <strong>name it</strong> so it is easier to find later.</p>
+<p>The <strong>queue counter</strong> in the top left corner shows how many drafts are saved in the browser. To reopen a draft:</p>
+<ol class="arabic simple">
+<li><p>Click the <strong>queue counter</strong> to open the list of saved drafts.</p></li>
+<li><p>Select the draft you want to open.</p></li>
+<li><p>Review or edit the draft, then submit.</p></li>
+</ol>
+<p><img alt="Queue counter icon" src="_images/queue.png" /></p>
+<p class="note">
+<strong>Note:</strong>
+Drafts are stored in the browser until they are submitted, even if you close the browser, turn off the device, or go offline. Do not clear your browser cache or site data during data collection, and make sure the device is not set to clear them automatically, as this may permanently delete saved drafts.   
+</p>
+</section>
+<section id="offline-data-collection">
+<h3>Offline data collection<a class="headerlink" href="#offline-data-collection" title="Link to this heading">¶</a></h3>
+<p>Web forms <strong>support offline data collection</strong> on all widely used browsers and devices. When using web forms, KoboToolbox can store the form and responses in the browser so users can continue entering data without an internet connection.</p>
+<p class="note">
+<strong>Note:</strong>
+When entering data offline, do not clear your browser cache or site data during data collection, and make sure the device is not set to clear them automatically, as this may permanently delete offline forms and queued submissions.
+</p>
+<p>To collect data offline with web forms:</p>
+<ol class="arabic">
+<li><p>Before going offline, open the form while connected and wait for it to fully load and be cached on the device. This can take up to 30 seconds.</p></li>
+<li><p>Once the form has been cached, a <strong>confirmation icon</strong> appears in the top left corner to show that it can now be used offline.</p>
+<ul class="simple">
+<li><p>If you go offline before the form has been cached, you may lose access to the page when it refreshes.</p></li>
+</ul>
+<p><img alt="Signal bar icon" src="_images/signal_bars.png" /></p>
+</li>
+<li><p>When submitting data while offline, the submissions are added to the queue. The <strong>queue counter</strong> shows how many records are waiting to upload.</p></li>
+</ol>
+<p><img alt="Queue counter icon" src="_images/queue.png" /></p>
+<ol class="arabic simple" start="4">
+<li><p>Click the <strong>queue counter</strong> to view finalized submissions waiting to upload when an internet connection is available. You can also export queued submissions as a ZIP file.</p></li>
+<li><p>Once the device reconnects, saved submissions are uploaded automatically in the background while the form remains open.</p></li>
+</ol>
+<p class="note">
+<strong>Note:</strong>
+For easier access during offline data collection, you may want to bookmark the form or add a shortcut to your phone’s home screen using the <strong>Add to Home Screen</strong> option in your browser menu.
+</p>
+</section>
+</section>
+<section id="customizing-web-form-links">
+<h2>Customizing web form links<a class="headerlink" href="#customizing-web-form-links" title="Link to this heading">¶</a></h2>
+<p>You can modify a web form link to control how the form opens or behaves for different users and use cases. For example, you can open the form in a specific language, prefill certain values, or redirect users to another page after they submit the form.</p>
+<section id="opening-the-form-in-a-specific-language">
+<h3>Opening the form in a specific language<a class="headerlink" href="#opening-the-form-in-a-specific-language" title="Link to this heading">¶</a></h3>
+<p>If your form has multiple languages, you can add a language parameter to the web form URL so it opens in a specific language. This can be useful when sharing different links with different user groups.</p>
+<p>To share a link that opens in a different form language from the form’s default language:</p>
+<ol class="arabic simple">
+<li><p>Copy your form link in <strong>FORM &gt; Collect data.</strong></p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">?lang=language_code</span></code> at the end of the URL, where <code class="docutils literal notranslate"><span class="pre">language_code</span></code> is the language code of the selected language.</p>
+<ul class="simple">
+<li><p>For example: <code class="docutils literal notranslate"><span class="pre">https://ee.kobotoolbox.org/x/[form_id]?lang=fr</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<p class="note">
+For more information, see <a href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html#language-specific-form-url">Collecting data in multiple languages</a>.
+</p>
+</section>
+<section id="prefilling-a-field-from-the-web-link">
+<h3>Prefilling a field from the web link<a class="headerlink" href="#prefilling-a-field-from-the-web-link" title="Link to this heading">¶</a></h3>
+<p>You can also prefill a field in your form through the web link. This is useful when you want to pass a known value into the form automatically.</p>
+<p>For example, you could share different links in different places, and each link could open the same form with a hidden field that shows where the link came from. You could also share a different link with each respondent, with that person’s unique ID already embedded in the link.</p>
+<p>To share a link that prefills a field in your form:</p>
+<ol class="arabic simple">
+<li><p>Add the question you want to prefill to your form, then set its <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#xml-value">data column name</a>.</p>
+<ul class="simple">
+<li><p>This can be a <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#storing-constants-in-your-form">Hidden</a> question if you want to store the value in the background, or any standard question type if you want respondents to see it in the form.</p></li>
+</ul>
+</li>
+<li><p>Copy your form link in <strong>FORM &gt; Collect data.</strong></p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">?d[data_column_name]=value</span></code> at the end of the URL, where <code class="docutils literal notranslate"><span class="pre">data_column_name</span></code> is the data column name of the Hidden question and <code class="docutils literal notranslate"><span class="pre">value</span></code> is the prefilled value.</p>
+<ul class="simple">
+<li><p>For example: <code class="docutils literal notranslate"><span class="pre">https://ee.kobotoolbox.org/x/[form_id]?d[prefilled_field]=12345</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<p class="note">
+<strong>Note:</strong>
+Use the full data column name in the URL parameter. If the question is inside one or more groups, the name must include the <strong>group name or names</strong> as well (e.g., <code>group1/question1</code>). You can find the exact name in the question’s <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Data column name</a> field in the Formbuilder, or in the <code>name</code> column of an XLSForm.
+</p>
+</section>
+<section id="redirecting-users-to-another-webpage-after-submission">
+<h3>Redirecting users to another webpage after submission<a class="headerlink" href="#redirecting-users-to-another-webpage-after-submission" title="Link to this heading">¶</a></h3>
+<p>When using the <strong>Online-Only (single submission)</strong> data collection mode, you can redirect users to another webpage after they submit their form.</p>
+<p>To redirect users to another webpage:</p>
+<ol class="arabic simple">
+<li><p>In <strong>FORM &gt; Collect data</strong>, select the <strong>Online-Only (single submission)</strong> data collection mode.</p></li>
+<li><p>Copy your form link.</p></li>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">?return_url=webpage</span></code> at the end of the URL, where <code class="docutils literal notranslate"><span class="pre">webpage</span></code> is the language URL of the webpage.</p>
+<ul class="simple">
+<li><p>For example: <code class="docutils literal notranslate"><span class="pre">https://ee.kobotoolbox.org/x/[form_id]?return_url=https://website.com</span></code>.</p></li>
+</ul>
+</li>
+</ol>
+<p class="note">
+<strong>Note:</strong>
+You can combine multiple parameters in the same link by separating them with <code>&</code>.
+</p>
+</section>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<details>
+<summary><strong>The form does not work offline</strong></summary>
+Before going offline, make sure the form has been fully opened and cached in the browser. Check the offline availability indicator in the form before starting data collection without internet access.<br><br>
+<img src="https://github.com/kobotoolbox/docs/blob/Update_data_collection_section/source/images/data_through_webforms/signal_bars.png" alt="signal bars icon">
+</details>
+<br>
+<details>
+<summary><strong>Browser crashes during data collection</strong></summary>
+If your device restarts, the browser refreshes, or the form closes while you are in the middle of entering data, your responses are usually saved in the browser. When you reopen the form, KoboToolbox will prompt you to either discard the previously entered data or load it back into the form and continue. 
+</details>
+<br>
+<details>
+<summary><strong>Submissions are not reaching the server</strong></summary>
+If the form was used offline, submissions may still be waiting in the queue. Check the queue counter and make sure the device has reconnected to the internet. Web forms upload queued submissions automatically when a connection is available.<br><br>
+<img src="https://github.com/kobotoolbox/docs/blob/Update_data_collection_section/source/images/data_through_webforms/queue.png" alt="Queue counter icon">
+</details>
+<br>
+<details>
+<summary><strong>Respondents are asked to sign in </strong></summary>
+Check whether the project is set to <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require authentication</a> for submissions. If it is, users must sign in with an account that has permission to add submissions, or you can disable the requirement in <strong>FORM > Collect data.</strong> 
+</details>
+<br>
+<details>
+<summary><strong>Data appears to be missing</strong></summary>
+Do not clear the browser cache or delete browser data while collecting data with web forms. Clearing the cache <strong>removes stored forms, drafts, and queued submissions from the device</strong>, and this data cannot be recovered if it has not already been uploaded to the KoboToolbox server.
+</details>
+<br>
+<details>
+<summary><strong>Browser not supported</strong></summary>
+Use the latest version of a modern browser. Chrome is generally recommended for working with web forms, but Safari, Firefox, Edge, Opera, Samsung Internet, and other browsers also are well supported. Internet Explorer is not supported. 
+</details>
+<br>
+<details>
+<summary><strong>Web form submission fails </strong></summary>
+If a web form submission fails, check whether your form uses a <strong>reserved XLSForm term</strong> as the <a href="https://support.kobotoolbox.org/glossary.html#data-column-name">data column name</a>. Reserved words are terms that cannot be used as variable names because they are used by the underlying XForms engine for structure, logic, or data analysis (e.g., type, label, start, today). Using these words can cause form validation errors, publishing failures, or data export issues.<br><br>
+<p>To fix the issue, rename the affected question to a different value, then redeploy the form. This issue usually affects web forms even when the form opens normally, while KoboCollect may continue to work as expected. Note that any submissions already saved against the old version of the form may remain unsubmittable, so it is important to update the form as soon as possible if you are collecting data through web forms. Always <strong>test form submission before launching data collection</strong> so you can catch naming issues early.</p>
+</details>
+<br>
 </section>
 </section>
 
@@ -250,7 +365,7 @@ troubleshooting web forms, please visit our
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Collecting Data through Web Forms"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Collecting data using web forms"
               class="feedback-button"
               target="_blank"
             >
@@ -293,7 +408,7 @@ troubleshooting web forms, please visit our
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -339,28 +454,20 @@ troubleshooting web forms, please visit our
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting Data through Web Forms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#what-are-web-forms">What are web forms?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#why-do-i-need-web-forms-instead-of-kobocollect-android-app">Why do I need web forms instead of KoboCollect Android App?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-do-i-use-web-forms-for-data-collection">How do I use web forms for data collection?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#how-do-i-save-an-offline-web-form-on-a-mobile-device">How do I save an offline web form on a mobile device?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#forwarding-upon-submission">Forwarding upon submission</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting-web-forms">Troubleshooting Web Forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting data using web forms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sharing-web-forms-for-data-collection">Sharing web forms for data collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collecting-data-with-web-forms">Collecting data with web forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#customizing-web-form-links">Customizing web form links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -417,6 +524,7 @@ troubleshooting web forms, please visit our
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>
@@ -481,7 +589,7 @@ troubleshooting web forms, please visit our
   <script>
     window.docs = {
       currentPagename: "data_through_webforms",
-      currentTitle: "Collecting Data through Web Forms",
+      currentTitle: "Collecting data using web forms",
       currentUrl: ("index.html").replace("index.html", "data_through_webforms.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

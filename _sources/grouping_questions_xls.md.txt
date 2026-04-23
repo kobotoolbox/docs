@@ -1,5 +1,5 @@
 # Grouping questions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/86b2c6d34e0187769d2e14a5f4b082a9d15048d0/source/grouping_questions_xls.md" class="reference">24 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/grouping_questions_xls.md" class="reference">23 Apr 2026</a>
 
 Grouping questions in XLSForm helps organize related content into clear, structured sections, improving form layout and navigation. For example, you can group all demographic questions into one section.
 
@@ -72,7 +72,7 @@ In XLSForm, question groups can be repeated to collect the same set of responses
 
 ## Appearance settings for question groups
 
-A common reason to group questions is to display them together on a single page. You can adjust the group's appearance settings to control how grouped questions are shown during data collection. The steps vary depending on whether you are using [KoboCollect](https://support.kobotoolbox.org/kobocollect_on_android_latest.html) or [Enketo](https://support.kobotoolbox.org/enketo.html).
+A common reason to group questions is to display them together on a single page. You can adjust the group's appearance settings to control how grouped questions are shown during data collection. The steps vary depending on whether you are using [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html).
 
 <p class="note">
 <strong>Note:</strong> Appearance settings to display groups on a single page work both for question groups and <a href="https://support.kobotoolbox.org/repeat_groups_xls.html">repeat groups</a>.
@@ -98,14 +98,14 @@ To **display all grouped questions on the same screen** in KoboCollect:
 | end_group | | | |
 | survey |
 
-### Using Enketo web forms to collect data
+### Using web forms to collect data
 
-By default, Enketo web forms display all questions on a single page.
+By default, web forms display all questions on a single page.
 
-To display each group of questions on its own page in Enketo web forms:
+To display each group of questions on its own page in web forms:
 1.  In the `settings` worksheet, add a `style` column.
 2.  In the second cell of the `style` column, enter `pages`.
-    * This applies the [pages theme](https://support.kobotoolbox.org/form_style_xls.html) to your Enketo web form, dividing it into separate pages similar to KoboCollect. 
+    * This applies the [pages theme](https://support.kobotoolbox.org/form_style_xls.html) to your web form, dividing it into separate pages similar to KoboCollect. 
 
 **settings worksheet**
 

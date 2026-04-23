@@ -1,12 +1,12 @@
 # Creating a question matrix in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/784c60cd2a63d7a35a80474cd0451b25329534cb/source/matrix_response.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/matrix_response.md" class="reference">23 Apr 2026</a>
 
 The **Question Matrix** question type allows you to create a structured table of questions, where each column represents a question and each row represents an item. Instead of creating multiple separate questions, you can group them into a single matrix to make your form more organized and efficient for data collection.
 
 This article explains how to add and configure a question matrix in the Formbuilder, how it appears during data collection, and how to apply advanced logic using XLSForm when needed.
 
 <p class="note">
-<strong>Note:</strong> Question matrices are supported only in <a href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> with the <a href="https://support.kobotoolbox.org/alternative_enketo.html">Grid theme</a> enabled. They are not supported in KoboCollect.
+<strong>Note:</strong> Question matrices are supported only in <a href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a> with the <a href="https://support.kobotoolbox.org/alternative_enketo.html">Grid theme</a> enabled. They are not supported in KoboCollect.
 </p>
 
 ## Adding a question matrix in the Formbuilder
@@ -54,11 +54,11 @@ To configure each row:
 
 ## Collecting data from a question matrix
 
-Question matrices are supported only in Enketo web forms and require the [Grid theme](https://support.kobotoolbox.org/alternative_enketo.html) to be enabled. They are not supported in KoboCollect.
+Question matrices are supported only in web forms and require the [Grid theme](https://support.kobotoolbox.org/alternative_enketo.html) to be enabled. They are not supported in KoboCollect.
 
 The question matrix is displayed as a table, with each column representing a question and each row representing an item.
 
-![Question matrix Enketo](images/matrix_response/enketo.png)
+![Question matrix](images/matrix_response/enketo.png)
 
 <p class="note">
 <strong>Note:</strong> When exporting data or viewing submissions in the data table, question matrix variables are converted to standard XLSForm structure. Each cell in the matrix becomes an individual variable, and the final variable names are created by combining the row’s <strong>data column prefix</strong> and the column’s <strong>data column suffix</strong>. As a result, the exported variable names may differ slightly from how the matrix appears in the Formbuilder.

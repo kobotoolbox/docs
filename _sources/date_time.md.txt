@@ -1,5 +1,5 @@
 # Date and time questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6c19e138e4a3a7c7cf2ad45eb7f119632ab31abe/source/date_time.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/date_time.md" class="reference">23 Apr 2026</a>
 
 Date and time questions are used to collect temporal information such as event dates, appointment times, or timestamps. These question types ensure that responses are **captured in a standardized format**, which supports accurate sorting, filtering, calculations, and analysis.
 
@@ -30,7 +30,7 @@ To add date and time questions to your form:
 
 The table below displays the default appearances for date and time questions:
 
-![Date time questions in Enketo vs KoboCollect](images/date_time/table.png)
+![Date time questions in web forms vs KoboCollect](images/date_time/table.png)
 
 ### Advanced appearances
 

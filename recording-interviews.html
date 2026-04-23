@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Recording interviews with background audio recording &#8212; KoboToolbox  documentation</title>
+    <title>Collecting qualitative data with KoboToolbox &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -25,8 +25,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Collecting Data through Web Forms" href="data_through_webforms.html" />
-    <link rel="prev" title="Deploying a Form to Start a New Data Collection Project" href="deploy_form_new_project.html" />
+    <link rel="next" title="Collecting data in multiple languages" href="collecting_data_multiple_languages.html" />
+    <link rel="prev" title="Collecting GPS data with KoboToolbox" href="collect_gps.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -106,177 +106,126 @@
 
         <section class="page__body" role="main">
           
-  <section id="recording-interviews-with-background-audio-recording">
-<h1>Recording interviews with background audio recording<a class="headerlink" href="#recording-interviews-with-background-audio-recording" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/recording-interviews.md" class="reference">20 Mar 2026</a></p>
-<p>Background audio recording <strong>captures an entire interview in the background</strong> while a form is open. The recording is stored as audio data within form submissions.</p>
-<p>This feature enhances qualitative research by preserving interviews in full detail. Researchers can revisit recordings to capture nuance, validate findings, find exact quotes, and strengthen their analysis.</p>
-<p>Background audio recording also supports data quality assurance. Supervisors and project managers can review recordings to understand how enumerators conducted interviews, monitor adherence to survey protocols, and keep backup copies of conversations used for transcription.</p>
-<p>This article covers the following topics:</p>
+  <section id="collecting-qualitative-data-with-kobotoolbox">
+<h1>Collecting qualitative data with KoboToolbox<a class="headerlink" href="#collecting-qualitative-data-with-kobotoolbox" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/recording-interviews.md" class="reference">23 Apr 2026</a></p>
+<p>Qualitative data helps you <strong>understand experiences, priorities, and context</strong> that closed-ended questions can miss. It can reveal why people respond in certain ways, how they describe their needs, and what details matter most in a local context.</p>
+<p>In practice, qualitative data is often harder to collect and analyze at scale. Writing down open-ended responses, reviewing images, and transcribing audio interviews can take significant time. Because of this, teams often collect less qualitative data than they would like, or struggle to use everything they collect.</p>
+<p>KoboToolbox includes features that <strong>make qualitative data collection more practical.</strong> You can collect text, images, audio, video, and background audio recordings in your forms, then review and manage them directly in KoboToolbox. For audio responses, KoboToolbox also includes built-in tools for <a class="reference external" href="https://support.kobotoolbox.org/transcription-translation.html">transcription, translation</a>, and <a class="reference external" href="https://support.kobotoolbox.org/qualitative_analysis.html">analysis</a>.</p>
+<p>This article covers the main ways to collect qualitative data with KoboToolbox, including relevant question types, background audio recordings, and options for managing and analyzing qualitative data after collection.</p>
+<section id="question-types-for-qualitative-data-collection">
+<h2>Question types for qualitative data collection<a class="headerlink" href="#question-types-for-qualitative-data-collection" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox supports several question types that are useful for qualitative research and open-ended data collection.</p>
 <ul class="simple">
-<li><p>Enabling background audio recording in the Formbuilder</p></li>
-<li><p>Implementing background audio recording in XLSForm</p></li>
-<li><p>Configuring audio quality</p></li>
-<li><p>Data collection with background audio recordings</p></li>
-<li><p>Managing background audio data</p></li>
+<li><p><strong>Text:</strong> Text questions can be used for short or long written responses. For longer answers, you can use the <code class="docutils literal notranslate"><span class="pre">multiline</span></code> <a class="reference external" href="https://support.kobotoolbox.org/text_questions.html#advanced-appearances">appearance</a> to give respondents a larger text box.</p></li>
+<li><p><strong>Image:</strong> Image questions can be used to collect photos, sketches, or annotated images. This can be useful for visual documentation, participatory mapping, site observations, or collecting photo evidence. Use the <code class="docutils literal notranslate"><span class="pre">draw</span></code> <a class="reference external" href="https://support.kobotoolbox.org/photo_audio_video_file.html#advanced-appearances">appearance</a> with image questions to create a drawing, and use the <code class="docutils literal notranslate"><span class="pre">annotate</span></code> appearance to mark up an image.</p></li>
+<li><p><strong>Video:</strong> Video questions can be used to collect video files. This may be useful when visual context, movement, or demonstrations are important.</p></li>
+<li><p><strong>Audio:</strong> Audio questions allow respondents or enumerators to record spoken responses or upload audio files. They are useful for open-ended interviews and other cases where tone and exact wording matter, and they reduce the need for enumerators to summarize responses on the spot.</p></li>
+<li><p><strong>Background audio recording:</strong> Background audio recording captures audio continuously while the form is open. This can be useful for recording a full interview instead of recording separate answers question by question.</p></li>
 </ul>
 <p class="note">
-<strong>Note:</strong> To learn about collecting short audio responses instead of a full background recording, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a>. 
+To learn more about qualitative question types, see <a href="https://support.kobotoolbox.org/text_questions.html">Text questions in KoboToolbox</a>, <a href="https://support.kobotoolbox.org/photo_audio_video_file.html#">Media questions in KoboToolbox</a> and <a href="https://support.kobotoolbox.org/form_meta.html#enabling-background-audio-recording">Enabling background audio recording</a>.
 </p>
-<section id="enabling-background-audio-recording-in-the-formbuilder">
-<h2>Enabling background audio recording in the Formbuilder<a class="headerlink" href="#enabling-background-audio-recording-in-the-formbuilder" title="Link to this heading">¶</a></h2>
-<p>If you are designing your survey in the Formbuilder, follow these steps to enable background audio recording:</p>
-<ol class="arabic simple">
-<li><p>In the <strong>FORM</strong> page, click <i class="k-icon-edit"></i> <strong>Edit</strong> to open the Formbuilder.</p></li>
-<li><p>On the left hand side, click <i class="k-icon-close"></i> <strong>Layout &amp; Settings.</strong></p></li>
-<li><p>In the <strong>Background audio</strong> section, click “Enable audio recording in the background.”</p>
-<ul class="simple">
-<li><p>Once enabled, the button text will change to “This survey will be recorded.”</p></li>
-</ul>
-</li>
-<li><p>If needed, change the audio quality in the <strong>Audio quality</strong> dropdown menu.</p>
-<ul class="simple">
-<li><p>For an overview of audio quality settings, see <a class="reference internal" href="#configuring-audio-quality">Configuring audio quality</a>. <strong>Voice only</strong> is the default and lowest audio quality.</p></li>
-</ul>
-</li>
-</ol>
-<p><img alt="Enabling background audio" src="_images/background_audio.png" /></p>
-<p>When recording background audio, consider adding a note to inform respondents or data collectors that the survey will be recorded.</p>
 </section>
-<section id="implementing-background-audio-recording-in-xlsform">
-<h2>Implementing background audio recording in XLSForm<a class="headerlink" href="#implementing-background-audio-recording-in-xlsform" title="Link to this heading">¶</a></h2>
-<p>If you are designing your survey in <a class="reference external" href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>, follow these steps to enable background audio recording:</p>
-<ol class="arabic simple">
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">type</span></code> column of the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet, enter <code class="docutils literal notranslate"><span class="pre">background-audio</span></code>.</p></li>
-<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column, enter a short name. This will be the name of the variable that contains the resulting audio file.</p></li>
-<li><p>The <code class="docutils literal notranslate"><span class="pre">label</span></code> is optional for this question, as it is not displayed inside the form.</p></li>
-<li><p>If needed, adjust the audio quality in the <code class="docutils literal notranslate"><span class="pre">parameters</span></code> column.</p>
-<ul class="simple">
-<li><p>For an overview of audio quality settings, see <a class="reference internal" href="#configuring-audio-quality">Configuring audio quality</a>. <code class="docutils literal notranslate"><span class="pre">voice-only</span></code> is the default and lowest audio quality.</p></li>
-</ul>
-</li>
-</ol>
-<p><strong>survey worksheet</strong></p>
+<section id="collecting-qualitative-data-with-kobocollect-vs-web-forms">
+<h2>Collecting qualitative data with KoboCollect vs web forms<a class="headerlink" href="#collecting-qualitative-data-with-kobocollect-vs-web-forms" title="Link to this heading">¶</a></h2>
+<p>Qualitative question types can behave differently depending on whether data is collected in <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a> or <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a>, and on whether respondents are using a computer or mobile device.</p>
+<p>The following table describes how each qualitative question type behaves in KoboCollect and web forms.</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-<th class="head text-left"><p>parameters</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Question type</p></th>
+<th class="head text-left"><p>KoboCollect behavior</p></th>
+<th class="head text-left"><p>Web forms behavior</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>background-audio</p></td>
-<td class="text-left"><p>recording</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>quality=normal</p></td>
+<tr class="row-even"><td class="text-left"><p>Text</p></td>
+<td class="text-left"><p>Respondents can type their response in a text box.</p></td>
+<td class="text-left"><p>Respondents can type their response in a text box.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-odd"><td class="text-left"><p>Image</p></td>
+<td class="text-left"><p>Respondents can take photos from the device or upload an image file.</p></td>
+<td class="text-left"><p>On a computer, respondents can <strong>only upload</strong> an image file.<br><br>When using mobile devices, respondents may also have the option to take a photo from the device.</p></td>
 </tr>
-</tbody>
-</table>
-</section>
-<section id="configuring-audio-quality">
-<h2>Configuring audio quality<a class="headerlink" href="#configuring-audio-quality" title="Link to this heading">¶</a></h2>
-<p>Audio quality affects the size of the file that is stored on the server. Users of the <a class="reference external" href="https://www.kobotoolbox.org/pricing/">Community Plan</a> are limited to 1GB of free file storage. Therefore, it is advisable to manage the file sizes of the audio files you collect by choosing an appropriate quality setting. The table below provides an overview of audio quality settings and their corresponding file sizes.</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Quality</p></th>
-<th class="head text-left"><p>XLSForm parameters</p></th>
-<th class="head text-left"><p>Extension</p></th>
-<th class="head text-left"><p>Encoding</p></th>
-<th class="head text-left"><p>Bit rate</p></th>
-<th class="head text-left"><p>Sample rate</p></th>
-<th class="head text-left"><p>File size</p></th>
+<tr class="row-even"><td class="text-left"><p>Video</p></td>
+<td class="text-left"><p>Respondents can record a video from the device or upload a video file.</p></td>
+<td class="text-left"><p>On a computer, respondents can <strong>only upload</strong> a video file.<br><br>When using mobile devices, respondents may also have the option to record a video from the device.</p></td>
 </tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>Normal</p></td>
-<td class="text-left"><p>quality=normal</p></td>
-<td class="text-left"><p>.m4a</p></td>
-<td class="text-left"><p>AAC</p></td>
-<td class="text-left"><p>64 kbps</p></td>
-<td class="text-left"><p>32 kHz</p></td>
-<td class="text-left"><p>~ 30 MB/hour</p></td>
+<tr class="row-odd"><td class="text-left"><p>Audio</p></td>
+<td class="text-left"><p>Respondents can record an audio response or upload an audio file.</p></td>
+<td class="text-left"><p>Respondents can record an audio response (even from a computer) or upload an audio file.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Low</p></td>
-<td class="text-left"><p>quality=low</p></td>
-<td class="text-left"><p>.m4a</p></td>
-<td class="text-left"><p>AAC</p></td>
-<td class="text-left"><p>24 kbps</p></td>
-<td class="text-left"><p>32 kHz</p></td>
-<td class="text-left"><p>~ 11 MB/hour</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Voice only</p></td>
-<td class="text-left"><p>quality=voice-only</p></td>
-<td class="text-left"><p>.amr</p></td>
-<td class="text-left"><p>AMR</p></td>
-<td class="text-left"><p>12.2 kbps</p></td>
-<td class="text-left"><p>8 kHz</p></td>
-<td class="text-left"><p>~ 5 MB/hour</p></td>
+<tr class="row-even"><td class="text-left"><p>Background audio recording</p></td>
+<td class="text-left"><p>Records continuously while the form is open, as long as permission to record has been granted.</p></td>
+<td class="text-left"><p>Records continuously while the form is open (even from a computer), as long as permission to record has been granted.</p></td>
 </tr>
 </tbody>
 </table>
-<p>The default <strong>Voice only</strong> setting is suitable for quiet interview settings. For recordings with multiple speakers or some background noise, the <strong>Low</strong> quality setting is more appropriate. The <strong>Normal</strong> setting offers the highest audio quality but uses the most storage space.</p>
-</section>
-<section id="data-collection-with-background-audio-recordings">
-<h2>Data collection with background audio recordings<a class="headerlink" href="#data-collection-with-background-audio-recordings" title="Link to this heading">¶</a></h2>
-<p>Background audio can be recorded using the <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect Android app</a> as well as in <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>.</p>
-<p>In Enketo, a disclaimer will appear at the beginning of the form informing respondents that background audio is being recorded. In both Enketo and KoboCollect, a microphone icon showing the recording’s duration will be visible at the top of the form while background audio is actively recording.</p>
 <p class="note">
-<strong>Note:</strong> When background audio recording is active on a form <strong>in KoboCollect</strong>, <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Audio question types</a> are deactivated, as it is not possible to record audio using both features simultaneously in KoboCollect. 
+<strong>Note:</strong>
+When background audio recording is active on a form, <strong>Audio</strong> question types in <strong>KoboCollect</strong> are deactivated, as it is not possible to record audio using both features simultaneously. 
 </p>
-<section id="ethical-considerations">
-<h3>Ethical considerations<a class="headerlink" href="#ethical-considerations" title="Link to this heading">¶</a></h3>
-<p>When collecting data, it is essential to obtain informed consent from respondents before recording background audio. Users should carefully consider the ethical implications of audio recordings and ensure that participants are aware of how their data will be used, stored, and shared. Kobo strongly encourages compliance with all applicable data protection and privacy regulations in the jurisdiction where data collection takes place.</p>
 </section>
-</section>
-<section id="managing-background-audio-data">
-<h2>Managing background audio data<a class="headerlink" href="#managing-background-audio-data" title="Link to this heading">¶</a></h2>
-<p>Background audio recordings are treated very similarly to audio files collected in the survey. This means you can:</p>
+<section id="recording-interviews-with-background-audio-recordings">
+<h2>Recording interviews with background audio recordings<a class="headerlink" href="#recording-interviews-with-background-audio-recordings" title="Link to this heading">¶</a></h2>
+<p>Background audio recording is useful when you want to <strong>capture a full interview</strong> rather than separate audio clips for individual questions. It starts when the form opens and continues until the form is closed.</p>
+<p>Background audio can be recorded in the KoboCollect app and in web forms.</p>
 <ul class="simple">
-<li><p>View background audio recordings in the data table, under <strong>DATA &gt; Table.</strong></p></li>
-<li><p><a class="reference external" href="https://support.kobotoolbox.org/transcription-translation.html">Transcribe, translate</a>, and <a class="reference external" href="https://support.kobotoolbox.org/qualitative_analysis.html">analyze</a> background audio files.</p></li>
-<li><p><a class="reference external" href="https://support.kobotoolbox.org/managing_media_responses.html#deleting-media-files">Delete</a> background audio files.</p></li>
-<li><p><a class="reference external" href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">Download background audio files</a> from the data table or as a ZIP file under <strong>DATA &gt; Downloads &gt; Media Attachments (ZIP).</strong></p></li>
+<li><p>In web forms, a disclaimer appears at the beginning of the form to inform respondents that background audio is being recorded.</p></li>
+<li><p>In both web forms and KoboCollect, a microphone icon appears at the top of the form while recording is active and shows the recording duration.</p></li>
 </ul>
-<p><img alt="Managing audio data" src="_images/data_table1.png" /></p>
+<p class="note">
+<strong>Note:</strong>
+Background audio recording is collected as form metadata. For more information about setting up background audio recordings in your form, see <a href="https://support.kobotoolbox.org/form_meta.html#enabling-background-audio-recording">Adding form metadata in the Formbuilder</a> or <a href="https://support.kobotoolbox.org/metadata_xls.html">Form metadata in XLSForm</a>.
+</p>
+<section id="ethical-considerations-for-audio-recording">
+<h3>Ethical considerations for audio recording<a class="headerlink" href="#ethical-considerations-for-audio-recording" title="Link to this heading">¶</a></h3>
+<p>Before recording audio, <strong>make sure respondents give informed consent.</strong> They should understand that audio is being recorded, why it is being collected, how it will be used, who will have access to it, and how long it will be stored.</p>
+<p>Audio data can be especially sensitive. Before using background audio recording, consider whether full interview recordings are necessary for your project and whether they create additional <strong>privacy or protection risks.</strong> Kobo strongly encourages compliance with all applicable data protection and privacy requirements in the place where data collection takes place.</p>
+</section>
+</section>
+<section id="managing-and-analyzing-qualitative-data">
+<h2>Managing and analyzing qualitative data<a class="headerlink" href="#managing-and-analyzing-qualitative-data" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox includes built-in features to help you review qualitative data after collection.</p>
+<ul class="simple">
+<li><p><strong>Text:</strong> You can review all responses to a text question in <strong>DATA &gt; Report.</strong> This is useful for quickly reading open-ended answers together and spotting common themes.</p></li>
+<li><p><strong>Images:</strong> You can review collected images in <strong>DATA &gt; Gallery.</strong> This makes it easier to browse visual responses across submissions.</p></li>
+<li><p><strong>Video:</strong> Video files can be viewed within individual submissions. This is useful when you need to review visual context alongside other responses from the same record.</p></li>
+<li><p><strong>Audio:</strong> Audio responses, including background audio recordings, can be opened in their own view for review, transcription, translation, and analysis.</p></li>
+</ul>
+<p class="note">
+To learn more about transcribing, translating, and analyzing audio responses, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a> and <a href="https://support.kobotoolbox.org/qualitative_analysis.html">Qualitative analysis of audio responses</a>.
+</p>
+<p>Qualitative data is included in your dataset when you <a class="reference external" href="https://support.kobotoolbox.org/export_download.html">export</a> it, including links to media files for each submission, any transcription, translation, and analysis data, and any text responses. Media files can also be <a class="reference external" href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">downloaded separately</a>, either individually or in bulk.</p>
 </section>
 <section id="troubleshooting">
 <h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
 <details>
-  <summary><strong>Background audio recording not working</strong></summary>
-  Your device must have a built-in audio recorder for this feature to work. If your device does not include one, you can download <a href="https://play.google.com/store/apps/details?id=com.media.bestrecorder.audiorecorder&pcampaignid=web_share">Voice Recorder</a> from the Google Play Store.
+  <summary><strong>Not enough storage on device</strong></summary>
+Before collecting qualitative data (e.g., images or background audio recordings), make sure your device has enough storage space to save the files.
 </details>
 <br>
 <details>
-  <summary><strong>Not enough storage on device</strong></summary>
-  Before starting data collection, make sure your device has enough storage space to save background audio recordings. 
+  <summary><strong>Not enough storage on KoboToolbox server</strong></summary>
+Media files can be large and may cause your account to exceed its storage limit (1 GB for free accounts). If you need more space, you can <a href="https://support.kobotoolbox.org/managing_media_responses.html#deleting-media-files">delete media files</a> from submissions, <a href="https://www.kobotoolbox.org/pricing/">upgrade your plan</a>, or purchase a <strong>storage add-on</strong> in <strong>Account Settings > Add-ons.</strong>
+</details>
+<br>
+<details>
+  <summary><strong>Background audio recording not working</strong></summary>
+  Your device must have a built-in audio recorder for this feature to work. If your device does not include one, you can download <a href="https://play.google.com/store/apps/details?id=com.media.bestrecorder.audiorecorder&pcampaignid=web_share">Voice Recorder</a> or any other audio recording app on your device.
 </details>
 <br>
 <details>
   <summary><strong>Editing submissions with background audio recording</strong></summary>
-  If you edit a form that includes background audio from the KoboToolbox platform, the initial recording will not be replaced. A message at the top of the form will say “This submission has a background audio recording.”
+If you edit a form that includes background audio from the KoboToolbox platform, the initial recording will not be replaced. A message at the top of the form will say “This submission has a background audio recording.” 
 </details>
 <br>
 <details>
   <summary><strong>Forms with background audio recording saved as drafts</strong></summary>
-  If a form with background audio recording is saved as a draft in <strong>Enketo</strong>, only the initial recording will be retained. The recording will not resume or be replaced when the draft form is reopened. <br><br>
+If a form with background audio recording is saved as a draft in <strong>web forms</strong>, only the initial recording will be retained. The recording will not resume or be replaced when the draft form is reopened. <br><br>
 If a form with background audio recording is saved as a draft in <strong>KoboCollect</strong>, recording will resume when the draft form is reopened. Both recordings will be stored together in a single file.
 </details>
 <br>
-<details>
-  <summary><strong>Running out of KoboToolbox storage</strong></summary>
-  Background audio files can be large and may cause your account to exceed its storage limit (1 GB for free accounts). If you need more space, you can <a href="https://www.kobotoolbox.org/pricing/">upgrade your plan</a> or purchase a <strong>storage add-on</strong> in <strong>Account Settings > Add-ons.</strong>
-</details>
-<br>
-<details>
-  <summary><strong>Unable to download large audio files</strong></summary>
-  If large or long audio files fail to download as Media Attachments (ZIP), see <a href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">Downloading media files</a> for guidance on retrieving large media files.
-</details>
 </section>
 </section>
 
@@ -296,7 +245,7 @@ If a form with background audio recording is saved as a draft in <strong>KoboCol
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Recording interviews with background audio recording"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Collecting qualitative data with KoboToolbox"
               class="feedback-button"
               target="_blank"
             >
@@ -339,7 +288,7 @@ If a form with background audio recording is saved as a draft in <strong>KoboCol
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -385,28 +334,21 @@ If a form with background audio recording is saved as a draft in <strong>KoboCol
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Recording interviews with background audio recording</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#enabling-background-audio-recording-in-the-formbuilder">Enabling background audio recording in the Formbuilder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#implementing-background-audio-recording-in-xlsform">Implementing background audio recording in XLSForm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuring-audio-quality">Configuring audio quality</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-collection-with-background-audio-recordings">Data collection with background audio recordings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#managing-background-audio-data">Managing background audio data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting qualitative data with KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#question-types-for-qualitative-data-collection">Question types for qualitative data collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collecting-qualitative-data-with-kobocollect-vs-web-forms">Collecting qualitative data with KoboCollect vs web forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-and-analyzing-qualitative-data">Managing and analyzing qualitative data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -463,6 +405,7 @@ If a form with background audio recording is saved as a draft in <strong>KoboCol
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>
@@ -527,7 +470,7 @@ If a form with background audio recording is saved as a draft in <strong>KoboCol
   <script>
     window.docs = {
       currentPagename: "recording-interviews",
-      currentTitle: "Recording interviews with background audio recording",
+      currentTitle: "Collecting qualitative data with KoboToolbox",
       currentUrl: ("index.html").replace("index.html", "recording-interviews.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

@@ -153,7 +153,6 @@
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#draft-projects">Draft projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#dynamic-data-attachments">Dynamic data attachments</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#encryption">Encryption</a></li>
-<li class="toctree-l2"><a class="reference internal" href="glossary.html#enketo-web-forms">Enketo web forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#enumerator">Enumerator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#european-union-kobotoolbox-server">European Union KoboToolbox Server</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#form-logic">Form logic</a></li>
@@ -192,6 +191,7 @@
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#system-generated-submission-fields">System-generated submission fields</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#user-level-permissions">User-level permissions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#validation-criteria">Validation criteria</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#web-forms">Web forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#xlsform">XLSForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#xml-form">XML Form</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#xml-value">XML value</a></li>
@@ -327,8 +327,8 @@
 <li class="toctree-l2"><a class="reference internal" href="language_dashboard.html#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="alternative_enketo.html#adding-an-enketo-theme-in-the-formbuilder">Adding an Enketo theme in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="alternative_enketo.html#adding-a-web-form-theme-in-the-formbuilder">Adding a web form theme in the Formbuilder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="alternative_enketo.html#setting-up-question-widths-for-the-grid-theme">Setting up question widths for the Grid theme</a></li>
 </ul>
 </li>
@@ -547,7 +547,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Styling your forms using XLSForm</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="form_style_xls.html#themes-for-enketo-web-forms">Themes for Enketo web forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_style_xls.html#themes-for-web-forms">Themes for web forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="form_style_xls.html#styling-text">Styling text</a></li>
 </ul>
 </li>
@@ -555,6 +555,7 @@
 <li class="toctree-l2"><a class="reference internal" href="metadata_xls.html#adding-metadata-questions-in-xlsform">Adding metadata questions in XLSForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="metadata_xls.html#available-metadata-questions-in-xlsform">Available metadata questions in XLSForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="metadata_xls.html#configuring-metadata-in-kobocollect">Configuring metadata in KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata_xls.html#configuring-audio-quality-of-background-audio-recordings">Configuring audio quality of background audio recordings</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pulling data from an external CSV</a><ul>
@@ -611,47 +612,38 @@
 </a><a class="toc-card" href="collecting-data.html"><div class="toctree-wrapper compound" id="home-page-toc-collecting-data">
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data-collection-tools.html#a-quick-rundown-on-the-differences-between-the-two-options">A quick rundown on the differences between the two options</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-collection-tools.html#data-collection-methods">Data collection methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-collection-tools.html#preparing-for-data-collection">Preparing for data collection</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="enketo.html#what-ecosystem-does-enketo-use">What Ecosystem does Enketo use?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="enketo.html#what-are-the-general-features">What are the general features?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="enketo.html#how-can-i-access-enketo-when-on-kobotoolbox">How can I access Enketo when on KoboToolbox?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="enketo.html#how-do-i-troubleshoot-enketo">How do I troubleshoot Enketo?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#deploying-a-form-for-data-collection">Deploying a form for data collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#updating-forms-after-changes-have-been-redeployed">Updating forms after changes have been redeployed</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#best-practices-for-deploying-and-redeploying-forms">Best practices for deploying and redeploying forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#redeploying-your-form">Redeploying your form</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#using-kobocollect">Using KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#sharing-web-forms-for-data-collection">Sharing web forms for data collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#collecting-data-with-web-forms">Collecting data with web forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#customizing-web-form-links">Customizing web form links</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#enabling-background-audio-recording-in-the-formbuilder">Enabling background audio recording in the Formbuilder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#implementing-background-audio-recording-in-xlsform">Implementing background audio recording in XLSForm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#configuring-audio-quality">Configuring audio quality</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#data-collection-with-background-audio-recordings">Data collection with background audio recordings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#managing-background-audio-data">Managing background audio data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#troubleshooting">Troubleshooting</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#what-are-web-forms">What are web forms?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#why-do-i-need-web-forms-instead-of-kobocollect-android-app">Why do I need web forms instead of KoboCollect Android App?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#how-do-i-use-web-forms-for-data-collection">How do I use web forms for data collection?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#how-do-i-save-an-offline-web-form-on-a-mobile-device">How do I save an offline web form on a mobile device?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#forwarding-upon-submission">Forwarding upon submission</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#troubleshooting-web-forms">Troubleshooting Web Forms</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data-offline.html#what-do-i-do-if-i-have-no-access-to-the-internet">What do I do if I have NO access to the internet?</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_on_android_latest.html#choosing-a-device-for-kobocollect">Choosing a device for KoboCollect</a></li>
 <li class="toctree-l2"><a class="reference internal" href="kobocollect_on_android_latest.html#installing-the-kobocollect-app">Installing the KoboCollect app</a></li>
-<li class="toctree-l2"><a class="reference internal" href="kobocollect_on_android_latest.html#setting-up-the-kobocollect-app">Setting up the KoboCollect app</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_on_android_latest.html#id1">Setting up the KoboCollect app</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#downloading-forms">Downloading forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#collecting-data">Collecting data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#editing-drafts">Editing drafts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#sending-finalized-forms-to-the-server">Sending finalized forms to the server</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#deleting-saved-forms-and-blank-forms">Deleting saved forms and blank forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a><ul>
@@ -665,37 +657,21 @@
 <li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#access-control">Access control</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#downloading-forms">Downloading forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#collecting-data">Collecting data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#editing-drafts">Editing drafts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#sending-finalized-forms-to-the-server">Sending finalized forms to the server</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#deleting-saved-forms-and-blank-forms">Deleting saved forms and blank forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#troubleshooting">Troubleshooting</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="transferring_forms.html#troubleshooting">Troubleshooting:</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="devices_for_data_collection.html#phones-vs-tablets">Phones vs. Tablets</a></li>
-<li class="toctree-l2"><a class="reference internal" href="devices_for_data_collection.html#pricing">Pricing</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting_webforms.html#known-issues-with-offline-forms-on-ios">Known issues with offline forms on iOS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="troubleshooting_webforms.html#data-loss">Data loss</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#creating-the-different-types-of-gps-questions">Creating the Different Types of GPS Questions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#collecting-data-using-the-gps-questions">Collecting Data Using the GPS Questions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#collecting-data-using-enketo-webforms">Collecting Data Using Enketo Webforms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#collecting-data-using-kobocollect">Collecting Data Using KoboCollect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#accuracy-of-the-collected-gps-coordinates">Accuracy of the Collected GPS Coordinates</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#setting-up-your-form-to-collect-gps-data">Setting up your form to collect GPS data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#collecting-gps-data">Collecting GPS data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#improving-gps-accuracy">Improving GPS accuracy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#advanced-form-logic-with-gps-data">Advanced form logic with GPS data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#managing-gps-data">Managing GPS data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="collect_gps.html#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#question-types-for-qualitative-data-collection">Question types for qualitative data collection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#collecting-qualitative-data-with-kobocollect-vs-web-forms">Collecting qualitative data with KoboCollect vs web forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#managing-and-analyzing-qualitative-data">Managing and analyzing qualitative data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a><ul>
@@ -950,6 +926,10 @@
 <li class="toctree-l2"><a class="reference internal" href="manual_upload.html#exporting-data-from-web-forms">Exporting data from Web Forms</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manual_upload.html#exporting-data-from-kobocollect">Exporting data from KoboCollect</a></li>
 <li class="toctree-l2"><a class="reference internal" href="manual_upload.html#importing-a-data-zip-file">Importing a data ZIP file</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="transferring_forms.html#troubleshooting">Troubleshooting:</a></li>
 </ul>
 </li>
 </ul>

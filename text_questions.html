@@ -108,7 +108,7 @@
           
   <section id="text-questions-in-kobotoolbox">
 <h1>Text questions in KoboToolbox<a class="headerlink" href="#text-questions-in-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/text_questions.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/text_questions.md" class="reference">23 Apr 2026</a></p>
 <p>The <strong>Text</strong> question type in KoboToolbox allows respondents to enter open-ended responses in their own words. It is best used when the range of possible answers is not predefined, such as when collecting names, descriptions, explanations, or general feedback.</p>
 <p>This article explains how to add a text question in the Formbuilder, describes the available appearance options, and outlines key considerations to keep in mind when using this question type.</p>
 <p class="note">
@@ -129,10 +129,10 @@
 <h2>Appearances of text questions<a class="headerlink" href="#appearances-of-text-questions" title="Link to this heading">¶</a></h2>
 <p>By default, text questions appear as a single-line text box.</p>
 <ul class="simple">
-<li><p>In <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a>, the text box remains the same size regardless of how much text is entered. It does not support line breaks.</p></li>
-<li><p>In <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a>, the text box expands as you type and supports line breaks, allowing respondents to enter paragraphs.</p></li>
+<li><p>In <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a>, the text box remains the same size regardless of how much text is entered. It does not support line breaks.</p></li>
+<li><p>In <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a>, the text box expands as you type and supports line breaks, allowing respondents to enter paragraphs.</p></li>
 </ul>
-<p><img alt="Enketo vs KoboCollect text question appearance" src="_images/table9.png" /></p>
+<p><img alt="Web forms vs KoboCollect text question appearance" src="_images/table9.png" /></p>
 <section id="advanced-appearances">
 <h3>Advanced appearances<a class="headerlink" href="#advanced-appearances" title="Link to this heading">¶</a></h3>
 <p>You can apply advanced appearances to text questions to modify how they display and behave in your form.</p>
@@ -157,15 +157,15 @@
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">multiline</span></code></p></td>
 <td class="text-left"><p>Displays a larger text box for longer text responses.<br><img alt="Multiline appearance" src="_images/multiline.png" /></p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">numbers</span></code></p></td>
 <td class="text-left"><p>Displays a numeric keyboard instead of a text keyboard (e.g., to collect phone numbers).<br><img alt="Number appearance" src="_images/numbers.png" /></p></td>
 <td class="text-left"><p>KoboCollect only</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">url</span></code> (other)</p></td>
-<td class="text-left"><p>Displays a clickable URL (Enketo) or <strong>Open URL</strong> button (KoboCollect) under the question text and makes the question read-only. Enter the URL in the question’s <strong>Default Response</strong> setting.<br><img alt="URL appearance" src="_images/url.png" /></p></td>
-<td class="text-left"><p>Enketo and KoboCollect</p></td>
+<td class="text-left"><p>Displays a clickable URL (web forms) or <strong>Open URL</strong> button (KoboCollect) under the question text and makes the question read-only. Enter the URL in the question’s <strong>Default Response</strong> setting.<br><img alt="URL appearance" src="_images/url.png" /></p></td>
+<td class="text-left"><p>Web forms and KoboCollect</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">masked</span></code> (other)</p></td>
 <td class="text-left"><p>Masks text entered by the respondent (e.g., a password or confidential information).<br><img alt="Masked appearance" src="_images/masked.png" /></p></td>
@@ -274,7 +274,7 @@
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -320,20 +320,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -390,6 +384,7 @@
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

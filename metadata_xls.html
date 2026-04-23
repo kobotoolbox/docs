@@ -108,8 +108,8 @@
           
   <section id="form-metadata-in-xlsform">
 <h1>Form metadata in XLSForm<a class="headerlink" href="#form-metadata-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/451366bcabcf8b2f2bfe4b74f7eb1f5526a1daff/source/metadata_xls.md" class="reference">13 Apr 2026</a></p>
-<p>Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/metadata_xls.md" class="reference">23 Apr 2026</a></p>
+<p>Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. You can also record audio in the background during data collection.</p>
 <p>Metadata questions are hidden from respondents, and metadata fields cannot be edited in the KoboToolbox data table. This background information supports auditing, helps maintain data integrity, and can be used in data analysis.</p>
 <p class="note">
 <strong>Note:</strong> This article focuses on adding metadata questions in <a href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>. To learn about adding metadata questions in the KoboToolbox Formbuilder, see <a href="https://support.kobotoolbox.org/form_meta.html">Adding form metadata in the Formbuilder</a>.
@@ -166,16 +166,16 @@
 <td class="text-left"><p>Records the date of the submission.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">deviceid</span></code></p></td>
-<td class="text-left"><p>Records the unique identification of the device or browser used to collect data. The <code>deviceid</code> is automatically generated and cannot be modified by users.<br><br><strong>Note:</strong> In KoboCollect, the <code>deviceid</code> is updated whenever the app is reinstalled on a device. In Enketo, the <code>deviceid</code> resets any time a new browser window is used.</p></td>
+<td class="text-left"><p>Records the unique identification of the device or browser used to collect data. The <code>deviceid</code> is automatically generated and cannot be modified by users.<br><br><strong>Note:</strong> In KoboCollect, the <code>deviceid</code> is updated whenever the app is reinstalled on a device. When using web forms, the <code>deviceid</code> resets any time a new browser window is used.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">username</span></code></p></td>
-<td class="text-left"><p>In KoboCollect, records the username saved in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. If no username is set, it records the one used to sign in to the server.<br>In Enketo, records the account username only if <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.<br><br><strong>Note:</strong> Because the <code class="docutils literal notranslate"><span class="pre">username</span></code> field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the automatically generated <code class="docutils literal notranslate"><span class="pre">_submitted_by</span></code> field.</p></td>
+<td class="text-left"><p>In KoboCollect, records the username saved in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. If no username is set, it records the one used to sign in to the server.<br>When using web forms, the account username is recorded only if <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.<br><br><strong>Note:</strong> Because the <code class="docutils literal notranslate"><span class="pre">username</span></code> field can be edited in KoboCollect, it may not match the account used to authenticate to the server. To see which account submitted the data, refer to the automatically generated <code class="docutils literal notranslate"><span class="pre">_submitted_by</span></code> field.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">phonenumber</span></code></p></td>
-<td class="text-left"><p>Records the phone number stored in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in Enketo.</p></td>
+<td class="text-left"><p>Records the phone number stored in the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in web forms.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">email</span></code></p></td>
-<td class="text-left"><p>Records the email address from the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in Enketo.</p></td>
+<td class="text-left"><p>Records the email address from the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in web forms.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">start-geopoint</span></code></p></td>
 <td class="text-left"><p>Captures GPS coordinates when the form is first opened. Can be used to warm up the device GPS so that later GPS questions can reach accurate readings more quickly.</p></td>
@@ -184,10 +184,10 @@
 <td class="text-left"><p>Captures GPS coordinates when a specific question is answered. The question must be specified in the <code>trigger</code> column of the <code>background-geopoint</code> question.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">background-audio</span></code></p></td>
-<td class="text-left"><p>Records audio in the background while a form is open. To learn more about this feature, see <a href="https://support.kobotoolbox.org/recording-interviews.html">Recording interviews with background audio recording</a>.</p></td>
+<td class="text-left"><p>Records audio in the background while a form is open. To learn more about this feature, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audit</span></code></p></td>
-<td class="text-left"><p>Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in Enketo.<br><br>To learn more about using the audit question for audit logs and configuring settings, see <a href="https://docs.getodk.org/form-audit-log/">Form Audit Log (ODK)</a>.</p></td>
+<td class="text-left"><p>Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in web forms.<br><br>To learn more about using the audit question for audit logs and configuring settings, see <a href="https://docs.getodk.org/form-audit-log/">Form Audit Log (ODK)</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -206,6 +206,79 @@
 <li><p>Scroll down to <strong>User and device identity</strong>, then <strong>Form metadata</strong>.</p></li>
 <li><p>Enter the username, phone number, and/or email address. You can also view the current device ID.</p></li>
 </ol>
+</section>
+<section id="configuring-audio-quality-of-background-audio-recordings">
+<h2>Configuring audio quality of background audio recordings<a class="headerlink" href="#configuring-audio-quality-of-background-audio-recordings" title="Link to this heading">¶</a></h2>
+<p>When recording interviews in the background, audio quality affects the size of the file that is stored on the server. Users of the <a class="reference external" href="https://www.kobotoolbox.org/pricing/">Community Plan</a> are limited to 1GB of free file storage. Therefore, it is advisable to manage the file sizes of the audio files you collect by choosing an appropriate quality setting.</p>
+<p>To adjust the audio quality of your background audio recording:</p>
+<ol class="arabic simple">
+<li><p>Add a <code class="docutils literal notranslate"><span class="pre">parameters</span></code> column to your XLSForm</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">background-audio</span></code> row, enter one of the following:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">quality=normal</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">quality=low</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">quality=voice-only</span></code></p></li>
+</ul>
+</li>
+</ol>
+<p><strong>survey worksheet</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>type</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+<th class="head text-left"><p>parameters</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>background-audio</p></td>
+<td class="text-left"><p>recording</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>quality=normal</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>The table below provides an overview of audio quality settings and their corresponding file sizes.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>XLSForm parameter</p></th>
+<th class="head text-left"><p>Extension</p></th>
+<th class="head text-left"><p>Encoding</p></th>
+<th class="head text-left"><p>Bit rate</p></th>
+<th class="head text-left"><p>Sample rate</p></th>
+<th class="head text-left"><p>File size</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>quality=normal</p></td>
+<td class="text-left"><p>.m4a</p></td>
+<td class="text-left"><p>AAC</p></td>
+<td class="text-left"><p>64 kbps</p></td>
+<td class="text-left"><p>32 kHz</p></td>
+<td class="text-left"><p>~ 30 MB/hour</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>quality=low</p></td>
+<td class="text-left"><p>.m4a</p></td>
+<td class="text-left"><p>AAC</p></td>
+<td class="text-left"><p>24 kbps</p></td>
+<td class="text-left"><p>32 kHz</p></td>
+<td class="text-left"><p>~ 11 MB/hour</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>quality=voice-only</p></td>
+<td class="text-left"><p>.amr</p></td>
+<td class="text-left"><p>AMR</p></td>
+<td class="text-left"><p>12.2 kbps</p></td>
+<td class="text-left"><p>8 kHz</p></td>
+<td class="text-left"><p>~ 5 MB/hour</p></td>
+</tr>
+</tbody>
+</table>
+<p>The default <code class="docutils literal notranslate"><span class="pre">voice-only</span></code> setting is suitable for quiet interview settings. For recordings with multiple speakers or some background noise, the <code class="docutils literal notranslate"><span class="pre">low</span></code> quality setting is more appropriate. The <code class="docutils literal notranslate"><span class="pre">normal</span></code> setting offers the highest audio quality but uses the most storage space.</p>
 </section>
 </section>
 
@@ -268,7 +341,7 @@
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -307,6 +380,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#adding-metadata-questions-in-xlsform">Adding metadata questions in XLSForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#available-metadata-questions-in-xlsform">Available metadata questions in XLSForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#configuring-metadata-in-kobocollect">Configuring metadata in KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuring-audio-quality-of-background-audio-recordings">Configuring audio quality of background audio recordings</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pulling data from an external CSV</a></li>
@@ -319,20 +393,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
@@ -389,6 +457,7 @@
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>

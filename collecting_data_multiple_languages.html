@@ -26,7 +26,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Overview of the KoboToolbox interface" href="kobotoolbox_interface.html" />
-    <link rel="prev" title="Collecting GPS data" href="collect_gps.html" />
+    <link rel="prev" title="Collecting qualitative data with KoboToolbox" href="recording-interviews.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -108,10 +108,10 @@
           
   <section id="collecting-data-in-multiple-languages">
 <h1>Collecting data in multiple languages<a class="headerlink" href="#collecting-data-in-multiple-languages" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/33f7fa86be04cccf5c4b8a3b6cc81d34959314ce/source/collecting_data_multiple_languages.md" class="reference">2 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/collecting_data_multiple_languages.md" class="reference">23 Apr 2026</a></p>
 <p>KoboToolbox supports collecting data in <strong>as many languages as you need</strong> within a single form, including languages that use non-Latin scripts. You can design your form with multiple translations, allow respondents to switch to their preferred language during data collection, and later view or export the data in any form language.</p>
-<p>Adding translations to a single form removes the need for creating separate forms for each language, making it easier to manage multilingual projects and <strong>keep your data consistent across languages.</strong> Both <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/enketo.html">Enketo web forms</a> support form translations.</p>
-<p>This article provides an overview of the different options for preparing forms with translations, how to collect data in multiple languages (including setting up language-specific links for Enketo web forms), and how to manage and export multilingual data in KoboToolbox.</p>
+<p>Adding translations to a single form removes the need for creating separate forms for each language, making it easier to manage multilingual projects and <strong>keep your data consistent across languages.</strong> Both <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a> and <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a> support form translations.</p>
+<p>This article provides an overview of the different options for preparing forms with translations, how to collect data in multiple languages (including setting up language-specific links for web forms), and how to manage and export multilingual data in KoboToolbox.</p>
 <section id="setting-up-your-forms-with-translations">
 <h2>Setting up your forms with translations<a class="headerlink" href="#setting-up-your-forms-with-translations" title="Link to this heading">¶</a></h2>
 <p>You can add translations to your form <strong>directly in the KoboToolbox interface</strong> or by using <strong>XLSForm.</strong> KoboToolbox offers an intuitive interface that requires no technical expertise, and allows you to easily add multiple translations to your forms. This approach is useful when working with a small number of questions or when you want to make quick adjustments.</p>
@@ -131,7 +131,7 @@
 <h2>Collecting data in multiple languages<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
 <iframe src="https://www.youtube.com/embed/MWLlWtXYHig?si=nGuOVpt0tVR_ip7l" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>When your form contains translations, respondents can choose their preferred language during data collection and switch languages at any time before submitting their responses.</p>
-<p>To change the form language in Enketo web forms:</p>
+<p>To change the form language in web forms:</p>
 <ol class="arabic simple">
 <li><p>Open the form in your browser.</p></li>
 <li><p>In the top right corner of the form, a <strong>Choose Language</strong> dropdown menu is displayed (only in forms with multiple languages).</p></li>
@@ -157,7 +157,7 @@
 <li><p>Share the language-specific URL with respondents.</p></li>
 </ol>
 <p class="note">
-  <strong>Note:</strong> This overrides both the browser language setting and the form’s default language. This functionality applies only to Enketo web forms, not KoboCollect.
+  <strong>Note:</strong> This overrides both the browser language setting and the form’s default language. This functionality applies only to web forms, not KoboCollect.
 </p>
 </section>
 </section>
@@ -275,7 +275,7 @@
 <li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling Enketo web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styling web forms in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
 <li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
@@ -321,20 +321,14 @@
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Overview on Data Collection Tools</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">What Are Enketo Web Forms?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying a Form to Start a New Data Collection Project</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recording interviews with background audio recording</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting Data through Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Collecting Data Offline</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Getting started with KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Data collection using KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Recommended Devices for Data Collection</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Troubleshooting KoboCollect Android Application</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Troubleshooting Enketo Web Forms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecting qualitative data with KoboToolbox</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting data in multiple languages</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#setting-up-your-forms-with-translations">Setting up your forms with translations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id1">Collecting data in multiple languages</a></li>
@@ -396,6 +390,7 @@
 <li class="toctree-l1"><a class="reference internal" href="add_logo.html">Adding a Custom Logo</a></li>
 <li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports Stuck in Pending State</a></li>
 <li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually Uploading Submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferring forms and data manually from one android device to another</a></li>
 </ul>
 
 </div>
