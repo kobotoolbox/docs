@@ -19,11 +19,11 @@ When your account exceeds its storage or submission limit, you cannot **receive 
 
 If you or another user tries to submit data to one of your projects while your account is over its limits, an error message will be displayed.
 
+If users are **collecting data offline** with [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html), they will see an error message when they reconnect to the internet and try to submit. Their submissions will stay saved locally on the device and can be uploaded once the account is back within its limits.
+
 <p class="note">
   <strong>Note:</strong> These restrictions apply <strong>only to projects you own</strong>. Restrictions on your account will not affect projects that are shared with you by other users.
   </p>
-
-If using [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html) for offline data collection, users may see an error when they try to submit while the account is over its limits. The submissions will remain stored locally on the device and can be uploaded once the account is back within its limits.
 
 If your account is over its limits, you will still be able to:
 - Sign in to your account.
@@ -66,6 +66,10 @@ To manage your submission quota, you can:
 - [Upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher or unlimited submission quota.
 - [Contact](https://www.kobotoolbox.org/contact/) our support team to purchase an **unlimited submissions add-on.**
 - Delay data collection until your submission quota renews at the start of the next billing cycle.
+
+<p class="note">
+  <strong>Note:</strong> If you choose to delay data collection until your submission quota renews, consider <a href="https://support.kobotoolbox.org/managing_projects.html#archiving-projects">archiving</a> the project until then. This can help prevent users from entering data and encountering submission errors before the quota resets.
+  </p>
 
 ### Managing transcription and translation limits
 
