@@ -1,5 +1,5 @@
 # Data collection with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/data-collection-tools.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a42f7ff93a1567cc2ac66a749d2a7d5969cfa45a/source/data-collection-tools.md" class="reference">23 Apr 2026</a>
 
 KoboToolbox supports two primary ways to collect data: **web forms**, which run in a browser, and **KoboCollect**, which is the Android app for mobile data collection. Both methods support offline data collection. 
 
