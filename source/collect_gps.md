@@ -1,5 +1,5 @@
 # Collecting GPS data with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/collect_gps.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/75a01d18e539cff0694a03ac2ffe032abb6a14d5/source/collect_gps.md" class="reference">23 Apr 2026</a>
 
 KoboToolbox allows you to collect GPS data in your forms, including when working offline. GPS questions can capture **a single location, a route, or an area** during data collection. This is useful for tasks such as mapping infrastructure, tracking field visits, monitoring environmental sites, or recording service locations. GPS data can be collected using both [web forms](https://support.kobotoolbox.org/data_through_webforms.html) and [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html).
 
