@@ -40,7 +40,7 @@ If someone has already started entering data, they can still refresh. KoboToolbo
 
 ### KoboCollect
 
-When using KoboCollect, users must download the latest version of the form to receive any updates. This requires an internet connection. 
+When using **KoboCollect**, users must download the latest version of the form to receive any updates. This requires an internet connection. 
 
 Retrieving the latest version of a form can be [done manually](https://support.kobotoolbox.org/data_collection_kobocollect.html#downloading-forms) whenever the form changes, or it can be configured to happen automatically at a set frequency through the [form update settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) in KoboCollect.
 
@@ -54,7 +54,7 @@ Retrieving the latest version of a form can be [done manually](https://support.k
 The following steps are recommended before launching data collection:
 
 1. **Test the form preview before deployment.** Only deploy a new form, or redeploy changes to an existing form, after testing it thoroughly in the form preview. This helps prevent faulty forms from going live.
-2. **Test the live deployed form.** After deployment, open the form and submit test data to confirm that the data appears in the data table as intended.
+2. **Test the live deployed form.** After deployment, open the form and submit test data to confirm that submissions work properly and the data appears in the data table as intended.
 3. **If relevant, test the form in KoboCollect.** Always test the same data collection method(s) that will be used for actual data collection, whether that is web forms, KoboCollect, or both. This is especially important for KoboCollect, since it cannot be fully tested until the form has been deployed.
 4. **Share your form using View only mode for external testing.** Once a form has been deployed, you can also share it with others for testing by using the **View only** [web form mode](https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes).
 
@@ -67,7 +67,7 @@ If you make changes to a form after data collection has already started, those c
 Changes that can affect your data structure include:
 
 - **Changing a question’s [data column name](https://support.kobotoolbox.org/glossary.html#data-column-name)**: KoboToolbox will treat it as a new variable and create a new column in the data table.
-- **Changing a question type while keeping the same data column name**: This can create inconsistent data in the same column and lead to errors (e.g., in the DATA > Reports view).
+- **Changing a question type while keeping the same data column name**: This can create inconsistent data in the same column and lead to errors (e.g., in the **DATA > Reports** view).
 - **Moving questions into or out of groups**: KoboToolbox will treat these questions as new variables and create new columns in the data table.
 - **Removing choices from a choice list**: Previous submissions may still contain those choice values, but they may no longer have an associated label in the form.
 - **Adding new choices to a Select one or Select many question**: Make sure each new choice has a unique [XML value](https://support.kobotoolbox.org/glossary.html#xml-value) within a given choice list.
