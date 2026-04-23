@@ -1,5 +1,5 @@
 # Using regular expressions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/67623a67adb4c9ece963cb86a2e4c4b37e1cac7b/source/restrict_responses.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/633b194e0ec1e45181a7481947819c8318d8cc92/source/restrict_responses.md" class="reference">22 Apr 2026</a>
 
 A **regular expression**, or regex, is a search pattern used to match specific characters or character ranges within text. Regular expressions are commonly used to validate, search, extract, or restrict text input.
 
@@ -48,7 +48,7 @@ The following tables describe commonly used regex elements.
 | <code>\W</code> | Matches any non-word character |
 | <code>\s</code> | Matches a space or tab |
 | <code>\b</code> | Matches a word boundary |
-| <code>\\.</code> | Matches a literal dot (<code>.</code>) |
+| `\.` | Matches a literal dot (<code>.</code>) |
 | <code>\\@</code> | Matches a literal <code>@</code> |
 | <code>\\$</code> | Matches a literal <code>$</code> |
 | `\\` | Matches a literal backslash (<code>\\</code>) |
@@ -82,6 +82,7 @@ The following examples can be used as [constraints](https://support.kobotoolbox.
 | <code>regex(., '^\d{2}\\.\d{3}$')</code> | Limit input to number formatted as 12.345 |
 | <code>regex(., '^(\d{10}&#124;\d{13}&#124;\d{17})$')</code> | Limit input to 10, 13, or 17 digits |
 | <code>regex(., '^(12&#124;345)$')</code> | Input must be 12 or 345 |
+| `regex(., '^[0-9+]{7,15}$')` | Limit input to a phone number (including an optional + sign) |
 
 ### Common regex expressions with letters
 

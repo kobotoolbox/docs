@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/33f7fa86be04cccf5c4b8a3b6cc81d34959314ce/source/glossary.md" class="reference">2 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9167ae1d1317f8f382d46133e977384bee3d5efb/source/glossary.md" class="reference">21 Apr 2026</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
@@ -86,6 +86,16 @@ A feature that continuously records audio during an interview while the form is 
 
 <p class="note">
   For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
+</p>
+
+---
+
+## Billing cycle
+
+The period of time before your KoboToolbox plan renews and your usage resets. For **Community Plan** users, the billing cycle is one month and starts on the date the account was created. For paid plans, the billing cycle depends on the subscription type: monthly plans renew every month, and yearly plans renew every year. You can find your account creation date and, if applicable, your plan renewal date in **Account settings > Usage**.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/account_settings.html#usage">Account settings</a>.
 </p>
 
 ---
@@ -414,11 +424,13 @@ A feature that controls how templates in the library can be edited after they ar
 
 ## Metadata
 
-Information automatically added to a submission that provides context about how or when the data was collected, such as device ID, start and end time, or location.
+Form metadata is optional information added to a submission that provides context about how or when the data was collected, such as device ID, start and end time, or location. Users must enable these fields in the form for them to be collected.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html">Adding form metadata in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/metadata_xls.html">Form metadata in XLSForm</a>.
 </p>
+
+**Related term(s):** [System-generated submission fields](https://support.kobotoolbox.org/glossary.html#system-generated-submission-fields)
 
 ---
 
@@ -626,6 +638,18 @@ A data export method that updates automatically as new submissions arrive, allow
 </p>
 
 **Related term(s):** [API](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api)
+
+---
+
+## System-generated submission fields
+
+Fields that KoboToolbox automatically creates for each submission, such as `_id`, `_uuid`, `_index`, `_submission_time`, `_submitted_by`, and `rootUuid`. These fields help identify records and track submission details, appear automatically in the data table and exports, and cannot be edited by users.
+
+<p class="note">
+    For more information, see <a href="https://support.kobotoolbox.org/viewing_validating_data.html#system-generated-submission-fields">Viewing and validating your data</a>.
+</p>
+
+**Related term(s):** [Metadata](https://support.kobotoolbox.org/glossary.html#metadata)
 
 ---
 

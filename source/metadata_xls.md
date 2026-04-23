@@ -1,5 +1,5 @@
 # Form metadata in XLSForm 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/metadata_xls.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/451366bcabcf8b2f2bfe4b74f7eb1f5526a1daff/source/metadata_xls.md" class="reference">13 Apr 2026</a>
 
 Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. You can also record audio in the background during data collection.
 
@@ -42,6 +42,12 @@ Available metadata questions in XLSForm include:
 | `background-geopoint` | Captures GPS coordinates when a specific question is answered. The question must be specified in the <code>trigger</code> column of the <code>background-geopoint</code> question. |
 | `background-audio` | Records audio in the background while a form is open. To learn more about this feature, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>. | 
 | `audit` | Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in web forms.<br><br>To learn more about using the audit question for audit logs and configuring settings, see <a href="https://docs.getodk.org/form-audit-log/">Form Audit Log (ODK)</a>. |
+
+<p class="note">
+<strong>Note:</strong>
+    Form metadata is different from <a href="https://support.kobotoolbox.org/viewing_validating_data.html#system-generated-submission-fields">system-generated submission fields</a>. Form metadata must be enabled during form development to be collected, while system-generated submission fields are added automatically for every submission.
+</p>
+
 
 ## Configuring metadata in KoboCollect 
 
