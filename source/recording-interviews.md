@@ -109,7 +109,7 @@ If you edit a form that includes background audio from the KoboToolbox platform,
 
 <details>
   <summary><strong>Forms with background audio recording saved as drafts</strong></summary>
-If a form with background audio recording is saved as a draft in <strong>Enketo</strong>, only the initial recording will be retained. The recording will not resume or be replaced when the draft form is reopened. <br><br>
+If a form with background audio recording is saved as a draft in <strong>web forms</strong>, only the initial recording will be retained. The recording will not resume or be replaced when the draft form is reopened. <br><br>
 If a form with background audio recording is saved as a draft in <strong>KoboCollect</strong>, recording will resume when the draft form is reopened. Both recordings will be stored together in a single file.
 </details>
 
