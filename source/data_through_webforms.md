@@ -188,7 +188,8 @@ You can combine multiple parameters in the same link by separating them with <co
 
 <details>
 <summary><strong>The form does not work offline</strong></summary>
-Before going offline, make sure the form has been fully opened and cached in the browser. Check the offline availability indicator in the form before starting data collection without internet access.<br><br>
+Before going offline, make sure the form has been fully opened and cached in the browser. Check the offline availability indicator in the form before starting data collection without internet access.
+    
 ![Signal bar icon](images/data_through_webforms/signal_bars.png)
 </details>
 
@@ -203,7 +204,8 @@ If your device restarts, the browser refreshes, or the form closes while you are
 
 <details>
 <summary><strong>Submissions are not reaching the server</strong></summary>
-If the form was used offline, submissions may still be waiting in the queue. Check the queue counter and make sure the device has reconnected to the internet. Web forms upload queued submissions automatically when a connection is available.<br><br>
+If the form was used offline, submissions may still be waiting in the queue. Check the queue counter and make sure the device has reconnected to the internet. Web forms upload queued submissions automatically when a connection is available.
+    
 ![Queue counter icon](images/data_through_webforms/queue.png)
 </details>
 
