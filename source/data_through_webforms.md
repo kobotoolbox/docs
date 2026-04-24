@@ -1,5 +1,5 @@
 # Collecting data using web forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/156822c9e9d3b13dd859337bfab7243b057ec109/source/data_through_webforms.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3b04b204bede7271d0ebfc28e4a55d536f3602e3/source/data_through_webforms.md" class="reference">24 Apr 2026</a>
 
 KoboToolbox web forms let you **collect data directly in a web browser**, without installing an app. They are browser-based versions of your form that you can use to preview and test your questionnaire or collect live data on phones, tablets, and computers.
 
