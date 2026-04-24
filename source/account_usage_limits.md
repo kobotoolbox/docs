@@ -15,7 +15,7 @@ If your account exceeds its usage limits, certain features will be temporarily u
 
 ## Account restrictions
 
-When your account exceeds its storage or submission limit, you cannot **receive new submissions, modify submissions,** or **transfer projects** to other users. 
+When your account exceeds its storage or submission limit, you cannot **receive new submissions, edit submissions,** or **transfer projects** to other users. 
 
 If you or another user tries to submit data to one of your projects while your account is over its limits, an error message will be displayed.
 
@@ -29,7 +29,7 @@ If your account is over its limits, you will still be able to:
 - Sign in to your account.
 - Access all existing projects and submissions.
 - View, download, and export previously collected data.
-- Submit or modify data in projects other users have shared with you.
+- Submit or edit data in projects other users have shared with you.
 
 ## Restoring full account access
 
@@ -38,7 +38,7 @@ If your account is restricted because you have reached a usage limit, you still 
 | Limit reached | What happens | How to restore access |
 | :--- | :--- | :--- |
 | Storage | Your account cannot receive new submissions or transfer projects until storage usage is reduced or storage quota is increased. | Delete media attachments, purchase a File Storage add-on, or upgrade to a plan with more storage. |
-| Submissions | Your projects cannot accept new submissions until the quota resets or is increased. | Wait until the next billing cycle, upgrade to a plan with a higher or unlimited submission quota, or purchase an Unlimited Submissions add-on. |
+| Submissions | Your projects cannot accept new submissions until the quota resets or is increased. | Wait until the next billing cycle, upgrade to a plan with a higher submission quota, or contact our team to purchase an Unlimited Submissions add-on. |
 | Transcription and translation | Automatic transcription and translation are temporarily disabled until the quota resets or is increased. | Wait until the next billing cycle, purchase an NLP Package add-on, or upgrade to a plan with a higher quota. |
 
 ### Managing storage limits
@@ -55,7 +55,7 @@ To manage your storage usage, you can:
 You can also help prevent account restrictions by reducing the size of files submitted through your forms, for example by setting [upload size limits](https://support.kobotoolbox.org/photo_audio_video_file.html#lowering-image-sizes) or encouraging the use of external apps to [compress images](https://support.kobotoolbox.org/lower_file_size.html) before submission.
 
 <p class="note">
-  <strong>Note:</strong> If your account stays over the storage limit for <strong>more than 30 days</strong>, KoboToolbox will begin deleting media attachments (not submissions), starting with the oldest files. To avoid losing files, download any important media or upgrade your plan before this deadline.
+  <strong>Note:</strong> If your account stays over the storage limit for <strong>more than 60 days</strong>, KoboToolbox will begin deleting media attachments (not submissions), starting with the oldest files. To avoid losing files, download any important media or upgrade your plan before this deadline.
 </p>
 
 ### Managing submission limits
