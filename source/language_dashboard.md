@@ -28,7 +28,7 @@ To set the default language:
 
 1. Create your form in the default language. 
 2. Once your form has been created, go to the **FORM** page of your project.
-3. Under the **DEPLOY** or **REDEPLOY** button, click <i class="k-icon-language"></i> **Manage translations.**
+3. Under the **DEPLOY** or **REDEPLOY** button, click <i class="k-icon-language"></i> **Manage**.
 4. Add the language name (e.g., “English”) and language code (e.g., “en”) for your default language.
 
 ![Manage languages](images/language_dashboard/manage_languages.png)
@@ -41,7 +41,7 @@ To set the default language:
 
 Once you have set your default language, you can add more languages and translate your form text:
 
-1. In the <i class="k-icon-language"></i> **Manage translations** window, click **Add language.**
+1. In the <i class="k-icon-language"></i> **Manage Languages** window, click **Add language.**
 2. Enter the language name and code, then click **Add.**
 3. Next to the language you added, click <i class="k-icon-language-settings"></i> **Update translations.**
     - A table will appear with all translatable elements in your form, including question labels, group labels, hints, guidance hints, constraint messages, media files, and choice labels.
@@ -60,7 +60,7 @@ You can return to this window at any time to update existing translations or add
 
 To change the form’s default language:
 
-1. On the **FORM** page, click <i class="k-icon-language"></i> **Manage translations**.
+1. On the **FORM** page, click <i class="k-icon-language"></i> **Manage**.
 2. Click <i class="k-icon-language-default"></i> **Make default** next to the language you want to set as the default.
 
 ![Change default language](images/language_dashboard/change_default.png)
@@ -75,7 +75,7 @@ To fix this, two options are available:
 
 <ul>
 <li>Download your form as an <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">XLSForm</a>, review all elements, find the unassigned element, and <a href="https://support.kobotoolbox.org/language_xls.html">correct it</a>.</li>
-<li>Or, go to <i class="k-icon-language"></i> <strong>Manage translations</strong> and delete the unnamed language. This removes the problematic element from your form entirely (it cannot be recovered).</li> 
+<li>Or, go to <i class="k-icon-language"></i> <strong>Manage Languages</strong> and delete the unnamed language. This removes the problematic element from your form entirely (it cannot be recovered).</li> 
 </ul>
 
 To help prevent this issue, always redeploy your form after adding or updating languages.
