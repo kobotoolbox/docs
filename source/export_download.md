@@ -91,7 +91,7 @@ For more information about exporting and using repeat group data, see <a href="h
 
 <details>
     <summary><strong>Some data not being exported</strong></summary>
-    If some of your data is not being exported, check the <a href="https://support.kobotoolbox.org/advanced_export.html">advanced options</a>. For example, ensure that data from all versions of your form are selected for export.
+    If some of your data is not being exported, check the <a href="https://support.kobotoolbox.org/advanced_export.html">advanced options</a>. For example, make sure all form versions are selected for export, and that all questions you want to include have been selected.
 </details>
 
 <br>
@@ -99,6 +99,8 @@ For more information about exporting and using repeat group data, see <a href="h
 <details>
     <summary><strong>Downloading data from different versions</strong></summary>
     When downloading data that includes multiple form versions, you may encounter changes in the format of your data files. 
+    <br><br>
+For more information on expected changes to data structure when working with different versions of a form, see <a href="https://support.kobotoolbox.org/deploy_form_new_project.html#important-considerations-when-redeploying-a-form">Important considerations when redeploying a form</a>.
 </details>
 
 <br>
