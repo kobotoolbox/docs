@@ -106,7 +106,7 @@ The final step in linking your external CSV file to your form is uploading the f
 
 <details>
   <summary><strong>Slow form loading with large files</strong></summary>
-  If you are using very large CSV files, you may experience slow form loading in KoboCollect. To resolve this, we recommend using the <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">trigger</a> column to pull data from the external file once, rather than recurrently in the background.
+    If you are using very large CSV files, you may experience slow form loading in KoboCollect or web forms. To improve performance, include only the data needed for the form and consider splitting one large form into multiple forms, each with its own CSV file. You can also split large CSV files into smaller files where possible, and/or use the <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">trigger</a> column to pull data only from the relevant file and only when needed.
 </details>
 
 <br>
