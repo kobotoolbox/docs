@@ -3,6 +3,7 @@
 
 1. [Editing and deleting your data](editing_deleting_data.md) (6 May 2026)
 1. [Using XLSForm with KoboToolbox](xlsform_with_kobotoolbox.md) (6 May 2026)
+1. [Exporting and downloading your data](export_download.md) (6 May 2026)
 1. [Question appearances in XLSForm](appearances_xls.md) (6 May 2026)
 1. [Introduction to KoboToolbox](welcome.md) (5 May 2026)
 1. [Adding translations in KoboToolbox](language_dashboard.md) (29 Apr 2026)
@@ -10,4 +11,3 @@
 1. [Collecting data in multiple languages](collecting_data_multiple_languages.md) (23 Apr 2026)
 1. [Selecting options from a map](select_from_map_xls.md) (23 Apr 2026)
 1. [Creating Unique Serial Numbers in Forms](unique_serial_numbers.md) (23 Apr 2026)
-1. [Date and time questions in KoboToolbox](date_time.md) (23 Apr 2026)

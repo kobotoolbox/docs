@@ -1,5 +1,5 @@
 # Exporting and downloading your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/451366bcabcf8b2f2bfe4b74f7eb1f5526a1daff/source/export_download.md" class="reference">13 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/43efdbb222e3213fa548509bb34819c5238f7e83/source/export_download.md" class="reference">6 May 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/bXzwvvnhj7U" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
