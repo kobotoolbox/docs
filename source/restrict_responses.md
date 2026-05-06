@@ -44,8 +44,8 @@ The following tables describe commonly used regex elements.
 |:---|:---|
 | <code>\d</code> | Matches any digit (same as [0-9]) |
 | <code>\D</code> | Matches any non-digit |
-| <code>\w</code> | Matches any word character (letters, digits, _) |
-| <code>\W</code> | Matches any non-word character |
+| <code>\w</code> | Matches any letter, number, or underscore (`_`) |
+| <code>\W</code> | Matches anything except letters, numbers, and underscores (`_`) |
 | <code>\s</code> | Matches a space or tab |
 | <code>\b</code> | Matches a word boundary |
 | `\.` | Matches a literal dot (<code>.</code>) |
@@ -82,7 +82,7 @@ The following examples can be used as [constraints](https://support.kobotoolbox.
 | <code>regex(., '^\d{2}\\.\d{3}$')</code> | Limit input to number formatted as 12.345 |
 | <code>regex(., '^(\d{10}&#124;\d{13}&#124;\d{17})$')</code> | Limit input to 10, 13, or 17 digits |
 | <code>regex(., '^(12&#124;345)$')</code> | Input must be 12 or 345 |
-| `regex(., '^[0-9+]{7,15}$')` | Limit input to a phone number (including an optional + sign) |
+| `regex(., '^[0-9+]{7,15}$')` | Limit input to a phone number (including an optional `+` sign) |
 
 ### Common regex expressions with letters
 
