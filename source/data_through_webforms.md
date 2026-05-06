@@ -212,8 +212,15 @@ If the form was used offline, submissions may still be waiting in the queue. Che
 <br>
 
 <details>
-<summary><strong>Respondents are asked to sign in </strong></summary>
+<summary><strong>Respondents are asked to sign in</strong></summary>
 Check whether the project is set to <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require authentication</a> for submissions. If it is, users must sign in with an account that has permission to add submissions, or you can disable the requirement in <strong>FORM > Collect data.</strong> 
+</details>
+
+<br>
+
+<details>
+<summary><strong>Switching accounts in web forms</strong></summary>
+If <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a> for submissions, web forms may keep you signed in with the account previously used for web forms in that browser. This can be confusing if the form is shared with a different account or if you need to submit as another user.<br><br>To switch accounts, click <strong>log out</strong> below the <strong>Submit</strong> button in the web form. Then, close the web form and open it again. You should then be prompted to sign in with the other account.<br><br>Note that web form sign-in is separate from the account you are signed in to on KoboToolbox in the same browser. If you are not sure which account you are currently signed in to from the web form interface, we recommend logging out and signing back in.
 </details>
 
 <br>
