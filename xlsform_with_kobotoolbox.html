@@ -108,7 +108,7 @@
           
   <section id="using-xlsform-with-kobotoolbox">
 <h1>Using XLSForm with KoboToolbox<a class="headerlink" href="#using-xlsform-with-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/xlsform_with_kobotoolbox.md" class="reference">23 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/eb3be2678ac943fbf5f75291279a6e21215a5606/source/xlsform_with_kobotoolbox.md" class="reference">6 May 2026</a></p>
 <p>XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
 building a form in the KoboToolbox Formbuilder, then download it as an
@@ -286,11 +286,14 @@ correcting the error in your spreadsheet, you will need to upload the file again
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Unmatched</span> <span class="pre">begin</span> <span class="pre">statement:</span> <span class="pre">group</span> <span class="pre">(group)</span></code></p></td>
 <td class="text-left"><p>Question group is missing its corresponding <code class="docutils literal notranslate"><span class="pre">end_group</span></code> row.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Can't</span> <span class="pre">find</span> <span class="pre">external_file.csv</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Can't</span> <span class="pre">find</span> <span class="pre">external_file.csv</span></code> <br> <code class="docutils literal notranslate"><span class="pre">Failed</span> <span class="pre">to</span> <span class="pre">load</span> <span class="pre">external_file.csv.</span></code></p></td>
 <td class="text-left"><p>An <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">external attachment</a> linked to your form (e.g., when using <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> ) has not been uploaded to KoboToolbox.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Can't</span> <span class="pre">find</span> <span class="pre">survey.xml</span></code></p></td>
 <td class="text-left"><p><a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">Dynamic data attachments</a> have not been properly set up in your project settings.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">'select_from_list_name'</span></code></p></td>
+<td class="text-left"><p>A list name is missing from the <code class="docutils literal notranslate"><span class="pre">type</span></code> column after <code class="docutils literal notranslate"><span class="pre">select_one</span></code> or <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>.</p></td>
 </tr>
 </tbody>
 </table>
