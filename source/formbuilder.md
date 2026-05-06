@@ -33,6 +33,10 @@ To duplicate a question, click <i class="k-icon-duplicate"></i> **Duplicate Ques
 
 To remove a question, click <i class="k-icon-trash"></i> **Delete Question** in the question menu on the right. You will be asked to confirm before it is permanently deleted from your form.
 
+<p class="note">
+<strong>Note</strong>: To delete multiple questions at once in the Formbuilder, group the questions and then delete the group.
+</p>
+
 ## Changing question settings
 
 To access advanced question settings, click on <i class="k-icon-settings"></i> **Settings** in the question menu on the right. Here, you can add skip logic, validation criteria, guidance hints, and make a question required. 
@@ -52,6 +56,10 @@ Questions can be [grouped together](https://support.kobotoolbox.org/group_repeat
 ## Changing the order of your questions
 
 Questions and groups can be moved to any position in the form. Drag-and-drop a question or group from its current position to where you want it to go.
+
+<p class="note">
+<strong>Note</strong>: To move multiple questions at once in the Formbuilder, group the questions and then move the group. You can then <a href="https://support.kobotoolbox.org/group_repeat.html#removing-a-question-group">ungroup</a> the questions.
+</p>
 
 ## Previewing your form
 
