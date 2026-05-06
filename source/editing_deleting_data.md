@@ -1,5 +1,5 @@
 # Editing and deleting your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/editing_deleting_data.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/93bd2f1869f8d0d9b512b5ba42f05d5cf68ca56b/source/editing_deleting_data.md" class="reference">6 May 2026</a>
 
 Editing and deleting data helps **maintain data quality** after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including **editing submissions via web form, editing raw data directly, and applying bulk updates.** This article explains each method and when to use it.
 
