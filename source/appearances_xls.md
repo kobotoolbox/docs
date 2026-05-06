@@ -121,7 +121,7 @@ Image questions allow users to [upload or record images](https://support.kobotoo
 | :--- | :--- | :--- |
 | `signature` | Allows users to draw their signature. | Web forms and KoboCollect |
 | `draw` | Allows users to sketch or create drawings. | Web forms and KoboCollect |
-| `annotate` | Allows users to annotate an image by drawing or writing on it. | Web forms and KoboCollect |
+| `annotate` | Allows users to annotate an image by drawing or writing on it. Users can upload their own image, or you can set a default image to annotate by entering the image file name in the `default` column and [uploading](https://support.kobotoolbox.org/upload_media.html) the file to your KoboToolbox project. | Web forms and KoboCollect |
 | `new` | Prompts users to take a new picture using the device camera (no file upload). | KoboCollect only |
 | `new-front` | Prompts users to take a new picture using the device's front-facing camera. | KoboCollect only |
 
