@@ -1,5 +1,5 @@
 # Dynamic data attachments in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/dynamic_data_attachment.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4e75d47da0eb5638ff8fa66d8d049c205b2e7175/source/dynamic_data_attachment.md" class="reference">6 May 2026</a>
 
 
 Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.
