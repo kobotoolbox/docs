@@ -108,7 +108,7 @@
           
   <section id="dynamic-data-attachments-in-xlsform">
 <h1>Dynamic data attachments in XLSForm<a class="headerlink" href="#dynamic-data-attachments-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/4e75d47da0eb5638ff8fa66d8d049c205b2e7175/source/dynamic_data_attachment.md" class="reference">6 May 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8f9a856ca94d358f333f60f6e563a9ecbb879202/source/dynamic_data_attachment.md" class="reference">6 May 2026</a></p>
 <p>Dynamic linking allows you to use data from a <strong>parent project</strong> within <strong>child projects</strong>, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.</p>
 <p class="note">
     <strong>Note:</strong> Dynamic data attachments function similarly to the <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a> function but eliminate the need for separate CSV files, since the data from a linked parent project serves as the data source.
@@ -409,7 +409,7 @@ Dynamic data attachments do not currently support pulling values directly from r
 <br>
 <details>
 <summary><strong>Parent index variable inside a repeat group</strong></summary>
-Dynamic data attachments do not currently support linking submissions from repeat groups. If the index variable in the parent form is inside a repeat group, the child form will not be able to match and retrieve the expected data.<br><br>To avoid this issue, place the linking variable outside the repeat group whenever possible. If each repeated item needs to be linked to a child form, consider restructuring the workflow so that each item is submitted as its own parent submission, rather than as one entry in a repeat group.br><br>For example, instead of collecting all household members in a repeat group within one household submission, you could create a separate parent form where each household member is submitted as an individual submission with a unique ID. The child form can then use that ID to retrieve the correct submission.
+Dynamic data attachments do not currently support linking submissions from repeat groups. If the index variable in the parent form is inside a repeat group, the child form will not be able to match and retrieve the expected data.<br><br>To avoid this issue, place the linking variable outside the repeat group whenever possible. If each repeated item needs to be linked to a child form, consider restructuring the workflow so that each item is submitted as its own parent submission, rather than as one entry in a repeat group.<br><br>For example, instead of collecting all household members in a repeat group within one household submission, you could create a separate parent form where each household member is submitted as an individual submission with a unique ID. The child form can then use that ID to retrieve the correct submission.
 </details>
 <br>
 <details>
