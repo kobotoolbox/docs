@@ -146,3 +146,13 @@ Additionally, when incorporating question references within question labels usin
 | integer | age | How old is ${name}? | ؟{name}$ كم عمرك |
 | end\_group | | | |
 | survey |
+
+
+
+## Troubleshooting
+
+<details>
+<summary><b>Unneeded or unnamed languages appear after uploading an XLSForm</b></summary>
+    If you upload an XLSForm that has fewer languages than an earlier version of the same project, KoboToolbox may still show languages from the previous version. You may also see an unnamed language. <br><br> To remove unneeded languages, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a> in KoboToolbox and delete any languages that are no longer used. If your form now has only one language, make the unnamed language the default language, then delete the other languages.
+</details>
+
