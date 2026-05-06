@@ -108,7 +108,7 @@
           
   <section id="pulling-data-from-an-external-csv">
 <h1>Pulling data from an external CSV<a class="headerlink" href="#pulling-data-from-an-external-csv" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/pull_data_kobotoolbox.md" class="reference">23 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e1faceb429db5362522392101ee2d88578d98fc8/source/pull_data_kobotoolbox.md" class="reference">6 May 2026</a></p>
 <p>The <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> function in XLSForm lets you dynamically retrieve information from an external CSV file while completing a form. This allows you to reference existing datasets and automatically pull in related details, avoiding the need for enumerators to re-enter the same information.</p>
 <p>For example, you can use <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code> to:</p>
 <ul class="simple">
@@ -251,7 +251,7 @@
 <br>
 <details>
   <summary><strong>Slow form loading with large files</strong></summary>
-  If you are using very large CSV files, you may experience slow form loading in KoboCollect. To resolve this, we recommend using the <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">trigger</a> column to pull data from the external file once, rather than recurrently in the background.
+    If you are using very large CSV files, you may experience slow form loading in KoboCollect or web forms. To improve performance, include only the data needed for the form and consider splitting one large form into multiple forms, each with its own CSV file. You can also split large CSV files into smaller files where possible, and/or use the <a href="https://support.kobotoolbox.org/question_options_xls.html#additional-question-options">trigger</a> column to pull data only from the relevant file and only when needed.
 </details>
 <br>
 <details>
