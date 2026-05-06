@@ -45,8 +45,8 @@ In the **Current version** section, you can:
 * **DEPLOY** or **REDEPLOY** the form.
 
 In the **Form history** section, you can:
-* View past versions of the form and their deployment dates.
-* Clone previous form versions.
+* View each deployed form version and non-deployed change, including when it was last modified.
+* Clone previous form versions or changes.
 
 In the **Collect data** section, you can:
 * Choose a [data collection mode](https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes).
