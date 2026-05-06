@@ -159,8 +159,9 @@ correcting the error in your spreadsheet, you will need to upload the file again
 | `'list_name'`<br>`​​List name not in choices sheet` | The option list for a question has not been defined, or there is a typo in the `list_name`. |
 | `Choice names must be unique for each choice list. If this is intentional, use the setting 'allow_choice_duplicates'.` | Duplicate choice names have been used within the same list of options. Remove the duplicated choice name(s), or allow choice duplicates in your <a href="https://support.kobotoolbox.org/form_settings_xls.html#available-form-settings-in-xlsform">form settings</a>. |
 | `Unmatched begin statement: group (group)` | Question group is missing its corresponding `end_group` row. |
-| `Can't find external_file.csv` | An <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">external attachment</a> linked to your form (e.g., when using `pulldata()` ) has not been uploaded to KoboToolbox. |
+| `Can't find external_file.csv` <br> `Failed to load external_file.csv.` | An <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">external attachment</a> linked to your form (e.g., when using `pulldata()` ) has not been uploaded to KoboToolbox. |
 | `Can't find survey.xml` | <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">Dynamic data attachments</a> have not been properly set up in your project settings. |
+| `'select_from_list_name'` | A list name is missing from the `type` column after `select_one` or `select_multiple`. |
 </details>
 
 <br>
