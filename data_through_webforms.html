@@ -108,7 +108,7 @@
           
   <section id="collecting-data-using-web-forms">
 <h1>Collecting data using web forms<a class="headerlink" href="#collecting-data-using-web-forms" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3b04b204bede7271d0ebfc28e4a55d536f3602e3/source/data_through_webforms.md" class="reference">24 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7422ce15732061510b56a7bf2bfb464ddee641a0/source/data_through_webforms.md" class="reference">6 May 2026</a></p>
 <p>KoboToolbox web forms let you <strong>collect data directly in a web browser</strong>, without installing an app. They are browser-based versions of your form that you can use to preview and test your questionnaire or collect live data on phones, tablets, and computers.</p>
 <p>Web forms work on most modern devices, including Android devices, iPhones, iPads, laptops, and desktop computers. They are especially useful in projects where respondents complete a form through a shared link, where the data collection team uses different types of devices, or where you want to enter data on a computer instead of through an app.</p>
 <p>Web forms also support <strong>offline data collection</strong> once the form has been opened and cached in the browser. They support all form logic set up in KoboToolbox, including skip logic and validation rules, and their appearance can be customized through different <a class="reference external" href="https://support.kobotoolbox.org/alternative_enketo.html">web form themes</a>.</p>
@@ -326,8 +326,13 @@ If the form was used offline, submissions may still be waiting in the queue. Che
 </details>
 <br>
 <details>
-<summary><strong>Respondents are asked to sign in </strong></summary>
+<summary><strong>Respondents are asked to sign in</strong></summary>
 Check whether the project is set to <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require authentication</a> for submissions. If it is, users must sign in with an account that has permission to add submissions, or you can disable the requirement in <strong>FORM > Collect data.</strong> 
+</details>
+<br>
+<details>
+<summary><strong>Switching accounts in web forms</strong></summary>
+If <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a> for submissions, web forms may keep you signed in with the account previously used for web forms in that browser. This can be confusing if the form is shared with a different account or if you need to submit as another user.<br><br>To switch accounts, click <strong>log out</strong> below the <strong>Submit</strong> button in the web form. Then, close the web form and open it again. You should then be prompted to sign in with the other account.<br><br>Note that web form sign-in is separate from the account you are signed in to on KoboToolbox in the same browser. If you are not sure which account you are currently signed in to from the web form interface, we recommend logging out and signing back in.
 </details>
 <br>
 <details>
