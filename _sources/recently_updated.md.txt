@@ -9,5 +9,5 @@
 1. [﻿Using the API for synchronous exports](synchronous_exports.md) (6 May 2026)
 1. [Collecting data using web forms](data_through_webforms.md) (6 May 2026)
 1. [Adding translations in XLSForm](language_xls.md) (6 May 2026)
+1. [Using regular expressions in XLSForm](restrict_responses.md) (6 May 2026)
 1. [Introduction to KoboToolbox](welcome.md) (5 May 2026)
-1. [Adding translations in KoboToolbox](language_dashboard.md) (29 Apr 2026)
