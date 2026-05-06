@@ -7,7 +7,7 @@
 1. [Question appearances in XLSForm](appearances_xls.md) (6 May 2026)
 1. [Media questions in KoboToolbox](photo_audio_video_file.md) (6 May 2026)
 1. [﻿Using the API for synchronous exports](synchronous_exports.md) (6 May 2026)
+1. [Adding translations in XLSForm](language_xls.md) (6 May 2026)
 1. [Introduction to KoboToolbox](welcome.md) (5 May 2026)
 1. [Adding translations in KoboToolbox](language_dashboard.md) (29 Apr 2026)
 1. [Collecting data using web forms](data_through_webforms.md) (24 Apr 2026)
-1. [Collecting data in multiple languages](collecting_data_multiple_languages.md) (23 Apr 2026)
