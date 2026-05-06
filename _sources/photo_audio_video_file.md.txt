@@ -1,9 +1,9 @@
 # Media questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/photo_audio_video_file.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cfb4a1f8edd217a9c0ed64bd0bfc86e6fda70baa/source/photo_audio_video_file.md" class="reference">6 May 2026</a>
 
 Many data collection projects require more than just quantitative data. KoboToolbox allows you to capture various media files from respondents, including photos, audio recordings, videos, and files, to provide key qualitative information and add visual and auditory depth to your datasets.
 
-The method of capturing or uploading media depends on whether you are using [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html) for data collection. In KoboCollect, you can either upload or record media files directly within the app. When using web forms, you can upload any media file, and record audio directly within the forms.
+The method of capturing or uploading media depends on whether you are using [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) or [web forms](https://support.kobotoolbox.org/data_through_webforms.html) for data collection. When using KoboCollect or web forms on a mobile device, you can capture images or videos directly from the device or upload files. When using web forms on a computer, you can only upload images or videos. In all cases, you can record audio directly within the form.
 
 This article covers the following topics:
 - Available media question types in KoboToolbox
