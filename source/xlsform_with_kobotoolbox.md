@@ -253,3 +253,14 @@ Check that the URL you are using is correct. When loaded into a browser, the URL
 <summary><strong>Import via URL not loading undeployed version</strong></summary>
 If you imported a link and are not seeing the new form version, refresh your browser.
 </details>
+
+<br>
+
+<details>
+<summary><strong>Web form submission fails </strong></summary>
+If a web form submission fails, check whether your form uses a <strong>reserved XLSForm term</strong> in the <code>name</code> column Reserved words are terms that cannot be used as question names because they are used by the underlying XForms engine for structure, logic, or data analysis (e.g., type, label, start, today). Using these words can cause form validation errors, publishing failures, or data export issues.<br><br>
+
+To fix the issue, rename the affected question to a different value, then redeploy the form. This issue usually affects web forms even when the form opens normally, while KoboCollect may continue to work as expected. Note that any submissions already saved against the old version of the form may remain unsubmittable, so it is important to update the form as soon as possible if you are collecting data through web forms. Always <strong>test form submission before launching data collection</strong> so you can catch naming issues early.
+</details>
+
+<br>
