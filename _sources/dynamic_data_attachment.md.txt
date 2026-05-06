@@ -1,5 +1,5 @@
 # Dynamic data attachments in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/dynamic_data_attachment.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4e75d47da0eb5638ff8fa66d8d049c205b2e7175/source/dynamic_data_attachment.md" class="reference">6 May 2026</a>
 
 
 Dynamic linking allows you to use data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.
@@ -166,7 +166,7 @@ Check that the calculation syntax in the child form is correct and that the rele
 
 <details>
 <summary><strong>Child form loads slowly</strong></summary>
-Large dynamic data attachments can slow down form loading. Share only the questions the child form needs instead of the full list of questions, then redeploy and try again.
+Large dynamic data attachments can slow down forms, especially when opening a web form for a new submission or when editing existing submissions.<br><br>If you are working with a large dataset, share only the questions the child form needs instead of the full list of questions. You can also consider splitting the parent form into multiple forms, for example by district or region, or using a different approach if the dataset is too large for dynamic data attachments.
 </details>
 
 <br>
@@ -181,6 +181,20 @@ If you are using KoboCollect and collecting data offline, data must first be sub
 <details>
 <summary><strong>Dynamic data attachment not working inside question groups</strong></summary>
 To pull dynamic data from a parent form into a child form with question groups, ensure the index question (e.g., the identification number) in the child form is in the same group as the calculation for the dynamic data. See sample files <a href="https://community.kobotoolbox.org/uploads/short-url/z5RpC1M3wj9716z9qQ8pWx9Pb4V.xlsx">Round 1 (Within Groups).xlsx</a> and <a href="https://community.kobotoolbox.org/uploads/short-url/8JZvWJcrCxzKBllQYglRyAVyk03.xlsx">Round 2 (Within Groups).xlsx</a> for an example of dynamic data attachments within groups.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Dynamic data attachments not pulling values from repeat groups</strong></summary>
+Dynamic data attachments do not currently support pulling values directly from repeat groups in a parent form. If you try to retrieve a value from a repeat group, the child form may return blank values, retrieve only the last repeat entry, or otherwise fail to retrieve the expected data.<br><br>As a workaround, you can add one or more <code>calculate</code> questions outside the repeat group in the parent form and use them to <a href="https://support.kobotoolbox.org/repeat_groups_xls.html#retrieving-values-from-repeat-groups">store the repeat group values</a> needed in the child form. Then, pull these calculated values into the child form instead of pulling directly from the repeat group.<br><br>For more complex workflows, you may need to restructure the parent form, split repeat entries into separate submissions, or process the parent data outside KoboToolbox and attach it as an <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">external CSV</a>.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Parent index variable inside a repeat group</strong></summary>
+Dynamic data attachments do not currently support linking submissions from repeat groups. If the index variable in the parent form is inside a repeat group, the child form will not be able to match and retrieve the expected data.<br><br>To avoid this issue, place the linking variable outside the repeat group whenever possible. If each repeated item needs to be linked to a child form, consider restructuring the workflow so that each item is submitted as its own parent submission, rather than as one entry in a repeat group.br><br>For example, instead of collecting all household members in a repeat group within one household submission, you could create a separate parent form where each household member is submitted as an individual submission with a unique ID. The child form can then use that ID to retrieve the correct submission.
 </details>
 
 <br>
@@ -203,4 +217,15 @@ This allows the value to be edited manually. The value will update from the pare
 
 </details>
 
+<br>
 
+<details>
+<summary><strong>Choice names appear instead of choice labels</strong></summary>
+When pulling data from a <code>select_one</code> or <code>select_multiple</code> question, dynamic data attachments will use the choice name, not the choice label.
+To display the choice label in your child form instead, use one of the following approaches:
+      <ul>
+<li>Pull the data into a select question and include the corresponding labels in the <code>choices</code> tab.</li>
+<li>In the parent form, use a <code>jr:choice-name()</code> <a href="https://support.kobotoolbox.org/calculations_xls.html#advanced-calculations">calculation</a> to retrieve the choice label, then pull that calculated value into the child form.</li>
+  </ul>
+
+</details>
