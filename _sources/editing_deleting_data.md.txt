@@ -1,5 +1,5 @@
 # Editing and deleting your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/editing_deleting_data.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/93bd2f1869f8d0d9b512b5ba42f05d5cf68ca56b/source/editing_deleting_data.md" class="reference">6 May 2026</a>
 
 Editing and deleting data helps **maintain data quality** after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including **editing submissions via web form, editing raw data directly, and applying bulk updates.** This article explains each method and when to use it.
 
@@ -27,7 +27,7 @@ Each method comes with its advantages and limitations:
 ![Editing data](images/editing_deleting_data/table.png)
 
 <p class="note">
-<strong>Note:</strong> When editing data using either method, the <code>_uuid</code> metadata field is updated each time a change is saved. When editing via web form, the <code>end</code> field is also updated. All other metadata fields remain unchanged, including <code>_id</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code>, and <code>_submitted_by</code>.
+<strong>Note:</strong> When editing data using either method, the <code>_uuid</code> metadata field is updated each time a change is saved. When editing via web form, the <code>end</code> field is also updated. All other metadata fields remain unchanged, including <code>_id</code>, <code>rootUuid</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code>, and <code>_submitted_by</code>.
 </p>
 
 ### Editing submissions via web form
@@ -180,3 +180,11 @@ If any part is missing or incorrectly formatted, the edit may not save or may ca
 </details>
 
 <br>
+
+<details>
+  <summary><strong>Checking whether a submission has been edited</strong></summary>
+  To check whether a submission has been edited, you can usually compare the <code>_uuid</code> field with the <code>rootUuid</code> field in the data table or exported data. The <code>rootUuid</code> value stays the same for the original submission, while the <code>_uuid</code> value changes each time the submission is edited. If the values are different, the submission has likely been edited.
+</details>
+
+<br>
+
