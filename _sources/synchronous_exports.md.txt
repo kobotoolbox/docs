@@ -1,5 +1,5 @@
 ﻿# Using the API for synchronous exports
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7c172c770c74096918880595e04fec7a0f4b4a3e/source/synchronous_exports.md" class="reference">19 Nov 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/42d7f50918407ab6e7d7845922f59390380f36c5/source/synchronous_exports.md" class="reference">6 May 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -37,7 +37,7 @@ To generate synchronous exports, you must first create a named export for your p
 To retrieve the synchronous export link, you will need the following:
 
 - **Project asset UID:** A unique ID for each KoboToolbox project, found in the project's URL.
-- **Server URL:** The URL of the server you are using (`kf.kobotoolbox.org` for the Global Server,  `eu.kobotoolbox.org` for the European Union Server, or `[your organization].kobotoolbox.org` for private servers).
+- **Server URL:** The URL of the server you are using (`kf.kobotoolbox.org` for the Global Server,  `eu.kobotoolbox.org` for the European Union Server, or your organization’s private server URL).
 
 <p class="note">
     For more information about retrieving the server URL and project asset UID, see <a href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
