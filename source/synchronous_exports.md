@@ -37,7 +37,7 @@ To generate synchronous exports, you must first create a named export for your p
 To retrieve the synchronous export link, you will need the following:
 
 - **Project asset UID:** A unique ID for each KoboToolbox project, found in the project's URL.
-- **Server URL:** The URL of the server you are using (`kf.kobotoolbox.org` for the Global Server,  `eu.kobotoolbox.org` for the European Union Server, or `[your organization].kobotoolbox.org` for private servers).
+- **Server URL:** The URL of the server you are using (`kf.kobotoolbox.org` for the Global Server,  `eu.kobotoolbox.org` for the European Union Server, or your organization’s private server URL).
 
 <p class="note">
     For more information about retrieving the server URL and project asset UID, see <a href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
