@@ -130,14 +130,15 @@ Continuously validating and testing your XLSForm as you make changes will
 simplify troubleshooting and help identify the cause of any issues. It is crucial
 to ensure your form functions as expected before launching data collection.
 
-There are several tools available to test your XLSForm, including the KoboToolbox platform, the [KoboCollect app](https://play.google.com/store/apps/details?id=org.koboc.collect.android), and [ODK's XLSForm Online](https://getodk.org/xlsform/). When
-previewing and testing your form, use the same platform that you will use for
+When previewing and testing your form, use the same platform that you will use for
 data collection: [web forms](https://support.kobotoolbox.org/data_through_webforms.html), [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html), or both.
 
 <p class="note">
 To learn more about setting up KoboCollect to preview and test your forms, see
 <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Setting up the KoboCollect app</a>.
 </p>
+
+If you are having trouble finding the source of an error in your XLSForm, try uploading the form to [XLSForm Online](https://getodk.org/xlsform/) by ODK, which can often provide more detailed error messages and warnings to help identify and fix issues before uploading the form to KoboToolbox.
 
 ## Troubleshooting
 
@@ -237,6 +238,14 @@ To fix the missing or incorrect list name:
 </li>
 <li>Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.</li>
 </ol>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>Difficulty identifying XLSForm error</strong></summary>
+If you are having trouble finding the source of an error in your XLSForm, try uploading the form to <a href="https://getodk.org/xlsform/">XLSForm Online</a> by ODK. This tool can provide more detailed error messages and warnings, which may help you identify and fix issues before uploading the form to KoboToolbox.
 
 </details>
 
