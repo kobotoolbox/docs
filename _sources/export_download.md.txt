@@ -1,5 +1,5 @@
 # Exporting and downloading your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/451366bcabcf8b2f2bfe4b74f7eb1f5526a1daff/source/export_download.md" class="reference">13 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/43efdbb222e3213fa548509bb34819c5238f7e83/source/export_download.md" class="reference">6 May 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/bXzwvvnhj7U" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -91,7 +91,7 @@ For more information about exporting and using repeat group data, see <a href="h
 
 <details>
     <summary><strong>Some data not being exported</strong></summary>
-    If some of your data is not being exported, check the <a href="https://support.kobotoolbox.org/advanced_export.html">advanced options</a>. For example, ensure that data from all versions of your form are selected for export.
+    If some of your data is not being exported, check the <a href="https://support.kobotoolbox.org/advanced_export.html">advanced options</a>. For example, make sure all form versions are selected for export, and that all questions you want to include have been selected.
 </details>
 
 <br>
@@ -99,6 +99,8 @@ For more information about exporting and using repeat group data, see <a href="h
 <details>
     <summary><strong>Downloading data from different versions</strong></summary>
     When downloading data that includes multiple form versions, you may encounter changes in the format of your data files. 
+    <br><br>
+For more information on expected changes to data structure when working with different versions of a form, see <a href="https://support.kobotoolbox.org/deploy_form_new_project.html#important-considerations-when-redeploying-a-form">Important considerations when redeploying a form</a>.
 </details>
 
 <br>
