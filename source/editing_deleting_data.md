@@ -27,7 +27,7 @@ Each method comes with its advantages and limitations:
 ![Editing data](images/editing_deleting_data/table.png)
 
 <p class="note">
-<strong>Note:</strong> When editing data using either method, the <code>_uuid</code> metadata field is updated each time a change is saved. When editing via web form, the <code>end</code> field is also updated. All other metadata fields remain unchanged, including <code>_id</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code>, and <code>_submitted_by</code>.
+<strong>Note:</strong> When editing data using either method, the <code>_uuid</code> metadata field is updated each time a change is saved. When editing via web form, the <code>end</code> field is also updated. All other metadata fields remain unchanged, including <code>_id</code>, <code>rootUuid</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code>, and <code>_submitted_by</code>.
 </p>
 
 ### Editing submissions via web form
@@ -180,3 +180,11 @@ If any part is missing or incorrectly formatted, the edit may not save or may ca
 </details>
 
 <br>
+
+<details>
+  <summary><strong>Checking whether a submission has been edited</strong></summary>
+  To check whether a submission has been edited, you can usually compare the <code>_uuid</code> field with the <code>rootUuid</code> field in the data table or exported data. The <code>rootUuid</code> value stays the same for the original submission, while the <code>_uuid</code> value changes each time the submission is edited. If the values are different, the submission has likely been edited.
+</details>
+
+<br>
+
