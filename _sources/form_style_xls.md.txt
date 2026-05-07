@@ -1,5 +1,5 @@
 # Styling your forms using XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/form_style_xls.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c61044760c76d14026c19de2f747c5e865a4255b/source/form_style_xls.md" class="reference">7 May 2026</a>
 
 With KoboToolbox, you can customize the appearance of your forms and questions to highlight key information and adapt the layout to your data collection needs. This includes applying themes to web forms, adding headers and lists in note questions, and using color or bold formatting for emphasis.
 
@@ -85,6 +85,7 @@ Text styling features in XLSForm include:
 | Colored text   | `<span style="color:#f58a1f">orange</span>` turns into <span style="color:#f58a1f">orange</span> <br>`<span style="color:red">red</span>` turns into <span style="color:red">red</span> |
 | Font           | `<span style="font-family:cursive">cursive</span>` turns into <span style="font-family:cursive">cursive</span> <br>`<span style="color:red; font-family:cursive">red and cursive</span>` turns into <span style="color:red; font-family:cursive">red and cursive</span>|
 | Align center   | `<p style="text-align:center">Centered label</p>` centers the text on the screen |
+| Hide label   | `<span style="display:none">Hidden label</span>` omits the question label |
 
 <p class="note">
 <strong>Note:</strong> Use the <code>\</code> character before <code>#</code>, <code>*</code>, <code>_</code>, and <code>\</code> to prevent special styling effects from being triggered by these characters.
