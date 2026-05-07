@@ -85,6 +85,7 @@ Text styling features in XLSForm include:
 | Colored text   | `<span style="color:#f58a1f">orange</span>` turns into <span style="color:#f58a1f">orange</span> <br>`<span style="color:red">red</span>` turns into <span style="color:red">red</span> |
 | Font           | `<span style="font-family:cursive">cursive</span>` turns into <span style="font-family:cursive">cursive</span> <br>`<span style="color:red; font-family:cursive">red and cursive</span>` turns into <span style="color:red; font-family:cursive">red and cursive</span>|
 | Align center   | `<p style="text-align:center">Centered label</p>` centers the text on the screen |
+| Hide label   | `<span style="display:none">Hidden label</span>` omits the question label |
 
 <p class="note">
 <strong>Note:</strong> Use the <code>\</code> character before <code>#</code>, <code>*</code>, <code>_</code>, and <code>\</code> to prevent special styling effects from being triggered by these characters.
