@@ -152,7 +152,14 @@ Additionally, when incorporating question references within question labels usin
 ## Troubleshooting
 
 <details>
-<summary><b>Unneeded or unnamed languages appear after uploading an XLSForm</b></summary>
-    If you upload an XLSForm that has fewer languages than an earlier version of the same project, KoboToolbox may still show languages from the previous version. You may also see an unnamed language. <br><br> To remove unneeded languages, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a> in KoboToolbox and delete any languages that are no longer used. If your form now has only one language, make the unnamed language the default language, then delete the other languages.
+<summary><b>Unnamed language appears after uploading an XLSForm</b></summary>
+An unnamed language may appear if your XLSForm has a respondent-facing column that is not translated, such as <code>hint</code>, <code>guidance_hint</code>, media columns, <code>constraint_messages</code>, or <code>required_message</code>. Until this is fixed, text from these columns will appear blank for all languages that are not the default language.<br><br>An unnamed language may also appear if you upload an XLSForm to a project that used to have multiple languages but now has only one unspecified language. If your form now has only one language, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a>, make the unnamed language the default language, then delete the other languages.
+</details>
+
+<br>
+
+<details>
+<summary><b>Additional or unneeded languages remain after uploading an XLSForm</b></summary>
+   If you upload an XLSForm that has fewer languages than an earlier version of the same project, KoboToolbox may still show languages from the previous version. To remove unneeded languages, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a> in KoboToolbox and delete any languages that are no longer used.
 </details>
 
