@@ -1,5 +1,5 @@
 # Adding translations in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a3bed876044012f4f69a9d424535bed73fde3654/source/language_xls.md" class="reference">6 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2956e23c6a58404a1abe13f31990694e0f0de0af/source/language_xls.md" class="reference">7 May 2026</a>
 
 Adding translations to a form allows users to switch to their preferred language during data collection without creating separate forms. Any number of translations can be added. Both [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) and [web forms](https://support.kobotoolbox.org/data_through_webforms.html) support form translations.
 
@@ -152,7 +152,14 @@ Additionally, when incorporating question references within question labels usin
 ## Troubleshooting
 
 <details>
-<summary><b>Unneeded or unnamed languages appear after uploading an XLSForm</b></summary>
-    If you upload an XLSForm that has fewer languages than an earlier version of the same project, KoboToolbox may still show languages from the previous version. You may also see an unnamed language. <br><br> To remove unneeded languages, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a> in KoboToolbox and delete any languages that are no longer used. If your form now has only one language, make the unnamed language the default language, then delete the other languages.
+<summary><b>Unnamed language appears after uploading an XLSForm</b></summary>
+An unnamed language may appear if your XLSForm has a respondent-facing column that is not translated, such as <code>hint</code>, <code>guidance_hint</code>, media columns, <code>constraint_messages</code>, or <code>required_message</code>. Until this is fixed, text from these columns will appear blank for all languages that are not the default language.<br><br>An unnamed language may also appear if you upload an XLSForm to a project that used to have multiple languages but now has only one unspecified language. If your form now has only one language, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a>, make the unnamed language the default language, then delete the other languages.
+</details>
+
+<br>
+
+<details>
+<summary><b>Additional or unneeded languages remain after uploading an XLSForm</b></summary>
+   If you upload an XLSForm that has fewer languages than an earlier version of the same project, KoboToolbox may still show languages from the previous version. To remove unneeded languages, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a> in KoboToolbox and delete any languages that are no longer used.
 </details>
 
