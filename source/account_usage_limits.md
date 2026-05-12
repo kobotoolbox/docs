@@ -55,7 +55,7 @@ To manage your storage usage, you can:
 You can also help prevent account restrictions by reducing the size of files submitted through your forms, for example by setting [upload size limits](https://support.kobotoolbox.org/photo_audio_video_file.html#lowering-image-sizes) or encouraging the use of external apps to [compress images](https://support.kobotoolbox.org/lower_file_size.html) before submission.
 
 <p class="note">
-  <strong>Note:</strong> If your account stays over the storage limit for <strong>more than 60 days</strong>, KoboToolbox will begin deleting media attachments (not submissions), starting with the oldest files. To avoid losing files, download any important media or upgrade your plan before this deadline.
+  <strong>Note:</strong> If your account stays over the storage limit for <strong>more than 90 days</strong>, KoboToolbox will begin deleting media attachments (not submissions), starting with the oldest files. To avoid losing files, download any important media or upgrade your plan before this deadline.
 </p>
 
 ### Managing submission limits
