@@ -90,7 +90,7 @@ These advanced documentation pages list all endpoints, show allowed query parame
 You can also download the API documentation schema in YAML format at `https://[server-url]/api/v2/schema/` or in JSON format at `https://[server-url]/api/v2/schema/?format=json`.
 
 <p class="note">
-    <strong>Note:</strong> V1 endpoints are now deprecated and decommissioned since January 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
+    <strong>Note:</strong> V1 endpoints are now deprecated and scheduled for decommissioning in June 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
 </p>
 
 For more examples of using the API, see this [Community Forum post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).
