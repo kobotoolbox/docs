@@ -38,7 +38,7 @@ If your account is restricted because you have reached a usage limit, you still 
 | Limit reached | What happens | How to restore access |
 | :--- | :--- | :--- |
 | Storage | Your account cannot receive new submissions or transfer projects until storage usage is reduced or storage quota is increased. | Delete media attachments, purchase a File Storage add-on, or upgrade to a plan with more storage. |
-| Submissions | Your projects cannot accept new submissions until the quota resets or is increased. | Wait until the next billing cycle, upgrade to a plan with a higher submission quota, or contact our team to purchase an Unlimited Submissions add-on. |
+| Submissions | Your projects cannot accept new submissions until the quota resets or is increased. | Wait until the next billing cycle or upgrade to a plan with a higher submission quota. |
 | Transcription and translation | Automatic transcription and translation are temporarily disabled until the quota resets or is increased. | Wait until the next billing cycle, purchase an NLP Package add-on, or upgrade to a plan with a higher quota. |
 
 ### Managing storage limits
@@ -64,7 +64,6 @@ When you reach your monthly submission quota, your projects cannot accept new su
 
 To manage your submission quota, you can:
 - [Upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher or unlimited submission quota.
-- [Contact](https://www.kobotoolbox.org/contact/) our support team to purchase an **unlimited submissions add-on.**
 - Delay data collection until your submission quota renews at the start of the next billing cycle.
 
 <p class="note">
