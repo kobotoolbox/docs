@@ -127,3 +127,20 @@ You may need to delete media files in bulk, for example, to manage storage space
   If a <strong>Media Attachments (ZIP)</strong> export remains in the status <strong>Pending ... Click to refresh</strong> for an extended period, refresh the page or leave the <strong>Downloads</strong> page and return to it. Do not repeatedly click <strong>Click to refresh.</strong>
 </details>
 
+<br> 
+
+<details>
+  <summary><strong>Media attachment ZIP export fails</strong></summary>
+If your project has many media files or a slow internet connection, exporting all media attachments as a ZIP file may fail or take too long. There are two alternative options: either download the media files using the <a href="https://www.downthemall.net">DownThemAll</a> extension, or use the <a href="https://github.com/joshuaberetta/kobomedia">Kobo media</a> download script available on GitHub.
+
+To download media files using the <a href="https://www.downthemall.net">DownThemAll</a> extension:
+<ol>
+  <li><strong><a href="https://www.downthemall.net">Install</a></strong> the DownThemAll extension in Firefox, Chrome, or Edge.</li>
+  <li><strong><a href="https://support.kobotoolbox.org/export_download.html">Export your data</a></strong> as XLS. Make sure to <strong><a href="https://support.kobotoolbox.org/advanced_export.html#additional-data-format-options">include media URLs</a></strong>.</li>
+  <li>Open the downloaded file in Excel, then click <strong>File > Save As</strong> and choose <strong>Web Page (.htm or .html)</strong> as the file type.</li>
+  <li>Open the saved HTML file in Firefox, Chrome, or Edge, while signed into the KoboToolbox account where the media files are stored.</li>
+  <li>Open the DownThemAll extension from the HTML page, and start the download.</li>
+</ol>
+
+You can adjust the extension settings to limit download speed or retry failed downloads. This method can be used to download all media files, or only selected files, without relying on the ZIP export. 
+</details>
