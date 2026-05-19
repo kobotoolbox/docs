@@ -209,7 +209,7 @@ Ces points de terminaison récupèrent toutes les données de soumission pour un
 En vous basant sur l'`url` que vous obtenez de la propriété `data` dans le point de terminaison asset, vous pouvez récupérer les données de soumission dans `v2`.
 
 <p class="note">
-  <b>Remarque :</b> La structure de réponse est presque identique, <strong>sauf que <code>v2</code> introduit la pagination</strong>. Si vous avez plus de 30 000 soumissions, vous devrez suivre l'URL <code>next</code> pour récupérer les pages suivantes.
+  <b>Remarque :</b> La structure de réponse est presque identique, <strong>sauf que <code>v2</code> introduit la pagination</strong>. Si vous avez plus de 1 000 soumissions, vous devrez suivre l'URL <code>next</code> pour récupérer les pages suivantes.
 </p>
 
 #### Exemples de code

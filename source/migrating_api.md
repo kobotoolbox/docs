@@ -209,7 +209,7 @@ These endpoints retrieve all submission data for a specific project or a single 
 Based on the `url` you get from the `data` property in the asset endpoint, you can fetch the submission data in `v2` using. 
 
 <p class="note">
-  <b>Note:</b> The response structure is nearly the same, <strong>except that <code>v2</code> introduces pagination</strong>. If you have more than 30,000 submissions, you will need to follow the <code>next</code> URL to retrieve subsequent pages.
+  <b>Note:</b> The response structure is nearly the same, <strong>except that <code>v2</code> introduces pagination</strong>. If you have more than 1,000 submissions, you will need to follow the <code>next</code> URL to retrieve subsequent pages.
 </p>
 
 #### Code examples

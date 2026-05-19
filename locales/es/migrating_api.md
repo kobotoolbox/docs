@@ -208,7 +208,7 @@ Estos endpoints recuperan todos los datos de envío de un proyecto específico o
 Basándote en la `url` que obtienes de la propiedad `data` en el endpoint del asset, puedes obtener los datos de envío en `v2`.
 
 <p class="note">
-  <b>Nota:</b> La estructura de respuesta es casi la misma, <strong>excepto que <code>v2</code> introduce paginación</strong>. Si tienes más de 30.000 envíos, deberás seguir la URL <code>next</code> para recuperar las páginas siguientes.
+  <b>Nota:</b> La estructura de respuesta es casi la misma, <strong>excepto que <code>v2</code> introduce paginación</strong>. Si tienes más de 1.000 envíos, deberás seguir la URL <code>next</code> para recuperar las páginas siguientes.
 </p>
 
 #### Ejemplos de código
