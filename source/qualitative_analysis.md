@@ -3,30 +3,42 @@
 
 <iframe src="https://www.youtube.com/embed/Ud65hNS_cuo?si=aFfCfExpyn3MZVAs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Qualitative analysis helps you turn open-ended audio responses into clear, usable insights. This is especially valuable in research and emergency response, where important context can be missed in quantitative data alone.
+Qualitative analysis helps turn open-ended responses into clear, usable insights. This is especially valuable in research and emergency response, where important context can be missed in quantitative data alone.
 
-KoboToolbox offers two ways to analyze qualitative audio responses. You can either **analyze data manually** or use **artificial intelligence (AI)** to generate the analysis. Using analysis questions, you can summarize, categorize, and describe each response, then save those results as new columns in your dataset.
+With KoboToolbox, you can analyze responses to open-ended audio questions directly inside the user interface. Using qualitative analysis questions, you can summarize, categorize, and describe each response, then save those results as new columns in your dataset. You can either **analyze data manually** or **using artificial intelligence (AI)**.
 
 This article explains how to create analysis questions, analyze responses manually or with AI, review and verify results, customize display settings, and move between responses during analysis.
 
-## Creating analysis questions
+## Prerequisites for qualitative analysis
 
-To use qualitative analysis, your form must include at least one **Audio** question or have [background audio recording](https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings) enabled. It may be helpful to transcribe or translate your audio files before you begin, but this is not required.
+Before using the qualitative analysis features, make sure the following requirements are met:
+- Your form must include at least one [Audio question](https://support.kobotoolbox.org/photo_audio_video_file.html) or have [background audio recording](https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings) enabled. 
+- Your project must include at least one submission with audio files.
+- For **automated analysis**, audio files must first be [transcribed](https://support.kobotoolbox.org/transcription-translation.html) because the analysis is generated from the original audio transcript.
+    - For **manual analysis**, transcribing your audio files before you begin is recommended but not required.
 
 <p class="note">
 <strong>Note:</strong>
-   Qualitative analysis is currently available only for audio responses, including background audio recordings. It is not supported for text or other response types. 
+   Qualitative analysis is currently available only for audio responses, including background audio recordings. It is not yet supported for text or other response types. 
 </p>
 
-To start analyzing your qualitative data:
+## Creating analysis questions
+
+To create qualitative analysis questions, open your project's audio analysis interface:
 
 1. Open your project and go to **DATA > Table.**
 2. Click **Open** in the cell of the audio response you want to analyze.
 3. Open the **ANALYSIS** tab.
-4. Click **Add question.**
-5. Enter a title for the analysis question. 
+
+![Open audio file](images/qualitative_analysis/open.png)
+
+Once you have reached the ANALYSIS tab, you can add analysis questions to generate insights from each audio response:
+
+1. Click **Add question.**
+2. Select the [question type](https://support.kobotoolbox.org/qualitative_analysis.html#analysis-question-types) you want to use (e.g., **Text** or **Single choice**).
+3. Enter a label for the analysis question (e.g., "Summarize the response" or "Select the themes that are mentioned in the response").  
     - This title becomes the column name in your dataset.
-6. Select the question type you want to use, and add answer choices if needed.
+4. Add answer choices if relevant.
 
 ![Add question](images/qualitative_analysis/add_question.png)
 
@@ -34,7 +46,7 @@ Each analysis question you create will appear in the **ANALYSIS** tab for other 
 
 <p class="note">
 <strong>Note:</strong>
-You can also <a href="https://support.kobotoolbox.org/qualitative_analysis.html#adding-hints">add hints</a> to analysis questions or answer choices. This is a good place to add information from a codebook or instructions for coders. 
+You can also <a href="https://support.kobotoolbox.org/qualitative_analysis.html#adding-hints">add hints</a> to analysis questions or answer choices, for example to add information from a codebook or instructions for coders. 
 </p>
 
 ### Analysis question types
@@ -45,18 +57,20 @@ The following question types are available for analysis questions:
 |:----|:----|
 | <i class="k-icon k-icon-tag"></i> Tags | Add keywords or themes to describe the audio response. |
 | <i class="k-icon-qt-text"></i> Text | Add an open text response, such as a summary, notes, or overall impression. |
-| <i class="k-icon-qt-number "></i> Number | Record a number, such as the respondent's age or the number of times a theme is mentioned. |
+| <i class="k-icon-qt-number "></i> Number | Record a number, such as the number of times a theme is mentioned. |
 | <i class="k-icon-qt-select-one"></i> Single choice | Select one option from a list, such as the main theme or perceived level of satisfaction. |
 | <i class="k-icon-qt-select-many"></i> Multiple choice | Select one or more options from a list, such as themes or barriers mentioned in the response. |
 | <i class="k-icon-qt-note"></i> Note | Add instructions or section labels to organize the analysis workspace. |
 
-Each field you add becomes a new column in your dataset when you download your data.
+Each field you add becomes a new column in your dataset when you download your data, except for **Note** fields.
 
 ### Adding hints to analysis questions
 
-Hints can help make your analysis more consistent, whether responses are reviewed by human coders or generated with AI. Use hints to explain how each analysis question should be answered.
+Hints can help make your analysis more consistent, whether responses are reviewed by human coders or generated with AI. When creating analysis questions, use hints to explain how each question should be answered.
 
-For example, you can add:
+You can add hints to both analysis questions and option choices.
+
+For example, you can use hints to include:
 
 - A full codebook or coding framework
 - Definitions for tags, categories, or themes
@@ -73,15 +87,17 @@ Hints do not have a word limit, so you can include detailed instructions when ne
 
 <p class="note">
 <strong>Note:</strong>
-    If your hints are very long, such as detailed instructions for AI-generated responses, you can disable the <strong>Show hints</strong> button at the top of the <strong>Analysis</strong> window to hide them.
+    If your hints are very long, such as detailed instructions for AI-generated responses, you can disable the <strong>Show hints</strong> button at the top of the <strong>ANALYSIS</strong> window to hide them.
 </p>
 
 ## Analyzing your data
 
-You can analyze responses manually or use AI to generate a response.
+Once you have created analysis questions, you can start analyzing responses manually or use AI to generate a response:
 
 - **For manual analysis:** Manually enter a response for each analysis question.
-- **For automated analysis:** Click Generate with AI under the question. After a few seconds, a response will be generated. You can then review the response and edit it if needed.
+- **For automated analysis:** Click **Generate with AI** under each analysis question.
+
+After generating automated analysis responses, you can review the responses and edit them if needed.
 
 ![Generate analysis with AI](images/qualitative_analysis/generate.png)
 
@@ -104,13 +120,13 @@ When you finish analyzing your audio files, each analysis field is saved as a ne
 
 ![Data table](images/qualitative_analysis/data_table.png)
 
-You can [download](https://support.kobotoolbox.org/export_download.html) your data with these analysis fields included for further review, synthesis, or reporting. For example, you can use them to track how often specific themes appear across your transcripts.
+You can [download](https://support.kobotoolbox.org/export_download.html) your data with these analysis fields included for further review, synthesis, or reporting. For example, you can use them to track how often specific themes appear across your transcripts, or to create a codebook based on the most recurring **Tags**.
 
 ### Customizing the display settings
 
 By default, the display panel on the right side of the **ANALYSIS** screen shows the audio recording, the original transcript, and responses to other questions.
 
-You can change the display to include the information that best supports your analysis. For example, if you are working in multiple languages, you may want to show a translation or hide the original transcript.
+You can change the display to include the information that best supports your analysis. For example, if you are working in multiple languages, you may want to show a [translation](https://support.kobotoolbox.org/transcription-translation.html) or hide the original transcript.
 
 To change the display:
 
@@ -122,7 +138,7 @@ To change the display:
 You can choose to show or hide:
 
 - The audio recording
-- Responses to other questions in the form (all or specific questions)
+- Responses to other questions in the form
 - The original transcript
 - Transcript translations
 
@@ -149,5 +165,12 @@ To switch to a different audio question within the same submission, use the drop
 
 Community Plan users can make up to 25 AI-generated analysis requests for free. Each time you click **Generate with AI**, it counts as one request.
 
-If you need more AI-generated analysis requests, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or purchase a **Natural Language Processing (NLP)** add-on. ​​You can always continue using the manual analysis features with no usage limit.
+If you need more AI-generated analysis requests, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or [purchase](https://support.kobotoolbox.org/account_settings.html#add-ons) an **Automatic analysis requests add-on**. ​​You can always continue using the manual analysis features with no usage limit.
 
+## Data privacy and model training
+
+To ensure the highest level of privacy and reliability when analyzing your open-ended interview transcripts, we securely host an open-source AI model (**gpt-oss-120b**) within our own server environment, rather than routing your data to a commercial provider. This means that **your data is never sent to or shared with an external third-party commercial AI company**, and that you retain complete control over your data.
+
+Open-source models provide greater transparency into how your information is processed. The transcripts you submit for analysis are **never used to train, retain, or improve** the underlying AI model. Additionally, compared with commercial providers, who frequently update their models behind the scenes and include filtering that can skew the analysis of complex or sensitive interview topics, **open-source models remain stable**, ensuring your analysis is consistent from the beginning of your project to the end, and offer a more **neutral, predictable baseline** for qualitative research.
+
+Our AI analysis features have been extensively tested against both human coders and 40+ commercial and open weights models, to ensure high quality results and find the best possible model.
