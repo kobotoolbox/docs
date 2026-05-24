@@ -32,7 +32,7 @@ To create qualitative analysis questions, open your project's audio analysis int
 
 ![Open audio file](images/qualitative_analysis/open.png)
 
-Once you have reached the ANALYSIS tab, you can add analysis questions to generate insights from each audio response:
+Once you have reached the **ANALYSIS** tab, you can add analysis questions to generate insights from each audio response:
 
 1. Click **Add question.**
 2. Select the [question type](https://support.kobotoolbox.org/qualitative_analysis.html#analysis-question-types) you want to use (e.g., **Text** or **Single choice**).
@@ -169,8 +169,11 @@ If you need more AI-generated analysis requests, you can [upgrade](https://www.k
 
 ## Data privacy and model training
 
-To ensure the highest level of privacy and reliability when analyzing your open-ended interview transcripts, we securely host an open-source AI model (**gpt-oss-120b**) within our own server environment, rather than routing your data to a commercial provider. This means that **your data is never sent to or shared with an external third-party commercial AI company**, and that you retain complete control over your data.
+To ensure privacy and reliability when analyzing open-ended interview transcripts, KoboToolbox securely hosts an open-source AI model (**gpt-oss-120b**) within our own server environment rather than sending data to a commercial AI provider. Your data is **never shared with an external third-party AI company**, and you retain full control over your information.
 
-Open-source models provide greater transparency into how your information is processed. The transcripts you submit for analysis are **never used to train, retain, or improve** the underlying AI model. Additionally, compared with commercial providers, who frequently update their models behind the scenes and include filtering that can skew the analysis of complex or sensitive interview topics, **open-source models remain stable**, ensuring your analysis is consistent from the beginning of your project to the end, and offer a more **neutral, predictable baseline** for qualitative research.
+Open-source models provide greater transparency into how data is processed. Transcripts submitted for analysis are **never used to train, retain, or improve** the underlying AI model.
 
-Our AI analysis features have been extensively tested against both human coders and 40+ commercial and open weights models, to ensure high quality results and find the best possible model.
+Compared to commercial AI providers, which frequently update models behind the scenes and may apply filtering that can affect the analysis of complex or sensitive topics, **open-source models offer greater stability and consistency** throughout the lifecycle of a project. This helps provide a more neutral and predictable baseline for qualitative research.
+
+Our AI analysis features have been extensively tested against both human coders and more than 40 commercial and open-weight AI models to ensure high quality and reliable results.
+
