@@ -108,17 +108,41 @@
           
   <section id="migrating-from-v1-to-v2-api">
 <h1>Migrating from v1 to v2 API<a class="headerlink" href="#migrating-from-v1-to-v2-api" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/62f9bf5497b6f6a7e0d1ff3f2e5d1da7bad99168/source/migrating_api.md" class="reference">10 Dec 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6ad0e952d9c91d0b0fc2d20b46ee26cf76ddfd5e/source/migrating_api.md" class="reference">25 May 2026</a></p>
 <p>As part of our ongoing efforts to streamline and modernize the KoboToolbox platform, we are phasing out KPI and KoboCAT <code class="docutils literal notranslate"><span class="pre">v1</span></code> endpoints. All KPI and KoboCAT <code class="docutils literal notranslate"><span class="pre">v1</span></code> endpoints are now deprecated, and will be removed entirely in June 2026. <code class="docutils literal notranslate"><span class="pre">v1</span></code> endpoints are being phased out in favor of the more robust and fully supported KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code> API.</p>
 <p>This article explains how to migrate your API integrations from the <code class="docutils literal notranslate"><span class="pre">v1</span></code> API (KoboCAT and KPI) to the KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code> API. It covers each deprecated <code class="docutils literal notranslate"><span class="pre">v1</span></code> endpoint and its <code class="docutils literal notranslate"><span class="pre">v2</span></code> equivalent to help you transition your workflows.</p>
 <section id="migrating-from-kpi-v1-to-kpi-v2">
 <h2>Migrating from KPI v1 to KPI v2<a class="headerlink" href="#migrating-from-kpi-v1-to-kpi-v2" title="Link to this heading">¶</a></h2>
 <p>Migrating from the old KPI API (<code class="docutils literal notranslate"><span class="pre">v1</span></code>) to the new version (<code class="docutils literal notranslate"><span class="pre">v2</span></code>) is straightforward in most cases.</p>
 <p>In general, you only need to update the base path from <code class="docutils literal notranslate"><span class="pre">/endpoint/</span></code> to <code class="docutils literal notranslate"><span class="pre">/api/v2/endpoint/</span></code>.</p>
+<section id="exceptions">
+<h3>Exceptions<a class="headerlink" href="#exceptions" title="Link to this heading">¶</a></h3>
+<p>There are two exceptions to the rule above.</p>
 <section id="exception-for-exports-endpoint">
-<h3>Exception for exports endpoint<a class="headerlink" href="#exception-for-exports-endpoint" title="Link to this heading">¶</a></h3>
-<p>The only exception to the rule above is for the <code class="docutils literal notranslate"><span class="pre">/exports/</span></code> endpoint. In <code class="docutils literal notranslate"><span class="pre">v1</span></code>, the <code class="docutils literal notranslate"><span class="pre">/exports/</span></code> endpoint returned <strong>all exports for the authenticated user</strong> across all projects.</p>
+<h4>Exception for exports endpoint<a class="headerlink" href="#exception-for-exports-endpoint" title="Link to this heading">¶</a></h4>
+<p>In <code class="docutils literal notranslate"><span class="pre">v1</span></code>, the <code class="docutils literal notranslate"><span class="pre">/exports/</span></code> endpoint returned <strong>all exports for the authenticated user</strong> across all projects.</p>
 <p>In <code class="docutils literal notranslate"><span class="pre">v2</span></code>, for performance reasons, exports are now <strong>scoped per project</strong> and must be accessed via <code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/exports/</span></code>.</p>
+</section>
+<section id="exception-for-submissions-endpoint">
+<h4>Exception for submissions endpoint<a class="headerlink" href="#exception-for-submissions-endpoint" title="Link to this heading">¶</a></h4>
+<p>The <code class="docutils literal notranslate"><span class="pre">/assets/{asset_uid}/submissions/</span></code> endpoint has been <strong>renamed</strong> in <code class="docutils literal notranslate"><span class="pre">v2</span></code>. In addition to updating the base path, you must also change the endpoint name from <code class="docutils literal notranslate"><span class="pre">submissions</span></code> to <code class="docutils literal notranslate"><span class="pre">data</span></code>:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p><code class="docutils literal notranslate"><span class="pre">v1</span></code> Endpoint</p></th>
+<th class="head"><p><code class="docutils literal notranslate"><span class="pre">v2</span></code> Equivalent</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/assets/{asset_uid}/submissions/</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/data/</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/assets/{asset_uid}/submissions/{id}/</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/data/{id}/</span></code><sup>1</sup></p></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> <code class="docutils literal notranslate"><span class="pre">{id}</span></code> can be either the submission’s integer identifier or its <code class="docutils literal notranslate"><span class="pre">root_uuid</span></code>.</p>
+</section>
 </section>
 </section>
 <section id="migrating-from-kobocat-v1-to-kpi-v2">
@@ -205,10 +229,11 @@
 <td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{uid}/data/</span></code></p></td>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/api/v1/data/&lt;pk&gt;/&lt;dataid&gt;</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{uid}/data/{submission_id}/</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{uid}/data/{submission_id}/</span></code><sup>1</sup></p></td>
 </tr>
 </tbody>
 </table>
+<p><sup>1</sup> <code class="docutils literal notranslate"><span class="pre">{submission_id}</span></code> can be either the submission’s integer identifier or its <code class="docutils literal notranslate"><span class="pre">root_uuid</span></code>.</p>
 <p>Based on the <code class="docutils literal notranslate"><span class="pre">url</span></code> you get from the <code class="docutils literal notranslate"><span class="pre">data</span></code> property in the asset endpoint, you can fetch the submission data in <code class="docutils literal notranslate"><span class="pre">v2</span></code> using.</p>
 <p class="note">
   <b>Note:</b> The response structure is nearly the same, <strong>except that <code>v2</code> introduces pagination</strong>.
@@ -322,9 +347,9 @@
 </tr>
 </tbody>
 </table>
-<p><sup>1</sup> <em>In the <code class="docutils literal notranslate"><span class="pre">/api/v2/assets</span></code> endpoint, sequential integer identifiers are no longer used. Each entry is uniquely identified by an alphanumeric <code class="docutils literal notranslate"><span class="pre">uid</span></code></em>.<br />
-<sup>2</sup> <em>In <code class="docutils literal notranslate"><span class="pre">v1</span></code>, tags were returned as an array; in <code class="docutils literal notranslate"><span class="pre">v2</span></code>, they are returned as a comma-separated string.</em><br />
-<sup>3</sup> <em>These fields are no longer exposed. See the <strong>Permissions</strong> section below for more details.</em><br />
+<p><sup>1</sup> <em>In the <code class="docutils literal notranslate"><span class="pre">/api/v2/assets</span></code> endpoint, sequential integer identifiers are no longer used. Each entry is uniquely identified by an alphanumeric <code class="docutils literal notranslate"><span class="pre">uid</span></code></em>.
+<sup>2</sup> <em>In <code class="docutils literal notranslate"><span class="pre">v1</span></code>, tags were returned as an array; in <code class="docutils literal notranslate"><span class="pre">v2</span></code>, they are returned as a comma-separated string.</em>
+<sup>3</sup> <em>These fields are no longer exposed. See the <strong>Permissions</strong> section below for more details.</em>
 <sup>4</sup> <em>Not directly accessible via the asset endpoint. Use the <code class="docutils literal notranslate"><span class="pre">/api/v2/asset_usage/</span></code> endpoint and retrieve the <code class="docutils literal notranslate"><span class="pre">storage_bytes</span></code> field of the corresponding project.</em></p>
 <details>
 <summary><strong>Example <code>v1</code> response</strong></summary>
@@ -578,7 +603,7 @@
     <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;goose.jpg&quot;</span><span class="p">,</span>
     <span class="s2">&quot;mimetype&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span>
   <span class="p">},</span>
-  <span class="o">...</span>  
+  <span class="o">...</span>
 <span class="p">}</span>
 </pre></div>
 </div>

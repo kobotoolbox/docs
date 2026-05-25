@@ -116,10 +116,34 @@
 <h2>Migración de KPI v1 a KPI v2<a class="headerlink" href="#migracion-de-kpi-v1-a-kpi-v2" title="Link to this heading">¶</a></h2>
 <p>La migración de la API KPI antigua (<code class="docutils literal notranslate"><span class="pre">v1</span></code>) a la nueva versión (<code class="docutils literal notranslate"><span class="pre">v2</span></code>) es sencilla en la mayoría de los casos.</p>
 <p>En general, solo necesitas actualizar la ruta base de <code class="docutils literal notranslate"><span class="pre">/endpoint/</span></code> a <code class="docutils literal notranslate"><span class="pre">/api/v2/endpoint/</span></code>.</p>
+<section id="excepciones">
+<h3>Excepciones<a class="headerlink" href="#excepciones" title="Link to this heading">¶</a></h3>
+<p>Hay dos excepciones a la regla anterior.</p>
 <section id="excepcion-para-el-endpoint-de-exportaciones">
-<h3>Excepción para el endpoint de exportaciones<a class="headerlink" href="#excepcion-para-el-endpoint-de-exportaciones" title="Link to this heading">¶</a></h3>
-<p>La única excepción a la regla anterior es el endpoint <code class="docutils literal notranslate"><span class="pre">/exports/</span></code>. En <code class="docutils literal notranslate"><span class="pre">v1</span></code>, el endpoint <code class="docutils literal notranslate"><span class="pre">/exports/</span></code> devolvía <strong>todas las exportaciones del/de la usuario/a autenticado/a</strong> en todos los proyectos.</p>
+<h4>Excepción para el endpoint de exportaciones<a class="headerlink" href="#excepcion-para-el-endpoint-de-exportaciones" title="Link to this heading">¶</a></h4>
+<p>En <code class="docutils literal notranslate"><span class="pre">v1</span></code>, el endpoint <code class="docutils literal notranslate"><span class="pre">/exports/</span></code> devolvía <strong>todas las exportaciones del/de la usuario/a autenticado/a</strong> en todos los proyectos.</p>
 <p>En <code class="docutils literal notranslate"><span class="pre">v2</span></code>, por razones de rendimiento, las exportaciones ahora están <strong>limitadas por proyecto</strong> y deben accederse a través de <code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/exports/</span></code>.</p>
+</section>
+<section id="excepcion-para-el-endpoint-de-envios-submissions">
+<h4>Excepción para el endpoint de envíos (submissions)<a class="headerlink" href="#excepcion-para-el-endpoint-de-envios-submissions" title="Link to this heading">¶</a></h4>
+<p>El endpoint <code class="docutils literal notranslate"><span class="pre">/assets/{asset_uid}/submissions/</span></code> ha sido <strong>renombrado</strong> en <code class="docutils literal notranslate"><span class="pre">v2</span></code>. Además de actualizar la ruta base, también debes cambiar el nombre del endpoint de <code class="docutils literal notranslate"><span class="pre">submissions</span></code> a <code class="docutils literal notranslate"><span class="pre">data</span></code>:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Endpoint <code class="docutils literal notranslate"><span class="pre">v1</span></code></p></th>
+<th class="head"><p>Equivalente <code class="docutils literal notranslate"><span class="pre">v2</span></code></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">/assets/{asset_uid}/submissions/</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/data/</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">/assets/{asset_uid}/submissions/{id}/</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{asset_uid}/data/{id}/</span></code><sup>1</sup></p></td>
+</tr>
+</tbody>
+</table>
+<p><sup>1</sup> <code class="docutils literal notranslate"><span class="pre">{id}</span></code> puede ser el identificador entero del envío o su <code class="docutils literal notranslate"><span class="pre">root_uuid</span></code>.</p>
+</section>
 </section>
 </section>
 <section id="migracion-de-kobocat-v1-a-kpi-v2">
@@ -323,9 +347,9 @@
 </tr>
 </tbody>
 </table>
-<p><sup>1</sup> <em>En el endpoint <code class="docutils literal notranslate"><span class="pre">/api/v2/assets</span></code>, ya no se utilizan identificadores enteros secuenciales. Cada entrada se identifica de forma única mediante un <code class="docutils literal notranslate"><span class="pre">uid</span></code> alfanumérico</em>.<br />
-<sup>2</sup> <em>En <code class="docutils literal notranslate"><span class="pre">v1</span></code>, las etiquetas se devolvían como un array; en <code class="docutils literal notranslate"><span class="pre">v2</span></code>, se devuelven como una cadena separada por comas.</em><br />
-<sup>3</sup> <em>Estos campos ya no están expuestos. Consulta la sección <strong>Permisos</strong> a continuación para más detalles.</em><br />
+<p><sup>1</sup> <em>En el endpoint <code class="docutils literal notranslate"><span class="pre">/api/v2/assets</span></code>, ya no se utilizan identificadores enteros secuenciales. Cada entrada se identifica de forma única mediante un <code class="docutils literal notranslate"><span class="pre">uid</span></code> alfanumérico</em>.
+<sup>2</sup> <em>En <code class="docutils literal notranslate"><span class="pre">v1</span></code>, las etiquetas se devolvían como un array; en <code class="docutils literal notranslate"><span class="pre">v2</span></code>, se devuelven como una cadena separada por comas.</em>
+<sup>3</sup> <em>Estos campos ya no están expuestos. Consulta la sección <strong>Permisos</strong> a continuación para más detalles.</em>
 <sup>4</sup> <em>No es directamente accesible a través del endpoint del asset. Usa el endpoint <code class="docutils literal notranslate"><span class="pre">/api/v2/asset_usage/</span></code> y recupera el campo <code class="docutils literal notranslate"><span class="pre">storage_bytes</span></code> del proyecto correspondiente.</em></p>
 <details>
 <summary><strong>Ejemplo de respuesta <code>v1</code></strong></summary>
@@ -579,7 +603,7 @@
     <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;goose.jpg&quot;</span><span class="p">,</span>
     <span class="s2">&quot;mimetype&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span>
   <span class="p">},</span>
-  <span class="o">...</span>  
+  <span class="o">...</span>
 <span class="p">}</span>
 </pre></div>
 </div>

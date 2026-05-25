@@ -11,10 +11,23 @@ La migración de la API KPI antigua (`v1`) a la nueva versión (`v2`) es sencill
 
 En general, solo necesitas actualizar la ruta base de `/endpoint/` a `/api/v2/endpoint/`.
 
-### Excepción para el endpoint de exportaciones
-La única excepción a la regla anterior es el endpoint `/exports/`. En `v1`, el endpoint `/exports/` devolvía **todas las exportaciones del/de la usuario/a autenticado/a** en todos los proyectos.
+### Excepciones
+Hay dos excepciones a la regla anterior.
+
+#### Excepción para el endpoint de exportaciones
+En `v1`, el endpoint `/exports/` devolvía **todas las exportaciones del/de la usuario/a autenticado/a** en todos los proyectos.
 
 En `v2`, por razones de rendimiento, las exportaciones ahora están **limitadas por proyecto** y deben accederse a través de `/api/v2/assets/{asset_uid}/exports/`.
+
+#### Excepción para el endpoint de envíos (submissions)
+El endpoint `/assets/{asset_uid}/submissions/` ha sido **renombrado** en `v2`. Además de actualizar la ruta base, también debes cambiar el nombre del endpoint de `submissions` a `data`:
+
+| Endpoint `v1`                               | Equivalente `v2`                               |
+|---------------------------------------------|------------------------------------------------|
+| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`             |
+| `/assets/{asset_uid}/submissions/{id}/`     | `/api/v2/assets/{asset_uid}/data/{id}/`<sup>1</sup> |
+
+<sup>1</sup> `{id}` puede ser el identificador entero del envío o su `root_uuid`.
 
 
 
@@ -156,15 +169,15 @@ Estos endpoints devuelven atributos detallados de todos los formularios comparti
 | `num_of_submissions`       | `deployment__submission_count`           |
 | `attachment_storage_bytes` | _N/A_<sup>4</sup>                        |
 
-<sup>1</sup> _En el endpoint `/api/v2/assets`, ya no se utilizan identificadores enteros secuenciales. Cada entrada se identifica de forma única mediante un `uid` alfanumérico_.  
-<sup>2</sup> _En `v1`, las etiquetas se devolvían como un array; en `v2`, se devuelven como una cadena separada por comas._  
-<sup>3</sup> _Estos campos ya no están expuestos. Consulta la sección **Permisos** a continuación para más detalles._  
+<sup>1</sup> _En el endpoint `/api/v2/assets`, ya no se utilizan identificadores enteros secuenciales. Cada entrada se identifica de forma única mediante un `uid` alfanumérico_.
+<sup>2</sup> _En `v1`, las etiquetas se devolvían como un array; en `v2`, se devuelven como una cadena separada por comas._
+<sup>3</sup> _Estos campos ya no están expuestos. Consulta la sección **Permisos** a continuación para más detalles._
 <sup>4</sup> _No es directamente accesible a través del endpoint del asset. Usa el endpoint `/api/v2/asset_usage/` y recupera el campo `storage_bytes` del proyecto correspondiente._
 
 <details>
 <summary><strong>Ejemplo de respuesta <code>v1</code></strong></summary>
 <br>
-  
+
 ```json
 {
   "url": "https://kf.kobotoolbox.org/api/v1/forms/474",
@@ -299,15 +312,15 @@ Ejemplo de payload:
 En `v2`, los campos `public`, `public_data` y `require_auth` ya no están expuestos como atributos booleanos. En su lugar, **el acceso anónimo se controla mediante asignaciones de permisos explícitas al `AnonymousUser`**.
 
 Se aplican los siguientes mapeos:
-- `public: true` → el `AnonymousUser` tiene el permiso `view_asset`  
-- `public_data: true` → el `AnonymousUser` tiene el permiso `view_submissions`  
-- `require_auth: false` → el `AnonymousUser` tiene el permiso `add_submissions`  
+- `public: true` → el `AnonymousUser` tiene el permiso `view_asset`
+- `public_data: true` → el `AnonymousUser` tiene el permiso `view_submissions`
+- `require_auth: false` → el `AnonymousUser` tiene el permiso `add_submissions`
 
 
 <details>
 <summary><strong>Ejemplo: permisos de usuario/a anónimo/a en <code>v2</code></strong></summary>
 <br>
-  
+
 ```json
 [
   {
@@ -405,7 +418,7 @@ Estos endpoints devuelven una lista plana de todos los archivos multimedia asoci
     "filename": "goose.jpg",
     "mimetype": "image/jpeg"
   },
-  ...  
+  ...
 }
 ```
 
