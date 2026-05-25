@@ -1,5 +1,5 @@
 # Migration de l'API v1 vers v2
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/e9270720e3600bf065cd670e73664ec246c45976/source/migrating_api.md" class="reference">19 mai 2026</a>
+**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/e3ce02358a9ac8e0298d590fee68b0508734e899/source/migrating_api.md" class="reference">25 mai 2026</a>
 
 
 Dans le cadre de nos efforts continus pour rationaliser et moderniser la plateforme KoboToolbox, nous supprimons progressivement les points de terminaison KPI et KoboCAT `v1`. Tous les points de terminaison KPI et KoboCAT `v1` sont désormais obsolètes et seront entièrement supprimés en juin 2026. Les points de terminaison `v1` sont progressivement supprimés au profit de l'API KPI `v2`, plus robuste et entièrement prise en charge.
@@ -379,9 +379,9 @@ Ces points de terminaison renvoient les attributs détaillés de tous les formul
 | `num_of_submissions`       | `deployment__submission_count`           |
 | `attachment_storage_bytes` | _N/A_<sup>4</sup>                        |
 
-<sup>1</sup> _Dans le point de terminaison `/api/v2/assets`, les identifiants entiers séquentiels ne sont plus utilisés. Chaque entrée est identifiée de manière unique par un `uid` alphanumérique_.  
-<sup>2</sup> _Dans `v1`, les balises étaient renvoyées sous forme de tableau ; dans `v2`, elles sont renvoyées sous forme de chaîne séparée par des virgules._  
-<sup>3</sup> _Ces champs ne sont plus exposés. Voir la section **Permissions** ci-dessous pour plus de détails._  
+<sup>1</sup> _Dans le point de terminaison `/api/v2/assets`, les identifiants entiers séquentiels ne sont plus utilisés. Chaque entrée est identifiée de manière unique par un `uid` alphanumérique_.
+<sup>2</sup> _Dans `v1`, les balises étaient renvoyées sous forme de tableau ; dans `v2`, elles sont renvoyées sous forme de chaîne séparée par des virgules._
+<sup>3</sup> _Ces champs ne sont plus exposés. Voir la section **Permissions** ci-dessous pour plus de détails._
 <sup>4</sup> _Non directement accessible via le point de terminaison asset. Utilisez le point de terminaison `/api/v2/asset_usage/` et récupérez le champ `storage_bytes` du projet correspondant._
 
 #### Exemples de code
@@ -472,7 +472,7 @@ cat(form$tag_string)                     # était : paste(form$tags, collapse = 
 <details>
 <summary><strong>Exemple de réponse <code>v1</code></strong></summary>
 <br>
-  
+
 ```json
 {
   "url": "https://kf.kobotoolbox.org/api/v1/forms/474",
@@ -667,9 +667,9 @@ cat("Tags mis à jour :", result$tag_string, "\n")
 Dans `v2`, les champs `public`, `public_data` et `require_auth` ne sont plus exposés en tant qu'attributs booléens. Au lieu de cela, **l'accès anonyme est contrôlé via des attributions de permissions explicites à l'`AnonymousUser`**.
 
 Les correspondances suivantes s'appliquent :
-- `public: true` → l'`AnonymousUser` a la permission `view_asset`  
-- `public_data: true` → l'`AnonymousUser` a la permission `view_submissions`  
-- `require_auth: false` → l'`AnonymousUser` a la permission `add_submissions`  
+- `public: true` → l'`AnonymousUser` a la permission `view_asset`
+- `public_data: true` → l'`AnonymousUser` a la permission `view_submissions`
+- `require_auth: false` → l'`AnonymousUser` a la permission `add_submissions`
 
 Les permissions sont disponibles sur le point de terminaison de détail de l'asset (`/api/v2/assets/{uid}/`) sous la propriété `permissions`.
 
@@ -811,7 +811,7 @@ cat("Permission assignée :", result$label, "\n")
 <details>
 <summary><strong>Exemple : permissions d'utilisateur anonyme <code>v2</code></strong></summary>
 <br>
-  
+
 ```json
 [
   {

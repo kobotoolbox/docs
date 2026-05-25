@@ -1,5 +1,5 @@
 # الترحيل من واجهة برمجة التطبيقات v1 إلى v2
-**آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/e9270720e3600bf065cd670e73664ec246c45976/source/migrating_api.md" class="reference">19 مايو 2026</a>
+**آخر تحديث:** <a href="https://github.com/kobotoolbox/docs/blob/e3ce02358a9ac8e0298d590fee68b0508734e899/source/migrating_api.md" class="reference">19 مايو 2026</a>
 
 كجزء من جهودنا المستمرة لتبسيط وتحديث منصة KoboToolbox، نقوم بإيقاف نقاط نهاية KPI وKoboCAT `v1` تدريجياً. جميع نقاط نهاية KPI وKoboCAT `v1` أصبحت الآن قديمة، وسيتم إزالتها بالكامل في يونيو 2026. يتم إيقاف نقاط نهاية `v1` تدريجياً لصالح واجهة برمجة التطبيقات KPI `v2` الأكثر قوة والمدعومة بالكامل.
 
