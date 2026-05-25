@@ -1,5 +1,5 @@
 # Migrating from v1 to v2 API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1da4eeb7e654c25036ca2cc8d80da85f17c913af/source/migrating_api.md" class="reference">25 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5f8ed35c81379353d2d10f6f09baa810a5a42953/source/migrating_api.md" class="reference">25 May 2026</a>
 
 
 As part of our ongoing efforts to streamline and modernize the KoboToolbox platform, we are phasing out KPI and KoboCAT `v1` endpoints. All KPI and KoboCAT `v1` endpoints are now deprecated, and will be removed entirely in June 2026. `v1` endpoints are being phased out in favor of the more robust and fully supported KPI `v2` API.
@@ -7,7 +7,7 @@ As part of our ongoing efforts to streamline and modernize the KoboToolbox platf
 This article explains how to migrate your API integrations from the `v1` API (KoboCAT and KPI) to the KPI `v2` API. It covers each deprecated `v1` endpoint and its `v2` equivalent to help you transition your workflows.
 
 <p class="note">
-  <b>Note:</b> This article is intended for <strong>advanced users</strong> who use the KoboToolbox API for <strong>project management workflows</strong>. Integrations that use <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a>, such as dashboards and other external reporting tools, do not require any changes and are not affected by this migration.
+  <strong>Note:</strong> This article is intended for <strong>advanced users</strong> who use the KoboToolbox API for <strong>project management workflows</strong>. Integrations that use <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a>, such as dashboards and other external reporting tools, do not require any changes and are not affected by this migration.
 </p>
 
 
@@ -54,7 +54,7 @@ data <- content(response, as = "parsed")
 ```
 
 <p class="note">
-  <b>Note:</b> The authentication header is the same across all API versions. What changes depends on which migration path you are on: if you are migrating from <strong>KPI v1 to KPI v2</strong>, you only need to update the URL path. If you are migrating from <strong>KoboCAT v1 to KPI v2</strong>, you will also need to update the base domain (<code>kc.kobotoolbox.org</code> → <code>kf.kobotoolbox.org</code>), the endpoint paths, and adapt your code to handle the new response structure and field names — see the sections below.
+  <strong>Note:</strong> The authentication header is the same across all API versions. What changes depends on which migration path you are on: if you are migrating from <strong>KPI v1 to KPI v2</strong>, you only need to update the URL path. If you are migrating from <strong>KoboCAT v1 to KPI v2</strong>, you will also need to update the base domain (<code>kc.kobotoolbox.org</code> → <code>kf.kobotoolbox.org</code>), the endpoint paths, and adapt your code to handle the new response structure and field names — see the sections below.
 </p>
 
 
@@ -228,7 +228,7 @@ These endpoints retrieve all submission data for a specific project or a single 
 Based on the `url` you get from the `data` property in the asset endpoint, you can fetch the submission data in `v2` using.
 
 <p class="note">
-  <b>Note:</b> The response structure is nearly the same, <strong>except that <code>v2</code> introduces pagination</strong>. If you have more than 1,000 submissions, you will need to follow the <code>next</code> URL to retrieve subsequent pages.
+  <strong>Note:</strong> The response structure is nearly the same, <strong>except that <code>v2</code> introduces pagination</strong>. If you have more than 1,000 submissions, you will need to follow the <code>next</code> URL to retrieve subsequent pages.
 </p>
 
 **Code examples**
@@ -359,7 +359,7 @@ These endpoints return detailed attributes of all forms shared with you or about
 
 
 <p class="note">
-  <b>Note:</b> The <code>v2</code> endpoint follows the same structure for each item as listed below, but introduces pagination. Some properties from the <code>v1</code> endpoint are not directly available on the <code>v2</code> asset endpoint, but they can still be accessed differently (see the legend below the table for more details).
+  <strong>Note:</strong> The <code>v2</code> endpoint follows the same structure for each item as listed below, but introduces pagination. Some properties from the <code>v1</code> endpoint are not directly available on the <code>v2</code> asset endpoint, but they can still be accessed differently (see the legend below the table for more details).
 </p>
 
 
@@ -865,7 +865,7 @@ These endpoints return a flat list of all media files associated with the curren
 
 
 <p class="note">
-  <b>Note:</b> <code>v2</code> only supports media files: <code>media</code> from <code>v1</code> is mapped to <code>form_media</code> in <code>v2</code>. <strong>Other metadata types</strong> from <code>v1</code> (e.g., <code>doc</code>, <code>mapbox_layer</code>, <code>source</code> etc.) have not been ported to <code>v2</code>.
+  <strong>Note:</strong> <code>v2</code> only supports media files: <code>media</code> from <code>v1</code> is mapped to <code>form_media</code> in <code>v2</code>. <strong>Other metadata types</strong> from <code>v1</code> (e.g., <code>doc</code>, <code>mapbox_layer</code>, <code>source</code> etc.) have not been ported to <code>v2</code>.
 </p>
 
 
