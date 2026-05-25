@@ -1,5 +1,5 @@
 # Styling your forms using XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c61044760c76d14026c19de2f747c5e865a4255b/source/form_style_xls.md" class="reference">7 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c8c9473a7146cd3a0e1d698c9f81dcea8c767388/source/form_style_xls.md" class="reference">25 May 2026</a>
 
 With KoboToolbox, you can customize the appearance of your forms and questions to highlight key information and adapt the layout to your data collection needs. This includes applying themes to web forms, adding headers and lists in note questions, and using color or bold formatting for emphasis.
 
