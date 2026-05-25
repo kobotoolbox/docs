@@ -16,6 +16,16 @@ La única excepción a la regla anterior es el endpoint `/exports/`. En `v1`, el
 
 En `v2`, por razones de rendimiento, las exportaciones ahora están **limitadas por proyecto** y deben accederse a través de `/api/v2/assets/{asset_uid}/exports/`.
 
+### Excepción para el endpoint de envíos
+El endpoint `/assets/{asset_uid}/submissions/` ha sido **renombrado** en `v2`. Además de actualizar la ruta base, también debes cambiar el nombre del endpoint de `submissions` a `data`:
+
+| Endpoint `v1`                               | Equivalente `v2`                               |
+|---------------------------------------------|------------------------------------------------|
+| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`             |
+| `/assets/{asset_uid}/submissions/{id}/`     | `/api/v2/assets/{asset_uid}/data/{id}/`<sup>1</sup> |
+
+<sup>1</sup> `{id}` puede ser el identificador entero del envío o su `root_uuid`.
+
 
 
 ## Migración de KoboCAT v1 a KPI v2

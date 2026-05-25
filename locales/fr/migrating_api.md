@@ -16,6 +16,16 @@ La seule exception à la règle ci-dessus concerne le point de terminaison `/exp
 
 Dans `v2`, pour des raisons de performance, les exports sont désormais **limités par projet** et doivent être accessibles via `/api/v2/assets/{asset_uid}/exports/`.
 
+### Exception pour le point de terminaison submissions
+Le point de terminaison `/assets/{asset_uid}/submissions/` a été **renommé** dans `v2`. En plus de mettre à jour le chemin de base, vous devez également changer le nom du point de terminaison de `submissions` à `data` :
+
+| Point de terminaison `v1`                   | Équivalent `v2`                                |
+|---------------------------------------------|------------------------------------------------|
+| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`             |
+| `/assets/{asset_uid}/submissions/{id}/`     | `/api/v2/assets/{asset_uid}/data/{id}/`<sup>1</sup> |
+
+<sup>1</sup> `{id}` peut être l'identifiant entier de la soumission ou son `root_uuid`.
+
 
 
 ## Migration de KoboCAT v1 vers KPI v2
