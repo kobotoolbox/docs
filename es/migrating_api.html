@@ -109,9 +109,49 @@
           
   <section id="migracion-de-la-api-v1-a-v2">
 <h1>Migración de la API v1 a v2<a class="headerlink" href="#migracion-de-la-api-v1-a-v2" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/76cb7b24ef029f1fbd8eb912e39e28f83165f571/source/migrating_api.md" class="reference">7 ago 2025</a></p>
-<p>Como parte de nuestros esfuerzos continuos para optimizar y modernizar la plataforma KoboToolbox, estamos eliminando gradualmente los endpoints <code class="docutils literal notranslate"><span class="pre">v1</span></code> de KPI y KoboCAT. Todos los endpoints <code class="docutils literal notranslate"><span class="pre">v1</span></code> de KPI y KoboCAT están ahora obsoletos y se eliminarán por completo en enero de 2026. Los endpoints <code class="docutils literal notranslate"><span class="pre">v1</span></code> están siendo reemplazados por la API KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code>, que es más robusta y cuenta con soporte completo.</p>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e3ce02358a9ac8e0298d590fee68b0508734e899/source/migrating_api.md" class="reference">25 mayo 2026</a></p>
+<p>Como parte de nuestros esfuerzos continuos para optimizar y modernizar la plataforma KoboToolbox, estamos eliminando gradualmente los endpoints <code class="docutils literal notranslate"><span class="pre">v1</span></code> de KPI y KoboCAT. Todos los endpoints <code class="docutils literal notranslate"><span class="pre">v1</span></code> de KPI y KoboCAT están ahora obsoletos y se eliminarán por completo en junio de 2026. Los endpoints <code class="docutils literal notranslate"><span class="pre">v1</span></code> están siendo reemplazados por la API KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code>, que es más robusta y cuenta con soporte completo.</p>
 <p>Este artículo explica cómo migrar tus integraciones de API desde la API <code class="docutils literal notranslate"><span class="pre">v1</span></code> (KoboCAT y KPI) a la API KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code>. Cubre cada endpoint <code class="docutils literal notranslate"><span class="pre">v1</span></code> obsoleto y su equivalente en <code class="docutils literal notranslate"><span class="pre">v2</span></code> para ayudarte a realizar la transición de tus flujos de trabajo.</p>
+<section id="autenticacion">
+<h2>Autenticación<a class="headerlink" href="#autenticacion" title="Link to this heading">¶</a></h2>
+<p>Todas las solicitudes a la API — v1 y v2 — requieren un token de API. Inclúyelo en cada solicitud mediante el encabezado <code class="docutils literal notranslate"><span class="pre">Authorization</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Authorization</span><span class="p">:</span> <span class="n">Token</span> <span class="n">xxxx</span>
+</pre></div>
+</div>
+<p>Reemplaza <code class="docutils literal notranslate"><span class="pre">xxxx</span></code> con tu token real. Puedes encontrar tu token en <code class="docutils literal notranslate"><span class="pre">https://kf.kobotoolbox.org/token/</span></code> (o el equivalente de tu servidor).</p>
+<p><strong>curl</strong></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/&quot;</span>
+</pre></div>
+</div>
+<p><strong>Python</strong> (<code class="docutils literal notranslate"><span class="pre">requests</span></code>)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="s2">&quot;xxxx&quot;</span>
+<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://kf.kobotoolbox.org&quot;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Token </span><span class="si">{</span><span class="n">TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/api/v2/assets/&quot;</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</pre></div>
+</div>
+<p><strong>R</strong> (<code class="docutils literal notranslate"><span class="pre">httr</span></code>)</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+
+<span class="n">TOKEN</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;xxxx&quot;</span>
+<span class="n">BASE_URL</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://kf.kobotoolbox.org&quot;</span>
+
+<span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span>
+<span class="w">  </span><span class="nf">paste0</span><span class="p">(</span><span class="n">BASE_URL</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/api/v2/assets/&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Token&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TOKEN</span><span class="p">))</span>
+<span class="p">)</span>
+<span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p class="note">
+  <b>Nota:</b> El encabezado de autenticación es el mismo en todas las versiones de la API. Lo que cambia depende de tu ruta de migración: si estás migrando de <strong>KPI v1 a KPI v2</strong>, solo necesitas actualizar la ruta URL. Si estás migrando de <strong>KoboCAT v1 a KPI v2</strong>, también deberás actualizar el dominio base (<code>kc.kobotoolbox.org</code> → <code>kf.kobotoolbox.org</code>), las rutas de los endpoints y adaptar tu código para manejar la nueva estructura de respuesta y los nuevos nombres de campos — consulta las secciones a continuación.
+</p>
+</section>
 <section id="migracion-de-kpi-v1-a-kpi-v2">
 <h2>Migración de KPI v1 a KPI v2<a class="headerlink" href="#migracion-de-kpi-v1-a-kpi-v2" title="Link to this heading">¶</a></h2>
 <p>La migración de la API KPI antigua (<code class="docutils literal notranslate"><span class="pre">v1</span></code>) a la nueva versión (<code class="docutils literal notranslate"><span class="pre">v2</span></code>) es sencilla en la mayoría de los casos.</p>
@@ -191,7 +231,76 @@
 </tbody>
 </table>
 <p><sup>1</sup> <em>En el endpoint <code class="docutils literal notranslate"><span class="pre">/api/v2/assets</span></code>, ya no se utilizan identificadores enteros secuenciales. Cada entrada se identifica de forma única mediante un <code class="docutils literal notranslate"><span class="pre">uid</span></code> alfanumérico</em></p>
-<p><strong>Ejemplo de respuesta <code class="docutils literal notranslate"><span class="pre">v1</span></code></strong></p>
+<section id="ejemplos-de-codigo">
+<h4>Ejemplos de código<a class="headerlink" href="#ejemplos-de-codigo" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>curl</strong></summary>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># v1 (obsoleto)</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/data&quot;</span>
+
+<span class="c1"># v2</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/?asset_type=survey&quot;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>Python</strong></summary>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="s2">&quot;xxxx&quot;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Token </span><span class="si">{</span><span class="n">TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response = requests.get(&quot;https://kc.kobotoolbox.org/api/v1/data&quot;, headers=headers)</span>
+
+<span class="c1"># v2</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/&quot;</span><span class="p">,</span>
+    <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;asset_type&quot;</span><span class="p">:</span> <span class="s2">&quot;survey&quot;</span><span class="p">},</span>
+    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span>
+<span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="n">projects</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;results&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">project</span> <span class="ow">in</span> <span class="n">projects</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">project</span><span class="p">[</span><span class="s2">&quot;uid&quot;</span><span class="p">],</span> <span class="n">project</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>R</strong></summary>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
+
+<span class="n">TOKEN</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;xxxx&quot;</span>
+<span class="n">headers</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Token&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TOKEN</span><span class="p">))</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response &lt;- GET(&quot;https://kc.kobotoolbox.org/api/v1/data&quot;, headers)</span>
+
+<span class="c1"># v2</span>
+<span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span>
+<span class="w">  </span><span class="s">&quot;https://kf.kobotoolbox.org/api/v2/assets/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">asset_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;survey&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">headers</span>
+<span class="p">)</span>
+<span class="n">projects</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span><span class="o">$</span><span class="n">results</span>
+
+<span class="kr">for</span><span class="w"> </span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="n">projects</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nf">cat</span><span class="p">(</span><span class="n">p</span><span class="o">$</span><span class="n">uid</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="o">$</span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</details>
+</section>
+<section id="ejemplos-de-respuestas">
+<h4>Ejemplos de respuestas<a class="headerlink" href="#ejemplos-de-respuestas" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>Respuesta v1</strong></summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">474</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;id_string&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span><span class="p">,</span>
@@ -201,7 +310,9 @@
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><strong>Respuesta equivalente <code class="docutils literal notranslate"><span class="pre">v2</span></code></strong></p>
+</details>
+<details>
+<summary><strong>Equivalente v2</strong></summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span><span class="p">,</span>
@@ -214,6 +325,8 @@
 <span class="p">}</span>
 </pre></div>
 </div>
+</details>
+</section>
 </section>
 <hr class="docutils" />
 <section id="endpoints-de-datos-datos-de-envio">
@@ -236,9 +349,86 @@
 </table>
 <p>Basándote en la <code class="docutils literal notranslate"><span class="pre">url</span></code> que obtienes de la propiedad <code class="docutils literal notranslate"><span class="pre">data</span></code> en el endpoint del asset, puedes obtener los datos de envío en <code class="docutils literal notranslate"><span class="pre">v2</span></code>.</p>
 <p class="note">
-  <b>Nota:</b> La estructura de respuesta es casi la misma, <strong>excepto que <code>v2</code> introduce paginación</strong>.
+  <b>Nota:</b> La estructura de respuesta es casi la misma, <strong>excepto que <code>v2</code> introduce paginación</strong>. Si tienes más de 1.000 envíos, deberás seguir la URL <code>next</code> para recuperar las páginas siguientes.
 </p>
-<p><strong>Ejemplo de respuesta <code class="docutils literal notranslate"><span class="pre">v1</span></code></strong></p>
+<section id="id1">
+<h4>Ejemplos de código<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h4>
+<p>Reemplaza <code class="docutils literal notranslate"><span class="pre">a4etXeWtqcoodSxLV8a6Uq</span></code> con el <code class="docutils literal notranslate"><span class="pre">uid</span></code> de tu proyecto (consulta el <a class="reference internal" href="#endpoints-de-datos-lista-de-proyectos">endpoint de lista de proyectos</a> arriba).</p>
+<details>
+<summary><strong>curl</strong></summary>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># v1 (obsoleto) — usaba el ID entero del formulario</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/data/474&quot;</span>
+
+<span class="c1"># v2 — usa el uid alfanumérico</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/data/&quot;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>Python</strong></summary>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="s2">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span> <span class="o">=</span> <span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Token </span><span class="si">{</span><span class="n">TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response = requests.get(&quot;https://kc.kobotoolbox.org/api/v1/data/474&quot;, headers=headers)</span>
+<span class="c1"># submissions = response.json()  # devolvía una lista plana</span>
+
+<span class="c1"># v2 — resultados paginados</span>
+<span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/</span><span class="si">{</span><span class="n">ASSET_UID</span><span class="si">}</span><span class="s2">/data/&quot;</span>
+<span class="n">all_submissions</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">while</span> <span class="n">url</span><span class="p">:</span>
+    <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+    <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+    <span class="n">page</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="n">all_submissions</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="n">page</span><span class="p">[</span><span class="s2">&quot;results&quot;</span><span class="p">])</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="n">page</span><span class="p">[</span><span class="s2">&quot;next&quot;</span><span class="p">]</span>  <span class="c1"># None cuando no hay más páginas</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Total de envíos: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">all_submissions</span><span class="p">)</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>R</strong></summary>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
+
+<span class="n">TOKEN</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">headers</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Token&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TOKEN</span><span class="p">))</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response &lt;- GET(paste0(&quot;https://kc.kobotoolbox.org/api/v1/data/474&quot;), headers)</span>
+<span class="c1"># submissions &lt;- content(response, as = &quot;parsed&quot;)  # lista plana</span>
+
+<span class="c1"># v2 — manejar paginación</span>
+<span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;https://kf.kobotoolbox.org/api/v2/assets/&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ASSET_UID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/data/&quot;</span><span class="p">)</span>
+<span class="n">all_submissions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">()</span>
+
+<span class="kr">repeat</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span><span class="n">url</span><span class="p">,</span><span class="w"> </span><span class="n">headers</span><span class="p">)</span>
+<span class="w">  </span><span class="n">page</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="n">all_submissions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">all_submissions</span><span class="p">,</span><span class="w"> </span><span class="n">page</span><span class="o">$</span><span class="n">results</span><span class="p">)</span>
+<span class="w">  </span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="nf">is.null</span><span class="p">(</span><span class="n">page</span><span class="o">$</span><span class="n">`next`</span><span class="p">))</span><span class="w"> </span><span class="kr">break</span>
+<span class="w">  </span><span class="n">url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">page</span><span class="o">$</span><span class="n">`next`</span>
+<span class="p">}</span>
+
+<span class="nf">cat</span><span class="p">(</span><span class="s">&quot;Total de envíos:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">all_submissions</span><span class="p">),</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</details>
+</section>
+<section id="id2">
+<h4>Ejemplos de respuestas<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>Respuesta v1</strong></summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
 <span class="w">  </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">49542</span><span class="p">,</span>
@@ -247,7 +437,9 @@
 <span class="p">]</span>
 </pre></div>
 </div>
-<p><strong>Respuesta equivalente <code class="docutils literal notranslate"><span class="pre">v2</span></code></strong></p>
+</details>
+<details>
+<summary><strong>Equivalente v2</strong></summary>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1200</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;next&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
@@ -262,6 +454,7 @@
 </pre></div>
 </div>
 </details>
+</section>
 </section>
 <hr class="docutils" />
 <section id="endpoints-de-formularios">
@@ -351,6 +544,86 @@
 <sup>2</sup> <em>En <code class="docutils literal notranslate"><span class="pre">v1</span></code>, las etiquetas se devolvían como un array; en <code class="docutils literal notranslate"><span class="pre">v2</span></code>, se devuelven como una cadena separada por comas.</em>
 <sup>3</sup> <em>Estos campos ya no están expuestos. Consulta la sección <strong>Permisos</strong> a continuación para más detalles.</em>
 <sup>4</sup> <em>No es directamente accesible a través del endpoint del asset. Usa el endpoint <code class="docutils literal notranslate"><span class="pre">/api/v2/asset_usage/</span></code> y recupera el campo <code class="docutils literal notranslate"><span class="pre">storage_bytes</span></code> del proyecto correspondiente.</em></p>
+<section id="id3">
+<h4>Ejemplos de código<a class="headerlink" href="#id3" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>curl</strong></summary>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># v1 (obsoleto) — listar todos los formularios</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/forms&quot;</span>
+
+<span class="c1"># v1 (obsoleto) — formulario individual por ID entero</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/forms/474&quot;</span>
+
+<span class="c1"># v2 — listar todos los formularios (paginado)</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/?asset_type=survey&quot;</span>
+
+<span class="c1"># v2 — formulario individual por uid</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/&quot;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>Python</strong></summary>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="s2">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span> <span class="o">=</span> <span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Token </span><span class="si">{</span><span class="n">TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response = requests.get(&quot;https://kc.kobotoolbox.org/api/v1/forms/474&quot;, headers=headers)</span>
+<span class="c1"># form = response.json()</span>
+
+<span class="c1"># v2 — formulario individual</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/</span><span class="si">{</span><span class="n">ASSET_UID</span><span class="si">}</span><span class="s2">/&quot;</span><span class="p">,</span>
+    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span>
+<span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="n">form</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">form</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">])</span>                          <span class="c1"># era: form[&quot;title&quot;]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">form</span><span class="p">[</span><span class="s2">&quot;deployment__submission_count&quot;</span><span class="p">])</span>  <span class="c1"># era: form[&quot;num_of_submissions&quot;]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">form</span><span class="p">[</span><span class="s2">&quot;tag_string&quot;</span><span class="p">])</span>                    <span class="c1"># era: &quot;, &quot;.join(form[&quot;tags&quot;])</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>R</strong></summary>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+
+<span class="n">TOKEN</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">headers</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Token&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TOKEN</span><span class="p">))</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response &lt;- GET(&quot;https://kc.kobotoolbox.org/api/v1/forms/474&quot;, headers)</span>
+<span class="c1"># form &lt;- content(response, as = &quot;parsed&quot;)</span>
+
+<span class="c1"># v2 — formulario individual</span>
+<span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span>
+<span class="w">  </span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;https://kf.kobotoolbox.org/api/v2/assets/&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ASSET_UID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">headers</span>
+<span class="p">)</span>
+<span class="n">form</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span>
+
+<span class="nf">cat</span><span class="p">(</span><span class="n">form</span><span class="o">$</span><span class="n">name</span><span class="p">)</span><span class="w">                           </span><span class="c1"># era: form$title</span>
+<span class="nf">cat</span><span class="p">(</span><span class="n">form</span><span class="o">$</span><span class="n">deployment__submission_count</span><span class="p">)</span><span class="w">   </span><span class="c1"># era: form$num_of_submissions</span>
+<span class="nf">cat</span><span class="p">(</span><span class="n">form</span><span class="o">$</span><span class="n">tag_string</span><span class="p">)</span><span class="w">                     </span><span class="c1"># era: paste(form$tags, collapse = &quot;, &quot;)</span>
+</pre></div>
+</div>
+</details>
+</section>
+<section id="id4">
+<h4>Ejemplos de respuestas<a class="headerlink" href="#id4" title="Link to this heading">¶</a></h4>
 <details>
 <summary><strong>Ejemplo de respuesta <code>v1</code></strong></summary>
 <br>
@@ -474,6 +747,61 @@
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span><span class="w"> </span><span class="nt">&quot;tag_string&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;tag1,tag2,tag3&quot;</span><span class="w"> </span><span class="p">}</span>
 </pre></div>
 </div>
+</section>
+<section id="id5">
+<h4>Ejemplos de código<a class="headerlink" href="#id5" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>curl</strong></summary>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-X<span class="w"> </span>PATCH<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;tag_string&quot;: &quot;tag1,tag2,tag3&quot;}&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/&quot;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>Python</strong></summary>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="s2">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span> <span class="o">=</span> <span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Token </span><span class="si">{</span><span class="n">TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+
+<span class="n">tags</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;tag1&quot;</span><span class="p">,</span> <span class="s2">&quot;tag2&quot;</span><span class="p">,</span> <span class="s2">&quot;tag3&quot;</span><span class="p">]</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">patch</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/</span><span class="si">{</span><span class="n">ASSET_UID</span><span class="si">}</span><span class="s2">/&quot;</span><span class="p">,</span>
+    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+    <span class="n">json</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;tag_string&quot;</span><span class="p">:</span> <span class="s2">&quot;,&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">tags</span><span class="p">)}</span>
+<span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tags updated:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;tag_string&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>R</strong></summary>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
+
+<span class="n">TOKEN</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">headers</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Token&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TOKEN</span><span class="p">))</span>
+
+<span class="n">tags</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="s">&quot;tag1&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tag2&quot;</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;tag3&quot;</span><span class="p">)</span>
+
+<span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">PATCH</span><span class="p">(</span>
+<span class="w">  </span><span class="nf">paste0</span><span class="p">(</span><span class="s">&quot;https://kf.kobotoolbox.org/api/v2/assets/&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ASSET_UID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">headers</span><span class="p">,</span>
+<span class="w">  </span><span class="n">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">toJSON</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span><span class="n">tag_string</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="n">tags</span><span class="p">,</span><span class="w"> </span><span class="n">collapse</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;,&quot;</span><span class="p">)),</span><span class="w"> </span><span class="n">auto_unbox</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">),</span>
+<span class="w">  </span><span class="nf">content_type_json</span><span class="p">()</span>
+<span class="p">)</span>
+<span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span>
+<span class="nf">cat</span><span class="p">(</span><span class="s">&quot;Tags updated:&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">result</span><span class="o">$</span><span class="n">tag_string</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</details>
 <p><strong>Permisos</strong></p>
 <p>En <code class="docutils literal notranslate"><span class="pre">v2</span></code>, los campos <code class="docutils literal notranslate"><span class="pre">public</span></code>, <code class="docutils literal notranslate"><span class="pre">public_data</span></code> y <code class="docutils literal notranslate"><span class="pre">require_auth</span></code> ya no están expuestos como atributos booleanos. En su lugar, <strong>el acceso anónimo se controla mediante asignaciones de permisos explícitas al <code class="docutils literal notranslate"><span class="pre">AnonymousUser</span></code></strong>.</p>
 <p>Se aplican los siguientes mapeos:</p>
@@ -482,8 +810,131 @@
 <li><p><code class="docutils literal notranslate"><span class="pre">public_data:</span> <span class="pre">true</span></code> → el <code class="docutils literal notranslate"><span class="pre">AnonymousUser</span></code> tiene el permiso <code class="docutils literal notranslate"><span class="pre">view_submissions</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">require_auth:</span> <span class="pre">false</span></code> → el <code class="docutils literal notranslate"><span class="pre">AnonymousUser</span></code> tiene el permiso <code class="docutils literal notranslate"><span class="pre">add_submissions</span></code></p></li>
 </ul>
+<p>Los permisos están disponibles en el endpoint de detalle del asset (<code class="docutils literal notranslate"><span class="pre">/api/v2/assets/{uid}/</span></code>) bajo la propiedad <code class="docutils literal notranslate"><span class="pre">permissions</span></code>.</p>
+</section>
+<section id="id6">
+<h4>Ejemplos de código<a class="headerlink" href="#id6" title="Link to this heading">¶</a></h4>
+<p><strong>Lectura de permisos</strong></p>
 <details>
-<summary><strong>Ejemplo: permisos de usuario/a anónimo/a en <code>v2</code></strong></summary>
+<summary><strong>curl</strong></summary>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/&quot;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>Python</strong></summary>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="s2">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span> <span class="o">=</span> <span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://kf.kobotoolbox.org&quot;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Token </span><span class="si">{</span><span class="n">TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/api/v2/assets/</span><span class="si">{</span><span class="n">ASSET_UID</span><span class="si">}</span><span class="s2">/&quot;</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="n">permissions</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;permissions&quot;</span><span class="p">]</span>
+
+<span class="c1"># Verificar qué permisos están asignados al AnonymousUser</span>
+<span class="c1"># (equivalente de los campos v1 public/public_data/require_auth)</span>
+<span class="n">anon_permissions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">p</span><span class="p">[</span><span class="s2">&quot;permission&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;/&quot;</span><span class="p">)[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>  <span class="c1"># extraer el codename del permiso desde la URL</span>
+    <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="n">permissions</span>
+    <span class="k">if</span> <span class="n">p</span><span class="p">[</span><span class="s2">&quot;user&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;/AnonymousUser/&quot;</span><span class="p">)</span>
+<span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Anonymous user permissions:&quot;</span><span class="p">,</span> <span class="n">anon_permissions</span><span class="p">)</span>
+<span class="c1"># ej. [&#39;view_asset&#39;, &#39;view_submissions&#39;]</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>R</strong></summary>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+
+<span class="n">TOKEN</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">BASE_URL</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://kf.kobotoolbox.org&quot;</span>
+<span class="n">headers</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Token&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TOKEN</span><span class="p">))</span>
+
+<span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="n">BASE_URL</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/api/v2/assets/&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ASSET_UID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">headers</span><span class="p">)</span>
+<span class="n">permissions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span><span class="o">$</span><span class="n">permissions</span>
+
+<span class="c1"># Verificar qué permisos están asignados al AnonymousUser</span>
+<span class="n">anon_permissions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">Filter</span><span class="p">(</span>
+<span class="w">  </span><span class="kr">function</span><span class="p">(</span><span class="n">p</span><span class="p">)</span><span class="w"> </span><span class="nf">grepl</span><span class="p">(</span><span class="s">&quot;AnonymousUser&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">p</span><span class="o">$</span><span class="n">user</span><span class="p">),</span>
+<span class="w">  </span><span class="n">permissions</span>
+<span class="p">)</span>
+<span class="kr">for</span><span class="w"> </span><span class="p">(</span><span class="n">p</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="n">anon_permissions</span><span class="p">)</span><span class="w"> </span><span class="nf">cat</span><span class="p">(</span><span class="n">p</span><span class="o">$</span><span class="n">label</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</details>
+<p><strong>Asignación de permisos al AnonymousUser</strong></p>
+<p>Para replicar la configuración <code class="docutils literal notranslate"><span class="pre">public:</span> <span class="pre">true</span></code> de v1, envía un POST con una nueva asignación de permisos al endpoint <code class="docutils literal notranslate"><span class="pre">permission-assignments</span></code>.</p>
+<details>
+<summary><strong>curl</strong></summary>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># Otorgar a AnonymousUser view_asset (equivalente de v1 public: true)</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;user&quot;: &quot;https://kf.kobotoolbox.org/api/v2/users/AnonymousUser/&quot;, &quot;permission&quot;: &quot;https://kf.kobotoolbox.org/api/v2/permissions/view_asset/&quot;}&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/&quot;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>Python</strong></summary>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="s2">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span> <span class="o">=</span> <span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://kf.kobotoolbox.org&quot;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Token </span><span class="si">{</span><span class="n">TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+
+<span class="c1"># Otorgar a AnonymousUser view_asset (equivalente de v1 public: true)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/api/v2/assets/</span><span class="si">{</span><span class="n">ASSET_UID</span><span class="si">}</span><span class="s2">/permission-assignments/&quot;</span><span class="p">,</span>
+    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+    <span class="n">json</span><span class="o">=</span><span class="p">{</span>
+        <span class="s2">&quot;user&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/api/v2/users/AnonymousUser/&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;permission&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/api/v2/permissions/view_asset/&quot;</span><span class="p">,</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Permission assigned:&quot;</span><span class="p">,</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;label&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>R</strong></summary>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
+
+<span class="n">TOKEN</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">BASE_URL</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://kf.kobotoolbox.org&quot;</span>
+<span class="n">headers</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Token&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TOKEN</span><span class="p">))</span>
+
+<span class="c1"># Otorgar a AnonymousUser view_asset (equivalente de v1 public: true)</span>
+<span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">POST</span><span class="p">(</span>
+<span class="w">  </span><span class="nf">paste0</span><span class="p">(</span><span class="n">BASE_URL</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/api/v2/assets/&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ASSET_UID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/permission-assignments/&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">headers</span><span class="p">,</span>
+<span class="w">  </span><span class="n">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">toJSON</span><span class="p">(</span><span class="nf">list</span><span class="p">(</span>
+<span class="w">    </span><span class="n">user</span><span class="w">       </span><span class="o">=</span><span class="w"> </span><span class="nf">paste0</span><span class="p">(</span><span class="n">BASE_URL</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/api/v2/users/AnonymousUser/&quot;</span><span class="p">),</span>
+<span class="w">    </span><span class="n">permission</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste0</span><span class="p">(</span><span class="n">BASE_URL</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/api/v2/permissions/view_asset/&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="p">),</span><span class="w"> </span><span class="n">auto_unbox</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">TRUE</span><span class="p">),</span>
+<span class="w">  </span><span class="nf">content_type_json</span><span class="p">()</span>
+<span class="p">)</span>
+<span class="n">result</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span>
+<span class="nf">cat</span><span class="p">(</span><span class="s">&quot;Permission assigned:&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">result</span><span class="o">$</span><span class="n">label</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</details>
+</section>
+<section id="id7">
+<h4>Ejemplos de respuestas<a class="headerlink" href="#id7" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>Ejemplo: permisos de <code>v2</code> para el usuario anónimo</strong></summary>
 <br>
 <div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
 <span class="w">  </span><span class="p">{</span>
@@ -510,11 +961,12 @@
 </details>
 <br>
 </section>
+</section>
 <hr class="docutils" />
 <section id="endpoint-de-etiquetas">
 <h3>Endpoint de etiquetas<a class="headerlink" href="#endpoint-de-etiquetas" title="Link to this heading">¶</a></h3>
 <p>El endpoint <code class="docutils literal notranslate"><span class="pre">/api/v1/forms/&lt;pk&gt;/labels</span></code> de <code class="docutils literal notranslate"><span class="pre">v1</span></code> devuelve un diccionario que mapea cada nombre de campo en el formulario a su etiqueta correspondiente, permitiendo una visualización más amigable de los datos del formulario.</p>
-<p>Este endpoint no se ha portado a <code class="docutils literal notranslate"><span class="pre">v2</span></code>, pero aún es posible <strong>etiquetar</strong> un proyecto, como se describe <a class="reference internal" href="#tags"><span class="xref myst">arriba</span></a>.</p>
+<p>Este endpoint no se ha portado a <code class="docutils literal notranslate"><span class="pre">v2</span></code>, pero aún es posible <strong>etiquetar</strong> o <strong>marcar</strong> un proyecto, como se describe <a class="reference internal" href="#tags"><span class="xref myst">arriba</span></a>.</p>
 </section>
 <hr class="docutils" />
 <section id="endpoints-de-metadatos">
@@ -577,36 +1029,150 @@
 </tbody>
 </table>
 <p><sup>1</sup> <em>En <code class="docutils literal notranslate"><span class="pre">v2</span></code>, el proyecto relacionado es accesible a través del campo <code class="docutils literal notranslate"><span class="pre">asset</span></code>, que contiene una URL completa en lugar de un ID entero.</em></p>
-<p><strong>Ejemplo de respuesta <code class="docutils literal notranslate"><span class="pre">v1</span></code></strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;id&quot;</span><span class="p">:</span> <span class="mi">271</span><span class="p">,</span>
-  <span class="s2">&quot;xform&quot;</span><span class="p">:</span> <span class="mi">374</span><span class="p">,</span>
-  <span class="s2">&quot;data_value&quot;</span><span class="p">:</span> <span class="s2">&quot;goose.jpg&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;data_type&quot;</span><span class="p">:</span> <span class="s2">&quot;media&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;data_file&quot;</span><span class="p">:</span> <span class="s2">&quot;/project_owner/form-media/b44a7c2cd0f244e6b405821582364657/goose.jpg&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;data_file_type&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;file_hash&quot;</span><span class="p">:</span> <span class="s2">&quot;md5:93fb96bced1e3b392abfc22934afe51a&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/metadata/271?format=json&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;from_kpi&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-  <span class="s2">&quot;data_filename&quot;</span><span class="p">:</span> <span class="s2">&quot;goose.jpg&quot;</span>
+<section id="id8">
+<h4>Ejemplos de código<a class="headerlink" href="#id8" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>curl</strong></summary>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># v1 (obsoleto) — listar todos los archivos multimedia de todos los proyectos</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/metadata&quot;</span>
+
+<span class="c1"># v1 (obsoleto) — archivo individual por ID entero</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/metadata/271&quot;</span>
+
+<span class="c1"># v2 — listar archivos multimedia de un proyecto específico</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/&quot;</span>
+
+<span class="c1"># v2 — archivo individual por uid</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/&quot;</span>
+
+<span class="c1"># v2 — subir un nuevo archivo multimedia</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-F<span class="w"> </span><span class="s2">&quot;file_type=form_media&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-F<span class="w"> </span><span class="s2">&quot;content=@/path/to/goose.jpg&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/&quot;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>Python</strong></summary>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="s2">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span> <span class="o">=</span> <span class="s2">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://kf.kobotoolbox.org&quot;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Token </span><span class="si">{</span><span class="n">TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response = requests.get(&quot;https://kc.kobotoolbox.org/api/v1/metadata&quot;, headers=headers)</span>
+<span class="c1"># files = response.json()  # lista plana de todos los proyectos</span>
+
+<span class="c1"># v2 — listar archivos multimedia de un proyecto específico (paginado)</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+    <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/api/v2/assets/</span><span class="si">{</span><span class="n">ASSET_UID</span><span class="si">}</span><span class="s2">/files/&quot;</span><span class="p">,</span>
+    <span class="n">headers</span><span class="o">=</span><span class="n">headers</span>
+<span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="n">files</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;results&quot;</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">files</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">f</span><span class="p">[</span><span class="s2">&quot;uid&quot;</span><span class="p">],</span> <span class="n">f</span><span class="p">[</span><span class="s2">&quot;metadata&quot;</span><span class="p">][</span><span class="s2">&quot;filename&quot;</span><span class="p">])</span>  <span class="c1"># era: f[&quot;id&quot;], f[&quot;data_filename&quot;]</span>
+
+<span class="c1"># v2 — subir un nuevo archivo multimedia</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;/path/to/goose.jpg&quot;</span><span class="p">,</span> <span class="s2">&quot;rb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fh</span><span class="p">:</span>
+    <span class="n">upload</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+        <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/api/v2/assets/</span><span class="si">{</span><span class="n">ASSET_UID</span><span class="si">}</span><span class="s2">/files/&quot;</span><span class="p">,</span>
+        <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+        <span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;file_type&quot;</span><span class="p">:</span> <span class="s2">&quot;form_media&quot;</span><span class="p">},</span>
+        <span class="n">files</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="n">fh</span><span class="p">}</span>
+    <span class="p">)</span>
+<span class="n">upload</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Uploaded:&quot;</span><span class="p">,</span> <span class="n">upload</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&quot;metadata&quot;</span><span class="p">][</span><span class="s2">&quot;filename&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>R</strong></summary>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+
+<span class="n">TOKEN</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;xxxx&quot;</span>
+<span class="n">ASSET_UID</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;a4etXeWtqcoodSxLV8a6Uq&quot;</span>
+<span class="n">BASE_URL</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://kf.kobotoolbox.org&quot;</span>
+<span class="n">headers</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Token&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TOKEN</span><span class="p">))</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response &lt;- GET(&quot;https://kc.kobotoolbox.org/api/v1/metadata&quot;, headers)</span>
+<span class="c1"># files &lt;- content(response, as = &quot;parsed&quot;)  # lista plana de todos los proyectos</span>
+
+<span class="c1"># v2 — listar archivos multimedia de un proyecto específico</span>
+<span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span>
+<span class="w">  </span><span class="nf">paste0</span><span class="p">(</span><span class="n">BASE_URL</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/api/v2/assets/&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ASSET_UID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/files/&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">headers</span>
+<span class="p">)</span>
+<span class="n">files</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span><span class="o">$</span><span class="n">results</span>
+
+<span class="kr">for</span><span class="w"> </span><span class="p">(</span><span class="n">f</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="n">files</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nf">cat</span><span class="p">(</span><span class="n">f</span><span class="o">$</span><span class="n">uid</span><span class="p">,</span><span class="w"> </span><span class="n">f</span><span class="o">$</span><span class="n">metadata</span><span class="o">$</span><span class="n">filename</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span><span class="w">  </span><span class="c1"># era: f$id, f$data_filename</span>
+<span class="p">}</span>
+
+<span class="c1"># v2 — subir un nuevo archivo multimedia</span>
+<span class="n">upload</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">POST</span><span class="p">(</span>
+<span class="w">  </span><span class="nf">paste0</span><span class="p">(</span><span class="n">BASE_URL</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/api/v2/assets/&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">ASSET_UID</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/files/&quot;</span><span class="p">),</span>
+<span class="w">  </span><span class="n">headers</span><span class="p">,</span>
+<span class="w">  </span><span class="n">body</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+<span class="w">    </span><span class="n">file_type</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;form_media&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="n">content</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="nf">upload_file</span><span class="p">(</span><span class="s">&quot;/path/to/goose.jpg&quot;</span><span class="p">)</span>
+<span class="w">  </span><span class="p">)</span>
+<span class="p">)</span>
+<span class="nf">cat</span><span class="p">(</span><span class="s">&quot;Uploaded:&quot;</span><span class="p">,</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">upload</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span><span class="o">$</span><span class="n">metadata</span><span class="o">$</span><span class="n">filename</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</details>
+</section>
+<section id="id9">
+<h4>Ejemplos de respuestas<a class="headerlink" href="#id9" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>Respuesta v1</strong></summary>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">271</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;xform&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">374</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;goose.jpg&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;media&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data_file&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;/project_owner/form-media/b44a7c2cd0f244e6b405821582364657/goose.jpg&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data_file_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;image/jpeg&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;file_hash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;md5:93fb96bced1e3b392abfc22934afe51a&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/metadata/271?format=json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;from_kpi&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;data_filename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;goose.jpg&quot;</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p><strong>Respuesta equivalente <code class="docutils literal notranslate"><span class="pre">v2</span></code></strong></p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;uid&quot;</span><span class="p">:</span> <span class="s2">&quot;afoeCcF3AcGNpWUoM6bvKj9&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;asset&quot;</span><span class="p">:</span> <span class="s2">&quot;http://kf.kobo.localhost/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;file_type&quot;</span><span class="p">:</span> <span class="s2">&quot;form_media&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;content&quot;</span><span class="p">:</span> <span class="s2">&quot;http://kf.kobo.localhost/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/content/&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;metadata&quot;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s2">&quot;hash&quot;</span><span class="p">:</span> <span class="s2">&quot;md5:93fb96bced1e3b392abfc22934afe51a&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;goose.jpg&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;mimetype&quot;</span><span class="p">:</span> <span class="s2">&quot;image/jpeg&quot;</span>
-  <span class="p">},</span>
-  <span class="o">...</span>
+</details>
+<details>
+<summary><strong>Equivalente v2</strong></summary>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;afoeCcF3AcGNpWUoM6bvKj9&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;asset&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;file_type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;form_media&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;content&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/content/&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;metadata&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;hash&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;md5:93fb96bced1e3b392abfc22934afe51a&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;goose.jpg&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;mimetype&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;image/jpeg&quot;</span>
+<span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
 </div>
+</details>
+</section>
 </section>
 <hr class="docutils" />
 <section id="endpoints-de-usuario-a">
@@ -679,6 +1245,113 @@
 </table>
 <p><sup>1</sup> <em>No portado a <code class="docutils literal notranslate"><span class="pre">v2</span></code></em></p>
 <p><sup>2</sup> <em>Usa https://kf.domain.tld/token en su lugar</em></p>
+<section id="id10">
+<h4>Ejemplos de código<a class="headerlink" href="#id10" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>curl</strong></summary>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># v1 (obsoleto)</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kc.kobotoolbox.org/api/v1/user&quot;</span>
+
+<span class="c1"># v2</span>
+curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">&quot;Authorization: Token xxxx&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span><span class="s2">&quot;https://kf.kobotoolbox.org/me/&quot;</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>Python</strong></summary>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">requests</span>
+
+<span class="n">TOKEN</span> <span class="o">=</span> <span class="s2">&quot;xxxx&quot;</span>
+<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s2">&quot;https://kf.kobotoolbox.org&quot;</span>
+<span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;Authorization&quot;</span><span class="p">:</span> <span class="sa">f</span><span class="s2">&quot;Token </span><span class="si">{</span><span class="n">TOKEN</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">}</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response = requests.get(&quot;https://kc.kobotoolbox.org/api/v1/user&quot;, headers=headers)</span>
+<span class="c1"># user = response.json()</span>
+<span class="c1"># print(user[&quot;username&quot;], user[&quot;email&quot;])</span>
+
+<span class="c1"># v2</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s2">/me/&quot;</span><span class="p">,</span> <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">)</span>
+<span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+<span class="n">user</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="s2">&quot;username&quot;</span><span class="p">])</span>                        <span class="c1"># igual que v1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="s2">&quot;email&quot;</span><span class="p">])</span>                           <span class="c1"># igual que v1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="s2">&quot;extra_details&quot;</span><span class="p">][</span><span class="s2">&quot;organization&quot;</span><span class="p">])</span>   <span class="c1"># era: user[&quot;organization&quot;]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="s2">&quot;extra_details&quot;</span><span class="p">][</span><span class="s2">&quot;country&quot;</span><span class="p">])</span>        <span class="c1"># era: user[&quot;country&quot;]</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">user</span><span class="p">[</span><span class="s2">&quot;extra_details__uid&quot;</span><span class="p">])</span>              <span class="c1"># era: user[&quot;id&quot;]</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>R</strong></summary>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+
+<span class="n">TOKEN</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;xxxx&quot;</span>
+<span class="n">BASE_URL</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">&quot;https://kf.kobotoolbox.org&quot;</span>
+<span class="n">headers</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">&quot;Token&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">TOKEN</span><span class="p">))</span>
+
+<span class="c1"># v1 (obsoleto)</span>
+<span class="c1"># response &lt;- GET(&quot;https://kc.kobotoolbox.org/api/v1/user&quot;, headers)</span>
+<span class="c1"># user &lt;- content(response, as = &quot;parsed&quot;)</span>
+
+<span class="c1"># v2</span>
+<span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span><span class="nf">paste0</span><span class="p">(</span><span class="n">BASE_URL</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;/me/&quot;</span><span class="p">),</span><span class="w"> </span><span class="n">headers</span><span class="p">)</span>
+<span class="n">user</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;parsed&quot;</span><span class="p">)</span>
+
+<span class="nf">cat</span><span class="p">(</span><span class="n">user</span><span class="o">$</span><span class="n">username</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span><span class="w">                         </span><span class="c1"># igual que v1</span>
+<span class="nf">cat</span><span class="p">(</span><span class="n">user</span><span class="o">$</span><span class="n">email</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span><span class="w">                            </span><span class="c1"># igual que v1</span>
+<span class="nf">cat</span><span class="p">(</span><span class="n">user</span><span class="o">$</span><span class="n">extra_details</span><span class="o">$</span><span class="n">organization</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span><span class="w">       </span><span class="c1"># era: user$organization</span>
+<span class="nf">cat</span><span class="p">(</span><span class="n">user</span><span class="o">$</span><span class="n">extra_details</span><span class="o">$</span><span class="n">country</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span><span class="w">            </span><span class="c1"># era: user$country</span>
+<span class="nf">cat</span><span class="p">(</span><span class="n">user</span><span class="o">$</span><span class="n">extra_details__uid</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;\n&quot;</span><span class="p">)</span><span class="w">               </span><span class="c1"># era: user$id</span>
+</pre></div>
+</div>
+</details>
+</section>
+<section id="id11">
+<h4>Ejemplos de respuestas<a class="headerlink" href="#id11" title="Link to this heading">¶</a></h4>
+<details>
+<summary><strong>Respuesta v1</strong></summary>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">42</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;project_owner&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;owner@example.org&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nairobi&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;KEN&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Humanitarian Org&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;website&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.org&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;twitter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;project_owner&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;gravatar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.gravatar.com/avatar/abc123?s=40&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;require_auth&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;api_token&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;e291a91bf3dd94b45748f6865cd4710246219347&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</details>
+<details>
+<summary><strong>Equivalente v2</strong></summary>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;username&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;project_owner&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;email&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;owner@example.org&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;gravatar&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.gravatar.com/avatar/abc123?s=40&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;extra_details&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;city&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Nairobi&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;country&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;KEN&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;organization&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Humanitarian Org&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;website&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://example.org&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;twitter&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;project_owner&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;require_auth&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;extra_details__uid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;u9rb4EUVEgC22wbHfVfr7S&quot;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</details>
+</section>
 </section>
 </section>
 </section>
@@ -829,6 +1502,7 @@
 <li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Migración de la API v1 a v2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#autenticacion">Autenticación</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#migracion-de-kpi-v1-a-kpi-v2">Migración de KPI v1 a KPI v2</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#migracion-de-kobocat-v1-a-kpi-v2">Migración de KoboCAT v1 a KPI v2</a></li>
 </ul>
