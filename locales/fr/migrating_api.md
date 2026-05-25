@@ -11,12 +11,15 @@ La migration de l'ancienne API KPI (`v1`) vers la nouvelle version (`v2`) est si
 
 En général, vous devez uniquement mettre à jour le chemin de base de `/endpoint/` vers `/api/v2/endpoint/`.
 
-### Exception pour le point de terminaison exports
-La seule exception à la règle ci-dessus concerne le point de terminaison `/exports/`. Dans `v1`, le point de terminaison `/exports/` renvoyait **tous les exports pour l'utilisatrice ou utilisateur authentifié** sur tous les projets.
+### Exceptions
+Il existe deux exceptions à la règle ci-dessus.
+
+#### Exception pour le point de terminaison exports
+Dans `v1`, le point de terminaison `/exports/` renvoyait **tous les exports pour l'utilisatrice ou utilisateur authentifié** sur tous les projets.
 
 Dans `v2`, pour des raisons de performance, les exports sont désormais **limités par projet** et doivent être accessibles via `/api/v2/assets/{asset_uid}/exports/`.
 
-### Exception pour le point de terminaison submissions
+#### Exception pour le point de terminaison submissions
 Le point de terminaison `/assets/{asset_uid}/submissions/` a été **renommé** dans `v2`. En plus de mettre à jour le chemin de base, vous devez également changer le nom du point de terminaison de `submissions` à `data` :
 
 | Point de terminaison `v1`                   | Équivalent `v2`                                |

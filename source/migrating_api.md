@@ -12,12 +12,15 @@ Migrating from the old KPI API (`v1`) to the new version (`v2`) is straightforwa
 
 In general, you only need to update the base path from `/endpoint/` to `/api/v2/endpoint/`.
 
-### Exception for exports endpoint
-The only exception to the rule above is for the `/exports/` endpoint. In `v1`, the `/exports/` endpoint returned **all exports for the authenticated user** across all projects.
+### Exceptions
+There are two exceptions to the rule above.
+
+#### Exception for exports endpoint
+In `v1`, the `/exports/` endpoint returned **all exports for the authenticated user** across all projects.
 
 In `v2`, for performance reasons, exports are now **scoped per project** and must be accessed via `/api/v2/assets/{asset_uid}/exports/`.
 
-### Exception for submissions endpoint
+#### Exception for submissions endpoint
 The `/assets/{asset_uid}/submissions/` endpoint has been **renamed** in `v2`. In addition to updating the base path, you must also change the endpoint name from `submissions` to `data`:
 
 | `v1` Endpoint                               | `v2` Equivalent                                     |
