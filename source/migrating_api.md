@@ -1,25 +1,38 @@
 # Migrating from v1 to v2 API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/62f9bf5497b6f6a7e0d1ff3f2e5d1da7bad99168/source/migrating_api.md" class="reference">10 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/62f9bf5497b6f6a7e0d1ff3f2e5d1da7bad99168/source/migrating_api.md" class="reference">25 May 2026</a>
 
 
-As part of our ongoing efforts to streamline and modernize the KoboToolbox platform, we are phasing out KPI and KoboCAT `v1` endpoints. All KPI and KoboCAT `v1` endpoints are now deprecated, and will be removed entirely in June 2026. `v1` endpoints are being phased out in favor of the more robust and fully supported KPI `v2` API. 
+As part of our ongoing efforts to streamline and modernize the KoboToolbox platform, we are phasing out KPI and KoboCAT `v1` endpoints. All KPI and KoboCAT `v1` endpoints are now deprecated, and will be removed entirely in June 2026. `v1` endpoints are being phased out in favor of the more robust and fully supported KPI `v2` API.
 
 This article explains how to migrate your API integrations from the `v1` API (KoboCAT and KPI) to the KPI `v2` API. It covers each deprecated `v1` endpoint and its `v2` equivalent to help you transition your workflows.
 
 
 ## Migrating from KPI v1 to KPI v2
-Migrating from the old KPI API (`v1`) to the new version (`v2`) is straightforward in most cases.  
+Migrating from the old KPI API (`v1`) to the new version (`v2`) is straightforward in most cases.
 
 In general, you only need to update the base path from `/endpoint/` to `/api/v2/endpoint/`.
 
-### Exception for exports endpoint
-The only exception to the rule above is for the `/exports/` endpoint. In `v1`, the `/exports/` endpoint returned **all exports for the authenticated user** across all projects.
+### Exceptions
+There are two exceptions to the rule above.
 
-In `v2`, for performance reasons, exports are now **scoped per project** and must be accessed via `/api/v2/assets/{asset_uid}/exports/`. 
+#### Exception for exports endpoint
+In `v1`, the `/exports/` endpoint returned **all exports for the authenticated user** across all projects.
+
+In `v2`, for performance reasons, exports are now **scoped per project** and must be accessed via `/api/v2/assets/{asset_uid}/exports/`.
+
+#### Exception for submissions endpoint
+The `/assets/{asset_uid}/submissions/` endpoint has been **renamed** in `v2`. In addition to updating the base path, you must also change the endpoint name from `submissions` to `data`:
+
+| `v1` Endpoint                               | `v2` Equivalent                                     |
+|---------------------------------------------|-----------------------------------------------------|
+| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`                  |
+| `/assets/{asset_uid}/submissions/{id}/`     | `/api/v2/assets/{asset_uid}/data/{id}/`<sup>1</sup> |
+
+<sup>1</sup> `{id}` can be either the submission's integer identifier or its `root_uuid`.
 
 
 
-## Migrating from KoboCAT v1 to KPI v2 
+## Migrating from KoboCAT v1 to KPI v2
 The following section lists the main endpoints from the KoboCAT `v1` API and provides their `v2` equivalents.
 
 ### Data endpoints: Project list
@@ -78,12 +91,14 @@ This endpoint returns a list of forms you have access to, with links to their su
 ### Data endpoints: Submission data
 These endpoints retrieve all submission data for a specific project or a single submission from the project. `{uid}` is the unique identifier of the project and `{submission_id}` is the unique identifier of a form submission.
 
-| `v1` Endpoint    | `v2` Equivalent        |
-| ------------- | ---------------------- |
-| `/api/v1/data/<pk>`   | `/api/v2/assets/{uid}/data/` |
-| `/api/v1/data/<pk>/<dataid>`       | `/api/v2/assets/{uid}/data/{submission_id}/`                 |
+| `v1` Endpoint    | `v2` Equivalent                                          |
+| ------------- |----------------------------------------------------------|
+| `/api/v1/data/<pk>`   | `/api/v2/assets/{uid}/data/`                        |
+| `/api/v1/data/<pk>/<dataid>`       | `/api/v2/assets/{uid}/data/{submission_id}/`<sup>1</sup> |
 
-Based on the `url` you get from the `data` property in the asset endpoint, you can fetch the submission data in `v2` using. 
+<sup>1</sup> `{submission_id}` can be either the submission's integer identifier or its `root_uuid`.
+
+Based on the `url` you get from the `data` property in the asset endpoint, you can fetch the submission data in `v2` using.
 
 <p class="note">
   <b>Note:</b> The response structure is nearly the same, <strong>except that <code>v2</code> introduces pagination</strong>.
@@ -121,7 +136,7 @@ Based on the `url` you get from the `data` property in the asset endpoint, you c
 
 
 ### Form endpoints
-These endpoints return detailed attributes of all forms shared with you or about a specific form, where `{uid}` is the unique identifier of the project. 
+These endpoints return detailed attributes of all forms shared with you or about a specific form, where `{uid}` is the unique identifier of the project.
 
 **Endpoint mapping**
 
@@ -157,15 +172,15 @@ These endpoints return detailed attributes of all forms shared with you or about
 | `num_of_submissions`       | `deployment__submission_count`           |
 | `attachment_storage_bytes` | _N/A_<sup>4</sup>                        |
 
-<sup>1</sup> _In the `/api/v2/assets` endpoint, sequential integer identifiers are no longer used. Each entry is uniquely identified by an alphanumeric `uid`_.  
-<sup>2</sup> _In `v1`, tags were returned as an array; in `v2`, they are returned as a comma-separated string._  
-<sup>3</sup> _These fields are no longer exposed. See the **Permissions** section below for more details._  
+<sup>1</sup> _In the `/api/v2/assets` endpoint, sequential integer identifiers are no longer used. Each entry is uniquely identified by an alphanumeric `uid`_.
+<sup>2</sup> _In `v1`, tags were returned as an array; in `v2`, they are returned as a comma-separated string._
+<sup>3</sup> _These fields are no longer exposed. See the **Permissions** section below for more details._
 <sup>4</sup> _Not directly accessible via the asset endpoint. Use the `/api/v2/asset_usage/` endpoint and retrieve the `storage_bytes` field of the corresponding project._
 
 <details>
 <summary><strong>Example <code>v1</code> response</strong></summary>
 <br>
-  
+
 ```json
 {
   "url": "https://kf.kobotoolbox.org/api/v1/forms/474",
@@ -300,15 +315,15 @@ Example payload:
 In `v2`, the fields `public`, `public_data`, and `require_auth` are no longer exposed as boolean attributes. Instead, **anonymous access is controlled via explicit permission assignments to the `AnonymousUser`**.
 
 The following mappings apply:
-- `public: true` → the `AnonymousUser` has the `view_asset` permission  
-- `public_data: true` → the `AnonymousUser` has the `view_submissions` permission  
-- `require_auth: false` → the `AnonymousUser` has the `add_submissions` permission  
+- `public: true` → the `AnonymousUser` has the `view_asset` permission
+- `public_data: true` → the `AnonymousUser` has the `view_submissions` permission
+- `require_auth: false` → the `AnonymousUser` has the `add_submissions` permission
 
 
 <details>
 <summary><strong>Example: <code>v2</code> anonymous user permissions</strong></summary>
 <br>
-  
+
 ```json
 [
   {
@@ -406,7 +421,7 @@ These endpoints return a flat list of all media files associated with the curren
     "filename": "goose.jpg",
     "mimetype": "image/jpeg"
   },
-  ...  
+  ...
 }
 ```
 
@@ -445,8 +460,3 @@ This endpoint returns profile information about the authenticated user, includin
 <sup>1</sup> _Not ported to `v2`_
 
 <sup>2</sup> _Use https://kf.domain.tld/token instead_
-
-
-
-
-
