@@ -7,7 +7,7 @@ As part of our ongoing efforts to streamline and modernize the KoboToolbox platf
 This article explains how to migrate your API integrations from the `v1` API (KoboCAT and KPI) to the KPI `v2` API. It covers each deprecated `v1` endpoint and its `v2` equivalent to help you transition your workflows.
 
 <p class="note">
-  <b>Note:</b> This article is intended for **advanced users** who use the KoboToolbox API for **project management workflows**. Integrations that use <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a>, such as dashboards and other external reporting tools, do not require any changes and are not affected by this migration.
+  <b>Note:</b> This article is intended for <strong>advanced users</strong> who use the KoboToolbox API for <strong>project management workflows</strong>. Integrations that use <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a>, such as dashboards and other external reporting tools, do not require any changes and are not affected by this migration.
 </p>
 
 
@@ -66,12 +66,14 @@ In general, you only need to update the base path from `/endpoint/` to `/api/v2/
 ### Exceptions
 There are two exceptions to the rule above.
 
-#### Exception for exports endpoint
+**Exception for exports endpoint**
+
 In `v1`, the `/exports/` endpoint returned **all exports for the authenticated user** across all projects.
 
 In `v2`, for performance reasons, exports are now **scoped per project** and must be accessed via `/api/v2/assets/{asset_uid}/exports/`.
 
-#### Exception for submissions endpoint
+**Exception for submissions endpoint**
+
 The `/assets/{asset_uid}/submissions/` endpoint has been **renamed** in `v2`. In addition to updating the base path, you must also change the endpoint name from `submissions` to `data`:
 
 | `v1` Endpoint                               | `v2` Equivalent                                     |
@@ -109,7 +111,7 @@ This endpoint returns a list of forms you have access to, with links to their su
 <sup>1</sup> _In the `/api/v2/assets` endpoint, sequential integer identifiers are no longer used. Each entry is uniquely identified by an alphanumeric `uid`_
 
 
-#### Code examples
+**Code examples**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -180,7 +182,7 @@ for (p in projects) {
 ```
 </details>
 
-#### Response examples
+**Response examples**
 
 <details>
 <summary><strong>v1 response</strong></summary>
@@ -229,7 +231,7 @@ Based on the `url` you get from the `data` property in the asset endpoint, you c
   <b>Note:</b> The response structure is nearly the same, <strong>except that <code>v2</code> introduces pagination</strong>. If you have more than 1,000 submissions, you will need to follow the <code>next</code> URL to retrieve subsequent pages.
 </p>
 
-#### Code examples
+**Code examples**
 
 Replace `a4etXeWtqcoodSxLV8a6Uq` with your project's `uid` (see [project list endpoint](#data-endpoints-project-list) above).
 
@@ -309,7 +311,7 @@ cat("Total submissions:", length(all_submissions), "\n")
 ```
 </details>
 
-#### Response examples
+**Response examples**
 
 <details>
 <summary><strong>v1 response</strong></summary>
@@ -388,7 +390,7 @@ These endpoints return detailed attributes of all forms shared with you or about
 <sup>3</sup> _These fields are no longer exposed. See the **Permissions** section below for more details._
 <sup>4</sup> _Not directly accessible via the asset endpoint. Use the `/api/v2/asset_usage/` endpoint and retrieve the `storage_bytes` field of the corresponding project._
 
-#### Code examples
+**Code examples**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -471,7 +473,7 @@ cat(form$tag_string)                     # was: paste(form$tags, collapse = ", "
 ```
 </details>
 
-#### Response examples
+**Response examples**
 
 <details>
 <summary><strong>Example <code>v1</code> response</strong></summary>
@@ -606,7 +608,7 @@ Example payload:
 { "tag_string": "tag1,tag2,tag3" }
 ```
 
-#### Code examples
+**Code examples**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -677,7 +679,7 @@ The following mappings apply:
 
 Permissions are available on the asset detail endpoint (`/api/v2/assets/{uid}/`) under the `permissions` property.
 
-#### Code examples
+**Code examples**
 
 **Reading permissions**
 
@@ -810,7 +812,7 @@ cat("Permission assigned:", result$label, "\n")
 ```
 </details>
 
-#### Response examples
+**Response examples**
 
 <details>
 <summary><strong>Example: <code>v2</code> anonymous user permissions</strong></summary>
@@ -883,7 +885,7 @@ These endpoints return a flat list of all media files associated with the curren
 
 <sup>1</sup> _In `v2`, the related project is accessible via the `asset` field, which contains a full URL instead of an integer ID._
 
-#### Code examples
+**Code examples**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -996,7 +998,7 @@ cat("Uploaded:", content(upload, as = "parsed")$metadata$filename, "\n")
 ```
 </details>
 
-#### Response examples
+**Response examples**
 
 <details>
 <summary><strong>v1 response</strong></summary>
@@ -1071,7 +1073,7 @@ This endpoint returns profile information about the authenticated user, includin
 
 <sup>2</sup> _Use https://kf.domain.tld/token instead_
 
-#### Code examples
+**Code examples**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -1143,7 +1145,7 @@ cat(user$extra_details__uid, "\n")               # was: user$id
 ```
 </details>
 
-#### Response examples
+**Response examples**
 
 <details>
 <summary><strong>v1 response</strong></summary>
