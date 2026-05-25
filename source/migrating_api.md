@@ -1,72 +1,38 @@
 # Migrating from v1 to v2 API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/62f9bf5497b6f6a7e0d1ff3f2e5d1da7bad99168/source/migrating_api.md" class="reference">19 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/76cb7b24ef029f1fbd8eb912e39e28f83165f571/source/migrating_api.md" class="reference">25 May 2026</a>
 
 
-As part of our ongoing efforts to streamline and modernize the KoboToolbox platform, we are phasing out KPI and KoboCAT `v1` endpoints. All KPI and KoboCAT `v1` endpoints are now deprecated, and will be removed entirely in June 2026. `v1` endpoints are being phased out in favor of the more robust and fully supported KPI `v2` API. 
+As part of our ongoing efforts to streamline and modernize the KoboToolbox platform, we are phasing out KPI and KoboCAT `v1` endpoints. All KPI and KoboCAT `v1` endpoints are now deprecated, and will be removed entirely in June 2026. `v1` endpoints are being phased out in favor of the more robust and fully supported KPI `v2` API.
 
 This article explains how to migrate your API integrations from the `v1` API (KoboCAT and KPI) to the KPI `v2` API. It covers each deprecated `v1` endpoint and its `v2` equivalent to help you transition your workflows.
 
 
-## Authentication
-
-All API requests — v1 and v2 — require an API token. Include it in every request using the `Authorization` header:
-
-```
-Authorization: Token xxxx
-```
-
-Replace `xxxx` with your actual token. You can find your token at `https://kf.kobotoolbox.org/token/` (or your server's equivalent).
-
-**curl**
-```bash
-curl -H "Authorization: Token xxxx" "https://kf.kobotoolbox.org/api/v2/assets/"
-```
-
-**Python** (`requests`)
-```python
-import requests
-
-TOKEN = "xxxx"
-BASE_URL = "https://kf.kobotoolbox.org"
-headers = {"Authorization": f"Token {TOKEN}"}
-
-response = requests.get(f"{BASE_URL}/api/v2/assets/", headers=headers)
-response.raise_for_status()
-data = response.json()
-```
-
-**R** (`httr`)
-```r
-library(httr)
-
-TOKEN <- "xxxx"
-BASE_URL <- "https://kf.kobotoolbox.org"
-
-response <- GET(
-  paste0(BASE_URL, "/api/v2/assets/"),
-  add_headers(Authorization = paste("Token", TOKEN))
-)
-data <- content(response, as = "parsed")
-```
-
-<p class="note">
-  <b>Note:</b> The authentication header is the same across all API versions. What changes depends on which migration path you are on: if you are migrating from <strong>KPI v1 to KPI v2</strong>, you only need to update the URL path. If you are migrating from <strong>KoboCAT v1 to KPI v2</strong>, you will also need to update the base domain (<code>kc.kobotoolbox.org</code> → <code>kf.kobotoolbox.org</code>), the endpoint paths, and adapt your code to handle the new response structure and field names — see the sections below.
-</p>
-
-
 ## Migrating from KPI v1 to KPI v2
-Migrating from the old KPI API (`v1`) to the new version (`v2`) is straightforward in most cases.  
+Migrating from the old KPI API (`v1`) to the new version (`v2`) is straightforward in most cases.
 
 In general, you only need to update the base path from `/endpoint/` to `/api/v2/endpoint/`.
 
-### Exception for exports endpoint
-The only exception to the rule above is for the `/exports/` endpoint. In `v1`, the `/exports/` endpoint returned **all exports for the authenticated user** across all projects.
+### Exceptions
+There are two exceptions to the rule above.
 
-In `v2`, for performance reasons, exports are now **scoped per project** and must be accessed via `/api/v2/assets/{asset_uid}/exports/`. 
+#### Exception for exports endpoint
+In `v1`, the `/exports/` endpoint returned **all exports for the authenticated user** across all projects.
+
+In `v2`, for performance reasons, exports are now **scoped per project** and must be accessed via `/api/v2/assets/{asset_uid}/exports/`.
+
+#### Exception for submissions endpoint
+The `/assets/{asset_uid}/submissions/` endpoint has been **renamed** in `v2`. In addition to updating the base path, you must also change the endpoint name from `submissions` to `data`:
+
+| `v1` Endpoint                               | `v2` Equivalent                                     |
+|---------------------------------------------|-----------------------------------------------------|
+| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`                  |
+| `/assets/{asset_uid}/submissions/{id}/`     | `/api/v2/assets/{asset_uid}/data/{id}/`<sup>1</sup> |
+
+<sup>1</sup> `{id}` can be either the submission's integer identifier or its `root_uuid`.
 
 
 
-## Migrating from KoboCAT v1 to KPI v2 
+## Migrating from KoboCAT v1 to KPI v2
 The following section lists the main endpoints from the KoboCAT `v1` API and provides their `v2` equivalents.
 
 ### Data endpoints: Project list
@@ -92,81 +58,7 @@ This endpoint returns a list of forms you have access to, with links to their su
 <sup>1</sup> _In the `/api/v2/assets` endpoint, sequential integer identifiers are no longer used. Each entry is uniquely identified by an alphanumeric `uid`_
 
 
-#### Code examples
-
-<details>
-<summary><strong>curl</strong></summary>
-
-```bash
-# v1 (deprecated)
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kc.kobotoolbox.org/api/v1/data"
-
-# v2
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kf.kobotoolbox.org/api/v2/assets/?asset_type=survey"
-```
-</details>
-
-<details>
-<summary><strong>Python</strong></summary>
-
-```python
-import requests
-
-TOKEN = "xxxx"
-headers = {"Authorization": f"Token {TOKEN}"}
-
-# v1 (deprecated)
-# response = requests.get("https://kc.kobotoolbox.org/api/v1/data", headers=headers)
-
-# v2
-response = requests.get(
-    "https://kf.kobotoolbox.org/api/v2/assets/",
-    params={"asset_type": "survey"},
-    headers=headers
-)
-response.raise_for_status()
-projects = response.json()["results"]
-
-for project in projects:
-    print(project["uid"], project["name"])
-```
-</details>
-
-<details>
-<summary><strong>R</strong></summary>
-
-```r
-library(httr)
-library(jsonlite)
-
-TOKEN <- "xxxx"
-headers <- add_headers(Authorization = paste("Token", TOKEN))
-
-# v1 (deprecated)
-# response <- GET("https://kc.kobotoolbox.org/api/v1/data", headers)
-
-# v2
-response <- GET(
-  "https://kf.kobotoolbox.org/api/v2/assets/",
-  query = list(asset_type = "survey"),
-  headers
-)
-projects <- content(response, as = "parsed")$results
-
-for (p in projects) {
-  cat(p$uid, p$name, "\n")
-}
-```
-</details>
-
-#### Response examples
-
-<details>
-<summary><strong>v1 response</strong></summary>
+**Example `v1` response**
 
 ```json
 {
@@ -177,10 +69,8 @@ for (p in projects) {
   "url": "https://kc.kobotoolbox.org/api/v1/data/474.json"
 }
 ```
-</details>
 
-<details>
-<summary><strong>v2 equivalent</strong></summary>
+**Equivalent `v2` response**
 
 ```json
 {
@@ -193,109 +83,29 @@ for (p in projects) {
   "data": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/data/"
   ...
 }
+
 ```
-</details>
 
 ---
 
 ### Data endpoints: Submission data
 These endpoints retrieve all submission data for a specific project or a single submission from the project. `{uid}` is the unique identifier of the project and `{submission_id}` is the unique identifier of a form submission.
 
-| `v1` Endpoint    | `v2` Equivalent        |
-| ------------- | ---------------------- |
-| `/api/v1/data/<pk>`   | `/api/v2/assets/{uid}/data/` |
-| `/api/v1/data/<pk>/<dataid>`       | `/api/v2/assets/{uid}/data/{submission_id}/`                 |
+| `v1` Endpoint    | `v2` Equivalent                                          |
+| ------------- |----------------------------------------------------------|
+| `/api/v1/data/<pk>`   | `/api/v2/assets/{uid}/data/`                        |
+| `/api/v1/data/<pk>/<dataid>`       | `/api/v2/assets/{uid}/data/{submission_id}/`<sup>1</sup> |
 
-Based on the `url` you get from the `data` property in the asset endpoint, you can fetch the submission data in `v2` using. 
+<sup>1</sup> `{submission_id}` can be either the submission's integer identifier or its `root_uuid`.
+
+Based on the `url` you get from the `data` property in the asset endpoint, you can fetch the submission data in `v2` using.
 
 <p class="note">
-  <b>Note:</b> The response structure is nearly the same, <strong>except that <code>v2</code> introduces pagination</strong>. If you have more than 1,000 submissions, you will need to follow the <code>next</code> URL to retrieve subsequent pages.
+  <b>Note:</b> The response structure is nearly the same, <strong>except that <code>v2</code> introduces pagination</strong>.
 </p>
 
-#### Code examples
 
-Replace `a4etXeWtqcoodSxLV8a6Uq` with your project's `uid` (see [project list endpoint](#data-endpoints-project-list) above).
-
-<details>
-<summary><strong>curl</strong></summary>
-
-```bash
-# v1 (deprecated) — used the integer form ID
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kc.kobotoolbox.org/api/v1/data/474"
-
-# v2 — use the alphanumeric uid
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/data/"
-```
-</details>
-
-<details>
-<summary><strong>Python</strong></summary>
-
-```python
-import requests
-
-TOKEN = "xxxx"
-ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
-headers = {"Authorization": f"Token {TOKEN}"}
-
-# v1 (deprecated)
-# response = requests.get("https://kc.kobotoolbox.org/api/v1/data/474", headers=headers)
-# submissions = response.json()  # returned a flat list
-
-# v2 — results are paginated
-url = f"https://kf.kobotoolbox.org/api/v2/assets/{ASSET_UID}/data/"
-all_submissions = []
-
-while url:
-    response = requests.get(url, headers=headers)
-    response.raise_for_status()
-    page = response.json()
-    all_submissions.extend(page["results"])
-    url = page["next"]  # None when there are no more pages
-
-print(f"Total submissions: {len(all_submissions)}")
-```
-</details>
-
-<details>
-<summary><strong>R</strong></summary>
-
-```r
-library(httr)
-library(jsonlite)
-
-TOKEN <- "xxxx"
-ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
-headers <- add_headers(Authorization = paste("Token", TOKEN))
-
-# v1 (deprecated)
-# response <- GET(paste0("https://kc.kobotoolbox.org/api/v1/data/474"), headers)
-# submissions <- content(response, as = "parsed")  # flat list
-
-# v2 — handle pagination
-url <- paste0("https://kf.kobotoolbox.org/api/v2/assets/", ASSET_UID, "/data/")
-all_submissions <- list()
-
-repeat {
-  response <- GET(url, headers)
-  page <- content(response, as = "parsed")
-  all_submissions <- c(all_submissions, page$results)
-  if (is.null(page$`next`)) break
-  url <- page$`next`
-}
-
-cat("Total submissions:", length(all_submissions), "\n")
-```
-</details>
-
-#### Response examples
-
-<details>
-<summary><strong>v1 response</strong></summary>
+**Example `v1` response**
 
 ```json
 [
@@ -305,10 +115,7 @@ cat("Total submissions:", length(all_submissions), "\n")
   }
 ]
 ```
-</details>
-
-<details>
-<summary><strong>v2 equivalent</strong></summary>
+**Equivalent `v2` response**
 
 ```json
 {
@@ -329,7 +136,7 @@ cat("Total submissions:", length(all_submissions), "\n")
 
 
 ### Form endpoints
-These endpoints return detailed attributes of all forms shared with you or about a specific form, where `{uid}` is the unique identifier of the project. 
+These endpoints return detailed attributes of all forms shared with you or about a specific form, where `{uid}` is the unique identifier of the project.
 
 **Endpoint mapping**
 
@@ -345,7 +152,6 @@ These endpoints return detailed attributes of all forms shared with you or about
 
 
 **Field mapping**
-
 | `v1` Field                 | `v2` Equivalent                          |
 |----------------------------|------------------------------------------|
 | `formid`                   | `uid`<sup>1</sup>                        |
@@ -366,100 +172,15 @@ These endpoints return detailed attributes of all forms shared with you or about
 | `num_of_submissions`       | `deployment__submission_count`           |
 | `attachment_storage_bytes` | _N/A_<sup>4</sup>                        |
 
-<sup>1</sup> _In the `/api/v2/assets` endpoint, sequential integer identifiers are no longer used. Each entry is uniquely identified by an alphanumeric `uid`_.  
-<sup>2</sup> _In `v1`, tags were returned as an array; in `v2`, they are returned as a comma-separated string._  
-<sup>3</sup> _These fields are no longer exposed. See the **Permissions** section below for more details._  
+<sup>1</sup> _In the `/api/v2/assets` endpoint, sequential integer identifiers are no longer used. Each entry is uniquely identified by an alphanumeric `uid`_.
+<sup>2</sup> _In `v1`, tags were returned as an array; in `v2`, they are returned as a comma-separated string._
+<sup>3</sup> _These fields are no longer exposed. See the **Permissions** section below for more details._
 <sup>4</sup> _Not directly accessible via the asset endpoint. Use the `/api/v2/asset_usage/` endpoint and retrieve the `storage_bytes` field of the corresponding project._
-
-#### Code examples
-
-<details>
-<summary><strong>curl</strong></summary>
-
-```bash
-# v1 (deprecated) — list all forms
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kc.kobotoolbox.org/api/v1/forms"
-
-# v1 (deprecated) — single form by integer ID
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kc.kobotoolbox.org/api/v1/forms/474"
-
-# v2 — list all forms (paginated)
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kf.kobotoolbox.org/api/v2/assets/?asset_type=survey"
-
-# v2 — single form by uid
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/"
-```
-</details>
-
-<details>
-<summary><strong>Python</strong></summary>
-
-```python
-import requests
-
-TOKEN = "xxxx"
-ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
-headers = {"Authorization": f"Token {TOKEN}"}
-
-# v1 (deprecated)
-# response = requests.get("https://kc.kobotoolbox.org/api/v1/forms/474", headers=headers)
-# form = response.json()
-
-# v2 — single form
-response = requests.get(
-    f"https://kf.kobotoolbox.org/api/v2/assets/{ASSET_UID}/",
-    headers=headers
-)
-response.raise_for_status()
-form = response.json()
-
-print(form["name"])                          # was: form["title"]
-print(form["deployment__submission_count"])  # was: form["num_of_submissions"]
-print(form["tag_string"])                    # was: ", ".join(form["tags"])
-```
-</details>
-
-<details>
-<summary><strong>R</strong></summary>
-
-```r
-library(httr)
-
-TOKEN <- "xxxx"
-ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
-headers <- add_headers(Authorization = paste("Token", TOKEN))
-
-# v1 (deprecated)
-# response <- GET("https://kc.kobotoolbox.org/api/v1/forms/474", headers)
-# form <- content(response, as = "parsed")
-
-# v2 — single form
-response <- GET(
-  paste0("https://kf.kobotoolbox.org/api/v2/assets/", ASSET_UID, "/"),
-  headers
-)
-form <- content(response, as = "parsed")
-
-cat(form$name)                           # was: form$title
-cat(form$deployment__submission_count)   # was: form$num_of_submissions
-cat(form$tag_string)                     # was: paste(form$tags, collapse = ", ")
-```
-</details>
-
-#### Response examples
 
 <details>
 <summary><strong>Example <code>v1</code> response</strong></summary>
 <br>
-  
+
 ```json
 {
   "url": "https://kf.kobotoolbox.org/api/v1/forms/474",
@@ -589,216 +310,20 @@ Example payload:
 { "tag_string": "tag1,tag2,tag3" }
 ```
 
-#### Code examples
-
-<details>
-<summary><strong>curl</strong></summary>
-
-```bash
-curl -X PATCH \
-  -H "Authorization: Token xxxx" \
-  -H "Content-Type: application/json" \
-  -d '{"tag_string": "tag1,tag2,tag3"}' \
-  "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/"
-```
-</details>
-
-<details>
-<summary><strong>Python</strong></summary>
-
-```python
-import requests
-
-TOKEN = "xxxx"
-ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
-headers = {"Authorization": f"Token {TOKEN}"}
-
-tags = ["tag1", "tag2", "tag3"]
-
-response = requests.patch(
-    f"https://kf.kobotoolbox.org/api/v2/assets/{ASSET_UID}/",
-    headers=headers,
-    json={"tag_string": ",".join(tags)}
-)
-response.raise_for_status()
-print("Tags updated:", response.json()["tag_string"])
-```
-</details>
-
-<details>
-<summary><strong>R</strong></summary>
-
-```r
-library(httr)
-library(jsonlite)
-
-TOKEN <- "xxxx"
-ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
-headers <- add_headers(Authorization = paste("Token", TOKEN))
-
-tags <- c("tag1", "tag2", "tag3")
-
-response <- PATCH(
-  paste0("https://kf.kobotoolbox.org/api/v2/assets/", ASSET_UID, "/"),
-  headers,
-  body = toJSON(list(tag_string = paste(tags, collapse = ",")), auto_unbox = TRUE),
-  content_type_json()
-)
-result <- content(response, as = "parsed")
-cat("Tags updated:", result$tag_string, "\n")
-```
-</details>
-
 **Permissions**
 
 In `v2`, the fields `public`, `public_data`, and `require_auth` are no longer exposed as boolean attributes. Instead, **anonymous access is controlled via explicit permission assignments to the `AnonymousUser`**.
 
 The following mappings apply:
-- `public: true` → the `AnonymousUser` has the `view_asset` permission  
-- `public_data: true` → the `AnonymousUser` has the `view_submissions` permission  
-- `require_auth: false` → the `AnonymousUser` has the `add_submissions` permission  
+- `public: true` → the `AnonymousUser` has the `view_asset` permission
+- `public_data: true` → the `AnonymousUser` has the `view_submissions` permission
+- `require_auth: false` → the `AnonymousUser` has the `add_submissions` permission
 
-Permissions are available on the asset detail endpoint (`/api/v2/assets/{uid}/`) under the `permissions` property.
-
-#### Code examples
-
-**Reading permissions**
-
-<details>
-<summary><strong>curl</strong></summary>
-
-```bash
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/"
-```
-</details>
-
-<details>
-<summary><strong>Python</strong></summary>
-
-```python
-import requests
-
-TOKEN = "xxxx"
-ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
-BASE_URL = "https://kf.kobotoolbox.org"
-headers = {"Authorization": f"Token {TOKEN}"}
-
-response = requests.get(f"{BASE_URL}/api/v2/assets/{ASSET_UID}/", headers=headers)
-response.raise_for_status()
-permissions = response.json()["permissions"]
-
-# Check which permissions are assigned to AnonymousUser
-# (equivalent of v1 public/public_data/require_auth fields)
-anon_permissions = [
-    p["permission"].split("/")[-2]  # extract permission codename from URL
-    for p in permissions
-    if p["user"].endswith("/AnonymousUser/")
-]
-print("Anonymous user permissions:", anon_permissions)
-# e.g. ['view_asset', 'view_submissions']
-```
-</details>
-
-<details>
-<summary><strong>R</strong></summary>
-
-```r
-library(httr)
-
-TOKEN <- "xxxx"
-ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
-BASE_URL <- "https://kf.kobotoolbox.org"
-headers <- add_headers(Authorization = paste("Token", TOKEN))
-
-response <- GET(paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/"), headers)
-permissions <- content(response, as = "parsed")$permissions
-
-# Check which permissions are assigned to AnonymousUser
-anon_permissions <- Filter(
-  function(p) grepl("AnonymousUser", p$user),
-  permissions
-)
-for (p in anon_permissions) cat(p$label, "\n")
-```
-</details>
-
-**Assigning permissions to AnonymousUser**
-
-To replicate a v1 `public: true` setting, POST a new permission assignment to the `permission-assignments` endpoint.
-
-<details>
-<summary><strong>curl</strong></summary>
-
-```bash
-# Grant AnonymousUser view_asset (equivalent of v1 public: true)
-curl -X POST \
-  -H "Authorization: Token xxxx" \
-  -H "Content-Type: application/json" \
-  -d '{"user": "https://kf.kobotoolbox.org/api/v2/users/AnonymousUser/", "permission": "https://kf.kobotoolbox.org/api/v2/permissions/view_asset/"}' \
-  "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/permission-assignments/"
-```
-</details>
-
-<details>
-<summary><strong>Python</strong></summary>
-
-```python
-import requests
-
-TOKEN = "xxxx"
-ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
-BASE_URL = "https://kf.kobotoolbox.org"
-headers = {"Authorization": f"Token {TOKEN}"}
-
-# Grant AnonymousUser view_asset (equivalent of v1 public: true)
-response = requests.post(
-    f"{BASE_URL}/api/v2/assets/{ASSET_UID}/permission-assignments/",
-    headers=headers,
-    json={
-        "user": f"{BASE_URL}/api/v2/users/AnonymousUser/",
-        "permission": f"{BASE_URL}/api/v2/permissions/view_asset/",
-    }
-)
-response.raise_for_status()
-print("Permission assigned:", response.json()["label"])
-```
-</details>
-
-<details>
-<summary><strong>R</strong></summary>
-
-```r
-library(httr)
-library(jsonlite)
-
-TOKEN <- "xxxx"
-ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
-BASE_URL <- "https://kf.kobotoolbox.org"
-headers <- add_headers(Authorization = paste("Token", TOKEN))
-
-# Grant AnonymousUser view_asset (equivalent of v1 public: true)
-response <- POST(
-  paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/permission-assignments/"),
-  headers,
-  body = toJSON(list(
-    user       = paste0(BASE_URL, "/api/v2/users/AnonymousUser/"),
-    permission = paste0(BASE_URL, "/api/v2/permissions/view_asset/")
-  ), auto_unbox = TRUE),
-  content_type_json()
-)
-result <- content(response, as = "parsed")
-cat("Permission assigned:", result$label, "\n")
-```
-</details>
-
-#### Response examples
 
 <details>
 <summary><strong>Example: <code>v2</code> anonymous user permissions</strong></summary>
 <br>
-  
+
 ```json
 [
   {
@@ -866,125 +391,9 @@ These endpoints return a flat list of all media files associated with the curren
 
 <sup>1</sup> _In `v2`, the related project is accessible via the `asset` field, which contains a full URL instead of an integer ID._
 
-#### Code examples
+**Example `v1` response**
 
-<details>
-<summary><strong>curl</strong></summary>
-
-```bash
-# v1 (deprecated) — list all media files across all projects
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kc.kobotoolbox.org/api/v1/metadata"
-
-# v1 (deprecated) — single file by integer ID
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kc.kobotoolbox.org/api/v1/metadata/271"
-
-# v2 — list media files for a specific project
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/"
-
-# v2 — single file by uid
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/"
-
-# v2 — upload a new media file
-curl -X POST \
-  -H "Authorization: Token xxxx" \
-  -F "file_type=form_media" \
-  -F "content=@/path/to/goose.jpg" \
-  "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/"
 ```
-</details>
-
-<details>
-<summary><strong>Python</strong></summary>
-
-```python
-import requests
-
-TOKEN = "xxxx"
-ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
-BASE_URL = "https://kf.kobotoolbox.org"
-headers = {"Authorization": f"Token {TOKEN}"}
-
-# v1 (deprecated)
-# response = requests.get("https://kc.kobotoolbox.org/api/v1/metadata", headers=headers)
-# files = response.json()  # flat list across all projects
-
-# v2 — list media files for a specific project (paginated)
-response = requests.get(
-    f"{BASE_URL}/api/v2/assets/{ASSET_UID}/files/",
-    headers=headers
-)
-response.raise_for_status()
-files = response.json()["results"]
-
-for f in files:
-    print(f["uid"], f["metadata"]["filename"])  # was: f["id"], f["data_filename"]
-
-# v2 — upload a new media file
-with open("/path/to/goose.jpg", "rb") as fh:
-    upload = requests.post(
-        f"{BASE_URL}/api/v2/assets/{ASSET_UID}/files/",
-        headers=headers,
-        data={"file_type": "form_media"},
-        files={"content": fh}
-    )
-upload.raise_for_status()
-print("Uploaded:", upload.json()["metadata"]["filename"])
-```
-</details>
-
-<details>
-<summary><strong>R</strong></summary>
-
-```r
-library(httr)
-
-TOKEN <- "xxxx"
-ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
-BASE_URL <- "https://kf.kobotoolbox.org"
-headers <- add_headers(Authorization = paste("Token", TOKEN))
-
-# v1 (deprecated)
-# response <- GET("https://kc.kobotoolbox.org/api/v1/metadata", headers)
-# files <- content(response, as = "parsed")  # flat list across all projects
-
-# v2 — list media files for a specific project
-response <- GET(
-  paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/files/"),
-  headers
-)
-files <- content(response, as = "parsed")$results
-
-for (f in files) {
-  cat(f$uid, f$metadata$filename, "\n")  # was: f$id, f$data_filename
-}
-
-# v2 — upload a new media file
-upload <- POST(
-  paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/files/"),
-  headers,
-  body = list(
-    file_type = "form_media",
-    content   = upload_file("/path/to/goose.jpg")
-  )
-)
-cat("Uploaded:", content(upload, as = "parsed")$metadata$filename, "\n")
-```
-</details>
-
-#### Response examples
-
-<details>
-<summary><strong>v1 response</strong></summary>
-
-```json
 {
   "id": 271,
   "xform": 374,
@@ -998,25 +407,23 @@ cat("Uploaded:", content(upload, as = "parsed")$metadata$filename, "\n")
   "data_filename": "goose.jpg"
 }
 ```
-</details>
 
-<details>
-<summary><strong>v2 equivalent</strong></summary>
+**Equivalent `v2` response**
 
-```json
+```
 {
   "uid": "afoeCcF3AcGNpWUoM6bvKj9",
-  "asset": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/",
+  "asset": "http://kf.kobo.localhost/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/",
   "file_type": "form_media",
-  "content": "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/content/",
+  "content": "http://kf.kobo.localhost/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/content/",
   "metadata": {
     "hash": "md5:93fb96bced1e3b392abfc22934afe51a",
     "filename": "goose.jpg",
     "mimetype": "image/jpeg"
-  }
+  },
+  ...
 }
 ```
-</details>
 
 ---
 
@@ -1053,123 +460,3 @@ This endpoint returns profile information about the authenticated user, includin
 <sup>1</sup> _Not ported to `v2`_
 
 <sup>2</sup> _Use https://kf.domain.tld/token instead_
-
-#### Code examples
-
-<details>
-<summary><strong>curl</strong></summary>
-
-```bash
-# v1 (deprecated)
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kc.kobotoolbox.org/api/v1/user"
-
-# v2
-curl -H "Authorization: Token xxxx" \
-     -H "Content-Type: application/json" \
-  "https://kf.kobotoolbox.org/me/"
-```
-</details>
-
-<details>
-<summary><strong>Python</strong></summary>
-
-```python
-import requests
-
-TOKEN = "xxxx"
-BASE_URL = "https://kf.kobotoolbox.org"
-headers = {"Authorization": f"Token {TOKEN}"}
-
-# v1 (deprecated)
-# response = requests.get("https://kc.kobotoolbox.org/api/v1/user", headers=headers)
-# user = response.json()
-# print(user["username"], user["email"])
-
-# v2
-response = requests.get(f"{BASE_URL}/me/", headers=headers)
-response.raise_for_status()
-user = response.json()
-
-print(user["username"])                        # same as v1
-print(user["email"])                           # same as v1
-print(user["extra_details"]["organization"])   # was: user["organization"]
-print(user["extra_details"]["country"])        # was: user["country"]
-print(user["extra_details__uid"])              # was: user["id"]
-```
-</details>
-
-<details>
-<summary><strong>R</strong></summary>
-
-```r
-library(httr)
-
-TOKEN <- "xxxx"
-BASE_URL <- "https://kf.kobotoolbox.org"
-headers <- add_headers(Authorization = paste("Token", TOKEN))
-
-# v1 (deprecated)
-# response <- GET("https://kc.kobotoolbox.org/api/v1/user", headers)
-# user <- content(response, as = "parsed")
-
-# v2
-response <- GET(paste0(BASE_URL, "/me/"), headers)
-user <- content(response, as = "parsed")
-
-cat(user$username, "\n")                         # same as v1
-cat(user$email, "\n")                            # same as v1
-cat(user$extra_details$organization, "\n")       # was: user$organization
-cat(user$extra_details$country, "\n")            # was: user$country
-cat(user$extra_details__uid, "\n")               # was: user$id
-```
-</details>
-
-#### Response examples
-
-<details>
-<summary><strong>v1 response</strong></summary>
-
-```json
-{
-  "id": 42,
-  "username": "project_owner",
-  "email": "owner@example.org",
-  "city": "Nairobi",
-  "country": "KEN",
-  "organization": "Humanitarian Org",
-  "website": "https://example.org",
-  "twitter": "project_owner",
-  "gravatar": "https://www.gravatar.com/avatar/abc123?s=40",
-  "require_auth": true,
-  "api_token": "e291a91bf3dd94b45748f6865cd4710246219347"
-}
-```
-</details>
-
-<details>
-<summary><strong>v2 equivalent</strong></summary>
-
-```json
-{
-  "username": "project_owner",
-  "email": "owner@example.org",
-  "gravatar": "https://www.gravatar.com/avatar/abc123?s=40",
-  "extra_details": {
-    "city": "Nairobi",
-    "country": "KEN",
-    "organization": "Humanitarian Org",
-    "website": "https://example.org",
-    "twitter": "project_owner",
-    "require_auth": true
-  },
-  "extra_details__uid": "u9rb4EUVEgC22wbHfVfr7S"
-}
-```
-</details>
-
-
-
-
-

@@ -1,5 +1,5 @@
 # Migration de l'API v1 vers v2
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/62f9bf5497b6f6a7e0d1ff3f2e5d1da7bad99168/source/migrating_api.md" class="reference">19 mai 2026</a>
+**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/e9270720e3600bf065cd670e73664ec246c45976/source/migrating_api.md" class="reference">19 mai 2026</a>
 
 
 Dans le cadre de nos efforts continus pour rationaliser et moderniser la plateforme KoboToolbox, nous supprimons progressivement les points de terminaison KPI et KoboCAT `v1`. Tous les points de terminaison KPI et KoboCAT `v1` sont désormais obsolètes et seront entièrement supprimés en juin 2026. Les points de terminaison `v1` sont progressivement supprimés au profit de l'API KPI `v2`, plus robuste et entièrement prise en charge.
@@ -59,10 +59,23 @@ La migration de l'ancienne API KPI (`v1`) vers la nouvelle version (`v2`) est si
 
 En général, vous devez uniquement mettre à jour le chemin de base de `/endpoint/` vers `/api/v2/endpoint/`.
 
-### Exception pour le point de terminaison exports
-La seule exception à la règle ci-dessus concerne le point de terminaison `/exports/`. Dans `v1`, le point de terminaison `/exports/` renvoyait **tous les exports pour l'utilisatrice ou utilisateur authentifié** sur tous les projets.
+### Exceptions
+Il existe deux exceptions à la règle ci-dessus.
+
+#### Exception pour le point de terminaison exports
+Dans `v1`, le point de terminaison `/exports/` renvoyait **tous les exports pour l'utilisatrice ou utilisateur authentifié** sur tous les projets.
 
 Dans `v2`, pour des raisons de performance, les exports sont désormais **limités par projet** et doivent être accessibles via `/api/v2/assets/{asset_uid}/exports/`.
+
+#### Exception pour le point de terminaison submissions
+Le point de terminaison `/assets/{asset_uid}/submissions/` a été **renommé** dans `v2`. En plus de mettre à jour le chemin de base, vous devez également changer le nom du point de terminaison de `submissions` à `data` :
+
+| Point de terminaison `v1`                   | Équivalent `v2`                                |
+|---------------------------------------------|------------------------------------------------|
+| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`             |
+| `/assets/{asset_uid}/submissions/{id}/`     | `/api/v2/assets/{asset_uid}/data/{id}/`<sup>1</sup> |
+
+<sup>1</sup> `{id}` peut être l'identifiant entier de la soumission ou son `root_uuid`.
 
 
 
