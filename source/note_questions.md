@@ -41,6 +41,7 @@ Text styling features in the Formbuilder include:
 | Italics        | `*italics*` or `_italics_` |
 | Bold           | `**bold**` or `__bold__` |
 | Hyperlink      | `[name of link](url)` |
+| Email          | `[email@domain.org](mailto:email@domain.org)` |
 | Headers        | `# Header 1` (biggest) to `###### Header 6` (smallest) |
 | Emojis         | For example, 🙂 😐 🙁 😦 😧 😩 😱 |
 | Superscript    | `100 m<sup>2</sup>` turns into 100 m² |
