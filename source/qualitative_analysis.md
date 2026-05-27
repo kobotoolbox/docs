@@ -120,7 +120,12 @@ When you finish analyzing your audio files, each analysis field is saved as a ne
 
 ![Data table](images/qualitative_analysis/data_table.png)
 
-You can [download](https://support.kobotoolbox.org/export_download.html) your data with these analysis fields included for further review, synthesis, or reporting. For example, you can use them to track how often specific themes appear across your transcripts, or to create a codebook based on the most recurring **Tags**.
+You can [export](https://support.kobotoolbox.org/export_download.html) your data with these analysis fields included for further review, synthesis, or reporting. For example, you can use them to track how often specific themes appear across your transcripts, or to create a codebook based on the most recurring **Tags**.
+
+<p class="note">
+<strong>Note:</strong>
+When you export your data, an additional column is included to indicate the <strong>analysis source</strong>, showing whether the analysis was completed manually or generated with AI.
+</p>
 
 ### Customizing the display settings
 
