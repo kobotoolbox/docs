@@ -1,5 +1,5 @@
 # Qualitative analysis of audio responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/405be787e99ca83328fe56df3959c498dcf57c72/source/qualitative_analysis.md" class="reference">27 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d622745eff35b4b1b913f551edf3a924d099d403/source/qualitative_analysis.md" class="reference">27 May 2026</a>
 
 <iframe src="https://www.youtube.com/embed/Ud65hNS_cuo?si=aFfCfExpyn3MZVAs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -95,7 +95,7 @@ Hints do not have a word limit, so you can include detailed instructions when ne
 Once you have created analysis questions, you can start analyzing responses manually or use AI to generate a response:
 
 - **For manual analysis:** Manually enter a response for each analysis question.
-- **For automated analysis:** Click **Generate with AI** under each analysis question.
+- **For automated analysis:** Click <i class="k-icon k-icon-sparkles"></i> **Generate with AI** under each analysis question.
 
 After generating automated analysis responses, you can review the responses and edit them if needed.
 
