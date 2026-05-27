@@ -103,7 +103,7 @@ After generating automated analysis responses, you can review the responses and 
 
 <p class="note">
 <strong>Note:</strong>
-A response that has been generated with AI will include the mention <strong>AI-generated</strong> underneath the question.    
+A response that has been generated with AI will include the mention <i class="k-icon k-icon-sparkles"></i> <strong>AI-generated</strong> underneath the question.    
 </p>
 
 ### Reviewing and verifying responses
@@ -168,7 +168,7 @@ To switch to a different audio question within the same submission, use the drop
 
 ## Usage limits for AI-generated analysis
 
-Community Plan users can make up to 25 AI-generated analysis requests for free. Each time you click **Generate with AI**, it counts as one request.
+Community Plan users can make up to 25 AI-generated analysis requests for free. Each time you click <i class="k-icon k-icon-sparkles"></i> **Generate with AI**, it counts as one request.
 
 If you need more AI-generated analysis requests, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or [purchase](https://support.kobotoolbox.org/account_settings.html#add-ons) an **Automatic analysis requests add-on**. ​​You can always continue using the manual analysis features with no usage limit.
 
