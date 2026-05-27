@@ -95,7 +95,7 @@ Hints do not have a word limit, so you can include detailed instructions when ne
 Once you have created analysis questions, you can start analyzing responses manually or use AI to generate a response:
 
 - **For manual analysis:** Manually enter a response for each analysis question.
-- **For automated analysis:** Click **Generate with AI** under each analysis question.
+- **For automated analysis:** Click <i class="k-icon k-icon-sparkles"></i> **Generate with AI** under each analysis question.
 
 After generating automated analysis responses, you can review the responses and edit them if needed.
 
