@@ -18,9 +18,9 @@
     "@vusion/webfonts-generator": "^0.8.0",
     "autoprefixer": "^10.5.0",
     "browserslist": "^4.28.2",
-    "postcss": "^8.5.13",
+    "postcss": "^8.5.15",
     "postcss-cli": "^11.0.1",
-    "sass": "^1.99.0",
+    "sass": "^1.100.0",
     "simple-git": "^3.36.0"
   },
   "browserslist": [
