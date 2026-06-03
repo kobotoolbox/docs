@@ -168,7 +168,7 @@ To switch to a different audio question within the same submission, use the drop
 
 ## Usage limits for AI-generated analysis
 
-Community Plan users can make up to 25 AI-generated analysis requests for free. Each time you click <i class="k-icon k-icon-sparkles"></i> **Generate with AI**, it counts as one request.  Each time you click Generate with AI, it counts as one request. The following limits apply to paid KoboToolbox plans:
+Community Plan users can make up to 25 AI-generated analysis requests for free. Each time you click <i class="k-icon k-icon-sparkles"></i> **Generate with AI**, it counts as one request. The following limits apply to paid KoboToolbox plans:
 
 | Plan | Limits | 
 |:---|:---|
