@@ -168,9 +168,15 @@ To switch to a different audio question within the same submission, use the drop
 
 ## Usage limits for AI-generated analysis
 
-Community Plan users can make up to 25 AI-generated analysis requests for free. Each time you click <i class="k-icon k-icon-sparkles"></i> **Generate with AI**, it counts as one request.
+Community Plan users can make up to 25 AI-generated analysis requests for free. Each time you click <i class="k-icon k-icon-sparkles"></i> **Generate with AI**, it counts as one request.  Each time you click Generate with AI, it counts as one request. The following limits apply to paid KoboToolbox plans:
 
-If you need more AI-generated analysis requests, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or [purchase](https://support.kobotoolbox.org/account_settings.html#add-ons) an **Automatic analysis requests add-on**. ​​You can always continue using the manual analysis features with no usage limit.
+| Plan | Limits | 
+|:---|:---|
+| Professional | 1,000 analysis requests |
+| Teams | 2,000 analysis requests |
+| Enterprise | 30,000 analysis requests |
+
+If you need more AI-generated analysis requests, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or [purchase](https://support.kobotoolbox.org/account_settings.html#add-ons) an **Automatic analysis requests add-on**. ​​Add-ons are available based on your data analysis needs, starting at $15 for 2,000 additional requests. ​​You can always continue using the manual analysis features with no usage limit.
 
 ## Data privacy and model training
 
