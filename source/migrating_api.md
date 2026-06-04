@@ -7,7 +7,7 @@ As part of our ongoing efforts to streamline and modernize the KoboToolbox platf
 This article explains how to migrate your API integrations from the `v1` API (KoboCAT and KPI) to the KPI `v2` API. It covers each deprecated `v1` endpoint and its `v2` equivalent to help you transition your workflows.
 
 <p class="note">
-  <strong>Note:</strong> This article is intended for <strong>advanced users</strong> who use the KoboToolbox API for <strong>project management workflows</strong>. Integrations that use <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a>, such as dashboards and other external reporting tools, do not require any changes and are not affected by this migration.
+  <strong>Note:</strong> This article is intended for <strong>advanced users</strong> who use the KoboToolbox API for <strong>project management workflows</strong>. All other users are not affected by this migration. Integrations that use <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a>, such as dashboards and other external reporting tools, do not require any changes and will continue to work as expected.
 </p>
 
 
