@@ -56,7 +56,7 @@ By default, the map displays data from the first geopoint question in your form.
 To select a different question:
 
 1. Click <i class="k-icon-settings"></i> <strong>Map display settings</strong>.
-2. Select a different geopoint question from the list.
+2. Under **GEOPOINT QUESTION**, select a different geopoint question from the list.
 
 ![Map settings window for choosing geopoint question](images/mapping_gps/select.png) 
 
@@ -91,6 +91,10 @@ You can also add additional custom layers on top of your map:
 
 Uploaded files appear as optional layers that you can turn on or off from the map.
 
+<p class="note">
+<strong>Note:</strong> Only project owners or users with <strong>Manage project</strong> permissions can add custom layers to a map.
+</p>
+
 ### Disaggregating points by survey responses
 
 You can group GPS points on the map based on responses to other questions in your form. This helps you understand how different respondent groups are distributed geographically.
@@ -112,6 +116,18 @@ To remove disaggregation:
 
 1. Click <strong>Disaggregated using: [question label]</strong>.
 2. Select <strong>-- See all data --</strong> from the list.
+
+### Displaying a large number of submissions on the map
+
+If your project has more than 1,000 submissions, the map will display only 1,000 GPS points by default. You can increase the number of points displayed from the map settings.
+
+To change the number of points displayed:
+1. Open <i class="k-icon-settings"></i> **Map display settings**.
+2. Select **QUERY LIMIT**.
+3. Adjust the slider to choose how many submissions to display on the map.
+
+Displaying a large number of GPS points may slow down your browser, especially with larger datasets. Increasing the limit is temporary and resets whenever you reopen the map.
+
 
 ## Exporting GPS data 
 
