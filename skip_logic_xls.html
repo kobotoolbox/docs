@@ -108,7 +108,7 @@
           
   <section id="adding-skip-logic-in-xlsform">
 <h1>Adding skip logic in XLSForm<a class="headerlink" href="#adding-skip-logic-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/skip_logic_xls.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/0586118b5f55f20287bc6db496832b14bbfc6239/source/skip_logic_xls.md" class="reference">5 Jun 2026</a></p>
 <p>Skip logic, also known as relevance logic, allows you to <strong>determine when a question or group of questions will be displayed</strong> in the form based on a previous question or the result of a calculation. For example, you can use it to ask follow-up questions only to a subset of respondents, or to hide entire sections of a form if they are not relevant.</p>
 <p class="note">
   To learn more about form logic in XLSForm, see <a href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
@@ -341,6 +341,14 @@ For hands-on practice with skip logic in XLSForm, see KoboToolbox Academy’s <a
 </tbody>
 </table>
 </section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<details>
+<summary><strong>Skip logic does not work as expected with multiple choice questions</strong></summary>
+When adding skip logic based on a multiple choice question, using <code>${question} = 'option1'</code> will only work if Option 1 is <strong>the only selected response</strong>. To apply skip logic when Option 1 is selected, regardless of whether other options are also selected, use the <code>selected()</code> function: <code>selected(${question}, 'option1')</code> <br><br>
+This is common when adding an open text “Specify other” question after a multiple choice question. For example, if you want the “Specify other” question to appear whenever “Other” is selected, use: <code>selected(${question}, 'other')</code>
+</details>
+</section>
 </section>
 
 
@@ -435,6 +443,7 @@ For hands-on practice with skip logic in XLSForm, see KoboToolbox Academy’s <a
 <li class="toctree-l2"><a class="reference internal" href="#combining-multiple-skip-logic-conditions">Combining multiple skip logic conditions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-skip-logic-based-on-whether-a-question-was-answered">Adding skip logic based on whether a question was answered</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-skip-logic-conditions-to-question-groups">Adding skip logic conditions to question groups</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Adding constraints in XLSForm</a></li>
