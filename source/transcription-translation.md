@@ -68,6 +68,11 @@ If you cannot find a language in the list, consider alternative spellings or nam
     <strong>Note</strong>: When manually transcribing audio responses, it is important to select the correct language. If the manually generated transcript does not accurately match the chosen language or region, subsequent automatic translations using that transcript may be incorrect and produce inaccuracies.
 </p>
 
+## Usage limits for automatic transcription and translation
+Community Plan users can use up to **10 minutes of automatic speech-to-text transcription** per month and up to **6,000 characters of automatic transcript translation** per month.
+
+If you need more transcription or translation capacity, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or [purchase](https://support.kobotoolbox.org/account_settings.html#add-ons) a **Natural Language Processing (NLP) Package** add-on. ​​Add-ons are available based on your data processing needs, starting at $9.95 for 100 additional transcription minutes and 60,000 additional translation characters. You can always continue transcribing and translating audio responses manually with no usage limit.
+
 ## Troubleshooting
 
 <details>
