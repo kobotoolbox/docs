@@ -1,5 +1,5 @@
 # Adding skip logic in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9f9bb8dabfcd58f2bc08a4c6c0158d65262e935d/source/skip_logic.md" class="reference">5 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e562a3b12a843642706dec4700529f57fee501f5/source/skip_logic.md" class="reference">5 Jun 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/uLSnoG0mqV4?si=63o4YeQUZWOsZmfF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

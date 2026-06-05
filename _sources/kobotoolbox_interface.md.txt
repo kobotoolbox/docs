@@ -1,5 +1,5 @@
 # Overview of the KoboToolbox interface
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/da23bf42fd9251ba7d8e1cc8d96f5c253dacb935/source/kobotoolbox_interface.md" class="reference">6 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ec2d0081eef81fecd0dc9ee9a6cfdcd53c0f320f/source/kobotoolbox_interface.md" class="reference">5 Jun 2026</a>
 
 This article provides an overview of the KoboToolbox interface and explains how to navigate the main pages where you create forms, manage data, and configure project settings. It introduces the **Projects home page** and the four main pages within each project: **SUMMARY**, **FORM**, **DATA**, and **SETTINGS**.
 
@@ -43,6 +43,11 @@ In the **Current version** section, you can:
 * Open the <i class="k-icon-more"></i> **More actions** menu to download the XLSForm or XML file, [share the project](https://support.kobotoolbox.org/managing_permissions.html), clone the project, or create a template.
 * <i class="k-icon-language"></i> **Manage translations** for forms with [multiple languages](https://support.kobotoolbox.org/language_dashboard.html).
 * **DEPLOY** or **REDEPLOY** the form.
+
+<p class="note">
+  <strong>Note:</strong> Cloning a project only copies the form. It does not copy submissions, media attachments, sharing permissions, dynamic data attachments, or other project settings.
+</p>
+
 
 In the **Form history** section, you can:
 * View each deployed form version and non-deployed change, including when it was last modified.
