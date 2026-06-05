@@ -93,7 +93,8 @@ To purchase add-ons for your account, select the <i class="k-icon-plus"></i> **A
 
 On the **Add-ons** page, you can:
 - Purchase a **File Storage** add-on to add up to 50GB of file storage to your KoboToolbox account, if you are on the free Community Plan.
-- Purchase an **NLP Package** add-on to increase your transcription minutes and translations characters.
+- Purchase an **NLP Package** add-on to increase your [transcription](https://support.kobotoolbox.org/transcription-translation.html) minutes and [translations](https://support.kobotoolbox.org/transcription-translation.html) characters.
+- Purchase an **Automatic analysis requests** add-on to increase your AI-generated [qualitative analysis](https://support.kobotoolbox.org/qualitative_analysis.html) quota.
 
 <p class="note">
   <strong>Note:</strong> If you need to increase your submission limits, <a href="https://www.kobotoolbox.org/contact">contact</a> our support team to purchase an <strong>unlimited submissions add-on</strong>.
