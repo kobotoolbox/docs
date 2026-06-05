@@ -43,11 +43,3 @@ In XLSForm code, questions are referred to by their **question name** (Data Colu
 <p class="note">
     For more information on XLSForm code and operators, see <a href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a>.
 </p>
-
-## Troubleshooting
-<details>
-<summary><strong>Skip logic does not work as expected with multiple choice questions</strong></summary>
-When adding skip logic based on a multiple choice question, using <code>${question} = 'option1'</code> will only work if Option 1 is <strong>the only selected response</strong>. To apply skip logic when Option 1 is selected, regardless of whether other options are also selected, use the <code>selected()</code> function: <code>selected(${question}, 'option1')</code> <br><br>
-This is common when adding an open text “Specify other” question after a multiple choice question. For example, if you want the “Specify other” question to appear whenever “Other” is selected, use: <code>selected(${question}, 'other')</code>
-
-</details>
