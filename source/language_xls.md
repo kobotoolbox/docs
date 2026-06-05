@@ -1,5 +1,5 @@
 # Adding translations in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2956e23c6a58404a1abe13f31990694e0f0de0af/source/language_xls.md" class="reference">7 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/26219c3ff68ab5e06bc080c11ae388324a894200/source/language_xls.md" class="reference">5 Jun 2026</a>
 
 Adding translations to a form allows users to switch to their preferred language during data collection without creating separate forms. Any number of translations can be added. Both [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) and [web forms](https://support.kobotoolbox.org/data_through_webforms.html) support form translations.
 
