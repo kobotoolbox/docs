@@ -109,3 +109,11 @@ To add skip logic to question groups:
 | end_group    |             |                                              |                     |
 | survey | 
 
+## Troubleshooting
+<details>
+<summary><strong>Skip logic does not work as expected with multiple choice questions</strong></summary>
+When adding skip logic based on a multiple choice question, using <code>${question} = 'option1'</code> will only work if Option 1 is <strong>the only selected response</strong>. To apply skip logic when Option 1 is selected, regardless of whether other options are also selected, use the <code>selected()</code> function: <code>selected(${question}, 'option1')</code> <br><br>
+This is common when adding an open text “Specify other” question after a multiple choice question. For example, if you want the “Specify other” question to appear whenever “Other” is selected, use: <code>selected(${question}, 'other')</code>
+
+</details>
+
