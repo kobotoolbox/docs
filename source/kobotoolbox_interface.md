@@ -44,6 +44,11 @@ In the **Current version** section, you can:
 * <i class="k-icon-language"></i> **Manage translations** for forms with [multiple languages](https://support.kobotoolbox.org/language_dashboard.html).
 * **DEPLOY** or **REDEPLOY** the form.
 
+<p class="note">
+  <strong>Note:</strong> Cloning a project only copies the form. It does not copy submissions, media attachments, sharing permissions, dynamic data attachments, or other project settings.
+</p>
+
+
 In the **Form history** section, you can:
 * View each deployed form version and non-deployed change, including when it was last modified.
 * Clone previous form versions or changes.
