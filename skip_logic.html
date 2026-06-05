@@ -108,7 +108,7 @@
           
   <section id="adding-skip-logic-in-the-formbuilder">
 <h1>Adding skip logic in the Formbuilder<a class="headerlink" href="#adding-skip-logic-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/skip_logic.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/9f9bb8dabfcd58f2bc08a4c6c0158d65262e935d/source/skip_logic.md" class="reference">5 Jun 2026</a></p>
 <iframe src="https://www.youtube.com/embed/uLSnoG0mqV4?si=63o4YeQUZWOsZmfF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>Skip logic, also known as branching or relevance conditions, controls which questions are displayed in a form. By default, all questions are visible. Skip logic determines under which condition(s) a question should appear. Skip logic conditions are always applied to the question or group that should be conditionally visible.</p>
 <p class="note">
@@ -144,6 +144,14 @@
 <p class="note">
     For more information on XLSForm code and operators, see <a href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a>.
 </p>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<details>
+<summary><strong>Skip logic does not work as expected with multiple choice questions</strong></summary>
+When adding skip logic based on a multiple choice question, using <code>${question} = 'option1'</code> will only work if Option 1 is <strong>the only selected response</strong>. To apply skip logic when Option 1 is selected, regardless of whether other options are also selected, use the <code>selected()</code> function: <code>selected(${question}, 'option1')</code> <br><br>
+This is common when adding an open text “Specify other” question after a multiple choice question. For example, if you want the “Specify other” question to appear whenever “Other” is selected, use: <code>selected(${question}, 'other')</code>
+</details>
 </section>
 </section>
 
@@ -212,6 +220,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Adding skip logic in the Formbuilder</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#adding-a-condition">Adding a condition</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#manually-entering-skip-logic-in-xlsform-code">Manually entering skip logic in XLSForm code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Adding validation criteria in the Formbuilder</a></li>
