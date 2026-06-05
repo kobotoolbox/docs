@@ -41,7 +41,7 @@ Above the data table, you can configure the following settings:
 | Show group names in table headers | Decide whether column headers in the table include the name of the question group (e.g., `demographics / age`). |
 | Show HXL tags                  | Display <a href="https://support.kobotoolbox.org/question_options.html#hxl">Humanitarian Exchange Language</a> (HXL) tags if they were added to your form.           |
 
-Within the data table, you can click a column header and select <i class="k-icon-qt-hidden"></i> **Hide field** to remove fields you do not need, or <i class="k-icon-freeze"></i> **Freeze field** to keep frequently used fields visible while you scroll.
+Within the data table, you can click a column header and select <i class="k-icon-qt-hidden"></i> **Hide field** to remove fields you do not need, or <i class="k-icon-freeze"></i> **Freeze field** to keep a frequently used field visible while you scroll.
 
 <p class="note">
 <strong>Note:</strong> These settings affect the <strong>Table</strong> view for all project users.
