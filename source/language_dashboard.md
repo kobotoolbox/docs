@@ -71,14 +71,14 @@ To change the form’s default language:
   <summary><strong>Error loading survey: There is an unnamed translation in your form definition</strong></summary>
   This error means that at least one element in your form (for example, a hint or message) is not assigned to a language.
 <br><br>
-To fix this, two options are available:
+To fix this issue:
 
-<ul>
-<li>Download your form as an <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">XLSForm</a>, review all elements, find the unassigned element, and <a href="https://support.kobotoolbox.org/language_xls.html">correct it</a>.</li>
-<li>Or, go to <i class="k-icon-language"></i> <strong>Manage Languages</strong> and delete the unnamed language. This removes the problematic element from your form entirely (it cannot be recovered).</li> 
-</ul>
+<ol>
+<li>Download your form as an <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">XLSForm</a></li> 
+<li>Look for a <code>label</code>, <code>hint</code>, <code>guidance_hint</code>, media, <code>constraint_message</code> and <code>required_message</code> column in your form that is not assigned to a language (e.g., <code>label</code> instead of <code>label::English (en)</code>).</li> 
+<li>Depending on the issue, either add a <a href="https://support.kobotoolbox.org/language_xls.html">language name and code</a> to the unassigned column name, or copy its content into an existing column for that language and delete the unassigned column.</li>
+</ol>
 
-To help prevent this issue, always redeploy your form after adding or updating languages.
 </details>
 
 <br>
