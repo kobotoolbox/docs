@@ -108,7 +108,7 @@
           
   <section id="mapping-your-gps-data">
 <h1>Mapping your GPS data<a class="headerlink" href="#mapping-your-gps-data" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/mapping_gps.md" class="reference">23 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8a9cd82f1f57b9117b907018b8032085ab7f3682/source/mapping_gps.md" class="reference">5 Jun 2026</a></p>
 <iframe src="https://www.youtube.com/embed/kefdxYOcgls?si=uY_tijozM5cpMVb3" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>GPS questions in KoboToolbox allow you to collect precise geographic information as single points, or a collection of points representing a path or area during data collection. Each GPS record includes latitude, longitude, altitude, and accuracy, which you can view directly in the data table. KoboToolbox also provides a built-in <strong>Map</strong> view that helps users visualize single GPS points, explore patterns, and better understand where submissions were collected.</p>
 <p>This article explains how to view and map GPS data in KoboToolbox and describes the available export formats for using geospatial data in other tools and workflows.</p>
@@ -167,7 +167,7 @@ To learn more about collecting GPS data in your KoboToolbox forms, see <a href="
 <p>To select a different question:</p>
 <ol class="arabic simple">
 <li><p>Click <i class="k-icon-settings"></i> <strong>Map display settings</strong>.</p></li>
-<li><p>Select a different geopoint question from the list.</p></li>
+<li><p>Under <strong>GEOPOINT QUESTION</strong>, select a different geopoint question from the list.</p></li>
 </ol>
 <p><img alt="Map settings window for choosing geopoint question" src="_images/select1.png" /></p>
 <p class="note">
@@ -198,6 +198,9 @@ To learn more about collecting GPS data in your KoboToolbox forms, see <a href="
 <li><p>Enter a label for the layer and upload a file in CSV, KML, KMZ, WKT, or GeoJSON format.</p></li>
 </ol>
 <p>Uploaded files appear as optional layers that you can turn on or off from the map.</p>
+<p class="note">
+<strong>Note:</strong> Only project owners or users with <strong>Manage project</strong> permissions can add custom layers to a map.
+</p>
 </section>
 <section id="disaggregating-points-by-survey-responses">
 <h3>Disaggregating points by survey responses<a class="headerlink" href="#disaggregating-points-by-survey-responses" title="Link to this heading">¶</a></h3>
@@ -219,6 +222,17 @@ To learn more about collecting GPS data in your KoboToolbox forms, see <a href="
 <li><p>Click <strong>Disaggregated using: [question label]</strong>.</p></li>
 <li><p>Select <strong>– See all data –</strong> from the list.</p></li>
 </ol>
+</section>
+<section id="displaying-a-large-number-of-submissions-on-the-map">
+<h3>Displaying a large number of submissions on the map<a class="headerlink" href="#displaying-a-large-number-of-submissions-on-the-map" title="Link to this heading">¶</a></h3>
+<p>If your project has more than 1,000 submissions, the map will display only 1,000 GPS points by default. You can increase the number of points displayed from the map settings.</p>
+<p>To change the number of points displayed:</p>
+<ol class="arabic simple">
+<li><p>Open <i class="k-icon-settings"></i> <strong>Map display settings</strong>.</p></li>
+<li><p>Select <strong>QUERY LIMIT</strong>.</p></li>
+<li><p>Adjust the slider to choose how many submissions to display on the map.</p></li>
+</ol>
+<p>Displaying a large number of GPS points may slow down your browser, especially with larger datasets. Increasing the limit is temporary and resets whenever you reopen the map.</p>
 </section>
 </section>
 <section id="exporting-gps-data">
