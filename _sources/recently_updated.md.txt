@@ -3,6 +3,7 @@
 
 1. [Viewing and validating your data](viewing_validating_data.md) (5 Jun 2026)
 1. [Adding skip logic in the Formbuilder](skip_logic.md) (5 Jun 2026)
+1. [Account settings](account_settings.md) (5 Jun 2026)
 1. [Adding translations in XLSForm](language_xls.md) (5 Jun 2026)
 1. [Migrating from v1 to v2 API](migrating_api.md) (4 Jun 2026)
 1. [Qualitative analysis of audio responses](qualitative_analysis.md) (3 Jun 2026)
@@ -10,4 +11,3 @@
 1. [Styling your forms using XLSForm](form_style_xls.md) (25 May 2026)
 1. [Getting started with the API](api.md) (12 May 2026)
 1. [Managing respondent-submitted media](managing_media_responses.md) (12 May 2026)
-1. [Getting started with the Formbuilder](formbuilder.md) (6 May 2026)
