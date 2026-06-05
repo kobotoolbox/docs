@@ -1,5 +1,5 @@
 # Adding skip logic in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/skip_logic_xls.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0586118b5f55f20287bc6db496832b14bbfc6239/source/skip_logic_xls.md" class="reference">5 Jun 2026</a>
 
 Skip logic, also known as relevance logic, allows you to **determine when a question or group of questions will be displayed** in the form based on a previous question or the result of a calculation. For example, you can use it to ask follow-up questions only to a subset of respondents, or to hide entire sections of a form if they are not relevant.
 
