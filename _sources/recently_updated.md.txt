@@ -9,5 +9,5 @@
 1. [Adding translations in XLSForm](language_xls.md) (5 Jun 2026)
 1. [Managing repeat group data](managing_repeat_groups.md) (5 Jun 2026)
 1. [Overview of the KoboToolbox interface](kobotoolbox_interface.md) (5 Jun 2026)
+1. [Transcription and translation of audio responses](transcription-translation.md) (5 Jun 2026)
 1. [Migrating from v1 to v2 API](migrating_api.md) (4 Jun 2026)
-1. [Qualitative analysis of audio responses](qualitative_analysis.md) (3 Jun 2026)
