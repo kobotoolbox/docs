@@ -13,7 +13,7 @@ To use these features, first collect audio responses in your form using the [Aud
     <strong>Note</strong>: Automatic transcription and translation may not be available for <a href="#language-list">all languages</a>. For these languages, only manual transcription and translation are possible.
 </p>
 
-## Adding automatic transcriptions
+## Adding audio transcripts
 
 ![Adding automatic transcriptions example](images/transcription_translation/transcription.png)
 
@@ -22,7 +22,8 @@ To start transcribing your audio responses:
 1. Open your project and navigate to **DATA > Table**.
 2. Click the **Open** button next to the audio response you would like to transcribe.
 3. In the **TRANSCRIPT** tab, click **begin**.
-    - Select the original language of the audio file and the **automatic** option (the **manual** option will allow you to manually transcribe the audio recording).
+    - Select the original language of the audio file. 
+    - If available, select the **automatic** option. The **manual** option will allow you to manually transcribe the audio recording in any language.
     - Click **create transcript** to begin the automatic transcription.
 4. Once the transcript is complete, you can edit it manually. You can play the audio recording in the top right corner to help check the accuracy of the transcript.
     - After editing the transcript, click the **Save** button to ensure your work is safely stored.
@@ -33,7 +34,7 @@ To start transcribing your audio responses:
     <strong>Note</strong>: Automatically generated transcripts and translations must be saved to prevent data loss. Navigating away from the page without saving will result in losing the data.
 </p>
 
-## Adding automatic translations
+## Adding translations
 
 ![Adding automatic translations example](images/transcription_translation/translation.png)
 
@@ -42,7 +43,7 @@ Once you have a completed transcript for your audio response, you can add transl
 1. Proceed to the **TRANSLATIONS** tab.
     - The translation option is only available once a transcript has been completed.
 2. Click **begin** and choose the language of the translation.
-    - Click **automatic** for machine translation (the **manual** option will allow you to manually translate the transcript)
+    - If available, select **automatic** for machine translation. The **manual** option will allow you to manually translate the transcript in any language.
     - Click **create translation** to begin the automatic translation
 3. Once the translation is complete, you can edit it manually. The original transcript appears on the right of the screen, and the original audio appears underneath. 
     - After editing the translation, click the **Save** button to ensure your work is safely stored.
