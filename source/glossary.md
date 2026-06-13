@@ -148,15 +148,6 @@ A condition applied to a select type question in XLSForm that limits the list of
 
 ---
 
-## Custom reports
-Automated reports in the DATA > Reports view that display your project data in graphs and tables. Reports can be customized to adjust which questions are shown and how the results are visualized.
-
-<p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/creating_custom_reports.html">Visualizing your data with custom reports</a>.
-</p>
-
----
-
 ## Data column name
 
 Internal short names assigned to questions that are used to store and reference data in a form. These are also called **question names** in XLSForm, and sometimes referred to as **XML values** or **headers** in the user interface. Exporting your data using XML values and headers can facilitate data management and analysis.
@@ -166,6 +157,14 @@ Internal short names assigned to questions that are used to store and reference 
 </p>
 
 **Related term(s):** [Label](https://support.kobotoolbox.org/glossary.html#label), [XML value](https://support.kobotoolbox.org/glossary.html#xml-value)
+
+---
+## Data reports
+Automated reports in the **DATA > Reports** view that display your project data in graphs and tables. Reports can be customized to adjust which questions are shown and how the results are visualized.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/creating_custom_reports.html">Visualizing your data with reports</a>.
+</p>
 
 ---
 
