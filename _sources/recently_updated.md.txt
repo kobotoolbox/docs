@@ -1,8 +1,8 @@
 # Recently updated Support Articles
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recently_updated.md" class="reference">28 Oct 2025</a>
 
+1. [Transcription and translation of audio responses](transcription-translation.md) (14 Jun 2026)
 1. [Glossary of KoboToolbox terms](glossary.md) (13 Jun 2026)
-1. [Transcription and translation of audio responses](transcription-translation.md) (9 Jun 2026)
 1. [Adding skip logic in XLSForm](skip_logic_xls.md) (5 Jun 2026)
 1. [Overview of the KoboToolbox interface](kobotoolbox_interface.md) (5 Jun 2026)
 1. [Viewing and validating your data](viewing_validating_data.md) (5 Jun 2026)

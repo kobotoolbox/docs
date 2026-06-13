@@ -1,17 +1,19 @@
 # Transcription and translation of audio responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5a34f7a978ab0dc4b9da84d4608ada4c1f5b193c/source/transcription-translation.md" class="reference">9 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9d20774e6b199308c43703b5914468dd34bb8c70/source/transcription-translation.md" class="reference">14 Jun 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-KoboToolbox’s natural language processing tools help you collect, manage, and analyze qualitative data more effectively. These tools include automatic speech-to-text transcription and machine translation, with automated qualitative analysis coming soon. The original transcript for your audio files and all translated text are added as new data columns in the data table and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data.
+KoboToolbox’s natural language processing tools help you collect, manage, and analyze qualitative data more effectively. These tools include automatic speech-to-text transcription and machine translation, which can prepare audio responses for [automated qualitative analysis](https://support.kobotoolbox.org/qualitative_analysis.html).
 
-To use these features, first collect audio responses in your form using the [Audio question type](https://support.kobotoolbox.org/photo_audio_video_file.html) or [background audio recordings](https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings).
-
+This article covers how to transcribe audio responses and translate transcripts, including supported languages and usage limits for automatic options.
 
 <p class="note">
     <strong>Note</strong>: Automatic transcription and translation may not be available for <a href="#language-list">all languages</a>. For these languages, only manual transcription and translation are possible.
 </p>
+
+To use KoboToolbox’s transcription and translation features, start by collecting audio responses in your form using the [Audio question type](https://support.kobotoolbox.org/photo_audio_video_file.html) or [background audio recordings](https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings). After transcribing and translating audio responses, the original transcript for your audio files and all translated text are added as new data columns in the data table and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data.
+
 
 ## Adding audio transcripts
 
