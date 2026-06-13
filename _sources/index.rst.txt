@@ -189,10 +189,10 @@ Explore practical guidance across KoboToolbox topics and features
   :name: home-page-toc-analyzing-data
 
   creating_custom_reports
+  mapping_gps
   transcription-translation
   qualitative_analysis
   converting_to_spss_and_stata
-  mapping_gps
 
 .. raw:: html
 
