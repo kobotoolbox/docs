@@ -384,7 +384,7 @@ The KoboToolbox Android app used for mobile data collection, allowing enumerator
 A set of tools for designing forms, collecting data, and managing projects used globally for research, humanitarian work, and other social good initiatives.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/about_kobotoolbox.html">About KoboToolbox: Accessible data collection for everyone</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/about_kobotoolbox.html">About KoboToolbox</a>.
 </p>
 
 **Related term(s):** [Kobo](https://support.kobotoolbox.org/glossary.html#kobo)
