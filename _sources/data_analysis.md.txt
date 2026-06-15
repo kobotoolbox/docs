@@ -1,5 +1,5 @@
 # Data analysis with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6e9f496956ced232adb4985272fbee0a6465318d/source/data_analysis.md" class="reference">15 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/977b859244796b0c30002db811ee84f02bf98dee/source/data_analysis.md" class="reference">15 Jun 2026</a>
 
 KoboToolbox provides **built-in tools** to help you review, visualize, and analyze collected data. These tools can be used for descriptive statistics, mapping, and qualitative analysis. 
 
@@ -44,7 +44,7 @@ You can process and analyze audio responses directly in the user interface, then
 ![Qualitative data analysis](images/data_analysis/qual.png)
 
 <p class="note">
-  To learn more about analyzing qualitative data in KoboToolbox, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a> and <a href=https://support.kobotoolbox.org/qualitative_analysis.html">Qualitative analysis of audio responses</a>.
+  To learn more about analyzing qualitative data in KoboToolbox, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a> and <a href="https://support.kobotoolbox.org/qualitative_analysis.html">Qualitative analysis of audio responses</a>.
 </p>
 
 ## Exporting and connecting data for external analysis
