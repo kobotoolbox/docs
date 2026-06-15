@@ -79,3 +79,7 @@ Users with **View submissions** permission can view data reports, including cust
 
 Users with **Manage project** permission can view reports, configure report styles, and create custom reports.
 
+<p class="note">
+  To learn more about permissions and sharing, see <a class="reference external" href="https://support.kobotoolbox.org/managing_permissions.html">Sharing projects with user-level permissions</a>.
+</p>
+
