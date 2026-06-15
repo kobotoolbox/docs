@@ -1,69 +1,81 @@
-# Viewing and Creating Custom Reports
+# Visualizing your data with reports
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/creating_custom_reports.md" class="reference">15 Feb 2022</a>
 
-## Learn how to navigate and manage the data in the Reports page.
+KoboToolbox includes a reporting tool that you can use to monitor incoming data and view simple descriptive statistics. You can use reports to display charts, review response counts, compare responses by subgroup, and share or print a summary of selected form questions.
 
-On the Reports page in the Data section of your project, you can create and
-configure multiple summary reports with custom graphs, tables, and color
-schemes. The custom reports are shareable by either printing, saving as a PDF,
-or storing them on an external cloud service.
+<p class="note">
+<strong>Note:</strong>
+    Reports can help you review your data at a glance, but they do not replace in-depth data cleaning, processing, analysis, or visualization with external tools. For more in-depth analysis, KoboToolbox makes it easy to <a href="https://support.kobotoolbox.org/export_download.html">export your data</a> or connect it to <a href="https://support.kobotoolbox.org/synchronous_exports.html">external tools using the API</a>.
+</p>
 
-![image](/images/creating_custom_reports/chart.jpg)
+This article covers how to access data reports in KoboToolbox, customize report styles, create custom reports, and manage report permissions.
 
-**1. Custom Reports:**
+## Accessing data reports
 
-The **CUSTOM REPORTS** allow you to view the **Default Report** based on the
-dataset available in your survey project. It also allows you to **Create New
-Report** (by giving it a unique title and selecting which questions to include
-or exclude) or search through previously created custom reports.
+To access your project reports:
 
-![image](/images/creating_custom_reports/custom_report.jpg)
+1. Open your project.
+2. Go to **DATA.**
+3. Click <i class="k-icon-reports"></i> **Reports.**
 
-**2. Edit Report Style:**
+The default report includes all questions in your form. Each question is displayed with a default chart and data table. The report also shows the **question type** and the **number of submissions** with a response to that question.
 
-The **Edit Report Style** button allows you to change the **CHART TYPE** to
-Vertical, Donut, Area, Horizontal, Pie and Line.
+![Data reports](images/creating_custom_reports/reports.png)
 
-![image](/images/creating_custom_reports/report_style.png)
+You can print the report or save it as a PDF by clicking the <i class="k-icon-print"></i> **print** button in the top right corner. You can also <i class=" k-icon-expand"></i> **toggle full screen mode** to view the report across the full screen.
 
-It also allows you to choose different **COLORS** for your charts.
+## Customizing your report
 
-![image](/images/creating_custom_reports/style_color.png)
+You can customize the style and configuration of your report by clicking <i class="k-icon-settings"></i> **Configure Report Style.** Changes made here will apply to all charts and tables after you click **Save.**
 
-You can also group the charts by different categorical variables available in
-your dataset by selecting **GROUP BY** and selecting a variable from the
-provided list. _Please note: If a variable has more than 5 choices, KoboToolbox
-would create a chart displaying only 5 choices lumping the rest together as …_
+![Configure report style](images/creating_custom_reports/configure.png)
 
-![image](/images/creating_custom_reports/group_by.png)
+The following settings are available:
 
-Or you could also change the label of your charts to different languages
-available on your survey project by selecting **TRANSLATION**. _(This tab will
-only appear if you have multiple languages in your survey project)_
+| Setting | Description |
+|:---|:---|
+| Chart type | The default chart type is a vertical bar graph. You can select a different chart type to apply to all charts in the report. |
+| Colors | You can choose a different color scheme for all charts in the report. |
+| Group by | You can select a **Select One** question from your form to group charts and tables by that variable. This can be useful for simple subgroup comparisons. |
+| Translation | If your form has multiple languages, you can choose which language to display in the report. |
 
-![image](/images/creating_custom_reports/translation.png)
 
-**3. Print:** You could also print the custom report by clicking the **Print**
-icon or save it as PDF by selecting **Save as PDF** under **Destination**.
+##  Customizing individual questions
 
-![image](/images/creating_custom_reports/print.png)
+You can also customize individual charts in the report.
 
-You could also store the same to an external cloud storage service like Google
-Drive.
+To customize a chart:
 
-![image](/images/creating_custom_reports/destination.png)
+1. Find the chart you want to edit.
+2. Click <i class="k-icon-more"></i> **Override Graph Style** in the top right corner of the chart.
+3. Select a chart type or color scheme.
 
-**4. Toggle full screen:**
+![Override graph style to customize chart style](images/creating_custom_reports/override.png)
 
-You could Press **Toggle full screen** to view the custom reports in a full
-screen or press back the **Toggle full screen** to view it to in a normal mode.
+These settings apply only to the selected chart.
 
-**5. Override Graph Style:**
+## Creating a custom report
 
-You could click the **Override Graph Style** _(3 dot icon)_ to customize the
-**CHART TYPE** and **COLORS** of the chart for each variables (questions) within
-your custom reports. This will override the graph style **(for a question)**
-that has been defined by **Edit Report Style** in your custom report that has
-been explained above.
+In addition to the default report, you can create custom reports. Custom reports allow you to choose which questions to include and save custom report settings.
 
-![image](/images/creating_custom_reports/question_style.png)
+To create a custom report:
+
+1. Click <i class="k-icon-plus"></i> **Create New Report** next to **Default Report.**
+2. Enter a title for your custom report.
+3. Select the questions you want to include and click **Save.**
+4. Click <i class="k-icon-settings"></i> **Configure Report Style** to set the report style and configuration.
+
+![Create custom report](images/creating_custom_reports/new.png)
+
+To change the title or displayed questions in a custom report, click <i class="k-icon-edit"></i> **Edit Report Questions.**
+
+<p class="note">
+<strong>Note:</strong> Custom report settings are saved and will remain available when you leave and return.
+</p>
+
+## Permissions and sharing
+
+Users with **View submissions** permission can view data reports, including custom reports created by other users. However, they cannot configure report styles or create custom reports.
+
+Users with **Manage project** permission can view reports, configure report styles, and create custom reports.
+
