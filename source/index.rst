@@ -188,6 +188,8 @@ Explore practical guidance across KoboToolbox topics and features
   :caption: Analyzing Data
   :name: home-page-toc-analyzing-data
 
+  data_analysis
+  preparing_for_analysis
   creating_custom_reports
   mapping_gps
   transcription-translation
