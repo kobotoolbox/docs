@@ -114,7 +114,7 @@ This helps reduce unexplained missing data and makes results easier to interpret
 
 - Use [multiple choice questions](https://support.kobotoolbox.org/select_one_and_select_many.html) when responses can be standardized into predefined options. 
 - Use [date questions](https://support.kobotoolbox.org/date_time.html) when collecting calendar dates. 
-- Use [GPS questions](https://support.kobotoolbox.org/gps_questions.html) or cascading select questions when collecting location information.
+- Use [GPS questions](https://support.kobotoolbox.org/gps_questions.html) or [cascading select questions](https://support.kobotoolbox.org/cascading_select.html) when collecting location information.
 
 Reserve text questions for information that cannot reasonably be standardized.
 
