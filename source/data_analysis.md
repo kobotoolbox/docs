@@ -44,7 +44,7 @@ You can process and analyze audio responses directly in the user interface, then
 ![Qualitative data analysis](images/data_analysis/qual.png)
 
 <p class="note">
-  To learn more about analyzing qualitative data in KoboToolbox, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a> and <a href=https://support.kobotoolbox.org/qualitative_analysis.html">Qualitative analysis of audio responses</a>.
+  To learn more about analyzing qualitative data in KoboToolbox, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a> and <a href="https://support.kobotoolbox.org/qualitative_analysis.html">Qualitative analysis of audio responses</a>.
 </p>
 
 ## Exporting and connecting data for external analysis
