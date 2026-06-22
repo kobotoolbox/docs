@@ -44,7 +44,7 @@ On the **Security** page, you can:
     - If you know your current password, click **Update.** 
     - If you have forgotten your current password, click **Forgot password** to [reset it](https://support.kobotoolbox.org/reset_password.html).
 - Update your email address by clicking **Change** next to **Email address.**
-- Display your **API Key**, which is required for certain types of authentication with the [KoboToolbox API](https://support.kobotoolbox.org/api.html).
+- Display or regenerate your **API Key**, which is required for certain types of authentication with the [KoboToolbox API](https://support.kobotoolbox.org/api.html).
 - Enable [two-factor authentication](https://support.kobotoolbox.org/two_factor_authentication.html) (2FA) to protect your account.
 - View [recent account activity](https://support.kobotoolbox.org/activity_logs.html#access-logs) and export log data.
 - Log out of all devices connected to your account.
