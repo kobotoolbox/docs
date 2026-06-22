@@ -1,5 +1,5 @@
 # Qualitative analysis of audio responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9281b57c6a4070a71be0c9800706a9394f73bdfb/source/qualitative_analysis.md" class="reference">3 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8ef3e7ec90848285916af99c022046fd2c56a447/source/qualitative_analysis.md" class="reference">22 Jun 2026</a>
 
 <iframe src="https://www.youtube.com/embed/Ud65hNS_cuo?si=aFfCfExpyn3MZVAs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -63,6 +63,11 @@ The following question types are available for analysis questions:
 | <i class="k-icon-qt-note"></i> Note | Add instructions or section labels to organize the analysis workspace. |
 
 Each field you add becomes a new column in your dataset when you download your data, except for **Note** fields.
+
+<p class="note">
+<strong>Note:</strong>
+   Automated analysis cannot be used with <strong>Tags</strong> analysis questions. Tags can only be generated manually. 
+</p>
 
 ### Adding hints to analysis questions
 

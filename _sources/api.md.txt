@@ -1,5 +1,5 @@
 # Getting started with the API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d5292a9a1562e4786c474809105cdc9deefccb21/source/api.md" class="reference">12 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/afd562326337a448c613f919951aaed8005b62ef/source/api.md" class="reference">22 Jun 2026</a>
 
 
 An **Application Programming Interface (API)** allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.
@@ -35,9 +35,11 @@ There are different ways to get your **API Key**.
 **Method 1:**
 
 1. Click your profile icon in the top right corner.
-2. Select **ACCOUNT SETTINGS**.
+2. Select **Account Settings**.
 3. Go to the **Security** tab.
 4. Your API Key is hidden by default. Click **Display** to view it.
+
+![Display API Key](images/api/key.png) 
    
 **Method 2:**
 
@@ -50,6 +52,10 @@ In the terminal, use the following curl command:
 `curl -u username:password "https:/[server-url]/token/?format=json"`
 
 Make sure to replace `[server-url]` with your server URL.
+
+<p class="note">
+    <strong>Note:</strong> If your API key is shared, made public, or otherwise compromised, regenerate it immediately. Your API key provides access to all data in your account. To regenerate it, go to <strong>Account Settings > Security</strong> and click <strong>Regenerate key</strong>. This will revoke all access through your existing API key and generate a new random key.
+</p>
 
 ## Retrieving your project asset UID
 
@@ -90,7 +96,7 @@ These advanced documentation pages list all endpoints, show allowed query parame
 You can also download the API documentation schema in YAML format at `https://[server-url]/api/v2/schema/` or in JSON format at `https://[server-url]/api/v2/schema/?format=json`.
 
 <p class="note">
-    <strong>Note:</strong> V1 endpoints are now deprecated and scheduled for decommissioning in June 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
+    <strong>Note:</strong> V1 endpoints are now deprecated, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
 </p>
 
 For more examples of using the API, see this [Community Forum post](https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742).

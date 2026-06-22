@@ -108,7 +108,7 @@
           
   <section id="getting-started-with-the-api">
 <h1>Getting started with the API<a class="headerlink" href="#getting-started-with-the-api" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d5292a9a1562e4786c474809105cdc9deefccb21/source/api.md" class="reference">12 May 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/afd562326337a448c613f919951aaed8005b62ef/source/api.md" class="reference">22 Jun 2026</a></p>
 <p>An <strong>Application Programming Interface (API)</strong> allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.</p>
 <p>With the KoboToolbox <strong>API</strong>, you can:</p>
 <ul class="simple">
@@ -139,16 +139,20 @@
 <p><strong>Method 1:</strong></p>
 <ol class="arabic simple">
 <li><p>Click your profile icon in the top right corner.</p></li>
-<li><p>Select <strong>ACCOUNT SETTINGS</strong>.</p></li>
+<li><p>Select <strong>Account Settings</strong>.</p></li>
 <li><p>Go to the <strong>Security</strong> tab.</p></li>
 <li><p>Your API Key is hidden by default. Click <strong>Display</strong> to view it.</p></li>
 </ol>
+<p><img alt="Display API Key" src="_images/key.png" /></p>
 <p><strong>Method 2:</strong></p>
 <p>In your web browser, navigate to <code class="docutils literal notranslate"><span class="pre">https://[server-url]/token/?format=json</span></code>. Make sure to replace <code class="docutils literal notranslate"><span class="pre">[server-url]</span></code> with your server URL.</p>
 <p><strong>Method 3:</strong></p>
 <p>In the terminal, use the following curl command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-u</span> <span class="pre">username:password</span> <span class="pre">&quot;https:/[server-url]/token/?format=json&quot;</span></code></p>
 <p>Make sure to replace <code class="docutils literal notranslate"><span class="pre">[server-url]</span></code> with your server URL.</p>
+<p class="note">
+    <strong>Note:</strong> If your API key is shared, made public, or otherwise compromised, regenerate it immediately. Your API key provides access to all data in your account. To regenerate it, go to <strong>Account Settings > Security</strong> and click <strong>Regenerate key</strong>. This will revoke all access through your existing API key and generate a new random key.
+</p>
 </section>
 <section id="retrieving-your-project-asset-uid">
 <h2>Retrieving your project asset UID<a class="headerlink" href="#retrieving-your-project-asset-uid" title="Link to this heading">¶</a></h2>
@@ -193,7 +197,7 @@ To learn more about connecting your data to Microsoft Excel, see <a href="https:
 <p>These advanced documentation pages list all endpoints, show allowed query parameters, include a search bar, display example responses, show example error responses, and allow direct testing of requests in your browser. Use this documentation for verifying authentication, discovering functions, and copying exact URLs into custom scripts.</p>
 <p>You can also download the API documentation schema in YAML format at <code class="docutils literal notranslate"><span class="pre">https://[server-url]/api/v2/schema/</span></code> or in JSON format at <code class="docutils literal notranslate"><span class="pre">https://[server-url]/api/v2/schema/?format=json</span></code>.</p>
 <p class="note">
-    <strong>Note:</strong> V1 endpoints are now deprecated and scheduled for decommissioning in June 2026, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
+    <strong>Note:</strong> V1 endpoints are now deprecated, in favor of the more robust and fully supported KPI v2 API. For more information on migrating to KPI v2, see <a href="https://support.kobotoolbox.org/migrating_api.html">Migrating from v1 to v2 API</a>.
 </p>
 <p>For more examples of using the API, see this <a class="reference external" href="https://community.kobotoolbox.org/t/kobo-api-examples-using-new-kpi-endpoints/2742">Community Forum post</a>.</p>
 </section>
