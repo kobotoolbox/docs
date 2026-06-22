@@ -1,5 +1,5 @@
 # Account settings
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3fa20bd8a60acac0d095d139644ec130fdb0763b/source/account_settings.md" class="reference">5 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/33a9488585f6121b5607a78b5f373ed182f02c71/source/account_settings.md" class="reference">22 Jun 2026</a>
 
 <iframe src="https://www.youtube.com/embed/QC6eTm7gh-I?si=L0kvHzvY_kFocSZd" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -44,7 +44,7 @@ On the **Security** page, you can:
     - If you know your current password, click **Update.** 
     - If you have forgotten your current password, click **Forgot password** to [reset it](https://support.kobotoolbox.org/reset_password.html).
 - Update your email address by clicking **Change** next to **Email address.**
-- Display your **API Key**, which is required for certain types of authentication with the [KoboToolbox API](https://support.kobotoolbox.org/api.html).
+- Display or regenerate your **API Key**, which is required for certain types of authentication with the [KoboToolbox API](https://support.kobotoolbox.org/api.html).
 - Enable [two-factor authentication](https://support.kobotoolbox.org/two_factor_authentication.html) (2FA) to protect your account.
 - View [recent account activity](https://support.kobotoolbox.org/activity_logs.html#access-logs) and export log data.
 - Log out of all devices connected to your account.
