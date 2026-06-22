@@ -64,6 +64,11 @@ The following question types are available for analysis questions:
 
 Each field you add becomes a new column in your dataset when you download your data, except for **Note** fields.
 
+<p class="note">
+<strong>Note:</strong>
+   Automated analysis cannot be used with <strong>Tags</strong> analysis questions. Tags can only be generated manually. 
+</p>
+
 ### Adding hints to analysis questions
 
 Hints can help make your analysis more consistent, whether responses are reviewed by human coders or generated with AI. When creating analysis questions, use hints to explain how each question should be answered.
