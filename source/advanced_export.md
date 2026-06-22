@@ -72,8 +72,5 @@ The affected URLs use the old format:
 <code>https://kc.kobotoolbox.org/media/original?media_file=...</code>
 <br><br>
 To fix this issue, re-export your data with <strong>Include media URLs</strong> selected. The new export will include updated media URLs.
-<br><br>
-Advanced users can also recreate the export through <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a> or rebuild URLs manually using the current API v2 format: 
-<code>https://kf.kobotoolbox.org/api/v2/assets/{asset_uid}/data/{submission_id}/attachments/{attachment_uid}/</code>
 </details>
 
