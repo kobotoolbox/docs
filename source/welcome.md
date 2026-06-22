@@ -83,12 +83,12 @@ Identify and share insights with KoboToolbox’s built-in reports, interactive m
 
 * **Custom reports:** Visualize data with [custom reports](https://support.kobotoolbox.org/creating_custom_reports.html) and interactive maps.
 * **Automated transcription and translation:** Use automated features to [transcribe and translate](https://support.kobotoolbox.org/transcription-translation.html) audio responses and qualitative data.
-* **Qualitative analysis:** Use [qualitative analysis](https://support.kobotoolbox.org/qualitative_analysis.html) features to identify themes and patterns in audio responses.
+* **Qualitative analysis:** Use AI-assisted [qualitative analysis](https://support.kobotoolbox.org/qualitative_analysis.html) features to identify themes and patterns in audio responses.
 
 ![Transcribe](/images/welcome/transcribe.png)
 
 <p class="note">
-To learn more about analyzing your KoboToolbox data, see <a href="https://support.kobotoolbox.org/analyzing-data.html">Analyzing Data</a>. 
+To learn more about analyzing your KoboToolbox data, see <a href="https://support.kobotoolbox.org/data_analysis.html">Data analysis with KoboToolbox</a>. 
 </p>
 
 
