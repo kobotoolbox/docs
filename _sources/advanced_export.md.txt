@@ -1,5 +1,5 @@
 # Advanced options for exporting data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7e74acf0541d307d402a35b3ccecf45235258545/source/advanced_export.md" class="reference">19 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b0d195136b7fb3fe51b687cc03a5e8dcde946309/source/advanced_export.md" class="reference">22 Jun 2026</a>
 
 
 Advanced options provide greater control and flexibility when downloading and exporting your data. This article will guide you through customizing your data exports, from selecting data fields and handling various question types to setting parameters for different analytical needs.
@@ -63,4 +63,14 @@ To use saved export settings, click on the dropdown menu under **Apply saved exp
 </details>
 
 <br>
+
+<details>
+  <summary><strong>Media URLs from older exports no longer work</strong></summary>
+Users who rely on media URLs from older Excel or CSV exports may notice that these links no longer work since <a href="https://support.kobotoolbox.org/migrating_api.html">API v1 was deprecated</a>.
+<br><br> 
+The affected URLs use the old format: 
+<code>https://kc.kobotoolbox.org/media/original?media_file=...</code>
+<br><br>
+To fix this issue, re-export your data with <strong>Include media URLs</strong> selected. The new export will include updated media URLs.
+</details>
 

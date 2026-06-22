@@ -108,7 +108,7 @@
           
   <section id="managing-respondent-submitted-media">
 <h1>Managing respondent-submitted media<a class="headerlink" href="#managing-respondent-submitted-media" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/57c67329e4eb4187474cb4770f1f80b85a47645f/source/managing_media_responses.md" class="reference">12 May 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b0d195136b7fb3fe51b687cc03a5e8dcde946309/source/managing_media_responses.md" class="reference">22 Jun 2026</a></p>
 <p>Media files collected from respondents often contain important contextual information, such as photos, recordings, or documents that support and enrich survey data. After data collection begins, <strong>these files become part of your project data</strong> and need to be managed carefully.</p>
 <p>This article explains how to view, download, and delete media files submitted by respondents, including images, audio recordings, videos, and other file types.</p>
 <section id="viewing-media-files">
@@ -241,6 +241,19 @@ To download media files using the DownThemAll extension:
   <li>Open the DownThemAll extension from the HTML page, and start the download.</li>
 </ol>
 <p>You can adjust the extension settings to limit download speed or retry failed downloads. This method can be used to download all media files, or only selected files, without relying on the ZIP export.</p>
+</details>
+<br>
+<details>
+  <summary><strong>Media URLs from older exports no longer work</strong></summary>
+Users who rely on media URLs from older Excel or CSV exports may notice that these links no longer work since <a href="https://support.kobotoolbox.org/migrating_api.html">API v1 was deprecated</a>.
+<br><br> 
+The affected URLs use the old format: 
+<code>https://kc.kobotoolbox.org/media/original?media_file=...</code>
+<br><br>
+To fix this issue, re-export your data with <strong>Include media URLs</strong> selected. The new export will include updated media URLs.
+<br><br>
+Advanced users can also recreate the export through <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a> or rebuild URLs manually using the current API v2 format: 
+<code>https://kf.kobotoolbox.org/api/v2/assets/{asset_uid}/data/{submission_id}/attachments/{attachment_uid}/</code>
 </details>
 </section>
 </section>

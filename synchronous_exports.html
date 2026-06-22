@@ -108,7 +108,7 @@
           
   <section id="using-the-api-for-synchronous-exports">
 <h1>Using the API for synchronous exports<a class="headerlink" href="#using-the-api-for-synchronous-exports" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/42d7f50918407ab6e7d7845922f59390380f36c5/source/synchronous_exports.md" class="reference">6 May 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b0d195136b7fb3fe51b687cc03a5e8dcde946309/source/synchronous_exports.md" class="reference">22 Jun 2026</a></p>
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>KoboToolbox offers two primary methods for accessing your data: asynchronous and synchronous exports. The standard asynchronous method involves <a class="reference external" href="https://support.kobotoolbox.org/export_download.html">manually downloading data files</a> containing all submissions up to the time of download. In contrast, synchronous exports enable automatic integration of your KoboToolbox data with external applications such as Microsoft Power BI, Excel, or Google Sheets.</p>
 <p>With synchronous exports, your data updates automatically as new submissions are received, eliminating the need for manual refreshing. This method provides a CSV or XLSX file, configured with your predefined export settings, which can include question labels, languages, filters, and repeat group data.</p>
@@ -189,6 +189,18 @@
 <li><p><strong>Data refresh interval:</strong> Data in synchronous exports update every 5 minutes. Export requests made within this 5-minute window will not include new submission data received within the 5-minute interval.</p></li>
 <li><p><strong>Export completion time:</strong> Exports must complete within 120 seconds. Projects with a large number of submissions or questions may fail. To avoid this, add a query constraint in the export settings to limit submissions or filter out unnecessary questions. Refer to this <a class="reference external" href="https://community.kobotoolbox.org/t/how-to-download-data-between-two-dates-from-date-to-date/25569/4">Community Forum post</a> for guidance.</p></li>
 </ul>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<details>
+  <summary><strong>Media URLs from older exports no longer work</strong></summary>
+Users who rely on media URLs from older synchronous exports may notice that these links no longer work since <a href="https://support.kobotoolbox.org/migrating_api.html">API v1 was deprecated</a>.
+<br><br> 
+The affected URLs use the old format: 
+<code>https://kc.kobotoolbox.org/media/original?media_file=...</code>
+<br><br>
+To fix this issue, re-create your synchronous exports with <strong>Include media URLs</strong> selected. The new export will include updated media URLs.
+</details>
 </section>
 </section>
 
@@ -342,6 +354,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#retrieving-the-synchronous-export-link">Retrieving the synchronous export link</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#connecting-your-data-to-an-external-application">Connecting your data to an external application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a></li>

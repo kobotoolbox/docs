@@ -1,5 +1,5 @@
 ﻿# Using the API for synchronous exports
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/42d7f50918407ab6e7d7845922f59390380f36c5/source/synchronous_exports.md" class="reference">6 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b0d195136b7fb3fe51b687cc03a5e8dcde946309/source/synchronous_exports.md" class="reference">22 Jun 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -94,3 +94,14 @@ To maintain server reliability, synchronous exports have the following limitatio
 - **Data refresh interval:** Data in synchronous exports update every 5 minutes. Export requests made within this 5-minute window will not include new submission data received within the 5-minute interval.
 - **Export completion time:** Exports must complete within 120 seconds. Projects with a large number of submissions or questions may fail. To avoid this, add a query constraint in the export settings to limit submissions or filter out unnecessary questions. Refer to this [Community Forum post](https://community.kobotoolbox.org/t/how-to-download-data-between-two-dates-from-date-to-date/25569/4) for guidance.
 
+## Troubleshooting
+
+<details>
+  <summary><strong>Media URLs from older exports no longer work</strong></summary>
+Users who rely on media URLs from older synchronous exports may notice that these links no longer work since <a href="https://support.kobotoolbox.org/migrating_api.html">API v1 was deprecated</a>.
+<br><br> 
+The affected URLs use the old format: 
+<code>https://kc.kobotoolbox.org/media/original?media_file=...</code>
+<br><br>
+To fix this issue, re-create your synchronous exports with <strong>Include media URLs</strong> selected. The new export will include updated media URLs.
+</details>
