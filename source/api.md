@@ -38,6 +38,8 @@ There are different ways to get your **API Key**.
 2. Select **Account Settings**.
 3. Go to the **Security** tab.
 4. Your API Key is hidden by default. Click **Display** to view it.
+
+![Display API Key](images/api/key.png) 
    
 **Method 2:**
 
