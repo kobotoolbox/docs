@@ -1,5 +1,5 @@
 # Migrating from v1 to v2 API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c53ed58757837723e2b0a52f977a92147ec855aa/source/migrating_api.md" class="reference">4 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/235a3cc8f0f84190b5e792cf191b424123e88f46/source/migrating_api.md" class="reference">22 Jun 2026</a>
 
 
 As part of our ongoing efforts to streamline and modernize the KoboToolbox platform, all KPI and KoboCAT `v1` endpoints have been removed. `v1` endpoints have been replaced by the more robust and fully supported KPI `v2` API.
