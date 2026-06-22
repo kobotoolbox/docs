@@ -3,6 +3,7 @@
 
 1. [Advanced options for exporting data](advanced_export.md) (22 Jun 2026)
 1. [Account settings](account_settings.md) (22 Jun 2026)
+1. [Getting started with the API](api.md) (22 Jun 2026)
 1. [﻿Using the API for synchronous exports](synchronous_exports.md) (22 Jun 2026)
 1. [Managing respondent-submitted media](managing_media_responses.md) (22 Jun 2026)
 1. [Preparing your form for data analysis](preparing_for_analysis.md) (15 Jun 2026)
@@ -10,4 +11,3 @@
 1. [Data analysis with KoboToolbox](data_analysis.md) (15 Jun 2026)
 1. [Transcription and translation of audio responses](transcription-translation.md) (14 Jun 2026)
 1. [About KoboToolbox](about_kobotoolbox.md) (14 Jun 2026)
-1. [Introduction to KoboToolbox](welcome.md) (14 Jun 2026)

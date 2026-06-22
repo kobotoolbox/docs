@@ -108,7 +108,7 @@
           
   <section id="getting-started-with-the-api">
 <h1>Getting started with the API<a class="headerlink" href="#getting-started-with-the-api" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d5292a9a1562e4786c474809105cdc9deefccb21/source/api.md" class="reference">12 May 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/5a30570ec986d7225251d87f76098330383d9b29/source/api.md" class="reference">22 Jun 2026</a></p>
 <p>An <strong>Application Programming Interface (API)</strong> allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.</p>
 <p>With the KoboToolbox <strong>API</strong>, you can:</p>
 <ul class="simple">
@@ -139,7 +139,7 @@
 <p><strong>Method 1:</strong></p>
 <ol class="arabic simple">
 <li><p>Click your profile icon in the top right corner.</p></li>
-<li><p>Select <strong>ACCOUNT SETTINGS</strong>.</p></li>
+<li><p>Select <strong>Account Settings</strong>.</p></li>
 <li><p>Go to the <strong>Security</strong> tab.</p></li>
 <li><p>Your API Key is hidden by default. Click <strong>Display</strong> to view it.</p></li>
 </ol>
@@ -149,6 +149,9 @@
 <p>In the terminal, use the following curl command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-u</span> <span class="pre">username:password</span> <span class="pre">&quot;https:/[server-url]/token/?format=json&quot;</span></code></p>
 <p>Make sure to replace <code class="docutils literal notranslate"><span class="pre">[server-url]</span></code> with your server URL.</p>
+<p class="note">
+    <strong>Note:</strong> If your API key is shared, made public, or otherwise compromised, regenerate it immediately. Your API key provides access to all data in your account. To regenerate it, go to <strong>Account Settings > Security</strong> and click <strong>Regenerate key</strong>. This will revoke all access through your existing API key and generate a new random key.
+</p>
 </section>
 <section id="retrieving-your-project-asset-uid">
 <h2>Retrieving your project asset UID<a class="headerlink" href="#retrieving-your-project-asset-uid" title="Link to this heading">¶</a></h2>
