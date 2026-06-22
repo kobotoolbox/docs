@@ -94,3 +94,18 @@ To maintain server reliability, synchronous exports have the following limitatio
 - **Data refresh interval:** Data in synchronous exports update every 5 minutes. Export requests made within this 5-minute window will not include new submission data received within the 5-minute interval.
 - **Export completion time:** Exports must complete within 120 seconds. Projects with a large number of submissions or questions may fail. To avoid this, add a query constraint in the export settings to limit submissions or filter out unnecessary questions. Refer to this [Community Forum post](https://community.kobotoolbox.org/t/how-to-download-data-between-two-dates-from-date-to-date/25569/4) for guidance.
 
+## Troubleshooting
+
+<details>
+  <summary><strong>Media URLs from older exports no longer work</strong></summary>
+Users who rely on media URLs from older Excel or CSV exports may notice that these links no longer work since <a href="https://support.kobotoolbox.org/migrating_api.html">API v1 was deprecated</a>.
+<br><br> 
+The affected URLs use the old format: 
+<code>https://kc.kobotoolbox.org/media/original?media_file=...</code>
+<br><br>
+To fix this issue, re-export your data with <strong>Include media URLs</strong> selected. The new export will include updated media URLs.
+<br><br>
+Advanced users can also recreate the export through <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a> or rebuild URLs manually using the current API v2 format: 
+<code>https://kf.kobotoolbox.org/api/v2/assets/{asset_uid}/data/{submission_id}/attachments/{attachment_uid}/</code>
+</details>
+
