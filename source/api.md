@@ -35,7 +35,7 @@ There are different ways to get your **API Key**.
 **Method 1:**
 
 1. Click your profile icon in the top right corner.
-2. Select **ACCOUNT SETTINGS**.
+2. Select **Account Settings**.
 3. Go to the **Security** tab.
 4. Your API Key is hidden by default. Click **Display** to view it.
    
@@ -50,6 +50,10 @@ In the terminal, use the following curl command:
 `curl -u username:password "https:/[server-url]/token/?format=json"`
 
 Make sure to replace `[server-url]` with your server URL.
+
+<p class="note">
+    <strong>Note:</strong> If your API key is shared, made public, or otherwise compromised, regenerate it immediately. Your API key provides access to all data in your account. To regenerate it, go to <strong>Account Settings > Security</strong> and click <strong>Regenerate key</strong>. This will revoke all access through your existing API key and generate a new random key.
+</p>
 
 ## Retrieving your project asset UID
 
