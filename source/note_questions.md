@@ -31,7 +31,7 @@ By default, note questions appear as simple text in your form.
 When adding notes to your form, you can use Markdown and HTML to **style text, add emphasis** with bold or italics, **create headers** of different sizes, **change fonts and colors**, and **add clickable web links.**
 
 <p class="note">
-<strong>Note:</strong> Text styling can also be applied to questions and choice labels.
+<strong>Note:</strong> Text styling can also be applied to questions labels and hints.
 </p>
 
 Text styling features in the Formbuilder include:
@@ -48,7 +48,9 @@ Text styling features in the Formbuilder include:
 | Subscript      | `H<sub>2</sub>O` turns into H₂O |
 | Colored text   | `<span style="color:#f58a1f">orange</span>` turns into <span style="color:#f58a1f">orange</span> <br>`<span style="color:red">red</span>` turns into <span style="color:red">red</span> |
 | Font           | `<span style="font-family:cursive">cursive</span>` turns into <span style="font-family:cursive">cursive</span> <br>`<span style="color:red; font-family:cursive">red and cursive</span>` turns into <span style="color:red; font-family:cursive">red and cursive</span>|
-| Align center   | `<p style="text-align:center">Centered label</p>` centers the text on the screen |
+| Align center   | `<p style="text-align:center">Centered label</p>` centers the text on the screen (KoboCollect only) |
+| Underline   | `<span style="text-decoration: underline;">This text is underlined</span>` underlines text (web forms only) |
+
 
 <p class="note">
 <strong>Note:</strong> Additional formatting features, such as line breaks, bullet lists, and numbered lists, are available only when <a href="https://support.kobotoolbox.org/form_style_xls.html#styling-text">building your form in XLSForm</a>.
