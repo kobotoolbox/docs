@@ -98,14 +98,10 @@ To maintain server reliability, synchronous exports have the following limitatio
 
 <details>
   <summary><strong>Media URLs from older exports no longer work</strong></summary>
-Users who rely on media URLs from older Excel or CSV exports may notice that these links no longer work since <a href="https://support.kobotoolbox.org/migrating_api.html">API v1 was deprecated</a>.
+Users who rely on media URLs from older synchronous exports may notice that these links no longer work since <a href="https://support.kobotoolbox.org/migrating_api.html">API v1 was deprecated</a>.
 <br><br> 
 The affected URLs use the old format: 
 <code>https://kc.kobotoolbox.org/media/original?media_file=...</code>
 <br><br>
-To fix this issue, re-export your data with <strong>Include media URLs</strong> selected. The new export will include updated media URLs.
-<br><br>
-Advanced users can also recreate the export through <a href="https://support.kobotoolbox.org/synchronous_exports.html">synchronous exports</a> or rebuild URLs manually using the current API v2 format: 
-<code>https://kf.kobotoolbox.org/api/v2/assets/{asset_uid}/data/{submission_id}/attachments/{attachment_uid}/</code>
+To fix this issue, re-create your synchronous exports with <strong>Include media URLs</strong> selected. The new export will include updated media URLs.
 </details>
-
