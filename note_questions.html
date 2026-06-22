@@ -108,7 +108,7 @@
           
   <section id="note-questions-in-kobotoolbox">
 <h1>Note questions in KoboToolbox<a class="headerlink" href="#note-questions-in-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/724cdeb4857343525cdb36a2e2c4a833634ac223/source/note_questions.md" class="reference">25 May 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1833c42c415ddc826146609c1915525d77cf94c8/source/note_questions.md" class="reference">22 Jun 2026</a></p>
 <p>Note questions are used to display information within your form without collecting a response. Although they are listed as a question type, note questions do not store any data. Instead, they are used to <strong>provide instructions, context, or additional details</strong> that help respondents or enumerators understand and complete the form correctly.</p>
 <p>You can use note questions to introduce a new section, explain why certain questions are being asked, provide guidance on how to respond, <a class="reference external" href="https://support.kobotoolbox.org/media.html">display media</a>, or show the results of <a class="reference external" href="https://support.kobotoolbox.org/calculate_questions.html">hidden calculations</a> or <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#question-referencing">previous responses</a>.</p>
 <p>This article explains how to add a <strong>Note</strong> question in the Formbuilder and how to add styling to your note text.</p>
@@ -142,7 +142,7 @@
 <h3>Advanced appearances<a class="headerlink" href="#advanced-appearances" title="Link to this heading">¶</a></h3>
 <p>When adding notes to your form, you can use Markdown and HTML to <strong>style text, add emphasis</strong> with bold or italics, <strong>create headers</strong> of different sizes, <strong>change fonts and colors</strong>, and <strong>add clickable web links.</strong></p>
 <p class="note">
-<strong>Note:</strong> Text styling can also be applied to questions and choice labels.
+<strong>Note:</strong> Text styling can also be applied to questions labels and hints.
 </p>
 <p>Text styling features in the Formbuilder include:</p>
 <table class="docutils align-default">
@@ -183,7 +183,10 @@
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&lt;span</span> <span class="pre">style=&quot;font-family:cursive&quot;&gt;cursive&lt;/span&gt;</span></code> turns into <span style="font-family:cursive">cursive</span> <br><code class="docutils literal notranslate"><span class="pre">&lt;span</span> <span class="pre">style=&quot;color:red;</span> <span class="pre">font-family:cursive&quot;&gt;red</span> <span class="pre">and</span> <span class="pre">cursive&lt;/span&gt;</span></code> turns into <span style="color:red; font-family:cursive">red and cursive</span></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Align center</p></td>
-<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&lt;p</span> <span class="pre">style=&quot;text-align:center&quot;&gt;Centered</span> <span class="pre">label&lt;/p&gt;</span></code> centers the text on the screen</p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&lt;p</span> <span class="pre">style=&quot;text-align:center&quot;&gt;Centered</span> <span class="pre">label&lt;/p&gt;</span></code> centers the text on the screen (KoboCollect only)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Underline</p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">&lt;span</span> <span class="pre">style=&quot;text-decoration:</span> <span class="pre">underline;&quot;&gt;This</span> <span class="pre">text</span> <span class="pre">is</span> <span class="pre">underlined&lt;/span&gt;</span></code> underlines text (web forms only)</p></td>
 </tr>
 </tbody>
 </table>
