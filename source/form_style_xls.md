@@ -64,10 +64,10 @@ Rows will always automatically expand to the full width of the page. For example
 
 ## Styling text
 
-You can use Markdown and HTML in XLSForm to **style text**, **add emphasis** with bold or italics, **create headers** of different sizes, **change fonts and colors**, and **add clickable web links**. Text styling can be applied to questions, notes, and choice labels.
+You can use Markdown and HTML in XLSForm to **style text**, **add emphasis** with bold or italics, **create headers** of different sizes, **change fonts and colors**, and **add clickable web links**. Text styling can be applied to questions, hints, and notes.
 
 <p class="note">
-<strong>Note:</strong> Some styling features may not be supported in KoboCollect or web forms It is recommended to preview your forms in your chosen data collection method to confirm that all styling features are fully supported.
+<strong>Note:</strong> Some styling features may not be supported in KoboCollect or web forms. It is recommended to preview your forms in your chosen data collection method to confirm that all styling features are fully supported.
 </p>
 
 Text styling features in XLSForm include:
@@ -85,8 +85,10 @@ Text styling features in XLSForm include:
 | Subscript      | `H<sub>2</sub>O` turns into H₂O |
 | Colored text   | `<span style="color:#f58a1f">orange</span>` turns into <span style="color:#f58a1f">orange</span> <br>`<span style="color:red">red</span>` turns into <span style="color:red">red</span> |
 | Font           | `<span style="font-family:cursive">cursive</span>` turns into <span style="font-family:cursive">cursive</span> <br>`<span style="color:red; font-family:cursive">red and cursive</span>` turns into <span style="color:red; font-family:cursive">red and cursive</span>|
-| Align center   | `<p style="text-align:center">Centered label</p>` centers the text on the screen |
-| Hide label   | `<span style="display:none">Hidden label</span>` omits the question label |
+| Align center   | `<p style="text-align:center">Centered label</p>` centers the text on the screen (KoboCollect only) |
+| Hide label   | `<span style="display:none">Hidden label</span>` omits the question label (web forms only) |
+| Remove bolding | `<span style="font-weight: normal;">What is your age?</span>` removes bolding from question label (web forms only) |
+| Underline   | `<span style="text-decoration: underline;">This text is underlined</span>` underlines text (web forms only) |
 
 <p class="note">
 <strong>Note:</strong> Use the <code>\</code> character before <code>#</code>, <code>*</code>, <code>_</code>, and <code>\</code> to prevent special styling effects from being triggered by these characters.
