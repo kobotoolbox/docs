@@ -1,5 +1,5 @@
 # Getting started with the API
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5a30570ec986d7225251d87f76098330383d9b29/source/api.md" class="reference">22 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ae795528db4013bbc68770c350f0fa62bcee0c6f/source/api.md" class="reference">22 Jun 2026</a>
 
 
 An **Application Programming Interface (API)** allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.
@@ -38,6 +38,8 @@ There are different ways to get your **API Key**.
 2. Select **Account Settings**.
 3. Go to the **Security** tab.
 4. Your API Key is hidden by default. Click **Display** to view it.
+
+![Display API Key](images/api/key.png) 
    
 **Method 2:**
 
