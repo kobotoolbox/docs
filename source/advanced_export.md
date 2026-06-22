@@ -64,3 +64,13 @@ To use saved export settings, click on the dropdown menu under **Apply saved exp
 
 <br>
 
+<details>
+  <summary><strong>Media URLs from older exports no longer work</strong></summary>
+Users who rely on media URLs from older Excel or CSV exports may notice that these links no longer work since <a href="https://support.kobotoolbox.org/migrating_api.html">API v1 was deprecated</a>.
+<br><br> 
+The affected URLs use the old format: 
+<code>https://kc.kobotoolbox.org/media/original?media_file=...</code>
+<br><br>
+To fix this issue, re-export your data with <strong>Include media URLs</strong> selected. The new export will include updated media URLs.
+</details>
+
