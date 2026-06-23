@@ -133,6 +133,15 @@ To fix this, remove or correct the duplicate values in the linking field of the 
 <br>
 
 <details>
+<summary><strong>Repeats in ‘field-list’ groups are not supported</strong></summary>
+This error occurs in KoboCollect when a repeat group is nested inside a broader group that uses the <code>field-list</code> appearance. KoboCollect does not support repeat groups inside <code>field-list</code> groups. Repeat groups must appear on their own page.
+<br><br>
+To resolve this issue, move the repeat group outside the main group, or remove the <code>field-list</code> appearance from the main group.
+</details>
+
+<br>
+
+<details>
 <summary><strong>Error getting form list</strong></summary>
 If you see “Error getting form list” after opening <strong>Download form</strong>, first check that the KoboToolbox server URL in KoboCollect is correct. A small typo in the URL is a common cause of this error.
 <br><br>
