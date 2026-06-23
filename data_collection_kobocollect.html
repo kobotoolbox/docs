@@ -108,7 +108,7 @@
           
   <section id="collecting-data-using-kobocollect">
 <h1>Collecting data using KoboCollect<a class="headerlink" href="#collecting-data-using-kobocollect" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/data_collection_kobocollect.md" class="reference">23 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3256884be21cabd4238e7470299b347a34510d49/source/data_collection_kobocollect.md" class="reference">23 Jun 2026</a></p>
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>KoboCollect is a free, open-source KoboToolbox app designed for data collection on mobile devices. It is best suited for field teams of enumerators using Android phones or tablets, especially when data needs to be collected offline.</p>
 <p>Before getting started, you will need to <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">install and configure</a> the KoboCollect app. Once set up, KoboCollect allows you to fill and submit forms from your mobile device, even offline.</p>
@@ -243,6 +243,13 @@ If KoboCollect shows an older version of your form, download the form again to g
 This error means that your form is using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, and that the field used to link the parent and child data contains duplicate values in the parent data. The linking field must contain only unique values.
 <br><br>
 To fix this, remove or correct the duplicate values in the linking field of the parent data, or use the <code>[position() = 1]</code> argument in your calculation.
+</details>
+<br>
+<details>
+<summary><strong>Repeats in ‘field-list’ groups are not supported</strong></summary>
+This error occurs in KoboCollect when a repeat group is nested inside a broader group that uses the <code>field-list</code> appearance. KoboCollect does not support repeat groups inside <code>field-list</code> groups. Repeat groups must appear on their own page.
+<br><br>
+To resolve this issue, move the repeat group outside the main group, or remove the <code>field-list</code> appearance from the main group.
 </details>
 <br>
 <details>

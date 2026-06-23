@@ -1,5 +1,5 @@
 # Collecting data using KoboCollect
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/data_collection_kobocollect.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3256884be21cabd4238e7470299b347a34510d49/source/data_collection_kobocollect.md" class="reference">23 Jun 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -128,6 +128,15 @@ If KoboCollect shows an older version of your form, download the form again to g
 This error means that your form is using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, and that the field used to link the parent and child data contains duplicate values in the parent data. The linking field must contain only unique values.
 <br><br>
 To fix this, remove or correct the duplicate values in the linking field of the parent data, or use the <code>[position() = 1]</code> argument in your calculation.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Repeats in ‘field-list’ groups are not supported</strong></summary>
+This error occurs in KoboCollect when a repeat group is nested inside a broader group that uses the <code>field-list</code> appearance. KoboCollect does not support repeat groups inside <code>field-list</code> groups. Repeat groups must appear on their own page.
+<br><br>
+To resolve this issue, move the repeat group outside the main group, or remove the <code>field-list</code> appearance from the main group.
 </details>
 
 <br>
