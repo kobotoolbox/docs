@@ -181,3 +181,13 @@ Outside a repeat group, you can retrieve data from the repeat group for use in f
 | acknowledge | confirm_age | Confirm that the oldest child in the household is **${max_age}** years old. | |
 | survey |
 
+## Troubleshooting
+
+<details>
+<summary><strong>KoboCollect error: “Repeats in ‘field-list’ groups are not supported”</strong></summary>
+This error occurs in KoboCollect when a repeat group is nested inside a broader group that uses the <code>field-list</code> appearance. KoboCollect does not support repeat groups inside <code>field-list</code> groups. Repeat groups must appear on their own page.
+<br><br>
+To resolve this issue, move the repeat group outside the main group, or remove the <code>field-list</code> appearance from the main group.
+<br><br>
+This issue only occurs in KoboCollect and does not affect web forms.
+</details>
