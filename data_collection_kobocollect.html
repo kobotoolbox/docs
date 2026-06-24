@@ -108,7 +108,7 @@
           
   <section id="collecting-data-using-kobocollect">
 <h1>Collecting data using KoboCollect<a class="headerlink" href="#collecting-data-using-kobocollect" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3256884be21cabd4238e7470299b347a34510d49/source/data_collection_kobocollect.md" class="reference">23 Jun 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/883b3a06b2cb3ea94f7a7b69c5be2b85953ad453/source/data_collection_kobocollect.md" class="reference">24 Jun 2026</a></p>
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>KoboCollect is a free, open-source KoboToolbox app designed for data collection on mobile devices. It is best suited for field teams of enumerators using Android phones or tablets, especially when data needs to be collected offline.</p>
 <p>Before getting started, you will need to <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">install and configure</a> the KoboCollect app. Once set up, KoboCollect allows you to fill and submit forms from your mobile device, even offline.</p>
@@ -132,7 +132,34 @@ For more information about the KoboCollect app and recommended devices, see <a h
 </ul>
 <p>Downloaded forms will appear when you click on <strong>Start new form</strong> from the app main menu.</p>
 <p class="note">
-  <strong>Note:</strong> You will need to repeat this process any time an update is made to the form or form media. If you anticipate frequent form updates or are using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, we recommend enabling <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form downloads</a>. 
+  <strong>Note:</strong> 
+If your project has been set up for <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form downloads</a> with the <strong>Exactly match server</strong> option, all forms shared with the account are automatically downloaded to the device, removing the need for the previous step.
+</p>
+</section>
+<section id="retrieving-form-updates">
+<h2>Retrieving form updates<a class="headerlink" href="#retrieving-form-updates" title="Link to this heading">¶</a></h2>
+<p>When changes are made to a data collection form, you will need to retrieve the updates in KoboCollect <strong>while connected to the internet.</strong> The method for retrieving form updates depends on the <a class="reference external" href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">project settings</a>.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Settings</p></th>
+<th class="head text-left"><p>Retrieving form updates</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Default settings</p></td>
+<td class="text-left"><p>Download new versions of a form by clicking <strong>Download form</strong>, selecting the form(s) to update, and clicking <strong>Get Selected.</strong></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Previously downloaded forms only</p></td>
+<td class="text-left"><p>Updates will download automatically at the frequency configured in the project settings.<br><br>To force an update and ensure you are using the latest version, click <strong>Download form</strong>, select the form(s) to update, and click <strong>Get Selected.</strong></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Exactly match server</p></td>
+<td class="text-left"><p>Updates will download automatically at the frequency configured in the project settings.<br><br>To force an update and ensure you are using the latest version, click <strong>Start new form</strong>, then click the refresh button in the top right corner.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+  <strong>Note:</strong> 
+If you anticipate frequent form updates or are using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, which require regular form updates to retrieve data from a parent form, we recommend enabling <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form downloads</a>. 
 </p>
 </section>
 <section id="collecting-data">
@@ -396,6 +423,7 @@ These approaches are less common and require additional setup, so they are usual
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting data using KoboCollect</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#downloading-forms">Downloading forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#retrieving-form-updates">Retrieving form updates</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#collecting-data">Collecting data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#editing-drafts">Editing drafts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sending-finalized-forms-to-the-server">Sending finalized forms to the server</a></li>
