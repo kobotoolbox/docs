@@ -100,6 +100,7 @@ Examples of more advanced validation criteria include:
 | Criteria | Description |
 |:---------|:------------|
 | <code>(. >= 18 and . < 130) or (. = 999)</code> | The response must be between 17 and 130 or be equal to 999 (often used for non-response) |
+| <code>count-selected(.)<=3</code> | Limit multiple choice selection to maximum three options. |
 | <code>not(${in_university} = 'yes' and . < 16)</code> | If the answer to `in_university` is ‘yes’, the current response must be greater than 16. |
 | <code>not(selected(., 'none') and count-selected(.)>1)</code> | The ‘none’ option cannot be selected if any other response in a `select_multiple` question is selected. |
 | <code>. < today()</code> | The date entered must be before today’s date. |
