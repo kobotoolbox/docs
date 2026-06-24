@@ -30,7 +30,23 @@ To download forms to your device:
 Downloaded forms will appear when you click on **Start new form** from the app main menu.
 
 <p class="note">
-  <strong>Note:</strong> You will need to repeat this process any time an update is made to the form or form media. If you anticipate frequent form updates or are using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, we recommend enabling <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form downloads</a>. 
+  <strong>Note:</strong> 
+If your project has been set up for <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form downloads</a> with the <strong>Exactly match server</strong> option, all forms shared with the account are automatically downloaded to the device, removing the need for the previous step.
+</p>
+
+## Retrieving form updates
+
+When changes are made to a data collection form, you will need to retrieve the updates in KoboCollect **while connected to the internet.** The method for retrieving form updates depends on the [project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings).
+
+| Settings | Retrieving form updates |
+|:---|:---|
+| Default settings | Download new versions of a form by clicking **Download form**, selecting the form(s) to update, and clicking **Get Selected.** |
+| Previously downloaded forms only | Updates will download automatically at the frequency configured in the project settings.<br><br>To force an update and ensure you are using the latest version, click **Download form**, select the form(s) to update, and click **Get Selected.** |
+| Exactly match server | Updates will download automatically at the frequency configured in the project settings.<br><br>To force an update and ensure you are using the latest version, click **Start new form**, then click the refresh button in the top right corner. |
+
+<p class="note">
+  <strong>Note:</strong> 
+If you anticipate frequent form updates or are using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, which require regular form updates to retrieve data from a parent form, we recommend enabling <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form downloads</a>. 
 </p>
 
 ## Collecting data
