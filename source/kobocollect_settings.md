@@ -1,5 +1,5 @@
 # Customizing KoboCollect settings
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d108cd501564eba483839494e3ef52e92d10e8b8/source/kobocollect_settings.md" class="reference">8 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b2f0bf10348744a1576080786c7c44eff0dafa1c/source/kobocollect_settings.md" class="reference">24 Jun 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/Qeky3aomiWI?si=M1l_jorFQEDacX2A" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
