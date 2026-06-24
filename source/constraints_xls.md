@@ -1,5 +1,5 @@
 # Adding constraints in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/11a233abc1b9098041fbf54565078d85e544a32b/source/constraints_xls.md" class="reference">15 Feb 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c6f58131d275f1d56d26e1aaa599c31a3f1b53d5/source/constraints_xls.md" class="reference">24 Jun 2026</a>
 
 Constraints, also known as validation criteria, are a type of form logic used to **restrict the acceptable responses to a question based on a predefined condition**. If the constraint condition is not met, a customizable error message is displayed, prompting the form user to enter a valid response.
 
