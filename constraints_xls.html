@@ -108,7 +108,7 @@
           
   <section id="adding-constraints-in-xlsform">
 <h1>Adding constraints in XLSForm<a class="headerlink" href="#adding-constraints-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/11a233abc1b9098041fbf54565078d85e544a32b/source/constraints_xls.md" class="reference">15 Feb 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c6f58131d275f1d56d26e1aaa599c31a3f1b53d5/source/constraints_xls.md" class="reference">24 Jun 2026</a></p>
 <p>Constraints, also known as validation criteria, are a type of form logic used to <strong>restrict the acceptable responses to a question based on a predefined condition</strong>. If the constraint condition is not met, a customizable error message is displayed, prompting the form user to enter a valid response.</p>
 <p class="note">
   To learn more about form logic in XLSForm, see <a href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
@@ -308,19 +308,22 @@ For hands-on practice with adding constraints in XLSForm, see KoboToolbox Academ
 <tr class="row-even"><td class="text-left"><p><code>(. &gt;= 18 and . &lt; 130) or (. = 999)</code></p></td>
 <td class="text-left"><p>The response must be between 17 and 130 or be equal to 999 (often used for non-response)</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code>not(${in_university} = ‘yes’ and . &lt; 16)</code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code>count-selected(.)&lt;=3</code></p></td>
+<td class="text-left"><p>Limit multiple choice selection to maximum three options.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>not(${in_university} = ‘yes’ and . &lt; 16)</code></p></td>
 <td class="text-left"><p>If the answer to <code class="docutils literal notranslate"><span class="pre">in_university</span></code> is ‘yes’, the current response must be greater than 16.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code>not(selected(., ‘none’) and count-selected(.)&gt;1)</code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code>not(selected(., ‘none’) and count-selected(.)&gt;1)</code></p></td>
 <td class="text-left"><p>The ‘none’ option cannot be selected if any other response in a <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> question is selected.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code>. &lt; today()</code></p></td>
+<tr class="row-even"><td class="text-left"><p><code>. &lt; today()</code></p></td>
 <td class="text-left"><p>The date entered must be before today’s date.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code>regex(., ‘^\d{2}$’)</code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., ‘^\d{2}$’)</code></p></td>
 <td class="text-left"><p>The input is restricted to two numbers (using <a href="https://support.kobotoolbox.org/restrict_responses.html">regular expressions</a>).</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code>decimal-time(.)&gt;=0.5</code></p></td>
+<tr class="row-even"><td class="text-left"><p><code>decimal-time(.)&gt;=0.5</code></p></td>
 <td class="text-left"><p>The time entered must be at or after 12pm.</p></td>
 </tr>
 </tbody>
