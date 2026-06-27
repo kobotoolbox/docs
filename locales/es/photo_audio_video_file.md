@@ -1,164 +1,143 @@
-# Tipos de preguntas "Foto", "Audio", "Video" y "Archivo"
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/27c3e37a283d79de0cbecebbf3a41d5b6ba6d7df/source/photo_audio_video_file.md" class="reference">11 Sep 2023</a>
+# Preguntas Multimedia en KoboToolbox
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/cfb4a1f8edd217a9c0ed64bd0bfc86e6fda70baa/source/photo_audio_video_file.md" class="reference">6 de mayo de 2026</a>
 
-Con KoboToolbox, puedes recolectar diferentes tipos de medios como parte de tu
-proyecto de recolección de datos.
+Muchos proyectos de recolección de datos requieren más que solo datos cuantitativos. KoboToolbox te permite capturar diversos archivos multimedia de los encuestados, incluyendo fotos, grabaciones de audio, videos y archivos, para proporcionar información cualitativa clave y añadir profundidad visual y auditiva a tus conjuntos de datos.
 
-Cuando quieras capturar imágenes como parte de tus envíos, usa el tipo de
-pregunta "Foto".
+El método para capturar o cargar archivos multimedia depende de si usas [KoboCollect](../es/data_collection_kobocollect.html) o [formularios web](../es/data_through_webforms.html) para la recolección de datos. Al usar KoboCollect o formularios web en un dispositivo móvil, puedes capturar imágenes o videos directamente desde el dispositivo o cargar archivos. Al usar formularios web en una computadora, solo puedes cargar imágenes o videos. En todos los casos, puedes grabar audio directamente dentro del formulario.
 
-Si una pregunta requiere que grabes o adjuntes un archivo de audio, como cuando
-se espera una explicación larga del/la encuestado/a, usa el tipo de pregunta "Audio".
-La última versión de KoboCollect te permite grabar audio dentro de la aplicación
-misma sin abrir una aplicación separada.
+Este artículo cubre los siguientes temas:
+- Tipos de preguntas multimedia disponibles en KoboToolbox
+- Agregar preguntas multimedia con el Formbuilder
+- Aspectos predeterminados y avanzados de las preguntas multimedia
+- Parámetros para preguntas multimedia
 
-Con el tipo de pregunta "Video", podrás grabar un video usando la
-cámara del dispositivo o adjuntar un archivo de video.
+## Tipos de preguntas multimedia
 
-Si una pregunta requiere que adjuntes un archivo como un PDF, puedes usar el
-tipo de pregunta "Archivo".
+Los siguientes tipos de preguntas multimedia están disponibles en el editor de formularios de KoboToolbox **(Formbuilder)**:
 
-## Cómo configurar los tipos de preguntas "Foto", "Audio", "Video" y "Archivo"
+| Tipo de pregunta | Descripción |
+|:-----------------|:------------|
+| Foto | Capturar o cargar una imagen |
+| Audio | Grabar o cargar un archivo de audio |
+| Video | Grabar o cargar un archivo de video |
+| Archivo | Adjuntar un archivo (p. ej., .pdf, .docx) |
+| Código de barras / Código QR | Escanear códigos de barras y códigos QR usando la cámara del dispositivo |
 
-### Configuración en el editor de formularios
-
-Agregar preguntas de medios es simple:
-
-- Haz clic en el botón <i class="k-icon k-icon-plus"></i> para agregar una nueva pregunta
-- Escribe el texto de la pregunta, por ejemplo "Toma una foto de la unidad de vivienda", luego
-  haz clic en **AGREGAR PREGUNTA** o presiona ENTER en tu teclado
-- Elige el tipo de pregunta
-
-![Agregar pregunta de medios](images/photo_audio_video_file/add.gif)
-
-### Configuración en XLSForm
-
-Para agregar preguntas de medios en XLSForm, usa los tipos de pregunta `image`, `audio`, `video` o `file`
-como se muestra en el siguiente ejemplo:
-
-| type   | name        | label                                                       | hint            |
-| :----- | :---------- | :---------------------------------------------------------- | :-------------- |
-| image  | house_photo | Toma una foto de la unidad de vivienda                      |                 |
-| audio  | impact      | ¿Cuál ha sido el impacto del proyecto en tu hogar?          | Grabar como audio |
-| video  | preparation | Graba un video del/la encuestado/a mientras prepara el VitaMeal |                 |
-| file   | CV          | Adjunta tu CV                                               |                 |
-| survey |
-
-## Apariencia de los tipos de preguntas "Foto", "Audio", "Video" y "Archivo"
-
-### Apariencia predeterminada
-
-![Apariencias predeterminadas](images/photo_audio_video_file/default_appearances.png)
-
-### Apariencias avanzadas para el tipo de pregunta "Foto"
-
-Al agregar el tipo de pregunta "Foto", puedes elegir entre varias
-apariencias (en la configuración de la pregunta). Las apariencias cambian la forma en que la
-pregunta se muestra en los formularios web y KoboCollect.
-
-![Apariencias avanzadas para el tipo de pregunta foto](images/photo_audio_video_file/advanced_appearances_photo.png)
-
-![Apariencias avanzadas](images/photo_audio_video_file/advanced_appearances.png)
-
-### Agregar apariencias avanzadas en XLSForm
-
-Puedes especificar apariencias avanzadas de la pregunta "Foto" en XLSForm bajo
-la columna appearance como se muestra en el siguiente ejemplo:
-
-| type   | name       | label                      | appearance |
-| :----- | :--------- | :------------------------- | :--------- |
-| image  | sign       | Firma aquí                 | signature  |
-| image  | drawing    | Dibuja aquí                | draw       |
-| image  | annotation | Toma una imagen y anota    | annotate   |
-| survey |
-
-## Grabación de audio de fondo
-
-Puedes grabar audio en segundo plano cuando abres el formulario en KoboCollect.
-Esto puede ser útil en varios escenarios de recolección de datos, incluyendo grupos focales
-de discusión y entrevistas con informantes clave.
-
-Activa la grabación de audio de fondo en el editor de formularios haciendo clic en **Diseño y
-Configuración** y habilitando la función.
-
-![Audio de fondo](images/photo_audio_video_file/background_audio.png)
 
 <p class="note">
-  La grabación de audio de fondo solo está disponible en KoboCollect y
-  <strong>no</strong> en los formularios web de Enketo.
+<strong>Nota:</strong> KoboToolbox también admite grabaciones de audio de fondo para entrevistas completas o grupos focales. Cuando la grabación de audio de fondo está activa en un formulario, los tipos de pregunta <strong>Audio</strong> <strong>en KoboCollect</strong> se desactivan, ya que no es posible grabar audio usando ambas funciones simultáneamente. Para más información, consulta <a href="../es/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recolectar datos cualitativos con KoboToolbox</a>.
 </p>
 
-En XLSForm, puedes habilitar la grabación de fondo con el tipo de pregunta `background-audio`.
-Este se considera un tipo de pregunta "meta" y por lo tanto no se requiere
-`label`, solo un `name`. La calidad del audio se puede configurar bajo la
-columna `parameters`, como se explica [aquí](recording-interviews.md).
+## Agregar preguntas multimedia con el Formbuilder
 
-| type             | name             | label |
-| :--------------- | :--------------- | :---- |
-| background-audio | background_audio |       |
-| survey           |
+Para agregar una pregunta multimedia a tu formulario:
+
+1. Haz clic en el botón <i class="k-icon-plus"></i>.
+2. Ingresa la etiqueta de tu pregunta.
+3. Haz clic en **+ AGREGAR PREGUNTA.**
+4. Elige el tipo de pregunta adecuado.
+
+![Agregar una pregunta multimedia al Formbuilder](images/photo_audio_video_file/media.png)
+
+## Aspectos de las preguntas multimedia
+
+Las preguntas multimedia pueden mostrarse de manera diferente dependiendo de si usas formularios web o KoboCollect. También puedes cambiar el aspecto predeterminado de las preguntas multimedia. Esta sección detalla cómo aparece cada tipo de pregunta en ambas plataformas, incluyendo las opciones de aspecto predeterminadas y avanzadas.
+
+### Aspectos predeterminados
+
+La tabla a continuación muestra cómo se muestran las preguntas multimedia de forma predeterminada en formularios web y KoboCollect.
+
+![Aspectos predeterminados de las preguntas multimedia](images/photo_audio_video_file/table_updated.png)
 
 <p class="note">
-  No es posible grabar audio usando el tipo de pregunta "Audio" mientras
-  la grabación de audio de fondo está en curso en el formulario. Cuando la grabación de audio de
-  fondo está activada, todos los tipos de pregunta "Audio" se desactivan.
+<strong>Nota:</strong> Las preguntas de Código de barras / Código QR solo son compatibles con <a href="../es/data_collection_kobocollect.html">KoboCollect</a> en dispositivos móviles. Cuando se escanea un código usando la cámara del dispositivo, el valor codificado en el código de barras o código QR se captura automáticamente. En los <a href="../es/data_through_webforms.html">formularios web</a>, este tipo de pregunta aparece como un campo de texto estándar, donde los encuestados deben ingresar el valor manualmente.
 </p>
 
-Puedes leer más sobre la grabación de audio de fondo
-[aquí](recording-interviews.md).
+### Aspectos avanzados
 
-## Reducir el tamaño de archivo de los medios recolectados
+Puedes aplicar aspectos avanzados a las preguntas de **Foto** y **Código de barras / Código QR** para modificar cómo se muestran y se comportan en tu formulario. Los aspectos avanzados para las preguntas de **Foto** permiten a los usuarios hacer más que simplemente cargar o capturar una imagen, incluyendo dibujar bocetos, agregar firmas, anotar imágenes y tomar selfies directamente dentro del formulario.
 
-Si estás recolectando muchos medios en tu proyecto, podrías tener dificultades
-para subirlos a KoboToolbox dependiendo de la velocidad de tu conexión a
-internet. Si estás usando el [Servidor Global o el Servidor con sede en la Unión Europea](creating_account.md), entonces también
-estás limitado/a a solo 1GB de almacenamiento gratuito. Es una buena idea manejar los
-tamaños de archivo de los archivos de medios recolectados como imágenes, audio y videos.
+Para agregar un aspecto avanzado:
 
-Puedes definir el tamaño máximo de las imágenes que recolectas usando el tipo de pregunta "Foto"
-yendo a la configuración de la pregunta y estableciendo la configuración "max-pixels" en
-el editor de formularios.
+1. Abre la configuración de la pregunta haciendo clic en <i class="k-icon-settings"></i> **Configuración** a la derecha de la pregunta. Esto te llevará a la ventana **Opciones de pregunta**.
+2. En **Aspecto (avanzado)**, elige el aspecto deseado.
 
-![Píxeles máximos](images/photo_audio_video_file/max-pixels.png)
+    - Si el aspecto no aparece en la lista, selecciona **Otro** y escribe el nombre del aspecto en el cuadro de texto, exactamente como se indica arriba.
 
-En XLSForm, puedes hacer lo mismo agregando "max-pixels" en la columna `parameters`
-de la siguiente manera:
+![Aspectos de preguntas](images/photo_audio_video_file/appearances.png)
 
-| type   | name  | label         | parameters     |
-| :----- | :---- | :------------ | :------------- |
-| image  | photo | Capturar foto | max-pixels=480 |
-| survey |
+Los aspectos disponibles para las preguntas de **Foto** incluyen:
 
-En KoboCollect, también puedes elegir la calidad del video y el tamaño de la foto a través de la
-sección de Manejo de Formularios de la configuración del proyecto.
+| Aspecto | Descripción |
+|:--------|:------------|
+| `signature` (firma) | Permite al usuario capturar una firma escribiéndola directamente en la pantalla del dispositivo (p. ej., para formularios que requieren una firma digital para verificación). |
+| `draw` (dibujo) | Permite a los usuarios hacer bocetos o dibujos directamente en la pantalla del dispositivo (p. ej., para capturar ilustraciones o mapas dibujados a mano). |
+| `annotate` (anotación) | Permite al usuario anotar una imagen dibujando o escribiendo sobre ella. |
+| `new` (otro) | Solicita al usuario tomar una nueva foto usando la cámara del dispositivo (solo disponible al usar KoboCollect). |
+| `new-front` (otro) | Solicita al usuario tomar una nueva foto usando la cámara frontal del dispositivo (solo disponible al usar KoboCollect). |
 
-Puedes leer más sobre cómo reducir los tamaños de archivo [aquí](lower_file_size.md).
+Para las preguntas de **Código de barras / Código QR**, solo hay un aspecto avanzado disponible:
 
-## Limitar los tipos de archivo aceptados para el tipo de pregunta "Archivo"
+| Aspecto | Descripción |
+|:--------|:------------|
+| `front` | Cambia de la cámara trasera predeterminada del dispositivo a la cámara frontal. |
 
-Todos los tipos de archivo son aceptados por defecto para el tipo de pregunta "Archivo". En el
-editor de formularios puedes restringir esto haciendo lo siguiente:
+## Parámetros para preguntas multimedia
 
-- Ve a la configuración de la pregunta "Archivo"
-- En el cuadro "Archivos Aceptados", ingresa las extensiones de archivo de los archivos que
-  te gustaría permitir, separadas por una coma, por ejemplo ".doc, .pdf, .xlsx"
-
-![Tipos de archivo](images/photo_audio_video_file/file_types.png)
-
-En XLSForm, puedes limitar los tipos de archivo aceptados especificando extensiones de archivo
-en la columna `body::accept` de la siguiente manera:
-
-| type   | name | label          | body::accept |
-| :----- | :--- | :------------- | :----------- |
-| file   | CV   | Adjunta tu CV  | .pdf, .doc   |
-| survey |
+Más allá de su función básica, las preguntas multimedia también ofrecen parámetros avanzados que te permiten gestionar el tamaño de los archivos y restringir los tipos de archivos aceptados.
 
 <p class="note">
-  Descarga un XLSForm con ejemplos de este artículo
-  <a
-    download
-    class="reference"
-    href="./_static/files/photo_audio_video_file/media_question_types.xlsx"
-    >aquí</a
-  >.
+<strong>Nota:</strong> Cada archivo cargado por un encuestado puede tener un tamaño de hasta 10 MB, con un máximo total de 100 MB por envío.
 </p>
+
+### Reducir el tamaño de las imágenes
+
+Si tu proyecto implica recolectar una cantidad significativa de archivos multimedia, es posible que encuentres dificultades para cargar archivos a KoboToolbox, dependiendo de la velocidad de tu conexión a internet. Los usuarios del [Community Plan](https://www.kobotoolbox.org/pricing/) también tienen un límite de 1 GB de almacenamiento de archivos gratuito. Por lo tanto, es recomendable gestionar el tamaño de los archivos multimedia que recolectas.
+
+Para definir el tamaño máximo de las imágenes recolectadas usando el tipo de pregunta **Foto**:
+
+1. Abre la configuración de la pregunta haciendo clic en <i class="k-icon-settings"></i> **Configuración** a la derecha de la pregunta. Esto te llevará a la ventana **Opciones de pregunta**.
+2. Configura el parámetro **max-pixels** con el valor de tu elección (p. ej., 1000).
+
+![image](images/photo_audio_video_file/parameters.png)
+
+<p class="note">
+<strong>Nota:</strong> También puedes configurar la resolución de video y el tamaño de imagen en la <a href="../es/kobocollect_settings.html#form-management-settings">configuración de KoboCollect</a>.
+</p>
+
+### Restringir los tipos de archivos aceptados
+
+De forma predeterminada, el tipo de pregunta **Archivo** acepta todos los tipos de archivos. Para restringir el tipo de archivos que acepta esta pregunta:
+
+1. Abre la configuración de la pregunta haciendo clic en <i class="k-icon-settings"></i> **Configuración** a la derecha de la pregunta. Esto te llevará a la ventana **Opciones de pregunta**.
+2. En el cuadro de texto **Archivos aceptados**, enumera las extensiones de archivo que deseas permitir, separadas por una coma (p. ej., .doc, .pdf, .xlsx).
+
+![image](images/photo_audio_video_file/files.png)
+
+## Resolución de problemas
+
+<details>
+  <summary><strong>Recolectar múltiples imágenes o archivos multimedia</strong></summary>
+  Los tipos de preguntas multimedia solo admiten cargar un archivo a la vez. Para permitir que los usuarios carguen múltiples archivos, puedes colocar la pregunta multimedia dentro de un grupo de repetición, o duplicar la pregunta multimedia en el formulario tantas veces como sea necesario. Puedes usar <a href="../es/skip_logic.html">lógica de omisión</a> para mostrar las preguntas multimedia siguientes solo si la anterior no está en blanco.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>La grabación de audio en formularios web impide el acceso a otras preguntas</strong></summary>
+  Cuando un usuario graba una pregunta de audio en un formulario web, las demás preguntas se bloquean hasta que la grabación esté completa. Esto garantiza que el audio se capture completamente antes de que el usuario continúe con el resto del formulario.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Recolectar datos EXIF de imágenes cargadas</strong></summary>
+  Cuando se cargan imágenes a través de formularios web o KoboToolbox, los datos EXIF no se conservan de forma predeterminada. Para conservar los datos EXIF, usa un tipo de pregunta <strong>Archivo</strong> y configura el parámetro <strong>Archivos aceptados</strong> (<code>body::accept</code> en XLSForm) como <code>.jpg, .jpeg, .png</code>.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Formatos de códigos de barras / códigos QR compatibles</strong></summary>
+KoboCollect admite una amplia variedad de formatos de códigos de barras y códigos QR, incluyendo UPC-A, UPC-E, EAN-8, EAN-13, Code 39, Code 93, Code 128, Codabar, ITF, RSS-14, RSS-Expanded, QR Code, Data Matrix, Aztec, PDF 417 y MaxiCode. Si un código de barras no puede escanearse, verifica que use uno de estos formatos compatibles.
+</details>

@@ -1,34 +1,33 @@
 # Archiver et désarchiver des projets
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/102fcd123671942ecf7c20504874a5c78d068e9d/source/archiving_projects.md" class="reference">26 juil. 2020</a>
 
 **Cet article décrit l'objectif et le processus d'archivage et de désarchivage d'un projet**
 
-## Objectif de l'archivage
+## Pourquoi archiver un projet
 
-Il est conseillé d'archiver les formulaires qui ne sont plus utilisés pour la collecte de données. Cela empêche la collecte de données à l'aide de mauvais formulaires, en particulier dans les grandes équipes d'enquêtrices et enquêteurs.
+Il est conseillé d'archiver les formulaires qui ne sont plus utilisés pour la collecte de données. Cela permet d'éviter toute collecte de données avec des formulaires incorrects, en particulier dans les grandes équipes d'enquêteurs.
 
-## Processus d'archivage
+## Archiver un projet
 
-Pour archiver un projet, vous devez suivre les étapes suivantes :
+Pour archiver un projet, suivez les étapes ci-dessous :
 
 * Accédez au projet que vous souhaitez archiver
 
     ![image](/images/archiving_projects/project.jpg)
 
-* Cliquez sur la page des paramètres et faites défiler vers le bas pour trouver le bouton d'archivage
+* Appuyez sur la page des paramètres et faites défiler vers le bas pour trouver le bouton d'archivage
 
     ![image](/images/archiving_projects/archive_button.jpg)
 
-* Vous recevrez un avertissement indiquant que vous êtes sur le point d'archiver le projet. Vous devez accepter cela en choisissant archiver
+* Un avertissement s'affiche pour vous informer que vous êtes sur le point d'archiver le projet. Confirmez en sélectionnant **Archiver**
 
     ![image](/images/archiving_projects/archive_popup.jpg)
 
 * Si vous revenez à la liste de vos projets, vous trouverez le projet dans la liste des projets archivés
 
-## Processus de désarchivage
+## Désarchiver un projet
 
-* Vous suivrez le même processus en sélectionnant le projet, en cliquant sur ses boutons de paramètres, en sélectionnant le bouton de désarchivage
+* Suivez le même processus en sélectionnant le projet, en appuyant sur son bouton de paramètres, puis en sélectionnant le bouton de désarchivage
 
     ![image](/images/archiving_projects/unarchive_popup.jpg)
 
-* Vous recevrez un avertissement similaire que vous devrez confirmer en sélectionnant désarchiver
+* Un message d'avertissement similaire s'affiche, que vous devez confirmer en sélectionnant **Désarchiver**

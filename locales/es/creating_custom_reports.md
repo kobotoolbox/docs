@@ -1,77 +1,84 @@
-# Visualización y creación de informes personalizados
+# Visualizar datos utilizando informes personalizados
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/6e9f496956ced232adb4985272fbee0a6465318d/source/creating_custom_reports.md" class="reference">15 Jun 2026</a>
 
-**Última actualización:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/creating_custom_reports.md" class="reference">15
-Feb 2022</a>
+KoboToolbox incluye una herramienta de informes que puedes usar para monitorear los datos entrantes y ver estadísticas descriptivas simples. Puedes usar los informes para mostrar gráficos, revisar el recuento de respuestas, comparar respuestas por subgrupo, y compartir o imprimir un resumen de las preguntas seleccionadas del formulario.
 
-## Aprende a navegar y manejar los datos en la página de Informes.
+<p class="note">
+<strong>Nota:</strong>
+    Los informes pueden ayudarte a revisar tus datos de un vistazo, pero no reemplazan la limpieza, el procesamiento, el análisis ni la visualización de datos en profundidad con herramientas externas. Para un análisis más detallado, KoboToolbox facilita <a href="https://support.kobotoolbox.org/es/export_download.html">exportar tus datos</a> o conectarlos a <a href="https://support.kobotoolbox.org/es/synchronous_exports.html">herramientas externas mediante la API</a>.
+</p>
 
-En la página de Informes en la sección DATOS de tu proyecto, puedes crear y
-configurar múltiples informes de resumen con gráficos, tablas y esquemas de
-colores personalizados. Los informes personalizados se pueden compartir
-imprimiéndolos, guardándolos como PDF o almacenándolos en un servicio de nube
-externo.
+Este artículo explica cómo acceder a los informes de datos en KoboToolbox, personalizar los estilos de informe, crear informes personalizados y gestionar los permisos de los informes.
 
-![image](/images/creating_custom_reports/chart.jpg)
+## Acceder a los informes de datos
 
-**1. Informes personalizados:**
+Para acceder a los informes de tu proyecto:
 
-Los **INFORMES PERSONALIZADOS** te permiten ver el **Informe predeterminado**
-basado en el conjunto de datos disponible en tu proyecto de encuesta. También
-te permite **Crear nuevo informe** (dándole un título único y seleccionando qué
-preguntas incluir o excluir) o buscar entre informes personalizados creados
-previamente.
+1. Abre tu proyecto.
+2. Ve a **DATOS.**
+3. Haz clic en <i class="k-icon-reports"></i> **Informes.**
 
-![image](/images/creating_custom_reports/custom_report.jpg)
+El informe predeterminado incluye todas las preguntas de tu formulario. Cada pregunta se muestra con un gráfico predeterminado y una tabla de datos. El informe también muestra el **tipo de pregunta** y el **número de envíos** con una respuesta a esa pregunta.
 
-**2. Editar estilo del informe:**
+![Informes de datos](images/creating_custom_reports/reports.png)
 
-El botón **Editar estilo del informe** te permite cambiar el **TIPO DE GRÁFICO**
-a Vertical, Anillo, Área, Horizontal, Circular y Línea.
+Puedes imprimir el informe o guardarlo como PDF haciendo clic en el botón <i class="k-icon-print"></i> **imprimir** en la esquina superior derecha. También puedes usar <i class=" k-icon-expand"></i> **alternar pantalla completa** para ver el informe en toda la pantalla.
 
-![image](/images/creating_custom_reports/report_style.png)
+## Personalizar tu informe
 
-También te permite elegir diferentes **COLORES** para tus gráficos.
+Puedes personalizar el estilo y la configuración de tu informe haciendo clic en <i class="k-icon-settings"></i> **Configurar estilo del informe.** Los cambios realizados aquí se aplicarán a todos los gráficos y tablas después de hacer clic en **Guardar.**
 
-![image](/images/creating_custom_reports/style_color.png)
+![Configurar estilo del informe](images/creating_custom_reports/configure.png)
 
-También puedes agrupar los gráficos por diferentes variables categóricas
-disponibles en tu conjunto de datos seleccionando **AGRUPAR POR** y
-seleccionando una variable de la lista proporcionada. _Ten en cuenta: Si una
-variable tiene más de 5 opciones, KoboToolbox creará un gráfico que muestra
-solo 5 opciones agrupando el resto como …_
+Las siguientes configuraciones están disponibles:
 
-![image](/images/creating_custom_reports/group_by.png)
+| Configuración | Descripción |
+|:---|:---|
+| Tipo de gráfico | El tipo de gráfico predeterminado es un gráfico de barras vertical. Puedes seleccionar un tipo de gráfico diferente para aplicar a todos los gráficos del informe. |
+| Colores | Puedes elegir una combinación de colores diferente para todos los gráficos del informe. |
+| Agrupar por | Puedes seleccionar una pregunta de tipo **Seleccionar una** de tu formulario para agrupar los gráficos y tablas por esa variable. Esto puede ser útil para comparaciones simples de subgrupos. |
+| Traducción | Si tu formulario tiene varios idiomas, puedes elegir qué idioma mostrar en el informe. |
 
-O también podrías cambiar la etiqueta de tus gráficos a diferentes idiomas
-disponibles en tu proyecto de encuesta seleccionando **TRADUCCIÓN**. _(Esta
-pestaña solo aparecerá si tienes múltiples idiomas en tu proyecto de encuesta)_
 
-![image](/images/creating_custom_reports/translation.png)
+## Personalizar preguntas individuales
 
-**3. Imprimir:** También podrías imprimir el informe personalizado haciendo clic
-en el ícono **Imprimir** o guardarlo como PDF seleccionando **Guardar como PDF**
-en **Destino**.
+También puedes personalizar gráficos individuales en el informe.
 
-![image](/images/creating_custom_reports/print.png)
+Para personalizar un gráfico:
 
-También podrías almacenarlo en un servicio de almacenamiento en la nube externo
-como Google Drive.
+1. Encuentra el gráfico que quieres editar.
+2. Haz clic en <i class="k-icon-more"></i> **Anular el estilo de gráfico** en la esquina superior derecha del gráfico.
+3. Selecciona un tipo de gráfico o una combinación de colores.
 
-![image](/images/creating_custom_reports/destination.png)
+![Anular el estilo de gráfico para personalizar el estilo del gráfico](images/creating_custom_reports/override.png)
 
-**4. Alternar pantalla completa:**
+Estas configuraciones se aplican únicamente al gráfico seleccionado.
 
-Podrías presionar **Alternar pantalla completa** para ver los informes
-personalizados en pantalla completa o presionar nuevamente **Alternar pantalla
-completa** para verlo en modo normal.
+## Crear un informe personalizado
 
-**5. Anular estilo del gráfico:**
+Además del informe predeterminado, puedes crear informes personalizados. Los informes personalizados te permiten elegir qué preguntas incluir y guardar configuraciones de informe personalizadas.
 
-Podrías hacer clic en **Anular estilo del gráfico** _(ícono de 3 puntos)_ para
-personalizar el **TIPO DE GRÁFICO** y los **COLORES** del gráfico para cada
-variable (pregunta) dentro de tus informes personalizados. Esto anulará el
-estilo del gráfico **(para una pregunta)** que ha sido definido por **Editar
-estilo del informe** en tu informe personalizado que se ha explicado arriba.
+Para crear un informe personalizado:
 
-![image](/images/creating_custom_reports/question_style.png)
+1. Haz clic en <i class="k-icon-plus"></i> **Crear nuevo informe** junto a **Informe predeterminado.**
+2. Ingresa un título para tu informe personalizado.
+3. Selecciona las preguntas que quieres incluir y haz clic en **Guardar.**
+4. Haz clic en <i class="k-icon-settings"></i> **Configurar estilo del informe** para establecer el estilo y la configuración del informe.
+
+![Crear informe personalizado](images/creating_custom_reports/new.png)
+
+Para cambiar el título o las preguntas mostradas en un informe personalizado, haz clic en <i class="k-icon-edit"></i> **Editar preguntas del informe.**
+
+<p class="note">
+<strong>Nota:</strong> La configuración de los informes personalizados se guarda y seguirá disponible cuando salgas y vuelvas.
+</p>
+
+## Permisos y uso compartido
+
+Los usuarios con permiso de **Ver envíos** pueden ver los informes de datos, incluidos los informes personalizados creados por otros usuarios. Sin embargo, no pueden configurar estilos de informe ni crear informes personalizados.
+
+Los usuarios con permiso de **Gestionar el proyecto** pueden ver los informes, configurar estilos de informe y crear informes personalizados.
+
+<p class="note">
+  Para obtener más información sobre permisos y uso compartido, consulta <a class="reference external" href="https://support.kobotoolbox.org/es/managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a>.
+</p>

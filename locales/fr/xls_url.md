@@ -1,26 +1,25 @@
-# Importer un XLSForm via URL
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/d14c3f76675d9085da27e1c5dd4fcf981a6b3a7d/source/xls_url.md" class="reference">7 Jan 2025</a>
+# Importer un XLSForm via une URL
 
-Lors de l'importation d'un XLSForm via URL, assurez-vous que l'URL pointe directement vers le fichier XLS et qu'il est accessible publiquement. Un moyen rapide de tester cela est de charger l'URL dans un navigateur : cela devrait déclencher le téléchargement du fichier. (Si cela charge une page dans le navigateur, alors ce n'est pas la bonne URL.)
+Lors de l'importation d'un XLSForm via une URL, assurez-vous que l'URL pointe directement vers le fichier XLS et qu'il est accessible publiquement. Un moyen rapide de vérifier cela est de charger l'URL dans un navigateur : cela devrait déclencher le téléchargement du fichier. (Si une page se charge dans le navigateur, l'URL n'est pas la bonne.)
 
 ## Google Sheets
 
-Pour obtenir le lien correct pour une feuille de calcul Google Sheets, suivez ces étapes :
+Pour obtenir le lien correct d'un tableur Google Sheets, suivez ces étapes :
 
 1. Cliquez sur **Fichier > Publier** sur le Web.
 
-2. Sous le menu déroulant **Page Web**, sélectionnez **Microsoft Excel (.xlsx)**. Conservez **Document entier** sélectionné dans le menu déroulant précédent.
+2. Dans le menu déroulant **Page Web**, sélectionnez **Microsoft Excel (.xlsx)**. Laissez **Document entier** sélectionné dans le menu déroulant précédent.
 
-3. Copiez le lien du champ résultant.
+3. Copiez le lien depuis le champ qui apparaît.
 
-    ![image](/images/xls_url/link.jpg)
+![image](/images/xls_url/link.jpg)
 
-**Remarque pour les utilisatrices et utilisateurs avancés :** lors de nos tests, la case à cocher « Republier automatiquement en cas de modifications » ne fonctionne pas toujours bien. Vous devrez peut-être arrêter la publication et republier la feuille de calcul pour obtenir un lien mis à jour.
+**Note pour les utilisateurs avancés :** dans nos tests, la case à cocher « Republier automatiquement lors des modifications » ne fonctionne pas toujours correctement. Il peut être nécessaire d'arrêter la publication puis de republier le tableur pour obtenir un lien mis à jour.
 
 ## Dropbox
 
-Pour obtenir le lien correct pour une feuille de calcul dans Dropbox, suivez ces étapes :
+Pour obtenir le lien correct d'un tableur dans Dropbox, suivez ces étapes :
 
 1. Assurez-vous que le fichier XLSForm se trouve dans un dossier Dropbox public de votre compte.
 
-2. Copiez son lien. Il devrait se terminer par le suffixe `?dl=0`. Remplacez le 0 par 1, de sorte que votre lien se termine par `?dl=1`.
+2. Copiez son lien. Il doit se terminer par le suffixe `?dl=0`. Remplacez le 0 par 1, de sorte que votre lien se termine par `?dl=1`.

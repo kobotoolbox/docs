@@ -1,133 +1,52 @@
-# Tipos de preguntas de fecha y hora
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/c0db4b85c885da715ece9bd7c77707400b471f80/source/date_time.md" class="reference">28 Oct 2024</a>
+# Preguntas de Fecha y Hora en KoboToolbox
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/date_time.md" class="reference">23 Apr 2026</a>
 
-Hay 3 tipos diferentes de preguntas de fecha y hora en KoboToolbox: "Fecha",
-"Hora" y "Fecha y hora".
+Las preguntas de fecha y hora se utilizan para recolectar información temporal, como fechas de eventos, horarios de citas o marcas de tiempo. Estos tipos de preguntas garantizan que las respuestas se **capturen en un formato estandarizado**, lo que facilita la clasificación, el filtrado, los cálculos y el análisis precisos.
 
-El tipo de pregunta "Fecha" es para capturar valores de fecha, por ejemplo cuando se pregunta
-por la fecha de nacimiento, etc. Tanto en KoboCollect como en los formularios web de Enketo, se
-mostrará un selector de fecha estilo calendario para seleccionar la fecha.
+Este artículo explica los tipos de preguntas de fecha y hora disponibles, cómo agregarlos en el Formbuilder, las opciones de apariencia que puedes aplicar y las diferencias de visualización según la plataforma que debes tener en cuenta durante la recolección de datos.
 
-El tipo de pregunta "Hora" es para capturar valores de hora, por ejemplo en una pregunta
-como "¿A qué hora sales al trabajo?" Tanto en KoboCollect como en Enketo, se
-muestra un selector de hora donde un/a usuario/a puede seleccionar su respuesta.
+## Tipos de preguntas de fecha y hora
 
-El tercer tipo "Fecha y hora" es para capturar respuestas de fecha y hora en
-una sola pregunta.
+Los siguientes tipos de preguntas están disponibles en el Formbuilder para que los encuestados ingresen fechas y horas:
 
-## Cómo configurar tipos de preguntas de Fecha y Hora
+| Tipo de pregunta | Descripción |
+|:---|:---|
+| <i class="k-icon-qt-date"></i> Fecha | Captura una fecha de calendario específica, generalmente en formato de día, mes y año. |
+| <i class="k-icon-qt-text"></i> Hora | Captura una hora específica en horas y minutos. |
+| <i class="k-icon-qt-date-time"></i> Fecha y hora | Captura tanto una fecha como una hora en una sola respuesta combinada. |
 
-### Configuración en el editor de formularios
+## Agregar preguntas de fecha y hora en el Formbuilder
 
-Agregar preguntas de "Fecha", "Hora" y "Fecha y Hora" es simple:
+Para agregar preguntas de fecha y hora a tu formulario:
 
-- En el editor de formularios, haz clic en el botón <i class="k-icon k-icon-plus"></i> para agregar
-  una nueva pregunta
-- Escribe el texto de la pregunta, por ejemplo "¿Cuál es tu fecha de nacimiento?", luego haz clic
-  en **AGREGAR PREGUNTA** o presiona ENTER en tu teclado
-- Elige el tipo de pregunta
+1. Haz clic en el botón <i class="k-icon-plus"></i>.
+2. Ingresa la etiqueta de tu pregunta.
+3. Haz clic en **+ AGREGAR PREGUNTA.**
+4. Elige el tipo de pregunta apropiado.
 
-![Agregar las preguntas](images/date_time/adding.gif)
+![Date time question](images/date_time/date_time.png)
 
-### Configuración en XLSForm
+## Apariencias de las preguntas de fecha y hora
 
-Para agregar preguntas de "Fecha", "Hora" y "Fecha y Hora" en el XLSForm, usa los
-tipos de pregunta `date`, `time` y `datetime` como se muestra en el ejemplo a continuación:
+La tabla a continuación muestra las apariencias predeterminadas para las preguntas de fecha y hora:
 
-En XLSForm, puedes configurar lo siguiente:
-
-| type     | name      | label                                                   |
-| :------- | :-------- | :------------------------------------------------------ |
-| date     | dob       | ¿En qué fecha naciste?                                  |
-| time     | time      | ¿A qué hora sales al trabajo?                           |
-| datetime | date_time | ¿En qué fecha y hora comenzó la capacitación?           |
-| survey   |
-
-## Apariencia de los tipos de preguntas de fecha y hora en formularios web y KoboCollect
-
-### Apariencia predeterminada
-
-![Apariencias predeterminadas](images/date_time/default_appearances.png)
+![Date time questions in web forms vs KoboCollect](images/date_time/table.png)
 
 ### Apariencias avanzadas
 
-Al agregar el tipo de pregunta "Fecha" en el editor de formularios, puedes elegir entre una
-serie de opciones de visualización (en la configuración de la pregunta). Las apariencias cambian la
-forma en que se muestra la pregunta en los formularios web y en KoboCollect.
+Puedes aplicar apariencias avanzadas a las preguntas de **Fecha** y **Fecha y hora** para modificar cómo se muestran y se comportan en tu formulario.
 
-Para el tipo de pregunta "Fecha", puedes controlar cómo se muestra el calendario gregoriano predeterminado
-eligiendo entre las opciones "mes-año", "año" y "sin-calendario".
-Además de estas opciones, también puedes cambiar el estilo del calendario a calendarios
-no gregorianos compatibles.
+Para agregar una apariencia avanzada:
 
-![Agregar apariencias avanzadas](images/date_time/advanced_appearance.png)
+1. Abre la configuración de la pregunta haciendo clic en <i class="k-icon-settings"></i> **Configuración** a la derecha de la pregunta. Esto te llevará a la ventana **Opciones de pregunta**.
+2. En **Aspecto (avanzado)**, elige la apariencia deseada.
+    - Si la apariencia no aparece en la lista, selecciona **other** y escribe el nombre de la apariencia en el cuadro de texto, exactamente como se indica a continuación.
+    - Para las preguntas de Fecha y hora, escribe el nombre de la apariencia directamente en el cuadro de texto **Aspecto (avanzado)**.
 
-Para agregar valores de apariencia que no están listados en la lista desplegable del
-editor de formularios, elige "otro" y escribe el valor de apariencia en el campo de texto
-que aparece.
+![Date time question appearance](images/date_time/appearance.png)
 
-![Apariencias avanzadas](images/date_time/advanced_appearances.png)
+Las siguientes apariencias avanzadas están disponibles para las preguntas de **Fecha** y **Fecha y hora**:
 
-_\* Estas opciones deben ingresarse manualmente en el editor de formularios después de que se
-seleccione "otro"._
-
-### Agregar apariencias personalizadas para preguntas de fecha en XLSForm
-
-Puedes especificar apariencias avanzadas en XLSForm a través de la columna de apariencia de la
-siguiente manera:
-
-#### Apariencias del selector de fecha
-
-| type   | name             | label                                          | appearance  |
-| :----- | :--------------- | :--------------------------------------------- | :---------- |
-| date   | rains_start      | ¿Cuándo comenzaron las lluvias de siembra?     | month-year  |
-| date   | year_migrate     | ¿En qué año migraste?                          | year        |
-| date   | no-calendar_date | Selector de fecha sin calendario               | no-calendar |
-| survey |
-
-### Calendarios no gregorianos compatibles
-
-| type   | name                | label                                      | appearance     |
-| :----- | :------------------ | :----------------------------------------- | :------------- |
-| date   | coptic_date         | Selector de fecha con calendario copto     | coptic         |
-| date   | ethiopian_date      | Selector de fecha con calendario etíope    | ethiopian      |
-| date   | islamic_date        | Selector de fecha con calendario islámico  | islamic        |
-| date   | bikhram_sambat_date | Selector de fecha con calendario Bikram Sambat | bikhram_sambat |
-| date   | myanmar_date        | Selector de fecha con calendario birmano  | myanmar        |
-| date   | persian_date        | Selector de fecha con calendario persa     | persian        |
-| survey |
-
-## Usar preguntas de fecha y hora en lógica personalizada
-
-Al definir lógica de salto personalizada (relevant), criterios de validación (constraint),
-y criterios de respuesta obligatoria (required) usando código XLSForm, los valores de fecha
-deben incluirse
-[usando la función `date()`](https://docs.getodk.org/form-operators-functions/#date),
-y en el formato `"AAAA-MM-DD"`. Por ejemplo, si estás creando criterios de validación
-en una pregunta de fecha para que todas las respuestas de la encuesta sean anteriores a la fecha
-"10 de abril de 2022", tu lógica de validación será `. < date('2022-04-11')`.
-
-Para usar preguntas de "Hora" en la lógica de XLSForm, siempre es una buena idea convertir
-los valores de hora sin procesar en un número que represente la hora como una fracción de un día,
-llamado tiempo decimal. Puedes hacer esto usando
-[la función `decimal-time()`](https://docs.getodk.org/form-operators-functions/#decimal-time).
-Luego, puedes comparar este valor con otro valor de tiempo decimal. Por ejemplo,
-si deseas limitar la hora ingresada en una pregunta a solo después de las 12 del mediodía,
-puedes definir la siguiente lógica de validación personalizada `decimal-time(.)>=0.5`.
-
-Aprende más sobre temas relacionados:
-
-- [Lógica de salto](skip_logic.md)
-- [Criterios de validación](validation_criteria.md)
-- [Funciones de fecha y hora](https://docs.getodk.org/form-operators-functions/#date-and-time)
-  (documentación de ODK)
-
-<p class="note">
-  Puedes descargar el ejemplo de XLSForm
-  <a
-    download
-    class="reference"
-    href="./_static/files/date_time/date_time.xlsx"
-    >aquí <i class="k-icon k-icon-file-xls"></i></a
-  >.
-</p>
+![Date time advanced appearances](images/date_time/table1.png)
+![Date time advanced appearances](images/date_time/table2.png)
+![Date time advanced appearances](images/date_time/table3.png)

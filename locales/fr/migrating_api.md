@@ -1,10 +1,14 @@
-# Migration de l'API v1 vers v2
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/e3ce02358a9ac8e0298d590fee68b0508734e899/source/migrating_api.md" class="reference">25 mai 2026</a>
+# Migration de l'API v1 vers l'API v2
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/235a3cc8f0f84190b5e792cf191b424123e88f46/source/migrating_api.md" class="reference">22 Jun 2026</a>
 
 
-Dans le cadre de nos efforts continus pour rationaliser et moderniser la plateforme KoboToolbox, nous supprimons progressivement les points de terminaison KPI et KoboCAT `v1`. Tous les points de terminaison KPI et KoboCAT `v1` sont désormais obsolètes et seront entièrement supprimés en juin 2026. Les points de terminaison `v1` sont progressivement supprimés au profit de l'API KPI `v2`, plus robuste et entièrement prise en charge.
+Dans le cadre de nos efforts continus pour simplifier et moderniser la plateforme KoboToolbox, tous les endpoints KPI et KoboCAT `v1` ont été supprimés. Les endpoints `v1` ont été remplacés par l'API KPI `v2`, plus robuste et entièrement disponible.
 
-Cet article explique comment migrer vos intégrations API de l'API `v1` (KoboCAT et KPI) vers l'API KPI `v2`. Il couvre chaque point de terminaison `v1` obsolète et son équivalent `v2` pour vous aider à faire la transition de vos flux de travail.
+Cet article explique comment migrer vos intégrations API de l'API `v1` (KoboCAT et KPI) vers l'API KPI `v2`. Il présente chaque endpoint `v1` déprécié et son équivalent `v2` pour vous aider à faire évoluer vos workflows.
+
+<p class="note">
+  <strong>Note :</strong> Cet article s'adresse aux <strong>utilisateurs avancés</strong> qui utilisent l'API KoboToolbox pour des <strong>workflows de gestion de projets</strong>. Tous les autres utilisateurs ne sont pas concernés par cette migration. Les intégrations qui utilisent les <a href="https://support.kobotoolbox.org/fr/synchronous_exports.html">exports synchronisés</a>, tels que les tableaux de bord et autres outils de reporting externes, ne nécessitent aucune modification et continueront de fonctionner normalement.
+</p>
 
 
 ## Authentification
@@ -15,7 +19,7 @@ Toutes les requêtes API — v1 et v2 — nécessitent un token API. Incluez-le 
 Authorization: Token xxxx
 ```
 
-Remplacez `xxxx` par votre token réel. Vous pouvez trouver votre token à l'adresse `https://kf.kobotoolbox.org/token/` (ou l'équivalent de votre serveur).
+Remplacez `xxxx` par votre token réel. Vous pouvez trouver votre token à l'adresse `https://kf.kobotoolbox.org/token/` (ou l'équivalent pour votre serveur).
 
 **curl**
 ```bash
@@ -50,44 +54,46 @@ data <- content(response, as = "parsed")
 ```
 
 <p class="note">
-  <b>Remarque :</b> L'en-tête d'authentification est le même pour toutes les versions de l'API. Ce qui change dépend de votre chemin de migration : si vous migrez de <strong>KPI v1 vers KPI v2</strong>, vous devez uniquement mettre à jour le chemin URL. Si vous migrez de <strong>KoboCAT v1 vers KPI v2</strong>, vous devrez également mettre à jour le domaine de base (<code>kc.kobotoolbox.org</code> → <code>kf.kobotoolbox.org</code>), les chemins des points de terminaison, et adapter votre code pour gérer la nouvelle structure de réponse et les nouveaux noms de champs — voir les sections ci-dessous.
+  <strong>Note :</strong> L'en-tête d'authentification est identique pour toutes les versions de l'API. Ce qui change dépend du chemin de migration emprunté : si vous migrez de <strong>KPI v1 vers KPI v2</strong>, vous devez uniquement mettre à jour le chemin de l'URL. Si vous migrez de <strong>KoboCAT v1 vers KPI v2</strong>, vous devrez également mettre à jour le domaine de base (<code>kc.kobotoolbox.org</code> → <code>kf.kobotoolbox.org</code>), les chemins des endpoints, et adapter votre code pour gérer la nouvelle structure de réponse et les nouveaux noms de champs — voir les sections ci-dessous.
 </p>
 
 
 ## Migration de KPI v1 vers KPI v2
 La migration de l'ancienne API KPI (`v1`) vers la nouvelle version (`v2`) est simple dans la plupart des cas.
 
-En général, vous devez uniquement mettre à jour le chemin de base de `/endpoint/` vers `/api/v2/endpoint/`.
+En général, il vous suffit de mettre à jour le chemin de base de `/endpoint/` vers `/api/v2/endpoint/`.
 
 ### Exceptions
 Il existe deux exceptions à la règle ci-dessus.
 
-#### Exception pour le point de terminaison exports
-Dans `v1`, le point de terminaison `/exports/` renvoyait **tous les exports pour l'utilisatrice ou utilisateur authentifié** sur tous les projets.
+**Exception pour l'endpoint exports**
+
+Dans `v1`, l'endpoint `/exports/` retournait **tous les exports de l'utilisateur authentifié** pour tous les projets.
 
 Dans `v2`, pour des raisons de performance, les exports sont désormais **limités par projet** et doivent être accessibles via `/api/v2/assets/{asset_uid}/exports/`.
 
-#### Exception pour le point de terminaison submissions
-Le point de terminaison `/assets/{asset_uid}/submissions/` a été **renommé** dans `v2`. En plus de mettre à jour le chemin de base, vous devez également changer le nom du point de terminaison de `submissions` à `data` :
+**Exception pour l'endpoint submissions**
 
-| Point de terminaison `v1`                   | Équivalent `v2`                                |
-|---------------------------------------------|------------------------------------------------|
-| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`             |
+L'endpoint `/assets/{asset_uid}/submissions/` a été **renommé** dans `v2`. En plus de mettre à jour le chemin de base, vous devez également changer le nom de l'endpoint de `submissions` en `data` :
+
+| Endpoint `v1`                               | Équivalent `v2`                                     |
+|---------------------------------------------|-----------------------------------------------------|
+| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`                  |
 | `/assets/{asset_uid}/submissions/{id}/`     | `/api/v2/assets/{asset_uid}/data/{id}/`<sup>1</sup> |
 
-<sup>1</sup> `{id}` peut être l'identifiant entier de la soumission ou son `root_uuid`.
+<sup>1</sup> `{id}` peut être soit l'identifiant entier de la soumission, soit son `root_uuid`.
 
 
 
 ## Migration de KoboCAT v1 vers KPI v2
-La section suivante répertorie les principaux points de terminaison de l'API KoboCAT `v1` et fournit leurs équivalents `v2`.
+La section suivante liste les principaux endpoints de l'API KoboCAT `v1` et fournit leurs équivalents `v2`.
 
-### Points de terminaison de données : Liste de projets
-Ce point de terminaison renvoie une liste de formulaires auxquels vous avez accès, avec des liens vers leurs données de soumission, servant de point d'entrée pour accéder ou télécharger les réponses.
+### Endpoints de données : liste des projets
+Cet endpoint retourne la liste des formulaires auxquels vous avez accès, avec des liens vers leurs données de soumission, servant de point d'entrée pour accéder aux réponses ou les télécharger.
 
-**Correspondance des points de terminaison de `v1` à `v2`**
+**Correspondance des endpoints de `v1` à `v2`**
 
-| Point de terminaison `v1`    | Équivalent `v2`        |
+| Endpoint `v1`    | Équivalent `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/data`          | `/api/v2/assets/?asset_type=survey`  |
 
@@ -102,16 +108,16 @@ Ce point de terminaison renvoie une liste de formulaires auxquels vous avez acc�
 | `description` | `settings.description` |
 | `url`         | `data`                 |
 
-<sup>1</sup> _Dans le point de terminaison `/api/v2/assets`, les identifiants entiers séquentiels ne sont plus utilisés. Chaque entrée est identifiée de manière unique par un `uid` alphanumérique_
+<sup>1</sup> _Dans l'endpoint `/api/v2/assets`, les identifiants entiers séquentiels ne sont plus utilisés. Chaque entrée est identifiée de manière unique par un `uid` alphanumérique._
 
 
-#### Exemples de code
+**Exemples de code**
 
 <details>
 <summary><strong>curl</strong></summary>
 
 ```bash
-# v1 (obsolète)
+# v1 (déprécié)
 curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kc.kobotoolbox.org/api/v1/data"
@@ -132,7 +138,7 @@ import requests
 TOKEN = "xxxx"
 headers = {"Authorization": f"Token {TOKEN}"}
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response = requests.get("https://kc.kobotoolbox.org/api/v1/data", headers=headers)
 
 # v2
@@ -159,7 +165,7 @@ library(jsonlite)
 TOKEN <- "xxxx"
 headers <- add_headers(Authorization = paste("Token", TOKEN))
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response <- GET("https://kc.kobotoolbox.org/api/v1/data", headers)
 
 # v2
@@ -176,7 +182,7 @@ for (p in projects) {
 ```
 </details>
 
-#### Exemples de réponses
+**Exemples de réponses**
 
 <details>
 <summary><strong>Réponse v1</strong></summary>
@@ -211,29 +217,29 @@ for (p in projects) {
 
 ---
 
-### Points de terminaison de données : Données de soumission
-Ces points de terminaison récupèrent toutes les données de soumission pour un projet spécifique ou une seule soumission du projet. `{uid}` est l'identifiant unique du projet et `{submission_id}` est l'identifiant unique d'une soumission de formulaire.
+### Endpoints de données : données de soumission
+Ces endpoints récupèrent toutes les données de soumission d'un projet spécifique ou une soumission unique du projet. `{uid}` est l'identifiant unique du projet et `{submission_id}` est l'identifiant unique d'une soumission de formulaire.
 
-| Point de terminaison `v1`    | Équivalent `v2`        |
+| Endpoint `v1`    | Équivalent `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/data/<pk>`   | `/api/v2/assets/{uid}/data/` |
 | `/api/v1/data/<pk>/<dataid>`       | `/api/v2/assets/{uid}/data/{submission_id}/`                 |
 
-En vous basant sur l'`url` que vous obtenez de la propriété `data` dans le point de terminaison asset, vous pouvez récupérer les données de soumission dans `v2`.
+En vous basant sur l'`url` obtenue depuis la propriété `data` de l'endpoint asset, vous pouvez récupérer les données de soumission dans `v2` de la manière suivante.
 
 <p class="note">
-  <b>Remarque :</b> La structure de réponse est presque identique, <strong>sauf que <code>v2</code> introduit la pagination</strong>. Si vous avez plus de 1 000 soumissions, vous devrez suivre l'URL <code>next</code> pour récupérer les pages suivantes.
+  <strong>Note :</strong> La structure de la réponse est quasiment identique, <strong>sauf que <code>v2</code> introduit la pagination</strong>. Si vous avez plus de 1 000 soumissions, vous devrez suivre l'URL <code>next</code> pour récupérer les pages suivantes.
 </p>
 
-#### Exemples de code
+**Exemples de code**
 
-Remplacez `a4etXeWtqcoodSxLV8a6Uq` par l'`uid` de votre projet (voir le [point de terminaison de liste de projets](#points-de-terminaison-de-données--liste-de-projets) ci-dessus).
+Remplacez `a4etXeWtqcoodSxLV8a6Uq` par le `uid` de votre projet (voir l'[endpoint de liste des projets](#data-endpoints-project-list) ci-dessus).
 
 <details>
 <summary><strong>curl</strong></summary>
 
 ```bash
-# v1 (obsolète) — utilisait l'identifiant entier du formulaire
+# v1 (déprécié) — utilisait l'identifiant entier du formulaire
 curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kc.kobotoolbox.org/api/v1/data/474"
@@ -255,11 +261,11 @@ TOKEN = "xxxx"
 ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
 headers = {"Authorization": f"Token {TOKEN}"}
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response = requests.get("https://kc.kobotoolbox.org/api/v1/data/474", headers=headers)
-# submissions = response.json()  # renvoyait une liste plate
+# submissions = response.json()  # retournait une liste plate
 
-# v2 — résultats paginés
+# v2 — les résultats sont paginés
 url = f"https://kf.kobotoolbox.org/api/v2/assets/{ASSET_UID}/data/"
 all_submissions = []
 
@@ -285,11 +291,11 @@ TOKEN <- "xxxx"
 ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
 headers <- add_headers(Authorization = paste("Token", TOKEN))
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response <- GET(paste0("https://kc.kobotoolbox.org/api/v1/data/474"), headers)
 # submissions <- content(response, as = "parsed")  # liste plate
 
-# v2 — gérer la pagination
+# v2 — gestion de la pagination
 url <- paste0("https://kf.kobotoolbox.org/api/v2/assets/", ASSET_UID, "/data/")
 all_submissions <- list()
 
@@ -305,7 +311,7 @@ cat("Total soumissions :", length(all_submissions), "\n")
 ```
 </details>
 
-#### Exemples de réponses
+**Exemples de réponses**
 
 <details>
 <summary><strong>Réponse v1</strong></summary>
@@ -341,19 +347,19 @@ cat("Total soumissions :", length(all_submissions), "\n")
 ---
 
 
-### Points de terminaison de formulaire
-Ces points de terminaison renvoient les attributs détaillés de tous les formulaires partagés avec vous ou d'un formulaire spécifique, où `{uid}` est l'identifiant unique du projet.
+### Endpoints de formulaires
+Ces endpoints retournent les attributs détaillés de tous les formulaires partagés avec vous ou d'un formulaire spécifique, où `{uid}` est l'identifiant unique du projet.
 
-**Correspondance des points de terminaison**
+**Correspondance des endpoints**
 
-| Point de terminaison `v1`    | Équivalent `v2`        |
+| Endpoint `v1`    | Équivalent `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/forms`   | `/api/v2/assets/?asset_type=survey` |
 | `/api/v1/forms/<pk>`       | `/api/v2/assets/{asset_uid}/`                 |
 
 
 <p class="note">
-  <b>Remarque :</b> Le point de terminaison <code>v2</code> suit la même structure pour chaque élément que celle listée ci-dessous, mais introduit la pagination. Certaines propriétés du point de terminaison <code>v1</code> ne sont pas directement disponibles sur le point de terminaison asset <code>v2</code>, mais elles peuvent toujours être accessibles différemment (voir la légende sous le tableau pour plus de détails).
+  <strong>Note :</strong> L'endpoint <code>v2</code> suit la même structure pour chaque élément que celle décrite ci-dessous, mais introduit la pagination. Certaines propriétés de l'endpoint <code>v1</code> ne sont pas directement disponibles sur l'endpoint asset <code>v2</code>, mais elles restent accessibles d'une autre manière (voir la légende sous le tableau pour plus de détails).
 </p>
 
 
@@ -379,23 +385,23 @@ Ces points de terminaison renvoient les attributs détaillés de tous les formul
 | `num_of_submissions`       | `deployment__submission_count`           |
 | `attachment_storage_bytes` | _N/A_<sup>4</sup>                        |
 
-<sup>1</sup> _Dans le point de terminaison `/api/v2/assets`, les identifiants entiers séquentiels ne sont plus utilisés. Chaque entrée est identifiée de manière unique par un `uid` alphanumérique_.
-<sup>2</sup> _Dans `v1`, les balises étaient renvoyées sous forme de tableau ; dans `v2`, elles sont renvoyées sous forme de chaîne séparée par des virgules._
-<sup>3</sup> _Ces champs ne sont plus exposés. Voir la section **Permissions** ci-dessous pour plus de détails._
-<sup>4</sup> _Non directement accessible via le point de terminaison asset. Utilisez le point de terminaison `/api/v2/asset_usage/` et récupérez le champ `storage_bytes` du projet correspondant._
+<sup>1</sup> _Dans l'endpoint `/api/v2/assets`, les identifiants entiers séquentiels ne sont plus utilisés. Chaque entrée est identifiée de manière unique par un `uid` alphanumérique._
+<sup>2</sup> _Dans `v1`, les tags étaient retournés sous forme de tableau ; dans `v2`, ils sont retournés sous forme de chaîne séparée par des virgules._
+<sup>3</sup> _Ces champs ne sont plus exposés. Consultez la section **Permissions** ci-dessous pour plus de détails._
+<sup>4</sup> _Non directement accessible via l'endpoint asset. Utilisez l'endpoint `/api/v2/asset_usage/` et récupérez le champ `storage_bytes` du projet correspondant._
 
-#### Exemples de code
+**Exemples de code**
 
 <details>
 <summary><strong>curl</strong></summary>
 
 ```bash
-# v1 (obsolète) — lister tous les formulaires
+# v1 (déprécié) — lister tous les formulaires
 curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kc.kobotoolbox.org/api/v1/forms"
 
-# v1 (obsolète) — formulaire unique par identifiant entier
+# v1 (déprécié) — formulaire unique par identifiant entier
 curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kc.kobotoolbox.org/api/v1/forms/474"
@@ -422,7 +428,7 @@ TOKEN = "xxxx"
 ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
 headers = {"Authorization": f"Token {TOKEN}"}
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response = requests.get("https://kc.kobotoolbox.org/api/v1/forms/474", headers=headers)
 # form = response.json()
 
@@ -450,7 +456,7 @@ TOKEN <- "xxxx"
 ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
 headers <- add_headers(Authorization = paste("Token", TOKEN))
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response <- GET("https://kc.kobotoolbox.org/api/v1/forms/474", headers)
 # form <- content(response, as = "parsed")
 
@@ -467,7 +473,7 @@ cat(form$tag_string)                     # était : paste(form$tags, collapse = 
 ```
 </details>
 
-#### Exemples de réponses
+**Exemples de réponses**
 
 <details>
 <summary><strong>Exemple de réponse <code>v1</code></strong></summary>
@@ -516,7 +522,7 @@ cat(form$tag_string)                     # était : paste(form$tags, collapse = 
 
 
 <details>
-<summary><strong>Réponse équivalente <code>v2</code></strong></summary>
+<summary><strong>Réponse <code>v2</code> équivalente</strong></summary>
 <br>
 
 ```json
@@ -593,16 +599,16 @@ cat(form$tag_string)                     # était : paste(form$tags, collapse = 
 <br>
 
 <a id="tags"></a>
-**Balises**
+**Tags**
 
-Les balises dans `v1` et `v2` ne partagent pas la même base de données sous-jacente. Par conséquent, les balises de `v1` **ne seront pas automatiquement migrées** vers `v2`. Si vous devez les conserver, vous devez réappliquer les balises manuellement en utilisant une requête `PATCH` vers `/api/v2/assets/{uid}/`.
+Les tags dans `v1` et `v2` ne partagent pas la même base de données sous-jacente. Par conséquent, les tags de `v1` **ne seront pas automatiquement migrés** vers `v2`. Si vous souhaitez les conserver, vous devez les réappliquer manuellement via une requête `PATCH` vers `/api/v2/assets/{uid}/`.
 
-Exemple de charge utile :
+Exemple de payload :
 ```json
 { "tag_string": "tag1,tag2,tag3" }
 ```
 
-#### Exemples de code
+**Exemples de code**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -664,16 +670,16 @@ cat("Tags mis à jour :", result$tag_string, "\n")
 
 **Permissions**
 
-Dans `v2`, les champs `public`, `public_data` et `require_auth` ne sont plus exposés en tant qu'attributs booléens. Au lieu de cela, **l'accès anonyme est contrôlé via des attributions de permissions explicites à l'`AnonymousUser`**.
+Dans `v2`, les champs `public`, `public_data` et `require_auth` ne sont plus exposés en tant qu'attributs booléens. À la place, **l'accès anonyme est contrôlé via des attributions de permissions explicites à l'`AnonymousUser`**.
 
 Les correspondances suivantes s'appliquent :
-- `public: true` → l'`AnonymousUser` a la permission `view_asset`
-- `public_data: true` → l'`AnonymousUser` a la permission `view_submissions`
-- `require_auth: false` → l'`AnonymousUser` a la permission `add_submissions`
+- `public: true` → l'`AnonymousUser` dispose de la permission `view_asset`
+- `public_data: true` → l'`AnonymousUser` dispose de la permission `view_submissions`
+- `require_auth: false` → l'`AnonymousUser` dispose de la permission `add_submissions`
 
-Les permissions sont disponibles sur le point de terminaison de détail de l'asset (`/api/v2/assets/{uid}/`) sous la propriété `permissions`.
+Les permissions sont disponibles sur l'endpoint de détail de l'asset (`/api/v2/assets/{uid}/`) sous la propriété `permissions`.
 
-#### Exemples de code
+**Exemples de code**
 
 **Lecture des permissions**
 
@@ -702,10 +708,10 @@ response = requests.get(f"{BASE_URL}/api/v2/assets/{ASSET_UID}/", headers=header
 response.raise_for_status()
 permissions = response.json()["permissions"]
 
-# Vérifier quelles permissions sont assignées à l'AnonymousUser
+# Vérifier quelles permissions sont attribuées à AnonymousUser
 # (équivalent des champs v1 public/public_data/require_auth)
 anon_permissions = [
-    p["permission"].split("/")[-2]  # extraire le nom de code de la permission depuis l'URL
+    p["permission"].split("/")[-2]  # extraire le nom de la permission depuis l'URL
     for p in permissions
     if p["user"].endswith("/AnonymousUser/")
 ]
@@ -728,7 +734,7 @@ headers <- add_headers(Authorization = paste("Token", TOKEN))
 response <- GET(paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/"), headers)
 permissions <- content(response, as = "parsed")$permissions
 
-# Vérifier quelles permissions sont assignées à l'AnonymousUser
+# Vérifier quelles permissions sont attribuées à AnonymousUser
 anon_permissions <- Filter(
   function(p) grepl("AnonymousUser", p$user),
   permissions
@@ -737,15 +743,15 @@ for (p in anon_permissions) cat(p$label, "\n")
 ```
 </details>
 
-**Assigner des permissions à l'AnonymousUser**
+**Attribution de permissions à AnonymousUser**
 
-Pour répliquer le paramètre `public: true` de v1, envoyez une requête POST d'attribution de permission au point de terminaison `permission-assignments`.
+Pour reproduire un paramètre `public: true` de v1, envoyez une requête POST d'attribution de permission vers l'endpoint `permission-assignments`.
 
 <details>
 <summary><strong>curl</strong></summary>
 
 ```bash
-# Accorder à l'AnonymousUser view_asset (équivalent de v1 public: true)
+# Accorder à AnonymousUser view_asset (équivalent de v1 public: true)
 curl -X POST \
   -H "Authorization: Token xxxx" \
   -H "Content-Type: application/json" \
@@ -765,7 +771,7 @@ ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
 BASE_URL = "https://kf.kobotoolbox.org"
 headers = {"Authorization": f"Token {TOKEN}"}
 
-# Accorder à l'AnonymousUser view_asset (équivalent de v1 public: true)
+# Accorder à AnonymousUser view_asset (équivalent de v1 public: true)
 response = requests.post(
     f"{BASE_URL}/api/v2/assets/{ASSET_UID}/permission-assignments/",
     headers=headers,
@@ -775,7 +781,7 @@ response = requests.post(
     }
 )
 response.raise_for_status()
-print("Permission assignée :", response.json()["label"])
+print("Permission attribuée :", response.json()["label"])
 ```
 </details>
 
@@ -791,7 +797,7 @@ ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
 BASE_URL <- "https://kf.kobotoolbox.org"
 headers <- add_headers(Authorization = paste("Token", TOKEN))
 
-# Accorder à l'AnonymousUser view_asset (équivalent de v1 public: true)
+# Accorder à AnonymousUser view_asset (équivalent de v1 public: true)
 response <- POST(
   paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/permission-assignments/"),
   headers,
@@ -802,14 +808,14 @@ response <- POST(
   content_type_json()
 )
 result <- content(response, as = "parsed")
-cat("Permission assignée :", result$label, "\n")
+cat("Permission attribuée :", result$label, "\n")
 ```
 </details>
 
-#### Exemples de réponses
+**Exemples de réponses**
 
 <details>
-<summary><strong>Exemple : permissions d'utilisateur anonyme <code>v2</code></strong></summary>
+<summary><strong>Exemple : permissions de l'utilisateur anonyme dans <code>v2</code></strong></summary>
 <br>
 
 ```json
@@ -840,26 +846,26 @@ cat("Permission assignée :", result$label, "\n")
 
 ---
 
-### Point de terminaison Label
-Le point de terminaison `/api/v1/forms/<pk>/labels` de `v1` renvoie un dictionnaire mappant chaque nom de champ du formulaire à son étiquette correspondante, permettant un affichage plus convivial des données du formulaire.
+### Endpoint label
+L'endpoint `/api/v1/forms/<pk>/labels` de `v1` retourne un dictionnaire associant chaque nom de champ du formulaire à son libellé correspondant, permettant un affichage plus facile à utiliser des données du formulaire.
 
-Ce point de terminaison n'a pas été porté vers `v2`, mais il est toujours possible d'**étiqueter** ou de **baliser** un projet, comme décrit [ci-dessus](#tags).
+Cet endpoint n'a pas été porté vers `v2`, mais il est toujours possible d'**étiqueter** ou de **taguer** un projet, comme décrit [ci-dessus](#tags).
 
 ---
 
-### Points de terminaison de métadonnées
-Ces points de terminaison renvoient une liste plate de tous les fichiers médias associés à l'utilisatrice ou utilisateur actuel, sur tous les projets déployés ou un projet spécifique. Dans `v2`, les fichiers médias sont désormais limités par projet. Comme pour les autres points de terminaison, `v2` introduit la pagination, alors que `v1` renvoie tous les résultats en une seule réponse.
+### Endpoints de métadonnées
+Ces endpoints retournent une liste plate de tous les fichiers média associés à l'utilisateur actuel, pour tous les projets déployés ou un projet spécifique. Dans `v2`, les fichiers média sont désormais limités par projet. Comme pour les autres endpoints, `v2` introduit la pagination, tandis que `v1` retourne tous les résultats en une seule réponse.
 
-**Correspondance des points de terminaison**
+**Correspondance des endpoints**
 
-| Point de terminaison `v1`    | Équivalent `v2`        |
+| Endpoint `v1`    | Équivalent `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/metadata`   | `/api/v2/assets/{asset_uid}/files/` |
 | `/api/v1/metadata/<pk>`       | `/api/v2/assets/{asset_uid}/files/{file_uid}/`                 |
 
 
 <p class="note">
-  <b>Remarque :</b> <code>v2</code> ne prend en charge que les fichiers médias : <code>media</code> de <code>v1</code> est mappé à <code>form_media</code> dans <code>v2</code>. <strong>Les autres types de métadonnées</strong> de <code>v1</code> (par exemple, <code>doc</code>, <code>mapbox_layer</code>, <code>source</code> etc.) n'ont pas été portés vers <code>v2</code>.
+  <strong>Note :</strong> <code>v2</code> ne gère que les fichiers média : <code>media</code> de <code>v1</code> correspond à <code>form_media</code> dans <code>v2</code>. <strong>Les autres types de métadonnées</strong> de <code>v1</code> (par exemple <code>doc</code>, <code>mapbox_layer</code>, <code>source</code>, etc.) n'ont pas été portés vers <code>v2</code>.
 </p>
 
 
@@ -877,25 +883,25 @@ Ces points de terminaison renvoient une liste plate de tous les fichiers médias
 | `file_hash`       | `metadata.hash`                        |
 | `from_kpi`        | _N/A_                                  |
 
-<sup>1</sup> _Dans `v2`, le projet associé est accessible via le champ `asset`, qui contient une URL complète au lieu d'un ID entier._
+<sup>1</sup> _Dans `v2`, le projet associé est accessible via le champ `asset`, qui contient une URL complète plutôt qu'un identifiant entier._
 
-#### Exemples de code
+**Exemples de code**
 
 <details>
 <summary><strong>curl</strong></summary>
 
 ```bash
-# v1 (obsolète) — lister tous les fichiers médias de tous les projets
+# v1 (déprécié) — lister tous les fichiers média pour tous les projets
 curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kc.kobotoolbox.org/api/v1/metadata"
 
-# v1 (obsolète) — fichier unique par identifiant entier
+# v1 (déprécié) — fichier unique par identifiant entier
 curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kc.kobotoolbox.org/api/v1/metadata/271"
 
-# v2 — lister les fichiers médias d'un projet spécifique
+# v2 — lister les fichiers média d'un projet spécifique
 curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/"
@@ -905,7 +911,7 @@ curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/"
 
-# v2 — téléverser un nouveau fichier média
+# v2 — importer un nouveau fichier média
 curl -X POST \
   -H "Authorization: Token xxxx" \
   -F "file_type=form_media" \
@@ -925,11 +931,11 @@ ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
 BASE_URL = "https://kf.kobotoolbox.org"
 headers = {"Authorization": f"Token {TOKEN}"}
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response = requests.get("https://kc.kobotoolbox.org/api/v1/metadata", headers=headers)
-# files = response.json()  # liste plate sur tous les projets
+# files = response.json()  # liste plate pour tous les projets
 
-# v2 — lister les fichiers médias d'un projet spécifique (paginé)
+# v2 — lister les fichiers média d'un projet spécifique (paginé)
 response = requests.get(
     f"{BASE_URL}/api/v2/assets/{ASSET_UID}/files/",
     headers=headers
@@ -940,7 +946,7 @@ files = response.json()["results"]
 for f in files:
     print(f["uid"], f["metadata"]["filename"])  # était : f["id"], f["data_filename"]
 
-# v2 — téléverser un nouveau fichier média
+# v2 — importer un nouveau fichier média
 with open("/path/to/goose.jpg", "rb") as fh:
     upload = requests.post(
         f"{BASE_URL}/api/v2/assets/{ASSET_UID}/files/",
@@ -949,7 +955,7 @@ with open("/path/to/goose.jpg", "rb") as fh:
         files={"content": fh}
     )
 upload.raise_for_status()
-print("Téléversé :", upload.json()["metadata"]["filename"])
+print("Importé :", upload.json()["metadata"]["filename"])
 ```
 </details>
 
@@ -964,11 +970,11 @@ ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
 BASE_URL <- "https://kf.kobotoolbox.org"
 headers <- add_headers(Authorization = paste("Token", TOKEN))
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response <- GET("https://kc.kobotoolbox.org/api/v1/metadata", headers)
-# files <- content(response, as = "parsed")  # liste plate sur tous les projets
+# files <- content(response, as = "parsed")  # liste plate pour tous les projets
 
-# v2 — lister les fichiers médias d'un projet spécifique
+# v2 — lister les fichiers média d'un projet spécifique
 response <- GET(
   paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/files/"),
   headers
@@ -979,7 +985,7 @@ for (f in files) {
   cat(f$uid, f$metadata$filename, "\n")  # était : f$id, f$data_filename
 }
 
-# v2 — téléverser un nouveau fichier média
+# v2 — importer un nouveau fichier média
 upload <- POST(
   paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/files/"),
   headers,
@@ -988,11 +994,11 @@ upload <- POST(
     content   = upload_file("/path/to/goose.jpg")
   )
 )
-cat("Téléversé :", content(upload, as = "parsed")$metadata$filename, "\n")
+cat("Importé :", content(upload, as = "parsed")$metadata$filename, "\n")
 ```
 </details>
 
-#### Exemples de réponses
+**Exemples de réponses**
 
 <details>
 <summary><strong>Réponse v1</strong></summary>
@@ -1033,12 +1039,12 @@ cat("Téléversé :", content(upload, as = "parsed")$metadata$filename, "\n")
 
 ---
 
-### Points de terminaison utilisateur
-Ce point de terminaison renvoie les informations de profil sur l'utilisatrice ou utilisateur authentifié, y compris l'identité du compte et les détails associés.
+### Endpoints utilisateur
+Cet endpoint retourne les informations de profil de l'utilisateur authentifié, notamment l'identité du compte et les détails associés.
 
-**Correspondance des points de terminaison**
+**Correspondance des endpoints**
 
-| Point de terminaison `v1`    | Équivalent `v2`        |
+| Endpoint `v1`    | Équivalent `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/user`   | `/me/` |
 
@@ -1067,13 +1073,13 @@ Ce point de terminaison renvoie les informations de profil sur l'utilisatrice ou
 
 <sup>2</sup> _Utilisez https://kf.domain.tld/token à la place_
 
-#### Exemples de code
+**Exemples de code**
 
 <details>
 <summary><strong>curl</strong></summary>
 
 ```bash
-# v1 (obsolète)
+# v1 (déprécié)
 curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kc.kobotoolbox.org/api/v1/user"
@@ -1095,7 +1101,7 @@ TOKEN = "xxxx"
 BASE_URL = "https://kf.kobotoolbox.org"
 headers = {"Authorization": f"Token {TOKEN}"}
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response = requests.get("https://kc.kobotoolbox.org/api/v1/user", headers=headers)
 # user = response.json()
 # print(user["username"], user["email"])
@@ -1123,7 +1129,7 @@ TOKEN <- "xxxx"
 BASE_URL <- "https://kf.kobotoolbox.org"
 headers <- add_headers(Authorization = paste("Token", TOKEN))
 
-# v1 (obsolète)
+# v1 (déprécié)
 # response <- GET("https://kc.kobotoolbox.org/api/v1/user", headers)
 # user <- content(response, as = "parsed")
 
@@ -1139,7 +1145,7 @@ cat(user$extra_details__uid, "\n")               # était : user$id
 ```
 </details>
 
-#### Exemples de réponses
+**Exemples de réponses**
 
 <details>
 <summary><strong>Réponse v1</strong></summary>

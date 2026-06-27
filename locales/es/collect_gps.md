@@ -1,113 +1,204 @@
-# Recolectar ubicaciones GPS
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/collect_gps.md" class="reference">29 Jul 2025</a>
+# Recolectar datos de GPS con KoboToolbox
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/75a01d18e539cff0694a03ac2ffe032abb6a14d5/source/collect_gps.md" class="reference">23 Apr 2026</a>
 
-Las coordenadas de ubicación se pueden recolectar fácilmente en todos los formularios con los tipos de respuesta 'GPS'.
+KoboToolbox te permite recolectar datos de GPS en tus formularios, incluso cuando trabajas sin conexión a internet. Las preguntas GPS pueden capturar **una sola ubicación, una ruta o un área** durante la recolección de datos. Esto es útil para tareas como mapear infraestructura, hacer seguimiento de visitas de campo, monitorear sitios ambientales o registrar ubicaciones de servicios. Los datos de GPS se pueden recolectar tanto con [formularios web](https://support.kobotoolbox.org/es/data_through_webforms.html) como con [KoboCollect](https://support.kobotoolbox.org/es/data_collection_kobocollect.html).
 
-## Crear los diferentes tipos de preguntas GPS
+Este artículo explica cómo recolectar datos de GPS en KoboToolbox, incluyendo los tipos de preguntas GPS disponibles, cómo se recolectan los datos de GPS en formularios web y en KoboCollect, cómo usar datos de GPS en lógica avanzada de formularios, cómo gestionar datos de GPS en KoboToolbox y cómo resolver problemas comunes de GPS.
 
-Para recolectar coordenadas GPS durante el proceso de recolección de datos simplemente agrega una pregunta GPS a tu formulario. Hay tres tipos de preguntas GPS: **Punto**, **Línea** y **Área**
+## Configurar tu formulario para recolectar datos de GPS
 
--   Cuando usas el **editor de formularios** estos tipos de preguntas se pueden encontrar cuando haces clic en el botón de agregar pregunta como se ilustra a continuación.
+KoboToolbox admite tres tipos de preguntas GPS para recolectar datos geográficos directamente en un formulario, varias opciones de metadatos que recolectan información de ubicación automáticamente en segundo plano, y preguntas de selección basadas en mapas en XLSForm.
 
-![image](/images/collect_gps/formbuilder.jpg)
+### Tipos de preguntas GPS
 
--   Cuando usas el diseño **XLSForm**, tienes que definir los tipos de preguntas como se muestra a continuación para obtener la pregunta que deseas.
+Las preguntas GPS son visibles para los encuestados. Permiten que los encuestados recolecten coordenadas GPS seleccionando manualmente o registrando automáticamente un punto, una línea o un área. Los siguientes tipos de preguntas GPS están disponibles en KoboToolbox:
 
-**hoja survey**
+| Formbuilder | XLSForm | Descripción |
+| :--- | :--- | :--- |
+| Point | `geopoint` | Recolecta una sola ubicación geográfica, como las coordenadas de una escuela, clínica o vivienda. |
+| Line | `geotrace` | Recolecta múltiples puntos GPS que forman una línea, como un camino, carretera o ruta. |
+| Area | `geoshape` | Recolecta múltiples puntos GPS que forman un área cerrada, como una parcela de tierra o un campo. |
 
-| type     | name  | label                        | hint                                                                                 |
-| :------- | :---- | :--------------------------- | :----------------------------------------------------------------------------------- |
-| geopoint | point | Registra tu ubicación actual | Esta pregunta recolecta una sola coordenada GPS que denota un solo punto           |
-| geotrace | line  | Registra una línea                | Esta pregunta recolecta dos coordenadas para formar una línea                                |
-| geoshape | area  | Registra un área               | Esta pregunta recolecta coordenadas GPS que marcan un bucle/área cerrada en cualquier forma |
-| survey |
+<p class="note">
+Para obtener más información sobre cómo agregar preguntas GPS a tus formularios, consulta <a href="https://support.kobotoolbox.org/es/gps_questions.html">Preguntas GPS en KoboToolbox</a> y <a href="https://support.kobotoolbox.org/es/question_types_xls.html#gps-question-types">Tipos de preguntas en XLSForm</a>.
+</p>
 
-## Recolectar datos usando las preguntas GPS
+### Preguntas de metadatos GPS
 
-Durante la entrada de datos el/la encuestador/a verá diferentes opciones para recolectar las coordenadas, las cuales dependen del tipo de dispositivo de recolección de datos y el enfoque.
+Las preguntas de metadatos GPS no son visibles para los encuestados. Cuando se activan, recolectan datos de GPS automáticamente en segundo plano durante el llenado del formulario. Los siguientes tipos de preguntas de metadatos están disponibles en KoboToolbox:
 
-## Recolectar datos usando formularios web Enketo
+| Formbuilder | XLSForm | Descripción |
+| :--- | :--- | :--- |
+| audit | `audit` | Registra la ubicación GPS detallada y otra información de auditoría durante el llenado del formulario, incluyendo información de ubicación para cada pregunta a medida que se completa el formulario. |
+| start geopoint early | `start-geopoint` | Captura automáticamente una sola ubicación en segundo plano cuando se abre el formulario. |
+| *No disponible* | `background-geopoint` | Captura automáticamente una sola ubicación en segundo plano después de que los encuestados responden una pregunta específica. |
 
-El formulario tendrá varias opciones de recolección incluyendo
+<p class="note">
+Para obtener más información sobre cómo agregar metadatos GPS a tus formularios, consulta <a href="https://support.kobotoolbox.org/es/form_meta.html#">Agregar metadatos en el Formbuilder</a> y <a href="https://support.kobotoolbox.org/es/metadata_xls.html#">Metadatos en XLSForm</a>.
+</p>
 
-**1. Recolección manual:** Simplemente toca cualquier punto(s) en el mapa para recolectar las coordenadas de ubicación o puedes escribir las coordenadas de latitud y longitud si se conocen.
+### Seleccionar opciones de un mapa
 
-![image](/images/collect_gps/point_manual.png)
+Además de recolectar coordenadas GPS, también puedes permitir que los encuestados seleccionen ubicaciones predefinidas en un mapa en XLSForm. Esto se configura usando una **pregunta de selección** con la apariencia `map` o `quick map`, junto con una columna `geometry` en la hoja choices que almacena las coordenadas de cada opción.
 
-**2. Pegar puntos KML:** Pega las coordenadas KML en el cuadro de texto que aparece.
+<p class="note">
+Para obtener más información sobre cómo configurar preguntas de selección desde un mapa, consulta <a href="https://support.kobotoolbox.org/es/select_from_map_xls.html">Seleccionar opciones de un mapa</a>.
+</p>
 
-![image](/images/collect_gps/kml.png)
+## Recolectar datos de GPS
 
-**3. Detectar ubicación actual:** Simplemente haz clic en el botón que se muestra a continuación para recolectar las coordenadas GPS actuales de la ubicación del dispositivo.
+Los datos de GPS se pueden recolectar tanto en [formularios web](https://support.kobotoolbox.org/es/data_through_webforms.html) como en la aplicación [KoboCollect](https://support.kobotoolbox.org/es/data_collection_kobocollect.html), pero el proceso de recolección difiere entre ellos.
 
-![image](/images/collect_gps/current_location.jpg)
+### Formularios web
 
-## Recolectar datos usando KoboCollect
+Al usar formularios web, los encuestados pueden ingresar datos de GPS de varias maneras:
 
-El/la entrevistador/a verá varias opciones dependiendo del tipo de pregunta GPS
+- Detectar la ubicación actual del dispositivo
+- Seleccionar una ubicación directamente en el mapa
+- Buscar una dirección
+- Ingresar coordenadas GPS manualmente
 
-**1. Coordenada de punto GPS único**
+Para preguntas de línea y área, los encuestados pueden agregar múltiples puntos en el mapa para crear una ruta o polígono.
 
--   El/la encuestador/a verá esta pantalla en la cual puede tocar en Buscar Ubicación.
+![Ubicación GPS](images/collect_gps/webform.png)
 
-![image](/images/collect_gps/geopoint.jpg)
+<p class="note">
+<strong>Nota:</strong>
+Puedes detectar la ubicación actual del dispositivo haciendo clic en el <strong>botón de ubicación</strong> en la esquina superior derecha, junto a la barra de búsqueda.
+</p>
 
--   Si el/la encuestador/a toca Buscar Ubicación verá la ubicación cargando y la precisión alcanzada. Si la pregunta no se había configurado para seleccionar un nivel de precisión específico, esperará a que el/la encuestador/a guarde el Geopunto como se ilustra a continuación.
+Puedes usar [apariencias](https://support.kobotoolbox.org/es/gps_questions.html#advanced-appearances) para cambiar cómo se muestra la pregunta GPS en los formularios web, específicamente para ocultar los campos de entrada de coordenadas GPS. Sin embargo, los formularios web no te permiten impedir completamente la selección manual de ubicación. Si quieres recolectar una ubicación automáticamente sin permitir la selección manual, usa **background-geopoint** en su lugar.
 
-![image](/images/collect_gps/autopoint.jpg)
+### KoboCollect
 
-**2. Línea GPS**
+<iframe src="https://www.youtube.com/embed/akG0_cESv6U?si=vB9ByYkcP74Neu8x&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
--   Los/as encuestadores/as verán la siguiente opción para la pregunta de línea.
+En KoboCollect, los datos de GPS se capturan automáticamente desde la ubicación actual del dispositivo cuando el usuario toca un botón. La selección manual de ubicación no está activada por defecto para las preguntas de punto, aunque las [apariencias](https://support.kobotoolbox.org/es/gps_questions.html#advanced-appearances) adicionales pueden cambiar el comportamiento de las preguntas GPS.
 
-![image](/images/collect_gps/line.jpg)
+El método de captura en KoboCollect varía según el tipo de pregunta:
 
--   Si tocan el botón Iniciar GeoLínea verán una opción para recolectar el trazado manual o automáticamente como se muestra a continuación.
+| Tipo de pregunta | Captura de datos GPS |
+| :--- | :--- |
+| Point / `geopoint` | Toca **Get point** para comenzar a capturar la ubicación del dispositivo. <br><ul><li>Una vez que el dispositivo alcanza la precisión objetivo predeterminada de **5 metros o mejor**, el punto se registra automáticamente.</li><li>El encuestador también puede tocar **Save** para registrar la ubicación actual manualmente antes de alcanzar esa precisión.</li></ul> |
+| Line / `geotrace` | Toca **Get line** y haz clic en <i class="k-icon-qt-point"></i> para elegir un método de entrada. Los métodos disponibles son: <br><ul><li><strong>Placement by tapping (ubicación con toque):</strong> El encuestador toca puntos manualmente en el mapa para trazar la línea.</li><li><strong>Manual location recording (registro de localización manual):</strong> El encuestador se desplaza a cada ubicación y toca Record a Point para capturar cada punto desde la posición actual del dispositivo.</li><li><strong>Automatic location recording (registro de localización automática):</strong> La aplicación registra puntos automáticamente mientras el encuestador se desplaza, según un intervalo de tiempo seleccionado y la precisión requerida.</li></ul>Una línea requiere al menos dos puntos. Después de registrar los puntos, haz clic en el botón **Save** en la esquina inferior izquierda. |
+| Area / `geoshape` | Toca **Get polygon** y haz clic en <i class="k-icon-qt-point"></i> para elegir un método de entrada. Los mismos métodos de entrada descritos anteriormente están disponibles, pero para crear un área cerrada en lugar de una línea. Un área requiere al menos tres puntos. |
 
-![image](/images/collect_gps/trace_mode.jpg)
+Más allá del comportamiento predeterminado, puedes usar [apariencias](https://support.kobotoolbox.org/es/gps_questions.html#advanced-appearances) para cambiar cómo funcionan las preguntas GPS en KoboCollect. Por ejemplo, puedes usar apariencias para:
 
--   Si los/as encuestadores/as seleccionan el modo manual para recolectar datos entonces podrán seleccionar los puntos manualmente presionando los puntos en el mapa. El/la encuestador/a tendrá que seleccionar al menos dos coordenadas para hacer un trazado de línea.
+- Mostrar un mapa de la ubicación seleccionada automáticamente
+- Activar la selección manual de ubicación
 
--   Si los/as encuestadores/as seleccionan el modo automático, entonces verán una opción de cuánto tiempo debe tomar el sistema antes de recolectar diferentes puntos como se muestra en la figura a continuación.
+<p class="note">
+Para obtener más información sobre las apariencias de preguntas GPS, consulta <a href="https://support.kobotoolbox.org/es/gps_questions.html#advanced-appearances">Preguntas GPS en KoboToolbox</a>.
+</p>
 
-![image](/images/collect_gps/automodes.jpg)
+También puedes configurar los ajustes de mapa de KoboCollect para controlar cómo se muestran los mapas en las preguntas basadas en GPS, incluyendo la definición de la fuente del mapa, la selección de un estilo de mapa y la adición de [capas de mapas sin conexión](https://docs.getodk.org/collect-offline-maps/).
 
-**3. Área GPS**
+<p class="note">
+Para obtener más información sobre los ajustes de mapa de KoboCollect, consulta <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#maps-settings">Personalizar la configuración de KoboCollect</a>.
+</p>
 
-El área GPS te permite recolectar manualmente el área GPS basándose en el modo manual presionando el mapa para seleccionar los puntos que crean el polígono; los/as encuestadores/as necesitarían recolectar al menos tres puntos para crear un polígono.
+## Mejorar la precisión del GPS
 
-## Precisión de las coordenadas GPS recolectadas
+La precisión del GPS depende tanto del dispositivo como del entorno. Puede verse afectada por factores como si el dispositivo tiene el GPS activado y un sensor GPS integrado, cuándo fue la última vez que determinó su ubicación, si está usando servicios de ubicación por satélite o por red, y las condiciones ambientales como la nubosidad o los edificios y árboles cercanos.
 
-La precisión del GPS recolectado depende de varios factores.
+### Parámetros GPS
 
-**Ausencia de sensor GPS o GPS deshabilitado**
+Al crear formularios en XLSForm, puedes usar [parámetros](https://support.kobotoolbox.org/es/question_options_xls.html#question-parameters) para controlar la precisión del GPS con mayor detalle.
 
-Cuando recolectas coordenadas GPS y tu dispositivo no tiene un sensor GPS o el GPS está deshabilitado, una ubicación podría determinarse usando otros medios, los cuales podrían no ser tan precisos. Los servicios de ubicación son controlados por el dispositivo, y no todos los dispositivos están equipados con un sensor GPS. El GPS también puede estar apagado, o el dispositivo puede estar configurado para usar WiFi y redes celulares para establecer una ubicación en lugar de usar sistemas de navegación satelital.
+Los parámetros más comunes son:
 
-**El tiempo que tarda un dispositivo en determinar sus coordenadas GPS varía fuertemente y puede depender de:**
+| Parámetro | Ejemplo | Descripción |
+| :--- | :--- | :--- |
+| `capture-accuracy` | `capture-accuracy=15` | Captura automáticamente el punto una vez que el dispositivo alcanza la precisión objetivo. Si se configura como 0, el encuestador debe aceptar el punto explícitamente. El valor predeterminado es 5 metros. |
+| `warning-accuracy` | `warning-accuracy=30` | Activa un mensaje de advertencia si la precisión del GPS no está dentro del umbral de precisión especificado. Esto no impide guardar el punto. El valor predeterminado es 100 metros. |
 
--   La calidad del sensor GPS
--   El último tiempo desde que el dispositivo había determinado por última vez su ubicación GPS
--   Cobertura de nubes
--   Edificios u otras estructuras que obstruyen la vista del cielo
+<p class="note">
+<strong>Nota:</strong>
+Para la mayoría de los flujos de trabajo, un <strong>capture-accuracy</strong> de alrededor de <strong>5 metros</strong> es un objetivo práctico. En general, no se recomienda establecer el objetivo por debajo de <strong>3 metros</strong> a menos que estés usando un dispositivo GPS externo, ya que el GPS integrado de los dispositivos a menudo no es suficientemente preciso para alcanzar ese nivel de manera confiable.
+</p>
 
-**Para obtener una señal GPS debes estar al aire libre con buena visibilidad del cielo. Para obtener una señal GPS fuerte:**
+### Recomendaciones para mejorar la precisión del GPS
 
--   Párate lo más lejos posible de edificios, árboles u otras estructuras
--   Asegúrate de que tu cuerpo no esté obstruyendo la vista del cielo
--   Obtén una ubicación GPS inicial al comienzo del día antes de comenzar a recolectar puntos en el campo
--   Habilita A-GPS (asistido por red de datos) en tu dispositivo
+Para mejorar la precisión del GPS:
 
-<p class="note">GPS en este contexto no se refiere exclusivamente al <a class="reference" href="https://en.wikipedia.org/wiki/Global_Positioning_System">Sistema de Posicionamiento Global</a> sino también a otros sistemas de navegación satelital usados por dispositivos móviles, como <a class="reference" href="https://en.wikipedia.org/wiki/GLONASS">GLONASS</a>.</p>
+- Recolecta datos al aire libre en un área abierta con vista despejada del cielo
+- Aléjate de edificios, árboles y otras obstrucciones
+- Asegúrate de que tu cuerpo no esté bloqueando la vista del cielo del dispositivo
+- Precalienta el GPS del dispositivo incluyendo `start-geopoint` al inicio de tu formulario
+- Activa el GPS asistido en el dispositivo si está disponible
 
-## Solución de problemas
+## Lógica avanzada de formularios con datos de GPS
 
-Si no puedes obtener una ubicación GPS con el tipo de respuesta GPS, por favor verifica estas opciones:
+KoboToolbox admite lógica avanzada de formularios con datos de GPS en XLSForm. Por ejemplo, puedes usar funciones GPS en cálculos, restricciones y lógica de omisión para medir distancias, perímetros o áreas, o para verificar si una ubicación se encuentra dentro de un límite definido.
 
--   Configuración de ubicación en tu dispositivo para asegurar que el GPS esté habilitado
--   Instala una aplicación gratuita que use GPS para ver si puedes obtener una ubicación GPS de esa manera (por ejemplo,
-    [GPS Status para Android](https://play.google.com/store/apps/details?id=com.eclipsim.gpsstatus2)
-    o
-    [GPS Status para iPhone](https://apps.apple.com/ca/app/gps-status/id378085995)
--   Verifica la configuración de tu teléfono/manual del fabricante para ver si el dispositivo tiene GPS disponible
--   Si tus puntos GPS recolectados están apuntando a la ubicación incorrecta, es posible que tu dispositivo esté configurado para recolectar su ubicación desde una torre de red que fue comprada de segunda mano y no ha sido reiniciada correctamente con la nueva ubicación codificada. Puedes evitar este problema desactivando la ubicación de red como una opción dentro de la configuración del sistema Android, forzando a Collect a esperar la ubicación GPS real.
+![Calcular distancia de ruta](images/collect_gps/calculate.png)
+
+Las funciones GPS más comunes son:
+
+| Función | Descripción |
+| :--- | :--- |
+| `area(${geoshape})` | Devuelve el área, en metros cuadrados, de un valor `geoshape`. |
+| `distance(geo)` | Devuelve la distancia, en metros, de: <ul><li>el perímetro de un valor `geoshape`</li><li>la longitud de un valor `geotrace`</li><li>una lista de geopoints especificados como cadenas de texto o referencias a otros campos (incluyendo los de grupos de repetición), separados por comas</li></ul> |
+| `geofence(${geopoint}, ${geoshape})` | Devuelve `TRUE` si el `${geopoint}` especificado está dentro del `${geoshape}` especificado, `FALSE` en caso contrario. Compatible únicamente con KoboCollect. |
+
+<p class="note">
+Para obtener más información sobre las funciones para manipular datos de GPS en XLSForm, consulta <a href="https://support.kobotoolbox.org/es/functions_xls.html#functions-to-manipulate-gps-data">Usar funciones en XLSForm</a>.
+</p>
+
+## Gestionar datos de GPS
+
+Después de la recolección, los datos de GPS se pueden revisar, mapear y exportar en KoboToolbox.
+
+### Ver datos de GPS en la tabla de datos
+
+Las respuestas GPS aparecen en la tabla de datos como otras respuestas del formulario. Un punto GPS único se almacena como cuatro valores separados por espacios en este formato: `latitud longitud altitud precisión`.
+
+Para preguntas de línea y área, múltiples puntos GPS se almacenan en el mismo formato y se separan por punto y coma.
+
+<p class="note">
+Para obtener más información sobre cómo ver tus datos en la tabla de datos, consulta <a href="https://support.kobotoolbox.org/es/viewing_validating_data.html">Ver y validar datos</a>.
+</p>
+
+### Mapear datos de GPS en KoboToolbox
+
+KoboToolbox ofrece una vista de **Mapa** integrada para visualizar puntos GPS individuales. Esto facilita revisar dónde se recolectaron los envíos, explorar patrones espaciales y comprender mejor la distribución geográfica de tus datos.
+
+<p class="note">
+Para obtener más información sobre la vista de <strong>Mapa</strong> en KoboToolbox, consulta <a href="https://support.kobotoolbox.org/es/mapping_gps.html">Mapear datos GPS</a>.
+</p>
+
+### Exportar datos de GPS
+
+También puedes exportar datos de GPS desde KoboToolbox para usarlos en software externo. Los formatos de exportación disponibles admiten diferentes flujos de trabajo, desde la revisión y limpieza de datos hasta el mapeo y el análisis geoespacial:
+
+- Las **exportaciones CSV y XLS** son útiles para trabajar con datos de GPS en software de hojas de cálculo y también se pueden importar en muchas herramientas GIS, aunque a menudo requieren configuración adicional, como definir los campos de coordenadas o un sistema de referencia de coordenadas.
+- Para flujos de trabajo GIS, **GeoJSON** es generalmente el formato recomendado porque es ampliamente compatible con herramientas como ArcGIS y QGIS.
+- **KML** está pensado principalmente para la visualización en aplicaciones como Google Earth y admite estilos básicos de mapa, pero es más limitado y se recomienda usarlo solo cuando sea necesario para un flujo de trabajo específico.
+
+<p class="note">
+Para obtener más información sobre cómo exportar tus datos de GPS para análisis externo, consulta <a href="https://support.kobotoolbox.org/es/mapping_gps.html#exporting-gps-data">Exportar datos GPS</a>.
+</p>
+
+## Resolución de problemas
+
+<details>
+<summary><strong>No se está capturando la ubicación GPS</strong></summary>
+Verifica que los servicios de ubicación y el GPS estén activados en el dispositivo y que el dispositivo tenga un sensor GPS. También puedes probar el GPS con otra aplicación para confirmar que el dispositivo puede determinar una ubicación. Para obtener mejores resultados, sal al exterior, espera a que la señal sea más fuerte, aléjate de edificios, árboles y otras obstrucciones, y dale tiempo adicional al dispositivo para obtener su primera señal GPS.
+</details>
+
+<br>
+
+<details>
+<summary><strong>La ubicación GPS es incorrecta</strong></summary>
+Si la ubicación registrada parece incorrecta, es posible que el dispositivo esté usando la ubicación basada en red en lugar del GPS por satélite. En algunos casos, desactivar la ubicación por red en la configuración del dispositivo puede ayudar a forzar a KoboCollect a esperar la ubicación GPS real.
+</details>
+
+<br>
+
+<details>
+<summary><strong>La precisión del GPS no alcanza el umbral objetivo</strong></summary>
+Si un punto nunca alcanza la precisión deseada, es posible que el umbral de <code>capture-accuracy</code> sea demasiado estricto para el dispositivo o las condiciones de campo.
+</details>
+
+<br>

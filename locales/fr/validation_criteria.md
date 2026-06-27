@@ -1,57 +1,62 @@
-# Ajouter des critères de validation dans l'interface de création de formulaires
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/9c216c0650cac549ce4c2836cb5b8a588a47357a/source/validation_criteria.md" class="reference">2 oct. 2025</a>
+# Ajouter des critères de validation dans le Formbuilder
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/validation_criteria.md" class="reference">20 Mar 2026</a>
 
-<iframe src="https://www.youtube.com/embed/ya9usVpEo9Q?si=-rDzXcCRazcY0Bws" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-La logique de validation, également appelée critères de validation ou contraintes, définit les conditions d'une réponse acceptable à une question. Cette fonctionnalité permet de garantir des données de haute qualité en empêchant les réponses accidentelles ou non valides.
+<iframe src="https://www.youtube.com/embed/ya9usVpEo9Q?si=-rDzXcCRazcY0Bws&cc_lang_pref=fr&hl=fr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Les critères de validation peuvent être appliqués à tout type de question. Par exemple, vous pouvez les utiliser pour vous assurer qu'un participant a plus d'un certain âge, qu'une date se situe dans une plage spécifique ou qu'une entrée de texte correspond à un certain modèle.
+La logique de validation, également appelée critères de validation ou contraintes, définit les conditions qu'une réponse doit remplir pour être acceptée. Cette fonctionnalité contribue à garantir la qualité des données en empêchant les réponses accidentelles ou invalides.
 
-Il existe deux méthodes pour ajouter des critères de validation dans l'interface de création de formulaires : ajouter une condition via le **générateur de critères de validation**, ou saisir manuellement la logique de validation en **code XLSForm.**
+Les critères de validation peuvent être appliqués à n'importe quel type de question. Vous pouvez par exemple les utiliser pour vérifier qu'un participant est au-dessus d'un certain âge, qu'une date se situe dans une plage spécifique, ou qu'une saisie de texte correspond à un certain format.
+
+Il existe deux méthodes pour ajouter des critères de validation dans l'interface de création de formulaires KoboToolbox **(KoboToolbox Formbuilder)** : ajouter une condition via le **générateur de critères de validation**, ou saisir manuellement la logique de validation en **code XLSForm**.
 
 
 ## Ajouter une condition
 
-Le générateur de critères de validation vous permet d'ajouter des conditions pour les questions de type **Texte**, **Nombre**, **Décimal** et **Date**. Il n'est pas compatible avec les questions **Sélectionner un** ou **Sélectionner plusieurs**. Pour utiliser le générateur :
-1. Ouvrez les <i class="k-icon-settings"></i> **Paramètres** dans le menu latéral droit de la question.
-2. Sélectionnez **Critères de validation**, et cliquez sur **Ajouter une condition.**
-3. Choisissez l'opérateur logique approprié pour votre condition (par exemple, >, =, !=).
-4. Dans le champ **valeur de réponse**, sélectionnez ou saisissez la valeur requise pour que la réponse soit valide.
+Le générateur de critères de validation vous permet d'ajouter des conditions pour les questions de type **Texte**, **Chiffre**, **Décimale** et **Date**. Il n'est pas compatible avec les questions de type **Choix unique** ou **Choix multiple**. Pour utiliser le générateur :
+
+1. Ouvrez <i class="k-icon-settings"></i> **Paramètres** dans le menu latéral droit de la question.
+2. Sélectionnez **Validation**, puis cliquez sur **Ajouter une condition**.
+3. Choisissez l'opérateur logique approprié pour votre condition (par exemple >, =, !=).
+4. Dans le champ **valeur de réponse**, sélectionnez ou saisissez la valeur que la réponse doit avoir pour être considérée comme valide.
 
 <p class="note">
-    <strong>Remarque :</strong> Pour ajouter des critères de validation aux questions de type <strong>Date</strong>, la valeur de réponse doit être au format <code>AAAA-MM-JJ</code>. Par exemple, pour définir un critère de validation pour une date antérieure au 1er janvier 2021, utilisez <code>< 2021-01-01</code>.
+    <strong>Note :</strong> Pour ajouter des critères de validation à des questions de type <strong>Date</strong>, la valeur de réponse doit être au format <code>YYYY-MM-DD</code>. Par exemple, pour définir un critère de validation exigeant qu'une date soit antérieure au 1er janvier 2021, utilisez <code>< 2021-01-01</code>.
 </p>
 
-Pour ajouter plusieurs conditions (par exemple, une valeur minimale et une valeur maximale), ajoutez votre première condition, puis cliquez sur **Ajouter une autre condition.** Lorsque vous utilisez plusieurs conditions, spécifiez si au moins l'une de ces conditions doit être remplie ou si toutes doivent l'être. Vous pouvez supprimer des conditions en cliquant sur la <i class="k-icon-trash"></i> corbeille.
+Pour ajouter plusieurs conditions (par exemple une valeur minimale et une valeur maximale), ajoutez votre première condition, puis cliquez sur **Ajouter une autre condition**. Lorsque vous utilisez plusieurs conditions, précisez si au moins l'une d'entre elles doit être remplie ou si toutes doivent l'être. Vous pouvez supprimer des conditions en cliquant sur la corbeille <i class="k-icon-trash"></i>.
 
-Si les conditions de validation ne sont pas remplies, la saisie ne sera pas acceptée lors de la collecte de données. Un [message d'erreur](#message-derreur) sera affiché.
+Si les conditions de validation ne sont pas remplies, la saisie ne sera pas acceptée lors de la collecte de données. Un [message d'erreur](#message-derreur) s'affichera.
 
 
 ## Saisir manuellement la logique de validation en code XLSForm
-Pour les utilisatrices et utilisateurs avancés et pour les questions **Sélectionner un** ou **Sélectionner plusieurs**, les critères de validation peuvent être saisis directement en code XLSForm.
+
+Pour les utilisateurs avancés et pour les questions de type **Choix unique** ou **Choix multiple**, les critères de validation peuvent être saisis directement en code XLSForm.
 
 Pour saisir manuellement la logique de validation en code XLSForm, suivez ces étapes :
-1. Ouvrez les <i class="k-icon-settings"></i> **Paramètres** dans le menu latéral droit de la question.
-2. Sélectionnez **Critères de validation**, et cliquez sur **Saisir manuellement votre logique de validation en code XLSForm.**
+
+1. Ouvrez <i class="k-icon-settings"></i> **Paramètres** dans le menu latéral droit de la question.
+2. Sélectionnez **Validation**, puis cliquez sur **Entrez manuellement votre logique de validation dans le code XLSForm**.
 3. Saisissez les critères en code XLSForm.
 
-Dans la syntaxe XLSForm, un point `.` est utilisé pour faire référence à la question actuelle, et `${nom_question}` est utilisé pour faire référence à d'autres questions. Vous devrez également inclure l'opérateur logique pertinent et la valeur de réponse.
+Dans la syntaxe XLSForm, un point `.` est utilisé pour faire référence à la question en cours, et `${question_name}` (${nom_question}) est utilisé pour faire référence à d'autres questions. Vous devrez également inclure l'opérateur logique et la valeur de réponse appropriés.
 
 ### Exemples de critères de validation
 
-| Critères             | Description                                  |
+| Critère | Description |
 | :------------------- | :------------------------------------------- |
-| `. > 17`             | La réponse doit être supérieure à 17             |
-| `. >= 17 and . <= 130` | La réponse doit être égale ou comprise entre 17 et 130          |
-| `not(${in_university} = 'yes' and . < 16)` | Impossible de fournir une réponse inférieure à 16 si la réponse à `in_university` est « Oui »|
-| `not(selected(., 'none') and count-selected(.)>1)`| Impossible de sélectionner « Aucun » et d'autres options dans une question Sélectionner plusieurs |
+| `. > 17` | La réponse doit être supérieure à 17 |
+| `. >= 17 and . <= 130` | La réponse doit être égale ou comprise entre 17 et 130 |
+| `not(${in_university} = 'yes' and . < 16)` | Impossible de fournir une réponse inférieure à 16 si la réponse à `in_university` est « Yes » |
+| `not(selected(., 'none') and count-selected(.)>1)` | Impossible de sélectionner « None » et d'autres options dans une question de type Choix multiple |
 
 
 <p class="note">
-    Pour plus d'informations sur le code XLSForm et les opérateurs, consultez la <a href="https://xlsform.org/en/#constraints">documentation XLSForm</a>.
+    Pour plus d'informations sur le code XLSForm et les opérateurs, consultez l'article <a href="../fr/form_logic.html">Introduction à la logique de formulaire dans le Formbuilder</a>.
 </p>
 
 ## Message d'erreur
-Le **message d'erreur** est un message facultatif que l'enquêtrice ou l'enquêteur ou la personne interrogée verra lorsqu'une réponse non valide est saisie. Il peut être défini en utilisant à la fois l'approche du **générateur de critères de validation** et l'approche du **code XLSForm**, en bas de la zone.
 
-Si aucun message d'erreur n'est spécifié, le message par défaut est « Valeur non autorisée ». Les messages d'erreur personnalisés spécifient généralement les critères de validation pour aider la personne interrogée à corriger sa réponse (par exemple, « L'âge doit être supérieur à 18 ans »).
+Le **message d'erreur** est un message facultatif que l'enquêteur ou le répondant verra lorsqu'une réponse invalide est saisie. Il peut être défini aussi bien avec l'approche du **générateur de critères de validation** qu'avec l'approche du **code XLSForm**, en bas de la zone de saisie.
+
+Si aucun message d'erreur n'est spécifié, le message par défaut est "Value not allowed". Les messages d'erreur personnalisés précisent généralement les critères de validation pour aider le répondant à corriger sa réponse (par exemple, « L'âge doit être supérieur à 18 »).

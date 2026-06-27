@@ -1,65 +1,76 @@
-# Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/87ff8377b846dacb801191e0b619126a563040a9/source/external_file.md" class="reference">28 ago 2025</a>
+# Seleccionar opciones de archivos externos en el Formbuilder
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/a476e76f62e857ee7dd45ee394421eb4bf7dd22a/source/external_file.md" class="reference">21 Mar 2026</a>
 
-En algunos casos, puede ser deseable alojar una lista de opciones de respuesta en un
-archivo externo, en lugar de directamente en el XLSForm del proyecto. Por ejemplo, una
-lista larga de opciones (por ejemplo, cientos o miles) podría ralentizar la carga y
-navegación del formulario, o agregar nuevas opciones de respuesta después de que la recolección de datos haya
-comenzado podría ser problemático en ocasiones.
+Las preguntas de tipo **Seleccionar de un archivo** te permiten usar una lista de opciones almacenada en un archivo externo en lugar de definirlas directamente en tu formulario. Existen dos tipos:
+* **Seleccionar una de un archivo** para seleccionar una sola opción
+* **Seleccionar varias de un archivo** para seleccionar múltiples opciones
 
-<p class="note"> <b>Nota:</b> Este artículo cubre los pasos para configurar preguntas de Seleccionar Uno o Varios de un Archivo Externo en XLSForm. Para configurar estas preguntas en el Formbuilder, primero debes cargar el archivo de opciones externas a KoboToolbox, en la pestaña <b>Medios</b> de la página <b>CONFIGURACIÓN</b>. Una vez que el archivo haya sido cargado, los tipos de pregunta Seleccionar Uno o Varios de un Archivo Externo aparecerán en el Formbuilder. </p>
+Usar un archivo separado para tu lista de opciones facilita el uso y la gestión de listas largas en el Formbuilder. Los formatos de archivo compatibles incluyen CSV, XML y GeoJSON.
 
-![image](/images/external_file/select_from_file.png)
+Este artículo explica cómo dar formato a tu archivo externo, cargarlo en KoboToolbox y configurar preguntas de tipo **seleccionar de un archivo** en el Formbuilder.
 
-Este artículo proporciona un ejemplo detallado y un método para crear un tipo de pregunta
-`select_one` o `select_many` con la lista de opciones en un archivo separado y externo. Consulta la
-[documentación de XLSForm](https://xlsform.org/en/#multiple-choice-from-file) para
-más información.
+## Dar formato a listas de opciones externas
 
-**1.** En el XLSForm, el tipo debe ser
-`select_one_from_file [nombre del archivo]` o `select_multiple_from_file [nombre del archivo]`:
+Para comenzar, crea tu lista de opciones en un archivo externo separado. La estructura requerida de este archivo depende del formato que elijas (CSV, XML o GeoJSON). Usa un archivo separado para cada lista de opciones.
 
-<p class="note">El tipo de archivo puede ser <code>CSV</code> o <code>XML</code></p>
+<p class="note">
+Para obtener más información sobre cómo dar formato a archivos XML o GeoJSON, consulta la documentación de <a href="https://xlsform.org/en/#multiple-choice-from-file">XLSForm</a> y <a href="https://docs.getodk.org/form-datasets/#building-selects-from-geojson-files">ODK</a>. Los archivos GeoJSON se usan principalmente para <a href="https://support.kobotoolbox.org/es/select_from_map_xls.html">seleccionar opciones de un mapa</a>.
+</p>
 
-**hoja survey**
+Si usas un archivo CSV para tus opciones de respuesta, debe contener al menos dos columnas: `name` y `label`.
+* La columna `name` representa el [valor XML](https://support.kobotoolbox.org/es/question_types.html#setting-xml-values-for-option-choices) de tu opción de respuesta.
+* La columna `label` representa la etiqueta de la opción tal como se muestra en tu formulario.
 
-| type                            | name   | label                         |
-| :------------------------------ | :----- | :---------------------------- |
-| text                            | name   | ¿Cuál es tu nombre?            |
-| select_one sex                  | sex    | ¿Cuál es tu sexo?             |
-| select_one_from_file fruits.csv | fruits | ¿Cuál es tu fruta favorita? |
-| survey |
+**Archivo CSV externo**
 
-**hoja choices**
+| name    | label    |
+|:--------|:---------|
+| option1 | Option 1 |
+| option2 | Option 2 |
+| option3 | Option 3 |
 
-| list_name | name | label  |
-| :-------- | :--- | :----- |
-| sex       | 1    | Masculino   |
-| sex       | 2    | Femenino |
-| choices |
+Si tu archivo usa nombres diferentes para el nombre y la etiqueta de la opción, puedes [especificarlo](https://support.kobotoolbox.org/es/select_from_file_xls.html#configuring-choice-name-and-label-columns) [descargando tu archivo como XLSForm](https://support.kobotoolbox.org/es/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) y añadiendo una columna `parameters`.
 
-<p class="note">El <code>fruits.csv</code> es el nombre del archivo que contiene las opciones para la pregunta "¿Cuál es tu fruta favorita?".</p>
+<p class="note">
+<strong>Nota:</strong> Usa nombres de archivo cortos y simples para tus archivos externos, evitando espacios o caracteres especiales. El nombre del archivo se usará para vincular las preguntas con sus listas de opciones. Si usas varios archivos externos, asegúrate de que cada uno tenga un nombre único, aunque usen diferentes tipos de archivo.
+</p>
 
-**2.** Crea un nuevo archivo `CSV` y estructúralo de la misma manera que la hoja `choices`
-en el XLSForm:
+## Cargar el archivo externo en KoboToolbox
 
-**fruits.csv**
+Antes de crear una pregunta de tipo **seleccionar de un archivo** en el Formbuilder, debes cargar el archivo externo que contiene tu lista de opciones:
 
-| list_name | name | label       |
-| :-------- | :--- | :---------- |
-| fruits    | 1    | Manzana       |
-| fruits    | 2    | Sandía  |
-| fruits    | 3    | Naranja      |
-| fruits    | 4    | Pera        |
-| fruits    | 5    | Cereza      |
-| fruits    | 6    | Fresa  |
-| fruits    | 7    | Nectarina   |
-| fruits    | 8    | Uva       |
-| fruits    | 9    | Mango       |
-| fruits    | 10   | Arándano   |
-| fruits    | 11   | Granada |
+1. En KoboToolbox, ve a la página **CONFIGURACIÓN** del proyecto.
+2. En la ventana **Media**, carga el archivo externo. Asegúrate de que el nombre del archivo coincida exactamente con el nombre especificado en el XLSForm.
 
-**3.** Carga y despliega el XLSForm en KoboToolbox.
+Para actualizar tu lista de opciones, edita el archivo externo según sea necesario, vuelve a cargarlo en KoboToolbox y vuelve a implementar tu formulario.
 
-**4.** Carga el archivo `CSV` de la misma manera que
-[agregarías un archivo de medios al formulario](media.md)
+![Upload media](images/external_file/upload_media.png)
+
+<p class="note">
+  Para obtener más información sobre cómo cargar archivos multimedia, consulta <a href="https://support.kobotoolbox.org/es/upload_media.html">Importar archivos multimedia a un proyecto</a>.
+</p>
+
+## Configurar la pregunta en el Formbuilder
+
+Después de cargar tu archivo CSV externo en KoboToolbox, puedes añadir una pregunta de tipo **Seleccionar una de un archivo** o **Seleccionar varias de un archivo** en el Formbuilder.
+
+Para añadir una pregunta de tipo seleccionar de un archivo:
+
+1. Haz clic en el botón <i class="k-icon-plus"></i>.
+2. Ingresa la etiqueta de tu pregunta.
+3. Haz clic en **+ AGREGAR PREGUNTA**.
+4. Elige <i class="k-icon-qt-select-one-from-file"></i> **Seleccionar una de un archivo** o <i class="k-icon-qt-select-many-from-file"></i> **Seleccionar varias de un archivo** como tipo de pregunta.
+
+![Select questions](images/external_file/select.png)
+
+<p class="note">
+<strong>Nota:</strong> Los tipos de pregunta <strong>Seleccionar una de un archivo</strong> y <strong>Seleccionar varias de un archivo</strong> solo aparecen como opciones en el Formbuilder si se ha cargado un archivo de opciones externo en KoboToolbox.
+</p>
+
+Si solo se ha cargado un archivo externo en tu proyecto, se vinculará automáticamente a la pregunta. Si se han cargado varios archivos, abre la <i class="k-icon-settings"></i> **Configuración** de la pregunta y selecciona el archivo apropiado en el menú desplegable <i class=""></i> **Archivo de opciones**.
+
+![Choices file](images/external_file/choices_file.png)
+
+<p class="note">
+Para aprender a configurar preguntas de tipo seleccionar de un archivo en XLSForm y obtener ayuda adicional para la resolución de problemas, consulta <a href="https://support.kobotoolbox.org/es/select_from_file_xls.html#">Seleccionar opciones de un archivo externo en XLSForm</a>.
+</p>

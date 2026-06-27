@@ -1,46 +1,44 @@
-# Uso de estilos alternativos de formularios web de Enketo
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/347a1280aadb22c9aebf88650fd6efa1bcadbcdf/source/alternative_enketo.md" class="reference">24 Sep 2025</a>
+# Diseñar formularios web usando el Formbuilder
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/alternative_enketo.md" class="reference">23 abr 2026</a>
 
-Los formularios web de Enketo se pueden personalizar en la forma en que se presentan tus preguntas.
-Hay dos estilos alternativos que se pueden seleccionar e incluso combinar:
-**Páginas múltiples** y **Tema de cuadrícula**.
+<iframe src="https://www.youtube.com/embed/wLWiw473YSQ?si=tJbKl-VzjZkDPivR&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-El modo **Páginas múltiples** muestra una pregunta a la vez por pantalla, o un [grupo
-de preguntas](group_repeat.md) configurado para mostrarse en la misma pantalla. Esta es la misma forma en que
-funciona KoboCollect.
+Puedes personalizar el diseño y la apariencia visual de tus [formularios web](https://support.kobotoolbox.org/es/data_through_webforms.html) utilizando temas integrados. Estos temas te permiten controlar cómo se muestran las preguntas, ya sea en una sola página, en varias páginas o dispuestas en un diseño de cuadrícula compacto.
 
-**Tema de cuadrícula** es una visualización alternativa de preguntas diseñada para ser más compacta
-y más parecida a los formularios en papel donde el espacio suele ser una preocupación importante. theme-grid
-permite mostrar múltiples preguntas por fila y se adapta de manera flexible en caso de lógica de salto
-haciendo que una nueva pregunta aparezca o desaparezca. Para mostrar múltiples preguntas
-en una fila, deben ser parte de un grupo, que por defecto muestra hasta cuatro
-preguntas una al lado de la otra. Este tema se puede personalizar definiendo el
-número de preguntas a incluir en cada fila a través del campo de apariencia de
-la configuración de cada pregunta. Para más detalles
-[consulta esta publicación](https://blog.enketo.org/gorgeous-grid).
+Los temas de formulario se aplican solo a formularios web y no son compatibles con KoboCollect. Este artículo explica cómo aplicar un tema de formulario web en el Formbuilder y cómo configurar el ancho de las preguntas al usar el tema de cuadrícula.
 
-También es posible usar tanto **Páginas múltiples** como **Tema de cuadrícula** juntos.
-Puedes configurar estos estilos a través de la interfaz de usuario del editor de formularios de KoboToolbox:
+## Agregar un tema de formulario web en el Formbuilder
 
-![image](/images/alternative_enketo/multiple_grid.gif)
+Para agregar un tema de formulario web a tu formulario en el Formbuilder:
 
-Si estás construyendo tu proyecto de encuesta a través de XLSForm, podrías hacer lo mismo
-definiendo el tema bajo la columna `style` en la hoja `settings`:
+1. Haz clic en <i class="k-icon-settings"></i> **Diseño y configuración** en la esquina superior derecha de la pantalla.
+2. En la sección **Estilo del formulario**, selecciona el tema que deseas aplicar a tu formulario.
 
-**hoja settings**
+![Estilo del formulario](images/alternative_enketo/access.png)
 
-| form_title  | style |
-| :---------- | :---- |
-| Themed form | pages |
-| settings |
+Los siguientes temas están disponibles para personalizar tus formularios:
 
-## Estilos disponibles en XLSForm:
+![Temas](images/alternative_enketo/preview.png)
 
-| Tema XLSForm                         | Descripción                                                    |
-| :----------------------------------- | :------------------------------------------------------------- |
-| (dejar en blanco)                    | Predeterminado – página única                                  |
-| `theme-grid no-text-transform`       | Tema de cuadrícula                                             |
-| `theme-grid`                         | Tema de cuadrícula con encabezados en MAYÚSCULAS              |
-| `pages`                              | Páginas múltiples                                              |
-| `theme-grid pages no-text-transform` | Tema de cuadrícula + Páginas múltiples                         |
-| `theme-grid pages`                   | Tema de cuadrícula + Páginas múltiples + encabezados en MAYÚSCULAS |
+<p class="note">
+<strong>Nota:</strong> También puedes combinar los estilos <strong>Múltiples páginas</strong> y <strong>Tema de cuadrícula</strong>.
+</p>
+
+## Configurar el ancho de las preguntas para el tema de cuadrícula
+
+En los formularios web, el tema de cuadrícula te permite mostrar preguntas en múltiples columnas, haciendo que tu formulario sea más compacto y visualmente organizado. La configuración de estas columnas, incluidas cuántas hay y qué tan ancha debe ser cada una, se controla asignando `valores-w` a cada pregunta en su configuración de **Aspecto (avanzado)**.
+
+<p class="note">
+ Para obtener una descripción completa del uso del tema de cuadrícula, consulta este <a href="https://ee.kobotoolbox.org/n41GqUkf">Tutorial del tema de cuadrícula</a> y <a href="https://docs.google.com/spreadsheets/d/1qKmxPTA4B0vihU6GsKgi1CJE2Db2FfE7KZpOig4nTEI/edit?gid=0#gid=0">XLSForm de ejemplo</a>.   
+</p>
+
+Para especificar el ancho relativo de cada pregunta dentro de una fila:
+
+1. Abre la configuración de la pregunta haciendo clic en <i class="k-icon-settings"></i> **Configuración** a la derecha de la pregunta. Esto te llevará a la ventana **Opciones de pregunta**.
+2. En **Aspecto (avanzado)**, asigna valores de apariencia (por ejemplo, `w1`, `w2`, `w3`) para especificar el ancho relativo de la pregunta dentro de una fila.
+
+Las filas siempre se expandirán automáticamente al ancho completo de la página. Por ejemplo, una fila que contiene una pregunta con un valor de apariencia de `w2` y otra con `w1` dividirá la fila en dos tercios y un tercio, respectivamente.
+
+<p class="note">
+<strong>Nota:</strong> El ancho predeterminado para un grupo o grupo de repetición es de cuatro columnas (<code>w4</code>), por lo que un grupo con <code>w4</code> puede contener un máximo de cuatro preguntas <code>w1</code> en una sola fila. El <code>valor-w</code> de una pregunta es relativo al <code>valor-w</code> de su grupo. Aplica <code>valores-w</code> solo a grupos o repeticiones de nivel superior: aunque aplicarlos a grupos o repeticiones anidados es compatible, es posible que no se visualice bien.
+</p>

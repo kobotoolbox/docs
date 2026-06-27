@@ -1,78 +1,89 @@
-# Ajouter une autre langue dans le tableau de bord du projet
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/a412eff1342fa59da1fe2ffe1e10c1829b2e5e94/source/language_dashboard.md" class="reference">1 nov. 2022</a>
+# Ajouter des traductions dans KoboToolbox
+**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/55b3ab6258a25c2b16c1d954b282f02918937598/source/language_dashboard.md" class="reference">5 juin 2026</a>
 
-Il existe deux méthodes pour ajouter plusieurs langues à votre formulaire. Vous pouvez soit
-les ajouter et les gérer directement via le tableau de bord du projet en ligne, soit les ajouter
-dans un [formulaire XLS et l'importer dans Kobo](language_xls.md).
+<iframe src="https://www.youtube.com/embed/3O2K78F7DCA?si=lt-ZlSRoAjFuSMl1&cc_lang_pref=fr&hl=fr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Voici des instructions détaillées sur la façon d'ajouter et de gérer une autre langue dans
-votre formulaire via le tableau de bord du projet en ligne :
+Ajouter des traductions à un formulaire permet aux utilisateurs de **choisir leur langue préférée** lors de la collecte de données, sans avoir à créer des formulaires distincts. Vous pouvez ajouter autant de traductions que nécessaire. [KoboCollect](../fr/data_collection_kobocollect.md) et les [formulaires web](../fr/data_through_webforms.md) sont tous deux compatibles avec les traductions de formulaires.
 
-1. Créez votre formulaire dans la langue par défaut en utilisant l'interface de création de formulaires ou
-   en configurant le formulaire sous forme de fichier XLS, puis importez-le directement dans
-   KoboToolbox. La langue par défaut doit être la langue avec laquelle la personne
-   responsable de la conception du questionnaire est la plus à l'aise.
+Vous pouvez ajouter des traductions à votre formulaire directement dans l'interface de création de formulaires KoboToolbox **(KoboToolbox Formbuilder)** ou en utilisant [XLSForm](../fr/language_xls.md). KoboToolbox propose une **interface intuitive** qui ne nécessite aucune expertise technique et vous permet d'ajouter facilement plusieurs traductions à vos formulaires. Cette approche est utile lorsque vous travaillez avec un petit nombre de questions ou lorsque vous souhaitez effectuer des ajustements rapides.
 
-2. Lorsque vous avez terminé, ou lorsqu'une partie importante du formulaire a été
-   créée, enregistrez-le. Vous serez redirigé vers le tableau de bord du projet du formulaire brouillon.
+<p class="note">
+   <strong>Note :</strong> Pour les formulaires multilingues plus volumineux ou plus complexes, XLSForm est souvent l'option la plus efficace. Il vous permet de gérer les traductions en masse, ce qui peut faire gagner du temps lorsque vous travaillez avec de nombreuses questions ou plusieurs langues. Pour en savoir plus sur la configuration des traductions dans XLSForm, consultez l'article <a href="../fr/language_xls.md">Ajouter des traductions dans XLSForm</a>.
+</p>
 
-3. Trouvez et cliquez sur l'icône « Plus d'actions » (3 points). Dans le menu déroulant
-   qui apparaît, cliquez sur « Gérer les traductions ».
+Cet article porte sur l'ajout de traductions depuis la plateforme KoboToolbox et couvre les sujets suivants :
+- Définir la langue par défaut de votre formulaire
+- Ajouter des langues et des traductions
+- Modifier la langue par défaut
 
-   ![image](/images/language_dashboard/action.png)
+<p class="note">
+    Pour en savoir plus sur la collecte et la gestion des données issues de formulaires traduits, consultez l'article <a href="../fr/collecting_data_multiple_languages.md">Collecter des données dans plusieurs langues</a>.
+</p>
 
-4. Avant d'ajouter des langues supplémentaires, définissez d'abord votre langue par défaut en
-   cliquant sur l'icône crayon et en remplissant les champs « Nom de la langue » et « Code de
-   langue ».
+## Définir la langue par défaut
 
-   **Astuce** : Si vous n'êtes pas sûr de votre code de langue, vous pouvez rechercher
-   dans la liste complète des codes de langue
-   [ici](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
-   Si vous ne trouvez pas votre langue, il est possible qu'elle ait été étiquetée sous
-   un autre nom et il vaut la peine de rechercher en ligne des noms alternatifs.
+La langue par défaut d'un formulaire est généralement la langue dans laquelle le questionnaire a été conçu, et la langue dans laquelle le formulaire s'ouvre par défaut lors de la collecte de données. La langue par défaut ne doit être définie que si des traductions supplémentaires sont ajoutées ; elle n'est pas requise lorsque le formulaire n'est disponible que dans une seule langue.
 
-   Exemples : Anglais (en), Allemand (de), Arabe (ar), etc.
+Pour définir la langue par défaut :
 
-   ![image](/images/language_dashboard/example.gif)
+1. Créez votre formulaire dans la langue par défaut.
+2. Une fois votre formulaire créé, accédez à la page **FORMULAIRE** de votre projet.
+3. Sous le bouton **DÉPLOYER** ou **REDÉPLOYER**, cliquez sur <i class="k-icon-language"></i> **Gérer**.
+4. Saisissez le nom de la langue (par exemple, « Français ») et le code de la langue (par exemple, « fr ») pour votre langue par défaut.
 
-5. Une fois la langue par défaut définie, cliquez sur le bouton « Ajouter une langue » pour
-   remplir le nom de la langue et le code de la nouvelle langue ajoutée.
+![Gérer les langues](images/language_dashboard/manage_languages.png)
 
-6. Une fois la nouvelle langue ajoutée, cliquez sur l'icône « Mettre à jour les traductions »
-   (globe) à droite du titre de la langue pour ouvrir le « Tableau des traductions »
-   pour cette langue.
+<p class="note">
+    <strong>Note :</strong> Les codes de langue sont disponibles dans le <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">registre IANA des sous-étiquettes de langue</a>. Sur le site de l'IANA, le champ <strong>Description</strong> correspond au nom de la langue et le champ <strong>Subtag</strong> correspond au code de la langue (par exemple, <strong>Description</strong> : French, <strong>Subtag</strong> : fr).
+</p>
 
-   ![image](/images/language_dashboard/add_language.gif)
+## Ajouter des langues et des traductions
 
-7. Remplissez les traductions avec les chaînes originales associées correctes dans la
-   vue tableau, puis cliquez sur « Enregistrer les modifications » lorsque vous avez terminé. Fermez ensuite la
-   vue tableau en cliquant sur le bouton « x » en haut à droite du tableau.
+Une fois la langue par défaut définie, vous pouvez ajouter d'autres langues et traduire le contenu de votre formulaire :
 
-   ![image](/images/language_dashboard/translation.png)
+1. Dans la fenêtre <i class="k-icon-language"></i> **Gestion des langues**, cliquez sur **Ajouter une langue**.
+2. Saisissez le nom et le code de la langue, puis cliquez sur **Ajouter**.
+3. En regard de la langue ajoutée, cliquez sur <i class="k-icon-language-settings"></i> **Mettre à jour les traductions**.
+    - Un tableau s'affiche avec tous les éléments traduisibles de votre formulaire, notamment les libellés de questions, les libellés de groupes, les indices, les instructions supplémentaires (guidance hint), les messages de contrainte, les fichiers médias et les libellés de choix.
+    - Chaque langue dispose de son propre tableau de traductions.
+4. Saisissez les traductions, puis cliquez sur **Sauvegarder les modifications**.
+    - Si vous omettez le texte d'un élément traduit, celui-ci apparaîtra comme un champ vide dans le formulaire.
+5. Fermez la fenêtre et prévisualisez votre formulaire pour vérifier les traductions.
+6. Déployez ou redéployez votre formulaire pour appliquer les modifications.
 
-8. De retour dans le tableau de bord du projet, cliquez sur l'icône « Aperçu » (œil) pour ouvrir un
-   aperçu du formulaire. En haut, à côté de Choisir la langue, cliquez sur le menu
-   déroulant. Il affichera par défaut (votre langue d'origine) ainsi que la ou les nouvelles
-   langues que vous venez d'ajouter.
+Vous pouvez revenir à cette fenêtre à tout moment pour mettre à jour les traductions existantes ou en ajouter de nouvelles. N'oubliez pas de mettre à jour les traductions chaque fois que vous ajoutez de nouvelles questions ou de nouveaux choix de réponse.
 
-   ![image](/images/language_dashboard/preview.gif)
+![Ajouter une nouvelle langue](images/language_dashboard/add_language.png)
 
-9. Répétez les étapes pour toutes les langues supplémentaires.
 
-**Conseils supplémentaires** :
+## Modifier la langue par défaut
 
-**Modifier la langue par défaut**
+Pour modifier la langue par défaut du formulaire :
 
-La langue par défaut doit être la langue la plus couramment utilisée pendant la
-collecte de données. Pour modifier la langue par défaut, cliquez sur « Gérer les traductions », puis
-cliquez sur l'icône qui apparaît à droite de la langue souhaitée lorsque
-votre souris passe dessus.
+1. Sur la page **FORMULAIRE**, cliquez sur <i class="k-icon-language"></i> **Gérer**.
+2. Cliquez sur <i class="k-icon-language-default"></i> **Définir par défaut** en regard de la langue que vous souhaitez définir comme langue par défaut.
 
-![image](/images/language_dashboard/default.gif)
+![Modifier la langue par défaut](images/language_dashboard/change_default.png)
 
-**Traduire des écritures de droite à gauche**
+## Résolution de problèmes
 
-Lors de l'ajout d'une langue qui utilise une écriture de droite à gauche, il est important d'utiliser
-le code de langue correct. Cependant, même si le code correct est utilisé, si la
-première question, indication ou note est écrite dans une écriture de gauche à droite, le formulaire
-formatera automatiquement le reste de la traduction dans un format de gauche à droite.
+<details>
+  <summary><strong>Error loading survey: There is an unnamed translation in your form definition</strong></summary>
+  Cette erreur signifie qu'au moins un élément de votre formulaire (par exemple, un indice ou un message) n'est associé à aucune langue.
+<br><br>
+Pour résoudre ce problème :
+
+<ol>
+<li>Téléchargez votre formulaire en tant que <a href="../fr/xlsform_with_kobotoolbox.md">XLSForm</a>.</li>
+<li>Recherchez dans votre formulaire une colonne <code>label</code>, <code>hint</code>, <code>guidance_hint</code>, média, <code>constraint_message</code> ou <code>required_message</code> qui n'est associée à aucune langue (par exemple, <code>label</code> au lieu de <code>label::French (fr)</code>).</li>
+<li>Selon le problème rencontré, ajoutez un <a href="../fr/language_xls.md">nom et un code de langue</a> au nom de la colonne non associée, ou copiez son contenu dans la colonne existante correspondant à cette langue, puis supprimez la colonne non associée.</li>
+</ol>
+
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Issue displaying right-to-left scripts</strong></summary>
+  Lorsque vous ajoutez une langue utilisant un script de droite à gauche (RTL), comme l'arabe, l'hébreu ou l'ourdou, il est important d'utiliser le <strong>code de langue correct</strong> et de vous assurer que le <strong>premier texte visible dans la traduction</strong> (par exemple, un libellé de question, un indice ou une note) est rédigé dans la langue RTL. Cela garantit que la mise en page du formulaire ne revient pas par défaut à un formatage de gauche à droite (LTR).
+</details>

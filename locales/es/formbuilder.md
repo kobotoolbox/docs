@@ -1,23 +1,24 @@
-# Comenzando con el editor de formularios de KoboToolbox (Formbuilder)
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/3603101b7e96b31f44788dcc0f9e72115c9a1c4b/source/formbuilder.md" class="reference">28 ago 2025</a>
+# Comenzar con el editor de formularios
 
-<iframe src="https://www.youtube.com/embed/PFL1_rBB5Q8?si=RkwB2XGHppAK-RRF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b4dddc39234bcb1960d654dc36c30ad9c31e1fb9/source/formbuilder.md" class="reference">6 May 2026</a>
 
-El editor de formularios de KoboToolbox es una herramienta fácil de usar para diseñar y desplegar formularios de recolección de datos. Este artículo proporciona una descripción general básica de sus funciones, desde agregar y manejar preguntas hasta organizar tu formulario.
+
+<iframe src="https://www.youtube.com/embed/PFL1_rBB5Q8?si=RkwB2XGHppAK-RRF&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+El editor de formularios de KoboToolbox **(Formbuilder)** es una herramienta de uso amigable para diseñar e implementar formularios de recolección de datos. Este artículo ofrece una descripción general básica de sus funciones, desde agregar y gestionar preguntas hasta organizar tu formulario.
 
 <p class="note">
-    Para aprender cómo crear un nuevo formulario en KoboToolbox, consulta la <a href="https://support.kobotoolbox.org/es/quick_start.html">Descripción general de inicio rápido</a> de KoboToolbox.
+    Para aprender a crear un nuevo formulario en KoboToolbox, consulta la <a href="https://support.kobotoolbox.org/es/quick_start.html">Guía de inicio rápido</a> de KoboToolbox. Para una introducción completa al desarrollo de formularios con KoboToolbox, recomendamos el <a href="https://academy.kobotoolbox.org/courses/esenciales">Curso Esenciales de KoboToolbox</a>, un curso en línea de aprendizaje autónomo de la KoboToolbox Academy.
 </p>
 
 ## Agregar una pregunta
 
-Para agregar una pregunta a tu formulario, haz clic en el botón <i class="k-icon k-icon-plus"></i> que está debajo de cada pregunta. Ingresa la etiqueta de tu pregunta y haz clic en **Agregar pregunta**. Luego,
-[elige el tipo de pregunta](question_types.md).
+Para agregar una pregunta a tu formulario, haz clic en el botón <i class="k-icon k-icon-plus"></i> que aparece debajo de cada pregunta. Escribe la etiqueta de tu pregunta y haz clic en **Agregar pregunta**. Luego, [elige el tipo de pregunta](question_types.md).
 
-Para los tipos de pregunta [Seleccionar una o Seleccionar múltiples](select_one_and_select_many.md), agrega las opciones de respuesta debajo de la pregunta.
+Para los tipos de pregunta [Seleccionar una o Seleccionar varias](https://support.kobotoolbox.org/es/select_one_and_select_many.html), agrega las opciones de respuesta debajo de la pregunta.
 
 <p class="note">
-<strong>Nota</strong>: Una vez que se ha seleccionado el tipo de pregunta, no se puede cambiar en el editor de formularios. Para cambiar el tipo de pregunta de una pregunta existente, elimina la pregunta y crea una nueva pregunta con la misma etiqueta.
+<strong>Nota</strong>: Una vez seleccionado el tipo de pregunta, no es posible cambiarlo en el Formbuilder. Para cambiar el tipo de una pregunta existente, elimina la pregunta y crea una nueva con la misma etiqueta.
 </p>
 
 ## Agregar una sugerencia de pregunta
@@ -26,36 +27,44 @@ Una sugerencia de pregunta proporciona instrucciones adicionales debajo del text
 
 ## Duplicar una pregunta
 
-Para duplicar una pregunta, haz clic en <i class="k-icon-duplicate"></i> **Duplicar pregunta** en el menú de pregunta a la derecha. Aparecerá una copia exacta directamente debajo de la original.
+Para duplicar una pregunta, haz clic en <i class="k-icon-duplicate"></i> **Pregunta duplicada** en el menú de la pregunta a la derecha. Una copia exacta aparecerá directamente debajo de la original.
 
 ## Eliminar una pregunta
 
-Para eliminar una pregunta, haz clic en <i class="k-icon-trash"></i> **Eliminar pregunta** en el menú de pregunta a la derecha. Se te pedirá que confirmes antes de que se elimine permanentemente de tu formulario.
-
-## Cambiar la configuración de preguntas
-
-Para acceder a la configuración avanzada de preguntas, haz clic en <i class="k-icon-settings"></i> **Configuración** en el menú de pregunta a la derecha. Aquí puedes agregar lógica de salto, criterios de validación, sugerencias de orientación y hacer que una pregunta sea obligatoria.
+Para eliminar una pregunta, haz clic en <i class="k-icon-trash"></i> **Eliminar pregunta** en el menú de la pregunta a la derecha. Se te pedirá que confirmes antes de que se elimine definitivamente de tu formulario.
 
 <p class="note">
-Para aprender más sobre la configuración de preguntas, consulta <a href="question_options.html">Usar las opciones de pregunta</a>, <a href="skip_logic.html">Agregar lógica de salto en el editor de formularios</a> y <a href="validation_criteria.html">Agregar criterios de validación en el editor de formularios</a>.
+<strong>Nota</strong>: Para eliminar varias preguntas a la vez en el Formbuilder, agrúpalas y luego elimina el grupo.
+</p>
+
+## Cambiar la configuración de una pregunta
+
+Para acceder a la configuración avanzada de una pregunta, haz clic en <i class="k-icon-settings"></i> **Configuración** en el menú de la pregunta a la derecha. Aquí puedes agregar lógica de omisión, criterios de validación, sugerencias adicionales y hacer que una pregunta sea obligatoria.
+
+<p class="note">
+Para obtener más información sobre la configuración de preguntas, consulta <a href="https://support.kobotoolbox.org/es/question_options.html">Opciones de preguntas en el Formbuilder</a>, <a href="https://support.kobotoolbox.org/es/skip_logic.html">Añadir lógica de salto al Formbuilder</a> y <a href="https://support.kobotoolbox.org/es/validation_criteria.html">Añadir criterios de validación en el Formbuilder</a>.
 </p>
 
 ## Agregar preguntas a la biblioteca
 
-Para guardar una pregunta para reutilizarla en futuros formularios, haz clic en <i class="k-icon-folder-plus"></i> **Agregar pregunta a la biblioteca**. Se guardará como una copia en tu [biblioteca de preguntas](question_library.md). Puedes modificar o eliminar la pregunta original en tu formulario sin afectar la copia en la biblioteca.
+Para guardar una pregunta y reutilizarla en formularios futuros, haz clic en <i class="k-icon-folder-plus"></i> **Agregar pregunta a la biblioteca**. Se guardará como una copia en tu [biblioteca de preguntas](https://support.kobotoolbox.org/es/question_library.html). Puedes modificar o eliminar la pregunta original en tu formulario sin que esto afecte la copia guardada en la biblioteca.
 
-## Agrupar tus preguntas
+## Agrupar preguntas
 
-Las preguntas se pueden [agrupar juntas](group_repeat.md) para organizar tu formulario. Selecciona preguntas usando la tecla **CTRL** (Windows) o la tecla **Command** (Mac), luego haz clic en <i class="k-icon k-icon-group"></i> **Crear grupo con las preguntas seleccionadas** en la barra de menú superior izquierda.
+Las preguntas pueden [agruparse](https://support.kobotoolbox.org/es/group_repeat.html) para organizar tu formulario. Selecciona las preguntas con la tecla **CTRL** (Windows) o **Command** (Mac) y luego haz clic en <i class="k-icon k-icon-group"></i> **Crear grupo con las preguntas seleccionadas** en la barra de menú superior izquierda.
 
-## Cambiar el orden de tus preguntas
+## Cambiar el orden de las preguntas
 
-Las preguntas y grupos se pueden mover a cualquier posición en el formulario. Arrastra y suelta una pregunta o grupo desde su posición actual hasta donde quieras que vaya.
+Las preguntas y los grupos pueden moverse a cualquier posición del formulario. Arrastra y suelta una pregunta o grupo desde su posición actual hasta donde deseas colocarlo.
 
-## Previsualizar tu formulario
+<p class="note">
+<strong>Nota</strong>: Para mover varias preguntas a la vez en el Formbuilder, agrúpalas y luego mueve el grupo. Después puedes <a href="https://support.kobotoolbox.org/es/group_repeat.html#removing-a-question-group">desagrupar</a> las preguntas.
+</p>
 
-Después de agregar todas las preguntas a tu formulario, haz clic en <i class="k-icon k-icon-view"></i> **Previsualizar formulario** para ver cómo aparecerá una vez desplegado.
+## Previsualizar el formulario
 
-## Guardar tu formulario
+Después de agregar todas las preguntas a tu formulario, haz clic en <i class="k-icon k-icon-view"></i> **Previsualizar el formulario** para ver cómo se verá una vez implementado.
 
-Mientras editas tu formulario, haz clic regularmente en **GUARDAR** en la esquina superior derecha de tu pantalla para asegurarte de que tu trabajo esté guardado. Aparecerá un asterisco (*) junto al botón **GUARDAR** cuando tengas cambios sin guardar.
+## Guardar el formulario
+
+Mientras editas tu formulario, haz clic regularmente en **SAVE** en la esquina superior derecha de la pantalla para asegurarte de que tu trabajo quede guardado. Aparecerá un asterisco (*) junto al botón **SAVE** cuando tengas cambios sin guardar.

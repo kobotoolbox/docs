@@ -1,30 +1,29 @@
-# Validation des enregistrements
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/d5cdd698b4a91c3c45216f5a0f91ff7f0704a495/source/record_validation.md" class="reference">19 juin 2020</a>
+# Validation des soumissions
 
-Le propriétaire d'un projet peut désormais accorder une permission « Peut valider » à d'autres utilisatrices et utilisateurs. Les utilisatrices et utilisateurs disposant de cette permission peuvent consulter un enregistrement, le modifier si nécessaire et attribuer un statut à l'enregistrement en question. L'attribution d'un statut à un enregistrement/une soumission particulier améliore les normes de collecte de données pour les équipes comptant plus d'un enquêteur ou d'une enquêtrice.
+Le propriétaire d'un projet peut désormais accorder une permission « Peut valider » à d'autres utilisateurs. Les utilisateurs disposant de cette permission peuvent consulter une soumission, la modifier si nécessaire, et lui attribuer un statut. L'attribution d'un statut à une soumission particulière améliore les standards de collecte de données pour les équipes comptant plusieurs enquêteurs.
 
-## Quels sont les statuts que vous pouvez attribuer à un enregistrement ?
+## Quels sont les statuts que vous pouvez attribuer à une soumission ?
 
-Les étiquettes de statut de validation disponibles comprennent :
+Les statuts de validation disponibles sont les suivants :
 
-* **En attente** : L'enregistrement est en cours de révision.
-* **Approuvé** : Les données contenues dans cet enregistrement sont exactes.
-* **Signalé pour suppression** : Les données contenues dans cet enregistrement doivent être supprimées de l'ensemble de données.
+* **En attente** : La soumission est en cours d'examen.
+* **Approuvé** : Les données contenues dans cette soumission sont exactes.
+* **Signalé pour suppression** : Les données contenues dans cette soumission doivent être supprimées de la base de données.
 
-## Aperçu des fonctionnalités
+## Présentation des fonctionnalités
 
 * Cette nouvelle permission ajoute une colonne « Validé » au tableau de données de votre projet.
 
     ![image](/images/record_validation/validated.png)
 
-* Les utilisatrices et utilisateurs peuvent filtrer la vue du tableau en fonction du statut de validation ou de toute autre question à sélection unique. Par exemple, vous pouvez utiliser ces filtres pour afficher les soumissions associées à un enquêteur ou une enquêtrice particulier, dans le district X. Il est possible d'utiliser plusieurs filtres à la fois.
+* Les utilisateurs peuvent filtrer le mode Tableau en fonction du statut de validation ou de toute autre question à choix unique. Par exemple, vous pouvez utiliser ces filtres pour afficher les soumissions associées à un enquêteur particulier, dans le district X. Il est possible d'utiliser plusieurs filtres simultanément.
 
     ![image](/images/record_validation/filter.png)
 
-* Définissez un statut de validation pour plusieurs enregistrements - ou tous les enregistrements - à la fois.
+* Définissez un statut de validation pour plusieurs soumissions — ou pour toutes — en même temps.
 
-    Pour mettre à jour plusieurs enregistrements, sélectionnez simplement les enregistrements en cliquant sur la case à cocher à gauche de l'enregistrement, puis cliquez sur « Mettre à jour la sélection » pour sélectionner le nouveau statut.
+    Pour mettre à jour plusieurs soumissions, sélectionnez-les en cochant la case à gauche de chaque soumission, puis cliquez sur « Mettre à jour la sélection » pour choisir le nouveau statut.
 
-    Pour mettre à jour tous les enregistrements de la page, sélectionnez la case à cocher en haut à gauche ; ou pour mettre à jour tous les enregistrements de votre ensemble de données, sélectionnez le texte bleu indiquant « Sélectionner tous les XXX ». Ensuite, cliquez sur « Mettre à jour la sélection » pour sélectionner le nouveau statut.
+    Pour mettre à jour toutes les soumissions de la page, cochez la case en haut à gauche ; ou pour mettre à jour toutes les soumissions de votre base de données, cliquez sur le texte en bleu indiquant « Sélectionner les XXX résultats ». Cliquez ensuite sur « Mettre à jour la sélection » pour choisir le nouveau statut.
 
     ![image](/images/record_validation/select.png)

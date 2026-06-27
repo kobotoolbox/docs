@@ -1,27 +1,24 @@
-# Inclure les P-Codes dans les données exportées
+# Inclure des codes P dans vos données
+
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/p_codes.md" class="reference">29 Jul 2025</a>
 
-Si vous utilisez des listes en cascade, veuillez [suivre les instructions](cascading_select.md)
-pour les sélections en cascade.
+Si vous utilisez des listes en cascade, veuillez [suivre les instructions](cascading_select.md) relatives aux sélections en cascade.
 
-Normalement, seul le « Name » et NON le « Label » apparaîtra dans votre fichier Excel
-exporté, ce qui signifie que seul le P-code OU le nom du lieu apparaîtra.
+En règle générale, seul le champ « Name » et NON le champ « Label » apparaît dans votre fichier Excel exporté, ce qui signifie que seul le code P OU le nom du lieu sera affiché.
 
-Afin d'obtenir **à la fois le P-code et le nom** dans vos données exportées, procédez
-comme suit :
+Pour obtenir **à la fois le code P et le nom** dans vos données exportées, procédez comme suit :
 
-1. Dans toutes les colonnes « Name » de votre formulaire exporté, utilisez le P-code du lieu
+1. Dans toutes les colonnes « Name » de votre formulaire exporté, utilisez le code P du lieu
 2. Dans toutes les colonnes « Label » de votre formulaire exporté, utilisez le nom du lieu
-3. Pour chaque niveau administratif que vous utilisez, ajoutez une question de type « calculate », en utilisant la
-   syntaxe :
+3. Pour chaque niveau administratif utilisé, ajoutez une question de type `calculate` en utilisant la syntaxe suivante :
 
 `if(string-length(${name_of_pcode_column}) != 0,jr:choice-name(${name_of_pcode_column},'${name_of_pcode_column}'),'(unspecified name_of_pcode_column)')`
 
-<p class="note">Cette formule extraira le « Label » (c'est-à-dire le nom du lieu) de l'entrée, et vous obtiendrez dans vos résultats exportés à la fois le nom et le p-code.</p>
+<p class="note">Cette formule extrait le « Label » (c'est-à-dire le nom du lieu) de l'entrée. Vos résultats exportés contiendront ainsi à la fois le nom et le code P.</p>
 
-## Exemple avec 3 niveaux administratifs, utilisant des listes en cascade
+## Exemple avec 3 niveaux administratifs utilisant des listes en cascade
 
-**feuille survey**
+**onglet survey**
 
 | type              | name         | label   | choice_filter                                    | calculation                                                                                                               |
 | :---------------- | :----------- | :------ | :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
@@ -33,7 +30,7 @@ comme suit :
 | calculate         | name_admin3  |         |                                                  | if(string-length(${pcode_admin3}) != 0, jr:choice-name(${pcode_admin3}, '${pcode_admin3}'), '(unspecified pcode_admin3)') |
 | survey |
 
-**feuille choices**
+**onglet choices**
 
 | list_name | name | label       | state | county |
 | :-------- | :--- | :---------- | :---- | :----- |

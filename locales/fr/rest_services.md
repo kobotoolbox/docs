@@ -1,17 +1,18 @@
-# Services REST
+# Utiliser les services REST
 **Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/7ca46b8455887292b012aeb709e7e244245bf6b9/source/rest_services.md" class="reference">7 juil. 2023</a>
 
-**Comment lier vos données à d'autres serveurs ou services à l'aide des Services REST**
 
-KoboToolbox dispose d'un certain nombre de fonctionnalités avancées intégrées basées sur nos bibliothèques open source, qui incluent des modules complémentaires utiles pour des cas d'usage avancés.
+**Comment lier vos données à d'autres serveurs ou services à l'aide des services REST**
 
-Vous pouvez lier vos données collectées avec KoboToolbox à d'autres serveurs ou services que vous pourriez posséder via les Services REST. Les Services REST prennent en charge les formats JSON ou XML, ainsi que l'authentification de base. De plus, il est possible d'envoyer uniquement un sous-ensemble de champs.
+KoboToolbox propose un certain nombre de fonctionnalités avancées intégrées, basées sur nos bibliothèques open source, qui incluent des suppléments utiles pour les cas d'utilisation avancés.
 
-En cas d'échec, la tâche en arrière-plan réessaiera 3 fois d'envoyer les données (première fois après 60 secondes, deuxième fois après 600 secondes, et troisième fois après 6 000 secondes). Les notifications par e-mail peuvent être activées pour recevoir un rapport d'échec.
+Vous pouvez lier les données collectées avec KoboToolbox à d'autres serveurs ou services que vous possédez via les services REST. Les services REST sont compatibles avec les formats JSON et XML, ainsi que l'authentification de base. Il est également possible d'envoyer uniquement un sous-ensemble de champs.
 
-Notez que vos données sont envoyées au serveur externe uniquement lors de la création. Rien n'est envoyé lorsque les données sont modifiées.
+En cas d'échec, la tâche en arrière-plan effectuera 3 nouvelles tentatives d'envoi des données (la première après 60 secondes, la deuxième après 600 secondes, et la troisième après 6 000 secondes). Des notifications par e-mail peuvent être activées pour recevoir un rapport d'échec.
 
-Voici quelques vidéos tutorielles pour utiliser les Services REST :
+Notez que vos données sont envoyées au serveur externe uniquement lors de leur création. Rien n'est envoyé lorsque les données sont modifiées.
+
+Voici quelques tutoriels vidéo sur l'utilisation des services REST :
 
 1. Création
 

@@ -1,99 +1,70 @@
-# Tipos de preguntas GPS
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/27e85949b3f42b42dcb60701fbfc80aadddbb616/source/gps_questions.md" class="reference">30 Jul 2022</a>
+# Preguntas GPS en KoboToolbox
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/gps_questions.md" class="reference">23 Apr 2026</a>
 
-En KoboToolbox, puedes recolectar coordenadas GPS como parte de tu formulario de recolección de datos. Hay 3 tipos de preguntas GPS que puedes usar, a saber "Punto", "Línea" y "Área".
+Las preguntas GPS se utilizan para **recolectar coordenadas geográficas y datos espaciales** durante la recolección de datos. Te permiten capturar ubicaciones precisas, trazar rutas o definir áreas directamente en tu formulario. Estos tipos de preguntas son útiles para actividades como el mapeo de infraestructura, el seguimiento de visitas de campo, el monitoreo de sitios ambientales o el registro de ubicaciones de servicios.
 
-Usa un tipo de pregunta "Punto" cuando quieras registrar una sola coordenada GPS. Esto es perfecto para preguntas donde necesitas mostrar la ubicación de una característica única como una casa o un pozo de agua.
-
-Usa un tipo de pregunta "Línea" cuando quieras registrar múltiples puntos GPS para trazar una ruta. Este tipo de pregunta puede usarse para recolectar datos de ubicación sobre características como carreteras, caminos y ríos.
-
-El tipo de pregunta "Área" se usa para recolectar múltiples puntos GPS que forman los límites de una característica. Puedes usarlo, por ejemplo, para trazar los límites de parcelas de jardín en una encuesta donde estás enumerando tenencias de tierra.
-
-## Cómo configurar los tipos de preguntas "Punto", "Línea" y "Área"
-
-### Configuración en el editor de formularios
-
-Agregar preguntas GPS en el formulario es simple:
-
-- En el editor de formularios, haz clic en el botón <i class="k-icon k-icon-plus"></i> para agregar una nueva pregunta
-- Escribe el texto de la pregunta, por ejemplo "Captura la ubicación de la unidad de vivienda", luego haz clic en **AGREGAR PREGUNTA** o presiona ENTER en tu teclado
-- Elige el tipo de pregunta (por ejemplo, Punto)
-
-![Agregar preguntas GPS](images/gps_questions/adding_gps_questions.gif)
-
-### Configuración en XLSForm
-
-Puedes agregar preguntas "Punto", "Línea" y "Área" en XLSForm usando los tipos de pregunta `geopoint`, `geotrace` y `geoshape` respectivamente como en el siguiente ejemplo:
-
-| type     | name   | label                                       |
-| :------- | :----- | :------------------------------------------ |
-| geopoint | point  | Captura la ubicación de la unidad de vivienda |
-| geotrace | road   | Traza la ruta del camino                    |
-| geoshape | garden | Traza el límite del jardín                  |
-| survey   |
-
-## Apariencia de los tipos de preguntas "Punto", "Línea" y "Área" en formularios web y KoboCollect
-
-### Apariencia predeterminada
-
-![Apariencias predeterminadas de preguntas GPS](images/gps_questions/gps_default_appearances.png)
-
-## Recolectar puntos GPS en segundo plano
-
-Además de incluir preguntas GPS en tu formulario, también puedes recolectar coordenadas GPS en segundo plano mientras se recolectan los datos. Esto es posible activando la opción "Auditoría" en el editor de formularios (Diseño y Configuración -> Preguntas Meta) o agregando la pregunta meta `audit` a tu XLSForm. Aprende más sobre cómo hacer esto [aquí](audit_logging.md).
-
-## Calcular distancia y área con los tipos de preguntas "Línea" y "Área"
-
-A medida que recolectas tus datos GPS, podrías necesitar calcular la distancia y el área de tus preguntas "Línea" y "Área".
-
-### Calcular distancia de preguntas "Línea"
-
-Para calcular la distancia de un tipo de pregunta "Línea" en el editor de formularios, usa el tipo de pregunta "Calcular" y la función [`distance()`](https://docs.getodk.org/form-operators-functions/#distance) como se muestra a continuación:
-
-![Calcular distancia](images/gps_questions/calculate_distance.png)
-
-En el ejemplo anterior, la pregunta "Traza la ruta del camino" se ha agregado como un tipo de pregunta "Línea". El "Nombre de la Columna de Datos" en la configuración de la pregunta se ha establecido como "track".
-
-La pregunta con la etiqueta `distance(${track})` es un tipo de pregunta "Calcular" con un "Nombre de la Columna de Datos" de "distance". El resultado estará en metros.
-
-La pregunta "Nota" es opcional y se ha agregado con el propósito de mostrar la distancia calculada dentro del formulario.
-
-En XLSForm, puedes hacer lo mismo de la siguiente manera:
-
-| type      | name             | label                                 | calculation        |
-| :-------- | :--------------- | :------------------------------------ | :----------------- |
-| geotrace  | track            | Traza la ruta del camino              |                    |
-| calculate | distance         |                                       | distance(${track}) |
-| note      | display_distance | La distancia es ${distance} metros    |                    |
-| survey    |
-
-### Calcular área de preguntas "Área"
-
-Puedes calcular un área usando el tipo de pregunta "Calcular" y la función [`area()`](https://docs.getodk.org/form-operators-functions/#area) como se muestra a continuación:
-
-![Calcular distancia](images/gps_questions/calculate_area.png)
-
-En el ejemplo anterior, la pregunta "Traza los límites" se ha agregado como un tipo de pregunta "Área". El "Nombre de la Columna de Datos" en la configuración de la pregunta se ha establecido como "boundary".
-
-La pregunta con la etiqueta `area(${boundary})` es un tipo de pregunta "Calcular" con el Nombre de la Columna de Datos "area". El resultado estará en metros cuadrados.
-
-La pregunta "Nota" es opcional y se ha agregado con el propósito de mostrar el área calculada dentro del formulario.
-
-En XLSForm, puedes hacer lo mismo de la siguiente manera:
-
-| type      | name         | label                                  | calculation       |
-| :-------- | :----------- | :------------------------------------- | :---------------- |
-| geoshape  | boundary     | Traza los límites                      |
-| calculate | area         |                                        | area(${boundary}) |
-| note      | display_area | El área es ${area} metros cuadrados    |                   |
-| survey    |
+Este artículo explica los tipos de preguntas GPS disponibles en el Formbuilder, cómo agregarlos y configurarlos, las diferencias de comportamiento entre los formularios web y KoboCollect, y las opciones de aspecto avanzadas disponibles para la recolección de datos de ubicación.
 
 <p class="note">
-  Puedes descargar un XLSForm con ejemplos de este artículo
-  <a
-    download
-    class="reference"
-    href="./_static/files/gps_questions/gps_questions.xlsx"
-    >aquí</a
-  >.
+<strong>Nota:</strong> El registro de coordenadas GPS no requiere conexión a internet y es compatible con la recolección de datos sin conexión.
+</p>
+
+## Tipos de preguntas GPS
+
+Los siguientes tipos de preguntas están disponibles en el Formbuilder para que los encuestados registren datos GPS:
+
+| Tipo de pregunta | Descripción |
+|:---|:---|
+| <i class="k-icon-qt-point"></i> Punto | Recolecta una única ubicación geográfica, como las coordenadas de una escuela, clínica o vivienda específica. |
+| <i class="k-icon-qt-line"></i> Línea | Registra múltiples puntos GPS que forman una línea, por ejemplo para rastrear un camino, trazar una ruta o mapear un drenaje. |
+| <i class="k-icon-qt-area"></i> Área | Recolecta puntos que forman un área cerrada, como una parcela de tierra o un campo. |
+
+<p class="note">
+<strong>Nota:</strong> También puedes recolectar la ubicación automáticamente usando <a href="https://support.kobotoolbox.org/es/form_meta.html">preguntas de metadatos</a>. Las opciones <strong>start geopoint early</strong> y <strong>audit</strong> están disponibles en el Formbuilder, mientras que <code>background-geopoint</code> solo está disponible al crear tu formulario <a href="https://support.kobotoolbox.org/es/metadata_xls.html">en XLSForm</a>.
+</p>
+
+## Agregar una pregunta GPS en el Formbuilder
+
+Para agregar una pregunta GPS a tu formulario:
+1. Haz clic en el botón <i class="k-icon-plus"></i>.
+2. Ingresa la etiqueta de tu pregunta.
+3. Haz clic en **+ AGREGAR PREGUNTA.**
+4. Elige el tipo de pregunta adecuado.
+
+![Pregunta GPS](images/gps_questions/gps.png)
+
+## Aspectos de las preguntas GPS
+
+La siguiente tabla muestra los aspectos predeterminados de las preguntas GPS:
+
+![Aspectos predeterminados de las preguntas GPS](images/gps_questions/table.png)
+
+En los **formularios web**, los encuestados pueden seleccionar una ubicación directamente en el mapa, buscar una dirección o ingresar coordenadas GPS manualmente.
+
+En **KoboCollect**, la ubicación actual del dispositivo se registra automáticamente, y la selección manual o el ingreso de coordenadas no están disponibles de forma predeterminada.
+
+<p class="note">
+<strong>Nota:</strong> Para obtener más información sobre los comportamientos de recolección de datos GPS en formularios web y KoboCollect, consulta <a href="https://support.kobotoolbox.org/es/collect_gps.html">Recolectar datos de GPS con KoboToolbox</a>.
+</p>
+
+### Aspectos avanzados
+
+Puedes aplicar aspectos avanzados a las preguntas GPS para modificar cómo se muestran y se comportan en tu formulario.
+
+Para agregar un aspecto avanzado:
+1. Abre la configuración de la pregunta haciendo clic en <i class="k-icon-settings"></i> **Configuración** a la derecha de la pregunta. Esto te llevará a la ventana **Opciones de pregunta**.
+2. En **Aspecto (avanzado)**, escribe el nombre del aspecto en el cuadro de texto, exactamente como se indica a continuación.
+
+![Aspecto avanzado de pregunta GPS](images/gps_questions/appearance.png)
+
+Los siguientes aspectos avanzados están disponibles para las preguntas GPS:
+
+| Aspecto | Descripción | Compatibilidad |
+|:---|:---|:---|
+| <code>maps</code> | Muestra un mapa para que los usuarios visualicen la ubicación que se está registrando automáticamente (solo **Punto**). | Solo KoboCollect (incluido en el aspecto predeterminado de los formularios web) |
+| <code>placement-map</code> | Permite la selección manual de una ubicación en un mapa (solo **Punto**). | Solo KoboCollect (incluido en el aspecto predeterminado de los formularios web) |
+| <code>hide-input</code> | Muestra un mapa más grande y oculta los demás campos de entrada (latitud, longitud, altitud, precisión).<br>![Aspecto avanzado hide-input](images/gps_questions/hide-input.png) | Solo formularios web |
+
+<p class="note">
+<strong>Nota:</strong> Si usas formularios web y quieres registrar la ubicación GPS automáticamente sin permitir que los encuestados seleccionen o ingresen coordenadas manualmente, considera usar la <a href="https://support.kobotoolbox.org/es/metadata_xls.html">pregunta de metadatos</a> <code>background-geopoint</code>.
 </p>

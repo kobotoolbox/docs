@@ -1,127 +1,183 @@
-# Uso de Colecciones públicas
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/8f6b969a2b7812779940875ace1100d741729d70/source/using_public_collections.md" class="reference">11 Sep 2023</a>
+# Colecciones públicas en la biblioteca KoboToolbox
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/using_public_collections.md" class="reference">20 Mar 2026</a>
 
-Obtener la información correcta a menudo depende de hacer las preguntas correctas.
-**Colecciones públicas** nos ayuda a todos/as a mejorar nuestra recolección de datos al hacer que conjuntos
-de preguntas de encuesta predefinidas sean públicos y fácilmente accesibles para toda la comunidad de Kobo. Cualquiera puede crear, encontrar y usar estas colecciones libremente, permitiendo
-a equipos y organizaciones estandarizar sus encuestas, así como permitirles
-contribuir al trabajo y mejores prácticas de otros/as. Estas colecciones pueden
-contener preguntas individuales, bloques de preguntas o plantillas de encuestas completas que
-están listas para ser usadas.
+Las colecciones públicas permiten a los usuarios de KoboToolbox compartir y reutilizar preguntas de encuesta predefinidas, bloques de preguntas y plantillas completas. Cuando una colección se hace pública, queda disponible para todos los usuarios del mismo servidor de KoboToolbox. Las colecciones públicas pueden incluir preguntas o grupos de preguntas de uso frecuente, como características demográficas u otros indicadores estándar.
 
-Este artículo describe en detalle dónde encontrar, cómo usar y cómo
-contribuir a la biblioteca de **Colecciones públicas**.
+Al hacer público el contenido, los usuarios contribuyen a una biblioteca compartida que ayuda a estandarizar encuestas y promover medidas de uso generalizado en la comunidad de Kobo.
 
-## Propósito de las Colecciones públicas
+Este artículo explica cómo localizar, usar y crear colecciones públicas en la biblioteca KoboToolbox.
 
-Los/as usuarios/as pueden elegir hacer públicas sus preguntas de encuesta, lo que significa que serán
-incluidas en la biblioteca de **Colecciones públicas**. Todos/as los/as usuarios/as en la
-[misma instancia de servidor](creating_account.md) tendrán acceso a las mismas **Colecciones públicas**, que pueden incluir preguntas comunes o grupos de preguntas, tales
-como características demográficas, DHS (Vigilancia Demográfica y de Salud), herramienta de equidad para determinación de riqueza, así como otras medidas estándar ampliamente utilizadas.
+<p class="note">
+    Para obtener más información sobre la biblioteca KoboToolbox, consulta <a href="https://support.kobotoolbox.org/es/question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a>.
+</p>
 
-## Localizar las Colecciones públicas
+## Acceder a las colecciones públicas
 
-Para acceder a la sección de **Colecciones públicas**, inicia sesión en **KoboToolbox** y haz clic
-en el ícono de **Biblioteca** en la sección superior izquierda de tu pantalla, y luego
-navega a la pestaña de **Colecciones públicas**.
+Para acceder a las colecciones públicas desde tu cuenta de KoboToolbox:
 
-![Library](/images/using_public_collections/library.png)
+1. Haz clic en el icono <i class="k-icon-library"></i> **Biblioteca** en el menú de la izquierda.
+2. Abre la pestaña <i class="k-icon-library-public"></i> **Colecciones públicas**.
 
-Verás una lista de todas las colecciones públicas disponibles en tu respectiva
-instancia de servidor como se ve en el ejemplo a continuación. La lista muestra una descripción general del
-nombre de la colección, número de elementos dentro de cada colección, propietario/a, número de
-suscriptores/as, idiomas, sector primario especificado y la fecha más reciente en que
-fue modificada.
+![Pestaña de colecciones públicas](images/using_public_collections/public_collections.png)
 
-![Public Collections List](/images/using_public_collections/public_collections_list.png)
+Verás una lista de todas las colecciones públicas disponibles en tu servidor, así como el propietario de la colección, el número de elementos, el número de suscriptores, los idiomas disponibles, el sector principal y la fecha de última modificación.
 
-Si estás interesado/a en una colección específica, hay varias formas de encontrar
-lo que necesitas:
+<p class="note">
+<strong>Nota:</strong> Las colecciones públicas en el <a href="https://support.kobotoolbox.org/es/glossary.html#global-kobotoolbox-server">Servidor Global</a> y en el <a href="https://support.kobotoolbox.org/es/glossary.html#european-union-kobotoolbox-server">Servidor con sede en la Unión Europea</a> pueden ser diferentes. Las colecciones agregadas a un servidor solo son accesibles desde ese mismo servidor.
+</p>
 
--   Navega desplazándote a través de todas las colecciones disponibles;
--   Usa la barra de búsqueda y escribe palabras clave relevantes (ver abajo). Puedes aprender
-    más sobre búsqueda avanzada [aquí](public_collections_advanced_search.md).
+Para encontrar una colección específica, puedes explorar la lista, ordenar o filtrar los resultados, o usar la barra de búsqueda para ingresar palabras clave.
 
-![Search Example](/images/using_public_collections/search_example.gif)
+## Crear una colección pública
 
-## Uso de las Colecciones públicas
+Para crear una colección pública, primero debes crear una colección en tu biblioteca de preguntas. Desde la [biblioteca de preguntas](https://support.kobotoolbox.org/es/question_library.html):
 
-Esta sección describe cómo (a) suscribirse a una colección, (b) usar recursos de
-dentro de una colección, y (c) cómo agregar recursos a una colección.
+1. Haz clic en **NUEVO** y selecciona <i class="k-icon-folder"></i> **Colección**.
+2. Ingresa un nombre, una descripción breve, la organización, el sector principal y el país. Estos campos son obligatorios para hacer pública una colección.
+3. Haz clic en **Crear**.
+4. [Agrega al menos un elemento](https://support.kobotoolbox.org/es/question_library.html#adding-items-to-a-collection) de tu biblioteca a la colección.
+5. Abre la colección y haz clic en <i class="k-icon-globe-alt"></i> **Publicar**.
 
-### a) Suscribirse a una Colección pública
+![Hacer pública la colección](images/using_public_collections/make_public.png)
 
-Suscríbete a una colección pública pasando el cursor sobre el elemento de la lista y
-haciendo clic en el botón **SUSCRIBIRSE** o haciendo clic en **SUSCRIBIRSE** desde dentro
-de la vista de detalles de la colección. Esto agregará la colección a la pestaña **Mi
-Biblioteca**. Puedes eliminar la colección de tu biblioteca haciendo clic en
-**CANCELAR SUSCRIPCIÓN**.
+<p class="note">
+Para obtener más información sobre cómo crear colecciones en tu biblioteca, consulta <a href="https://support.kobotoolbox.org/es/question_library.html#using-collections-in-the-question-library">Usar la biblioteca de preguntas de KoboToolbox</a>.
+</p>
 
-![Subscribing to a Collection](/images/using_public_collections/subscribing_to_a_collection.gif)
+## Usar colecciones públicas
 
-### b) Uso de recursos dentro de una Colección pública
+Para usar elementos de colecciones públicas en tus propios formularios o proyectos, puedes suscribirte a colecciones, recuperar elementos individuales o crear nuevos proyectos a partir de plantillas públicas.
 
-Una vez que hayas identificado la colección pública que deseas usar, visualiza sus
-contenidos haciendo clic en el elemento de la lista. En el ejemplo a continuación, buscaremos la
-palabra "example" y entraremos a la primera colección para ver una lista de todos los recursos
-disponibles.
+### Suscribirse a una colección pública
 
-![Example Detail 1](/images/using_public_collections/example_detail_1.gif)
+Suscribirse a una colección pública la agrega a **Mi biblioteca**, lo que te permite acceder fácilmente a sus preguntas, bloques o plantillas y usarlos en tus propios formularios.
 
-Selecciona el grupo de preguntas que necesitas dentro de la colección pública pasando
-el cursor sobre ese grupo, lo que lo resaltará.
+Para suscribirte a una colección pública:
 
-![Example Detail 2](/images/using_public_collections/example_detail_2.gif)
+- Pasa el cursor sobre la colección y haz clic en <i class="k-icon-subscribe"></i> **SUSCRIBIRSE** a la derecha, o
+- Abre la colección y haz clic en **SUSCRIBIRSE** en la vista de detalles.
 
-Una vez que el recurso esté resaltado, encontrarás el ícono para clonarlo a la derecha.
-Si tocas los tres puntos para más acciones, verás una opción para descargar
-el recurso en formato XLS o XML.
+![Suscribirse a una colección pública](images/using_public_collections/subscribe.png)
 
-![Example Detail 3](/images/using_public_collections/example_detail_3.gif)
+Para eliminar una colección de tu biblioteca, haz clic en <i class="k-icon-close"></i> **CANCELAR SUSCRIPCIÓN**.
 
-Si necesitas agregar estas preguntas a un XLSForm ya desarrollado, el mejor
-enfoque sería descargar la versión XLS de la colección. Luego puedes
-agregar manualmente las preguntas deseadas copiándolas. Lee más sobre
-desarrollo de formularios usando Excel y XLSForm [aquí](edit_forms_excel.md).
+### Recuperar elementos individuales de una colección pública
 
-Además, clonar las preguntas te permite agregar a tu biblioteca personal.
-Luego puedes
-[agregar preguntas al formulario dentro del editor de formularios de KoboToolbox (Formbuilder)](question_library.md).
+Si no quieres suscribirte a una colección pública completa y solo necesitas elementos específicos, puedes clonarlos o descargarlos individualmente. Para hacerlo:
 
-![Example Detail 4](/images/using_public_collections/example_detail_4.gif)
+1. Abre la colección que contiene el elemento que te interesa.
+2. Pasa el cursor sobre el elemento.
+3. Haz clic en <i class="k-icon-duplicate"></i> **Clonar** para agregarlo a tu biblioteca, o selecciona **Otras acciones** para descargarlo como archivo XLS o XML.
 
-### c) Crear una Colección pública
+### Usar preguntas de una colección pública
 
-Mientras estés en la sección de **Biblioteca** de **KoboToolbox**, haz clic en el botón **NUEVO**
-y se mostrará un modal con cuatro opciones, como se ve a continuación.
+Después de agregar preguntas de una colección pública a tu biblioteca, ya sea suscribiéndote a la colección o clonando elementos individuales, puedes reutilizarlas en futuros formularios desde el editor de formularios de KoboToolbox **(Formbuilder)**.
 
-![Create Library Item](/images/using_public_collections/create_library_item.png)
+<p class="note">
+<strong>Nota:</strong> Solo las preguntas que se han agregado a <strong>Mi biblioteca</strong> pueden insertarse en tus formularios usando el Formbuilder.
+</p>
 
-Toca el ícono etiquetado **Colección**. Luego se te pedirá que ingreses detalles,
-incluyendo un nombre para la nueva colección, que es obligatorio. Una vez completado, haz clic
-en **CREAR** para continuar.
+Para usar preguntas o bloques de preguntas de una colección pública en tu formulario:
 
-![Collection Details](/images/using_public_collections/collection_details.png)
+1. Abre el [editor de formularios de KoboToolbox (Formbuilder)](https://support.kobotoolbox.org/es/formbuilder.html).
+2. Haz clic en <i class="k-icon-library"></i> **Agregar desde la biblioteca** en la esquina superior derecha.
+3. Selecciona la pregunta o el bloque de preguntas que quieres agregar y arrástralo a la ubicación deseada en tu formulario.
+4. Si tu biblioteca de preguntas contiene muchos elementos, puedes usar la función **Buscar** para localizar rápidamente la pregunta o el bloque que necesitas.
 
-Si tienes la intención de hacer pública la colección, también se debe definir una _Organización_ y un _Sector
-Primario_.
+![Agregar pregunta desde la biblioteca](images/using_public_collections/add_from_library.png)
 
-Una vez que la colección haya sido creada, verás las siguientes opciones:
+<p class="note">
+<strong>Nota:</strong> Cuando agregas una pregunta de tu biblioteca de preguntas a un formulario, los cambios que realices en el formulario no afectarán la versión original guardada en la biblioteca.
+</p>
 
--   Hacer pública, Modificar detalles, Editar etiquetas
--   Compartir la colección con usuarios/as específicos/as
--   Eliminar la colección
+### Usar plantillas de una colección pública
 
-![Actions](/images/using_public_collections/actions.gif)
+También puedes usar una plantilla de una colección pública para crear un nuevo proyecto de formulario, ya sea desde tu biblioteca de preguntas o desde la **Página de proyectos**.
 
-Comienza a agregar preguntas a la colección moviéndolas desde la biblioteca. Pasa
-el cursor sobre los recursos de la biblioteca y luego toca los tres botones para acceder a más
-opciones. Verás una opción para mover las preguntas a tu colección.
+**Desde la biblioteca de preguntas**
 
-![Move to Collection](/images/using_public_collections/move_to_collection.gif)
+Puedes crear un proyecto a partir de una plantilla en <i class="k-icon-library"></i> **Mi biblioteca** si te has suscrito a la colección, o directamente desde <i class="k-icon-library-public"></i> **Colecciones públicas**:
 
-## Artículos relacionados
+1. Abre la colección pública.
+2. Pasa el cursor sobre la plantilla.
+3. Haz clic en <i class="k-icon-projects"></i> **Crear proyecto** a la derecha.
+4. Ingresa un nombre para el nuevo proyecto.
 
--   [Uso de La biblioteca de preguntas](question_library.md)
--   [Uso de búsqueda avanzada dentro de colecciones públicas](public_collections_advanced_search.md)
--   [Bloqueo de biblioteca](library_locking.md)
+![Crear un proyecto desde una colección](images/using_public_collections/create_project.png)
+
+<p class="note">
+<strong>Nota:</strong> Puedes crear un proyecto a partir de una plantilla en una colección pública aunque no te hayas suscrito a la colección pública.
+</p>
+
+**Desde la Página de proyectos**
+
+También puedes crear un proyecto a partir de una plantilla pública directamente desde la <i class="k-icon-projects"></i> **Página de proyectos**, siempre que te hayas suscrito a la colección:
+
+1. Haz clic en **NUEVO** y selecciona <i class="k-icon-template"></i> **Usar una plantilla**.
+2. Elige una plantilla guardada y haz clic en **Siguiente**.
+3. Ingresa los detalles del proyecto y haz clic en **Crear proyecto**.
+
+En ambos casos, se creará un nuevo proyecto de KoboToolbox que puedes editar e implementar.
+
+<p class="note">
+<strong>Nota:</strong> Editar un proyecto creado a partir de una plantilla no modifica la plantilla original.
+</p>
+
+## Búsqueda avanzada en colecciones públicas
+
+Dentro de **Colecciones públicas**, la barra de búsqueda admite consultas simples y avanzadas. De forma predeterminada, si ingresas una palabra clave sin especificar un campo, el sistema busca en varios campos, incluidos el nombre, el nombre de usuario del propietario, la descripción, las etiquetas de las preguntas, las etiquetas y el UID. Las búsquedas no distinguen entre mayúsculas y minúsculas de forma predeterminada.
+
+![Buscar en colecciones públicas](images/using_public_collections/search.png)
+
+### Búsqueda avanzada por campo
+
+Si quieres acotar los resultados o buscar en campos específicos dentro de las colecciones públicas, puedes usar las opciones de búsqueda avanzada que se describen a continuación.
+
+La búsqueda avanzada usa un formato estructurado: `campo__subcampo__operador:valor`.
+
+- El prefijo `campo` o `campo__subcampo` define el campo en el que buscas (por ejemplo, el nombre de la colección).
+- El sufijo `operador` define cómo se compara el valor.
+
+<p class="note">
+<strong>Nota:</strong> Usa un doble guión bajo para separar cada elemento.
+</p>
+
+Algunos ejemplos de prefijos:
+
+| Prefijo | Campo en el que se busca |
+|:---|:---|
+| <code>name</code> | Nombre de la encuesta, colección, pregunta, bloque o plantilla |
+| <code>owner__username</code> | Nombre de usuario del propietario del elemento |
+| <code>settings__description</code> | Campo de descripción |
+| <code>summary</code> | Etiquetas de preguntas e idiomas disponibles |
+| <code>tags__name</code> | Etiquetas asignadas |
+| <code>uid</code> | Identificador único (UID) del objeto |
+| <code>settings__country__value</code> | Campo de configuración anidado, como el valor del país |
+
+Algunos ejemplos de sufijos:
+
+| Sufijo | Tipo de valor | Descripción |
+|:---|:---|:---|
+| <code>exact</code> | Texto | Coincidencia exacta (distingue mayúsculas y minúsculas) |
+| <code>contains</code> | Texto | El campo contiene el valor (distingue mayúsculas y minúsculas) |
+| <code>startswith</code> | Texto | El campo comienza con el valor (distingue mayúsculas y minúsculas) |
+| <code>iexact</code> | Texto | Coincidencia exacta (no distingue mayúsculas y minúsculas) |
+| <code>icontains</code> | Texto | Coincidencia por contenido (no distingue mayúsculas y minúsculas) |
+| <code>istartswith</code> | Texto | Coincidencia por inicio (no distingue mayúsculas y minúsculas) |
+| <code>exact</code> | Numérico | Número exacto |
+| <code>lt</code> | Numérico | Menor que |
+| <code>lte</code> | Numérico | Menor o igual que |
+| <code>gt</code> | Numérico | Mayor que |
+| <code>gte</code> | Numérico | Mayor o igual que |
+
+Por ejemplo, `owner__username__icontains:team` busca colecciones públicas cuyo nombre de usuario del propietario contenga la palabra "team", independientemente de las mayúsculas y minúsculas.
+
+<p class="note">
+<strong>Nota:</strong> Si no se agrega ningún sufijo, se usa <code>exact</code> de forma predeterminada. Agregar <code>i</code> antes de un operador de texto hace que no distinga entre mayúsculas y minúsculas.
+</p>
+
+### Combinar condiciones
+
+Puedes combinar filtros usando **AND**, **OR** y **NOT** para obtener resultados más precisos.
+
+Por ejemplo, `owner__username__icontains:team AND tags__name__icontains:baseline` busca en el campo de nombre de usuario del propietario y en el campo de etiquetas.

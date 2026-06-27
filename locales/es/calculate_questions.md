@@ -1,60 +1,58 @@
-# Tipo de pregunta Calcular
+# Agregar cálculos con el Formbuilder
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/calculate_questions.md" class="reference">20 Mar 2026</a>
 
-**Última actualización:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/calculate_questions.md" class="reference">15
-Feb 2022</a>
+Los cálculos permiten derivar nuevas variables, crear lógica avanzada de formularios y mostrar resultados a los encuestados durante la recolección de datos. El tipo de pregunta **Cálculo** realiza operaciones matemáticas utilizando los valores ingresados en preguntas anteriores. Por defecto, el resultado está oculto, pero puede mostrarse en el formulario si es necesario.
 
-Algunos formularios avanzados pueden requerir que se realice un cálculo interno como parte del
-formulario (en lugar de después durante el análisis). Esto se puede hacer
-agregando un Cálculo y escribiendo la expresión matemática en el campo de
-etiqueta de pregunta.
+Los cálculos se procesan dentro del formulario, lo que puede reducir la necesidad de manipular los datos después de la recolección. Los resultados se almacenan como nuevas variables en el conjunto de datos y pueden utilizarse en todo el formulario para aplicar [lógica de omisión](https://support.kobotoolbox.org/es/skip_logic.html), definir [criterios de validación](https://support.kobotoolbox.org/es/validation_criteria.html) o mostrar [contenido dinámico](https://support.kobotoolbox.org/es/form_logic.html#question-referencing) en etiquetas de preguntas y notas.
 
-![image](/images/calculate_questions/calculation.gif)
+Este artículo explica cómo agregar cálculos en el Formbuilder, abarcando operaciones aritméticas básicas e introduciendo expresiones más avanzadas.
 
-Una expresión matemática podría ser tan simple como `5 + 1`, pero lo más probable es que
-incluya una referencia a otra pregunta.
+## Agregar cálculos con el Formbuilder
 
-Hacer referencia a otras preguntas en tu pregunta de cálculo requiere dar a otras
-preguntas nombres fijos a través de la configuración de la pregunta, como `girls` o
-`income`. Al hacer referencia a esas preguntas, siempre debes usar el nombre único
-de la pregunta (no la etiqueta) - `${girls}` o `${income}`
+Para agregar un cálculo a tu formulario:
 
-Por ejemplo, si quieres convertir la respuesta a una pregunta sobre los
-ingresos de alguien a otra moneda (como francos ruandeses a dólares estadounidenses), debes
-escribir `${income} div 688`.
+1. Haz clic en el botón <i class="k-icon-plus"></i>.
+2. Ingresa la expresión de cálculo en lugar de la etiqueta de la pregunta.
+3. Haz clic en **+ AGREGAR PREGUNTA**.
+4. Elige el tipo de pregunta <i class="k-icon-qt-calculate"></i> **Cálculo**.
 
-También puedes usar la respuesta a esta pregunta Calcular para otros propósitos, como
-construir tu lógica de salto (por ejemplo, solo hacer una pregunta de seguimiento por encima de un
-cierto umbral de ingresos) o mostrándola dentro de una Nota
-([consulta aquí](responses_inside_question.md) para obtener ayuda sobre cómo mostrar la
-respuesta a una pregunta en la etiqueta de otra pregunta).
+![Pregunta de cálculo](images/calculate_questions/calculate.png)
 
-## Lista de funciones disponibles
+Las expresiones de cálculo se construyen combinando referencias a preguntas, operadores matemáticos, funciones y constantes. Por ejemplo:
+* `${usd_cost} * 0.87` convierte el valor ingresado en la pregunta `usd_cost` a otra moneda utilizando un tipo de cambio fijo.
+* `${total_cost} div ${units_purchased}` divide el costo total entre el número de unidades compradas para calcular el costo unitario.
 
-Hay muchas opciones diferentes disponibles, como la función round()
-(por ejemplo, `round(${int_1} div ${int_2}, 1`) redondeará el resultado de una división a un
-solo decimal). Para obtener una lista de algunas de las muchas expresiones matemáticas que
-se pueden usar en este campo, consulta
-[Especificaciones de XForm sobre funciones de cálculo](https://docs.getodk.org/form-operators-functions/)
-para conocer los antecedentes técnicos de todas las funciones disponibles en KoboToolbox y
-XLSForms. Para el uso avanzado de cálculos en KoboToolbox, consulta
-[este artículo](advanced_calculate.md).
+<p class="note">
+Para obtener más información sobre cada uno de estos componentes, consulta <a href="https://support.kobotoolbox.org/es/form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a>.
+</p>
 
-## Lista de operadores matemáticos disponibles
+Para mostrar el resultado del cálculo en una nota, usa el formato de [referencia a preguntas](https://support.kobotoolbox.org/es/form_logic.html#question-referencing) `${nombre_de_columna_de_datos}`, reemplazando `nombre_de_columna_de_datos` con el [nombre de columna de datos](https://support.kobotoolbox.org/es/question_options.html#data-column-name) de la pregunta de Cálculo. También puedes usar este formato para referenciar el resultado del cálculo en la etiqueta de una pregunta o en la lógica de tu formulario.
 
-| Operador               | Descripción                         |
-| :--------------------- | :---------------------------------- |
-| `+`                    | Suma                                |
-| `-`                    | Resta                               |
-| `*`                    | Multiplicación                      |
-| `div`                  | División                            |
-| `=`                    | Igual                               |
-| `!=`                   | No igual                            |
-| `<`                    | Menor que                           |
-| `<=`                   | Menor o igual que                   |
-| `>`                    | Mayor que                           |
-| `>=`                   | Mayor o igual que                   |
-| `or`                   | O                                   |
-| `and`                  | Y                                   |
-| `mod`                  | Módulo (resto de la división)       |
-| `pow([base], [power])` | Potencia / exponente                |
+![Referencia a pregunta](images/calculate_questions/reference.png)
+
+## Cálculos aritméticos
+
+Los cálculos pueden ir desde operaciones aritméticas simples hasta la derivación avanzada de variables.
+
+Los cálculos aritméticos te permiten realizar operaciones básicas utilizando los siguientes **operadores**:
+
+| Operador | Descripción |
+|:---------:|:------------|
+| <strong>+</strong>        | suma |
+| <strong>-</strong>        | resta |
+| <strong>*</strong>        | multiplicación |
+| <strong>div</strong>      | división |
+| <strong>mod</strong>      | módulo (calcula el resto de una división) |
+
+Los cálculos en XLSForm siguen la regla **BODMAS** para el orden de las operaciones matemáticas: **P**aréntesis, **P**otencias, **D**ivisión, **M**ultiplicación, **A**dición y **S**ustracción. Esto significa que los cálculos dentro de paréntesis se realizan primero, seguidos de las potencias, luego las divisiones, multiplicaciones, y así sucesivamente. Usar los paréntesis correctamente garantiza que tus cálculos funcionen como se espera.
+
+## Cálculos avanzados
+
+Los cálculos avanzados en KoboToolbox suelen basarse en **funciones** y **expresiones regulares** para hacer los cálculos más eficientes.
+
+- Las **funciones** son [operaciones predefinidas](https://support.kobotoolbox.org/es/functions_xls.html) que se utilizan para realizar automáticamente tareas complejas como redondear valores, calcular potencias o extraer la fecha actual.
+- Las **expresiones regulares (regex)** son [patrones de búsqueda](https://support.kobotoolbox.org/es/restrict_responses.html) que se utilizan para identificar caracteres específicos dentro de una cadena de texto.
+
+<p class="note">
+  Para ver ejemplos de cálculos avanzados que puedes usar en tus formularios y sugerencias para la resolución de problemas, consulta <a href="https://support.kobotoolbox.org/es/calculations_xls.html#advanced-calculations">Agregar cálculos a un XLSForm</a>.
+</p>

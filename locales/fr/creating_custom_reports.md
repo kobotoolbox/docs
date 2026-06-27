@@ -1,54 +1,84 @@
-# Affichage et création de rapports personnalisés
+# Visualiser vos données à l'aide de rapports personnalisés
+**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/6e9f496956ced232adb4985272fbee0a6465318d/source/creating_custom_reports.md" class="reference">15 Jun 2026</a>
 
-**Dernière mise à jour :**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/creating_custom_reports.md" class="reference">15
-fév. 2022</a>
+KoboToolbox inclut un outil de création de rapports que vous pouvez utiliser pour suivre les données entrantes et consulter des statistiques descriptives simples. Les rapports vous permettent d'afficher des graphiques, de consulter le nombre de réponses, de comparer les réponses par sous-groupe, et de partager ou d'imprimer un résumé des questions sélectionnées dans votre formulaire.
 
-## Apprenez à naviguer et à gérer les données dans la page Rapports.
+<p class="note">
+<strong>Note :</strong>
+    Les rapports vous permettent de consulter vos données en un coup d'œil, mais ils ne remplacent pas le nettoyage, le traitement, l'analyse ou la visualisation approfondie des données avec des outils externes. Pour une analyse plus approfondie, KoboToolbox vous permet facilement d'<a href="../fr/export_download.html">exporter vos données</a> ou de les connecter à des <a href="../fr/synchronous_exports.html">outils externes via l'API</a>.
+</p>
 
-Dans la page Rapports de la section Données de votre projet, vous pouvez créer et
-configurer plusieurs rapports de synthèse avec des graphiques, des tableaux et des schémas de couleurs personnalisés. Les rapports personnalisés peuvent être partagés en les imprimant, en les enregistrant au format PDF ou en les stockant sur un service de stockage cloud externe.
+Cet article explique comment accéder aux rapports dans KoboToolbox, personnaliser les styles de rapport, créer des rapports personnalisés et gérer les droits d'accès aux rapports.
 
-![image](/images/creating_custom_reports/chart.jpg)
+## Accéder aux rapports
 
-**1. Rapports personnalisés :**
+Pour accéder aux rapports de votre projet :
 
-Les **RAPPORTS PERSONNALISÉS** vous permettent de consulter le **Rapport par défaut** basé sur l'ensemble de données disponible dans votre projet d'enquête. Ils vous permettent également de **Créer un nouveau rapport** (en lui donnant un titre unique et en sélectionnant les questions à inclure ou à exclure) ou de rechercher parmi les rapports personnalisés créés précédemment.
+1. Ouvrez votre projet.
+2. Accédez à **DONNÉES.**
+3. Cliquez sur <i class="k-icon-reports"></i> **Rapports.**
 
-![image](/images/creating_custom_reports/custom_report.jpg)
+Le rapport par défaut inclut toutes les questions de votre formulaire. Chaque question est affichée avec un graphique et un tableau de données par défaut. Le rapport indique également le **type de question** et le **nombre de soumissions** ayant une réponse à cette question.
 
-**2. Modifier le style du rapport :**
+![Rapports de données](images/creating_custom_reports/reports.png)
 
-Le bouton **Modifier le style du rapport** vous permet de changer le **TYPE DE GRAPHIQUE** en Vertical, Anneau, Zone, Horizontal, Secteur et Ligne.
+Vous pouvez imprimer le rapport ou l'enregistrer en PDF en cliquant sur le bouton <i class="k-icon-print"></i> **Imprimer** en haut à droite. Vous pouvez également <i class=" k-icon-expand"></i> **basculer en plein écran** pour afficher le rapport sur toute la largeur de l'écran.
 
-![image](/images/creating_custom_reports/report_style.png)
+## Personnaliser votre rapport
 
-Il vous permet également de choisir différentes **COULEURS** pour vos graphiques.
+Vous pouvez personnaliser le style et la configuration de votre rapport en cliquant sur <i class="k-icon-settings"></i> **Configurer le style du rapport.** Les modifications apportées s'appliqueront à tous les graphiques et tableaux après avoir cliqué sur **Sauvegarder.**
 
-![image](/images/creating_custom_reports/style_color.png)
+![Configurer le style du rapport](images/creating_custom_reports/configure.png)
 
-Vous pouvez également regrouper les graphiques par différentes variables catégorielles disponibles dans votre ensemble de données en sélectionnant **REGROUPER PAR** et en sélectionnant une variable dans la liste fournie. _Remarque : Si une variable comporte plus de 5 choix, KoboToolbox créera un graphique affichant uniquement 5 choix en regroupant le reste sous …_
+Les paramètres suivants sont disponibles :
 
-![image](/images/creating_custom_reports/group_by.png)
+| Paramètre | Description |
+|:---|:---|
+| Type du graphique | Le type de graphique par défaut est un graphique à barres verticales. Vous pouvez sélectionner un autre type de graphique à appliquer à tous les graphiques du rapport. |
+| Couleurs | Vous pouvez choisir une palette de couleurs différente pour tous les graphiques du rapport. |
+| Grouper par | Vous pouvez sélectionner une question de type **Choix unique** de votre formulaire pour regrouper les graphiques et les tableaux selon cette variable. Cela peut être utile pour des comparaisons simples entre sous-groupes. |
+| Traduction | Si votre formulaire comporte plusieurs langues, vous pouvez choisir la langue à afficher dans le rapport. |
 
-Vous pouvez également modifier l'étiquette de vos graphiques dans différentes langues disponibles dans votre projet d'enquête en sélectionnant **TRADUCTION**. _(Cet onglet n'apparaîtra que si vous avez plusieurs langues dans votre projet d'enquête)_
 
-![image](/images/creating_custom_reports/translation.png)
+## Personnaliser des questions individuelles
 
-**3. Imprimer :** Vous pouvez également imprimer le rapport personnalisé en cliquant sur l'icône **Imprimer** ou l'enregistrer au format PDF en sélectionnant **Enregistrer au format PDF** sous **Destination**.
+Vous pouvez également personnaliser des graphiques individuels dans le rapport.
 
-![image](/images/creating_custom_reports/print.png)
+Pour personnaliser un graphique :
 
-Vous pouvez également le stocker sur un service de stockage cloud externe comme Google Drive.
+1. Trouvez le graphique que vous souhaitez modifier.
+2. Cliquez sur <i class="k-icon-more"></i> **Remplacer le style de graphique** en haut à droite du graphique.
+3. Sélectionnez un type de graphique ou une palette de couleurs.
 
-![image](/images/creating_custom_reports/destination.png)
+![Remplacer le style de graphique pour personnaliser le graphique](images/creating_custom_reports/override.png)
 
-**4. Basculer en plein écran :**
+Ces paramètres s'appliquent uniquement au graphique sélectionné.
 
-Vous pouvez appuyer sur **Basculer en plein écran** pour afficher les rapports personnalisés en plein écran ou appuyer à nouveau sur **Basculer en plein écran** pour les afficher en mode normal.
+## Créer un rapport personnalisé
 
-**5. Remplacer le style du graphique :**
+En plus du rapport par défaut, vous pouvez créer des rapports personnalisés. Les rapports personnalisés vous permettent de choisir les questions à inclure et d'enregistrer des paramètres de rapport personnalisés.
 
-Vous pouvez cliquer sur **Remplacer le style du graphique** _(icône à 3 points)_ pour personnaliser le **TYPE DE GRAPHIQUE** et les **COULEURS** du graphique pour chaque variable (question) dans vos rapports personnalisés. Cela remplacera le style du graphique **(pour une question)** qui a été défini par **Modifier le style du rapport** dans votre rapport personnalisé, comme expliqué ci-dessus.
+Pour créer un rapport personnalisé :
 
-![image](/images/creating_custom_reports/question_style.png)
+1. Cliquez sur <i class="k-icon-plus"></i> **Créer un nouveau rapport** à côté de **Rapport par défaut.**
+2. Saisissez un titre pour votre rapport personnalisé.
+3. Sélectionnez les questions que vous souhaitez inclure et cliquez sur **Sauvegarder.**
+4. Cliquez sur <i class="k-icon-settings"></i> **Configurer le style du rapport** pour définir le style et la configuration du rapport.
+
+![Créer un rapport personnalisé](images/creating_custom_reports/new.png)
+
+Pour modifier le titre ou les questions affichées dans un rapport personnalisé, cliquez sur <i class="k-icon-edit"></i> **Modification des questions du rapport.**
+
+<p class="note">
+<strong>Note :</strong> Les paramètres des rapports personnalisés sont enregistrés et resteront disponibles lorsque vous quitterez la page et y reviendrez.
+</p>
+
+## Droits d'accès et partage
+
+Les utilisateurs disposant de la permission **Afficher les soumissions** peuvent consulter les rapports, y compris les rapports personnalisés créés par d'autres utilisateurs. Ils ne peuvent cependant pas configurer les styles de rapport ni créer de rapports personnalisés.
+
+Les utilisateurs disposant de la permission **Gérer le projet** peuvent consulter les rapports, configurer les styles de rapport et créer des rapports personnalisés.
+
+<p class="note">
+  Pour en savoir plus sur les droits d'accès et le partage, consultez l'article <a class="reference external" href="../fr/managing_permissions.html">Droits d'accès au niveau de l'utilisateur</a>.
+</p>

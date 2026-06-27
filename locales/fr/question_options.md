@@ -1,54 +1,156 @@
-# Utilisation des options de question
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/43a3384fad535287d1c7820457ab2d25a86877fc/source/question_options.md" class="reference">24 Sep 2025</a>
+# Options de questions dans le Formbuilder
+**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/9185596568f1a4124aef66d2d51e31fdd8aed0ba/source/question_options.md" class="reference">23 Apr 2026</a>
 
-Après avoir ajouté une question, vous pouvez effectuer de nombreuses personnalisations en utilisant les options de question. Pour accéder à l'écran des options d'une question, cliquez sur son bouton <i class="k-icon k-icon-settings"></i> Paramètres.
+Après avoir ajouté une question à votre formulaire, vous pouvez personnaliser **son comportement et son apparence en ajustant ses options de question.** Ces paramètres vous permettent de contrôler diverses options, du nom de variable et des réponses obligatoires aux fonctionnalités d'affichage avancées et au balisage HXL.
 
-![Options de question](/images/question_options/options2.png)
+Cet article explique comment accéder aux options de questions dans l'interface de création de formulaires KoboToolbox **(KoboToolbox Formbuilder)**, présente les paramètres disponibles et fournit des conseils sur la manière et le moment d'utiliser chaque option efficacement.
 
-## Nom de la colonne de données
+## Accéder aux options de questions dans le Formbuilder
 
-Le **Nom de la colonne de données** est l'identifiant unique (ID) de votre question.
+Pour accéder aux options de questions dans le Formbuilder :
 
-Ce champ est obligatoire pour chaque question. Seuls les lettres, les chiffres et les traits de soulignement sont autorisés dans ce champ, et le champ doit commencer par une lettre ou un trait de soulignement. Vous pouvez saisir ce que vous voulez, par exemple `quel_est_votre_nom` ou `age`.
+1. Cliquez sur <i class="k-icon-settings"></i> **Paramètres** dans le menu à droite de la question.
+2. L'onglet **Options des questions** s'ouvre, dans lequel vous pouvez configurer des paramètres supplémentaires pour la question sélectionnée.
 
-Le Nom de la colonne de données est important car il est utilisé dans les en-têtes de colonnes des tableaux et des feuilles de calcul après la collecte de vos données. Si vous souhaitez que votre feuille de calcul suive une convention de nommage spécifique, vous devez spécifier le nom de chacune de vos questions avant de déployer le formulaire en tant que projet de collecte de données.
+![Options de questions](images/question_options/options.png)
 
-## Indication d'aide (facultatif)
+## Options disponibles dans le Formbuilder
 
-Les **Indications d'aide** sont des instructions supplémentaires que vous pouvez ajouter à vos questions sous forme de notes. Par défaut dans les formulaires web Enketo, les indications d'aide sont affichées sous un accordéon qui peut être développé et réduit comme indiqué ci-dessous.
+Les options suivantes sont disponibles pour les questions ajoutées dans le Formbuilder :
 
-![Indication d'aide dans les formulaires web Enketo](/images/question_options/guidance_hint_enketo.gif)
+| Options | Description |
+|:---|:---|
+| Indice de question | Texte affiché sous le libellé de la question pour fournir des <a href="https://support.kobotoolbox.org/fr/question_options.html#question-hint">instructions supplémentaires</a> ou des précisions aux répondants. |
+| Nom du champ | L'<a href="https://support.kobotoolbox.org/fr/question_options.html#data-column-name">identifiant unique</a> d'une question, utilisé dans la logique de formulaire et comme en-tête de colonne dans le jeu de données exporté. |
+| Instructions supplémentaires | Des <a href="https://support.kobotoolbox.org/fr/question_options.html#guidance-hint">notes ou instructions</a> supplémentaires destinées aux enquêteurs ou aux concepteurs de formulaires, non affichées par défaut lors de la collecte de données. |
+| Réponse obligatoire | Un paramètre qui détermine si une question <a href="https://support.kobotoolbox.org/fr/question_options.html#mandatory-response">doit recevoir une réponse</a> avant que le répondant puisse continuer ou soumettre le formulaire. |
+| Réponse par défaut | Une réponse prédéfinie qui <a href="https://support.kobotoolbox.org/fr/question_options.html#default-response">remplit automatiquement</a> une question et peut être modifiée lors de la collecte de données. |
+| Apparence (avancée) | Un paramètre optionnel qui modifie la façon dont une question est <a href="https://support.kobotoolbox.org/fr/question_options.html#appearance-advanced">affichée</a> ou se comporte dans le formulaire. |
+| HXL | Un hashtag standardisé utilisé pour <a href="https://support.kobotoolbox.org/fr/question_options.html#hxl">baliser les questions</a> selon le cadre du langage d'échange humanitaire (HXL) afin de favoriser l'interopérabilité et le traitement des données. |
+| Fichiers acceptés | Spécifie les <a href="https://support.kobotoolbox.org/fr/photo_audio_video_file.html#restricting-accepted-file-types">types de fichiers</a> pouvant être importés pour une question de type **Fichier**, en indiquant les extensions autorisées séparées par des virgules. |
+| Paramètres | Paramètres supplémentaires disponibles pour certains types de questions, permettant de personnaliser le comportement, par exemple en <a href="https://support.kobotoolbox.org/fr/select_one_and_select_many.html#randomizing-option-choices">randomisant les choix de réponse</a> ou en limitant la <a href="https://support.kobotoolbox.org/fr/photo_audio_video_file.html#lowering-image-sizes">taille maximale des images</a>. |
+| Fichier des choix | Permet aux utilisateurs de sélectionner le <a href="https://support.kobotoolbox.org/fr/external_file.html#setting-up-the-question-in-the-formbuilder">fichier externe</a> qui servira de source d'options pour les questions **Choix unique à partir d'un fichier** et **Sélectionner plusieurs dans le fichier**. |
 
-Dans [KoboCollect](kobocollect_on_android_latest.md), les indications d'aide ne sont pas affichées par défaut. Vous pouvez [choisir comment les indications d'aide doivent être affichées](https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings) dans vos formulaires en allant dans Paramètres -> Gestion des formulaires -> Afficher les indications pour les questions. Vous avez ici 3 choix : Non, Oui - toujours affiché et Oui - toujours réduit.
+<p class="note">
+<strong>Note :</strong> Pour des options de personnalisation et des paramètres avancés supplémentaires, <a href="https://support.kobotoolbox.org/fr/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox">téléchargez votre formulaire en tant que XLSForm</a> et ajoutez des <a href="https://support.kobotoolbox.org/fr/question_options_xls.html">options de questions</a> directement dans le tableur.
+</p>
 
-![Indication d'aide dans KoboCollect](/images/question_options/guidance_hint_kobocollect.gif)
+## Nom du champ
 
-Les indications d'aide peuvent être utilisées comme notes internes lors de la collaboration avec d'autres personnes dans le développement du formulaire. Vous pouvez également les afficher sur des impressions ou comme instructions supplémentaires lors de la formation des enquêtrices et enquêteurs.
+Le **nom du champ** est l'identifiant unique de chaque question dans votre formulaire. Il sert de nom de variable utilisé dans la [logique de formulaire](https://support.kobotoolbox.org/fr/form_logic.html#question-referencing) et devient l'en-tête de colonne dans votre jeu de données exporté.
+
+Chaque question doit avoir un nom de champ unique. Dans le Formbuilder, il est généré automatiquement à partir du libellé de la question, mais vous pouvez le personnaliser selon vos besoins. Définir des noms clairs et cohérents avant de déployer votre formulaire permet de s'assurer que votre jeu de données suit une convention de nommage logique.
+
+![Nom du champ](images/question_options/data_column_name.png)
+
+### Points importants concernant les noms de champs
+
+Si vous conservez le **nom de champ généré automatiquement**, il se mettra à jour automatiquement chaque fois que vous modifiez le libellé de la question. Cela peut poser des problèmes si vous avez déjà configuré une logique de formulaire dans du code XLSForm en utilisant le nom de champ précédent, ou si vous avez commencé à collecter des données.
+
+Si le nom de champ d'une question change après le début de la collecte de données, KoboToolbox le traitera comme une nouvelle variable. Cela entraînera deux colonnes distinctes dans votre jeu de données.
+
+Pour cette raison, il est recommandé de **définir et finaliser le nom de champ de chaque question avant de déployer votre formulaire** et de collecter des données. Si vous apportez intentionnellement des modifications importantes à une question et souhaitez qu'elle fonctionne comme une nouvelle variable, vous pouvez mettre à jour le nom de champ en conséquence.
+
+Les noms de champs doivent respecter les règles suivantes :
+
+- Utiliser uniquement des lettres, des chiffres et des tirets bas.
+- Le premier caractère doit être une lettre.
+- Chaque nom doit être unique dans le formulaire.
+
+<p class="note">
+<strong>Note :</strong> Les noms de champs sont utilisés pour référencer les réponses dans la <a href="https://support.kobotoolbox.org/fr/form_logic.html#question-referencing">logique de formulaire</a>. Par exemple, vous pouvez inclure une réponse précédente dans le libellé d'une autre question en utilisant le format <code>${data_column_name}</code>. Ce format est utilisé dans les libellés, la logique de saut, les calculs et les validations. Les noms de champs sont sensibles à l'utilisation de majuscules et de minuscules.
+</p>
+
+## Indice de question
+
+Les **indices de question** sont utilisés pour fournir des informations supplémentaires aux répondants ou aux enquêteurs directement dans le formulaire. Ils sont toujours visibles et affichés sous le libellé de la question.
+
+![Indice de question](images/question_options/question_hint.png)
+
+## Instructions supplémentaires
+
+Les **instructions supplémentaires** (guidance hint) sont utilisées pour fournir des informations complémentaires lors du développement du formulaire, de la formation des enquêteurs ou de la collecte de données. Elles ne sont pas affichées par défaut.
+
+![Instructions supplémentaires](images/question_options/guidance_hint_new.png)
+
+### Afficher les instructions supplémentaires dans KoboCollect
+
+Dans les formulaires web, les instructions supplémentaires apparaissent dans une section **Plus de détails** réductible. Dans KoboCollect, elles sont masquées par défaut, mais vous pouvez [modifier les paramètres de votre projet](https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings) pour les afficher en permanence ou dans une section réductible.
+
+Pour afficher les instructions supplémentaires dans KoboCollect, suivez les étapes ci-dessous :
+
+1. Appuyez sur l'**icône du projet** en haut à droite de votre écran.
+2. Appuyez sur **Paramètres**.
+3. Sous **Gestion des formulaires**, sélectionnez **Afficher les instructions pour les questions**.
+4. Choisissez une option d'affichage : **Non**, **Oui - toujours affichées** ou **Oui - réduites**.
+
+<p class="note">
+<strong>Note :</strong> Les instructions supplémentaires sont toujours affichées dans les formulaires imprimés.
+</p>
 
 ## Réponse obligatoire
 
-Ce paramètre vous permet de spécifier si la question doit toujours recevoir une réponse ou non. Dans XLSForm, cela s'appelle `required`.
+Par défaut, les questions d'un formulaire sont facultatives. Définir la **Réponse obligatoire** sur **Oui** oblige le répondant à répondre à la question. Cela peut être utile pour s'assurer que les soumissions sont complètes et éviter les données manquantes.
 
-Dans KoboToolbox, il existe trois options pour la réponse obligatoire :
+![Réponse obligatoire](images/question_options/mandatory.png)
 
-1. Oui - La question doit toujours recevoir une réponse. Si aucune réponse n'est fournie, l'utilisatrice ou l'utilisateur ne pourra pas passer à la question suivante ou sauvegarder le formulaire.
-2. Non - La question n'est pas obligatoire et peut donc être ignorée manuellement.
-3. Logique personnalisée - Vous pouvez définir une logique en utilisant du code XLSForm qui définira quand la question sera obligatoire. Par exemple, si vous définissez la logique personnalisée suivante `${age} > 18`, la question sera obligatoire lorsqu'une question précédente avec le nom de colonne de données `age` est supérieure à 18.
+Si un répondant ne répond pas à une question obligatoire, il ne pourra pas passer à la page suivante ni soumettre le formulaire. Le message d'obligation par défaut "This field is required" sera affiché.
 
-## Réponse par défaut (facultatif)
+<p class="note">
+<strong>Note :</strong> Les conditions de logique de saut ont la priorité sur les paramètres de <strong>Réponse obligatoire</strong>, ce qui signifie que si une question obligatoire est masquée par la logique de saut, il n'est plus nécessaire d'y répondre.
+</p>
 
-Cela permet de spécifier une réponse par défaut que l'enquêtrice ou l'enquêteur peut accepter ou modifier.
+### Définir une logique personnalisée pour les réponses obligatoires
 
-Dans la plupart des études, cela ne serait pas recommandé car cela pourrait créer un biais accidentel, mais cela peut être utile pour les questions de date ou d'heure où les réponses ont tendance à se situer autour d'un certain point connu.
+Une logique de formulaire personnalisée peut être utilisée pour rendre une question obligatoire ou facultative en fonction d'une réponse précédente. Pour mettre en œuvre une logique personnalisée pour les réponses obligatoires :
 
-Pour les questions <i class="k-icon k-icon-qt-date"></i> Date, la réponse par défaut doit être écrite au format `AAAA-MM-JJ` (par exemple `1974-12-31`).
+1. Sélectionnez **Logique personnalisée** à côté de **Réponse obligatoire**.
+2. Dans la zone de texte, saisissez la formule XLSForm qui détermine si la question sera obligatoire ou non.
 
-Pour les questions <i class="k-icon k-icon-qt-select-one"></i> Sélection unique ou <i class="k-icon k-icon-qt-select-many"></i> Sélection multiple, la réponse doit être écrite en utilisant la Valeur unique (valeur xml) - et non l'étiquette (par exemple `premiere_annee` plutôt que `Première année`).
+![Logique personnalisée](images/question_options/custom_mandatory.png)
 
-## Apparence (facultatif)
+<p class="note">
+    Pour en savoir plus sur la logique d'obligation conditionnelle, consultez l'article <a href="https://support.kobotoolbox.org/fr/required_logic_xls.html">Ajouter une logique d'obligation conditionnelle dans XLSForm</a>.
+</p>
 
-Ce paramètre avancé permet d'afficher la question de manière modifiée. Certaines options d'apparence ne seront disponibles qu'en fonction du [Type de question](question_types.md).
+## Réponse par défaut
 
-Pour une liste complète des valeurs d'apparence, consultez [la documentation sur l'apparence d'ODK](http://xlsform.org/en/#appearance).
+Une **réponse par défaut** remplit une question avec une réponse prédéfinie basée sur une réponse courante ou attendue. La réponse par défaut sera enregistrée comme réponse finale lors de la soumission du formulaire, **sauf si elle est modifiée par le répondant** lors de la collecte de données.
 
-![Options d'apparence de question](/images/question_options/appearance.png)
+![Réponse par défaut](images/question_options/default_response.png)
+
+<p class="note">
+<strong>Note :</strong> Bien que les réponses par défaut puissent rendre la collecte de données plus efficace en préremplissant le formulaire avec des réponses attendues ou courantes, elles risquent également d'introduire des biais ou des erreurs dans les données, et doivent être utilisées avec précaution.
+</p>
+
+### Format de la réponse par défaut
+
+Le format de la réponse par défaut dépend du type de question et des données collectées :
+
+| Type de question | Format de la réponse par défaut |
+|:---|:---|
+| Chiffre | Nombre |
+| Texte | Texte (sans guillemets) |
+| Choix unique | <a href="https://support.kobotoolbox.org/fr/question_types.html#setting-xml-values-for-option-choices">Valeur XML</a> du choix |
+| Choix multiple | <a href="https://support.kobotoolbox.org/fr/question_types.html#setting-xml-values-for-option-choices">Valeurs XML</a> des choix, séparées par un espace s'il y en a plusieurs |
+| Date | Date au format YYYY-MM-DD. |
+
+## Apparence (avancée)
+
+Les apparences de questions vous permettent de modifier la façon dont une question est affichée et, dans certains cas, la manière dont les répondants interagissent avec elle. Certaines apparences sont uniquement disponibles dans les formulaires web, tandis que d'autres fonctionnent uniquement dans KoboCollect.
+
+![Apparence avancée](images/question_options/appearance.png)
+
+Les apparences disponibles varient selon le type de question. Consultez l'article d'aide correspondant à chaque type de question pour voir toutes les apparences disponibles.
+
+## HXL
+
+HXL, ou **langage d'échange humanitaire** (Humanitarian Exchange Language), est un [système standardisé](https://hxlstandard.org/) permettant de baliser les données à l'aide de hashtags (#). Il est largement utilisé par les organisations pour améliorer le partage d'informations lors de réponses humanitaires et d'autres situations de crise.
+
+L'application de balises HXL à vos questions contribue à rendre vos données plus interopérables entre les systèmes et les organisations. Elle favorise également un traitement et une analyse des données plus efficaces.
+
+Dans KoboToolbox, vous pouvez attribuer une balise HXL par question et inclure des attributs de manière optionnelle. Lorsque vous exportez vos données sous forme de fichier XLS avec les valeurs et en-têtes XML sélectionnés, une ligne supplémentaire contenant les balises HXL apparaîtra directement sous les noms de variables dans votre jeu de données.
+
+L'utilisation de balises HXL est particulièrement utile lorsque vos données seront partagées avec des partenaires ou intégrées dans d'autres systèmes de données humanitaires.
+
+![HXL](images/question_options/hxl.png)

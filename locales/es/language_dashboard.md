@@ -1,78 +1,89 @@
-# Agregar otro idioma en el panel del proyecto
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/a412eff1342fa59da1fe2ffe1e10c1829b2e5e94/source/language_dashboard.md" class="reference">1 Nov 2022</a>
+# Agregar traducciones en KoboToolbox
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/55b3ab6258a25c2b16c1d954b282f02918937598/source/language_dashboard.md" class="reference">5 Jun 2026</a>
 
-Existen dos métodos para agregar múltiples idiomas a tu formulario. Puedes
-agregarlos y manejarlos directamente a través del panel del proyecto en línea o puedes
-agregarlos en un [formulario XLS y subirlo a Kobo](language_xls.md).
+<iframe src="https://www.youtube.com/embed/3O2K78F7DCA?si=lt-ZlSRoAjFuSMl1&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Aquí encontrarás instrucciones detalladas sobre cómo puedes agregar y manejar otro idioma en
-tu formulario a través del panel del proyecto en línea:
+Agregar traducciones a un formulario permite a los usuarios **elegir su idioma preferido** durante la recolección de datos sin necesidad de crear formularios separados. Se puede agregar cualquier número de traducciones. Tanto [KoboCollect](../es/data_collection_kobocollect.html) como los [formularios web](../es/data_through_webforms.html) son compatibles con las traducciones de formularios.
 
-1. Crea tu formulario en el idioma predeterminado ya sea usando el editor de formularios de KoboToolbox (Formbuilder) o
-   configurando el formulario como un archivo XLS y luego súbelo directamente a
-   KoboToolbox. El idioma predeterminado debe ser el idioma con el que la persona
-   responsable de diseñar el cuestionario se sienta más cómoda.
+Puedes agregar traducciones a tu formulario directamente en la interfaz de KoboToolbox o usando [XLSForm](../es/language_xls.html). KoboToolbox ofrece una **interfaz intuitiva** que no requiere conocimientos técnicos y te permite agregar fácilmente múltiples traducciones a tus formularios. Este enfoque es útil cuando trabajas con un número reducido de preguntas o cuando quieres hacer ajustes rápidos.
 
-2. Cuando hayas terminado, o cuando una porción significativa del formulario haya sido
-   creada, guárdalo. Regresarás al panel del proyecto del formulario en borrador.
+<p class="note">
+   <strong>Nota:</strong> Para formularios multilingües más grandes o complejos, XLSForm suele ser la opción más eficiente. Permite gestionar las traducciones de forma masiva, lo que puede ahorrar tiempo cuando se trabaja con muchas preguntas o varios idiomas. Para obtener más información sobre cómo configurar traducciones en XLSForm, consulta <a href="../es/language_xls.html">Añadir traducciones en XLSForm</a>.
+</p>
 
-3. Encuentra y haz clic en el ícono 'Más acciones' (3 puntos). En el menú desplegable
-   que aparece, haz clic en 'Administrar traducciones'.
+Este artículo se centra en agregar traducciones desde la plataforma KoboToolbox y abarca los siguientes temas:
+- Configurar el idioma predeterminado del formulario
+- Agregar idiomas y traducciones
+- Cambiar el idioma predeterminado
 
-   ![image](/images/language_dashboard/action.png)
+<p class="note">
+    Para obtener más información sobre la recolección y gestión de datos de formularios traducidos, consulta <a href="../es/collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a>.
+</p>
 
-4. Antes de agregar idiomas adicionales, primero establece tu idioma predeterminado haciendo
-   clic en el ícono del lápiz y completando los campos 'Nombre del idioma' y 'Código del
-   idioma'.
+## Configurar el idioma predeterminado
 
-   **Consejo**: Si no estás seguro/a de cuál es tu código de idioma, puedes buscar
-   en la lista completa de códigos de idioma
-   [aquí](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
-   Si no puedes encontrar tu idioma, es posible que haya sido etiquetado como
-   algo más y vale la pena buscar en línea nombres alternativos.
+El idioma predeterminado de un formulario suele ser el idioma en el que se diseñó el cuestionario y el idioma en el que se abre el formulario por defecto durante la recolección de datos. Solo es necesario configurar un idioma predeterminado si se agregan traducciones adicionales, y no es obligatorio cuando el formulario está disponible en un único idioma.
 
-   Ejemplos: Inglés (en), Alemán (de), Árabe (ar), etc.
+Para configurar el idioma predeterminado:
 
-   ![image](/images/language_dashboard/example.gif)
+1. Crea tu formulario en el idioma predeterminado.
+2. Una vez creado el formulario, ve a la página **FORMULARIO** de tu proyecto.
+3. Debajo del botón **IMPLEMENTAR** o **REIMPLEMENTAR**, haz clic en <i class="k-icon-language"></i> **Gestionar**.
+4. Agrega el nombre del idioma (por ejemplo, "English") y el código de idioma (por ejemplo, "en") para tu idioma predeterminado.
 
-5. Una vez que el idioma predeterminado haya sido establecido, haz clic en el botón 'Agregar idioma' para
-   completar el nombre del idioma y el código para el nuevo idioma que se está agregando.
+![Gestionar idiomas](images/language_dashboard/manage_languages.png)
 
-6. Después de que el nuevo idioma haya sido agregado, haz clic en el ícono 'Actualizar traducciones'
-   (mundo) a la derecha del título del idioma para abrir la 'Tabla de traducciones'
-   para ese idioma.
+<p class="note">
+    <strong>Nota:</strong> Los códigos de idioma se pueden encontrar en el <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">Registro de subetiquetas de idioma de la IANA</a>. En el sitio web de la IANA, <strong>Description</strong> hace referencia al nombre del idioma y <strong>Subtag</strong> al código de idioma (por ejemplo, <strong>Description</strong>: French, <strong>Subtag</strong>: fr).
+</p>
 
-   ![image](/images/language_dashboard/add_language.gif)
+## Agregar idiomas y traducciones
 
-7. Completa las traducciones con las cadenas originales asociadas correctas en la
-   vista de tabla y luego haz clic en 'Guardar cambios' cuando termines. Luego cierra la
-   vista de tabla haciendo clic en el botón 'x' en la parte superior derecha de la tabla.
+Una vez que hayas configurado tu idioma predeterminado, puedes agregar más idiomas y traducir el texto de tu formulario:
 
-   ![image](/images/language_dashboard/translation.png)
+1. En la ventana <i class="k-icon-language"></i> **Gestionar idiomas**, haz clic en **Agregar idioma**.
+2. Ingresa el nombre y el código del idioma y, a continuación, haz clic en **Agregar**.
+3. Junto al idioma que agregaste, haz clic en <i class="k-icon-language-settings"></i> **Actualizar traducciones**.
+    - Aparecerá una tabla con todos los elementos traducibles de tu formulario, incluidas las etiquetas de preguntas, etiquetas de grupos, sugerencias, sugerencias adicionales, mensajes de restricción, archivos multimedia y etiquetas de opciones.
+    - Cada idioma tiene su propia tabla de traducciones.
+4. Ingresa las traducciones y haz clic en **Guardar cambios**.
+    - Si omites el texto de un elemento traducido, aparecerá como un campo en blanco en el formulario.
+5. Cierra la ventana y previsualiza tu formulario para verificar las traducciones.
+6. Implementa o reimplementa tu formulario para aplicar los cambios.
 
-8. De vuelta en el panel del proyecto, haz clic en el ícono 'Vista previa' (ojo) para abrir una
-   vista previa del formulario. En la parte superior, junto a Elegir idioma, haz clic en el
-   menú desplegable. Tendrá predeterminado (tu idioma original) así como el nuevo
-   idioma(s) que acabas de agregar.
+Puedes volver a esta ventana en cualquier momento para actualizar las traducciones existentes o agregar nuevas. Recuerda actualizar las traducciones cada vez que agregues nuevas preguntas u opciones de respuesta.
 
-   ![image](/images/language_dashboard/preview.gif)
+![Agregar un nuevo idioma](images/language_dashboard/add_language.png)
 
-9. Repite los pasos para cualquier idioma adicional.
 
-**Consejos adicionales**:
+## Cambiar el idioma predeterminado
 
-**Cambiar el idioma predeterminado**
+Para cambiar el idioma predeterminado del formulario:
 
-El idioma predeterminado debe ser el idioma más común utilizado durante la recolección
-de datos. Para cambiar el idioma predeterminado, haz clic en 'Administrar traducciones' y
-luego haz clic en el ícono que aparece a la derecha del idioma deseado cuando
-tu mouse pase sobre él.
+1. En la página **FORMULARIO**, haz clic en <i class="k-icon-language"></i> **Gestionar**.
+2. Haz clic en <i class="k-icon-language-default"></i> **Establecer como predeterminado** junto al idioma que quieres configurar como predeterminado.
 
-![image](/images/language_dashboard/default.gif)
+![Cambiar el idioma predeterminado](images/language_dashboard/change_default.png)
 
-**Traducir escrituras de derecha a izquierda**
+## Resolución de problemas
 
-Al agregar un idioma que usa escritura de derecha a izquierda, es importante usar
-el código de idioma correcto, sin embargo, incluso si se usa el código correcto, si la
-primera pregunta, sugerencia o nota está escrita en una escritura de izquierda a derecha, el formulario
-automáticamente formateará el resto de la traducción a un formato de izquierda a derecha.
+<details>
+  <summary><strong>Error loading survey: There is an unnamed translation in your form definition</strong></summary>
+  Este error significa que al menos un elemento de tu formulario (por ejemplo, una sugerencia o un mensaje) no está asignado a ningún idioma.
+<br><br>
+Para solucionar este problema:
+
+<ol>
+<li>Descarga tu formulario como <a href="../es/xlsform_with_kobotoolbox.html">XLSForm</a></li>
+<li>Busca una columna <code>label</code>, <code>hint</code>, <code>guidance_hint</code>, multimedia, <code>constraint_message</code> o <code>required_message</code> en tu formulario que no esté asignada a ningún idioma (por ejemplo, <code>label</code> en lugar de <code>label::English (en)</code>).</li>
+<li>Según el problema, agrega un <a href="../es/language_xls.html">nombre de idioma y código</a> al nombre de la columna sin asignar, o copia su contenido en una columna existente para ese idioma y elimina la columna sin asignar.</li>
+</ol>
+
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Problema al mostrar textos de derecha a izquierda</strong></summary>
+  Al agregar un idioma que utiliza un sistema de escritura de derecha a izquierda (RTL), como el árabe, el hebreo o el urdu, es importante usar el <strong>código de idioma correcto</strong> y asegurarse de que el <strong>primer texto visible en la traducción</strong> (por ejemplo, una etiqueta de pregunta, sugerencia o nota) esté escrito en el idioma RTL. Esto garantizará que el diseño del formulario no adopte por defecto el formato de izquierda a derecha (LTR).
+</details>

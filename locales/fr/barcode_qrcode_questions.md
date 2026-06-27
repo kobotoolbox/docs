@@ -1,13 +1,12 @@
-# Type de question Code-barres/Code QR
-**Dernière mise à jour :** <a href="https://github.com/kobotoolbox/docs/blob/c5889af525a55f27747f919a026f9b7103f5c180/source/barcode_qrcode_questions.md" class="reference">24 Sep 2025</a>
+# Question de type Code-barres / code QR
 
-Le type de question « Code-barres/Code QR » est utilisé pour scanner, décoder et capturer des codes-barres et des codes QR à l'aide de l'appareil photo de l'appareil. Lorsqu'un code est scanné avec l'appareil photo, la valeur (qu'il s'agisse de chiffres ou de texte) stockée dans le code est capturée.
+La question de type « Code-barres / code QR » permet de scanner, décoder et capturer des codes-barres et des codes QR à l'aide de la caméra de l'appareil. Lorsqu'un code est scanné, la valeur (qu'il s'agisse de chiffres ou de texte) stockée dans le code est capturée.
 
 <p class="note">
-  Le scan de codes-barres/codes QR ne fonctionne que lors de <a href="kobocollect_on_android_latest.html">l'utilisation de KoboCollect</a> sur des appareils mobiles.
+Le scan de codes-barres / codes QR fonctionne uniquement lors de <a href="https://support.kobotoolbox.org/fr/kobocollect_on_android_latest.html">l'utilisation de KoboCollect</a> sur des appareils mobiles.
 </p>
 
-Une large gamme de formats de codes-barres et de codes QR est prise en charge, notamment les suivants :
+Un large éventail de formats de codes-barres et de codes QR est disponible, notamment les suivants :
 
 - UPC-A
 - UPC-E
@@ -26,56 +25,56 @@ Une large gamme de formats de codes-barres et de codes QR est prise en charge, n
 - PDF 417
 - MaxiCode
 
-Les questions « Code-barres/Code QR » peuvent être utilisées dans différents scénarios, notamment la gestion d'actifs ou la distribution d'articles. Par exemple, vous pouvez scanner un code QR sur une carte d'identité de bénéficiaire pour capturer son numéro d'identification. Vous pouvez ensuite utiliser la fonction `pulldata()` pour remplir automatiquement des champs à partir d'un fichier CSV joint à votre projet ou à partir d'un [projet lié](dynamic_data_attachment.md) avec des informations sur le bénéficiaire. Vous pouvez en savoir plus sur la fonction `pulldata()` [ici](https://xlsform.org/en/#how-to-pull-data-from-csv).
+Les questions de type « Code-barres / code QR » peuvent être utilisées dans différents contextes, notamment pour la gestion d'actifs ou la distribution d'articles. Par exemple, vous pouvez scanner un code QR sur la carte d'identité d'un bénéficiaire afin de capturer son numéro d'identification. Vous pouvez ensuite utiliser la fonction `pulldata()` pour renseigner automatiquement des champs à partir d'un fichier CSV joint à votre projet ou d'un [projet lié](dynamic_data_attachment.md) contenant des informations sur le bénéficiaire. Pour en savoir plus sur la fonction `pulldata()`, consultez [cette page](https://xlsform.org/en/#how-to-pull-data-from-csv).
 
-## Comment configurer le type de question « Code-barres/Code QR »
+## Configurer la question de type « Code-barres / code QR »
 
-### Configuration dans l'interface de création de formulaires
+### Configuration dans l'interface de création de formulaires KoboToolbox (KoboToolbox Formbuilder)
 
-Pour ajouter une question « Code-barres/Code QR » :
+Pour ajouter une question de type « Code-barres / code QR » :
 
 - Cliquez sur le bouton <i class="k-icon k-icon-plus"></i> pour ajouter une nouvelle question
-- Saisissez le texte de la question, par exemple « Collectez le code d'identification du bénéficiaire », puis cliquez sur **AJOUTER UNE QUESTION** ou appuyez sur ENTRÉE sur votre clavier
+- Saisissez le texte de la question, par exemple « Collecter le code d'identification du bénéficiaire », puis cliquez sur **AJOUTER UNE QUESTION** ou appuyez sur ENTRÉE sur votre clavier
 - Choisissez le type de question
 
-![Ajout de questions Code-barres/Code QR](images/barcode_qrcode_questions/adding_barcode_qrcode_questions.gif)
+![Ajout de questions Code-barres / code QR](images/barcode_qrcode_questions/adding_barcode_qrcode_questions.gif)
 
 ### Configuration dans XLSForm
 
-Pour ajouter une question « Code-barres/Code QR » dans XLSForm, ajoutez une question de type `barcode` comme suit :
+Pour ajouter une question de type « Code-barres / code QR » dans un XLSForm, ajoutez une question avec le type `barcode` comme suit :
 
-| type    | name           | label                                      |
-| :------ | :------------- | :----------------------------------------- |
-| barcode | beneficiary_id | Capturez le code d'identification du bénéficiaire |
+| type    | name           | label                                          |
+| :------ | :------------- | :--------------------------------------------- |
+| barcode | beneficiary_id | Capture the beneficiary ID code |
 | survey  |
 
-## Comment les questions « Code-barres/Code QR » sont affichées sur les formulaires Web et KoboCollect
+## Affichage des questions « Code-barres / code QR » dans les formulaires web et KoboCollect
 
 ### Apparence par défaut
 
-![Apparence par défaut des questions Code-barres/Code QR](images/barcode_qrcode_questions/barcode_qrcode_default.png)
+![Apparence par défaut des questions Code-barres / code QR](images/barcode_qrcode_questions/barcode_qrcode_default.png)
 
 ### Apparence avancée
 
-Lors de l'ajout du type de question « Code-barres/Code QR », vous pouvez modifier les paramètres d'apparence pour passer de l'utilisation de l'appareil photo par défaut (arrière) de l'appareil à l'utilisation de l'appareil photo avant.
+Lors de l'ajout d'une question de type « Code-barres / code QR », vous pouvez modifier les paramètres d'apparence pour passer de la caméra par défaut (caméra arrière) de l'appareil à la caméra avant.
 
-### Modification de l'apparence avancée dans l'interface de création de formulaires
+### Modifier l'apparence avancée dans le Formbuilder
 
-Accédez aux paramètres de la question « Code-barres/Code QR », et saisissez « front » dans la case « Apparence (Avancé) »
+Accédez aux paramètres de la question « Code-barres / code QR » et saisissez « front » dans le champ « Apparence (avancée) ».
 
-![Modification de l'apparence des questions Code-barres/Code QR](images/barcode_qrcode_questions/change_appearance_barcode_qrcode_questions.png)
+![Modification de l'apparence des questions Code-barres / code QR](images/barcode_qrcode_questions/change_appearance_barcode_qrcode_questions.png)
 
-### Modification de l'apparence avancée dans XLSForm
+### Modifier l'apparence avancée dans XLSForm
 
-Dans XLSForm, vous pouvez définir l'appareil photo par défaut pour capturer le « Code-barres/Code QR » comme étant l'appareil photo avant en saisissant « front » dans la colonne `appearance` comme suit :
+Dans un XLSForm, vous pouvez définir la caméra avant comme caméra par défaut pour la capture des questions « Code-barres / code QR » en saisissant « front » dans la colonne `appearance` comme suit :
 
-| type    | name             | label                                      | appearance |
-| :------ | :--------------- | :----------------------------------------- | :--------- |
-| barcode | beneficiary_id_2 | Capturez le code d'identification du bénéficiaire | front      |
+| type    | name             | label                                          | appearance |
+| :------ | :--------------- | :--------------------------------------------- | :--------- |
+| barcode | beneficiary_id_2 | Capture the beneficiary ID code | front      |
 | survey  |
 
 <p class="note">
-  Vous pouvez télécharger un XLSForm avec des exemples de cet article
+  Vous pouvez télécharger un XLSForm contenant des exemples tirés de cet article
   <a
     download
     class="reference"

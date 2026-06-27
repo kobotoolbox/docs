@@ -1,212 +1,193 @@
-# Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario
+# Agregar archivos multimedia a un XLSForm
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/media.md" class="reference">23 Apr 2026</a>
 
-**Última actualización:**
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/media.md" class="reference">15
-Feb 2022</a>
+<iframe src="https://www.youtube.com/embed/7TrVmKIuCa8?si=QCr1IzvDXaASEZg7&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Además de preguntas de texto y opciones de texto, también puedes agregar varios tipos
-de medios (como _imagen_, _audio_ y _video_) a tus formularios. Tener medios en
-un formulario a veces puede ayudarte a expresar tus preguntas y opciones
-de una manera mucho mejor.
 
-Los medios en un formulario funcionan tanto en la **aplicación de Android de Collect** como en los **formularios web
-(Enketo)**. Estos son los archivos de medios que actualmente son compatibles:
+KoboToolbox te permite agregar archivos multimedia, incluyendo **imágenes**, **archivos de audio** y **videos**, a notas, preguntas y opciones de tu formulario. Agregar archivos multimedia puede aumentar el compromiso de los usuarios y hacer que los formularios sean más accesibles para personas con discapacidades visuales o barreras de alfabetización.
 
-| Medios | Archivos                                                      |
-| :----- | :------------------------------------------------------------ |
-| Imagen | jpeg, png, svg                                                |
-| Audio  | aac, aacp, flac, mp3, mp4, mpeg, ogg, wav, webm, x-m4a, x-wav |
-| Video  | 3gpp, avi, flv, mov, mp4, ogg, quicktime (qtff), webm, wmv    |
+Los archivos multimedia del formulario funcionan tanto con [KoboCollect](../es/data_collection_kobocollect.md) como con [formularios web](../es/data_through_webforms.md). Los siguientes tipos de archivos multimedia son compatibles actualmente:
 
-Este artículo de ayuda tiene como objetivo ilustrar cómo se pueden crear formularios con medios con
-**KoboToolbox**. Sigue las instrucciones descritas a continuación para incluir medios en tu
-proyecto de encuesta.
+| Multimedia | Archivos |
+| :--- | :--- |
+| Imagen | jpeg, png, svg |
+| Audio | aac, aacp, flac, mp3, mp4, mpeg, ogg, wav, webm, x-m4a, x-wav |
+| Video | 3gpp, avi, flv, mov, mp4, ogg, quicktime (qtff), webm, wmv |
 
-## Paso 1: Descargar el Formulario como XLSForm
+Este artículo cubre los siguientes temas:
+- Agregar archivos multimedia a preguntas de la encuesta
+- Agregar archivos multimedia a opciones de respuesta
+- Agregar archivos multimedia a traducciones del formulario
+- Cargar archivos multimedia a KoboToolbox
 
-Crea un proyecto de encuesta en la interfaz de usuario del editor de formularios de KoboToolbox (Formbuilder) y luego descarga tu formulario como XLS
-para agregar configuraciones de medios. El editor de formularios actualmente no admite agregar
-medios al formulario directamente, por lo que necesitarás editar el XLSForm descargado para
-completar esta acción.
+<p class="note">
+    <strong>Nota:</strong> El <a href="../es/formbuilder.md">editor de formularios de KoboToolbox (Formbuilder)</a> no admite actualmente agregar archivos multimedia dentro de tus formularios. Para agregar archivos multimedia, debes usar XLSForm y luego cargarlo en KoboToolbox. Para obtener más información sobre cómo descargar y editar tu formulario como XLSForm, consulta <a href="../es/xlsform_with_kobotoolbox.md">Usar XLSForm con KoboToolbox</a>.
+<br><br>
+Para practicar con la adición de archivos multimedia en XLSForm, consulta el <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">curso XLSForm Fundamentals</a> de la KoboToolbox Academy.
+</p>
 
-<video controls><source src="./_static/files/media/download_xlsform.mp4" type="video/mp4"></video>
+## Agregar archivos multimedia a preguntas en XLSForm
 
-## Paso 2: Agregar Columnas de Medios a tu XLSForm
+Para agregar archivos multimedia a preguntas o notas en tu XLSForm:
+1. Agrega una nueva pregunta en la **hoja survey**, especificando el `type`, `name` y `label` (opcional).
+    - Utiliza un tipo de pregunta `note` si deseas mostrar el archivo multimedia sin recolectar datos (por ejemplo, el logotipo de una organización o un video de introducción).
+    - Agregar una etiqueta es opcional cuando se incluye un archivo multimedia.
+2. Agrega una columna para el tipo de multimedia que deseas incluir. Nómbrala `image`, `video` o `audio`, según el tipo de archivo multimedia.
+3. En la columna de multimedia, en la fila de la pregunta que has agregado, ingresa el nombre exacto del archivo multimedia **incluyendo la extensión**.
+    - Por ejemplo: `logo.png` o `intro.mp4`.
 
-<p class='note'>Los nombres de archivo agregados al XLSForm deben coincidir con los nombres de archivo que
-diste a tus archivos de <em>imagen</em>, <em>audio</em> y
-<em>video</em>.</p>
+**hoja survey**
 
-### Agregar Columnas de Medios de Imagen:
+| type | name | label | image |
+| :--- | :--- | :--- | :--- |
+| text | Q1 | In your own words, how would you describe the image above? | q1.png |
+| survey |
 
-Si deseas agregar una **imagen** a una pregunta, entonces escribe `media::image` como
-encabezado de columna en la pestaña **survey** de tu XLSForm. Escribe el nombre del archivo de imagen
-junto con una extensión en la pregunta correspondiente justo debajo del
-encabezado de columna `media::image`.
+<p class="note">
+    <strong>Nota:</strong> Anteriormente, el formato <code>media::file_type</code> se usaba para los nombres de columnas de multimedia (por ejemplo, <code>media::image</code>, <code>media::video</code>, <code>media::audio</code>). El formato simplificado que usa solo el tipo de multimedia sin el prefijo <code>media::</code> es ahora el más adoptado (por ejemplo, <code>image</code>, <code>video</code>, <code>audio</code>).
+</p>
 
-De manera similar, si deseas agregar una **imagen** a una opción, entonces escribe
-`media::image` como encabezado de columna en la pestaña **choices** de tu XLSForm. Una
-vez más, escribe el nombre del archivo de imagen junto con una extensión en la opción correspondiente
-justo debajo del encabezado de columna `media::image`.
+### Cargar archivos multimedia a KoboToolbox
 
-<video controls><source src="./_static/files/media/adding_media_image.mp4" type="video/mp4"></video>
+Para cargar los archivos multimedia a KoboToolbox:
+1. Ve a tu [cuenta de KoboToolbox](https://www.kobotoolbox.org/sign-up/).
+2. En tu proyecto de KoboToolbox, navega a **CONFIGURACIÓN > Multimedia**.
+3. Carga los archivos multimedia que has agregado a tu XLSForm, asegurándote de que el nombre del archivo sea exactamente el mismo.
+4. Implementa o reimplementa tu formulario para ver los cambios en los archivos multimedia.
 
-### Agregar Columnas de Medios de Audio:
+![Cargar archivos multimedia](images/media/upload_media.png)
 
-Si deseas agregar **audio** a una pregunta, entonces escribe `media::audio` como
-encabezado de columna en la pestaña **survey** de tu XLSForm. Escribe el nombre del archivo de audio junto
-con una extensión en la pregunta correspondiente justo debajo del
-encabezado de columna `media::audio`.
+<p class="note">
+    Para obtener más información sobre cómo cargar archivos multimedia, consulta <a href="../es/upload_media.md">Importar archivos multimedia a un proyecto</a>.
+</p>
 
-De manera similar, si deseas agregar **audio** a una opción, entonces escribe `media::audio` como
-encabezado de columna en la pestaña **choices** de tu XLSForm. Una vez más, escribe el
-nombre del archivo de audio junto con una extensión en la opción correspondiente justo debajo del
-encabezado de columna `media::audio`.
+## Agregar archivos multimedia a opciones de respuesta en XLSForm
 
-<video controls><source src="./_static/files/media/adding_media_audio.mp4" type="video/mp4"></video>
+Para agregar archivos multimedia a opciones de respuesta en tu XLSForm:
+1. Agrega una [pregunta de tipo selección](../es/question_types_xls.md#select-question-types) en la **hoja survey**.
+2. En la **hoja choices**, agrega un `list_name`, `name` y `label` (opcional) para tus opciones.
+    - Agregar una etiqueta es opcional cuando se incluye un archivo multimedia. Si deseas usar los archivos multimedia como etiqueta de las opciones, omite el texto de la etiqueta.
+3. Agrega una columna para el tipo de multimedia que deseas incluir. Nómbrala `image`, `video` o `audio`, según el tipo de archivo multimedia.
+4. En la columna de multimedia, en la fila de las opciones que has agregado, ingresa el nombre del archivo multimedia **incluyendo la extensión**.
+    - Por ejemplo: `goat.png` o `fish.png`
 
-### Agregar Columnas de Medios de Video:
+**hoja survey**
 
-Si deseas agregar video a una pregunta, entonces escribe `media::video` como
-encabezado de columna en la pestaña **survey** de tu XLSForm. Escribe el nombre del archivo de video junto
-con una extensión en la pregunta correspondiente justo debajo del
-encabezado de columna `media::video`.
+| name | type | label |
+| :--- | :--- | :--- |
+| select_one animals | animals | Which of these is your favorite animal? |
+| survey |
 
-De manera similar, si deseas agregar video a una opción, entonces escribe `media::video` como
-encabezado de columna en la pestaña **choices** de tu XLSForm. Una vez más, escribe el
-nombre del archivo de video junto con una extensión en la opción correspondiente justo debajo del
-encabezado de columna `media::video`.
+**hoja choices**
 
-<video controls><source src="./_static/files/media/adding_media_video.mp4" type="video/mp4"></video>
+| list_name | name | label | image |
+| :--- | :--- | :--- | :--- |
+| animals | goats | Goats | goat.png |
+| animals | cows | Cows | cow.png |
+| animals | chicken | Chickens | chicken.png |
+| animals | pigs | Pigs | pig.png |
+| animals | fish | Fish | fish.png |
+| choices |
 
-## Paso 3: Manejar Columnas de Medios para Múltiples Idiomas
+### Cargar archivos multimedia a KoboToolbox
 
-<p class='note'>Este paso es para aquellos/as que tienen múltiples idiomas en su proyecto de
-encuesta.</p>
+Para cargar los archivos multimedia a KoboToolbox:
+1. Ve a tu [cuenta de KoboToolbox](https://www.kobotoolbox.org/sign-up/).
+2. En tu proyecto de KoboToolbox, navega a **CONFIGURACIÓN > Multimedia**.
+3. Carga los archivos multimedia que has agregado a tu XLSForm, asegurándote de que el nombre del archivo sea exactamente el mismo.
+4. Implementa o reimplementa tu formulario para ver los cambios en los archivos multimedia.
 
-Puedes tener una encuesta con múltiples idiomas y querer agregar varios tipos de
-medios relevantes para idiomas específicos. En tales casos, podrías seguir las
-ilustraciones proporcionadas a continuación.
+## Agregar archivos multimedia a traducciones
 
-### Manejar Columna de Medios para Medios de Imagen:
+En los XLSForms que están [traducidos a varios idiomas](../es/language_xls.md), puedes incluir diferentes archivos multimedia para cada idioma agregando nuevas columnas `image`, `audio` o `video`.
 
-Si deseas agregar imagen a una pregunta, entonces escribe `media::image` como
-encabezado de columna en la pestaña **survey** de tu XLSForm. Escribe el nombre del archivo de imagen junto
-con una extensión en la pregunta correspondiente justo debajo del
-encabezado de columna `media::image::Idioma (código de idioma)`.
+Para agregar archivos multimedia para diferentes idiomas en tu **hoja survey**:
 
-De manera similar, si deseas agregar imagen a una opción, entonces escribe
-`media::image::Idioma (código de idioma)` como encabezado de columna en la pestaña **choices**
-de tu XLSForm. Una vez más, escribe el nombre del archivo de imagen junto con una extensión
-en la opción correspondiente justo debajo del
-encabezado de columna `media::image::Idioma (código de idioma)`.
+1. Renombra tus columnas de multimedia usando el formato `tipo_multimedia::idioma (código)`, donde `tipo_multimedia` es el tipo de archivo multimedia e `idioma` es el idioma predeterminado.
+    - Por ejemplo: `image::English (en)`
+2. Agrega una nueva columna de multimedia para cada idioma de traducción usando el formato `tipo_multimedia::idioma (código)`.
+    - Por ejemplo: `audio::Spanish (es)`
+3. En la columna de multimedia para cada idioma, ingresa el nombre del archivo multimedia que deseas incluir, incluyendo la extensión.
+    - Para usar el mismo archivo multimedia para cada idioma, ingresa el mismo nombre de archivo que el de la columna del idioma predeterminado.
 
-<video controls><source src="./_static/files/media/adding_media_image_language.mp4" type="video/mp4"></video>
+<p class="note">
+    <strong>Nota:</strong> Si un archivo multimedia no aparece en una columna de traducción, no se mostrará para ese idioma.
+</p>
 
-### Manejar Columna de Medios para Medios de Audio:
+**hoja survey**
 
-Si deseas agregar audio a una pregunta, entonces escribe
-`media::audio::Idioma (código de idioma)` como encabezado de columna en la pestaña **survey**
-de tu XLSForm. Escribe el nombre del archivo de audio junto con una extensión en la
-pregunta correspondiente justo debajo del
-encabezado de columna `media::audio::Idioma (código de idioma)`.
+| type | name | label | video::English (en) | video::Chichewa (ny) |
+| :--- | :--- | :--- | :--- | :--- |
+| note | intro | Before you answer the form, watch the video below: | intro.mp4 | intro_ny.mp4 |
+| survey |
 
-De manera similar, si deseas agregar audio a una opción, entonces escribe
-`media::audio::Idioma (código de idioma)` como encabezado de columna en la pestaña **choices**
-de tu XLSForm. Una vez más, escribe el nombre del archivo de audio junto con una extensión
-en la opción correspondiente justo debajo del
-encabezado de columna `media::audio::Idioma (código de idioma)`.
+### Cargar archivos multimedia a KoboToolbox
 
-<video controls><source src="./_static/files/media/adding_media_audio_language.mp4" type="video/mp4"></video>
+Para cargar los archivos multimedia traducidos a KoboToolbox:
+1. Ve a tu [cuenta de KoboToolbox](https://www.kobotoolbox.org/sign-up/).
+2. En tu proyecto de KoboToolbox, navega a **CONFIGURACIÓN > Multimedia**.
+3. Carga los archivos multimedia que has agregado a tu XLSForm, asegurándote de que el nombre del archivo sea exactamente el mismo.
+4. Implementa o reimplementa tu formulario para ver los cambios en los archivos multimedia.
 
-### Manejar Columna de Medios para Medios de Video:
+<p class="note">
+    Para obtener más información sobre cómo gestionar traducciones en XLSForm, consulta <a href="../es/language_xls.md">Añadir traducciones en XLSForm</a>.
+</p>
 
-Si deseas agregar video a una pregunta, entonces escribe
-`media::video::Idioma (código de idioma)` como encabezado de columna en la pestaña **survey**
-de tu XLSForm. Escribe el nombre del archivo de video junto con una extensión en la
-pregunta correspondiente justo debajo del
-encabezado de columna `media::video::Idioma (código de idioma)`.
+## Resolución de problemas
 
-De manera similar, si deseas agregar video a una opción, entonces escribe
-`media::video::Idioma (código de idioma)` como encabezado de columna en la pestaña **choices**
-de tu XLSForm. Una vez más, escribe el nombre del archivo de video junto con una extensión
-en la opción correspondiente justo debajo del
-encabezado de columna `media::video::Idioma (código de idioma)`.
+<details>
+<summary><strong>Error al implementar o visualizar el formulario</strong></summary>
+Si encuentras un error al implementar o visualizar tu formulario, verifica lo siguiente:
+    <ul>
+      <li>El archivo multimedia ha sido cargado en KoboToolbox en la pestaña <strong>Multimedia</strong> de la página <strong>CONFIGURACIÓN</strong>.</li>
+      <li>El nombre del archivo en tu XLSForm coincide exactamente con el nombre y la extensión del archivo multimedia.</li>
+    </ul>
+</details>
 
-<video controls><source src="./_static/files/media/adding_media_video_language.mp4" type="video/mp4"></video>
+<br>
 
-## Paso 4: Reemplazar XLSForm
+<details>
+<summary><strong>Los archivos multimedia no aparecen en el formulario implementado</strong></summary>
+Si los archivos multimedia no aparecen en tu formulario implementado, verifica lo siguiente:
+    <ul>
+      <li>El archivo multimedia ha sido cargado en KoboToolbox en la pestaña <strong>Multimedia</strong> de la página <strong>CONFIGURACIÓN</strong>.</li>
+      <li>El nombre del archivo en tu XLSForm coincide exactamente con el nombre y la extensión del archivo multimedia.</li>
+      <li>El formulario ha sido <strong>reimplementado</strong> después de haber cargado los archivos multimedia.</li>
+      <li>Has incluido archivos multimedia para cada traducción del formulario, si corresponde.</li>
+    </ul>
+</details>
 
-Carga y reemplaza tu XLSForm en el proyecto existente o crea un nuevo
-proyecto.
+<br>
 
-<video controls><source src="./_static/files/media/replacing_xlsform.mp4" type="video/mp4"></video>
+<details>
+<summary><strong>Cambiar el tamaño de un archivo multimedia</strong></summary>
+Para controlar el tamaño de las imágenes que se muestran en tus preguntas u opciones, debes cargar archivos multimedia con las dimensiones deseadas. Ten en cuenta que usar archivos muy grandes puede aumentar los tiempos de carga en los formularios web.
+</details>
 
-## Paso 5: Cargar Archivos de Medios
+<br>
 
-Ve a **AJUSTES>Medios**. Carga todos los archivos de medios que han sido referenciados en
-tu formulario.
+<details>
+<summary><strong>El formulario tarda mucho en cargar</strong></summary>
+Los formularios web cargarán lentamente si tus archivos multimedia son grandes. Reduce el tamaño de los archivos de imagen, video o audio antes de cargarlos al servidor para mejorar los tiempos de carga.
+</details>
 
-<video controls><source src="./_static/files/media/uploading_media.mp4" type="video/mp4"></video>
+<br>
 
-<p class='note'><strong>Consejo:</strong> Reúne todos los archivos de medios que incluirás en tu proyecto de
-encuesta. Proporciona un nombre de archivo corto para cada uno de los medios. Los nombres de archivo
-con un espacio (por ejemplo, "libro rojo") no son compatibles con el sistema. Por lo tanto,
-necesitarás eliminar el espacio entre los nombres (por ejemplo,
-"librorojo") o usar '_' para un espacio (por ejemplo, "libro_rojo").</p>
+<details>
+<summary><strong>Cambiar la alineación de los archivos multimedia</strong></summary>
+Los archivos multimedia en los formularios de KoboToolbox están centrados de forma predeterminada, y no es posible personalizar la alineación (izquierda o derecha).
+</details>
 
-## Paso 6: Desplegar Formulario
+<br>
 
-Una vez que hayas reemplazado el XLSForm y luego cargado todos los archivos de medios,
-necesitarás desplegar tu encuesta.
+<details>
+<summary><strong>Los archivos GIF animados no son compatibles</strong></summary>
+Los archivos GIF animados no son compatibles actualmente ni con los formularios web ni con la aplicación Android KoboCollect.
+</details>
 
-<video controls><source src="./_static/files/media/deploying_form.mp4" type="video/mp4"></video>
+<br>
 
-<p class='note'>Cada vez que se agregan o cambian nuevos archivos de medios, necesitas
-<strong>redesplegar</strong> tu proyecto para que el cambio surta efecto.
-Puedes ver tus nuevos medios al previsualizar tu formulario
-<em>antes</em> del redespliegue.</p>
-
-## Paso 7: Recolectar Datos
-
-Ahora puedes volver a **Formulario>Recolectar Datos**, y luego hacer clic en **Abrir** para verificar
-si los medios se muestran correctamente.
-
-<video controls><source src="./_static/files/media/collecting_data.mp4" type="video/mp4"></video>
-
-<p class='note'>Los archivos GIF animados actualmente no son compatibles con Enketo o
-la aplicación de Android de Collect. Alinear medios a una ubicación deseada del formulario (alineación izquierda,
-alineación central o alineación derecha) tampoco es
-posible.</p>
-
-## Consejos y Trucos
-
-### Identificar el nombre de archivo, extensión y tamaño de un archivo de medios en Windows
-
--   Selecciona un archivo de medios (imagen, audio o video).
--   Haz clic derecho con tu mouse cuando el archivo de medios aún esté seleccionado.
-
-![Dropdown select properties](images/media/dropdown_select_properties.png)
-
--   Luego selecciona **Propiedades**.
--   Ahora deberías poder ver el *nombre de archivo* y la *extensión* del archivo de
-    medios en la pestaña **General**.
-
-![Image properties](images/media/image_properties.png)
-
--   También deberías poder identificar las dimensiones y el tamaño de los medios en la
-    pestaña **Detalles**. Si deseas tener imágenes pequeñas en tu pregunta u
-    opciones, necesitarás cargar medios con una dimensión más pequeña, o
-    viceversa.
-
-<p class='note'>Los medios en un formulario Enketo tomarán más tiempo en cargar si
-tienes archivos grandes. Intenta reducir los tamaños de los archivos de imagen, video o audio
-antes de cargarlos al servidor.</p>
-
-![Image details](images/media/image_details.png)
-
-<p class='note'>Puedes acceder al XLSForm <a download class='reference'
-href='./_static/files/media/xlsform-example.xls'>aquí</a> y a los archivos de medios <a
-download class='reference'
-href='./_static/files/media/xlsform-example-media.zip'>aquí</a> que fueron utilizados
-en este artículo.</p>
+<details>
+<summary><strong>No se puede cargar el archivo multimedia</strong></summary>
+El tamaño máximo para la carga de archivos multimedia es de 100 MB. Los archivos que superen este límite deben reducirse en tamaño antes de cargarlos.
+</details>
