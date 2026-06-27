@@ -1,0 +1,1041 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Topics &#8212; Documentation KoboToolbox </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=d9a2d029" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=e77fa1ad" />
+    <script src="_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Introduction à KoboToolbox" href="welcome.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=#>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://support.kobotoolbox.org/quick_start.html">Get started</a></li>
+      <li><a href="https://academy.kobotoolbox.org">Academy</a></li>
+      <li><a href="https://community.kobotoolbox.org">Community Forum</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search main-search--big" role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our Community Forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page  " id="index">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="topics">
+<h1>Topics<a class="headerlink" href="#topics" title="Lien vers cette rubrique">¶</a></h1>
+<p>Explorez des conseils pratiques sur les sujets et fonctionnalités de KoboToolbox</p>
+<a class="toc-card" href="getting-started.html"><div class="toctree-wrapper compound" id="home-page-toc-getting-started">
+<p class="caption" role="heading"><span class="caption-text">Premiers Pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Introduction à KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#creer-des-formulaires">Créer des formulaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#utiliser-la-bibliotheque-de-questions">Utiliser la bibliothèque de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#collecter-des-donnees">Collecter des données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#gerer-et-telecharger-les-donnees">Gérer et télécharger les données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#visualiser-et-analyser-les-donnees">Visualiser et analyser les données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#gerer-des-projets-et-des-equipes">Gérer des projets et des équipes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="welcome.html#connecter-kobotoolbox-a-d-autres-plateformes">Connecter KoboToolbox à d’autres plateformes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#comment-acceder-a-kobotoolbox">Comment accéder à KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#creer-un-compte">Créer un compte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#se-reconnecter-a-kobotoolbox">Se reconnecter à KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guide de démarrage rapide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#creer-un-compte-et-se-connecter">Créer un compte et se connecter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#creer-votre-premier-projet">Créer votre premier projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#creer-un-formulaire-avec-le-formbuilder">Créer un formulaire avec le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="quick_start.html#deployer-votre-formulaire-pour-la-collecte-de-donnees">Déployer votre formulaire pour la collecte de données</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire des termes KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#compte">Compte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#suivi-d-acces-au-compte">Suivi d’accès au compte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#interface-de-programmation-d-application-api">Interface de programmation d’application (API)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#apparence">Apparence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#projets-archives">Projets archivés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#audit">Audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#authentification">Authentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#enregistrement-audio-d-arriere-plan">Enregistrement audio d’arrière-plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#cycle-de-facturation">Cycle de facturation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#formulaires-vierges-kobocollect">Formulaires vierges (KoboCollect)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#calcul">Calcul</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#selection-en-cascade">Sélection en cascade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#filtre-de-choix">Filtre de choix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#nom-du-champ">Nom du champ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#rapports-de-donnees">Rapports de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#langue-par-defaut">Langue par défaut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#valeur-par-defaut">Valeur par défaut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#deployer">Déployer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#projets-deployes">Projets déployés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#brouillons">Brouillons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#projets-en-brouillon">Projets en brouillon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#liaison-dynamique-de-projets">Liaison dynamique de projets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#chiffrement">Chiffrement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#enqueteur">Enquêteur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#le-serveur-kobotoolbox-union-europeenne">Le serveur KoboToolbox Union européenne</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#logique-de-formulaire">Logique de formulaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#formbuilder">Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#fonctions">Fonctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#reglement-general-sur-la-protection-des-donnees-rgpd">Règlement général sur la protection des données (RGPD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#le-serveur-kobotoolbox-mondial">Le serveur KoboToolbox mondial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#instructions-supplementaires-guidance-hint">Instructions supplémentaires (guidance hint)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#balises-hxl-langage-d-echange-humanitaire">Balises HXL (langage d’échange humanitaire)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#kobo">Kobo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#kobocollect">KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#kobotoolbox">KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#libelle">Libellé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#bibliotheque">Bibliothèque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#verrouillage-de-formulaires">Verrouillage de formulaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#metadonnees">Métadonnées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#proprietaire">Propriétaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#projet-kobocollect">Projet (KoboCollect)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#projet-kobotoolbox">Projet (KoboToolbox)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#droits-d-acces-au-niveau-du-projet">Droits d’accès au niveau du projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#suivi-de-l-historique-du-projet">Suivi de l’historique du projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#page-d-accueil-projets">Page d’accueil Projets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#collections-publiques">Collections publiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#extraction-de-donnees">Extraction de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#groupe-de-questions">Groupe de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#referencement-de-questions">Référencement de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#type-de-question">Type de question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#redeployer">Redéployer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#indice-de-question-de-base-hint">Indice de question de base (hint)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#groupe-repete">Groupe répété</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#services-web-rest">Services web REST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#formulaires-enregistres-kobocollect">Formulaires enregistrés (KoboCollect)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#logique-de-saut">Logique de saut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#soumission">Soumission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#exports-synchronises">Exports synchronisés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#champs-de-soumission-generes-par-le-systeme">Champs de soumission générés par le système</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#droits-d-acces-au-niveau-de-l-utilisateur">Droits d’accès au niveau de l’utilisateur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#criteres-de-validation">Critères de validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#formulaires-web">Formulaires web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#xlsform">XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#formulaire-xml">Formulaire XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#valeur-xml">Valeur XML</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a><a class="toc-card" href="account-billing.html"><div class="toctree-wrapper compound" id="home-page-toc-account-billing">
+<p class="caption" role="heading"><span class="caption-text">Compte et Facturation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#comment-acceder-a-kobotoolbox">Comment accéder à KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#creer-un-compte">Créer un compte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#se-reconnecter-a-kobotoolbox">Se reconnecter à KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_account.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Problèmes liés au lien d’activation du compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Réinitialiser votre mot de passe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Paramètres du compte</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="account_settings.html#profil">Profil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account_settings.html#securite">Sécurité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account_settings.html#utilisation">Utilisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account_settings.html#plans">Plans</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account_settings.html#modules-supplementaires">Modules supplémentaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="account_settings.html#langue">Langue</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configuration de l’authentification à deux facteurs dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#configurer-la-2fa-dans-kobotoolbox">Configurer la 2FA dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#desactiver-la-2fa">Désactiver la 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#reconfigurer-la-2fa">Reconfigurer la 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#utiliser-kobocollect-avec-la-2fa">Utiliser KoboCollect avec la 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="two_factor_authentication.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a><a class="toc-card" href="using-formbuilder.html"><div class="toctree-wrapper compound" id="home-page-toc-using-formbuilder">
+<p class="caption" role="heading"><span class="caption-text">Utilisation du Formbuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Découvrir l’interface de création de formulaires</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#ajouter-une-question">Ajouter une question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#ajouter-un-indice-de-question">Ajouter un indice de question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#dupliquer-une-question">Dupliquer une question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#supprimer-une-question">Supprimer une question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#modifier-les-parametres-d-une-question">Modifier les paramètres d’une question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#ajouter-des-questions-a-la-bibliotheque">Ajouter des questions à la bibliothèque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#regrouper-vos-questions">Regrouper vos questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#modifier-l-ordre-de-vos-questions">Modifier l’ordre de vos questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#previsualiser-votre-formulaire">Prévisualiser votre formulaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="formbuilder.html#sauvegarder-votre-formulaire">Sauvegarder votre formulaire</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Ajouter des questions avec le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="question_types.html#ajouter-une-question">Ajouter une question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_types.html#ajouter-des-choix-de-reponse">Ajouter des choix de réponse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_types.html#types-de-questions-dans-le-formbuilder">Types de questions dans le Formbuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Questions de type texte dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="text_questions.html#ajouter-une-question-de-type-texte-dans-le-formbuilder">Ajouter une question de type texte dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_questions.html#apparences-des-questions-de-type-texte">Apparences des questions de type texte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="text_questions.html#bonnes-pratiques-pour-l-utilisation-des-questions-de-type-texte">Bonnes pratiques pour l’utilisation des questions de type texte</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Questions à choix multiple dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#types-de-questions-a-choix-multiple">Types de questions à choix multiple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#ajouter-une-question-a-choix-multiple-dans-le-formbuilder">Ajouter une question à choix multiple dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#apparences-des-questions-a-choix-multiple">Apparences des questions à choix multiple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_one_and_select_many.html#bonnes-pratiques-pour-l-utilisation-des-questions-a-choix-multiple">Bonnes pratiques pour l’utilisation des questions à choix multiple</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Question de type Consentement</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="acknowledge.html#configurer-la-question">Configurer la question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acknowledge.html#affichage-dans-les-formulaires-web-et-kobocollect">Affichage dans les formulaires web et KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="acknowledge.html#utiliser-la-logique-de-saut-et-les-criteres-de-validation">Utiliser la logique de saut et les critères de validation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Questions numériques dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#types-de-questions-numeriques">Types de questions numériques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#ajouter-une-question-numerique-dans-le-formbuilder">Ajouter une question numérique dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#apparences-des-questions-numeriques">Apparences des questions numériques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="number_decimal_range.html#limites-des-questions-numeriques">Limites des questions numériques</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Questions de type date et heure dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="date_time.html#types-de-questions-de-date-et-heure">Types de questions de date et heure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="date_time.html#ajouter-des-questions-de-date-et-heure-dans-le-formbuilder">Ajouter des questions de date et heure dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="date_time.html#apparences-des-questions-de-date-et-heure">Apparences des questions de date et heure</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Questions multimédias dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#types-de-questions-multimedias">Types de questions multimédias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#ajout-de-questions-multimedias-dans-le-formbuilder">Ajout de questions multimédias dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#apparences-des-questions-multimedias">Apparences des questions multimédias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#parametres-des-questions-multimedias">Paramètres des questions multimédias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="photo_audio_video_file.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Questions GPS dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gps_questions.html#types-de-questions-gps">Types de questions GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gps_questions.html#ajouter-une-question-gps-dans-le-formbuilder">Ajouter une question GPS dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gps_questions.html#apparences-des-questions-gps">Apparences des questions GPS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Questions de type note dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="note_questions.html#ajouter-une-question-de-type-note-dans-le-formbuilder">Ajouter une question de type note dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="note_questions.html#apparences-des-questions-de-type-note">Apparences des questions de type note</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Options de questions dans le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#acceder-aux-options-de-questions-dans-le-formbuilder">Accéder aux options de questions dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#options-disponibles-dans-le-formbuilder">Options disponibles dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#nom-du-champ">Nom du champ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#indice-de-question">Indice de question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#instructions-supplementaires">Instructions supplémentaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#reponse-obligatoire">Réponse obligatoire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#reponse-par-defaut">Réponse par défaut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#apparence-avancee">Apparence (avancée)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options.html#hxl">HXL</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groupes et groupes répétés dans le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="group_repeat.html#creer-et-gerer-des-groupes-de-questions">Créer et gérer des groupes de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="group_repeat.html#parametres-d-un-groupe-de-questions">Paramètres d’un groupe de questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Ajouter une matrice de questions avec le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="matrix_response.html#ajouter-un-tableau-de-questions-dans-le-formbuilder">Ajouter un tableau de questions dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matrix_response.html#collecter-des-donnees-a-partir-d-un-tableau-de-questions">Collecter des données à partir d’un tableau de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="matrix_response.html#tableaux-de-questions-avances">Tableaux de questions avancés</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Ajouter des traductions dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="language_dashboard.html#definir-la-langue-par-defaut">Définir la langue par défaut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language_dashboard.html#ajouter-des-langues-et-des-traductions">Ajouter des langues et des traductions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language_dashboard.html#modifier-la-langue-par-defaut">Modifier la langue par défaut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language_dashboard.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styliser vos formulaires web dans le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="alternative_enketo.html#ajouter-un-theme-de-formulaire-web-dans-le-formbuilder">Ajouter un thème de formulaire web dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="alternative_enketo.html#configurer-les-largeurs-de-questions-pour-le-theme-grille">Configurer les largeurs de questions pour le thème Grille</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Ajouter des métadonnées dans le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="form_meta.html#ajouter-des-questions-de-metadonnees-dans-le-formbuilder">Ajouter des questions de métadonnées dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_meta.html#la-question-de-metadonnees-audit">La question de métadonnées audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_meta.html#activer-l-enregistrement-audio-en-arriere-plan">Activer l’enregistrement audio en arrière-plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_meta.html#configurer-les-metadonnees-dans-kobocollect">Configurer les métadonnées dans KoboCollect</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction à la logique de formulaire dans le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="form_logic.html#la-logique-de-formulaire-dans-le-formbuilder-kobotoolbox">La logique de formulaire dans le Formbuilder KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic.html#referencement-de-questions">Référencement de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic.html#stocker-des-constantes-dans-votre-formulaire">Stocker des constantes dans votre formulaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic.html#operateurs-mathematiques-et-de-comparaison">Opérateurs mathématiques et de comparaison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic.html#combiner-des-conditions-a-l-aide-d-operateurs-logiques">Combiner des conditions à l’aide d’opérateurs logiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic.html#fonctions">Fonctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic.html#regex">Regex</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Ajouter une logique de saut dans le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="skip_logic.html#ajouter-une-condition">Ajouter une condition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skip_logic.html#saisir-manuellement-la-logique-de-saut-en-code-xlsform">Saisir manuellement la logique de saut en code XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Ajouter des critères de validation dans le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="validation_criteria.html#ajouter-une-condition">Ajouter une condition</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation_criteria.html#saisir-manuellement-la-logique-de-validation-en-code-xlsform">Saisir manuellement la logique de validation en code XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="validation_criteria.html#message-d-erreur">Message d’erreur</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Ajouter des calculs avec le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="calculate_questions.html#id1">Ajouter des calculs avec le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculate_questions.html#calculs-arithmetiques">Calculs arithmétiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculate_questions.html#calculs-avances">Calculs avancés</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Ajouter des questions à sélection en cascade dans le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cascading_select.html#preparer-un-tableau-de-choix-en-cascade">Préparer un tableau de choix en cascade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cascading_select.html#importer-le-tableau-dans-le-formbuilder">Importer le tableau dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cascading_select.html#gestion-avancee-de-la-selection-en-cascade-avec-xlsform">Gestion avancée de la sélection en cascade avec XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cascading_select.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Sélectionner des options à partir de fichiers externes dans le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="external_file.html#formater-les-listes-de-choix-externes">Formater les listes de choix externes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external_file.html#importer-le-fichier-externe-dans-kobotoolbox">Importer le fichier externe dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="external_file.html#configurer-la-question-dans-le-formbuilder">Configurer la question dans le Formbuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Liaison dynamique de projets avec le Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html#lier-dynamiquement-des-projets-dans-le-formbuilder">Lier dynamiquement des projets dans le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html#syntaxe-de-calcul-pour-les-liaisons-dynamiques-de-projets">Syntaxe de calcul pour les liaisons dynamiques de projets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html#configurer-des-projets-pour-la-liaison-dynamique">Configurer des projets pour la liaison dynamique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html#lier-dynamiquement-un-formulaire-a-lui-meme">Lier dynamiquement un formulaire à lui-même</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html#collecter-et-gerer-des-donnees-avec-la-liaison-dynamique">Collecter et gérer des données avec la liaison dynamique</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Utiliser la bibliothèque de questions de KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="question_library.html#ajouter-des-questions-a-la-bibliotheque-de-questions">Ajouter des questions à la bibliothèque de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_library.html#ajouter-des-questions-a-un-formulaire-depuis-la-bibliotheque-de-questions">Ajouter des questions à un formulaire depuis la bibliothèque de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_library.html#ajouter-des-modeles-a-votre-bibliotheque-de-questions">Ajouter des modèles à votre bibliothèque de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_library.html#utiliser-des-collections-dans-la-bibliotheque-de-questions">Utiliser des collections dans la bibliothèque de questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Collections publiques dans la bibliothèque KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="using_public_collections.html#acceder-aux-collections-publiques">Accéder aux collections publiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_public_collections.html#creer-une-collection-publique">Créer une collection publique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_public_collections.html#utiliser-les-collections-publiques">Utiliser les collections publiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="using_public_collections.html#recherche-avancee-dans-les-collections-publiques">Recherche avancée dans les collections publiques</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a><a class="toc-card" href="using-xlsform.html"><div class="toctree-wrapper compound" id="home-page-toc-using-xlsform">
+<p class="caption" role="heading"><span class="caption-text">Utilisation de XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introduction à XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="edit_forms_excel.html#avantages-de-l-utilisation-de-xlsform">Avantages de l’utilisation de XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit_forms_excel.html#utiliser-xlsform-avec-kobotoolbox">Utiliser XLSForm avec KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="edit_forms_excel.html#ressources-supplementaires-sur-xlsform">Ressources supplémentaires sur XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Créer un XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#configurer-un-xlsform">Configurer un XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#ajouter-des-questions">Ajouter des questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#ajouter-des-choix-de-reponse">Ajouter des choix de réponse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#ajouter-des-parametres">Ajouter des paramètres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#ajouter-des-colonnes-optionnelles-a-l-onglet-survey">Ajouter des colonnes optionnelles à l’onglet survey</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_xlsform.html#importer-et-previsualiser-votre-xlsform-dans-kobotoolbox">Importer et prévisualiser votre XLSForm dans KoboToolbox</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Utiliser XLSForm avec KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="xlsform_with_kobotoolbox.html#telecharger-un-xlsform-depuis-kobotoolbox">Télécharger un XLSForm depuis KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xlsform_with_kobotoolbox.html#importer-un-xlsform-dans-kobotoolbox">Importer un XLSForm dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xlsform_with_kobotoolbox.html#remplacer-un-formulaire-par-un-xlsform">Remplacer un formulaire par un XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xlsform_with_kobotoolbox.html#importer-un-xlsform-via-une-url">Importer un XLSForm via une URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xlsform_with_kobotoolbox.html#tester-et-valider-votre-xlsform">Tester et valider votre XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="xlsform_with_kobotoolbox.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Types de questions dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="question_types_xls.html#questions-a-choix-multiple">Questions à choix multiple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_types_xls.html#questions-numeriques">Questions numériques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_types_xls.html#questions-de-type-texte-et-note">Questions de type texte et note</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_types_xls.html#questions-de-type-media">Questions de type média</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_types_xls.html#questions-de-type-gps">Questions de type GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_types_xls.html#questions-de-type-date-et-heure">Questions de type date et heure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_types_xls.html#questions-de-type-calcul-et-cache">Questions de type calcul et caché</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Gérer les choix de réponse dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="option_choices_xls.html#definir-les-choix-de-reponse-dans-xlsform">Définir les choix de réponse dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="option_choices_xls.html#bonnes-pratiques-pour-nommer-les-choix-de-reponse">Bonnes pratiques pour nommer les choix de réponse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="option_choices_xls.html#gerer-les-listes-de-choix-dans-xlsform">Gérer les listes de choix dans XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Groupes de questions dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="grouping_questions_xls.html#creer-un-groupe-de-questions">Créer un groupe de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grouping_questions_xls.html#parametres-d-apparence-pour-les-groupes-de-questions">Paramètres d’apparence pour les groupes de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="grouping_questions_xls.html#appliquer-une-logique-de-saut-aux-groupes-de-questions">Appliquer une logique de saut aux groupes de questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Groupes répétés dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="repeat_groups_xls.html#creer-un-groupe-repete">Créer un groupe répété</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repeat_groups_xls.html#definir-un-nombre-de-repetitions">Définir un nombre de répétitions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repeat_groups_xls.html#compter-le-nombre-de-repetitions-a-l-interieur-d-un-groupe-repete">Compter le nombre de répétitions à l’intérieur d’un groupe répété</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repeat_groups_xls.html#compter-le-nombre-total-de-repetitions-d-un-groupe-repete">Compter le nombre total de répétitions d’un groupe répété</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repeat_groups_xls.html#extraire-des-valeurs-depuis-des-groupes-repetes">Extraire des valeurs depuis des groupes répétés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="repeat_groups_xls.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Options de questions dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="question_options_xls.html#indices-de-questions">Indices de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options_xls.html#questions-obligatoires">Questions obligatoires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options_xls.html#reponses-par-defaut">Réponses par défaut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options_xls.html#parametres-de-questions">Paramètres de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="question_options_xls.html#options-de-questions-supplementaires">Options de questions supplémentaires</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apparences de questions dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="appearances_xls.html#ajouter-des-apparences-de-questions">Ajouter des apparences de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="appearances_xls.html#apparences-de-questions-disponibles-dans-xlsform">Apparences de questions disponibles dans XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Ajouter des traductions dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="language_xls.html#codes-de-langue-dans-xlsform">Codes de langue dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language_xls.html#definir-la-langue-par-defaut-du-formulaire">Définir la langue par défaut du formulaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language_xls.html#ajouter-des-traductions">Ajouter des traductions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language_xls.html#recommandations-pour-les-traductions">Recommandations pour les traductions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="language_xls.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Ajouter des médias à un XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="media.html#ajouter-des-medias-aux-questions-dans-xlsform">Ajouter des médias aux questions dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#ajouter-des-medias-aux-choix-de-reponse-dans-xlsform">Ajouter des médias aux choix de réponse dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#ajouter-des-medias-aux-traductions">Ajouter des médias aux traductions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="media.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introduction à la logique de formulaire dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="form_logic_xls.html#referencement-de-questions">Référencement de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic_xls.html#operateurs-mathematiques-et-de-comparaison">Opérateurs mathématiques et de comparaison</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic_xls.html#combiner-des-conditions-a-l-aide-d-operateurs-logiques">Combiner des conditions à l’aide d’opérateurs logiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic_xls.html#fonctions">Fonctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_logic_xls.html#regex">Regex</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Utiliser des fonctions avec XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="functions_xls.html#fonctions-couramment-utilisees-dans-xlsform">Fonctions couramment utilisées dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_xls.html#fonctions-pour-manipuler-les-nombres">Fonctions pour manipuler les nombres</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_xls.html#fonctions-pour-manipuler-les-chaines-de-caracteres">Fonctions pour manipuler les chaînes de caractères</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_xls.html#fonctions-pour-manipuler-les-dates-et-les-heures">Fonctions pour manipuler les dates et les heures</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_xls.html#fonctions-pour-manipuler-les-donnees-gps">Fonctions pour manipuler les données GPS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Utiliser des expressions régulières avec XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#composants-courants-des-expressions-regulieres">Composants courants des expressions régulières</a></li>
+<li class="toctree-l2"><a class="reference internal" href="restrict_responses.html#exemples-courants">Exemples courants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Ajouter une logique de saut dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="skip_logic_xls.html#ajouter-des-conditions-de-logique-de-saut-a-des-questions-individuelles">Ajouter des conditions de logique de saut à des questions individuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skip_logic_xls.html#combiner-plusieurs-conditions-de-logique-de-saut">Combiner plusieurs conditions de logique de saut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skip_logic_xls.html#ajouter-une-logique-de-saut-selon-qu-une-question-a-recu-une-reponse-ou-non">Ajouter une logique de saut selon qu’une question a reçu une réponse ou non</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skip_logic_xls.html#ajouter-des-conditions-de-logique-de-saut-a-des-groupes-de-questions">Ajouter des conditions de logique de saut à des groupes de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="skip_logic_xls.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Ajouter des contraintes dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="constraints_xls.html#ajouter-une-contrainte">Ajouter une contrainte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constraints_xls.html#combiner-plusieurs-conditions-de-contrainte">Combiner plusieurs conditions de contrainte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constraints_xls.html#personnaliser-les-messages-d-erreur-de-contrainte">Personnaliser les messages d’erreur de contrainte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="constraints_xls.html#contraintes-avancees-dans-xlsform">Contraintes avancées dans XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Ajouter une logique d’obligation conditionnelle dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="required_logic_xls.html#ajouter-des-conditions-de-logique-d-obligation-conditionnelle">Ajouter des conditions de logique d’obligation conditionnelle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="required_logic_xls.html#ajouter-une-logique-d-obligation-conditionnelle-selon-qu-une-question-a-recu-une-reponse-ou-non">Ajouter une logique d’obligation conditionnelle selon qu’une question a reçu une réponse ou non</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Ajouter des filtres de choix dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="choice_filters_xls.html#ajouter-des-filtres-de-choix-statiques">Ajouter des filtres de choix statiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="choice_filters_xls.html#ajouter-des-filtres-de-choix-dynamiques">Ajouter des filtres de choix dynamiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="choice_filters_xls.html#filtres-de-choix-avances-dans-xlsform">Filtres de choix avancés dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="choice_filters_xls.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Ajouter des calculs dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="calculations_xls.html#id1">Ajouter des calculs dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculations_xls.html#calculs-arithmetiques">Calculs arithmétiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculations_xls.html#calculs-avances">Calculs avancés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculations_xls.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Paramètres de formulaires dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="form_settings_xls.html#ajouter-des-parametres-de-formulaires-dans-xlsform">Ajouter des paramètres de formulaires dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_settings_xls.html#parametres-de-formulaires-disponibles-dans-xlsform">Paramètres de formulaires disponibles dans XLSForm</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personnaliser vos formulaires à l’aide de XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="form_style_xls.html#themes-pour-les-formulaires-web">Thèmes pour les formulaires web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="form_style_xls.html#mise-en-forme-du-texte">Mise en forme du texte</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Métadonnées de formulaires dans XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="metadata_xls.html#ajouter-des-questions-de-metadonnees-dans-xlsform">Ajouter des questions de métadonnées dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata_xls.html#questions-de-metadonnees-disponibles-dans-xlsform">Questions de métadonnées disponibles dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata_xls.html#configurer-les-metadonnees-dans-kobocollect">Configurer les métadonnées dans KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="metadata_xls.html#configurer-la-qualite-audio-des-enregistrements-audio-en-arriere-plan">Configurer la qualité audio des enregistrements audio en arrière-plan</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraire des données d’un fichier CSV externe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pull_data_kobotoolbox.html#configurer-votre-fichier-csv-externe">Configurer votre fichier CSV externe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pull_data_kobotoolbox.html#configurer-votre-xlsform">Configurer votre XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pull_data_kobotoolbox.html#importer-votre-fichier-csv-externe-dans-kobotoolbox">Importer votre fichier CSV externe dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pull_data_kobotoolbox.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Sélectionner des options à partir d’un fichier externe avec XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="select_from_file_xls.html#mettre-en-forme-les-listes-de-choix-externes">Mettre en forme les listes de choix externes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_from_file_xls.html#configurer-votre-xlsform">Configurer votre XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_from_file_xls.html#importer-le-fichier-externe-dans-kobotoolbox">Importer le fichier externe dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_from_file_xls.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Sélectionner des options à partir d’une carte</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="select_from_map_xls.html#configurer-votre-xlsform">Configurer votre XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_from_map_xls.html#ajouter-des-proprietes-de-choix">Ajouter des propriétés de choix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_from_map_xls.html#selection-sur-carte-dans-kobocollect">Sélection sur carte dans KoboCollect</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Sélectionner des options à partir d’une image</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="select_from_image.html#creer-votre-image-selectionnable">Créer votre image sélectionnable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_from_image.html#configurer-votre-xlsform">Configurer votre XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="select_from_image.html#importer-le-fichier-svg-dans-kobotoolbox">Importer le fichier SVG dans KoboToolbox</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Liaison dynamique de projets avec XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#lier-dynamiquement-des-projets-dans-xlsform">Lier dynamiquement des projets dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#syntaxe-de-calcul-pour-la-liaison-dynamique-de-projets">Syntaxe de calcul pour la liaison dynamique de projets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#configurer-des-projets-pour-la-liaison-dynamique">Configurer des projets pour la liaison dynamique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#lier-dynamiquement-un-formulaire-a-lui-meme">Lier dynamiquement un formulaire à lui-même</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#collecter-et-gerer-des-donnees-avec-la-liaison-dynamique">Collecter et gérer des données avec la liaison dynamique</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dynamic_data_attachment.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Verrouillage de questionnaire avec XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#introduction-au-verrouillage-de-questionnaire">Introduction au verrouillage de questionnaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#types-de-restrictions">Types de restrictions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#configurer-le-verrouillage-de-questionnaire-dans-xlsform">Configurer le verrouillage de questionnaire dans XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#utiliser-des-modeles-verrouilles-dans-kobotoolbox">Utiliser des modèles verrouillés dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="library_locking.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importer une collection avec XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="import_collection.html#configurer-votre-xlsform">Configurer votre XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="import_collection.html#importer-votre-xlsform">Importer votre XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="import_collection.html#considerations-supplementaires">Considérations supplémentaires</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a><a class="toc-card" href="collecting-data.html"><div class="toctree-wrapper compound" id="home-page-toc-collecting-data">
+<p class="caption" role="heading"><span class="caption-text">Collecte de Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Collecter des données avec KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data-collection-tools.html#methodes-de-collecte-de-donnees">Méthodes de collecte de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data-collection-tools.html#se-preparer-pour-la-collecte-de-donnees">Se préparer pour la collecte de données</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Déployer vos formulaires pour la collecte de données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#deployer-un-formulaire-pour-la-collecte-de-donnees">Déployer un formulaire pour la collecte de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#mettre-a-jour-les-formulaires-apres-que-les-modifications-ont-ete-redeployees">Mettre à jour les formulaires après que les modifications ont été redéployées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#bonnes-pratiques-pour-deployer-et-redeployer-des-formulaires">Bonnes pratiques pour déployer et redéployer des formulaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="deploy_form_new_project.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecte de données via des formulaires web</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#partager-des-formulaires-web-pour-la-collecte-de-donnees">Partager des formulaires web pour la collecte de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#collecter-des-donnees-avec-des-formulaires-web">Collecter des données avec des formulaires web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#personnaliser-les-liens-de-formulaires-web">Personnaliser les liens de formulaires web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_through_webforms.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configurer l’application KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_on_android_latest.html#choisir-un-appareil-pour-kobocollect">Choisir un appareil pour KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_on_android_latest.html#installation-de-l-application-kobocollect">Installation de l’application KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_on_android_latest.html#configuration-de-l-application-kobocollect">Configuration de l’application KoboCollect</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecte de données avec KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#telecharger-des-formulaires">Télécharger des formulaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#recuperer-les-mises-a-jour-des-formulaires">Récupérer les mises à jour des formulaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#collecter-des-donnees">Collecter des données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#modifier-des-brouillons">Modifier des brouillons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#envoyer-les-formulaires-finalises-au-serveur">Envoyer les formulaires finalisés au serveur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#supprimer-des-formulaires-enregistres-et-des-formulaires-vierges">Supprimer des formulaires enregistrés et des formulaires vierges</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_collection_kobocollect.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personnaliser les paramètres KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#parametres-d-affichage-du-projet">Paramètres d’affichage du projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#parametres-de-l-interface-utilisateur">Paramètres de l’interface utilisateur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#parametres-de-carte">Paramètres de carte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#parametres-de-gestion-des-formulaires">Paramètres de gestion des formulaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#parametres-d-identite-de-l-utilisateur-et-de-l-appareil">Paramètres d’identité de l’utilisateur et de l’appareil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#definir-un-mot-de-passe-administrateur">Définir un mot de passe administrateur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#gestion-du-projet">Gestion du projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobocollect_settings.html#controle-d-acces">Contrôle d’accès</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecter des données GPS avec KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#configurer-votre-formulaire-pour-collecter-des-donnees-gps">Configurer votre formulaire pour collecter des données GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#collecter-des-donnees-gps">Collecter des données GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#ameliorer-la-precision-gps">Améliorer la précision GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#logique-de-formulaire-avancee-avec-les-donnees-gps">Logique de formulaire avancée avec les données GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#gerer-les-donnees-gps">Gérer les données GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collect_gps.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecter des données qualitatives avec KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#types-de-questions-pour-la-collecte-de-donnees-qualitatives">Types de questions pour la collecte de données qualitatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#collecter-des-donnees-qualitatives-avec-kobocollect-ou-des-formulaires-web">Collecter des données qualitatives avec KoboCollect ou des formulaires web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#enregistrer-des-entretiens-avec-des-enregistrements-audio-d-arriere-plan">Enregistrer des entretiens avec des enregistrements audio d’arrière-plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#gerer-et-analyser-les-donnees-qualitatives">Gérer et analyser les données qualitatives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="recording-interviews.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecter des données dans plusieurs langues</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="collecting_data_multiple_languages.html#configurer-vos-formulaires-avec-des-traductions">Configurer vos formulaires avec des traductions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collecting_data_multiple_languages.html#id1">Collecter des données dans plusieurs langues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="collecting_data_multiple_languages.html#gerer-les-donnees-dans-plusieurs-langues">Gérer les données dans plusieurs langues</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a><a class="toc-card" href="managing-projects.html"><div class="toctree-wrapper compound" id="home-page-toc-managing-projects">
+<p class="caption" role="heading"><span class="caption-text">Gestion des Projets et Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Aperçu de l’interface KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_interface.html#naviguer-dans-la-page-d-accueil-projets">Naviguer dans la page d’accueil Projets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_interface.html#travailler-dans-un-projet">Travailler dans un projet</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestion de projets dans KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="managing_projects.html#apercu-des-projets-existants">Aperçu des projets existants</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_projects.html#creer-un-projet">Créer un projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_projects.html#gerer-un-projet-existant">Gérer un projet existant</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_projects.html#archiver-et-supprimer-des-projets">Archiver et supprimer des projets</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Voir et valider vos données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="viewing_validating_data.html#configurer-le-tableau-de-donnees">Configurer le tableau de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewing_validating_data.html#filtrer-et-trier-vos-donnees">Filtrer et trier vos données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewing_validating_data.html#voir-les-soumissions-individuelles">Voir les soumissions individuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewing_validating_data.html#valider-vos-donnees">Valider vos données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="viewing_validating_data.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modifier et supprimer vos données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="editing_deleting_data.html#modifier-des-soumissions-individuelles">Modifier des soumissions individuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editing_deleting_data.html#modifier-plusieurs-soumissions-en-masse">Modifier plusieurs soumissions en masse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editing_deleting_data.html#dupliquer-des-soumissions">Dupliquer des soumissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editing_deleting_data.html#supprimer-vos-donnees">Supprimer vos données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="editing_deleting_data.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporter et télécharger vos données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#telecharger-vos-donnees">Télécharger vos données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#types-d-export">Types d’export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#format-pour-les-valeurs-et-l-en-tete">Format pour les valeurs et l’en-tête</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#options-avancees">Options avancées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="export_download.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Options avancées pour l’export des données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="advanced_export.html#options-d-export-pour-les-questions-a-choix-multiple">Options d’export pour les questions à choix multiple</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_export.html#selectionner-les-champs-a-exporter">Sélectionner les champs à exporter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_export.html#options-de-format-de-donnees-supplementaires">Options de format de données supplémentaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_export.html#enregistrer-les-parametres-d-export">Enregistrer les paramètres d’export</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced_export.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestion des données de groupes répétés</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="managing_repeat_groups.html#visualiser-et-modifier-les-donnees-de-groupes-repetes">Visualiser et modifier les données de groupes répétés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_repeat_groups.html#exporter-les-donnees-de-groupes-repetes">Exporter les données de groupes répétés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_repeat_groups.html#relier-les-donnees-de-groupes-repetes">Relier les données de groupes répétés</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introduction aux fichiers et aux médias de projet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="project_files_media.html#joindre-des-fichiers-externes-et-des-medias-a-votre-formulaire">Joindre des fichiers externes et des médias à votre formulaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_files_media.html#collecter-des-fichiers-et-des-medias-aupres-des-repondants">Collecter des fichiers et des médias auprès des répondants</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importer des fichiers multimédias dans un projet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="upload_media.html#types-de-fichiers-pris-en-charge">Types de fichiers pris en charge</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload_media.html#importer-des-fichiers-depuis-votre-appareil">Importer des fichiers depuis votre appareil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload_media.html#importer-des-fichiers-via-une-url">Importer des fichiers via une URL</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gérer les réponses média soumises par les répondants</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="managing_media_responses.html#visualiser-les-fichiers-multimedias">Visualiser les fichiers multimédias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_media_responses.html#telecharger-les-fichiers-multimedias">Télécharger les fichiers multimédias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_media_responses.html#supprimer-les-fichiers-multimedias">Supprimer les fichiers multimédias</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_media_responses.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Droits d’accès au niveau du projet</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="project_sharing_settings.html#autoriser-les-soumissions-sans-authentification">Autoriser les soumissions sans authentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_sharing_settings.html#rendre-votre-projet-public">Rendre votre projet public</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_sharing_settings.html#transferer-la-propriete-d-un-projet">Transférer la propriété d’un projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="project_sharing_settings.html#supprimer-des-projets-partages-de-votre-compte">Supprimer des projets partagés de votre compte</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Droits d’accès au niveau de l’utilisateur</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="managing_permissions.html#definir-des-autorisations-au-niveau-de-l-utilisateur">Définir des autorisations au niveau de l’utilisateur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_permissions.html#definir-des-autorisations-au-niveau-des-lignes">Définir des autorisations au niveau des lignes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_permissions.html#copier-des-autorisations-depuis-un-autre-projet">Copier des autorisations depuis un autre projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="managing_permissions.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Suivi d’activité</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="activity_logs.html#journaux-d-acces">Journaux d’accès</a></li>
+<li class="toctree-l2"><a class="reference internal" href="activity_logs.html#journaux-d-historique-de-projet">Journaux d’historique de projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="activity_logs.html#problemes-courants-avec-les-journaux-de-suivi-d-activite">Problèmes courants avec les journaux de suivi d’activité</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Utiliser la fonctionnalité de gestion d’équipe</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#propriete-des-projets">Propriété des projets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#roles-au-sein-des-equipes">Rôles au sein des équipes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#vues-de-projets">Vues de projets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#inviter-des-utilisateurs-a-rejoindre-votre-equipe">Inviter des utilisateurs à rejoindre votre équipe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#attribuer-et-gerer-les-roles">Attribuer et gérer les rôles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#retirer-un-utilisateur-de-votre-equipe">Retirer un utilisateur de votre équipe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_organization_feature.html#transferer-la-propriete-de-votre-equipe">Transférer la propriété de votre équipe</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a><a class="toc-card" href="analyzing-data.html"><div class="toctree-wrapper compound" id="home-page-toc-analyzing-data">
+<p class="caption" role="heading"><span class="caption-text">Analyse des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Analyse de données avec KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_analysis.html#analyser-et-visualiser-des-donnees-dans-kobotoolbox">Analyser et visualiser des données dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_analysis.html#exporter-et-connecter-des-donnees-pour-une-analyse-externe">Exporter et connecter des données pour une analyse externe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_analysis.html#preparer-l-analyse-de-donnees-avec-kobotoolbox">Préparer l’analyse de données avec KoboToolbox</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Préparer votre formulaire pour l’analyse des données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="preparing_for_analysis.html#collecter-des-donnees-coherentes-et-homogenes">Collecter des données cohérentes et homogènes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preparing_for_analysis.html#anticiper-le-format-de-vos-exports-de-donnees">Anticiper le format de vos exports de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preparing_for_analysis.html#anticiper-les-besoins-en-matiere-d-analyse">Anticiper les besoins en matière d’analyse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preparing_for_analysis.html#utiliser-votre-xlsform-comme-dictionnaire-de-donnees">Utiliser votre XLSForm comme dictionnaire de données</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualiser vos données à l’aide de rapports personnalisés</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="creating_custom_reports.html#acceder-aux-rapports">Accéder aux rapports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_custom_reports.html#personnaliser-votre-rapport">Personnaliser votre rapport</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_custom_reports.html#personnaliser-des-questions-individuelles">Personnaliser des questions individuelles</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_custom_reports.html#creer-un-rapport-personnalise">Créer un rapport personnalisé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="creating_custom_reports.html#droits-d-acces-et-partage">Droits d’accès et partage</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Cartographier vos données GPS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="mapping_gps.html#collecter-des-donnees-gps-dans-kobotoolbox">Collecter des données GPS dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mapping_gps.html#cartographier-des-donnees-gps-dans-kobotoolbox">Cartographier des données GPS dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="mapping_gps.html#exporter-des-donnees-gps">Exporter des données GPS</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcription et traduction de réponses audio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="transcription-translation.html#ajouter-des-transcriptions-audio">Ajouter des transcriptions audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcription-translation.html#ajouter-des-traductions">Ajouter des traductions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcription-translation.html#liste-des-langues">Liste des langues</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcription-translation.html#limites-d-utilisation-pour-la-transcription-et-la-traduction-automatiques">Limites d’utilisation pour la transcription et la traduction automatiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="transcription-translation.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Analyse qualitative des réponses audio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="qualitative_analysis.html#prerequis-pour-l-analyse-qualitative">Prérequis pour l’analyse qualitative</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qualitative_analysis.html#creer-des-questions-d-analyse">Créer des questions d’analyse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qualitative_analysis.html#analyser-vos-donnees">Analyser vos données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qualitative_analysis.html#limites-d-utilisation-pour-l-analyse-generee-par-l-ia">Limites d’utilisation pour l’analyse générée par l’IA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qualitative_analysis.html#confidentialite-des-donnees-et-entrainement-des-modeles">Confidentialité des données et entraînement des modèles</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir vos données pour SPSS et Stata</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="converting_to_spss_and_stata.html#convertir-vers-spss">Convertir vers SPSS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="converting_to_spss_and_stata.html#convertir-le-fichier-spss-en-fichier-stata">Convertir le fichier SPSS en fichier Stata</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a><a class="toc-card" href="integrations.html"><div class="toctree-wrapper compound" id="home-page-toc-integrations">
+<p class="caption" role="heading"><span class="caption-text">Intégrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introduction à l’API</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="api.html#recuperer-l-url-du-serveur">Récupérer l’URL du serveur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#recuperer-votre-cle-api">Récupérer votre clé API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#recuperer-l-uid-du-projet">Récupérer l’UID du projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#exporter-vos-donnees-via-l-api">Exporter vos données via l’API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#documentation-avancee">Documentation avancée</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Utiliser l’API pour les exports synchronisées</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#generer-un-export-nomme">Générer un export nommé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#recuperer-le-lien-d-export-synchronise">Récupérer le lien d’export synchronisé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#connecter-vos-donnees-a-une-application-externe">Connecter vos données à une application externe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#limitations">Limitations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connexion de KoboToolbox à Microsoft Excel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#etape-1-obtenir-l-url-des-exports-synchronises">Étape 1 : Obtenir l’URL des exports synchronisés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#etape-2-ajouter-la-source-de-donnees">Étape 2 : Ajouter la source de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#mettre-a-jour-les-donnees-dans-vos-rapports">Mettre à jour les données dans vos rapports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connexion de KoboToolbox à Power BI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#etape-1-obtenir-l-url-des-exports-synchronises">Étape 1 : Obtenir l’URL des exports synchronisés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#etape-2-ajouter-la-source-de-donnees">Étape 2 : Ajouter la source de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#mettre-a-jour-les-donnees-dans-vos-rapports">Mettre à jour les données dans vos rapports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Fusionner des données individuelles avec des données répétées via Power Query dans Excel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="merging_dataset_excel_power_query.html#differences-entre-les-donnees-individuelles-et-les-donnees-repetees">Différences entre les données individuelles et les données répétées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merging_dataset_excel_power_query.html#fusionner-les-donnees-individuelles-avec-les-donnees-repetees">Fusionner les données individuelles avec les données répétées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="merging_dataset_excel_power_query.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Utiliser les services REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporter et télécharger des données vers un logiciel SIG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Intégration de KoboToolbox avec monday.com</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_monday_integration.html#fonctionnalites">Fonctionnalités</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_monday_integration.html#installation-et-premiere-utilisation">Installation et première utilisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_monday_integration.html#faq">FAQ</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migration de l’API v1 vers l’API v2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="migrating_api.html#authentification">Authentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating_api.html#migration-de-kpi-v1-vers-kpi-v2">Migration de KPI v1 vers KPI v2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="migrating_api.html#migration-de-kobocat-v1-vers-kpi-v2">Migration de KoboCAT v1 vers KPI v2</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a><a class="toc-card" href="data-security-protection.html"><div class="toctree-wrapper compound" id="home-page-toc-data-security-protection">
+<p class="caption" role="heading"><span class="caption-text">Sécurité et Protection des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Sécurité des données chez KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="is_my_data_safe.html#confidentialite">Confidentialité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_my_data_safe.html#integrite">Intégrité</a></li>
+<li class="toctree-l2"><a class="reference internal" href="is_my_data_safe.html#disponibilite-et-resilience">Disponibilité et résilience</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">Règlement général sur la protection des données (RGPD)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="gdpr.html#qu-est-ce-que-le-rgpd">Qu’est-ce que le RGPD ?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdpr.html#securite-et-confidentialite-chez-kobotoolbox">Sécurité et confidentialité chez KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gdpr.html#demande-de-suppression-de-vos-donnees">Demande de suppression de vos données</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Conformité HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Stockage des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Chiffrer vos formulaires</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="encrypting_forms.html#fonctionnement">Fonctionnement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encrypting_forms.html#chiffrer-des-formulaires-xls">Chiffrer des formulaires XLS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encrypting_forms.html#dechiffrer-des-formulaires">Déchiffrer des formulaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="encrypting_forms.html#generer-des-cles-de-chiffrement-rsa">Générer des clés de chiffrement RSA</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a><a class="toc-card" href="additional-resources.html"><div class="toctree-wrapper compound" id="home-page-toc-additional-resources">
+<p class="caption" role="heading"><span class="caption-text">Ressources Supplémentaires</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Inclure des codes P dans vos données</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="p_codes.html#exemple-avec-3-niveaux-administratifs-utilisant-des-listes-en-cascade">Exemple avec 3 niveaux administratifs utilisant des listes en cascade</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Créer des numéros de série uniques</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="unique_serial_numbers.html#methode-1-creer-des-numeros-de-serie-sequentiels-bases-sur-la-date-et-l-heure">Méthode 1 : Créer des numéros de série séquentiels basés sur la date et l’heure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="unique_serial_numbers.html#methode-2-creer-des-numeros-de-serie-uniques-a-partir-de-variables-selectionnees">Méthode 2 : Créer des numéros de série uniques à partir de variables sélectionnées</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Spécifier une réponse autre pour les questions à choix multiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Réduire la taille de fichiers multimédias</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lower_file_size.html#instructions">Instructions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lower_file_size.html#kobocollect">KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lower_file_size.html#open-camera">Open Camera</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Ajouter des calculs et des contraintes dans un tableau de questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="calculations_constraints_matrix.html#configurer-la-question-et-les-champs">Configurer la question et les champs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculations_constraints_matrix.html#visualiser-le-resultat">Visualiser le résultat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="calculations_constraints_matrix.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Ajouter une logique de saut à un tableau de questions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="adding_skip_to_matrix.html#approche-via-le-formbuilder">Approche via le Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="adding_skip_to_matrix.html#approche-kobo-matrix-list">Approche <code class="docutils literal notranslate"><span class="pre">kobo--matrix_list</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Ajouter un logo personnalisé</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="add_logo.html#conseils">Conseils :</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports bloqués en attente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Télécharger manuellement des soumissions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="manual_upload.html#exporter-des-donnees-depuis-des-formulaires-web">Exporter des données depuis des formulaires web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual_upload.html#exporter-des-donnees-depuis-kobocollect">Exporter des données depuis KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="manual_upload.html#importer-un-fichier-zip-de-donnees">Importer un fichier ZIP de données</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importer des formulaires dans KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="transferring_forms.html#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</a></section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+      </section>
+
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  <section class="community-questions community-questions--big">
+  <div class="wrapper">
+    <h1>Community Forum</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit KoboToolbox forum
+      
+    </a>
+  </div>
+
+   
+      
+      
+    </a>
+  </div>
+</section>
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "index",
+      currentTitle: "Topics",
+      currentUrl: ("#").replace("index.html", "index.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

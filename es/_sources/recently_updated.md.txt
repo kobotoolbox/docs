@@ -1,13 +1,13 @@
-# Artículos de soporte actualizados recientemente
+# Artículos de ayuda actualizados recientemente
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recently_updated.md" class="reference">28 Oct 2025</a>
 
-<!--This page is auto generated using the `scripts/last-updated.py` script, do not update manually-->
-1. [#Acerca de KoboToolbox: Recolección de datos accesible para todas las personas](about_kobotoolbox_es.md) (17 Oct 2025)
-1. [À propos de KoboToolbox : Collecte de données accessible à toutes et tous](about_kobotoolbox_fr.md) (17 Oct 2025)
-1. [Adjuntos de datos dinámicos](dynamic_data_attachment.md) (15 Oct 2025)
-1. [Introducción a KoboToolbox](welcome.md) (15 Oct 2025)
-1. [Medidas de seguridad de datos de KoboToolbox: Manteniendo tus datos seguros](is_my_data_safe.md) (9 Oct 2025)
-1. [Usando la funcionalidad de manejo de equipos](getting_started_organization_feature.md) (3 Oct 2025)
-1. [Añadiendo criterios de validación en el editor de formularios](validation_criteria.md) (2 Oct 2025)
-1. [Añadiendo lógica de salto en el editor de formularios](skip_logic.md) (30 Sep 2025)
-1. [Guía de inicio rápido](quick_start.md) (30 Sep 2025)
-1. [Bloqueo de biblioteca](library_locking.md) (30 Sep 2025)
+1. [Gestionar respuestas con archivos multimedia](managing_media_responses.md) (12 May 2026)
+1. [Introducción a la API](api.md) (12 May 2026)
+1. [Añadir traducciones en XLSForm](language_xls.md) (7 May 2026)
+1. [Personalizar formularios usando XLSForm](form_style_xls.md) (7 May 2026)
+1. [Comenzar con el editor de formularios](formbuilder.md) (6 May 2026)
+1. [Modificar y eliminar datos](editing_deleting_data.md) (6 May 2026)
+1. [Usar XLSForm con KoboToolbox](xlsform_with_kobotoolbox.md) (6 May 2026)
+1. [Exportar y descargar datos](export_download.md) (6 May 2026)
+1. [Apariencia de preguntas en XLSForm](appearances_xls.md) (6 May 2026)
+1. [Preguntas Multimedia en KoboToolbox](photo_audio_video_file.md) (6 May 2026)

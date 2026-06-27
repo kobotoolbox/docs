@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+
+<html lang="es" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Modificar y eliminar datos &#8212; documentación de KoboToolbox - </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=d9a2d029" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=e77fa1ad" />
+    <script src="_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Exportar y descargar datos" href="export_download.html" />
+    <link rel="prev" title="Ver y validar datos" href="viewing_validating_data.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://support.kobotoolbox.org/quick_start.html">Get started</a></li>
+      <li><a href="https://academy.kobotoolbox.org">Academy</a></li>
+      <li><a href="https://community.kobotoolbox.org">Community Forum</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our Community Forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="editing_deleting_data">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="modificar-y-eliminar-datos">
+<h1>Modificar y eliminar datos<a class="headerlink" href="#modificar-y-eliminar-datos" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/93bd2f1869f8d0d9b512b5ba42f05d5cf68ca56b/source/editing_deleting_data.md" class="reference">6 de mayo de 2026</a></p>
+<p>Modificar y eliminar datos ayuda a <strong>mantener la calidad de los datos</strong> después de recolectar los envíos. Es posible que necesites corregir respuestas individuales, actualizar múltiples registros a la vez, duplicar un envío o eliminar registros que ya no son necesarios. KoboToolbox ofrece varias formas de gestionar estas tareas, entre ellas <strong>editar envíos a través de un formulario web, editar datos sin procesar directamente y aplicar actualizaciones masivas.</strong> Este artículo explica cada método y cuándo utilizarlo.</p>
+<p class="note">
+<strong>Nota:</strong> Los envíos recolectados con la <a href="https://support.kobotoolbox.org/es/data_collection_kobocollect.html">aplicación Android KoboCollect</a> no pueden editarse ni eliminarse <strong>en KoboCollect</strong> después de ser enviados. Todos los cambios posteriores al envío deben realizarse en KoboToolbox.
+</p>
+<p>Los propietarios del proyecto pueden controlar el acceso a los datos asignando permisos independientes para ver, editar, validar y eliminar envíos. Por ejemplo, pueden permitir que algunos miembros del equipo editen datos mientras restringen los permisos de eliminación.</p>
+<p class="note">
+Para obtener más información sobre los permisos a nivel de usuario para editar y eliminar datos, consulta <a href="https://support.kobotoolbox.org/es/managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a>.
+</p>
+<section id="editar-envios-individuales">
+<h2>Editar envíos individuales<a class="headerlink" href="#editar-envios-individuales" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox ofrece dos métodos de edición, cada uno diseñado para diferentes casos de uso. Entender en qué se diferencian te ayuda a elegir el método más seguro y adecuado para actualizar los datos.</p>
+<p>Los dos métodos para editar envíos en KoboToolbox son:</p>
+<ul class="simple">
+<li><p><strong>Editar envíos a través de un formulario web:</strong> Abre el envío como un <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#enketo-web-forms">formulario web</a> para que puedas corregir las respuestas y reenviar el formulario. Este método es recomendable cuando es necesario aplicar la lógica del formulario.</p></li>
+<li><p><strong>Editar datos sin procesar directamente en KoboToolbox:</strong> Abre un editor de datos que te permite modificar respuestas específicas directamente. Este método es recomendable cuando necesitas un control preciso sobre las ediciones y no necesitas que se aplique la lógica del formulario.</p></li>
+</ul>
+<p>Cada método tiene sus ventajas y limitaciones:</p>
+<p><img alt="Editing data" src="_images/table4.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Al editar datos con cualquiera de los dos métodos, el campo de metadatos <code>_uuid</code> se actualiza cada vez que se guarda un cambio. Al editar a través de un formulario web, el campo <code>end</code> también se actualiza. Todos los demás campos de metadatos permanecen sin cambios, incluidos <code>_id</code>, <code>rootUuid</code>, <code>start</code>, <code>today</code>, <code>_submission_time</code> y <code>_submitted_by</code>.
+</p>
+<section id="editar-envios-a-traves-de-un-formulario-web">
+<h3>Editar envíos a través de un formulario web<a class="headerlink" href="#editar-envios-a-traves-de-un-formulario-web" title="Link to this heading">¶</a></h3>
+<p>Este método abre un envío como un formulario web para que puedas corregir las respuestas.</p>
+<p>Para editar un envío a través de un formulario web:</p>
+<ol class="arabic simple">
+<li><p>En la fila del envío, junto a la casilla de verificación, haz clic en <i class="k-icon-edit"></i> <strong>Editar.</strong> El envío se abre como un <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#enketo-web-forms">formulario web</a>.</p></li>
+<li><p>Realiza los cambios necesarios.</p></li>
+<li><p>Haz clic en <strong>Enviar.</strong></p></li>
+</ol>
+<p>Todas las actualizaciones, incluidos los campos recalculados y los metadatos actualizados, aparecen en la tabla de datos.</p>
+<p><img alt="Resubmit data" src="_images/resubmit.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Dado que este método vuelve a abrir y reenviar el formulario, puede <strong>modificar involuntariamente otros campos</strong>, en particular los afectados por la lógica de omisión o los cálculos. También utiliza la versión más reciente del formulario. Como resultado, es posible que necesites <strong>proporcionar respuestas para preguntas recién añadidas</strong>, y las respuestas a preguntas que han sido eliminadas del formulario <strong>se borrarán.</strong>
+</p>
+</section>
+<section id="editar-datos-sin-procesar-en-kobotoolbox">
+<h3>Editar datos sin procesar en KoboToolbox<a class="headerlink" href="#editar-datos-sin-procesar-en-kobotoolbox" title="Link to this heading">¶</a></h3>
+<p>Este método te permite omitir la lógica del formulario y editar las respuestas almacenadas directamente sin volver a abrir el formulario. Es útil cuando los cambios no se pueden realizar a través de un formulario web, por ejemplo, si la lógica del formulario impide el reenvío o si preguntas recién marcadas como obligatorias requieren respuestas.</p>
+<p>Para editar datos sin procesar en KoboToolbox:</p>
+<ol class="arabic simple">
+<li><p>Selecciona el envío usando la casilla de verificación.</p></li>
+<li><p>Haz clic en <i class="k-icon-edit"></i> <strong>Editar</strong> encima de la tabla de datos.</p></li>
+<li><p>En la ventana de edición, haz clic en <strong>Editar</strong> junto al campo que deseas cambiar e ingresa el nuevo valor.</p>
+<ul class="simple">
+<li><p>Para preguntas de tipo selección múltiple, ingresa uno o más <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#xml-value">valores XML</a> válidos, separados por espacios.</p></li>
+</ul>
+</li>
+<li><p>Haz clic en <strong>Guardar</strong> y luego en <strong>Confirmar y cerrar.</strong></p></li>
+</ol>
+<p><img alt="Edit your data" src="_images/edit.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Se recomienda registrar las ediciones de datos en un registro externo o en un campo de comentarios dedicado. Las ediciones no se pueden deshacer, pero pueden modificarse nuevamente más adelante.
+</p>
+</section>
+</section>
+<section id="editar-multiples-envios-de-forma-masiva">
+<h2>Editar múltiples envíos de forma masiva<a class="headerlink" href="#editar-multiples-envios-de-forma-masiva" title="Link to this heading">¶</a></h2>
+<p>Cuando se trabaja con conjuntos de datos grandes, es posible que necesites actualizar múltiples registros al mismo tiempo. La edición masiva ayuda a corregir errores sistemáticos, completar información faltante y estandarizar respuestas en muchos envíos. Este método reduce el trabajo repetitivo y acelera el proceso de limpieza de datos.</p>
+<p>Puedes editar múltiples envíos de forma masiva usando el método de edición de datos sin procesar en KoboToolbox:</p>
+<ol class="arabic simple">
+<li><p>Selecciona los envíos que deseas editar usando las casillas de verificación.</p></li>
+<li><p>Haz clic en <i class="k-icon-edit"></i> <strong>Editar</strong> encima de la tabla. Se abre una ventana que muestra las respuestas de todos los envíos seleccionados.</p></li>
+<li><p>Haz clic en <strong>Editar</strong> junto al campo que deseas actualizar.</p></li>
+<li><p>Ingresa un nuevo valor, o haz clic en <strong>Seleccionar</strong> para aplicar un valor existente a todos los envíos seleccionados.</p></li>
+<li><p>Haz clic en <strong>Guardar</strong> y luego en <strong>Confirmar y cerrar.</strong></p></li>
+</ol>
+<p><img alt="Bulk edit data" src="_images/bulk_edit.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Puedes seleccionar todos los envíos de la página actual haciendo clic en la casilla de verificación del encabezado de la tabla. Para seleccionar todos los envíos del proyecto en todas las páginas, haz clic en la flecha junto a la casilla de verificación y elige <strong>Seleccionar todos los resultados.</strong>
+</p>
+</section>
+<section id="duplicar-envios">
+<h2>Duplicar envíos<a class="headerlink" href="#duplicar-envios" title="Link to this heading">¶</a></h2>
+<p>Puedes duplicar un envío siguiendo estos pasos:</p>
+<ol class="arabic simple">
+<li><p>En la fila del envío, junto a la casilla de verificación, haz clic en <i class="k-icon-view"></i> <strong>Ver.</strong></p></li>
+<li><p>En la esquina superior derecha de la ventana del envío, haz clic en <strong>Duplicar.</strong></p></li>
+<li><p>El envío duplicado se abre en una nueva ventana, donde puedes <strong>Editar</strong> o <strong>Descartar</strong> según sea necesario.</p></li>
+</ol>
+<p><img alt="Duplicate submissions" src="_images/duplicate.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Al duplicar un envío, los datos de respuesta se copian, pero el estado de validación se restablece. Los campos de metadatos se actualizan para reflejar el nuevo envío, incluidos <code>start</code>, <code>end</code>, <code>today</code>, <code>_id</code>, <code>_uuid</code>, <code>_submission_time</code> y <code>_submitted_by</code>.
+</p>
+</section>
+<section id="eliminar-datos">
+<h2>Eliminar datos<a class="headerlink" href="#eliminar-datos" title="Link to this heading">¶</a></h2>
+<p>Eliminar datos borra registros de forma permanente de tu proyecto y debe hacerse con cuidado. Es posible que necesites eliminar envíos para quitar duplicados, limpiar datos de prueba o resolver problemas de calidad de datos. KoboToolbox te permite eliminar envíos individuales o múltiples envíos a la vez.</p>
+<section id="eliminar-envios">
+<h3>Eliminar envíos<a class="headerlink" href="#eliminar-envios" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Selecciona el o los envíos que deseas eliminar.</p></li>
+<li><p>Haz clic en <i class="k-icon-trash"></i> <strong>Eliminar</strong> encima de la tabla de datos.</p></li>
+<li><p>Confirma la eliminación.</p></li>
+</ol>
+<p>Los envíos eliminados se borran de forma permanente y no pueden recuperarse.</p>
+<p><img alt="Delete submissions" src="_images/delete.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Puedes usar los <strong>registros del historial de la actividad del proyecto</strong> para <a href="https://support.kobotoolbox.org/es/activity_logs.html">hacer seguimiento a las ediciones y eliminaciones</a> realizadas por los usuarios del proyecto.
+</p>
+</section>
+<section id="eliminar-la-respuesta-de-un-campo-especifico">
+<h3>Eliminar la respuesta de un campo específico<a class="headerlink" href="#eliminar-la-respuesta-de-un-campo-especifico" title="Link to this heading">¶</a></h3>
+<p>En algunos casos, es posible que desees eliminar las respuestas de un solo campo sin eliminar el envío completo. Esto puede ser útil para la anonimización de datos, por ejemplo, cuando se elimina información de identificación personal después de haberla almacenado de forma segura.</p>
+<p>No existe una opción dedicada para eliminar el valor de un solo campo. En su lugar, puedes borrar o reemplazar el valor siguiendo este método:</p>
+<ol class="arabic simple">
+<li><p>Selecciona el o los envíos que deseas actualizar.</p></li>
+<li><p>Haz clic en <i class="k-icon-edit"></i> <strong>Editar</strong> encima de la tabla de datos.</p></li>
+<li><p>Haz clic en <strong>Editar</strong> junto al campo que deseas borrar, luego ingresa un espacio o un valor de reemplazo como «deleted» o «N/A».</p></li>
+<li><p>Haz clic en <strong>Guardar</strong> y luego en <strong>Confirmar y cerrar.</strong></p></li>
+</ol>
+<p class="note">
+<strong>Nota:</strong> Puedes eliminar <strong>archivos multimedia adjuntos</strong> de tus datos, ya sea de forma individual o masiva. Para obtener más información, consulta <a href="https://support.kobotoolbox.org/es/managing_media_responses.html#deleting-media-files">Gestionar respuestas con archivos multimedia</a>.
+</p>
+</section>
+</section>
+<section id="resolucion-de-problemas">
+<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
+<details>
+  <summary><strong>La edición a través de un formulario web modifica o elimina datos</strong></summary>
+  Cuando vuelves a abrir formularios complejos como formulario web, los campos afectados por la lógica de omisión, los cálculos o las conexiones dinámicas de proyectos pueden cambiar. Estos comportamientos pueden impedir que el formulario se reenvíe o eliminar datos que ya no cumplen las condiciones de la lógica. Si no puedes reenviar el formulario, puedes salir del formulario web y no se guardarán los cambios. Para evitar estos efectos, edita los datos sin procesar directamente.
+</details>
+<br>
+<details>
+  <summary><strong>Editar a través de un formulario web después de añadir nuevas preguntas</strong></summary>
+  Si editas un envío antiguo a través de un formulario web después de actualizar y volver a implementar el formulario, el envío se abre en la versión más reciente del formulario. Esto puede causar problemas cuando se han añadido nuevas preguntas obligatorias, ya que debes proporcionar respuestas válidas a esas preguntas para poder guardar las ediciones del envío original.
+</details>
+<br>
+<details>
+  <summary><strong>Los datos editados no aparecen en las exportaciones</strong></summary>
+  Si editas un envío y añades datos a una pregunta que solo existe en una versión más reciente del formulario, es posible que esos datos no aparezcan en las exportaciones cuando se selecciona <strong>Incluye campos de las versiones</strong> en la <a href="https://support.kobotoolbox.org/es/advanced_export.html#selecting-data-fields-for-export">configuración de exportación</a>.
+<br><br>
+Para resolver esto, desmarca <strong>Incluye campos de las versiones</strong> en la configuración de exportación. Los datos añadidos a preguntas de versiones más recientes del formulario se incluirán entonces en la exportación.
+</details>
+<br>
+<details>
+  <summary><strong>Las geoformas con autointersección bloquean las ediciones en los formularios web</strong></summary>
+  KoboCollect puede registrar geoformas con autointersección cuando las coordenadas GPS fluctúan mientras el recolector de datos está quieto. Estos polígonos pueden enviarse correctamente desde KoboCollect, pero volver a abrir el mismo envío a través de un formulario web puede generar un error de geometría. Los formularios web no permiten guardar el formulario hasta que se corrija el polígono, lo que puede ser difícil de corregir manualmente.
+    <br><br>
+En esta situación, usa la edición de datos sin procesar en KoboToolbox para actualizar los campos necesarios sin volver a abrir el envío a través de un formulario web. Esto evita el error de validación de geometría.
+</details>
+<br>
+<details>
+  <summary><strong>Las ediciones de coordenadas no se guardan si no se usa el formato requerido</strong></summary>
+  Al editar coordenadas usando el método de edición de datos sin procesar, los valores deben seguir el formato exacto de KoboToolbox: <code>latitud longitud altitud precisión</code>. Por ejemplo, las coordenadas de París serían <code>48.8566 2.3522 0 0</code>. <br><br>
+Si falta alguna parte o el formato es incorrecto, es posible que la edición no se guarde o cause problemas durante la exportación. Asegúrate de que los cuatro valores estén incluidos y separados por espacios antes de guardar.
+</details>
+<br>
+<details>
+  <summary><strong>Los formularios que usan conexiones dinámicas de proyectos para evitar envíos duplicados no pueden editarse a través de un formulario web</strong></summary>
+  Si tu formulario usa conexiones dinámicas de proyectos para <a href="https://support.kobotoolbox.org/es/dynamic_data_attachment.html#dynamically-linking-a-form-to-itself">evitar envíos duplicados</a>, volver a abrir un envío a través de un formulario web bloqueará el reenvío porque se detecta como duplicado. En este caso, usa la edición de datos sin procesar en KoboToolbox en lugar de editar a través de un formulario web.
+</details>
+<br>
+<details>
+  <summary><strong>Verificar si un envío ha sido editado</strong></summary>
+  Para verificar si un envío ha sido editado, generalmente puedes comparar el campo <code>_uuid</code> con el campo <code>rootUuid</code> en la tabla de datos o en los datos exportados. El valor de <code>rootUuid</code> permanece igual para el envío original, mientras que el valor de <code>_uuid</code> cambia cada vez que se edita el envío. Si los valores son diferentes, es probable que el envío haya sido editado.
+</details>
+<br></section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+
+        <div class="page__back-to-top-container">
+          <a href="#top" class="page__back-to-top">Back to top</a>
+        </div>
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Modificar y eliminar datos"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Modificar y eliminar datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#editar-envios-individuales">Editar envíos individuales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#editar-multiples-envios-de-forma-masiva">Editar múltiples envíos de forma masiva</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#duplicar-envios">Duplicar envíos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#eliminar-datos">Eliminar datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolucion-de-problemas">Resolución de problemas</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Community Forum</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+
+   
+        <br><br>
+  
+
+  <div class="wrapper">
+    <h1>KoboToolbox Academy</h1>
+
+    <p>KoboToolbox Academy offers high quality self-paced courses, created by KoboToolbox experts.</p>
+
+    <a class="button" href="https://academy.kobotoolbox.org">
+      Visit the KoboToolbox Academy
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "editing_deleting_data",
+      currentTitle: "Modificar y eliminar datos",
+      currentUrl: ("index.html").replace("index.html", "editing_deleting_data.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

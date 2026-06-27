@@ -1,0 +1,15 @@
+# Collecte de données hors ligne
+
+**La collecte de données peut entièrement se faire hors ligne, aussi bien avec KoboCollect qu'avec les formulaires web.**
+
+Lorsqu'un utilisateur saisit des données, celles-ci sont d'abord stockées sur l'appareil. KoboCollect [peut être configuré](https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings) pour tenter d'envoyer les informations via une connexion réseau immédiatement ou seulement à une étape ultérieure, lorsque l'enquêteur ou le superviseur souhaite importer les formulaires finalisés. Les formulaires web tenteront toujours d'importer les données immédiatement et réessaieront jusqu'à ce qu'une connexion soit rétablie.
+
+Toute synchronisation est protégée même contre une connexion Internet de mauvaise qualité. Si une connexion expire ou est interrompue pendant le transfert d'un formulaire, celui-ci sera renvoyé lors de la prochaine tentative d'envoi. Le serveur n'intégrera pas de données reçues partiellement dans ce cas. Ce n'est que lorsqu'une soumission a été envoyée avec succès et que le serveur en confirme la réception que les données du formulaire sont retirées de la file d'attente d'envoi.
+
+Les formulaires web utilisent le stockage hors ligne HTML5 du navigateur pour stocker les réponses au formulaire ainsi que le formulaire lui-même. Il est important d'attendre le petit message de confirmation qui apparaît en haut à droite du formulaire, lequel affiche une coche verte une fois le formulaire mis en cache. Après cela, le formulaire est accessible et les données peuvent être saisies même sans connexion. Il est recommandé de créer un signet sur l'appareil pour accéder facilement aux formulaires concernés.
+
+## Que faire si je n'ai aucun accès à Internet ?
+
+S'il n'est pas possible de connecter un appareil à Internet (les enquêteurs ne peuvent pas se déplacer dans une zone où une connexion est disponible), il est également possible de transférer les données de formulaires depuis KoboCollect via un outil externe, [ODK Briefcase](https://docs.getodk.org/briefcase-intro), en connectant les appareils mobiles par câble USB à un ordinateur local. Pour plus de détails sur l'utilisation d'ODK Briefcase pour transférer des données, [consultez cet article](https://blog.cartong.org/2016/03/11/migration-odk-platforms). Il est ensuite possible d'importer les données du formulaire depuis un ordinateur centralisé vers le serveur KoboToolbox, en utilisant le même outil.
+
+Enfin, il est également possible d'installer KoboToolbox sur un ordinateur local, par exemple un ordinateur portable, puis de connecter les appareils mobiles locaux à cet ordinateur via un réseau WiFi local. Ce réseau WiFi n'a pas besoin d'être connecté à Internet, car il existe une connexion directe entre les appareils mobiles et l'ordinateur local. [Consultez cette page](https://github.com/kobotoolbox/kobo-install) pour savoir comment installer KoboToolbox sur votre ordinateur.

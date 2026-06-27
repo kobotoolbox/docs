@@ -26,8 +26,6 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Descargando fotos y otros medios" href="photo_download.html" />
-    <link rel="prev" title="Editar o eliminar un envío individual" href="howto_edit_single_submissions.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -109,122 +107,74 @@
           
   <section id="editar-respuestas-en-multiples-envios">
 <h1>Editar respuestas en múltiples envíos<a class="headerlink" href="#editar-respuestas-en-multiples-envios" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/509a98dad39e2899a5eff7e870481cf99749f321/source/howto_edit_multiple_submissions.md" class="reference">22 Sep 2022</a></p>
-<p>Los/as usuarios/as siempre han podido editar envíos como se describe en nuestro artículo de ayuda
-<a class="reference internal" href="howto_edit_single_submissions.html"><span class="std std-doc">Editar o eliminar un solo envío</span></a>.
-¿Qué pasa si un/a usuario/a tiene que editar errores tipográficos repetidos o actualizar respuestas faltantes para
-todos o la mayoría de los envíos de un proyecto de encuesta en particular? Seguir el
-método descrito anteriormente consumiría mucho tiempo. Por lo tanto, KoboToolbox ha
-desarrollado una funcionalidad que debería hacer que la edición sea más sencilla, ahorrando tiempo de edición.</p>
-<section id="limitaciones-al-editar-respuestas-para-multiples-envios">
-<h2>Limitaciones al editar respuestas para múltiples envíos<a class="headerlink" href="#limitaciones-al-editar-respuestas-para-multiples-envios" title="Link to this heading">¶</a></h2>
-<p>Existen varias limitaciones al realizar las acciones de edición masiva descritas en
-este artículo. Este no es el caso al editar
-<a class="reference internal" href="howto_edit_single_submissions.html"><span class="std std-doc">envíos individuales</span></a>. Al usar este
-método:</p>
+<p>Los usuarios siempre han podido editar envíos como se describe en nuestro artículo de ayuda <a class="reference internal" href="howto_edit_single_submissions.html"><span class="std std-doc">Modificar y eliminar datos</span></a>. ¿Qué pasa si un usuario tiene que corregir errores tipográficos repetidos o actualizar respuestas faltantes en todos o la mayoría de los envíos de un proyecto de encuesta en particular? Seguir el método descrito anteriormente consumiría mucho tiempo. Por eso, KoboToolbox ha desarrollado una funcionalidad que facilita la edición y permite ahorrar tiempo.</p>
+<section id="limitaciones-al-editar-respuestas-en-multiples-envios">
+<h2>Limitaciones al editar respuestas en múltiples envíos<a class="headerlink" href="#limitaciones-al-editar-respuestas-en-multiples-envios" title="Link to this heading">¶</a></h2>
+<p>Existen varias limitaciones al realizar las acciones de edición masiva descritas en este artículo. Esto no ocurre al editar <a class="reference internal" href="howto_edit_single_submissions.html"><span class="std std-doc">envíos individuales</span></a>. Al usar este método:</p>
 <ul class="simple">
-<li><p>La lógica de validación y los cálculos dentro de tu formulario no se vuelven a evaluar.</p></li>
-<li><p>Actualmente no se admite la edición de preguntas dentro de grupos repetidos.</p></li>
-<li><p>Los puntos de coordenadas deben seguir el patrón: <code class="docutils literal notranslate"><span class="pre">latitud</span> <span class="pre">longitud</span> <span class="pre">altitud</span> <span class="pre">precisión</span></code>.
-No hacerlo no causará un error, pero puede confundir tu análisis de datos.</p></li>
-<li><p>Las respuestas de selección múltiple deben consistir en los <strong>nombres de opciones</strong> correctos,
-separados por un espacio. No hacerlo no causará un error, pero
-resultará en que las etiquetas no se apliquen correctamente al exportar.</p></li>
+<li><p>La lógica de validación y los cálculos dentro del formulario no se vuelven a evaluar.</p></li>
+<li><p>La edición de preguntas dentro de grupos de repetición no está disponible actualmente.</p></li>
+<li><p>Los puntos de coordenadas deben seguir el patrón: <code class="docutils literal notranslate"><span class="pre">latitude</span> <span class="pre">longitude</span> <span class="pre">altitude</span> <span class="pre">accuracy</span></code>.
+No hacerlo no generará un error, pero puede dificultar el análisis de datos.</p></li>
+<li><p>Las respuestas de selección múltiple deben contener los <strong>nombres de opciones</strong> correctos,
+separados por un espacio. No hacerlo no generará un error, pero hará que las etiquetas no se apliquen correctamente al exportar.</p></li>
 </ul>
 </section>
-<section id="editar-respuestas-para-multiples-envios">
-<h2>Editar respuestas para múltiples envíos<a class="headerlink" href="#editar-respuestas-para-multiples-envios" title="Link to this heading">¶</a></h2>
-<p>La siguiente es una pantalla generalmente vista para <strong>DATOS&gt;Tabla</strong>.</p>
+<section id="id1">
+<h2>Editar respuestas en múltiples envíos<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h2>
+<p>A continuación se muestra la pantalla que generalmente se ve en <strong>DATOS&gt;Tabla</strong>.</p>
 <p><img alt="image" src="_images/edit_multiple_1.png" /></p>
-<p>La imagen compartida arriba muestra variación en la entrada de datos con la pregunta <strong>País</strong>
-que va desde <em>America</em>, <em>U.S.A</em>, <em>US</em>, <em>United States of America</em>, <em>United
-States</em>, <em>usa</em> hasta <em>USA</em>. Esta sección del artículo de ayuda describirá <em>cómo
-cambiar todos estos nombres de <strong>País</strong> variados a <strong>USA</strong></em>.</p>
+<p>La imagen anterior muestra variaciones en los datos ingresados para la pregunta <strong>Country</strong> (País), con valores como <em>America</em>, <em>U.S.A</em>, <em>US</em>, <em>United States of America</em>, <em>United States</em>, <em>usa</em> y <em>USA</em>. Esta sección del artículo de ayuda describe <em>cómo cambiar todos estos valores distintos de <strong>Country</strong> a <strong>USA</strong></em>.</p>
 <p><strong>Paso 1:</strong></p>
-<p>Para comenzar a editar respuestas para múltiples envíos, los/as usuarios/as deben seleccionar
-un solo registro (marcado <strong>1</strong>) o seleccionar múltiples registros (marcado <strong>2</strong>).
-Seleccionar como se muestra en la imagen a continuación debería activar las funcionalidades de edición junto
-con otras funcionalidades.</p>
+<p>Para comenzar a editar respuestas en múltiples envíos, debes seleccionar un solo registro (marcado con <strong>1</strong>) o varios registros (marcado con <strong>2</strong>). Al seleccionar como se muestra en la imagen a continuación, se activarán las funciones de edición junto con otras funciones.</p>
 <p><img alt="image" src="_images/edit_multiple_2.png" /></p>
 <ul class="simple">
-<li><p><strong>1.</strong> Los/as usuarios/as pueden seleccionar múltiples registros que requieren edición masiva.</p></li>
-<li><p><strong>2.</strong> Como alternativa al enfoque descrito arriba (en <strong>1</strong>), los/as usuarios/as pueden seleccionar
-<em>todos los registros</em> o <em>todos los registros visibles</em> bajo <strong>DATOS&gt;Tabla</strong>. <em>Todos los registros</em>
-se refiere a todos los registros que están presentes dentro del proyecto de encuesta mientras que
-<em>todos los registros visibles</em> se refiere a los 30 registros que son visibles por defecto bajo
-<strong>DATOS&gt;Tabla</strong>. Los/as usuarios/as deben distinguir claramente entre los dos cuando hay
-más de 30 registros (envíos) dentro del proyecto de encuesta.</p></li>
-<li><p><strong>3.</strong> Muestra el número total de registros seleccionados para <em>cambiar/actualizar el
-estado de validación</em>, <em>edición masiva</em> o <em>eliminación masiva</em>.</p></li>
-<li><p><strong>4.</strong> Los/as usuarios/as pueden cambiar masivamente el estado de validación como se describe en nuestro
-artículo de ayuda <a class="reference internal" href="record_validation.html"><span class="std std-doc">Validación de registros</span></a>.</p></li>
-<li><p><strong>5.</strong> Los/as usuarios/as pueden editar masivamente las respuestas para múltiples envíos.</p></li>
-<li><p><strong>6.</strong> Los/as usuarios/as pueden eliminar masivamente los registros.</p></li>
+<li><p><strong>1.</strong> Puedes seleccionar varios registros que requieran edición masiva.</p></li>
+<li><p><strong>2.</strong> Como alternativa al método descrito en <strong>1</strong>, puedes seleccionar <em>todos los registros</em> o <em>todos los registros visibles</em> en <strong>DATOS&gt;Tabla</strong>. <em>Todos los registros</em> hace referencia a la totalidad de los registros presentes en el proyecto de encuesta, mientras que <em>todos los registros visibles</em> hace referencia a los 30 registros que se muestran de forma predeterminada en <strong>DATOS&gt;Tabla</strong>. Debes distinguir claramente entre ambas opciones cuando el proyecto de encuesta tiene más de 30 registros (envíos).</p></li>
+<li><p><strong>3.</strong> Muestra el número total de registros seleccionados para <em>cambiar/actualizar el estado de validación</em>, <em>edición masiva</em> o <em>eliminación masiva</em>.</p></li>
+<li><p><strong>4.</strong> Puedes cambiar masivamente el estado de validación como se describe en nuestro artículo de ayuda <a class="reference internal" href="record_validation.html"><span class="std std-doc">Ver y validar datos</span></a>.</p></li>
+<li><p><strong>5.</strong> Puedes editar masivamente las respuestas de múltiples envíos.</p></li>
+<li><p><strong>6.</strong> Puedes eliminar masivamente los registros.</p></li>
 </ul>
 <p><strong>Paso 2:</strong></p>
-<p>Los/as usuarios/as ahora tendrán que presionar <strong>Editar</strong> (<strong>5</strong> como se muestra en la imagen arriba) para
-edición masiva después de seleccionar todos los registros que requieren modificaciones. El
-siguiente cuadro de diálogo debería aparecer entonces.</p>
+<p>Ahora debes hacer clic en <strong>Editar</strong> (<strong>5</strong> como se muestra en la imagen anterior) para realizar la edición masiva después de seleccionar todos los registros que requieren modificaciones. A continuación aparecerá la siguiente caja de diálogo.</p>
 <p><img alt="image" src="_images/edit_multiple_3.png" /></p>
-<p>Los/as usuarios/as pueden filtrar la pregunta requerida escribiéndola en el filtro de búsqueda
-ubicado justo debajo del encabezado <strong>Pregunta</strong>.</p>
+<p>Puedes filtrar la pregunta requerida escribiéndola en el filtro de búsqueda ubicado justo debajo del encabezado <strong>Question</strong> (Pregunta).</p>
 <p><img alt="image" src="_images/edit_multiple_4.png" /></p>
-<p>Los/as usuarios/as deberían ver <em>Múltiples respuestas</em> bajo el encabezado <strong>Respuesta</strong> (mostrado en
-la imagen arriba) si se ingresaron diferentes valores. Aquí tenemos un rango de entradas
-desde <em>America</em>, <em>U.S.A</em>, <em>US</em>, <em>United States of America</em>, <em>United States</em>,
-<em>usa</em> hasta <em>USA</em>. Sin embargo, si los/as usuarios/as seleccionan un solo registro y presionan <strong>Editar</strong>,
-verían el siguiente cuadro de diálogo.</p>
+<p>Verás <em>Varias respuestas</em> bajo el encabezado <strong>Response</strong> (Respuesta) (como se muestra en la imagen anterior) si se ingresaron valores distintos. En este caso, hay un rango de entradas que va desde <em>America</em>, <em>U.S.A</em>, <em>US</em>, <em>United States of America</em>, <em>United States</em>, <em>usa</em> hasta <em>USA</em>. Sin embargo, si seleccionas un solo registro y haces clic en <strong>Editar</strong>, verás la siguiente caja de diálogo.</p>
 <p><img alt="image" src="_images/edit_multiple_5.png" /></p>
-<p>Los/as usuarios/as ahora pueden filtrar la respuesta requerida escribiéndola en el filtro de búsqueda
-ubicado justo debajo del encabezado <strong>Respuesta</strong>. Este enfoque es útil cuando un/a usuario/a
-desea editar un solo registro.</p>
+<p>Ahora puedes filtrar la respuesta requerida escribiéndola en el filtro de búsqueda ubicado justo debajo del encabezado <strong>Response</strong> (Respuesta). Este método es útil cuando deseas editar un solo registro.</p>
 <p><img alt="image" src="_images/edit_multiple_6.png" /></p>
 <p><strong>Paso 3:</strong></p>
-<p>Los/as usuarios/as pueden presionar el botón <strong>EDITAR</strong> una vez que se sepa <em>qué editar y dónde
-editar</em>.</p>
+<p>Puedes hacer clic en el botón <strong>EDITAR</strong> una vez que sepas <em>qué editar y dónde editarlo</em>.</p>
 <p><img alt="image" src="_images/edit_multiple_7.png" /></p>
 <p><strong>Paso 4:</strong></p>
-<p>Entonces ahora, hay dos enfoques para hacer ediciones masivas. <em>Enfoque 1</em> es cuando los/as usuarios/as
-escriben el texto requerido (<strong>USA</strong> en nuestro caso) en el cuadro en blanco (marcado
-<strong>1.1</strong>) y luego presionan <strong>GUARDAR</strong> (marcado <strong>2</strong>). <em>Enfoque 2</em> es cuando los/as usuarios/as
-presionan <strong>SELECCIONAR</strong> (marcado <strong>1.2</strong>) para un texto apropiado y luego presionan
-<strong>GUARDAR</strong> (marcado <strong>2</strong>).</p>
+<p>Hay dos métodos para realizar ediciones masivas. El <em>Método 1</em> consiste en escribir el texto requerido (<strong>USA</strong> en este caso) en el campo en blanco (marcado con <strong>1.1</strong>) y luego hacer clic en <strong>GUARDAR</strong> (marcado con <strong>2</strong>). El <em>Método 2</em> consiste en hacer clic en <strong>SELECCIONAR</strong> (marcado con <strong>1.2</strong>) para elegir el texto apropiado y luego hacer clic en <strong>GUARDAR</strong> (marcado con <strong>2</strong>).</p>
 <p><img alt="image" src="_images/edit_multiple_8.png" /></p>
 <p><strong>Paso 5:</strong></p>
-<p>Ahora aparece un cuadro de diálogo. Los/as usuarios/as ahora tendrán que presionar <strong>CONFIRMAR Y CERRAR</strong> para
-guardar los cambios realizados.</p>
+<p>Aparece una caja de diálogo. Ahora debes hacer clic en <strong>CONFIRMAR Y CERRAR</strong> para guardar los cambios realizados.</p>
 <p><img alt="image" src="_images/edit_multiple_9.png" /></p>
-<p>Los/as usuarios/as siempre pueden volver a <strong>DATOS&gt;Tabla</strong> y verificar si las ediciones masivas fueron
-exitosas.</p>
+<p>Siempre puedes volver a <strong>DATOS&gt;Tabla</strong> y verificar si las ediciones masivas se realizaron correctamente.</p>
 <p><img alt="image" src="_images/edit_multiple_10.png" /></p>
 </section>
-<section id="editar-respuestas-en-blanco-para-multiples-envios">
-<h2>Editar respuestas en blanco para múltiples envíos<a class="headerlink" href="#editar-respuestas-en-blanco-para-multiples-envios" title="Link to this heading">¶</a></h2>
-<p>A veces, puede haber un escenario cuando los/as usuarios/as tienen que agregar una pregunta en el
-medio o al final de la encuesta. En tal caso, los datos de la encuesta desde la
-ventana <strong>DATOS&gt;Tabla</strong> deberían verse, como se muestra en la imagen a continuación.</p>
+<section id="editar-respuestas-en-blanco-en-multiples-envios">
+<h2>Editar respuestas en blanco en múltiples envíos<a class="headerlink" href="#editar-respuestas-en-blanco-en-multiples-envios" title="Link to this heading">¶</a></h2>
+<p>En ocasiones, puede darse el caso de que tengas que agregar una pregunta en la mitad o al final de la encuesta. En ese caso, los datos de la encuesta en <strong>DATOS&gt;Tabla</strong> se verán como se muestra en la imagen a continuación.</p>
 <p><img alt="image" src="_images/edit_multiple_11.png" /></p>
-<p>Esta sección del artículo de ayuda debería describir <em>cómo cambiar todos estos
-estados vacíos a <strong>Alabama</strong></em>.</p>
+<p>Esta sección del artículo de ayuda describe <em>cómo cambiar todos estos campos vacíos a <strong>Alabama</strong></em>.</p>
 <p><strong>Paso 1:</strong></p>
-<p>Para comenzar a editar respuestas en blanco para múltiples envíos, los/as usuarios/as deben seleccionar
-múltiples registros (marcado <strong>1</strong>) y luego presionar <strong>Editar</strong> (marcado <strong>2</strong>).</p>
+<p>Para comenzar a editar respuestas en blanco en múltiples envíos, debes seleccionar varios registros (marcado con <strong>1</strong>) y luego hacer clic en <strong>Editar</strong> (marcado con <strong>2</strong>).</p>
 <p><img alt="image" src="_images/edit_multiple_12.png" /></p>
 <p><strong>Paso 2:</strong></p>
-<p>Los/as usuarios/as ahora tendrán que presionar <strong>Editar</strong> (como se muestra en la imagen a continuación), que está en
-una línea paralela directa a <em>Estado</em> ya que estamos actualizando los estados vacíos para todos
-los registros.</p>
+<p>Ahora debes hacer clic en <strong>Editar</strong> (como se muestra en la imagen a continuación), que está en la misma línea que <em>State</em> (Estado), ya que estamos actualizando los campos vacíos de estado para todos los registros.</p>
 <p><img alt="image" src="_images/edit_multiple_13.png" /></p>
 <p><strong>Paso 3:</strong></p>
-<p>En este caso, los/as usuarios/as deben escribir el texto requerido (<strong>Alabama</strong> en nuestro caso)
-en el cuadro en blanco (marcado <strong>1</strong>) y luego presionar <strong>GUARDAR</strong> (marcado <strong>2</strong>).</p>
+<p>En este caso, debes escribir el texto requerido (<strong>Alabama</strong> en este caso) en el campo en blanco (marcado con <strong>1</strong>) y luego hacer clic en <strong>GUARDAR</strong> (marcado con <strong>2</strong>).</p>
 <p><img alt="image" src="_images/edit_multiple_14.png" /></p>
 <p><strong>Paso 4:</strong></p>
-<p>Aparece un cuadro de diálogo. Los/as usuarios/as ahora tendrán que presionar <strong>CONFIRMAR Y CERRAR</strong> para guardar
-los cambios realizados.</p>
+<p>Aparece una caja de diálogo. Ahora debes hacer clic en <strong>CONFIRMAR Y CERRAR</strong> para guardar los cambios realizados.</p>
 <p><img alt="image" src="_images/edit_multiple_15.png" /></p>
-<p>Los/as usuarios/as siempre pueden volver a <strong>DATOS&gt;Tabla</strong> y verificar si las ediciones masivas fueron
-exitosas.</p>
+<p>Siempre puedes volver a <strong>DATOS&gt;Tabla</strong> y verificar si las ediciones masivas se realizaron correctamente.</p>
 <p><img alt="image" src="_images/edit_multiple_16.png" /></p>
 </section>
 </section>
@@ -261,145 +211,149 @@ exitosas.</p>
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Editar respuestas en múltiples envíos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#limitaciones-al-editar-respuestas-para-multiples-envios">Limitaciones al editar respuestas para múltiples envíos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#editar-respuestas-para-multiples-envios">Editar respuestas para múltiples envíos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#editar-respuestas-en-blanco-para-multiples-envios">Editar respuestas en blanco para múltiples envíos</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>

@@ -1,8 +1,8 @@
-# Restablecer contraseñas
+# Restablecer la contraseña
 **Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/855616c6ac4634f2dc835438697aab6869c7f11a/source/reset_password.md" class="reference">22 Sep 2023</a>
 
-Si has olvidado o perdido la contraseña de tu cuenta, KoboToolbox te permite
-restablecerla fácilmente.
+
+Si olvidaste o perdiste la contraseña de tu cuenta, KoboToolbox te permite restablecerla fácilmente.
 
 Para restablecer tu contraseña:
 
@@ -14,26 +14,14 @@ Para restablecer tu contraseña:
 
 ![Formulario de inicio de sesión de KoboToolbox](/images/resetting_passwords/login_form.png)
 
--   Haz clic en **¿Olvidaste?** en el formulario de inicio de sesión.
+-   Haz clic en **¿Olvidaste tu contraseña?** en el formulario de inicio de sesión.
 -   Ingresa tu dirección de correo electrónico.
 -   Haz clic en **Restablecer contraseña**.
 
-KoboToolbox enviará un correo electrónico para restablecer la contraseña después de tu solicitud para
-restablecer la contraseña. Si no recibiste un correo electrónico con el enlace de recordatorio de contraseña,
-intenta solucionar el problema con lo siguiente:
+KoboToolbox enviará un correo electrónico para restablecer la contraseña después de que hagas la solicitud. Si no recibiste un correo electrónico con el enlace para restablecer la contraseña, intenta resolver el problema con los siguientes pasos:
 
--   Verifica si nuestro correo electrónico de restablecimiento de contraseña llegó a tu carpeta de spam o correo no deseado,
-    ya que podría haber sido colocado allí por tu proveedor de correo electrónico.
--   Verifica si creaste tu cuenta con una dirección de correo electrónico diferente - simplemente
-    haz clic en el enlace 'Olvidaste' nuevamente e ingresa tu dirección de correo electrónico alternativa.
--   También podría ser que estés solicitando restablecer tu contraseña en el
-    servidor incorrecto. Verifica la URL en tu barra de direcciones para asegurarte de que estás en el servidor
-    donde creaste tu cuenta,
-    ya sea el [Servidor Global](https://kf.kobotoolbox.org) o el
-    [Servidor con sede en la Unión Europea](https://eu.kobotoolbox.org).
+-   Revisa si el correo electrónico de restablecimiento de contraseña llegó a tu carpeta de spam o correo no deseado, ya que es posible que tu proveedor de correo electrónico lo haya enviado allí.
+-   Verifica si creaste tu cuenta con una dirección de correo electrónico diferente: haz clic en el enlace "¿Olvidaste tu contraseña?" nuevamente e ingresa tu dirección de correo electrónico alternativa.
+-   También es posible que estés intentando restablecer tu contraseña en el servidor incorrecto. Verifica la URL en la barra de direcciones para asegurarte de que estás en el servidor donde creaste tu cuenta, ya sea el [Servidor Global](https://kf.kobotoolbox.org) o el [Servidor con sede en la Unión Europea](https://eu.kobotoolbox.org).
 
-Si aún no has recibido el correo electrónico con el enlace de restablecimiento, y has intentado
-todas las opciones de solución de problemas proporcionadas anteriormente, envía un correo electrónico con el
-asunto "Problemas de restablecimiento de contraseña" a
-[support@kobotoolbox.org](mailto:support@kobotoolbox.org) con tu nombre de usuario/a,
-la dirección de correo electrónico que usaste para registrarte y en qué servidor creaste tu cuenta.
+Si aún no has recibido el correo electrónico con el enlace para restablecer la contraseña y has probado todas las opciones de resolución de problemas indicadas anteriormente, envía un correo electrónico con el asunto "Password reset issues" a [support@kobotoolbox.org](mailto:support@kobotoolbox.org) con tu nombre de usuario, la dirección de correo electrónico que usaste para registrarte y el servidor en el que creaste tu cuenta.

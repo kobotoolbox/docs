@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Glossaire des termes KoboToolbox &#8212; Documentation KoboToolbox </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=d9a2d029" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=e77fa1ad" />
+    <script src="_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Problèmes liés au lien d’activation du compte" href="activation_link.html" />
+    <link rel="prev" title="Guide de démarrage rapide" href="quick_start.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://support.kobotoolbox.org/quick_start.html">Get started</a></li>
+      <li><a href="https://academy.kobotoolbox.org">Academy</a></li>
+      <li><a href="https://community.kobotoolbox.org">Community Forum</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our Community Forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="glossary">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="glossaire-des-termes-kobotoolbox">
+<h1>Glossaire des termes KoboToolbox<a class="headerlink" href="#glossaire-des-termes-kobotoolbox" title="Lien vers cette rubrique">¶</a></h1>
+<p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/80dee667217e1ce9b9f33dcb26e6a25ad0754a51/source/glossary.md" class="reference">14 juin 2026</a></p>
+<p>Ce glossaire définit les termes propres à KoboToolbox, couvrant la conception de formulaires, la collecte de données et la gestion de projets. Chaque entrée inclut les synonymes pertinents, les termes associés et des liens vers des articles d’aide pour plus d’informations.</p>
+<hr class="docutils" />
+<section id="compte">
+<h2>Compte<a class="headerlink" href="#compte" title="Lien vers cette rubrique">¶</a></h2>
+<p>Profil utilisateur permettant d’accéder à KoboToolbox, notamment pour créer des projets, gérer des données et configurer des paramètres personnels.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/creating_account.html">Créer un compte KoboToolbox</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="suivi-d-acces-au-compte">
+<h2>Suivi d’accès au compte<a class="headerlink" href="#suivi-d-acces-au-compte" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le suivi d’accès au compte enregistre toutes les connexions à votre compte KoboToolbox. Il permet de surveiller la sécurité du compte en indiquant quand et depuis où le compte a été consulté.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/activity_logs.html">Suivi de l'activité du projet et du compte</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#account">Compte</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#project-history-logs">Suivi de l’historique du projet</a></p>
+</section>
+<hr class="docutils" />
+<section id="interface-de-programmation-d-application-api">
+<h2>Interface de programmation d’application (API)<a class="headerlink" href="#interface-de-programmation-d-application-api" title="Lien vers cette rubrique">¶</a></h2>
+<p>Ensemble d’outils permettant à différents systèmes logiciels de communiquer avec KoboToolbox, en autorisant des actions automatisées telles que l’envoi de données, la récupération de données ou la gestion de projets par programmation.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/api.html">Introduction à l'API</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#synchronous-exports">Exports synchronisés</a></p>
+</section>
+<hr class="docutils" />
+<section id="apparence">
+<h2>Apparence<a class="headerlink" href="#apparence" title="Lien vers cette rubrique">¶</a></h2>
+<p>Paramètre qui modifie la façon dont une question ou un groupe est affiché dans un formulaire, par exemple en affichant plusieurs questions sur un même écran ou en modifiant la présentation des options de réponse.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options.html#appearance-advanced">Options de questions dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/appearances_xls.html">Apparences de questions dans XLSForm</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="projets-archives">
+<h2>Projets archivés<a class="headerlink" href="#projets-archives" title="Lien vers cette rubrique">¶</a></h2>
+<p>Projets qui ont été retirés de la liste des projets actifs et qui n’acceptent plus de nouvelles soumissions, mais qui sont conservés à des fins de référence ou d’archivage.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/managing_projects.html">Gestion de projets dans KoboToolbox</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#deployed-projects">Projets déployés</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#draft-projects">Projets en brouillon</a></p>
+</section>
+<hr class="docutils" />
+<section id="audit">
+<h2>Audit<a class="headerlink" href="#audit" title="Lien vers cette rubrique">¶</a></h2>
+<p>Enregistrement qui suit les actions spécifiques effectuées lors de la collecte de données ou de la complétion d’un formulaire, telles que la durée de réponse aux questions ou la localisation, lorsque les métadonnées d’audit sont activées dans un formulaire.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/form_meta.html#audit-metadata-question">Question de métadonnées d'audit</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#metadata">Métadonnées</a></p>
+</section>
+<hr class="docutils" />
+<section id="authentification">
+<h2>Authentification<a class="headerlink" href="#authentification" title="Lien vers cette rubrique">¶</a></h2>
+<p>Processus de vérification de l’identité d’un utilisateur en exigeant un nom d’utilisateur et un mot de passe valides pour contrôler l’accès aux comptes, projets et soumissions KoboToolbox.</p>
+</section>
+<hr class="docutils" />
+<section id="enregistrement-audio-d-arriere-plan">
+<h2>Enregistrement audio d’arrière-plan<a class="headerlink" href="#enregistrement-audio-d-arriere-plan" title="Lien vers cette rubrique">¶</a></h2>
+<p>Fonctionnalité qui enregistre en continu l’audio pendant un entretien tandis que le formulaire est en cours de complétion, capturant les réponses orales sans nécessiter de questions audio distinctes.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a href="https://support.kobotoolbox.org/fr/recording-interviews.html#recording-interviews-with-background-audio-recordings">Enregistrement d'entretiens avec des enregistrements audio d'arrière-plan</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="cycle-de-facturation">
+<h2>Cycle de facturation<a class="headerlink" href="#cycle-de-facturation" title="Lien vers cette rubrique">¶</a></h2>
+<p>Période avant laquelle votre plan KoboToolbox se renouvelle et votre utilisation est réinitialisée. Pour les utilisateurs du <strong>plan Community</strong>, le cycle de facturation est d’un mois et commence à la date de création du compte. Pour les plans payants, le cycle de facturation dépend du type d’abonnement : les plans mensuels se renouvellent chaque mois et les plans annuels se renouvellent chaque année. Vous pouvez trouver la date de création de votre compte et, le cas échéant, la date de renouvellement de votre plan dans <strong>Paramètres du compte &gt; Utilisation</strong>.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/account_settings.html#usage">Paramètres du compte</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="formulaires-vierges-kobocollect">
+<h2>Formulaires vierges (KoboCollect)<a class="headerlink" href="#formulaires-vierges-kobocollect" title="Lien vers cette rubrique">¶</a></h2>
+<p>Formulaires de collecte de données vides téléchargés sur un appareil dans l’application KoboCollect. Ces formulaires ne contiennent pas encore de réponses et sont prêts pour la collecte de données. Les formulaires vierges sont également appelés <strong>définitions de formulaire</strong> dans l’application.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/data_collection_kobocollect.html#">Collecte de données avec KoboCollect</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#kobocollect">KoboCollect</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#saved-forms-kobocollect">Formulaires enregistrés</a></p>
+</section>
+<hr class="docutils" />
+<section id="calcul">
+<h2>Calcul<a class="headerlink" href="#calcul" title="Lien vers cette rubrique">¶</a></h2>
+<p>Expression automatisée dans un formulaire qui génère une valeur à partir d’autres réponses ou de règles prédéfinies, sans que le répondant ait à saisir la valeur manuellement.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/calculate_questions.html">Ajouter des calculs avec le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/calculations_xls.html">Ajouter des calculs dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#functions">Fonctions</a></p>
+</section>
+<hr class="docutils" />
+<section id="selection-en-cascade">
+<h2>Sélection en cascade<a class="headerlink" href="#selection-en-cascade" title="Lien vers cette rubrique">¶</a></h2>
+<p>Méthode permettant de restreindre les options de réponse sur plusieurs questions à choix unique, où les choix de chaque question sont filtrés en fonction de la sélection précédente du répondant.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/cascading_select.html">Ajouter des questions à sélection en cascade dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/choice_filters_xls.html">Ajouter des filtres de choix dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#choice-filter">Filtre de choix</a></p>
+</section>
+<hr class="docutils" />
+<section id="filtre-de-choix">
+<h2>Filtre de choix<a class="headerlink" href="#filtre-de-choix" title="Lien vers cette rubrique">¶</a></h2>
+<p>Condition appliquée à une question à choix multiple dans XLSForm qui limite la liste des choix disponibles en fonction d’une réponse précédente ou d’une autre variable du formulaire.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/choice_filters_xls.html">Ajouter des filtres de choix dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#cascading-select">Sélection en cascade</a></p>
+</section>
+<hr class="docutils" />
+<section id="nom-du-champ">
+<h2>Nom du champ<a class="headerlink" href="#nom-du-champ" title="Lien vers cette rubrique">¶</a></h2>
+<p>Noms courts internes attribués aux questions, utilisés pour stocker et référencer les données dans un formulaire. Ces noms sont également appelés <strong>noms de questions</strong> dans XLSForm, et parfois désignés comme <strong>valeurs XML</strong> ou <strong>en-têtes</strong> dans l’interface utilisateur. Exporter vos données en utilisant les valeurs XML et les en-têtes peut faciliter la gestion et l’analyse des données.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options.html#data-column-name">Options de questions dans le Formbuilder</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#label">Libellé</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#xml-value">Valeur XML</a></p>
+</section>
+<hr class="docutils" />
+<section id="rapports-de-donnees">
+<h2>Rapports de données<a class="headerlink" href="#rapports-de-donnees" title="Lien vers cette rubrique">¶</a></h2>
+<p>Rapports automatisés dans la vue <strong>DONNÉES &gt; Rapports</strong> qui affichent les données de votre projet sous forme de graphiques et de tableaux. Les rapports peuvent être personnalisés pour ajuster les questions affichées et la façon dont les résultats sont visualisés.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/creating_custom_reports.html">Visualiser vos données à l'aide de rapports personnalisés</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="langue-par-defaut">
+<h2>Langue par défaut<a class="headerlink" href="#langue-par-defaut" title="Lien vers cette rubrique">¶</a></h2>
+<p>Langue affichée par défaut à l’ouverture d’un formulaire, généralement la langue utilisée lors de la conception du formulaire ou la langue principale prévue pour la collecte de données.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/collecting_data_multiple_languages.html">Collecter des données dans plusieurs langues</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="valeur-par-defaut">
+<h2>Valeur par défaut<a class="headerlink" href="#valeur-par-defaut" title="Lien vers cette rubrique">¶</a></h2>
+<p>Réponse prédéfinie qui apparaît automatiquement au chargement d’un formulaire, permettant aux répondants de conserver la valeur telle quelle ou de la remplacer par leur propre réponse.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options.html#default-response">Options de questions dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options_xls.html">Options de questions dans XLSForm</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="deployer">
+<h2>Déployer<a class="headerlink" href="#deployer" title="Lien vers cette rubrique">¶</a></h2>
+<p>Publier un formulaire pour qu’il devienne actif et prêt pour la collecte de données.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/deploy_form_new_project.html">Déployer vos formulaires pour la collecte de données</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#redeploy">Redéployer</a></p>
+</section>
+<hr class="docutils" />
+<section id="projets-deployes">
+<h2>Projets déployés<a class="headerlink" href="#projets-deployes" title="Lien vers cette rubrique">¶</a></h2>
+<p>Projets qui ont été publiés et sont prêts pour la collecte de données, permettant aux utilisateurs d’ouvrir le formulaire et de soumettre des réponses.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/managing_projects.html">Gestion de projets dans KoboToolbox</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#archived-projects">Projets archivés</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#draft-projects">Projets en brouillon</a></p>
+</section>
+<hr class="docutils" />
+<section id="brouillons">
+<h2>Brouillons<a class="headerlink" href="#brouillons" title="Lien vers cette rubrique">¶</a></h2>
+<p>Formulaires qui ont été commencés mais pas encore envoyés au serveur. Les brouillons peuvent être rouverts, modifiés et finalisés ultérieurement. Dans KoboCollect, les brouillons sont stockés dans la section <strong>Brouillons</strong> de l’application. Lors de l’utilisation de formulaires web, les brouillons sont stockés localement dans le navigateur web.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/data_collection_kobocollect.html#">Collecte de données avec KoboCollect</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/data_through_webforms.html">Collecte de données via des formulaires web</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#kobocollect">KoboCollect</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#saved-forms-kobocollect">Formulaires enregistrés</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#web-forms">Formulaires web</a></p>
+</section>
+<hr class="docutils" />
+<section id="projets-en-brouillon">
+<h2>Projets en brouillon<a class="headerlink" href="#projets-en-brouillon" title="Lien vers cette rubrique">¶</a></h2>
+<p>Projets encore en cours de développement ou de modification qui ne sont pas encore déployés et ne peuvent donc pas recevoir de soumissions.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/managing_projects.html">Gestion de projets dans KoboToolbox</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#archived-projects">Projets archivés</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#deployed-projects">Projets déployés</a></p>
+</section>
+<hr class="docutils" />
+<section id="liaison-dynamique-de-projets">
+<h2>Liaison dynamique de projets<a class="headerlink" href="#liaison-dynamique-de-projets" title="Lien vers cette rubrique">¶</a></h2>
+<p>Fonctionnalité permettant à un formulaire d’accéder aux soumissions d’un autre projet KoboToolbox, de sorte que certains champs de données sont automatiquement récupérés et disponibles lors de la collecte de données.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/dynamic_data_attachment_formbuilder.html">Liaison dynamique de projets avec le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/dynamic_data_attachment.html">Liaison dynamique de projets avec XLSForm</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="chiffrement">
+<h2>Chiffrement<a class="headerlink" href="#chiffrement" title="Lien vers cette rubrique">¶</a></h2>
+<p>Fonctionnalité de sécurité qui protège les soumissions de formulaires en encodant les données de sorte qu’elles ne puissent être déchiffrées que par une personne disposant de la clé privée appropriée.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/encrypting_forms.html">Chiffrer vos formulaires</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="enqueteur">
+<h2>Enquêteur<a class="headerlink" href="#enqueteur" title="Lien vers cette rubrique">¶</a></h2>
+<p>Personne qui collecte des données en complétant un formulaire lors d’un entretien ou d’une visite de terrain, sur un appareil mobile ou via un formulaire web.</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#kobocollect">KoboCollect</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#web-forms">Formulaires web</a></p>
+</section>
+<hr class="docutils" />
+<section id="le-serveur-kobotoolbox-union-europeenne">
+<h2>Le serveur KoboToolbox Union européenne<a class="headerlink" href="#le-serveur-kobotoolbox-union-europeenne" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le serveur KoboToolbox hébergé dans l’Union européenne, que les utilisateurs peuvent sélectionner pour stocker et gérer leurs projets et données.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/creating_account.html">Créer un compte KoboToolbox</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#global-kobotoolbox-server">Le serveur KoboToolbox mondial</a></p>
+</section>
+<hr class="docutils" />
+<section id="logique-de-formulaire">
+<h2>Logique de formulaire<a class="headerlink" href="#logique-de-formulaire" title="Lien vers cette rubrique">¶</a></h2>
+<p>Ensemble de règles et de conditions qui contrôlent le comportement d’un formulaire, notamment la logique de saut, les critères de validation, les calculs et d’autres actions automatisées qui répondent aux saisies des utilisateurs.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/form_logic.html">Introduction à la logique de formulaire dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/form_logic_xls.html">Introduction à la logique de formulaire dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#skip-logic">Logique de saut</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#validation-criteria">Critères de validation</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#choice-filter">Filtre de choix</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#calculation">Calcul</a></p>
+</section>
+<hr class="docutils" />
+<section id="formbuilder">
+<h2>Formbuilder<a class="headerlink" href="#formbuilder" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’interface de création de formulaires KoboToolbox <strong>(KoboToolbox Formbuilder)</strong> est un outil facile à utiliser intégré à la plateforme KoboToolbox qui vous permet de créer, modifier et organiser les questions d’un formulaire via une interface visuelle, sans nécessiter de compétences techniques particulières.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/formbuilder.html">Découvrir l'interface de création de formulaires</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#xlsform">XLSForm</a></p>
+</section>
+<hr class="docutils" />
+<section id="fonctions">
+<h2>Fonctions<a class="headerlink" href="#fonctions" title="Lien vers cette rubrique">¶</a></h2>
+<p>Opérations utilisées dans les calculs ou expressions d’un formulaire pour traiter des données, telles que l’exécution de calculs mathématiques, la manipulation de dates ou la modification de valeurs textuelles.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/functions_xls.html">Utiliser des fonctions avec XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#calculation">Calcul</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#form-logic">Logique de formulaire</a></p>
+</section>
+<hr class="docutils" />
+<section id="reglement-general-sur-la-protection-des-donnees-rgpd">
+<h2>Règlement général sur la protection des données (RGPD)<a class="headerlink" href="#reglement-general-sur-la-protection-des-donnees-rgpd" title="Lien vers cette rubrique">¶</a></h2>
+<p>Règlement de l’Union européenne sur la protection des données qui définit les règles relatives à la collecte, au stockage et au traitement des données personnelles, notamment les exigences en matière de confidentialité, de sécurité et de consentement des utilisateurs lors du traitement des données dans KoboToolbox.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/gdpr.html">Règlement général sur la protection des données (RGPD)</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="le-serveur-kobotoolbox-mondial">
+<h2>Le serveur KoboToolbox mondial<a class="headerlink" href="#le-serveur-kobotoolbox-mondial" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le serveur KoboToolbox hébergé aux États-Unis, que les utilisateurs peuvent sélectionner pour stocker et gérer leurs projets et données.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/creating_account.html">Créer un compte KoboToolbox</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#european-union-kobotoolbox-server">Le serveur KoboToolbox Union européenne</a></p>
+</section>
+<hr class="docutils" />
+<section id="instructions-supplementaires-guidance-hint">
+<h2>Instructions supplémentaires (guidance hint)<a class="headerlink" href="#instructions-supplementaires-guidance-hint" title="Lien vers cette rubrique">¶</a></h2>
+<p>Instructions complémentaires pour une question, masquées derrière une section dépliable que le répondant peut ouvrir pour consulter des indications supplémentaires lors de la collecte de données.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options.html#guidance-hint">Options de questions dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options_xls.html">Options de questions dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#regular-hint">Indice de question de base (hint)</a></p>
+</section>
+<hr class="docutils" />
+<section id="balises-hxl-langage-d-echange-humanitaire">
+<h2>Balises HXL (langage d’échange humanitaire)<a class="headerlink" href="#balises-hxl-langage-d-echange-humanitaire" title="Lien vers cette rubrique">¶</a></h2>
+<p>Hashtags standardisés ajoutés aux jeux de données pour améliorer l’interopérabilité, permettant aux données d’être facilement comprises, fusionnées et analysées par différentes organisations humanitaires et différents outils.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options.html#hxl">Options de questions dans le Formbuilder</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="kobo">
+<h2>Kobo<a class="headerlink" href="#kobo" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’organisation Kobo est une organisation à but non lucratif qui développe et maintient KoboToolbox, soutenant la recherche mondiale, la réponse humanitaire et d’autres initiatives d’intérêt général grâce à des outils de collecte de données ouverts et accessibles.</p>
+<p class="note">
+  Pour plus d'informations, consultez <a class="reference external" href="https://www.kobo.ngo">Kobo.ngo</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#kobotoolbox">KoboToolbox</a></p>
+</section>
+<hr class="docutils" />
+<section id="kobocollect">
+<h2>KoboCollect<a class="headerlink" href="#kobocollect" title="Lien vers cette rubrique">¶</a></h2>
+<p>L’application Android KoboCollect est utilisée pour la collecte mobile de données. Elle permet aux enquêteurs de télécharger des formulaires, de les compléter hors ligne et de soumettre les données une fois connectés. C’est l’un des deux moyens de collecter des données avec KoboToolbox, aux côtés des formulaires web.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/kobocollect_on_android_latest.html">Configurer l'application KoboCollect</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#web-forms">Formulaires web</a></p>
+</section>
+<hr class="docutils" />
+<section id="kobotoolbox">
+<h2>KoboToolbox<a class="headerlink" href="#kobotoolbox" title="Lien vers cette rubrique">¶</a></h2>
+<p>Ensemble d’outils permettant de concevoir des formulaires, de collecter des données et de gérer des projets, utilisé à l’échelle mondiale pour la recherche, le travail humanitaire et d’autres initiatives d’intérêt général.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/about_kobotoolbox.html">À propos de KoboToolbox : collecte de données accessible</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#kobo">Kobo</a></p>
+</section>
+<hr class="docutils" />
+<section id="libelle">
+<h2>Libellé<a class="headerlink" href="#libelle" title="Lien vers cette rubrique">¶</a></h2>
+<p>Texte affiché aux répondants pour une question ou une option de réponse lors de la collecte de données. Les libellés peuvent être traduits en plusieurs langues.</p>
+</section>
+<hr class="docutils" />
+<section id="bibliotheque">
+<h2>Bibliothèque<a class="headerlink" href="#bibliotheque" title="Lien vers cette rubrique">¶</a></h2>
+<p>Collection de questions réutilisables ou de modèles de formulaires pouvant être ajoutés à de nouveaux projets, vous aidant à concevoir des formulaires plus efficacement. Les bibliothèques peuvent également être partagées avec d’autres utilisateurs pour une utilisation collaborative.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/question_library.html">Utiliser la bibliothèque de questions de KoboToolbox</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#public-collections">Collections publiques</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#library-locking">Verrouillage de formulaires</a></p>
+</section>
+<hr class="docutils" />
+<section id="verrouillage-de-formulaires">
+<h2>Verrouillage de formulaires<a class="headerlink" href="#verrouillage-de-formulaires" title="Lien vers cette rubrique">¶</a></h2>
+<p>Fonctionnalité qui contrôle la façon dont les modèles de la bibliothèque peuvent être modifiés après leur utilisation pour créer de nouveaux projets.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/library_locking.html">Verrouillage de questionnaire avec XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#library">Bibliothèque</a></p>
+</section>
+<hr class="docutils" />
+<section id="metadonnees">
+<h2>Métadonnées<a class="headerlink" href="#metadonnees" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les métadonnées de formulaire sont des informations facultatives ajoutées à une soumission qui fournissent un contexte sur la façon ou le moment où les données ont été collectées, tels que l’identifiant de l’appareil, les heures de début et de fin, ou la localisation. Les utilisateurs doivent activer ces champs dans le formulaire pour qu’ils soient collectés.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/form_meta.html">Ajouter des métadonnées dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/metadata_xls.html">Métadonnées de formulaires dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#system-generated-submission-fields">Champs de soumission générés par le système</a></p>
+</section>
+<hr class="docutils" />
+<section id="proprietaire">
+<h2>Propriétaire<a class="headerlink" href="#proprietaire" title="Lien vers cette rubrique">¶</a></h2>
+<p>Utilisateur disposant d’un contrôle total sur un projet KoboToolbox, notamment la gestion de ses données et paramètres, la modification du formulaire, et l’attribution ou la modification des droits d’accès pour les autres utilisateurs.</p>
+</section>
+<hr class="docutils" />
+<section id="projet-kobocollect">
+<h2>Projet (KoboCollect)<a class="headerlink" href="#projet-kobocollect" title="Lien vers cette rubrique">¶</a></h2>
+<p>Dans l’application KoboCollect, un projet désigne un compte KoboToolbox auquel l’application est connectée. Chaque compte connecté apparaît comme son propre projet et peut contenir plusieurs formulaires pour la collecte de données.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/kobocollect_on_android_latest.html">Configurer l'application KoboCollect</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#kobocollect">KoboCollect</a></p>
+</section>
+<hr class="docutils" />
+<section id="projet-kobotoolbox">
+<h2>Projet (KoboToolbox)<a class="headerlink" href="#projet-kobotoolbox" title="Lien vers cette rubrique">¶</a></h2>
+<p>Un projet dans KoboToolbox contient un formulaire, ses paramètres et toutes les données soumises à ce formulaire, y compris les fichiers multimédias du projet.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/managing_projects.html">Gestion de projets dans KoboToolbox</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#kobotoolbox">KoboToolbox</a></p>
+</section>
+<hr class="docutils" />
+<section id="droits-d-acces-au-niveau-du-projet">
+<h2>Droits d’accès au niveau du projet<a class="headerlink" href="#droits-d-acces-au-niveau-du-projet" title="Lien vers cette rubrique">¶</a></h2>
+<p>Paramètres qui contrôlent qui peut accéder à un projet et à ses données au niveau du projet, notamment des options telles que l’autorisation de soumissions sans authentification, la mise en public d’un projet, le transfert de propriété et la suppression de projets partagés.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/project_sharing_settings.html">Droits d'accès au niveau du projet</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#user-level-permissions">Droits d’accès au niveau de l’utilisateur</a></p>
+</section>
+<hr class="docutils" />
+<section id="suivi-de-l-historique-du-projet">
+<h2>Suivi de l’historique du projet<a class="headerlink" href="#suivi-de-l-historique-du-projet" title="Lien vers cette rubrique">¶</a></h2>
+<p>Le suivi de l’historique du projet fournit un enregistrement détaillé de l’activité du projet, notamment les mises à jour du formulaire, les modifications des données et les changements apportés aux paramètres du projet.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/activity_logs.html">Suivi de l'activité du projet et du compte</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#project-kobotoolbox">Projet (KoboToolbox)</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#account-access-logs">Suivi d’accès au compte</a></p>
+</section>
+<hr class="docutils" />
+<section id="page-d-accueil-projets">
+<h2>Page d’accueil Projets<a class="headerlink" href="#page-d-accueil-projets" title="Lien vers cette rubrique">¶</a></h2>
+<p>La page d’accueil Projets est le tableau de bord principal affiché par défaut lorsque vous vous connectez à votre compte KoboToolbox. Elle répertorie tous vos projets et des informations clés telles que le statut, la propriété, les dates de dernière modification et le nombre de soumissions, avec un accès rapide aux actions du projet.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/managing_projects.html">Gestion de projets dans KoboToolbox</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="collections-publiques">
+<h2>Collections publiques<a class="headerlink" href="#collections-publiques" title="Lien vers cette rubrique">¶</a></h2>
+<p>Fonctionnalité permettant aux utilisateurs de partager publiquement des modèles de formulaires ou des questions sélectionnés depuis leur bibliothèque, les rendant accessibles à tous pour consultation et réutilisation.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/using_public_collections.html">Collections publiques dans la bibliothèque KoboToolbox</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#library">Bibliothèque</a></p>
+</section>
+<hr class="docutils" />
+<section id="extraction-de-donnees">
+<h2>Extraction de données<a class="headerlink" href="#extraction-de-donnees" title="Lien vers cette rubrique">¶</a></h2>
+<p>Fonctionnalité permettant à un formulaire de récupérer des valeurs depuis un fichier CSV externe lors de la collecte de données, en remplissant automatiquement des champs spécifiques à partir d’une valeur correspondante.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/pull_data_kobotoolbox.html">Extraire des données d'un fichier CSV externe</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="groupe-de-questions">
+<h2>Groupe de questions<a class="headerlink" href="#groupe-de-questions" title="Lien vers cette rubrique">¶</a></h2>
+<p>Ensemble de questions liées regroupées dans un formulaire pour améliorer la structure et l’organisation. Les groupes de questions peuvent être affichés sur le même écran, ignorés en bloc à l’aide de la logique de saut, ou répétés pour collecter plusieurs séries de réponses.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/group_repeat.html">Groupes et groupes répétés dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/grouping_questions_xls.html">Groupes de questions dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#repeat-group">Groupe répété</a></p>
+</section>
+<hr class="docutils" />
+<section id="referencement-de-questions">
+<h2>Référencement de questions<a class="headerlink" href="#referencement-de-questions" title="Lien vers cette rubrique">¶</a></h2>
+<p>Utilisation des réponses d’une question ailleurs dans le formulaire, par exemple pour afficher une réponse précédente dans le texte d’une question ultérieure ou pour l’utiliser dans des calculs, la logique de saut ou les critères de validation.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/form_logic.html#question-referencing">Introduction à la logique de formulaire dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/form_logic_xls.html">Introduction à la logique de formulaire dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#form-logic">Logique de formulaire</a></p>
+</section>
+<hr class="docutils" />
+<section id="type-de-question">
+<h2>Type de question<a class="headerlink" href="#type-de-question" title="Lien vers cette rubrique">¶</a></h2>
+<p>Catégorie de question utilisée dans un formulaire, qui détermine la façon dont les répondants fournissent leurs réponses, par exemple texte, chiffre, choix unique ou notation.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/question_types.html">Ajouter des questions avec le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/question_types_xls.html">Types de questions dans XLSForm</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="redeployer">
+<h2>Redéployer<a class="headerlink" href="#redeployer" title="Lien vers cette rubrique">¶</a></h2>
+<p>Mettre à jour un formulaire déjà déployé après y avoir apporté des modifications, en remplaçant la version déployée précédente afin que le formulaire mis à jour puisse être utilisé pour la collecte de données en cours.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/deploy_form_new_project.html">Déployer vos formulaires pour la collecte de données</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#deploy">Déployer</a></p>
+</section>
+<hr class="docutils" />
+<section id="indice-de-question-de-base-hint">
+<h2>Indice de question de base (hint)<a class="headerlink" href="#indice-de-question-de-base-hint" title="Lien vers cette rubrique">¶</a></h2>
+<p>Informations complémentaires affichées directement sous le libellé d’une question pour aider les répondants ou les enquêteurs à comprendre comment y répondre. Les indices de question de base sont toujours visibles dans le formulaire. Ils sont également appelés <strong>indices de question</strong> dans le Formbuilder.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options.html#question-hint">Options de questions dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options_xls.html">Options de questions dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#guidance-hint">Instructions supplémentaires (guidance hint)</a></p>
+</section>
+<hr class="docutils" />
+<section id="groupe-repete">
+<h2>Groupe répété<a class="headerlink" href="#groupe-repete" title="Lien vers cette rubrique">¶</a></h2>
+<p>Ensemble de questions pouvant être répondues plusieurs fois dans un formulaire, permettant aux répondants de saisir des informations répétées telles que les membres d’un ménage, des articles ou des événements.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/group_repeat.html">Groupes et groupes répétés dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/repeat_groups_xls.html">Groupes répétés dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#question-group">Groupe de questions</a></p>
+</section>
+<hr class="docutils" />
+<section id="services-web-rest">
+<h2>Services web REST<a class="headerlink" href="#services-web-rest" title="Lien vers cette rubrique">¶</a></h2>
+<p>Fonctionnalité permettant à KoboToolbox d’envoyer automatiquement des données vers des systèmes externes en transmettant les nouvelles soumissions à un point de terminaison REST spécifié dès leur réception.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/rest_services.html">Utiliser les services REST</a>.
+</p>
+</section>
+<hr class="docutils" />
+<section id="formulaires-enregistres-kobocollect">
+<h2>Formulaires enregistrés (KoboCollect)<a class="headerlink" href="#formulaires-enregistres-kobocollect" title="Lien vers cette rubrique">¶</a></h2>
+<p>Formulaires contenant des données saisies depuis l’application KoboCollect. Cela inclut les brouillons, les formulaires finalisés et les formulaires déjà envoyés au serveur.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/data_collection_kobocollect.html#">Collecte de données avec KoboCollect</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#kobocollect">KoboCollect</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#blank-forms-kobocollect">Formulaires vierges</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#drafts">Brouillons</a></p>
+</section>
+<hr class="docutils" />
+<section id="logique-de-saut">
+<h2>Logique de saut<a class="headerlink" href="#logique-de-saut" title="Lien vers cette rubrique">¶</a></h2>
+<p>Règles qui contrôlent si une question ou un groupe apparaît dans le formulaire, en fonction des réponses précédentes ou d’autres conditions. La logique de saut est également appelée <strong>branchements conditionnels</strong>.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/skip_logic.html">Ajouter une logique de saut dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/skip_logic_xls.html">Ajouter une logique de saut dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#form-logic">Logique de formulaire</a></p>
+</section>
+<hr class="docutils" />
+<section id="soumission">
+<h2>Soumission<a class="headerlink" href="#soumission" title="Lien vers cette rubrique">¶</a></h2>
+<p>Entrée de formulaire complétée envoyée à un projet, contenant toutes les réponses et les fichiers multimédias associés. Une soumission est également appelée <strong>enregistrement</strong>.</p>
+</section>
+<hr class="docutils" />
+<section id="exports-synchronises">
+<h2>Exports synchronisés<a class="headerlink" href="#exports-synchronises" title="Lien vers cette rubrique">¶</a></h2>
+<p>Méthode d’export de données qui se met à jour automatiquement à mesure que de nouvelles soumissions arrivent, permettant à des outils externes tels que Power BI, Excel ou Google Sheets d’accéder en permanence aux données les plus récentes sans téléchargements manuels.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/synchronous_exports.html">Utiliser l'API pour les exports synchronisées</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#application-programming-interface-api">API</a></p>
+</section>
+<hr class="docutils" />
+<section id="champs-de-soumission-generes-par-le-systeme">
+<h2>Champs de soumission générés par le système<a class="headerlink" href="#champs-de-soumission-generes-par-le-systeme" title="Lien vers cette rubrique">¶</a></h2>
+<p>Champs que KoboToolbox crée automatiquement pour chaque soumission, tels que <code class="docutils literal notranslate"><span class="pre">_id</span></code>, <code class="docutils literal notranslate"><span class="pre">_uuid</span></code>, <code class="docutils literal notranslate"><span class="pre">_index</span></code>, <code class="docutils literal notranslate"><span class="pre">_submission_time</span></code>, <code class="docutils literal notranslate"><span class="pre">_submitted_by</span></code> et <code class="docutils literal notranslate"><span class="pre">rootUuid</span></code>. Ces champs permettent d’identifier les enregistrements et de suivre les détails des soumissions, apparaissent automatiquement dans le tableau de données et les exports, et ne peuvent pas être modifiés par les utilisateurs.</p>
+<p class="note">
+    Pour plus d'informations, consultez l'article <a href="https://support.kobotoolbox.org/fr/viewing_validating_data.html#system-generated-submission-fields">Voir et valider vos données</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#metadata">Métadonnées</a></p>
+</section>
+<hr class="docutils" />
+<section id="droits-d-acces-au-niveau-de-l-utilisateur">
+<h2>Droits d’accès au niveau de l’utilisateur<a class="headerlink" href="#droits-d-acces-au-niveau-de-l-utilisateur" title="Lien vers cette rubrique">¶</a></h2>
+<p>Paramètres qui contrôlent ce que des utilisateurs spécifiques peuvent faire au sein d’un projet, tels que consulter le formulaire, ajouter des soumissions, modifier des données, valider des soumissions ou gérer les paramètres du projet.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/managing_permissions.html">Droits d'accès au niveau de l'utilisateur</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#project-level-permissions">Droits d’accès au niveau du projet</a></p>
+</section>
+<hr class="docutils" />
+<section id="criteres-de-validation">
+<h2>Critères de validation<a class="headerlink" href="#criteres-de-validation" title="Lien vers cette rubrique">¶</a></h2>
+<p>Règles qui définissent ce qui constitue une réponse acceptable pour une question, par exemple en exigeant qu’un nombre soit compris dans une certaine plage. Les critères de validation sont également appelés <strong>contraintes</strong>.</p>
+<p class="note">
+  Pour plus d'informations, consultez les articles <a class="reference external" href="https://support.kobotoolbox.org/fr/validation_criteria.html">Ajouter des critères de validation dans le Formbuilder</a> et <a class="reference external" href="https://support.kobotoolbox.org/fr/constraints_xls.html">Ajouter des contraintes dans XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#form-logic">Logique de formulaire</a></p>
+</section>
+<hr class="docutils" />
+<section id="formulaires-web">
+<h2>Formulaires web<a class="headerlink" href="#formulaires-web" title="Lien vers cette rubrique">¶</a></h2>
+<p>Formulaires accessibles depuis un navigateur, utilisés pour collecter des données en ligne ou hors ligne, offrant une alternative à l’application Android KoboCollect et compatibles avec tous les principaux appareils.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/data_through_webforms.html">Collecte de données via des formulaires web</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#kobocollect">KoboCollect</a></p>
+</section>
+<hr class="docutils" />
+<section id="xlsform">
+<h2>XLSForm<a class="headerlink" href="#xlsform" title="Lien vers cette rubrique">¶</a></h2>
+<p>Standard de conception de formulaires qui utilise des tableurs Excel pour définir les questions, les choix et la logique de formulaire, offrant une méthode structurée pour créer des formulaires complexes ou avancés pour KoboToolbox.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/edit_forms_excel.html">Introduction à XLSForm</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#formbuilder">Formbuilder</a></p>
+</section>
+<hr class="docutils" />
+<section id="formulaire-xml">
+<h2>Formulaire XML<a class="headerlink" href="#formulaire-xml" title="Lien vers cette rubrique">¶</a></h2>
+<p>Version XML d’un formulaire générée lors du déploiement d’un projet, utilisée par les outils de collecte de données pour exécuter le formulaire et appliquer sa structure, sa logique et ses paramètres. Un formulaire XML est également appelé <strong>XForm</strong>.</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#xlsform">XLSForm</a></p>
+</section>
+<hr class="docutils" />
+<section id="valeur-xml">
+<h2>Valeur XML<a class="headerlink" href="#valeur-xml" title="Lien vers cette rubrique">¶</a></h2>
+<p>Noms courts internes attribués aux choix, utilisés pour stocker et référencer les données dans un formulaire. Ces noms sont également appelés <strong>noms de choix</strong> dans XLSForm. Dans l’interface utilisateur, la valeur XML est parfois utilisée pour désigner les <strong>noms de champs</strong>. Exporter vos données en utilisant les valeurs XML peut faciliter la gestion et l’analyse des données.</p>
+<p class="note">
+  Pour plus d'informations, consultez l'article <a class="reference external" href="https://support.kobotoolbox.org/fr/question_types.html#setting-xml-values-for-option-choices">Définir les valeurs XML pour les choix de réponse</a>.
+</p>
+<p><strong>Terme(s) associé(s) :</strong> <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#label">Libellé</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#data-column-name">Nom du champ</a></p>
+</section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+
+        <div class="page__back-to-top-container">
+          <a href="#top" class="page__back-to-top">Back to top</a>
+        </div>
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Glossaire des termes KoboToolbox"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">Premiers Pas</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Introduction à KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guide de démarrage rapide</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Glossaire des termes KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#compte">Compte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#suivi-d-acces-au-compte">Suivi d’accès au compte</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#interface-de-programmation-d-application-api">Interface de programmation d’application (API)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#apparence">Apparence</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projets-archives">Projets archivés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#audit">Audit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#authentification">Authentification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#enregistrement-audio-d-arriere-plan">Enregistrement audio d’arrière-plan</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cycle-de-facturation">Cycle de facturation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formulaires-vierges-kobocollect">Formulaires vierges (KoboCollect)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#calcul">Calcul</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#selection-en-cascade">Sélection en cascade</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#filtre-de-choix">Filtre de choix</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#nom-du-champ">Nom du champ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rapports-de-donnees">Rapports de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#langue-par-defaut">Langue par défaut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#valeur-par-defaut">Valeur par défaut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deployer">Déployer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projets-deployes">Projets déployés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#brouillons">Brouillons</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projets-en-brouillon">Projets en brouillon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#liaison-dynamique-de-projets">Liaison dynamique de projets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chiffrement">Chiffrement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#enqueteur">Enquêteur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#le-serveur-kobotoolbox-union-europeenne">Le serveur KoboToolbox Union européenne</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#logique-de-formulaire">Logique de formulaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formbuilder">Formbuilder</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fonctions">Fonctions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reglement-general-sur-la-protection-des-donnees-rgpd">Règlement général sur la protection des données (RGPD)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#le-serveur-kobotoolbox-mondial">Le serveur KoboToolbox mondial</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#instructions-supplementaires-guidance-hint">Instructions supplémentaires (guidance hint)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#balises-hxl-langage-d-echange-humanitaire">Balises HXL (langage d’échange humanitaire)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kobo">Kobo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kobocollect">KoboCollect</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#kobotoolbox">KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#libelle">Libellé</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bibliotheque">Bibliothèque</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#verrouillage-de-formulaires">Verrouillage de formulaires</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#metadonnees">Métadonnées</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#proprietaire">Propriétaire</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projet-kobocollect">Projet (KoboCollect)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#projet-kobotoolbox">Projet (KoboToolbox)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#droits-d-acces-au-niveau-du-projet">Droits d’accès au niveau du projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#suivi-de-l-historique-du-projet">Suivi de l’historique du projet</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#page-d-accueil-projets">Page d’accueil Projets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collections-publiques">Collections publiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#extraction-de-donnees">Extraction de données</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#groupe-de-questions">Groupe de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#referencement-de-questions">Référencement de questions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#type-de-question">Type de question</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#redeployer">Redéployer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#indice-de-question-de-base-hint">Indice de question de base (hint)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#groupe-repete">Groupe répété</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#services-web-rest">Services web REST</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formulaires-enregistres-kobocollect">Formulaires enregistrés (KoboCollect)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#logique-de-saut">Logique de saut</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#soumission">Soumission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exports-synchronises">Exports synchronisés</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#champs-de-soumission-generes-par-le-systeme">Champs de soumission générés par le système</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#droits-d-acces-au-niveau-de-l-utilisateur">Droits d’accès au niveau de l’utilisateur</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#criteres-de-validation">Critères de validation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formulaires-web">Formulaires web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#xlsform">XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#formulaire-xml">Formulaire XML</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#valeur-xml">Valeur XML</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Compte et Facturation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Problèmes liés au lien d’activation du compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Réinitialiser votre mot de passe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Paramètres du compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configuration de l’authentification à deux facteurs dans KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utilisation du Formbuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Découvrir l’interface de création de formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Ajouter des questions avec le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Questions de type texte dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Questions à choix multiple dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Question de type Consentement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Questions numériques dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Questions de type date et heure dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Questions multimédias dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Questions GPS dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Questions de type note dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Options de questions dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groupes et groupes répétés dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Ajouter une matrice de questions avec le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Ajouter des traductions dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styliser vos formulaires web dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Ajouter des métadonnées dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction à la logique de formulaire dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Ajouter une logique de saut dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Ajouter des critères de validation dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Ajouter des calculs avec le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Ajouter des questions à sélection en cascade dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Sélectionner des options à partir de fichiers externes dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Liaison dynamique de projets avec le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Utiliser la bibliothèque de questions de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Collections publiques dans la bibliothèque KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utilisation de XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introduction à XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Créer un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Utiliser XLSForm avec KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Types de questions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Gérer les choix de réponse dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Groupes de questions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Groupes répétés dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Options de questions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apparences de questions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Ajouter des traductions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Ajouter des médias à un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introduction à la logique de formulaire dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Utiliser des fonctions avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Utiliser des expressions régulières avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Ajouter une logique de saut dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Ajouter des contraintes dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Ajouter une logique d’obligation conditionnelle dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Ajouter des filtres de choix dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Ajouter des calculs dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Paramètres de formulaires dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personnaliser vos formulaires à l’aide de XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Métadonnées de formulaires dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraire des données d’un fichier CSV externe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Sélectionner des options à partir d’un fichier externe avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Sélectionner des options à partir d’une carte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Sélectionner des options à partir d’une image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Liaison dynamique de projets avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Verrouillage de questionnaire avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importer une collection avec XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Collecte de Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Collecter des données avec KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Déployer vos formulaires pour la collecte de données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecte de données via des formulaires web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configurer l’application KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecte de données avec KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personnaliser les paramètres KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecter des données GPS avec KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecter des données qualitatives avec KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecter des données dans plusieurs langues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Gestion des Projets et Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Aperçu de l’interface KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestion de projets dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Voir et valider vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modifier et supprimer vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporter et télécharger vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Options avancées pour l’export des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestion des données de groupes répétés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introduction aux fichiers et aux médias de projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importer des fichiers multimédias dans un projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gérer les réponses média soumises par les répondants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Droits d’accès au niveau du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Droits d’accès au niveau de l’utilisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Suivi d’activité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Utiliser la fonctionnalité de gestion d’équipe</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Analyse des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Analyse de données avec KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Préparer votre formulaire pour l’analyse des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualiser vos données à l’aide de rapports personnalisés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Cartographier vos données GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcription et traduction de réponses audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Analyse qualitative des réponses audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir vos données pour SPSS et Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Intégrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introduction à l’API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Utiliser l’API pour les exports synchronisées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connexion de KoboToolbox à Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connexion de KoboToolbox à Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Fusionner des données individuelles avec des données répétées via Power Query dans Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Utiliser les services REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporter et télécharger des données vers un logiciel SIG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Intégration de KoboToolbox avec monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migration de l’API v1 vers l’API v2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sécurité et Protection des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Sécurité des données chez KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">Règlement général sur la protection des données (RGPD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Conformité HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Stockage des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Chiffrer vos formulaires</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Ressources Supplémentaires</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Inclure des codes P dans vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Créer des numéros de série uniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Spécifier une réponse autre pour les questions à choix multiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Réduire la taille de fichiers multimédias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Ajouter des calculs et des contraintes dans un tableau de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Ajouter une logique de saut à un tableau de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Ajouter un logo personnalisé</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports bloqués en attente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Télécharger manuellement des soumissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importer des formulaires dans KoboCollect</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Community Forum</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+
+   
+        <br><br>
+  
+
+  <div class="wrapper">
+    <h1>KoboToolbox Academy</h1>
+
+    <p>KoboToolbox Academy offers high quality self-paced courses, created by KoboToolbox experts.</p>
+
+    <a class="button" href="https://academy.kobotoolbox.org">
+      Visit the KoboToolbox Academy
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "glossary",
+      currentTitle: "Glossaire des termes KoboToolbox",
+      currentUrl: ("index.html").replace("index.html", "glossary.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

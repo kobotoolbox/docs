@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Bloqueo de biblioteca &#8212; documentación de KoboToolbox - </title>
+    <title>Bloquear cuestionarios para la biblioteca usando XLSForms &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Descripción general de las herramientas de recolección de datos" href="data-collection-tools.html" />
-    <link rel="prev" title="Funcionalidad de extracción de datos en KoboToolbox" href="pull_data_kobotoolbox.html" />
+    <link rel="next" title="Importar una colección con XLSForm" href="import_collection.html" />
+    <link rel="prev" title="Conexión dinámica de proyectos usando XLSForms" href="dynamic_data_attachment.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,43 +107,163 @@
 
         <section class="page__body" role="main">
           
-  <section id="bloqueo-de-biblioteca">
-<h1>Bloqueo de biblioteca<a class="headerlink" href="#bloqueo-de-biblioteca" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/de5e7dcfcec534ba447ee21ff65cf9fff07723f2/source/library_locking.md" class="reference">30 Sep 2025</a></p>
-<p>«Bloqueo de biblioteca» se refiere a la funcionalidad que permite que varios aspectos de una encuesta sean «<a class="reference internal" href="#locked">bloqueados</a>» cuando se crean a partir de una plantilla que contiene
-<a class="reference internal" href="#restrictions"><span class="xref myst">atributos de bloqueo</span></a>. Todos los aspectos de la edición de un formulario están
-disponibles para ser bloqueados mediante la asignación de «<a class="reference internal" href="#profile"><span class="xref myst">perfiles de bloqueo</span></a>»
-a nivel de formulario, pregunta o grupo. Estos perfiles de bloqueo pueden tener asignadas
-«<a class="reference internal" href="#restriction"><span class="xref myst">restricciones</span></a>» granulares que agrupan funcionalidades de bloqueo. Alternativamente, el formulario puede ser completamente bloqueado, evitando
-todos los aspectos de edición.</p>
+  <section id="bloquear-cuestionarios-para-la-biblioteca-usando-xlsforms">
+<h1>Bloquear cuestionarios para la biblioteca usando XLSForms<a class="headerlink" href="#bloquear-cuestionarios-para-la-biblioteca-usando-xlsforms" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/149e56f3d80934c2c952fd2ca7d057cc6cdbafff/source/library_locking.md" class="reference">21 mar 2026</a></p>
+<p>La <a class="reference external" href="https://support.kobotoolbox.org/es/question_library.html">biblioteca de preguntas de KoboToolbox</a> te permite almacenar y gestionar plantillas, preguntas y bloques para reutilizarlos en múltiples proyectos. <strong>Las plantillas de formulario en la biblioteca</strong> se pueden compartir con los miembros del equipo para garantizar un diseño de formulario coherente y reducir la duplicación de esfuerzos.</p>
+<p>El <strong>bloqueo de biblioteca</strong> amplía esta funcionalidad al permitirte controlar cómo se pueden editar las plantillas una vez que se usan para crear nuevos proyectos. Con el bloqueo, puedes especificar qué preguntas, grupos o configuraciones a nivel de formulario se pueden modificar. Esto es especialmente útil para equipos grandes que trabajan a partir de una plantilla compartida, donde ciertos elementos deben permanecer fijos mientras que otros pueden adaptarse a las necesidades locales.</p>
+<p>Este artículo explica cómo funciona el bloqueo de biblioteca, los tipos de restricciones que puedes aplicar, cómo configurarlos en XLSForm y cómo cargar XLSForms bloqueados en KoboToolbox.</p>
 <p class="note">
-  Actualmente, solo se admite el bloqueo establecido dentro del propio XLSForm, pero se
-  incorporará al editor de formularios de KoboToolbox (Formbuilder) en algún momento en el futuro.
+<strong>Nota:</strong> El bloqueo de biblioteca no está disponible actualmente en el editor de formularios de KoboToolbox (Formbuilder). Para usar esta funcionalidad, debes implementarla mediante XLSForm y luego <a href="https://support.kobotoolbox.org/es/xlsform_with_kobotoolbox.html">cargar tu XLSForm</a> en KoboToolbox.
+<br><br>
+Para obtener más información sobre cómo cargar y usar plantillas en KoboToolbox, consulta <a href="https://support.kobotoolbox.org/es/question_library.html#">Usar la biblioteca de preguntas de KoboToolbox</a>.
 </p>
-<p>Esta funcionalidad puede ser útil en un entorno de equipo grande y distribuido donde se usa una plantilla
-estándar, con algunas funcionalidades bloqueadas, y cada equipo puede hacer los ajustes locales necesarios para sus necesidades. El/la creador/a de la plantilla puede continuar
-haciendo actualizaciones, pero los bloqueos restringirán cambios a aspectos específicos del
-formulario para quienes <a class="reference internal" href="quick_start.html"><span class="std std-doc">creen un proyecto basado en la plantilla</span></a>.</p>
+<section id="introduccion-al-bloqueo-de-biblioteca">
+<h2>Introducción al bloqueo de biblioteca<a class="headerlink" href="#introduccion-al-bloqueo-de-biblioteca" title="Link to this heading">¶</a></h2>
+<p>El bloqueo de biblioteca controla en qué medida <strong>se puede editar</strong> un formulario cuando se crea un proyecto a partir de una plantilla de la biblioteca. Las restricciones se definen en tu XLSForm antes de cargar el formulario.</p>
+<p>Cuando creas una plantilla bloqueada y la compartes a través de tu biblioteca:</p>
+<ul class="simple">
+<li><p>Los usuarios pueden hacer ajustes locales donde las restricciones lo permitan.</p></li>
+<li><p>Los elementos bloqueados aparecen <strong>en gris</strong> en el Formbuilder.</p></li>
+<li><p>Un mensaje encima del formulario indica qué restricciones están activas.</p></li>
+</ul>
+<p>El bloqueo de biblioteca es independiente de los <a class="reference external" href="https://support.kobotoolbox.org/es/managing_permissions.html">permisos del proyecto</a>, que controlan lo que los distintos usuarios pueden hacer dentro de un proyecto implementado.</p>
 <p class="note">
-  Bloquear aspectos de un formulario es independiente de
-  <a class="reference" href="https://support.kobotoolbox.org/es/managing_permissions.html">manejar permisos del proyecto</a>.
+<strong>Nota:</strong> Las restricciones de bloqueo de biblioteca se aplican únicamente en el <strong>Formbuilder</strong> cuando se crea un proyecto a partir de una plantilla bloqueada. Si el XLSForm se descarga y se edita en una hoja de cálculo, las restricciones no impedirán los cambios. Sin embargo, configuraciones de bloqueo incorrectas o no válidas pueden causar errores al volver a cargar el formulario.
 </p>
-<section id="restricciones">
-<h2>Restricciones<a class="headerlink" href="#restricciones" title="Link to this heading">¶</a></h2>
-<p>Hay tres niveles de restricciones que se pueden establecer:</p>
-<ol class="arabic simple">
-<li><p><a class="reference internal" href="#question-level-restrictions"><span class="xref myst">Pregunta</span></a>,</p></li>
-<li><p><a class="reference internal" href="#group-level-restrictions"><span class="xref myst">Grupo</span></a>, y</p></li>
-<li><p><a class="reference internal" href="#form-level-restrictions"><span class="xref myst">Formulario</span></a></p></li>
-</ol>
-<p>Además, hay un booleano <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> que se puede establecer en la hoja <code class="docutils literal notranslate"><span class="pre">settings</span></code>
-que hará que la encuesta esté completamente bloqueada.</p>
-<section id="booleano-kobo-lock-all">
-<h3>Booleano <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#booleano-kobo-lock-all" title="Link to this heading">¶</a></h3>
-<p>Si <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> se establece en <code class="docutils literal notranslate"><span class="pre">True</span></code>, entonces todas las restricciones granulares adicionales
-son redundantes ya que el formulario está <em>completamente</em> bloqueado. Si se establece en <code class="docutils literal notranslate"><span class="pre">False</span></code> <em>o</em>
-se omite de la hoja <code class="docutils literal notranslate"><span class="pre">settings</span></code>, entonces se pueden usar perfiles de bloqueo definidos para
-controlar el comportamiento de bloqueo:</p>
+<p>El bloqueo de biblioteca se configura en tres hojas del XLSForm:</p>
+<ul class="simple">
+<li><p><strong>hoja survey:</strong> Para aplicar restricciones a preguntas y grupos específicos.</p></li>
+<li><p><strong>hoja settings:</strong> Para aplicar restricciones a nivel de formulario y configurar la opción <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code>.</p></li>
+<li><p><strong>hoja kobo–locking-profiles:</strong> Para definir perfiles que agrupan restricciones relacionadas.</p></li>
+</ul>
+<p>En conjunto, estas hojas te permiten definir qué partes del formulario permanecen fijas y cuáles se pueden editar cuando se usa la plantilla para crear nuevos proyectos.</p>
+</section>
+<section id="tipos-de-restricciones">
+<h2>Tipos de restricciones<a class="headerlink" href="#tipos-de-restricciones" title="Link to this heading">¶</a></h2>
+<p>El bloqueo de biblioteca admite restricciones en tres niveles: <strong>pregunta</strong>, <strong>grupo</strong> y <strong>formulario</strong>. Las restricciones definen qué se puede y qué no se puede editar cuando se crea un proyecto a partir de una plantilla bloqueada.</p>
+<p>Además, se puede usar una configuración global (<code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code>) para bloquear el formulario completo.</p>
+<section id="restricciones-a-nivel-de-pregunta">
+<h3>Restricciones a nivel de pregunta<a class="headerlink" href="#restricciones-a-nivel-de-pregunta" title="Link to this heading">¶</a></h3>
+<p>Las restricciones a nivel de pregunta se aplican a preguntas individuales. Puedes aplicar las siguientes restricciones a las preguntas de tu XLSForm:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Restricción</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>choice_add</code></p></td>
+<td class="text-left"><p>Impide agregar nuevas opciones a una pregunta de tipo <strong>selección</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>choice_delete</code></p></td>
+<td class="text-left"><p>Impide eliminar opciones existentes en una pregunta de tipo <strong>selección</strong>.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>choice_value_edit</code></p></td>
+<td class="text-left"><p>Impide editar el nombre de una opción (o valor XML).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>choice_label_edit</code></p></td>
+<td class="text-left"><p>Impide editar la etiqueta de una opción.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>choice_order_edit</code></p></td>
+<td class="text-left"><p>Impide reordenar las opciones en una pregunta de tipo <strong>selección</strong>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>question_delete</code></p></td>
+<td class="text-left"><p>Impide eliminar una pregunta.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>question_label_edit</code></p></td>
+<td class="text-left"><p>Impide editar la etiqueta o sugerencia de una pregunta.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>question_settings_edit</code></p></td>
+<td class="text-left"><p>Impide editar la configuración de la pregunta, incluido el nombre de la pregunta. Esto no incluye la lógica de omisión ni los criterios de validación.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>question_skip_logic_edit</code></p></td>
+<td class="text-left"><p>Impide editar las condiciones de lógica de omisión.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>question_validation_edit</code></p></td>
+<td class="text-left"><p>Impide editar los criterios de validación.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="restricciones-a-nivel-de-grupo">
+<h3>Restricciones a nivel de grupo<a class="headerlink" href="#restricciones-a-nivel-de-grupo" title="Link to this heading">¶</a></h3>
+<p>Las restricciones a nivel de grupo se aplican a los <a class="reference external" href="https://support.kobotoolbox.org/es/grouping_questions_xls.html">grupos de preguntas</a>. Puedes aplicar las siguientes restricciones a los grupos de tu XLSForm:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>group_delete</code></p></td>
+<td class="text-left"><p>Impide eliminar un grupo.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>group_split</code></p></td>
+<td class="text-left"><p>Impide desagrupar preguntas.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>group_label_edit</code></p></td>
+<td class="text-left"><p>Impide editar la etiqueta del grupo.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>group_question_add</code></p></td>
+<td class="text-left"><p>Impide agregar o clonar preguntas dentro de un grupo.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>group_question_delete</code></p></td>
+<td class="text-left"><p>Impide eliminar preguntas de un grupo.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>group_question_order_edit</code></p></td>
+<td class="text-left"><p>Impide reordenar las preguntas dentro de un grupo.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>group_settings_edit</code></p></td>
+<td class="text-left"><p>Impide editar la configuración del grupo, incluido el nombre del grupo. Esto no incluye la lógica de omisión.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>group_skip_logic_edit</code></p></td>
+<td class="text-left"><p>Impide editar la lógica de omisión de un grupo.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="restricciones-a-nivel-de-formulario">
+<h3>Restricciones a nivel de formulario<a class="headerlink" href="#restricciones-a-nivel-de-formulario" title="Link to this heading">¶</a></h3>
+<p>Las restricciones a nivel de formulario se aplican al formulario completo. Puedes aplicar las siguientes restricciones a tu XLSForm:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>form_appearance</code></p></td>
+<td class="text-left"><p>Impide cambios en el <a class="reference external" href="https://support.kobotoolbox.org/es/form_style_xls.html">tema</a> del formulario.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>form_replace</code></p></td>
+<td class="text-left"><p>Impide reemplazar el formulario en KoboToolbox mediante la opción <i class="k-icon k-icon-replace"></i> <strong>Reemplazar formulario</strong>.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>group_add</code></p></td>
+<td class="text-left"><p>Impide crear nuevos grupos.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>question_add</code></p></td>
+<td class="text-left"><p>Impide agregar o clonar preguntas en un grupo.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>question_order_edit</code></p></td>
+<td class="text-left"><p>Impide reordenar las preguntas.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>language_edit</code></p></td>
+<td class="text-left"><p>Impide editar las traducciones.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>form_meta_edit</code></p></td>
+<td class="text-left"><p>Impide editar las preguntas de <a class="reference external" href="https://support.kobotoolbox.org/es/metadata_xls.html">metadatos</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="bloquear-un-formulario-completo">
+<h3>Bloquear un formulario completo<a class="headerlink" href="#bloquear-un-formulario-completo" title="Link to this heading">¶</a></h3>
+<p>La configuración <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> se puede agregar a la <strong>hoja settings</strong> de tu XLSForm.</p>
+<ul class="simple">
+<li><p>Si se configura como <code class="docutils literal notranslate"><span class="pre">TRUE</span></code>, el formulario completo queda bloqueado y todas las restricciones granulares se vuelven redundantes.</p></li>
+<li><p>Si se configura como <code class="docutils literal notranslate"><span class="pre">FALSE</span></code> (u se omite), solo se aplican las restricciones definidas en tus perfiles de bloqueo.</p></li>
+</ul>
 <p><strong>hoja settings</strong></p>
 <table class="docutils align-default">
 <thead>
@@ -151,149 +271,27 @@ controlar el comportamiento de bloqueo:</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>true</p></td>
+<tr class="row-even"><td class="text-left"><p>TRUE</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>settings</p></td>
 </tr>
 </tbody>
 </table>
-<p>Los valores aceptados para <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> son los mismos que en la hoja <code class="docutils literal notranslate"><span class="pre">survey</span></code> que
-<a class="reference external" href="https://github.com/XLSForm/pyxform/blob/43ea039250f44cff23b3ad10740fca54dfa12383/pyxform/aliases.py#L127-L142">pyxform admite</a>.
-No se generará ningún error si se usa un valor no válido, solo que el formulario no
-funcionará como se espera desde la perspectiva del/de la usuario/a.</p>
-<p class="note">
-  Ten en cuenta que el nombre de la restricción, como <code>choice_add</code> a continuación, está
-  <strong>predefinido</strong> y solo las restricciones enumeradas a continuación son opciones válidas.
-</p>
-</section>
-<section id="restricciones-a-nivel-de-pregunta">
-<h3>Restricciones a nivel de pregunta<a class="headerlink" href="#restricciones-a-nivel-de-pregunta" title="Link to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
-<th class="head text-left"><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_add</span></code></p></td>
-<td class="text-left"><p>Agregar nuevas opciones a una pregunta <code class="docutils literal notranslate"><span class="pre">select_*</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_delete</span></code></p></td>
-<td class="text-left"><p>Eliminar una opción existente de una pregunta <code class="docutils literal notranslate"><span class="pre">select_*</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_value_edit</span></code></p></td>
-<td class="text-left"><p>Editar un <code class="docutils literal notranslate"><span class="pre">name</span></code> de opción</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_label_edit</span></code></p></td>
-<td class="text-left"><p>Editar una <code class="docutils literal notranslate"><span class="pre">label</span></code> de opción</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">choice_order_edit</span></code></p></td>
-<td class="text-left"><p>Reordenar las opciones de una pregunta <code class="docutils literal notranslate"><span class="pre">select_*</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_delete</span></code></p></td>
-<td class="text-left"><p>Eliminar una pregunta dada</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_label_edit</span></code></p></td>
-<td class="text-left"><p>Editar una <code class="docutils literal notranslate"><span class="pre">label</span></code> o <code class="docutils literal notranslate"><span class="pre">hint</span></code> existente</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_settings_edit</span></code></p></td>
-<td class="text-left"><p>Editar la configuración de una pregunta (aparte de <code class="docutils literal notranslate"><span class="pre">constraint</span></code> o <code class="docutils literal notranslate"><span class="pre">relevant</span></code>)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_skip_logic_edit</span></code></p></td>
-<td class="text-left"><p>Editar la configuración de lógica de salto de una pregunta (<code class="docutils literal notranslate"><span class="pre">relevant</span></code>)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_validation_edit</span></code></p></td>
-<td class="text-left"><p>Editar la configuración de criterios de validación de una pregunta (<code class="docutils literal notranslate"><span class="pre">constraint</span></code>)</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="restricciones-a-nivel-de-grupo">
-<h3>Restricciones a nivel de grupo<a class="headerlink" href="#restricciones-a-nivel-de-grupo" title="Link to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
-<th class="head text-left"><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_delete</span></code></p></td>
-<td class="text-left"><p>Botón <strong>Eliminar todo</strong> del modal de eliminar grupo (o botón de eliminar grupo si se combina con <code class="docutils literal notranslate"><span class="pre">group_split</span></code>)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_split</span></code></p></td>
-<td class="text-left"><p>Botón <strong>Desagrupar preguntas</strong> del modal de eliminar grupo (o botón de eliminar grupo si se combina con <code class="docutils literal notranslate"><span class="pre">group_delete</span></code>)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_label_edit</span></code></p></td>
-<td class="text-left"><p>Editar una <code class="docutils literal notranslate"><span class="pre">label</span></code> de grupo</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_question_add</span></code></p></td>
-<td class="text-left"><p>Agregar o clonar preguntas dentro del grupo dado (grupos hijos incluidos)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_question_delete</span></code></p></td>
-<td class="text-left"><p>Eliminar cualquier pregunta del grupo dado (preguntas de grupos hijos incluidas)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_question_order_edit</span></code></p></td>
-<td class="text-left"><p>Cambiar el orden de las preguntas dentro del grupo dado (grupos hijos incluidos)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_settings_edit</span></code></p></td>
-<td class="text-left"><p>Cambiar <strong>Toda la configuración del grupo</strong> desde la <strong>Configuración</strong> del grupo dado</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_skip_logic_edit</span></code></p></td>
-<td class="text-left"><p>Cambiar <strong>Lógica de salto</strong> desde la <strong>Configuración</strong> del grupo dado</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="restricciones-a-nivel-de-formulario">
-<h3>Restricciones a nivel de formulario<a class="headerlink" href="#restricciones-a-nivel-de-formulario" title="Link to this heading">¶</a></h3>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Nombre</p></th>
-<th class="head text-left"><p>Descripción</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">form_appearance</span></code></p></td>
-<td class="text-left"><p>Cambiar la apariencia del formulario desde <strong>Diseño y Configuración</strong></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">form_replace</span></code></p></td>
-<td class="text-left"><p>Reemplazar formulario usando el modal <strong>Reemplazar formulario</strong></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">group_add</span></code></p></td>
-<td class="text-left"><p>Botón para agrupar preguntas</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_add</span></code></p></td>
-<td class="text-left"><p>Usar la opción <strong>Insertar selección en cascada</strong> y cada botón <strong>Agregar pregunta</strong> y <strong>Clonar pregunta</strong></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question_order_edit</span></code></p></td>
-<td class="text-left"><p>Cambiar el orden de cualquier pregunta</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">language_edit</span></code></p></td>
-<td class="text-left"><p>Editar idiomas en el <strong>Modal de traducciones</strong></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">form_meta_edit</span></code></p></td>
-<td class="text-left"><p>Editar preguntas meta desde <strong>Diseño y Configuración</strong></p></td>
-</tr>
-</tbody>
-</table>
 </section>
 </section>
-<section id="configuracion-de-xlsform">
-<h2>Configuración de XLSForm<a class="headerlink" href="#configuracion-de-xlsform" title="Link to this heading">¶</a></h2>
-<p>Hay tres hojas donde se definen y establecen los perfiles de bloqueo: <code class="docutils literal notranslate"><span class="pre">survey</span></code>,
-<code class="docutils literal notranslate"><span class="pre">settings</span></code> y <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>. La hoja <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>
-no está oficialmente admitida por <a class="reference external" href="https://github.com/XLSForm/pyxform">pyxform</a> y
-es específica de KoboToolbox.</p>
-<p>Las restricciones a nivel de formulario se definen en la hoja <code class="docutils literal notranslate"><span class="pre">settings</span></code> y las restricciones a nivel de pregunta y
-grupo se definen en la hoja <code class="docutils literal notranslate"><span class="pre">survey</span></code>.</p>
-<p>Desde la hoja <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>, todos los perfiles de bloqueo se
-definen en una estructura de matriz, usando la palabra clave «<a class="reference internal" href="#locked">locked</a>» para asignar una
-«<a class="reference internal" href="#restriction"><span class="xref myst">restricción</span></a>» a un «<a class="reference internal" href="#profile"><span class="xref myst">perfil</span></a>» específico. Por ejemplo:</p>
-<p><strong>kobo–locking-profiles</strong></p>
-<p>Define los perfiles y asígnales restricciones. No hay límite en el
-número de perfiles que se pueden definir (<code class="docutils literal notranslate"><span class="pre">profile_1</span></code>, …, <code class="docutils literal notranslate"><span class="pre">profile_n</span></code>) pero hay
-<strong>solo tres</strong> colores que diferencian su apariencia de bloqueo en el
-editor de formularios.</p>
+<section id="configurar-el-bloqueo-de-biblioteca-en-xlsform">
+<h2>Configurar el bloqueo de biblioteca en XLSForm<a class="headerlink" href="#configurar-el-bloqueo-de-biblioteca-en-xlsform" title="Link to this heading">¶</a></h2>
+<section id="definir-perfiles-de-bloqueo">
+<h3>Definir perfiles de bloqueo<a class="headerlink" href="#definir-perfiles-de-bloqueo" title="Link to this heading">¶</a></h3>
+<p>Los perfiles de bloqueo son <strong>conjuntos de restricciones</strong> que se pueden aplicar a preguntas, grupos o al formulario completo. Se definen en la <strong>hoja kobo–locking-profiles</strong> del XLSForm y luego se aplican en las hojas <code class="docutils literal notranslate"><span class="pre">survey</span></code> y <code class="docutils literal notranslate"><span class="pre">settings</span></code>. Puedes crear tantos perfiles como necesites.</p>
+<p>Para definir perfiles de bloqueo en tu XLSForm:</p>
+<ol class="arabic simple">
+<li><p>Crea una nueva hoja llamada <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>.</p></li>
+<li><p>Agrega una columna <code class="docutils literal notranslate"><span class="pre">restriction</span></code>, que puede incluir cualquier restricción de las tablas anteriores.</p></li>
+<li><p>Crea una columna por cada <strong>perfil</strong> (por ejemplo, <code class="docutils literal notranslate"><span class="pre">profile_1</span></code>, <code class="docutils literal notranslate"><span class="pre">profile_2</span></code>).</p></li>
+<li><p>En la celda correspondiente a una <strong>restricción</strong> y un <strong>perfil</strong>, incluye la palabra clave <code class="docutils literal notranslate"><span class="pre">locked</span></code> para asignar una restricción a un perfil.</p></li>
+</ol>
+<p><strong>hoja kobo–locking-profiles</strong></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>restriction</p></th>
@@ -305,7 +303,7 @@ editor de formularios.</p>
 <tbody>
 <tr class="row-even"><td class="text-left"><p>choice_add</p></td>
 <td class="text-left"><p>locked</p></td>
-<td class="text-left"><p></p></td>
+<td class="text-left"><p>locked</p></td>
 <td class="text-left"><p></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>choice_delete</p></td>
@@ -313,12 +311,22 @@ editor de formularios.</p>
 <td class="text-left"><p>locked</p></td>
 <td class="text-left"><p></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>choice_label_edit</p></td>
+<tr class="row-even"><td class="text-left"><p>choice_value_edit</p></td>
+<td class="text-left"><p>locked</p></td>
 <td class="text-left"><p>locked</p></td>
 <td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>choice_label_edit</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>locked</p></td>
 <td class="text-left"><p></p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>choice_order_edit</p></td>
+<tr class="row-even"><td class="text-left"><p>choice_order_edit</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p>locked</p></td>
+<td class="text-left"><p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>question_delete</p></td>
 <td class="text-left"><p>locked</p></td>
 <td class="text-left"><p>locked</p></td>
 <td class="text-left"><p></p></td>
@@ -328,41 +336,17 @@ editor de formularios.</p>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p>locked</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>kobo–locking-profiles</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
 </tbody>
 </table>
-<p class="note">
-  Ten en cuenta que no todas las restricciones válidas necesitan incluirse en la
-  columna <code>restriction</code>, pero se generará un error si se incluye una
-  restricción no válida.
-</p>
-<p><strong>hoja settings</strong></p>
-<p>Establece restricciones a nivel de formulario y el booleano <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code>.</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>kobo–locking-profile</p></th>
-<th class="head text-left"><p>kobo–lock_all</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>profile_3</p></td>
-<td class="text-left"><p>false</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>settings</p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p class="note">
-  Ten en cuenta que omitir <code>kobo--lock_all</code> de la
-  hoja <code>settings</code> es equivalente a establecerlo en <code>False</code>.
-</p>
+</section>
+<section id="aplicar-perfiles-en-la-hoja-survey">
+<h3>Aplicar perfiles en la hoja survey<a class="headerlink" href="#aplicar-perfiles-en-la-hoja-survey" title="Link to this heading">¶</a></h3>
+<p>Una vez que hayas definido los perfiles de bloqueo en la <strong>hoja kobo–locking-profiles</strong>, puedes aplicarlos a preguntas y grupos específicos. Para aplicar perfiles en la <strong>hoja survey</strong>:</p>
+<ol class="arabic simple">
+<li><p>Crea una columna llamada <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> en la <strong>hoja survey</strong>.</p></li>
+<li><p>Para cada pregunta o grupo que quieras restringir, define el perfil de bloqueo en la columna <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code>.</p></li>
+</ol>
 <p><strong>hoja survey</strong></p>
-<p>Establece restricciones a nivel de pregunta y grupo.</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>type</p></th>
@@ -372,14 +356,14 @@ editor de formularios.</p>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>select_one countries</p></td>
+<tr class="row-even"><td class="text-left"><p>select_one country</p></td>
 <td class="text-left"><p>country</p></td>
-<td class="text-left"><p>Selecciona tu país</p></td>
+<td class="text-left"><p>Select your country</p></td>
 <td class="text-left"><p>profile_1</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>select_one cities</p></td>
+<tr class="row-odd"><td class="text-left"><p>select_one city</p></td>
 <td class="text-left"><p>city</p></td>
-<td class="text-left"><p>Selecciona tu ciudad</p></td>
+<td class="text-left"><p>Select your city</p></td>
 <td class="text-left"><p>profile_2</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>survey</p></td>
@@ -389,343 +373,87 @@ editor de formularios.</p>
 </tr>
 </tbody>
 </table>
-<p><strong>hoja choices</strong></p>
-<p>No se pueden establecer restricciones en la hoja <code class="docutils literal notranslate"><span class="pre">choices</span></code>.</p>
+</section>
+<section id="aplicar-perfiles-en-la-hoja-settings">
+<h3>Aplicar perfiles en la hoja settings<a class="headerlink" href="#aplicar-perfiles-en-la-hoja-settings" title="Link to this heading">¶</a></h3>
+<p>Además de aplicar perfiles a preguntas y grupos en la <strong>hoja survey</strong>, también puedes aplicar un perfil con restricciones a nivel de formulario en la <strong>hoja settings</strong>.</p>
+<p>Para aplicar un perfil en la <strong>hoja settings</strong>:</p>
+<ol class="arabic simple">
+<li><p>Crea una columna <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> en la <strong>hoja settings</strong>.</p></li>
+<li><p>Especifica el perfil que deseas aplicar.</p></li>
+</ol>
+<p><strong>hoja settings</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>list_name</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
+<tr class="row-odd"><th class="head text-left"><p>kobo–locking-profile</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>countries</p></td>
-<td class="text-left"><p>canada</p></td>
-<td class="text-left"><p>Canadá</p></td>
+<tr class="row-even"><td class="text-left"><p>profile_3</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>countries</p></td>
-<td class="text-left"><p>usa</p></td>
-<td class="text-left"><p>Estados Unidos de América</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>vancouver</p></td>
-<td class="text-left"><p>Vancouver</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>toronto</p></td>
-<td class="text-left"><p>Toronto</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>baltimore</p></td>
-<td class="text-left"><p>Baltimore</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>cities</p></td>
-<td class="text-left"><p>boston</p></td>
-<td class="text-left"><p>Boston</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>choices</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-odd"><td class="text-left"><p>settings</p></td>
 </tr>
 </tbody>
 </table>
-<p><i>Este ejemplo de XLSForm se puede descargar
-<a download class="reference" href="/_static/files/library_locking/library-locking-example.xlsx">aquí</a>.</i></p>
-<section id="importar-xlsforms-bloqueados">
-<h3>Importar XLSForms bloqueados<a class="headerlink" href="#importar-xlsforms-bloqueados" title="Link to this heading">¶</a></h3>
-<p>Importa tu XLSForm como una <code class="docutils literal notranslate"><span class="pre">template</span></code> a través de la interfaz de usuario de KoboToolbox navegando a
-tu <strong>Biblioteca</strong> y haciendo clic en <strong>NUEVO</strong> y luego en <strong>Cargar</strong>. Asegúrate de
-seleccionar <code class="docutils literal notranslate"><span class="pre">template</span></code> del menú desplegable <strong>Elegir el tipo deseado</strong> y luego
-importa tu XLSForm.</p>
-<p><img alt="elegir tipo de plantilla" src="_images/import-template.png" /></p>
-<p>La plantilla bloqueada ahora se mostrará en la vista de lista de tu biblioteca con un símbolo de candado.</p>
-<p><img alt="lista de biblioteca" src="_images/library-list-view.png" /></p>
-</section>
-<section id="crear-proyecto-desde-plantilla-bloqueada">
-<h3>Crear proyecto desde plantilla bloqueada<a class="headerlink" href="#crear-proyecto-desde-plantilla-bloqueada" title="Link to this heading">¶</a></h3>
-<p>Una vez que se ha agregado una plantilla bloqueada a tu biblioteca – ya sea directamente mediante
-la importación de un XLSForm como plantilla, creando una plantilla basada en una encuesta bloqueada
-o agregando una plantilla bloqueada desde las colecciones públicas – puedes crear un nuevo
-proyecto. En la sección <strong>Proyectos</strong> de la interfaz de usuario, haz clic en <strong>NUEVO</strong> y luego en <strong>Usar
-una plantilla</strong>.</p>
-<p><img alt="crear proyecto desde plantilla" src="_images/create-project-from-template.png" /></p>
-<ul class="simple">
-<li><p>Elige la plantilla bloqueada que deseas usar para crear el nuevo proyecto.</p></li>
-</ul>
-<p><img alt="seleccionar plantilla" src="_images/select-template-for-new-project.png" /></p>
-<ul class="simple">
-<li><p>Desde ahí, continúa para crear el proyecto.</p></li>
-</ul>
-<p><img alt="crear proyecto" src="_images/create-project.png" /></p>
-<p>Cuando se usa esta plantilla bloqueada de ejemplo para crear un nuevo proyecto, el
-editor de formularios se verá de la siguiente manera:</p>
-<ul class="simple">
-<li><p>Las áreas en gris son aquellas que se han deshabilitado mediante las
-restricciones.</p></li>
-</ul>
-<p><img alt="vista general" src="_images/formbuilder.png" /></p>
-<ul class="simple">
-<li><p>Un cuadro de diálogo encima de la primera pregunta mostrará una descripción general de algunas de las
-restricciones del formulario.</p></li>
-</ul>
-<p><img alt="cuadro de diálogo" src="_images/formbuilder-dialogue-box.png" /></p>
-<ul class="simple">
-<li><p>Cada pregunta con perfiles de bloqueo mostrará, en su configuración, qué
-restricciones se han establecido.</p></li>
-</ul>
-<p><img alt="restricciones de pregunta" src="_images/formbuilder-question-settings.png" /></p>
-<ul class="simple">
-<li><p>Algunas configuraciones a nivel de formulario también estarán en gris.</p></li>
-</ul>
-<p><img alt="restricciones a nivel de formulario" src="_images/form-style.png" /></p>
-</section>
-<section id="validacion-de-formulario">
-<h3>Validación de formulario<a class="headerlink" href="#validacion-de-formulario" title="Link to this heading">¶</a></h3>
-<p>Los siguientes casos actualmente generarán un <code class="docutils literal notranslate"><span class="pre">FormPackLibraryLockingError</span></code>:</p>
-<ul class="simple">
-<li><p>Si un nombre de perfil de bloqueo (encabezado de columna en la hoja <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>) es «locked» (igual que la palabra clave de bloqueo)</p></li>
-<li><p>Si una restricción enumerada en <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> no es válida (no está en la
-lista de <a class="reference internal" href="#restrictions"><span class="xref myst">restricciones predefinidas</span></a>)</p></li>
-<li><p>Si hay una hoja llamada <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> pero no hay columna <code class="docutils literal notranslate"><span class="pre">restriction</span></code></p></li>
-<li><p>Si no se definen perfiles de bloqueo (encabezados de columna en la
-hoja <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>)</p></li>
-</ul>
 <p class="note">
-  La validación de las funcionalidades de bloqueo de biblioteca de XLSForm se ampliará en el
-  futuro.
+<strong>Nota:</strong> Las restricciones no se pueden aplicar en la hoja <code>choices</code>. Todas las restricciones relacionadas con opciones se definen a nivel de pregunta o grupo en la hoja <code>survey</code>.
 </p>
 </section>
-<section id="advertencias">
-<h3>Advertencias<a class="headerlink" href="#advertencias" title="Link to this heading">¶</a></h3>
-<p>En algunos editores de hojas de cálculo, dos guiones simples (<code class="docutils literal notranslate"><span class="pre">--</span></code>) se convierten automáticamente
-en un guion largo (—), lo que dificulta escribir <code class="docutils literal notranslate"><span class="pre">kobo--</span></code> en
-una celda. Por lo tanto, convertimos todas las instancias de guiones cortos y largos en dos guiones simples (cuando tienen el prefijo <code class="docutils literal notranslate"><span class="pre">kobo</span></code>). Un XLSForm con el nombre de hoja
-«kobo—locking-profiles» se convertirá en <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code> y
-de manera similar para los encabezados de columna.</p>
 </section>
+<section id="usar-plantillas-bloqueadas-en-kobotoolbox">
+<h2>Usar plantillas bloqueadas en KoboToolbox<a class="headerlink" href="#usar-plantillas-bloqueadas-en-kobotoolbox" title="Link to this heading">¶</a></h2>
+<p>Una vez que hayas creado y cargado un XLSForm bloqueado como plantilla, puedes usarlo para crear nuevos proyectos en KoboToolbox.</p>
+<section id="importar-un-xlsform-bloqueado-en-tu-biblioteca">
+<h3>Importar un XLSForm bloqueado en tu biblioteca<a class="headerlink" href="#importar-un-xlsform-bloqueado-en-tu-biblioteca" title="Link to this heading">¶</a></h3>
+<p>Para importar un XLSForm bloqueado en tu biblioteca:</p>
+<ol class="arabic simple">
+<li><p>Ve a <i class="k-icon k-icon-library"></i> <strong>Biblioteca</strong> desde la barra de menú izquierda en KoboToolbox.</p></li>
+<li><p>Haz clic en <strong>NUEVO</strong> y selecciona <strong>Cargar</strong>.</p></li>
+<li><p>Carga tu archivo XLSForm y selecciona <strong>Cargar como plantilla</strong>.</p></li>
+</ol>
+<p><img alt="Upload template" src="_images/upload_template.png" /></p>
+<p>La plantilla aparecerá en tu biblioteca con un símbolo de <i class="k-icon k-icon-template-locked"></i> <strong>candado</strong>, lo que indica que contiene restricciones.</p>
 </section>
-<section id="representacion-json">
-<h2>Representación JSON<a class="headerlink" href="#representacion-json" title="Link to this heading">¶</a></h2>
-<p>Hay dos atributos del activo donde se puede acceder
-y modificar la información de bloqueo: <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code> y <code class="docutils literal notranslate"><span class="pre">asset.content</span></code>.</p>
-<p>Si <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> es un nombre de columna en la hoja <code class="docutils literal notranslate"><span class="pre">survey</span></code>, también
-se enumerará en el arreglo <code class="docutils literal notranslate"><span class="pre">asset.summary.columns</span></code>.</p>
-<p>En <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code>, los siguientes dos atributos booleanos describen una descripción general de
-la estructura de bloqueo del formulario:</p>
+<section id="crear-un-proyecto-a-partir-de-una-plantilla-bloqueada">
+<h3>Crear un proyecto a partir de una plantilla bloqueada<a class="headerlink" href="#crear-un-proyecto-a-partir-de-una-plantilla-bloqueada" title="Link to this heading">¶</a></h3>
+<ol class="arabic simple">
+<li><p>Ve a la página de <strong>Proyectos</strong>.</p></li>
+<li><p>Haz clic en <strong>NUEVO</strong> y selecciona <strong>Usar una plantilla</strong>.</p></li>
+<li><p>Elige la plantilla bloqueada que deseas usar.</p></li>
+<li><p>Continúa creando tu proyecto como de costumbre.</p></li>
+</ol>
+<p><img alt="Use template" src="_images/use_template.png" /></p>
+<p>Cuando abras el proyecto en el Formbuilder:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lock_all</span></code>, y</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">lock_any</span></code></p></li>
+<li><p>Aparecerá un mensaje encima de la primera pregunta con un resumen de las restricciones.</p></li>
+<li><p>Las preguntas, grupos o configuraciones a nivel de formulario bloqueados aparecerán <strong>en gris</strong>.</p></li>
+<li><p>Cada pregunta bloqueada muestra qué perfil se ha aplicado en <strong>Configuración &gt; Funciones bloqueadas</strong>.</p></li>
 </ul>
-<p>La lógica por la cual se establece cada uno de esos booleanos es la siguiente:</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">lock_all</span></code> es <code class="docutils literal notranslate"><span class="pre">True</span></code> <em>solo</em> si <code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code> se establece en <code class="docutils literal notranslate"><span class="pre">True</span></code> en la
-hoja <code class="docutils literal notranslate"><span class="pre">settings</span></code>, de lo contrario es <code class="docutils literal notranslate"><span class="pre">False</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">lock_any</span></code> se establece en <code class="docutils literal notranslate"><span class="pre">True</span></code> si <em>cualquiera</em> de los siguientes casos es <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">lock_all</span></code> es <code class="docutils literal notranslate"><span class="pre">True</span></code>,</p></li>
-<li><p>Se establece un <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> en la hoja <code class="docutils literal notranslate"><span class="pre">settings</span></code>, o</p></li>
-<li><p><em>Al menos un</em> <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> se establece en la hoja <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></li>
+<p><img alt="Locked library" src="_images/locked.png" /></p>
+</section>
+</section>
+<section id="resolucion-de-problemas">
+<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
+<details>
+  <summary><strong>Recomendaciones para la resolución de problemas</strong></summary>
+  Si el bloqueo de biblioteca no funciona como se esperaba, prueba lo siguiente:
+    <ul>
+  <li>Asegúrate de que el formulario se haya cargado como <strong>Plantilla</strong> en la biblioteca.</li>
+  <li>Revisa la hoja <code>settings</code> de tu XLSForm. Si <code>kobo--lock_all</code> está configurado como <code>TRUE</code>, el formulario completo quedará bloqueado.</li>
+  <li>Verifica que todos los nombres de restricciones en la hoja <code>kobo--locking-profiles</code> sean válidos. Solo se admiten nombres de restricciones predefinidos.</li>
+  <li>Asegúrate de que la columna <code>kobo--locking-profile</code> exista en la hoja <code>survey</code> o <code>settings</code> y de que los nombres de los perfiles coincidan con los definidos en la hoja <code>kobo--locking-profiles</code>.</li>
 </ul>
-</li>
+</details>
+<br>
+<details>
+  <summary><strong>Advertencias y limitaciones</strong></summary>
+  <ul>
+  <li>Las restricciones se aplican únicamente en el <strong>Formbuilder.</strong> Si el XLSForm se descarga y se edita directamente en una hoja de cálculo, las restricciones no impiden los cambios.</li>
+  <li>Las restricciones se aplican solo a los proyectos creados a partir de plantillas bloqueadas. Las plantillas y encuestas en la biblioteca siguen siendo editables.</li>
+  <li>Solo las encuestas y plantillas admiten el bloqueo. Si cargas un XLSForm bloqueado como pregunta o bloque, el bloqueo se ignora.</li>
+  <li>Algunos editores de hojas de cálculo convierten automáticamente dos guiones simples <code>--</code> en un guión largo (—). Usa siempre dos guiones simples en nombres como <code>kobo--locking-profiles</code>.</li>
 </ul>
-<p>En el ejemplo anterior, lo siguiente estará presente en <code class="docutils literal notranslate"><span class="pre">asset.summary</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="o">...</span><span class="p">,</span>
-  <span class="s2">&quot;columns&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="o">...</span><span class="p">,</span>
-    <span class="s2">&quot;kobo--locking-profile&quot;</span>
-  <span class="p">],</span>
-  <span class="s2">&quot;lock_all&quot;</span><span class="p">:</span> <span class="n">false</span><span class="p">,</span>
-  <span class="s2">&quot;lock_any&quot;</span><span class="p">:</span> <span class="n">true</span><span class="p">,</span>
-  <span class="o">...</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p>En <code class="docutils literal notranslate"><span class="pre">asset.content</span></code>, existe un atributo <code class="docutils literal notranslate"><span class="pre">content.kobo--locking-profiles</span></code> como
-un arreglo de objetos JSON con la siguiente estructura:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-  <span class="p">{</span>
-    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;profile_1&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;restrictions&quot;</span><span class="p">:</span> <span class="p">[</span>
-      <span class="s2">&quot;choice_add&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;choice_label_edit&quot;</span><span class="p">,</span>
-      <span class="s2">&quot;choice_order_edit&quot;</span>
-    <span class="p">]</span>
-  <span class="p">},</span>
-  <span class="o">...</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-<p>En <code class="docutils literal notranslate"><span class="pre">content.settings</span></code>, lo siguiente estará presente en un objeto JSON:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-  <span class="s2">&quot;kobo--locking-profile&quot;</span><span class="p">:</span> <span class="s2">&quot;profile_3&quot;</span><span class="p">,</span>
-  <span class="s2">&quot;kobo--lock_all&quot;</span><span class="p">:</span> <span class="n">false</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<p>Y finalmente en <code class="docutils literal notranslate"><span class="pre">content.survey</span></code>, cada pregunta a la que se le ha asignado un perfil de bloqueo
-tendrá un atributo <code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code> de la siguiente manera:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">[</span>
-  <span class="p">{</span>
-    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;country&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;select_one&quot;</span><span class="p">,</span>
-    <span class="o">...</span>
-    <span class="s2">&quot;kobo--locking-profile&quot;</span><span class="p">:</span> <span class="s2">&quot;profile_1&quot;</span>
-  <span class="p">},</span>
-  <span class="p">{</span>
-    <span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;city&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;select_one&quot;</span><span class="p">,</span>
-    <span class="o">...</span>
-    <span class="s2">&quot;kobo--locking-profile&quot;</span><span class="p">:</span> <span class="s2">&quot;profile_2&quot;</span>
-  <span class="p">},</span>
-  <span class="o">...</span>
-<span class="p">]</span>
-</pre></div>
-</div>
-</section>
-<section id="perfiles-de-bloqueo-y-tipos-de-activos">
-<h2>Perfiles de bloqueo y tipos de activos<a class="headerlink" href="#perfiles-de-bloqueo-y-tipos-de-activos" title="Link to this heading">¶</a></h2>
-<p>De los cuatro tipos de activos (<code class="docutils literal notranslate"><span class="pre">survey</span></code>, <code class="docutils literal notranslate"><span class="pre">template</span></code>, <code class="docutils literal notranslate"><span class="pre">question</span></code> y <code class="docutils literal notranslate"><span class="pre">block</span></code>), solo
-las <code class="docutils literal notranslate"><span class="pre">template</span></code>s y las <code class="docutils literal notranslate"><span class="pre">survey</span></code>s manejan funcionalidades de bloqueo de biblioteca y los bloqueos se
-aplican <em>solo</em> en las encuestas. Prácticamente, esto significa lo siguiente:</p>
-<p>Supongamos que se importa un XLSForm que contiene funcionalidades de bloqueo válidas:</p>
-<ul class="simple">
-<li><p>Si se importa como un <code class="docutils literal notranslate"><span class="pre">block</span></code>, entonces todos los rastros de bloqueo se excluyen y/o
-eliminan del activo. Esto resulta en un activo <code class="docutils literal notranslate"><span class="pre">block</span></code> que será
-equivalente al mismo formulario cargado sin ninguna funcionalidad de bloqueo;</p></li>
-<li><p>Si se importa como una <code class="docutils literal notranslate"><span class="pre">survey</span></code> (importada a través de la sección <strong>Proyectos</strong>) o
-<code class="docutils literal notranslate"><span class="pre">template</span></code>, entonces todos los bloqueos están intactos:</p>
-<ul>
-<li><p>Si, desde el editor de formularios:</p>
-<ul>
-<li><p>se agrega una pregunta a la biblioteca, entonces todos los bloqueos se eliminan del
-nuevo activo <code class="docutils literal notranslate"><span class="pre">question</span></code></p></li>
-<li><p>se agrega un grupo de preguntas a la biblioteca como un <code class="docutils literal notranslate"><span class="pre">block</span></code>, entonces todos
-los bloqueos se eliminan</p></li>
-</ul>
-</li>
-<li><p>Si se crea una <code class="docutils literal notranslate"><span class="pre">template</span></code> <em>desde</em> el activo <code class="docutils literal notranslate"><span class="pre">survey</span></code> bloqueado, entonces esa
-<code class="docutils literal notranslate"><span class="pre">template</span></code> heredará todos los bloqueos que tenía la <code class="docutils literal notranslate"><span class="pre">survey</span></code> (pero como es
-una plantilla, puedes editar el contenido en el editor de formularios),</p></li>
-<li><p>Si se crea una <code class="docutils literal notranslate"><span class="pre">survey</span></code> <em>desde</em> una <code class="docutils literal notranslate"><span class="pre">template</span></code> bloqueada, la encuesta
-heredará todos los bloqueos que tenía la <code class="docutils literal notranslate"><span class="pre">template</span></code></p></li>
-</ul>
-</li>
-</ul>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Tipo de activo original</p></th>
-<th class="head text-left"><p>Proceso/acción</p></th>
-<th class="head text-left"><p>Estado del <code class="docutils literal notranslate"><span class="pre">asset</span></code> resultante</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p>importar archivo XLSForm de <code class="docutils literal notranslate"><span class="pre">survey</span></code> bloqueada</p></td>
-<td class="text-left"><p>bloqueado</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p>crear <code class="docutils literal notranslate"><span class="pre">template</span></code> desde <code class="docutils literal notranslate"><span class="pre">survey</span></code> bloqueada</p></td>
-<td class="text-left"><p>bloqueado</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p>crear <code class="docutils literal notranslate"><span class="pre">question</span></code> desde <code class="docutils literal notranslate"><span class="pre">survey</span></code> bloqueada※</p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p>crear <code class="docutils literal notranslate"><span class="pre">block</span></code> desde <code class="docutils literal notranslate"><span class="pre">survey</span></code> bloqueada※</p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p>importar archivo XLSForm de <code class="docutils literal notranslate"><span class="pre">template</span></code> bloqueada</p></td>
-<td class="text-left"><p>bloqueado</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p>crear <code class="docutils literal notranslate"><span class="pre">survey</span></code> desde <code class="docutils literal notranslate"><span class="pre">template</span></code> bloqueada</p></td>
-<td class="text-left"><p>bloqueado</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p>crear <code class="docutils literal notranslate"><span class="pre">question</span></code> desde <code class="docutils literal notranslate"><span class="pre">template</span></code> bloqueada※</p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p>crear <code class="docutils literal notranslate"><span class="pre">block</span></code> desde <code class="docutils literal notranslate"><span class="pre">template</span></code> bloqueada※</p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
-<td class="text-left"><p>importar archivo XLSForm de <code class="docutils literal notranslate"><span class="pre">block</span></code> bloqueado※</p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
-<td class="text-left"><p>agregar <code class="docutils literal notranslate"><span class="pre">block</span></code> bloqueado desde Biblioteca a <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
-<td class="text-left"><p>agregar <code class="docutils literal notranslate"><span class="pre">block</span></code> bloqueado desde Biblioteca a <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">block</span></code></p></td>
-<td class="text-left"><p>crear <code class="docutils literal notranslate"><span class="pre">question</span></code> desde <code class="docutils literal notranslate"><span class="pre">block</span></code> bloqueado※</p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
-<td class="text-left"><p>importar archivo XLSForm de <code class="docutils literal notranslate"><span class="pre">block</span></code> bloqueado※</p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
-<td class="text-left"><p>agregar <code class="docutils literal notranslate"><span class="pre">question</span></code> bloqueada desde Biblioteca a <code class="docutils literal notranslate"><span class="pre">survey</span></code></p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
-<td class="text-left"><p>agregar <code class="docutils literal notranslate"><span class="pre">question</span></code> bloqueada desde Biblioteca a <code class="docutils literal notranslate"><span class="pre">template</span></code></p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">question</span></code></p></td>
-<td class="text-left"><p>crear <code class="docutils literal notranslate"><span class="pre">block</span></code> desde <code class="docutils literal notranslate"><span class="pre">question</span></code> bloqueada※</p></td>
-<td class="text-left"><p>no bloqueado</p></td>
-</tr>
-</tbody>
-</table>
-<p>※ Estas acciones no son posibles en la interfaz de usuario.</p>
-</section>
-<section id="terminologia">
-<h2>Terminología<a class="headerlink" href="#terminologia" title="Link to this heading">¶</a></h2>
-<section id="kobo-lock-all">
-<h3><code class="docutils literal notranslate"><span class="pre">kobo--lock_all</span></code><a class="headerlink" href="#kobo-lock-all" title="Link to this heading">¶</a></h3>
-<p>Atributo que contiene un valor booleano, establecido en la hoja <code class="docutils literal notranslate"><span class="pre">settings</span></code> y aplica
-todas las restricciones de bloqueo al formulario y a todas las preguntas y grupos (haciendo
-redundantes los perfiles de bloqueo granulares).</p>
-</section>
-<section id="kobo-locking-profile">
-<h3><code class="docutils literal notranslate"><span class="pre">kobo--locking-profile</span></code><a class="headerlink" href="#kobo-locking-profile" title="Link to this heading">¶</a></h3>
-<p>Nombre de columna en las hojas <code class="docutils literal notranslate"><span class="pre">survey</span></code> y <code class="docutils literal notranslate"><span class="pre">settings</span></code> donde se asigna el perfil de bloqueo
-a una pregunta o grupo (en <code class="docutils literal notranslate"><span class="pre">survey</span></code>) o al formulario (en <code class="docutils literal notranslate"><span class="pre">settings</span></code>).</p>
-</section>
-<section id="kobo-locking-profiles">
-<h3><code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code><a class="headerlink" href="#kobo-locking-profiles" title="Link to this heading">¶</a></h3>
-<p>Nombre de hoja donde se asignan restricciones a perfiles.</p>
-</section>
-<section id="locked">
-<h3><code class="docutils literal notranslate"><span class="pre">locked</span></code><a class="headerlink" href="#locked" title="Link to this heading">¶</a></h3>
-<p>Palabra clave utilizada para asignar una restricción a un perfil en la
-hoja <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>.</p>
-</section>
-<section id="perfil">
-<h3>Perfil<a class="headerlink" href="#perfil" title="Link to this heading">¶</a></h3>
-<p>El nombre asignado a un grupo de restricciones, definido en la
-hoja <code class="docutils literal notranslate"><span class="pre">kobo--locking-profiles</span></code>. Se asigna a preguntas y grupos en la
-hoja <code class="docutils literal notranslate"><span class="pre">survey</span></code> y al formulario en la hoja <code class="docutils literal notranslate"><span class="pre">settings</span></code>.</p>
-</section>
-<section id="restriccion">
-<h3>Restricción<a class="headerlink" href="#restriccion" title="Link to this heading">¶</a></h3>
-<p>Un atributo de bloqueo granular que se puede asignar a un perfil y controlar el
-comportamiento de bloqueo a nivel de pregunta, grupo o formulario.</p>
-</section>
-<section id="desbloqueado">
-<h3>Desbloqueado<a class="headerlink" href="#desbloqueado" title="Link to this heading">¶</a></h3>
-<p>Un formulario que no contiene atributos de bloqueo.</p>
-</section>
-</section>
+</details></section>
 </section>
 
 
@@ -744,7 +472,7 @@ comportamiento de bloqueo a nivel de pregunta, grupo o formulario.</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Bloqueo de biblioteca"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Bloquear cuestionarios para la biblioteca usando XLSForms"
               class="feedback-button"
               target="_blank"
             >
@@ -760,147 +488,156 @@ comportamiento de bloqueo a nivel de pregunta, grupo o formulario.</p>
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Bloqueo de biblioteca</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#restricciones">Restricciones</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuracion-de-xlsform">Configuración de XLSForm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#representacion-json">Representación JSON</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#perfiles-de-bloqueo-y-tipos-de-activos">Perfiles de bloqueo y tipos de activos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#terminologia">Terminología</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bloquear cuestionarios para la biblioteca usando XLSForms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduccion-al-bloqueo-de-biblioteca">Introducción al bloqueo de biblioteca</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tipos-de-restricciones">Tipos de restricciones</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configurar-el-bloqueo-de-biblioteca-en-xlsform">Configurar el bloqueo de biblioteca en XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usar-plantillas-bloqueadas-en-kobotoolbox">Usar plantillas bloqueadas en KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolucion-de-problemas">Resolución de problemas</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -965,7 +702,7 @@ comportamiento de bloqueo a nivel de pregunta, grupo o formulario.</p>
   <script>
     window.docs = {
       currentPagename: "library_locking",
-      currentTitle: "Bloqueo de biblioteca",
+      currentTitle: "Bloquear cuestionarios para la biblioteca usando XLSForms",
       currentUrl: ("index.html").replace("index.html", "library_locking.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Transferir formularios y datos manualmente de un dispositivo Android a otro &#8212; documentación de KoboToolbox - </title>
+    <title>Importar formularios en KoboCollect &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,7 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Dispositivos recomendados para la recolección de datos" href="devices_for_data_collection.html" />
-    <link rel="prev" title="Recolección de datos usando KoboCollect" href="data_collection_kobocollect.html" />
+    <link rel="prev" title="Descargar envíos manualmente" href="manual_upload.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,156 +106,106 @@
 
         <section class="page__body" role="main">
           
-  <section id="transferir-formularios-y-datos-manualmente-de-un-dispositivo-android-a-otro">
-<h1>Transferir formularios y datos manualmente de un dispositivo Android a otro<a class="headerlink" href="#transferir-formularios-y-datos-manualmente-de-un-dispositivo-android-a-otro" title="Link to this heading">¶</a></h1>
+  <section id="importar-formularios-en-kobocollect">
+<h1>Importar formularios en KoboCollect<a class="headerlink" href="#importar-formularios-en-kobocollect" title="Link to this heading">¶</a></h1>
 <p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7def5f54e2441b05b4a2163e682bdd146fa781e1/source/transferring_forms.md" class="reference">24 Sep 2025</a></p>
-<p>Puede haber ocasiones en las que estés en el campo sin conexión a internet,
-pero aún necesites cargar la última versión de los formularios (es decir, los últimos
-formularios desplegados en el servidor) a tu dispositivo. También es posible que no puedas cargar
-los envíos de formularios al servidor debido a una pantalla rota. En ambos escenarios,
-necesitarás transferir manualmente formularios y/o envíos utilizando otro dispositivo.
-Este artículo de ayuda te mostrará cómo hacerlo.</p>
-<p>Necesitarás los siguientes elementos para seguir las instrucciones descritas a continuación:</p>
+<p>Puede haber ocasiones en las que estés en el campo sin conexión a internet, pero aún necesites cargar la última versión de los formularios (es decir, los últimos formularios implementados en el servidor) en tu dispositivo. También es posible que no puedas cargar los envíos al servidor debido a una pantalla rota. En ambos casos, necesitarás transferir manualmente los formularios y/o envíos usando otro dispositivo. Este artículo de ayuda te mostrará cómo hacerlo.</p>
+<p>Necesitarás los siguientes elementos para seguir las instrucciones que se describen a continuación:</p>
 <ul class="simple">
-<li><p>Un dispositivo Android que tenga la <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">aplicación de Android de KoboCollect</span></a> con la última versión del formulario desplegado. (Se
-recomienda <a class="reference external" href="https://support.kobotoolbox.org/es/data_collection_kobocollect.html#downloading-forms">obtener la última versión</a> del formulario desplegado en el dispositivo
-haciendo clic en <strong>Descargar formulario</strong> desde tu <strong>aplicación de Android de KoboCollect</strong>.)</p></li>
-<li><p>Un dispositivo Android que no tenga la última versión del formulario (o incluso
-ningún formulario en absoluto).</p></li>
-<li><p>Ambos dispositivos Android deben tener la aplicación de Android de KoboCollect ya instalada.</p></li>
+<li><p>Un dispositivo Android que tenga la <a class="reference external" href="https://support.kobotoolbox.org/es/kobocollect_on_android_latest.html">aplicación Android KoboCollect</a> con la última versión del formulario implementado. (Se recomienda <a class="reference external" href="https://support.kobotoolbox.org/es/data_collection_kobocollect.html#downloading-forms">obtener la última versión</a> del formulario implementado en el dispositivo haciendo clic en <strong>Descargar formulario</strong> desde tu <strong>aplicación Android KoboCollect</strong>.)</p></li>
+<li><p>Un dispositivo Android que no tenga la última versión del formulario (o incluso ningún formulario).</p></li>
+<li><p>Ambos dispositivos Android deben tener la aplicación KoboCollect ya instalada.</p></li>
 <li><p>Computadora personal (de escritorio o portátil).</p></li>
-<li><p>Cable USB que conecte el dispositivo y la computadora personal.</p></li>
+<li><p>Cable USB que conecte el dispositivo a la computadora personal.</p></li>
 </ul>
-<p><strong>Paso 1:</strong> Abre tu computadora personal (no se necesita conexión a internet aquí).
-Una PC es necesaria en esta fase para copiar los formularios y datos de un dispositivo Android
-con la última versión del formulario a otro.</p>
-<p><strong>Paso 2:</strong> Ahora, conecta el dispositivo Android (con el último formulario y datos que
-deseas transferir) a la PC usando el cable USB.</p>
-<p><strong>Paso 3:</strong> Luego, sigue la ruta ilustrada a continuación para extraer las carpetas
-requeridas con los formularios y datos (dependiendo de qué versión de la aplicación esté instalada):</p>
+<p><strong>Paso 1:</strong> Enciende tu computadora personal (no se necesita conexión a internet en este paso). Una PC es necesaria en esta fase para copiar los formularios y datos de un dispositivo Android con la última versión del formulario a otro.</p>
+<p><strong>Paso 2:</strong> Conecta el dispositivo Android (con el formulario y los datos más recientes que deseas transferir) a la PC mediante el cable USB.</p>
+<p><strong>Paso 3:</strong> A continuación, sigue la ruta que se ilustra a continuación para extraer las carpetas requeridas con los formularios y datos (según la versión de la aplicación instalada):</p>
 <p class="note">
-  En este ejemplo, estamos conectando Galaxy S10+ (un dispositivo Android) a Windows
-  11, por eso estás viendo <strong>Este equipo</strong> y
-  <strong>Galaxy S10+</strong>. Estos pueden diferir si estás usando otro sistema operativo y
-  dispositivo Android.
+  En este ejemplo, estamos conectando un Galaxy S10+ (un dispositivo Android) a Windows 11, por eso ves <strong>Este equipo</strong> y <strong>Galaxy S10+</strong>. Estos nombres pueden variar si usas otro sistema operativo o dispositivo Android.
 </p>
 <ul class="simple">
-<li><p>Para la aplicación de Android de KoboCollect versión 2021.2 y superior:</p>
+<li><p>Para la aplicación Android KoboCollect versión 2021.2 y posteriores:</p>
 <ul>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria del teléfono:
-<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Teléfono\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria externa:
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria del teléfono:
+<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Phone\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria externa:
 <code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\sdcard\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
 </ul>
 </li>
-<li><p>Para la aplicación de Android de KoboCollect (versión superior a v1.26.0):</p>
+<li><p>Para la aplicación Android KoboCollect (versión mayor que v1.26.0):</p>
 <ul>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria del teléfono:
-<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Teléfono\Android\data\org.koboc.collect.android\files</span></code></p></li>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria externa:
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria del teléfono:
+<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Phone\Android\data\org.koboc.collect.android\files</span></code></p></li>
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria externa:
 <code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\sdcard\Android\data\org.koboc.collect.android\files</span></code></p></li>
 </ul>
 </li>
-<li><p>Para la aplicación de Android de KoboCollect (versión inferior a v1.26.0):</p>
+<li><p>Para la aplicación Android KoboCollect (versión menor que v1.26.0):</p>
 <ul>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria del teléfono:
-<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Teléfono\odk</span></code></p></li>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria externa:
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria del teléfono:
+<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Phone\odk</span></code></p></li>
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria externa:
 <code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\sdcard\odk</span></code></p></li>
 </ul>
 </li>
 </ul>
-<p><strong>Paso 4:</strong> Una vez que estés en la carpeta <strong>projects</strong>, carpeta <strong>files</strong>, o la
-carpeta <strong>odk</strong> <em>(dependiendo de la versión de la aplicación de Android de KoboCollect que estés
-usando)</em>, deberías ver una carpeta con un nombre similar (como se muestra a continuación):</p>
-<p><img alt="Imagen de muestra" src="_images/sample_1_folder.png" /></p>
-<p><strong>Paso 5:</strong> Ingresa a esta carpeta y <strong>COPIA</strong> todos los elementos (como se muestra en la imagen
-a continuación):</p>
-<p><img alt="Imagen de muestra de subcarpetas" src="_images/sub_folders.png" /></p>
-<p><strong>Paso 6:</strong> Ahora, conecta el otro dispositivo Android al que deseas copiar los datos
-con la PC usando el cable USB.</p>
-<p><strong>Paso 7:</strong> Una vez más, sigue la ruta ilustrada a continuación (dependiendo de qué
-versión de la aplicación esté instalada):</p>
+<p><strong>Paso 4:</strong> Una vez que estés en la carpeta <strong>projects</strong>, la carpeta <strong>files</strong> o la carpeta <strong>odk</strong> <em>(según la versión de la aplicación Android KoboCollect que estés usando)</em>, deberías ver una carpeta con un nombre similar (como se muestra a continuación):</p>
+<p><img alt="Imagen de ejemplo" src="_images/sample_1_folder.png" /></p>
+<p><strong>Paso 5:</strong> Entra en esta carpeta y <strong>COPIA</strong> todos los elementos (como se muestra en la imagen a continuación):</p>
+<p><img alt="Imagen de ejemplo de subcarpetas" src="_images/sub_folders.png" /></p>
+<p><strong>Paso 6:</strong> Ahora, conecta el otro dispositivo Android al que deseas copiar los datos a la PC mediante el cable USB.</p>
+<p><strong>Paso 7:</strong> Una vez más, sigue la ruta que se ilustra a continuación (según la versión de la aplicación instalada):</p>
 <ul class="simple">
-<li><p>Para la aplicación de Android de KoboCollect versión 2021.2 y superior:</p>
+<li><p>Para la aplicación Android KoboCollect versión 2021.2 y posteriores:</p>
 <ul>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria del teléfono:
-<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Teléfono\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria externa:
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria del teléfono:
+<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Phone\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria externa:
 <code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\sdcard\Android\data\org.koboc.collect.android\files\projects</span></code></p></li>
 </ul>
 </li>
-<li><p>Para la aplicación de Android de KoboCollect (versión superior a v1.26.0):</p>
+<li><p>Para la aplicación Android KoboCollect (versión mayor que v1.26.0):</p>
 <ul>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria del teléfono:
-<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Teléfono\Android\data\org.koboc.collect.android\files</span></code></p></li>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria externa:
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria del teléfono:
+<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Phone\Android\data\org.koboc.collect.android\files</span></code></p></li>
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria externa:
 <code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\sdcard\Android\data\org.koboc.collect.android\files</span></code></p></li>
 </ul>
 </li>
-<li><p>Para la aplicación de Android de KoboCollect (versión inferior a v1.26.0):</p>
+<li><p>Para la aplicación Android KoboCollect (versión menor que v1.26.0):</p>
 <ul>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria del teléfono:
-<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Teléfono\odk</span></code></p></li>
-<li><p>Si la aplicación de Android de KoboCollect está instalada en la memoria externa:
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria del teléfono:
+<code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\Phone\odk</span></code></p></li>
+<li><p>Si la aplicación Android KoboCollect está instalada en la memoria externa:
 <code class="docutils literal notranslate"><span class="pre">Este</span> <span class="pre">equipo\Galaxy</span> <span class="pre">S10+\sdcard\odk</span></code></p></li>
 </ul>
 </li>
 </ul>
-<p><strong>Paso 8:</strong> Una vez que estés en la carpeta <strong>projects</strong>, carpeta <strong>files</strong>, o la
-carpeta <strong>odk</strong> <em>(dependiendo de la versión de la aplicación de Android de KoboCollect que estés
-usando)</em>, deberías ver una carpeta con un nombre similar (como se muestra a continuación):</p>
-<p><img alt="Imagen de muestra" src="_images/sample_2_folder.png" /></p>
-<p><strong>Paso 9:</strong> Ingresa a esta carpeta y <strong>PEGA</strong> los elementos copiados:</p>
-<p><img alt="Imagen de muestra de subcarpetas" src="_images/sub_folders.png" /></p>
-<p>Una vez que esto esté completo, abre la <strong>aplicación de Android de KoboCollect</strong> desde el dispositivo
-(donde has pegado los formularios y datos). Ahora puedes usar este dispositivo para
-continuar con la recolección de datos y cargar los envíos al servidor.</p>
+<p><strong>Paso 8:</strong> Una vez que estés en la carpeta <strong>projects</strong>, la carpeta <strong>files</strong> o la carpeta <strong>odk</strong> <em>(según la versión de la aplicación Android KoboCollect que estés usando)</em>, deberías ver una carpeta con un nombre similar (como se muestra a continuación):</p>
+<p><img alt="Imagen de ejemplo" src="_images/sample_2_folder.png" /></p>
+<p><strong>Paso 9:</strong> Entra en esta carpeta y <strong>PEGA</strong> los elementos copiados:</p>
+<p><img alt="Imagen de ejemplo de subcarpetas" src="_images/sub_folders.png" /></p>
+<p>Una vez completado este proceso, abre la <strong>aplicación Android KoboCollect</strong> desde el dispositivo (en el que has pegado los formularios y datos). Ahora puedes usar este dispositivo para continuar con la recolección de datos y cargar los envíos al servidor.</p>
 <p class="note">
-  Si los formularios y datos no son visibles, puedes intentar reiniciar tu dispositivo.
-  Esto podría hacer que los formularios y datos sean visibles en la aplicación.
+  Si los formularios y datos no son visibles, puedes intentar reiniciar tu dispositivo. Esto podría hacer que los formularios y datos sean visibles en la aplicación.
 </p>
-<section id="solucion-de-problemas">
-<h2>Solución de problemas:<a class="headerlink" href="#solucion-de-problemas" title="Link to this heading">¶</a></h2>
-<ul>
-<li><p>Al conectar el dispositivo Android original con el formulario y datos que deseas
-copiar a la PC, a veces puedes ver no solo una carpeta, sino varias
-carpetas (como se muestra en la imagen a continuación):
-<img alt="Imagen de muestra de muchas carpetas" src="_images/sample_many_folders.png" />
-Esto es confuso y hace que sea difícil seleccionar el proyecto correcto que
-deseas copiar. Aunque consume tiempo, necesitarás revisar todas las
-carpetas para identificar la carpeta correcta con el proyecto que estás buscando.
-También podrías eliminar cualquier otra carpeta que ya no sea necesaria. Por
-ejemplo, si un proyecto ha sido eliminado de la aplicación, aún puede aparecer
-como una carpeta cuando se accede al dispositivo a través de la computadora. Si estás
-seguro/a de que un proyecto ya no es relevante, eliminar la carpeta lo eliminará
-completamente.</p></li>
-<li><p>De manera similar, al conectar el teléfono móvil Android sin la última
-versión del formulario (o incluso sin ningún formulario en absoluto) a la PC, a veces verás
-no solo una carpeta sino varias carpetas (como se muestra en la imagen a continuación):
-<img alt="Imagen de muestra de muchas carpetas" src="_images/sample_many_folders.png" />
-<em>Si el dispositivo ya tiene una versión anterior del formulario:</em> Necesitarás identificar
-la carpeta correcta que tiene el proyecto que estás buscando. Después de
-identificar la carpeta correcta, debes pegar todas las subcarpetas que
-has copiado aquí.</p>
-<p><em>Si el dispositivo no tiene ninguna versión del formulario en absoluto:</em> Si tu dispositivo no
-tiene ninguna versión del formulario, pero aún ves varias carpetas, esto podría ser
-de proyectos anteriores que fueron eliminados previamente en la aplicación. Como se describió
-anteriormente, eliminar un proyecto de la aplicación no necesariamente elimina estas
-carpetas. Puedes eliminar todas las carpetas innecesarias para limpiar el espacio.
-Actualiza tu vista saliendo de la carpeta y regresando a ella (es decir, carpeta
-project, o carpeta files, o la carpeta odk dependiendo de la versión de la aplicación de Android de KoboCollect que estés usando). Ahora deberías ver una sola carpeta. Una
-vez que hayas hecho clic en esta carpeta, ahora puedes pegar todas las subcarpetas
-que copiaste previamente (es decir, forms, instances, etc.).</p>
-<p><em>Si la aplicación de KoboCollect está recién instalada en el dispositivo:</em> Si has
-instalado recientemente la aplicación de KoboCollect en tu dispositivo, es posible que no veas ninguna carpeta
-sin antes configurar los ajustes del servidor, como se describe en el artículo de ayuda
-<a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc std std-doc">Recolección de datos en la aplicación de KoboCollect)</span></a>.</p>
-</li>
-<li><p>Si has copiado los formularios y datos de un dispositivo Android a otro y
-estás listo/a para enviar los envíos desde el dispositivo al servidor, pero aún
-tienes problemas para enviarlos, puedes consultar las sugerencias de configuración
-del servidor que se han descrito en el artículo de ayuda <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc std std-doc">«Recolección de datos en la aplicación de KoboCollect»)</span></a>.</p></li>
+<section id="resolucion-de-problemas">
+<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
+<ul class="simple">
+<li><p>Al conectar el dispositivo Android original con el formulario y los datos que deseas copiar a la PC, es posible que a veces veas no solo una carpeta, sino varias (como se muestra en la imagen a continuación):
+<img alt="Imagen de ejemplo de varias carpetas" src="_images/sample_many_folders.png" />
+Esto puede resultar confuso y dificulta la selección del proyecto correcto que deseas copiar. Aunque lleva tiempo, tendrás que revisar todas las carpetas para identificar la carpeta correcta con el proyecto que buscas. También puedes eliminar las carpetas que ya no sean necesarias. Por ejemplo, si un proyecto ha sido eliminado de la aplicación, es posible que aún aparezca como carpeta cuando se accede al dispositivo desde la computadora. Si estás seguro de que un proyecto ya no es relevante, eliminar la carpeta lo borrará por completo.</p></li>
+<li><p>Del mismo modo, al conectar el teléfono móvil Android sin la última versión del formulario (o incluso sin ningún formulario) a la PC, a veces verás no solo una carpeta sino varias (como se muestra en la imagen a continuación):
+<img alt="Imagen de ejemplo de varias carpetas" src="_images/sample_many_folders.png" />
+<em>Si el dispositivo ya tiene una versión anterior del formulario:</em> Tendrás que identificar la carpeta correcta que contiene el proyecto que buscas. Después de identificar la carpeta correcta, debes pegar aquí todas las subcarpetas que copiaste.</p></li>
+</ul>
+<p><em>Si el dispositivo no tiene ninguna versión del formulario:</em> Si tu dispositivo no tiene ninguna versión del formulario, pero aún ves varias carpetas, esto podría deberse a proyectos anteriores que fueron eliminados previamente de la aplicación. Como se describió anteriormente, eliminar un proyecto de la aplicación no necesariamente elimina estas carpetas. Puedes eliminar todas las carpetas innecesarias para liberar espacio. Actualiza la vista saliendo de la carpeta y volviendo a ella (es decir, la carpeta del proyecto, la carpeta files o la carpeta odk, según la versión de la aplicación Android KoboCollect que estés usando). Ahora deberías ver una sola carpeta. Una vez que hayas hecho clic en esta carpeta, puedes pegar todas las subcarpetas que copiaste anteriormente (es decir, forms, instances, etc.).</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>_Si la aplicación KoboCollect está recién instalada en el dispositivo:_ Si acabas de instalar la aplicación KoboCollect en tu dispositivo, es posible que no veas ninguna carpeta sin antes configurar los ajustes del servidor, como se describe en el artículo de ayuda [Configuración de la aplicación KoboCollect](kobocollect_on_android_latest).
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>Si has copiado los formularios y datos de un dispositivo Android a otro y estás listo para enviar los envíos desde el dispositivo al servidor, pero aún tienes problemas para enviarlos, puedes consultar las sugerencias de configuración del servidor que se describen en el artículo de ayuda <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="doc std std-doc">Configuración de la aplicación KoboCollect</span></a>.</p></li>
 </ul>
 </section>
 </section>
@@ -277,7 +226,7 @@ del servidor que se han descrito en el artículo de ayuda <a class="reference in
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Transferir formularios y datos manualmente de un dispositivo Android a otro"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Importar formularios en KoboCollect"
               class="feedback-button"
               target="_blank"
             >
@@ -293,143 +242,152 @@ del servidor que se han descrito en el artículo de ayuda <a class="reference in
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Transferir formularios y datos manualmente de un dispositivo Android a otro</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#solucion-de-problemas">Solución de problemas:</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Importar formularios en KoboCollect</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#resolucion-de-problemas">Resolución de problemas</a></li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -494,7 +452,7 @@ del servidor que se han descrito en el artículo de ayuda <a class="reference in
   <script>
     window.docs = {
       currentPagename: "transferring_forms",
-      currentTitle: "Transferir formularios y datos manualmente de un dispositivo Android a otro",
+      currentTitle: "Importar formularios en KoboCollect",
       currentUrl: ("index.html").replace("index.html", "transferring_forms.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

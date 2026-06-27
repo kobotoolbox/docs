@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+
+<html lang="fr" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Utiliser XLSForm avec KoboToolbox &#8212; Documentation KoboToolbox </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=d9a2d029" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=e77fa1ad" />
+    <script src="_static/documentation_options.js?v=d1a510d7"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=e6b791cb"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Recherche" href="search.html" />
+    <link rel="next" title="Types de questions dans XLSForm" href="question_types_xls.html" />
+    <link rel="prev" title="Créer un XLSForm" href="getting_started_xlsform.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://support.kobotoolbox.org/quick_start.html">Get started</a></li>
+      <li><a href="https://academy.kobotoolbox.org">Academy</a></li>
+      <li><a href="https://community.kobotoolbox.org">Community Forum</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our Community Forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="xlsform_with_kobotoolbox">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="utiliser-xlsform-avec-kobotoolbox">
+<h1>Utiliser XLSForm avec KoboToolbox<a class="headerlink" href="#utiliser-xlsform-avec-kobotoolbox" title="Lien vers cette rubrique">¶</a></h1>
+<p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/2766eac60a2cfda9bee74f5ec77308dd80bfd029/source/xlsform_with_kobotoolbox.md" class="reference">6 mai 2026</a></p>
+<p>XLSForm s’intègre parfaitement à KoboToolbox pour créer, prévisualiser, modifier et déployer des formulaires de collecte de données. Par exemple, vous pouvez commencer à créer un formulaire dans l’interface de création de formulaires KoboToolbox <strong>(KoboToolbox Formbuilder)</strong>, puis le télécharger en tant que XLSForm pour le personnaliser davantage. Cela fournit une base structurée, utile pour les nouveaux projets ou les utilisateurs ayant moins d’expérience dans la création de formulaires.</p>
+<p>Une fois personnalisés, les formulaires créés dans XLSForm peuvent être importés dans KoboToolbox pour être examinés, modifiés et déployés.</p>
+<p>Cet article couvre les sujets suivants :</p>
+<ul class="simple">
+<li><p>Télécharger un XLSForm depuis KoboToolbox</p></li>
+<li><p>Importer et prévisualiser un XLSForm dans KoboToolbox</p></li>
+<li><p>Remplacer un formulaire existant par un XLSForm</p></li>
+<li><p>Importer un XLSForm via une URL</p></li>
+<li><p>Tester et valider votre XLSForm</p></li>
+</ul>
+<section id="telecharger-un-xlsform-depuis-kobotoolbox">
+<h2>Télécharger un XLSForm depuis KoboToolbox<a class="headerlink" href="#telecharger-un-xlsform-depuis-kobotoolbox" title="Lien vers cette rubrique">¶</a></h2>
+<p>Lorsque vous travaillez dans KoboToolbox, vous pouvez avoir besoin de télécharger votre formulaire en tant que XLSForm pour y apporter des modifications plus efficacement, par exemple pour dupliquer de nombreuses questions, modifier de grandes listes d’options, ajouter des traductions ou utiliser des fonctionnalités avancées non disponibles dans le Formbuilder. De plus, télécharger votre formulaire en tant que XLSForm vous permet de créer des formulaires hors ligne, de les partager sous forme de fichiers <code class="docutils literal notranslate"><span class="pre">.xlsx</span></code> pour la collaboration et la gestion des versions, et de les partager avec l’équipe d’assistance de KoboToolbox ou sur le Forum communautaire pour demander de l’aide.</p>
+<p>Tout formulaire créé avec le Formbuilder peut être téléchargé en tant que fichier XLSForm :</p>
+<ol class="arabic simple">
+<li><p>Accédez à la page <strong>FORMULAIRE</strong> de votre projet dans KoboToolbox.</p></li>
+<li><p>Cliquez sur l’icône <i class="k-icon k-icon-more"></i> <strong>Plus d’actions</strong>.</p></li>
+<li><p>Sélectionnez <i class="k-icon k-icon-xls-file"></i> <strong>Télécharger XLS</strong>.</p></li>
+</ol>
+<p><img alt="Menu Télécharger XLS" src="_images/download_xls.png" /></p>
+</section>
+<section id="importer-un-xlsform-dans-kobotoolbox">
+<h2>Importer un XLSForm dans KoboToolbox<a class="headerlink" href="#importer-un-xlsform-dans-kobotoolbox" title="Lien vers cette rubrique">¶</a></h2>
+<p>Vous pouvez également avoir besoin de créer un nouveau projet à partir d’un XLSForm que vous avez créé de zéro ou qui vous a été partagé.</p>
+<p>Pour importer et prévisualiser un XLSForm dans un nouveau projet dans KoboToolbox :</p>
+<ol class="arabic simple">
+<li><p>Accédez à la page d’accueil <strong>Projets</strong> dans KoboToolbox et cliquez sur <strong>NOUVEAU</strong>.</p></li>
+<li><p>Sélectionnez <strong>Importer un XLSForm</strong> et importez votre fichier Excel.</p></li>
+<li><p>Saisissez les détails du projet et cliquez sur <strong>Créer le projet</strong>.</p></li>
+<li><p>Cliquez sur le bouton <i class="k-icon k-icon-view"></i> <strong>Aperçu</strong> pour prévisualiser votre formulaire.</p></li>
+</ol>
+<p><img alt="Boîte de dialogue d'importation XLSForm" src="_images/upload_xls.png" /></p>
+</section>
+<section id="remplacer-un-formulaire-par-un-xlsform">
+<h2>Remplacer un formulaire par un XLSForm<a class="headerlink" href="#remplacer-un-formulaire-par-un-xlsform" title="Lien vers cette rubrique">¶</a></h2>
+<p>Une fois un projet créé, vous pouvez remplacer tout formulaire existant par un XLSForm mis à jour :</p>
+<ol class="arabic simple">
+<li><p>Accédez à la page <strong>FORMULAIRE</strong> de votre projet dans KoboToolbox.</p></li>
+<li><p>Cliquez sur <i class="k-icon k-icon-replace"></i> <strong>Remplacer le formulaire</strong> en haut à droite.</p></li>
+<li><p>Sélectionnez <strong>Importer un XLSForm</strong> et importez votre fichier Excel.</p></li>
+</ol>
+<p><img alt="Boîte de dialogue de remplacement du formulaire" src="_images/replace_form.png" /></p>
+</section>
+<section id="importer-un-xlsform-via-une-url">
+<h2>Importer un XLSForm via une URL<a class="headerlink" href="#importer-un-xlsform-via-une-url" title="Lien vers cette rubrique">¶</a></h2>
+<p>Si vous utilisez Google Sheets ou si vous stockez le fichier dans Dropbox, vous pouvez importer un XLSForm via une URL. L’URL doit être accessible publiquement et doit déclencher le téléchargement d’un fichier lorsqu’elle est ouverte dans un navigateur pour que l’importation fonctionne. Les XLSForms peuvent également être importés depuis des logiciels similaires, tels qu’Excel Web et OneDrive.</p>
+<details><summary><strong>Obtenir un lien depuis Google Sheets</strong></summary>
+<p>Pour obtenir l’URL correcte d’une feuille de calcul Google Sheets :</p>
+<ol class="arabic simple">
+<li><p>Cliquez sur <strong>Fichier &gt; Partager &gt; Publier sur le Web</strong>.</p></li>
+<li><p>Dans le menu déroulant <strong>Page Web</strong>, sélectionnez <strong>Microsoft Excel (.xlsx)</strong>. Conservez <strong>Document entier</strong> sélectionné dans le premier menu déroulant.</p></li>
+<li><p>Cliquez sur <strong>Publier</strong>.</p></li>
+<li><p>Copiez le lien du document obtenu.</p></li>
+</ol>
+<p class="note">
+Pour plus d'informations, consultez la <a href="https://support.google.com/docs/answer/183965?hl=en&co=GENIE.Platform%3DDesktop">documentation Google Sheets</a>.
+</p>
+</details>
+<br>
+<details><summary><strong>Obtenir un lien depuis Dropbox</strong></summary>
+<p>Pour obtenir l’URL correcte d’une feuille de calcul stockée dans Dropbox :</p>
+<ol class="arabic simple">
+<li><p>Copiez le lien du fichier dans Dropbox en cliquant sur <i class="k-icon k-icon-link"></i> <strong>Copier le lien</strong>.</p></li>
+<li><p>À la fin du lien, remplacez le suffixe <code class="docutils literal notranslate"><span class="pre">dl=0</span></code> par <code class="docutils literal notranslate"><span class="pre">dl=1</span></code>. Il s’agira de l’URL à importer dans KoboToolbox.</p></li>
+</ol>
+</details>
+<br>
+<p>Une fois que vous avez récupéré l’URL du fichier, vous pouvez importer votre XLSForm dans KoboToolbox :</p>
+<ol class="arabic simple">
+<li><p>Accédez à la page d’accueil <strong>Projets</strong> dans KoboToolbox et cliquez sur <strong>NOUVEAU</strong>.</p></li>
+<li><p>Sélectionnez <strong>Importer un XLSForm via une URL</strong>.</p></li>
+<li><p>Collez votre URL et cliquez sur <strong>Importer</strong>.</p></li>
+<li><p>Saisissez les détails du projet et cliquez sur <strong>Créer le projet</strong>.</p></li>
+</ol>
+<p><img alt="Boîte de dialogue d'importation XLSForm via URL" src="_images/import_via_url.png" /></p>
+<p class="note">
+    <b>Note :</b> Les modifications apportées à un fichier dans Dropbox ou Google Sheets ne sont pas automatiquement répercutées dans KoboToolbox. Vous devez réimporter le XLSForm via l'URL et redéployer les modifications du formulaire.
+</p>
+</section>
+<section id="tester-et-valider-votre-xlsform">
+<h2>Tester et valider votre XLSForm<a class="headerlink" href="#tester-et-valider-votre-xlsform" title="Lien vers cette rubrique">¶</a></h2>
+<p>Valider, prévisualiser et tester votre XLSForm est essentiel pour garantir son intégrité structurelle, sa fonctionnalité et l’expérience utilisateur. Chacune de ces étapes permet d’identifier les erreurs ou problèmes susceptibles d’empêcher le formulaire de fonctionner comme prévu.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Étape</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Validation</p></td>
+<td class="text-left"><p>Cette étape consiste à importer le formulaire et à vérifier les erreurs (par exemple, fautes d’orthographe ou de casse, expressions de logique de formulaire incorrectes, référencement de questions incorrect, libellés manquants). Les messages d’erreur du formulaire apparaissent généralement lors de l’importation, du déploiement ou de l’ouverture d’un formulaire.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Prévisualisation</p></td>
+<td class="text-left"><p>Cette étape vous permet de visualiser le formulaire tel qu’il sera affiché aux répondants et de vérifier que tous les éléments fonctionnent correctement avant le déploiement (par exemple, la mise en page du formulaire, les libellés des questions et des choix).</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Test</p></td>
+<td class="text-left"><p>Cette étape consiste à saisir des données pour tester le fonctionnement du formulaire (par exemple, vérifier les apparences des questions, les options de choix et la logique de formulaire). Les tests peuvent être effectués en mode <strong>APERÇU</strong> avant le déploiement.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Valider et tester continuellement votre XLSForm au fur et à mesure des modifications simplifiera la résolution de problèmes et aidera à identifier la cause de tout problème. Il est essentiel de s’assurer que votre formulaire fonctionne comme prévu avant de lancer la collecte de données.</p>
+<p>Lors de la prévisualisation et du test de votre formulaire, utilisez la même plateforme que celle que vous utiliserez pour la collecte de données : <a class="reference external" href="https://support.kobotoolbox.org/fr/data_through_webforms.html">formulaires web</a>, <a class="reference external" href="https://support.kobotoolbox.org/fr/data_collection_kobocollect.html">KoboCollect</a>, ou les deux.</p>
+<p class="note">
+Pour en savoir plus sur la configuration de KoboCollect pour prévisualiser et tester vos formulaires, consultez l'article <a href="https://support.kobotoolbox.org/fr/kobocollect_on_android_latest.html">Configurer l'application KoboCollect</a>.
+</p>
+<p>Si vous avez du mal à trouver la source d’une erreur dans votre XLSForm, essayez d’importer le formulaire dans <a class="reference external" href="https://getodk.org/xlsform/">XLSForm Online</a> par ODK, qui peut souvent fournir des messages d’erreur et des avertissements plus détaillés pour vous aider à identifier et corriger les problèmes avant d’importer le formulaire dans KoboToolbox.</p>
+</section>
+<section id="resolution-de-problemes">
+<h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
+<details>
+<summary><strong>Message d'erreur lors de l'importation, de la prévisualisation ou du déploiement d'un XLSForm</strong></summary>
+<p>Si votre XLSForm contient une erreur, un message d’erreur s’affiche, indiquant généralement la ligne, la question ou l’expression exacte où se trouve le problème. Après avoir corrigé l’erreur dans votre tableur, vous devrez importer à nouveau le fichier.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Messages d’erreur courants</p></th>
+<th class="head text-left"><p>Explication courante</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">survey</span> <span class="pre">sheet</span> <span class="pre">is</span> <span class="pre">either</span> <span class="pre">empty</span> <span class="pre">or</span> <span class="pre">missing</span> <span class="pre">important</span> <span class="pre">column</span> <span class="pre">headers.</span></code></p></td>
+<td class="text-left"><p>Des en-têtes de colonnes obligatoires sont manquants ou mal orthographiés.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">survey</span> <span class="pre">element</span> <span class="pre">named</span> <span class="pre">'name'</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">label</span> <span class="pre">or</span> <span class="pre">hint.</span></code></p></td>
+<td class="text-left"><p>L’une des questions de votre formulaire ne possède pas de libellé.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">FormLogicError:</span> <span class="pre">Could</span> <span class="pre">not</span> <span class="pre">evaluate:</span> <span class="pre">[expression],</span> <span class="pre">message:</span> <span class="pre">The</span> <span class="pre">string</span> <span class="pre">did</span> <span class="pre">not</span> <span class="pre">match</span> <span class="pre">the</span> <span class="pre">expected</span> <span class="pre">pattern.</span></code></p></td>
+<td class="text-left"><p>Une expression de logique de formulaire contient des erreurs, telles qu’une syntaxe de référencement de questions incorrecte ou une parenthèse manquante.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">unable</span> <span class="pre">to</span> <span class="pre">deploy</span> <span class="pre">ODK</span> <span class="pre">Validate</span> <span class="pre">Errors:</span> <span class="pre">&gt;&gt;</span> <span class="pre">XForm</span> <span class="pre">is</span> <span class="pre">invalid</span></code></p></td>
+<td class="text-left"><p>Une expression de logique de formulaire contient des erreurs, telles qu’une syntaxe de référencement de questions incorrecte ou une parenthèse manquante.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">There</span> <span class="pre">has</span> <span class="pre">been</span> <span class="pre">a</span> <span class="pre">problem</span> <span class="pre">trying</span> <span class="pre">to</span> <span class="pre">replace</span> <span class="pre">${question}</span> <span class="pre">with</span> <span class="pre">the</span> <span class="pre">XPath</span> <span class="pre">to</span> <span class="pre">the</span> <span class="pre">survey</span> <span class="pre">element</span> <span class="pre">named</span> <span class="pre">'question'.</span> <span class="pre">There</span> <span class="pre">is</span> <span class="pre">no</span> <span class="pre">survey</span> <span class="pre">element</span> <span class="pre">with</span> <span class="pre">this</span> <span class="pre">name.</span></code></p></td>
+<td class="text-left"><p>Vous faites référence à une question de votre formulaire qui n’existe pas ou dont le nom est mal orthographié. Assurez-vous d’utiliser le nom <strong>exact</strong> de la question dans vos expressions de logique de formulaire.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">'list_name'</span></code><br><code class="docutils literal notranslate"><span class="pre">​​List</span> <span class="pre">name</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">choices</span> <span class="pre">sheet</span></code></p></td>
+<td class="text-left"><p>La liste d’options d’une question n’a pas été définie, ou il y a une faute de frappe dans le <code class="docutils literal notranslate"><span class="pre">list_name</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Choice</span> <span class="pre">names</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">unique</span> <span class="pre">for</span> <span class="pre">each</span> <span class="pre">choice</span> <span class="pre">list.</span> <span class="pre">If</span> <span class="pre">this</span> <span class="pre">is</span> <span class="pre">intentional,</span> <span class="pre">use</span> <span class="pre">the</span> <span class="pre">setting</span> <span class="pre">'allow_choice_duplicates'.</span></code></p></td>
+<td class="text-left"><p>Des noms de choix en double ont été utilisés dans la même liste d’options. Supprimez le ou les noms de choix en double, ou autorisez les doublons dans les <a href="https://support.kobotoolbox.org/fr/form_settings_xls.html#available-form-settings-in-xlsform">paramètres de formulaires</a>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Unmatched</span> <span class="pre">begin</span> <span class="pre">statement:</span> <span class="pre">group</span> <span class="pre">(group)</span></code></p></td>
+<td class="text-left"><p>Un groupe de questions ne possède pas la ligne <code class="docutils literal notranslate"><span class="pre">end_group</span></code> correspondante.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Can't</span> <span class="pre">find</span> <span class="pre">external_file.csv</span></code> <br> <code class="docutils literal notranslate"><span class="pre">Failed</span> <span class="pre">to</span> <span class="pre">load</span> <span class="pre">external_file.csv.</span></code></p></td>
+<td class="text-left"><p>Une <a href="https://support.kobotoolbox.org/fr/pull_data_kobotoolbox.html">pièce jointe externe</a> liée à votre formulaire (par exemple, lors de l’utilisation de <code class="docutils literal notranslate"><span class="pre">pulldata()</span></code>) n’a pas été importée dans KoboToolbox.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Can't</span> <span class="pre">find</span> <span class="pre">survey.xml</span></code></p></td>
+<td class="text-left"><p>Les <a href="https://support.kobotoolbox.org/fr/dynamic_data_attachment.html">liaisons dynamiques de projets</a> n’ont pas été correctement configurées dans les paramètres de votre projet.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">'select_from_list_name'</span></code></p></td>
+<td class="text-left"><p>Un nom de liste est manquant dans la colonne <code class="docutils literal notranslate"><span class="pre">type</span></code> après <code class="docutils literal notranslate"><span class="pre">select_one</span></code> ou <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+</details>
+<br>
+<details>
+<summary><strong>Message d'erreur : Choice names must be unique for each choice list</strong></summary>
+<br>
+<p><img alt="Message d'erreur nom invalide" src="_images/error-message-invalid-name.png" /></p>
+<p>Cette erreur signifie qu’au moins deux lignes de la même liste de <strong>choix</strong> partagent la même valeur dans le champ <strong>name</strong>.</p>
+<p>Par exemple :</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>list_name</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>yn</p></td>
+<td class="text-left"><p>yes</p></td>
+<td class="text-left"><p>Yes, always</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>yn</p></td>
+<td class="text-left"><p>yes</p></td>
+<td class="text-left"><p>Yes, sometimes</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>yn</p></td>
+<td class="text-left"><p>no</p></td>
+<td class="text-left"><p>No, never</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>choices</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Pour corriger les noms de choix en double :</p>
+<ol class="arabic simple">
+<li><p>Ouvrez votre XLSForm.</p></li>
+<li><p>Accédez à l”<strong>onglet choices</strong>.</p></li>
+<li><p>Trouvez le numéro de ligne référencé dans le message d’erreur.</p></li>
+<li><p>Vérifiez la colonne <code class="docutils literal notranslate"><span class="pre">name</span></code> pour repérer les valeurs en double au sein du même <code class="docutils literal notranslate"><span class="pre">list_name</span></code>.</p></li>
+<li><p>Mettez à jour la valeur <code class="docutils literal notranslate"><span class="pre">name</span></code> en double afin que chaque <code class="docutils literal notranslate"><span class="pre">name</span></code> de la liste soit unique.</p></li>
+<li><p>Enregistrez le fichier, puis <a href="https://support.kobotoolbox.org/fr/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">importez</a> et redéployez à nouveau le formulaire.</p></li>
+</ol>
+<p>Si les valeurs <code class="docutils literal notranslate"><span class="pre">name</span></code> en double sont intentionnelles (par exemple, lors de l’utilisation de <a class="reference external" href="https://support.kobotoolbox.org/fr/choice_filters_xls.html">filtres de choix</a>), vous pouvez autoriser les doublons dans les <a class="reference external" href="https://support.kobotoolbox.org/fr/form_settings_xls.html#available-form-settings-in-xlsform">paramètres de formulaires</a>.</p>
+</details>
+<br>
+<details>
+<summary><strong>Message d'erreur : List name not in choices sheet</strong></summary>
+<br>
+<p><img alt="Message d'erreur nom de liste" src="_images/error-message-list-name.png" /></p>
+<p>Cette erreur se produit lorsqu’une question utilise une liste d’options qui n’existe pas dans l”<strong>onglet choices</strong>, ou lorsque le nom de liste dans la colonne <code class="docutils literal notranslate"><span class="pre">list_name</span></code> est mal orthographié.</p>
+<p>Par exemple :</p>
+<p><strong>onglet survey</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>type</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>select_one yes_no</p></td>
+<td class="text-left"><p>service</p></td>
+<td class="text-left"><p>Do you like the service at the supermarket?</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p><strong>onglet choices</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>list_name</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>yes_n</p></td>
+<td class="text-left"><p>yes_always</p></td>
+<td class="text-left"><p>Yes, always</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>yes_n</p></td>
+<td class="text-left"><p>yes_sometimes</p></td>
+<td class="text-left"><p>Yes, sometimes</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>yes_n</p></td>
+<td class="text-left"><p>no</p></td>
+<td class="text-left"><p>No, never</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>choices</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+</tr>
+</tbody>
+</table>
+<p>Pour corriger le nom de liste manquant ou incorrect :</p>
+<ol>
+<li>Ouvrez votre XLSForm.</li>
+<li>Accédez à l'onglet <code>survey</code>.</li>
+<li>Trouvez la question qui utilise le nom de liste référencé dans le message d'erreur (par exemple, <code>select_one yes_no</code>).</li>
+<li>Accédez à l'onglet <code>choices</code> et vérifiez dans la colonne <code>list_name</code> qu'il existe une correspondance exacte avec le nom de liste référencé dans le message d'erreur.</li>
+<li>Effectuez l'une des actions suivantes :
+  <ul>
+    <li><strong>Si le nom de liste est manquant :</strong> Ajoutez une nouvelle liste de choix pour cette question. Assurez-vous que le <code>list_name</code> est écrit exactement comme il apparaît dans l'onglet <code>survey</code>.</li>
+    <li><strong>Si le nom de liste existe mais est orthographié différemment :</strong> Corrigez la faute de frappe afin que le nom de liste corresponde exactement dans les onglets <code>survey</code> et <code>choices</code>.</li>
+  </ul>
+</li>
+<li>Enregistrez le fichier, puis <a href="https://support.kobotoolbox.org/fr/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">importez</a> et redéployez à nouveau le formulaire.</li>
+</ol>
+</details>
+<br>
+<details>
+<summary><strong>Difficulté à identifier l'erreur dans le XLSForm</strong></summary>
+Si vous avez du mal à trouver la source d'une erreur dans votre XLSForm, essayez d'importer le formulaire dans <a href="https://getodk.org/xlsform/">XLSForm Online</a> par ODK. Cet outil peut fournir des messages d'erreur et des avertissements plus détaillés, ce qui peut vous aider à identifier et corriger les problèmes avant d'importer le formulaire dans KoboToolbox.
+</details>
+<br>
+<details>
+<summary><strong>Erreur lors de l'importation d'un XLSForm via une URL</strong></summary>
+Vérifiez que l'URL que vous utilisez est correcte. Lorsqu'elle est chargée dans un navigateur, l'URL doit déclencher le téléchargement d'un fichier, et non ouvrir une page web.
+</details>
+<br>
+<details>
+<summary><strong>L'importation via URL n'affiche pas la version non déployée</strong></summary>
+Si vous avez importé un lien et que vous ne voyez pas la nouvelle version du formulaire, actualisez votre navigateur.
+</details>
+<br>
+<details>
+<summary><strong>Échec de la soumission d'un formulaire web</strong></summary>
+Si la soumission d'un formulaire web échoue, vérifiez si votre formulaire utilise un <strong>terme réservé XLSForm</strong> dans la colonne <code>name</code>. Les termes réservés sont des termes qui ne peuvent pas être utilisés comme noms de questions car ils sont utilisés par le moteur XForms sous-jacent pour la structure, la logique ou l'analyse des données (par exemple, type, label, start, today). L'utilisation de ces termes peut entraîner des erreurs de validation du formulaire, des échecs de publication ou des problèmes d'export de données.<br><br>
+<p>Pour corriger le problème, renommez la question concernée avec une valeur différente, puis redéployez le formulaire. Ce problème affecte généralement les formulaires web même lorsque le formulaire s’ouvre normalement, tandis que KoboCollect peut continuer à fonctionner comme prévu. Notez que les soumissions déjà enregistrées avec l’ancienne version du formulaire peuvent rester non soumettables ; il est donc important de mettre à jour le formulaire dès que possible si vous collectez des données via des formulaires web. Veillez toujours à <strong>tester la soumission du formulaire avant de lancer la collecte de données</strong> afin de détecter rapidement les problèmes de nommage.</p>
+</details></section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+
+        <div class="page__back-to-top-container">
+          <a href="#top" class="page__back-to-top">Back to top</a>
+        </div>
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Utiliser XLSForm avec KoboToolbox"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">Premiers Pas</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Introduction à KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guide de démarrage rapide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire des termes KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Compte et Facturation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Créer un compte KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Problèmes liés au lien d’activation du compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Réinitialiser votre mot de passe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Paramètres du compte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configuration de l’authentification à deux facteurs dans KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utilisation du Formbuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Découvrir l’interface de création de formulaires</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Ajouter des questions avec le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Questions de type texte dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Questions à choix multiple dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Question de type Consentement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Questions numériques dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Questions de type date et heure dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Questions multimédias dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Questions GPS dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Questions de type note dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Options de questions dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groupes et groupes répétés dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Ajouter une matrice de questions avec le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Ajouter des traductions dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Styliser vos formulaires web dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Ajouter des métadonnées dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction à la logique de formulaire dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Ajouter une logique de saut dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Ajouter des critères de validation dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Ajouter des calculs avec le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Ajouter des questions à sélection en cascade dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Sélectionner des options à partir de fichiers externes dans le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Liaison dynamique de projets avec le Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Utiliser la bibliothèque de questions de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Collections publiques dans la bibliothèque KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Utilisation de XLSForm</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introduction à XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Créer un XLSForm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Utiliser XLSForm avec KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#telecharger-un-xlsform-depuis-kobotoolbox">Télécharger un XLSForm depuis KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importer-un-xlsform-dans-kobotoolbox">Importer un XLSForm dans KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remplacer-un-formulaire-par-un-xlsform">Remplacer un formulaire par un XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importer-un-xlsform-via-une-url">Importer un XLSForm via une URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tester-et-valider-votre-xlsform">Tester et valider votre XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolution-de-problemes">Résolution de problèmes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Types de questions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Gérer les choix de réponse dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Groupes de questions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Groupes répétés dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Options de questions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apparences de questions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Ajouter des traductions dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Ajouter des médias à un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introduction à la logique de formulaire dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Utiliser des fonctions avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Utiliser des expressions régulières avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Ajouter une logique de saut dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Ajouter des contraintes dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Ajouter une logique d’obligation conditionnelle dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Ajouter des filtres de choix dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Ajouter des calculs dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Paramètres de formulaires dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personnaliser vos formulaires à l’aide de XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Métadonnées de formulaires dans XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraire des données d’un fichier CSV externe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Sélectionner des options à partir d’un fichier externe avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Sélectionner des options à partir d’une carte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Sélectionner des options à partir d’une image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Liaison dynamique de projets avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Verrouillage de questionnaire avec XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importer une collection avec XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Collecte de Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Collecter des données avec KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Déployer vos formulaires pour la collecte de données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecte de données via des formulaires web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configurer l’application KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecte de données avec KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personnaliser les paramètres KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecter des données GPS avec KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Collecter des données qualitatives avec KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecter des données dans plusieurs langues</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Gestion des Projets et Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Aperçu de l’interface KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestion de projets dans KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Voir et valider vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modifier et supprimer vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporter et télécharger vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Options avancées pour l’export des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestion des données de groupes répétés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introduction aux fichiers et aux médias de projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importer des fichiers multimédias dans un projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gérer les réponses média soumises par les répondants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Droits d’accès au niveau du projet</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Droits d’accès au niveau de l’utilisateur</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Suivi d’activité</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Utiliser la fonctionnalité de gestion d’équipe</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Analyse des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Analyse de données avec KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Préparer votre formulaire pour l’analyse des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualiser vos données à l’aide de rapports personnalisés</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Cartographier vos données GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcription et traduction de réponses audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Analyse qualitative des réponses audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir vos données pour SPSS et Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Intégrations</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introduction à l’API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Utiliser l’API pour les exports synchronisées</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connexion de KoboToolbox à Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connexion de KoboToolbox à Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Fusionner des données individuelles avec des données répétées via Power Query dans Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Utiliser les services REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exporter et télécharger des données vers un logiciel SIG</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Intégration de KoboToolbox avec monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migration de l’API v1 vers l’API v2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Sécurité et Protection des Données</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Sécurité des données chez KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">Règlement général sur la protection des données (RGPD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Conformité HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Stockage des données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Chiffrer vos formulaires</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Ressources Supplémentaires</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Inclure des codes P dans vos données</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Créer des numéros de série uniques</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Spécifier une réponse autre pour les questions à choix multiples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Réduire la taille de fichiers multimédias</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Ajouter des calculs et des contraintes dans un tableau de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Ajouter une logique de saut à un tableau de questions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Ajouter un logo personnalisé</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exports bloqués en attente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Télécharger manuellement des soumissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importer des formulaires dans KoboCollect</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Community Forum</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+
+   
+        <br><br>
+  
+
+  <div class="wrapper">
+    <h1>KoboToolbox Academy</h1>
+
+    <p>KoboToolbox Academy offers high quality self-paced courses, created by KoboToolbox experts.</p>
+
+    <a class="button" href="https://academy.kobotoolbox.org">
+      Visit the KoboToolbox Academy
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "xlsform_with_kobotoolbox",
+      currentTitle: "Utiliser XLSForm avec KoboToolbox",
+      currentUrl: ("index.html").replace("index.html", "xlsform_with_kobotoolbox.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

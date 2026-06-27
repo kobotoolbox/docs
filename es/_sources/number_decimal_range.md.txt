@@ -1,127 +1,103 @@
-# Tipos de preguntas de Número, Decimal y Rango
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/ddc7265c83c14464689447dd16d7ddde9a084f75/source/number_decimal_range.md" class="reference">2 de abril de 2025</a>
+# Preguntas digitales en KoboToolbox
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/number_decimal_range.md" class="reference">23 Apr 2026</a>
 
-Al crear preguntas con respuestas numéricas, puedes elegir entre los tipos de preguntas "Número", "Decimal" y "Rango" en KoboToolbox.
+Las preguntas numéricas se utilizan para recolectar datos cuantitativos, como conteos, mediciones, precios o calificaciones. Ayudan a garantizar que las respuestas se ingresen en formato numérico, lo que facilita cálculos precisos, validaciones y análisis.
 
-Este artículo describe estos tipos de preguntas y cómo usarlos.
+KoboToolbox ofrece varios tipos de preguntas numéricas para adaptarse a diferentes necesidades de recolección de datos, incluyendo **números enteros, valores decimales** y **respuestas dentro de un rango definido.**
 
-## Cuándo usarlos
+Este artículo explica los tipos de preguntas numéricas disponibles, cómo agregarlos y configurarlos en el Formbuilder, las opciones de apariencia que puedes aplicar y los límites específicos de cada plataforma que debes tener en cuenta al recolectar datos numéricos.
 
-**Número:** El tipo de pregunta "Número" en el editor de formularios es equivalente al tipo de pregunta `integer` en XLSForm. Usa el tipo de pregunta "Número" cuando las respuestas a una pregunta sean en forma de números enteros, como el número de niños/as (1, 3, 5, etc.).
+## Tipos de preguntas numéricas
 
-**Decimal:** Usa el tipo de pregunta "Decimal" cuando la respuesta de una pregunta sea en forma de números decimales, como el ingreso mensual (1.2, 34.5, 42.42, etc.).
+Los siguientes tipos de preguntas están disponibles en el Formbuilder para que los encuestados ingresen datos numéricos:
 
-**Rango:** El tipo de pregunta "Rango" puede recolectar valores enteros y decimales. De forma predeterminada, el tipo de pregunta "Rango" muestra una escala deslizante que permite a los/as usuarios/as elegir un número. Al configurarlo, debes definir los valores de `inicio` y `fin` del rango, así como el `paso` entre ellos.
+| Tipo de pregunta | Descripción |
+|:---|:---|
+| <i class="k-icon-qt-number"></i> Número &emsp; &emsp; | Permite a los encuestados ingresar números enteros (por ejemplo, edad o número de participantes). |
+| <i class="k-icon-qt-decimal"></i> Decimal | Permite a los encuestados ingresar números que pueden contener decimales (por ejemplo, tamaño de terreno, precio). |
+| <i class="k-icon-qt-range"></i> Rango | Permite a los encuestados seleccionar un valor numérico dentro de un rango definido por valores mínimo y máximo. |
 
-## Configuración en el editor de formularios
+## Agregar una pregunta numérica en el Formbuilder
 
-Para configurar los tipos de preguntas "Número" y "Decimal":
+Para agregar una pregunta numérica a tu formulario:
 
-- En el editor de formularios, haz clic en el botón <i class="k-icon k-icon-plus"></i> para agregar una nueva pregunta.
-- Escribe la etiqueta de la pregunta. Por ejemplo, "¿Cuántas personas viven en este hogar?". Luego haz clic en "+ AGREGAR PREGUNTA" (o presiona Enter).
-- Elige el tipo de pregunta ("Número" o "Decimal").
+1. Haz clic en el botón <i class="k-icon-plus"></i>.
+2. Ingresa la etiqueta de tu pregunta.
+4. Haz clic en **+ AGREGAR PREGUNTA.**
+5. Elige el tipo de pregunta adecuado.
 
-![Configuración de preguntas de número](/images/number_decimal_range/setup_number_question.gif)
+![Tipos de preguntas numéricas](images/number_decimal_range/numeric.png)
 
-Para agregar un tipo de pregunta "Rango":
+### Configurar preguntas de Rango
 
-- En el editor de formularios, haz clic en el botón <i class="k-icon k-icon-plus"></i> para agregar una nueva pregunta.
-- Escribe el texto de la pregunta. Por ejemplo, "Califica la efectividad del proyecto del 1 al 5 (siendo 5 el más efectivo)". Luego haz clic en "<i class="k-icon k-icon-plus"></i> AGREGAR PREGUNTA" (o presiona Enter).
-- Elige el tipo de pregunta "Rango".
-- Escribe el valor de `inicio` (en este ejemplo, 1).
-- Escribe el valor de `fin` (en este ejemplo, 5).
-- Escribe el `paso`, el número de pasos de un valor al siguiente. (En este ejemplo, 1, lo que significa que las opciones en la escala deslizante son 1, 2, 3, 4, 5).
+Las preguntas de **Rango** se utilizan para recolectar respuestas numéricas dentro de un intervalo definido. Muestran una escala deslizante numerada que permite a los encuestados seleccionar valores entre un mínimo y un máximo.
 
-![Configuración de preguntas de rango](/images/number_decimal_range/setup_range_question.gif)
+Este tipo de pregunta es útil para recolectar respuestas en escala, como calificaciones de satisfacción del 1 al 5 o puntuaciones dentro de un rango fijo.
 
-<p class="note">
-  Se recomienda encarecidamente que especifiques nombres para
-  <strong>todas las preguntas</strong> antes de desplegar tu formulario,
-  <em>especialmente</em> si las etiquetas están en idiomas con caracteres no latinos como
-  chino, árabe o nepalí.
-</p>
+Después de agregar una pregunta de **Rango** en el Formbuilder, configura los siguientes componentes:
+- **start**: El valor numérico mínimo del rango.
+- **end**: El valor numérico máximo del rango.
+- **step**: El intervalo entre cada número del rango.
 
-## Configuración en XLSForm
+![Pregunta de rango](images/number_decimal_range/range.png)
 
-En XLSForm, puedes agregar preguntas de "Número", "Decimal" y "Rango" usando los tipos de pregunta `integer`, `decimal` y `range` respectivamente:
+## Apariencias de las preguntas numéricas
 
-| type    | name     | label                                             | parameters           |
-| :------ | :------- | :------------------------------------------------ | :------------------- |
-| integer | hhsize   | ¿Cuántas personas viven en este hogar?            |                      |
-| decimal | landsize | ¿Qué tan grande es tu tierra? (en hectáreas)      |                      |
-| range   | rating   | Califica la efectividad del proyecto del 1 al 5   | start=1 end=5 step=1 |
-| survey  |
+La tabla a continuación muestra las apariencias predeterminadas para las preguntas numéricas:
 
-<p class="note">
-  Al agregar una pregunta <code>range</code> a un XLSForm, los parámetros
-  <code>start</code>, <code>end</code> y <code>step</code> se agregan en la
-  columna <code>parameters</code>.
-</p>
+![Apariencias de preguntas numéricas](images/number_decimal_range/table.png)
 
-## Apariencia predeterminada en formularios web y KoboCollect
+### Apariencias avanzadas
 
-![Preguntas de Número, Decimal y Rango](/images/number_decimal_range/number_decimal_range_default.png)
+Puedes aplicar apariencias avanzadas a las preguntas numéricas para modificar cómo se muestran y se comportan en tu formulario.
 
-## Apariencias avanzadas
+Para agregar una apariencia avanzada:
+1. Abre la configuración de la pregunta haciendo clic en <i class="k-icon-settings"></i> **Configuración** a la derecha de la pregunta. Esto te llevará a la ventana **Opciones de pregunta**.
+2. En **Aspecto (avanzado)**, escribe el nombre de la apariencia en el cuadro de texto, exactamente como se indica a continuación.
 
-Al agregar las preguntas "número", "decimal" y "rango", puedes especificar diferentes apariencias (en la configuración de la pregunta). Las apariencias cambian la forma en que se muestra la pregunta en formularios web o en KoboCollect.
+![Apariencia de pregunta](images/number_decimal_range/appearance.png)
 
-![Apariencias avanzadas de Número, Decimal y Rango](/images/number_decimal_range/number_decimal_range_advanced_appearance.png)
+Las siguientes apariencias avanzadas están disponibles para preguntas numéricas:
+![Apariencia de pregunta](images/number_decimal_range/table1.png)
+![Apariencia de pregunta](images/number_decimal_range/table2.png)
 
-![Apariencias avanzadas de Número, Decimal y Rango](/images/number_decimal_range/number_decimal_range_advanced.png)
+## Límites para preguntas numéricas
 
-### Apariencias avanzadas en XLSForm
+Las preguntas numéricas tienen límites específicos según la plataforma que pueden afectar la forma en que se ingresan, almacenan y exportan las respuestas. Es importante tener en cuenta estos límites al diseñar tu formulario, especialmente si esperas números grandes o códigos de identificación.
 
-Puedes especificar apariencias avanzadas de las preguntas "Número", "Decimal" y "Rango" en XLSForm bajo la columna de apariencias como en los siguientes ejemplos:
+### Límites numéricos en KoboCollect
 
-| type    | name            | label                                                         | appearance    | parameters           |
-| :------ | :-------------- | :------------------------------------------------------------ | :------------ | :------------------- |
-| integer | income          | ¿Cuál fue el ingreso total que obtuviste en los últimos 12 meses? | thousands-sep |                      |
-| decimal | bearing         | Capturar orientación                                          | bearing       |                      |
-| range   | vertical_rating | Califica la efectividad del proyecto del 1 al 5               | vertical      | start=1 end=5 step=1 |
-| range   | picker_rating   | Califica la efectividad del proyecto del 1 al 5               | picker        | start=1 end=5 step=1 |
-| range   | star_rating     | Califica la efectividad del proyecto del 1 al 5               | rating        | start=1 end=5 step=1 |
-| survey  |
+En KoboCollect:
 
-## Límites en las preguntas "Número" y "Decimal"
+- Las preguntas de tipo **Número** están limitadas a 9 caracteres.
+- Las preguntas de tipo **Decimal** están limitadas a 15 caracteres.
+- Los signos negativos y los puntos decimales cuentan dentro del límite de caracteres.
 
-### KoboCollect
+Si un valor supera estos límites, no se puede ingresar. Esta restricción se aplica en el momento del ingreso de datos e impide guardar números más largos.
 
-El tipo de pregunta "Número" está limitado a un máximo de 9 caracteres y el tipo de pregunta "Decimal" está limitado a un máximo de 15 caracteres.
+### Límites numéricos en formularios web
 
-<p class="note">
-  Los signos negativos y los puntos decimales cuentan para el límite de caracteres.
-</p>
+Los formularios web de KoboToolbox permiten a los encuestados ingresar números más largos, pero existen límites en cuanto a cómo se almacenan:
 
-### Enketo
+- Hasta **17 dígitos** se registran de forma completa.
+- De **18 a 21 dígitos**, los dígitos adicionales se reemplazan con ceros y se elimina cualquier parte decimal.
+- Con **22 dígitos o más**, el valor se almacena automáticamente en notación científica.
+- Los signos negativos no cuentan dentro del límite de dígitos.
 
-Tanto el tipo de pregunta "Número" como "Decimal" están limitados a un máximo de 16 cifras significativas.
+### Recolectar valores numéricos largos
 
-Si se ingresa un número entero positivo o negativo de 22 cifras significativas, el formulario registrará un número de 16 dígitos con notación científica. Por ejemplo, el número `±9845284926482357445633` se registraría como `±9.845284926482358e+21`.
+Si necesitas recolectar valores numéricos que superen estos límites, usa una pregunta de tipo **Texto** en lugar de una pregunta de tipo Número o Decimal.
 
-Si se ingresa un decimal positivo o negativo de 22 cifras significativas, el formulario registrará un número truncado de 16 dígitos, redondeado al dígito 16. Por ejemplo, el número `±9845284926.482357445633` se registrará como `±9845284926.482357`.
+En la configuración **Aspecto (avanzado)** de la pregunta de Texto, selecciona `numbers`. Esto muestra un teclado numérico en KoboCollect durante la recolección de datos, mientras que el valor se almacena como texto.
 
-### Tipo de pregunta de texto como número
+Usa este enfoque cuando:
 
-Si tu encuesta requiere respuestas numéricas que excedan los 15 dígitos, puedes usar una solución alternativa con el tipo de pregunta "Texto":
+- El número pueda superar los límites de la plataforma
+- El valor no deba modificarse ni redondearse
+- El número comience con un cero, como un número de teléfono o de cuenta bancaria
 
-- Agrega una pregunta de "Texto" a tu formulario.
-- Ve a la configuración de **Apariencia** y selecciona "numbers". Ahora aparecerá un teclado de dígitos al completar esta pregunta.
-- Finalmente, se puede incluir una [restricción `regex()`](restrict_responses.md) para restringir aún más la entrada si es necesario.
-
-Aquí hay un ejemplo de XLSForm para ilustrar esto:
-
-| type    | name    | label                      | appearance  | constraint             | constraint_message            |
-| :------ | :------ | :------------------------- | :---------- | :--------------------- | :---------------------------- |
-| text    | number  | Ingresa un número largo    | numbers     | regex(., '^[0-9]\*$')  | El valor debe ser un número   |
-| survey  |
+Almacenar valores numéricos largos como texto garantiza que todos los dígitos, incluidos los ceros iniciales, se conserven exactamente como fueron ingresados.
 
 <p class="note">
-  Puedes descargar un XLSForm con ejemplos de este artículo
-  <a
-    download
-    class="reference"
-    href="./_static/files/number_decimal_range/number_decimal_range_question_types.xlsx"
-    >aquí</a
-  >.
+   Para obtener más información sobre el uso de preguntas de Texto con la apariencia <code>numbers</code>, consulta <a href="https://support.kobotoolbox.org/es/text_questions.html#advanced-appearances">Preguntas de tipo Texto en KoboToolbox</a>.
 </p>

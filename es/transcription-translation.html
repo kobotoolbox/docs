@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Análisis Cualitativo de Respuestas de Audio" href="qualitative_analysis.html" />
-    <link rel="prev" title="Visualización y creación de informes personalizados" href="creating_custom_reports.html" />
+    <link rel="next" title="Análisis cualitativo de respuestas de audio" href="qualitative_analysis.html" />
+    <link rel="prev" title="Mapear datos GPS" href="mapping_gps.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -109,81 +109,92 @@
           
   <section id="transcripcion-y-traduccion-de-respuestas-de-audio">
 <h1>Transcripción y traducción de respuestas de audio<a class="headerlink" href="#transcripcion-y-traduccion-de-respuestas-de-audio" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/81ea68d620feb190d5829be9521d3f913e88de91/source/transcription-translation.md" class="reference">13 Sep 2025</a></p>
-<iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>Las herramientas de procesamiento de lenguaje natural de KoboToolbox te ayudan a recolectar, manejar y analizar datos cualitativos de manera más efectiva. Estas herramientas incluyen transcripción automática de voz a texto y traducción automática, con análisis cualitativo automatizado próximamente disponible. La transcripción original de tus archivos de audio y todo el texto traducido se agregan como nuevas columnas de datos en la tabla de datos y pueden ser <a class="reference internal" href="export_download.html"><span class="std std-doc">descargados</span></a> junto con los datos de tu encuesta.</p>
-<p>Para usar estas funcionalidades, primero recolecta respuestas de audio en tu formulario usando el <a class="reference internal" href="photo_audio_video_file.html"><span class="std std-doc">tipo de pregunta de Audio</span></a> o <a class="reference internal" href="recording-interviews.html"><span class="std std-doc">grabaciones de audio de fondo</span></a>.</p>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/9d20774e6b199308c43703b5914468dd34bb8c70/source/transcription-translation.md" class="reference">14 Jun 2026</a></p>
+<iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Las herramientas de procesamiento de lenguaje natural de KoboToolbox te ayudan a recolectar, gestionar y analizar datos cualitativos de manera más eficaz. Estas herramientas incluyen la transcripción automática de voz a texto y la traducción automática, que pueden preparar las respuestas de audio para el <a class="reference internal" href="qualitative_analysis.html"><span class="std std-doc">análisis cualitativo automatizado</span></a>.</p>
+<p>Este artículo explica cómo transcribir respuestas de audio y traducir transcripciones, incluyendo los idiomas compatibles y los límites de uso para las opciones automáticas.</p>
 <p class="note">
-    <strong>Nota</strong>: La transcripción y traducción automáticas pueden no estar disponibles para <a href="#language-list">todos los idiomas</a>. Para estos idiomas, solo son posibles la transcripción y traducción manuales.
+    <strong>Nota</strong>: Es posible que la transcripción y la traducción automáticas no estén disponibles para <a href="#language-list">todos los idiomas</a>. Para estos idiomas, solo es posible la transcripción y la traducción manual.
 </p>
-<section id="agregar-transcripciones-automaticas">
-<h2>Agregar transcripciones automáticas<a class="headerlink" href="#agregar-transcripciones-automaticas" title="Link to this heading">¶</a></h2>
-<p><img alt="Ejemplo de agregar transcripciones automáticas" src="_images/transcription.png" /></p>
+<p>Para usar las funcionalidades de transcripción y traducción de KoboToolbox, comienza por recolectar respuestas de audio en tu formulario usando el <a class="reference internal" href="photo_audio_video_file.html"><span class="std std-doc">tipo de pregunta Audio</span></a> o las <a class="reference internal" href="recording-interviews.html#recording-interviews-with-background-audio-recordings"><span class="std std-ref">grabaciones de audio de fondo</span></a>. Después de transcribir y traducir las respuestas de audio, la transcripción original de tus archivos de audio y todo el texto traducido se agregan como nuevas columnas de datos en la tabla de datos y se pueden <a class="reference internal" href="export_download.html"><span class="std std-doc">descargar</span></a> junto con los datos de tu encuesta.</p>
+<section id="agregar-transcripciones-de-audio">
+<h2>Agregar transcripciones de audio<a class="headerlink" href="#agregar-transcripciones-de-audio" title="Link to this heading">¶</a></h2>
+<p><img alt="Ejemplo de cómo agregar transcripciones automáticas" src="_images/transcription.png" /></p>
 <p>Para comenzar a transcribir tus respuestas de audio:</p>
 <ol class="arabic simple">
 <li><p>Abre tu proyecto y navega a <strong>DATOS &gt; Tabla</strong>.</p></li>
 <li><p>Haz clic en el botón <strong>Abrir</strong> junto a la respuesta de audio que deseas transcribir.</p></li>
-<li><p>En la ventana <strong>TRANSCRIPCIÓN</strong>, haz clic en <strong>comenzar</strong>.</p>
+<li><p>En la ventana <strong>TRANSCRIPT</strong>, haz clic en <strong>begin</strong>.</p>
 <ul class="simple">
-<li><p>Selecciona el idioma original del archivo de audio y la opción <strong>automática</strong> (la opción <strong>manual</strong> te permitirá transcribir manualmente la grabación de audio).</p></li>
-<li><p>Haz clic en <strong>crear transcripción</strong> para comenzar la transcripción automática.</p></li>
+<li><p>Selecciona el idioma original del archivo de audio.</p></li>
+<li><p>Si está disponible, selecciona la opción <strong>automatic</strong>. La opción <strong>manual</strong> te permitirá transcribir manualmente la grabación de audio en cualquier idioma.</p></li>
+<li><p>Haz clic en <strong>create transcript</strong> para iniciar la transcripción automática.</p></li>
 </ul>
 </li>
-<li><p>Una vez que la transcripción esté completa, puedes editarla manualmente. Puedes reproducir la grabación de audio en la esquina superior derecha para ayudar a verificar la precisión de la transcripción.</p>
+<li><p>Una vez completada la transcripción, puedes editarla manualmente. Puedes reproducir la grabación de audio en la esquina superior derecha para verificar la precisión de la transcripción.</p>
 <ul class="simple">
-<li><p>Después de editar la transcripción, haz clic en el botón <strong>Guardar</strong> para asegurar que tu trabajo se almacene de forma segura.</p></li>
+<li><p>Después de editar la transcripción, haz clic en el botón <strong>Guardar</strong> para asegurarte de que tu trabajo quede almacenado correctamente.</p></li>
 </ul>
 </li>
-<li><p>Cuando esté completa, haz clic en <strong>LISTO</strong> para salir, navega a la siguiente presentación haciendo clic en las flechas junto al botón <strong>LISTO</strong>, o procede a la ventana <strong>TRADUCCIONES</strong>.</p>
+<li><p>Cuando hayas terminado, haz clic en <strong>DONE</strong> para salir, navega al siguiente envío haciendo clic en las flechas junto al botón <strong>DONE</strong>, o continúa a la ventana <strong>TRANSLATIONS</strong>.</p>
 <ul class="simple">
-<li><p>Si haces clic en <strong>LISTO</strong>, regresarás a la vista de tabla de datos, donde se habrá agregado una nueva columna que contiene la transcripción.</p></li>
+<li><p>Si haces clic en <strong>DONE</strong>, volverás a la vista de la tabla de datos, donde se habrá agregado una nueva columna con la transcripción.</p></li>
 </ul>
 </li>
 </ol>
 <p class="note">
-    <strong>Nota</strong>: Las transcripciones y traducciones generadas automáticamente deben guardarse para prevenir la pérdida de datos. Navegar fuera de la página sin guardar resultará en la pérdida de los datos.
+    <strong>Nota</strong>: Las transcripciones y traducciones generadas automáticamente deben guardarse para evitar la pérdida de datos. Si navegas fuera de la página sin guardar, perderás los datos.
 </p>
 </section>
-<section id="agregar-traducciones-automaticas">
-<h2>Agregar traducciones automáticas<a class="headerlink" href="#agregar-traducciones-automaticas" title="Link to this heading">¶</a></h2>
-<p><img alt="Ejemplo de agregar traducciones automáticas" src="_images/translation2.png" /></p>
-<p>Una vez que tengas una transcripción completa para tu respuesta de audio, puedes agregar traducciones a múltiples idiomas:</p>
+<section id="agregar-traducciones">
+<h2>Agregar traducciones<a class="headerlink" href="#agregar-traducciones" title="Link to this heading">¶</a></h2>
+<p><img alt="Ejemplo de cómo agregar traducciones automáticas" src="_images/translation.png" /></p>
+<p>Una vez que tengas una transcripción completa de tu respuesta de audio, puedes agregar traducciones en varios idiomas:</p>
 <ol class="arabic simple">
-<li><p>Procede a la ventana <strong>TRADUCCIONES</strong>.</p>
+<li><p>Ve a la ventana <strong>TRANSLATIONS</strong>.</p>
 <ul class="simple">
 <li><p>La opción de traducción solo está disponible una vez que se ha completado una transcripción.</p></li>
 </ul>
 </li>
-<li><p>Haz clic en <strong>comenzar</strong> y elige el idioma de la traducción.</p>
+<li><p>Haz clic en <strong>begin</strong> y elige el idioma de la traducción.</p>
 <ul class="simple">
-<li><p>Haz clic en <strong>automática</strong> para traducción automática (la opción <strong>manual</strong> te permitirá traducir manualmente la transcripción)</p></li>
-<li><p>Haz clic en <strong>crear traducción</strong> para comenzar la traducción automática</p></li>
+<li><p>Si está disponible, selecciona <strong>automatic</strong> para la traducción automática. La opción <strong>manual</strong> te permitirá traducir manualmente la transcripción en cualquier idioma.</p></li>
+<li><p>Haz clic en <strong>create translation</strong> para iniciar la traducción automática.</p></li>
 </ul>
 </li>
-<li><p>Una vez que la traducción esté completa, puedes editarla manualmente. La transcripción original aparece a la derecha de la pantalla, y el audio original aparece debajo.</p>
+<li><p>Una vez completada la traducción, puedes editarla manualmente. La transcripción original aparece a la derecha de la pantalla y el audio original aparece debajo.</p>
 <ul class="simple">
-<li><p>Después de editar la traducción, haz clic en el botón <strong>Guardar</strong> para asegurar que tu trabajo se almacene de forma segura.</p></li>
+<li><p>Después de editar la traducción, haz clic en el botón <strong>Guardar</strong> para asegurarte de que tu trabajo quede almacenado correctamente.</p></li>
 </ul>
 </li>
-<li><p>Cuando la traducción esté completa, puedes agregar otra traducción haciendo clic en <i class="k-icon-plus"></i> <strong>nueva traducción</strong>, moverte a la siguiente presentación haciendo clic en las flechas junto al número de elemento en la esquina superior derecha, o hacer clic en <strong>LISTO</strong> para navegar de regreso a la tabla de datos.</p></li>
+<li><p>Cuando la traducción esté completa, puedes agregar otra traducción haciendo clic en <i class="k-icon-plus"></i> <strong>new translation</strong>, moverte al siguiente envío haciendo clic en las flechas junto al número de elemento en la esquina superior derecha, o hacer clic en <strong>DONE</strong> para volver a la tabla de datos.</p></li>
 </ol>
 <p class="note">
-    <strong>Nota</strong>: Los archivos de audio solo pueden contener una única transcripción, pero cada transcripción puede tener múltiples traducciones.
+    <strong>Nota</strong>: Los archivos de audio solo pueden contener una única transcripción, pero cada transcripción puede tener varias traducciones.
 </p>
 </section>
 <section id="lista-de-idiomas">
 <h2>Lista de idiomas<a class="headerlink" href="#lista-de-idiomas" title="Link to this heading">¶</a></h2>
-<p>Estas funcionalidades de procesamiento de lenguaje natural integran capacidades de reconocimiento automático de voz (ASR) y traducción automática (MT) proporcionadas por Google Cloud Compute, que actualmente ofrece transcripción automática en 72 idiomas (con 138 variantes regionales) y traducción automática en 106 idiomas. Para transcripción o traducción manual, puedes seleccionar de aproximadamente 7,000 idiomas basados en la lista completa ISO 639-3, mantenida por SIL International (filtrada para «idiomas vivos»). Si un idioma admite ASR o MT, puedes elegir entre los métodos <strong>manual</strong> y <strong>automático</strong>. Para otros idiomas, solo está disponible el método <strong>manual</strong>.</p>
-<p>Si no puedes encontrar un idioma en la lista, considera ortografías o nombres alternativos. Todos los nombres de idiomas están actualmente listados usando sus nombres y ortografía en inglés (por ejemplo, Spanish en lugar de Español). Para idiomas con menos hablantes, puede haber nombres alternativos. Por ejemplo, el idioma Bura del norte de Nigeria está listado como Bura-Pabir pero también se conoce como Bourrah o Babir.</p>
+<p>Las funcionalidades de procesamiento de lenguaje natural de KoboToolbox integran capacidades de reconocimiento automático de voz (ASR) y traducción automática (MT) proporcionadas por Google Cloud Compute, que actualmente ofrece <strong>transcripción automática en 80 idiomas</strong> (con 145 variantes regionales) y <strong>traducción automática en 129 idiomas</strong>.</p>
+<p>Para la transcripción o traducción manual, puedes seleccionar entre aproximadamente 7.000 idiomas basados en la lista exhaustiva ISO 639-3, mantenida por SIL International (filtrada para «idiomas vivos»). Si un idioma es compatible con ASR o MT, puedes elegir entre los métodos <strong>manual</strong> y <strong>automatic</strong>. Para otros idiomas, solo está disponible el método <strong>manual</strong>.</p>
 <p class="note">
-    <strong>Nota</strong>: Al transcribir manualmente respuestas de audio, es importante seleccionar el idioma correcto. Si la transcripción generada manualmente no coincide con precisión con el idioma o región elegidos, las traducciones automáticas posteriores que usen esa transcripción pueden ser incorrectas y producir inexactitudes.
+    Para ver la lista completa de idiomas compatibles, consulta <a href="https://docs.google.com/spreadsheets/d/1_QDcORZd9qXgfq1OBb61U6ondYfjwmHXOv4XZPjxVVw/edit?usp=sharing">Idiomas compatibles con la transcripción y traducción automáticas</a>.
+</p>
+<p>Si no encuentras un idioma en la lista, considera grafías o nombres alternativos. Actualmente, todos los nombres de idiomas aparecen en inglés (por ejemplo, Spanish en lugar de Español). Para los idiomas con menos hablantes, puede haber nombres alternativos. Por ejemplo, el idioma Bura del norte de Nigeria aparece como Bura-Pabir, pero también se conoce como Bourrah o Babir.</p>
+<p class="note">
+    <strong>Nota</strong>: Al transcribir manualmente respuestas de audio, es importante seleccionar el idioma correcto. Si la transcripción generada manualmente no coincide con precisión con el idioma o la región elegidos, las traducciones automáticas posteriores que usen esa transcripción pueden ser incorrectas y producir inexactitudes.
 </p>
 </section>
-<section id="solucion-de-problemas">
-<h2>Solución de problemas<a class="headerlink" href="#solucion-de-problemas" title="Link to this heading">¶</a></h2>
+<section id="limites-de-uso-para-la-transcripcion-y-traduccion-automaticas">
+<h2>Límites de uso para la transcripción y traducción automáticas<a class="headerlink" href="#limites-de-uso-para-la-transcripcion-y-traduccion-automaticas" title="Link to this heading">¶</a></h2>
+<p>Los usuarios del Community Plan pueden usar hasta <strong>10 minutos de transcripción automática de voz a texto</strong> por mes y hasta <strong>6.000 caracteres de traducción automática de transcripciones</strong> por mes.</p>
+<p>Si necesitas mayor capacidad de transcripción o traducción, puedes <a class="reference external" href="https://www.kobotoolbox.org/pricing/">subir de categoría de plan</a> a uno con una cuota más alta o <a class="reference internal" href="account_settings.html#add-ons"><span class="std std-ref">adquirir</span></a> un complemento del <strong>Paquete de Procesamiento de Lenguaje Natural (NLP)</strong>. Los complementos están disponibles según tus necesidades de procesamiento de datos, a partir de $9,95 por 100 minutos adicionales de transcripción y 60.000 caracteres adicionales de traducción. Siempre puedes continuar transcribiendo y traduciendo respuestas de audio manualmente sin límite de uso.</p>
+</section>
+<section id="resolucion-de-problemas">
+<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
 <details>
-    <summary><strong>La traducción no se carga</strong></summary>
-    A veces, la segunda traducción puede quedarse atascada con un ícono de carga. Si esto sucede, actualiza la página y la traducción debería aparecer. Este es un problema en el que estamos trabajando para solucionar.
+    <summary><strong>La traducción no carga</strong></summary>
+    En ocasiones, la segunda traducción puede quedarse bloqueada con un ícono de carga. Si esto ocurre, actualiza la página y la traducción debería aparecer. Este es un problema en el que estamos trabajando para solucionar.
 </details></section>
 </section>
 
@@ -219,146 +230,156 @@
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Transcripción y traducción de respuestas de audio</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#agregar-transcripciones-automaticas">Agregar transcripciones automáticas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#agregar-traducciones-automaticas">Agregar traducciones automáticas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#agregar-transcripciones-de-audio">Agregar transcripciones de audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#agregar-traducciones">Agregar traducciones</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lista-de-idiomas">Lista de idiomas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#solucion-de-problemas">Solución de problemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limites-de-uso-para-la-transcripcion-y-traduccion-automaticas">Límites de uso para la transcripción y traducción automáticas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolucion-de-problemas">Resolución de problemas</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>

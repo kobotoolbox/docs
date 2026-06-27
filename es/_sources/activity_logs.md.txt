@@ -1,100 +1,151 @@
-# Registros de actividad
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/d6f09be2d6f022db661e2a4d9da0b962db44633e/source/activity_logs.md" class="reference">15 de mayo de 2025</a>
+# Seguimiento a la actividad del proyecto y de la cuenta
 
-Los registros de actividad son registros digitales que capturan acciones y eventos importantes en tu cuenta de KoboToolbox. Los registros de actividad te brindan un historial detallado del acceso a la cuenta y la actividad del proyecto.
-Estos registros pueden ser útiles para:
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/3bd66258a8d08aa1daafa90640a1fc8e4efe3b23/source/activity_logs.md" class="reference">16 Dic 2025</a>
 
--   Monitoreo de seguridad: Ver quién accedió a tu cuenta y desde dónde
--   Seguimiento de cambios: Saber cuándo se modificaron elementos del proyecto
--   Responsabilidad: Identificar qué miembros del equipo realizaron cambios específicos
--   Solución de problemas: Comprender cuándo y cómo pueden haber ocurrido problemas
+En KoboToolbox, puedes monitorear la actividad del proyecto y de la cuenta usando **registros de actividad.** Estos registros guardan las acciones y eventos clave en tu cuenta o proyectos, proporcionando un historial detallado de acceso y actividad.
+
+Los registros de actividad pueden ser útiles para:
+
+-   **Monitoreo de seguridad:** Ver quién accedió a tu cuenta y desde dónde.
+-   **Seguimiento de cambios:** Saber cuándo se modificaron elementos del proyecto.
+-   **Responsabilidad:** Identificar qué miembros del equipo hicieron cambios específicos.
+-   **Solución de problemas:** Entender cuándo y cómo pueden haber ocurrido problemas.
 
 KoboToolbox proporciona dos tipos de registros de actividad para ayudarte a monitorear diferentes aspectos de tu trabajo:
 
--   **Registros de acceso:** Apoyan la seguridad de la cuenta al mostrar todos los inicios de sesión.
--   **Registros de historial del proyecto:** Rastrean todas las acciones y cambios realizados por cualquier usuario/a dentro de un proyecto específico y sus datos.
+-   **Registros de acceso a la cuenta:** Muestran todos los inicios de sesión en tu cuenta.
+-   **Registros del historial del proyecto:** Rastrean todas las acciones y cambios realizados por cualquier usuario dentro de un proyecto y sus datos.
 
+## Registros de acceso a la cuenta
 
-<p class="note">
-  <b>Nota:</b> Los registros de actividad son una adición relativamente reciente a KoboToolbox. Estamos trabajando activamente para expandir estas funcionalidades en los próximos meses y proporcionar un registro aún más detallado de las acciones en tus cuentas y proyectos.
-</p>
+Los registros de acceso a la cuenta guardan todos los eventos de autenticación (inicios de sesión) de tu cuenta de KoboToolbox. Te ayudan a monitorear la seguridad de la cuenta mostrándote cuándo y dónde se accedió a tu cuenta.
 
-## Registros de acceso
+Para acceder a tus registros de acceso a la cuenta:
 
-Los registros de acceso registran todos los eventos de autenticación (inicios de sesión) para tu cuenta de KoboToolbox. Te ayudan a monitorear la seguridad de la cuenta mostrándote cuándo y dónde se accedió a tu cuenta.
+1. [Inicia sesión](https://www.kobotoolbox.org/sign-up/) en tu cuenta de KoboToolbox.
+2. Haz clic en el ícono de tu perfil en la esquina superior derecha.
+3. Haz clic en **Configuraciones de la cuenta** y ve a la ventana **Seguridad**.
+4. Encuentra tus registros de acceso a la cuenta en **ACTIVIDAD RECIENTE DE LA CUENTA.**
 
-Se pueden encontrar bajo el título 'Actividad reciente de la cuenta', al cual puedes acceder fácilmente abriendo la Configuración de tu cuenta en la sección Seguridad.
-
-Los registros de acceso muestran:
+Los registros de acceso muestran la siguiente información:
 
 -   Fecha y hora de cada inicio de sesión
 -   Dirección IP (información de ubicación)
 -   Fuente (información del dispositivo y navegador)
 
-![image](/images/activity_logs/Logs-image01.jpg)
+![Registros de actividad de acceso en la ventana de seguridad](/images/activity_logs/access_logs.png)
 
-Ten en cuenta que eventos similares (autenticaciones) que ocurran dentro de 60 minutos entre sí se agruparán juntos.
+<p class="note">
+    <strong>Nota:</strong> Las autenticaciones similares que ocurran dentro de 60 minutos entre sí se agruparán juntas.
+</p>
 
-### Exportar registros de acceso
+### Exportar registros de acceso a la cuenta
 
-![image](images/activity_logs/Logs-image02.jpg)
+Desde la sección **ACTIVIDAD RECIENTE DE LA CUENTA** en **Configuraciones de la cuenta > Seguridad**, también puedes exportar todos los registros de acceso. Para hacerlo:
 
-Esta sección también te permite exportar todos tus registros de acceso haciendo clic en el botón 'Exportar datos de registro' en la esquina superior derecha de la tabla. Al hacer clic en este botón se activará el proceso de exportación de datos:
-1. Comenzará el procesamiento de los registros en un archivo de exportación .csv
-2. Se mostrará una ventana modal informándote que el proceso ha comenzado y cuáles son los siguientes pasos.
-3. Recibirás un correo electrónico con un enlace para descargar el archivo una vez que esté listo. La cantidad de datos incluidos en tus registros determinará cuánto tiempo puede tomar recibir el correo electrónico.
-4. Al hacer clic en la URL del correo electrónico debería comenzar inmediatamente la descarga del archivo .csv, dependiendo de la configuración de tu navegador.
+1. Haz clic en <i class="k-icon-download"></i> **Exportar datos de actividad** en la esquina superior derecha de la tabla. Esto activará el proceso de exportación de datos.
+2. Una vez que el proceso esté completo, recibirás un correo electrónico con un enlace para descargar el archivo.
+    - El tiempo que toma recibir el correo electrónico depende del tamaño de los datos de actividad.
+3. Al hacer clic en la URL del correo electrónico se inicia la descarga del archivo CSV o [se abre una nueva página web](https://support.kobotoolbox.org/es/activity_logs.html#troubleshooting), dependiendo de la configuración de tu navegador.
 
-El archivo de exportación incluirá información más detallada de todos los eventos de autenticación, incluyendo el tipo de autenticación y el momento exacto.
+<p class="note">
+    <strong>Nota:</strong> El archivo exportado incluye información más detallada sobre los eventos de autenticación, incluyendo el tipo de autenticación y el momento exacto.
+</p>
 
 ### Cerrar sesión en todos los dispositivos
 
-Puedes forzar que todos los dispositivos que actualmente tienen sesión iniciada en tu cuenta cierren sesión inmediatamente haciendo clic en el enlace 'Cerrar sesión en todos los dispositivos' a la izquierda del botón de exportación de datos.
+Finalmente, desde la sección **ACTIVIDAD RECIENTE DE LA CUENTA** en **Configuraciones de la cuenta > Seguridad**, puedes forzar a todos los dispositivos actualmente conectados a tu cuenta a cerrar sesión inmediatamente. Para hacerlo:
 
-Esta acción también cerrará tu sesión actual.
+1. Haz clic en <i class="k-icon-logout"></i> **Cerrar sesión en todos los dispositivos** en la esquina superior derecha de la tabla.
+2. Cerrarás sesión de tu sesión actual inmediatamente. Cualquier otro dispositivo que haya iniciado sesión en tu cuenta también cerrará sesión.
 
-## Registros de historial del proyecto
+## Registros del historial del proyecto
 
-Los registros de historial del proyecto proporcionan un registro detallado de todas las actividades dentro de un proyecto específico. Muestran cada acción realizada, ya sea por usuarios/as o procesos automatizados, brindándote visibilidad completa del historial de tu proyecto.
+Los registros del historial del proyecto proporcionan un registro detallado de todas las acciones dentro de un proyecto. Muestran cada cambio realizado por usuarios o procesos automatizados, dándote visibilidad completa de la actividad del proyecto.
 
-Para ver los registros de un proyecto específico, ve a la ventana CONFIGURACIÓN de tu proyecto y dirígete a la sección Actividad.
+<p class="note">
+    <strong>Nota:</strong> Solo los propietarios del proyecto y los usuarios con permisos de <strong>Gestionar el proyecto</strong> pueden ver los registros del historial del proyecto.
+</p>
 
-![image](/images/activity_logs/Logs-image3.jpg)
+Para acceder a los registros del historial de tu proyecto:
 
-En esta página encontrarás una vista de tabla con toda la actividad del proyecto, ordenada por fecha. Cada acción única se enumera junto con el/la usuario/a que la realizó y la marca de fecha asociada con esa actividad.
+1. Abre un proyecto y ve a la página **CONFIGURACIONES**.
+2. Ve a la ventana **Actividad**.
+3. Se mostrará una tabla con toda la actividad del proyecto, ordenada por fecha. Cada acción se lista con el nombre de usuario de la persona que la realizó y la marca de tiempo de cuándo ocurrió.
 
-Los registros de historial del proyecto capturan casi todas las acciones posibles que se pueden realizar en un proyecto.
+Si necesitas más información sobre una actividad, haz clic en **Ver detalles** para una vista expandida. Esto muestra toda la información disponible sobre el evento, incluyendo acciones del backend y metadatos asociados.
 
-| Categoría                      | Acciones incluidas                                                                                                                                |
-| :------------------------------| :-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Cambios del proyecto           | Actualizaciones del nombre del proyecto, Despliegues y redespliegues, Archivar y desarchivar, Conexiones del proyecto                            |
-| Cambios del formulario         | Cargas de XLSForm, Ediciones del formulario, Creación de preguntas de análisis cualitativo                                                       |
-| Cambios de manejo de datos     | Exportaciones de datos, Modificaciones de archivos adjuntos multimedia, Cambios en la configuración de compartir datos, Modificaciones de servicio REST |
-| Permisos                       | Actualizaciones de acceso de usuarios/as, Configuración de acceso público, Transferencias de propiedad                                            |
-| Envíos                         | El/la usuario/a modifica o elimina envíos. Agregar envíos se muestra en la exportación de registros, pero no en la interfaz de KoboToolbox       |
+![Pantalla de actividad reciente del proyecto](images/activity_logs/Logs-image3.jpg)
 
-### Encontrar e investigar actividades específicas
+Las siguientes acciones se capturan en los registros del historial del proyecto:
 
-Puedes filtrar el registro de historial por tipo de actividad (por ejemplo, despliegues, ediciones de formulario, cambios de permisos, etc.) usando la funcionalidad de alternancia en la esquina superior derecha. Esto también permitirá a los/as propietarios/as y administradores/as del proyecto rastrear cambios/actualizaciones en aspectos específicos del proyecto rápidamente.
+| Categoría                | Acciones                                                                                                           |
+| :-----------------------| :---------------------------------------------------------------------------------------------------------------------------|
+| Proyecto         | Cambios de nombre del proyecto, implementación y reimplementación, archivar y desarchivar, actualizaciones de servicios REST y conexiones de proyectos.                        |
+| Formulario            | Ediciones de formularios, cargas de XLSForm, creación de <a href="https://support.kobotoolbox.org/es/qualitative_analysis.html">preguntas de análisis cualitativo</a>.                                                     |
+| Datos | Exportaciones de datos, cambios de archivos multimedia, eliminación o modificación de envíos.                     |
+| Permisos           | Cambios en el acceso de usuarios o configuraciones de acceso público, transferencias de propiedad.           |
 
-![image](/images/activity_logs/Logs-GIF01.gif)
+<p class="note">
+    <strong>Nota:</strong> Añadir envíos aparece en los registros exportados, pero no en la interfaz de KoboToolbox.
+</p>
 
-También puedes exportar todos los datos del historial de tu proyecto usando el botón de exportación en la esquina superior derecha de tu tabla.
-Si necesitas más información sobre una actividad específica, simplemente haz clic en 'Ver detalles' para una vista ampliada de esa entrada. Esto mostrará toda la información sobre ese evento, revelando lo que ocurrió en el backend y cualquier metadato asociado.
+### Filtrar registros del historial del proyecto
 
-## Problemas comunes con los registros de actividad
+Puedes filtrar el registro del historial del proyecto por acción para ver rápidamente actualizaciones de partes específicas del proyecto.
 
-**"No veo actividades recientes"**
--   Verifica que estés viendo el proyecto correcto
--   Asegúrate de tener los permisos correctos para ver los registros. Solo los/as propietarios/as del proyecto y usuarios/as con permisos de 'administrar proyecto' pueden ver los registros.
--   Ten en cuenta que los registros solo están disponibles por un período de 60 días. Los registros más antiguos se eliminan y no son recuperables. Este período se puede configurar a nivel de administrador/a para organizaciones con un servidor privado.
+Para filtrar tus registros del historial del proyecto:
 
-**"Necesito datos de registro más antiguos"**
--   Los datos más allá del período de retención se eliminan automáticamente y no son recuperables. Si necesitas tener acceso a datos de registro de más de 60 días y estás usando un servidor privado, puedes contactar a tu administrador/a para aumentar el período de retención.
+1. En la página **CONFIGURACIONES > Actividad** del proyecto, haz clic en **Filtrar por** encima de la tabla de registros del historial del proyecto.
+2. Del menú desplegable, selecciona una acción para filtrar la tabla.
 
-**"No puedo descargar el archivo de exportación de datos de registro"**
--   Cuando haces clic en el enlace que recibiste por correo electrónico para descargar el archivo de exportación de datos de registro, puede abrir una página web con texto en lugar de descargar el archivo csv.
--   Para descargar el archivo .csv desde la página web, haz clic derecho en la página y selecciona Guardar página como…. Mantén el formato como "Código fuente de la página"
--   Si haces clic en el enlace y obtienes un mensaje de error, como 403 Prohibido, intenta abrir el enlace con otro navegador (por ejemplo, Safari).
+### Exportar registros del historial del proyecto
 
-![image](/images/getting_started_organization_feature/organizations_project_views.gif)
+Desde la página **CONFIGURACIONES > Actividad** del proyecto, también puedes exportar todos los registros del historial del proyecto. Para hacerlo:
+
+1. Haz clic en <i class="k-icon-download"></i> **Exportar todos los datos** en la esquina superior derecha de la tabla. Al hacer clic en este botón se activará el proceso de exportación de datos.
+2. Una vez que el proceso esté completo, recibirás un correo electrónico con un enlace para descargar el archivo.
+    - El tiempo que toma recibir el correo electrónico depende del tamaño de los datos de actividad.
+3. Al hacer clic en la URL del correo electrónico se inicia la descarga del archivo CSV o [se abre una nueva página web](https://support.kobotoolbox.org/es/activity_logs.html#troubleshooting), dependiendo de la configuración de tu navegador.
+
+## Solución de problemas
+
+<details>
+  <summary><strong>Actividades recientes no mostradas</strong></summary>
+  Si las actividades recientes no se muestran, verifica lo siguiente:
+    <br><br>
+    <ul>
+        <li>Estás viendo el proyecto correcto.</li>
+        <li>Tienes los permisos correctos para ver los registros del historial del proyecto (es decir, propietario del proyecto o permisos de <strong>Gestionar el proyecto</strong>).</li>
+    </ul>
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Registros de actividad antiguos no disponibles</strong></summary>
+  Los registros se conservan por un período limitado antes de que se eliminen automáticamente y no puedan recuperarse.
+    <br><br>
+El período de retención puede ajustarse a nivel de administrador para organizaciones que usan un servidor privado. Si necesitas acceso a datos de actividad más antiguos en un <a href="https://www.kobotoolbox.org/enterprise/#comparison-table">servidor privado</a>, contacta a tu administrador para solicitar un período de retención más largo.
+</details>
+
+<br>
+
+<details>
+  <summary><strong>El archivo de exportación de datos de actividad se abre como una página web</strong></summary>
+  Cuando haces clic en el enlace recibido por correo electrónico para descargar un archivo de exportación de datos de actividad, puede abrir una página web con texto en lugar de descargar el archivo csv.
+    <br><br>
+    Para descargar el archivo .csv desde la página web:
+    <br><br>
+    <ol>
+<li>Haz clic derecho en la página y selecciona <strong>Guardar página como…</strong>.</li>
+<li>Mantén el formato como <strong>Código fuente de la página</strong> y guarda el archivo en la ubicación de tu elección.</li>
+</ol>
+</details>
+
+<br>
+
+<details>
+  <summary><strong>Mensaje de error al hacer clic en el enlace de exportación</strong></summary>
+  Si haces clic en el enlace y ves un mensaje de error como 403 Prohibido o 404 Página no encontrada, intenta abrir el enlace en un navegador diferente (por ejemplo, Safari). El enlace de exportación también puede haber expirado. Si es así, reinicia el proceso de exportación para generar un nuevo enlace.
+</details>

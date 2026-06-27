@@ -1,0 +1,6 @@
+name,label,geometry,info,marker-color,marker-symbol
+1,Warsaw,52.2297 21.0122 0 0,Capital city of Poland,#FF0000,W
+2,Berlin,52.5200 13.4050 0 0,Capital city of Germany,,
+3,Paris,48.8566 2.3522 0 0,Capital city of France,#FFFFFF,P
+4,Kyiv,50.4501 30.5234 0 0,Capital city of Ukraine,#7d3f00,🙂
+5,Prague,50.0755 14.4378 0 0,Capital city of the Czech Republic,#00ff00,

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Uso de Colecciones públicas &#8212; documentación de KoboToolbox - </title>
+    <title>Colecciones públicas en la biblioteca KoboToolbox &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Búsqueda Avanzada en Colecciones Públicas" href="public_collections_advanced_search.html" />
-    <link rel="prev" title="Uso de La biblioteca de preguntas" href="question_library.html" />
+    <link rel="next" title="Introducción a XLSForm" href="edit_forms_excel.html" />
+    <link rel="prev" title="Usar la biblioteca de preguntas de KoboToolbox" href="question_library.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,113 +107,224 @@
 
         <section class="page__body" role="main">
           
-  <section id="uso-de-colecciones-publicas">
-<h1>Uso de Colecciones públicas<a class="headerlink" href="#uso-de-colecciones-publicas" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8f6b969a2b7812779940875ace1100d741729d70/source/using_public_collections.md" class="reference">11 Sep 2023</a></p>
-<p>Obtener la información correcta a menudo depende de hacer las preguntas correctas.
-<strong>Colecciones públicas</strong> nos ayuda a todos/as a mejorar nuestra recolección de datos al hacer que conjuntos
-de preguntas de encuesta predefinidas sean públicos y fácilmente accesibles para toda la comunidad de Kobo. Cualquiera puede crear, encontrar y usar estas colecciones libremente, permitiendo
-a equipos y organizaciones estandarizar sus encuestas, así como permitirles
-contribuir al trabajo y mejores prácticas de otros/as. Estas colecciones pueden
-contener preguntas individuales, bloques de preguntas o plantillas de encuestas completas que
-están listas para ser usadas.</p>
-<p>Este artículo describe en detalle dónde encontrar, cómo usar y cómo
-contribuir a la biblioteca de <strong>Colecciones públicas</strong>.</p>
-<section id="proposito-de-las-colecciones-publicas">
-<h2>Propósito de las Colecciones públicas<a class="headerlink" href="#proposito-de-las-colecciones-publicas" title="Link to this heading">¶</a></h2>
-<p>Los/as usuarios/as pueden elegir hacer públicas sus preguntas de encuesta, lo que significa que serán
-incluidas en la biblioteca de <strong>Colecciones públicas</strong>. Todos/as los/as usuarios/as en la
-<a class="reference internal" href="creating_account.html"><span class="std std-doc">misma instancia de servidor</span></a> tendrán acceso a las mismas <strong>Colecciones públicas</strong>, que pueden incluir preguntas comunes o grupos de preguntas, tales
-como características demográficas, DHS (Vigilancia Demográfica y de Salud), herramienta de equidad para determinación de riqueza, así como otras medidas estándar ampliamente utilizadas.</p>
+  <section id="colecciones-publicas-en-la-biblioteca-kobotoolbox">
+<h1>Colecciones públicas en la biblioteca KoboToolbox<a class="headerlink" href="#colecciones-publicas-en-la-biblioteca-kobotoolbox" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/using_public_collections.md" class="reference">20 Mar 2026</a></p>
+<p>Las colecciones públicas permiten a los usuarios de KoboToolbox compartir y reutilizar preguntas de encuesta predefinidas, bloques de preguntas y plantillas completas. Cuando una colección se hace pública, queda disponible para todos los usuarios del mismo servidor de KoboToolbox. Las colecciones públicas pueden incluir preguntas o grupos de preguntas de uso frecuente, como características demográficas u otros indicadores estándar.</p>
+<p>Al hacer público el contenido, los usuarios contribuyen a una biblioteca compartida que ayuda a estandarizar encuestas y promover medidas de uso generalizado en la comunidad de Kobo.</p>
+<p>Este artículo explica cómo localizar, usar y crear colecciones públicas en la biblioteca KoboToolbox.</p>
+<p class="note">
+    Para obtener más información sobre la biblioteca KoboToolbox, consulta <a href="https://support.kobotoolbox.org/es/question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a>.
+</p>
+<section id="acceder-a-las-colecciones-publicas">
+<h2>Acceder a las colecciones públicas<a class="headerlink" href="#acceder-a-las-colecciones-publicas" title="Link to this heading">¶</a></h2>
+<p>Para acceder a las colecciones públicas desde tu cuenta de KoboToolbox:</p>
+<ol class="arabic simple">
+<li><p>Haz clic en el icono <i class="k-icon-library"></i> <strong>Biblioteca</strong> en el menú de la izquierda.</p></li>
+<li><p>Abre la pestaña <i class="k-icon-library-public"></i> <strong>Colecciones públicas</strong>.</p></li>
+</ol>
+<p><img alt="Pestaña de colecciones públicas" src="_images/public_collections.png" /></p>
+<p>Verás una lista de todas las colecciones públicas disponibles en tu servidor, así como el propietario de la colección, el número de elementos, el número de suscriptores, los idiomas disponibles, el sector principal y la fecha de última modificación.</p>
+<p class="note">
+<strong>Nota:</strong> Las colecciones públicas en el <a href="https://support.kobotoolbox.org/es/glossary.html#global-kobotoolbox-server">Servidor Global</a> y en el <a href="https://support.kobotoolbox.org/es/glossary.html#european-union-kobotoolbox-server">Servidor con sede en la Unión Europea</a> pueden ser diferentes. Las colecciones agregadas a un servidor solo son accesibles desde ese mismo servidor.
+</p>
+<p>Para encontrar una colección específica, puedes explorar la lista, ordenar o filtrar los resultados, o usar la barra de búsqueda para ingresar palabras clave.</p>
 </section>
-<section id="localizar-las-colecciones-publicas">
-<h2>Localizar las Colecciones públicas<a class="headerlink" href="#localizar-las-colecciones-publicas" title="Link to this heading">¶</a></h2>
-<p>Para acceder a la sección de <strong>Colecciones públicas</strong>, inicia sesión en <strong>KoboToolbox</strong> y haz clic
-en el ícono de <strong>Biblioteca</strong> en la sección superior izquierda de tu pantalla, y luego
-navega a la pestaña de <strong>Colecciones públicas</strong>.</p>
-<p><img alt="Library" src="_images/library.png" /></p>
-<p>Verás una lista de todas las colecciones públicas disponibles en tu respectiva
-instancia de servidor como se ve en el ejemplo a continuación. La lista muestra una descripción general del
-nombre de la colección, número de elementos dentro de cada colección, propietario/a, número de
-suscriptores/as, idiomas, sector primario especificado y la fecha más reciente en que
-fue modificada.</p>
-<p><img alt="Public Collections List" src="_images/public_collections_list.png" /></p>
-<p>Si estás interesado/a en una colección específica, hay varias formas de encontrar
-lo que necesitas:</p>
+<section id="crear-una-coleccion-publica">
+<h2>Crear una colección pública<a class="headerlink" href="#crear-una-coleccion-publica" title="Link to this heading">¶</a></h2>
+<p>Para crear una colección pública, primero debes crear una colección en tu biblioteca de preguntas. Desde la <a class="reference external" href="https://support.kobotoolbox.org/es/question_library.html">biblioteca de preguntas</a>:</p>
+<ol class="arabic simple">
+<li><p>Haz clic en <strong>NUEVO</strong> y selecciona <i class="k-icon-folder"></i> <strong>Colección</strong>.</p></li>
+<li><p>Ingresa un nombre, una descripción breve, la organización, el sector principal y el país. Estos campos son obligatorios para hacer pública una colección.</p></li>
+<li><p>Haz clic en <strong>Crear</strong>.</p></li>
+<li><p><a class="reference external" href="https://support.kobotoolbox.org/es/question_library.html#adding-items-to-a-collection">Agrega al menos un elemento</a> de tu biblioteca a la colección.</p></li>
+<li><p>Abre la colección y haz clic en <i class="k-icon-globe-alt"></i> <strong>Publicar</strong>.</p></li>
+</ol>
+<p><img alt="Hacer pública la colección" src="_images/make_public.png" /></p>
+<p class="note">
+Para obtener más información sobre cómo crear colecciones en tu biblioteca, consulta <a href="https://support.kobotoolbox.org/es/question_library.html#using-collections-in-the-question-library">Usar la biblioteca de preguntas de KoboToolbox</a>.
+</p>
+</section>
+<section id="usar-colecciones-publicas">
+<h2>Usar colecciones públicas<a class="headerlink" href="#usar-colecciones-publicas" title="Link to this heading">¶</a></h2>
+<p>Para usar elementos de colecciones públicas en tus propios formularios o proyectos, puedes suscribirte a colecciones, recuperar elementos individuales o crear nuevos proyectos a partir de plantillas públicas.</p>
+<section id="suscribirse-a-una-coleccion-publica">
+<h3>Suscribirse a una colección pública<a class="headerlink" href="#suscribirse-a-una-coleccion-publica" title="Link to this heading">¶</a></h3>
+<p>Suscribirse a una colección pública la agrega a <strong>Mi biblioteca</strong>, lo que te permite acceder fácilmente a sus preguntas, bloques o plantillas y usarlos en tus propios formularios.</p>
+<p>Para suscribirte a una colección pública:</p>
 <ul class="simple">
-<li><p>Navega desplazándote a través de todas las colecciones disponibles;</p></li>
-<li><p>Usa la barra de búsqueda y escribe palabras clave relevantes (ver abajo). Puedes aprender
-más sobre búsqueda avanzada <a class="reference internal" href="public_collections_advanced_search.html"><span class="std std-doc">aquí</span></a>.</p></li>
+<li><p>Pasa el cursor sobre la colección y haz clic en <i class="k-icon-subscribe"></i> <strong>SUSCRIBIRSE</strong> a la derecha, o</p></li>
+<li><p>Abre la colección y haz clic en <strong>SUSCRIBIRSE</strong> en la vista de detalles.</p></li>
 </ul>
-<p><img alt="Search Example" src="_images/search_example.gif" /></p>
+<p><img alt="Suscribirse a una colección pública" src="_images/subscribe.png" /></p>
+<p>Para eliminar una colección de tu biblioteca, haz clic en <i class="k-icon-close"></i> <strong>CANCELAR SUSCRIPCIÓN</strong>.</p>
 </section>
-<section id="uso-de-las-colecciones-publicas">
-<h2>Uso de las Colecciones públicas<a class="headerlink" href="#uso-de-las-colecciones-publicas" title="Link to this heading">¶</a></h2>
-<p>Esta sección describe cómo (a) suscribirse a una colección, (b) usar recursos de
-dentro de una colección, y (c) cómo agregar recursos a una colección.</p>
-<section id="a-suscribirse-a-una-coleccion-publica">
-<h3>a) Suscribirse a una Colección pública<a class="headerlink" href="#a-suscribirse-a-una-coleccion-publica" title="Link to this heading">¶</a></h3>
-<p>Suscríbete a una colección pública pasando el cursor sobre el elemento de la lista y
-haciendo clic en el botón <strong>SUSCRIBIRSE</strong> o haciendo clic en <strong>SUSCRIBIRSE</strong> desde dentro
-de la vista de detalles de la colección. Esto agregará la colección a la pestaña <strong>Mi
-Biblioteca</strong>. Puedes eliminar la colección de tu biblioteca haciendo clic en
-<strong>CANCELAR SUSCRIPCIÓN</strong>.</p>
-<p><img alt="Subscribing to a Collection" src="_images/subscribing_to_a_collection.gif" /></p>
+<section id="recuperar-elementos-individuales-de-una-coleccion-publica">
+<h3>Recuperar elementos individuales de una colección pública<a class="headerlink" href="#recuperar-elementos-individuales-de-una-coleccion-publica" title="Link to this heading">¶</a></h3>
+<p>Si no quieres suscribirte a una colección pública completa y solo necesitas elementos específicos, puedes clonarlos o descargarlos individualmente. Para hacerlo:</p>
+<ol class="arabic simple">
+<li><p>Abre la colección que contiene el elemento que te interesa.</p></li>
+<li><p>Pasa el cursor sobre el elemento.</p></li>
+<li><p>Haz clic en <i class="k-icon-duplicate"></i> <strong>Clonar</strong> para agregarlo a tu biblioteca, o selecciona <strong>Otras acciones</strong> para descargarlo como archivo XLS o XML.</p></li>
+</ol>
 </section>
-<section id="b-uso-de-recursos-dentro-de-una-coleccion-publica">
-<h3>b) Uso de recursos dentro de una Colección pública<a class="headerlink" href="#b-uso-de-recursos-dentro-de-una-coleccion-publica" title="Link to this heading">¶</a></h3>
-<p>Una vez que hayas identificado la colección pública que deseas usar, visualiza sus
-contenidos haciendo clic en el elemento de la lista. En el ejemplo a continuación, buscaremos la
-palabra «example» y entraremos a la primera colección para ver una lista de todos los recursos
-disponibles.</p>
-<p><img alt="Example Detail 1" src="_images/example_detail_1.gif" /></p>
-<p>Selecciona el grupo de preguntas que necesitas dentro de la colección pública pasando
-el cursor sobre ese grupo, lo que lo resaltará.</p>
-<p><img alt="Example Detail 2" src="_images/example_detail_2.gif" /></p>
-<p>Una vez que el recurso esté resaltado, encontrarás el ícono para clonarlo a la derecha.
-Si tocas los tres puntos para más acciones, verás una opción para descargar
-el recurso en formato XLS o XML.</p>
-<p><img alt="Example Detail 3" src="_images/example_detail_3.gif" /></p>
-<p>Si necesitas agregar estas preguntas a un XLSForm ya desarrollado, el mejor
-enfoque sería descargar la versión XLS de la colección. Luego puedes
-agregar manualmente las preguntas deseadas copiándolas. Lee más sobre
-desarrollo de formularios usando Excel y XLSForm <a class="reference internal" href="edit_forms_excel.html"><span class="std std-doc">aquí</span></a>.</p>
-<p>Además, clonar las preguntas te permite agregar a tu biblioteca personal.
-Luego puedes
-<a class="reference internal" href="question_library.html"><span class="std std-doc">agregar preguntas al formulario dentro del editor de formularios de KoboToolbox (Formbuilder)</span></a>.</p>
-<p><img alt="Example Detail 4" src="_images/example_detail_4.gif" /></p>
+<section id="usar-preguntas-de-una-coleccion-publica">
+<h3>Usar preguntas de una colección pública<a class="headerlink" href="#usar-preguntas-de-una-coleccion-publica" title="Link to this heading">¶</a></h3>
+<p>Después de agregar preguntas de una colección pública a tu biblioteca, ya sea suscribiéndote a la colección o clonando elementos individuales, puedes reutilizarlas en futuros formularios desde el editor de formularios de KoboToolbox <strong>(Formbuilder)</strong>.</p>
+<p class="note">
+<strong>Nota:</strong> Solo las preguntas que se han agregado a <strong>Mi biblioteca</strong> pueden insertarse en tus formularios usando el Formbuilder.
+</p>
+<p>Para usar preguntas o bloques de preguntas de una colección pública en tu formulario:</p>
+<ol class="arabic simple">
+<li><p>Abre el <a class="reference external" href="https://support.kobotoolbox.org/es/formbuilder.html">editor de formularios de KoboToolbox (Formbuilder)</a>.</p></li>
+<li><p>Haz clic en <i class="k-icon-library"></i> <strong>Agregar desde la biblioteca</strong> en la esquina superior derecha.</p></li>
+<li><p>Selecciona la pregunta o el bloque de preguntas que quieres agregar y arrástralo a la ubicación deseada en tu formulario.</p></li>
+<li><p>Si tu biblioteca de preguntas contiene muchos elementos, puedes usar la función <strong>Buscar</strong> para localizar rápidamente la pregunta o el bloque que necesitas.</p></li>
+</ol>
+<p><img alt="Agregar pregunta desde la biblioteca" src="_images/add_from_library1.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Cuando agregas una pregunta de tu biblioteca de preguntas a un formulario, los cambios que realices en el formulario no afectarán la versión original guardada en la biblioteca.
+</p>
 </section>
-<section id="c-crear-una-coleccion-publica">
-<h3>c) Crear una Colección pública<a class="headerlink" href="#c-crear-una-coleccion-publica" title="Link to this heading">¶</a></h3>
-<p>Mientras estés en la sección de <strong>Biblioteca</strong> de <strong>KoboToolbox</strong>, haz clic en el botón <strong>NUEVO</strong>
-y se mostrará un modal con cuatro opciones, como se ve a continuación.</p>
-<p><img alt="Create Library Item" src="_images/create_library_item.png" /></p>
-<p>Toca el ícono etiquetado <strong>Colección</strong>. Luego se te pedirá que ingreses detalles,
-incluyendo un nombre para la nueva colección, que es obligatorio. Una vez completado, haz clic
-en <strong>CREAR</strong> para continuar.</p>
-<p><img alt="Collection Details" src="_images/collection_details.png" /></p>
-<p>Si tienes la intención de hacer pública la colección, también se debe definir una <em>Organización</em> y un <em>Sector
-Primario</em>.</p>
-<p>Una vez que la colección haya sido creada, verás las siguientes opciones:</p>
+<section id="usar-plantillas-de-una-coleccion-publica">
+<h3>Usar plantillas de una colección pública<a class="headerlink" href="#usar-plantillas-de-una-coleccion-publica" title="Link to this heading">¶</a></h3>
+<p>También puedes usar una plantilla de una colección pública para crear un nuevo proyecto de formulario, ya sea desde tu biblioteca de preguntas o desde la <strong>Página de proyectos</strong>.</p>
+<p><strong>Desde la biblioteca de preguntas</strong></p>
+<p>Puedes crear un proyecto a partir de una plantilla en <i class="k-icon-library"></i> <strong>Mi biblioteca</strong> si te has suscrito a la colección, o directamente desde <i class="k-icon-library-public"></i> <strong>Colecciones públicas</strong>:</p>
+<ol class="arabic simple">
+<li><p>Abre la colección pública.</p></li>
+<li><p>Pasa el cursor sobre la plantilla.</p></li>
+<li><p>Haz clic en <i class="k-icon-projects"></i> <strong>Crear proyecto</strong> a la derecha.</p></li>
+<li><p>Ingresa un nombre para el nuevo proyecto.</p></li>
+</ol>
+<p><img alt="Crear un proyecto desde una colección" src="_images/create_project1.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Puedes crear un proyecto a partir de una plantilla en una colección pública aunque no te hayas suscrito a la colección pública.
+</p>
+<p><strong>Desde la Página de proyectos</strong></p>
+<p>También puedes crear un proyecto a partir de una plantilla pública directamente desde la <i class="k-icon-projects"></i> <strong>Página de proyectos</strong>, siempre que te hayas suscrito a la colección:</p>
+<ol class="arabic simple">
+<li><p>Haz clic en <strong>NUEVO</strong> y selecciona <i class="k-icon-template"></i> <strong>Usar una plantilla</strong>.</p></li>
+<li><p>Elige una plantilla guardada y haz clic en <strong>Siguiente</strong>.</p></li>
+<li><p>Ingresa los detalles del proyecto y haz clic en <strong>Crear proyecto</strong>.</p></li>
+</ol>
+<p>En ambos casos, se creará un nuevo proyecto de KoboToolbox que puedes editar e implementar.</p>
+<p class="note">
+<strong>Nota:</strong> Editar un proyecto creado a partir de una plantilla no modifica la plantilla original.
+</p>
+</section>
+</section>
+<section id="busqueda-avanzada-en-colecciones-publicas">
+<h2>Búsqueda avanzada en colecciones públicas<a class="headerlink" href="#busqueda-avanzada-en-colecciones-publicas" title="Link to this heading">¶</a></h2>
+<p>Dentro de <strong>Colecciones públicas</strong>, la barra de búsqueda admite consultas simples y avanzadas. De forma predeterminada, si ingresas una palabra clave sin especificar un campo, el sistema busca en varios campos, incluidos el nombre, el nombre de usuario del propietario, la descripción, las etiquetas de las preguntas, las etiquetas y el UID. Las búsquedas no distinguen entre mayúsculas y minúsculas de forma predeterminada.</p>
+<p><img alt="Buscar en colecciones públicas" src="_images/search.png" /></p>
+<section id="busqueda-avanzada-por-campo">
+<h3>Búsqueda avanzada por campo<a class="headerlink" href="#busqueda-avanzada-por-campo" title="Link to this heading">¶</a></h3>
+<p>Si quieres acotar los resultados o buscar en campos específicos dentro de las colecciones públicas, puedes usar las opciones de búsqueda avanzada que se describen a continuación.</p>
+<p>La búsqueda avanzada usa un formato estructurado: <code class="docutils literal notranslate"><span class="pre">campo__subcampo__operador:valor</span></code>.</p>
 <ul class="simple">
-<li><p>Hacer pública, Modificar detalles, Editar etiquetas</p></li>
-<li><p>Compartir la colección con usuarios/as específicos/as</p></li>
-<li><p>Eliminar la colección</p></li>
+<li><p>El prefijo <code class="docutils literal notranslate"><span class="pre">campo</span></code> o <code class="docutils literal notranslate"><span class="pre">campo__subcampo</span></code> define el campo en el que buscas (por ejemplo, el nombre de la colección).</p></li>
+<li><p>El sufijo <code class="docutils literal notranslate"><span class="pre">operador</span></code> define cómo se compara el valor.</p></li>
 </ul>
-<p><img alt="Actions" src="_images/actions.gif" /></p>
-<p>Comienza a agregar preguntas a la colección moviéndolas desde la biblioteca. Pasa
-el cursor sobre los recursos de la biblioteca y luego toca los tres botones para acceder a más
-opciones. Verás una opción para mover las preguntas a tu colección.</p>
-<p><img alt="Move to Collection" src="_images/move_to_collection.gif" /></p>
+<p class="note">
+<strong>Nota:</strong> Usa un doble guión bajo para separar cada elemento.
+</p>
+<p>Algunos ejemplos de prefijos:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Prefijo</p></th>
+<th class="head text-left"><p>Campo en el que se busca</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>name</code></p></td>
+<td class="text-left"><p>Nombre de la encuesta, colección, pregunta, bloque o plantilla</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>owner__username</code></p></td>
+<td class="text-left"><p>Nombre de usuario del propietario del elemento</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>settings__description</code></p></td>
+<td class="text-left"><p>Campo de descripción</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>summary</code></p></td>
+<td class="text-left"><p>Etiquetas de preguntas e idiomas disponibles</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>tags__name</code></p></td>
+<td class="text-left"><p>Etiquetas asignadas</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>uid</code></p></td>
+<td class="text-left"><p>Identificador único (UID) del objeto</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>settings__country__value</code></p></td>
+<td class="text-left"><p>Campo de configuración anidado, como el valor del país</p></td>
+</tr>
+</tbody>
+</table>
+<p>Algunos ejemplos de sufijos:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Sufijo</p></th>
+<th class="head text-left"><p>Tipo de valor</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>exact</code></p></td>
+<td class="text-left"><p>Texto</p></td>
+<td class="text-left"><p>Coincidencia exacta (distingue mayúsculas y minúsculas)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>contains</code></p></td>
+<td class="text-left"><p>Texto</p></td>
+<td class="text-left"><p>El campo contiene el valor (distingue mayúsculas y minúsculas)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>startswith</code></p></td>
+<td class="text-left"><p>Texto</p></td>
+<td class="text-left"><p>El campo comienza con el valor (distingue mayúsculas y minúsculas)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>iexact</code></p></td>
+<td class="text-left"><p>Texto</p></td>
+<td class="text-left"><p>Coincidencia exacta (no distingue mayúsculas y minúsculas)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>icontains</code></p></td>
+<td class="text-left"><p>Texto</p></td>
+<td class="text-left"><p>Coincidencia por contenido (no distingue mayúsculas y minúsculas)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>istartswith</code></p></td>
+<td class="text-left"><p>Texto</p></td>
+<td class="text-left"><p>Coincidencia por inicio (no distingue mayúsculas y minúsculas)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>exact</code></p></td>
+<td class="text-left"><p>Numérico</p></td>
+<td class="text-left"><p>Número exacto</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>lt</code></p></td>
+<td class="text-left"><p>Numérico</p></td>
+<td class="text-left"><p>Menor que</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>lte</code></p></td>
+<td class="text-left"><p>Numérico</p></td>
+<td class="text-left"><p>Menor o igual que</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>gt</code></p></td>
+<td class="text-left"><p>Numérico</p></td>
+<td class="text-left"><p>Mayor que</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>gte</code></p></td>
+<td class="text-left"><p>Numérico</p></td>
+<td class="text-left"><p>Mayor o igual que</p></td>
+</tr>
+</tbody>
+</table>
+<p>Por ejemplo, <code class="docutils literal notranslate"><span class="pre">owner__username__icontains:team</span></code> busca colecciones públicas cuyo nombre de usuario del propietario contenga la palabra «team», independientemente de las mayúsculas y minúsculas.</p>
+<p class="note">
+<strong>Nota:</strong> Si no se agrega ningún sufijo, se usa <code>exact</code> de forma predeterminada. Agregar <code>i</code> antes de un operador de texto hace que no distinga entre mayúsculas y minúsculas.
+</p>
 </section>
+<section id="combinar-condiciones">
+<h3>Combinar condiciones<a class="headerlink" href="#combinar-condiciones" title="Link to this heading">¶</a></h3>
+<p>Puedes combinar filtros usando <strong>AND</strong>, <strong>OR</strong> y <strong>NOT</strong> para obtener resultados más precisos.</p>
+<p>Por ejemplo, <code class="docutils literal notranslate"><span class="pre">owner__username__icontains:team</span> <span class="pre">AND</span> <span class="pre">tags__name__icontains:baseline</span></code> busca en el campo de nombre de usuario del propietario y en el campo de etiquetas.</p>
 </section>
-<section id="articulos-relacionados">
-<h2>Artículos relacionados<a class="headerlink" href="#articulos-relacionados" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference internal" href="question_library.html"><span class="std std-doc">Uso de La biblioteca de preguntas</span></a></p></li>
-<li><p><a class="reference internal" href="public_collections_advanced_search.html"><span class="std std-doc">Uso de búsqueda avanzada dentro de colecciones públicas</span></a></p></li>
-<li><p><a class="reference internal" href="library_locking.html"><span class="std std-doc">Bloqueo de biblioteca</span></a></p></li>
-</ul>
 </section>
 </section>
 
@@ -233,7 +344,7 @@ opciones. Verás una opción para mover las preguntas a tu colección.</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Uso de Colecciones públicas"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Colecciones públicas en la biblioteca KoboToolbox"
               class="feedback-button"
               target="_blank"
             >
@@ -249,146 +360,155 @@ opciones. Verás una opción para mover las preguntas a tu colección.</p>
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Uso de Colecciones públicas</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#proposito-de-las-colecciones-publicas">Propósito de las Colecciones públicas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#localizar-las-colecciones-publicas">Localizar las Colecciones públicas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#uso-de-las-colecciones-publicas">Uso de las Colecciones públicas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#articulos-relacionados">Artículos relacionados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Colecciones públicas en la biblioteca KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#acceder-a-las-colecciones-publicas">Acceder a las colecciones públicas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#crear-una-coleccion-publica">Crear una colección pública</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usar-colecciones-publicas">Usar colecciones públicas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#busqueda-avanzada-en-colecciones-publicas">Búsqueda avanzada en colecciones públicas</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -453,7 +573,7 @@ opciones. Verás una opción para mover las preguntas a tu colección.</p>
   <script>
     window.docs = {
       currentPagename: "using_public_collections",
-      currentTitle: "Uso de Colecciones públicas",
+      currentTitle: "Colecciones públicas en la biblioteca KoboToolbox",
       currentUrl: ("index.html").replace("index.html", "using_public_collections.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

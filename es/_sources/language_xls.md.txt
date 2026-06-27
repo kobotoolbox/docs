@@ -1,131 +1,170 @@
-# Agregar otro idioma a tu XLSForm
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/language_xls.md" class="reference">29 Jul 2025</a>
+Looking at the issues:
 
-Existen dos métodos para agregar múltiples idiomas a tu formulario. Puedes
-agregarlos y manejarlos directamente a través del
-[Panel de Control del Proyecto](language_dashboard.md) en línea o puedes agregarlos en un XLSForm y
-subirlo a Kobo.
+1. **Issue on line 3** (`es_gender_inclusive`, rule_id): The suggestion says to *change* "los usuarios" to "los/as usuarios/as" — but the rule `es_gender_inclusive` explicitly requires **avoiding** slash forms and using **standard masculine plural** instead. The suggestion in the issue is backwards (it proposes the wrong form as the fix). Since applying this suggestion would introduce a violation of the very rule it cites, I skip this fix.
 
-Aquí hay instrucciones detalladas sobre cómo puedes agregar otro idioma a tu formulario:
+2. **Issue on line 11**: The explanation itself says "Skipping." — no change needed.
 
--   Crea tu formulario en el idioma predeterminado. Este debe ser el idioma con
-    el que la persona responsable de diseñar el cuestionario se sienta más cómoda.
-    Cuando hayas terminado, o cuando se haya creado una parte del formulario,
-    guárdalo. Regresarás al panel de control del proyecto del formulario borrador.
+# Añadir traducciones en XLSForm
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/26219c3ff68ab5e06bc080c11ae388324a894200/source/language_xls.md" class="reference">5 Jun 2026</a>
 
--   Exporta el formulario a XLS.
+Agregar traducciones a un formulario permite a los usuarios cambiar a su idioma preferido durante la recolección de datos sin necesidad de crear formularios separados. Se puede agregar cualquier número de traducciones. Tanto [KoboCollect](../es/data_collection_kobocollect.html) como los [formularios web](../es/data_through_webforms.html) admiten traducciones de formularios.
 
--   Abre el archivo en Excel (Google Spreadsheet, Open Office Calc, etc., todos
-    funcionarán) (Si estás en Excel es posible que tengas que sacar el archivo de
-    Vista Protegida primero.
-    [Ver aquí](https://support.office.com/en-us/article/what-is-protected-view-d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653?ocmsassetID=HA010355931&CorrelationId=04b441d5-5c7c-441a-bbac-8f34b3071869&ui=en-US&rs=en-US&ad=US).)
-    Tu hoja de cálculo tendrá tres hojas (mira las pequeñas pestañas en la parte inferior):
-    **survey**, **choices**, **settings**. Permanece en la hoja **survey** por ahora.
+La mayoría de los elementos que se muestran en el formulario pueden traducirse, como las **etiquetas de preguntas**, las **sugerencias**, las **etiquetas de opciones**, los **mensajes de restricción** y los **mensajes obligatorios**. Los elementos utilizados para la estructura del formulario, como los nombres de preguntas, los nombres de opciones y los nombres de listas, no pueden traducirse y deben permanecer en el idioma utilizado para el desarrollo del formulario y el análisis de datos.
 
--   Encuentra la columna llamada `label`. Aquí es donde se almacenan las etiquetas
-    de tus preguntas originales. Inserta otra columna a la derecha de label. En el encabezado
-    (primera fila) de esta nueva columna, escribe `label::idioma (código)`, por ejemplo
-    `label::Français (fr)` o `label::English (en)`.
+<p class="note">
+  <strong>Nota:</strong> Agregar traducciones en XLSForm es más rápido y eficiente que <a href="../es/language_dashboard.html">usar la interfaz de KoboToolbox</a>, especialmente para formularios más extensos. Para aprender a descargar tu formulario en XLSForm y agregar traducciones, consulta <a href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a>.
+<br><br>
+Para practicar la adición de traducciones en XLSForm, consulta el <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">curso XLSForm Fundamentals</a> de la KoboToolbox Academy.
+</p>
 
-<p class="note">Puedes cambiar el tamaño de tus columnas, agregar colores o cambiar el tamaño de la fuente, ninguno de estos afectará tu formulario.</p>
+Cuando tu formulario incluye varias traducciones, KoboCollect y los formularios web mostrarán un selector de idioma en la **esquina superior derecha del formulario**, lo que permite a los encuestados elegir su idioma preferido.
 
--   Luego, si tienes sugerencias en tu formulario, lo mismo debe aplicarse a la columna `hint`,
-    por ejemplo `hint::Français (fr)` o `hint::English (en)`.
+<p class="note">
+    Para obtener más información sobre la recolección y gestión de datos de formularios traducidos, consulta <a href="../es/collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a>.
+</p>
 
-**hoja survey**
+## Códigos de idioma en XLSForm
 
-| type             | name           | label                          | relevant                  |
-| :--------------- | :------------- | :----------------------------- | :------------------------ |
-| text             | full_name      | What is your name?             |                           |
-| select_one yesno | children_yesno | Do you have any children?      |                           |
-| integer          | children_count | How many children do you have? | ${children_yesno} = 'yes' |
-| survey |
+Al hacer referencia a diferentes idiomas en XLSForm, debes usar el formato `idioma (código)` en los encabezados de columna. Por ejemplo, la referencia de idioma para inglés es `English (en)` y la referencia de idioma para francés es `French (fr)`. Cada traducción debe usar el mismo nombre de idioma y código de manera consistente en todo el formulario.
 
--   Ahora agrega tus traducciones para cada fila dentro de la columna `label::idioma (código)`.
-    Cuando hayas terminado, asegúrate de no haber omitido ninguna pregunta (para
-    cada campo que tenga texto dentro de la columna label debe haber texto
-    dentro de la columna `label::idioma (código)`). Puedes encontrar los códigos
-    oficiales de idioma de 2 caracteres (subetiquetas)
-    [aquí](https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry).
+Los códigos de idioma se pueden encontrar en el <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">registro de subetiquetas de idioma de la IANA</a>. En el sitio web de la IANA, **Description** hace referencia al nombre del idioma y **Subtag** hace referencia al código de idioma (por ejemplo, **Description:** French, **Subtag:** fr).
 
-<p class="note">Consejo: Copia y pega la columna label original y luego haz cambios a las traducciones para que no dejes nada en blanco por accidente: Es mejor tener algo mostrándose en el idioma incorrecto que tener una pregunta en blanco en algún idioma. <em>Puedes repetir este paso y agregar tantos idiomas como desees, cada uno en sus columnas separadas y con un nombre diferente dentro de <code>label::idioma (código)</code>.</em></p>
 
-**hoja survey**
+## Configurar el idioma predeterminado del formulario
 
-| type             | name           | label:English (en)             | label::Français (fr)           | relevant                  |
-| :--------------- | :------------- | :----------------------------- | :----------------------------- | :------------------------ |
-| text             | full_name      | What is your name?             | Quel est votre nom?            |                           |
-| select_one yesno | children_yesno | Do you have any children?      | Avez-vous des enfants?         |                           |
-| integer          | children_count | How many children do you have? | Combien des enfants avez-vous? | ${children_yesno} = 'yes' |
-| survey |
+Para agregar traducciones a un XLSForm, primero debes definir el idioma predeterminado. Este es el idioma en el que se abrirá el formulario por defecto.
 
--   Ahora cambia a la hoja **choices** de tu archivo, si tienes una.
-
--   En la hoja **choices** tienes otra columna llamada `label`. Repite
-    los pasos 5 y 6. Asegúrate de usar exactamente la misma ortografía para
-    `label::idioma (código)`. Por ejemplo, `label::Francais (fr)` y
-    `label::Français (fr)` no son idénticos.
-
-**hoja choices**
-
-| list_name | name | label::English (en) | label::Français (fr) |
-| :-------- | :--- | :------------------ | :------------------- |
-| yesno     | yes  | Yes                 | Oui                  |
-| yesno     | no   | No                  | Non                  |
-| choices |
-
--   En la hoja **settings**, debajo de `form_title` edita el texto del
-    título de tu formulario a algo como "Mi formulario (Inglés y Francés)" para que puedas
-    identificarlo fácilmente más tarde.
+Para definir el idioma predeterminado de tu formulario:
+1. En la **hoja settings**, agrega una columna `default_language`.
+2. En la columna `default_language`, ingresa el idioma predeterminado usando el formato `idioma (código)`.
+    - Por ejemplo: `English (en)`.
 
 **hoja settings**
 
-| form_title                      |
-| :------------------------------ |
-| Mi formulario (Inglés y Francés) |
+| default_language |
+| :---------------- |
+| English (en)      |
 | settings |
 
--   Guarda tu archivo y cierra Excel.
+Para configurar la **hoja survey**:
 
--   Regresa a KoboToolbox y haz clic en **Reemplazar con XLS**, luego sube tu
-    XLSForm actualizado. Elige el archivo que acabas de terminar de editar y haz clic en **OK**.
+1. Renombra la columna `label` usando el formato `label::idioma (código)`.
+    - Por ejemplo: `label::English (en)`.
+2. Si tu formulario incluye columnas `hint`, `required_message`, `constraint_message` o `media` en la **hoja survey**, renombra las columnas existentes usando el formato `nombre_columna::idioma (código)`.
+    - Por ejemplo: `hint::English (en)`.
 
--   Abre el formulario que acabas de subir y haz clic en **Vista previa del formulario**. En la parte superior
-    junto a **Elegir idioma** haz clic en el menú desplegable. Tendrá un predeterminado
-    (tu idioma original) así como los nuevos idiomas que acabas de agregar.
+**hoja survey**
 
-## Traducir a escrituras Tamil, Nepalí, Hindi, etc.
+| type | name | label::English (en) | hint::English (en) |
+| :--- | :--- | :------------------ | :----------------- |
+| integer | age | How old are you? | In years |
+| select_one yn | student | Are you currently a student? | |
+| survey |
 
-Cuando traduzcas a escrituras no latinas, como Tamil, Nepalí, Hindi, etc., por favor
-asegúrate de no usar una fuente llamada pseudo fuente. Cuando escribas en estos
-idiomas asegúrate de usar solo los caracteres Unicode apropiados. Para escribir caracteres
-Unicode apropiados no tienes que instalar ninguna fuente en particular. En su lugar, tú
-(o tu traductor/a) necesitan configurar tu teclado para usar la escritura respectiva
-(Tamil, Nepalí, etc.) y luego escribir normalmente. La configuración correcta del teclado
-producirá las letras de escritura reales en Unicode en lugar de algunos equivalentes fonéticos
-latinos. (Esta también sería la misma forma de escribir estos idiomas en un
-correo electrónico, KoboToolbox o cualquier otra aplicación web.
+Por último, para configurar la **hoja choices**, renombra la columna `label` usando el formato `label::idioma (código)`.
 
-Para obtener ayuda con la adición del teclado del sistema correcto,
-[consulta este enlace](https://support.microsoft.com/en-us/help/17424/windows-change-keyboard-layout)
-(solo Windows).
+**hoja choices**
 
-Las pseudo fuentes permiten escribir en estas escrituras y se usan comúnmente en muchos
-países, particularmente en el sur de Asia. Pero aunque funcionan en la computadora que
-tiene una fuente específica instalada, no funcionarán en ninguna otra computadora que
-no use esa fuente en particular. Esto se debe a que estas fuentes solo disfrazan
-caracteres y símbolos latinos regulares y los hacen aparecer en una forma diferente.
-Por ejemplo, cuando se escribe "Hello" con la pseudo fuente nepalí 'Preeti', se
-verá así: हेल्लो. Pero lo que realmente está escrito allí siguen siendo las letras H e
-l l o. Para algunas personas que usan estas fuentes que a menudo usan equivalentes fonéticos al
-inglés, puede ser más fácil. Otra razón por la que se usan ampliamente es que muchas
-computadoras solían no tener soporte para estas escrituras y por lo tanto necesitaban pseudo
-fuentes como un "truco". De cualquier manera, los caracteres Unicode son la mejor manera de hacerlo - y
-la única manera para usar en KoboToolbox.
+| list_name | name | label::English (en) |
+| :--------- | :--- | :------------------ |
+| yn | yes | Yes |
+| yn | no | No |
+| choices |
 
-## Traducir escrituras de derecha a izquierda
+## Agregar traducciones
 
-Al agregar un idioma que usa escritura de derecha a izquierda es importante usar el
-código de idioma correcto, sin embargo, incluso si se usa el código correcto, si la primera
-pregunta, sugerencia o nota está escrita en una escritura de izquierda a derecha, el formulario
-formateará automáticamente el resto de la traducción a un formato de izquierda a derecha.
+Una vez que hayas definido tu idioma predeterminado, puedes agregar traducciones para cada elemento visible de tu formulario. Puedes agregar tantas columnas de traducción como desees.
+
+<p class="note">
+  <strong>Nota:</strong> Si omites el texto de un elemento traducido, aparecerá como un campo en blanco en el formulario.
+</p>
+
+Para agregar traducciones a la **hoja survey**:
+1. Agrega una nueva columna `label` para cada idioma de traducción usando el formato `label::idioma (código)`.
+    - Por ejemplo: `label::Spanish (es)`.
+2. Si tu formulario incluye columnas `hint`, `required_message`, `constraint_message` o `media` en la **hoja survey**, configura las columnas de traducción correspondientes usando el formato `nombre_columna::idioma (código)`.
+    - Por ejemplo: `hint::French (fr)` o `required_message::Chichewa (ny)`.
+3. Ingresa las traducciones de todos los elementos del formulario en las columnas correspondientes.
+
+<p class="note">
+  Para obtener más información sobre la gestión de archivos multimedia en formularios traducidos, consulta <a href="../es/media.html#adding-media-to-translations">Agregar archivos multimedia a un XLSForm</a>.
+</p>
+
+**hoja survey**
+
+| type | name | label::English (en) | label::Chichewa (ny) | hint::English (en) | hint::Chichewa (ny) |
+| :--- | :--- | :------------------ | :------------------- | :----------------- | :------------------ |
+| integer | age | How old are you? | Muli ndi zaka zingati? | In years | M'zaka |
+| select_one yn | student | Are you currently a student? | Kodi panopa ndinu wophunzira? | | |
+| survey |
+
+Para agregar traducciones a la **hoja choices**:
+1. Agrega una nueva columna `label` para cada idioma de traducción usando el formato `label::idioma (código)`.
+    - Por ejemplo: `label::Spanish (es)`.
+2. Ingresa la traducción de cada etiqueta de opción en la columna de traducción correspondiente.
+3. Si tu **hoja choices** incluye columnas de multimedia, configura las columnas de traducción correspondientes usando el formato `nombre_columna::idioma (código)`.
+
+<p class="note">
+  <strong>Nota:</strong> Para obtener más información sobre la gestión de archivos multimedia en formularios traducidos, consulta <a href="../es/media.html#adding-media-to-translations">Agregar archivos multimedia a un XLSForm</a>.
+</p>
+
+**hoja choices**
+
+| list_name | name | label::English (en) | label::Chichewa (ny) |
+| :--------- | :--- | :------------------ | :------------------- |
+| yn | yes | Yes | Inde |
+| yn | no | No | Ayi |
+| choices |
+
+
+## Pautas para las traducciones
+
+### Usar funciones de hojas de cálculo para traducciones en bloque
+
+XLSForm facilita la traducción de elementos del formulario en bloque, en lugar de ingresar las traducciones una por una. Por ejemplo, puedes copiar una columna completa en un sistema de traducción para traducirla en bloque y luego pegarla de nuevo en tu XLSForm. Si usas Google Sheets para crear tu XLSForm, puedes usar la fórmula `GOOGLETRANSLATE()` para automatizar el proceso de traducción.
+
+Las traducciones automáticas siempre deben ser revisadas y validadas por una persona con dominio del idioma para garantizar la precisión, la adecuación cultural y el contexto apropiado. Este paso ayuda a mantener la calidad y confiabilidad del contenido traducido.
+
+### Traducir a escrituras no latinas
+
+Las escrituras no latinas, como el árabe, el cirílico, el tamil, el nepalés o el hindi, son totalmente compatibles con KoboToolbox y pueden usarse como idiomas predeterminados o como traducciones.
+
+<p class="note">
+  <strong>Nota:</strong> Se recomienda usar solo caracteres latinos para los <strong>nombres</strong> de preguntas y opciones, ya que las escrituras no latinas pueden causar errores o problemas de compatibilidad al exportar datos o trabajar con XLSForm. Sin embargo, las <strong>etiquetas</strong> de preguntas y opciones pueden usar cualquier escritura sin inconvenientes.
+</p>
+
+Al agregar traducciones en escrituras no latinas, es fundamental **usar caracteres Unicode correctos**. Unicode garantiza que el texto se muestre y se interprete correctamente en todos los dispositivos y plataformas.
+
+Para ingresar texto en Unicode, no es necesario instalar fuentes especiales. En su lugar, configura el teclado del sistema en el idioma o escritura correspondiente y escribe con normalidad. Evita usar pseudofuentes (es decir, fuentes especiales que imitan visualmente escrituras no latinas reasignando caracteres latinos), ya que no son compatibles con KoboToolbox y pueden causar problemas graves de visualización e integridad de los datos. Si usas Windows y necesitas ayuda para configurar el teclado del sistema, consulta la [documentación de Microsoft](https://support.microsoft.com/en-us/windows/manage-the-language-and-keyboard-input-layout-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2).
+
+### Traducir escrituras de derecha a izquierda
+
+Al agregar un idioma que usa una escritura de derecha a izquierda (RTL), como el árabe, el hebreo o el urdu, es importante **usar el código de idioma correcto** y asegurarse de que el **primer texto visible en la traducción** (por ejemplo, una etiqueta de pregunta, una sugerencia o una nota) esté escrito en el idioma RTL. Esto garantizará que el diseño del formulario no adopte por defecto el formato de izquierda a derecha (LTR).
+
+Además, al incorporar referencias a preguntas dentro de las etiquetas de preguntas con escrituras RTL, ten en cuenta que la sintaxis de referencia a preguntas se invierte (es decir, `{nombre_pregunta}$`).
+
+**hoja survey**
+
+| type | name | label::English (en) | label::Arabic (ar) |
+| :--- | :--- | :------------------ | :----------------- |
+| begin\_group | profile | Respondent profile | ملف المستجيب |
+| text | name | Respondent's name | اسم المدعى عليه |
+| integer | age | How old is ${name}? | ؟{name}$ كم عمرك |
+| end\_group | | | |
+| survey |
+
+
+
+## Resolución de problemas
+
+<details>
+<summary><b>Aparece un idioma sin nombre después de cargar un XLSForm</b></summary>
+Es posible que aparezca un idioma sin nombre si en tu XLSForm faltan columnas de traducción para el contenido visible por los encuestados, como las columnas <code>hint</code>, <code>guidance_hint</code>, multimedia, <code>constraint_messages</code> o <code>required_message</code>. Hasta que esto se corrija, el texto de estas columnas aparecerá en blanco para todos los idiomas que no sean el idioma predeterminado.<br><br>También puede aparecer un idioma sin nombre si configuraste un <code>default_language</code> en la pestaña <code>settings</code>, como <code>English (en)</code>, pero tu formulario solo tiene un idioma y usa <code>label</code> en lugar de <code>label::English (en)</code>. Para corregir esto, elimina la configuración del idioma predeterminado en la pestaña <code>settings</code>.<br><br>Por último, puede aparecer un idioma sin nombre si cargas un XLSForm en un proyecto que antes tenía varios idiomas, pero ahora solo tiene un idioma sin especificar. Si tu formulario ahora tiene un solo idioma, abre la <a class="reference external" href="../es/language_dashboard.html">interfaz de traducciones</a>, establece el idioma sin nombre como idioma predeterminado y luego elimina los demás idiomas.
+</details>
+
+<br>
+
+<details>
+<summary><b>Quedan idiomas adicionales o innecesarios después de cargar un XLSForm</b></summary>
+   Si cargas un XLSForm que tiene menos idiomas que una versión anterior del mismo proyecto, es posible que KoboToolbox siga mostrando los idiomas de la versión anterior. Para eliminar los idiomas que ya no se necesitan, abre la <a class="reference external" href="../es/language_dashboard.html">interfaz de traducciones</a> en KoboToolbox y elimina los idiomas que ya no se usan.
+</details>

@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Adjuntos de datos dinámicos &#8212; documentación de KoboToolbox - </title>
+    <title>Conexión dinámica de proyectos usando XLSForms &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Funcionalidad de extracción de datos en KoboToolbox" href="pull_data_kobotoolbox.html" />
-    <link rel="prev" title="Agregar otro idioma a tu XLSForm" href="language_xls.html" />
+    <link rel="next" title="Bloquear cuestionarios para la biblioteca usando XLSForms" href="library_locking.html" />
+    <link rel="prev" title="Seleccionar opciones desde una imagen" href="select_from_image.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,23 +107,23 @@
 
         <section class="page__body" role="main">
           
-  <section id="adjuntos-de-datos-dinamicos">
-<h1>Adjuntos de datos dinámicos<a class="headerlink" href="#adjuntos-de-datos-dinamicos" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/0c4cbe231491ab3ee9bd1e3a82967d30ac63e2c6/source/dynamic_data_attachment.md" class="reference">15 Oct 2025</a></p>
-<p>La vinculación dinámica te permite usar datos de un <strong>proyecto principal</strong> dentro de <strong>proyectos secundarios</strong>, simplificando el manejo de la recolección de datos longitudinales. Este artículo explica cómo vincular dinámicamente datos entre proyectos de KoboToolbox.</p>
+  <section id="conexion-dinamica-de-proyectos-usando-xlsforms">
+<h1>Conexión dinámica de proyectos usando XLSForms<a class="headerlink" href="#conexion-dinamica-de-proyectos-usando-xlsforms" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8f9a856ca94d358f333f60f6e563a9ecbb879202/source/dynamic_data_attachment.md" class="reference">6 de mayo de 2026</a></p>
+<p>La conexión dinámica te permite usar datos de un <strong>proyecto primario</strong> dentro de <strong>proyectos secundarios</strong>, lo que simplifica el manejo de la recolección de datos longitudinales. Este artículo explica cómo conectar dinámicamente datos entre proyectos de KoboToolbox.</p>
 <p class="note">
-    <strong>Nota:</strong> Los adjuntos de datos dinámicos funcionan de manera similar a la función <a href="https://support.kobotoolbox.org/es/pull_data_kobotoolbox.html"><code>pulldata()</code></a>, pero eliminan la necesidad de archivos CSV separados, ya que los datos de un proyecto principal vinculado sirven como fuente de datos.
+    <strong>Nota:</strong> Las conexiones dinámicas de proyectos funcionan de manera similar a la función <a href="https://support.kobotoolbox.org/es/pull_data_kobotoolbox.html"><code>pulldata()</code></a>, pero eliminan la necesidad de archivos CSV separados, ya que los datos del proyecto primario vinculado sirven como fuente de datos.
 </p>
-<p>Puedes recuperar varias <strong>respuestas que no sean multimedia</strong> de un proyecto principal y realizar cálculos sobre estos datos vinculados en un proyecto secundario. Esto puede ser útil para recuperar datos de línea base, información de contacto o registros de salud en estudios de cohorte, o para confirmar o verificar datos recolectados previamente.</p>
-<p>Recomendamos usar <a class="reference internal" href="edit_forms_excel.html"><span class="std std-doc">XLSForm</span></a> para configurar adjuntos de datos dinámicos. Para ejemplos de proyectos principales y secundarios, descarga archivos de muestra <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx">aquí</a> y <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx">aquí</a>.</p>
-<section id="vincular-proyectos-dinamicamente-en-xlsform">
-<h2>Vincular proyectos dinámicamente en XLSForm<a class="headerlink" href="#vincular-proyectos-dinamicamente-en-xlsform" title="Link to this heading">¶</a></h2>
-<p>Vincular proyectos dinámicamente requiere un <strong>proyecto principal</strong> y al menos un <strong>proyecto secundario</strong>. El <strong>proyecto principal</strong> no requiere modificación de un XLSForm normal. Sin embargo, configurar el/los <strong>proyecto(s) secundario(s)</strong> implica los siguientes pasos:</p>
+<p>Puedes recuperar diversas <strong>respuestas sin multimedia</strong> de un proyecto primario y realizar cálculos sobre estos datos vinculados en un proyecto secundario. Esto puede ser útil para recuperar datos de referencia, información de contacto o registros de salud en estudios de cohorte, o para confirmar o verificar datos recolectados previamente.</p>
+<p>Recomendamos usar <a class="reference external" href="https://support.kobotoolbox.org/es/edit_forms_excel.html">XLSForm</a> para configurar las conexiones dinámicas de proyectos. Para ver ejemplos de proyectos primarios y secundarios, descarga los archivos de ejemplo <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx">aquí</a> y <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx">aquí</a>. Para aprender a configurar conexiones dinámicas de proyectos en el Formbuilder de KoboToolbox, consulta <a href="https://support.kobotoolbox.org/es/dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a>.</p>
+<section id="conectar-proyectos-dinamicamente-en-xlsform">
+<h2>Conectar proyectos dinámicamente en XLSForm<a class="headerlink" href="#conectar-proyectos-dinamicamente-en-xlsform" title="Link to this heading">¶</a></h2>
+<p>La conexión dinámica de proyectos requiere un <strong>proyecto primario</strong> y al menos un <strong>proyecto secundario</strong>. El <strong>proyecto primario</strong> no requiere ninguna modificación respecto a un XLSForm normal. Sin embargo, la configuración del o los <strong>proyectos secundarios</strong> implica los siguientes pasos:</p>
 <ol class="arabic simple">
-<li><p>En la hoja de cálculo <code class="docutils literal notranslate"><span class="pre">survey</span></code> de tu XLSForm, agrega una fila y establece el tipo de pregunta como <code class="docutils literal notranslate"><span class="pre">xml-external</span></code>.</p></li>
-<li><p>En la columna <code class="docutils literal notranslate"><span class="pre">name</span></code>, proporciona un nombre corto para el formulario principal. Este nombre puede consistir en caracteres del alfabeto latino, guiones bajos y números.</p></li>
+<li><p>En la <strong>hoja survey</strong> de tu XLSForm, agrega una fila y define el tipo de pregunta como <code class="docutils literal notranslate"><span class="pre">xml-external</span></code>.</p></li>
+<li><p>En la columna <code class="docutils literal notranslate"><span class="pre">name</span></code>, proporciona un nombre corto para el formulario primario. Este nombre puede contener caracteres del alfabeto latino, guiones bajos y números.</p></li>
 </ol>
-<p><strong>Hoja de cálculo survey</strong></p>
+<p><strong>hoja survey</strong></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>type</p></th>
@@ -143,14 +143,14 @@
 </tbody>
 </table>
 <ol class="arabic simple" start="3">
-<li><p>A lo largo del formulario, puedes recuperar valores del proyecto principal creando una nueva pregunta e incluyendo la expresión apropiada en la columna <code class="docutils literal notranslate"><span class="pre">calculation</span></code> (ver tabla <a class="reference external" href="https://support.kobotoolbox.org/es/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments">a continuación</a>). Puedes usar los siguientes tipos de pregunta para recuperar datos:</p>
+<li><p>A lo largo del formulario, puedes recuperar valores del proyecto primario creando una nueva pregunta e incluyendo la expresión adecuada en la columna <code class="docutils literal notranslate"><span class="pre">calculation</span></code> (consulta la tabla <a class="reference external" href="https://support.kobotoolbox.org/es/dynamic_data_attachment.html#calculation-syntax-for-dynamic-data-attachments">a continuación</a>). Puedes usar los siguientes tipos de preguntas para recuperar datos:</p>
 <ul class="simple">
-<li><p>Usa un tipo de pregunta <strong>calculate</strong> para recuperar y almacenar valores para uso futuro dentro del formulario o conjunto de datos (por ejemplo, para cálculos o etiquetas de preguntas dinámicas).</p></li>
-<li><p>Usa tipos de pregunta <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong> o <strong>select_multiple</strong> para incluir valores recuperados como respuestas predeterminadas en campos editables. Los datos editados en el proyecto secundario no cambiarán los datos originales en el proyecto principal.</p></li>
+<li><p>Usa el tipo de pregunta <code class="docutils literal notranslate"><span class="pre">calculate</span></code> para recuperar y almacenar valores para uso futuro dentro del formulario o conjunto de datos (por ejemplo, para cálculos o etiquetas de preguntas dinámicas).</p></li>
+<li><p>Usa los tipos de pregunta <code class="docutils literal notranslate"><span class="pre">text</span></code>, <code class="docutils literal notranslate"><span class="pre">integer</span></code>, <code class="docutils literal notranslate"><span class="pre">decimal</span></code>, <code class="docutils literal notranslate"><span class="pre">date</span></code>, <code class="docutils literal notranslate"><span class="pre">select_one</span></code> o <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> para incluir los valores recuperados como respuestas predeterminadas en campos editables. Los datos editados en el proyecto secundario no modificarán los datos originales del proyecto primario.</p></li>
 </ul>
 </li>
 </ol>
-<p><strong>Hoja de cálculo survey</strong></p>
+<p><strong>hoja survey</strong></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>type</p></th>
@@ -167,12 +167,12 @@
 </tr>
 <tr class="row-odd"><td class="text-left"><p>text</p></td>
 <td class="text-left"><p>participant_id</p></td>
-<td class="text-left"><p>¿Cuál es el ID del/de la participante?</p></td>
+<td class="text-left"><p>What is the participant’s ID?</p></td>
 <td class="text-left"><p></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>integer</p></td>
 <td class="text-left"><p>age</p></td>
-<td class="text-left"><p>Confirma la edad del/de la participante</p></td>
+<td class="text-left"><p>Confirm the participant’s age</p></td>
 <td class="text-left"><p>instance(“parent”)/root/data[enrollment_id = current()/../participant_id]/age</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>survey</p></td>
@@ -184,21 +184,21 @@
 </table>
 <p class="note">
    <strong>Nota:</strong> 
-    Para mostrar datos vinculados sin permitir que los/as usuarios/as editen el campo, usa una pregunta <strong>calculate</strong> seguida de una pregunta <strong>note</strong> que muestre el valor calculado. Alternativamente, usa preguntas <strong>text</strong>, <strong>integer</strong>, <strong>decimal</strong>, <strong>select_one</strong> o <strong>select_multiple</strong> con la columna <code>read_only</code> establecida en <code>TRUE</code>.
+    Para mostrar datos vinculados sin permitir que los usuarios editen el campo, usa una pregunta <code>calculate</code> seguida de una pregunta <code>note</code> que muestre el valor calculado. También puedes usar preguntas <code>text</code>, <code>integer</code>, <code>decimal</code>, <code>select_one</code> o <code>select_multiple</code> con la columna <code>read_only</code> configurada como <code>TRUE</code>.
 </p>
 </section>
-<section id="sintaxis-de-calculo-para-adjuntos-de-datos-dinamicos">
-<h2>Sintaxis de cálculo para adjuntos de datos dinámicos<a class="headerlink" href="#sintaxis-de-calculo-para-adjuntos-de-datos-dinamicos" title="Link to this heading">¶</a></h2>
-<p>En la columna <code class="docutils literal notranslate"><span class="pre">calculation</span></code> de la fila donde se recuperarán los datos vinculados, incluye una de las expresiones en la tabla a continuación. Estas expresiones se llaman <strong>XPaths</strong>.</p>
-<p>Para cada expresión en la tabla a continuación:</p>
+<section id="sintaxis-de-calculo-para-conexiones-dinamicas-de-proyectos">
+<h2>Sintaxis de cálculo para conexiones dinámicas de proyectos<a class="headerlink" href="#sintaxis-de-calculo-para-conexiones-dinamicas-de-proyectos" title="Link to this heading">¶</a></h2>
+<p>En la columna <code class="docutils literal notranslate"><span class="pre">calculation</span></code> de la fila donde se recuperarán los datos vinculados, incluye una de las expresiones de la tabla a continuación. Estas expresiones se denominan <strong>XPaths</strong>.</p>
+<p>Para cada expresión de la tabla a continuación:</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">parent</span></code> es el nombre único asignado al <strong>formulario principal</strong> (por ejemplo, en la pregunta <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> del <strong>formulario secundario</strong>).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">parent_question</span></code> se refiere al <code class="docutils literal notranslate"><span class="pre">name</span></code> de una pregunta del <strong>formulario principal</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">child_question</span></code> se refiere al <code class="docutils literal notranslate"><span class="pre">name</span></code> de una pregunta del <strong>formulario secundario</strong>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> es la pregunta identificadora del <strong>formulario principal</strong> que lo vincula al <strong>formulario secundario</strong> (por ejemplo, ID único, nombre de organización).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">child_index_question</span></code> es la pregunta identificadora del <strong>formulario secundario</strong> que lo vincula al <strong>formulario principal</strong> (por ejemplo, ID único, nombre de organización).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">parent_group</span></code> se refiere al <code class="docutils literal notranslate"><span class="pre">name</span></code> del grupo en el <strong>formulario principal</strong> en el que se encuentra la <code class="docutils literal notranslate"><span class="pre">parent_question</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_group</span></code> se refiere al <code class="docutils literal notranslate"><span class="pre">name</span></code> del grupo en el <strong>formulario principal</strong> en el que se encuentra la <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent</span></code> es el nombre único asignado al <strong>formulario primario</strong> (por ejemplo, en la pregunta <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> del <strong>formulario secundario</strong>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_question</span></code> hace referencia al <code class="docutils literal notranslate"><span class="pre">name</span></code> de una pregunta del <strong>formulario primario</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">child_question</span></code> hace referencia al <code class="docutils literal notranslate"><span class="pre">name</span></code> de una pregunta del <strong>formulario secundario</strong>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> es la pregunta identificadora del <strong>formulario primario</strong> que lo vincula al <strong>formulario secundario</strong> (por ejemplo, un ID único o el nombre de la organización).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">child_index_question</span></code> es la pregunta identificadora del <strong>formulario secundario</strong> que lo vincula al <strong>formulario primario</strong> (por ejemplo, un ID único o el nombre de la organización).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_group</span></code> hace referencia al <code class="docutils literal notranslate"><span class="pre">name</span></code> del grupo en el <strong>formulario primario</strong> en el que se encuentra <code class="docutils literal notranslate"><span class="pre">parent_question</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_group</span></code> hace referencia al <code class="docutils literal notranslate"><span class="pre">name</span></code> del grupo en el <strong>formulario primario</strong> en el que se encuentra <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code>.</p></li>
 </ul>
 <table class="docutils align-default">
 <thead>
@@ -208,73 +208,73 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/data)</span></code></p></td>
-<td class="text-left"><p>Devuelve el número total de filas en el proyecto principal.</p></td>
+<td class="text-left"><p>Devuelve el número total de filas en el proyecto primario.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/</span> <span class="pre">data[parent_group/parent_question])</span></code></p></td>
-<td class="text-left"><p>Devuelve el número total de filas en el proyecto principal donde <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) no está vacía.</p></td>
+<td class="text-left"><p>Devuelve el número total de filas en el proyecto primario donde <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) no está vacío.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/</span> <span class="pre">data[parent_group/parent_question=</span> <span class="pre">current()/../child_question]</span></code></p></td>
-<td class="text-left"><p>Devuelve el recuento total de instancias donde el valor de <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) en el proyecto principal es igual al valor de <code class="docutils literal notranslate"><span class="pre">child_question</span></code> en el proyecto secundario.</p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">count(instance('parent')/root/</span> <span class="pre">data[parent_group/parent_question=</span> <span class="pre">current()/../child_question])</span></code></p></td>
+<td class="text-left"><p>Devuelve el recuento total de instancias donde el valor de <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) en el proyecto primario es igual al valor de <code class="docutils literal notranslate"><span class="pre">child_question</span></code> en el proyecto secundario.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">instance('parent')/root/</span> <span class="pre">data[parent_index_group/parent_index_question=</span> <span class="pre">current()/../child_index_question]/parent_group/</span> <span class="pre">parent_question</span></code></p></td>
-<td class="text-left"><p>Devuelve el valor de <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) del proyecto principal donde <code class="docutils literal notranslate"><span class="pre">child_index_question</span></code> en el proyecto secundario es igual a <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> en el proyecto principal.</p></td>
+<td class="text-left"><p>Devuelve el valor de <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) del proyecto primario donde <code class="docutils literal notranslate"><span class="pre">child_index_question</span></code> en el proyecto secundario es igual a <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> en el proyecto primario.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">instance('parent')/root/</span> <span class="pre">data[parent_index_group/parent_index_question=</span> <span class="pre">current()/../child_index_question][position()=</span> <span class="pre">1]/parent_group/parent_question</span></code></p></td>
-<td class="text-left"><p>Igual que arriba, pero especifica que solo se deben devolver datos de la primera instancia de <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code>, usando el argumento <code class="docutils literal notranslate"><span class="pre">[position()</span> <span class="pre">=</span> <span class="pre">1]</span></code>. Se usa en caso de posibles duplicados en el formulario principal.</p></td>
+<td class="text-left"><p>Igual que el anterior, pero especifica que solo se deben devolver los datos de la primera instancia de <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code>, usando el argumento <code class="docutils literal notranslate"><span class="pre">[position()</span> <span class="pre">=</span> <span class="pre">1]</span></code>. Se usa en caso de posibles duplicados en el formulario primario.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">sum(instance('parent')/root/</span> <span class="pre">data/parent_group/parent_question)</span></code></p></td>
-<td class="text-left"><p>Devuelve la suma de valores de <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) del proyecto principal. Ten en cuenta que <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> debe ser numérica.</p></td>
+<td class="text-left"><p>Devuelve la suma de los valores de <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) del proyecto primario. Ten en cuenta que <code class="docutils literal notranslate"><span class="pre">parent_question</span> <span class="pre">must</span> <span class="pre">be</span> <span class="pre">numeric</span></code></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">max(instance('parent')/root/</span> <span class="pre">data/parent_group/parent_question)</span></code></p></td>
-<td class="text-left"><p>Devuelve el valor máximo ingresado en <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) del proyecto principal. Ten en cuenta que <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> debe ser numérica.</p></td>
+<td class="text-left"><p>Devuelve el valor máximo ingresado en <code class="docutils literal notranslate"><span class="pre">parent_questio</span></code>n (en parent_group) del proyecto primario. Ten en cuenta que <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> debe ser numérico.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">min(instance('parent')/root/</span> <span class="pre">data/parent_group/parent_question)</span></code></p></td>
-<td class="text-left"><p>Devuelve el valor mínimo ingresado en <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) del proyecto principal. Ten en cuenta que <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> debe ser numérica.</p></td>
+<td class="text-left"><p>Devuelve el valor mínimo ingresado en <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> (en <code class="docutils literal notranslate"><span class="pre">parent_group</span></code>) del proyecto primario. Ten en cuenta que <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> debe ser numérico.</p></td>
 </tr>
 </tbody>
 </table>
 <p class="note">
-    <strong>Nota:</strong> Si la pregunta principal no está incluida en ningún grupo, omite <code>parent_group</code> de la expresión.
+    <strong>Nota:</strong> Si la pregunta del formulario primario no está incluida en ningún grupo, omite <code>parent_group</code> de la expresión.
 </p>
 </section>
-<section id="configurar-proyectos-para-vinculacion-dinamica">
-<h2>Configurar proyectos para vinculación dinámica<a class="headerlink" href="#configurar-proyectos-para-vinculacion-dinamica" title="Link to this heading">¶</a></h2>
+<section id="configurar-proyectos-para-la-conexion-dinamica">
+<h2>Configurar proyectos para la conexión dinámica<a class="headerlink" href="#configurar-proyectos-para-la-conexion-dinamica" title="Link to this heading">¶</a></h2>
 <p>Una vez que tus XLSForms estén configurados, inicia sesión en tu cuenta de KoboToolbox y sigue estos pasos:</p>
 <ol class="arabic simple">
-<li><p>Carga y despliega el <strong>proyecto principal</strong>, si aún no está desplegado. Asegúrate de que el proyecto principal tenga al menos un envío.</p></li>
-<li><p>Habilita el intercambio de datos para el proyecto principal:</p>
+<li><p>Crea e implementa el <strong>proyecto primario</strong>, si aún no está implementado.</p></li>
+<li><p>Activa el uso compartido de datos para el proyecto primario:</p>
 <ul class="simple">
-<li><p>En la pestaña <strong>SETTINGS &gt; Connect Projects</strong> del proyecto principal, activa el interruptor <strong>Data sharing</strong> (deshabilitado por defecto) y haz clic en <strong>ACKNOWLEDGE AND CONTINUE</strong> en la ventana de confirmación.</p></li>
-<li><p>Todos los datos se comparten por defecto, pero puedes restringir variables específicas para compartir con proyectos secundarios haciendo clic en «Select specific questions to share».</p></li>
+<li><p>En la ventana <strong>CONFIGURACIÓN &gt; Conectar proyectos</strong> del proyecto primario, activa el interruptor <strong>Compartir datos</strong> (desactivado por defecto) y haz clic en <strong>CONFIRMAR Y CONTINUAR</strong> en la ventana de confirmación.</p></li>
+<li><p>Todos los datos se comparten por defecto, pero puedes restringir variables específicas para compartir con proyectos secundarios haciendo clic en «Seleccionar las preguntas específicas a compartir».</p></li>
 </ul>
 </li>
 </ol>
 <p class="note">
-    <strong>Nota:</strong> Si los proyectos tienen diferentes propietarios/as, el/la propietario/a del proyecto principal debe <a href="managing_permissions.html">compartir el proyecto</a> con el/la propietario/a del proyecto secundario. Los permisos mínimos requeridos para que funcionen los adjuntos de datos dinámicos son <strong>View form</strong> y <strong>View submissions</strong>. Ten en cuenta que esto permite a los/as administradores/as del proyecto secundario ver todos los datos del proyecto principal.
+    <strong>Nota:</strong> Si los proyectos tienen diferentes propietarios, el propietario del proyecto primario debe <a href="https://support.kobotoolbox.org/es/managing_permissions.html">compartir el proyecto</a> con el propietario del proyecto secundario. Los permisos mínimos requeridos para que las conexiones dinámicas de proyectos funcionen son <strong>Ver formulario</strong> y <strong>Ver envíos</strong>. Ten en cuenta que esto permite a los administradores del proyecto secundario ver todos los datos del proyecto primario.
 </p>
 <ol class="arabic simple" start="3">
-<li><p>Carga y despliega el <strong>proyecto secundario</strong>.</p></li>
-<li><p>Conecta el proyecto secundario al proyecto principal:</p>
+<li><p>Crea e implementa el <strong>proyecto secundario</strong>.</p></li>
+<li><p>Conecta el proyecto secundario al proyecto primario:</p>
 <ul class="simple">
-<li><p>En la pestaña <strong>SETTINGS &gt; Connect Projects</strong> del proyecto secundario, haz clic en «Select a different project to import data from». Un menú desplegable te permitirá seleccionar un proyecto principal para vincular.</p></li>
-<li><p>Renombra el proyecto principal vinculado al nombre de la pregunta <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> definido en el XLSForm y haz clic en <strong>IMPORT</strong>.</p></li>
-<li><p>Luego puedes seleccionar preguntas específicas del proyecto principal para compartir con el proyecto secundario, o seleccionar todas las preguntas.</p></li>
+<li><p>En la ventana <strong>CONFIGURACIÓN &gt; Conectar proyectos</strong> del proyecto secundario, haz clic en «Seleccionar un proyecto diferente desde el cual importar datos». Un menú desplegable te permitirá seleccionar un proyecto primario para vincular.</p></li>
+<li><p>Cambia el nombre del proyecto primario vinculado al nombre de la pregunta <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> definido en el XLSForm y haz clic en <strong>IMPORTAR</strong>.</p></li>
+<li><p>Luego puedes seleccionar preguntas específicas del proyecto primario para compartir con el proyecto secundario (recomendado), o seleccionar todas las preguntas.</p></li>
 </ul>
 </li>
-<li><p>Si agregas nuevos campos al formulario principal y deseas usarlos en el proyecto secundario, vuelve a importar el proyecto principal en la configuración del proyecto secundario.</p></li>
+<li><p>Si agregas nuevos campos al formulario primario y deseas usarlos en el proyecto secundario, vuelve a importar el proyecto primario en la configuración del proyecto secundario.</p></li>
 </ol>
 <p class="note">
     <strong>Nota:</strong> Los formularios solo pueden vincularse entre sí si están en el mismo servidor de KoboToolbox.
 </p>
-<iframe src="https://www.youtube.com/embed/pBqEsFlxqE4?si=6BPiDgOzU4LPO7zv" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/pBqEsFlxqE4?si=6BPiDgOzO4LPO7zv&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
-<section id="vincular-dinamicamente-un-formulario-a-si-mismo">
-<h2>Vincular dinámicamente un formulario a sí mismo<a class="headerlink" href="#vincular-dinamicamente-un-formulario-a-si-mismo" title="Link to this heading">¶</a></h2>
-<p>Es posible que un proyecto principal y secundario sean el mismo proyecto. Los pasos son los mismos que los descritos anteriormente. Ejemplos de casos de uso incluyen:</p>
+<section id="conectar-un-formulario-consigo-mismo-dinamicamente">
+<h2>Conectar un formulario consigo mismo dinámicamente<a class="headerlink" href="#conectar-un-formulario-consigo-mismo-dinamicamente" title="Link to this heading">¶</a></h2>
+<p>Es posible que un proyecto primario y un proyecto secundario sean el mismo proyecto. Los pasos son los mismos que los descritos anteriormente. Algunos ejemplos de casos de uso incluyen:</p>
 <ul class="simple">
-<li><p><strong>Monitoreo diario</strong>: Si un formulario se usa para encuestar a la misma persona a lo largo del tiempo, puedes vincularlo a sí mismo para contar envíos anteriores. Esto puede permitirte mostrar un mensaje (por ejemplo, «el monitoreo está completo») después de un cierto número de entradas o informar al/a la encuestador/a del número de formularios enviados, como se muestra en el ejemplo a continuación.</p></li>
+<li><p><strong>Monitoreo diario</strong>: Si se usa un formulario para encuestar a la misma persona a lo largo del tiempo, puedes vincularlo consigo mismo para contar los envíos anteriores. Esto puede permitirte mostrar un mensaje (por ejemplo, «el monitoreo está completo») después de un cierto número de entradas, o informar al encuestador sobre el número de formularios enviados, como se muestra en el ejemplo a continuación.</p></li>
 </ul>
-<p><strong>Hoja de cálculo survey</strong></p>
+<p><strong>hoja survey</strong></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>type</p></th>
@@ -291,7 +291,7 @@
 </tr>
 <tr class="row-odd"><td class="text-left"><p>text</p></td>
 <td class="text-left"><p>participant_id</p></td>
-<td class="text-left"><p>¿Cuál es el ID del/de la participante?</p></td>
+<td class="text-left"><p>What is the participant’s ID?</p></td>
 <td class="text-left"><p></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>calculate</p></td>
@@ -301,7 +301,7 @@
 </tr>
 <tr class="row-odd"><td class="text-left"><p>note</p></td>
 <td class="text-left"><p>monitoring_note</p></td>
-<td class="text-left"><p>Este/a participante ha sido encuestado/a ${count} veces.</p></td>
+<td class="text-left"><p>This participant has been surveyed ${count} times.</p></td>
 <td class="text-left"><p></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>survey</p></td>
@@ -312,9 +312,9 @@
 </tbody>
 </table>
 <ul class="simple">
-<li><p><strong>Formulario de registro</strong>: Al vincular un formulario de registro a sí mismo, puedes verificar si un/a usuario/a ya ha sido registrado/a. Esto puede permitirte generar un mensaje de error o agregar una restricción si ya está registrado/a, previniendo registros duplicados, como se muestra en el ejemplo a continuación.</p></li>
+<li><p><strong>Formulario de registro</strong>: Al vincular un formulario de registro consigo mismo, puedes verificar si un usuario ya ha sido registrado. Esto puede permitirte generar un mensaje de error o agregar una restricción si ya está registrado, evitando registros duplicados, como se muestra en el ejemplo a continuación.</p></li>
 </ul>
-<p><strong>Hoja de cálculo survey</strong></p>
+<p><strong>hoja survey</strong></p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>type</p></th>
@@ -333,7 +333,7 @@
 </tr>
 <tr class="row-odd"><td class="text-left"><p>text</p></td>
 <td class="text-left"><p>customer_id</p></td>
-<td class="text-left"><p>¿Cuál es el número de ID del/de la cliente?</p></td>
+<td class="text-left"><p>What is the customer’s ID number?</p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p></p></td>
 </tr>
@@ -345,7 +345,7 @@
 </tr>
 <tr class="row-odd"><td class="text-left"><p>note</p></td>
 <td class="text-left"><p>already_registered</p></td>
-<td class="text-left"><p>Este/a cliente ya está registrado/a. Por favor cierra este formulario.</p></td>
+<td class="text-left"><p>This customer is already registered. Please close this form.</p></td>
 <td class="text-left"><p></p></td>
 <td class="text-left"><p>${count} &gt; 0</p></td>
 </tr>
@@ -358,51 +358,83 @@
 </tbody>
 </table>
 </section>
-<section id="recolectar-y-manejar-datos-con-vinculacion-dinamica">
-<h2>Recolectar y manejar datos con vinculación dinámica<a class="headerlink" href="#recolectar-y-manejar-datos-con-vinculacion-dinamica" title="Link to this heading">¶</a></h2>
-<p>Los datos para proyectos vinculados dinámicamente pueden recolectarse usando la <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">aplicación de Android de KoboCollect</span></a> o <a class="reference internal" href="data_through_webforms.html"><span class="std std-doc">formularios web de Enketo</span></a>.</p>
+<section id="recolectar-y-gestionar-datos-con-conexion-dinamica">
+<h2>Recolectar y gestionar datos con conexión dinámica<a class="headerlink" href="#recolectar-y-gestionar-datos-con-conexion-dinamica" title="Link to this heading">¶</a></h2>
+<p>Los datos de proyectos conectados dinámicamente pueden recolectarse usando la <a class="reference external" href="https://support.kobotoolbox.org/es/data_collection_kobocollect.html">aplicación Android KoboCollect</a> o <a class="reference external" href="https://support.kobotoolbox.org/es/data_through_webforms.html">formularios web</a>.</p>
 <p>Al recolectar datos, ten en cuenta lo siguiente:</p>
 <ul class="simple">
-<li><p>El proyecto principal debe tener al menos un envío para que el proyecto secundario funcione correctamente.</p></li>
-<li><p>Al recolectar datos en línea, hay un retraso de cinco minutos en la sincronización de nuevos datos del proyecto principal con el proyecto secundario.</p></li>
-<li><p>En modo sin conexión, descarga frecuentemente el proyecto secundario para asegurar la sincronización de datos con el proyecto principal.</p></li>
+<li><p>El proyecto primario debe tener al menos un envío para que el proyecto secundario funcione correctamente.</p></li>
+<li><p>Al recolectar datos en línea, hay un retraso de cinco minutos en la sincronización de los nuevos datos del proyecto primario con el proyecto secundario.</p></li>
+<li><p>En modo sin conexión, descarga el proyecto secundario con frecuencia para garantizar la sincronización de datos con el proyecto primario.</p></li>
 </ul>
 <p class="note">
-    <strong>Nota:</strong> Puedes <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings">configurar la aplicación de Android de KoboCollect</a> para actualizar automáticamente los datos del proyecto principal cuando haya una conexión a internet disponible. Ve a <strong>Settings > Form management > Blank form update mode</strong> y selecciona <strong>Previously downloaded forms only</strong> o <strong>Exactly match server</strong>. Puedes establecer la frecuencia de descarga automática para que ocurra cada 15 minutos, cada hora, cada seis horas o cada 24 horas. Ten en cuenta que habilitar esta configuración puede aumentar el consumo de batería.
+    <strong>Nota:</strong> Puedes <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings">configurar la aplicación Android KoboCollect</a> para que actualice automáticamente los datos del proyecto primario cuando haya conexión a internet disponible. Ve a <strong>Ajustes > Manejo de formularios > Modo de actualización de formulario en blanco</strong> y selecciona <strong>Solo formularios descargados previamente</strong> o <strong>Coincidencia exacta de servidor</strong>. Puedes configurar la frecuencia de descarga automática para que ocurra cada 15 minutos, cada hora, cada seis horas o cada 24 horas. Ten en cuenta que activar esta configuración puede aumentar el consumo de batería.
 </p>
 </section>
-<section id="solucion-de-problemas">
-<h2>Solución de problemas<a class="headerlink" href="#solucion-de-problemas" title="Link to this heading">¶</a></h2>
+<section id="resolucion-de-problemas">
+<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
 <details>
-<summary><strong>Error o falla al vincular formularios</strong></summary>
-Los adjuntos de datos dinámicos no pueden conectarse a un proyecto principal vacío. Agrega al menos un envío al proyecto principal primero, luego vincula los formularios nuevamente.
+  <summary><strong>Error o fallo al vincular formularios</strong></summary>
+Si la interfaz de usuario falla cuando intentas vincular formularios, verifica lo siguiente:
+  <ul>
+    <li>Tu XLSForm no incluye nombres de preguntas o grupos duplicados en la columna <code>name</code> de la <strong>hoja survey</strong>.</li>
+    <li>Tu proyecto primario tiene al menos un envío.</li>
+  </ul>
+Si la interfaz de usuario sigue fallando, selecciona solo las preguntas que necesitas para conectar los formularios, en lugar de hacer clic en <strong>Seleccionar todo</strong>.
 </details>
 <br>
 <details>
-<summary><strong>Los datos principales no se muestran en el formulario secundario</strong></summary>
-Verifica que la sintaxis de cálculo en el formulario secundario sea correcta y que las preguntas relevantes estén compartidas en ambos proyectos. Si tu pregunta principal está en un grupo de preguntas, asegúrate de incluir el nombre del grupo en la expresión XPath. Ten en cuenta que los nuevos datos del proyecto principal tardan hasta cinco minutos en sincronizarse cuando estás en línea. Si agregas nuevos campos al formulario principal y deseas usarlos en el proyecto secundario, abre la configuración del proyecto secundario, vuelve a importar el proyecto principal y vuelve a desplegar.
+<summary><strong>Los datos del formulario primario no aparecen en el formulario secundario</strong></summary>
+Verifica que la sintaxis de cálculo en el formulario secundario sea correcta y que las preguntas relevantes estén compartidas en ambos proyectos. Si tu pregunta del formulario primario está en un grupo de preguntas, asegúrate de incluir el nombre del grupo en la expresión XPath. Ten en cuenta que los nuevos datos del proyecto primario tardan hasta cinco minutos en sincronizarse cuando estás en línea. Si agregas nuevos campos al formulario primario y deseas usarlos en el proyecto secundario, abre la configuración del proyecto secundario, vuelve a importar el proyecto primario y vuelve a implementarlo.
 </details>
 <br>
 <details>
 <summary><strong>El formulario secundario carga lentamente</strong></summary>
-Los adjuntos de datos dinámicos grandes pueden ralentizar la carga del formulario. Comparte solo las preguntas que el formulario secundario necesita en lugar de la lista completa de preguntas, luego vuelve a desplegar e intenta nuevamente.
+Las conexiones dinámicas de proyectos de gran tamaño pueden ralentizar los formularios, especialmente al abrir un formulario web para un nuevo envío o al editar envíos existentes.<br><br>Si trabajas con un conjunto de datos grande, comparte solo las preguntas que el formulario secundario necesita en lugar de la lista completa de preguntas. También puedes considerar dividir el formulario primario en varios formularios, por ejemplo por distrito o región, o usar un enfoque diferente si el conjunto de datos es demasiado grande para las conexiones dinámicas de proyectos.
 </details>
 <br>
 <details>
 <summary><strong>Los datos dinámicos no se actualizan en KoboCollect</strong></summary>
-Si estás usando KoboCollect y recolectando datos sin conexión, los datos primero deben enviarse al proyecto principal y luego descargarse a tu dispositivo de recolección de datos para que funcione el adjunto de datos dinámicos. Ambos pasos requieren una conexión a internet. Descargar datos principales es similar a descargar una nueva versión de un formulario, y la aplicación de KoboCollect puede configurarse para <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings">descargar automáticamente nuevos datos</a> con una frecuencia establecida. No se recomienda depender de adjuntos de datos dinámicos para datos recolectados sin conexión en un corto período de tiempo.
+Si usas KoboCollect y recolectas datos sin conexión, los datos primero deben enviarse al proyecto primario y luego descargarse en tu dispositivo de recolección de datos para que la conexión dinámica de proyectos funcione. Ambos pasos requieren conexión a internet. Descargar los datos del proyecto primario es similar a descargar una nueva versión de un formulario, y la aplicación KoboCollect puede configurarse para <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#form-management-settings">descargar automáticamente nuevos datos</a> con una frecuencia determinada. No se recomienda depender de las conexiones dinámicas de proyectos para datos recolectados sin conexión en un período corto de tiempo.
 </details>
 <br>
 <details>
-<summary><strong>El adjunto de datos dinámicos no funciona dentro de grupos de preguntas</strong></summary>
-Para extraer datos dinámicos de un formulario principal a un formulario secundario con grupos de preguntas, asegúrate de que la pregunta índice (por ejemplo, el número de identificación) en el formulario secundario esté en el mismo grupo que el cálculo para los datos dinámicos. Consulta los archivos de muestra <a href="https://community.kobotoolbox.org/uploads/short-url/z5RpC1M3wj9716z9qQ8pWx9Pb4V.xlsx">Round 1 (Within Groups).xlsx</a> y <a href="https://community.kobotoolbox.org/uploads/short-url/8JZvWJcrCxzKBllQYglRyAVyk03.xlsx">Round 2 (Within Groups).xlsx</a> para un ejemplo de adjuntos de datos dinámicos dentro de grupos.
+<summary><strong>La conexión dinámica de proyectos no funciona dentro de grupos de preguntas</strong></summary>
+Para extraer datos dinámicos de un formulario primario a un formulario secundario con grupos de preguntas, asegúrate de que la pregunta de índice (por ejemplo, el número de identificación) en el formulario secundario esté en el mismo grupo que el cálculo para los datos dinámicos. Consulta los archivos de ejemplo <a href="https://community.kobotoolbox.org/uploads/short-url/z5RpC1M3wj9716z9qQ8pWx9Pb4V.xlsx">Round 1 (Within Groups).xlsx</a> y <a href="https://community.kobotoolbox.org/uploads/short-url/8JZvWJcrCxzKBllQYglRyAVyk03.xlsx">Round 2 (Within Groups).xlsx</a> para ver un ejemplo de conexiones dinámicas de proyectos dentro de grupos.
+</details>
+<br>
+<details>
+<summary><strong>Las conexiones dinámicas de proyectos no extraen valores de grupos de repetición</strong></summary>
+Las conexiones dinámicas de proyectos no admiten actualmente la extracción directa de valores de grupos de repetición en un formulario primario. Si intentas recuperar un valor de un grupo de repetición, el formulario secundario puede devolver valores en blanco, recuperar solo la última entrada del grupo de repetición o no recuperar los datos esperados.<br><br>Como solución alternativa, puedes agregar una o más preguntas <code>calculate</code> fuera del grupo de repetición en el formulario primario y usarlas para <a href="https://support.kobotoolbox.org/es/repeat_groups_xls.html#retrieving-values-from-repeat-groups">almacenar los valores del grupo de repetición</a> necesarios en el formulario secundario. Luego, extrae estos valores calculados al formulario secundario en lugar de extraerlos directamente del grupo de repetición.<br><br>Para flujos de trabajo más complejos, puede que necesites reestructurar el formulario primario, dividir las entradas del grupo de repetición en envíos separados, o procesar los datos del formulario primario fuera de KoboToolbox y adjuntarlos como un <a href="https://support.kobotoolbox.org/es/pull_data_kobotoolbox.html">CSV externo</a>.
+</details>
+<br>
+<details>
+<summary><strong>La variable de índice del formulario primario está dentro de un grupo de repetición</strong></summary>
+Las conexiones dinámicas de proyectos no admiten actualmente la vinculación de envíos desde grupos de repetición. Si la variable de índice en el formulario primario está dentro de un grupo de repetición, el formulario secundario no podrá hacer coincidir ni recuperar los datos esperados.<br><br>Para evitar este problema, coloca la variable de vinculación fuera del grupo de repetición siempre que sea posible. Si cada elemento repetido necesita vincularse a un formulario secundario, considera reestructurar el flujo de trabajo para que cada elemento se envíe como su propio envío del formulario primario, en lugar de como una entrada en un grupo de repetición.<br><br>Por ejemplo, en lugar de recolectar todos los miembros del hogar en un grupo de repetición dentro de un envío del hogar, podrías crear un formulario primario separado donde cada miembro del hogar se envíe como un envío individual con un ID único. El formulario secundario puede entonces usar ese ID para recuperar el envío correcto.
 </details>
 <br>
 <details>
 <summary><strong>Error al evaluar campos en KoboCollect</strong></summary>
-Si tu formulario principal contiene envíos duplicados, puedes recibir un mensaje de error en KoboCollect que indica "Error evaluating field / XPath evaluation: type mismatch /This field is repeated". Para resolver este problema y extraer datos solo del primer envío que contenga un valor de índice específico, usa el argumento <code>[position()=1]</code>, como se muestra a continuación:
+Si tu formulario primario contiene envíos duplicados, es posible que recibas un mensaje de error en KoboCollect que indique "Error evaluating field / XPath evaluation: type mismatch /This field is repeated." Para resolver este problema y extraer datos solo del primer envío que contenga un valor de índice específico, usa el argumento <code>[position()=1]</code>, como se muestra a continuación:
 <br><br>
 <code>instance('parent')/root/data[parent_index_group/parent_index_question = current()/../child_index_question][position()=1]/parent_group/parent_question</code>
+</details>
+<br>
+<details>
+<summary><strong>No se pueden actualizar los valores recuperados de las conexiones dinámicas de proyectos</strong></summary>
+Si estás extrayendo datos dinámicos a preguntas de tipo entero, texto o selección y deseas que estos campos permanezcan editables, agrega una columna <code>trigger</code> a tu XLSForm. En la fila que contiene la expresión de datos dinámicos, ingresa el `name` de la pregunta de índice del formulario secundario en la columna <code>trigger</code>.
+<br><br>
+Esto permite que el valor se edite manualmente. El valor se actualizará desde los datos del formulario primario solo cuando cambie la respuesta a la pregunta de índice.
+</details>
+<br>
+<details>
+<summary><strong>Aparecen nombres de opciones en lugar de etiquetas de opciones</strong></summary>
+Al extraer datos de una pregunta <code>select_one</code> o <code>select_multiple</code>, las conexiones dinámicas de proyectos usarán el nombre de la opción, no la etiqueta de la opción.
+Para mostrar la etiqueta de la opción en tu formulario secundario, usa uno de los siguientes enfoques:
+      <ul>
+<li>Extrae los datos a una pregunta de selección e incluye las etiquetas correspondientes en la ventana <code>choices</code>.</li>
+<li>En el formulario primario, usa un <a href="https://support.kobotoolbox.org/es/calculations_xls.html#advanced-calculations">cálculo</a> <code>jr:choice-name()</code> para recuperar la etiqueta de la opción y luego extrae ese valor calculado al formulario secundario.</li>
+  </ul>
 </details></section>
 </section>
 
@@ -422,7 +454,7 @@ Si tu formulario principal contiene envíos duplicados, puedes recibir un mensaj
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Adjuntos de datos dinámicos"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Conexión dinámica de proyectos usando XLSForms"
               class="feedback-button"
               target="_blank"
             >
@@ -438,148 +470,157 @@ Si tu formulario principal contiene envíos duplicados, puedes recibir un mensaj
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Adjuntos de datos dinámicos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#vincular-proyectos-dinamicamente-en-xlsform">Vincular proyectos dinámicamente en XLSForm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sintaxis-de-calculo-para-adjuntos-de-datos-dinamicos">Sintaxis de cálculo para adjuntos de datos dinámicos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configurar-proyectos-para-vinculacion-dinamica">Configurar proyectos para vinculación dinámica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#vincular-dinamicamente-un-formulario-a-si-mismo">Vincular dinámicamente un formulario a sí mismo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#recolectar-y-manejar-datos-con-vinculacion-dinamica">Recolectar y manejar datos con vinculación dinámica</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#solucion-de-problemas">Solución de problemas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Conexión dinámica de proyectos usando XLSForms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#conectar-proyectos-dinamicamente-en-xlsform">Conectar proyectos dinámicamente en XLSForm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sintaxis-de-calculo-para-conexiones-dinamicas-de-proyectos">Sintaxis de cálculo para conexiones dinámicas de proyectos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configurar-proyectos-para-la-conexion-dinamica">Configurar proyectos para la conexión dinámica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#conectar-un-formulario-consigo-mismo-dinamicamente">Conectar un formulario consigo mismo dinámicamente</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recolectar-y-gestionar-datos-con-conexion-dinamica">Recolectar y gestionar datos con conexión dinámica</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolucion-de-problemas">Resolución de problemas</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -644,7 +685,7 @@ Si tu formulario principal contiene envíos duplicados, puedes recibir un mensaj
   <script>
     window.docs = {
       currentPagename: "dynamic_data_attachment",
-      currentTitle: "Adjuntos de datos dinámicos",
+      currentTitle: "Conexión dinámica de proyectos usando XLSForms",
       currentUrl: ("index.html").replace("index.html", "dynamic_data_attachment.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

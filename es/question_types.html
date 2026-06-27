@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Lista de Tipos de Preguntas &#8212; documentación de KoboToolbox - </title>
+    <title>Agregar preguntas con el Formbuilder &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Tipos de preguntas Texto y Nota" href="text_and_note.html" />
-    <link rel="prev" title="Configurar la autenticación de dos factores en KoboToolbox" href="two_factor_authentication.html" />
+    <link rel="next" title="Preguntas de tipo Texto en KoboToolbox" href="text_questions.html" />
+    <link rel="prev" title="Comenzar con el editor de formularios" href="formbuilder.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,153 +107,152 @@
 
         <section class="page__body" role="main">
           
-  <section id="lista-de-tipos-de-preguntas">
-<h1>Lista de Tipos de Preguntas<a class="headerlink" href="#lista-de-tipos-de-preguntas" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3993133bcf0aafda0b0978709534175cb583e049/source/question_types.md" class="reference">28 Oct 2024</a></p>
-<p>La siguiente tabla proporciona un resumen de alto nivel de cada uno de los tipos de respuesta
-disponibles para usar en tu XLSForm y editor de formularios:</p>
+  <section id="agregar-preguntas-con-el-formbuilder">
+<h1>Agregar preguntas con el Formbuilder<a class="headerlink" href="#agregar-preguntas-con-el-formbuilder" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/35c2ef4865450c612c41e9e784bd674a9f99756a/source/question_types.md" class="reference">20 Mar 2026</a></p>
+<p>El editor de formularios de KoboToolbox <strong>(Formbuilder)</strong> te permite agregar preguntas fácilmente a tu formulario mientras construyes tu encuesta o cuestionario.</p>
+<p>Este artículo explica cómo agregar preguntas a tu formulario, definir opciones de respuesta cuando corresponda, y ofrece una descripción general de los tipos de preguntas disponibles en el Formbuilder para apoyar un diseño de formulario efectivo.</p>
+<section id="agregar-una-pregunta">
+<h2>Agregar una pregunta<a class="headerlink" href="#agregar-una-pregunta" title="Link to this heading">¶</a></h2>
+<p>Para agregar una pregunta a tu formulario:</p>
+<ol class="arabic simple">
+<li><p>Haz clic en el botón <i class="k-icon-plus"></i>.</p></li>
+<li><p>Ingresa la etiqueta de tu pregunta.</p></li>
+<li><p>Haz clic en <strong>+ ADD QUESTION.</strong></p></li>
+<li><p>Elige el <a class="reference internal" href="#tipos-de-preguntas-en-el-formbuilder">tipo de pregunta</a>.</p></li>
+</ol>
+<p><img alt="Agregar una pregunta al Formbuilder" src="_images/add_question1.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Una vez seleccionado el tipo de pregunta, no se puede cambiar en el Formbuilder. Para cambiar el tipo de pregunta de una pregunta existente, elimina la pregunta y crea una nueva con la misma etiqueta.
+</p>
+<section id="definir-nombres-de-columna-de-datos">
+<h3>Definir nombres de columna de datos<a class="headerlink" href="#definir-nombres-de-columna-de-datos" title="Link to this heading">¶</a></h3>
+<p>Después de agregar una pregunta a tu formulario, se recomienda definir un <strong>Nombre de columna de datos</strong> en la <strong>Configuración</strong> de la pregunta. El nombre de columna de datos se utiliza para identificar la pregunta en la lógica del formulario y en el conjunto de datos exportado.</p>
+<p>De forma predeterminada, KoboToolbox crea el nombre de columna de datos eliminando los espacios y las letras mayúsculas de la etiqueta de la pregunta. Por ejemplo, si la etiqueta de la pregunta es «Nombre del encuestado», el nombre de columna de datos será <code class="docutils literal notranslate"><span class="pre">nombre_del_encuestado</span></code>.</p>
+<p class="note">
+    Para obtener más información sobre los nombres de columna de datos, consulta <a href="https://support.kobotoolbox.org/es/question_options.html#data-column-name">Opciones de preguntas en el Formbuilder</a>.
+</p>
+</section>
+</section>
+<section id="agregar-opciones-de-respuesta">
+<h2>Agregar opciones de respuesta<a class="headerlink" href="#agregar-opciones-de-respuesta" title="Link to this heading">¶</a></h2>
+<p>Al agregar preguntas de Seleccionar una o Seleccionar varias a tu formulario, se te pedirá que ingreses opciones de respuesta.</p>
+<ul class="simple">
+<li><p>Puedes ingresar tantas opciones de respuesta como quieras.</p></li>
+<li><p>Para reordenar la lista de opciones, haz clic y arrastra un elemento a la posición deseada.</p></li>
+<li><p>Haz clic en el icono de papelera <i class="k-icon-trash"></i> junto a la etiqueta de una opción para eliminarla.</p></li>
+</ul>
+<p><img alt="Eliminar opción" src="_images/delete_choice.png" /></p>
+<p class="note">
+<strong>Nota:</strong> Gestionar listas de opciones largas en el Formbuilder puede llevar mucho tiempo. Si tu formulario incluye muchas opciones o la misma lista de opciones se usa en varias preguntas, generalmente es más fácil crear y gestionar estas listas usando XLSForm. Para obtener más información, consulta <a href="https://support.kobotoolbox.org/es/option_choices_xls.html#">Administrar opciones de respuesta en XLSForm</a>.
+</p>
+<section id="definir-valores-xml-para-las-opciones-de-respuesta">
+<h3>Definir valores XML para las opciones de respuesta<a class="headerlink" href="#definir-valores-xml-para-las-opciones-de-respuesta" title="Link to this heading">¶</a></h3>
+<p>Junto a cada opción, verás un campo con la etiqueta <strong>AUTOMATIC.</strong> Este campo contiene el <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#xml-value">valor XML</a> de esa opción.</p>
+<p>El valor XML es un nombre interno breve que KoboToolbox utiliza para guardar e identificar la opción seleccionada en tus datos. De forma predeterminada, KoboToolbox crea el valor XML eliminando los espacios y las letras mayúsculas de la etiqueta de la opción. Por ejemplo, si la etiqueta de la opción es «Opción 1», el valor XML será <code class="docutils literal notranslate"><span class="pre">opcion_1</span></code>.</p>
+<p>En algunos casos, es posible que quieras definir tu propio valor XML. Esto puede ser útil si la etiqueta de la opción es muy larga o si quieres usar un nombre más claro o coherente. Para hacerlo, haz clic en <strong>AUTOMATIC</strong> y reemplázalo con tu propio valor personalizado.</p>
+<p class="note">
+<strong>Nota:</strong> Se recomienda definir valores XML para todas las opciones cuando se usen escrituras no latinas, como chino, árabe o nepalés, para garantizar que tus datos se almacenen y exporten correctamente.
+</p>
+</section>
+</section>
+<section id="tipos-de-preguntas-en-el-formbuilder">
+<h2>Tipos de preguntas en el Formbuilder<a class="headerlink" href="#tipos-de-preguntas-en-el-formbuilder" title="Link to this heading">¶</a></h2>
+<p>Los siguientes tipos de preguntas están disponibles en el Formbuilder:</p>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Tipo de pregunta</p></th>
-<th class="head text-left"><p>Ícono</p></th>
-<th class="head text-left"><p>Entrada de respuesta</p></th>
+<th class="head text-left"><p>Descripción</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-number"></i></p></td>
-<td class="text-left"><p>Entrada de número entero (es decir, número completo).</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-select-one"></i> Seleccionar una</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/select_one_and_select_many.html">seleccionar una opción</a> de una lista predefinida.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>decimal</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-decimal"></i></p></td>
-<td class="text-left"><p>Entrada decimal.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-select-many"></i> Seleccionar varias</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/select_one_and_select_many.html">seleccionar varias opciones</a> de una lista predefinida.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>range</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-range"></i></p></td>
-<td class="text-left"><p>Entrada de rango (incluyendo calificación).</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-text"></i> Texto</p></td>
+<td class="text-left"><p>Proporciona un <a class="reference external" href="https://support.kobotoolbox.org/es/text_questions.html">cuadro de texto</a> para recolectar respuestas abiertas.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-text"></i></p></td>
-<td class="text-left"><p>Respuesta de texto libre.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-number"></i> Número</p></td>
+<td class="text-left"><p>Permite a los encuestados ingresar <a class="reference external" href="https://support.kobotoolbox.org/es/number_decimal_range.html">números enteros</a>.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>select_one [options]</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-select-one"></i></p></td>
-<td class="text-left"><p>Pregunta de opción múltiple; solo se puede seleccionar una respuesta.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-decimal"></i> Decimal</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/number_decimal_range.html">ingresar números</a> que pueden contener decimales.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>select_multiple [options]</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-select-many"></i></p></td>
-<td class="text-left"><p>Pregunta de opción múltiple; se pueden seleccionar múltiples respuestas.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-date"></i> Fecha</p></td>
+<td class="text-left"><p>Captura una <a class="reference external" href="https://support.kobotoolbox.org/es/date_time.html">fecha de calendario</a> específica, incluyendo año, mes y día.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>select_one_from_file [file]</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-select-one"></i></p></td>
-<td class="text-left"><p>Opción múltiple desde archivo; solo se puede seleccionar una respuesta.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-time"></i> Hora</p></td>
+<td class="text-left"><p>Captura una <a class="reference external" href="https://support.kobotoolbox.org/es/date_time.html">hora específica</a> en horas y minutos.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>select_multiple_from_file [file]</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-select-many"></i></p></td>
-<td class="text-left"><p>Opción múltiple desde archivo; se pueden seleccionar múltiples respuestas.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-date-time"></i> Fecha y hora</p></td>
+<td class="text-left"><p>Captura <a class="reference external" href="https://support.kobotoolbox.org/es/date_time.html">una fecha y una hora</a> en una sola respuesta combinada.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>rank [options]</p></td>
-<td class="text-left"><p>n/a</p></td>
-<td class="text-left"><p>Pregunta de clasificación; ordenar una lista.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-point"></i> Punto</p></td>
+<td class="text-left"><p>Registra una <a class="reference external" href="https://support.kobotoolbox.org/es/gps_questions.html">ubicación GPS única</a>.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>note</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-note"></i></p></td>
-<td class="text-left"><p>Muestra una nota en la pantalla, no recibe entrada. Abreviatura de type=text con readonly=true.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-line"></i> Línea</p></td>
+<td class="text-left"><p>Registra <a class="reference external" href="https://support.kobotoolbox.org/es/gps_questions.html">varios puntos GPS</a> que forman una línea.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>geopoint</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-point"></i></p></td>
-<td class="text-left"><p>Recolectar una sola coordenada GPS.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-area"></i> Área</p></td>
+<td class="text-left"><p>Registra <a class="reference external" href="https://support.kobotoolbox.org/es/gps_questions.html">varios puntos GPS</a> que forman un área cerrada.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>geotrace</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-line"></i></p></td>
-<td class="text-left"><p>Registrar una línea de dos o más coordenadas GPS.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-photo"></i> Foto</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/photo_audio_video_file.html">cargar imágenes</a> o tomar fotos (cuando se usa la <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#kobocollect">aplicación KoboCollect</a>).</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>geoshape</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-area"></i></p></td>
-<td class="text-left"><p>Registrar un polígono de múltiples coordenadas GPS; el último punto es el mismo que el primer punto.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-audio"></i> Audio</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/photo_audio_video_file.html">cargar un archivo de audio</a> o grabar audio.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>date</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-date"></i></p></td>
-<td class="text-left"><p>Entrada de fecha.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-video"></i> Video</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/photo_audio_video_file.html">cargar videos</a> o grabar videos (cuando se usa la <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#kobocollect">aplicación KoboCollect</a>).</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>time</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-time"></i></p></td>
-<td class="text-left"><p>Entrada de hora.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-barcode"></i> Código de barras / Código QR</p></td>
+<td class="text-left"><p>Escanea un <a class="reference external" href="https://support.kobotoolbox.org/es/photo_audio_video_file.html">código QR</a> para recolectar información incorporada usando la cámara del dispositivo (cuando se usa la <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#kobocollect">aplicación KoboCollect</a>).</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>datetime</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-date-time"></i></p></td>
-<td class="text-left"><p>Acepta una entrada de fecha y hora.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-file"></i> Archivo</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/photo_audio_video_file.html">cargar archivos</a>, como archivos de texto, hojas de cálculo y archivos PDF.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>image</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-photo"></i></p></td>
-<td class="text-left"><p>Tomar una foto o cargar un archivo de imagen.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-note"></i> Nota</p></td>
+<td class="text-left"><p><a class="reference external" href="https://support.kobotoolbox.org/es/note_questions.html">Proporciona información</a> al encuestado sin requerir ninguna entrada.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>audio</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-audio"></i></p></td>
-<td class="text-left"><p>Hacer una grabación de audio o cargar un archivo de audio.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-acknowledge"></i> Consentimiento</p></td>
+<td class="text-left"><p>Una <a class="reference external" href="https://support.kobotoolbox.org/es/select_one_and_select_many.html">casilla de selección única</a> que los encuestados pueden marcar para confirmar su acuerdo con una declaración.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>background-audio</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-background-rec"></i></p></td>
-<td class="text-left"><p>El audio se graba en segundo plano mientras se completa el formulario.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-rating"></i> Calificación</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/select_one_and_select_many.html#setting-up-rating-questions">calificar diferentes elementos</a> usando una escala común.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>video</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-video"></i></p></td>
-<td class="text-left"><p>Hacer una grabación de video o cargar un archivo de video.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-question-matrix"></i> Matriz de preguntas</p></td>
+<td class="text-left"><p>Crea un <a class="reference external" href="https://support.kobotoolbox.org/es/matrix_response.html">grupo de preguntas</a> que se muestran en formato de matriz, donde cada celda dentro de la matriz representa una pregunta independiente.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>file</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-file"></i></p></td>
-<td class="text-left"><p>Entrada de archivo genérico (txt, pdf, xls, xlsx, doc, docx, rtf, zip)</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-ranking"></i> Clasificación</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/select_one_and_select_many.html#setting-up-ranking-questions">ordenar elementos</a> según su preferencia.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>barcode</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-barcode"></i></p></td>
-<td class="text-left"><p>Escanear un código de barras o código QR</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-calculate"></i> Cálculo</p></td>
+<td class="text-left"><p>Realiza automáticamente <a class="reference external" href="https://support.kobotoolbox.org/es/calculate_questions.html">cálculos</a> dentro de un formulario basándose en las respuestas a preguntas anteriores.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>calculate</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-calculate"></i></p></td>
-<td class="text-left"><p>Realizar un cálculo; consulta la sección de Cálculo a continuación.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-hidden"></i> Oculto</p></td>
+<td class="text-left"><p>Almacena <a class="reference external" href="https://support.kobotoolbox.org/es/form_logic.html#storing-constants-in-your-form">valores predefinidos</a> que no son visibles para el encuestado.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>acknowledge</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-acknowledge"></i></p></td>
-<td class="text-left"><p>Mensaje de confirmación que establece el valor en «OK» si se selecciona.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-range"></i> Rango</p></td>
+<td class="text-left"><p>Permite a los encuestados <a class="reference external" href="https://support.kobotoolbox.org/es/number_decimal_range.html#setting-up-range-questions">seleccionar un valor numérico</a> dentro de un rango especificado.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>hidden</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-hidden"></i></p></td>
-<td class="text-left"><p>Un campo sin elemento de interfaz de usuario asociado que se puede usar para almacenar una constante.</p></td>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-external-xml"></i> XML externo</p></td>
+<td class="text-left"><p>Conecta el proyecto de KoboToolbox con <a class="reference external" href="https://support.kobotoolbox.org/es/dynamic_data_attachment_formbuilder.html">otros proyectos</a> para recuperar datos de forma dinámica.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>xml-external</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-external-xml"></i></p></td>
-<td class="text-left"><p>Agrega una referencia a un archivo de datos XML externo.</p></td>
+<tr class="row-odd"><td class="text-left"><p><i class="k-icon-qt-select-one-from-file"></i> Seleccionar una de un archivo</p></td>
+<td class="text-left"><p>Permite a los encuestados seleccionar una opción <a class="reference external" href="https://support.kobotoolbox.org/es/external_file.html">de una lista predefinida</a> almacenada en un archivo CSV externo.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><i class="k-icon-qt-select-many-from-file"></i> Seleccionar varias de un archivo</p></td>
+<td class="text-left"><p>Permite a los encuestados seleccionar varias opciones <a class="reference external" href="https://support.kobotoolbox.org/es/external_file.html">de una lista predefinida</a> almacenada en un archivo CSV externo.</p></td>
 </tr>
 </tbody>
 </table>
-<p>Para obtener más información sobre los tipos de respuesta, visita
-<a class="reference external" href="http://xlsform.org/">xlsform.org</a>.</p>
-<p>Además, los tipos específicos de KoboToolbox también se pueden usar desde el
-editor de formularios:</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>Tipo de pregunta del editor de formularios</p></th>
-<th class="head text-left"><p>Ícono</p></th>
-<th class="head text-left"><p>Entrada de respuesta</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>Rating</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-rating"></i></p></td>
-<td class="text-left"><p>Comparar diferentes elementos usando una escala común.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>Ranking</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-ranking"></i></p></td>
-<td class="text-left"><p>Comparar una lista de diferentes objetos entre sí.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>Question Matrix</p></td>
-<td class="text-left"><p><i class="k-icon k-icon-qt-question-matrix"></i></p></td>
-<td class="text-left"><p>Crear un grupo de preguntas que se muestran en formato de matriz.</p></td>
-</tr>
-</tbody>
-</table>
-<p class="note"><a class="reference" href="/calculate_questions.html">Las Preguntas de Cálculo</a> no se muestran en tu formulario, pero se ejecutan automáticamente mientras se responde tu formulario.</p>
-<p class="note">El <a class="reference" href="matrix_response.html">Tipo de Matriz de Preguntas</a> solo es compatible con Enketo y con el Tema de Cuadrícula configurado. </p></section>
+<p class="note">
+<strong>Nota:</strong> Los tipos de preguntas Seleccionar una de un archivo y Seleccionar varias de un archivo solo aparecen como opciones en el Formbuilder si se ha <a href="https://support.kobotoolbox.org/es/upload_media.html">cargado</a> un archivo de opciones externo en KoboToolbox.
+</p></section>
+</section>
 
 
           <div class="clearer"></div>
@@ -271,7 +270,7 @@ editor de formularios:</p>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Lista de Tipos de Preguntas"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Agregar preguntas con el Formbuilder"
               class="feedback-button"
               target="_blank"
             >
@@ -287,140 +286,154 @@ editor de formularios:</p>
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Agregar preguntas con el Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#agregar-una-pregunta">Agregar una pregunta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#agregar-opciones-de-respuesta">Agregar opciones de respuesta</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tipos-de-preguntas-en-el-formbuilder">Tipos de preguntas en el Formbuilder</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -485,7 +498,7 @@ editor de formularios:</p>
   <script>
     window.docs = {
       currentPagename: "question_types",
-      currentTitle: "Lista de Tipos de Preguntas",
+      currentTitle: "Agregar preguntas con el Formbuilder",
       currentUrl: ("index.html").replace("index.html", "question_types.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

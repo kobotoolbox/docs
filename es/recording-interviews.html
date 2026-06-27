@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Grabar una Entrevista Completa con la Grabación de Audio de Fondo &#8212; documentación de KoboToolbox - </title>
+    <title>Recolectar datos cualitativos con KoboToolbox &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Recolectar datos a través de formularios web" href="data_through_webforms.html" />
-    <link rel="prev" title="Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos" href="deploy_form_new_project.html" />
+    <link rel="next" title="Recolectar datos en diferentes idiomas" href="collecting_data_multiple_languages.html" />
+    <link rel="prev" title="Recolectar datos de GPS con KoboToolbox" href="collect_gps.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,191 +107,126 @@
 
         <section class="page__body" role="main">
           
-  <section id="grabar-una-entrevista-completa-con-la-grabacion-de-audio-de-fondo">
-<h1>Grabar una Entrevista Completa con la Grabación de Audio de Fondo<a class="headerlink" href="#grabar-una-entrevista-completa-con-la-grabacion-de-audio-de-fondo" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong>
-<a href="https://github.com/kobotoolbox/docs/blob/511ea4cb3c698a4b45e7c2b4efd1af4e356e811f/source/recording-interviews.md" class="reference">15
-Feb 2022</a></p>
-<p><strong>La grabación de audio de fondo</strong> es una funcionalidad poderosa que permite a los/as usuarios/as grabar
-una entrevista en segundo plano (cuando el formulario está abierto) y almacenar la grabación
-como datos de audio. Esta funcionalidad mejora la recolección de datos cualitativos al permitir que
-la información matizada se recolecte en su totalidad.</p>
-<p>La grabación de audio de fondo también permite a los/as supervisores/as y gerentes/as de proyecto
-saber cómo sus encuestadores/as realizaron la entrevista en términos de aseguramiento de calidad
-de datos o si desean tener una grabación de respaldo de la entrevista transcrita.</p>
-<p>Actualmente, los/as usuarios/as pueden grabar la entrevista completa con <strong>La aplicación de Android de KoboCollect</strong>
-<code class="docutils literal notranslate"><span class="pre">v1.30</span></code> y superior. <strong>Enketo</strong> aún no soporta esta funcionalidad.</p>
-<p class="note">
-  Si requieres una grabación de audio en lugar de la completa
-  <strong>grabación de audio de fondo</strong>, consulta nuestro artículo de ayuda,
-  <a class="reference" href="media.html"
-    >Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a
-  >.
-</p>
-<section id="activar-la-grabacion-de-audio-de-fondo-en-el-editor-de-formularios">
-<h2>Activar la grabación de audio de fondo en el editor de formularios<a class="headerlink" href="#activar-la-grabacion-de-audio-de-fondo-en-el-editor-de-formularios" title="Link to this heading">¶</a></h2>
-<p>Si estás diseñando tu formulario de encuesta a través del editor de formularios de KoboToolbox (Formbuilder) y deseas habilitar
-la <strong>grabación de audio de fondo</strong>, sigue los pasos que se muestran en el video a continuación:</p>
-<video controls>
-  <source
-    src="./_static/files/recording_interviews/activating_background_audio_recording_UI.mp4"
-    type="video/mp4"
-  />
-</video>
+  <section id="recolectar-datos-cualitativos-con-kobotoolbox">
+<h1>Recolectar datos cualitativos con KoboToolbox<a class="headerlink" href="#recolectar-datos-cualitativos-con-kobotoolbox" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/recording-interviews.md" class="reference">23 abr 2026</a></p>
+<p>Los datos cualitativos te ayudan a <strong>comprender experiencias, prioridades y contexto</strong> que las preguntas cerradas pueden pasar por alto. Pueden revelar por qué las personas responden de ciertas maneras, cómo describen sus necesidades y qué detalles son más importantes en un contexto local.</p>
+<p>En la práctica, los datos cualitativos suelen ser más difíciles de recolectar y analizar a gran escala. Escribir respuestas abiertas, revisar imágenes y transcribir entrevistas de audio puede llevar mucho tiempo. Debido a esto, los equipos a menudo recolectan menos datos cualitativos de los que les gustaría, o tienen dificultades para usar todo lo que recolectan.</p>
+<p>KoboToolbox incluye funcionalidades que <strong>hacen que la recolección de datos cualitativos sea más práctica.</strong> Puedes recolectar texto, imágenes, audio, video y grabaciones de audio de fondo en tus formularios, y luego revisarlos y gestionarlos directamente en KoboToolbox. Para respuestas de audio, KoboToolbox también incluye herramientas integradas para <a class="reference external" href="https://support.kobotoolbox.org/es/transcription-translation.html">transcripción, traducción</a> y <a class="reference external" href="https://support.kobotoolbox.org/es/qualitative_analysis.html">análisis</a>.</p>
+<p>Este artículo cubre las principales formas de recolectar datos cualitativos con KoboToolbox, incluidos los tipos de preguntas relevantes, las grabaciones de audio de fondo y las opciones para gestionar y analizar datos cualitativos después de la recolección.</p>
+<section id="tipos-de-preguntas-para-la-recoleccion-de-datos-cualitativos">
+<h2>Tipos de preguntas para la recolección de datos cualitativos<a class="headerlink" href="#tipos-de-preguntas-para-la-recoleccion-de-datos-cualitativos" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox admite varios tipos de preguntas que son útiles para la investigación cualitativa y la recolección de datos abiertos.</p>
 <ul class="simple">
-<li><p>En la ventana <strong>FORMULARIO</strong>, selecciona el botón <strong>Editar</strong>. <em>(Este paso puede no ser
-necesario si ya estás en el editor de formularios)</em></p></li>
-<li><p>En la esquina superior derecha, selecciona <strong>Diseño y Ajustes</strong> y luego <strong>Audio de
-fondo</strong> debería ser visible.</p></li>
-<li><p>Activa el botón <strong>Habilitar grabación de audio en segundo plano</strong>. Una
-notificación debería aparecer en la parte superior del editor de formularios.</p></li>
-<li><p><strong>Solo voz</strong> es la calidad de audio predeterminada para el <strong>audio de fondo</strong>.
-Puedes cambiar la calidad de audio a <strong>Baja</strong> o <strong>Normal</strong> según sea necesario (consulta
-la tabla a continuación para ver las diferencias en el tamaño del archivo).</p></li>
-<li><p>Después de realizar todas las configuraciones necesarias, selecciona <strong>GUARDAR</strong> y <strong>Salir</strong>
-en el editor de formularios.</p></li>
-<li><p><strong>DESPLEGAR</strong> el formulario para ponerlo en funcionamiento.</p></li>
+<li><p><strong>Texto:</strong> Las preguntas de texto se pueden usar para respuestas escritas cortas o largas. Para respuestas más largas, puedes usar el <a class="reference external" href="https://support.kobotoolbox.org/es/text_questions.html#advanced-appearances">aspecto</a> <code class="docutils literal notranslate"><span class="pre">multiline</span></code> (múltiples líneas) para dar a los encuestados un cuadro de texto más grande.</p></li>
+<li><p><strong>Imagen:</strong> Las preguntas de imagen se pueden usar para recolectar fotos, bocetos o imágenes anotadas. Esto puede ser útil para documentación visual, mapeo participativo, observaciones de sitio o recolección de evidencia fotográfica. Usa el <a class="reference external" href="https://support.kobotoolbox.org/es/photo_audio_video_file.html#advanced-appearances">aspecto</a> <code class="docutils literal notranslate"><span class="pre">draw</span></code> (dibujo) con preguntas de imagen para crear un dibujo, y usa el aspecto <code class="docutils literal notranslate"><span class="pre">annotate</span></code> (anotación) para marcar una imagen.</p></li>
+<li><p><strong>Video:</strong> Las preguntas de video se pueden usar para recolectar archivos de video. Esto puede ser útil cuando el contexto visual, el movimiento o las demostraciones son importantes.</p></li>
+<li><p><strong>Audio:</strong> Las preguntas de audio permiten a los encuestados o encuestadores grabar respuestas habladas o cargar archivos de audio. Son útiles para entrevistas abiertas y otros casos donde el tono y la redacción exacta importan, y reducen la necesidad de que los encuestadores resuman las respuestas en el momento.</p></li>
+<li><p><strong>Grabación de audio de fondo:</strong> La grabación de audio de fondo captura audio continuamente mientras el formulario está abierto. Esto puede ser útil para grabar una entrevista completa en lugar de grabar respuestas separadas pregunta por pregunta.</p></li>
 </ul>
+<p class="note">
+Para obtener más información sobre los tipos de preguntas cualitativas, consulta <a href="https://support.kobotoolbox.org/es/text_questions.html">Preguntas de tipo Texto en KoboToolbox</a>, <a href="https://support.kobotoolbox.org/es/photo_audio_video_file.html#">Preguntas Multimedia en KoboToolbox</a> y <a href="https://support.kobotoolbox.org/es/form_meta.html#enabling-background-audio-recording">Habilitar la grabación de audio de fondo</a>.
+</p>
 </section>
-<section id="incluir-el-tipo-de-pregunta-de-audio-de-fondo-en-xlsform">
-<h2>Incluir el tipo de pregunta de audio de fondo en XLSForm<a class="headerlink" href="#incluir-el-tipo-de-pregunta-de-audio-de-fondo-en-xlsform" title="Link to this heading">¶</a></h2>
-<p>Si estás diseñando tu formulario de encuesta a través de XLSForm y deseas incluir un
-tipo de pregunta <code class="docutils literal notranslate"><span class="pre">background-audio</span></code>, sigue los pasos que se muestran en el video a continuación:</p>
-<video controls>
-  <source
-    src="./_static/files/recording_interviews/including_background_audio_question_type_xlsform.mp4"
-    type="video/mp4"
-  />
-</video>
-<p>En tu XLSForm, agrega <code class="docutils literal notranslate"><span class="pre">background-audio</span></code> bajo la columna <code class="docutils literal notranslate"><span class="pre">type</span></code> de la
-hoja <strong>survey</strong>. Este es el tipo de pregunta que grabará el audio en
-segundo plano.</p>
-</section>
-<section id="establecer-una-calidad-de-audio-apropiada">
-<h2>Establecer una calidad de audio apropiada<a class="headerlink" href="#establecer-una-calidad-de-audio-apropiada" title="Link to this heading">¶</a></h2>
-<p>La columna <code class="docutils literal notranslate"><span class="pre">parameters</span></code> es opcional pero es importante elegir el
-parámetro apropiado. La calidad de audio está directamente relacionada con el tamaño del archivo que
-se almacenará en el servidor. Ten en cuenta cuánto de tu espacio de almacenamiento total
-deseas usar para tus archivos de audio. Consulta la tabla a continuación al elegir
-el parámetro apropiado:</p>
+<section id="recolectar-datos-cualitativos-con-kobocollect-vs-formularios-web">
+<h2>Recolectar datos cualitativos con KoboCollect vs formularios web<a class="headerlink" href="#recolectar-datos-cualitativos-con-kobocollect-vs-formularios-web" title="Link to this heading">¶</a></h2>
+<p>Los tipos de preguntas cualitativas pueden comportarse de manera diferente dependiendo de si los datos se recolectan en <a class="reference external" href="https://support.kobotoolbox.org/es/data_collection_kobocollect.html">KoboCollect</a> o <a class="reference external" href="https://support.kobotoolbox.org/es/data_through_webforms.html">formularios web</a>, y de si los encuestados están usando una computadora o un dispositivo móvil.</p>
+<p>La siguiente tabla describe cómo se comporta cada tipo de pregunta cualitativa en KoboCollect y en formularios web.</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Calidad</p></th>
-<th class="head text-left"><p>Parámetros</p></th>
-<th class="head text-left"><p>Extensión</p></th>
-<th class="head text-left"><p>Codificación</p></th>
-<th class="head text-left"><p>Tasa de bits</p></th>
-<th class="head text-left"><p>Tasa de muestreo</p></th>
-<th class="head text-left"><p>Tamaño del archivo</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Tipo de pregunta</p></th>
+<th class="head text-left"><p>Comportamiento en KoboCollect</p></th>
+<th class="head text-left"><p>Comportamiento en formularios web</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>normal</p></td>
-<td class="text-left"><p>quality=normal</p></td>
-<td class="text-left"><p>.m4a</p></td>
-<td class="text-left"><p>AAC</p></td>
-<td class="text-left"><p>64 kbps</p></td>
-<td class="text-left"><p>32 kHz</p></td>
-<td class="text-left"><p>~ 30 MB/hora</p></td>
+<tr class="row-even"><td class="text-left"><p>Texto</p></td>
+<td class="text-left"><p>Los encuestados pueden escribir su respuesta en un cuadro de texto.</p></td>
+<td class="text-left"><p>Los encuestados pueden escribir su respuesta en un cuadro de texto.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>low</p></td>
-<td class="text-left"><p>quality=low</p></td>
-<td class="text-left"><p>.m4a</p></td>
-<td class="text-left"><p>AAC</p></td>
-<td class="text-left"><p>24 kbps</p></td>
-<td class="text-left"><p>32 kHz</p></td>
-<td class="text-left"><p>~ 11 MB/hora</p></td>
+<tr class="row-odd"><td class="text-left"><p>Imagen</p></td>
+<td class="text-left"><p>Los encuestados pueden tomar fotos desde el dispositivo o cargar un archivo de imagen.</p></td>
+<td class="text-left"><p>En una computadora, los encuestados <strong>solo pueden cargar</strong> un archivo de imagen.<br><br>Cuando usan dispositivos móviles, los encuestados también pueden tener la opción de tomar una foto desde el dispositivo.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>voice-only</p></td>
-<td class="text-left"><p>quality=voice-only</p></td>
-<td class="text-left"><p>.amr</p></td>
-<td class="text-left"><p>AMR</p></td>
-<td class="text-left"><p>12.2 kbps</p></td>
-<td class="text-left"><p>8 kHz</p></td>
-<td class="text-left"><p>~ 5 MB/hora</p></td>
+<tr class="row-even"><td class="text-left"><p>Video</p></td>
+<td class="text-left"><p>Los encuestados pueden grabar un video desde el dispositivo o cargar un archivo de video.</p></td>
+<td class="text-left"><p>En una computadora, los encuestados <strong>solo pueden cargar</strong> un archivo de video.<br><br>Cuando usan dispositivos móviles, los encuestados también pueden tener la opción de grabar un video desde el dispositivo.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Audio</p></td>
+<td class="text-left"><p>Los encuestados pueden grabar una respuesta de audio o cargar un archivo de audio.</p></td>
+<td class="text-left"><p>Los encuestados pueden grabar una respuesta de audio (incluso desde una computadora) o cargar un archivo de audio.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Grabación de audio de fondo</p></td>
+<td class="text-left"><p>Graba continuamente mientras el formulario está abierto, siempre que se haya otorgado permiso para grabar.</p></td>
+<td class="text-left"><p>Graba continuamente mientras el formulario está abierto (incluso desde una computadora), siempre que se haya otorgado permiso para grabar.</p></td>
 </tr>
 </tbody>
 </table>
-<p>Puedes dejar la columna en blanco para que el parámetro se establezca en <code class="docutils literal notranslate"><span class="pre">voice-only</span></code>, que
-capturará el audio bien en un entorno de entrevista silencioso. Si estás grabando audio
-donde podría haber múltiples personas hablando simultáneamente, <code class="docutils literal notranslate"><span class="pre">low</span></code> sería más
-adecuado. <code class="docutils literal notranslate"><span class="pre">normal</span></code> es la opción de mayor calidad y usará la mayor cantidad
-de espacio de almacenamiento.</p>
-</section>
-<section id="recolectar-audio-de-fondo-con-la-aplicacion-de-android-de-kobocollect">
-<h2>Recolectar audio de fondo con la aplicación de Android de KoboCollect<a class="headerlink" href="#recolectar-audio-de-fondo-con-la-aplicacion-de-android-de-kobocollect" title="Link to this heading">¶</a></h2>
-<p>Revisa nuestro artículo de ayuda,
-<a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">Recolección de Datos en la Aplicación de KoboCollect</span></a>, para aprender
-en detalle sobre la recolección de datos en <strong>La aplicación de Android de KoboCollect</strong>.</p>
-<video controls>
-  <source
-    src="./_static/files/recording_interviews/collecting_data_with_background_audio_in_collect_app.mp4"
-    type="video/mp4"
-  />
-</video>
-<p>Mientras grabas activamente audio de fondo con <strong>La aplicación de Android de KoboCollect</strong>, deberías
-poder ver un micrófono en la parte superior de tu formulario.</p>
-<p><img alt="Pantalla de audio de fondo" src="_images/background_audio_screen.jpg" /></p>
-</section>
-<section id="ver-archivos-de-audio-que-fueron-grabados-como-audio-de-fondo">
-<h2>Ver archivos de audio que fueron grabados como audio de fondo<a class="headerlink" href="#ver-archivos-de-audio-que-fueron-grabados-como-audio-de-fondo" title="Link to this heading">¶</a></h2>
-<p>Cuando tienes <code class="docutils literal notranslate"><span class="pre">background-audio</span></code> configurado para tu proyecto, puedes ver el
-archivo de audio grabado en <strong>DATOS&gt;Tabla</strong> como se muestra en la imagen a continuación.</p>
-<p><img alt="Vista de tabla de datos" src="_images/data_table_view.png" /></p>
-</section>
-<section id="descargar-archivos-de-audio">
-<h2>Descargar archivos de audio<a class="headerlink" href="#descargar-archivos-de-audio" title="Link to this heading">¶</a></h2>
-<p>Puedes descargar todos los archivos de audio de fondo como un archivo ZIP desde
-<strong>DATOS&gt;Descargas&gt;Archivos Adjuntos Multimedia (ZIP)</strong> como se muestra en el video a continuación.</p>
-<video controls>
-  <source
-    src="./_static/files/recording_interviews/downloading_audio_files_that_were_recorded_as_background_audio.mp4"
-    type="video/mp4"
-  />
-</video>
-</section>
-<section id="consideraciones-eticas">
-<h2>Consideraciones éticas<a class="headerlink" href="#consideraciones-eticas" title="Link to this heading">¶</a></h2>
-<p>Al recolectar datos, es ético tener el consentimiento informado de los/as
-encuestados/as antes de la recolección de datos, en este caso grabando audio de
-fondo.</p>
 <p class="note">
-  Alentamos a todos/as los/as usuarios/as a considerar las implicaciones éticas de su recolección
-  de datos y a cumplir con la legislación aplicable de protección de datos dentro
-  de la jurisdicción de su trabajo.
+<strong>Nota:</strong>
+Cuando la grabación de audio de fondo está activa en un formulario, los tipos de pregunta de <strong>Audio</strong> en <strong>KoboCollect</strong> se desactivan, ya que no es posible grabar audio usando ambas funcionalidades simultáneamente.
 </p>
+</section>
+<section id="grabar-entrevistas-con-grabaciones-de-audio-de-fondo">
+<h2>Grabar entrevistas con grabaciones de audio de fondo<a class="headerlink" href="#grabar-entrevistas-con-grabaciones-de-audio-de-fondo" title="Link to this heading">¶</a></h2>
+<p>La grabación de audio de fondo es útil cuando quieres <strong>capturar una entrevista completa</strong> en lugar de clips de audio separados para preguntas individuales. Comienza cuando se abre el formulario y continúa hasta que se cierra el formulario.</p>
+<p>El audio de fondo se puede grabar en la aplicación KoboCollect y en formularios web.</p>
+<ul class="simple">
+<li><p>En formularios web, aparece un aviso al comienzo del formulario para informar a los encuestados que se está grabando audio de fondo.</p></li>
+<li><p>Tanto en formularios web como en KoboCollect, aparece un ícono de micrófono en la parte superior del formulario mientras la grabación está activa y muestra la duración de la grabación.</p></li>
+</ul>
+<p class="note">
+<strong>Nota:</strong>
+La grabación de audio de fondo se recolecta como metadatos del formulario. Para obtener más información sobre cómo configurar grabaciones de audio de fondo en tu formulario, consulta <a href="https://support.kobotoolbox.org/es/form_meta.html#enabling-background-audio-recording">Agregar metadatos en el Formbuilder</a> o <a href="https://support.kobotoolbox.org/es/metadata_xls.html">Metadatos en XLSForm</a>.
+</p>
+<section id="consideraciones-eticas-para-la-grabacion-de-audio">
+<h3>Consideraciones éticas para la grabación de audio<a class="headerlink" href="#consideraciones-eticas-para-la-grabacion-de-audio" title="Link to this heading">¶</a></h3>
+<p>Antes de grabar audio, <strong>asegúrate de que los encuestados den su consentimiento informado.</strong> Deben entender que se está grabando audio, por qué se está recolectando, cómo se usará, quién tendrá acceso a él y cuánto tiempo se almacenará.</p>
+<p>Los datos de audio pueden ser especialmente sensibles. Antes de usar la grabación de audio de fondo, considera si las grabaciones completas de entrevistas son necesarias para tu proyecto y si crean <strong>riesgos adicionales de privacidad o protección.</strong> Kobo recomienda encarecidamente el cumplimiento de todos los requisitos aplicables de protección de datos y privacidad en el lugar donde se realiza la recolección de datos.</p>
+</section>
+</section>
+<section id="gestionar-y-analizar-datos-cualitativos">
+<h2>Gestionar y analizar datos cualitativos<a class="headerlink" href="#gestionar-y-analizar-datos-cualitativos" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox incluye funcionalidades integradas para ayudarte a revisar datos cualitativos después de la recolección.</p>
+<ul class="simple">
+<li><p><strong>Texto:</strong> Puedes revisar todas las respuestas a una pregunta de texto en <strong>DATOS &gt; Informes.</strong> Esto es útil para leer rápidamente respuestas abiertas juntas e identificar temas comunes.</p></li>
+<li><p><strong>Imágenes:</strong> Puedes revisar las imágenes recolectadas en <strong>DATOS &gt; Galería.</strong> Esto facilita la exploración de respuestas visuales en todos los envíos.</p></li>
+<li><p><strong>Video:</strong> Los archivos de video se pueden ver dentro de envíos individuales. Esto es útil cuando necesitas revisar el contexto visual junto con otras respuestas del mismo envío.</p></li>
+<li><p><strong>Audio:</strong> Las respuestas de audio, incluidas las grabaciones de audio de fondo, se pueden abrir en su propia vista para revisión, transcripción, traducción y análisis.</p></li>
+</ul>
+<p class="note">
+Para obtener más información sobre cómo transcribir, traducir y analizar respuestas de audio, consulta <a href="https://support.kobotoolbox.org/es/transcription-translation.html">Transcripción y traducción de respuestas de audio</a> y <a href="https://support.kobotoolbox.org/es/qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a>.
+</p>
+<p>Los datos cualitativos se incluyen en tu conjunto de datos cuando lo <a class="reference external" href="https://support.kobotoolbox.org/es/export_download.html">exportas</a>, incluidos los enlaces a archivos multimedia para cada envío, cualquier dato de transcripción, traducción y análisis, y cualquier respuesta de texto. Los archivos multimedia también se pueden <a class="reference external" href="https://support.kobotoolbox.org/es/managing_media_responses.html#downloading-media-files">descargar por separado</a>, ya sea individualmente o en masa.</p>
 </section>
 <section id="solucion-de-problemas">
 <h2>Solución de problemas<a class="headerlink" href="#solucion-de-problemas" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>Esta funcionalidad es compatible con <strong>La aplicación de Android de KoboCollect</strong> <code class="docutils literal notranslate"><span class="pre">v1.30</span></code> y
-superior.</p></li>
-<li><p>Esta funcionalidad actualmente no es compatible con los <strong>formularios web de Enketo</strong>.</p></li>
-<li><p>Tu dispositivo debe tener una grabadora de audio incorporada para que esta funcionalidad funcione
-sin problemas. Puedes descargar
-<a class="reference external" href="https://play.google.com/store/apps/details?id=com.github.axet.audiorecorder">Audio Recorder</a>
-desde Google Play Store si es necesario.</p></li>
-<li><p>Antes de comenzar la recolección de datos, asegúrate de que tu dispositivo tenga suficiente
-espacio para almacenar las grabaciones de audio de fondo.</p></li>
-<li><p>Si editas tu archivo de audio en <strong>Editar Formulario Guardado</strong>, tendrás ambas
-versiones (el archivo de audio original y el archivo editado) en un solo archivo.
-Por ejemplo, si tienes un audio de fondo de <em>“Prueba de muestra”</em> y editaste
-la grabación, cambiándola a <em>“Muestra para re-prueba”</em>, cuando
-descargues tu archivo de audio de fondo, consistirá del audio de fondo combinado
-de <em>“Prueba de muestra”</em> y <em>“Muestra para re-prueba”</em>.</p></li>
-<li><p>Si tus archivos de audio de fondo ocupan suficiente espacio de almacenamiento para llevar tu
-almacenamiento total por encima de tu cantidad asignada (5GB para todas las cuentas gratuitas), puedes
-solicitar espacio adicional (por un costo) contactando a
-<a class="reference external" href="mailto:info&#37;&#52;&#48;kobotoolbox&#46;org">info<span>&#64;</span>kobotoolbox<span>&#46;</span>org</a>. El pago se utiliza para
-cubrir los costos adicionales asociados con proyectos de recolección de datos grandes
-y asegura que el servidor siga funcionando bien para nuestros/as usuarios/as.</p></li>
-<li><p>Cuando tienes archivos de audio de fondo grandes y/o largos en tu cuenta, puedes
-tener problemas al descargarlos como <strong>Archivos Adjuntos Multimedia (ZIP)</strong>. En tal
-caso, sigue nuestro artículo de ayuda
-<a class="reference internal" href="photo_download.html"><span class="std std-doc">Descargar Fotos y Otros Medios</span></a>, que debería ayudarte
-a descargar archivos multimedia grandes del sistema.</p></li>
-</ul>
-</section>
+<details>
+  <summary><strong>No hay suficiente almacenamiento en el dispositivo</strong></summary>
+Antes de recolectar datos cualitativos (por ejemplo, imágenes o grabaciones de audio de fondo), asegúrate de que tu dispositivo tenga suficiente espacio de almacenamiento para guardar los archivos.
+</details>
+<br>
+<details>
+  <summary><strong>No hay suficiente almacenamiento en el servidor de KoboToolbox</strong></summary>
+Los archivos multimedia pueden ser grandes y pueden hacer que tu cuenta exceda su límite de almacenamiento (1 GB para cuentas gratuitas). Si necesitas más espacio, puedes <a href="https://support.kobotoolbox.org/es/managing_media_responses.html#deleting-media-files">eliminar archivos multimedia</a> de los envíos, <a href="https://www.kobotoolbox.org/pricing/">subir de categoría de plan</a>, o comprar un <strong>complemento de almacenamiento</strong> en <strong>Configuraciones > Complementos.</strong>
+</details>
+<br>
+<details>
+  <summary><strong>La grabación de audio de fondo no funciona</strong></summary>
+  Tu dispositivo debe tener una grabadora de audio integrada para que esta funcionalidad funcione. Si tu dispositivo no incluye una, puedes descargar <a href="https://play.google.com/store/apps/details?id=com.media.bestrecorder.audiorecorder&pcampaignid=web_share">Voice Recorder</a> o cualquier otra aplicación de grabación de audio en tu dispositivo.
+</details>
+<br>
+<details>
+  <summary><strong>Editar envíos con grabación de audio de fondo</strong></summary>
+Si editas un formulario que incluye audio de fondo desde la plataforma KoboToolbox, la grabación inicial no será reemplazada. Un mensaje en la parte superior del formulario dirá "Este envío tiene una grabación de audio de fondo."
+</details>
+<br>
+<details>
+  <summary><strong>Formularios con grabación de audio de fondo guardados como borradores</strong></summary>
+Si un formulario con grabación de audio de fondo se guarda como borrador en <strong>formularios web</strong>, solo se conservará la grabación inicial. La grabación no se reanudará ni será reemplazada cuando se vuelva a abrir el formulario borrador. <br><br>
+Si un formulario con grabación de audio de fondo se guarda como borrador en <strong>KoboCollect</strong>, la grabación se reanudará cuando se vuelva a abrir el formulario borrador. Ambas grabaciones se almacenarán juntas en un solo archivo.
+</details>
+<br></section>
 </section>
 
 
@@ -310,7 +245,7 @@ a descargar archivos multimedia grandes del sistema.</p></li>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Grabar una Entrevista Completa con la Grabación de Audio de Fondo"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Recolectar datos cualitativos con KoboToolbox"
               class="feedback-button"
               target="_blank"
             >
@@ -326,150 +261,156 @@ a descargar archivos multimedia grandes del sistema.</p></li>
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#activar-la-grabacion-de-audio-de-fondo-en-el-editor-de-formularios">Activar la grabación de audio de fondo en el editor de formularios</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#incluir-el-tipo-de-pregunta-de-audio-de-fondo-en-xlsform">Incluir el tipo de pregunta de audio de fondo en XLSForm</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#establecer-una-calidad-de-audio-apropiada">Establecer una calidad de audio apropiada</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#recolectar-audio-de-fondo-con-la-aplicacion-de-android-de-kobocollect">Recolectar audio de fondo con la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ver-archivos-de-audio-que-fueron-grabados-como-audio-de-fondo">Ver archivos de audio que fueron grabados como audio de fondo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#descargar-archivos-de-audio">Descargar archivos de audio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#consideraciones-eticas">Consideraciones éticas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Recolectar datos cualitativos con KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#tipos-de-preguntas-para-la-recoleccion-de-datos-cualitativos">Tipos de preguntas para la recolección de datos cualitativos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recolectar-datos-cualitativos-con-kobocollect-vs-formularios-web">Recolectar datos cualitativos con KoboCollect vs formularios web</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#grabar-entrevistas-con-grabaciones-de-audio-de-fondo">Grabar entrevistas con grabaciones de audio de fondo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gestionar-y-analizar-datos-cualitativos">Gestionar y analizar datos cualitativos</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#solucion-de-problemas">Solución de problemas</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -534,7 +475,7 @@ a descargar archivos multimedia grandes del sistema.</p></li>
   <script>
     window.docs = {
       currentPagename: "recording-interviews",
-      currentTitle: "Grabar una Entrevista Completa con la Grabación de Audio de Fondo",
+      currentTitle: "Recolectar datos cualitativos con KoboToolbox",
       currentUrl: ("index.html").replace("index.html", "recording-interviews.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

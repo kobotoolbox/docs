@@ -1,27 +1,19 @@
-# Búsqueda Avanzada en Colecciones Públicas
+# Búsqueda avanzada en Colecciones públicas
 
-**Última actualización:**
-<a href="https://github.com/kobotoolbox/docs/blob/a6ae76d4d566c1139914f03ba8452fdbf122cf11/source/public_collections_advanced_search.md" class="reference">4
-Mar 2021</a>
+**_Ten en cuenta que la función de búsqueda está en desarrollo y planeamos agregar una sintaxis más fácil de usar en versiones futuras._**
 
-**_Ten en cuenta que la capacidad de búsqueda es un trabajo en progreso, y planeamos
-agregar una sintaxis más fácil de usar en futuras versiones._**
+## Comportamiento de búsqueda predeterminado
 
-## El Comportamiento de Búsqueda Predeterminado
+Cuando ingresas un término en la barra de búsqueda sin especificar un campo, tu consulta devolverá resultados donde ese término, independientemente de las mayúsculas o minúsculas, se encuentre en:
 
-Cuando ingresas un término en la barra de búsqueda sin especificar un campo, tu consulta
-devolverá resultados donde ese término, independientemente de las mayúsculas, se pueda encontrar
-en:
-
--   El nombre de la encuesta, colección, pregunta, bloque o plantilla;
--   El nombre de usuario del/de la propietario/a;
+-   El nombre de la encuesta, recolección, pregunta, bloque o plantilla;
+-   El nombre de usuario del propietario;
 -   La descripción;
 -   El resumen, que contiene todas las etiquetas de preguntas e idiomas;
 -   El nombre de cualquier etiqueta asignada;
 -   El UID del objeto.
 
-Por ejemplo, una búsqueda predeterminada con el término: "_examples_", resultará en lo
-siguiente:
+Por ejemplo, una búsqueda predeterminada con el término: "_examples_", dará el siguiente resultado:
 
 ```
 name__icontains:examples OR owner__username__icontains:examples OR
@@ -31,31 +23,25 @@ tags__name__icontains:examples OR uid__icontains:examples
 
 ![examples](/images/public_collections_advanced_search/advanced_search_1.png)
 
-## Operadores de Campo de Búsqueda Válidos
+## Operadores válidos para campos de búsqueda
 
-El operador de campo es el valor después del último guion bajo doble en el campo
-de búsqueda, es decir, `__icontains`.
+El operador de campo es el valor que aparece después del último doble guión bajo en el campo de búsqueda, es decir, `__icontains`.
 
--   Para búsquedas de **texto** _sensibles a mayúsculas_, se pueden usar los siguientes operadores:
-    `contains`, `exact`, `startswith`
--   Para búsquedas de **texto** _insensibles a mayúsculas_: `icontains`, `iexact`,
-    `istartswith`
--   Para búsqueda **numérica**, los siguientes operadores son válidos: `exact`, `lt`,
-    `lte`, `gt`, `gte`
+-   Para búsquedas de **texto** que _distinguen entre mayúsculas y minúsculas_, se pueden usar los siguientes operadores: `contains`, `exact`, `startswith`
+-   Para búsquedas de **texto** que _no distinguen entre mayúsculas y minúsculas_: `icontains`, `iexact`, `istartswith`
+-   Para búsquedas **numéricas**, los siguientes operadores son válidos: `exact`, `lt`, `lte`, `gt`, `gte`
 
-Ten en cuenta que por defecto se establece el operador `exact`, por lo tanto `name:foo` es
-equivalente a `name__exact:foo`
+Ten en cuenta que, de forma predeterminada, el operador `exact` está configurado, por lo que `name:foo` es equivalente a `name__exact:foo`.
 
-## Comprender la Sintaxis del Campo de Búsqueda
+## Entender la sintaxis de los campos de búsqueda
 
-La sintaxis de guion bajo doble imita el comportamiento de
-[la sintaxis de filtrado de objetos de Django](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields)
-y permite recorrer relaciones de objetos relacionados y jerarquías JSON,
-como las que se ven en el endpoint:
+La sintaxis de doble guión bajo imita el comportamiento de la
+[sintaxis de filtrado de objetos de Django](https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields)
+y permite recorrer relaciones entre objetos relacionados y jerarquías JSON, como las que se encuentran en el endpoint:
 
 `https://kf.kobotoolbox.org/api/v2/assets/`
 
-Por ejemplo, si un activo tiene la siguiente configuración:
+Por ejemplo, si un recurso tiene la siguiente configuración:
 
 ```
 {
@@ -72,7 +58,7 @@ Por ejemplo, si un activo tiene la siguiente configuración:
 }
 ```
 
-El objeto se podría buscar a través de los siguientes métodos:
+El objeto se puede buscar mediante los siguientes métodos:
 
 ```
 settings__country__value:USA
@@ -80,7 +66,7 @@ settings__country__value:USA
 
 ![examples](/images/public_collections_advanced_search/advanced_search_2.png)
 
-O de manera más amplia:
+O de forma más flexible:
 
 ```
 settings__country__value__icontains:usa
@@ -88,11 +74,10 @@ settings__country__value__icontains:usa
 
 ![examples](/images/public_collections_advanced_search/advanced_search_3.png)
 
-## Usar el Analizador de Consultas
+## Usar el analizador de consultas
 
-Finalmente, los campos de búsqueda descritos anteriormente se pueden combinar usando la
-sintaxis del [analizador de consultas](https://github.com/kobotoolbox/kpi#searching) para
-búsquedas más refinadas. Por ejemplo:
+Por último, los campos de búsqueda descritos anteriormente se pueden combinar usando la sintaxis del
+[analizador de consultas](https://github.com/kobotoolbox/kpi#searching) para realizar búsquedas más refinadas. Por ejemplo:
 
 ```
 owner__username__icontains:foo AND tags__name__icontains:bar

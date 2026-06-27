@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+
+<html lang="es" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Preparar tu formulario para el análisis de datos &#8212; documentación de KoboToolbox - </title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=d9a2d029" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=e77fa1ad" />
+    <script src="_static/documentation_options.js?v=e2bb6099"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/translations.js?v=f85f4cfb"></script>
+    <script src="_static/js/breadcrumbs.js?v=c8d147b4"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=1af9d801"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="Visualizar datos utilizando informes personalizados" href="creating_custom_reports.html" />
+    <link rel="prev" title="Análisis de datos con KoboToolbox" href="data_analysis.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://support.kobotoolbox.org/quick_start.html">Get started</a></li>
+      <li><a href="https://academy.kobotoolbox.org">Academy</a></li>
+      <li><a href="https://community.kobotoolbox.org">Community Forum</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our Community Forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="preparing_for_analysis">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="preparar-tu-formulario-para-el-analisis-de-datos">
+<h1>Preparar tu formulario para el análisis de datos<a class="headerlink" href="#preparar-tu-formulario-para-el-analisis-de-datos" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6e9f496956ced232adb4985272fbee0a6465318d/source/preparing_for_analysis.md" class="reference">15 Jun 2026</a></p>
+<p>Muchos problemas de calidad de datos no comienzan durante el análisis, sino durante la recolección de datos. Las decisiones que se toman al elaborar un formulario, como la estructura de las preguntas, los nombres de las opciones de respuesta y el manejo de los datos faltantes, pueden afectar la cantidad de limpieza y preparación que se necesitará más adelante.</p>
+<p>KoboToolbox incluye varias herramientas que <strong>apoyan la recolección de datos de alta calidad</strong> y ayudan a preparar tus datos para el análisis a largo plazo.</p>
+<p>Este artículo cubre recomendaciones para <strong>diseñar formularios que produzcan datos más limpios y consistentes</strong>, desde el uso de la lógica de formularios y los cálculos hasta la planificación de los nombres de preguntas y opciones de respuesta, y la descarga de tu XLSForm como diccionario de datos.</p>
+<section id="recolectar-datos-coherentes-y-consistentes">
+<h2>Recolectar datos coherentes y consistentes<a class="headerlink" href="#recolectar-datos-coherentes-y-consistentes" title="Link to this heading">¶</a></h2>
+<p>Una de las formas más efectivas de mejorar tu análisis es prevenir errores durante la recolección de datos. KoboToolbox incluye funcionalidades de lógica de formularios que pueden ayudarte a recolectar respuestas más precisas y consistentes.</p>
+<section id="criterios-de-validacion">
+<h3>Criterios de validación<a class="headerlink" href="#criterios-de-validacion" title="Link to this heading">¶</a></h3>
+<p>Los <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#validation-criteria">criterios de validación</a> ayudan a garantizar que los encuestados proporcionen respuestas válidas. Por ejemplo, puedes usar criterios de validación para:</p>
+<ul class="simple">
+<li><p>Restringir la edad a valores realistas</p></li>
+<li><p>Evitar que las fechas de nacimiento se ingresen en el futuro</p></li>
+<li><p>Requerir que los números de teléfono sigan un formato específico</p></li>
+</ul>
+<p>Los criterios de validación son especialmente útiles para preguntas cuyas respuestas deben estar dentro de un rango específico o seguir un formato predecible.</p>
+</section>
+<section id="logica-de-omision">
+<h3>Lógica de omisión<a class="headerlink" href="#logica-de-omision" title="Link to this heading">¶</a></h3>
+<p>La <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#skip-logic">lógica de omisión</a> ayuda a garantizar que los encuestados solo vean las preguntas que son relevantes para ellos. Por ejemplo, un encuestado que indica que nunca ha estado embarazado no debería ver preguntas sobre embarazos anteriores.</p>
+<p>Hacer las preguntas correctas a las personas correctas mejora la calidad de los datos y reduce la carga sobre los encuestados. También reduce la cantidad de limpieza o eliminación de datos que se necesita más adelante.</p>
+<p class="note">
+  Para obtener más información sobre la lógica de formularios, consulta <a href="https://support.kobotoolbox.org/es/form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a>.
+</p>
+</section>
+</section>
+<section id="anticipar-el-formato-de-tus-exportaciones-de-datos">
+<h2>Anticipar el formato de tus exportaciones de datos<a class="headerlink" href="#anticipar-el-formato-de-tus-exportaciones-de-datos" title="Link to this heading">¶</a></h2>
+<p>La forma en que defines los <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#data-column-name">nombres de las preguntas</a> y los <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#xml-value">nombres de las opciones de respuesta</a> afecta la facilidad con la que puedes trabajar con tus datos después de exportarlos. Los <strong>nombres de las preguntas</strong> se convierten en nombres de columnas en tu conjunto de datos exportado, mientras que los <strong>nombres de las opciones de respuesta</strong> representan los valores de respuesta para las preguntas de selección.</p>
+<p>Para obtener mejores resultados, sigue las recomendaciones a continuación.</p>
+<section id="usa-un-formato-claro">
+<h3>Usa un formato claro<a class="headerlink" href="#usa-un-formato-claro" title="Link to this heading">¶</a></h3>
+<p>Usa nombres de preguntas y opciones de respuesta que sean cortos, informativos, únicos y sin espacios ni caracteres especiales (por ejemplo, <code class="docutils literal notranslate"><span class="pre">age</span></code>, <code class="docutils literal notranslate"><span class="pre">sex</span></code> o <code class="docutils literal notranslate"><span class="pre">district</span></code>).</p>
+<p>Los nombres claros hacen que tus datos exportados sean más fáciles de leer, procesar y analizar en herramientas externas.</p>
+</section>
+<section id="manten-los-nombres-consistentes">
+<h3>Mantén los nombres consistentes<a class="headerlink" href="#manten-los-nombres-consistentes" title="Link to this heading">¶</a></h3>
+<p>Mantén los nombres de preguntas y opciones de respuesta consistentes en todos los formularios siempre que sea posible. Si varias encuestas recolectan la misma información, <strong>usar los mismos nombres de variables</strong> facilita la combinación y comparación de conjuntos de datos.</p>
+<ul class="simple">
+<li><p>Por ejemplo, si un formulario usa <code class="docutils literal notranslate"><span class="pre">district</span></code> y otro usa <code class="docutils literal notranslate"><span class="pre">location_district</span></code> para el mismo tipo de información, es posible que necesites cambiar el nombre de las variables antes de combinar los conjuntos de datos.</p></li>
+</ul>
+<p>Del mismo modo, usar <strong>nombres de opciones de respuesta</strong> estándar facilita el análisis y reduce la necesidad de recodificar datos más adelante.</p>
+<ul class="simple">
+<li><p>Por ejemplo, puedes usar <code class="docutils literal notranslate"><span class="pre">0</span></code> para «No» y <code class="docutils literal notranslate"><span class="pre">1</span></code> para «Sí» en todas las preguntas relevantes de tu formulario.</p></li>
+</ul>
+</section>
+<section id="evita-cambiar-los-nombres-despues-de-iniciar-la-recoleccion-de-datos">
+<h3>Evita cambiar los nombres después de iniciar la recolección de datos<a class="headerlink" href="#evita-cambiar-los-nombres-despues-de-iniciar-la-recoleccion-de-datos" title="Link to this heading">¶</a></h3>
+<p>Una vez que la recolección de datos ha comenzado, <strong>evita modificar los nombres de las preguntas o de las opciones de respuesta.</strong> Cambiarlos puede crear inconsistencias entre los envíos existentes y los nuevos.</p>
+<p>Si necesitas actualizar las etiquetas que se muestran a los encuestados, edita la etiqueta de la pregunta pero mantén el nombre de la pregunta igual siempre que sea posible.</p>
+<p class="note">
+  Para obtener más información, consulta <a href="https://support.kobotoolbox.org/es/deploy_form_new_project.html#best-practices-for-deploying-and-redeploying-forms">Buenas prácticas para implementar y volver a implementar formularios</a>.
+</p>
+</section>
+<section id="usa-prefijos-y-sufijos">
+<h3>Usa prefijos y sufijos<a class="headerlink" href="#usa-prefijos-y-sufijos" title="Link to this heading">¶</a></h3>
+<p>Cuando los formularios contienen variables relacionadas, las convenciones de nomenclatura consistentes pueden ayudar a organizar tus datos. Considera <strong>usar un prefijo o sufijo</strong> para las preguntas u opciones de respuesta relacionadas con el mismo tema o formato.</p>
+<p>Por ejemplo:</p>
+<ul class="simple">
+<li><p>Usa <code class="docutils literal notranslate"><span class="pre">household_</span></code> para preguntas relacionadas con el hogar, como <code class="docutils literal notranslate"><span class="pre">household_size</span></code> o <code class="docutils literal notranslate"><span class="pre">household_income</span></code></p></li>
+<li><p>Usa <code class="docutils literal notranslate"><span class="pre">_other</span></code> para preguntas de «Otro, especifica», como <code class="docutils literal notranslate"><span class="pre">income_source_other</span></code></p></li>
+</ul>
+<p class="note">
+<strong>Nota:</strong>
+  Los nombres de las preguntas y opciones de respuesta son los mismos en todos los idiomas del formulario. Esto facilita el análisis de datos multilingües después de la exportación.
+</p>
+</section>
+</section>
+<section id="anticipar-las-necesidades-del-analisis">
+<h2>Anticipar las necesidades del análisis<a class="headerlink" href="#anticipar-las-necesidades-del-analisis" title="Link to this heading">¶</a></h2>
+<p>Al diseñar un formulario, piensa en los análisis que podrías querer realizar más adelante. Planificar con anticipación puede reducir la cantidad de procesamiento necesario después de la exportación.</p>
+<section id="usa-calculos-para-las-variables-de-analisis">
+<h3>Usa cálculos para las variables de análisis<a class="headerlink" href="#usa-calculos-para-las-variables-de-analisis" title="Link to this heading">¶</a></h3>
+<p>Los <a class="reference external" href="https://support.kobotoolbox.org/es/glossary.html#calculation">cálculos</a> pueden crear variables que de otro modo requerirían procesamiento adicional después de la exportación. Por ejemplo, puedes usar cálculos para crear:</p>
+<ul class="simple">
+<li><p>La edad del encuestado a partir de la fecha de nacimiento</p></li>
+<li><p>Totales del tamaño del hogar</p></li>
+<li><p>Índice de masa corporal (IMC)</p></li>
+<li><p>Puntajes o indicadores basados en varias respuestas</p></li>
+</ul>
+<p>Crear estas variables durante la recolección de datos puede ahorrar tiempo y mejorar la consistencia entre los análisis.</p>
+<p class="note">
+  Para obtener más información sobre cómo agregar cálculos, consulta <a href="https://support.kobotoolbox.org/es/calculate_questions.html">Agregar cálculos con el Formbuilder</a>.
+</p>
+</section>
+<section id="planifica-los-datos-faltantes">
+<h3>Planifica los datos faltantes<a class="headerlink" href="#planifica-los-datos-faltantes" title="Link to this heading">¶</a></h3>
+<p>Al analizar datos, es importante saber <strong>por qué falta información.</strong> Una respuesta puede faltar porque la pregunta fue omitida, la información no estaba disponible, no se recordaba, no era aplicable o fue deliberadamente retenida.</p>
+<p>Una buena práctica común es <a class="reference external" href="https://support.kobotoolbox.org/es/question_options.html#mandatory-response">hacer las preguntas obligatorias</a> y al mismo tiempo proporcionar opciones de respuesta explícitas, como:</p>
+<ul class="simple">
+<li><p>Prefiero no responder</p></li>
+<li><p>No sé</p></li>
+<li><p>No recuerdo</p></li>
+<li><p>No aplica</p></li>
+</ul>
+<p>Esto ayuda a reducir los datos faltantes sin explicación y facilita la interpretación de los resultados durante el análisis.</p>
+</section>
+<section id="minimiza-las-respuestas-de-texto-abierto">
+<h3>Minimiza las respuestas de texto abierto<a class="headerlink" href="#minimiza-las-respuestas-de-texto-abierto" title="Link to this heading">¶</a></h3>
+<p>Las <strong>respuestas de texto abierto</strong> suelen ser difíciles de analizar. Cuando sea posible, usa tipos de preguntas estructuradas en su lugar:</p>
+<ul class="simple">
+<li><p>Usa <a class="reference external" href="https://support.kobotoolbox.org/es/select_one_and_select_many.html">preguntas de opción múltiple</a> cuando las respuestas se puedan estandarizar en opciones predefinidas.</p></li>
+<li><p>Usa <a class="reference external" href="https://support.kobotoolbox.org/es/date_time.html">preguntas de fecha</a> cuando recolectes fechas del calendario.</p></li>
+<li><p>Usa <a class="reference external" href="https://support.kobotoolbox.org/es/gps_questions.html">preguntas GPS</a> o <a class="reference external" href="https://support.kobotoolbox.org/es/cascading_select.html">preguntas de selección en cascada</a> cuando recolectes información de ubicación.</p></li>
+</ul>
+<p>Reserva las preguntas de texto para información que no pueda estandarizarse de manera razonable.</p>
+</section>
+</section>
+<section id="usa-tu-xlsform-como-diccionario-de-datos">
+<h2>Usa tu XLSForm como diccionario de datos<a class="headerlink" href="#usa-tu-xlsform-como-diccionario-de-datos" title="Link to this heading">¶</a></h2>
+<p>El <a class="reference external" href="https://support.kobotoolbox.org/es/edit_forms_excel.html">XLSForm</a> de tu formulario KoboToolbox puede servir como diccionario de datos. Documenta la estructura del formulario, los nombres de las preguntas, los nombres de las opciones de respuesta, las etiquetas, las traducciones, los tipos de preguntas y la lógica del formulario.</p>
+<p>Para descargar el XLSForm de tu formulario:</p>
+<ol class="arabic simple">
+<li><p>Abre tu proyecto.</p></li>
+<li><p>Ve a <strong>FORMULARIO.</strong></p></li>
+<li><p>Haz clic en <i class="k-icon-more"></i> <strong>Otras acciones.</strong></p></li>
+<li><p>Haz clic en <i class="k-icon-file-xls"></i> <strong>Descargar XLS.</strong></p></li>
+</ol>
+<p>Cada fila de la hoja <code class="docutils literal notranslate"><span class="pre">survey</span></code> representa una pregunta de tu formulario, y cada columna proporciona información sobre esa pregunta, como el nombre de la pregunta, la etiqueta, el tipo, las traducciones y la lógica del formulario relevante. Para las preguntas de selección, las <a class="reference external" href="https://support.kobotoolbox.org/es/option_choices_xls.html">opciones de respuesta</a> se encuentran en la hoja <code class="docutils literal notranslate"><span class="pre">choices</span></code>.</p>
+<p>Mantener tu XLSForm junto con tu conjunto de datos exportado puede facilitar la interpretación de las variables, la comprensión de los valores de respuesta y la documentación de tu flujo de trabajo de análisis.</p>
+<p class="note">
+  Para obtener más información sobre XLSForm, consulta <a href="https://support.kobotoolbox.org/es/getting_started_xlsform.html">Crear un XLSForm</a> y <a href="https://support.kobotoolbox.org/es/xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a>.
+</p></section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+
+        <div class="page__back-to-top-container">
+          <a href="#top" class="page__back-to-top">Back to top</a>
+        </div>
+        
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Preparar tu formulario para el análisis de datos"
+              class="feedback-button"
+              target="_blank"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Preparar tu formulario para el análisis de datos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#recolectar-datos-coherentes-y-consistentes">Recolectar datos coherentes y consistentes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anticipar-el-formato-de-tus-exportaciones-de-datos">Anticipar el formato de tus exportaciones de datos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#anticipar-las-necesidades-del-analisis">Anticipar las necesidades del análisis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usa-tu-xlsform-como-diccionario-de-datos">Usa tu XLSForm como diccionario de datos</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
+</ul>
+
+</div>
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Community Forum</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+
+   
+        <br><br>
+  
+
+  <div class="wrapper">
+    <h1>KoboToolbox Academy</h1>
+
+    <p>KoboToolbox Academy offers high quality self-paced courses, created by KoboToolbox experts.</p>
+
+    <a class="button" href="https://academy.kobotoolbox.org">
+      Visit the KoboToolbox Academy
+      
+    </a>
+  </div>
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+    <p>KoboToolbox is maintained by <a class="inline" href="https://www.kobotoolbox.org/about-us/">Kobo Inc.</a></p>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+  <script>
+    window.docs = {
+      currentPagename: "preparing_for_analysis",
+      currentTitle: "Preparar tu formulario para el análisis de datos",
+      currentUrl: ("index.html").replace("index.html", "preparing_for_analysis.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+    };
+  </script>
+  </body>
+</html>

@@ -1,15 +1,19 @@
-# Migración de la API v1 a v2
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/e3ce02358a9ac8e0298d590fee68b0508734e899/source/migrating_api.md" class="reference">25 mayo 2026</a>
+# Migración de API v1 a API v2
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/235a3cc8f0f84190b5e792cf191b424123e88f46/source/migrating_api.md" class="reference">22 Jun 2026</a>
 
 
-Como parte de nuestros esfuerzos continuos para optimizar y modernizar la plataforma KoboToolbox, estamos eliminando gradualmente los endpoints `v1` de KPI y KoboCAT. Todos los endpoints `v1` de KPI y KoboCAT están ahora obsoletos y se eliminarán por completo en junio de 2026. Los endpoints `v1` están siendo reemplazados por la API KPI `v2`, que es más robusta y cuenta con soporte completo.
+Como parte de nuestros esfuerzos continuos para simplificar y modernizar la plataforma KoboToolbox, todos los endpoints `v1` de KPI y KoboCAT han sido eliminados. Los endpoints `v1` han sido reemplazados por la API KPI `v2`, más robusta y con soporte completo.
 
-Este artículo explica cómo migrar tus integraciones de API desde la API `v1` (KoboCAT y KPI) a la API KPI `v2`. Cubre cada endpoint `v1` obsoleto y su equivalente en `v2` para ayudarte a realizar la transición de tus flujos de trabajo.
+Este artículo explica cómo migrar tus integraciones de API de la API `v1` (KoboCAT y KPI) a la API KPI `v2`. Cubre cada endpoint `v1` obsoleto y su equivalente en `v2` para ayudarte a realizar la transición de tus flujos de trabajo.
+
+<p class="note">
+  <strong>Nota:</strong> Este artículo está dirigido a <strong>usuarios avanzados</strong> que utilizan la API de KoboToolbox para <strong>flujos de trabajo de gestión de proyectos</strong>. El resto de los usuarios no se ven afectados por esta migración. Las integraciones que utilizan <a href="https://support.kobotoolbox.org/es/synchronous_exports.html">exportaciones sincrónicas</a>, como paneles de control y otras herramientas de informes externos, no requieren ningún cambio y seguirán funcionando con normalidad.
+</p>
 
 
 ## Autenticación
 
-Todas las solicitudes a la API — v1 y v2 — requieren un token de API. Inclúyelo en cada solicitud mediante el encabezado `Authorization`:
+Todas las solicitudes de API — v1 y v2 — requieren un token de API. Inclúyelo en cada solicitud usando el encabezado `Authorization`:
 
 ```
 Authorization: Token xxxx
@@ -50,29 +54,31 @@ data <- content(response, as = "parsed")
 ```
 
 <p class="note">
-  <b>Nota:</b> El encabezado de autenticación es el mismo en todas las versiones de la API. Lo que cambia depende de tu ruta de migración: si estás migrando de <strong>KPI v1 a KPI v2</strong>, solo necesitas actualizar la ruta URL. Si estás migrando de <strong>KoboCAT v1 a KPI v2</strong>, también deberás actualizar el dominio base (<code>kc.kobotoolbox.org</code> → <code>kf.kobotoolbox.org</code>), las rutas de los endpoints y adaptar tu código para manejar la nueva estructura de respuesta y los nuevos nombres de campos — consulta las secciones a continuación.
+  <strong>Nota:</strong> El encabezado de autenticación es el mismo en todas las versiones de la API. Lo que cambia depende de la ruta de migración que sigas: si estás migrando de <strong>KPI v1 a KPI v2</strong>, solo necesitas actualizar la ruta de la URL. Si estás migrando de <strong>KoboCAT v1 a KPI v2</strong>, también deberás actualizar el dominio base (<code>kc.kobotoolbox.org</code> → <code>kf.kobotoolbox.org</code>), las rutas de los endpoints y adaptar tu código para manejar la nueva estructura de respuesta y los nombres de los campos — consulta las secciones a continuación.
 </p>
 
 
 ## Migración de KPI v1 a KPI v2
-La migración de la API KPI antigua (`v1`) a la nueva versión (`v2`) es sencilla en la mayoría de los casos.
+Migrar de la versión anterior de la API KPI (`v1`) a la nueva versión (`v2`) es sencillo en la mayoría de los casos.
 
 En general, solo necesitas actualizar la ruta base de `/endpoint/` a `/api/v2/endpoint/`.
 
 ### Excepciones
 Hay dos excepciones a la regla anterior.
 
-#### Excepción para el endpoint de exportaciones
-En `v1`, el endpoint `/exports/` devolvía **todas las exportaciones del/de la usuario/a autenticado/a** en todos los proyectos.
+**Excepción para el endpoint de exportaciones**
+
+En `v1`, el endpoint `/exports/` devolvía **todas las exportaciones del usuario autenticado** en todos los proyectos.
 
 En `v2`, por razones de rendimiento, las exportaciones ahora están **limitadas por proyecto** y deben accederse a través de `/api/v2/assets/{asset_uid}/exports/`.
 
-#### Excepción para el endpoint de envíos (submissions)
+**Excepción para el endpoint de envíos**
+
 El endpoint `/assets/{asset_uid}/submissions/` ha sido **renombrado** en `v2`. Además de actualizar la ruta base, también debes cambiar el nombre del endpoint de `submissions` a `data`:
 
-| Endpoint `v1`                               | Equivalente `v2`                               |
-|---------------------------------------------|------------------------------------------------|
-| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`             |
+| Endpoint `v1`                               | Equivalente en `v2`                                 |
+|---------------------------------------------|-----------------------------------------------------|
+| `/assets/{asset_uid}/submissions/`          | `/api/v2/assets/{asset_uid}/data/`                  |
 | `/assets/{asset_uid}/submissions/{id}/`     | `/api/v2/assets/{asset_uid}/data/{id}/`<sup>1</sup> |
 
 <sup>1</sup> `{id}` puede ser el identificador entero del envío o su `root_uuid`.
@@ -83,18 +89,18 @@ El endpoint `/assets/{asset_uid}/submissions/` ha sido **renombrado** en `v2`. A
 La siguiente sección enumera los principales endpoints de la API KoboCAT `v1` y proporciona sus equivalentes en `v2`.
 
 ### Endpoints de datos: Lista de proyectos
-Este endpoint devuelve una lista de formularios a los que tienes acceso, con enlaces a sus datos de envío, sirviendo como punto de entrada para acceder o descargar respuestas.
+Este endpoint devuelve una lista de formularios a los que tienes acceso, con enlaces a sus datos de envío, y sirve como punto de entrada para acceder o descargar respuestas.
 
 **Mapeo de endpoints de `v1` a `v2`**
 
-| Endpoint `v1`    | Equivalente `v2`        |
+| Endpoint `v1`    | Equivalente en `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/data`          | `/api/v2/assets/?asset_type=survey`  |
 
 
 **Mapeo de campos de `v1` a `v2`**
 
-| Campo `v1`    | Equivalente `v2`        |
+| Campo `v1`    | Equivalente en `v2`        |
 | ------------- | ---------------------- |
 | `id`          | `uid`<sup>1</sup>      |
 | `id_string`   | `uid`                  |
@@ -102,10 +108,10 @@ Este endpoint devuelve una lista de formularios a los que tienes acceso, con enl
 | `description` | `settings.description` |
 | `url`         | `data`                 |
 
-<sup>1</sup> _En el endpoint `/api/v2/assets`, ya no se utilizan identificadores enteros secuenciales. Cada entrada se identifica de forma única mediante un `uid` alfanumérico_
+<sup>1</sup> _En el endpoint `/api/v2/assets`, los identificadores enteros secuenciales ya no se utilizan. Cada entrada se identifica de forma única mediante un `uid` alfanumérico._
 
 
-#### Ejemplos de código
+**Ejemplos de código**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -176,7 +182,7 @@ for (p in projects) {
 ```
 </details>
 
-#### Ejemplos de respuestas
+**Ejemplos de respuesta**
 
 <details>
 <summary><strong>Respuesta v1</strong></summary>
@@ -193,7 +199,7 @@ for (p in projects) {
 </details>
 
 <details>
-<summary><strong>Equivalente v2</strong></summary>
+<summary><strong>Equivalente en v2</strong></summary>
 
 ```json
 {
@@ -211,23 +217,23 @@ for (p in projects) {
 
 ---
 
-### Endpoints de datos: Datos de envío
+### Endpoints de datos: Datos de envíos
 Estos endpoints recuperan todos los datos de envío de un proyecto específico o un único envío del proyecto. `{uid}` es el identificador único del proyecto y `{submission_id}` es el identificador único de un envío de formulario.
 
-| Endpoint `v1`    | Equivalente `v2`        |
+| Endpoint `v1`    | Equivalente en `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/data/<pk>`   | `/api/v2/assets/{uid}/data/` |
 | `/api/v1/data/<pk>/<dataid>`       | `/api/v2/assets/{uid}/data/{submission_id}/`                 |
 
-Basándote en la `url` que obtienes de la propiedad `data` en el endpoint del asset, puedes obtener los datos de envío en `v2`.
+A partir de la `url` que obtienes de la propiedad `data` en el endpoint del recurso, puedes obtener los datos de envío en `v2` de la siguiente manera.
 
 <p class="note">
-  <b>Nota:</b> La estructura de respuesta es casi la misma, <strong>excepto que <code>v2</code> introduce paginación</strong>. Si tienes más de 1.000 envíos, deberás seguir la URL <code>next</code> para recuperar las páginas siguientes.
+  <strong>Nota:</strong> La estructura de la respuesta es prácticamente la misma, <strong>excepto que <code>v2</code> introduce paginación</strong>. Si tienes más de 1.000 envíos, deberás seguir la URL <code>next</code> para recuperar las páginas siguientes.
 </p>
 
-#### Ejemplos de código
+**Ejemplos de código**
 
-Reemplaza `a4etXeWtqcoodSxLV8a6Uq` con el `uid` de tu proyecto (consulta el [endpoint de lista de proyectos](#endpoints-de-datos-lista-de-proyectos) arriba).
+Reemplaza `a4etXeWtqcoodSxLV8a6Uq` con el `uid` de tu proyecto (consulta el [endpoint de lista de proyectos](#data-endpoints-project-list) anterior).
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -259,7 +265,7 @@ headers = {"Authorization": f"Token {TOKEN}"}
 # response = requests.get("https://kc.kobotoolbox.org/api/v1/data/474", headers=headers)
 # submissions = response.json()  # devolvía una lista plana
 
-# v2 — resultados paginados
+# v2 — los resultados están paginados
 url = f"https://kf.kobotoolbox.org/api/v2/assets/{ASSET_UID}/data/"
 all_submissions = []
 
@@ -270,7 +276,7 @@ while url:
     all_submissions.extend(page["results"])
     url = page["next"]  # None cuando no hay más páginas
 
-print(f"Total de envíos: {len(all_submissions)}")
+print(f"Total submissions: {len(all_submissions)}")
 ```
 </details>
 
@@ -301,11 +307,11 @@ repeat {
   url <- page$`next`
 }
 
-cat("Total de envíos:", length(all_submissions), "\n")
+cat("Total submissions:", length(all_submissions), "\n")
 ```
 </details>
 
-#### Ejemplos de respuestas
+**Ejemplos de respuesta**
 
 <details>
 <summary><strong>Respuesta v1</strong></summary>
@@ -321,7 +327,7 @@ cat("Total de envíos:", length(all_submissions), "\n")
 </details>
 
 <details>
-<summary><strong>Equivalente v2</strong></summary>
+<summary><strong>Equivalente en v2</strong></summary>
 
 ```json
 {
@@ -342,24 +348,24 @@ cat("Total de envíos:", length(all_submissions), "\n")
 
 
 ### Endpoints de formularios
-Estos endpoints devuelven atributos detallados de todos los formularios compartidos contigo o sobre un formulario específico, donde `{uid}` es el identificador único del proyecto.
+Estos endpoints devuelven atributos detallados de todos los formularios compartidos contigo o de un formulario específico, donde `{uid}` es el identificador único del proyecto.
 
 **Mapeo de endpoints**
 
-| Endpoint `v1`    | Equivalente `v2`        |
+| Endpoint `v1`    | Equivalente en `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/forms`   | `/api/v2/assets/?asset_type=survey` |
 | `/api/v1/forms/<pk>`       | `/api/v2/assets/{asset_uid}/`                 |
 
 
 <p class="note">
-  <b>Nota:</b> El endpoint <code>v2</code> sigue la misma estructura para cada elemento como se enumera a continuación, pero introduce paginación. Algunas propiedades del endpoint <code>v1</code> no están disponibles directamente en el endpoint <code>v2</code> del asset, pero aún se pueden acceder de manera diferente (consulta la leyenda debajo de la tabla para más detalles).
+  <strong>Nota:</strong> El endpoint <code>v2</code> sigue la misma estructura para cada elemento que se detalla a continuación, pero introduce paginación. Algunas propiedades del endpoint <code>v1</code> no están disponibles directamente en el endpoint de recursos <code>v2</code>, pero aún se puede acceder a ellas de otra manera (consulta la leyenda debajo de la tabla para más detalles).
 </p>
 
 
 **Mapeo de campos**
 
-| Campo `v1`                 | Equivalente `v2`                          |
+| Campo `v1`                 | Equivalente en `v2`                          |
 |----------------------------|------------------------------------------|
 | `formid`                   | `uid`<sup>1</sup>                        |
 | `owner`                    | `owner__username`                        |
@@ -379,12 +385,12 @@ Estos endpoints devuelven atributos detallados de todos los formularios comparti
 | `num_of_submissions`       | `deployment__submission_count`           |
 | `attachment_storage_bytes` | _N/A_<sup>4</sup>                        |
 
-<sup>1</sup> _En el endpoint `/api/v2/assets`, ya no se utilizan identificadores enteros secuenciales. Cada entrada se identifica de forma única mediante un `uid` alfanumérico_.
+<sup>1</sup> _En el endpoint `/api/v2/assets`, los identificadores enteros secuenciales ya no se utilizan. Cada entrada se identifica de forma única mediante un `uid` alfanumérico._
 <sup>2</sup> _En `v1`, las etiquetas se devolvían como un array; en `v2`, se devuelven como una cadena separada por comas._
-<sup>3</sup> _Estos campos ya no están expuestos. Consulta la sección **Permisos** a continuación para más detalles._
-<sup>4</sup> _No es directamente accesible a través del endpoint del asset. Usa el endpoint `/api/v2/asset_usage/` y recupera el campo `storage_bytes` del proyecto correspondiente._
+<sup>3</sup> _Estos campos ya no están disponibles. Consulta la sección **Permisos** a continuación para más detalles._
+<sup>4</sup> _No es accesible directamente a través del endpoint de recursos. Usa el endpoint `/api/v2/asset_usage/` y recupera el campo `storage_bytes` del proyecto correspondiente._
 
-#### Ejemplos de código
+**Ejemplos de código**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -467,7 +473,7 @@ cat(form$tag_string)                     # era: paste(form$tags, collapse = ", "
 ```
 </details>
 
-#### Ejemplos de respuestas
+**Ejemplos de respuesta**
 
 <details>
 <summary><strong>Ejemplo de respuesta <code>v1</code></strong></summary>
@@ -516,7 +522,7 @@ cat(form$tag_string)                     # era: paste(form$tags, collapse = ", "
 
 
 <details>
-<summary><strong>Respuesta equivalente <code>v2</code></strong></summary>
+<summary><strong>Respuesta equivalente en <code>v2</code></strong></summary>
 <br>
 
 ```json
@@ -595,14 +601,14 @@ cat(form$tag_string)                     # era: paste(form$tags, collapse = ", "
 <a id="tags"></a>
 **Etiquetas**
 
-Las etiquetas en `v1` y `v2` no comparten la misma base de datos subyacente. Como resultado, las etiquetas de `v1` **no se migrarán automáticamente** a `v2`. Si necesitas conservarlas, debes volver a aplicar las etiquetas manualmente usando una solicitud `PATCH` a `/api/v2/assets/{uid}/`.
+Las etiquetas en `v1` y `v2` no comparten la misma base de datos subyacente. Por lo tanto, las etiquetas de `v1` **no se migrarán automáticamente** a `v2`. Si necesitas conservarlas, debes volver a aplicarlas manualmente mediante una solicitud `PATCH` a `/api/v2/assets/{uid}/`.
 
 Ejemplo de payload:
 ```json
 { "tag_string": "tag1,tag2,tag3" }
 ```
 
-#### Ejemplos de código
+**Ejemplos de código**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -664,16 +670,16 @@ cat("Tags updated:", result$tag_string, "\n")
 
 **Permisos**
 
-En `v2`, los campos `public`, `public_data` y `require_auth` ya no están expuestos como atributos booleanos. En su lugar, **el acceso anónimo se controla mediante asignaciones de permisos explícitas al `AnonymousUser`**.
+En `v2`, los campos `public`, `public_data` y `require_auth` ya no están disponibles como atributos booleanos. En su lugar, **el acceso anónimo se controla mediante asignaciones de permisos explícitas al `AnonymousUser`**.
 
 Se aplican los siguientes mapeos:
 - `public: true` → el `AnonymousUser` tiene el permiso `view_asset`
 - `public_data: true` → el `AnonymousUser` tiene el permiso `view_submissions`
 - `require_auth: false` → el `AnonymousUser` tiene el permiso `add_submissions`
 
-Los permisos están disponibles en el endpoint de detalle del asset (`/api/v2/assets/{uid}/`) bajo la propiedad `permissions`.
+Los permisos están disponibles en el endpoint de detalle del recurso (`/api/v2/assets/{uid}/`) bajo la propiedad `permissions`.
 
-#### Ejemplos de código
+**Ejemplos de código**
 
 **Lectura de permisos**
 
@@ -703,9 +709,9 @@ response.raise_for_status()
 permissions = response.json()["permissions"]
 
 # Verificar qué permisos están asignados al AnonymousUser
-# (equivalente de los campos v1 public/public_data/require_auth)
+# (equivalente a los campos public/public_data/require_auth de v1)
 anon_permissions = [
-    p["permission"].split("/")[-2]  # extraer el codename del permiso desde la URL
+    p["permission"].split("/")[-2]  # extraer el nombre del permiso de la URL
     for p in permissions
     if p["user"].endswith("/AnonymousUser/")
 ]
@@ -739,13 +745,13 @@ for (p in anon_permissions) cat(p$label, "\n")
 
 **Asignación de permisos al AnonymousUser**
 
-Para replicar la configuración `public: true` de v1, envía un POST con una nueva asignación de permisos al endpoint `permission-assignments`.
+Para replicar la configuración `public: true` de v1, realiza una solicitud POST con una nueva asignación de permisos al endpoint `permission-assignments`.
 
 <details>
 <summary><strong>curl</strong></summary>
 
 ```bash
-# Otorgar a AnonymousUser view_asset (equivalente de v1 public: true)
+# Otorgar a AnonymousUser view_asset (equivalente a v1 public: true)
 curl -X POST \
   -H "Authorization: Token xxxx" \
   -H "Content-Type: application/json" \
@@ -765,7 +771,7 @@ ASSET_UID = "a4etXeWtqcoodSxLV8a6Uq"
 BASE_URL = "https://kf.kobotoolbox.org"
 headers = {"Authorization": f"Token {TOKEN}"}
 
-# Otorgar a AnonymousUser view_asset (equivalente de v1 public: true)
+# Otorgar a AnonymousUser view_asset (equivalente a v1 public: true)
 response = requests.post(
     f"{BASE_URL}/api/v2/assets/{ASSET_UID}/permission-assignments/",
     headers=headers,
@@ -791,7 +797,7 @@ ASSET_UID <- "a4etXeWtqcoodSxLV8a6Uq"
 BASE_URL <- "https://kf.kobotoolbox.org"
 headers <- add_headers(Authorization = paste("Token", TOKEN))
 
-# Otorgar a AnonymousUser view_asset (equivalente de v1 public: true)
+# Otorgar a AnonymousUser view_asset (equivalente a v1 public: true)
 response <- POST(
   paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/permission-assignments/"),
   headers,
@@ -806,10 +812,10 @@ cat("Permission assigned:", result$label, "\n")
 ```
 </details>
 
-#### Ejemplos de respuestas
+**Ejemplos de respuesta**
 
 <details>
-<summary><strong>Ejemplo: permisos de <code>v2</code> para el usuario anónimo</strong></summary>
+<summary><strong>Ejemplo: permisos de usuario anónimo en <code>v2</code></strong></summary>
 <br>
 
 ```json
@@ -841,31 +847,31 @@ cat("Permission assigned:", result$label, "\n")
 ---
 
 ### Endpoint de etiquetas
-El endpoint `/api/v1/forms/<pk>/labels` de `v1` devuelve un diccionario que mapea cada nombre de campo en el formulario a su etiqueta correspondiente, permitiendo una visualización más amigable de los datos del formulario.
+El endpoint `/api/v1/forms/<pk>/labels` de `v1` devuelve un diccionario que mapea cada nombre de campo del formulario a su etiqueta correspondiente, lo que permite mostrar los datos del formulario de forma más comprensible para el usuario.
 
-Este endpoint no se ha portado a `v2`, pero aún es posible **etiquetar** o **marcar** un proyecto, como se describe [arriba](#tags).
+Este endpoint no ha sido portado a `v2`, pero aún es posible **etiquetar** o **marcar** un proyecto, como se describe [anteriormente](#tags).
 
 ---
 
 ### Endpoints de metadatos
-Estos endpoints devuelven una lista plana de todos los archivos multimedia asociados con el/la usuario/a actual, en todos los proyectos desplegados o en un proyecto específico. En `v2`, los archivos multimedia ahora están limitados por proyecto. Al igual que con otros endpoints, `v2` introduce paginación, mientras que `v1` devuelve todos los resultados en una sola respuesta.
+Estos endpoints devuelven una lista plana de todos los archivos multimedia asociados al usuario actual, en todos los proyectos implementados o en un proyecto específico. En `v2`, los archivos multimedia ahora están limitados por proyecto. Al igual que con otros endpoints, `v2` introduce paginación, mientras que `v1` devuelve todos los resultados en una sola respuesta.
 
 **Mapeo de endpoints**
 
-| Endpoint `v1`    | Equivalente `v2`        |
+| Endpoint `v1`    | Equivalente en `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/metadata`   | `/api/v2/assets/{asset_uid}/files/` |
 | `/api/v1/metadata/<pk>`       | `/api/v2/assets/{asset_uid}/files/{file_uid}/`                 |
 
 
 <p class="note">
-  <b>Nota:</b> <code>v2</code> solo admite archivos multimedia: <code>media</code> de <code>v1</code> se mapea a <code>form_media</code> en <code>v2</code>. <strong>Otros tipos de metadatos</strong> de <code>v1</code> (por ejemplo, <code>doc</code>, <code>mapbox_layer</code>, <code>source</code>, etc.) no se han portado a <code>v2</code>.
+  <strong>Nota:</strong> <code>v2</code> solo admite archivos multimedia: <code>media</code> de <code>v1</code> se mapea a <code>form_media</code> en <code>v2</code>. <strong>Otros tipos de metadatos</strong> de <code>v1</code> (por ejemplo, <code>doc</code>, <code>mapbox_layer</code>, <code>source</code>, etc.) no han sido portados a <code>v2</code>.
 </p>
 
 
 **Mapeo de campos**
 
-| Campo `v1`        | Equivalente `v2`                        |
+| Campo `v1`        | Equivalente en `v2`                        |
 |-------------------|----------------------------------------|
 | `id`              | `uid`                                  |
 | `data_type`       | `file_type`                            |
@@ -879,7 +885,7 @@ Estos endpoints devuelven una lista plana de todos los archivos multimedia asoci
 
 <sup>1</sup> _En `v2`, el proyecto relacionado es accesible a través del campo `asset`, que contiene una URL completa en lugar de un ID entero._
 
-#### Ejemplos de código
+**Ejemplos de código**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -905,7 +911,7 @@ curl -H "Authorization: Token xxxx" \
      -H "Content-Type: application/json" \
   "https://kf.kobotoolbox.org/api/v2/assets/a4etXeWtqcoodSxLV8a6Uq/files/afoeCcF3AcGNpWUoM6bvKj9/"
 
-# v2 — subir un nuevo archivo multimedia
+# v2 — cargar un nuevo archivo multimedia
 curl -X POST \
   -H "Authorization: Token xxxx" \
   -F "file_type=form_media" \
@@ -940,7 +946,7 @@ files = response.json()["results"]
 for f in files:
     print(f["uid"], f["metadata"]["filename"])  # era: f["id"], f["data_filename"]
 
-# v2 — subir un nuevo archivo multimedia
+# v2 — cargar un nuevo archivo multimedia
 with open("/path/to/goose.jpg", "rb") as fh:
     upload = requests.post(
         f"{BASE_URL}/api/v2/assets/{ASSET_UID}/files/",
@@ -979,7 +985,7 @@ for (f in files) {
   cat(f$uid, f$metadata$filename, "\n")  # era: f$id, f$data_filename
 }
 
-# v2 — subir un nuevo archivo multimedia
+# v2 — cargar un nuevo archivo multimedia
 upload <- POST(
   paste0(BASE_URL, "/api/v2/assets/", ASSET_UID, "/files/"),
   headers,
@@ -992,7 +998,7 @@ cat("Uploaded:", content(upload, as = "parsed")$metadata$filename, "\n")
 ```
 </details>
 
-#### Ejemplos de respuestas
+**Ejemplos de respuesta**
 
 <details>
 <summary><strong>Respuesta v1</strong></summary>
@@ -1014,7 +1020,7 @@ cat("Uploaded:", content(upload, as = "parsed")$metadata$filename, "\n")
 </details>
 
 <details>
-<summary><strong>Equivalente v2</strong></summary>
+<summary><strong>Equivalente en v2</strong></summary>
 
 ```json
 {
@@ -1033,19 +1039,19 @@ cat("Uploaded:", content(upload, as = "parsed")$metadata$filename, "\n")
 
 ---
 
-### Endpoints de usuario/a
-Este endpoint devuelve información de perfil sobre el/la usuario/a autenticado/a, incluyendo la identidad de la cuenta y detalles asociados.
+### Endpoints de usuario
+Este endpoint devuelve información de perfil sobre el usuario autenticado, incluyendo la identidad de la cuenta y los detalles asociados.
 
 **Mapeo de endpoints**
 
-| Endpoint `v1`    | Equivalente `v2`        |
+| Endpoint `v1`    | Equivalente en `v2`        |
 | ------------- | ---------------------- |
 | `/api/v1/user`   | `/me/` |
 
 
 **Mapeo de campos**
 
-| Campo `v1`        | Equivalente `v2`                        |
+| Campo `v1`        | Equivalente en `v2`                        |
 |-------------------|----------------------------------------|
 | `id`              | `extra_details__uid`                                  |
 | `username`       | `username`                            |
@@ -1067,7 +1073,7 @@ Este endpoint devuelve información de perfil sobre el/la usuario/a autenticado/
 
 <sup>2</sup> _Usa https://kf.domain.tld/token en su lugar_
 
-#### Ejemplos de código
+**Ejemplos de código**
 
 <details>
 <summary><strong>curl</strong></summary>
@@ -1105,8 +1111,8 @@ response = requests.get(f"{BASE_URL}/me/", headers=headers)
 response.raise_for_status()
 user = response.json()
 
-print(user["username"])                        # igual que v1
-print(user["email"])                           # igual que v1
+print(user["username"])                        # igual que en v1
+print(user["email"])                           # igual que en v1
 print(user["extra_details"]["organization"])   # era: user["organization"]
 print(user["extra_details"]["country"])        # era: user["country"]
 print(user["extra_details__uid"])              # era: user["id"]
@@ -1131,15 +1137,15 @@ headers <- add_headers(Authorization = paste("Token", TOKEN))
 response <- GET(paste0(BASE_URL, "/me/"), headers)
 user <- content(response, as = "parsed")
 
-cat(user$username, "\n")                         # igual que v1
-cat(user$email, "\n")                            # igual que v1
+cat(user$username, "\n")                         # igual que en v1
+cat(user$email, "\n")                            # igual que en v1
 cat(user$extra_details$organization, "\n")       # era: user$organization
 cat(user$extra_details$country, "\n")            # era: user$country
 cat(user$extra_details__uid, "\n")               # era: user$id
 ```
 </details>
 
-#### Ejemplos de respuestas
+**Ejemplos de respuesta**
 
 <details>
 <summary><strong>Respuesta v1</strong></summary>
@@ -1162,7 +1168,7 @@ cat(user$extra_details__uid, "\n")               # era: user$id
 </details>
 
 <details>
-<summary><strong>Equivalente v2</strong></summary>
+<summary><strong>Equivalente en v2</strong></summary>
 
 ```json
 {

@@ -1,119 +1,120 @@
-# Uso de la función de manejo de equipos
-**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/7f800b38e7b07803e7abd456195dd5519b03240e/source/getting_started_organization_feature.md" class="reference">3 oct 2025</a>
+# Usar la función de gestión de equipos
+**Última actualización:** <a href="https://github.com/kobotoolbox/docs/blob/7f800b38e7b07803e7abd456195dd5519b03240e/source/getting_started_organization_feature.md" class="reference">3 Oct 2025</a>
 
-La nueva función de manejo de equipos te permite centralizar el manejo de proyectos y usuarios/as para mejorar la supervisión y colaboración en equipos grandes y distribuidos. Cuando agregas usuarios/as a tu Equipo en KoboToolbox, tendrás acceso para ver y manejar sus proyectos. Los/as usuarios/as en tu Equipo tendrán acceso a las cuotas de uso de tu Teams Plan o Enterprise Plan, y la propiedad de sus proyectos será transferida a tu Equipo.
+
+La nueva función de gestión de equipos te permite centralizar la gestión de proyectos y usuarios para mejorar la supervisión y la colaboración en equipos grandes y distribuidos. Cuando agregas usuarios a tu equipo en KoboToolbox, tendrás acceso para ver y gestionar sus proyectos. Los usuarios de tu equipo tendrán acceso a las cuotas de uso de tu plan Teams o Enterprise, y la propiedad de sus proyectos será transferida a tu equipo.
 
 Este artículo incluye:
 
--   Propiedad de proyectos, roles y vistas de proyectos para Equipos
--   Cómo invitar a usuarios/as a unirse a tu Equipo y asignar roles
--   Cómo remover usuarios/as de tu Equipo
+-   Propiedad de proyectos, roles y vistas de proyectos para equipos
+-   Cómo invitar usuarios a unirse a tu equipo y asignar roles
+-   Cómo eliminar usuarios de tu equipo
 
 <p class="note">
-  <b>Nota:</b> Esta funcionalidad actualmente solo está disponible para usuarios/as con <a class="reference external" href="https://www.kobotoolbox.org/teams/">Teams Plan</a> y <a class="reference external" href="https://www.kobotoolbox.org/enterprise/">Enterprise Plan</a>.
+  <b>Nota:</b> Esta función actualmente solo está disponible para usuarios con planes <a class="reference external" href="https://www.kobotoolbox.org/teams/">Teams</a> y <a class="reference external" href="https://www.kobotoolbox.org/enterprise/">Enterprise</a>.
 </p>
 
 ## Propiedad de proyectos
 
-Un aspecto clave de la función de manejo de equipos es que la propiedad de proyectos está centralizada dentro de tu Equipo.
+Un aspecto clave de la función de gestión de equipos es que la propiedad de los proyectos está centralizada dentro de tu equipo.
 
--   Cualquier proyecto nuevo creado por un/a usuario/a en tu Equipo es automáticamente propiedad de tu Equipo.
--   Cuando un/a usuario/a se une a un Equipo en KoboToolbox, todos los proyectos que le pertenecen serán transferidos al Equipo.
+-   Cualquier proyecto nuevo creado por un usuario de tu equipo es automáticamente propiedad de tu equipo.
+-   Cuando un usuario se une a un equipo en KoboToolbox, todos los proyectos de su propiedad serán transferidos al equipo.
 
-Al centralizar la propiedad de proyectos, la función de manejo de equipos te brinda mayor supervisión y un manejo efectivo del equipo.
+Al centralizar la propiedad de los proyectos, la función de gestión de equipos te brinda mayor supervisión y una gestión de equipos más eficaz.
 
 <p class="note">
-  <b>Nota:</b> Esta funcionalidad solo afecta la propiedad de proyectos. No afecta los permisos de compartir proyectos. Los permisos de compartir configurados previamente no se verán afectados cuando la propiedad del proyecto sea transferida a un Equipo. Si tienes permisos de manejo para un proyecto, continuarás teniendo esos permisos y podrás compartir el proyecto como de costumbre. Para más información, consulta <a class="reference external" href="https://support.kobotoolbox.org/es/managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a>.
+  <b>Nota:</b> Esta función solo afecta la propiedad de los proyectos. No afecta los permisos para compartir proyectos. Los permisos de uso compartido configurados anteriormente no se verán afectados cuando la propiedad del proyecto se transfiera a un equipo. Si tienes permisos de gestión para un proyecto, seguirás teniendo esos permisos y podrás compartir el proyecto como de costumbre. Para más información, consulta <a class="reference external" href="https://support.kobotoolbox.org/es/managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a>.
 </p>
 
-## Roles para Equipos
+## Roles para equipos
 
-Hay tres roles diferentes para miembros en un Equipo, cada uno con funciones y capacidades específicas.
+Existen tres roles diferentes para los miembros de un equipo, cada uno con funciones y capacidades específicas.
 
-1. **Propietario/a:** El/la Propietario/a puede ver y manejar todos los proyectos y usuarios/as en el Equipo, así como el Plan y la Configuración. Cada Equipo en KoboToolbox puede tener solo un/a Propietario/a.
-   - **Vistas y manejo de proyectos:** El/la Propietario/a puede ver todos los proyectos del Equipo y tiene permisos completos de manejo de proyectos.
-   - **Transferencias de propiedad de proyectos:** El/la Propietario/a puede [transferir la propiedad](https://support.kobotoolbox.org/es/project_sharing_settings.html#transferring-ownership-of-a-project) de cualquiera de los proyectos del Equipo a un/a usuario/a fuera del Equipo.
-   - **Manejo de usuarios/as:** El/la Propietario/a puede agregar o remover miembros del Equipo y asignar diferentes roles.
-   - **Manejo de Plan y uso:** El/la Propietario/a puede manejar el Plan y la Configuración del Equipo y ver la página de Uso.
+1. **Propietario:** El propietario puede ver y gestionar todos los proyectos y usuarios del equipo, así como el plan y la configuración. Cada equipo en KoboToolbox puede tener un solo propietario.
+   - **Vistas y gestión de proyectos:** El propietario puede ver todos los proyectos del equipo y tiene permisos completos de gestión de proyectos.
+   - **Transferencias de propiedad de proyectos:** El propietario puede [transferir la propiedad](https://support.kobotoolbox.org/es/project_sharing_settings.html#transferring-ownership-of-a-project) de cualquier proyecto del equipo a un usuario externo al equipo.
+   - **Gestión de usuarios:** El propietario puede agregar o eliminar miembros del equipo y asignar diferentes roles.
+   - **Gestión del plan y el uso:** El propietario puede gestionar el plan y la configuración del equipo, y ver la página de uso.
 
-2. **Administradores/as:** Los/as Administradores/as pueden ver y manejar todos los proyectos y usuarios/as en el Equipo, así como la Configuración. Cada Equipo puede tener un número ilimitado de Administradores/as.
-   - **Vistas y manejo de proyectos:** Los/as Administradores/as pueden ver todos los proyectos del Equipo y tienen permisos completos de manejo de proyectos.
-   - **Manejo de usuarios/as:** Los/as Administradores/as pueden agregar o remover miembros del Equipo y asignar diferentes roles.
-   - **Manejo de Plan y uso:** Los/as Administradores/as pueden manejar la Configuración del Equipo y ver la página de Uso.
+2. **Administradores:** Los administradores pueden ver y gestionar todos los proyectos y usuarios del equipo, así como la configuración. Cada equipo puede tener un número ilimitado de administradores.
+   - **Vistas y gestión de proyectos:** Los administradores pueden ver todos los proyectos del equipo y tienen permisos completos de gestión de proyectos.
+   - **Gestión de usuarios:** Los administradores pueden agregar o eliminar miembros del equipo y asignar diferentes roles.
+   - **Gestión del plan y el uso:** Los administradores pueden gestionar la configuración del equipo y ver la página de uso.
 
-3. **Miembros:** Los/as Miembros del Equipo continúan teniendo acceso completo a su cuenta de KoboToolbox con el beneficio de las cuotas de uso de su Equipo. Los/as Miembros pueden crear nuevos proyectos y usar todas las funcionalidades de KoboToolbox como antes. Los Equipos pueden tener un número ilimitado de Miembros.
+3. **Miembros:** Los miembros del equipo siguen teniendo acceso completo a su cuenta de KoboToolbox con el beneficio de las cuotas de uso de su equipo. Los miembros pueden crear nuevos proyectos y usar todas las funcionalidades de KoboToolbox como antes. Los equipos pueden tener un número ilimitado de miembros.
 
 <p class="note">
-  <b>Nota:</b> Los/as usuarios/as solo pueden pertenecer a un Equipo a la vez.
+  <b>Nota:</b> Los usuarios solo pueden pertenecer a un equipo a la vez.
 </p>
 
 ## Vistas de proyectos
 
-El/la Propietario/a del Equipo y los/as Administradores/as tienen acceso a la vista **Proyectos del Equipo** y a su propia vista personal **Mis Proyectos**.
+El propietario y los administradores del equipo tienen acceso a la vista **Proyectos del equipo** y a su propia vista personal **Mis proyectos**.
 
--   Por defecto, se mostrará tu vista **Mis Proyectos**. Si alternas el menú desplegable de vista de proyectos, puedes cambiar a tu vista **Proyectos del Equipo**.
--   La vista **Proyectos del Equipo** incluye todos los proyectos de todos/as los/as usuarios/as en el Equipo.
+-   De forma predeterminada, se mostrará tu vista **Mis proyectos**. Si haces clic en el menú desplegable de vistas de proyectos, puedes cambiar a la vista **Proyectos del equipo**.
+-   La vista **Proyectos del equipo** incluye todos los proyectos de todos los usuarios del equipo.
 
-Los/as Miembros del Equipo solo tienen acceso a su vista personal **Mis Proyectos**, que incluye los proyectos que crearon y los proyectos compartidos con ellos/as. No tienen acceso a la vista **Proyectos del Equipo**.
+Los miembros del equipo solo tienen acceso a su vista personal **Mis proyectos**, que incluye los proyectos que crearon y los proyectos compartidos con ellos. No tienen acceso a la vista **Proyectos del equipo**.
 
 ![image](/images/getting_started_organization_feature/organizations_project_views.gif)
 
 <br/>
 
-## Invitar usuarios/as a unirse a tu Equipo
+## Invitar usuarios a unirse a tu equipo
 
-El/la Propietario/a del Equipo y los/as Administradores/as pueden invitar a usuarios/as a unirse al Equipo, dándoles acceso a las cuotas de uso del Equipo y centralizando el manejo de proyectos.
+El propietario y los administradores del equipo pueden invitar usuarios a unirse al equipo, dándoles acceso a las cuotas de uso del equipo y centralizando la gestión de proyectos.
 
-Para invitar a usuarios/as a unirse a tu Equipo en KoboToolbox:
+Para invitar usuarios a unirse a tu equipo en KoboToolbox:
 
-1. Ve a tu **Configuración de cuenta**.
-2. Navega a la página **Miembros** bajo **EQUIPO**.
+1. Ve a tu **Configuración de la cuenta**.
+2. Navega a la página **Miembros** en **EQUIPO**.
 3. Haz clic en el botón **Invitar miembros**.
-4. Ingresa el **nombre de usuario/a** o **dirección de correo electrónico** de la persona que deseas invitar a tu Equipo y asígnale un **Rol**. Haz clic en **Enviar invitación**.
-   - Las invitaciones no están restringidas a usuarios/as con el dominio de correo electrónico de tu organización. Puedes invitar a usuarios/as con cualquier dirección de correo electrónico válida.
-5. El/la usuario/a recibirá una invitación por correo electrónico para unirse a tu Equipo. Si el/la usuario/a aún no tiene una cuenta de KoboToolbox, será invitado/a a crear una.
-6. Cuando acepten la invitación, obtendrán acceso a tu Equipo según el rol que se les haya asignado. Todos los proyectos que anteriormente pertenecían al/a la usuario/a serán transferidos a tu Equipo.
+4. Ingresa el **nombre de usuario** o la **dirección de correo electrónico** de la persona que deseas invitar a tu equipo y asígnale un **rol**. Haz clic en **Enviar invitación**.
+   - Las invitaciones no están restringidas a usuarios con el dominio de correo electrónico de tu organización. Puedes invitar a usuarios con cualquier dirección de correo electrónico válida.
+5. El usuario recibirá una invitación por correo electrónico para unirse a tu equipo. Si el usuario aún no tiene una cuenta de KoboToolbox, se le invitará a crear una.
+6. Cuando acepte la invitación, obtendrá acceso a tu equipo según el rol que se le haya asignado. Todos los proyectos que eran propiedad del usuario anteriormente serán transferidos a tu equipo.
 
 ![image](/images/getting_started_organization_feature/organizations_inviting_a_user.gif)
 
 <br/>
 
-Una invitación para unirse a un Equipo expirará **14 días** después de ser enviada. Puedes **reenviar la invitación** directamente en el menú <i class="k-icon k-icon-more"></i> **Más acciones** de la vista **Miembros**. También puedes **cancelar una invitación** usando la opción **Remover invitación** en el menú <i class="k-icon k-icon-more"></i> **Más acciones**.
+Una invitación para unirse a un equipo expirará **14 días** después de ser enviada. Puedes **reenviar la invitación** directamente desde el menú <i class="k-icon k-icon-more"></i> **Otras acciones** de la vista **Miembros**. También puedes **cancelar una invitación** usando la opción **Eliminar invitación** en el menú <i class="k-icon k-icon-more"></i> **Otras acciones**.
 
 ![image](/images/getting_started_organization_feature/organizations_resend_invitation.gif)
 
 <br/>
 
 <p class="note">
-  <b>Nota:</b> Si tienes proyectos existentes de los cuales no deseas transferir la propiedad a tu Equipo, te recomendamos que crees una cuenta separada y transfieras la propiedad de esos proyectos a la nueva cuenta antes de aceptar la invitación para unirte al Equipo.
+  <b>Nota:</b> Si tienes proyectos existentes cuya propiedad no deseas transferir a tu equipo, te recomendamos que crees una cuenta separada y transfieras la propiedad de esos proyectos a la nueva cuenta antes de aceptar la invitación para unirte al equipo.
 </p>
 
-## Asignar y manejar roles
+## Asignar y gestionar roles
 
-El/la Propietario/a del Equipo y los/as Administradores/as pueden asignar y cambiar los roles de los/as usuarios/as en su Equipo en la vista **Miembros**.
+El propietario y los administradores del equipo pueden asignar y cambiar los roles de los usuarios de su equipo en la vista **Miembros**.
 
--   Cuando cambias el rol de un **Miembro** a **Administrador/a**, le otorgarás acceso a la vista Proyectos del Equipo, así como permisos de manejo de proyectos y roles. También le otorgarás acceso para manejar la Configuración y ver la página de Uso.
+-   Cuando cambias el rol de un **miembro** a **administrador**, le otorgas acceso a la vista Proyectos del equipo, así como permisos de gestión de proyectos y roles. También le otorgas acceso para gestionar la configuración y ver la página de uso.
 
 ![image](images/getting_started_organization_feature/organizations_changing_roles.png)
 
-## Remover un/a usuario/a de tu Equipo
+## Eliminar un usuario de tu equipo
 
-El/la Propietario/a del Equipo y los/as Administradores/as pueden remover usuarios/as del Equipo. Cuando un/a usuario/a es removido/a de tu Equipo, ya no tendrá acceso a los proyectos propiedad del Equipo ni a las cuotas de uso del Equipo.
+El propietario y los administradores del equipo pueden eliminar usuarios del equipo. Cuando se elimina a un usuario de tu equipo, ya no tendrá acceso a los proyectos propiedad del equipo ni a las cuotas de uso del equipo.
 
-Para remover un/a usuario/a de tu Equipo:
+Para eliminar un usuario de tu equipo:
 
-1. Ve a tu **Configuración de cuenta**.
-2. Navega a la página **Miembros** bajo **EQUIPO**.
-3. Haz clic en el ícono <i class="k-icon k-icon-more"></i> **Más acciones** para el/la usuario/a que deseas remover.
-4. Selecciona **Remover**.
-5. Confirma y completa la acción haciendo clic en **Remover miembro**.
+1. Ve a tu **Configuración de la cuenta**.
+2. Navega a la página **Miembros** en **EQUIPO**.
+3. Haz clic en el icono <i class="k-icon k-icon-more"></i> **Otras acciones** del usuario que deseas eliminar.
+4. Selecciona **Eliminar**.
+5. Confirma y completa la acción haciendo clic en **Eliminar miembro**.
 
 ![image](/images/getting_started_organization_feature/organizations_removing_a_member.gif)
 
 <br/>
 
-## Transferir la propiedad de tu Equipo
+## Transferir la propiedad de tu equipo
 
-Cada Equipo en KoboToolbox puede tener solo un/a Propietario/a. El/la Propietario/a fue determinado/a previamente por tu organización cuando se suscribió a tu plan.
+Cada equipo en KoboToolbox puede tener un solo propietario. El propietario fue determinado previamente por tu organización cuando se suscribió al plan.
 
-Para transferir la propiedad de tu Equipo a otro/a usuario/a, [por favor contacta a nuestro equipo de soporte](support@kobotoolbox.org).
+Para transferir la propiedad de tu equipo a otro usuario, [comunícate con nuestro equipo de soporte](support@kobotoolbox.org).

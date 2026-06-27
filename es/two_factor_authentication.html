@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Lista de Tipos de Preguntas" href="question_types.html" />
-    <link rel="prev" title="Restablecer contraseñas" href="reset_password.html" />
+    <link rel="next" title="Comenzar con el editor de formularios" href="formbuilder.html" />
+    <link rel="prev" title="Configurar la cuenta" href="account_settings.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -109,95 +109,95 @@
           
   <section id="configurar-la-autenticacion-de-dos-factores-en-kobotoolbox">
 <h1>Configurar la autenticación de dos factores en KoboToolbox<a class="headerlink" href="#configurar-la-autenticacion-de-dos-factores-en-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3c86f234242bee25d3d6f91bffee5cb93d808344/source/two_factor_authentication.md" class="reference">5 Sep 2025</a></p>
-<iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/two_factor_authentication.md" class="reference">23 Apr 2026</a></p>
+<iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br>
-<p>KoboToolbox admite la <strong>Autenticación de Dos Factores (2FA)</strong> para mejorar la seguridad de la cuenta. Con 2FA, necesitarás ingresar la contraseña de tu cuenta y un código de una aplicación de smartphone para acceder a tu cuenta de KoboToolbox.</p>
-<p>2FA minimiza los riesgos de una contraseña comprometida. Incluso si tu contraseña es hackeada, obtenida mediante phishing o adivinada, 2FA previene el acceso no autorizado a tu cuenta al agregar una capa adicional de seguridad más allá de la <strong>Autenticación de Un Solo Factor (SFA)</strong>.</p>
+<p>KoboToolbox admite la <strong>autenticación de dos factores (2FA)</strong> para mejorar la seguridad de tu cuenta. Con la 2FA, necesitarás ingresar la contraseña de tu cuenta y un código generado por una aplicación en tu smartphone para acceder a tu cuenta de KoboToolbox.</p>
+<p>La 2FA minimiza los riesgos asociados a una contraseña comprometida. Incluso si tu contraseña es hackeada, obtenida mediante phishing o adivinada, la 2FA impide el acceso no autorizado a tu cuenta al agregar una capa adicional de seguridad más allá de la <strong>autenticación de un solo factor (SFA)</strong>.</p>
 <p class="note">
-    <strong>Nota:</strong> Se requiere una aplicación de autenticación compatible en tu dispositivo móvil para configurar 2FA para tu cuenta de KoboToolbox. Este artículo utiliza Google Authenticator, disponible en <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Play Store</a> y <a href="https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB">Apple App Store</a>, pero otras aplicaciones de autenticación también pueden funcionar.
+    <strong>Nota:</strong> Para configurar la 2FA en tu cuenta de KoboToolbox, necesitas una aplicación de autenticación compatible en tu dispositivo móvil. Este artículo utiliza Google Authenticator, disponible en <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2">Google Play Store</a> y <a href="https://apps.apple.com/fr/app/google-authenticator/id388497605?l=en-GB">Apple App Store</a>, aunque también funcionan otras aplicaciones de autenticación.
 </p>
 <p>Este artículo cubre los siguientes temas:</p>
 <ul class="simple">
-<li><p>Configurar 2FA con un código QR o clave manual</p></li>
-<li><p>Desactivar y reconfigurar 2FA</p></li>
-<li><p>Usar KoboCollect cuando 2FA está habilitado</p></li>
+<li><p>Configurar la 2FA con un código QR o una clave manual</p></li>
+<li><p>Deshabilitar y reconfigurar la 2FA</p></li>
+<li><p>Usar KoboCollect cuando la 2FA está habilitada</p></li>
 </ul>
-<section id="configurar-2fa-en-kobotoolbox">
-<h2>Configurar 2FA en KoboToolbox<a class="headerlink" href="#configurar-2fa-en-kobotoolbox" title="Link to this heading">¶</a></h2>
-<p>2FA en KoboToolbox se puede configurar utilizando dos enfoques diferentes: el enfoque de <strong>código QR</strong> y el enfoque de <strong>clave manual</strong>. Para comenzar con cualquiera de los dos enfoques:</p>
+<section id="configurar-la-2fa-en-kobotoolbox">
+<h2>Configurar la 2FA en KoboToolbox<a class="headerlink" href="#configurar-la-2fa-en-kobotoolbox" title="Link to this heading">¶</a></h2>
+<p>La 2FA en KoboToolbox se puede configurar mediante dos enfoques: el enfoque de <strong>código QR</strong> y el enfoque de <strong>clave manual</strong>. Para comenzar con cualquiera de los dos:</p>
 <ol class="arabic simple">
 <li><p>Inicia sesión en tu cuenta de KoboToolbox.</p></li>
 <li><p>Haz clic en el ícono de tu perfil en la esquina superior derecha.</p></li>
 <li><p>Selecciona <strong>CONFIGURACIÓN DE LA CUENTA</strong>.</p></li>
-<li><p>Ve a la pestaña <strong>Seguridad</strong>.</p></li>
-<li><p>En la <strong>sección de Autenticación de dos factores</strong>, habilita 2FA alternando el botón <strong>Deshabilitado</strong>.</p></li>
-<li><p>Abre tu aplicación de autenticación y sigue los pasos para uno de los dos enfoques a continuación.</p></li>
+<li><p>Ve a la ventana <strong>Seguridad</strong>.</p></li>
+<li><p>En la sección <strong>Autenticación de dos factores</strong>, habilita la 2FA activando el botón <strong>Desactivado</strong>.</p></li>
+<li><p>Abre tu aplicación de autenticación y sigue los pasos para uno de los dos enfoques que se describen a continuación.</p></li>
 </ol>
-<section id="configurar-2fa-con-un-codigo-qr">
-<h3>Configurar 2FA con un código QR<a class="headerlink" href="#configurar-2fa-con-un-codigo-qr" title="Link to this heading">¶</a></h3>
-<p>El primer método es el enfoque de <strong>código QR</strong>, que utiliza la cámara de tu dispositivo para escanear un código QR y configurar 2FA para tu cuenta.</p>
+<section id="configurar-la-2fa-con-un-codigo-qr">
+<h3>Configurar la 2FA con un código QR<a class="headerlink" href="#configurar-la-2fa-con-un-codigo-qr" title="Link to this heading">¶</a></h3>
+<p>El primer método es el enfoque de <strong>código QR</strong>, que utiliza la cámara de tu dispositivo para escanear un código QR y configurar la 2FA en tu cuenta.</p>
 <p class="note">
-  <b>Nota:</b> Los pasos a continuación describen el proceso utilizando la aplicación Google Authenticator. El proceso debería ser similar con otras aplicaciones de autenticación, pero puede haber algunas diferencias.
+  <b>Nota:</b> Los pasos a continuación describen el proceso usando la aplicación Google Authenticator. El proceso debería ser similar con otras aplicaciones de autenticación, aunque puede haber algunas diferencias.
 </p>
-<p>Para configurar 2FA con un código QR:</p>
+<p>Para configurar la 2FA con un código QR:</p>
 <ol class="arabic simple">
-<li><p>Abre tu aplicación de autenticación y presiona <strong>Comenzar</strong>.</p></li>
-<li><p>Selecciona <strong>Escanear un código QR</strong>. La cámara de tu dispositivo ahora debería estar activa.</p></li>
+<li><p>Abre tu aplicación de autenticación y haz clic en <strong>Comenzar</strong>.</p></li>
+<li><p>Selecciona <strong>Escanear un código QR</strong>. La cámara de tu dispositivo debería activarse.</p></li>
 <li><p>Escanea el código QR visible en tu monitor.</p></li>
-<li><p>Ingresa el PIN de 6 dígitos de la aplicación de autenticación en tu cuenta de KoboToolbox para configurar 2FA, luego presiona <strong>Siguiente</strong>.</p></li>
-<li><p>Se mostrarán códigos de recuperación para ayudarte a acceder a tu cuenta si tu aplicación de autenticación falla. Descarga los códigos seleccionando <strong>Descargar códigos</strong> y guárdalos en un lugar seguro.</p></li>
-<li><p>Continúa seleccionando <strong>Guardé mis códigos</strong>.</p></li>
+<li><p>Ingresa el PIN de 6 dígitos de la aplicación de autenticación en tu cuenta de KoboToolbox para configurar la 2FA y, a continuación, haz clic en <strong>Siguiente</strong>.</p></li>
+<li><p>Se mostrarán códigos de recuperación para ayudarte a acceder a tu cuenta si tu aplicación de autenticación falla. Descarga los códigos seleccionando <strong>Descarga los códigos</strong> y guárdalos en un lugar seguro.</p></li>
+<li><p>Continúa seleccionando <strong>Guardar mis códigos</strong>.</p></li>
 </ol>
-<p>Ahora has configurado exitosamente 2FA en tu cuenta de KoboToolbox a través del <strong>enfoque de código QR</strong>.</p>
+<p>Has configurado correctamente la 2FA en tu cuenta de KoboToolbox mediante el <strong>enfoque de código QR</strong>.</p>
 </section>
-<section id="configurar-2fa-con-una-clave-manual">
-<h3>Configurar 2FA con una clave manual<a class="headerlink" href="#configurar-2fa-con-una-clave-manual" title="Link to this heading">¶</a></h3>
-<p>El segundo enfoque es el <strong>enfoque de clave manual</strong>, que no requiere la cámara de tu dispositivo para configurar 2FA para tu cuenta de KoboToolbox.</p>
-<p>Para configurar 2FA con una clave manual:</p>
+<section id="configurar-la-2fa-con-una-clave-manual">
+<h3>Configurar la 2FA con una clave manual<a class="headerlink" href="#configurar-la-2fa-con-una-clave-manual" title="Link to this heading">¶</a></h3>
+<p>El segundo enfoque es el <strong>enfoque de clave manual</strong>, que no requiere la cámara de tu dispositivo para configurar la 2FA en tu cuenta de KoboToolbox.</p>
+<p>Para configurar la 2FA con una clave manual:</p>
 <ol class="arabic simple">
-<li><p>En la parte inferior de la ventana de 2FA en KoboToolbox, haz clic en <strong>¿No tienes código QR? Ingresa la clave manualmente</strong>. Se mostrará una clave de 32 caracteres.</p></li>
-<li><p>Abre tu aplicación de autenticación y presiona <strong>Comenzar</strong>.</p></li>
+<li><p>En la parte inferior de la ventana de 2FA en KoboToolbox, haz clic en <strong>¿No tienes un código QR? Ingresa la clave manualmente</strong>. Se mostrará una clave de 32 caracteres.</p></li>
+<li><p>Abre tu aplicación de autenticación y haz clic en <strong>Comenzar</strong>.</p></li>
 <li><p>Selecciona <strong>Ingresar una clave de configuración</strong>.</p></li>
-<li><p>Ingresa el nombre de la cuenta (por ejemplo, «KoboToolbox») y la clave de 32 caracteres en la aplicación, luego presiona <strong>Agregar</strong>.</p></li>
-<li><p>Ingresa el PIN de 6 dígitos de tu aplicación de autenticación en tu cuenta de KoboToolbox para configurar 2FA, luego presiona <strong>Siguiente</strong>.</p></li>
-<li><p>Se mostrarán códigos de recuperación para ayudarte a acceder a tu cuenta si tu aplicación de autenticación falla. <strong>Descarga los códigos</strong> seleccionando Descargar códigos y guárdalos en un lugar seguro.</p></li>
-<li><p>Continúa seleccionando <strong>Guardé mis códigos</strong>.</p></li>
+<li><p>Ingresa el nombre de la cuenta (por ejemplo, «KoboToolbox») y la clave de 32 caracteres en la aplicación y, a continuación, haz clic en <strong>Agregar</strong>.</p></li>
+<li><p>Ingresa el PIN de 6 dígitos de tu aplicación de autenticación en tu cuenta de KoboToolbox para configurar la 2FA y, a continuación, haz clic en <strong>Siguiente</strong>.</p></li>
+<li><p>Se mostrarán códigos de recuperación para ayudarte a acceder a tu cuenta si tu aplicación de autenticación falla. <strong>Descarga los códigos</strong> seleccionando Descarga los códigos y guárdalos en un lugar seguro.</p></li>
+<li><p>Continúa seleccionando <strong>Guardar mis códigos</strong>.</p></li>
 </ol>
-<p>Ahora has configurado exitosamente 2FA en tu cuenta de KoboToolbox a través del <strong>enfoque de clave manual</strong>.</p>
+<p>Has configurado correctamente la 2FA en tu cuenta de KoboToolbox mediante el <strong>enfoque de clave manual</strong>.</p>
 </section>
 </section>
-<section id="desactivar-2fa">
-<h2>Desactivar 2FA<a class="headerlink" href="#desactivar-2fa" title="Link to this heading">¶</a></h2>
-<p>Para desactivar 2FA de tu cuenta de KoboToolbox:</p>
+<section id="deshabilitar-la-2fa">
+<h2>Deshabilitar la 2FA<a class="headerlink" href="#deshabilitar-la-2fa" title="Link to this heading">¶</a></h2>
+<p>Para deshabilitar la 2FA en tu cuenta de KoboToolbox:</p>
 <ol class="arabic simple">
 <li><p>Haz clic en el ícono de tu perfil en la esquina superior derecha.</p></li>
 <li><p>Selecciona <strong>CONFIGURACIÓN DE LA CUENTA</strong>.</p></li>
-<li><p>Ve a la pestaña <strong>Seguridad</strong>.</p></li>
-<li><p>En la <strong>sección de Autenticación de dos factores</strong>, desactiva 2FA alternando el botón <strong>Habilitado</strong>.</p></li>
-<li><p>Abre la aplicación de autenticación en tu smartphone, obtén el código de 6 dígitos e ingrésalo. Presiona <strong>Siguiente</strong>.</p></li>
-<li><p>Después de ingresar el código de 6 dígitos, el sistema desactivará 2FA de tu cuenta.</p></li>
+<li><p>Ve a la ventana <strong>Seguridad</strong>.</p></li>
+<li><p>En la sección <strong>Autenticación de dos factores</strong>, deshabilita la 2FA desactivando el botón <strong>Activado</strong>.</p></li>
+<li><p>Abre la aplicación de autenticación en tu smartphone, obtén el código de 6 dígitos e ingrésalo. Haz clic en <strong>Siguiente</strong>.</p></li>
+<li><p>Después de ingresar el código de 6 dígitos, el sistema deshabilitará la 2FA en tu cuenta.</p></li>
 </ol>
 <p><img alt="image" src="_images/Deactivate_2FA.png" /></p>
 </section>
-<section id="reconfigurar-2fa">
-<h2>Reconfigurar 2FA<a class="headerlink" href="#reconfigurar-2fa" title="Link to this heading">¶</a></h2>
-<p>Para reconfigurar 2FA para tu cuenta de KoboToolbox (por ejemplo, para configurar un nuevo smartphone):</p>
+<section id="reconfigurar-la-2fa">
+<h2>Reconfigurar la 2FA<a class="headerlink" href="#reconfigurar-la-2fa" title="Link to this heading">¶</a></h2>
+<p>Para reconfigurar la 2FA en tu cuenta de KoboToolbox (por ejemplo, para configurar un nuevo smartphone):</p>
 <ol class="arabic simple">
 <li><p>Haz clic en el ícono de tu perfil en la esquina superior derecha.</p></li>
 <li><p>Selecciona <strong>CONFIGURACIÓN DE LA CUENTA</strong>.</p></li>
-<li><p>Ve a la pestaña <strong>Seguridad</strong>.</p></li>
-<li><p>En la <strong>sección de Autenticación de dos factores</strong>, junto a <strong>Aplicación de autenticación</strong>, presiona el botón <strong>Reconfigurar</strong> para comenzar a reconfigurar 2FA. Este proceso sigue los mismos pasos que configurar 2FA.</p></li>
+<li><p>Ve a la ventana <strong>Seguridad</strong>.</p></li>
+<li><p>En la sección <strong>Autenticación de dos factores</strong>, junto a <strong>Aplicación de autenticación</strong>, haz clic en el botón <strong>Volver a configurar</strong> para comenzar a reconfigurar la 2FA. Este proceso sigue los mismos pasos que la configuración inicial de la 2FA.</p></li>
 </ol>
-<p>Cuando reconfigures 2FA para tu cuenta, la configuración anterior se eliminará automáticamente. Cualquier token o código de recuperación de la configuración anterior ya no será válido. Después de que tu 2FA actual haya sido desactivado, se te pedirá que lo configures nuevamente. Si no puedes completar el proceso, 2FA permanecerá deshabilitado para tu cuenta. En este caso, puedes habilitarlo nuevamente en cualquier momento a través del proceso habitual, como se compartió anteriormente.</p>
+<p>Cuando reconfiguras la 2FA en tu cuenta, la configuración anterior se elimina automáticamente. Los tokens o códigos de recuperación de la configuración anterior dejarán de ser válidos. Una vez desactivada tu 2FA actual, se te pedirá que la configures nuevamente. Si no puedes completar el proceso, la 2FA quedará deshabilitada en tu cuenta. En ese caso, puedes habilitarla nuevamente en cualquier momento siguiendo el proceso habitual descrito anteriormente.</p>
 </section>
-<section id="usar-kobocollect-con-2fa">
-<h2>Usar KoboCollect con 2FA<a class="headerlink" href="#usar-kobocollect-con-2fa" title="Link to this heading">¶</a></h2>
-<p>La autenticación de dos factores agrega una capa de protección a las cuentas con datos sensibles. Usar estas cuentas para la recolección de datos podría representar riesgos significativos. Por lo tanto, al activar 2FA para tu cuenta, ya no puedes descargar formularios ni enviar datos a <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">KoboCollect</span></a> desde esta cuenta. Recibirás un mensaje de error al intentar descargar nuevos formularios dentro de la aplicación, como «El servidor requiere autenticación: Nombre de usuario o contraseña no válidos para el servidor».</p>
-<p>Para recolectar datos con KoboCollect cuando 2FA está activo, recomendamos cualquiera de los siguientes enfoques:</p>
+<section id="usar-kobocollect-con-la-2fa">
+<h2>Usar KoboCollect con la 2FA<a class="headerlink" href="#usar-kobocollect-con-la-2fa" title="Link to this heading">¶</a></h2>
+<p>La autenticación de dos factores agrega una capa de protección a las cuentas con datos sensibles. El uso de estas cuentas para la recolección de datos puede representar riesgos significativos. Por ello, al activar la 2FA en tu cuenta, ya no podrás descargar formularios ni enviar datos a <a class="reference internal" href="data_collection_kobocollect.html"><span class="std std-doc">KoboCollect</span></a> desde esta cuenta. Recibirás un mensaje de error al intentar descargar nuevos formularios dentro de la aplicación, como «Server Requires Authentication: Invalid username or password for server.»</p>
+<p>Para recolectar datos con KoboCollect cuando la 2FA está activa, recomendamos cualquiera de los siguientes enfoques:</p>
 <ol class="arabic simple">
-<li><p>Crea una cuenta de KoboToolbox separada para la recolección de datos y pruebas de formularios para usar con KoboCollect. Comparte tu(s) formulario(s) con esta nueva cuenta y restringe sus <a class="reference internal" href="managing_permissions.html"><span class="std std-doc">permisos</span></a> a <strong>Agregar envíos</strong> para máxima seguridad.</p></li>
-<li><p><a class="reference external" href="https://support.kobotoolbox.org/es/project_sharing_settings.html#allowing-submissions-without-authentication">Habilita</a> «Permitir envíos a este formulario sin nombre de usuario y contraseña» para tus formularios, y <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">conéctate a KoboCollect</span></a> usando las siguientes credenciales:</p>
+<li><p>Crea una cuenta de KoboToolbox separada para la recolección de datos y las pruebas de formularios, y úsala con KoboCollect. Comparte tus formularios con esta nueva cuenta y restringe sus <a class="reference internal" href="managing_permissions.html"><span class="std std-doc">permisos</span></a> a <strong>Añadir envíos</strong> para mayor seguridad.</p></li>
+<li><p><a class="reference internal" href="project_sharing_settings.html#allowing-submissions-without-authentication"><span class="std std-ref">Habilita</span></a> «Permitir envíos a este formulario sin nombre de usuario ni contraseña» para tus formularios y <a class="reference internal" href="kobocollect_on_android_latest.html"><span class="std std-doc">conéctate a KoboCollect</span></a> usando las siguientes credenciales:</p>
 <ul class="simple">
 <li><p><strong>URL</strong>: <code class="docutils literal notranslate"><span class="pre">https://[kobocollect_url]/[username]</span></code></p></li>
 <li><p><strong>Nombre de usuario</strong>: (en blanco)</p></li>
@@ -205,23 +205,18 @@
 </ul>
 </li>
 </ol>
-<p>El segundo enfoque permite a los/as usuarios/as descargar y enviar datos a cualquier formulario compartido con <code class="docutils literal notranslate"><span class="pre">username</span></code> que no <a class="reference external" href="https://support.kobotoolbox.org/es/project_sharing_settings.html#allowing-submissions-without-authentication">requiera autenticación</a>.</p>
+<p>El segundo enfoque permite a los usuarios descargar y enviar datos a cualquier formulario compartido con <code class="docutils literal notranslate"><span class="pre">username</span></code> que no <a class="reference internal" href="project_sharing_settings.html#allowing-submissions-without-authentication"><span class="std std-ref">requiera autenticación</span></a>.</p>
 </section>
-<section id="solucion-de-problemas">
-<h2>Solución de problemas<a class="headerlink" href="#solucion-de-problemas" title="Link to this heading">¶</a></h2>
+<section id="resolucion-de-problemas">
+<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
 <details>
 <summary><b>Generar nuevos códigos de recuperación</b></summary>
-Si has extraviado tus códigos de recuperación o crees que han sido comprometidos, puedes generar nuevos códigos de recuperación para 2FA presionando el botón <b>Generar nuevos</b> junto a <b>Códigos de recuperación</b>.
+Si has extraviado tus códigos de recuperación o crees que han sido comprometidos, puedes generar nuevos códigos de recuperación para la 2FA haciendo clic en el botón <b>Generar nuevos</b> junto a <b>Códigos de recuperación</b>.
 </details>
 <br>
 <details>
-<summary><b>No se puede acceder a la cuenta de KoboToolbox</b></summary>
-Si no puedes acceder a tu cuenta de KoboToolbox con 2FA habilitado (por ejemplo, si restableciste tu smartphone y desinstalaste la aplicación de autenticación, o extraviaste tus códigos de recuperación), puedes contactar a <a class="reference external" href="support@kobotoolbox.org">support@kobotoolbox.org</a>. Por favor, utiliza la dirección de correo electrónico registrada en tu cuenta para solicitar que se desactive 2FA.
-</details>
-<br>
-<details>
-<summary><b>Funcionalidad no disponible</b></summary>
-Esta funcionalidad actualmente no está disponible para los/as usuarios/as en el Community Plan (Plan Comunitario). Sin embargo, 2FA se extenderá a todos/as los/as usuarios/as en los próximos meses, independientemente de su plan.
+<summary><b>No puedo acceder a mi cuenta de KoboToolbox</b></summary>
+Si no puedes acceder a tu cuenta de KoboToolbox con la 2FA habilitada (por ejemplo, si restableciste tu smartphone y desinstalaste la aplicación de autenticación, o extraviaste tus códigos de recuperación), puedes contactar a <a class="reference external" href="support@kobotoolbox.org">support@kobotoolbox.org</a>. Usa la dirección de correo electrónico registrada en tu cuenta para solicitar que se deshabilite la 2FA.
 </details></section>
 </section>
 
@@ -257,147 +252,156 @@ Esta funcionalidad actualmente no está disponible para los/as usuarios/as en el
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Configurar la autenticación de dos factores en KoboToolbox</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#configurar-2fa-en-kobotoolbox">Configurar 2FA en KoboToolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#desactivar-2fa">Desactivar 2FA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#reconfigurar-2fa">Reconfigurar 2FA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#usar-kobocollect-con-2fa">Usar KoboCollect con 2FA</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#solucion-de-problemas">Solución de problemas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configurar-la-2fa-en-kobotoolbox">Configurar la 2FA en KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#deshabilitar-la-2fa">Deshabilitar la 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reconfigurar-la-2fa">Reconfigurar la 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#usar-kobocollect-con-la-2fa">Usar KoboCollect con la 2FA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolucion-de-problemas">Resolución de problemas</a></li>
 </ul>
 </li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>

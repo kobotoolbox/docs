@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros &#8212; documentación de KoboToolbox - </title>
+    <title>Seguridad de datos en KoboToolbox &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -27,7 +27,7 @@
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
     <link rel="next" title="Reglamento General de Protección de Datos (RGPD)" href="gdpr.html" />
-    <link rel="prev" title="Migración de la API v1 a v2" href="migrating_api.html" />
+    <link rel="prev" title="Migración de API v1 a API v2" href="migrating_api.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,61 +107,61 @@
 
         <section class="page__body" role="main">
           
-  <section id="medidas-de-seguridad-de-datos-de-kobotoolbox-mantener-tus-datos-seguros">
-<h1>Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros<a class="headerlink" href="#medidas-de-seguridad-de-datos-de-kobotoolbox-mantener-tus-datos-seguros" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f7c0f5afa58cad4b40bd6075209daef21a83ee6b/source/is_my_data_safe.md" class="reference">9 Oct 2025</a></p>
-<p>Nos tomamos muy en serio la protección de datos. La seguridad de datos significa proteger los datos de nuestros/as usuarios/as de cualquier amenaza que pueda existir. Este artículo resume algunas de nuestras medidas administrativas, físicas, organizacionales y técnicas para hacer cumplir la seguridad de datos en los servidores de KoboToolbox mantenidos por Kobo, Inc., la <a class="reference external" href="https://www.kobotoolbox.org/about-us/">organización sin fines de lucro detrás de KoboToolbox</a>.</p>
+  <section id="seguridad-de-datos-en-kobotoolbox">
+<h1>Seguridad de datos en KoboToolbox<a class="headerlink" href="#seguridad-de-datos-en-kobotoolbox" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f7c0f5afa58cad4b40bd6075209daef21a83ee6b/source/is_my_data_safe.md" class="reference">9 oct 2025</a></p>
+<p>Nos tomamos muy en serio la protección de datos. La seguridad de datos implica proteger la información de nuestros usuarios de cualquier amenaza que pueda existir. Este artículo resume algunas de nuestras medidas administrativas, físicas, organizativas y técnicas para garantizar la seguridad de los datos en los servidores de KoboToolbox mantenidos por Kobo, Inc., la <a class="reference external" href="https://www.kobotoolbox.org/about-us/">organización sin fines de lucro detrás de KoboToolbox</a>.</p>
 <p>Cumplimos plenamente con el Reglamento General de Protección de Datos (RGPD) de la Unión Europea. Si te encuentras en la Unión Europea, <a class="reference external" href="https://www.digisigner.com/online/showTemplate?linkId=495db186-9c9e-4627-99f7-a943282eeab5">puedes firmar un acuerdo de procesamiento de datos (DPA) aquí</a>.</p>
 <section id="confidencialidad">
 <h2>Confidencialidad<a class="headerlink" href="#confidencialidad" title="Link to this heading">¶</a></h2>
-<p><strong>Control de Acceso Físico</strong></p>
+<p><strong>Control de acceso físico</strong></p>
 <ul class="simple">
-<li><p>Las medidas de control de acceso físico, entre otras, son implementadas por Amazon Web Services (AWS), que se utiliza para alojar nuestros servidores de KoboToolbox. Estas medidas incluyen, por ejemplo, videovigilancia y seguridad física de las instalaciones de servidores y redes, mantenimiento de control de acceso con tarjetas de identificación, limitación de acceso solo a personal autorizado. Para obtener una lista completa de detalles sobre las medidas técnicas y organizacionales de AWS para el control de acceso físico, <a class="reference external" href="https://aws.amazon.com/compliance/data-center/controls/">consulta este artículo</a> sobre controles de centros de datos proporcionados por AWS.</p></li>
+<li><p>Amazon Web Services (AWS), que se utiliza para alojar nuestros servidores de KoboToolbox, implementa, entre otras, medidas de control de acceso físico. Estas medidas incluyen, por ejemplo, videovigilancia y seguridad física de las instalaciones de servidores y redes, mantenimiento de control de acceso mediante tarjeta de identificación y restricción del acceso únicamente al personal autorizado. Para obtener una lista completa de los detalles sobre las medidas técnicas y organizativas de AWS para el control de acceso físico, <a class="reference external" href="https://aws.amazon.com/compliance/data-center/controls/">consulta este artículo</a> sobre los controles de centros de datos proporcionados por AWS.</p></li>
 </ul>
-<p><strong>Control de Acceso Electrónico</strong></p>
+<p><strong>Control de acceso electrónico</strong></p>
 <ul class="simple">
-<li><p>Todas las cuentas de KoboToolbox están protegidas con contraseña. Los/as usuarios/as reciben retroalimentación visual sobre la complejidad de su contraseña, lo que los/as alienta a seleccionar una contraseña más segura cuando sea aplicable. Solo se almacenan hashes de contraseñas cifradas en el servidor de KoboToolbox, utilizando el marco de código abierto predeterminado proporcionado por Django, que usa el algoritmo <a class="reference external" href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> con un hash SHA256. Las contraseñas en texto plano nunca se guardan en el servidor.</p></li>
+<li><p>Todas las cuentas de KoboToolbox están protegidas con contraseña. Los usuarios reciben retroalimentación visual sobre la complejidad de su contraseña, lo que los incentiva a elegir una contraseña más segura cuando corresponde. Solo se almacenan hashes de contraseñas cifradas en el servidor de KoboToolbox, utilizando el framework de código abierto predeterminado proporcionado por Django, que usa el algoritmo <a class="reference external" href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> con un hash SHA256. Las contraseñas en texto plano nunca se guardan en el servidor.</p></li>
 <li><p>Todo el contenido de la base de datos está cifrado en reposo (cifrado a nivel de disco).</p></li>
-<li><p>Los datos enviados al servidor están cifrados en tránsito utilizando SHA-256 con cifrado RSA.</p></li>
-<li><p>Los/as usuarios/as pueden <a class="reference internal" href="encrypting_forms.html"><span class="std std-doc">optar por habilitar también el cifrado de los datos de su proyecto (cifrado a nivel de datos)</span></a>, lo que los hace inaccesibles en todas las etapas del procesamiento de datos y requiere una clave privada para descifrarlos localmente.</p></li>
+<li><p>Los datos enviados al servidor están cifrados en tránsito mediante SHA-256 con cifrado RSA.</p></li>
+<li><p>Los usuarios pueden <a class="reference internal" href="encrypting_forms.html"><span class="std std-doc">optar por habilitar también el cifrado de los datos de su proyecto (cifrado a nivel de datos)</span></a>, lo que los hace inaccesibles en todas las etapas del procesamiento de datos y requiere una clave privada para descifrarlos localmente.</p></li>
 </ul>
-<p><strong>Control de Acceso Interno</strong></p>
+<p><strong>Control de acceso interno</strong></p>
 <ul class="simple">
-<li><p>Solo los/as administradores/as de sistemas autorizados/as pueden acceder al servidor de KoboToolbox. Solo pueden hacerlo con el propósito expreso de actualizar el software instalado o mantener la infraestructura del servidor.</p></li>
-<li><p>Los/as administradores/as de sistemas requieren autenticación adicional, incluida la autenticación de clave pública SSH, para acceder al servidor de KoboToolbox y autenticación de dos factores para acceder a los paneles de control proporcionados por AWS.</p></li>
-<li><p>AWS proporciona un registro de las acciones realizadas en la consola de AWS. Para las conexiones SSH a las instancias individuales del servidor de KoboToolbox, Kobo recolecta «eventos de acceso al sistema» por clave SSH, que luego se pueden relacionar con los/as usuarios/as autorizados/as.</p></li>
-<li><p>SSH está además protegido contra intentos de fuerza bruta y acceso no autorizado al limitar las conexiones a nivel de firewall solo a una pequeña lista de direcciones IP explícitamente permitidas.</p></li>
+<li><p>Solo los administradores de sistemas autorizados pueden acceder al servidor de KoboToolbox. Solo pueden hacerlo con el propósito expreso de actualizar el software instalado o mantener la infraestructura del servidor.</p></li>
+<li><p>Los administradores de sistemas requieren autenticación adicional, incluida la autenticación de clave pública SSH, para acceder al servidor de KoboToolbox, y autenticación de dos factores para acceder a los paneles de control proporcionados por AWS.</p></li>
+<li><p>AWS proporciona un registro de las acciones realizadas en la consola de AWS. Para las conexiones SSH a las instancias individuales del servidor de KoboToolbox, Kobo recopila «eventos de acceso al sistema» por clave SSH, que luego pueden vincularse a los usuarios autorizados.</p></li>
+<li><p>SSH está además protegido contra intentos de fuerza bruta y accesos no autorizados mediante la limitación de conexiones a nivel de firewall a una pequeña lista de direcciones IP explícitamente permitidas.</p></li>
 </ul>
-<p><strong>Protección de Datos por Diseño y por Defecto</strong></p>
+<p><strong>Protección de datos por diseño y por defecto</strong></p>
 <ul class="simple">
-<li><p>Solo se requiere información limitada para crear una cuenta de usuario/a de KoboToolbox.</p></li>
-<li><p>El personal de Kobo está obligado a cumplir con las reglas establecidas en las políticas de privacidad de Kobo.</p></li>
-<li><p>Los datos procesados en nombre del/de la usuario/a no son accedidos por Kobo.</p></li>
-<li><p>Los/as usuarios/as tienen la opción de aplicar cifrado avanzado. Esto garantiza que los datos se cifren utilizando una clave pública antes de enviarse a un servidor de KoboToolbox, y que solo se puedan descifrar con una clave privada en una computadora local. KoboToolbox también ofrece la posibilidad de eliminar información de forma masiva una vez que se ha recolectado, facilitando la seudonimización de datos personales (mediante la eliminación de identificadores).</p></li>
-<li><p>Consulta la subsección anterior «Control de Acceso Electrónico» para obtener detalles sobre la retroalimentación visual sobre la complejidad de la contraseña.</p></li>
+<li><p>Solo se requiere información limitada para crear una cuenta de usuario en KoboToolbox.</p></li>
+<li><p>El personal de Kobo está obligado a cumplir las normas establecidas en las políticas de privacidad de Kobo.</p></li>
+<li><p>Kobo no accede a los datos procesados en nombre del usuario.</p></li>
+<li><p>Los usuarios tienen la opción de aplicar cifrado avanzado. Esto garantiza que los datos se cifren con una clave pública antes de enviarse a un servidor de KoboToolbox, y que solo puedan descifrarse con una clave privada en un equipo local. KoboToolbox también ofrece la posibilidad de eliminar información de forma masiva una vez recolectada, lo que facilita la seudonimización de datos personales (mediante la eliminación de identificadores).</p></li>
+<li><p>Consulta la subsección anterior «Control de acceso electrónico» para obtener más detalles sobre la retroalimentación visual sobre la complejidad de la contraseña.</p></li>
 </ul>
 </section>
 <section id="integridad">
 <h2>Integridad<a class="headerlink" href="#integridad" title="Link to this heading">¶</a></h2>
-<p><strong>Control de Transferencia de Datos</strong></p>
+<p><strong>Control de transferencia de datos</strong></p>
 <ul class="simple">
 <li><p>Todos los datos en tránsito están protegidos mediante SHA-256 con cifrado RSA.</p></li>
 </ul>
-<p><strong>Control de Entrada de Datos</strong></p>
+<p><strong>Control de entrada de datos</strong></p>
 <ul class="simple">
-<li><p>Los/as usuarios/as controlan quién tiene permiso para ingresar datos según sus permisos de KoboToolbox. Los registros de acceso HTTP almacenados en el servidor incluyen el/la usuario/a autenticado/a para la mayoría de las solicitudes.</p></li>
+<li><p>Los usuarios controlan quién tiene permiso para ingresar datos según sus permisos en KoboToolbox. Los registros de acceso HTTP almacenados en el servidor incluyen el usuario autenticado para la mayoría de las solicitudes.</p></li>
 </ul>
 </section>
 <section id="disponibilidad-y-resiliencia">
-<h2>Disponibilidad y Resiliencia<a class="headerlink" href="#disponibilidad-y-resiliencia" title="Link to this heading">¶</a></h2>
+<h2>Disponibilidad y resiliencia<a class="headerlink" href="#disponibilidad-y-resiliencia" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Kobo realiza copias de seguridad diarias de todas las bases de datos en una ubicación remota separada. En caso de una interrupción crítica, todos los datos de los/as usuarios/as se restaurarán desde la copia de seguridad más reciente lo más rápido posible.</p></li>
-<li><p>Los firewalls bloquean todas las solicitudes externas excepto las conexiones SSH desde una pequeña lista de direcciones IP explícitamente permitidas. El tráfico HTTP y HTTPS público no puede conectarse directamente al servidor de KoboToolbox, sino que es atendido por el balanceador de carga de AWS, que luego lo reenvía a los servidores front-end de Kobo.</p></li>
-<li><p>Los servidores de KoboToolbox están configurados para usar múltiples instancias de servidor que se ejecutan simultáneamente y están configurados para aumentar el número de dichas instancias para evitar el impacto de cualquier falla localizada. En caso de cualquier otra falla que amenace la operación continua de aspectos críticos del software de KoboToolbox, los/as administradores/as de sistemas están disponibles para intervenir con poca antelación y restaurar el servicio.</p></li>
-<li><p>Los procedimientos de informes de Kobo incluyen alertas automatizadas, escalamiento de problemas reportados por usuarios/as y problemas autodetectados por el personal.</p></li>
-<li><p>Los planes de contingencia incluyen la disponibilidad de múltiples personas en múltiples ubicaciones geográficas que pueden responder a emergencias y restaurar el servicio.</p></li>
-<li><p>Los servidores de KoboToolbox tienen la capacidad demostrada de continuar operando en un estado degradado, recibiendo envíos mientras simultáneamente recuperan proyectos/envíos perdidos mediante recuperación puntual al minuto (PITR).</p></li>
-<li><p>Los/as usuarios/as que abusen del uso de sus cuentas al sobrecargar el servidor de KoboToolbox pueden ser suspendidos/as o su cuenta puede ser restringida.</p></li>
+<li><p>Kobo realiza copias de seguridad diarias de todas las bases de datos en una ubicación remota independiente. En caso de una interrupción crítica, todos los datos de los usuarios se restaurarán desde la copia de seguridad más reciente lo antes posible.</p></li>
+<li><p>Los firewalls bloquean todas las solicitudes externas, excepto las conexiones SSH provenientes de una pequeña lista de direcciones IP explícitamente permitidas. El tráfico HTTP y HTTPS público no puede conectarse directamente al servidor de KoboToolbox; en su lugar, es atendido por el balanceador de carga de AWS, que lo reenvía a los servidores front-end de Kobo.</p></li>
+<li><p>Los servidores de KoboToolbox están configurados para utilizar múltiples instancias de servidor en ejecución simultánea y están configurados para aumentar el número de dichas instancias y evitar el impacto de cualquier falla localizada. En caso de otras fallas que amenacen el funcionamiento continuo de aspectos críticos del software de KoboToolbox, los administradores de sistemas están disponibles para intervenir con poco tiempo de aviso y restablecer el servicio.</p></li>
+<li><p>Los procedimientos de reporte de Kobo incluyen alertas automatizadas, escalamiento de problemas reportados por usuarios y problemas detectados por el propio personal.</p></li>
+<li><p>Los planes de contingencia incluyen la disponibilidad de múltiples personas en múltiples ubicaciones geográficas que pueden responder a emergencias y restablecer el servicio.</p></li>
+<li><p>Los servidores de KoboToolbox tienen la capacidad demostrada de continuar operando en un estado degradado, recibiendo envíos mientras recuperan simultáneamente proyectos/envíos perdidos mediante recuperación puntual al minuto (PITR).</p></li>
+<li><p>Los usuarios que abusen del uso de sus cuentas sobrecargando el servidor de KoboToolbox pueden ser suspendidos o ver su cuenta restringida.</p></li>
 </ul>
 </section>
 </section>
@@ -182,7 +182,7 @@
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Seguridad de datos en KoboToolbox"
               class="feedback-button"
               target="_blank"
             >
@@ -198,145 +198,154 @@
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Seguridad de datos en KoboToolbox</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#confidencialidad">Confidencialidad</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#integridad">Integridad</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#disponibilidad-y-resiliencia">Disponibilidad y Resiliencia</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#disponibilidad-y-resiliencia">Disponibilidad y resiliencia</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -401,7 +410,7 @@
   <script>
     window.docs = {
       currentPagename: "is_my_data_safe",
-      currentTitle: "Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros",
+      currentTitle: "Seguridad de datos en KoboToolbox",
       currentUrl: ("index.html").replace("index.html", "is_my_data_safe.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

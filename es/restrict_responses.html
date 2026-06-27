@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Restringir Respuestas de Texto con Expresiones Regulares &#8212; documentación de KoboToolbox - </title>
+    <title>Usar expresiones regulares en XLSForm &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Agregar otro idioma en el panel del proyecto" href="language_dashboard.html" />
-    <link rel="prev" title="Agrupar preguntas y grupos repetidos" href="group_repeat.html" />
+    <link rel="next" title="Añadir lógica de salto a un XLSForm" href="skip_logic_xls.html" />
+    <link rel="prev" title="Usar funciones en XLSForm" href="functions_xls.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,105 +107,21 @@
 
         <section class="page__body" role="main">
           
-  <section id="restringir-respuestas-de-texto-con-expresiones-regulares">
-<h1>Restringir Respuestas de Texto con Expresiones Regulares<a class="headerlink" href="#restringir-respuestas-de-texto-con-expresiones-regulares" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/restrict_responses.md" class="reference">29 Jul 2025</a></p>
-<p>Una expresión regular, o regex, es un patrón de búsqueda utilizado para hacer coincidir caracteres específicos y rangos de caracteres dentro de una cadena. Se utiliza ampliamente para validar, buscar, extraer y restringir texto en la mayoría de los lenguajes de programación. KoboToolbox admite regex para controlar la longitud y los caracteres durante la entrada de datos a una pregunta en particular <em>(por ejemplo, controlar la entrada de un número de teléfono móvil a exactamente 10 dígitos, controlar la entrada de un correo electrónico válido, etc.)</em>.</p>
-<section id="para-usar-un-regex-en-kobotoolbox-sigue-estos-pasos">
-<h2>Para usar un regex en KoboToolbox, sigue estos pasos<a class="headerlink" href="#para-usar-un-regex-en-kobotoolbox-sigue-estos-pasos" title="Link to this heading">¶</a></h2>
-<ol class="arabic simple">
-<li><p>Prepara una pregunta de tipo <em>Texto</em>.</p></li>
-<li><p>Ve a la <em>Configuración</em> de la pregunta.</p></li>
-<li><p>Ve a <em>Criterios de Validación</em> y elige la opción <em>Introducir manualmente tu lógica de validación en código XLSForm</em>.</p></li>
-<li><p>En el cuadro <em>Código de Validación</em>, ingresa tu fórmula regex entre las comillas <code class="docutils literal notranslate"><span class="pre">('</span> <span class="pre">')</span></code> del formato <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'</span> <span class="pre">')</span></code>. Como referencia, el punto (<code class="docutils literal notranslate"><span class="pre">.</span></code>) se refiere a <em>“esta pregunta”</em>, mientras que la expresión regular dentro de las comillas (<code class="docutils literal notranslate"><span class="pre">'</span> <span class="pre">'</span></code>) debe cumplir con las reglas establecidas de regex.</p></li>
-<li><p>(Opcional) Agrega un <em>Mensaje de Error</em> personalizado para que la persona que ingresa datos lo vea cuando no cumpla con los criterios de regex.</p></li>
-</ol>
-<p><img alt="image" src="_images/regrex.jpg" /></p>
-<p>Regex también se puede codificar en XLSForm, bajo la columna <em>constraint</em>:</p>
-<p><strong>hoja survey</strong></p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-<th class="head text-left"><p>appearance</p></th>
-<th class="head text-left"><p>constraint</p></th>
-<th class="head text-left"><p>constraint_message</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>q1</p></td>
-<td class="text-left"><p>Número de teléfono móvil del/a encuestado/a</p></td>
-<td class="text-left"><p>numbers</p></td>
-<td class="text-left"><p>regex(., “^[0-9]{10}$”)</p></td>
-<td class="text-left"><p>Este valor debe tener solo 10 dígitos</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-<p>Alternativamente, puedes crear una pregunta de tipo <code class="docutils literal notranslate"><span class="pre">calculate</span></code> y luego definir el código regex bajo la columna <em>calculation</em>. Luego podrías usar esta variable tantas veces como sea necesario en la encuesta:</p>
-<p><strong>hoja survey</strong></p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-<th class="head text-left"><p>calculation</p></th>
-<th class="head text-left"><p>constraint</p></th>
-<th class="head text-left"><p>constraint_message</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p>calculate</p></td>
-<td class="text-left"><p>q0</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>“^[A-Z]{1}[a-z]{1,}\s[A-Z]{1}[a-z]{1,}$”</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>q1</p></td>
-<td class="text-left"><p>Nombre del/a Encuestador/a</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>regex(., ${q0})</p></td>
-<td class="text-left"><p>Por favor usa este formato: Kobe Bryant</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>text</p></td>
-<td class="text-left"><p>q2</p></td>
-<td class="text-left"><p>Nombre del/a Encuestado/a</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p>regex(., ${q0})</p></td>
-<td class="text-left"><p>Por favor usa este formato: Kobe Bryant</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>integer</p></td>
-<td class="text-left"><p>q3</p></td>
-<td class="text-left"><p>Edad del/a Encuestado/a</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="como-construyo-el-regex-que-necesito">
-<h2>¿Cómo construyo el regex que necesito?<a class="headerlink" href="#como-construyo-el-regex-que-necesito" title="Link to this heading">¶</a></h2>
-<p>Además de los ejemplos y consejos proporcionados a continuación, por favor visita
-<a class="reference external" href="http://www.regexr.com">este sitio web</a> para obtener más ayuda y ejemplos.</p>
-<p class="note">Regex en KoboToolbox siempre debe escribirse entre los apóstrofes <code>regex(., ' ')</code> como se muestra en los ejemplos.</p>
+  <section id="usar-expresiones-regulares-en-xlsform">
+<h1>Usar expresiones regulares en XLSForm<a class="headerlink" href="#usar-expresiones-regulares-en-xlsform" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d7c5254864f652f34ecb1d4bfe52ef2ddb1247e1/source/restrict_responses.md" class="reference">6 May 2026</a></p>
+<p>Una <strong>expresión regular</strong>, o regex, es un patrón de búsqueda que se utiliza para identificar caracteres específicos o rangos de caracteres dentro de un texto. Las expresiones regulares se usan comúnmente para validar, buscar, extraer o restringir la entrada de texto.</p>
+<p>En KoboToolbox, las expresiones regulares se utilizan principalmente para controlar cómo los usuarios ingresan datos. Por ejemplo, puedes restringir un número de teléfono a exactamente 10 dígitos, aplicar un formato de identificación específico o limitar el texto solo a letras mayúsculas.</p>
+<p>Este artículo ofrece una descripción general de los componentes más comunes de las expresiones regulares y ejemplos prácticos que puedes usar para validar y restringir la entrada de texto en tus formularios.</p>
+<p class="note">
+   Para obtener más información sobre el uso de expresiones regulares en tus formularios, consulta <a href="https://support.kobotoolbox.org/es/form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a> y <a href="https://support.kobotoolbox.org/es/form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a>.
+</p>
+<section id="componentes-comunes-de-regex">
+<h2>Componentes comunes de regex<a class="headerlink" href="#componentes-comunes-de-regex" title="Link to this heading">¶</a></h2>
+<p>Las expresiones regulares en KoboToolbox se escriben dentro de la función <code class="docutils literal notranslate"><span class="pre">regex()</span></code>. Por ejemplo, <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9]{10}$')</span></code> restringe una entrada a exactamente 10 dígitos.</p>
+<p>Las siguientes tablas describen los elementos de regex más utilizados.</p>
+<section id="anclajes-y-agrupaciones">
+<h3>Anclajes y agrupaciones<a class="headerlink" href="#anclajes-y-agrupaciones" title="Link to this heading">¶</a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Regex</p></th>
@@ -213,298 +129,243 @@
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">^</span></code></p></td>
-<td class="text-left"><p>El símbolo de intercalación coincide con el inicio de una cadena sin consumir ningún carácter.</p></td>
+<tr class="row-even"><td class="text-left"><p><code>^</code></p></td>
+<td class="text-left"><p>Coincide con el inicio de una cadena</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">$</span></code></p></td>
-<td class="text-left"><p>El símbolo de dólar coincide con el final de una cadena sin consumir ningún carácter.</p></td>
+<tr class="row-odd"><td class="text-left"><p><code>$</code></p></td>
+<td class="text-left"><p>Coincide con el final de una cadena</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[abc]</span></code></p></td>
-<td class="text-left"><p>Coincide con <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> o <code class="docutils literal notranslate"><span class="pre">c</span></code> desde dentro de los corchetes <code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>.</p></td>
+<tr class="row-even"><td class="text-left"><p><code>( )</code></p></td>
+<td class="text-left"><p>Agrupa caracteres</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[a-z]</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier carácter en minúscula de <code class="docutils literal notranslate"><span class="pre">a</span></code> a <code class="docutils literal notranslate"><span class="pre">z</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[A-Z]</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier carácter en mayúscula de <code class="docutils literal notranslate"><span class="pre">A</span></code> a <code class="docutils literal notranslate"><span class="pre">Z</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[0-9]</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier número entero de <code class="docutils literal notranslate"><span class="pre">0</span></code> a <code class="docutils literal notranslate"><span class="pre">9</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[a-zA-Z0-9]</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier carácter de <code class="docutils literal notranslate"><span class="pre">a</span></code> a <code class="docutils literal notranslate"><span class="pre">z</span></code> o <code class="docutils literal notranslate"><span class="pre">A</span></code> a <code class="docutils literal notranslate"><span class="pre">Z</span></code> o <code class="docutils literal notranslate"><span class="pre">0</span></code> a <code class="docutils literal notranslate"><span class="pre">9</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[^abc]</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier carácter <em>excepto</em> <code class="docutils literal notranslate"><span class="pre">a</span></code>, <code class="docutils literal notranslate"><span class="pre">b</span></code> o <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[^A-Z]</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier carácter <em>excepto</em> aquellos en el rango de <code class="docutils literal notranslate"><span class="pre">A</span></code> a <code class="docutils literal notranslate"><span class="pre">Z</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">(apple)</span></code></p></td>
-<td class="text-left"><p>El carácter de agrupación <code class="docutils literal notranslate"><span class="pre">(</span> <span class="pre">)</span></code> coincide con cualquier cosa que esté dentro del paréntesis.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code>|</code></p></td>
-<td class="text-left"><p>Una barra vertical coincide con cualquier elemento separado.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\</span></code></p></td>
-<td class="text-left"><p>Una barra invertida se usa para coincidir con el valor literal de cualquier metacarácter (por ejemplo, intenta usar <code class="docutils literal notranslate"><span class="pre">\.</span></code> o <code class="docutils literal notranslate"><span class="pre">\&#64;</span></code> o <code class="docutils literal notranslate"><span class="pre">\$</span></code> al construir regex).</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\number</span></code></p></td>
-<td class="text-left"><p>Coincide con el mismo carácter que coincidió más recientemente con el n<sup>ésimo</sup> (número usado) grupo de captura.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\s</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier <em>espacio</em> o <em>tabulación</em>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\b</span></code></p></td>
-<td class="text-left"><p>Coincide, sin consumir ningún carácter, inmediatamente entre un carácter que coincide con <code class="docutils literal notranslate"><span class="pre">\w</span></code> y un carácter que no coincide con <code class="docutils literal notranslate"><span class="pre">\w</span></code> (en cualquier orden). <code class="docutils literal notranslate"><span class="pre">\b</span></code> también se conoce como el <em>límite de palabra</em>.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\d</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier número equivalente <code class="docutils literal notranslate"><span class="pre">[0-9]</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\D</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier cosa que no sean números <code class="docutils literal notranslate"><span class="pre">(0</span> <span class="pre">a</span> <span class="pre">9)</span></code>.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\w</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier carácter de palabra (es decir, <code class="docutils literal notranslate"><span class="pre">a</span></code> a <code class="docutils literal notranslate"><span class="pre">z</span></code> o <code class="docutils literal notranslate"><span class="pre">A</span></code> a <code class="docutils literal notranslate"><span class="pre">Z</span></code> o <code class="docutils literal notranslate"><span class="pre">0</span></code> a <code class="docutils literal notranslate"><span class="pre">9</span></code> o <code class="docutils literal notranslate"><span class="pre">_</span></code>).</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\W</span></code></p></td>
-<td class="text-left"><p>Coincide con cualquier cosa que no sea lo que coincide con <code class="docutils literal notranslate"><span class="pre">\w</span></code> (es decir, coincide con comodines y espacios).</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">?</span></code></p></td>
-<td class="text-left"><p>Un signo de interrogación usado justo detrás de un carácter coincide u omite (si no es necesario) una coincidencia de carácter.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">*</span></code></p></td>
-<td class="text-left"><p>Un símbolo de asterisco usado justo detrás de un carácter coincide con cero o más caracteres consecutivos.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">+</span></code></p></td>
-<td class="text-left"><p>El símbolo de más usado justo detrás de un carácter coincide con uno o más caracteres consecutivos.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">{x}</span></code></p></td>
-<td class="text-left"><p>Coincide exactamente con <code class="docutils literal notranslate"><span class="pre">x</span></code> caracteres consecutivos.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">{x,}</span></code></p></td>
-<td class="text-left"><p>Coincide con al menos <code class="docutils literal notranslate"><span class="pre">x</span></code> caracteres consecutivos (o más).</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">{x,y}</span></code></p></td>
-<td class="text-left"><p>Coincide entre <code class="docutils literal notranslate"><span class="pre">x</span></code> e <code class="docutils literal notranslate"><span class="pre">y</span></code> caracteres consecutivos.</p></td>
+<tr class="row-odd"><td class="text-left"><p><code>|</code></p></td>
+<td class="text-left"><p>Coincide con un patrón u otro (OR lógico)</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="caracteres-con-acentos">
-<h2>Caracteres con acentos<a class="headerlink" href="#caracteres-con-acentos" title="Link to this heading">¶</a></h2>
+<section id="clases-de-caracteres">
+<h3>Clases de caracteres<a class="headerlink" href="#clases-de-caracteres" title="Link to this heading">¶</a></h3>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p><strong>Regex</strong></p></th>
-<th class="head text-left"><p><strong>Descripción</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[A-zÀ-ú]</span></code></p></td>
-<td class="text-left"><p>Acepta caracteres con acentos en minúsculas y mayúsculas</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[A-zÀ-ÿ]</span></code></p></td>
-<td class="text-left"><p>Acepta caracteres con acentos en minúsculas y mayúsculas pero incluyendo letras con diéresis (incluye [ ] ^ \ × ÷)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[A-Za-zÀ-ÿ]</span></code></p></td>
-<td class="text-left"><p>Acepta caracteres con acentos en minúsculas y mayúsculas pero sin incluir [ ] ^ \</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">[A-Za-zÀ-ÖØ-öø-ÿ]</span></code></p></td>
-<td class="text-left"><p>Acepta caracteres con acentos en minúsculas y mayúsculas pero sin incluir [ ] ^ \ × ÷</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="ejemplos-relacionados-con-el-uso-de-numeros">
-<h2>Ejemplos relacionados con el uso de números<a class="headerlink" href="#ejemplos-relacionados-con-el-uso-de-numeros" title="Link to this heading">¶</a></h2>
-<p class="note">Para todas las preguntas de tipo <code>text</code> que usan números, no olvides escribir <code>numbers</code> bajo la columna <code>appearance</code>.</p>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p><strong>Regex</strong></p></th>
-<th class="head text-left"><p><strong>Descripción</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9]{10}$')</span></code> o <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{10}$')</span></code></p></td>
-<td class="text-left"><p>Restringir número de teléfono móvil a diez dígitos</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9]{4}.[0-9]{2}.[0-9]{2}$')</span></code> o <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{4}\.\d{2}\.\d{2}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a <code class="docutils literal notranslate"><span class="pre">1234.56.78</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[01-99]{2}$')</span> <span class="pre">and</span> <span class="pre">(.</span> <span class="pre">&gt;=</span> <span class="pre">01)</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada entre <code class="docutils literal notranslate"><span class="pre">01</span></code> a <code class="docutils literal notranslate"><span class="pre">99</span></code> dígitos donde no se permite el formato de entrada de un solo número (como 1 o 2)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(12|345)$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a <code class="docutils literal notranslate"><span class="pre">12</span></code> o <code class="docutils literal notranslate"><span class="pre">345</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[1-9][0-9]{8}$')</span></code> o <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[^0][0-9]{8}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada de nueve dígitos donde el primer número no puede ser <code class="docutils literal notranslate"><span class="pre">0</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a un dígito entre <code class="docutils literal notranslate"><span class="pre">0</span></code> y <code class="docutils literal notranslate"><span class="pre">9</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{5}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a cinco dígitos entre <code class="docutils literal notranslate"><span class="pre">0</span></code> y <code class="docutils literal notranslate"><span class="pre">9</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{2}\.\d{3}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a dos dígitos y tres decimales (por ejemplo, <code class="docutils literal notranslate"><span class="pre">12.345</span></code>)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\d{2}(\.\d{3})?$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a dos dígitos y tres decimales (mientras que los decimales son opcionales) (por ejemplo, <code class="docutils literal notranslate"><span class="pre">12</span></code> o <code class="docutils literal notranslate"><span class="pre">12.345</span></code>)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9]{10}$')</span> <span class="pre">or</span> <span class="pre">regex(.,</span> <span class="pre">'^[0-9]{13}$')</span></code> o <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9]{17}$')</span></code> o <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([0-9]{10}|[0-9]{13}|[0-9]{17})$')</span></code> o <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([\d]{10}|[\d]{13}|[\d]{17})$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada solo a números de <code class="docutils literal notranslate"><span class="pre">10</span></code>, <code class="docutils literal notranslate"><span class="pre">13</span></code> o <code class="docutils literal notranslate"><span class="pre">17</span></code> dígitos</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="ejemplos-relacionados-con-el-uso-de-letras">
-<h2>Ejemplos relacionados con el uso de letras<a class="headerlink" href="#ejemplos-relacionados-con-el-uso-de-letras" title="Link to this heading">¶</a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p><strong>Regex</strong></p></th>
-<th class="head text-left"><p><strong>Descripción</strong></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[a-z]{1,6}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a cualquier letra en minúscula (<em>hasta 6 caracteres de longitud</em>)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z]{1,10}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a cualquier letra en mayúscula (<em>hasta 10 caracteres de longitud</em>)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(Apple|Orange|Banana)$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada solo a <code class="docutils literal notranslate"><span class="pre">Apple</span></code> o <code class="docutils literal notranslate"><span class="pre">Orange</span></code> o <code class="docutils literal notranslate"><span class="pre">Banana</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^p(ea|ai)r$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada solo a <code class="docutils literal notranslate"><span class="pre">pear</span></code> o <code class="docutils literal notranslate"><span class="pre">pair</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z]{1}[a-z]{1,}[</span> <span class="pre">]{1}[A-Z]{1}[a-z]{1,}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada del nombre de los/as beneficiarios/as donde las <em>iniciales del primer nombre y apellido están en mayúscula</em> por ejemplo, <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bryant</span></code></p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\w{1,}\s(\w{1,})?(\s)?\w{1,}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada del nombre de los/as beneficiarios/as con <em>primer nombre, segundo nombre (si lo hay) y apellido</em> por ejemplo, <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bean</span> <span class="pre">Bryant</span></code></p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([A-Z]{1}[a-z]{1,}\s)([A-Z]{1}[a-z]{1,}\s?)+$')</span></code> o <code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([A-Z]{1}[a-z]{1,}\s?)+$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada del nombre completo de los/as beneficiarios/as donde las <em>iniciales de los nombres están en mayúscula</em> y el nombre es bastante largo (a menudo mayor a 3 palabras) por ejemplo, <code class="docutils literal notranslate"><span class="pre">Samayamantri</span> <span class="pre">Venkata</span> <span class="pre">Rama</span> <span class="pre">Naga</span> <span class="pre">Butchi</span> <span class="pre">Anjaneya</span> <span class="pre">Satya</span> <span class="pre">Krishna</span> <span class="pre">Vijay</span></code> (este es un ejemplo de nombres del sur de la India)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(\D+)\s(\D+)\s?\1$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada del primer nombre de los/as beneficiarios/as (para que puedas capturar la ortografía exacta) donde <em>los/as encuestadores/as están obligados/as a ingresar el primer nombre de los/as beneficiarios/as dos veces</em> por ejemplo, <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bryant</span> <span class="pre">Kobe</span></code>. (Esto podría ser útil cuando estás tratando de documentar detalles de beneficiarios/as donde un error tipográfico podría costarte mucho)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^(\D+)\s(\D+)\s?\2$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada del apellido de los/as beneficiarios/as (para que puedas capturar la ortografía exacta) donde <em>los/as encuestadores/as están obligados/as a ingresar el apellido de los/as beneficiarios/as dos veces</em> por ejemplo, <code class="docutils literal notranslate"><span class="pre">Kobe</span> <span class="pre">Bryant</span> <span class="pre">Bryant</span></code>. <em>(Esto podría ser útil cuando estás tratando de documentar detalles de beneficiarios/as donde un error tipográfico podría costarte mucho)</em> |</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^colou?r$')</span></code></p></td>
-<td class="text-left"><p>Restringir un carácter dentro de una palabra usando el <code class="docutils literal notranslate"><span class="pre">?</span></code> (cuantificador) por ejemplo, permitir <code class="docutils literal notranslate"><span class="pre">color</span></code> o <code class="docutils literal notranslate"><span class="pre">colour</span></code> como entrada</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^ah*!$')</span></code></p></td>
-<td class="text-left"><p>Restringir un carácter dentro de una palabra usando el <code class="docutils literal notranslate"><span class="pre">*</span></code> (cuantificador) por ejemplo, permitir <code class="docutils literal notranslate"><span class="pre">a!</span></code> o <code class="docutils literal notranslate"><span class="pre">ah!</span></code> o <code class="docutils literal notranslate"><span class="pre">ahh!</span></code> o <code class="docutils literal notranslate"><span class="pre">ahhh!</span></code> y así sucesivamente como entrada</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^ah+!$')</span></code></p></td>
-<td class="text-left"><p>Restringir un carácter dentro de una palabra usando el <code class="docutils literal notranslate"><span class="pre">+</span></code> (cuantificador) por ejemplo, permitir <code class="docutils literal notranslate"><span class="pre">ah!</span></code> o <code class="docutils literal notranslate"><span class="pre">ahh!</span></code> o <code class="docutils literal notranslate"><span class="pre">ahhh!</span></code> y así sucesivamente como entrada</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\D$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a un <em>carácter que no sea dígito</em> (por ejemplo, <code class="docutils literal notranslate"><span class="pre">a</span></code> o <code class="docutils literal notranslate"><span class="pre">c</span></code> o <code class="docutils literal notranslate"><span class="pre">!</span></code> o <code class="docutils literal notranslate"><span class="pre">#</span></code> o <code class="docutils literal notranslate"><span class="pre">%</span></code> etc.)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\D{5</span> <span class="pre">}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada a <em>cinco caracteres que no sean dígitos</em> (por ejemplo, <code class="docutils literal notranslate"><span class="pre">aZcB!#%</span></code> etc.)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z\s]+$')</span></code></p></td>
-<td class="text-left"><p>Restringir toda la entrada de texto a mayúsculas, excluyendo caracteres especiales (! &#64; # $ % ^ &amp; * ( ) . , ? / « “ etc.)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z\W]+$')</span></code></p></td>
-<td class="text-left"><p>Restringir toda la entrada de texto a mayúsculas, incluyendo caracteres especiales (! &#64; # $ % ^ &amp; * ( ) . , ? / « “ etc.)</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[a-z\s]+$')</span></code></p></td>
-<td class="text-left"><p>Restringir toda la entrada de texto a minúsculas, excluyendo caracteres especiales (! &#64; # $ % ^ &amp; * ( ) . , ? / « “ etc.)</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[a-z\W]+$')</span></code></p></td>
-<td class="text-left"><p>Restringir toda la entrada de texto a minúsculas, incluyendo caracteres especiales (! &#64; # $ % ^ &amp; * ( ) . , ? / « “ etc.)</p></td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="ejemplos-relacionados-con-el-uso-de-una-combinacion-de-letras-y-numeros">
-<h2>Ejemplos relacionados con el uso de una combinación de letras y números<a class="headerlink" href="#ejemplos-relacionados-con-el-uso-de-una-combinacion-de-letras-y-numeros" title="Link to this heading">¶</a></h2>
-<table class="docutils align-default">
-<thead>
-<tr class="row-odd"><th class="head text-left"><p>XLSForm Regex</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Regex</p></th>
 <th class="head text-left"><p>Descripción</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\w$')</span></code></p></td>
-<td class="text-left"><p>Restringir un carácter que coincida entre <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">z</span></code> o <code class="docutils literal notranslate"><span class="pre">A</span></code> y <code class="docutils literal notranslate"><span class="pre">Z</span></code> o <code class="docutils literal notranslate"><span class="pre">0</span></code> y <code class="docutils literal notranslate"><span class="pre">9</span></code> o <code class="docutils literal notranslate"><span class="pre">_</span></code> (es decir, coincidir un carácter de <code class="docutils literal notranslate"><span class="pre">[a-zA-Z0-9_]</span></code>)</p></td>
+<tr class="row-even"><td class="text-left"><p><code>[abc]</code></p></td>
+<td class="text-left"><p>Coincide con a, b o c</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\w{3}$')</span></code></p></td>
-<td class="text-left"><p>Restringir tres caracteres que coincidan entre <code class="docutils literal notranslate"><span class="pre">a</span></code> y <code class="docutils literal notranslate"><span class="pre">z</span></code> o <code class="docutils literal notranslate"><span class="pre">A</span></code> y <code class="docutils literal notranslate"><span class="pre">Z</span></code> o <code class="docutils literal notranslate"><span class="pre">0</span></code> y <code class="docutils literal notranslate"><span class="pre">9</span></code> o <code class="docutils literal notranslate"><span class="pre">_</span></code> (es decir, coincidir un carácter de <code class="docutils literal notranslate"><span class="pre">[a-zA-Z0-9_]</span></code>)</p></td>
+<tr class="row-odd"><td class="text-left"><p><code>[a-z]</code></p></td>
+<td class="text-left"><p>Coincide con cualquier letra minúscula</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[A-Z]{3}[_][A-Z]{3}[_][0-9]{4}[_][0-9]{4}$')</span></code></p></td>
-<td class="text-left"><p>Restringir tu ID de beneficiario/a a un formato específico por ejemplo, <code class="docutils literal notranslate"><span class="pre">CAR_PRC_2020_0048</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code>[A-Z]</code></p></td>
+<td class="text-left"><p>Coincide con cualquier letra mayúscula</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^CAR-PRC-2020-[0-9]{4}$')</span></code></p></td>
-<td class="text-left"><p>Restringir tu ID de beneficiario/a a un formato específico por ejemplo, <code class="docutils literal notranslate"><span class="pre">CAR-PRC-2020-0048</span></code> (<em>donde los/as encuestadores/as deben ingresar una coincidencia exacta de <code class="docutils literal notranslate"><span class="pre">CAR</span></code> a <code class="docutils literal notranslate"><span class="pre">-</span></code> es decir, <code class="docutils literal notranslate"><span class="pre">CAR-PRC-2020-</span></code> y pueden ingresar cualquier número de serie de 4 dígitos</em>)</p></td>
+<tr class="row-odd"><td class="text-left"><p><code>[0-9]</code></p></td>
+<td class="text-left"><p>Coincide con cualquier dígito del 0 al 9</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code>regex(., “^[$|\£]\d{3}$”)</code></p></td>
-<td class="text-left"><p>Restringir una entrada de moneda de <em>tres dígitos</em> con un signo de moneda (ya sea <code class="docutils literal notranslate"><span class="pre">dólar</span></code> o <code class="docutils literal notranslate"><span class="pre">libra</span></code>) al frente (por ejemplo, <code class="docutils literal notranslate"><span class="pre">$999</span></code> o <code class="docutils literal notranslate"><span class="pre">£500</span></code>)</p></td>
+<tr class="row-even"><td class="text-left"><p><code>[a-zA-Z0-9]</code></p></td>
+<td class="text-left"><p>Coincide con letras o dígitos</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\W*(\w+\b\W*){3}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada exacta del número de palabras (por ejemplo, para restringir exactamente 3 palabras <code class="docutils literal notranslate"><span class="pre">I</span> <span class="pre">love</span> <span class="pre">you.</span></code>)</p></td>
+<tr class="row-odd"><td class="text-left"><p><code>[^abc]</code></p></td>
+<td class="text-left"><p>Coincide con cualquier carácter excepto a, b o c</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^\W*(\w+\b\W*){3,5}$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada del número de palabras (por ejemplo, para restringir un rango de palabras digamos de <code class="docutils literal notranslate"><span class="pre">3</span></code> a <code class="docutils literal notranslate"><span class="pre">5</span></code>)</p></td>
+<tr class="row-even"><td class="text-left"><p><code>[^A-Z]</code></p></td>
+<td class="text-left"><p>Coincide con cualquier carácter excepto letras mayúsculas</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="ejemplos-relacionados-con-la-restriccion-de-entradas-de-correo-electronico-validas">
-<h2>Ejemplos relacionados con la restricción de entradas de correo electrónico válidas<a class="headerlink" href="#ejemplos-relacionados-con-la-restriccion-de-entradas-de-correo-electronico-validas" title="Link to this heading">¶</a></h2>
-<p class="note">Estos ejemplos son puramente ilustrativos y deben ajustarse
-para tu caso de uso. Usar regex para restringir direcciones de correo electrónico no
-garantiza que sean válidas, solo que siguen un patrón esperado.</p>
+<section id="atajos-de-caracteres-especiales">
+<h3>Atajos de caracteres especiales<a class="headerlink" href="#atajos-de-caracteres-especiales" title="Link to this heading">¶</a></h3>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p><strong>Regex</strong></p></th>
-<th class="head text-left"><p><strong>Descripción</strong></p></th>
+<tr class="row-odd"><th class="head text-left"><p>Regex</p></th>
+<th class="head text-left"><p>Descripción</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[a-zA-Z0-9._%+-]+&#64;[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*(\.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)*\.[a-zA-Z]{2,}$')</span></code></p></td>
-<td class="text-left"><p>Restringir entrada a dirección de correo electrónico válida (por ejemplo, <code class="docutils literal notranslate"><span class="pre">example.domain.com</span></code> o <code class="docutils literal notranslate"><span class="pre">example.domain.com.np)</span></code>.</p></td>
+<tr class="row-even"><td class="text-left"><p><code>\d</code></p></td>
+<td class="text-left"><p>Coincide con cualquier dígito (equivalente a [0-9])</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>\D</code></p></td>
+<td class="text-left"><p>Coincide con cualquier carácter que no sea un dígito</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>\w</code></p></td>
+<td class="text-left"><p>Coincide con cualquier letra, número o guión bajo (<code class="docutils literal notranslate"><span class="pre">_</span></code>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>\W</code></p></td>
+<td class="text-left"><p>Coincide con cualquier carácter excepto letras, números y guiones bajos (<code class="docutils literal notranslate"><span class="pre">_</span></code>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>\s</code></p></td>
+<td class="text-left"><p>Coincide con un espacio o tabulación</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>\b</code></p></td>
+<td class="text-left"><p>Coincide con un límite de palabra</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\.</span></code></p></td>
+<td class="text-left"><p>Coincide con un punto literal (<code>.</code>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>\&#64;</code></p></td>
+<td class="text-left"><p>Coincide con un <code>&#64;</code> literal</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>\$</code></p></td>
+<td class="text-left"><p>Coincide con un <code>$</code> literal</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">\\</span></code></p></td>
+<td class="text-left"><p>Coincide con una barra invertida literal (<code>\</code>)</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>\number</code></p></td>
+<td class="text-left"><p>Hace referencia a un grupo previamente identificado</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="ejemplos-relacionados-con-el-uso-de-entradas-de-tiempo">
-<h2>Ejemplos relacionados con el uso de entradas de tiempo<a class="headerlink" href="#ejemplos-relacionados-con-el-uso-de-entradas-de-tiempo" title="Link to this heading">¶</a></h2>
+<section id="cuantificadores">
+<h3>Cuantificadores<a class="headerlink" href="#cuantificadores" title="Link to this heading">¶</a></h3>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p><strong>Regex</strong></p></th>
-<th class="head text-left"><p><strong>Descripción</strong></p></th>
+<tr class="row-odd"><th class="head text-left"><p>Regex</p></th>
+<th class="head text-left"><p>Descripción</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([00-23]{0,2}:[00-59]{0,2}:[00-59]{0,2})$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada de tiempo en formato de <code class="docutils literal notranslate"><span class="pre">24</span></code> horas</p></td>
+<tr class="row-even"><td class="text-left"><p><code>?</code></p></td>
+<td class="text-left"><p>Coincide con cero o una ocurrencia</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^([00-12]{0,2}:[00-59]{0,2}:[00-59]{0,2})$')</span></code></p></td>
-<td class="text-left"><p>Restringir una entrada de tiempo en formato de <code class="docutils literal notranslate"><span class="pre">12</span></code> horas</p></td>
+<tr class="row-odd"><td class="text-left"><p><code>*</code></p></td>
+<td class="text-left"><p>Coincide con cero o más ocurrencias</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>+</code></p></td>
+<td class="text-left"><p>Coincide con una o más ocurrencias</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>{x}</code></p></td>
+<td class="text-left"><p>Coincide con exactamente x ocurrencias</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>{x,}</code></p></td>
+<td class="text-left"><p>Coincide con al menos x ocurrencias</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>{x,y}</code></p></td>
+<td class="text-left"><p>Coincide con entre x e y ocurrencias</p></td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="consideraciones-al-usar-regex">
-<h2>Consideraciones al usar regex<a class="headerlink" href="#consideraciones-al-usar-regex" title="Link to this heading">¶</a></h2>
-<ul class="simple">
-<li><p>Si deseas usar una restricción regex en un número en una pregunta de tipo <code class="docutils literal notranslate"><span class="pre">text</span></code>,
-asegúrate de <em>siempre</em> tener el valor <code class="docutils literal notranslate"><span class="pre">numbers</span></code> bajo la columna <code class="docutils literal notranslate"><span class="pre">appearance</span></code>.
-Esto restringe la visualización de letras, haciendo que solo los números sean visibles para
-las entradas.</p></li>
-<li><p>La aplicación de Android de KoboCollect y Enketo se comportan de manera diferente con su manejo de
-expresiones regex. KoboCollect se comporta como si hubieras usado los anclajes <code class="docutils literal notranslate"><span class="pre">^</span></code> y <code class="docutils literal notranslate"><span class="pre">$</span></code>
-alrededor de la expresión (incluso si no los has usado), mientras que Enketo requiere
-los anclajes como obligatorios para una coincidencia exacta.</p></li>
-</ul>
+</section>
+<section id="ejemplos-comunes">
+<h2>Ejemplos comunes<a class="headerlink" href="#ejemplos-comunes" title="Link to this heading">¶</a></h2>
+<p>Los siguientes ejemplos pueden usarse como <a class="reference external" href="https://support.kobotoolbox.org/es/constraints_xls.html">restricciones</a> o <a class="reference external" href="https://support.kobotoolbox.org/es/validation_criteria.html">criterios de validación</a> en tus formularios.</p>
+<section id="expresiones-regex-comunes-con-numeros">
+<h3>Expresiones regex comunes con números<a class="headerlink" href="#expresiones-regex-comunes-con-numeros" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Regex</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^\d+$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a números</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^\d{2}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a 2 dígitos</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^\d{2,4}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a 2-4 dígitos</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^\d{10}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a 10 dígitos</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^[1-9][0-9]?$|^100$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a un número entre 1 y 100 (por ejemplo, para un porcentaje)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^[1-9][0-9]{8}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a 9 dígitos; el primer dígito no puede ser 0</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^\d{2}.\d{3}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a un número con formato 12.345</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^(\d{10}|\d{13}|\d{17})$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a 10, 13 o 17 dígitos</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^(12|345)$”)</code></p></td>
+<td class="text-left"><p>La entrada debe ser 12 o 345</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">regex(.,</span> <span class="pre">'^[0-9+]{7,15}$')</span></code></p></td>
+<td class="text-left"><p>Limitar la entrada a un número de teléfono (incluido el signo <code class="docutils literal notranslate"><span class="pre">+</span></code> opcional)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="expresiones-regex-comunes-con-letras">
+<h3>Expresiones regex comunes con letras<a class="headerlink" href="#expresiones-regex-comunes-con-letras" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Regex</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^\D*$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a letras, espacios y símbolos (sin números)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^[A-Za-z]+$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a letras</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^[A-Za-z\s]+$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a letras y espacios</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^[a-z]{1,6}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a entre 1 y 6 letras minúsculas</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^[A-Z]{1,10}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a entre 1 y 10 letras mayúsculas</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^(Apple|Orange|Banana)$”)</code></p></td>
+<td class="text-left"><p>La entrada debe coincidir con una palabra de la lista</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^colou?r$”)</code></p></td>
+<td class="text-left"><p>Permite color o colour</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^[A-Z\s]+$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada solo a letras mayúsculas y espacios</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^[a-z_]+$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a letras minúsculas y guiones bajos (<code>_</code>)</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="expresiones-regex-comunes-con-letras-y-numeros">
+<h3>Expresiones regex comunes con letras y números<a class="headerlink" href="#expresiones-regex-comunes-con-letras-y-numeros" title="Link to this heading">¶</a></h3>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Regex</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^\w{3}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a exactamente 3 letras, dígitos o guiones bajos (<code>_</code>)</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^[A-Z]{1}[0-9]{8}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a una letra y ocho números</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^CAR-PRC-2020-\d{4}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a un formato de ID específico</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code>regex(., “^\W*(\w+\b\W*){3}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a exactamente 3 palabras</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code>regex(., “^[a-zA-Z0-9._%+-]+&#64;[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*(\.[a-zA-Z0-9]+(-[a-zA-Z0-9]+)*)*\.[a-zA-Z]{2,}$”)</code></p></td>
+<td class="text-left"><p>Limitar la entrada a un formato de correo electrónico común</p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+  Para obtener ayuda adicional para construir y probar patrones, visita: <a href="http://www.regexr.com/">http://www.regexr.com/</a>
+</p></section>
 </section>
 </section>
 
@@ -524,7 +385,7 @@ los anclajes como obligatorios para una coincidencia exacta.</p></li>
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Restringir Respuestas de Texto con Expresiones Regulares"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Usar expresiones regulares en XLSForm"
               class="feedback-button"
               target="_blank"
             >
@@ -540,151 +401,153 @@ los anclajes como obligatorios para una coincidencia exacta.</p></li>
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Restringir Respuestas de Texto con Expresiones Regulares</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#para-usar-un-regex-en-kobotoolbox-sigue-estos-pasos">Para usar un regex en KoboToolbox, sigue estos pasos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#como-construyo-el-regex-que-necesito">¿Cómo construyo el regex que necesito?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#caracteres-con-acentos">Caracteres con acentos</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ejemplos-relacionados-con-el-uso-de-numeros">Ejemplos relacionados con el uso de números</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ejemplos-relacionados-con-el-uso-de-letras">Ejemplos relacionados con el uso de letras</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ejemplos-relacionados-con-el-uso-de-una-combinacion-de-letras-y-numeros">Ejemplos relacionados con el uso de una combinación de letras y números</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ejemplos-relacionados-con-la-restriccion-de-entradas-de-correo-electronico-validas">Ejemplos relacionados con la restricción de entradas de correo electrónico válidas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ejemplos-relacionados-con-el-uso-de-entradas-de-tiempo">Ejemplos relacionados con el uso de entradas de tiempo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#consideraciones-al-usar-regex">Consideraciones al usar regex</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Usar expresiones regulares en XLSForm</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#componentes-comunes-de-regex">Componentes comunes de regex</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ejemplos-comunes">Ejemplos comunes</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -749,7 +612,7 @@ los anclajes como obligatorios para una coincidencia exacta.</p></li>
   <script>
     window.docs = {
       currentPagename: "restrict_responses",
-      currentTitle: "Restringir Respuestas de Texto con Expresiones Regulares",
+      currentTitle: "Usar expresiones regulares en XLSForm",
       currentUrl: ("index.html").replace("index.html", "restrict_responses.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

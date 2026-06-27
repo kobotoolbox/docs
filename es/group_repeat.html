@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Agrupar preguntas y grupos repetidos &#8212; documentación de KoboToolbox - </title>
+    <title>Grupos y grupos de repetición en el Formbuilder &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Restringir Respuestas de Texto con Expresiones Regulares" href="restrict_responses.html" />
-    <link rel="prev" title="Agregar preguntas de selección en cascada en el editor de formularios" href="cascading_select.html" />
+    <link rel="next" title="Agregar una matriz de preguntas usando el Formbuilder" href="matrix_response.html" />
+    <link rel="prev" title="Opciones de preguntas en el Formbuilder" href="question_options.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,105 +107,108 @@
 
         <section class="page__body" role="main">
           
-  <section id="agrupar-preguntas-y-grupos-repetidos">
-<h1>Agrupar preguntas y grupos repetidos<a class="headerlink" href="#agrupar-preguntas-y-grupos-repetidos" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/a4227085bc495cc72c9380430577b0e092d101bb/source/group_repeat.md" class="reference">25 ago 2025</a></p>
-<iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>Agrupar preguntas ayuda a organizar preguntas relacionadas en secciones, añade estructura a tu formulario y facilita la navegación. Por ejemplo, todas las preguntas demográficas pueden agruparse juntas en una sección del formulario.</p>
-<p>Los/as usuarios/as pueden necesitar agrupar preguntas por varias razones:</p>
+  <section id="grupos-y-grupos-de-repeticion-en-el-formbuilder">
+<h1>Grupos y grupos de repetición en el Formbuilder<a class="headerlink" href="#grupos-y-grupos-de-repeticion-en-el-formbuilder" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/group_repeat.md" class="reference">23 Apr 2026</a></p>
+<iframe src="https://www.youtube.com/embed/nmPACLvYnUI?si=mkUi9RBLNHObj9ei&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>Agrupar preguntas ayuda a organizar preguntas relacionadas en secciones, añade estructura al formulario y facilita la navegación. Por ejemplo, todas las preguntas demográficas pueden agruparse en una sola sección del formulario.</p>
+<p>Los usuarios pueden necesitar agrupar preguntas por diversas razones:</p>
 <ul class="simple">
-<li><p><strong>Estructurar el cuestionario:</strong> Las preguntas con temas o atributos comunes pueden agruparse juntas en una sola sección.</p></li>
+<li><p><strong>Estructurar el cuestionario:</strong> Las preguntas con temas o atributos comunes pueden agruparse en una sola sección.</p></li>
 <li><p><strong>Mostrar un conjunto de preguntas por página:</strong> Las preguntas agrupadas pueden mostrarse en páginas o pantallas separadas durante la recolección de datos.</p></li>
-<li><p><strong>Omitir un grupo de preguntas:</strong> Se puede añadir lógica de salto a todo el grupo en lugar de añadirla a cada pregunta individual.</p></li>
-<li><p><strong>Crear un listado:</strong> Los grupos de preguntas pueden repetirse, por ejemplo para encuestas de hogares o seguimiento de indicadores.</p></li>
+<li><p><strong>Omitir un grupo de preguntas:</strong> La lógica de omisión puede aplicarse a todo el grupo en lugar de añadirla a cada pregunta individualmente.</p></li>
+<li><p><strong>Crear un grupo:</strong> Los grupos de preguntas pueden repetirse, por ejemplo en encuestas de hogares o seguimiento de indicadores.</p></li>
 </ul>
-<p>Este artículo cubre cómo crear y manejar grupos de preguntas y <a class="reference internal" href="#repeating-a-question-group"><span class="xref myst">grupos repetidos</span></a> en el editor de formularios de KoboToolbox (Formbuilder).</p>
-<section id="crear-y-manejar-grupos-de-preguntas">
-<h2>Crear y manejar grupos de preguntas<a class="headerlink" href="#crear-y-manejar-grupos-de-preguntas" title="Link to this heading">¶</a></h2>
-<p>El editor de formularios facilita agrupar preguntas, añadir preguntas a grupos, eliminar preguntas de grupos y reordenar preguntas dentro de un grupo.</p>
+<p>Este artículo explica cómo:</p>
+<ul class="simple">
+<li><p>Crear, añadir, eliminar y reordenar preguntas en un grupo desde el editor de formularios de KoboToolbox (Formbuilder)</p></li>
+<li><p>Usar subgrupos y <a class="reference internal" href="#repetir-un-grupo-de-preguntas">grupos de repetición</a></p></li>
+<li><p>Ajustar la <a class="reference internal" href="#configuracion-del-grupo-de-preguntas">configuración del grupo</a>, como las opciones de visualización y la lógica de omisión</p></li>
+</ul>
+<section id="crear-y-gestionar-grupos-de-preguntas">
+<h2>Crear y gestionar grupos de preguntas<a class="headerlink" href="#crear-y-gestionar-grupos-de-preguntas" title="Link to this heading">¶</a></h2>
+<p>El Formbuilder facilita agrupar preguntas, añadir preguntas a grupos, eliminar preguntas de grupos y reordenar preguntas dentro de un grupo.</p>
 <section id="agrupar-un-conjunto-de-preguntas">
 <h3>Agrupar un conjunto de preguntas<a class="headerlink" href="#agrupar-un-conjunto-de-preguntas" title="Link to this heading">¶</a></h3>
 <p>Para crear un grupo de preguntas, sigue los pasos a continuación:</p>
 <ol class="arabic simple">
-<li><p>Crea un conjunto de preguntas que te gustaría agrupar juntas.</p></li>
+<li><p>Elabora un conjunto de preguntas que desees agrupar.</p></li>
 <li><p>Selecciona las preguntas usando la tecla <strong>CTRL</strong> (Windows) o la tecla <strong>Command</strong> (Mac).</p></li>
 <li><p>Haz clic en <i class="k-icon-group"></i> <strong>Crear grupo con las preguntas seleccionadas</strong> en la barra de menú superior izquierda.</p></li>
 </ol>
 <p><img alt="image" src="_images/grouping_questions.png" /></p>
-<p>Tu nuevo grupo aparecerá encerrado dentro de un cuadro sombreado, distinguiéndolo de las preguntas estándar. También puedes cambiar la etiqueta del grupo, que se mostrará en la parte superior del grupo en el formulario.</p>
+<p>El nuevo grupo aparecerá dentro de un recuadro sombreado, diferenciándolo de las preguntas estándar. También puedes cambiar la etiqueta del grupo, que se mostrará en la parte superior del grupo en el formulario.</p>
 <p class="note">
-    <b>Nota:</b> Alternativamente, puedes crear una sola pregunta, seleccionar la pregunta y hacer clic en <b>Crear grupo</b>. Luego, puedes añadir más preguntas dentro del grupo, como se describe a continuación.
+    <b>Nota:</b> También puedes crear una sola pregunta, seleccionarla y hacer clic en <b>Agregar grupo</b>. Luego puedes añadir más preguntas dentro del grupo, como se describe a continuación.
 </p>
 </section>
 <section id="anadir-preguntas-dentro-de-un-grupo">
 <h3>Añadir preguntas dentro de un grupo<a class="headerlink" href="#anadir-preguntas-dentro-de-un-grupo" title="Link to this heading">¶</a></h3>
-<p>Coloca el cursor en cualquier lugar dentro del grupo donde quieras añadir una nueva pregunta. Haz clic en un <i class="k-icon-plus"></i> <strong>signo</strong> dentro del grupo para añadir una nueva pregunta.</p>
+<p>Coloca el cursor en cualquier lugar dentro del grupo donde desees añadir una nueva pregunta. Haz clic en el <i class="k-icon-plus"></i> <strong>signo más</strong> dentro del grupo para añadir una nueva pregunta.</p>
 <p class="note">
-    <b>Nota:</b> Si haces clic en el <i class="k-icon-plus"> </i><b>signo</b> que está ubicado fuera del grupo, estarás añadiendo una pregunta fuera del grupo.
+    <b>Nota:</b> Si haces clic en el <i class="k-icon-plus"> </i><b>signo más</b> que está fuera del grupo, añadirás una pregunta fuera del grupo.
 </p>
 <p>También puedes arrastrar y soltar cualquier pregunta existente dentro de un grupo de preguntas.</p>
 </section>
 <section id="eliminar-preguntas-de-un-grupo">
 <h3>Eliminar preguntas de un grupo<a class="headerlink" href="#eliminar-preguntas-de-un-grupo" title="Link to this heading">¶</a></h3>
-<p>Para eliminar una pregunta de un grupo pero mantenerla en el formulario, selecciona la pregunta y arrástrala fuera del grupo.</p>
-<p>Para eliminar permanentemente una pregunta del formulario, haz clic en <i class="k-icon-trash"></i> <strong>Eliminar pregunta</strong> desde el menú de la pregunta a la derecha, luego haz clic en <strong>OK</strong>.</p>
+<p>Para eliminar una pregunta de un grupo pero conservarla en el formulario, selecciona la pregunta y arrástrala fuera del grupo.</p>
+<p>Para eliminar permanentemente una pregunta del formulario, haz clic en <i class="k-icon-trash"></i> <strong>Eliminar pregunta</strong> en el menú de la pregunta a la derecha y luego haz clic en <strong>OK</strong>.</p>
 </section>
 <section id="reordenar-una-pregunta-dentro-de-un-grupo">
 <h3>Reordenar una pregunta dentro de un grupo<a class="headerlink" href="#reordenar-una-pregunta-dentro-de-un-grupo" title="Link to this heading">¶</a></h3>
-<p>Puedes reordenar preguntas dentro de un grupo seleccionando la pregunta y arrastrándola a la posición deseada (arriba o abajo).</p>
+<p>Puedes reordenar las preguntas dentro de un grupo seleccionando la pregunta y arrastrándola a la posición deseada (hacia arriba o hacia abajo).</p>
 </section>
 <section id="eliminar-un-grupo-de-preguntas">
 <h3>Eliminar un grupo de preguntas<a class="headerlink" href="#eliminar-un-grupo-de-preguntas" title="Link to this heading">¶</a></h3>
-<p>Si ya no necesitas un grupo de preguntas, puedes desagruparlas o eliminar el grupo completo. Para hacer esto, haz clic en el botón <i class="k-icon-trash"></i> <strong>Eliminar</strong> del encabezado del grupo.</p>
-<p>Aparecerá un cuadro de diálogo pidiéndote que confirmes si deseas separar el grupo o eliminar todo.</p>
+<p>Si ya no necesitas un grupo de preguntas, puedes desagruparlas o eliminar el grupo completo. Para hacerlo, haz clic en el botón <i class="k-icon-trash"></i> <strong>Eliminar</strong> en el encabezado del grupo.</p>
+<p>Aparecerá un cuadro de diálogo preguntándote si deseas dividir el grupo o eliminar todo.</p>
 <ul class="simple">
-<li><p>Haz clic en <strong>DESAGRUPAR</strong> para eliminar el grupo manteniendo las preguntas en el formulario.</p></li>
+<li><p>Haz clic en <strong>DESAGRUPAR</strong> para eliminar el grupo conservando las preguntas en el formulario.</p></li>
 <li><p>Haz clic en <strong>ELIMINAR TODO</strong> para eliminar tanto el grupo como todas sus preguntas.</p></li>
 </ul>
+<p class="note">
+    <b>Nota:</b> Un grupo de preguntas puede crearse o colocarse dentro de otro grupo. Esto se conoce como <b>subgrupos</b>. Los <a href="https://support.kobotoolbox.org/es/group_repeat.html#repeating-a-question-group">grupos de repetición</a> también pueden anidarse.
+</p>
 </section>
-<section id="grupos-anidados">
-<h3>Grupos anidados<a class="headerlink" href="#grupos-anidados" title="Link to this heading">¶</a></h3>
-<p>Un grupo de preguntas puede crearse o colocarse dentro de otro grupo. Esto se conoce como <strong>grupos anidados</strong>. Los <a class="reference internal" href="#repeating-a-question-group"><span class="xref myst">grupos repetidos</span></a> también pueden anidarse.</p>
 </section>
-</section>
-<hr class="docutils" />
-<section id="configuracion-de-grupos-de-preguntas">
-<h2>Configuración de grupos de preguntas<a class="headerlink" href="#configuracion-de-grupos-de-preguntas" title="Link to this heading">¶</a></h2>
-<p>Después de crear un grupo de preguntas, puedes personalizar su comportamiento y apariencia. Por ejemplo, puedes mostrar todas las preguntas del grupo en la misma pantalla, aplicar lógica de salto a todo el grupo o configurar el grupo para que se repita.</p>
+<section id="configuracion-del-grupo-de-preguntas">
+<h2>Configuración del grupo de preguntas<a class="headerlink" href="#configuracion-del-grupo-de-preguntas" title="Link to this heading">¶</a></h2>
+<p>Después de crear un grupo de preguntas, puedes personalizar su comportamiento y apariencia. Por ejemplo, puedes mostrar todas las preguntas del grupo en la misma pantalla, aplicar lógica de omisión a todo el grupo o configurar el grupo para que se repita.</p>
 <section id="mostrar-preguntas-agrupadas-en-la-misma-pantalla">
 <h3>Mostrar preguntas agrupadas en la misma pantalla<a class="headerlink" href="#mostrar-preguntas-agrupadas-en-la-misma-pantalla" title="Link to this heading">¶</a></h3>
-<p>En KoboCollect, las preguntas aparecen de una en una por defecto. En los formularios web de Enketo, todas las preguntas aparecen en la misma pantalla.</p>
-<p>Para mostrar preguntas por grupo en la misma pantalla durante la recolección de datos, haz clic en el ícono <i class="k-icon-settings"></i> <strong>Configuración</strong> a la derecha del nombre del grupo. Luego, en <strong>Apariencia (Avanzado)</strong>, selecciona <strong>field-list</strong> (Mostrar todas las preguntas de este grupo en la misma pantalla).</p>
+<p>En KoboCollect, las preguntas aparecen de una en una de forma predeterminada. En los formularios web, todas las preguntas aparecen en la misma pantalla.</p>
+<p>Para mostrar las preguntas por grupo en la misma pantalla durante la recolección de datos, haz clic en el icono <i class="k-icon-settings"></i> <strong>Configuración</strong> a la derecha del nombre del grupo. Luego, en <strong>Aspecto (avanzado)</strong>, selecciona <strong>field-list</strong> (Mostrar todas las preguntas de este grupo en la misma pantalla).</p>
 <p class="note">
-    <b>Nota:</b> Si planeas recolectar datos usando formularios web de Enketo, también necesitarás habilitar el tema <b>Múltiples páginas</b> en el menú <b>Estilo del formulario</b> (<b>Diseño y configuración</b>). Para más información sobre los estilos de formularios web de Enketo, consulta <a href="alternative_enketo.html">Usar estilos alternativos de formularios web de Enketo</a>.
+    <b>Nota:</b> Si planeas recolectar datos usando formularios web, también deberás activar el tema <b>Múltiples páginas</b> en el menú <b>Estilo del formulario</b> (<b>Diseño y configuración</b>). Para más información sobre los estilos de formularios web, consulta <a href="https://support.kobotoolbox.org/es/alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a>.
 </p>
 </section>
 <section id="omitir-un-grupo-de-preguntas">
 <h3>Omitir un grupo de preguntas<a class="headerlink" href="#omitir-un-grupo-de-preguntas" title="Link to this heading">¶</a></h3>
-<p>Para omitir un grupo de preguntas, asegúrate de tener al menos una pregunta de control posicionada antes de las preguntas agrupadas. Haz clic en el ícono <i class="k-icon-settings"></i> <strong>Configuración</strong> para la pregunta agrupada, luego selecciona <strong>Lógica de salto</strong> y configura las condiciones de lógica de salto como lo harías para una pregunta individual.</p>
+<p>Para omitir un grupo de preguntas, asegúrate de tener al menos una pregunta de control ubicada antes de las preguntas agrupadas. Haz clic en el icono <i class="k-icon-settings"></i> <strong>Configuración</strong> del grupo de preguntas, luego selecciona <strong>Lógica de omisión</strong> y configura las condiciones de omisión como lo harías para una pregunta individual.</p>
 <p class="note">
-    Para aprender más sobre cómo añadir condiciones de lógica de salto, consulta <a href="skip_logic.html">Añadir lógica de salto en el editor de formularios</a>.
+    Para obtener más información sobre cómo añadir condiciones de lógica de omisión, consulta <a href="https://support.kobotoolbox.org/es/skip_logic.html">Añadir lógica de salto al Formbuilder</a>.
 </p>
 </section>
 <section id="repetir-un-grupo-de-preguntas">
 <h3>Repetir un grupo de preguntas<a class="headerlink" href="#repetir-un-grupo-de-preguntas" title="Link to this heading">¶</a></h3>
-<p>Un grupo repetido permite que un conjunto de preguntas se responda múltiples veces dentro de un formulario. Por ejemplo, en una encuesta de hogares, podrías usar un grupo repetido para recolectar el nombre, edad, género y nivel educativo de cada miembro del hogar.</p>
-<p>Para crear un grupo de preguntas:</p>
+<p>Un grupo de repetición permite que un conjunto de preguntas se responda varias veces dentro de un formulario. Por ejemplo, en una encuesta de hogares, puedes usar un grupo de repetición para recolectar el nombre, la edad, el género y el nivel educativo de cada miembro del hogar.</p>
+<p>Para crear un grupo de repetición:</p>
 <ol class="arabic simple">
-<li><p>Crea todas las preguntas que deseas incluir, luego agrúpalas.</p></li>
+<li><p>Crea todas las preguntas que desees incluir y luego agrúpalas.</p></li>
 <li><p>En la <i class="k-icon-settings"></i> <strong>Configuración</strong> del grupo, activa la opción <strong>Repetir este grupo si es necesario</strong>.</p></li>
 </ol>
 <p><img alt="image" src="_images/repeating_groups.png" /></p>
-<p>Durante la recolección de datos, los/as encuestadores/as podrán ingresar respuestas para estas preguntas agrupadas tantas veces como sea necesario.</p>
+<p>Durante la recolección de datos, los encuestadores podrán ingresar respuestas para estas preguntas agrupadas tantas veces como sea necesario.</p>
 <p class="note">
-    <b>Nota:</b> Añadir grupos repetidos a tu formulario crea una estructura de datos diferente en comparación con variables o grupos estándar. Cuando descargues tus datos en formato .xlsx, encontrarás una hoja separada para cada grupo repetido. Para más información sobre cómo exportar y usar datos de grupos repetidos, consulta <a href="managing_repeat_groups.html">Manejar datos de grupos repetidos</a>.
+    <b>Nota:</b> Añadir grupos de repetición a tu formulario crea una estructura de datos diferente en comparación con las variables o grupos estándar. Cuando descargues tus datos en formato .xlsx, encontrarás una hoja separada para cada grupo de repetición. Para más información sobre cómo exportar y usar datos de grupos de repetición, consulta <a href="https://support.kobotoolbox.org/es/managing_repeat_groups.html">Gestión de datos de grupos repetidos</a>.
 </p>
 </section>
-<section id="configuracion-avanzada-para-grupos-repetidos">
-<h3>Configuración avanzada para grupos repetidos<a class="headerlink" href="#configuracion-avanzada-para-grupos-repetidos" title="Link to this heading">¶</a></h3>
-<p>Configuraciones y funcionalidades adicionales para grupos repetidos están disponibles a través de XLSForm, pero no directamente dentro del editor de formularios. Estas incluyen establecer un número fijo o dinámico de repeticiones, y usar información de grupos repetidos en otras partes de tu formulario.</p>
+<section id="configuracion-avanzada-para-grupos-de-repeticion">
+<h3>Configuración avanzada para grupos de repetición<a class="headerlink" href="#configuracion-avanzada-para-grupos-de-repeticion" title="Link to this heading">¶</a></h3>
+<p>Configuraciones y funcionalidades adicionales para los grupos de repetición están disponibles a través de XLSForm, pero no directamente en el Formbuilder. Estas incluyen establecer un número fijo o dinámico de repeticiones y usar información de grupos de repetición en otras partes del formulario.</p>
 <p class="note">
-    Para más información sobre configuración avanzada para grupos repetidos, consulta la <a href="https://docs.getodk.org/form-logic/#controlling-the-number-of-repetitions">documentación de XLSForm</a>.  
+    Para más información sobre la configuración avanzada de grupos de repetición, consulta <a href="https://support.kobotoolbox.org/es/repeat_groups_xls.html">Grupos repetidos en XLSForm</a>.
 </p></section>
 </section>
 </section>
@@ -226,7 +229,7 @@
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Agrupar preguntas y grupos repetidos"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Grupos y grupos de repetición en el Formbuilder"
               class="feedback-button"
               target="_blank"
             >
@@ -242,144 +245,153 @@
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Agrupar preguntas y grupos repetidos</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#crear-y-manejar-grupos-de-preguntas">Crear y manejar grupos de preguntas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#configuracion-de-grupos-de-preguntas">Configuración de grupos de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Grupos y grupos de repetición en el Formbuilder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#crear-y-gestionar-grupos-de-preguntas">Crear y gestionar grupos de preguntas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configuracion-del-grupo-de-preguntas">Configuración del grupo de preguntas</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -444,7 +456,7 @@
   <script>
     window.docs = {
       currentPagename: "group_repeat",
-      currentTitle: "Agrupar preguntas y grupos repetidos",
+      currentTitle: "Grupos y grupos de repetición en el Formbuilder",
       currentUrl: ("index.html").replace("index.html", "group_repeat.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

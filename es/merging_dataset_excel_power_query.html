@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Combinar datos individuales con datos de lista a través de Power Query en Excel &#8212; documentación de KoboToolbox - </title>
+    <title>Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Servicios REST" href="rest_services.html" />
-    <link rel="prev" title="Conectar KoboToolbox a Power BI" href="pulling_data_into_powerbi.html" />
+    <link rel="next" title="Usar servicios REST" href="rest_services.html" />
+    <link rel="prev" title="Conectar KoboToolbox con Power BI" href="pulling_data_into_powerbi.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,83 +107,91 @@
 
         <section class="page__body" role="main">
           
-  <section id="combinar-datos-individuales-con-datos-de-lista-a-traves-de-power-query-en-excel">
-<h1>Combinar datos individuales con datos de lista a través de Power Query en Excel<a class="headerlink" href="#combinar-datos-individuales-con-datos-de-lista-a-traves-de-power-query-en-excel" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 abr 2022</a></p>
-<p>Como se ilustra en el artículo de ayuda,
-<a class="reference internal" href="group_repeat.html"><span class="std std-doc">Agrupar preguntas y grupos repetidos</span></a>, puedes usar
-grupos repetidos para cumplir ciertos requisitos de encuesta. También puedes necesitar
-analizar datos de los grupos repetidos que fueron recolectados. Al
+  <section id="combinar-datos-individuales-con-datos-de-grupos-de-repeticion-a-traves-de-power-query-en-excel">
+<h1>Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel<a class="headerlink" href="#combinar-datos-individuales-con-datos-de-grupos-de-repeticion-a-traves-de-power-query-en-excel" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/73dbdbb56448bbfbdb62af8017b71582965291d2/source/merging_dataset_excel_power_query.md" class="reference">6 Apr 2022</a></p>
+<p>Como se ilustra en el artículo de ayuda
+<a class="reference internal" href="group_repeat.html"><span class="std std-doc">Grupos y grupos de repetición en el Formbuilder</span></a>, puedes usar
+grupos de repetición para cumplir ciertos requisitos de una encuesta. También
+puede ser necesario analizar los datos de los grupos de repetición que se
+recolectaron. Al
 <a class="reference internal" href="export_download.html"><span class="std std-doc">descargar los datos del servidor (en formato XLS)</span></a>, deberías
-ver los datos en la siguiente estructura:</p>
+ver los datos con la siguiente estructura:</p>
 <p><img alt="Dataset Sheets" src="_images/dataset_sheets.png" /></p>
 <p>La primera hoja con el nombre <strong>Repeat Group (Merge)</strong> que se ve en la imagen
-anterior contiene los <em>datos individuales</em> de la encuesta, mientras que la segunda hoja con
-el nombre <strong>CR</strong> contiene los <em>datos de lista</em>.</p>
+anterior contiene los <em>datos individuales</em> de la encuesta, mientras que la segunda
+hoja con el nombre <strong>CR</strong> contiene los <em>datos del grupo de repetición</em>.</p>
 <p class="note">
-  Para conjuntos de datos descargados, deberías tener una hoja más que el número de
-  <em>grupos repetidos</em>. Por ejemplo, si tuvieras un
-  <em>grupo repetido</em> incluido en el formulario de encuesta, deberías tener dos hojas
-  en tu conjunto de datos.
+  En los conjuntos de datos descargados, deberías tener una hoja más que el
+  número de <em>grupos de repetición</em>. Por ejemplo, si incluiste un
+  <em>grupo de repetición</em> en el formulario de encuesta, deberías tener dos
+  hojas en tu conjunto de datos.
 </p>
-<p>Este artículo de ayuda también ilustrará la diferencia entre <em>datos
-individuales</em> y <em>datos de lista</em>. Luego mostrará los pasos para combinarlos en
-un solo conjunto de datos a través de <strong>Power Query</strong> en <strong>Excel</strong>.</p>
-<p>Combinar <em>datos individuales</em> y <em>datos de lista</em> a través del sistema actualmente no está
-disponible, pero es posible a través de <strong>Power Query</strong> en <strong>Excel</strong>. Se eligió Excel sobre otro software porque es una hoja de cálculo ampliamente utilizada y disponible
-para casi todas las PCs. También es relativamente fácil de usar.</p>
-<section id="diferencias-entre-datos-individuales-y-datos-de-lista">
-<h2>Diferencias entre datos individuales y datos de lista:<a class="headerlink" href="#diferencias-entre-datos-individuales-y-datos-de-lista" title="Link to this heading">¶</a></h2>
-<p>Los <em>datos individuales</em> son información que generalmente se captura solo una vez en una
-entrevista. Los <em>datos de lista</em>, por otro lado, se capturan más de una vez <em>(por ejemplo,
-detalles de todos los miembros de la familia que viven dentro de un hogar)</em> de la misma
-persona en una entrevista. El número de casos en <em>datos individuales</em> puede ser igual
-a los <em>datos de lista</em> pero nunca puede excederlos, mientras que el número de casos en <em>datos
-de lista</em> generalmente excede los <em>datos individuales</em> pero a veces puede ser igual (pero
-nunca menor).</p>
-<p>Un formulario de encuesta completado, como se muestra a continuación, debería mostrar en una imagen las
-diferencias entre <em>datos individuales</em> y <em>datos de lista</em>. <em>Ten en cuenta que todos los datos
-utilizados en este artículo de ayuda son hipotéticos</em>.</p>
-<p><img alt="Form" src="_images/form.png" /></p>
+<p>Este artículo de ayuda también ilustrará la diferencia entre los <em>datos
+individuales</em> y los <em>datos del grupo de repetición</em>. Luego mostrará los pasos
+para combinarlos en un único conjunto de datos a través de <strong>Power Query</strong> en
+<strong>Excel</strong>.</p>
+<p>Combinar <em>datos individuales</em> y <em>datos del grupo de repetición</em> a través del
+sistema no está disponible actualmente, pero es posible hacerlo a través de
+<strong>Power Query</strong> en <strong>Excel</strong>. Se eligió Excel sobre otros programas porque es una
+hoja de cálculo de uso generalizado y disponible en casi todas las computadoras.
+Además, es relativamente fácil de usar.</p>
+<section id="diferencias-entre-datos-individuales-y-datos-del-grupo-de-repeticion">
+<h2>Diferencias entre datos individuales y datos del grupo de repetición:<a class="headerlink" href="#diferencias-entre-datos-individuales-y-datos-del-grupo-de-repeticion" title="Link to this heading">¶</a></h2>
+<p>Los <em>datos individuales</em> son información que generalmente se captura una sola vez
+en una entrevista. Los <em>datos del grupo de repetición</em>, en cambio, se capturan
+más de una vez <em>(por ejemplo, los detalles de todos los miembros de una familia
+que viven en un mismo hogar)</em> dentro de la misma entrevista. El número de casos
+en los <em>datos individuales</em> puede ser igual al de los <em>datos del grupo de
+repetición</em>, pero nunca puede superarlo, mientras que el número de casos en los
+<em>datos del grupo de repetición</em> generalmente supera al de los <em>datos
+individuales</em>, aunque a veces puede ser igual (pero nunca menor).</p>
+<p>Un formulario de encuesta completado, como se muestra a continuación, ilustra
+visualmente las diferencias entre los <em>datos individuales</em> y los <em>datos del grupo
+de repetición</em>. <em>Ten en cuenta que todos los datos utilizados en este artículo de
+ayuda son hipotéticos</em>.</p>
+<p><img alt="Form" src="_images/form1.png" /></p>
 <p class="note">
-  Cualquier dato que se recolecta fuera del grupo repetido es
-  <em>datos individuales</em> y cualquier dato que se recolecta dentro de un grupo repetido
-  es <em>datos de lista</em>.
+  Cualquier dato recolectado fuera del grupo de repetición es un
+  <em>dato individual</em>, y cualquier dato recolectado dentro de un grupo de
+  repetición es un <em>dato del grupo de repetición</em>.
 </p>
-<p>Los datos descargados en formato XLS también deberían mostrar la diferencia entre
-<em>datos individuales</em> y <em>datos de lista</em>.</p>
+<p>Los datos descargados en formato XLS también muestran la diferencia entre
+<em>datos individuales</em> y <em>datos del grupo de repetición</em>.</p>
 <p>Cada registro <em>(como se muestra en la imagen a continuación)</em>, bajo <code class="docutils literal notranslate"><span class="pre">Name</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">household</span> <span class="pre">head</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Sex</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">household</span> <span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">family</span> <span class="pre">members</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">household</span></code>, y
+<code class="docutils literal notranslate"><span class="pre">Sex</span> <span class="pre">of</span> <span class="pre">the</span> <span class="pre">household</span> <span class="pre">head</span></code>, <code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">family</span> <span class="pre">members</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">household</span></code> y
 <code class="docutils literal notranslate"><span class="pre">Total</span> <span class="pre">school</span> <span class="pre">going</span> <span class="pre">children</span> <span class="pre">(aged</span> <span class="pre">6-16</span> <span class="pre">years)</span> <span class="pre">in</span> <span class="pre">the</span> <span class="pre">household</span></code> de la primera
-hoja <strong>Repeat Group (Merge)</strong> son <em>datos individuales</em>.</p>
+hoja <strong>Repeat Group (Merge)</strong> corresponde a <em>datos individuales</em>.</p>
 <p><img alt="Individual Data" src="_images/individual_data.png" /></p>
-<p>Este conjunto de datos de ejemplo tiene un total de 7 entrevistas como sus <em>datos individuales</em>.</p>
-<p>De manera similar, cada registro <em>(como se muestra en la imagen a continuación)</em>, bajo <code class="docutils literal notranslate"><span class="pre">Name</span> <span class="pre">of</span> <span class="pre">child</span></code>,
-<code class="docutils literal notranslate"><span class="pre">Age</span> <span class="pre">of</span> <span class="pre">child</span></code>, y <code class="docutils literal notranslate"><span class="pre">Sex</span> <span class="pre">of</span> <span class="pre">child</span></code> de la segunda hoja, <strong>CR</strong>, son <em>datos
-de lista</em>.</p>
+<p>Este conjunto de datos de ejemplo tiene un total de 7 entrevistas como <em>datos individuales</em>.</p>
+<p>De igual manera, cada registro <em>(como se muestra en la imagen a continuación)</em>,
+bajo <code class="docutils literal notranslate"><span class="pre">Name</span> <span class="pre">of</span> <span class="pre">child</span></code>, <code class="docutils literal notranslate"><span class="pre">Age</span> <span class="pre">of</span> <span class="pre">child</span></code> y <code class="docutils literal notranslate"><span class="pre">Sex</span> <span class="pre">of</span> <span class="pre">child</span></code> de la segunda hoja, <strong>CR</strong>,
+corresponde a <em>datos del grupo de repetición</em>.</p>
 <p><img alt="Roster Data" src="_images/roster_data.png" /></p>
-<p>Entonces, este conjunto de datos de muestra de ejemplo tiene un total de 12 registros como sus <em>datos de lista</em>.</p>
+<p>Así, este conjunto de datos de ejemplo tiene un total de 12 registros como <em>datos del grupo de repetición</em>.</p>
 <p class="note">
-  <strong>Nota:</strong> Al descargar un conjunto de datos del servidor, también deberías
-  poder ver otras variables (variables de metadatos) si no han sido
-  filtradas. Han sido eliminadas de este conjunto de datos de ejemplo por simplicidad.
+  <strong>Nota:</strong> Al descargar un conjunto de datos del servidor, también
+  deberías poder ver otras variables (variables de metadatos) si no han sido
+  filtradas. Se han eliminado de este conjunto de datos de ejemplo para
+  simplificar.
 </p>
 </section>
-<section id="combinar-datos-individuales-con-datos-de-lista">
-<h2>Combinar datos individuales con datos de lista:<a class="headerlink" href="#combinar-datos-individuales-con-datos-de-lista" title="Link to this heading">¶</a></h2>
-<p>Si observas detenidamente las imágenes compartidas anteriormente, puedes ver la columna <code class="docutils literal notranslate"><span class="pre">_index</span></code> con
-valor «1» en la primera hoja <strong>Repeat Group (Merge)</strong>. De manera similar, también hay
-una columna <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> con valor «1» en la segunda hoja <strong>CR</strong>. <code class="docutils literal notranslate"><span class="pre">_index</span></code> y
-<code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> son variables adicionales creadas por el sistema para manejar grupos
-repetidos. Son variables coincidentes necesarias para combinar <em>datos individuales</em> y
-<em>datos de lista</em> juntos en uno.</p>
-<p>A continuación se presentan dos enfoques para combinar <em>datos individuales</em> y <em>datos de lista</em> en un
-solo conjunto de datos a través de <strong>Power Query</strong> en <strong>Excel</strong>. Puedes usar cualquiera de los
-siguientes enfoques:</p>
-<section id="primer-enfoque-combinar-datos-individuales-con-datos-de-lista-cuando-el-conjunto-de-datos-ya-esta-abierto">
-<h3>Primer enfoque: Combinar datos individuales con datos de lista (cuando el conjunto de datos ya está abierto)<a class="headerlink" href="#primer-enfoque-combinar-datos-individuales-con-datos-de-lista-cuando-el-conjunto-de-datos-ya-esta-abierto" title="Link to this heading">¶</a></h3>
-<p>Para el primer enfoque, debes tener abierto tu conjunto de datos XLS. Para más detalles,
-consulta el video a continuación:</p>
+<section id="combinar-datos-individuales-con-datos-del-grupo-de-repeticion">
+<h2>Combinar datos individuales con datos del grupo de repetición:<a class="headerlink" href="#combinar-datos-individuales-con-datos-del-grupo-de-repeticion" title="Link to this heading">¶</a></h2>
+<p>Si observas detenidamente las imágenes compartidas anteriormente, puedes ver la
+columna <code class="docutils literal notranslate"><span class="pre">_index</span></code> con el valor «1» en la primera hoja <strong>Repeat Group (Merge)</strong>.
+De igual manera, también hay una columna <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> con el valor «1» en la
+segunda hoja <strong>CR</strong>. <code class="docutils literal notranslate"><span class="pre">_index</span></code> y <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> son variables adicionales creadas
+por el sistema para gestionar los grupos de repetición. Son las variables de
+coincidencia necesarias para combinar los <em>datos individuales</em> y los <em>datos del
+grupo de repetición</em> en uno solo.</p>
+<p>A continuación se presentan dos enfoques para combinar <em>datos individuales</em> y
+<em>datos del grupo de repetición</em> en un único conjunto de datos a través de
+<strong>Power Query</strong> en <strong>Excel</strong>. Puedes usar cualquiera de los siguientes enfoques:</p>
+<section id="primer-enfoque-combinar-datos-individuales-con-datos-del-grupo-de-repeticion-cuando-el-conjunto-de-datos-ya-esta-abierto">
+<h3>Primer enfoque: Combinar datos individuales con datos del grupo de repetición (cuando el conjunto de datos ya está abierto)<a class="headerlink" href="#primer-enfoque-combinar-datos-individuales-con-datos-del-grupo-de-repeticion-cuando-el-conjunto-de-datos-ya-esta-abierto" title="Link to this heading">¶</a></h3>
+<p>Para el primer enfoque, debes tener abierto tu conjunto de datos XLS. Para más
+detalles, consulta el video a continuación:</p>
 <video controls>
   <source
     src="./_static/files/merging_dataset_excel_power_query/xls_dataset_open.mp4"
@@ -191,45 +199,50 @@ consulta el video a continuación:</p>
   />
 </video>
 <ul class="simple">
-<li><p>Abre el conjunto de datos que tiene tanto los <em>datos individuales</em> como los <em>datos de lista</em>.</p></li>
+<li><p>Abre el conjunto de datos que contiene tanto los <em>datos individuales</em> como
+los <em>datos del grupo de repetición</em>.</p></li>
 <li><p>Selecciona todos los datos de la primera hoja <em>(datos individuales)</em>.</p></li>
-<li><p>En la pestaña <strong>Datos</strong>, selecciona <strong>Desde tabla/rango</strong>.</p></li>
-<li><p>Aparecerá un cuadro de diálogo <strong>(Crear tabla)</strong>. Selecciona <strong>Aceptar</strong>.</p></li>
-<li><p>Selecciona el ícono <strong>Cerrar y cargar</strong> que se encuentra en la esquina superior izquierda de
-la pantalla. Ahora deberías ver dos opciones desplegables: <strong>Cerrar y cargar</strong> y
-<strong>Cerrar y cargar en…</strong>.</p></li>
+<li><p>En la ventana <strong>Datos</strong>, selecciona <strong>Desde tabla o rango</strong>.</p></li>
+<li><p>Aparecerá una caja de diálogo <strong>(Crear tabla)</strong>. Selecciona <strong>Aceptar</strong>.</p></li>
+<li><p>Selecciona el icono <strong>Cerrar y cargar</strong> que se encuentra en la esquina
+superior izquierda de la pantalla. Deberías ver dos opciones en el menú
+desplegable: <strong>Cerrar y cargar</strong> y <strong>Cerrar y cargar en…</strong>.</p></li>
 <li><p>Selecciona <strong>Cerrar y cargar en…</strong>.</p></li>
-<li><p>Aparecerá un cuadro de diálogo <strong>(Importar datos)</strong>. Selecciona <strong>Solo crear
-conexión</strong> y luego presiona <strong>Aceptar</strong>.</p></li>
-<li><p>Ahora has creado una tabla de consulta para los <em>(datos individuales)</em>.</p></li>
-<li><p>Ahora puedes ir a la segunda hoja, <em>(datos de lista)</em>, y seguir los mismos
-pasos que realizaste anteriormente.</p></li>
-<li><p>Con esto has creado una tabla de consulta para los <em>(datos de lista)</em>.</p></li>
-<li><p>En la pestaña <strong>Datos</strong>, selecciona <strong>Obtener datos</strong>. Desde allí, selecciona <strong>Combinar
-consultas</strong> y luego <strong>Combinar</strong>.</p></li>
-<li><p>Se ve un cuadro de diálogo <strong>Combinar</strong>.</p></li>
-<li><p>Carga ambas tablas de consulta. Una vez que ambas tablas estén cargadas, selecciona la
-variable coincidente <code class="docutils literal notranslate"><span class="pre">_index</span></code> de la primera tabla. De manera similar, selecciona la
-variable coincidente <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> de la segunda tabla. Tan pronto como
-selecciones ambas variables coincidentes deberías poder ver <strong>La selección
-coincide con … de … filas de la primera tabla</strong>. La tabla de consulta ahora debería estar
-combinada.</p></li>
-<li><p>Para expandir la tabla combinada, marca todas las variables que desees tener en
-el conjunto de datos combinado. También puedes desmarcar <strong>Usar nombre de columna original como
-prefijo</strong> para tener el nombre de variable original en el conjunto de datos combinado. Cuando
-todo esté listo, selecciona <strong>Aceptar</strong>.</p></li>
+<li><p>Aparecerá una caja de diálogo <strong>(Importar datos)</strong>. Selecciona <strong>Solo crear
+conexión</strong> y luego haz clic en <strong>Aceptar</strong>.</p></li>
+<li><p>Has creado una tabla de consulta para los <em>(datos individuales)</em>.</p></li>
+<li><p>Ahora puedes ir a la segunda hoja, <em>(datos del grupo de repetición)</em>, y
+seguir exactamente los mismos pasos que realizaste anteriormente.</p></li>
+<li><p>Con esto has creado una tabla de consulta para los <em>(datos del grupo de
+repetición)</em>.</p></li>
+<li><p>En la ventana <strong>Datos</strong>, selecciona <strong>Obtener datos</strong>. Desde allí, selecciona
+<strong>Combinar consultas</strong> y luego <strong>Combinar</strong>.</p></li>
+<li><p>Aparecerá una caja de diálogo <strong>Combinar</strong>.</p></li>
+<li><p>Carga ambas tablas de consulta. Una vez cargadas las dos tablas, selecciona
+la variable de coincidencia <code class="docutils literal notranslate"><span class="pre">_index</span></code> de la primera tabla. De igual manera,
+selecciona la variable de coincidencia <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> de la segunda tabla.
+En cuanto selecciones ambas variables de coincidencia, deberías poder ver
+<strong>La selección coincide con … de … filas de la primera tabla</strong>. La tabla de
+consulta debería estar combinada ahora.</p></li>
+<li><p>Para expandir la tabla combinada, marca todas las variables que deseas incluir
+en el conjunto de datos combinado. También puedes desmarcar <strong>Usar el nombre
+de columna original como prefijo</strong> para conservar el nombre de variable
+original en el conjunto de datos combinado. Cuando hayas terminado, selecciona
+<strong>Aceptar</strong>.</p></li>
 <li><p>Ahora deberías tener el conjunto de datos combinado final.</p></li>
-<li><p>Una vez más, selecciona el ícono <strong>Cerrar y cargar</strong> que se encuentra en la esquina superior izquierda
-de la pantalla. Deberías ver dos opciones desplegables: <strong>Cerrar y cargar</strong>
-y <strong>Cerrar y cargar en…</strong>.</p></li>
-<li><p>Selecciona <strong>Cerrar y cargar</strong>. Con este clic final has combinado tus
-<em>datos individuales</em> y <em>datos de lista</em> en un solo conjunto de datos.</p></li>
+<li><p>Una vez más, selecciona el icono <strong>Cerrar y cargar</strong> que se encuentra en la
+esquina superior izquierda de la pantalla. Deberías ver dos opciones en el
+menú desplegable: <strong>Cerrar y cargar</strong> y <strong>Cerrar y cargar en…</strong>.</p></li>
+<li><p>Selecciona <strong>Cerrar y cargar</strong>. Con este último clic has combinado tus
+<em>datos individuales</em> y <em>datos del grupo de repetición</em> en un único conjunto
+de datos.</p></li>
 </ul>
 </section>
-<section id="segundo-enfoque-combinar-datos-individuales-con-datos-de-lista-cuando-el-conjunto-de-datos-aun-no-esta-abierto">
-<h3>Segundo enfoque: Combinar datos individuales con datos de lista (cuando el conjunto de datos aún no está abierto)<a class="headerlink" href="#segundo-enfoque-combinar-datos-individuales-con-datos-de-lista-cuando-el-conjunto-de-datos-aun-no-esta-abierto" title="Link to this heading">¶</a></h3>
-<p>Usa el segundo enfoque cuando aún no hayas abierto tu conjunto de datos XLS y solo
-hayas abierto tu nuevo libro de Excel. Para más detalles, consulta el video a continuación:</p>
+<section id="segundo-enfoque-combinar-datos-individuales-con-datos-del-grupo-de-repeticion-cuando-el-conjunto-de-datos-aun-no-esta-abierto">
+<h3>Segundo enfoque: Combinar datos individuales con datos del grupo de repetición (cuando el conjunto de datos aún no está abierto)<a class="headerlink" href="#segundo-enfoque-combinar-datos-individuales-con-datos-del-grupo-de-repeticion-cuando-el-conjunto-de-datos-aun-no-esta-abierto" title="Link to this heading">¶</a></h3>
+<p>Usa el segundo enfoque cuando aún no hayas abierto tu conjunto de datos XLS y
+solo tengas abierto un nuevo libro de Excel. Para más detalles, consulta el video
+a continuación:</p>
 <video controls>
   <source
     src="./_static/files/merging_dataset_excel_power_query/new_excel_workbook.mp4"
@@ -238,56 +251,58 @@ hayas abierto tu nuevo libro de Excel. Para más detalles, consulta el video a c
 </video>
 <ul class="simple">
 <li><p>Abre un nuevo libro de Excel.</p></li>
-<li><p>En la pestaña <strong>Datos</strong>, selecciona <strong>Obtener datos</strong>. Desde allí selecciona <strong>Desde archivo</strong>
-y luego <strong>Desde libro</strong>.</p></li>
-<li><p>Busca el archivo en tu PC. Una vez que lo veas, selecciona el archivo y luego
-presiona <strong>Importar</strong>.</p></li>
-<li><p>Se ve un cuadro de diálogo <strong>Navegador</strong>. Aquí, marca <strong>Seleccionar varios elementos</strong>
-y los nombres de hoja <strong>CR</strong> y <strong>Repeat Group (Merge)</strong> que son visibles.
-Una vez que estén marcados, el botón <strong>Cargar</strong> en la parte inferior del cuadro de diálogo
-se activa.</p></li>
-<li><p>Selecciona el botón <strong>Cargar</strong>. Deberías ver dos opciones desplegables: <strong>Cargar</strong>
-y <strong>Cargar en…</strong>. Selecciona <strong>Cargar</strong>.</p></li>
-<li><p>Con esto, has creado tablas de consulta para los <em>(datos individuales)</em> y los
-<em>(datos de lista)</em>.</p></li>
-<li><p>En la pestaña <strong>Datos</strong>, selecciona <strong>Obtener datos</strong>. Desde allí, selecciona <strong>Combinar
-consultas</strong> y luego selecciona <strong>Combinar</strong>.</p></li>
-<li><p>Se ve un cuadro de diálogo <strong>Combinar</strong>.</p></li>
-<li><p>Carga ambas tablas de consulta. Una vez que ambas tablas estén cargadas, selecciona la
-variable coincidente <code class="docutils literal notranslate"><span class="pre">_index</span></code> de la primera tabla. De manera similar, selecciona la
-variable coincidente <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> de la segunda tabla. Tan pronto como
-selecciones ambas variables coincidentes deberías poder ver <strong>La selección
-coincide con … de … filas de la primera tabla</strong>. La tabla de consulta ahora debería estar
-combinada.</p></li>
-<li><p>Para expandir la tabla combinada, marca todas las variables que desees tener en
-el conjunto de datos combinado. También puedes desmarcar <strong>Usar nombre de columna original como
-prefijo</strong> para tener el nombre de variable original en el conjunto de datos combinado. Cuando
-todo esté listo, selecciona <strong>Aceptar</strong>.</p></li>
+<li><p>En la ventana <strong>Datos</strong>, selecciona <strong>Obtener datos</strong>. Desde allí, selecciona
+<strong>Desde archivo</strong> y luego <strong>Desde libro</strong>.</p></li>
+<li><p>Busca el archivo en tu computadora. Una vez que lo encuentres, selecciona el
+archivo y haz clic en <strong>Importar</strong>.</p></li>
+<li><p>Aparecerá una caja de diálogo <strong>Navegador</strong>. Aquí, marca <strong>Seleccionar varios
+elementos</strong> y los nombres de hoja <strong>CR</strong> y <strong>Repeat Group (Merge)</strong> que
+aparecen visibles. Una vez marcados, el botón <strong>Cargar</strong> en la parte inferior
+de la caja de diálogo se activará.</p></li>
+<li><p>Selecciona el botón <strong>Cargar</strong>. Deberías ver dos opciones en el menú
+desplegable: <strong>Cargar</strong> y <strong>Cargar en…</strong>. Selecciona <strong>Cargar</strong>.</p></li>
+<li><p>Con esto has creado tablas de consulta para los <em>(datos individuales)</em> y los
+<em>(datos del grupo de repetición)</em>.</p></li>
+<li><p>En la ventana <strong>Datos</strong>, selecciona <strong>Obtener datos</strong>. Desde allí, selecciona
+<strong>Combinar consultas</strong> y luego selecciona <strong>Combinar</strong>.</p></li>
+<li><p>Aparecerá una caja de diálogo <strong>Combinar</strong>.</p></li>
+<li><p>Carga ambas tablas de consulta. Una vez cargadas las dos tablas, selecciona
+la variable de coincidencia <code class="docutils literal notranslate"><span class="pre">_index</span></code> de la primera tabla. De igual manera,
+selecciona la variable de coincidencia <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> de la segunda tabla.
+En cuanto selecciones ambas variables de coincidencia, deberías poder ver
+<strong>La selección coincide con … de … filas de la primera tabla</strong>. La tabla de
+consulta debería estar combinada ahora.</p></li>
+<li><p>Para expandir la tabla combinada, marca todas las variables que deseas incluir
+en el conjunto de datos combinado. También puedes desmarcar <strong>Usar el nombre
+de columna original como prefijo</strong> para conservar el nombre de variable
+original en el conjunto de datos combinado. Cuando hayas terminado, selecciona
+<strong>Aceptar</strong>.</p></li>
 <li><p>Ahora deberías tener el conjunto de datos combinado final.</p></li>
-<li><p>Una vez más, selecciona el ícono <strong>Cerrar y cargar</strong> que se encuentra en la esquina superior izquierda
-de la pantalla. Deberías ver dos opciones desplegables: <strong>Cerrar y cargar</strong>
-y <strong>Cerrar y cargar en…</strong>.</p></li>
-<li><p>Selecciona <strong>Cerrar y cargar</strong>. Con este clic final has combinado tus
-<em>datos individuales</em> y <em>datos de lista</em> en un solo conjunto de datos.</p></li>
+<li><p>Una vez más, selecciona el icono <strong>Cerrar y cargar</strong> que se encuentra en la
+esquina superior izquierda de la pantalla. Deberías ver dos opciones en el
+menú desplegable: <strong>Cerrar y cargar</strong> y <strong>Cerrar y cargar en…</strong>.</p></li>
+<li><p>Selecciona <strong>Cerrar y cargar</strong>. Con este último clic has combinado tus
+<em>datos individuales</em> y <em>datos del grupo de repetición</em> en un único conjunto
+de datos.</p></li>
 </ul>
 <p class="note">
-  Las diferencias en los dos enfoques están en la carga de la tabla de consulta. Una vez
-  que las tablas de consulta estén cargadas, necesitarás seguir los mismos pasos para combinar
-  los <em>datos individuales</em> y los <em>datos de lista</em>.
+  Las diferencias entre los dos enfoques están en la carga de la tabla de
+  consulta. Una vez cargadas las tablas de consulta, deberás seguir los mismos
+  pasos para combinar los <em>datos individuales</em> y los <em>datos del grupo
+  de repetición</em>.
 </p>
 </section>
 </section>
-<section id="solucion-de-problemas">
-<h2>Solución de problemas:<a class="headerlink" href="#solucion-de-problemas" title="Link to this heading">¶</a></h2>
+<section id="resolucion-de-problemas">
+<h2>Resolución de problemas:<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
 <ul class="simple">
-<li><p>Exportar <em>grupos repetidos</em> no es compatible con el formato CSV. Necesitarás
-descargar los datos en formato XLS.</p></li>
-<li><p>Microsoft Power Query para Excel es un complemento de Excel. Puedes descargarlo
-a través de este
+<li><p>La exportación de <em>grupos de repetición</em> no está disponible en formato CSV.
+Deberás descargar los datos en formato XLS.</p></li>
+<li><p>Microsoft Power Query para Excel es un complemento de Excel. Puedes
+descargarlo a través de este
 <a class="reference external" href="https://www.microsoft.com/en-us/download/details.aspx?id=39379">sitio de descarga de Microsoft</a>.
-Debería funcionar mejor en <em>Excel para Microsoft 365</em> o <em>Excel 2021</em>, <em>Excel
-2019</em>, <em>Excel 2016</em>, <em>Excel 2013</em>, y <em>Excel 2010</em>. Para más detalles,
-consulta el
+Funciona mejor con <em>Excel para Microsoft 365</em> o <em>Excel 2021</em>, <em>Excel 2019</em>,
+<em>Excel 2016</em>, <em>Excel 2013</em> y <em>Excel 2010</em>. Para más detalles, consulta el
 <a class="reference external" href="https://support.microsoft.com/en-us/office/about-power-query-in-excel-7104fbee-9e62-4cb9-a02e-5bfb1a6c536a">sitio de soporte de Microsoft</a>.</p></li>
 </ul>
 <p class="note">
@@ -298,7 +313,7 @@ consulta el
     href="./_static/files/merging_dataset_excel_power_query/repeat_group_(merge).xlsx"
     >aquí</a
   >
-  y al conjunto de datos de muestra de ejemplo
+  y al conjunto de datos de ejemplo
   <a
     download
     class="reference"
@@ -325,7 +340,7 @@ consulta el
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Combinar datos individuales con datos de lista a través de Power Query en Excel"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel"
               class="feedback-button"
               target="_blank"
             >
@@ -341,145 +356,154 @@ consulta el
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar ubicaciones GPS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Recolectar datos de GPS con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Combinar datos individuales con datos de lista a través de Power Query en Excel</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#diferencias-entre-datos-individuales-y-datos-de-lista">Diferencias entre datos individuales y datos de lista:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#combinar-datos-individuales-con-datos-de-lista">Combinar datos individuales con datos de lista:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#solucion-de-problemas">Solución de problemas:</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#diferencias-entre-datos-individuales-y-datos-del-grupo-de-repeticion">Diferencias entre datos individuales y datos del grupo de repetición:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#combinar-datos-individuales-con-datos-del-grupo-de-repeticion">Combinar datos individuales con datos del grupo de repetición:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolucion-de-problemas">Resolución de problemas:</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -544,7 +568,7 @@ consulta el
   <script>
     window.docs = {
       currentPagename: "merging_dataset_excel_power_query",
-      currentTitle: "Combinar datos individuales con datos de lista a través de Power Query en Excel",
+      currentTitle: "Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel",
       currentUrl: ("index.html").replace("index.html", "merging_dataset_excel_power_query.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

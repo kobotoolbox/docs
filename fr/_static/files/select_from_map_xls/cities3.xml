@@ -1,0 +1,39 @@
+<root>
+  <item>
+    <name>1</name>
+    <label>Warsaw</label>
+    <geometry>52.2297 21.0122 0 0</geometry>
+    <info>Capital city of Poland</info>
+    <marker-color>#FF0000</marker-color>
+    <marker-symbol>W</marker-symbol>
+  </item>
+  <item>
+    <name>2</name>
+    <label>Berlin</label>
+    <geometry>52.5200 13.4050 0 0</geometry>
+    <info>Capital city of Germany</info>
+  </item>
+  <item>
+    <name>3</name>
+    <label>Paris</label>
+    <geometry>48.8566 2.3522 0 0</geometry>
+    <info>Capital city of France</info>
+    <marker-color>#FFFFFF</marker-color>
+    <marker-symbol>P</marker-symbol>
+  </item>
+  <item>
+    <name>4</name>
+    <label>Kyiv</label>
+    <geometry>50.4501 30.5234 0 0</geometry>
+    <info>Capital city of Ukraine</info>
+    <marker-color>#7d3f00</marker-color>
+    <marker-symbol>🙂</marker-symbol>
+  </item>
+  <item>
+    <name>5</name>
+    <label>Prague</label>
+    <geometry>50.0755 14.4378 0 0</geometry>
+    <info>Capital city of the Czech Republic</info>
+    <marker-color>#00ff00</marker-color>
+  </item>
+</root>

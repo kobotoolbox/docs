@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Recolectar ubicaciones GPS &#8212; documentación de KoboToolbox - </title>
+    <title>Recolectar datos de GPS con KoboToolbox &#8212; documentación de KoboToolbox - </title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -26,8 +26,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Índice" href="genindex.html" />
     <link rel="search" title="Búsqueda" href="search.html" />
-    <link rel="next" title="Resumen del proyecto" href="project_summary.html" />
-    <link rel="prev" title="Solución de problemas de formularios web de Enketo" href="troubleshooting_webforms.html" />
+    <link rel="next" title="Recolectar datos cualitativos con KoboToolbox" href="recording-interviews.html" />
+    <link rel="prev" title="Personalizar la configuración de KoboCollect" href="kobocollect_settings.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -107,130 +107,254 @@
 
         <section class="page__body" role="main">
           
-  <section id="recolectar-ubicaciones-gps">
-<h1>Recolectar ubicaciones GPS<a class="headerlink" href="#recolectar-ubicaciones-gps" title="Link to this heading">¶</a></h1>
-<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/47cbc8887d6df73ef3bf760d5a3962b77ab26ed8/source/collect_gps.md" class="reference">29 Jul 2025</a></p>
-<p>Las coordenadas de ubicación se pueden recolectar fácilmente en todos los formularios con los tipos de respuesta “GPS”.</p>
-<section id="crear-los-diferentes-tipos-de-preguntas-gps">
-<h2>Crear los diferentes tipos de preguntas GPS<a class="headerlink" href="#crear-los-diferentes-tipos-de-preguntas-gps" title="Link to this heading">¶</a></h2>
-<p>Para recolectar coordenadas GPS durante el proceso de recolección de datos simplemente agrega una pregunta GPS a tu formulario. Hay tres tipos de preguntas GPS: <strong>Punto</strong>, <strong>Línea</strong> y <strong>Área</strong></p>
-<ul class="simple">
-<li><p>Cuando usas el <strong>editor de formularios</strong> estos tipos de preguntas se pueden encontrar cuando haces clic en el botón de agregar pregunta como se ilustra a continuación.</p></li>
-</ul>
-<p><img alt="image" src="_images/formbuilder.jpg" /></p>
-<ul class="simple">
-<li><p>Cuando usas el diseño <strong>XLSForm</strong>, tienes que definir los tipos de preguntas como se muestra a continuación para obtener la pregunta que deseas.</p></li>
-</ul>
-<p><strong>hoja survey</strong></p>
+  <section id="recolectar-datos-de-gps-con-kobotoolbox">
+<h1>Recolectar datos de GPS con KoboToolbox<a class="headerlink" href="#recolectar-datos-de-gps-con-kobotoolbox" title="Link to this heading">¶</a></h1>
+<p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/75a01d18e539cff0694a03ac2ffe032abb6a14d5/source/collect_gps.md" class="reference">23 Apr 2026</a></p>
+<p>KoboToolbox te permite recolectar datos de GPS en tus formularios, incluso cuando trabajas sin conexión a internet. Las preguntas GPS pueden capturar <strong>una sola ubicación, una ruta o un área</strong> durante la recolección de datos. Esto es útil para tareas como mapear infraestructura, hacer seguimiento de visitas de campo, monitorear sitios ambientales o registrar ubicaciones de servicios. Los datos de GPS se pueden recolectar tanto con <a class="reference external" href="https://support.kobotoolbox.org/es/data_through_webforms.html">formularios web</a> como con <a class="reference external" href="https://support.kobotoolbox.org/es/data_collection_kobocollect.html">KoboCollect</a>.</p>
+<p>Este artículo explica cómo recolectar datos de GPS en KoboToolbox, incluyendo los tipos de preguntas GPS disponibles, cómo se recolectan los datos de GPS en formularios web y en KoboCollect, cómo usar datos de GPS en lógica avanzada de formularios, cómo gestionar datos de GPS en KoboToolbox y cómo resolver problemas comunes de GPS.</p>
+<section id="configurar-tu-formulario-para-recolectar-datos-de-gps">
+<h2>Configurar tu formulario para recolectar datos de GPS<a class="headerlink" href="#configurar-tu-formulario-para-recolectar-datos-de-gps" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox admite tres tipos de preguntas GPS para recolectar datos geográficos directamente en un formulario, varias opciones de metadatos que recolectan información de ubicación automáticamente en segundo plano, y preguntas de selección basadas en mapas en XLSForm.</p>
+<section id="tipos-de-preguntas-gps">
+<h3>Tipos de preguntas GPS<a class="headerlink" href="#tipos-de-preguntas-gps" title="Link to this heading">¶</a></h3>
+<p>Las preguntas GPS son visibles para los encuestados. Permiten que los encuestados recolecten coordenadas GPS seleccionando manualmente o registrando automáticamente un punto, una línea o un área. Los siguientes tipos de preguntas GPS están disponibles en KoboToolbox:</p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>type</p></th>
-<th class="head text-left"><p>name</p></th>
-<th class="head text-left"><p>label</p></th>
-<th class="head text-left"><p>hint</p></th>
+<tr class="row-odd"><th class="head text-left"><p>Formbuilder</p></th>
+<th class="head text-left"><p>XLSForm</p></th>
+<th class="head text-left"><p>Descripción</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>geopoint</p></td>
-<td class="text-left"><p>point</p></td>
-<td class="text-left"><p>Registra tu ubicación actual</p></td>
-<td class="text-left"><p>Esta pregunta recolecta una sola coordenada GPS que denota un solo punto</p></td>
+<tr class="row-even"><td class="text-left"><p>Point</p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geopoint</span></code></p></td>
+<td class="text-left"><p>Recolecta una sola ubicación geográfica, como las coordenadas de una escuela, clínica o vivienda.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>geotrace</p></td>
-<td class="text-left"><p>line</p></td>
-<td class="text-left"><p>Registra una línea</p></td>
-<td class="text-left"><p>Esta pregunta recolecta dos coordenadas para formar una línea</p></td>
+<tr class="row-odd"><td class="text-left"><p>Line</p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geotrace</span></code></p></td>
+<td class="text-left"><p>Recolecta múltiples puntos GPS que forman una línea, como un camino, carretera o ruta.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>geoshape</p></td>
-<td class="text-left"><p>area</p></td>
-<td class="text-left"><p>Registra un área</p></td>
-<td class="text-left"><p>Esta pregunta recolecta coordenadas GPS que marcan un bucle/área cerrada en cualquier forma</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>survey</p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
-<td class="text-left"><p></p></td>
+<tr class="row-even"><td class="text-left"><p>Area</p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geoshape</span></code></p></td>
+<td class="text-left"><p>Recolecta múltiples puntos GPS que forman un área cerrada, como una parcela de tierra o un campo.</p></td>
 </tr>
 </tbody>
 </table>
+<p class="note">
+Para obtener más información sobre cómo agregar preguntas GPS a tus formularios, consulta <a href="https://support.kobotoolbox.org/es/gps_questions.html">Preguntas GPS en KoboToolbox</a> y <a href="https://support.kobotoolbox.org/es/question_types_xls.html#gps-question-types">Tipos de preguntas en XLSForm</a>.
+</p>
 </section>
-<section id="recolectar-datos-usando-las-preguntas-gps">
-<h2>Recolectar datos usando las preguntas GPS<a class="headerlink" href="#recolectar-datos-usando-las-preguntas-gps" title="Link to this heading">¶</a></h2>
-<p>Durante la entrada de datos el/la encuestador/a verá diferentes opciones para recolectar las coordenadas, las cuales dependen del tipo de dispositivo de recolección de datos y el enfoque.</p>
+<section id="preguntas-de-metadatos-gps">
+<h3>Preguntas de metadatos GPS<a class="headerlink" href="#preguntas-de-metadatos-gps" title="Link to this heading">¶</a></h3>
+<p>Las preguntas de metadatos GPS no son visibles para los encuestados. Cuando se activan, recolectan datos de GPS automáticamente en segundo plano durante el llenado del formulario. Los siguientes tipos de preguntas de metadatos están disponibles en KoboToolbox:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Formbuilder</p></th>
+<th class="head text-left"><p>XLSForm</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>audit</p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audit</span></code></p></td>
+<td class="text-left"><p>Registra la ubicación GPS detallada y otra información de auditoría durante el llenado del formulario, incluyendo información de ubicación para cada pregunta a medida que se completa el formulario.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>start geopoint early</p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">start-geopoint</span></code></p></td>
+<td class="text-left"><p>Captura automáticamente una sola ubicación en segundo plano cuando se abre el formulario.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><em>No disponible</em></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">background-geopoint</span></code></p></td>
+<td class="text-left"><p>Captura automáticamente una sola ubicación en segundo plano después de que los encuestados responden una pregunta específica.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+Para obtener más información sobre cómo agregar metadatos GPS a tus formularios, consulta <a href="https://support.kobotoolbox.org/es/form_meta.html#">Agregar metadatos en el Formbuilder</a> y <a href="https://support.kobotoolbox.org/es/metadata_xls.html#">Metadatos en XLSForm</a>.
+</p>
 </section>
-<section id="recolectar-datos-usando-formularios-web-enketo">
-<h2>Recolectar datos usando formularios web Enketo<a class="headerlink" href="#recolectar-datos-usando-formularios-web-enketo" title="Link to this heading">¶</a></h2>
-<p>El formulario tendrá varias opciones de recolección incluyendo</p>
-<p><strong>1. Recolección manual:</strong> Simplemente toca cualquier punto(s) en el mapa para recolectar las coordenadas de ubicación o puedes escribir las coordenadas de latitud y longitud si se conocen.</p>
-<p><img alt="image" src="_images/point_manual.png" /></p>
-<p><strong>2. Pegar puntos KML:</strong> Pega las coordenadas KML en el cuadro de texto que aparece.</p>
-<p><img alt="image" src="_images/kml.png" /></p>
-<p><strong>3. Detectar ubicación actual:</strong> Simplemente haz clic en el botón que se muestra a continuación para recolectar las coordenadas GPS actuales de la ubicación del dispositivo.</p>
-<p><img alt="image" src="_images/current_location.jpg" /></p>
+<section id="seleccionar-opciones-de-un-mapa">
+<h3>Seleccionar opciones de un mapa<a class="headerlink" href="#seleccionar-opciones-de-un-mapa" title="Link to this heading">¶</a></h3>
+<p>Además de recolectar coordenadas GPS, también puedes permitir que los encuestados seleccionen ubicaciones predefinidas en un mapa en XLSForm. Esto se configura usando una <strong>pregunta de selección</strong> con la apariencia <code class="docutils literal notranslate"><span class="pre">map</span></code> o <code class="docutils literal notranslate"><span class="pre">quick</span> <span class="pre">map</span></code>, junto con una columna <code class="docutils literal notranslate"><span class="pre">geometry</span></code> en la hoja choices que almacena las coordenadas de cada opción.</p>
+<p class="note">
+Para obtener más información sobre cómo configurar preguntas de selección desde un mapa, consulta <a href="https://support.kobotoolbox.org/es/select_from_map_xls.html">Seleccionar opciones de un mapa</a>.
+</p>
 </section>
-<section id="recolectar-datos-usando-kobocollect">
-<h2>Recolectar datos usando KoboCollect<a class="headerlink" href="#recolectar-datos-usando-kobocollect" title="Link to this heading">¶</a></h2>
-<p>El/la entrevistador/a verá varias opciones dependiendo del tipo de pregunta GPS</p>
-<p><strong>1. Coordenada de punto GPS único</strong></p>
-<ul class="simple">
-<li><p>El/la encuestador/a verá esta pantalla en la cual puede tocar en Buscar Ubicación.</p></li>
-</ul>
-<p><img alt="image" src="_images/geopoint.jpg" /></p>
-<ul class="simple">
-<li><p>Si el/la encuestador/a toca Buscar Ubicación verá la ubicación cargando y la precisión alcanzada. Si la pregunta no se había configurado para seleccionar un nivel de precisión específico, esperará a que el/la encuestador/a guarde el Geopunto como se ilustra a continuación.</p></li>
-</ul>
-<p><img alt="image" src="_images/autopoint.jpg" /></p>
-<p><strong>2. Línea GPS</strong></p>
-<ul class="simple">
-<li><p>Los/as encuestadores/as verán la siguiente opción para la pregunta de línea.</p></li>
-</ul>
-<p><img alt="image" src="_images/line.jpg" /></p>
-<ul class="simple">
-<li><p>Si tocan el botón Iniciar GeoLínea verán una opción para recolectar el trazado manual o automáticamente como se muestra a continuación.</p></li>
-</ul>
-<p><img alt="image" src="_images/trace_mode.jpg" /></p>
-<ul class="simple">
-<li><p>Si los/as encuestadores/as seleccionan el modo manual para recolectar datos entonces podrán seleccionar los puntos manualmente presionando los puntos en el mapa. El/la encuestador/a tendrá que seleccionar al menos dos coordenadas para hacer un trazado de línea.</p></li>
-<li><p>Si los/as encuestadores/as seleccionan el modo automático, entonces verán una opción de cuánto tiempo debe tomar el sistema antes de recolectar diferentes puntos como se muestra en la figura a continuación.</p></li>
-</ul>
-<p><img alt="image" src="_images/automodes.jpg" /></p>
-<p><strong>3. Área GPS</strong></p>
-<p>El área GPS te permite recolectar manualmente el área GPS basándose en el modo manual presionando el mapa para seleccionar los puntos que crean el polígono; los/as encuestadores/as necesitarían recolectar al menos tres puntos para crear un polígono.</p>
 </section>
-<section id="precision-de-las-coordenadas-gps-recolectadas">
-<h2>Precisión de las coordenadas GPS recolectadas<a class="headerlink" href="#precision-de-las-coordenadas-gps-recolectadas" title="Link to this heading">¶</a></h2>
-<p>La precisión del GPS recolectado depende de varios factores.</p>
-<p><strong>Ausencia de sensor GPS o GPS deshabilitado</strong></p>
-<p>Cuando recolectas coordenadas GPS y tu dispositivo no tiene un sensor GPS o el GPS está deshabilitado, una ubicación podría determinarse usando otros medios, los cuales podrían no ser tan precisos. Los servicios de ubicación son controlados por el dispositivo, y no todos los dispositivos están equipados con un sensor GPS. El GPS también puede estar apagado, o el dispositivo puede estar configurado para usar WiFi y redes celulares para establecer una ubicación en lugar de usar sistemas de navegación satelital.</p>
-<p><strong>El tiempo que tarda un dispositivo en determinar sus coordenadas GPS varía fuertemente y puede depender de:</strong></p>
+<section id="recolectar-datos-de-gps">
+<h2>Recolectar datos de GPS<a class="headerlink" href="#recolectar-datos-de-gps" title="Link to this heading">¶</a></h2>
+<p>Los datos de GPS se pueden recolectar tanto en <a class="reference external" href="https://support.kobotoolbox.org/es/data_through_webforms.html">formularios web</a> como en la aplicación <a class="reference external" href="https://support.kobotoolbox.org/es/data_collection_kobocollect.html">KoboCollect</a>, pero el proceso de recolección difiere entre ellos.</p>
+<section id="formularios-web">
+<h3>Formularios web<a class="headerlink" href="#formularios-web" title="Link to this heading">¶</a></h3>
+<p>Al usar formularios web, los encuestados pueden ingresar datos de GPS de varias maneras:</p>
 <ul class="simple">
-<li><p>La calidad del sensor GPS</p></li>
-<li><p>El último tiempo desde que el dispositivo había determinado por última vez su ubicación GPS</p></li>
-<li><p>Cobertura de nubes</p></li>
-<li><p>Edificios u otras estructuras que obstruyen la vista del cielo</p></li>
+<li><p>Detectar la ubicación actual del dispositivo</p></li>
+<li><p>Seleccionar una ubicación directamente en el mapa</p></li>
+<li><p>Buscar una dirección</p></li>
+<li><p>Ingresar coordenadas GPS manualmente</p></li>
 </ul>
-<p><strong>Para obtener una señal GPS debes estar al aire libre con buena visibilidad del cielo. Para obtener una señal GPS fuerte:</strong></p>
-<ul class="simple">
-<li><p>Párate lo más lejos posible de edificios, árboles u otras estructuras</p></li>
-<li><p>Asegúrate de que tu cuerpo no esté obstruyendo la vista del cielo</p></li>
-<li><p>Obtén una ubicación GPS inicial al comienzo del día antes de comenzar a recolectar puntos en el campo</p></li>
-<li><p>Habilita A-GPS (asistido por red de datos) en tu dispositivo</p></li>
-</ul>
-<p class="note">GPS en este contexto no se refiere exclusivamente al <a class="reference" href="https://en.wikipedia.org/wiki/Global_Positioning_System">Sistema de Posicionamiento Global</a> sino también a otros sistemas de navegación satelital usados por dispositivos móviles, como <a class="reference" href="https://en.wikipedia.org/wiki/GLONASS">GLONASS</a>.</p>
+<p>Para preguntas de línea y área, los encuestados pueden agregar múltiples puntos en el mapa para crear una ruta o polígono.</p>
+<p><img alt="Ubicación GPS" src="_images/webform.png" /></p>
+<p class="note">
+<strong>Nota:</strong>
+Puedes detectar la ubicación actual del dispositivo haciendo clic en el <strong>botón de ubicación</strong> en la esquina superior derecha, junto a la barra de búsqueda.
+</p>
+<p>Puedes usar <a class="reference external" href="https://support.kobotoolbox.org/es/gps_questions.html#advanced-appearances">apariencias</a> para cambiar cómo se muestra la pregunta GPS en los formularios web, específicamente para ocultar los campos de entrada de coordenadas GPS. Sin embargo, los formularios web no te permiten impedir completamente la selección manual de ubicación. Si quieres recolectar una ubicación automáticamente sin permitir la selección manual, usa <strong>background-geopoint</strong> en su lugar.</p>
 </section>
-<section id="solucion-de-problemas">
-<h2>Solución de problemas<a class="headerlink" href="#solucion-de-problemas" title="Link to this heading">¶</a></h2>
-<p>Si no puedes obtener una ubicación GPS con el tipo de respuesta GPS, por favor verifica estas opciones:</p>
+<section id="kobocollect">
+<h3>KoboCollect<a class="headerlink" href="#kobocollect" title="Link to this heading">¶</a></h3>
+<iframe src="https://www.youtube.com/embed/akG0_cESv6U?si=vB9ByYkcP74Neu8x&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<p>En KoboCollect, los datos de GPS se capturan automáticamente desde la ubicación actual del dispositivo cuando el usuario toca un botón. La selección manual de ubicación no está activada por defecto para las preguntas de punto, aunque las <a class="reference external" href="https://support.kobotoolbox.org/es/gps_questions.html#advanced-appearances">apariencias</a> adicionales pueden cambiar el comportamiento de las preguntas GPS.</p>
+<p>El método de captura en KoboCollect varía según el tipo de pregunta:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Tipo de pregunta</p></th>
+<th class="head text-left"><p>Captura de datos GPS</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Point / <code class="docutils literal notranslate"><span class="pre">geopoint</span></code></p></td>
+<td class="text-left"><p>Toca <strong>Get point</strong> para comenzar a capturar la ubicación del dispositivo. <br><ul><li>Una vez que el dispositivo alcanza la precisión objetivo predeterminada de <strong>5 metros o mejor</strong>, el punto se registra automáticamente.</li><li>El encuestador también puede tocar <strong>Save</strong> para registrar la ubicación actual manualmente antes de alcanzar esa precisión.</li></ul></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Line / <code class="docutils literal notranslate"><span class="pre">geotrace</span></code></p></td>
+<td class="text-left"><p>Toca <strong>Get line</strong> y haz clic en <i class="k-icon-qt-point"></i> para elegir un método de entrada. Los métodos disponibles son: <br><ul><li><strong>Placement by tapping (ubicación con toque):</strong> El encuestador toca puntos manualmente en el mapa para trazar la línea.</li><li><strong>Manual location recording (registro de localización manual):</strong> El encuestador se desplaza a cada ubicación y toca Record a Point para capturar cada punto desde la posición actual del dispositivo.</li><li><strong>Automatic location recording (registro de localización automática):</strong> La aplicación registra puntos automáticamente mientras el encuestador se desplaza, según un intervalo de tiempo seleccionado y la precisión requerida.</li></ul>Una línea requiere al menos dos puntos. Después de registrar los puntos, haz clic en el botón <strong>Save</strong> en la esquina inferior izquierda.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Area / <code class="docutils literal notranslate"><span class="pre">geoshape</span></code></p></td>
+<td class="text-left"><p>Toca <strong>Get polygon</strong> y haz clic en <i class="k-icon-qt-point"></i> para elegir un método de entrada. Los mismos métodos de entrada descritos anteriormente están disponibles, pero para crear un área cerrada en lugar de una línea. Un área requiere al menos tres puntos.</p></td>
+</tr>
+</tbody>
+</table>
+<p>Más allá del comportamiento predeterminado, puedes usar <a class="reference external" href="https://support.kobotoolbox.org/es/gps_questions.html#advanced-appearances">apariencias</a> para cambiar cómo funcionan las preguntas GPS en KoboCollect. Por ejemplo, puedes usar apariencias para:</p>
 <ul class="simple">
-<li><p>Configuración de ubicación en tu dispositivo para asegurar que el GPS esté habilitado</p></li>
-<li><p>Instala una aplicación gratuita que use GPS para ver si puedes obtener una ubicación GPS de esa manera (por ejemplo,
-<a class="reference external" href="https://play.google.com/store/apps/details?id=com.eclipsim.gpsstatus2">GPS Status para Android</a>
-o
-<a class="reference external" href="https://apps.apple.com/ca/app/gps-status/id378085995">GPS Status para iPhone</a></p></li>
-<li><p>Verifica la configuración de tu teléfono/manual del fabricante para ver si el dispositivo tiene GPS disponible</p></li>
-<li><p>Si tus puntos GPS recolectados están apuntando a la ubicación incorrecta, es posible que tu dispositivo esté configurado para recolectar su ubicación desde una torre de red que fue comprada de segunda mano y no ha sido reiniciada correctamente con la nueva ubicación codificada. Puedes evitar este problema desactivando la ubicación de red como una opción dentro de la configuración del sistema Android, forzando a Collect a esperar la ubicación GPS real.</p></li>
+<li><p>Mostrar un mapa de la ubicación seleccionada automáticamente</p></li>
+<li><p>Activar la selección manual de ubicación</p></li>
+</ul>
+<p class="note">
+Para obtener más información sobre las apariencias de preguntas GPS, consulta <a href="https://support.kobotoolbox.org/es/gps_questions.html#advanced-appearances">Preguntas GPS en KoboToolbox</a>.
+</p>
+<p>También puedes configurar los ajustes de mapa de KoboCollect para controlar cómo se muestran los mapas en las preguntas basadas en GPS, incluyendo la definición de la fuente del mapa, la selección de un estilo de mapa y la adición de <a class="reference external" href="https://docs.getodk.org/collect-offline-maps/">capas de mapas sin conexión</a>.</p>
+<p class="note">
+Para obtener más información sobre los ajustes de mapa de KoboCollect, consulta <a href="https://support.kobotoolbox.org/es/kobocollect_settings.html#maps-settings">Personalizar la configuración de KoboCollect</a>.
+</p>
+</section>
+</section>
+<section id="mejorar-la-precision-del-gps">
+<h2>Mejorar la precisión del GPS<a class="headerlink" href="#mejorar-la-precision-del-gps" title="Link to this heading">¶</a></h2>
+<p>La precisión del GPS depende tanto del dispositivo como del entorno. Puede verse afectada por factores como si el dispositivo tiene el GPS activado y un sensor GPS integrado, cuándo fue la última vez que determinó su ubicación, si está usando servicios de ubicación por satélite o por red, y las condiciones ambientales como la nubosidad o los edificios y árboles cercanos.</p>
+<section id="parametros-gps">
+<h3>Parámetros GPS<a class="headerlink" href="#parametros-gps" title="Link to this heading">¶</a></h3>
+<p>Al crear formularios en XLSForm, puedes usar <a class="reference external" href="https://support.kobotoolbox.org/es/question_options_xls.html#question-parameters">parámetros</a> para controlar la precisión del GPS con mayor detalle.</p>
+<p>Los parámetros más comunes son:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Parámetro</p></th>
+<th class="head text-left"><p>Ejemplo</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">capture-accuracy</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">capture-accuracy=15</span></code></p></td>
+<td class="text-left"><p>Captura automáticamente el punto una vez que el dispositivo alcanza la precisión objetivo. Si se configura como 0, el encuestador debe aceptar el punto explícitamente. El valor predeterminado es 5 metros.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">warning-accuracy</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">warning-accuracy=30</span></code></p></td>
+<td class="text-left"><p>Activa un mensaje de advertencia si la precisión del GPS no está dentro del umbral de precisión especificado. Esto no impide guardar el punto. El valor predeterminado es 100 metros.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+<strong>Nota:</strong>
+Para la mayoría de los flujos de trabajo, un <strong>capture-accuracy</strong> de alrededor de <strong>5 metros</strong> es un objetivo práctico. En general, no se recomienda establecer el objetivo por debajo de <strong>3 metros</strong> a menos que estés usando un dispositivo GPS externo, ya que el GPS integrado de los dispositivos a menudo no es suficientemente preciso para alcanzar ese nivel de manera confiable.
+</p>
+</section>
+<section id="recomendaciones-para-mejorar-la-precision-del-gps">
+<h3>Recomendaciones para mejorar la precisión del GPS<a class="headerlink" href="#recomendaciones-para-mejorar-la-precision-del-gps" title="Link to this heading">¶</a></h3>
+<p>Para mejorar la precisión del GPS:</p>
+<ul class="simple">
+<li><p>Recolecta datos al aire libre en un área abierta con vista despejada del cielo</p></li>
+<li><p>Aléjate de edificios, árboles y otras obstrucciones</p></li>
+<li><p>Asegúrate de que tu cuerpo no esté bloqueando la vista del cielo del dispositivo</p></li>
+<li><p>Precalienta el GPS del dispositivo incluyendo <code class="docutils literal notranslate"><span class="pre">start-geopoint</span></code> al inicio de tu formulario</p></li>
+<li><p>Activa el GPS asistido en el dispositivo si está disponible</p></li>
 </ul>
 </section>
+</section>
+<section id="logica-avanzada-de-formularios-con-datos-de-gps">
+<h2>Lógica avanzada de formularios con datos de GPS<a class="headerlink" href="#logica-avanzada-de-formularios-con-datos-de-gps" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox admite lógica avanzada de formularios con datos de GPS en XLSForm. Por ejemplo, puedes usar funciones GPS en cálculos, restricciones y lógica de omisión para medir distancias, perímetros o áreas, o para verificar si una ubicación se encuentra dentro de un límite definido.</p>
+<p><img alt="Calcular distancia de ruta" src="_images/calculate1.png" /></p>
+<p>Las funciones GPS más comunes son:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Función</p></th>
+<th class="head text-left"><p>Descripción</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">area(${geoshape})</span></code></p></td>
+<td class="text-left"><p>Devuelve el área, en metros cuadrados, de un valor <code class="docutils literal notranslate"><span class="pre">geoshape</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">distance(geo)</span></code></p></td>
+<td class="text-left"><p>Devuelve la distancia, en metros, de: <ul><li>el perímetro de un valor <code class="docutils literal notranslate"><span class="pre">geoshape</span></code></li><li>la longitud de un valor <code class="docutils literal notranslate"><span class="pre">geotrace</span></code></li><li>una lista de geopoints especificados como cadenas de texto o referencias a otros campos (incluyendo los de grupos de repetición), separados por comas</li></ul></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geofence(${geopoint},</span> <span class="pre">${geoshape})</span></code></p></td>
+<td class="text-left"><p>Devuelve <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> si el <code class="docutils literal notranslate"><span class="pre">${geopoint}</span></code> especificado está dentro del <code class="docutils literal notranslate"><span class="pre">${geoshape}</span></code> especificado, <code class="docutils literal notranslate"><span class="pre">FALSE</span></code> en caso contrario. Compatible únicamente con KoboCollect.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+Para obtener más información sobre las funciones para manipular datos de GPS en XLSForm, consulta <a href="https://support.kobotoolbox.org/es/functions_xls.html#functions-to-manipulate-gps-data">Usar funciones en XLSForm</a>.
+</p>
+</section>
+<section id="gestionar-datos-de-gps">
+<h2>Gestionar datos de GPS<a class="headerlink" href="#gestionar-datos-de-gps" title="Link to this heading">¶</a></h2>
+<p>Después de la recolección, los datos de GPS se pueden revisar, mapear y exportar en KoboToolbox.</p>
+<section id="ver-datos-de-gps-en-la-tabla-de-datos">
+<h3>Ver datos de GPS en la tabla de datos<a class="headerlink" href="#ver-datos-de-gps-en-la-tabla-de-datos" title="Link to this heading">¶</a></h3>
+<p>Las respuestas GPS aparecen en la tabla de datos como otras respuestas del formulario. Un punto GPS único se almacena como cuatro valores separados por espacios en este formato: <code class="docutils literal notranslate"><span class="pre">latitud</span> <span class="pre">longitud</span> <span class="pre">altitud</span> <span class="pre">precisión</span></code>.</p>
+<p>Para preguntas de línea y área, múltiples puntos GPS se almacenan en el mismo formato y se separan por punto y coma.</p>
+<p class="note">
+Para obtener más información sobre cómo ver tus datos en la tabla de datos, consulta <a href="https://support.kobotoolbox.org/es/viewing_validating_data.html">Ver y validar datos</a>.
+</p>
+</section>
+<section id="mapear-datos-de-gps-en-kobotoolbox">
+<h3>Mapear datos de GPS en KoboToolbox<a class="headerlink" href="#mapear-datos-de-gps-en-kobotoolbox" title="Link to this heading">¶</a></h3>
+<p>KoboToolbox ofrece una vista de <strong>Mapa</strong> integrada para visualizar puntos GPS individuales. Esto facilita revisar dónde se recolectaron los envíos, explorar patrones espaciales y comprender mejor la distribución geográfica de tus datos.</p>
+<p class="note">
+Para obtener más información sobre la vista de <strong>Mapa</strong> en KoboToolbox, consulta <a href="https://support.kobotoolbox.org/es/mapping_gps.html">Mapear datos GPS</a>.
+</p>
+</section>
+<section id="exportar-datos-de-gps">
+<h3>Exportar datos de GPS<a class="headerlink" href="#exportar-datos-de-gps" title="Link to this heading">¶</a></h3>
+<p>También puedes exportar datos de GPS desde KoboToolbox para usarlos en software externo. Los formatos de exportación disponibles admiten diferentes flujos de trabajo, desde la revisión y limpieza de datos hasta el mapeo y el análisis geoespacial:</p>
+<ul class="simple">
+<li><p>Las <strong>exportaciones CSV y XLS</strong> son útiles para trabajar con datos de GPS en software de hojas de cálculo y también se pueden importar en muchas herramientas GIS, aunque a menudo requieren configuración adicional, como definir los campos de coordenadas o un sistema de referencia de coordenadas.</p></li>
+<li><p>Para flujos de trabajo GIS, <strong>GeoJSON</strong> es generalmente el formato recomendado porque es ampliamente compatible con herramientas como ArcGIS y QGIS.</p></li>
+<li><p><strong>KML</strong> está pensado principalmente para la visualización en aplicaciones como Google Earth y admite estilos básicos de mapa, pero es más limitado y se recomienda usarlo solo cuando sea necesario para un flujo de trabajo específico.</p></li>
+</ul>
+<p class="note">
+Para obtener más información sobre cómo exportar tus datos de GPS para análisis externo, consulta <a href="https://support.kobotoolbox.org/es/mapping_gps.html#exporting-gps-data">Exportar datos GPS</a>.
+</p>
+</section>
+</section>
+<section id="resolucion-de-problemas">
+<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
+<details>
+<summary><strong>No se está capturando la ubicación GPS</strong></summary>
+Verifica que los servicios de ubicación y el GPS estén activados en el dispositivo y que el dispositivo tenga un sensor GPS. También puedes probar el GPS con otra aplicación para confirmar que el dispositivo puede determinar una ubicación. Para obtener mejores resultados, sal al exterior, espera a que la señal sea más fuerte, aléjate de edificios, árboles y otras obstrucciones, y dale tiempo adicional al dispositivo para obtener su primera señal GPS.
+</details>
+<br>
+<details>
+<summary><strong>La ubicación GPS es incorrecta</strong></summary>
+Si la ubicación registrada parece incorrecta, es posible que el dispositivo esté usando la ubicación basada en red en lugar del GPS por satélite. En algunos casos, desactivar la ubicación por red en la configuración del dispositivo puede ayudar a forzar a KoboCollect a esperar la ubicación GPS real.
+</details>
+<br>
+<details>
+<summary><strong>La precisión del GPS no alcanza el umbral objetivo</strong></summary>
+Si un punto nunca alcanza la precisión deseada, es posible que el umbral de <code>capture-accuracy</code> sea demasiado estricto para el dispositivo o las condiciones de campo.
+</details>
+<br></section>
 </section>
 
 
@@ -249,7 +373,7 @@ o
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Recolectar ubicaciones GPS"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Recolectar datos de GPS con KoboToolbox"
               class="feedback-button"
               target="_blank"
             >
@@ -265,148 +389,157 @@ o
   <p class="caption" role="heading"><span class="caption-text">Primeros Pasos</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="welcome.html">Introducción a KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Guía de inicio rápido</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glosario de KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Cuenta y Facturación</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="creating_account.html">Crear una cuenta en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el enlace de activación de cuenta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer contraseñas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activation_link.html">Solución de problemas con el link de activación de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Restablecer la contraseña</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Configurar la cuenta</a></li>
 <li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Configurar la autenticación de dos factores en KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso del Formbuilder</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzando con el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_types.html">Lista de Tipos de Preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="text_and_note.html">Tipos de preguntas Texto y Nota</a></li>
-<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Tipos de preguntas «Seleccionar Uno» y «Seleccionar Varios»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Reconocimiento</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Tipos de preguntas de Número, Decimal y Rango</a></li>
-<li class="toctree-l1"><a class="reference internal" href="date_time.html">Tipos de preguntas de fecha y hora</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Tipos de preguntas «Foto», «Audio», «Video» y «Archivo»</a></li>
-<li class="toctree-l1"><a class="reference internal" href="barcode_qrcode_questions.html">Tipo de pregunta Código de barras/Código QR</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rating_ranking.html">Tipos de preguntas de calificación vs clasificación</a></li>
-<li class="toctree-l1"><a class="reference internal" href="external_file.html">Tipo de pregunta Seleccionar Uno o Varios de un Archivo Externo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Tipos de preguntas GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Tipo de pregunta Calcular</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_calculate.html">Tipo de Pregunta Avanzada de Cálculo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="collecting_signatures.html">Tipo de pregunta de firma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Tipo de respuesta Matriz de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="responses_inside_question.html">Incluir respuestas dentro de otra pregunta</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_options.html">Uso de las opciones de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Agregar lógica de salto en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el editor de formularios de KoboToolbox (Formbuilder)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="number_text_responses.html">Límites en las respuestas de Número y Texto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el editor de formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Agrupar preguntas y grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Restringir Respuestas de Texto con Expresiones Regulares</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar otro idioma en el panel del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Configuración del formulario y metadatos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="audit_logging.html">Tipo de meta pregunta de registro de auditoría</a></li>
-<li class="toctree-l1"><a class="reference internal" href="custom_format_web.html">Formato personalizado en formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Uso de estilos alternativos de formularios web de Enketo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="question_library.html">Uso de La biblioteca de preguntas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Uso de Colecciones públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="public_collections_advanced_search.html">Búsqueda Avanzada en Colecciones Públicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="hxl.html">Uso de etiquetas HXL</a></li>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Comenzar con el editor de formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Agregar preguntas con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Preguntas de tipo Texto en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Preguntas de opción múltiple en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="acknowledge.html">Tipo de pregunta Consentimiento</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Preguntas digitales en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Preguntas de Fecha y Hora en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Preguntas Multimedia en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">Preguntas GPS en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Preguntas de tipo Nota en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Opciones de preguntas en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Agregar una matriz de preguntas usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Agregar traducciones en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="alternative_enketo.html">Diseñar formularios web usando el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Agregar metadatos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introducción a la lógica de formularios en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Añadir lógica de salto al Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Añadir criterios de validación en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Agregar cálculos con el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Agregar preguntas de selección en cascada en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Seleccionar opciones de archivos externos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Usar la biblioteca de preguntas de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Colecciones públicas en la biblioteca KoboToolbox</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Uso de XLSForm</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Editar formularios en Excel usando XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Primeros pasos con XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xls_url.html">Importar un XLSForm a través de URL</a></li>
-<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar Varios Tipos de Medios (imagen, audio, video) a un Formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Agregar otro idioma a tu XLSForm</a></li>
-<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Adjuntos de datos dinámicos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Funcionalidad de extracción de datos en KoboToolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloqueo de biblioteca</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introducción a XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Crear un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Usar XLSForm con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Tipos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Administrar opciones de respuesta en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grupos de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Grupos repetidos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Opciones de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Apariencia de preguntas en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Añadir traducciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Agregar archivos multimedia a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Usar funciones en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Usar expresiones regulares en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Añadir lógica de salto a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Agregar restricciones a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Añadir lógica de obligación en un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Agregar filtros de selección a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Agregar cálculos a un XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Configuración de formularios en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Personalizar formularios usando XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Metadatos en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Extraer datos de un archivo CSV externo</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Seleccionar opciones de un archivo externo en XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Seleccionar opciones de un mapa</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Seleccionar opciones desde una imagen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Conexión dinámica de proyectos usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Bloquear cuestionarios para la biblioteca usando XLSForms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importar una colección con XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recopilación de Datos</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Descripción general de las herramientas de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="enketo.html">¿Qué son los formularios web de Enketo?</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Desplegar un formulario para iniciar un nuevo proyecto de recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Grabar una Entrevista Completa con la Grabación de Audio de Fondo</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolectar datos a través de formularios web</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data-offline.html">Recolectar datos sin conexión</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Primeros pasos con KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar los ajustes de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos usando KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Transferir formularios y datos manualmente de un dispositivo Android a otro</a></li>
-<li class="toctree-l1"><a class="reference internal" href="devices_for_data_collection.html">Dispositivos recomendados para la recolección de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_kobocollect.html">Solución de problemas de la aplicación de Android de KoboCollect</a></li>
-<li class="toctree-l1"><a class="reference internal" href="troubleshooting_webforms.html">Solución de problemas de formularios web de Enketo</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Recolectar ubicaciones GPS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#crear-los-diferentes-tipos-de-preguntas-gps">Crear los diferentes tipos de preguntas GPS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#recolectar-datos-usando-las-preguntas-gps">Recolectar datos usando las preguntas GPS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#recolectar-datos-usando-formularios-web-enketo">Recolectar datos usando formularios web Enketo</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#recolectar-datos-usando-kobocollect">Recolectar datos usando KoboCollect</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#precision-de-las-coordenadas-gps-recolectadas">Precisión de las coordenadas GPS recolectadas</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#solucion-de-problemas">Solución de problemas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Recolección de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Implementar formularios para la recolección de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Recolección de datos a través de formularios web</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Configuración de la aplicación KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Recolección de datos con KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Personalizar la configuración de KoboCollect</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Recolectar datos de GPS con KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#configurar-tu-formulario-para-recolectar-datos-de-gps">Configurar tu formulario para recolectar datos de GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#recolectar-datos-de-gps">Recolectar datos de GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mejorar-la-precision-del-gps">Mejorar la precisión del GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#logica-avanzada-de-formularios-con-datos-de-gps">Lógica avanzada de formularios con datos de GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#gestionar-datos-de-gps">Gestionar datos de GPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#resolucion-de-problemas">Resolución de problemas</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="recording-interviews.html">Recolectar datos cualitativos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Gestión de Proyectos y Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="project_summary.html">Resumen del proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="record_validation.html">Validación de registros</a></li>
-<li class="toctree-l1"><a class="reference internal" href="delete_project.html">Eliminar un proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar tus datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para exportar datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Manejo de datos de grupos repetidos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="archiving_projects.html">Archivar y desarchivar proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Descripción general de la interfaz de KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Gestión de proyectos en KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Ver y validar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Modificar y eliminar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exportar y descargar datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Opciones avanzadas para la exportación de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Gestión de datos de grupos repetidos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Introducción a archivos y multimedia en los proyectos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Importar archivos multimedia a un proyecto</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Gestionar respuestas con archivos multimedia</a></li>
 <li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Compartir proyectos con configuraciones a nivel de proyecto</a></li>
-<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario/a</a></li>
-<li class="toctree-l1"><a class="reference internal" href="export_gps.html">Mapeo, Compartir y Exportar Datos GPS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_single_submissions.html">Editar o eliminar un envío individual</a></li>
-<li class="toctree-l1"><a class="reference internal" href="howto_edit_multiple_submissions.html">Editar respuestas en múltiples envíos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="photo_download.html">Descargando fotos y otros medios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="deleting_media.html">Eliminar archivos multimedia</a></li>
-<li class="toctree-l1"><a class="reference internal" href="recovering_previous_formdata.html">Recuperar datos de versiones anteriores del formulario</a></li>
-<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Uso de la función de manejo de equipos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Registros de actividad</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Compartir proyectos con permisos a nivel de usuario</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Seguimiento a la actividad del proyecto y de la cuenta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_organization_feature.html">Usar la función de gestión de equipos</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Análisis de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualización y creación de informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Análisis de datos con KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparar tu formulario para el análisis de datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizar datos utilizando informes personalizados</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapear datos GPS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcripción y traducción de respuestas de audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis Cualitativo de Respuestas de Audio</a></li>
-<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y/o Stata</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Análisis cualitativo de respuestas de audio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Convertir datos a SPSS y Stata</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Integraciones</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">Primeros pasos con la API</a></li>
-<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Uso de la API para exportaciones sincrónicas</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox a Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox a Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de lista a través de Power Query en Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Servicios REST</a></li>
-<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y cargar datos en software GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox en monday.com</a></li>
-<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de la API v1 a v2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">Introducción a la API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Usar la API para exportaciones sincrónicas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Conectar KoboToolbox con Microsoft Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Conectar KoboToolbox con Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="merging_dataset_excel_power_query.html">Combinar datos individuales con datos de grupos de repetición a través de Power Query en Excel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Usar servicios REST</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_to_gis.html">Exportar y descargar datos a software GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">Integración de KoboToolbox con monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migración de API v1 a API v2</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Seguridad y Protección de Datos</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Medidas de seguridad de datos de KoboToolbox: Mantener tus datos seguros</a></li>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Seguridad de datos en KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Reglamento General de Protección de Datos (RGPD)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Cumplimiento de HIPAA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_storage.html">Almacenamiento de datos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encriptar formularios</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Cifrar formularios</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Recursos Adicionales</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en los datos de salida</a></li>
-<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear números de serie únicos en formularios</a></li>
-<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Respuestas «Otro» especificadas por el/la usuario/a para preguntas de opción múltiple</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de archivo de los medios recolectados</a></li>
-<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Añadir Cálculos y Restricciones en una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Añadiendo Lógica de Salto a una Pregunta de Matriz</a></li>
-<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Agregar un logotipo personalizado</a></li>
-<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en estado pendiente</a></li>
-<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Cargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="p_codes.html">Incluir códigos P en tus datos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="unique_serial_numbers.html">Crear seriales únicos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="user_specified_other.html">Brindar más detalles sobre una opción de selección múltiple</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lower_file_size.html">Reducir el tamaño de los archivos multimedia</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_constraints_matrix.html">Agregar cálculos y restricciones a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="adding_skip_to_matrix.html">Agregar lógica de omisión a una matriz de preguntas</a></li>
+<li class="toctree-l1"><a class="reference internal" href="add_logo.html">Añadir un logotipo personalizado</a></li>
+<li class="toctree-l1"><a class="reference internal" href="stuck_in_pending.html">Exportaciones atascadas en «estado pendiente»</a></li>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Descargar envíos manualmente</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importar formularios en KoboCollect</a></li>
 </ul>
 
 </div>
@@ -471,7 +604,7 @@ o
   <script>
     window.docs = {
       currentPagename: "collect_gps",
-      currentTitle: "Recolectar ubicaciones GPS",
+      currentTitle: "Recolectar datos de GPS con KoboToolbox",
       currentUrl: ("index.html").replace("index.html", "collect_gps.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
