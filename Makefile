@@ -8,7 +8,7 @@ SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = _build
 COMPILEDIR    = docs
-LOCALES       = es fr ar
+LOCALES       = es fr
 
 # Put it first so that "make" without argument is like "make help".
 help:
