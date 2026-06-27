@@ -1,11 +1,15 @@
 Topics
 ======
 
-Search the knowledge base, browse our resources, and visit our forum for more detailed information
+Explorez des conseils pratiques sur les sujets et fonctionnalités de KoboToolbox
 
 .. README: please don't change name or caption of TOCs - they are used for
 .. JavaScript code and for properly building the custom section pages.
 .. If you need to change them, please contact a developer :-*
+
+.. raw:: html
+
+   <a class="toc-card" href="getting-started.html">
 
 .. toctree::
   :maxdepth: 2
@@ -13,12 +17,17 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :name: home-page-toc-getting-started
 
   welcome
-  quick_start
   creating_account
-  formbuilder
-  getting_started_xlsform
+  quick_start
+  glossary
 
+.. raw:: html
 
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="account-billing.html">
 
 .. toctree::
   :maxdepth: 2
@@ -28,7 +37,16 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   creating_account
   activation_link
   reset_password
+  account_settings
   two_factor_authentication
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="using-formbuilder.html">
 
 .. toctree::
   :maxdepth: 2
@@ -37,37 +55,37 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
   formbuilder
   question_types
-  text_and_note
+  text_questions
   select_one_and_select_many
   acknowledge
   number_decimal_range
   date_time
   photo_audio_video_file
-  barcode_qrcode_questions
-  rating_ranking
-  external_file
   gps_questions
-  calculate_questions
-  advanced_calculate
-  collecting_signatures
-  matrix_response
-  responses_inside_question
+  note_questions
   question_options
+  group_repeat
+  matrix_response
+  language_dashboard
+  alternative_enketo
+  form_meta
+  form_logic
   skip_logic
   validation_criteria
-  number_text_responses
+  calculate_questions
   cascading_select
-  group_repeat
-  restrict_responses
-  language_dashboard
-  form_meta
-  audit_logging
-  custom_format_web
-  alternative_enketo
+  external_file
+  dynamic_data_attachment_formbuilder
   question_library
   using_public_collections
-  public_collections_advanced_search
-  hxl
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="using-xlsform.html">
 
 .. toctree::
   :maxdepth: 2
@@ -76,12 +94,41 @@ Search the knowledge base, browse our resources, and visit our forum for more de
 
   edit_forms_excel
   getting_started_xlsform
-  xls_url
-  media
+  xlsform_with_kobotoolbox
+  question_types_xls
+  option_choices_xls
+  grouping_questions_xls
+  repeat_groups_xls
+  question_options_xls
+  appearances_xls
   language_xls
-  dynamic_data_attachment
+  media
+  form_logic_xls
+  functions_xls
+  restrict_responses
+  skip_logic_xls
+  constraints_xls
+  required_logic_xls
+  choice_filters_xls
+  calculations_xls
+  form_settings_xls
+  form_style_xls.md
+  metadata_xls
   pull_data_kobotoolbox
+  select_from_file_xls
+  select_from_map_xls
+  select_from_image
+  dynamic_data_attachment
   library_locking
+  import_collection
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="collecting-data.html">
 
 .. toctree::
   :maxdepth: 2
@@ -89,53 +136,74 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   :name: home-page-toc-collecting-data
 
   data-collection-tools
-  enketo
   deploy_form_new_project
-  recording-interviews
   data_through_webforms
-  data-offline
   kobocollect_on_android_latest
-  kobocollect_settings
   data_collection_kobocollect
-  transferring_forms
-  devices_for_data_collection
-  troubleshooting_kobocollect
-  troubleshooting_webforms
+  kobocollect_settings
   collect_gps
+  recording-interviews
+  collecting_data_multiple_languages
+
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="managing-projects.html">
 
 .. toctree::
   :maxdepth: 2
   :caption: Gestion des Projets et Données
   :name: home-page-toc-managing-projects
 
-  project_summary
-  record_validation
-  delete_project
+  kobotoolbox_interface
+  managing_projects
+  viewing_validating_data
+  editing_deleting_data
   export_download
   advanced_export
   managing_repeat_groups
-  archiving_projects
+  project_files_media
+  upload_media
+  managing_media_responses
   project_sharing_settings
   managing_permissions
-  export_gps
-  howto_edit_single_submissions
-  howto_edit_multiple_submissions
-  photo_download
-  deleting_media
-  recovering_previous_formdata
-  getting_started_organization_feature
   activity_logs
-  
+  getting_started_organization_feature
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="analyzing-data.html">
+
 
 .. toctree::
   :maxdepth: 2
   :caption: Analyse des Données
   :name: home-page-toc-analyzing-data
 
+  data_analysis
+  preparing_for_analysis
   creating_custom_reports
+  mapping_gps
   transcription-translation
   qualitative_analysis
   converting_to_spss_and_stata
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="integrations.html">
+
 
 .. toctree::
   :maxdepth: 2
@@ -152,6 +220,15 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   kobotoolbox_monday_integration
   migrating_api
 
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="data-security-protection.html">
+
+
 .. toctree::
   :maxdepth: 2
   :caption: Sécurité et Protection des Données
@@ -162,6 +239,15 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   hipaa_compliance
   data_storage
   encrypting_forms
+
+.. raw:: html
+
+   </a>
+
+.. raw:: html
+
+   <a class="toc-card" href="additional-resources.html">
+
 
 .. toctree::
   :maxdepth: 2
@@ -177,4 +263,9 @@ Search the knowledge base, browse our resources, and visit our forum for more de
   add_logo
   stuck_in_pending
   manual_upload
+  transferring_forms
+
+.. raw:: html
+
+   </a>
 
