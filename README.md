@@ -43,11 +43,18 @@ The documentation supports multiple languages. The structure is:
 - `source/` - English content (default language)
 - `locales/es/` - Spanish translations
 - `locales/fr/` - French translations
-- `locales/ar/` - Arabic translations
 
 ### Building translated documentation
 
-To build documentation in a specific language:
+To build everything (English plus all translated locales) in one step:
+
+```bash
+make html-all
+```
+
+This builds English into `_build/html/` and each locale into `_build/html/<lang>`.
+
+To build a single language on its own:
 
 ```bash
 # Build English (default)
@@ -58,9 +65,6 @@ sphinx-build -b html locales/es _build/html/es
 
 # Build French
 sphinx-build -b html locales/fr _build/html/fr
-
-# Build Arabic
-sphinx-build -b html locales/ar _build/html/ar
 ```
 
 ### Adding new translations
