@@ -312,6 +312,9 @@ html body header.main-header .main-header__navigation .language-picker__menu li 
   display: block;
   margin: 0;
 }
+html body header.main-header .main-header__navigation .language-picker .language-picker__menu li {
+  display: block;
+}
 html body header.main-header .main-header__navigation .language-picker__option {
   display: block;
   padding: 8px 16px;
