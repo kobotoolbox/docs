@@ -143,6 +143,15 @@ html body header.main-header {
       }
     }
 
+    // The mobile nav hides every non-current top-level item
+    // (`ul li:not(.current) { display: none }`), but that descendant
+    // selector also matches the language options nested in the dropdown,
+    // collapsing the open menu into an empty strip. Re-show them with a
+    // higher-specificity selector so the picker works on mobile too.
+    .language-picker .language-picker__menu li {
+      display: block;
+    }
+
     .language-picker__option {
       display: block;
       padding: 8px 16px;
