@@ -1,7 +1,9 @@
-Topics
-======
+.. rst-class:: topics-section
 
-Explore orientación práctica sobre los temas y funciones de KoboToolbox
+Temas
+=====
+
+Explora orientación práctica sobre los temas y funciones de KoboToolbox
 
 .. README: please don't change name or caption of TOCs - they are used for
 .. JavaScript code and for properly building the custom section pages.

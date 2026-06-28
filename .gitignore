@@ -13,6 +13,13 @@ koboenv/
 _build/
 temp-kpi-clone
 
+# generated quicklinks PDFs (built from quicklinks_*.md via scripts/quicklinks_to_pdf.py)
+quicklinks_*.pdf
+quicklinks_*.html
+quicklinks_*.md
+
 *.sublime-*
 
 .vscode/
+
+scripts/__pycache__/*

@@ -51,6 +51,11 @@ html body header.main-header {
         margin-left: 1.2em;
         margin-right: 0;
 
+        &.language-picker {
+          position: relative;
+          text-transform: none;
+        }
+
         a {
           color: $c_white;
           text-decoration: none;
@@ -68,7 +73,94 @@ html body header.main-header {
           &:not(.current) {
             display: none;
           }
+
+          &.language-picker {
+            display: inline-block;
+          }
         }
+      }
+    }
+
+    .language-picker__details {
+      position: relative;
+    }
+
+    .language-picker__toggle {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4em;
+      padding: 6px 12px;
+      color: $c_white;
+      cursor: pointer;
+      list-style: none;
+      border: 1px solid rgba($c_white, 0.35);
+      border-radius: 999px;
+      background: rgba($c_white, 0.06);
+      transition: $link_transition;
+
+      // Hide the native disclosure triangle.
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &:hover,
+      &:focus-visible {
+        background: rgba($c_white, 0.12);
+        outline: none;
+      }
+    }
+
+    .language-picker__caret {
+      width: 0;
+      height: 0;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+      border-top: 5px solid $c_white;
+      transition: transform 0.2s;
+    }
+
+    .language-picker__details[open] .language-picker__caret {
+      transform: rotate(180deg);
+    }
+
+    .language-picker__menu {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: calc(100% + 6px);
+      min-width: 160px;
+      margin: 0;
+      padding: 4px 0;
+      list-style: none;
+      background: $c_white;
+      border-radius: 6px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+      z-index: 1000;
+
+      li {
+        display: block;
+        margin: 0;
+      }
+    }
+
+    .language-picker__option {
+      display: block;
+      padding: 8px 16px;
+      color: $c_rhino;
+      text-decoration: none;
+      line-height: 1.2;
+      transition: $link_transition;
+
+      &:hover,
+      &:focus-visible {
+        background: $c_zumthor;
+        opacity: 1;
+        outline: none;
+      }
+
+      &.language-picker__option--active {
+        color: $c_blue;
+        font-weight: 600;
       }
     }
   }
