@@ -71,7 +71,72 @@ sphinx-build -b html locales/fr _build/html/fr
 
 1. Create the translated file in `locales/[lang]/` with the same filename as the English version (e.g., `locales/es/new_article.md`)
 2. Add the file to the corresponding `locales/[lang]/index.rst` toctree
-3. ~~Add language switcher links at the top of each version~~ (Language switcher links have been removed)
+
+### Translating UI elements (header, search, footer, etc.)
+
+The article content lives in the `.md`/`.rst` files, but the surrounding
+theme chrome — the header navigation, language picker, search box, feedback
+prompt, footer, and homepage forum/academy sections — is translated directly
+in the Jinja templates.
+
+Each template that contains UI text defines a translation dictionary keyed by
+language code and selects the entry for the page's language. Sphinx exposes
+the current language as the `language` variable (set per locale in each
+`conf.py`: `source/conf.py` is `en`, `locales/es/conf.py` is `es`,
+`locales/fr/conf.py` is `fr`). The templates fall back to English when a
+language is missing.
+
+The templates that hold translatable strings are:
+
+- `source/_templates/partials/header.html` — nav links + language picker labels
+- `source/_templates/partials/search.html` — search heading, description, placeholder, button
+- `source/_templates/partials/community_questions.html` — forum and academy sections
+- `source/_templates/layout.html` — breadcrumb, "back to top", feedback prompt, footer
+
+A typical block looks like this:
+
+```jinja
+{% set lang = language or 'en' %}
+{% set translations = {
+  'en': { 'heading': 'What do you need help with?' },
+  'es': { 'heading': '¿Con qué necesitas ayuda?' },
+  'fr': { 'heading': 'Comment pouvons-nous vous aider ?' }
+} %}
+{% set t = translations.get(lang, translations['en']) %}
+
+<h1>{{ t.heading }}</h1>
+```
+
+**To update or correct a UI string:** edit the matching value in that
+template's translation dictionary.
+
+**To add a brand-new UI string:** add the key to every language in the
+dictionary (English is required as the fallback) and reference it with
+`{{ t.<key> }}` in the markup.
+
+**To add a whole new language** (e.g. `de`):
+
+1. Add the language code to `LOCALES` in the `Makefile`.
+2. Create `locales/de/conf.py` with `language = 'de'`.
+3. Add a `'de'` entry to the translation dictionary in each template listed
+   above, and add the language to the picker in `header.html` (the
+   `languages` list and the `current_label` map).
+4. Translate the `locales/de/` content files as described in
+   "Adding new translations".
+
+### The language picker
+
+The dropdown language picker is rendered in
+`source/_templates/partials/header.html` and styled in
+`sass_source/sass/_header.scss` (the `.language-picker__*` classes). It links
+to the current page in each locale using relative paths, so it works from any
+page depth. Remember to run `npm start` after changing the SCSS so the
+compiled CSS in `source/_static/css/` is regenerated.
+
+> Note: the homepage "Topics" heading uses a `.. rst-class:: topics-section`
+> directive (instead of relying on the auto-generated `#topics` id) so the
+> homepage grid styling survives translated headings such as "Temas" /
+> "Sujets". Keep that directive when editing any locale's `index.rst`.
 
 ## Custom theme development
 
