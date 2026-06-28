@@ -3,7 +3,7 @@
 Sujets
 ======
 
-Explorez des conseils pratiques sur les sujets et fonctionnalités de KoboToolbox
+Explorez nos ressources pour vous guider à travers les fonctionnalités de KoboToolbox
 
 .. README: please don't change name or caption of TOCs - they are used for
 .. JavaScript code and for properly building the custom section pages.
