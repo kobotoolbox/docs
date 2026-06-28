@@ -227,6 +227,10 @@ html body header.main-header .main-header__navigation ul li {
   margin-left: 1.2em;
   margin-right: 0;
 }
+html body header.main-header .main-header__navigation ul li.language-picker {
+  position: relative;
+  text-transform: none;
+}
 html body header.main-header .main-header__navigation ul li a {
   color: hsl(0, 0%, 100%);
   text-decoration: none;
@@ -241,6 +245,90 @@ html body header.main-header .main-header__navigation ul li.current a {
   html body header.main-header .main-header__navigation ul li:not(.current) {
     display: none;
   }
+  html body header.main-header .main-header__navigation ul li.language-picker {
+    display: inline-block;
+  }
+}
+html body header.main-header .main-header__navigation .language-picker__details {
+  position: relative;
+}
+html body header.main-header .main-header__navigation .language-picker__toggle {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.4em;
+  padding: 6px 12px;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  list-style: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+html body header.main-header .main-header__navigation .language-picker__toggle::-webkit-details-marker {
+  display: none;
+}
+html body header.main-header .main-header__navigation .language-picker__toggle:hover, html body header.main-header .main-header__navigation .language-picker__toggle:focus-visible {
+  background: rgba(255, 255, 255, 0.12);
+  outline: none;
+}
+html body header.main-header .main-header__navigation .language-picker__caret {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid hsl(0, 0%, 100%);
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+html body header.main-header .main-header__navigation .language-picker__details[open] .language-picker__caret {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+html body header.main-header .main-header__navigation .language-picker__menu {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 6px);
+  min-width: 160px;
+  margin: 0;
+  padding: 4px 0;
+  list-style: none;
+  background: hsl(0, 0%, 100%);
+  border-radius: 6px;
+  -webkit-box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+  z-index: 1000;
+}
+html body header.main-header .main-header__navigation .language-picker__menu li {
+  display: block;
+  margin: 0;
+}
+html body header.main-header .main-header__navigation .language-picker__option {
+  display: block;
+  padding: 8px 16px;
+  color: hsl(230, 12%, 29%);
+  text-decoration: none;
+  line-height: 1.2;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+html body header.main-header .main-header__navigation .language-picker__option:hover, html body header.main-header .main-header__navigation .language-picker__option:focus-visible {
+  background: hsl(207, 92%, 95%);
+  opacity: 1;
+  outline: none;
+}
+html body header.main-header .main-header__navigation .language-picker__option.language-picker__option--active {
+  color: hsl(207, 90%, 54%);
+  font-weight: 600;
 }
 
 .main-search {
@@ -864,7 +952,7 @@ html body div.footer p:last-child {
 .page#index .page__related {
   display: none;
 }
-.page#index #topics {
+.page#index .topics-section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -881,7 +969,7 @@ html body div.footer p:last-child {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.page#index #topics > h1 {
+.page#index .topics-section > h1 {
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 700;
   font-size: 2.25rem;
@@ -890,7 +978,7 @@ html body div.footer p:last-child {
   margin: 0 0 0.75rem;
   width: 100%;
 }
-.page#index #topics > p {
+.page#index .topics-section > p {
   font-size: 1.125rem;
   margin: 0 0 2.625rem;
   text-align: center;
