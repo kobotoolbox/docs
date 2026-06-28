@@ -1,3 +1,58 @@
+{% set current_lang = language or 'en' %}
+{% set page_slug = (pagename ~ '.html') if pagename != 'index' else 'index.html' %}
+
+{# Build the relative href to each locale's copy of the current page. #}
+{% if current_lang == 'en' %}
+  {% set lang_hrefs = {'en': page_slug, 'es': 'es/' ~ page_slug, 'fr': 'fr/' ~ page_slug} %}
+{% elif current_lang == 'es' %}
+  {% set lang_hrefs = {'en': '../' ~ page_slug, 'es': page_slug, 'fr': '../fr/' ~ page_slug} %}
+{% elif current_lang == 'fr' %}
+  {% set lang_hrefs = {'en': '../' ~ page_slug, 'es': '../es/' ~ page_slug, 'fr': page_slug} %}
+{% else %}
+  {% set lang_hrefs = {'en': page_slug, 'es': 'es/' ~ page_slug, 'fr': 'fr/' ~ page_slug} %}
+{% endif %}
+
+{% set languages = [
+  {'code': 'en', 'label': 'English'},
+  {'code': 'es', 'label': 'Español'},
+  {'code': 'fr', 'label': 'Français'}
+] %}
+{% set current_label = {'en': 'English', 'es': 'Español', 'fr': 'Français'}.get(current_lang, 'English') %}
+
+{% set nav_copy = {
+  'en': {
+    'home': 'Home',
+    'about': 'About us',
+    'get_started': 'Get started',
+    'academy': 'Academy',
+    'community': 'Community Forum',
+    'help': 'Help',
+    'donate': 'Donate',
+    'language': 'Language',
+  },
+  'es': {
+    'home': 'Inicio',
+    'about': 'Sobre nosotros',
+    'get_started': 'Comenzar',
+    'academy': 'Academia',
+    'community': 'Foro de la Comunidad',
+    'help': 'Ayuda',
+    'donate': 'Donar',
+    'language': 'Idioma',
+  },
+  'fr': {
+    'home': 'Accueil',
+    'about': 'À propos',
+    'get_started': 'Démarrer',
+    'academy': 'Académie',
+    'community': 'Forum communautaire',
+    'help': 'Aide',
+    'donate': 'Faire un don',
+    'language': 'Langue',
+  }
+} %}
+{% set nav = nav_copy.get(current_lang, nav_copy['en']) %}
+
 <header role="banner" class="main-header" id="main-header">
   <div class="main-header__logo-container">
     <a href="https://kobotoolbox.org/#home" class="main-header__logo">
@@ -6,14 +61,38 @@
   </div>
   <nav class="main-header__navigation" role="navigation">
     <ul>
-      <li><a href={{ pathto(master_doc) }}>Home</a></li>
-      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
-      <li><a href="https://support.kobotoolbox.org/quick_start.html">Get started</a></li>
-      <li><a href="https://academy.kobotoolbox.org">Academy</a></li>
-      <li><a href="https://community.kobotoolbox.org">Community Forum</a></li>
-      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li><a href={{ pathto(master_doc) }}>{{ nav.home }}</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">{{ nav.about }}</a></li>
+      <li><a href="https://support.kobotoolbox.org/quick_start.html">{{ nav.get_started }}</a></li>
+      <li><a href="https://academy.kobotoolbox.org">{{ nav.academy }}</a></li>
+      <li><a href="https://community.kobotoolbox.org">{{ nav.community }}</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">{{ nav.help }}</a></li>
+      <li class="language-picker">
+        <details class="language-picker__details">
+          <summary class="language-picker__toggle" aria-label="{{ nav.language }}">
+            <span class="language-picker__current">{{ current_label }}</span>
+            <span class="language-picker__caret" aria-hidden="true"></span>
+          </summary>
+          <ul class="language-picker__menu" role="menu">
+            {% for lang in languages %}
+            <li role="none">
+              <a
+                role="menuitem"
+                class="language-picker__option {% if current_lang == lang.code %}language-picker__option--active{% endif %}"
+                href="{{ lang_hrefs[lang.code] }}"
+                lang="{{ lang.code }}"
+                hreflang="{{ lang.code }}"
+                {% if current_lang == lang.code %}aria-current="page"{% endif %}
+              >
+                {{ lang.label }}
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </details>
+      </li>
       <li>
-        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+        <a class="button" href="https://kobotoolbox.org/donate">{{ nav.donate }}</a>
       </li>
     </ul>
   </nav>

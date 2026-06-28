@@ -1,4 +1,6 @@
-Topics
+.. rst-class:: topics-section
+
+Sujets
 ======
 
 Explorez des conseils pratiques sur les sujets et fonctionnalités de KoboToolbox
