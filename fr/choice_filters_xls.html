@@ -552,9 +552,17 @@ Pour un exemple de XLSForm utilisant des filtres de choix dynamiques, consultez 
             <p>Avez-vous trouvé ce que vous cherchiez ? La traduction était-elle claire ? Manquait-il quelque chose ?<br>Partagez vos commentaires pour nous aider à améliorer cet article !</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Ajouter des filtres de choix dans XLSForm&d[language]=fr&lang=fr"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
+              data-page="Ajouter des filtres de choix dans XLSForm"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[language]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
             >
               Remplissez le court sondage ici &rarr;
             </a>

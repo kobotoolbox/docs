@@ -278,9 +278,17 @@ compatible con la <strong>aplicación Android KoboCollect</strong>.</p></li>
             <p>¿Encontraste lo que buscabas? ¿Te ha parecido clara la traducción? ¿Faltaba algo?<br>¡Comparte tus comentarios para ayudarnos a mejorar este artículo!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Agregar cálculos y restricciones a una matriz de preguntas&d[language]=es&lang=es"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
+              data-page="Agregar cálculos y restricciones a una matriz de preguntas"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[language]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
             >
               Completa la breve encuesta aquí &rarr;
             </a>

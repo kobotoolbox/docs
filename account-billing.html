@@ -336,9 +336,17 @@
             <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Account & Billing&d[language]=en&lang=en"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
+              data-page="Account & Billing"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[language]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
             >
               Fill out the short survey here &rarr;
             </a>

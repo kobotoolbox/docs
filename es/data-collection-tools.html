@@ -282,9 +282,17 @@ Los proyectos implementados están configurados para <a href="https://support.ko
             <p>¿Encontraste lo que buscabas? ¿Te ha parecido clara la traducción? ¿Faltaba algo?<br>¡Comparte tus comentarios para ayudarnos a mejorar este artículo!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Recolección de datos con KoboToolbox&d[language]=es&lang=es"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
+              data-page="Recolección de datos con KoboToolbox"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[language]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
             >
               Completa la breve encuesta aquí &rarr;
             </a>

@@ -344,9 +344,17 @@ class="reference">nous contacter</a> immédiatement afin que nous puissions y re
             <p>Avez-vous trouvé ce que vous cherchiez ? La traduction était-elle claire ? Manquait-il quelque chose ?<br>Partagez vos commentaires pour nous aider à améliorer cet article !</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Intégration de KoboToolbox avec monday.com&d[language]=fr&lang=fr"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
+              data-page="Intégration de KoboToolbox avec monday.com"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[language]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
             >
               Remplissez le court sondage ici &rarr;
             </a>

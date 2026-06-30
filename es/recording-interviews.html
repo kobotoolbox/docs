@@ -317,9 +317,17 @@ Si un formulario con grabación de audio de fondo se guarda como borrador en <st
             <p>¿Encontraste lo que buscabas? ¿Te ha parecido clara la traducción? ¿Faltaba algo?<br>¡Comparte tus comentarios para ayudarnos a mejorar este artículo!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Recolectar datos cualitativos con KoboToolbox&d[language]=es&lang=es"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
+              data-page="Recolectar datos cualitativos con KoboToolbox"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[language]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
             >
               Completa la breve encuesta aquí &rarr;
             </a>

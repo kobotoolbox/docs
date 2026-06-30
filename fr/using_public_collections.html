@@ -416,9 +416,17 @@ Pour en savoir plus sur la création de collections dans votre bibliothèque, co
             <p>Avez-vous trouvé ce que vous cherchiez ? La traduction était-elle claire ? Manquait-il quelque chose ?<br>Partagez vos commentaires pour nous aider à améliorer cet article !</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Collections publiques dans la bibliothèque KoboToolbox&d[language]=fr&lang=fr"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
+              data-page="Collections publiques dans la bibliothèque KoboToolbox"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[language]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
             >
               Remplissez le court sondage ici &rarr;
             </a>

@@ -439,9 +439,17 @@ Esto es común al agregar una pregunta de texto abierto "Especificar otro" despu
             <p>¿Encontraste lo que buscabas? ¿Te ha parecido clara la traducción? ¿Faltaba algo?<br>¡Comparte tus comentarios para ayudarnos a mejorar este artículo!</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Añadir lógica de salto a un XLSForm&d[language]=es&lang=es"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
+              data-page="Añadir lógica de salto a un XLSForm"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[language]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
             >
               Completa la breve encuesta aquí &rarr;
             </a>

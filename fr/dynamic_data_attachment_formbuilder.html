@@ -338,9 +338,17 @@ Pour en savoir plus sur les calculs dans le Formbuilder, consultez l'article <a 
             <p>Avez-vous trouvé ce que vous cherchiez ? La traduction était-elle claire ? Manquait-il quelque chose ?<br>Partagez vos commentaires pour nous aider à améliorer cet article !</p>
 
             <a
-              href="https://ee-eu.kobotoolbox.org/single/OPizwor2?d[page]=Liaison dynamique de projets avec le Formbuilder&d[language]=fr&lang=fr"
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
+              data-page="Liaison dynamique de projets avec le Formbuilder"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[language]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
             >
               Remplissez le court sondage ici &rarr;
             </a>
