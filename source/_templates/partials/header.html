@@ -1,6 +1,12 @@
 {% set current_lang = language or 'en' %}
 {% set page_slug = (pagename ~ '.html') if pagename != 'index' else 'index.html' %}
 
+{# Locale segment for absolute support-site links: English lives at the root,
+   every other language under /<lang>/. Keeps nav links (About us, Get started)
+   pointing at the current language's translation of the article. #}
+{% set support_base = 'https://support.kobotoolbox.org/' %}
+{% set lang_segment = '' if current_lang == 'en' else current_lang ~ '/' %}
+
 {# Build the relative href to each locale's copy of the current page. #}
 {% if current_lang == 'en' %}
   {% set lang_hrefs = {'en': page_slug, 'es': 'es/' ~ page_slug, 'fr': 'fr/' ~ page_slug} %}
@@ -62,8 +68,8 @@
   <nav class="main-header__navigation" role="navigation">
     <ul>
       <li><a href={{ pathto(master_doc) }}>{{ nav.home }}</a></li>
-      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">{{ nav.about }}</a></li>
-      <li><a href="https://support.kobotoolbox.org/quick_start.html">{{ nav.get_started }}</a></li>
+      <li><a href="{{ support_base }}{{ lang_segment }}about_kobotoolbox.html">{{ nav.about }}</a></li>
+      <li><a href="{{ support_base }}{{ lang_segment }}quick_start.html">{{ nav.get_started }}</a></li>
       <li><a href="https://academy.kobotoolbox.org">{{ nav.academy }}</a></li>
       <li><a href="https://community.kobotoolbox.org">{{ nav.community }}</a></li>
       <li class="current"><a href="https://www.kobotoolbox.org/help">{{ nav.help }}</a></li>
