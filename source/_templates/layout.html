@@ -127,6 +127,11 @@
       currentUrl: ("{{ pathto(master_doc) }}").replace("index.html", "{{ pagename }}.html"),
       rootUrl: "{{ url_root }}",
       sectionsData: {{ config.sections_data|tojson }},
+      {# Ordered list of section names matching the toctree/caption order in
+         index.rst. sectionsData|tojson sorts its keys alphabetically, so it
+         can't be used for positional matching — this preserves _config.html's
+         (and therefore index.rst's) order for custom_sections.js. #}
+      sectionOrder: [{% for key in config.sections_data %}"{{ key }}"{% if not loop.last %}, {% endif %}{% endfor %}],
     };
   </script>
 {%- endblock %}

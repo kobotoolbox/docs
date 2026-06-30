@@ -12,12 +12,16 @@
     }
 
     if (captions.length !== 0) {
-      for (let i = 0; i < captions.length; i++) {
-        let child = captions[i];
-        const textEl = child.querySelector(".caption-text");
-        if (textEl && textEl.innerText === window.docs.currentTitle) {
-          child.setAttribute("id", `${window.docs.currentPagename}-section-caption`);
-        }
+      // The body renders one toctree caption per section, in the same order as
+      // sectionOrder (both come from the toctree order in index.rst). We reveal
+      // the section matching the current page by its position rather than by
+      // caption text, so it works in every language — the caption text is
+      // translated, but currentPagename is not.
+      const sectionNames = window.docs.sectionOrder || [];
+      const sectionIndex = sectionNames.indexOf(window.docs.currentPagename);
+      const target = sectionIndex !== -1 ? captions[sectionIndex] : undefined;
+      if (target) {
+        target.setAttribute("id", `${window.docs.currentPagename}-section-caption`);
       }
       console.info("Custom section page ready.");
     }
