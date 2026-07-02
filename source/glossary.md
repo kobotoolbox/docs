@@ -148,6 +148,18 @@ A condition applied to a select type question in XLSForm that limits the list of
 
 ---
 
+## Choice name
+
+Internal short names assigned to choices that are used to store and reference data in a form. These are also called **XML values** in the user interface. 
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">Setting XML values for option choices</a>.
+</p>
+
+**Related term(s):** [XML value](https://support.kobotoolbox.org/glossary.html#xml-value), [Data column name](https://support.kobotoolbox.org/glossary.html#data-column-name), [Label](https://support.kobotoolbox.org/glossary.html#label)
+
+---
+
 ## Data column name
 
 Internal short names assigned to questions that are used to store and reference data in a form. These are also called **question names** in XLSForm, and sometimes referred to as **XML values** or **headers** in the user interface. Exporting your data using XML values and headers can facilitate data management and analysis.
@@ -156,7 +168,7 @@ Internal short names assigned to questions that are used to store and reference 
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
 </p>
 
-**Related term(s):** [Label](https://support.kobotoolbox.org/glossary.html#label), [XML value](https://support.kobotoolbox.org/glossary.html#xml-value)
+**Related term(s):** [Question name](https://support.kobotoolbox.org/glossary.html#question-name), [XML value](https://support.kobotoolbox.org/glossary.html#xml-value), [Label](https://support.kobotoolbox.org/glossary.html#label)
 
 ---
 ## Data reports
@@ -530,6 +542,18 @@ A set of related questions grouped together in a form to improve structure and o
 
 ---
 
+## Question name
+
+Internal short name assigned to questions that is used to store and reference data in a form. These are also called **data column names** in the Formbuilder, and sometimes referred to as **XML values or headers** in the user interface. 
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
+</p>
+
+**Related term(s):** [Data column name](https://support.kobotoolbox.org/glossary.html#data-column-name), [XML value](https://support.kobotoolbox.org/glossary.html#xml-value), [Label](https://support.kobotoolbox.org/glossary.html#label)
+
+---
+
 ## Question referencing
 
 Using answers from one question elsewhere in the form, such as displaying a previous response in later question text or using it in calculations, skip logic, or validation criteria.
@@ -716,4 +740,4 @@ Internal short names assigned to choices that are used to store and reference da
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">Setting XML values for option choices</a>.
 </p>
 
-**Related term(s):** [Label](https://support.kobotoolbox.org/glossary.html#label), [Data column name](https://support.kobotoolbox.org/glossary.html#data-column-name)
+**Related term(s):** [Choice name](https://support.kobotoolbox.org/glossary.html#choice-name), [Data column name](https://support.kobotoolbox.org/glossary.html#data-column-name), [Label](https://support.kobotoolbox.org/glossary.html#label)
