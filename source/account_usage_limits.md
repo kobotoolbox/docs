@@ -45,7 +45,8 @@ If your account is restricted because you have reached a usage limit, you still 
 | :--- | :--- | :--- |
 | Storage | Your account cannot receive new submissions or transfer projects until storage usage is reduced or storage quota is increased. | Delete media attachments, purchase a File Storage add-on, or upgrade to a plan with more storage. |
 | Submissions | Your projects cannot accept new submissions until the quota resets or is increased. | Wait until the next billing cycle or upgrade to a plan with a higher submission quota. |
-| Transcription and translation | Automatic transcription and translation are temporarily disabled until the quota resets or is increased. | Wait until the next billing cycle, purchase an NLP Package add-on, upgrade to a plan with a higher quota, or use manual transcription and translation feature. | Automated analysis | AI-generated analysis is temporarily disabled until the quota resets or is increased. | Wait until the next billing cycle, purchase an **Automatic analysis requests** add-on, upgrade to a plan with a higher quota, or use manual analysis feature. |
+| Transcription and translation | Automatic transcription and translation are temporarily disabled until the quota resets or is increased. | Wait until the next billing cycle, purchase an NLP Package add-on, upgrade to a plan with a higher quota, or use manual transcription and translation feature. | 
+| Automated analysis | AI-generated analysis is temporarily disabled until the quota resets or is increased. | Wait until the next billing cycle, purchase an **Automatic analysis requests** add-on, upgrade to a plan with a higher quota, or use manual analysis feature. |
 
 ### Managing storage limits
 
