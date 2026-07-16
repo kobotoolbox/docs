@@ -219,6 +219,7 @@ Explore practical guidance across KoboToolbox topics and features
   api
   synchronous_exports
   data_endpoint
+  api_submission_data
   connect_excel_powerbi
   connect_google
   connect_r
