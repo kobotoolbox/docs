@@ -1,5 +1,5 @@
 # Mapping your GPS data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8a9cd82f1f57b9117b907018b8032085ab7f3682/source/mapping_gps.md" class="reference">5 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/bf4fb746ec486d3d5d9efefb0291e17dbc913665/source/mapping_gps.md" class="reference">17 Jul 2026</a>
 
 <iframe src="https://www.youtube.com/embed/kefdxYOcgls?si=uY_tijozM5cpMVb3" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -187,5 +187,5 @@ If a form contains multiple geopoint questions, only the first geopoint in the f
 Finally, as with GeoJSON, coordinate order changes from `latitude longitude` in KoboToolbox to `longitude latitude` in GeoJSON.
 
 <p class="note">
-<strong>Note:</strong> To learn more about exporting your GPS data from KoboToolbox, see <a href="https://support.kobotoolbox.org/export_download.html">Exporting and downloading your data</a>.
+To learn more about exporting your GPS data from KoboToolbox, see <a href="https://support.kobotoolbox.org/export_download.html">Exporting and downloading your data</a>.
 </p>

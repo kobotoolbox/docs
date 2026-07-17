@@ -1,5 +1,5 @@
 # Using XLSForm with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3bf638b09218c9fbd0884c963540206a8e3d0d8d/source/xlsform_with_kobotoolbox.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/xlsform_with_kobotoolbox.md" class="reference">17 Jul 2026</a>
 
 XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
@@ -31,8 +31,8 @@ Any form created using the KoboToolbox Formbuilder can be downloaded as
 an XLSForm file:
 
 1.  Go to the **FORM** page of your project in KoboToolbox.
-2.  Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
-3.  Select <i class="k-icon k-icon-xls-file"></i> **Download XLS**.
+2.  Click the <i class="k-icon-more"></i> **More actions** icon.
+3.  Select <i class="k-icon-xls-file"></i> **Download XLS**.
 
 ![Download XLS menu](images/xlsform_with_kobotoolbox/download_xls.png)
 
@@ -45,7 +45,7 @@ To upload and preview an XLSForm to a new project in KoboToolbox:
 1.  Go to the **Projects** home page in KoboToolbox and click **NEW**.
 2.  Select **Upload an XLSForm** and upload your Excel file.
 3.  Enter the project details and click **Create project**.
-4.  Click the <i class="k-icon k-icon-view"></i> **Preview** button to preview
+4.  Click the <i class="k-icon-view"></i> **Preview** button to preview
     your form.
 
 ![Upload XLSForm dialog](images/xlsform_with_kobotoolbox/upload_xls.png)
@@ -55,7 +55,7 @@ Once a project has been created, you can replace any existing form with an
 updated XLSForm:
 
 1.  Go to the **FORM** page of your project in KoboToolbox.
-2.  Click <i class="k-icon k-icon-replace"></i> **Replace form** in the top right
+2.  Click <i class="k-icon-replace"></i> **Replace form** in the top right
     corner.
 3.  Select **Upload an XLSForm** and upload your Excel file.
 
@@ -90,7 +90,7 @@ For more information, see <a href="https://support.google.com/docs/answer/183965
     
 To obtain the correct URL for a spreadsheet stored in Dropbox:
 
-1.  Copy the file link in Dropbox by clicking on <i class="k-icon k-icon-link"></i> **Copy link**.
+1.  Copy the file link in Dropbox by clicking on <i class="k-icon-link"></i> **Copy link**.
 2.  At the end of the link, replace the suffix ``dl=0`` with ``dl=1``. This will be the
     URL to import into KoboToolbox.
     

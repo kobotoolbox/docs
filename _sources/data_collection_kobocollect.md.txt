@@ -1,5 +1,5 @@
 # Collecting data using KoboCollect
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47545819b21201e92108f60d896f7299d5d1ce5a/source/data_collection_kobocollect.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b34eddee3351543b2007e1fa8416c7762dddc74a/source/data_collection_kobocollect.md" class="reference">17 Jul 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -11,7 +11,7 @@ Before getting started, you will need to [install and configure](https://support
 This article explains how to use KoboCollect for data collection, including downloading forms, completing and editing submissions, sending finalized forms, deleting saved or blank forms, and troubleshooting common issues.
 
 <p class="note">
-For more information about the KoboCollect app and recommended devices, see <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Setting up the KoboCollect app</a>.
+    Looking for instructions to share with data collectors? Use our <a href="https://kobotoolbox.github.io/kobocollect_instructions/">KoboCollect Instructions Generator</a> to generate instructions based on your project’s form management <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">settings</a>.
 </p>
 
 ## Downloading forms

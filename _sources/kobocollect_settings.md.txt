@@ -1,5 +1,5 @@
 # Customizing KoboCollect settings
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b2f0bf10348744a1576080786c7c44eff0dafa1c/source/kobocollect_settings.md" class="reference">24 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3d1141930f39c836c0a517b9cd7c3810679d18d8/source/kobocollect_settings.md" class="reference">17 Jul 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/Qeky3aomiWI?si=M1l_jorFQEDacX2A" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -18,7 +18,7 @@ To access the settings menu:
 2. Tap **Settings**.
 
 <p class="note">
-  <strong>Note:</strong> Users do not need an internet connection to access or change project settings in KoboCollect.
+  Not sure which settings to enable? Use our <a href="https://kobotoolbox.github.io/kobocollect-settings/">KoboCollect Project Settings Generator</a> to get recommended settings based on your data collection workflow.
 </p>
 
 ## Project display settings

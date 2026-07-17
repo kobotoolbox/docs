@@ -1,5 +1,5 @@
-# Getting started with the Formbuilder 
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b4dddc39234bcb1960d654dc36c30ad9c31e1fb9/source/formbuilder.md" class="reference">6 May 2026</a>
+# Getting started with the Formbuilder
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/formbuilder.md" class="reference">17 Jul 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/PFL1_rBB5Q8?si=RkwB2XGHppAK-RRF" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -12,7 +12,7 @@ The KoboToolbox Formbuilder is a user-friendly tool for designing and deploying 
 
 ## Adding a question
 
-To add a question to your form, click the <i class="k-icon k-icon-plus"></i> button that is below every question. Enter your question label and click **Add Question**. Then,
+To add a question to your form, click the <i class="k-icon-plus"></i> button that is below every question. Enter your question label and click **Add Question**. Then,
 [choose the question type](question_types.md).
 
 For [Select One or Select Many](https://support.kobotoolbox.org/select_one_and_select_many.html) question types, add the response options below the question.
@@ -39,7 +39,7 @@ To remove a question, click <i class="k-icon-trash"></i> **Delete Question** in 
 
 ## Changing question settings
 
-To access advanced question settings, click on <i class="k-icon-settings"></i> **Settings** in the question menu on the right. Here, you can add skip logic, validation criteria, guidance hints, and make a question required. 
+To access advanced question settings, click on <i class="k-icon-settings"></i> **Settings** in the question menu on the right. Here, you can add skip logic, validation criteria, guidance hints, and make a question required.
 
 <p class="note">
 To learn more about question settings, see <a href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a>, <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>, and <a href="https://support.kobotoolbox.org/validation_criteria.html">Adding validation criteria in the Formbuilder</a>.
@@ -51,7 +51,7 @@ To save a question for reuse in future forms, click <i class="k-icon-folder-plus
 
 ## Grouping your questions
 
-Questions can be [grouped together](https://support.kobotoolbox.org/group_repeat.html) to organize your form. Select questions using the **CTRL** key (Windows) or **Command** key (Mac), then click <i class="k-icon k-icon-group"></i> **Create group with selected questions** in the top left menu bar.
+Questions can be [grouped together](https://support.kobotoolbox.org/group_repeat.html) to organize your form. Select questions using the **CTRL** key (Windows) or **Command** key (Mac), then click <i class="k-icon-group"></i> **Create group with selected questions** in the top left menu bar.
 
 ## Changing the order of your questions
 
@@ -63,7 +63,7 @@ Questions and groups can be moved to any position in the form. Drag-and-drop a q
 
 ## Previewing your form
 
-After adding all questions to your form, click <i class="k-icon k-icon-view"></i> **Preview form** to see how it will appear once deployed.
+After adding all questions to your form, click <i class="k-icon-view"></i> **Preview form** to see how it will appear once deployed.
 
 ## Saving your form
 
