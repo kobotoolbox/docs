@@ -99,7 +99,7 @@ To add translations to the `choices` worksheet:
 3. If your `choices` worksheet includes media columns, set up the corresponding translation columns using the `column_name::language (code)` format.
 
 <p class="note">
-  <strong>Note:</strong> To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to translations</a>.
+  To learn more about managing media files in translated forms, see <a href="https://support.kobotoolbox.org/media.html#adding-media-to-translations">Adding media to translations</a>.
 </p>
 
 **choices worksheet**
@@ -109,6 +109,10 @@ To add translations to the `choices` worksheet:
 | yn | yes | Yes | Inde |
 | yn | no | No | Ayi |
 | choices |
+
+<p class="note">
+  <strong>Note:</strong> Form titles cannot be translated. For the form title, use the form’s default language or the language most commonly used during data collection. You can also include titles in multiple languages separated by a slash, or add translated titles as headings within the form.
+</p>
 
 
 ## Guidelines for translations
