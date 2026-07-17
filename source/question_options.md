@@ -21,7 +21,7 @@ The following options are available for questions added in the Formbuilder:
 | Options | Description |
 |:---|:---|
 | Question Hint | Text displayed below the question label to provide <a href="https://support.kobotoolbox.org/question_options.html#question-hint">additional instructions</a> or clarification for respondents. |
-| Data Column Name | The <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">unique identifier</a> for a question, used in form logic and as the column header in the exported dataset. |
+| Question Name | The <a href="https://support.kobotoolbox.org/question_options.html#question-name">unique identifier</a> for a question, used in form logic and as the column header in the exported dataset. |
 | Guidance Hint | Additional <a href="https://support.kobotoolbox.org/question_options.html#guidance-hint">notes or instructions</a> intended for enumerators or form developers, not displayed by default during data collection. |
 | Mandatory Response | A setting that determines whether a question <a href="https://support.kobotoolbox.org/question_options.html#mandatory-response">must be answered</a> before the respondent can continue or submit the form. |
 | Default Response | A predefined answer that <a href="https://support.kobotoolbox.org/question_options.html#default-response">automatically populates</a> a question and can be changed during data collection. |
@@ -35,30 +35,34 @@ The following options are available for questions added in the Formbuilder:
 <strong>Note:</strong> For additional customization and advanced options, <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox">download your form as an XLSForm</a> and add <a href="https://support.kobotoolbox.org/question_options_xls.html">question options</a> directly in the spreadsheet.
 </p>
 
-## Data Column Name
+## Question Name
 
-The **Data Column Name** is the unique identifier for each question in your form. It serves as the variable name used in [form logic](https://support.kobotoolbox.org/form_logic.html#question-referencing) and becomes the column header in your exported dataset.
+The **Question Name** is the unique identifier for each question in your form. It serves as the variable name used in [form logic](https://support.kobotoolbox.org/form_logic.html#question-referencing) and becomes the column header in your exported dataset.
 
-Every question must have a unique data column name. In the Formbuilder, it is automatically generated from the question label, but you can customize it as needed. Defining clear and consistent names before deploying your form helps ensure that your dataset follows a logical naming convention.
+Every question must have a unique question name. In the Formbuilder, it is automatically generated from the question label, but you can customize it as needed. Defining clear and consistent names before deploying your form helps ensure that your dataset follows a logical naming convention.
 
-![Data column name](images/question_options/data_column_name.png)
+![Question name](images/question_options/data_column_name.png)
 
-### Important considerations for data column names
+<p class="note">
+<strong>Note:</strong> The <strong>Question Name</strong> was previously referred to as <strong>Data Column Name</strong> in the Formbuilder.
+</p>
 
-If you keep the **automatically generated data column name**, it will update automatically whenever you change the question label. This can cause problems if you have already set up form logic in XLSForm code using the previous data column name, or if you have started collecting data.
+### Important considerations for question names
 
-If a question’s data column name changes after data collection has begun, KoboToolbox will treat it as a new variable. This will result in two separate columns in your dataset.
+If you keep the **automatically generated question name**, it will update automatically whenever you change the question label. This can cause problems if you have already set up form logic in XLSForm code using the previous question name, or if you have started collecting data.
 
-For this reason, it is recommended to **define and finalize the data column name for each question before deploying your form** and collecting data. If you intentionally make substantial changes to a question and want it to function as a new variable, you can update the data column name accordingly.
+If a question name changes after data collection has begun, KoboToolbox will treat it as a new variable. This will result in two separate columns in your dataset.
 
-Data column names must follow these rules:
+For this reason, it is recommended to **define and finalize the question name for each question before deploying your form** and collecting data. If you intentionally make substantial changes to a question and want it to function as a new variable, you can update the question name accordingly.
+
+Question names must follow these rules:
 
 - Use only letters, numbers, and underscores.
 - The first character must be a letter.
 - Each name must be unique within the form.
 
 <p class="note">
-<strong>Note:</strong> Data column names are used when referencing answers in <a href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a>. For example, you can include a previous response in another question’s label using the format <code>${data_column_name}</code>. This format is used in labels, skip logic, calculations, and validations. Data column names are case-sensitive.
+<strong>Note:</strong> Question names are used when referencing answers in <a href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a>. For example, you can include a previous response in another question’s label using the format <code>${data_column_name}</code>. This format is used in labels, skip logic, calculations, and validations. Question names are case-sensitive.
 </p>
 
 ## Question Hint
