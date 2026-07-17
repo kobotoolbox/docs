@@ -150,27 +150,16 @@ A condition applied to a select type question in XLSForm that limits the list of
 
 ## Choice name
 
-Internal short names assigned to choices that are used to store and reference data in a form. These are also called **XML values** in the user interface. 
+Internal short names assigned to choices that are used to store and reference data in a form. These were sometimes called **XML values** in previous versions of the user interface.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">Setting XML values for option choices</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices">Setting choice names for option choices</a>.
 </p>
 
-**Related term(s):** [XML value](https://support.kobotoolbox.org/glossary.html#xml-value), [Data column name](https://support.kobotoolbox.org/glossary.html#data-column-name), [Label](https://support.kobotoolbox.org/glossary.html#label)
+**Related term(s):** [Question name](https://support.kobotoolbox.org/glossary.html#question-name), [Label](https://support.kobotoolbox.org/glossary.html#label)
 
 ---
 
-## Data column name
-
-Internal short names assigned to questions that are used to store and reference data in a form. These are also called **question names** in XLSForm, and sometimes referred to as **XML values** or **headers** in the user interface. Exporting your data using XML values and headers can facilitate data management and analysis.
-
-<p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
-</p>
-
-**Related term(s):** [Question name](https://support.kobotoolbox.org/glossary.html#question-name), [XML value](https://support.kobotoolbox.org/glossary.html#xml-value), [Label](https://support.kobotoolbox.org/glossary.html#label)
-
----
 ## Data reports
 Automated reports in the **DATA > Reports** view that display your project data in graphs and tables. Reports can be customized to adjust which questions are shown and how the results are visualized.
 
@@ -544,13 +533,13 @@ A set of related questions grouped together in a form to improve structure and o
 
 ## Question name
 
-Internal short name assigned to questions that is used to store and reference data in a form. These are also called **data column names** in the Formbuilder, and sometimes referred to as **XML values or headers** in the user interface. 
+Internal short name assigned to questions that is used to store and reference data in a form. These were previously called **data column names** in the Formbuilder, and were sometimes referred to as **XML values or headers** in the user interface. 
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#question-name">Question options in the Formbuilder</a>.
 </p>
 
-**Related term(s):** [Data column name](https://support.kobotoolbox.org/glossary.html#data-column-name), [XML value](https://support.kobotoolbox.org/glossary.html#xml-value), [Label](https://support.kobotoolbox.org/glossary.html#label)
+**Related term(s):** [Choice name](https://support.kobotoolbox.org/glossary.html#choice-name), [Label](https://support.kobotoolbox.org/glossary.html#label)
 
 ---
 
@@ -729,15 +718,5 @@ A form design standard that uses Excel spreadsheets to define questions, choices
 The XML version of a form generated when a project is deployed, used by data collection tools to run the form and apply its structure, logic, and settings. An XML Form is also called an **XForm**.
 
 **Related term(s):** [XLSForm](https://support.kobotoolbox.org/glossary.html#xlsform)
-
----
-
-## XML value
-
-Internal short names assigned to choices that are used to store and reference data in a form. These are also called **choice names** in XLSForm. In the user interface, XML value is sometimes used to refer to **data column names**. Exporting your data using XML values can facilitate data management and analysis. 
-
-<p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">Setting XML values for option choices</a>.
-</p>
 
 **Related term(s):** [Choice name](https://support.kobotoolbox.org/glossary.html#choice-name), [Data column name](https://support.kobotoolbox.org/glossary.html#data-column-name), [Label](https://support.kobotoolbox.org/glossary.html#label)
