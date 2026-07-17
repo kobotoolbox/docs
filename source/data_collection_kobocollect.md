@@ -75,8 +75,10 @@ If you saved a survey as a draft, you can edit it before sending it to the serve
 2. A list of saved draft forms will appear. Select the one you want to edit.
 3. Make the necessary changes, then tap **Finalize** or **Send**, depending on your workflow.
 
+You do not need an internet connection to edit a saved form in KoboCollect.
+
 <p class="note">
-  <strong>Note:</strong> You do not need an internet connection to edit a saved form in KoboCollect.
+  <strong>Note:</strong> Setting an <code>instance_name</code> in your <a href="https://support.kobotoolbox.org/form_settings_xls.html#available-form-settings-in-xlsform">XLSForm</a> can help distinguish saved drafts in KoboCollect, by giving each draft a unique name instead of using only the form title.
 </p>
 
 ## Sending finalized forms to the server
