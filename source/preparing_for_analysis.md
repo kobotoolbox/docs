@@ -109,15 +109,17 @@ A common best practice is to [make questions required](https://support.kobotoolb
 
 This helps reduce unexplained missing data and makes results easier to interpret during analysis.
 
-### Minimize open text responses
+### Choose appropriate question types
 
-**Open text responses** are often difficult to analyze. When possible, use structured question types instead:
+Use **open-ended questions** when you need detailed, descriptive, or qualitative information that cannot be captured through predefined options. [Text](https://support.kobotoolbox.org/text_questions.html) and [audio](https://support.kobotoolbox.org/photo_audio_video_file.html) questions can be especially useful for collecting explanations, experiences, opinions, and other contextual information.
 
-- Use [multiple choice questions](https://support.kobotoolbox.org/select_one_and_select_many.html) when responses can be standardized into predefined options. 
+Use **structured question types** rather than open-ended questions when responses can be standardized:
+
+- Use [multiple choice questions](https://support.kobotoolbox.org/select_one_and_select_many.html) when responses can fit into predefined options. 
 - Use [date questions](https://support.kobotoolbox.org/date_time.html) when collecting calendar dates. 
 - Use [GPS questions](https://support.kobotoolbox.org/gps_questions.html) or [cascading select questions](https://support.kobotoolbox.org/cascading_select.html) when collecting location information.
 
-Reserve text questions for information that cannot reasonably be standardized.
+Choose the question type based on the information you need and how you plan to analyze it.
 
 ## Use your XLSForm as a data dictionary
 
