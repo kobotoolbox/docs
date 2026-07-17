@@ -1,5 +1,5 @@
 # Collecting data using KoboCollect
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/09b50b41b6b0f8dc525b80743cd7455ab5066235/source/data_collection_kobocollect.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/47545819b21201e92108f60d896f7299d5d1ce5a/source/data_collection_kobocollect.md" class="reference">17 Jul 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -121,6 +121,19 @@ To delete forms:
 ## Troubleshooting
 
 <details>
+<summary><strong>Error message when entering data into a form</strong></summary>
+
+| Common error messages  | Common explanations  
+| :--- | :--- |
+| `Form can’t be used: <label> node for itemset doesn’t exist!` | One or more choices in your XLSForm do not have labels. The error message identifies the affected choice list.  |
+| `Error evaluating field […] XPath evaluation: type mismatch. This field is repeated` | Your form uses <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, and the field linking the parent and child data contains duplicate values in the parent data. The linking field must contain only unique values.<br><br>To resolve this issue, remove or correct the duplicate values in the linking field of the parent data, or use the <code>[position() = 1]</code> argument in your calculation. |
+| `Repeats in ‘field-list’ groups are not supported` | This error occurs in KoboCollect when a repeat group is nested inside a broader group that uses the <code>field-list</code> appearance. KoboCollect does not support repeat groups inside <code>field-list</code> groups. Repeat groups must appear on their own page.<br><br>To resolve this issue, move the repeat group outside the main group or remove the <code>field-list</code> appearance from the main group. |
+
+</details>
+
+<br>
+
+<details>
 <summary><strong>Download form takes too long to load</strong></summary>
 If the <strong>Download form</strong> page takes a long time to connect to the server or load downloadable forms, your KoboToolbox account may have too many active forms, or your internet connection may be weak.
 <br><br>
@@ -137,24 +150,6 @@ Try the following:
 <details>
 <summary><strong>KoboCollect shows an old version of the form</strong></summary>
 If KoboCollect shows an older version of your form, download the form again to get the latest deployed version. You can also enable <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">automatic form updates</a> in KoboCollect so the app checks for newer versions when connecting to the server.
-</details>
-
-<br>
-
-<details>
-<summary><strong>Error evaluating field […] XPath evaluation: type mismatch. This field is repeated</strong></summary>
-This error means that your form is using <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>, and that the field used to link the parent and child data contains duplicate values in the parent data. The linking field must contain only unique values.
-<br><br>
-To fix this, remove or correct the duplicate values in the linking field of the parent data, or use the <code>[position() = 1]</code> argument in your calculation.
-</details>
-
-<br>
-
-<details>
-<summary><strong>Repeats in ‘field-list’ groups are not supported</strong></summary>
-This error occurs in KoboCollect when a repeat group is nested inside a broader group that uses the <code>field-list</code> appearance. KoboCollect does not support repeat groups inside <code>field-list</code> groups. Repeat groups must appear on their own page.
-<br><br>
-To resolve this issue, move the repeat group outside the main group, or remove the <code>field-list</code> appearance from the main group.
 </details>
 
 <br>
