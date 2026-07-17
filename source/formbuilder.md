@@ -1,4 +1,4 @@
-# Getting started with the Formbuilder 
+# Getting started with the Formbuilder
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b4dddc39234bcb1960d654dc36c30ad9c31e1fb9/source/formbuilder.md" class="reference">6 May 2026</a>
 
 
@@ -39,7 +39,7 @@ To remove a question, click <i class="k-icon-trash"></i> **Delete Question** in 
 
 ## Changing question settings
 
-To access advanced question settings, click on <i class="k-icon-settings"></i> **Settings** in the question menu on the right. Here, you can add skip logic, validation criteria, guidance hints, and make a question required. 
+To access advanced question settings, click on <i class="k-icon-settings"></i> **Settings** in the question menu on the right. Here, you can add skip logic, validation criteria, guidance hints, and make a question required.
 
 <p class="note">
 To learn more about question settings, see <a href="https://support.kobotoolbox.org/question_options.html">Question options in the Formbuilder</a>, <a href="https://support.kobotoolbox.org/skip_logic.html">Adding skip logic in the Formbuilder</a>, and <a href="https://support.kobotoolbox.org/validation_criteria.html">Adding validation criteria in the Formbuilder</a>.

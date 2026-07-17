@@ -1,10 +1,12 @@
-const webfontsGenerator = require('@vusion/webfonts-generator');
+const { generateFonts } = require('fantasticon');
 const fs = require('fs');
+const path = require('path');
 const simpleGit = require('simple-git');
 
 const kpiDirName = 'temp-kpi-clone';
-const sourceDir = `${kpiDirName}/jsapp/svg-icons/`;
-const destDir = `source/_static/kpi-icons`;
+const sourceDir = path.join(kpiDirName, 'jsapp/svg-icons');
+const destDir = path.join('source/_static/kpi-icons');
+const cssTemplatePath = path.join(kpiDirName, 'jsapp/k-icons-css-template.hbs');
 
 const git = simpleGit({
   baseDir: process.cwd(),
@@ -13,103 +15,67 @@ const git = simpleGit({
 });
 
 function generateIconsFromKpiFiles() {
-  console.info('Reading files…');
-  const files = [];
-  const icons = [];
-  fs.readdirSync(sourceDir).forEach((file) => {
-    if (file.endsWith('.svg')) {
-      files.push(`${sourceDir}${file}`);
-      icons.push(file.replace('.svg', ''));
-    }
-  });
-  console.info(`${files.length} icons found.`);
+  fs.mkdirSync(destDir, {recursive: true});
 
   console.info('Generating fonts…');
-  webfontsGenerator(
-    {
-      files: files,
-      dest: destDir,
-      fontName: 'k-icons',
-      cssFontsUrl: './',
-      css: true,
-      cssTemplate: `${kpiDirName}/jsapp/k-icons-css-template.hbs`,
-      html: true,
-      // NOTE: we are not using the KPI template here, as the snippet is a tiny
-      // bit different (no JSX).
-      htmlTemplate: `scripts/k-icons-html-template.hbs`,
-      types: ['eot', 'svg', 'ttf', 'woff2', 'woff'],
-      order: ['woff2', 'woff', 'ttf', 'eot', 'svg'],
-      templateOptions: {
-        classPrefix: 'k-icon-',
-        baseSelector: '.k-icon',
-        baseClassName: 'k-icon',
-      },
-      formatOptions: {
-        svg: {
-          fontStyle: 'normal',
-          fontWeight: 'normal',
-          fixedWidth: true,
-          centerHorizontally: false,
-          normalize: false,
-          height: 10000,
-          round: 0,
-          descent: 0,
-          ascent: 0,
-        },
-        ttf: {},
-        woff2: {},
-        woff: {},
-        eot: {},
+  generateFonts({
+    name: 'k-icons',
+    inputDir: sourceDir,
+    outputDir: destDir,
+    fontTypes: ['eot', 'svg', 'ttf', 'woff', 'woff2'],
+    assetTypes: ['css', 'html'],
+    prefix: 'k-icon',
+    selector: '.k-icon',
+    // CSS and fonts live in the same directory, so no path prefix needed.
+    fontsUrl: '.',
+    normalize: false,
+    fontHeight: 10000,
+    descent: 0,
+    round: 0,
+    formatOptions: {
+      svg: {
+        fontStyle: 'normal',
+        fontWeight: 'normal',
+        fixedWidth: true,
+        centerHorizontally: false,
+        normalize: false,
+        height: 10000,
+        round: 0,
+        descent: 0,
+        ascent: undefined,
       },
     },
-    function (error) {
-      if (error) {
-        throw new Error('Fail!', error);
-      } else {
-        try {
-          console.info('Cleanup…');
-          // Cleanup after everything is done.
-          fs.rm(kpiDirName, {recursive: true}, (err) => {
-            if (err) {
-              throw err;
-            }
-            console.info('Icons generated successfully!');
-          });
-        } catch(e){
-          console.warn(
-            '\x1b[31m***\n',
-            e,
-            '\n***',
-            '\x1b[0m'
-          );
-        }
-      }
-    }
-  );
+    templates: {
+      css: cssTemplatePath,
+      html: undefined,
+    },
+  })
+    .then(() => {
+      console.info('Cleanup…');
+      fs.rm(kpiDirName, {recursive: true}, (err) => {
+        if (err) {throw err;}
+        console.info('Icons generated successfully!');
+      });
+    })
+    .catch((error) => {
+      console.error('Font generation failed:', error);
+      process.exit(1);
+    });
 }
 
 function getKpiFiles() {
-  console.info("Cloning kpi repository…")
-  // We clone the `kpi` repository to ensure we have the same set of icons <3.
-  git.clone('https://github.com/kobotoolbox/kpi', kpiDirName, {
+  console.info('Cloning kpi repository…');
+  return git.clone('https://github.com/kobotoolbox/kpi', kpiDirName, {
     '--single-branch': true,
     '--depth': 1,
-  }).then(generateIconsFromKpiFiles)
+  });
 }
 
 function start() {
-  if(fs.existsSync(kpiDirName)) {
-    console.info('Cleanup…');
-    // Cleanup the directory to initialize the process.
-    fs.rm(kpiDirName, {recursive: true}, (err) => {
-      if (err) {throw err;}
-      console.info('Cleanup done.');
-      getKpiFiles();
-    });
-  }
-  else {
-    getKpiFiles();
-  }
+  fs.rm(kpiDirName, {recursive: true, force: true}, (err) => {
+    if (err) {throw err;}
+    getKpiFiles().then(generateIconsFromKpiFiles);
+  });
 }
 
-start()
+start();
