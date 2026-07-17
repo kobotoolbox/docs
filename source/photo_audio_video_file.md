@@ -105,6 +105,21 @@ To define the maximum size of images collected using the **Photo** question type
 <strong>Note:</strong> You can also configure video resolution and image size in <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">KoboCollect settings</a>.
 </p>
 
+### Configuring audio quality
+
+As with large image files, large audio files can be difficult to upload in low-connectivity settings and can quickly use up your file storage. Consider reducing the recording quality if the interview environment allows for it. The default quality setting for audio questions is `normal`, which also produces the largest files.
+
+Audio quality cannot be configured in the Formbuilder. To lower the audio quality:
+1. [Download your form](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) as an XLSForm.
+2. Add a `parameters` column to the `survey` worksheet.
+3. In the row for the audio question, enter `quality=low` or `quality=voice-only`.
+
+Use `voice-only` for quiet interviews with a single speaker. Use `low` for recordings with multiple speakers or some background noise. The `normal` setting provides the highest audio quality but uses the most storage space.
+
+<p class="note">
+To learn more about question parameters, see <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">Question options in XLSForm</a>.
+</p>
+
 ### Restricting accepted file types
 
 By default, the **File** question type accepts all file types. To restrict the type of files this question accepts:
