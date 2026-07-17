@@ -718,5 +718,3 @@ A form design standard that uses Excel spreadsheets to define questions, choices
 The XML version of a form generated when a project is deployed, used by data collection tools to run the form and apply its structure, logic, and settings. An XML Form is also called an **XForm**.
 
 **Related term(s):** [XLSForm](https://support.kobotoolbox.org/glossary.html#xlsform)
-
-**Related term(s):** [Choice name](https://support.kobotoolbox.org/glossary.html#choice-name), [Data column name](https://support.kobotoolbox.org/glossary.html#data-column-name), [Label](https://support.kobotoolbox.org/glossary.html#label)
