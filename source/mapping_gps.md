@@ -187,5 +187,5 @@ If a form contains multiple geopoint questions, only the first geopoint in the f
 Finally, as with GeoJSON, coordinate order changes from `latitude longitude` in KoboToolbox to `longitude latitude` in GeoJSON.
 
 <p class="note">
-<strong>Note:</strong> To learn more about exporting your GPS data from KoboToolbox, see <a href="https://support.kobotoolbox.org/export_download.html">Exporting and downloading your data</a>.
+To learn more about exporting your GPS data from KoboToolbox, see <a href="https://support.kobotoolbox.org/export_download.html">Exporting and downloading your data</a>.
 </p>
