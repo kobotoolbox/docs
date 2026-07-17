@@ -110,6 +110,7 @@ Examples of advanced choice filter expressions in XLSForm include:
 | Choice filter | Description |
 |:---------------|:------------|
 | `selected(${parent_question}, name)` | Display only responses that were selected in a previous `parent_question`. |
+| `not(selected(${parent_question}, name))` | Display only responses that were not selected in a previous `parent_question`. |
 | `filter = 'outdoors' and include = 'yes'` | Combine choice filter expressions so both conditions must apply for the choice to be displayed. |
 | `name != 'none'` | Exclude the <strong>None</strong> option from a choice list. |
 | `selected(${Q1}, name) or name='none'` | Include choices selected in a previous question as well as a <strong>None</strong> option (even if not selected previously). |
