@@ -161,15 +161,15 @@ For example, you could share different links in different places, and each link 
 
 To share a link that prefills a field in your form:
 
-1. Add the question you want to prefill to your form, then set its [data column name](https://support.kobotoolbox.org/glossary.html#data-column-name).
+1. Add the question you want to prefill to your form, then set its [question name](https://support.kobotoolbox.org/question_options.html#question-name).
     - This can be a [Hidden](https://support.kobotoolbox.org/form_logic.html#storing-constants-in-your-form) question if you want to store the value in the background, or any standard question type if you want respondents to see it in the form.
 2. Copy your form link in **FORM > Collect data.**
-3. Add `?d[data_column_name]=value` at the end of the URL, where `data_column_name` is the data column name of the Hidden question and `value` is the prefilled value.
+3. Add `?d[question_name]=value` at the end of the URL, where `question_name` is the question name of the Hidden question and `value` is the prefilled value.
     - For example: `https://ee.kobotoolbox.org/x/[form_id]?d[prefilled_field]=12345`.
 
 <p class="note">
 <strong>Note:</strong>
-Use the full data column name in the URL parameter. If the question is inside one or more groups, the name must include the <strong>group name or names</strong> as well (e.g., <code>group1/question1</code>). You can find the exact name in the question’s <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Data column name</a> field in the Formbuilder, or in the <code>name</code> column of an XLSForm.
+Use the full question name in the URL parameter. If the question is inside one or more groups, the name must include the <strong>group name or names</strong> as well (e.g., <code>group1/question1</code>). You can find the exact name in the <a href="https://support.kobotoolbox.org/question_options.html#question-name">question name</a> field in the Formbuilder, or in the <code>name</code> column of an XLSForm.
 </p>
 
 ### Redirecting users to another webpage after submission
@@ -245,7 +245,7 @@ Use the latest version of a modern browser. Chrome is generally recommended for 
 
 <details>
 <summary><strong>Web form submission fails </strong></summary>
-If a web form submission fails, check whether your form uses a <strong>reserved XLSForm term</strong> as the <a href="https://support.kobotoolbox.org/glossary.html#data-column-name">data column name</a>. Reserved words are terms that cannot be used as variable names because they are used by the underlying XForms engine for structure, logic, or data analysis (e.g., type, label, start, today). Using these words can cause form validation errors, publishing failures, or data export issues.<br><br>
+If a web form submission fails, check whether your form uses a <strong>reserved XLSForm term</strong> as a <a href="https://support.kobotoolbox.org/glossary.html#question-name">question name</a>. Reserved words are terms that cannot be used as variable names because they are used by the underlying XForms engine for structure, logic, or data analysis (e.g., type, label, start, today). Using these words can cause form validation errors, publishing failures, or data export issues.<br><br>
 
 To fix the issue, rename the affected question to a different value, then redeploy the form. This issue usually affects web forms even when the form opens normally, while KoboCollect may continue to work as expected. Note that any submissions already saved against the old version of the form may remain unsubmittable, so it is important to update the form as soon as possible if you are collecting data through web forms. Always <strong>test form submission before launching data collection</strong> so you can catch naming issues early.
 </details>
