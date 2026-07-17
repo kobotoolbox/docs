@@ -3,6 +3,7 @@
 
 1. [Question options in XLSForm](question_options_xls.md) (17 Jul 2026)
 1. [Adding choice filters in XLSForm](choice_filters_xls.md) (17 Jul 2026)
+1. [Preparing your form for data analysis](preparing_for_analysis.md) (17 Jul 2026)
 1. [Media questions in KoboToolbox](photo_audio_video_file.md) (17 Jul 2026)
 1. [Form settings in XLSForm](form_settings_xls.md) (17 Jul 2026)
 1. [Sharing projects with user-level permissions](managing_permissions.md) (17 Jul 2026)
@@ -10,4 +11,3 @@
 1. [Collecting data using web forms](data_through_webforms.md) (17 Jul 2026)
 1. [Glossary of KoboToolbox terms](glossary.md) (2 Jul 2026)
 1. [Adding constraints in XLSForm](constraints_xls.md) (24 Jun 2026)
-1. [Customizing KoboCollect settings](kobocollect_settings.md) (24 Jun 2026)
