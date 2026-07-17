@@ -98,6 +98,16 @@ To copy team permissions from another project:
 ## Troubleshooting
 
 <details>
+<summary><strong>User not found</strong></summary>
+If KoboToolbox cannot find a user you are trying to share a project with:
+
+<ul> <li>Check that the username is correct and does not contain any typos.</li> <li>Confirm that the user’s account is on the same KoboToolbox server as the project.</li> </ul>
+
+Projects can only be shared with users on the same server (i.e., the Global KoboToolbox Server or the European Union KoboToolbox Server).
+</details>
+<br>
+
+<details>
 <summary><strong>Tracking changes made by other users</strong></summary>
 KoboToolbox keeps <a href="https://support.kobotoolbox.org/activity_logs.html">activity logs</a> that show a complete timeline of account and project actions. <strong>Project History Logs</strong> record every modification inside a project—uploads, edits, deletions, and submissions—so you can trace changes, assign responsibility, and pinpoint when problems began.
 </details>
