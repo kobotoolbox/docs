@@ -180,7 +180,7 @@
           
   <section id="using-xlsform-with-kobotoolbox">
 <h1>Using XLSForm with KoboToolbox<a class="headerlink" href="#using-xlsform-with-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/2766eac60a2cfda9bee74f5ec77308dd80bfd029/source/xlsform_with_kobotoolbox.md" class="reference">6 May 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/3bf638b09218c9fbd0884c963540206a8e3d0d8d/source/xlsform_with_kobotoolbox.md" class="reference">17 Jul 2026</a></p>
 <p>XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
 building a form in the KoboToolbox Formbuilder, then download it as an
@@ -366,6 +366,9 @@ correcting the error in your spreadsheet, you will need to upload the file again
 </tr>
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">'select_from_list_name'</span></code></p></td>
 <td class="text-left"><p>A list name is missing from the <code class="docutils literal notranslate"><span class="pre">type</span></code> column after <code class="docutils literal notranslate"><span class="pre">select_one</span></code> or <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Error:</span> <span class="pre">'dict'</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">attribute</span> <span class="pre">'nodeType'</span></code></p></td>
+<td class="text-left"><p>The user added a language suffix to the <code class="docutils literal notranslate"><span class="pre">form_title</span></code> column in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet, such as <code class="docutils literal notranslate"><span class="pre">form_title::English</span> <span class="pre">(en)</span></code>. Translating the <code class="docutils literal notranslate"><span class="pre">form_title</span></code> column is not supported.</p></td>
 </tr>
 </tbody>
 </table>

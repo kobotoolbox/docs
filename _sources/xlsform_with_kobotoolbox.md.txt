@@ -1,5 +1,5 @@
 # Using XLSForm with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2766eac60a2cfda9bee74f5ec77308dd80bfd029/source/xlsform_with_kobotoolbox.md" class="reference">6 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3bf638b09218c9fbd0884c963540206a8e3d0d8d/source/xlsform_with_kobotoolbox.md" class="reference">17 Jul 2026</a>
 
 XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
@@ -163,6 +163,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 | `Can't find external_file.csv` <br> `Failed to load external_file.csv.` | An <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html">external attachment</a> linked to your form (e.g., when using `pulldata()` ) has not been uploaded to KoboToolbox. |
 | `Can't find survey.xml` | <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">Dynamic data attachments</a> have not been properly set up in your project settings. |
 | `'select_from_list_name'` | A list name is missing from the `type` column after `select_one` or `select_multiple`. |
+| `Error: 'dict' object has no attribute 'nodeType'` | The user added a language suffix to the `form_title` column in the `settings` worksheet, such as `form_title::English (en)`. Translating the `form_title` column is not supported. |
 </details>
 
 <br>
