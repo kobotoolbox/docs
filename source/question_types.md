@@ -27,7 +27,7 @@ After adding a question to your form, it is strongly recommended to define a **Q
 By default, KoboToolbox creates the question name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the question name will be `respondent_name`.
 
 <p class="note">
-    To learn more about question names, see <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
+    To learn more about question names, see <a href="https://support.kobotoolbox.org/question_options.html#question-name">Question options in the Formbuilder</a>.
 </p>
 
 ## Adding option choices
