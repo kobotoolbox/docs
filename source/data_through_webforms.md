@@ -65,7 +65,7 @@ Available web form modes include:
 You can also **print a web form** to share it during form development or use it for paper-based data collection. To do so: 
 
 1. Open your web form.
-2. Click the printer button in the top right corner.
+2. Click the <i class="k-icon-print"></i> **Print** button in the top right corner.
 
 The printed version includes all questions and guidance hints, regardless of any form logic.
 
@@ -75,7 +75,7 @@ The printed version includes all questions and guidance hints, regardless of any
 
 After opening the form, users can complete it directly in their browser. 
 * If the form includes [multiple languages](https://support.kobotoolbox.org/collecting_data_multiple_languages.html), users can change the language at the top of the form.
-* If the form [displays questions on multiple pages](https://support.kobotoolbox.org/alternative_enketo.html#adding-a-web-form-theme-in-the-formbuilder), use the three horizontal lines in the top right corner to navigate to another section.
+* If the form [displays questions on multiple pages](https://support.kobotoolbox.org/alternative_enketo.html#adding-a-web-form-theme-in-the-formbuilder), click the <i class="k-icon-qt-note"></i> **three horizontal lines** in the top right corner to navigate to another section.
 
 ![Change form language](images/data_through_webforms/change_language.png)
 
@@ -86,7 +86,7 @@ At the end of the form, users can either save their work as a draft or submit it
 
 ![Save or submit a form](images/data_through_webforms/save_submit.png)
 
-Users can also print a summary of their responses by clicking on the **Print** button in the top right corner of the form.
+Users can also print a summary of their responses by clicking on the <i class="k-icon-print"></i> **Print** button in the top right corner of the form.
 
 ### Managing draft submissions 
 
