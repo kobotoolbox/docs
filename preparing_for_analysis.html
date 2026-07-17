@@ -180,7 +180,7 @@
           
   <section id="preparing-your-form-for-data-analysis">
 <h1>Preparing your form for data analysis<a class="headerlink" href="#preparing-your-form-for-data-analysis" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6e9f496956ced232adb4985272fbee0a6465318d/source/preparing_for_analysis.md" class="reference">15 Jun 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/9751288d763fc7db0fce24b02e91750f51ea710f/source/preparing_for_analysis.md" class="reference">17 Jul 2026</a></p>
 <p>Many data quality problems do not begin during analysis, but during data collection. Decisions made when building a form, such as how questions are structured, how option choices are named, and how missing data is handled, can affect how much cleaning and preparation is required later.</p>
 <p>KoboToolbox includes several tools that <strong>support high quality data collection</strong> and help prepare your data for analysis in the long run.</p>
 <p>This article covers recommendations for <strong>designing forms that produce cleaner, more consistent data</strong>, from using form logic and calculations to planning question and choice names, and downloading your XLSForm as a data dictionary.</p>
@@ -277,15 +277,16 @@
 </ul>
 <p>This helps reduce unexplained missing data and makes results easier to interpret during analysis.</p>
 </section>
-<section id="minimize-open-text-responses">
-<h3>Minimize open text responses<a class="headerlink" href="#minimize-open-text-responses" title="Link to this heading">¶</a></h3>
-<p><strong>Open text responses</strong> are often difficult to analyze. When possible, use structured question types instead:</p>
+<section id="choose-appropriate-question-types">
+<h3>Choose appropriate question types<a class="headerlink" href="#choose-appropriate-question-types" title="Link to this heading">¶</a></h3>
+<p>Use <strong>open-ended questions</strong> when you need detailed, descriptive, or qualitative information that cannot be captured through predefined options. <a class="reference external" href="https://support.kobotoolbox.org/text_questions.html">Text</a> and <a class="reference external" href="https://support.kobotoolbox.org/photo_audio_video_file.html">audio</a> questions can be especially useful for collecting explanations, experiences, opinions, and other contextual information.</p>
+<p>Use <strong>structured question types</strong> rather than open-ended questions when responses can be standardized:</p>
 <ul class="simple">
-<li><p>Use <a class="reference external" href="https://support.kobotoolbox.org/select_one_and_select_many.html">multiple choice questions</a> when responses can be standardized into predefined options.</p></li>
+<li><p>Use <a class="reference external" href="https://support.kobotoolbox.org/select_one_and_select_many.html">multiple choice questions</a> when responses can fit into predefined options.</p></li>
 <li><p>Use <a class="reference external" href="https://support.kobotoolbox.org/date_time.html">date questions</a> when collecting calendar dates.</p></li>
 <li><p>Use <a class="reference external" href="https://support.kobotoolbox.org/gps_questions.html">GPS questions</a> or <a class="reference external" href="https://support.kobotoolbox.org/cascading_select.html">cascading select questions</a> when collecting location information.</p></li>
 </ul>
-<p>Reserve text questions for information that cannot reasonably be standardized.</p>
+<p>Choose the question type based on the information you need and how you plan to analyze it.</p>
 </section>
 </section>
 <section id="use-your-xlsform-as-a-data-dictionary">
