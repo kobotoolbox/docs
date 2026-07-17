@@ -41,7 +41,7 @@ The **Question Name** is the unique identifier for each question in your form. I
 
 Every question must have a unique question name. In the Formbuilder, it is automatically generated from the question label, but you can customize it as needed. Defining clear and consistent names before deploying your form helps ensure that your dataset follows a logical naming convention.
 
-![Question name](images/question_options/data_column_name.png)
+![Question name](images/question_options/question_name.png)
 
 <p class="note">
 <strong>Note:</strong> The <strong>Question Name</strong> was previously referred to as <strong>Data Column Name</strong> in the Formbuilder.
@@ -62,7 +62,7 @@ Question names must follow these rules:
 - Each name must be unique within the form.
 
 <p class="note">
-<strong>Note:</strong> Question names are used when referencing answers in <a href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a>. For example, you can include a previous response in another question’s label using the format <code>${data_column_name}</code>. This format is used in labels, skip logic, calculations, and validations. Question names are case-sensitive.
+<strong>Note:</strong> Question names are used when referencing answers in <a href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a>. For example, you can include a previous response in another question’s label using the format <code>${question_name}</code>. This format is used in labels, skip logic, calculations, and validations. Question names are case-sensitive.
 </p>
 
 ## Question Hint
