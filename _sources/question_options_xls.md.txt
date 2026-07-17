@@ -1,5 +1,5 @@
 # Question options in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/question_options_xls.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4e54afb04b7d44066e6c39317326d5b95ed2c14b/source/question_options_xls.md" class="reference">17 Jul 2026</a>
 
 When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the `survey` worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required. 
 
@@ -173,8 +173,8 @@ Different question types in XLSForm have different parameters. The most common p
 | `capture-accuracy=20` | `geopoint` | Specifies the minimum acceptable [GPS accuracy](https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates) (in meters) for automatically capturing a location. Defaults to 5m. |
 | `warning-accuracy=50` | `geopoint` | Triggers a warning message if the [GPS accuracy](https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates) (in meters) is not within the specified accuracy threshold. Defaults to 100m. |
 | `max-pixels=480` | `image` | Limits the maximum pixels for a photo, to reduce the image file size and improve upload speed |
-| `quality=low` | `audio` | Captures a lower quality audio recording |
-| `quality=voice-only` | `audio` | Captures the lowest quality audio recording |
+| `quality=low` | `audio`, `background-audio` | Captures a lower quality audio recording |
+| `quality=voice-only` | `audio`, `background-audio` | Captures the lowest quality audio recording |
 
 ## Additional question options
 
