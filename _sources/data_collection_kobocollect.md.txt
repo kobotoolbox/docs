@@ -1,5 +1,5 @@
 # Collecting data using KoboCollect
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/883b3a06b2cb3ea94f7a7b69c5be2b85953ad453/source/data_collection_kobocollect.md" class="reference">24 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a50fc55aabe45ff3046e90f98628a28c3ab46559/source/data_collection_kobocollect.md" class="reference">17 Jul 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/IEm61fpLoz4?si=TdlWhcVt0OxETlxl" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -56,7 +56,7 @@ Once forms are downloaded, you can begin data collection. Note that once you hav
 1. From the main menu, tap **Start new form**.
 2. Select the form you wish to collect data with.
 3. To change the form language, tap the <i class="k-icon-more"></i> **three dots icon** in the top right corner of the screen and click **Change Language**.
-4. Navigate through questions by swiping left or clicking **NEXT** after answering.
+4. Navigate through questions by swiping left or clicking **NEXT** after answering. You can also access the form’s <i class="k-icon-qt-select-many"></i> **table of contents** in the top right corner of the screen.
 5. At the end of the survey, you can choose to **Save as draft**, **Finalize**, or **Send** the form (depending on your [project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings)).
 
 | **Option** | **Description**                                |
