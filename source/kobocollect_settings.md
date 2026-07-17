@@ -18,7 +18,7 @@ To access the settings menu:
 2. Tap **Settings**.
 
 <p class="note">
-  <strong>Note:</strong> Users do not need an internet connection to access or change project settings in KoboCollect.
+  Not sure which settings to enable? Use our <a href="https://kobotoolbox.github.io/kobocollect-settings/">KoboCollect Project Settings Generator</a> to get recommended settings based on your data collection workflow.
 </p>
 
 ## Project display settings
