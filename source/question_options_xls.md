@@ -173,8 +173,9 @@ Different question types in XLSForm have different parameters. The most common p
 | `capture-accuracy=20` | `geopoint` | Specifies the minimum acceptable [GPS accuracy](https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates) (in meters) for automatically capturing a location. Defaults to 5m. |
 | `warning-accuracy=50` | `geopoint` | Triggers a warning message if the [GPS accuracy](https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates) (in meters) is not within the specified accuracy threshold. Defaults to 100m. |
 | `max-pixels=480` | `image` | Limits the maximum pixels for a photo, to reduce the image file size and improve upload speed. |
-| `quality=low` | `audio`, `background-audio` | Captures a lower quality audio recording (~ 11 MB/hour). Default quality is `normal` (~ 30 MB/hour). |
-| `quality=voice-only` | `audio`, `background-audio` | Captures the lowest quality audio recording (~ 5 MB/hour). Default quality is `normal` (~ 30 MB/hour). |
+| `quality=normal` | `audio`, `background-audio` | Captures a higher quality audio recording (~ 30 MB/hour). This is the default parameter for `audio` questions. |
+| `quality=low` | `audio`, `background-audio` | Captures a lower quality audio recording (~ 11 MB/hour). |
+| `quality=voice-only` | `audio`, `background-audio` | Captures the lowest quality audio recording (~ 5 MB/hour). This is the default parameter for `background-audio` questions. |
 
 ## Additional question options
 
