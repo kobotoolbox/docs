@@ -1,5 +1,5 @@
 # Form settings in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/form_settings_xls.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cd213bf403be54453dd0b6ace7f7ed710615c9c9/source/form_settings_xls.md" class="reference">17 Jul 2026</a>
 
 XLSForm allows you to configure settings for your forms using the `settings` worksheet. For example, you can specify a form title, set a default language, or track version numbers. 
 
