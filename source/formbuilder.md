@@ -12,7 +12,7 @@ The KoboToolbox Formbuilder is a user-friendly tool for designing and deploying 
 
 ## Adding a question
 
-To add a question to your form, click the <i class="k-icon k-icon-plus"></i> button that is below every question. Enter your question label and click **Add Question**. Then,
+To add a question to your form, click the <i class="k-icon-plus"></i> button that is below every question. Enter your question label and click **Add Question**. Then,
 [choose the question type](question_types.md).
 
 For [Select One or Select Many](https://support.kobotoolbox.org/select_one_and_select_many.html) question types, add the response options below the question.
@@ -51,7 +51,7 @@ To save a question for reuse in future forms, click <i class="k-icon-folder-plus
 
 ## Grouping your questions
 
-Questions can be [grouped together](https://support.kobotoolbox.org/group_repeat.html) to organize your form. Select questions using the **CTRL** key (Windows) or **Command** key (Mac), then click <i class="k-icon k-icon-group"></i> **Create group with selected questions** in the top left menu bar.
+Questions can be [grouped together](https://support.kobotoolbox.org/group_repeat.html) to organize your form. Select questions using the **CTRL** key (Windows) or **Command** key (Mac), then click <i class="k-icon-group"></i> **Create group with selected questions** in the top left menu bar.
 
 ## Changing the order of your questions
 
@@ -63,7 +63,7 @@ Questions and groups can be moved to any position in the form. Drag-and-drop a q
 
 ## Previewing your form
 
-After adding all questions to your form, click <i class="k-icon k-icon-view"></i> **Preview form** to see how it will appear once deployed.
+After adding all questions to your form, click <i class="k-icon-view"></i> **Preview form** to see how it will appear once deployed.
 
 ## Saving your form
 

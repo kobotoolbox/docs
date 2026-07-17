@@ -32,7 +32,7 @@ To download a single file:
 1. Go to the **DATA** page.
 2. In the data table, locate the cell containing the file.
 3. Click the <i class="k-icon-qt-photo"></i> **image**, <i class="k-icon-qt-video"></i> **video**, or <i class="k-icon-qt-file"></i> **file** icon. For audio recordings, click **Open.** <i class="k-icon-arrow-up-right"></i> 
-4. Click the <i class="k-icon k-icon-more"></i> three dots at the top of the preview.
+4. Click the <i class="k-icon-more"></i> three dots at the top of the preview.
 5. Click <i class="k-icon-download"></i> **Download.**
 
 ![Download media](images/managing_media_responses/download.png)
@@ -74,9 +74,9 @@ There are two ways to delete individual media files: directly from the data tabl
 You can delete individual images, videos, and files directly from the data table, with the following steps:
 
 1. In the data table, locate the cell with the media file you want to delete.
-2. Click the <i class="k-icon k-icon-qt-photo"></i> **image**, <i class="k-icon k-icon-qt-video"></i> **video**, or <i class="k-icon k-icon-qt-file"></i> **file** icon.
-3. Click the <i class="k-icon k-icon-more"></i> **three dots** at the top of the file preview.
-4. Click <i class="k-icon k-icon-trash"></i> **Delete**, then **Delete** again to confirm.
+2. Click the <i class="k-icon-qt-photo"></i> **image**, <i class="k-icon-qt-video"></i> **video**, or <i class="k-icon-qt-file"></i> **file** icon.
+3. Click the <i class="k-icon-more"></i> **three dots** at the top of the file preview.
+4. Click <i class="k-icon-trash"></i> **Delete**, then **Delete** again to confirm.
 
 ![Delete media from table](images/managing_media_responses/delete_from_table.png)
 
@@ -85,10 +85,10 @@ You can delete individual images, videos, and files directly from the data table
 You can also delete media files by opening the submission view:
 
 1. In the data table, locate the submission with the media files you want to delete.
-2. On the left side of the submission, click <i class="k-icon k-icon-view"></i> **Open**.
+2. On the left side of the submission, click <i class="k-icon-view"></i> **Open**.
 3. Scroll down to the media file you want to delete.
-4. Click the <i class="k-icon k-icon-more"></i> **three dots** to the right of the media file.
-5. Click <i class="k-icon k-icon-trash"></i> **Delete**, then **Delete** again to confirm.
+4. Click the <i class="k-icon-more"></i> **three dots** to the right of the media file.
+5. Click <i class="k-icon-trash"></i> **Delete**, then **Delete** again to confirm.
 
 ![Open submission view](images/managing_media_responses/open_submission_view.png)
 
@@ -96,10 +96,10 @@ You can also delete media files by opening the submission view:
 
 You can delete audio files by opening the audio question view for transcription, translation, and analysis of audio questions:
 
-1. In the data table, click on **Open** <i class="k-icon k-icon-arrow-up-right"></i> to open the audio question view.
+1. In the data table, click on **Open** <i class="k-icon-arrow-up-right"></i> to open the audio question view.
 2. In the **TRANSCRIPT**, **TRANSLATIONS**, or **ANALYSIS** tab, locate the audio file in the top right corner.
-3. Click the <i class="k-icon k-icon-more"></i> **three dots** to the right of the audio file.
-4. Click <i class="k-icon k-icon-trash"></i> **Delete**, then **Delete** again to confirm.
+3. Click the <i class="k-icon-more"></i> **three dots** to the right of the audio file.
+4. Click <i class="k-icon-trash"></i> **Delete**, then **Delete** again to confirm.
 
 ![Delete audio](images/managing_media_responses/delete_audio.png)
 

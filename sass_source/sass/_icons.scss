@@ -12,8 +12,9 @@ i.icon {
 }
 
 // Global styles for icons from KPI
-
-.k-icon {
+.k-icon,
+[class^="k-icon-"],
+[class*=" k-icon-"] {
   display: inline-block;
   vertical-align: middle;
   color: inherit;

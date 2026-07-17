@@ -55,7 +55,7 @@ The following question types are available for analysis questions:
 
 | Question type | Description | 
 |:----|:----|
-| <i class="k-icon k-icon-tag"></i> Tags | Add keywords or themes to describe the audio response. |
+| <i class="k-icon-tag"></i> Tags | Add keywords or themes to describe the audio response. |
 | <i class="k-icon-qt-text"></i> Text | Add an open text response, such as a summary, notes, or overall impression. |
 | <i class="k-icon-qt-number "></i> Number | Record a number, such as the number of times a theme is mentioned. |
 | <i class="k-icon-qt-select-one"></i> Single choice | Select one option from a list, such as the main theme or perceived level of satisfaction. |
@@ -100,7 +100,7 @@ Hints do not have a word limit, so you can include detailed instructions when ne
 Once you have created analysis questions, you can start analyzing responses manually or use AI to generate a response:
 
 - **For manual analysis:** Manually enter a response for each analysis question.
-- **For automated analysis:** Click <i class="k-icon k-icon-sparkles"></i> **Generate with AI** under each analysis question.
+- **For automated analysis:** Click <i class="k-icon-sparkles"></i> **Generate with AI** under each analysis question.
 
 After generating automated analysis responses, you can review the responses and edit them if needed.
 
@@ -108,7 +108,7 @@ After generating automated analysis responses, you can review the responses and 
 
 <p class="note">
 <strong>Note:</strong>
-A response that has been generated with AI will include the mention <i class="k-icon k-icon-sparkles"></i> <strong>AI-generated</strong> underneath the question.    
+A response that has been generated with AI will include the mention <i class="k-icon-sparkles"></i> <strong>AI-generated</strong> underneath the question.    
 </p>
 
 ### Reviewing and verifying responses
@@ -173,7 +173,7 @@ To switch to a different audio question within the same submission, use the drop
 
 ## Usage limits for AI-generated analysis
 
-Community Plan users can make up to 25 AI-generated analysis requests for free. Each time you click <i class="k-icon k-icon-sparkles"></i> **Generate with AI**, it counts as one request. The following limits apply to paid KoboToolbox plans:
+Community Plan users can make up to 25 AI-generated analysis requests for free. Each time you click <i class="k-icon-sparkles"></i> **Generate with AI**, it counts as one request. The following limits apply to paid KoboToolbox plans:
 
 | Plan | Limits | 
 |:---|:---|

@@ -78,7 +78,7 @@ Form-level restrictions apply to the whole form. You can apply the following res
 | Name | Description |
 |:------|:-------------|
 | <code>form_appearance</code> | Prevents changes to the form [theme](https://support.kobotoolbox.org/form_style_xls.html). |
-| <code>form_replace</code> | Prevents replacing the form in KoboToolbox using the <i class="k-icon k-icon-replace"></i> **Replace Form** option. |
+| <code>form_replace</code> | Prevents replacing the form in KoboToolbox using the <i class="k-icon-replace"></i> **Replace Form** option. |
 | <code>group_add</code> | Prevents creating new groups. |
 | <code>question_add</code> | Prevents adding or cloning questions in a group. |
 | <code>question_order_edit</code> | Prevents reordering questions. |
@@ -163,13 +163,13 @@ Once you have created and uploaded a locked XLSForm as a template, you can use i
 ### Importing a locked XLSForm into your library
 
 To import a locked XLSForm into your library:
-1. Go to the <i class="k-icon k-icon-library"></i> **Library** from the left menu bar in KoboToolbox.
+1. Go to the <i class="k-icon-library"></i> **Library** from the left menu bar in KoboToolbox.
 2. Click **NEW**, then select **Upload**.
 3. Upload your XLSForm file, and select **Upload as template.**
 
 ![Upload template](images/library_locking/upload_template.png)
 
-The template will appear in your library with a <i class="k-icon k-icon-template-locked"></i> **lock symbol**, showing that it contains restrictions.
+The template will appear in your library with a <i class="k-icon-template-locked"></i> **lock symbol**, showing that it contains restrictions.
 
 ### Creating a project from a locked template
 
