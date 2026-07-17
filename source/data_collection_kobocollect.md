@@ -56,7 +56,7 @@ Once forms are downloaded, you can begin data collection. Note that once you hav
 1. From the main menu, tap **Start new form**.
 2. Select the form you wish to collect data with.
 3. To change the form language, tap the <i class="k-icon-more"></i> **three dots icon** in the top right corner of the screen and click **Change Language**.
-4. Navigate through questions by swiping left or clicking **NEXT** after answering.
+4. Navigate through questions by swiping left or clicking **NEXT** after answering. You can also access the form’s <i class="k-icon-qt-select-many"></i> **table of contents** in the top right corner of the screen.
 5. At the end of the survey, you can choose to **Save as draft**, **Finalize**, or **Send** the form (depending on your [project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings)).
 
 | **Option** | **Description**                                |
