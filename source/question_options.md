@@ -135,8 +135,8 @@ The format of the default response depends on the question type and the data bei
 |:---|:---|
 | Number | Number |
 | Text | Text (without quotation marks) |
-| Select One | Choice <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML value</a> |
-| Select Many | Choice <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML values</a>, separated by a space if there are multiple |
+| Select One | <a href="https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices">Choice name</a> |
+| Select Many | <a href="https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices">Choice names</a>, separated by a space if there are multiple |
 | Date | Date in the YYYY-MM-DD format. |
 
 ## Appearance (Advanced)
@@ -153,7 +153,7 @@ HXL, or **Humanitarian Exchange Language**, is a [standardized system](https://h
 
 Applying HXL tags to your questions helps make your data more interoperable across systems and organizations. It also supports more efficient data processing and analysis.
 
-In KoboToolbox, you can assign one HXL tag per question and optionally include attributes. When you export your data as an XLS file with XML values and headers selected, an additional row containing the HXL tags will appear directly below the variable names in your dataset.
+In KoboToolbox, you can assign one HXL tag per question and optionally include attributes. When you export your data as an XLS file with question and choice names, an additional row containing the HXL tags will appear directly below the variable names in your dataset.
 
 Using HXL tags is especially helpful when your data will be shared with partners or integrated into other humanitarian data systems.
 
