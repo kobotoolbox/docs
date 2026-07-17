@@ -180,7 +180,7 @@
           
   <section id="adding-choice-filters-in-xlsform">
 <h1>Adding choice filters in XLSForm<a class="headerlink" href="#adding-choice-filters-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/168030986d249d082fd743aaa477417142d5fc1b/source/choice_filters_xls.md" class="reference">17 Jul 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/choice_filters_xls.md" class="reference">4 Jan 2026</a></p>
 <p>Choice filters create dynamic forms where options in one question depend on the answer to a previous question. This streamlines data collection by presenting only relevant choices, improving survey efficiency and accuracy.</p>
 <p>Choice filters can be used for various applications, including:</p>
 <ul class="simple">
@@ -415,28 +415,25 @@ For an example of an XLSForm using dynamic choice filters, see this <a href="htt
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">selected(${parent_question},</span> <span class="pre">name)</span></code></p></td>
 <td class="text-left"><p>Display only responses that were selected in a previous <code class="docutils literal notranslate"><span class="pre">parent_question</span></code>.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">not(selected(${parent_question},</span> <span class="pre">name))</span></code></p></td>
-<td class="text-left"><p>Display only responses that were not selected in a previous <code class="docutils literal notranslate"><span class="pre">parent_question</span></code>.</p></td>
-</tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">filter</span> <span class="pre">=</span> <span class="pre">'outdoors'</span> <span class="pre">and</span> <span class="pre">include</span> <span class="pre">=</span> <span class="pre">'yes'</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">filter</span> <span class="pre">=</span> <span class="pre">'outdoors'</span> <span class="pre">and</span> <span class="pre">include</span> <span class="pre">=</span> <span class="pre">'yes'</span></code></p></td>
 <td class="text-left"><p>Combine choice filter expressions so both conditions must apply for the choice to be displayed.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">!=</span> <span class="pre">'none'</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">name</span> <span class="pre">!=</span> <span class="pre">'none'</span></code></p></td>
 <td class="text-left"><p>Exclude the <strong>None</strong> option from a choice list.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">selected(${Q1},</span> <span class="pre">name)</span> <span class="pre">or</span> <span class="pre">name='none'</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">selected(${Q1},</span> <span class="pre">name)</span> <span class="pre">or</span> <span class="pre">name='none'</span></code></p></td>
 <td class="text-left"><p>Include choices selected in a previous question as well as a <strong>None</strong> option (even if not selected previously).</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">filter=${Q1}</span> <span class="pre">or</span> <span class="pre">name='other'</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">filter=${Q1}</span> <span class="pre">or</span> <span class="pre">name='other'</span></code></p></td>
 <td class="text-left"><p>Include choices based on a previous question as well as an <strong>Other</strong> option.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">filter=${Q1}</span> <span class="pre">or</span> <span class="pre">always_include='yes'</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">filter=${Q1}</span> <span class="pre">or</span> <span class="pre">always_include='yes'</span></code></p></td>
 <td class="text-left"><p>Include choices based on a previous question as well as a set of options that should always be included.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">filter</span> <span class="pre">&lt;=</span> <span class="pre">${product_count}</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">filter</span> <span class="pre">&lt;=</span> <span class="pre">${product_count}</span></code></p></td>
 <td class="text-left"><p>Use numbers in the filter column instead of text, and filter based on a number from a previous question or calculation.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">if(${relationship_status}</span> <span class="pre">=</span> <span class="pre">'married',</span> <span class="pre">filter</span> <span class="pre">=</span> <span class="pre">'married',</span> <span class="pre">filter</span> <span class="pre">=</span> <span class="pre">'unmarried')</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">if(${relationship_status}</span> <span class="pre">=</span> <span class="pre">'married',</span> <span class="pre">filter</span> <span class="pre">=</span> <span class="pre">'married',</span> <span class="pre">filter</span> <span class="pre">=</span> <span class="pre">'unmarried')</span></code></p></td>
 <td class="text-left"><p>Use if-statements to conditionally display choices based on the respondent’s background.</p></td>
 </tr>
 </tbody>
