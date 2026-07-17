@@ -1,5 +1,5 @@
 # Media questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cfb4a1f8edd217a9c0ed64bd0bfc86e6fda70baa/source/photo_audio_video_file.md" class="reference">6 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c4650fac2ec11903b05aadf5a55551e19ba83a49/source/photo_audio_video_file.md" class="reference">17 Jul 2026</a>
 
 Many data collection projects require more than just quantitative data. KoboToolbox allows you to capture various media files from respondents, including photos, audio recordings, videos, and files, to provide key qualitative information and add visual and auditory depth to your datasets.
 
@@ -103,6 +103,21 @@ To define the maximum size of images collected using the **Photo** question type
 
 <p class="note">
 <strong>Note:</strong> You can also configure video resolution and image size in <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">KoboCollect settings</a>.
+</p>
+
+### Configuring audio quality
+
+As with large image files, large audio files can be difficult to upload in low-connectivity settings and can quickly use up your file storage. Consider reducing the recording quality if the interview environment allows for it. The default quality setting for audio questions is `normal`, which also produces the largest files.
+
+Audio quality cannot be configured in the Formbuilder. To lower the audio quality:
+1. [Download your form](https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox) as an XLSForm.
+2. Add a `parameters` column to the `survey` worksheet.
+3. In the row for the audio question, enter `quality=low` or `quality=voice-only`.
+
+Use `voice-only` for quiet interviews with a single speaker. Use `low` for recordings with multiple speakers or some background noise. The `normal` setting provides the highest audio quality but uses the most storage space.
+
+<p class="note">
+To learn more about question parameters, see <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">Question options in XLSForm</a>.
 </p>
 
 ### Restricting accepted file types
