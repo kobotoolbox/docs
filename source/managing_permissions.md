@@ -80,7 +80,7 @@ Response values must follow a specific format for the condition to work:
 | **Question type**    | **Format**                                |
 | :----------------- | :--------------------------------------------- |
 | Date               | <code>YYYY-MM-DD</code> (e.g., <code>1974-12-31</code>)                                  |
-| Select One and Select Many      | XML value/choice name (e.g., <code>first_grade</code> rather than <code>First grade</code>)                                   |
+| Select One and Select Many      | Choice name (e.g., <code>first_grade</code> rather than <code>First grade</code>)                                   |
 | Number and Decimal           | A specific integer or decimal number            |
 
 ## Copying permissions from another project
