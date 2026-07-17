@@ -37,7 +37,7 @@ To configure your question matrix, for each column:
     -  You can use different question types within the same matrix.
 3. Enter a **Question Label.**
 4. Enter a **Question Name Suffix.** This suffix will be appended to the variable names for each item in the rows and must follow the [standard rules for question names](https://support.kobotoolbox.org/question_options.html#important-considerations-for-question-names).
-5. If using **Select One** or **Select Many**, add the answer choices and their [XML values](https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices).
+5. If using **Select One** or **Select Many**, add the answer choices and their [choice names](https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices).
 6. Set the question as [required](https://support.kobotoolbox.org/question_options.html#mandatory-response), if needed.
 7. To add another column, click the <i class="k-icon-plus"></i> icon to the right of the last column.
 
