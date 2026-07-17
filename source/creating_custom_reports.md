@@ -1,5 +1,5 @@
 # Visualizing your data with reports
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6e9f496956ced232adb4985272fbee0a6465318d/source/creating_custom_reports.md" class="reference">15 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/creating_custom_reports.md" class="reference">17 Jul 2026</a>
 
 KoboToolbox includes a reporting tool that you can use to monitor incoming data and view simple descriptive statistics. You can use reports to display charts, review response counts, compare responses by subgroup, and share or print a summary of selected form questions.
 

@@ -1,5 +1,5 @@
 # Qualitative analysis of audio responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8ef3e7ec90848285916af99c022046fd2c56a447/source/qualitative_analysis.md" class="reference">22 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/qualitative_analysis.md" class="reference">17 Jul 2026</a>
 
 <iframe src="https://www.youtube.com/embed/Ud65hNS_cuo?si=aFfCfExpyn3MZVAs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
