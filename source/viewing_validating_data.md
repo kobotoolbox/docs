@@ -103,7 +103,7 @@ To open a submission, click <i class="k-icon-view"></i> **View** in the correspo
 The submission window displays all responses and includes the following options:
 
 - View data in [any form language](https://support.kobotoolbox.org/collecting_data_multiple_languages.html).
-- Display [XML values](https://support.kobotoolbox.org/glossary.html#xml-value) next to each question.
+- Display [question names](https://support.kobotoolbox.org/glossary.html#question-name) next to each question.
 - **View** and **Edit** the submission as a [web form](https://support.kobotoolbox.org/editing_deleting_data.html).
 - **Duplicate** the submission.
 - <i class="k-icon-print"></i> **Print** the submission.
