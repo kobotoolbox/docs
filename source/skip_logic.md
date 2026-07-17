@@ -38,7 +38,7 @@ To manually enter skip logic in XLSForm code, follow these steps:
 2. Select **Skip Logic**, and click **Manually enter your skip logic in XLSForm code**.
 3. Enter the condition in XLSForm code.
 
-In XLSForm code, questions are referred to by their **question name** (Data Column Name) using the format `${question_name}`. For example, if Q2 should be asked only if the answer to Q1 is "Yes", the skip logic condition for Q2 would be `${Q1} = ‘yes’`.
+In XLSForm code, questions are referred to by their [question name](https://support.kobotoolbox.org/question_options.html#question-name) using the format `${question_name}`. For example, if Q2 should be asked only if the answer to Q1 is "Yes", the skip logic condition for Q2 would be `${Q1} = ‘yes’`.
 
 <p class="note">
     For more information on XLSForm code and operators, see <a href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a>.
