@@ -66,13 +66,13 @@ If you make changes to a form after data collection has already started, those c
 
 Changes that can affect your data structure include:
 
-- **Changing a question’s [data column name](https://support.kobotoolbox.org/glossary.html#data-column-name)**: KoboToolbox will treat it as a new variable and create a new column in the data table.
-- **Changing a question type while keeping the same data column name**: This can create inconsistent data in the same column and lead to errors (e.g., in the **DATA > Reports** view).
+- **Changing a [question name](https://support.kobotoolbox.org/glossary.html#question-name)**: KoboToolbox will treat it as a new variable and create a new column in the data table.
+- **Changing a question type while keeping the same question name**: This can create inconsistent data in the same column and lead to errors (e.g., in the **DATA > Reports** view).
 - **Moving questions into or out of groups**: KoboToolbox will treat these questions as new variables and create new columns in the data table.
 - **Removing choices from a choice list**: Previous submissions may still contain those choice values, but they may no longer have an associated label in the form.
 - **Adding new choices to a Select one or Select many question**: Make sure each new choice has a unique [XML value](https://support.kobotoolbox.org/glossary.html#xml-value) within a given choice list.
 - **Deleting a question that is used elsewhere in the form**: If the question is referenced in a calculation, relevance condition, constraint, or another expression, you will also need to update those references.
-- **Changing question or choice labels**: Does not affect the data structure if the data column name or XML value stays the same, but previously collected data will use the updated label.
+- **Changing question or choice labels**: Does not affect the data structure if the question or choice name stays the same, but previously collected data will use the updated label.
 - **Changing the meaning of existing choice values**: Changing choice names or labels can make data inconsistent across form versions and lead to misinterpretation. For example, this can happen if you reverse the meaning of values such as `1 = Yes` and `0 = No`, or change the direction of a Likert scale.
 
 <p class="note">
