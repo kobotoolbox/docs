@@ -8,6 +8,6 @@
 1. [Media questions in KoboToolbox](photo_audio_video_file.md) (17 Jul 2026)
 1. [Form settings in XLSForm](form_settings_xls.md) (17 Jul 2026)
 1. [Sharing projects with user-level permissions](managing_permissions.md) (17 Jul 2026)
+1. [Adding translations in XLSForm](language_xls.md) (17 Jul 2026)
 1. [Collecting data using KoboCollect](data_collection_kobocollect.md) (17 Jul 2026)
 1. [Collecting data using web forms](data_through_webforms.md) (17 Jul 2026)
-1. [Glossary of KoboToolbox terms](glossary.md) (2 Jul 2026)
