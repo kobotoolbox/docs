@@ -44,7 +44,7 @@ In **web forms**, respondents can select a location directly on the map, search 
 In **KoboCollect**, the device’s current location is recorded automatically, and manual selection or coordinate entry is not available by default.
 
 <p class="note">
-<strong>Note:</strong> To learn more about GPS data collection behaviors in web forms and KoboCollect, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data with KoboToolbox</a>.
+To learn more about GPS data collection behaviors in web forms and KoboCollect, see <a href="https://support.kobotoolbox.org/collect_gps.html">Collecting GPS data with KoboToolbox</a>.
 </p>
 
 ### Advanced appearances 
