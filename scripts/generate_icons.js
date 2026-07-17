@@ -14,11 +14,11 @@ const git = simpleGit({
   maxConcurrentProcesses: 6,
 });
 
-function generateIconsFromKpiFiles() {
+async function generateIconsFromKpiFiles() {
   fs.mkdirSync(destDir, {recursive: true});
 
   console.info('Generating fonts…');
-  generateFonts({
+  await generateFonts({
     name: 'k-icons',
     inputDir: sourceDir,
     outputDir: destDir,
@@ -49,18 +49,11 @@ function generateIconsFromKpiFiles() {
       css: cssTemplatePath,
       html: undefined,
     },
-  })
-    .then(() => {
-      console.info('Cleanup…');
-      fs.rm(kpiDirName, {recursive: true}, (err) => {
-        if (err) {throw err;}
-        console.info('Icons generated successfully!');
-      });
-    })
-    .catch((error) => {
-      console.error('Font generation failed:', error);
-      process.exit(1);
-    });
+  });
+
+  console.info('Cleanup…');
+  await fs.promises.rm(kpiDirName, {recursive: true});
+  console.info('Icons generated successfully!');
 }
 
 function getKpiFiles() {
@@ -71,11 +64,13 @@ function getKpiFiles() {
   });
 }
 
-function start() {
-  fs.rm(kpiDirName, {recursive: true, force: true}, (err) => {
-    if (err) {throw err;}
-    getKpiFiles().then(generateIconsFromKpiFiles);
-  });
+async function start() {
+  await fs.promises.rm(kpiDirName, {recursive: true, force: true});
+  await getKpiFiles();
+  await generateIconsFromKpiFiles();
 }
 
-start();
+start().catch((error) => {
+  console.error('Icon generation failed:', error);
+  process.exit(1);
+});

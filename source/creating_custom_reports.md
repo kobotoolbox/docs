@@ -22,7 +22,7 @@ The default report includes all questions in your form. Each question is display
 
 ![Data reports](images/creating_custom_reports/reports.png)
 
-You can print the report or save it as a PDF by clicking the <i class="k-icon-print"></i> **print** button in the top right corner. You can also <i class=" k-icon-expand"></i> **toggle full screen mode** to view the report across the full screen.
+You can print the report or save it as a PDF by clicking the <i class="k-icon-print"></i> **print** button in the top right corner. You can also <i class="k-icon-expand"></i> **toggle full screen mode** to view the report across the full screen.
 
 ## Customizing your report
 
