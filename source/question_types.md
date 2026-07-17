@@ -20,14 +20,14 @@ To add a question to your form:
 <strong>Note:</strong> Once the question type has been selected, it cannot be changed in the Formbuilder. To change the question type of an existing question, delete the question and create a new question with the same label.
 </p>
 
-### Setting data column names
+### Setting question names
 
-After adding a question to your form, it is strongly recommended to define a **Data Column Name** in the question **Settings.** The data column name is used to identify the question throughout the form logic and in the exported dataset. 
+After adding a question to your form, it is strongly recommended to define a **Question Name** in the question **Settings**. The question name is used to identify the question throughout the form logic and in the exported dataset. 
 
-By default, KoboToolbox creates the data column name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the data column name will be `respondent_name`.
+By default, KoboToolbox creates the question name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the question name will be `respondent_name`.
 
 <p class="note">
-    To learn more about data column names, see <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
+    To learn more about question names, see <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
 </p>
 
 ## Adding option choices
