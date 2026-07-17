@@ -1,5 +1,5 @@
 # Sharing projects with user-level permissions
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ebbea27d9ff0e87f175aa539a5af8d632d1180b3/source/managing_permissions.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97d19d4354f41930429083eeb386049288d015bf/source/managing_permissions.md" class="reference">17 Jul 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/WnCNuxgaMoQ?si=bktZdlug2uBKUyzq" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -99,11 +99,9 @@ To copy team permissions from another project:
 
 <details>
 <summary><strong>User not found</strong></summary>
-If KoboToolbox cannot find a user you are trying to share a project with:
-
+<p>If KoboToolbox cannot find a user you are trying to share a project with:</p>
 <ul> <li>Check that the username is correct and does not contain any typos.</li> <li>Confirm that the user’s account is on the same KoboToolbox server as the project.</li> </ul>
-
-Projects can only be shared with users on the same server (i.e., the Global KoboToolbox Server or the European Union KoboToolbox Server).
+<p>Projects can only be shared with users on the same server (i.e., the Global KoboToolbox Server or the European Union KoboToolbox Server).</p>
 </details>
 <br>
 
