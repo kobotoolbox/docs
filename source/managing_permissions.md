@@ -99,11 +99,9 @@ To copy team permissions from another project:
 
 <details>
 <summary><strong>User not found</strong></summary>
-If KoboToolbox cannot find a user you are trying to share a project with:
-
+<p>If KoboToolbox cannot find a user you are trying to share a project with:</p>
 <ul> <li>Check that the username is correct and does not contain any typos.</li> <li>Confirm that the user’s account is on the same KoboToolbox server as the project.</li> </ul>
-
-Projects can only be shared with users on the same server (i.e., the Global KoboToolbox Server or the European Union KoboToolbox Server).
+<p>Projects can only be shared with users on the same server (i.e., the Global KoboToolbox Server or the European Union KoboToolbox Server).</p>
 </details>
 <br>
 
