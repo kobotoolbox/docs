@@ -180,7 +180,7 @@
           
   <section id="question-options-in-xlsform">
 <h1>Question options in XLSForm<a class="headerlink" href="#question-options-in-xlsform" title="Link to this heading">Â¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b9a72ea4c3177e75494446c7e36697979cb4ba02/source/question_options_xls.md" class="reference">17 Jul 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/69f170c95d8e57a401cd67bdb7f0badb782f6ae4/source/question_options_xls.md" class="reference">17 Jul 2026</a></p>
 <p>When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required.</p>
 <p>This article covers the most common question options and how to add them to your XLSForm, including question hints, required questions, default responses, and question parameters.</p>
 <p class="note">
@@ -514,13 +514,17 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academyâ
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">image</span></code></p></td>
 <td class="text-left"><p>Limits the maximum pixels for a photo, to reduce the image file size and improve upload speed.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=low</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=normal</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audio</span></code>, <code class="docutils literal notranslate"><span class="pre">background-audio</span></code></p></td>
-<td class="text-left"><p>Captures a lower quality audio recording (~ 11 MB/hour). Default quality is <code class="docutils literal notranslate"><span class="pre">normal</span></code> (~ 30 MB/hour).</p></td>
+<td class="text-left"><p>Captures a higher quality audio recording (~ 30 MB/hour). This is the default parameter for <code class="docutils literal notranslate"><span class="pre">audio</span></code> questions.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=voice-only</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=low</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audio</span></code>, <code class="docutils literal notranslate"><span class="pre">background-audio</span></code></p></td>
-<td class="text-left"><p>Captures the lowest quality audio recording (~ 5 MB/hour). Default quality is <code class="docutils literal notranslate"><span class="pre">normal</span></code> (~ 30 MB/hour).</p></td>
+<td class="text-left"><p>Captures a lower quality audio recording (~ 11 MB/hour).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=voice-only</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audio</span></code>, <code class="docutils literal notranslate"><span class="pre">background-audio</span></code></p></td>
+<td class="text-left"><p>Captures the lowest quality audio recording (~ 5 MB/hour). This is the default parameter for <code class="docutils literal notranslate"><span class="pre">background-audio</span></code> questions.</p></td>
 </tr>
 </tbody>
 </table>
