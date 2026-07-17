@@ -75,7 +75,7 @@ The printed version includes all questions and guidance hints, regardless of any
 
 After opening the form, users can complete it directly in their browser. 
 * If the form includes [multiple languages](https://support.kobotoolbox.org/collecting_data_multiple_languages.html), users can change the language at the top of the form.
-* If the form [displays questions on multiple pages](https://support.kobotoolbox.org/alternative_enketo.html#adding-a-web-form-theme-in-the-formbuilder), click the <i class="k-icon-qt-note"></i> **three horizontal lines** in the top right corner to navigate to another section.
+* If the form [displays questions on multiple pages](https://support.kobotoolbox.org/alternative_enketo.html#adding-a-web-form-theme-in-the-formbuilder), users can click the <i class="k-icon-qt-note"></i> **three horizontal lines** in the top right corner to navigate to another section.
 
 ![Change form language](images/data_through_webforms/change_language.png)
 
