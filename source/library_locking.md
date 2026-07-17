@@ -48,7 +48,7 @@ Question-level restrictions apply to individual questions. You can apply the fol
 |:------------------------------|:---------------------------------------------------------------------------------------------------------------|
 | <code>choice_add</code>                 | Prevents adding new choices to a **select** question.                                                             |
 | <code>choice_delete</code>              | Prevents deleting existing choices in a **select** question.                                                      |
-| <code>choice_value_edit</code>          | Prevents editing a choice name (or XML value).                                                                |
+| <code>choice_value_edit</code>          | Prevents editing a choice name.                                                                |
 | <code>choice_label_edit</code>          | Prevents editing a choice label.                                                                              |
 | <code>choice_order_edit</code>          | Prevents reordering choices in a **select** question.                                                             |
 | <code>question_delete</code>            | Prevents deleting a question.                                                                                 |
