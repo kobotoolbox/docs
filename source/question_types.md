@@ -20,14 +20,14 @@ To add a question to your form:
 <strong>Note:</strong> Once the question type has been selected, it cannot be changed in the Formbuilder. To change the question type of an existing question, delete the question and create a new question with the same label.
 </p>
 
-### Setting data column names
+### Setting question names
 
-After adding a question to your form, it is strongly recommended to define a **Data Column Name** in the question **Settings.** The data column name is used to identify the question throughout the form logic and in the exported dataset. 
+After adding a question to your form, it is strongly recommended to define a **Question Name** in the question **Settings**. The question name is used to identify the question throughout the form logic and in the exported dataset. 
 
-By default, KoboToolbox creates the data column name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the data column name will be `respondent_name`.
+By default, KoboToolbox creates the question name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the question name will be `respondent_name`.
 
 <p class="note">
-    To learn more about data column names, see <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
+    To learn more about question names, see <a href="https://support.kobotoolbox.org/question_options.html#question-name">Question options in the Formbuilder</a>.
 </p>
 
 ## Adding option choices
@@ -44,16 +44,16 @@ When adding Select One or Select Many questions to your form, you will be prompt
 <strong>Note:</strong> Managing long choice lists in the Formbuilder can be time-consuming. If your form includes many options or the same choice list used in multiple questions, it is often easier to create and manage these lists using XLSForm instead. To learn more, see <a href="https://support.kobotoolbox.org/option_choices_xls.html#">Managing option choices in XLSForm</a>.
 </p>
 
-### Setting XML values for option choices
+### Setting choice names for option choices
 
-Next to each choice option, you will see a field labeled **AUTOMATIC.** This field contains the [XML value](https://support.kobotoolbox.org/glossary.html#xml-value) for that option.
+Next to each choice option, you will see a field labeled **AUTOMATIC.** This field contains the [choice name](https://support.kobotoolbox.org/glossary.html#choice-name) for that option.
 
-The XML value is a short, internal name that KoboToolbox uses to save and identify the selected option in your data. By default, KoboToolbox creates the XML value for you by removing spaces and capital letters from the option label. For example, if the option label is “Option 1”, the XML value will be `option_1`.
+The choice name is a short, internal name that KoboToolbox uses to save and identify the selected option in your data. By default, KoboToolbox creates the choice name for you by removing spaces and capital letters from the option label. For example, if the option label is “Option 1”, the choice name will be `option_1`.
 
-In some cases, you may want to set your own XML value. This can be helpful if the option label is very long or if you want to use a clearer or more consistent name. To do this, click **AUTOMATIC** and replace it with your own custom value.
+In some cases, you may want to set your own choice name. This can be helpful if the option label is very long or if you want to use a clearer or more consistent name. To do this, click **AUTOMATIC** and replace it with your own custom value.
 
 <p class="note">
-<strong>Note:</strong> It is strongly recommended to define XML values for all choices when using non-Latin scripts, such as Chinese, Arabic, or Nepali, to ensure your data is stored and exported correctly.
+<strong>Note:</strong> It is strongly recommended to define choice names for all choices when using non-Latin scripts, such as Chinese, Arabic, or Nepali, to ensure your data is stored and exported correctly.
 </p>
 
 ## Question types in the Formbuilder

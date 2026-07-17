@@ -46,8 +46,8 @@ When using the standard export formats (XLS, CSV, GeoJSON, and SPSS Labels), you
 
 | **Format**    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
-| Labels (default)               | The exported file uses <strong>question labels</strong> (question text) as column headers and <strong>choice labels</strong> for responses to Select One and Select Many questions.                                  |
-| XML values and headers      | The exported file uses <strong>question names</strong> (Data Column Names) as column headers and <strong>choice names</strong> (XML values) for responses. This export setting is recommended for importing your data into data analysis software.                                  |
+| Question & choice labels (default)               | The exported file uses the full <strong>question labels</strong> (i.e., the question text) as column headers and full <strong>choice labels</strong> for responses to Select One and Select Many questions.                                  |
+| Question & choice names      | The exported file uses <strong>question names</strong> as column headers and <strong>choice names</strong> for responses. These are the internal short names used to refer to questions and choices in your data. This export setting is recommended for importing data into data analysis software.                                  |
 | Labels in any of the defined languages           | The exported file uses <strong>question and choice labels</strong> in any of the languages set within the form.            |
 
 ## Advanced options

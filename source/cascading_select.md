@@ -15,7 +15,7 @@ Cascading select questions allow you to create dynamic forms where the options i
 To import cascading select questions into the Formbuilder, you first need to prepare your choice list in Excel or another spreadsheet program. You can use this <a href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit?gid=0#gid=0">Cascade Import Template</a> to get started.
 
 The choice table must include the following columns:
-- **list_name:** Unique identifier for a question’s list of choices. This will also be the Data Column Name for the created question.
+- **list_name:** Unique identifier for a question’s list of choices. This will also be the [question name](https://support.kobotoolbox.org/glossary.html#question-name) for the created question.
 - **name:** Unique identifier for each choice within a list.
 - **label:** Text that appears on the form for each choice.
 
@@ -42,7 +42,7 @@ Once your choice list is ready, you can import it in the Formbuilder by followin
 ![Insert cascading select example](images/cascading_select/insert_cascading_select.png)
 
 <p class="note">
-  <strong>Note:</strong> If you change the question label in the Formbuilder, ensure the Data Column Name in its settings still matches the <strong>list_name</strong> from your choice list table.
+  <strong>Note:</strong> If you change the question label in the Formbuilder, ensure the <strong>question name</strong> in its settings still matches the <strong>list_name</strong> from your choice list table.
 </p>
 
 ## Advanced cascading select management using XLSForm
@@ -66,7 +66,7 @@ If the choice list for the child question is empty, the child list is not seeing
 <br>
 <details>
 <summary><strong>Cascades break after you edit the form</strong></summary>
-Renaming a question or editing choice lists can change the backend code the cascade relies on. When renaming a question, ensure the <strong>Data Column Name</strong> remains the same as the corresponding <strong>list_name</strong>. For large choice list edits, either rebuild the cascade from scratch or download the XLSForm, make your changes there, and upload it back.
+Renaming a question or editing choice lists can change the backend code the cascade relies on. When renaming a question, ensure the <strong>question name</strong> remains the same as the corresponding <strong>list_name</strong>. For large choice list edits, either rebuild the cascade from scratch or download the XLSForm, make your changes there, and upload it back.
 </details>
 <br>
 <details>
@@ -77,7 +77,7 @@ To learn more about advanced cascading select using XLSForm, see <a href="https:
 <br>
 <details>
 <summary><strong>Survey element cannot be found</strong></summary>
-An error indicating a survey element cannot be found typically means the internal code does not match the cascade's expectations. To fix this, open the question's settings, locate the <strong>Data Column Name</strong>, and revert it to the original value (which should match the corresponding <strong>list_name</strong>) before redeploying your form.
+An error indicating a survey element cannot be found typically means the internal code does not match the cascade's expectations. To fix this, open the question's settings, locate the <strong>question name</strong>, and revert it to the original value (which should match the corresponding <strong>list_name</strong>) before redeploying your form.
 </details>
 
 

@@ -26,7 +26,7 @@ Calculation expressions are constructed using a combination of question referenc
 To learn more about each of these components, see <a href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a>.
 </p>
 
-To display the result of the calculation in a note, use the [question referencing](https://support.kobotoolbox.org/form_logic.html#question-referencing) format `${data_column_name}`, replacing `data_column_name` with the [data column name](https://support.kobotoolbox.org/question_options.html#data-column-name) of the Calculate question. You can also use this format to reference the result of the calculation in a question label or in your form’s logic. 
+To display the result of the calculation in a note, use the [question referencing](https://support.kobotoolbox.org/form_logic.html#question-referencing) format `${question_name}`, replacing `question_name` with the [question name](https://support.kobotoolbox.org/question_options.html#question-name) of the Calculate question. You can also use this format to reference the result of the calculation in a question label or in your form’s logic. 
 
 ![Question reference](images/calculate_questions/reference.png)
 

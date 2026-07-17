@@ -46,12 +46,12 @@ In the **question label** field of the Calculate question where linked data will
 For each expression in the table below:
 
 - `parent` is the unique name assigned to the **parent form** (in the External XML question of the **child form**).
-- `parent_question` refers to the data column name of a question from the **parent form.**
-- `child_question` refers to the data column name of a question from the **child form.**
+- `parent_question` refers to the question name of a question from the **parent form.**
+- `child_question` refers to the question name of a question from the **child form.**
 - `parent_index_question` is the identifying question from the **parent form** that links it to the **child form** (e.g., unique ID, organization name).
 - `child_index_question` is the identifying question from the **child form** that links it to the **parent form** (e.g., unique ID, organization name).
-- `parent_group` refers to the data column name of the group in the **parent form** in which the `parent_question` is located.
-- `parent_index_group` refers to the data column name of the group in the **parent form** in which the `parent_index_question` is located.
+- `parent_group` refers to the question name of the group in the **parent form** in which the `parent_question` is located.
+- `parent_index_group` refers to the question name of the group in the **parent form** in which the `parent_index_question` is located.
 
 | **XPath**    | **Description**                                |
 | :----------------- | :--------------------------------------------- |

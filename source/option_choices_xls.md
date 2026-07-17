@@ -47,7 +47,7 @@ To define a list of option choices in XLSForm:
  
 ## Best practices for defining choice names
 
-When data is downloaded in [XML values and headers format](https://support.kobotoolbox.org/export_download.html#value-and-header-format), each question appears as its own variable or column in the dataset. The values inside each column are the **choice names** defined in your `choices` worksheet, rather than the full labels shown to respondents. This format is recommended for analysis, since it provides short, consistent variable names and coded values that are easier to work with than full question or option labels.
+When data is downloaded in [Question & choice names format](https://support.kobotoolbox.org/export_download.html#value-and-header-format), each question appears as its own variable or column in the dataset. The values inside each column are the **choice names** defined in your `choices` worksheet, rather than the full labels shown to respondents. This format is recommended for analysis, since it provides short, consistent variable names and coded values that are easier to work with than full question or option labels.
 
 When defining choice names:
 - Use only **letters, numbers, and underscores**. Spaces and special characters are not allowed.

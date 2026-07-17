@@ -37,8 +37,8 @@ Above the data table, you can configure the following settings:
 
 | Display option                 | Description                                                                                  |
 |:-------------------------------|:---------------------------------------------------------------------------------------------|
-| Display labels or XML values?  | Choose whether to show <a href="https://support.kobotoolbox.org/glossary.html#xml-value">XML values</a> or full question and choice labels in <a href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html">any form language</a> in your table. |
-| Show group names in table headers | Decide whether column headers in the table include the name of the question group (e.g., `demographics / age`). |
+| Column headers  | Choose whether to show <a href="https://support.kobotoolbox.org/glossary.html#question-name">question and choice names</a> or full question and choice labels in <a href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html">any form language</a> in your table. |
+| Show parent group in column headers | Decide whether column headers in the table include the name of the question group (e.g., `demographics / age`). |
 | Show HXL tags                  | Display <a href="https://support.kobotoolbox.org/question_options.html#hxl">Humanitarian Exchange Language</a> (HXL) tags if they were added to your form.           |
 
 Within the data table, you can click a column header and select <i class="k-icon-qt-hidden"></i> **Hide field** to remove fields you do not need, or <i class="k-icon-freeze"></i> **Freeze field** to keep a frequently used field visible while you scroll.
@@ -103,7 +103,7 @@ To open a submission, click <i class="k-icon-view"></i> **View** in the correspo
 The submission window displays all responses and includes the following options:
 
 - View data in [any form language](https://support.kobotoolbox.org/collecting_data_multiple_languages.html).
-- Display [XML values](https://support.kobotoolbox.org/glossary.html#xml-value) next to each question.
+- Display [question names](https://support.kobotoolbox.org/glossary.html#question-name) next to each question.
 - **View** and **Edit** the submission as a [web form](https://support.kobotoolbox.org/editing_deleting_data.html).
 - **Duplicate** the submission.
 - <i class="k-icon-print"></i> **Print** the submission.

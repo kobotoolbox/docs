@@ -21,7 +21,7 @@ For larger or more complex multilingual forms, XLSForm is often the more efficie
   To learn more about setting up translations in XLSForm, see <a href="https://support.kobotoolbox.org/language_xls.html">Adding translations in XLSForm</a>.
 </p>
 
-Most elements displayed to respondents can be translated. These include **question labels, hints, choice labels, constraint messages**, and **required messages.** Elements that define the structure of the form, such as [data column names](https://support.kobotoolbox.org/glossary.html#data-column-name) and [XML values](https://support.kobotoolbox.org/glossary.html#xml-value), cannot be translated and should remain in the language you use for form development and data analysis.
+Most elements displayed to respondents can be translated. These include **question labels, hints, choice labels, constraint messages**, and **required messages.** Elements that define the structure of the form, such as [question names](https://support.kobotoolbox.org/glossary.html#question-name) and [choice names](https://support.kobotoolbox.org/glossary.html#choice-name), cannot be translated and should remain in the language you use for form development and data analysis.
 
 <p class="note">
   <strong>Note:</strong> XLSForm makes it easy to add translations in bulk using machine translation or online translation tools. Machine translations should always be reviewed by a fluent speaker to ensure accuracy, cultural appropriateness, and correct context. This helps maintain the quality and reliability of your translated content.
@@ -75,7 +75,7 @@ To view your data table in a different language:
 
 1. In your project, go to **DATA > Table.**
 2. In the top right corner, click <i class="k-icon-settings"></i> **Display Options.**
-3. Under **Display labels or XML values?**, select the language you want to use.
+3. Under **Column headers**, select the language you want to use.
 
 ![Display options table view](images/collecting_data_multiple_languages/table_view.png)
 
@@ -117,6 +117,6 @@ To export your data report in a different language:
   <strong>Note:</strong> All form data is exported in the selected language, regardless of the language used for data collection, except for open text responses.
 </p>
 
-You can also view or export your data using [XML values](https://support.kobotoolbox.org/glossary.html#xml-value). **XML values are not translated** and are usually generated in the language used during form development. 
+You can also view or export your data using [question and choice names](https://support.kobotoolbox.org/glossary.html#question-name). **Question and choice names are not translated** and are usually generated in the language used during form development. 
 
-Using XML values is recommended for analysis, as these provide short, consistent variable names and coded values that **remain consistent across translations**, regardless of the language used by respondents.
+Using question and choice names is recommended for analysis, as these provide short, consistent variable names and coded values that **remain consistent across translations**, regardless of the language used by respondents.

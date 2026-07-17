@@ -62,9 +62,9 @@ You can export your data from KoboToolbox in several formats, depending on how y
   To learn more about exporting KoboToolbox data, see <a href="https://support.kobotoolbox.org/export_download.html">Exporting and downloading your data.</a>
 </p>
 
-When exporting data for analysis in external software, it is recommended to export your data as **XML values and headers**, and to **separate multiple choice responses** into separate columns. These settings make exported data easier to process and analyze. 
+When exporting data for analysis in external software, it is recommended to export your data as **Question & choice names**, and to **separate multiple choice responses** into separate columns. These settings make exported data easier to process and analyze. 
 
-If you are sharing raw data with non-technical audiences, **exporting labels** instead of **XML values and headers** may be more user-friendly. Labels can also be exported in multiple languages.
+If you are sharing raw data with non-technical audiences, **exporting Question & choice labels** instead of **Question & choice names** may be more user-friendly. Labels can also be exported in multiple languages.
 
 Other export settings, such as storing date and number responses as text or including data from all form versions, depend on your analysis needs and preferences.
 

@@ -18,7 +18,7 @@ To learn more about formatting XML or GeoJSON files, see <a href="https://xlsfor
 </p>
 
 If you are using a CSV file for your option choices, it should contain at least two columns: `name` and `label`. 
-* The `name` column represents the [XML value](https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices) for your option choice.
+* The `name` column represents the [choice name](https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices) for your option choice.
 * The `label` column represents the choice label as it is displayed in your form. 
 
 **External CSV file**

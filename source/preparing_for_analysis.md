@@ -33,7 +33,7 @@ Asking the right questions to the right people improves data quality and reduces
 
 ## Anticipating the format of your data exports
 
-The way you define [question names](https://support.kobotoolbox.org/glossary.html#data-column-name) and [choice names](https://support.kobotoolbox.org/glossary.html#xml-value) affects how easy your data is to work with after export. **Question names** become column names in your exported dataset, while **choice names** represent response values for select questions.
+The way you define [question names](https://support.kobotoolbox.org/glossary.html#question-name) and [choice names](https://support.kobotoolbox.org/glossary.html#choice-name) affects how easy your data is to work with after export. **Question names** become column names in your exported dataset, while **choice names** represent response values for select questions.
 
 For best results, follow the recommendations below.
 
