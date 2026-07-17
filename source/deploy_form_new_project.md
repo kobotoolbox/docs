@@ -70,7 +70,7 @@ Changes that can affect your data structure include:
 - **Changing a question type while keeping the same question name**: This can create inconsistent data in the same column and lead to errors (e.g., in the **DATA > Reports** view).
 - **Moving questions into or out of groups**: KoboToolbox will treat these questions as new variables and create new columns in the data table.
 - **Removing choices from a choice list**: Previous submissions may still contain those choice values, but they may no longer have an associated label in the form.
-- **Adding new choices to a Select one or Select many question**: Make sure each new choice has a unique [XML value](https://support.kobotoolbox.org/glossary.html#xml-value) within a given choice list.
+- **Adding new choices to a Select one or Select many question**: Make sure each new choice has a unique [choice name](https://support.kobotoolbox.org/glossary.html#choice-name) within a given choice list.
 - **Deleting a question that is used elsewhere in the form**: If the question is referenced in a calculation, relevance condition, constraint, or another expression, you will also need to update those references.
 - **Changing question or choice labels**: Does not affect the data structure if the question or choice name stays the same, but previously collected data will use the updated label.
 - **Changing the meaning of existing choice values**: Changing choice names or labels can make data inconsistent across form versions and lead to misinterpretation. For example, this can happen if you reverse the meaning of values such as `1 = Yes` and `0 = No`, or change the direction of a Likert scale.
@@ -90,9 +90,9 @@ Changes to a form can also affect how older submissions behave when you edit the
 
 <details>
 <summary><strong>Error when deploying: Choice names must be unique for each choice list</strong></summary>
-This error means that two or more choices in the same choice list have the same <a href="https://support.kobotoolbox.org/glossary.html#xml-value">XML value (or choice name)</a>.
+This error means that two or more choices in the same choice list have the same <a href="https://support.kobotoolbox.org/glossary.html#choice-name">choice name</a>.
 <br><br>
-If you are using the <strong>Formbuilder</strong>, check the <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML values</a> that you have set manually for each option choice to ensure that each XML value is unique within a given choice list.
+If you are using the <strong>Formbuilder</strong>, check the <a href="https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices">choice names</a> that you have set manually for each option choice to ensure that each choice name is unique within a given choice list.
 <br><br>
 If you cannot identify which choice is causing the problem, <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox">download the form</a> as an <strong>XLSForm</strong> and check the <code>choices</code> sheet to find the duplicate value more easily. The error message will usually provide the row number in the <code>choices</code> sheet that is causing the error.
 </details>
