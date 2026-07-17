@@ -11,7 +11,7 @@ Before getting started, you will need to [install and configure](https://support
 This article explains how to use KoboCollect for data collection, including downloading forms, completing and editing submissions, sending finalized forms, deleting saved or blank forms, and troubleshooting common issues.
 
 <p class="note">
-For more information about the KoboCollect app and recommended devices, see <a href="https://support.kobotoolbox.org/kobocollect_on_android_latest.html">Setting up the KoboCollect app</a>.
+    Looking for instructions to share with data collectors? Use our <a href="https://kobotoolbox.github.io/kobocollect_instructions/">KoboCollect Instructions Generator</a> to generate instructions based on your project’s form management <a href="https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings">settings</a>.
 </p>
 
 ## Downloading forms
