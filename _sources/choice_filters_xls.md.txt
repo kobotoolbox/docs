@@ -1,5 +1,5 @@
 # Adding choice filters in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/choice_filters_xls.md" class="reference">4 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/168030986d249d082fd743aaa477417142d5fc1b/source/choice_filters_xls.md" class="reference">17 Jul 2026</a>
 
 Choice filters create dynamic forms where options in one question depend on the answer to a previous question. This streamlines data collection by presenting only relevant choices, improving survey efficiency and accuracy. 
 
@@ -110,6 +110,7 @@ Examples of advanced choice filter expressions in XLSForm include:
 | Choice filter | Description |
 |:---------------|:------------|
 | `selected(${parent_question}, name)` | Display only responses that were selected in a previous `parent_question`. |
+| `not(selected(${parent_question}, name))` | Display only responses that were not selected in a previous `parent_question`. |
 | `filter = 'outdoors' and include = 'yes'` | Combine choice filter expressions so both conditions must apply for the choice to be displayed. |
 | `name != 'none'` | Exclude the <strong>None</strong> option from a choice list. |
 | `selected(${Q1}, name) or name='none'` | Include choices selected in a previous question as well as a <strong>None</strong> option (even if not selected previously). |
