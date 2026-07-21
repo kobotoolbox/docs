@@ -1,5 +1,5 @@
 # Creating a KoboToolbox account
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3f98ef1e3a2fac6bfbeb92b4af9c7fefb28d8d41/source/creating_account.md" class="reference">7 Jul 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3eee2cccd0175276111387ed79d9858f86c2fcc9/source/creating_account.md" class="reference">21 Jul 2026</a>
 
 Most users access KoboToolbox by creating an account on one of our public servers. Users can choose between:
 - The **Global KoboToolbox Server**, used by most KoboToolbox users.
