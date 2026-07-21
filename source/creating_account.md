@@ -1,92 +1,145 @@
-# Creating an account on KoboToolbox
+# Creating a KoboToolbox account
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3f98ef1e3a2fac6bfbeb92b4af9c7fefb28d8d41/source/creating_account.md" class="reference">7 Jul 2025</a>
 
+Most users access KoboToolbox by creating an account on one of our public servers. Users can choose between:
+- The **Global KoboToolbox Server**, used by most KoboToolbox users.
+- The **European Union KoboToolbox Server**, hosted in Ireland for organizations that require or prefer data hosting in the European Union (EU).
 
-The first step for all users when getting started with **KoboToolbox** is to
-create an account. This article will guide you through the steps for creating an
-account and signing in to your account.
+This article explains how to create and activate a KoboToolbox account on one of our public servers.
 
-## How to access KoboToolbox
+<p class="note">
+<strong>Note:</strong>
+    Some large organizations use a private KoboToolbox server. If your organization has a private server, create your account using the server URL provided by your organization.
+</p>
 
-There are three ways to access **KoboToolbox**:
-
-1. **Public servers**: Most users access **KoboToolbox** using one of the public
-   servers listed on the [Sign up page](https://www.kobotoolbox.org/sign-up/).
-   The **Global KoboToolbox Server** is used by the majority of our users. The
-   **European Union KoboToolbox Server** is hosted in Ireland and is used by
-   organizations that require or prefer data hosting in the European Union (EU).
-1. **Private servers**: Many large organizations have their own private
-   KoboToolbox server. If your organization has a private server, you can access
-   your account via your organization's server URL.
-1. **Install KoboToolbox on your own server**: Advanced users can install
-   **KoboToolbox** on their own server or on a local computer or device using Docker. For more
-   details on how to install your own instance of **KoboToolbox**,
-   [visit our kobo-install repository on GitHub](https://github.com/kobotoolbox/kobo-install).
 
 ## Creating an account
 
-- To create a new account on **KoboToolbox**, go to the
-  [KoboToolbox Home page](https://kobotoolbox.org) and click **SIGN UP** on the
-  menu. This will take you to the
-  [Sign in or create an account page](https://www.kobotoolbox.org/sign-up/) of
-  the website.
-
-- The two public KoboToolbox servers are listed on this page.
-
-![KoboToolbox servers](images/creating_account/servers-2023.png)
-
-The **Global KoboToolbox Server** is used by the majority of our users.
-
-The **European Union KoboToolbox Server** is hosted in Ireland and is used by
-organizations that require or prefer data hosting in the EU.
+To create a free KoboToolbox account:
+1. Go to [www.kobotoolbox.org/sign-up](https://www.kobotoolbox.org/sign-up/).
+2. Select the server you want to use and click **Create an account.**
+3. Enter your full name, username, email address, country, sector, organization type, newsletter preferences, and password.
+4. Click **CREATE ACCOUNT.**
+5. Check your inbox for an account activation email, and open the activation link to activate your account.
 
 <p class="note">
-  <b>Important note</b>: It is not possible to share projects and data between the two servers. This means that all users working on a shared project must use the same server to access the project.
+<strong>Note:</strong>
+    Make sure your email address is correct. You will not receive the activation link if the address contains an error. You can use the same email address for multiple KoboToolbox accounts.
 </p>
 
-- Click **CREATE AN ACCOUNT** on the server of your choice.
-- On the **Create an account** page, enter the details on the form and click
-  **CREATE ACCOUNT**.
+After activating your account, you will automatically have access to the free [KoboToolbox Community Plan](https://www.kobotoolbox.org/pricing/). You can [upgrade your plan](https://support.kobotoolbox.org/account_settings.html#plans) at any time if you need additional storage, submissions, or features.
 
 <p class="note">
-  Make sure to keep your password in a safe place to avoid losing it. <br />
-  The username must be all lowercase letters, without any spaces or symbols.
+    <strong>Note:</strong>
+  Users from for-profit organizations can contact KoboToolbox for information about for-profit pricing.
 </p>
 
-**KoboToolbox** will send you an email with a link to activate your account. If
-you did not get the activation email, check your spam folder. For more help, you
-can also read the support article
-[Didn’t Receive Activation Link After Signing Up](activation_link.md).
+### Choosing the right server
 
-- Sign in to the email address you used when creating your account and click the
-  activation link sent to you. This will automatically sign you into
-  **KoboToolbox**.
+A server is the computer system where your KoboToolbox account, projects, and data are stored.
+
+KoboToolbox has two public servers:
+
+| **Server** | **Description** |
+|:---|:---|
+| **Global KoboToolbox Server** | Used by most KoboToolbox users. |
+| **European Union KoboToolbox Server** | Hosted in Ireland for organizations that require or prefer data hosting in the EU. |
+
+![KoboToolbox servers](images/creating_account/servers.png)
+
+Both servers have the same features. The only difference is where your account and data are hosted.
+
+<p class="note">
+<strong>Note:</strong>
+    Projects and data cannot be shared between the Global and European Union servers. All users collaborating on a project must have accounts on the same server.
+</p>
+
+### Creating a username
+
+Your username must:
+- Contain between 2 and 30 characters.
+- Start with a lowercase letter.
+- Use only lowercase letters, numbers, and underscores.
+- Not contain spaces or special characters, such as <code>~</code>, <code>!</code>, <code>@</code>, <code>#</code>, <code>$</code>, <code>%</code>, <code>^</code>, <code>&</code>, <code>*</code>, or <code>?</code>.
+
+If the username you entered is already registered, you will need to choose a different username.
+
+### Activating your account
+
+After you create your account, KoboToolbox will send an activation link to the email address you provided. You must open the link **within 72 hours** to activate your account.
+
+If the link has expired, try signing in with the username and password you created. KoboToolbox should automatically send you a new activation email.
+
+If you do not receive the email, check for the following issues:
+
+- The email address entered during registration contains an error.
+- The activation email is in your spam or junk folder.
+- Your organization’s email system is blocking messages from KoboToolbox.
 
 ## Signing back in to KoboToolbox
 
-Use one of the following links to sign back in to your account with your
-_username_ and _password_:
+To sign back into KoboToolbox, use the sign-in page for the server where you created your account:
 
-| Server                            | URL                                                                           |
-| :-------------------------------- | :---------------------------------------------------------------------------- |
-| Global KoboToolbox Server         | <a href="https://kf.kobotoolbox.org" class="reference">kf.kobotoolbox.org</a> |
-| European Union KoboToolbox Server | <a href="https://eu.kobotoolbox.org" class="reference">eu.kobotoolbox.org</a> |
+| **Server** | **Sign-in URL** |
+|:---|:---|
+| Global KoboToolbox Server | [kf.kobotoolbox.org](https://kf.kobotoolbox.org/) |
+| European Union KoboToolbox Server | [eu.kobotoolbox.org](https://eu.kobotoolbox.org/) |
+
+Enter the username and password you created during registration.
+
+## Deleting your KoboToolbox account
+
+You can permanently delete your KoboToolbox account at any time.
+
+Before deleting your account, you must delete all projects you own or transfer their ownership to another user.
+
+To delete your account:
+- Delete or transfer ownership of all projects owned by your account.
+- Open **Account Settings.**
+- Go to the **Profile tab.**
+- Click **Delete account.**
+- Enter your username to confirm the deletion.
+
+The **Delete account** button will remain disabled while your account owns any projects.
+
+<p class="note">
+<strong>Note:</strong>
+    Deleting your account is permanent and cannot be undone.
+</p>
 
 ## Troubleshooting
 
-1. Make sure to follow the guidelines listed below to create a valid username:
-   - The length of a username can range from 2 to 30 characters.
-   - A username could be made up of a combination of lower-case characters,
-     numbers, and underscores. Use of special characters (such as `~`, `!`, `@`,
-     `#`, `$`, `%`, `^`, `&`, `*`, `?`) are not valid.
-   - The username must start with a lower-case character.
-2. You may be required to choose another username (despite following all the
-   points listed above) if the username has already been registered to another
-   user.
-3. [Choose a strong password](https://support.microsoft.com/en-us/windows/create-and-use-strong-passwords-c5cebb49-8c53-4f5e-2bc4-fe357ca048eb)
-   so that your account and sensitive data is less vulnerable to attack or
-   abuse.
-4. Store your username and password in a safe place, such as a password manager,
-   so that you don't lose access to your account.
-5. Ensure the entered email address is correct otherwise you will not receive
-   the activation link.
+<details>
+<summary><strong>Did not receive activation link</strong></summary>
+If you did not receive the email with an activation link, check for the following issues:
+<ul>
+  <li>The email address entered during registration contains an error.</li>
+  <li>The activation email is in your spam or junk folder.</li>
+  <li>Your organization's email system is blocking messages from KoboToolbox.</li>
+</ul>
+
+If you still cannot activate your account, contact <a href="support@kobotoolbox.org">support@kobotoolbox.org</a>.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Activation link has expired</strong></summary>
+If your activation link has expired, try signing in with the username and password you created. KoboToolbox should automatically send you a new activation email. 
+</details>
+
+<br>
+
+<details>
+<summary><strong>Cannot sign in to account</strong></summary>
+If you are unable to sign in to your account, check that:
+<ul>
+    <li>Your username and password are correct.</li>
+    <li>You are signing in to <strong>the server where you created your account.</strong></li>
+    <li>Your account has been activated.</li>
+</ul>
+An account created on the <strong>Global KoboToolbox Server</strong> cannot be used to sign in to the <strong>European Union KoboToolbox Server</strong>, and vice versa.
+</details>
+
+<br>
+
