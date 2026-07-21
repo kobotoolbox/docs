@@ -118,7 +118,7 @@ If you did not receive the email with an activation link, check for the followin
   <li>Your organization's email system is blocking messages from KoboToolbox.</li>
 </ul>
 
-If you still cannot activate your account, contact <a href="support@kobotoolbox.org">support@kobotoolbox.org</a>.
+If you still cannot activate your account, contact <a href="mailto:support@kobotoolbox.org">support@kobotoolbox.org</a>.
 </details>
 
 <br>
