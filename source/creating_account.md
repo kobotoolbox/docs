@@ -30,6 +30,7 @@ To create a free KoboToolbox account:
 After activating your account, you will automatically have access to the free [KoboToolbox Community Plan](https://www.kobotoolbox.org/pricing/). You can [upgrade your plan](https://support.kobotoolbox.org/account_settings.html#plans) at any time if you need additional storage, submissions, or features.
 
 <p class="note">
+    <strong>Note:</strong>
   Users from for-profit organizations can contact KoboToolbox for information about for-profit pricing.
 </p>
 
