@@ -4,7 +4,7 @@
 <iframe src="https://www.youtube.com/embed/7TrVmKIuCa8?si=QCr1IzvDXaASEZg7" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-KoboToolbox allows you to add media, including **images**, **audio files**, and **videos**, to notes, questions, and choices in your form. Adding media can increase user engagement and make forms more accessible for users with visual impairments or literacy barriers. 
+KoboToolbox allows you to add media, including **images**, **audio files**, and **videos**, to notes, questions, and choices in your form. Adding media can increase user engagement and make forms more accessible for users with visual impairments or literacy barriers. You can also use this approach to add your organization’s logo to your form.
 
 Form media works with both [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) and [web forms](https://support.kobotoolbox.org/data_through_webforms.html). The following types of media files are currently supported:
 
