@@ -180,7 +180,7 @@
           
   <section id="adding-calculations-in-xlsform">
 <h1>Adding calculations in XLSForm<a class="headerlink" href="#adding-calculations-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/calculations_xls.md" class="reference">23 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/76d661a8896485c477e44f263277fe07eaea92df/source/calculations_xls.md" class="reference">22 Jul 2026</a></p>
 <p>Calculations can be used inside your form to derive new variables, build advanced form logic, and display results to respondents during data collection.</p>
 <p>Calculations are processed within the form, helping save time during data analysis. The results are stored as new columns in the final dataset and can be used throughout the form to apply <a class="reference external" href="https://support.kobotoolbox.org/skip_logic_xls.html">skip logic</a>, set <a class="reference external" href="https://support.kobotoolbox.org/constraints_xls.html">constraints</a>, or display <a class="reference external" href="https://support.kobotoolbox.org/form_logic_xls.html#question-referencing">dynamic content</a> in question labels and notes.</p>
 <p>This article explains how to add calculations in XLSForm, covering both basic arithmetic and more advanced expressions.</p>
@@ -306,25 +306,28 @@ For hands-on practice with calculations in XLSForm, see KoboToolbox Academy’s 
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">concat(${first},</span> <span class="pre">&quot;</span> <span class="pre">&quot;,</span> <span class="pre">${middle},</span> <span class="pre">&quot;</span> <span class="pre">&quot;,</span> <span class="pre">${last})</span></code></p></td>
 <td class="text-left"><p>Create a single string with a respondent’s full name.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">jr:choice-name(${question1},</span> <span class="pre">'${question1}')</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">concat(substr(today(),</span> <span class="pre">0,</span> <span class="pre">4),</span> <span class="pre">substr(today(),</span> <span class="pre">5,</span> <span class="pre">7),</span> <span class="pre">substr(today(),</span> <span class="pre">8,</span> <span class="pre">10),</span> <span class="pre">substr(now(),</span> <span class="pre">11,</span> <span class="pre">13),</span> <span class="pre">substr(now(),</span> <span class="pre">14,</span> <span class="pre">16),</span> <span class="pre">substr(now(),</span> <span class="pre">17,</span> <span class="pre">19))</span></code></p></td>
+<td class="text-left"><p>Create a unique serial number based on date and time.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">jr:choice-name(${question1},</span> <span class="pre">'${question1}')</span></code></p></td>
 <td class="text-left"><p>Return a choice’s label, in the current language, from the choice list.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">translate(${full_name},</span> <span class="pre">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ</span> <span class="pre">&quot;,</span> <span class="pre">&quot;abcdefghijklmnopqrstuvwxyz_&quot;)</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">translate(${full_name},</span> <span class="pre">&quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ</span> <span class="pre">&quot;,</span> <span class="pre">&quot;abcdefghijklmnopqrstuvwxyz_&quot;)</span></code></p></td>
 <td class="text-left"><p>Convert uppercase letters to lowercase and spaces to underscores.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">substr(${question},</span> <span class="pre">1,</span> <span class="pre">2)</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">substr(${question},</span> <span class="pre">1,</span> <span class="pre">2)</span></code></p></td>
 <td class="text-left"><p>Keep only the 1st letter or number in a string.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">int(random()*10)</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">int(random()*10)</span></code></p></td>
 <td class="text-left"><p>Generate a random number between 0 and 10.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">selected-at(${gps},</span> <span class="pre">0)</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">selected-at(${gps},</span> <span class="pre">0)</span></code></p></td>
 <td class="text-left"><p>Isolate latitude from GPS coordinates.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">selected-at(${gps},</span> <span class="pre">1)</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">selected-at(${gps},</span> <span class="pre">1)</span></code></p></td>
 <td class="text-left"><p>Isolate longitude from GPS coordinates.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">if(regex(${id},</span> <span class="pre">'^ML-'),</span> <span class="pre">'yes',</span> <span class="pre">'no')</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">if(regex(${id},</span> <span class="pre">'^ML-'),</span> <span class="pre">'yes',</span> <span class="pre">'no')</span></code></p></td>
 <td class="text-left"><p>Create a binary variable that takes <code class="docutils literal notranslate"><span class="pre">yes</span></code> if the respondent ID starts with “ML-”.</p></td>
 </tr>
 </tbody>
