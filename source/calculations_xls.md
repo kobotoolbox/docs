@@ -1,5 +1,5 @@
 # Adding calculations in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/calculations_xls.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/76d661a8896485c477e44f263277fe07eaea92df/source/calculations_xls.md" class="reference">22 Jul 2026</a>
 
 Calculations can be used inside your form to derive new variables, build advanced form logic, and display results to respondents during data collection.
 
