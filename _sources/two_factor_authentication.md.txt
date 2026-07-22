@@ -1,5 +1,5 @@
-# Setting up two-factor authentication in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/two_factor_authentication.md" class="reference">23 Apr 2026</a>
+# Setting up two-factor authentication
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/22d10d77eeee1b09ba05a3f5b242a2a3e589aadd/source/two_factor_authentication.md" class="reference">22 Jul 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/4BhF0eva_d4?si=Ha6XbjiSjfPEL-CX" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
