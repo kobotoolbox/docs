@@ -15,7 +15,7 @@ To reset your password:
 3. Enter the email address associated with your account.
 4. Click **Reset Password.**
 
-![Resent password link](images/reset_password/forget.png)
+![Reset password link](images/resetting_passwords/forget.png)
 
 KoboToolbox will send a password reset email to the address associated with your account. Open the email and follow the link to create a new password.
 
