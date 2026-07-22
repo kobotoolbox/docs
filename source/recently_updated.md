@@ -10,4 +10,4 @@
 1. [Adding calculations in XLSForm](calculations_xls.md) (22 Jul 2026)
 1. [Converting data for SPSS and Stata](converting_to_spss_and_stata.md) (22 Jul 2026)
 1. [Encrypting forms](encrypting_forms.md) (22 Jul 2026)
-1. [Data storage](data_storage.md) (22 Jul 2026)
+1. [Resetting your password](reset_password.md) (22 Jul 2026)
