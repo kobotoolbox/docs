@@ -71,6 +71,7 @@ Examples of more advanced calculations include:
 | `int(today()-${date})` | Calculate days since a date. |
 | `format-date(${date}, '%b')` | Return just the month from a date. |
 | `concat(${first}, " ", ${middle}, " ", ${last})` | Create a single string with a respondent’s full name. |
+| `concat(substr(today(), 0, 4), substr(today(), 5, 7), substr(today(), 8, 10), substr(now(), 11, 13), substr(now(), 14, 16), substr(now(), 17, 19))` | Create a unique serial number based on date and time. |
 | `jr:choice-name(${question1}, '${question1}')` | Return a choice’s label, in the current language, from the choice list. |
 | `translate(${full_name}, "ABCDEFGHIJKLMNOPQRSTUVWXYZ ", "abcdefghijklmnopqrstuvwxyz_")` | Convert uppercase letters to lowercase and spaces to underscores. |
 | `substr(${question}, 1, 2)` | Keep only the 1st letter or number in a string. |
