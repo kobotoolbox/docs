@@ -1,41 +1,67 @@
-# Resetting Passwords
+# Resetting your password
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/855616c6ac4634f2dc835438697aab6869c7f11a/source/reset_password.md" class="reference">22 Sep 2023</a>
 
 
-If you have forgotten or lost your account password, KoboToolbox allows you to
-reset it easily.
+If you have forgotten or lost your KoboToolbox password, you can reset it from the login page.
+
+## Resetting your password
 
 To reset your password:
 
--   For organizations using the **Global Server**:
-    Go to
-    [kf.kobotoolbox.org](https://kf.kobotoolbox.org)
--   For organizations using the **European Union Server**: Go
-    to [eu.kobotoolbox.org](https://eu.kobotoolbox.org)
+1. Open the login page for your KoboToolbox server:
+    - **Global KoboToolbox Server**: [https://kf.kobotoolbox.org](https://kf.kobotoolbox.org)
+    - **European Union KoboToolbox Server**: [https://eu.kobotoolbox.org](https://eu.kobotoolbox.org)
+2. Click **Forgot password?** on the login form.
+3. Enter the email address associated with your account.
+4. Click **Reset Password.**
 
-![KoboToolbox login form](/images/resetting_passwords/login_form.png)
+![Resent password link](images/reset_password/forget.png)
 
--   Click **Forgot?** on the login form.
--   Enter your email address.
--   Click **Reset Password**.
+KoboToolbox will send a password reset email to the address associated with your account. Open the email and follow the link to create a new password.
 
-KoboToolbox will then send out a password reset email after your request to
-reset the password. If you didn't receive an email with the password reminder
-link, please try troubleshooting with the following:
+<p class="note">
+<strong>Note:</strong>
+   If you request a password reset from the wrong KoboToolbox server, you will not receive a password reset email. Confirm that you are using the server where your account was created. 
+</p>
 
--   Check if our password reset email landed in your spam or junk mail folder,
-    as it might have been placed there by your email provider.
--   Check if you created your account with a different email address - simply
-    click on the 'Forgot' link again and enter your alternative email address.
--   It might also be that you are requesting to reset your password on the wrong
-    server. Check the URL on your address bar to ensure you are on the server
-    where you had created your account on,
-    whether the [Global Server](https://kf.kobotoolbox.org) or the
-    [European Union Server](https://eu.kobotoolbox.org]).
+## Troubleshooting
 
-If you still have not received the email with the reset link, and you have tried
-all the troubleshooting options provided above, please send an email with the
-subject “Password reset issues” to
-[support@kobotoolbox.org](mailto:support@kobotoolbox.org) with your username,
-the email address you used to sign up, and which server you created your account
-on.
+<details>
+<summary><strong>Multiple accounts linked to an email address</strong></summary>
+    
+If multiple KoboToolbox accounts are associated with the same email address, you will receive a separate password reset email for each account.
+
+
+Each email includes the username for the account. Check the username and use the reset link in the email that matches the account you want to access.
+</details>
+
+<br>
+
+<details>
+<summary><strong>Did not receive password reset email</strong></summary>
+    
+If you do not receive the password reset email, try the following steps:
+    <ul>
+  <li><strong>Check your spam or junk folder:</strong> Your email provider may have placed the password reset email in your spam or junk folder.</li>
+  <li><strong>Try another email address:</strong> You may have created your account with a different email address. Try again with another email address you may have used.</li>
+  <li><strong>Check which KoboToolbox server you are in:</strong> KoboToolbox accounts are specific to the server where they were created. Check the URL in your browser's address bar and confirm that you are requesting the password reset from the correct server.</li>
+</ul>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>Contacting KoboToolbox support</strong></summary>
+
+If you have tried all the troubleshooting steps above and still have not received the password reset email, contact <code>support@kobotoolbox.org</code>. 
+
+Use <strong>Password reset issues</strong> as the email subject and include:
+<ul>
+  <li>Your username</li>
+  <li>The email address you used to create your account</li>
+  <li>The KoboToolbox server where you created your account</li>
+</ul>
+</details>
+
+<br>
