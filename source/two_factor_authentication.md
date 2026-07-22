@@ -1,4 +1,4 @@
-# Setting up two-factor authentication in KoboToolbox
+# Setting up two-factor authentication
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/two_factor_authentication.md" class="reference">23 Apr 2026</a>
 
 
