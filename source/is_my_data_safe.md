@@ -1,4 +1,4 @@
-# KoboToolbox data security measures: Keeping your data safe
+# KoboToolbox data security measures
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f7c0f5afa58cad4b40bd6075209daef21a83ee6b/source/is_my_data_safe.md" class="reference">9 Oct 2025</a>
 
 
