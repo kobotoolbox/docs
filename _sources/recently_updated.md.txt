@@ -3,6 +3,7 @@
 
 1. [﻿Importing forms manually into KoboCollect](transferring_forms.md) (22 Jul 2026)
 1. [KoboToolbox data security measures](is_my_data_safe.md) (22 Jul 2026)
+1. [HIPAA compliance](hipaa_compliance.md) (22 Jul 2026)
 1. [Converting data for SPSS and Stata](converting_to_spss_and_stata.md) (22 Jul 2026)
 1. [Encrypting forms](encrypting_forms.md) (22 Jul 2026)
 1. [Creating a KoboToolbox account](creating_account.md) (21 Jul 2026)
@@ -10,4 +11,3 @@
 1. [Using XLSForm with KoboToolbox](xlsform_with_kobotoolbox.md) (17 Jul 2026)
 1. [Adding choice filters in XLSForm](choice_filters_xls.md) (17 Jul 2026)
 1. [Mapping your GPS data](mapping_gps.md) (17 Jul 2026)
-1. [Preparing your form for data analysis](preparing_for_analysis.md) (17 Jul 2026)
