@@ -1,4 +1,4 @@
-# Encrypting Forms
+# Encrypting forms
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/179faeb3c5a17b69406b0243ab9c22f7ca86aa44/source/encrypting_forms.md" class="reference">4 Nov 2024</a>
 
 
