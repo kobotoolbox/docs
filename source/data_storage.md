@@ -1,4 +1,4 @@
-# Data Storage
+# Data storage
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/592a15ee470fa144eeac9850c6b6a648c4755306/source/data_storage.md" class="reference">11 Sep 2023</a>
 
 
