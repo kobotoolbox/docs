@@ -1,5 +1,5 @@
 # Managing account usage limits
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c3df850c3ac6d38697810851fbfe01d11f6fb8d6/source/account_usage_limits.md" class="reference">23 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/404c935402de738f89bc0740d286df8c0cfbf0d5/source/account_usage_limits.md" class="reference">23 Jul 2026</a>
 
 KoboToolbox [Community, Professional, and Teams Plans](https://www.kobotoolbox.org/pricing/) have specific usage limits for survey submissions, file storage, and automatic transcription, translation, and analysis.
 
@@ -55,11 +55,11 @@ If you exceed the storage limit, you need to reduce your file storage or increas
 To manage your storage usage, you can:
 - [Upgrade](https://www.kobotoolbox.org/pricing/) to a plan with unlimited storage.
 - Purchase a **File Storage** add-on in **Account Settings > Add-ons.**
-- Delete [media attachments](https://support.kobotoolbox.org/deleting_media.html) from projects you own until your usage is within your plan's limits, starting with larger attachments such as videos.
+- Delete [media attachments](https://support.kobotoolbox.org/managing_media_responses.html#deleting-media-files) from projects you own until your usage is within your plan's limits, starting with larger attachments such as videos.
 
 ![Manage storage](images/account_usage_limits/Exceeding_storage_and_submission_limits.png)
 
-You can also help prevent account restrictions by reducing the size of files submitted through your forms, for example by setting [upload size limits](https://support.kobotoolbox.org/photo_audio_video_file.html#lowering-image-sizes) or encouraging the use of external apps to [compress images](https://support.kobotoolbox.org/lower_file_size.html) before submission.
+You can also help prevent account restrictions by reducing the size of files submitted through your forms, for example by setting [upload size limits](https://support.kobotoolbox.org/photo_audio_video_file.html#lowering-image-sizes), lowering [audio recording quality](https://support.kobotoolbox.org/photo_audio_video_file.html#configuring-audio-quality), or configuring KoboCollect [image and video capture settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings).
 
 <p class="note">
   <strong>Note:</strong> If your account stays over the storage limit for <strong>more than 90 days</strong>, KoboToolbox will begin deleting media attachments (not submissions), starting with the oldest files. To avoid losing files, download any important media or upgrade your plan before this deadline.
