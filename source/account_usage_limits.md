@@ -97,7 +97,7 @@ To manage your automatic analysis quota, you can:
 
 - [Upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher automatic analysis quota.
 - Purchase an **Automatic analysis requests** add-on in **Account Settings > Add-ons.**
-- Delay automatic analysis until your quota renews at the start of the next billing cycle.
+- Delay analysis until your quota renews at the start of the next billing cycle.
 - Continue using manual analysis features, which remain available without a quota limit.
 
 ![Analysis add ons](images/account_usage_limits/analysis_addon.png) 
