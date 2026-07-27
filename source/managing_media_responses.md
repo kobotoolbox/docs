@@ -47,7 +47,7 @@ To download media files in bulk:
 4. Click **New Export** and wait for the export to complete.
 5. Download the generated `.zip` file from the table.
 
-In the downloaded folder, attachments are grouped by submission. Each folder name corresponds to the submission’s `_uuid`, which also appears as a column in the dataset.
+In the downloaded folder, attachments are grouped by submission. Each folder name corresponds to the submission’s `rootUuid`, which also appears as a [column](https://support.kobotoolbox.org/viewing_validating_data.html#system-generated-submission-fields) in the dataset.
 
 <p class="note">
 <strong>Note:</strong> Media exports include only questions that are present in the most recent version of the form.
