@@ -87,7 +87,7 @@ To change the base map layer:
 You can also add additional custom layers on top of your map:
 1. Open <i class="k-icon-settings"></i> <strong>Map display settings</strong>.
 2. Go to <strong>OVERLAYS</strong>.
-3. Enter a label for the layer and upload a file in CSV, KML, KMZ, WKT, or GeoJSON format.
+3. Enter a label for the layer and upload a file in CSV, KML, KMZ, or GeoJSON format.
 
 Uploaded files appear as optional layers that you can turn on or off from the map.
 
