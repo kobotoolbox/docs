@@ -1,5 +1,5 @@
 # Managing respondent-submitted media
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/managing_media_responses.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/54bb9cc0c72da589bb73217349c2d1ac2763cfae/source/managing_media_responses.md" class="reference">27 Jul 2026</a>
 
 Media files collected from respondents often contain important contextual information, such as photos, recordings, or documents that support and enrich survey data. After data collection begins, **these files become part of your project data** and need to be managed carefully.
 
