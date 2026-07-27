@@ -1,5 +1,5 @@
 # Mapping your GPS data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/bf4fb746ec486d3d5d9efefb0291e17dbc913665/source/mapping_gps.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1804cad7153d77e2e94e5c263e11df06a376d745/source/mapping_gps.md" class="reference">27 Jul 2026</a>
 
 <iframe src="https://www.youtube.com/embed/kefdxYOcgls?si=uY_tijozM5cpMVb3" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -87,7 +87,7 @@ To change the base map layer:
 You can also add additional custom layers on top of your map:
 1. Open <i class="k-icon-settings"></i> <strong>Map display settings</strong>.
 2. Go to <strong>OVERLAYS</strong>.
-3. Enter a label for the layer and upload a file in CSV, KML, KMZ, WKT, or GeoJSON format.
+3. Enter a label for the layer and upload a file in CSV, KML, KMZ, or GeoJSON format.
 
 Uploaded files appear as optional layers that you can turn on or off from the map.
 
