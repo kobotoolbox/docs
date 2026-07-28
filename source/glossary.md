@@ -328,7 +328,7 @@ Operations used in form calculations or expressions to process data, such as per
 The European Union’s data protection regulation that sets rules for how personal data must be collected, stored, and processed, including requirements for privacy, security, and user consent when handling data in KoboToolbox.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/gdpr.html">General Data Protection Regulation (GDPR)</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/gdpr.html">Compliance with GDPR</a>.
 </p>
 
 ---
