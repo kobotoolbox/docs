@@ -1,5 +1,5 @@
 # Compliance with HIPAA
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/385fe7748c93018dba90b45e187fdeb0f3b4598c/source/hipaa_compliance.md" class="reference">22 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/713766f1e5111103d023ea41c43d44fac7c1a23d/source/hipaa_compliance.md" class="reference">28 Jul 2026</a>
 
 The Health Insurance Portability and Accountability Act (HIPAA) is a United States law that establishes requirements for protecting certain health information. HIPAA may apply to covered entities, business associates, and other organizations that handle protected health information (PHI). PHI can include information about a person’s health, healthcare, or payment for healthcare.
 
