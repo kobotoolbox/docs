@@ -60,6 +60,11 @@ Available web form modes include:
 | Embeddable web form code | Provides HTML code to embed the form on your own website. |
 | View only | Opens the form for previewing and testing without allowing submissions. |
 
+<p class="note">
+<strong>Note:</strong>
+    When using the <strong>Online-Only (single submission)</strong> or <strong>Online-Only (once per respondent)</strong> data collection modes, you can add a <a href="https://support.kobotoolbox.org/custom_submission_message.html">custom message</a> in XLSForm to display after a successful submission.
+</p>
+
 ### Printing a web form
 
 You can also **print a web form** to share it during form development or use it for paper-based data collection. To do so: 
