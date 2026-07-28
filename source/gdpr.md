@@ -1,5 +1,5 @@
 # Compliance with GDPR
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2c18fa51ed6877e610d5a81c722f8010df110183/source/gdpr.md" class="reference">14 Mar 2023</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9d730c739794458b0240c86d5652dbd1a0d8bd57/source/gdpr.md" class="reference">28 Jul 2026</a>
 
 
 The General Data Protection Regulation (GDPR) is a European Union law that governs how personal data is collected, processed, stored, and protected. It also gives individuals rights over their personal data.
