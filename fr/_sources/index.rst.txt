@@ -122,6 +122,7 @@ Explorez nos ressources pour vous guider à travers les fonctionnalités de Kobo
   select_from_map_xls
   select_from_image
   dynamic_data_attachment
+  custom_submission_message
   library_locking
   import_collection
 
