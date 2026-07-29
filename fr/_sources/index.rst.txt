@@ -40,6 +40,7 @@ Explorez nos ressources pour vous guider à travers les fonctionnalités de Kobo
   activation_link
   reset_password
   account_settings
+  account_usage_limits
   two_factor_authentication
 
 .. raw:: html

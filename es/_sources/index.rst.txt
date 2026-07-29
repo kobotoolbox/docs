@@ -40,6 +40,7 @@ Explora orientación práctica sobre los temas y funciones de KoboToolbox
   activation_link
   reset_password
   account_settings
+  account_usage_limits
   two_factor_authentication
 
 .. raw:: html
