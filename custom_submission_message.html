@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Collecting data using web forms &#8212; KoboToolbox  documentation</title>
+    <title>Adding a custom submission message &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -25,8 +25,6 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Setting up the KoboCollect app" href="kobocollect_on_android_latest.html" />
-    <link rel="prev" title="Deploying forms for data collection" href="deploy_form_new_project.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -82,7 +80,7 @@
               <a
                 role="menuitem"
                 class="language-picker__option language-picker__option--active"
-                href="data_through_webforms.html"
+                href="custom_submission_message.html"
                 lang="en"
                 hreflang="en"
                 aria-current="page"
@@ -95,7 +93,7 @@
               <a
                 role="menuitem"
                 class="language-picker__option "
-                href="es/data_through_webforms.html"
+                href="es/custom_submission_message.html"
                 lang="es"
                 hreflang="es"
                 
@@ -108,7 +106,7 @@
               <a
                 role="menuitem"
                 class="language-picker__option "
-                href="fr/data_through_webforms.html"
+                href="fr/custom_submission_message.html"
                 lang="fr"
                 hreflang="fr"
                 
@@ -165,7 +163,7 @@
   <script>$('#searchbox').show(0);</script>
 </section>
 
-<div class="page page--has-sidebar " id="data_through_webforms">
+<div class="page page--has-sidebar " id="custom_submission_message">
   <div class="page__wrapper">
       <section class="page__content">
         
@@ -178,260 +176,133 @@
 
         <section class="page__body" role="main">
           
-  <section id="collecting-data-using-web-forms">
-<h1>Collecting data using web forms<a class="headerlink" href="#collecting-data-using-web-forms" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/22959ee8b91c5f4cb42545d225dec591a0d409c0/source/data_through_webforms.md" class="reference">29 Jul 2026</a></p>
-<p>KoboToolbox web forms let you <strong>collect data directly in a web browser</strong>, without installing an app. They are browser-based versions of your form that you can use to preview and test your questionnaire or collect live data on phones, tablets, and computers.</p>
-<p>Web forms work on most modern devices, including Android devices, iPhones, iPads, laptops, and desktop computers. They are especially useful in projects where respondents complete a form through a shared link, where the data collection team uses different types of devices, or where you want to enter data on a computer instead of through an app.</p>
-<p>Web forms also support <strong>offline data collection</strong> once the form has been opened and cached in the browser. They support all form logic set up in KoboToolbox, including skip logic and validation rules, and their appearance can be customized through different <a class="reference external" href="https://support.kobotoolbox.org/alternative_enketo.html">web form themes</a>.</p>
-<p class="note">
-<strong>Note:</strong>
- KoboToolbox web forms were previously powered by <a href="https://enketo.org">Enketo</a>, which is why they used to be called Enketo web forms in older documentation.   
-</p>
-<p>This article covers the following:</p>
+  <section id="adding-a-custom-submission-message">
+<h1>Adding a custom submission message<a class="headerlink" href="#adding-a-custom-submission-message" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/22959ee8b91c5f4cb42545d225dec591a0d409c0/source/custom_submission_message.md" class="reference">29 Jul 2026</a></p>
+<p>Custom submission messages allow you to display a tailored message after a respondent successfully submits a form.</p>
+<p>Custom submission messages can be used to:</p>
 <ul class="simple">
-<li><p>Sharing KoboToolbox web forms for data collection</p></li>
-<li><p>Choosing the right web form mode</p></li>
-<li><p>Collecting data and saving drafts in the browser</p></li>
-<li><p>Using web forms offline</p></li>
-<li><p>Customizing web form links for specific use cases</p></li>
-<li><p>Troubleshooting common issues</p></li>
+<li><p><strong>Confirm event registrations:</strong> For example, to confirm registration, provide event details, and include a calendar download link.</p></li>
+<li><p><strong>Provide conditional incentives:</strong> To display a message based on a respondent’s eligibility, such as a coupon code or thank you message.</p></li>
+<li><p><strong>Support follow-up workflows:</strong> To display a ticket number, a summary of submitted data, or a link to the next step in a process.</p></li>
 </ul>
-<section id="sharing-web-forms-for-data-collection">
-<h2>Sharing web forms for data collection<a class="headerlink" href="#sharing-web-forms-for-data-collection" title="Link to this heading">¶</a></h2>
-<p>Once your project is ready for data collection, you can easily share a link with respondents or data collectors to input data.</p>
-<p>To share a link with respondents:</p>
+<p>This feature must be configured in <a class="reference external" href="https://support.kobotoolbox.org/getting_started_xlsform.html">XLSForm</a>.</p>
+<section id="configuring-a-custom-submission-message">
+<h2>Configuring a custom submission message<a class="headerlink" href="#configuring-a-custom-submission-message" title="Link to this heading">¶</a></h2>
+<p>To set up a custom submission message in XLSForm:</p>
 <ol class="arabic simple">
-<li><p>Open the <strong>FORM</strong> page and ensure your form has been <a class="reference external" href="https://support.kobotoolbox.org/deploy_form_new_project.html">deployed</a>.</p></li>
-<li><p>Under the <strong>Collect data</strong> pane, click <strong>COPY</strong> to copy the link and share it with data collectors or respondents.</p></li>
-<li><p>You can also click <strong>OPEN</strong> to launch the form in a new browser tab.</p></li>
-</ol>
-<p><img alt="Open or copy a form" src="_images/copy_open.png" /></p>
-<section id="authentication-requirement">
-<h3>Authentication requirement<a class="headerlink" href="#authentication-requirement" title="Link to this heading">¶</a></h3>
-<p>By default, deployed projects <a class="reference external" href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require users to sign in</a> before they can open a web form or submit data.</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">settings</span></code> sheet, add three columns: <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">namespaces</span></code>, and <code class="docutils literal notranslate"><span class="pre">attribute::kobo:submitMessage</span></code></p>
 <ul class="simple">
-<li><p>To keep authentication required, share the project with specific KoboToolbox users and give them <strong>Add submissions</strong> permission.</p></li>
-<li><p>To allow anyone with the link to submit data without a username and password, you can disable the authentication requirement in the <strong>Collect data</strong> pane by toggling the “Allow submissions to this form to this form without a username and password” option.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column, enter <code class="docutils literal notranslate"><span class="pre">data</span></code></p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">namespaces</span></code> column, enter <code class="docutils literal notranslate"><span class="pre">kobo=&quot;http://kobotoolbox.org/xforms&quot;</span></code></p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">attribute::kobo:submitMessage</span></code> column, enter <code class="docutils literal notranslate"><span class="pre">/data/submitMessage</span></code>.</p></li>
 </ul>
-<p class="note">
-To learn more about form sharing permissions, see <a href="https://support.kobotoolbox.org/project_sharing_settings.html">Sharing projects with project-level settings</a> and <a href="https://support.kobotoolbox.org/managing_permissions.html">Sharing projects with user-level permissions</a>.
-</p>
-</section>
-<section id="data-collection-modes">
-<h3>Data collection modes<a class="headerlink" href="#data-collection-modes" title="Link to this heading">¶</a></h3>
-<p>KoboToolbox provides several web form link options under the <strong>Collect data</strong> section. These options affect the link you open or share, but they do not change the form itself.</p>
-<p><img alt="Select data collection mode" src="_images/modes.png" /></p>
-<p>Available web form modes include:</p>
+</li>
+</ol>
+<p><strong>settings sheet</strong></p>
 <table class="docutils align-default">
 <thead>
-<tr class="row-odd"><th class="head text-left"><p>Data collection mode</p></th>
-<th class="head text-left"><p>Description</p></th>
+<tr class="row-odd"><th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>namespaces</p></th>
+<th class="head text-left"><p>attribute::kobo:submitMessage</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td class="text-left"><p>Online-Offline (multiple submission)</p></td>
-<td class="text-left"><p>Allows data collection online or offline and supports multiple submissions from the same device.</p></td>
+<tr class="row-even"><td class="text-left"><p>text</p></td>
+<td class="text-left"><p>kobo=”http://kobotoolbox.org/xforms”</p></td>
+<td class="text-left"><p>/data/submitMessage</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Online-Only (multiple submissions)</p></td>
-<td class="text-left"><p>Supports multiple submissions from the same device, but requires an internet connection for use.</p></td>
+<tr class="row-odd"><td class="text-left"><p>settings</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>Online-Only (single submission)</p></td>
-<td class="text-left"><p>Allows one submission at a time from the same device and can be used with a <a href="https://support.kobotoolbox.org/data_through_webforms.html#redirecting-users-to-another-webpage-after-submission">redirect link</a> after submission. Users are not prevented from reopening the link to submit data again.</p></td>
+</tbody>
+</table>
+<ol class="arabic simple" start="2">
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet, create a <code class="docutils literal notranslate"><span class="pre">calculate</span></code> question.</p>
+<ul class="simple">
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">name</span></code> column, enter <code class="docutils literal notranslate"><span class="pre">submitMessage</span></code></p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column, enter the confirmation message you wish to use.</p></li>
+</ul>
+</li>
+</ol>
+<p><strong>survey sheet</strong></p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>type</p></th>
+<th class="head text-left"><p>name</p></th>
+<th class="head text-left"><p>label</p></th>
+<th class="head text-left"><p>calculation</p></th>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Online-only (once per respondent)</p></td>
-<td class="text-left"><p>Prevents the same user on the same browser and device from submitting more than once.</p></td>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>calculate</p></td>
+<td class="text-left"><p>submitMessage</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">“Thank</span> <span class="pre">you</span> <span class="pre">for</span> <span class="pre">registering.</span> <span class="pre">Click</span> <span class="pre">[here](http://kobotoolbox.org)</span> <span class="pre">for</span> <span class="pre">more</span> <span class="pre">information</span> <span class="pre">about</span> <span class="pre">the</span> <span class="pre">event.”</span></code></p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p>Embeddable web form code</p></td>
-<td class="text-left"><p>Provides HTML code to embed the form on your own website.</p></td>
-</tr>
-<tr class="row-odd"><td class="text-left"><p>View only</p></td>
-<td class="text-left"><p>Opens the form for previewing and testing without allowing submissions.</p></td>
+<tr class="row-odd"><td class="text-left"><p>survey</p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
+<td class="text-left"><p></p></td>
 </tr>
 </tbody>
 </table>
 <p class="note">
-<strong>Note:</strong>
-    When using the <strong>Online-Only (single submission)</strong> or <strong>Online-Only (once per respondent)</strong> data collection modes, you can add a <a href="https://support.kobotoolbox.org/custom_submission_message.html">custom message</a> in XLSForm to display after a successful submission.
+  For an example of this feature in practice, download a sample XLSForm <a href="https://docs.google.com/spreadsheets/d/1CgjrpJcDX1pLmf-B-PUZ4-KFs2pPuntD/edit?usp=sharing&ouid=104272235398180261217&rtpof=true&sd=true">here</a>.
 </p>
 </section>
-<section id="printing-a-web-form">
-<h3>Printing a web form<a class="headerlink" href="#printing-a-web-form" title="Link to this heading">¶</a></h3>
-<p>You can also <strong>print a web form</strong> to share it during form development or use it for paper-based data collection. To do so:</p>
-<ol class="arabic simple">
-<li><p>Open your web form.</p></li>
-<li><p>Click the <i class="k-icon-print"></i> <strong>Print</strong> button in the top right corner.</p></li>
-</ol>
-<p>The printed version includes all questions and guidance hints, regardless of any form logic.</p>
-<p><img alt="Click print icon to print form" src="_images/print.png" /></p>
+<section id="customizing-the-submission-message">
+<h2>Customizing the submission message<a class="headerlink" href="#customizing-the-submission-message" title="Link to this heading">¶</a></h2>
+<p>You can use functions and Markdown in the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column to customize the message.</p>
+<section id="using-conditional-statements">
+<h3>Using conditional statements<a class="headerlink" href="#using-conditional-statements" title="Link to this heading">¶</a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">if()</span></code> to display different messages based on form responses.</p>
+<p>For example: <code class="docutils literal notranslate"><span class="pre">if(${eligible}</span> <span class="pre">=</span> <span class="pre">'yes',</span> <span class="pre">'You</span> <span class="pre">are</span> <span class="pre">eligible.',</span> <span class="pre">'You</span> <span class="pre">are</span> <span class="pre">not</span> <span class="pre">eligible.')</span></code></p>
 </section>
+<section id="displaying-choice-labels">
+<h3>Displaying choice labels<a class="headerlink" href="#displaying-choice-labels" title="Link to this heading">¶</a></h3>
+<p>Use <code class="docutils literal notranslate"><span class="pre">jr:choice-name()</span></code> to display the <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#label">label</a> of a selected choice instead of its <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#choice-name">choice name</a>.</p>
+<p>For example: <code class="docutils literal notranslate"><span class="pre">concat('You</span> <span class="pre">are</span> <span class="pre">registered</span> <span class="pre">for</span> <span class="pre">',</span> <span class="pre">jr:choice-name(${event},</span> <span class="pre">'${event}'))</span></code></p>
 </section>
-<section id="collecting-data-with-web-forms">
-<h2>Collecting data with web forms<a class="headerlink" href="#collecting-data-with-web-forms" title="Link to this heading">¶</a></h2>
-<p>After opening the form, users can complete it directly in their browser.</p>
-<ul class="simple">
-<li><p>If the form includes <a class="reference external" href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html">multiple languages</a>, users can change the language at the top of the form.</p></li>
-<li><p>If the form <a class="reference external" href="https://support.kobotoolbox.org/alternative_enketo.html#adding-a-web-form-theme-in-the-formbuilder">displays questions on multiple pages</a>, users can click the <i class="k-icon-qt-note"></i> <strong>three horizontal lines</strong> in the top right corner to navigate to another section.</p></li>
-</ul>
-<p><img alt="Change form language" src="_images/change_language.png" /></p>
-<p>At the end of the form, users can either save their work as a draft or submit it:</p>
-<ul class="simple">
-<li><p><strong>Submit</strong> finalizes the submission and sends it to the server when a connection is available. Once submitted, the entry can no longer be edited in the browser.</p></li>
-<li><p><strong>Save Draft</strong> stores the submission on the device so it can be reopened and completed later.</p></li>
-</ul>
-<p><img alt="Save or submit a form" src="_images/save_submit.png" /></p>
-<p>Users can also print a summary of their responses by clicking on the <i class="k-icon-print"></i> <strong>Print</strong> button in the top right corner of the form.</p>
-<section id="managing-draft-submissions">
-<h3>Managing draft submissions<a class="headerlink" href="#managing-draft-submissions" title="Link to this heading">¶</a></h3>
-<p>Saving a draft stores the submission in the browser so it can be reopened and completed later. Drafts are not sent to the KoboToolbox server until they are reopened, finalized, and submitted.</p>
-<p>When you save a form as a draft, you will be asked to <strong>name it</strong> so it is easier to find later.</p>
-<p>The <strong>queue counter</strong> in the top left corner shows how many drafts are saved in the browser. To reopen a draft:</p>
-<ol class="arabic simple">
-<li><p>Click the <strong>queue counter</strong> to open the list of saved drafts.</p></li>
-<li><p>Select the draft you want to open.</p></li>
-<li><p>Review or edit the draft, then submit.</p></li>
-</ol>
-<p><img alt="Queue counter icon" src="_images/queue.png" /></p>
+<section id="formatting-the-submission-message">
+<h3>Formatting the submission message<a class="headerlink" href="#formatting-the-submission-message" title="Link to this heading">¶</a></h3>
+<p>Use Markdown to add formatting to the submission message, such as hyperlinks, bold text, italic text, or lists.</p>
+<p>For example: <code class="docutils literal notranslate"><span class="pre">'**Congratulations!**</span> <span class="pre">You</span> <span class="pre">are</span> <span class="pre">eligible.</span> <span class="pre">Click</span> <span class="pre">[here](http://kobotoolbox.org)</span> <span class="pre">for</span> <span class="pre">more</span> <span class="pre">information.'</span></code></p>
 <p class="note">
-<strong>Note:</strong>
-Drafts are stored in the browser until they are submitted, even if you close the browser, turn off the device, or go offline. Do not clear your browser cache or site data during data collection, and make sure the device is not set to clear them automatically, as this may permanently delete saved drafts.   
-</p>
-</section>
-<section id="offline-data-collection">
-<h3>Offline data collection<a class="headerlink" href="#offline-data-collection" title="Link to this heading">¶</a></h3>
-<p>Web forms <strong>support offline data collection</strong> on all widely used browsers and devices. When using web forms, KoboToolbox can store the form and responses in the browser so users can continue entering data without an internet connection.</p>
-<p class="note">
-<strong>Note:</strong>
-When entering data offline, do not clear your browser cache or site data during data collection, and make sure the device is not set to clear them automatically, as this may permanently delete offline forms and queued submissions.
-</p>
-<p>To collect data offline with web forms:</p>
-<ol class="arabic">
-<li><p>Before going offline, open the form while connected and wait for it to fully load and be cached on the device. This can take up to 30 seconds.</p></li>
-<li><p>Once the form has been cached, a <strong>confirmation icon</strong> appears in the top left corner to show that it can now be used offline.</p>
-<ul class="simple">
-<li><p>If you go offline before the form has been cached, you may lose access to the page when it refreshes.</p></li>
-</ul>
-<p><img alt="Signal bar icon" src="_images/signal_bars.png" /></p>
-</li>
-<li><p>When submitting data while offline, the submissions are added to the queue. The <strong>queue counter</strong> shows how many records are waiting to upload.</p></li>
-</ol>
-<p><img alt="Queue counter icon" src="_images/queue.png" /></p>
-<ol class="arabic simple" start="4">
-<li><p>Click the <strong>queue counter</strong> to view finalized submissions waiting to upload when an internet connection is available. You can also export queued submissions as a ZIP file.</p></li>
-<li><p>Once the device reconnects, saved submissions are uploaded automatically in the background while the form remains open.</p></li>
-</ol>
-<p class="note">
-<strong>Note:</strong>
-For easier access during offline data collection, you may want to bookmark the form or add a shortcut to your phone’s home screen using the <strong>Add to Home Screen</strong> option in your browser menu.
+  For more information on formatting text using Markdown, see <a href="https://support.kobotoolbox.org/form_style_xls.html#styling-text">Styling your forms using XLSForm</a>.
 </p>
 </section>
 </section>
-<section id="customizing-web-form-links">
-<h2>Customizing web form links<a class="headerlink" href="#customizing-web-form-links" title="Link to this heading">¶</a></h2>
-<p>You can modify a web form link to control how the form opens or behaves for different users and use cases. For example, you can open the form in a specific language, prefill certain values, or redirect users to another page after they submit the form.</p>
-<section id="opening-the-form-in-a-specific-language">
-<h3>Opening the form in a specific language<a class="headerlink" href="#opening-the-form-in-a-specific-language" title="Link to this heading">¶</a></h3>
-<p>If your form has multiple languages, you can add a language parameter to the web form URL so it opens in a specific language. This can be useful when sharing different links with different user groups.</p>
-<p>To share a link that opens in a different form language from the form’s default language:</p>
+<section id="creating-submission-messages-in-multiple-languages">
+<h2>Creating submission messages in multiple languages<a class="headerlink" href="#creating-submission-messages-in-multiple-languages" title="Link to this heading">¶</a></h2>
+<p>For multilingual forms, you can display the submission message in the language selected by the respondent.</p>
+<p>To configure multilingual submission messages:</p>
 <ol class="arabic simple">
-<li><p>Copy your form link in <strong>FORM &gt; Collect data.</strong></p></li>
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">?lang=language_code</span></code> at the end of the URL, where <code class="docutils literal notranslate"><span class="pre">language_code</span></code> is the language code of the selected language.</p>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">survey</span></code> sheet, create a <code class="docutils literal notranslate"><span class="pre">select_one</span></code> question to store the message.</p></li>
+<li><p>Enter <code class="docutils literal notranslate"><span class="pre">false</span></code> in the <code class="docutils literal notranslate"><span class="pre">relevant</span></code> column to hide the question in the form.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">choices</span></code> sheet, add the submission message as a choice.</p></li>
+<li><p><a class="reference external" href="https://support.kobotoolbox.org/language_xls.html">Translate</a> the choice label into each form language.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">calculation</span></code> column of the <code class="docutils literal notranslate"><span class="pre">submitMessage</span></code> row, enter: <code class="docutils literal notranslate"><span class="pre">jr:choice-name('choice_name',</span> <span class="pre">'${question_name}')</span></code></p>
 <ul class="simple">
-<li><p>For example: <code class="docutils literal notranslate"><span class="pre">https://ee.kobotoolbox.org/x/[form_id]?lang=fr</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">choice_name</span></code> is the name of the choice where your message is stored</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">question_name</span></code> is the name of the <code class="docutils literal notranslate"><span class="pre">select_one</span></code> question created above</p></li>
 </ul>
 </li>
 </ol>
+<p>The submission message will appear in the language selected at the top of the form.</p>
 <p class="note">
-For more information, see <a href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html#language-specific-form-url">Collecting data in multiple languages</a>.
+  For an example of a form that displays a submission message in multiple languages, download a sample XLSForm <a href="https://docs.google.com/spreadsheets/d/1NXwXbG6PaSFX1HZGEDMdji6XiUIHfkHG/edit?usp=sharing&rtpof=true&sd=true">here</a>.
 </p>
 </section>
-<section id="prefilling-a-field-from-the-web-link">
-<h3>Prefilling a field from the web link<a class="headerlink" href="#prefilling-a-field-from-the-web-link" title="Link to this heading">¶</a></h3>
-<p>You can also prefill a field in your form through the web link. This is useful when you want to pass a known value into the form automatically.</p>
-<p>For example, you could share different links in different places, and each link could open the same form with a hidden field that shows where the link came from. You could also share a different link with each respondent, with that person’s unique ID already embedded in the link.</p>
-<p>To share a link that prefills a field in your form:</p>
-<ol class="arabic simple">
-<li><p>Add the question you want to prefill to your form, then set its <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#data-column-name">data column name</a>.</p>
+<section id="compatibility">
+<h2>Compatibility<a class="headerlink" href="#compatibility" title="Link to this heading">¶</a></h2>
+<p>Custom submission messages are intended for use with <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html">web forms</a>. They work only with the following <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes">data collection modes</a>:</p>
 <ul class="simple">
-<li><p>This can be a <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#storing-constants-in-your-form">Hidden</a> question if you want to store the value in the background, or any standard question type if you want respondents to see it in the form.</p></li>
+<li><p>Online-Only (single submission)</p></li>
+<li><p>Online-Only (once per respondent)</p></li>
 </ul>
-</li>
-<li><p>Copy your form link in <strong>FORM &gt; Collect data.</strong></p></li>
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">?d[data_column_name]=value</span></code> at the end of the URL, where <code class="docutils literal notranslate"><span class="pre">data_column_name</span></code> is the data column name of the Hidden question and <code class="docutils literal notranslate"><span class="pre">value</span></code> is the prefilled value.</p>
-<ul class="simple">
-<li><p>For example: <code class="docutils literal notranslate"><span class="pre">https://ee.kobotoolbox.org/x/[form_id]?d[prefilled_field]=12345</span></code>.</p></li>
-</ul>
-</li>
-</ol>
-<p class="note">
-<strong>Note:</strong>
-Use the full data column name in the URL parameter. If the question is inside one or more groups, the name must include the <strong>group name or names</strong> as well (e.g., <code>group1/question1</code>). You can find the exact name in the question’s <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Data column name</a> field in the Formbuilder, or in the <code>name</code> column of an XLSForm.
-</p>
-</section>
-<section id="redirecting-users-to-another-webpage-after-submission">
-<h3>Redirecting users to another webpage after submission<a class="headerlink" href="#redirecting-users-to-another-webpage-after-submission" title="Link to this heading">¶</a></h3>
-<p>When using the <strong>Online-Only (single submission)</strong> data collection mode, you can redirect users to another webpage after they submit their form.</p>
-<p>To redirect users to another webpage:</p>
-<ol class="arabic simple">
-<li><p>In <strong>FORM &gt; Collect data</strong>, select the <strong>Online-Only (single submission)</strong> data collection mode.</p></li>
-<li><p>Copy your form link.</p></li>
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">?return_url=webpage</span></code> at the end of the URL, where <code class="docutils literal notranslate"><span class="pre">webpage</span></code> is the language URL of the webpage.</p>
-<ul class="simple">
-<li><p>For example: <code class="docutils literal notranslate"><span class="pre">https://ee.kobotoolbox.org/x/[form_id]?return_url=https://website.com</span></code>.</p></li>
-</ul>
-</li>
-</ol>
-<p class="note">
-<strong>Note:</strong>
-You can combine multiple parameters in the same link by separating them with <code>&</code>.
-</p>
-</section>
-</section>
-<section id="troubleshooting">
-<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
-<details>
-<summary><strong>The form does not work offline</strong></summary>
-Before going offline, make sure the form has been fully opened and cached in the browser. Check the offline availability indicator in the form before starting data collection without internet access.
-<p><img alt="Signal bar icon" src="_images/signal_bars.png" /></p>
-</details>
-<br>
-<details>
-<summary><strong>Browser crashes during data collection</strong></summary>
-If your device restarts, the browser refreshes, or the form closes while you are in the middle of entering data, your responses are usually saved in the browser. When you reopen the form, KoboToolbox will prompt you to either discard the previously entered data or load it back into the form and continue. 
-</details>
-<br>
-<details>
-<summary><strong>Submissions are not reaching the server</strong></summary>
-If the form was used offline, submissions may still be waiting in the queue. Check the queue counter and make sure the device has reconnected to the internet. Web forms upload queued submissions automatically when a connection is available.
-<p><img alt="Queue counter icon" src="_images/queue.png" /></p>
-</details>
-<br>
-<details>
-<summary><strong>Respondents are asked to sign in</strong></summary>
-Check whether the project is set to <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">require authentication</a> for submissions. If it is, users must sign in with an account that has permission to add submissions, or you can disable the requirement in <strong>FORM > Collect data.</strong> 
-</details>
-<br>
-<details>
-<summary><strong>Switching accounts in web forms</strong></summary>
-If <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a> for submissions, web forms may keep you signed in with the account previously used for web forms in that browser. This can be confusing if the form is shared with a different account or if you need to submit as another user.<br><br>To switch accounts, click <strong>log out</strong> below the <strong>Submit</strong> button in the web form. Then, close the web form and open it again. You should then be prompted to sign in with the other account.<br><br>Note that web form sign-in is separate from the account you are signed in to on KoboToolbox in the same browser. If you are not sure which account you are currently signed in to from the web form interface, we recommend logging out and signing back in.
-</details>
-<br>
-<details>
-<summary><strong>Data appears to be missing</strong></summary>
-Do not clear the browser cache or delete browser data while collecting data with web forms. Clearing the cache <strong>removes stored forms, drafts, and queued submissions from the device</strong>, and this data cannot be recovered if it has not already been uploaded to the KoboToolbox server.
-</details>
-<br>
-<details>
-<summary><strong>Browser not supported</strong></summary>
-Use the latest version of a modern browser. Chrome is generally recommended for working with web forms, but Safari, Firefox, Edge, Opera, Samsung Internet, and other browsers also are well supported. Internet Explorer is not supported. 
-</details>
-<br>
-<details>
-<summary><strong>Web form submission fails </strong></summary>
-If a web form submission fails, check whether your form uses a <strong>reserved XLSForm term</strong> as the <a href="https://support.kobotoolbox.org/glossary.html#data-column-name">data column name</a>. Reserved words are terms that cannot be used as variable names because they are used by the underlying XForms engine for structure, logic, or data analysis (e.g., type, label, start, today). Using these words can cause form validation errors, publishing failures, or data export issues.<br><br>
-<p>To fix the issue, rename the affected question to a different value, then redeploy the form. This issue usually affects web forms even when the form opens normally, while KoboCollect may continue to work as expected. Note that any submissions already saved against the old version of the form may remain unsubmittable, so it is important to update the form as soon as possible if you are collecting data through web forms. Always <strong>test form submission before launching data collection</strong> so you can catch naming issues early.</p>
-</details>
-<br>
+<p>They may also appear in <a class="reference external" href="https://support.kobotoolbox.org/data_collection_kobocollect.html">KoboCollect</a>, but KoboCollect treats the message as plain text, so Markdown formatting and links are not rendered. Consider your data collection method and test the message before collecting data with your form.</p>
 </section>
 </section>
 
@@ -454,7 +325,7 @@ If a web form submission fails, check whether your form uses a <strong>reserved 
               href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
-              data-page="Collecting data using web forms"
+              data-page="Adding a custom submission message"
               onclick="
               const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
               const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
@@ -547,16 +418,10 @@ If a web form submission fails, check whether your form uses a <strong>reserved 
 <li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importing library collections using XLSForm</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Collecting data using web forms</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#sharing-web-forms-for-data-collection">Sharing web forms for data collection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#collecting-data-with-web-forms">Collecting data with web forms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#customizing-web-form-links">Customizing web form links</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
 <li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
 <li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
@@ -681,9 +546,9 @@ If a web form submission fails, check whether your form uses a <strong>reserved 
 
   <script>
     window.docs = {
-      currentPagename: "data_through_webforms",
-      currentTitle: "Collecting data using web forms",
-      currentUrl: ("index.html").replace("index.html", "data_through_webforms.html"),
+      currentPagename: "custom_submission_message",
+      currentTitle: "Adding a custom submission message",
+      currentUrl: ("index.html").replace("index.html", "custom_submission_message.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
       

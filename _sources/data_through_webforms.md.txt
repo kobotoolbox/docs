@@ -1,5 +1,5 @@
 # Collecting data using web forms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5740a1b48198de377ae56fab047b9bbaf5cbd234/source/data_through_webforms.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/22959ee8b91c5f4cb42545d225dec591a0d409c0/source/data_through_webforms.md" class="reference">29 Jul 2026</a>
 
 KoboToolbox web forms let you **collect data directly in a web browser**, without installing an app. They are browser-based versions of your form that you can use to preview and test your questionnaire or collect live data on phones, tablets, and computers.
 
@@ -59,6 +59,11 @@ Available web form modes include:
 | Online-only (once per respondent) | Prevents the same user on the same browser and device from submitting more than once. |
 | Embeddable web form code | Provides HTML code to embed the form on your own website. |
 | View only | Opens the form for previewing and testing without allowing submissions. |
+
+<p class="note">
+<strong>Note:</strong>
+    When using the <strong>Online-Only (single submission)</strong> or <strong>Online-Only (once per respondent)</strong> data collection modes, you can add a <a href="https://support.kobotoolbox.org/custom_submission_message.html">custom message</a> in XLSForm to display after a successful submission.
+</p>
 
 ### Printing a web form
 
