@@ -122,6 +122,7 @@ Explore practical guidance across KoboToolbox topics and features
   select_from_map_xls
   select_from_image
   dynamic_data_attachment
+  custom_submission_message
   library_locking
   import_collection
 
