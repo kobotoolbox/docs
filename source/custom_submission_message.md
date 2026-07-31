@@ -24,7 +24,7 @@ To set up a custom submission message in XLSForm:
 
 | name | namespaces     | attribute::kobo:submitMessage              |
 | :--- | :------- | :----------------- |
-| text | kobo="http://kobotoolbox.org/xforms" | /data/submitMessage |
+| data | kobo="http://kobotoolbox.org/xforms" | /data/submitMessage |
 | settings |
 
 2. In the `survey` sheet, create a `calculate` question. 
