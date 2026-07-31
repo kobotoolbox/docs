@@ -1,5 +1,5 @@
 # Adding a custom submission message
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/22959ee8b91c5f4cb42545d225dec591a0d409c0/source/custom_submission_message.md" class="reference">29 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/735fcc50656b3d9da0a1e1c31579172c2e6fe06e/source/custom_submission_message.md" class="reference">31 Jul 2026</a>
 
 Custom submission messages allow you to display a tailored message after a respondent successfully submits a form.
 
