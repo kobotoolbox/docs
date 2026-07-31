@@ -1,5 +1,5 @@
 # Qualitative analysis of audio responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/qualitative_analysis.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1667adc7527f3f29d9f4f8ad9c0ac89c20f2ba02/source/qualitative_analysis.md" class="reference">31 Jul 2026</a>
 
 <iframe src="https://www.youtube.com/embed/Ud65hNS_cuo?si=aFfCfExpyn3MZVAs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -191,5 +191,5 @@ Open-source models provide greater transparency into how data is processed. Tran
 
 Compared to commercial AI providers, which frequently update models behind the scenes and may apply filtering that can affect the analysis of complex or sensitive topics, **open-source models offer greater stability and consistency** throughout the lifecycle of a project. This helps provide a more neutral and predictable baseline for qualitative research.
 
-Our AI analysis features have been extensively tested against both human coders and more than 40 commercial and open-weight AI models to ensure high quality and reliable results.
+Our AI analysis features have been [extensively tested](https://www.kobo.ngo/publications/can-large-language-models-reliably-code-qualitative-humanitarian-data%3F-a-benchmark-study-against-human-expert-adjudication) against both human coders and more than 40 commercial and open-weight AI models to ensure high quality and reliable results.
 
