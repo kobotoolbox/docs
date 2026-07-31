@@ -191,5 +191,5 @@ Open-source models provide greater transparency into how data is processed. Tran
 
 Compared to commercial AI providers, which frequently update models behind the scenes and may apply filtering that can affect the analysis of complex or sensitive topics, **open-source models offer greater stability and consistency** throughout the lifecycle of a project. This helps provide a more neutral and predictable baseline for qualitative research.
 
-Our AI analysis features have been extensively tested against both human coders and more than 40 commercial and open-weight AI models to ensure high quality and reliable results.
+Our AI analysis features have been [extensively tested](https://www.kobo.ngo/publications/can-large-language-models-reliably-code-qualitative-humanitarian-data%3F-a-benchmark-study-against-human-expert-adjudication) against both human coders and more than 40 commercial and open-weight AI models to ensure high quality and reliable results.
 
