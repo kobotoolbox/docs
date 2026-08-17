@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
     <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=03949c24" />
-    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=5f35866a" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=68a57467" />
     <script src="_static/documentation_options.js?v=5929fcd5"></script>
     <script src="_static/doctools.js?v=fd6eb6e6"></script>
     <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
@@ -180,7 +180,7 @@
           
   <section id="using-xlsform-with-kobotoolbox">
 <h1>Using XLSForm with KoboToolbox<a class="headerlink" href="#using-xlsform-with-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/xlsform_with_kobotoolbox.md" class="reference">17 Jul 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/79f9e4808de9549c77adcdf7b917b4e1bbaac560/source/xlsform_with_kobotoolbox.md" class="reference">17 Aug 2026</a></p>
 <p>XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
 building a form in the KoboToolbox Formbuilder, then download it as an
@@ -370,6 +370,9 @@ correcting the error in your spreadsheet, you will need to upload the file again
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Error:</span> <span class="pre">'dict'</span> <span class="pre">object</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">attribute</span> <span class="pre">'nodeType'</span></code></p></td>
 <td class="text-left"><p>The user added a language suffix to the <code class="docutils literal notranslate"><span class="pre">form_title</span></code> column in the <code class="docutils literal notranslate"><span class="pre">settings</span></code> worksheet, such as <code class="docutils literal notranslate"><span class="pre">form_title::English</span> <span class="pre">(en)</span></code>. Translating the <code class="docutils literal notranslate"><span class="pre">form_title</span></code> column is not supported.</p></td>
 </tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">Failed!</span> <span class="pre">Duplicate</span> <span class="pre">node</span> <span class="pre">name</span></code></p></td>
+<td class="text-left"><p>The XLSForm includes a duplicated question or group name.</p></td>
+</tr>
 </tbody>
 </table>
 </details>
@@ -484,6 +487,12 @@ correcting the error in your spreadsheet, you will need to upload the file again
 </li>
 <li>Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.</li>
 </ol>
+</details>
+<br>
+<details>
+<summary><strong>Error message: Import Failed! Duplicate node name</strong></summary>
+This error occurs when a value in the <code>name</code> column of the <code>survey</code> sheet is duplicated. The duplicate can be a question name, a group name, or a question and group that have the same name.<br><br>
+<p>To fix the error, locate the duplicate name specified in the error message and replace one instance with a unique name.</p>
 </details>
 <br>
 <details>

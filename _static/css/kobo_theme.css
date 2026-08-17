@@ -366,7 +366,7 @@ html body header.main-header .main-header__navigation .language-picker__option.l
   bottom: 0;
 }
 .main-search.main-search--big .wrapper {
-  background-color: rgba(0, 73.78, 142.8, 0.6);
+  background-color: rgba(0%, 28.9333333333%, 56%, 0.6);
   position: relative;
   z-index: 1;
 }
@@ -375,7 +375,7 @@ html body header.main-header .main-header__navigation .language-picker__option.l
 }
 .main-search .wrapper {
   width: 100%;
-  background-color: rgba(0, 73.78, 142.8, 0.7);
+  background-color: rgba(0%, 28.9333333333%, 56%, 0.7);
 }
 .main-search:not(.main-search--big) .main-search__header,
 .main-search:not(.main-search--big) .main-search__paragraph,
@@ -919,7 +919,7 @@ html body div.footer p:last-child {
   padding: 4.375rem 0.9375rem 6.25rem;
   text-align: center;
   color: hsl(0, 0%, 100%);
-  background-color: rgba(0, 73.78, 142.8, 0.6);
+  background-color: rgba(0%, 28.9333333333%, 56%, 0.6);
 }
 .community-questions.community-questions--sidebar::before {
   content: "";

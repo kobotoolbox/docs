@@ -1,5 +1,5 @@
 # Using XLSForm with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/xlsform_with_kobotoolbox.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/79f9e4808de9549c77adcdf7b917b4e1bbaac560/source/xlsform_with_kobotoolbox.md" class="reference">17 Aug 2026</a>
 
 XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
@@ -164,6 +164,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 | `Can't find survey.xml` | <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">Dynamic data attachments</a> have not been properly set up in your project settings. |
 | `'select_from_list_name'` | A list name is missing from the `type` column after `select_one` or `select_multiple`. |
 | `Error: 'dict' object has no attribute 'nodeType'` | The user added a language suffix to the `form_title` column in the `settings` worksheet, such as `form_title::English (en)`. Translating the `form_title` column is not supported. |
+| `Import Failed! Duplicate node name` | The XLSForm includes a duplicated question or group name. |
 </details>
 
 <br>
@@ -240,6 +241,15 @@ To fix the missing or incorrect list name:
 <li>Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.</li>
 </ol>
 
+</details>
+
+<br>
+
+<details>
+<summary><strong>Error message: Import Failed! Duplicate node name</strong></summary>
+This error occurs when a value in the <code>name</code> column of the <code>survey</code> sheet is duplicated. The duplicate can be a question name, a group name, or a question and group that have the same name.<br><br>
+    
+To fix the error, locate the duplicate name specified in the error message and replace one instance with a unique name.
 </details>
 
 <br>
