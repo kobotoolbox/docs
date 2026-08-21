@@ -42,10 +42,13 @@ There are three different roles for members in a Team, each with specific functi
    - **User management:** Admins can add or remove Team members and assign different roles.
    - **Plan and usage management:** Admins can manage the Team’s Settings and view the Usage page.
 
-3. **Members:** Team Members continue to have full access to their KoboToolbox account with the benefit of their Team’s usage quotas. Members can create new projects and use all KoboToolbox features as before. Teams can have an unlimited number of Members.
+3. **Members:** Team Members continue to have full access to their KoboToolbox account with the benefit of their Team’s usage quotas. 
+- Members can create new projects and use all KoboToolbox features. 
+- Members can delete projects only if the project has no submissions. 
+    - To delete a project that contains submissions, they must first delete all submissions from the project.
 
 <p class="note">
-  <b>Note:</b> Users can only belong to one Team at a time.
+  <b>Note:</b> Teams can have an unlimited number of Members, but users can only belong to one Team at a time.
 </p>
 
 ## Project views
