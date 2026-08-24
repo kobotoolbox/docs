@@ -1,5 +1,5 @@
 # Transcription and translation of audio responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9d20774e6b199308c43703b5914468dd34bb8c70/source/transcription-translation.md" class="reference">14 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/426e27a4374e0ecf9da756c5c67150bf50f1b1a5/source/transcription-translation.md" class="reference">24 Aug 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -12,7 +12,17 @@ This article covers how to transcribe audio responses and translate transcripts,
     <strong>Note</strong>: Automatic transcription and translation may not be available for <a href="#language-list">all languages</a>. For these languages, only manual transcription and translation are possible.
 </p>
 
-To use KoboToolbox’s transcription and translation features, start by collecting audio responses in your form using the [Audio question type](https://support.kobotoolbox.org/photo_audio_video_file.html) or [background audio recordings](https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings). After transcribing and translating audio responses, the original transcript for your audio files and all translated text are added as new data columns in the data table and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data.
+## Collecting audio responses 
+Before transcribing or translating audio responses, you need to collect audio data in your project.
+
+1. Add an [Audio question](https://support.kobotoolbox.org/photo_audio_video_file.html) to your form or enable [background audio recordings](https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings).
+2. Deploy the form and collect submissions containing audio recordings.
+
+<p class="note">
+    <strong>Note</strong>: For some supported languages, automated transcription may not work for audio files longer than 50 minutes. For long interviews, consider using multiple individual audio questions instead of a single background audio recording. 
+</p>
+
+After transcribing and translating audio responses, the original transcript for your audio files and all translated text are added as new data columns in the data table and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data.
 
 
 ## Adding audio transcripts
