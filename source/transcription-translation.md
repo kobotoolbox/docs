@@ -1,5 +1,5 @@
 # Transcription and translation of audio responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7ed95f77dc2ed3b9ecc471a51ba204c73c028fbe/source/transcription-translation.md" class="reference">24 Aug 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4a0ceb12df4c1750824b91ffd38d085b110e8019/source/transcription-translation.md" class="reference">24 Aug 2026</a>
 
 
 <iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
