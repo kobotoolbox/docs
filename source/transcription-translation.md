@@ -93,4 +93,13 @@ If you need more transcription or translation capacity, you can [upgrade](https:
     Sometimes, the second translation may get stuck with a loading icon. If this happens, refresh the page, and the translation should appear. This is an issue we are working to fix.
 </details>
 
+<br>
+
+<details>
+<summary><b>Long audio files not being transcribed</b></summary>
+For some supported languages, automated transcription may not work for audio files longer than 50 minutes.<br><br>
+For long interviews, consider using multiple individual Audio questions instead of a single background audio recording. Breaking an interview into shorter recordings can make files easier to upload and manage, and makes it easier to locate and transcribe specific sections of the interview.<br><br>
+If you already have a long recording, you can also download the audio file, split it into shorter files, and upload the files back to KoboToolbox for transcription.
+</details>
+
 
