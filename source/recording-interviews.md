@@ -46,14 +46,18 @@ When background audio recording is active on a form, <strong>Audio</strong> ques
 
 Background audio recording is useful when you want to **capture a full interview** rather than separate audio clips for individual questions. It starts when the form opens and continues until the form is closed.
 
+<p class="note">
+<strong>Note:</strong>
+If you plan to use <a href="https://support.kobotoolbox.org/transcription-translation.html">automated transcription</a>, consider using multiple Audio questions instead of background audio recording for long interviews. For some supported languages, automated transcription may not work for <strong>recordings longer than 50 minutes</strong>. Dividing an interview into shorter recordings can also make files easier to upload and manage.
+</p>
+
 Background audio can be recorded in the KoboCollect app and in web forms. 
 
 - In web forms, a disclaimer appears at the beginning of the form to inform respondents that background audio is being recorded.
 - In both web forms and KoboCollect, a microphone icon appears at the top of the form while recording is active and shows the recording duration.
 
 <p class="note">
-<strong>Note:</strong>
-Background audio recording is collected as form metadata. For more information about setting up background audio recordings in your form, see <a href="https://support.kobotoolbox.org/form_meta.html#enabling-background-audio-recording">Adding form metadata in the Formbuilder</a> or <a href="https://support.kobotoolbox.org/metadata_xls.html">Form metadata in XLSForm</a>.
+For more information about setting up background audio recordings in your form, see <a href="https://support.kobotoolbox.org/form_meta.html#enabling-background-audio-recording">Adding form metadata in the Formbuilder</a> or <a href="https://support.kobotoolbox.org/metadata_xls.html">Form metadata in XLSForm</a>.
 </p>
 
 ### Ethical considerations for audio recording
