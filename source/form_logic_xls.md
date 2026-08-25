@@ -62,6 +62,10 @@ If a question reference includes a spelling error or is otherwise incorrect, an 
 | `<=`      | Less than or equal to        |
 | `!=`      | Not equal to                 |
 
+<p class="note">
+  <strong>Note:</strong> When building form logic expressions, <code>=></code> is not a valid substitute for <code>>=</code>. The greater than (<code>></code>) or less than (<code><</code>) sign must always come before the equal sign (<code>=</code>).
+</p>
+
 ## Combining conditions using logical operators 
 
 **Logical operators** can be used in XLSForm to combine multiple conditions. Logical operators in XLSForm include:
