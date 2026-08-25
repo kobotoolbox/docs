@@ -61,13 +61,13 @@ For each expression in the table below:
 | **XPath**    | **Description**                                |
 | :----------------- | :--------------------------------------------- |
 | `count(instance('parent')/root/data)` | Returns the total number of rows in the parent project. |
-| `count(instance('parent')/root/ data[parent_group/parent_question])`      | Returns the total number of rows in the parent project where `parent_question`  (in `parent_group`) is not empty. |
-| `count(instance('parent')/root/ data[parent_group/parent_question= current()/../child_question])` | Returns the total count of instances where the value of `parent_question`  (in `parent_group`) in the parent project is equal to the value of `child_question` in the child project. |
-| `instance('parent')/root/ data[parent_index_group/parent_index_question= current()/../child_index_question]/parent_group/ parent_question` | Returns the value of `parent_question` (in `parent_group`) from the parent project where `child_index_question` in the child project is equal to `parent_index_question` in the parent project. |
-| `instance('parent')/root/ data[parent_index_group/parent_index_question= current()/../child_index_question][position()= 1]/parent_group/parent_question` | Same as above, but specifies that only data from the first instance of `parent_index_question` should be returned, using the `[position() = 1]` argument. Used in case of possible duplicates in the parent form. |
-| `sum(instance('parent')/root/ data/parent_group/parent_question)` | Returns the sum of values from `parent_question` (in `parent_group`) from the parent project. Note that `parent_question must be numeric` |
-| `max(instance('parent')/root/ data/parent_group/parent_question)`         | Returns the maximum value entered in `parent_questio`n (in parent_group) from the parent project. Note that `parent_question` must be numeric.     |
-| `min(instance('parent')/root/ data/parent_group/parent_question)`      | Returns the minimum value entered in `parent_question` (in `parent_group`) from the parent project. Note that `parent_question` must be numeric.     |   
+| `count(instance('parent')/root/data[parent_group/parent_question])`      | Returns the total number of rows in the parent project where `parent_question`  (in `parent_group`) is not empty. |
+| `count(instance('parent')/root/data[parent_group/parent_question= current()/../child_question])` | Returns the total count of instances where the value of `parent_question`  (in `parent_group`) in the parent project is equal to the value of `child_question` in the child project. |
+| `instance('parent')/root/data[parent_index_group/parent_index_question= current()/../child_index_question]/parent_group/ parent_question` | Returns the value of `parent_question` (in `parent_group`) from the parent project where `child_index_question` in the child project is equal to `parent_index_question` in the parent project. |
+| `instance('parent')/root/data[parent_index_group/parent_index_question= current()/../child_index_question][position()= 1]/parent_group/parent_question` | Same as above, but specifies that only data from the first instance of `parent_index_question` should be returned, using the `[position() = 1]` argument. Used in case of possible duplicates in the parent form. |
+| `sum(instance('parent')/root/data/parent_group/parent_question)` | Returns the sum of values from `parent_question` (in `parent_group`) from the parent project. Note that `parent_question must be numeric` |
+| `max(instance('parent')/root/data/parent_group/parent_question)`         | Returns the maximum value entered in `parent_questio`n (in parent_group) from the parent project. Note that `parent_question` must be numeric.     |
+| `min(instance('parent')/root/data/parent_group/parent_question)`      | Returns the minimum value entered in `parent_question` (in `parent_group`) from the parent project. Note that `parent_question` must be numeric.     |   
 
 
 <p class="note">
@@ -103,7 +103,14 @@ Once your XLSForms are set up, log into your KoboToolbox account and follow thes
 
 ## Dynamically linking a form to itself
 
-It is possible for a parent and child project to be the same project. The steps are the same as those described above. Examples of use cases include: 
+In some cases, the parent and child project need to be the same project. The setup process is the same as described above, except that you connect the project to itself.
+
+A common use case is to **count existing submissions** for a specific index value. For example, you can use the submission count to prevent duplicate enrollment or track the number of follow-up visits for a participant.
+
+You can also **retrieve specific values** from previous submissions in the same project. However, this requires additional planning when building the form to ensure that the correct submission is retrieved and to avoid errors.
+
+### Counting submissions from the project itself
+You can link a project to itself to count existing submissions for the same index value. This is useful when the form needs to track how many times a person or record has already been submitted, as in the examples below:
 
 - **Daily monitoring**: If a form is used to survey the same person over time, you can link it to itself to count previous submissions. This can allow you to display a message (e.g., "monitoring is complete") after a certain number of entries or to inform the enumerator of the number of forms submitted, as shown in the example below.
 
@@ -113,7 +120,7 @@ It is possible for a parent and child project to be the same project. The steps 
 | :--- | :------- | :----------------- | :----------------- |
 | xml-external | monitoring |               |              |
 | text | participant_id | What is the participant's ID? |  |
-| calculate | count |  | count(instance('monitoring')/root/ data[monitoring/participant_id = current()/../participant_id]) |
+| calculate | count |  | count(instance('monitoring')/root/data[participant_id = current()/../participant_id]) |
 | note | monitoring_note | This participant has been surveyed ${count} times. | |
 | survey | 
 
@@ -125,9 +132,53 @@ It is possible for a parent and child project to be the same project. The steps 
 | :--- | :------- | :----------------- | :----------------- | :------------ |
 | xml-external | registration |               |              | |
 | text | customer_id | What is the customer's ID number? |  | | 
-| calculate | count |  | count(instance('registration')/root/ data[registration/customer_id = current()/../customer_id]) | |
+| calculate | count |  | count(instance('registration')/root/data[customer_id = current()/../customer_id]) | |
 | note | already_registered | This customer is already registered. Please close this form. | | ${count} > 0 |
 | survey | 
+
+### Retrieving specific values from the project itself
+
+You can also use dynamic data attachments to retrieve values from the same project by linking the project to itself. However, this requires planning when you build the form.
+
+When using this approach, the index variable must identify **only one matching submission** in the project data. If multiple submissions have the same index value (e.g., multiple submissions for a same unique ID), KoboToolbox may not know which row to retrieve data from. This can eventually result in an error, particularly in KoboCollect.
+
+To avoid duplicate index values, you can set up the form to:
+1. Use dynamic data attachments to count the number of existing submissions for the same index value.
+2. Combine this count with the original index variable in a separate calculation. For example, submissions with the index value `ID` could be assigned unique values such as `ID_0`, `ID_1`, and `ID_2`.
+
+**survey worksheet**
+
+| type | name     | label              | calculation |
+| :--- | :------- | :----------------- | :----------------- |
+| xml-external | monitoring |               |              |
+| text | participant_id | What is the participant's ID? |  |
+| calculate | count |  | count(instance('monitoring')/root/data[participant_id = current()/../participant_id]) |
+| calculate | id_count | | concat(${participant_id}, ‘_’, ${count}) |
+| survey | 
+
+3. Use this calculated value as the index variable when retrieving data from the project.
+   - You can also use the `position=1` argument to ensure that only one matching row is returned and reduce the risk of errors when multiple matches exist.
+
+
+**survey worksheet**
+
+| type | name     | label              | calculation |
+| :--- | :------- | :----------------- | :----------------- |
+| xml-external | monitoring |               |              |
+| text | participant_id | What is the participant's ID? |  |
+| calculate | count |  | count(instance('monitoring')/root/data[participant_id = current()/../participant_id]) |
+| calculate | id_count | | concat(${participant_id}, ‘_’, ${count}) |
+| calculate | enrollment_id | | concat(${participant_id}, ‘_0’) |
+| text | full_name | Participant full name | instance(‘monitoring’)/root/id_count=current()/../enrollment_id][position()=1]/full_name |
+| survey | 
+
+In the example above:
+* `participant_id` is the unique ID of the participant
+* `count` is the number of existing submissions from this participant in the project data
+* `id_count` is a combination of the unique ID and the count of existing submissions
+* `enrollment_id` combines the unique ID and `_0` to identify the first submission for this ID. It acts as the index variable for the following dynamic data attachment.
+* `full_name` pulls in the participant’s full name, as entered in the first submission, where `id_count` was equal to `[id]_0`
+
 
 ## Collecting and managing data with dynamic linking
 
@@ -146,6 +197,30 @@ When collecting data, note the following:
 ## Troubleshooting
 
 <details>
+<summary><strong>Parent data not showing in the child form</strong></summary>
+If data from the parent project is not appearing in the child form, check the following:
+<ul>
+<li><strong>The calculation syntax is correct.</strong> Check the calculation in the child form for errors.</li>
+<li><strong>Question groups are included in XPath expressions.</strong> If the parent question is inside a question group, include the group name in the XPath expression.</li>
+<li><strong>The index question and calculation are in the same group.</strong> The index question, such as an identification number, must be in the same group as the calculation that retrieves the dynamic data. If needed, add a field within the group that repeats the identification number.</li>
+<li><strong>The parent project has finished syncing.</strong> New parent project data can take up to five minutes to sync when you are online.</li>
+<li><strong>The relevant fields are shared.</strong> Make sure all parent form fields referenced by the child form are included in the shared data.</li>
+<li><strong>New parent fields have been re-imported.</strong> If you added new fields to the parent form and want to use them in the child project, open the child project settings, select the new fields from the parent project, and redeploy the child form.</li>
+</ul>
+
+</details>
+
+<br>
+
+<details>
+<summary><strong>Parent project does not appear under “Import other project data”</strong></summary>
+If the parent project does not appear in the <strong>Import other project data</strong> list, check that data sharing is enabled for the parent project.<br><br>
+Open the <strong>Connect Projects</strong> settings in the parent project and enable data sharing under <strong>Share data with other project forms</strong>. Once data sharing is enabled, return to the child project and try connecting to the parent project again.
+</details>
+
+<br>
+
+<details>
   <summary><strong>Error or crash when linking forms</strong></summary>
 If the user interface crashes when you attempt to link forms, check the following:
   <ul>
@@ -153,13 +228,6 @@ If the user interface crashes when you attempt to link forms, check the followin
     <li>Your parent project has at least one submission.</li>
   </ul>
 If the user interface is still crashing, select only the questions you need to connect the forms, instead of clicking <strong>Select all</strong>.
-</details>
-
-<br>
-
-<details>
-<summary><strong>Parent data not showing in the child form</strong></summary>
-Check that the calculation syntax in the child form is correct and that the relevant questions are shared in both projects. If your parent question is in a question group, be sure to include the group name in the XPath expression. Note that new parent project data takes up to five minutes to sync when you are online. If you add new fields to the parent form and want to use them in the child project, open the child project settings, re-import the parent project, and redeploy.
 </details>
 
 <br>
@@ -180,7 +248,7 @@ If you are using KoboCollect and collecting data offline, data must first be sub
 
 <details>
 <summary><strong>Dynamic data attachment not working inside question groups</strong></summary>
-To pull dynamic data from a parent form into a child form with question groups, ensure the index question (e.g., the identification number) in the child form is in the same group as the calculation for the dynamic data. See sample files <a href="https://community.kobotoolbox.org/uploads/short-url/z5RpC1M3wj9716z9qQ8pWx9Pb4V.xlsx">Round 1 (Within Groups).xlsx</a> and <a href="https://community.kobotoolbox.org/uploads/short-url/8JZvWJcrCxzKBllQYglRyAVyk03.xlsx">Round 2 (Within Groups).xlsx</a> for an example of dynamic data attachments within groups.
+To pull dynamic data from a parent form into a child form with question groups, ensure the index question (e.g., the identification number) in the child form is in the same group as the calculation for the dynamic data. If the index question is outside the group, you can add a calculation inside the group that repeats the index variable, then reference that calculated field when pulling the dynamic data. See sample files <a href="https://community.kobotoolbox.org/uploads/short-url/z5RpC1M3wj9716z9qQ8pWx9Pb4V.xlsx">Round 1 (Within Groups).xlsx</a> and <a href="https://community.kobotoolbox.org/uploads/short-url/8JZvWJcrCxzKBllQYglRyAVyk03.xlsx">Round 2 (Within Groups).xlsx</a> for an example of dynamic data attachments within groups.
 </details>
 
 <br>
