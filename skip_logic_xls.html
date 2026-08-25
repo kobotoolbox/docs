@@ -180,7 +180,7 @@
           
   <section id="adding-skip-logic-in-xlsform">
 <h1>Adding skip logic in XLSForm<a class="headerlink" href="#adding-skip-logic-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/0586118b5f55f20287bc6db496832b14bbfc6239/source/skip_logic_xls.md" class="reference">5 Jun 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d96d90ba3aae387ce0fd7bdc57e1a08767431ef6/source/skip_logic_xls.md" class="reference">25 Aug 2026</a></p>
 <p>Skip logic, also known as relevance logic, allows you to <strong>determine when a question or group of questions will be displayed</strong> in the form based on a previous question or the result of a calculation. For example, you can use it to ask follow-up questions only to a subset of respondents, or to hide entire sections of a form if they are not relevant.</p>
 <p class="note">
   To learn more about form logic in XLSForm, see <a href="https://support.kobotoolbox.org/form_logic_xls.html">Introduction to form logic in XLSForm</a>.
@@ -419,6 +419,18 @@ For hands-on practice with skip logic in XLSForm, see KoboToolbox Academy’s <a
 <summary><strong>Skip logic does not work as expected with multiple choice questions</strong></summary>
 When adding skip logic based on a multiple choice question, using <code>${question} = 'option1'</code> will only work if Option 1 is <strong>the only selected response</strong>. To apply skip logic when Option 1 is selected, regardless of whether other options are also selected, use the <code>selected()</code> function: <code>selected(${question}, 'option1')</code> <br><br>
 This is common when adding an open text “Specify other” question after a multiple choice question. For example, if you want the “Specify other” question to appear whenever “Other” is selected, use: <code>selected(${question}, 'other')</code>
+</details>
+<br>
+<details>
+<summary><strong>FormLogicError: Could not evaluate</strong></summary>
+<p>The <strong>FormLogicError: Could not evaluate</strong> error usually means that a skip logic expression contains an error.<br><br>
+Check the skip logic expression for common issues, including:</p>
+<ul>
+<li>Missing or misplaced parentheses.</li>
+<li>An incorrect comparison operator. For example, <code>=&gt;</code> is not a valid substitute for <code>&gt;=</code> (greater than or equal to).</li>
+<li>An incorrectly formatted question reference. Question names must use the <code>${question_name}</code> format. For example, <code>${age}</code> is valid, while <code>$age}</code> is not.</li>
+</ul>
+Identify the faulty expression from the error message, correct the expression, and redeploy the form.
 </details>
 </section>
 </section>
