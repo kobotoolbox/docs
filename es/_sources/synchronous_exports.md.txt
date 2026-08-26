@@ -19,7 +19,7 @@ Este artículo cubre los siguientes pasos:
 - Conectar tus datos a una aplicación externa y autenticación
 
 <p class="note">
-    Para una introducción a la API de KoboToolbox, consulta <a href="../es/api.md">Introducción a la API</a>.
+    Para una introducción a la API de KoboToolbox, consulta <a href="https://support.kobotoolbox.org/es/api.html">Introducción a la API</a>.
 </p>
 
 ## Generar una exportación con nombre
