@@ -10,7 +10,7 @@ Organizations located in the European Union can enter into a [data processing ag
 
 ## Data hosting in the European Union
 
-KoboToolbox offers a [European Union server](https://www.kobotoolbox.org/sign-up/) hosted in Ireland. Organizations that require or prefer to store their data in the European Union can [create an account](https://eu.kobotoolbox.org/accounts/signup/) on this server.
+KoboToolbox offers a [European Union server](https://www.kobotoolbox.org/sign-up/) hosted in Ireland and Germany. Organizations that require or prefer to store their data in the European Union can [create an account](https://eu.kobotoolbox.org/accounts/signup/) on this server.
 
 Accounts, projects, and data cannot be transferred between the Global KoboToolbox Server and the European Union KoboToolbox Server. Organizations that need to keep their data within the European Union should therefore create their accounts on the European Union server from the start. 
 
