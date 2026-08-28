@@ -3,7 +3,7 @@
 
 Most users access KoboToolbox by creating an account on one of our public servers. Users can choose between:
 - The **Global KoboToolbox Server**, used by most KoboToolbox users.
-- The **European Union KoboToolbox Server**, hosted in Ireland for organizations that require or prefer data hosting in the European Union (EU).
+- The **European Union KoboToolbox Server**, hosted in Ireland and Germany for organizations that require or prefer data hosting in the European Union (EU).
 
 This article explains how to create and activate a KoboToolbox account on one of our public servers.
 
