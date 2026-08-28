@@ -256,3 +256,22 @@ To fix the issue, rename the affected question to a different value, then redepl
 </details>
 
 <br>
+
+<details>
+<summary><strong>Prefilled URL values do not override dynamic defaults</strong></summary>
+When using a prefilled URL, the prefilled value will override a value in the <code>default</code> column. However, it will not override a dynamic default defined in the <code>calculation</code> column.<br><br>
+
+If you need both a dynamic default and the option to override it with a prefilled URL value:
+<ol>
+<li>Use a hidden field to capture the prefilled value.</li>
+<li>Create a calculation that checks whether the hidden field is blank:
+<ul>
+<li>If the hidden field is blank, use the dynamic default expression.</li>
+<li>If the hidden field contains a value, use the value from the hidden field.</li>
+</ul>
+</li>
+<li>Use the result of this calculation as the dynamic default in the <code>calculation</code> column of your initial question.</li>
+</ol>
+</details>
+
+<br>
