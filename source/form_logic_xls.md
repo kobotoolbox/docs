@@ -25,11 +25,11 @@ Question referencing allows you to incorporate the answer to a previous question
 
 Question referencing uses the format **${question_name}**, where 	`question_name` is replaced with the unique name of the referenced question. 
 
-If a question reference includes a spelling error or is otherwise incorrect, an error message will appear when previewing or submitting the form.
-
 <p class="note">
   <strong>Note:</strong> When referencing a question within its own logic (i.e., in its own row), a period <code>.</code> can be used as a shortcut.
 </p>
+
+If a question reference includes a spelling error or is otherwise incorrect, an error message will appear when previewing or submitting the form.
 
 **survey worksheet**
 
@@ -38,6 +38,10 @@ If a question reference includes a spelling error or is otherwise incorrect, an 
 | integer   | household_size  | How many people live in your household?                                |                          |
 | integer   | total_under18   | Out of the ${household_size} people, how many are under the age of 18? | . < ${household_size}    |
 | survey | 
+
+<p class="note">
+  <strong>Note:</strong> You can use <code>${instanceID}</code> to reference the unique id (<code>uuid</code>) of the current form submission, for example to use in calculations or form logic.
+</p>
 
 ## Mathematical and comparison operators 
 
