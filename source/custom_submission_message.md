@@ -38,6 +38,8 @@ To set up a custom submission message in XLSForm:
 | calculate | submitMessage |  | `“Thank you for registering. Click [here](http://kobotoolbox.org) for more information about the event.”` |
 | survey |
 
+In this setup, the `submitMessage` row **should not be inside a group**. If it is inside a group, update `/data/submitMessage` in the `settings` sheet to include the group name: `/data/group_name/submitMessage`.
+
 <p class="note">
   For an example of this feature in practice, download a sample XLSForm <a href="https://docs.google.com/spreadsheets/d/1CgjrpJcDX1pLmf-B-PUZ4-KFs2pPuntD/edit?usp=sharing&ouid=104272235398180261217&rtpof=true&sd=true">here</a>.
 </p>
