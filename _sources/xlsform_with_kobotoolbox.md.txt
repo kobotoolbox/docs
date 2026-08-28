@@ -1,5 +1,5 @@
 # Using XLSForm with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/79f9e4808de9549c77adcdf7b917b4e1bbaac560/source/xlsform_with_kobotoolbox.md" class="reference">17 Aug 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2dfc9935bad1a41af6ab6196427fde4366e24ece/source/xlsform_with_kobotoolbox.md" class="reference">28 Aug 2026</a>
 
 XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
@@ -165,6 +165,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 | `'select_from_list_name'` | A list name is missing from the `type` column after `select_one` or `select_multiple`. |
 | `Error: 'dict' object has no attribute 'nodeType'` | The user added a language suffix to the `form_title` column in the `settings` worksheet, such as `form_title::English (en)`. Translating the `form_title` column is not supported. |
 | `Import Failed! Duplicate node name` | The XLSForm includes a duplicated question or group name. |
+| `Import Failed! The hint column is not translated` | The XLSForm includes translations but one or more user-facing columns are not assigned to a language (e.g., `label`, `hint`, `guidance_hint`, `required_message`, `constraint_message`, `image`, `audio`, `video`). |
 </details>
 
 <br>
