@@ -1,5 +1,5 @@
 # Introduction to form logic in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8abf66000c00890da071758e2ff06d629eba805b/source/form_logic_xls.md" class="reference">25 Aug 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/33c6cc471790eafb3279d1851b4c933b783d99d0/source/form_logic_xls.md" class="reference">28 Aug 2026</a>
 
 Form logic controls the flow and behavior of your form based on responses to previous questions. It allows you to create dynamic forms that adapt to user input. For example, you can use form logic to display specific questions only when relevant, validate responses, or perform calculations automatically.
 
