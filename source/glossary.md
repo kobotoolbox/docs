@@ -64,13 +64,13 @@ Projects that have been removed from the active project list and no longer accep
 
 ## Audit
 
-A record that tracks specific actions taken during data collection or form completion, such as question timing or location, when audit metadata is enabled in a form.
+A record of specific actions taken while completing a form in KoboCollect, such as the time spent on each question or the device location.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html#audit-metadata-question">Audit metadata question</a>.
 </p>
 
-**Related term(s):** [Metadata](https://support.kobotoolbox.org/glossary.html#metadata)
+**Related term(s):** [Metadata](https://support.kobotoolbox.org/glossary.html#metadata), [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect)
 
 ---
 
