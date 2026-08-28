@@ -42,6 +42,7 @@ Explore practical guidance across KoboToolbox topics and features
   account_settings
   account_usage_limits
   two_factor_authentication
+  activity_logs
 
 .. raw:: html
 
