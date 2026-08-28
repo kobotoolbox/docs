@@ -163,7 +163,8 @@ An unnamed language may appear if your XLSForm is missing translation columns fo
 <br>
 
 <details>
-<summary><b>Additional or unneeded languages remain after uploading an XLSForm</b></summary>
-   If you upload an XLSForm that has fewer languages than an earlier version of the same project, KoboToolbox may still show languages from the previous version. To remove unneeded languages, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a> in KoboToolbox and delete any languages that are no longer used.
+<summary><b>Error message: Import Failed! The hint column is not translated</b></summary>
+  This error occurs when you upload an XLSForm with translations, but one or more user-facing columns are not assigned to a language.
+For example, if your form includes <code>label::English (en)</code> but uses <code>hint</code> instead of <code>hint::English (en)</code>, the form upload will fail with the error message <code>The hint column is not translated</code>.<br><br>
+When using translations, make sure all user-facing columns include the appropriate language name and code. This applies to the following columns: <code>label</code>, <code>hint</code>, <code>guidance_hint</code>, <code>required_message</code>, <code>constraint_message</code>, <code>image</code>, <code>audio</code>, <code>video</code>.
 </details>
-
