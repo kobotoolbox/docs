@@ -7,7 +7,7 @@
 1. [Question options in XLSForm](question_options_xls.md) (28 Aug 2026)
 1. [Using functions in XLSForm](functions_xls.md) (28 Aug 2026)
 1. [Collecting data using web forms](data_through_webforms.md) (28 Aug 2026)
+1. [Adding calculations in XLSForm](calculations_xls.md) (28 Aug 2026)
 1. [Adding a custom submission message](custom_submission_message.md) (28 Aug 2026)
 1. [Question options in the Formbuilder](question_options.md) (28 Aug 2026)
 1. [Adding translations in XLSForm](language_xls.md) (28 Aug 2026)
-1. [Dynamic data attachments in XLSForm](dynamic_data_attachment.md) (25 Aug 2026)
