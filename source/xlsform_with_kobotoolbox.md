@@ -1,5 +1,5 @@
 # Using XLSForm with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2dfc9935bad1a41af6ab6196427fde4366e24ece/source/xlsform_with_kobotoolbox.md" class="reference">28 Aug 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9ce4e6247136c1ffee8142d754ae7e4ce1057b6c/source/xlsform_with_kobotoolbox.md" class="reference">28 Aug 2026</a>
 
 XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
