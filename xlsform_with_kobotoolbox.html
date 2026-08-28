@@ -180,7 +180,7 @@
           
   <section id="using-xlsform-with-kobotoolbox">
 <h1>Using XLSForm with KoboToolbox<a class="headerlink" href="#using-xlsform-with-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/2dfc9935bad1a41af6ab6196427fde4366e24ece/source/xlsform_with_kobotoolbox.md" class="reference">28 Aug 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/9ce4e6247136c1ffee8142d754ae7e4ce1057b6c/source/xlsform_with_kobotoolbox.md" class="reference">28 Aug 2026</a></p>
 <p>XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
 building a form in the KoboToolbox Formbuilder, then download it as an
@@ -375,6 +375,15 @@ correcting the error in your spreadsheet, you will need to upload the file again
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">Failed!</span> <span class="pre">The</span> <span class="pre">hint</span> <span class="pre">column</span> <span class="pre">is</span> <span class="pre">not</span> <span class="pre">translated</span></code></p></td>
 <td class="text-left"><p>The XLSForm includes translations but one or more user-facing columns are not assigned to a language (e.g., <code class="docutils literal notranslate"><span class="pre">label</span></code>, <code class="docutils literal notranslate"><span class="pre">hint</span></code>, <code class="docutils literal notranslate"><span class="pre">guidance_hint</span></code>, <code class="docutils literal notranslate"><span class="pre">required_message</span></code>, <code class="docutils literal notranslate"><span class="pre">constraint_message</span></code>, <code class="docutils literal notranslate"><span class="pre">image</span></code>, <code class="docutils literal notranslate"><span class="pre">audio</span></code>, <code class="docutils literal notranslate"><span class="pre">video</span></code>).</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">Import</span> <span class="pre">Failed!</span> <span class="pre">Invalid</span> <span class="pre">node</span> <span class="pre">name</span></code></p></td>
+<td class="text-left"><p>The question name referenced in the error message is invalid. Question names cannot start with a number or include spaces or symbols (except underscores).</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">ODK</span> <span class="pre">Validate</span> <span class="pre">Errors:</span> <span class="pre">Group</span> <span class="pre">has</span> <span class="pre">no</span> <span class="pre">children!</span> <span class="pre">Group:</span> <span class="pre">${group_name}.</span> <span class="pre">The</span> <span class="pre">XML</span> <span class="pre">is</span> <span class="pre">invalid.</span></code></p></td>
+<td class="text-left"><p>The XLSForm contains a group with no user-facing questions (e.g., just calculations).</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">On</span> <span class="pre">the</span> <span class="pre">'survey'</span> <span class="pre">sheet,</span> <span class="pre">the</span> <span class="pre">'calculate'</span> <span class="pre">value</span> <span class="pre">is</span> <span class="pre">invalid.</span> <span class="pre">Reference</span> <span class="pre">expressions</span> <span class="pre">must</span> <span class="pre">only</span> <span class="pre">include</span> <span class="pre">question</span> <span class="pre">names,</span> <span class="pre">and</span> <span class="pre">end</span> <span class="pre">with</span> <span class="pre">'}'.</span></code></p></td>
+<td class="text-left"><p>The XLSForm includes a misspecified reference to another question (e.g., <code class="docutils literal notranslate"><span class="pre">${question_name</span></code> without the closing <code class="docutils literal notranslate"><span class="pre">}</span></code>).</p></td>
 </tr>
 </tbody>
 </table>

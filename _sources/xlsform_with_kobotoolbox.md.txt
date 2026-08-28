@@ -1,5 +1,5 @@
 # Using XLSForm with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2dfc9935bad1a41af6ab6196427fde4366e24ece/source/xlsform_with_kobotoolbox.md" class="reference">28 Aug 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9ce4e6247136c1ffee8142d754ae7e4ce1057b6c/source/xlsform_with_kobotoolbox.md" class="reference">28 Aug 2026</a>
 
 XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
@@ -166,6 +166,9 @@ correcting the error in your spreadsheet, you will need to upload the file again
 | `Error: 'dict' object has no attribute 'nodeType'` | The user added a language suffix to the `form_title` column in the `settings` worksheet, such as `form_title::English (en)`. Translating the `form_title` column is not supported. |
 | `Import Failed! Duplicate node name` | The XLSForm includes a duplicated question or group name. |
 | `Import Failed! The hint column is not translated` | The XLSForm includes translations but one or more user-facing columns are not assigned to a language (e.g., `label`, `hint`, `guidance_hint`, `required_message`, `constraint_message`, `image`, `audio`, `video`). |
+| `Import Failed! Invalid node name` | The question name referenced in the error message is invalid. Question names cannot start with a number or include spaces or symbols (except underscores). |
+| `ODK Validate Errors: Group has no children! Group: ${group_name}. The XML is invalid.` | The XLSForm contains a group with no user-facing questions (e.g., just calculations). |
+| `On the 'survey' sheet, the 'calculate' value is invalid. Reference expressions must only include question names, and end with '}'.` | The XLSForm includes a misspecified reference to another question (e.g., `${question_name` without the closing `}`). |
 </details>
 
 <br>
