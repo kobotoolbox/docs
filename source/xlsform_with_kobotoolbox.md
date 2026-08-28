@@ -165,6 +165,7 @@ correcting the error in your spreadsheet, you will need to upload the file again
 | `'select_from_list_name'` | A list name is missing from the `type` column after `select_one` or `select_multiple`. |
 | `Error: 'dict' object has no attribute 'nodeType'` | The user added a language suffix to the `form_title` column in the `settings` worksheet, such as `form_title::English (en)`. Translating the `form_title` column is not supported. |
 | `Import Failed! Duplicate node name` | The XLSForm includes a duplicated question or group name. |
+| `Import Failed! The hint column is not translated` | The XLSForm includes translations but one or more user-facing columns are not assigned to a language (e.g., `label`, `hint`, `guidance_hint`, `required_message`, `constraint_message`, `image`, `audio`, `video`). |
 </details>
 
 <br>
