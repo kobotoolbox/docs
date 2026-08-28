@@ -127,6 +127,7 @@ The format of the default response depends on the question type and the data bei
 | `select_one` | Choice **name** (as defined in the choices worksheet) |
 | `select_multiple` | Choice **name(s)**, separated by a **space** if there are multiple |
 | `date` | Date in the YYYY-MM-DD format. If needed, prefix the date with a single quote (') in Excel to avoid potential formatting issues. | 
+| `time` | Time in the HH:MM format (e.g., `9:00` or `13:00`). | 
 
 ### Setting dynamic default responses
 
