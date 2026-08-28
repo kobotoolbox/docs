@@ -133,7 +133,8 @@ The format of the default response depends on the question type and the data bei
 | Text | Text (without quotation marks) |
 | Select One | Choice <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML value</a> |
 | Select Many | Choice <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML values</a>, separated by a space if there are multiple |
-| Date | Date in the YYYY-MM-DD format. |
+| Date | Date in the YYYY-MM-DD format |
+| Time | Time in the HH:MM format | 
 
 ## Appearance (Advanced)
 
