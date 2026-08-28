@@ -3,6 +3,7 @@
 
 1. [Glossary of KoboToolbox terms](glossary.md) (28 Aug 2026)
 1. [Using XLSForm with KoboToolbox](xlsform_with_kobotoolbox.md) (28 Aug 2026)
+1. [Creating a KoboToolbox account](creating_account.md) (28 Aug 2026)
 1. [Introduction to form logic in XLSForm](form_logic_xls.md) (28 Aug 2026)
 1. [Question options in XLSForm](question_options_xls.md) (28 Aug 2026)
 1. [Using functions in XLSForm](functions_xls.md) (28 Aug 2026)
@@ -10,4 +11,3 @@
 1. [Adding calculations in XLSForm](calculations_xls.md) (28 Aug 2026)
 1. [Compliance with GDPR](gdpr.md) (28 Aug 2026)
 1. [Adding a custom submission message](custom_submission_message.md) (28 Aug 2026)
-1. [Question options in the Formbuilder](question_options.md) (28 Aug 2026)
