@@ -79,6 +79,7 @@ Examples of more advanced calculations include:
 | `selected-at(${gps}, 0)` | Isolate latitude from GPS coordinates. |
 | `selected-at(${gps}, 1)` | Isolate longitude from GPS coordinates. |
 | `if(regex(${id}, '^ML-'), 'yes', 'no')` | Create a binary variable that takes `yes` if the respondent ID starts with “ML-”. |
+| `max(instance('pcodes')/root/item/admin_levels)` | Returns the maximum value from the `admin_level` column of the `pcodes` external CSV. |
 
 ### Setting dynamic default responses
 
