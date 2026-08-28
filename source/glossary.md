@@ -622,6 +622,19 @@ A feature that allows KoboToolbox to automatically send data to external systems
 
 ---
 
+## Required question
+
+A question that must be answered before the respondent can continue to the next page or submit the form. Required questions can be set to always require a response or only require a response when specific conditions are met. Required questions are also called **Mandatory questions** in the Formbuilder.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#mandatory-response">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html#required-questions">Question options in XLSForm</a>.
+</p>
+
+**Related term(s):** [Form logic](https://support.kobotoolbox.org/glossary.html#form-logic)
+
+
+---
+
 ## Saved forms (KoboCollect)
 
 Forms that contain data entered from the KoboCollect app. This includes drafts, finalized forms, and forms that have already been sent to the server.
@@ -697,6 +710,19 @@ Rules that define what counts as an acceptable answer for a question, such as re
 </p>
 
 **Related term(s):** [Form logic](https://support.kobotoolbox.org/glossary.html#form-logic)
+
+---
+
+## Validation status
+
+A status assigned to a submission in the data table to indicate whether it has been approved, not approved, or placed on hold. Validation statuses help teams track data quality and identify submissions that require further review or follow-up.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/viewing_validating_data.html">Viewing and validating your data</a>.
+</p>
+
+**Related term(s):** [Submission](https://support.kobotoolbox.org/glossary.html#submission)
+
 
 ---
 
