@@ -169,7 +169,7 @@ To avoid duplicate index values, you can set up the form to:
 | calculate | count |  | count(instance('monitoring')/root/data[participant_id = current()/../participant_id]) |
 | calculate | id_count | | concat(${participant_id}, ‘_’, ${count}) |
 | calculate | enrollment_id | | concat(${participant_id}, ‘_0’) |
-| text | full_name | Participant full name | instance(‘monitoring’)/root/id_count=current()/../enrollment_id][position()=1]/full_name |
+| text | full_name | Participant full name | instance(‘monitoring’)/root/data[id_count=current()/../enrollment_id][position()=1]/full_name |
 | survey | 
 
 In the example above:
