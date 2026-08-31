@@ -180,7 +180,7 @@
           
   <section id="dynamic-data-attachments-in-xlsform">
 <h1>Dynamic data attachments in XLSForm<a class="headerlink" href="#dynamic-data-attachments-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7e6e20cc2edbfa73c2638d814f54a95d8a0a7cbd/source/dynamic_data_attachment.md" class="reference">25 Aug 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/451973be61331a721e00b85d299228e0cbee1714/source/dynamic_data_attachment.md" class="reference">31 Aug 2026</a></p>
 <p>Dynamic linking allows you to use data from a <strong>parent project</strong> within <strong>child projects</strong>, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.</p>
 <p class="note">
     <strong>Note:</strong> Dynamic data attachments function similarly to the <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a> function but eliminate the need for separate CSV files, since the data from a linked parent project serves as the data source.
@@ -525,7 +525,7 @@
 <tr class="row-odd"><td class="text-left"><p>text</p></td>
 <td class="text-left"><p>full_name</p></td>
 <td class="text-left"><p>Participant full name</p></td>
-<td class="text-left"><p>instance(‘monitoring’)/root/id_count=current()/../enrollment_id][position()=1]/full_name</p></td>
+<td class="text-left"><p>instance(‘monitoring’)/root/data[id_count=current()/../enrollment_id][position()=1]/full_name</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>survey</p></td>
 <td class="text-left"><p></p></td>
