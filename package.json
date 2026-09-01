@@ -17,10 +17,10 @@
   "devDependencies": {
     "fantasticon": "^3.0.0",
     "autoprefixer": "^10.5.4",
-    "browserslist": "^4.28.2",
-    "postcss": "^8.5.24",
+    "browserslist": "^4.28.8",
+    "postcss": "^8.5.26",
     "postcss-cli": "^11.0.1",
-    "sass": "^1.102.0",
+    "sass": "^1.103.1",
     "simple-git": "^3.36.0"
   },
   "browserslist": [
