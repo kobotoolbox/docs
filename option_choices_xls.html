@@ -180,7 +180,7 @@
           
   <section id="managing-option-choices-in-xlsform">
 <h1>Managing option choices in XLSForm<a class="headerlink" href="#managing-option-choices-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/option_choices_xls.md" class="reference">4 Jan 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f516e7db95c095da8db4dcce252eca8e608fbee5/source/option_choices_xls.md" class="reference">8 Sep 2026</a></p>
 <p>XLSForm simplifies the creation and management of <strong>option choice lists</strong> for survey forms. This is particularly useful for long or repetitive lists, such as country or city names. Option choices are defined for <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>, or <code class="docutils literal notranslate"><span class="pre">rank</span></code> <a class="reference external" href="https://support.kobotoolbox.org/question_types_xls.html#select-question-types">questions</a>.</p>
 <p>This article details how to define and manage option choices in XLSForm for complex forms, including best practices for defining choice names.</p>
 <p class="note">
@@ -324,6 +324,14 @@ For more information, see <a href="form_settings_xls.html">Form settings in XLSF
 <p>For very large choice lists, containing hundreds or thousands of options, it is recommended to use <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span></code> or <code class="docutils literal notranslate"><span class="pre">select_multiple_from_file</span></code> question types, which link a survey question to an <strong>external file</strong> containing the list of choices. This approach is more efficient than manually entering choices inside the XLSForm, helps avoid slow loading times and large XLSForms, and simplifies managing or editing extensive option sets.</p>
 <p class="note">
 To learn more about external choice lists in XLSForm, see <a href="select_from_file_xls.html">Selecting options from an external file</a>.
+</p>
+</section>
+<section id="adding-an-other-option">
+<h3>Adding an Other option<a class="headerlink" href="#adding-an-other-option" title="Link to this heading">¶</a></h3>
+<p>You can add an <strong>Other</strong> option to a select question manually by adding it to the choice list and using <a class="reference external" href="https://support.kobotoolbox.org/skip_logic_xls.html">skip logic</a> to display an additional text question when <strong>Other</strong> is selected.</p>
+<p>Alternatively, you can add <code class="docutils literal notranslate"><span class="pre">or_other</span></code> in your XLSForm after the choice list name in the <code class="docutils literal notranslate"><span class="pre">type</span></code> column (e.g., <code class="docutils literal notranslate"><span class="pre">select_one</span> <span class="pre">list_name</span> <span class="pre">or_other</span></code>). This automatically adds an <strong>Other</strong> option and a corresponding text question for the respondent to specify their response. The text question is displayed only when Other is selected.</p>
+<p class="note">
+To learn more about skip logic in XLSForm, see <a href="https://support.kobotoolbox.org/skip_logic_xls.html">Adding skip logic in XLSForm.</a>.
 </p>
 </section>
 </section>
