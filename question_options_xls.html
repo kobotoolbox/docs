@@ -180,7 +180,7 @@
           
   <section id="question-options-in-xlsform">
 <h1>Question options in XLSForm<a class="headerlink" href="#question-options-in-xlsform" title="Link to this heading">Â¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7c2dc24d212ec0b9778129b4bc42f1a0e5ea4802/source/question_options_xls.md" class="reference">8 Sep 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f4ad1949892ed4d57fc313f6e911f698e4761a10/source/question_options_xls.md" class="reference">8 Sep 2026</a></p>
 <p>When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required.</p>
 <p>This article covers the most common question options and how to add them to your XLSForm, including question hints, required questions, default responses, and question parameters.</p>
 <p class="note">
@@ -552,7 +552,10 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academyâ
 <tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">body::accept</span></code></p></td>
 <td class="text-left"><p>To limit or expand the accepted file types for <code class="docutils literal notranslate"><span class="pre">file</span></code> questions, specify file extensions in the <code class="docutils literal notranslate"><span class="pre">body::accept</span></code> column, separated by a comma (e.g., .pdf, .doc, .png).</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">hxl</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">image</span></code>, <code class="docutils literal notranslate"><span class="pre">audio</span></code>, <code class="docutils literal notranslate"><span class="pre">video</span></code></p></td>
+<td class="text-left"><p>To <a href="https://support.kobotoolbox.org/media.html">add media to a question</a>, include the relevant file name in the <code class="docutils literal notranslate"><span class="pre">image</span></code>, <code class="docutils literal notranslate"><span class="pre">audio</span></code>, or <code class="docutils literal notranslate"><span class="pre">video</span></code> column. The corresponding media file must also be uploaded to the KoboToolbox project.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">hxl</span></code></p></td>
 <td class="text-left"><p>To include <a href="https://hxlstandard.org">Humanitarian Exchange Language</a> (HXL) tags in your form, specify the tag (and optional attribute) in the <code class="docutils literal notranslate"><span class="pre">hxl</span></code> column, following the format <code class="docutils literal notranslate"><span class="pre">#tag</span></code> or <code class="docutils literal notranslate"><span class="pre">#tag+attribute</span></code>.</p></td>
 </tr>
 </tbody>
