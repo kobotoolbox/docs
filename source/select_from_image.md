@@ -75,3 +75,12 @@ To upload media files:
 <p class="note">
 To learn more about uploading media files, see <a href="https://support.kobotoolbox.org/upload_media.html">Uploading media files to a project</a>.
 </p>
+
+## Troubleshooting
+
+<details>
+  <summary><strong>Image map does not display after skip logic condition changes
+</strong></summary>
+When a <code>select_one</code> question uses the <code>image-map</code> appearance with skip logic, the SVG image may not display if the question changes from hidden to visible after its relevance condition becomes true.<br><br>To avoid this issue, place the <code>select_one</code> question in a group and display the group on a separate page using the <code>field-list</code> appearance and the pages theme. Apply the relevance condition to the group instead of directly to the <code>select_one</code> question.
+</details>
+
