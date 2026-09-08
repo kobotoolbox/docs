@@ -606,27 +606,15 @@ html body {
   margin-bottom: 0.25em;
 }
 .page .page__body table {
-  table-layout: fixed;
-  width: 100%;
   margin-bottom: 1.5em;
 }
 .page .page__body table th p {
   font-weight: 500;
   margin: 0 auto;
   text-align: left;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
 }
 .page .page__body table td {
   text-align: left;
-  max-width: 300px;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-}
-.page .page__body table td p {
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  margin: 0;
 }
 .page .page__body table td.text-left {
   text-align: left;
