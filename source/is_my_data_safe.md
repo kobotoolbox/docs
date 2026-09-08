@@ -1,5 +1,5 @@
 # KoboToolbox data security measures
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6cd4cc8f01686b7e101c7b4e66749c75065154ad/source/is_my_data_safe.md" class="reference">22 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4b23386a4f434718a2d9d1c203661406b44dbba0/source/is_my_data_safe.md" class="reference">8 Sep 2026</a>
 
 
 We take data protection very seriously. Data security means protecting our
