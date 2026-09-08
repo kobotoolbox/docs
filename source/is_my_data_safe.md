@@ -6,7 +6,7 @@ We take data protection very seriously. Data security means protecting our
 users’ data from any threats that may exist. This article summarizes some of our
 administrative, physical, organizational, and technical measures for enforcing
 data security on the KoboToolbox servers maintained by Kobo, Inc., the
-[nonprofit organization behind KoboToolbox](https://www.kobotoolbox.org/about-us/).
+[nonprofit organization behind KoboToolbox](https://www.kobo.ngo/about).
 
 We are fully compliant with the European Union’s General Data Protection
 Regulation (GDPR). If you are located in the European Union,
