@@ -1,5 +1,5 @@
 # Selecting options from an image
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/15f50a2db120f45d85cea0dc005d89f72085c4e7/source/select_from_image.md" class="reference">8 Sep 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4bc925c7cedea6e93fefb64475e42df78c4f1af4/source/select_from_image.md" class="reference">8 Sep 2026</a>
 
 Selecting options from an image allows respondents to tap or click directly on **specific areas of an SVG file** instead of choosing from a text list. This feature works in both web forms and the KoboCollect Android app.
 
