@@ -2,6 +2,7 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/050dcc9c8bfb4c528208bbe886979999037f1554/source/recently_updated.md" class="reference">28 Oct 2025</a>
 
 1. [About KoboToolbox](about_kobotoolbox.md) (8 Sep 2026)
+1. [KoboToolbox data security measures](is_my_data_safe.md) (8 Sep 2026)
 1. [Dynamic data attachments in XLSForm](dynamic_data_attachment.md) (31 Aug 2026)
 1. [Monitoring project and account activity](activity_logs.md) (28 Aug 2026)
 1. [Compliance with GDPR](gdpr.md) (28 Aug 2026)
@@ -10,4 +11,3 @@
 1. [Creating a KoboToolbox account](creating_account.md) (28 Aug 2026)
 1. [Adding calculations in XLSForm](calculations_xls.md) (28 Aug 2026)
 1. [Adding translations in XLSForm](language_xls.md) (28 Aug 2026)
-1. [Using functions in XLSForm](functions_xls.md) (28 Aug 2026)
