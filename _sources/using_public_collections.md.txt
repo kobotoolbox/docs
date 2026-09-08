@@ -1,5 +1,5 @@
 # Public collections in the KoboToolbox library
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/using_public_collections.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d64a6c60cdfcdc6b8cdd8a2f58570d02f4f10250/source/using_public_collections.md" class="reference">8 Sep 2026</a>
 
 Public collections allow KoboToolbox users to share and reuse predefined survey questions, question blocks, and full templates. When a collection is made public, it becomes available to all users on the same KoboToolbox server. Public collections may include commonly used questions or question groups, such as demographic characteristics or other standard indicators.
 
@@ -180,4 +180,6 @@ For example, `owner__username__icontains:team` searches for public collections w
 
 You can combine filters using **AND**, **OR**, and **NOT** for more precise results. 
 
-For example, `owner__username__icontains:team AND tags__name__icontains:baseline` searches within the owner username field and the tags field. 
+For example: 
+* `owner__username__icontains:team AND tags__name__icontains:baseline` searches within the owner username field and the tags field
+* `tags__name:health AND tags__name:refugees` filters for assets tagged with both health and refugees

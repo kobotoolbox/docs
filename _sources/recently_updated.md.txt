@@ -3,6 +3,7 @@
 
 1. [About KoboToolbox](about_kobotoolbox.md) (8 Sep 2026)
 1. [KoboToolbox data security measures](is_my_data_safe.md) (8 Sep 2026)
+1. [Public collections in the KoboToolbox library](using_public_collections.md) (8 Sep 2026)
 1. [Viewing and validating your data](viewing_validating_data.md) (8 Sep 2026)
 1. [Question options in XLSForm](question_options_xls.md) (8 Sep 2026)
 1. [Uploading media files to a project](upload_media.md) (8 Sep 2026)
@@ -10,4 +11,3 @@
 1. [Monitoring project and account activity](activity_logs.md) (28 Aug 2026)
 1. [Compliance with GDPR](gdpr.md) (28 Aug 2026)
 1. [Glossary of KoboToolbox terms](glossary.md) (28 Aug 2026)
-1. [Adding a custom submission message](custom_submission_message.md) (28 Aug 2026)

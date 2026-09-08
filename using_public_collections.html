@@ -180,7 +180,7 @@
           
   <section id="public-collections-in-the-kobotoolbox-library">
 <h1>Public collections in the KoboToolbox library<a class="headerlink" href="#public-collections-in-the-kobotoolbox-library" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/using_public_collections.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d64a6c60cdfcdc6b8cdd8a2f58570d02f4f10250/source/using_public_collections.md" class="reference">8 Sep 2026</a></p>
 <p>Public collections allow KoboToolbox users to share and reuse predefined survey questions, question blocks, and full templates. When a collection is made public, it becomes available to all users on the same KoboToolbox server. Public collections may include commonly used questions or question groups, such as demographic characteristics or other standard indicators.</p>
 <p>By making content public, users contribute to a shared library that helps standardize surveys and promote widely used measures across the Kobo community.</p>
 <p>This article explains how to locate, use, and create public collections in the KoboToolbox library.</p>
@@ -394,7 +394,11 @@ To learn more about creating collections in your library, see <a href="https://s
 <section id="combining-conditions">
 <h3>Combining conditions<a class="headerlink" href="#combining-conditions" title="Link to this heading">¶</a></h3>
 <p>You can combine filters using <strong>AND</strong>, <strong>OR</strong>, and <strong>NOT</strong> for more precise results.</p>
-<p>For example, <code class="docutils literal notranslate"><span class="pre">owner__username__icontains:team</span> <span class="pre">AND</span> <span class="pre">tags__name__icontains:baseline</span></code> searches within the owner username field and the tags field.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">owner__username__icontains:team</span> <span class="pre">AND</span> <span class="pre">tags__name__icontains:baseline</span></code> searches within the owner username field and the tags field</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tags__name:health</span> <span class="pre">AND</span> <span class="pre">tags__name:refugees</span></code> filters for assets tagged with both health and refugees</p></li>
+</ul>
 </section>
 </section>
 </section>
