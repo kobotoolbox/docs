@@ -1,5 +1,5 @@
 # Deploying forms for data collection
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/deploy_form_new_project.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/263ecd9827add48596fc07c5564ebf5a7762ebfe/source/deploy_form_new_project.md" class="reference">8 Sep 2026</a>
 
 Before you can collect data in KoboToolbox, your form must be **deployed**. Deployment makes the form live and available for submissions. You can **redeploy** a form any time you make changes and want those changes to go live. 
 
