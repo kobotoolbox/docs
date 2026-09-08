@@ -66,8 +66,12 @@ For each expression in the table below:
 | `instance('parent')/root/data[parent_index_group/parent_index_question= current()/../child_index_question]/parent_group/ parent_question` | Returns the value of `parent_question` (in `parent_group`) from the parent project where `child_index_question` in the child project is equal to `parent_index_question` in the parent project. |
 | `instance('parent')/root/data[parent_index_group/parent_index_question= current()/../child_index_question][position()= 1]/parent_group/parent_question` | Same as above, but specifies that only data from the first instance of `parent_index_question` should be returned, using the `[position() = 1]` argument. Used in case of possible duplicates in the parent form. |
 | `sum(instance('parent')/root/data/parent_group/parent_question)` | Returns the sum of values from `parent_question` (in `parent_group`) from the parent project. Note that `parent_question must be numeric` |
-| `max(instance('parent')/root/data/parent_group/parent_question)`         | Returns the maximum value entered in `parent_questio`n (in parent_group) from the parent project. Note that `parent_question` must be numeric.     |
-| `min(instance('parent')/root/data/parent_group/parent_question)`      | Returns the minimum value entered in `parent_question` (in `parent_group`) from the parent project. Note that `parent_question` must be numeric.     |   
+| `max(instance('parent')/root/data/parent_group/parent_question)`         | Returns the maximum value entered in `parent_question` (in parent_group) from the parent project. Note that `parent_question` must be numeric or a date.     |
+| `min(instance('parent')/root/data/parent_group/parent_question)`      | Returns the minimum value entered in `parent_question` (in `parent_group`) from the parent project. Note that `parent_question` must be numeric or a date.     |   
+| `max(instance('parent')/root/data[parent_group/parent_index_question = current()/../child_index_question]/parent_question)`         | Returns the maximum value entered in `parent_question` (in parent_group) from the parent project, where `child_index_question` in the child project is equal to `parent_index_question` in the parent project. Note that `parent_question` must be numeric or a date.     |
+| `min(instance('parent')/root/data[parent_group/parent_index_question = current()/../child_index_question]/parent_question)`      | Returns the minimum value entered in `parent_question` (in `parent_group`) from the parent project, where `child_index_question` in the child project is equal to `parent_index_question` in the parent project. Note that `parent_question` must be numeric or a date.     |   
+
+
 
 
 <p class="note">
