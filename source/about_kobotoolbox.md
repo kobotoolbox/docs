@@ -9,7 +9,7 @@ KoboToolbox makes high quality data accessible to social impact organizations wo
 
 <h3>Why KoboToolbox is unique</h3>
 
-KoboToolbox is hosted and maintained by the international nonprofit organization [Kobo](https://www.kobotoolbox.org/about-us/the-organization/). Our mission is to empower individuals and organizations around the world with high quality data collection tools for creating data-driven social impact.
+KoboToolbox is hosted and maintained by the international nonprofit organization [Kobo](https://www.kobo.ngo/about). Our mission is to empower individuals and organizations around the world with high quality data collection tools for creating data-driven social impact.
 
 <p class="note">
   Read more about <a href="https://www.kobotoolbox.org/about-us/our-mission/">our mission</a>.
