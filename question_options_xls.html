@@ -180,7 +180,7 @@
           
   <section id="question-options-in-xlsform">
 <h1>Question options in XLSForm<a class="headerlink" href="#question-options-in-xlsform" title="Link to this heading">Â¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f4ad1949892ed4d57fc313f6e911f698e4761a10/source/question_options_xls.md" class="reference">8 Sep 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/718ea91061ff39c79cbda4fcaac42daf52679d3e/source/question_options_xls.md" class="reference">8 Sep 2026</a></p>
 <p>When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the <code class="docutils literal notranslate"><span class="pre">survey</span></code> worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required.</p>
 <p>This article covers the most common question options and how to add them to your XLSForm, including question hints, required questions, default responses, and question parameters.</p>
 <p class="note">
@@ -501,31 +501,35 @@ For hands-on practice with question options in XLSForm, see KoboToolbox Academyâ
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">rank</span></code>, <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code></p></td>
 <td class="text-left"><p>Randomizes the order of option choices</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">start=1</span> <span class="pre">end=5</span> <span class="pre">step=1</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">seed=34</span></code> or <code class="docutils literal notranslate"><span class="pre">seed=${calc}</span></code></p></td>
+<td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">rank</span></code>, <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code></p></td>
+<td class="text-left"><p>Combine with <code class="docutils literal notranslate"><span class="pre">randomize</span></code> to set a seed for reproducible randomization</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">start=1</span> <span class="pre">end=5</span> <span class="pre">step=1</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">range</span></code></p></td>
 <td class="text-left"><p>Defines the minimum value, maximum value, and interval between numbers</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">capture-accuracy=20</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">capture-accuracy=20</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geopoint</span></code></p></td>
 <td class="text-left"><p>Specifies the minimum acceptable <a class="reference external" href="https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates">GPS accuracy</a> (in meters) for automatically capturing a location. Defaults to 5m.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">warning-accuracy=50</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">warning-accuracy=50</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">geopoint</span></code></p></td>
 <td class="text-left"><p>Triggers a warning message if the <a class="reference external" href="https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates">GPS accuracy</a> (in meters) is not within the specified accuracy threshold. Defaults to 100m.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">max-pixels=480</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">max-pixels=480</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">image</span></code></p></td>
 <td class="text-left"><p>Limits the maximum pixels for a photo, to reduce the image file size and improve upload speed.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=normal</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=normal</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audio</span></code>, <code class="docutils literal notranslate"><span class="pre">background-audio</span></code></p></td>
 <td class="text-left"><p>Captures a higher quality audio recording (~ 30 MB/hour). This is the default parameter for <code class="docutils literal notranslate"><span class="pre">audio</span></code> questions.</p></td>
 </tr>
-<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=low</span></code></p></td>
+<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=low</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audio</span></code>, <code class="docutils literal notranslate"><span class="pre">background-audio</span></code></p></td>
 <td class="text-left"><p>Captures a lower quality audio recording (~ 11 MB/hour).</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=voice-only</span></code></p></td>
+<tr class="row-even"><td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">quality=voice-only</span></code></p></td>
 <td class="text-left"><p><code class="docutils literal notranslate"><span class="pre">audio</span></code>, <code class="docutils literal notranslate"><span class="pre">background-audio</span></code></p></td>
 <td class="text-left"><p>Captures the lowest quality audio recording (~ 5 MB/hour). This is the default parameter for <code class="docutils literal notranslate"><span class="pre">background-audio</span></code> questions.</p></td>
 </tr>
