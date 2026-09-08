@@ -611,6 +611,10 @@ html body {
 .page .page__body table th p {
   font-weight: 500;
   margin: 0 auto;
+  text-align: left;
+}
+.page .page__body table td {
+  text-align: left;
 }
 .page .page__body table td.text-left {
   text-align: left;
