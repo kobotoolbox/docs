@@ -24,7 +24,58 @@ After a form has already been deployed, you will be prompted to **REDEPLOY** whe
     Always redeploy forms after making changes to form media, translations, or form titles, even if KoboToolbox does not prompt you to redeploy.
 </p>
 
-## Updating forms after changes have been redeployed
+### Best practices for deploying forms
+
+The following steps are recommended before launching data collection:
+
+1. **Test the form preview before deployment.** Only deploy a new form, or redeploy changes to an existing form, after testing it thoroughly in the form preview. This helps prevent faulty forms from going live.
+2. **Test the live deployed form.** After deployment, open the form and submit test data to confirm that submissions work properly and the data appears in the data table as intended.
+3. **If relevant, test the form in KoboCollect.** Always test the same data collection method(s) that will be used for actual data collection, whether that is web forms, KoboCollect, or both. This is especially important for KoboCollect, since it cannot be fully tested until the form has been deployed.
+4. **Share your form using View only mode for external testing.** Once a form has been deployed, you can also share it with others for testing by using the **View only** [web form mode](https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes).
+
+Once you have thoroughly tested your form, you can begin data collection. Testing thoroughly before launch helps reduce the need to make changes after data collection has started.
+
+## Making changes to deployed forms
+You can continue to make changes to your forms even **after data collection has started**. However, those changes can affect both your data structure and your ability to review or edit older submissions. 
+
+Because of this, it is best to **avoid major structural changes** once live data collection is underway unless they are absolutely necessary. 
+
+<p class="note">
+<strong>Note:</strong>
+    After making changes to a deployed form, do not forget to test and <strong>redeploy</strong> the form for changes to apply.
+</p>
+
+### Implications for data structure
+
+Changes to deployed forms that can affect your data structure include:
+
+|Change | Implication for data structure |
+| :--- | :--- |
+| Changing a question’s [data column name](https://support.kobotoolbox.org/glossary.html#data-column-name) | KoboToolbox will treat it as a new variable and create a new column in the data table. |
+| Changing a question type while keeping the same data column name | This can create inconsistent data in the same column and lead to errors (e.g., in the **DATA > Reports** view). |
+| Moving questions into or out of groups | KoboToolbox will treat these questions as new variables and create new columns in the data table. |
+| Removing choices from a choice list | Previous submissions may still contain those choice values, but they may no longer have an associated label in the form |
+| Adding new choices to a Select one or Select many question | Make sure each new choice has a unique [XML value](https://support.kobotoolbox.org/glossary.html#xml-value) within a given choice list. |
+| Deleting a question that is used elsewhere in the form | If the question is referenced in a calculation, relevance condition, constraint, or another expression, you will also need to update those references. |
+| Changing question or choice labels | Does not affect the data structure if the data column name or XML value stays the same, but previously collected data will use the updated label. |
+| Changing the meaning of existing choice values | Changing choice names or labels can make data inconsistent across form versions and lead to misinterpretation. For example, this can happen if you reverse the meaning of values such as `1 = Yes` and `0 = No`, or change the direction of a Likert scale. |
+
+<p class="note">
+<strong>Note:</strong>
+    If your form uses multiple languages, remember to also <a href="https://support.kobotoolbox.org/language_dashboard.html">update the translations</a> whenever you change the form. This is easy to miss after redeployment.
+</p>
+
+### Implications for editing past submissions
+
+Changes to a form can also affect how older submissions behave **when you edit them**, because a submission created with an earlier version of the form may no longer match the current version. For example:
+
+|Change | Implication for editing past submissions |
+| :--- | :--- |
+| Adding new required questions | Older submissions may require new answers before they can be submitted again. |
+| Removing questions or adding skip logic | Older submissions may lose data previously collected in those questions when they are edited. |
+| Adding new validation rules or constraints | Older responses may no longer meet the updated rules and may not be submitted again. |
+
+## Updating data collection devices after reployment
 
 After you redeploy a form, users will need to refresh or download the updated version to see the changes.
 
@@ -48,43 +99,6 @@ Retrieving the latest version of a form can be [done manually](https://support.k
 <strong>Note:</strong>
     After redeploying a form, make sure all data collectors update to the latest version. Otherwise, some users may continue submitting data with an outdated version, which can lead to errors or inconsistencies in the collected data. 
 </p>
-
-## Best practices for deploying and redeploying forms
-
-The following steps are recommended before launching data collection:
-
-1. **Test the form preview before deployment.** Only deploy a new form, or redeploy changes to an existing form, after testing it thoroughly in the form preview. This helps prevent faulty forms from going live.
-2. **Test the live deployed form.** After deployment, open the form and submit test data to confirm that submissions work properly and the data appears in the data table as intended.
-3. **If relevant, test the form in KoboCollect.** Always test the same data collection method(s) that will be used for actual data collection, whether that is web forms, KoboCollect, or both. This is especially important for KoboCollect, since it cannot be fully tested until the form has been deployed.
-4. **Share your form using View only mode for external testing.** Once a form has been deployed, you can also share it with others for testing by using the **View only** [web form mode](https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes).
-
-Once you have thoroughly tested your form, you can begin data collection. Testing thoroughly before launch helps reduce the need to make changes after data collection has started.
-
-### Important considerations when redeploying a form
-
-If you make changes to a form after data collection has already started, those changes can affect both your data structure and your ability to review or edit older submissions. Because of this, it is best to **avoid major structural changes** once live data collection is underway unless they are absolutely necessary. 
-
-Changes that can affect your data structure include:
-
-- **Changing a question’s [data column name](https://support.kobotoolbox.org/glossary.html#data-column-name)**: KoboToolbox will treat it as a new variable and create a new column in the data table.
-- **Changing a question type while keeping the same data column name**: This can create inconsistent data in the same column and lead to errors (e.g., in the **DATA > Reports** view).
-- **Moving questions into or out of groups**: KoboToolbox will treat these questions as new variables and create new columns in the data table.
-- **Removing choices from a choice list**: Previous submissions may still contain those choice values, but they may no longer have an associated label in the form.
-- **Adding new choices to a Select one or Select many question**: Make sure each new choice has a unique [XML value](https://support.kobotoolbox.org/glossary.html#xml-value) within a given choice list.
-- **Deleting a question that is used elsewhere in the form**: If the question is referenced in a calculation, relevance condition, constraint, or another expression, you will also need to update those references.
-- **Changing question or choice labels**: Does not affect the data structure if the data column name or XML value stays the same, but previously collected data will use the updated label.
-- **Changing the meaning of existing choice values**: Changing choice names or labels can make data inconsistent across form versions and lead to misinterpretation. For example, this can happen if you reverse the meaning of values such as `1 = Yes` and `0 = No`, or change the direction of a Likert scale.
-
-<p class="note">
-<strong>Note:</strong>
-    If your form uses multiple languages, remember to also <a href="https://support.kobotoolbox.org/language_dashboard.html">update the translations</a> whenever you change the form. This is easy to miss after redeployment.
-</p>
-
-Changes to a form can also affect how older submissions behave when you edit them, because a submission created with an earlier version of the form may no longer match the current version. For example:
-
-- **Adding new required questions**: Older submissions may require new answers before they can be submitted again.
-- **Removing questions or adding skip logic**: Older submissions may lose data previously collected in those questions when they are edited.
-- **Adding new validation rules or constraints**: Older responses may no longer meet the updated rules and may not be submitted again.
 
 ## Troubleshooting
 
