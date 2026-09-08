@@ -1,5 +1,5 @@
 # About KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/458e67f6435478060280ff7bd7da438975c073a0/source/about_kobotoolbox.md" class="reference">14 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ddbe2288b63ff7ec7b3b8f64ccedc7015a4d8a3e/source/about_kobotoolbox.md" class="reference">8 Sep 2026</a>
 
 
 
@@ -9,7 +9,7 @@ KoboToolbox makes high quality data accessible to social impact organizations wo
 
 <h3>Why KoboToolbox is unique</h3>
 
-KoboToolbox is hosted and maintained by the international nonprofit organization [Kobo](https://www.kobotoolbox.org/about-us/the-organization/). Our mission is to empower individuals and organizations around the world with high quality data collection tools for creating data-driven social impact.
+KoboToolbox is hosted and maintained by the international nonprofit organization [Kobo](https://www.kobo.ngo/about). Our mission is to empower individuals and organizations around the world with high quality data collection tools for creating data-driven social impact.
 
 <p class="note">
   Read more about <a href="https://www.kobotoolbox.org/about-us/our-mission/">our mission</a>.
