@@ -1,5 +1,5 @@
 # About KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/458e67f6435478060280ff7bd7da438975c073a0/source/about_kobotoolbox.md" class="reference">14 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ddbe2288b63ff7ec7b3b8f64ccedc7015a4d8a3e/source/about_kobotoolbox.md" class="reference">8 Sep 2026</a>
 
 
 
