@@ -1,5 +1,5 @@
 # Selecting options from an image
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/15f50a2db120f45d85cea0dc005d89f72085c4e7/source/select_from_image.md" class="reference">8 Sep 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4bc925c7cedea6e93fefb64475e42df78c4f1af4/source/select_from_image.md" class="reference">8 Sep 2026</a>
 
 Selecting options from an image allows respondents to tap or click directly on **specific areas of an SVG file** instead of choosing from a text list. This feature works in both web forms and the KoboCollect Android app.
 
@@ -79,8 +79,16 @@ To learn more about uploading media files, see <a href="https://support.kobotool
 ## Troubleshooting
 
 <details>
-  <summary><strong>Image map does not display after skip logic condition changes
-</strong></summary>
-When a <code>select_one</code> question uses the <code>image-map</code> appearance with skip logic, the SVG image may not display if the question changes from hidden to visible after its relevance condition becomes true.<br><br>To avoid this issue, place the <code>select_one</code> question in a group and display the group on a separate page using the <code>field-list</code> appearance and the pages theme. Apply the relevance condition to the group instead of directly to the <code>select_one</code> question.
+  <summary><strong>Image map does not display after skip logic condition changes</strong></summary>
+When a <code>select_one</code> question uses the <code>image-map</code> appearance with skip logic, the SVG image may not display if the question changes from hidden to visible after its relevance condition becomes true.<br><br>To avoid this issue, place the <code>select_one</code> question in a group and display the group on a separate page using the <code>field-list</code> appearance and the pages theme. 
 </details>
+
+<br>
+
+<details>
+  <summary><strong>Background image appears washed out in an image map</strong></summary>
+If an SVG used with the <code>image-map</code> appearance includes a raster image as its background, the background may appear washed out or parts of the image may not display correctly in web forms.<br><br>This happens because KoboToolbox web forms remove references to external or embedded raster resources in SVG files for security reasons. To avoid this issue, convert the raster elements in the SVG to vector elements before uploading the file. This keeps the image self-contained and allows the background and other visual elements to display correctly. 
+</details>
+
+
 
