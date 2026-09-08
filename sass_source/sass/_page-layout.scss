@@ -108,12 +108,16 @@ html body {
     }
 
     table {
+      table-layout: fixed;
+      width: 100%;
       margin-bottom: 1.5em;
       th {
         p {
           font-weight: 500;
           margin: 0 auto;
           text-align: left;
+          word-wrap: break-word;
+          overflow-wrap: break-word;
         }
       }
       td {
@@ -121,6 +125,11 @@ html body {
         max-width: 300px;  
         word-wrap: break-word;
         overflow-wrap: break-word;
+        p {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      margin: 0;
+    }
       }
       td.text-left {
         text-align: left;
