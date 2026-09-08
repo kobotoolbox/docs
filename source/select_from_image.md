@@ -79,8 +79,16 @@ To learn more about uploading media files, see <a href="https://support.kobotool
 ## Troubleshooting
 
 <details>
-  <summary><strong>Image map does not display after skip logic condition changes
-</strong></summary>
-When a <code>select_one</code> question uses the <code>image-map</code> appearance with skip logic, the SVG image may not display if the question changes from hidden to visible after its relevance condition becomes true.<br><br>To avoid this issue, place the <code>select_one</code> question in a group and display the group on a separate page using the <code>field-list</code> appearance and the pages theme. Apply the relevance condition to the group instead of directly to the <code>select_one</code> question.
+  <summary><strong>Image map does not display after skip logic condition changes</strong></summary>
+When a <code>select_one</code> question uses the <code>image-map</code> appearance with skip logic, the SVG image may not display if the question changes from hidden to visible after its relevance condition becomes true.<br><br>To avoid this issue, place the <code>select_one</code> question in a group and display the group on a separate page using the <code>field-list</code> appearance and the pages theme. 
 </details>
+
+<br>
+
+<details>
+  <summary><strong>Background image appears washed out in an image map</strong></summary>
+If an SVG used with the <code>image-map</code> appearance includes a raster image as its background, the background may appear washed out or parts of the image may not display correctly in web forms.<br><br>This happens because KoboToolbox web forms remove references to external or embedded raster resources in SVG files for security reasons. To avoid this issue, convert the raster elements in the SVG to vector elements before uploading the file. This keeps the image self-contained and allows the background and other visual elements to display correctly. 
+</details>
+
+
 
