@@ -180,4 +180,6 @@ For example, `owner__username__icontains:team` searches for public collections w
 
 You can combine filters using **AND**, **OR**, and **NOT** for more precise results. 
 
-For example, `owner__username__icontains:team AND tags__name__icontains:baseline` searches within the owner username field and the tags field. 
+For example: 
+* `owner__username__icontains:team AND tags__name__icontains:baseline` searches within the owner username field and the tags field
+* `tags__name:health AND tags__name:refugees` filters for assets tagged with both health and refugees
