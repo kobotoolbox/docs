@@ -111,3 +111,13 @@ Once the file is available in KoboToolbox, reference it the same way you would f
 - In media columns of your XLSForm (`image`, `audio`, `video`)
 
 When referring to the uploaded files, use **only the file name and extension** at the end of the URL (for example, `choices.csv` or `photo.jpg`). Do not include the full URL in these fields.
+
+
+## Troubleshooting
+
+<details>
+<summary><strong>“File already exists” message when uploading an XML file</strong></summary>
+    
+If you upload an XML file and receive a File already exists message, check whether the project uses <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>.<br><br>When a project is linked to another project through dynamic data attachments, KoboToolbox creates an XML attachment using the linked project name. This file is not shown with other project media files, but its filename is still reserved.<br><br>If your XML file has the same name as the dynamic data attachment, rename the XML file before uploading it. Alternatively, rename or remove the linked project in the dynamic data attachment settings.
+
+</details>
