@@ -1,5 +1,5 @@
 # Uploading media files to a project
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/upload_media.md" class="reference">27 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c7b8eec0d4080ab038e462f718f3df170cf2c028/source/upload_media.md" class="reference">8 Sep 2026</a>
 
 KoboToolbox allows you to upload media files and external data files for use in forms during data collection. This article describes the supported file types and explains how to upload media and external data files to your project from your local device or via a URL.
 
@@ -111,3 +111,13 @@ Once the file is available in KoboToolbox, reference it the same way you would f
 - In media columns of your XLSForm (`image`, `audio`, `video`)
 
 When referring to the uploaded files, use **only the file name and extension** at the end of the URL (for example, `choices.csv` or `photo.jpg`). Do not include the full URL in these fields.
+
+
+## Troubleshooting
+
+<details>
+<summary><strong>“File already exists” message when uploading an XML file</strong></summary>
+    
+If you upload an XML file and receive a File already exists message, check whether the project uses <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>.<br><br>When a project is linked to another project through dynamic data attachments, KoboToolbox creates an XML attachment using the linked project name. This file is not shown with other project media files, but its filename is still reserved.<br><br>If your XML file has the same name as the dynamic data attachment, rename the XML file before uploading it. Alternatively, rename or remove the linked project in the dynamic data attachment settings.
+
+</details>

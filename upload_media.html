@@ -180,7 +180,7 @@
           
   <section id="uploading-media-files-to-a-project">
 <h1>Uploading media files to a project<a class="headerlink" href="#uploading-media-files-to-a-project" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/d9b44de6b0f7192771a9f7bf86edf271321f398b/source/upload_media.md" class="reference">27 Jan 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c7b8eec0d4080ab038e462f718f3df170cf2c028/source/upload_media.md" class="reference">8 Sep 2026</a></p>
 <p>KoboToolbox allows you to upload media files and external data files for use in forms during data collection. This article describes the supported file types and explains how to upload media and external data files to your project from your local device or via a URL.</p>
 <p class="note">
   To learn more about project files and media, see <a href="https://support.kobotoolbox.org/project_files_media.html">Project files and media overview</a>.
@@ -304,6 +304,13 @@ To learn how to attach external datasets to your form, see <a href="https://supp
 </ul>
 <p>When referring to the uploaded files, use <strong>only the file name and extension</strong> at the end of the URL (for example, <code class="docutils literal notranslate"><span class="pre">choices.csv</span></code> or <code class="docutils literal notranslate"><span class="pre">photo.jpg</span></code>). Do not include the full URL in these fields.</p>
 </section>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<details>
+<summary><strong>“File already exists” message when uploading an XML file</strong></summary>
+<p>If you upload an XML file and receive a File already exists message, check whether the project uses <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">dynamic data attachments</a>.<br><br>When a project is linked to another project through dynamic data attachments, KoboToolbox creates an XML attachment using the linked project name. This file is not shown with other project media files, but its filename is still reserved.<br><br>If your XML file has the same name as the dynamic data attachment, rename the XML file before uploading it. Alternatively, rename or remove the linked project in the dynamic data attachment settings.</p>
+</details>
 </section>
 </section>
 
@@ -446,6 +453,7 @@ To learn how to attach external datasets to your form, see <a href="https://supp
 <li class="toctree-l2"><a class="reference internal" href="#supported-file-types">Supported file types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#uploading-files-from-your-local-device">Uploading files from your local device</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#uploading-files-via-url">Uploading files via URL</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Managing respondent-submitted media</a></li>
