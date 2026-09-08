@@ -180,7 +180,7 @@
           
   <section id="viewing-and-validating-your-data">
 <h1>Viewing and validating your data<a class="headerlink" href="#viewing-and-validating-your-data" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/54acbc6a5e616ccc3a13d7a6fcb1c3f2f29d9243/source/viewing_validating_data.md" class="reference">5 Jun 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/29c61a9d982ceb8ac415f172fe7c91ae46c00e17/source/viewing_validating_data.md" class="reference">8 Sep 2026</a></p>
 <iframe src="https://www.youtube.com/embed/X5W6nv9gYUo?si=n3eniC0Uq_PzFsbT" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>The <strong>Table</strong> view in the <strong>DATA</strong> section of your KoboToolbox project provides a complete and customizable overview of all project submissions. By default, all records are shown, with the most recent submissions listed first. This view is the primary workspace for exploring data, monitoring data quality, validating submissions, and making edits.</p>
 <p>This article explains how to:</p>
@@ -265,7 +265,7 @@ To learn more about user-level permissions for viewing, validating, and editing 
 <td class="text-left"><p>The username of the person who submitted the data. This is always recorded for KoboCollect submissions, and is recorded for web form submissions only when <a href="https://support.kobotoolbox.org/project_sharing_settings.html#allowing-submissions-without-authentication">authentication is required</a>.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p><code>rootUuid</code></p></td>
-<td class="text-left"><p>A stable identifier for the submission within the project. It is taken from the submission’s original <code>_uuid</code> when the record is first sent, and it does not change when the submission is edited, so it is the most reliable field for tracking a specific submission over time.</p></td>
+<td class="text-left"><p>A stable identifier that is unique to the submission within the project. It is set to the value of <code class="docutils literal notranslate"><span class="pre">meta/instanceID</span></code> provided by the device or app when the submission is first sent to the server. It does not change when the submission is edited, making it the most reliable field for tracking a specific submission over time.</p></td>
 </tr>
 </tbody>
 </table>
