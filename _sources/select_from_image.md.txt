@@ -1,5 +1,5 @@
 # Selecting options from an image
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/select_from_image.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/15f50a2db120f45d85cea0dc005d89f72085c4e7/source/select_from_image.md" class="reference">8 Sep 2026</a>
 
 Selecting options from an image allows respondents to tap or click directly on **specific areas of an SVG file** instead of choosing from a text list. This feature works in both web forms and the KoboCollect Android app.
 
@@ -75,3 +75,12 @@ To upload media files:
 <p class="note">
 To learn more about uploading media files, see <a href="https://support.kobotoolbox.org/upload_media.html">Uploading media files to a project</a>.
 </p>
+
+## Troubleshooting
+
+<details>
+  <summary><strong>Image map does not display after skip logic condition changes
+</strong></summary>
+When a <code>select_one</code> question uses the <code>image-map</code> appearance with skip logic, the SVG image may not display if the question changes from hidden to visible after its relevance condition becomes true.<br><br>To avoid this issue, place the <code>select_one</code> question in a group and display the group on a separate page using the <code>field-list</code> appearance and the pages theme. Apply the relevance condition to the group instead of directly to the <code>select_one</code> question.
+</details>
+

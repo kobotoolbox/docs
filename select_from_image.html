@@ -180,7 +180,7 @@
           
   <section id="selecting-options-from-an-image">
 <h1>Selecting options from an image<a class="headerlink" href="#selecting-options-from-an-image" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/select_from_image.md" class="reference">23 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/15f50a2db120f45d85cea0dc005d89f72085c4e7/source/select_from_image.md" class="reference">8 Sep 2026</a></p>
 <p>Selecting options from an image allows respondents to tap or click directly on <strong>specific areas of an SVG file</strong> instead of choosing from a text list. This feature works in both web forms and the KoboCollect Android app.</p>
 <p>You might use this feature to:</p>
 <ul class="simple">
@@ -287,6 +287,14 @@
 <p class="note">
 To learn more about uploading media files, see <a href="https://support.kobotoolbox.org/upload_media.html">Uploading media files to a project</a>.
 </p>
+</section>
+<section id="troubleshooting">
+<h2>Troubleshooting<a class="headerlink" href="#troubleshooting" title="Link to this heading">¶</a></h2>
+<details>
+  <summary><strong>Image map does not display after skip logic condition changes
+</strong></summary>
+When a <code>select_one</code> question uses the <code>image-map</code> appearance with skip logic, the SVG image may not display if the question changes from hidden to visible after its relevance condition becomes true.<br><br>To avoid this issue, place the <code>select_one</code> question in a group and display the group on a separate page using the <code>field-list</code> appearance and the pages theme. Apply the relevance condition to the group instead of directly to the <code>select_one</code> question.
+</details>
 </section>
 </section>
 
@@ -401,6 +409,7 @@ To learn more about uploading media files, see <a href="https://support.kobotool
 <li class="toctree-l2"><a class="reference internal" href="#creating-your-selectable-image">Creating your selectable image</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#setting-up-your-xlsform">Setting up your XLSForm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#uploading-the-svg-file-to-kobotoolbox">Uploading the SVG file to KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments in XLSForm</a></li>
