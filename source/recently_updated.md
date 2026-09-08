@@ -8,6 +8,6 @@
 1. [Managing option choices in XLSForm](option_choices_xls.md) (8 Sep 2026)
 1. [Viewing and validating your data](viewing_validating_data.md) (8 Sep 2026)
 1. [Question options in XLSForm](question_options_xls.md) (8 Sep 2026)
+1. [Selecting options from an image](select_from_image.md) (8 Sep 2026)
 1. [Uploading media files to a project](upload_media.md) (8 Sep 2026)
 1. [Dynamic data attachments in XLSForm](dynamic_data_attachment.md) (31 Aug 2026)
-1. [Monitoring project and account activity](activity_logs.md) (28 Aug 2026)
