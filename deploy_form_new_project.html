@@ -180,7 +180,7 @@
           
   <section id="deploying-forms-for-data-collection">
 <h1>Deploying forms for data collection<a class="headerlink" href="#deploying-forms-for-data-collection" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/deploy_form_new_project.md" class="reference">23 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/263ecd9827add48596fc07c5564ebf5a7762ebfe/source/deploy_form_new_project.md" class="reference">8 Sep 2026</a></p>
 <p>Before you can collect data in KoboToolbox, your form must be <strong>deployed</strong>. Deployment makes the form live and available for submissions. You can <strong>redeploy</strong> a form any time you make changes and want those changes to go live.</p>
 <p>This article explains how to deploy and redeploy forms in KoboToolbox, how updates affect web forms and KoboCollect, what to check before making a form live, and what changes to avoid once data collection has started.</p>
 <p class="note">
@@ -196,9 +196,92 @@ To learn more about collecting data with KoboToolbox, see <a href="https://suppo
 <strong>Note:</strong>
     Always redeploy forms after making changes to form media, translations, or form titles, even if KoboToolbox does not prompt you to redeploy.
 </p>
+<section id="best-practices-for-deploying-forms">
+<h3>Best practices for deploying forms<a class="headerlink" href="#best-practices-for-deploying-forms" title="Link to this heading">¶</a></h3>
+<p>The following steps are recommended before launching data collection:</p>
+<ol class="arabic simple">
+<li><p><strong>Test the form preview before deployment.</strong> Only deploy a new form, or redeploy changes to an existing form, after testing it thoroughly in the form preview. This helps prevent faulty forms from going live.</p></li>
+<li><p><strong>Test the live deployed form.</strong> After deployment, open the form and submit test data to confirm that submissions work properly and the data appears in the data table as intended.</p></li>
+<li><p><strong>If relevant, test the form in KoboCollect.</strong> Always test the same data collection method(s) that will be used for actual data collection, whether that is web forms, KoboCollect, or both. This is especially important for KoboCollect, since it cannot be fully tested until the form has been deployed.</p></li>
+<li><p><strong>Share your form using View only mode for external testing.</strong> Once a form has been deployed, you can also share it with others for testing by using the <strong>View only</strong> <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes">web form mode</a>.</p></li>
+</ol>
+<p>Once you have thoroughly tested your form, you can begin data collection. Testing thoroughly before launch helps reduce the need to make changes after data collection has started.</p>
 </section>
-<section id="updating-forms-after-changes-have-been-redeployed">
-<h2>Updating forms after changes have been redeployed<a class="headerlink" href="#updating-forms-after-changes-have-been-redeployed" title="Link to this heading">¶</a></h2>
+</section>
+<section id="making-changes-to-deployed-forms">
+<h2>Making changes to deployed forms<a class="headerlink" href="#making-changes-to-deployed-forms" title="Link to this heading">¶</a></h2>
+<p>You can continue to make changes to your forms even <strong>after data collection has started</strong>. However, those changes can affect both your data structure and your ability to review or edit older submissions.</p>
+<p>Because of this, it is best to <strong>avoid major structural changes</strong> once live data collection is underway unless they are absolutely necessary.</p>
+<p class="note">
+<strong>Note:</strong>
+    After making changes to a deployed form, do not forget to test and <strong>redeploy</strong> the form for changes to apply.
+</p>
+<section id="implications-for-data-structure">
+<h3>Implications for data structure<a class="headerlink" href="#implications-for-data-structure" title="Link to this heading">¶</a></h3>
+<p>Changes to deployed forms that can affect your data structure include:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Change</p></th>
+<th class="head text-left"><p>Implication for data structure</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Changing a question’s <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#data-column-name">data column name</a></p></td>
+<td class="text-left"><p>KoboToolbox will treat it as a new variable and create a new column in the data table.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Changing a question type while keeping the same data column name</p></td>
+<td class="text-left"><p>This can create inconsistent data in the same column and lead to errors (e.g., in the <strong>DATA &gt; Reports</strong> view).</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Moving questions into or out of groups</p></td>
+<td class="text-left"><p>KoboToolbox will treat these questions as new variables and create new columns in the data table.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Removing choices from a choice list</p></td>
+<td class="text-left"><p>Previous submissions may still contain those choice values, but they may no longer have an associated label in the form</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Adding new choices to a Select one or Select many question</p></td>
+<td class="text-left"><p>Make sure each new choice has a unique <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#xml-value">XML value</a> within a given choice list.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Deleting a question that is used elsewhere in the form</p></td>
+<td class="text-left"><p>If the question is referenced in a calculation, relevance condition, constraint, or another expression, you will also need to update those references.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Changing question or choice labels</p></td>
+<td class="text-left"><p>Does not affect the data structure if the data column name or XML value stays the same, but previously collected data will use the updated label.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Changing the meaning of existing choice values</p></td>
+<td class="text-left"><p>Changing choice names or labels can make data inconsistent across form versions and lead to misinterpretation. For example, this can happen if you reverse the meaning of values such as <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">=</span> <span class="pre">Yes</span></code> and <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">=</span> <span class="pre">No</span></code>, or change the direction of a Likert scale.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+<strong>Note:</strong>
+    If your form uses multiple languages, remember to also <a href="https://support.kobotoolbox.org/language_dashboard.html">update the translations</a> whenever you change the form. This is easy to miss after redeployment.
+</p>
+</section>
+<section id="implications-for-editing-past-submissions">
+<h3>Implications for editing past submissions<a class="headerlink" href="#implications-for-editing-past-submissions" title="Link to this heading">¶</a></h3>
+<p>Changes to a form can also affect how older submissions behave <strong>when you edit them</strong>, because a submission created with an earlier version of the form may no longer match the current version. For example:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Change</p></th>
+<th class="head text-left"><p>Implication for editing past submissions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Adding new required questions</p></td>
+<td class="text-left"><p>Older submissions may require new answers before they can be submitted again.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Removing questions or adding skip logic</p></td>
+<td class="text-left"><p>Older submissions may lose data previously collected in those questions when they are edited.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Adding new validation rules or constraints</p></td>
+<td class="text-left"><p>Older responses may no longer meet the updated rules and may not be submitted again.</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="updating-data-collection-devices-after-reployment">
+<h2>Updating data collection devices after reployment<a class="headerlink" href="#updating-data-collection-devices-after-reployment" title="Link to this heading">¶</a></h2>
 <p>After you redeploy a form, users will need to refresh or download the updated version to see the changes.</p>
 <section id="web-forms">
 <h3>Web forms<a class="headerlink" href="#web-forms" title="Link to this heading">¶</a></h3>
@@ -215,42 +298,6 @@ To learn more about collecting data with KoboToolbox, see <a href="https://suppo
 <strong>Note:</strong>
     After redeploying a form, make sure all data collectors update to the latest version. Otherwise, some users may continue submitting data with an outdated version, which can lead to errors or inconsistencies in the collected data. 
 </p>
-</section>
-</section>
-<section id="best-practices-for-deploying-and-redeploying-forms">
-<h2>Best practices for deploying and redeploying forms<a class="headerlink" href="#best-practices-for-deploying-and-redeploying-forms" title="Link to this heading">¶</a></h2>
-<p>The following steps are recommended before launching data collection:</p>
-<ol class="arabic simple">
-<li><p><strong>Test the form preview before deployment.</strong> Only deploy a new form, or redeploy changes to an existing form, after testing it thoroughly in the form preview. This helps prevent faulty forms from going live.</p></li>
-<li><p><strong>Test the live deployed form.</strong> After deployment, open the form and submit test data to confirm that submissions work properly and the data appears in the data table as intended.</p></li>
-<li><p><strong>If relevant, test the form in KoboCollect.</strong> Always test the same data collection method(s) that will be used for actual data collection, whether that is web forms, KoboCollect, or both. This is especially important for KoboCollect, since it cannot be fully tested until the form has been deployed.</p></li>
-<li><p><strong>Share your form using View only mode for external testing.</strong> Once a form has been deployed, you can also share it with others for testing by using the <strong>View only</strong> <a class="reference external" href="https://support.kobotoolbox.org/data_through_webforms.html#data-collection-modes">web form mode</a>.</p></li>
-</ol>
-<p>Once you have thoroughly tested your form, you can begin data collection. Testing thoroughly before launch helps reduce the need to make changes after data collection has started.</p>
-<section id="important-considerations-when-redeploying-a-form">
-<h3>Important considerations when redeploying a form<a class="headerlink" href="#important-considerations-when-redeploying-a-form" title="Link to this heading">¶</a></h3>
-<p>If you make changes to a form after data collection has already started, those changes can affect both your data structure and your ability to review or edit older submissions. Because of this, it is best to <strong>avoid major structural changes</strong> once live data collection is underway unless they are absolutely necessary.</p>
-<p>Changes that can affect your data structure include:</p>
-<ul class="simple">
-<li><p><strong>Changing a question’s <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#data-column-name">data column name</a></strong>: KoboToolbox will treat it as a new variable and create a new column in the data table.</p></li>
-<li><p><strong>Changing a question type while keeping the same data column name</strong>: This can create inconsistent data in the same column and lead to errors (e.g., in the <strong>DATA &gt; Reports</strong> view).</p></li>
-<li><p><strong>Moving questions into or out of groups</strong>: KoboToolbox will treat these questions as new variables and create new columns in the data table.</p></li>
-<li><p><strong>Removing choices from a choice list</strong>: Previous submissions may still contain those choice values, but they may no longer have an associated label in the form.</p></li>
-<li><p><strong>Adding new choices to a Select one or Select many question</strong>: Make sure each new choice has a unique <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#xml-value">XML value</a> within a given choice list.</p></li>
-<li><p><strong>Deleting a question that is used elsewhere in the form</strong>: If the question is referenced in a calculation, relevance condition, constraint, or another expression, you will also need to update those references.</p></li>
-<li><p><strong>Changing question or choice labels</strong>: Does not affect the data structure if the data column name or XML value stays the same, but previously collected data will use the updated label.</p></li>
-<li><p><strong>Changing the meaning of existing choice values</strong>: Changing choice names or labels can make data inconsistent across form versions and lead to misinterpretation. For example, this can happen if you reverse the meaning of values such as <code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">=</span> <span class="pre">Yes</span></code> and <code class="docutils literal notranslate"><span class="pre">0</span> <span class="pre">=</span> <span class="pre">No</span></code>, or change the direction of a Likert scale.</p></li>
-</ul>
-<p class="note">
-<strong>Note:</strong>
-    If your form uses multiple languages, remember to also <a href="https://support.kobotoolbox.org/language_dashboard.html">update the translations</a> whenever you change the form. This is easy to miss after redeployment.
-</p>
-<p>Changes to a form can also affect how older submissions behave when you edit them, because a submission created with an earlier version of the form may no longer match the current version. For example:</p>
-<ul class="simple">
-<li><p><strong>Adding new required questions</strong>: Older submissions may require new answers before they can be submitted again.</p></li>
-<li><p><strong>Removing questions or adding skip logic</strong>: Older submissions may lose data previously collected in those questions when they are edited.</p></li>
-<li><p><strong>Adding new validation rules or constraints</strong>: Older responses may no longer meet the updated rules and may not be submitted again.</p></li>
-</ul>
 </section>
 </section>
 <section id="troubleshooting">
@@ -400,8 +447,8 @@ Check that the dynamic data attachments have been added and configured properly,
 <li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Deploying forms for data collection</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#deploying-a-form-for-data-collection">Deploying a form for data collection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#updating-forms-after-changes-have-been-redeployed">Updating forms after changes have been redeployed</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#best-practices-for-deploying-and-redeploying-forms">Best practices for deploying and redeploying forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#making-changes-to-deployed-forms">Making changes to deployed forms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-data-collection-devices-after-reployment">Updating data collection devices after reployment</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
