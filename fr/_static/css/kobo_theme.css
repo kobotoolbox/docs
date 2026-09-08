@@ -615,6 +615,9 @@ html body {
 }
 .page .page__body table td {
   text-align: left;
+  max-width: 300px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 .page .page__body table td.text-left {
   text-align: left;
