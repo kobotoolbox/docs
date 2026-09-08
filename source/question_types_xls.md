@@ -43,6 +43,8 @@ Numeric questions are used to collect whole numbers, decimal numbers, or values 
 | `integer` | Allows respondents to input whole numbers. | Number |
 | `decimal` | Allows respondents to input numbers that may contain decimal points. | Decimal |
 | `range` | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values, <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the `parameters` column. | Range |
+| `percentage` | Allows respondents to enter a whole number from 0 to 100. Values below 0 or above 100 are not accepted. | None |
+
 
 
 <p class="note">
