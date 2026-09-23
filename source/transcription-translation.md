@@ -156,6 +156,10 @@ Community Plan users can use up to **10 minutes of automatic speech-to-text tran
 
 If you need more transcription or translation capacity, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or [purchase](https://support.kobotoolbox.org/account_settings.html#add-ons) a **Natural Language Processing (NLP) Package** add-on. ​​Add-ons are available based on your data processing needs, starting at $9.95 for 100 additional transcription minutes and 60,000 additional translation characters. You can always continue transcribing and translating audio responses manually with no usage limit.
 
+<p class="note">
+<strong>Note:</strong> Automatic processing counts toward these limits regardless of whether files are processed individually or in bulk.
+</p>
+
 ## Troubleshooting
 
 <details>
