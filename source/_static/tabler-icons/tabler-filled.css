@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "tabler-filled";
+  src: url("./tabler-filled.woff2") format("woff2"), url("./tabler-filled.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ti-filled {
+  font-family: "tabler-filled";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ti-filled.ti-alert-circle:before { content: "\f6ee"; }
+.ti-filled.ti-alert-triangle:before { content: "\f6f0"; }
+.ti-filled.ti-brand-instagram:before { content: "\10094"; }
+.ti-filled.ti-brand-linkedin:before { content: "\10092"; }
+.ti-filled.ti-brand-twitter:before { content: "\f7eb"; }
+.ti-filled.ti-check:before { content: "\101e6"; }
+.ti-filled.ti-folder:before { content: "\f749"; }
+.ti-filled.ti-help-circle:before { content: "\fa3d"; }
+.ti-filled.ti-info-circle:before { content: "\f6d8"; }
+.ti-filled.ti-pencil:before { content: "\101cf"; }
+.ti-filled.ti-player-play:before { content: "\f691"; }
+.ti-filled.ti-player-stop:before { content: "\f695"; }
+.ti-filled.ti-trash:before { content: "\f783"; }
+.ti-filled.ti-world:before { content: "\101c7"; }
+.ti-filled.ti-x:before { content: "\101c6"; }
