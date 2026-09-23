@@ -43,7 +43,7 @@ To start transcribing individual audio responses:
     - If you click **DONE**, you will be taken back to the data table view, where a new column containing the transcript will have been added.
 
 <p class="note">
-    <strong>Note</strong>: Automatically generated transcripts and translations must be saved to prevent data loss. Navigating away from the page without saving will result in losing the data.
+    <strong>Note</strong>: Automatically generated transcripts and translations must be saved to prevent data loss. Navigating away from the page without saving may result in losing the data.
 </p>
 
 ## Transcribing audio files in bulk
