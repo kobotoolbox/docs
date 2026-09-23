@@ -159,7 +159,7 @@ Useful links:
 
 ## Icons
 
-Two icon sets are available for use in articles. If you need to figure out which icon KPI uses, open up your browser's "inspect" commandd (for Chrome and Firefox, right click on page and choose 'inspect'). Mouse over the icon you are interested in and you can see whether it uses the k-icon or tabler-icon prefix.
+Two icon sets are available for use in articles. If you need to figure out which icon KPI uses, open up your browser's "inspect" command (for Chrome and Firefox, right click on page and choose 'inspect'). Mouse over the icon you are interested in and you can see whether it uses the k-icon or tabler-icon prefix.
 
 ### KPI icons (`k-icon-*`)
 
