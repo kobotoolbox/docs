@@ -64,7 +64,7 @@ By default, form links copied from KoboToolbox open in the form’s default lang
 After collecting data in multiple languages, KoboToolbox allows you to view and export your data in any language included in your form.
 
 <p class="note">
-  <strong>Note:</strong> If you are collecting audio responses in multiple languages, you can transcribe and translate those responses using KoboToolbox’s automatic transcription and translation features. To learn more, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a>.
+  <strong>Note:</strong> If you are collecting audio responses in multiple languages, you can transcribe and translate those responses using KoboToolbox’s automatic transcription and translation features, either individually or in bulk. To learn more, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a>.
 </p>
 
 ### Viewing data in different languages in the Table view
