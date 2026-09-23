@@ -94,7 +94,7 @@ function buildTablerCss(variant, icons, codepointMap) {
   const lines = [
     `@font-face {`,
     `  font-family: "${fontFile}";`,
-    `  src: url('./${fontFile}.woff2') format('woff2'), url('./${fontFile}.woff') format('woff');`,
+    `  src: url("./${fontFile}.woff2") format("woff2"), url("./${fontFile}.woff") format("woff");`,
     `  font-weight: normal;`,
     `  font-style: normal;`,
     `}`,
@@ -139,7 +139,11 @@ async function generateTablerIcons() {
   for (const variant of ['outline', 'filled']) {
     const icons = tablerIconsList[variant];
     const codepointMap = parseTablerCodepoints(srcCssFiles[variant]);
-    const codepoints = icons.map(n => codepointMap[n]).filter(Boolean);
+    const missing = icons.filter(n => !codepointMap[n]);
+    if (missing.length) {
+      throw new Error(`Unknown Tabler ${variant} icons in tabler-icons-list.json: ${missing.join(', ')}`);
+    }
+    const codepoints = icons.map(n => codepointMap[n]);
 
     const srcFont = await fs.promises.readFile(srcFontFiles[variant]);
     const glyphText = codepoints.map(cp => String.fromCodePoint(cp)).join('');
