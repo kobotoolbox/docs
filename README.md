@@ -180,6 +180,6 @@ KPI now also uses [Tabler Icons](https://tabler.io/icons) for newer UI elements.
 <i class="ti-filled ti-trash"></i>
 ```
 
-The icon name comes directly from the Tabler component name KPI uses — `IconLogout` becomes `ti-logout`, `IconTrashFilled` becomes `ti-filled ti-trash`.
+The icon name can be found using the in-browser inspect method described above. The class names work slightly differently in the docs repo compared to KPI: If you see `tabler-icon-world-filled` in KPI, that will become `ti-filled ti-world` for use in this docs repo.
 
 Only icons listed in `scripts/tabler-icons-list.json` are available. When KPI adds a new Tabler icon that needs to be referenced in the docs, add its kebab-case name to the appropriate list in that file and run `npm run generate-icons`.
