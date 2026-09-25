@@ -671,5 +671,7 @@ k-icon-tag 	<i class="k-icon-tag"></i>
 
 </details>
 
+Tabler icon: <i class="ti-outline ti-pencil-star"></i>
+
 
 
