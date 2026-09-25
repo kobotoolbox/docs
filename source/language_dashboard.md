@@ -1,5 +1,5 @@
 # Adding translations in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/55b3ab6258a25c2b16c1d954b282f02918937598/source/language_dashboard.md" class="reference">5 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7aea5110556cfc7dda57780689eb722c37018a17/source/language_dashboard.md" class="reference">25 Sep 2026</a>
 
 <iframe src="https://www.youtube.com/embed/3O2K78F7DCA?si=lt-ZlSRoAjFuSMl1" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
