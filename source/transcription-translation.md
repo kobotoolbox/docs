@@ -6,10 +6,10 @@
 
 KoboToolbox’s natural language processing tools help you collect, manage, and analyze qualitative data more effectively. These tools include automatic speech-to-text transcription and machine translation, which can prepare audio responses for [automated qualitative analysis](https://support.kobotoolbox.org/qualitative_analysis.html).
 
-This article covers how to transcribe audio responses and translate transcripts, including supported languages and usage limits for automatic options.
+You can transcribe and translate individual responses or process multiple submissions in bulk from the data table. This article covers how to transcribe audio responses and translate transcripts  individually or in bulk, including supported languages and usage limits for automatic options.
 
 <p class="note">
-    <strong>Note</strong>: Automatic transcription and translation may not be available for <a href="#language-list">all languages</a>. For these languages, only manual transcription and translation are possible.
+    <strong>Note</strong>: Automatic transcription and translation may not be available for <a href="#supported-languages-for-transcription-and-translation">all languages</a>. For these languages, only manual transcription and translation are possible.
 </p>
 
 ## Collecting audio responses 
@@ -25,11 +25,11 @@ Before transcribing or translating audio responses, you need to collect audio da
 After transcribing and translating audio responses, the original transcript for your audio files and all translated text are added as new data columns in the data table and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data.
 
 
-## Adding audio transcripts
+## Transcribing individual audio files
 
 ![Adding automatic transcriptions example](images/transcription_translation/transcription.png)
 
-To start transcribing your audio responses:
+To start transcribing individual audio responses:
 
 1. Open your project and navigate to **DATA > Table**.
 2. Click the **Open** button next to the audio response you would like to transcribe.
@@ -43,10 +43,44 @@ To start transcribing your audio responses:
     - If you click **DONE**, you will be taken back to the data table view, where a new column containing the transcript will have been added.
 
 <p class="note">
-    <strong>Note</strong>: Automatically generated transcripts and translations must be saved to prevent data loss. Navigating away from the page without saving will result in losing the data.
+    <strong>Note</strong>: Automatically generated transcripts and translations must be saved to prevent data loss. Navigating away from the page without saving may result in losing the data.
 </p>
 
-## Adding translations
+## Transcribing audio files in bulk
+
+You can automatically transcribe audio recordings from multiple submissions at once from the data table.
+
+To transcribe audio responses in bulk:
+
+1. Open your project and navigate to **DATA > Table.**
+2. Select the submissions you want to transcribe using the checkboxes on the left.
+3. In the column containing the audio recordings you want to transcribe, click the arrow in the column header.
+4. Click **Transcribe selected audio files.**
+5. Select the language and region, then click **Start transcription.**
+
+![Bulk transcribe audio files](images/transcription_translation/bulk_transcribe_files.png)
+
+The completed transcripts are added to a new column in the data table and marked as ready for review.
+
+### Reviewing and approving transcripts
+
+Reviewing automated transcripts to confirm that they accurately reflect the audio recordings helps ensure that the data is reliable and ready for analysis or translation.
+
+To review and approve an individual transcript:
+
+1. Click **Review.**
+2. Make any necessary edits.
+3. Save the transcript and move to the next one.
+
+To approve multiple transcriptions at once:
+
+1. Select the relevant submissions using the checkboxes on the left.
+2. In the transcript column, click the arrow in the column header.
+3. Click **Approve all selected.**
+
+![Bulk approve transcriptions](images/transcription_translation/bulk_approve_transcripts.png)
+
+## Translating individual transcripts
 
 ![Adding automatic translations example](images/transcription_translation/translation.png)
 
@@ -65,9 +99,45 @@ Once you have a completed transcript for your audio response, you can add transl
     <strong>Note</strong>: Audio files can only contain a single transcript, but each transcript may have multiple translations.
 </p>
 
-## Language list
+## Translating transcripts in bulk
+
+You can also automatically translate multiple transcripts at once from the data table.
+
+To translate transcripts in bulk:
+
+1. Ensure your project contains completed audio transcripts.
+2. Open your project and navigate to **DATA > Table.**
+3. Select the submissions containing the transcripts you want to translate using the checkboxes on the left.
+4. In the transcript column you want to translate, click the arrow in the column header.
+5. Click **Translate selected transcriptions.**
+6. Search for and select the target language, then click **Create translations.**
+
+![Bulk translate transcriptions](images/transcription_translation/bulk_translate_transcriptions.png)
+
+The completed translations are added to a new column in the data table and marked as ready for review.
+
+### Reviewing and approving translations
+
+To review and approve an individual translation: 
+
+1. Click **Review.**
+2. Make any necessary edits.
+3. Save the translation and move to the next one.
+
+To approve multiple translations at once:
+
+1. Select the relevant submissions using the checkboxes on the left.
+2. In the translation column, click the arrow in the column header.
+3. Click **Approve all selected.**
+
+
+## Supported languages for transcription and translation
 
 KoboToolbox's natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers **automatic transcription in 80 languages** (with 145 regional variants) and **automatic translation in 129 languages**. 
+
+<p class="note">
+<strong>Note:</strong> Audio files and transcripts are only sent to Google Cloud Compute for the time needed to complete the transcription and translation. They are not stored by the external service after processing or used to improve the service.    
+</p>
 
 For manual transcription or translation, you can select from approximately 7,000 languages based on the ISO 639-3 comprehensive list, maintained by SIL International (filtered for "living languages"). If a language supports ASR or MT, you can choose between **manual** and **automatic** methods. For other languages, only the **manual** method is available.
 
@@ -85,6 +155,10 @@ If you cannot find a language in the list, consider alternative spellings or nam
 Community Plan users can use up to **10 minutes of automatic speech-to-text transcription** per month and up to **6,000 characters of automatic transcript translation** per month.
 
 If you need more transcription or translation capacity, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or [purchase](https://support.kobotoolbox.org/account_settings.html#add-ons) a **Natural Language Processing (NLP) Package** add-on. ​​Add-ons are available based on your data processing needs, starting at $9.95 for 100 additional transcription minutes and 60,000 additional translation characters. You can always continue transcribing and translating audio responses manually with no usage limit.
+
+<p class="note">
+<strong>Note:</strong> Automatic processing counts toward these limits regardless of whether files are processed individually or in bulk.
+</p>
 
 ## Troubleshooting
 
