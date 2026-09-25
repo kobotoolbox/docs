@@ -20,15 +20,15 @@ This article focuses on adding translations from the KoboToolbox platform, and c
     To learn more about collecting and managing data from translated forms, see <a href="https://support.kobotoolbox.org/collecting_data_multiple_languages.html">Collecting data in multiple languages</a>.
 </p>
 
-## Setting the default language 
+## Setting the default language
 
 A form’s default language is usually the language the questionnaire is designed in, and the language the form opens in by default during data collection. A default language only needs to be set if additional translations are added, and is not required when the form is available in only one language.
 
 To set the default language:
 
-1. Create your form in the default language. 
+1. Create your form in the default language.
 2. Once your form has been created, go to the **FORM** page of your project.
-3. Under the **DEPLOY** or **REDEPLOY** button, click <i class="k-icon-language"></i> **Manage**.
+3. Under the **DEPLOY** or **REDEPLOY** button, click <i class="ti-filled ti-world"></i> **Manage**.
 4. Add the language name (e.g., “English”) and language code (e.g., “en”) for your default language.
 
 ![Manage languages](images/language_dashboard/manage_languages.png)
@@ -41,14 +41,14 @@ To set the default language:
 
 Once you have set your default language, you can add more languages and translate your form text:
 
-1. In the <i class="k-icon-language"></i> **Manage Languages** window, click **Add language.**
+1. In the <i class="ti-filled ti-world"></i> **Manage Languages** window, click **Add language.**
 2. Enter the language name and code, then click **Add.**
 3. Next to the language you added, click <i class="k-icon-language-settings"></i> **Update translations.**
     - A table will appear with all translatable elements in your form, including question labels, group labels, hints, guidance hints, constraint messages, media files, and choice labels.
     - Each language has its own translation table.
 4. Enter the translations and click **Save Changes.**
     - If you omit text for a translated element, it will appear as a blank field in the form.
-5. Close the window and preview your form to verify the translations. 
+5. Close the window and preview your form to verify the translations.
 6. Deploy or redeploy your form to apply the changes.
 
 You can return to this window at any time to update existing translations or add new ones. Remember to update translations whenever you add new questions or choice options.
@@ -56,11 +56,11 @@ You can return to this window at any time to update existing translations or add
 ![Add a new language](images/language_dashboard/add_language.png)
 
 
-## Changing the default language 
+## Changing the default language
 
 To change the form’s default language:
 
-1. On the **FORM** page, click <i class="k-icon-language"></i> **Manage**.
+1. On the **FORM** page, click <i class="ti-filled ti-world"></i> **Manage**.
 2. Click <i class="k-icon-language-default"></i> **Make default** next to the language you want to set as the default.
 
 ![Change default language](images/language_dashboard/change_default.png)
@@ -74,8 +74,8 @@ To change the form’s default language:
 To fix this issue:
 
 <ol>
-<li>Download your form as an <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">XLSForm</a></li> 
-<li>Look for a <code>label</code>, <code>hint</code>, <code>guidance_hint</code>, media, <code>constraint_message</code> and <code>required_message</code> column in your form that is not assigned to a language (e.g., <code>label</code> instead of <code>label::English (en)</code>).</li> 
+<li>Download your form as an <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html">XLSForm</a></li>
+<li>Look for a <code>label</code>, <code>hint</code>, <code>guidance_hint</code>, media, <code>constraint_message</code> and <code>required_message</code> column in your form that is not assigned to a language (e.g., <code>label</code> instead of <code>label::English (en)</code>).</li>
 <li>Depending on the issue, either add a <a href="https://support.kobotoolbox.org/language_xls.html">language name and code</a> to the unassigned column name, or copy its content into an existing column for that language and delete the unassigned column.</li>
 </ol>
 

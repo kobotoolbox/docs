@@ -101,6 +101,8 @@ html_static_path = ['_static']
 # or fully qualified paths (eg. https://...)
 html_css_files = [
     'kpi-icons/k-icons.css',
+    'tabler-icons/tabler-outline.css',
+    'tabler-icons/tabler-filled.css',
     'css/kobo_theme.css',
 ]
 html_js_files = [

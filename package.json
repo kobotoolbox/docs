@@ -12,12 +12,14 @@
     "generate-icons": "node ./scripts/generate_icons.js"
   },
   "dependencies": {
-    "kobo-common": "github:kobotoolbox/kobo-common#semver:1.34.0"
+    "@tabler/icons-webfont": "^3.48.0",
+    "kobo-common": "github:kobotoolbox/kobo-common#semver:1.34.0",
+    "subset-font": "^2.9.0"
   },
   "devDependencies": {
-    "fantasticon": "^3.0.0",
     "autoprefixer": "^10.5.4",
     "browserslist": "^4.28.8",
+    "fantasticon": "^3.0.0",
     "postcss": "^8.5.26",
     "postcss-cli": "^11.0.1",
     "sass": "^1.103.1",

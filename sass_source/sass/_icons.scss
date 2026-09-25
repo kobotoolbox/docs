@@ -21,3 +21,14 @@ i.icon {
   line-height: 0;
   font-size: 1.25em;
 }
+
+// Global styles for Tabler icons
+// Usage: <i class="ti-outline ti-trash"> or <i class="ti-filled ti-trash">
+.ti-outline,
+.ti-filled {
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  line-height: 0;
+  font-size: 1.25em;
+}
