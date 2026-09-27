@@ -142,4 +142,25 @@
       sectionOrder: [{% for key in config.sections_data %}"{{ key }}"{% if not loop.last %}, {% endif %}{% endfor %}],
     };
   </script>
+
+  {# Support chat widget, enabled with ?chat=true (and disabled with
+     ?chat=false). The choice is kept in sessionStorage so it survives
+     navigation within the tab. The widget targets whichever host served
+     widget.js. #}
+  <script>
+    var chatParam = new URLSearchParams(window.location.search).get("chat");
+    var chatEnabled = chatParam === "true";
+    try {
+      if (chatParam === "true") sessionStorage.setItem("kobo-chat", "true");
+      if (chatParam === "false") sessionStorage.removeItem("kobo-chat");
+      chatEnabled = sessionStorage.getItem("kobo-chat") === "true";
+    } catch (e) {
+      // Storage blocked (e.g. some privacy modes): fall back to the URL only.
+    }
+    if (chatEnabled) {
+      var chatScript = document.createElement("script");
+      chatScript.src = "https://support-bot.kobolabs.dev/widget.js";
+      document.body.appendChild(chatScript);
+    }
+  </script>
 {%- endblock %}

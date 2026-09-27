@@ -1,0 +1,6 @@
+.git
+node_modules
+venv
+koboenv
+_build
+temp-kpi-clone

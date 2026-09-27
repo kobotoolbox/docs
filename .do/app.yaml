@@ -1,0 +1,26 @@
+# DigitalOcean App Platform spec for the support-bot test copy of the docs
+# site, run in parallel to support.kobotoolbox.org (which stays on gh-pages).
+#
+# Validate:  doctl apps spec validate .do/app.yaml
+# Create:    doctl apps create --spec .do/app.yaml
+# Update:    doctl apps update <app-id> --spec .do/app.yaml
+#
+# The chat widget only loads with ?chat=true (see source/_templates/layout.html).
+# The bot's CORS allow-list doesn't cover *.ondigitalocean.app, so this app's
+# origin must be listed in EXTRA_ALLOWED_ORIGINS in the support bot's /admin.
+name: kobo-docs-support-bot
+region: nyc
+
+alerts:
+  - rule: DEPLOYMENT_FAILED
+
+static_sites:
+  - name: docs
+    github:
+      repo: kobotoolbox/docs
+      branch: support-bot
+      deploy_on_push: true
+    dockerfile_path: .do/Dockerfile
+    output_dir: /app/_build/html
+    index_document: index.html
+    error_document: 404.html
