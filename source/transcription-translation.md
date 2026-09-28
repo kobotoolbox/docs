@@ -32,7 +32,7 @@ After transcribing and translating audio responses, the original transcript for 
 To start transcribing individual audio responses:
 
 1. Open your project and navigate to **DATA > Table**.
-2. Click the **Open** button next to the audio response you would like to transcribe.
+2. Click the <i class="ti-outline ti-pencil-star"></i> **Open** button next to the audio response you would like to transcribe.
 3. In the **TRANSCRIPT** tab, click **begin**.
     - Select the original language of the audio file. 
     - If available, select the **automatic** option. The **manual** option will allow you to manually transcribe the audio recording in any language.
@@ -86,7 +86,7 @@ To approve multiple transcriptions at once:
 
 Once you have a completed transcript for your audio response, you can add translations into multiple languages:
 
-1. Proceed to the **TRANSLATIONS** tab.
+1. From the **TRANSCRIPT** tab, proceed to the **TRANSLATIONS** tab.
     - The translation option is only available once a transcript has been completed.
 2. Click **begin** and choose the language of the translation.
     - If available, select **automatic** for machine translation. The **manual** option will allow you to manually translate the transcript in any language.
@@ -154,11 +154,12 @@ If you cannot find a language in the list, consider alternative spellings or nam
 ## Usage limits for automatic transcription and translation
 Community Plan users can use up to **10 minutes of automatic speech-to-text transcription** per month and up to **6,000 characters of automatic transcript translation** per month.
 
-If you need more transcription or translation capacity, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or [purchase](https://support.kobotoolbox.org/account_settings.html#add-ons) a **Natural Language Processing (NLP) Package** add-on. ​​Add-ons are available based on your data processing needs, starting at $9.95 for 100 additional transcription minutes and 60,000 additional translation characters. You can always continue transcribing and translating audio responses manually with no usage limit.
-
 <p class="note">
 <strong>Note:</strong> Automatic processing counts toward these limits regardless of whether files are processed individually or in bulk.
 </p>
+
+If you need more transcription or translation capacity, you can [upgrade](https://www.kobotoolbox.org/pricing/) to a plan with a higher quota or [purchase](https://support.kobotoolbox.org/account_settings.html#add-ons) a **Natural Language Processing (NLP) Package** add-on. ​​Add-ons are available based on your data processing needs, starting at $9.95 for 100 additional transcription minutes and 60,000 additional translation characters. You can always continue transcribing and translating audio responses manually with no usage limit.
+
 
 ## Troubleshooting
 
