@@ -147,7 +147,7 @@ Explore practical guidance across KoboToolbox topics and features
   data_collection_kobocollect
   kobocollect_settings
   collect_gps
-  qualitative_data
+  recording-interviews
   collecting_data_multiple_languages
 
 
@@ -177,7 +177,7 @@ Explore practical guidance across KoboToolbox topics and features
   project_sharing_settings
   managing_permissions
   activity_logs
-  team_management_feature
+  getting_started_organization_feature
 
 .. raw:: html
 
