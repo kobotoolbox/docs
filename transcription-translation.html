@@ -182,12 +182,12 @@
           
   <section id="transcription-and-translation-of-audio-responses">
 <h1>Transcription and translation of audio responses<a class="headerlink" href="#transcription-and-translation-of-audio-responses" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/4a0ceb12df4c1750824b91ffd38d085b110e8019/source/transcription-translation.md" class="reference">24 Aug 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/738ddf667edfe3b719853e49b1bee3884d1714d6/source/transcription-translation.md" class="reference">29 Sep 2026</a></p>
 <iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>KoboToolbox’s natural language processing tools help you collect, manage, and analyze qualitative data more effectively. These tools include automatic speech-to-text transcription and machine translation, which can prepare audio responses for <a class="reference external" href="https://support.kobotoolbox.org/qualitative_analysis.html">automated qualitative analysis</a>.</p>
-<p>This article covers how to transcribe audio responses and translate transcripts, including supported languages and usage limits for automatic options.</p>
+<p>You can transcribe and translate individual responses or process multiple submissions in bulk from the data table. This article covers how to transcribe audio responses and translate transcripts  individually or in bulk, including supported languages and usage limits for automatic options.</p>
 <p class="note">
-    <strong>Note</strong>: Automatic transcription and translation may not be available for <a href="#language-list">all languages</a>. For these languages, only manual transcription and translation are possible.
+    <strong>Note</strong>: Automatic transcription and translation may not be available for <a href="#supported-languages-for-transcription-and-translation">all languages</a>. For these languages, only manual transcription and translation are possible.
 </p>
 <section id="collecting-audio-responses">
 <h2>Collecting audio responses<a class="headerlink" href="#collecting-audio-responses" title="Link to this heading">¶</a></h2>
@@ -201,13 +201,13 @@
 </p>
 <p>After transcribing and translating audio responses, the original transcript for your audio files and all translated text are added as new data columns in the data table and can be <a class="reference external" href="https://support.kobotoolbox.org/export_download.html">downloaded</a> alongside your survey data.</p>
 </section>
-<section id="adding-audio-transcripts">
-<h2>Adding audio transcripts<a class="headerlink" href="#adding-audio-transcripts" title="Link to this heading">¶</a></h2>
+<section id="transcribing-individual-audio-files">
+<h2>Transcribing individual audio files<a class="headerlink" href="#transcribing-individual-audio-files" title="Link to this heading">¶</a></h2>
 <p><img alt="Adding automatic transcriptions example" src="_images/transcription.png" /></p>
-<p>To start transcribing your audio responses:</p>
+<p>To start transcribing individual audio responses:</p>
 <ol class="arabic simple">
 <li><p>Open your project and navigate to <strong>DATA &gt; Table</strong>.</p></li>
-<li><p>Click the <strong>Open</strong> button next to the audio response you would like to transcribe.</p></li>
+<li><p>Click the <i class="ti-outline ti-pencil-star"></i> <strong>Open</strong> button next to the audio response you would like to transcribe.</p></li>
 <li><p>In the <strong>TRANSCRIPT</strong> tab, click <strong>begin</strong>.</p>
 <ul class="simple">
 <li><p>Select the original language of the audio file.</p></li>
@@ -227,15 +227,46 @@
 </li>
 </ol>
 <p class="note">
-    <strong>Note</strong>: Automatically generated transcripts and translations must be saved to prevent data loss. Navigating away from the page without saving will result in losing the data.
+    <strong>Note</strong>: Automatically generated transcripts and translations must be saved to prevent data loss. Navigating away from the page without saving may result in losing the data.
 </p>
 </section>
-<section id="adding-translations">
-<h2>Adding translations<a class="headerlink" href="#adding-translations" title="Link to this heading">¶</a></h2>
+<section id="transcribing-audio-files-in-bulk">
+<h2>Transcribing audio files in bulk<a class="headerlink" href="#transcribing-audio-files-in-bulk" title="Link to this heading">¶</a></h2>
+<p>You can automatically transcribe audio recordings from multiple submissions at once from the data table.</p>
+<p>To transcribe audio responses in bulk:</p>
+<ol class="arabic simple">
+<li><p>Open your project and navigate to <strong>DATA &gt; Table.</strong></p></li>
+<li><p>Select the submissions you want to transcribe using the checkboxes on the left.</p></li>
+<li><p>In the column containing the audio recordings you want to transcribe, click the arrow in the column header.</p></li>
+<li><p>Click <strong>Transcribe selected audio files.</strong></p></li>
+<li><p>Select the language and region, then click <strong>Start transcription.</strong></p></li>
+</ol>
+<p><img alt="Bulk transcribe audio files" src="_images/bulk_transcribe_files.png" /></p>
+<p>The completed transcripts are added to a new column in the data table and marked as ready for review.</p>
+<section id="reviewing-and-approving-transcripts">
+<h3>Reviewing and approving transcripts<a class="headerlink" href="#reviewing-and-approving-transcripts" title="Link to this heading">¶</a></h3>
+<p>Reviewing automated transcripts to confirm that they accurately reflect the audio recordings helps ensure that the data is reliable and ready for analysis or translation.</p>
+<p>To review and approve an individual transcript:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>Review.</strong></p></li>
+<li><p>Make any necessary edits.</p></li>
+<li><p>Save the transcript and move to the next one.</p></li>
+</ol>
+<p>To approve multiple transcriptions at once:</p>
+<ol class="arabic simple">
+<li><p>Select the relevant submissions using the checkboxes on the left.</p></li>
+<li><p>In the transcript column, click the arrow in the column header.</p></li>
+<li><p>Click <strong>Approve all selected.</strong></p></li>
+</ol>
+<p><img alt="Bulk approve transcriptions" src="_images/bulk_approve_transcripts.png" /></p>
+</section>
+</section>
+<section id="translating-individual-transcripts">
+<h2>Translating individual transcripts<a class="headerlink" href="#translating-individual-transcripts" title="Link to this heading">¶</a></h2>
 <p><img alt="Adding automatic translations example" src="_images/translation.png" /></p>
 <p>Once you have a completed transcript for your audio response, you can add translations into multiple languages:</p>
 <ol class="arabic simple">
-<li><p>Proceed to the <strong>TRANSLATIONS</strong> tab.</p>
+<li><p>From the <strong>TRANSCRIPT</strong> tab, proceed to the <strong>TRANSLATIONS</strong> tab.</p>
 <ul class="simple">
 <li><p>The translation option is only available once a transcript has been completed.</p></li>
 </ul>
@@ -257,9 +288,42 @@
     <strong>Note</strong>: Audio files can only contain a single transcript, but each transcript may have multiple translations.
 </p>
 </section>
-<section id="language-list">
-<h2>Language list<a class="headerlink" href="#language-list" title="Link to this heading">¶</a></h2>
+<section id="translating-transcripts-in-bulk">
+<h2>Translating transcripts in bulk<a class="headerlink" href="#translating-transcripts-in-bulk" title="Link to this heading">¶</a></h2>
+<p>You can also automatically translate multiple transcripts at once from the data table.</p>
+<p>To translate transcripts in bulk:</p>
+<ol class="arabic simple">
+<li><p>Ensure your project contains completed audio transcripts.</p></li>
+<li><p>Open your project and navigate to <strong>DATA &gt; Table.</strong></p></li>
+<li><p>Select the submissions containing the transcripts you want to translate using the checkboxes on the left.</p></li>
+<li><p>In the transcript column you want to translate, click the arrow in the column header.</p></li>
+<li><p>Click <strong>Translate selected transcriptions.</strong></p></li>
+<li><p>Search for and select the target language, then click <strong>Create translations.</strong></p></li>
+</ol>
+<p><img alt="Bulk translate transcriptions" src="_images/bulk_translate_transcriptions.png" /></p>
+<p>The completed translations are added to a new column in the data table and marked as ready for review.</p>
+<section id="reviewing-and-approving-translations">
+<h3>Reviewing and approving translations<a class="headerlink" href="#reviewing-and-approving-translations" title="Link to this heading">¶</a></h3>
+<p>To review and approve an individual translation:</p>
+<ol class="arabic simple">
+<li><p>Click <strong>Review.</strong></p></li>
+<li><p>Make any necessary edits.</p></li>
+<li><p>Save the translation and move to the next one.</p></li>
+</ol>
+<p>To approve multiple translations at once:</p>
+<ol class="arabic simple">
+<li><p>Select the relevant submissions using the checkboxes on the left.</p></li>
+<li><p>In the translation column, click the arrow in the column header.</p></li>
+<li><p>Click <strong>Approve all selected.</strong></p></li>
+</ol>
+</section>
+</section>
+<section id="supported-languages-for-transcription-and-translation">
+<h2>Supported languages for transcription and translation<a class="headerlink" href="#supported-languages-for-transcription-and-translation" title="Link to this heading">¶</a></h2>
 <p>KoboToolbox’s natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers <strong>automatic transcription in 80 languages</strong> (with 145 regional variants) and <strong>automatic translation in 129 languages</strong>.</p>
+<p class="note">
+<strong>Note:</strong> Audio files and transcripts are only sent to Google Cloud Compute for the time needed to complete the transcription and translation. They are not stored by the external service after processing or used to improve the service.    
+</p>
 <p>For manual transcription or translation, you can select from approximately 7,000 languages based on the ISO 639-3 comprehensive list, maintained by SIL International (filtered for “living languages”). If a language supports ASR or MT, you can choose between <strong>manual</strong> and <strong>automatic</strong> methods. For other languages, only the <strong>manual</strong> method is available.</p>
 <p class="note">
     For a full list of supported languages, see <a href="https://docs.google.com/spreadsheets/d/1_QDcORZd9qXgfq1OBb61U6ondYfjwmHXOv4XZPjxVVw/edit?usp=sharing">Languages supported for automatic transcription and translation</a>.
@@ -272,6 +336,9 @@
 <section id="usage-limits-for-automatic-transcription-and-translation">
 <h2>Usage limits for automatic transcription and translation<a class="headerlink" href="#usage-limits-for-automatic-transcription-and-translation" title="Link to this heading">¶</a></h2>
 <p>Community Plan users can use up to <strong>10 minutes of automatic speech-to-text transcription</strong> per month and up to <strong>6,000 characters of automatic transcript translation</strong> per month.</p>
+<p class="note">
+<strong>Note:</strong> Automatic processing counts toward these limits regardless of whether files are processed individually or in bulk.
+</p>
 <p>If you need more transcription or translation capacity, you can <a class="reference external" href="https://www.kobotoolbox.org/pricing/">upgrade</a> to a plan with a higher quota or <a class="reference external" href="https://support.kobotoolbox.org/account_settings.html#add-ons">purchase</a> a <strong>Natural Language Processing (NLP) Package</strong> add-on. ​​Add-ons are available based on your data processing needs, starting at $9.95 for 100 additional transcription minutes and 60,000 additional translation characters. You can always continue transcribing and translating audio responses manually with no usage limit.</p>
 </section>
 <section id="troubleshooting">
@@ -440,9 +507,11 @@ If you already have a long recording, you can also download the audio file, spli
 <li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapping your GPS data</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Transcription and translation of audio responses</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#collecting-audio-responses">Collecting audio responses</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-audio-transcripts">Adding audio transcripts</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-translations">Adding translations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#language-list">Language list</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transcribing-individual-audio-files">Transcribing individual audio files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transcribing-audio-files-in-bulk">Transcribing audio files in bulk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#translating-individual-transcripts">Translating individual transcripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#translating-transcripts-in-bulk">Translating transcripts in bulk</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-languages-for-transcription-and-translation">Supported languages for transcription and translation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#usage-limits-for-automatic-transcription-and-translation">Usage limits for automatic transcription and translation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
