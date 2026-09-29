@@ -177,7 +177,7 @@ Explore practical guidance across KoboToolbox topics and features
   project_sharing_settings
   managing_permissions
   activity_logs
-  getting_started_organization_feature
+  team_management_feature
 
 .. raw:: html
 
