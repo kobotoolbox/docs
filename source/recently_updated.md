@@ -3,6 +3,7 @@
 
 1. [Data analysis with KoboToolbox](data_analysis.md) (29 Sep 2026)
 1. [Transcription and translation of audio responses](transcription-translation.md) (29 Sep 2026)
+1. [﻿Collecting qualitative data with KoboToolbox](qualitative_data.md) (29 Sep 2026)
 1. [Styling web forms in the Formbuilder](form_style.md) (29 Sep 2026)
 1. [Collecting data in multiple languages](collecting_data_multiple_languages.md) (29 Sep 2026)
 1. [Introduction to KoboToolbox](welcome.md) (29 Sep 2026)
@@ -10,4 +11,3 @@
 1. [Adding translations in KoboToolbox](language_dashboard.md) (25 Sep 2026)
 1. [Public collections in the KoboToolbox library](using_public_collections.md) (8 Sep 2026)
 1. [Uploading media files to a project](upload_media.md) (8 Sep 2026)
-1. [Selecting options from an image](select_from_image.md) (8 Sep 2026)
