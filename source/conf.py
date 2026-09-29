@@ -161,4 +161,6 @@ redirects = {"server": "creating_account.html",
              "unique_serial_numbers": "calculations_xls.html#advanced-calculations",
              "user_specified_other": "skip_logic.html",
              "video_question_type": "photo_audio_video_file.html",
-             "xls_url": "xlsform_with_kobotoolbox.html#importing-an-xlsform-via-url"}
+             "xls_url": "xlsform_with_kobotoolbox.html#importing-an-xlsform-via-url",
+             "custom_format_web": "form_style.html",
+             "alternative_enketo": "form_style.html"}
