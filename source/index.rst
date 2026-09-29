@@ -71,7 +71,7 @@ Explore practical guidance across KoboToolbox topics and features
   group_repeat
   matrix_response
   language_dashboard
-  alternative_enketo
+  form_style
   form_meta
   form_logic
   skip_logic
