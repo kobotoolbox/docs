@@ -163,4 +163,6 @@ redirects = {"server": "creating_account.html",
              "video_question_type": "photo_audio_video_file.html",
              "xls_url": "xlsform_with_kobotoolbox.html#importing-an-xlsform-via-url",
              "custom_format_web": "form_style.html",
-             "alternative_enketo": "form_style.html"}
+             "alternative_enketo": "form_style.html",
+             "getting_started_organization_feature": "team_management_feature.html",
+             "recording-interviews": "qualitative_data"}
