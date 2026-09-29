@@ -147,7 +147,7 @@ Explore practical guidance across KoboToolbox topics and features
   data_collection_kobocollect
   kobocollect_settings
   collect_gps
-  recording-interviews
+  qualitative_data
   collecting_data_multiple_languages
 
 
