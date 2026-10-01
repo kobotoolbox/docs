@@ -17,12 +17,12 @@
     "subset-font": "^2.9.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.5.4",
+    "autoprefixer": "^10.6.1",
     "browserslist": "^4.28.8",
     "fantasticon": "^3.0.0",
-    "postcss": "^8.5.26",
+    "postcss": "^8.5.28",
     "postcss-cli": "^11.0.1",
-    "sass": "^1.103.1",
+    "sass": "^1.105.0",
     "simple-git": "^3.36.0"
   },
   "browserslist": [
