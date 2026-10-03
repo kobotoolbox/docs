@@ -66,7 +66,7 @@ If the username you entered is already registered, you will need to choose a dif
 
 ### Activating your account
 
-After you create your account, KoboToolbox will send an activation link to the email address you provided. You must open the link **within 72 hours** to activate your account.
+After you create your account, KoboToolbox will send an activation link to the email address you provided. You must open the link **within 24 hours** to activate your account.
 
 If the link has expired, try signing in with the username and password you created. KoboToolbox should automatically send you a new activation email.
 
