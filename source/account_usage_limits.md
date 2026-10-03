@@ -101,3 +101,14 @@ To manage your automatic analysis quota, you can:
 - Continue using manual analysis features, which remain available without a quota limit.
 
 ![Analysis add ons](images/account_usage_limits/analysis_addon.png) 
+
+## Troubleshooting
+
+<details>
+  <summary><strong>Usage totals not updating</strong></summary>
+After adding or removing media files, the storage information under <strong>Account Settings → Usage</strong> may not update immediately. As a result, the values shown in the <strong>Account Total</strong> and <strong>Per Project Total</strong> tabs may temporarily differ. Allow up to 15 minutes for the storage usage information to update.<br><br>Similarly, submission, transcription, translation, and analysis totals may take up to 15 minutes to update.
+
+</details>
+
+<br>
+
