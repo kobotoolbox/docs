@@ -1,5 +1,5 @@
 # Managing account usage limits
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4997f73de5f255e8c5304e63f6ca751f1170baa6/source/account_usage_limits.md" class="reference">3 Oct 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f215e2f8ab24dbeba6789dc7910b004988dcd6f7/source/account_usage_limits.md" class="reference">6 Oct 2026</a>
 
 KoboToolbox [Community, Professional, and Teams Plans](https://www.kobotoolbox.org/pricing/) have specific usage limits for survey submissions, file storage, and automatic transcription, translation, and analysis.
 
