@@ -1,5 +1,5 @@
 # Qualitative analysis of audio responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1667adc7527f3f29d9f4f8ad9c0ac89c20f2ba02/source/qualitative_analysis.md" class="reference">31 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9721baaf961238c87497d81b4525667614c1008b/source/qualitative_analysis.md" class="reference">6 Oct 2026</a>
 
 <iframe src="https://www.youtube.com/embed/Ud65hNS_cuo?si=aFfCfExpyn3MZVAs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -12,7 +12,7 @@ This article explains how to create analysis questions, analyze responses manual
 ## Prerequisites for qualitative analysis
 
 Before using the qualitative analysis features, make sure the following requirements are met:
-- Your form must include at least one [Audio question](https://support.kobotoolbox.org/photo_audio_video_file.html) or have [background audio recording](https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings) enabled. 
+- Your form must include at least one [Audio question](https://support.kobotoolbox.org/photo_audio_video_file.html) or have [background audio recording](https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings) enabled. 
 - Your project must include at least one submission with audio files.
 - For **automated analysis**, audio files must first be [transcribed](https://support.kobotoolbox.org/transcription-translation.html) because the analysis is generated from the original audio transcript.
     - For **manual analysis**, transcribing your audio files before you begin is recommended but not required.

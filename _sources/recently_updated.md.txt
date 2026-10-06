@@ -3,6 +3,7 @@
 
 1. [Glossary of KoboToolbox terms](glossary.md) (6 Oct 2026)
 1. [Question types in XLSForm](question_types_xls.md) (6 Oct 2026)
+1. [Qualitative analysis of audio responses](qualitative_analysis.md) (6 Oct 2026)
 1. [Adding form metadata in the Formbuilder](form_meta.md) (6 Oct 2026)
 1. [Creating a KoboToolbox account](creating_account.md) (3 Oct 2026)
 1. [Managing account usage limits](account_usage_limits.md) (3 Oct 2026)
@@ -10,4 +11,3 @@
 1. [Transcription and translation of audio responses](transcription-translation.md) (29 Sep 2026)
 1. [﻿Collecting qualitative data with KoboToolbox](qualitative_data.md) (29 Sep 2026)
 1. [Styling web forms in the Formbuilder](form_style.md) (29 Sep 2026)
-1. [Collecting data in multiple languages](collecting_data_multiple_languages.md) (29 Sep 2026)
