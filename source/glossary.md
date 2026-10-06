@@ -85,7 +85,7 @@ The process of verifying a user’s identity by requiring a valid username and p
 A feature that continuously records audio during an interview while the form is being completed, capturing spoken responses without requiring separate audio questions.
 
 <p class="note">
-  For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
+  For more information, see <a href="https://support.kobotoolbox.org/qualitative-data.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
 </p>
 
 ---
