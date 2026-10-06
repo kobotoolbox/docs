@@ -85,7 +85,7 @@ To enable background audio recording in the Formbuilder:
 ![Enabling background audio](images/recording_interviews/background_audio.png)
 
 <p class="note">
-For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>.
+For more information, see <a href="https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>.
 </p>
 
 ### Configuring audio quality
