@@ -1,5 +1,5 @@
 # Media questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c4650fac2ec11903b05aadf5a55551e19ba83a49/source/photo_audio_video_file.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/491e7e76070ebe97cddb0d73b158433eba36c815/source/photo_audio_video_file.md" class="reference">6 Oct 2026</a>
 
 Many data collection projects require more than just quantitative data. KoboToolbox allows you to capture various media files from respondents, including photos, audio recordings, videos, and files, to provide key qualitative information and add visual and auditory depth to your datasets.
 
@@ -25,7 +25,7 @@ The following media question types are available in the KoboToolbox Formbuilder:
 
 
 <p class="note">
-<strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types <strong>in KoboCollect</strong> are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>. 
+<strong>Note:</strong> KoboToolbox also supports background audio recordings for entire interviews or focus group discussions. When background audio recording is active on a form, <strong>Audio</strong> question types <strong>in KoboCollect</strong> are deactivated, as it is not possible to record audio using both features simultaneously. For more information, see <a href="https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>. 
 </p>
 
 ## Adding media questions in the Formbuilder
