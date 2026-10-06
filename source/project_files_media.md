@@ -1,5 +1,5 @@
 # Project files and media overview
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/project_files_media.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/fb2d3786153d4d3ccd6662908db04b2765dd5dbc/source/project_files_media.md" class="reference">6 Oct 2026</a>
 
 A KoboToolbox project may include files and media added at different stages of the data collection process. 
 
