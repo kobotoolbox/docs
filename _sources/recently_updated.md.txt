@@ -3,6 +3,7 @@
 
 1. [Transcription and translation of audio responses](transcription-translation.md) (6 Oct 2026)
 1. [Form metadata in XLSForm](metadata_xls.md) (6 Oct 2026)
+1. [Project files and media overview](project_files_media.md) (6 Oct 2026)
 1. [Media questions in KoboToolbox](photo_audio_video_file.md) (6 Oct 2026)
 1. [Glossary of KoboToolbox terms](glossary.md) (6 Oct 2026)
 1. [Question types in XLSForm](question_types_xls.md) (6 Oct 2026)
@@ -10,4 +11,3 @@
 1. [Adding form metadata in the Formbuilder](form_meta.md) (6 Oct 2026)
 1. [Creating a KoboToolbox account](creating_account.md) (3 Oct 2026)
 1. [Managing account usage limits](account_usage_limits.md) (3 Oct 2026)
-1. [Data analysis with KoboToolbox](data_analysis.md) (29 Sep 2026)
