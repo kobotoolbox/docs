@@ -1,5 +1,5 @@
 # Adding form metadata in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/form_meta.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f9505957f3c05e8b2fe5cd0c58727a7e156a6bd0/source/form_meta.md" class="reference">6 Oct 2026</a>
 
 Metadata questions automatically gather information about the data collection process, such as the date, time, and device used, without requiring input from the respondent. You can also record audio in the background during data collection.
 
@@ -85,7 +85,7 @@ To enable background audio recording in the Formbuilder:
 ![Enabling background audio](images/recording_interviews/background_audio.png)
 
 <p class="note">
-For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>.
+For more information, see <a href="https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>.
 </p>
 
 ### Configuring audio quality
