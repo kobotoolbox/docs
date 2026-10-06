@@ -15,7 +15,7 @@ You can transcribe and translate individual responses or process multiple submis
 ## Collecting audio responses 
 Before transcribing or translating audio responses, you need to collect audio data in your project.
 
-1. Add an [Audio question](https://support.kobotoolbox.org/photo_audio_video_file.html) to your form or enable [background audio recordings](https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings).
+1. Add an [Audio question](https://support.kobotoolbox.org/photo_audio_video_file.html) to your form or enable [background audio recordings](https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings).
 2. Deploy the form and collect submissions containing audio recordings.
 
 <p class="note">
@@ -133,7 +133,7 @@ To approve multiple translations at once:
 
 ## Supported languages for transcription and translation
 
-KoboToolbox's natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers **automatic transcription in 80 languages** (with 145 regional variants) and **automatic translation in 129 languages**. 
+KoboToolbox's natural language processing features integrate automated speech recognition (ASR) and machine translation (MT) capabilities provided by Google Cloud Compute, which currently offers **automatic transcription in 112 languages** (with 142 regional variants) and **automatic translation in 129 languages**. 
 
 <p class="note">
 <strong>Note:</strong> Audio files and transcripts are only sent to Google Cloud Compute for the time needed to complete the transcription and translation. They are not stored by the external service after processing or used to improve the service.    
