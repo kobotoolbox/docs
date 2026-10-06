@@ -165,4 +165,5 @@ redirects = {"server": "creating_account.html",
              "custom_format_web": "form_style.html",
              "alternative_enketo": "form_style.html",
              "getting_started_organization_feature": "team_management_feature.html",
-             "recording-interviews": "qualitative_data.html"}
+             "recording-interviews": "qualitative_data.html",
+             "recording-interviews.html#recording-interviews-with-background-audio-recordings": "qualitative_data.html#recording-interviews-with-background-audio-recordings"}
