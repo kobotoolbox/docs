@@ -57,6 +57,10 @@ To manage your storage usage, you can:
 - Purchase a **File Storage** add-on in **Account Settings > Add-ons.**
 - Delete [media attachments](https://support.kobotoolbox.org/managing_media_responses.html#deleting-media-files) from projects you own until your usage is within your plan's limits, starting with larger attachments such as videos.
 
+<p class="note">
+  <strong>Note:</strong> File Storage add-ons are not cumulative. You can select only one add-on at a time, up to a maximum of 50 GB.
+</p>
+
 ![Manage storage](images/account_usage_limits/Exceeding_storage_and_submission_limits.png)
 
 You can also help prevent account restrictions by reducing the size of files submitted through your forms, for example by setting [upload size limits](https://support.kobotoolbox.org/photo_audio_video_file.html#lowering-image-sizes), lowering [audio recording quality](https://support.kobotoolbox.org/photo_audio_video_file.html#configuring-audio-quality), or configuring KoboCollect [image and video capture settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings).
