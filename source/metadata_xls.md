@@ -40,7 +40,7 @@ Available metadata questions in XLSForm include:
 | `email` | Records the email address from the <a href="https://support.kobotoolbox.org/kobocollect_settings.html#user-and-device-identity-settings">KoboCollect app settings</a>. This metadata question is not supported in web forms. |
 | `start-geopoint` | Captures GPS coordinates when the form is first opened. Can be used to warm up the device GPS so that later GPS questions can reach accurate readings more quickly. |
 | `background-geopoint` | Captures GPS coordinates when a specific question is answered. The question must be specified in the <code>trigger</code> column of the <code>background-geopoint</code> question. |
-| `background-audio` | Records audio in the background while a form is open. To learn more about this feature, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>. | 
+| `background-audio` | Records audio in the background while a form is open. To learn more about this feature, see <a href="https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings">Collecting qualitative data with KoboToolbox</a>. | 
 | `audit` | Captures a detailed log of the interview process, including start time, end time, location, and user actions during the entire data collection process. This metadata question is not supported in web forms.<br><br>To learn more about using the audit question for audit logs and configuring settings, see <a href="https://docs.getodk.org/form-audit-log/">Form Audit Log (ODK)</a>. |
 
 <p class="note">
