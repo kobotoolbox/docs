@@ -81,7 +81,7 @@ Media questions allow respondents to upload or record images, audio, and video f
 
 
 <p class="note">
-To learn more about media question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a> and <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
+To learn more about media question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a> and <a href="https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
 </p>
 
 ### GPS question types
