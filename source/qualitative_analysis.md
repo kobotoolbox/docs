@@ -12,7 +12,7 @@ This article explains how to create analysis questions, analyze responses manual
 ## Prerequisites for qualitative analysis
 
 Before using the qualitative analysis features, make sure the following requirements are met:
-- Your form must include at least one [Audio question](https://support.kobotoolbox.org/photo_audio_video_file.html) or have [background audio recording](https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings) enabled. 
+- Your form must include at least one [Audio question](https://support.kobotoolbox.org/photo_audio_video_file.html) or have [background audio recording](https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings) enabled. 
 - Your project must include at least one submission with audio files.
 - For **automated analysis**, audio files must first be [transcribed](https://support.kobotoolbox.org/transcription-translation.html) because the analysis is generated from the original audio transcript.
     - For **manual analysis**, transcribing your audio files before you begin is recommended but not required.
