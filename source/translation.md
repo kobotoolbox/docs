@@ -1,7 +1,7 @@
 # Translating open-ended responses
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/eaaa0a122cb15511b64a66babaa5dad10f6aa7a9/source/transcription-translation.md" class="reference">6 Oct 2026</a>
 
-<iframe src="" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/Tjr6xHsoOlg?si=qvDHOuFpJXliBKu-" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 KoboToolbox’s natural language processing tools include automatic translation using machine translation (MT), which can translate completed audio transcripts and responses to text questions into other languages for review and [analysis](https://support.kobotoolbox.org/qualitative_analysis.html).
 
