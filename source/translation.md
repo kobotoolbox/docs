@@ -21,7 +21,7 @@ To translate open-ended responses, your project must contain either:
 
 To translate an open-ended response:
 1. Open your project and go to **DATA > Table.**
-2. Click <i class="ti-outline ti-arrow-up-right"></i> **Open** next to the audio or text response you want to translate.
+2. Click <i class="ti-outline ti-pencil-star"></i> **Open** next to the audio or text response you want to translate.
 3. Go to the **TRANSLATIONS** tab and click **begin.**
     - Select the language you want to translate into.
     - If available, select **automatic</strong> to generate the translation automatically. Select **manual** to translate the transcript yourself.
