@@ -4,7 +4,7 @@
 
 <iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr&cc_lang_pref=fr&hl=fr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-Les outils de traitement automatique du langage naturel de KoboToolbox vous aident à collecter, gérer et analyser plus efficacement des données qualitatives. Ces outils comprennent la transcription automatique de la parole en texte et la traduction automatique, qui peuvent préparer les réponses audio pour l'[analyse qualitative automatisée](https://support.kobotoolbox.org/qualitative_analysis.html).
+Les outils de traitement automatique du langage naturel de KoboToolbox vous aident à collecter, gérer et analyser plus efficacement des données qualitatives. Ces outils comprennent la transcription automatique de la parole en texte et la traduction automatique, qui peuvent préparer les réponses audio pour l'[analyse qualitative automatisée](https://support.kobotoolbox.org/fr/qualitative_analysis.html).
 
 Vous pouvez transcrire et traduire des réponses individuellement, ou traiter plusieurs soumissions en masse depuis le tableau de données. Cet article explique comment transcrire des réponses audio et traduire des transcriptions, individuellement ou en masse, et présente les langues disponibles ainsi que les limites d'utilisation des options automatiques.
 
@@ -15,14 +15,14 @@ Vous pouvez transcrire et traduire des réponses individuellement, ou traiter pl
 ## Collecter des réponses audio
 Avant de transcrire ou de traduire des réponses audio, vous devez collecter des données audio dans votre projet.
 
-1. Ajoutez une [question de type Audio](https://support.kobotoolbox.org/photo_audio_video_file.html) à votre formulaire ou activez les [enregistrements audio d'arrière-plan](https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings).
+1. Ajoutez une [question de type Audio](https://support.kobotoolbox.org/fr/photo_audio_video_file.html) à votre formulaire ou activez les [enregistrements audio d'arrière-plan](https://support.kobotoolbox.org/fr/qualitative_data.html#recording-interviews-with-background-audio-recordings).
 2. Déployez le formulaire et collectez des soumissions contenant des enregistrements audio.
 
 <p class="note">
     <strong>Note</strong> : pour certaines langues disponibles, la transcription automatique peut ne pas fonctionner avec des fichiers audio de plus de 50 minutes. Pour les entretiens longs, envisagez d'utiliser plusieurs questions audio individuelles plutôt qu'un seul enregistrement audio d'arrière-plan.
 </p>
 
-Une fois les réponses audio transcrites et traduites, la transcription originale de vos fichiers audio et tous les textes traduits sont ajoutés sous forme de nouvelles colonnes dans le tableau de données. Vous pouvez les [télécharger](https://support.kobotoolbox.org/export_download.html) avec les données de votre enquête.
+Une fois les réponses audio transcrites et traduites, la transcription originale de vos fichiers audio et tous les textes traduits sont ajoutés sous forme de nouvelles colonnes dans le tableau de données. Vous pouvez les [télécharger](https://support.kobotoolbox.org/fr/export_download.html) avec les données de votre enquête.
 
 
 ## Transcrire des fichiers audio individuellement
@@ -158,7 +158,7 @@ Les utilisateurs du plan Community peuvent utiliser jusqu'à **10 minutes de tra
 <strong>Note :</strong> le traitement automatique est comptabilisé dans ces limites, que les fichiers soient traités individuellement ou en masse.
 </p>
 
-Si vous avez besoin d'une capacité de transcription ou de traduction supplémentaire, vous pouvez [passer à une offre supérieure](https://www.kobotoolbox.org/pricing/) offrant un quota plus élevé ou [acheter](https://support.kobotoolbox.org/account_settings.html#add-ons) un supplément **pack de traitement du langage naturel (NLP)**. Les suppléments sont proposés selon vos besoins de traitement des données, à partir de 9,95 $ pour 100 minutes de transcription supplémentaires et 60 000 caractères de traduction supplémentaires. Vous pouvez toujours continuer à transcrire et à traduire des réponses audio manuellement, sans limite d'utilisation.
+Si vous avez besoin d'une capacité de transcription ou de traduction supplémentaire, vous pouvez [passer à une offre supérieure](https://www.kobotoolbox.org/pricing/) offrant un quota plus élevé ou [acheter](https://support.kobotoolbox.org/fr/account_settings.html#add-ons) un supplément **pack de traitement du langage naturel (NLP)**. Les suppléments sont proposés selon vos besoins de traitement des données, à partir de 9,95 $ pour 100 minutes de transcription supplémentaires et 60 000 caractères de traduction supplémentaires. Vous pouvez toujours continuer à transcrire et à traduire des réponses audio manuellement, sans limite d'utilisation.
 
 
 ## Résolution de problèmes
