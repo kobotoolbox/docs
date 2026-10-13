@@ -25,7 +25,7 @@ Before transcribing audio responses, you need to collect audio data in your proj
 
 ## Transcribing individual audio files
 
-![Transcribe an audio response](images/transription/Transcription.png)
+![Transcribe an audio response](images/transcription/Transcription.png)
 
 To transcribe an individual audio response:
 
@@ -58,7 +58,7 @@ To transcribe audio responses in bulk:
 5. Select the language and region.
 6. Click **Start transcription.**
 
-![Bulk transcribe selected files](images/transription/Bulk_transcribe_files.png)
+![Bulk transcribe selected files](images/transcription/Bulk_transcribe_files.png)
 
 Bulk transcription runs in the background, so you can continue working in other parts of KoboToolbox while it is processing. Completed transcripts are added to a new column in the data table and marked as ready for review.
 
