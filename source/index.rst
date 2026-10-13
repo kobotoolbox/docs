@@ -198,9 +198,9 @@ Explore practical guidance across KoboToolbox topics and features
   creating_custom_reports
   mapping_gps
   transcription
+  translation
   qualitative_analysis
   converting_to_spss_and_stata
-  translation
 
 .. raw:: html
 
