@@ -30,7 +30,7 @@ Before transcribing audio responses, you need to collect audio data in your proj
 To transcribe an individual audio response:
 
 1. Open your project and go to **DATA > Table.**
-2. Click <i class="ti-outline ti-arrow-up-right"></i> **Open** next to the audio response you want to transcribe.
+2. Click <i class="ti-outline ti-pencil-star"></i> **Open** next to the audio response you want to transcribe.
 3. In the **TRANSCRIPT** tab, click **begin.**
     - Select the original language of the audio recording.
     - If available, select **automatic** to generate the transcript automatically. Select **manual** to transcribe the recording yourself.
