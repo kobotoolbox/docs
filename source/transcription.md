@@ -25,7 +25,7 @@ Before transcribing audio responses, you need to collect audio data in your proj
 
 ## Transcribing individual audio files
 
-![Transcribe an audio response](images/transription/transcription.png)
+![Transcribe an audio response](images/transription/Transcription.png)
 
 To transcribe an individual audio response:
 
