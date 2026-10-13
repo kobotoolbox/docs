@@ -78,6 +78,8 @@ To approve multiple transcripts at once:
 2. In the transcript column, click the arrow in the column header.
 3. Click **Approve all selected.**
 
+![Transcribe multiple responses at once](images/transcription/Bulk_approve_transcripts.png)
+
 ## Supported languages for transcription
 
 KoboToolbox supports automated speech recognition (ASR) for supported languages and regional variants. ASR capabilities are provided by Google Cloud Compute, which currently offers automatic transcription in 112 languages (with 142 regional variants).
