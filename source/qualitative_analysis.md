@@ -14,7 +14,7 @@ This article explains how to create analysis questions, analyze responses manual
 Before using the qualitative analysis features, make sure the following requirements are met:
 - Your form must include at least one [Audio question](https://support.kobotoolbox.org/photo_audio_video_file.html), [Text question](https://support.kobotoolbox.org/text_questions.html), or have [background audio recording](https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings) enabled. 
 - Your project must include at least one submission with audio files or text responses.
-- For **automated analysis**, audio files must first be [transcribed](https://support.kobotoolbox.org/transcription-translation.html) because the analysis is generated from the original audio transcript.
+- For **automated analysis**, audio files must first be [transcribed](https://support.kobotoolbox.org/transcription.html) because the analysis is generated from the original audio transcript.
     - For **manual analysis**, transcribing your audio files before you begin is recommended but not required.
 
 ## Creating analysis questions
@@ -129,7 +129,7 @@ When you export your data, an additional column is included to indicate the <str
 
 ### Customizing the display settings
 
-By default, the display panel on the right side of the **ANALYSIS** screen shows the audio recording (if applicable), the original transcript or text, any generated [translations](https://support.kobotoolbox.org/transcription-translation.html), and responses to other questions.
+By default, the display panel on the right side of the **ANALYSIS** screen shows the audio recording (if applicable), the original transcript or text, any generated [translations](https://support.kobotoolbox.org/translation.html), and responses to other questions.
 
 You can change the display to include the information that best supports your analysis. For example, if you are working in multiple languages, you may want to hide the original transcript and just show the translation.
 
