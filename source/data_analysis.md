@@ -39,12 +39,12 @@ KoboToolbox also provides a built-in **Map view** for submissions that include G
 
 KoboToolbox’s natural language processing tools help you **transcribe, translate, and analyze qualitative data.** This can help turn open-ended audio responses into clearer, more usable insights.
 
-You can process and analyze audio responses directly in the user interface, then save transcripts, translations, summaries, categories, and other analysis results as new columns in your dataset. Transcription and translation can be done at the individual submission-level or in bulk. 
+You can process and analyze audio and text responses directly in the user interface, and save transcripts, translations, summaries, categories, and other analysis results as new columns in your dataset. Transcription and translation can be done at the individual submission-level or in bulk. 
 
 ![Qualitative data analysis](images/data_analysis/qual.png)
 
 <p class="note">
-  To learn more about analyzing qualitative data in KoboToolbox, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a> and <a href="https://support.kobotoolbox.org/qualitative_analysis.html">Qualitative analysis of audio responses</a>.
+  To learn more about transcribing, translating, and analyzing qualitative data, see <a href="https://support.kobotoolbox.org/transcription.html">Transcribing audio responses</a>, <a href="https://support.kobotoolbox.org/translation.html">Translating open-ended responses</a>, and <a href="https://support.kobotoolbox.org/qualitative_analysis.html">Analyzing qualitative data</a>.
 </p>
 
 ## Exporting and connecting data for external analysis

@@ -5,7 +5,7 @@ Qualitative data helps you **understand experiences, priorities, and context** t
 
 In practice, qualitative data is often harder to collect and analyze at scale. Writing down open-ended responses, reviewing images, and transcribing audio interviews can take significant time. Because of this, teams often collect less qualitative data than they would like, or struggle to use everything they collect.
 
-KoboToolbox includes features that **make qualitative data collection more practical.** You can collect text, images, audio, video, and background audio recordings in your forms, then review and manage them directly in KoboToolbox. For audio responses, KoboToolbox also includes built-in tools for [transcription, translation](https://support.kobotoolbox.org/transcription-translation.html), and [analysis](https://support.kobotoolbox.org/qualitative_analysis.html).
+KoboToolbox includes features that **make qualitative data collection more practical.** You can collect text, images, audio, video, and background audio recordings in your forms, then review and manage them directly in KoboToolbox. For open-ended responses, KoboToolbox also includes built-in tools for [transcription](https://support.kobotoolbox.org/transcription.html), [translation](https://support.kobotoolbox.org/translation.html), and [analysis](https://support.kobotoolbox.org/qualitative_analysis.html).
 
 This article covers the main ways to collect qualitative data with KoboToolbox, including relevant question types, background audio recordings, and options for managing and analyzing qualitative data after collection.
 
@@ -48,7 +48,7 @@ Background audio recording is useful when you want to **capture a full interview
 
 <p class="note">
 <strong>Note:</strong>
-If you plan to use <a href="https://support.kobotoolbox.org/transcription-translation.html">automated transcription</a>, consider using multiple Audio questions instead of background audio recording for long interviews. For some supported languages, automated transcription may not work for <strong>recordings longer than 50 minutes</strong>. Dividing an interview into shorter recordings can also make files easier to upload and manage.
+If you plan to use <a href="https://support.kobotoolbox.org/transcription.html">automated transcription</a>, consider using multiple Audio questions instead of background audio recording for long interviews. For some supported languages, automated transcription may not work for <strong>recordings longer than 50 minutes</strong>. Dividing an interview into shorter recordings can also make files easier to upload and manage.
 </p>
 
 Background audio can be recorded in the KoboCollect app and in web forms. 
@@ -70,13 +70,13 @@ Audio data can be especially sensitive. Before using background audio recording,
 
 KoboToolbox includes built-in features to help you review qualitative data after collection.
 
-- **Text:** You can review all responses to a text question in **DATA > Report.** This is useful for quickly reading open-ended answers together and spotting common themes.
+- **Text:** You can review all responses to a text question in **DATA > Report.** Text responses can also be opened in their own view for translation and analysis.
 - **Images:** You can review collected images in **DATA > Gallery.** This makes it easier to browse visual responses across submissions.
 - **Video:** Video files can be viewed within individual submissions. This is useful when you need to review visual context alongside other responses from the same record.
 - **Audio:** Audio responses, including background audio recordings, can be opened in their own view for review, transcription, translation, and analysis. 
 
 <p class="note">
-To learn more about transcribing, translating, and analyzing audio responses, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a> and <a href="https://support.kobotoolbox.org/qualitative_analysis.html">Qualitative analysis of audio responses</a>.
+To learn more about transcribing, translating, and analyzing qualitative data, see <a href="https://support.kobotoolbox.org/transcription.html">Transcribing audio responses</a>, <a href="https://support.kobotoolbox.org/translation.html">Translating open-ended responses</a>, and <a href="https://support.kobotoolbox.org/qualitative_analysis.html">Analyzing qualitative data</a>.
 </p>
 
 Qualitative data is included in your dataset when you [export](https://support.kobotoolbox.org/export_download.html) it, including links to media files for each submission, any transcription, translation, and analysis data, and any text responses. Media files can also be [downloaded separately](https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files), either individually or in bulk.
