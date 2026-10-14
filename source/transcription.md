@@ -3,12 +3,12 @@
 
 <iframe src="https://www.youtube.com/embed/LSIPdToOJnM?si=wTmKz8Q8sRnxHIuU" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-KoboToolbox’s natural language processing tools include automatic transcription using automated speech recognition (ASR), which can convert audio responses into text for review, translation, and [analysis](https://support.kobotoolbox.org/qualitative_analysis.html).
+KoboToolbox’s natural language processing tools include automatic transcription using automated speech recognition (ASR), which can convert audio responses into text for review, [translation](https://support.kobotoolbox.org/translation.html), and [analysis](https://support.kobotoolbox.org/qualitative_analysis.html).
 
 You can transcribe individual audio responses or process multiple submissions in bulk from the data table. This article explains how to transcribe audio responses manually or automatically, review completed transcripts, and manage transcription usage limits.
 
 <p class="note">
-<strong>Note:</strong> Automatic transcription is not available for all languages. For unsupported languages, you can transcribe audio responses manually.
+<strong>Note:</strong> Automatic transcription is not available for <a href="https://docs.google.com/spreadsheets/d/1_QDcORZd9qXgfq1OBb61U6ondYfjwmHXOv4XZPjxVVw/edit?usp=sharing">all languages</a>. For unsupported languages, you can transcribe audio responses manually.
 </p>
 
 ## Collecting audio responses
@@ -25,12 +25,11 @@ Before transcribing audio responses, you need to collect audio data in your proj
 
 ## Transcribing individual audio files
 
-![Transcribe an audio response](images/transcription/Transcription.png)
-
 To transcribe an individual audio response:
 
 1. Open your project and go to **DATA > Table.**
 2. Click <i class="ti-outline ti-pencil-star"></i> **Open** next to the audio response you want to transcribe.
+![Open audio files](images/transcription/open.png)
 3. In the **TRANSCRIPT** tab, click **begin.**
     - Select the original language of the audio recording.
     - If available, select **automatic** to generate the transcript automatically. Select **manual** to transcribe the recording yourself.
@@ -40,7 +39,9 @@ To transcribe an individual audio response:
 5. Click **Save.**
 6. When finished, click **DONE**, use the arrows to move to another submission, or continue to the **TRANSLATIONS** tab.
 
-When you return to the data table, the transcript appears in a new column and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data. After completing a transcript, you can translate it into one or more languages and/or [analyze](https://support.kobotoolbox.org/qualitative_analysis.html) it.
+![Transcribe an audio response](images/transcription/Transcription.png)
+
+When you return to the data table, the transcript appears in a new column and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data. After completing a transcript, you can [translation](https://support.kobotoolbox.org/translation.html) it into one or more languages and/or [analyze](https://support.kobotoolbox.org/qualitative_analysis.html) it.
 
 <p class="note">
 <strong>Note:</strong> Automatically generated transcripts must be saved to prevent data loss. Navigating away from the page without saving may result in losing the transcript.
