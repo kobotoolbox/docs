@@ -3,7 +3,7 @@
 
 <iframe src="https://www.youtube.com/embed/Tjr6xHsoOlg?si=qvDHOuFpJXliBKu-" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-KoboToolbox’s natural language processing tools include automatic translation using machine translation (MT), which can translate completed audio transcripts and responses to text questions into other languages for review and [analysis](https://support.kobotoolbox.org/qualitative_analysis.html).
+KoboToolbox’s natural language processing tools include automatic translation using machine translation (MT), which can translate completed audio transcripts and responses to text questions into other languages for review and [analysis](https://support.kobotoolbox.org/translation.html#supported-languages-for-transcription-and-translation).
 
 You can translate individual **audio transcripts or text responses**, or process multiple submissions in bulk from the data table. This article explains how to translate text manually or automatically, review completed translations, and manage translation usage limits.
 
@@ -27,7 +27,7 @@ To translate an open-ended response:
     - If using automatic translation, click **create translation.**
 4. Review the completed translation and make any necessary edits.
     - Use the original transcript and audio recording to check the translation as needed.
-5. Click **Save.</strong>
+5. Click **Save.**
 6. When finished, click <i class="ti-outline ti-plust"></i> **new translation** to add another translation, use the arrows to move to another submission, or click **DONE** to return to the data table.
 
 When you return to the data table, the translation appears in a new column and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data. You can add multiple translations to the same transcript.
@@ -57,7 +57,7 @@ To translate audio transcripts in bulk:
 
 Bulk translation runs in the background, so you can continue working in other parts of KoboToolbox while it is processing. Completed translations are added to a new column in the data table and marked as ready for review.
 
-If the selected responses exceed your remaining translation limit, you may need to select fewer rows before starting the bulk translation.
+If the selected responses exceed your remaining [translation limit](https://support.kobotoolbox.org/qualitative_analysis.html#usage-limits-for-ai-generated-analysis), you may need to select fewer rows before starting the bulk translation.
 
 ## Reviewing and approving translations
 
