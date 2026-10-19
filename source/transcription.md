@@ -41,7 +41,7 @@ To transcribe an individual audio response:
 
 ![Transcribe an audio response](images/transcription/Transcription.png)
 
-When you return to the data table, the transcript appears in a new column and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data. After completing a transcript, you can [translation](https://support.kobotoolbox.org/translation.html) it into one or more languages and/or [analyze](https://support.kobotoolbox.org/qualitative_analysis.html) it.
+When you return to the data table, the transcript appears in a new column and can be [downloaded](https://support.kobotoolbox.org/export_download.html) alongside your survey data. After completing a transcript, you can [translate](https://support.kobotoolbox.org/translation.html) it into one or more languages and/or [analyze](https://support.kobotoolbox.org/qualitative_analysis.html) it.
 
 <p class="note">
 <strong>Note:</strong> Automatically generated transcripts must be saved to prevent data loss. Navigating away from the page without saving may result in losing the transcript.
@@ -63,7 +63,7 @@ To transcribe audio responses in bulk:
 
 Bulk transcription runs in the background, so you can continue working in other parts of KoboToolbox while it is processing. Completed transcripts are added to a new column in the data table and marked as ready for review.
 
-If the selected submissions exceed your remaining transcription limit, you may need to select fewer rows before starting the bulk transcription.
+If the selected submissions exceed your [remaining transcription limit](https://support.kobotoolbox.org/transcription.html#usage-limits-for-automatic-transcription), you may need to select fewer rows before starting the bulk transcription.
 
 ## Reviewing and approving transcripts
 
