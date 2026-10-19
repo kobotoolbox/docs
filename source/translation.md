@@ -8,13 +8,13 @@ KoboToolbox’s natural language processing tools include automatic translation 
 You can translate individual **audio transcripts or text responses**, or process multiple submissions in bulk from the data table. This article explains how to translate text manually or automatically, review completed translations, and manage translation usage limits.
 
 <p class="note">
-<strong>Note:</strong> Automatic translation is not available for all languages. For unsupported languages, you can add translations manually.
+<strong>Note:</strong> Automatic translation is not available for <a href="https://support.kobotoolbox.org/translation.html#supported-languages-for-translation">all languages</a>. For unsupported languages, you can add translations manually.
 </p>
 
 ## Translating individual transcripts or text responses
 
 To translate open-ended responses, your project must contain either:
-- Audio responses with completed transcripts.
+- Audio responses with completed [transcripts](https://support.kobotoolbox.org/transcription.html).
 - Written responses collected through a **Text question.**
 
 To translate an open-ended response:
@@ -23,7 +23,7 @@ To translate an open-ended response:
    ![Translations tab](images/translation/open.png)
 3. Go to the **TRANSLATIONS** tab and click **begin.**
     - Select the language you want to translate into.
-    - If available, select **automatic</strong> to generate the translation automatically. Select **manual** to translate the transcript yourself.
+    - If available, select **automatic** to generate the translation automatically. Select **manual** to translate the transcript yourself.
     - If using automatic translation, click **create translation.**
 4. Review the completed translation and make any necessary edits.
     - Use the original transcript and audio recording to check the translation as needed.
@@ -57,7 +57,7 @@ To translate audio transcripts in bulk:
 
 Bulk translation runs in the background, so you can continue working in other parts of KoboToolbox while it is processing. Completed translations are added to a new column in the data table and marked as ready for review.
 
-If the selected responses exceed your remaining [translation limit](https://support.kobotoolbox.org/qualitative_analysis.html#usage-limits-for-ai-generated-analysis), you may need to select fewer rows before starting the bulk translation.
+If the selected responses exceed your [remaining translation limit](https://support.kobotoolbox.org/qualitative_analysis.html#usage-limits-for-ai-generated-analysis), you may need to select fewer rows before starting the bulk translation.
 
 ## Reviewing and approving translations
 
