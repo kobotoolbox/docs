@@ -120,11 +120,10 @@
   {% if pagename == "index" %}{% include('partials/community_questions.html') %}{% endif %}
 
   <div class="footer">
-    <p>{{ lt.maintained_by }} <a class="inline" href="https://www.kobo.ngo/about">Kobo Inc.</a></p>
+    <span class="footer__copyright">{{ lt.copyright_content }} &copy; <span id="copyright-year"></span> {{ lt.copyright_by }} <a href="https://kobo.ngo/">Kobo</a> {{ lt.copyright_license }} <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="license noopener">CC BY-NC 4.0</a></span>
     <p>
         <a href="https://kobotoolbox.org/terms">{{ lt.terms }}</a>
         <a href="https://kobotoolbox.org/privacy">{{ lt.privacy }}</a>
-              <span class="footer__copyright">{{ lt.copyright_content }} &copy; <span id="copyright-year"></span> {{ lt.copyright_by }} <a href="https://kobo.ngo/">Kobo</a> {{ lt.copyright_license }} <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="license noopener">CC BY-NC 4.0</a></span>
     </p>
   </div>
 
