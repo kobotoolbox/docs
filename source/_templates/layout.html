@@ -12,7 +12,10 @@
     'button': 'Fill out the short survey here &rarr;',
     'maintained_by': 'KoboToolbox is maintained by',
     'terms': 'Terms of Service',
-    'privacy': 'Privacy Policy'
+    'privacy': 'Privacy Policy',
+    'copyright_content': 'KoboToolbox Help Center',
+    'copyright_by': 'by',
+    'copyright_license': 'licensed under'
   },
   'es': {
     'home': 'Inicio',
@@ -22,7 +25,10 @@
     'button': 'Completa la breve encuesta aquí &rarr;',
     'maintained_by': 'KoboToolbox es mantenido por',
     'terms': 'Términos de servicio',
-    'privacy': 'Política de privacidad'
+    'privacy': 'Política de privacidad',
+    'copyright_content': 'Centro de ayuda de KoboToolbox',
+    'copyright_by': 'por',
+    'copyright_license': 'bajo licencia'
   },
   'fr': {
     'home': 'Accueil',
@@ -32,7 +38,10 @@
     'button': 'Remplissez le court sondage ici &rarr;',
     'maintained_by': 'KoboToolbox est maintenu par',
     'terms': 'Conditions d\'utilisation',
-    'privacy': 'Politique de confidentialité'
+    'privacy': 'Politique de confidentialité',
+    'copyright_content': 'Page d\'aide de KoboToolbox',
+    'copyright_by': 'par',
+    'copyright_license': 'sous licence'
   }
 } %}
 {% set lt = layout_translations.get(lang, layout_translations['en']) %}
@@ -115,8 +124,13 @@
     <p>
         <a href="https://kobotoolbox.org/terms">{{ lt.terms }}</a>
         <a href="https://kobotoolbox.org/privacy">{{ lt.privacy }}</a>
+              <span class="footer__copyright">{{ lt.copyright_content }} &copy; <span id="copyright-year"></span> {{ lt.copyright_by }} <a href="https://kobo.ngo/">Kobo</a> {{ lt.copyright_license }} <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="license noopener">CC BY-NC 4.0</a></span>
     </p>
   </div>
+
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
 
   {% if theme_analytics_id %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ theme_analytics_id }}"></script>
@@ -127,6 +141,7 @@
     gtag('config', '{{ theme_analytics_id }}');
   </script>
   {% endif %}
+
 
   <script>
     window.docs = {
