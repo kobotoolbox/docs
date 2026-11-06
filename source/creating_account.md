@@ -43,7 +43,7 @@ KoboToolbox has two public servers:
 | **Server** | **Description** |
 |:---|:---|
 | **Global KoboToolbox Server** | Used by most KoboToolbox users. |
-| **European Union KoboToolbox Server** | Hosted in Ireland for organizations that require or prefer data hosting in the EU. |
+| **European Union KoboToolbox Server** | Hosted in Ireland and Germany for organizations that require or prefer data hosting in the EU. |
 
 ![KoboToolbox servers](images/creating_account/servers.png)
 
