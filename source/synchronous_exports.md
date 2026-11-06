@@ -4,25 +4,36 @@
 
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-KoboToolbox offers two primary methods for accessing your data: asynchronous and synchronous exports. The standard asynchronous method involves [manually downloading data files](https://support.kobotoolbox.org/export_download.html) containing all submissions up to the time of download. In contrast, synchronous exports enable automatic integration of your KoboToolbox data with external applications such as Microsoft Power BI, Excel, or Google Sheets.
 
-With synchronous exports, your data updates automatically as new submissions are received, eliminating the need for manual refreshing. This method provides a CSV or XLSX file, configured with your predefined export settings, which can include question labels, languages, filters, and repeat group data. 
 
-<p class="note">
-    <strong>Note:</strong> This article focuses on synchronous exports, which is one of two primary ways to use the KoboToolbox API. The other is the JSON API, designed for custom scripts and real-time automations, delivering raw, record-by-record JSON data. Unlike synchronous exports, the JSON API does not include advanced export features such as question labels or support for multiple languages.
-</p>
 
-This article covers the following steps:
 
-- Generating a named export
-- Retrieving the synchronous export link
-- Connecting your data to an external application & authentication
+
+KoboToolbox allows you to export project data in two ways:
+* **Standard exports:** Allow you to [manually download project data](https://support.kobotoolbox.org/export_download.html) in formats such as CSV or XLSX. These provide a snapshot of your data at the time of download and do not update automatically.
+* **Synchronous exports:** Provide a link that allows external applications, such as Microsoft Power BI, Excel, or Google Sheets, to retrieve updated project data automatically.
+
+Synchronous exports are useful for monitoring data collection through **dashboards**, updating **recurring reports**, and keeping **visualizations** up to date without repeatedly downloading files.
+
+This article covers generating a named export, retrieving the synchronous export link, and connecting your data to external applications using authentication.
+
+## Understanding synchronous exports
+
+Synchronous exports are part of the KoboToolbox Application Programming Interface (API). They use the **exports endpoint** to retrieve project data in CSV or XLSX format based on saved export settings.
+
+Synchronous exports use [saved export settings](https://support.kobotoolbox.org/advanced_export.html#saving-export-settings), which allow you to choose question names or labels, select form languages, include repeat group data, and apply other advanced export options. Each saved export generates a **synchronous export link** that external applications can use to retrieve data based on these settings. The link remains the same, but the exported data is regenerated automatically when requested. 
+
+Unlike the **data endpoint**, which returns raw submission data in JSON format and typically requires additional scripting, synchronous exports provide ready-to-use CSV or XLSX files. This makes them easier to connect to reporting and analysis tools without advanced API configuration.
 
 <p class="note">
     For an introduction to the KoboToolbox API, see <a href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
 </p>
+
+## Accessing the synchronous export link
+
+To use synchronous exports, you first need to save export settings and retrieve the corresponding synchronous export link. 
   
-## Generating a named export
+### Generating a named export
 
 To generate synchronous exports, you must first create a named export for your project by following these steps:
 
@@ -32,7 +43,7 @@ To generate synchronous exports, you must first create a named export for your p
 4. Choose **Save selection as…** and provide a name for your export.
 5. Click **Export** to save these settings.
 
-## Retrieving the synchronous export link
+### Retrieving the synchronous export link
 
 To retrieve the synchronous export link, you will need the following:
 
