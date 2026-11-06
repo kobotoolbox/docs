@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>KoboToolbox data security measures &#8212; KoboToolbox  documentation</title>
+    <title>Data security and protection in KoboToolbox &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -180,119 +180,95 @@
 
         <section class="page__body" role="main">
           
-  <section id="kobotoolbox-data-security-measures">
-<h1>KoboToolbox data security measures<a class="headerlink" href="#kobotoolbox-data-security-measures" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/4b23386a4f434718a2d9d1c203661406b44dbba0/source/is_my_data_safe.md" class="reference">8 Sep 2026</a></p>
-<p>We take data protection very seriously. Data security means protecting our
-users’ data from any threats that may exist. This article summarizes some of our
-administrative, physical, organizational, and technical measures for enforcing
-data security on the KoboToolbox servers maintained by Kobo, Inc., the
-<a class="reference external" href="https://www.kobo.ngo/about">nonprofit organization behind KoboToolbox</a>.</p>
-<p>We are fully compliant with the European Union’s General Data Protection
-Regulation (GDPR). If you are located in the European Union,
-<a class="reference external" href="https://www.digisigner.com/online/showTemplate?linkId=495db186-9c9e-4627-99f7-a943282eeab5">you can sign a data processing agreement (DPA) here</a>.</p>
-<section id="confidentiality">
-<h2>Confidentiality<a class="headerlink" href="#confidentiality" title="Link to this heading">¶</a></h2>
-<p><strong>Physical Access Control</strong></p>
+  <section id="data-security-and-protection-in-kobotoolbox">
+<h1>Data security and protection in KoboToolbox<a class="headerlink" href="#data-security-and-protection-in-kobotoolbox" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/bd5c59e14b8b74149248e9f1f910e237aefe8947/source/is_my_data_safe.md" class="reference">6 Nov 2026</a></p>
+<p>KoboToolbox uses administrative, physical, organizational, and technical security measures to protect user data. This article provides an overview of the security measures implemented on the KoboToolbox servers managed by <a class="reference external" href="https://www.kobo.ngo/about">Kobo, Inc.</a>, the nonprofit organization behind KoboToolbox.</p>
+<p>KoboToolbox <a class="reference external" href="https://support.kobotoolbox.org/gdpr.html">complies</a> with the European Union’s General Data Protection Regulation (GDPR). Users in the European Union can also sign a <a class="reference external" href="https://www.digisigner.com/online/showTemplate?linkId=495db186-9c9e-4627-99f7-a943282eeab5">Data Processing Agreement (DPA)</a>.</p>
+<section id="data-confidentiality">
+<h2>Data confidentiality<a class="headerlink" href="#data-confidentiality" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox uses several security measures to prevent unauthorized access to user data.</p>
+<section id="physical-access-controls">
+<h3>Physical access controls<a class="headerlink" href="#physical-access-controls" title="Link to this heading">¶</a></h3>
+<p>KoboToolbox servers are hosted by Amazon Web Services (AWS), which implements physical security measures to protect its data centers. These include video surveillance, controlled access to server facilities, and restricted access to authorized personnel.</p>
+<p class="note">
+For more information, see <a href="https://aws.amazon.com/compliance/data-center/controls/">AWS Data Center Controls</a>.
+</p>
+</section>
+<section id="account-security-and-data-encryption">
+<h3>Account security and data encryption<a class="headerlink" href="#account-security-and-data-encryption" title="Link to this heading">¶</a></h3>
+<p>KoboToolbox uses the following measures to protect user accounts and data:</p>
 <ul class="simple">
-<li><p>Physical access control measures, amongst others, are implemented by Amazon
-Web Services (AWS), which is used to host our KoboToolbox servers. These
-measures include, for example, video surveillance and physical security of
-server and network facilities, maintaining key card access control, limiting
-access to only authorized personnel. For a full list of details about AWS
-technical and organizational measures for physical access control,
-<a class="reference external" href="https://aws.amazon.com/compliance/data-center/controls/">see this article</a>
-on data center controls provided by AWS.</p></li>
-</ul>
-<p><strong>Electronic Access Control</strong></p>
-<ul class="simple">
-<li><p>All KoboToolbox accounts are password-protected. Users are provided visual
-feedback about the complexity of their password, which encourages them to
-select a stronger password when applicable. Only encrypted password hashes
-are stored on the KoboToolbox server, utilizing the default open-source
-framework provided by Django, which uses the
-<a class="reference external" href="https://en.wikipedia.org/wiki/PBKDF2">PBKDF2</a> algorithm with a SHA256 hash.
-Plain text passwords are never saved on the server.</p></li>
-<li><p>All database content is encrypted at rest (disk-level encryption).</p></li>
-<li><p>Data sent to the server is encrypted in transit using SHA-256 with RSA
-encryption.</p></li>
-<li><p>Users can
-<a class="reference internal" href="encrypting_forms.html"><span class="std std-doc">choose to also enable encryption of their project data (data-level encryption)</span></a>
-which renders it inaccessible at all stages of data processing and requires
-a private key to decrypt it locally.</p></li>
-</ul>
-<p><strong>Internal Access Control</strong></p>
-<ul class="simple">
-<li><p>Only authorized system administrators can access the KoboToolbox Server.
-They may only do so for the express purpose of updating installed software
-or maintaining the server infrastructure.</p></li>
-<li><p>System administrators require additional authentication, including SSH
-Public Key authentication, for accessing the KoboToolbox Server and
-two-factor authentication for accessing control panels provided by AWS.</p></li>
-<li><p>AWS provides a log of actions taken in the AWS Console. For SSH connections
-into the individual KoboToolbox Server instances, Kobo collects “system
-access events” by SSH key, which can then be matched to the authorized
-users.</p></li>
-<li><p>SSH is further protected against brute-force attempts and unauthorized
-access by limiting connections at the firewall level to only a small list of
-explicitly-allowed IP addresses.</p></li>
-</ul>
-<p><strong>Data Protection by Design and Default</strong></p>
-<ul class="simple">
-<li><p>Only limited information is required for creating a KoboToolbox user
-account.</p></li>
-<li><p>Kobo staff are required to abide by the rules set out in Kobo’s privacy
-policies.</p></li>
-<li><p>Data processed on behalf of the user is not accessed by Kobo.</p></li>
-<li><p>Users are provided the option of applying advanced encryption. This ensures
-that data is encrypted using a public key before it is submitted to a
-KoboToolbox Server, and that it can only be decrypted with a private key on
-a local computer. KoboToolbox also offers the possibility of removing
-information in bulk once it has been collected, facilitating the
-pseudonymization of Personal Data (through the removal of identifiers).</p></li>
-<li><p>See above sub-section “Electronic Access Control” for details about visual
-feedback on password complexity.</p></li>
+<li><p><strong>Password protection:</strong> All KoboToolbox accounts are password-protected. Users receive feedback on password strength to help them create secure passwords.</p></li>
+<li><p><strong>Two-factor authentication (2FA):</strong> All KoboToolbox users can <a class="reference external" href="https://support.kobotoolbox.org/two_factor_authentication.html">enable two-factor authentication</a> to add an extra layer of security to their accounts.</p></li>
+<li><p><strong>Secure password storage:</strong> Passwords are stored as encrypted password hashes using Django’s password-hashing framework, which uses the PBKDF2 algorithm with SHA-256. Plain-text passwords are never stored on the server.</p></li>
+<li><p><strong>Encryption at rest:</strong> All database content is encrypted at rest using disk-level encryption.</p></li>
+<li><p><strong>Encryption in transit:</strong> Data transmitted to KoboToolbox servers is encrypted to protect it during transfer.</p></li>
+<li><p><strong>Advanced data encryption:</strong> Users can <a class="reference external" href="https://support.kobotoolbox.org/encrypting_forms.html">enable project-level encryption</a> to encrypt form submissions before they reach the server. Encrypted data can only be decrypted locally using the corresponding private key.</p></li>
 </ul>
 </section>
-<section id="integrity">
-<h2>Integrity<a class="headerlink" href="#integrity" title="Link to this heading">¶</a></h2>
-<p><strong>Data Transfer Control</strong></p>
+<section id="internal-access-controls">
+<h3>Internal access controls<a class="headerlink" href="#internal-access-controls" title="Link to this heading">¶</a></h3>
+<p>Access to KoboToolbox servers is restricted to authorized system administrators for software updates and server maintenance.</p>
+<p>Additional security measures include:</p>
 <ul class="simple">
-<li><p>All data in transit is protected using SHA-256 with RSA encryption.</p></li>
-</ul>
-<p><strong>Data Entry Control</strong></p>
-<ul class="simple">
-<li><p>Users control who has the permission to enter data based on their
-KoboToolbox permissions. HTTP access logs stored on the server include the
-authenticated user for most requests.</p></li>
+<li><p><strong>Authentication:</strong> System administrators must use SSH public key authentication to access servers and two-factor authentication to access AWS management consoles.</p></li>
+<li><p><strong>Access logging:</strong> AWS records actions performed in its management console. Kobo also records SSH access events, which can be linked to authorized users through their SSH keys.</p></li>
+<li><p><strong>Network restrictions:</strong> Firewalls restrict SSH connections to a limited list of authorized IP addresses, helping prevent unauthorized access and brute-force attacks.</p></li>
 </ul>
 </section>
-<section id="availability-and-resilience">
-<h2>Availability and Resilience<a class="headerlink" href="#availability-and-resilience" title="Link to this heading">¶</a></h2>
+<section id="data-protection-by-design-and-default">
+<h3>Data protection by design and default<a class="headerlink" href="#data-protection-by-design-and-default" title="Link to this heading">¶</a></h3>
+<p>KoboToolbox incorporates data protection measures into its platform design and default settings:</p>
 <ul class="simple">
-<li><p>Kobo conducts daily backups of all databases to a separate, remote location.
-In case of a critical outage, all user data will be restored from the most
-recent backup as quickly as possible.</p></li>
-<li><p>Firewalls block all external requests except for SSH connections from a
-small list of explicitly allowed IP addresses. Public HTTP and HTTPS traffic
-cannot connect directly to the KoboToolbox Server, instead it is serviced by
-the AWS load balancer, which then forwards it to Kobo’s front-end servers.</p></li>
-<li><p>KoboToolbox Servers are configured to use multiple concurrently running
-server instances and are set to increase the number of such instances to
-avoid the impact of any localized failures. In case of any other failures
-that threaten continuous operation of critical aspects of the KoboToolbox
-software, system administrators stand by to intervene on short notice to
-restore service.</p></li>
-<li><p>Kobo’s reporting procedures include automated alerts, escalation of
-user-reported issues, and self-noticed problems by staff.</p></li>
-<li><p>Contingency plans include the availability of multiple people in multiple
-geographic locations who can respond to emergencies and restore service.</p></li>
-<li><p>KoboToolbox Servers have the demonstrated ability to continue operating in a
-degraded state, receiving submissions while simultaneously recovering lost
-projects/submissions via to-the-minute point-in-time recovery (PITR).</p></li>
-<li><p>Users found to abuse the use of their accounts by overburdening the
-KoboToolbox Server may be suspended or their account may be restricted.</p></li>
+<li><p>Only limited personal information is required to create a KoboToolbox account.</p></li>
+<li><p>Kobo staff must follow the organization’s privacy policies.</p></li>
+<li><p>Kobo does not access data processed on behalf of users.</p></li>
+<li><p>Users can enable advanced encryption to protect submissions before they reach KoboToolbox servers.</p></li>
+<li><p>Users can remove identifying information from collected data in bulk to support pseudonymization.</p></li>
 </ul>
+</section>
+</section>
+<section id="data-integrity">
+<h2>Data integrity<a class="headerlink" href="#data-integrity" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox implements measures to protect data during transmission and control who can submit data.</p>
+<section id="data-transfer-controls">
+<h3>Data transfer controls<a class="headerlink" href="#data-transfer-controls" title="Link to this heading">¶</a></h3>
+<p>Data transmitted between users and KoboToolbox servers is encrypted to protect it during transfer.</p>
+</section>
+<section id="data-entry-controls">
+<h3>Data entry controls<a class="headerlink" href="#data-entry-controls" title="Link to this heading">¶</a></h3>
+<p>Project owners can manage who is allowed to submit data using KoboToolbox’s permission settings.</p>
+<p>Server access logs also record authenticated usernames for most HTTP requests, helping track user activity.</p>
+</section>
+</section>
+<section id="data-availability-and-resilience">
+<h2>Data availability and resilience<a class="headerlink" href="#data-availability-and-resilience" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox uses backup, monitoring, and infrastructure measures to maintain service availability and support recovery in case of system failures.</p>
+<section id="data-backups-and-recovery">
+<h3>Data backups and recovery<a class="headerlink" href="#data-backups-and-recovery" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Kobo performs daily backups of all databases to a separate, remote location.</p></li>
+<li><p>In the event of a critical outage, Kobo works to restore user data from the most recent backup as quickly as possible.</p></li>
+<li><p>KoboToolbox supports point-in-time recovery (PITR), allowing data to be restored to a specific point in time. The platform can continue receiving submissions in a reduced-capacity state while recovery is underway.</p></li>
+</ul>
+</section>
+<section id="server-infrastructure-and-availability">
+<h3>Server infrastructure and availability<a class="headerlink" href="#server-infrastructure-and-availability" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p><strong>Network protection:</strong> Firewalls restrict external connections. Public HTTP and HTTPS traffic is routed through AWS load balancers rather than connecting directly to KoboToolbox servers.</p></li>
+<li><p><strong>Redundant infrastructure:</strong> KoboToolbox uses multiple server instances running simultaneously. Additional instances can be added to reduce the impact of localized failures.</p></li>
+<li><p><strong>System monitoring:</strong> Automated alerts, user reports, and staff monitoring help identify and address technical issues.</p></li>
+<li><p><strong>Incident response:</strong> System administrators are available to respond to critical failures. Kobo also maintains contingency plans involving staff in multiple geographic locations to support service recovery.</p></li>
+</ul>
+</section>
+<section id="preventing-service-disruptions">
+<h3>Preventing service disruptions<a class="headerlink" href="#preventing-service-disruptions" title="Link to this heading">¶</a></h3>
+<p>To maintain platform availability, Kobo may restrict or suspend accounts that place excessive demands on KoboToolbox servers or otherwise abuse the service.</p>
+<p class="note">
+To learn more about KoboToolbox's security and data protection practices, visit the <a href="https://trust.kobotoolbox.org">KoboToolbox Trust Center</a>.
+</p>
+</section>
 </section>
 </section>
 
@@ -315,7 +291,7 @@ KoboToolbox Server may be suspended or their account may be restricted.</p></li>
               href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
-              data-page="KoboToolbox data security measures"
+              data-page="Data security and protection in KoboToolbox"
               onclick="
               const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
               const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
@@ -462,10 +438,10 @@ KoboToolbox Server may be suspended or their account may be restricted.</p></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Security &amp; Protection</span></p>
 <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">KoboToolbox data security measures</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#confidentiality">Confidentiality</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#integrity">Integrity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#availability-and-resilience">Availability and Resilience</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data security and protection in KoboToolbox</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-confidentiality">Data confidentiality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-integrity">Data integrity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#data-availability-and-resilience">Data availability and resilience</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Compliance with GDPR</a></li>
@@ -549,7 +525,7 @@ KoboToolbox Server may be suspended or their account may be restricted.</p></li>
   <script>
     window.docs = {
       currentPagename: "is_my_data_safe",
-      currentTitle: "KoboToolbox data security measures",
+      currentTitle: "Data security and protection in KoboToolbox",
       currentUrl: ("index.html").replace("index.html", "is_my_data_safe.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

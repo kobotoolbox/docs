@@ -1,112 +1,88 @@
-# KoboToolbox data security measures
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4b23386a4f434718a2d9d1c203661406b44dbba0/source/is_my_data_safe.md" class="reference">8 Sep 2026</a>
+# Data security and protection in KoboToolbox
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/bd5c59e14b8b74149248e9f1f910e237aefe8947/source/is_my_data_safe.md" class="reference">6 Nov 2026</a>
+
+KoboToolbox uses administrative, physical, organizational, and technical security measures to protect user data. This article provides an overview of the security measures implemented on the KoboToolbox servers managed by [Kobo, Inc.](https://www.kobo.ngo/about), the nonprofit organization behind KoboToolbox.
+
+KoboToolbox [complies](https://support.kobotoolbox.org/gdpr.html) with the European Union's General Data Protection Regulation (GDPR). Users in the European Union can also sign a [Data Processing Agreement (DPA)](https://www.digisigner.com/online/showTemplate?linkId=495db186-9c9e-4627-99f7-a943282eeab5).
+
+## Data confidentiality
+
+KoboToolbox uses several security measures to prevent unauthorized access to user data.
+
+### Physical access controls
+
+KoboToolbox servers are hosted by Amazon Web Services (AWS), which implements physical security measures to protect its data centers. These include video surveillance, controlled access to server facilities, and restricted access to authorized personnel.
+
+<p class="note">
+For more information, see <a href="https://aws.amazon.com/compliance/data-center/controls/">AWS Data Center Controls</a>.
+</p>
 
 
-We take data protection very seriously. Data security means protecting our
-users’ data from any threats that may exist. This article summarizes some of our
-administrative, physical, organizational, and technical measures for enforcing
-data security on the KoboToolbox servers maintained by Kobo, Inc., the
-[nonprofit organization behind KoboToolbox](https://www.kobo.ngo/about).
+### Account security and data encryption
 
-We are fully compliant with the European Union’s General Data Protection
-Regulation (GDPR). If you are located in the European Union,
-[you can sign a data processing agreement (DPA) here](https://www.digisigner.com/online/showTemplate?linkId=495db186-9c9e-4627-99f7-a943282eeab5).
+KoboToolbox uses the following measures to protect user accounts and data:
 
-## Confidentiality
+* **Password protection:** All KoboToolbox accounts are password-protected. Users receive feedback on password strength to help them create secure passwords.
+* **Two-factor authentication (2FA):** All KoboToolbox users can [enable two-factor authentication](https://support.kobotoolbox.org/two_factor_authentication.html) to add an extra layer of security to their accounts.
+* **Secure password storage:** Passwords are stored as encrypted password hashes using Django's password-hashing framework, which uses the PBKDF2 algorithm with SHA-256. Plain-text passwords are never stored on the server.
+* **Encryption at rest:** All database content is encrypted at rest using disk-level encryption.
+* **Encryption in transit:** Data transmitted to KoboToolbox servers is encrypted to protect it during transfer.
+* **Advanced data encryption:** Users can [enable project-level encryption](https://support.kobotoolbox.org/encrypting_forms.html) to encrypt form submissions before they reach the server. Encrypted data can only be decrypted locally using the corresponding private key.
 
-**Physical Access Control**
+### Internal access controls
 
--   Physical access control measures, amongst others, are implemented by Amazon
-    Web Services (AWS), which is used to host our KoboToolbox servers. These
-    measures include, for example, video surveillance and physical security of
-    server and network facilities, maintaining key card access control, limiting
-    access to only authorized personnel. For a full list of details about AWS
-    technical and organizational measures for physical access control,
-    [see this article](https://aws.amazon.com/compliance/data-center/controls/)
-    on data center controls provided by AWS.
+Access to KoboToolbox servers is restricted to authorized system administrators for software updates and server maintenance.
 
-**Electronic Access Control**
+Additional security measures include:
+* **Authentication:** System administrators must use SSH public key authentication to access servers and two-factor authentication to access AWS management consoles.
+* **Access logging:** AWS records actions performed in its management console. Kobo also records SSH access events, which can be linked to authorized users through their SSH keys.
+* **Network restrictions:** Firewalls restrict SSH connections to a limited list of authorized IP addresses, helping prevent unauthorized access and brute-force attacks.
 
--   All KoboToolbox accounts are password-protected. Users are provided visual
-    feedback about the complexity of their password, which encourages them to
-    select a stronger password when applicable. Only encrypted password hashes
-    are stored on the KoboToolbox server, utilizing the default open-source
-    framework provided by Django, which uses the
-    [PBKDF2](https://en.wikipedia.org/wiki/PBKDF2) algorithm with a SHA256 hash.
-    Plain text passwords are never saved on the server.
--   All database content is encrypted at rest (disk-level encryption).
--   Data sent to the server is encrypted in transit using SHA-256 with RSA
-    encryption.
--   Users can
-    [choose to also enable encryption of their project data (data-level encryption)](encrypting_forms.md)
-    which renders it inaccessible at all stages of data processing and requires
-    a private key to decrypt it locally.
 
-**Internal Access Control**
+### Data protection by design and default
 
--   Only authorized system administrators can access the KoboToolbox Server.
-    They may only do so for the express purpose of updating installed software
-    or maintaining the server infrastructure.
--   System administrators require additional authentication, including SSH
-    Public Key authentication, for accessing the KoboToolbox Server and
-    two-factor authentication for accessing control panels provided by AWS.
--   AWS provides a log of actions taken in the AWS Console. For SSH connections
-    into the individual KoboToolbox Server instances, Kobo collects "system
-    access events" by SSH key, which can then be matched to the authorized
-    users.
--   SSH is further protected against brute-force attempts and unauthorized
-    access by limiting connections at the firewall level to only a small list of
-    explicitly-allowed IP addresses.
+KoboToolbox incorporates data protection measures into its platform design and default settings:
 
-**Data Protection by Design and Default**
+* Only limited personal information is required to create a KoboToolbox account.
+* Kobo staff must follow the organization's privacy policies.
+* Kobo does not access data processed on behalf of users.
+* Users can enable advanced encryption to protect submissions before they reach KoboToolbox servers.
+* Users can remove identifying information from collected data in bulk to support pseudonymization.
 
--   Only limited information is required for creating a KoboToolbox user
-    account.
--   Kobo staff are required to abide by the rules set out in Kobo’s privacy
-    policies.
--   Data processed on behalf of the user is not accessed by Kobo.
--   Users are provided the option of applying advanced encryption. This ensures
-    that data is encrypted using a public key before it is submitted to a
-    KoboToolbox Server, and that it can only be decrypted with a private key on
-    a local computer. KoboToolbox also offers the possibility of removing
-    information in bulk once it has been collected, facilitating the
-    pseudonymization of Personal Data (through the removal of identifiers).
--   See above sub-section “Electronic Access Control” for details about visual
-    feedback on password complexity.
+## Data integrity
 
-## Integrity
+KoboToolbox implements measures to protect data during transmission and control who can submit data.
 
-**Data Transfer Control**
+### Data transfer controls
 
--   All data in transit is protected using SHA-256 with RSA encryption.
+Data transmitted between users and KoboToolbox servers is encrypted to protect it during transfer.
 
-**Data Entry Control**
+### Data entry controls
 
--   Users control who has the permission to enter data based on their
-    KoboToolbox permissions. HTTP access logs stored on the server include the
-    authenticated user for most requests.
+Project owners can manage who is allowed to submit data using KoboToolbox's permission settings.
 
-## Availability and Resilience
+Server access logs also record authenticated usernames for most HTTP requests, helping track user activity.
 
--   Kobo conducts daily backups of all databases to a separate, remote location.
-    In case of a critical outage, all user data will be restored from the most
-    recent backup as quickly as possible.
--   Firewalls block all external requests except for SSH connections from a
-    small list of explicitly allowed IP addresses. Public HTTP and HTTPS traffic
-    cannot connect directly to the KoboToolbox Server, instead it is serviced by
-    the AWS load balancer, which then forwards it to Kobo’s front-end servers.
--   KoboToolbox Servers are configured to use multiple concurrently running
-    server instances and are set to increase the number of such instances to
-    avoid the impact of any localized failures. In case of any other failures
-    that threaten continuous operation of critical aspects of the KoboToolbox
-    software, system administrators stand by to intervene on short notice to
-    restore service.
--   Kobo’s reporting procedures include automated alerts, escalation of
-    user-reported issues, and self-noticed problems by staff.
--   Contingency plans include the availability of multiple people in multiple
-    geographic locations who can respond to emergencies and restore service.
--   KoboToolbox Servers have the demonstrated ability to continue operating in a
-    degraded state, receiving submissions while simultaneously recovering lost
-    projects/submissions via to-the-minute point-in-time recovery (PITR).
--   Users found to abuse the use of their accounts by overburdening the
-    KoboToolbox Server may be suspended or their account may be restricted.
+## Data availability and resilience
+
+KoboToolbox uses backup, monitoring, and infrastructure measures to maintain service availability and support recovery in case of system failures.
+
+### Data backups and recovery
+
+* Kobo performs daily backups of all databases to a separate, remote location.
+* In the event of a critical outage, Kobo works to restore user data from the most recent backup as quickly as possible.
+* KoboToolbox supports point-in-time recovery (PITR), allowing data to be restored to a specific point in time. The platform can continue receiving submissions in a reduced-capacity state while recovery is underway.
+
+### Server infrastructure and availability
+
+* **Network protection:** Firewalls restrict external connections. Public HTTP and HTTPS traffic is routed through AWS load balancers rather than connecting directly to KoboToolbox servers.
+* **Redundant infrastructure:** KoboToolbox uses multiple server instances running simultaneously. Additional instances can be added to reduce the impact of localized failures.
+* **System monitoring:** Automated alerts, user reports, and staff monitoring help identify and address technical issues.
+* **Incident response:** System administrators are available to respond to critical failures. Kobo also maintains contingency plans involving staff in multiple geographic locations to support service recovery.
+
+### Preventing service disruptions
+To maintain platform availability, Kobo may restrict or suspend accounts that place excessive demands on KoboToolbox servers or otherwise abuse the service.
+
+<p class="note">
+To learn more about KoboToolbox's security and data protection practices, visit the <a href="https://trust.kobotoolbox.org">KoboToolbox Trust Center</a>.
+</p>
