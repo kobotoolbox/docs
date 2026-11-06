@@ -1,5 +1,5 @@
 # Data storage
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b4ed8a99e3db91d492b738ad646871307544f13c/source/data_storage.md" class="reference">6 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/aacde96a15dff70f00803595f47423d05c8a5e32/source/data_storage.md" class="reference">6 Nov 2026</a>
 
 KoboToolbox securely stores project data using Amazon Web Services (AWS). Your data is stored in different locations depending on the server you selected when [creating your account](https://support.kobotoolbox.org/creating_account.html#choosing-the-right-server):
 
