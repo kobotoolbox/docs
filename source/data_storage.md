@@ -10,6 +10,10 @@ KoboToolbox securely stores project data using Amazon Web Services (AWS). Your d
 
 Both servers offer the same KoboToolbox features. However, projects and data cannot be transferred or shared between the Global and European Union servers. To collaborate on a project, users must have accounts on the same server.
 
+<p class="note">
+To learn more about KoboToolbox's security and data protection practices, visit the <a href="https://trust.kobotoolbox.org">KoboToolbox Trust Center</a>.
+</p>
+
 ## What is stored
 
 KoboToolbox stores two main types of project data:
@@ -55,5 +59,6 @@ To manage your storage use, you can either:
 For organizations with advanced data residency or infrastructure requirements, KoboToolbox also offers [private server deployments](https://www.kobotoolbox.org/enterprise/). These allow you to choose where your data is stored and managed.
 
 Private servers provide the same core KoboToolbox functionality while giving organizations full control over hosting location, compliance requirements, and infrastructure management. Data can be hosted in **28 supported countries** or within your own infrastructure **anywhere in the world.**
+
 
 
