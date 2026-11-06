@@ -182,21 +182,80 @@
           
   <section id="data-storage">
 <h1>Data storage<a class="headerlink" href="#data-storage" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7ba5b67b49236bde926e4b1d18f37b762f477a91/source/data_storage.md" class="reference">22 Jul 2026</a></p>
-<p>Whether you’re using the <a class="reference external" href="https://kf.kobotoolbox.org/">Global KoboToolbox Server</a> or the
-<a class="reference external" href="https://eu.kobotoolbox.org/">European Union KoboToolbox Server</a>, the data from
-both servers is stored on Amazon Web Services (AWS) servers.</p>
-<p>There are 2 kinds of data stored on AWS, the form itself and the attachments
-related to each submission. The data of the form is saved into the Database (DB)
-and the attachments are saved into Simple Storage Service (S3). The stored data
-in the Database is never deleted unless you delete the data yourself. The
-collected data on S3 is also never deleted, unless you delete it yourself or you
-end up using more space then you’re allowed according to the
-<a class="reference internal" href="creating_account.html"><span class="std std-doc">Kobo policies</span></a>.</p>
-<p>You can keep up to 10 data exports at a time per project. If you create an 11th
-export, the oldest one is deleted and only the 10 most recent exports are kept.</p>
-<p>For more information on KoboToolbox data security measures, please refer to this
-other <a class="reference internal" href="is_my_data_safe.html"><span class="std std-doc">help article</span></a>.</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b4ed8a99e3db91d492b738ad646871307544f13c/source/data_storage.md" class="reference">6 Nov 2026</a></p>
+<p>KoboToolbox securely stores project data using Amazon Web Services (AWS). Your data is stored in different locations depending on the server you selected when <a class="reference external" href="https://support.kobotoolbox.org/creating_account.html#choosing-the-right-server">creating your account</a>:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>KoboToolbox server</p></th>
+<th class="head"><p>Data storage location</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Global KoboToolbox Server</p></td>
+<td><p>United States</p></td>
+</tr>
+<tr class="row-odd"><td><p>European Union KoboToolbox Server</p></td>
+<td><p>Ireland and Germany</p></td>
+</tr>
+</tbody>
+</table>
+<p>Both servers offer the same KoboToolbox features. However, projects and data cannot be transferred or shared between the Global and European Union servers. To collaborate on a project, users must have accounts on the same server.</p>
+<section id="what-is-stored">
+<h2>What is stored<a class="headerlink" href="#what-is-stored" title="Link to this heading">¶</a></h2>
+<p>KoboToolbox stores two main types of project data:</p>
+<ul class="simple">
+<li><p><strong>Form and submission data,</strong> such as questions and responses, are stored in an AWS database.</p></li>
+<li><p><strong>Files and media submitted by respondents,</strong> such as images, audio recordings, videos, and documents, are stored in Amazon Simple Storage Service (Amazon S3).</p></li>
+</ul>
+<p>Your project data remains stored in KoboToolbox until you delete it. Deleted submissions are <strong>permanently removed</strong> immediately, while deleted projects, accounts, and attachments are retained for up to 30 days before being permanently removed.</p>
+<p class="note">
+  <strong>Note:</strong> According to KoboToolbox’s Terms of Service, an account is considered inactive if no activity has been recorded for two consecutive years. Under the <a href="https://www.kobotoolbox.org/legal/inactive-accounts/">Inactive Accounts Policy</a>, Kobo reserves the right to delete inactive accounts and all associated projects and data.
+</p>
+</section>
+<section id="file-storage-limits">
+<h2>File storage limits<a class="headerlink" href="#file-storage-limits" title="Link to this heading">¶</a></h2>
+<p>Your file storage limit depends on your <a class="reference external" href="https://www.kobotoolbox.org/pricing/">KoboToolbox plan</a>:</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Plan</p></th>
+<th class="head"><p>File storage</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Community Plan</p></td>
+<td><p>1 GB</p></td>
+</tr>
+<tr class="row-odd"><td><p>Professional Plan</p></td>
+<td><p>Unlimited</p></td>
+</tr>
+<tr class="row-even"><td><p>Teams Plan</p></td>
+<td><p>Unlimited</p></td>
+</tr>
+<tr class="row-odd"><td><p>Enterprise Plan</p></td>
+<td><p>Unlimited</p></td>
+</tr>
+</tbody>
+</table>
+<p>Only <strong>files and media submitted by respondents</strong> count toward your plan’s file storage limit. Files and media attached to a form during form development do not count toward this limit.</p>
+<p>You can review your current file storage use and plan limits from the <strong>Usage</strong> page in your <a class="reference external" href="https://support.kobotoolbox.org/account_settings.html#usage">account settings</a>.</p>
+<p class="note">
+  <strong>Note:</strong> If your account remains over its <a href="https://support.kobotoolbox.org/account_usage_limits.html">file storage limit</a> for more than 90 days, KoboToolbox will begin deleting media attachments, starting with the oldest files. Submission data will never be deleted.
+</p>
+<p>To manage your storage use, you can either:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://support.kobotoolbox.org/qualitative_analysis.html">Analyse</a>, <a class="reference external" href="https://support.kobotoolbox.org/managing_media_responses.html#downloading-media-files">download</a>, and <a class="reference external" href="https://support.kobotoolbox.org/managing_media_responses.html#deleting-media-files">delete</a> media files that you no longer need.</p></li>
+<li><p>Purchase <a class="reference external" href="https://support.kobotoolbox.org/account_settings.html#add-ons">additional file storage</a> from the <strong>Add-ons</strong> page in your account settings.</p></li>
+<li><p>Upgrade to a <a class="reference external" href="https://www.kobotoolbox.org/pricing/">paid KoboToolbox plan</a>.</p></li>
+</ul>
+<p class="note">
+  To learn more about monitoring and managing your KoboToolbox file storage, see <a href="https://support.kobotoolbox.org/account_usage_limits.html">Managing account usage limits</a>.
+</p>
+</section>
+<section id="private-servers">
+<h2>Private servers<a class="headerlink" href="#private-servers" title="Link to this heading">¶</a></h2>
+<p>For organizations with advanced data residency or infrastructure requirements, KoboToolbox also offers <a class="reference external" href="https://www.kobotoolbox.org/enterprise/">private server deployments</a>. These allow you to choose where your data is stored and managed.</p>
+<p>Private servers provide the same core KoboToolbox functionality while giving organizations full control over hosting location, compliance requirements, and infrastructure management. Data can be hosted in <strong>28 supported countries</strong> or within your own infrastructure <strong>anywhere in the world.</strong></p>
+</section>
 </section>
 
 
@@ -368,7 +427,12 @@ other <a class="reference internal" href="is_my_data_safe.html"><span class="std
 <li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">KoboToolbox data security measures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="gdpr.html">Compliance with GDPR</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Compliance with HIPAA</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Data storage</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data storage</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-stored">What is stored</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-storage-limits">File storage limits</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#private-servers">Private servers</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting forms</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
