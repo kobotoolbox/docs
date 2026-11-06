@@ -1,5 +1,5 @@
 # Data security and protection in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/4b23386a4f434718a2d9d1c203661406b44dbba0/source/is_my_data_safe.md" class="reference">8 Sep 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/bd5c59e14b8b74149248e9f1f910e237aefe8947/source/is_my_data_safe.md" class="reference">6 Nov 2026</a>
 
 KoboToolbox uses administrative, physical, organizational, and technical security measures to protect user data. This article provides an overview of the security measures implemented on the KoboToolbox servers managed by [Kobo, Inc.](https://www.kobo.ngo/about), the nonprofit organization behind KoboToolbox.
 
