@@ -5,10 +5,6 @@
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-
-
-
-
 KoboToolbox allows you to export project data in two ways:
 * **Standard exports:** Allow you to [manually download project data](https://support.kobotoolbox.org/export_download.html) in formats such as CSV or XLSX. These provide a snapshot of your data at the time of download and do not update automatically.
 * **Synchronous exports:** Provide a link that allows external applications, such as Microsoft Power BI, Excel, or Google Sheets, to retrieve updated project data automatically.
@@ -74,11 +70,9 @@ To retrieve the export link, follow these steps:
 
 After retrieving the synchronous export link, you can connect your data to your preferred external application. The method for integrating the synchronous export link will vary by application.
 
-<p class="note">
-    To learn how to connect your data to Power BI to create custom dashboards, see <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a>. 
-    <br><br>
-    To learn how to connect your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
-</p>
+For example, you can:
+* Connect KoboToolbox to [Microsoft Excel and Power BI](https://support.kobotoolbox.org/connect_excel_powerbi.html ) to create reports and dashboards.
+* Connect KoboToolbox to [Google Sheets and Looker Studio](https://support.kobotoolbox.org/connect_google.html) to analyze data and create interactive dashboards. 
 
 ### Authentication
 
