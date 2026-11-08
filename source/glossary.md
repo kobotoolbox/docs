@@ -656,7 +656,7 @@ A set of questions that can be answered multiple times within a form, allowing r
 A feature that allows KoboToolbox to automatically send data to external systems by pushing new submissions to a specified REST endpoint whenever they are received.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/rest_services.html">Using the REST services</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/rest_services.html">Using the KoboToolbox REST Services</a>.
 </p>
 
 ---
