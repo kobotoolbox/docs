@@ -28,7 +28,7 @@ There are two main ways to access submission data through the API:
 For most users, **synchronous exports** are the recommended starting point.
 
 <p class="note">
-    For more information about synchronous exports, see <a href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>. 
+    For more information about synchronous exports, see <a href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>. For more information about the data endpoint, see <a href="https://support.kobotoolbox.org/data_endpoint.html">Using the API data endpoint</a>. 
 </p>
 
 
