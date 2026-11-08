@@ -220,7 +220,6 @@ Explore practical guidance across KoboToolbox topics and features
   pulling_data_into_excelquery
   pulling_data_into_powerbi
   rest_services
-  upload_to_gis
   kobotoolbox_monday_integration
   migrating_api
 
