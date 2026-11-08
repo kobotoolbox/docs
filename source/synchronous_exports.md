@@ -23,7 +23,7 @@ Synchronous exports are part of the KoboToolbox Application Programming Interfac
 
 Synchronous exports use [saved export settings](https://support.kobotoolbox.org/advanced_export.html#saving-export-settings), which allow you to choose question names or labels, select form languages, include repeat group data, and apply other advanced export options. Each saved export generates a **synchronous export link** that external applications can use to retrieve data based on these settings. The link remains the same, but the exported data is regenerated automatically when requested. 
 
-Unlike the **data endpoint**, which returns raw submission data in JSON format and typically requires additional scripting, synchronous exports provide ready-to-use CSV or XLSX files. This makes them easier to connect to reporting and analysis tools without advanced API configuration.
+Unlike the [data endpoint](https://support.kobotoolbox.org/data_endpoint.html), which returns raw submission data in JSON format and typically requires additional scripting, synchronous exports provide ready-to-use CSV or XLSX files. This makes them easier to connect to reporting and analysis tools without advanced API configuration.
 
 <p class="note">
     For an introduction to the KoboToolbox API, see <a href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
