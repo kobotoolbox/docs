@@ -6,7 +6,7 @@ KoboToolbox supports two primary ways to collect data: **web forms**, which run 
 This article explains the two data collection methods available in KoboToolbox, how to choose between them, and how to prepare before launching data collection.
 
 <p class="note">
-To learn more about each data collection method, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting data using web forms</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecting data using KoboCollect</a>.
+New to data collection with KoboToolbox? The free <a href="https://academy.kobotoolbox.org/products/digital_downloads/field-data-collection-starter-kit">Field Data Collection Starter Kit</a> from KoboToolbox Academy provides practical resources to help you prepare for and carry out field data collection.
 </p>
 
 ## Data collection methods
@@ -16,6 +16,10 @@ You can collect data with KoboToolbox in two main ways:
 - **KoboCollect** is an Android app used to collect data on Android devices. It is well suited for field teams with enumerators using Android phones or tablets.
 
 Both methods support [offline data collection](https://support.kobotoolbox.org/data-collection-tools.html#offline-data-collection).
+
+<p class="note">
+To learn more about each data collection method, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting data using web forms</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecting data using KoboCollect</a>.
+</p>
 
 ### Choosing a data collection method
 
