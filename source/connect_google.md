@@ -53,13 +53,9 @@ Google Sheets provides an `IMPORTDATA()` function that retrieves data from a pub
 To import your publicly accessible KoboToolbox data: 
 1. Open [Google Sheets](https://sheets.google.com/) and create a new spreadsheet, or add a new sheet to an existing spreadsheet.
 2. Select cell **A1**.
-3. Enter the following formula, replacing `YOUR_EXPORT_URL` with your synchronous export link: `=IMPORTDATA("YOUR_EXPORT_URL")`
+3. Enter the following formula, replacing `YOUR_EXPORT_URL` with your synchronous export link: `=IMPORTDATA("YOUR_EXPORT_URL", ";")`
 4. Press **Enter**.
 5. If you see the warning message “Warning: Some formulas are trying to send and receive data from external parties,” click **Allow access**.
-
-<p class="note">
-  <strong>Note:</strong> If the data is not imported correctly into separate columns, you may need to specify a semicolon as the delimiter: <code>=IMPORTDATA("YOUR_EXPORT_URL", ";")</code>
-</p>
 
 Google Sheets will retrieve the CSV data from KoboToolbox and populate the spreadsheet with your project submissions.
 
