@@ -72,7 +72,7 @@ After retrieving the synchronous export link, you can connect your data to your 
 
 For example, you can:
 * Connect KoboToolbox to [Microsoft Excel and Power BI](https://support.kobotoolbox.org/connect_excel_powerbi.html ) to create reports and dashboards.
-* Connect KoboToolbox to [Google Sheets and Looker Studio](https://support.kobotoolbox.org/connect_google.html) to analyze data and create interactive dashboards. 
+* Connect KoboToolbox to [Google Sheets and Data Studio](https://support.kobotoolbox.org/connect_google.html) to analyze data and create interactive dashboards. 
 
 ### Authentication
 
