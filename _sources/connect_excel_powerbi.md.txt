@@ -1,5 +1,5 @@
 # Connecting KoboToolbox data to Microsoft Excel and Power BI
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/10d40dbe42c905a19691b95a9857b84770ae33b6/source/connect_excel_powerbi.md" class="reference">19 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8d2eb236f6c7515cc51164d5050a66dcb579e1aa/source/connect_excel_powerbi.md" class="reference">19 Nov 2026</a>
 
 
 KoboToolbox allows you to connect project data directly to **Microsoft Excel** and **Power BI** using the KoboToolbox <a href="https://support.kobotoolbox.org/api.html" class="reference">Application Programming Interface (API)</a>. This allows you to retrieve updated submissions for analysis, reports, and dashboards without manually downloading new data files.
@@ -161,7 +161,7 @@ To refresh your data manually in Power BI Desktop:
 
 Power BI will retrieve the latest available data from your KoboToolbox connection.
 
-You can also configure scheduled refreshes through the Power BI service after publishing your report. To configure scheduled refreshes in Power BI:
+You can also **configure scheduled refreshes** through the Power BI service after publishing your report. To configure scheduled refreshes in Power BI:
 
 1. In Power BI Desktop, go to the **Home** tab and click **Publish** to publish your report.
 2. Open the <a href="https://app.powerbi.com" class="reference external">Power BI service</a> and sign in using the same account you used to publish the report.
