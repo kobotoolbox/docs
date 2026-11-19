@@ -1,5 +1,5 @@
 # Connecting KoboToolbox data to Microsoft Excel and Power BI
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/connect_excel_powerbi.md" class="reference">19 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/10d40dbe42c905a19691b95a9857b84770ae33b6/source/connect_excel_powerbi.md" class="reference">19 Nov 2026</a>
 
 
 KoboToolbox allows you to connect project data directly to **Microsoft Excel** and **Power BI** using the KoboToolbox <a href="https://support.kobotoolbox.org/api.html" class="reference">Application Programming Interface (API)</a>. This allows you to retrieve updated submissions for analysis, reports, and dashboards without manually downloading new data files.
@@ -11,7 +11,7 @@ Both applications support <a href="https://support.kobotoolbox.org/synchronous_e
 This article covers connecting KoboToolbox data to Excel and Power BI, preparing imported data, refreshing your connection, and troubleshooting common issues.
 
 <p class="note">
-  <b>Note:</b> The steps in this article are intended for Windows users. Power BI Desktop is only available for Windows, and the web data connection features described here are designed for Excel on Windows. Excel for Mac supports Power Query, but some connection options and features differ.
+  <strong>Note:</strong> The steps in this article are intended for Windows users. Power BI Desktop is only available for Windows, and the web data connection features described here are designed for Excel on Windows. Excel for Mac supports Power Query, but some connection options and features differ.
 </p>
 
 ## Retrieving your synchronous export link
@@ -58,7 +58,7 @@ Excel or Power BI will then connect to your KoboToolbox project and retrieve the
 ![Access Web content authentication dialog](images/connect_excel_powerbi/powerbi_access_web_content.png)
 
 <p class="note">
-  <b>Note:</b> If your project is public, you can select <b>Anonymous</b> instead of Basic authentication. However, <a href="https://support.kobotoolbox.org/project_sharing_settings.html#making-your-project-public" class="reference">making a project public</a> allows anyone with the appropriate link to access its submissions.
+  <strong>Note:</strong> If your project is public, you can select <b>Anonymous</b> instead of Basic authentication. However, <a href="https://support.kobotoolbox.org/project_sharing_settings.html#making-your-project-public" class="reference">making a project public</a> allows anyone with the appropriate link to access its submissions.
 </p>
 
 ### Selecting and loading your data
@@ -84,7 +84,7 @@ To prepare your data:
 You can now use the imported data to create tables, charts, reports, and dashboards.
 
 <p class="note">
-  <b>Note:</b> You can connect multiple KoboToolbox projects to the same Excel workbook or Power BI report. Repeat the connection process for each project using its synchronous export link.
+  <strong>Note:</strong> You can connect multiple KoboToolbox projects to the same Excel workbook or Power BI report. Repeat the connection process for each project using its synchronous export link.
 </p>
 
 ## Working with imported data
@@ -161,9 +161,7 @@ To refresh your data manually in Power BI Desktop:
 
 Power BI will retrieve the latest available data from your KoboToolbox connection.
 
-You can also configure scheduled refreshes through the Power BI service after publishing your report.
-
-To configure scheduled refreshes in Power BI:
+You can also configure scheduled refreshes through the Power BI service after publishing your report. To configure scheduled refreshes in Power BI:
 
 1. In Power BI Desktop, go to the **Home** tab and click **Publish** to publish your report.
 2. Open the <a href="https://app.powerbi.com" class="reference external">Power BI service</a> and sign in using the same account you used to publish the report.
@@ -179,7 +177,7 @@ To configure scheduled refreshes in Power BI:
 The number of scheduled refreshes available depends on your Power BI license and capacity. For example, Power BI Pro supports up to eight scheduled refreshes per day.
 
 <p class="note">
-  <b>Note:</b> Synchronous exports are cached for up to five minutes, so new submissions may not appear immediately after refreshing. Refreshing Excel or Power BI does not bypass this interval.
+  <strong>Note:</strong> Synchronous exports are cached for up to five minutes, so new submissions may not appear immediately after refreshing. Refreshing Excel or Power BI does not bypass this interval.
 </p>
 
 ## Troubleshooting
