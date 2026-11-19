@@ -1,5 +1,5 @@
 # Integrating KoboToolbox with other platforms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/platform_integrations.md" class="reference">19 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/48bf9d80cefeb93e19a31d25478e9b0294f34a52/source/platform_integrations.md" class="reference">19 Nov 2026</a>
 
 You can connect KoboToolbox with external applications using the <a href="https://support.kobotoolbox.org/api.html" class="reference">Application Programming Interface (API)</a>, <a href="https://support.kobotoolbox.org/rest_services.html" class="reference">REST Services</a>, or existing third-party integrations. These connections allow you to share project data, automate workflows, and reduce manual data entry.
 
