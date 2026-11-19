@@ -182,7 +182,7 @@
           
   <section id="using-the-api-data-endpoint">
 <h1>Using the API data endpoint<a class="headerlink" href="#using-the-api-data-endpoint" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/data_endpoint.md" class="reference">19 Nov 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/ad57360b1651a3aa0ef4f4002a4f29787631a47e/source/data_endpoint.md" class="reference">19 Nov 2026</a></p>
 <p>The <strong>KoboToolbox API data endpoint</strong> allows you to retrieve project submissions directly into external applications, such as R or Python, without manually downloading data files. You can use it to filter submissions, automate data retrieval, and connect KoboToolbox data to other tools for analysis and reporting.</p>
 <p>This article covers understanding the data endpoint, accessing project submissions, authenticating API requests, using pagination and filters, connecting KoboToolbox data to R, and automating data retrieval.</p>
 <p class="note">
@@ -235,7 +235,7 @@
 </pre></div>
 </div>
 <p class="note">
-  <b>Note:</b> Keep your API key confidential. Avoid including it directly in scripts that are shared publicly. For automated workflows, use environment variables or other secure methods to store credentials.
+  <strong>Note:</strong> Keep your API key confidential. Avoid including it directly in scripts that are shared publicly. For automated workflows, use environment variables or other secure methods to store credentials.
 </p>
 </section>
 <section id="understanding-the-api-response">
@@ -288,7 +288,7 @@
 <p><code class="docutils literal notranslate"><span class="pre">https://[server-url]/api/v2/assets/[project-asset-UID]/data/?limit=100&amp;start=100</span></code></p>
 <p>You can also use the <code class="docutils literal notranslate"><span class="pre">next</span></code> URL provided in the API response to retrieve the next batch of submissions. When <code class="docutils literal notranslate"><span class="pre">next</span></code> is <code class="docutils literal notranslate"><span class="pre">null</span></code>, there are no additional pages to retrieve.</p>
 <p class="note">
-  <b>Note:</b> Some applications and programming packages handle pagination automatically, allowing you to retrieve all submissions without manually requesting each page.
+  <strong>Note:</strong> Some applications and programming packages handle pagination automatically, allowing you to retrieve all submissions without manually requesting each page.
 </p>
 </section>
 </section>
@@ -326,7 +326,7 @@
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">--data-urlencode</span></code> option ensures that the filter is correctly formatted in the request URL.</p>
 <p class="note">
-  <b>Note:</b> Filters use the underlying question and choice names, rather than the labels displayed in the form. If you need more advanced filtering, see the API documentation for your KoboToolbox server.
+  <strong>Note:</strong> Filters use the underlying question and choice names, rather than the labels displayed in the form. If you need more advanced filtering, see the API documentation for your KoboToolbox server.
 </p>
 </section>
 </section>
@@ -344,7 +344,7 @@
 <p>You can use filters to retrieve only new submissions, reducing the amount of data transferred with each request.</p>
 <p>The frequency of updates depends on how your external application or script is configured. The data endpoint does not automatically send new submissions to connected applications.</p>
 <p class="note">
-  <b>Note:</b> When automating data retrieval, ensure your script handles pagination, connection errors, and authentication securely. If you need to detect changes to existing submissions, consider how your workflow will identify edited records as well as newly added submissions.
+  <strong>Note:</strong> When automating data retrieval, ensure your script handles pagination, connection errors, and authentication securely. If you need to detect changes to existing submissions, consider how your workflow will identify edited records as well as newly added submissions.
 </p>
 </section>
 <section id="additional-api-documentation">
