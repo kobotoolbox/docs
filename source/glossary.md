@@ -48,7 +48,7 @@ A web address that allows external applications to access specific KoboToolbox d
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
 </p>
 
-**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface), [Data endpoint](https://support.kobotoolbox.org/glossary.html#data-endpoint)
+**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api), [Data endpoint](https://support.kobotoolbox.org/glossary.html#data-endpoint)
 
 ---
 
@@ -60,7 +60,7 @@ A personal authentication token used to access a KoboToolbox account and its dat
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
 </p>
 
-**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface), [Authentication](https://support.kobotoolbox.org/glossary.html#authentication)
+**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api), [Authentication](https://support.kobotoolbox.org/glossary.html#authentication)
 
 ---
 
@@ -206,7 +206,7 @@ A KoboToolbox API endpoint that provides direct access to project submissions in
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_endpoint.html">Using the API data endpoint</a>.
 </p>
 
-**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface), [Synchronous exports](https://support.kobotoolbox.org/glossary.html#synchronous-exports), [API endpoint](https://support.kobotoolbox.org/glossary.html#api-endpoint)
+**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api), [Synchronous exports](https://support.kobotoolbox.org/glossary.html#synchronous-exports), [API endpoint](https://support.kobotoolbox.org/glossary.html#api-endpoint)
 
 
 ---
