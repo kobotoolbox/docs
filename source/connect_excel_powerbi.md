@@ -1,5 +1,5 @@
 # Connecting KoboToolbox data to Microsoft Excel and Power BI
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/connect_excel_powerbi.md" class="reference">19 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/10d40dbe42c905a19691b95a9857b84770ae33b6/source/connect_excel_powerbi.md" class="reference">19 Nov 2026</a>
 
 
 KoboToolbox allows you to connect project data directly to **Microsoft Excel** and **Power BI** using the KoboToolbox <a href="https://support.kobotoolbox.org/api.html" class="reference">Application Programming Interface (API)</a>. This allows you to retrieve updated submissions for analysis, reports, and dashboards without manually downloading new data files.
