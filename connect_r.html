@@ -182,7 +182,7 @@
           
   <section id="connecting-kobotoolbox-data-to-r">
 <h1>Connecting KoboToolbox data to R<a class="headerlink" href="#connecting-kobotoolbox-data-to-r" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/connect_r.md" class="reference">19 Nov 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1a7e02c910ac50210c0e7d01a93cbedb2925e5ce/source/connect_r.md" class="reference">19 Nov 2026</a></p>
 <p>R is an open source programming language widely used for statistical analysis, data processing, and visualization. You can connect R to KoboToolbox through the KoboToolbox <a class="reference external" href="https://support.kobotoolbox.org/api.html">Application Programming Interface (API)</a> to retrieve project data without manually downloading files.</p>
 <p>There are different ways to connect KoboToolbox to R. You can send API requests directly using R packages such as <code class="docutils literal notranslate"><span class="pre">httr</span></code> and <code class="docutils literal notranslate"><span class="pre">jsonlite</span></code>, or use community-developed packages that simplify the connection and data retrieval process.</p>
 <p>This article covers connecting KoboToolbox data to R using direct API requests and community-developed R packages, along with retrieving and updating project data.</p>
@@ -241,8 +241,8 @@
 </pre></div>
 </div>
 <p>Then load them into your R session:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
-<span class="n">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
 </pre></div>
 </div>
 </section>
@@ -250,30 +250,30 @@
 <h3>Retrieving project submissions<a class="headerlink" href="#retrieving-project-submissions" title="Link to this heading">¶</a></h3>
 <p>The KoboToolbox API data endpoint provides access to submissions in JSON format.</p>
 <p>The following example connects to a KoboToolbox project and retrieves its submissions:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>library(httr)
-library(jsonlite)
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
 
-# Configure your connection
-api_url &lt;- "https://kf.kobotoolbox.org/api/v2/assets/YOUR_ASSET_UID/data/"
-token &lt;- Sys.getenv("KOBOTOOLBOX_TOKEN")
+<span class="c1"># Configure your connection</span>
+<span class="n">api_url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://kf.kobotoolbox.org/api/v2/assets/YOUR_ASSET_UID/data/"</span>
+<span class="n">token</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">Sys.getenv</span><span class="p">(</span><span class="s">"KOBOTOOLBOX_TOKEN"</span><span class="p">)</span>
 
-# Send the API request
-response &lt;- GET(
-  api_url,
-  add_headers(Authorization = paste("Token", token)),
-  query = list(format = "json")
-)
+<span class="c1"># Send the API request</span>
+<span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span>
+<span class="w">  </span><span class="n">api_url</span><span class="p">,</span>
+<span class="w">  </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">"Token"</span><span class="p">,</span><span class="w"> </span><span class="n">token</span><span class="p">)),</span>
+<span class="w">  </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span><span class="n">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"json"</span><span class="p">)</span>
+<span class="p">)</span>
 
-# Check for errors in the API response (no output if successful)
-stop_for_status(response)
+<span class="c1"># Check for errors in the API response (no output if successful)</span>
+<span class="nf">stop_for_status</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 
-# Convert the JSON response into R data
-data &lt;- fromJSON(
-  content(response, as = "text", encoding = "UTF-8")
-)
+<span class="c1"># Convert the JSON response into R data</span>
+<span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">fromJSON</span><span class="p">(</span>
+<span class="w">  </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"text"</span><span class="p">,</span><span class="w"> </span><span class="n">encoding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"UTF-8"</span><span class="p">)</span>
+<span class="p">)</span>
 
-# View the submissions
-head(data$results) 
+<span class="c1"># View the submissions</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">results</span><span class="p">)</span><span class="w"> </span>
 </pre></div>
 </div>
 <p>Replace <code class="docutils literal notranslate"><span class="pre">YOUR_ASSET_UID</span></code> with your project asset UID and update the server URL if needed. The example retrieves the API key from an environment variable named <code class="docutils literal notranslate"><span class="pre">KOBOTOOLBOX_TOKEN</span></code>.</p>
@@ -286,48 +286,48 @@ head(data$results)
 <h3>Retrieving all submissions with pagination<a class="headerlink" href="#retrieving-all-submissions-with-pagination" title="Link to this heading">¶</a></h3>
 <p>For projects containing more submissions than the limit per request, you can use a loop to retrieve data in batches.</p>
 <p>The following example retrieves submissions until no additional pages remain:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>library(httr)
-library(jsonlite)
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
 
-api_url &lt;- "https://kf.kobotoolbox.org/api/v2/assets/YOUR_ASSET_UID/data/"
-token &lt;- Sys.getenv("KOBOTOOLBOX_TOKEN")
+<span class="n">api_url</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="s">"https://kf.kobotoolbox.org/api/v2/assets/YOUR_ASSET_UID/data/"</span>
+<span class="n">token</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">Sys.getenv</span><span class="p">(</span><span class="s">"KOBOTOOLBOX_TOKEN"</span><span class="p">)</span>
 
-start &lt;- 0
-limit &lt;- 100
-all_submissions &lt;- list()
+<span class="n">start</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">0</span>
+<span class="n">limit</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="m">100</span>
+<span class="n">all_submissions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">list</span><span class="p">()</span>
 
-repeat {
-  response &lt;- GET(
-    api_url,
-    add_headers(Authorization = paste("Token", token)),
-    query = list(
-      format = "json",
-      limit = limit,
-      start = start
-    )
-  )
+<span class="kr">repeat</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="n">response</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">GET</span><span class="p">(</span>
+<span class="w">    </span><span class="n">api_url</span><span class="p">,</span>
+<span class="w">    </span><span class="nf">add_headers</span><span class="p">(</span><span class="n">Authorization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">paste</span><span class="p">(</span><span class="s">"Token"</span><span class="p">,</span><span class="w"> </span><span class="n">token</span><span class="p">)),</span>
+<span class="w">    </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">list</span><span class="p">(</span>
+<span class="w">      </span><span class="n">format</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"json"</span><span class="p">,</span>
+<span class="w">      </span><span class="n">limit</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">limit</span><span class="p">,</span>
+<span class="w">      </span><span class="n">start</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">start</span>
+<span class="w">    </span><span class="p">)</span>
+<span class="w">  </span><span class="p">)</span>
 
-  stop_for_status(response)
+<span class="w">  </span><span class="nf">stop_for_status</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
 
-  data &lt;- fromJSON(
-    content(response, as = "text", encoding = "UTF-8"),
-    simplifyVector = FALSE
-  )
+<span class="w">  </span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">fromJSON</span><span class="p">(</span>
+<span class="w">    </span><span class="nf">content</span><span class="p">(</span><span class="n">response</span><span class="p">,</span><span class="w"> </span><span class="n">as</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"text"</span><span class="p">,</span><span class="w"> </span><span class="n">encoding</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"UTF-8"</span><span class="p">),</span>
+<span class="w">    </span><span class="n">simplifyVector</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">FALSE</span>
+<span class="w">  </span><span class="p">)</span>
 
-  all_submissions &lt;- c(all_submissions, data$results)
+<span class="w">  </span><span class="n">all_submissions</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">c</span><span class="p">(</span><span class="n">all_submissions</span><span class="p">,</span><span class="w"> </span><span class="n">data</span><span class="o">$</span><span class="n">results</span><span class="p">)</span>
 
-  cat("Fetched", length(data$results),
-      "records (start =", start, ")\n")
+<span class="w">  </span><span class="nf">cat</span><span class="p">(</span><span class="s">"Fetched"</span><span class="p">,</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">results</span><span class="p">),</span>
+<span class="w">      </span><span class="s">"records (start ="</span><span class="p">,</span><span class="w"> </span><span class="n">start</span><span class="p">,</span><span class="w"> </span><span class="s">")\n"</span><span class="p">)</span>
 
-  # Stop when the page is empty or contains fewer records than the limit
-  if (n == 0 || n &lt; limit) break
+<span class="w">  </span><span class="c1"># Stop when the page is empty or contains fewer records than the limit</span>
+<span class="w">  </span><span class="kr">if</span><span class="w"> </span><span class="p">(</span><span class="n">n</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">n</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">limit</span><span class="p">)</span><span class="w"> </span><span class="kr">break</span>
 
-  start &lt;- start + limit
-}
+<span class="w">  </span><span class="n">start</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="n">start</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">limit</span>
+<span class="p">}</span>
 
-cat("Total submissions:", length(all_submissions), "\n")
+<span class="nf">cat</span><span class="p">(</span><span class="s">"Total submissions:"</span><span class="p">,</span><span class="w"> </span><span class="nf">length</span><span class="p">(</span><span class="n">all_submissions</span><span class="p">),</span><span class="w"> </span><span class="s">"\n"</span><span class="p">)</span>
 
-head(data$results)
+<span class="nf">head</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">results</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>This script retrieves submissions in batches of 100, stores the results in a list, and continues until all available pages have been retrieved.</p>
@@ -352,11 +352,11 @@ head(data$results)
 </pre></div>
 </div>
 <p>Load the package and configure your KoboToolbox connection:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">robotoolbox</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">robotoolbox</span><span class="p">)</span>
 
-<span class="n">kobo_setup</span><span class="p">(</span>
-  <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://kf.kobotoolbox.org"</span><span class="p">,</span>
-  <span class="n">token</span> <span class="o">=</span> <span class="n">Sys</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"KOBOTOOLBOX_TOKEN"</span><span class="p">)</span>
+<span class="nf">kobo_setup</span><span class="p">(</span>
+<span class="w">  </span><span class="n">url</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"https://kf.kobotoolbox.org"</span><span class="p">,</span>
+<span class="w">  </span><span class="n">token</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nf">Sys.getenv</span><span class="p">(</span><span class="s">"KOBOTOOLBOX_TOKEN"</span><span class="p">)</span>
 <span class="p">)</span>
 </pre></div>
 </div>
@@ -366,24 +366,24 @@ head(data$results)
 <section id="id1">
 <span id="retrieving-project-submissions-1"></span><h3>Retrieving project submissions<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <p>Once connected, you can list the projects available to your account:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kobo_asset_list</span><span class="p">()</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">kobo_asset_list</span><span class="p">()</span>
 </pre></div>
 </div>
 <p>To select a specific project, use its asset UID:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asset</span> <span class="o">&lt;-</span> <span class="n">kobo_asset</span><span class="p">(</span><span class="s2">"YOUR_ASSET_UID"</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">asset</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">kobo_asset</span><span class="p">(</span><span class="s">"YOUR_ASSET_UID"</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Then retrieve the submissions:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">&lt;-</span> <span class="n">kobo_data</span><span class="p">(</span><span class="n">asset</span><span class="p">)</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">kobo_data</span><span class="p">(</span><span class="n">asset</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>For forms without repeat groups, the function returns the submissions as a data frame. For forms containing repeat groups, it returns related tables using the <code class="docutils literal notranslate"><span class="pre">dm</span></code> package.</p>
 <p>To preview data returned as a data frame, use:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># View the main submissions
-head(data)
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># View the main submissions</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
 
-# View a repeat group
-head(data$household_members)
+<span class="c1"># View a repeat group</span>
+<span class="nf">head</span><span class="p">(</span><span class="n">data</span><span class="o">$</span><span class="n">household_members</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>The <code class="docutils literal notranslate"><span class="pre">robotoolbox</span></code> package handles pagination automatically, allowing you to retrieve submissions from larger projects without manually requesting each batch.</p>
@@ -392,9 +392,9 @@ head(data$household_members)
 <h3>Filtering submissions<a class="headerlink" href="#filtering-submissions" title="Link to this heading">¶</a></h3>
 <p>You can also use <code class="docutils literal notranslate"><span class="pre">robotoolbox</span></code> to retrieve submissions that meet specific conditions.</p>
 <p>For example, if your form contains a question named <code class="docutils literal notranslate"><span class="pre">region</span></code>, the following code retrieves submissions where the response is <code class="docutils literal notranslate"><span class="pre">north</span></code>:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">filtered_data</span> <span class="o">&lt;-</span> <span class="n">kobo_data</span><span class="p">(</span>
-  <span class="n">asset</span><span class="p">,</span>
-  <span class="n">query</span> <span class="o">=</span> <span class="s1">'{"region": "north"}'</span>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="n">filtered_data</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">kobo_data</span><span class="p">(</span>
+<span class="w">  </span><span class="n">asset</span><span class="p">,</span>
+<span class="w">  </span><span class="n">query</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">'{"region": "north"}'</span>
 <span class="p">)</span>
 </pre></div>
 </div>
