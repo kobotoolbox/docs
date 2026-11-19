@@ -161,7 +161,7 @@ To refresh your data manually in Power BI Desktop:
 
 Power BI will retrieve the latest available data from your KoboToolbox connection.
 
-You can also configure scheduled refreshes through the Power BI service after publishing your report. To configure scheduled refreshes in Power BI:
+You can also **configure scheduled refreshes** through the Power BI service after publishing your report. To configure scheduled refreshes in Power BI:
 
 1. In Power BI Desktop, go to the **Home** tab and click **Publish** to publish your report.
 2. Open the <a href="https://app.powerbi.com" class="reference external">Power BI service</a> and sign in using the same account you used to publish the report.
