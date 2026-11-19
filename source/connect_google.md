@@ -1,4 +1,5 @@
 # Connecting KoboToolbox data to Google Sheets and Data Studio
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/connect_google.md" class="reference">19 Nov 2026</a>
 
 KoboToolbox allows you to connect project data to **Google Sheets** and **Data Studio** using the KoboToolbox [Application Programming Interface (API)](https://support.kobotoolbox.org/api.html). These connections allow you to retrieve updated submissions for analysis, reports, and dashboards without manually downloading new data files.
 

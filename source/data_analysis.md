@@ -1,5 +1,5 @@
 # Data analysis with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/738ddf667edfe3b719853e49b1bee3884d1714d6/source/data_analysis.md" class="reference">29 Sep 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/data_analysis.md" class="reference">19 Nov 2026</a>
 
 KoboToolbox provides **built-in tools** to help you review, visualize, and analyze collected data. These tools can be used for descriptive statistics, mapping, and qualitative analysis. 
 

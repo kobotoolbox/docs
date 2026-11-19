@@ -1,4 +1,5 @@
 # Connecting KoboToolbox data to R
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/connect_r.md" class="reference">19 Nov 2026</a>
 
 R is an open source programming language widely used for statistical analysis, data processing, and visualization. You can connect R to KoboToolbox through the KoboToolbox [Application Programming Interface (API)](https://support.kobotoolbox.org/api.html) to retrieve project data without manually downloading files.
 
