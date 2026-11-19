@@ -1,5 +1,5 @@
 # Using the KoboToolbox REST Services
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/c46f7552d1d5a7cfb37637aa5c88e1bd3b24c27d/source/rest_services.md" class="reference">19 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7fb3b69c9d6a7bee31da84dd294b3fe09fb778be/source/rest_services.md" class="reference">19 Nov 2026</a>
 
 
 KoboToolbox **REST Services** allow you to automatically send new project submissions to external applications or servers. This can help integrate KoboToolbox with other systems, automate workflows, and reduce manual data transfers.
