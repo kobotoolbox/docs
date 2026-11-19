@@ -88,7 +88,7 @@ If KoboToolbox cannot deliver a submission to the external server, it automatica
 * HTTP 503 (Service Unavailable)
 * HTTP 504 (Gateway Timeout)
 
-KoboToolbox makes up to three automatic retry attempts, after approximately 50, 10, and 20 minutes.
+KoboToolbox makes up to three automatic retry attempts, after approximately 5, 10, and 20 minutes.
 
 For all other errors, automatic retries are not performed, and you must retry the failed request manually.
 
