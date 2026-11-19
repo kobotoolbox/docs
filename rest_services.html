@@ -182,7 +182,7 @@
           
   <section id="using-the-kobotoolbox-rest-services">
 <h1>Using the KoboToolbox REST Services<a class="headerlink" href="#using-the-kobotoolbox-rest-services" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/rest_services.md" class="reference">19 Nov 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c46f7552d1d5a7cfb37637aa5c88e1bd3b24c27d/source/rest_services.md" class="reference">19 Nov 2026</a></p>
 <p>KoboToolbox <strong>REST Services</strong> allow you to automatically send new project submissions to external applications or servers. This can help integrate KoboToolbox with other systems, automate workflows, and reduce manual data transfers.</p>
 <p>REST Services can also be useful for creating <strong>raw data backups</strong> on an external server, where submitted data remains stored even if the original submissions are edited or deleted from KoboToolbox.</p>
 <p>REST Services send submissions to a web address, called an <strong>endpoint URL</strong>, provided by the receiving application. You can choose which fields to send, configure authentication, and customize the format of the data.</p>
@@ -227,16 +227,16 @@
 </thead>
 <tbody>
 <tr class="row-even"><td class="text-left"><p>Name</p></td>
-<td class="text-left"><p>Enter a descriptive name to identify the REST Service within your KoboToolbox project.<br><br>The name is for your reference and does not affect the data sent to the external application.</p></td>
+<td class="text-left"><p>Enter a descriptive name to identify the REST Service within your KoboToolbox project. The name is for your reference and does not affect the data sent to the external application.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Endpoint URL</p></td>
-<td class="text-left"><p>Enter the web address where KoboToolbox should send new submissions.<br><br>This URL must be provided by the receiving application or the administrator of the external server.<br><br>Use an HTTPS endpoint to protect data during transmission.</p></td>
+<td class="text-left"><p>Enter the web address where KoboToolbox should send new submissions. This URL must be provided by the receiving application or the administrator of the external server. Use an HTTPS endpoint to protect data during transmission.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Enabled</p></td>
-<td class="text-left"><p>Select <strong>Enabled</strong> to activate the REST Service and allow KoboToolbox to send new submissions to the configured endpoint.<br><br>You can disable the service to stop sending new submissions without deleting its configuration.</p></td>
+<td class="text-left"><p>Select <strong>Enabled</strong> to activate the REST Service and allow KoboToolbox to send new submissions to the configured endpoint. You can disable the service to stop sending new submissions without deleting its configuration.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Receive email notifications</p></td>
-<td class="text-left"><p>Enable this option to receive email notifications when submission delivery fails.<br><br>This can help you identify connection problems or errors with the receiving application.</p></td>
+<td class="text-left"><p>Enable this option to receive email notifications when submission delivery fails. This can help you identify connection problems or errors with the receiving application.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Type</p></td>
 <td class="text-left"><p><p>Choose the format used to send submission data:</p><ul><li><strong>JSON:</strong> Sends submissions in JSON format, commonly used by web applications and APIs.</li><li><strong>XML:</strong> Sends submissions in XML format, which may be required by some external systems.</li></ul><p>Select the format supported by the receiving application. If you are unsure, check the application’s integration documentation.</p></p></td>
@@ -245,10 +245,10 @@
 <td class="text-left"><p><p>Choose the authentication method required by the receiving application.</p><ul><li><strong>No Authorization:</strong> Use this when the endpoint does not require HTTP authentication or when authentication is provided through custom HTTP headers.</li><li><strong>Basic Authentication:</strong> Use this when the endpoint requires a username and password.</li></ul><p>If you select Basic Authentication, enter the credentials provided by the receiving application in the corresponding fields.</p></p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Select fields subset</p></td>
-<td class="text-left"><p><p>Limit which fields are included. By default, REST Services send all available submission data to the receiving application.</p><p>Enter the <a href="https://support.kobotoolbox.org/glossary.html#question-name">question names</a> of the fields you want to include, and press <strong>Enter</strong> or <strong>Tab</strong> to add each field. For questions inside groups, use their full field names, including the group path where applicable.</p></p></td>
+<td class="text-left"><p><p>Limit which fields are included. By default, REST Services send all available submission data to the receiving application. Enter the <a href="https://support.kobotoolbox.org/glossary.html#question-name">question names</a> of the fields you want to include, and press <strong>Enter</strong> or <strong>Tab</strong> to add each field. For questions inside groups, use their full field names, including the group path where applicable.</p></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Custom HTTP Headers</p></td>
-<td class="text-left"><p>Some external applications require additional information in the HTTP request headers to authenticate requests or identify the integration.<br><br>Enter the required header name in the <strong>Name</strong> field. Enter the corresponding value in the <strong>Value</strong> field. Click <strong>Add header</strong> to include additional headers if needed. Follow the instructions provided by the receiving application.</p></td>
+<td class="text-left"><p>Some external applications require additional information in the HTTP request headers to authenticate requests or identify the integration. Enter the required header name in the <strong>Name</strong> field. Enter the corresponding value in the <strong>Value</strong> field. Click <strong>Add header</strong> to include additional headers if needed. Follow the instructions provided by the receiving application.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Add custom wrapper around JSON submission</p></td>
 <td class="text-left"><p><p>Customize the structure of the data sent to the receiving application when using the JSON format, if the receiving application requires submission data to be placed inside a specific JSON structure.</p><p>For example:</p><pre><code>{
