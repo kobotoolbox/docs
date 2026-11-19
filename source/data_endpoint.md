@@ -70,7 +70,7 @@ curl -H "Authorization: Token YOUR_API_KEY" \
 ```
 
 <p class="note">
-  <b>Note:</b> Keep your API key confidential. Avoid including it directly in scripts that are shared publicly. For automated workflows, use environment variables or other secure methods to store credentials.
+  <strong>Note:</strong> Keep your API key confidential. Avoid including it directly in scripts that are shared publicly. For automated workflows, use environment variables or other secure methods to store credentials.
 </p>
 
 ### Understanding the API response
@@ -132,7 +132,7 @@ To retrieve the next 100 submissions:
 You can also use the `next` URL provided in the API response to retrieve the next batch of submissions. When `next` is `null`, there are no additional pages to retrieve.
 
 <p class="note">
-  <b>Note:</b> Some applications and programming packages handle pagination automatically, allowing you to retrieve all submissions without manually requesting each page.
+  <strong>Note:</strong> Some applications and programming packages handle pagination automatically, allowing you to retrieve all submissions without manually requesting each page.
 </p>
 
 ## Filtering submissions
@@ -178,7 +178,7 @@ curl -G \
 The `--data-urlencode` option ensures that the filter is correctly formatted in the request URL.
 
 <p class="note">
-  <b>Note:</b> Filters use the underlying question and choice names, rather than the labels displayed in the form. If you need more advanced filtering, see the API documentation for your KoboToolbox server.
+  <strong>Note:</strong> Filters use the underlying question and choice names, rather than the labels displayed in the form. If you need more advanced filtering, see the API documentation for your KoboToolbox server.
 </p>
 
 ## Automating data retrieval
@@ -199,7 +199,7 @@ You can use filters to retrieve only new submissions, reducing the amount of dat
 The frequency of updates depends on how your external application or script is configured. The data endpoint does not automatically send new submissions to connected applications.
 
 <p class="note">
-  <b>Note:</b> When automating data retrieval, ensure your script handles pagination, connection errors, and authentication securely. If you need to detect changes to existing submissions, consider how your workflow will identify edited records as well as newly added submissions.
+  <strong>Note:</strong> When automating data retrieval, ensure your script handles pagination, connection errors, and authentication securely. If you need to detect changes to existing submissions, consider how your workflow will identify edited records as well as newly added submissions.
 </p>
 
 ## Additional API documentation
