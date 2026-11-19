@@ -182,7 +182,7 @@
           
   <section id="using-the-kobotoolbox-rest-services">
 <h1>Using the KoboToolbox REST Services<a class="headerlink" href="#using-the-kobotoolbox-rest-services" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c46f7552d1d5a7cfb37637aa5c88e1bd3b24c27d/source/rest_services.md" class="reference">19 Nov 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7fb3b69c9d6a7bee31da84dd294b3fe09fb778be/source/rest_services.md" class="reference">19 Nov 2026</a></p>
 <p>KoboToolbox <strong>REST Services</strong> allow you to automatically send new project submissions to external applications or servers. This can help integrate KoboToolbox with other systems, automate workflows, and reduce manual data transfers.</p>
 <p>REST Services can also be useful for creating <strong>raw data backups</strong> on an external server, where submitted data remains stored even if the original submissions are edited or deleted from KoboToolbox.</p>
 <p>REST Services send submissions to a web address, called an <strong>endpoint URL</strong>, provided by the receiving application. You can choose which fields to send, configure authentication, and customize the format of the data.</p>
@@ -288,7 +288,7 @@
 <li><p>HTTP 503 (Service Unavailable)</p></li>
 <li><p>HTTP 504 (Gateway Timeout)</p></li>
 </ul>
-<p>KoboToolbox makes up to three automatic retry attempts, after approximately 50, 10, and 20 minutes.</p>
+<p>KoboToolbox makes up to three automatic retry attempts, after approximately 5, 10, and 20 minutes.</p>
 <p>For all other errors, automatic retries are not performed, and you must retry the failed request manually.</p>
 <p>You can enable <strong>Receive email notifications</strong> in the REST Service settings to receive notifications about failed deliveries.</p>
 <p>If submissions are not reaching the receiving application:</p>
