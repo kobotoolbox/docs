@@ -200,7 +200,7 @@
 <strong>Note :</strong> Une fois le type de question sélectionné, il ne peut pas être modifié dans le Formbuilder. Pour changer le type d'une question existante, supprimez la question et créez-en une nouvelle avec le même libellé.
 </p>
 <section id="definir-les-noms-de-champs">
-<h3>Définir les noms de champs<a class="headerlink" href="#definir-les-noms-de-champs" title="Lien vers cette rubrique">¶</a></h3>
+<span id="définir-les-noms-de-champs"></span><h3>Définir les noms de champs<a class="headerlink" href="#definir-les-noms-de-champs" title="Lien vers cette rubrique">¶</a></h3>
 <p>Après avoir ajouté une question à votre formulaire, il est fortement recommandé de définir un <strong>nom du champ</strong> dans les <strong>Paramètres</strong> de la question. Le nom du champ est utilisé pour identifier la question dans la logique du formulaire et dans le jeu de données exporté.</p>
 <p>Par défaut, KoboToolbox crée le nom du champ automatiquement en supprimant les espaces et les majuscules du libellé de la question. Par exemple, si le libellé de la question est « Nom du répondant », le nom du champ sera <code class="docutils literal notranslate"><span class="pre">respondent_name</span></code>.</p>
 <p class="note">
@@ -209,7 +209,7 @@
 </section>
 </section>
 <section id="ajouter-des-choix-de-reponse">
-<h2>Ajouter des choix de réponse<a class="headerlink" href="#ajouter-des-choix-de-reponse" title="Lien vers cette rubrique">¶</a></h2>
+<span id="ajouter-des-choix-de-réponse"></span><h2>Ajouter des choix de réponse<a class="headerlink" href="#ajouter-des-choix-de-reponse" title="Lien vers cette rubrique">¶</a></h2>
 <p>Lorsque vous ajoutez des questions de type Choix unique ou Choix multiple à votre formulaire, vous serez invité à saisir des choix de réponse.</p>
 <ul class="simple">
 <li><p>Vous pouvez saisir autant de choix de réponse que vous le souhaitez.</p></li>
@@ -221,7 +221,7 @@
 <strong>Note :</strong> La gestion de longues listes de choix dans le Formbuilder peut prendre beaucoup de temps. Si votre formulaire comprend de nombreuses options ou si la même liste de choix est utilisée dans plusieurs questions, il est souvent plus simple de créer et de gérer ces listes avec XLSForm. Pour en savoir plus, consultez l'article <a href="https://support.kobotoolbox.org/fr/option_choices_xls.html#">Gérer les choix de réponse dans XLSForm</a>.
 </p>
 <section id="definir-les-valeurs-xml-des-choix-de-reponse">
-<h3>Définir les valeurs XML des choix de réponse<a class="headerlink" href="#definir-les-valeurs-xml-des-choix-de-reponse" title="Lien vers cette rubrique">¶</a></h3>
+<span id="définir-les-valeurs-xml-des-choix-de-réponse"></span><h3>Définir les valeurs XML des choix de réponse<a class="headerlink" href="#definir-les-valeurs-xml-des-choix-de-reponse" title="Lien vers cette rubrique">¶</a></h3>
 <p>À côté de chaque choix de réponse, vous verrez un champ intitulé <strong>AUTOMATIC.</strong> Ce champ contient la <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#xml-value">valeur XML</a> de cette option.</p>
 <p>La valeur XML est un nom interne court que KoboToolbox utilise pour enregistrer et identifier l’option sélectionnée dans vos données. Par défaut, KoboToolbox crée la valeur XML automatiquement en supprimant les espaces et les majuscules du libellé de l’option. Par exemple, si le libellé de l’option est « Option 1 », la valeur XML sera <code class="docutils literal notranslate"><span class="pre">option_1</span></code>.</p>
 <p>Dans certains cas, vous pouvez souhaiter définir votre propre valeur XML. Cela peut être utile si le libellé de l’option est très long ou si vous souhaitez utiliser un nom plus clair ou plus cohérent. Pour ce faire, cliquez sur <strong>AUTOMATIC</strong> et remplacez-le par votre propre valeur personnalisée.</p>

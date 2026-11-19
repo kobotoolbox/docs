@@ -180,10 +180,10 @@
         <section class="page__body" role="main">
           
   <section id="recherche-avancee-dans-les-collections-publiques">
-<h1>Recherche avancée dans les collections publiques<a class="headerlink" href="#recherche-avancee-dans-les-collections-publiques" title="Lien vers cette rubrique">¶</a></h1>
+<span id="recherche-avancée-dans-les-collections-publiques"></span><h1>Recherche avancée dans les collections publiques<a class="headerlink" href="#recherche-avancee-dans-les-collections-publiques" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong><em>Veuillez noter que la fonctionnalité de recherche est en cours de développement et que nous prévoyons d’ajouter une syntaxe plus facile à utiliser dans les prochaines versions.</em></strong></p>
 <section id="comportement-de-recherche-par-defaut">
-<h2>Comportement de recherche par défaut<a class="headerlink" href="#comportement-de-recherche-par-defaut" title="Lien vers cette rubrique">¶</a></h2>
+<span id="comportement-de-recherche-par-défaut"></span><h2>Comportement de recherche par défaut<a class="headerlink" href="#comportement-de-recherche-par-defaut" title="Lien vers cette rubrique">¶</a></h2>
 <p>Lorsque vous saisissez un terme dans la barre de recherche sans spécifier de champ, votre requête retournera les résultats où ce terme, quelle que soit l’utilisation de majuscules ou de minuscules, peut être trouvé dans :</p>
 <ul class="simple">
 <li><p>Le nom de l’enquête, de la collection, de la question, du bloc ou du modèle ;</p></li>
@@ -202,7 +202,7 @@
 <p><img alt="examples" src="_images/advanced_search_1.png" /></p>
 </section>
 <section id="operateurs-de-champ-de-recherche-valides">
-<h2>Opérateurs de champ de recherche valides<a class="headerlink" href="#operateurs-de-champ-de-recherche-valides" title="Lien vers cette rubrique">¶</a></h2>
+<span id="opérateurs-de-champ-de-recherche-valides"></span><h2>Opérateurs de champ de recherche valides<a class="headerlink" href="#operateurs-de-champ-de-recherche-valides" title="Lien vers cette rubrique">¶</a></h2>
 <p>L’opérateur de champ est la valeur qui suit le dernier double tiret bas dans le champ de recherche, c’est-à-dire <code class="docutils literal notranslate"><span class="pre">__icontains</span></code>.</p>
 <ul class="simple">
 <li><p>Pour les recherches de <strong>texte</strong> <em>sensibles à l’utilisation de majuscules et de minuscules</em>, les opérateurs suivants peuvent être utilisés : <code class="docutils literal notranslate"><span class="pre">contains</span></code>, <code class="docutils literal notranslate"><span class="pre">exact</span></code>, <code class="docutils literal notranslate"><span class="pre">startswith</span></code></p></li>
@@ -244,7 +244,7 @@ et permet de parcourir les relations entre objets liés et les hiérarchies JSON
 <p><img alt="examples" src="_images/advanced_search_3.png" /></p>
 </section>
 <section id="utiliser-le-parseur-de-requetes">
-<h2>Utiliser le parseur de requêtes<a class="headerlink" href="#utiliser-le-parseur-de-requetes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="utiliser-le-parseur-de-requêtes"></span><h2>Utiliser le parseur de requêtes<a class="headerlink" href="#utiliser-le-parseur-de-requetes" title="Lien vers cette rubrique">¶</a></h2>
 <p>Enfin, les champs de recherche décrits ci-dessus peuvent être combinés à l’aide de la syntaxe du
 <a class="reference external" href="https://github.com/kobotoolbox/kpi#searching">parseur de requêtes</a> pour des recherches plus précises. Par exemple :</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">owner__username__icontains</span><span class="p">:</span><span class="n">foo</span> <span class="n">AND</span> <span class="n">tags__name__icontains</span><span class="p">:</span><span class="n">bar</span>

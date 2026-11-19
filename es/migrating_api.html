@@ -182,7 +182,7 @@
         <section class="page__body" role="main">
           
   <section id="migracion-de-api-v1-a-api-v2">
-<h1>Migración de API v1 a API v2<a class="headerlink" href="#migracion-de-api-v1-a-api-v2" title="Link to this heading">¶</a></h1>
+<span id="migración-de-api-v1-a-api-v2"></span><h1>Migración de API v1 a API v2<a class="headerlink" href="#migracion-de-api-v1-a-api-v2" title="Link to this heading">¶</a></h1>
 <p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/235a3cc8f0f84190b5e792cf191b424123e88f46/source/migrating_api.md" class="reference">22 Jun 2026</a></p>
 <p>Como parte de nuestros esfuerzos continuos para simplificar y modernizar la plataforma KoboToolbox, todos los endpoints <code class="docutils literal notranslate"><span class="pre">v1</span></code> de KPI y KoboCAT han sido eliminados. Los endpoints <code class="docutils literal notranslate"><span class="pre">v1</span></code> han sido reemplazados por la API KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code>, más robusta y con soporte completo.</p>
 <p>Este artículo explica cómo migrar tus integraciones de API de la API <code class="docutils literal notranslate"><span class="pre">v1</span></code> (KoboCAT y KPI) a la API KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code>. Cubre cada endpoint <code class="docutils literal notranslate"><span class="pre">v1</span></code> obsoleto y su equivalente en <code class="docutils literal notranslate"><span class="pre">v2</span></code> para ayudarte a realizar la transición de tus flujos de trabajo.</p>
@@ -190,7 +190,7 @@
   <strong>Nota:</strong> Este artículo está dirigido a <strong>usuarios avanzados</strong> que utilizan la API de KoboToolbox para <strong>flujos de trabajo de gestión de proyectos</strong>. El resto de los usuarios no se ven afectados por esta migración. Las integraciones que utilizan <a href="https://support.kobotoolbox.org/es/synchronous_exports.html">exportaciones sincrónicas</a>, como paneles de control y otras herramientas de informes externos, no requieren ningún cambio y seguirán funcionando con normalidad.
 </p>
 <section id="autenticacion">
-<h2>Autenticación<a class="headerlink" href="#autenticacion" title="Link to this heading">¶</a></h2>
+<span id="autenticación"></span><h2>Autenticación<a class="headerlink" href="#autenticacion" title="Link to this heading">¶</a></h2>
 <p>Todas las solicitudes de API — v1 y v2 — requieren un token de API. Inclúyelo en cada solicitud usando el encabezado <code class="docutils literal notranslate"><span class="pre">Authorization</span></code>:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Authorization</span><span class="p">:</span> <span class="n">Token</span> <span class="n">xxxx</span>
 </pre></div>
@@ -230,7 +230,7 @@
 </p>
 </section>
 <section id="migracion-de-kpi-v1-a-kpi-v2">
-<h2>Migración de KPI v1 a KPI v2<a class="headerlink" href="#migracion-de-kpi-v1-a-kpi-v2" title="Link to this heading">¶</a></h2>
+<span id="migración-de-kpi-v1-a-kpi-v2"></span><h2>Migración de KPI v1 a KPI v2<a class="headerlink" href="#migracion-de-kpi-v1-a-kpi-v2" title="Link to this heading">¶</a></h2>
 <p>Migrar de la versión anterior de la API KPI (<code class="docutils literal notranslate"><span class="pre">v1</span></code>) a la nueva versión (<code class="docutils literal notranslate"><span class="pre">v2</span></code>) es sencillo en la mayoría de los casos.</p>
 <p>En general, solo necesitas actualizar la ruta base de <code class="docutils literal notranslate"><span class="pre">/endpoint/</span></code> a <code class="docutils literal notranslate"><span class="pre">/api/v2/endpoint/</span></code>.</p>
 <section id="excepciones">
@@ -260,7 +260,7 @@
 </section>
 </section>
 <section id="migracion-de-kobocat-v1-a-kpi-v2">
-<h2>Migración de KoboCAT v1 a KPI v2<a class="headerlink" href="#migracion-de-kobocat-v1-a-kpi-v2" title="Link to this heading">¶</a></h2>
+<span id="migración-de-kobocat-v1-a-kpi-v2"></span><h2>Migración de KoboCAT v1 a KPI v2<a class="headerlink" href="#migracion-de-kobocat-v1-a-kpi-v2" title="Link to this heading">¶</a></h2>
 <p>La siguiente sección enumera los principales endpoints de la API KoboCAT <code class="docutils literal notranslate"><span class="pre">v1</span></code> y proporciona sus equivalentes en <code class="docutils literal notranslate"><span class="pre">v2</span></code>.</p>
 <section id="endpoints-de-datos-lista-de-proyectos">
 <h3>Endpoints de datos: Lista de proyectos<a class="headerlink" href="#endpoints-de-datos-lista-de-proyectos" title="Link to this heading">¶</a></h3>
@@ -399,7 +399,7 @@ curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">"Authoriz
 </section>
 <hr class="docutils" />
 <section id="endpoints-de-datos-datos-de-envios">
-<h3>Endpoints de datos: Datos de envíos<a class="headerlink" href="#endpoints-de-datos-datos-de-envios" title="Link to this heading">¶</a></h3>
+<span id="endpoints-de-datos-datos-de-envíos"></span><h3>Endpoints de datos: Datos de envíos<a class="headerlink" href="#endpoints-de-datos-datos-de-envios" title="Link to this heading">¶</a></h3>
 <p>Estos endpoints recuperan todos los datos de envío de un proyecto específico o un único envío del proyecto. <code class="docutils literal notranslate"><span class="pre">{uid}</span></code> es el identificador único del proyecto y <code class="docutils literal notranslate"><span class="pre">{submission_id}</span></code> es el identificador único de un envío de formulario.</p>
 <table class="docutils align-default">
 <thead>

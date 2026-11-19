@@ -187,7 +187,7 @@
 <li><p><strong>Issue on line 11</strong>: The explanation itself says «Skipping.» — no change needed.</p></li>
 </ol>
 <section id="anadir-traducciones-en-xlsform">
-<h1>Añadir traducciones en XLSForm<a class="headerlink" href="#anadir-traducciones-en-xlsform" title="Link to this heading">¶</a></h1>
+<span id="añadir-traducciones-en-xlsform"></span><h1>Añadir traducciones en XLSForm<a class="headerlink" href="#anadir-traducciones-en-xlsform" title="Link to this heading">¶</a></h1>
 <p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/26219c3ff68ab5e06bc080c11ae388324a894200/source/language_xls.md" class="reference">5 Jun 2026</a></p>
 <p>Agregar traducciones a un formulario permite a los usuarios cambiar a su idioma preferido durante la recolección de datos sin necesidad de crear formularios separados. Se puede agregar cualquier número de traducciones. Tanto <a class="reference internal" href="#../es/data_collection_kobocollect.html"><span class="xref myst">KoboCollect</span></a> como los <a class="reference internal" href="#../es/data_through_webforms.html"><span class="xref myst">formularios web</span></a> admiten traducciones de formularios.</p>
 <p>La mayoría de los elementos que se muestran en el formulario pueden traducirse, como las <strong>etiquetas de preguntas</strong>, las <strong>sugerencias</strong>, las <strong>etiquetas de opciones</strong>, los <strong>mensajes de restricción</strong> y los <strong>mensajes obligatorios</strong>. Los elementos utilizados para la estructura del formulario, como los nombres de preguntas, los nombres de opciones y los nombres de listas, no pueden traducirse y deben permanecer en el idioma utilizado para el desarrollo del formulario y el análisis de datos.</p>
@@ -201,7 +201,7 @@ Para practicar la adición de traducciones en XLSForm, consulta el <a href="http
     Para obtener más información sobre la recolección y gestión de datos de formularios traducidos, consulta <a href="../es/collecting_data_multiple_languages.html">Recolectar datos en diferentes idiomas</a>.
 </p>
 <section id="codigos-de-idioma-en-xlsform">
-<h2>Códigos de idioma en XLSForm<a class="headerlink" href="#codigos-de-idioma-en-xlsform" title="Link to this heading">¶</a></h2>
+<span id="códigos-de-idioma-en-xlsform"></span><h2>Códigos de idioma en XLSForm<a class="headerlink" href="#codigos-de-idioma-en-xlsform" title="Link to this heading">¶</a></h2>
 <p>Al hacer referencia a diferentes idiomas en XLSForm, debes usar el formato <code class="docutils literal notranslate"><span class="pre">idioma</span> <span class="pre">(código)</span></code> en los encabezados de columna. Por ejemplo, la referencia de idioma para inglés es <code class="docutils literal notranslate"><span class="pre">English</span> <span class="pre">(en)</span></code> y la referencia de idioma para francés es <code class="docutils literal notranslate"><span class="pre">French</span> <span class="pre">(fr)</span></code>. Cada traducción debe usar el mismo nombre de idioma y código de manera consistente en todo el formulario.</p>
 <p>Los códigos de idioma se pueden encontrar en el <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">registro de subetiquetas de idioma de la IANA</a>. En el sitio web de la IANA, <strong>Description</strong> hace referencia al nombre del idioma y <strong>Subtag</strong> hace referencia al código de idioma (por ejemplo, <strong>Description:</strong> French, <strong>Subtag:</strong> fr).</p>
 </section>
@@ -397,7 +397,7 @@ Para practicar la adición de traducciones en XLSForm, consulta el <a href="http
 <section id="pautas-para-las-traducciones">
 <h2>Pautas para las traducciones<a class="headerlink" href="#pautas-para-las-traducciones" title="Link to this heading">¶</a></h2>
 <section id="usar-funciones-de-hojas-de-calculo-para-traducciones-en-bloque">
-<h3>Usar funciones de hojas de cálculo para traducciones en bloque<a class="headerlink" href="#usar-funciones-de-hojas-de-calculo-para-traducciones-en-bloque" title="Link to this heading">¶</a></h3>
+<span id="usar-funciones-de-hojas-de-cálculo-para-traducciones-en-bloque"></span><h3>Usar funciones de hojas de cálculo para traducciones en bloque<a class="headerlink" href="#usar-funciones-de-hojas-de-calculo-para-traducciones-en-bloque" title="Link to this heading">¶</a></h3>
 <p>XLSForm facilita la traducción de elementos del formulario en bloque, en lugar de ingresar las traducciones una por una. Por ejemplo, puedes copiar una columna completa en un sistema de traducción para traducirla en bloque y luego pegarla de nuevo en tu XLSForm. Si usas Google Sheets para crear tu XLSForm, puedes usar la fórmula <code class="docutils literal notranslate"><span class="pre">GOOGLETRANSLATE()</span></code> para automatizar el proceso de traducción.</p>
 <p>Las traducciones automáticas siempre deben ser revisadas y validadas por una persona con dominio del idioma para garantizar la precisión, la adecuación cultural y el contexto apropiado. Este paso ayuda a mantener la calidad y confiabilidad del contenido traducido.</p>
 </section>
@@ -454,7 +454,7 @@ Para practicar la adición de traducciones en XLSForm, consulta el <a href="http
 </section>
 </section>
 <section id="resolucion-de-problemas">
-<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
+<span id="resolución-de-problemas"></span><h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
 <details>
 <summary><b>Aparece un idioma sin nombre después de cargar un XLSForm</b></summary>
 Es posible que aparezca un idioma sin nombre si en tu XLSForm faltan columnas de traducción para el contenido visible por los encuestados, como las columnas <code>hint</code>, <code>guidance_hint</code>, multimedia, <code>constraint_messages</code> o <code>required_message</code>. Hasta que esto se corrija, el texto de estas columnas aparecerá en blanco para todos los idiomas que no sean el idioma predeterminado.<br><br>También puede aparecer un idioma sin nombre si configuraste un <code>default_language</code> en la pestaña <code>settings</code>, como <code>English (en)</code>, pero tu formulario solo tiene un idioma y usa <code>label</code> en lugar de <code>label::English (en)</code>. Para corregir esto, elimina la configuración del idioma predeterminado en la pestaña <code>settings</code>.<br><br>Por último, puede aparecer un idioma sin nombre si cargas un XLSForm en un proyecto que antes tenía varios idiomas, pero ahora solo tiene un idioma sin especificar. Si tu formulario ahora tiene un solo idioma, abre la <a class="reference external" href="../es/language_dashboard.html">interfaz de traducciones</a>, establece el idioma sin nombre como idioma predeterminado y luego elimina los demás idiomas.

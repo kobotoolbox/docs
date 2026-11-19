@@ -180,10 +180,10 @@
         <section class="page__body" role="main">
           
   <section id="busqueda-avanzada-en-colecciones-publicas">
-<h1>Búsqueda avanzada en Colecciones públicas<a class="headerlink" href="#busqueda-avanzada-en-colecciones-publicas" title="Link to this heading">¶</a></h1>
+<span id="búsqueda-avanzada-en-colecciones-públicas"></span><h1>Búsqueda avanzada en Colecciones públicas<a class="headerlink" href="#busqueda-avanzada-en-colecciones-publicas" title="Link to this heading">¶</a></h1>
 <p><strong><em>Ten en cuenta que la función de búsqueda está en desarrollo y planeamos agregar una sintaxis más fácil de usar en versiones futuras.</em></strong></p>
 <section id="comportamiento-de-busqueda-predeterminado">
-<h2>Comportamiento de búsqueda predeterminado<a class="headerlink" href="#comportamiento-de-busqueda-predeterminado" title="Link to this heading">¶</a></h2>
+<span id="comportamiento-de-búsqueda-predeterminado"></span><h2>Comportamiento de búsqueda predeterminado<a class="headerlink" href="#comportamiento-de-busqueda-predeterminado" title="Link to this heading">¶</a></h2>
 <p>Cuando ingresas un término en la barra de búsqueda sin especificar un campo, tu consulta devolverá resultados donde ese término, independientemente de las mayúsculas o minúsculas, se encuentre en:</p>
 <ul class="simple">
 <li><p>El nombre de la encuesta, recolección, pregunta, bloque o plantilla;</p></li>
@@ -202,7 +202,7 @@
 <p><img alt="examples" src="_images/advanced_search_1.png" /></p>
 </section>
 <section id="operadores-validos-para-campos-de-busqueda">
-<h2>Operadores válidos para campos de búsqueda<a class="headerlink" href="#operadores-validos-para-campos-de-busqueda" title="Link to this heading">¶</a></h2>
+<span id="operadores-válidos-para-campos-de-búsqueda"></span><h2>Operadores válidos para campos de búsqueda<a class="headerlink" href="#operadores-validos-para-campos-de-busqueda" title="Link to this heading">¶</a></h2>
 <p>El operador de campo es el valor que aparece después del último doble guión bajo en el campo de búsqueda, es decir, <code class="docutils literal notranslate"><span class="pre">__icontains</span></code>.</p>
 <ul class="simple">
 <li><p>Para búsquedas de <strong>texto</strong> que <em>distinguen entre mayúsculas y minúsculas</em>, se pueden usar los siguientes operadores: <code class="docutils literal notranslate"><span class="pre">contains</span></code>, <code class="docutils literal notranslate"><span class="pre">exact</span></code>, <code class="docutils literal notranslate"><span class="pre">startswith</span></code></p></li>
@@ -212,7 +212,7 @@
 <p>Ten en cuenta que, de forma predeterminada, el operador <code class="docutils literal notranslate"><span class="pre">exact</span></code> está configurado, por lo que <code class="docutils literal notranslate"><span class="pre">name:foo</span></code> es equivalente a <code class="docutils literal notranslate"><span class="pre">name__exact:foo</span></code>.</p>
 </section>
 <section id="entender-la-sintaxis-de-los-campos-de-busqueda">
-<h2>Entender la sintaxis de los campos de búsqueda<a class="headerlink" href="#entender-la-sintaxis-de-los-campos-de-busqueda" title="Link to this heading">¶</a></h2>
+<span id="entender-la-sintaxis-de-los-campos-de-búsqueda"></span><h2>Entender la sintaxis de los campos de búsqueda<a class="headerlink" href="#entender-la-sintaxis-de-los-campos-de-busqueda" title="Link to this heading">¶</a></h2>
 <p>La sintaxis de doble guión bajo imita el comportamiento de la
 <a class="reference external" href="https://docs.djangoproject.com/en/3.1/ref/contrib/admin/#django.contrib.admin.ModelAdmin.search_fields">sintaxis de filtrado de objetos de Django</a>
 y permite recorrer relaciones entre objetos relacionados y jerarquías JSON, como las que se encuentran en el endpoint:</p>

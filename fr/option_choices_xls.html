@@ -182,7 +182,7 @@
         <section class="page__body" role="main">
           
   <section id="gerer-les-choix-de-reponse-dans-xlsform">
-<h1>Gérer les choix de réponse dans XLSForm<a class="headerlink" href="#gerer-les-choix-de-reponse-dans-xlsform" title="Lien vers cette rubrique">¶</a></h1>
+<span id="gérer-les-choix-de-réponse-dans-xlsform"></span><h1>Gérer les choix de réponse dans XLSForm<a class="headerlink" href="#gerer-les-choix-de-reponse-dans-xlsform" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/option_choices_xls.md" class="reference">4 Jan 2026</a></p>
 <p>XLSForm simplifie la création et la gestion des <strong>listes de choix de réponse</strong> pour les formulaires d’enquête. Cela est particulièrement utile pour les listes longues ou répétitives, comme les noms de pays ou de villes. Les choix de réponse sont définis pour les questions de type <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code> ou <code class="docutils literal notranslate"><span class="pre">rank</span></code> (<a class="reference external" href="https://support.kobotoolbox.org/fr/question_types_xls.html#select-question-types">questions à choix multiple</a>).</p>
 <p>Cet article explique comment définir et gérer les choix de réponse dans XLSForm pour des formulaires complexes, ainsi que les bonnes pratiques pour nommer les choix.</p>
@@ -190,7 +190,7 @@
 Pour en savoir plus sur la création de formulaires avec XLSForm, consultez l'article <a href="getting_started_xlsform.html">Créer un XLSForm</a>.
 </p>
 <section id="definir-les-choix-de-reponse-dans-xlsform">
-<h2>Définir les choix de réponse dans XLSForm<a class="headerlink" href="#definir-les-choix-de-reponse-dans-xlsform" title="Lien vers cette rubrique">¶</a></h2>
+<span id="définir-les-choix-de-réponse-dans-xlsform"></span><h2>Définir les choix de réponse dans XLSForm<a class="headerlink" href="#definir-les-choix-de-reponse-dans-xlsform" title="Lien vers cette rubrique">¶</a></h2>
 <p>Les choix de réponse sont définis dans l”<strong>onglet choices</strong> de votre XLSForm. L’onglet choices comprend trois colonnes obligatoires :</p>
 <table class="docutils align-default">
 <thead>
@@ -278,7 +278,7 @@ Pour en savoir plus sur la création de formulaires avec XLSForm, consultez l'ar
 </table>
 </section>
 <section id="bonnes-pratiques-pour-nommer-les-choix-de-reponse">
-<h2>Bonnes pratiques pour nommer les choix de réponse<a class="headerlink" href="#bonnes-pratiques-pour-nommer-les-choix-de-reponse" title="Lien vers cette rubrique">¶</a></h2>
+<span id="bonnes-pratiques-pour-nommer-les-choix-de-réponse"></span><h2>Bonnes pratiques pour nommer les choix de réponse<a class="headerlink" href="#bonnes-pratiques-pour-nommer-les-choix-de-reponse" title="Lien vers cette rubrique">¶</a></h2>
 <p>Lorsque les données sont téléchargées au <a class="reference external" href="https://support.kobotoolbox.org/fr/export_download.html#value-and-header-format">format pour les valeurs et l’en-tête XML</a>, chaque question apparaît comme une variable ou une colonne distincte dans la base de données. Les valeurs dans chaque colonne correspondent aux <strong>noms des choix</strong> définis dans l’onglet <code class="docutils literal notranslate"><span class="pre">choices</span></code>, et non aux libellés complets affichés aux répondants. Ce format est recommandé pour l’analyse, car il fournit des noms de variables courts et cohérents ainsi que des valeurs codées plus faciles à utiliser que les libellés complets des questions ou des options.</p>
 <p>Lors de la définition des noms de choix :</p>
 <ul class="simple">
@@ -288,9 +288,9 @@ Pour en savoir plus sur la création de formulaires avec XLSForm, consultez l'ar
 </ul>
 </section>
 <section id="gerer-les-listes-de-choix-dans-xlsform">
-<h2>Gérer les listes de choix dans XLSForm<a class="headerlink" href="#gerer-les-listes-de-choix-dans-xlsform" title="Lien vers cette rubrique">¶</a></h2>
+<span id="gérer-les-listes-de-choix-dans-xlsform"></span><h2>Gérer les listes de choix dans XLSForm<a class="headerlink" href="#gerer-les-listes-de-choix-dans-xlsform" title="Lien vers cette rubrique">¶</a></h2>
 <section id="reutiliser-des-listes-de-choix">
-<h3>Réutiliser des listes de choix<a class="headerlink" href="#reutiliser-des-listes-de-choix" title="Lien vers cette rubrique">¶</a></h3>
+<span id="réutiliser-des-listes-de-choix"></span><h3>Réutiliser des listes de choix<a class="headerlink" href="#reutiliser-des-listes-de-choix" title="Lien vers cette rubrique">¶</a></h3>
 <p>L’utilisation de <code class="docutils literal notranslate"><span class="pre">list_name</span></code> dans XLSForm vous permet de <strong>réutiliser facilement des listes de choix</strong> pour plusieurs questions, sans avoir à les ressaisir manuellement. Par exemple, vous pouvez créer une liste de choix <code class="docutils literal notranslate"><span class="pre">yes_no</span></code> et l’appliquer à toutes vos questions Oui/Non. Cela permet de créer des formulaires de manière plus efficace et cohérente.</p>
 </section>
 <section id="traduire-des-listes-de-choix">
@@ -301,7 +301,7 @@ Pour en savoir plus sur l'ajout de traductions dans XLSForm, consultez l'article
 </p>
 </section>
 <section id="fichiers-media-comme-choix-de-reponse">
-<h3>Fichiers média comme choix de réponse<a class="headerlink" href="#fichiers-media-comme-choix-de-reponse" title="Lien vers cette rubrique">¶</a></h3>
+<span id="fichiers-média-comme-choix-de-réponse"></span><h3>Fichiers média comme choix de réponse<a class="headerlink" href="#fichiers-media-comme-choix-de-reponse" title="Lien vers cette rubrique">¶</a></h3>
 <p>En plus du texte, les choix de réponse dans XLSForm peuvent également être des <strong>fichiers média</strong>, tels que des images, des fichiers audio ou des vidéos. Cela enrichit l’expérience de l’enquête en fournissant des repères visuels ou sonores aux répondants.</p>
 <p class="note">
 Pour en savoir plus sur l'utilisation de fichiers média comme choix de réponse, consultez l'article <a href="media.html">Ajouter des médias à un XLSForm</a>.
@@ -323,7 +323,7 @@ Pour plus d'informations, consultez l'article <a href="form_settings_xls.html">P
 </p>
 </section>
 <section id="gerer-les-longues-listes-de-choix">
-<h3>Gérer les longues listes de choix<a class="headerlink" href="#gerer-les-longues-listes-de-choix" title="Lien vers cette rubrique">¶</a></h3>
+<span id="gérer-les-longues-listes-de-choix"></span><h3>Gérer les longues listes de choix<a class="headerlink" href="#gerer-les-longues-listes-de-choix" title="Lien vers cette rubrique">¶</a></h3>
 <p>Pour les listes de choix très longues, contenant des centaines ou des milliers d’options, il est recommandé d’utiliser les types de questions <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span></code> ou <code class="docutils literal notranslate"><span class="pre">select_multiple_from_file</span></code>, qui relient une question à un <strong>fichier externe</strong> contenant la liste de choix. Cette approche est plus efficace que la saisie manuelle des choix dans le XLSForm, permet d’éviter des temps de chargement lents et des XLSForms volumineux, et simplifie la gestion ou la modification de listes d’options étendues.</p>
 <p class="note">
 Pour en savoir plus sur les listes de choix externes dans XLSForm, consultez l'article <a href="select_from_file_xls.html">Sélectionner des options à partir d'un fichier externe avec XLSForm</a>.

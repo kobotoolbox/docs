@@ -182,12 +182,12 @@
         <section class="page__body" role="main">
           
   <section id="collecter-des-donnees-gps-avec-kobotoolbox">
-<h1>Collecter des données GPS avec KoboToolbox<a class="headerlink" href="#collecter-des-donnees-gps-avec-kobotoolbox" title="Lien vers cette rubrique">¶</a></h1>
+<span id="collecter-des-données-gps-avec-kobotoolbox"></span><h1>Collecter des données GPS avec KoboToolbox<a class="headerlink" href="#collecter-des-donnees-gps-avec-kobotoolbox" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/75a01d18e539cff0694a03ac2ffe032abb6a14d5/source/collect_gps.md" class="reference">23 Apr 2026</a></p>
 <p>KoboToolbox vous permet de collecter des données GPS dans vos formulaires, y compris en mode hors ligne. Les questions GPS peuvent capturer <strong>un emplacement unique, un itinéraire ou une zone</strong> lors de la collecte de données. Cela est utile pour des tâches telles que la cartographie d’infrastructures, le suivi de visites terrain, la surveillance de sites environnementaux ou l’enregistrement de lieux de service. Les données GPS peuvent être collectées à la fois avec des <a class="reference internal" href="#../fr/data_through_webforms.html"><span class="xref myst">formulaires web</span></a> et avec <a class="reference internal" href="#../fr/data_collection_kobocollect.html"><span class="xref myst">KoboCollect</span></a>.</p>
 <p>Cet article explique comment collecter des données GPS dans KoboToolbox, notamment les types de questions GPS disponibles, la façon dont les données GPS sont collectées dans les formulaires web et dans KoboCollect, comment utiliser les données GPS dans une logique de formulaire avancée, comment gérer les données GPS dans KoboToolbox, et comment résoudre les problèmes GPS courants.</p>
 <section id="configurer-votre-formulaire-pour-collecter-des-donnees-gps">
-<h2>Configurer votre formulaire pour collecter des données GPS<a class="headerlink" href="#configurer-votre-formulaire-pour-collecter-des-donnees-gps" title="Lien vers cette rubrique">¶</a></h2>
+<span id="configurer-votre-formulaire-pour-collecter-des-données-gps"></span><h2>Configurer votre formulaire pour collecter des données GPS<a class="headerlink" href="#configurer-votre-formulaire-pour-collecter-des-donnees-gps" title="Lien vers cette rubrique">¶</a></h2>
 <p>KoboToolbox propose trois types de questions GPS pour collecter des données géographiques directement dans un formulaire, plusieurs options de métadonnées qui collectent automatiquement des informations de localisation en arrière-plan, ainsi que des questions à choix multiple basées sur une carte dans XLSForm.</p>
 <section id="types-de-questions-gps">
 <h3>Types de questions GPS<a class="headerlink" href="#types-de-questions-gps" title="Lien vers cette rubrique">¶</a></h3>
@@ -219,7 +219,7 @@ Pour en savoir plus sur l'ajout de questions GPS à vos formulaires, consultez l
 </p>
 </section>
 <section id="questions-de-metadonnees-gps">
-<h3>Questions de métadonnées GPS<a class="headerlink" href="#questions-de-metadonnees-gps" title="Lien vers cette rubrique">¶</a></h3>
+<span id="questions-de-métadonnées-gps"></span><h3>Questions de métadonnées GPS<a class="headerlink" href="#questions-de-metadonnees-gps" title="Lien vers cette rubrique">¶</a></h3>
 <p>Les questions de métadonnées GPS ne sont pas visibles par les répondants. Lorsqu’elles sont activées, elles collectent automatiquement des données GPS en arrière-plan pendant la complétion du formulaire. Les types de questions de métadonnées suivants sont disponibles dans KoboToolbox :</p>
 <table class="docutils align-default">
 <thead>
@@ -248,7 +248,7 @@ Pour en savoir plus sur l'ajout de métadonnées GPS à vos formulaires, consult
 </p>
 </section>
 <section id="selectionner-des-options-a-partir-d-une-carte">
-<h3>Sélectionner des options à partir d’une carte<a class="headerlink" href="#selectionner-des-options-a-partir-d-une-carte" title="Lien vers cette rubrique">¶</a></h3>
+<span id="sélectionner-des-options-à-partir-dune-carte"></span><h3>Sélectionner des options à partir d’une carte<a class="headerlink" href="#selectionner-des-options-a-partir-d-une-carte" title="Lien vers cette rubrique">¶</a></h3>
 <p>En plus de collecter des coordonnées GPS, vous pouvez également permettre aux répondants de sélectionner des emplacements prédéfinis sur une carte dans XLSForm. Cette fonctionnalité est configurée à l’aide d’une <strong>question à choix multiple</strong> avec l’apparence <code class="docutils literal notranslate"><span class="pre">map</span></code> ou <code class="docutils literal notranslate"><span class="pre">quick</span> <span class="pre">map</span></code>, ainsi qu’une colonne <code class="docutils literal notranslate"><span class="pre">geometry</span></code> dans l’onglet choices qui stocke les coordonnées de chaque choix.</p>
 <p class="note">
 Pour en savoir plus sur la configuration de questions de sélection à partir d'une carte, consultez l'article <a href="../fr/select_from_map_xls.html">Sélectionner des options à partir d'une carte</a>.
@@ -256,7 +256,7 @@ Pour en savoir plus sur la configuration de questions de sélection à partir d'
 </section>
 </section>
 <section id="collecter-des-donnees-gps">
-<h2>Collecter des données GPS<a class="headerlink" href="#collecter-des-donnees-gps" title="Lien vers cette rubrique">¶</a></h2>
+<span id="collecter-des-données-gps"></span><h2>Collecter des données GPS<a class="headerlink" href="#collecter-des-donnees-gps" title="Lien vers cette rubrique">¶</a></h2>
 <p>Les données GPS peuvent être collectées à la fois dans des <a class="reference internal" href="#../fr/data_through_webforms.html"><span class="xref myst">formulaires web</span></a> et dans l’application <a class="reference internal" href="#../fr/data_collection_kobocollect.html"><span class="xref myst">KoboCollect</span></a>, mais le processus de collecte diffère entre les deux.</p>
 <section id="formulaires-web">
 <h3>Formulaires web<a class="headerlink" href="#formulaires-web" title="Lien vers cette rubrique">¶</a></h3>
@@ -313,10 +313,10 @@ Pour en savoir plus sur les paramètres de carte de KoboCollect, consultez l'art
 </section>
 </section>
 <section id="ameliorer-la-precision-gps">
-<h2>Améliorer la précision GPS<a class="headerlink" href="#ameliorer-la-precision-gps" title="Lien vers cette rubrique">¶</a></h2>
+<span id="améliorer-la-précision-gps"></span><h2>Améliorer la précision GPS<a class="headerlink" href="#ameliorer-la-precision-gps" title="Lien vers cette rubrique">¶</a></h2>
 <p>La précision GPS dépend à la fois de l’appareil et de l’environnement. Elle peut être affectée par des facteurs tels que l’activation du GPS sur l’appareil et la présence d’un capteur GPS intégré, la date à laquelle l’appareil a déterminé sa position pour la dernière fois, l’utilisation de services de localisation par satellite ou par réseau, et les conditions environnementales telles que la couverture nuageuse ou la proximité de bâtiments et d’arbres.</p>
 <section id="parametres-gps">
-<h3>Paramètres GPS<a class="headerlink" href="#parametres-gps" title="Lien vers cette rubrique">¶</a></h3>
+<span id="paramètres-gps"></span><h3>Paramètres GPS<a class="headerlink" href="#parametres-gps" title="Lien vers cette rubrique">¶</a></h3>
 <p>Lors de la création de formulaires dans XLSForm, vous pouvez utiliser des <a class="reference internal" href="#../fr/question_options_xls.html#question-parameters"><span class="xref myst">paramètres</span></a> pour contrôler la précision GPS de manière plus précise.</p>
 <p>Les paramètres courants sont les suivants :</p>
 <table class="docutils align-default">
@@ -343,7 +343,7 @@ Pour la plupart des flux de travail, une valeur de <strong>capture-accuracy</str
 </p>
 </section>
 <section id="recommandations-pour-ameliorer-la-precision-gps">
-<h3>Recommandations pour améliorer la précision GPS<a class="headerlink" href="#recommandations-pour-ameliorer-la-precision-gps" title="Lien vers cette rubrique">¶</a></h3>
+<span id="recommandations-pour-améliorer-la-précision-gps"></span><h3>Recommandations pour améliorer la précision GPS<a class="headerlink" href="#recommandations-pour-ameliorer-la-precision-gps" title="Lien vers cette rubrique">¶</a></h3>
 <p>Pour améliorer la précision GPS :</p>
 <ul class="simple">
 <li><p>Collectez des données en extérieur dans un espace dégagé avec une vue dégagée du ciel</p></li>
@@ -355,7 +355,7 @@ Pour la plupart des flux de travail, une valeur de <strong>capture-accuracy</str
 </section>
 </section>
 <section id="logique-de-formulaire-avancee-avec-les-donnees-gps">
-<h2>Logique de formulaire avancée avec les données GPS<a class="headerlink" href="#logique-de-formulaire-avancee-avec-les-donnees-gps" title="Lien vers cette rubrique">¶</a></h2>
+<span id="logique-de-formulaire-avancée-avec-les-données-gps"></span><h2>Logique de formulaire avancée avec les données GPS<a class="headerlink" href="#logique-de-formulaire-avancee-avec-les-donnees-gps" title="Lien vers cette rubrique">¶</a></h2>
 <p>KoboToolbox prend en charge une logique de formulaire avancée avec les données GPS dans XLSForm. Par exemple, vous pouvez utiliser des fonctions GPS dans des calculs, des contraintes et une logique de saut pour mesurer une distance, un périmètre ou une superficie, ou pour vérifier si un emplacement se trouve dans une zone délimitée.</p>
 <p><img alt="Calculer la distance d'un itinéraire" src="_images/calculate1.png" /></p>
 <p>Les fonctions GPS courantes sont les suivantes :</p>
@@ -382,10 +382,10 @@ Pour en savoir plus sur les fonctions permettant de manipuler des données GPS d
 </p>
 </section>
 <section id="gerer-les-donnees-gps">
-<h2>Gérer les données GPS<a class="headerlink" href="#gerer-les-donnees-gps" title="Lien vers cette rubrique">¶</a></h2>
+<span id="gérer-les-données-gps"></span><h2>Gérer les données GPS<a class="headerlink" href="#gerer-les-donnees-gps" title="Lien vers cette rubrique">¶</a></h2>
 <p>Après la collecte, les données GPS peuvent être consultées, cartographiées et exportées dans KoboToolbox.</p>
 <section id="afficher-les-donnees-gps-dans-le-tableau-de-donnees">
-<h3>Afficher les données GPS dans le tableau de données<a class="headerlink" href="#afficher-les-donnees-gps-dans-le-tableau-de-donnees" title="Lien vers cette rubrique">¶</a></h3>
+<span id="afficher-les-données-gps-dans-le-tableau-de-données"></span><h3>Afficher les données GPS dans le tableau de données<a class="headerlink" href="#afficher-les-donnees-gps-dans-le-tableau-de-donnees" title="Lien vers cette rubrique">¶</a></h3>
 <p>Les réponses GPS apparaissent dans le tableau de données comme les autres réponses du formulaire. Un point GPS unique est stocké sous la forme de quatre valeurs séparées par des espaces dans ce format : <code class="docutils literal notranslate"><span class="pre">latitude</span> <span class="pre">longitude</span> <span class="pre">altitude</span> <span class="pre">accuracy</span></code>.</p>
 <p>Pour les questions de type Ligne et Zone, plusieurs points GPS sont stockés dans le même format et séparés par des points-virgules.</p>
 <p class="note">
@@ -393,14 +393,14 @@ Pour en savoir plus sur la consultation de vos données dans le tableau de donn�
 </p>
 </section>
 <section id="cartographier-les-donnees-gps-dans-kobotoolbox">
-<h3>Cartographier les données GPS dans KoboToolbox<a class="headerlink" href="#cartographier-les-donnees-gps-dans-kobotoolbox" title="Lien vers cette rubrique">¶</a></h3>
+<span id="cartographier-les-données-gps-dans-kobotoolbox"></span><h3>Cartographier les données GPS dans KoboToolbox<a class="headerlink" href="#cartographier-les-donnees-gps-dans-kobotoolbox" title="Lien vers cette rubrique">¶</a></h3>
 <p>KoboToolbox propose un mode <strong>Carte</strong> intégré pour visualiser les points GPS uniques. Cela facilite la consultation des emplacements où les soumissions ont été collectées, l’exploration des tendances spatiales et une meilleure compréhension de la distribution géographique de vos données.</p>
 <p class="note">
 Pour en savoir plus sur le mode <strong>Carte</strong> dans KoboToolbox, consultez l'article <a href="../fr/mapping_gps.html">Cartographier vos données GPS</a>.
 </p>
 </section>
 <section id="exporter-les-donnees-gps">
-<h3>Exporter les données GPS<a class="headerlink" href="#exporter-les-donnees-gps" title="Lien vers cette rubrique">¶</a></h3>
+<span id="exporter-les-données-gps"></span><h3>Exporter les données GPS<a class="headerlink" href="#exporter-les-donnees-gps" title="Lien vers cette rubrique">¶</a></h3>
 <p>Vous pouvez également exporter des données GPS depuis KoboToolbox pour les utiliser dans des logiciels externes. Les formats d’export disponibles couvrent différents flux de travail, de la révision et du nettoyage des données à la cartographie et à l’analyse géospatiale :</p>
 <ul class="simple">
 <li><p><strong>Les exports CSV et XLS</strong> sont utiles pour travailler avec des données GPS dans un logiciel de tableur et peuvent également être importés dans de nombreux outils SIG, bien qu’ils nécessitent souvent une configuration supplémentaire, comme la définition des champs de coordonnées ou d’un système de référence de coordonnées.</p></li>
@@ -413,7 +413,7 @@ Pour en savoir plus sur l'export de vos données GPS pour une analyse externe, c
 </section>
 </section>
 <section id="resolution-de-problemes">
-<h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="résolution-de-problèmes"></span><h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
 <details>
 <summary><strong>La localisation GPS n'est pas capturée</strong></summary>
 Vérifiez que les services de localisation et le GPS sont activés sur l'appareil et que l'appareil dispose d'un capteur GPS. Vous pouvez également tester le GPS avec une autre application pour confirmer que l'appareil peut déterminer une position. Pour de meilleurs résultats, déplacez-vous en extérieur, attendez un signal plus fort, éloignez-vous des bâtiments, des arbres et autres obstacles, et laissez à l'appareil le temps nécessaire pour obtenir sa première position GPS.

@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Connecting KoboToolbox data to R &#8212; KoboToolbox  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <link rel="stylesheet" type="text/css" href="_static/kpi-icons/k-icons.css?v=03949c24" />
+    <link rel="stylesheet" type="text/css" href="_static/tabler-icons/tabler-outline.css?v=a04e315d" />
+    <link rel="stylesheet" type="text/css" href="_static/tabler-icons/tabler-filled.css?v=9a38cb06" />
+    <link rel="stylesheet" type="text/css" href="_static/css/kobo_theme.css?v=9dd41bf4" />
+    <script src="_static/documentation_options.js?v=5929fcd5"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/js/breadcrumbs.js?v=9ae47d6d"></script>
+    <script src="_static/js/common.js?v=8aedd183"></script>
+    <script src="_static/js/custom_sections.js?v=264c28fe"></script>
+    <script src="_static/js/home_page_toc.js?v=4ce414b4"></script>
+    <script src="_static/js/scrollto.js?v=a0f31cce"></script>
+    <script src="_static/js/sidebar_toc.js?v=87ef0ba3"></script>
+    <script src="_static/js/smoothscroll-polyfill.js?v=181acdfa"></script>
+    <script src="_static/js/table-sheets.js?v=ddec4369"></script>
+    <link rel="icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Using the KoboToolbox REST Services" href="rest_services.html" />
+    <link rel="prev" title="Connecting KoboToolbox data to Google Sheets and Data Studio" href="connect_google.html" />
+  <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
+  
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+
+  </head><body>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+<header role="banner" class="main-header" id="main-header">
+  <div class="main-header__logo-container">
+    <a href="https://kobotoolbox.org/#home" class="main-header__logo">
+      <img src="./_static/images/kobologo.svg" alt="KoboToolbox">
+    </a>
+  </div>
+  <nav class="main-header__navigation" role="navigation">
+    <ul>
+      <li><a href=index.html>Home</a></li>
+      <li><a href="https://support.kobotoolbox.org/about_kobotoolbox.html">About us</a></li>
+      <li><a href="https://support.kobotoolbox.org/quick_start.html">Get started</a></li>
+      <li><a href="https://academy.kobotoolbox.org">Academy</a></li>
+      <li><a href="https://community.kobotoolbox.org">Community Forum</a></li>
+      <li class="current"><a href="https://www.kobotoolbox.org/help">Help</a></li>
+      <li class="language-picker">
+        <details class="language-picker__details">
+          <summary class="language-picker__toggle" aria-label="Language">
+            <span class="language-picker__current">English</span>
+            <span class="language-picker__caret" aria-hidden="true"></span>
+          </summary>
+          <ul class="language-picker__menu" role="menu">
+            
+            <li role="none">
+              <a
+                role="menuitem"
+                class="language-picker__option language-picker__option--active"
+                href="connect_r.html"
+                lang="en"
+                hreflang="en"
+                aria-current="page"
+              >
+                English
+              </a>
+            </li>
+            
+            <li role="none">
+              <a
+                role="menuitem"
+                class="language-picker__option "
+                href="es/connect_r.html"
+                lang="es"
+                hreflang="es"
+                
+              >
+                Español
+              </a>
+            </li>
+            
+            <li role="none">
+              <a
+                role="menuitem"
+                class="language-picker__option "
+                href="fr/connect_r.html"
+                lang="fr"
+                hreflang="fr"
+                
+              >
+                Français
+              </a>
+            </li>
+            
+          </ul>
+        </details>
+      </li>
+      <li>
+        <a class="button" href="https://kobotoolbox.org/donate">Donate</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+
+
+
+<section class="main-search " role="search">
+  <!-- copied and heavily changed content of built-in `searchbox.html` -->
+  <div class="wrapper">
+    <div class="main-search__content">
+      <h1 class="main-search__header">What do you need help with?</h1>
+
+      <p class="main-search__paragraph">Search the knowledge base, browse our resources, and visit our Community Forum for more detailed information</p>
+
+      <form id="searchbox" class="main-search__form" action="search.html" method="get">
+        <div class="main-search__text-box-wrapper">
+          <input
+            class="main-search__text-box"
+            type="search"
+            name="q"
+            aria-labelledby="searchlabel"
+            placeholder="Type your search here"
+          />
+
+          <i class="icon main-search__magnifying-glass">
+            <svg height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg"><path d="m12.1784138 21.3122241c-2.43872739 0-4.73283609-.9499163-6.45760394-2.6746841-1.72629015-1.7247679-2.67620642-4.0188766-2.67620642-6.4591262 0-2.43872739.94991627-4.73283609 2.67620642-6.45760394 1.72476785-1.72629015 4.01887655-2.67620642 6.45760394-2.67620642 2.4387273 0 4.732836.94991627 6.4576039 2.67620642 1.7262901 1.72476785 2.6762064 4.01887655 2.6762064 6.45760394 0 2.4402496-.9499163 4.7343583-2.6762064 6.4591262-1.7247679 1.7247678-4.0188766 2.6746841-6.4576039 2.6746841zm17.8215862 6.5352413-8.2082509-8.2097732c1.6562643-2.1251332 2.5650784-4.7206576 2.5650784-7.4592784 0-3.25315881-1.2680773-6.31146297-3.5682752-8.61013857-2.2986756-2.3017202-5.3569798-3.56827523-8.6101385-3.56827523-3.25315881 0-6.31146297 1.26655503-8.61013857 3.56827523-2.3001979 2.2986756-3.56827523 5.35697976-3.56827523 8.61013857 0 3.2531587 1.26807733 6.3114629 3.56827523 8.6101385 2.2986756 2.3017202 5.35697976 3.5682752 8.61013857 3.5682752 2.7386208 0 5.3341452-.9072918 7.4592784-2.5666007l8.2097732 8.2097732z"/></svg>
+          </i>
+        </div>
+
+        <input class="main-search__submit-button" type="submit" value="Go">
+      </form>
+    </div>
+
+    <i class="icon main-search__arrow" id="main-search-arrow">
+      <svg height="15" viewBox="0 0 23 15" width="23" xmlns="http://www.w3.org/2000/svg"><path d="m713.912501 361.966876c.534917-.563071 1.402814-.61966 2.004099-.154391l.116524.100016 11.144736 10.587496-11.144736 10.587502c-.600609.570579-1.550044.546234-2.120623-.054375-.534918-.563071-.546954-1.432728-.051482-2.009378l.105857-.111245 8.854124-8.412504-8.854124-8.412498c-.563071-.534917-.61966-1.402814-.154391-2.004099z" transform="matrix(0 1 -1 0 383.838929 -712.838929)"/></svg>
+    </i>
+  </div>
+
+  <script>$('#searchbox').show(0);</script>
+</section>
+
+<div class="page page--has-sidebar " id="connect_r">
+  <div class="page__wrapper">
+      <section class="page__content">
+        
+        <nav class="page__breadcrumbs">
+          <ul id="breadcrumbslist" class="breadcrumbs"><li class="breadcrumb breadcrumb--home">
+            <a href="index.html"><svg height="12" viewBox="0 0 13 12" width="13" xmlns="http://www.w3.org/2000/svg"><path d="m6.19047619.012c.33057143 0 .64133333.1248.87533333.351l4.95176188 4.788c.3553334.3444.4611905.858.2692857 1.3074-.1912857.4512-.6407142.7416-1.144.7416h-.6190476v4.2c0 .3312-.2773333.6-.6190476.6h-2.47619047v-3h-2.47619048v3h-2.47619047c-.34171429 0-.61904762-.2688-.61904762-.6v-4.2h-.61904762c-.50204762 0-.95085714-.2904-1.14338095-.7404-.19252381-.4506-.08666667-.9642.26804762-1.308l4.95299999-4.7892c.23338096-.2256.54414286-.3504.87471429-.3504z"/></svg>Home</a>
+          </li></ul>
+        </nav>
+        
+
+        <section class="page__body" role="main">
+          
+  <section id="connecting-kobotoolbox-data-to-r">
+<h1>Connecting KoboToolbox data to R<a class="headerlink" href="#connecting-kobotoolbox-data-to-r" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/connect_r.md" class="reference">19 Nov 2026</a></p>
+<p>R is an open source programming language widely used for statistical analysis, data processing, and visualization. You can connect R to KoboToolbox through the KoboToolbox <a class="reference external" href="https://support.kobotoolbox.org/api.html">Application Programming Interface (API)</a> to retrieve project data without manually downloading files.</p>
+<p>There are different ways to connect KoboToolbox to R. You can send API requests directly using R packages such as <code class="docutils literal notranslate"><span class="pre">httr</span></code> and <code class="docutils literal notranslate"><span class="pre">jsonlite</span></code>, or use community-developed packages that simplify the connection and data retrieval process.</p>
+<p>This article covers connecting KoboToolbox data to R using direct API requests and community-developed R packages, along with retrieving and updating project data.</p>
+<section id="using-the-kobotoolbox-api-in-r">
+<h2>Using the KoboToolbox API in R<a class="headerlink" href="#using-the-kobotoolbox-api-in-r" title="Link to this heading">¶</a></h2>
+<p>The KoboToolbox API allows external applications, including R, to access project data. By connecting R to the API, you can:</p>
+<ul class="simple">
+<li><p>Retrieve project submissions directly into R for analysis.</p></li>
+<li><p>Filter submissions based on specific conditions.</p></li>
+<li><p>Combine KoboToolbox data with other datasets.</p></li>
+<li><p>Automate data retrieval for recurring reports and analyses.</p></li>
+<li><p>Work with repeat group data, multilingual forms, and geographic data using compatible R packages.</p></li>
+</ul>
+<section id="choosing-a-connection-method">
+<h3>Choosing a connection method<a class="headerlink" href="#choosing-a-connection-method" title="Link to this heading">¶</a></h3>
+<p>There are two main approaches to connecting R to the KoboToolbox API:</p>
+<ul class="simple">
+<li><p><strong>Direct API requests:</strong> Use R packages to send requests to the KoboToolbox API data endpoint and process the returned JSON data. This approach provides greater control over how data is retrieved and processed but requires more programming knowledge.</p></li>
+<li><p><strong>Community-developed R packages:</strong> Use packages specifically designed to work with KoboToolbox, such as <code class="docutils literal notranslate"><span class="pre">robotoolbox</span></code> or <code class="docutils literal notranslate"><span class="pre">KoboconnectR</span></code>. These provide functions for connecting to the API and retrieving data with fewer lines of code.</p></li>
+</ul>
+<p>Both approaches use the data endpoint of the KoboToolbox API and require appropriate access to your project data.</p>
+<p class="note">
+  For more information about the data endpoint of the KoboToolbox API, see <a href="https://support.kobotoolbox.org/data_endpoint.html">Using the API data endpoint</a>.
+</p>
+</section>
+<section id="preparing-the-connection">
+<h3>Preparing the connection<a class="headerlink" href="#preparing-the-connection" title="Link to this heading">¶</a></h3>
+<p>To connect R to KoboToolbox, you will typically need:</p>
+<ul class="simple">
+<li><p><strong>Server URL:</strong> The web address of the KoboToolbox server where your account is hosted.</p></li>
+<li><p><strong>API key:</strong> A personal authentication token that allows R to access KoboToolbox through the API.</p></li>
+<li><p><strong>Project asset UID:</strong> A unique identifier for the KoboToolbox project you want to access.</p></li>
+</ul>
+<p class="note">
+  For instructions on finding these details, see <a href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
+</p>
+<p>You will also need R installed on your computer. You can use R directly or through an integrated development environment such as RStudio.</p>
+<p class="note">
+  <strong>Note:</strong> Keep your API key confidential. Avoid including it in scripts that may be shared publicly. You can store your credentials in an <code>.Renviron</code> file and access them through environment variables in R.
+</p>
+</section>
+</section>
+<section id="connecting-to-r-using-direct-api-requests">
+<h2>Connecting to R using direct API requests<a class="headerlink" href="#connecting-to-r-using-direct-api-requests" title="Link to this heading">¶</a></h2>
+<p>You can retrieve KoboToolbox project data using R packages that support HTTP requests and JSON processing.</p>
+<p>For example:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">httr</span></code> allows R to send requests to the KoboToolbox API.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jsonlite</span></code> converts JSON responses into data structures that can be processed in R.</p></li>
+</ul>
+<p>This approach is useful when you want more control over API requests, including authentication, filtering, and pagination.</p>
+<section id="installing-the-required-packages">
+<h3>Installing the required packages<a class="headerlink" href="#installing-the-required-packages" title="Link to this heading">¶</a></h3>
+<p>Open R or RStudio and install the packages:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">packages</span><span class="p">(</span><span class="n">c</span><span class="p">(</span><span class="s2">"httr"</span><span class="p">,</span> <span class="s2">"jsonlite"</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Then load them into your R session:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">httr</span><span class="p">)</span>
+<span class="n">library</span><span class="p">(</span><span class="n">jsonlite</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="retrieving-project-submissions">
+<h3>Retrieving project submissions<a class="headerlink" href="#retrieving-project-submissions" title="Link to this heading">¶</a></h3>
+<p>The KoboToolbox API data endpoint provides access to submissions in JSON format.</p>
+<p>The following example connects to a KoboToolbox project and retrieves its submissions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>library(httr)
+library(jsonlite)
+
+# Configure your connection
+api_url &lt;- "https://kf.kobotoolbox.org/api/v2/assets/YOUR_ASSET_UID/data/"
+token &lt;- Sys.getenv("KOBOTOOLBOX_TOKEN")
+
+# Send the API request
+response &lt;- GET(
+  api_url,
+  add_headers(Authorization = paste("Token", token)),
+  query = list(format = "json")
+)
+
+# Check for errors in the API response (no output if successful)
+stop_for_status(response)
+
+# Convert the JSON response into R data
+data &lt;- fromJSON(
+  content(response, as = "text", encoding = "UTF-8")
+)
+
+# View the submissions
+head(data$results) 
+</pre></div>
+</div>
+<p>Replace <code class="docutils literal notranslate"><span class="pre">YOUR_ASSET_UID</span></code> with your project asset UID and update the server URL if needed. The example retrieves the API key from an environment variable named <code class="docutils literal notranslate"><span class="pre">KOBOTOOLBOX_TOKEN</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">GET()</span></code> function sends the request to KoboToolbox, while <code class="docutils literal notranslate"><span class="pre">fromJSON()</span></code> converts the response into data that R can process.</p>
+<p class="note">
+  <strong>Note:</strong> The data endpoint uses pagination, meaning that a single request may not return all submissions. On KoboToolbox's public servers, the default is 100 submissions per request, with a maximum of 1,000. For more information, see <a href="https://support.kobotoolbox.org/data_endpoint.html">Using the API data endpoint</a>.
+</p>
+</section>
+<section id="retrieving-all-submissions-with-pagination">
+<h3>Retrieving all submissions with pagination<a class="headerlink" href="#retrieving-all-submissions-with-pagination" title="Link to this heading">¶</a></h3>
+<p>For projects containing more submissions than the limit per request, you can use a loop to retrieve data in batches.</p>
+<p>The following example retrieves submissions until no additional pages remain:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>library(httr)
+library(jsonlite)
+
+api_url &lt;- "https://kf.kobotoolbox.org/api/v2/assets/YOUR_ASSET_UID/data/"
+token &lt;- Sys.getenv("KOBOTOOLBOX_TOKEN")
+
+start &lt;- 0
+limit &lt;- 100
+all_submissions &lt;- list()
+
+repeat {
+  response &lt;- GET(
+    api_url,
+    add_headers(Authorization = paste("Token", token)),
+    query = list(
+      format = "json",
+      limit = limit,
+      start = start
+    )
+  )
+
+  stop_for_status(response)
+
+  data &lt;- fromJSON(
+    content(response, as = "text", encoding = "UTF-8"),
+    simplifyVector = FALSE
+  )
+
+  all_submissions &lt;- c(all_submissions, data$results)
+
+  cat("Fetched", length(data$results),
+      "records (start =", start, ")\n")
+
+  # Stop when the page is empty or contains fewer records than the limit
+  if (n == 0 || n &lt; limit) break
+
+  start &lt;- start + limit
+}
+
+cat("Total submissions:", length(all_submissions), "\n")
+
+head(data$results)
+</pre></div>
+</div>
+<p>This script retrieves submissions in batches of 100, stores the results in a list, and continues until all available pages have been retrieved.</p>
+<p>You can then process the collected records using R functions or other packages, depending on your analysis needs.</p>
+</section>
+</section>
+<section id="connecting-to-r-using-robotoolbox">
+<h2>Connecting to R using robotoolbox<a class="headerlink" href="#connecting-to-r-using-robotoolbox" title="Link to this heading">¶</a></h2>
+<p>The <a class="reference external" href="https://dickoa.gitlab.io/robotoolbox/">robotoolbox</a> package is a community-developed R package designed to simplify access to the KoboToolbox API.</p>
+<p>It provides functions for authenticating requests, retrieving submissions, and processing KoboToolbox data without manually constructing API requests or handling pagination.</p>
+<p>The package also supports several KoboToolbox-specific features:</p>
+<ul class="simple">
+<li><p><strong>Multilingual forms:</strong> Work with question and choice labels in different form languages.</p></li>
+<li><p><strong>Repeat groups:</strong> Retrieve related submission tables while preserving their relationships.</p></li>
+<li><p><strong>Geographic data:</strong> Process geopoint, geotrace, and geoshape responses for use with spatial analysis and mapping tools.</p></li>
+<li><p><strong>Additional data:</strong> Access audit logs and media attachments through supported functions.</p></li>
+</ul>
+<section id="installing-and-configuring-robotoolbox">
+<h3>Installing and configuring robotoolbox<a class="headerlink" href="#installing-and-configuring-robotoolbox" title="Link to this heading">¶</a></h3>
+<p>To install <code class="docutils literal notranslate"><span class="pre">robotoolbox</span></code>, run:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">install</span><span class="o">.</span><span class="n">packages</span><span class="p">(</span><span class="s2">"robotoolbox"</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Load the package and configure your KoboToolbox connection:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">library</span><span class="p">(</span><span class="n">robotoolbox</span><span class="p">)</span>
+
+<span class="n">kobo_setup</span><span class="p">(</span>
+  <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://kf.kobotoolbox.org"</span><span class="p">,</span>
+  <span class="n">token</span> <span class="o">=</span> <span class="n">Sys</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">"KOBOTOOLBOX_TOKEN"</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>Replace the server URL if your account is hosted on the European Union KoboToolbox Server or a private server.</p>
+<p>The example retrieves your API key from an environment variable instead of including it directly in the script.</p>
+</section>
+<section id="id1">
+<span id="retrieving-project-submissions-1"></span><h3>Retrieving project submissions<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<p>Once connected, you can list the projects available to your account:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kobo_asset_list</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>To select a specific project, use its asset UID:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">asset</span> <span class="o">&lt;-</span> <span class="n">kobo_asset</span><span class="p">(</span><span class="s2">"YOUR_ASSET_UID"</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Then retrieve the submissions:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">&lt;-</span> <span class="n">kobo_data</span><span class="p">(</span><span class="n">asset</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>For forms without repeat groups, the function returns the submissions as a data frame. For forms containing repeat groups, it returns related tables using the <code class="docutils literal notranslate"><span class="pre">dm</span></code> package.</p>
+<p>To preview data returned as a data frame, use:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span># View the main submissions
+head(data)
+
+# View a repeat group
+head(data$household_members)
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">robotoolbox</span></code> package handles pagination automatically, allowing you to retrieve submissions from larger projects without manually requesting each batch.</p>
+</section>
+<section id="filtering-submissions">
+<h3>Filtering submissions<a class="headerlink" href="#filtering-submissions" title="Link to this heading">¶</a></h3>
+<p>You can also use <code class="docutils literal notranslate"><span class="pre">robotoolbox</span></code> to retrieve submissions that meet specific conditions.</p>
+<p>For example, if your form contains a question named <code class="docutils literal notranslate"><span class="pre">region</span></code>, the following code retrieves submissions where the response is <code class="docutils literal notranslate"><span class="pre">north</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">filtered_data</span> <span class="o">&lt;-</span> <span class="n">kobo_data</span><span class="p">(</span>
+  <span class="n">asset</span><span class="p">,</span>
+  <span class="n">query</span> <span class="o">=</span> <span class="s1">'{"region": "north"}'</span>
+<span class="p">)</span>
+</pre></div>
+</div>
+<p>This applies the filter through the API before retrieving the data.</p>
+<p class="note">
+  For more information about the available functions, see the <a href="https://dickoa.gitlab.io/robotoolbox/">robotoolbox documentation</a>.
+</p>
+</section>
+</section>
+<section id="other-r-packages-for-kobotoolbox">
+<h2>Other R packages for KoboToolbox<a class="headerlink" href="#other-r-packages-for-kobotoolbox" title="Link to this heading">¶</a></h2>
+<p>Several community-developed R packages provide additional options for retrieving and analyzing KoboToolbox data:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://asitav-sen.github.io/KoboconnectR/">KoboconnectR:</a> Provides functions for retrieving KoboToolbox project data directly into R, including options for working with submission data and exports.</p></li>
+<li><p><a class="reference external" href="https://unhcr.github.io/koboloadeR/docs/">koboloadeR:</a> Developed by UNHCR to support survey data processing and analysis. It includes tools for working with repeat groups, preparing datasets, and generating statistical reports and visualizations.</p></li>
+</ul>
+<p class="note">
+  <strong>Note:</strong> These packages are independently developed and maintained. Their features, installation requirements, and compatibility may change over time. Refer to each package's documentation for the latest instructions.
+</p>
+</section>
+<section id="updating-your-data-in-r">
+<h2>Updating your data in R<a class="headerlink" href="#updating-your-data-in-r" title="Link to this heading">¶</a></h2>
+<p>Once connected to the KoboToolbox API, you can retrieve updated project data by running your R script again.</p>
+<p>You can also schedule scripts to run at regular intervals to support recurring analyses and reports. For example, an automated workflow could retrieve new submissions daily, process the data, and update an analysis or visualization.</p>
+<p>The frequency of updates depends on how the script is configured. KoboToolbox does not automatically send updated submissions to R through the data endpoint.</p>
+<p>For more advanced workflows, you can use API filters to retrieve only submissions that meet specific conditions, rather than requesting the full dataset each time.</p>
+</section>
+</section>
+
+
+          <div class="clearer"></div>
+        </section>
+
+        
+
+        <div class="page__back-to-top-container">
+          <a href="#top" class="page__back-to-top">Back to top</a>
+        </div>
+
+          <section class="page__feedback">
+            <h1>Was this article useful?</h1>
+
+            <p>Did you find what you were looking for? Was the information clear? Was anything missing?<br>Share your feedback to help us improve this article!</p>
+
+            <a
+              href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
+              class="feedback-button"
+              target="_blank"
+              data-page="Connecting KoboToolbox data to R"
+              onclick="
+              const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
+              const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
+              this.href = 'https://ee-eu.kobotoolbox.org/single/OPizwor2'
+                + '?d[page]=' + encodeURIComponent(this.dataset.page)
+                + '&d[lang]=' + encodeURIComponent(lang)
+                + '&lang=' + encodeURIComponent(lang);"
+            >
+              Fill out the short survey here &rarr;
+            </a>
+          </section>
+      </section>
+
+      
+        <aside class="page__sidebar" role="navigation" aria-label="main navigation">
+
+<div class="sidebar_tocs">
+  <p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="welcome.html">Introduction to KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating a KoboToolbox account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="quick_start.html">Quickstart guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossary of KoboToolbox terms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Account &amp; Billing</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="creating_account.html">Creating a KoboToolbox account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="reset_password.html">Resetting your password</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_settings.html">Account settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="account_usage_limits.html">Managing account usage limits</a></li>
+<li class="toctree-l1"><a class="reference internal" href="two_factor_authentication.html">Setting up two-factor authentication</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Monitoring project and account activity</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using the Formbuilder</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="formbuilder.html">Getting started with the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types.html">Adding questions in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="text_questions.html">Text questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_one_and_select_many.html">Select questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="number_decimal_range.html">Numeric questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="date_time.html">Date and time questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="photo_audio_video_file.html">Media questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gps_questions.html">GPS questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="note_questions.html">Note questions in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options.html">Question options in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group_repeat.html">Groups and repeat groups in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="matrix_response.html">Creating a question matrix in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_dashboard.html">Adding translations in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style.html">Styling web forms in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_meta.html">Adding form metadata in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic.html">Introduction to form logic in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic.html">Adding skip logic in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validation_criteria.html">Adding validation criteria in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculate_questions.html">Adding calculations in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="cascading_select.html">Adding cascading select questions in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="external_file.html">Selecting options from an external file in the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment_formbuilder.html">Dynamic data attachments using the Formbuilder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_library.html">Using the KoboToolbox question library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="using_public_collections.html">Public collections in the KoboToolbox library</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Using XLSForm</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="edit_forms_excel.html">Introduction to XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_xlsform.html">Getting started with XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xlsform_with_kobotoolbox.html">Using XLSForm with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_types_xls.html">Question types in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="option_choices_xls.html">Managing option choices in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="grouping_questions_xls.html">Grouping questions in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repeat_groups_xls.html">Repeat groups in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="question_options_xls.html">Question options in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="appearances_xls.html">Question appearances in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="language_xls.html">Adding translations in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="media.html">Adding media to an XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_logic_xls.html">Introduction to form logic in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions_xls.html">Using functions in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="restrict_responses.html">Using regular expressions in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="skip_logic_xls.html">Adding skip logic in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="constraints_xls.html">Adding constraints in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="required_logic_xls.html">Adding required logic in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="choice_filters_xls.html">Adding choice filters in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculations_xls.html">Adding calculations in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_settings_xls.html">Form settings in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="form_style_xls.html">Styling your forms using XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="metadata_xls.html">Form metadata in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pull_data_kobotoolbox.html">Pulling data from an external CSV</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_file_xls.html">Selecting options from an external file in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_map_xls.html">Selecting options from a map</a></li>
+<li class="toctree-l1"><a class="reference internal" href="select_from_image.html">Selecting options from an image</a></li>
+<li class="toctree-l1"><a class="reference internal" href="dynamic_data_attachment.html">Dynamic data attachments in XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="custom_submission_message.html">Adding a custom submission message</a></li>
+<li class="toctree-l1"><a class="reference internal" href="library_locking.html">Library locking with XLSForm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="import_collection.html">Importing library collections using XLSForm</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Collecting Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data-collection-tools.html">Data collection with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deploy_form_new_project.html">Deploying forms for data collection</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_through_webforms.html">Collecting data using web forms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_on_android_latest.html">Setting up the KoboCollect app</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_collection_kobocollect.html">Collecting data using KoboCollect</a></li>
+<li class="toctree-l1"><a class="reference internal" href="kobocollect_settings.html">Customizing KoboCollect settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collect_gps.html">Collecting GPS data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_data.html">Collecting qualitative data with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="collecting_data_multiple_languages.html">Collecting data in multiple languages</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Managing Projects &amp; Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_interface.html">Overview of the KoboToolbox interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_projects.html">Managing projects in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewing_validating_data.html">Viewing and validating your data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="editing_deleting_data.html">Editing and deleting your data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="export_download.html">Exporting and downloading your data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="advanced_export.html">Advanced options for exporting data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_repeat_groups.html">Managing repeat group data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_files_media.html">Project files and media overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="upload_media.html">Uploading media files to a project</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_media_responses.html">Managing respondent-submitted media</a></li>
+<li class="toctree-l1"><a class="reference internal" href="project_sharing_settings.html">Sharing projects with project-level settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="managing_permissions.html">Sharing projects with user-level permissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="activity_logs.html">Monitoring project and account activity</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team_management_feature.html">Using the Team management feature</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Analyzing Data</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_analysis.html">Data analysis with KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preparing_for_analysis.html">Preparing your form for data analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualizing your data with reports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Mapping your GPS data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transcription-translation.html">Transcription and translation of audio responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qualitative_analysis.html">Qualitative analysis of audio responses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="converting_to_spss_and_stata.html">Converting data for SPSS and Stata</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="api.html">Getting started with the API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Using the API for synchronous exports</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_endpoint.html">Using the API data endpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_excel_powerbi.html">Connecting KoboToolbox data to Microsoft Excel and Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_google.html">Connecting KoboToolbox data to Google Sheets and Data Studio</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Connecting KoboToolbox data to R</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-kobotoolbox-api-in-r">Using the KoboToolbox API in R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connecting-to-r-using-direct-api-requests">Connecting to R using direct API requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connecting-to-r-using-robotoolbox">Connecting to R using robotoolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#other-r-packages-for-kobotoolbox">Other R packages for KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#updating-your-data-in-r">Updating your data in R</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Using the KoboToolbox REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platform_integrations.html">Integrating KoboToolbox with other platforms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migrating from v1 to v2 API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Data Security &amp; Protection</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="is_my_data_safe.html">Data security and protection in KoboToolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="gdpr.html">Compliance with GDPR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hipaa_compliance.html">Compliance with HIPAA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_storage.html">Data storage</a></li>
+<li class="toctree-l1"><a class="reference internal" href="encrypting_forms.html">Encrypting forms</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="manual_upload.html">Manually uploading submissions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="transferring_forms.html">Importing forms manually into KoboCollect</a></li>
+</ul>
+
+</div>
+
+
+
+
+
+
+
+
+<section class="community-questions community-questions--sidebar">
+  <div class="wrapper">
+    <h1>Community Forum</h1>
+
+    <p>For questions, ideas, and announcements on new releases, please head to our Community Forum.</p>
+
+    <a class="button" href="https://community.kobotoolbox.org/">
+      
+      Visit our forum
+      
+    </a>
+  </div>
+
+  
+    <br><br>
+
+    <div class="wrapper">
+      <h1>KoboToolbox Academy</h1>
+
+      <p>KoboToolbox Academy offers high quality self-paced courses, created by KoboToolbox experts.</p>
+
+      <a class="button" href="https://academy.kobotoolbox.org">
+        Visit the KoboToolbox Academy
+      </a>
+    </div>
+  
+</section>
+
+</aside>
+      
+  </div>
+  <div class="clearer"></div>
+</div>
+  
+
+  <div class="footer">
+<span class="footer__copyright">KoboToolbox Help Center &copy; <span id="copyright-year"></span> by <a class="inline" href="https://kobo.ngo/">Kobo</a> licensed under <a class="inline" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="license noopener">CC BY-NC 4.0</a></span>
+    <p>
+        <a href="https://kobotoolbox.org/terms">Terms of Service</a>
+        <a href="https://kobotoolbox.org/privacy">Privacy Policy</a>
+    </p>
+  </div>
+
+  <script>
+    document.getElementById('copyright-year').textContent = new Date().getFullYear();
+  </script>
+
+  
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXLRR9N1R5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXLRR9N1R5');
+  </script>
+  
+
+
+  <script>
+    window.docs = {
+      currentPagename: "connect_r",
+      currentTitle: "Connecting KoboToolbox data to R",
+      currentUrl: ("index.html").replace("index.html", "connect_r.html"),
+      rootUrl: "",
+      sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},
+      
+      sectionOrder: ["getting-started", "account-billing", "using-formbuilder", "using-xlsform", "collecting-data", "managing-projects", "analyzing-data", "integrations", "data-security-protection", "additional-resources"],
+    };
+  </script>
+  </body>
+</html>

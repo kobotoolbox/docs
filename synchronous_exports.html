@@ -27,7 +27,7 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Connecting KoboToolbox to Microsoft Excel" href="pulling_data_into_excelquery.html" />
+    <link rel="next" title="Using the API data endpoint" href="data_endpoint.html" />
     <link rel="prev" title="Getting started with the API" href="api.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
@@ -182,24 +182,29 @@
           
   <section id="using-the-api-for-synchronous-exports">
 <h1>Using the API for synchronous exports<a class="headerlink" href="#using-the-api-for-synchronous-exports" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b0d195136b7fb3fe51b687cc03a5e8dcde946309/source/synchronous_exports.md" class="reference">22 Jun 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/synchronous_exports.md" class="reference">19 Nov 2026</a></p>
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>KoboToolbox offers two primary methods for accessing your data: asynchronous and synchronous exports. The standard asynchronous method involves <a class="reference external" href="https://support.kobotoolbox.org/export_download.html">manually downloading data files</a> containing all submissions up to the time of download. In contrast, synchronous exports enable automatic integration of your KoboToolbox data with external applications such as Microsoft Power BI, Excel, or Google Sheets.</p>
-<p>With synchronous exports, your data updates automatically as new submissions are received, eliminating the need for manual refreshing. This method provides a CSV or XLSX file, configured with your predefined export settings, which can include question labels, languages, filters, and repeat group data.</p>
-<p class="note">
-    <strong>Note:</strong> This article focuses on synchronous exports, which is one of two primary ways to use the KoboToolbox API. The other is the JSON API, designed for custom scripts and real-time automations, delivering raw, record-by-record JSON data. Unlike synchronous exports, the JSON API does not include advanced export features such as question labels or support for multiple languages.
-</p>
-<p>This article covers the following steps:</p>
+<p>KoboToolbox allows you to export project data in two ways:</p>
 <ul class="simple">
-<li><p>Generating a named export</p></li>
-<li><p>Retrieving the synchronous export link</p></li>
-<li><p>Connecting your data to an external application &amp; authentication</p></li>
+<li><p><strong>Standard exports:</strong> Allow you to <a class="reference external" href="https://support.kobotoolbox.org/export_download.html">manually download project data</a> in formats such as CSV or XLSX. These provide a snapshot of your data at the time of download and do not update automatically.</p></li>
+<li><p><strong>Synchronous exports:</strong> Provide a link that allows external applications, such as Microsoft Power BI, Excel, or Google Sheets, to retrieve updated project data automatically.</p></li>
 </ul>
+<p>Synchronous exports are useful for monitoring data collection through <strong>dashboards</strong>, updating <strong>recurring reports</strong>, and keeping <strong>visualizations</strong> up to date without repeatedly downloading files.</p>
+<p>This article covers generating a named export, retrieving the synchronous export link, and connecting your data to external applications using authentication.</p>
+<section id="understanding-synchronous-exports">
+<h2>Understanding synchronous exports<a class="headerlink" href="#understanding-synchronous-exports" title="Link to this heading">¶</a></h2>
+<p>Synchronous exports are part of the KoboToolbox Application Programming Interface (API). They use the <strong>exports endpoint</strong> to retrieve project data in CSV or XLSX format based on saved export settings.</p>
+<p>Synchronous exports use <a class="reference external" href="https://support.kobotoolbox.org/advanced_export.html#saving-export-settings">saved export settings</a>, which allow you to choose question names or labels, select form languages, include repeat group data, and apply other advanced export options. Each saved export generates a <strong>synchronous export link</strong> that external applications can use to retrieve data based on these settings. The link remains the same, but the exported data is regenerated automatically when requested.</p>
+<p>Unlike the <a class="reference external" href="https://support.kobotoolbox.org/data_endpoint.html">data endpoint</a>, which returns raw submission data in JSON format and typically requires additional scripting, synchronous exports provide ready-to-use CSV or XLSX files. This makes them easier to connect to reporting and analysis tools without advanced API configuration.</p>
 <p class="note">
     For an introduction to the KoboToolbox API, see <a href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
 </p>
+</section>
+<section id="accessing-the-synchronous-export-link">
+<h2>Accessing the synchronous export link<a class="headerlink" href="#accessing-the-synchronous-export-link" title="Link to this heading">¶</a></h2>
+<p>To use synchronous exports, you first need to save export settings and retrieve the corresponding synchronous export link.</p>
 <section id="generating-a-named-export">
-<h2>Generating a named export<a class="headerlink" href="#generating-a-named-export" title="Link to this heading">¶</a></h2>
+<h3>Generating a named export<a class="headerlink" href="#generating-a-named-export" title="Link to this heading">¶</a></h3>
 <p>To generate synchronous exports, you must first create a named export for your project by following these steps:</p>
 <ol class="arabic simple">
 <li><p>In your KoboToolbox project, navigate to the <strong>DATA &gt; Downloads</strong> tab.</p></li>
@@ -210,7 +215,7 @@
 </ol>
 </section>
 <section id="retrieving-the-synchronous-export-link">
-<h2>Retrieving the synchronous export link<a class="headerlink" href="#retrieving-the-synchronous-export-link" title="Link to this heading">¶</a></h2>
+<h3>Retrieving the synchronous export link<a class="headerlink" href="#retrieving-the-synchronous-export-link" title="Link to this heading">¶</a></h3>
 <p>To retrieve the synchronous export link, you will need the following:</p>
 <ul class="simple">
 <li><p><strong>Project asset UID:</strong> A unique ID for each KoboToolbox project, found in the project’s URL.</p></li>
@@ -234,14 +239,15 @@
     <strong>Note:</strong> Repeat groups are exported as separate sheets in Excel files and are not included in CSV exports. If your project contains repeat groups, use the <code>data_url_xlsx</code> link.
 </p>
 </section>
+</section>
 <section id="connecting-your-data-to-an-external-application">
 <h2>Connecting your data to an external application<a class="headerlink" href="#connecting-your-data-to-an-external-application" title="Link to this heading">¶</a></h2>
 <p>After retrieving the synchronous export link, you can connect your data to your preferred external application. The method for integrating the synchronous export link will vary by application.</p>
-<p class="note">
-    To learn how to connect your data to Power BI to create custom dashboards, see <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a>. 
-    <br><br>
-    To learn how to connect your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
-</p>
+<p>For example, you can:</p>
+<ul class="simple">
+<li><p>Connect KoboToolbox to <a class="reference external" href="https://support.kobotoolbox.org/connect_excel_powerbi.html">Microsoft Excel and Power BI</a> to create reports and dashboards.</p></li>
+<li><p>Connect KoboToolbox to <a class="reference external" href="https://support.kobotoolbox.org/connect_google.html">Google Sheets and Data Studio</a> to analyze data and create interactive dashboards.</p></li>
+</ul>
 <section id="authentication">
 <h3>Authentication<a class="headerlink" href="#authentication" title="Link to this heading">¶</a></h3>
 <p>Many external applications can connect to your KoboToolbox data. However, not all support <strong>authenticated requests</strong>, which are requests that carry credentials (e.g., the API key or username and password) so the server can verify the caller’s identity. If the external application does not support authenticated requests, it will only be able to reach resources that have been made <strong>publicly accessible</strong> through an anonymous export link.</p>
@@ -434,17 +440,19 @@ To fix this issue, re-create your synchronous exports with <strong>Include media
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="api.html">Getting started with the API</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Using the API for synchronous exports</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#generating-a-named-export">Generating a named export</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#retrieving-the-synchronous-export-link">Retrieving the synchronous export link</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#understanding-synchronous-exports">Understanding synchronous exports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-the-synchronous-export-link">Accessing the synchronous export link</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#connecting-your-data-to-an-external-application">Connecting your data to an external application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#limitations">Limitations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Using the REST services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">KoboToolbox integration with monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_endpoint.html">Using the API data endpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_excel_powerbi.html">Connecting KoboToolbox data to Microsoft Excel and Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_google.html">Connecting KoboToolbox data to Google Sheets and Data Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_r.html">Connecting KoboToolbox data to R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Using the KoboToolbox REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platform_integrations.html">Integrating KoboToolbox with other platforms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migrating from v1 to v2 API</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Security &amp; Protection</span></p>

@@ -182,12 +182,12 @@
         <section class="page__body" role="main">
           
   <section id="securite-des-donnees-chez-kobotoolbox">
-<h1>Sécurité des données chez KoboToolbox<a class="headerlink" href="#securite-des-donnees-chez-kobotoolbox" title="Lien vers cette rubrique">¶</a></h1>
+<span id="sécurité-des-données-chez-kobotoolbox"></span><h1>Sécurité des données chez KoboToolbox<a class="headerlink" href="#securite-des-donnees-chez-kobotoolbox" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/f7c0f5afa58cad4b40bd6075209daef21a83ee6b/source/is_my_data_safe.md" class="reference">9 oct. 2025</a></p>
 <p>Nous prenons la protection des données très au sérieux. La sécurité des données consiste à protéger les données de nos utilisateurs contre toute menace potentielle. Cet article résume certaines de nos mesures administratives, physiques, organisationnelles et techniques visant à garantir la sécurité des données sur les serveurs KoboToolbox gérés par Kobo, Inc., l”<a class="reference external" href="https://www.kobotoolbox.org/about-us/">organisation à but non lucratif à l’origine de KoboToolbox</a>.</p>
 <p>Nous sommes pleinement conformes au Règlement général sur la protection des données (RGPD) de l’Union européenne. Si vous êtes situé dans l’Union européenne, <a class="reference external" href="https://www.digisigner.com/online/showTemplate?linkId=495db186-9c9e-4627-99f7-a943282eeab5">vous pouvez signer un accord de traitement des données (DPA) ici</a>.</p>
 <section id="confidentialite">
-<h2>Confidentialité<a class="headerlink" href="#confidentialite" title="Lien vers cette rubrique">¶</a></h2>
+<span id="confidentialité"></span><h2>Confidentialité<a class="headerlink" href="#confidentialite" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>Contrôle de l’accès physique</strong></p>
 <ul class="simple">
 <li><p>Des mesures de contrôle de l’accès physique, entre autres, sont mises en œuvre par Amazon Web Services (AWS), qui héberge nos serveurs KoboToolbox. Ces mesures comprennent, par exemple, la vidéosurveillance et la sécurité physique des installations de serveurs et de réseaux, le maintien d’un contrôle d’accès par badge, et la restriction de l’accès au seul personnel autorisé. Pour une liste complète des mesures techniques et organisationnelles d’AWS en matière de contrôle de l’accès physique, <a class="reference external" href="https://aws.amazon.com/compliance/data-center/controls/">consultez cet article</a> sur les contrôles des centres de données fourni par AWS.</p></li>
@@ -216,7 +216,7 @@
 </ul>
 </section>
 <section id="integrite">
-<h2>Intégrité<a class="headerlink" href="#integrite" title="Lien vers cette rubrique">¶</a></h2>
+<span id="intégrité"></span><h2>Intégrité<a class="headerlink" href="#integrite" title="Lien vers cette rubrique">¶</a></h2>
 <p><strong>Contrôle du transfert de données</strong></p>
 <ul class="simple">
 <li><p>Toutes les données en transit sont protégées à l’aide de SHA-256 avec chiffrement RSA.</p></li>
@@ -227,7 +227,7 @@
 </ul>
 </section>
 <section id="disponibilite-et-resilience">
-<h2>Disponibilité et résilience<a class="headerlink" href="#disponibilite-et-resilience" title="Lien vers cette rubrique">¶</a></h2>
+<span id="disponibilité-et-résilience"></span><h2>Disponibilité et résilience<a class="headerlink" href="#disponibilite-et-resilience" title="Lien vers cette rubrique">¶</a></h2>
 <ul class="simple">
 <li><p>Kobo effectue des sauvegardes quotidiennes de toutes les bases de données vers un emplacement distant distinct. En cas de panne critique, toutes les données des utilisateurs seront restaurées à partir de la sauvegarde la plus récente dans les meilleurs délais.</p></li>
 <li><p>Les pare-feux bloquent toutes les requêtes externes, à l’exception des connexions SSH provenant d’une courte liste d’adresses IP explicitement autorisées. Le trafic HTTP et HTTPS public ne peut pas se connecter directement au serveur KoboToolbox ; il est acheminé par l’équilibreur de charge AWS, qui le transfère ensuite aux serveurs frontaux de Kobo.</p></li>

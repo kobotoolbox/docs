@@ -182,16 +182,16 @@
         <section class="page__body" role="main">
           
   <section id="connexion-de-kobotoolbox-a-microsoft-excel">
-<h1>Connexion de KoboToolbox à Microsoft Excel<a class="headerlink" href="#connexion-de-kobotoolbox-a-microsoft-excel" title="Lien vers cette rubrique">¶</a></h1>
+<span id="connexion-de-kobotoolbox-à-microsoft-excel"></span><h1>Connexion de KoboToolbox à Microsoft Excel<a class="headerlink" href="#connexion-de-kobotoolbox-a-microsoft-excel" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/df082614a0ae0bce8543b0c1474a9567fea7293e/source/pulling_data_into_excelquery.md" class="reference">23 août 2022</a></p>
 <p>KoboToolbox vous permet de connecter votre projet de collecte de données à des programmes externes tels que Microsoft Excel, Power BI ou Google Sheets, grâce à l’interface de programmation d’application (API).</p>
 <p>Cet article vous guide tout au long du processus de connexion de votre projet à Excel. Si vous souhaitez vous connecter à Power BI, consultez l’article <a class="reference internal" href="pulling_data_into_powerbi.html"><span class="std std-doc">Connexion de KoboToolbox à Power BI</span></a>.</p>
 <section id="etape-1-obtenir-l-url-des-exports-synchronises">
-<h2>Étape 1 : Obtenir l’URL des exports synchronisés<a class="headerlink" href="#etape-1-obtenir-l-url-des-exports-synchronises" title="Lien vers cette rubrique">¶</a></h2>
+<span id="étape-1--obtenir-lurl-des-exports-synchronisés"></span><h2>Étape 1 : Obtenir l’URL des exports synchronisés<a class="headerlink" href="#etape-1-obtenir-l-url-des-exports-synchronises" title="Lien vers cette rubrique">¶</a></h2>
 <p>Pour importer des données dans Excel, vous devez d’abord obtenir l’URL des exports synchronisés via l’API KoboToolbox. La procédure détaillée est décrite dans l’article <a class="reference internal" href="synchronous_exports.html"><span class="std std-doc">Utiliser l’API pour les exports synchronisées</span></a>.</p>
 </section>
 <section id="etape-2-ajouter-la-source-de-donnees">
-<h2>Étape 2 : Ajouter la source de données<a class="headerlink" href="#etape-2-ajouter-la-source-de-donnees" title="Lien vers cette rubrique">¶</a></h2>
+<span id="étape-2--ajouter-la-source-de-données"></span><h2>Étape 2 : Ajouter la source de données<a class="headerlink" href="#etape-2-ajouter-la-source-de-donnees" title="Lien vers cette rubrique">¶</a></h2>
 <p class="note">Ces étapes ne fonctionnent que dans Excel 2016 et versions ultérieures.</p>
 <ul class="simple">
 <li><p>Ouvrez Excel et créez un classeur vide. Vous pouvez également travailler dans un classeur existant, même s’il contient déjà des données.</p></li>
@@ -227,7 +227,7 @@
   >.
 </p>
 <section id="utiliser-les-donnees-importees">
-<h3>Utiliser les données importées<a class="headerlink" href="#utiliser-les-donnees-importees" title="Lien vers cette rubrique">¶</a></h3>
+<span id="utiliser-les-données-importées"></span><h3>Utiliser les données importées<a class="headerlink" href="#utiliser-les-donnees-importees" title="Lien vers cette rubrique">¶</a></h3>
 <p>Excel vous offre plusieurs façons de travailler avec les données que vous venez d’importer.</p>
 <section id="creer-des-tableaux-croises-dynamiques-et-des-graphiques-croises-dynamiques-a-partir-du-modele-de-donnees">
 <h4>1. Créer des tableaux croisés dynamiques et des graphiques croisés dynamiques à partir du modèle de données<a class="headerlink" href="#creer-des-tableaux-croises-dynamiques-et-des-graphiques-croises-dynamiques-a-partir-du-modele-de-donnees" title="Lien vers cette rubrique">¶</a></h4>
@@ -255,7 +255,7 @@
 </section>
 </section>
 <section id="mettre-a-jour-les-donnees-dans-vos-rapports">
-<h2>Mettre à jour les données dans vos rapports<a class="headerlink" href="#mettre-a-jour-les-donnees-dans-vos-rapports" title="Lien vers cette rubrique">¶</a></h2>
+<span id="mettre-à-jour-les-données-dans-vos-rapports"></span><h2>Mettre à jour les données dans vos rapports<a class="headerlink" href="#mettre-a-jour-les-donnees-dans-vos-rapports" title="Lien vers cette rubrique">¶</a></h2>
 <p>Lorsque les données de votre projet sont mises à jour sur le serveur KoboToolbox — par exemple lors de nouvelles soumissions, de modifications du statut de validation, de modifications ou de suppressions — vous devez les synchroniser avec vos rapports. Dans Excel :</p>
 <ul class="simple">
 <li><p>Accédez à l’onglet <strong>Données</strong>.</p></li>
@@ -263,9 +263,9 @@
 </ul>
 </section>
 <section id="resolution-de-problemes">
-<h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="résolution-de-problèmes"></span><h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
 <section id="echec-de-la-connexion-a-kobotoolbox">
-<h3>Échec de la connexion à KoboToolbox<a class="headerlink" href="#echec-de-la-connexion-a-kobotoolbox" title="Lien vers cette rubrique">¶</a></h3>
+<span id="échec-de-la-connexion-à-kobotoolbox"></span><h3>Échec de la connexion à KoboToolbox<a class="headerlink" href="#echec-de-la-connexion-a-kobotoolbox" title="Lien vers cette rubrique">¶</a></h3>
 <p>Il peut arriver que, même après avoir saisi les identifiants corrects pour vous connecter à votre projet, vous obteniez une erreur. Cela peut se produire si Excel a été configuré pour se connecter à un compte précédent et que vous tentez maintenant de vous connecter avec un compte différent sur le même serveur KoboToolbox, par exemple deux comptes sur le serveur humanitaire.</p>
 <p>Pour réinitialiser les paramètres d’authentification :</p>
 <ul class="simple">
@@ -274,7 +274,7 @@
 <p><img alt="Effacer les paramètres de la source de données" src="_images/data_source_settings.gif" /></p>
 </section>
 <section id="echec-de-l-actualisation-des-donnees">
-<h3>Échec de l’actualisation des données<a class="headerlink" href="#echec-de-l-actualisation-des-donnees" title="Lien vers cette rubrique">¶</a></h3>
+<span id="échec-de-lactualisation-des-données"></span><h3>Échec de l’actualisation des données<a class="headerlink" href="#echec-de-l-actualisation-des-donnees" title="Lien vers cette rubrique">¶</a></h3>
 <p>Si vous obtenez une erreur lors de l’actualisation des données, plusieurs raisons sont possibles :</p>
 <ul class="simple">
 <li><p>Vos informations d’authentification ont peut-être changé. Vous devrez suivre les instructions ci-dessus pour modifier vos <strong>Paramètres de la source de données</strong>.</p></li>

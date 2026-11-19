@@ -182,14 +182,14 @@
         <section class="page__body" role="main">
           
   <section id="gestion-de-datos-de-grupos-repetidos">
-<h1>Gestión de datos de grupos repetidos<a class="headerlink" href="#gestion-de-datos-de-grupos-repetidos" title="Link to this heading">¶</a></h1>
+<span id="gestión-de-datos-de-grupos-repetidos"></span><h1>Gestión de datos de grupos repetidos<a class="headerlink" href="#gestion-de-datos-de-grupos-repetidos" title="Link to this heading">¶</a></h1>
 <p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/c6ce761972d44dffc7387a7fbc1dbeb413e56933/source/managing_repeat_groups.md" class="reference">5 Jun 2026</a></p>
 <p>KoboToolbox te permite recolectar datos repetidos dentro de un formulario, por ejemplo, al realizar una encuesta de hogares en la que se hacen las mismas preguntas a todos los miembros. Este artículo explica cómo ver, editar y exportar datos de grupos de repetición, y cómo vincular los datos de grupos de repetición con los datos principales.</p>
 <p class="note">
   Para obtener más información sobre cómo configurar grupos de repetición en tus formularios, consulta <a href="https://support.kobotoolbox.org/es/group_repeat.html">Grupos y grupos de repetición en el Formbuilder</a> y <a href="https://support.kobotoolbox.org/es/repeat_groups_xls.html">Grupos repetidos en XLSForm</a>.
 </p>
 <section id="ver-y-editar-datos-de-grupos-de-repeticion">
-<h2>Ver y editar datos de grupos de repetición<a class="headerlink" href="#ver-y-editar-datos-de-grupos-de-repeticion" title="Link to this heading">¶</a></h2>
+<span id="ver-y-editar-datos-de-grupos-de-repetición"></span><h2>Ver y editar datos de grupos de repetición<a class="headerlink" href="#ver-y-editar-datos-de-grupos-de-repeticion" title="Link to this heading">¶</a></h2>
 <p>Puedes ver los datos repetidos en la tabla de datos, que se encuentra en la vista <strong>Tabla</strong> de la ventana <strong>DATOS</strong> en la interfaz del proyecto de KoboToolbox. Las respuestas a las preguntas repetidas aparecen en una sola columna por pregunta, con las respuestas separadas por una coma, como se muestra a continuación.</p>
 <p><img alt="image" src="_images/data_table.png" /></p>
 <p>También puedes ver los datos completos de cualquier envío, incluida cada repetición de los grupos de repetición, haciendo clic en el botón <i class="k-icon-view"></i><strong>Ver</strong> a la izquierda de cada envío.</p>
@@ -199,7 +199,7 @@
 </p>
 </section>
 <section id="exportar-datos-de-grupos-de-repeticion">
-<h2>Exportar datos de grupos de repetición<a class="headerlink" href="#exportar-datos-de-grupos-de-repeticion" title="Link to this heading">¶</a></h2>
+<span id="exportar-datos-de-grupos-de-repetición"></span><h2>Exportar datos de grupos de repetición<a class="headerlink" href="#exportar-datos-de-grupos-de-repeticion" title="Link to this heading">¶</a></h2>
 <p>Para exportar datos de un formulario con grupos de repetición, debes descargar los datos en <strong>formato XLS</strong>. Cada grupo de repetición se exportará <strong>como una hoja separada</strong> en el archivo exportado. La descarga en CSV solo proporcionará los datos de la información principal.</p>
 <p><img alt="image" src="_images/download1.png" /></p>
 <p class="note"> 
@@ -207,7 +207,7 @@
 </p>
 </section>
 <section id="vincular-datos-de-grupos-de-repeticion">
-<h2>Vincular datos de grupos de repetición<a class="headerlink" href="#vincular-datos-de-grupos-de-repeticion" title="Link to this heading">¶</a></h2>
+<span id="vincular-datos-de-grupos-de-repetición"></span><h2>Vincular datos de grupos de repetición<a class="headerlink" href="#vincular-datos-de-grupos-de-repeticion" title="Link to this heading">¶</a></h2>
 <p>En los archivos XLS exportados, los datos de grupos de repetición se almacenan <strong>en una hoja separada</strong>. La primera hoja del archivo XLS contiene los datos de respuesta principales, y los datos de cada grupo de repetición se almacenan en su propia hoja. Los grupos de repetición anidados también se almacenan en hojas separadas.</p>
 <p>Los datos de los grupos de repetición se pueden vincular a los datos principales usando la columna <code class="docutils literal notranslate"><span class="pre">_index</span></code> de la hoja de datos principal y la columna <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> de la hoja de datos del grupo de repetición.</p>
 <p>En el ejemplo a continuación, la primera hoja incluye una columna <code class="docutils literal notranslate"><span class="pre">_index</span></code>, en verde, que identifica el primer envío. La segunda hoja, que se muestra en la segunda imagen, contiene una columna <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code>, también resaltada en verde, que enlaza de vuelta a la primera hoja. En este ejemplo, ambas filas de los datos repetidos provienen del primer envío de datos.</p>

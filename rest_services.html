@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Using the REST services &#8212; KoboToolbox  documentation</title>
+    <title>Using the KoboToolbox REST Services &#8212; KoboToolbox  documentation</title>
     <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=5ecbeea2" />
     <link rel="stylesheet" type="text/css" href="_static/basic.css?v=b08954a9" />
     <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
@@ -27,8 +27,8 @@
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="KoboToolbox integration with monday.com" href="kobotoolbox_monday_integration.html" />
-    <link rel="prev" title="Connecting KoboToolbox to Power BI" href="pulling_data_into_powerbi.html" />
+    <link rel="next" title="Integrating KoboToolbox with other platforms" href="platform_integrations.html" />
+    <link rel="prev" title="Connecting KoboToolbox data to R" href="connect_r.html" />
   <meta name="zd-site-verification" content="hdkx1desj8fzjecaf3fie" />
   
    
@@ -180,37 +180,124 @@
 
         <section class="page__body" role="main">
           
-  <section id="using-the-rest-services">
-<h1>Using the REST services<a class="headerlink" href="#using-the-rest-services" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/5308da55f28a48cddc2bbcaff686f5d2805cdf55/source/rest_services.md" class="reference">22 Jul 2026</a></p>
-<p><strong>How to link your data to other servers or services using REST Services</strong></p>
-<p>KoboToolbox has a number of advanced features built in based on our open source
-libraries, which include useful add-ons for advanced use cases.</p>
-<p>You can link your data collected with KoboToolbox to other servers or services
-you might own through REST Services. REST Services supports JSON or XML formats,
-and basic authentication. Moreover it’s possible to send only a subset of
-fields.</p>
-<p>In case of a failure, the background task will retry 3 times to send the data
-(first time after 60 seconds, second time after 600 seconds, and third time
-after 6,000 seconds). Email notifications can be enabled to receive a failure
-report.</p>
-<p>Note that your data is sent to the external server only on creation. Nothing is
-sent when data is edited.</p>
-<p>Here are some tutorial videos for using REST Services:</p>
-<ol class="arabic">
-<li><p>Creation</p>
-<p><a class="reference external" href="https://fast.wistia.net/embed/iframe/6i2hw2gcr1" title="Creation"><img alt="Creation" src="_images/thumbnail_1.jpg" /></a></p>
-</li>
-<li><p>Subset of fields (Fields are added by pressing “Enter” or “Tab”)</p>
-<p><a class="reference external" href="https://fast.wistia.net/embed/iframe/u6su0atm2w" title="Subset of fields"><img alt="Subset of fields" src="_images/thumbnail_2.jpg" /></a></p>
-</li>
-<li><p>Failure/Retry</p>
-<p><a class="reference external" href="https://fast.wistia.net/embed/iframe/7my5eab5lm" title="Failure / Retry"><img alt="Failure / Retry" src="_images/thumbnail_3.jpg" /></a></p>
-</li>
-<li><p>Custom Wrapper (Only available with JSON format)</p>
-<p><a class="reference external" href="https://fast.wistia.net/embed/iframe/pd0czyksbx" title="Custom Wrapper"><img alt="Custom Wrapper" src="_images/thumbnail_4.jpg" /></a></p>
-</li>
+  <section id="using-the-kobotoolbox-rest-services">
+<h1>Using the KoboToolbox REST Services<a class="headerlink" href="#using-the-kobotoolbox-rest-services" title="Link to this heading">¶</a></h1>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/rest_services.md" class="reference">19 Nov 2026</a></p>
+<p>KoboToolbox <strong>REST Services</strong> allow you to automatically send new project submissions to external applications or servers. This can help integrate KoboToolbox with other systems, automate workflows, and reduce manual data transfers.</p>
+<p>REST Services can also be useful for creating <strong>raw data backups</strong> on an external server, where submitted data remains stored even if the original submissions are edited or deleted from KoboToolbox.</p>
+<p>REST Services send submissions to a web address, called an <strong>endpoint URL</strong>, provided by the receiving application. You can choose which fields to send, configure authentication, and customize the format of the data.</p>
+<p>This article covers creating and configuring REST Services, understanding the available settings, and managing submission delivery.</p>
+<section id="understanding-rest-services">
+<h2>Understanding REST Services<a class="headerlink" href="#understanding-rest-services" title="Link to this heading">¶</a></h2>
+<p>REST Services use <strong>webhooks</strong> to automatically send data from KoboToolbox to external systems. A <strong>webhook</strong> is a connection that sends information to a specified URL when an event occurs.</p>
+<p>Unlike the KoboToolbox <a class="reference external" href="https://support.kobotoolbox.org/api.html">Application Programming Interface (API)</a>, which allows external applications to <strong>request</strong> data from KoboToolbox, REST Services automatically <strong>send</strong> data to an external application when a new submission is received.</p>
+<p>When a new submission is received in KoboToolbox, the configured REST Service sends the submission data to the receiving application’s endpoint URL using an <strong>HTTP POST request</strong>.</p>
+<p>REST Services support:</p>
+<ul class="simple">
+<li><p><strong>JSON and XML formats:</strong> Choose the format required by the receiving application.</p></li>
+<li><p><strong>Authentication:</strong> Configure credentials or custom HTTP headers to authorize requests.</p></li>
+<li><p><strong>Field selection:</strong> Send all submission fields or only selected fields.</p></li>
+<li><p><strong>Custom wrappers:</strong> Customize the structure of JSON data sent to the receiving application.</p></li>
+<li><p><strong>Error notifications and retries:</strong> Receive notifications about failed requests and automatically retry certain unsuccessful deliveries.</p></li>
+</ul>
+<p class="note">
+  <strong>Note:</strong> REST Services only send data when a new submission is created. Changes to existing submissions, including edits and deletions, are not automatically sent to the receiving application.
+</p>
+</section>
+<section id="creating-a-rest-service">
+<h2>Creating a REST Service<a class="headerlink" href="#creating-a-rest-service" title="Link to this heading">¶</a></h2>
+<p>Before creating a REST Service, you need an <strong>endpoint URL</strong> from the application or server that will receive your KoboToolbox submissions. Depending on the receiving application, you may also need authentication credentials and information about the required data format.</p>
+<p>To create a REST Service:</p>
+<ol class="arabic simple">
+<li><p>Open your KoboToolbox project.</p></li>
+<li><p>Go to <strong>SETTINGS &gt; REST Services</strong>.</p></li>
+<li><p>Click <strong>Register a New Service</strong>.</p></li>
+<li><p>Configure the service using the settings described below.</p></li>
+<li><p>Click <strong>Create</strong> to save the service.</p></li>
 </ol>
+<p><img alt="new_rest" src="_images/new_rest.png" /></p>
+<section id="configuring-the-service-settings">
+<h3>Configuring the service settings<a class="headerlink" href="#configuring-the-service-settings" title="Link to this heading">¶</a></h3>
+<p>The REST Service configuration window contains several fields that determine how submissions are sent to the receiving application.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Field</p></th>
+<th class="head text-left"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Name</p></td>
+<td class="text-left"><p>Enter a descriptive name to identify the REST Service within your KoboToolbox project.<br><br>The name is for your reference and does not affect the data sent to the external application.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Endpoint URL</p></td>
+<td class="text-left"><p>Enter the web address where KoboToolbox should send new submissions.<br><br>This URL must be provided by the receiving application or the administrator of the external server.<br><br>Use an HTTPS endpoint to protect data during transmission.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Enabled</p></td>
+<td class="text-left"><p>Select <strong>Enabled</strong> to activate the REST Service and allow KoboToolbox to send new submissions to the configured endpoint.<br><br>You can disable the service to stop sending new submissions without deleting its configuration.</p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Receive email notifications</p></td>
+<td class="text-left"><p>Enable this option to receive email notifications when submission delivery fails.<br><br>This can help you identify connection problems or errors with the receiving application.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Type</p></td>
+<td class="text-left"><p><p>Choose the format used to send submission data:</p><ul><li><strong>JSON:</strong> Sends submissions in JSON format, commonly used by web applications and APIs.</li><li><strong>XML:</strong> Sends submissions in XML format, which may be required by some external systems.</li></ul><p>Select the format supported by the receiving application. If you are unsure, check the application’s integration documentation.</p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Security</p></td>
+<td class="text-left"><p><p>Choose the authentication method required by the receiving application.</p><ul><li><strong>No Authorization:</strong> Use this when the endpoint does not require HTTP authentication or when authentication is provided through custom HTTP headers.</li><li><strong>Basic Authentication:</strong> Use this when the endpoint requires a username and password.</li></ul><p>If you select Basic Authentication, enter the credentials provided by the receiving application in the corresponding fields.</p></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Select fields subset</p></td>
+<td class="text-left"><p><p>Limit which fields are included. By default, REST Services send all available submission data to the receiving application.</p><p>Enter the <a href="https://support.kobotoolbox.org/glossary.html#question-name">question names</a> of the fields you want to include, and press <strong>Enter</strong> or <strong>Tab</strong> to add each field. For questions inside groups, use their full field names, including the group path where applicable.</p></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>Custom HTTP Headers</p></td>
+<td class="text-left"><p>Some external applications require additional information in the HTTP request headers to authenticate requests or identify the integration.<br><br>Enter the required header name in the <strong>Name</strong> field. Enter the corresponding value in the <strong>Value</strong> field. Click <strong>Add header</strong> to include additional headers if needed. Follow the instructions provided by the receiving application.</p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Add custom wrapper around JSON submission</p></td>
+<td class="text-left"><p><p>Customize the structure of the data sent to the receiving application when using the JSON format, if the receiving application requires submission data to be placed inside a specific JSON structure.</p><p>For example:</p><pre><code>{
+  “source”: “KoboToolbox”,
+  “submission”: %SUBMISSION%
+}</code></pre><p>The <code>%SUBMISSION%</code> placeholder represents the submission data that KoboToolbox sends.</p><p>If the receiving application does not require a specific JSON structure, you can leave this option unconfigured.</p></p></td>
+</tr>
+</tbody>
+</table>
+<p class="note">
+  <strong>Note:</strong> REST Services do not automatically send existing submissions when a new service is created. Only submissions received after the service is enabled are sent through the connection.
+</p>
+</section>
+</section>
+<section id="managing-rest-services">
+<h2>Managing REST Services<a class="headerlink" href="#managing-rest-services" title="Link to this heading">¶</a></h2>
+<p>After creating a REST Service, it appears in the list of registered services under <strong>SETTINGS &gt; REST Services</strong>.</p>
+<p>You can review its configuration and manage the service as needed.</p>
+<section id="enabling-or-disabling-a-rest-service">
+<h3>Enabling or disabling a REST Service<a class="headerlink" href="#enabling-or-disabling-a-rest-service" title="Link to this heading">¶</a></h3>
+<p>You can disable an existing REST Service to temporarily stop sending new submissions to the receiving application.</p>
+<ul class="simple">
+<li><p>When the service is enabled again, KoboToolbox resumes sending new submissions.</p></li>
+<li><p>Disabling and re-enabling a service does not automatically send submissions that were received while it was disabled.</p></li>
+</ul>
+</section>
+<section id="updating-or-removing-a-rest-service">
+<h3>Updating or removing a REST Service<a class="headerlink" href="#updating-or-removing-a-rest-service" title="Link to this heading">¶</a></h3>
+<p>If the receiving application’s endpoint URL, authentication credentials, or data requirements change, update the REST Service configuration.</p>
+<p>You can also delete a REST Service when the connection is no longer needed. Removing a REST Service stops future submissions from being sent through that connection. It does not delete submissions already sent to the receiving application.</p>
+</section>
+<section id="handling-failed-submissions">
+<h3>Handling failed submissions<a class="headerlink" href="#handling-failed-submissions" title="Link to this heading">¶</a></h3>
+<p>If KoboToolbox cannot deliver a submission to the external server, it automatically retries the request only when the server returns one of the following errors:</p>
+<ul class="simple">
+<li><p>HTTP 502 (Bad Gateway)</p></li>
+<li><p>HTTP 503 (Service Unavailable)</p></li>
+<li><p>HTTP 504 (Gateway Timeout)</p></li>
+</ul>
+<p>KoboToolbox makes up to three automatic retry attempts, after approximately 50, 10, and 20 minutes.</p>
+<p>For all other errors, automatic retries are not performed, and you must retry the failed request manually.</p>
+<p>You can enable <strong>Receive email notifications</strong> in the REST Service settings to receive notifications about failed deliveries.</p>
+<p>If submissions are not reaching the receiving application:</p>
+<ul class="simple">
+<li><p>Check the endpoint URL, authentication settings, and required data format.</p></li>
+<li><p>Confirm that the external server is available and configured to accept incoming requests.</p></li>
+</ul>
+</section>
+</section>
 </section>
 
 
@@ -232,7 +319,7 @@ sent when data is edited.</p>
               href="https://ee-eu.kobotoolbox.org/single/OPizwor2"
               class="feedback-button"
               target="_blank"
-              data-page="Using the REST services"
+              data-page="Using the KoboToolbox REST Services"
               onclick="
               const firstPathPart = location.pathname.split('/').filter(Boolean)[0];
               const lang = firstPathPart && !firstPathPart.endsWith('.html') ? firstPathPart : 'en';
@@ -369,10 +456,17 @@ sent when data is edited.</p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="api.html">Getting started with the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Using the API for synchronous exports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Using the REST services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">KoboToolbox integration with monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_endpoint.html">Using the API data endpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_excel_powerbi.html">Connecting KoboToolbox data to Microsoft Excel and Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_google.html">Connecting KoboToolbox data to Google Sheets and Data Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_r.html">Connecting KoboToolbox data to R</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Using the KoboToolbox REST Services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#understanding-rest-services">Understanding REST Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-rest-service">Creating a REST Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#managing-rest-services">Managing REST Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="platform_integrations.html">Integrating KoboToolbox with other platforms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migrating from v1 to v2 API</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Security &amp; Protection</span></p>
@@ -459,7 +553,7 @@ sent when data is edited.</p>
   <script>
     window.docs = {
       currentPagename: "rest_services",
-      currentTitle: "Using the REST services",
+      currentTitle: "Using the KoboToolbox REST Services",
       currentUrl: ("index.html").replace("index.html", "rest_services.html"),
       rootUrl: "",
       sectionsData: {"account-billing": {"name": "account-billing", "title": "Account \u0026 Billing"}, "additional-resources": {"name": "additional-resources", "title": "Additional Resources"}, "analyzing-data": {"name": "analyzing-data", "title": "Analyzing Data"}, "collecting-data": {"name": "collecting-data", "title": "Collecting Data"}, "data-security-protection": {"name": "data-security-protection", "title": "Data Security \u0026 Protection"}, "getting-started": {"name": "getting-started", "title": "Getting Started"}, "integrations": {"name": "integrations", "title": "Integrations"}, "managing-projects": {"name": "managing-projects", "title": "Managing Projects \u0026 Data"}, "using-formbuilder": {"name": "using-formbuilder", "title": "Using the Formbuilder"}, "using-xlsform": {"name": "using-xlsform", "title": "Using XLSForm"}},

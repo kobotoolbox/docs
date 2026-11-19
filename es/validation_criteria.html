@@ -182,14 +182,14 @@
         <section class="page__body" role="main">
           
   <section id="anadir-criterios-de-validacion-en-el-formbuilder">
-<h1>Añadir criterios de validación en el Formbuilder<a class="headerlink" href="#anadir-criterios-de-validacion-en-el-formbuilder" title="Link to this heading">¶</a></h1>
+<span id="añadir-criterios-de-validación-en-el-formbuilder"></span><h1>Añadir criterios de validación en el Formbuilder<a class="headerlink" href="#anadir-criterios-de-validacion-en-el-formbuilder" title="Link to this heading">¶</a></h1>
 <p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/validation_criteria.md" class="reference">20 Mar 2026</a></p>
 <iframe src="https://www.youtube.com/embed/ya9usVpEo9Q?si=-rDzXcCRazcY0Bws&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>La lógica de validación, también conocida como criterios de validación o restricciones, define las condiciones que debe cumplir una respuesta para ser aceptada. Esta funcionalidad ayuda a garantizar datos de alta calidad al evitar respuestas accidentales o no válidas.</p>
 <p>Los criterios de validación se pueden aplicar a cualquier tipo de pregunta. Por ejemplo, puedes usarlos para asegurarte de que un participante tenga más de cierta edad, que una fecha esté dentro de un rango específico o que un texto ingresado coincida con un patrón determinado.</p>
 <p>Hay dos métodos para añadir criterios de validación en el Formbuilder: añadir una condición mediante el <strong>generador de criterios de validación</strong>, o ingresar manualmente la lógica de validación en <strong>código XLSForm</strong>.</p>
 <section id="anadir-una-condicion">
-<h2>Añadir una condición<a class="headerlink" href="#anadir-una-condicion" title="Link to this heading">¶</a></h2>
+<span id="añadir-una-condición"></span><h2>Añadir una condición<a class="headerlink" href="#anadir-una-condicion" title="Link to this heading">¶</a></h2>
 <p>El generador de criterios de validación permite añadir condiciones para preguntas de tipo <strong>Texto</strong>, <strong>Número</strong>, <strong>Decimal</strong> y <strong>Fecha</strong>. No es compatible con preguntas de tipo <strong>Seleccionar una</strong> ni <strong>Seleccionar varias</strong>. Para usar el generador:</p>
 <ol class="arabic simple">
 <li><p>Abre la <i class="k-icon-settings"></i> <strong>Configuración</strong> en el menú lateral derecho de la pregunta.</p></li>
@@ -204,7 +204,7 @@
 <p>Si no se cumplen las condiciones de validación, la respuesta no será aceptada durante la recolección de datos. Se mostrará un <a class="reference internal" href="#mensaje-de-error">mensaje de error</a>.</p>
 </section>
 <section id="ingresar-manualmente-la-logica-de-validacion-en-codigo-xlsform">
-<h2>Ingresar manualmente la lógica de validación en código XLSForm<a class="headerlink" href="#ingresar-manualmente-la-logica-de-validacion-en-codigo-xlsform" title="Link to this heading">¶</a></h2>
+<span id="ingresar-manualmente-la-lógica-de-validación-en-código-xlsform"></span><h2>Ingresar manualmente la lógica de validación en código XLSForm<a class="headerlink" href="#ingresar-manualmente-la-logica-de-validacion-en-codigo-xlsform" title="Link to this heading">¶</a></h2>
 <p>Para usuarios avanzados y para preguntas de tipo <strong>Seleccionar una</strong> o <strong>Seleccionar varias</strong>, los criterios de validación se pueden ingresar directamente en código XLSForm.</p>
 <p>Para ingresar manualmente la lógica de validación en código XLSForm, sigue estos pasos:</p>
 <ol class="arabic simple">
@@ -214,7 +214,7 @@
 </ol>
 <p>En la sintaxis de XLSForm, el punto <code class="docutils literal notranslate"><span class="pre">.</span></code> se usa para hacer referencia a la pregunta actual, y <code class="docutils literal notranslate"><span class="pre">${question_name}</span></code> (${nombre_de_la_pregunta}) se usa para hacer referencia a otras preguntas. También debes incluir el operador lógico y el valor de la respuesta correspondientes.</p>
 <section id="ejemplos-de-criterios-de-validacion">
-<h3>Ejemplos de criterios de validación<a class="headerlink" href="#ejemplos-de-criterios-de-validacion" title="Link to this heading">¶</a></h3>
+<span id="ejemplos-de-criterios-de-validación"></span><h3>Ejemplos de criterios de validación<a class="headerlink" href="#ejemplos-de-criterios-de-validacion" title="Link to this heading">¶</a></h3>
 <table class="docutils align-default">
 <thead>
 <tr class="row-odd"><th class="head text-left"><p>Criterio</p></th>

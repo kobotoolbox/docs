@@ -182,7 +182,7 @@
         <section class="page__body" role="main">
           
   <section id="agregar-filtros-de-seleccion-a-un-xlsform">
-<h1>Agregar filtros de selección a un XLSForm<a class="headerlink" href="#agregar-filtros-de-seleccion-a-un-xlsform" title="Link to this heading">¶</a></h1>
+<span id="agregar-filtros-de-selección-a-un-xlsform"></span><h1>Agregar filtros de selección a un XLSForm<a class="headerlink" href="#agregar-filtros-de-seleccion-a-un-xlsform" title="Link to this heading">¶</a></h1>
 <p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/choice_filters_xls.md" class="reference">4 Jan 2026</a></p>
 <p>Los filtros de selección crean formularios dinámicos en los que las opciones de una pregunta dependen de la respuesta a una pregunta anterior. Esto simplifica la recolección de datos al presentar solo las opciones relevantes, mejorando la eficiencia y precisión de la encuesta.</p>
 <p>Los filtros de selección se pueden usar en diversas aplicaciones, entre ellas:</p>
@@ -199,7 +199,7 @@
 Para practicar con filtros de selección en XLSForm, consulta el <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">curso XLSForm Fundamentals</a> de la KoboToolbox Academy.
 </p>
 <section id="agregar-filtros-de-seleccion-estaticos">
-<h2>Agregar filtros de selección estáticos<a class="headerlink" href="#agregar-filtros-de-seleccion-estaticos" title="Link to this heading">¶</a></h2>
+<span id="agregar-filtros-de-selección-estáticos"></span><h2>Agregar filtros de selección estáticos<a class="headerlink" href="#agregar-filtros-de-seleccion-estaticos" title="Link to this heading">¶</a></h2>
 <p>Los <strong>filtros de selección estáticos</strong> aplican las mismas condiciones de filtrado para todos los encuestados. Al usar filtros de selección estáticos, se filtra una lista de opciones, pero esta no varía según las respuestas anteriores. Esto puede ser útil cuando quieres reutilizar una lista de opciones en varias preguntas de tu formulario con variaciones menores, sin duplicar la lista de opciones varias veces en tu <strong>hoja choices</strong>.</p>
 <p>Para agregar filtros de selección estáticos en XLSForm:</p>
 <ol class="arabic simple">
@@ -296,7 +296,7 @@ Para practicar con filtros de selección en XLSForm, consulta el <a href="https:
 </section>
 </section>
 <section id="agregar-filtros-de-seleccion-dinamicos">
-<h2>Agregar filtros de selección dinámicos<a class="headerlink" href="#agregar-filtros-de-seleccion-dinamicos" title="Link to this heading">¶</a></h2>
+<span id="agregar-filtros-de-selección-dinámicos"></span><h2>Agregar filtros de selección dinámicos<a class="headerlink" href="#agregar-filtros-de-seleccion-dinamicos" title="Link to this heading">¶</a></h2>
 <p>Los filtros de selección también se pueden usar para filtrar una lista de opciones según una respuesta anterior. En este caso, tendrás una <strong>pregunta principal</strong> con una <strong>lista principal</strong> de opciones correspondiente, y una <strong>pregunta secundaria</strong> con una <strong>lista secundaria</strong> de opciones correspondiente. La lista de opciones para la pregunta secundaria se filtra según la respuesta a la pregunta principal.</p>
 <p class="note">
 Para ver un ejemplo de un XLSForm que usa filtros de selección dinámicos, consulta este <a href="https://docs.google.com/spreadsheets/d/10gpBV6YaYGx1i367hyW-w1Ms9tkUQnCx0V8YsdwYxmk/edit?gid=0#gid=0">formulario de ejemplo</a>.
@@ -323,7 +323,7 @@ Para ver un ejemplo de un XLSForm que usa filtros de selección dinámicos, cons
 </ol>
 <p>Cuando un encuestado selecciona una opción en la pregunta principal, la lista de opciones para la pregunta secundaria se filtrará para incluir solo las opciones correspondientes.</p>
 <section id="id1">
-<h3>Ejemplo<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
+<span id="ejemplo-1"></span><h3>Ejemplo<a class="headerlink" href="#id1" title="Link to this heading">¶</a></h3>
 <p>En el ejemplo a continuación, <code class="docutils literal notranslate"><span class="pre">continent</span></code> es la <strong>pregunta principal</strong> y <code class="docutils literal notranslate"><span class="pre">country</span></code> es la <strong>pregunta secundaria</strong>. La lista de opciones para la pregunta <code class="docutils literal notranslate"><span class="pre">country</span></code> se filtrará según la respuesta a la pregunta <code class="docutils literal notranslate"><span class="pre">continent</span></code>.</p>
 <p><strong>hoja survey</strong></p>
 <table class="docutils align-default">
@@ -402,7 +402,7 @@ Para ver un ejemplo de un XLSForm que usa filtros de selección dinámicos, cons
 </section>
 </section>
 <section id="filtros-de-seleccion-avanzados-en-xlsform">
-<h2>Filtros de selección avanzados en XLSForm<a class="headerlink" href="#filtros-de-seleccion-avanzados-en-xlsform" title="Link to this heading">¶</a></h2>
+<span id="filtros-de-selección-avanzados-en-xlsform"></span><h2>Filtros de selección avanzados en XLSForm<a class="headerlink" href="#filtros-de-seleccion-avanzados-en-xlsform" title="Link to this heading">¶</a></h2>
 <p>Puedes crear filtros de selección más avanzados usando operadores lógicos, operadores matemáticos, funciones y expresiones regulares en tus expresiones de filtro de selección. Esto permite un filtrado de opciones altamente personalizado y preciso, adaptando el formulario a requisitos específicos de recolección de datos y características de los encuestados.</p>
 <p class="note">
 <strong>Nota:</strong> En las expresiones de filtro de selección avanzadas, la columna <code>name</code> de la <strong>hoja choices</strong> se puede usar como columna de filtro.
@@ -445,7 +445,7 @@ Para ver un ejemplo de un XLSForm que usa filtros de selección dinámicos, cons
   Para aprender más sobre cómo crear expresiones de lógica de formularios en XLSForm, consulta <a href="https://support.kobotoolbox.org/es/form_logic_xls.html">Introducción a la lógica de formularios en XLSForm</a>.
 </p>
 <section id="id2">
-<h3>Ejemplo<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
+<span id="ejemplo-2"></span><h3>Ejemplo<a class="headerlink" href="#id2" title="Link to this heading">¶</a></h3>
 <p>En el ejemplo a continuación, la lista de opciones subyacente para <code class="docutils literal notranslate"><span class="pre">Q1</span></code> y <code class="docutils literal notranslate"><span class="pre">Q2</span></code> es la misma, pero solo las opciones seleccionadas en <code class="docutils literal notranslate"><span class="pre">Q1</span></code> se mostrarán a los encuestados al responder <code class="docutils literal notranslate"><span class="pre">Q2</span></code>.</p>
 <p><strong>hoja survey</strong></p>
 <table class="docutils align-default">
@@ -526,7 +526,7 @@ Para ver un ejemplo de un XLSForm que usa filtros de selección dinámicos, cons
 </section>
 </section>
 <section id="resolucion-de-problemas">
-<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
+<span id="resolución-de-problemas"></span><h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
 <details>
   <summary><strong>El formulario se ralentiza o falla con listas muy largas</strong></summary>
   Las listas de opciones grandes que incluyen miles de filas pueden funcionar en la vista previa pero fallar al implementarse. Esto ocurre porque la vista previa del navegador puede manejar listas grandes, mientras que la aplicación móvil o el analizador XLS no pueden. Para solucionar esto, mueve las listas grandes a un archivo CSV externo y usa <a href="https://support.kobotoolbox.org/es/select_from_file_xls.html">preguntas select_from_file</a> con filtros de selección. Este enfoque se recomienda para listas con más de 3.000 opciones.

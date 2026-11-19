@@ -182,7 +182,7 @@
         <section class="page__body" role="main">
           
   <section id="selectionner-des-options-a-partir-d-un-fichier-externe-avec-xlsform">
-<h1>Sélectionner des options à partir d’un fichier externe avec XLSForm<a class="headerlink" href="#selectionner-des-options-a-partir-d-un-fichier-externe-avec-xlsform" title="Lien vers cette rubrique">¶</a></h1>
+<span id="sélectionner-des-options-à-partir-dun-fichier-externe-avec-xlsform"></span><h1>Sélectionner des options à partir d’un fichier externe avec XLSForm<a class="headerlink" href="#selectionner-des-options-a-partir-d-un-fichier-externe-avec-xlsform" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/select_from_file_xls.md" class="reference">23 avr. 2026</a></p>
 <p>Les questions <strong>Sélectionner à partir d’un fichier</strong> vous permettent d’utiliser une liste de choix stockée dans un fichier externe plutôt que de la définir directement dans votre formulaire. Il en existe deux types : <code class="docutils literal notranslate"><span class="pre">select_one_from_file</span></code> pour sélectionner un <strong>choix unique</strong>, et <code class="docutils literal notranslate"><span class="pre">select_multiple_from_file</span></code> pour sélectionner <strong>plusieurs choix</strong>.</p>
 <p>Utiliser un fichier séparé pour votre liste de choix facilite la gestion de longues listes, leur réutilisation dans plusieurs formulaires, et la mise à jour des options en cas de besoin. Les formats de fichiers disponibles sont CSV, XML et GeoJSON.</p>
@@ -254,7 +254,7 @@ Pour en savoir plus sur la mise en forme des fichiers XML ou GeoJSON, consultez 
 </tbody>
 </table>
 <section id="configurer-les-colonnes-de-nom-et-de-libelle-des-choix">
-<h3>Configurer les colonnes de nom et de libellé des choix<a class="headerlink" href="#configurer-les-colonnes-de-nom-et-de-libelle-des-choix" title="Lien vers cette rubrique">¶</a></h3>
+<span id="configurer-les-colonnes-de-nom-et-de-libellé-des-choix"></span><h3>Configurer les colonnes de nom et de libellé des choix<a class="headerlink" href="#configurer-les-colonnes-de-nom-et-de-libelle-des-choix" title="Lien vers cette rubrique">¶</a></h3>
 <p>Si votre fichier externe utilise des noms de colonnes différents de <code class="docutils literal notranslate"><span class="pre">name</span></code> et <code class="docutils literal notranslate"><span class="pre">label</span></code> :</p>
 <ol class="arabic simple">
 <li><p>Ajoutez une colonne <code class="docutils literal notranslate"><span class="pre">parameters</span></code> à l’onglet survey.</p></li>
@@ -303,7 +303,7 @@ Pour en savoir plus sur l'importation de fichiers multimédias, consultez l'arti
 </p>
 </section>
 <section id="resolution-de-problemes">
-<h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="résolution-de-problèmes"></span><h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
 <details>
   <summary><strong>Listes de choix traduites</strong></summary>
   Les questions Sélectionner à partir d'un fichier ne permettent pas encore d'utiliser les <a href="https://support.kobotoolbox.org/fr/language_xls.html">listes de choix traduites</a>. Votre fichier de choix externe ne peut contenir qu'une seule colonne <code>label</code>. Toute colonne <code>label</code> traduite supplémentaire sera ignorée dans les formulaires web ou provoquera une erreur dans KoboCollect. Pour les formulaires incluant des traductions, utilisez des listes de choix internes, ou configurez plusieurs questions <strong>Sélectionner à partir d'un fichier</strong> avec une logique de saut afin d'utiliser différents fichiers selon la langue du formulaire.

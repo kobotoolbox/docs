@@ -201,7 +201,7 @@ Pour vous exercer à ajouter des traductions dans XLSForm, consultez le cours <a
 <p>Les codes de langue sont disponibles dans le <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">registre IANA des sous-étiquettes de langue</a>. Sur le site de l’IANA, le champ <strong>Description</strong> correspond au nom de la langue et le champ <strong>Subtag</strong> correspond au code de langue (par exemple, <strong>Description :</strong> French, <strong>Subtag :</strong> fr).</p>
 </section>
 <section id="definir-la-langue-par-defaut-du-formulaire">
-<h2>Définir la langue par défaut du formulaire<a class="headerlink" href="#definir-la-langue-par-defaut-du-formulaire" title="Lien vers cette rubrique">¶</a></h2>
+<span id="définir-la-langue-par-défaut-du-formulaire"></span><h2>Définir la langue par défaut du formulaire<a class="headerlink" href="#definir-la-langue-par-defaut-du-formulaire" title="Lien vers cette rubrique">¶</a></h2>
 <p>Pour ajouter des traductions à un XLSForm, commencez par définir la langue par défaut. Il s’agit de la langue dans laquelle le formulaire s’ouvrira par défaut.</p>
 <p>Pour définir la langue par défaut de votre formulaire :</p>
 <ol class="arabic simple">
@@ -392,7 +392,7 @@ Pour vous exercer à ajouter des traductions dans XLSForm, consultez le cours <a
 <section id="recommandations-pour-les-traductions">
 <h2>Recommandations pour les traductions<a class="headerlink" href="#recommandations-pour-les-traductions" title="Lien vers cette rubrique">¶</a></h2>
 <section id="utiliser-les-fonctionnalites-du-tableur-pour-les-traductions-en-masse">
-<h3>Utiliser les fonctionnalités du tableur pour les traductions en masse<a class="headerlink" href="#utiliser-les-fonctionnalites-du-tableur-pour-les-traductions-en-masse" title="Lien vers cette rubrique">¶</a></h3>
+<span id="utiliser-les-fonctionnalités-du-tableur-pour-les-traductions-en-masse"></span><h3>Utiliser les fonctionnalités du tableur pour les traductions en masse<a class="headerlink" href="#utiliser-les-fonctionnalites-du-tableur-pour-les-traductions-en-masse" title="Lien vers cette rubrique">¶</a></h3>
 <p>XLSForm facilite la traduction des éléments du formulaire en masse, plutôt que de saisir les traductions une par une. Par exemple, vous pouvez copier une colonne entière dans un outil de traduction pour une traduction en masse, puis coller la colonne dans votre XLSForm. Si vous utilisez Google Sheets pour créer votre XLSForm, vous pouvez utiliser la formule <code class="docutils literal notranslate"><span class="pre">GOOGLETRANSLATE()</span></code> pour automatiser le processus de traduction.</p>
 <p>Les traductions automatiques doivent toujours être relues et validées par un locuteur natif afin de garantir leur exactitude, leur adéquation culturelle et leur pertinence contextuelle. Cette étape contribue à maintenir la qualité et la fiabilité de votre contenu traduit.</p>
 </section>
@@ -406,7 +406,7 @@ Pour vous exercer à ajouter des traductions dans XLSForm, consultez le cours <a
 <p>Pour saisir du texte Unicode, il n’est pas nécessaire d’installer des polices spéciales. Il suffit de configurer le clavier de votre système dans la langue ou le script approprié et de taper normalement. Évitez d’utiliser des pseudo-polices (c’est-à-dire des polices spéciales qui imitent visuellement des scripts non latins en réaffectant des caractères latins), car elles ne sont pas compatibles avec KoboToolbox et peuvent entraîner de graves problèmes d’affichage et d’intégrité des données. Si vous utilisez Windows et avez besoin d’aide pour configurer le clavier de votre système, consultez la <a class="reference external" href="https://support.microsoft.com/en-us/windows/manage-the-language-and-keyboard-input-layout-settings-in-windows-12a10cb4-8626-9b77-0ccb-5013e0c7c7a2">documentation Microsoft</a>.</p>
 </section>
 <section id="traduire-vers-des-scripts-de-droite-a-gauche">
-<h3>Traduire vers des scripts de droite à gauche<a class="headerlink" href="#traduire-vers-des-scripts-de-droite-a-gauche" title="Lien vers cette rubrique">¶</a></h3>
+<span id="traduire-vers-des-scripts-de-droite-à-gauche"></span><h3>Traduire vers des scripts de droite à gauche<a class="headerlink" href="#traduire-vers-des-scripts-de-droite-a-gauche" title="Lien vers cette rubrique">¶</a></h3>
 <p>Lorsque vous ajoutez une langue utilisant un script de droite à gauche (RTL), comme l’arabe, l’hébreu ou l’ourdou, il est important d”<strong>utiliser le code de langue correct</strong> et de veiller à ce que le <strong>premier texte visible de la traduction</strong> (par exemple, un libellé de question, un indice ou une note) soit rédigé dans la langue RTL. Cela garantit que la mise en page du formulaire ne bascule pas par défaut vers un formatage de gauche à droite (LTR).</p>
 <p>De plus, lorsque vous intégrez des références à des questions dans des libellés de questions en scripts RTL, notez que la syntaxe de référencement des questions est inversée (c’est-à-dire <code class="docutils literal notranslate"><span class="pre">{question_name}$</span></code>).</p>
 <p><strong>onglet survey</strong></p>
@@ -449,7 +449,7 @@ Pour vous exercer à ajouter des traductions dans XLSForm, consultez le cours <a
 </section>
 </section>
 <section id="resolution-de-problemes">
-<h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="résolution-de-problèmes"></span><h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
 <details>
 <summary><b>Une langue sans nom apparaît après l'importation d'un XLSForm</b></summary>
 Une langue sans nom peut apparaître si votre XLSForm ne contient pas de colonnes de traduction pour les éléments visibles par les répondants, tels que les colonnes <code>hint</code>, <code>guidance_hint</code>, média, <code>constraint_messages</code> ou <code>required_message</code>. Tant que ce problème n'est pas corrigé, le texte de ces colonnes apparaîtra vide pour toutes les langues autres que la langue par défaut.<br><br>Une langue sans nom peut également apparaître si vous avez défini un <code>default_language</code> dans l'onglet <code>settings</code>, par exemple <code>English (en)</code>, mais que votre formulaire ne comporte qu'une seule langue et utilise <code>label</code> au lieu de <code>label::English (en)</code>. Pour corriger ce problème, supprimez le paramètre de langue par défaut dans l'onglet <code>settings</code>.<br><br>Enfin, une langue sans nom peut apparaître si vous importez un XLSForm dans un projet qui avait auparavant plusieurs langues, mais qui n'en a plus qu'une seule non spécifiée. Si votre formulaire ne comporte désormais qu'une seule langue, ouvrez l'<a class="reference external" href="https://support.kobotoolbox.org/fr/language_dashboard.html">interface de traductions</a>, définissez la langue sans nom comme langue par défaut, puis supprimez les autres langues.

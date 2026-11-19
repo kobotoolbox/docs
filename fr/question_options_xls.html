@@ -240,7 +240,7 @@ Pour un apprentissage pratique des options de questions dans XLSForm, consultez 
 </p>
 </section>
 <section id="afficher-les-instructions-supplementaires-dans-kobocollect">
-<h3>Afficher les instructions supplémentaires dans KoboCollect<a class="headerlink" href="#afficher-les-instructions-supplementaires-dans-kobocollect" title="Lien vers cette rubrique">¶</a></h3>
+<span id="afficher-les-instructions-supplémentaires-dans-kobocollect"></span><h3>Afficher les instructions supplémentaires dans KoboCollect<a class="headerlink" href="#afficher-les-instructions-supplementaires-dans-kobocollect" title="Lien vers cette rubrique">¶</a></h3>
 <p>Dans les formulaires web, les instructions supplémentaires apparaissent dans une section repliable <strong>Plus de détails</strong>. Dans KoboCollect, elles sont masquées par défaut, mais vous pouvez <a class="reference external" href="https://support.kobotoolbox.org/fr/kobocollect_settings.html#form-management-settings">modifier les paramètres de votre projet</a> pour les afficher en permanence ou dans une section repliable.</p>
 <p>Pour afficher les instructions supplémentaires dans KoboCollect, suivez les étapes ci-dessous :</p>
 <ol class="arabic simple">
@@ -271,7 +271,7 @@ Pour un apprentissage pratique des options de questions dans XLSForm, consultez 
 <strong>Note :</strong> Seules les questions nécessitant une saisie doivent être marquées comme obligatoires dans votre XLSForm. Si des questions de type <code>note</code> sont marquées comme obligatoires, vous ne pourrez pas continuer ni soumettre le formulaire.
 </p>
 <section id="modifier-le-message-d-obligation-par-defaut">
-<h3>Modifier le message d’obligation par défaut<a class="headerlink" href="#modifier-le-message-d-obligation-par-defaut" title="Lien vers cette rubrique">¶</a></h3>
+<span id="modifier-le-message-dobligation-par-défaut"></span><h3>Modifier le message d’obligation par défaut<a class="headerlink" href="#modifier-le-message-d-obligation-par-defaut" title="Lien vers cette rubrique">¶</a></h3>
 <p>Vous pouvez modifier le message d’obligation par défaut dans votre XLSForm en suivant les étapes ci-dessous :</p>
 <ol class="arabic simple">
 <li><p>Ajoutez une colonne <code class="docutils literal notranslate"><span class="pre">required_message</span></code> à l’onglet survey.</p></li>
@@ -314,7 +314,7 @@ Pour un apprentissage pratique des options de questions dans XLSForm, consultez 
 </section>
 </section>
 <section id="reponses-par-defaut">
-<h2>Réponses par défaut<a class="headerlink" href="#reponses-par-defaut" title="Lien vers cette rubrique">¶</a></h2>
+<span id="réponses-par-défaut"></span><h2>Réponses par défaut<a class="headerlink" href="#reponses-par-defaut" title="Lien vers cette rubrique">¶</a></h2>
 <p>Une <strong>réponse par défaut</strong> prérenseigne une question avec une réponse prédéfinie basée sur une réponse courante ou attendue. La réponse par défaut peut être fixe ou <a class="reference external" href="https://support.kobotoolbox.org/fr/question_options_xls.html#setting-dynamic-default-responses">déterminée dynamiquement</a> en fonction de la réponse à une question précédente.</p>
 <p>La réponse par défaut sera enregistrée comme réponse finale lors de la soumission du formulaire, <strong>sauf si elle est modifiée par le répondant</strong> pendant la collecte de données. Pour empêcher les répondants de modifier une réponse par défaut, ajoutez une colonne <code class="docutils literal notranslate"><span class="pre">read_only</span></code> et définissez-la comme <code class="docutils literal notranslate"><span class="pre">TRUE</span></code>.</p>
 <p class="note">
@@ -373,7 +373,7 @@ Pour un apprentissage pratique des options de questions dans XLSForm, consultez 
 </tbody>
 </table>
 <section id="format-des-reponses-par-defaut">
-<h3>Format des réponses par défaut<a class="headerlink" href="#format-des-reponses-par-defaut" title="Lien vers cette rubrique">¶</a></h3>
+<span id="format-des-réponses-par-défaut"></span><h3>Format des réponses par défaut<a class="headerlink" href="#format-des-reponses-par-defaut" title="Lien vers cette rubrique">¶</a></h3>
 <p>Le format de la réponse par défaut dépend du type de question et des données collectées :</p>
 <table class="docutils align-default">
 <thead>
@@ -401,7 +401,7 @@ Pour un apprentissage pratique des options de questions dans XLSForm, consultez 
 </table>
 </section>
 <section id="definir-des-reponses-par-defaut-dynamiques">
-<h3>Définir des réponses par défaut dynamiques<a class="headerlink" href="#definir-des-reponses-par-defaut-dynamiques" title="Lien vers cette rubrique">¶</a></h3>
+<span id="définir-des-réponses-par-défaut-dynamiques"></span><h3>Définir des réponses par défaut dynamiques<a class="headerlink" href="#definir-des-reponses-par-defaut-dynamiques" title="Lien vers cette rubrique">¶</a></h3>
 <p>Les réponses par défaut saisies dans le champ <code class="docutils literal notranslate"><span class="pre">default</span></code> doivent être des valeurs fixes. Pour définir une <strong>réponse par défaut dynamique</strong> basée sur une réponse précédente, utilisez les colonnes <code class="docutils literal notranslate"><span class="pre">calculation</span></code> et <code class="docutils literal notranslate"><span class="pre">trigger</span></code> à la place de la colonne <code class="docutils literal notranslate"><span class="pre">default</span></code> :</p>
 <ol class="arabic simple">
 <li><p>Dans la colonne <code class="docutils literal notranslate"><span class="pre">calculation</span></code>, saisissez la <strong>référence à la question</strong> qui alimentera dynamiquement la réponse par défaut.</p></li>
@@ -451,7 +451,7 @@ Pour un apprentissage pratique des options de questions dans XLSForm, consultez 
 </section>
 </section>
 <section id="parametres-de-questions">
-<h2>Paramètres de questions<a class="headerlink" href="#parametres-de-questions" title="Lien vers cette rubrique">¶</a></h2>
+<span id="paramètres-de-questions"></span><h2>Paramètres de questions<a class="headerlink" href="#parametres-de-questions" title="Lien vers cette rubrique">¶</a></h2>
 <p>Les paramètres de questions dans XLSForm vous permettent d’affiner le comportement de vos questions au-delà des paramètres de base.</p>
 <p>Pour ajouter des paramètres de questions dans XLSForm :</p>
 <ol class="arabic simple">
@@ -487,7 +487,7 @@ Pour un apprentissage pratique des options de questions dans XLSForm, consultez 
 </tbody>
 </table>
 <section id="parametres-de-questions-courants">
-<h3>Paramètres de questions courants<a class="headerlink" href="#parametres-de-questions-courants" title="Lien vers cette rubrique">¶</a></h3>
+<span id="paramètres-de-questions-courants"></span><h3>Paramètres de questions courants<a class="headerlink" href="#parametres-de-questions-courants" title="Lien vers cette rubrique">¶</a></h3>
 <p>Les différents types de questions dans XLSForm disposent de paramètres différents. Les paramètres les plus courants sont :</p>
 <table class="docutils align-default">
 <thead>
@@ -530,7 +530,7 @@ Pour un apprentissage pratique des options de questions dans XLSForm, consultez 
 </section>
 </section>
 <section id="options-de-questions-supplementaires">
-<h2>Options de questions supplémentaires<a class="headerlink" href="#options-de-questions-supplementaires" title="Lien vers cette rubrique">¶</a></h2>
+<span id="options-de-questions-supplémentaires"></span><h2>Options de questions supplémentaires<a class="headerlink" href="#options-de-questions-supplementaires" title="Lien vers cette rubrique">¶</a></h2>
 <p>Les XLSForms peuvent inclure des colonnes supplémentaires dans l’onglet survey pour des formulaires et des fonctionnalités plus avancés. En voici quelques-unes.</p>
 <table class="docutils align-default">
 <thead>

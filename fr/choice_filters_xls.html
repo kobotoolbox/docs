@@ -323,7 +323,7 @@ Pour un exemple de XLSForm utilisant des filtres de choix dynamiques, consultez 
 </ol>
 <p>Lorsqu’un répondant sélectionne une option dans la question principale, la liste de choix de la question secondaire est filtrée pour n’inclure que les choix correspondants.</p>
 <section id="id1">
-<h3>Exemple<a class="headerlink" href="#id1" title="Lien vers cette rubrique">¶</a></h3>
+<span id="exemple-1"></span><h3>Exemple<a class="headerlink" href="#id1" title="Lien vers cette rubrique">¶</a></h3>
 <p>Dans l’exemple ci-dessous, <code class="docutils literal notranslate"><span class="pre">continent</span></code> est la <strong>question principale</strong> et <code class="docutils literal notranslate"><span class="pre">country</span></code> est la <strong>question secondaire</strong>. La liste de choix de la question <code class="docutils literal notranslate"><span class="pre">country</span></code> sera filtrée en fonction de la réponse à la question <code class="docutils literal notranslate"><span class="pre">continent</span></code>.</p>
 <p><strong>onglet survey</strong></p>
 <table class="docutils align-default">
@@ -402,7 +402,7 @@ Pour un exemple de XLSForm utilisant des filtres de choix dynamiques, consultez 
 </section>
 </section>
 <section id="filtres-de-choix-avances-dans-xlsform">
-<h2>Filtres de choix avancés dans XLSForm<a class="headerlink" href="#filtres-de-choix-avances-dans-xlsform" title="Lien vers cette rubrique">¶</a></h2>
+<span id="filtres-de-choix-avancés-dans-xlsform"></span><h2>Filtres de choix avancés dans XLSForm<a class="headerlink" href="#filtres-de-choix-avances-dans-xlsform" title="Lien vers cette rubrique">¶</a></h2>
 <p>Vous pouvez créer des filtres de choix plus avancés en utilisant des opérateurs logiques, des opérateurs mathématiques, des fonctions et des expressions régulières (regex) dans vos expressions de filtre de choix. Cela permet un filtrage des options hautement personnalisé et précis, adapté aux exigences spécifiques de collecte de données et aux caractéristiques des répondants.</p>
 <p class="note">
 <strong>Note :</strong> Dans les expressions de filtre de choix avancées, la colonne <code>name</code> de l'<strong>onglet choices</strong> peut être utilisée comme colonne de filtre.
@@ -445,7 +445,7 @@ Pour un exemple de XLSForm utilisant des filtres de choix dynamiques, consultez 
   Pour en savoir plus sur la création d'expressions de logique de formulaire dans XLSForm, consultez l'article <a href="https://support.kobotoolbox.org/fr/form_logic_xls.html">Introduction à la logique de formulaire dans XLSForm</a>.
 </p>
 <section id="id2">
-<h3>Exemple<a class="headerlink" href="#id2" title="Lien vers cette rubrique">¶</a></h3>
+<span id="exemple-2"></span><h3>Exemple<a class="headerlink" href="#id2" title="Lien vers cette rubrique">¶</a></h3>
 <p>Dans l’exemple ci-dessous, la liste de choix sous-jacente pour <code class="docutils literal notranslate"><span class="pre">Q1</span></code> et <code class="docutils literal notranslate"><span class="pre">Q2</span></code> est identique, mais seules les options sélectionnées dans <code class="docutils literal notranslate"><span class="pre">Q1</span></code> seront affichées aux répondants lorsqu’ils répondront à <code class="docutils literal notranslate"><span class="pre">Q2</span></code>.</p>
 <p><strong>onglet survey</strong></p>
 <table class="docutils align-default">
@@ -526,7 +526,7 @@ Pour un exemple de XLSForm utilisant des filtres de choix dynamiques, consultez 
 </section>
 </section>
 <section id="resolution-de-problemes">
-<h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="résolution-de-problèmes"></span><h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
 <details>
   <summary><strong>Le formulaire ralentit ou plante avec de très longues listes</strong></summary>
   Les listes de choix volumineuses contenant des milliers de lignes peuvent fonctionner en aperçu mais échouer lors du déploiement. Cela se produit parce que l'aperçu dans le navigateur peut gérer de grandes listes, contrairement à l'application mobile ou au parseur XLS. Pour résoudre ce problème, déplacez les grandes listes vers un fichier CSV externe et utilisez des <a href="https://support.kobotoolbox.org/fr/select_from_file_xls.html">questions select_from_file</a> avec des filtres de choix. Cette approche est recommandée pour les listes de plus de 3 000 options.

@@ -182,17 +182,17 @@
         <section class="page__body" role="main">
           
   <section id="connexion-de-kobotoolbox-a-power-bi">
-<h1>Connexion de KoboToolbox à Power BI<a class="headerlink" href="#connexion-de-kobotoolbox-a-power-bi" title="Lien vers cette rubrique">¶</a></h1>
+<span id="connexion-de-kobotoolbox-à-power-bi"></span><h1>Connexion de KoboToolbox à Power BI<a class="headerlink" href="#connexion-de-kobotoolbox-a-power-bi" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/ae9e699afd6c0ed484945430ba6722b974b99b49/source/pulling_data_into_powerbi.md" class="reference">22 août 2022</a></p>
 <p>L’API KoboToolbox vous permet de connecter votre projet à d’autres outils d’analyse de données tels que Power BI, Excel et Google Sheets. Les données que vous collectez sont partagées avec l’application externe, qui peut ensuite les utiliser pour des analyses, des visualisations et des tableaux de bord.</p>
 <p>L’un des programmes d’analyse et de visualisation de données les plus populaires auxquels vous pouvez vous connecter est <a class="reference external" href="https://powerbi.microsoft.com">Microsoft Power BI</a>.</p>
 <p>Cet article vous guide à travers les étapes de connexion de votre projet à Power BI. Si vous souhaitez vous connecter à Excel, consultez l’article <a class="reference internal" href="pulling_data_into_excelquery.html"><span class="std std-doc">Connexion de KoboToolbox à Microsoft Excel</span></a>.</p>
 <section id="etape-1-obtenir-l-url-des-exports-synchronises">
-<h2>Étape 1 : Obtenir l’URL des exports synchronisés<a class="headerlink" href="#etape-1-obtenir-l-url-des-exports-synchronises" title="Lien vers cette rubrique">¶</a></h2>
+<span id="étape-1--obtenir-lurl-des-exports-synchronisés"></span><h2>Étape 1 : Obtenir l’URL des exports synchronisés<a class="headerlink" href="#etape-1-obtenir-l-url-des-exports-synchronises" title="Lien vers cette rubrique">¶</a></h2>
 <p>La première étape pour importer des données dans Power BI consiste à obtenir l’URL des exports synchronisés via l’API KoboToolbox. La procédure détaillée est décrite dans l’article <a class="reference internal" href="synchronous_exports.html"><span class="std std-doc">Utiliser l’API pour les exports synchronisées</span></a>.</p>
 </section>
 <section id="etape-2-ajouter-la-source-de-donnees">
-<h2>Étape 2 : Ajouter la source de données<a class="headerlink" href="#etape-2-ajouter-la-source-de-donnees" title="Lien vers cette rubrique">¶</a></h2>
+<span id="étape-2--ajouter-la-source-de-données"></span><h2>Étape 2 : Ajouter la source de données<a class="headerlink" href="#etape-2-ajouter-la-source-de-donnees" title="Lien vers cette rubrique">¶</a></h2>
 <p>Une fois que vous disposez de votre URL, vous pouvez suivre les étapes ci-dessous dans Power BI :</p>
 <ul class="simple">
 <li><p>Cliquez sur la flèche du menu déroulant du bouton « Get Data »</p></li>
@@ -216,14 +216,14 @@
 </p>
 </section>
 <section id="mettre-a-jour-les-donnees-dans-vos-rapports">
-<h2>Mettre à jour les données dans vos rapports<a class="headerlink" href="#mettre-a-jour-les-donnees-dans-vos-rapports" title="Lien vers cette rubrique">¶</a></h2>
+<span id="mettre-à-jour-les-données-dans-vos-rapports"></span><h2>Mettre à jour les données dans vos rapports<a class="headerlink" href="#mettre-a-jour-les-donnees-dans-vos-rapports" title="Lien vers cette rubrique">¶</a></h2>
 <p>Lorsque les données de votre projet sont mises à jour sur le serveur KoboToolbox — par exemple lors de nouvelles soumissions, de modifications des statuts de validation, de modifications ou de suppressions — vous devez les synchroniser avec vos rapports.</p>
 <p>Pour ce faire, cliquez sur <strong>Refresh</strong> dans l’onglet « Home ».</p>
 </section>
 <section id="resolution-de-problemes">
-<h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="résolution-de-problèmes"></span><h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
 <section id="echec-de-la-connexion-a-kobotoolbox">
-<h3>Échec de la connexion à KoboToolbox<a class="headerlink" href="#echec-de-la-connexion-a-kobotoolbox" title="Lien vers cette rubrique">¶</a></h3>
+<span id="échec-de-la-connexion-à-kobotoolbox"></span><h3>Échec de la connexion à KoboToolbox<a class="headerlink" href="#echec-de-la-connexion-a-kobotoolbox" title="Lien vers cette rubrique">¶</a></h3>
 <p>Il peut arriver que, même après avoir saisi les identifiants corrects pour vous connecter à votre projet, une erreur s’affiche. Cela peut se produire si Power BI a été configuré pour se connecter à un compte précédent et que vous tentez maintenant de vous connecter avec un compte différent sur le même serveur KoboToolbox.</p>
 <p>Pour réinitialiser les paramètres d’authentification :</p>
 <ul class="simple">
@@ -232,7 +232,7 @@
 <p><img alt="Effacer les autorisations" src="_images/data_source_settings1.gif" /></p>
 </section>
 <section id="echec-de-l-actualisation-des-donnees">
-<h3>Échec de l’actualisation des données<a class="headerlink" href="#echec-de-l-actualisation-des-donnees" title="Lien vers cette rubrique">¶</a></h3>
+<span id="échec-de-lactualisation-des-données"></span><h3>Échec de l’actualisation des données<a class="headerlink" href="#echec-de-l-actualisation-des-donnees" title="Lien vers cette rubrique">¶</a></h3>
 <p>Si une erreur s’affiche lors de l’actualisation des données, plusieurs raisons sont possibles :</p>
 <ul class="simple">
 <li><p>Vos informations d’authentification ont peut-être changé. Vous devrez suivre les instructions ci-dessus pour modifier vos <strong>Data Source Settings</strong>.</p></li>

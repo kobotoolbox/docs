@@ -201,7 +201,7 @@
 Pour une pratique concrète de la logique de saut dans XLSForm, consultez le <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">cours XLSForm Fundamentals</a> de la KoboToolbox Academy.
 </p>
 <section id="ajouter-des-conditions-de-logique-de-saut-a-des-questions-individuelles">
-<h2>Ajouter des conditions de logique de saut à des questions individuelles<a class="headerlink" href="#ajouter-des-conditions-de-logique-de-saut-a-des-questions-individuelles" title="Lien vers cette rubrique">¶</a></h2>
+<span id="ajouter-des-conditions-de-logique-de-saut-à-des-questions-individuelles"></span><h2>Ajouter des conditions de logique de saut à des questions individuelles<a class="headerlink" href="#ajouter-des-conditions-de-logique-de-saut-a-des-questions-individuelles" title="Lien vers cette rubrique">¶</a></h2>
 <p>La logique de saut utilise le <a class="reference external" href="https://support.kobotoolbox.org/fr/form_logic_xls.html#question-referencing">référencement de questions</a> pour n’afficher que les questions pertinentes pour le répondant en fonction des réponses précédentes. La question utilisée pour définir la logique de pertinence est appelée la <strong>question de référence</strong>.</p>
 <p>Pour ajouter une logique de saut dans XLSForm :</p>
 <ol class="arabic simple">
@@ -319,7 +319,7 @@ Pour une pratique concrète de la logique de saut dans XLSForm, consultez le <a 
 </table>
 </section>
 <section id="ajouter-une-logique-de-saut-selon-qu-une-question-a-recu-une-reponse-ou-non">
-<h2>Ajouter une logique de saut selon qu’une question a reçu une réponse ou non<a class="headerlink" href="#ajouter-une-logique-de-saut-selon-qu-une-question-a-recu-une-reponse-ou-non" title="Lien vers cette rubrique">¶</a></h2>
+<span id="ajouter-une-logique-de-saut-selon-quune-question-a-reçu-une-réponse-ou-non"></span><h2>Ajouter une logique de saut selon qu’une question a reçu une réponse ou non<a class="headerlink" href="#ajouter-une-logique-de-saut-selon-qu-une-question-a-recu-une-reponse-ou-non" title="Lien vers cette rubrique">¶</a></h2>
 <p>En plus d’ajouter une logique de saut basée sur une réponse spécifique, vous pouvez ajouter une logique de saut selon qu’une question a reçu une réponse ou a été laissée vide. Cela peut être utile pour ajouter des questions de suivi, ou lors de l’utilisation de <a class="reference external" href="https://support.kobotoolbox.org/fr/select_one_and_select_many.html">questions de type consentement</a> dans votre formulaire.</p>
 <p>Les questions sans réponse sont traitées comme des chaînes vides, notées par deux apostrophes simples <code class="docutils literal notranslate"><span class="pre">''</span></code>. Les conditions de logique de saut suivantes peuvent être utilisées :</p>
 <table class="docutils align-default">
@@ -366,7 +366,7 @@ Pour une pratique concrète de la logique de saut dans XLSForm, consultez le <a 
 </table>
 </section>
 <section id="ajouter-des-conditions-de-logique-de-saut-a-des-groupes-de-questions">
-<h2>Ajouter des conditions de logique de saut à des groupes de questions<a class="headerlink" href="#ajouter-des-conditions-de-logique-de-saut-a-des-groupes-de-questions" title="Lien vers cette rubrique">¶</a></h2>
+<span id="ajouter-des-conditions-de-logique-de-saut-à-des-groupes-de-questions"></span><h2>Ajouter des conditions de logique de saut à des groupes de questions<a class="headerlink" href="#ajouter-des-conditions-de-logique-de-saut-a-des-groupes-de-questions" title="Lien vers cette rubrique">¶</a></h2>
 <p>La logique de saut peut être appliquée aux groupes de questions ainsi qu’aux questions individuelles. Appliquer une logique de saut à un groupe affichera ou masquera toutes les questions de ce groupe en fonction des réponses précédentes.</p>
 <p>Pour ajouter une logique de saut à des groupes de questions :</p>
 <ol class="arabic simple">
@@ -417,7 +417,7 @@ Pour une pratique concrète de la logique de saut dans XLSForm, consultez le <a 
 </table>
 </section>
 <section id="resolution-de-problemes">
-<h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="résolution-de-problèmes"></span><h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
 <details>
 <summary><strong>La logique de saut ne fonctionne pas comme prévu avec les questions à choix multiple</strong></summary>
 Lorsque vous ajoutez une logique de saut basée sur une question à choix multiple, l'utilisation de <code>${question} = 'option1'</code> ne fonctionnera que si l'option 1 est <strong>la seule réponse sélectionnée</strong>. Pour appliquer une logique de saut lorsque l'option 1 est sélectionnée, qu'il y ait ou non d'autres options également sélectionnées, utilisez la fonction <code>selected()</code> : <code>selected(${question}, 'option1')</code> <br><br>

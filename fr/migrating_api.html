@@ -182,7 +182,7 @@
         <section class="page__body" role="main">
           
   <section id="migration-de-l-api-v1-vers-l-api-v2">
-<h1>Migration de l’API v1 vers l’API v2<a class="headerlink" href="#migration-de-l-api-v1-vers-l-api-v2" title="Lien vers cette rubrique">¶</a></h1>
+<span id="migration-de-lapi-v1-vers-lapi-v2"></span><h1>Migration de l’API v1 vers l’API v2<a class="headerlink" href="#migration-de-l-api-v1-vers-l-api-v2" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/235a3cc8f0f84190b5e792cf191b424123e88f46/source/migrating_api.md" class="reference">22 Jun 2026</a></p>
 <p>Dans le cadre de nos efforts continus pour simplifier et moderniser la plateforme KoboToolbox, tous les endpoints KPI et KoboCAT <code class="docutils literal notranslate"><span class="pre">v1</span></code> ont été supprimés. Les endpoints <code class="docutils literal notranslate"><span class="pre">v1</span></code> ont été remplacés par l’API KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code>, plus robuste et entièrement disponible.</p>
 <p>Cet article explique comment migrer vos intégrations API de l’API <code class="docutils literal notranslate"><span class="pre">v1</span></code> (KoboCAT et KPI) vers l’API KPI <code class="docutils literal notranslate"><span class="pre">v2</span></code>. Il présente chaque endpoint <code class="docutils literal notranslate"><span class="pre">v1</span></code> déprécié et son équivalent <code class="docutils literal notranslate"><span class="pre">v2</span></code> pour vous aider à faire évoluer vos workflows.</p>
@@ -263,7 +263,7 @@
 <h2>Migration de KoboCAT v1 vers KPI v2<a class="headerlink" href="#migration-de-kobocat-v1-vers-kpi-v2" title="Lien vers cette rubrique">¶</a></h2>
 <p>La section suivante liste les principaux endpoints de l’API KoboCAT <code class="docutils literal notranslate"><span class="pre">v1</span></code> et fournit leurs équivalents <code class="docutils literal notranslate"><span class="pre">v2</span></code>.</p>
 <section id="endpoints-de-donnees-liste-des-projets">
-<h3>Endpoints de données : liste des projets<a class="headerlink" href="#endpoints-de-donnees-liste-des-projets" title="Lien vers cette rubrique">¶</a></h3>
+<span id="endpoints-de-données--liste-des-projets"></span><h3>Endpoints de données : liste des projets<a class="headerlink" href="#endpoints-de-donnees-liste-des-projets" title="Lien vers cette rubrique">¶</a></h3>
 <p>Cet endpoint retourne la liste des formulaires auxquels vous avez accès, avec des liens vers leurs données de soumission, servant de point d’entrée pour accéder aux réponses ou les télécharger.</p>
 <p><strong>Correspondance des endpoints de <code class="docutils literal notranslate"><span class="pre">v1</span></code> à <code class="docutils literal notranslate"><span class="pre">v2</span></code></strong></p>
 <table class="docutils align-default">
@@ -399,7 +399,7 @@ curl<span class="w"> </span>-H<span class="w"> </span><span class="s2">"Authoriz
 </section>
 <hr class="docutils" />
 <section id="endpoints-de-donnees-donnees-de-soumission">
-<h3>Endpoints de données : données de soumission<a class="headerlink" href="#endpoints-de-donnees-donnees-de-soumission" title="Lien vers cette rubrique">¶</a></h3>
+<span id="endpoints-de-données--données-de-soumission"></span><h3>Endpoints de données : données de soumission<a class="headerlink" href="#endpoints-de-donnees-donnees-de-soumission" title="Lien vers cette rubrique">¶</a></h3>
 <p>Ces endpoints récupèrent toutes les données de soumission d’un projet spécifique ou une soumission unique du projet. <code class="docutils literal notranslate"><span class="pre">{uid}</span></code> est l’identifiant unique du projet et <code class="docutils literal notranslate"><span class="pre">{submission_id}</span></code> est l’identifiant unique d’une soumission de formulaire.</p>
 <table class="docutils align-default">
 <thead>
@@ -1025,7 +1025,7 @@ curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </spa
 </section>
 <hr class="docutils" />
 <section id="endpoints-de-metadonnees">
-<h3>Endpoints de métadonnées<a class="headerlink" href="#endpoints-de-metadonnees" title="Lien vers cette rubrique">¶</a></h3>
+<span id="endpoints-de-métadonnées"></span><h3>Endpoints de métadonnées<a class="headerlink" href="#endpoints-de-metadonnees" title="Lien vers cette rubrique">¶</a></h3>
 <p>Ces endpoints retournent une liste plate de tous les fichiers média associés à l’utilisateur actuel, pour tous les projets déployés ou un projet spécifique. Dans <code class="docutils literal notranslate"><span class="pre">v2</span></code>, les fichiers média sont désormais limités par projet. Comme pour les autres endpoints, <code class="docutils literal notranslate"><span class="pre">v2</span></code> introduit la pagination, tandis que <code class="docutils literal notranslate"><span class="pre">v1</span></code> retourne tous les résultats en une seule réponse.</p>
 <p><strong>Correspondance des endpoints</strong></p>
 <table class="docutils align-default">

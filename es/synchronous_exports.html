@@ -182,7 +182,7 @@
         <section class="page__body" role="main">
           
   <section id="usar-la-api-para-exportaciones-sincronicas">
-<h1>Usar la API para exportaciones sincrónicas<a class="headerlink" href="#usar-la-api-para-exportaciones-sincronicas" title="Link to this heading">¶</a></h1>
+<span id="usar-la-api-para-exportaciones-sincrónicas"></span><h1>Usar la API para exportaciones sincrónicas<a class="headerlink" href="#usar-la-api-para-exportaciones-sincronicas" title="Link to this heading">¶</a></h1>
 <p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/b0d195136b7fb3fe51b687cc03a5e8dcde946309/source/synchronous_exports.md" class="reference">22 Jun 2026</a></p>
 <iframe src="https://www.youtube.com/embed/qrkLi3VixVs?si=UXE40HQX2jEQrjBs&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>KoboToolbox ofrece dos métodos principales para acceder a tus datos: exportaciones asincrónicas y sincrónicas. El método asincrónico estándar consiste en <a class="reference internal" href="export_download.html"><span class="std std-doc">descargar manualmente archivos de datos</span></a> que contienen todos los envíos hasta el momento de la descarga. En cambio, las exportaciones sincrónicas permiten la integración automática de tus datos de KoboToolbox con aplicaciones externas como Microsoft Power BI, Excel o Google Sheets.</p>
@@ -200,7 +200,7 @@
     Para una introducción a la API de KoboToolbox, consulta <a href="https://support.kobotoolbox.org/es/api.html">Introducción a la API</a>.
 </p>
 <section id="generar-una-exportacion-con-nombre">
-<h2>Generar una exportación con nombre<a class="headerlink" href="#generar-una-exportacion-con-nombre" title="Link to this heading">¶</a></h2>
+<span id="generar-una-exportación-con-nombre"></span><h2>Generar una exportación con nombre<a class="headerlink" href="#generar-una-exportacion-con-nombre" title="Link to this heading">¶</a></h2>
 <p>Para generar exportaciones sincrónicas, primero debes crear una exportación con nombre para tu proyecto siguiendo estos pasos:</p>
 <ol class="arabic simple">
 <li><p>En tu proyecto de KoboToolbox, ve a la ventana <strong>DATOS &gt; Descargas</strong>.</p></li>
@@ -211,7 +211,7 @@
 </ol>
 </section>
 <section id="recuperar-el-enlace-de-exportacion-sincronica">
-<h2>Recuperar el enlace de exportación sincrónica<a class="headerlink" href="#recuperar-el-enlace-de-exportacion-sincronica" title="Link to this heading">¶</a></h2>
+<span id="recuperar-el-enlace-de-exportación-sincrónica"></span><h2>Recuperar el enlace de exportación sincrónica<a class="headerlink" href="#recuperar-el-enlace-de-exportacion-sincronica" title="Link to this heading">¶</a></h2>
 <p>Para recuperar el enlace de exportación sincrónica, necesitarás lo siguiente:</p>
 <ul class="simple">
 <li><p><strong>UID del proyecto:</strong> Un ID único para cada proyecto de KoboToolbox, que se encuentra en la URL del proyecto.</p></li>
@@ -236,7 +236,7 @@
 </p>
 </section>
 <section id="conectar-tus-datos-a-una-aplicacion-externa">
-<h2>Conectar tus datos a una aplicación externa<a class="headerlink" href="#conectar-tus-datos-a-una-aplicacion-externa" title="Link to this heading">¶</a></h2>
+<span id="conectar-tus-datos-a-una-aplicación-externa"></span><h2>Conectar tus datos a una aplicación externa<a class="headerlink" href="#conectar-tus-datos-a-una-aplicacion-externa" title="Link to this heading">¶</a></h2>
 <p>Después de recuperar el enlace de exportación sincrónica, puedes conectar tus datos a la aplicación externa que prefieras. El método para integrar el enlace de exportación sincrónica varía según la aplicación.</p>
 <p class="note">
     Para aprender a conectar tus datos a Power BI y crear informes interactivos personalizados, consulta <a href="../es/pulling_data_into_powerbi.md">Conectar KoboToolbox con Power BI</a>.
@@ -244,7 +244,7 @@
     Para aprender a conectar tus datos a Microsoft Excel, consulta <a href="../es/pulling_data_into_excelquery.md">Conectar KoboToolbox con Microsoft Excel</a>.
 </p>
 <section id="autenticacion">
-<h3>Autenticación<a class="headerlink" href="#autenticacion" title="Link to this heading">¶</a></h3>
+<span id="autenticación"></span><h3>Autenticación<a class="headerlink" href="#autenticacion" title="Link to this heading">¶</a></h3>
 <p>Muchas aplicaciones externas pueden conectarse a tus datos de KoboToolbox. Sin embargo, no todas admiten <strong>solicitudes autenticadas</strong>, es decir, solicitudes que incluyen credenciales (por ejemplo, la clave API o el nombre de usuario y contraseña) para que el servidor pueda verificar la identidad del solicitante. Si la aplicación externa no admite solicitudes autenticadas, solo podrá acceder a los recursos que se hayan hecho <strong>accesibles públicamente</strong> mediante un enlace de exportación anónimo.</p>
 <p>Para conectar tu proyecto sin autenticación (por ejemplo, a Google Sheets), debes asegurarte de que la opción «Cualquier persona puede ver los envíos que se realizan a través de este formulario» esté marcada en <strong>CONFIGURACIÓN &gt; Compartir</strong>.</p>
 <p class="note">
@@ -266,7 +266,7 @@
 </ul>
 </section>
 <section id="resolucion-de-problemas">
-<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
+<span id="resolución-de-problemas"></span><h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
 <details>
   <summary><strong>Las URL de archivos multimedia de exportaciones anteriores ya no funcionan</strong></summary>
 Los usuarios que dependen de URL de archivos multimedia de exportaciones sincrónicas anteriores pueden notar que estos enlaces ya no funcionan desde que <a href="../es/migrating_api.md">se deprecó la API v1</a>.

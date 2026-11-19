@@ -182,7 +182,7 @@
         <section class="page__body" role="main">
           
   <section id="message-de-soumission-personnalise">
-<h1>Message de soumission personnalisé<a class="headerlink" href="#message-de-soumission-personnalise" title="Lien vers cette rubrique">¶</a></h1>
+<span id="message-de-soumission-personnalisé"></span><h1>Message de soumission personnalisé<a class="headerlink" href="#message-de-soumission-personnalise" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/22959ee8b91c5f4cb42545d225dec591a0d409c0/source/custom_submission_message.md" class="reference">29 Jul 2026</a></p>
 <p>Les messages de soumission personnalisés vous permettent d’afficher un message adapté après qu’un répondant a soumis un formulaire avec succès.</p>
 <p>Les messages de soumission personnalisés peuvent être utilisés pour :</p>
@@ -193,7 +193,7 @@
 </ul>
 <p>Cette fonctionnalité doit être configurée dans <a class="reference external" href="https://support.kobotoolbox.org/fr/getting_started_xlsform.html">XLSForm</a>.</p>
 <section id="configurer-un-message-de-soumission-personnalise">
-<h2>Configurer un message de soumission personnalisé<a class="headerlink" href="#configurer-un-message-de-soumission-personnalise" title="Lien vers cette rubrique">¶</a></h2>
+<span id="configurer-un-message-de-soumission-personnalisé"></span><h2>Configurer un message de soumission personnalisé<a class="headerlink" href="#configurer-un-message-de-soumission-personnalise" title="Lien vers cette rubrique">¶</a></h2>
 <p>Pour configurer un message de soumission personnalisé dans un XLSForm :</p>
 <ol class="arabic simple">
 <li><p>Dans l”<strong>onglet settings</strong>, ajoutez trois colonnes : <code class="docutils literal notranslate"><span class="pre">name</span></code>, <code class="docutils literal notranslate"><span class="pre">namespaces</span></code> et <code class="docutils literal notranslate"><span class="pre">attribute::kobo:submitMessage</span></code></p>
@@ -266,7 +266,7 @@
 <p>Par exemple : <code class="docutils literal notranslate"><span class="pre">if(${eligible}</span> <span class="pre">=</span> <span class="pre">'yes',</span> <span class="pre">'You</span> <span class="pre">are</span> <span class="pre">eligible.',</span> <span class="pre">'You</span> <span class="pre">are</span> <span class="pre">not</span> <span class="pre">eligible.')</span></code></p>
 </section>
 <section id="afficher-les-libelles-des-choix">
-<h3>Afficher les libellés des choix<a class="headerlink" href="#afficher-les-libelles-des-choix" title="Lien vers cette rubrique">¶</a></h3>
+<span id="afficher-les-libellés-des-choix"></span><h3>Afficher les libellés des choix<a class="headerlink" href="#afficher-les-libelles-des-choix" title="Lien vers cette rubrique">¶</a></h3>
 <p>Utilisez <code class="docutils literal notranslate"><span class="pre">jr:choice-name()</span></code> pour afficher le <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#label">libellé</a> d’un choix sélectionné plutôt que son <a class="reference external" href="https://support.kobotoolbox.org/fr/glossary.html#choice-name">nom de choix</a>.</p>
 <p>Par exemple : <code class="docutils literal notranslate"><span class="pre">concat('You</span> <span class="pre">are</span> <span class="pre">registered</span> <span class="pre">for</span> <span class="pre">',</span> <span class="pre">jr:choice-name(${event},</span> <span class="pre">'${event}'))</span></code></p>
 </section>
@@ -280,7 +280,7 @@
 </section>
 </section>
 <section id="creer-des-messages-de-soumission-en-plusieurs-langues">
-<h2>Créer des messages de soumission en plusieurs langues<a class="headerlink" href="#creer-des-messages-de-soumission-en-plusieurs-langues" title="Lien vers cette rubrique">¶</a></h2>
+<span id="créer-des-messages-de-soumission-en-plusieurs-langues"></span><h2>Créer des messages de soumission en plusieurs langues<a class="headerlink" href="#creer-des-messages-de-soumission-en-plusieurs-langues" title="Lien vers cette rubrique">¶</a></h2>
 <p>Pour les formulaires multilingues, vous pouvez afficher le message de soumission dans la langue sélectionnée par le répondant.</p>
 <p>Pour configurer des messages de soumission multilingues :</p>
 <ol class="arabic simple">
@@ -301,7 +301,7 @@
 </p>
 </section>
 <section id="compatibilite">
-<h2>Compatibilité<a class="headerlink" href="#compatibilite" title="Lien vers cette rubrique">¶</a></h2>
+<span id="compatibilité"></span><h2>Compatibilité<a class="headerlink" href="#compatibilite" title="Lien vers cette rubrique">¶</a></h2>
 <p>Les messages de soumission personnalisés sont destinés à être utilisés avec les <a class="reference external" href="https://support.kobotoolbox.org/fr/data_through_webforms.html">formulaires web</a>. Ils fonctionnent uniquement avec les <a class="reference external" href="https://support.kobotoolbox.org/fr/data_through_webforms.html#data-collection-modes">modes de collecte de données</a> suivants :</p>
 <ul class="simple">
 <li><p>En ligne uniquement (soumission unique)</p></li>

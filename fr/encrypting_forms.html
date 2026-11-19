@@ -213,12 +213,12 @@ le serveur que vous utilisez).</p></li>
 </p>
 </section>
 <section id="dechiffrer-des-formulaires">
-<h2>Déchiffrer des formulaires<a class="headerlink" href="#dechiffrer-des-formulaires" title="Lien vers cette rubrique">¶</a></h2>
+<span id="déchiffrer-des-formulaires"></span><h2>Déchiffrer des formulaires<a class="headerlink" href="#dechiffrer-des-formulaires" title="Lien vers cette rubrique">¶</a></h2>
 <p>ODK Briefcase est utilisé pour télécharger les fichiers chiffrés depuis KoboToolbox et les déchiffrer en local sur votre ordinateur à l’aide d’une clé privée, garantissant ainsi un accès unique aux données. Pour que le déchiffrement avec ODK Briefcase soit réussi, assurez-vous de télécharger et d’installer les <em>Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 6</em> depuis le
 <a class="reference external" href="https://www.oracle.com/java/technologies/javase-jce-all-downloads.html">site de téléchargement Java</a>.
 Ces fichiers sont nécessaires au bon fonctionnement du déchiffrement.</p>
 <section id="installer-le-jce">
-<h3>Installer le JCE :<a class="headerlink" href="#installer-le-jce" title="Lien vers cette rubrique">¶</a></h3>
+<span id="installer-le-jce-"></span><h3>Installer le JCE :<a class="headerlink" href="#installer-le-jce" title="Lien vers cette rubrique">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Décompressez l’archive zip téléchargée.</p></li>
 <li><p>Naviguez dans l’arborescence du répertoire extrait et copiez les fichiers local_policy.jar et US_export_policy.jar dans le répertoire lib\security.</p></li>
@@ -231,7 +231,7 @@ Ces fichiers sont nécessaires au bon fonctionnement du déchiffrement.</p>
 </ol>
 </section>
 <section id="dechiffrer-vos-formulaires">
-<h3>Déchiffrer vos formulaires :<a class="headerlink" href="#dechiffrer-vos-formulaires" title="Lien vers cette rubrique">¶</a></h3>
+<span id="déchiffrer-vos-formulaires-"></span><h3>Déchiffrer vos formulaires :<a class="headerlink" href="#dechiffrer-vos-formulaires" title="Lien vers cette rubrique">¶</a></h3>
 <ol class="arabic simple">
 <li><p>Téléchargez et ouvrez <a class="reference external" href="https://docs.getodk.org/briefcase-intro/">ODK Briefcase</a>.</p></li>
 <li><p>Indiquez un <strong>emplacement de stockage</strong> sous l’onglet <strong>Paramètres</strong>.</p></li>
@@ -263,11 +263,11 @@ Si elle n’y figure pas, sélectionnez la <strong>clé privée PEM</strong> dep
 </section>
 </section>
 <section id="generer-des-cles-de-chiffrement-rsa">
-<h2>Générer des clés de chiffrement RSA<a class="headerlink" href="#generer-des-cles-de-chiffrement-rsa" title="Lien vers cette rubrique">¶</a></h2>
+<span id="générer-des-clés-de-chiffrement-rsa"></span><h2>Générer des clés de chiffrement RSA<a class="headerlink" href="#generer-des-cles-de-chiffrement-rsa" title="Lien vers cette rubrique">¶</a></h2>
 <p>Pour générer les paires de clés publique-privée RSA, vous pouvez utiliser le logiciel OpenSSL, préinstallé sur OSX et Linux. Sur Windows, vous devez télécharger et installer le logiciel OpenSSL depuis
 <a class="reference external" href="http://slproweb.com/products/Win32OpenSSL.md">ce site</a>. (<em>Remarque : installez Win64 OpenSSL v1.1.1c dans <strong>C:</strong> plutôt qu’à l’emplacement par défaut <strong>C:\Program Files</strong></em>)</p>
 <section id="generer-une-cle-rsa-pour-les-formulaires-chiffres-dans-kobotoolbox">
-<h3>Générer une clé RSA pour les formulaires chiffrés dans KoboToolbox<a class="headerlink" href="#generer-une-cle-rsa-pour-les-formulaires-chiffres-dans-kobotoolbox" title="Lien vers cette rubrique">¶</a></h3>
+<span id="générer-une-clé-rsa-pour-les-formulaires-chiffrés-dans-kobotoolbox"></span><h3>Générer une clé RSA pour les formulaires chiffrés dans KoboToolbox<a class="headerlink" href="#generer-une-cle-rsa-pour-les-formulaires-chiffres-dans-kobotoolbox" title="Lien vers cette rubrique">¶</a></h3>
 <p><em>Remarque : Nous recommandons vivement d’utiliser OpenSSL tel que décrit ci-dessous pour créer votre paire de clés publique/privée, car d’autres méthodes peuvent ne pas être prises en charge par le logiciel.</em></p>
 <ol class="arabic">
 <li><p>Ouvrez une fenêtre de commande Windows (« cmd »).</p></li>

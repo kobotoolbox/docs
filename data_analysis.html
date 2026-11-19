@@ -182,7 +182,7 @@
           
   <section id="data-analysis-with-kobotoolbox">
 <h1>Data analysis with KoboToolbox<a class="headerlink" href="#data-analysis-with-kobotoolbox" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/738ddf667edfe3b719853e49b1bee3884d1714d6/source/data_analysis.md" class="reference">29 Sep 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/data_analysis.md" class="reference">19 Nov 2026</a></p>
 <p>KoboToolbox provides <strong>built-in tools</strong> to help you review, visualize, and analyze collected data. These tools can be used for descriptive statistics, mapping, and qualitative analysis.</p>
 <p>Beyond built-in tools, you can also <strong>export your data</strong> or <strong>connect it to external platforms</strong> for more advanced cleaning, processing, analysis, and visualization.</p>
 <p>This article covers KoboToolbox’s data analysis options, from built-in reports, maps, and qualitative analysis tools to data exports, synchronous exports, and form design practices that support cleaner analysis.</p>
@@ -240,10 +240,19 @@
 <section id="synchronous-exports">
 <h3>Synchronous exports<a class="headerlink" href="#synchronous-exports" title="Link to this heading">¶</a></h3>
 <p>For ongoing projects, you may want to <strong>connect your KoboToolbox data to external tools</strong> instead of downloading a new export each time your data changes.</p>
-<p><strong>Synchronous exports</strong> allow you to automatically connect KoboToolbox data with external applications such as Microsoft Power BI, Excel, or Google Sheets. This can be useful for dashboards, project monitoring, advanced processing, or shared reporting workflows.</p>
+<p><strong>Synchronous exports</strong> allow you to automatically connect KoboToolbox data with external applications such as <a class="reference external" href="https://support.kobotoolbox.org/connect_excel_powerbi.html">Microsoft Power BI, Excel</a>, or <a class="reference external" href="https://support.kobotoolbox.org/connect_google.html">Google Sheets</a>. This can be useful for dashboards, project monitoring, advanced processing, or shared reporting workflows.</p>
 <p>With synchronous exports, your connected data updates as new submissions are received, reducing the need for manual downloads and refreshes.</p>
 <p class="note">
   To learn more about connecting your data to external tools, see <a href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>.
+</p>
+</section>
+<section id="api-data-endpoint">
+<h3>API data endpoint<a class="headerlink" href="#api-data-endpoint" title="Link to this heading">¶</a></h3>
+<p>For more advanced analysis and integrations, you can use the <strong>KoboToolbox API data endpoint</strong> to retrieve project submissions directly into external software, such as R or Python.</p>
+<p>Unlike synchronous exports, which provide CSV or XLSX files based on saved export settings, the data endpoint provides access to submission data in JSON format. It allows you to customize requests, filter submissions, and control how data is retrieved.</p>
+<p>The data endpoint is particularly useful for large datasets, automated analysis, and workflows that require greater flexibility. However, it typically requires some programming knowledge or software that can handle API requests.</p>
+<p class="note">
+  To learn more, see <a href="https://support.kobotoolbox.org/data_endpoint.html">Using the API data endpoint</a>.
 </p>
 </section>
 </section>
@@ -418,10 +427,12 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Getting started with the API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Using the API for synchronous exports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Using the REST services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">KoboToolbox integration with monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_endpoint.html">Using the API data endpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_excel_powerbi.html">Connecting KoboToolbox data to Microsoft Excel and Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_google.html">Connecting KoboToolbox data to Google Sheets and Data Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_r.html">Connecting KoboToolbox data to R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Using the KoboToolbox REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platform_integrations.html">Integrating KoboToolbox with other platforms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migrating from v1 to v2 API</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Security &amp; Protection</span></p>

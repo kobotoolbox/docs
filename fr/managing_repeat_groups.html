@@ -182,14 +182,14 @@
         <section class="page__body" role="main">
           
   <section id="gestion-des-donnees-de-groupes-repetes">
-<h1>Gestion des données de groupes répétés<a class="headerlink" href="#gestion-des-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h1>
+<span id="gestion-des-données-de-groupes-répétés"></span><h1>Gestion des données de groupes répétés<a class="headerlink" href="#gestion-des-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h1>
 <p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/c6ce761972d44dffc7387a7fbc1dbeb413e56933/source/managing_repeat_groups.md" class="reference">5 juin 2026</a></p>
 <p>KoboToolbox vous permet de collecter des données répétées dans un formulaire, par exemple lors d’une enquête ménage où tous les membres répondent aux mêmes questions. Cet article explique comment visualiser, modifier et exporter des données de groupes répétés, et comment les relier aux données principales.</p>
 <p class="note">
   Pour en savoir plus sur la configuration des groupes répétés dans vos formulaires, consultez les articles <a href="https://support.kobotoolbox.org/fr/group_repeat.html">Groupes et groupes répétés dans l'interface de création de formulaires KoboToolbox (KoboToolbox Formbuilder)</a> et <a href="https://support.kobotoolbox.org/fr/repeat_groups_xls.html">Groupes répétés dans XLSForm</a>.
 </p>
 <section id="visualiser-et-modifier-les-donnees-de-groupes-repetes">
-<h2>Visualiser et modifier les données de groupes répétés<a class="headerlink" href="#visualiser-et-modifier-les-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="visualiser-et-modifier-les-données-de-groupes-répétés"></span><h2>Visualiser et modifier les données de groupes répétés<a class="headerlink" href="#visualiser-et-modifier-les-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h2>
 <p>Vous pouvez visualiser les données répétées dans le tableau de données, accessible depuis le mode <strong>Tableau</strong> de l’onglet <strong>DONNÉES</strong> dans l’interface du projet KoboToolbox. Les réponses aux questions répétées apparaissent dans une seule colonne par question, les réponses étant séparées par une virgule, comme illustré ci-dessous.</p>
 <p><img alt="image" src="_images/data_table.png" /></p>
 <p>Vous pouvez également visualiser l’ensemble des données d’une soumission donnée, y compris chaque répétition des groupes répétés, en cliquant sur le bouton <i class="k-icon-view"></i><strong>Afficher</strong> à gauche de chaque soumission.</p>
@@ -199,7 +199,7 @@
 </p>
 </section>
 <section id="exporter-les-donnees-de-groupes-repetes">
-<h2>Exporter les données de groupes répétés<a class="headerlink" href="#exporter-les-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="exporter-les-données-de-groupes-répétés"></span><h2>Exporter les données de groupes répétés<a class="headerlink" href="#exporter-les-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h2>
 <p>Pour exporter les données d’un formulaire contenant des groupes répétés, vous devez télécharger vos données au <strong>format XLS</strong>. Chaque groupe répété sera exporté <strong>dans un onglet distinct</strong> du fichier exporté. Le téléchargement au format CSV ne fournit que les données du questionnaire principal.</p>
 <p><img alt="image" src="_images/download1.png" /></p>
 <p class="note">
@@ -207,7 +207,7 @@
 </p>
 </section>
 <section id="relier-les-donnees-de-groupes-repetes">
-<h2>Relier les données de groupes répétés<a class="headerlink" href="#relier-les-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h2>
+<span id="relier-les-données-de-groupes-répétés"></span><h2>Relier les données de groupes répétés<a class="headerlink" href="#relier-les-donnees-de-groupes-repetes" title="Lien vers cette rubrique">¶</a></h2>
 <p>Dans les fichiers XLS exportés, les données de groupes répétés sont stockées <strong>dans un onglet distinct</strong>. Le premier onglet du fichier XLS contient les données de réponses principales, et les données de chaque groupe répété sont stockées dans leur propre onglet. Les groupes répétés imbriqués sont également stockés dans des onglets distincts.</p>
 <p>Les données des groupes répétés peuvent être reliées aux données principales à l’aide de la colonne <code class="docutils literal notranslate"><span class="pre">_index</span></code> de l’onglet de données principales et de la colonne <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code> de l’onglet de données du groupe répété.</p>
 <p>Dans l’exemple ci-dessous, le premier onglet comprend une colonne <code class="docutils literal notranslate"><span class="pre">_index</span></code>, en vert, qui identifie la première soumission. Le deuxième onglet, illustré dans la deuxième image, contient une colonne <code class="docutils literal notranslate"><span class="pre">_parent_index</span></code>, également surlignée en vert, qui renvoie au premier onglet. Dans cet exemple, les deux lignes des données répétées proviennent de la première soumission de données.</p>

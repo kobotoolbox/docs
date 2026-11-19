@@ -182,7 +182,7 @@
         <section class="page__body" role="main">
           
   <section id="conexion-dinamica-de-proyectos-usando-xlsforms">
-<h1>Conexión dinámica de proyectos usando XLSForms<a class="headerlink" href="#conexion-dinamica-de-proyectos-usando-xlsforms" title="Link to this heading">¶</a></h1>
+<span id="conexión-dinámica-de-proyectos-usando-xlsforms"></span><h1>Conexión dinámica de proyectos usando XLSForms<a class="headerlink" href="#conexion-dinamica-de-proyectos-usando-xlsforms" title="Link to this heading">¶</a></h1>
 <p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/8f9a856ca94d358f333f60f6e563a9ecbb879202/source/dynamic_data_attachment.md" class="reference">6 de mayo de 2026</a></p>
 <p>La conexión dinámica te permite usar datos de un <strong>proyecto primario</strong> dentro de <strong>proyectos secundarios</strong>, lo que simplifica el manejo de la recolección de datos longitudinales. Este artículo explica cómo conectar dinámicamente datos entre proyectos de KoboToolbox.</p>
 <p class="note">
@@ -191,7 +191,7 @@
 <p>Puedes recuperar diversas <strong>respuestas sin multimedia</strong> de un proyecto primario y realizar cálculos sobre estos datos vinculados en un proyecto secundario. Esto puede ser útil para recuperar datos de referencia, información de contacto o registros de salud en estudios de cohorte, o para confirmar o verificar datos recolectados previamente.</p>
 <p>Recomendamos usar <a class="reference external" href="https://support.kobotoolbox.org/es/edit_forms_excel.html">XLSForm</a> para configurar las conexiones dinámicas de proyectos. Para ver ejemplos de proyectos primarios y secundarios, descarga los archivos de ejemplo <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/parent.xlsx">aquí</a> y <a class="reference external" href="https://support.kobotoolbox.org/_static/files/dynamic_data_attachment/child.xlsx">aquí</a>. Para aprender a configurar conexiones dinámicas de proyectos en el Formbuilder de KoboToolbox, consulta <a href="https://support.kobotoolbox.org/es/dynamic_data_attachment_formbuilder.html">Conexión dinámica de proyectos en el Formbuilder</a>.</p>
 <section id="conectar-proyectos-dinamicamente-en-xlsform">
-<h2>Conectar proyectos dinámicamente en XLSForm<a class="headerlink" href="#conectar-proyectos-dinamicamente-en-xlsform" title="Link to this heading">¶</a></h2>
+<span id="conectar-proyectos-dinámicamente-en-xlsform"></span><h2>Conectar proyectos dinámicamente en XLSForm<a class="headerlink" href="#conectar-proyectos-dinamicamente-en-xlsform" title="Link to this heading">¶</a></h2>
 <p>La conexión dinámica de proyectos requiere un <strong>proyecto primario</strong> y al menos un <strong>proyecto secundario</strong>. El <strong>proyecto primario</strong> no requiere ninguna modificación respecto a un XLSForm normal. Sin embargo, la configuración del o los <strong>proyectos secundarios</strong> implica los siguientes pasos:</p>
 <ol class="arabic simple">
 <li><p>En la <strong>hoja survey</strong> de tu XLSForm, agrega una fila y define el tipo de pregunta como <code class="docutils literal notranslate"><span class="pre">xml-external</span></code>.</p></li>
@@ -262,7 +262,7 @@
 </p>
 </section>
 <section id="sintaxis-de-calculo-para-conexiones-dinamicas-de-proyectos">
-<h2>Sintaxis de cálculo para conexiones dinámicas de proyectos<a class="headerlink" href="#sintaxis-de-calculo-para-conexiones-dinamicas-de-proyectos" title="Link to this heading">¶</a></h2>
+<span id="sintaxis-de-cálculo-para-conexiones-dinámicas-de-proyectos"></span><h2>Sintaxis de cálculo para conexiones dinámicas de proyectos<a class="headerlink" href="#sintaxis-de-calculo-para-conexiones-dinamicas-de-proyectos" title="Link to this heading">¶</a></h2>
 <p>En la columna <code class="docutils literal notranslate"><span class="pre">calculation</span></code> de la fila donde se recuperarán los datos vinculados, incluye una de las expresiones de la tabla a continuación. Estas expresiones se denominan <strong>XPaths</strong>.</p>
 <p>Para cada expresión de la tabla a continuación:</p>
 <ul class="simple">
@@ -312,7 +312,7 @@
 </p>
 </section>
 <section id="configurar-proyectos-para-la-conexion-dinamica">
-<h2>Configurar proyectos para la conexión dinámica<a class="headerlink" href="#configurar-proyectos-para-la-conexion-dinamica" title="Link to this heading">¶</a></h2>
+<span id="configurar-proyectos-para-la-conexión-dinámica"></span><h2>Configurar proyectos para la conexión dinámica<a class="headerlink" href="#configurar-proyectos-para-la-conexion-dinamica" title="Link to this heading">¶</a></h2>
 <p>Una vez que tus XLSForms estén configurados, inicia sesión en tu cuenta de KoboToolbox y sigue estos pasos:</p>
 <ol class="arabic simple">
 <li><p>Crea e implementa el <strong>proyecto primario</strong>, si aún no está implementado.</p></li>
@@ -343,7 +343,7 @@
 <iframe src="https://www.youtube.com/embed/pBqEsFlxqE4?si=6BPiDgOzO4LPO7zv&cc_lang_pref=es&hl=es" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </section>
 <section id="conectar-un-formulario-consigo-mismo-dinamicamente">
-<h2>Conectar un formulario consigo mismo dinámicamente<a class="headerlink" href="#conectar-un-formulario-consigo-mismo-dinamicamente" title="Link to this heading">¶</a></h2>
+<span id="conectar-un-formulario-consigo-mismo-dinámicamente"></span><h2>Conectar un formulario consigo mismo dinámicamente<a class="headerlink" href="#conectar-un-formulario-consigo-mismo-dinamicamente" title="Link to this heading">¶</a></h2>
 <p>Es posible que un proyecto primario y un proyecto secundario sean el mismo proyecto. Los pasos son los mismos que los descritos anteriormente. Algunos ejemplos de casos de uso incluyen:</p>
 <ul class="simple">
 <li><p><strong>Monitoreo diario</strong>: Si se usa un formulario para encuestar a la misma persona a lo largo del tiempo, puedes vincularlo consigo mismo para contar los envíos anteriores. Esto puede permitirte mostrar un mensaje (por ejemplo, «el monitoreo está completo») después de un cierto número de entradas, o informar al encuestador sobre el número de formularios enviados, como se muestra en el ejemplo a continuación.</p></li>
@@ -433,7 +433,7 @@
 </table>
 </section>
 <section id="recolectar-y-gestionar-datos-con-conexion-dinamica">
-<h2>Recolectar y gestionar datos con conexión dinámica<a class="headerlink" href="#recolectar-y-gestionar-datos-con-conexion-dinamica" title="Link to this heading">¶</a></h2>
+<span id="recolectar-y-gestionar-datos-con-conexión-dinámica"></span><h2>Recolectar y gestionar datos con conexión dinámica<a class="headerlink" href="#recolectar-y-gestionar-datos-con-conexion-dinamica" title="Link to this heading">¶</a></h2>
 <p>Los datos de proyectos conectados dinámicamente pueden recolectarse usando la <a class="reference external" href="https://support.kobotoolbox.org/es/data_collection_kobocollect.html">aplicación Android KoboCollect</a> o <a class="reference external" href="https://support.kobotoolbox.org/es/data_through_webforms.html">formularios web</a>.</p>
 <p>Al recolectar datos, ten en cuenta lo siguiente:</p>
 <ul class="simple">
@@ -446,7 +446,7 @@
 </p>
 </section>
 <section id="resolucion-de-problemas">
-<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
+<span id="resolución-de-problemas"></span><h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
 <details>
   <summary><strong>Error o fallo al vincular formularios</strong></summary>
 Si la interfaz de usuario falla cuando intentas vincular formularios, verifica lo siguiente:

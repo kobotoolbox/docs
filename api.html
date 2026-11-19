@@ -182,32 +182,60 @@
           
   <section id="getting-started-with-the-api">
 <h1>Getting started with the API<a class="headerlink" href="#getting-started-with-the-api" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/afd562326337a448c613f919951aaed8005b62ef/source/api.md" class="reference">22 Jun 2026</a></p>
-<p>An <strong>Application Programming Interface (API)</strong> allows two software components to communicate using a set of definitions and protocols. With an API, a script or application can work with KoboToolbox without using the web interface. For example, you can automatically generate data exports that link to external sources like dashboards or backup folders.</p>
-<p>With the KoboToolbox <strong>API</strong>, you can:</p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/api.md" class="reference">19 Nov 2026</a></p>
+<p>An <strong>Application Programming Interface (API)</strong> allows different software applications to communicate and share information. The <strong>KoboToolbox API</strong> lets you connect KoboToolbox to external tools and automate tasks without using the web interface.</p>
+<p>For example, you can use the API to automatically retrieve updated project data for dashboards, reports, or backups, without manually downloading files each time.</p>
+<p>With the KoboToolbox API, you can:</p>
 <ul class="simple">
-<li><p><strong>Download data</strong> automatically in JSON, CSV, or XLSX.</p></li>
-<li><p><strong>Generate exports on demand</strong> for dashboards, backups, or analytics.</p></li>
-<li><p><strong>Submit or edit records</strong> from other data collection tools.</p></li>
-<li><p><strong>Create or deploy projects</strong> and clone existing ones through code.</p></li>
-<li><p><strong>Manage users</strong>, permissions, and project activity at scale.</p></li>
+<li><p><strong>Access and download data</strong> in formats such as JSON, CSV, or XLSX.</p></li>
+<li><p><strong>Automate data exports</strong> to keep dashboards, reports, and backups up to date.</p></li>
+<li><p><strong>Submit or edit records</strong> from external applications.</p></li>
+<li><p><strong>Create, deploy, or duplicate</strong> projects using scripts.</p></li>
+<li><p><strong>Manage users and project permissions</strong> through external tools.</p></li>
 </ul>
-<p>Using the KoboToolbox API allows you to automate routine tasks, keep dashboards current, and integrate KoboToolbox with other systems, while reducing manual steps and errors. This article provides an introduction to the KoboToolbox API and covers the following steps:</p>
+<p>This article introduces the KoboToolbox API. It covers finding your server URL, API key, and project asset UID, exporting project data using the API, and accessing advanced API documentation.</p>
+<section id="connecting-to-your-data-through-the-api">
+<h2>Connecting to your data through the API<a class="headerlink" href="#connecting-to-your-data-through-the-api" title="Link to this heading">¶</a></h2>
+<p>The KoboToolbox API uses web addresses called <strong>API endpoints</strong> to access specific information or perform actions in KoboToolbox.</p>
+<p>There are two main ways to access submission data through the API:</p>
 <ul class="simple">
-<li><p>Retrieving your <strong>server URL</strong></p></li>
-<li><p>Retrieving your <strong>API Key</strong></p></li>
-<li><p>Retrieving the project asset UID</p></li>
-<li><p>Exporting your data using the API</p></li>
-<li><p>Advanced API documentation</p></li>
+<li><p><strong>Synchronous exports:</strong> Allow you to retrieve project data in XLSX or CSV format using <a class="reference external" href="https://support.kobotoolbox.org/advanced_export.html#saving-export-settings">saved export settings</a> through the <strong>exports endpoint</strong>. This method is easier to set up and suitable for most small and medium-sized projects.</p></li>
+<li><p><strong>Data endpoint:</strong> Provides more flexible access to submission data but requires additional technical knowledge to manage authentication and pagination. This method is better suited to large or complex datasets that require more control over how data is retrieved.</p></li>
 </ul>
+<p>For most users, <strong>synchronous exports</strong> are the recommended starting point.</p>
+<p class="note">
+    For more information about synchronous exports, see <a href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>. For more information about the data endpoint, see <a href="https://support.kobotoolbox.org/data_endpoint.html">Using the API data endpoint</a>. 
+</p>
+</section>
+<section id="accessing-the-kobotoolbox-api">
+<h2>Accessing the KoboToolbox API<a class="headerlink" href="#accessing-the-kobotoolbox-api" title="Link to this heading">¶</a></h2>
+<p>To access the data endpoint and other KoboToolbox API endpoints, you will typically need your <strong>server URL, API key,</strong> and <strong>project asset UID</strong>. These details allow external applications to connect to your KoboToolbox server, authenticate requests, and access data from a specific project.</p>
 <section id="retrieving-your-server-url">
-<h2>Retrieving your server URL<a class="headerlink" href="#retrieving-your-server-url" title="Link to this heading">¶</a></h2>
-<p>The <strong>server URL</strong> is the base web address of your KoboToolbox server. It is placed at the start of every API request.</p>
-<p>For most users, the server URL is <a class="reference external" href="https://kf.kobotoolbox.org/">kf.kobotoolbox.org</a> (if you are using the Global server) or <a class="reference external" href="https://eu.kobotoolbox.org/">eu.kobotoolbox.org</a> (if you are using the European Union server).</p>
+<h3>Retrieving your server URL<a class="headerlink" href="#retrieving-your-server-url" title="Link to this heading">¶</a></h3>
+<p>The <strong>server URL</strong> is the base web address of your KoboToolbox server. It is used at the beginning of every API request and depends on the server where you <a class="reference external" href="https://support.kobotoolbox.org/creating_account.html">created your account</a>.</p>
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Server</p></th>
+<th class="head text-left"><p>URL</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p>Global KoboToolbox Server</p></td>
+<td class="text-left"><p><a class="reference external" href="https://kf.kobotoolbox.org/">kf.kobotoolbox.org</a></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p>European Union KoboToolbox Server</p></td>
+<td class="text-left"><p><a class="reference external" href="https://eu.kobotoolbox.org/">eu.kobotoolbox.org</a></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p>Private Server</p></td>
+<td class="text-left"><p>Unique to each organization</p></td>
+</tr>
+</tbody>
+</table>
+<p>You can find it in your browser’s address bar when accessing your KoboToolbox account.</p>
 <p><img alt="Retrieve server URL" src="_images/server_URL.png" /></p>
 </section>
 <section id="retrieving-your-api-key">
-<h2>Retrieving your API Key<a class="headerlink" href="#retrieving-your-api-key" title="Link to this heading">¶</a></h2>
+<h3>Retrieving your API Key<a class="headerlink" href="#retrieving-your-api-key" title="Link to this heading">¶</a></h3>
 <p>Your <strong>API Key</strong> is a personal token that acts like a password, allowing software to access your account through the API. It may be required when a script, dashboard, or external application needs authentication in order to retrieve or send project data through the API.</p>
 <p>There are different ways to get your <strong>API Key</strong>.</p>
 <p><strong>Method 1:</strong></p>
@@ -224,31 +252,26 @@
 <p>In the terminal, use the following curl command:</p>
 <p><code class="docutils literal notranslate"><span class="pre">curl</span> <span class="pre">-u</span> <span class="pre">username:password</span> <span class="pre">&quot;https:/[server-url]/token/?format=json&quot;</span></code></p>
 <p>Make sure to replace <code class="docutils literal notranslate"><span class="pre">[server-url]</span></code> with your server URL.</p>
-<p class="note">
-    <strong>Note:</strong> If your API key is shared, made public, or otherwise compromised, regenerate it immediately. Your API key provides access to all data in your account. To regenerate it, go to <strong>Account Settings > Security</strong> and click <strong>Regenerate key</strong>. This will revoke all access through your existing API key and generate a new random key.
-</p>
+</section>
+<section id="regenerating-your-api-key">
+<h3>Regenerating your API key<a class="headerlink" href="#regenerating-your-api-key" title="Link to this heading">¶</a></h3>
+<p>If your API key is shared, made public, or otherwise compromised, you should regenerate it immediately to prevent unauthorized access to your account and data.</p>
+<p>To regenerate your API key:</p>
+<ol class="arabic simple">
+<li><p>Click your profile icon in the top right corner.</p></li>
+<li><p>Select <strong>Account Settings.</strong></p></li>
+<li><p>Go to the <strong>Security</strong> tab.</p></li>
+<li><p>Next to <strong>API Key</strong>, click <strong>Regenerate key.</strong></p></li>
+</ol>
+<p>This will invalidate your existing API key and generate a new one. Any applications or scripts using the previous key will need to be updated with the new key.</p>
 </section>
 <section id="retrieving-your-project-asset-uid">
-<h2>Retrieving your project asset UID<a class="headerlink" href="#retrieving-your-project-asset-uid" title="Link to this heading">¶</a></h2>
+<h3>Retrieving your project asset UID<a class="headerlink" href="#retrieving-your-project-asset-uid" title="Link to this heading">¶</a></h3>
 <p>The <strong>project asset UID</strong> is a unique code that identifies a specific KoboToolbox project and must be included in API calls to target that project.</p>
-<p>You can find the <strong>project asset UID</strong> in the URL of your project summary page. It is the string of letters and numbers that appears after “forms/” in the URL, as such: <code class="docutils literal notranslate"><span class="pre">https://[server-url]/#/forms/[project</span> <span class="pre">asset</span> <span class="pre">UID]/summary</span></code>.</p>
+<p>You can find the <strong>project asset UID</strong> in the URL of your project summary page. It is the string of letters and numbers that appears after “forms/” in the URL, as such:</p>
+<p><code class="docutils literal notranslate"><span class="pre">https://[server-url]/#/forms/[project</span> <span class="pre">asset</span> <span class="pre">UID]/summary</span></code>.</p>
 <p><img alt="Retrieving project asset UID" src="_images/project_UID.png" /></p>
 </section>
-<section id="exporting-your-data-using-the-api">
-<h2>Exporting your data using the API<a class="headerlink" href="#exporting-your-data-using-the-api" title="Link to this heading">¶</a></h2>
-<p>There are two main approaches to connecting your data using the API with KoboToolbox:</p>
-<ul class="simple">
-<li><p><strong>Synchronous exports:</strong> Returns a ready-made CSV or XLSX file, based on predefined export settings, that external applications (e.g., Power BI or Excel) can load directly.</p></li>
-<li><p><strong>JSON endpoint:</strong> Sends each record as a raw JSON file. This is best for code-based pipelines, not for direct use in spreadsheet or dashboard tools.</p></li>
-</ul>
-<p>Each approach requires knowing the server URL and project asset UID to build a custom export URL. Depending on the application, your API Key may be needed for authentication.</p>
-<p class="note">
-    For more information about synchronous exports, see <a href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>. 
-<br><br>
-To learn more about connecting your data to Power BI to create custom dashboards, see <a href="https://support.kobotoolbox.org/pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a>. 
-<br><br>
-To learn more about connecting your data to Microsoft Excel, see <a href="https://support.kobotoolbox.org/pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a>.
-</p>
 </section>
 <section id="advanced-documentation">
 <h2>Advanced documentation<a class="headerlink" href="#advanced-documentation" title="Link to this heading">¶</a></h2>
@@ -432,18 +455,18 @@ To learn more about connecting your data to Microsoft Excel, see <a href="https:
 <p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Getting started with the API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#retrieving-your-server-url">Retrieving your server URL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#retrieving-your-api-key">Retrieving your API Key</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#retrieving-your-project-asset-uid">Retrieving your project asset UID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#exporting-your-data-using-the-api">Exporting your data using the API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#connecting-to-your-data-through-the-api">Connecting to your data through the API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#accessing-the-kobotoolbox-api">Accessing the KoboToolbox API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#advanced-documentation">Advanced documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Using the API for synchronous exports</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a></li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Using the REST services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">KoboToolbox integration with monday.com</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_endpoint.html">Using the API data endpoint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_excel_powerbi.html">Connecting KoboToolbox data to Microsoft Excel and Power BI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_google.html">Connecting KoboToolbox data to Google Sheets and Data Studio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_r.html">Connecting KoboToolbox data to R</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Using the KoboToolbox REST Services</a></li>
+<li class="toctree-l1"><a class="reference internal" href="platform_integrations.html">Integrating KoboToolbox with other platforms</a></li>
 <li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migrating from v1 to v2 API</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Data Security &amp; Protection</span></p>

@@ -182,7 +182,7 @@
         <section class="page__body" role="main">
           
   <section id="anadir-logica-de-salto-a-un-xlsform">
-<h1>Añadir lógica de salto a un XLSForm<a class="headerlink" href="#anadir-logica-de-salto-a-un-xlsform" title="Link to this heading">¶</a></h1>
+<span id="añadir-lógica-de-salto-a-un-xlsform"></span><h1>Añadir lógica de salto a un XLSForm<a class="headerlink" href="#anadir-logica-de-salto-a-un-xlsform" title="Link to this heading">¶</a></h1>
 <p><strong>Última actualización:</strong> <a href="https://github.com/kobotoolbox/docs/blob/0586118b5f55f20287bc6db496832b14bbfc6239/source/skip_logic_xls.md" class="reference">5 Jun 2026</a></p>
 <p>La lógica de salto, también conocida como lógica de relevancia, te permite <strong>determinar cuándo se mostrará una pregunta o un grupo de preguntas</strong> en el formulario, en función de una pregunta anterior o del resultado de un cálculo. Por ejemplo, puedes usarla para hacer preguntas de seguimiento solo a un subconjunto de encuestados, o para ocultar secciones enteras de un formulario si no son relevantes.</p>
 <p class="note">
@@ -201,7 +201,7 @@
 Para practicar con la lógica de salto en XLSForm, consulta el <a href="https://academy.kobotoolbox.org/courses/xlsform-fundamentals">curso XLSForm Fundamentals</a> de la KoboToolbox Academy.
 </p>
 <section id="agregar-condiciones-de-logica-de-salto-a-preguntas-individuales">
-<h2>Agregar condiciones de lógica de salto a preguntas individuales<a class="headerlink" href="#agregar-condiciones-de-logica-de-salto-a-preguntas-individuales" title="Link to this heading">¶</a></h2>
+<span id="agregar-condiciones-de-lógica-de-salto-a-preguntas-individuales"></span><h2>Agregar condiciones de lógica de salto a preguntas individuales<a class="headerlink" href="#agregar-condiciones-de-logica-de-salto-a-preguntas-individuales" title="Link to this heading">¶</a></h2>
 <p>La lógica de salto utiliza la <a class="reference external" href="https://support.kobotoolbox.org/es/form_logic_xls.html#question-referencing">referencia a preguntas</a> para mostrar únicamente las preguntas que son relevantes para el encuestado según sus respuestas anteriores. La pregunta utilizada para definir la lógica de relevancia se denomina <strong>pregunta de referencia</strong>.</p>
 <p>Para agregar lógica de salto en XLSForm:</p>
 <ol class="arabic simple">
@@ -237,7 +237,7 @@ Para practicar con la lógica de salto en XLSForm, consulta el <a href="https://
 </table>
 <p>En el ejemplo anterior, <code class="docutils literal notranslate"><span class="pre">${age}</span></code> es la pregunta de referencia, y la respuesta a <code class="docutils literal notranslate"><span class="pre">${age}</span></code> debe ser mayor que 18 para que se muestre la pregunta «¿Estás casado/a?».</p>
 <section id="formato-de-las-condiciones-de-logica-de-salto">
-<h3>Formato de las condiciones de lógica de salto<a class="headerlink" href="#formato-de-las-condiciones-de-logica-de-salto" title="Link to this heading">¶</a></h3>
+<span id="formato-de-las-condiciones-de-lógica-de-salto"></span><h3>Formato de las condiciones de lógica de salto<a class="headerlink" href="#formato-de-las-condiciones-de-logica-de-salto" title="Link to this heading">¶</a></h3>
 <p>El formato de la condición de lógica de salto variará según el <strong>tipo de la pregunta de referencia</strong>, como se detalla en la tabla a continuación.</p>
 <table class="docutils align-default">
 <thead>
@@ -271,7 +271,7 @@ Para practicar con la lógica de salto en XLSForm, consulta el <a href="https://
 </section>
 </section>
 <section id="combinar-multiples-condiciones-de-logica-de-salto">
-<h2>Combinar múltiples condiciones de lógica de salto<a class="headerlink" href="#combinar-multiples-condiciones-de-logica-de-salto" title="Link to this heading">¶</a></h2>
+<span id="combinar-múltiples-condiciones-de-lógica-de-salto"></span><h2>Combinar múltiples condiciones de lógica de salto<a class="headerlink" href="#combinar-multiples-condiciones-de-logica-de-salto" title="Link to this heading">¶</a></h2>
 <p>Se pueden combinar múltiples condiciones de relevancia en una sola expresión para determinar cuándo se muestra una pregunta en función de una respuesta anterior. Las condiciones se pueden combinar usando los operadores lógicos <code class="docutils literal notranslate"><span class="pre">and</span></code>, <code class="docutils literal notranslate"><span class="pre">or</span></code> y <code class="docutils literal notranslate"><span class="pre">not</span></code>:</p>
 <ul class="simple">
 <li><p>Usa <code class="docutils literal notranslate"><span class="pre">and</span></code> cuando todas las condiciones deben cumplirse para que se muestre una pregunta.</p>
@@ -319,7 +319,7 @@ Para practicar con la lógica de salto en XLSForm, consulta el <a href="https://
 </table>
 </section>
 <section id="agregar-logica-de-salto-segun-si-una-pregunta-fue-respondida">
-<h2>Agregar lógica de salto según si una pregunta fue respondida<a class="headerlink" href="#agregar-logica-de-salto-segun-si-una-pregunta-fue-respondida" title="Link to this heading">¶</a></h2>
+<span id="agregar-lógica-de-salto-según-si-una-pregunta-fue-respondida"></span><h2>Agregar lógica de salto según si una pregunta fue respondida<a class="headerlink" href="#agregar-logica-de-salto-segun-si-una-pregunta-fue-respondida" title="Link to this heading">¶</a></h2>
 <p>Además de agregar lógica de salto basada en una respuesta específica, puedes agregar lógica de salto según si una pregunta fue respondida o dejada en blanco. Esto puede ser útil para agregar preguntas de seguimiento, o cuando usas <a class="reference external" href="https://support.kobotoolbox.org/es/select_one_and_select_many.html">preguntas de consentimiento</a> en tu formulario.</p>
 <p>Las preguntas sin respuesta se tratan como cadenas vacías, representadas como dos apóstrofos simples <code class="docutils literal notranslate"><span class="pre">''</span></code>. Se pueden usar las siguientes condiciones de lógica de salto:</p>
 <table class="docutils align-default">
@@ -366,7 +366,7 @@ Para practicar con la lógica de salto en XLSForm, consulta el <a href="https://
 </table>
 </section>
 <section id="agregar-condiciones-de-logica-de-salto-a-grupos-de-preguntas">
-<h2>Agregar condiciones de lógica de salto a grupos de preguntas<a class="headerlink" href="#agregar-condiciones-de-logica-de-salto-a-grupos-de-preguntas" title="Link to this heading">¶</a></h2>
+<span id="agregar-condiciones-de-lógica-de-salto-a-grupos-de-preguntas"></span><h2>Agregar condiciones de lógica de salto a grupos de preguntas<a class="headerlink" href="#agregar-condiciones-de-logica-de-salto-a-grupos-de-preguntas" title="Link to this heading">¶</a></h2>
 <p>La lógica de salto también se puede aplicar a grupos de preguntas, además de a preguntas individuales. Al aplicar lógica de salto a un grupo, se mostrarán u ocultarán todas las preguntas del grupo en función de las respuestas anteriores.</p>
 <p>Para agregar lógica de salto a grupos de preguntas:</p>
 <ol class="arabic simple">
@@ -417,7 +417,7 @@ Para practicar con la lógica de salto en XLSForm, consulta el <a href="https://
 </table>
 </section>
 <section id="resolucion-de-problemas">
-<h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
+<span id="resolución-de-problemas"></span><h2>Resolución de problemas<a class="headerlink" href="#resolucion-de-problemas" title="Link to this heading">¶</a></h2>
 <details>
 <summary><strong>La lógica de salto no funciona como se esperaba con preguntas de opción múltiple</strong></summary>
 Al agregar lógica de salto basada en una pregunta de opción múltiple, usar <code>${question} = 'option1'</code> solo funcionará si la Opción 1 es <strong>la única respuesta seleccionada</strong>. Para aplicar lógica de salto cuando se selecciona la Opción 1, independientemente de si también se seleccionan otras opciones, usa la función <code>selected()</code>: <code>selected(${question}, 'option1')</code> <br><br>

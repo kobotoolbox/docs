@@ -217,10 +217,12 @@ Explore practical guidance across KoboToolbox topics and features
 
   api
   synchronous_exports
-  pulling_data_into_excelquery
-  pulling_data_into_powerbi
+  data_endpoint
+  connect_excel_powerbi
+  connect_google
+  connect_r
   rest_services
-  kobotoolbox_monday_integration
+  platform_integrations
   migrating_api
 
 .. raw:: html

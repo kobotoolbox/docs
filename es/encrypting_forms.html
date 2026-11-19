@@ -189,12 +189,12 @@
 (<a class="reference external" href="http://blog.formhub.org/2013/06/27/formhub-supports-odk-briefcase/">usando ODK Briefcase</a>).
 Dado que los envíos del formulario están cifrados, cualquier función que requiera acceso a los datos, como la vista de mapa o la exportación de datos, no funcionará dentro de KoboToolbox. El nivel adicional de seguridad hace posible usar KoboToolbox para recolectar datos sensibles cumpliendo con ciertos protocolos de protección de datos.</p>
 <section id="como-funciona">
-<h2>Cómo funciona<a class="headerlink" href="#como-funciona" title="Link to this heading">¶</a></h2>
+<span id="cómo-funciona"></span><h2>Cómo funciona<a class="headerlink" href="#como-funciona" title="Link to this heading">¶</a></h2>
 <p>KoboCollect permite cifrar el contenido de un formulario en el momento en que se marca como completado y listo para enviar en el teléfono. Para aprovechar esta función es necesario usar una clave de cifrado pública que se incluye en el XLSForm y una clave privada (que nunca se comparte) que ODK Briefcase utiliza para descifrar los datos localmente después de descargarlos desde KoboToolbox. La clave pública se usa para cifrar los datos, mientras que la clave privada los descifra. Solo una persona que tenga la clave privada puede descifrar los datos cifrados con la clave pública. Para obtener más información sobre la infraestructura de claves públicas y privadas,
 <a class="reference external" href="https://en.wikipedia.org/wiki/Public-key_cryptography">consulta aquí</a>.</p>
 </section>
 <section id="como-cifrar-formularios-xls">
-<h2>Cómo cifrar formularios XLS<a class="headerlink" href="#como-cifrar-formularios-xls" title="Link to this heading">¶</a></h2>
+<span id="cómo-cifrar-formularios-xls"></span><h2>Cómo cifrar formularios XLS<a class="headerlink" href="#como-cifrar-formularios-xls" title="Link to this heading">¶</a></h2>
 <ol class="arabic">
 <li><p>Crea tu formulario en KoboToolbox como de costumbre. Descarga el formulario desde la lista de borradores como archivo XLS.</p></li>
 <li><p>En el archivo descargado, ve a la hoja <strong>settings</strong>.</p></li>
@@ -213,7 +213,7 @@ el servidor que estés usando).</p></li>
 </p>
 </section>
 <section id="como-descifrar-formularios">
-<h2>Cómo descifrar formularios<a class="headerlink" href="#como-descifrar-formularios" title="Link to this heading">¶</a></h2>
+<span id="cómo-descifrar-formularios"></span><h2>Cómo descifrar formularios<a class="headerlink" href="#como-descifrar-formularios" title="Link to this heading">¶</a></h2>
 <p>ODK Briefcase se usa para descargar los archivos cifrados desde KoboToolbox y descifrarlos localmente en tu computadora usando una clave privada, lo que garantiza el acceso exclusivo a los datos. Para que el descifrado sea exitoso con ODK Briefcase, asegúrate de descargar e instalar los <em>Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files 6</em> desde el
 <a class="reference external" href="https://www.oracle.com/java/technologies/javase-jce-all-downloads.html">sitio de descarga de Java</a>.
 Esto es necesario para que el descifrado sea exitoso.</p>
@@ -267,7 +267,7 @@ Si no está allí, selecciona la <strong>PEM private key</strong> desde la carpe
 <p>Para generar los pares de claves pública-privada RSA puedes usar el paquete de software OpenSSL, que viene preinstalado en OSX y Linux. En Windows debes descargar e instalar el paquete de software OpenSSL desde
 <a class="reference external" href="http://slproweb.com/products/Win32OpenSSL.md">este sitio</a>. (<em>Nota: instala Win64 OpenSSL v1.1.1c en <strong>C</strong>: en lugar de la ubicación predeterminada <strong>C:\Program Files</strong></em>)</p>
 <section id="como-generar-una-clave-rsa-para-usar-con-formularios-cifrados-en-kobotoolbox">
-<h3>Cómo generar una clave RSA para usar con formularios cifrados en KoboToolbox<a class="headerlink" href="#como-generar-una-clave-rsa-para-usar-con-formularios-cifrados-en-kobotoolbox" title="Link to this heading">¶</a></h3>
+<span id="cómo-generar-una-clave-rsa-para-usar-con-formularios-cifrados-en-kobotoolbox"></span><h3>Cómo generar una clave RSA para usar con formularios cifrados en KoboToolbox<a class="headerlink" href="#como-generar-una-clave-rsa-para-usar-con-formularios-cifrados-en-kobotoolbox" title="Link to this heading">¶</a></h3>
 <p><em>Nota: Recomendamos encarecidamente usar OpenSSL como se documenta a continuación para crear tu par de claves pública/privada, ya que otros métodos pueden no ser compatibles con el software.</em></p>
 <ol class="arabic">
 <li><p>Abre una ventana “cmd” de Windows.</p></li>

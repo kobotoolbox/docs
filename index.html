@@ -207,6 +207,8 @@
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#account">Account</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#account-access-logs">Account access logs</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#application-programming-interface-api">Application Programming Interface (API)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#api-endpoint">API endpoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#api-key">API key</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#appearance">Appearance</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#archived-projects">Archived projects</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#audit">Audit</a></li>
@@ -219,6 +221,7 @@
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#choice-filter">Choice filter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#choice-name">Choice name</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#data-column-name">Data column name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="glossary.html#data-endpoint">Data endpoint</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#data-reports">Data reports</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#default-language">Default language</a></li>
 <li class="toctree-l2"><a class="reference internal" href="glossary.html#default-value">Default value</a></li>
@@ -951,40 +954,69 @@
 <p class="caption" role="heading"><span class="caption-text">Integrations</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="api.html">Getting started with the API</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="api.html#retrieving-your-server-url">Retrieving your server URL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#retrieving-your-api-key">Retrieving your API Key</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#retrieving-your-project-asset-uid">Retrieving your project asset UID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="api.html#exporting-your-data-using-the-api">Exporting your data using the API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#connecting-to-your-data-through-the-api">Connecting to your data through the API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="api.html#accessing-the-kobotoolbox-api">Accessing the KoboToolbox API</a></li>
 <li class="toctree-l2"><a class="reference internal" href="api.html#advanced-documentation">Advanced documentation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="synchronous_exports.html">Using the API for synchronous exports</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#generating-a-named-export">Generating a named export</a></li>
-<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#retrieving-the-synchronous-export-link">Retrieving the synchronous export link</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#understanding-synchronous-exports">Understanding synchronous exports</a></li>
+<li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#accessing-the-synchronous-export-link">Accessing the synchronous export link</a></li>
 <li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#connecting-your-data-to-an-external-application">Connecting your data to an external application</a></li>
 <li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#limitations">Limitations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="synchronous_exports.html#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_excelquery.html">Connecting KoboToolbox to Microsoft Excel</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#step-1-get-the-synchronous-exports-url">Step 1: Get the synchronous exports URL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#step-2-add-the-data-source">Step 2: Add the data source</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#updating-the-data-in-your-reports">Updating the data in your reports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_excelquery.html#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_endpoint.html">Using the API data endpoint</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_endpoint.html#understanding-the-data-endpoint">Understanding the data endpoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_endpoint.html#accessing-the-data-endpoint">Accessing the data endpoint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_endpoint.html#filtering-submissions">Filtering submissions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_endpoint.html#automating-data-retrieval">Automating data retrieval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_endpoint.html#additional-api-documentation">Additional API documentation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_endpoint.html#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="pulling_data_into_powerbi.html">Connecting KoboToolbox to Power BI</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#step-1-get-the-synchronous-exports-url">Step 1: Get the synchronous exports URL</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#step-2-add-the-data-source">Step 2: Add the data source</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#updating-the-data-in-your-reports">Updating the data in your reports</a></li>
-<li class="toctree-l2"><a class="reference internal" href="pulling_data_into_powerbi.html#troubleshooting">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_excel_powerbi.html">Connecting KoboToolbox data to Microsoft Excel and Power BI</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="connect_excel_powerbi.html#retrieving-your-synchronous-export-link">Retrieving your synchronous export link</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_excel_powerbi.html#connecting-kobotoolbox-to-excel-or-power-bi">Connecting KoboToolbox to Excel or Power BI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_excel_powerbi.html#working-with-imported-data">Working with imported data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_excel_powerbi.html#refreshing-your-data">Refreshing your data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_excel_powerbi.html#troubleshooting">Troubleshooting</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Using the REST services</a></li>
-<li class="toctree-l1"><a class="reference internal" href="kobotoolbox_monday_integration.html">KoboToolbox integration with monday.com</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_monday_integration.html#features">Features</a></li>
-<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_monday_integration.html#installation-and-first-time-use">Installation and first time use</a></li>
-<li class="toctree-l2"><a class="reference internal" href="kobotoolbox_monday_integration.html#faq">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="connect_google.html">Connecting KoboToolbox data to Google Sheets and Data Studio</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="connect_google.html#preparing-to-connect-kobotoolbox-to-google-sheets">Preparing to connect KoboToolbox to Google Sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_google.html#connecting-kobotoolbox-to-google-sheets">Connecting KoboToolbox to Google Sheets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_google.html#connecting-google-sheets-to-data-studio">Connecting Google Sheets to Data Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_google.html#refreshing-your-data">Refreshing your data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_google.html#refreshing-data-in-data-studio">Refreshing data in Data Studio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_google.html#connecting-private-kobotoolbox-projects">Connecting private KoboToolbox projects</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_google.html#troubleshooting">Troubleshooting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="connect_r.html">Connecting KoboToolbox data to R</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="connect_r.html#using-the-kobotoolbox-api-in-r">Using the KoboToolbox API in R</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_r.html#connecting-to-r-using-direct-api-requests">Connecting to R using direct API requests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_r.html#connecting-to-r-using-robotoolbox">Connecting to R using robotoolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_r.html#other-r-packages-for-kobotoolbox">Other R packages for KoboToolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="connect_r.html#updating-your-data-in-r">Updating your data in R</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rest_services.html">Using the KoboToolbox REST Services</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rest_services.html#understanding-rest-services">Understanding REST Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest_services.html#creating-a-rest-service">Creating a REST Service</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rest_services.html#managing-rest-services">Managing REST Services</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="platform_integrations.html">Integrating KoboToolbox with other platforms</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="platform_integrations.html#integrating-kobotoolbox-with-monday-com">Integrating KoboToolbox with monday.com</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform_integrations.html#integrating-kobotoolbox-with-openfn">Integrating KoboToolbox with OpenFn</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform_integrations.html#integrating-kobotoolbox-with-qgis">Integrating KoboToolbox with QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform_integrations.html#integrating-kobotoolbox-with-toladata">Integrating KoboToolbox with TolaData</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform_integrations.html#integrating-kobotoolbox-with-n8n">Integrating KoboToolbox with n8n</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform_integrations.html#integrating-kobotoolbox-with-devresults">Integrating KoboToolbox with DevResults</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform_integrations.html#integrating-kobotoolbox-with-openspp">Integrating KoboToolbox with OpenSPP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="platform_integrations.html#connecting-kobotoolbox-to-other-applications">Connecting KoboToolbox to other applications</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="migrating_api.html">Migrating from v1 to v2 API</a><ul>
