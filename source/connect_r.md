@@ -63,7 +63,7 @@ install.packages(c("httr", "jsonlite"))
 
 Then load them into your R session:
 
-```
+```r
 library(httr)
 library(jsonlite)
 ```
@@ -74,7 +74,7 @@ The KoboToolbox API data endpoint provides access to submissions in JSON format.
 
 The following example connects to a KoboToolbox project and retrieves its submissions:
 
-```
+```r
 library(httr)
 library(jsonlite)
 
@@ -115,7 +115,7 @@ For projects containing more submissions than the limit per request, you can use
 
 The following example retrieves submissions until no additional pages remain:
 
-```
+```r
 library(httr)
 library(jsonlite)
 
@@ -186,7 +186,7 @@ install.packages("robotoolbox")
 
 Load the package and configure your KoboToolbox connection:
 
-```
+```r
 library(robotoolbox)
 
 kobo_setup(
@@ -203,19 +203,19 @@ The example retrieves your API key from an environment variable instead of inclu
 
 Once connected, you can list the projects available to your account:
 
-```
+```r
 kobo_asset_list()
 ```
 
 To select a specific project, use its asset UID:
 
-```
+```r
 asset <- kobo_asset("YOUR_ASSET_UID")
 ```
 
 Then retrieve the submissions:
 
-```
+```r
 data <- kobo_data(asset)
 ```
 
@@ -223,7 +223,7 @@ For forms without repeat groups, the function returns the submissions as a data 
 
 To preview data returned as a data frame, use:
 
-```
+```r
 # View the main submissions
 head(data)
 
@@ -239,7 +239,7 @@ You can also use `robotoolbox` to retrieve submissions that meet specific condit
 
 For example, if your form contains a question named `region`, the following code retrieves submissions where the response is `north`:
 
-```
+```r
 filtered_data <- kobo_data(
   asset,
   query = '{"region": "north"}'
