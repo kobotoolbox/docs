@@ -1,5 +1,5 @@
 # Using the API data endpoint
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/97316be6a5af1a0e6b8f4620bfff1c7aca8e7378/source/data_endpoint.md" class="reference">19 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/ad57360b1651a3aa0ef4f4002a4f29787631a47e/source/data_endpoint.md" class="reference">19 Nov 2026</a>
 
 The **KoboToolbox API data endpoint** allows you to retrieve project submissions directly into external applications, such as R or Python, without manually downloading data files. You can use it to filter submissions, automate data retrieval, and connect KoboToolbox data to other tools for analysis and reporting.
 
