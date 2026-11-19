@@ -281,5 +281,5 @@ For example, you can:
 - Configure <a href="https://support.kobotoolbox.org/rest_services.html" class="reference">REST Services</a> to automatically send new submissions to external systems.
 
 <p class="note">
-  <b>Note:</b> Third-party integrations may have their own subscription requirements, permissions, and data security policies. Review each platform's requirements before connecting your KoboToolbox account, and ensure that project data is only shared with authorized applications.
+  <strong>Note:</strong> Third-party integrations may have their own subscription requirements, permissions, and data security policies. Review each platform's requirements before connecting your KoboToolbox account, and ensure that project data is only shared with authorized applications.
 </p>
