@@ -82,7 +82,9 @@ To prepare your data:
    - In **Power BI**, click **Close & Apply** to load the data into your report.
 
 You can now use the imported data to create tables, charts, reports, and dashboards.
-
+<p class="note">
+<strong>Note:</strong> Before building visuals, check the validation and submission fields in Power Query. Filter out records that are not yet validated, check _submission_time is set as Date/Time, and check for duplicate _uuid values. Building visuals before this check can show unvalidated or duplicate submissions in your dashboard.
+</p>
 <p class="note">
   <strong>Note:</strong> You can connect multiple KoboToolbox projects to the same Excel workbook or Power BI report. Repeat the connection process for each project using its synchronous export link.
 </p>
