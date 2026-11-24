@@ -1,5 +1,5 @@
 # Translating open-ended responses
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9f2ae13c9edd5e17bb9b27e01d709ef54eb40a6a/source/translation.md" class="reference">24 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d78ac63e3e14551fec139b2425b3d48ebae52b1a/source/translation.md" class="reference">24 Nov 2026</a>
 
 <iframe src="https://www.youtube.com/embed/Tjr6xHsoOlg?si=qvDHOuFpJXliBKu-" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
