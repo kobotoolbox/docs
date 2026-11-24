@@ -1,11 +1,11 @@
 # Managing account usage limits
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f215e2f8ab24dbeba6789dc7910b004988dcd6f7/source/account_usage_limits.md" class="reference">6 Oct 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/62ece73ff361da672b4c566c0c95ecd3ab2dfcfc/source/account_usage_limits.md" class="reference">24 Nov 2026</a>
 
 KoboToolbox [Community, Professional, and Teams Plans](https://www.kobotoolbox.org/pricing/) have specific usage limits for survey submissions, file storage, and automatic transcription, translation, and analysis.
 
 - **Submission limit:** The number of survey submissions that can be collected by projects owned by your account per [billing cycle](https://support.kobotoolbox.org/glossary.html#billing-cycle).
 - **Storage limit:** The total size of photos, audio, videos, and files collected with your surveys or imported in project **Settings > Media.**
-- **Transcription and translation limit:** The number of [transcription minutes and translation characters](https://support.kobotoolbox.org/transcription-translation.html) available for audio recordings.
+- **Transcription and translation limit:** The number of [transcription minutes](https://support.kobotoolbox.org/transcription.html) and [translation characters](https://support.kobotoolbox.org/translation.html) available for audio recordings.
 - **Automatic analysis limit:** The number of AI-generated [analysis requests](https://support.kobotoolbox.org/qualitative_analysis.html) available for open-ended audio question responses.
 
 If your account exceeds its usage limits, certain features will be temporarily unavailable until you reduce your usage or upgrade your plan. This article explains what happens when you reach account limits and how to resume normal activity.
