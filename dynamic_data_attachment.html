@@ -182,7 +182,7 @@
           
   <section id="dynamic-data-attachments-in-xlsform">
 <h1>Dynamic data attachments in XLSForm<a class="headerlink" href="#dynamic-data-attachments-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/7c0290d0daf64b474c66cabf8004b4a1cb1d57cb/source/dynamic_data_attachment.md" class="reference">8 Sep 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6fbe2c781e94d2916d2b440729be585e65f34310/source/dynamic_data_attachment.md" class="reference">24 Nov 2026</a></p>
 <p>Dynamic linking allows you to use data from a <strong>parent project</strong> within <strong>child projects</strong>, simplifying the management of longitudinal data collection. This article explains how to dynamically link data between KoboToolbox projects.</p>
 <p class="note">
     <strong>Note:</strong> Dynamic data attachments function similarly to the <a href="https://support.kobotoolbox.org/pull_data_kobotoolbox.html"><code>pulldata()</code></a> function but eliminate the need for separate CSV files, since the data from a linked parent project serves as the data source.
@@ -335,7 +335,7 @@
 <li><p>Create and deploy the <strong>child project</strong>.</p></li>
 <li><p>Connect the child project to the parent project:</p>
 <ul class="simple">
-<li><p>In the <strong>SETTINGS &gt; Connect Projects</strong> tab of the child project, click the “Select a different project to import data from.” A dropdown menu will allow you to select a parent project to link.</p></li>
+<li><p>In the <strong>SETTINGS &gt; Connect Projects</strong> tab of the child project, click the “Select a project to import data from.” A dropdown menu will allow you to select a parent project to link.</p></li>
 <li><p>Rename the linked parent project to the <code class="docutils literal notranslate"><span class="pre">xml-external</span></code> question name defined in the XLSForm and click <strong>IMPORT</strong>.</p></li>
 <li><p>You can then select specific questions from the parent project to share with the child project (recommended), or select all questions.</p></li>
 </ul>
@@ -581,9 +581,9 @@ If data from the parent project is not appearing in the child form, check the fo
 </details>
 <br>
 <details>
-<summary><strong>Parent project does not appear under “Import other project data”</strong></summary>
-If the parent project does not appear in the <strong>Import other project data</strong> list, check that data sharing is enabled for the parent project.<br><br>
-Open the <strong>Connect Projects</strong> settings in the parent project and enable data sharing under <strong>Share data with other project forms</strong>. Once data sharing is enabled, return to the child project and try connecting to the parent project again.
+<summary><strong>Parent project does not appear under “Import project data”</strong></summary>
+If the parent project does not appear in the <strong>Import project data</strong> list, check that data sharing is enabled for the parent project.<br><br>
+Open the <strong>Connect Projects</strong> settings in the parent project and enable data sharing under <strong>Allow data sharing with other projects</strong>. Once data sharing is enabled, return to the child project and try connecting to the parent project again.
 </details>
 <br>
 <details>
