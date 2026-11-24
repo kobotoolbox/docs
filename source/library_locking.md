@@ -1,5 +1,5 @@
 # Library locking with XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/149e56f3d80934c2c952fd2ca7d057cc6cdbafff/source/library_locking.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/library_locking.md" class="reference">17 Jul 2026</a>
 
 The [KoboToolbox library](https://support.kobotoolbox.org/question_library.html) allows you to store and manage templates, questions, and blocks for reuse across multiple projects. **Form templates in the library** can be shared with team members to ensure consistent form design and reduce duplication of effort.
 
@@ -78,7 +78,7 @@ Form-level restrictions apply to the whole form. You can apply the following res
 | Name | Description |
 |:------|:-------------|
 | <code>form_appearance</code> | Prevents changes to the form [theme](https://support.kobotoolbox.org/form_style_xls.html). |
-| <code>form_replace</code> | Prevents replacing the form in KoboToolbox using the <i class="k-icon k-icon-replace"></i> **Replace Form** option. |
+| <code>form_replace</code> | Prevents replacing the form in KoboToolbox using the <i class="k-icon-replace"></i> **Replace Form** option. |
 | <code>group_add</code> | Prevents creating new groups. |
 | <code>question_add</code> | Prevents adding or cloning questions in a group. |
 | <code>question_order_edit</code> | Prevents reordering questions. |
@@ -163,13 +163,13 @@ Once you have created and uploaded a locked XLSForm as a template, you can use i
 ### Importing a locked XLSForm into your library
 
 To import a locked XLSForm into your library:
-1. Go to the <i class="k-icon k-icon-library"></i> **Library** from the left menu bar in KoboToolbox.
+1. Go to the <i class="k-icon-library"></i> **Library** from the left menu bar in KoboToolbox.
 2. Click **NEW**, then select **Upload**.
 3. Upload your XLSForm file, and select **Upload as template.**
 
 ![Upload template](images/library_locking/upload_template.png)
 
-The template will appear in your library with a <i class="k-icon k-icon-template-locked"></i> **lock symbol**, showing that it contains restrictions.
+The template will appear in your library with a <i class="k-icon-template-locked"></i> **lock symbol**, showing that it contains restrictions.
 
 ### Creating a project from a locked template
 

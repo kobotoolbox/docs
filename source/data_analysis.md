@@ -1,5 +1,5 @@
 # Data analysis with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/977b859244796b0c30002db811ee84f02bf98dee/source/data_analysis.md" class="reference">15 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/62ece73ff361da672b4c566c0c95ecd3ab2dfcfc/source/data_analysis.md" class="reference">24 Nov 2026</a>
 
 KoboToolbox provides **built-in tools** to help you review, visualize, and analyze collected data. These tools can be used for descriptive statistics, mapping, and qualitative analysis. 
 
@@ -39,12 +39,12 @@ KoboToolbox also provides a built-in **Map view** for submissions that include G
 
 KoboToolbox’s natural language processing tools help you **transcribe, translate, and analyze qualitative data.** This can help turn open-ended audio responses into clearer, more usable insights.
 
-You can process and analyze audio responses directly in the user interface, then save transcripts, translations, summaries, categories, and other analysis results as new columns in your dataset.
+You can process and analyze audio and text responses directly in the user interface, and save transcripts, translations, summaries, categories, and other analysis results as new columns in your dataset. Transcription and translation can be done at the individual submission-level or in bulk. 
 
 ![Qualitative data analysis](images/data_analysis/qual.png)
 
 <p class="note">
-  To learn more about analyzing qualitative data in KoboToolbox, see <a href="https://support.kobotoolbox.org/transcription-translation.html">Transcription and translation of audio responses</a> and <a href="https://support.kobotoolbox.org/qualitative_analysis.html">Qualitative analysis of audio responses</a>.
+  To learn more about transcribing, translating, and analyzing qualitative data, see <a href="https://support.kobotoolbox.org/transcription.html">Transcribing audio responses</a>, <a href="https://support.kobotoolbox.org/translation.html">Translating open-ended responses</a>, and <a href="https://support.kobotoolbox.org/qualitative_analysis.html">Analyzing qualitative data</a>.
 </p>
 
 ## Exporting and connecting data for external analysis
@@ -76,13 +76,26 @@ Other export settings, such as storing date and number responses as text or incl
 
 For ongoing projects, you may want to **connect your KoboToolbox data to external tools** instead of downloading a new export each time your data changes.
 
-**Synchronous exports** allow you to automatically connect KoboToolbox data with external applications such as Microsoft Power BI, Excel, or Google Sheets. This can be useful for dashboards, project monitoring, advanced processing, or shared reporting workflows.
+**Synchronous exports** allow you to automatically connect KoboToolbox data with external applications such as [Microsoft Power BI, Excel](https://support.kobotoolbox.org/connect_excel_powerbi.html ), or [Google Sheets](https://support.kobotoolbox.org/connect_google.html). This can be useful for dashboards, project monitoring, advanced processing, or shared reporting workflows.
 
 With synchronous exports, your connected data updates as new submissions are received, reducing the need for manual downloads and refreshes.
 
 <p class="note">
   To learn more about connecting your data to external tools, see <a href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>.
 </p>
+
+### API data endpoint
+
+For more advanced analysis and integrations, you can use the **KoboToolbox API data endpoint** to retrieve project submissions directly into external software, such as R or Python.
+
+Unlike synchronous exports, which provide CSV or XLSX files based on saved export settings, the data endpoint provides access to submission data in JSON format. It allows you to customize requests, filter submissions, and control how data is retrieved.
+
+The data endpoint is particularly useful for large datasets, automated analysis, and workflows that require greater flexibility. However, it typically requires some programming knowledge or software that can handle API requests.
+
+<p class="note">
+  To learn more, see <a href="https://support.kobotoolbox.org/data_endpoint.html">Using the API data endpoint</a>.
+</p>
+
 
 ## Preparing for data analysis with KoboToolbox
 

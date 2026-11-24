@@ -1,10 +1,10 @@
 # Adding media to an XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/media.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3d3224da735214c5c6777300501d94ccc5362f5d/source/media.md" class="reference">22 Jul 2026</a>
 
 <iframe src="https://www.youtube.com/embed/7TrVmKIuCa8?si=QCr1IzvDXaASEZg7" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
-KoboToolbox allows you to add media, including **images**, **audio files**, and **videos**, to notes, questions, and choices in your form. Adding media can increase user engagement and make forms more accessible for users with visual impairments or literacy barriers. 
+KoboToolbox allows you to add media, including **images**, **audio files**, and **videos**, to notes, questions, and choices in your form. Adding media can increase user engagement and make forms more accessible for users with visual impairments or literacy barriers. You can also use this approach to add your organization’s logo to your form.
 
 Form media works with both [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) and [web forms](https://support.kobotoolbox.org/data_through_webforms.html). The following types of media files are currently supported:
 

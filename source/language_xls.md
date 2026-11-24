@@ -1,5 +1,5 @@
 # Adding translations in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/b5da1c0542bde45f5129fd0501ffa56ca2d5ede8/source/language_xls.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/5f2715fe52e36ee2368f7f8ddea167023656352d/source/language_xls.md" class="reference">28 Aug 2026</a>
 
 Adding translations to a form allows users to switch to their preferred language during data collection without creating separate forms. Any number of translations can be added. Both [KoboCollect](https://support.kobotoolbox.org/data_collection_kobocollect.html) and [web forms](https://support.kobotoolbox.org/data_through_webforms.html) support form translations.
 
@@ -157,13 +157,14 @@ Additionally, when incorporating question references within question labels usin
 
 <details>
 <summary><b>Unnamed language appears after uploading an XLSForm</b></summary>
-An unnamed language may appear if your XLSForm is missing translation columns for respondent-facing content, such as <code>hint</code>, <code>guidance_hint</code>, media, <code>constraint_messages</code>, or <code>required_message</code> columns. Until this is fixed, text from these columns will appear blank for all languages that are not the default language.<br><br>An unnamed language may also appear if you set a <code>default_language</code> in the <code>settings</code> tab, such as <code>English (en)</code>, but your form only has one language and uses <code>label</code> instead of <code>label::English (en)</code>. To fix this, clear the default language setting in the <code>settings</code> tab.<br><br>Finally, an unnamed language may appear if you upload an XLSForm to a project that used to have multiple languages, but now has only one unspecified language. If your form now has only one language, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a>, make the unnamed language the default language, then delete the other languages.
+An unnamed language may appear if your XLSForm is missing translation columns for respondent-facing content, such as <code>hint</code>, <code>guidance_hint</code>, media, <code>constraint_messages</code>, or <code>required_message</code> columns. Until this is fixed, text from these columns will appear blank for all languages that are not the default language.
 </details>
 
 <br>
 
 <details>
-<summary><b>Additional or unneeded languages remain after uploading an XLSForm</b></summary>
-   If you upload an XLSForm that has fewer languages than an earlier version of the same project, KoboToolbox may still show languages from the previous version. To remove unneeded languages, open the <a class="reference external" href="https://support.kobotoolbox.org/language_dashboard.html">translations interface</a> in KoboToolbox and delete any languages that are no longer used.
+<summary><b>Error message: Import Failed! The hint column is not translated</b></summary>
+  This error occurs when you upload an XLSForm with translations, but one or more user-facing columns are not assigned to a language.
+For example, if your form includes <code>label::English (en)</code> but uses <code>hint</code> instead of <code>hint::English (en)</code>, the form upload will fail with the error message <code>The hint column is not translated</code>.<br><br>
+When using translations, make sure all user-facing columns include the appropriate language name and code. This applies to the following columns: <code>label</code>, <code>hint</code>, <code>guidance_hint</code>, <code>required_message</code>, <code>constraint_message</code>, <code>image</code>, <code>audio</code>, <code>video</code>.
 </details>
-

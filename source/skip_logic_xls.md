@@ -1,5 +1,5 @@
 # Adding skip logic in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/0586118b5f55f20287bc6db496832b14bbfc6239/source/skip_logic_xls.md" class="reference">5 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d96d90ba3aae387ce0fd7bdc57e1a08767431ef6/source/skip_logic_xls.md" class="reference">25 Aug 2026</a>
 
 Skip logic, also known as relevance logic, allows you to **determine when a question or group of questions will be displayed** in the form based on a previous question or the result of a calculation. For example, you can use it to ask follow-up questions only to a subset of respondents, or to hide entire sections of a form if they are not relevant.
 
@@ -116,4 +116,21 @@ When adding skip logic based on a multiple choice question, using <code>${questi
 This is common when adding an open text “Specify other” question after a multiple choice question. For example, if you want the “Specify other” question to appear whenever “Other” is selected, use: <code>selected(${question}, 'other')</code>
 
 </details>
+
+<br>
+
+<details>
+<summary><strong>FormLogicError: Could not evaluate</strong></summary>
+
+The <strong>FormLogicError: Could not evaluate</strong> error usually means that a skip logic expression contains an error.<br><br>
+Check the skip logic expression for common issues, including:
+<ul>
+<li>Missing or misplaced parentheses.</li>
+<li>An incorrect comparison operator. For example, <code>=&gt;</code> is not a valid substitute for <code>&gt;=</code> (greater than or equal to).</li>
+<li>An incorrectly formatted question reference. Question names must use the <code>${question_name}</code> format. For example, <code>${age}</code> is valid, while <code>$age}</code> is not.</li>
+</ul>
+Identify the faulty expression from the error message, correct the expression, and redeploy the form.
+
+</details>
+
 

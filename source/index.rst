@@ -40,7 +40,9 @@ Explore practical guidance across KoboToolbox topics and features
   activation_link
   reset_password
   account_settings
+  account_usage_limits
   two_factor_authentication
+  activity_logs
 
 .. raw:: html
 
@@ -69,7 +71,7 @@ Explore practical guidance across KoboToolbox topics and features
   group_repeat
   matrix_response
   language_dashboard
-  alternative_enketo
+  form_style
   form_meta
   form_logic
   skip_logic
@@ -121,6 +123,7 @@ Explore practical guidance across KoboToolbox topics and features
   select_from_map_xls
   select_from_image
   dynamic_data_attachment
+  custom_submission_message
   library_locking
   import_collection
 
@@ -144,7 +147,7 @@ Explore practical guidance across KoboToolbox topics and features
   data_collection_kobocollect
   kobocollect_settings
   collect_gps
-  recording-interviews
+  qualitative_data
   collecting_data_multiple_languages
 
 
@@ -174,7 +177,7 @@ Explore practical guidance across KoboToolbox topics and features
   project_sharing_settings
   managing_permissions
   activity_logs
-  getting_started_organization_feature
+  team_management_feature
 
 .. raw:: html
 
@@ -194,7 +197,8 @@ Explore practical guidance across KoboToolbox topics and features
   preparing_for_analysis
   creating_custom_reports
   mapping_gps
-  transcription-translation
+  transcription
+  translation
   qualitative_analysis
   converting_to_spss_and_stata
 
@@ -214,12 +218,12 @@ Explore practical guidance across KoboToolbox topics and features
 
   api
   synchronous_exports
-  pulling_data_into_excelquery
-  pulling_data_into_powerbi
-  merging_dataset_excel_power_query
+  data_endpoint
+  connect_excel_powerbi
+  connect_google
+  connect_r
   rest_services
-  upload_to_gis
-  kobotoolbox_monday_integration
+  platform_integrations
   migrating_api
 
 .. raw:: html

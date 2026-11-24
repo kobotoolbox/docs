@@ -40,6 +40,7 @@ Explora orientación práctica sobre los temas y funciones de KoboToolbox
   activation_link
   reset_password
   account_settings
+  account_usage_limits
   two_factor_authentication
 
 .. raw:: html
@@ -121,6 +122,7 @@ Explora orientación práctica sobre los temas y funciones de KoboToolbox
   select_from_map_xls
   select_from_image
   dynamic_data_attachment
+  custom_submission_message
   library_locking
   import_collection
 

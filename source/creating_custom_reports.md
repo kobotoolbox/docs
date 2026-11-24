@@ -1,5 +1,5 @@
 # Visualizing your data with reports
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6e9f496956ced232adb4985272fbee0a6465318d/source/creating_custom_reports.md" class="reference">15 Jun 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/45da64cebb609cbaf6db1be38c136ed4c202c82e/source/creating_custom_reports.md" class="reference">17 Jul 2026</a>
 
 KoboToolbox includes a reporting tool that you can use to monitor incoming data and view simple descriptive statistics. You can use reports to display charts, review response counts, compare responses by subgroup, and share or print a summary of selected form questions.
 
@@ -22,7 +22,7 @@ The default report includes all questions in your form. Each question is display
 
 ![Data reports](images/creating_custom_reports/reports.png)
 
-You can print the report or save it as a PDF by clicking the <i class="k-icon-print"></i> **print** button in the top right corner. You can also <i class=" k-icon-expand"></i> **toggle full screen mode** to view the report across the full screen.
+You can print the report or save it as a PDF by clicking the <i class="k-icon-print"></i> **print** button in the top right corner. You can also <i class="k-icon-expand"></i> **toggle full screen mode** to view the report across the full screen.
 
 ## Customizing your report
 

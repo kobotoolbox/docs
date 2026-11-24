@@ -137,7 +137,18 @@ i.icon svg {
   fill: currentColor;
 }
 
-.k-icon {
+.k-icon,
+[class^=k-icon-],
+[class*=" k-icon-"] {
+  display: inline-block;
+  vertical-align: middle;
+  color: inherit;
+  line-height: 0;
+  font-size: 1.25em;
+}
+
+.ti-outline,
+.ti-filled {
   display: inline-block;
   vertical-align: middle;
   color: inherit;
@@ -318,7 +329,7 @@ html body header.main-header .main-header__navigation .language-picker__option.l
   bottom: 0;
 }
 .main-search.main-search--big .wrapper {
-  background-color: rgba(0, 73.78, 142.8, 0.6);
+  background-color: rgba(0%, 28.9333333333%, 56%, 0.6);
   position: relative;
   z-index: 1;
 }
@@ -327,7 +338,7 @@ html body header.main-header .main-header__navigation .language-picker__option.l
 }
 .main-search .wrapper {
   width: 100%;
-  background-color: rgba(0, 73.78, 142.8, 0.7);
+  background-color: rgba(0%, 28.9333333333%, 56%, 0.7);
 }
 .main-search:not(.main-search--big) .main-search__header,
 .main-search:not(.main-search--big) .main-search__paragraph,
@@ -533,10 +544,15 @@ html body {
 }
 .page .page__body table {
   margin-bottom: 1.5em;
+  margin-left: 0;
 }
 .page .page__body table th p {
   font-weight: 500;
   margin: 0 auto;
+  text-align: left;
+}
+.page .page__body table td {
+  text-align: left;
 }
 .page .page__body table td.text-left {
   text-align: left;
@@ -839,7 +855,7 @@ html body div.footer p:last-child {
   padding: 4.375rem 0.9375rem 6.25rem;
   text-align: center;
   color: hsl(0, 0%, 100%);
-  background-color: rgba(0, 73.78, 142.8, 0.6);
+  background-color: rgba(0%, 28.9333333333%, 56%, 0.6);
 }
 .community-questions.community-questions--sidebar::before {
   content: "";

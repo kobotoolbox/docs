@@ -1,5 +1,5 @@
 # Using XLSForm with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3bf638b09218c9fbd0884c963540206a8e3d0d8d/source/xlsform_with_kobotoolbox.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9ce4e6247136c1ffee8142d754ae7e4ce1057b6c/source/xlsform_with_kobotoolbox.md" class="reference">28 Aug 2026</a>
 
 XLSForm integrates smoothly with KoboToolbox for creating, previewing,
 editing, and deploying forms for data collection. For example, you can start
@@ -31,8 +31,8 @@ Any form created using the KoboToolbox Formbuilder can be downloaded as
 an XLSForm file:
 
 1.  Go to the **FORM** page of your project in KoboToolbox.
-2.  Click the <i class="k-icon k-icon-more"></i> **More actions** icon.
-3.  Select <i class="k-icon k-icon-xls-file"></i> **Download XLS**.
+2.  Click the <i class="k-icon-more"></i> **More actions** icon.
+3.  Select <i class="k-icon-xls-file"></i> **Download XLS**.
 
 ![Download XLS menu](images/xlsform_with_kobotoolbox/download_xls.png)
 
@@ -45,7 +45,7 @@ To upload and preview an XLSForm to a new project in KoboToolbox:
 1.  Go to the **Projects** home page in KoboToolbox and click **NEW**.
 2.  Select **Upload an XLSForm** and upload your Excel file.
 3.  Enter the project details and click **Create project**.
-4.  Click the <i class="k-icon k-icon-view"></i> **Preview** button to preview
+4.  Click the <i class="k-icon-view"></i> **Preview** button to preview
     your form.
 
 ![Upload XLSForm dialog](images/xlsform_with_kobotoolbox/upload_xls.png)
@@ -55,7 +55,7 @@ Once a project has been created, you can replace any existing form with an
 updated XLSForm:
 
 1.  Go to the **FORM** page of your project in KoboToolbox.
-2.  Click <i class="k-icon k-icon-replace"></i> **Replace form** in the top right
+2.  Click <i class="k-icon-replace"></i> **Replace form** in the top right
     corner.
 3.  Select **Upload an XLSForm** and upload your Excel file.
 
@@ -90,7 +90,7 @@ For more information, see <a href="https://support.google.com/docs/answer/183965
     
 To obtain the correct URL for a spreadsheet stored in Dropbox:
 
-1.  Copy the file link in Dropbox by clicking on <i class="k-icon k-icon-link"></i> **Copy link**.
+1.  Copy the file link in Dropbox by clicking on <i class="k-icon-link"></i> **Copy link**.
 2.  At the end of the link, replace the suffix ``dl=0`` with ``dl=1``. This will be the
     URL to import into KoboToolbox.
     
@@ -164,6 +164,11 @@ correcting the error in your spreadsheet, you will need to upload the file again
 | `Can't find survey.xml` | <a href="https://support.kobotoolbox.org/dynamic_data_attachment.html">Dynamic data attachments</a> have not been properly set up in your project settings. |
 | `'select_from_list_name'` | A list name is missing from the `type` column after `select_one` or `select_multiple`. |
 | `Error: 'dict' object has no attribute 'nodeType'` | The user added a language suffix to the `form_title` column in the `settings` worksheet, such as `form_title::English (en)`. Translating the `form_title` column is not supported. |
+| `Import Failed! Duplicate node name` | The XLSForm includes a duplicated question or group name. |
+| `Import Failed! The hint column is not translated` | The XLSForm includes translations but one or more user-facing columns are not assigned to a language (e.g., `label`, `hint`, `guidance_hint`, `required_message`, `constraint_message`, `image`, `audio`, `video`). |
+| `Import Failed! Invalid node name` | The question name referenced in the error message is invalid. Question names cannot start with a number or include spaces or symbols (except underscores). |
+| `ODK Validate Errors: Group has no children! Group: ${group_name}. The XML is invalid.` | The XLSForm contains a group with no user-facing questions (e.g., just calculations). |
+| `On the 'survey' sheet, the 'calculate' value is invalid. Reference expressions must only include question names, and end with '}'.` | The XLSForm includes a misspecified reference to another question (e.g., `${question_name` without the closing `}`). |
 </details>
 
 <br>
@@ -240,6 +245,15 @@ To fix the missing or incorrect list name:
 <li>Save the file, then <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#replacing-a-form-with-an-xlsform">upload</a> and redeploy the form again.</li>
 </ol>
 
+</details>
+
+<br>
+
+<details>
+<summary><strong>Error message: Import Failed! Duplicate node name</strong></summary>
+This error occurs when a value in the <code>name</code> column of the <code>survey</code> sheet is duplicated. The duplicate can be a question name, a group name, or a question and group that have the same name.<br><br>
+    
+To fix the error, locate the duplicate name specified in the error message and replace one instance with a unique name.
 </details>
 
 <br>

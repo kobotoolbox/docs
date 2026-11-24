@@ -1,5 +1,5 @@
 # Managing option choices in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1b55b2580defd73765e9c2ad608141a3428ee504/source/option_choices_xls.md" class="reference">4 Jan 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f516e7db95c095da8db4dcce252eca8e608fbee5/source/option_choices_xls.md" class="reference">8 Sep 2026</a>
 
 XLSForm simplifies the creation and management of **option choice lists** for survey forms. This is particularly useful for long or repetitive lists, such as country or city names. Option choices are defined for `select_one`, `select_multiple`, or `rank` [questions](https://support.kobotoolbox.org/question_types_xls.html#select-question-types). 
 
@@ -101,4 +101,14 @@ For very large choice lists, containing hundreds or thousands of options, it is 
 <p class="note">
 To learn more about external choice lists in XLSForm, see <a href="select_from_file_xls.html">Selecting options from an external file</a>.
 </p>
+
+### Adding an Other option
+You can add an **Other** option to a select question manually by adding it to the choice list and using [skip logic](https://support.kobotoolbox.org/skip_logic_xls.html) to display an additional text question when **Other** is selected.
+
+Alternatively, you can add `or_other` in your XLSForm after the choice list name in the `type` column (e.g., `select_one list_name or_other`). This automatically adds an **Other** option and a corresponding text question for the respondent to specify their response. The text question is displayed only when Other is selected.
+
+<p class="note">
+To learn more about skip logic in XLSForm, see <a href="https://support.kobotoolbox.org/skip_logic_xls.html">Adding skip logic in XLSForm.</a>.
+</p>
+
 

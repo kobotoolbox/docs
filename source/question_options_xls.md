@@ -1,5 +1,5 @@
 # Question options in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/69f170c95d8e57a401cd67bdb7f0badb782f6ae4/source/question_options_xls.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/718ea91061ff39c79cbda4fcaac42daf52679d3e/source/question_options_xls.md" class="reference">8 Sep 2026</a>
 
 When designing a form in XLSForm, you can customize questions by adding hints, setting appearances, making a question mandatory, and more. To do this, you can add new columns in the `survey` worksheet of your XLSForm. These columns can be added anywhere in the worksheet, as long as the column name is typed exactly as required. 
 
@@ -126,7 +126,8 @@ The format of the default response depends on the question type and the data bei
 | `text` | Text (without quotation marks) |
 | `select_one` | Choice **name** (as defined in the choices worksheet) |
 | `select_multiple` | Choice **name(s)**, separated by a **space** if there are multiple |
-| `date` | Date in the YYYY-MM-DD format. If needed, prefix the date with a single quote (') in Excel to avoid potential formatting issues. | 
+| `date` | Date in the YYYY-MM-DD format  or `today()` function. If needed, prefix the date with a single quote (') in Excel to avoid potential formatting issues. | 
+| `time` | Time in the HH:MM format (e.g., `9:00` or `13:00`). | 
 
 ### Setting dynamic default responses
 
@@ -169,6 +170,7 @@ Different question types in XLSForm have different parameters. The most common p
 | Parameter | Question type | Description |
 | :--- | :--- | :--- |
 | `randomize=true` | `rank`, `select_one`, `select_multiple` | Randomizes the order of option choices |
+| `seed=34` or `seed=${calc}` | `rank`, `select_one`, `select_multiple` | Combine with `randomize` to set a seed for reproducible randomization |
 | `start=1 end=5 step=1` | `range` | Defines the minimum value, maximum value, and interval between numbers |
 | `capture-accuracy=20` | `geopoint` | Specifies the minimum acceptable [GPS accuracy](https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates) (in meters) for automatically capturing a location. Defaults to 5m. |
 | `warning-accuracy=50` | `geopoint` | Triggers a warning message if the [GPS accuracy](https://support.kobotoolbox.org/collect_gps.html#accuracy-of-gps-coordinates) (in meters) is not within the specified accuracy threshold. Defaults to 100m. |
@@ -183,9 +185,10 @@ XLSForms can include additional columns in the survey worksheet for more advance
 
 | XLSForm column | Description |
 | :--- | :--- |
-| `read_only` | If `yes` is entered in the `read_only` field, the question cannot be edited by the respondent. `read_only` fields can be combined with `default` or `calculation` fields to display information to the respondent. | 
-| `trigger` | The trigger column can be used to run a calculation only when the response to another visible question in the form is changed. For more information, see <a href="https://xlsform.org/en/#trigger">XLSForm documentation</a>. | 
+| `read_only` | If `yes` or an expression that evaluates to `true` is entered in the `read_only` field, the question cannot be edited by the respondent. `read_only` fields can be combined with `default` or `calculation` fields to display information to the respondent. | 
+| `trigger` | The trigger column can be used to clear a question’s response or run a calculation when (and only when) the response to another visible question in the form is changed. For more information, see <a href="https://xlsform.org/en/#trigger">XLSForm documentation</a>. | 
 | `body::accept` | To limit or expand the accepted file types for `file` questions, specify file extensions in the `body::accept` column, separated by a comma (e.g., .pdf, .doc, .png). | 
+| `image`, `audio`, `video` | To <a href="https://support.kobotoolbox.org/media.html">add media to a question</a>, include the relevant file name in the `image`, `audio`, or `video` column. The corresponding media file must also be uploaded to the KoboToolbox project. | 
 | `hxl` | To include <a href="https://hxlstandard.org">Humanitarian Exchange Language</a> (HXL) tags in your form, specify the tag (and optional attribute) in the `hxl` column, following the format `#tag` or `#tag+attribute`. | 
 
 Other columns can also be added to incorporate form logic into your XLSForm. 

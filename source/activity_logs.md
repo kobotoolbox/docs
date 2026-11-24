@@ -1,5 +1,5 @@
 # Monitoring project and account activity
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3bd66258a8d08aa1daafa90640a1fc8e4efe3b23/source/activity_logs.md" class="reference">16 Dec 2025</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a072de4b0c8b73e541e35a5a3c99066e7eafc921/source/activity_logs.md" class="reference">28 Aug 2026</a>
 
 
 In KoboToolbox, you can monitor project and account activity using **activity logs.** These logs record key actions and events in your account or projects, providing a detailed history of access and activity.
@@ -13,12 +13,12 @@ Activity logs can be helpful for:
 
 KoboToolbox provides two types of activity logs to help you monitor different aspects of your work:
 
--   **Account access logs:** Display all sign-ins to your account.
+-   **Account access logs:** Display all sign-ins to your account, including failed attempts.
 -   **Project history logs:** Track all actions and changes made by any user within a project and its data.
 
 ## Account access logs
 
-Account access logs record all authentication events (sign-ins) for your KoboToolbox account. They help you monitor account security by showing you when and where your account was accessed.
+Account access logs record all authentication events (sign-ins) for your KoboToolbox account, including failed attempts. They help you monitor account security by showing you when and where your account was accessed.
 
 To access your account access logs:
 
@@ -29,7 +29,7 @@ To access your account access logs:
 
 Access logs display the following information:
 
--   Date and time of each sign-in
+-   Date and time of each sign-in or failed attempt
 -   IP address (location information)
 -   Source (device information and browser)
 

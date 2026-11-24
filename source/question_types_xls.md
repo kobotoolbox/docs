@@ -1,5 +1,5 @@
 # Question types in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/question_types_xls.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/f68374fa167ed5702315c03f58ae6e5c7a49a9f2/source/question_types_xls.md" class="reference">6 Oct 2026</a>
 
 When adding questions to an XLSForm, you'll need to choose the appropriate **question type**. The question type will depend on the kind of information you want to collect: some question types are more suited for text, others for numbers, dates, or multiple choice inputs.
 
@@ -43,6 +43,8 @@ Numeric questions are used to collect whole numbers, decimal numbers, or values 
 | `integer` | Allows respondents to input whole numbers. | Number |
 | `decimal` | Allows respondents to input numbers that may contain decimal points. | Decimal |
 | `range` | Allows respondents to select a numeric value within a specified range constrained by minimum and maximum values, <a href="https://support.kobotoolbox.org/question_options_xls.html#question-parameters">configured</a> in the `parameters` column. | Range |
+| `percentage` | Allows respondents to enter a whole number from 0 to 100. Values below 0 or above 100 are not accepted. | None |
+
 
 
 <p class="note">
@@ -79,7 +81,7 @@ Media questions allow respondents to upload or record images, audio, and video f
 
 
 <p class="note">
-To learn more about media question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a> and <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
+To learn more about media question types in KoboToolbox, see <a href="https://support.kobotoolbox.org/photo_audio_video_file.html">Media questions in KoboToolbox</a> and <a href="https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
 </p>
 
 ### GPS question types

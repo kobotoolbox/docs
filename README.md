@@ -156,3 +156,30 @@ Useful links:
 - [Alabaster theme source code](https://github.com/bitprophet/alabaster)
 - [Sphinx source code](https://github.com/sphinx-doc/sphinx)
 - [Basic Sphinx theme source code](https://github.com/sphinx-doc/sphinx/tree/3.x/sphinx/themes/basic)
+
+## Icons
+
+Two icon sets are available for use in articles. If you need to figure out which icon KPI uses, open up your browser's "inspect" command (for Chrome and Firefox, right click on page and choose 'inspect'). Mouse over the icon you are interested in and you can see whether it uses the k-icon or tabler-icon prefix.
+
+### KPI icons (`k-icon-*`)
+
+KoboToolbox's legacy icon set, generated from SVGs in the KPI repository. Use these for any icon that has a `k-icon-` class.
+
+```html
+<i class="k-icon k-icon-trash"></i>
+```
+
+A visual reference of all available KPI icons (with names, minus `k-icon-` prefix) is available on KPI's [Storybook page](https://storybook.kbtdev.org/?path=/story/design-system-old-icon--all-icons).
+
+### Tabler icons (`ti-outline ti-*` / `ti-filled ti-*`)
+
+KPI now also uses [Tabler Icons](https://tabler.io/icons) for newer UI elements. Use `ti-outline` for outline style and `ti-filled` for filled style, along with the icon name.
+
+```html
+<i class="ti-outline ti-logout"></i>
+<i class="ti-filled ti-trash"></i>
+```
+
+The icon name can be found using the in-browser inspect method described above. The class names work slightly differently in the docs repo compared to KPI: If you see `tabler-icon-world-filled` in KPI, that will become `ti-filled ti-world` for use in this docs repo.
+
+Only icons listed in `scripts/tabler-icons-list.json` are available. When KPI adds a new Tabler icon that needs to be referenced in the docs, add its kebab-case name to the appropriate list in that file and run `npm run generate-icons`.

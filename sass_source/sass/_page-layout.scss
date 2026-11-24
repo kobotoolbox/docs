@@ -113,7 +113,11 @@ html body {
         p {
           font-weight: 500;
           margin: 0 auto;
+          text-align: left;
         }
+      }
+      td {
+    text-align: left;
       }
       td.text-left {
         text-align: left;

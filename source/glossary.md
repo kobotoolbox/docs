@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/1d93704c1b4f5b0a8af45b9f55c5b1433d5728dc/source/glossary.md" class="reference">2 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8491f1ee15b9dbe702b6ab4e00a9b7ba6df3e16a/source/glossary.md" class="reference">19 Nov 2026</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
@@ -36,7 +36,31 @@ A set of tools that allows different software systems to communicate with KoboTo
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
 </p>
 
-**Related term(s):** [Synchronous exports](https://support.kobotoolbox.org/glossary.html#synchronous-exports)
+**Related term(s):** [API endpoint](https://support.kobotoolbox.org/glossary.html#api-endpoint), [API key](https://support.kobotoolbox.org/glossary.html#api-key), [Data endpoint](https://support.kobotoolbox.org/glossary.html#data-endpoint), [Synchronous exports](https://support.kobotoolbox.org/glossary.html#synchronous-exports)
+
+---
+
+## API endpoint
+
+A web address that allows external applications to access specific KoboToolbox data or perform actions through the API. 
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
+</p>
+
+**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api), [Data endpoint](https://support.kobotoolbox.org/glossary.html#data-endpoint)
+
+---
+
+## API key
+
+A personal authentication token used to access a KoboToolbox account and its data through the API. An API key allows external applications and scripts to authenticate requests without entering a username and password.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
+</p>
+
+**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api), [Authentication](https://support.kobotoolbox.org/glossary.html#authentication)
 
 ---
 
@@ -64,19 +88,21 @@ Projects that have been removed from the active project list and no longer accep
 
 ## Audit
 
-A record that tracks specific actions taken during data collection or form completion, such as question timing or location, when audit metadata is enabled in a form.
+A record of specific actions taken while completing a form in KoboCollect, such as the time spent on each question or the device location.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/form_meta.html#audit-metadata-question">Audit metadata question</a>.
 </p>
 
-**Related term(s):** [Metadata](https://support.kobotoolbox.org/glossary.html#metadata)
+**Related term(s):** [Metadata](https://support.kobotoolbox.org/glossary.html#metadata), [KoboCollect](https://support.kobotoolbox.org/glossary.html#kobocollect)
 
 ---
 
 ## Authentication
 
-The process of verifying a user’s identity by requiring a valid username and password to control access to KoboToolbox accounts, projects, and submissions.
+The process of verifying a user's or application's identity to control access to KoboToolbox accounts, projects, and data. Authentication can use credentials such as a username and password or an API key.
+
+**Related term(s):** [API key](https://support.kobotoolbox.org/glossary.html#api-key)
 
 ---
 
@@ -85,7 +111,7 @@ The process of verifying a user’s identity by requiring a valid username and p
 A feature that continuously records audio during an interview while the form is being completed, capturing spoken responses without requiring separate audio questions.
 
 <p class="note">
-  For more information, see <a href="https://support.kobotoolbox.org/recording-interviews.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
+  For more information, see <a href="https://support.kobotoolbox.org/qualitative_data.html#recording-interviews-with-background-audio-recordings">Recording interviews with background audio recordings</a>.
 </p>
 
 ---
@@ -160,6 +186,30 @@ Internal short names assigned to choices that are used to store and reference da
 
 ---
 
+## Data column name
+
+Internal short names assigned to questions that are used to store and reference data in a form. These are also called **question names** in XLSForm, and sometimes referred to as **XML values** or **headers** in the user interface. Exporting your data using XML values and headers can facilitate data management and analysis.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
+</p>
+
+**Related term(s):** [Question name](https://support.kobotoolbox.org/glossary.html#question-name), [XML value](https://support.kobotoolbox.org/glossary.html#xml-value), [Label](https://support.kobotoolbox.org/glossary.html#label)
+
+---
+
+## Data endpoint
+
+A KoboToolbox API endpoint that provides direct access to project submissions in JSON format. It allows external applications to retrieve, filter, and process submission data.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_endpoint.html">Using the API data endpoint</a>.
+</p>
+
+**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api), [Synchronous exports](https://support.kobotoolbox.org/glossary.html#synchronous-exports), [API endpoint](https://support.kobotoolbox.org/glossary.html#api-endpoint)
+
+
+---
 ## Data reports
 Automated reports in the **DATA > Reports** view that display your project data in graphs and tables. Reports can be customized to adjust which questions are shown and how the results are visualized.
 
@@ -317,7 +367,7 @@ Operations used in form calculations or expressions to process data, such as per
 The European Union’s data protection regulation that sets rules for how personal data must be collected, stored, and processed, including requirements for privacy, security, and user consent when handling data in KoboToolbox.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/gdpr.html">General Data Protection Regulation (GDPR)</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/gdpr.html">Compliance with GDPR</a>.
 </p>
 
 ---
@@ -606,8 +656,21 @@ A set of questions that can be answered multiple times within a form, allowing r
 A feature that allows KoboToolbox to automatically send data to external systems by pushing new submissions to a specified REST endpoint whenever they are received.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/rest_services.html">Using the REST services</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/rest_services.html">Using the KoboToolbox REST Services</a>.
 </p>
+
+---
+
+## Required question
+
+A question that must be answered before the respondent can continue to the next page or submit the form. Required questions can be set to always require a response or only require a response when specific conditions are met. Required questions are also called **Mandatory questions** in the Formbuilder.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#mandatory-response">Question options in the Formbuilder</a> and <a class="reference external" href="https://support.kobotoolbox.org/question_options_xls.html#required-questions">Question options in XLSForm</a>.
+</p>
+
+**Related term(s):** [Form logic](https://support.kobotoolbox.org/glossary.html#form-logic)
+
 
 ---
 
@@ -643,7 +706,7 @@ A completed form entry sent to a project, containing all answers and any associa
 
 ## Synchronous exports
 
-A data export method that updates automatically as new submissions arrive, allowing external tools like Power BI, Excel, or Google Sheets to always access the most current data without manual downloads.
+A method of retrieving updated project data in CSV or XLSX format through a persistent API link. Synchronous exports use saved export settings and allow external applications to retrieve updated data when their connections are refreshed.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>.
@@ -686,6 +749,19 @@ Rules that define what counts as an acceptable answer for a question, such as re
 </p>
 
 **Related term(s):** [Form logic](https://support.kobotoolbox.org/glossary.html#form-logic)
+
+---
+
+## Validation status
+
+A status assigned to a submission in the data table to indicate whether it has been approved, not approved, or placed on hold. Validation statuses help teams track data quality and identify submissions that require further review or follow-up.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/viewing_validating_data.html">Viewing and validating your data</a>.
+</p>
+
+**Related term(s):** [Submission](https://support.kobotoolbox.org/glossary.html#submission)
+
 
 ---
 

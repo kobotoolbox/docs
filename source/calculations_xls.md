@@ -1,5 +1,5 @@
 # Adding calculations in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/calculations_xls.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/85a013a0baaa3ac795300fb2d20ff232e4f80373/source/calculations_xls.md" class="reference">28 Aug 2026</a>
 
 Calculations can be used inside your form to derive new variables, build advanced form logic, and display results to respondents during data collection.
 
@@ -71,6 +71,7 @@ Examples of more advanced calculations include:
 | `int(today()-${date})` | Calculate days since a date. |
 | `format-date(${date}, '%b')` | Return just the month from a date. |
 | `concat(${first}, " ", ${middle}, " ", ${last})` | Create a single string with a respondent’s full name. |
+| `concat(substr(today(), 0, 4), substr(today(), 5, 7), substr(today(), 8, 10), substr(now(), 11, 13), substr(now(), 14, 16), substr(now(), 17, 19))` | Create a unique serial number based on date and time. |
 | `jr:choice-name(${question1}, '${question1}')` | Return a choice’s label, in the current language, from the choice list. |
 | `translate(${full_name}, "ABCDEFGHIJKLMNOPQRSTUVWXYZ ", "abcdefghijklmnopqrstuvwxyz_")` | Convert uppercase letters to lowercase and spaces to underscores. |
 | `substr(${question}, 1, 2)` | Keep only the 1st letter or number in a string. |
@@ -78,6 +79,7 @@ Examples of more advanced calculations include:
 | `selected-at(${gps}, 0)` | Isolate latitude from GPS coordinates. |
 | `selected-at(${gps}, 1)` | Isolate longitude from GPS coordinates. |
 | `if(regex(${id}, '^ML-'), 'yes', 'no')` | Create a binary variable that takes `yes` if the respondent ID starts with “ML-”. |
+| `max(instance('pcodes')/root/item/admin_levels)` | Returns the maximum value from the `admin_level` column of the `pcodes` external CSV. |
 
 ### Setting dynamic default responses
 

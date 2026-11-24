@@ -1,5 +1,5 @@
 # Using functions in XLSForm
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/3e68d0f83165ae0b4339daef4fd4090b2efeeb46/source/functions_xls.md" class="reference">15 Feb 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/d64fb846d7faeb2e23033cc86da9b0698d9751d5/source/functions_xls.md" class="reference">28 Aug 2026</a>
 
 Functions are predefined operations used to perform calculations or manipulate data in XLSForm. They are essential for automating tasks and deriving key insights in your forms, allowing you to calculate project indicators, create scoring systems, and manage dates efficiently. 
 
@@ -73,8 +73,8 @@ The following functions are used to record, format, and calculate date and time 
 | `today()` | Returns the current date without a time component. |
 | `now()` | Returns the current date and time in ISO 8601 format, including the timezone. |
 | `date('YYYY-MM-DD')` | Forces dates into the correct date format (especially for dates before 1970). |
-| `format-date(date, format)` | Returns `date` as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%Y</code>: 4-digit year</li><li><code>%y</code>: 2-digit year</li><li><code>%m</code>: 0-padded month</li><li><code>%n</code>: numeric month</li><li><code>%b</code>: short text month (Jan, Feb, Mar…)</li><li><code>%d</code>: 0-padded day of month</li><li><code>%e</code>: day of month</li><li><code>%a</code>: short text day (Sun, Mon, Tue…).</li></ul> |
-| `format-date-time(datetime, format)` | Returns `datetime` as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%H</code>: 0-padded hour (24-hr time)</li><li><code>%h</code>: hour (24-hr time)</li><li><code>%M</code>: 0-padded minute</li><li><code>%S</code>: 0-padded second</li><li><code>%3</code>: 0-padded millisecond ticks.</li></ul> |
+| `format-date(date, 'format')` | Returns `date` as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%Y</code>: 4-digit year</li><li><code>%y</code>: 2-digit year</li><li><code>%m</code>: 0-padded month</li><li><code>%n</code>: numeric month</li><li><code>%b</code>: short text month (Jan, Feb, Mar…)</li><li><code>%d</code>: 0-padded day of month</li><li><code>%e</code>: day of month</li><li><code>%a</code>: short text day (Sun, Mon, Tue…).</li></ul> For example, `format-date(${date}, '%a, %b %e')` |
+| `format-date-time(datetime, 'format')` | Returns `datetime` as a string formatted as defined by <code>format</code>. Common formats include: <ul><li><code>%H</code>: 0-padded hour (24-hr time)</li><li><code>%h</code>: hour (24-hr time)</li><li><code>%M</code>: 0-padded minute</li><li><code>%S</code>: 0-padded second</li><li><code>%3</code>: 0-padded millisecond ticks.</li></ul>|
 | `decimal-time()` | Converts a time into a decimal value (e.g., 12:00 pm becomes 0.5), facilitating time-based form logic. |
 
 
