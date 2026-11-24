@@ -57,7 +57,7 @@ To edit raw data in KoboToolbox:
 1. Select the submission using the checkbox.
 2. Click <i class="k-icon-edit"></i> **Edit** above the data table.
 3. In the edit window, click **Edit** next to the field you want to change and enter the new value.
-    - For select type questions, enter one or more valid [XML values](https://support.kobotoolbox.org/glossary.html#xml-value), separated by spaces.
+    - For select type questions, enter one or more valid [choice names](https://support.kobotoolbox.org/glossary.html#choice-name), separated by spaces.
 4. Click **Save**, then **Confirm & close.**
 
 

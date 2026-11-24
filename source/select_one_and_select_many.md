@@ -119,11 +119,11 @@ The **Acknowledge** question type allows respondents to indicate agreement with 
 
 If you need more flexibility in labeling response options, or if you want to include a clear “No” option, use a **Select One** question instead.
 
-### Defining XML values for choices
+### Defining choice names
 
-It is strongly recommended to define XML values for all choices in select questions before deploying your form. XML values ensure consistency in your dataset and prevent issues during export and analysis.
+It is strongly recommended to define choice names for all choices in select questions before deploying your form. Choice names ensure consistency in your dataset and prevent issues during export and analysis.
 
-<p class="note"> To learn more about defining XML values, see <a href=https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">Adding questions in the Formbuilder</a>.
+<p class="note"> To learn more about defining choice names, see <a href=https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices">Adding questions in the Formbuilder</a>.
 </p>
 
 ### Adding an “Other, specify” response

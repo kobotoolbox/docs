@@ -36,9 +36,9 @@ Question referencing allows you to incorporate the answer to a previous question
 - **In question labels or hints:** For example, you can include a respondent’s child’s name in later questions about their child.
 - **In form logic:** For example, you can show or hide a question based on a previous response, or validate an answer by comparing it with an earlier one.
 
-Question referencing uses the format `${data_column_name}`. A question’s [data column name](https://support.kobotoolbox.org/question_options.html#data-column-name) can be found and modified in the question settings. 
+Question referencing uses the format `${question_name}`. The [question name](https://support.kobotoolbox.org/question_options.html#question-name) can be found and modified in the question settings. 
 
-To **display a previous response inside another question label**, insert `${data_column_name}` directly into the question label where you want the value to appear.
+To **display a previous response inside another question label**, insert `${question_name}` directly into the question label where you want the value to appear.
 
 ![Question referencing](images/form_logic/question_referencing.png)
 
@@ -63,7 +63,7 @@ To store a constant in your form:
 
 ![Question option hidden](images/form_logic/hidden.png)
 
-The value entered in the **Default Response** field will be stored as the constant. You can then reference this value using the Hidden question’s [data column name](https://support.kobotoolbox.org/question_options.html#data-column-name) in calculations and logic throughout your form.
+The value entered in the **Default Response** field will be stored as the constant. You can then reference this value using the Hidden question’s [question name](https://support.kobotoolbox.org/question_options.html#question-name) in calculations and logic throughout your form.
 
 ## Mathematical and comparison operators 
 
