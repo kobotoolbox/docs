@@ -83,7 +83,7 @@ Once your parent and child projects are set up and deployed in KoboToolbox, foll
 </p>
 
 2. Connect the child project to the parent project:
-    - In the **SETTINGS > Connect Projects** tab of the child project, click the “Select a different project to import data from.” A dropdown menu will allow you to select a parent project to link.
+    - In the **SETTINGS > Connect Projects** tab of the child project, click the “Select a project to import data from.” A dropdown menu will allow you to select a parent project to link.
     - Rename the linked parent project to the External XML question label defined in the Formbuilder and click **IMPORT.**
     - You can then select specific questions from the parent project to share with the child project (recommended), or select all questions.
 3. If you add new fields to the parent form and wish to use them in the child project, re-import the parent project in the child project settings.
