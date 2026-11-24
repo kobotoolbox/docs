@@ -1,5 +1,5 @@
 # Question options in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/e06802f1c16e4a48ec3cbe16afb8e5cf2a9472b1/source/question_options.md" class="reference">28 Aug 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/question_options.md" class="reference">24 Nov 2026</a>
 
 After adding a question to your form, you can customize **how it behaves and appears by adjusting its question options.** These settings allow you to control various question options, from variable naming and required responses to advanced display features and HXL tagging.
 

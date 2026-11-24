@@ -1,5 +1,5 @@
 # Preparing your form for data analysis
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9751288d763fc7db0fce24b02e91750f51ea710f/source/preparing_for_analysis.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/preparing_for_analysis.md" class="reference">24 Nov 2026</a>
 
 Many data quality problems do not begin during analysis, but during data collection. Decisions made when building a form, such as how questions are structured, how option choices are named, and how missing data is handled, can affect how much cleaning and preparation is required later.
 

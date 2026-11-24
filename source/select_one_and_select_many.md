@@ -1,5 +1,5 @@
 # Select questions in KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/select_one_and_select_many.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/select_one_and_select_many.md" class="reference">24 Nov 2026</a>
 
 Select questions allow respondents to **choose from predefined response options.** They are useful for standardizing answers, improving data quality, and making data easier to clean, analyze, and compare. 
 

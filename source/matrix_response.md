@@ -1,5 +1,5 @@
 # Creating a question matrix in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/matrix_response.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/matrix_response.md" class="reference">24 Nov 2026</a>
 
 The **Question Matrix** question type allows you to create a structured table of questions, where each column represents a question and each row represents an item. Instead of creating multiple separate questions, you can group them into a single matrix to make your form more organized and efficient for data collection.
 

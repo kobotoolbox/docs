@@ -1,5 +1,5 @@
 # Introduction to form logic in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/bc542b99d4fdd71ca6523665d625cdef49989ec5/source/form_logic.md" class="reference">21 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/form_logic.md" class="reference">24 Nov 2026</a>
 
 Form logic controls the flow and behavior of your form based on responses to previous questions. It allows you to create dynamic forms that adapt to user input. For example, you can use form logic to display specific questions only when relevant, validate responses, or perform calculations automatically.
 

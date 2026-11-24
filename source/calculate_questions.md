@@ -1,5 +1,5 @@
 # Adding calculations in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/calculate_questions.md" class="reference">20 Mar 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/calculate_questions.md" class="reference">24 Nov 2026</a>
 
 Calculations allow users to derive new variables, build advanced form logic, and display results to respondents during data collection. The **Calculate** question type performs mathematical operations using values entered in previous questions. By default, the result is hidden, but it can be displayed in the form if needed.
 
