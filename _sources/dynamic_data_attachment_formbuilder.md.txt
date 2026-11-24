@@ -1,5 +1,5 @@
 # Dynamic data attachments using the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/dynamic_data_attachment_formbuilder.md" class="reference">24 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/7ba2d1c2b8ebd5918d2024da2715f16adb2585e3/source/dynamic_data_attachment_formbuilder.md" class="reference">24 Nov 2026</a>
 
 Dynamic linking allows you to retrieve data from a **parent project** within **child projects**, simplifying the management of longitudinal data collection. 
 
@@ -83,7 +83,7 @@ Once your parent and child projects are set up and deployed in KoboToolbox, foll
 </p>
 
 2. Connect the child project to the parent project:
-    - In the **SETTINGS > Connect Projects** tab of the child project, click the “Select a different project to import data from.” A dropdown menu will allow you to select a parent project to link.
+    - In the **SETTINGS > Connect Projects** tab of the child project, click the “Select a project to import data from.” A dropdown menu will allow you to select a parent project to link.
     - Rename the linked parent project to the External XML question label defined in the Formbuilder and click **IMPORT.**
     - You can then select specific questions from the parent project to share with the child project (recommended), or select all questions.
 3. If you add new fields to the parent form and wish to use them in the child project, re-import the parent project in the child project settings.
