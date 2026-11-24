@@ -183,96 +183,181 @@
           
   <section id="transcription-et-traduction-de-reponses-audio">
 <span id="transcription-et-traduction-de-réponses-audio"></span><h1>Transcription et traduction de réponses audio<a class="headerlink" href="#transcription-et-traduction-de-reponses-audio" title="Lien vers cette rubrique">¶</a></h1>
-<p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/9d20774e6b199308c43703b5914468dd34bb8c70/source/transcription-translation.md" class="reference">14 Jun 2026</a></p>
+<p><strong>Dernière mise à jour :</strong> <a href="https://github.com/kobotoolbox/docs/blob/eaaa0a122cb15511b64a66babaa5dad10f6aa7a9/source/transcription-translation.md" class="reference">6 oct. 2026</a></p>
 <iframe src="https://www.youtube.com/embed/vefmH9JzJTU?si=8aF_U8M6BAft9kRr&cc_lang_pref=fr&hl=fr" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<p>Les outils de traitement du langage naturel de KoboToolbox vous aident à collecter, gérer et analyser des données qualitatives plus efficacement. Ces outils comprennent la transcription automatique de la parole en texte et la traduction automatique, qui peuvent préparer les réponses audio à l”<a class="reference internal" href="qualitative_analysis.html"><span class="std std-doc">analyse qualitative automatisée</span></a>.</p>
-<p>Cet article explique comment transcrire des réponses audio et traduire des transcriptions, notamment les langues prises en charge et les limites d’utilisation des options automatiques.</p>
+<p>Les outils de traitement automatique du langage naturel de KoboToolbox vous aident à collecter, gérer et analyser plus efficacement des données qualitatives. Ces outils comprennent la transcription automatique de la parole en texte et la traduction automatique, qui peuvent préparer les réponses audio pour l”<a class="reference external" href="https://support.kobotoolbox.org/fr/qualitative_analysis.html">analyse qualitative automatisée</a>.</p>
+<p>Vous pouvez transcrire et traduire des réponses individuellement, ou traiter plusieurs soumissions en masse depuis le tableau de données. Cet article explique comment transcrire des réponses audio et traduire des transcriptions, individuellement ou en masse, et présente les langues disponibles ainsi que les limites d’utilisation des options automatiques.</p>
 <p class="note">
-    <strong>Note</strong> : La transcription et la traduction automatiques peuvent ne pas être disponibles pour <a href="#language-list">toutes les langues</a>. Pour ces langues, seules la transcription et la traduction manuelles sont possibles.
+    <strong>Note</strong> : la transcription et la traduction automatiques ne sont pas forcément disponibles pour <a href="#supported-languages-for-transcription-and-translation">toutes les langues</a>. Pour ces langues, seules la transcription et la traduction manuelles sont possibles.
 </p>
-<p>Pour utiliser les fonctionnalités de transcription et de traduction de KoboToolbox, commencez par collecter des réponses audio dans votre formulaire à l’aide du <a class="reference internal" href="photo_audio_video_file.html"><span class="std std-doc">type de question Audio</span></a> ou des <a class="reference internal" href="recording-interviews.html#recording-interviews-with-background-audio-recordings"><span class="std std-ref">enregistrements audio d’arrière-plan</span></a>. Après avoir transcrit et traduit les réponses audio, la transcription originale de vos fichiers audio ainsi que tous les textes traduits sont ajoutés en tant que nouvelles colonnes de données dans le tableau de données et peuvent être <a class="reference internal" href="export_download.html"><span class="std std-doc">téléchargés</span></a> avec vos données d’enquête.</p>
-<section id="ajouter-des-transcriptions-audio">
-<h2>Ajouter des transcriptions audio<a class="headerlink" href="#ajouter-des-transcriptions-audio" title="Lien vers cette rubrique">¶</a></h2>
+<section id="collecter-des-reponses-audio">
+<span id="collecter-des-réponses-audio"></span><h2>Collecter des réponses audio<a class="headerlink" href="#collecter-des-reponses-audio" title="Lien vers cette rubrique">¶</a></h2>
+<p>Avant de transcrire ou de traduire des réponses audio, vous devez collecter des données audio dans votre projet.</p>
+<ol class="arabic simple">
+<li><p>Ajoutez une <a class="reference external" href="https://support.kobotoolbox.org/fr/photo_audio_video_file.html">question de type Audio</a> à votre formulaire ou activez les <a class="reference external" href="https://support.kobotoolbox.org/fr/qualitative_data.html#recording-interviews-with-background-audio-recordings">enregistrements audio d’arrière-plan</a>.</p></li>
+<li><p>Déployez le formulaire et collectez des soumissions contenant des enregistrements audio.</p></li>
+</ol>
+<p class="note">
+    <strong>Note</strong> : pour certaines langues disponibles, la transcription automatique peut ne pas fonctionner avec des fichiers audio de plus de 50 minutes. Pour les entretiens longs, envisagez d'utiliser plusieurs questions audio individuelles plutôt qu'un seul enregistrement audio d'arrière-plan.
+</p>
+<p>Une fois les réponses audio transcrites et traduites, la transcription originale de vos fichiers audio et tous les textes traduits sont ajoutés sous forme de nouvelles colonnes dans le tableau de données. Vous pouvez les <a class="reference external" href="https://support.kobotoolbox.org/fr/export_download.html">télécharger</a> avec les données de votre enquête.</p>
+</section>
+<section id="transcrire-des-fichiers-audio-individuellement">
+<h2>Transcrire des fichiers audio individuellement<a class="headerlink" href="#transcrire-des-fichiers-audio-individuellement" title="Lien vers cette rubrique">¶</a></h2>
 <p><img alt="Exemple d'ajout de transcriptions automatiques" src="_images/transcription.png" /></p>
-<p>Pour commencer à transcrire vos réponses audio :</p>
+<p>Pour commencer à transcrire des réponses audio individuellement :</p>
 <ol class="arabic simple">
 <li><p>Ouvrez votre projet et accédez à <strong>DONNÉES &gt; Tableau</strong>.</p></li>
-<li><p>Cliquez sur le bouton <strong>Ouvrir</strong> à côté de la réponse audio que vous souhaitez transcrire.</p></li>
-<li><p>Dans l’onglet <strong>TRANSCRIPT</strong>, cliquez sur <strong>begin</strong>.</p></li>
+<li><p>Cliquez sur le bouton <i class="ti-outline ti-pencil-star"></i> <strong>Ouvrir</strong> à côté de la réponse audio que vous souhaitez transcrire.</p></li>
+<li><p>Dans l’onglet <strong>TRANSCRIPTION</strong>, cliquez sur <strong>commencer</strong> (<strong>begin</strong>).</p></li>
 </ol>
 <ul class="simple">
 <li><p>Sélectionnez la langue d’origine du fichier audio.</p>
 <ul>
-<li><p>Si disponible, sélectionnez l’option <strong>automatic</strong>. L’option <strong>manual</strong> vous permettra de transcrire manuellement l’enregistrement audio dans n’importe quelle langue.</p></li>
-<li><p>Cliquez sur <strong>create transcript</strong> pour lancer la transcription automatique.</p></li>
+<li><p>Si elle est disponible, sélectionnez l’option <strong>automatique</strong> (<strong>automatic</strong>). L’option <strong>manuelle</strong> (<strong>manual</strong>) vous permet de transcrire manuellement l’enregistrement audio dans n’importe quelle langue.</p></li>
+<li><p>Cliquez sur <strong>créer la transcription</strong> (<strong>create transcript</strong>) pour lancer la transcription automatique.</p></li>
 </ul>
 </li>
 </ul>
 <ol class="arabic simple" start="4">
-<li><p>Une fois la transcription terminée, vous pouvez la modifier manuellement. Vous pouvez lire l’enregistrement audio en haut à droite pour vérifier l’exactitude de la transcription.</p>
+<li><p>Une fois la transcription terminée, vous pouvez la modifier manuellement. Vous pouvez écouter l’enregistrement audio en haut à droite pour vérifier l’exactitude de la transcription.</p>
 <ul class="simple">
 <li><p>Après avoir modifié la transcription, cliquez sur le bouton <strong>Sauvegarder</strong> pour vous assurer que votre travail est bien enregistré.</p></li>
 </ul>
 </li>
-<li><p>Une fois terminé, cliquez sur <strong>TERMINÉ</strong> pour quitter, naviguez vers la soumission suivante en cliquant sur les flèches à côté du bouton <strong>TERMINÉ</strong>, ou passez à l’onglet <strong>TRANSLATIONS</strong>.</p>
+<li><p>Lorsque vous avez terminé, cliquez sur <strong>TERMINÉ</strong> pour quitter, passez à la soumission suivante en cliquant sur les flèches à côté du bouton <strong>TERMINÉ</strong>, ou accédez à l’onglet <strong>TRADUCTIONS</strong>.</p>
 <ul class="simple">
-<li><p>Si vous cliquez sur <strong>TERMINÉ</strong>, vous serez redirigé vers le tableau de données, où une nouvelle colonne contenant la transcription aura été ajoutée.</p></li>
+<li><p>Si vous cliquez sur <strong>TERMINÉ</strong>, vous revenez à l’affichage du tableau de données, où une nouvelle colonne contenant la transcription a été ajoutée.</p></li>
 </ul>
 </li>
 </ol>
 <p class="note">
-    <strong>Note</strong> : Les transcriptions et traductions générées automatiquement doivent être sauvegardées pour éviter toute perte de données. Quitter la page sans sauvegarder entraînera la perte des données.
+    <strong>Note</strong> : les transcriptions et traductions générées automatiquement doivent être sauvegardées pour éviter toute perte de données. Quitter la page sans sauvegarder peut entraîner la perte des données.
 </p>
 </section>
-<section id="ajouter-des-traductions">
-<h2>Ajouter des traductions<a class="headerlink" href="#ajouter-des-traductions" title="Lien vers cette rubrique">¶</a></h2>
-<p><img alt="Exemple d'ajout de traductions automatiques" src="_images/translation.png" /></p>
-<p>Une fois que vous disposez d’une transcription complète pour votre réponse audio, vous pouvez ajouter des traductions dans plusieurs langues :</p>
+<section id="transcrire-des-fichiers-audio-en-masse">
+<h2>Transcrire des fichiers audio en masse<a class="headerlink" href="#transcrire-des-fichiers-audio-en-masse" title="Lien vers cette rubrique">¶</a></h2>
+<p>Vous pouvez transcrire automatiquement les enregistrements audio de plusieurs soumissions à la fois depuis le tableau de données.</p>
+<p>Pour transcrire des réponses audio en masse :</p>
 <ol class="arabic simple">
-<li><p>Accédez à l’onglet <strong>TRANSLATIONS</strong>.</p>
+<li><p>Ouvrez votre projet et accédez à <strong>DONNÉES &gt; Tableau.</strong></p></li>
+<li><p>Sélectionnez les soumissions que vous souhaitez transcrire à l’aide des cases à cocher à gauche.</p></li>
+<li><p>Dans la colonne contenant les enregistrements audio à transcrire, cliquez sur la flèche dans l’en-tête de la colonne.</p></li>
+<li><p>Cliquez sur <strong>Transcrire les fichiers audio sélectionnés</strong> (<strong>Transcribe selected audio files</strong>).</p></li>
+<li><p>Sélectionnez la langue et la région, puis cliquez sur <strong>Démarrer la transcription</strong> (<strong>Start transcription</strong>).</p></li>
+</ol>
+<p><img alt="Transcrire des fichiers audio en masse" src="_images/bulk_transcribe_files.png" /></p>
+<p>Les transcriptions terminées sont ajoutées à une nouvelle colonne du tableau de données et marquées comme prêtes à être relues.</p>
+<section id="relire-et-approuver-les-transcriptions">
+<h3>Relire et approuver les transcriptions<a class="headerlink" href="#relire-et-approuver-les-transcriptions" title="Lien vers cette rubrique">¶</a></h3>
+<p>Relire les transcriptions automatiques pour confirmer qu’elles reflètent fidèlement les enregistrements audio permet de s’assurer que les données sont fiables et prêtes pour l’analyse ou la traduction.</p>
+<p>Pour relire et approuver une transcription individuelle :</p>
+<ol class="arabic simple">
+<li><p>Cliquez sur <strong>Relire</strong> (<strong>Review</strong>).</p></li>
+<li><p>Effectuez les modifications nécessaires.</p></li>
+<li><p>Sauvegardez la transcription et passez à la suivante.</p></li>
+</ol>
+<p>Pour approuver plusieurs transcriptions à la fois :</p>
+<ol class="arabic simple">
+<li><p>Sélectionnez les soumissions concernées à l’aide des cases à cocher à gauche.</p></li>
+<li><p>Dans la colonne de transcription, cliquez sur la flèche dans l’en-tête de la colonne.</p></li>
+<li><p>Cliquez sur <strong>Approuver toutes les transcriptions sélectionnées</strong> (<strong>Approve all selected</strong>).</p></li>
+</ol>
+<p><img alt="Approuver des transcriptions en masse" src="_images/bulk_approve_transcripts.png" /></p>
+</section>
+</section>
+<section id="traduire-des-transcriptions-individuellement">
+<h2>Traduire des transcriptions individuellement<a class="headerlink" href="#traduire-des-transcriptions-individuellement" title="Lien vers cette rubrique">¶</a></h2>
+<p><img alt="Exemple d'ajout de traductions automatiques" src="_images/translation.png" /></p>
+<p>Une fois la transcription de votre réponse audio terminée, vous pouvez ajouter des traductions dans plusieurs langues :</p>
+<ol class="arabic simple">
+<li><p>Depuis l’onglet <strong>TRANSCRIPTION</strong>, accédez à l’onglet <strong>TRADUCTIONS</strong>.</p>
 <ul class="simple">
 <li><p>L’option de traduction n’est disponible qu’une fois la transcription terminée.</p></li>
 </ul>
 </li>
-<li><p>Cliquez sur <strong>begin</strong> et choisissez la langue de la traduction.</p>
+<li><p>Cliquez sur <strong>commencer</strong> (<strong>begin</strong>) et choisissez la langue de la traduction.</p>
 <ul class="simple">
-<li><p>Si disponible, sélectionnez <strong>automatic</strong> pour la traduction automatique. L’option <strong>manual</strong> vous permettra de traduire manuellement la transcription dans n’importe quelle langue.</p></li>
-<li><p>Cliquez sur <strong>create translation</strong> pour lancer la traduction automatique.</p></li>
+<li><p>Si elle est disponible, sélectionnez <strong>automatique</strong> (<strong>automatic</strong>) pour la traduction automatique. L’option <strong>manuelle</strong> (<strong>manual</strong>) vous permet de traduire manuellement la transcription dans n’importe quelle langue.</p></li>
+<li><p>Cliquez sur <strong>créer la traduction</strong> (<strong>create translation</strong>) pour lancer la traduction automatique.</p></li>
 </ul>
 </li>
-<li><p>Une fois la traduction terminée, vous pouvez la modifier manuellement. La transcription originale apparaît à droite de l’écran, et l’audio original apparaît en dessous.</p>
+<li><p>Une fois la traduction terminée, vous pouvez la modifier manuellement. La transcription originale s’affiche à droite de l’écran et l’audio original en dessous.</p>
 <ul class="simple">
 <li><p>Après avoir modifié la traduction, cliquez sur le bouton <strong>Sauvegarder</strong> pour vous assurer que votre travail est bien enregistré.</p></li>
 </ul>
 </li>
-<li><p>Une fois la traduction terminée, vous pouvez ajouter une autre traduction en cliquant sur <i class="k-icon-plus"></i> <strong>new translation</strong>, passer à la soumission suivante en cliquant sur les flèches à côté du numéro d’élément dans le coin supérieur droit, ou cliquer sur <strong>TERMINÉ</strong> pour revenir au tableau de données.</p></li>
+<li><p>Lorsque la traduction est terminée, vous pouvez ajouter une autre traduction en cliquant sur <i class="k-icon-plus"></i> <strong>nouvelle traduction</strong> (<strong>new translation</strong>), passer à la soumission suivante en cliquant sur les flèches à côté du numéro d’élément dans le coin supérieur droit, ou cliquer sur <strong>TERMINÉ</strong> pour revenir au tableau de données.</p></li>
 </ol>
 <p class="note">
-    <strong>Note</strong> : Les fichiers audio ne peuvent contenir qu'une seule transcription, mais chaque transcription peut avoir plusieurs traductions.
+    <strong>Note</strong> : un fichier audio ne peut contenir qu'une seule transcription, mais chaque transcription peut avoir plusieurs traductions.
 </p>
 </section>
-<section id="liste-des-langues">
-<h2>Liste des langues<a class="headerlink" href="#liste-des-langues" title="Lien vers cette rubrique">¶</a></h2>
-<p>Les fonctionnalités de traitement du langage naturel de KoboToolbox intègrent des capacités de reconnaissance automatique de la parole (ASR) et de traduction automatique (MT) fournies par Google Cloud Compute, qui propose actuellement la <strong>transcription automatique dans 80 langues</strong> (avec 145 variantes régionales) et la <strong>traduction automatique dans 129 langues</strong>.</p>
-<p>Pour la transcription ou la traduction manuelle, vous pouvez choisir parmi environ 7 000 langues basées sur la liste complète ISO 639-3, maintenue par SIL International (filtrée pour les « langues vivantes »). Si une langue est compatible avec l’ASR ou la MT, vous pouvez choisir entre les méthodes <strong>manual</strong> et <strong>automatic</strong>. Pour les autres langues, seule la méthode <strong>manual</strong> est disponible.</p>
+<section id="traduire-des-transcriptions-en-masse">
+<h2>Traduire des transcriptions en masse<a class="headerlink" href="#traduire-des-transcriptions-en-masse" title="Lien vers cette rubrique">¶</a></h2>
+<p>Vous pouvez également traduire automatiquement plusieurs transcriptions à la fois depuis le tableau de données.</p>
+<p>Pour traduire des transcriptions en masse :</p>
+<ol class="arabic simple">
+<li><p>Assurez-vous que votre projet contient des transcriptions audio terminées.</p></li>
+<li><p>Ouvrez votre projet et accédez à <strong>DONNÉES &gt; Tableau.</strong></p></li>
+<li><p>Sélectionnez les soumissions contenant les transcriptions à traduire à l’aide des cases à cocher à gauche.</p></li>
+<li><p>Dans la colonne de transcription que vous souhaitez traduire, cliquez sur la flèche dans l’en-tête de la colonne.</p></li>
+<li><p>Cliquez sur <strong>Traduire les transcriptions sélectionnées</strong> (<strong>Translate selected transcriptions</strong>).</p></li>
+<li><p>Recherchez et sélectionnez la langue cible, puis cliquez sur <strong>Créer les traductions</strong> (<strong>Create translations</strong>).</p></li>
+</ol>
+<p><img alt="Traduire des transcriptions en masse" src="_images/bulk_translate_transcriptions.png" /></p>
+<p>Les traductions terminées sont ajoutées à une nouvelle colonne du tableau de données et marquées comme prêtes à être relues.</p>
+<section id="relire-et-approuver-les-traductions">
+<h3>Relire et approuver les traductions<a class="headerlink" href="#relire-et-approuver-les-traductions" title="Lien vers cette rubrique">¶</a></h3>
+<p>Pour relire et approuver une traduction individuelle :</p>
+<ol class="arabic simple">
+<li><p>Cliquez sur <strong>Relire</strong> (<strong>Review</strong>).</p></li>
+<li><p>Effectuez les modifications nécessaires.</p></li>
+<li><p>Sauvegardez la traduction et passez à la suivante.</p></li>
+</ol>
+<p>Pour approuver plusieurs traductions à la fois :</p>
+<ol class="arabic simple">
+<li><p>Sélectionnez les soumissions concernées à l’aide des cases à cocher à gauche.</p></li>
+<li><p>Dans la colonne de traduction, cliquez sur la flèche dans l’en-tête de la colonne.</p></li>
+<li><p>Cliquez sur <strong>Approuver toutes les traductions sélectionnées</strong> (<strong>Approve all selected</strong>).</p></li>
+</ol>
+</section>
+</section>
+<section id="langues-disponibles-pour-la-transcription-et-la-traduction">
+<h2>Langues disponibles pour la transcription et la traduction<a class="headerlink" href="#langues-disponibles-pour-la-transcription-et-la-traduction" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les fonctionnalités de traitement du langage naturel de KoboToolbox intègrent des capacités de reconnaissance automatique de la parole (ASR) et de traduction automatique (MT) fournies par Google Cloud Compute, qui propose actuellement la <strong>transcription automatique dans 112 langues</strong> (avec 142 variantes régionales) et la <strong>traduction automatique dans 129 langues</strong>.</p>
 <p class="note">
-    Pour une liste complète des langues prises en charge, consultez <a href="https://docs.google.com/spreadsheets/d/1_QDcORZd9qXgfq1OBb61U6ondYfjwmHXOv4XZPjxVVw/edit?usp=sharing">Langues disponibles pour la transcription et la traduction automatiques</a>.
+<strong>Note :</strong> les fichiers audio et les transcriptions ne sont envoyés à Google Cloud Compute que le temps nécessaire pour réaliser la transcription et la traduction. Ils ne sont pas conservés par le service externe après le traitement ni utilisés pour améliorer ce service.
 </p>
-<p>Si vous ne trouvez pas une langue dans la liste, envisagez d’autres orthographes ou noms. Tous les noms de langues sont actuellement répertoriés en anglais (par exemple, Spanish au lieu d’Español). Pour les langues avec moins de locuteurs, il peut exister des noms alternatifs. Par exemple, la langue Bura du nord du Nigeria est répertoriée sous le nom Bura-Pabir, mais est également connue sous les noms Bourrah ou Babir.</p>
+<p>Pour la transcription ou la traduction manuelle, vous pouvez choisir parmi environ 7 000 langues, d’après la liste exhaustive ISO 639-3 maintenue par SIL International (filtrée sur les « langues vivantes »). Si une langue est disponible pour l’ASR ou la MT, vous pouvez choisir entre les méthodes <strong>manuelle</strong> et <strong>automatique</strong>. Pour les autres langues, seule la méthode <strong>manuelle</strong> est disponible.</p>
 <p class="note">
-    <strong>Note</strong> : Lors de la transcription manuelle de réponses audio, il est important de sélectionner la langue correcte. Si la transcription générée manuellement ne correspond pas avec précision à la langue ou à la région choisie, les traductions automatiques ultérieures utilisant cette transcription risquent d'être incorrectes et de produire des inexactitudes.
+    Pour consulter la liste complète des langues disponibles, voir <a href="https://docs.google.com/spreadsheets/d/1_QDcORZd9qXgfq1OBb61U6ondYfjwmHXOv4XZPjxVVw/edit?usp=sharing">Langues disponibles pour la transcription et la traduction automatiques</a>.
+</p>
+<p>Si vous ne trouvez pas une langue dans la liste, essayez d’autres orthographes ou d’autres noms. Tous les noms de langues sont actuellement indiqués avec leur nom et leur orthographe en anglais (par exemple, Spanish au lieu de Español). Pour les langues comptant moins de locuteurs, il peut exister d’autres noms. Par exemple, la langue bura du nord du Nigéria figure sous le nom Bura-Pabir, mais elle est également connue sous les noms Bourrah ou Babir.</p>
+<p class="note">
+    <strong>Note</strong> : lors de la transcription manuelle de réponses audio, il est important de sélectionner la bonne langue. Si la transcription générée manuellement ne correspond pas à la langue ou à la région choisie, les traductions automatiques effectuées ensuite à partir de cette transcription risquent d'être incorrectes et de contenir des erreurs.
 </p>
 </section>
-<section id="limites-d-utilisation-pour-la-transcription-et-la-traduction-automatiques">
-<span id="limites-dutilisation-pour-la-transcription-et-la-traduction-automatiques"></span><h2>Limites d’utilisation pour la transcription et la traduction automatiques<a class="headerlink" href="#limites-d-utilisation-pour-la-transcription-et-la-traduction-automatiques" title="Lien vers cette rubrique">¶</a></h2>
-<p>Les utilisateurs du plan Community peuvent utiliser jusqu’à <strong>10 minutes de transcription automatique de la parole en texte</strong> par mois et jusqu’à <strong>6 000 caractères de traduction automatique de transcription</strong> par mois.</p>
-<p>Si vous avez besoin d’une capacité de transcription ou de traduction supérieure, vous pouvez <a class="reference external" href="https://www.kobotoolbox.org/pricing/">passer à une offre supérieure</a> avec un quota plus élevé ou <a class="reference internal" href="account_settings.html#add-ons"><span class="std std-ref">acheter</span></a> un supplément <strong>Natural Language Processing (NLP) Package</strong>. Les suppléments sont disponibles en fonction de vos besoins en traitement de données, à partir de 9,95 $ pour 100 minutes de transcription supplémentaires et 60 000 caractères de traduction supplémentaires. Vous pouvez toujours continuer à transcrire et à traduire des réponses audio manuellement sans limite d’utilisation.</p>
+<section id="limites-d-utilisation-de-la-transcription-et-de-la-traduction-automatiques">
+<span id="limites-dutilisation-de-la-transcription-et-de-la-traduction-automatiques"></span><h2>Limites d’utilisation de la transcription et de la traduction automatiques<a class="headerlink" href="#limites-d-utilisation-de-la-transcription-et-de-la-traduction-automatiques" title="Lien vers cette rubrique">¶</a></h2>
+<p>Les utilisateurs du plan Community peuvent utiliser jusqu’à <strong>10 minutes de transcription automatique de la parole en texte</strong> par mois et jusqu’à <strong>6 000 caractères de traduction automatique de transcriptions</strong> par mois.</p>
+<p class="note">
+<strong>Note :</strong> le traitement automatique est comptabilisé dans ces limites, que les fichiers soient traités individuellement ou en masse.
+</p>
+<p>Si vous avez besoin d’une capacité de transcription ou de traduction supplémentaire, vous pouvez <a class="reference external" href="https://www.kobotoolbox.org/pricing/">passer à une offre supérieure</a> offrant un quota plus élevé ou <a class="reference external" href="https://support.kobotoolbox.org/fr/account_settings.html#add-ons">acheter</a> un supplément <strong>pack de traitement du langage naturel (NLP)</strong>. Les suppléments sont proposés selon vos besoins de traitement des données, à partir de 9,95 $ pour 100 minutes de transcription supplémentaires et 60 000 caractères de traduction supplémentaires. Vous pouvez toujours continuer à transcrire et à traduire des réponses audio manuellement, sans limite d’utilisation.</p>
 </section>
 <section id="resolution-de-problemes">
 <span id="résolution-de-problèmes"></span><h2>Résolution de problèmes<a class="headerlink" href="#resolution-de-problemes" title="Lien vers cette rubrique">¶</a></h2>
 <details>
     <summary><strong>La traduction ne se charge pas</strong></summary>
-    Il arrive que la deuxième traduction reste bloquée avec une icône de chargement. Si cela se produit, actualisez la page et la traduction devrait apparaître. Il s'agit d'un problème que nous travaillons à résoudre.
+    Il arrive que la deuxième traduction reste bloquée avec une icône de chargement. Si cela se produit, actualisez la page : la traduction devrait apparaître. Nous travaillons à la correction de ce problème.
+</details>
+<br>
+<details>
+<summary><strong>Les fichiers audio longs ne sont pas transcrits</strong></summary>
+Pour certaines langues disponibles, la transcription automatique peut ne pas fonctionner avec des fichiers audio de plus de 50 minutes.<br><br>
+Pour les entretiens longs, envisagez d'utiliser plusieurs questions Audio individuelles plutôt qu'un seul enregistrement audio d'arrière-plan. Découper un entretien en enregistrements plus courts facilite l'importation et la gestion des fichiers, ainsi que la localisation et la transcription de sections précises de l'entretien.<br><br>
+Si vous disposez déjà d'un long enregistrement, vous pouvez également télécharger le fichier audio, le diviser en fichiers plus courts, puis importer ces fichiers dans KoboToolbox pour les transcrire.
 </details></section>
 </section>
 
@@ -426,10 +511,13 @@
 <li class="toctree-l1"><a class="reference internal" href="creating_custom_reports.html">Visualiser vos données à l’aide de rapports personnalisés</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_gps.html">Cartographier vos données GPS</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Transcription et traduction de réponses audio</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#ajouter-des-transcriptions-audio">Ajouter des transcriptions audio</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#ajouter-des-traductions">Ajouter des traductions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#liste-des-langues">Liste des langues</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#limites-d-utilisation-pour-la-transcription-et-la-traduction-automatiques">Limites d’utilisation pour la transcription et la traduction automatiques</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#collecter-des-reponses-audio">Collecter des réponses audio</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transcrire-des-fichiers-audio-individuellement">Transcrire des fichiers audio individuellement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transcrire-des-fichiers-audio-en-masse">Transcrire des fichiers audio en masse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#traduire-des-transcriptions-individuellement">Traduire des transcriptions individuellement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#traduire-des-transcriptions-en-masse">Traduire des transcriptions en masse</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#langues-disponibles-pour-la-transcription-et-la-traduction">Langues disponibles pour la transcription et la traduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#limites-d-utilisation-de-la-transcription-et-de-la-traduction-automatiques">Limites d’utilisation de la transcription et de la traduction automatiques</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#resolution-de-problemes">Résolution de problèmes</a></li>
 </ul>
 </li>
