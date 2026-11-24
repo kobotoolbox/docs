@@ -182,7 +182,7 @@
           
   <section id="adding-cascading-select-questions-in-the-formbuilder">
 <h1>Adding cascading select questions in the Formbuilder<a class="headerlink" href="#adding-cascading-select-questions-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/81d7045e8e9d21afcd7d94ef5c3c0fc97ce36be2/source/cascading_select.md" class="reference">25 Nov 2025</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/cascading_select.md" class="reference">24 Nov 2026</a></p>
 <iframe src="https://www.youtube.com/embed/JDDNmErhV7o?si=S2k3G0sadiFJursu" style="width: 100%; aspect-ratio: 16 / 9; height: auto; border: 0;" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <p>Cascading select questions allow you to create dynamic forms where the options in one question depend on the answer to a previous question. This feature helps streamline data collection by presenting only relevant choices, improving the efficiency and accuracy of your surveys.</p>
 <p class="note">
@@ -193,7 +193,7 @@
 <p>To import cascading select questions into the Formbuilder, you first need to prepare your choice list in Excel or another spreadsheet program. You can use this <a href="https://docs.google.com/spreadsheets/d/1C_uDOkjjbv5Kx3lyOY7ORwM-muW6BKVzdaPMB1X8-2A/edit?gid=0#gid=0">Cascade Import Template</a> to get started.</p>
 <p>The choice table must include the following columns:</p>
 <ul class="simple">
-<li><p><strong>list_name:</strong> Unique identifier for a question’s list of choices. This will also be the Data Column Name for the created question.</p></li>
+<li><p><strong>list_name:</strong> Unique identifier for a question’s list of choices. This will also be the <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#question-name">question name</a> for the created question.</p></li>
 <li><p><strong>name:</strong> Unique identifier for each choice within a list.</p></li>
 <li><p><strong>label:</strong> Text that appears on the form for each choice.</p></li>
 </ul>
@@ -220,7 +220,7 @@
 </ol>
 <p><img alt="Insert cascading select example" src="_images/insert_cascading_select.png" /></p>
 <p class="note">
-  <strong>Note:</strong> If you change the question label in the Formbuilder, ensure the Data Column Name in its settings still matches the <strong>list_name</strong> from your choice list table.
+  <strong>Note:</strong> If you change the question label in the Formbuilder, ensure the <strong>question name</strong> in its settings still matches the <strong>list_name</strong> from your choice list table.
 </p>
 </section>
 <section id="advanced-cascading-select-management-using-xlsform">
@@ -245,7 +245,7 @@ If the choice list for the child question is empty, the child list is not seeing
 <br>
 <details>
 <summary><strong>Cascades break after you edit the form</strong></summary>
-Renaming a question or editing choice lists can change the backend code the cascade relies on. When renaming a question, ensure the <strong>Data Column Name</strong> remains the same as the corresponding <strong>list_name</strong>. For large choice list edits, either rebuild the cascade from scratch or download the XLSForm, make your changes there, and upload it back.
+Renaming a question or editing choice lists can change the backend code the cascade relies on. When renaming a question, ensure the <strong>question name</strong> remains the same as the corresponding <strong>list_name</strong>. For large choice list edits, either rebuild the cascade from scratch or download the XLSForm, make your changes there, and upload it back.
 </details>
 <br>
 <details>
@@ -256,7 +256,7 @@ To learn more about advanced cascading select using XLSForm, see <a href="https:
 <br>
 <details>
 <summary><strong>Survey element cannot be found</strong></summary>
-An error indicating a survey element cannot be found typically means the internal code does not match the cascade's expectations. To fix this, open the question's settings, locate the <strong>Data Column Name</strong>, and revert it to the original value (which should match the corresponding <strong>list_name</strong>) before redeploying your form.
+An error indicating a survey element cannot be found typically means the internal code does not match the cascade's expectations. To fix this, open the question's settings, locate the <strong>question name</strong>, and revert it to the original value (which should match the corresponding <strong>list_name</strong>) before redeploying your form.
 </details>
 </section>
 </section>

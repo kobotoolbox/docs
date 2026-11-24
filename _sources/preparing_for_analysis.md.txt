@@ -1,5 +1,5 @@
 # Preparing your form for data analysis
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/9751288d763fc7db0fce24b02e91750f51ea710f/source/preparing_for_analysis.md" class="reference">17 Jul 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/preparing_for_analysis.md" class="reference">24 Nov 2026</a>
 
 Many data quality problems do not begin during analysis, but during data collection. Decisions made when building a form, such as how questions are structured, how option choices are named, and how missing data is handled, can affect how much cleaning and preparation is required later.
 
@@ -33,7 +33,7 @@ Asking the right questions to the right people improves data quality and reduces
 
 ## Anticipating the format of your data exports
 
-The way you define [question names](https://support.kobotoolbox.org/glossary.html#data-column-name) and [choice names](https://support.kobotoolbox.org/glossary.html#xml-value) affects how easy your data is to work with after export. **Question names** become column names in your exported dataset, while **choice names** represent response values for select questions.
+The way you define [question names](https://support.kobotoolbox.org/glossary.html#question-name) and [choice names](https://support.kobotoolbox.org/glossary.html#choice-name) affects how easy your data is to work with after export. **Question names** become column names in your exported dataset, while **choice names** represent response values for select questions.
 
 For best results, follow the recommendations below.
 

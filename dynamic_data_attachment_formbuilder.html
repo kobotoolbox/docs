@@ -182,7 +182,7 @@
           
   <section id="dynamic-data-attachments-using-the-formbuilder">
 <h1>Dynamic data attachments using the Formbuilder<a class="headerlink" href="#dynamic-data-attachments-using-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6f05aaa00b0eaf39e8ec1db4a6529a491fb1c551/source/dynamic_data_attachment_formbuilder.md" class="reference">23 Apr 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/dynamic_data_attachment_formbuilder.md" class="reference">24 Nov 2026</a></p>
 <p>Dynamic linking allows you to retrieve data from a <strong>parent project</strong> within <strong>child projects</strong>, simplifying the management of longitudinal data collection.</p>
 <p>You can retrieve various <strong>non-media responses</strong> from a parent project and perform calculations on this linked data in a child project. This can be useful for retrieving baseline data, contact information, or health records in cohort studies, or for confirming or verifying previously collected data.</p>
 <p>This article explains how to dynamically link data between KoboToolbox projects within the KoboToolbox Formbuilder.</p>
@@ -219,12 +219,12 @@ To learn more about calculations in the Formbuilder, see <a href="https://suppor
 <p>For each expression in the table below:</p>
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">parent</span></code> is the unique name assigned to the <strong>parent form</strong> (in the External XML question of the <strong>child form</strong>).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">parent_question</span></code> refers to the data column name of a question from the <strong>parent form.</strong></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">child_question</span></code> refers to the data column name of a question from the <strong>child form.</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_question</span></code> refers to the question name of a question from the <strong>parent form.</strong></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">child_question</span></code> refers to the question name of a question from the <strong>child form.</strong></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> is the identifying question from the <strong>parent form</strong> that links it to the <strong>child form</strong> (e.g., unique ID, organization name).</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">child_index_question</span></code> is the identifying question from the <strong>child form</strong> that links it to the <strong>parent form</strong> (e.g., unique ID, organization name).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">parent_group</span></code> refers to the data column name of the group in the <strong>parent form</strong> in which the <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> is located.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_group</span></code> refers to the data column name of the group in the <strong>parent form</strong> in which the <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> is located.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_group</span></code> refers to the question name of the group in the <strong>parent form</strong> in which the <code class="docutils literal notranslate"><span class="pre">parent_question</span></code> is located.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">parent_index_group</span></code> refers to the question name of the group in the <strong>parent form</strong> in which the <code class="docutils literal notranslate"><span class="pre">parent_index_question</span></code> is located.</p></li>
 </ul>
 <table class="docutils align-default">
 <thead>

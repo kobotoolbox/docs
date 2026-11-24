@@ -182,7 +182,7 @@
           
   <section id="introduction-to-form-logic-in-the-formbuilder">
 <h1>Introduction to form logic in the Formbuilder<a class="headerlink" href="#introduction-to-form-logic-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/bc542b99d4fdd71ca6523665d625cdef49989ec5/source/form_logic.md" class="reference">21 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/form_logic.md" class="reference">24 Nov 2026</a></p>
 <p>Form logic controls the flow and behavior of your form based on responses to previous questions. It allows you to create dynamic forms that adapt to user input. For example, you can use form logic to display specific questions only when relevant, validate responses, or perform calculations automatically.</p>
 <p>Key types of form logic include:</p>
 <ul class="simple">
@@ -212,8 +212,8 @@
 <li><p><strong>In question labels or hints:</strong> For example, you can include a respondent’s child’s name in later questions about their child.</p></li>
 <li><p><strong>In form logic:</strong> For example, you can show or hide a question based on a previous response, or validate an answer by comparing it with an earlier one.</p></li>
 </ul>
-<p>Question referencing uses the format <code class="docutils literal notranslate"><span class="pre">${data_column_name}</span></code>. A question’s <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">data column name</a> can be found and modified in the question settings.</p>
-<p>To <strong>display a previous response inside another question label</strong>, insert <code class="docutils literal notranslate"><span class="pre">${data_column_name}</span></code> directly into the question label where you want the value to appear.</p>
+<p>Question referencing uses the format <code class="docutils literal notranslate"><span class="pre">${question_name}</span></code>. The <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#question-name">question name</a> can be found and modified in the question settings.</p>
+<p>To <strong>display a previous response inside another question label</strong>, insert <code class="docutils literal notranslate"><span class="pre">${question_name}</span></code> directly into the question label where you want the value to appear.</p>
 <p><img alt="Question referencing" src="_images/question_referencing.png" /></p>
 <p>If a question reference includes a spelling error or is otherwise incorrect, an error message will appear when previewing or submitting the form.</p>
 <p class="note">
@@ -232,7 +232,7 @@
 <li><p>In the <strong>Default Response</strong> field, enter the constant value.</p></li>
 </ol>
 <p><img alt="Question option hidden" src="_images/hidden.png" /></p>
-<p>The value entered in the <strong>Default Response</strong> field will be stored as the constant. You can then reference this value using the Hidden question’s <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">data column name</a> in calculations and logic throughout your form.</p>
+<p>The value entered in the <strong>Default Response</strong> field will be stored as the constant. You can then reference this value using the Hidden question’s <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#question-name">question name</a> in calculations and logic throughout your form.</p>
 </section>
 <section id="mathematical-and-comparison-operators">
 <h2>Mathematical and comparison operators<a class="headerlink" href="#mathematical-and-comparison-operators" title="Link to this heading">¶</a></h2>

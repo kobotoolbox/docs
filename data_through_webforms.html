@@ -182,7 +182,7 @@
           
   <section id="collecting-data-using-web-forms">
 <h1>Collecting data using web forms<a class="headerlink" href="#collecting-data-using-web-forms" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/fce8905c86b6aadafb65b803acf56d1730206617/source/data_through_webforms.md" class="reference">28 Aug 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/data_through_webforms.md" class="reference">24 Nov 2026</a></p>
 <p>KoboToolbox web forms let you <strong>collect data directly in a web browser</strong>, without installing an app. They are browser-based versions of your form that you can use to preview and test your questionnaire or collect live data on phones, tablets, and computers.</p>
 <p>Web forms work on most modern devices, including Android devices, iPhones, iPads, laptops, and desktop computers. They are especially useful in projects where respondents complete a form through a shared link, where the data collection team uses different types of devices, or where you want to enter data on a computer instead of through an app.</p>
 <p>Web forms also support <strong>offline data collection</strong> once the form has been opened and cached in the browser. They support all form logic set up in KoboToolbox, including skip logic and validation rules, and their appearance can be customized through different <a class="reference external" href="https://support.kobotoolbox.org/alternative_enketo.html">web form themes</a>.</p>
@@ -353,13 +353,13 @@ For more information, see <a href="https://support.kobotoolbox.org/collecting_da
 <p>For example, you could share different links in different places, and each link could open the same form with a hidden field that shows where the link came from. You could also share a different link with each respondent, with that person’s unique ID already embedded in the link.</p>
 <p>To share a link that prefills a field in your form:</p>
 <ol class="arabic simple">
-<li><p>Add the question you want to prefill to your form, then set its <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#data-column-name">data column name</a>.</p>
+<li><p>Add the question you want to prefill to your form, then set its <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#question-name">question name</a>.</p>
 <ul class="simple">
 <li><p>This can be a <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#storing-constants-in-your-form">Hidden</a> question if you want to store the value in the background, or any standard question type if you want respondents to see it in the form.</p></li>
 </ul>
 </li>
 <li><p>Copy your form link in <strong>FORM &gt; Collect data.</strong></p></li>
-<li><p>Add <code class="docutils literal notranslate"><span class="pre">?d[data_column_name]=value</span></code> at the end of the URL, where <code class="docutils literal notranslate"><span class="pre">data_column_name</span></code> is the data column name of the Hidden question and <code class="docutils literal notranslate"><span class="pre">value</span></code> is the prefilled value.</p>
+<li><p>Add <code class="docutils literal notranslate"><span class="pre">?d[question_name]=value</span></code> at the end of the URL, where <code class="docutils literal notranslate"><span class="pre">question_name</span></code> is the question name of the Hidden question and <code class="docutils literal notranslate"><span class="pre">value</span></code> is the prefilled value.</p>
 <ul class="simple">
 <li><p>For example: <code class="docutils literal notranslate"><span class="pre">https://ee.kobotoolbox.org/x/[form_id]?d[prefilled_field]=12345</span></code>.</p></li>
 </ul>
@@ -367,7 +367,7 @@ For more information, see <a href="https://support.kobotoolbox.org/collecting_da
 </ol>
 <p class="note">
 <strong>Note:</strong>
-Use the full data column name in the URL parameter. If the question is inside one or more groups, the name must include the <strong>group name or names</strong> as well (e.g., <code>group1/question1</code>). You can find the exact name in the question’s <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Data column name</a> field in the Formbuilder, or in the <code>name</code> column of an XLSForm.
+Use the full question name in the URL parameter. If the question is inside one or more groups, the name must include the <strong>group name or names</strong> as well (e.g., <code>group1/question1</code>). You can find the exact name in the <a href="https://support.kobotoolbox.org/question_options.html#question-name">question name</a> field in the Formbuilder, or in the <code>name</code> column of an XLSForm.
 </p>
 </section>
 <section id="redirecting-users-to-another-webpage-after-submission">
@@ -430,7 +430,7 @@ Use the latest version of a modern browser. Chrome is generally recommended for 
 <br>
 <details>
 <summary><strong>Web form submission fails </strong></summary>
-If a web form submission fails, check whether your form uses a <strong>reserved XLSForm term</strong> as the <a href="https://support.kobotoolbox.org/glossary.html#data-column-name">data column name</a>. Reserved words are terms that cannot be used as variable names because they are used by the underlying XForms engine for structure, logic, or data analysis (e.g., type, label, start, today). Using these words can cause form validation errors, publishing failures, or data export issues.<br><br>
+If a web form submission fails, check whether your form uses a <strong>reserved XLSForm term</strong> as a <a href="https://support.kobotoolbox.org/glossary.html#question-name">question name</a>. Reserved words are terms that cannot be used as variable names because they are used by the underlying XForms engine for structure, logic, or data analysis (e.g., type, label, start, today). Using these words can cause form validation errors, publishing failures, or data export issues.<br><br>
 <p>To fix the issue, rename the affected question to a different value, then redeploy the form. This issue usually affects web forms even when the form opens normally, while KoboCollect may continue to work as expected. Note that any submissions already saved against the old version of the form may remain unsubmittable, so it is important to update the form as soon as possible if you are collecting data through web forms. Always <strong>test form submission before launching data collection</strong> so you can catch naming issues early.</p>
 </details>
 <br>

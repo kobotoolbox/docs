@@ -182,7 +182,7 @@
           
   <section id="question-options-in-the-formbuilder">
 <h1>Question options in the Formbuilder<a class="headerlink" href="#question-options-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/e06802f1c16e4a48ec3cbe16afb8e5cf2a9472b1/source/question_options.md" class="reference">28 Aug 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/question_options.md" class="reference">24 Nov 2026</a></p>
 <p>After adding a question to your form, you can customize <strong>how it behaves and appears by adjusting its question options.</strong> These settings allow you to control various question options, from variable naming and required responses to advanced display features and HXL tagging.</p>
 <p>This article explains how to access question options in the Formbuilder, outlines the available settings, and provides guidance on how and when to use each option effectively.</p>
 <section id="accessing-question-options-in-the-formbuilder">
@@ -207,8 +207,8 @@
 <tr class="row-even"><td class="text-left"><p>Question Hint</p></td>
 <td class="text-left"><p>Text displayed below the question label to provide <a href="https://support.kobotoolbox.org/question_options.html#question-hint">additional instructions</a> or clarification for respondents.</p></td>
 </tr>
-<tr class="row-odd"><td class="text-left"><p>Data Column Name</p></td>
-<td class="text-left"><p>The <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">unique identifier</a> for a question, used in form logic and as the column header in the exported dataset.</p></td>
+<tr class="row-odd"><td class="text-left"><p>Question Name</p></td>
+<td class="text-left"><p>The <a href="https://support.kobotoolbox.org/question_options.html#question-name">unique identifier</a> for a question, used in form logic and as the column header in the exported dataset.</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Guidance Hint</p></td>
 <td class="text-left"><p>Additional <a href="https://support.kobotoolbox.org/question_options.html#guidance-hint">notes or instructions</a> intended for enumerators or form developers, not displayed by default during data collection.</p></td>
@@ -240,24 +240,27 @@
 <strong>Note:</strong> For additional customization and advanced options, <a href="https://support.kobotoolbox.org/xlsform_with_kobotoolbox.html#downloading-an-xlsform-from-kobotoolbox">download your form as an XLSForm</a> and add <a href="https://support.kobotoolbox.org/question_options_xls.html">question options</a> directly in the spreadsheet.
 </p>
 </section>
-<section id="data-column-name">
-<h2>Data Column Name<a class="headerlink" href="#data-column-name" title="Link to this heading">¶</a></h2>
-<p>The <strong>Data Column Name</strong> is the unique identifier for each question in your form. It serves as the variable name used in <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a> and becomes the column header in your exported dataset.</p>
-<p>Every question must have a unique data column name. In the Formbuilder, it is automatically generated from the question label, but you can customize it as needed. Defining clear and consistent names before deploying your form helps ensure that your dataset follows a logical naming convention.</p>
-<p><img alt="Data column name" src="_images/data_column_name.png" /></p>
-<section id="important-considerations-for-data-column-names">
-<h3>Important considerations for data column names<a class="headerlink" href="#important-considerations-for-data-column-names" title="Link to this heading">¶</a></h3>
-<p>If you keep the <strong>automatically generated data column name</strong>, it will update automatically whenever you change the question label. This can cause problems if you have already set up form logic in XLSForm code using the previous data column name, or if you have started collecting data.</p>
-<p>If a question’s data column name changes after data collection has begun, KoboToolbox will treat it as a new variable. This will result in two separate columns in your dataset.</p>
-<p>For this reason, it is recommended to <strong>define and finalize the data column name for each question before deploying your form</strong> and collecting data. If you intentionally make substantial changes to a question and want it to function as a new variable, you can update the data column name accordingly.</p>
-<p>Data column names must follow these rules:</p>
+<section id="question-name">
+<h2>Question Name<a class="headerlink" href="#question-name" title="Link to this heading">¶</a></h2>
+<p>The <strong>Question Name</strong> is the unique identifier for each question in your form. It serves as the variable name used in <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a> and becomes the column header in your exported dataset.</p>
+<p>Every question must have a unique question name. In the Formbuilder, it is automatically generated from the question label, but you can customize it as needed. Defining clear and consistent names before deploying your form helps ensure that your dataset follows a logical naming convention.</p>
+<p><img alt="Question name" src="images/question_options/question_name.png" /></p>
+<p class="note">
+<strong>Note:</strong> The <strong>Question Name</strong> was previously referred to as <strong>Data Column Name</strong> in the Formbuilder.
+</p>
+<section id="important-considerations-for-question-names">
+<h3>Important considerations for question names<a class="headerlink" href="#important-considerations-for-question-names" title="Link to this heading">¶</a></h3>
+<p>If you keep the <strong>automatically generated question name</strong>, it will update automatically whenever you change the question label. This can cause problems if you have already set up form logic in XLSForm code using the previous question name, or if you have started collecting data.</p>
+<p>If a question name changes after data collection has begun, KoboToolbox will treat it as a new variable. This will result in two separate columns in your dataset.</p>
+<p>For this reason, it is recommended to <strong>define and finalize the question name for each question before deploying your form</strong> and collecting data. If you intentionally make substantial changes to a question and want it to function as a new variable, you can update the question name accordingly.</p>
+<p>Question names must follow these rules:</p>
 <ul class="simple">
 <li><p>Use only letters, numbers, and underscores.</p></li>
 <li><p>The first character must be a letter.</p></li>
 <li><p>Each name must be unique within the form.</p></li>
 </ul>
 <p class="note">
-<strong>Note:</strong> Data column names are used when referencing answers in <a href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a>. For example, you can include a previous response in another question’s label using the format <code>${data_column_name}</code>. This format is used in labels, skip logic, calculations, and validations. Data column names are case-sensitive.
+<strong>Note:</strong> Question names are used when referencing answers in <a href="https://support.kobotoolbox.org/form_logic.html#question-referencing">form logic</a>. For example, you can include a previous response in another question’s label using the format <code>${question_name}</code>. This format is used in labels, skip logic, calculations, and validations. Question names are case-sensitive.
 </p>
 </section>
 </section>
@@ -330,13 +333,13 @@
 <td class="text-left"><p>Text (without quotation marks)</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Select One</p></td>
-<td class="text-left"><p>Choice <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML value</a></p></td>
+<td class="text-left"><p><a href="https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices">Choice name</a></p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Select Many</p></td>
-<td class="text-left"><p>Choice <a href="https://support.kobotoolbox.org/question_types.html#setting-xml-values-for-option-choices">XML values</a>, separated by a space if there are multiple</p></td>
+<td class="text-left"><p><a href="https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices">Choice names</a>, separated by a space if there are multiple</p></td>
 </tr>
 <tr class="row-even"><td class="text-left"><p>Date</p></td>
-<td class="text-left"><p>Date in the YYYY-MM-DD format</p></td>
+<td class="text-left"><p>Date in the YYYY-MM-DD format.</p></td>
 </tr>
 <tr class="row-odd"><td class="text-left"><p>Time</p></td>
 <td class="text-left"><p>Time in the HH:MM format</p></td>
@@ -355,7 +358,7 @@
 <h2>HXL<a class="headerlink" href="#hxl" title="Link to this heading">¶</a></h2>
 <p>HXL, or <strong>Humanitarian Exchange Language</strong>, is a <a class="reference external" href="https://hxlstandard.org/">standardized system</a> for tagging data using hashtags (#). It is widely used by organizations to improve information sharing during humanitarian responses and other crisis situations.</p>
 <p>Applying HXL tags to your questions helps make your data more interoperable across systems and organizations. It also supports more efficient data processing and analysis.</p>
-<p>In KoboToolbox, you can assign one HXL tag per question and optionally include attributes. When you export your data as an XLS file with XML values and headers selected, an additional row containing the HXL tags will appear directly below the variable names in your dataset.</p>
+<p>In KoboToolbox, you can assign one HXL tag per question and optionally include attributes. When you export your data as an XLS file using <strong>Question &amp; choice names</strong>, an additional row containing the HXL tags will appear directly below the variable names in your dataset.</p>
 <p>Using HXL tags is especially helpful when your data will be shared with partners or integrated into other humanitarian data systems.</p>
 <p><img alt="HXL" src="_images/hxl.png" /></p>
 </section>
@@ -428,7 +431,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Question options in the Formbuilder</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#accessing-question-options-in-the-formbuilder">Accessing question options in the Formbuilder</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#available-options-in-the-formbuilder">Available options in the Formbuilder</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-column-name">Data Column Name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#question-name">Question Name</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#question-hint">Question Hint</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#guidance-hint">Guidance Hint</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#mandatory-response">Mandatory Response</a></li>

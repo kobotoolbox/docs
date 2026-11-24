@@ -182,7 +182,7 @@
           
   <section id="managing-option-choices-in-xlsform">
 <h1>Managing option choices in XLSForm<a class="headerlink" href="#managing-option-choices-in-xlsform" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/f516e7db95c095da8db4dcce252eca8e608fbee5/source/option_choices_xls.md" class="reference">8 Sep 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/option_choices_xls.md" class="reference">24 Nov 2026</a></p>
 <p>XLSForm simplifies the creation and management of <strong>option choice lists</strong> for survey forms. This is particularly useful for long or repetitive lists, such as country or city names. Option choices are defined for <code class="docutils literal notranslate"><span class="pre">select_one</span></code>, <code class="docutils literal notranslate"><span class="pre">select_multiple</span></code>, or <code class="docutils literal notranslate"><span class="pre">rank</span></code> <a class="reference external" href="https://support.kobotoolbox.org/question_types_xls.html#select-question-types">questions</a>.</p>
 <p>This article details how to define and manage option choices in XLSForm for complex forms, including best practices for defining choice names.</p>
 <p class="note">
@@ -278,7 +278,7 @@ To learn more about building forms in XLSForm, see <a href="getting_started_xlsf
 </section>
 <section id="best-practices-for-defining-choice-names">
 <h2>Best practices for defining choice names<a class="headerlink" href="#best-practices-for-defining-choice-names" title="Link to this heading">¶</a></h2>
-<p>When data is downloaded in <a class="reference external" href="https://support.kobotoolbox.org/export_download.html#value-and-header-format">XML values and headers format</a>, each question appears as its own variable or column in the dataset. The values inside each column are the <strong>choice names</strong> defined in your <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet, rather than the full labels shown to respondents. This format is recommended for analysis, since it provides short, consistent variable names and coded values that are easier to work with than full question or option labels.</p>
+<p>When data is downloaded in <a class="reference external" href="https://support.kobotoolbox.org/export_download.html#value-and-header-format">Question &amp; choice names format</a>, each question appears as its own variable or column in the dataset. The values inside each column are the <strong>choice names</strong> defined in your <code class="docutils literal notranslate"><span class="pre">choices</span></code> worksheet, rather than the full labels shown to respondents. This format is recommended for analysis, since it provides short, consistent variable names and coded values that are easier to work with than full question or option labels.</p>
 <p>When defining choice names:</p>
 <ul class="simple">
 <li><p>Use only <strong>letters, numbers, and underscores</strong>. Spaces and special characters are not allowed.</p></li>

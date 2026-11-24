@@ -1,5 +1,5 @@
 # Editing and deleting your data
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/93bd2f1869f8d0d9b512b5ba42f05d5cf68ca56b/source/editing_deleting_data.md" class="reference">6 May 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/editing_deleting_data.md" class="reference">24 Nov 2026</a>
 
 Editing and deleting data helps **maintain data quality** after submissions are collected. You may need to correct individual responses, update multiple records at once, duplicate a submission, or remove records that are no longer needed. KoboToolbox offers several ways to manage these tasks, including **editing submissions via web form, editing raw data directly, and applying bulk updates.** This article explains each method and when to use it.
 
@@ -57,7 +57,7 @@ To edit raw data in KoboToolbox:
 1. Select the submission using the checkbox.
 2. Click <i class="k-icon-edit"></i> **Edit** above the data table.
 3. In the edit window, click **Edit** next to the field you want to change and enter the new value.
-    - For select type questions, enter one or more valid [XML values](https://support.kobotoolbox.org/glossary.html#xml-value), separated by spaces.
+    - For select type questions, enter one or more valid [choice names](https://support.kobotoolbox.org/glossary.html#choice-name), separated by spaces.
 4. Click **Save**, then **Confirm & close.**
 
 

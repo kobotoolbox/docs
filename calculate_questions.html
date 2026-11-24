@@ -182,7 +182,7 @@
           
   <section id="adding-calculations-in-the-formbuilder">
 <h1>Adding calculations in the Formbuilder<a class="headerlink" href="#adding-calculations-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/04d161b3ce12a8f18d4145536cbba7c2fa3149ae/source/calculate_questions.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/calculate_questions.md" class="reference">24 Nov 2026</a></p>
 <p>Calculations allow users to derive new variables, build advanced form logic, and display results to respondents during data collection. The <strong>Calculate</strong> question type performs mathematical operations using values entered in previous questions. By default, the result is hidden, but it can be displayed in the form if needed.</p>
 <p>Calculations are processed within the form, which can reduce the need for post-collection data manipulation. The results are stored as new variables in the dataset and can be used throughout the form to apply <a class="reference external" href="https://support.kobotoolbox.org/skip_logic.html">skip logic</a>, define <a class="reference external" href="https://support.kobotoolbox.org/validation_criteria.html">validation criteria</a>, or display <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#question-referencing">dynamic content</a> in question labels and notes.</p>
 <p>This article explains how to add calculations in the Formbuilder, covering basic arithmetic and introducing more advanced expressions.</p>
@@ -204,7 +204,7 @@
 <p class="note">
 To learn more about each of these components, see <a href="https://support.kobotoolbox.org/form_logic.html">Introduction to form logic in the Formbuilder</a>.
 </p>
-<p>To display the result of the calculation in a note, use the <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#question-referencing">question referencing</a> format <code class="docutils literal notranslate"><span class="pre">${data_column_name}</span></code>, replacing <code class="docutils literal notranslate"><span class="pre">data_column_name</span></code> with the <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">data column name</a> of the Calculate question. You can also use this format to reference the result of the calculation in a question label or in your form’s logic.</p>
+<p>To display the result of the calculation in a note, use the <a class="reference external" href="https://support.kobotoolbox.org/form_logic.html#question-referencing">question referencing</a> format <code class="docutils literal notranslate"><span class="pre">${question_name}</span></code>, replacing <code class="docutils literal notranslate"><span class="pre">question_name</span></code> with the <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#question-name">question name</a> of the Calculate question. You can also use this format to reference the result of the calculation in a question label or in your form’s logic.</p>
 <p><img alt="Question reference" src="_images/reference.png" /></p>
 </section>
 <section id="arithmetic-calculations">

@@ -182,7 +182,7 @@
           
   <section id="adding-questions-in-the-formbuilder">
 <h1>Adding questions in the Formbuilder<a class="headerlink" href="#adding-questions-in-the-formbuilder" title="Link to this heading">¶</a></h1>
-<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/35c2ef4865450c612c41e9e784bd674a9f99756a/source/question_types.md" class="reference">20 Mar 2026</a></p>
+<p><strong>Last updated:</strong> <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/question_types.md" class="reference">24 Nov 2026</a></p>
 <p>The KoboToolbox Formbuilder allows you to easily add questions to your form as you build your survey or questionnaire.</p>
 <p>This article explains how to add questions to your form, define answer choices where applicable, and provides an overview of the available question types in the Formbuilder to support effective form design.</p>
 <section id="adding-a-question">
@@ -198,12 +198,12 @@
 <p class="note">
 <strong>Note:</strong> Once the question type has been selected, it cannot be changed in the Formbuilder. To change the question type of an existing question, delete the question and create a new question with the same label.
 </p>
-<section id="setting-data-column-names">
-<h3>Setting data column names<a class="headerlink" href="#setting-data-column-names" title="Link to this heading">¶</a></h3>
-<p>After adding a question to your form, it is strongly recommended to define a <strong>Data Column Name</strong> in the question <strong>Settings.</strong> The data column name is used to identify the question throughout the form logic and in the exported dataset.</p>
-<p>By default, KoboToolbox creates the data column name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the data column name will be <code class="docutils literal notranslate"><span class="pre">respondent_name</span></code>.</p>
+<section id="setting-question-names">
+<h3>Setting question names<a class="headerlink" href="#setting-question-names" title="Link to this heading">¶</a></h3>
+<p>After adding a question to your form, it is strongly recommended to define a <strong>Question Name</strong> in the question <strong>Settings</strong>. The question name is used to identify the question throughout the form logic and in the exported dataset.</p>
+<p>By default, KoboToolbox creates the question name for you by removing spaces and capital letters from the question label. For example, if the question label is “Respondent name”, the question name will be <code class="docutils literal notranslate"><span class="pre">respondent_name</span></code>.</p>
 <p class="note">
-    To learn more about data column names, see <a href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
+    To learn more about question names, see <a href="https://support.kobotoolbox.org/question_options.html#question-name">Question options in the Formbuilder</a>.
 </p>
 </section>
 </section>
@@ -219,13 +219,13 @@
 <p class="note">
 <strong>Note:</strong> Managing long choice lists in the Formbuilder can be time-consuming. If your form includes many options or the same choice list used in multiple questions, it is often easier to create and manage these lists using XLSForm instead. To learn more, see <a href="https://support.kobotoolbox.org/option_choices_xls.html#">Managing option choices in XLSForm</a>.
 </p>
-<section id="setting-xml-values-for-option-choices">
-<h3>Setting XML values for option choices<a class="headerlink" href="#setting-xml-values-for-option-choices" title="Link to this heading">¶</a></h3>
-<p>Next to each choice option, you will see a field labeled <strong>AUTOMATIC.</strong> This field contains the <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#xml-value">XML value</a> for that option.</p>
-<p>The XML value is a short, internal name that KoboToolbox uses to save and identify the selected option in your data. By default, KoboToolbox creates the XML value for you by removing spaces and capital letters from the option label. For example, if the option label is “Option 1”, the XML value will be <code class="docutils literal notranslate"><span class="pre">option_1</span></code>.</p>
-<p>In some cases, you may want to set your own XML value. This can be helpful if the option label is very long or if you want to use a clearer or more consistent name. To do this, click <strong>AUTOMATIC</strong> and replace it with your own custom value.</p>
+<section id="setting-choice-names-for-option-choices">
+<h3>Setting choice names for option choices<a class="headerlink" href="#setting-choice-names-for-option-choices" title="Link to this heading">¶</a></h3>
+<p>Next to each choice option, you will see a field labeled <strong>AUTOMATIC.</strong> This field contains the <a class="reference external" href="https://support.kobotoolbox.org/glossary.html#choice-name">choice name</a> for that option.</p>
+<p>The choice name is a short, internal name that KoboToolbox uses to save and identify the selected option in your data. By default, KoboToolbox creates the choice name for you by removing spaces and capital letters from the option label. For example, if the option label is “Option 1”, the choice name will be <code class="docutils literal notranslate"><span class="pre">option_1</span></code>.</p>
+<p>In some cases, you may want to set your own choice name. This can be helpful if the option label is very long or if you want to use a clearer or more consistent name. To do this, click <strong>AUTOMATIC</strong> and replace it with your own custom value.</p>
 <p class="note">
-<strong>Note:</strong> It is strongly recommended to define XML values for all choices when using non-Latin scripts, such as Chinese, Arabic, or Nepali, to ensure your data is stored and exported correctly.
+<strong>Note:</strong> It is strongly recommended to define choice names for all choices when using non-Latin scripts, such as Chinese, Arabic, or Nepali, to ensure your data is stored and exported correctly.
 </p>
 </section>
 </section>
