@@ -22,6 +22,7 @@ To translate an open-ended response:
 2. Click <i class="ti-outline ti-pencil-star"></i> **Open** next to the audio or text response you want to translate.
    ![Translations tab](images/translation/open.png)
 3. Go to the **TRANSLATIONS** tab and click **begin.**
+    - For text questions, select the original language of the text response.
     - Select the language you want to translate into.
     - If available, select **automatic** to generate the translation automatically. Select **manual** to translate the transcript yourself.
     - If using automatic translation, click **create translation.**
