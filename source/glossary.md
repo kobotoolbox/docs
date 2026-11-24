@@ -1,5 +1,5 @@
 # Glossary of KoboToolbox terms
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/2ce0bef167eb66caceef3911de3e958bd24df43f/source/glossary.md" class="reference">6 Oct 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/8491f1ee15b9dbe702b6ab4e00a9b7ba6df3e16a/source/glossary.md" class="reference">19 Nov 2026</a>
 
 
 This glossary defines terms specific to KoboToolbox, covering form design, data collection, and project management. Each entry includes relevant synonyms, related terms, and links to support articles for more information.
@@ -36,7 +36,31 @@ A set of tools that allows different software systems to communicate with KoboTo
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
 </p>
 
-**Related term(s):** [Synchronous exports](https://support.kobotoolbox.org/glossary.html#synchronous-exports)
+**Related term(s):** [API endpoint](https://support.kobotoolbox.org/glossary.html#api-endpoint), [API key](https://support.kobotoolbox.org/glossary.html#api-key), [Data endpoint](https://support.kobotoolbox.org/glossary.html#data-endpoint), [Synchronous exports](https://support.kobotoolbox.org/glossary.html#synchronous-exports)
+
+---
+
+## API endpoint
+
+A web address that allows external applications to access specific KoboToolbox data or perform actions through the API. 
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
+</p>
+
+**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api), [Data endpoint](https://support.kobotoolbox.org/glossary.html#data-endpoint)
+
+---
+
+## API key
+
+A personal authentication token used to access a KoboToolbox account and its data through the API. An API key allows external applications and scripts to authenticate requests without entering a username and password.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/api.html">Getting started with the API</a>.
+</p>
+
+**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api), [Authentication](https://support.kobotoolbox.org/glossary.html#authentication)
 
 ---
 
@@ -76,7 +100,9 @@ A record of specific actions taken while completing a form in KoboCollect, such 
 
 ## Authentication
 
-The process of verifying a user’s identity by requiring a valid username and password to control access to KoboToolbox accounts, projects, and submissions.
+The process of verifying a user's or application's identity to control access to KoboToolbox accounts, projects, and data. Authentication can use credentials such as a username and password or an API key.
+
+**Related term(s):** [API key](https://support.kobotoolbox.org/glossary.html#api-key)
 
 ---
 
@@ -169,6 +195,19 @@ Internal short names assigned to questions that are used to store and reference 
 </p>
 
 **Related term(s):** [Question name](https://support.kobotoolbox.org/glossary.html#question-name), [XML value](https://support.kobotoolbox.org/glossary.html#xml-value), [Label](https://support.kobotoolbox.org/glossary.html#label)
+
+---
+
+## Data endpoint
+
+A KoboToolbox API endpoint that provides direct access to project submissions in JSON format. It allows external applications to retrieve, filter, and process submission data.
+
+<p class="note">
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/data_endpoint.html">Using the API data endpoint</a>.
+</p>
+
+**Related term(s):** [Application Programming Interface (API)](https://support.kobotoolbox.org/glossary.html#application-programming-interface-api), [Synchronous exports](https://support.kobotoolbox.org/glossary.html#synchronous-exports), [API endpoint](https://support.kobotoolbox.org/glossary.html#api-endpoint)
+
 
 ---
 ## Data reports
@@ -617,7 +656,7 @@ A set of questions that can be answered multiple times within a form, allowing r
 A feature that allows KoboToolbox to automatically send data to external systems by pushing new submissions to a specified REST endpoint whenever they are received.
 
 <p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/rest_services.html">Using the REST services</a>.
+  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/rest_services.html">Using the KoboToolbox REST Services</a>.
 </p>
 
 ---
@@ -667,7 +706,7 @@ A completed form entry sent to a project, containing all answers and any associa
 
 ## Synchronous exports
 
-A data export method that updates automatically as new submissions arrive, allowing external tools like Power BI, Excel, or Google Sheets to always access the most current data without manual downloads.
+A method of retrieving updated project data in CSV or XLSX format through a persistent API link. Synchronous exports use saved export settings and allow external applications to retrieve updated data when their connections are refreshed.
 
 <p class="note">
   For more information, see <a class="reference external" href="https://support.kobotoolbox.org/synchronous_exports.html">Using the API for synchronous exports</a>.

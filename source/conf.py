@@ -166,4 +166,8 @@ redirects = {"server": "creating_account.html",
              "alternative_enketo": "form_style.html",
              "getting_started_organization_feature": "team_management_feature.html",
              "recording-interviews": "qualitative_data.html",
-             "transcription-translation": "transcription.html"}
+             "transcription-translation": "transcription.html"},
+             "pulling_data_into_excelquery": "connect_excel_powerbi.html",
+             "pulling_data_into_powerbi": "connect_excel_powerbi.html",
+             "kobotoolbox_monday_integration": "platform_integrations.html"
+             }

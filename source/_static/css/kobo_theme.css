@@ -544,6 +544,7 @@ html body {
 }
 .page .page__body table {
   margin-bottom: 1.5em;
+  margin-left: 0;
 }
 .page .page__body table th p {
   font-weight: 500;

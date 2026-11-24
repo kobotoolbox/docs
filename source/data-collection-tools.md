@@ -1,12 +1,12 @@
 # Data collection with KoboToolbox
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/a42f7ff93a1567cc2ac66a749d2a7d5969cfa45a/source/data-collection-tools.md" class="reference">23 Apr 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/cb67de83dfe5125bfb753e3296e9e4d82c3ffaf0/source/data-collection-tools.md" class="reference">9 Nov 2026</a>
 
 KoboToolbox supports two primary ways to collect data: **web forms**, which run in a browser, and **KoboCollect**, which is the Android app for mobile data collection. Both methods support offline data collection. 
 
 This article explains the two data collection methods available in KoboToolbox, how to choose between them, and how to prepare before launching data collection.
 
 <p class="note">
-To learn more about each data collection method, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting data using web forms</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecting data using KoboCollect</a>.
+New to data collection with KoboToolbox? The free <a href="https://academy.kobotoolbox.org/products/digital_downloads/field-data-collection-starter-kit">Field Data Collection Starter Kit</a> from KoboToolbox Academy provides practical resources to help you prepare for and carry out field data collection.
 </p>
 
 ## Data collection methods
@@ -16,6 +16,10 @@ You can collect data with KoboToolbox in two main ways:
 - **KoboCollect** is an Android app used to collect data on Android devices. It is well suited for field teams with enumerators using Android phones or tablets.
 
 Both methods support [offline data collection](https://support.kobotoolbox.org/data-collection-tools.html#offline-data-collection).
+
+<p class="note">
+To learn more about each data collection method, see <a href="https://support.kobotoolbox.org/data_through_webforms.html">Collecting data using web forms</a> and <a href="https://support.kobotoolbox.org/data_collection_kobocollect.html">Collecting data using KoboCollect</a>.
+</p>
 
 ### Choosing a data collection method
 
