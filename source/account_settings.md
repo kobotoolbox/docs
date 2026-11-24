@@ -64,8 +64,8 @@ You can monitor the following usage types:
 | :--- | :--- |
 | Submissions | The total number of survey submissions that have been collected by projects owned by your account in the current [billing cycle](https://support.kobotoolbox.org/glossary.html#billing-cycle). |
 | File storage | The total size of photos, audio, videos, and files collected with your surveys or imported in project **Settings > Media.** |
-| Transcription minutes | The number of transcription minutes that have been used by your account for [automatic audio file transcription](https://support.kobotoolbox.org/transcription-translation.html). |
-| Translation characters | The number of translation characters that have been used by your account for [automatic translation of audio transcripts](https://support.kobotoolbox.org/transcription-translation.html). |
+| Transcription minutes | The number of transcription minutes that have been used by your account for [automatic audio file transcription](https://support.kobotoolbox.org/transcription.html). |
+| Translation characters | The number of translation characters that have been used by your account for [automatic translation of open-ended responses](https://support.kobotoolbox.org/translation.html). |
 
 <p class="note">
   To learn more about account limits, upgrading your plan, and managing file storage, see <a href="https://support.kobotoolbox.org/account_usage_limits.html">Managing account usage limits</a>.
@@ -96,7 +96,7 @@ To purchase add-ons for your account, select the <i class="k-icon-plus"></i> **A
 
 On the **Add-ons** page, you can:
 - Purchase a **File Storage** add-on to add up to 50GB of file storage to your KoboToolbox account, if you are on the free Community Plan.
-- Purchase an **NLP Package** add-on to increase your [transcription](https://support.kobotoolbox.org/transcription-translation.html) minutes and [translations](https://support.kobotoolbox.org/transcription-translation.html) characters.
+- Purchase an **NLP Package** add-on to increase your [transcription](https://support.kobotoolbox.org/transcription.html) minutes and [translations](https://support.kobotoolbox.org/translation.html) characters.
 - Purchase an **Automatic analysis requests** add-on to increase your AI-generated [qualitative analysis](https://support.kobotoolbox.org/qualitative_analysis.html) quota.
 
 <p class="note">
