@@ -57,7 +57,7 @@ To translate audio transcripts in bulk:
 
 Bulk translation runs in the background, so you can continue working in other parts of KoboToolbox while it is processing. Completed translations are added to a new column in the data table and marked as ready for review.
 
-If the selected responses exceed your [remaining translation limit](https://support.kobotoolbox.org/qualitative_analysis.html#usage-limits-for-ai-generated-analysis), you may need to select fewer rows before starting the bulk translation.
+If the selected responses exceed your [remaining translation limit](https://support.kobotoolbox.org/translation.html#usage-limits-for-automatic-translation), you may need to select fewer rows before starting the bulk translation.
 
 ## Reviewing and approving translations
 
@@ -72,6 +72,8 @@ To approve multiple translations at once:
 1. Select the relevant submissions using the checkboxes on the left.
 2. In the translation column, click the arrow in the column header.
 3. Click **Approve all selected.**
+
+![Approve selected transcriptions](images/translation/approve_translation.png)
 
 ## Supported languages for translation
 
