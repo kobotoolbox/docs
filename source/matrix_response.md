@@ -32,13 +32,13 @@ In your question matrix:
 To configure your question matrix, for each column:
 
 1. Click the <i class="k-icon-settings"></i> **Settings** icon.
-2. Select the **Response Type.**
+2. Select the **Question Type.**
     -  Available types include **Select One**, **Select Many**, **Text**, and **Number.**
     -  You can use different question types within the same matrix.
 3. Enter a **Question Label.**
 4. Enter a **Question Name Suffix.** This suffix will be appended to the variable names for each item in the rows and must follow the [standard rules for question names](https://support.kobotoolbox.org/question_options.html#important-considerations-for-question-names).
 5. If using **Select One** or **Select Many**, add the answer choices and their [choice names](https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices).
-6. Set the question as [required](https://support.kobotoolbox.org/question_options.html#mandatory-response), if needed.
+6. Set the question as [Mandatory](https://support.kobotoolbox.org/question_options.html#mandatory-response), if needed.
 7. To add another column, click the <i class="k-icon-plus"></i> icon to the right of the last column.
 
 <p class="note">
