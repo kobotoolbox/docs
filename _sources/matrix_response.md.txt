@@ -1,5 +1,5 @@
 # Creating a question matrix in the Formbuilder
-**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/6a8a34ad69468143f1153d05edbe14a7667fbfc9/source/matrix_response.md" class="reference">24 Nov 2026</a>
+**Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/61d6aea9dbcd9e4b19ef74f406be3e1f53e88346/source/matrix_response.md" class="reference">24 Nov 2026</a>
 
 The **Question Matrix** question type allows you to create a structured table of questions, where each column represents a question and each row represents an item. Instead of creating multiple separate questions, you can group them into a single matrix to make your form more organized and efficient for data collection.
 
@@ -32,13 +32,13 @@ In your question matrix:
 To configure your question matrix, for each column:
 
 1. Click the <i class="k-icon-settings"></i> **Settings** icon.
-2. Select the **Response Type.**
+2. Select the **Question Type.**
     -  Available types include **Select One**, **Select Many**, **Text**, and **Number.**
     -  You can use different question types within the same matrix.
 3. Enter a **Question Label.**
 4. Enter a **Question Name Suffix.** This suffix will be appended to the variable names for each item in the rows and must follow the [standard rules for question names](https://support.kobotoolbox.org/question_options.html#important-considerations-for-question-names).
 5. If using **Select One** or **Select Many**, add the answer choices and their [choice names](https://support.kobotoolbox.org/question_types.html#setting-choice-names-for-option-choices).
-6. Set the question as [required](https://support.kobotoolbox.org/question_options.html#mandatory-response), if needed.
+6. Set the question as [Mandatory](https://support.kobotoolbox.org/question_options.html#mandatory-response), if needed.
 7. To add another column, click the <i class="k-icon-plus"></i> icon to the right of the last column.
 
 <p class="note">
