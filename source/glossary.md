@@ -186,18 +186,6 @@ Internal short names assigned to choices that are used to store and reference da
 
 ---
 
-## Data column name
-
-Internal short names assigned to questions that are used to store and reference data in a form. These are also called **question names** in XLSForm, and sometimes referred to as **XML values** or **headers** in the user interface. Exporting your data using XML values and headers can facilitate data management and analysis.
-
-<p class="note">
-  For more information, see <a class="reference external" href="https://support.kobotoolbox.org/question_options.html#data-column-name">Question options in the Formbuilder</a>.
-</p>
-
-**Related term(s):** [Question name](https://support.kobotoolbox.org/glossary.html#question-name), [XML value](https://support.kobotoolbox.org/glossary.html#xml-value), [Label](https://support.kobotoolbox.org/glossary.html#label)
-
----
-
 ## Data endpoint
 
 A KoboToolbox API endpoint that provides direct access to project submissions in JSON format. It allows external applications to retrieve, filter, and process submission data.
