@@ -93,7 +93,7 @@ Once your XLSForms are set up, log into your KoboToolbox account and follow thes
 
 3. Create and deploy the **child project**.
 4. Connect the child project to the parent project: 
-    - In the **SETTINGS > Connect Projects** tab of the child project, click the "Select a different project to import data from." A dropdown menu will allow you to select a parent project to link. 
+    - In the **SETTINGS > Connect Projects** tab of the child project, click the "Select a project to import data from." A dropdown menu will allow you to select a parent project to link. 
     - Rename the linked parent project to the `xml-external` question name defined in the XLSForm and click **IMPORT**. 
     - You can then select specific questions from the parent project to share with the child project (recommended), or select all questions.
 5. If you add new fields to the parent form and wish to use them in the child project, re-import the parent project in the child project settings.
@@ -217,9 +217,9 @@ If data from the parent project is not appearing in the child form, check the fo
 <br>
 
 <details>
-<summary><strong>Parent project does not appear under “Import other project data”</strong></summary>
-If the parent project does not appear in the <strong>Import other project data</strong> list, check that data sharing is enabled for the parent project.<br><br>
-Open the <strong>Connect Projects</strong> settings in the parent project and enable data sharing under <strong>Share data with other project forms</strong>. Once data sharing is enabled, return to the child project and try connecting to the parent project again.
+<summary><strong>Parent project does not appear under “Import project data”</strong></summary>
+If the parent project does not appear in the <strong>Import project data</strong> list, check that data sharing is enabled for the parent project.<br><br>
+Open the <strong>Connect Projects</strong> settings in the parent project and enable data sharing under <strong>Allow data sharing with other projects</strong>. Once data sharing is enabled, return to the child project and try connecting to the parent project again.
 </details>
 
 <br>
