@@ -103,6 +103,10 @@ The response includes:
 
 The `results` field contains the actual submission data, while the other fields help you navigate through the available records.
 
+<p class="note">
+  For a description of the fields in each submission record, including system fields, question types, and repeat groups, see <a href="https://support.kobotoolbox.org/api_submission_data.html" class="reference">Working with submission data in the JSON API</a>.
+</p>
+
 ### Understanding pagination
 
 The KoboToolbox API uses **pagination** to return submissions in smaller batches rather than sending all records in a single request.
@@ -190,16 +194,49 @@ You can configure scripts or applications to run at regular intervals, such as d
 For example, an automated workflow could:
 
 1. Connect to your KoboToolbox project using the API.
-2. Retrieve submissions added since the previous update.
+2. Retrieve submissions added or modified since the previous update.
 3. Process the data using R or Python.
 4. Update a report or dataset used for analysis.
 
-You can use filters to retrieve only new submissions, reducing the amount of data transferred with each request.
+You can use filters to retrieve only new or modified submissions, reducing the amount of data transferred with each request.
 
 The frequency of updates depends on how your external application or script is configured. The data endpoint does not automatically send new submissions to connected applications.
 
 <p class="note">
-  <strong>Note:</strong> When automating data retrieval, ensure your script handles pagination, connection errors, and authentication securely. If you need to detect changes to existing submissions, consider how your workflow will identify edited records as well as newly added submissions.
+  <strong>Note:</strong> When automating data retrieval, ensure your script handles pagination, connection errors, and authentication securely.
+</p>
+
+### Retrieving new and modified submissions
+
+Each submission includes two timestamps:
+
+- `_submission_time`: The time when the server received the submission. This value never changes.
+- `_date_modified`: The time when the submission was last modified. This value is updated when the submission is edited, when its validation status changes, or when an attachment is added or deleted.
+
+A filter on `_submission_time` retrieves new submissions, but it does not retrieve submissions that were edited after your previous update. To retrieve both new and modified submissions, filter on `_date_modified` instead.
+
+For example, the following `curl` command retrieves the submissions that were added or modified since the specified time:
+
+```bash
+curl -G \
+  -H "Authorization: Token YOUR_API_KEY" \
+  --data-urlencode 'query={
+    "_date_modified": {
+      "$gte": "2026-09-01T00:00:00+00:00"
+    }
+  }' \
+  "https://kf.kobotoolbox.org/api/v2/assets/YOUR_PROJECT_UID/data/?format=json"
+```
+
+In this example:
+
+- `$gte` means "greater than or equal to."
+- The timestamp is the highest `_date_modified` value that you received in your previous update. Subtract a few minutes from it, so that changes made at the same moment as your previous update are not missed.
+
+Some of the submissions returned may be ones you already retrieved. Use the `_id` field to match them with the submissions you already have, and replace those that changed.
+
+<p class="note">
+  <strong>Note:</strong> Deleted submissions are not returned by this filter. If the submissions from your server do not include <code>_date_modified</code>, the server runs a version of KoboToolbox from before this field was introduced. For more details, see <a href="https://support.kobotoolbox.org/api_submission_data.html#retrieving-only-new-and-modified-submissions" class="reference">Working with submission data in the JSON API</a>.
 </p>
 
 ## Additional API documentation
@@ -224,3 +261,4 @@ The following table outlines common issues when accessing the data endpoint.
 | Only some submissions are returned | The API uses pagination. Check the `next` field and retrieve additional pages. |
 | Unexpected submission values | The data endpoint returns stored question names and values rather than the labels used in exported files. |
 | New submissions do not appear in an external application | The application may not have refreshed its data. Check how often the API request is run. |
+| Edited submissions are not updated in an external application | A filter on `_submission_time` only returns new submissions. Filter on `_date_modified` to also retrieve submissions that were modified since the previous update. |

@@ -2,9 +2,9 @@
 **Last updated:** <a href="https://github.com/kobotoolbox/docs/blob/master/source/api_submission_data.md" class="reference">16 Jul 2026</a>
 
 
-The JSON endpoint returns your submissions as structured data that scripts and applications can process record by record. This article describes how that JSON is shaped and how it behaves over time, so you can build integrations that stay correct when submissions are added, edited, validated, or deleted.
+The data endpoint returns your submissions as JSON: structured data that scripts and applications can process record by record. This article describes how that JSON is shaped and how it behaves over time, so you can build integrations that stay correct when submissions are added, edited, validated, or deleted.
 
-This article assumes you already have your server URL, API Key, and project asset UID. If not, start with [Getting started with the API](api.md). If you want a ready-made CSV or XLSX file instead of JSON, see [Using the API for synchronous exports](synchronous_exports.md).
+This article assumes you already have your server URL, API Key, and project asset UID. If not, start with [Getting started with the API](api.md). For an introduction to the data endpoint, including authentication and basic paging and filtering, see [Using the API data endpoint](data_endpoint.md). If you want a ready-made CSV or XLSX file instead of JSON, see [Using the API for synchronous exports](synchronous_exports.md).
 
 This article includes:
 
@@ -15,6 +15,7 @@ This article includes:
 -   [Filtering, sorting, and selecting fields](#filtering-sorting-and-selecting-fields)
 -   [Paging through large projects](#paging-through-large-projects)
 -   [What changes when a submission is edited](#what-changes-when-a-submission-is-edited)
+-   [Retrieving only new and modified submissions](#retrieving-only-new-and-modified-submissions)
 -   [Repeat groups in the JSON](#repeat-groups-in-the-json)
 -   [Form versions and older submissions](#form-versions-and-older-submissions)
 
@@ -39,6 +40,7 @@ Next to your form's questions, each record in `results` carries fields that Kobo
 | `meta/instanceID`    | The identifier of this version of the record, as `uuid:...`. Matches the current `_uuid`. |
 | `meta/deprecatedID`  | Only present after a record has been edited: the `_uuid` the record had before its latest edit. |
 | `meta/rootUuid`      | The JSON path of the field shown as `rootUuid` in the data table and exports. Stays the same for the life of the record. |
+| `_date_modified`     | When the record was last modified, in the same format as `_submission_time`: `2026-07-16T08:26:30+00:00` (UTC). Equal to `_submission_time` until the record changes. The data table and exports do not show it. See [Retrieving only new and modified submissions](#retrieving-only-new-and-modified-submissions). |
 | `_validation_status` | An object, not a label: `{"timestamp": 1752666000, "uid": "validation_status_approved", "by_whom": "username", "label": "Approved"}`. Empty (`{}`) when no status is set. Exports show only the label. |
 | `_attachments`       | A list with one entry per media file: download and thumbnail URLs, the file name, and the attachment's own `id` and `uid`. |
 | `_geolocation`       | A `[latitude, longitude]` pair taken from the record's geopoint question, or `[null, null]` if there is none. |
@@ -120,7 +122,7 @@ The data endpoint accepts three query parameters that all take JSON:
 | `sort`        | `sort={"_id": 1}`                           | Order results ascending (`1`) or descending (`-1`) by a field. |
 | `fields`      | `fields=["_id", "_uuid", "group1/question1"]` | Return only the listed fields for each record. |
 
-Remember to URL-encode the JSON when calling from code. Querying on your own question fields works too — use the full path including group names, exactly as the field appears in the JSON.
+Remember to URL-encode the JSON when calling from code. In a timestamp such as `2026-07-16T08:26:30+00:00`, the `+` must become `%2B`, otherwise the server reads it as a space. Querying on your own question fields works too — use the full path including group names, exactly as the field appears in the JSON.
 
 ## Paging through large projects
 
@@ -141,15 +143,45 @@ Records do not stay still after collection. Answers get corrected, validation st
 
 | **Action**                    | **Changes in the JSON**                                                     | **Stays the same**            |
 | :---------------------------- | :--------------------------------------------------------------------------- | :----------------------------- |
-| Answers edited                | `_uuid` and `meta/instanceID` get a new value; `meta/deprecatedID` now holds the previous `_uuid`; the edited answers | `_id`, `meta/rootUuid`, `_submission_time` |
-| Validation status set/changed | The `_validation_status` object                                              | Everything else                |
-| Attachment deleted or replaced | The `_attachments` list                                                      | Everything else                |
+| Answers edited                | `_uuid` and `meta/instanceID` get a new value; `meta/deprecatedID` now holds the previous `_uuid`; the edited answers; `_date_modified` | `_id`, `meta/rootUuid`, `_submission_time` |
+| Validation status set, changed, or removed | The `_validation_status` object; `_date_modified`               | Everything else                |
+| Attachment added, deleted, or replaced | The `_attachments` list; `_date_modified`                           | Everything else                |
 | Submission deleted            | The record disappears from the endpoint                                      | —                              |
 
-There is no "last modified" timestamp in the JSON. `_submission_time` records when the server first received the record and never changes afterwards, no matter how often the record is edited. A script that filters on `_submission_time` fetches new records but silently misses every edit.
+`_submission_time` records when the server first received the record. It never changes afterwards, no matter how often the record is edited. A script that filters on `_submission_time` fetches new records but silently misses every edit. To find edited records, use `_date_modified`, as described in the next section.
 
 <p class="note">
     <strong>Note:</strong> For how editing behaves in the web interface, and which fields the data table shows for edited records, see <a href="https://support.kobotoolbox.org/editing_deleting_data.html" class="reference">Editing and deleting data</a>.
+</p>
+
+## Retrieving only new and modified submissions
+
+`_date_modified` holds the time of the last change to a record. A new record starts with `_date_modified` equal to `_submission_time`. Every action in the table above, except deletion, sets it to the current time.
+
+Use it in `query` to fetch only the records that are new or modified since your previous run:
+
+`query={"_date_modified": {"$gte": "2026-07-16T08:26:30+00:00"}}`
+
+To keep a copy of your data up to date, for example in a database:
+
+1. Fetch all records once, without `_date_modified` in `query`. Store the highest `_date_modified` you receive.
+2. On each later run, request the records whose `_date_modified` is greater than or equal to (`$gte`) that value minus a few minutes.
+3. Insert or replace the records you receive, using `_id` as the key. Some of them are records you already received in the previous run.
+4. Store the highest `_date_modified` for the next run.
+
+Use `$gte` and the few minutes of overlap because `_date_modified` is precise to the second only. Two changes can happen within the same second, and a change can become visible a moment after its timestamp. With `$gt` and no overlap, a script can miss such a change.
+
+A few limits are worth knowing:
+
+- **Values are compared as text.** Pass the value the way the server returns it, in UTC. Do not convert it to another time zone.
+- **Records that have not changed for a long time are not matched.** A record that has not been modified since `_date_modified` was introduced returns its `_submission_time` as `_date_modified`. A `query` on `_date_modified` does not match such a record until its next change. This is why step 1 fetches everything without the filter.
+- **Deleted records are not reported.** A deleted record disappears from the endpoint, so no filter returns it. To find deletions, request all `_id` values with `fields=["_id"]` and compare them with your copy.
+- **Transcripts and translations do not count as changes.** A change to `_supplementalDetails` does not update `_date_modified`.
+
+If a run returns many records, page through them as described in [Paging through large projects](#paging-through-large-projects).
+
+<p class="note">
+    <strong>Note:</strong> If the records from your server have no <code>_date_modified</code> field, the server runs a version of KoboToolbox from before this field was introduced.
 </p>
 
 ## Repeat groups in the JSON
