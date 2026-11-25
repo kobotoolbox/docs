@@ -73,13 +73,15 @@ Question names must follow these rules:
 
 ## Guidance Hint
 
-**Guidance hints** are used to provide additional information during form development, enumerator training, or data collection. They are not displayed by default.
+**Guidance hints** are used to provide additional information during form development, enumerator training, or data collection. They are displayed as collapsed by default.
 
 ![Guidance hint](images/question_options/guidance_hint_new.png)
 
 ### Displaying guidance hints in KoboCollect
 
-In web forms, guidance hints appear in a collapsible **More Details** section. In KoboCollect, they are hidden by default, but you can [change your project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) to always display them or show them in a collapsible section. 
+In web forms, guidance hints appear in a collapsible **More Details** section. In KoboCollect, they are hidden by default, but visible when clicking ℹ underneath the question label.
+
+You can [change your project settings](https://support.kobotoolbox.org/kobocollect_settings.html#form-management-settings) to always display them or hide them completely. 
 
 To display guidance hints in KoboCollect, follow the steps below:
 
